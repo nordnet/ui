@@ -51,7 +51,7 @@
     }
   },
   "dependencies": {
-    "nordnet-ui-kit": "^4.0.5",
+    "nordnet-ui-kit": "^5.0.0",
     "ramda": "^0.26.1",
     "styled-components": "^4.1.3"
   },

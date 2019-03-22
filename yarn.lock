@@ -6995,10 +6995,10 @@ nopt@~1.0.10:
   dependencies:
     abbrev "1"
 
-nordnet-ui-kit@^4.0.5:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/nordnet-ui-kit/-/nordnet-ui-kit-4.0.5.tgz#d7baafcbc930fd9c14a5b240839e3d81e4a66afb"
-  integrity sha512-mxkObxMbwTY4p/OeRTnyP80sIXF9V4zxCGK6kF0MC7E6TDJLp7pHV5mGbgIaQFZm8jjpU2a/eC4t+6d1tiuLow==
+nordnet-ui-kit@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/nordnet-ui-kit/-/nordnet-ui-kit-5.0.1.tgz#2dcc30248bc1dbcf7a4acedc00019fd04305b513"
+  integrity sha512-8V8yr5AedbQEhILZ/MWos5mJYCJV0JbUydbVBCtq/iIet6ES/2FvGDn84ZBuHWrNW1A+/dobfGkeIItVkkp34Q==
   dependencies:
     classnames "^2.2.3"
     color "^1.0.3"
