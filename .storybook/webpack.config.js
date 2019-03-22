@@ -13,6 +13,7 @@ module.exports = ({ config, mode }) => {
     ...config.resolve.alias,
     ['Atoms']: path.resolve(__dirname, '../src/Atoms/'),
     ['Templates']: path.resolve(__dirname, '../src/Templates/'),
+    ['common']: path.resolve(__dirname, '../src/common/'),
   };
   return config;
 };
