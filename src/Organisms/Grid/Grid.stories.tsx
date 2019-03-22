@@ -6,7 +6,16 @@ import Cell from './Cell';
 const stories = storiesOf('Organisms/Grid', module);
 
 stories.add('Grid based on CSS Grid', () => (
-  <Grid areas={['header header  header', 'menu   content ads   ', 'footer footer  footer']}>
+  <Grid
+    twoDimension
+    gutter="16px"
+    // prettier-ignore
+    areas={[
+      ['header header  header'],
+      ['menu   content ads'],
+      ['footer footer  footer']
+    ]}
+  >
     <Cell area="header">Header</Cell>
     <Cell area="content">Content</Cell>
     <Cell area="menu">Menu</Cell>
@@ -17,15 +26,16 @@ stories.add('Grid based on CSS Grid', () => (
 
 stories.add('Grid based on CSS Grid for Account Overview', () => (
   <Grid
+    twoDimension
     // prettier-ignore
+    gutter={{ row: 16, col: 8 }}
     areas={[
-        'left top messages',
-        'left top order',
-        'left top sidebar',
-        'left top sidebar',
-        'left content sidebar'
+      ['left top     messages'],
+      ['left top     order'],
+      ['left top     sidebar'],
+      ['left top     sidebar'],
+      ['left content sidebar'],
     ]}
-    gap="16px"
   >
     <Cell area="left">Left</Cell>
     <Cell area="top">Top</Cell>

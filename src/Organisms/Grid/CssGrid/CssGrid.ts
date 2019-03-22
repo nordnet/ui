@@ -1,0 +1,40 @@
+import styled from 'styled-components';
+import { Props } from './CssGrid.types';
+
+const formatAreas = (areas: Props['areas']) => areas.map(area => `"${area}"`).join(' ');
+const isString = (x: any): x is string => typeof x === 'string' || x instanceof String;
+const isNumber = (x: any): x is number => x === parseInt(x, 10);
+const isUndefined = (x: any): x is undefined => typeof x === 'undefined';
+
+const getGutterStyles = (gutter: Props['gutter']) => {
+  if (isString(gutter)) {
+    return `grid-gap: ${gutter}`;
+  }
+  if (isNumber(gutter)) {
+    return `grid-gap: ${gutter}px`;
+  }
+  if (isUndefined(gutter)) {
+    return undefined;
+  }
+
+  const { col, row } = gutter;
+
+  if (col && row && col === row) {
+    return `grid-gap: ${col}px`;
+  }
+
+  return `
+    ${col && `column-gap: ${col}px`};
+    ${row && `row-gap: ${row}px`};
+  `;
+};
+
+const CssGrid = styled.div<Props>`
+  display: grid;
+  ${({ areas }) => areas && `grid-template-areas: ${formatAreas(areas)};`}
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px auto 100px;
+  ${({ gutter }) => gutter && getGutterStyles(gutter)}
+`;
+
+export default CssGrid;

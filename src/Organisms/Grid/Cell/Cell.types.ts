@@ -1,10 +1,5 @@
-import { Area } from '../Grid.types';
+import { Area } from '../CssGrid/CssGrid.types';
 
-export type CellProps = CssGridCellProps | FlexCellProps;
-type CssGridCellProps = {
-  area: Area;
-};
-
-type FlexCellProps = {
-  // @todo add all flex items props https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+export type Props = {
+  area?: Area;
 };
