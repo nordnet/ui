@@ -1,9 +1,9 @@
-import { CSSGridProps } from './CssGrid/CssGrid.types';
-import { FlexboxGridProps } from './Flexbox/Flexbox.types';
+import { CSSGridProps } from './CssGrid/CssGridContainer.types';
+import { FlexboxGridProps } from './Flexbox/FlexboxContainer.types';
 
 export type PixelOrUnit = number | string;
 
-export type GridProps = {
+export type Props = {
   // flag? css-grid or flexbox
   /** investingate how to switch type of props based on this flag */
 

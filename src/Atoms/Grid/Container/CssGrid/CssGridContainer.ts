@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Props } from './CssGrid.types';
+import { Props } from './CssGridContainer.types';
 
 const formatAreas = (areas: Props['areas']) => areas.map(area => `"${area}"`).join(' ');
 const isString = (x: any): x is string => typeof x === 'string' || x instanceof String;
@@ -29,12 +29,10 @@ const getGutterStyles = (gutter: Props['gutter']) => {
   `;
 };
 
-const CssGrid = styled.div<Props>`
+export const CssGrid = styled.div<Props>`
   display: grid;
   ${({ areas }) => areas && `grid-template-areas: ${formatAreas(areas)};`}
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100px auto 100px;
   ${({ gutter }) => gutter && getGutterStyles(gutter)}
 `;
-
-export default CssGrid;

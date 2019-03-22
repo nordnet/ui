@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Props } from './Flexbox.types';
+import { Props } from './FlexboxContainer.types';
 
-const Flexbox = styled.div<Props>`
+export const Flexbox = styled.div<Props>`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -9,5 +9,3 @@ const Flexbox = styled.div<Props>`
   align-items: stretch;
   align-content: stretch;
 `;
-
-export default Flexbox;

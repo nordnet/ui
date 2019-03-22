@@ -1,4 +1,4 @@
-import { PixelOrUnit } from '../Grid.types';
+import { PixelOrUnit } from '../Container.types';
 
 type Areas = AreasRow[];
 type AreasRow = Area[];

@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import CssGridCell from '../CssGrid/Cell';
-import FlexBoxCell from '../Flexbox/Cell';
-import { Props } from './Cell.types';
+import CssGridCell from './CssGrid';
+import FlexBoxCell from './Flexbox';
+import { Props } from './Item.types';
 
-const ChosenSystem: React.FC<Props> = props => {
+const Item: React.FC<Props> = props => {
   const { area } = props;
 
   return typeof area !== 'undefined' ? (
@@ -14,9 +14,7 @@ const ChosenSystem: React.FC<Props> = props => {
   );
 };
 
-const Cell = styled(ChosenSystem)<Props>`
+export const StyledItem = styled(Item)<Props>`
   height: 100%;
   background: rgba(255, 0, 0, 0.1);
 `;
-
-export default Cell;
