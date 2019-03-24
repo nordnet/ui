@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 import { Props } from './CssGridContainer.types';
 
-const formatAreas = (areas: Props['areas']) => areas.map(area => `"${area}"`).join(' ');
+const formatAreas = (areas: Props['areas']) =>
+  areas
+    .map(areaRow => areaRow.join(' '))
+    .map(area => `"${area}"`)
+    .join(' ');
 const isString = (x: any): x is string => typeof x === 'string' || x instanceof String;
 const isNumber = (x: any): x is number => x === parseInt(x, 10);
 const isUndefined = (x: any): x is undefined => typeof x === 'undefined';
@@ -30,7 +34,9 @@ const getGutterStyles = (gutter: Props['gutter']) => {
 };
 
 export const CssGrid = styled.div<Props>`
+  box-sizing: border-box;
   display: grid;
+  ${({ height }) => height && `height: ${height}`};
   ${({ areas }) => areas && `grid-template-areas: ${formatAreas(areas)};`}
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100px auto 100px;

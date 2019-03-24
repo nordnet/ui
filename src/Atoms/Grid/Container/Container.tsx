@@ -1,16 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
+import CssGrid from './CssGrid';
+import FlexBox from './Flexbox';
+
 import { Props } from './Container.types';
-import CssGrid from './CssGrid/index';
-import FlexBox from './Flexbox/index';
+import { Props as CssGridProps } from './CssGrid/CssGridContainer.types';
+import { Props as FlexboxProps } from './Flexbox/FlexboxContainer.types';
 
-const Grid = (props: Props) => {
-  const { twoDimension } = props;
+export const Grid: React.FunctionComponent<Props> = props => {
+  const { twoDimension } = props as CssGridProps;
 
-  return twoDimension ? <CssGrid {...props} /> : <FlexBox {...props} />;
+  return twoDimension ? (
+    <CssGrid {...props as CssGridProps} />
+  ) : (
+    <FlexBox {...props as FlexboxProps} />
+  );
 };
-
-export const StyledGrid = styled(Grid)<Props>`
-  box-sizing: border-box;
-  ${({ height }) => height && `height: ${height}`};
-`;

@@ -1,20 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
 import CssGridCell from './CssGrid';
 import FlexBoxCell from './Flexbox';
-import { Props } from './Item.types';
+import { Props, CssGridItemProps, FlexboxItemProps } from './Item.types';
 
-const Item: React.FC<Props> = props => {
-  const { area } = props;
+export const Item: React.FC<Props> = props => {
+  const { area } = props as CssGridItemProps;
 
   return typeof area !== 'undefined' ? (
-    <CssGridCell area={area} {...props} />
+    <CssGridCell {...props as CssGridItemProps} />
   ) : (
-    <FlexBoxCell {...props} />
+    <FlexBoxCell {...props as FlexboxItemProps} />
   );
 };
-
-export const StyledItem = styled(Item)<Props>`
-  height: 100%;
-  background: rgba(255, 0, 0, 0.1);
-`;

@@ -1,5 +1,6 @@
-import { Area } from '../../Container/CssGrid/CssGridContainer.types';
+import { AreaName } from '../../Container/CssGrid/CssGridContainer.types';
 
 export type Props = {
-  area: Area;
+  as?: React.ElementType;
+  area: AreaName;
 };

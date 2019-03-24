@@ -1,3 +1,3 @@
-import { StyledGrid as Grid } from './Container';
+import { Grid } from './Container';
 
 export default Grid;
