@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
-import { Theme } from 'theme';
+import { Theme } from '../../../../theme/theme.types';
 import { ItemWithHorisontalGutter, ItemWithVerticalGutter } from '../../Item/Flexbox/FlexboxItem';
 import { Props as ChildProps } from '../../Item/Flexbox/FlexboxItem.types';
 import { Props } from './FlexboxContainer.types';
