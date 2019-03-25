@@ -1,6 +1,11 @@
 type MediaQuery = string;
 /** Number of pixels */
 export type ThemeConfig = {};
+type Unit = {
+  (times: number): number;
+  toString: () => string;
+  valueOf: () => number;
+};
 export type Theme = {
   /** Semantic names for the colors */
   color: {};
@@ -52,14 +57,10 @@ export type Theme = {
      * One unit, all spacing should be handled with this
      * @example
      * margin: ${({ theme }) => theme.spacing.unit * 4}px;
-     */
-    unit: number;
-    /**
-     * Helper function, returns unit X times
      * @example
-     * margin: ${({ theme }) => theme.spacing.units(4)}px;
+     * margin: ${({ theme }) => theme.spacing.unit(4)}px;
      */
-    units: (times: number) => number;
+    unit: Unit;
   };
 
   size: {

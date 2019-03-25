@@ -12,9 +12,13 @@ export const createTheme = (config?: ThemeConfig): Theme => {
   };
 
   const sizeValues = Object.values(size) as number[];
+  const UNIT = 4;
+  const unit = (times: number) => times * UNIT;
+  unit.valueOf = () => UNIT;
+  unit.toString = () => UNIT.toString();
+
   const spacing: Theme['spacing'] = {
-    unit: 4,
-    units: times => spacing.unit * times,
+    unit,
   };
 
   const theme: Theme = {
@@ -66,12 +70,12 @@ export const createTheme = (config?: ThemeConfig): Theme => {
         return `@media (min-width: ${s1}px) and (max-width: ${s2}px)`;
       },
       greaterThan: s => {
-        assert(sizeValues.includes(s), `[theme.media] Unrecognized size value: ${size}`);
-        return `@media (min-width: ${size}px)`;
+        assert(sizeValues.includes(s), `[theme.media] Unrecognized size value: ${s}`);
+        return `@media (min-width: ${s}px)`;
       },
       lessThan: s => {
-        assert(sizeValues.includes(s), `[theme.media] Unrecognized size value: ${size}`);
-        return `@media (max-width: ${size}px)`;
+        assert(sizeValues.includes(s), `[theme.media] Unrecognized size value: ${s}`);
+        return `@media (max-width: ${s}px)`;
       },
     },
     size,
