@@ -1,18 +1,15 @@
 import React from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
-import {
-  ItemWithHorisontalGutter,
-  ItemWithVerticalGutter,
-} from 'Atoms/Grid/Item/Flexbox/FlexboxItem';
-import { Props as ChildProps } from 'Atoms/Grid/Item/Flexbox/FlexboxItem.types';
-import { Props } from './FlexboxContainer.types';
 import { Theme } from 'theme';
+import { ItemWithHorisontalGutter, ItemWithVerticalGutter } from '../../Item/Flexbox/FlexboxItem';
+import { Props as ChildProps } from '../../Item/Flexbox/FlexboxItem.types';
+import { Props } from './FlexboxContainer.types';
 
 const isHorizontalGrid = (dir: Props['direction']) => {
   return dir !== 'column' && dir !== 'column-reverse';
 };
 
-const getContainerMargins =  (props: ThemedStyledProps<Props, Theme>) => {
+const getContainerMargins = (props: ThemedStyledProps<Props, Theme>) => {
   const { theme, direction, gutter = 5 } = props;
   const negativeGutter = `-${theme.spacing.unit(gutter / 2)}px`;
 
@@ -42,14 +39,14 @@ const StyledFlexbox = styled.div<Props>`
 `;
 
 export const Flexbox = (props: Props) => {
-  const { gutter = 5, direction} = props;
+  const { gutter = 5, direction } = props;
 
   return (
     <StyledFlexbox {...props}>
       {React.Children.map(props.children, (child: any) =>
         isHorizontalGrid(direction) ? (
           <ItemWithHorisontalGutter {...child.props as ChildProps} gutter={gutter} />
-          ) : (
+        ) : (
           <ItemWithVerticalGutter {...child.props as ChildProps} gutter={gutter} />
         ),
       )}
