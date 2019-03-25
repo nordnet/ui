@@ -72,6 +72,7 @@
     "@nordnet/prettier-config": "2.0.0",
     "@storybook/addon-a11y": "5.0.5",
     "@storybook/addon-actions": "5.0.5",
+    "@storybook/addon-info": "^5.0.5",
     "@storybook/addon-knobs": "5.0.5",
     "@storybook/addon-links": "5.0.5",
     "@storybook/addons": "5.0.5",
