@@ -10,6 +10,6 @@ stories.addDecorator(withKnobs);
 
 stories.add('basic use', () => {
   const fontSize = number('Font size', 16);
-  const textColor = select('Select color', theme.rawColor, theme.rawColor.gray0);
+  const textColor = select('Select color', theme.color, theme.color.text);
   return <Input.Text fontSize={fontSize} color={textColor} />;
 });
