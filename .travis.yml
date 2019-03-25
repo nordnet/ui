@@ -20,8 +20,7 @@ jobs:
       script:
         - commitlint-travis
         - npm run lint
-        # TODO
-        # - npm run coverage
+        - npm run coverage
         - npm run build
         - npm run build-storybook
 
