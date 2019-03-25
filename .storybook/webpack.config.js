@@ -14,6 +14,7 @@ module.exports = ({ config, mode }) => {
     ['Atoms']: path.resolve(__dirname, '../src/Atoms/'),
     ['Templates']: path.resolve(__dirname, '../src/Templates/'),
     ['common']: path.resolve(__dirname, '../src/common/'),
+    ['theme']: path.resolve(__dirname, '../src/theme/'),
   };
   return config;
 };
