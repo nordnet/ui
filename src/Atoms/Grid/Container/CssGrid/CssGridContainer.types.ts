@@ -1,5 +1,3 @@
-import { PixelOrUnit } from '../Container.types';
-
 type Areas = AreasRow[];
 type AreasRow = AreaName[];
 export type AreaName = string;
@@ -21,7 +19,7 @@ export type Props = {
   templateRows?: string;
 } & (
   | {
-      gutter: PixelOrUnit | { row: PixelOrUnit; col: PixelOrUnit };
+      gutter: number | { row: number; col: number };
       templateColumns: string;
     }
   | {

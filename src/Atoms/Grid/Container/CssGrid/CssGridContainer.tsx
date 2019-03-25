@@ -1,4 +1,6 @@
-import styled from 'styled-components';
+import React from 'react';
+import styled, { ThemedStyledProps } from 'styled-components';
+import { Theme } from 'theme';
 import { Props } from './CssGridContainer.types';
 
 const formatAreas = (areas: Props['areas']) =>
@@ -6,16 +8,15 @@ const formatAreas = (areas: Props['areas']) =>
     .map(areaRow => areaRow.join(' '))
     .map(area => `"${area}"`)
     .join(' ');
-const isString = (x: any): x is string => typeof x === 'string' || x instanceof String;
 const isNumber = (x: any): x is number => x === parseInt(x, 10);
 const isUndefined = (x: any): x is undefined => typeof x === 'undefined';
 
-const getGutterStyles = (gutter: Props['gutter']) => {
-  if (isString(gutter)) {
-    return `grid-gap: ${gutter}`;
-  }
+const getGutterStyles = (props: ThemedStyledProps<Props, Theme>) => {
+  const { gutter, theme } = props;
+  const equalGaps = (value: number) => `grid-gap: ${theme.spacing.unit(value)}px`;
+
   if (isNumber(gutter)) {
-    return `grid-gap: ${gutter}px`;
+    return equalGaps(gutter);
   }
   if (isUndefined(gutter)) {
     return undefined;
@@ -24,21 +25,25 @@ const getGutterStyles = (gutter: Props['gutter']) => {
   const { col, row } = gutter;
 
   if (col && row && col === row) {
-    return `grid-gap: ${col}px`;
+    return equalGaps(gutter.col);
   }
 
   return `
-    ${col && `column-gap: ${col}px`};
-    ${row && `row-gap: ${row}px`};
+    ${col && `column-gap: ${theme.spacing.unit(col)}px`};
+    ${row && `row-gap: ${theme.spacing.unit(row)}px`};
   `;
 };
 
-export const CssGrid: React.FC<Props> = styled.div<Props>`
+const StyledCssGrid: React.FC<Props> = styled.div<Props>`
   box-sizing: border-box;
   ${({ height }) => height && `height: ${height}`};
   display: grid;
   ${({ areas }) => areas && `grid-template-areas: ${formatAreas(areas)};`}
   ${({ templateColumns }) => templateColumns && `grid-template-columns: ${templateColumns};`}
   ${({ templateRows }) => templateRows && `grid-template-rows: ${templateRows};`}
-  ${({ gutter }) => gutter && getGutterStyles(gutter)}
+  ${props => props.gutter && getGutterStyles(props)}
 `;
+
+export const CssGrid: React.FunctionComponent<Props> = props => <StyledCssGrid {...props} />;
+
+CssGrid.displayName = 'CSS Grid Container';

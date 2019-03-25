@@ -7,3 +7,7 @@ export type Props = {
   flex?: string;
   align?: 'auto' | 'flex-start' | 'flex-end' | 'center' | 'baseline' | 'stretch';
 };
+
+export type PropsWithGutter = {
+  gutter: number;
+} & Props;

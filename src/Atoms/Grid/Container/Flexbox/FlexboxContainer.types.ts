@@ -6,6 +6,7 @@ export type Props = {
   /** flexbox direction */
   direction?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
   wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
+  gutter?: number;
   justifyContent?:
     | 'flex-start'
     | 'flex-end'

@@ -15,3 +15,5 @@ export const Grid: React.FunctionComponent<Props> = props => {
     <FlexBox {...props as FlexboxProps} />
   );
 };
+
+Grid.displayName = 'Grid Container';
