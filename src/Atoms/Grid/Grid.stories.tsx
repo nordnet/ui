@@ -56,17 +56,17 @@ stories.add('Grid based on CSS Grid for Account Overview', () => (
 ));
 
 stories.add('Grid based on Flexbox', () => (
-  <Grid.Container as={BorderAndBgChildren}>
-    <Grid.Item>Col 1</Grid.Item>
-    <Grid.Item>Col 2</Grid.Item>
-    <Grid.Item>Col 3</Grid.Item>
+  <Grid.Container as={BorderAndBgChildren} justifyContent="center">
+    <Grid.Item flex="1 1 auto">Col 1</Grid.Item>
+    <Grid.Item flex="1 1 50%">Col 2</Grid.Item>
+    <Grid.Item flex="1 1 auto">Col 3</Grid.Item>
   </Grid.Container>
 ));
 
 stories.add('Grid based on Flexbox: column', () => (
   <Grid.Container direction="column" as={BorderAndBgChildren}>
-    <Grid.Item>Col 1</Grid.Item>
-    <Grid.Item>Col 2</Grid.Item>
-    <Grid.Item>Col 3</Grid.Item>
+    <Grid.Item order={2}>Col 1</Grid.Item>
+    <Grid.Item order={1}>Col 2</Grid.Item>
+    <Grid.Item order={3}>Col 3</Grid.Item>
   </Grid.Container>
 ));

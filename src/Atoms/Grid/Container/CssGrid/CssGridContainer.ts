@@ -33,7 +33,7 @@ const getGutterStyles = (gutter: Props['gutter']) => {
   `;
 };
 
-export const CssGrid = styled.div<Props>`
+export const CssGrid: React.FC<Props> = styled.div<Props>`
   box-sizing: border-box;
   ${({ height }) => height && `height: ${height}`};
   display: grid;
