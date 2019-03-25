@@ -18,6 +18,7 @@
     "babel:cjs": "babel -d dist/cjs src/ --extensions=.ts,.tsx --copy-files",
     "build": "rimraf dist && yarn babel:esm && yarn babel:cjs",
     "build-storybook": "build-storybook",
+    "now-build": "build-storybook",
     "commit": "git-cz"
   },
   "commitlint": {
