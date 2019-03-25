@@ -5,9 +5,9 @@ export const Flexbox: React.FC<Props> = styled.div<Props>`
   display: flex;
   box-sizing: border-box;
   ${({ height }) => height && `height: ${height}`};
-  flex-direction: ${({ direction = 'row' }) => direction};
-  flex-wrap: ${({ wrap = 'wrap' }) => wrap};
-  justify-content: ${({ justifyContent = 'flex-start' }) => justifyContent};
-  align-items: ${({ alignItems = 'stretch' }) => alignItems};
-  align-content: ${({ alignContent = 'stretch' }) => alignContent};
+  ${({ direction }) => direction && `flex-direction: ${direction}`};
+  ${({ wrap }) => wrap && `flex-wrap: ${wrap}`};
+  ${({ justifyContent }) => justifyContent && `justify-content: ${justifyContent}`};
+  ${({ alignItems }) => alignItems && `align-items: ${alignItems}`};
+  ${({ alignContent }) => alignContent && `align-content: ${alignContent}`};
 `;

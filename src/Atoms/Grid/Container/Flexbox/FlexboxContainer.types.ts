@@ -37,5 +37,4 @@ export type Props = {
     | 'space-around'
     | 'space-evenly'
     | 'stretch';
-  // @todo add all flex container props https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 };
