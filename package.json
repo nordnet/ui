@@ -9,6 +9,8 @@
   "sideEffects": false,
   "license": "MIT",
   "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage && codecov",
     "dev": "start-storybook -p 6006",
     "lint:js": "eslint --ext=.tsx --ext=.ts src",
     "lint:css": "stylelint './src/**/*.{ts,tsx}'",
@@ -43,7 +45,7 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged",
-      "pre-push": "yarn lint"
+      "pre-push": "yarn lint && yarn test"
     }
   },
   "config": {
@@ -73,11 +75,13 @@
     "@nordnet/prettier-config": "2.0.0",
     "@storybook/addon-a11y": "5.0.5",
     "@storybook/addon-actions": "5.0.5",
+    "@storybook/addon-info": "^5.0.5",
     "@storybook/addon-knobs": "5.0.5",
     "@storybook/addon-links": "5.0.5",
     "@storybook/addons": "5.0.5",
     "@storybook/react": "5.0.5",
     "@types/node": "11.11.6",
+    "@types/ramda": "^0.26.5",
     "@types/react": "16.8.8",
     "@types/storybook__addon-knobs": "4.0.4",
     "@types/storybook__react": "4.0.1",
@@ -88,8 +92,11 @@
     "babel-plugin-ramda": "2.0.0",
     "babel-plugin-styled-components": "1.10.0",
     "babel-plugin-typescript-to-proptypes": "0.17.1",
+    "codecov": "^3.2.0",
     "commitlint-config-squash-pr": "1.0.1",
     "cz-conventional-changelog": "2.1.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
     "eslint": "5.15.3",
     "eslint-config-airbnb": "17.1.0",
     "eslint-config-prettier": "4.1.0",
@@ -100,16 +107,17 @@
     "eslint-plugin-react-hooks": "1.6.0",
     "git-cz": "3.0.0",
     "husky": "1.3.1",
+    "jest": "^24.5.0",
     "lint-staged": "8.1.5",
     "prettier": "1.16.4",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5",
+    "react": "16.8.5",
+    "react-dom": "16.8.5",
     "rimraf": "2.6.3",
     "stylelint": "9.10.1",
     "stylelint-config-recommended": "2.1.0",
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-processor-styled-components": "1.5.2",
     "typescript": "3.3.4000",
-    "webpack": "^4.29.6"
+    "webpack": "4.29.6"
   }
 }
