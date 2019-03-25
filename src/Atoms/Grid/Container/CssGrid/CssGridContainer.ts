@@ -35,10 +35,10 @@ const getGutterStyles = (gutter: Props['gutter']) => {
 
 export const CssGrid = styled.div<Props>`
   box-sizing: border-box;
-  display: grid;
   ${({ height }) => height && `height: ${height}`};
+  display: grid;
   ${({ areas }) => areas && `grid-template-areas: ${formatAreas(areas)};`}
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px auto 100px;
+  ${({ templateColumns }) => templateColumns && `grid-template-columns: ${templateColumns};`}
+  ${({ templateRows }) => templateRows && `grid-template-rows: ${templateRows};`}
   ${({ gutter }) => gutter && getGutterStyles(gutter)}
 `;

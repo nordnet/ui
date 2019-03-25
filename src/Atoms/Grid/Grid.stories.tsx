@@ -15,8 +15,9 @@ const BorderAndBgChildren = styled.div`
 stories.add('Grid based on CSS Grid', () => (
   <Grid.Container
     twoDimension
-    gutter="16px"
     as={BorderAndBgChildren}
+    gutter="16px"
+    templateColumns="repeat(3, 1fr)"
     areas={[
       ['header', 'header', 'header'],
       ['menu', 'content', 'ads'],
@@ -36,6 +37,7 @@ stories.add('Grid based on CSS Grid for Account Overview', () => (
     twoDimension
     as={BorderAndBgChildren}
     gutter={{ row: 16, col: 8 }}
+    templateColumns="1fr 2fr 1fr"
     areas={[
       ['left', 'top', 'messages'],
       ['left', 'top', 'order'],

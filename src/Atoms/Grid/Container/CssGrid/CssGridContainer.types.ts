@@ -18,12 +18,13 @@ export type Props = {
       ]
       */
   areas: Areas;
-
-  /** maybe provide gap and css-grid only for page level
-   * dont add px for string
-   */
-  gutter?: PixelOrUnit | { row: PixelOrUnit; col: PixelOrUnit };
-
-  /** think of a default value (to fix IE11 issue https://css-tricks.com/css-grid-in-ie-css-grid-and-the-new-autoprefixer/) */
-  areaSizes?: Record<AreaName, { row?: PixelOrUnit; col: PixelOrUnit }>;
-};
+  templateRows?: string;
+} & (
+  | {
+      gutter: PixelOrUnit | { row: PixelOrUnit; col: PixelOrUnit };
+      templateColumns: string;
+    }
+  | {
+      gutter: never;
+      templateColumns?: string;
+    });
