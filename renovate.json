@@ -7,6 +7,7 @@
   "packageRules": [
     {
       "depTypeList":  ["devDependencies"],
+      "postUpdateOptions": ["yarnDedupeHighest"],
       "schedule": "before 3am on Monday"
     }
   ]

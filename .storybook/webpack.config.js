@@ -8,11 +8,12 @@ module.exports = ({ config, mode }) => {
       presets: [['react-app', { flow: false, typescript: true }]],
     },
   });
-  config.resolve.extensions.push('.ts', '.tsx');
+  config.resolve.extensions.push('.ts', '.tsx', '.d.ts');
   config.resolve.alias = {
     ...config.resolve.alias,
     ['Atoms']: path.resolve(__dirname, '../src/Atoms/'),
     ['Templates']: path.resolve(__dirname, '../src/Templates/'),
+    ['common']: path.resolve(__dirname, '../src/common/'),
   };
   return config;
 };
