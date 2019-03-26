@@ -19,10 +19,14 @@ export type Props = {
   templateRows?: string;
 } & (
   | {
+      gutter: 0;
+      templateColumns?: string;
+    }
+  | {
       gutter: number | { row: number; col: number };
       templateColumns: string;
     }
   | {
-      gutter: never;
+      gutter?: never;
       templateColumns?: string;
     });

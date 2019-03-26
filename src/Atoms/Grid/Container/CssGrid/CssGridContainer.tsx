@@ -8,18 +8,16 @@ const formatAreas = (areas: Props['areas']) =>
     .map(areaRow => areaRow.join(' '))
     .map(area => `"${area}"`)
     .join(' ');
+
 const isNumber = (x: any): x is number => x === parseInt(x, 10);
 const isUndefined = (x: any): x is undefined => typeof x === 'undefined';
 
 const getGutterStyles = (props: ThemedStyledProps<Props, Theme>) => {
-  const { gutter, theme } = props;
+  const { gutter = props.theme.spacing.gutter, theme } = props;
   const equalGaps = (value: number) => `grid-gap: ${theme.spacing.unit(value)}px`;
 
   if (isNumber(gutter)) {
     return equalGaps(gutter);
-  }
-  if (isUndefined(gutter)) {
-    return undefined;
   }
 
   const { col, row } = gutter;
@@ -34,14 +32,24 @@ const getGutterStyles = (props: ThemedStyledProps<Props, Theme>) => {
   `;
 };
 
+const getTemplateColumns = (props: ThemedStyledProps<Props, Theme>) => {
+  const { gutter, areas, templateColumns } = props;
+
+  if (isUndefined(gutter)) {
+    return `grid-template-columns: repeat(${areas[0].length}, 1fr);`;
+  }
+
+  return `grid-template-columns: ${templateColumns};`;
+};
+
 const StyledCssGrid: React.FC<Props> = styled.div<Props>`
   box-sizing: border-box;
   ${({ height }) => height && `height: ${height}`};
   display: grid;
   ${({ areas }) => areas && `grid-template-areas: ${formatAreas(areas)};`}
-  ${({ templateColumns }) => templateColumns && `grid-template-columns: ${templateColumns};`}
   ${({ templateRows }) => templateRows && `grid-template-rows: ${templateRows};`}
-  ${props => props.gutter && getGutterStyles(props)}
+  ${props => getTemplateColumns(props)}
+  ${props => getGutterStyles(props)}
 `;
 
 export const CssGrid: React.FunctionComponent<Props> = props => <StyledCssGrid {...props} />;

@@ -14,8 +14,6 @@ const Content = styled.div`
 stories.add('Grid based on CSS Grid', () => (
   <Grid.Container
     twoDimension
-    gutter={4}
-    templateColumns="repeat(3, 1fr)"
     areas={[
       ['header', 'header', 'header'],
       ['menu', 'content', 'ads'],

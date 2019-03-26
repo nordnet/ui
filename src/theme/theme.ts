@@ -13,6 +13,7 @@ export const createTheme = (config?: ThemeConfig): Theme => {
 
   const sizeValues = Object.values(size) as number[];
 
+  const GUTTER = 5;
   const UNIT = 4;
   const unit = (times: number) => times * UNIT;
   unit.valueOf = () => UNIT;
@@ -55,6 +56,7 @@ export const createTheme = (config?: ThemeConfig): Theme => {
   } as RawColor;
   const spacing: Theme['spacing'] = {
     unit,
+    gutter: GUTTER,
   };
 
   const theme: Theme = {
