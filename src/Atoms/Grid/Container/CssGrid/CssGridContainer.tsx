@@ -54,4 +54,4 @@ const StyledCssGrid: React.FC<Props> = styled.div<Props>`
 
 export const CssGrid: React.FunctionComponent<Props> = props => <StyledCssGrid {...props} />;
 
-CssGrid.displayName = 'CSS Grid Container';
+CssGrid.displayName = 'Grid.Container.CssGrid';

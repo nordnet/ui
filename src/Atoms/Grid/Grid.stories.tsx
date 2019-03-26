@@ -5,11 +5,12 @@ import Grid from '.';
 
 const stories = storiesOf('Atoms/Grid', module);
 
-const Content = styled.div`
+const StyledContent = styled.div`
   border: 1px solid black;
   background-color: #eee;
   height: 100%;
 `;
+const Content = ({ children }: any) => <StyledContent>{children}</StyledContent>;
 
 stories.add('Grid based on CSS Grid', () => (
   <Grid.Container

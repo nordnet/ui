@@ -16,4 +16,4 @@ export const Grid: React.FunctionComponent<Props> = props => {
   );
 };
 
-Grid.displayName = 'Grid Container';
+Grid.displayName = 'Grid.Container';

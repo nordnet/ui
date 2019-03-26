@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import * as R from 'ramda';
 import { Props, PropsWithGutter } from './FlexboxItem.types';
 
-export const StyledItem: React.FC<Props> = styled.div<Props>`
+export const StyledItem = styled.div<Props>`
   ${({ order }) => order && `order: ${order};`}
   ${({ grow }) => grow && `flex-grow: ${grow};`}
   ${({ shrink }) => shrink && `flex-shrink: ${shrink};`}
@@ -12,21 +13,37 @@ export const StyledItem: React.FC<Props> = styled.div<Props>`
 `;
 
 const StyledItemWithHorisontalGutter = styled(StyledItem)<PropsWithGutter>`
-  padding-left: ${props => props.theme.spacing.unit(props.gutter / 2)}px;
-  padding-right: ${props => props.theme.spacing.unit(props.gutter / 2)}px;
+  ${props => {
+    const { gutter = props.theme.spacing.gutter } = props;
+    return `
+      padding-left: ${props.theme.spacing.unit(gutter / 2)}px;
+      padding-right: ${props.theme.spacing.unit(gutter / 2)}px;
+    `;
+  }}
 `;
 
 const StyledItemWithVerticalGutter = styled(StyledItem)<PropsWithGutter>`
-  padding-top: ${props => props.theme.spacing.unit(props.gutter / 2)}px;
-  padding-bottom: ${props => props.theme.spacing.unit(props.gutter / 2)}px;
+  ${props => {
+    const { gutter = props.theme.spacing.gutter } = props;
+    return `
+      padding-top: ${props.theme.spacing.unit(gutter / 2)}px;
+      padding-bottom: ${props.theme.spacing.unit(gutter / 2)}px;
+    `;
+  }}
 `;
 
-export const ItemWithHorisontalGutter: React.FunctionComponent<PropsWithGutter> = props => (
-  <StyledItemWithHorisontalGutter children={props.children} gutter={props.gutter} />
-);
-export const ItemWithVerticalGutter: React.FunctionComponent<PropsWithGutter> = props => (
-  <StyledItemWithVerticalGutter children={props.children} gutter={props.gutter} />
-);
-export const Item: React.FunctionComponent<Props> = props => <StyledItem {...props} />;
+const withoutSCProps = R.omit(['css', 'as']);
 
-Item.displayName = 'Flexbox Grid Item';
+export const ItemWithHorisontalGutter: React.FunctionComponent<PropsWithGutter> = props => (
+  <StyledItemWithHorisontalGutter {...withoutSCProps(props)} />
+);
+ItemWithHorisontalGutter.displayName = 'Grid.Item.Flex';
+export const ItemWithVerticalGutter: React.FunctionComponent<PropsWithGutter> = props => (
+  <StyledItemWithVerticalGutter {...withoutSCProps(props)} />
+);
+ItemWithVerticalGutter.displayName = 'Grid.Item.Flex';
+
+export const Item: React.FunctionComponent<Props> = props => (
+  <StyledItem {...withoutSCProps(props)} />
+);
+Item.displayName = 'Grid.Item.Flex';

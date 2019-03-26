@@ -3,7 +3,6 @@ type AreasRow = AreaName[];
 export type AreaName = string;
 
 export type Props = {
-  as?: React.ElementType;
   children: React.ReactNode;
   twoDimension: true;
   height?: string;

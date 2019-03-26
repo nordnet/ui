@@ -1,5 +1,4 @@
 export type Props = {
-  as?: React.ElementType;
   order?: number;
   grow?: number;
   shrink?: number;
@@ -9,5 +8,5 @@ export type Props = {
 };
 
 export type PropsWithGutter = {
-  gutter: number;
+  gutter?: number;
 } & Props;

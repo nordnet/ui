@@ -11,4 +11,4 @@ const StyledItem: React.FC<Props> = styled.div<Props>`
 
 export const Item: React.FunctionComponent<Props> = props => <StyledItem {...props} />;
 
-Item.displayName = 'Css Grid Item';
+Item.displayName = 'Grid.Item.CssGrid';

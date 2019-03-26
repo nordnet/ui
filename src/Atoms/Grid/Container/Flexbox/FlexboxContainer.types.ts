@@ -1,6 +1,5 @@
 export type Props = {
   children: React.ReactNode;
-  as?: React.ElementType;
   height?: number;
   twoDimension?: false | undefined | null;
   /** flexbox direction */

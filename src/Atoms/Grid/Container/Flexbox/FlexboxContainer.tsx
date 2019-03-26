@@ -10,8 +10,12 @@ const isHorizontalGrid = (dir: Props['direction']) => {
 };
 
 const getContainerMargins = (props: ThemedStyledProps<Props, Theme>) => {
-  const { theme, direction, gutter = 5 } = props;
+  const { theme, direction, gutter = props.theme.spacing.gutter } = props;
   const negativeGutter = `-${theme.spacing.unit(gutter / 2)}px`;
+
+  if (gutter <= 0) {
+    return undefined;
+  }
 
   if (isHorizontalGrid(direction)) {
     return `
@@ -21,9 +25,9 @@ const getContainerMargins = (props: ThemedStyledProps<Props, Theme>) => {
   }
 
   return `
-    margin-top: ${negativeGutter};
-    margin-bottom: ${negativeGutter}
-`;
+      margin-top: ${negativeGutter};
+      margin-bottom: ${negativeGutter}
+  `;
 };
 
 const StyledFlexbox = styled.div<Props>`
@@ -39,7 +43,7 @@ const StyledFlexbox = styled.div<Props>`
 `;
 
 export const Flexbox = (props: Props) => {
-  const { gutter = 5, direction } = props;
+  const { gutter, direction } = props;
 
   return (
     <StyledFlexbox {...props}>
@@ -54,4 +58,4 @@ export const Flexbox = (props: Props) => {
   );
 };
 
-Flexbox.displayName = 'Flexbox Grid Container';
+Flexbox.displayName = 'Grid.Container.Flexbox';

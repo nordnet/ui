@@ -12,5 +12,4 @@ export const Item: React.FC<Props> = props => {
     <FlexBoxCell {...props as FlexboxItemProps} />
   );
 };
-
-Item.displayName = 'Grid Item';
+Item.displayName = 'Grid.Item';

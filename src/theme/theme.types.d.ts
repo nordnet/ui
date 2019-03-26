@@ -80,7 +80,8 @@ export type Theme = {
      * margin: ${({ theme }) => theme.spacing.unit(4)}px;
      */
     unit: Unit;
-    gutter: number;
+    /** Number of units in gutter */
+    gutter: 5;
   };
 
   size: {
