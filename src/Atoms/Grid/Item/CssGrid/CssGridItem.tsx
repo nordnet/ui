@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Props } from './CssGridItem.types';
 
 const StyledItem: React.FC<Props> = styled.div<Props>`
+  box-sizing: border-box;
   ${({ area }) => `grid-area: ${area};`}
   ${({ justify }) => justify && `justify-self: ${justify};`}
   ${({ align }) => align && `align-self: ${align};`}

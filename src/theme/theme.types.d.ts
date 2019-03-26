@@ -86,15 +86,15 @@ export type Theme = {
 
   size: {
     /** Mobile */
-    xsmall: 360;
+    xs: 360;
     /** Tablet, mobile */
-    small: 768;
+    sm: 768;
     /** Tablet, desktop */
-    medium: 992;
+    md: 992;
     /** Desktop */
-    large: 1440;
+    lg: 1440;
     /** Large desktop */
-    xlarge: 1680;
+    xl: 1680;
   };
   media: {
     /**

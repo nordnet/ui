@@ -12,7 +12,7 @@ const StyledContent = styled.div`
 `;
 const Content = ({ children }: any) => <StyledContent>{children}</StyledContent>;
 
-stories.add('Grid based on CSS Grid', () => (
+stories.add('Two dimensional grid', () => (
   <Grid.Container
     twoDimension
     areas={[
@@ -39,11 +39,36 @@ stories.add('Grid based on CSS Grid', () => (
   </Grid.Container>
 ));
 
-stories.add('Grid based on CSS Grid for Account Overview', () => (
+stories.add('Two dimensional grid with custom gutter', () => (
   <Grid.Container
     twoDimension
-    gutter={{ row: 4, col: 4 }}
-    templateColumns="1fr 2fr 1fr"
+    gutter={0}
+    areas={[
+      ['left', 'top', 'sidebar'],
+      ['left', 'content', 'sidebar'],
+      ['left', 'content', 'sidebar'],
+    ]}
+  >
+    <Grid.Item area="left">
+      <Content>Left</Content>
+    </Grid.Item>
+    <Grid.Item area="top">
+      <Content>Top</Content>
+    </Grid.Item>
+    <Grid.Item area="content">
+      <Content>Content</Content>
+    </Grid.Item>
+    <Grid.Item area="sidebar">
+      <Content>Sidebar</Content>
+    </Grid.Item>
+  </Grid.Container>
+));
+
+stories.add('Two dimensional grid with object as gutter and custom sized columns', () => (
+  <Grid.Container
+    twoDimension
+    gutter={{ row: 6, col: 4 }}
+    templateColumns={['1fr', '2fr', '1fr']}
     areas={[
       ['left', 'top', 'messages'],
       ['left', 'top', 'order'],
@@ -73,6 +98,67 @@ stories.add('Grid based on CSS Grid for Account Overview', () => (
   </Grid.Container>
 ));
 
+stories.add('Two dimensional grid with custom templateColumns', () => (
+  <Grid.Container
+    twoDimension
+    templateColumns={[3, 6, 3]}
+    areas={[
+      ['left', 'top', 'sidebar'],
+      ['left', 'content', 'sidebar'],
+      ['left', 'content', 'sidebar'],
+    ]}
+  >
+    <Grid.Item area="left">
+      <Content>Left</Content>
+    </Grid.Item>
+    <Grid.Item area="top">
+      <Content>Top</Content>
+    </Grid.Item>
+    <Grid.Item area="content">
+      <Content>Content</Content>
+    </Grid.Item>
+    <Grid.Item area="sidebar">
+      <Content>Sidebar</Content>
+    </Grid.Item>
+  </Grid.Container>
+));
+
+stories.add('Two dimensional grid with  different layouts for different screen sizes', () => (
+  <Grid.Container
+    twoDimension
+    templateColumns={[3, 6, 3]}
+    areas={[
+      ['left', 'top', 'sidebar'],
+      ['left', 'content', 'sidebar'],
+      ['left', 'content', 'sidebar'],
+    ]}
+    sm={{
+      templateColumns: [6, 6],
+      // prettier-ignore
+      areas: [
+        ['left', 'sidebar'],
+        ['left', 'sidebar'],
+        ['top', 'top'],
+        ['content', 'content'],
+      ]
+    }}
+  >
+    <Grid.Item area="left">
+      <Content>Left</Content>
+    </Grid.Item>
+    <Grid.Item area="top">
+      <Content>Top</Content>
+    </Grid.Item>
+    <Grid.Item area="content">
+      <Content>Content</Content>
+    </Grid.Item>
+    <Grid.Item area="sidebar">
+      <Content>Sidebar</Content>
+    </Grid.Item>
+  </Grid.Container>
+));
+
+/** One dimensional stories */
 stories.add('Grid based on Flexbox', () => (
   <Grid.Container justifyContent="center" gutter={4}>
     <Grid.Item flex="1 1 auto">

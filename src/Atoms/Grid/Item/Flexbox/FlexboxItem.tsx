@@ -3,13 +3,17 @@ import styled from 'styled-components';
 import * as R from 'ramda';
 import { Props, PropsWithGutter } from './FlexboxItem.types';
 
-export const StyledItem = styled.div<Props>`
+const getItemSize = () => {};
+
+const StyledItem = styled.div<Props>`
+  box-sizing: border-box;
   ${({ order }) => order && `order: ${order};`}
   ${({ grow }) => grow && `flex-grow: ${grow};`}
   ${({ shrink }) => shrink && `flex-shrink: ${shrink};`}
   ${({ basis }) => basis && `flex-basis: ${basis};`}
   ${({ flex }) => flex && `flex: ${flex};`}
   ${({ align }) => align && `align-self: ${align};`}
+  ${({ size }) => size && getItemSize(props)}
 `;
 
 const StyledItemWithHorisontalGutter = styled(StyledItem)<PropsWithGutter>`

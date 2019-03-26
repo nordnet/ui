@@ -14,7 +14,7 @@ const getContainerMargins = (props: ThemedStyledProps<Props, Theme>) => {
   const negativeGutter = `-${theme.spacing.unit(gutter / 2)}px`;
 
   if (gutter <= 0) {
-    return undefined;
+    return null;
   }
 
   if (isHorizontalGrid(direction)) {

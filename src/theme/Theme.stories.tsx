@@ -19,13 +19,13 @@ const Component = styled.div`
   height: ${p => p.theme.spacing.unit(50)}px;
   background: ${({ theme }) => theme.color.cta};
 
-  ${({ theme }) => theme.media.greaterThan(theme.size.xsmall)} {
+  ${({ theme }) => theme.media.greaterThan(theme.size.xs)} {
     background: ${({ theme }) => theme.color.positive};
   }
-  ${({ theme }) => theme.media.greaterThan(theme.size.small)} {
+  ${({ theme }) => theme.media.greaterThan(theme.size.sm)} {
     background: ${({ theme }) => theme.color.negative};
   }
-  ${({ theme }) => theme.media.greaterThan(theme.size.medium)} {
+  ${({ theme }) => theme.media.greaterThan(theme.size.md)} {
     background: ${({ theme }) => theme.color.warning};
   }
 `;

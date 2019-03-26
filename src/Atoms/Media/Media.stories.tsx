@@ -8,13 +8,13 @@ const stories = storiesOf('Atoms/Media', module);
 stories.add('Basic usage', () => {
   return (
     <>
-      <Media query={t => t.media.lessThan(t.size.medium)}>
+      <Media query={t => t.media.lessThan(t.size.md)}>
         I am only shown on screens smaller than medium size
       </Media>
-      <Media query={t => t.media.between(t.size.medium, t.size.large)}>
+      <Media query={t => t.media.between(t.size.md, t.size.lg)}>
         I am only shown between medium and large sizes
       </Media>
-      <Media query={t => t.media.greaterThan(t.size.large)}>
+      <Media query={t => t.media.greaterThan(t.size.lg)}>
         I am only shown on screens bigger than large size
       </Media>
     </>
