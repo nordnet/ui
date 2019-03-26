@@ -1,7 +1,5 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import theme from 'theme';
-import R from 'ramda';
 import { Theme } from '../../../../theme/theme.types';
 import { Props, Gutter, TemplateColumn, Areas } from './CssGridContainer.types';
 
@@ -30,8 +28,8 @@ const getGutterStyles = (props: { gutter: Gutter; theme: Theme }) => {
   }
 
   return `
-    ${col && `column-gap: ${theme.spacing.unit(col)}px`};
-    ${row && `row-gap: ${theme.spacing.unit(row)}px`};
+    ${col ? `column-gap: ${theme.spacing.unit(col)}px` : ''};
+    ${row ? `row-gap: ${theme.spacing.unit(row)}px` : ''};
   `;
 };
 
@@ -57,22 +55,27 @@ const getTemplateColumns = (props: {
   }
 
   return `grid-template-columns: ${templateColumns
-    .map((x: number) => `${x * oneColSize}%`)
+    .map((x: number) => `${x * oneColSize}fr`)
     .join(' ')};`;
 };
 
 const StyledDiv = styled.div<Props>`
   ${props => {
     const { sm, md, lg, xl } = props;
-    const createStyles = (innerProps?: Partial<Props>) => (size?: 'sm' | 'md' | 'lg' | 'xl') => {
+    const createStyles = (innerProps: Partial<Props>, size?: 'sm' | 'md' | 'lg' | 'xl') => {
       const { height, areas, templateRows, templateColumns } = innerProps;
       const gutter = innerProps.gutter || props.theme.spacing.gutter;
       const baseStyles = `
           ${height ? `height: ${height}` : ''};
           ${areas ? `grid-template-areas: ${formatAreas(areas)};` : ''}
           ${templateRows ? `grid-template-rows: ${templateRows};` : ''}
-          ${getTemplateColumns({ ...innerProps, gutter, templateColumns, theme: props.theme }) ||
-            ''}
+          ${getTemplateColumns({
+            ...innerProps,
+            gutter,
+            areas: props.areas,
+            templateColumns,
+            theme: props.theme,
+          }) || ''}
           ${getGutterStyles({ ...innerProps, gutter, theme: props.theme }) || ''}
         `;
 
@@ -86,9 +89,9 @@ const StyledDiv = styled.div<Props>`
     };
 
     const styles = Object.entries({ sm, md, lg, xl })
-      .filter(([size, sizeProps]) => sizeProps !== undefined)
-      .map(([size, sizeProps]) => createStyles(sizeProps)(size as 'sm' | 'md' | 'lg' | 'xl'));
-    styles.unshift(createStyles(props)());
+      .filter(([_, sizeProps]) => sizeProps !== undefined)
+      .map(([size, sizeProps]) => createStyles(sizeProps!, size as 'sm' | 'md' | 'lg' | 'xl'));
+    styles.unshift(createStyles(props, undefined));
     return styles.join('\n');
   }}
   box-sizing: border-box;

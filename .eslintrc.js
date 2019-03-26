@@ -35,6 +35,7 @@ module.exports = {
       {
         vars: 'all',
         args: 'after-used',
+        argsIgnorePattern: '^_',
         ignoreRestSiblings: false,
       },
     ],

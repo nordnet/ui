@@ -3,7 +3,7 @@ type AreasRow = AreaName[];
 
 export type AreaName = string;
 export type Gutter = number | { row: number; col: number };
-type TemplateColumn = string[] | number[];
+export type TemplateColumn = string[] | number[];
 type BaseProps = {
   children: React.ReactNode;
   twoDimension: true;

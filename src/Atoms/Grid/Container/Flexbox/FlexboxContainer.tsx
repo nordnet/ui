@@ -9,12 +9,12 @@ const isHorizontalGrid = (dir: Props['direction']) => {
   return dir !== 'column' && dir !== 'column-reverse';
 };
 
-const getContainerMargins = (props: ThemedStyledProps<Props, Theme>) => {
+const getContainerMargins = (props: ThemedStyledProps<Props, Theme>): string => {
   const { theme, direction, gutter = props.theme.spacing.gutter } = props;
   const negativeGutter = `-${theme.spacing.unit(gutter / 2)}px`;
 
   if (gutter <= 0) {
-    return null;
+    return '';
   }
 
   if (isHorizontalGrid(direction)) {
@@ -34,12 +34,12 @@ const StyledFlexbox = styled.div<Props>`
   box-sizing: border-box;
   display: flex;
   ${props => getContainerMargins(props)}
-  ${({ height }) => height && `height: ${height};`}
-  ${({ direction }) => direction && `flex-direction: ${direction};`}
-  ${({ wrap }) => wrap && `flex-wrap: ${wrap};`}
-  ${({ justifyContent }) => justifyContent && `justify-content: ${justifyContent};`}
-  ${({ alignItems }) => alignItems && `align-items: ${alignItems};`}
-  ${({ alignContent }) => alignContent && `align-content: ${alignContent};`}
+  ${({ height }) => (height ? `height: ${height};` : '')}
+  ${({ direction }) => (direction ? `flex-direction: ${direction};` : '')}
+  ${({ wrap }) => (wrap ? `flex-wrap: ${wrap};` : '')}
+  ${({ justifyContent }) => (justifyContent ? `justify-content: ${justifyContent};` : '')}
+  ${({ alignItems }) => (alignItems ? `align-items: ${alignItems};` : '')}
+  ${({ alignContent }) => (alignContent ? `align-content: ${alignContent};` : '')}
 `;
 
 export const Flexbox = (props: Props) => {
