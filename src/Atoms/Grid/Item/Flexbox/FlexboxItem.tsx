@@ -12,13 +12,13 @@ export const StyledItem: React.FC<Props> = styled.div<Props>`
 `;
 
 const StyledItemWithHorisontalGutter = styled(StyledItem)<PropsWithGutter>`
-  padding-left: ${props => props.theme.spacing.unit(props.gutter) / 2}px;
-  padding-right: ${props => props.theme.spacing.unit(props.gutter) / 2}px;
+  padding-left: ${props => props.theme.spacing.unit(props.gutter / 2)}px;
+  padding-right: ${props => props.theme.spacing.unit(props.gutter / 2)}px;
 `;
 
 const StyledItemWithVerticalGutter = styled(StyledItem)<PropsWithGutter>`
-  padding-top: ${props => props.theme.spacing.unit(props.gutter) / 2}px;
-  padding-bottom: ${props => props.theme.spacing.unit(props.gutter) / 2}px;
+  padding-top: ${props => props.theme.spacing.unit(props.gutter / 2)}px;
+  padding-bottom: ${props => props.theme.spacing.unit(props.gutter / 2)}px;
 `;
 
 export const ItemWithHorisontalGutter: React.FunctionComponent<PropsWithGutter> = props => (
