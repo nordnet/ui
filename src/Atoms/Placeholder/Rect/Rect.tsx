@@ -10,3 +10,4 @@ const StyledDiv = styled.div<Props>`
 `;
 
 export const Rect: React.FunctionComponent<Props> = props => <StyledDiv {...props} />;
+Rect.displayName = 'Placeholder.Rect';

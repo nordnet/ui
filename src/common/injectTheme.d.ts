@@ -1,4 +1,4 @@
-import { Theme } from '../theme';
+import { Theme } from '../theme/index';
 
 declare module 'styled-components' {
   // Need to override DefaultTheme interface

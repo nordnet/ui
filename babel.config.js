@@ -16,7 +16,8 @@ module.exports = api => {
 
   const plugins = [
     '@babel/plugin-proposal-class-properties',
-    'babel-plugin-styled-components',
+    /** @todo think about different way of removing types import */
+    ['babel-plugin-styled-components', { ignore: ['react'] }],
     'ramda',
   ];
 
