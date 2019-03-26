@@ -91,7 +91,7 @@
     "@typescript-eslint/eslint-plugin": "1.5.0",
     "@typescript-eslint/parser": "1.5.0",
     "babel-loader": "8.0.5",
-    "babel-plugin-danger-remove-unused-import": "^1.1.2",
+    "babel-plugin-danger-remove-unused-import": "1.1.2",
     "babel-plugin-ramda": "2.0.0",
     "babel-plugin-styled-components": "1.10.0",
     "babel-plugin-typescript-to-proptypes": "0.17.1",
