@@ -22,10 +22,10 @@ const StyledItemWithVerticalGutter = styled(StyledItem)<PropsWithGutter>`
 `;
 
 export const ItemWithHorisontalGutter: React.FunctionComponent<PropsWithGutter> = props => (
-  <StyledItemWithHorisontalGutter {...props} />
+  <StyledItemWithHorisontalGutter children={props.children} gutter={props.gutter} />
 );
 export const ItemWithVerticalGutter: React.FunctionComponent<PropsWithGutter> = props => (
-  <StyledItemWithVerticalGutter {...props} />
+  <StyledItemWithVerticalGutter children={props.children} gutter={props.gutter} />
 );
 export const Item: React.FunctionComponent<Props> = props => <StyledItem {...props} />;
 
