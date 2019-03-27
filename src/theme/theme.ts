@@ -77,6 +77,7 @@ export const createTheme = (config?: ThemeConfig): Theme => {
       warning: rawColor.index,
       module: rawColor.white,
       divider: rawColor.gray6,
+      backgroundDark: rawColor.gray0,
     },
     media: {
       between: (s1, s2) => {
