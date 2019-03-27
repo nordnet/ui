@@ -66,6 +66,7 @@ export const createTheme = (config?: ThemeConfig): Theme => {
     },
     color: {
       background: rawColor.gray7,
+      backgroundWhite: rawColor.white,
       text: rawColor.gray0,
       label: rawColor.gray2,
       buy: rawColor.cta,

@@ -65,8 +65,10 @@ export type Theme = {
     negative: RawColor['negative'];
     /** index */
     warning: RawColor['index'];
-    /** white */
+    /** @deprecated use card instead */
     module: RawColor['white'];
+    /** white */
+    card: RawColor['white'];
     /** gray6 */
     divider: RawColor['gray6'];
   };
