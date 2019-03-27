@@ -66,7 +66,6 @@ export const createTheme = (config?: ThemeConfig): Theme => {
     },
     color: {
       background: rawColor.gray7,
-      backgroundWhite: rawColor.white,
       text: rawColor.gray0,
       label: rawColor.gray2,
       buy: rawColor.cta,
@@ -77,6 +76,7 @@ export const createTheme = (config?: ThemeConfig): Theme => {
       negative: rawColor.negative,
       warning: rawColor.index,
       module: rawColor.white,
+      card: rawColor.white,
       divider: rawColor.gray6,
       backgroundDark: rawColor.gray0,
     },
