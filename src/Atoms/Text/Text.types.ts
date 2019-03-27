@@ -2,7 +2,7 @@ import React from 'react';
 import { Theme } from '../../theme';
 
 export type StyledTextProps = {
-  as?: React.ComponentFactory<any, any>;
+  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   sizeMobile: number;
   sizeDesktop: number;
   colorFn?: ColorFn;
@@ -11,7 +11,7 @@ export type StyledTextProps = {
 type ColorFn = (t: Theme) => keyof Theme['color'];
 
 export type BaseProps = {
-  as?: React.ComponentFactory<any, any>;
+  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   children: React.ReactText | React.ReactText[];
   color?: ColorFn;
 };
