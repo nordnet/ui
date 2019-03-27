@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Card from '.';
 import { Props } from './Card.types';
 
-const stories = storiesOf('Atom/Card', module);
+const stories = storiesOf('Atoms/Card', module);
 
 const StyledContent = styled.div`
   height: 50vh;
