@@ -5,13 +5,14 @@ export type StyledTextProps = {
   as?: React.ComponentFactory<any, any>;
   sizeMobile: number;
   sizeDesktop: number;
-  color?: ColorFn;
+  colorFn?: ColorFn;
   weight: Weight;
 };
 type ColorFn = (t: Theme) => keyof Theme['color'];
+
 export type BaseProps = {
-  as?: React.Component;
-  children: React.ReactText;
+  as?: React.ComponentFactory<any, any>;
+  children: React.ReactText | React.ReactText[];
   color?: ColorFn;
 };
 
