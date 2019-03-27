@@ -1,11 +1,11 @@
 import React from 'react';
-
 import { storiesOf } from '@storybook/react';
-import Text from '.';
+import Text from './index';
 
-// prettier-ignore
-storiesOf('Atoms/Text', module)
-  .add('basic use', () => <Text.Primary>Hello world!</Text.Primary>)
-  .add('as paragraph', () => <Text.Primary as="p">Hello world!</Text.Primary>)
-  .add('styled', () => <Text.Primary styled>Hello world!</Text.Primary>)
-  .add('styled as paragraph', () => <Text.Primary styled as="p">Hello world!</Text.Primary>)
+const stories = storiesOf('Atoms/Text', module);
+
+stories.add('Primary default', () => <Text.Primary>Primary text</Text.Primary>);
+stories.add('Secondary default', () => <Text.Secondary>Secondary text</Text.Secondary>);
+stories.add('Tertiary default', () => <Text.Tertiary>Tertiary text</Text.Tertiary>);
+stories.add('Title1 default', () => <Text.Title1>Title1 text</Text.Title1>);
+stories.add('Title3 default', () => <Text.Title3>Title3 text</Text.Title3>);

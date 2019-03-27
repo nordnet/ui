@@ -71,6 +71,8 @@ export type Theme = {
     card: RawColor['white'];
     /** gray6 */
     divider: RawColor['gray6'];
+    /** gray0 */
+    backgroundDark: RawColor['gray0'];
   };
 
   spacing: {

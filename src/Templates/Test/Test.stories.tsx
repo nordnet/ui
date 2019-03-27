@@ -2,7 +2,6 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import Text from '../../Atoms/Text';
-import Input from '../../Atoms/Input';
 
 storiesOf('Templates/Test', module).add('basic use', () => (
   <div>
@@ -20,11 +19,7 @@ storiesOf('Templates/Test', module).add('basic use', () => (
       </Text.Primary>
     </div>
     <div>
-      <Text.Title2>
-        {' '}
-        Here will be some input:
-        <Input.Text />{' '}
-      </Text.Title2>
+      <Text.Title3>Lorem ipsum dolor sit amet,</Text.Title3>
     </div>
   </div>
 ));

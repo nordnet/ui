@@ -26,6 +26,7 @@ module.exports = {
     'import/prefer-default-export': 0,
     'react/jsx-filename-extension': 0,
     'react/destructuring-assignment': 0,
+    'react/prop-types': 0,
     'prefer-destructuring': 0,
     'react-hooks/rules-of-hooks': 2,
     'react-hooks/exhaustive-deps': 1,

@@ -1,32 +1,38 @@
 import React from 'react';
+import { Theme } from '../../theme';
 
-type ReactBaseProps = {
-  children: React.ReactNode;
+export type StyledTextProps = {
+  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+  sizeMobile: number;
+  sizeDesktop: number;
+  colorFn?: ColorFn;
+  weight: Weight;
 };
-type SomeStyledComponentsProps = {};
-type AllowedTags = 'p' | 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+type ColorFn = (t: Theme) => keyof Theme['color'];
 
-export type Props = ReactBaseProps &
-  SomeStyledComponentsProps & {
-    /**
-     * HTML tag to use as container
-     * @default 'div'
-     */
-    as?: AllowedTags;
-    /**
-     * Used for adding some styling to the Text
-     * @default false
-     */
-    styled?: boolean;
-  };
+export type BaseProps = {
+  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+  children: React.ReactText | React.ReactText[];
+  color?: ColorFn;
+};
 
-export type TextComponentInterface = {
-  Caption: React.ComponentType<Props>;
-  Hero: React.ComponentType<Props>;
-  Title1: React.ComponentType<Props>;
-  Title2: React.ComponentType<Props>;
-  Title3: React.ComponentType<Props>;
-  Primary: React.ComponentType<Props>;
-  Secondary: React.ComponentType<Props>;
-  Tertiary: React.ComponentType<Props>;
+type Weight = 'regular' | 'bold' | 'extrabold';
+export type BasePropsWithWeight = BaseProps & { weight?: Weight };
+export type TextComponent = {
+  // /** (46, 48) */
+  // Hero: React.ComponentType<BaseProps>;
+  /** (30, 32) */
+  Title1: React.ComponentType<BaseProps>;
+  // /** (22, 24) */
+  // Title2: React.ComponentType<BaseProps>;
+  /** (18, 20) */
+  Title3: React.ComponentType<BaseProps>;
+  /** (14, 16) */
+  Primary: React.ComponentType<BasePropsWithWeight>;
+  /** (12, 14) */
+  Secondary: React.ComponentType<BasePropsWithWeight>;
+  /** (10, 12) */
+  Tertiary: React.ComponentType<BasePropsWithWeight>;
+  // /** (10, 10) */
+  // Caption: React.ComponentType<BaseProps>;
 };
