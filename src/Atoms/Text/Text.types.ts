@@ -1,14 +1,22 @@
 import React from 'react';
 import { Theme } from '../../theme';
 
+export type StyledTextProps = {
+  as?: React.ComponentFactory<any, any>;
+  sizeMobile: number;
+  sizeDesktop: number;
+  color?: ColorFn;
+  weight: Weight;
+};
+type ColorFn = (t: Theme) => keyof Theme['color'];
 export type BaseProps = {
   as?: React.Component;
   children: React.ReactText;
-  color?: (t: Theme) => keyof Theme['color'];
+  color?: ColorFn;
 };
 
-type Boldness = 'regular' | 'bold' | 'extrabold';
-
+type Weight = 'regular' | 'bold' | 'extrabold';
+export type BasePropsWithWeight = BaseProps & { weight?: Weight };
 export type TextComponent = {
   // /** (46, 48) */
   // Hero: React.ComponentType<BaseProps>;
@@ -19,11 +27,11 @@ export type TextComponent = {
   /** (18, 20) */
   Title3: React.ComponentType<BaseProps>;
   /** (14, 16) */
-  Primary: React.ComponentType<BaseProps & { bold?: Boldness }>;
+  Primary: React.ComponentType<BasePropsWithWeight>;
   /** (12, 14) */
-  Secondary: React.ComponentType<BaseProps & { bold?: Boldness }>;
+  Secondary: React.ComponentType<BasePropsWithWeight>;
   /** (10, 12) */
-  Tertiary: React.ComponentType<BaseProps & { bold?: Boldness }>;
+  Tertiary: React.ComponentType<BasePropsWithWeight>;
   // /** (10, 10) */
   // Caption: React.ComponentType<BaseProps>;
 };
