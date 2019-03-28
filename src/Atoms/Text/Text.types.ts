@@ -1,5 +1,5 @@
 import React from 'react';
-import { Theme } from '../../theme';
+import { Theme } from '../../theme/theme.types';
 
 export type StyledTextProps = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;

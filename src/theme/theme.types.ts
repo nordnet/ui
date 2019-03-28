@@ -66,7 +66,7 @@ export type Theme = {
     /** index */
     warning: RawColor['index'];
     /** white */
-    module: RawColor['white'];
+    card: RawColor['white'];
     /** gray6 */
     divider: RawColor['gray6'];
     /** gray0 */
@@ -75,6 +75,8 @@ export type Theme = {
     disabled: RawColor['gray5'];
     /** white */
     buttonSecondaryBackground: RawColor['white'];
+    /** white */
+    module: RawColor['white'];
   };
 
   spacing: {
