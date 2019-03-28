@@ -23,10 +23,11 @@ const getBackgroundColor = (props: ThemedStyledProps<Props, Theme>) => {
     return `
         background-color: ${theme.color.buttonSecondaryBackground};
         &:hover{
-            background-color: ${Color(theme.color.buttonSecondaryBackground).darken(0.1)};
+            background-color: ${Color(theme.color.cta).darken(0.1)};
+            color: ${theme.color.buttonText};
         }
         &:active{
-            background-color: ${Color(theme.color.buttonSecondaryBackground).darken(0.2)};
+            background-color: ${Color(theme.color.cta).darken(0.2)};
         }
     `;
   }
