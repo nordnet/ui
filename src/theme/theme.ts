@@ -75,7 +75,7 @@ export const createTheme = (config?: ThemeConfig): Theme => {
       positive: rawColor.positive,
       negative: rawColor.negative,
       warning: rawColor.index,
-      module: rawColor.white,
+      card: rawColor.white,
       divider: rawColor.gray6,
       backgroundDark: rawColor.gray0,
     },

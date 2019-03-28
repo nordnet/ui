@@ -16,9 +16,14 @@ module.exports = api => {
 
   const plugins = [
     '@babel/plugin-proposal-class-properties',
-    /** @todo think about different way of removing types import */
-    ['babel-plugin-styled-components', { ignore: ['react'] }],
+    'babel-plugin-styled-components',
     'ramda',
+    [
+      'babel-plugin-transform-remove-imports',
+      {
+        test: 'types$',
+      },
+    ],
   ];
 
   return {
@@ -30,5 +35,6 @@ module.exports = api => {
         plugins: ['require-context-hook'],
       },
     },
+    ignore: ['**/*.types.ts'],
   };
 };

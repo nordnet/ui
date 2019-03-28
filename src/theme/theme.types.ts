@@ -66,7 +66,7 @@ export type Theme = {
     /** index */
     warning: RawColor['index'];
     /** white */
-    module: RawColor['white'];
+    card: RawColor['white'];
     /** gray6 */
     divider: RawColor['gray6'];
     /** gray0 */
