@@ -5,3 +5,5 @@ export const assert = (expression: boolean, errorMessage: string) => {
     }
   }
 };
+
+export const isUndefined = (x: any): x is undefined => typeof x === 'undefined';
