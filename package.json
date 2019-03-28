@@ -10,7 +10,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "coverage": "jest --coverage && codecov",
+    "test-ci": "jest --coverage --ci && codecov",
     "dev": "start-storybook -p 6006",
     "lint:js": "eslint --ext=.tsx --ext=.ts src",
     "lint:css": "stylelint './src/**/*.{ts,tsx}'",
@@ -120,6 +120,7 @@
     "prettier": "1.16.4",
     "react": "16.8.5",
     "react-dom": "16.8.5",
+    "react-test-renderer": "^16.8.6",
     "rimraf": "2.6.3",
     "stylelint": "9.10.1",
     "stylelint-config-recommended": "2.1.0",
