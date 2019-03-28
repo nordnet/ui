@@ -21,5 +21,14 @@ module.exports = api => {
     'ramda',
   ];
 
-  return { comments: false, presets, plugins };
+  return {
+    comments: false,
+    presets,
+    plugins,
+    env: {
+      test: {
+        plugins: ['require-context-hook'],
+      },
+    },
+  };
 };
