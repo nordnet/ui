@@ -2,8 +2,6 @@ import React from 'react';
 
 export type Props = {
   disabled?: boolean;
-  //   /** @default cta */
-  //   modifier?: 'cta' | 'danger' | 'success';
   /** @default primary */
   variant?: 'primary' | 'secondary';
   /** @default m */
