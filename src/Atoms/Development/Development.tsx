@@ -1,7 +1,7 @@
 import React from 'react';
 import { DevelopmentComponent } from './Development.types';
 import Text from '../Text/index';
-import { Theme } from '../../theme';
+import { Theme } from '../../theme/theme.types';
 
 const getPrefix = (value: Number) => {
   if (value > 0) {
