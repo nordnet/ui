@@ -32,7 +32,9 @@
       "scope-case": [
         0
       ],
-      "header-max-length": [0]
+      "header-max-length": [
+        0
+      ]
     }
   },
   "lint-staged": {
@@ -62,7 +64,8 @@
     "@types/react": ">=16.8.8",
     "prop-types": ">=15",
     "react": ">=16",
-    "react-dom": ">=16"
+    "react-dom": ">=16",
+    "react-intl": "2"
   },
   "devDependencies": {
     "@babel/cli": "7.2.3",
@@ -87,6 +90,7 @@
     "@types/node": "11.11.6",
     "@types/ramda": "0.26.5",
     "@types/react": "16.8.8",
+    "@types/react-intl": "2.3.17",
     "@types/storybook__addon-knobs": "4.0.4",
     "@types/storybook__react": "4.0.1",
     "@types/styled-components": "4.1.12",
@@ -119,8 +123,10 @@
     "prettier": "1.16.4",
     "react": "16.8.5",
     "react-dom": "16.8.5",
+    "react-intl": "^2.8.0",
     "react-test-renderer": "^16.8.6",
     "rimraf": "2.6.3",
+    "storybook-addon-intl": "2.4.0",
     "stylelint": "9.10.1",
     "stylelint-config-recommended": "2.1.0",
     "stylelint-config-styled-components": "0.1.1",

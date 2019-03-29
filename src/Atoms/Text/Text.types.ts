@@ -13,7 +13,7 @@ type ColorFn = (t: Theme) => Values<Theme['color']>;
 
 export type BaseProps = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
-  children: React.ReactText | React.ReactText[];
+  children: React.ReactNode;
   color?: ColorFn;
 };
 

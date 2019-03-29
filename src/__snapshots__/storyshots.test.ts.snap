@@ -1144,7 +1144,7 @@ exports[`Storyshots Atoms/Currency Primary default 1`] = `
     <span
       className="Text__StyledText-sc-1974afi-0 cmCWWJ"
     >
-      234234 SEK
+      SEK 234,234.00
     </span>
   </div>
   <button
@@ -1386,7 +1386,7 @@ exports[`Storyshots Atoms/Currency Secondary default 1`] = `
     <span
       className="Text__StyledText-sc-1974afi-0 laXMaY"
     >
-      234234 SEK
+      SEK 234,234.00
     </span>
   </div>
   <button
@@ -1628,7 +1628,7 @@ exports[`Storyshots Atoms/Currency Tertiary default 1`] = `
     <span
       className="Text__StyledText-sc-1974afi-0 kBKleW"
     >
-      234234 SEK
+      SEK 234,234.00
     </span>
   </div>
   <button
@@ -1870,7 +1870,7 @@ exports[`Storyshots Atoms/Currency Title1 default 1`] = `
     <span
       className="Text__StyledText-sc-1974afi-0 iUYKst"
     >
-      234234 SEK
+      SEK 234,234.00
     </span>
   </div>
   <button
@@ -2112,7 +2112,7 @@ exports[`Storyshots Atoms/Currency Title3 default 1`] = `
     <span
       className="Text__StyledText-sc-1974afi-0 joblfr"
     >
-      234234 SEK
+      SEK 234,234.00
     </span>
   </div>
   <button

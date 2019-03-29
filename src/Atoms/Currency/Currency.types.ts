@@ -1,8 +1,8 @@
 import React from 'react';
 
 export type BaseProps = {
-  value: Number;
-  currency: String;
+  value: number;
+  currency: string;
 };
 
 export type CurrencyComponent = {
