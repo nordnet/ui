@@ -5,4 +5,6 @@ const StyledListItem = styled.li`
   display: block;
 `;
 
-export const ListItem: React.FunctionComponent = props => <StyledListItem {...props} />;
+export const ListItem: React.FunctionComponent = ({ children }) => (
+  <StyledListItem>{children}</StyledListItem>
+);

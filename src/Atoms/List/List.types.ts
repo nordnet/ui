@@ -1,7 +1,4 @@
-import { ReactElement } from 'react';
-
 export type Props = {
-  horisontal?: Boolean;
-  children: ReactElement[];
+  children: React.ReactNode;
   as?: 'ul' | 'ol';
 };
