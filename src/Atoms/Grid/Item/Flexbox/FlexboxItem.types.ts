@@ -5,6 +5,7 @@ export type Props = {
   basis?: string;
   flex?: string;
   align?: 'auto' | 'flex-start' | 'flex-end' | 'center' | 'baseline' | 'stretch';
+  size?: number | 'string';
 };
 
 export type PropsWithGutter = {
