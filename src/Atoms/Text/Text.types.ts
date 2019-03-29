@@ -1,5 +1,4 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
 import { Theme } from '../../theme/theme.types';
 
 export type StyledTextProps = {
@@ -14,7 +13,7 @@ type ColorFn = (t: Theme) => Values<Theme['color']>;
 
 export type BaseProps = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
-  children: React.ReactText | FormattedMessage.MessageDescriptor;
+  children: React.ReactNode;
   color?: ColorFn;
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export type DevelopmentProps = {
-  value: Number;
+  value: number;
 };
 
 export type DevelopmentComponent = {
