@@ -13,7 +13,7 @@ addDecorator(withInfo({ propTables: null, header: false }));
 addDecorator(ThemeDecorator);
 
 setIntlConfig({
-  locales: ['sv', 'nb', 'dk', 'en'],
+  locales: ['sv', 'nb', 'dk', 'fi', 'en'],
   defaultLocale: 'sv',
   getMessages: () => {},
   getFormats: () => {},
