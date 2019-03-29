@@ -26,11 +26,11 @@ const Tertiary: CurrencyComponent['Tertiary'] = ({ value, currency, ...rest }) =
   <Text.Tertiary weight={rest.weight}>{`${value}${SPACER}${currency}`}</Text.Tertiary>
 );
 
-const Title1: CurrencyComponent['Title1'] = ({ value, currency, ...rest }) => (
+const Title1: CurrencyComponent['Title1'] = ({ value, currency }) => (
   <Text.Title1>{`${value}${SPACER}${currency}`}</Text.Title1>
 );
 
-const Title3: CurrencyComponent['Title3'] = ({ value, currency, ...rest }) => (
+const Title3: CurrencyComponent['Title3'] = ({ value, currency }) => (
   <Text.Title3>{`${value}${SPACER}${currency}`}</Text.Title3>
 );
 

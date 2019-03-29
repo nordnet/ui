@@ -1,6 +1,6 @@
 import React from 'react';
-import { LabeledValueComponent } from './LabeledValue.types';
 import styled from 'styled-components';
+import { LabeledValueComponent } from './LabeledValue.types';
 import Text from '../../Atoms/Text';
 
 const StyledLabeledValue = styled.div`

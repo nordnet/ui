@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import LabeledValue from './index';
 import styled from 'styled-components';
+import LabeledValue from './index';
 import Currency from '../../Atoms/Currency';
 import Text from '../../Atoms/Text';
 import Development from '../../Atoms/Development';
@@ -19,7 +19,7 @@ const stories = storiesOf('Molecules/LabeledValue', module);
 
 stories.add('LabeledValue secondary currency', () => (
   <LabeledValue label="Market value">
-    <Currency.Secondary value={4672198} currency="SEK" weight={'bold'} />
+    <Currency.Secondary value={4672198} currency="SEK" weight="bold" />
   </LabeledValue>
 ));
 
@@ -35,7 +35,7 @@ stories.add('LabeledValue with positive development and currency', () => (
       <StyledDevContainer>
         <Development.Secondary value={9.2} />
       </StyledDevContainer>
-      <Currency.Secondary sign value={4672198} currency="SEK" weight={'bold'} />
+      <Currency.Secondary sign value={4672198} currency="SEK" weight="bold" />
     </StyledChildsContainer>
   </LabeledValue>
 ));
@@ -46,7 +46,7 @@ stories.add('LabeledValue with negative development and currency', () => (
       <StyledDevContainer>
         <Development.Secondary value={-9.2} />
       </StyledDevContainer>
-      <Currency.Secondary sign value={-4672198} currency="SEK" weight={'bold'} />
+      <Currency.Secondary sign value={-4672198} currency="SEK" weight="bold" />
     </StyledChildsContainer>
   </LabeledValue>
 ));
