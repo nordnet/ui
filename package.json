@@ -32,7 +32,9 @@
       "scope-case": [
         0
       ],
-      "header-max-length": [0]
+      "header-max-length": [
+        0
+      ]
     }
   },
   "lint-staged": {
@@ -55,7 +57,9 @@
     }
   },
   "dependencies": {
+    "@types/react-router-dom": "^4.3.1",
     "ramda": "^0.26.1",
+    "react-router-dom": "^5.0.0",
     "styled-components": "^4.2.0"
   },
   "peerDependencies": {
