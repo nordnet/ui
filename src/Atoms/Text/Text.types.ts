@@ -1,5 +1,5 @@
 import React from 'react';
-import { Theme } from '../../theme';
+import { Theme } from '../../theme/theme.types';
 
 export type StyledTextProps = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
@@ -8,7 +8,6 @@ export type StyledTextProps = {
   colorFn?: ColorFn;
   weight: Weight;
 };
-
 type ColorFn = (t: Theme) => Theme['color'][keyof Theme['color']];
 
 export type BaseProps = {

@@ -16,10 +16,28 @@ module.exports = api => {
 
   const plugins = [
     '@babel/plugin-proposal-class-properties',
-    /** @todo think about different way of removing types import */
-    ['babel-plugin-styled-components', { ignore: ['react'] }],
+    'babel-plugin-styled-components',
     'ramda',
+    [
+      'babel-plugin-transform-remove-imports',
+      {
+        test: 'types$',
+      },
+    ],
   ];
 
-  return { comments: false, presets, plugins };
+  const ignore = ['**/*.types.ts'];
+  if (process.env.NODE_ENV !== 'test') ignore.unshift('src/**/*.test.ts', 'src/**/*.test.ts.snap');
+
+  return {
+    comments: false,
+    presets,
+    plugins,
+    env: {
+      test: {
+        plugins: ['require-context-hook'],
+      },
+    },
+    ignore,
+  };
 };
