@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 import { Theme } from '../../theme/theme.types';
 
 export type StyledTextProps = {
@@ -13,11 +14,11 @@ type ColorFn = (t: Theme) => Values<Theme['color']>;
 
 export type BaseProps = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
-  children: React.ReactText | React.ReactText[];
+  children: React.ReactText | FormattedMessage.MessageDescriptor;
   color?: ColorFn;
 };
 
-type Weight = 'regular' | 'bold' | 'extrabold';
+export type Weight = 'regular' | 'bold' | 'extrabold';
 export type BasePropsWithWeight = BaseProps & { weight?: Weight };
 export type TextComponent = {
   // /** (46, 48) */
