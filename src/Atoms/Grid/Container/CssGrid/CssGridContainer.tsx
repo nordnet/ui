@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { Theme } from '../../../../theme/theme.types';
 import { Props, Gutter, TemplateColumn, Areas } from './CssGridContainer.types';
+import { isUndefined } from '../../../../common/utils';
 
 const formatAreas = (areas: Props['areas']) =>
   areas
@@ -10,7 +11,6 @@ const formatAreas = (areas: Props['areas']) =>
     .join(' ');
 
 const isNumber = (x: any): x is number => x === parseInt(x, 10);
-const isUndefined = (x: any): x is undefined => typeof x === 'undefined';
 const isArrayOfStrings = (xs: any[]): xs is string[] => xs.every(x => typeof x === 'string');
 
 const getGutterStyles = (props: { gutter: Gutter; theme: Theme }) => {

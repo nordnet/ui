@@ -71,6 +71,12 @@ export type Theme = {
     divider: RawColor['gray6'];
     /** gray0 */
     backgroundDark: RawColor['gray0'];
+    /** gray5 */
+    disabled: RawColor['gray5'];
+    /** white */
+    buttonSecondaryBackground: RawColor['white'];
+    /** white */
+    module: RawColor['white'];
   };
 
   spacing: {
