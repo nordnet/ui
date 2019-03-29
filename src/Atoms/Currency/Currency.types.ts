@@ -1,8 +1,10 @@
 import React from 'react';
+import { Weight } from '../Text/Text.types';
 
 export type BaseProps = {
   value: Number;
   currency: String;
+  weight?: Weight;
 };
 
 export type CurrencyComponent = {
