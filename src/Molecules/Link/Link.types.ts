@@ -7,6 +7,7 @@ export type Props = {
   to: LinkProps['to'];
   /** @default _self */
   target?: '_blank';
+  children: React.ReactChild | React.ReactChild[];
 };
 
 export type LinkComponent = React.FunctionComponent<Props>;
