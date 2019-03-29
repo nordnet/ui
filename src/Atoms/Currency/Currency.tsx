@@ -3,13 +3,23 @@ import { CurrencyComponent } from './Currency.types';
 import Text from '../Text';
 
 const SPACER = ' ';
+const getPrefix = (value: number, sign?: boolean) => {
+  if (sign && value > 0) {
+    return '+';
+  }
+
+  return '';
+};
 
 const Primary: CurrencyComponent['Primary'] = ({ value, currency, ...rest }) => (
   <Text.Primary weight={rest.weight}>{`${value}${SPACER}${currency}`}</Text.Primary>
 );
 
-const Secondary: CurrencyComponent['Secondary'] = ({ value, currency, ...rest }) => (
-  <Text.Secondary weight={rest.weight}>{`${value}${SPACER}${currency}`}</Text.Secondary>
+const Secondary: CurrencyComponent['Secondary'] = ({ value, currency, sign, ...rest }) => (
+  <Text.Secondary weight={rest.weight}>{`${getPrefix(
+    value,
+    sign,
+  )}${value}${SPACER}${currency}`}</Text.Secondary>
 );
 
 const Tertiary: CurrencyComponent['Tertiary'] = ({ value, currency, ...rest }) => (

@@ -2,9 +2,10 @@ import React from 'react';
 import { Weight } from '../Text/Text.types';
 
 export type BaseProps = {
-  value: Number;
-  currency: String;
+  value: number;
+  currency: string;
   weight?: Weight;
+  sign?: boolean;
 };
 
 export type CurrencyComponent = {
