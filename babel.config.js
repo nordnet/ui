@@ -26,5 +26,18 @@ module.exports = api => {
     ],
   ];
 
-  return { comments: false, presets, plugins, ignore: ['**/*.types.ts'] };
+  const ignore = ['**/*.types.ts'];
+  if (process.env.NODE_ENV !== 'test') ignore.unshift('src/**/*.test.ts', 'src/**/*.test.ts.snap');
+
+  return {
+    comments: false,
+    presets,
+    plugins,
+    env: {
+      test: {
+        plugins: ['require-context-hook'],
+      },
+    },
+    ignore,
+  };
 };
