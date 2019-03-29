@@ -31,18 +31,21 @@ const Primary: DevelopmentComponent['Primary'] = ({ value, ...rest }) => (
     {getPrefix(value)}
   </Text.Primary>
 );
+Primary.displayName = 'Development.Primary';
 
 const Secondary: DevelopmentComponent['Secondary'] = ({ value, ...rest }) => (
   <Text.Secondary color={getColor(value)} {...rest}>
     {getPrefix(value)}
   </Text.Secondary>
 );
+Secondary.displayName = 'Development.Secondary';
 
 const Tertiary: DevelopmentComponent['Secondary'] = ({ value, ...rest }) => (
   <Text.Tertiary color={getColor(value)} {...rest}>
     {getPrefix(value)}
   </Text.Tertiary>
 );
+Tertiary.displayName = 'Development.Tertiary';
 
 export const Development: DevelopmentComponent = {
   Primary,

@@ -14,6 +14,7 @@ const getPrefix = (value: number, sign?: boolean) => {
 const Primary: CurrencyComponent['Primary'] = ({ value, currency, ...rest }) => (
   <Text.Primary weight={rest.weight}>{`${value}${SPACER}${currency}`}</Text.Primary>
 );
+Primary.displayName = 'Currency.Primary';
 
 const Secondary: CurrencyComponent['Secondary'] = ({ value, currency, sign, ...rest }) => (
   <Text.Secondary weight={rest.weight}>{`${getPrefix(
@@ -21,18 +22,22 @@ const Secondary: CurrencyComponent['Secondary'] = ({ value, currency, sign, ...r
     sign,
   )}${value}${SPACER}${currency}`}</Text.Secondary>
 );
+Secondary.displayName = 'Currency.Secondary';
 
 const Tertiary: CurrencyComponent['Tertiary'] = ({ value, currency, ...rest }) => (
   <Text.Tertiary weight={rest.weight}>{`${value}${SPACER}${currency}`}</Text.Tertiary>
 );
+Tertiary.displayName = 'Currency.Tertiary';
 
 const Title1: CurrencyComponent['Title1'] = ({ value, currency }) => (
   <Text.Title1>{`${value}${SPACER}${currency}`}</Text.Title1>
 );
+Title1.displayName = 'Currency.Title1';
 
 const Title3: CurrencyComponent['Title3'] = ({ value, currency }) => (
   <Text.Title3>{`${value}${SPACER}${currency}`}</Text.Title3>
 );
+Title3.displayName = 'Currency.Title3';
 
 export const Currency: CurrencyComponent = {
   Primary,
