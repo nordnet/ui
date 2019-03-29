@@ -2355,7 +2355,10 @@ exports[`Storyshots Atoms/Development Primary 1`] = `
       <span
         className="Text__StyledText-sc-1974afi-0 gcIsAz"
       >
-        ▲ +123123%
+        ▲
+        +
+        5.4
+        %
       </span>
     </div>
     <div>
@@ -2363,13 +2366,17 @@ exports[`Storyshots Atoms/Development Primary 1`] = `
         className="Text__StyledText-sc-1974afi-0 cmCWWJ"
       >
         0
+        0
+        %
       </span>
     </div>
     <div>
       <span
         className="Text__StyledText-sc-1974afi-0 hCpHGw"
       >
-        ▼ -123123%
+        ▼
+        -2.1
+        %
       </span>
     </div>
   </div>
@@ -2583,7 +2590,7 @@ exports[`Storyshots Atoms/Development Primary 1`] = `
                                 }
                               }
                             >
-                              123123
+                              5.4
                             </span>
                             }
                           </span>
@@ -2799,7 +2806,7 @@ exports[`Storyshots Atoms/Development Primary 1`] = `
                                 }
                               }
                             >
-                              -123123
+                              -2.1
                             </span>
                             }
                           </span>
@@ -2904,7 +2911,10 @@ exports[`Storyshots Atoms/Development Secondary 1`] = `
       <span
         className="Text__StyledText-sc-1974afi-0 bmOtmq"
       >
-        ▲ +123123%
+        ▲
+        +
+        5.4
+        %
       </span>
     </div>
     <div>
@@ -2912,13 +2922,17 @@ exports[`Storyshots Atoms/Development Secondary 1`] = `
         className="Text__StyledText-sc-1974afi-0 laXMaY"
       >
         0
+        0
+        %
       </span>
     </div>
     <div>
       <span
         className="Text__StyledText-sc-1974afi-0 jWluYu"
       >
-        ▼ -123123%
+        ▼
+        -2.1
+        %
       </span>
     </div>
   </div>
@@ -3132,7 +3146,7 @@ exports[`Storyshots Atoms/Development Secondary 1`] = `
                                 }
                               }
                             >
-                              123123
+                              5.4
                             </span>
                             }
                           </span>
@@ -3348,7 +3362,7 @@ exports[`Storyshots Atoms/Development Secondary 1`] = `
                                 }
                               }
                             >
-                              -123123
+                              -2.1
                             </span>
                             }
                           </span>
@@ -3453,7 +3467,10 @@ exports[`Storyshots Atoms/Development Tertiary 1`] = `
       <span
         className="Text__StyledText-sc-1974afi-0 ekeaEF"
       >
-        ▲ +123123%
+        ▲
+        +
+        5.4
+        %
       </span>
     </div>
     <div>
@@ -3461,13 +3478,17 @@ exports[`Storyshots Atoms/Development Tertiary 1`] = `
         className="Text__StyledText-sc-1974afi-0 kBKleW"
       >
         0
+        0
+        %
       </span>
     </div>
     <div>
       <span
         className="Text__StyledText-sc-1974afi-0 eumSjM"
       >
-        ▼ -123123%
+        ▼
+        -2.1
+        %
       </span>
     </div>
   </div>
@@ -3681,7 +3702,7 @@ exports[`Storyshots Atoms/Development Tertiary 1`] = `
                                 }
                               }
                             >
-                              123123
+                              5.4
                             </span>
                             }
                           </span>
@@ -3897,7 +3918,7 @@ exports[`Storyshots Atoms/Development Tertiary 1`] = `
                                 }
                               }
                             >
-                              -123123
+                              -2.1
                             </span>
                             }
                           </span>
