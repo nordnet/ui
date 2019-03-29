@@ -1274,7 +1274,7 @@ exports[`Storyshots Atoms/Currency Primary default 1`] = `
                   }
                 >
                   &lt;
-                  Primary
+                  Currency.Primary
                 </span>
                 <span>
                   <span>
@@ -1516,7 +1516,7 @@ exports[`Storyshots Atoms/Currency Secondary default 1`] = `
                   }
                 >
                   &lt;
-                  Secondary
+                  Currency.Secondary
                 </span>
                 <span>
                   <span>
@@ -1758,7 +1758,7 @@ exports[`Storyshots Atoms/Currency Tertiary default 1`] = `
                   }
                 >
                   &lt;
-                  Tertiary
+                  Currency.Tertiary
                 </span>
                 <span>
                   <span>
@@ -2000,7 +2000,7 @@ exports[`Storyshots Atoms/Currency Title1 default 1`] = `
                   }
                 >
                   &lt;
-                  Title1
+                  Currency.Title1
                 </span>
                 <span>
                   <span>
@@ -2242,7 +2242,7 @@ exports[`Storyshots Atoms/Currency Title3 default 1`] = `
                   }
                 >
                   &lt;
-                  Title3
+                  Currency.Title3
                 </span>
                 <span>
                   <span>
@@ -2560,7 +2560,7 @@ exports[`Storyshots Atoms/Development Primary 1`] = `
                       }
                     >
                       &lt;
-                      Primary
+                      Development.Primary
                     </span>
                     <span>
                       <span>
@@ -2668,7 +2668,7 @@ exports[`Storyshots Atoms/Development Primary 1`] = `
                       }
                     >
                       &lt;
-                      Primary
+                      Development.Primary
                     </span>
                     <span>
                       <span>
@@ -2776,7 +2776,7 @@ exports[`Storyshots Atoms/Development Primary 1`] = `
                       }
                     >
                       &lt;
-                      Primary
+                      Development.Primary
                     </span>
                     <span>
                       <span>
@@ -3109,7 +3109,7 @@ exports[`Storyshots Atoms/Development Secondary 1`] = `
                       }
                     >
                       &lt;
-                      Secondary
+                      Development.Secondary
                     </span>
                     <span>
                       <span>
@@ -3217,7 +3217,7 @@ exports[`Storyshots Atoms/Development Secondary 1`] = `
                       }
                     >
                       &lt;
-                      Secondary
+                      Development.Secondary
                     </span>
                     <span>
                       <span>
@@ -3325,7 +3325,7 @@ exports[`Storyshots Atoms/Development Secondary 1`] = `
                       }
                     >
                       &lt;
-                      Secondary
+                      Development.Secondary
                     </span>
                     <span>
                       <span>
@@ -3658,7 +3658,7 @@ exports[`Storyshots Atoms/Development Tertiary 1`] = `
                       }
                     >
                       &lt;
-                      Tertiary
+                      Development.Tertiary
                     </span>
                     <span>
                       <span>
@@ -3766,7 +3766,7 @@ exports[`Storyshots Atoms/Development Tertiary 1`] = `
                       }
                     >
                       &lt;
-                      Tertiary
+                      Development.Tertiary
                     </span>
                     <span>
                       <span>
@@ -3874,7 +3874,7 @@ exports[`Storyshots Atoms/Development Tertiary 1`] = `
                       }
                     >
                       &lt;
-                      Tertiary
+                      Development.Tertiary
                     </span>
                     <span>
                       <span>
@@ -13334,7 +13334,7 @@ exports[`Storyshots Atoms/Text Colors 1`] = `
                         }
                       >
                         &lt;
-                        Primary
+                        Text.Primary
                       </span>
                       <span />
                       <span
@@ -13381,7 +13381,7 @@ exports[`Storyshots Atoms/Text Colors 1`] = `
                         }
                       >
                         &lt;/
-                        Primary
+                        Text.Primary
                         &gt;
                       </span>
                     </div>
@@ -13454,7 +13454,7 @@ exports[`Storyshots Atoms/Text Colors 1`] = `
                         }
                       >
                         &lt;
-                        Primary
+                        Text.Primary
                       </span>
                       <span>
                         <span>
@@ -13529,7 +13529,7 @@ exports[`Storyshots Atoms/Text Colors 1`] = `
                         }
                       >
                         &lt;/
-                        Primary
+                        Text.Primary
                         &gt;
                       </span>
                     </div>
@@ -13602,7 +13602,7 @@ exports[`Storyshots Atoms/Text Colors 1`] = `
                         }
                       >
                         &lt;
-                        Primary
+                        Text.Primary
                       </span>
                       <span>
                         <span>
@@ -13677,7 +13677,7 @@ exports[`Storyshots Atoms/Text Colors 1`] = `
                         }
                       >
                         &lt;/
-                        Primary
+                        Text.Primary
                         &gt;
                       </span>
                     </div>
@@ -13750,7 +13750,7 @@ exports[`Storyshots Atoms/Text Colors 1`] = `
                         }
                       >
                         &lt;
-                        Primary
+                        Text.Primary
                       </span>
                       <span>
                         <span>
@@ -13825,7 +13825,7 @@ exports[`Storyshots Atoms/Text Colors 1`] = `
                         }
                       >
                         &lt;/
-                        Primary
+                        Text.Primary
                         &gt;
                       </span>
                     </div>
@@ -13898,7 +13898,7 @@ exports[`Storyshots Atoms/Text Colors 1`] = `
                         }
                       >
                         &lt;
-                        Primary
+                        Text.Primary
                       </span>
                       <span>
                         <span>
@@ -13973,7 +13973,7 @@ exports[`Storyshots Atoms/Text Colors 1`] = `
                         }
                       >
                         &lt;/
-                        Primary
+                        Text.Primary
                         &gt;
                       </span>
                     </div>
@@ -14046,7 +14046,7 @@ exports[`Storyshots Atoms/Text Colors 1`] = `
                         }
                       >
                         &lt;
-                        Primary
+                        Text.Primary
                       </span>
                       <span>
                         <span>
@@ -14121,7 +14121,7 @@ exports[`Storyshots Atoms/Text Colors 1`] = `
                         }
                       >
                         &lt;/
-                        Primary
+                        Text.Primary
                         &gt;
                       </span>
                     </div>
@@ -14194,7 +14194,7 @@ exports[`Storyshots Atoms/Text Colors 1`] = `
                         }
                       >
                         &lt;
-                        Primary
+                        Text.Primary
                       </span>
                       <span>
                         <span>
@@ -14269,7 +14269,7 @@ exports[`Storyshots Atoms/Text Colors 1`] = `
                         }
                       >
                         &lt;/
-                        Primary
+                        Text.Primary
                         &gt;
                       </span>
                     </div>
@@ -14567,7 +14567,7 @@ exports[`Storyshots Atoms/Text Primary 1`] = `
                         }
                       >
                         &lt;
-                        Primary
+                        Text.Primary
                       </span>
                       <span />
                       <span
@@ -14614,7 +14614,7 @@ exports[`Storyshots Atoms/Text Primary 1`] = `
                         }
                       >
                         &lt;/
-                        Primary
+                        Text.Primary
                         &gt;
                       </span>
                     </div>
@@ -14687,7 +14687,7 @@ exports[`Storyshots Atoms/Text Primary 1`] = `
                         }
                       >
                         &lt;
-                        Primary
+                        Text.Primary
                       </span>
                       <span>
                         <span>
@@ -14763,7 +14763,7 @@ exports[`Storyshots Atoms/Text Primary 1`] = `
                         }
                       >
                         &lt;/
-                        Primary
+                        Text.Primary
                         &gt;
                       </span>
                     </div>
@@ -14836,7 +14836,7 @@ exports[`Storyshots Atoms/Text Primary 1`] = `
                         }
                       >
                         &lt;
-                        Primary
+                        Text.Primary
                       </span>
                       <span>
                         <span>
@@ -14912,7 +14912,7 @@ exports[`Storyshots Atoms/Text Primary 1`] = `
                         }
                       >
                         &lt;/
-                        Primary
+                        Text.Primary
                         &gt;
                       </span>
                     </div>
@@ -15210,7 +15210,7 @@ exports[`Storyshots Atoms/Text Secondary 1`] = `
                         }
                       >
                         &lt;
-                        Secondary
+                        Text.Secondary
                       </span>
                       <span />
                       <span
@@ -15257,7 +15257,7 @@ exports[`Storyshots Atoms/Text Secondary 1`] = `
                         }
                       >
                         &lt;/
-                        Secondary
+                        Text.Secondary
                         &gt;
                       </span>
                     </div>
@@ -15330,7 +15330,7 @@ exports[`Storyshots Atoms/Text Secondary 1`] = `
                         }
                       >
                         &lt;
-                        Secondary
+                        Text.Secondary
                       </span>
                       <span>
                         <span>
@@ -15406,7 +15406,7 @@ exports[`Storyshots Atoms/Text Secondary 1`] = `
                         }
                       >
                         &lt;/
-                        Secondary
+                        Text.Secondary
                         &gt;
                       </span>
                     </div>
@@ -15479,7 +15479,7 @@ exports[`Storyshots Atoms/Text Secondary 1`] = `
                         }
                       >
                         &lt;
-                        Secondary
+                        Text.Secondary
                       </span>
                       <span>
                         <span>
@@ -15555,7 +15555,7 @@ exports[`Storyshots Atoms/Text Secondary 1`] = `
                         }
                       >
                         &lt;/
-                        Secondary
+                        Text.Secondary
                         &gt;
                       </span>
                     </div>
@@ -15853,7 +15853,7 @@ exports[`Storyshots Atoms/Text Tertiary 1`] = `
                         }
                       >
                         &lt;
-                        Tertiary
+                        Text.Tertiary
                       </span>
                       <span />
                       <span
@@ -15900,7 +15900,7 @@ exports[`Storyshots Atoms/Text Tertiary 1`] = `
                         }
                       >
                         &lt;/
-                        Tertiary
+                        Text.Tertiary
                         &gt;
                       </span>
                     </div>
@@ -15973,7 +15973,7 @@ exports[`Storyshots Atoms/Text Tertiary 1`] = `
                         }
                       >
                         &lt;
-                        Tertiary
+                        Text.Tertiary
                       </span>
                       <span>
                         <span>
@@ -16049,7 +16049,7 @@ exports[`Storyshots Atoms/Text Tertiary 1`] = `
                         }
                       >
                         &lt;/
-                        Tertiary
+                        Text.Tertiary
                         &gt;
                       </span>
                     </div>
@@ -16122,7 +16122,7 @@ exports[`Storyshots Atoms/Text Tertiary 1`] = `
                         }
                       >
                         &lt;
-                        Tertiary
+                        Text.Tertiary
                       </span>
                       <span>
                         <span>
@@ -16198,7 +16198,7 @@ exports[`Storyshots Atoms/Text Tertiary 1`] = `
                         }
                       >
                         &lt;/
-                        Tertiary
+                        Text.Tertiary
                         &gt;
                       </span>
                     </div>
@@ -16420,7 +16420,7 @@ exports[`Storyshots Atoms/Text Title1 1`] = `
                     }
                   >
                     &lt;
-                    Title1
+                    Text.Title1
                   </span>
                   <span />
                   <span
@@ -16467,7 +16467,7 @@ exports[`Storyshots Atoms/Text Title1 1`] = `
                     }
                   >
                     &lt;/
-                    Title1
+                    Text.Title1
                     &gt;
                   </span>
                 </div>
@@ -16647,7 +16647,7 @@ exports[`Storyshots Atoms/Text Title3 1`] = `
                     }
                   >
                     &lt;
-                    Title3
+                    Text.Title3
                   </span>
                   <span />
                   <span
@@ -16694,7 +16694,7 @@ exports[`Storyshots Atoms/Text Title3 1`] = `
                     }
                   >
                     &lt;/
-                    Title3
+                    Text.Title3
                     &gt;
                   </span>
                 </div>
@@ -16945,7 +16945,7 @@ exports[`Storyshots Molecules/LabeledValue LabeledValue secondary currency 1`] =
                     }
                   >
                     &lt;
-                    Secondary
+                    Currency.Secondary
                   </span>
                   <span>
                     <span>
@@ -17308,7 +17308,7 @@ exports[`Storyshots Molecules/LabeledValue LabeledValue title1 1`] = `
                       }
                     >
                       &lt;
-                      Title1
+                      Text.Title1
                     </span>
                     <span />
                     <span
@@ -17355,7 +17355,7 @@ exports[`Storyshots Molecules/LabeledValue LabeledValue title1 1`] = `
                       }
                     >
                       &lt;/
-                      Title1
+                      Text.Title1
                       &gt;
                     </span>
                   </div>
@@ -18046,7 +18046,7 @@ exports[`Storyshots Molecules/LabeledValue LabeledValue with negative developmen
                             }
                           >
                             &lt;
-                            Secondary
+                            Development.Secondary
                           </span>
                           <span>
                             <span>
@@ -18145,7 +18145,7 @@ exports[`Storyshots Molecules/LabeledValue LabeledValue with negative developmen
                         }
                       >
                         &lt;
-                        Secondary
+                        Currency.Secondary
                       </span>
                       <span>
                         <span>
@@ -18988,7 +18988,7 @@ exports[`Storyshots Molecules/LabeledValue LabeledValue with positive developmen
                             }
                           >
                             &lt;
-                            Secondary
+                            Development.Secondary
                           </span>
                           <span>
                             <span>
@@ -19087,7 +19087,7 @@ exports[`Storyshots Molecules/LabeledValue LabeledValue with positive developmen
                         }
                       >
                         &lt;
-                        Secondary
+                        Currency.Secondary
                       </span>
                       <span>
                         <span>
@@ -19518,7 +19518,7 @@ exports[`Storyshots Templates/Test basic use 1`] = `
                         }
                       >
                         &lt;
-                        Title1
+                        Text.Title1
                       </span>
                       <span />
                       <span
@@ -19565,7 +19565,7 @@ exports[`Storyshots Templates/Test basic use 1`] = `
                         }
                       >
                         &lt;/
-                        Title1
+                        Text.Title1
                         &gt;
                       </span>
                     </div>
@@ -19638,7 +19638,7 @@ exports[`Storyshots Templates/Test basic use 1`] = `
                         }
                       >
                         &lt;
-                        Primary
+                        Text.Primary
                       </span>
                       <span />
                       <span
@@ -19685,7 +19685,7 @@ exports[`Storyshots Templates/Test basic use 1`] = `
                         }
                       >
                         &lt;/
-                        Primary
+                        Text.Primary
                         &gt;
                       </span>
                     </div>
@@ -19758,7 +19758,7 @@ exports[`Storyshots Templates/Test basic use 1`] = `
                         }
                       >
                         &lt;
-                        Title3
+                        Text.Title3
                       </span>
                       <span />
                       <span
@@ -19805,7 +19805,7 @@ exports[`Storyshots Templates/Test basic use 1`] = `
                         }
                       >
                         &lt;/
-                        Title3
+                        Text.Title3
                         &gt;
                       </span>
                     </div>
