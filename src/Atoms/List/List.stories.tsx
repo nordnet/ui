@@ -5,34 +5,18 @@ import List from '.';
 
 const stories = storiesOf('Atoms/List', module);
 
-stories.add('Basic list', () => (
+stories.add('Basic unordered list', () => (
   <List>
-    <ListItem>Item 1</ListItem>
-    <ListItem>Item 2</ListItem>
-    <ListItem>Item 3</ListItem>
+    <ListItem>List item</ListItem>
+    <ListItem>List item</ListItem>
+    <ListItem>List item</ListItem>
   </List>
 ));
 
-stories.add('List with separated items', () => (
-  <List separated>
-    <ListItem>Item 1</ListItem>
-    <ListItem>Item 2 with seperator above</ListItem>
-    <ListItem>Item 3 with seperator above</ListItem>
-  </List>
-));
-
-stories.add('Horisontal List', () => (
-  <List horisontal>
-    <ListItem>Item 1</ListItem>
-    <ListItem>Item 2</ListItem>
-    <ListItem>Item 3</ListItem>
-  </List>
-));
-
-stories.add('Separated horisontal List', () => (
-  <List horisontal separated>
-    <ListItem>Item 1</ListItem>
-    <ListItem>Item 2 with seperator to the left</ListItem>
-    <ListItem>Item 3 with seperator to the left</ListItem>
+stories.add('Basic ordered list', () => (
+  <List as="ol">
+    <ListItem>List item 1</ListItem>
+    <ListItem>List item 2</ListItem>
+    <ListItem>List item 3</ListItem>
   </List>
 ));
