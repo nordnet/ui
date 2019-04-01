@@ -1,6 +1,6 @@
 {
   "name": "@nordnet/ui",
-  "version": "0.0.1",
+  "version": "1.0.0-beta.4",
   "author": "Nordnet <frontend@nordnet.se> (https://nordnet.se)",
   "bugs": "https://github.com/nordnet/ui/issues",
   "main": "dist/cjs",
@@ -61,6 +61,7 @@
     "@types/storybook__addon-actions": "^3.4.2",
     "color": "^3.1.0",
     "ramda": "^0.26.1",
+    "react-intl": "^2.8.0",
     "styled-components": "^4.2.0"
   },
   "peerDependencies": {
@@ -90,9 +91,9 @@
     "@storybook/addons": "5.0.6",
     "@storybook/react": "5.0.6",
     "@types/jest": "24.0.11",
-    "@types/node": "11.11.6",
+    "@types/node": "11.12.2",
     "@types/ramda": "0.26.5",
-    "@types/react": "16.8.8",
+    "@types/react": "16.8.10",
     "@types/react-intl": "2.3.17",
     "@types/storybook__addon-knobs": "4.0.4",
     "@types/storybook__react": "4.0.1",

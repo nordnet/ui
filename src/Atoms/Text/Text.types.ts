@@ -17,7 +17,7 @@ export type BaseProps = {
   color?: ColorFn;
 };
 
-type Weight = 'regular' | 'bold' | 'extrabold';
+export type Weight = 'regular' | 'bold' | 'extrabold';
 export type BasePropsWithWeight = BaseProps & { weight?: Weight };
 export type TextComponent = {
   // /** (46, 48) */
