@@ -160,16 +160,27 @@ stories.add('Two dimensional grid with  different layouts for different screen s
 ));
 
 /** One dimensional stories */
-stories.add('Grid based on Flexbox', () => (
-  <Grid.Container justifyContent="center" gutter={4}>
-    <Grid.Item flex="1 1 auto">
+stories.add('One dimensional grid', () => (
+  <Grid.Container>
+    <Grid.Item size={3}>
       <Content>Col 1</Content>
     </Grid.Item>
-    <Grid.Item flex="1 1 50%">
+    <Grid.Item size={6}>
       <Content>Col 2</Content>
     </Grid.Item>
-    <Grid.Item flex="1 1 auto">
+    <Grid.Item size={3}>
       <Content>Col 3</Content>
+    </Grid.Item>
+  </Grid.Container>
+));
+
+stories.add('One dimensional grid with custom gutter', () => (
+  <Grid.Container gutter={2}>
+    <Grid.Item size={6}>
+      <Content>Col 1</Content>
+    </Grid.Item>
+    <Grid.Item size={6}>
+      <Content>Col 2</Content>
     </Grid.Item>
   </Grid.Container>
 ));

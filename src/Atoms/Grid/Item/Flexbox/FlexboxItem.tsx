@@ -3,8 +3,34 @@ import styled from 'styled-components';
 import * as R from 'ramda';
 import { Props, PropsWithGutter } from './FlexboxItem.types';
 
+const isNumber = (x: any): x is number => x === parseInt(x, 10);
+const isUndefined = (x: any): x is undefined => typeof x === 'undefined';
+
+const getSize = (size: Props['size']) => {
+  const oneCol = 100 / 12;
+
+  if (isUndefined(size)) {
+    return null;
+  }
+
+  if (isNumber(size)) {
+    const percentage = `${oneCol * size}%`;
+
+    return `
+      max-width: ${percentage};
+      flex-basis: ${percentage};
+    `;
+  }
+
+  return `
+    max-width: ${size};
+    flex-basis: ${size};
+  `;
+};
+
 const StyledItem = styled.div<Props>`
   box-sizing: border-box;
+  ${({ size }) => size && getSize(size)}
   ${({ order }) => (order ? `order: ${order};` : '')}
   ${({ grow }) => (grow ? `flex-grow: ${grow};` : '')}
   ${({ shrink }) => (shrink ? `flex-shrink: ${shrink};` : '')}
@@ -16,6 +42,7 @@ const StyledItem = styled.div<Props>`
 const StyledItemWithHorisontalGutter = styled(StyledItem)<PropsWithGutter>`
   ${props => {
     const { gutter = props.theme.spacing.gutter } = props;
+
     return `
       padding-left: ${props.theme.spacing.unit(gutter / 2)}px;
       padding-right: ${props.theme.spacing.unit(gutter / 2)}px;
@@ -26,6 +53,7 @@ const StyledItemWithHorisontalGutter = styled(StyledItem)<PropsWithGutter>`
 const StyledItemWithVerticalGutter = styled(StyledItem)<PropsWithGutter>`
   ${props => {
     const { gutter = props.theme.spacing.gutter } = props;
+
     return `
       padding-top: ${props.theme.spacing.unit(gutter / 2)}px;
       padding-bottom: ${props.theme.spacing.unit(gutter / 2)}px;
