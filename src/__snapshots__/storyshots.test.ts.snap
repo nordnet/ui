@@ -21,7 +21,7 @@ exports[`Storyshots Atoms/Avatar Basic usage 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -61,7 +61,7 @@ exports[`Storyshots Atoms/Avatar Basic usage 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -252,7 +252,7 @@ exports[`Storyshots Atoms/Card Basic Card 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -292,7 +292,7 @@ exports[`Storyshots Atoms/Card Basic Card 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -534,7 +534,7 @@ exports[`Storyshots Atoms/Card Card as article 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -574,7 +574,7 @@ exports[`Storyshots Atoms/Card Card as article 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -845,7 +845,7 @@ exports[`Storyshots Atoms/Card Card as section 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -885,7 +885,7 @@ exports[`Storyshots Atoms/Card Card as section 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -1152,7 +1152,7 @@ exports[`Storyshots Atoms/Currency Primary default 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -1192,7 +1192,7 @@ exports[`Storyshots Atoms/Currency Primary default 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -1394,7 +1394,7 @@ exports[`Storyshots Atoms/Currency Secondary default 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -1434,7 +1434,7 @@ exports[`Storyshots Atoms/Currency Secondary default 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -1636,7 +1636,7 @@ exports[`Storyshots Atoms/Currency Tertiary default 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -1676,7 +1676,7 @@ exports[`Storyshots Atoms/Currency Tertiary default 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -1878,7 +1878,7 @@ exports[`Storyshots Atoms/Currency Title1 default 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -1918,7 +1918,7 @@ exports[`Storyshots Atoms/Currency Title1 default 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -2120,7 +2120,7 @@ exports[`Storyshots Atoms/Currency Title3 default 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -2160,7 +2160,7 @@ exports[`Storyshots Atoms/Currency Title3 default 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -2385,7 +2385,7 @@ exports[`Storyshots Atoms/Development Primary 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -2425,7 +2425,7 @@ exports[`Storyshots Atoms/Development Primary 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -2941,7 +2941,7 @@ exports[`Storyshots Atoms/Development Secondary 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -2981,7 +2981,7 @@ exports[`Storyshots Atoms/Development Secondary 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -3497,7 +3497,7 @@ exports[`Storyshots Atoms/Development Tertiary 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -3537,7 +3537,7 @@ exports[`Storyshots Atoms/Development Tertiary 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -4056,7 +4056,7 @@ exports[`Storyshots Atoms/Grid Grid based on Flexbox 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -4096,7 +4096,7 @@ exports[`Storyshots Atoms/Grid Grid based on Flexbox 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -4797,7 +4797,7 @@ exports[`Storyshots Atoms/Grid Grid based on Flexbox: column 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -4837,7 +4837,7 @@ exports[`Storyshots Atoms/Grid Grid based on Flexbox: column 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -5523,7 +5523,7 @@ exports[`Storyshots Atoms/Grid Two dimensional grid 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -5563,7 +5563,7 @@ exports[`Storyshots Atoms/Grid Two dimensional grid 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -6701,7 +6701,7 @@ exports[`Storyshots Atoms/Grid Two dimensional grid with  different layouts for 
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -6741,7 +6741,7 @@ exports[`Storyshots Atoms/Grid Two dimensional grid with  different layouts for 
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -8012,7 +8012,7 @@ exports[`Storyshots Atoms/Grid Two dimensional grid with custom gutter 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -8052,7 +8052,7 @@ exports[`Storyshots Atoms/Grid Two dimensional grid with custom gutter 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -9067,7 +9067,7 @@ exports[`Storyshots Atoms/Grid Two dimensional grid with custom templateColumns 
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -9107,7 +9107,7 @@ exports[`Storyshots Atoms/Grid Two dimensional grid with custom templateColumns 
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -10176,7 +10176,7 @@ exports[`Storyshots Atoms/Grid Two dimensional grid with object as gutter and cu
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -10216,7 +10216,7 @@ exports[`Storyshots Atoms/Grid Two dimensional grid with object as gutter and cu
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -11643,7 +11643,7 @@ exports[`Storyshots Atoms/Input/Text basic use 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -11683,7 +11683,7 @@ exports[`Storyshots Atoms/Input/Text basic use 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -11895,7 +11895,7 @@ exports[`Storyshots Atoms/Media Basic usage 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -11935,7 +11935,7 @@ exports[`Storyshots Atoms/Media Basic usage 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -12395,7 +12395,7 @@ exports[`Storyshots Atoms/Placeholder Rect 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -12435,7 +12435,7 @@ exports[`Storyshots Atoms/Placeholder Rect 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -12640,7 +12640,7 @@ exports[`Storyshots Atoms/Separator Separator default 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -12680,7 +12680,7 @@ exports[`Storyshots Atoms/Separator Separator default 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -12880,7 +12880,7 @@ exports[`Storyshots Atoms/Separator Separator vertical 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -12920,7 +12920,7 @@ exports[`Storyshots Atoms/Separator Separator vertical 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -13172,7 +13172,7 @@ exports[`Storyshots Atoms/Text Colors 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -13212,7 +13212,7 @@ exports[`Storyshots Atoms/Text Colors 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -14405,7 +14405,7 @@ exports[`Storyshots Atoms/Text Primary 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -14445,7 +14445,7 @@ exports[`Storyshots Atoms/Text Primary 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -15048,7 +15048,7 @@ exports[`Storyshots Atoms/Text Secondary 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -15088,7 +15088,7 @@ exports[`Storyshots Atoms/Text Secondary 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -15691,7 +15691,7 @@ exports[`Storyshots Atoms/Text Tertiary 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -15731,7 +15731,7 @@ exports[`Storyshots Atoms/Text Tertiary 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -16318,7 +16318,7 @@ exports[`Storyshots Atoms/Text Title1 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -16358,7 +16358,7 @@ exports[`Storyshots Atoms/Text Title1 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -16545,7 +16545,7 @@ exports[`Storyshots Atoms/Text Title3 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -16585,7 +16585,7 @@ exports[`Storyshots Atoms/Text Title3 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -16791,7 +16791,7 @@ exports[`Storyshots Molecules/Button Button primary with size modified 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -16831,7 +16831,7 @@ exports[`Storyshots Molecules/Button Button primary with size modified 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -17364,7 +17364,7 @@ exports[`Storyshots Molecules/Button Button secondary with size modified 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -17404,7 +17404,7 @@ exports[`Storyshots Molecules/Button Button secondary with size modified 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -18012,7 +18012,7 @@ exports[`Storyshots Molecules/Button Button with type modified 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -18052,7 +18052,7 @@ exports[`Storyshots Molecules/Button Button with type modified 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -18470,7 +18470,7 @@ exports[`Storyshots Molecules/Button Button with variant 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -18510,7 +18510,7 @@ exports[`Storyshots Molecules/Button Button with variant 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -18753,7 +18753,7 @@ exports[`Storyshots Molecules/Button Default usage 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -18793,7 +18793,7 @@ exports[`Storyshots Molecules/Button Default usage 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -19010,7 +19010,7 @@ exports[`Storyshots Molecules/Button Disabled button 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -19050,7 +19050,7 @@ exports[`Storyshots Molecules/Button Disabled button 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -19291,7 +19291,7 @@ exports[`Storyshots Templates/Test basic use 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -19331,7 +19331,7 @@ exports[`Storyshots Templates/Test basic use 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -19860,7 +19860,7 @@ exports[`Storyshots Theme media queries works 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -19900,7 +19900,7 @@ exports[`Storyshots Theme media queries works 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -19983,7 +19983,7 @@ exports[`Storyshots Theme media queries works 1`] = `
                     }
                   >
                     &lt;
-                    ForwardRef
+                    Themestories__Component
                   </span>
                   <span />
                   <span
@@ -19996,217 +19996,23 @@ exports[`Storyshots Theme media queries works 1`] = `
                     &gt;
                   </span>
                 </div>
-                <div>
-                  <div
+                <div
+                  style={
+                    Object {
+                      "paddingLeft": 33,
+                      "paddingRight": 3,
+                    }
+                  }
+                >
+                  <span
                     style={
                       Object {
-                        "paddingLeft": 33,
-                        "paddingRight": 3,
+                        "color": "#444",
                       }
                     }
                   >
-                    <span
-                      style={
-                        Object {
-                          "color": "#444",
-                        }
-                      }
-                    >
-                      &lt;
-                      StyledComponent
-                    </span>
-                    <span>
-                      <span>
-                         
-                        <span
-                          style={Object {}}
-                        >
-                          forwardedComponent
-                        </span>
-                        <span>
-                          =
-                          <span
-                            style={Object {}}
-                          >
-                            {
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              {
-                              <span>
-                                <span>
-                                  <br />
-                                    
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  $$typeof
-                                </span>
-                              </span>
-                              : 
-                              <span>
-                                …
-                              </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                    
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  render
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#170",
-                                  }
-                                }
-                              >
-                                anonymous
-                              </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                    
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  attrs
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#666",
-                                  }
-                                }
-                              >
-                                [
-                                ]
-                              </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                    
-                                    
-                                </span>
-                                …
-                              </span>
-                              <span>
-                                <br />
-                                  
-                              </span>
-                              }
-                            </span>
-                            }
-                          </span>
-                        </span>
-                      </span>
-                      <span>
-                         
-                        <span
-                          style={Object {}}
-                        >
-                          forwardedRef
-                        </span>
-                        <span>
-                          =
-                          <span
-                            style={Object {}}
-                          >
-                            {
-                            <span
-                              style={
-                                Object {
-                                  "color": "#444",
-                                }
-                              }
-                            >
-                              null
-                            </span>
-                            }
-                          </span>
-                        </span>
-                        
-                      </span>
-                    </span>
-                    <span
-                      style={
-                        Object {
-                          "color": "#444",
-                        }
-                      }
-                    >
-                      &gt;
-                    </span>
-                  </div>
-                  <div
-                    style={
-                      Object {
-                        "paddingLeft": 48,
-                        "paddingRight": 3,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#444",
-                        }
-                      }
-                    >
-                      Change the size of the screen and watch me changing colors
-                    </span>
-                  </div>
-                  <div
-                    style={
-                      Object {
-                        "paddingLeft": 33,
-                        "paddingRight": 3,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#444",
-                        }
-                      }
-                    >
-                      &lt;/
-                      StyledComponent
-                      &gt;
-                    </span>
-                  </div>
+                    Change the size of the screen and watch me changing colors
+                  </span>
                 </div>
                 <div
                   style={
@@ -20224,7 +20030,7 @@ exports[`Storyshots Theme media queries works 1`] = `
                     }
                   >
                     &lt;/
-                    ForwardRef
+                    Themestories__Component
                     &gt;
                   </span>
                 </div>
@@ -20281,7 +20087,7 @@ exports[`Storyshots Theme styled components theme is properly passed 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -20321,7 +20127,7 @@ exports[`Storyshots Theme styled components theme is properly passed 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -20404,7 +20210,7 @@ exports[`Storyshots Theme styled components theme is properly passed 1`] = `
                     }
                   >
                     &lt;
-                    ForwardRef
+                    Themestories__Component
                   </span>
                   <span />
                   <span
@@ -20417,217 +20223,23 @@ exports[`Storyshots Theme styled components theme is properly passed 1`] = `
                     &gt;
                   </span>
                 </div>
-                <div>
-                  <div
+                <div
+                  style={
+                    Object {
+                      "paddingLeft": 33,
+                      "paddingRight": 3,
+                    }
+                  }
+                >
+                  <span
                     style={
                       Object {
-                        "paddingLeft": 33,
-                        "paddingRight": 3,
+                        "color": "#444",
                       }
                     }
                   >
-                    <span
-                      style={
-                        Object {
-                          "color": "#444",
-                        }
-                      }
-                    >
-                      &lt;
-                      StyledComponent
-                    </span>
-                    <span>
-                      <span>
-                         
-                        <span
-                          style={Object {}}
-                        >
-                          forwardedComponent
-                        </span>
-                        <span>
-                          =
-                          <span
-                            style={Object {}}
-                          >
-                            {
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              {
-                              <span>
-                                <span>
-                                  <br />
-                                    
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  $$typeof
-                                </span>
-                              </span>
-                              : 
-                              <span>
-                                …
-                              </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                    
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  render
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#170",
-                                  }
-                                }
-                              >
-                                anonymous
-                              </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                    
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  attrs
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#666",
-                                  }
-                                }
-                              >
-                                [
-                                ]
-                              </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                    
-                                    
-                                </span>
-                                …
-                              </span>
-                              <span>
-                                <br />
-                                  
-                              </span>
-                              }
-                            </span>
-                            }
-                          </span>
-                        </span>
-                      </span>
-                      <span>
-                         
-                        <span
-                          style={Object {}}
-                        >
-                          forwardedRef
-                        </span>
-                        <span>
-                          =
-                          <span
-                            style={Object {}}
-                          >
-                            {
-                            <span
-                              style={
-                                Object {
-                                  "color": "#444",
-                                }
-                              }
-                            >
-                              null
-                            </span>
-                            }
-                          </span>
-                        </span>
-                        
-                      </span>
-                    </span>
-                    <span
-                      style={
-                        Object {
-                          "color": "#444",
-                        }
-                      }
-                    >
-                      &gt;
-                    </span>
-                  </div>
-                  <div
-                    style={
-                      Object {
-                        "paddingLeft": 48,
-                        "paddingRight": 3,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#444",
-                        }
-                      }
-                    >
-                      Width, height and border comes from theme!
-                    </span>
-                  </div>
-                  <div
-                    style={
-                      Object {
-                        "paddingLeft": 33,
-                        "paddingRight": 3,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#444",
-                        }
-                      }
-                    >
-                      &lt;/
-                      StyledComponent
-                      &gt;
-                    </span>
-                  </div>
+                    Width, height and border comes from theme!
+                  </span>
                 </div>
                 <div
                   style={
@@ -20645,7 +20257,7 @@ exports[`Storyshots Theme styled components theme is properly passed 1`] = `
                     }
                   >
                     &lt;/
-                    ForwardRef
+                    Themestories__Component
                     &gt;
                   </span>
                 </div>
