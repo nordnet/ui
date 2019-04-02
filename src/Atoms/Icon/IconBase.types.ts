@@ -3,9 +3,20 @@ import { Theme } from '../../theme/theme.types';
 type ColorFn = (t: Theme) => Values<Theme['color']>;
 type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // can move it to util types
 
-export type BaseProps = {
-  color?: ColorFn;
-  children: React.ReactNode;
+export type StyledIconBaseProps = {
+  colorFn?: ColorFn;
   /** unit-based */
   size?: number;
+};
+
+export type BaseProps = {
+  className?: string;
+  title?: string;
+  color?: ColorFn;
+  /** unit-based */
+  size?: number;
+};
+
+export type InternalProps = BaseProps & {
+  children: React.ReactNode;
 };
