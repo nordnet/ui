@@ -7,7 +7,6 @@ import Grid from './Atoms/Grid';
 import Media from './Atoms/Media';
 // import Placeholder from './Atoms/Placeholder';
 import Separator from './Atoms/Separator';
-import Avatar from './Atoms/Avatar';
 import Icon from './Atoms/Icon';
 import Text from './Atoms/Text';
 import LabeledValue from './Molecules/LabeledValue';
