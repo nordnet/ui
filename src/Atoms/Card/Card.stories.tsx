@@ -1,8 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
-import Card from '.';
 import { Props } from './Card.types';
+
+import { Card } from '../..';
 
 const stories = storiesOf('Atoms/Card', module);
 

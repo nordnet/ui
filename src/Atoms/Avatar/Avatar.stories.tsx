@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Avatar } from './Avatar';
+import { Avatar } from '../..';
 
 const stories = storiesOf('Atoms/Avatar', module);
 

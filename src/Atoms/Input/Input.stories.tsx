@@ -1,8 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, number, select } from '@storybook/addon-knobs';
-import Input from '.';
 import theme from '../../theme';
+
+import { Input } from '../..';
 
 const stories = storiesOf('Atoms/Input/Text', module);
 

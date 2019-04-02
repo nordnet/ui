@@ -1,7 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, number, select } from '@storybook/addon-knobs';
-import Currency from './index';
+
+import { Currency } from '../..';
 
 const stories = storiesOf('Atoms/Currency', module);
 
@@ -9,14 +10,18 @@ stories.addDecorator(withKnobs);
 
 const inputs = (): [number, string] => {
   const value = number('value', 234234);
-  const currency = select('currency', {
-    'SEK': 'SEK',
-    'NOK': 'NOK',
-    'DKK': 'DKK',
-    'USD': 'USD'
-  }, 'SEK');
+  const currency = select(
+    'currency',
+    {
+      SEK: 'SEK',
+      NOK: 'NOK',
+      DKK: 'DKK',
+      USD: 'USD',
+    },
+    'SEK',
+  );
   return [value, currency];
-}
+};
 
 stories.add('Primary default', () => {
   const [value, currency] = inputs();

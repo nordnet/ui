@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Development from './index';
+
+import { Development } from '../..';
 
 const stories = storiesOf('Atoms/Development', module);
 

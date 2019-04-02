@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 
-import Media from '.';
+import { Media } from '../..';
 
 const stories = storiesOf('Atoms/Media', module);
 
