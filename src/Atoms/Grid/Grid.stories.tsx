@@ -1,7 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
-import Grid from '.';
+
+import { Grid } from '../..';
 
 const stories = storiesOf('Atoms/Grid', module);
 

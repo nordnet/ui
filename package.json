@@ -1,6 +1,6 @@
 {
   "name": "@nordnet/ui",
-  "version": "1.0.0-beta.4",
+  "version": "1.0.0-beta.5",
   "author": "Nordnet <frontend@nordnet.se> (https://nordnet.se)",
   "bugs": "https://github.com/nordnet/ui/issues",
   "main": "dist/cjs",
