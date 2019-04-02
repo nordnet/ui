@@ -51,7 +51,7 @@ stories.add('Icons with different size and color', () => {
   return (
     <IconsList>
       <IconsItem>
-        <Icon.ChevronDown size={10} color={t => t.color.positive} />
+        <Icon.ChevronUp size={10} color={t => t.color.positive} />
         <IconsCaption>ChevronUp</IconsCaption>
       </IconsItem>
       <IconsItem>

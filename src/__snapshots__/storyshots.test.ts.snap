@@ -12864,6 +12864,7 @@ exports[`Storyshots Atoms/Icon Icons with different size and color 1`] = `
         >
           <polygon
             points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            transform="rotate(-180 12 12)"
           />
         </svg>
         <p
@@ -13103,7 +13104,7 @@ exports[`Storyshots Atoms/Icon Icons with different size and color 1`] = `
                       }
                     >
                       &lt;
-                      Icon.ChevronDown
+                      Icon.ChevronUp
                     </span>
                     <span>
                       <span>
