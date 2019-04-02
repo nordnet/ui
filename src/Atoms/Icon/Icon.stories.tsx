@@ -5,32 +5,63 @@ import Icon from '.';
 
 const stories = storiesOf('Atoms/Icon', module);
 
-const StyledContainer = styled.div`
-  display: 'flex';
+const StyledList = styled.ul`
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
   flex-wrap: wrap;
-  & > svg {
-    padding: 0 ${p => p.theme.spacing.unit(2)}px;
-  }
 `;
 
-const Container: React.FC = ({ children }) => <StyledContainer>{children}</StyledContainer>;
+const StyledListItem = styled.li`
+  display: inline-block;
+  text-align: center;
+  margin: 0 ${p => p.theme.spacing.unit(2)}px;
+`;
+
+const StyledCaption = styled.p`
+  margin: 0;
+  font-size: 12px;
+`;
+
+const IconsList: React.FC = ({ children }) => <StyledList>{children}</StyledList>;
+const IconsItem: React.FC = ({ children }) => <StyledListItem>{children}</StyledListItem>;
+const IconsCaption: React.FC = ({ children }) => <StyledCaption>{children}</StyledCaption>;
 
 stories.add('Icons', () => {
   return (
-    <Container>
-      <Icon.ChevronUp />
-      <Icon.ChevronDown />
-      <Icon.ArrowRight />
-    </Container>
+    <IconsList>
+      <IconsItem>
+        <Icon.ChevronUp />
+        <IconsCaption>ChevronUp</IconsCaption>
+      </IconsItem>
+      <IconsItem>
+        <Icon.ChevronDown />
+        <IconsCaption>ChevronDown</IconsCaption>
+      </IconsItem>
+      <IconsItem>
+        <Icon.ArrowRight />
+        <IconsCaption>ArrowRight</IconsCaption>
+      </IconsItem>
+    </IconsList>
   );
 });
 
 stories.add('Icons with different size and color', () => {
   return (
-    <Container>
-      <Icon.ChevronUp size={10} color={t => t.color.positive} />
-      <Icon.ChevronDown size={10} color={t => t.color.positive} />
-      <Icon.ArrowRight size={10} color={t => t.color.positive} />
-    </Container>
+    <IconsList>
+      <IconsItem>
+        <Icon.ChevronDown size={10} color={t => t.color.positive} />
+        <IconsCaption>ChevronUp</IconsCaption>
+      </IconsItem>
+      <IconsItem>
+        <Icon.ChevronDown size={10} color={t => t.color.positive} />
+        <IconsCaption>ChevronDown</IconsCaption>
+      </IconsItem>
+      <IconsItem>
+        <Icon.ArrowRight size={10} color={t => t.color.positive} />
+        <IconsCaption>ArrowRight</IconsCaption>
+      </IconsItem>
+    </IconsList>
   );
 });
