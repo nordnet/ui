@@ -5,7 +5,7 @@ import { BaseProps } from '../IconBase.types';
 export const ArrowRight = (props: BaseProps) => {
   return (
     <IconBase {...props}>
-      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+        <polygon points="16.278 14 0 14 0 10 16.278 10 8.211 2 13.916 2 24 12 21.148 14.828 13.916 22 8.211 22"/>
     </IconBase>
   );
 };
