@@ -22976,7 +22976,7 @@ exports[`Storyshots Molecules/Link Default usage 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -23016,7 +23016,7 @@ exports[`Storyshots Molecules/Link Default usage 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -23214,7 +23214,7 @@ exports[`Storyshots Molecules/Link Default usage 1`] = `
                         }
                       >
                         &lt;
-                        Secondary
+                        Text.Secondary
                       </span>
                       <span>
                         <span>
@@ -23316,7 +23316,7 @@ exports[`Storyshots Molecules/Link Default usage 1`] = `
                         }
                       >
                         &lt;/
-                        Secondary
+                        Text.Secondary
                         &gt;
                       </span>
                     </div>
@@ -23422,7 +23422,7 @@ exports[`Storyshots Molecules/Link Link with _blank target 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -23462,7 +23462,7 @@ exports[`Storyshots Molecules/Link Link with _blank target 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -23687,7 +23687,7 @@ exports[`Storyshots Molecules/Link Link with _blank target 1`] = `
                         }
                       >
                         &lt;
-                        Secondary
+                        Text.Secondary
                       </span>
                       <span>
                         <span>
@@ -23789,7 +23789,7 @@ exports[`Storyshots Molecules/Link Link with _blank target 1`] = `
                         }
                       >
                         &lt;/
-                        Secondary
+                        Text.Secondary
                         &gt;
                       </span>
                     </div>
