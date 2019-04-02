@@ -21179,7 +21179,7 @@ exports[`Storyshots Molecules/LabeledValue LabeledValue secondary currency 1`] =
       <span
         className="Text__StyledText-sc-1974afi-0 gHlEVt"
       >
-        SEK 4,672,198.00
+        4 672 198,00 SEK
       </span>
     </div>
   </div>
@@ -21868,14 +21868,14 @@ exports[`Storyshots Molecules/LabeledValue LabeledValue with negative developmen
             className="Text__StyledText-sc-1974afi-0 jWluYu"
           >
             ▼
-            -9.2
+            −9,2
             %
           </span>
         </div>
         <span
           className="Text__StyledText-sc-1974afi-0 gHlEVt"
         >
-          -SEK 4,672,198.00
+          −4 672 198,00 SEK
         </span>
       </div>
     </div>
@@ -22425,14 +22425,14 @@ exports[`Storyshots Molecules/LabeledValue LabeledValue with positive developmen
           >
             ▲
             +
-            9.2
+            9,2
             %
           </span>
         </div>
         <span
           className="Text__StyledText-sc-1974afi-0 gHlEVt"
         >
-          SEK 4,672,198.00
+          4 672 198,00 SEK
         </span>
       </div>
     </div>
