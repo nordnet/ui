@@ -12130,7 +12130,7 @@ exports[`Storyshots Atoms/Icon Icons 1`] = `
     }
   >
     <div
-      className="Iconstories__StyledContainer-sc-19nkl57-0 hMUAWm"
+      className="Iconstories__StyledContainer-sc-19nkl57-0 jpNxvo"
     >
       <svg
         aria-hidden="true"
@@ -12140,8 +12140,9 @@ exports[`Storyshots Atoms/Icon Icons 1`] = `
         size={5}
         viewBox="0 0 24 24"
       >
-        <path
-          d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+        <polygon
+          points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+          transform="rotate(-180 12 12)"
         />
       </svg>
       <svg
@@ -12152,8 +12153,8 @@ exports[`Storyshots Atoms/Icon Icons 1`] = `
         size={5}
         viewBox="0 0 24 24"
       >
-        <path
-          d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+        <polygon
+          points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
         />
       </svg>
       <svg
@@ -12164,20 +12165,8 @@ exports[`Storyshots Atoms/Icon Icons 1`] = `
         size={5}
         viewBox="0 0 24 24"
       >
-        <path
-          d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
-        />
-      </svg>
-      <svg
-        aria-hidden="true"
-        className="IconBase__StyledIconBase-sc-10cbji3-0 glOwBq"
-        focusable="false"
-        role="presentation"
-        size={5}
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+        <polygon
+          points="16.278 14 0 14 0 10 16.278 10 8.211 2 13.916 2 24 12 21.148 14.828 13.916 22 8.211 22"
         />
       </svg>
     </div>
@@ -12321,35 +12310,6 @@ exports[`Storyshots Atoms/Icon Icons 1`] = `
                     }
                   >
                     &gt;
-                  </span>
-                </div>
-                <div
-                  style={
-                    Object {
-                      "paddingLeft": 33,
-                      "paddingRight": 3,
-                    }
-                  }
-                >
-                  <span
-                    style={
-                      Object {
-                        "color": "#444",
-                      }
-                    }
-                  >
-                    &lt;
-                    Icon.QuestionMark
-                  </span>
-                  <span />
-                  <span
-                    style={
-                      Object {
-                        "color": "#444",
-                      }
-                    }
-                  >
-                    /&gt;
                   </span>
                 </div>
                 <div
@@ -12502,7 +12462,7 @@ exports[`Storyshots Atoms/Icon Icons with different size and color 1`] = `
     }
   >
     <div
-      className="Iconstories__StyledContainer-sc-19nkl57-0 hMUAWm"
+      className="Iconstories__StyledContainer-sc-19nkl57-0 jpNxvo"
     >
       <svg
         aria-hidden="true"
@@ -12512,8 +12472,9 @@ exports[`Storyshots Atoms/Icon Icons with different size and color 1`] = `
         size={10}
         viewBox="0 0 24 24"
       >
-        <path
-          d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+        <polygon
+          points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+          transform="rotate(-180 12 12)"
         />
       </svg>
       <svg
@@ -12524,8 +12485,8 @@ exports[`Storyshots Atoms/Icon Icons with different size and color 1`] = `
         size={10}
         viewBox="0 0 24 24"
       >
-        <path
-          d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+        <polygon
+          points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
         />
       </svg>
       <svg
@@ -12536,20 +12497,8 @@ exports[`Storyshots Atoms/Icon Icons with different size and color 1`] = `
         size={10}
         viewBox="0 0 24 24"
       >
-        <path
-          d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
-        />
-      </svg>
-      <svg
-        aria-hidden="true"
-        className="IconBase__StyledIconBase-sc-10cbji3-0 cFisAB"
-        focusable="false"
-        role="presentation"
-        size={10}
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+        <polygon
+          points="16.278 14 0 14 0 10 16.278 10 8.211 2 13.916 2 24 12 21.148 14.828 13.916 22 8.211 22"
         />
       </svg>
     </div>
@@ -12693,89 +12642,6 @@ exports[`Storyshots Atoms/Icon Icons with different size and color 1`] = `
                     }
                   >
                     &gt;
-                  </span>
-                </div>
-                <div
-                  style={
-                    Object {
-                      "paddingLeft": 33,
-                      "paddingRight": 3,
-                    }
-                  }
-                >
-                  <span
-                    style={
-                      Object {
-                        "color": "#444",
-                      }
-                    }
-                  >
-                    &lt;
-                    Icon.QuestionMark
-                  </span>
-                  <span>
-                    <span>
-                       
-                      <span
-                        style={Object {}}
-                      >
-                        size
-                      </span>
-                      <span>
-                        =
-                        <span
-                          style={Object {}}
-                        >
-                          {
-                          <span
-                            style={
-                              Object {
-                                "color": "#a11",
-                              }
-                            }
-                          >
-                            10
-                          </span>
-                          }
-                        </span>
-                      </span>
-                    </span>
-                    <span>
-                       
-                      <span
-                        style={Object {}}
-                      >
-                        color
-                      </span>
-                      <span>
-                        =
-                        <span
-                          style={Object {}}
-                        >
-                          {
-                          <span
-                            style={
-                              Object {
-                                "color": "#170",
-                              }
-                            }
-                          >
-                            color
-                          </span>
-                          }
-                        </span>
-                      </span>
-                       
-                    </span>
-                  </span>
-                  <span
-                    style={
-                      Object {
-                        "color": "#444",
-                      }
-                    }
-                  >
-                    /&gt;
                   </span>
                 </div>
                 <div
