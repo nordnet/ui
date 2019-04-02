@@ -31,7 +31,7 @@ addDecorator(ThemeDecorator);
 
 setIntlConfig({
   locales: ['sv', 'nb', 'da', 'fi', 'en'],
-  defaultLocale: 'sv',
+  defaultLocale: 'en',
   getMessages: () => {},
   getFormats: () => {},
 });

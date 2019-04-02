@@ -1144,7 +1144,7 @@ exports[`Storyshots Atoms/Currency Primary default 1`] = `
     <span
       className="Text__StyledText-sc-1974afi-0 cmCWWJ"
     >
-      234 234,00 SEK
+      SEK 234,234.00
     </span>
   </div>
   <button
@@ -1386,7 +1386,7 @@ exports[`Storyshots Atoms/Currency Secondary default 1`] = `
     <span
       className="Text__StyledText-sc-1974afi-0 laXMaY"
     >
-      234 234,00 SEK
+      SEK 234,234.00
     </span>
   </div>
   <button
@@ -1628,7 +1628,7 @@ exports[`Storyshots Atoms/Currency Tertiary default 1`] = `
     <span
       className="Text__StyledText-sc-1974afi-0 kBKleW"
     >
-      234 234,00 SEK
+      SEK 234,234.00
     </span>
   </div>
   <button
@@ -1870,7 +1870,7 @@ exports[`Storyshots Atoms/Currency Title1 default 1`] = `
     <span
       className="Text__StyledText-sc-1974afi-0 iUYKst"
     >
-      234 234,00 SEK
+      SEK 234,234.00
     </span>
   </div>
   <button
@@ -2112,7 +2112,7 @@ exports[`Storyshots Atoms/Currency Title3 default 1`] = `
     <span
       className="Text__StyledText-sc-1974afi-0 joblfr"
     >
-      234 234,00 SEK
+      SEK 234,234.00
     </span>
   </div>
   <button
@@ -2357,7 +2357,7 @@ exports[`Storyshots Atoms/Development Primary 1`] = `
       >
         ▲
         +
-        5,4
+        5.4
         %
       </span>
     </div>
@@ -2375,7 +2375,7 @@ exports[`Storyshots Atoms/Development Primary 1`] = `
         className="Text__StyledText-sc-1974afi-0 hCpHGw"
       >
         ▼
-        −2,1
+        -2.1
         %
       </span>
     </div>
@@ -2913,7 +2913,7 @@ exports[`Storyshots Atoms/Development Secondary 1`] = `
       >
         ▲
         +
-        5,4
+        5.4
         %
       </span>
     </div>
@@ -2931,7 +2931,7 @@ exports[`Storyshots Atoms/Development Secondary 1`] = `
         className="Text__StyledText-sc-1974afi-0 jWluYu"
       >
         ▼
-        −2,1
+        -2.1
         %
       </span>
     </div>
@@ -3469,7 +3469,7 @@ exports[`Storyshots Atoms/Development Tertiary 1`] = `
       >
         ▲
         +
-        5,4
+        5.4
         %
       </span>
     </div>
@@ -3487,7 +3487,7 @@ exports[`Storyshots Atoms/Development Tertiary 1`] = `
         className="Text__StyledText-sc-1974afi-0 eumSjM"
       >
         ▼
-        −2,1
+        -2.1
         %
       </span>
     </div>
@@ -21179,7 +21179,7 @@ exports[`Storyshots Molecules/LabeledValue LabeledValue secondary currency 1`] =
       <span
         className="Text__StyledText-sc-1974afi-0 gHlEVt"
       >
-        4 672 198,00 SEK
+        SEK 4,672,198.00
       </span>
     </div>
   </div>
@@ -21868,14 +21868,14 @@ exports[`Storyshots Molecules/LabeledValue LabeledValue with negative developmen
             className="Text__StyledText-sc-1974afi-0 jWluYu"
           >
             ▼
-            −9,2
+            -9.2
             %
           </span>
         </div>
         <span
           className="Text__StyledText-sc-1974afi-0 gHlEVt"
         >
-          −4 672 198,00 SEK
+          -SEK 4,672,198.00
         </span>
       </div>
     </div>
@@ -22425,14 +22425,14 @@ exports[`Storyshots Molecules/LabeledValue LabeledValue with positive developmen
           >
             ▲
             +
-            9,2
+            9.2
             %
           </span>
         </div>
         <span
           className="Text__StyledText-sc-1974afi-0 gHlEVt"
         >
-          4 672 198,00 SEK
+          SEK 4,672,198.00
         </span>
       </div>
     </div>
