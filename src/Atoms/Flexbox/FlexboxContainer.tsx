@@ -1,8 +1,8 @@
 import React from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
-import { Theme } from '../../../../theme/theme.types';
-import { ItemWithHorisontalGutter, ItemWithVerticalGutter } from '../../Item/Flexbox/FlexboxItem';
-import { Props as ChildProps } from '../../Item/Flexbox/FlexboxItem.types';
+import { Theme } from '../../theme/theme.types';
+import { ItemWithHorisontalGutter, ItemWithVerticalGutter } from './FlexboxItem';
+import { Props as ChildProps } from './FlexboxItem.types';
 import { Props } from './FlexboxContainer.types';
 
 const isHorizontalGrid = (dir: Props['direction']) => {
@@ -42,7 +42,7 @@ const StyledFlexbox = styled.div<Props>`
   ${({ alignContent }) => (alignContent ? `align-content: ${alignContent};` : '')}
 `;
 
-export const Flexbox = (props: Props) => {
+export const Container = (props: Props) => {
   const { gutter, direction } = props;
 
   return (
@@ -58,4 +58,4 @@ export const Flexbox = (props: Props) => {
   );
 };
 
-Flexbox.displayName = 'Grid.Container.Flexbox';
+Container.displayName = 'Flexbox.Container';

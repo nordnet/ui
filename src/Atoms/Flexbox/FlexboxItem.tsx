@@ -66,13 +66,13 @@ const withoutSCProps = R.omit(['css', 'as']);
 export const ItemWithHorisontalGutter: React.FunctionComponent<PropsWithGutter> = props => (
   <StyledItemWithHorisontalGutter {...withoutSCProps(props)} />
 );
-ItemWithHorisontalGutter.displayName = 'Grid.Item.Flex';
+ItemWithHorisontalGutter.displayName = 'Flexbox.Item';
 export const ItemWithVerticalGutter: React.FunctionComponent<PropsWithGutter> = props => (
   <StyledItemWithVerticalGutter {...withoutSCProps(props)} />
 );
-ItemWithVerticalGutter.displayName = 'Grid.Item.Flex';
+ItemWithVerticalGutter.displayName = 'Flexbox.Item';
 
 export const Item: React.FunctionComponent<Props> = props => (
   <StyledItem {...withoutSCProps(props)} />
 );
-Item.displayName = 'Grid.Item.Flex';
+Item.displayName = 'Flexbox.Item';
