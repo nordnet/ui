@@ -32,6 +32,8 @@ const Primary: TextComponent['Primary'] = props => (
     {props.children}
   </StyledText>
 );
+Primary.displayName = 'Text.Primary';
+
 const Secondary: TextComponent['Secondary'] = props => (
   <StyledText
     as={props.as}
@@ -43,6 +45,8 @@ const Secondary: TextComponent['Secondary'] = props => (
     {props.children}
   </StyledText>
 );
+Secondary.displayName = 'Text.Secondary';
+
 const Tertiary: TextComponent['Tertiary'] = props => (
   <StyledText
     as={props.as}
@@ -54,6 +58,8 @@ const Tertiary: TextComponent['Tertiary'] = props => (
     {props.children}
   </StyledText>
 );
+Tertiary.displayName = 'Text.Tertiary';
+
 const Title1: TextComponent['Title1'] = props => (
   <StyledText
     as={props.as}
@@ -65,6 +71,8 @@ const Title1: TextComponent['Title1'] = props => (
     {props.children}
   </StyledText>
 );
+Title1.displayName = 'Text.Title1';
+
 const Title3: TextComponent['Title3'] = props => (
   <StyledText
     as={props.as}
@@ -76,6 +84,7 @@ const Title3: TextComponent['Title3'] = props => (
     {props.children}
   </StyledText>
 );
+Title3.displayName = 'Text.Title3';
 
 export const Text: TextComponent = {
   Primary,

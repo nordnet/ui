@@ -9,6 +9,7 @@ import Media from './Atoms/Media';
 import Separator from './Atoms/Separator';
 import Text from './Atoms/Text';
 
+import LabeledValue from './Molecules/LabeledValue';
 import Button from './Molecules/Button';
 
 import theme from './theme';
@@ -27,4 +28,5 @@ export {
   Separator,
   Text,
   Button,
+  LabeledValue,
 };
