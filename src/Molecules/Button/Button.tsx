@@ -50,7 +50,7 @@ const getHeight = (props: ThemedStyledProps<Props, Theme>) => {
   return `${theme.spacing.unit(hugeness)}px`;
 };
 
-const StyledNeutralButton = styled.button`
+const NormalizedButton = styled.button`
   /**
    * From Normalize.css v8.0.1
    * 1. Change the font styles in all browsers.
@@ -92,7 +92,7 @@ const StyledNeutralButton = styled.button`
   }
 `;
 
-const StyledButton = styled(StyledNeutralButton)<Props>`
+const StyledButton = styled(NormalizedButton)<Props>`
   ${p => getBackgroundColor(p)}
   border-radius: 0;
   border: 2px solid ${p => (isSecondary(p.variant) ? p.theme.color.cta : 'transparent')};
