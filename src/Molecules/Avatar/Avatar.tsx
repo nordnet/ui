@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Props } from './Avatar.types';
-import Text from '../Text';
+
+import Text from '../../Atoms/Text';
 
 const StyledDiv = styled.div`
   background-color: ${p => p.theme.color.backgroundDark};

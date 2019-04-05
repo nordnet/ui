@@ -1,4 +1,4 @@
-import Avatar from './Atoms/Avatar';
+import Avatar from './Molecules/Avatar';
 import Card from './Atoms/Card';
 import Currency from './Atoms/Currency';
 import Development from './Atoms/Development';
