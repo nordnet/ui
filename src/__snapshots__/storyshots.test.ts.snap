@@ -11,9 +11,13 @@ exports[`Storyshots Atoms/Avatar Basic usage 1`] = `
     }
   >
     <div
-      className="Avatar__StyledDiv-sc-15gaq9e-0 fNFfyI"
+      className="Avatar__StyledDiv-sc-15gaq9e-0 eYnoSj"
     >
-      ASK
+      <span
+        className="Text__StyledText-sc-1974afi-0 cEGWcE"
+      >
+        ASK
+      </span>
     </div>
   </div>
   <button

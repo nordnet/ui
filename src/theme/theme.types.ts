@@ -49,6 +49,8 @@ export type Theme = {
     background: RawColor['gray7'];
     /** gray0 */
     text: RawColor['gray0'];
+    /** white */
+    textLight: RawColor['white'];
     /** gray2 */
     label: RawColor['gray2'];
     /** cta */
