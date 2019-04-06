@@ -3,7 +3,6 @@ import { AreaInfo } from './CssGrid.types';
 
 const minimal = R.reduce(R.min, Infinity);
 const maximal = R.reduce(R.max, -Infinity);
-// f :: (areas, gaps: {row: boolean, col: boolean}) -> { [key: areaName]: { id, rowStart, rowSpan, colStart, colSpan }}
 
 /**
  * Calculate info for areas:

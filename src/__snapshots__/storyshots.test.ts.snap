@@ -3272,7 +3272,7 @@ exports[`Storyshots Atoms/CssGrid CssGrid with different layouts for different s
     }
   >
     <div
-      className="CssGrid__StyledDiv-bu5cxy-0 ijBDBd"
+      className="CssGrid__StyledDiv-bu5cxy-0 jIOgaG"
     >
       <div
         className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa dSufaw"
@@ -3707,6 +3707,67 @@ exports[`Storyshots Atoms/CssGrid CssGrid with different layouts for different s
                                   }
                                 >
                                   3
+                                </span>
+                              </span>
+                              ]
+                            </span>
+                            ,
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                templateRows
+                              </span>
+                            </span>
+                            : 
+                            <span
+                              style={
+                                Object {
+                                  "color": "#666",
+                                }
+                              }
+                            >
+                              [
+                              <span>
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'auto'
+                                </span>
+                              </span>
+                              ,
+                              <span>
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  '1fr'
+                                </span>
+                              </span>
+                              ,
+                              <span>
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  '1fr'
                                 </span>
                               </span>
                               ]

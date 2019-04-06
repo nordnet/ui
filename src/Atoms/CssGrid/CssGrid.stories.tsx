@@ -132,6 +132,7 @@ stories.add('CssGrid with different layouts for different screen sizes', () => (
     ]}
     sm={{
       templateColumns: [3, 6, 3],
+      templateRows: ['auto', '1fr', '1fr'],
       // prettier-ignore
       areas: [
         ['left', 'top', 'sidebar'],
