@@ -1,4 +1,4 @@
-import Avatar from './Atoms/Avatar';
+import Avatar from './Molecules/Avatar';
 import Card from './Atoms/Card';
 import Currency from './Atoms/Currency';
 import Development from './Atoms/Development';
@@ -8,8 +8,8 @@ import Flexbox from './Atoms/Flexbox';
 import Media from './Atoms/Media';
 // import Placeholder from './Atoms/Placeholder';
 import Separator from './Atoms/Separator';
+import Icon from './Atoms/Icon';
 import Text from './Atoms/Text';
-
 import LabeledValue from './Molecules/LabeledValue';
 import Button from './Molecules/Button';
 
@@ -22,6 +22,7 @@ export {
   Card,
   Currency,
   Development,
+  Icon,
   Input,
   CssGrid,
   Flexbox,

@@ -80,6 +80,7 @@ export const createTheme = (config?: ThemeConfig): Theme => {
       positive: rawColor.positive,
       sell: rawColor.negative,
       text: rawColor.gray0,
+      textLight: rawColor.white, // FIXME: to be removed later
       warning: rawColor.index,
     },
     media: {

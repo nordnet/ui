@@ -2,5 +2,5 @@
 import initStoryshots from '@storybook/addon-storyshots';
 
 initStoryshots({
-  /* configuration options */
+  storyNameRegex: /(?!^[Dd]ocumentation$)/,
 });

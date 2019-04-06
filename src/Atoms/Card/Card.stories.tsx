@@ -14,7 +14,7 @@ const StyledContent = styled.div`
   justify-content: center;
 `;
 
-export const Content: React.FC<Props> = ({ children }) => <StyledContent>{children}</StyledContent>;
+const Content: React.FC<Props> = ({ children }) => <StyledContent>{children}</StyledContent>;
 
 stories.add('Basic Card', () => {
   return (

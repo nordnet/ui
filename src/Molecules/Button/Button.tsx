@@ -4,6 +4,7 @@ import Color from 'color';
 import { ButtonComponent, Props } from './Button.types';
 import { Theme } from '../../theme/theme.types';
 import { isUndefined } from '../../common/utils';
+import NormalizedElements from '../../common/NormalizedElements';
 
 const HEIGHT = {
   s: 6,
@@ -50,7 +51,7 @@ const getHeight = (props: ThemedStyledProps<Props, Theme>) => {
   return `${theme.spacing.unit(hugeness)}px`;
 };
 
-const StyledButton = styled.button<Props>`
+const StyledButton = styled(NormalizedElements.Button)<Props>`
   ${p => getBackgroundColor(p)}
   border-radius: 0;
   border: 2px solid ${p => (isSecondary(p.variant) ? p.theme.color.cta : 'transparent')};
@@ -73,3 +74,7 @@ export const Button: ButtonComponent = props => (
     {props.children}
   </StyledButton>
 );
+
+Button.defaultProps = {
+  type: 'button',
+};
