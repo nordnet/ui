@@ -1,31 +1,33 @@
 import Avatar from './Molecules/Avatar';
+import Button from './Molecules/Button';
 import Card from './Atoms/Card';
+import CssGrid from './Atoms/CssGrid';
 import Currency from './Atoms/Currency';
 import Development from './Atoms/Development';
-import CssGrid from './Atoms/CssGrid';
+import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';
+import Icon from './Atoms/Icon';
+import LabeledValue from './Molecules/LabeledValue';
 import Media from './Atoms/Media';
 import Separator from './Atoms/Separator';
-import Icon from './Atoms/Icon';
 import Text from './Atoms/Text';
-import LabeledValue from './Molecules/LabeledValue';
-import Button from './Molecules/Button';
 
 import theme from './theme';
 
 /** Runtime code */
 export {
-  theme,
   Avatar,
+  Button,
   Card,
+  CssGrid,
   Currency,
   Development,
-  Icon,
-  CssGrid,
+  Flag,
   Flexbox,
+  Icon,
+  LabeledValue,
   Media,
   Separator,
   Text,
-  Button,
-  LabeledValue,
+  theme,
 };
