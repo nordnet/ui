@@ -1659,7 +1659,7 @@ exports[`Storyshots Atoms | Separator Separator vertical 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Text Colors 1`] = `
+exports[`Storyshots Atoms | Typography Colors 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
   direction="column"
@@ -1799,7 +1799,7 @@ exports[`Storyshots Atoms | Text Colors 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Text Primary 1`] = `
+exports[`Storyshots Atoms | Typography Primary 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
   direction="column"
@@ -1860,7 +1860,7 @@ exports[`Storyshots Atoms | Text Primary 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Text Secondary 1`] = `
+exports[`Storyshots Atoms | Typography Secondary 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
   direction="column"
@@ -1922,7 +1922,7 @@ exports[`Storyshots Atoms | Text Secondary 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Text Tertiary 1`] = `
+exports[`Storyshots Atoms | Typography Tertiary 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
   direction="column"
@@ -1984,7 +1984,7 @@ exports[`Storyshots Atoms | Text Tertiary 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Text Title1 1`] = `
+exports[`Storyshots Atoms | Typography Title1 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
   direction="column"
@@ -2028,7 +2028,7 @@ exports[`Storyshots Atoms | Text Title1 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Text Title3 1`] = `
+exports[`Storyshots Atoms | Typography Title3 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
   direction="column"
