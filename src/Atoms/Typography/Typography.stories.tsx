@@ -8,7 +8,7 @@ storiesOf('Atoms | Text', module)
   .add('Primary', () => (
     <Display
       items={[
-        { title: 'Primary (as default)', component: <Typography>Primary text</Typography> },
+        { title: 'Primary default', component: <Typography>Primary text</Typography> },
         {
           title: 'Primary with bold text',
           component: (
@@ -58,7 +58,7 @@ storiesOf('Atoms | Text', module)
     <Display
       items={[
         {
-          title: 'Tertiary',
+          title: 'Tertiary Default',
           component: <Typography type="tertiary">Tertiary text</Typography>,
         },
         {
@@ -80,17 +80,41 @@ storiesOf('Atoms | Text', module)
       ]}
     />
   ))
-  .add('Title1', () => <Typography type="title1">Title1 text</Typography>)
-  .add('Title1 with regular text', () => (
-    <Typography type="title1" weight="regular">
-      Title1 text
-    </Typography>
+  .add('Title1', () => (
+    <Display
+      items={[
+        {
+          title: 'Title1 Default',
+          component: <Typography type="title1">Title1 text</Typography>,
+        },
+        {
+          title: 'With regular font weight',
+          component: (
+            <Typography type="title1" weight="regular">
+              Title1 text
+            </Typography>
+          ),
+        },
+      ]}
+    />
   ))
-  .add('Title3', () => <Typography type="title3">Title3 text</Typography>)
-  .add('Title3 with regular text', () => (
-    <Typography type="title3" weight="regular">
-      Title3 text
-    </Typography>
+  .add('Title3', () => (
+    <Display
+      items={[
+        {
+          title: 'Title3 Default',
+          component: <Typography type="title3">Title3 text</Typography>,
+        },
+        {
+          title: 'With regular font weight',
+          component: (
+            <Typography type="title3" weight="regular">
+              Title1 text
+            </Typography>
+          ),
+        },
+      ]}
+    />
   ))
   .add('Colors', () => (
     <Display

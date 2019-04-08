@@ -1,3 +1,4 @@
+import React from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
 import { Theme } from '../../theme/theme.types';
 import { Props } from './Typography.types';
@@ -11,13 +12,13 @@ const WEIGHTS = {
 const SMALL_DEVICE_BP = 'xs';
 
 const getColor = (props: ThemedStyledProps<Props, Theme>) => {
-  const { colorOrColorFn, theme } = props;
+  const { color, theme } = props;
 
-  if (colorOrColorFn && typeof colorOrColorFn === 'function') {
-    return colorOrColorFn(theme);
+  if (color && typeof color === 'function') {
+    return color(theme);
   }
 
-  if (colorOrColorFn === 'inherit') {
+  if (color === 'inherit') {
     return 'inherit';
   }
 
@@ -72,9 +73,19 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
   `;
 };
 
-export const Typography = styled.span<Props>`
+const StyledTypography = styled.span<Props>`
   font-family: 'Nordnet Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     sans-serif;
   color: ${p => getColor(p)};
   ${p => getTypeStyles(p)}
-`;
+` as React.FC<Props>;
+
+export const Typography: React.FC<Props> = (props: Props) => {
+  const { as, className, children, color, type, weight } = props;
+
+  return (
+    <StyledTypography className={className} as={as} color={color} type={type} weight={weight}>
+      {children}
+    </StyledTypography>
+  );
+};
