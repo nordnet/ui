@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { Typography } from '../..';
 import { Display } from '../../common/Display';
 
-storiesOf('Atoms | Text', module)
+storiesOf('Atoms | Typography', module)
   .add('Primary', () => (
     <Display
       items={[
