@@ -12,5 +12,7 @@ const StyledFlag = styled.svg<Props>`
 export const Flag: FlagComponent = props => {
   const Component = flags[props.country.toLowerCase()];
 
-  return Component ? <StyledFlag as={Component} width={props.width} height={props.height} /> : null;
+  return Component ? (
+    <StyledFlag role="img" as={Component} width={props.width} height={props.height} />
+  ) : null;
 };
