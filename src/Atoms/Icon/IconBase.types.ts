@@ -6,7 +6,7 @@ type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; /
 export type StyledIconBaseProps = {
   colorFn?: ColorFn;
   /** unit-based */
-  size?: number;
+  size: number;
 };
 
 export type BaseProps = {
