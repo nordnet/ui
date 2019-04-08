@@ -3,6 +3,7 @@ import styled from 'styled-components';
 // @ts-ignore
 import flags from './flags';
 import { FlagComponent, Props } from './Flag.types';
+import { assert } from '../../common/utils';
 
 const StyledFlag = styled.svg<Props>`
   width: ${p => p.theme.spacing.unit(p.width || 5)}px;
@@ -10,7 +11,8 @@ const StyledFlag = styled.svg<Props>`
 `;
 
 export const Flag: FlagComponent = props => {
-  const Component = flags[props.country.toLowerCase()];
+  assert(Boolean(props.country), 'Flag: You need to supply a country code');
+  const Component = props.country ? flags[props.country.toLowerCase()] : null;
 
   return Component ? (
     <StyledFlag role="img" as={Component} width={props.width} height={props.height} />
