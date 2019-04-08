@@ -4,6 +4,7 @@ import Card from './Atoms/Card';
 import CssGrid from './Atoms/CssGrid';
 import Currency from './Atoms/Currency';
 import Development from './Atoms/Development';
+import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';
 import Icon from './Atoms/Icon';
 import LabeledValue from './Molecules/LabeledValue';
@@ -22,6 +23,7 @@ export {
   CssGrid,
   Currency,
   Development,
+  Flag,
   Flexbox,
   Icon,
   LabeledValue,

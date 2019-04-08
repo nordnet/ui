@@ -1,6 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
+import MD from 'react-markdown';
+import docs from './CssGrid.md';
 
 import { CssGrid as Grid } from '../..';
 
@@ -10,9 +12,22 @@ const StyledContent = styled.div`
   background-color: #eee;
   height: 100%;
 `;
+
+const StyledMarkdownContainer = styled.div`
+  img {
+    display: block;
+    max-width: 600px;
+  }
+`;
+
 const Content = ({ children }: any) => <StyledContent>{children}</StyledContent>;
 
 storiesOf('Atoms | CssGrid', module)
+  .add('Documentation', () => (
+    <StyledMarkdownContainer>
+      <MD source={docs} />
+    </StyledMarkdownContainer>
+  ))
   .add('Simple CssGrid', () => (
     <Grid.Container
       areas={[
