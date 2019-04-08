@@ -4,7 +4,7 @@ import { Text, Card } from '../..';
 import { TitledCardComponent, Props } from './TitledCard.types';
 
 const StyledTitle = styled.div<Props>`
-  margin: ${({ theme, title }) => theme.spacing.unit(5)}px;
+  margin: ${({ theme }) => theme.spacing.unit(5)}px;
 `;
 
 export const TitledCard: TitledCardComponent = props =>
