@@ -3,18 +3,18 @@ import styled from 'styled-components';
 import { InternalProps, StyledIconBaseProps } from './IconBase.types';
 
 const StyledIconBase = styled.svg<StyledIconBaseProps>`
-  user-select: none;
-  width: ${p => p.theme.spacing.unit(p.size)}px;
-  height: ${p => p.theme.spacing.unit(p.size)}px;
-  display: inline-block;
-  fill: currentColor;
-  flex-shrink: 0;
-  color: ${p => (p.colorFn ? p.colorFn(p.theme) : p.theme.color.text)};
-`;
+  ${p => {
+    const size = p.size || 5;
 
-StyledIconBase.defaultProps = {
-  size: 5,
-};
+    return ` user-select: none;
+    width: ${p.theme.spacing.unit(size)}px;
+    height: ${p.theme.spacing.unit(size)}px;
+    display: inline-block;
+    fill: currentColor;
+    flex-shrink: 0;
+    color: ${p.colorFn ? p.colorFn(p.theme) : p.theme.color.text};`;
+  }}
+`;
 
 export const IconBase: React.FC<InternalProps> = (props: InternalProps) => {
   const { className, children, title, size, color } = props;

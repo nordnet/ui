@@ -207,7 +207,7 @@ const StyledDiv = styled.div<Props>`
     styles.unshift(createStyles(props, undefined));
     return styles.join('\n');
   }}
-`;
+` as React.FC<Props>;
 
 export type ItemProps = {
   area: AreaName;

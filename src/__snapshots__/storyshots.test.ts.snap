@@ -661,10 +661,9 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div>
       <svg
         aria-hidden="true"
-        className="IconBase__StyledIconBase-sc-10cbji3-0 glOwBq"
+        className="IconBase__StyledIconBase-sc-10cbji3-0 lnoZLc"
         focusable="false"
         role="presentation"
-        size={5}
         viewBox="0 0 24 24"
       >
         <polygon
@@ -685,10 +684,9 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div>
       <svg
         aria-hidden="true"
-        className="IconBase__StyledIconBase-sc-10cbji3-0 glOwBq"
+        className="IconBase__StyledIconBase-sc-10cbji3-0 lnoZLc"
         focusable="false"
         role="presentation"
-        size={5}
         viewBox="0 0 24 24"
       >
         <polygon
@@ -710,10 +708,9 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div>
       <svg
         aria-hidden="true"
-        className="IconBase__StyledIconBase-sc-10cbji3-0 glOwBq"
+        className="IconBase__StyledIconBase-sc-10cbji3-0 lnoZLc"
         focusable="false"
         role="presentation"
-        size={5}
         viewBox="0 0 24 24"
       >
         <polygon
@@ -728,10 +725,9 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
 exports[`Storyshots Atoms | Icon Default use 1`] = `
 <svg
   aria-hidden="true"
-  className="IconBase__StyledIconBase-sc-10cbji3-0 glOwBq"
+  className="IconBase__StyledIconBase-sc-10cbji3-0 lnoZLc"
   focusable="false"
   role="presentation"
-  size={5}
   viewBox="0 0 24 24"
 >
   <polygon
@@ -743,7 +739,7 @@ exports[`Storyshots Atoms | Icon Default use 1`] = `
 exports[`Storyshots Atoms | Icon Different size and color 1`] = `
 <svg
   aria-hidden="true"
-  className="IconBase__StyledIconBase-sc-10cbji3-0 cFisAB"
+  className="IconBase__StyledIconBase-sc-10cbji3-0 hBhGmd"
   focusable="false"
   role="presentation"
   size={10}
