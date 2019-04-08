@@ -825,8 +825,6 @@ Array [
 ]
 `;
 
-exports[`Storyshots Atoms | Separator Documentation 1`] = `null`;
-
 exports[`Storyshots Atoms | Separator Separator default 1`] = `
 <div
   className="Separatorstories__StyledContainer-sc-12j0h8a-0 ixCTfH"
@@ -1165,138 +1163,6 @@ exports[`Storyshots Atoms | Text Title3 1`] = `
 >
   Title3 text
 </span>
-`;
-
-exports[`Storyshots Display Documentation 1`] = `
-<div
-  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
-  direction="column"
->
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
-    direction="row"
-  >
-    <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
-    >
-      Vertical layout
-    </div>
-    <div>
-      <div
-        className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
-        direction="column"
-      >
-        <div
-          className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
-          direction="row"
-        >
-          <div
-            className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
-          >
-            Title 1
-          </div>
-          <div>
-            <div>
-              Component 1
-            </div>
-          </div>
-        </div>
-        <div
-          className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
-          direction="row"
-        >
-          <div
-            className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
-          >
-            Title 2
-          </div>
-          <div>
-            <div>
-              Component 2
-            </div>
-          </div>
-        </div>
-        <div
-          className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
-          direction="row"
-        >
-          <div
-            className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
-          >
-            Title 3
-          </div>
-          <div>
-            <div>
-              Component 3
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
-    direction="row"
-  >
-    <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
-    >
-      Horizontal layout
-    </div>
-    <div>
-      <div
-        className="Display__StyledFlexDiv-sc-1yo6rmg-0 iahwSN"
-        direction="row"
-      >
-        <div
-          className="Display__StyledFlexDiv-sc-1yo6rmg-0 buAJms"
-          direction="column"
-        >
-          <div
-            className="Display__DivWithBorder-sc-1yo6rmg-1 eVoBs"
-          >
-            Title 1
-          </div>
-          <div>
-            <div>
-              Component 1
-            </div>
-          </div>
-        </div>
-        <div
-          className="Display__StyledFlexDiv-sc-1yo6rmg-0 buAJms"
-          direction="column"
-        >
-          <div
-            className="Display__DivWithBorder-sc-1yo6rmg-1 eVoBs"
-          >
-            Title 2
-          </div>
-          <div>
-            <div>
-              Component 2
-            </div>
-          </div>
-        </div>
-        <div
-          className="Display__StyledFlexDiv-sc-1yo6rmg-0 buAJms"
-          direction="column"
-        >
-          <div
-            className="Display__DivWithBorder-sc-1yo6rmg-1 eVoBs"
-          >
-            Title 3
-          </div>
-          <div>
-            <div>
-              Component 3
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 `;
 
 exports[`Storyshots Molecules | Avatar Basic usage 1`] = `
@@ -2549,8 +2415,6 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
   </div>
 </div>
 `;
-
-exports[`Storyshots Theme Documentation 1`] = `null`;
 
 exports[`Storyshots Theme Screen sizes 1`] = `
 <div
