@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Props } from './Avatar.types';
 
-import Text from '../../Atoms/Text';
+import Typography from '../../Atoms/Typography';
 
 const StyledDiv = styled.div`
   background-color: ${p => p.theme.color.backgroundDark};
@@ -16,6 +16,8 @@ const StyledDiv = styled.div`
 // eslint-disable-next-line react/prop-types
 export const Avatar: React.FunctionComponent<Props> = ({ children }) => (
   <StyledDiv>
-    <Text.Tertiary color={t => t.color.textLight}>{children}</Text.Tertiary>
+    <Typography type="tertiary" color={t => t.color.textLight}>
+      {children}
+    </Typography>
   </StyledDiv>
 );
