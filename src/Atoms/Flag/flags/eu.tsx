@@ -29,6 +29,7 @@ export default function FlagEu({ ...rest }) {
         </g>
         <use height="100%" width="100%" xlinkHref="#eu_e" transform="scale(-1 1)" />
       </g>
+      <title>EU</title>
     </svg>
   );
 }

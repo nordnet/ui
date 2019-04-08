@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function FlagCa({ ...rest }) {
   return (
-    <svg aria-hidden="true" focusable="false" {...rest}>
+    <svg focusable="false" {...rest}>
       <g fillOpacity="1" transform="translate(74.118) scale(.9375)">
         <path fill="#fff" d="M81.137 0h362.276v512H81.137z" />
         <path
@@ -19,6 +19,7 @@ export default function FlagCa({ ...rest }) {
           2.387-24.98-4.823-37.873-7.637 4.404 15.895 18.176 42.302 9.46 50.957z"
         />
       </g>
+      <title>Canada</title>
     </svg>
   );
 }

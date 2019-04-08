@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function FlagUs({ ...rest }) {
   return (
-    <svg aria-hidden="true" focusable="false" {...rest}>
+    <svg focusable="false" {...rest}>
       <g fillRule="evenodd" transform="scale(.9375)">
         <g strokeWidth="1pt">
           <g fill="#bd3d44">
@@ -135,6 +135,7 @@ export default function FlagUs({ ...rest }) {
           </g>
         </g>
       </g>
+      <title>United States of America</title>
     </svg>
   );
 }

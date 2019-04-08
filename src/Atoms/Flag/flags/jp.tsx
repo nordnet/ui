@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function FlagJp({ ...rest }) {
   return (
-    <svg aria-hidden="true" focusable="false" {...rest}>
+    <svg focusable="false" {...rest}>
       <defs>
         <clipPath id="jp_a">
           <path fillOpacity=".67" d="M-88.001 32h640v480h-640z" />
@@ -24,6 +24,7 @@ export default function FlagJp({ ...rest }) {
           fill="#d30000"
         />
       </g>
+      <title>Japan</title>
     </svg>
   );
 }

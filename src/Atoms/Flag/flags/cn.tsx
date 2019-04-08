@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function FlagCn({ ...rest }) {
   return (
-    <svg aria-hidden="true" focusable="false" {...rest}>
+    <svg focusable="false" {...rest}>
       <defs>
         <path id="cn_a" fill="#ffde00" d="M-.588.81L0-1 .588.81-.952-.31H.952z" />
       </defs>
@@ -37,6 +37,7 @@ export default function FlagCn({ ...rest }) {
         width="30"
         height="20"
       />
+      <title>China</title>
     </svg>
   );
 }
