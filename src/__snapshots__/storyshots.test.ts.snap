@@ -558,11 +558,11 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        aria-hidden="true"
         className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
         fill="#28ff09"
         fillOpacity="14.118"
         focusable="false"
+        role="img"
         viewBox="0 0 640 480"
       >
         <g
@@ -578,6 +578,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
             fill="#bf0a30"
           />
         </g>
+        <title>
+          Canada
+        </title>
       </svg>
     </div>
   </div>
@@ -592,9 +595,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        aria-hidden="true"
         className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
         focusable="false"
+        role="img"
         viewBox="0 0 640 480"
       >
         <g
@@ -613,6 +616,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
             fill="#d00"
           />
         </g>
+        <title>
+          Germany
+        </title>
       </svg>
     </div>
   </div>
@@ -628,6 +634,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     <div>
       <svg
         className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        role="img"
         viewBox="0 0 640 480"
       >
         <defs>
@@ -725,6 +732,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
             xlinkHref="#eu_e"
           />
         </g>
+        <title>
+          EU
+        </title>
       </svg>
     </div>
   </div>
@@ -739,9 +749,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        aria-hidden="true"
         className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
         focusable="false"
+        role="img"
         viewBox="0 0 640 480"
       >
         <g
@@ -761,6 +771,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
             fill="#f31830"
           />
         </g>
+        <title>
+          France
+        </title>
       </svg>
     </div>
   </div>
@@ -775,9 +788,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        aria-hidden="true"
         className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
         focusable="false"
+        role="img"
         viewBox="0 0 640 480"
       >
         <g
@@ -797,6 +810,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
             fill="#d52b1e"
           />
         </g>
+        <title>
+          Russia
+        </title>
       </svg>
     </div>
   </div>
@@ -811,9 +827,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        aria-hidden="true"
         className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
         focusable="false"
+        role="img"
         viewBox="0 0 640 480"
       >
         <defs>
@@ -851,6 +867,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
             />
           </g>
         </g>
+        <title>
+          Great Britain
+        </title>
       </svg>
     </div>
   </div>
@@ -865,9 +884,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        aria-hidden="true"
         className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
         focusable="false"
+        role="img"
         viewBox="0 0 640 480"
       >
         <path
@@ -882,6 +901,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
           d="M0 205.714h640.1v68.57H0z"
           fill="#fff"
         />
+        <title>
+          Denmark
+        </title>
       </svg>
     </div>
   </div>
@@ -896,9 +918,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        aria-hidden="true"
         className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
         focusable="false"
+        role="img"
         viewBox="0 0 640 480"
       >
         <path
@@ -913,6 +935,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
           d="M175.455 0h130.909v480H175.455z"
           fill="#003580"
         />
+        <title>
+          Finland
+        </title>
       </svg>
     </div>
   </div>
@@ -927,9 +952,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        aria-hidden="true"
         className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
         focusable="false"
+        role="img"
         viewBox="0 0 640 480"
       >
         <path
@@ -952,6 +977,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
           d="M0 210h640v60H0z"
           fill="#002868"
         />
+        <title>
+          Japan
+        </title>
       </svg>
     </div>
   </div>
@@ -966,9 +994,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        aria-hidden="true"
         className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
         focusable="false"
+        role="img"
         viewBox="0 0 640 480"
       >
         <g
@@ -1000,6 +1028,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
             />
           </g>
         </g>
+        <title>
+          Sweden
+        </title>
       </svg>
     </div>
   </div>
@@ -1014,9 +1045,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        aria-hidden="true"
         className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
         focusable="false"
+        role="img"
         viewBox="0 0 640 480"
       >
         <g
@@ -1093,6 +1124,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
             </g>
           </g>
         </g>
+        <title>
+          United States of America
+        </title>
       </svg>
     </div>
   </div>
@@ -1107,9 +1141,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        aria-hidden="true"
         className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
         focusable="false"
+        role="img"
         viewBox="0 0 640 480"
       >
         <defs>
@@ -1141,6 +1175,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
             transform="translate(-168.44 8.618) scale(.76554)"
           />
         </g>
+        <title>
+          Japan
+        </title>
       </svg>
     </div>
   </div>
@@ -1155,9 +1192,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        aria-hidden="true"
         className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
         focusable="false"
+        role="img"
         viewBox="0 0 640 480"
       >
         <defs>
@@ -1201,6 +1238,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
           width="30"
           xlinkHref="#cn_a"
         />
+        <title>
+          China
+        </title>
       </svg>
     </div>
   </div>
@@ -1209,9 +1249,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
 
 exports[`Storyshots Atoms | Flag Default use 1`] = `
 <svg
-  aria-hidden="true"
   className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
   focusable="false"
+  role="img"
   viewBox="0 0 640 480"
 >
   <g
@@ -1243,15 +1283,18 @@ exports[`Storyshots Atoms | Flag Default use 1`] = `
       />
     </g>
   </g>
+  <title>
+    Sweden
+  </title>
 </svg>
 `;
 
 exports[`Storyshots Atoms | Flag Different size  1`] = `
 <svg
-  aria-hidden="true"
   className="Flag__StyledFlag-sc-14ojzvi-0 kcbqVL"
   focusable="false"
   height={10}
+  role="img"
   viewBox="0 0 640 480"
   width={10}
 >
@@ -1284,6 +1327,9 @@ exports[`Storyshots Atoms | Flag Different size  1`] = `
       />
     </g>
   </g>
+  <title>
+    Sweden
+  </title>
 </svg>
 `;
 
