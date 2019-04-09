@@ -4,4 +4,4 @@ export type Props = {
   title?: string;
 };
 
-export type TitledCardComponent = React.FunctionComponent<CardProps & Props>;
+export type CardWithTitleComponent = React.FunctionComponent<CardProps & Props>;

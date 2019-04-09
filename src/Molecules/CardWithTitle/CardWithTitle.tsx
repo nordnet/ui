@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
 import { Text, Card } from '../..';
-import { TitledCardComponent, Props } from './TitledCard.types';
+import { CardWithTitleComponent, Props } from './CardWithTitle.types';
 
 const StyledTitle = styled.div<Props>`
   margin: ${({ theme }) => theme.spacing.unit(5)}px;
@@ -10,7 +10,7 @@ const StyledTitle = styled.div<Props>`
 
 const omitProps = R.omit(['children', 'title']);
 
-export const TitledCard: TitledCardComponent = props =>
+export const CardWithTitle: CardWithTitleComponent = props =>
   props.title ? (
     <Card {...omitProps(props)}>
       <StyledTitle>
@@ -21,4 +21,4 @@ export const TitledCard: TitledCardComponent = props =>
   ) : (
     <Card {...omitProps(props)}>{props.children}</Card>
   );
-TitledCard.displayName = 'TitledCard';
+CardWithTitle.displayName = 'CardWithTitle';

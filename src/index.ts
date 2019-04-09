@@ -1,6 +1,7 @@
 import Avatar from './Molecules/Avatar';
 import Button from './Molecules/Button';
 import Card from './Atoms/Card';
+import CardWithTitle from './Molecules/CardWithTitle';
 import CssGrid from './Atoms/CssGrid';
 import Currency from './Atoms/Currency';
 import Development from './Atoms/Development';
@@ -11,7 +12,6 @@ import LabeledValue from './Molecules/LabeledValue';
 import Media from './Atoms/Media';
 import Separator from './Atoms/Separator';
 import Text from './Atoms/Text';
-import TitledCard from './Molecules/TitledCard';
 
 import theme from './theme';
 
@@ -20,6 +20,7 @@ export {
   Avatar,
   Button,
   Card,
+  CardWithTitle,
   CssGrid,
   Currency,
   Development,
@@ -31,5 +32,4 @@ export {
   Separator,
   Text,
   theme,
-  TitledCard,
 };
