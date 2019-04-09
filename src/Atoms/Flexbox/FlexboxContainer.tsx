@@ -48,6 +48,12 @@ export const Container = (props: Props) => {
   return (
     <StyledFlexbox {...props}>
       {React.Children.map(props.children, (child: any) => {
+        /** the check below is needed for rendering conditional Flexbox Items, e.g
+         * <Flexbox.Container>
+         *   {showItem && <Flexbox.Item />}
+         *   <Flexbox.Item />
+         *  </Flexbox.Container>
+         */
         if (!child) {
           return child;
         }
