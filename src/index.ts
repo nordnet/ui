@@ -10,6 +10,7 @@ import Icon from './Atoms/Icon';
 import LabeledValue from './Molecules/LabeledValue';
 import Media from './Atoms/Media';
 import Separator from './Atoms/Separator';
+import Spinner from './Atoms/Spinner';
 import Text from './Atoms/Text';
 
 import theme from './theme';
@@ -28,6 +29,7 @@ export {
   LabeledValue,
   Media,
   Separator,
+  Spinner,
   Text,
   theme,
 };
