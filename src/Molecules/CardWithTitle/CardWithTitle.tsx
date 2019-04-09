@@ -5,7 +5,7 @@ import { Text, Card } from '../..';
 import { CardWithTitleComponent, Props } from './CardWithTitle.types';
 
 const StyledTitle = styled.div<Props>`
-  margin: ${({ theme }) => theme.spacing.unit(5)}px;
+  padding: ${({ theme }) => theme.spacing.unit(5)}px;
 `;
 
 const omitProps = R.omit(['children', 'title']);
