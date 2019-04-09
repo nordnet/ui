@@ -79,6 +79,8 @@ export const createTheme = (config?: ThemeConfig): Theme => {
       negative: rawColor.negative,
       positive: rawColor.positive,
       sell: rawColor.negative,
+      spinnerBlack: rawColor.black,
+      spinnerWhite: rawColor.white,
       text: rawColor.gray0,
       textLight: rawColor.white, // FIXME: to be removed later
       warning: rawColor.index,
