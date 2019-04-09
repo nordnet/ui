@@ -56,25 +56,25 @@ const StyledSpinner = styled.svg<Props>`
 `;
 
 const StyledSpan = styled.span<Props>`
-${p => {
-  const identifier = Math.round(1000 * Math.random());
-  return `@keyframes spinner-${identifier} {
-    from {
-      transform: rotate(0deg);
+  ${() => {
+    const identifier = Math.round(1000 * Math.random());
+    return `@keyframes spinner-${identifier} {
+      from {
+        transform: rotate(0deg);
+      };
+      to {
+        transform: rotate(360deg);
+      };
     };
-    to {
-      transform: rotate(360deg);
-    };
+    animation: spinner-${identifier} 1s linear infinite;
+    `;
+  }}
+  width:${p => p.size}px;
+  height:${p => p.size}px;
+  &, & *, & *::after, & *::after: {
+    box-sizing: border-box,
   };
-  animation: spinner-${identifier} 1s linear infinite;
-  `;
-}}
-width:${p => p.size}px;
-height:${p => p.size}px;
-&, & *, & *::after, & *::after: {
-  box-sizing: border-box,
-};
-display: inline-block;
+  display: inline-block;
 `;
 
 const RawSpinner: React.FC<PropsWithTheme> = props => {
