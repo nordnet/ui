@@ -24,4 +24,9 @@ storiesOf('Molecules | TitledCard', module)
     <TitledCard>
       <Content>A TitledCard without title</Content>
     </TitledCard>
+  ))
+  .add('TitledCard as article', () => (
+    <TitledCard as="article">
+      <Content>A TitledCard as a article containing content</Content>
+    </TitledCard>
   ));
