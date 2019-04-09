@@ -1393,6 +1393,50 @@ exports[`Storyshots Atoms | Flexbox Flexbox default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Atoms | Flexbox Flexbox with conditionally hidden flex item 1`] = `
+<div
+  className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 kvhUqX"
+>
+  <div
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 eSGGAY"
+    order={1}
+  >
+    <div
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 iVuNfs"
+    >
+      Col 2
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | Flexbox Flexbox with conditionally visible flex item 1`] = `
+<div
+  className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 kvhUqX"
+>
+  <div
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 joWGZP"
+    order={2}
+  >
+    <div
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 iVuNfs"
+    >
+      Col 1
+    </div>
+  </div>
+  <div
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 eSGGAY"
+    order={1}
+  >
+    <div
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 iVuNfs"
+    >
+      Col 2
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Atoms | Flexbox Flexbox with custom gutter 1`] = `
 <div
   className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 gNrjJB"
