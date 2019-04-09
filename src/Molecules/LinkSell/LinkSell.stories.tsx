@@ -1,13 +1,27 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { BrowserRouter } from 'react-router-dom';
+import { Typography } from '../..';
 import LinkSell from '.';
 
-const stories = storiesOf('Molecules | LinkSell', module);
-
-stories.add('LinkSell', () => {
-  return (
-    <>
-      <LinkSell />
-    </>
-  );
-});
+storiesOf('Molecules | LinkSell', module)
+  .add('LinkSell', () => {
+    return (
+      <BrowserRouter>
+        <Typography type="primary">
+          <LinkSell to="somewhere">Sell</LinkSell>
+        </Typography>
+      </BrowserRouter>
+    );
+  })
+  .add('LinkSell disabled', () => {
+    return (
+      <BrowserRouter>
+        <Typography type="primary">
+          <LinkSell disabled to="somewhere">
+            Sell
+          </LinkSell>
+        </Typography>
+      </BrowserRouter>
+    );
+  });

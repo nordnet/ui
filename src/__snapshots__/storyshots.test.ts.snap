@@ -2501,48 +2501,96 @@ exports[`Storyshots Molecules | LabeledValue LabeledValue with positive developm
 `;
 
 exports[`Storyshots Molecules | Link Default usage 1`] = `
-<a
-  className="Link__StyledLink-apj04t-0 dJiWQG"
-  href="/startpage"
-  onClick={[Function]}
+<span
+  className="Typography__StyledTypography-sc-10mju41-0 hdQeDL"
+  color={[Function]}
+  type="secondary"
 >
-  <span
-    className="Typography__StyledTypography-sc-10mju41-0 hdQeDL"
-    color={[Function]}
-    type="secondary"
+  <a
+    className="Link__StyledLink-apj04t-0 dJiWQG"
+    href="/startpage"
+    onClick={[Function]}
   >
     Link
-  </span>
-</a>
+  </a>
+</span>
 `;
 
 exports[`Storyshots Molecules | Link Link with _blank target 1`] = `
-<a
-  className="Link__StyledLink-apj04t-0 dJiWQG"
-  href="/www.google.com"
-  onClick={[Function]}
-  target="_blank"
+<span
+  className="Typography__StyledTypography-sc-10mju41-0 hdQeDL"
+  color={[Function]}
+  type="secondary"
 >
-  <span
-    className="Typography__StyledTypography-sc-10mju41-0 hdQeDL"
-    color={[Function]}
-    type="secondary"
+  <a
+    className="Link__StyledLink-apj04t-0 dJiWQG"
+    href="/www.google.com"
+    onClick={[Function]}
+    target="_blank"
   >
     Link
-  </span>
-</a>
+  </a>
+</span>
 `;
 
 exports[`Storyshots Molecules | LinkBuy LinkBuy 1`] = `
-<div>
-  This is a buy link
-</div>
+<span
+  className="Typography__StyledTypography-sc-10mju41-0 fGqLJg"
+  type="primary"
+>
+  <a
+    className="LinkBuy__StyledLink-sc-1qysrjt-0 bbQcnL Link__StyledLink-apj04t-0 dJiWQG"
+    href="/somewhere"
+    onClick={[Function]}
+  >
+    Buy
+  </a>
+</span>
+`;
+
+exports[`Storyshots Molecules | LinkBuy LinkBuy disabled 1`] = `
+<span
+  className="Typography__StyledTypography-sc-10mju41-0 fGqLJg"
+  type="primary"
+>
+  <span
+    className="LinkBuy__StyledLink-sc-1qysrjt-0 keeRlZ"
+    disabled={true}
+    to="somewhere"
+  >
+    Buy
+  </span>
+</span>
 `;
 
 exports[`Storyshots Molecules | LinkSell LinkSell 1`] = `
-<div>
-  This is a sell link
-</div>
+<span
+  className="Typography__StyledTypography-sc-10mju41-0 fGqLJg"
+  type="primary"
+>
+  <a
+    className="LinkSell__StyledLink-c5ecjk-0 jIMCVt Link__StyledLink-apj04t-0 dJiWQG"
+    href="/somewhere"
+    onClick={[Function]}
+  >
+    Sell
+  </a>
+</span>
+`;
+
+exports[`Storyshots Molecules | LinkSell LinkSell disabled 1`] = `
+<span
+  className="Typography__StyledTypography-sc-10mju41-0 fGqLJg"
+  type="primary"
+>
+  <span
+    className="LinkSell__StyledLink-c5ecjk-0 qIUNG"
+    disabled={true}
+    to="somewhere"
+  >
+    Sell
+  </span>
+</span>
 `;
 
 exports[`Storyshots Theme Colors (palette) 1`] = `

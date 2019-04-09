@@ -3,6 +3,7 @@ import { Props as LinkProps } from '../Link/Link.types';
 
 export type Props = {
   disabled?: boolean;
+  as?: string;
 };
 
-export type LinkBuy = React.FunctionComponent<LinkProps & Props>;
+export type LinkBuyComponent = React.FunctionComponent<LinkProps & Props>;
