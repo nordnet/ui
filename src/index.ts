@@ -8,6 +8,9 @@ import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';
 import Icon from './Atoms/Icon';
 import LabeledValue from './Molecules/LabeledValue';
+import Link from './Molecules/Link';
+import LinkBuy from './Molecules/LinkBuy';
+import LinkSell from './Molecules/LinkSell';
 import Media from './Atoms/Media';
 import Separator from './Atoms/Separator';
 import Text from './Atoms/Text';
@@ -26,6 +29,9 @@ export {
   Flexbox,
   Icon,
   LabeledValue,
+  Link,
+  LinkBuy,
+  LinkSell,
   Media,
   Separator,
   Text,

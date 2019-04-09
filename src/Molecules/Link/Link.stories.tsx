@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { BrowserRouter } from 'react-router-dom';
-import { Link } from './Link';
+import { Link } from '../..';
 import Text from '../../Atoms/Text';
 
 storiesOf('Molecules | Link', module)
