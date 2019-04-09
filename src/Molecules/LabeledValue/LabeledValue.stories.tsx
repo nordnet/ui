@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import LabeledValue from './index';
 import Currency from '../../Atoms/Currency';
-import Text from '../../Atoms/Text';
+import Typography from '../../Atoms/Typography';
 import Development from '../../Atoms/Development';
 
 const StyledChildsContainer = styled.div`
@@ -23,7 +23,7 @@ storiesOf('Molecules | LabeledValue', module)
   ))
   .add('LabeledValue title1', () => (
     <LabeledValue label="Holdings (SEK)">
-      <Text.Title1>4713119</Text.Title1>
+      <Typography type="title1">4713119</Typography>
     </LabeledValue>
   ))
   .add('LabeledValue with positive development and currency', () => (

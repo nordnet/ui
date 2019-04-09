@@ -17,7 +17,7 @@ const StyledIconBase = styled.svg<StyledIconBaseProps>`
 `;
 
 export const IconBase: React.FC<InternalProps> = (props: InternalProps) => {
-  const { className, children, title, size, color } = props;
+  const { className, children, title, size = 5, color } = props;
 
   return (
     <StyledIconBase

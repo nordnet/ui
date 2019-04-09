@@ -13,7 +13,7 @@ import LinkBuy from './Molecules/LinkBuy';
 import LinkSell from './Molecules/LinkSell';
 import Media from './Atoms/Media';
 import Separator from './Atoms/Separator';
-import Text from './Atoms/Text';
+import Typography from './Atoms/Typography';
 
 import theme from './theme';
 
@@ -34,6 +34,6 @@ export {
   LinkSell,
   Media,
   Separator,
-  Text,
   theme,
+  Typography,
 };

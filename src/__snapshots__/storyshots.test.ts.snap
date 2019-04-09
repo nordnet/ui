@@ -306,7 +306,8 @@ exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
 
 exports[`Storyshots Atoms | Currency Primary default 1`] = `
 <span
-  className="Text__StyledText-sc-1974afi-0 cmCWWJ"
+  className="Typography__StyledTypography-sc-10mju41-0 fGqLJg"
+  type="primary"
 >
   SEK 234,234.00
 </span>
@@ -314,7 +315,8 @@ exports[`Storyshots Atoms | Currency Primary default 1`] = `
 
 exports[`Storyshots Atoms | Currency Secondary default 1`] = `
 <span
-  className="Text__StyledText-sc-1974afi-0 laXMaY"
+  className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+  type="secondary"
 >
   SEK 234,234.00
 </span>
@@ -322,7 +324,8 @@ exports[`Storyshots Atoms | Currency Secondary default 1`] = `
 
 exports[`Storyshots Atoms | Currency Tertiary default 1`] = `
 <span
-  className="Text__StyledText-sc-1974afi-0 kBKleW"
+  className="Typography__StyledTypography-sc-10mju41-0 gLQdVI"
+  type="tertiary"
 >
   SEK 234,234.00
 </span>
@@ -330,7 +333,8 @@ exports[`Storyshots Atoms | Currency Tertiary default 1`] = `
 
 exports[`Storyshots Atoms | Currency Title1 default 1`] = `
 <span
-  className="Text__StyledText-sc-1974afi-0 iUYKst"
+  className="Typography__StyledTypography-sc-10mju41-0 deOBlG"
+  type="title1"
 >
   SEK 234,234.00
 </span>
@@ -338,7 +342,8 @@ exports[`Storyshots Atoms | Currency Title1 default 1`] = `
 
 exports[`Storyshots Atoms | Currency Title3 default 1`] = `
 <span
-  className="Text__StyledText-sc-1974afi-0 joblfr"
+  className="Typography__StyledTypography-sc-10mju41-0 boZbTA"
+  type="title3"
 >
   SEK 234,234.00
 </span>
@@ -360,7 +365,9 @@ exports[`Storyshots Atoms | Development Primary 1`] = `
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 gcIsAz"
+        className="Typography__StyledTypography-sc-10mju41-0 kGihn"
+        color={[Function]}
+        type="primary"
       >
         ▲
         +
@@ -380,7 +387,9 @@ exports[`Storyshots Atoms | Development Primary 1`] = `
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 cmCWWJ"
+        className="Typography__StyledTypography-sc-10mju41-0 fGqLJg"
+        color={[Function]}
+        type="primary"
       >
         0
         0
@@ -399,7 +408,9 @@ exports[`Storyshots Atoms | Development Primary 1`] = `
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 hCpHGw"
+        className="Typography__StyledTypography-sc-10mju41-0 bQPSiO"
+        color={[Function]}
+        type="primary"
       >
         ▼
         -2.1
@@ -426,7 +437,9 @@ exports[`Storyshots Atoms | Development Secondary 1`] = `
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 bmOtmq"
+        className="Typography__StyledTypography-sc-10mju41-0 BGxyT"
+        color={[Function]}
+        type="secondary"
       >
         ▲
         +
@@ -446,7 +459,9 @@ exports[`Storyshots Atoms | Development Secondary 1`] = `
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 laXMaY"
+        className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+        color={[Function]}
+        type="secondary"
       >
         0
         0
@@ -465,7 +480,9 @@ exports[`Storyshots Atoms | Development Secondary 1`] = `
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 jWluYu"
+        className="Typography__StyledTypography-sc-10mju41-0 geSxHq"
+        color={[Function]}
+        type="secondary"
       >
         ▼
         -2.1
@@ -492,7 +509,9 @@ exports[`Storyshots Atoms | Development Tertiary 1`] = `
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 ekeaEF"
+        className="Typography__StyledTypography-sc-10mju41-0 jVSpeE"
+        color={[Function]}
+        type="tertiary"
       >
         ▲
         +
@@ -512,7 +531,9 @@ exports[`Storyshots Atoms | Development Tertiary 1`] = `
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 kBKleW"
+        className="Typography__StyledTypography-sc-10mju41-0 gLQdVI"
+        color={[Function]}
+        type="tertiary"
       >
         0
         0
@@ -531,7 +552,9 @@ exports[`Storyshots Atoms | Development Tertiary 1`] = `
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 eumSjM"
+        className="Typography__StyledTypography-sc-10mju41-0 eLEVFp"
+        color={[Function]}
+        type="tertiary"
       >
         ▼
         -2.1
@@ -1455,6 +1478,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
         className="IconBase__StyledIconBase-sc-10cbji3-0 lnoZLc"
         focusable="false"
         role="presentation"
+        size={5}
         viewBox="0 0 24 24"
       >
         <polygon
@@ -1478,6 +1502,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
         className="IconBase__StyledIconBase-sc-10cbji3-0 lnoZLc"
         focusable="false"
         role="presentation"
+        size={5}
         viewBox="0 0 24 24"
       >
         <polygon
@@ -1502,6 +1527,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
         className="IconBase__StyledIconBase-sc-10cbji3-0 lnoZLc"
         focusable="false"
         role="presentation"
+        size={5}
         viewBox="0 0 24 24"
       >
         <polygon
@@ -1519,6 +1545,7 @@ exports[`Storyshots Atoms | Icon Default use 1`] = `
   className="IconBase__StyledIconBase-sc-10cbji3-0 lnoZLc"
   focusable="false"
   role="presentation"
+  size={5}
   viewBox="0 0 24 24"
 >
   <polygon
@@ -1636,7 +1663,7 @@ exports[`Storyshots Atoms | Separator Separator vertical 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Text Colors 1`] = `
+exports[`Storyshots Atoms | Typography Colors 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
   direction="column"
@@ -1652,7 +1679,8 @@ exports[`Storyshots Atoms | Text Colors 1`] = `
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 cmCWWJ"
+        className="Typography__StyledTypography-sc-10mju41-0 fGqLJg"
+        type="primary"
       >
         Default
       </span>
@@ -1669,7 +1697,9 @@ exports[`Storyshots Atoms | Text Colors 1`] = `
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 cmCWWJ"
+        className="Typography__StyledTypography-sc-10mju41-0 fGqLJg"
+        color={[Function]}
+        type="primary"
       >
         Text
       </span>
@@ -1686,7 +1716,9 @@ exports[`Storyshots Atoms | Text Colors 1`] = `
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 gcIsAz"
+        className="Typography__StyledTypography-sc-10mju41-0 kGihn"
+        color={[Function]}
+        type="primary"
       >
         Positive
       </span>
@@ -1703,7 +1735,9 @@ exports[`Storyshots Atoms | Text Colors 1`] = `
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 hCpHGw"
+        className="Typography__StyledTypography-sc-10mju41-0 bQPSiO"
+        color={[Function]}
+        type="primary"
       >
         Negative
       </span>
@@ -1720,7 +1754,9 @@ exports[`Storyshots Atoms | Text Colors 1`] = `
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 kLDCRD"
+        className="Typography__StyledTypography-sc-10mju41-0 BXjDV"
+        color={[Function]}
+        type="primary"
       >
         Warning
       </span>
@@ -1737,7 +1773,9 @@ exports[`Storyshots Atoms | Text Colors 1`] = `
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 eEIqHm"
+        className="Typography__StyledTypography-sc-10mju41-0 esabza"
+        color={[Function]}
+        type="primary"
       >
         CTA
       </span>
@@ -1754,7 +1792,9 @@ exports[`Storyshots Atoms | Text Colors 1`] = `
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 foWpFZ"
+        className="Typography__StyledTypography-sc-10mju41-0 hELvKD"
+        color={[Function]}
+        type="primary"
       >
         Label
       </span>
@@ -1763,7 +1803,7 @@ exports[`Storyshots Atoms | Text Colors 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Text Primary 1`] = `
+exports[`Storyshots Atoms | Typography Primary 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
   direction="column"
@@ -1775,11 +1815,11 @@ exports[`Storyshots Atoms | Text Primary 1`] = `
     <div
       className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Primary text
+      Primary default
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 cmCWWJ"
+        className="Typography__StyledTypography-sc-10mju41-0 fGqLJg"
       >
         Primary text
       </span>
@@ -1792,11 +1832,12 @@ exports[`Storyshots Atoms | Text Primary 1`] = `
     <div
       className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Primary bold text
+      Primary with bold text
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 cHZfwv"
+        className="Typography__StyledTypography-sc-10mju41-0 gDvSgD"
+        type="primary"
       >
         Primary bold text
       </span>
@@ -1809,11 +1850,12 @@ exports[`Storyshots Atoms | Text Primary 1`] = `
     <div
       className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Primary extrabold text
+      Primary with extrabold text
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 bnIaaO"
+        className="Typography__StyledTypography-sc-10mju41-0 hbuDVz"
+        type="primary"
       >
         Primary extrabold text
       </span>
@@ -1822,7 +1864,7 @@ exports[`Storyshots Atoms | Text Primary 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Text Secondary 1`] = `
+exports[`Storyshots Atoms | Typography Secondary 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
   direction="column"
@@ -1834,11 +1876,12 @@ exports[`Storyshots Atoms | Text Secondary 1`] = `
     <div
       className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Secondary text
+      Secondary
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 laXMaY"
+        className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+        type="secondary"
       >
         Secondary text
       </span>
@@ -1851,11 +1894,12 @@ exports[`Storyshots Atoms | Text Secondary 1`] = `
     <div
       className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Secondary bold text
+      Secondary with bold text
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 gHlEVt"
+        className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
+        type="secondary"
       >
         Secondary bold text
       </span>
@@ -1868,11 +1912,12 @@ exports[`Storyshots Atoms | Text Secondary 1`] = `
     <div
       className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Secondary extrabold text
+      Secondary with extrabold text
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 iXItug"
+        className="Typography__StyledTypography-sc-10mju41-0 hqSOEV"
+        type="secondary"
       >
         Secondary extrabold text
       </span>
@@ -1881,7 +1926,7 @@ exports[`Storyshots Atoms | Text Secondary 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Text Tertiary 1`] = `
+exports[`Storyshots Atoms | Typography Tertiary 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
   direction="column"
@@ -1893,11 +1938,12 @@ exports[`Storyshots Atoms | Text Tertiary 1`] = `
     <div
       className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Tertiary text
+      Tertiary Default
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 kBKleW"
+        className="Typography__StyledTypography-sc-10mju41-0 gLQdVI"
+        type="tertiary"
       >
         Tertiary text
       </span>
@@ -1910,11 +1956,12 @@ exports[`Storyshots Atoms | Text Tertiary 1`] = `
     <div
       className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Tertiary bold text
+      Tertiary with bold text
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 lnwQxH"
+        className="Typography__StyledTypography-sc-10mju41-0 cGGRyD"
+        type="tertiary"
       >
         Tertiary bold text
       </span>
@@ -1931,7 +1978,8 @@ exports[`Storyshots Atoms | Text Tertiary 1`] = `
     </div>
     <div>
       <span
-        className="Text__StyledText-sc-1974afi-0 bjBurG"
+        className="Typography__StyledTypography-sc-10mju41-0 kxUlWk"
+        type="tertiary"
       >
         Tertiary extrabold text
       </span>
@@ -1940,20 +1988,92 @@ exports[`Storyshots Atoms | Text Tertiary 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Text Title1 1`] = `
-<span
-  className="Text__StyledText-sc-1974afi-0 iUYKst"
+exports[`Storyshots Atoms | Typography Title1 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
 >
-  Title1 text
-</span>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Title1 Default
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 deOBlG"
+        type="title1"
+      >
+        Title1 text
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      With regular font weight
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 bxWGPl"
+        type="title1"
+      >
+        Title1 text
+      </span>
+    </div>
+  </div>
+</div>
 `;
 
-exports[`Storyshots Atoms | Text Title3 1`] = `
-<span
-  className="Text__StyledText-sc-1974afi-0 joblfr"
+exports[`Storyshots Atoms | Typography Title3 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
 >
-  Title3 text
-</span>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Title3 Default
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 boZbTA"
+        type="title3"
+      >
+        Title3 text
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      With regular font weight
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 jZrWlk"
+        type="title3"
+      >
+        Title1 text
+      </span>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Molecules | Avatar Basic usage 1`] = `
@@ -1961,7 +2081,9 @@ exports[`Storyshots Molecules | Avatar Basic usage 1`] = `
   className="Avatar__StyledDiv-a8mb4w-0 igAJTE"
 >
   <span
-    className="Text__StyledText-sc-1974afi-0 cEGWcE"
+    className="Typography__StyledTypography-sc-10mju41-0 fGPrsL"
+    color={[Function]}
+    type="tertiary"
   >
     ASK
   </span>
@@ -1990,7 +2112,9 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
         type="button"
       >
         <span
-          className="Text__StyledText-sc-1974afi-0 jVjxzY"
+          className="Typography__StyledTypography-sc-10mju41-0 exYysW"
+          color="inherit"
+          type="secondary"
         >
           Small
         </span>
@@ -2014,7 +2138,9 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
         type="button"
       >
         <span
-          className="Text__StyledText-sc-1974afi-0 jVjxzY"
+          className="Typography__StyledTypography-sc-10mju41-0 exYysW"
+          color="inherit"
+          type="secondary"
         >
           Medium
         </span>
@@ -2038,7 +2164,9 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
         type="button"
       >
         <span
-          className="Text__StyledText-sc-1974afi-0 bBiCvk"
+          className="Typography__StyledTypography-sc-10mju41-0 kCzFcI"
+          color="inherit"
+          type="primary"
         >
           Large
         </span>
@@ -2070,7 +2198,9 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
         type="button"
       >
         <span
-          className="Text__StyledText-sc-1974afi-0 jVjxzY"
+          className="Typography__StyledTypography-sc-10mju41-0 exYysW"
+          color="inherit"
+          type="secondary"
         >
           Small
         </span>
@@ -2094,7 +2224,9 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
         type="button"
       >
         <span
-          className="Text__StyledText-sc-1974afi-0 jVjxzY"
+          className="Typography__StyledTypography-sc-10mju41-0 exYysW"
+          color="inherit"
+          type="secondary"
         >
           Medium
         </span>
@@ -2118,7 +2250,9 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
         type="button"
       >
         <span
-          className="Text__StyledText-sc-1974afi-0 bBiCvk"
+          className="Typography__StyledTypography-sc-10mju41-0 kCzFcI"
+          color="inherit"
+          type="primary"
         >
           Large
         </span>
@@ -2149,7 +2283,9 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
         type="reset"
       >
         <span
-          className="Text__StyledText-sc-1974afi-0 jVjxzY"
+          className="Typography__StyledTypography-sc-10mju41-0 exYysW"
+          color="inherit"
+          type="secondary"
         >
           Reset
         </span>
@@ -2172,7 +2308,9 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
         type="submit"
       >
         <span
-          className="Text__StyledText-sc-1974afi-0 jVjxzY"
+          className="Typography__StyledTypography-sc-10mju41-0 exYysW"
+          color="inherit"
+          type="secondary"
         >
           Submit
         </span>
@@ -2189,7 +2327,9 @@ exports[`Storyshots Molecules | Button Button with variant 1`] = `
   type="button"
 >
   <span
-    className="Text__StyledText-sc-1974afi-0 jVjxzY"
+    className="Typography__StyledTypography-sc-10mju41-0 exYysW"
+    color="inherit"
+    type="secondary"
   >
     Button
   </span>
@@ -2203,7 +2343,9 @@ exports[`Storyshots Molecules | Button Default usage 1`] = `
   type="button"
 >
   <span
-    className="Text__StyledText-sc-1974afi-0 jVjxzY"
+    className="Typography__StyledTypography-sc-10mju41-0 exYysW"
+    color="inherit"
+    type="secondary"
   >
     Button
   </span>
@@ -2218,7 +2360,9 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
   type="button"
 >
   <span
-    className="Text__StyledText-sc-1974afi-0 jVjxzY"
+    className="Typography__StyledTypography-sc-10mju41-0 exYysW"
+    color="inherit"
+    type="secondary"
   >
     Button
   </span>
@@ -2233,13 +2377,16 @@ exports[`Storyshots Molecules | LabeledValue LabeledValue secondary currency 1`]
     className="LabeledValue__StyledLabel-hatse2-1 eNBnEP"
   >
     <span
-      className="Text__StyledText-sc-1974afi-0 gdLuLT"
+      className="Typography__StyledTypography-sc-10mju41-0 JofIB"
+      color={[Function]}
+      type="secondary"
     >
       Market value
     </span>
   </div>
   <span
-    className="Text__StyledText-sc-1974afi-0 gHlEVt"
+    className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
+    type="secondary"
   >
     SEK 4,672,198.00
   </span>
@@ -2254,13 +2401,16 @@ exports[`Storyshots Molecules | LabeledValue LabeledValue title1 1`] = `
     className="LabeledValue__StyledLabel-hatse2-1 eNBnEP"
   >
     <span
-      className="Text__StyledText-sc-1974afi-0 gdLuLT"
+      className="Typography__StyledTypography-sc-10mju41-0 JofIB"
+      color={[Function]}
+      type="secondary"
     >
       Holdings (SEK)
     </span>
   </div>
   <span
-    className="Text__StyledText-sc-1974afi-0 iUYKst"
+    className="Typography__StyledTypography-sc-10mju41-0 deOBlG"
+    type="title1"
   >
     4713119
   </span>
@@ -2275,7 +2425,9 @@ exports[`Storyshots Molecules | LabeledValue LabeledValue with negative developm
     className="LabeledValue__StyledLabel-hatse2-1 eNBnEP"
   >
     <span
-      className="Text__StyledText-sc-1974afi-0 gdLuLT"
+      className="Typography__StyledTypography-sc-10mju41-0 JofIB"
+      color={[Function]}
+      type="secondary"
     >
       Development this year
     </span>
@@ -2287,7 +2439,9 @@ exports[`Storyshots Molecules | LabeledValue LabeledValue with negative developm
       className="LabeledValuestories__StyledDevContainer-sc-1raww2x-1 eLCfNR"
     >
       <span
-        className="Text__StyledText-sc-1974afi-0 jWluYu"
+        className="Typography__StyledTypography-sc-10mju41-0 geSxHq"
+        color={[Function]}
+        type="secondary"
       >
         ▼
         -9.2
@@ -2295,7 +2449,8 @@ exports[`Storyshots Molecules | LabeledValue LabeledValue with negative developm
       </span>
     </div>
     <span
-      className="Text__StyledText-sc-1974afi-0 gHlEVt"
+      className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
+      type="secondary"
     >
       -SEK 4,672,198.00
     </span>
@@ -2311,7 +2466,9 @@ exports[`Storyshots Molecules | LabeledValue LabeledValue with positive developm
     className="LabeledValue__StyledLabel-hatse2-1 eNBnEP"
   >
     <span
-      className="Text__StyledText-sc-1974afi-0 gdLuLT"
+      className="Typography__StyledTypography-sc-10mju41-0 JofIB"
+      color={[Function]}
+      type="secondary"
     >
       Development this year
     </span>
@@ -2323,7 +2480,9 @@ exports[`Storyshots Molecules | LabeledValue LabeledValue with positive developm
       className="LabeledValuestories__StyledDevContainer-sc-1raww2x-1 eLCfNR"
     >
       <span
-        className="Text__StyledText-sc-1974afi-0 bmOtmq"
+        className="Typography__StyledTypography-sc-10mju41-0 BGxyT"
+        color={[Function]}
+        type="secondary"
       >
         ▲
         +
@@ -2332,7 +2491,8 @@ exports[`Storyshots Molecules | LabeledValue LabeledValue with positive developm
       </span>
     </div>
     <span
-      className="Text__StyledText-sc-1974afi-0 gHlEVt"
+      className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
+      type="secondary"
     >
       SEK 4,672,198.00
     </span>
@@ -2347,7 +2507,9 @@ exports[`Storyshots Molecules | Link Default usage 1`] = `
   onClick={[Function]}
 >
   <span
-    className="Text__StyledText-sc-1974afi-0 bpEPBt"
+    className="Typography__StyledTypography-sc-10mju41-0 hdQeDL"
+    color={[Function]}
+    type="secondary"
   >
     Link
   </span>
@@ -2362,7 +2524,9 @@ exports[`Storyshots Molecules | Link Link with _blank target 1`] = `
   target="_blank"
 >
   <span
-    className="Text__StyledText-sc-1974afi-0 bpEPBt"
+    className="Typography__StyledTypography-sc-10mju41-0 hdQeDL"
+    color={[Function]}
+    type="secondary"
   >
     Link
   </span>
