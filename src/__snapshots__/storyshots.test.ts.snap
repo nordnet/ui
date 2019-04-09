@@ -2386,6 +2386,18 @@ exports[`Storyshots Molecules | TitledCard Basic TitledCard 1`] = `
 </div>
 `;
 
+exports[`Storyshots Molecules | TitledCard TitledCard as article 1`] = `
+<article
+  className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
+>
+  <div
+    className="TitledCardstories__StyledContent-sc-1uh1xx9-0 eRbktE"
+  >
+    A TitledCard as a article containing content
+  </div>
+</article>
+`;
+
 exports[`Storyshots Molecules | TitledCard TitledCard with no title 1`] = `
 <div
   className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
