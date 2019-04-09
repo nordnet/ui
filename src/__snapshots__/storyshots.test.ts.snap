@@ -1652,7 +1652,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     </div>
     <div>
       <span
-        className="Spinner__StyledSpan-x7jzy3-1 ijsxib"
+        className="Spinner__StyledSpan-x7jzy3-1 kQkDHh"
         size={16}
       >
         <svg
@@ -1865,7 +1865,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     </div>
     <div>
       <span
-        className="Spinner__StyledSpan-x7jzy3-1 hAbFmR"
+        className="Spinner__StyledSpan-x7jzy3-1 kOKALh"
         size={16}
       >
         <svg
@@ -2078,7 +2078,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     </div>
     <div>
       <span
-        className="Spinner__StyledSpan-x7jzy3-1 jqXwOA"
+        className="Spinner__StyledSpan-x7jzy3-1 gFDYeX"
         size={16}
       >
         <svg
@@ -2291,7 +2291,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     </div>
     <div>
       <span
-        className="Spinner__StyledSpan-x7jzy3-1 czqLJN"
+        className="Spinner__StyledSpan-x7jzy3-1 jCXkeK"
         size={16}
       >
         <svg
@@ -2504,7 +2504,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     </div>
     <div>
       <span
-        className="Spinner__StyledSpan-x7jzy3-1 fyPuiT"
+        className="Spinner__StyledSpan-x7jzy3-1 bujrGp"
         size={16}
       >
         <svg
@@ -2717,7 +2717,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     </div>
     <div>
       <span
-        className="Spinner__StyledSpan-x7jzy3-1 iQxvKp"
+        className="Spinner__StyledSpan-x7jzy3-1 gvNiid"
         size={16}
       >
         <svg
@@ -2924,7 +2924,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
 
 exports[`Storyshots Atoms | Spinner Spinner big 1`] = `
 <span
-  className="Spinner__StyledSpan-x7jzy3-1 jXAsRr"
+  className="Spinner__StyledSpan-x7jzy3-1 cbaSYI"
   size={64}
 >
   <svg
@@ -3128,7 +3128,7 @@ exports[`Storyshots Atoms | Spinner Spinner big 1`] = `
 
 exports[`Storyshots Atoms | Spinner Spinner default 1`] = `
 <span
-  className="Spinner__StyledSpan-x7jzy3-1 cmneXU"
+  className="Spinner__StyledSpan-x7jzy3-1 xtwRy"
   size={16}
 >
   <svg
