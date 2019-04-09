@@ -1,6 +1,7 @@
+import { Props as CardProps } from '../../Atoms/Card/Card.types';
+
 export type Props = {
   title?: string;
-  children: React.ReactNode;
 };
 
-export type TitledCardComponent = React.FunctionComponent<Props>;
+export type TitledCardComponent = React.FunctionComponent<CardProps & Props>;
