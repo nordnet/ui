@@ -1,6 +1,7 @@
 import Avatar from './Molecules/Avatar';
 import Button from './Molecules/Button';
 import Card from './Atoms/Card';
+import CardWithTitle from './Molecules/CardWithTitle';
 import CssGrid from './Atoms/CssGrid';
 import Currency from './Atoms/Currency';
 import Development from './Atoms/Development';
@@ -8,10 +9,13 @@ import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';
 import Icon from './Atoms/Icon';
 import LabeledValue from './Molecules/LabeledValue';
+import Link from './Molecules/Link';
+import LinkBuy from './Molecules/LinkBuy';
+import LinkSell from './Molecules/LinkSell';
 import Media from './Atoms/Media';
 import Separator from './Atoms/Separator';
 import Spinner from './Atoms/Spinner';
-import Text from './Atoms/Text';
+import Typography from './Atoms/Typography';
 
 import theme from './theme';
 
@@ -20,6 +24,7 @@ export {
   Avatar,
   Button,
   Card,
+  CardWithTitle,
   CssGrid,
   Currency,
   Development,
@@ -27,9 +32,12 @@ export {
   Flexbox,
   Icon,
   LabeledValue,
+  Link,
+  LinkBuy,
+  LinkSell,
   Media,
   Separator,
   Spinner,
-  Text,
   theme,
+  Typography,
 };
