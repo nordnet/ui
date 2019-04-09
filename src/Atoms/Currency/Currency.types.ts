@@ -1,5 +1,5 @@
 import React from 'react';
-import { Weight } from '../Text/Text.types';
+import { Weight } from '../Typography/Typography.types';
 
 export type BaseProps = {
   value: number;

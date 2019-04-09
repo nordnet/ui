@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
-import { Text, Card } from '../..';
+import { Typography, Card } from '../..';
 import { CardWithTitleComponent, Props } from './CardWithTitle.types';
 
 const StyledCard = styled(Card)`
@@ -17,7 +17,7 @@ export const CardWithTitle: CardWithTitleComponent = props =>
   props.title ? (
     <StyledCard {...omitProps(props)}>
       <StyledTitle>
-        <Text.Title3>{props.title}</Text.Title3>
+        <Typography type="title3">{props.title}</Typography>
       </StyledTitle>
       {props.children}
     </StyledCard>

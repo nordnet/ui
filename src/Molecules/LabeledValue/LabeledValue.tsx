@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { LabeledValueComponent } from './LabeledValue.types';
-import Text from '../../Atoms/Text';
+import Typography from '../../Atoms/Typography';
 
 const StyledLabeledValue = styled.div`
   display: flex;
@@ -15,7 +15,9 @@ const StyledLabel = styled.div`
 export const LabeledValue: LabeledValueComponent = props => (
   <StyledLabeledValue>
     <StyledLabel>
-      <Text.Secondary color={t => t.color.label}>{props.label}</Text.Secondary>
+      <Typography type="secondary" color={t => t.color.label}>
+        {props.label}
+      </Typography>
     </StyledLabel>
     {props.children}
   </StyledLabeledValue>

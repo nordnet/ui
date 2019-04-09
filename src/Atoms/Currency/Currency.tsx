@@ -1,7 +1,7 @@
 import React from 'react';
 import { injectIntl, InjectedIntlProps } from 'react-intl';
 import { CurrencyComponent, BaseProps } from './Currency.types';
-import Text from '../Text';
+import Typography from '../Typography';
 
 const getPrefix = (value: number, sign?: boolean) => {
   if (sign && value > 0) {
@@ -22,37 +22,37 @@ const FormattedCurrency = injectIntl(FC);
 
 // TODO: make higher order component, this is only for the speed needed.
 const Primary: CurrencyComponent['Primary'] = ({ value, currency, ...rest }) => (
-  <Text.Primary weight={rest.weight}>
+  <Typography type="primary" weight={rest.weight}>
     <FormattedCurrency value={value} currency={currency} />
-  </Text.Primary>
+  </Typography>
 );
 Primary.displayName = 'Currency.Primary';
 
 const Secondary: CurrencyComponent['Secondary'] = ({ value, currency, ...rest }) => (
-  <Text.Secondary weight={rest.weight}>
+  <Typography type="secondary" weight={rest.weight}>
     <FormattedCurrency value={value} currency={currency} />
-  </Text.Secondary>
+  </Typography>
 );
 Secondary.displayName = 'Currency.Secondary';
 
 const Tertiary: CurrencyComponent['Tertiary'] = ({ value, currency, ...rest }) => (
-  <Text.Tertiary weight={rest.weight}>
+  <Typography type="tertiary" weight={rest.weight}>
     <FormattedCurrency value={value} currency={currency} />
-  </Text.Tertiary>
+  </Typography>
 );
 Tertiary.displayName = 'Currency.Tertiary';
 
 const Title1: CurrencyComponent['Title1'] = ({ value, currency }) => (
-  <Text.Title1>
+  <Typography type="title1">
     <FormattedCurrency value={value} currency={currency} />
-  </Text.Title1>
+  </Typography>
 );
 Title1.displayName = 'Currency.Title1';
 
 const Title3: CurrencyComponent['Title3'] = ({ value, currency }) => (
-  <Text.Title3>
+  <Typography type="title3">
     <FormattedCurrency value={value} currency={currency} />
-  </Text.Title3>
+  </Typography>
 );
 Title3.displayName = 'Currency.Title3';
 
