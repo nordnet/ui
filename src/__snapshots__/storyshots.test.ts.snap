@@ -2369,6 +2369,18 @@ exports[`Storyshots Molecules | Link Link with _blank target 1`] = `
 </a>
 `;
 
+exports[`Storyshots Molecules | LinkBuy LinkBuy 1`] = `
+<div>
+  This is a buy link
+</div>
+`;
+
+exports[`Storyshots Molecules | LinkSell LinkSell 1`] = `
+<div>
+  This is a sell link
+</div>
+`;
+
 exports[`Storyshots Theme Colors (palette) 1`] = `
 Array [
   <h1>
