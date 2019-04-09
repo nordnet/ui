@@ -7,7 +7,9 @@ const StyledCard = styled.div<Props>`
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.03);
 `;
 
-export const Card: React.FC<Props> = ({ as, children }) => (
-  <StyledCard as={as}>{children}</StyledCard>
+export const Card: React.FC<Props> = ({ as, children, className }) => (
+  <StyledCard className={className} as={as}>
+    {children}
+  </StyledCard>
 );
 Card.displayName = 'Card';
