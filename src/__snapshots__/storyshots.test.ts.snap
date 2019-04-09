@@ -2225,6 +2225,39 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
 </button>
 `;
 
+exports[`Storyshots Molecules | CardWithTitle Basic CardWithTitle 1`] = `
+<div
+  className="CardWithTitle__StyledCard-sc-1ny6tjx-0 eUgGSE Card__StyledCard-sc-1e5czjc-0 gwDvCn"
+>
+  <div
+    className="CardWithTitle__StyledTitle-sc-1ny6tjx-1 hXcDix"
+  >
+    <span
+      className="Text__StyledText-sc-1974afi-0 joblfr"
+    >
+      Konton
+    </span>
+  </div>
+  A CardWithTitle containing content
+</div>
+`;
+
+exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article 1`] = `
+<article
+  className="CardWithTitle__StyledCard-sc-1ny6tjx-0 eUgGSE"
+>
+  A CardWithTitle as a article containing content
+</article>
+`;
+
+exports[`Storyshots Molecules | CardWithTitle CardWithTitle with no title 1`] = `
+<div
+  className="CardWithTitle__StyledCard-sc-1ny6tjx-0 eUgGSE Card__StyledCard-sc-1e5czjc-0 gwDvCn"
+>
+  A CardWithTitle without title
+</div>
+`;
+
 exports[`Storyshots Molecules | LabeledValue LabeledValue secondary currency 1`] = `
 <div
   className="LabeledValue__StyledLabeledValue-hatse2-0 drexN"
@@ -2367,68 +2400,6 @@ exports[`Storyshots Molecules | Link Link with _blank target 1`] = `
     Link
   </span>
 </a>
-`;
-
-exports[`Storyshots Molecules | TitledCard Basic TitledCard 1`] = `
-<div
-  className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
->
-  <div
-    className="TitledCard__StyledTitle-gqpzfh-0 dgdBMn"
-  >
-    <span
-      className="Text__StyledText-sc-1974afi-0 joblfr"
-    >
-      Konton
-    </span>
-  </div>
-  A TitledCard containing content
-</div>
-`;
-
-exports[`Storyshots Molecules | TitledCard TitledCard as article 1`] = `
-<article
-  className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
->
-  <div
-    className="TitledCardstories__StyledContent-sc-1uh1xx9-0 eRbktE"
-  >
-    A TitledCard as a article containing content
-  </div>
-</article>
-`;
-
-exports[`Storyshots Molecules | TitledCard TitledCard with no title 1`] = `
-<div
-  className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
->
-  <div
-    className="TitledCardstories__StyledContent-sc-1uh1xx9-0 eRbktE"
-  >
-    A TitledCard without title
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules | TitledCard TitledCard with padded content 1`] = `
-<div
-  className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
->
-  <div
-    className="TitledCard__StyledTitle-gqpzfh-0 dgdBMn"
-  >
-    <span
-      className="Text__StyledText-sc-1974afi-0 joblfr"
-    >
-      Konton
-    </span>
-  </div>
-  <div
-    className="TitledCardstories__StyledContent-sc-1uh1xx9-0 eRbktE"
-  >
-    A TitledCard containing padded content
-  </div>
-</div>
 `;
 
 exports[`Storyshots Theme Colors (palette) 1`] = `
