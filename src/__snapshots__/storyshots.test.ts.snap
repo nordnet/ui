@@ -2377,7 +2377,8 @@ exports[`Storyshots Molecules | CardWithTitle Basic CardWithTitle 1`] = `
     className="CardWithTitle__StyledTitle-sc-1ny6tjx-1 hXcDix"
   >
     <span
-      className="Text__StyledText-sc-1974afi-0 joblfr"
+      className="Typography__StyledTypography-sc-10mju41-0 boZbTA"
+      type="title3"
     >
       Konton
     </span>
