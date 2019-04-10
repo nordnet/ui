@@ -1519,7 +1519,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div>
       <svg
         aria-hidden="true"
-        className="IconBase__StyledIconBase-sc-10cbji3-0 lnoZLc"
+        className="IconBase__StyledIconBase-sc-10cbji3-0 dIOzcS"
         focusable="false"
         role="presentation"
         size={5}
@@ -1543,7 +1543,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div>
       <svg
         aria-hidden="true"
-        className="IconBase__StyledIconBase-sc-10cbji3-0 lnoZLc"
+        className="IconBase__StyledIconBase-sc-10cbji3-0 dIOzcS"
         focusable="false"
         role="presentation"
         size={5}
@@ -1568,7 +1568,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div>
       <svg
         aria-hidden="true"
-        className="IconBase__StyledIconBase-sc-10cbji3-0 lnoZLc"
+        className="IconBase__StyledIconBase-sc-10cbji3-0 dIOzcS"
         focusable="false"
         role="presentation"
         size={5}
@@ -1586,7 +1586,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
 exports[`Storyshots Atoms | Icon Default use 1`] = `
 <svg
   aria-hidden="true"
-  className="IconBase__StyledIconBase-sc-10cbji3-0 lnoZLc"
+  className="IconBase__StyledIconBase-sc-10cbji3-0 dIOzcS"
   focusable="false"
   role="presentation"
   size={5}
@@ -1601,7 +1601,7 @@ exports[`Storyshots Atoms | Icon Default use 1`] = `
 exports[`Storyshots Atoms | Icon Different size and color 1`] = `
 <svg
   aria-hidden="true"
-  className="IconBase__StyledIconBase-sc-10cbji3-0 hBhGmd"
+  className="IconBase__StyledIconBase-sc-10cbji3-0 hdWrZg"
   focusable="false"
   role="presentation"
   size={10}
