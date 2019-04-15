@@ -1,7 +1,6 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { ListItem } from '../..';
-import { Flexbox } from '../..';
+import { Flexbox, ListItem } from '../..';
 import List from '.';
 
 const ItemContainer: React.FunctionComponent<{ children: React.ReactNode }> = ({ children }) => (
