@@ -1,8 +1,12 @@
 import { storiesOf } from '@storybook/react';
-import styled from 'styled-components';
 import React from 'react';
 import ListItem from '../../Atoms/ListItem';
+import Flexbox from '../../Atoms/Flexbox';
 import List from '.';
+
+const ItemContainer: React.FunctionComponent<{ children: React.ReactNode }> = ({ children }) => (
+  <Flexbox.Container justifyContent="space-between">{children}</Flexbox.Container>
+);
 
 storiesOf('Atoms | List', module)
   .add('Basic unordered list', () => (
@@ -19,12 +23,7 @@ storiesOf('Atoms | List', module)
       <ListItem>List item 3</ListItem>
     </List>
   ))
-  .add('List item with titles', () => {
-    const ItemContainer = styled.div`
-      display: flex;
-      justify-content: space-between;
-    `;
-
+  .add('Integration: List item with titles', () => {
     return (
       <List as="ol" leftTitle="title1" rightTitle="title2">
         <ListItem>
