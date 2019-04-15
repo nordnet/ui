@@ -10,22 +10,26 @@ const getPrefix = (value: number) => {
   return '';
 };
 
-const getColor = (value: number) => (t: Theme) => {
+const getColor = ({ value, theme }: { value: number; theme: Theme }) => {
   if (value > 0) {
-    return t.color.positive;
+    return theme.color.positive;
   }
 
   if (value < 0) {
-    return t.color.negative;
+    return theme.color.negative;
   }
-  return t.color.text;
+  return theme.color.text;
 };
 
 const StyledDevelopment = styled.span<DevelopmentProps>`
-  color: ${p => getColor(p.value)(p.theme)};
+  color: ${getColor};
 `;
 
-const FD: React.FC<DevelopmentProps & InjectedIntlProps> = ({ value, intl, className }) => (
+const FormattedDevelopment: React.FC<DevelopmentProps & InjectedIntlProps> = ({
+  value,
+  intl,
+  className,
+}) => (
   <StyledDevelopment className={className} value={value}>
     {getPrefix(value)}
     {value > 0 ? '+' : null}
@@ -34,5 +38,5 @@ const FD: React.FC<DevelopmentProps & InjectedIntlProps> = ({ value, intl, class
   </StyledDevelopment>
 );
 
-export const Development = injectIntl(FD);
+export const Development = injectIntl(FormattedDevelopment);
 Development.displayName = 'Development';

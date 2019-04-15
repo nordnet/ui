@@ -9,7 +9,12 @@ const getPrefix = (value: number, sign?: boolean) => {
 
   return '';
 };
-const FC: React.FC<BaseProps & InjectedIntlProps> = ({ value, currency, intl, sign }) => (
+const FormattedCurrency: React.FC<BaseProps & InjectedIntlProps> = ({
+  value,
+  currency,
+  intl,
+  sign,
+}) => (
   <>{`${getPrefix(value, sign)}${intl.formatNumber(value, {
     currency,
     style: 'currency',
@@ -17,5 +22,5 @@ const FC: React.FC<BaseProps & InjectedIntlProps> = ({ value, currency, intl, si
   })}`}</>
 );
 
-export const Currency: CurrencyComponent = injectIntl(FC);
+export const Currency: CurrencyComponent = injectIntl(FormattedCurrency);
 Currency.displayName = 'Currency';
