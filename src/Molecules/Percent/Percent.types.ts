@@ -1,7 +1,3 @@
-export type Props = {
-  decimals?: number;
-  value?: number;
-  invalidValue?: string | number;
-};
+import { Props as NumberProps } from '../../Atoms/Number/Number.types';
 
-export type PercentComponent = React.FunctionComponent<Props>;
+export type PercentComponent = React.FunctionComponent<NumberProps>;
