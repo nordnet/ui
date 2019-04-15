@@ -4379,6 +4379,24 @@ exports[`Storyshots Molecules | LinkSell LinkSell disabled 1`] = `
 </span>
 `;
 
+exports[`Storyshots Molecules | Percent Invalid value 1`] = `"-"`;
+
+exports[`Storyshots Molecules | Percent Percent with 0 decimals  1`] = `
+Array [
+  "100",
+  "%",
+]
+`;
+
+exports[`Storyshots Molecules | Percent Percent with 2 decimals  1`] = `
+Array [
+  "10.00",
+  "%",
+]
+`;
+
+exports[`Storyshots Molecules | Percent Uses custom symbol for invalid value 1`] = `"X"`;
+
 exports[`Storyshots Theme Colors (palette) 1`] = `
 Array [
   <h1>
