@@ -5,7 +5,7 @@ import CardWithTitle from './Molecules/CardWithTitle';
 import CssGrid from './Atoms/CssGrid';
 import Currency from './Atoms/Currency';
 import Development from './Atoms/Development';
-import List from './Atoms/List';
+import List from './Molecules/List';
 import ListItem from './Atoms/ListItem';
 import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';

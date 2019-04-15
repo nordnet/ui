@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import React from 'react';
-import ListItem from '../ListItem';
+import ListItem from '../../Atoms/ListItem';
 import List from '.';
 
 storiesOf('Atoms | List', module)
