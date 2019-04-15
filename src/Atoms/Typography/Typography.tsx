@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
 import { Theme } from '../../theme/theme.types';
-import { Props } from './Typography.types';
+import { Props, Types } from './Typography.types';
 
 const WEIGHTS = {
   regular: 400,
@@ -25,6 +25,14 @@ const getColor = (props: ThemedStyledProps<Props, Theme>) => {
   return theme.color.text;
 };
 
+export const TYPOGRAPHY_TYPES: Record<Types, Types> = {
+  primary: 'primary',
+  secondary: 'secondary',
+  tertiary: 'tertiary',
+  title1: 'title1',
+  title3: 'title3',
+};
+
 const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
   const { type, weight, theme } = props;
   let sizeMobile;
@@ -32,27 +40,27 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
   let defaultWeight;
 
   switch (type) {
-    case 'primary':
+    case TYPOGRAPHY_TYPES.primary:
       sizeMobile = 14;
       sizeDesktop = 16;
       defaultWeight = 'regular';
       break;
-    case 'secondary':
+    case TYPOGRAPHY_TYPES.secondary:
       sizeMobile = 12;
       sizeDesktop = 14;
       defaultWeight = 'regular';
       break;
-    case 'tertiary':
+    case TYPOGRAPHY_TYPES.tertiary:
       sizeMobile = 10;
       sizeDesktop = 12;
       defaultWeight = 'regular';
       break;
-    case 'title1':
+    case TYPOGRAPHY_TYPES.title1:
       sizeMobile = 30;
       sizeDesktop = 32;
       defaultWeight = 'extrabold';
       break;
-    case 'title3':
+    case TYPOGRAPHY_TYPES.title3:
       sizeMobile = 18;
       sizeDesktop = 20;
       defaultWeight = 'extrabold';
