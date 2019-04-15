@@ -3409,6 +3409,12 @@ exports[`Storyshots Atoms | Spinner Spinner default 1`] = `
 </span>
 `;
 
+exports[`Storyshots Atoms | Time Invalid value 1`] = `"-"`;
+
+exports[`Storyshots Atoms | Time Time  1`] = `"00:53:44"`;
+
+exports[`Storyshots Atoms | Time Uses custom symbol for invalid value 1`] = `"X"`;
+
 exports[`Storyshots Atoms | Typography Colors 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
