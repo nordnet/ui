@@ -1615,7 +1615,7 @@ exports[`Storyshots Atoms | Icon Different size and color 1`] = `
 
 exports[`Storyshots Atoms | List Basic ordered list 1`] = `
 <ol
-  className="List__StyledList-sc-67l9u3-0 wlTZH"
+  className="List__StyledList-sc-1d4vfkf-0 iGYhna"
 >
   <li
     className="ListItem__StyledListItem-pn91gs-0 LDMQb"
@@ -1637,7 +1637,7 @@ exports[`Storyshots Atoms | List Basic ordered list 1`] = `
 
 exports[`Storyshots Atoms | List Basic unordered list 1`] = `
 <ul
-  className="List__StyledList-sc-67l9u3-0 wlTZH"
+  className="List__StyledList-sc-1d4vfkf-0 iGYhna"
 >
   <li
     className="ListItem__StyledListItem-pn91gs-0 LDMQb"
@@ -1655,6 +1655,85 @@ exports[`Storyshots Atoms | List Basic unordered list 1`] = `
     List item
   </li>
 </ul>
+`;
+
+exports[`Storyshots Atoms | List List item with titles 1`] = `
+Array [
+  <div
+    className="List__TitleContainer-sc-1d4vfkf-1 kmTYfS"
+  >
+    <div
+      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 iIHuYW"
+    >
+      <div
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 irjdGO"
+      >
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+          type="secondary"
+        >
+          title1
+        </span>
+      </div>
+      <div
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 irjdGO"
+      >
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+          type="secondary"
+        >
+          title2
+        </span>
+      </div>
+    </div>
+  </div>,
+  <ol
+    className="List__StyledList-sc-1d4vfkf-0 iGYhna"
+  >
+    <li
+      className="ListItem__StyledListItem-pn91gs-0 LDMQb"
+    >
+      <div
+        className="Liststories__ItemContainer-u0oskn-0 kJKTQd"
+      >
+        <div>
+          Left List Item 1
+        </div>
+        <div>
+          Right List Item 1
+        </div>
+      </div>
+    </li>
+    <li
+      className="ListItem__StyledListItem-pn91gs-0 LDMQb"
+    >
+      <div
+        className="Liststories__ItemContainer-u0oskn-0 kJKTQd"
+      >
+        <div>
+          Left List Item 2
+        </div>
+        <div>
+          Right List Item 2
+        </div>
+      </div>
+    </li>
+    <li
+      className="ListItem__StyledListItem-pn91gs-0 LDMQb"
+    >
+      <div
+        className="Liststories__ItemContainer-u0oskn-0 kJKTQd"
+      >
+        <div>
+          Left List Item 3
+        </div>
+        <div>
+          Right List Item 3
+        </div>
+      </div>
+    </li>
+  </ol>,
+]
 `;
 
 exports[`Storyshots Atoms | ListItem Basic list item 1`] = `
