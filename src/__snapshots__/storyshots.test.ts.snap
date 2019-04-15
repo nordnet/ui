@@ -1687,6 +1687,14 @@ Array [
 ]
 `;
 
+exports[`Storyshots Atoms | Number Invalid value 1`] = `"-"`;
+
+exports[`Storyshots Atoms | Number Number with 0 decimals  1`] = `"100"`;
+
+exports[`Storyshots Atoms | Number Number with 2 decimals  1`] = `"10.00"`;
+
+exports[`Storyshots Atoms | Number Uses custom symbol for invalid value 1`] = `"X"`;
+
 exports[`Storyshots Atoms | Separator Separator default 1`] = `
 <div
   className="Separatorstories__StyledContainer-sc-12j0h8a-0 ixCTfH"
