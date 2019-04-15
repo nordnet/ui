@@ -1657,7 +1657,7 @@ exports[`Storyshots Atoms | List Basic unordered list 1`] = `
 </ul>
 `;
 
-exports[`Storyshots Atoms | List List item with titles 1`] = `
+exports[`Storyshots Atoms | List Integration: List item with titles 1`] = `
 Array [
   <div
     className="List__TitleContainer-sc-1d4vfkf-1 kmTYfS"
@@ -1694,12 +1694,16 @@ Array [
       className="ListItem__StyledListItem-pn91gs-0 LDMQb"
     >
       <div
-        className="Liststories__ItemContainer-u0oskn-0 kJKTQd"
+        className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 daSWfP"
       >
-        <div>
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
           Left List Item 1
         </div>
-        <div>
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
           Right List Item 1
         </div>
       </div>
@@ -1708,12 +1712,16 @@ Array [
       className="ListItem__StyledListItem-pn91gs-0 LDMQb"
     >
       <div
-        className="Liststories__ItemContainer-u0oskn-0 kJKTQd"
+        className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 daSWfP"
       >
-        <div>
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
           Left List Item 2
         </div>
-        <div>
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
           Right List Item 2
         </div>
       </div>
@@ -1722,12 +1730,16 @@ Array [
       className="ListItem__StyledListItem-pn91gs-0 LDMQb"
     >
       <div
-        className="Liststories__ItemContainer-u0oskn-0 kJKTQd"
+        className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 daSWfP"
       >
-        <div>
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
           Left List Item 3
         </div>
-        <div>
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
           Right List Item 3
         </div>
       </div>
