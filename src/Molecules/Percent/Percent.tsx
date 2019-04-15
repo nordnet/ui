@@ -1,5 +1,5 @@
 import React from 'react';
-import { Number as NumberComponent } from '../../Atoms/Number';
+import NumberComponent from '../../Atoms/Number';
 import { PercentComponent as PercentComponentType } from './Percent.types';
 
 const Percent: PercentComponentType = ({ value, decimals = 0, invalidValue = '-' }) =>

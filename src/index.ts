@@ -18,7 +18,9 @@ import Media from './Atoms/Media';
 import Separator from './Atoms/Separator';
 import Spinner from './Atoms/Spinner';
 import Typography from './Atoms/Typography';
-
+import Number from './Atoms/Number';
+import Time from './Atoms/Time';
+import Percent from './Molecules/Percent';
 import theme from './theme';
 
 /** Runtime code */
@@ -38,8 +40,11 @@ export {
   LinkBuy,
   LinkSell,
   Media,
+  Number,
+  Percent,
   Separator,
   Spinner,
+  Time,
   theme,
   Typography,
   List,

@@ -1,1 +1,3 @@
-export { default as Time } from './Time';
+import Time from './Time';
+
+export default Time;
