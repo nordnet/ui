@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import React from 'react';
-import Flexbox from '../Flexbox';
-import Typography from '../Typography';
+import Flexbox from '../../Atoms/Flexbox/index';
+import Typography from '../../Atoms/Typography/index';
 import { Props } from './List.types';
 
 const StyledList = styled.ul<Props>`
