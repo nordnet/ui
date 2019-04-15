@@ -1,7 +1,7 @@
 import React from 'react';
 import { injectIntl, InjectedIntlProps } from 'react-intl';
 import { DevelopmentComponent, DevelopmentProps } from './Development.types';
-import Text from '../Text/index';
+import Typography from '../Typography';
 import { Theme } from '../../theme/theme.types';
 
 const getPrefix = (value: number) => {
@@ -34,23 +34,23 @@ const FormattedDevelopment = injectIntl(FD);
 
 // TODO: a HOC is needed here as well
 const Primary: DevelopmentComponent['Primary'] = ({ value, ...rest }) => (
-  <Text.Primary color={getColor(value)} {...rest}>
+  <Typography type="primary" color={getColor(value)} {...rest}>
     <FormattedDevelopment value={value} />
-  </Text.Primary>
+  </Typography>
 );
 Primary.displayName = 'Development.Primary';
 
 const Secondary: DevelopmentComponent['Secondary'] = ({ value, ...rest }) => (
-  <Text.Secondary color={getColor(value)} {...rest}>
+  <Typography type="secondary" color={getColor(value)} {...rest}>
     <FormattedDevelopment value={value} />
-  </Text.Secondary>
+  </Typography>
 );
 Secondary.displayName = 'Development.Secondary';
 
 const Tertiary: DevelopmentComponent['Secondary'] = ({ value, ...rest }) => (
-  <Text.Tertiary color={getColor(value)} {...rest}>
+  <Typography type="tertiary" color={getColor(value)} {...rest}>
     <FormattedDevelopment value={value} />
-  </Text.Tertiary>
+  </Typography>
 );
 Tertiary.displayName = 'Development.Tertiary';
 

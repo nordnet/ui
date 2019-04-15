@@ -10,6 +10,7 @@ const StyledIconBase = styled.svg<StyledIconBaseProps>`
     width: ${p.theme.spacing.unit(size)}px;
     height: ${p.theme.spacing.unit(size)}px;
     display: inline-block;
+    vertical-align: middle;
     fill: currentColor;
     flex-shrink: 0;
     color: ${p.colorFn ? p.colorFn(p.theme) : p.theme.color.text};`;
@@ -17,7 +18,7 @@ const StyledIconBase = styled.svg<StyledIconBaseProps>`
 `;
 
 export const IconBase: React.FC<InternalProps> = (props: InternalProps) => {
-  const { className, children, title, size, color } = props;
+  const { className, children, title, size = 5, color } = props;
 
   return (
     <StyledIconBase

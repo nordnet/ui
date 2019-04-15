@@ -79,6 +79,10 @@ export type Theme = {
     buttonSecondaryBackground: RawColor['white'];
     /** white */
     module: RawColor['white'];
+    /** black */
+    spinnerBlack: RawColor['black'];
+    /** white */
+    spinnerWhite: RawColor['white'];
   };
 
   spacing: {

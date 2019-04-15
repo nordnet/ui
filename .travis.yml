@@ -12,7 +12,7 @@ install: yarn install --ignore-engines
 cache:
   yarn: true
   directories:
-  - node_modules
+    - node_modules
 
 jobs:
   include:
@@ -26,13 +26,11 @@ jobs:
 
     - stage: release
       script:
-        - git config user.email "nordnet-release@localhost"
-        - git config user.name "nordnet-release"
-      #   - TRAVIS_JOB_NUMBER=WORKAROUND.1 npm run semantic-release
+        - TRAVIS_JOB_NUMBER=WORKAROUND.1 npm run semantic-release
       after_script:
         - npm run build-storybook
         - npm run docs-publish
-      if: (NOT type IN (pull_request)) AND (branch = master)
+      if: (NOT type IN (pull_request)) AND (branch = beta)
 
 stages:
   - name: test-and-build

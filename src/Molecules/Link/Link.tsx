@@ -12,7 +12,12 @@ const StyledLink = styled(RouterLink)<Props>`
 `;
 
 export const Link: LinkComponent = props => (
-  <StyledLink onClick={props.onClick} to={props.to} target={props.target}>
+  <StyledLink
+    className={props.className}
+    onClick={props.onClick}
+    to={props.to}
+    target={props.target}
+  >
     {props.children}
   </StyledLink>
 );

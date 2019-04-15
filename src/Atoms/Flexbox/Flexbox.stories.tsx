@@ -48,4 +48,34 @@ storiesOf('Atoms | Flexbox', module)
         <Content>Col 3</Content>
       </Flexbox.Item>
     </Flexbox.Container>
-  ));
+  ))
+  .add('Flexbox with conditionally hidden flex item', () => {
+    const showFirstItem = false;
+    return (
+      <Flexbox.Container>
+        {showFirstItem && (
+          <Flexbox.Item order={2}>
+            <Content>Col 1</Content>
+          </Flexbox.Item>
+        )}
+        <Flexbox.Item order={1}>
+          <Content>Col 2</Content>
+        </Flexbox.Item>
+      </Flexbox.Container>
+    );
+  })
+  .add('Flexbox with conditionally visible flex item', () => {
+    const showFirstItem = true;
+    return (
+      <Flexbox.Container>
+        {showFirstItem && (
+          <Flexbox.Item order={2}>
+            <Content>Col 1</Content>
+          </Flexbox.Item>
+        )}
+        <Flexbox.Item order={1}>
+          <Content>Col 2</Content>
+        </Flexbox.Item>
+      </Flexbox.Container>
+    );
+  });

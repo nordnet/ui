@@ -47,13 +47,23 @@ export const Container = (props: Props) => {
 
   return (
     <StyledFlexbox {...props}>
-      {React.Children.map(props.children, (child: any) =>
-        isHorizontalGrid(direction) ? (
+      {React.Children.map(props.children, (child: any) => {
+        /** the check below is needed for rendering conditional Flexbox Items, e.g
+         * <Flexbox.Container>
+         *   {showItem && <Flexbox.Item />}
+         *   <Flexbox.Item />
+         *  </Flexbox.Container>
+         */
+        if (!child) {
+          return child;
+        }
+
+        return isHorizontalGrid(direction) ? (
           <ItemWithHorisontalGutter {...child.props as ChildProps} gutter={gutter} />
         ) : (
           <ItemWithVerticalGutter {...child.props as ChildProps} gutter={gutter} />
-        ),
-      )}
+        );
+      })}
     </StyledFlexbox>
   );
 };
