@@ -2,7 +2,7 @@ import { InjectedIntlProps } from 'react-intl';
 
 export type Props = {
   decimals?: number;
-  value?: number;
+  value: number | null | undefined;
   invalidValue?: number | string;
 };
 

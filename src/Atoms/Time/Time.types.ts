@@ -1,7 +1,7 @@
 import { InjectedIntlProps } from 'react-intl';
 
 export type Props = {
-  value?: number;
+  value: number | null | undefined;
   invalidValue?: string;
 };
 
