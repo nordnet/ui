@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
 import { Theme } from '../../theme/theme.types';
-import { Props, Types, ProperProps } from './Typography.types';
+import { Props, Types } from './Typography.types';
 import { assert } from '../../common/utils';
 
 const WEIGHTS = {
@@ -113,7 +113,7 @@ const StyledTypography = styled.span<Props>`
   ${p => getTypeStyles(p)}
 ` as React.FC<Props>;
 
-export const Typography: React.FC<ProperProps> = (props) => {
+export const Typography: React.FC<Props> = (props) => {
   const { as, className, children, color, type, weight } = props;
 
   return (

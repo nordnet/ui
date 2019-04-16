@@ -14,43 +14,44 @@ export type Types =
   | 'title3'
   | 'hero';
 
-type PrimaryProps = {
-  /** @default 'regular' */
-  weight?: 'regular' | 'bold' | 'extrabold';
-  type?: 'primary';
-};
-type SecondaryProps = {
-  /** @default 'regular' */
-  weight?: 'regular' | 'bold';
-  type: 'secondary';
-};
-type TertiaryProps = {
-  /** @default 'regular' */
-  weight?: 'regular' | 'bold';
-  type: 'tertiary';
-};
-type CaptionProps = {
-  /** @default 'regular' */
-  weight?: 'regular' | 'bold';
-  type: 'caption';
-};
-type TitleProps = {
-  /** @default 'extrabold' */
-  weight?: 'regular' | 'bold' | 'extrabold';
-  type: 'title1' | 'title2' | 'title3';
-};
-type HeroProps = {
-  /** @default 'extrabold' */
-  weight?: 'bold' | 'extrabold';
-  type: 'hero';
-};
+// TODO: for a better day
+// type PrimaryProps = {
+//   /** @default 'regular' */
+//   type?: 'primary';
+//   weight?: 'regular' | 'bold' | 'extrabold';
+// };
+// type SecondaryProps = {
+//   /** @default 'regular' */
+//   type: 'secondary';
+//   weight?: 'regular' | 'bold';
+// };
+// type TertiaryProps = {
+//   /** @default 'regular' */
+//   type: 'tertiary';
+//   weight?: 'regular' | 'bold';
+// };
+// type CaptionProps = {
+//   /** @default 'regular' */
+//   type: 'caption';
+//   weight?: 'regular' | 'bold';
+// };
+// type TitleProps = {
+//   /** @default 'extrabold' */
+//   type: 'title1' | 'title2' | 'title3';
+//   weight?: 'regular' | 'bold' | 'extrabold';
+// };
+// type HeroProps = {
+//   /** @default 'extrabold' */
+//   type: 'hero';
+//   weight?: 'bold' | 'extrabold';
+// };
 
 export type Props = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   className?: string;
   color?: 'inherit' | ColorFn;
-  weight?: 'regular' | 'bold' | 'extrabold';
-  type?: Types;
+  weight?: string;
+  type?: string;
   /**
    * primary has font-weight: regular, font-size: 14px (mobile) and 16px (desktop)
    * secondary has font-weight: regular, font-size: 12px (mobile) and 14px (desktop)
@@ -60,6 +61,3 @@ export type Props = {
    */
   children: React.ReactNode;
 };
-
-export type ProperProps = Props &
-  (PrimaryProps | SecondaryProps | TertiaryProps | CaptionProps | TitleProps | HeroProps);
