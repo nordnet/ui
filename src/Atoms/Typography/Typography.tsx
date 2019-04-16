@@ -54,50 +54,57 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
       sizeMobile = 12;
       sizeDesktop = 14;
       defaultWeight = 'regular';
-      allowedWeights = ['regular', 'bold']
+      allowedWeights = ['regular', 'bold'];
       break;
-      case TYPOGRAPHY_TYPES.tertiary:
+    case TYPOGRAPHY_TYPES.tertiary:
       sizeMobile = 10;
       sizeDesktop = 12;
       defaultWeight = 'regular';
-      allowedWeights = ['regular', 'bold']
+      allowedWeights = ['regular', 'bold'];
       break;
-      case TYPOGRAPHY_TYPES.caption:
+    case TYPOGRAPHY_TYPES.caption:
       sizeMobile = 10;
       sizeDesktop = 10;
       defaultWeight = 'regular';
-      allowedWeights = ['regular', 'bold']
+      allowedWeights = ['regular', 'bold'];
       break;
-      case TYPOGRAPHY_TYPES.title1:
+    case TYPOGRAPHY_TYPES.title1:
       sizeMobile = 30;
       sizeDesktop = 32;
       defaultWeight = 'extrabold';
       break;
-      case TYPOGRAPHY_TYPES.title2:
+    case TYPOGRAPHY_TYPES.title2:
       sizeMobile = 20;
       sizeDesktop = 24;
       defaultWeight = 'extrabold';
       break;
-      case TYPOGRAPHY_TYPES.title3:
+    case TYPOGRAPHY_TYPES.title3:
       sizeMobile = 18;
       sizeDesktop = 20;
       defaultWeight = 'extrabold';
       break;
-      case TYPOGRAPHY_TYPES.hero:
+    case TYPOGRAPHY_TYPES.hero:
       sizeMobile = 46;
       sizeDesktop = 48;
       defaultWeight = 'extrabold';
-      allowedWeights = ['bold', 'extrabold']
+      allowedWeights = ['bold', 'extrabold'];
       break;
-      default:
+    default:
       sizeMobile = 14;
       sizeDesktop = 16;
       defaultWeight = 'regular';
-    }
-  
-  assert(allowedWeights.includes(weight || defaultWeight), `"${weight}" is not one of the allowed weights for ${type}: ${allowedWeights.map(s => `"${s}"`).join(', ')}`)
+  }
+
+  assert(
+    allowedWeights.includes(weight || defaultWeight),
+    `"${weight}" is not one of the allowed weights for ${type}: ${allowedWeights
+      .map(s => `"${s}"`)
+      .join(', ')}`,
+  );
   return `
-    font-weight ${weight && allowedWeights.includes(weight) ? WEIGHTS[weight] : WEIGHTS[defaultWeight]};
+    font-weight ${
+      weight && allowedWeights.includes(weight) ? WEIGHTS[weight] : WEIGHTS[defaultWeight]
+    };
     font-size: ${sizeMobile}px;
 
     ${theme.media.greaterThan(theme.size[SMALL_DEVICE_BP])} {
@@ -113,7 +120,7 @@ const StyledTypography = styled.span<Props>`
   ${p => getTypeStyles(p)}
 ` as React.FC<Props>;
 
-export const Typography: React.FC<Props> = (props) => {
+export const Typography: React.FC<Props> = props => {
   const { as, className, children, color, type, weight } = props;
 
   return (
