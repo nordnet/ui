@@ -10,7 +10,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "test-ci": "jest --coverage --ci && codecov",
+    "test-ci": "jest --ci",
     "dev": "start-storybook -p 6006",
     "lint:js": "eslint --ext=.tsx --ext=.ts src",
     "lint:css": "stylelint './src/**/*.{ts,tsx}'",
