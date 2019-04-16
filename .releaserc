@@ -1,10 +1,16 @@
-tagFormat: ${version}
-
-branches:
-  - name: 'beta'
-    prerelease: true
-generateNotes: []
-prepare: []
-publish: []
-success: []
-fail: []
+{
+  "branches": [
+    "master",
+    {
+      "name": "beta",
+      "prerelease": true
+    }
+  ],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/git",
+    "@semantic-release/npm"
+  ]
+}

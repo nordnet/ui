@@ -26,8 +26,6 @@ jobs:
 
     - stage: release
       script:
-        - git config user.email "nordnet-release@localhost"
-        - git config user.name "nordnet-release"
         - TRAVIS_JOB_NUMBER=WORKAROUND.1 npm run semantic-release
       after_script:
         - npm run build-storybook
