@@ -13,13 +13,44 @@ export type Types =
   | 'title2'
   | 'title3'
   | 'hero';
-export type Weight = 'regular' | 'bold' | 'extrabold';
+
+type PrimaryProps = {
+  /** @default 'regular' */
+  weight?: 'regular' | 'bold' | 'extrabold';
+  type?: 'primary';
+};
+type SecondaryProps = {
+  /** @default 'regular' */
+  weight?: 'regular' | 'bold';
+  type: 'secondary';
+};
+type TertiaryProps = {
+  /** @default 'regular' */
+  weight?: 'regular' | 'bold';
+  type: 'tertiary';
+};
+type CaptionProps = {
+  /** @default 'regular' */
+  weight?: 'regular' | 'bold';
+  type: 'caption';
+};
+type TitleProps = {
+  /** @default 'extrabold' */
+  weight?: 'regular' | 'bold' | 'extrabold';
+  type: 'title1' | 'title2' | 'title3';
+};
+type HeroProps = {
+  /** @default 'extrabold' */
+  weight?: 'bold' | 'extrabold';
+  type: 'hero';
+};
 
 export type Props = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   className?: string;
   color?: 'inherit' | ColorFn;
-  weight?: Weight;
+  weight?: 'regular' | 'bold' | 'extrabold';
+  type?: Types;
   /**
    * primary has font-weight: regular, font-size: 14px (mobile) and 16px (desktop)
    * secondary has font-weight: regular, font-size: 12px (mobile) and 14px (desktop)
@@ -27,6 +58,8 @@ export type Props = {
    * title1 has font-weight: extrabold, font-size: 30px (mobile) and 32px (desktop)
    * title3 has font-weight: extrabold, font-size: 18px (mobile) and 20px (desktop)
    */
-  type?: Types;
   children: React.ReactNode;
 };
+
+export type ProperProps = Props &
+  (PrimaryProps | SecondaryProps | TertiaryProps | CaptionProps | TitleProps | HeroProps);
