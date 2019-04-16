@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
 import { Theme } from '../../theme/theme.types';
 import { Props, Types } from './Typography.types';
+import { assert } from '../../common/utils';
 
 const WEIGHTS = {
   regular: 400,
@@ -29,8 +30,11 @@ export const TYPOGRAPHY_TYPES: Record<Types, Types> = {
   primary: 'primary',
   secondary: 'secondary',
   tertiary: 'tertiary',
+  caption: 'caption',
   title1: 'title1',
+  title2: 'title2',
   title3: 'title3',
+  hero: 'hero',
 };
 
 const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
@@ -38,6 +42,7 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
   let sizeMobile;
   let sizeDesktop;
   let defaultWeight;
+  let allowedWeights = ['regular', 'bold', 'extrabold'];
 
   switch (type) {
     case TYPOGRAPHY_TYPES.primary:
@@ -49,30 +54,50 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
       sizeMobile = 12;
       sizeDesktop = 14;
       defaultWeight = 'regular';
+      allowedWeights = ['regular', 'bold']
       break;
-    case TYPOGRAPHY_TYPES.tertiary:
+      case TYPOGRAPHY_TYPES.tertiary:
       sizeMobile = 10;
       sizeDesktop = 12;
       defaultWeight = 'regular';
+      allowedWeights = ['regular', 'bold']
       break;
-    case TYPOGRAPHY_TYPES.title1:
+      case TYPOGRAPHY_TYPES.caption:
+      sizeMobile = 10;
+      sizeDesktop = 10;
+      defaultWeight = 'regular';
+      allowedWeights = ['regular', 'bold']
+      break;
+      case TYPOGRAPHY_TYPES.title1:
       sizeMobile = 30;
       sizeDesktop = 32;
       defaultWeight = 'extrabold';
       break;
-    case TYPOGRAPHY_TYPES.title3:
+      case TYPOGRAPHY_TYPES.title2:
+      sizeMobile = 20;
+      sizeDesktop = 24;
+      defaultWeight = 'extrabold';
+      break;
+      case TYPOGRAPHY_TYPES.title3:
       sizeMobile = 18;
       sizeDesktop = 20;
       defaultWeight = 'extrabold';
       break;
-    default:
+      case TYPOGRAPHY_TYPES.hero:
+      sizeMobile = 46;
+      sizeDesktop = 48;
+      defaultWeight = 'extrabold';
+      allowedWeights = ['bold', 'extrabold']
+      break;
+      default:
       sizeMobile = 14;
       sizeDesktop = 16;
       defaultWeight = 'regular';
-  }
-
+    }
+  
+  assert(allowedWeights.includes(weight || defaultWeight), `"${weight}" is not one of the allowed weights for ${type}: ${allowedWeights.map(s => `"${s}"`).join(', ')}`)
   return `
-    font-weight ${weight ? WEIGHTS[weight] : WEIGHTS[defaultWeight]};
+    font-weight ${weight && allowedWeights.includes(weight) ? WEIGHTS[weight] : WEIGHTS[defaultWeight]};
     font-size: ${sizeMobile}px;
 
     ${theme.media.greaterThan(theme.size[SMALL_DEVICE_BP])} {
