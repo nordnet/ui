@@ -21,6 +21,7 @@ import Typography from './Atoms/Typography';
 import Number from './Atoms/Number';
 import Time from './Atoms/Time';
 import Percent from './Molecules/Percent';
+import ListWithTitles from './Molecules/ListWithTitles';
 import theme from './theme';
 
 /** Runtime code */
@@ -39,6 +40,7 @@ export {
   Link,
   LinkBuy,
   LinkSell,
+  ListWithTitles,
   Media,
   Number,
   Percent,

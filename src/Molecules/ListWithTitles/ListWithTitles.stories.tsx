@@ -1,9 +1,8 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { Flexbox, ListItem } from '../..';
-import ListWithTitles from '.';
+import { Flexbox, ListItem, ListWithTitles } from '../..';
 
-const ItemContainer: React.FunctionComponent<{ children: React.ReactNode }> = ({ children }) => (
+const ItemContainer: React.FunctionComponent = ({ children }) => (
   <Flexbox.Container justifyContent="space-between">{children}</Flexbox.Container>
 );
 
