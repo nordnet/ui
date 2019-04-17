@@ -11,15 +11,38 @@ import Td from './Td';
 import { data } from './Table.stories.data';
 
 let tableData: (string | number)[][] = [];
-const multiplyTableWith = 5;
 
-for (let i = 0; i < multiplyTableWith; i += 1) {
+for (let i = 0; i < 5; i += 1) {
   tableData = tableData.concat(data);
 }
 
 /* eslint-disable react/no-array-index-key */
 storiesOf('Atoms | Table', module)
-  .add('Table', () => {
+  .add('Default', () => (
+    <Table width="100%">
+      <Thead>
+        <Tr>
+          <Th>Symbol</Th>
+          <Th>Name</Th>
+        </Tr>
+      </Thead>
+      <Tbody>
+        {tableData.map((instrument, index) => (
+          <Tr key={`${instrument[0]}_${index}`}>
+            <Td>{instrument[1]}</Td>
+            <Td>{instrument[2]}</Td>
+          </Tr>
+        ))}
+      </Tbody>
+      <Tfoot>
+        <Tr>
+          <Td>-</Td>
+          <Td>-</Td>
+        </Tr>
+      </Tfoot>
+    </Table>
+  ))
+  .add('Integration: Table with Typography', () => {
     return (
       <Typography type="secondary">
         <Table width="100%">
@@ -63,7 +86,7 @@ storiesOf('Atoms | Table', module)
       </Typography>
     );
   })
-  .add('Table with stickyHeader', () => {
+  .add('Integration: Table (stickyHeader) with Typography', () => {
     return (
       <Typography type="secondary">
         <Table width="100%">

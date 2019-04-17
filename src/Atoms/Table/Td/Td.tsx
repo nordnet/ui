@@ -15,10 +15,6 @@ const StyledTd = styled.td<Props>`
   }
 `;
 
-export const Td: TdComponent = ({ textAlign, children }) => (
+export const Td: TdComponent = ({ textAlign = 'left', children }) => (
   <StyledTd textAlign={textAlign}>{children}</StyledTd>
 );
-
-Td.defaultProps = {
-  textAlign: 'left',
-};

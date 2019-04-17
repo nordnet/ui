@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { TfootComponent, Props } from './Tfoot.types';
+import { TfootComponent } from './Tfoot.types';
 
-const StyledTfoot = styled.tfoot<Props>`
+const StyledTfoot = styled.tfoot`
   height: 100%;
   padding: ${p => p.theme.spacing.unit(2)}px 0;
   border-top: 1px solid ${p => p.theme.color.divider};

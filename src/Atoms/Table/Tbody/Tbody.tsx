@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { TbodyComponent, Props } from './Tbody.types';
+import { TbodyComponent } from './Tbody.types';
 
-const StyledTbody = styled.tbody<Props>`
+const StyledTbody = styled.tbody`
   width: 100%;
   overflow: 'auto';
   @supports (-webkit-overflow-scrolling: touch):  {

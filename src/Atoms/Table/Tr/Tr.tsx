@@ -11,10 +11,6 @@ const StyledTr = styled.tr<Props>`
   overflow: 'hidden';
 `;
 
-export const Tr: TrComponent = ({ textAlign, children }) => (
+export const Tr: TrComponent = ({ textAlign = 'left', children }) => (
   <StyledTr textAlign={textAlign}>{children}</StyledTr>
 );
-
-Tr.defaultProps = {
-  textAlign: 'left',
-};

@@ -26,13 +26,9 @@ const StyledStickyThead = styled(StyledThead)<Props>`
   }
 `;
 
-export const Thead: TheadComponent = ({ stickyHeader, children }) =>
+export const Thead: TheadComponent = ({ stickyHeader = false, children }) =>
   stickyHeader ? (
     <StyledStickyThead>{children}</StyledStickyThead>
   ) : (
     <StyledThead>{children}</StyledThead>
   );
-
-Thead.defaultProps = {
-  stickyHeader: false,
-};

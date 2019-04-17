@@ -8,13 +8,10 @@ const StyledTable = styled.table<Props>`
   border-collapse: collapse;
 `;
 
-export const Table: TableComponent = ({ children, width }) => (
-  <StyledTable width={width}>{children}</StyledTable>
+export const Table: TableComponent = ({ children, tableLayout = 'fixed', width = '100%' }) => (
+  <StyledTable tableLayout={tableLayout} width={width}>
+    {children}
+  </StyledTable>
 );
-
-Table.defaultProps = {
-  tableLayout: 'fixed',
-  width: '100%',
-};
 
 export default Table;

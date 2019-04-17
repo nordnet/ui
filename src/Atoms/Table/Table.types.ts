@@ -1,7 +1,6 @@
 export type Props = {
-  children: React.ReactNode;
   tableLayout?: string;
-  width?: number | string;
+  width?: string;
   maxHeight?: number;
 };
 
