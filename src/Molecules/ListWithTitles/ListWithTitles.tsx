@@ -8,9 +8,9 @@ const TitleContainer = styled.div`
 `;
 
 export const ListWithTitles: ListWithTitlesComponent = props => {
-  const { leftTitle, rightTitle, ...restProps } = props;
+  const { leftTitle, rightTitle, className, ...restProps } = props;
   return leftTitle || rightTitle ? (
-    <div>
+    <div className={className}>
       <TitleContainer>
         <Flexbox.Container gutter={0} justifyContent="space-between">
           <Flexbox.Item>
@@ -24,7 +24,7 @@ export const ListWithTitles: ListWithTitlesComponent = props => {
       <List {...restProps} />
     </div>
   ) : (
-    <List {...restProps} />
+    <List className={className} {...restProps} />
   );
 };
 
