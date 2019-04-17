@@ -169,7 +169,7 @@ storiesOf('Atoms | CssGrid', module)
       </Grid.Item>
     </Grid.Container>
   ))
-  .add('🧪 Experimental! CssGrid with minmax()', () => (
+  .add('🧪 Experimental! minmax() does not work in IE11', () => (
     <Grid.Container
       templateColumns={['1fr', 'minmax(30ch, 2fr)', '1fr']}
       // prettier-ignore
@@ -192,28 +192,7 @@ storiesOf('Atoms | CssGrid', module)
       </Grid.Item>
     </Grid.Container>
   ))
-  .add('🧪 Experimental! CssGrid with auto values', () => (
-    <Grid.Container
-      templateColumns={['1fr', '2fr']}
-      templateRows={['auto', '300px']}
-      // prettier-ignore
-      areas={[
-        ['left', 'top',],
-        ['left', 'content'],
-      ]}
-    >
-      <Grid.Item area="left">
-        <Content>Left</Content>
-      </Grid.Item>
-      <Grid.Item area="top">
-        <Content>Top</Content>
-      </Grid.Item>
-      <Grid.Item area="content">
-        <Content>Content</Content>
-      </Grid.Item>
-    </Grid.Container>
-  ))
-  .add('🧪 Experimental! CssGrid with absence of item in area', () => (
+  .add('🧪 Experimental! Missing template area generates an error', () => (
     <Grid.Container
       templateColumns={['repeat(2, 1fr)']}
       // prettier-ignore
