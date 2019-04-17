@@ -150,7 +150,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
 
 exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different screen sizes 1`] = `
 <div
-  className="CssGrid__StyledDiv-bu5cxy-0 jIOgaG"
+  className="CssGrid__StyledDiv-bu5cxy-0 bVggnP"
 >
   <div
     className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa dSufaw"

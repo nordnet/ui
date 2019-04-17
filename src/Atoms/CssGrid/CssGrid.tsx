@@ -2,15 +2,7 @@ import React from 'react';
 import R from 'ramda';
 import styled, { css, withTheme } from 'styled-components';
 import { Theme } from '../../theme/theme.types';
-import {
-  Props,
-  Gutter,
-  TemplateColumn,
-  TemplateRow,
-  Areas,
-  AreaName,
-  AreaInfo,
-} from './CssGrid.types';
+import { Props, Gutter, TemplateColumn, TemplateRow, AreaName, AreaInfo } from './CssGrid.types';
 import { isUndefined, assert } from '../../common/utils';
 import { getAreasInfo } from './utils';
 
