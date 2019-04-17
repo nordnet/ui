@@ -5200,6 +5200,264 @@ exports[`Storyshots Molecules | LinkSell LinkSell disabled 1`] = `
 </span>
 `;
 
+exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with left and right titles 1`] = `
+<div>
+  <div
+    className="ListWithTitles__TitleContainer-sc-1mk4x8k-0 iBwTqz"
+  >
+    <div
+      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 iIHuYW"
+    >
+      <div
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 irjdGO"
+      >
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+          type="secondary"
+        >
+          title1
+        </span>
+      </div>
+      <div
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 irjdGO"
+      >
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+          type="secondary"
+        >
+          title2
+        </span>
+      </div>
+    </div>
+  </div>
+  <ol
+    className="List__StyledList-sc-67l9u3-0 wlTZH"
+  >
+    <li
+      className="ListItem__StyledListItem-pn91gs-0 LDMQb"
+    >
+      <div
+        className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 daSWfP"
+      >
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
+          Left List Item 1
+        </div>
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
+          Right List Item 1
+        </div>
+      </div>
+    </li>
+    <li
+      className="ListItem__StyledListItem-pn91gs-0 LDMQb"
+    >
+      <div
+        className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 daSWfP"
+      >
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
+          Left List Item 2
+        </div>
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
+          Right List Item 2
+        </div>
+      </div>
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with left title 1`] = `
+<div>
+  <div
+    className="ListWithTitles__TitleContainer-sc-1mk4x8k-0 iBwTqz"
+  >
+    <div
+      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 iIHuYW"
+    >
+      <div
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 irjdGO"
+      >
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+          type="secondary"
+        >
+          title1
+        </span>
+      </div>
+      <div
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 irjdGO"
+      >
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+          type="secondary"
+        />
+      </div>
+    </div>
+  </div>
+  <ol
+    className="List__StyledList-sc-67l9u3-0 wlTZH"
+  >
+    <li
+      className="ListItem__StyledListItem-pn91gs-0 LDMQb"
+    >
+      <div
+        className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 daSWfP"
+      >
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
+          Left List Item 1
+        </div>
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
+          Right List Item 1
+        </div>
+      </div>
+    </li>
+    <li
+      className="ListItem__StyledListItem-pn91gs-0 LDMQb"
+    >
+      <div
+        className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 daSWfP"
+      >
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
+          Left List Item 2
+        </div>
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
+          Right List Item 2
+        </div>
+      </div>
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with no titles 1`] = `
+<ol
+  className="List__StyledList-sc-67l9u3-0 wlTZH"
+>
+  <li
+    className="ListItem__StyledListItem-pn91gs-0 LDMQb"
+  >
+    <div
+      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 daSWfP"
+    >
+      <div
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+      >
+        Left List Item 1
+      </div>
+      <div
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+      >
+        Right List Item 1
+      </div>
+    </div>
+  </li>
+  <li
+    className="ListItem__StyledListItem-pn91gs-0 LDMQb"
+  >
+    <div
+      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 daSWfP"
+    >
+      <div
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+      >
+        Left List Item 2
+      </div>
+      <div
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+      >
+        Right List Item 2
+      </div>
+    </div>
+  </li>
+</ol>
+`;
+
+exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with right title 1`] = `
+<div>
+  <div
+    className="ListWithTitles__TitleContainer-sc-1mk4x8k-0 iBwTqz"
+  >
+    <div
+      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 iIHuYW"
+    >
+      <div
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 irjdGO"
+      >
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+          type="secondary"
+        />
+      </div>
+      <div
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 irjdGO"
+      >
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+          type="secondary"
+        >
+          title1
+        </span>
+      </div>
+    </div>
+  </div>
+  <ol
+    className="List__StyledList-sc-67l9u3-0 wlTZH"
+  >
+    <li
+      className="ListItem__StyledListItem-pn91gs-0 LDMQb"
+    >
+      <div
+        className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 daSWfP"
+      >
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
+          Left List Item 1
+        </div>
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
+          Right List Item 1
+        </div>
+      </div>
+    </li>
+    <li
+      className="ListItem__StyledListItem-pn91gs-0 LDMQb"
+    >
+      <div
+        className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 daSWfP"
+      >
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
+          Left List Item 2
+        </div>
+        <div
+          className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+        >
+          Right List Item 2
+        </div>
+      </div>
+    </li>
+  </ol>
+</div>
+`;
+
 exports[`Storyshots Molecules | Percent Invalid value 1`] = `"-"`;
 
 exports[`Storyshots Molecules | Percent Percent with 0 decimals  1`] = `
