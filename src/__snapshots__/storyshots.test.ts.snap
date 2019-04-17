@@ -1215,7 +1215,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         fill="#28ff09"
         fillOpacity="14.118"
         focusable="false"
@@ -1252,7 +1252,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1290,7 +1290,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         role="img"
         viewBox="0 0 640 480"
       >
@@ -1406,7 +1406,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1445,7 +1445,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1484,7 +1484,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1541,7 +1541,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1575,7 +1575,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1609,7 +1609,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1651,7 +1651,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1702,7 +1702,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1798,7 +1798,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1849,7 +1849,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1906,7 +1906,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
 
 exports[`Storyshots Atoms | Flag Default use 1`] = `
 <svg
-  className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+  className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
   focusable="false"
   role="img"
   viewBox="0 0 640 480"
@@ -1948,7 +1948,7 @@ exports[`Storyshots Atoms | Flag Default use 1`] = `
 
 exports[`Storyshots Atoms | Flag Different size  1`] = `
 <svg
-  className="Flag__StyledFlag-sc-14ojzvi-0 kcbqVL"
+  className="Flag__StyledFlag-sc-14ojzvi-0 kzLZfN"
   focusable="false"
   height={10}
   role="img"
@@ -2153,7 +2153,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div>
       <svg
         aria-hidden="true"
-        className="IconBase__StyledIconBase-sc-10cbji3-0 dIOzcS"
+        className="IconBase__StyledIconBase-sc-10cbji3-0 henrXt"
         focusable="false"
         role="presentation"
         size={5}
@@ -2177,7 +2177,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div>
       <svg
         aria-hidden="true"
-        className="IconBase__StyledIconBase-sc-10cbji3-0 dIOzcS"
+        className="IconBase__StyledIconBase-sc-10cbji3-0 henrXt"
         focusable="false"
         role="presentation"
         size={5}
@@ -2202,7 +2202,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div>
       <svg
         aria-hidden="true"
-        className="IconBase__StyledIconBase-sc-10cbji3-0 dIOzcS"
+        className="IconBase__StyledIconBase-sc-10cbji3-0 henrXt"
         focusable="false"
         role="presentation"
         size={5}
@@ -2220,7 +2220,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
 exports[`Storyshots Atoms | Icon Default use 1`] = `
 <svg
   aria-hidden="true"
-  className="IconBase__StyledIconBase-sc-10cbji3-0 dIOzcS"
+  className="IconBase__StyledIconBase-sc-10cbji3-0 henrXt"
   focusable="false"
   role="presentation"
   size={5}
@@ -2235,7 +2235,7 @@ exports[`Storyshots Atoms | Icon Default use 1`] = `
 exports[`Storyshots Atoms | Icon Different size and color 1`] = `
 <svg
   aria-hidden="true"
-  className="IconBase__StyledIconBase-sc-10cbji3-0 hdWrZg"
+  className="IconBase__StyledIconBase-sc-10cbji3-0 hxcJPF"
   focusable="false"
   role="presentation"
   size={10}
@@ -4944,7 +4944,7 @@ exports[`Storyshots Molecules | LabeledValue Default 1`] = `
   className="LabeledValue__StyledLabeledValue-hatse2-0 drexN"
 >
   <div
-    className="LabeledValue__StyledLabel-hatse2-1 eNBnEP"
+    className="LabeledValue__StyledLabel-hatse2-1 iVUlZm"
   >
     <span
       className="Typography__StyledTypography-sc-10mju41-0 JofIB"
@@ -4963,7 +4963,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue secondary
   className="LabeledValue__StyledLabeledValue-hatse2-0 drexN"
 >
   <div
-    className="LabeledValue__StyledLabel-hatse2-1 eNBnEP"
+    className="LabeledValue__StyledLabel-hatse2-1 iVUlZm"
   >
     <span
       className="Typography__StyledTypography-sc-10mju41-0 JofIB"
@@ -4987,7 +4987,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue title1 1`
   className="LabeledValue__StyledLabeledValue-hatse2-0 drexN"
 >
   <div
-    className="LabeledValue__StyledLabel-hatse2-1 eNBnEP"
+    className="LabeledValue__StyledLabel-hatse2-1 iVUlZm"
   >
     <span
       className="Typography__StyledTypography-sc-10mju41-0 JofIB"
@@ -5011,7 +5011,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
   className="LabeledValue__StyledLabeledValue-hatse2-0 drexN"
 >
   <div
-    className="LabeledValue__StyledLabel-hatse2-1 eNBnEP"
+    className="LabeledValue__StyledLabel-hatse2-1 iVUlZm"
   >
     <span
       className="Typography__StyledTypography-sc-10mju41-0 JofIB"
@@ -5061,7 +5061,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
   className="LabeledValue__StyledLabeledValue-hatse2-0 drexN"
 >
   <div
-    className="LabeledValue__StyledLabel-hatse2-1 eNBnEP"
+    className="LabeledValue__StyledLabel-hatse2-1 iVUlZm"
   >
     <span
       className="Typography__StyledTypography-sc-10mju41-0 JofIB"
