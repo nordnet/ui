@@ -17,6 +17,7 @@ import LinkSell from './Molecules/LinkSell';
 import Media from './Atoms/Media';
 import Separator from './Atoms/Separator';
 import Spinner from './Atoms/Spinner';
+import { Table, Tbody, Td, Tfoot, Th, Thead, Tr } from './Atoms/Table';
 import Typography from './Atoms/Typography';
 import Number from './Atoms/Number';
 import Time from './Atoms/Time';
@@ -46,6 +47,13 @@ export {
   Spinner,
   Time,
   theme,
+  Table,
+  Tbody,
+  Td,
+  Tfoot,
+  Th,
+  Thead,
+  Tr,
   Typography,
   List,
   ListItem,
