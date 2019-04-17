@@ -18,25 +18,30 @@ export const List: React.FunctionComponent<Props> = ({
   leftTitle,
   rightTitle,
   children,
+  className,
 }) => {
-  const showTitle = leftTitle || rightTitle;
+  const ListComponent = (
+    <StyledList as={as} className={className}>
+      {children}
+    </StyledList>
+  );
 
-  return (
-    <>
-      {showTitle && (
-        <TitleContainer>
-          <Flexbox.Container gutter={0} justifyContent="space-between">
-            <Flexbox.Item>
-              <Typography type="secondary">{leftTitle}</Typography>
-            </Flexbox.Item>
-            <Flexbox.Item>
-              <Typography type="secondary">{rightTitle}</Typography>
-            </Flexbox.Item>
-          </Flexbox.Container>
-        </TitleContainer>
-      )}
-      <StyledList as={as}>{children}</StyledList>
-    </>
+  return leftTitle || rightTitle ? (
+    <div>
+      <TitleContainer>
+        <Flexbox.Container gutter={0} justifyContent="space-between">
+          <Flexbox.Item>
+            <Typography type="secondary">{leftTitle}</Typography>
+          </Flexbox.Item>
+          <Flexbox.Item>
+            <Typography type="secondary">{rightTitle}</Typography>
+          </Flexbox.Item>
+        </Flexbox.Container>
+      </TitleContainer>
+      {ListComponent}
+    </div>
+  ) : (
+    <>{ListComponent}</>
   );
 };
 

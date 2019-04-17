@@ -3,4 +3,5 @@ export type Props = {
   as?: 'ul' | 'ol';
   leftTitle?: React.ReactNode;
   rightTitle?: React.ReactNode;
+  className?: string;
 };

@@ -1658,7 +1658,7 @@ exports[`Storyshots Atoms | List Basic unordered list 1`] = `
 `;
 
 exports[`Storyshots Atoms | List Integration: List item with titles 1`] = `
-Array [
+<div>
   <div
     className="List__TitleContainer-sc-1d4vfkf-1 kmTYfS"
   >
@@ -1686,7 +1686,7 @@ Array [
         </span>
       </div>
     </div>
-  </div>,
+  </div>
   <ol
     className="List__StyledList-sc-1d4vfkf-0 iGYhna"
   >
@@ -1744,8 +1744,8 @@ Array [
         </div>
       </div>
     </li>
-  </ol>,
-]
+  </ol>
+</div>
 `;
 
 exports[`Storyshots Atoms | ListItem Basic list item 1`] = `
