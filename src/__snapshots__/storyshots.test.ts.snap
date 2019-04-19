@@ -1723,204 +1723,65 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     </div>
     <div>
       <span
-        className="Spinner__StyledSpan-x7jzy3-1 jxMyoV"
-        size={16}
+        className="Spinner__Animation-x7jzy3-0 cgQdeZ"
       >
         <svg
-          className="Spinner__StyledSpinner-x7jzy3-0 bettWO"
-          viewBox="0 0 16 16"
+          className="Spinner__StyledSvg-x7jzy3-1 hJnjlc"
+          height={16}
+          viewBox="0 0 24 24"
+          width={16}
         >
           <defs>
-            <clipPath
-              id="spinner__clip-path--16"
+            <linearGradient
+              id="spinner-#0046FF-1"
+              x1="50%"
+              x2="50%"
+              y1="0%"
+              y2="100%"
             >
-              <rect
-                height={16}
-                width={8}
-                x="0"
-                y="0"
+              <stop
+                offset="0%"
+                stopColor="#0046FF"
               />
-            </clipPath>
-            <mask
-              id="spinner__mask--16-2-20"
-              maskUnits="objectBoundingBox"
+              <stop
+                offset="100%"
+                stopColor="#0046FF"
+                stopOpacity=".5"
+              />
+            </linearGradient>
+            <linearGradient
+              id="spinner-#0046FF-2"
+              x1="50%"
+              x2="50%"
+              y1="0%"
+              y2="100%"
             >
-              <rect
-                fill="#FFFFFF"
-                height={16}
-                width={16}
+              <stop
+                offset="0%"
+                stopColor="#0046FF"
+                stopOpacity=".5"
               />
-              <g
-                className="spinner__gradient"
-              >
-                <g>
-                  <rect
-                    fill="rgb(0, 0, 0)"
-                    height={8}
-                    transform="rotate(0 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(13, 13, 13)"
-                    height={8}
-                    transform="rotate(18 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(26, 26, 26)"
-                    height={8}
-                    transform="rotate(36 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(38, 38, 38)"
-                    height={8}
-                    transform="rotate(54 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(51, 51, 51)"
-                    height={8}
-                    transform="rotate(72 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(64, 64, 64)"
-                    height={8}
-                    transform="rotate(90 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(77, 77, 77)"
-                    height={8}
-                    transform="rotate(108 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(89, 89, 89)"
-                    height={8}
-                    transform="rotate(126 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(102, 102, 102)"
-                    height={8}
-                    transform="rotate(144 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(115, 115, 115)"
-                    height={8}
-                    transform="rotate(162 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(128, 128, 128)"
-                    height={8}
-                    transform="rotate(180 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                </g>
-                <g
-                  clipPath="url(#spinner__clip-path--16)"
-                >
-                  <rect
-                    fill="rgb(140, 140, 140)"
-                    height={8}
-                    transform="rotate(198 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(153, 153, 153)"
-                    height={8}
-                    transform="rotate(216 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(166, 166, 166)"
-                    height={8}
-                    transform="rotate(234 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(179, 179, 179)"
-                    height={8}
-                    transform="rotate(252 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(191, 191, 191)"
-                    height={8}
-                    transform="rotate(270 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(204, 204, 204)"
-                    height={8}
-                    transform="rotate(288 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(217, 217, 217)"
-                    height={8}
-                    transform="rotate(306 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(230, 230, 230)"
-                    height={8}
-                    transform="rotate(324 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(242, 242, 242)"
-                    height={8}
-                    transform="rotate(342 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                </g>
-              </g>
-              <circle
-                cx={8}
-                cy={8}
-                fill="#000000"
-                r={6}
+              <stop
+                offset="100%"
+                stopColor="#0046FF"
+                stopOpacity="0"
               />
-              <circle
-                cx={8}
-                cy={1}
-                fill="#FFFFFF"
-                r={1}
-              />
-            </mask>
+            </linearGradient>
           </defs>
           <g
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "<circle class=\\"spinner__circle\\" cx=\\"8\\" cy=\\"8\\" r=\\"8\\" fill=\\"#0046FF\\" mask=\\"url(#spinner__mask--16-2-20)\\"></circle>",
-              }
-            }
-          />
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
+              fill="url(#spinner-#0046FF-1)"
+            />
+            <path
+              d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
+              fill="url(#spinner-#0046FF-2)"
+              transform="rotate(-180 6 12)"
+            />
+          </g>
         </svg>
       </span>
     </div>
@@ -1936,204 +1797,65 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     </div>
     <div>
       <span
-        className="Spinner__StyledSpan-x7jzy3-1 jxMyoV"
-        size={16}
+        className="Spinner__Animation-x7jzy3-0 cgQdeZ"
       >
         <svg
-          className="Spinner__StyledSpinner-x7jzy3-0 bettWO"
-          viewBox="0 0 16 16"
+          className="Spinner__StyledSvg-x7jzy3-1 hJnjlc"
+          height={16}
+          viewBox="0 0 24 24"
+          width={16}
         >
           <defs>
-            <clipPath
-              id="spinner__clip-path--16"
+            <linearGradient
+              id="spinner-#282823-1"
+              x1="50%"
+              x2="50%"
+              y1="0%"
+              y2="100%"
             >
-              <rect
-                height={16}
-                width={8}
-                x="0"
-                y="0"
+              <stop
+                offset="0%"
+                stopColor="#282823"
               />
-            </clipPath>
-            <mask
-              id="spinner__mask--16-2-20"
-              maskUnits="objectBoundingBox"
+              <stop
+                offset="100%"
+                stopColor="#282823"
+                stopOpacity=".5"
+              />
+            </linearGradient>
+            <linearGradient
+              id="spinner-#282823-2"
+              x1="50%"
+              x2="50%"
+              y1="0%"
+              y2="100%"
             >
-              <rect
-                fill="#FFFFFF"
-                height={16}
-                width={16}
+              <stop
+                offset="0%"
+                stopColor="#282823"
+                stopOpacity=".5"
               />
-              <g
-                className="spinner__gradient"
-              >
-                <g>
-                  <rect
-                    fill="rgb(0, 0, 0)"
-                    height={8}
-                    transform="rotate(0 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(13, 13, 13)"
-                    height={8}
-                    transform="rotate(18 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(26, 26, 26)"
-                    height={8}
-                    transform="rotate(36 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(38, 38, 38)"
-                    height={8}
-                    transform="rotate(54 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(51, 51, 51)"
-                    height={8}
-                    transform="rotate(72 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(64, 64, 64)"
-                    height={8}
-                    transform="rotate(90 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(77, 77, 77)"
-                    height={8}
-                    transform="rotate(108 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(89, 89, 89)"
-                    height={8}
-                    transform="rotate(126 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(102, 102, 102)"
-                    height={8}
-                    transform="rotate(144 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(115, 115, 115)"
-                    height={8}
-                    transform="rotate(162 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(128, 128, 128)"
-                    height={8}
-                    transform="rotate(180 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                </g>
-                <g
-                  clipPath="url(#spinner__clip-path--16)"
-                >
-                  <rect
-                    fill="rgb(140, 140, 140)"
-                    height={8}
-                    transform="rotate(198 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(153, 153, 153)"
-                    height={8}
-                    transform="rotate(216 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(166, 166, 166)"
-                    height={8}
-                    transform="rotate(234 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(179, 179, 179)"
-                    height={8}
-                    transform="rotate(252 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(191, 191, 191)"
-                    height={8}
-                    transform="rotate(270 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(204, 204, 204)"
-                    height={8}
-                    transform="rotate(288 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(217, 217, 217)"
-                    height={8}
-                    transform="rotate(306 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(230, 230, 230)"
-                    height={8}
-                    transform="rotate(324 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(242, 242, 242)"
-                    height={8}
-                    transform="rotate(342 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                </g>
-              </g>
-              <circle
-                cx={8}
-                cy={8}
-                fill="#000000"
-                r={6}
+              <stop
+                offset="100%"
+                stopColor="#282823"
+                stopOpacity="0"
               />
-              <circle
-                cx={8}
-                cy={1}
-                fill="#FFFFFF"
-                r={1}
-              />
-            </mask>
+            </linearGradient>
           </defs>
           <g
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "<circle class=\\"spinner__circle\\" cx=\\"8\\" cy=\\"8\\" r=\\"8\\" fill=\\"#282823\\" mask=\\"url(#spinner__mask--16-2-20)\\"></circle>",
-              }
-            }
-          />
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
+              fill="url(#spinner-#282823-1)"
+            />
+            <path
+              d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
+              fill="url(#spinner-#282823-2)"
+              transform="rotate(-180 6 12)"
+            />
+          </g>
         </svg>
       </span>
     </div>
@@ -2149,204 +1871,65 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     </div>
     <div>
       <span
-        className="Spinner__StyledSpan-x7jzy3-1 jxMyoV"
-        size={16}
+        className="Spinner__Animation-x7jzy3-0 cgQdeZ"
       >
         <svg
-          className="Spinner__StyledSpinner-x7jzy3-0 bettWO"
-          viewBox="0 0 16 16"
+          className="Spinner__StyledSvg-x7jzy3-1 hJnjlc"
+          height={16}
+          viewBox="0 0 24 24"
+          width={16}
         >
           <defs>
-            <clipPath
-              id="spinner__clip-path--16"
+            <linearGradient
+              id="spinner-#00D200-1"
+              x1="50%"
+              x2="50%"
+              y1="0%"
+              y2="100%"
             >
-              <rect
-                height={16}
-                width={8}
-                x="0"
-                y="0"
+              <stop
+                offset="0%"
+                stopColor="#00D200"
               />
-            </clipPath>
-            <mask
-              id="spinner__mask--16-2-20"
-              maskUnits="objectBoundingBox"
+              <stop
+                offset="100%"
+                stopColor="#00D200"
+                stopOpacity=".5"
+              />
+            </linearGradient>
+            <linearGradient
+              id="spinner-#00D200-2"
+              x1="50%"
+              x2="50%"
+              y1="0%"
+              y2="100%"
             >
-              <rect
-                fill="#FFFFFF"
-                height={16}
-                width={16}
+              <stop
+                offset="0%"
+                stopColor="#00D200"
+                stopOpacity=".5"
               />
-              <g
-                className="spinner__gradient"
-              >
-                <g>
-                  <rect
-                    fill="rgb(0, 0, 0)"
-                    height={8}
-                    transform="rotate(0 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(13, 13, 13)"
-                    height={8}
-                    transform="rotate(18 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(26, 26, 26)"
-                    height={8}
-                    transform="rotate(36 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(38, 38, 38)"
-                    height={8}
-                    transform="rotate(54 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(51, 51, 51)"
-                    height={8}
-                    transform="rotate(72 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(64, 64, 64)"
-                    height={8}
-                    transform="rotate(90 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(77, 77, 77)"
-                    height={8}
-                    transform="rotate(108 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(89, 89, 89)"
-                    height={8}
-                    transform="rotate(126 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(102, 102, 102)"
-                    height={8}
-                    transform="rotate(144 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(115, 115, 115)"
-                    height={8}
-                    transform="rotate(162 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(128, 128, 128)"
-                    height={8}
-                    transform="rotate(180 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                </g>
-                <g
-                  clipPath="url(#spinner__clip-path--16)"
-                >
-                  <rect
-                    fill="rgb(140, 140, 140)"
-                    height={8}
-                    transform="rotate(198 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(153, 153, 153)"
-                    height={8}
-                    transform="rotate(216 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(166, 166, 166)"
-                    height={8}
-                    transform="rotate(234 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(179, 179, 179)"
-                    height={8}
-                    transform="rotate(252 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(191, 191, 191)"
-                    height={8}
-                    transform="rotate(270 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(204, 204, 204)"
-                    height={8}
-                    transform="rotate(288 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(217, 217, 217)"
-                    height={8}
-                    transform="rotate(306 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(230, 230, 230)"
-                    height={8}
-                    transform="rotate(324 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(242, 242, 242)"
-                    height={8}
-                    transform="rotate(342 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                </g>
-              </g>
-              <circle
-                cx={8}
-                cy={8}
-                fill="#000000"
-                r={6}
+              <stop
+                offset="100%"
+                stopColor="#00D200"
+                stopOpacity="0"
               />
-              <circle
-                cx={8}
-                cy={1}
-                fill="#FFFFFF"
-                r={1}
-              />
-            </mask>
+            </linearGradient>
           </defs>
           <g
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "<circle class=\\"spinner__circle\\" cx=\\"8\\" cy=\\"8\\" r=\\"8\\" fill=\\"#00D200\\" mask=\\"url(#spinner__mask--16-2-20)\\"></circle>",
-              }
-            }
-          />
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
+              fill="url(#spinner-#00D200-1)"
+            />
+            <path
+              d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
+              fill="url(#spinner-#00D200-2)"
+              transform="rotate(-180 6 12)"
+            />
+          </g>
         </svg>
       </span>
     </div>
@@ -2362,204 +1945,65 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     </div>
     <div>
       <span
-        className="Spinner__StyledSpan-x7jzy3-1 jxMyoV"
-        size={16}
+        className="Spinner__Animation-x7jzy3-0 cgQdeZ"
       >
         <svg
-          className="Spinner__StyledSpinner-x7jzy3-0 bettWO"
-          viewBox="0 0 16 16"
+          className="Spinner__StyledSvg-x7jzy3-1 hJnjlc"
+          height={16}
+          viewBox="0 0 24 24"
+          width={16}
         >
           <defs>
-            <clipPath
-              id="spinner__clip-path--16"
+            <linearGradient
+              id="spinner-#FF1900-1"
+              x1="50%"
+              x2="50%"
+              y1="0%"
+              y2="100%"
             >
-              <rect
-                height={16}
-                width={8}
-                x="0"
-                y="0"
+              <stop
+                offset="0%"
+                stopColor="#FF1900"
               />
-            </clipPath>
-            <mask
-              id="spinner__mask--16-2-20"
-              maskUnits="objectBoundingBox"
+              <stop
+                offset="100%"
+                stopColor="#FF1900"
+                stopOpacity=".5"
+              />
+            </linearGradient>
+            <linearGradient
+              id="spinner-#FF1900-2"
+              x1="50%"
+              x2="50%"
+              y1="0%"
+              y2="100%"
             >
-              <rect
-                fill="#FFFFFF"
-                height={16}
-                width={16}
+              <stop
+                offset="0%"
+                stopColor="#FF1900"
+                stopOpacity=".5"
               />
-              <g
-                className="spinner__gradient"
-              >
-                <g>
-                  <rect
-                    fill="rgb(0, 0, 0)"
-                    height={8}
-                    transform="rotate(0 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(13, 13, 13)"
-                    height={8}
-                    transform="rotate(18 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(26, 26, 26)"
-                    height={8}
-                    transform="rotate(36 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(38, 38, 38)"
-                    height={8}
-                    transform="rotate(54 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(51, 51, 51)"
-                    height={8}
-                    transform="rotate(72 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(64, 64, 64)"
-                    height={8}
-                    transform="rotate(90 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(77, 77, 77)"
-                    height={8}
-                    transform="rotate(108 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(89, 89, 89)"
-                    height={8}
-                    transform="rotate(126 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(102, 102, 102)"
-                    height={8}
-                    transform="rotate(144 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(115, 115, 115)"
-                    height={8}
-                    transform="rotate(162 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(128, 128, 128)"
-                    height={8}
-                    transform="rotate(180 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                </g>
-                <g
-                  clipPath="url(#spinner__clip-path--16)"
-                >
-                  <rect
-                    fill="rgb(140, 140, 140)"
-                    height={8}
-                    transform="rotate(198 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(153, 153, 153)"
-                    height={8}
-                    transform="rotate(216 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(166, 166, 166)"
-                    height={8}
-                    transform="rotate(234 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(179, 179, 179)"
-                    height={8}
-                    transform="rotate(252 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(191, 191, 191)"
-                    height={8}
-                    transform="rotate(270 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(204, 204, 204)"
-                    height={8}
-                    transform="rotate(288 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(217, 217, 217)"
-                    height={8}
-                    transform="rotate(306 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(230, 230, 230)"
-                    height={8}
-                    transform="rotate(324 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(242, 242, 242)"
-                    height={8}
-                    transform="rotate(342 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                </g>
-              </g>
-              <circle
-                cx={8}
-                cy={8}
-                fill="#000000"
-                r={6}
+              <stop
+                offset="100%"
+                stopColor="#FF1900"
+                stopOpacity="0"
               />
-              <circle
-                cx={8}
-                cy={1}
-                fill="#FFFFFF"
-                r={1}
-              />
-            </mask>
+            </linearGradient>
           </defs>
           <g
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "<circle class=\\"spinner__circle\\" cx=\\"8\\" cy=\\"8\\" r=\\"8\\" fill=\\"#FF1900\\" mask=\\"url(#spinner__mask--16-2-20)\\"></circle>",
-              }
-            }
-          />
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
+              fill="url(#spinner-#FF1900-1)"
+            />
+            <path
+              d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
+              fill="url(#spinner-#FF1900-2)"
+              transform="rotate(-180 6 12)"
+            />
+          </g>
         </svg>
       </span>
     </div>
@@ -2575,204 +2019,65 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     </div>
     <div>
       <span
-        className="Spinner__StyledSpan-x7jzy3-1 jxMyoV"
-        size={16}
+        className="Spinner__Animation-x7jzy3-0 cgQdeZ"
       >
         <svg
-          className="Spinner__StyledSpinner-x7jzy3-0 bettWO"
-          viewBox="0 0 16 16"
+          className="Spinner__StyledSvg-x7jzy3-1 hJnjlc"
+          height={16}
+          viewBox="0 0 24 24"
+          width={16}
         >
           <defs>
-            <clipPath
-              id="spinner__clip-path--16"
+            <linearGradient
+              id="spinner-#FFCF00-1"
+              x1="50%"
+              x2="50%"
+              y1="0%"
+              y2="100%"
             >
-              <rect
-                height={16}
-                width={8}
-                x="0"
-                y="0"
+              <stop
+                offset="0%"
+                stopColor="#FFCF00"
               />
-            </clipPath>
-            <mask
-              id="spinner__mask--16-2-20"
-              maskUnits="objectBoundingBox"
+              <stop
+                offset="100%"
+                stopColor="#FFCF00"
+                stopOpacity=".5"
+              />
+            </linearGradient>
+            <linearGradient
+              id="spinner-#FFCF00-2"
+              x1="50%"
+              x2="50%"
+              y1="0%"
+              y2="100%"
             >
-              <rect
-                fill="#FFFFFF"
-                height={16}
-                width={16}
+              <stop
+                offset="0%"
+                stopColor="#FFCF00"
+                stopOpacity=".5"
               />
-              <g
-                className="spinner__gradient"
-              >
-                <g>
-                  <rect
-                    fill="rgb(0, 0, 0)"
-                    height={8}
-                    transform="rotate(0 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(13, 13, 13)"
-                    height={8}
-                    transform="rotate(18 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(26, 26, 26)"
-                    height={8}
-                    transform="rotate(36 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(38, 38, 38)"
-                    height={8}
-                    transform="rotate(54 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(51, 51, 51)"
-                    height={8}
-                    transform="rotate(72 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(64, 64, 64)"
-                    height={8}
-                    transform="rotate(90 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(77, 77, 77)"
-                    height={8}
-                    transform="rotate(108 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(89, 89, 89)"
-                    height={8}
-                    transform="rotate(126 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(102, 102, 102)"
-                    height={8}
-                    transform="rotate(144 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(115, 115, 115)"
-                    height={8}
-                    transform="rotate(162 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(128, 128, 128)"
-                    height={8}
-                    transform="rotate(180 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                </g>
-                <g
-                  clipPath="url(#spinner__clip-path--16)"
-                >
-                  <rect
-                    fill="rgb(140, 140, 140)"
-                    height={8}
-                    transform="rotate(198 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(153, 153, 153)"
-                    height={8}
-                    transform="rotate(216 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(166, 166, 166)"
-                    height={8}
-                    transform="rotate(234 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(179, 179, 179)"
-                    height={8}
-                    transform="rotate(252 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(191, 191, 191)"
-                    height={8}
-                    transform="rotate(270 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(204, 204, 204)"
-                    height={8}
-                    transform="rotate(288 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(217, 217, 217)"
-                    height={8}
-                    transform="rotate(306 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(230, 230, 230)"
-                    height={8}
-                    transform="rotate(324 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(242, 242, 242)"
-                    height={8}
-                    transform="rotate(342 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                </g>
-              </g>
-              <circle
-                cx={8}
-                cy={8}
-                fill="#000000"
-                r={6}
+              <stop
+                offset="100%"
+                stopColor="#FFCF00"
+                stopOpacity="0"
               />
-              <circle
-                cx={8}
-                cy={1}
-                fill="#FFFFFF"
-                r={1}
-              />
-            </mask>
+            </linearGradient>
           </defs>
           <g
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "<circle class=\\"spinner__circle\\" cx=\\"8\\" cy=\\"8\\" r=\\"8\\" fill=\\"#FFCF00\\" mask=\\"url(#spinner__mask--16-2-20)\\"></circle>",
-              }
-            }
-          />
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
+              fill="url(#spinner-#FFCF00-1)"
+            />
+            <path
+              d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
+              fill="url(#spinner-#FFCF00-2)"
+              transform="rotate(-180 6 12)"
+            />
+          </g>
         </svg>
       </span>
     </div>
@@ -2788,204 +2093,65 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     </div>
     <div>
       <span
-        className="Spinner__StyledSpan-x7jzy3-1 jxMyoV"
-        size={16}
+        className="Spinner__Animation-x7jzy3-0 cgQdeZ"
       >
         <svg
-          className="Spinner__StyledSpinner-x7jzy3-0 bettWO"
-          viewBox="0 0 16 16"
+          className="Spinner__StyledSvg-x7jzy3-1 hJnjlc"
+          height={16}
+          viewBox="0 0 24 24"
+          width={16}
         >
           <defs>
-            <clipPath
-              id="spinner__clip-path--16"
+            <linearGradient
+              id="spinner-#6E6E69-1"
+              x1="50%"
+              x2="50%"
+              y1="0%"
+              y2="100%"
             >
-              <rect
-                height={16}
-                width={8}
-                x="0"
-                y="0"
+              <stop
+                offset="0%"
+                stopColor="#6E6E69"
               />
-            </clipPath>
-            <mask
-              id="spinner__mask--16-2-20"
-              maskUnits="objectBoundingBox"
+              <stop
+                offset="100%"
+                stopColor="#6E6E69"
+                stopOpacity=".5"
+              />
+            </linearGradient>
+            <linearGradient
+              id="spinner-#6E6E69-2"
+              x1="50%"
+              x2="50%"
+              y1="0%"
+              y2="100%"
             >
-              <rect
-                fill="#FFFFFF"
-                height={16}
-                width={16}
+              <stop
+                offset="0%"
+                stopColor="#6E6E69"
+                stopOpacity=".5"
               />
-              <g
-                className="spinner__gradient"
-              >
-                <g>
-                  <rect
-                    fill="rgb(0, 0, 0)"
-                    height={8}
-                    transform="rotate(0 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(13, 13, 13)"
-                    height={8}
-                    transform="rotate(18 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(26, 26, 26)"
-                    height={8}
-                    transform="rotate(36 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(38, 38, 38)"
-                    height={8}
-                    transform="rotate(54 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(51, 51, 51)"
-                    height={8}
-                    transform="rotate(72 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(64, 64, 64)"
-                    height={8}
-                    transform="rotate(90 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(77, 77, 77)"
-                    height={8}
-                    transform="rotate(108 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(89, 89, 89)"
-                    height={8}
-                    transform="rotate(126 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(102, 102, 102)"
-                    height={8}
-                    transform="rotate(144 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(115, 115, 115)"
-                    height={8}
-                    transform="rotate(162 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(128, 128, 128)"
-                    height={8}
-                    transform="rotate(180 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                </g>
-                <g
-                  clipPath="url(#spinner__clip-path--16)"
-                >
-                  <rect
-                    fill="rgb(140, 140, 140)"
-                    height={8}
-                    transform="rotate(198 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(153, 153, 153)"
-                    height={8}
-                    transform="rotate(216 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(166, 166, 166)"
-                    height={8}
-                    transform="rotate(234 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(179, 179, 179)"
-                    height={8}
-                    transform="rotate(252 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(191, 191, 191)"
-                    height={8}
-                    transform="rotate(270 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(204, 204, 204)"
-                    height={8}
-                    transform="rotate(288 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(217, 217, 217)"
-                    height={8}
-                    transform="rotate(306 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(230, 230, 230)"
-                    height={8}
-                    transform="rotate(324 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                  <rect
-                    fill="rgb(242, 242, 242)"
-                    height={8}
-                    transform="rotate(342 8 8)"
-                    width={8}
-                    x={8}
-                  />
-                </g>
-              </g>
-              <circle
-                cx={8}
-                cy={8}
-                fill="#000000"
-                r={6}
+              <stop
+                offset="100%"
+                stopColor="#6E6E69"
+                stopOpacity="0"
               />
-              <circle
-                cx={8}
-                cy={1}
-                fill="#FFFFFF"
-                r={1}
-              />
-            </mask>
+            </linearGradient>
           </defs>
           <g
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "<circle class=\\"spinner__circle\\" cx=\\"8\\" cy=\\"8\\" r=\\"8\\" fill=\\"#6E6E69\\" mask=\\"url(#spinner__mask--16-2-20)\\"></circle>",
-              }
-            }
-          />
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
+              fill="url(#spinner-#6E6E69-1)"
+            />
+            <path
+              d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
+              fill="url(#spinner-#6E6E69-2)"
+              transform="rotate(-180 6 12)"
+            />
+          </g>
         </svg>
       </span>
     </div>
@@ -2995,408 +2161,130 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
 
 exports[`Storyshots Atoms | Spinner Spinner big 1`] = `
 <span
-  className="Spinner__StyledSpan-x7jzy3-1 cKtLnc"
-  size={64}
+  className="Spinner__Animation-x7jzy3-0 cgQdeZ"
 >
   <svg
-    className="Spinner__StyledSpinner-x7jzy3-0 bettWO"
-    viewBox="0 0 64 64"
+    className="Spinner__StyledSvg-x7jzy3-1 hJnjlc"
+    height={64}
+    viewBox="0 0 24 24"
+    width={64}
   >
     <defs>
-      <clipPath
-        id="spinner__clip-path--64"
+      <linearGradient
+        id="spinner-#0046FF-1"
+        x1="50%"
+        x2="50%"
+        y1="0%"
+        y2="100%"
       >
-        <rect
-          height={64}
-          width={32}
-          x="0"
-          y="0"
+        <stop
+          offset="0%"
+          stopColor="#0046FF"
         />
-      </clipPath>
-      <mask
-        id="spinner__mask--64-8-20"
-        maskUnits="objectBoundingBox"
+        <stop
+          offset="100%"
+          stopColor="#0046FF"
+          stopOpacity=".5"
+        />
+      </linearGradient>
+      <linearGradient
+        id="spinner-#0046FF-2"
+        x1="50%"
+        x2="50%"
+        y1="0%"
+        y2="100%"
       >
-        <rect
-          fill="#FFFFFF"
-          height={64}
-          width={64}
+        <stop
+          offset="0%"
+          stopColor="#0046FF"
+          stopOpacity=".5"
         />
-        <g
-          className="spinner__gradient"
-        >
-          <g>
-            <rect
-              fill="rgb(0, 0, 0)"
-              height={32}
-              transform="rotate(0 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(13, 13, 13)"
-              height={32}
-              transform="rotate(18 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(26, 26, 26)"
-              height={32}
-              transform="rotate(36 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(38, 38, 38)"
-              height={32}
-              transform="rotate(54 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(51, 51, 51)"
-              height={32}
-              transform="rotate(72 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(64, 64, 64)"
-              height={32}
-              transform="rotate(90 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(77, 77, 77)"
-              height={32}
-              transform="rotate(108 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(89, 89, 89)"
-              height={32}
-              transform="rotate(126 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(102, 102, 102)"
-              height={32}
-              transform="rotate(144 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(115, 115, 115)"
-              height={32}
-              transform="rotate(162 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(128, 128, 128)"
-              height={32}
-              transform="rotate(180 32 32)"
-              width={32}
-              x={32}
-            />
-          </g>
-          <g
-            clipPath="url(#spinner__clip-path--64)"
-          >
-            <rect
-              fill="rgb(140, 140, 140)"
-              height={32}
-              transform="rotate(198 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(153, 153, 153)"
-              height={32}
-              transform="rotate(216 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(166, 166, 166)"
-              height={32}
-              transform="rotate(234 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(179, 179, 179)"
-              height={32}
-              transform="rotate(252 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(191, 191, 191)"
-              height={32}
-              transform="rotate(270 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(204, 204, 204)"
-              height={32}
-              transform="rotate(288 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(217, 217, 217)"
-              height={32}
-              transform="rotate(306 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(230, 230, 230)"
-              height={32}
-              transform="rotate(324 32 32)"
-              width={32}
-              x={32}
-            />
-            <rect
-              fill="rgb(242, 242, 242)"
-              height={32}
-              transform="rotate(342 32 32)"
-              width={32}
-              x={32}
-            />
-          </g>
-        </g>
-        <circle
-          cx={32}
-          cy={32}
-          fill="#000000"
-          r={24}
+        <stop
+          offset="100%"
+          stopColor="#0046FF"
+          stopOpacity="0"
         />
-        <circle
-          cx={32}
-          cy={4}
-          fill="#FFFFFF"
-          r={4}
-        />
-      </mask>
+      </linearGradient>
     </defs>
     <g
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "<circle class=\\"spinner__circle\\" cx=\\"32\\" cy=\\"32\\" r=\\"32\\" fill=\\"#0046FF\\" mask=\\"url(#spinner__mask--64-8-20)\\"></circle>",
-        }
-      }
-    />
+      fill="none"
+      fillRule="evenodd"
+    >
+      <path
+        d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
+        fill="url(#spinner-#0046FF-1)"
+      />
+      <path
+        d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
+        fill="url(#spinner-#0046FF-2)"
+        transform="rotate(-180 6 12)"
+      />
+    </g>
   </svg>
 </span>
 `;
 
 exports[`Storyshots Atoms | Spinner Spinner default 1`] = `
 <span
-  className="Spinner__StyledSpan-x7jzy3-1 jxMyoV"
-  size={16}
+  className="Spinner__Animation-x7jzy3-0 cgQdeZ"
 >
   <svg
-    className="Spinner__StyledSpinner-x7jzy3-0 bettWO"
-    viewBox="0 0 16 16"
+    className="Spinner__StyledSvg-x7jzy3-1 hJnjlc"
+    height={16}
+    viewBox="0 0 24 24"
+    width={16}
   >
     <defs>
-      <clipPath
-        id="spinner__clip-path--16"
+      <linearGradient
+        id="spinner-#0046FF-1"
+        x1="50%"
+        x2="50%"
+        y1="0%"
+        y2="100%"
       >
-        <rect
-          height={16}
-          width={8}
-          x="0"
-          y="0"
+        <stop
+          offset="0%"
+          stopColor="#0046FF"
         />
-      </clipPath>
-      <mask
-        id="spinner__mask--16-2-20"
-        maskUnits="objectBoundingBox"
+        <stop
+          offset="100%"
+          stopColor="#0046FF"
+          stopOpacity=".5"
+        />
+      </linearGradient>
+      <linearGradient
+        id="spinner-#0046FF-2"
+        x1="50%"
+        x2="50%"
+        y1="0%"
+        y2="100%"
       >
-        <rect
-          fill="#FFFFFF"
-          height={16}
-          width={16}
+        <stop
+          offset="0%"
+          stopColor="#0046FF"
+          stopOpacity=".5"
         />
-        <g
-          className="spinner__gradient"
-        >
-          <g>
-            <rect
-              fill="rgb(0, 0, 0)"
-              height={8}
-              transform="rotate(0 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(13, 13, 13)"
-              height={8}
-              transform="rotate(18 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(26, 26, 26)"
-              height={8}
-              transform="rotate(36 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(38, 38, 38)"
-              height={8}
-              transform="rotate(54 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(51, 51, 51)"
-              height={8}
-              transform="rotate(72 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(64, 64, 64)"
-              height={8}
-              transform="rotate(90 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(77, 77, 77)"
-              height={8}
-              transform="rotate(108 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(89, 89, 89)"
-              height={8}
-              transform="rotate(126 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(102, 102, 102)"
-              height={8}
-              transform="rotate(144 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(115, 115, 115)"
-              height={8}
-              transform="rotate(162 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(128, 128, 128)"
-              height={8}
-              transform="rotate(180 8 8)"
-              width={8}
-              x={8}
-            />
-          </g>
-          <g
-            clipPath="url(#spinner__clip-path--16)"
-          >
-            <rect
-              fill="rgb(140, 140, 140)"
-              height={8}
-              transform="rotate(198 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(153, 153, 153)"
-              height={8}
-              transform="rotate(216 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(166, 166, 166)"
-              height={8}
-              transform="rotate(234 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(179, 179, 179)"
-              height={8}
-              transform="rotate(252 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(191, 191, 191)"
-              height={8}
-              transform="rotate(270 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(204, 204, 204)"
-              height={8}
-              transform="rotate(288 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(217, 217, 217)"
-              height={8}
-              transform="rotate(306 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(230, 230, 230)"
-              height={8}
-              transform="rotate(324 8 8)"
-              width={8}
-              x={8}
-            />
-            <rect
-              fill="rgb(242, 242, 242)"
-              height={8}
-              transform="rotate(342 8 8)"
-              width={8}
-              x={8}
-            />
-          </g>
-        </g>
-        <circle
-          cx={8}
-          cy={8}
-          fill="#000000"
-          r={6}
+        <stop
+          offset="100%"
+          stopColor="#0046FF"
+          stopOpacity="0"
         />
-        <circle
-          cx={8}
-          cy={1}
-          fill="#FFFFFF"
-          r={1}
-        />
-      </mask>
+      </linearGradient>
     </defs>
     <g
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "<circle class=\\"spinner__circle\\" cx=\\"8\\" cy=\\"8\\" r=\\"8\\" fill=\\"#0046FF\\" mask=\\"url(#spinner__mask--16-2-20)\\"></circle>",
-        }
-      }
-    />
+      fill="none"
+      fillRule="evenodd"
+    >
+      <path
+        d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
+        fill="url(#spinner-#0046FF-1)"
+      />
+      <path
+        d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
+        fill="url(#spinner-#0046FF-2)"
+        transform="rotate(-180 6 12)"
+      />
+    </g>
   </svg>
 </span>
 `;
