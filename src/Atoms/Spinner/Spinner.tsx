@@ -22,7 +22,7 @@ const StyledSvg = styled.svg`
 const RawSpinner: React.FC<PropsWithTheme> = ({ theme, size, color }) => {
   const calculatedSize = theme.spacing.unit(size || 4);
   const usedColor = typeof color === 'function' ? color(theme) : color || theme.color.cta;
-  const sanatizedColor = usedColor.replace(/\#\s?/g, '');
+  const sanatizedColor = usedColor.replace(/#\s?/g, '');
   const id1 = `spinner-${sanatizedColor}-1`;
   const id2 = `spinner-${sanatizedColor}-2`;
 
@@ -31,12 +31,12 @@ const RawSpinner: React.FC<PropsWithTheme> = ({ theme, size, color }) => {
       <StyledSvg width={calculatedSize} height={calculatedSize} viewBox="0 0 24 24">
         <defs>
           <linearGradient id={id1} x1="50%" x2="50%" y1="0%" y2="100%">
-            <stop offset="0%" stopColor={usedColor} />
+            <stop offset="0%" stopColor={usedColor} stopOpacity="0" />
             <stop offset="100%" stopColor={usedColor} stopOpacity=".5" />
           </linearGradient>
           <linearGradient id={id2} x1="50%" x2="50%" y1="0%" y2="100%">
             <stop offset="0%" stopColor={usedColor} stopOpacity=".5" />
-            <stop offset="100%" stopColor={usedColor} stopOpacity="0" />
+            <stop offset="100%" stopColor={usedColor} />
           </linearGradient>
         </defs>
         <g fill="none" fillRule="evenodd">

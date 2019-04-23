@@ -1742,6 +1742,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               <stop
                 offset="0%"
                 stopColor="#0046FF"
+                stopOpacity="0"
               />
               <stop
                 offset="100%"
@@ -1764,7 +1765,6 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               <stop
                 offset="100%"
                 stopColor="#0046FF"
-                stopOpacity="0"
               />
             </linearGradient>
           </defs>
@@ -1816,6 +1816,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               <stop
                 offset="0%"
                 stopColor="#282823"
+                stopOpacity="0"
               />
               <stop
                 offset="100%"
@@ -1838,7 +1839,6 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               <stop
                 offset="100%"
                 stopColor="#282823"
-                stopOpacity="0"
               />
             </linearGradient>
           </defs>
@@ -1890,6 +1890,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               <stop
                 offset="0%"
                 stopColor="#00D200"
+                stopOpacity="0"
               />
               <stop
                 offset="100%"
@@ -1912,7 +1913,6 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               <stop
                 offset="100%"
                 stopColor="#00D200"
-                stopOpacity="0"
               />
             </linearGradient>
           </defs>
@@ -1964,6 +1964,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               <stop
                 offset="0%"
                 stopColor="#FF1900"
+                stopOpacity="0"
               />
               <stop
                 offset="100%"
@@ -1986,7 +1987,6 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               <stop
                 offset="100%"
                 stopColor="#FF1900"
-                stopOpacity="0"
               />
             </linearGradient>
           </defs>
@@ -2038,6 +2038,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               <stop
                 offset="0%"
                 stopColor="#FFCF00"
+                stopOpacity="0"
               />
               <stop
                 offset="100%"
@@ -2060,7 +2061,6 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               <stop
                 offset="100%"
                 stopColor="#FFCF00"
-                stopOpacity="0"
               />
             </linearGradient>
           </defs>
@@ -2112,6 +2112,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               <stop
                 offset="0%"
                 stopColor="#6E6E69"
+                stopOpacity="0"
               />
               <stop
                 offset="100%"
@@ -2134,7 +2135,6 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               <stop
                 offset="100%"
                 stopColor="#6E6E69"
-                stopOpacity="0"
               />
             </linearGradient>
           </defs>
@@ -2180,6 +2180,7 @@ exports[`Storyshots Atoms | Spinner Spinner big 1`] = `
         <stop
           offset="0%"
           stopColor="#0046FF"
+          stopOpacity="0"
         />
         <stop
           offset="100%"
@@ -2202,7 +2203,6 @@ exports[`Storyshots Atoms | Spinner Spinner big 1`] = `
         <stop
           offset="100%"
           stopColor="#0046FF"
-          stopOpacity="0"
         />
       </linearGradient>
     </defs>
@@ -2245,6 +2245,7 @@ exports[`Storyshots Atoms | Spinner Spinner default 1`] = `
         <stop
           offset="0%"
           stopColor="#0046FF"
+          stopOpacity="0"
         />
         <stop
           offset="100%"
@@ -2267,7 +2268,6 @@ exports[`Storyshots Atoms | Spinner Spinner default 1`] = `
         <stop
           offset="100%"
           stopColor="#0046FF"
-          stopOpacity="0"
         />
       </linearGradient>
     </defs>
