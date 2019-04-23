@@ -10,8 +10,10 @@ const StyledIconBase = styled.svg<StyledIconBaseProps>`
     width: ${p.theme.spacing.unit(size)}px;
     height: ${p.theme.spacing.unit(size)}px;
     display: inline-block;
+    vertical-align: middle;
     fill: currentColor;
     flex-shrink: 0;
+    vertical-align: middle;
     color: ${p.colorFn ? p.colorFn(p.theme) : p.theme.color.text};`;
   }}
 `;
