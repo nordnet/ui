@@ -14892,11 +14892,11 @@ exports[`Storyshots Molecules | CardWithTitle Basic CardWithTitle 1`] = `
 `;
 
 exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article 1`] = `
-<div
+<article
   className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
 >
   A CardWithTitle as a article containing content
-</div>
+</article>
 `;
 
 exports[`Storyshots Molecules | CardWithTitle CardWithTitle with no title 1`] = `
