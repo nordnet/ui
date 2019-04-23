@@ -14875,10 +14875,10 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
 
 exports[`Storyshots Molecules | CardWithTitle Basic CardWithTitle 1`] = `
 <div
-  className="CardWithTitle__StyledCard-sc-1ny6tjx-0 eUgGSE Card__StyledCard-sc-1e5czjc-0 gwDvCn"
+  className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
 >
   <div
-    className="CardWithTitle__StyledTitle-sc-1ny6tjx-1 hXcDix"
+    className="CardWithTitle__StyledTitle-sc-1ny6tjx-0 jTKcP"
   >
     <span
       className="Typography__StyledTypography-sc-10mju41-0 boZbTA"
@@ -14892,16 +14892,16 @@ exports[`Storyshots Molecules | CardWithTitle Basic CardWithTitle 1`] = `
 `;
 
 exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article 1`] = `
-<article
-  className="CardWithTitle__StyledCard-sc-1ny6tjx-0 eUgGSE"
+<div
+  className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
 >
   A CardWithTitle as a article containing content
-</article>
+</div>
 `;
 
 exports[`Storyshots Molecules | CardWithTitle CardWithTitle with no title 1`] = `
 <div
-  className="CardWithTitle__StyledCard-sc-1ny6tjx-0 eUgGSE Card__StyledCard-sc-1e5czjc-0 gwDvCn"
+  className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
 >
   A CardWithTitle without title
 </div>
