@@ -15180,7 +15180,8 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
         className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 irjdGO"
       >
         <span
-          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+          className="Typography__StyledTypography-sc-10mju41-0 JofIB"
+          color={[Function]}
           type="secondary"
         >
           title1
@@ -15190,7 +15191,8 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
         className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 irjdGO"
       >
         <span
-          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+          className="Typography__StyledTypography-sc-10mju41-0 JofIB"
+          color={[Function]}
           type="secondary"
         >
           title2
@@ -15253,7 +15255,8 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
         className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 irjdGO"
       >
         <span
-          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+          className="Typography__StyledTypography-sc-10mju41-0 JofIB"
+          color={[Function]}
           type="secondary"
         >
           title1
@@ -15263,7 +15266,8 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
         className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 irjdGO"
       >
         <span
-          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+          className="Typography__StyledTypography-sc-10mju41-0 JofIB"
+          color={[Function]}
           type="secondary"
         />
       </div>
@@ -15367,7 +15371,8 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
         className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 irjdGO"
       >
         <span
-          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+          className="Typography__StyledTypography-sc-10mju41-0 JofIB"
+          color={[Function]}
           type="secondary"
         />
       </div>
@@ -15375,7 +15380,8 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
         className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 irjdGO"
       >
         <span
-          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+          className="Typography__StyledTypography-sc-10mju41-0 JofIB"
+          color={[Function]}
           type="secondary"
         >
           title1
