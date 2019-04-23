@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { Props, PropsWithTheme } from './Spinner.types';
 
-const Animation = styled.span<Props>`
+const Animation = styled.span`
   @keyframes spinner {
     from {
       transform: rotate(0deg);
@@ -22,8 +22,9 @@ const StyledSvg = styled.svg`
 const RawSpinner: React.FC<PropsWithTheme> = ({ theme, size, color }) => {
   const calculatedSize = theme.spacing.unit(size || 4);
   const usedColor = typeof color === 'function' ? color(theme) : color || theme.color.cta;
-  const id1 = `spinner-${usedColor}-1`;
-  const id2 = `spinner-${usedColor}-2`;
+  const sanatizedColor = usedColor.replace(/\#\s?/g, '');
+  const id1 = `spinner-${sanatizedColor}-1`;
+  const id2 = `spinner-${sanatizedColor}-2`;
 
   return (
     <Animation>
