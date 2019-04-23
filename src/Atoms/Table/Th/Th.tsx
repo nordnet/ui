@@ -18,8 +18,8 @@ const StyledTh = styled.th<Props>`
   }
 `;
 
-export const Th: ThComponent = ({ width = 'auto', textAlign = 'left', children }) => (
-  <StyledTh width={width} textAlign={textAlign}>
+export const Th: ThComponent = ({ width = 'auto', textAlign = 'left', colSpan, children }) => (
+  <StyledTh width={width} textAlign={textAlign} colSpan={colSpan}>
     {children}
   </StyledTh>
 );
