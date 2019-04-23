@@ -59,9 +59,9 @@ const StyledButton = styled(NormalizedElements.Button)<Props>`
   box-sizing: border-box;
   color: ${p => (isSecondary(p.variant) ? p.theme.color.cta : p.theme.color.buttonText)};
   cursor: pointer;
-  display: inline-block;
   height: ${p => getHeight(p)};
   padding: 0 ${p => (p.size === 's' ? p.theme.spacing.unit(2) : p.theme.spacing.unit(4))}px;
+  ${p => (p.fullWidth ? `display: block; width: 100%;` : `display: inline-block;`)}
 `;
 
 export const Button: ButtonComponent = props => {
@@ -72,6 +72,7 @@ export const Button: ButtonComponent = props => {
       size={props.size}
       type={props.type}
       variant={props.variant}
+      fullWidth={props.fullWidth}
     >
       <Typography type={props.size === 'l' ? 'primary' : 'secondary'} color="inherit">
         {props.children}
