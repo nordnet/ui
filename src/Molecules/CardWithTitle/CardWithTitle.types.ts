@@ -1,7 +1,7 @@
 import { Props as CardProps } from '../../Atoms/Card/Card.types';
 
 export type Props = {
-  title?: string;
+  title?: React.ReactNode | string;
   rightTitle?: React.ReactNode | string;
 };
 

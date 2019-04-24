@@ -5,7 +5,7 @@ import { Typography, Card, Flexbox } from '../..';
 import { CardWithTitleComponent, Props } from './CardWithTitle.types';
 
 const StyledTitle = styled.div<Props>`
-  padding: ${({ theme }) => theme.spacing.unit(5)}px;
+  margin-bottom: ${({ theme }) => theme.spacing.unit(4)}px;
 `;
 
 const omitProps = R.omit(['children', 'title']);

@@ -1,6 +1,7 @@
 export type Props = {
   children: React.ReactNode;
   height?: number;
+  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   twoDimension?: false | undefined | null;
   /** flexbox direction */
   direction?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
@@ -37,4 +38,7 @@ export type Props = {
     | 'space-around'
     | 'space-evenly'
     | 'stretch';
+
+  /** a11y */
+  role?: string;
 };

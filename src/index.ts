@@ -15,10 +15,14 @@ import Link from './Molecules/Link';
 import LinkBuy from './Molecules/LinkBuy';
 import LinkSell from './Molecules/LinkSell';
 import Media from './Atoms/Media';
+import TabsNav from './Molecules/TabsNav';
 import Separator from './Atoms/Separator';
 import Spinner from './Atoms/Spinner';
+import Tabs from './Molecules/Tabs';
 import { Table, Tbody, Td, Tfoot, Th, Thead, Tr } from './Atoms/Table';
 import Typography from './Atoms/Typography';
+import TabTitle from './Atoms/TabTitle';
+
 import Number from './Atoms/Number';
 import Time from './Atoms/Time';
 import Percent from './Molecules/Percent';
@@ -59,4 +63,7 @@ export {
   Typography,
   List,
   ListItem,
+  Tabs,
+  TabsNav,
+  TabTitle,
 };

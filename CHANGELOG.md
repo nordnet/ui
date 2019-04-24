@@ -1,3 +1,46 @@
+# [1.0.0-beta.23](https://github.com/nordnet/ui/compare/v1.0.0-beta.22@beta...v1.0.0-beta.23@beta) (2019-04-23)
+
+
+### Features
+
+* 🎸 wip tabs ([#70](https://github.com/nordnet/ui/issues/70)) ([4029e05](https://github.com/nordnet/ui/commit/4029e05))
+
+
+### BREAKING CHANGES
+
+* 🧨 remove padding from cardwithtitle
+
+feat: tabs
+
+* test: updated snapshots
+
+# [1.0.0-beta.22](https://github.com/nordnet/ui/compare/v1.0.0-beta.21@beta...v1.0.0-beta.22@beta) (2019-04-23)
+
+
+### Bug Fixes
+
+* flag ruining build ([#99](https://github.com/nordnet/ui/issues/99)) ([510d3b0](https://github.com/nordnet/ui/commit/510d3b0))
+
+# [1.0.0-beta.21](https://github.com/nordnet/ui/compare/v1.0.0-beta.20@beta...v1.0.0-beta.21@beta) (2019-04-23)
+
+
+### Bug Fixes
+
+* downgrade react-router-dom ([#97](https://github.com/nordnet/ui/issues/97)) ([41cbaee](https://github.com/nordnet/ui/commit/41cbaee))
+
+# [1.0.0-beta.20](https://github.com/nordnet/ui/compare/v1.0.0-beta.19@beta...v1.0.0-beta.20@beta) (2019-04-23)
+
+
+### Bug Fixes
+
+* build ([5af2123](https://github.com/nordnet/ui/commit/5af2123))
+
+
+### Features
+
+* 🎸 error message for link without to prop ([#94](https://github.com/nordnet/ui/issues/94)) ([143ad8a](https://github.com/nordnet/ui/commit/143ad8a))
+* replace with dumbed down spinner ([#86](https://github.com/nordnet/ui/issues/86)) ([445db6d](https://github.com/nordnet/ui/commit/445db6d))
+
 # [1.0.0-beta.19](https://github.com/nordnet/ui/compare/v1.0.0-beta.18@beta...v1.0.0-beta.19@beta) (2019-04-17)
 
 
