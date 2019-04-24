@@ -83,17 +83,19 @@ const StyledLink = styled(RouterLink)<LinkProps>`
 `;
 
 export const Button: ButtonComponent = props => {
-  const { disabled, onClick, size, type, variant, to } = props;
+  const typeIsNotPresent = typeof props.type === 'undefined';
+  const { disabled, onClick, size, type = 'button', variant, to } = props;
+  const toAndDisabledAreNotPresentTogether= !Boolean(to && disabled)
 
   assert(
-    Boolean(to && disabled),
+    toAndDisabledAreNotPresentTogether,
     "Button: You're using `to` prop together with `disabled` prop. Link's can't be disabled",
     { level: 'warn' },
   );
 
   if (to && !disabled) {
     assert(
-      Boolean(type),
+      typeIsNotPresent,
       "Button: You're using `type` prop together with `to` prop. Link dont have `type` that's why it's omitted",
       { level: 'warn' },
     );
@@ -118,8 +120,4 @@ export const Button: ButtonComponent = props => {
       </Typography>
     </StyledButton>
   );
-};
-
-Button.defaultProps = {
-  type: 'button',
 };

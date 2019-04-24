@@ -13549,7 +13549,7 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 jjxzVi"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 eTzGKG"
         onClick={[Function]}
         size="s"
         type="button"
@@ -13575,7 +13575,7 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 dugpYI"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 cqmPmw"
         onClick={[Function]}
         size="m"
         type="button"
@@ -13601,7 +13601,7 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 byIuXa"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kMFaaG"
         onClick={[Function]}
         size="l"
         type="button"
@@ -13635,7 +13635,7 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kZIyEw"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 ovICS"
         onClick={[Function]}
         size="s"
         type="button"
@@ -13661,7 +13661,7 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kEUmvh"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 gSBIHm"
         onClick={[Function]}
         size="m"
         type="button"
@@ -13687,7 +13687,7 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kygVIR"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 iUsahk"
         onClick={[Function]}
         size="l"
         type="button"
@@ -13721,7 +13721,7 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 dugpYI"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 cqmPmw"
         onClick={[Function]}
         type="reset"
       >
@@ -13746,7 +13746,7 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 dugpYI"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 cqmPmw"
         onClick={[Function]}
         type="submit"
       >
@@ -13765,7 +13765,7 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
 
 exports[`Storyshots Molecules | Button Button with variant 1`] = `
 <button
-  className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kEUmvh"
+  className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 gSBIHm"
   onClick={[Function]}
   type="button"
 >
@@ -13781,7 +13781,7 @@ exports[`Storyshots Molecules | Button Button with variant 1`] = `
 
 exports[`Storyshots Molecules | Button Default usage 1`] = `
 <button
-  className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 dugpYI"
+  className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 cqmPmw"
   onClick={[Function]}
   type="button"
 >
@@ -13797,7 +13797,7 @@ exports[`Storyshots Molecules | Button Default usage 1`] = `
 
 exports[`Storyshots Molecules | Button Disabled button 1`] = `
 <button
-  className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 cWJwss"
+  className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 isEGbl"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -13810,6 +13810,65 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
     Button
   </span>
 </button>
+`;
+
+exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Reset
+    </div>
+    <div>
+      <a
+        className="Button__StyledLink-lqp9m3-1 eCkyPt"
+        href="/route1"
+        onClick={[Function]}
+      >
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 exYysW"
+          color="inherit"
+          type="secondary"
+        >
+          To Route1
+        </span>
+      </a>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Submit
+    </div>
+    <div>
+      <a
+        className="Button__StyledLink-lqp9m3-1 gfXJZR"
+        href="/route2"
+        onClick={[Function]}
+        variant="secondary"
+      >
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 exYysW"
+          color="inherit"
+          type="secondary"
+        >
+          To Route2
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Molecules | CardWithTitle Basic CardWithTitle 1`] = `
