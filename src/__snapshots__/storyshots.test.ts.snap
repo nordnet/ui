@@ -12950,6 +12950,4605 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography 1`] = `
 </span>
 `;
 
+exports[`Storyshots Atoms | Table Integration: Table with Typography and ellipsis on name 1`] = `
+<span
+  className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+  type="secondary"
+>
+  <table
+    className="Table__StyledTable-vgcwcw-0 bEpsJF"
+    width="100%"
+  >
+    <thead
+      className="Thead__StyledThead-ck14n6-0 dEVVBF"
+    >
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <th
+          className="Th__StyledTh-sc-1p4dh6v-0 iZUoRR"
+          width="25%"
+        >
+          Symbol
+        </th>
+        <th
+          className="Th__StyledTh-sc-1p4dh6v-0 dPljaz"
+          width="40%"
+        >
+          Name
+        </th>
+        <th
+          className="Th__StyledTh-sc-1p4dh6v-0 dQLYZG"
+          width="10%"
+        >
+          Development
+        </th>
+        <th
+          className="Th__StyledTh-sc-1p4dh6v-0 cIflxQ"
+          width="10%"
+        >
+          Last
+        </th>
+        <th
+          className="Th__StyledTh-sc-1p4dh6v-0 hiSMyn"
+          width="5%"
+        >
+          Flag
+        </th>
+        <th
+          className="Th__StyledTh-sc-1p4dh6v-0 cIflxQ"
+          width="10%"
+        >
+          Quantity
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="Tbody__StyledTbody-sc-1d56nd1-0 jjDRwN"
+    >
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          HM B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Hennes & Mauritz AB, H & M ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.48
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          271
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          ERIC B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Ericsson, Telefonab. L M ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.73
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          61.4
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          BOL A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Boliden AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.16
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          192.1
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          FING B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Fingerprint Cards AB ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          0.28
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          106.8
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SKF
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          SKF, AB ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          0.92
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          142
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          Nord
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Nordea Bank AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.19
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          78.55
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SEB C
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Skandinaviska Enskilda Banken ser. A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.06
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          77.4
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SWED A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Swedbank AB ser A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.21
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          187.5
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SND
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Sandvik AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.47
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          94.4
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SCA B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Svenska Cellulosa AB SCA ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          0.23
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          256
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          VLV B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Volvo, AB ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.17
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          89.8
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          TEL A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Telia Company AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.58
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          39.28
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          HM B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Hennes & Mauritz AB, H & M ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.48
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          271
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          ERIC B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Ericsson, Telefonab. L M ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.73
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          61.4
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          BOL A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Boliden AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.16
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          192.1
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          FING B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Fingerprint Cards AB ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          0.28
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          106.8
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SKF
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          SKF, AB ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          0.92
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          142
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          Nord
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Nordea Bank AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.19
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          78.55
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SEB C
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Skandinaviska Enskilda Banken ser. A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.06
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          77.4
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SWED A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Swedbank AB ser A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.21
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          187.5
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SND
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Sandvik AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.47
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          94.4
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SCA B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Svenska Cellulosa AB SCA ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          0.23
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          256
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          VLV B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Volvo, AB ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.17
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          89.8
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          TEL A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Telia Company AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.58
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          39.28
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          HM B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Hennes & Mauritz AB, H & M ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.48
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          271
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          ERIC B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Ericsson, Telefonab. L M ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.73
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          61.4
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          BOL A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Boliden AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.16
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          192.1
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          FING B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Fingerprint Cards AB ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          0.28
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          106.8
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SKF
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          SKF, AB ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          0.92
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          142
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          Nord
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Nordea Bank AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.19
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          78.55
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SEB C
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Skandinaviska Enskilda Banken ser. A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.06
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          77.4
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SWED A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Swedbank AB ser A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.21
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          187.5
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SND
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Sandvik AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.47
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          94.4
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SCA B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Svenska Cellulosa AB SCA ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          0.23
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          256
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          VLV B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Volvo, AB ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.17
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          89.8
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          TEL A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Telia Company AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.58
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          39.28
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          HM B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Hennes & Mauritz AB, H & M ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.48
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          271
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          ERIC B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Ericsson, Telefonab. L M ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.73
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          61.4
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          BOL A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Boliden AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.16
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          192.1
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          FING B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Fingerprint Cards AB ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          0.28
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          106.8
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SKF
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          SKF, AB ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          0.92
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          142
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          Nord
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Nordea Bank AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.19
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          78.55
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SEB C
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Skandinaviska Enskilda Banken ser. A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.06
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          77.4
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SWED A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Swedbank AB ser A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.21
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          187.5
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SND
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Sandvik AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.47
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          94.4
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SCA B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Svenska Cellulosa AB SCA ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          0.23
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          256
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          VLV B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Volvo, AB ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.17
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          89.8
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          TEL A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Telia Company AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.58
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          39.28
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          HM B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Hennes & Mauritz AB, H & M ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.48
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          271
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          ERIC B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Ericsson, Telefonab. L M ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.73
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          61.4
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          BOL A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Boliden AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.16
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          192.1
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          FING B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Fingerprint Cards AB ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          0.28
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          106.8
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SKF
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          SKF, AB ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          0.92
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          142
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          Nord
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Nordea Bank AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.19
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          78.55
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SEB C
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Skandinaviska Enskilda Banken ser. A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.06
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          77.4
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SWED A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Swedbank AB ser A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.21
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          187.5
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SND
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Sandvik AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.47
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          94.4
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          SCA B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Svenska Cellulosa AB SCA ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          0.23
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          256
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          VLV B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Volvo, AB ser. B
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.17
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          89.8
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          TEL A
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 gBJGmI"
+        >
+          Telia Company AB
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 eSYZap"
+        >
+          -0.58
+          %
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          39.28
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          <svg
+            className="Flag__StyledFlag-sc-14ojzvi-0 htzfLA"
+            focusable="false"
+            height={4}
+            role="img"
+            viewBox="0 0 640 480"
+            width={4}
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          10
+        </td>
+      </tr>
+    </tbody>
+    <tfoot
+      className="Tfoot__StyledTfoot-idahao-0 iMfHPc"
+    >
+      <tr
+        className="Tr__StyledTr-sc-1aap6l7-0 kdcphJ"
+      >
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          -
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          -
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          -
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          -
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          -
+        </td>
+        <td
+          className="Td__StyledTd-sc-1r6yxrk-0 fANosP"
+        >
+          -
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</span>
+`;
+
 exports[`Storyshots Atoms | Time Invalid value 1`] = `"-"`;
 
 exports[`Storyshots Atoms | Time Time  1`] = `"23:53:44"`;
