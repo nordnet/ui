@@ -13817,7 +13817,7 @@ exports[`Storyshots Molecules | CardWithTitle Basic CardWithTitle 1`] = `
   className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
 >
   <div
-    className="CardWithTitle__StyledTitle-sc-1ny6tjx-0 eRrxeH"
+    className="CardWithTitle__StyledTitle-sc-1ny6tjx-0 doekEe"
   >
     <div
       className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 daSWfP"
@@ -13862,7 +13862,7 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle with right title 1`]
   className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
 >
   <div
-    className="CardWithTitle__StyledTitle-sc-1ny6tjx-0 eRrxeH"
+    className="CardWithTitle__StyledTitle-sc-1ny6tjx-0 doekEe"
   >
     <div
       className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 daSWfP"
@@ -13917,7 +13917,7 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle with title as custom
   className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
 >
   <div
-    className="CardWithTitle__StyledTitle-sc-1ny6tjx-0 eRrxeH"
+    className="CardWithTitle__StyledTitle-sc-1ny6tjx-0 doekEe"
   >
     <div
       className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 daSWfP"
@@ -14676,7 +14676,7 @@ exports[`Storyshots Organisms | CardWithTabs Default (extra space inside) 1`] = 
   className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
 >
   <div
-    className="CardWithTitle__StyledTitle-sc-1ny6tjx-0 eRrxeH"
+    className="CardWithTitle__StyledTitle-sc-1ny6tjx-0 doekEe"
   >
     <div
       className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 daSWfP"
