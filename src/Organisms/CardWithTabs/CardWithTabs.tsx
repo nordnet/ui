@@ -10,10 +10,12 @@ const Spacing = styled.div`
   padding-top: ${p => p.theme.spacing.unit(4)}px;
 `;
 
-export const CardWithTabs: Component = ({ title, children }) => (
+const CardWithTabs: Component = ({ title, children }) => (
   <CardWithTitle title={<Spacing>{title}</Spacing>}>
     <Tabs>{children}</Tabs>
   </CardWithTitle>
 );
 
 CardWithTabs.Tab = Tabs.Tab;
+
+export { CardWithTabs };

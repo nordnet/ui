@@ -1,3 +1,10 @@
+# [1.0.0-beta.24](https://github.com/nordnet/ui/compare/v1.0.0-beta.23@beta...v1.0.0-beta.24@beta) (2019-04-24)
+
+
+### Bug Fixes
+
+* 🐛 export CardWithTabs ([d6b6ba6](https://github.com/nordnet/ui/commit/d6b6ba6))
+
 # [1.0.0-beta.23](https://github.com/nordnet/ui/compare/v1.0.0-beta.22@beta...v1.0.0-beta.23@beta) (2019-04-23)
 
 
