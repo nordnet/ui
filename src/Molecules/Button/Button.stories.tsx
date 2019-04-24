@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import { BrowserRouter } from 'react-router-dom';
 
 import { Button } from '../..';
 import { Display } from '../../common/Display';
@@ -96,6 +97,30 @@ storiesOf('Molecules | Button', module)
             <Button type="submit" onClick={action('submit')}>
               Submit
             </Button>
+          ),
+        },
+      ]}
+    />
+  ))
+  .add('Link looking like a button', () => (
+    <Display
+      items={[
+        {
+          title: 'Reset',
+          component: (
+            <BrowserRouter>
+              <Button to="/route1">To Route1</Button>
+            </BrowserRouter>
+          ),
+        },
+        {
+          title: 'Submit',
+          component: (
+            <BrowserRouter>
+              <Button to="/route2" variant="secondary">
+                To Route2
+              </Button>
+            </BrowserRouter>
           ),
         },
       ]}

@@ -1,7 +1,15 @@
-export const assert = (expression: boolean, errorMessage: string): true => {
+export const assert = (
+  expression: boolean,
+  errorMessage: string,
+  options?: { level?: 'warn' },
+): true => {
   if (process.env.NODE_ENV !== 'production') {
     if (!expression) {
-      throw new Error(errorMessage);
+      if (options && options.level === 'warn') {
+        console.warn(errorMessage);
+      } else {
+        throw new Error(errorMessage);
+      }
     }
   }
   // For chaining with &&
