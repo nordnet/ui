@@ -3,20 +3,27 @@ import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import { HashRouter } from 'react-router-dom';
 
-import { CardWithTitle, Link, Icon, Typography } from '../..';
+import { CardWithTitle, Link, Icon, Typography, Flexbox } from '../..';
 
 const PaddedIcon = styled(Icon.ArrowRight)`
   padding-left: ${p => p.theme.spacing.unit(1)}px;
 `;
 
-const rightTitle = (
+const title = (
   <HashRouter>
-    <Link to="www.google.com">
-      <Typography type="secondary" color={t => t.color.text} weight="bold">
-        Marknadsöversikt
-      </Typography>
-      <PaddedIcon color={t => t.color.cta} size={3} />
-    </Link>
+    <Flexbox.Container justifyContent="space-between" direction="row">
+      <Flexbox.Item>
+        <Typography type="title3">Konton</Typography>
+      </Flexbox.Item>
+      <Flexbox.Item>
+        <Link to="www.google.com">
+          <Typography type="secondary" color={t => t.color.text} weight="bold">
+            Marknadsöversikt
+          </Typography>
+          <PaddedIcon color={t => t.color.cta} size={3} />
+        </Link>
+      </Flexbox.Item>
+    </Flexbox.Container>
   </HashRouter>
 );
 
@@ -25,9 +32,7 @@ storiesOf('Molecules | CardWithTitle', module)
     <CardWithTitle title="Konton">A CardWithTitle containing content</CardWithTitle>
   ))
   .add('CardWithTitle with right title', () => (
-    <CardWithTitle title="Konton" rightTitle={rightTitle}>
-      A CardWithTitles containing content
-    </CardWithTitle>
+    <CardWithTitle title={title}>A CardWithTitles with two titles</CardWithTitle>
   ))
   .add('CardWithTitle with no title', () => (
     <CardWithTitle>A CardWithTitle without title</CardWithTitle>
