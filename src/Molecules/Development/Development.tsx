@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { DevelopmentProps, DevelopmentComponent } from './Development.types';
-import { Number } from '../..';
+import { Number as NumberComponent } from '../..';
 import { Theme } from '../../theme/theme.types';
 
 const getPrefix = (value?: number | null) => {
@@ -24,14 +24,15 @@ const Development: DevelopmentComponent = ({
   value,
   className,
   decimals,
-}) => (
+}) => 
+  value && Number.isFinite(value) ? (
   <StyledDevelopment className={className} value={value}>
     {getPrefix(value)}
     {!!value && value > 0 ? '+' : null}
-    <Number value={value} decimals={decimals} />
+    <NumberComponent value={value} decimals={decimals} />
     {'%'}
   </StyledDevelopment>
-);
+) : <>-</>;
 
 export {Development}
 Development.displayName = 'Development';

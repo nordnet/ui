@@ -31,4 +31,7 @@ storiesOf('Molecules | Development', module)
       ),
     }));
     return <Display items={items} />;
-  });
+  })
+  .add('Invalid value', () => {
+    return <Development value={null} />;
+  })

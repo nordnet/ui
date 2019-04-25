@@ -38,4 +38,7 @@ storiesOf('Molecules | Currency', module)
       ),
     }));
     return <Display items={items} />;
-  });
+  })
+  .add('Invalid value', () => {
+    return <Currency value={null} currency="SEK" />;
+  })

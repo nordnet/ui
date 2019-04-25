@@ -1,6 +1,6 @@
 import React from 'react';
 import { CurrencyComponent } from './Currency.types';
-import {Number} from '../..';
+import { Number as NumberComponent } from '../..';
 
 const getPrefix = (value?: number | null, sign?: boolean) => {
   if (sign && !!value && value > 0) {
@@ -15,8 +15,8 @@ export const Currency: CurrencyComponent = ({
   decimals,
   currency,
   sign,
-}) => (
-  <>{getPrefix(value, sign)}<Number value={value} decimals={decimals} />{' '}{currency}</>
-);
+}) => value && Number.isFinite(value) ? (
+  <>{getPrefix(value, sign)}<NumberComponent value={value} decimals={decimals} />{' '}{currency}</>
+) : <>-</>;
 
 Currency.displayName = 'Currency';

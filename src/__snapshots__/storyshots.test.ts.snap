@@ -1432,8 +1432,6 @@ exports[`Storyshots Atoms | Number Number with 0 decimals  1`] = `"100"`;
 
 exports[`Storyshots Atoms | Number Number with 2 decimals  1`] = `"10.00"`;
 
-exports[`Storyshots Atoms | Number Uses custom symbol for invalid value 1`] = `"X"`;
-
 exports[`Storyshots Atoms | Separator Separator default 1`] = `
 <div
   className="Separatorstories__StyledContainer-sc-12j0h8a-0 ixCTfH"
@@ -17812,6 +17810,8 @@ exports[`Storyshots Molecules | Currency Integration: Usage with different typog
 </div>
 `;
 
+exports[`Storyshots Molecules | Currency Invalid value 1`] = `"-"`;
+
 exports[`Storyshots Molecules | Development Default 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
@@ -17848,14 +17848,7 @@ exports[`Storyshots Molecules | Development Default 1`] = `
       Zero value
     </div>
     <div>
-      <span
-        className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
-        value={0}
-      >
-        
-        -
-        %
-      </span>
+      -
     </div>
   </div>
   <div
@@ -17935,14 +17928,7 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              <span
-                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
-                value={0}
-              >
-                
-                -
-                %
-              </span>
+              -
             </div>
           </div>
           <div
@@ -18018,14 +18004,7 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              <span
-                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
-                value={0}
-              >
-                
-                -
-                %
-              </span>
+              -
             </div>
           </div>
           <div
@@ -18101,14 +18080,7 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              <span
-                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
-                value={0}
-              >
-                
-                -
-                %
-              </span>
+              -
             </div>
           </div>
           <div
@@ -18184,14 +18156,7 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              <span
-                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
-                value={0}
-              >
-                
-                -
-                %
-              </span>
+              -
             </div>
           </div>
           <div
@@ -18267,14 +18232,7 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              <span
-                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
-                value={0}
-              >
-                
-                -
-                %
-              </span>
+              -
             </div>
           </div>
           <div
@@ -18350,14 +18308,7 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              <span
-                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
-                value={0}
-              >
-                
-                -
-                %
-              </span>
+              -
             </div>
           </div>
           <div
@@ -18433,14 +18384,7 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              <span
-                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
-                value={0}
-              >
-                
-                -
-                %
-              </span>
+              -
             </div>
           </div>
           <div
@@ -18516,14 +18460,7 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              <span
-                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
-                value={0}
-              >
-                
-                -
-                %
-              </span>
+              -
             </div>
           </div>
           <div
@@ -18552,6 +18489,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
   </div>
 </div>
 `;
+
+exports[`Storyshots Molecules | Development Invalid value 1`] = `"-"`;
 
 exports[`Storyshots Molecules | LabeledValue Default 1`] = `
 <div
@@ -19102,8 +19041,6 @@ Array [
   "%",
 ]
 `;
-
-exports[`Storyshots Molecules | Percent Uses custom symbol for invalid value 1`] = `"X"`;
 
 exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
 <span
