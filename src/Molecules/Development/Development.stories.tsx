@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Development, Typography } from '../..';
-import { Display } from '../../common/Display';
-import { TYPOGRAPHY_TYPES } from '../Typography/Typography';
+import { Development, Typography } from '../../index';
+import { Display } from '../../common/Display/index';
+import { TYPOGRAPHY_TYPES } from '../../Atoms/Typography/Typography';
 
-storiesOf('Atoms | Development', module)
+storiesOf('Molecules | Development', module)
   .add('Default', () => (
     <Display
       items={[
