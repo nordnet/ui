@@ -117,6 +117,7 @@ const StyledTypography = styled.span<Props>`
   font-family: 'Nordnet Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     sans-serif;
   color: ${p => getColor(p)};
+  margin: 0;
   ${p => getTypeStyles(p)}
 ` as React.FC<Props>;
 
