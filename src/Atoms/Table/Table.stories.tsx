@@ -86,6 +86,50 @@ storiesOf('Atoms | Table', module)
       </Typography>
     );
   })
+  .add('Integration: Table with Typography and ellipsis on name', () => {
+    return (
+      <Typography type="secondary">
+        <Table width="100%">
+          <Thead>
+            <Tr>
+              <Th width="25%">Symbol</Th>
+              <Th width="40%">Name</Th>
+              <Th width="10%" textAlign="right">
+                Development
+              </Th>
+              <Th width="10%">Last</Th>
+              <Th width="5%">Flag</Th>
+              <Th width="10%">Quantity</Th>
+            </Tr>
+          </Thead>
+          <Tbody>
+            {tableData.map((instrument, index) => (
+              <Tr key={`${instrument[0]}_${index}`}>
+                <Td>{instrument[1]}</Td>
+                <Td ellipsis>{instrument[2]}</Td>
+                <Td textAlign="right">{instrument[5]}%</Td>
+                <Td>{instrument[4]}</Td>
+                <Td>
+                  <Flag country="se" width={4} height={4} />
+                </Td>
+                <Td>{instrument[3]}</Td>
+              </Tr>
+            ))}
+          </Tbody>
+          <Tfoot>
+            <Tr>
+              <Td>-</Td>
+              <Td>-</Td>
+              <Td>-</Td>
+              <Td>-</Td>
+              <Td>-</Td>
+              <Td>-</Td>
+            </Tr>
+          </Tfoot>
+        </Table>
+      </Typography>
+    );
+  })
   .add('Integration: Table (stickyHeader) with Typography', () => {
     return (
       <Typography type="secondary">

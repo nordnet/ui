@@ -14,10 +14,14 @@ export const ListWithTitles: ListWithTitlesComponent = props => {
       <TitleContainer>
         <Flexbox.Container gutter={0} justifyContent="space-between">
           <Flexbox.Item>
-            <Typography type="secondary">{leftTitle}</Typography>
+            <Typography type="secondary" color={t => t.color.label}>
+              {leftTitle}
+            </Typography>
           </Flexbox.Item>
           <Flexbox.Item>
-            <Typography type="secondary">{rightTitle}</Typography>
+            <Typography type="secondary" color={t => t.color.label}>
+              {rightTitle}
+            </Typography>
           </Flexbox.Item>
         </Flexbox.Container>
       </TitleContainer>

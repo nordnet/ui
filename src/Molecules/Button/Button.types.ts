@@ -10,6 +10,7 @@ export type Props = {
   onClick: (e: React.MouseEvent) => void;
   /** @default button */
   type?: 'button' | 'reset' | 'submit';
+  fullWidth?: boolean;
 };
 
 export type ButtonComponent = React.FunctionComponent<Props>;

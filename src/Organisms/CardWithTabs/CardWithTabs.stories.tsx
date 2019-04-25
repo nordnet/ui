@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
-import { CardWithTabs } from './CardWithTabs';
+import { CardWithTabs } from '../..';
 
 const SpacingInside = styled.div`
   padding-top: ${p => p.theme.spacing.unit(4)}px;
