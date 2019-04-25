@@ -1,7 +1,6 @@
 /** Atoms */
 import Card from './Atoms/Card';
 import CssGrid from './Atoms/CssGrid';
-import Currency from './Atoms/Currency';
 import Development from './Atoms/Development';
 import List from './Atoms/List';
 import ListItem from './Atoms/ListItem';
@@ -18,6 +17,7 @@ import Number from './Atoms/Number';
 import Time from './Atoms/Time';
 
 /** Molecules */
+import Currency from './Molecules/Currency/index';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
 import LabeledValue from './Molecules/LabeledValue';
