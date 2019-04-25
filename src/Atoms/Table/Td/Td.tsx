@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { TdComponent, Props } from './Td.types';
 
+// prettier-ignore
 const StyledTd = styled.td<Props>`
   height: 100%;
   padding: ${p => p.theme.spacing.unit(2)}px ${p => p.theme.spacing.unit(1)}px;
@@ -13,8 +14,16 @@ const StyledTd = styled.td<Props>`
   :last-child {
     padding-right: 0;
   }
+
+  ${p => p.ellipsis ?
+    `white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+    ` : '' }
 `;
 
-export const Td: TdComponent = ({ textAlign = 'left', children }) => (
-  <StyledTd textAlign={textAlign}>{children}</StyledTd>
+export const Td: TdComponent = ({ textAlign = 'left', ellipsis = false, children }) => (
+  <StyledTd textAlign={textAlign} ellipsis={ellipsis}>
+    {children}
+  </StyledTd>
 );

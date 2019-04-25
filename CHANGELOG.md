@@ -1,3 +1,12 @@
+# [1.0.0-beta.25](https://github.com/nordnet/ui/compare/v1.0.0-beta.24@beta...v1.0.0-beta.25@beta) (2019-04-24)
+
+
+### Features
+
+* add ellipsis ([#102](https://github.com/nordnet/ui/issues/102)) ([3020765](https://github.com/nordnet/ui/commit/3020765))
+* buttons composition ([#101](https://github.com/nordnet/ui/issues/101)) ([83250f3](https://github.com/nordnet/ui/commit/83250f3))
+* change default color list title ([#93](https://github.com/nordnet/ui/issues/93)) ([f39822f](https://github.com/nordnet/ui/commit/f39822f))
+
 # [1.0.0-beta.24](https://github.com/nordnet/ui/compare/v1.0.0-beta.23@beta...v1.0.0-beta.24@beta) (2019-04-24)
 
 

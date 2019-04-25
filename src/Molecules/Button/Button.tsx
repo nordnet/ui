@@ -56,7 +56,7 @@ const getHeight = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => 
 };
 
 const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
-  const { theme, variant, size } = props;
+  const { theme, variant, size, fullWidth } = props;
   const height = getHeight(props);
 
   return `
@@ -64,11 +64,11 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>
     box-sizing: border-box;
     border: ${BORDER_SIZE}px solid ${isSecondary(variant) ? theme.color.cta : 'transparent'};
     color: ${isSecondary(variant) ? theme.color.cta : theme.color.buttonText};
-    display: inline-block;
     height: ${height}px;
     line-height: ${height - BORDER_SIZE * 2}px;
     padding: 0 ${size === 's' ? theme.spacing.unit(2) : theme.spacing.unit(4)}px;
-  `;
+    ${fullWidth ? `display: block; width: 100%;` : `display: inline-block;`}
+  `
 };
 
 const StyledButton = styled(NormalizedElements.Button)<ButtonProps>`
@@ -84,7 +84,7 @@ const StyledLink = styled(RouterLink)<LinkProps>`
 
 export const Button: ButtonComponent = props => {
   const typeIsNotPresent = typeof props.type === 'undefined';
-  const { disabled, onClick, size, type = 'button', variant, to } = props;
+  const { disabled, onClick, size, type = 'button', variant, fullWidth, to, children } = props;
   const toAndDisabledAreNotPresentTogether= !Boolean(to && disabled)
 
   assert(
@@ -103,7 +103,7 @@ export const Button: ButtonComponent = props => {
     return (
       <StyledLink to={to} onClick={onClick} size={size} variant={variant}>
         <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
-          {props.children}
+          {children}
         </Typography>
       </StyledLink>
     );
@@ -114,9 +114,16 @@ export const Button: ButtonComponent = props => {
   }
   
   return (
-    <StyledButton disabled={disabled} onClick={onClick!} size={size} type={type} variant={variant}>
+    <StyledButton
+      disabled={disabled}
+      onClick={onClick!}
+      size={size}
+      type={type}
+      variant={variant}
+      fullWidth={fullWidth}
+    >
       <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
-        {props.children}
+        {children}
       </Typography>
     </StyledButton>
   );

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { BrowserRouter } from 'react-router-dom';
 
-import { Button } from '../..';
+import { Button, Flexbox } from '../..';
 import { Display } from '../../common/Display';
 
 storiesOf('Molecules | Button', module)
@@ -101,6 +101,25 @@ storiesOf('Molecules | Button', module)
         },
       ]}
     />
+  ))
+  .add('Button that is full width', () => (
+    <Button onClick={action('clicked')} fullWidth>
+      Button
+    </Button>
+  ))
+  .add('Buttons composed in a group', () => (
+    <Flexbox.Container>
+      <Flexbox.Item flex="1 1 50%">
+        <Button type="submit" onClick={action('submit')} fullWidth>
+          Submit
+        </Button>
+      </Flexbox.Item>
+      <Flexbox.Item flex="1 1 50%">
+        <Button type="reset" onClick={action('reset')} variant="secondary" fullWidth>
+          Reset
+        </Button>
+      </Flexbox.Item>
+    </Flexbox.Container>
   ))
   .add('Link looking like a button', () => (
     <Display

@@ -6,6 +6,8 @@ export type SharedProps = {
   variant?: 'primary' | 'secondary';
   /** @default m */
   size?: 's' | 'm' | 'l';
+  /** @default false */
+  fullWidth?: boolean;
   children: React.ReactChild | React.ReactChild[];
 };
 
