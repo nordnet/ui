@@ -68,7 +68,7 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>
     line-height: ${height - BORDER_SIZE * 2}px;
     padding: 0 ${size === 's' ? theme.spacing.unit(2) : theme.spacing.unit(4)}px;
     ${fullWidth ? `display: block; width: 100%;` : `display: inline-block;`}
-  `
+  `;
 };
 
 const StyledButton = styled(NormalizedElements.Button)<ButtonProps>`
@@ -85,7 +85,7 @@ const StyledLink = styled(RouterLink)<LinkProps>`
 export const Button: ButtonComponent = props => {
   const typeIsNotPresent = typeof props.type === 'undefined';
   const { disabled, onClick, size, type = 'button', variant, fullWidth, to, children } = props;
-  const toAndDisabledAreNotPresentTogether= !Boolean(to && disabled)
+  const toAndDisabledAreNotPresentTogether = !(to && disabled);
 
   assert(
     toAndDisabledAreNotPresentTogether,
@@ -109,14 +109,10 @@ export const Button: ButtonComponent = props => {
     );
   }
 
-  if (typeof onClick === 'undefined') {
-    assert(false, 'Button: `onClick` is undefined', {level: 'warn'});
-  }
-  
   return (
     <StyledButton
       disabled={disabled}
-      onClick={onClick!}
+      onClick={onClick}
       size={size}
       type={type}
       variant={variant}

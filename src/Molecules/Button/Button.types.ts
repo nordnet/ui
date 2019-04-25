@@ -13,7 +13,7 @@ export type SharedProps = {
 
 export type ButtonProps = {
   disabled?: boolean;
-  onClick: (e: React.MouseEvent) => void;
+  onClick?: (e: React.MouseEvent) => void;
   /** @default button */
   type?: 'button' | 'reset' | 'submit';
   to?: never;
