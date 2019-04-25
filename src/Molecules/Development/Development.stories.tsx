@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Development, Typography } from '../../index';
+import { Development, Typography } from '../..';
 import { Display } from '../../common/Display/index';
 import { TYPOGRAPHY_TYPES } from '../../Atoms/Typography/Typography';
 

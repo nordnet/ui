@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, number, select } from '@storybook/addon-knobs';
 
-import { Currency, Typography } from '../../';
+import { Currency, Typography } from '../..';
 import { Display } from '../../common/Display/index';
 import { TYPOGRAPHY_TYPES } from '../../Atoms/Typography/Typography';
 

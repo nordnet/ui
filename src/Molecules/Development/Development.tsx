@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { DevelopmentProps, DevelopmentComponent } from './Development.types';
-import { Number } from '../../';
+import { Number } from '../..';
 import { Theme } from '../../theme/theme.types';
 
 const getPrefix = (value?: number | null) => {

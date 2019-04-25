@@ -1,6 +1,6 @@
 import React from 'react';
 import { CurrencyComponent } from './Currency.types';
-import {Number} from '../../';
+import {Number} from '../..';
 
 const getPrefix = (value?: number | null, sign?: boolean) => {
   if (sign && !!value && value > 0) {
