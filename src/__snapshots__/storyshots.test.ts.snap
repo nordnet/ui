@@ -17571,24 +17571,6 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
 </button>
 `;
 
-exports[`Storyshots Molecules | CardWithTitle Basic CardWithTitle 1`] = `
-<div
-  className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
->
-  <header
-    className="CardWithTitle__StyledHeader-sc-1ny6tjx-0 fHMsFn"
-  >
-    <h2
-      className="Typography__StyledTypography-sc-10mju41-0 gxmkvI"
-      type="title3"
-    >
-      Konton
-    </h2>
-  </header>
-  A CardWithTitle containing content
-</div>
-`;
-
 exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article (most CardWithTitle should be article) 1`] = `
 <article
   className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
@@ -17596,12 +17578,7 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article (most Car
   <header
     className="CardWithTitle__StyledHeader-sc-1ny6tjx-0 fHMsFn"
   >
-    <h2
-      className="Typography__StyledTypography-sc-10mju41-0 gxmkvI"
-      type="title3"
-    >
-      Konton
-    </h2>
+    Konton
   </header>
   A CardWithTitle as a article containing content
 </article>
@@ -17614,18 +17591,26 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as section 1`] = `
   <header
     className="CardWithTitle__StyledHeader-sc-1ny6tjx-0 fHMsFn"
   >
-    <h2
-      className="Typography__StyledTypography-sc-10mju41-0 gxmkvI"
-      type="title3"
-    >
-      Konton
-    </h2>
+    Konton
   </header>
   A CardWithTitle as a section containing content
 </section>
 `;
 
-exports[`Storyshots Molecules | CardWithTitle CardWithTitle with secondary element next to title 1`] = `
+exports[`Storyshots Molecules | CardWithTitle Default 1`] = `
+<div
+  className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
+>
+  <header
+    className="CardWithTitle__StyledHeader-sc-1ny6tjx-0 fHMsFn"
+  >
+    Konton
+  </header>
+  A CardWithTitle containing content
+</div>
+`;
+
+exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with custom component as title 1`] = `
 <div
   className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
 >
@@ -17663,7 +17648,7 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle with secondary eleme
           </span>
           <svg
             aria-hidden="true"
-            className="CardWithTitlestories__PaddedIcon-sc-1jyecxu-0 kzxjsd IconBase__StyledIconBase-sc-10cbji3-0 kMtHVE"
+            className="CardWithTitlestories__PaddedIcon-sc-1jyecxu-1 eUePKB IconBase__StyledIconBase-sc-10cbji3-0 kMtHVE"
             focusable="false"
             role="presentation"
             size={3}
@@ -17677,7 +17662,13 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle with secondary eleme
       </div>
     </div>
   </header>
-  A CardWithTitles with two titles
+  <div
+    className="CardWithTitlestories__SpaceInside-sc-1jyecxu-0 cgqNGV"
+  >
+    A CardWithTitles with two titles. 
+    <br />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac lectus aliquam, scelerisque est eget, lobortis massa. Praesent in pretium orci. Phasellus est sapien, maximus at nulla ac, condimentum dictum ante. Sed consequat erat lacinia, molestie augue vitae, efficitur purus. In venenatis elit nec tortor condimentum, sit amet elementum magna fermentum. Phasellus dictum non augue vitae pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent rutrum egestas sollicitudin. Cras semper, mi vitae vulputate aliquam, tortor ante maximus libero, vitae maximus velit dui quis augue. Aenean condimentum molestie ante, nec rhoncus nunc aliquet non. Aliquam bibendum tortor dui, eget porttitor nibh fermentum eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse nec magna lectus. Fusce posuere nisi vel purus faucibus sodales. Quisque ac ullamcorper eros, sed lobortis risus. Sed eu magna mi. Vestibulum accumsan porta velit. Donec ligula arcu, cursus eu nisl vel, molestie pretium neque. Etiam urna elit, mollis vel arcu id, vulputate mattis nisi. Fusce eget odio id ipsum consectetur feugiat vitae ut tortor. Aliquam non tempor nibh, scelerisque placerat eros. Nulla facilisi. Nunc tempor congue neque a cursus. Quisque tristique eros in fermentum feugiat.
+  </div>
 </div>
 `;
 
@@ -19289,16 +19280,19 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra sp
 </div>
 `;
 
-exports[`Storyshots Organisms | CardWithTabs Default (extra space inside) 1`] = `
+exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and extra space inside 1`] = `
 <div
   className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
 >
   <header
     className="CardWithTitle__StyledHeader-sc-1ny6tjx-0 fHMsFn"
   >
-    <div>
+    <h2
+      className="Typography__StyledTypography-sc-10mju41-0 gxmkvI"
+      type="title3"
+    >
       Title for the card
-    </div>
+    </h2>
   </header>
   <div>
     <ul
@@ -19365,7 +19359,7 @@ exports[`Storyshots Organisms | CardWithTabs Default (extra space inside) 1`] = 
                 <div
                   className="CardWithTabsstories__Red-sc-11n6k03-1 cpjAXO"
                 >
-                  Tab Title 2
+                  Custom title component
                 </div>
               </span>
             </div>
