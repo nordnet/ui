@@ -12,6 +12,3 @@ storiesOf('Molecules | Percent', module)
   .add('Invalid value', () => {
     return <Percent value={null} />;
   })
-  .add('Uses custom symbol for invalid value', () => {
-    return <Percent value={null} invalidValue="X" />;
-  });
