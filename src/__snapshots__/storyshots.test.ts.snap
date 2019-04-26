@@ -20239,6 +20239,44 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </div>
     </div>
   </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      inputBorder
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 gTPmLe"
+        color="#BCBCB6"
+      />
+      <div>
+        #BCBCB6
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      inputBorderHover
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 kwZsJL"
+        color="#4B4B46"
+      />
+      <div>
+        #4B4B46
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
