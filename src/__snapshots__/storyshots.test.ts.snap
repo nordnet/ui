@@ -18482,7 +18482,75 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
 </div>
 `;
 
-exports[`Storyshots Molecules | Development Default 1`] = `
+exports[`Storyshots Molecules | Development As currency 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Positive value
+    </div>
+    <div>
+      <span
+        className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
+        value={50}
+      >
+        +
+        50
+         USD
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Zero value
+    </div>
+    <div>
+      <span
+        className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+        value={0}
+      >
+        
+        0
+         USD
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Negative value
+    </div>
+    <div>
+      <span
+        className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
+        value={-200}
+      >
+        
+        -200
+         USD
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Development As percentage 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
   direction="column"
@@ -18501,9 +18569,8 @@ exports[`Storyshots Molecules | Development Default 1`] = `
         className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
         value={5.4}
       >
-        ▲
         +
-        5
+        5.4
         %
       </span>
     </div>
@@ -18518,7 +18585,14 @@ exports[`Storyshots Molecules | Development Default 1`] = `
       Zero value
     </div>
     <div>
-      -
+      <span
+        className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+        value={0}
+      >
+        
+        0
+        %
+      </span>
     </div>
   </div>
   <div
@@ -18535,9 +18609,74 @@ exports[`Storyshots Molecules | Development Default 1`] = `
         className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
         value={-2.1}
       >
-        ▼
-        -2
+        
+        -2.1
         %
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Development Default 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Positive value
+    </div>
+    <div>
+      <span
+        className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
+        value={50}
+      >
+        +
+        50
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Zero value
+    </div>
+    <div>
+      <span
+        className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+        value={0}
+      >
+        
+        0
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Negative value
+    </div>
+    <div>
+      <span
+        className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
+        value={-200}
+      >
+        
+        -200
       </span>
     </div>
   </div>
@@ -18581,10 +18720,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
                 value={5.4}
               >
-                ▲
                 +
-                5
-                %
+                5.4
               </span>
             </div>
           </div>
@@ -18598,7 +18735,13 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              -
+              <span
+                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+                value={0}
+              >
+                
+                0
+              </span>
             </div>
           </div>
           <div
@@ -18615,9 +18758,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
                 value={-2.1}
               >
-                ▼
-                -2
-                %
+                
+                -2.1
               </span>
             </div>
           </div>
@@ -18657,10 +18799,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
                 value={5.4}
               >
-                ▲
                 +
-                5
-                %
+                5.4
               </span>
             </div>
           </div>
@@ -18674,7 +18814,13 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              -
+              <span
+                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+                value={0}
+              >
+                
+                0
+              </span>
             </div>
           </div>
           <div
@@ -18691,9 +18837,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
                 value={-2.1}
               >
-                ▼
-                -2
-                %
+                
+                -2.1
               </span>
             </div>
           </div>
@@ -18733,10 +18878,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
                 value={5.4}
               >
-                ▲
                 +
-                5
-                %
+                5.4
               </span>
             </div>
           </div>
@@ -18750,7 +18893,13 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              -
+              <span
+                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+                value={0}
+              >
+                
+                0
+              </span>
             </div>
           </div>
           <div
@@ -18767,9 +18916,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
                 value={-2.1}
               >
-                ▼
-                -2
-                %
+                
+                -2.1
               </span>
             </div>
           </div>
@@ -18809,10 +18957,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
                 value={5.4}
               >
-                ▲
                 +
-                5
-                %
+                5.4
               </span>
             </div>
           </div>
@@ -18826,7 +18972,13 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              -
+              <span
+                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+                value={0}
+              >
+                
+                0
+              </span>
             </div>
           </div>
           <div
@@ -18843,9 +18995,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
                 value={-2.1}
               >
-                ▼
-                -2
-                %
+                
+                -2.1
               </span>
             </div>
           </div>
@@ -18885,10 +19036,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
                 value={5.4}
               >
-                ▲
                 +
-                5
-                %
+                5.4
               </span>
             </div>
           </div>
@@ -18902,7 +19051,13 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              -
+              <span
+                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+                value={0}
+              >
+                
+                0
+              </span>
             </div>
           </div>
           <div
@@ -18919,9 +19074,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
                 value={-2.1}
               >
-                ▼
-                -2
-                %
+                
+                -2.1
               </span>
             </div>
           </div>
@@ -18961,10 +19115,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
                 value={5.4}
               >
-                ▲
                 +
-                5
-                %
+                5.4
               </span>
             </div>
           </div>
@@ -18978,7 +19130,13 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              -
+              <span
+                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+                value={0}
+              >
+                
+                0
+              </span>
             </div>
           </div>
           <div
@@ -18995,9 +19153,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
                 value={-2.1}
               >
-                ▼
-                -2
-                %
+                
+                -2.1
               </span>
             </div>
           </div>
@@ -19037,10 +19194,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
                 value={5.4}
               >
-                ▲
                 +
-                5
-                %
+                5.4
               </span>
             </div>
           </div>
@@ -19054,7 +19209,13 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              -
+              <span
+                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+                value={0}
+              >
+                
+                0
+              </span>
             </div>
           </div>
           <div
@@ -19071,9 +19232,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
                 value={-2.1}
               >
-                ▼
-                -2
-                %
+                
+                -2.1
               </span>
             </div>
           </div>
@@ -19113,10 +19273,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
                 value={5.4}
               >
-                ▲
                 +
-                5
-                %
+                5.4
               </span>
             </div>
           </div>
@@ -19130,7 +19288,13 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              -
+              <span
+                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+                value={0}
+              >
+                
+                0
+              </span>
             </div>
           </div>
           <div
@@ -19147,13 +19311,80 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
                 value={-2.1}
               >
-                ▼
-                -2
-                %
+                
+                -2.1
               </span>
             </div>
           </div>
         </div>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Development With icon 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Positive value
+    </div>
+    <div>
+      <span
+        className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
+        value={50}
+      >
+        ▲
+        +
+        50
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Zero value
+    </div>
+    <div>
+      <span
+        className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+        value={0}
+      >
+        
+        
+        0
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Negative value
+    </div>
+    <div>
+      <span
+        className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
+        value={-200}
+      >
+        ▼
+        
+        -200
       </span>
     </div>
   </div>
@@ -19200,8 +19431,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue secondary
   >
     
     4,672,198
-     
-    SEK
+     SEK
   </span>
 </div>
 `;
@@ -19225,7 +19455,8 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue title1 1`
     className="Typography__StyledTypography-sc-10mju41-0 iyoqVf"
     type="title1"
   >
-    4713119
+    
+    4,713,119
   </span>
 </div>
 `;
@@ -19261,7 +19492,8 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
           value={-9.2}
         >
           ▼
-          -9
+          
+          -9.2
           %
         </span>
       </span>
@@ -19275,8 +19507,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
       >
         
         -4,672,198
-         
-        SEK
+         SEK
       </span>
     </div>
   </div>
@@ -19315,7 +19546,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
         >
           ▲
           +
-          9
+          9.2
           %
         </span>
       </span>
@@ -19329,8 +19560,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
       >
         +
         4,672,198
-         
-        SEK
+         SEK
       </span>
     </div>
   </div>
