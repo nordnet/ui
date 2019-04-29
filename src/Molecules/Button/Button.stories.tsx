@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 import { Button, Flexbox } from '../..';
 import { Display } from '../../common/Display';
@@ -127,19 +127,19 @@ storiesOf('Molecules | Button', module)
         {
           title: 'Reset',
           component: (
-            <BrowserRouter>
-              <Button to="/route1">To Route1</Button>
-            </BrowserRouter>
+            <HashRouter>
+              <Button to="route1">To Route1</Button>
+            </HashRouter>
           ),
         },
         {
           title: 'Submit',
           component: (
-            <BrowserRouter>
-              <Button to="/route2" variant="secondary">
+            <HashRouter>
+              <Button to="route2" variant="secondary">
                 To Route2
               </Button>
-            </BrowserRouter>
+            </HashRouter>
           ),
         },
       ]}

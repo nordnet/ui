@@ -17588,7 +17588,7 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
     <div>
       <a
         className="Button__StyledLink-lqp9m3-1 haqafK"
-        href="/route1"
+        href="#/route1"
         onClick={[Function]}
       >
         <span
@@ -17613,7 +17613,7 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
     <div>
       <a
         className="Button__StyledLink-lqp9m3-1 giGRfI"
-        href="/route2"
+        href="#/route2"
         onClick={[Function]}
         variant="secondary"
       >
