@@ -1432,6 +1432,30 @@ exports[`Storyshots Atoms | Number Number with 0 decimals  1`] = `"100"`;
 
 exports[`Storyshots Atoms | Number Number with 2 decimals  1`] = `"10.00"`;
 
+exports[`Storyshots Atoms | PageWrapper PageWrapper 1`] = `
+<div
+  className="PageWrapper__Outer-u7hx18-0 eXxAFE"
+>
+  <div
+    className="PageWrapper__Inner-u7hx18-1 dgabII"
+  >
+    Page contents inside the PageWrapper can be anything.
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | PageWrapper PageWrapper with a custom background 1`] = `
+<div
+  className="PageWrapper__Outer-u7hx18-0 gwhAEH"
+>
+  <div
+    className="PageWrapper__Inner-u7hx18-1 dgabII"
+  >
+    Page contents inside the PageWrapper can be anything.
+  </div>
+</div>
+`;
+
 exports[`Storyshots Atoms | Separator Separator default 1`] = `
 <div
   className="Separatorstories__StyledContainer-sc-12j0h8a-0 ixCTfH"
