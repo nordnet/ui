@@ -17,17 +17,15 @@ import Time from './Atoms/Time';
 import Typography from './Atoms/Typography';
 
 /** Molecules */
-import Avatar from './Molecules/Avatar';
-import Button from './Molecules/Button';
-import CardWithTitle from './Molecules/CardWithTitle';
-import Currency from './Molecules/Currency/index';
 import Development from './Molecules/Development/index';
 import LabeledValue from './Molecules/LabeledValue';
 import Link from './Molecules/Link';
 import LinkBuy from './Molecules/LinkBuy';
 import LinkSell from './Molecules/LinkSell';
+import CardWithTitle from './Molecules/CardWithTitle';
+import Avatar from './Molecules/Avatar';
+import Button from './Molecules/Button';
 import ListWithTitles from './Molecules/ListWithTitles';
-import Percent from './Molecules/Percent';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
 
@@ -43,7 +41,6 @@ export {
   CardWithTabs,
   CardWithTitle,
   CssGrid,
-  Currency,
   Development,
   Flag,
   Flexbox,
@@ -58,7 +55,6 @@ export {
   Media,
   Number,
   PageWrapper,
-  Percent,
   Separator,
   Spinner,
   Table,

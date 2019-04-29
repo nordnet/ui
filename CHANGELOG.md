@@ -1,3 +1,19 @@
+# [1.0.0-beta.31](https://github.com/nordnet/ui/compare/v1.0.0-beta.30@beta...v1.0.0-beta.31@beta) (2019-04-29)
+
+
+### Features
+
+* new number and development components ([#113](https://github.com/nordnet/ui/issues/113)) ([31e7072](https://github.com/nordnet/ui/commit/31e7072))
+
+
+### BREAKING CHANGES
+
+* 🧨 `Currency` and `Percent` components are now part of the `Number`
+component. Migrate like so: `<Currency value={100} currency="SEK" />` => `<Number value={100} currency="SEK" />` and `<Percent value={100} />` => `<Number value={100} percentage />`.
+
+* feat: add development component that wraps the number component
+* 🧨`Development` component now behaves as a wrapper around number that adds styling for color, etc.
+
 # [1.0.0-beta.30](https://github.com/nordnet/ui/compare/v1.0.0-beta.29@beta...v1.0.0-beta.30@beta) (2019-04-29)
 
 
