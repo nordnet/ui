@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, number, select } from '@storybook/addon-knobs';
 
 import { Currency, Typography } from '../..';
-import { Display } from '../../common/Display';
-import { TYPOGRAPHY_TYPES } from '../Typography/Typography';
+import { Display } from '../../common/Display/index';
+import { TYPOGRAPHY_TYPES } from '../../Atoms/Typography/Typography';
 
 const inputs = (): [number, string] => {
   const value = number('value', 234234);
@@ -21,7 +21,7 @@ const inputs = (): [number, string] => {
   return [value, currency];
 };
 
-storiesOf('Atoms | Currency', module)
+storiesOf('Molecules | Currency', module)
   .addDecorator(withKnobs)
   .add('Default', () => {
     const [value, currency] = inputs();
@@ -38,4 +38,7 @@ storiesOf('Atoms | Currency', module)
       ),
     }));
     return <Display items={items} />;
-  });
+  })
+  .add('Invalid value', () => {
+    return <Currency value={null} currency="SEK" />;
+  })

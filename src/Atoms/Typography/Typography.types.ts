@@ -51,7 +51,7 @@ export type Props = {
   className?: string;
   color?: 'inherit' | ColorFn;
   weight?: string;
-  type?: string;
+  type?: Types;
   /**
    * primary has font-weight: regular, font-size: 14px (mobile) and 16px (desktop)
    * secondary has font-weight: regular, font-size: 12px (mobile) and 14px (desktop)

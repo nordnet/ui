@@ -85,6 +85,10 @@ export type Theme = {
     spinnerBlack: RawColor['black'];
     /** white */
     spinnerWhite: RawColor['white'];
+    /** gray4 */
+    inputBorder: RawColor['gray4'];
+    /** gray1 */
+    inputBorderHover: RawColor['gray1'];
   };
 
   spacing: {

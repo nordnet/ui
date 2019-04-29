@@ -85,6 +85,8 @@ export const createTheme = (config?: ThemeConfig): Theme => {
       text: rawColor.gray0,
       textLight: rawColor.white, // FIXME: to be removed later
       warning: rawColor.index,
+      inputBorder: rawColor.gray4,
+      inputBorderHover: rawColor.gray1,
     },
     media: {
       between: (s1, s2) => {

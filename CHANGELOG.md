@@ -1,3 +1,31 @@
+# [1.0.0-beta.28](https://github.com/nordnet/ui/compare/v1.0.0-beta.27@beta...v1.0.0-beta.28@beta) (2019-04-26)
+
+
+### Bug Fixes
+
+* types for typography ([31b13f2](https://github.com/nordnet/ui/commit/31b13f2))
+
+# [1.0.0-beta.27](https://github.com/nordnet/ui/compare/v1.0.0-beta.26@beta...v1.0.0-beta.27@beta) (2019-04-26)
+
+
+### Features
+
+* added right title to card with title ([#103](https://github.com/nordnet/ui/issues/103)) ([b73bfea](https://github.com/nordnet/ui/commit/b73bfea))
+
+
+### BREAKING CHANGES
+
+* 🧨 remove default styles from CardWithTitle
+
+* test: 💍 update snapshots
+
+# [1.0.0-beta.26](https://github.com/nordnet/ui/compare/v1.0.0-beta.25@beta...v1.0.0-beta.26@beta) (2019-04-26)
+
+
+### Features
+
+* add colors ([#106](https://github.com/nordnet/ui/issues/106)) ([9ab3ab0](https://github.com/nordnet/ui/commit/9ab3ab0))
+
 # [1.0.0-beta.25](https://github.com/nordnet/ui/compare/v1.0.0-beta.24@beta...v1.0.0-beta.25@beta) (2019-04-24)
 
 

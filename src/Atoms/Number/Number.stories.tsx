@@ -12,6 +12,3 @@ storiesOf('Atoms | Number', module)
   .add('Invalid value', () => {
     return <Number value={null} />;
   })
-  .add('Uses custom symbol for invalid value', () => {
-    return <Number value={null} invalidValue="X" />;
-  });

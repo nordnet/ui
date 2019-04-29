@@ -7,6 +7,7 @@ import { assert } from '../../common/utils';
 const StyledLink = styled(RouterLink)<Props>`
   color: ${p => p.theme.color.cta};
   text-decoration: none;
+
   &:hover {
     text-decoration: underline;
   }
