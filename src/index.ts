@@ -16,7 +16,6 @@ import Number from './Atoms/Number';
 import Time from './Atoms/Time';
 
 /** Molecules */
-import Currency from './Molecules/Currency/index';
 import Development from './Molecules/Development/index';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
@@ -27,7 +26,6 @@ import LinkSell from './Molecules/LinkSell';
 import CardWithTitle from './Molecules/CardWithTitle';
 import Avatar from './Molecules/Avatar';
 import Button from './Molecules/Button';
-import Percent from './Molecules/Percent';
 import ListWithTitles from './Molecules/ListWithTitles';
 
 /** Organisms */
@@ -41,7 +39,6 @@ export {
   Card,
   CardWithTitle,
   CssGrid,
-  Currency,
   Development,
   Flag,
   Flexbox,
@@ -53,7 +50,6 @@ export {
   ListWithTitles,
   Media,
   Number,
-  Percent,
   Separator,
   Spinner,
   Time,
