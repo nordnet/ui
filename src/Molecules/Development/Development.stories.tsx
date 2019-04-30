@@ -1,11 +1,21 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import MD from 'react-markdown';
 
+import docs from './Development.md';
 import { Development, Typography } from '../..';
 import { Display } from '../../common/Display/index';
 import { TYPOGRAPHY_TYPES } from '../../Atoms/Typography/Typography';
 
 storiesOf('Molecules | Development', module)
+  .add('Documentation', () => (
+    <Typography>
+      <MD source={docs} />
+      <div><Development value={50} currency="SEK" /></div>
+      <div><Development value={0} percentage /></div>
+      <div><Development value={-2.3} percentage /></div>
+    </Typography>
+  ))
   .add('Default', () => (
     <Display
       items={[

@@ -1,10 +1,19 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
+import MD from 'react-markdown';
 import Number from './Number';
+import docs from './Number.md';
 import { Display } from '../../common/Display';
 import { Typography, TYPOGRAPHY_TYPES } from '../Typography/Typography';
 
 storiesOf('Atoms | Number', module)
+  .add('Documentation', () => (
+    <Typography>
+      <MD source={docs} />
+      <div><Number value={1000000}/></div>
+      <div><Number value={3400} currency="SEK" /></div>
+    </Typography>
+  ))
   .add('Default', () => (
     <Display
       items={[
