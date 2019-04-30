@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import MD from 'react-markdown';
 import docs from './CssGrid.md';
 
-import { CssGrid as Grid } from '../..';
+import { CssGrid as Grid, Typography } from '../..';
 
 const StyledContent = styled.div`
   box-sizing: border-box;
@@ -25,7 +25,9 @@ const Content = ({ children }: any) => <StyledContent>{children}</StyledContent>
 storiesOf('Atoms | CssGrid', module)
   .add('Documentation', () => (
     <StyledMarkdownContainer>
-      <MD source={docs} />
+      <Typography>
+        <MD source={docs} />
+      </Typography>
     </StyledMarkdownContainer>
   ))
   .add('Simple CssGrid', () => (
