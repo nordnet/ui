@@ -1,5 +1,110 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Atoms | Box Different padding for different screen sizes  1`] = `
+<div
+  className="Boxstories__Outer-sc-1599xyf-0 jJVWTX"
+>
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 jkUPPb"
+  >
+    <div
+      className="Boxstories__Inner-sc-1599xyf-1 fNdytv"
+    >
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 fhyLAh"
+        color={[Function]}
+      >
+        Some stuff here
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | Box Margin 1`] = `
+<div
+  className="Boxstories__Outer-sc-1599xyf-0 jJVWTX"
+>
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 WHxBF"
+  >
+    <div
+      className="Boxstories__Inner-sc-1599xyf-1 fNdytv"
+    >
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 fhyLAh"
+        color={[Function]}
+      >
+        Some stuff here
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | Box Margin and different margin Y-axis 1`] = `
+<div
+  className="Boxstories__Outer-sc-1599xyf-0 jJVWTX"
+>
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 bIeNAE"
+  >
+    <div
+      className="Boxstories__Inner-sc-1599xyf-1 fNdytv"
+    >
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 fhyLAh"
+        color={[Function]}
+      >
+        Some stuff here
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | Box Padding  1`] = `
+<div
+  className="Boxstories__Outer-sc-1599xyf-0 jJVWTX"
+>
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 dngVuj"
+  >
+    <div
+      className="Boxstories__Inner-sc-1599xyf-1 fNdytv"
+    >
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 fhyLAh"
+        color={[Function]}
+      >
+        Some stuff here
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | Box Padding and different X-axis and left  1`] = `
+<div
+  className="Boxstories__Outer-sc-1599xyf-0 jJVWTX"
+>
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 iSxrMw"
+  >
+    <div
+      className="Boxstories__Inner-sc-1599xyf-1 fNdytv"
+    >
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 fhyLAh"
+        color={[Function]}
+      >
+        Some stuff here
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Atoms | Card Basic Card 1`] = `
 <div
   className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
@@ -2315,30 +2420,6 @@ exports[`Storyshots Atoms | Number Number with sign 1`] = `
 `;
 
 exports[`Storyshots Atoms | Number null currency 1`] = `"-"`;
-
-exports[`Storyshots Atoms | PageWrapper PageWrapper 1`] = `
-<div
-  className="PageWrapper__Outer-u7hx18-0 eXxAFE"
->
-  <div
-    className="PageWrapper__Inner-u7hx18-1 dgabII"
-  >
-    Page contents inside the PageWrapper can be anything.
-  </div>
-</div>
-`;
-
-exports[`Storyshots Atoms | PageWrapper PageWrapper with a custom background 1`] = `
-<div
-  className="PageWrapper__Outer-u7hx18-0 gwhAEH"
->
-  <div
-    className="PageWrapper__Inner-u7hx18-1 dgabII"
-  >
-    Page contents inside the PageWrapper can be anything.
-  </div>
-</div>
-`;
 
 exports[`Storyshots Atoms | Separator Separator default 1`] = `
 <div
@@ -20078,6 +20159,30 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
       </div>
     </li>
   </ol>
+</div>
+`;
+
+exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
+<div
+  className="PageWrapper__Outer-sc-1ur2ylx-0 jYokbr"
+>
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 fJYNQk"
+  >
+    Page contents inside the PageWrapper can be anything.
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | PageWrapper PageWrapper with a custom background 1`] = `
+<div
+  className="PageWrapper__Outer-sc-1ur2ylx-0 fLylmR"
+>
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 fJYNQk"
+  >
+    Page contents inside the PageWrapper can be anything.
+  </div>
 </div>
 `;
 
