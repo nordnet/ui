@@ -15,6 +15,7 @@ import Spinner from './Atoms/Spinner';
 import TabTitle from './Atoms/TabTitle';
 import Time from './Atoms/Time';
 import Typography from './Atoms/Typography';
+import Box from './Atoms/Box';
 
 /** Molecules */
 import Development from './Molecules/Development/index';
@@ -70,4 +71,5 @@ export {
   Time,
   Tr,
   Typography,
+  Box,
 };
