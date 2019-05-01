@@ -67,8 +67,17 @@ const getStyles = (props: Props) => {
   return marginStyles.concat(paddingStyles);
 };
 
+const getStylesForSize = (size: string) => css<Partial<Props>>`
+  ${p => p.theme.media.greaterThan(p.theme.size[size])} {
+    ${p => getStyles({ ...p, ...p[size] })}
+  }
+`;
 const StyledDiv = styled.div<Props>`
   ${p => getStyles(p)}
+  ${p => (p.sm ? getStylesForSize('sm') : '')}
+  ${p => (p.md ? getStylesForSize('md') : '')}
+  ${p => (p.xl ? getStylesForSize('xl') : '')}
+  ${p => (p.lg ? getStylesForSize('lg') : '')}
 `;
 
 export const Box: React.FC<Props> = ({
@@ -88,4 +97,12 @@ export const Box: React.FC<Props> = ({
   pt,
   px,
   py,
-}) => <StyledDiv {...{ as, children, m, mb, ml, mr, mt, mx, my, p, pb, pl, pr, pt, px, py }} />;
+  lg,
+  md,
+  sm,
+  xl,
+}) => (
+  <StyledDiv
+    {...{ as, children, m, mb, ml, mr, mt, mx, my, p, pb, pl, pr, pt, px, py, lg, md, sm, xl }}
+  />
+);

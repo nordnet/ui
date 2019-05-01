@@ -40,4 +40,11 @@ storiesOf('Atoms | Box', module)
         <Inner>{text}</Inner>
       </Box>
     </Outer>
+  ))
+  .add('Different padding for different screen sizes ', () => (
+    <Outer>
+      <Box p={0} sm={{ p: 4 }}>
+        <Inner>{text}</Inner>
+      </Box>
+    </Outer>
   ));
