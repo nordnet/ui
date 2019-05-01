@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import { PageWrapper } from '../..';
 
-storiesOf('Atoms | PageWrapper', module)
+storiesOf('Molecules | PageWrapper', module)
   .add('PageWrapper', () => (
     <PageWrapper>Page contents inside the PageWrapper can be anything.</PageWrapper>
   ))

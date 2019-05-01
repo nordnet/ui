@@ -9,7 +9,6 @@ import List from './Atoms/List';
 import ListItem from './Atoms/ListItem';
 import Media from './Atoms/Media';
 import Number from './Atoms/Number';
-import PageWrapper from './Atoms/PageWrapper';
 import Separator from './Atoms/Separator';
 import Spinner from './Atoms/Spinner';
 import TabTitle from './Atoms/TabTitle';
@@ -19,6 +18,7 @@ import Box from './Atoms/Box';
 
 /** Molecules */
 import Development from './Molecules/Development/index';
+import PageWrapper from './Molecules/PageWrapper';
 import LabeledValue from './Molecules/LabeledValue';
 import Link from './Molecules/Link';
 import LinkBuy from './Molecules/LinkBuy';

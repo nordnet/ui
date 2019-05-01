@@ -1,15 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Props } from './PageWrapper.types';
+import { Box } from '../..';
 
 const Outer = styled.div<Props>`
   ${p => (p.background ? `background-color: ${p.background(p.theme)}` : '')}
 `;
 
-const Inner = styled.div`
+const Inner = styled(Box)`
   ${p => p.theme.media.greaterThan(p.theme.size.sm)} {
-    padding: 0 ${p => p.theme.spacing.unit(6)}px;
-    margin: 0 auto;
     max-width: 1252px;
   }
 `;
@@ -17,7 +16,9 @@ const Inner = styled.div`
 export const PageWrapper: React.FC<Props> = ({ children, background }) => {
   return (
     <Outer background={background}>
-      <Inner>{children}</Inner>
+      <Inner p={0} m="0 auto" sm={{ px: 6 }}>
+        {children}
+      </Inner>
     </Outer>
   );
 };
