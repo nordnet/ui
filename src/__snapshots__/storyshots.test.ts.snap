@@ -20179,7 +20179,7 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
   className="PageWrapper__Outer-sc-1ur2ylx-0 jYokbr"
 >
   <div
-    className="Box__StyledDiv-sc-1bfv3i9-0 fJYNQk"
+    className="PageWrapper__Inner-sc-1ur2ylx-1 lijJno Box__StyledDiv-sc-1bfv3i9-0 fJYNQk"
   >
     Page contents inside the PageWrapper can be anything.
   </div>
@@ -20191,7 +20191,7 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper with a custom background
   className="PageWrapper__Outer-sc-1ur2ylx-0 fLylmR"
 >
   <div
-    className="Box__StyledDiv-sc-1bfv3i9-0 fJYNQk"
+    className="PageWrapper__Inner-sc-1ur2ylx-1 lijJno Box__StyledDiv-sc-1bfv3i9-0 fJYNQk"
   >
     Page contents inside the PageWrapper can be anything.
   </div>
