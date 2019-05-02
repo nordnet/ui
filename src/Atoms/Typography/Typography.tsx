@@ -41,57 +41,77 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
   const { type, weight, theme } = props;
   let sizeMobile;
   let sizeDesktop;
+  let lineHeightMobile;
+  let lineHeightDesktop;
   let defaultWeight;
   let allowedWeights = ['regular', 'bold', 'extrabold'];
 
   switch (type) {
     case TYPOGRAPHY_TYPES.primary:
-      sizeMobile = 14;
+      sizeMobile = 16;
       sizeDesktop = 16;
+      lineHeightMobile = 6;
+      lineHeightDesktop = 6;
       defaultWeight = 'regular';
       break;
     case TYPOGRAPHY_TYPES.secondary:
-      sizeMobile = 12;
+      sizeMobile = 14;
       sizeDesktop = 14;
+      lineHeightMobile = 6;
+      lineHeightDesktop = 6;
       defaultWeight = 'regular';
       allowedWeights = ['regular', 'bold'];
       break;
     case TYPOGRAPHY_TYPES.tertiary:
-      sizeMobile = 10;
+      sizeMobile = 12;
       sizeDesktop = 12;
+      lineHeightMobile = 5;
+      lineHeightDesktop = 5;
       defaultWeight = 'regular';
       allowedWeights = ['regular', 'bold'];
       break;
     case TYPOGRAPHY_TYPES.caption:
       sizeMobile = 10;
       sizeDesktop = 10;
+      lineHeightMobile = 4;
+      lineHeightDesktop = 4;
       defaultWeight = 'regular';
       allowedWeights = ['regular', 'bold'];
       break;
     case TYPOGRAPHY_TYPES.title1:
-      sizeMobile = 30;
-      sizeDesktop = 32;
+      sizeMobile = 24;
+      sizeDesktop = 28;
+      lineHeightMobile = 7;
+      lineHeightDesktop = 8;
       defaultWeight = 'extrabold';
       break;
     case TYPOGRAPHY_TYPES.title2:
       sizeMobile = 20;
       sizeDesktop = 24;
+      lineHeightMobile = 6;
+      lineHeightDesktop = 7;
       defaultWeight = 'extrabold';
       break;
     case TYPOGRAPHY_TYPES.title3:
       sizeMobile = 18;
       sizeDesktop = 20;
+      lineHeightMobile = 6;
+      lineHeightDesktop = 6;
       defaultWeight = 'extrabold';
       break;
     case TYPOGRAPHY_TYPES.hero:
       sizeMobile = 46;
       sizeDesktop = 48;
+      lineHeightMobile = 12;
+      lineHeightDesktop = 13;
       defaultWeight = 'extrabold';
       allowedWeights = ['bold', 'extrabold'];
       break;
     default:
-      sizeMobile = 14;
+      sizeMobile = 16;
       sizeDesktop = 16;
+      lineHeightMobile = 6;
+      lineHeightDesktop = 6;
       defaultWeight = 'regular';
   }
 
@@ -106,9 +126,11 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
       weight && allowedWeights.includes(weight) ? WEIGHTS[weight] : WEIGHTS[defaultWeight]
     };
     font-size: ${sizeMobile}px;
+    line-height: ${theme.spacing.unit(lineHeightMobile) / sizeMobile};
 
     ${theme.media.greaterThan(theme.size[SMALL_DEVICE_BP])} {
       font-size: ${sizeDesktop}px;
+      line-height: ${theme.spacing.unit(lineHeightDesktop) / sizeDesktop};
     }
   `;
 };
