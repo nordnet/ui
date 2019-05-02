@@ -58,7 +58,9 @@ const TabsNav: Component = (withRouter(({ children, location }) => {
     if (!isItemElement(c)) {
       assert(false, 'There should be only <TabsNav.Tab> children inside of <TabsNav> component');
     } else {
-      const isIndexActive = Boolean(matchPath(location.pathname, c.props.to));
+      const isIndexActive = Boolean(
+        matchPath(location.pathname, { path: c.props.to, exact: true }),
+      );
 
       titles.push(
         <Flexbox.Item as="li">
