@@ -2,20 +2,24 @@
 
 exports[`Storyshots Atoms | Box Different padding for different screen sizes  1`] = `
 <div
-  className="Boxstories__Outer-sc-1599xyf-0 jJVWTX"
+  className="Boxstories__Outer-sc-1599xyf-0 bjpmAu"
 >
   <div
-    className="Box__StyledDiv-sc-1bfv3i9-0 jkUPPb"
+    className="Boxstories__Outer-sc-1599xyf-0 bjpmAu"
   >
     <div
-      className="Boxstories__Inner-sc-1599xyf-1 fNdytv"
+      className="Box__StyledDiv-sc-1bfv3i9-0 jkUPPb"
     >
-      <span
-        className="Typography__StyledTypography-sc-10mju41-0 fhyLAh"
-        color={[Function]}
+      <div
+        className="Boxstories__Inner-sc-1599xyf-1 csVEuk"
       >
-        Some stuff here
-      </span>
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 cGSKSx"
+          color={[Function]}
+        >
+          Some stuff here
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -23,16 +27,16 @@ exports[`Storyshots Atoms | Box Different padding for different screen sizes  1`
 
 exports[`Storyshots Atoms | Box Margin 1`] = `
 <div
-  className="Boxstories__Outer-sc-1599xyf-0 jJVWTX"
+  className="Boxstories__Outer-sc-1599xyf-0 bjpmAu"
 >
   <div
     className="Box__StyledDiv-sc-1bfv3i9-0 WHxBF"
   >
     <div
-      className="Boxstories__Inner-sc-1599xyf-1 fNdytv"
+      className="Boxstories__Inner-sc-1599xyf-1 csVEuk"
     >
       <span
-        className="Typography__StyledTypography-sc-10mju41-0 fhyLAh"
+        className="Typography__StyledTypography-sc-10mju41-0 cGSKSx"
         color={[Function]}
       >
         Some stuff here
@@ -44,16 +48,16 @@ exports[`Storyshots Atoms | Box Margin 1`] = `
 
 exports[`Storyshots Atoms | Box Margin and different margin Y-axis 1`] = `
 <div
-  className="Boxstories__Outer-sc-1599xyf-0 jJVWTX"
+  className="Boxstories__Outer-sc-1599xyf-0 bjpmAu"
 >
   <div
     className="Box__StyledDiv-sc-1bfv3i9-0 bIeNAE"
   >
     <div
-      className="Boxstories__Inner-sc-1599xyf-1 fNdytv"
+      className="Boxstories__Inner-sc-1599xyf-1 csVEuk"
     >
       <span
-        className="Typography__StyledTypography-sc-10mju41-0 fhyLAh"
+        className="Typography__StyledTypography-sc-10mju41-0 cGSKSx"
         color={[Function]}
       >
         Some stuff here
@@ -65,20 +69,24 @@ exports[`Storyshots Atoms | Box Margin and different margin Y-axis 1`] = `
 
 exports[`Storyshots Atoms | Box Padding  1`] = `
 <div
-  className="Boxstories__Outer-sc-1599xyf-0 jJVWTX"
+  className="Boxstories__Outer-sc-1599xyf-0 bjpmAu"
 >
   <div
-    className="Box__StyledDiv-sc-1bfv3i9-0 dngVuj"
+    className="Boxstories__Outer-sc-1599xyf-0 bjpmAu"
   >
     <div
-      className="Boxstories__Inner-sc-1599xyf-1 fNdytv"
+      className="Box__StyledDiv-sc-1bfv3i9-0 dngVuj"
     >
-      <span
-        className="Typography__StyledTypography-sc-10mju41-0 fhyLAh"
-        color={[Function]}
+      <div
+        className="Boxstories__Inner-sc-1599xyf-1 csVEuk"
       >
-        Some stuff here
-      </span>
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 cGSKSx"
+          color={[Function]}
+        >
+          Some stuff here
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -86,20 +94,24 @@ exports[`Storyshots Atoms | Box Padding  1`] = `
 
 exports[`Storyshots Atoms | Box Padding and different X-axis and left  1`] = `
 <div
-  className="Boxstories__Outer-sc-1599xyf-0 jJVWTX"
+  className="Boxstories__Outer-sc-1599xyf-0 bjpmAu"
 >
   <div
-    className="Box__StyledDiv-sc-1bfv3i9-0 iSxrMw"
+    className="Boxstories__Outer-sc-1599xyf-0 bjpmAu"
   >
     <div
-      className="Boxstories__Inner-sc-1599xyf-1 fNdytv"
+      className="Box__StyledDiv-sc-1bfv3i9-0 iSxrMw"
     >
-      <span
-        className="Typography__StyledTypography-sc-10mju41-0 fhyLAh"
-        color={[Function]}
+      <div
+        className="Boxstories__Inner-sc-1599xyf-1 csVEuk"
       >
-        Some stuff here
-      </span>
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 cGSKSx"
+          color={[Function]}
+        >
+          Some stuff here
+        </span>
+      </div>
     </div>
   </div>
 </div>
