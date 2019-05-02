@@ -46,7 +46,7 @@ const StyledUl = styled.ul`
   margin-bottom: -1px;
 `;
 const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
-  x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type') && x.type === Item;
+  x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
 
 const TabsNav: Component = (withRouter(({ children, location }) => {
   const { setRef, onKeyDown } = useKeyboardNavigation({
