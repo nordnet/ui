@@ -8,7 +8,7 @@ exports[`Storyshots Atoms | Box Different padding for different screen sizes  1`
     className="Boxstories__Outer-sc-1599xyf-0 bjpmAu"
   >
     <div
-      className="Box__StyledDiv-sc-1bfv3i9-0 jkUPPb"
+      className="Box__StyledDiv-sc-1bfv3i9-0 heczBu"
     >
       <div
         className="Boxstories__Inner-sc-1599xyf-1 csVEuk"
@@ -30,7 +30,7 @@ exports[`Storyshots Atoms | Box Margin 1`] = `
   className="Boxstories__Outer-sc-1599xyf-0 bjpmAu"
 >
   <div
-    className="Box__StyledDiv-sc-1bfv3i9-0 WHxBF"
+    className="Box__StyledDiv-sc-1bfv3i9-0 kVhjFS"
   >
     <div
       className="Boxstories__Inner-sc-1599xyf-1 csVEuk"
@@ -51,7 +51,7 @@ exports[`Storyshots Atoms | Box Margin and different margin Y-axis 1`] = `
   className="Boxstories__Outer-sc-1599xyf-0 bjpmAu"
 >
   <div
-    className="Box__StyledDiv-sc-1bfv3i9-0 bIeNAE"
+    className="Box__StyledDiv-sc-1bfv3i9-0 fduZdq"
   >
     <div
       className="Boxstories__Inner-sc-1599xyf-1 csVEuk"
@@ -75,7 +75,7 @@ exports[`Storyshots Atoms | Box Padding  1`] = `
     className="Boxstories__Outer-sc-1599xyf-0 bjpmAu"
   >
     <div
-      className="Box__StyledDiv-sc-1bfv3i9-0 dngVuj"
+      className="Box__StyledDiv-sc-1bfv3i9-0 hutZdG"
     >
       <div
         className="Boxstories__Inner-sc-1599xyf-1 csVEuk"
@@ -100,7 +100,7 @@ exports[`Storyshots Atoms | Box Padding and different X-axis and left  1`] = `
     className="Boxstories__Outer-sc-1599xyf-0 bjpmAu"
   >
     <div
-      className="Box__StyledDiv-sc-1bfv3i9-0 iSxrMw"
+      className="Box__StyledDiv-sc-1bfv3i9-0 dfXvTQ"
     >
       <div
         className="Boxstories__Inner-sc-1599xyf-1 csVEuk"
@@ -20268,7 +20268,7 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
   className="PageWrapper__Outer-sc-1ur2ylx-0 jYokbr"
 >
   <div
-    className="PageWrapper__Inner-sc-1ur2ylx-1 lijJno Box__StyledDiv-sc-1bfv3i9-0 fJYNQk"
+    className="PageWrapper__Inner-sc-1ur2ylx-1 lijJno Box__StyledDiv-sc-1bfv3i9-0 jrcgeU"
   >
     Page contents inside the PageWrapper can be anything.
   </div>
@@ -20280,7 +20280,7 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper with a custom background
   className="PageWrapper__Outer-sc-1ur2ylx-0 fLylmR"
 >
   <div
-    className="PageWrapper__Inner-sc-1ur2ylx-1 lijJno Box__StyledDiv-sc-1bfv3i9-0 fJYNQk"
+    className="PageWrapper__Inner-sc-1ur2ylx-1 lijJno Box__StyledDiv-sc-1bfv3i9-0 jrcgeU"
   >
     Page contents inside the PageWrapper can be anything.
   </div>

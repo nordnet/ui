@@ -40,6 +40,13 @@ type MediaRelatedProps = {
   lg?: Partial<Paddings & Margins>;
 };
 
+export type Spacings = {
+  margin: number | string | undefined;
+  padding: number | string | undefined;
+  margins: (number | string | undefined)[];
+  paddings: (number | string | undefined)[];
+};
+
 export type Props = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   className?: string;
