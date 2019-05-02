@@ -18492,7 +18492,7 @@ exports[`Storyshots Molecules | Button Default usage 1`] = `
 
 exports[`Storyshots Molecules | Button Disabled button 1`] = `
 <button
-  className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 izPjyW"
+  className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 gawFpI"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -19867,7 +19867,7 @@ exports[`Storyshots Molecules | LinkBuy LinkBuy disabled 1`] = `
   type="primary"
 >
   <span
-    className="LinkBuy__StyledLink-sc-1qysrjt-0 keeRlZ"
+    className="LinkBuy__StyledLink-sc-1qysrjt-0 diraYI"
     disabled={true}
     to="somewhere"
   >
@@ -19897,7 +19897,7 @@ exports[`Storyshots Molecules | LinkSell LinkSell disabled 1`] = `
   type="primary"
 >
   <span
-    className="LinkSell__StyledLink-c5ecjk-0 qIUNG"
+    className="LinkSell__StyledLink-c5ecjk-0 hWATfT"
     disabled={true}
     to="somewhere"
   >
@@ -20972,6 +20972,82 @@ Array [
         </div>
       </div>
     </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        a11yCta
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 cUGlUC"
+          color="#2D67FF"
+        />
+        <div>
+          #2D67FF
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        a11yPositive
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 UwSSf"
+          color="#008A00"
+        />
+        <div>
+          #008A00
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        a11yNegative
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 fxpGBF"
+          color="#E81700"
+        />
+        <div>
+          #E81700
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        a11yIndex
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 cRhANN"
+          color="#C15700"
+        />
+        <div>
+          #C15700
+        </div>
+      </div>
+    </div>
   </div>,
 ]
 `;
@@ -21144,11 +21220,11 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 iqDMOi"
-        color="#D7D7D2"
+        className="Themestories__Color-skwibd-0 kMjKh"
+        color="#A0A09B"
       />
       <div>
-        #D7D7D2
+        #A0A09B
       </div>
     </div>
   </div>
