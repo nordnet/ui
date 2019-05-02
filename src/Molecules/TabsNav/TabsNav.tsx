@@ -59,7 +59,7 @@ const TabsNav: Component = (withRouter(({ children, location }) => {
       assert(false, 'There should be only <TabsNav.Tab> children inside of <TabsNav> component');
     } else {
       const isIndexActive = Boolean(
-        matchPath(location.pathname, { path: c.props.to, exact: Boolean(c.props.match) }),
+        matchPath(location.pathname, { path: c.props.to, exact: Boolean(c.props.exact) }),
       );
 
       titles.push(
