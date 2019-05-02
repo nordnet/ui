@@ -18560,12 +18560,13 @@ exports[`Storyshots Molecules | Button Link looking like a buttons composed in a
   className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 kvhUqX"
 >
   <div
-    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 iBIrOe"
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 jRkZzh"
   >
-    <button
-      className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kUtBKR"
+    <a
+      className="Button__StyledLink-lqp9m3-1 khhupE"
+      fullWidth={true}
+      href="#/route1"
       onClick={[Function]}
-      type="submit"
     >
       <span
         className="Typography__StyledTypography-sc-10mju41-0 fHeMKy"
@@ -18574,15 +18575,17 @@ exports[`Storyshots Molecules | Button Link looking like a buttons composed in a
       >
         Submit
       </span>
-    </button>
+    </a>
   </div>
   <div
-    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 iBIrOe"
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 jRkZzh"
   >
-    <button
-      className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 feEdLm"
+    <a
+      className="Button__StyledLink-lqp9m3-1 fusGOx"
+      fullWidth={true}
+      href="#/route2"
       onClick={[Function]}
-      type="reset"
+      variant="secondary"
     >
       <span
         className="Typography__StyledTypography-sc-10mju41-0 fHeMKy"
@@ -18591,7 +18594,7 @@ exports[`Storyshots Molecules | Button Link looking like a buttons composed in a
       >
         Reset
       </span>
-    </button>
+    </a>
   </div>
 </div>
 `;
