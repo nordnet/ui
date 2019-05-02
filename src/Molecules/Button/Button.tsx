@@ -80,6 +80,7 @@ const StyledButton = styled(NormalizedElements.Button)<ButtonProps>`
 const StyledLink = styled(RouterLink)<LinkProps>`
   ${p => getSharedStyle(p)}
   text-decoration: none;
+  text-align: center;
 `;
 
 export const Button: ButtonComponent = props => {
@@ -101,7 +102,7 @@ export const Button: ButtonComponent = props => {
     );
 
     return (
-      <StyledLink to={to} onClick={onClick} size={size} variant={variant}>
+      <StyledLink to={to} onClick={onClick} size={size} variant={variant} fullWidth={fullWidth}>
         <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
           {children}
         </Typography>
