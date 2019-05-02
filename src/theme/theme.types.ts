@@ -30,7 +30,7 @@ export type RawColor = {
   gray2: '#6E6E69';
   gray3: '#A0A09B';
   gray4: '#BCBCB6';
-  gray5: '#D7D7D2';
+  /** @deprecated */ gray5: '#D7D7D2';
   gray6: '#EBEBE8';
   gray7: '#F5F5F5';
   white: '#FFFFFF';
@@ -40,6 +40,12 @@ export type RawColor = {
   positive: '#00D200';
   negative: '#FF1900';
   index: '#FFCF00';
+
+  // ACCESSIBLE FUNCTIONAL COLORS
+  a11yCta: '#2D67FF';
+  a11yPositive: '#008A00';
+  a11yNegative: '#E81700';
+  a11yIndex: '#C15700';
 };
 
 export type Theme = {
@@ -75,8 +81,8 @@ export type Theme = {
     divider: RawColor['gray6'];
     /** gray0 */
     backgroundDark: RawColor['gray0'];
-    /** gray5 */
-    disabled: RawColor['gray5'];
+    /** gray3 */
+    disabled: RawColor['gray3'];
     /** white */
     buttonSecondaryBackground: RawColor['white'];
     /** white */
