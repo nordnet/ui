@@ -144,4 +144,27 @@ storiesOf('Molecules | Button', module)
         },
       ]}
     />
+  ))
+  .add('Link looking like a button that is full width', () => (
+    <HashRouter>
+      <Button to="www.google.com" onClick={action('clicked')} fullWidth>
+        Button
+      </Button>
+    </HashRouter>
+  ))
+  .add('Link looking like a buttons composed in a group', () => (
+    <HashRouter>
+      <Flexbox.Container>
+        <Flexbox.Item flex="1">
+          <Button to="route1" onClick={action('submit')} fullWidth>
+            Submit
+          </Button>
+        </Flexbox.Item>
+        <Flexbox.Item flex="1">
+          <Button to="route2" onClick={action('reset')} variant="secondary" fullWidth>
+            Reset
+          </Button>
+        </Flexbox.Item>
+      </Flexbox.Container>
+    </HashRouter>
   ));

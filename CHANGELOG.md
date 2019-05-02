@@ -1,3 +1,10 @@
+# [1.0.0-beta.34](https://github.com/nordnet/ui/compare/v1.0.0-beta.33@beta...v1.0.0-beta.34@beta) (2019-05-02)
+
+
+### Features
+
+* add full width link button ([#119](https://github.com/nordnet/ui/issues/119)) ([df2cad7](https://github.com/nordnet/ui/commit/df2cad7))
+
 # [1.0.0-beta.33](https://github.com/nordnet/ui/compare/v1.0.0-beta.32@beta...v1.0.0-beta.33@beta) (2019-04-30)
 
 

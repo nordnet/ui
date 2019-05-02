@@ -18523,7 +18523,7 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
     </div>
     <div>
       <a
-        className="Button__StyledLink-lqp9m3-1 haqafK"
+        className="Button__StyledLink-lqp9m3-1 lkPlCX"
         href="#/route1"
         onClick={[Function]}
       >
@@ -18548,7 +18548,7 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
     </div>
     <div>
       <a
-        className="Button__StyledLink-lqp9m3-1 giGRfI"
+        className="Button__StyledLink-lqp9m3-1 cgHtBu"
         href="#/route2"
         onClick={[Function]}
         variant="secondary"
@@ -18562,6 +18562,67 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
         </span>
       </a>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Button Link looking like a button that is full width 1`] = `
+<a
+  className="Button__StyledLink-lqp9m3-1 khhupE"
+  fullWidth={true}
+  href="#/www.google.com"
+  onClick={[Function]}
+>
+  <span
+    className="Typography__StyledTypography-sc-10mju41-0 fHeMKy"
+    color="inherit"
+    type="secondary"
+  >
+    Button
+  </span>
+</a>
+`;
+
+exports[`Storyshots Molecules | Button Link looking like a buttons composed in a group 1`] = `
+<div
+  className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 kvhUqX"
+>
+  <div
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 jRkZzh"
+  >
+    <a
+      className="Button__StyledLink-lqp9m3-1 khhupE"
+      fullWidth={true}
+      href="#/route1"
+      onClick={[Function]}
+    >
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 fHeMKy"
+        color="inherit"
+        type="secondary"
+      >
+        Submit
+      </span>
+    </a>
+  </div>
+  <div
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 jRkZzh"
+  >
+    <a
+      className="Button__StyledLink-lqp9m3-1 fusGOx"
+      fullWidth={true}
+      href="#/route2"
+      onClick={[Function]}
+      variant="secondary"
+    >
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 fHeMKy"
+        color="inherit"
+        type="secondary"
+      >
+        Reset
+      </span>
+    </a>
   </div>
 </div>
 `;
