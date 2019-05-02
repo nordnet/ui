@@ -42,6 +42,7 @@ type MediaRelatedProps = {
 
 export type Props = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+  className?: string;
 } & Paddings &
   Margins &
   MediaRelatedProps;

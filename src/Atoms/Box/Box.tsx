@@ -12,6 +12,7 @@ const isPropPresentedIn = (props: Props) => (prop: keyof Props) =>
 const getCssString = (property: string, value: string | number) => R.cond([
   [() => isString(value), () => css`${property}: ${value};`],
   [() => isNumber(value), () => css`${property}: ${p => p.theme.spacing.unit(value as number)}px;`],
+  [R.T, () => ''],
 ])(property, value);
 
 const getStyles = (props: Props) => {
@@ -101,8 +102,31 @@ export const Box: React.FC<Props> = ({
   md,
   sm,
   xl,
+  className,
 }) => (
   <StyledDiv
-    {...{ as, children, m, mb, ml, mr, mt, mx, my, p, pb, pl, pr, pt, px, py, lg, md, sm, xl }}
+    {...{
+      as,
+      children,
+      m,
+      mb,
+      ml,
+      mr,
+      mt,
+      mx,
+      my,
+      p,
+      pb,
+      pl,
+      pr,
+      pt,
+      px,
+      py,
+      lg,
+      md,
+      sm,
+      xl,
+      className,
+    }}
   />
 );
