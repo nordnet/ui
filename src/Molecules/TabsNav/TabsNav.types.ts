@@ -1,6 +1,7 @@
 export type ItemProps = {
   to: string;
   title: React.ReactNode;
+  match?: boolean;
 };
 export type ItemComponent = React.FC<ItemProps>;
 export type Component = React.FC & { Tab: ItemComponent };
