@@ -14,7 +14,9 @@ storiesOf('Molecules | LabeledValue', module)
   ))
   .add('Integration: LabeledValue title1', () => (
     <LabeledValue label="Holdings (SEK)">
-      <Typography type="title1"><Number value={4713119} /></Typography>
+      <Typography type="title1">
+        <Number value={4713119} />
+      </Typography>
     </LabeledValue>
   ))
   .add('Integration: LabeledValue with positive development and currency', () => (

@@ -13,7 +13,7 @@ const isInvalid = R.anyPass([
   ),
 ]);
 
-const isValid= R.complement(isInvalid) as (x:any) => x is number;
+const isValid = R.complement(isInvalid) as (x: any) => x is number;
 
 const timeOptions = {
   hour12: false,

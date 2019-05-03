@@ -9,6 +9,8 @@ const StyledList = styled.ul<Props>`
 `;
 
 export const List: React.FunctionComponent<Props> = ({ as = 'ul', className, children }) => (
-  <StyledList className={className} as={as}>{children}</StyledList>
+  <StyledList className={className} as={as}>
+    {children}
+  </StyledList>
 );
 List.displayName = 'List';

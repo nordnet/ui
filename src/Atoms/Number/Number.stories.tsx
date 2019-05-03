@@ -10,8 +10,12 @@ storiesOf('Atoms | Number', module)
   .add('Documentation', () => (
     <Typography>
       <MD source={docs} />
-      <div><Number value={1000000}/></div>
-      <div><Number value={3400} currency="SEK" /></div>
+      <div>
+        <Number value={1000000} />
+      </div>
+      <div>
+        <Number value={3400} currency="SEK" />
+      </div>
     </Typography>
   ))
   .add('Default', () => (
@@ -41,21 +45,21 @@ storiesOf('Atoms | Number', module)
         decimals: 4,
         fromPrice: 0,
         toPrice: 0.9999,
-        tick: 0.0001
+        tick: 0.0001,
       },
       {
         decimals: 2,
         fromPrice: 1,
         toPrice: 99999.98,
-        tick: 0.01
+        tick: 0.01,
       },
       {
         decimals: 1,
         fromPrice: 100000,
         toPrice: 999999.89,
-        tick: 0.1
-      }
-    ]
+        tick: 0.1,
+      },
+    ];
     return (
       <>
         <pre>{`ticks = ${JSON.stringify(ticks, null, 2)}`}</pre>

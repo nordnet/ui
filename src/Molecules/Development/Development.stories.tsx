@@ -11,9 +11,15 @@ storiesOf('Molecules | Development', module)
   .add('Documentation', () => (
     <Typography>
       <MD source={docs} />
-      <div><Development value={50} currency="SEK" /></div>
-      <div><Development value={0} percentage /></div>
-      <div><Development value={-2.3} percentage /></div>
+      <div>
+        <Development value={50} currency="SEK" />
+      </div>
+      <div>
+        <Development value={0} percentage />
+      </div>
+      <div>
+        <Development value={-2.3} percentage />
+      </div>
     </Typography>
   ))
   .add('Default', () => (

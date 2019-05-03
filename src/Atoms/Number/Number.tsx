@@ -2,14 +2,13 @@ import React from 'react';
 import { injectIntl } from 'react-intl';
 import { NumberComponent as NumberComponentType, Ticks } from './Number.types';
 
-const getPrefix = (sign: boolean, value: number) =>
-  sign && value > 0 ? '+' : '';
-  
+const getPrefix = (sign: boolean, value: number) => (sign && value > 0 ? '+' : '');
+
 const getTickDecimals = (value: number, ticks: Ticks) => {
   const tick = ticks.find(t => value >= t.fromPrice && value < t.toPrice + (t.tick || 0));
 
   return tick ? tick.decimals : undefined;
-}
+};
 
 const getNumberOptions = (value: number, ticks?: Ticks, decimals?: number) => {
   if (typeof ticks !== 'undefined') {
@@ -27,7 +26,7 @@ const getNumberOptions = (value: number, ticks?: Ticks, decimals?: number) => {
   }
 
   return {};
-}
+};
 
 const NumberComponent: NumberComponentType = ({
   intl,

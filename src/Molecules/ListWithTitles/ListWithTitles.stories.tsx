@@ -23,8 +23,9 @@ storiesOf('Molecules | ListWithTitles', module)
           </ItemContainer>
         </ListItem>
       </ListWithTitles>
-    )
-  }).add('Integration: ListWithTitles with left title', () => {
+    );
+  })
+  .add('Integration: ListWithTitles with left title', () => {
     return (
       <ListWithTitles as="ol" leftTitle="title1">
         <ListItem>
@@ -40,8 +41,9 @@ storiesOf('Molecules | ListWithTitles', module)
           </ItemContainer>
         </ListItem>
       </ListWithTitles>
-    )
-  }).add('Integration: ListWithTitles with right title', () => {
+    );
+  })
+  .add('Integration: ListWithTitles with right title', () => {
     return (
       <ListWithTitles as="ol" rightTitle="title1">
         <ListItem>
@@ -57,8 +59,9 @@ storiesOf('Molecules | ListWithTitles', module)
           </ItemContainer>
         </ListItem>
       </ListWithTitles>
-    )
-  }).add('Integration: ListWithTitles with no titles', () => {
+    );
+  })
+  .add('Integration: ListWithTitles with no titles', () => {
     return (
       <ListWithTitles as="ol">
         <ListItem>
@@ -74,5 +77,5 @@ storiesOf('Molecules | ListWithTitles', module)
           </ItemContainer>
         </ListItem>
       </ListWithTitles>
-    )
+    );
   });
