@@ -1,10 +1,10 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import MD from 'react-markdown';
-import Number from './Number';
+import { Number, Typography } from '../..';
 import docs from './Number.md';
 import { Display } from '../../common/Display';
-import { Typography, TYPOGRAPHY_TYPES } from '../Typography/Typography';
+import { TYPOGRAPHY_TYPES } from '../Typography/Typography';
 
 storiesOf('Atoms | Number', module)
   .add('Documentation', () => (

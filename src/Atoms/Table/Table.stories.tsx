@@ -1,13 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Typography, Flag } from '../..';
-import Table from './Table';
-import Thead from './Thead';
-import Tbody from './Tbody';
-import Tfoot from './Tfoot';
-import Tr from './Tr';
-import Th from './Th';
-import Td from './Td';
+import { Typography, Flag, Table, Thead, Tbody, Tfoot, Tr, Th, Td } from '../..';
 import { data } from './Table.stories.data';
 
 let tableData: (string | number)[][] = [];

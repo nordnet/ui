@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import ListItem from '../ListItem';
-import List from '.';
+import { List } from '../..';
 
 storiesOf('Atoms | List', module)
   .add('Basic unordered list', () => (

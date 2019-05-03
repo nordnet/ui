@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import Time from './Time';
+import { Time } from '../..';
 
 storiesOf('Atoms | Time', module)
   .add('Time ', () => {

@@ -1,8 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { BrowserRouter } from 'react-router-dom';
-import { Typography } from '../..';
-import LinkSell from '.';
+import { Typography, LinkSell } from '../..';
 
 storiesOf('Molecules | LinkSell', module)
   .add('LinkSell', () => {
