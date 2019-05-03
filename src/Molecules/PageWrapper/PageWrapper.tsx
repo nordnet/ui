@@ -6,7 +6,7 @@ import { Box } from '../..';
 const OLD_GRID_PADDING = 10 * 2; // px
 const OLD_GRID_REDUCTION = 30; // px
 const OLD_GRID_COMPABILITY = OLD_GRID_PADDING + OLD_GRID_REDUCTION;
-// TODO: remove OLD_GRID_COMPABILITY when old grid is removed
+// TODO: remove OLD_GRID_COMPABILITY when header and footer uses new grid
 
 const Outer = styled.div<Props>`
   ${p => (p.background ? `background-color: ${p.background(p.theme)}` : '')}
