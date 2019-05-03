@@ -2507,7 +2507,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
         >
           <defs>
             <linearGradient
-              id="spinner-0046FF-1"
+              id="spinner-defaultSpinner-1"
               x1="50%"
               x2="50%"
               y1="0%"
@@ -2525,7 +2525,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               />
             </linearGradient>
             <linearGradient
-              id="spinner-0046FF-2"
+              id="spinner-defaultSpinner-2"
               x1="50%"
               x2="50%"
               y1="0%"
@@ -2548,11 +2548,11 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
           >
             <path
               d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-              fill="url(#spinner-0046FF-1)"
+              fill="url(#spinner-defaultSpinner-1)"
             />
             <path
               d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-              fill="url(#spinner-0046FF-2)"
+              fill="url(#spinner-defaultSpinner-2)"
               transform="rotate(-180 6 12)"
             />
           </g>
@@ -2581,7 +2581,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
         >
           <defs>
             <linearGradient
-              id="spinner-282823-1"
+              id="spinner-defaultSpinnerText-1"
               x1="50%"
               x2="50%"
               y1="0%"
@@ -2599,7 +2599,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               />
             </linearGradient>
             <linearGradient
-              id="spinner-282823-2"
+              id="spinner-defaultSpinnerText-2"
               x1="50%"
               x2="50%"
               y1="0%"
@@ -2622,11 +2622,11 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
           >
             <path
               d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-              fill="url(#spinner-282823-1)"
+              fill="url(#spinner-defaultSpinnerText-1)"
             />
             <path
               d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-              fill="url(#spinner-282823-2)"
+              fill="url(#spinner-defaultSpinnerText-2)"
               transform="rotate(-180 6 12)"
             />
           </g>
@@ -2655,7 +2655,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
         >
           <defs>
             <linearGradient
-              id="spinner-00D200-1"
+              id="spinner-defaultSpinnerPositive-1"
               x1="50%"
               x2="50%"
               y1="0%"
@@ -2673,7 +2673,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               />
             </linearGradient>
             <linearGradient
-              id="spinner-00D200-2"
+              id="spinner-defaultSpinnerPositive-2"
               x1="50%"
               x2="50%"
               y1="0%"
@@ -2696,11 +2696,11 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
           >
             <path
               d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-              fill="url(#spinner-00D200-1)"
+              fill="url(#spinner-defaultSpinnerPositive-1)"
             />
             <path
               d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-              fill="url(#spinner-00D200-2)"
+              fill="url(#spinner-defaultSpinnerPositive-2)"
               transform="rotate(-180 6 12)"
             />
           </g>
@@ -2729,7 +2729,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
         >
           <defs>
             <linearGradient
-              id="spinner-FF1900-1"
+              id="spinner-defaultSpinnerNegative-1"
               x1="50%"
               x2="50%"
               y1="0%"
@@ -2747,7 +2747,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               />
             </linearGradient>
             <linearGradient
-              id="spinner-FF1900-2"
+              id="spinner-defaultSpinnerNegative-2"
               x1="50%"
               x2="50%"
               y1="0%"
@@ -2770,11 +2770,11 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
           >
             <path
               d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-              fill="url(#spinner-FF1900-1)"
+              fill="url(#spinner-defaultSpinnerNegative-1)"
             />
             <path
               d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-              fill="url(#spinner-FF1900-2)"
+              fill="url(#spinner-defaultSpinnerNegative-2)"
               transform="rotate(-180 6 12)"
             />
           </g>
@@ -2803,7 +2803,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
         >
           <defs>
             <linearGradient
-              id="spinner-FFCF00-1"
+              id="spinner-defaultSpinnerWarning-1"
               x1="50%"
               x2="50%"
               y1="0%"
@@ -2821,7 +2821,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               />
             </linearGradient>
             <linearGradient
-              id="spinner-FFCF00-2"
+              id="spinner-defaultSpinnerWarning-2"
               x1="50%"
               x2="50%"
               y1="0%"
@@ -2844,11 +2844,11 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
           >
             <path
               d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-              fill="url(#spinner-FFCF00-1)"
+              fill="url(#spinner-defaultSpinnerWarning-1)"
             />
             <path
               d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-              fill="url(#spinner-FFCF00-2)"
+              fill="url(#spinner-defaultSpinnerWarning-2)"
               transform="rotate(-180 6 12)"
             />
           </g>
@@ -2877,7 +2877,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
         >
           <defs>
             <linearGradient
-              id="spinner-6E6E69-1"
+              id="spinner-defaultSpinnerLabel-1"
               x1="50%"
               x2="50%"
               y1="0%"
@@ -2895,7 +2895,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
               />
             </linearGradient>
             <linearGradient
-              id="spinner-6E6E69-2"
+              id="spinner-defaultSpinnerLabel-2"
               x1="50%"
               x2="50%"
               y1="0%"
@@ -2918,11 +2918,11 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
           >
             <path
               d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-              fill="url(#spinner-6E6E69-1)"
+              fill="url(#spinner-defaultSpinnerLabel-1)"
             />
             <path
               d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-              fill="url(#spinner-6E6E69-2)"
+              fill="url(#spinner-defaultSpinnerLabel-2)"
               transform="rotate(-180 6 12)"
             />
           </g>
@@ -2930,6 +2930,167 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
       </span>
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | Spinner Regression: 2 spinners with same color and size affects each other in Chrome 1`] = `
+<div>
+  <div>
+    <span
+      className="Typography__StyledTypography-sc-10mju41-0 eRhdrc"
+      type="primary"
+    >
+      Only the one with green border should be shown. The bug before was that if two spinners had the same size and color, both were hidden.
+    </span>
+  </div>
+   
+  <div
+    style={
+      Object {
+        "border": "1px red solid",
+        "display": "none",
+      }
+    }
+  >
+     
+    <span
+      className="Spinner__Animation-x7jzy3-0 cgQdeZ"
+    >
+      <svg
+        className="Spinner__StyledSvg-x7jzy3-1 hJnjlc"
+        height={32}
+        viewBox="0 0 24 24"
+        width={32}
+      >
+        <defs>
+          <linearGradient
+            id="spinner-firstSpinner-1"
+            x1="50%"
+            x2="50%"
+            y1="0%"
+            y2="100%"
+          >
+            <stop
+              offset="0%"
+              stopColor="#0046FF"
+              stopOpacity="0"
+            />
+            <stop
+              offset="100%"
+              stopColor="#0046FF"
+              stopOpacity=".5"
+            />
+          </linearGradient>
+          <linearGradient
+            id="spinner-firstSpinner-2"
+            x1="50%"
+            x2="50%"
+            y1="0%"
+            y2="100%"
+          >
+            <stop
+              offset="0%"
+              stopColor="#0046FF"
+              stopOpacity=".5"
+            />
+            <stop
+              offset="100%"
+              stopColor="#0046FF"
+            />
+          </linearGradient>
+        </defs>
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
+            fill="url(#spinner-firstSpinner-1)"
+          />
+          <path
+            d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
+            fill="url(#spinner-firstSpinner-2)"
+            transform="rotate(-180 6 12)"
+          />
+        </g>
+      </svg>
+    </span>
+     
+  </div>
+   
+  <div
+    style={
+      Object {
+        "border": "1px green solid",
+      }
+    }
+  >
+     
+    <span
+      className="Spinner__Animation-x7jzy3-0 cgQdeZ"
+    >
+      <svg
+        className="Spinner__StyledSvg-x7jzy3-1 hJnjlc"
+        height={32}
+        viewBox="0 0 24 24"
+        width={32}
+      >
+        <defs>
+          <linearGradient
+            id="spinner-secondSpinner-1"
+            x1="50%"
+            x2="50%"
+            y1="0%"
+            y2="100%"
+          >
+            <stop
+              offset="0%"
+              stopColor="#0046FF"
+              stopOpacity="0"
+            />
+            <stop
+              offset="100%"
+              stopColor="#0046FF"
+              stopOpacity=".5"
+            />
+          </linearGradient>
+          <linearGradient
+            id="spinner-secondSpinner-2"
+            x1="50%"
+            x2="50%"
+            y1="0%"
+            y2="100%"
+          >
+            <stop
+              offset="0%"
+              stopColor="#0046FF"
+              stopOpacity=".5"
+            />
+            <stop
+              offset="100%"
+              stopColor="#0046FF"
+            />
+          </linearGradient>
+        </defs>
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
+            fill="url(#spinner-secondSpinner-1)"
+          />
+          <path
+            d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
+            fill="url(#spinner-secondSpinner-2)"
+            transform="rotate(-180 6 12)"
+          />
+        </g>
+      </svg>
+    </span>
+     
+  </div>
+   
 </div>
 `;
 
@@ -2945,7 +3106,7 @@ exports[`Storyshots Atoms | Spinner Spinner big 1`] = `
   >
     <defs>
       <linearGradient
-        id="spinner-0046FF-1"
+        id="spinner-mySpinner-1"
         x1="50%"
         x2="50%"
         y1="0%"
@@ -2963,7 +3124,7 @@ exports[`Storyshots Atoms | Spinner Spinner big 1`] = `
         />
       </linearGradient>
       <linearGradient
-        id="spinner-0046FF-2"
+        id="spinner-mySpinner-2"
         x1="50%"
         x2="50%"
         y1="0%"
@@ -2986,11 +3147,11 @@ exports[`Storyshots Atoms | Spinner Spinner big 1`] = `
     >
       <path
         d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-        fill="url(#spinner-0046FF-1)"
+        fill="url(#spinner-mySpinner-1)"
       />
       <path
         d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-        fill="url(#spinner-0046FF-2)"
+        fill="url(#spinner-mySpinner-2)"
         transform="rotate(-180 6 12)"
       />
     </g>
@@ -3010,7 +3171,7 @@ exports[`Storyshots Atoms | Spinner Spinner default 1`] = `
   >
     <defs>
       <linearGradient
-        id="spinner-0046FF-1"
+        id="spinner-mySpinner-1"
         x1="50%"
         x2="50%"
         y1="0%"
@@ -3028,7 +3189,7 @@ exports[`Storyshots Atoms | Spinner Spinner default 1`] = `
         />
       </linearGradient>
       <linearGradient
-        id="spinner-0046FF-2"
+        id="spinner-mySpinner-2"
         x1="50%"
         x2="50%"
         y1="0%"
@@ -3051,11 +3212,11 @@ exports[`Storyshots Atoms | Spinner Spinner default 1`] = `
     >
       <path
         d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-        fill="url(#spinner-0046FF-1)"
+        fill="url(#spinner-mySpinner-1)"
       />
       <path
         d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-        fill="url(#spinner-0046FF-2)"
+        fill="url(#spinner-mySpinner-2)"
         transform="rotate(-180 6 12)"
       />
     </g>

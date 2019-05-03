@@ -6,6 +6,8 @@ type ColorFn = (t: Theme) => Values<Theme['color']>;
 export type Props = {
   size?: number;
   color?: ColorFn;
+  /** Globally unique id for the spinner */
+  id: string;
 };
 
 export type PropsWithTheme = Props & {
