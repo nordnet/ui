@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import R from 'ramda';
+import * as R from 'ramda';
 import { Card } from '../..';
 import { CardWithTitleComponent } from './CardWithTitle.types';
 

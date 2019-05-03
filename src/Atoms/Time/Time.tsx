@@ -1,6 +1,6 @@
 import { injectIntl } from 'react-intl';
 import React from 'react';
-import R from 'ramda';
+import * as R from 'ramda';
 import { TimeComponent } from './Time.types';
 
 const convertToDate = (value: number) => new Date(value);
