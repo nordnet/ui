@@ -2,6 +2,10 @@
 
 This component aligns page contents vertically throughout our different breakpoints.
 
+## Props
+
+`background` - a function to grab a color value from theme, like so: `t => t.color.background`.
+
 ## Usage
 
 Simply just wrap your components with this component.

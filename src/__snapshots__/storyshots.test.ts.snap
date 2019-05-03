@@ -20265,7 +20265,7 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
 
 exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
 <div
-  className="PageWrapper__Outer-sc-1ur2ylx-0 fLylmR"
+  className="PageWrapper__Outer-sc-1ur2ylx-0 jYokbr"
 >
   <div
     className="PageWrapper__Inner-sc-1ur2ylx-1 krfPhC Box__StyledDiv-sc-1bfv3i9-0 hgnFla"
