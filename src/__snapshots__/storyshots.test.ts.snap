@@ -20265,12 +20265,21 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
 
 exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
 <div
-  className="PageWrapper__Outer-sc-1ur2ylx-0 jYokbr"
+  className="PageWrapper__Outer-sc-1ur2ylx-0 fLylmR"
 >
   <div
     className="PageWrapper__Inner-sc-1ur2ylx-1 krfPhC Box__StyledDiv-sc-1bfv3i9-0 hgnFla"
   >
-    Page contents inside the PageWrapper can be anything.
+    <div
+      className="Box__StyledDiv-sc-1bfv3i9-0 dZhQte"
+    >
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 eRhdrc"
+        type="primary"
+      >
+        Page contents inside the PageWrapper can be anything.
+      </span>
+    </div>
   </div>
 </div>
 `;
@@ -20282,7 +20291,16 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper with a custom background
   <div
     className="PageWrapper__Inner-sc-1ur2ylx-1 krfPhC Box__StyledDiv-sc-1bfv3i9-0 hgnFla"
   >
-    Page contents inside the PageWrapper can be anything.
+    <div
+      className="Box__StyledDiv-sc-1bfv3i9-0 dZhQte"
+    >
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 eRhdrc"
+        type="primary"
+      >
+        Page contents inside the PageWrapper can be anything.
+      </span>
+    </div>
   </div>
 </div>
 `;
