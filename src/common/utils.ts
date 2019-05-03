@@ -6,6 +6,7 @@ export const assert = (
   if (process.env.NODE_ENV !== 'production') {
     if (!expression) {
       if (options && options.level === 'warn') {
+        // eslint-disable-next-line no-console
         console.warn(errorMessage);
       } else {
         throw new Error(errorMessage);
