@@ -23,6 +23,6 @@ const timeOptions = {
 };
 
 const Time: TimeComponent = ({ intl, value, invalidValue = '-' }) =>
-  isValid(value) ? <>{intl.formatTime(value, timeOptions)}</> : <>{invalidValue}</>;
+  isValid(value) ? <time>{intl.formatTime(value, timeOptions)}</time> : <>{invalidValue}</>;
 
 export default injectIntl(Time);

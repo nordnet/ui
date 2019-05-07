@@ -54,14 +54,12 @@ storiesOf('Atoms | Spinner', module)
           Only the one with green border should be shown. The bug before was that if two spinners
           had the same size and color, both were hidden.
         </Typography>
-      </div>{' '}
+      </div>
       <div style={{ display: 'none', border: '1px red solid' }}>
-        {' '}
-        <Spinner size={8} id="firstSpinner" />{' '}
-      </div>{' '}
+        <Spinner size={8} id="firstSpinner" />
+      </div>
       <div style={{ border: '1px green solid' }}>
-        {' '}
-        <Spinner size={8} id="secondSpinner" />{' '}
-      </div>{' '}
+        <Spinner size={8} id="secondSpinner" />
+      </div>
     </div>
   ));
