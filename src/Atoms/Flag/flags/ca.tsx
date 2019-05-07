@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function FlagCa({ ...rest }) {
+export default function FlagCa() {
   return (
-    <svg focusable="false" {...rest}>
+    <>
       <g fillOpacity="1" transform="translate(74.118) scale(.9375)">
         <path fill="#fff" d="M81.137 0h362.276v512H81.137z" />
         <path
@@ -20,12 +20,6 @@ export default function FlagCa({ ...rest }) {
         />
       </g>
       <title>Canada</title>
-    </svg>
+    </>
   );
 }
-
-FlagCa.defaultProps = {
-  fillOpacity: '14.118',
-  fill: '#28ff09',
-  viewBox: '0 0 640 480',
-};

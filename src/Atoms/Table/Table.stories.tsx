@@ -59,7 +59,7 @@ storiesOf('Atoms | Table', module)
                 <Td textAlign="right">{instrument[5]}%</Td>
                 <Td>{instrument[4]}</Td>
                 <Td>
-                  <Flag country="se" width={4} height={4} />
+                  <Flag country="se" height={4} />
                 </Td>
                 <Td>{instrument[3]}</Td>
               </Tr>
@@ -103,7 +103,7 @@ storiesOf('Atoms | Table', module)
                 <Td textAlign="right">{instrument[5]}%</Td>
                 <Td>{instrument[4]}</Td>
                 <Td>
-                  <Flag country="se" width={4} height={4} />
+                  <Flag country="se" height={4} />
                 </Td>
                 <Td>{instrument[3]}</Td>
               </Tr>

@@ -1,8 +1,11 @@
 import React from 'react';
 
-export default function FlagGb({ ...rest }) {
+// This one will fail the same way as spinner did
+// Chrome, put 2 on page, hide first -> second will become hidden
+// FIXME: do it without defs
+export default function FlagGb() {
   return (
-    <svg focusable="false" {...rest}>
+    <>
       <defs>
         <clipPath id="gb_a">
           <path fillOpacity=".67" d="M-85.333 0h682.67v512h-682.67z" />
@@ -28,10 +31,6 @@ export default function FlagGb({ ...rest }) {
         </g>
       </g>
       <title>Great Britain</title>
-    </svg>
+    </>
   );
 }
-
-FlagGb.defaultProps = {
-  viewBox: '0 0 640 480',
-};

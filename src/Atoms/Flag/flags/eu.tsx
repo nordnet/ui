@@ -1,8 +1,11 @@
 import React from 'react';
 
-export default function FlagEu({ ...rest }) {
+// This one will fail the same way as spinner did
+// Chrome, put 2 on page, hide first -> second will become hidden
+// FIXME: do it without defs
+export default function FlagEu() {
   return (
-    <svg {...rest}>
+    <>
       <defs>
         <g id="eu_d">
           <g id="eu_b">
@@ -30,10 +33,6 @@ export default function FlagEu({ ...rest }) {
         <use height="100%" width="100%" xlinkHref="#eu_e" transform="scale(-1 1)" />
       </g>
       <title>EU</title>
-    </svg>
+    </>
   );
 }
-
-FlagEu.defaultProps = {
-  viewBox: '0 0 640 480',
-};

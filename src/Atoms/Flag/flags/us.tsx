@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function FlagUs({ ...rest }) {
+export default function FlagUs() {
   return (
-    <svg focusable="false" {...rest}>
+    <>
       <g fillRule="evenodd" transform="scale(.9375)">
         <g strokeWidth="1pt">
           <g fill="#bd3d44">
@@ -136,10 +136,6 @@ export default function FlagUs({ ...rest }) {
         </g>
       </g>
       <title>United States of America</title>
-    </svg>
+    </>
   );
 }
-
-FlagUs.defaultProps = {
-  viewBox: '0 0 640 480',
-};

@@ -1,8 +1,11 @@
 import React from 'react';
 
-export default function FlagCn({ ...rest }) {
+// This one will fail the same way as spinner did
+// Chrome, put 2 on page, hide first -> second will become hidden
+// FIXME: do it without defs
+export default function FlagCn() {
   return (
-    <svg focusable="false" {...rest}>
+    <>
       <defs>
         <path id="cn_a" fill="#ffde00" d="M-.588.81L0-1 .588.81-.952-.31H.952z" />
       </defs>
@@ -38,10 +41,6 @@ export default function FlagCn({ ...rest }) {
         height="20"
       />
       <title>China</title>
-    </svg>
+    </>
   );
 }
-
-FlagCn.defaultProps = {
-  viewBox: '0 0 640 480',
-};

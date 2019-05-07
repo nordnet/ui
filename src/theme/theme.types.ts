@@ -95,6 +95,8 @@ export type Theme = {
     inputBorder: RawColor['gray4'];
     /** gray1 */
     inputBorderHover: RawColor['gray1'];
+    /** gray6 */
+    flagBorder: RawColor['gray6'];
   };
 
   spacing: {
