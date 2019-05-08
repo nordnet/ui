@@ -1024,9 +1024,6 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
   display: block;
   width: 26.666666666666668px;
   overflow: hidden;
-  -webkit-transform: translate(-0.5px,-0.5px);
-  -ms-transform: translate(-0.5px,-0.5px);
-  transform: translate(-0.5px,-0.5px);
 }
 
 .c0 {
@@ -1797,9 +1794,6 @@ exports[`Storyshots Atoms | Flag Default use 1`] = `
   display: block;
   width: 26.666666666666668px;
   overflow: hidden;
-  -webkit-transform: translate(-0.5px,-0.5px);
-  -ms-transform: translate(-0.5px,-0.5px);
-  transform: translate(-0.5px,-0.5px);
 }
 
 <svg
@@ -1851,9 +1845,6 @@ exports[`Storyshots Atoms | Flag Different size  1`] = `
   display: block;
   width: 53.333333333333336px;
   overflow: hidden;
-  -webkit-transform: translate(-0.5px,-0.5px);
-  -ms-transform: translate(-0.5px,-0.5px);
-  transform: translate(-0.5px,-0.5px);
 }
 
 <svg
@@ -1906,9 +1897,6 @@ exports[`Storyshots Atoms | Flag Inline 1`] = `
   vertical-align: middle;
   width: 26.666666666666668px;
   overflow: hidden;
-  -webkit-transform: translate(-0.5px,-0.5px);
-  -ms-transform: translate(-0.5px,-0.5px);
-  transform: translate(-0.5px,-0.5px);
 }
 
 <span>
@@ -6132,9 +6120,6 @@ exports[`Storyshots Atoms | Table Integration: Table (stickyHeader) with Typogra
   display: block;
   width: 26.666666666666668px;
   overflow: hidden;
-  -webkit-transform: translate(-0.5px,-0.5px);
-  -ms-transform: translate(-0.5px,-0.5px);
-  transform: translate(-0.5px,-0.5px);
 }
 
 .c0 {
@@ -10791,9 +10776,6 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography 1`] = `
   display: block;
   width: 21.333333333333332px;
   overflow: hidden;
-  -webkit-transform: translate(-0.5px,-0.5px);
-  -ms-transform: translate(-0.5px,-0.5px);
-  transform: translate(-0.5px,-0.5px);
 }
 
 .c0 {
@@ -15467,9 +15449,6 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography and ellipsi
   display: block;
   width: 21.333333333333332px;
   overflow: hidden;
-  -webkit-transform: translate(-0.5px,-0.5px);
-  -ms-transform: translate(-0.5px,-0.5px);
-  transform: translate(-0.5px,-0.5px);
 }
 
 .c0 {

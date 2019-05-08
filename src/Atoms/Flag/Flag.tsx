@@ -20,10 +20,9 @@ const StyledSvg = styled(CleanSvg)<InternalProps>`
   box-sizing: border-box;
   display: ${p => (p.inline ? 'inline-block' : 'block')};
   ${p => (p.inline ? `vertical-align: middle;` : '')};
-  ${/** IE11 stuff below */ ''}
-  width: ${p => p.theme.spacing.unit((p.height * VIEWBOX_WIDTH) / VIEWBOX_HEIGHT)}px;
+  ${/** IE11 fixes below */ ''}
+  width: ${p => (p.theme.spacing.unit(p.height) * VIEWBOX_WIDTH) / VIEWBOX_HEIGHT}px;
   overflow: hidden;
-  transform: translate(-0.5px, -0.5px);
 `;
 
 export const Flag: FlagComponent = props => {
