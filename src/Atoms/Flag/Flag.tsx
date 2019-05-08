@@ -19,7 +19,14 @@ const StyledSvg = styled(CleanSvg)<InternalProps>`
   border: 1px solid ${p => p.theme.color.flagBorder};
   box-sizing: border-box;
   display: ${p => (p.inline ? 'inline-block' : 'block')};
-  ${p => (p.inline ? `vertical-align: middle;` : '')};
+  ${p =>
+    p.inline
+      ? `
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+  `
+      : ''};
   ${/** IE11 fixes below */ ''}
   width: ${p => (p.theme.spacing.unit(p.height) * VIEWBOX_WIDTH) / VIEWBOX_HEIGHT}px;
   overflow: hidden;

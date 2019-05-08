@@ -1895,6 +1895,8 @@ exports[`Storyshots Atoms | Flag Inline 1`] = `
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
+  position: relative;
+  bottom: 1px;
   width: 26.666666666666668px;
   overflow: hidden;
 }
