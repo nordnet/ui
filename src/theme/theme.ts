@@ -52,8 +52,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     xs: 360,
     sm: 768,
     md: 992,
-    lg: 1440,
-    xl: 1680,
+    lg: 1300,
   };
 
   const sizeValues = Object.values(size) as number[];

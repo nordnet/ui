@@ -122,9 +122,7 @@ export type Theme = {
     /** Tablet, desktop */
     md: 992;
     /** Desktop */
-    lg: 1440;
-    /** Large desktop */
-    xl: 1680;
+    lg: 1300;
   };
   media: {
     /**
