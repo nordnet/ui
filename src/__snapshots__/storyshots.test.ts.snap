@@ -1020,9 +1020,9 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
 .c3 {
   width: auto;
   height: 20px;
-  vertical-align: middle;
   border: 1px solid #EBEBE8;
   box-sizing: border-box;
+  display: block;
 }
 
 .c0 {
@@ -1789,9 +1789,9 @@ exports[`Storyshots Atoms | Flag Default use 1`] = `
 .c0 {
   width: auto;
   height: 20px;
-  vertical-align: middle;
   border: 1px solid #EBEBE8;
   box-sizing: border-box;
+  display: block;
 }
 
 <svg
@@ -1839,9 +1839,9 @@ exports[`Storyshots Atoms | Flag Different size  1`] = `
 .c0 {
   width: auto;
   height: 40px;
-  vertical-align: middle;
   border: 1px solid #EBEBE8;
   box-sizing: border-box;
+  display: block;
 }
 
 <svg
@@ -1883,6 +1883,61 @@ exports[`Storyshots Atoms | Flag Different size  1`] = `
     Sweden
   </title>
 </svg>
+`;
+
+exports[`Storyshots Atoms | Flag Inline 1`] = `
+.c0 {
+  width: auto;
+  height: 20px;
+  border: 1px solid #EBEBE8;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+<span>
+  You can put the 
+  <svg
+    className="c0"
+    focusable="false"
+    role="img"
+    viewBox="0 0 640 480"
+  >
+    <g
+      transform="translate(50.082) scale(.9375)"
+    >
+      <g
+        fillRule="evenodd"
+        strokeWidth="1pt"
+      >
+        <path
+          d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+          fill="#006aa7"
+        />
+        <path
+          d="M-121.103 204.984h256v102.4h-256z"
+          fill="#fecc00"
+        />
+        <path
+          d="M133.843.01h102.4v511.997h-102.4z"
+          fill="#fecc00"
+        />
+        <path
+          d="M232.995 205.013h460.798v102.4H232.995z"
+          fill="#fecc00"
+        />
+        <path
+          d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+          fill="#006aa7"
+        />
+      </g>
+    </g>
+    <title>
+      Sweden
+    </title>
+  </svg>
+   directly in the text with inline prop!
+</span>
 `;
 
 exports[`Storyshots Atoms | Flag Renders nothing if wrong country code 1`] = `null`;
@@ -2213,13 +2268,12 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
   user-select: none;
   width: 20px;
   height: 20px;
-  display: inline-block;
-  vertical-align: middle;
   fill: currentColor;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   color: #282823;
+  display: block;
 }
 
 .c0 {
@@ -2395,13 +2449,12 @@ exports[`Storyshots Atoms | Icon Default use 1`] = `
   user-select: none;
   width: 20px;
   height: 20px;
-  display: inline-block;
-  vertical-align: middle;
   fill: currentColor;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   color: #282823;
+  display: block;
 }
 
 <svg
@@ -2426,13 +2479,12 @@ exports[`Storyshots Atoms | Icon Different size and color 1`] = `
   user-select: none;
   width: 40px;
   height: 40px;
-  display: inline-block;
-  vertical-align: middle;
   fill: currentColor;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   color: #00D200;
+  display: block;
 }
 
 <svg
@@ -2447,6 +2499,41 @@ exports[`Storyshots Atoms | Icon Different size and color 1`] = `
     points="16.278 14 0 14 0 10 16.278 10 8.211 2 13.916 2 24 12 21.148 14.828 13.916 22 8.211 22"
   />
 </svg>
+`;
+
+exports[`Storyshots Atoms | Icon Inline 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: #282823;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+<span>
+  You can put the 
+  <svg
+    aria-hidden="true"
+    className="c0"
+    focusable="false"
+    role="presentation"
+    size={5}
+    viewBox="0 0 24 24"
+  >
+    <polygon
+      points="16.278 14 0 14 0 10 16.278 10 8.211 2 13.916 2 24 12 21.148 14.828 13.916 22 8.211 22"
+    />
+  </svg>
+   directly in the text with inline prop!
+</span>
 `;
 
 exports[`Storyshots Atoms | List Basic ordered list 1`] = `
@@ -6025,9 +6112,9 @@ exports[`Storyshots Atoms | Table Integration: Table (stickyHeader) with Typogra
 .c12 {
   width: auto;
   height: 20px;
-  vertical-align: middle;
   border: 1px solid #EBEBE8;
   box-sizing: border-box;
+  display: block;
 }
 
 .c0 {
@@ -10680,9 +10767,9 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography 1`] = `
 .c12 {
   width: auto;
   height: 16px;
-  vertical-align: middle;
   border: 1px solid #EBEBE8;
   box-sizing: border-box;
+  display: block;
 }
 
 .c0 {
@@ -15352,9 +15439,9 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography and ellipsi
 .c13 {
   width: auto;
   height: 16px;
-  vertical-align: middle;
   border: 1px solid #EBEBE8;
   box-sizing: border-box;
+  display: block;
 }
 
 .c0 {
@@ -23187,13 +23274,12 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
   user-select: none;
   width: 12px;
   height: 12px;
-  display: inline-block;
-  vertical-align: middle;
   fill: currentColor;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   color: #0046FF;
+  display: block;
 }
 
 .c4 {
