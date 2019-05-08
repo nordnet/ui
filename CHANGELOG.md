@@ -1,3 +1,25 @@
+# [1.0.0-beta.47](https://github.com/nordnet/ui/compare/v1.0.0-beta.46@beta...v1.0.0-beta.47@beta) (2019-05-08)
+
+
+### Bug Fixes
+
+* horizontal padding adjustment ([56d338d](https://github.com/nordnet/ui/commit/56d338d))
+
+# [1.0.0-beta.46](https://github.com/nordnet/ui/compare/v1.0.0-beta.45@beta...v1.0.0-beta.46@beta) (2019-05-08)
+
+
+### Features
+
+* 🎸 add inline prop in contracts for flag and icon ([3539c8b](https://github.com/nordnet/ui/commit/3539c8b))
+* 🎸 inline prop implementation ([8cc75e6](https://github.com/nordnet/ui/commit/8cc75e6))
+
+# [1.0.0-beta.45](https://github.com/nordnet/ui/compare/v1.0.0-beta.44@beta...v1.0.0-beta.45@beta) (2019-05-08)
+
+
+### Bug Fixes
+
+* 🐛 snapshots, remove theme toggle for now ([306b27c](https://github.com/nordnet/ui/commit/306b27c))
+
 # [1.0.0-beta.44](https://github.com/nordnet/ui/compare/v1.0.0-beta.43@beta...v1.0.0-beta.44@beta) (2019-05-08)
 
 
