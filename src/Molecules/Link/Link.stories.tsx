@@ -22,4 +22,13 @@ storiesOf('Molecules | Link', module)
         </Link>
       </Typography>
     </BrowserRouter>
+  ))
+  .add('Link with rel as nofollow', () => (
+    <BrowserRouter>
+      <Typography type="secondary" color={t => t.color.cta} weight="bold">
+        <Link to="www.google.com" rel="nofollow" onClick={action('clicked')}>
+          Link
+        </Link>
+      </Typography>
+    </BrowserRouter>
   ));

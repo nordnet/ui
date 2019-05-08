@@ -17,7 +17,18 @@ storiesOf('Molecules | LinkSell', module)
     return (
       <BrowserRouter>
         <Typography type="primary">
-          <LinkSell disabled to="somewhere">
+          <LinkSell to="somewhere" disabled>
+            Sell
+          </LinkSell>
+        </Typography>
+      </BrowserRouter>
+    );
+  })
+  .add('LinkSell with rel as nofollow', () => {
+    return (
+      <BrowserRouter>
+        <Typography type="primary">
+          <LinkSell to="somewhere" rel="nofollow">
             Sell
           </LinkSell>
         </Typography>

@@ -17,11 +17,13 @@ export type ButtonProps = {
   /** @default button */
   type?: 'button' | 'reset' | 'submit';
   to?: never;
+  rel?: never;
 } & SharedProps;
 
 export type LinkProps = {
   onClick?: (e: React.MouseEvent) => void;
   to: ReactRouterDomLinkProps['to'];
+  rel?: string;
   type?: never;
   disabled?: never;
 } & SharedProps;

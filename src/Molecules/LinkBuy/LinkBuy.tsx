@@ -22,6 +22,7 @@ export const LinkBuy: LinkBuyComponent = props => (
     onClick={props.onClick}
     to={props.to}
     target={props.target}
+    rel={props.rel}
   >
     {props.children}
   </StyledLink>

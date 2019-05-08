@@ -22,6 +22,7 @@ export const LinkSell: LinkSellComponent = props => (
     onClick={props.onClick}
     to={props.to}
     target={props.target}
+    rel={props.rel}
   >
     {props.children}
   </StyledLink>

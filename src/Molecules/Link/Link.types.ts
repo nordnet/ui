@@ -8,6 +8,7 @@ export type Props = {
   target?: '_blank';
   to: LinkProps['to'];
   className?: string;
+  rel?: string;
 };
 
 export type LinkComponent = React.FunctionComponent<Props>;

@@ -85,7 +85,7 @@ const StyledLink = styled(RouterLink)<LinkProps>`
 
 export const Button: ButtonComponent = props => {
   const typeIsNotPresent = typeof props.type === 'undefined';
-  const { disabled, onClick, size, type = 'button', variant, fullWidth, to, children } = props;
+  const { disabled, onClick, size, type = 'button', variant, fullWidth, to, children, rel } = props;
   const toAndDisabledAreNotPresentTogether = !(to && disabled);
 
   assert(
@@ -102,7 +102,14 @@ export const Button: ButtonComponent = props => {
     );
 
     return (
-      <StyledLink to={to} onClick={onClick} size={size} variant={variant} fullWidth={fullWidth}>
+      <StyledLink
+        to={to}
+        rel={rel}
+        onClick={onClick}
+        size={size}
+        variant={variant}
+        fullWidth={fullWidth}
+      >
         <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
           {children}
         </Typography>

@@ -17,7 +17,18 @@ storiesOf('Molecules | LinkBuy', module)
     return (
       <BrowserRouter>
         <Typography type="primary">
-          <LinkBuy disabled to="somewhere">
+          <LinkBuy to="somewhere" disabled>
+            Buy
+          </LinkBuy>
+        </Typography>
+      </BrowserRouter>
+    );
+  })
+  .add('LinkBuy with rel as nofollow', () => {
+    return (
+      <BrowserRouter>
+        <Typography type="primary">
+          <LinkBuy to="somewhere" rel="nofollow">
             Buy
           </LinkBuy>
         </Typography>

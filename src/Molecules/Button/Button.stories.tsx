@@ -167,4 +167,11 @@ storiesOf('Molecules | Button', module)
         </Flexbox.Item>
       </Flexbox.Container>
     </HashRouter>
+  ))
+  .add('Link looking like a button with rel as nofollow', () => (
+    <HashRouter>
+      <Button to="www.google.com" rel="nofollow" onClick={action('clicked')} fullWidth>
+        Button
+      </Button>
+    </HashRouter>
   ));

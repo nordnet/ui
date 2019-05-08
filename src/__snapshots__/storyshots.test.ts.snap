@@ -23088,6 +23088,63 @@ exports[`Storyshots Molecules | Button Link looking like a button that is full w
 </a>
 `;
 
+exports[`Storyshots Molecules | Button Link looking like a button with rel as nofollow 1`] = `
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c0 {
+  background-color: #0046FF;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  color: #FFFFFF;
+  height: 32px;
+  line-height: 28px;
+  padding: 0 8px;
+  display: block;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.c0:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c0:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+@media (min-width:360px) {
+  .c1 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<a
+  className="c0"
+  fullWidth={true}
+  href="#/www.google.com"
+  onClick={[Function]}
+  rel="nofollow"
+>
+  <span
+    className="c1"
+    color="inherit"
+    type="secondary"
+  >
+    Button
+  </span>
+</a>
+`;
+
 exports[`Storyshots Molecules | Button Link looking like a buttons composed in a group 1`] = `
 .c1 {
   box-sizing: border-box;
@@ -25484,6 +25541,50 @@ exports[`Storyshots Molecules | Link Link with _blank target 1`] = `
 </span>
 `;
 
+exports[`Storyshots Molecules | Link Link with rel as nofollow 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #0046FF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c1 {
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (min-width:360px) {
+  .c0 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<span
+  className="c0"
+  color={[Function]}
+  type="secondary"
+>
+  <a
+    className="c1"
+    href="/www.google.com"
+    onClick={[Function]}
+    rel="nofollow"
+  >
+    Link
+  </a>
+</span>
+`;
+
 exports[`Storyshots Molecules | LinkBuy LinkBuy 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -25579,6 +25680,61 @@ exports[`Storyshots Molecules | LinkBuy LinkBuy disabled 1`] = `
 </span>
 `;
 
+exports[`Storyshots Molecules | LinkBuy LinkBuy with rel as nofollow 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c2 {
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 {
+  color: #0046FF;
+  padding: 4px;
+}
+
+.c1:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #0046FF;
+}
+
+@media (min-width:360px) {
+  .c0 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+<span
+  className="c0"
+  type="primary"
+>
+  <a
+    className="c1 c2"
+    href="/somewhere"
+    onClick={[Function]}
+    rel="nofollow"
+  >
+    Buy
+  </a>
+</span>
+`;
+
 exports[`Storyshots Molecules | LinkSell LinkSell 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -25671,6 +25827,61 @@ exports[`Storyshots Molecules | LinkSell LinkSell disabled 1`] = `
   >
     Sell
   </span>
+</span>
+`;
+
+exports[`Storyshots Molecules | LinkSell LinkSell with rel as nofollow 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c2 {
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 {
+  color: #FF1900;
+  padding: 4px;
+}
+
+.c1:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #FF1900;
+}
+
+@media (min-width:360px) {
+  .c0 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+<span
+  className="c0"
+  type="primary"
+>
+  <a
+    className="c1 c2"
+    href="/somewhere"
+    onClick={[Function]}
+    rel="nofollow"
+  >
+    Sell
+  </a>
 </span>
 `;
 
