@@ -7,6 +7,7 @@ export type StyledIconBaseProps = {
   colorFn?: ColorFn;
   /** unit-based */
   size?: number;
+  inline?: boolean;
 };
 
 export type BaseProps = {
@@ -15,6 +16,7 @@ export type BaseProps = {
   color?: ColorFn;
   /** unit-based */
   size?: number;
+  inline?: boolean;
 };
 
 export type InternalProps = BaseProps & {
