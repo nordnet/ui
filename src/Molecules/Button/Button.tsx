@@ -56,7 +56,7 @@ const getHeight = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => 
 };
 
 const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
-  const { theme, variant, size, fullWidth } = props;
+  const { theme, variant, fullWidth } = props;
   const height = getHeight(props);
 
   return `
@@ -66,7 +66,7 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>
     color: ${isSecondary(variant) ? theme.color.cta : theme.color.buttonText};
     height: ${height}px;
     line-height: ${height - BORDER_SIZE * 2}px;
-    padding: 0 ${size === 's' ? theme.spacing.unit(2) : theme.spacing.unit(4)}px;
+    padding: 0 ${theme.spacing.unit(2)}px;
     ${fullWidth ? `display: block; width: 100%;` : `display: inline-block;`}
   `;
 };
