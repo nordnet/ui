@@ -1018,11 +1018,15 @@ exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
 
 exports[`Storyshots Atoms | Flag Available flags 1`] = `
 .c3 {
-  width: auto;
   height: 20px;
   border: 1px solid #EBEBE8;
   box-sizing: border-box;
   display: block;
+  width: 26.666666666666668px;
+  overflow: hidden;
+  -webkit-transform: translate(-0.5px,-0.5px);
+  -ms-transform: translate(-0.5px,-0.5px);
+  transform: translate(-0.5px,-0.5px);
 }
 
 .c0 {
@@ -1787,11 +1791,15 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
 
 exports[`Storyshots Atoms | Flag Default use 1`] = `
 .c0 {
-  width: auto;
   height: 20px;
   border: 1px solid #EBEBE8;
   box-sizing: border-box;
   display: block;
+  width: 26.666666666666668px;
+  overflow: hidden;
+  -webkit-transform: translate(-0.5px,-0.5px);
+  -ms-transform: translate(-0.5px,-0.5px);
+  transform: translate(-0.5px,-0.5px);
 }
 
 <svg
@@ -1837,11 +1845,15 @@ exports[`Storyshots Atoms | Flag Default use 1`] = `
 
 exports[`Storyshots Atoms | Flag Different size  1`] = `
 .c0 {
-  width: auto;
   height: 40px;
   border: 1px solid #EBEBE8;
   box-sizing: border-box;
   display: block;
+  width: 53.333333333333336px;
+  overflow: hidden;
+  -webkit-transform: translate(-0.5px,-0.5px);
+  -ms-transform: translate(-0.5px,-0.5px);
+  transform: translate(-0.5px,-0.5px);
 }
 
 <svg
@@ -1887,12 +1899,16 @@ exports[`Storyshots Atoms | Flag Different size  1`] = `
 
 exports[`Storyshots Atoms | Flag Inline 1`] = `
 .c0 {
-  width: auto;
   height: 20px;
   border: 1px solid #EBEBE8;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
+  width: 26.666666666666668px;
+  overflow: hidden;
+  -webkit-transform: translate(-0.5px,-0.5px);
+  -ms-transform: translate(-0.5px,-0.5px);
+  transform: translate(-0.5px,-0.5px);
 }
 
 <span>
@@ -6110,11 +6126,15 @@ exports[`Storyshots Atoms | Table Integration: Table (stickyHeader) with Typogra
 }
 
 .c12 {
-  width: auto;
   height: 20px;
   border: 1px solid #EBEBE8;
   box-sizing: border-box;
   display: block;
+  width: 26.666666666666668px;
+  overflow: hidden;
+  -webkit-transform: translate(-0.5px,-0.5px);
+  -ms-transform: translate(-0.5px,-0.5px);
+  transform: translate(-0.5px,-0.5px);
 }
 
 .c0 {
@@ -10765,11 +10785,15 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography 1`] = `
 }
 
 .c12 {
-  width: auto;
   height: 16px;
   border: 1px solid #EBEBE8;
   box-sizing: border-box;
   display: block;
+  width: 21.333333333333332px;
+  overflow: hidden;
+  -webkit-transform: translate(-0.5px,-0.5px);
+  -ms-transform: translate(-0.5px,-0.5px);
+  transform: translate(-0.5px,-0.5px);
 }
 
 .c0 {
@@ -15437,11 +15461,15 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography and ellipsi
 }
 
 .c13 {
-  width: auto;
   height: 16px;
   border: 1px solid #EBEBE8;
   box-sizing: border-box;
   display: block;
+  width: 21.333333333333332px;
+  overflow: hidden;
+  -webkit-transform: translate(-0.5px,-0.5px);
+  -ms-transform: translate(-0.5px,-0.5px);
+  transform: translate(-0.5px,-0.5px);
 }
 
 .c0 {

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export type InternalProps = {
-  height?: number;
+  height: number;
   inline?: boolean;
 };
 export type Props = {
