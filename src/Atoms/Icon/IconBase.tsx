@@ -9,16 +9,18 @@ const StyledIconBase = styled.svg<StyledIconBaseProps>`
     return ` user-select: none;
     width: ${p.theme.spacing.unit(size)}px;
     height: ${p.theme.spacing.unit(size)}px;
-    display: inline-block;
-    vertical-align: middle;
     fill: currentColor;
     flex-shrink: 0;
-    color: ${p.colorFn ? p.colorFn(p.theme) : p.theme.color.text};`;
+    color: ${p.colorFn ? p.colorFn(p.theme) : p.theme.color.text};
+    
+    display: ${p.inline ? 'inline-block' : 'block'};
+    ${p.inline ? 'vertical-align: middle;' : ''}
+    `;
   }}
 `;
 
 export const IconBase: React.FC<InternalProps> = (props: InternalProps) => {
-  const { className, children, title, size = 5, color } = props;
+  const { className, children, title, size = 5, color, inline } = props;
 
   return (
     <StyledIconBase
@@ -29,6 +31,7 @@ export const IconBase: React.FC<InternalProps> = (props: InternalProps) => {
       aria-hidden={title ? 'false' : 'true'}
       role={title ? 'img' : 'presentation'}
       colorFn={color}
+      inline={inline}
     >
       {children}
       {title ? <title>{title}</title> : null}
