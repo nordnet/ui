@@ -2,11 +2,18 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { HashRouter } from 'react-router-dom';
+import MD from 'react-markdown';
+import docs from './Button.md';
 
-import { Button, Flexbox } from '../..';
+import { Button, Flexbox, Typography } from '../..';
 import { Display } from '../../common/Display';
 
 storiesOf('Molecules | Button', module)
+  .add('Documentation', () => (
+    <Typography type="primary">
+      <MD source={docs} />
+    </Typography>
+  ))
   .add('Default usage', () => <Button onClick={action('clicked')}>Button</Button>)
   .add('Disabled button', () => (
     <Button disabled onClick={action('clicked')}>
