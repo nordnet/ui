@@ -1,0 +1,461 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | LabeledValue Default 1`] = `
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  margin-bottom: 4px;
+}
+
+@media (min-width:360px) {
+  .c2 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+      color={[Function]}
+      type="secondary"
+    >
+      Label
+    </span>
+  </div>
+  Value
+</div>
+`;
+
+exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue secondary currency 1`] = `
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  margin-bottom: 4px;
+}
+
+@media (min-width:360px) {
+  .c3 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+@media (min-width:360px) {
+  .c2 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+      color={[Function]}
+      type="secondary"
+    >
+      Market value
+    </span>
+  </div>
+  <span
+    className="c3"
+    type="secondary"
+  >
+    
+    4,672,198
+     SEK
+  </span>
+</div>
+`;
+
+exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue title1 1`] = `
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  margin-bottom: 4px;
+}
+
+@media (min-width:360px) {
+  .c3 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+@media (min-width:360px) {
+  .c2 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+      color={[Function]}
+      type="secondary"
+    >
+      Holdings (SEK)
+    </span>
+  </div>
+  <span
+    className="c3"
+    type="title1"
+  >
+    
+    4,713,119
+  </span>
+</div>
+`;
+
+exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with negative development and currency 1`] = `
+.c4 {
+  box-sizing: border-box;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -4px;
+  margin-right: -4px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c6 {
+  color: #FF1900;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  margin-bottom: 4px;
+}
+
+@media (min-width:360px) {
+  .c5 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+@media (min-width:360px) {
+  .c7 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+@media (min-width:360px) {
+  .c2 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+      color={[Function]}
+      type="secondary"
+    >
+      Development this year
+    </span>
+  </div>
+  <div
+    className="c3"
+    direction="row"
+  >
+    <div
+      className="c4"
+    >
+      <span
+        className="c5"
+        type="secondary"
+      >
+        <span
+          className="c6"
+          value={-9.2}
+        >
+          <span
+            aria-hidden={true}
+          >
+            ▼
+          </span>
+          
+          -9.2
+          %
+        </span>
+      </span>
+    </div>
+    <div
+      className="c4"
+    >
+      <span
+        className="c7"
+        type="secondary"
+      >
+        
+        -4,672,198
+         SEK
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with positive development and currency 1`] = `
+.c4 {
+  box-sizing: border-box;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -4px;
+  margin-right: -4px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c6 {
+  color: #00D200;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  margin-bottom: 4px;
+}
+
+@media (min-width:360px) {
+  .c5 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+@media (min-width:360px) {
+  .c2 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+      color={[Function]}
+      type="secondary"
+    >
+      Development this year
+    </span>
+  </div>
+  <div
+    className="c3"
+    direction="row"
+  >
+    <div
+      className="c4"
+    >
+      <span
+        className="c5"
+        type="secondary"
+      >
+        <span
+          className="c6"
+          value={9.2}
+        >
+          <span
+            aria-hidden={true}
+          >
+            ▲
+          </span>
+          +
+          9.2
+          %
+        </span>
+      </span>
+    </div>
+    <div
+      className="c4"
+    >
+      <span
+        className="c5"
+        type="secondary"
+      >
+        +
+        4,672,198
+         SEK
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,499 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with left and right titles 1`] = `
+.c7 {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c5 {
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c0 {
+  margin-bottom: 4px;
+}
+
+@media (min-width:360px) {
+  .c3 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<div>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+          color={[Function]}
+          type="secondary"
+        >
+          title1
+        </span>
+      </div>
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+          color={[Function]}
+          type="secondary"
+        >
+          title2
+        </span>
+      </div>
+    </div>
+  </div>
+  <ol
+    className="c4"
+  >
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          Left List Item 1
+        </div>
+        <div
+          className="c7"
+        >
+          Right List Item 1
+        </div>
+      </div>
+    </li>
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          Left List Item 2
+        </div>
+        <div
+          className="c7"
+        >
+          Right List Item 2
+        </div>
+      </div>
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with left title 1`] = `
+.c7 {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c5 {
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c0 {
+  margin-bottom: 4px;
+}
+
+@media (min-width:360px) {
+  .c3 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<div>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+          color={[Function]}
+          type="secondary"
+        >
+          title1
+        </span>
+      </div>
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+          color={[Function]}
+          type="secondary"
+        />
+      </div>
+    </div>
+  </div>
+  <ol
+    className="c4"
+  >
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          Left List Item 1
+        </div>
+        <div
+          className="c7"
+        >
+          Right List Item 1
+        </div>
+      </div>
+    </li>
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          Left List Item 2
+        </div>
+        <div
+          className="c7"
+        >
+          Right List Item 2
+        </div>
+      </div>
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with no titles 1`] = `
+.c3 {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c0 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c1 {
+  display: block;
+}
+
+<ol
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        Left List Item 1
+      </div>
+      <div
+        className="c3"
+      >
+        Right List Item 1
+      </div>
+    </div>
+  </li>
+  <li
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        Left List Item 2
+      </div>
+      <div
+        className="c3"
+      >
+        Right List Item 2
+      </div>
+    </div>
+  </li>
+</ol>
+`;
+
+exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with right title 1`] = `
+.c7 {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c5 {
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c0 {
+  margin-bottom: 4px;
+}
+
+@media (min-width:360px) {
+  .c3 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<div>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+          color={[Function]}
+          type="secondary"
+        />
+      </div>
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+          color={[Function]}
+          type="secondary"
+        >
+          title1
+        </span>
+      </div>
+    </div>
+  </div>
+  <ol
+    className="c4"
+  >
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          Left List Item 1
+        </div>
+        <div
+          className="c7"
+        >
+          Right List Item 1
+        </div>
+      </div>
+    </li>
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          Left List Item 2
+        </div>
+        <div
+          className="c7"
+        >
+          Right List Item 2
+        </div>
+      </div>
+    </li>
+  </ol>
+</div>
+`;

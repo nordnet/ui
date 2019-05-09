@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article (most CardWithTitle should be article) 1`] = `
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c1 {
+  padding: 20px;
+}
+
+<article
+  className="c0"
+>
+  <header
+    className="c1"
+  >
+    Konton
+  </header>
+  A CardWithTitle as a article containing content
+</article>
+`;
+
+exports[`Storyshots Molecules | CardWithTitle CardWithTitle as section 1`] = `
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c1 {
+  padding: 20px;
+}
+
+<section
+  className="c0"
+>
+  <header
+    className="c1"
+  >
+    Konton
+  </header>
+  A CardWithTitle as a section containing content
+</section>
+`;
+
+exports[`Storyshots Molecules | CardWithTitle Default 1`] = `
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c1 {
+  padding: 20px;
+}
+
+<div
+  className="c0"
+>
+  <header
+    className="c1"
+  >
+    Konton
+  </header>
+  A CardWithTitle containing content
+</div>
+`;
+
+exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with custom component as title 1`] = `
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c3 {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: #0046FF;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c5 {
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 {
+  padding: 20px;
+}
+
+.c9 {
+  padding: 20px;
+}
+
+.c7 {
+  padding-left: 4px;
+}
+
+@media (min-width:360px) {
+  .c4 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width:360px) {
+  .c6 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<div
+  className="c0"
+>
+  <header
+    className="c1"
+  >
+    <div
+      className="c2"
+      direction="row"
+    >
+      <div
+        className="c3"
+      >
+        <h2
+          className="c4"
+          type="title3"
+        >
+          Konton
+        </h2>
+      </div>
+      <div
+        className="c3"
+      >
+        <a
+          className="c5"
+          href="#/www.google.com"
+          onClick={[Function]}
+        >
+          <span
+            className="c6"
+            color={[Function]}
+            type="secondary"
+          >
+            Marknadsöversikt
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c7 c8"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="16.278 14 0 14 0 10 16.278 10 8.211 2 13.916 2 24 12 21.148 14.828 13.916 22 8.211 22"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div
+    className="c9"
+  >
+    A CardWithTitles with two titles. 
+    <br />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac lectus aliquam, scelerisque est eget, lobortis massa. Praesent in pretium orci. Phasellus est sapien, maximus at nulla ac, condimentum dictum ante. Sed consequat erat lacinia, molestie augue vitae, efficitur purus. In venenatis elit nec tortor condimentum, sit amet elementum magna fermentum. Phasellus dictum non augue vitae pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent rutrum egestas sollicitudin. Cras semper, mi vitae vulputate aliquam, tortor ante maximus libero, vitae maximus velit dui quis augue. Aenean condimentum molestie ante, nec rhoncus nunc aliquet non. Aliquam bibendum tortor dui, eget porttitor nibh fermentum eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse nec magna lectus. Fusce posuere nisi vel purus faucibus sodales. Quisque ac ullamcorper eros, sed lobortis risus. Sed eu magna mi. Vestibulum accumsan porta velit. Donec ligula arcu, cursus eu nisl vel, molestie pretium neque. Etiam urna elit, mollis vel arcu id, vulputate mattis nisi. Fusce eget odio id ipsum consectetur feugiat vitae ut tortor. Aliquam non tempor nibh, scelerisque placerat eros. Nulla facilisi. Nunc tempor congue neque a cursus. Quisque tristique eros in fermentum feugiat.
+  </div>
+</div>
+`;

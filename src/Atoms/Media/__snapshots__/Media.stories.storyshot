@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms | Media Basic usage 1`] = `
+Array [
+  @media not all and (max-width:992px) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+    className="c0"
+  >
+    I am only shown on screens smaller than medium size
+  </div>,
+  @media not all and (min-width:992px) and (max-width:1300px) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+    className="c0"
+  >
+    I am only shown between medium and large sizes
+  </div>,
+  @media not all and (min-width:1300px) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+    className="c0"
+  >
+    I am only shown on screens bigger than large size
+  </div>,
+]
+`;

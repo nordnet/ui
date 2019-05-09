@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms | ListItem Basic list item 1`] = `
+.c0 {
+  display: block;
+}
+
+<ul>
+  <li
+    className="c0"
+  >
+    List item
+  </li>
+</ul>
+`;

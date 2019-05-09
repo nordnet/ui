@@ -1,0 +1,588 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms | CssGrid CssGrid with custom gutter 1`] = `
+.c0 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "left top sidebar" "left content sidebar" "left content sidebar";
+  grid-gap: 0px;
+  display: -ms-grid;
+  -ms-grid-rows: 1fr 0px 1fr 0px 1fr;
+  -ms-grid-columns: 1fr 0px 1fr 0px 1fr;
+}
+
+.c1 {
+  box-sizing: border-box;
+  grid-area: left;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 5;
+}
+
+.c3 {
+  box-sizing: border-box;
+  grid-area: top;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+}
+
+.c4 {
+  box-sizing: border-box;
+  grid-area: content;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 3;
+}
+
+.c5 {
+  box-sizing: border-box;
+  grid-area: sidebar;
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 5;
+}
+
+.c2 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #eee;
+  height: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      Left
+    </div>
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      className="c2"
+    >
+      Top
+    </div>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="c2"
+    >
+      Content
+    </div>
+  </div>
+  <div
+    className="c5"
+  >
+    <div
+      className="c2"
+    >
+      Sidebar
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
+.c0 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "left top sidebar" "left content sidebar" "left content sidebar";
+  grid-template-columns: 25fr 50fr 25fr;
+  grid-gap: 20px;
+  display: -ms-grid;
+  -ms-grid-rows: 1fr 20px 1fr 20px 1fr;
+  -ms-grid-columns: 25fr 20px 50fr 20px 25fr;
+}
+
+.c1 {
+  box-sizing: border-box;
+  grid-area: left;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 5;
+}
+
+.c3 {
+  box-sizing: border-box;
+  grid-area: top;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+}
+
+.c4 {
+  box-sizing: border-box;
+  grid-area: content;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 3;
+}
+
+.c5 {
+  box-sizing: border-box;
+  grid-area: sidebar;
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 5;
+}
+
+.c2 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #eee;
+  height: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      Left
+    </div>
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      className="c2"
+    >
+      Top
+    </div>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="c2"
+    >
+      Content
+    </div>
+  </div>
+  <div
+    className="c5"
+  >
+    <div
+      className="c2"
+    >
+      Sidebar
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different screen sizes 1`] = `
+.c0 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "top top" "left sidebar" "content sidebar";
+  grid-template-columns: 50fr 50fr;
+  grid-gap: 20px;
+  display: -ms-grid;
+  -ms-grid-rows: 1fr 20px 1fr 20px 1fr;
+  -ms-grid-columns: 50fr 20px 50fr;
+}
+
+.c1 {
+  box-sizing: border-box;
+  grid-area: left;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+}
+
+.c3 {
+  box-sizing: border-box;
+  grid-area: top;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+}
+
+.c4 {
+  box-sizing: border-box;
+  grid-area: content;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+}
+
+.c5 {
+  box-sizing: border-box;
+  grid-area: sidebar;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 3;
+}
+
+.c2 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #eee;
+  height: 100%;
+}
+
+@media (min-width:768px), {
+  .c0 {
+    grid-template-areas: "left top sidebar" "left content sidebar" "left content sidebar";
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: 25fr 50fr 25fr;
+    grid-gap: 20px;
+    display: -ms-grid;
+    -ms-grid-rows: auto 20px 1fr 20px 1fr;
+    -ms-grid-columns: 25fr 20px 50fr 20px 25fr;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 5;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 3;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 5;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      Left
+    </div>
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      className="c2"
+    >
+      Top
+    </div>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="c2"
+    >
+      Content
+    </div>
+  </div>
+  <div
+    className="c5"
+  >
+    <div
+      className="c2"
+    >
+      Sidebar
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom sized columns 1`] = `
+.c0 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "left top messages" "left top order" "left top sidebar" "left top sidebar" "left content sidebar";
+  grid-template-columns: 1fr 2fr 1fr;
+  -webkit-column-gap: 16px;
+  column-gap: 16px;
+  row-gap: 24px;
+  display: -ms-grid;
+  -ms-grid-rows: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+  -ms-grid-columns: 1fr 16px 2fr 16px 1fr;
+}
+
+.c1 {
+  box-sizing: border-box;
+  grid-area: left;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 9;
+}
+
+.c3 {
+  box-sizing: border-box;
+  grid-area: top;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 7;
+}
+
+.c4 {
+  box-sizing: border-box;
+  grid-area: content;
+  -ms-grid-row: 9;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+}
+
+.c5 {
+  box-sizing: border-box;
+  grid-area: messages;
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+}
+
+.c6 {
+  box-sizing: border-box;
+  grid-area: order;
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+}
+
+.c7 {
+  box-sizing: border-box;
+  grid-area: sidebar;
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 5;
+}
+
+.c2 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #eee;
+  height: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      Left
+    </div>
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      className="c2"
+    >
+      Top
+    </div>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="c2"
+    >
+      Content
+    </div>
+  </div>
+  <div
+    className="c5"
+  >
+    <div
+      className="c2"
+    >
+      Messages
+    </div>
+  </div>
+  <div
+    className="c6"
+  >
+    <div
+      className="c2"
+    >
+      Order
+    </div>
+  </div>
+  <div
+    className="c7"
+  >
+    <div
+      className="c2"
+    >
+      Sidebar
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
+.c0 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "header header header" "menu content ads" "footer footer footer";
+  grid-gap: 20px;
+  display: -ms-grid;
+  -ms-grid-rows: 1fr 20px 1fr 20px 1fr;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+}
+
+.c1 {
+  box-sizing: border-box;
+  grid-area: header;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  -ms-grid-row-span: 1;
+}
+
+.c3 {
+  box-sizing: border-box;
+  grid-area: content;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+}
+
+.c4 {
+  box-sizing: border-box;
+  grid-area: menu;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+}
+
+.c5 {
+  box-sizing: border-box;
+  grid-area: ads;
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+}
+
+.c6 {
+  box-sizing: border-box;
+  grid-area: footer;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  -ms-grid-row-span: 1;
+}
+
+.c2 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #eee;
+  height: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      Header
+    </div>
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      className="c2"
+    >
+      Content
+    </div>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="c2"
+    >
+      Menu
+    </div>
+  </div>
+  <div
+    className="c5"
+  >
+    <div
+      className="c2"
+    >
+      Ads
+    </div>
+  </div>
+  <div
+    className="c6"
+  >
+    <div
+      className="c2"
+    >
+      Footer
+    </div>
+  </div>
+</div>
+`;

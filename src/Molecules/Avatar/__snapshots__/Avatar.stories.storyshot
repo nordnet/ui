@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | Avatar Basic usage 1`] = `
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+}
+
+.c0 {
+  background-color: #282823;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  line-height: 31px;
+  text-align: center;
+}
+
+@media (min-width:360px) {
+  .c1 {
+    font-size: 12px;
+    line-height: 1.6666666666666667;
+  }
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+    color={[Function]}
+    type="tertiary"
+  >
+    ASK
+  </span>
+</div>
+`;
+
+exports[`Storyshots Molecules | Avatar Best practice, with element as children 1`] = `
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+}
+
+.c0 {
+  background-color: #282823;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  line-height: 31px;
+  text-align: center;
+}
+
+@media (min-width:360px) {
+  .c1 {
+    font-size: 12px;
+    line-height: 1.6666666666666667;
+  }
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+    color={[Function]}
+    type="tertiary"
+  >
+    <abbr
+      title="Investeringssparkonto"
+    >
+      ISK
+    </abbr>
+  </span>
+</div>
+`;

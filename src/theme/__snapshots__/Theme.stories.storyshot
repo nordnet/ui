@@ -1,0 +1,1910 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Theme Colors (palette) 1`] = `
+Array [
+  <h1>
+    ⚠️ Internal object, use colors (semantic)
+  </h1>,
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c23 {
+  width: 56px;
+  height: 56px;
+  background-color: #F5F5F5;
+  border: 1px solid #eee;
+}
+
+.c16 {
+  width: 56px;
+  height: 56px;
+  background-color: #282823;
+  border: 1px solid #eee;
+}
+
+.c24 {
+  width: 56px;
+  height: 56px;
+  background-color: #FFFFFF;
+  border: 1px solid #eee;
+}
+
+.c25 {
+  width: 56px;
+  height: 56px;
+  background-color: #0046FF;
+  border: 1px solid #eee;
+}
+
+.c29 {
+  width: 56px;
+  height: 56px;
+  background-color: #2D67FF;
+  border: 1px solid #eee;
+}
+
+.c19 {
+  width: 56px;
+  height: 56px;
+  background-color: #A0A09B;
+  border: 1px solid #eee;
+}
+
+.c22 {
+  width: 56px;
+  height: 56px;
+  background-color: #EBEBE8;
+  border: 1px solid #eee;
+}
+
+.c18 {
+  width: 56px;
+  height: 56px;
+  background-color: #6E6E69;
+  border: 1px solid #eee;
+}
+
+.c27 {
+  width: 56px;
+  height: 56px;
+  background-color: #FF1900;
+  border: 1px solid #eee;
+}
+
+.c31 {
+  width: 56px;
+  height: 56px;
+  background-color: #E81700;
+  border: 1px solid #eee;
+}
+
+.c26 {
+  width: 56px;
+  height: 56px;
+  background-color: #00D200;
+  border: 1px solid #eee;
+}
+
+.c30 {
+  width: 56px;
+  height: 56px;
+  background-color: #008A00;
+  border: 1px solid #eee;
+}
+
+.c15 {
+  width: 56px;
+  height: 56px;
+  background-color: #000000;
+  border: 1px solid #eee;
+}
+
+.c28 {
+  width: 56px;
+  height: 56px;
+  background-color: #FFCF00;
+  border: 1px solid #eee;
+}
+
+.c32 {
+  width: 56px;
+  height: 56px;
+  background-color: #C15700;
+  border: 1px solid #eee;
+}
+
+.c20 {
+  width: 56px;
+  height: 56px;
+  background-color: #BCBCB6;
+  border: 1px solid #eee;
+}
+
+.c17 {
+  width: 56px;
+  height: 56px;
+  background-color: #4B4B46;
+  border: 1px solid #eee;
+}
+
+.c3 {
+  width: 56px;
+  height: 56px;
+  background-color: #00C8F5;
+  border: 1px solid #eee;
+}
+
+.c4 {
+  width: 56px;
+  height: 56px;
+  background-color: #D2F500;
+  border: 1px solid #eee;
+}
+
+.c5 {
+  width: 56px;
+  height: 56px;
+  background-color: #FF2B83;
+  border: 1px solid #eee;
+}
+
+.c6 {
+  width: 56px;
+  height: 56px;
+  background-color: #00F0E1;
+  border: 1px solid #eee;
+}
+
+.c7 {
+  width: 56px;
+  height: 56px;
+  background-color: #385E9D;
+  border: 1px solid #eee;
+}
+
+.c8 {
+  width: 56px;
+  height: 56px;
+  background-color: #131F4F;
+  border: 1px solid #eee;
+}
+
+.c9 {
+  width: 56px;
+  height: 56px;
+  background-color: #3A913F;
+  border: 1px solid #eee;
+}
+
+.c10 {
+  width: 56px;
+  height: 56px;
+  background-color: #023C00;
+  border: 1px solid #eee;
+}
+
+.c11 {
+  width: 56px;
+  height: 56px;
+  background-color: #AC135A;
+  border: 1px solid #eee;
+}
+
+.c12 {
+  width: 56px;
+  height: 56px;
+  background-color: #78013A;
+  border: 1px solid #eee;
+}
+
+.c13 {
+  width: 56px;
+  height: 56px;
+  background-color: #009195;
+  border: 1px solid #eee;
+}
+
+.c14 {
+  width: 56px;
+  height: 56px;
+  background-color: #01424C;
+  border: 1px solid #eee;
+}
+
+.c21 {
+  width: 56px;
+  height: 56px;
+  background-color: #D7D7D2;
+  border: 1px solid #eee;
+}
+
+<div
+    className="c0"
+    direction="column"
+  >
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        brandBlue
+      </div>
+      <div>
+        <div
+          className="c3"
+          color="#00C8F5"
+        />
+        <div>
+          #00C8F5
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        brandGreen
+      </div>
+      <div>
+        <div
+          className="c4"
+          color="#D2F500"
+        />
+        <div>
+          #D2F500
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        brandPink
+      </div>
+      <div>
+        <div
+          className="c5"
+          color="#FF2B83"
+        />
+        <div>
+          #FF2B83
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        brandTurquoise
+      </div>
+      <div>
+        <div
+          className="c6"
+          color="#00F0E1"
+        />
+        <div>
+          #00F0E1
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        complementaryBlue1
+      </div>
+      <div>
+        <div
+          className="c7"
+          color="#385E9D"
+        />
+        <div>
+          #385E9D
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        complementaryBlue2
+      </div>
+      <div>
+        <div
+          className="c8"
+          color="#131F4F"
+        />
+        <div>
+          #131F4F
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        complementaryGreen1
+      </div>
+      <div>
+        <div
+          className="c9"
+          color="#3A913F"
+        />
+        <div>
+          #3A913F
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        complementaryGreen2
+      </div>
+      <div>
+        <div
+          className="c10"
+          color="#023C00"
+        />
+        <div>
+          #023C00
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        complementaryPink1
+      </div>
+      <div>
+        <div
+          className="c11"
+          color="#AC135A"
+        />
+        <div>
+          #AC135A
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        complementaryPink2
+      </div>
+      <div>
+        <div
+          className="c12"
+          color="#78013A"
+        />
+        <div>
+          #78013A
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        complementaryTurquoise1
+      </div>
+      <div>
+        <div
+          className="c13"
+          color="#009195"
+        />
+        <div>
+          #009195
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        complementaryTurquoise2
+      </div>
+      <div>
+        <div
+          className="c14"
+          color="#01424C"
+        />
+        <div>
+          #01424C
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        black
+      </div>
+      <div>
+        <div
+          className="c15"
+          color="#000000"
+        />
+        <div>
+          #000000
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        gray0
+      </div>
+      <div>
+        <div
+          className="c16"
+          color="#282823"
+        />
+        <div>
+          #282823
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        gray1
+      </div>
+      <div>
+        <div
+          className="c17"
+          color="#4B4B46"
+        />
+        <div>
+          #4B4B46
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        gray2
+      </div>
+      <div>
+        <div
+          className="c18"
+          color="#6E6E69"
+        />
+        <div>
+          #6E6E69
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        gray3
+      </div>
+      <div>
+        <div
+          className="c19"
+          color="#A0A09B"
+        />
+        <div>
+          #A0A09B
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        gray4
+      </div>
+      <div>
+        <div
+          className="c20"
+          color="#BCBCB6"
+        />
+        <div>
+          #BCBCB6
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        gray5
+      </div>
+      <div>
+        <div
+          className="c21"
+          color="#D7D7D2"
+        />
+        <div>
+          #D7D7D2
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        gray6
+      </div>
+      <div>
+        <div
+          className="c22"
+          color="#EBEBE8"
+        />
+        <div>
+          #EBEBE8
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        gray7
+      </div>
+      <div>
+        <div
+          className="c23"
+          color="#F5F5F5"
+        />
+        <div>
+          #F5F5F5
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        white
+      </div>
+      <div>
+        <div
+          className="c24"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        cta
+      </div>
+      <div>
+        <div
+          className="c25"
+          color="#0046FF"
+        />
+        <div>
+          #0046FF
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        positive
+      </div>
+      <div>
+        <div
+          className="c26"
+          color="#00D200"
+        />
+        <div>
+          #00D200
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        negative
+      </div>
+      <div>
+        <div
+          className="c27"
+          color="#FF1900"
+        />
+        <div>
+          #FF1900
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        index
+      </div>
+      <div>
+        <div
+          className="c28"
+          color="#FFCF00"
+        />
+        <div>
+          #FFCF00
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        a11yCta
+      </div>
+      <div>
+        <div
+          className="c29"
+          color="#2D67FF"
+        />
+        <div>
+          #2D67FF
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        a11yPositive
+      </div>
+      <div>
+        <div
+          className="c30"
+          color="#008A00"
+        />
+        <div>
+          #008A00
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        a11yNegative
+      </div>
+      <div>
+        <div
+          className="c31"
+          color="#E81700"
+        />
+        <div>
+          #E81700
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        a11yIndex
+      </div>
+      <div>
+        <div
+          className="c32"
+          color="#C15700"
+        />
+        <div>
+          #C15700
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Theme Colors (semantic) 1`] = `
+.c0 {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.c1 {
+  width: 100%;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c4 {
+  width: 100%;
+  overflow: 'auto';
+}
+
+.c2 {
+  height: 100%;
+  padding: 8px 0;
+  overflow: 'hidden';
+}
+
+.c2:not(:first-child) {
+  border-top: 1px solid #EBEBE8;
+}
+
+.c5 {
+  height: 100%;
+  padding: 8px 4px;
+  text-align: left;
+}
+
+.c5:first-child {
+  padding-left: 0;
+}
+
+.c5:last-child {
+  padding-right: 0;
+}
+
+.c3 {
+  color: #6E6E69;
+  font-weight: normal;
+  height: 100%;
+  padding: 8px 4px;
+  text-align: left;
+  width: auto;
+}
+
+.c3:first-child {
+  padding-left: 0;
+}
+
+.c3:last-child {
+  padding-right: 0;
+}
+
+.c6 {
+  width: 56px;
+  height: 56px;
+  background-color: #F5F5F5;
+  border: 1px solid #eee;
+}
+
+.c7 {
+  width: 56px;
+  height: 56px;
+  background-color: #282823;
+  border: 1px solid #eee;
+}
+
+.c8 {
+  width: 56px;
+  height: 56px;
+  background-color: #FFFFFF;
+  border: 1px solid #eee;
+}
+
+.c9 {
+  width: 56px;
+  height: 56px;
+  background-color: #0046FF;
+  border: 1px solid #eee;
+}
+
+.c10 {
+  width: 56px;
+  height: 56px;
+  background-color: #2D67FF;
+  border: 1px solid #eee;
+}
+
+.c11 {
+  width: 56px;
+  height: 56px;
+  background-color: #A0A09B;
+  border: 1px solid #eee;
+}
+
+.c12 {
+  width: 56px;
+  height: 56px;
+  background-color: #EBEBE8;
+  border: 1px solid #eee;
+}
+
+.c13 {
+  width: 56px;
+  height: 56px;
+  background-color: #6E6E69;
+  border: 1px solid #eee;
+}
+
+.c14 {
+  width: 56px;
+  height: 56px;
+  background-color: #FF1900;
+  border: 1px solid #eee;
+}
+
+.c15 {
+  width: 56px;
+  height: 56px;
+  background-color: #E81700;
+  border: 1px solid #eee;
+}
+
+.c16 {
+  width: 56px;
+  height: 56px;
+  background-color: #00D200;
+  border: 1px solid #eee;
+}
+
+.c17 {
+  width: 56px;
+  height: 56px;
+  background-color: #008A00;
+  border: 1px solid #eee;
+}
+
+.c18 {
+  width: 56px;
+  height: 56px;
+  background-color: #000000;
+  border: 1px solid #eee;
+}
+
+.c19 {
+  width: 56px;
+  height: 56px;
+  background-color: #FFCF00;
+  border: 1px solid #eee;
+}
+
+.c20 {
+  width: 56px;
+  height: 56px;
+  background-color: #C15700;
+  border: 1px solid #eee;
+}
+
+.c21 {
+  width: 56px;
+  height: 56px;
+  background-color: #BCBCB6;
+  border: 1px solid #eee;
+}
+
+.c22 {
+  width: 56px;
+  height: 56px;
+  background-color: #4B4B46;
+  border: 1px solid #eee;
+}
+
+@supports (-webkit-overflow-scrolling:touch): {
+  .c4 {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+<table
+  className="c0"
+  width="100%"
+>
+  <thead
+    className="c1"
+  >
+    <tr
+      className="c2"
+    >
+      <th
+        className="c3"
+        width="auto"
+      >
+        Name
+      </th>
+      <th
+        className="c3"
+        width="auto"
+      >
+        Default
+      </th>
+      <th
+        className="c3"
+        width="auto"
+      >
+        A11y
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="c4"
+  >
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        background
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c6"
+          color="#F5F5F5"
+        />
+        <div>
+          #F5F5F5
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c6"
+          color="#F5F5F5"
+        />
+        <div>
+          #F5F5F5
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        backgroundDark
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c7"
+          color="#282823"
+        />
+        <div>
+          #282823
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c7"
+          color="#282823"
+        />
+        <div>
+          #282823
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        buttonSecondaryBackground
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c8"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c8"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        buttonText
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c8"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c8"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        buy
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c9"
+          color="#0046FF"
+        />
+        <div>
+          #0046FF
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c10"
+          color="#2D67FF"
+        />
+        <div>
+          #2D67FF
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        borderActive
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c9"
+          color="#0046FF"
+        />
+        <div>
+          #0046FF
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c10"
+          color="#2D67FF"
+        />
+        <div>
+          #2D67FF
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        card
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c8"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c8"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        cta
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c9"
+          color="#0046FF"
+        />
+        <div>
+          #0046FF
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c10"
+          color="#2D67FF"
+        />
+        <div>
+          #2D67FF
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        disabled
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c11"
+          color="#A0A09B"
+        />
+        <div>
+          #A0A09B
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c11"
+          color="#A0A09B"
+        />
+        <div>
+          #A0A09B
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        divider
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c12"
+          color="#EBEBE8"
+        />
+        <div>
+          #EBEBE8
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c12"
+          color="#EBEBE8"
+        />
+        <div>
+          #EBEBE8
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        label
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c13"
+          color="#6E6E69"
+        />
+        <div>
+          #6E6E69
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c13"
+          color="#6E6E69"
+        />
+        <div>
+          #6E6E69
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        module
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c8"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c8"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        negative
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c14"
+          color="#FF1900"
+        />
+        <div>
+          #FF1900
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c15"
+          color="#E81700"
+        />
+        <div>
+          #E81700
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        positive
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c16"
+          color="#00D200"
+        />
+        <div>
+          #00D200
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c17"
+          color="#008A00"
+        />
+        <div>
+          #008A00
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        sell
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c14"
+          color="#FF1900"
+        />
+        <div>
+          #FF1900
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c15"
+          color="#E81700"
+        />
+        <div>
+          #E81700
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        spinnerBlack
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c18"
+          color="#000000"
+        />
+        <div>
+          #000000
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c18"
+          color="#000000"
+        />
+        <div>
+          #000000
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        spinnerWhite
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c8"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c8"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        text
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c7"
+          color="#282823"
+        />
+        <div>
+          #282823
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c7"
+          color="#282823"
+        />
+        <div>
+          #282823
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        textLight
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c8"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c8"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        warning
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c19"
+          color="#FFCF00"
+        />
+        <div>
+          #FFCF00
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c20"
+          color="#C15700"
+        />
+        <div>
+          #C15700
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        inputBorder
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c21"
+          color="#BCBCB6"
+        />
+        <div>
+          #BCBCB6
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c21"
+          color="#BCBCB6"
+        />
+        <div>
+          #BCBCB6
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        inputBorderHover
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c22"
+          color="#4B4B46"
+        />
+        <div>
+          #4B4B46
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c22"
+          color="#4B4B46"
+        />
+        <div>
+          #4B4B46
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        flagBorder
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c12"
+          color="#EBEBE8"
+        />
+        <div>
+          #EBEBE8
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c12"
+          color="#EBEBE8"
+        />
+        <div>
+          #EBEBE8
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Theme Screen sizes 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      xs
+    </div>
+    <div>
+      <pre>
+        360
+      </pre>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      sm
+    </div>
+    <div>
+      <pre>
+        768
+      </pre>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      md
+    </div>
+    <div>
+      <pre>
+        992
+      </pre>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      lg
+    </div>
+    <div>
+      <pre>
+        1300
+      </pre>
+    </div>
+  </div>
+</div>
+`;

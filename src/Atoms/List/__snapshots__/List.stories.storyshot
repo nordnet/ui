@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms | List Basic ordered list 1`] = `
+.c0 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c1 {
+  display: block;
+}
+
+<ol
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    List item 1
+  </li>
+  <li
+    className="c1"
+  >
+    List item 2
+  </li>
+  <li
+    className="c1"
+  >
+    List item 3
+  </li>
+</ol>
+`;
+
+exports[`Storyshots Atoms | List Basic unordered list 1`] = `
+.c0 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c1 {
+  display: block;
+}
+
+<ul
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    List item
+  </li>
+  <li
+    className="c1"
+  >
+    List item
+  </li>
+  <li
+    className="c1"
+  >
+    List item
+  </li>
+</ul>
+`;

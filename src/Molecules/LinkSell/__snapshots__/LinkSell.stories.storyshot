@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | LinkSell LinkSell 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c2 {
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 {
+  color: #FF1900;
+  padding: 4px;
+}
+
+.c1:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #FF1900;
+}
+
+@media (min-width:360px) {
+  .c0 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+<span
+  className="c0"
+  type="primary"
+>
+  <a
+    className="c1 c2"
+    href="/somewhere"
+    onClick={[Function]}
+  >
+    Sell
+  </a>
+</span>
+`;
+
+exports[`Storyshots Molecules | LinkSell LinkSell disabled 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c1 {
+  color: #A0A09B;
+  padding: 4px;
+}
+
+.c1:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media (min-width:360px) {
+  .c0 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+<span
+  className="c0"
+  type="primary"
+>
+  <span
+    className="c1"
+    disabled={true}
+    to="somewhere"
+  >
+    Sell
+  </span>
+</span>
+`;
+
+exports[`Storyshots Molecules | LinkSell LinkSell with rel as nofollow 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c2 {
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 {
+  color: #FF1900;
+  padding: 4px;
+}
+
+.c1:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #FF1900;
+}
+
+@media (min-width:360px) {
+  .c0 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+<span
+  className="c0"
+  type="primary"
+>
+  <a
+    className="c1 c2"
+    href="/somewhere"
+    onClick={[Function]}
+    rel="nofollow"
+  >
+    Sell
+  </a>
+</span>
+`;
