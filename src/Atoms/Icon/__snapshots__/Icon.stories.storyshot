@@ -133,7 +133,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div
       className="c2"
     >
-      SortUp
+      DirectionUp
     </div>
     <div>
       <svg
@@ -145,8 +145,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
         viewBox="0 0 24 24"
       >
         <polygon
-          points="4 0 8 6 0 6"
-          transform="translate(4.000000, 3.000000) scale(1, -1) rotate(180.000000) translate(-4.000000, -3.000000)"
+          points="0 21 24 21 12 3"
         />
       </svg>
     </div>
@@ -158,7 +157,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div
       className="c2"
     >
-      SortDown
+      DirectionDown
     </div>
     <div>
       <svg
@@ -170,8 +169,8 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
         viewBox="0 0 24 24"
       >
         <polygon
-          points="4 0 8 6 0 6"
-          transform="translate(4.000000, 3.000000) scale(1, -1) translate(-4.000000, -3.000000)"
+          points="0 21 24 21 12 3"
+          transform="rotate(-180 12 12)"
         />
       </svg>
     </div>
