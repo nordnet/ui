@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Flexbox, Typography, Separator, TabTitle } from '../..';
+import { Flexbox, Typography, Separator, TabTitle, List } from '../..';
 import NormalizedElements from '../../common/NormalizedElements/index';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
@@ -49,12 +49,9 @@ const Title: TitleComponent = ({
   );
 };
 Title.displayName = 'Tabs.Title';
-const StyledUl = styled.ul`
-  margin-top: 0;
-  list-style: none;
-  display: flex;
+const StyledUl = styled(List)`
   /** @todo reconsider spacing */
-  padding-left: ${p => p.theme.spacing.unit(5)}px;
+  padding: 0 ${p => p.theme.spacing.unit(5)}px;
   /** @todo check this out */
   margin-bottom: -1px;
 `;

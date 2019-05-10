@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
-.c3 {
+.c4 {
   box-sizing: border-box;
   padding-left: 8px;
   padding-right: 8px;
@@ -20,13 +20,19 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
   flex-direction: row;
 }
 
-.c8 {
+.c3 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c9 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c7 {
+.c8 {
   background: none;
   display: inline-block;
   border: none;
@@ -37,7 +43,7 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
   border-bottom: 2px solid transparent;
 }
 
-.c6 {
+.c7 {
   background: none;
   display: inline-block;
   border: none;
@@ -57,7 +63,7 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
   line-height: 1.7142857142857142;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -66,7 +72,7 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
   line-height: 1.7142857142857142;
 }
 
-.c5 {
+.c6 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -81,40 +87,34 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
   cursor: pointer;
 }
 
-.c5,
-.c5[type='button'],
-.c5[type='reset'],
-.c5[type='submit'] {
+.c6,
+.c6[type='button'],
+.c6[type='reset'],
+.c6[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c5::-moz-focus-inner,
-.c5[type='button']::-moz-focus-inner,
-.c5[type='reset']::-moz-focus-inner,
-.c5[type='submit']::-moz-focus-inner {
+.c6::-moz-focus-inner,
+.c6[type='button']::-moz-focus-inner,
+.c6[type='reset']::-moz-focus-inner,
+.c6[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c5:-moz-focusring,
-.c5[type='button']:-moz-focusring,
-.c5[type='reset']:-moz-focusring,
-.c5[type='submit']:-moz-focusring {
+.c6:-moz-focusring,
+.c6[type='button']:-moz-focusring,
+.c6[type='reset']:-moz-focusring,
+.c6[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 .c2 {
-  margin-top: 0;
-  list-style: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 20px;
+  padding: 0 20px;
   margin-bottom: -1px;
 }
 
-.c9 {
+.c10 {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 16px;
@@ -128,7 +128,7 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
 }
 
 @media (min-width:360px) {
-  .c4 {
+  .c5 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
@@ -140,21 +140,19 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
 >
   <div>
     <ul
-      className="c1 c2"
-      direction="row"
-      role="tablist"
+      className="c1 c2 c3"
     >
       <li
-        className="c3"
+        className="c4"
         role="presentation"
       >
         <span
-          className="c4"
+          className="c5"
           type="secondary"
         >
           <button
             aria-selected={true}
-            className="c5"
+            className="c6"
             id="tabs-tab-0"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -163,10 +161,10 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
             type="button"
           >
             <div
-              className="c6"
+              className="c7"
             >
               <span
-                className="c4"
+                className="c5"
                 type="secondary"
               >
                 One
@@ -176,7 +174,7 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
         </span>
       </li>
       <li
-        className="c3"
+        className="c4"
         role="presentation"
       >
         <span
@@ -185,7 +183,7 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
         >
           <button
             aria-selected={false}
-            className="c5"
+            className="c6"
             id="tabs-tab-1"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -194,7 +192,7 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
             type="button"
           >
             <div
-              className="c7"
+              className="c8"
             >
               <span
                 className="c0"
@@ -216,7 +214,7 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
       </li>
     </ul>
     <div
-      className="c8"
+      className="c9"
     />
     <div>
       <section
@@ -226,7 +224,7 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
         role="tabpanel"
       >
         <div
-          className="c9"
+          className="c10"
         >
           Ones children
         </div>
