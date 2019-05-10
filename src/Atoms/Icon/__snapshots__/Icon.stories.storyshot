@@ -133,6 +133,56 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div
       className="c2"
     >
+      SortUp
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="c3"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <polygon
+          points="4 0 8 6 0 6"
+          transform="translate(4.000000, 3.000000) scale(1, -1) rotate(180.000000) translate(-4.000000, -3.000000)"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      SortDown
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="c3"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <polygon
+          points="4 0 8 6 0 6"
+          transform="translate(4.000000, 3.000000) scale(1, -1) translate(-4.000000, -3.000000)"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       ArrowRight
     </div>
     <div>
