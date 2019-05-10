@@ -18,7 +18,7 @@ storiesOf('Atoms | Icon', module)
       items={Object.entries(Icon).map(
         ([iconName, IconComponent]: [string, React.ComponentType<any>]) => ({
           title: iconName,
-          component: <IconComponent />,
+          component: <IconComponent size={20} />,
         }),
       )}
     />
