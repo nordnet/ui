@@ -103,7 +103,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
         assert(sizeValues.includes(s1), `[theme.media] Unrecognized size value: ${s1}`);
         assert(sizeValues.includes(s2), `[theme.media] Unrecognized size value: ${s2}`);
 
-        return `@media (min-width: ${s1}px) and (max-width: ${s2}px)`;
+        return `@media (min-width: ${s1}px) and (max-width: ${s2 - 1}px)`;
       },
       greaterThan: s => {
         assert(sizeValues.includes(s), `[theme.media] Unrecognized size value: ${s}`);
@@ -111,7 +111,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       },
       lessThan: s => {
         assert(sizeValues.includes(s), `[theme.media] Unrecognized size value: ${s}`);
-        return `@media (max-width: ${s}px)`;
+        return `@media (max-width: ${s - 1}px)`;
       },
     },
     size,
