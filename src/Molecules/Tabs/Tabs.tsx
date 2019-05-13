@@ -51,7 +51,7 @@ const Title: TitleComponent = ({
 Title.displayName = 'Tabs.Title';
 const StyledUl = styled(List)`
   /** @todo reconsider spacing */
-  padding: 0 ${p => p.theme.spacing.unit(5)}px;
+  padding: 0 ${p => p.theme.spacing.unit(3)}px;
   /** @todo check this out */
   margin-bottom: -1px;
 `;
