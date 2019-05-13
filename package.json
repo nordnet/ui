@@ -106,7 +106,7 @@
     "@types/styled-components": "4.1.14",
     "@typescript-eslint/eslint-plugin": "1.7.0",
     "@typescript-eslint/parser": "1.7.0",
-    "babel-loader": "8.0.5",
+    "babel-loader": "8.0.6",
     "babel-plugin-ramda": "2.0.0",
     "babel-plugin-require-context-hook": "1.0.0",
     "babel-plugin-styled-components": "1.10.0",
