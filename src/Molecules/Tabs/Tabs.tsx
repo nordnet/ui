@@ -59,13 +59,16 @@ const StyledUl = styled(List)`
 const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
   x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
 
-const Tabs: ContainerComponent = ({ children, initialActiveTabIndex = 0 }) => {
-  const [active, setActive] = useState(initialActiveTabIndex);
+const Tabs: ContainerComponent = ({ children, initialActiveTabIndex = 0, activeTabIndex }) => {
+  // eslint-disable-next-line prefer-const
+  let [active, setActive] = useState(initialActiveTabIndex);
+  const isControlled = typeof activeTabIndex !== 'undefined';
+  if (isControlled) active = activeTabIndex!;
   const handleTitleClick = (i: number, handler?: React.MouseEventHandler) => (
     e: React.MouseEvent,
   ) => {
     if (handler) handler(e);
-    setActive(i);
+    if (!isControlled) setActive(i);
   };
   const { setRef, onKeyDown } = useKeyboardNavigation({
     itemsLength: React.Children.count(children),

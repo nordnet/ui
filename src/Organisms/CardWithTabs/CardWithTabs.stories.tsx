@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import { action } from '@storybook/addon-actions';
@@ -31,6 +31,35 @@ storiesOf('Organisms | CardWithTabs', module)
       <CardWithTabs.Tab title="Tab title 2">2</CardWithTabs.Tab>
     </CardWithTabs>
   ))
+  .add('Controlled behaviour', () => {
+    const ControlledComponent = () => {
+      const [active, setActive] = useState(0);
+
+      return (
+        <>
+          <button type="button" onClick={() => setActive(active === 0 ? 1 : 0)}>
+            Change
+          </button>
+          <CardWithTabs
+            title={
+              <Typography type="title3" as="h2">
+                Title for the card
+              </Typography>
+            }
+            activeTabIndex={active}
+          >
+            <CardWithTabs.Tab title="Tab title 1" onTitleClick={() => setActive(0)}>
+              Tab content 1
+            </CardWithTabs.Tab>
+            <CardWithTabs.Tab title="Tab title 2" onTitleClick={() => setActive(1)}>
+              Tab content 2
+            </CardWithTabs.Tab>
+          </CardWithTabs>
+        </>
+      );
+    };
+    return <ControlledComponent />;
+  })
   .add('Integration: with Typography and extra space inside', () => (
     <CardWithTabs
       title={
