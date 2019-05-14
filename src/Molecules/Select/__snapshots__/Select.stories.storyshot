@@ -1,0 +1,372 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Market Overview | Select Select with hidden label 1`] = `
+<label>
+  <div
+    className="VissuallyHidden__Hidden-sc-1fet3ys-0 bOnoNu"
+  >
+    <span
+      className="Typography__StyledTypography-sc-10mju41-0 gkUDyL"
+      color={[Function]}
+      type="secondary"
+    >
+      Stocks
+    </span>
+  </div>
+  <div
+    className="Select__SelectWrapper-sc-1y4h4jv-2 hBqYng"
+  >
+    <select
+      className="Select__StyledSelect-sc-1y4h4jv-0 eXNwjQ"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="Option 2"
+    >
+      <option
+        value="Option 1"
+      >
+        Option 1
+      </option>
+      <option
+        value="Option 2"
+      >
+        Option 2
+      </option>
+      <option
+        value="Option 3"
+      >
+        Option 3
+      </option>
+    </select>
+    <span
+      className="Select__SelectedValue-sc-1y4h4jv-3 jPCuYb Typography__StyledTypography-sc-10mju41-0 llgpXr"
+      type="secondary"
+    >
+      Option 2
+    </span>
+    <svg
+      aria-hidden="true"
+      className="Select__Chevron-sc-1y4h4jv-1 cVPECg IconBase__StyledIconBase-sc-10cbji3-0 bjheRI"
+      focusable="false"
+      role="presentation"
+      size={5}
+      viewBox="0 0 24 24"
+    >
+      <polygon
+        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+      />
+    </svg>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Market Overview | Select Select with placeholder 1`] = `
+<label>
+  <span
+    className="Typography__StyledTypography-sc-10mju41-0 gkUDyL"
+    color={[Function]}
+    type="secondary"
+  >
+    Options
+  </span>
+  <div
+    className="Select__SelectWrapper-sc-1y4h4jv-2 hBqYng"
+  >
+    <select
+      className="Select__StyledSelect-sc-1y4h4jv-0 eXNwjQ"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+    >
+      <option
+        disabled={true}
+        selected={true}
+        value=""
+      >
+        Select option
+      </option>
+      <option
+        value="Option 1"
+      >
+        Option 1
+      </option>
+      <option
+        value="Option 2"
+      >
+        Option 2
+      </option>
+      <option
+        value="Option 3"
+      >
+        Option 3
+      </option>
+    </select>
+    <span
+      className="Select__SelectedValue-sc-1y4h4jv-3 jPCuYb Typography__StyledTypography-sc-10mju41-0 llgpXr"
+      type="secondary"
+    >
+      Select option
+    </span>
+    <svg
+      aria-hidden="true"
+      className="Select__Chevron-sc-1y4h4jv-1 cVPECg IconBase__StyledIconBase-sc-10cbji3-0 bjheRI"
+      focusable="false"
+      role="presentation"
+      size={5}
+      viewBox="0 0 24 24"
+    >
+      <polygon
+        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+      />
+    </svg>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Market Overview | Select Select with placeholder and preselected value 1`] = `
+<label>
+  <span
+    className="Typography__StyledTypography-sc-10mju41-0 gkUDyL"
+    color={[Function]}
+    type="secondary"
+  >
+    Options
+  </span>
+  <div
+    className="Select__SelectWrapper-sc-1y4h4jv-2 hBqYng"
+  >
+    <select
+      className="Select__StyledSelect-sc-1y4h4jv-0 eXNwjQ"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="Option 2"
+    >
+      <option
+        disabled={true}
+        selected={true}
+        value=""
+      >
+        Select option
+      </option>
+      <option
+        value="Option 1"
+      >
+        Option 1
+      </option>
+      <option
+        value="Option 2"
+      >
+        Option 2
+      </option>
+      <option
+        value="Option 3"
+      >
+        Option 3
+      </option>
+    </select>
+    <span
+      className="Select__SelectedValue-sc-1y4h4jv-3 jPCuYb Typography__StyledTypography-sc-10mju41-0 llgpXr"
+      type="secondary"
+    >
+      Option 2
+    </span>
+    <svg
+      aria-hidden="true"
+      className="Select__Chevron-sc-1y4h4jv-1 cVPECg IconBase__StyledIconBase-sc-10cbji3-0 bjheRI"
+      focusable="false"
+      role="presentation"
+      size={5}
+      viewBox="0 0 24 24"
+    >
+      <polygon
+        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+      />
+    </svg>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Market Overview | Select Select with prepended empty value 1`] = `
+<label>
+  <div
+    className="VissuallyHidden__Hidden-sc-1fet3ys-0 bOnoNu"
+  >
+    <span
+      className="Typography__StyledTypography-sc-10mju41-0 gkUDyL"
+      color={[Function]}
+      type="secondary"
+    >
+      Stocks
+    </span>
+  </div>
+  <div
+    className="Select__SelectWrapper-sc-1y4h4jv-2 hBqYng"
+  >
+    <select
+      className="Select__StyledSelect-sc-1y4h4jv-0 eXNwjQ"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    >
+      <option
+        value=""
+      >
+        All
+      </option>
+      <option
+        value="Option 1"
+      >
+        Option 1
+      </option>
+      <option
+        value="Option 2"
+      >
+        Option 2
+      </option>
+      <option
+        value="Option 3"
+      >
+        Option 3
+      </option>
+    </select>
+    <span
+      className="Select__SelectedValue-sc-1y4h4jv-3 jPCuYb Typography__StyledTypography-sc-10mju41-0 llgpXr"
+      type="secondary"
+    >
+      All
+    </span>
+    <svg
+      aria-hidden="true"
+      className="Select__Chevron-sc-1y4h4jv-1 cVPECg IconBase__StyledIconBase-sc-10cbji3-0 bjheRI"
+      focusable="false"
+      role="presentation"
+      size={5}
+      viewBox="0 0 24 24"
+    >
+      <polygon
+        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+      />
+    </svg>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Market Overview | Select Select with preselected value 1`] = `
+<label>
+  <span
+    className="Typography__StyledTypography-sc-10mju41-0 gkUDyL"
+    color={[Function]}
+    type="secondary"
+  >
+    Stocks
+  </span>
+  <div
+    className="Select__SelectWrapper-sc-1y4h4jv-2 hBqYng"
+  >
+    <select
+      className="Select__StyledSelect-sc-1y4h4jv-0 eXNwjQ"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="Option 2"
+    >
+      <option
+        value="Option 1"
+      >
+        Option 1
+      </option>
+      <option
+        value="Option 2"
+      >
+        Option 2
+      </option>
+      <option
+        value="Option 3"
+      >
+        Option 3
+      </option>
+    </select>
+    <span
+      className="Select__SelectedValue-sc-1y4h4jv-3 jPCuYb Typography__StyledTypography-sc-10mju41-0 llgpXr"
+      type="secondary"
+    >
+      Option 2
+    </span>
+    <svg
+      aria-hidden="true"
+      className="Select__Chevron-sc-1y4h4jv-1 cVPECg IconBase__StyledIconBase-sc-10cbji3-0 bjheRI"
+      focusable="false"
+      role="presentation"
+      size={5}
+      viewBox="0 0 24 24"
+    >
+      <polygon
+        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+      />
+    </svg>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Market Overview | Select Select without placeholder 1`] = `
+<label>
+  <span
+    className="Typography__StyledTypography-sc-10mju41-0 gkUDyL"
+    color={[Function]}
+    type="secondary"
+  >
+    Stocks
+  </span>
+  <div
+    className="Select__SelectWrapper-sc-1y4h4jv-2 hBqYng"
+  >
+    <select
+      className="Select__StyledSelect-sc-1y4h4jv-0 eXNwjQ"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+    >
+      <option
+        value="Option 1"
+      >
+        Option 1
+      </option>
+      <option
+        value="Option 2"
+      >
+        Option 2
+      </option>
+      <option
+        value="Option 3"
+      >
+        Option 3
+      </option>
+    </select>
+    <span
+      className="Select__SelectedValue-sc-1y4h4jv-3 jPCuYb Typography__StyledTypography-sc-10mju41-0 llgpXr"
+      type="secondary"
+    />
+    <svg
+      aria-hidden="true"
+      className="Select__Chevron-sc-1y4h4jv-1 cVPECg IconBase__StyledIconBase-sc-10cbji3-0 bjheRI"
+      focusable="false"
+      role="presentation"
+      size={5}
+      viewBox="0 0 24 24"
+    >
+      <polygon
+        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+      />
+    </svg>
+  </div>
+</label>
+`;

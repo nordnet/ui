@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Market Overview | VisuallyHidden Visually hidden label 1`] = `
+<label>
+  <div
+    className="VissuallyHidden__Hidden-sc-1fet3ys-0 bOnoNu"
+  >
+    Hide me
+  </div>
+  <input />
+</label>
+`;

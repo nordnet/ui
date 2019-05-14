@@ -15,6 +15,7 @@ import TabTitle from './Atoms/TabTitle';
 import Time from './Atoms/Time';
 import Typography from './Atoms/Typography';
 import Box from './Atoms/Box';
+import VisuallyHidden from './Atoms/VisuallyHidden';
 
 /** Molecules */
 import Development from './Molecules/Development/index';
@@ -73,4 +74,5 @@ export {
   Tr,
   Typography,
   Box,
+  VisuallyHidden,
 };
