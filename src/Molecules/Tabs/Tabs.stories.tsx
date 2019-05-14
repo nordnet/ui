@@ -11,12 +11,16 @@ const SpacingInside = styled.div`
   padding-top: ${p => p.theme.spacing.unit(4)}px;
 `;
 
+const StyledTabs = styled(Tabs)`
+  padding: 0 ${p => p.theme.spacing.unit(5)}px;
+`;
+
 storiesOf('Molecules | Tabs', module)
-  .add('Default (extra space inside)', () => (
+  .add('Default', () => (
     <Typography type="secondary">
       <Tabs>
         <Tabs.Tab title="One" onTitleClick={action('Clicked title1')}>
-          <SpacingInside>Ones children</SpacingInside>
+          Ones children
         </Tabs.Tab>
         <Tabs.Tab
           title={
@@ -29,12 +33,22 @@ storiesOf('Molecules | Tabs', module)
           }
           onTitleClick={action('Clicked title2')}
         >
-          <SpacingInside>
-            Moving focus from a tab will put it on the next <a href="#link">focusable</a> Tab in the
-            tab panel.
-          </SpacingInside>
+          Moving focus from a tab will put it on the next <a href="#link">focusable</a> Tab in the
+          tab panel.
         </Tabs.Tab>
       </Tabs>
+    </Typography>
+  ))
+  .add('With custom styling (like spacing)', () => (
+    <Typography type="secondary">
+      <StyledTabs>
+        <Tabs.Tab title="One" onTitleClick={action('Clicked title1')}>
+          <SpacingInside>Ones children</SpacingInside>
+        </Tabs.Tab>
+        <Tabs.Tab title="two" onTitleClick={action('Clicked title2')}>
+          <SpacingInside>Twos children</SpacingInside>
+        </Tabs.Tab>
+      </StyledTabs>
     </Typography>
   ))
   .add('Controlled behaviour', () => {
@@ -48,10 +62,10 @@ storiesOf('Molecules | Tabs', module)
           </button>
           <Tabs activeTabIndex={active}>
             <Tabs.Tab title="One" onTitleClick={() => setActive(0)}>
-              <SpacingInside>Ones children</SpacingInside>
+              Ones children
             </Tabs.Tab>
             <Tabs.Tab title="Two" onTitleClick={() => setActive(1)}>
-              <SpacingInside>Twos children</SpacingInside>
+              Twos children
             </Tabs.Tab>
           </Tabs>
         </Typography>

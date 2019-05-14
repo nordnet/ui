@@ -135,7 +135,6 @@ Array [
 }
 
 .c4 {
-  padding: 0 12px;
   margin-bottom: -1px;
 }
 
@@ -386,7 +385,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
 }
 
 .c4 {
-  padding: 0 12px;
   margin-bottom: -1px;
 }
 
@@ -655,7 +653,6 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
 }
 
 .c4 {
-  padding: 0 12px;
   margin-bottom: -1px;
 }
 

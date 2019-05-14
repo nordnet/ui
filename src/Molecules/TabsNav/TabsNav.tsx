@@ -3,7 +3,7 @@ import React from 'react';
 import { matchPath, withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { Flexbox, Typography, TabTitle } from '../..';
+import { Flexbox, Typography, TabTitle, List } from '../..';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from '../Tabs/useKeyboardNavigation';
 import { ItemComponent, ItemProps, TitleComponent, Component } from './TabsNav.types';
@@ -42,15 +42,11 @@ const Title: TitleComponent = ({ active, children, setRef, to, onKeyDown, onClic
 };
 Title.displayName = 'TabsNav.Title';
 
-const StyledUl = styled.ul`
-  margin-top: 0;
-  list-style: none;
-  display: flex;
-  /** @todo reconsider spacing */
-  padding-left: ${p => p.theme.spacing.unit(5)}px;
+const StyledUl = styled(List)`
   /** @todo check this out */
   margin-bottom: -1px;
 `;
+
 const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
   x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
 

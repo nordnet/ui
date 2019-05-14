@@ -110,14 +110,7 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
 }
 
 .c2 {
-  padding: 0 12px;
   margin-bottom: -1px;
-}
-
-.c10 {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 16px;
 }
 
 @media (min-width:360px) {
@@ -221,18 +214,14 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
         id="tabs-tabpanel-0"
         role="tabpanel"
       >
-        <div
-          className="c10"
-        >
-          Ones children
-        </div>
+        Ones children
       </section>
     </div>
   </div>
 </span>
 `;
 
-exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
+exports[`Storyshots Molecules | Tabs Default 1`] = `
 .c4 {
   box-sizing: border-box;
 }
@@ -342,14 +331,7 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
 }
 
 .c2 {
-  padding: 0 12px;
   margin-bottom: -1px;
-}
-
-.c10 {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 16px;
 }
 
 @media (min-width:360px) {
@@ -455,8 +437,233 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
         id="tabs-tabpanel-0"
         role="tabpanel"
       >
+        Ones children
+      </section>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
+.c5 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 > *:not(:first-child) {
+  margin-left: 16px;
+}
+
+.c4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c10 {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBE8;
+}
+
+.c9 {
+  background: none;
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 4px;
+  color: #282823;
+  border-bottom: 2px solid transparent;
+}
+
+.c8 {
+  background: none;
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 4px;
+  color: #282823;
+  border-bottom: 2px solid #0046FF;
+}
+
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background: none;
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  margin-bottom: -1px;
+}
+
+.c11 {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 16px;
+}
+
+.c1 {
+  padding: 0 20px;
+}
+
+@media (min-width:360px) {
+  .c0 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+@media (min-width:360px) {
+  .c6 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<span
+  className="c0"
+  type="secondary"
+>
+  <div>
+    <ul
+      className="c1 c2 c3 c4"
+    >
+      <li
+        className="c5"
+        role="presentation"
+      >
+        <span
+          className="c6"
+          type="secondary"
+        >
+          <button
+            aria-selected={true}
+            className="c7"
+            id="tabs-tab-0"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="tab"
+            tabIndex={0}
+            type="button"
+          >
+            <div
+              className="c8"
+            >
+              <span
+                className="c6"
+                type="secondary"
+              >
+                One
+              </span>
+            </div>
+          </button>
+        </span>
+      </li>
+      <li
+        className="c5"
+        role="presentation"
+      >
+        <span
+          className="c0"
+          type="secondary"
+        >
+          <button
+            aria-selected={false}
+            className="c7"
+            id="tabs-tab-1"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            <div
+              className="c9"
+            >
+              <span
+                className="c0"
+                type="secondary"
+              >
+                two
+              </span>
+            </div>
+          </button>
+        </span>
+      </li>
+    </ul>
+    <div
+      className="c10"
+    />
+    <div>
+      <section
+        aria-labelledby="tabs-tab-0"
+        hidden={false}
+        id="tabs-tabpanel-0"
+        role="tabpanel"
+      >
         <div
-          className="c10"
+          className="c11"
         >
           Ones children
         </div>

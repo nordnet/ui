@@ -49,9 +49,8 @@ const Title: TitleComponent = ({
   );
 };
 Title.displayName = 'Tabs.Title';
+
 const StyledUl = styled(List)`
-  /** @todo reconsider spacing */
-  padding: 0 ${p => p.theme.spacing.unit(3)}px;
   /** @todo check this out */
   margin-bottom: -1px;
 `;
@@ -59,7 +58,12 @@ const StyledUl = styled(List)`
 const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
   x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
 
-const Tabs: ContainerComponent = ({ children, initialActiveTabIndex = 0, activeTabIndex }) => {
+const Tabs: ContainerComponent = ({
+  children,
+  initialActiveTabIndex = 0,
+  activeTabIndex,
+  className,
+}) => {
   // eslint-disable-next-line prefer-const
   let [active, setActive] = useState(initialActiveTabIndex);
   const isControlled = typeof activeTabIndex !== 'undefined';
@@ -75,8 +79,10 @@ const Tabs: ContainerComponent = ({ children, initialActiveTabIndex = 0, activeT
   });
   const titles: React.ReactElement<any>[] = [];
   let contents: React.ReactElement<any> | null = null;
+
   React.Children.forEach(children, (c, i) => {
     const isActive = i === active;
+
     if (!isItemElement(c)) {
       assert(false, 'There should be only <Tabs.Tab> children inside of <Tabs> component');
     } else {
@@ -114,7 +120,14 @@ const Tabs: ContainerComponent = ({ children, initialActiveTabIndex = 0, activeT
 
   return (
     <div>
-      <Flexbox container direction="row" gutter={4} as={StyledUl} role="tablist">
+      <Flexbox
+        container
+        direction="row"
+        gutter={4}
+        as={StyledUl}
+        role="tablist"
+        className={className}
+      >
         {titles}
       </Flexbox>
       <Separator />
