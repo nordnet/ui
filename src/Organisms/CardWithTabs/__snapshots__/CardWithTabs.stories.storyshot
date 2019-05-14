@@ -6,7 +6,7 @@ Array [
     onClick={[Function]}
     type="button"
   >
-    Change
+    Change state outside
   </button>,
   .c0 {
   background: #FFFFFF;

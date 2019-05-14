@@ -38,7 +38,7 @@ storiesOf('Organisms | CardWithTabs', module)
       return (
         <>
           <button type="button" onClick={() => setActive(active === 0 ? 1 : 0)}>
-            Change
+            Change state outside
           </button>
           <CardWithTabs
             title={

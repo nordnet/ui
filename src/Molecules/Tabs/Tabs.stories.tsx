@@ -44,7 +44,7 @@ storiesOf('Molecules | Tabs', module)
       return (
         <Typography type="secondary">
           <button type="button" onClick={() => setActive(active === 0 ? 1 : 0)}>
-            Change
+            Change state outside
           </button>
           <Tabs activeTabIndex={active}>
             <Tabs.Tab title="One" onTitleClick={() => setActive(0)}>

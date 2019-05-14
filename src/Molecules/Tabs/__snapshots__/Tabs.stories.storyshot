@@ -142,7 +142,7 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
     onClick={[Function]}
     type="button"
   >
-    Change
+    Change state outside
   </button>
   <div>
     <ul
