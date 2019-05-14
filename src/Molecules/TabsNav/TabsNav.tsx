@@ -23,11 +23,17 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Title: TitleComponent = ({ active, children, setRef, to, onKeyDown }) => {
+const Title: TitleComponent = ({ active, children, setRef, to, onKeyDown, onClick }) => {
   return (
     <Typography type="secondary" weight={active ? 'bold' : 'regular'}>
       <div>
-        <StyledLink to={to} innerRef={setRef} aria-current={active && 'page'} onKeyDown={onKeyDown}>
+        <StyledLink
+          to={to}
+          innerRef={setRef}
+          aria-current={active && 'page'}
+          onKeyDown={onKeyDown}
+          onClick={onClick}
+        >
           <TabTitle active={active}>{children}</TabTitle>
         </StyledLink>
       </div>
@@ -64,7 +70,13 @@ const TabsNav: Component = (withRouter(({ children, location }) => {
 
       titles.push(
         <Flexbox.Item as="li">
-          <Title active={isIndexActive} setRef={setRef(i)} to={c.props.to} onKeyDown={onKeyDown}>
+          <Title
+            active={isIndexActive}
+            onClick={c.props.onTitleClick}
+            setRef={setRef(i)}
+            to={c.props.to}
+            onKeyDown={onKeyDown}
+          >
             {c.props.title}
           </Title>
         </Flexbox.Item>,

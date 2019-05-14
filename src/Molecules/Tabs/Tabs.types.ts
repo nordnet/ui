@@ -1,5 +1,6 @@
 export type ItemProps = {
   title: React.ReactNode;
+  onTitleClick?: React.MouseEventHandler;
   children: React.ReactNode | React.ReactNode[];
 };
 

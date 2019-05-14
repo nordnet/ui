@@ -1,5 +1,6 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
+import { action } from '@storybook/addon-actions';
 import styled from 'styled-components';
 
 import { Tabs, Typography } from '../..';
@@ -13,7 +14,7 @@ const SpacingInside = styled.div`
 storiesOf('Molecules | Tabs', module).add('Default (extra space inside)', () => (
   <Typography type="secondary">
     <Tabs>
-      <Tabs.Tab title="One">
+      <Tabs.Tab title="One" onTitleClick={action('Clicked title1')}>
         <SpacingInside>Ones children</SpacingInside>
       </Tabs.Tab>
       <Tabs.Tab
@@ -25,6 +26,7 @@ storiesOf('Molecules | Tabs', module).add('Default (extra space inside)', () => 
             </span>
           </div>
         }
+        onTitleClick={action('Clicked title2')}
       >
         <SpacingInside>
           Moving focus from a tab will put it on the next <a href="#link">focusable</a> Tab in the

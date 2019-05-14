@@ -61,7 +61,12 @@ const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
 
 const Tabs: ContainerComponent = ({ children, initialActiveTabIndex = 0 }) => {
   const [active, setActive] = useState(initialActiveTabIndex);
-  const handleTitleClick = (i: number) => () => setActive(i);
+  const handleTitleClick = (i: number, handler?: React.MouseEventHandler) => (
+    e: React.MouseEvent,
+  ) => {
+    if (handler) handler(e);
+    setActive(i);
+  };
   const { setRef, onKeyDown } = useKeyboardNavigation({
     itemsLength: React.Children.count(children),
   });
@@ -78,7 +83,7 @@ const Tabs: ContainerComponent = ({ children, initialActiveTabIndex = 0 }) => {
           <Title
             active={isActive}
             index={i}
-            onClick={handleTitleClick(i)}
+            onClick={handleTitleClick(i, c.props.onTitleClick)}
             onKeyDown={onKeyDown}
             setRef={setRef(i)}
           >

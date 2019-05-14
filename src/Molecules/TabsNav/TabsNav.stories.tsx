@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Route, Redirect } from 'react-router';
 import { HashRouter } from 'react-router-dom';
+import { action } from '@storybook/addon-actions';
 import { Typography, TabsNav, Separator, Flexbox } from '../..';
 
 const SpacingInside = styled.div`
@@ -19,8 +20,16 @@ storiesOf('Molecules | TabsNav', module).add(
         <Flexbox.Item>
           <Typography type="secondary">
             <TabsNav>
-              <TabsNav.Tab title="Link to /route1" to="/route1" />
-              <TabsNav.Tab title={<div>Link to /route2</div>} to="/route2" />
+              <TabsNav.Tab
+                title="Link to /route1"
+                to="/route1"
+                onTitleClick={action('Clicked title1')}
+              />
+              <TabsNav.Tab
+                title={<div>Link to /route2</div>}
+                to="/route2"
+                onTitleClick={action('Clicked title2')}
+              />
             </TabsNav>
           </Typography>
         </Flexbox.Item>
