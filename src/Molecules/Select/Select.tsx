@@ -48,6 +48,7 @@ const SelectedValue = styled(Typography)`
   pointer-events: none;
   white-space: nowrap;
   text-overflow: ellipsis;
+  box-sizing: border-box;
 `;
 
 const Select: SelectComponent = ({
