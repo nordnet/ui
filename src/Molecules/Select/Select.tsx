@@ -4,8 +4,6 @@ import styled from 'styled-components';
 import { VisuallyHidden, Icon, Typography } from '../..';
 import { SelectComponent } from './Select.types';
 
-console.log({ VisuallyHidden, Icon });
-
 const StyledSelect = styled.select`
   width: 100%;
   border-radius: 0;
@@ -99,6 +97,7 @@ const Select: SelectComponent = ({
   );
 
   return (
+    /* eslint-disable jsx-a11y/label-has-associated-control, jsx-a11y/label-has-for */
     <label>
       {hideLabel ? <VisuallyHidden>{Label}</VisuallyHidden> : <>{Label}</>}
       <SelectWrapper focus={focus}>
