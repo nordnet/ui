@@ -10,8 +10,15 @@ const options = [
 
 storiesOf('Molecules | Select', module)
   .add('Select with placeholder', () => (
-    <div style={{ width: 200 }}>
-      <Select options={options} placeholder="Select option" label="Options" />
+    <Select options={options} placeholder="Select option" label="Options" />
+  ))
+  .add('Select with overflowing placeholder', () => (
+    <div style={{ width: 150 }}>
+      <Select
+        options={[{ label: 'Reaaaaaaaaaally long option', value: 1 }]}
+        value={1}
+        label="Options"
+      />
     </div>
   ))
   .add('Select with placeholder and preselected value', () => (
@@ -25,10 +32,5 @@ storiesOf('Molecules | Select', module)
     <Select options={options} value="Option 2" label="Stocks" hideLabel />
   ))
   .add('Select with prepended empty value', () => (
-    <Select
-      options={[{ label: 'All', value: '' }, ...options]}
-      value=""
-      label="Stocks"
-      hideLabel
-    />
+    <Select options={[{ label: 'All', value: '' }, ...options]} value="" label="Stocks" hideLabel />
   ));

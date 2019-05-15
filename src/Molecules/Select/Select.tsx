@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { VisuallyHidden, Icon, Typography } from '../..';
 import { SelectComponent } from './Select.types';
 
-console.log({VisuallyHidden, Icon});
+console.log({ VisuallyHidden, Icon });
 
 const StyledSelect = styled.select`
   width: 100%;
@@ -31,6 +31,7 @@ const SelectWrapper = styled.div<{ focus: boolean }>`
   &:hover {
     border-color: ${p => p.theme.color.inputBorderHover};
   }
+  padding-right: 20px;
 `;
 
 const SelectedValue = styled(Typography)`
@@ -41,6 +42,11 @@ const SelectedValue = styled(Typography)`
   left: 0;
   padding: ${p => p.theme.spacing.unit(1.5)}px;
   pointer-events: none;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 20px;
+  text-overflow: ellipsis;
 `;
 
 const Select: SelectComponent = ({
@@ -111,7 +117,9 @@ const Select: SelectComponent = ({
             </option>
           )}
           {options.map(option => (
-            <option key={option.value} value={option.value}>{option.label}</option>
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
           ))}
         </StyledSelect>
         <SelectedValue type="secondary">
