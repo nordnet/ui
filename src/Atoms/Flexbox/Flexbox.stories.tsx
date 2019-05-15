@@ -13,69 +13,107 @@ const StyledContent = styled.div`
 const Content = ({ children }: any) => <StyledContent>{children}</StyledContent>;
 
 storiesOf('Atoms | Flexbox', module)
-  .add('Flexbox default', () => (
-    <Flexbox.Container>
-      <Flexbox.Item size={3}>
+  .add('Default', () => (
+    <Flexbox container>
+      <Flexbox item>
         <Content>Col 1</Content>
-      </Flexbox.Item>
-      <Flexbox.Item size={6}>
+      </Flexbox>
+      <Flexbox item>
         <Content>Col 2</Content>
-      </Flexbox.Item>
-      <Flexbox.Item size={3}>
+      </Flexbox>
+      <Flexbox item>
         <Content>Col 3</Content>
-      </Flexbox.Item>
-    </Flexbox.Container>
+      </Flexbox>
+    </Flexbox>
+  ))
+  .add('Column sized flexboxes', () => (
+    <Flexbox container>
+      <Flexbox item size={3}>
+        <Content>Col 1</Content>
+      </Flexbox>
+      <Flexbox item size={6}>
+        <Content>Col 2</Content>
+      </Flexbox>
+      <Flexbox item size={3}>
+        <Content>Col 3</Content>
+      </Flexbox>
+    </Flexbox>
   ))
   .add('Flexbox with custom gutter', () => (
-    <Flexbox.Container gutter={2}>
-      <Flexbox.Item size={6}>
+    <Flexbox container gutter={5}>
+      <Flexbox item size={6}>
         <Content>Col 1</Content>
-      </Flexbox.Item>
-      <Flexbox.Item size={6}>
+      </Flexbox>
+      <Flexbox item size={6}>
         <Content>Col 2</Content>
-      </Flexbox.Item>
-    </Flexbox.Container>
+      </Flexbox>
+    </Flexbox>
   ))
   .add('Flexbox with direction: column', () => (
-    <Flexbox.Container direction="column">
-      <Flexbox.Item order={2}>
+    <Flexbox container direction="column">
+      <Flexbox item order={2}>
         <Content>Col 1</Content>
-      </Flexbox.Item>
-      <Flexbox.Item order={1}>
+      </Flexbox>
+      <Flexbox item order={1}>
         <Content>Col 2</Content>
-      </Flexbox.Item>
-      <Flexbox.Item order={3}>
+      </Flexbox>
+      <Flexbox item order={3}>
         <Content>Col 3</Content>
-      </Flexbox.Item>
-    </Flexbox.Container>
+      </Flexbox>
+    </Flexbox>
   ))
   .add('Flexbox with conditionally hidden flex item', () => {
     const showFirstItem = false;
     return (
-      <Flexbox.Container>
+      <Flexbox container>
         {showFirstItem && (
-          <Flexbox.Item order={2}>
+          <Flexbox item order={2}>
             <Content>Col 1</Content>
-          </Flexbox.Item>
+          </Flexbox>
         )}
-        <Flexbox.Item order={1}>
+        <Flexbox item order={1}>
           <Content>Col 2</Content>
-        </Flexbox.Item>
-      </Flexbox.Container>
+        </Flexbox>
+      </Flexbox>
     );
   })
   .add('Flexbox with conditionally visible flex item', () => {
     const showFirstItem = true;
     return (
-      <Flexbox.Container>
+      <Flexbox container>
         {showFirstItem && (
-          <Flexbox.Item order={2}>
+          <Flexbox item order={2}>
             <Content>Col 1</Content>
-          </Flexbox.Item>
+          </Flexbox>
         )}
-        <Flexbox.Item order={1}>
+        <Flexbox item order={1}>
           <Content>Col 2</Content>
-        </Flexbox.Item>
-      </Flexbox.Container>
+        </Flexbox>
+      </Flexbox>
+    );
+  })
+  .add('Flexbox container item', () => {
+    return (
+      <Flexbox container gutter={5}>
+        <Flexbox container item direction="column" gutter={5}>
+          <Flexbox item>
+            <Content>First element here</Content>
+          </Flexbox>
+          <Flexbox item>
+            <Content>Second element here</Content>
+          </Flexbox>
+        </Flexbox>
+        <Flexbox item>
+          <Content>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus neque in venenatis
+            faucibus. Fusce vitae maximus diam. Ut placerat lacus id porttitor tristique. Mauris in
+            neque tempus, venenatis metus vitae, pellentesque massa. Etiam blandit lacus diam,
+            dignissim posuere massa semper maximus. In pretium commodo nisl sed ultrices. Duis
+            gravida diam ac nisl sodales mollis. Quisque iaculis semper mi, eu interdum elit
+            molestie quis. Vivamus rutrum cursus interdum. Suspendisse vehicula quam mi, a efficitur
+            ante egestas eget.
+          </Content>
+        </Flexbox>
+      </Flexbox>
     );
   });

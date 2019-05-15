@@ -115,18 +115,18 @@ storiesOf('Molecules | Button', module)
     </Button>
   ))
   .add('Buttons composed in a group', () => (
-    <Flexbox.Container>
-      <Flexbox.Item flex="1 1 50%">
+    <Flexbox container>
+      <Flexbox item flex="1 1 50%">
         <Button type="submit" onClick={action('submit')} fullWidth>
           Submit
         </Button>
-      </Flexbox.Item>
-      <Flexbox.Item flex="1 1 50%">
+      </Flexbox>
+      <Flexbox item flex="1 1 50%">
         <Button type="reset" onClick={action('reset')} variant="secondary" fullWidth>
           Reset
         </Button>
-      </Flexbox.Item>
-    </Flexbox.Container>
+      </Flexbox>
+    </Flexbox>
   ))
   .add('Link looking like a button', () => (
     <Display
@@ -161,18 +161,18 @@ storiesOf('Molecules | Button', module)
   ))
   .add('Link looking like a buttons composed in a group', () => (
     <HashRouter>
-      <Flexbox.Container>
-        <Flexbox.Item flex="1">
+      <Flexbox container>
+        <Flexbox item flex="1">
           <Button to="route1" onClick={action('submit')} fullWidth>
             Submit
           </Button>
-        </Flexbox.Item>
-        <Flexbox.Item flex="1">
+        </Flexbox>
+        <Flexbox item flex="1">
           <Button to="route2" onClick={action('reset')} variant="secondary" fullWidth>
             Reset
           </Button>
-        </Flexbox.Item>
-      </Flexbox.Container>
+        </Flexbox>
+      </Flexbox>
     </HashRouter>
   ))
   .add('Link looking like a button with rel as nofollow', () => (

@@ -992,23 +992,19 @@ exports[`Storyshots Molecules | Button Button with variant 1`] = `
 `;
 
 exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
-.c1 {
-  box-sizing: border-box;
-  -webkit-flex: 1 1 50%;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  -webkit-flex: 1 1 50%;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
 }
 
 .c3 {
@@ -1133,6 +1129,7 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
 >
   <div
     className="c1"
+    flex="1 1 50%"
   >
     <button
       className="c2"
@@ -1150,6 +1147,7 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
   </div>
   <div
     className="c1"
+    flex="1 1 50%"
   >
     <button
       className="c4"
@@ -1614,23 +1612,19 @@ exports[`Storyshots Molecules | Button Link looking like a button with rel as no
 `;
 
 exports[`Storyshots Molecules | Button Link looking like a buttons composed in a group 1`] = `
-.c1 {
-  box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c3 {
@@ -1701,6 +1695,7 @@ exports[`Storyshots Molecules | Button Link looking like a buttons composed in a
 >
   <div
     className="c1"
+    flex="1"
   >
     <a
       className="c2"
@@ -1719,6 +1714,7 @@ exports[`Storyshots Molecules | Button Link looking like a buttons composed in a
   </div>
   <div
     className="c1"
+    flex="1"
   >
     <a
       className="c4"

@@ -12,39 +12,44 @@ const Color = styled.div`
   height: ${p => p.theme.spacing.unit(14)}px;
   background-color: ${p => p.color};
   border: 1px solid #eee;
-  display:
+  display: ;
 `;
 
-const ColorWithValue: React.FC<{ color: string}> = ({ color }) => (
+const ColorWithValue: React.FC<{ color: string }> = ({ color }) => (
   <>
     <Color color={color} />
     <div>{color}</div>
   </>
-)
+);
 storiesOf('Theme', module)
   .add('Documentation', () => <MD source={colorDocs} />)
-  .add('Colors (semantic)', () => { 
+  .add('Colors (semantic)', () => {
     const a11yTheme = createTheme({ a11yColors: true });
     return (
-    <Table>
-      <Thead>
-        <Tr>
-        <Th>Name</Th>
-        <Th>Default</Th>
-        <Th>A11y</Th>
-        </Tr>
-      </Thead>
-      <Tbody>
-        {Object.keys(theme.color).map(title => (
+      <Table>
+        <Thead>
           <Tr>
-            <Td>{title}</Td>
-            <Td><ColorWithValue color={theme.color[title]} /></Td>
-            <Td><ColorWithValue color={a11yTheme.color[title]} /></Td>
+            <Th>Name</Th>
+            <Th>Default</Th>
+            <Th>A11y</Th>
           </Tr>
-        ))}
-      </Tbody>
-    </Table>
-  )})
+        </Thead>
+        <Tbody>
+          {Object.keys(theme.color).map(title => (
+            <Tr key={`theme-${title}`}>
+              <Td>{title}</Td>
+              <Td>
+                <ColorWithValue color={theme.color[title]} />
+              </Td>
+              <Td>
+                <ColorWithValue color={a11yTheme.color[title]} />
+              </Td>
+            </Tr>
+          ))}
+        </Tbody>
+      </Table>
+    );
+  })
   .add('Colors (palette)', () => {
     return (
       <>

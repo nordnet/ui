@@ -1,29 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra space inside) 1`] = `
-.c5 {
-  box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
 .c1 {
   box-sizing: border-box;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -8px;
-  margin-right: -8px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
 }
 
 .c0 {
@@ -37,13 +16,28 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra sp
   flex-direction: column;
 }
 
-.c10 {
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c3 > *:not(:first-child) {
+  margin-left: 16px;
+}
+
+.c9 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c9 {
+.c8 {
   background: none;
   display: inline-block;
   border: none;
@@ -54,7 +48,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra sp
   border-bottom: 2px solid transparent;
 }
 
-.c8 {
+.c7 {
   background: none;
   display: inline-block;
   border: none;
@@ -74,7 +68,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra sp
   line-height: 1.7142857142857142;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -83,16 +77,16 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra sp
   line-height: 1.7142857142857142;
 }
 
-.c7 {
+.c6 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7:active {
+.c6:active {
   color: inherit;
 }
 
-.c7:visited {
+.c6:visited {
   color: inherit;
 }
 
@@ -107,7 +101,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra sp
   margin-bottom: -1px;
 }
 
-.c11 {
+.c10 {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 16px;
@@ -121,7 +115,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra sp
 }
 
 @media (min-width:360px) {
-  .c6 {
+  .c5 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
@@ -129,7 +123,6 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra sp
 
 <div
   className="c0"
-  direction="column"
 >
   <div
     className="c1"
@@ -143,22 +136,22 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra sp
         direction="row"
       >
         <li
-          className="c5"
+          className="c1"
         >
           <span
-            className="c6"
+            className="c5"
             type="secondary"
           >
             <div>
               <a
                 aria-current="page"
-                className="c7"
+                className="c6"
                 href="#/route1"
                 onClick={[Function]}
                 onKeyDown={[Function]}
               >
                 <div
-                  className="c8"
+                  className="c7"
                 >
                   Link to /route1
                 </div>
@@ -167,7 +160,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra sp
           </span>
         </li>
         <li
-          className="c5"
+          className="c1"
         >
           <span
             className="c2"
@@ -176,13 +169,13 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra sp
             <div>
               <a
                 aria-current={false}
-                className="c7"
+                className="c6"
                 href="#/route2"
                 onClick={[Function]}
                 onKeyDown={[Function]}
               >
                 <div
-                  className="c9"
+                  className="c8"
                 >
                   <div>
                     Link to /route2
@@ -199,14 +192,14 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra sp
     className="c1"
   >
     <div
-      className="c10"
+      className="c9"
     />
   </div>
   <div
     className="c1"
   >
     <div
-      className="c11"
+      className="c10"
     >
       /route1 content
     </div>

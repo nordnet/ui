@@ -41,8 +41,6 @@ exports[`Storyshots Atoms | TabTitle Default 1`] = `
 exports[`Storyshots Atoms | TabTitle Integration: with Flexbox 1`] = `
 .c1 {
   box-sizing: border-box;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .c0 {
@@ -51,8 +49,6 @@ exports[`Storyshots Atoms | TabTitle Integration: with Flexbox 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -82,7 +78,6 @@ exports[`Storyshots Atoms | TabTitle Integration: with Flexbox 1`] = `
 
 <div
   className="c0"
-  direction="row"
 >
   <div
     className="c1"

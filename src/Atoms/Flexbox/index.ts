@@ -1,7 +1,3 @@
-import { Container } from './FlexboxContainer';
-import { Item } from './FlexboxItem';
+import { Flexbox } from './Flexbox';
 
-export default {
-  Container,
-  Item,
-};
+export default Flexbox;

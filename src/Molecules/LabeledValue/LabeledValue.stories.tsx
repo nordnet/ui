@@ -21,33 +21,33 @@ storiesOf('Molecules | LabeledValue', module)
   ))
   .add('Integration: LabeledValue with positive development and currency', () => (
     <LabeledValue label="Development this year">
-      <Flexbox.Container direction="row" gutter={2}>
-        <Flexbox.Item>
+      <Flexbox container direction="row" gutter={2}>
+        <Flexbox item>
           <Typography type="secondary" weight="bold">
             <Development value={9.2} icon percentage />
           </Typography>
-        </Flexbox.Item>
-        <Flexbox.Item>
+        </Flexbox>
+        <Flexbox item>
           <Typography type="secondary" weight="bold">
             <Number sign value={4672198} currency="SEK" />
           </Typography>
-        </Flexbox.Item>
-      </Flexbox.Container>
+        </Flexbox>
+      </Flexbox>
     </LabeledValue>
   ))
   .add('Integration: LabeledValue with negative development and currency', () => (
     <LabeledValue label="Development this year">
-      <Flexbox.Container direction="row" gutter={2}>
-        <Flexbox.Item>
+      <Flexbox container direction="row" gutter={2}>
+        <Flexbox item>
           <Typography type="secondary">
             <Development value={-9.2} icon percentage />
           </Typography>
-        </Flexbox.Item>
-        <Flexbox.Item>
+        </Flexbox>
+        <Flexbox item>
           <Typography type="secondary" weight="bold">
             <Number sign value={-4672198} currency="SEK" />
           </Typography>
-        </Flexbox.Item>
-      </Flexbox.Container>
+        </Flexbox>
+      </Flexbox>
     </LabeledValue>
   ));

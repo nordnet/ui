@@ -6,15 +6,15 @@ storiesOf('Atoms | TabTitle', module)
   .add('Default', () => <TabTitle>This is tab title</TabTitle>)
   .add('Active', () => <TabTitle active>This is tab title</TabTitle>)
   .add('Integration: with Flexbox', () => (
-    <Flexbox.Container direction="row">
-      <Flexbox.Item>
+    <Flexbox container direction="row">
+      <Flexbox item>
         <TabTitle>TabTitle1</TabTitle>
-      </Flexbox.Item>
-      <Flexbox.Item>
+      </Flexbox>
+      <Flexbox item>
         <TabTitle active>TabTitle2</TabTitle>
-      </Flexbox.Item>
-      <Flexbox.Item>
+      </Flexbox>
+      <Flexbox item>
         <TabTitle>TabTitle3</TabTitle>
-      </Flexbox.Item>
-    </Flexbox.Container>
+      </Flexbox>
+    </Flexbox>
   ));

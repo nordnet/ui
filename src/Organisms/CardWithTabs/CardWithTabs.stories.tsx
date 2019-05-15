@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
+import { action } from '@storybook/addon-actions';
 import { CardWithTabs, Typography } from '../..';
 
 const SpacingInside = styled.div`
@@ -14,10 +15,8 @@ const Red = styled.div`
   color: red;
 `;
 
-storiesOf('Organisms | CardWithTabs', module).
-add(
-  'with initialActiveTabIndex',
-  () => (
+storiesOf('Organisms | CardWithTabs', module)
+  .add('with initialActiveTabIndex', () => (
     <CardWithTabs
       title={
         <Typography type="title3" as="h2">
@@ -26,18 +25,42 @@ add(
       }
       initialActiveTabIndex={1}
     >
-      <CardWithTabs.Tab title="Tab title 1">
+      <CardWithTabs.Tab title="Tab title 1" onTitleClick={action('Clicked title1')}>
         1
       </CardWithTabs.Tab>
-      <CardWithTabs.Tab title="Tab title 2">
-        2
-      </CardWithTabs.Tab>
+      <CardWithTabs.Tab title="Tab title 2">2</CardWithTabs.Tab>
     </CardWithTabs>
-  ),
-).
-add(
-  'Integration: with Typography and extra space inside',
-  () => (
+  ))
+  .add('Controlled behaviour', () => {
+    const ControlledComponent = () => {
+      const [active, setActive] = useState(0);
+
+      return (
+        <>
+          <button type="button" onClick={() => setActive(active === 0 ? 1 : 0)}>
+            Change state outside
+          </button>
+          <CardWithTabs
+            title={
+              <Typography type="title3" as="h2">
+                Title for the card
+              </Typography>
+            }
+            activeTabIndex={active}
+          >
+            <CardWithTabs.Tab title="Tab title 1" onTitleClick={() => setActive(0)}>
+              Tab content 1
+            </CardWithTabs.Tab>
+            <CardWithTabs.Tab title="Tab title 2" onTitleClick={() => setActive(1)}>
+              Tab content 2
+            </CardWithTabs.Tab>
+          </CardWithTabs>
+        </>
+      );
+    };
+    return <ControlledComponent />;
+  })
+  .add('Integration: with Typography and extra space inside', () => (
     <CardWithTabs
       title={
         <Typography type="title3" as="h2">
@@ -69,5 +92,4 @@ add(
         <SpacingInside>Some stuff for Tab 2</SpacingInside>
       </CardWithTabs.Tab>
     </CardWithTabs>
-  ),
-);
+  ));

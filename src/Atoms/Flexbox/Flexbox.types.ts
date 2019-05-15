@@ -1,8 +1,7 @@
-export type Props = {
-  children: React.ReactNode;
+export type ContainerProps = {
+  container?: boolean;
   height?: number;
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
-  twoDimension?: false | undefined | null;
   /** flexbox direction */
   direction?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
   wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
@@ -42,3 +41,19 @@ export type Props = {
   /** a11y */
   role?: string;
 };
+
+export type ItemProps = {
+  item?: boolean;
+  order?: number;
+  grow?: number;
+  shrink?: number;
+  basis?: string;
+  flex?: string;
+  align?: 'auto' | 'flex-start' | 'flex-end' | 'center' | 'baseline' | 'stretch';
+  size?: number | string;
+  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+  /** a11y */
+  role?: string;
+};
+
+export type Props = ItemProps & ContainerProps & { className?: string };

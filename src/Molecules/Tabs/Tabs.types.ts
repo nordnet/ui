@@ -1,5 +1,6 @@
 export type ItemProps = {
   title: React.ReactNode;
+  onTitleClick?: React.MouseEventHandler;
   children: React.ReactNode | React.ReactNode[];
 };
 
@@ -13,6 +14,11 @@ export type TitleProps = {
 
 export type ContainerProps = {
   initialActiveTabIndex?: number;
+  /**
+   * Using this prop will enable controlled behaviour
+   * https://reactjs.org/docs/forms.html#controlled-components
+   */
+  activeTabIndex?: number;
   children: React.ReactNode;
 };
 

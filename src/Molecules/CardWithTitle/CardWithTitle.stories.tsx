@@ -32,21 +32,21 @@ storiesOf('Molecules | CardWithTitle', module)
       padding-left: ${p => p.theme.spacing.unit(1)}px;
     `;
     const CustomTitle = (
-      <Flexbox.Container justifyContent="space-between" alignItems="center" direction="row">
-        <Flexbox.Item>
+      <Flexbox container justifyContent="space-between" alignItems="center" direction="row">
+        <Flexbox item>
           <Typography type="title3" as="h2">
             Konton
           </Typography>
-        </Flexbox.Item>
-        <Flexbox.Item>
+        </Flexbox>
+        <Flexbox item>
           <Link to="www.google.com">
             <Typography type="secondary" color={t => t.color.text} weight="bold">
               Marknadsöversikt
             </Typography>
-            <PaddedIcon color={t => t.color.cta} size={3} />
+            <PaddedIcon inline color={t => t.color.cta} size={3} />
           </Link>
-        </Flexbox.Item>
-      </Flexbox.Container>
+        </Flexbox>
+      </Flexbox>
     );
 
     return (

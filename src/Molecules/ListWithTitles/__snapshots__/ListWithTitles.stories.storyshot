@@ -1,16 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with left and right titles 1`] = `
-.c7 {
-  box-sizing: border-box;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .c2 {
   box-sizing: border-box;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 .c1 {
@@ -19,20 +11,6 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -75,6 +53,7 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
   >
     <div
       className="c1"
+      justifyContent="space-between"
     >
       <div
         className="c2"
@@ -107,16 +86,13 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
       className="c5"
     >
       <div
-        className="c6"
+        className="c1"
+        justifyContent="space-between"
       >
-        <div
-          className="c7"
-        >
+        <div>
           Left List Item 1
         </div>
-        <div
-          className="c7"
-        >
+        <div>
           Right List Item 1
         </div>
       </div>
@@ -125,16 +101,13 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
       className="c5"
     >
       <div
-        className="c6"
+        className="c1"
+        justifyContent="space-between"
       >
-        <div
-          className="c7"
-        >
+        <div>
           Left List Item 2
         </div>
-        <div
-          className="c7"
-        >
+        <div>
           Right List Item 2
         </div>
       </div>
@@ -144,16 +117,8 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
 `;
 
 exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with left title 1`] = `
-.c7 {
-  box-sizing: border-box;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .c2 {
   box-sizing: border-box;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 .c1 {
@@ -162,20 +127,6 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -218,6 +169,7 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
   >
     <div
       className="c1"
+      justifyContent="space-between"
     >
       <div
         className="c2"
@@ -248,16 +200,13 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
       className="c5"
     >
       <div
-        className="c6"
+        className="c1"
+        justifyContent="space-between"
       >
-        <div
-          className="c7"
-        >
+        <div>
           Left List Item 1
         </div>
-        <div
-          className="c7"
-        >
+        <div>
           Right List Item 1
         </div>
       </div>
@@ -266,16 +215,13 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
       className="c5"
     >
       <div
-        className="c6"
+        className="c1"
+        justifyContent="space-between"
       >
-        <div
-          className="c7"
-        >
+        <div>
           Left List Item 2
         </div>
-        <div
-          className="c7"
-        >
+        <div>
           Right List Item 2
         </div>
       </div>
@@ -285,20 +231,12 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
 `;
 
 exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with no titles 1`] = `
-.c3 {
-  box-sizing: border-box;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -323,15 +261,12 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
   >
     <div
       className="c2"
+      justifyContent="space-between"
     >
-      <div
-        className="c3"
-      >
+      <div>
         Left List Item 1
       </div>
-      <div
-        className="c3"
-      >
+      <div>
         Right List Item 1
       </div>
     </div>
@@ -341,15 +276,12 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
   >
     <div
       className="c2"
+      justifyContent="space-between"
     >
-      <div
-        className="c3"
-      >
+      <div>
         Left List Item 2
       </div>
-      <div
-        className="c3"
-      >
+      <div>
         Right List Item 2
       </div>
     </div>
@@ -358,16 +290,8 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
 `;
 
 exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with right title 1`] = `
-.c7 {
-  box-sizing: border-box;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .c2 {
   box-sizing: border-box;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 .c1 {
@@ -376,20 +300,6 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -432,6 +342,7 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
   >
     <div
       className="c1"
+      justifyContent="space-between"
     >
       <div
         className="c2"
@@ -462,16 +373,13 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
       className="c5"
     >
       <div
-        className="c6"
+        className="c1"
+        justifyContent="space-between"
       >
-        <div
-          className="c7"
-        >
+        <div>
           Left List Item 1
         </div>
-        <div
-          className="c7"
-        >
+        <div>
           Right List Item 1
         </div>
       </div>
@@ -480,16 +388,13 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
       className="c5"
     >
       <div
-        className="c6"
+        className="c1"
+        justifyContent="space-between"
       >
-        <div
-          className="c7"
-        >
+        <div>
           Left List Item 2
         </div>
-        <div
-          className="c7"
-        >
+        <div>
           Right List Item 2
         </div>
       </div>

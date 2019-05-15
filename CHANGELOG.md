@@ -1,3 +1,43 @@
+# [1.0.0-beta.61](https://github.com/nordnet/ui/compare/v1.0.0-beta.60@beta...v1.0.0-beta.61@beta) (2019-05-14)
+
+
+### Bug Fixes
+
+* 🐛 correct gutter ([158ad4b](https://github.com/nordnet/ui/commit/158ad4b))
+* 🐛 refactoring and tests ([ba9276c](https://github.com/nordnet/ui/commit/ba9276c))
+
+
+### Features
+
+* 🎸 new flexbox ([27714af](https://github.com/nordnet/ui/commit/27714af))
+* flexbox redone ([8c1566b](https://github.com/nordnet/ui/commit/8c1566b))
+
+
+### BREAKING CHANGES
+
+* 🧨 flexbox now is a single component, with `container` and `item` as props
+
+# [1.0.0-beta.60](https://github.com/nordnet/ui/compare/v1.0.0-beta.59@beta...v1.0.0-beta.60@beta) (2019-05-14)
+
+
+### Features
+
+* 🎸 controlled behaviour for tabs and cardwithtabs ([fe8427a](https://github.com/nordnet/ui/commit/fe8427a))
+* 🎸 onclick for tabs ([b08a440](https://github.com/nordnet/ui/commit/b08a440))
+
+# [1.0.0-beta.59](https://github.com/nordnet/ui/compare/v1.0.0-beta.58@beta...v1.0.0-beta.59@beta) (2019-05-14)
+
+
+### Bug Fixes
+
+* align attachement in artboard ([bfdaa9a](https://github.com/nordnet/ui/commit/bfdaa9a))
+* remove attachement fill ([c996fb6](https://github.com/nordnet/ui/commit/c996fb6))
+
+
+### Features
+
+* add flag, trash, attachement and printer ([a06c493](https://github.com/nordnet/ui/commit/a06c493))
+
 # [1.0.0-beta.58](https://github.com/nordnet/ui/compare/v1.0.0-beta.57@beta...v1.0.0-beta.58@beta) (2019-05-13)
 
 
