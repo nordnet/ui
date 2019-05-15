@@ -117,7 +117,7 @@ const Select: SelectComponent = ({
         <SelectedValue type="secondary">
           {typeof selectedOption !== 'undefined' ? selectedOption.label : placeholder}
         </SelectedValue>
-        <Chevron focus={focus} />
+        <Chevron focus={false} />
       </SelectWrapper>
     </label>
   );
