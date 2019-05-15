@@ -67,7 +67,7 @@ const Select: SelectComponent = ({
   const [focus, setFocus] = useState(false);
   const [value, setValue] = useState();
 
-  const onChange = e => {
+  const onChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     if (typeof onChangeFromProps === 'function') {
       onChangeFromProps(e);
     }
@@ -75,7 +75,7 @@ const Select: SelectComponent = ({
     setValue(e.target.value);
   };
 
-  const onFocus = e => {
+  const onFocus = (e: React.FocusEvent<HTMLSelectElement>) => {
     if (typeof onFocusFromProps === 'function') {
       onFocusFromProps(e);
     }
@@ -83,7 +83,7 @@ const Select: SelectComponent = ({
     setFocus(true);
   };
 
-  const onBlur = e => {
+  const onBlur = (e: React.FocusEvent<HTMLSelectElement>) => {
     if (typeof onBlurFromProps === 'function') {
       onBlurFromProps(e);
     }
