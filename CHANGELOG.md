@@ -1,3 +1,10 @@
+# [1.0.0-beta.62](https://github.com/nordnet/ui/compare/v1.0.0-beta.61@beta...v1.0.0-beta.62@beta) (2019-05-15)
+
+
+### Bug Fixes
+
+* replace background color to easier see the spacing ([6ce1f49](https://github.com/nordnet/ui/commit/6ce1f49))
+
 # [1.0.0-beta.61](https://github.com/nordnet/ui/compare/v1.0.0-beta.60@beta...v1.0.0-beta.61@beta) (2019-05-14)
 
 

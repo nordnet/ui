@@ -1,40 +1,54 @@
 import React from 'react';
+import Color from 'color';
 import { storiesOf, RenderFunction } from '@storybook/react';
 import styled from 'styled-components';
 import { Box, Typography } from '../..';
 
 const Outer = styled.div`
-  background-color: ${p => p.theme.color.cta};
   display: inline-block;
+  ${p => {
+    const stripes = p.theme.color.warning;
+    const stripesDark = Color(stripes).lighten(0.5);
+
+    return `
+      background: repeating-linear-gradient(
+        -45deg,
+        ${stripes},
+        ${stripes} ${p.theme.spacing.unit(2)}px,
+        ${stripesDark} ${p.theme.spacing.unit(2)}px,
+        ${stripesDark} ${p.theme.spacing.unit(4)}px
+      );
+    `;
+  }}
 `;
 
-const Inner = styled.div`
+const StyledBox = styled(Box)`
   background-color: ${p => p.theme.color.background};
 `;
 
 const withOuter = (storyFn: RenderFunction) => <Outer>{storyFn()}</Outer>;
 const text = (
-  <Inner>
-    <Typography color={t => t.color.background}>Some stuff here</Typography>
-  </Inner>
+  <StyledBox p={2}>
+    <Typography color={t => t.color.text}>Some random content here</Typography>
+  </StyledBox>
 );
 
 storiesOf('Atoms | Box', module)
   .addDecorator(withOuter)
   .add('Margin', () => <Box m={4}>{text}</Box>)
   .add('Margin and different margin Y-axis', () => (
-    <Box m={4} my={2}>
+    <Box m={8} my={4}>
       {text}
     </Box>
   ))
   .add('Padding ', () => (
     <Outer>
-      <Box p={4}>{text}</Box>
+      <Box p={8}>{text}</Box>
     </Outer>
   ))
   .add('Padding and different X-axis and left ', () => (
     <Outer>
-      <Box p={4} px={2} pl={0}>
+      <Box p={8} px={4} pl={0}>
         {text}
       </Box>
     </Outer>
