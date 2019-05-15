@@ -1,13 +1,17 @@
 import React from 'react';
-
+import styled from 'styled-components';
 import { Tabs, CardWithTitle } from '../..';
 import { Component } from './CardWithTabs.types';
 
+const StyledTabs = styled(Tabs)`
+  padding: 0 ${({ theme }) => theme.spacing.unit(5)}px;
+`;
+
 const CardWithTabs: Component = ({ children, initialActiveTabIndex, activeTabIndex, ...rest }) => (
   <CardWithTitle {...rest}>
-    <Tabs activeTabIndex={activeTabIndex} initialActiveTabIndex={initialActiveTabIndex}>
+    <StyledTabs activeTabIndex={activeTabIndex} initialActiveTabIndex={initialActiveTabIndex}>
       {children}
-    </Tabs>
+    </StyledTabs>
   </CardWithTitle>
 );
 
