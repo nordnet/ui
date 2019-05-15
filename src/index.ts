@@ -28,6 +28,7 @@ import CardWithTitle from './Molecules/CardWithTitle';
 import Avatar from './Molecules/Avatar';
 import Button from './Molecules/Button';
 import ListWithTitles from './Molecules/ListWithTitles';
+import Select from './Molecules/Select';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
 
@@ -58,6 +59,7 @@ export {
   Media,
   Number,
   PageWrapper,
+  Select,
   Separator,
   Spinner,
   Table,
