@@ -45,10 +45,10 @@ exports[`Storyshots Molecules | Select Select with hidden label 1`] = `
 
 .c3 {
   width: 100%;
-  border-radius: 0;
-  opacity: 0;
   height: 32px;
-  padding-left: 4px;
+  opacity: 0;
+  border: 0;
+  border-radius: 0;
 }
 
 .c6 {
@@ -71,7 +71,7 @@ exports[`Storyshots Molecules | Select Select with hidden label 1`] = `
 .c2 {
   position: relative;
   border: 1px solid #BCBCB6;
-  padding-right: 20px;
+  padding-right: 28px;
 }
 
 .c2:hover {
@@ -79,17 +79,16 @@ exports[`Storyshots Molecules | Select Select with hidden label 1`] = `
 }
 
 .c4 {
+  height: 32px;
+  width: 100%;
+  line-height: 32px;
+  padding: 0 28px 0 8px;
   position: absolute;
-  height: 100%;
-  box-sizing: border-box;
   top: 0;
   left: 0;
-  padding: 6px;
-  pointer-events: none;
-  width: 100%;
   overflow: hidden;
+  pointer-events: none;
   white-space: nowrap;
-  padding-right: 20px;
   text-overflow: ellipsis;
 }
 
@@ -204,10 +203,10 @@ exports[`Storyshots Molecules | Select Select with overflowing placeholder 1`] =
 
 .c2 {
   width: 100%;
-  border-radius: 0;
-  opacity: 0;
   height: 32px;
-  padding-left: 4px;
+  opacity: 0;
+  border: 0;
+  border-radius: 0;
 }
 
 .c5 {
@@ -230,7 +229,7 @@ exports[`Storyshots Molecules | Select Select with overflowing placeholder 1`] =
 .c1 {
   position: relative;
   border: 1px solid #BCBCB6;
-  padding-right: 20px;
+  padding-right: 28px;
 }
 
 .c1:hover {
@@ -238,17 +237,16 @@ exports[`Storyshots Molecules | Select Select with overflowing placeholder 1`] =
 }
 
 .c3 {
+  height: 32px;
+  width: 100%;
+  line-height: 32px;
+  padding: 0 28px 0 8px;
   position: absolute;
-  height: 100%;
-  box-sizing: border-box;
   top: 0;
   left: 0;
-  padding: 6px;
-  pointer-events: none;
-  width: 100%;
   overflow: hidden;
+  pointer-events: none;
   white-space: nowrap;
-  padding-right: 20px;
   text-overflow: ellipsis;
 }
 
@@ -357,10 +355,10 @@ exports[`Storyshots Molecules | Select Select with placeholder 1`] = `
 
 .c2 {
   width: 100%;
-  border-radius: 0;
-  opacity: 0;
   height: 32px;
-  padding-left: 4px;
+  opacity: 0;
+  border: 0;
+  border-radius: 0;
 }
 
 .c5 {
@@ -383,7 +381,7 @@ exports[`Storyshots Molecules | Select Select with placeholder 1`] = `
 .c1 {
   position: relative;
   border: 1px solid #BCBCB6;
-  padding-right: 20px;
+  padding-right: 28px;
 }
 
 .c1:hover {
@@ -391,17 +389,16 @@ exports[`Storyshots Molecules | Select Select with placeholder 1`] = `
 }
 
 .c3 {
+  height: 32px;
+  width: 100%;
+  line-height: 32px;
+  padding: 0 28px 0 8px;
   position: absolute;
-  height: 100%;
-  box-sizing: border-box;
   top: 0;
   left: 0;
-  padding: 6px;
-  pointer-events: none;
-  width: 100%;
   overflow: hidden;
+  pointer-events: none;
   white-space: nowrap;
-  padding-right: 20px;
   text-overflow: ellipsis;
 }
 
@@ -518,10 +515,10 @@ exports[`Storyshots Molecules | Select Select with placeholder and preselected v
 
 .c2 {
   width: 100%;
-  border-radius: 0;
-  opacity: 0;
   height: 32px;
-  padding-left: 4px;
+  opacity: 0;
+  border: 0;
+  border-radius: 0;
 }
 
 .c5 {
@@ -544,7 +541,7 @@ exports[`Storyshots Molecules | Select Select with placeholder and preselected v
 .c1 {
   position: relative;
   border: 1px solid #BCBCB6;
-  padding-right: 20px;
+  padding-right: 28px;
 }
 
 .c1:hover {
@@ -552,17 +549,16 @@ exports[`Storyshots Molecules | Select Select with placeholder and preselected v
 }
 
 .c3 {
+  height: 32px;
+  width: 100%;
+  line-height: 32px;
+  padding: 0 28px 0 8px;
   position: absolute;
-  height: 100%;
-  box-sizing: border-box;
   top: 0;
   left: 0;
-  padding: 6px;
-  pointer-events: none;
-  width: 100%;
   overflow: hidden;
+  pointer-events: none;
   white-space: nowrap;
-  padding-right: 20px;
   text-overflow: ellipsis;
 }
 
@@ -689,10 +685,10 @@ exports[`Storyshots Molecules | Select Select with prepended empty value 1`] = `
 
 .c3 {
   width: 100%;
-  border-radius: 0;
-  opacity: 0;
   height: 32px;
-  padding-left: 4px;
+  opacity: 0;
+  border: 0;
+  border-radius: 0;
 }
 
 .c6 {
@@ -715,7 +711,7 @@ exports[`Storyshots Molecules | Select Select with prepended empty value 1`] = `
 .c2 {
   position: relative;
   border: 1px solid #BCBCB6;
-  padding-right: 20px;
+  padding-right: 28px;
 }
 
 .c2:hover {
@@ -723,17 +719,16 @@ exports[`Storyshots Molecules | Select Select with prepended empty value 1`] = `
 }
 
 .c4 {
+  height: 32px;
+  width: 100%;
+  line-height: 32px;
+  padding: 0 28px 0 8px;
   position: absolute;
-  height: 100%;
-  box-sizing: border-box;
   top: 0;
   left: 0;
-  padding: 6px;
-  pointer-events: none;
-  width: 100%;
   overflow: hidden;
+  pointer-events: none;
   white-space: nowrap;
-  padding-right: 20px;
   text-overflow: ellipsis;
 }
 
@@ -853,10 +848,10 @@ exports[`Storyshots Molecules | Select Select with preselected value 1`] = `
 
 .c2 {
   width: 100%;
-  border-radius: 0;
-  opacity: 0;
   height: 32px;
-  padding-left: 4px;
+  opacity: 0;
+  border: 0;
+  border-radius: 0;
 }
 
 .c5 {
@@ -879,7 +874,7 @@ exports[`Storyshots Molecules | Select Select with preselected value 1`] = `
 .c1 {
   position: relative;
   border: 1px solid #BCBCB6;
-  padding-right: 20px;
+  padding-right: 28px;
 }
 
 .c1:hover {
@@ -887,17 +882,16 @@ exports[`Storyshots Molecules | Select Select with preselected value 1`] = `
 }
 
 .c3 {
+  height: 32px;
+  width: 100%;
+  line-height: 32px;
+  padding: 0 28px 0 8px;
   position: absolute;
-  height: 100%;
-  box-sizing: border-box;
   top: 0;
   left: 0;
-  padding: 6px;
-  pointer-events: none;
-  width: 100%;
   overflow: hidden;
+  pointer-events: none;
   white-space: nowrap;
-  padding-right: 20px;
   text-overflow: ellipsis;
 }
 
@@ -1008,10 +1002,10 @@ exports[`Storyshots Molecules | Select Select without placeholder 1`] = `
 
 .c2 {
   width: 100%;
-  border-radius: 0;
-  opacity: 0;
   height: 32px;
-  padding-left: 4px;
+  opacity: 0;
+  border: 0;
+  border-radius: 0;
 }
 
 .c5 {
@@ -1034,7 +1028,7 @@ exports[`Storyshots Molecules | Select Select without placeholder 1`] = `
 .c1 {
   position: relative;
   border: 1px solid #BCBCB6;
-  padding-right: 20px;
+  padding-right: 28px;
 }
 
 .c1:hover {
@@ -1042,17 +1036,16 @@ exports[`Storyshots Molecules | Select Select without placeholder 1`] = `
 }
 
 .c3 {
+  height: 32px;
+  width: 100%;
+  line-height: 32px;
+  padding: 0 28px 0 8px;
   position: absolute;
-  height: 100%;
-  box-sizing: border-box;
   top: 0;
   left: 0;
-  padding: 6px;
-  pointer-events: none;
-  width: 100%;
   overflow: hidden;
+  pointer-events: none;
   white-space: nowrap;
-  padding-right: 20px;
   text-overflow: ellipsis;
 }
 

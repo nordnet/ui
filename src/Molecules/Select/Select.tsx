@@ -4,12 +4,15 @@ import styled from 'styled-components';
 import { VisuallyHidden, Icon, Typography } from '../..';
 import { SelectComponent } from './Select.types';
 
+const SelectHeight = 8;
+const ArrowSpace = 7;
+
 const StyledSelect = styled.select`
   width: 100%;
-  border-radius: 0;
+  height: ${p => p.theme.spacing.unit(SelectHeight)}px;
   opacity: 0;
-  height: ${p => p.theme.spacing.unit(8)}px;
-  padding-left: ${p => p.theme.spacing.unit(1)}px;
+  border: 0;
+  border-radius: 0;
 `;
 
 const Chevron = styled(Icon.ChevronDown)<{ focus: boolean }>`
@@ -26,24 +29,24 @@ const Chevron = styled(Icon.ChevronDown)<{ focus: boolean }>`
 const SelectWrapper = styled.div<{ focus: boolean }>`
   position: relative;
   border: 1px solid ${p => (p.focus ? p.theme.color.borderActive : p.theme.color.inputBorder)};
+  padding-right: ${p => p.theme.spacing.unit(ArrowSpace)}px;
+
   &:hover {
     border-color: ${p => p.theme.color.inputBorderHover};
   }
-  padding-right: 20px;
 `;
 
 const SelectedValue = styled(Typography)`
+  height: ${p => p.theme.spacing.unit(SelectHeight)}px;
+  width: 100%;
+  line-height: ${p => p.theme.spacing.unit(SelectHeight)}px;
+  padding: 0 ${p => p.theme.spacing.unit(ArrowSpace)}px 0 ${p => p.theme.spacing.unit(2)}px;
   position: absolute;
-  height: 100%;
-  box-sizing: border-box;
   top: 0;
   left: 0;
-  padding: ${p => p.theme.spacing.unit(1.5)}px;
-  pointer-events: none;
-  width: 100%;
   overflow: hidden;
+  pointer-events: none;
   white-space: nowrap;
-  padding-right: 20px;
   text-overflow: ellipsis;
 `;
 
