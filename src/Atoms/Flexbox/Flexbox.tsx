@@ -67,7 +67,7 @@ ${
 `;
 
 const getItemStyles = (p: Props & { theme: Theme }) => `
-  ${!R.isNil(p.size) ? getSizeStyles(p.size) : ''}
+  ${p.size ? getSizeStyles(p.size) : ''}
   ${!R.isNil(p.order) ? `order: ${p.order};` : ''}
   ${!R.isNil(p.grow) ? `flex-grow: ${p.grow};` : ''}
   ${!R.isNil(p.shrink) ? `flex-shrink: ${p.shrink};` : ''}
