@@ -13,6 +13,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom gutter 1`] = `
 
 .c1 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: left;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -22,6 +23,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom gutter 1`] = `
 
 .c3 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: top;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
@@ -31,6 +33,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom gutter 1`] = `
 
 .c4 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: content;
   -ms-grid-row: 3;
   -ms-grid-column: 3;
@@ -40,6 +43,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom gutter 1`] = `
 
 .c5 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: sidebar;
   -ms-grid-row: 1;
   -ms-grid-column: 5;
@@ -110,6 +114,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
 
 .c1 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: left;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -119,6 +124,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
 
 .c3 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: top;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
@@ -128,6 +134,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
 
 .c4 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: content;
   -ms-grid-row: 3;
   -ms-grid-column: 3;
@@ -137,6 +144,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
 
 .c5 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: sidebar;
   -ms-grid-row: 1;
   -ms-grid-column: 5;
@@ -207,6 +215,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
 
 .c1 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: left;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -216,6 +225,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
 
 .c3 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: top;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -225,6 +235,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
 
 .c4 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: content;
   -ms-grid-row: 5;
   -ms-grid-column: 1;
@@ -234,6 +245,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
 
 .c5 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: sidebar;
   -ms-grid-row: 3;
   -ms-grid-column: 3;
@@ -354,6 +366,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom siz
 
 .c1 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: left;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -363,6 +376,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom siz
 
 .c3 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: top;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
@@ -372,6 +386,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom siz
 
 .c4 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: content;
   -ms-grid-row: 9;
   -ms-grid-column: 3;
@@ -381,6 +396,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom siz
 
 .c5 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: messages;
   -ms-grid-row: 1;
   -ms-grid-column: 5;
@@ -390,6 +406,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom siz
 
 .c6 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: order;
   -ms-grid-row: 3;
   -ms-grid-column: 5;
@@ -399,6 +416,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom siz
 
 .c7 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: sidebar;
   -ms-grid-row: 5;
   -ms-grid-column: 5;
@@ -486,6 +504,7 @@ exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
 
 .c1 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: header;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -495,6 +514,7 @@ exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
 
 .c3 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: content;
   -ms-grid-row: 3;
   -ms-grid-column: 3;
@@ -504,6 +524,7 @@ exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
 
 .c4 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: menu;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -513,6 +534,7 @@ exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
 
 .c5 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: ads;
   -ms-grid-row: 3;
   -ms-grid-column: 5;
@@ -522,6 +544,7 @@ exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
 
 .c6 {
   box-sizing: border-box;
+  min-width: 0;
   grid-area: footer;
   -ms-grid-row: 5;
   -ms-grid-column: 1;
