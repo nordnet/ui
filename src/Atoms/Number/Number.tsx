@@ -37,7 +37,7 @@ const getNumberOptions = (value: number, ticks?: Ticks, decimals?: number) => {
 
 export const getRoundedValue = (value: number, ticks?: Ticks, decimals?: number) => {
   const dec = ticks ? getTickDecimals(value, ticks) : decimals;
-  return dec === 0 ? 0 : +Number(value).toPrecision(dec);
+  return dec === 0 ? Math.round(value) : +Number(value).toPrecision(dec);
 };
 
 const NumberComponent: NumberComponentType = ({

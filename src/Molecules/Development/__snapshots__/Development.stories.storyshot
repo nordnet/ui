@@ -1444,7 +1444,7 @@ exports[`Storyshots Molecules | Development Regression: value is non-zero, but r
     <div>
       <span
         className="c3"
-        value={0}
+        value={-0}
       >
         <span
           aria-hidden={true}
