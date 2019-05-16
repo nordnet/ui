@@ -63,6 +63,23 @@ storiesOf('Molecules | Development', module)
       items={[
         { title: '`value = 0.3`', component: <Development value={0.3} decimals={0} /> },
         { title: '`value = -0.3`', component: <Development value={-0.3} decimals={0} /> },
+        { title: '`value = -0.3`', component: <Development value={-0.3} maximumDecimals={0} /> },
+        {
+          title: '`value = 0.3`',
+          component: (
+            <Development
+              value={+0.3}
+              ticks={[
+                {
+                  fromPrice: 0,
+                  toPrice: 1000,
+                  decimals: 0,
+                  tick: 1,
+                },
+              ]}
+            />
+          ),
+        },
       ]}
     />
   ))

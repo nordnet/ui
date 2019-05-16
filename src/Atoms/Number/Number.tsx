@@ -17,7 +17,17 @@ const getTickDecimals = (value: number, ticks: Ticks) => {
   return tick ? tick.decimals : undefined;
 };
 
-const getNumberOptions = (value: number, ticks?: Ticks, decimals?: number) => {
+type Options = {
+  ticks?: Ticks;
+  decimals?: number;
+  minimumDecimals?: number;
+  maximumDecimals?: number;
+};
+
+const getNumberOptions = (
+  value: number,
+  { ticks, decimals, maximumDecimals, minimumDecimals }: Options,
+) => {
   if (typeof ticks !== 'undefined') {
     const tick = getTickDecimals(value, ticks);
     return {
@@ -31,12 +41,37 @@ const getNumberOptions = (value: number, ticks?: Ticks, decimals?: number) => {
       minimumFractionDigits: decimals,
     };
   }
+  if (typeof maximumDecimals !== 'undefined' || typeof minimumDecimals !== 'undefined') {
+    return {
+      maximumFractionDigits: maximumDecimals,
+      minimumFractionDigits: minimumDecimals,
+    };
+  }
 
   return {};
 };
 
-export const getRoundedValue = (value: number, ticks?: Ticks, decimals?: number) => {
-  const dec = ticks ? getTickDecimals(value, ticks) : decimals;
+const getDecimalsFromMinMax = (
+  value: number,
+  maximumDecimals: number = Number.MAX_VALUE,
+  minimumDecimals: number = 0,
+) => {
+  const decimals = value.toString().split('.')[1].length || 0;
+  if (decimals <= minimumDecimals) return minimumDecimals;
+  if (decimals >= maximumDecimals) return maximumDecimals;
+  return decimals;
+};
+
+export const getRoundedValue = (
+  value: number,
+  { ticks, decimals, maximumDecimals, minimumDecimals }: Options,
+) => {
+  let dec = null;
+  if (typeof decimals !== 'undefined') dec = decimals;
+  if (typeof ticks !== 'undefined') dec = getTickDecimals(value, ticks);
+  if (typeof maximumDecimals !== 'undefined' || typeof minimumDecimals !== 'undefined')
+    dec = getDecimalsFromMinMax(value, maximumDecimals, minimumDecimals);
+  if (dec === null) return value;
   return dec === 0 ? Math.round(value) : +Number(value).toPrecision(dec);
 };
 
@@ -44,6 +79,8 @@ const NumberComponent: NumberComponentType = ({
   intl,
   value,
   decimals,
+  minimumDecimals,
+  maximumDecimals,
   ticks,
   percentage = false,
   currency,
@@ -52,11 +89,19 @@ const NumberComponent: NumberComponentType = ({
   if (typeof value === 'undefined' || value === null || !Number.isFinite(value)) return <>-</>;
   if (typeof currency !== 'undefined' && currency === null) return <>-</>;
 
-  const roundedValue = getRoundedValue(value, ticks, decimals);
+  const roundedValue = getRoundedValue(value, {
+    ticks,
+    decimals,
+    minimumDecimals,
+    maximumDecimals,
+  });
   return (
     <>
       {getPrefix(sign, roundedValue)}
-      {intl.formatNumber(value, getNumberOptions(value, ticks, decimals))}
+      {intl.formatNumber(
+        value,
+        getNumberOptions(value, { ticks, decimals, minimumDecimals, maximumDecimals }),
+      )}
       {percentage && '%'}
       {currency && ` ${currency}`}
     </>

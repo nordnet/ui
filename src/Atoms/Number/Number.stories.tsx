@@ -40,6 +40,28 @@ storiesOf('Atoms | Number', module)
       />
     );
   })
+  .add('Number with min/max digits', () => {
+    return (
+      <Display
+        items={[
+          { title: 'value =', component: <Number value={10.378} maximumDecimals={2} /> },
+          { title: 'value =', component: <Number value={10.1} minimumDecimals={2} /> },
+          {
+            title: 'value =',
+            component: <Number value={10.333} minimumDecimals={2} maximumDecimals={4} />,
+          },
+          {
+            title: 'value =',
+            component: <Number value={10.1} minimumDecimals={2} maximumDecimals={4} />,
+          },
+          {
+            title: 'value =',
+            component: <Number value={10.66666} minimumDecimals={2} maximumDecimals={4} />,
+          },
+        ]}
+      />
+    );
+  })
   .add('Number ticks', () => {
     const ticks = [
       {

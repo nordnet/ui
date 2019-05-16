@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import * as R from 'ramda';
 import { DevelopmentProps, DevelopmentComponent } from './Development.types';
 import { Number as NumberComponent } from '../..';
 import { Theme } from '../../theme/theme.types';
@@ -20,11 +21,18 @@ const StyledDevelopment = styled.span<DevelopmentProps>`
 `;
 
 const Development: DevelopmentComponent = props => {
-  const { value, decimals, ticks, className, icon = false } = props;
-  const roundedValue =
-    typeof value !== 'undefined' && value !== null
-      ? getRoundedValue(value, ticks, decimals)
-      : value;
+  const {
+    value,
+    decimals,
+    maximumDecimals,
+    minimumDecimals,
+    ticks,
+    className,
+    icon = false,
+  } = props;
+  const roundedValue = !R.isNil(value)
+    ? getRoundedValue(value, { ticks, decimals, maximumDecimals, minimumDecimals })
+    : value;
   return (
     <StyledDevelopment className={className} value={roundedValue}>
       <span aria-hidden>{icon && getPrefix(roundedValue)}</span>

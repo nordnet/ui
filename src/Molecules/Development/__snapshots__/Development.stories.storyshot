@@ -1454,6 +1454,50 @@ exports[`Storyshots Molecules | Development Regression: value is non-zero, but r
       </span>
     </div>
   </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      \`value = -0.3\`
+    </div>
+    <div>
+      <span
+        className="c3"
+        value={-0}
+      >
+        <span
+          aria-hidden={true}
+        />
+        
+        -0
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      \`value = 0.3\`
+    </div>
+    <div>
+      <span
+        className="c3"
+        value={0}
+      >
+        <span
+          aria-hidden={true}
+        />
+        
+        0
+      </span>
+    </div>
+  </div>
 </div>
 `;
 

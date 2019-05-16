@@ -5,6 +5,8 @@ export type Ticks = { fromPrice: number; toPrice: number; tick?: number; decimal
 export type Props = {
   value: number | null | undefined;
   decimals?: number;
+  minimumDecimals?: number;
+  maximumDecimals?: number;
   ticks?: Ticks;
   percentage?: boolean;
   currency?: string;
