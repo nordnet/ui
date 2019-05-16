@@ -67,13 +67,13 @@ ${
 `;
 
 const getItemStyles = (p: Props & { theme: Theme }) => `
-${p.size ? getSizeStyles(p.size) : ''}
-${p.order ? `order: ${p.order};` : ''}
-${p.grow ? `flex-grow: ${p.grow};` : ''}
-${p.shrink ? `flex-shrink: ${p.shrink};` : ''}
-${p.basis ? `flex-basis: ${p.basis};` : ''}
-${p.flex ? `flex: ${p.flex};` : ''}
-${p.align ? `align-self: ${p.align};` : ''}
+  ${!R.isNil(p.size) ? getSizeStyles(p.size) : ''}
+  ${!R.isNil(p.order) ? `order: ${p.order};` : ''}
+  ${!R.isNil(p.grow) ? `flex-grow: ${p.grow};` : ''}
+  ${!R.isNil(p.shrink) ? `flex-shrink: ${p.shrink};` : ''}
+  ${p.basis ? `flex-basis: ${p.basis};` : ''}
+  ${p.flex ? `flex: ${p.flex};` : ''}
+  ${p.align ? `align-self: ${p.align};` : ''}
 `;
 
 const sanitizeProps = R.omit([
