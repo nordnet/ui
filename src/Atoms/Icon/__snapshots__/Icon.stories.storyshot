@@ -133,6 +133,34 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div
       className="c2"
     >
+      CheckMarkCircle
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="c3"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12,23.8695652 C18.627417,23.8695652 24,18.5553799 24,12 C24,5.44462014 18.627417,0.130434783 12,0.130434783 C5.372583,0.130434783 0,5.44462014 0,12 C0,18.5553799 5.372583,23.8695652 12,23.8695652 Z"
+        />
+        <polygon
+          fill="#FFF"
+          points="16.474 8.87 17.407 9.797 11 16.174 7.121 12.313 8.053 11.385 11 14.318"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       ChevronDown
     </div>
     <div>
@@ -171,6 +199,40 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
         <polygon
           points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
           transform="rotate(-180 12 12)"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      CrossCircle
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="c3"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12,23.8695652 C18.627417,23.8695652 24,18.5553799 24,12 C24,5.44462014 18.627417,0.130434783 12,0.130434783 C5.372583,0.130434783 0,5.44462014 0,12 C0,18.5553799 5.372583,23.8695652 12,23.8695652 Z"
+        />
+        <polygon
+          fill="#FFF"
+          points="11.492 6.847 11.492 17.137 12.492 17.137 12.492 6.847"
+          transform="rotate(-45 11.992 11.992)"
+        />
+        <polygon
+          fill="#FFF"
+          points="11.492 6.847 11.492 17.137 12.492 17.137 12.492 6.847"
+          transform="rotate(45 11.992 11.992)"
         />
       </svg>
     </div>

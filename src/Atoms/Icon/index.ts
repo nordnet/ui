@@ -1,7 +1,9 @@
 import { ArrowRight } from './components/ArrowRight';
 import { Attachement } from './components/Attachement';
+import { CheckMarkCircle } from './components/CheckMarkCircle';
 import { ChevronDown } from './components/ChevronDown';
 import { ChevronUp } from './components/ChevronUp';
+import { CrossCircle } from './components/CrossCircle';
 import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
 import { Flag } from './components/Flag';
@@ -13,8 +15,10 @@ import { Trash } from './components/Trash';
 export default {
   ArrowRight,
   Attachement,
+  CheckMarkCircle,
   ChevronDown,
   ChevronUp,
+  CrossCircle,
   DirectionDown,
   DirectionUp,
   Flag,
