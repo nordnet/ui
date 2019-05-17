@@ -29,7 +29,6 @@ const Chevron = styled(Icon.ChevronDown)<{ focus: boolean }>`
 const SelectWrapper = styled.div<{ focus: boolean }>`
   position: relative;
   border: 1px solid ${p => (p.focus ? p.theme.color.borderActive : p.theme.color.inputBorder)};
-  padding-right: ${p => p.theme.spacing.unit(ArrowSpace)}px;
 
   &:hover {
     border-color: ${p => p.theme.color.inputBorderHover};
