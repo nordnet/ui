@@ -51,6 +51,7 @@ export type Props = {
   className?: string;
   color?: 'inherit' | ColorFn;
   weight?: string;
+  'aria-hidden'?: boolean;
   type?: Types;
   /**
    * primary has font-weight: regular, font-size: 16px (mobile) and 16px (desktop)

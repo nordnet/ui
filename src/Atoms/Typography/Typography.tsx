@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
+import * as R from 'ramda';
 import { Theme } from '../../theme/theme.types';
 import { Props, Types } from './Typography.types';
 import { assert } from '../../common/utils';
@@ -146,8 +147,17 @@ const StyledTypography = styled.span<Props>`
 export const Typography: React.FC<Props> = props => {
   const { as, className, children, color, type, weight } = props;
 
+  const arias = R.pickBy((_, key: string) => R.test(/^aria-/, key), props);
+
   return (
-    <StyledTypography className={className} as={as} color={color} type={type} weight={weight}>
+    <StyledTypography
+      className={className}
+      as={as}
+      color={color}
+      type={type}
+      weight={weight}
+      {...arias}
+    >
       {children}
     </StyledTypography>
   );

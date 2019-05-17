@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
@@ -174,6 +175,16 @@ storiesOf('Atoms | Typography', module)
               Hero text
             </Typography>
           ),
+        },
+      ]}
+    />
+  ))
+  .add('aria attributes', () => (
+    <Display
+      items={[
+        {
+          title: 'with aria-hidden',
+          component: <Typography aria-hidden>I'm hidden</Typography>,
         },
       ]}
     />
