@@ -71,7 +71,6 @@ exports[`Storyshots Molecules | Select Select with hidden label 1`] = `
 .c2 {
   position: relative;
   border: 1px solid #BCBCB6;
-  padding-right: 28px;
 }
 
 .c2:hover {
@@ -230,7 +229,6 @@ exports[`Storyshots Molecules | Select Select with overflowing placeholder 1`] =
 .c1 {
   position: relative;
   border: 1px solid #BCBCB6;
-  padding-right: 28px;
 }
 
 .c1:hover {
@@ -383,7 +381,6 @@ exports[`Storyshots Molecules | Select Select with placeholder 1`] = `
 .c1 {
   position: relative;
   border: 1px solid #BCBCB6;
-  padding-right: 28px;
 }
 
 .c1:hover {
@@ -544,7 +541,6 @@ exports[`Storyshots Molecules | Select Select with placeholder and preselected v
 .c1 {
   position: relative;
   border: 1px solid #BCBCB6;
-  padding-right: 28px;
 }
 
 .c1:hover {
@@ -715,7 +711,6 @@ exports[`Storyshots Molecules | Select Select with prepended empty value 1`] = `
 .c2 {
   position: relative;
   border: 1px solid #BCBCB6;
-  padding-right: 28px;
 }
 
 .c2:hover {
@@ -879,7 +874,6 @@ exports[`Storyshots Molecules | Select Select with preselected value 1`] = `
 .c1 {
   position: relative;
   border: 1px solid #BCBCB6;
-  padding-right: 28px;
 }
 
 .c1:hover {
@@ -1034,7 +1028,6 @@ exports[`Storyshots Molecules | Select Select without placeholder 1`] = `
 .c1 {
   position: relative;
   border: 1px solid #BCBCB6;
-  padding-right: 28px;
 }
 
 .c1:hover {
