@@ -124,7 +124,7 @@ const Select: SelectComponent = ({
             </option>
           ))}
         </StyledSelect>
-        <SelectedValue type="secondary">
+        <SelectedValue type="secondary" aria-hidden>
           {typeof selectedOption !== 'undefined' ? selectedOption.label : placeholder}
         </SelectedValue>
         <Chevron focus={false} />
