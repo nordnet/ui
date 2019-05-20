@@ -1,5 +1,6 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
+import styled from 'styled-components';
 import * as R from 'ramda';
 import { NumberComponent as NumberComponentType, Ticks } from './Number.types';
 import { assert } from '../../common/utils';
@@ -77,6 +78,10 @@ export const getRoundedValue = (
   return dec === 0 ? Math.round(value) : +Number(value).toPrecision(dec);
 };
 
+const TypographyWithInheritedWeight = styled(Typography)`
+  font-weight: inherit;
+`;
+
 const NumberComponent: NumberComponentType = ({
   intl,
   value,
@@ -119,7 +124,10 @@ const NumberComponent: NumberComponentType = ({
         {` ${currency}`}
       </VisuallyHidden>
       <span aria-hidden>
-        {number} <Typography type={currencySize}>{currency}</Typography>
+        {number}{' '}
+        <TypographyWithInheritedWeight type={currencySize}>
+          {currency}
+        </TypographyWithInheritedWeight>
       </span>
     </>
   );
