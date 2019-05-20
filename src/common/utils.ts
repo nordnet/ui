@@ -1,3 +1,5 @@
+import * as R from 'ramda';
+
 export const assert = (
   expression: boolean,
   errorMessage: string,
@@ -18,3 +20,5 @@ export const assert = (
 };
 
 export const isUndefined = (x: any): x is undefined => typeof x === 'undefined';
+
+export const pickAriaAttributes = R.pickBy((_, key: string) => R.test(/^aria-/, key));

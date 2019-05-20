@@ -1,9 +1,8 @@
 import React from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
-import * as R from 'ramda';
 import { Theme } from '../../theme/theme.types';
 import { Props, Types } from './Typography.types';
-import { assert } from '../../common/utils';
+import { assert, pickAriaAttributes } from '../../common/utils';
 
 const WEIGHTS = {
   regular: 400,
@@ -147,8 +146,6 @@ const StyledTypography = styled.span<Props>`
 export const Typography: React.FC<Props> = props => {
   const { as, className, children, color, type, weight } = props;
 
-  const arias = R.pickBy((_, key: string) => R.test(/^aria-/, key), props);
-
   return (
     <StyledTypography
       className={className}
@@ -156,7 +153,7 @@ export const Typography: React.FC<Props> = props => {
       color={color}
       type={type}
       weight={weight}
-      {...arias}
+      {...pickAriaAttributes(props)}
     >
       {children}
     </StyledTypography>
