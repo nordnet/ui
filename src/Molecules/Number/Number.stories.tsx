@@ -1,6 +1,7 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import MD from 'react-markdown';
+import { IntlProvider } from 'react-intl';
 import { Number, Typography } from '../..';
 import docs from './Number.md';
 import { Display } from '../../common/Display';
@@ -128,6 +129,19 @@ storiesOf('Atoms | Number', module)
     <Display
       items={[{ title: 'value = 0.1', component: <Number value={0.1} sign decimals={0} /> }]}
     />
+  ))
+  .add('Regression: -0 should be 0', () => (
+    <>
+      <Display
+        items={[{ title: 'value = 0.1', component: <Number value={-0.1} sign decimals={0} /> }]}
+      />
+      <IntlProvider locale="sv-SE">
+        <Display
+          items={[{ title: 'value = 0.1', component: <Number value={-0.1} sign decimals={0} /> }]}
+        />
+      </IntlProvider>
+      ,
+    </>
   ))
   .add('Integration: with different typographies', () => {
     const items = Object.values(TYPOGRAPHY_TYPES).map(type => ({
