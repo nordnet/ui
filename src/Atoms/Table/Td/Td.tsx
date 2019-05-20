@@ -22,8 +22,8 @@ const StyledTd = styled.td<Props>`
     ` : '' }
 `;
 
-export const Td: TdComponent = ({ textAlign = 'left', ellipsis = false, children }) => (
-  <StyledTd textAlign={textAlign} ellipsis={ellipsis}>
+export const Td: TdComponent = ({ textAlign = 'left', ellipsis = false, className, children }) => (
+  <StyledTd textAlign={textAlign} ellipsis={ellipsis} className={className}>
     {children}
   </StyledTd>
 );

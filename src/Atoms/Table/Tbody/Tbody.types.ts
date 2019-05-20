@@ -1,1 +1,5 @@
-export type TbodyComponent = React.FunctionComponent;
+type Props = {
+  className?: string;
+};
+
+export type TbodyComponent = React.FunctionComponent<Props>;

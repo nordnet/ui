@@ -11,4 +11,6 @@ const StyledTbody = styled.tbody`
   }
 `;
 
-export const Tbody: TbodyComponent = ({ children }) => <StyledTbody>{children}</StyledTbody>;
+export const Tbody: TbodyComponent = ({ className, children }) => (
+  <StyledTbody className={className}>{children}</StyledTbody>
+);
