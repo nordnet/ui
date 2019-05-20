@@ -93,6 +93,13 @@ storiesOf('Atoms | Number', module)
   .add('Number with currency', () => {
     return <Number value={2.3} currency="SEK" />;
   })
+  .add('Number with currency as different size', () => {
+    return (
+      <Typography type="title2">
+        <Number value={2.3} currency="SEK" currencySize="title3" />
+      </Typography>
+    );
+  })
   .add('Number with sign', () => {
     return (
       <Display

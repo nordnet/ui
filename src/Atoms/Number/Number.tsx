@@ -3,6 +3,7 @@ import { injectIntl } from 'react-intl';
 import * as R from 'ramda';
 import { NumberComponent as NumberComponentType, Ticks } from './Number.types';
 import { assert } from '../../common/utils';
+import { Typography, VisuallyHidden } from '../..';
 
 const getPrefix = (sign: boolean, value: number) => (sign && value > 0 ? '+' : '');
 
@@ -85,6 +86,7 @@ const NumberComponent: NumberComponentType = ({
   ticks,
   percentage = false,
   currency,
+  currencySize,
   sign = false,
 }) => {
   if (typeof value === 'undefined' || value === null || !Number.isFinite(value)) return <>-</>;
@@ -100,12 +102,25 @@ const NumberComponent: NumberComponentType = ({
     value,
     getNumberOptions(value, { ticks, decimals, minimumDecimals, maximumDecimals }),
   );
-  return (
+
+  const number = (
     <>
       {getPrefix(sign, roundedValue)}
       {formattedNumber !== '-0' ? formattedNumber : '0'}
       {percentage && '%'}
-      {currency && ` ${currency}`}
+      {currency && typeof currencySize === 'undefined' && ` ${currency}`}
+    </>
+  );
+  if (typeof currencySize === 'undefined') return number;
+  return (
+    <>
+      <VisuallyHidden>
+        {number}
+        {` ${currency}`}
+      </VisuallyHidden>
+      <span aria-hidden>
+        {number} <Typography type={currencySize}>{currency}</Typography>
+      </span>
     </>
   );
 };

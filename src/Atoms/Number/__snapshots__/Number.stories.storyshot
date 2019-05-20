@@ -131,6 +131,24 @@ exports[`Storyshots Atoms | Number Integration: with different typographies 1`] 
   line-height: 1.5;
 }
 
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -165,24 +183,6 @@ exports[`Storyshots Atoms | Number Integration: with different typographies 1`] 
   font-weight: 800;
   font-size: 24px;
   line-height: 1.1666666666666667;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
 }
 
 .c10 {
@@ -259,6 +259,20 @@ exports[`Storyshots Atoms | Number Integration: with different typographies 1`] 
 }
 
 @media (min-width:360px) {
+  .c8 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:360px) {
+  .c9 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width:360px) {
   .c4 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -283,20 +297,6 @@ exports[`Storyshots Atoms | Number Integration: with different typographies 1`] 
   .c7 {
     font-size: 28px;
     line-height: 1.1428571428571428;
-  }
-}
-
-@media (min-width:360px) {
-  .c8 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:360px) {
-  .c9 {
-    font-size: 20px;
-    line-height: 1.2;
   }
 }
 
@@ -1212,6 +1212,75 @@ Array [
   "2.3",
   " SEK",
 ]
+`;
+
+exports[`Storyshots Atoms | Number Number with currency as different size 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c1 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+@media (min-width:360px) {
+  .c0 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:360px) {
+  .c2 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<span
+  className="c0"
+  type="title2"
+>
+  <div
+    className="c1"
+  >
+    
+    2.3
+     SEK
+  </div>
+  <span
+    aria-hidden={true}
+  >
+    
+    2.3
+     
+    <span
+      className="c2"
+      type="title3"
+    >
+      SEK
+    </span>
+  </span>
+</span>
 `;
 
 exports[`Storyshots Atoms | Number Number with min/max digits 1`] = `
