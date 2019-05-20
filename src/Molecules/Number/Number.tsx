@@ -108,10 +108,11 @@ const NumberComponent: NumberComponentType = ({
     getNumberOptions(value, { ticks, decimals, minimumDecimals, maximumDecimals }),
   );
 
+  const isMinusZero = (val: number) => 1 / val === -Infinity;
   const number = (
     <>
       {getPrefix(sign, roundedValue)}
-      {formattedNumber !== '-0' ? formattedNumber : '0'}
+      {isMinusZero(roundedValue) ? '0' : formattedNumber}
       {percentage && '%'}
       {currency && typeof currencySize === 'undefined' && ` ${currency}`}
     </>
