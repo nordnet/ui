@@ -31,7 +31,7 @@ const SelectWrapper = styled.div<{ focus: boolean }>`
   border: 1px solid ${p => (p.focus ? p.theme.color.borderActive : p.theme.color.inputBorder)};
 
   &:hover {
-    border-color: ${p => p.theme.color.inputBorderHover};
+    border-color: ${p => (p.focus ? p.theme.color.borderActive : p.theme.color.inputBorderHover)};
   }
 `;
 
