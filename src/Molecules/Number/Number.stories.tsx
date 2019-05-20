@@ -7,7 +7,7 @@ import docs from './Number.md';
 import { Display } from '../../common/Display';
 import { TYPOGRAPHY_TYPES } from '../../Atoms/Typography/Typography';
 
-storiesOf('Atoms | Number', module)
+storiesOf('Molecules | Number', module)
   .add('Documentation', () => (
     <Typography>
       <MD source={docs} />
