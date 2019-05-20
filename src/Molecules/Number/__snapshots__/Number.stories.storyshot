@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | Number Default 1`] = `
+exports[`Storyshots Molecules | Number Default 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -121,7 +121,7 @@ exports[`Storyshots Atoms | Number Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Number Integration: with different typographies 1`] = `
+exports[`Storyshots Molecules | Number Integration: with different typographies 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -938,9 +938,9 @@ exports[`Storyshots Atoms | Number Integration: with different typographies 1`] 
 </div>
 `;
 
-exports[`Storyshots Atoms | Number Invalid value 1`] = `"-"`;
+exports[`Storyshots Molecules | Number Invalid value 1`] = `"-"`;
 
-exports[`Storyshots Atoms | Number Number ticks 1`] = `
+exports[`Storyshots Molecules | Number Number ticks 1`] = `
 Array [
   <pre>
     ticks = [
@@ -1085,7 +1085,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Atoms | Number Number with 2 decimals  1`] = `
+exports[`Storyshots Molecules | Number Number with 2 decimals  1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1206,7 +1206,7 @@ exports[`Storyshots Atoms | Number Number with 2 decimals  1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Number Number with currency 1`] = `
+exports[`Storyshots Molecules | Number Number with currency 1`] = `
 Array [
   "",
   "2.3",
@@ -1214,7 +1214,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Atoms | Number Number with currency as different size 1`] = `
+exports[`Storyshots Molecules | Number Number with currency as different size 1`] = `
 Array [
   .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -1359,7 +1359,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Atoms | Number Number with min/max digits 1`] = `
+exports[`Storyshots Molecules | Number Number with min/max digits 1`] = `
 <div>
   
   10.38
@@ -1376,7 +1376,7 @@ exports[`Storyshots Atoms | Number Number with min/max digits 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Number Number with percentage 1`] = `
+exports[`Storyshots Molecules | Number Number with percentage 1`] = `
 Array [
   "",
   "2.3",
@@ -1384,7 +1384,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Atoms | Number Number with sign 1`] = `
+exports[`Storyshots Molecules | Number Number with sign 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1491,7 +1491,165 @@ exports[`Storyshots Atoms | Number Number with sign 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Number Regression: value is positive, but rounded value is 0 1`] = `
+exports[`Storyshots Molecules | Number Regression: -0 should be 0 1`] = `
+Array [
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+    className="c0"
+    direction="column"
+  >
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        value = 0.1
+      </div>
+      <div>
+        
+        0
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+    className="c0"
+    direction="column"
+  >
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        value = 0.1
+      </div>
+      <div>
+        
+        0
+      </div>
+    </div>
+  </div>,
+  ",",
+]
+`;
+
+exports[`Storyshots Molecules | Number Regression: value is positive, but rounded value is 0 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1570,4 +1728,4 @@ exports[`Storyshots Atoms | Number Regression: value is positive, but rounded va
 </div>
 `;
 
-exports[`Storyshots Atoms | Number null currency 1`] = `"-"`;
+exports[`Storyshots Molecules | Number null currency 1`] = `"-"`;
