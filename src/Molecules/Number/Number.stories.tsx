@@ -4,7 +4,7 @@ import MD from 'react-markdown';
 import { Number, Typography } from '../..';
 import docs from './Number.md';
 import { Display } from '../../common/Display';
-import { TYPOGRAPHY_TYPES } from '../Typography/Typography';
+import { TYPOGRAPHY_TYPES } from '../../Atoms/Typography/Typography';
 
 storiesOf('Atoms | Number', module)
   .add('Documentation', () => (
@@ -95,9 +95,15 @@ storiesOf('Atoms | Number', module)
   })
   .add('Number with currency as different size', () => {
     return (
-      <Typography type="title2">
-        <Number value={2.3} currency="SEK" currencySize="title3" />
-      </Typography>
+      <>
+        <Typography type="title2" as="div">
+          <Number value={2.3} currency="SEK" currencySize="title3" />
+        </Typography>
+        {/* Should inherit boldness */}
+        <Typography type="primary" weight="bold" as="div">
+          <Number value={2.3} currency="SEK" currencySize="secondary" />
+        </Typography>
+      </>
     );
   })
   .add('Number with sign', () => {

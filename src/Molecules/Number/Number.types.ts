@@ -1,5 +1,5 @@
 import { InjectedIntlProps } from 'react-intl';
-import { Types as TypographyTypes } from '../Typography/Typography.types';
+import { Types as TypographyTypes } from '../../Atoms/Typography/Typography.types';
 
 export type Ticks = { fromPrice: number; toPrice: number; tick?: number; decimals: number }[];
 

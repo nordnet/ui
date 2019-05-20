@@ -8,7 +8,6 @@ import Icon from './Atoms/Icon';
 import List from './Atoms/List';
 import ListItem from './Atoms/ListItem';
 import Media from './Atoms/Media';
-import Number from './Atoms/Number';
 import Separator from './Atoms/Separator';
 import Spinner from './Atoms/Spinner';
 import TabTitle from './Atoms/TabTitle';
@@ -18,6 +17,7 @@ import Box from './Atoms/Box';
 import VisuallyHidden from './Atoms/VisuallyHidden';
 
 /** Molecules */
+import Number from './Molecules/Number';
 import Development from './Molecules/Development/index';
 import PageWrapper from './Molecules/PageWrapper';
 import LabeledValue from './Molecules/LabeledValue';

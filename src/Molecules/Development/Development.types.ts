@@ -1,5 +1,5 @@
 import React from 'react';
-import { Props as NumberProps } from '../../Atoms/Number/Number.types';
+import { Props as NumberProps } from '../Number/Number.types';
 
 export type DevelopmentProps = {
   value: number | null | undefined;
