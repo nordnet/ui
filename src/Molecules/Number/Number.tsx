@@ -108,6 +108,7 @@ const NumberComponent: NumberComponentType = ({
     getNumberOptions(value, { ticks, decimals, minimumDecimals, maximumDecimals }),
   );
 
+  // This is shockingly the easiest way to check for -0, since Math.sign(-0) === -0 🤷‍
   const isMinusZero = (val: number) => 1 / val === -Infinity;
   const number = (
     <>
