@@ -28,6 +28,8 @@ const Chevron = styled(Icon.ChevronDown)<{ focus: boolean }>`
 
 const SelectWrapper = styled.div<{ focus: boolean }>`
   position: relative;
+  height: ${p => p.theme.spacing.unit(SelectHeight)}px;
+  box-sizing: border-box;
   border: 1px solid ${p => (p.focus ? p.theme.color.borderActive : p.theme.color.inputBorder)};
 
   &:hover {
