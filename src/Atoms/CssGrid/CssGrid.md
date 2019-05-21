@@ -67,7 +67,12 @@ This would resolve in the first column always being resolved to `100px` and the 
 
 ## TemplateRows
 
-TemplateRows does not have to specified in most cases but if you want to have custom rows then the use it as you're using templateColumns.
+TemplateRows does not have to specified in most cases but if you want to have custom rows then the use it as you're using templateColumns. Default value would be `1fr` times number of rows you have in your grid. However, be careful ⚠️ IE11 doesn't like default value, if you have some extra space hanging around - try 'auto' times number of rows instead.
+
+Example (for 3 rows): 
+```javascript
+templateRows={['auto', 'auto', 'auto']}
+```
 
 ## Gutter
 
