@@ -2,8 +2,7 @@ export type CollapsibleProps = {
   title: React.ReactNode;
   collapsedInitial?: boolean;
   heading?: 'h1' | 'h2' | 'h3';
-  onTouchStart?: (e: React.TouchEvent) => void;
-  onClick?: (e: React.MouseEvent) => void;
+  onClick?: (e: React.MouseEvent | React.TouchEvent) => void;
 };
 
 export type IndicatorsProps = {

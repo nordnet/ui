@@ -59,7 +59,6 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
   collapsedInitial: collapsedInitial = false,
   heading = 'h2',
   onClick = () => {},
-  onTouchStart = () => {},
 }) => {
   const [collapsed, setCollapsed] = useState(collapsedInitial);
   const [collapsing, setCollapsing] = useState(false);
@@ -140,6 +139,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
     // The browser will fire touchstart before click, if touchstart is supported,
     // this will make it feel more responsive.
     e.preventDefault();
+    onClick(e);
     if (collapsed) {
       setExpanding(true);
     } else {
@@ -147,22 +147,12 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
     }
   };
 
-  const onClickCallback = (e: React.MouseEvent) => {
-    toggle(e);
-    onClick(e);
-  };
-
-  const onTouch = (e: React.TouchEvent) => {
-    toggle(e);
-    onTouchStart(e);
-  };
-
   return (
     <Card>
       <StyledButton
         type="button"
-        onClick={onClickCallback}
-        onTouchStart={onTouch}
+        onClick={toggle}
+        onTouchStart={toggle}
         collapsed={collapsed}
         aria-expanded={!collapsed}
       >
