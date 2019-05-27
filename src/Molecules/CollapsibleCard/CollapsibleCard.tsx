@@ -58,6 +58,8 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
   children,
   collapsedInitial: collapsedInitial = false,
   heading = 'h2',
+  onClick = () => {},
+  onTouchStart = () => {},
 }) => {
   const [collapsed, setCollapsed] = useState(collapsedInitial);
   const [collapsing, setCollapsing] = useState(false);
@@ -145,12 +147,22 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
     }
   };
 
+  const onClickCallback = (e: React.MouseEvent) => {
+    toggle(e);
+    onClick(e);
+  };
+
+  const onTouch = (e: React.TouchEvent) => {
+    toggle(e);
+    onTouchStart(e);
+  };
+
   return (
     <Card>
       <StyledButton
         type="button"
-        onClick={toggle}
-        onTouchStart={toggle}
+        onClick={onClickCallback}
+        onTouchStart={onTouch}
         collapsed={collapsed}
         aria-expanded={!collapsed}
       >
