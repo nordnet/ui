@@ -3,21 +3,35 @@ import React from 'react';
 export default function FlagZa() {
   return (
     <>
-      <g transform="scale(72.84)">
-        <clipPath id="Z">
-          <path d="M0,0 4.5,3 0,6" id="X" />
-        </clipPath>
-        <clipPath id="A">
-          <path d="M0,0H9V6H0z" />
-        </clipPath>
-        <g clipPath="url(#A)">
-          <path d="M0,0V6H9V0z" fill="#002395" />
-          <path d="M0,0V3H9V0z" fill="#de3831" />
-          <g strokeWidth="2" stroke="#fff">
-            <path d="M0,0 4.5,3 0,6M4.5,3H9" id="W" />
-            <use xlinkHref="#X" stroke="#ffb612" clipPath="url(#Z)" />
+      <defs />
+      <g fill="none" fillRule="evenodd">
+        <mask id="southa-b" fill="#fff">
+          <polygon id="southa-a" points="0 0 640 0 640 480 0 480" />
+        </mask>
+        <g mask="url(#southa-b)">
+          <g fillRule="nonzero" transform="translate(-5.465 .19)">
+            <polygon fill="#000" points=".097 388.583 .097 100.187 219.489 244.385 0 388.583" />
+            <polygon
+              fill="#00C"
+              points="149.758 487.725 396.052 325.562 745.876 325.562 745.876 487.63 149.758 487.63"
+            />
+            <path
+              fill="red"
+              d="M134.024533,0.950545464 L745.875662,0.950545464 L745.875662,163.303711 L395.955089,163.303711 C395.955089,163.303711 137.229468,-0.665381826 134.024533,0.950545464 Z"
+            />
+            <polygon
+              fill="#FC0"
+              points=".097 61.785 .097 100.187 219.489 244.29 0 388.583 0 426.89 276.304 244.385 0 61.785"
+            />
+            <polygon
+              fill="#093"
+              points=".097 61.785 .097 .951 92.36 .951 384.883 194.862 745.973 194.862 745.973 293.909 384.883 293.909 92.263 487.63 .097 487.63 .097 426.89 276.304 244.385 .194 61.785"
+            />
+            <path
+              fill="#FFF"
+              d="M92.2632655,0.950545464 L149.757848,0.950545464 L396.052208,163.208657 L745.875662,163.208657 L745.875662,194.86182 L384.883497,194.86182 L92.2632655,1.04560001 L92.2632655,0.950545464 Z M92.2632655,487.724877 L149.757848,487.724877 L396.052208,325.561822 L745.875662,325.561822 L745.875662,294.003713 L384.883497,294.003713 L92.2632655,487.629824 L92.2632655,487.724877 Z"
+            />
           </g>
-          <use xlinkHref="#W" fill="none" stroke="#007a4d" strokeWidth="1.2" />
         </g>
       </g>
       <title>South Africa</title>
