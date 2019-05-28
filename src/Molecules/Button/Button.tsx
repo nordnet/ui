@@ -133,6 +133,7 @@ const StyledLink = styled(RouterLink)<LinkProps>`
 export const Button: ButtonComponent = props => {
   const typeIsNotPresent = typeof props.type === 'undefined';
   const {
+    className,
     disabled,
     onClick,
     size,
@@ -161,6 +162,7 @@ export const Button: ButtonComponent = props => {
 
     return (
       <StyledLink
+        className={className}
         to={to}
         rel={rel}
         onClick={onClick}
@@ -178,6 +180,7 @@ export const Button: ButtonComponent = props => {
 
   return (
     <StyledButton
+      className={className}
       disabled={disabled}
       onClick={onClick}
       size={size}

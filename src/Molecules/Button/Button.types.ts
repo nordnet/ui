@@ -13,6 +13,7 @@ export type SharedProps = {
   fullWidth?: boolean;
   children: React.ReactChild | React.ReactChild[];
   color?: ColorFn;
+  className?: string;
 };
 
 export type ButtonProps = {
