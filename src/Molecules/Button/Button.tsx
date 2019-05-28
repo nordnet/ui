@@ -21,7 +21,7 @@ const isSecondary = (variant: ButtonProps['variant']) => variant === 'secondary'
 const getBackgroundColor = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
   const { disabled, theme, variant, colorFn } = props;
   if (disabled) {
-    return `background-color: ${theme.color.disabled};`;
+    return `background-color: ${theme.color.disabledBackground};`;
   }
 
   if (variant === 'secondary') {
@@ -92,7 +92,7 @@ const getHeight = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => 
 };
 
 const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
-  const { theme, variant, fullWidth, colorFn } = props;
+  const { theme, variant, fullWidth, colorFn, size, disabled } = props;
   const height = getHeight(props);
 
   const color = colorFn && colorFn(theme);
@@ -110,10 +110,10 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>
     ${getBackgroundColor(props)}
     box-sizing: border-box;
     border: ${BORDER_SIZE}px solid ${getColorWithDefault('transparent')};
-    color: ${getColorWithDefault(theme.color.buttonText)};
+    color: ${disabled ? theme.color.disabledText : getColorWithDefault(theme.color.buttonText)};
     height: ${height}px;
     line-height: ${height - BORDER_SIZE * 2}px;
-    padding: 0 ${theme.spacing.unit(2)}px;
+    padding: 0 ${size === 's' ? theme.spacing.unit(2) : theme.spacing.unit(4)}px;
     ${fullWidth ? `display: block; width: 100%;` : `display: inline-block;`}
   `;
 };
