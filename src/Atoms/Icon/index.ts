@@ -4,6 +4,7 @@ import { CheckMarkCircle } from './components/CheckMarkCircle';
 import { ChevronDown } from './components/ChevronDown';
 import { ChevronUp } from './components/ChevronUp';
 import { Bolt } from './components/Bolt';
+import { Cross } from './components/Cross';
 import { CrossCircle } from './components/CrossCircle';
 import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
@@ -20,6 +21,7 @@ export default {
   ChevronDown,
   ChevronUp,
   Bolt,
+  Cross,
   CrossCircle,
   DirectionDown,
   DirectionUp,
