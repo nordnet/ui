@@ -144,7 +144,9 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
   };
 
   const hasOnTouch =
-    document && document.documentElement && 'ontouchstart' in document.documentElement;
+    typeof document !== 'undefined' &&
+    document.documentElement &&
+    'ontouchstart' in document.documentElement;
 
   return (
     <Card>
