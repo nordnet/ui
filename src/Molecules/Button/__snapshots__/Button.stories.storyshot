@@ -1731,14 +1731,15 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
   text-transform: none;
   background-color: #EBEBE8;
   box-sizing: border-box;
-  border: 2px solid transparent;
+  border: none;
   color: #A0A09B;
   height: 32px;
   line-height: 28px;
-  padding: 0 16px;
-  display: inline-block;
+  padding: 0 12px;
+  display: block;
+  width: 100%;
   border-radius: 0;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 .c0,
@@ -1775,6 +1776,7 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
   disabled={true}
   onClick={[Function]}
   type="button"
+  variant="secondary"
 >
   <span
     className="c1"
