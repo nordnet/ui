@@ -126,7 +126,7 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>
   return `
     ${getBackgroundColor(props)}
     box-sizing: border-box;
-    border: ${BORDER_SIZE}px solid ${getColorWithDefault('transparent')};
+    border: ${disabled ? 'none' : `${BORDER_SIZE}px solid ${getColorWithDefault('transparent')}`};
     color: ${disabled ? theme.color.disabledText : getColorWithDefault(theme.color.buttonText)};
     height: ${height}px;
     line-height: ${height - BORDER_SIZE * 2}px;
@@ -138,7 +138,7 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>
 const StyledButton = styled(NormalizedElements.Button)<ButtonProps>`
   ${p => getSharedStyle(p)}
   border-radius: 0;
-  cursor: pointer;
+  cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
 `;
 
 const StyledLink = styled(RouterLink)<LinkProps>`
@@ -162,13 +162,6 @@ export const Button: ButtonComponent = props => {
     rel,
     color,
   } = props;
-  const toAndDisabledAreNotPresentTogether = !(to && disabled);
-
-  assert(
-    toAndDisabledAreNotPresentTogether,
-    "Button: You're using `to` prop together with `disabled` prop. Link's can't be disabled",
-    { level: 'warn' },
-  );
 
   if (to && !disabled) {
     assert(
