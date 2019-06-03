@@ -21,7 +21,7 @@ export type ButtonProps = {
   onClick?: (e: React.MouseEvent) => void;
   /** @default button */
   type?: 'button' | 'reset' | 'submit';
-  to?: never;
+  to?: ReactRouterDomLinkProps['to'];
   rel?: never;
   colorFn?: ColorFn;
 } & SharedProps;
