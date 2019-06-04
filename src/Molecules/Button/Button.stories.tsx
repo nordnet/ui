@@ -228,7 +228,7 @@ storiesOf('Molecules | Button', module)
       </Button>
     </HashRouter>
   ))
-  .add('Disabled button', () => (
+  .add('Disabled link looking like a button', () => (
     <HashRouter>
       <Button
         fullWidth

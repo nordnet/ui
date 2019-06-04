@@ -113,8 +113,12 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>
   const height = getHeight(props);
 
   const color = colorFn && colorFn(theme);
-  const getColorWithDefault = (defaultColor: string) =>
-    isSecondary(variant) ? color || theme.color.cta : defaultColor;
+  const getColorWithDefault = (defaultColor: string) => {
+    if (disabled) {
+      return 'transparent';
+    }
+    return isSecondary(variant) ? color || theme.color.cta : defaultColor;
+  };
 
   if (color) {
     assert(
@@ -126,7 +130,7 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>
   return `
     ${getBackgroundColor(props)}
     box-sizing: border-box;
-    border: ${disabled ? 'none' : `${BORDER_SIZE}px solid ${getColorWithDefault('transparent')}`};
+    border: ${BORDER_SIZE}px solid ${getColorWithDefault('transparent')};
     color: ${disabled ? theme.color.disabledText : getColorWithDefault(theme.color.buttonText)};
     height: ${height}px;
     line-height: ${height - BORDER_SIZE * 2}px;
