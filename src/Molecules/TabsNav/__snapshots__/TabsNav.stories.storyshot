@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
+.c11 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .c1 {
   box-sizing: border-box;
 }
@@ -82,11 +87,6 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
   font-weight: 700;
   font-size: 14px;
   line-height: 1.7142857142857142;
-}
-
-.c11 {
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .c7 {

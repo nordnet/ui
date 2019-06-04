@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Atoms | Box Different padding for different screen sizes  1`] = `
+.c3 {
+  padding: 8px;
+}
+
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -8,10 +12,6 @@ exports[`Storyshots Atoms | Box Different padding for different screen sizes  1`
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-}
-
-.c3 {
-  padding: 8px;
 }
 
 .c0 {
@@ -23,16 +23,16 @@ exports[`Storyshots Atoms | Box Different padding for different screen sizes  1`
   background-color: #F5F5F5;
 }
 
+@media (min-width:768px) {
+  .c1 {
+    padding: 16px;
+  }
+}
+
 @media (min-width:360px) {
   .c4 {
     font-size: 16px;
     line-height: 1.5;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding: 16px;
   }
 }
 
@@ -61,6 +61,14 @@ exports[`Storyshots Atoms | Box Different padding for different screen sizes  1`
 `;
 
 exports[`Storyshots Atoms | Box Margin 1`] = `
+.c1 {
+  margin: 16px;
+}
+
+.c3 {
+  padding: 8px;
+}
+
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -68,14 +76,6 @@ exports[`Storyshots Atoms | Box Margin 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-}
-
-.c1 {
-  margin: 16px;
-}
-
-.c3 {
-  padding: 8px;
 }
 
 .c0 {
@@ -115,15 +115,6 @@ exports[`Storyshots Atoms | Box Margin 1`] = `
 `;
 
 exports[`Storyshots Atoms | Box Margin and different margin Y-axis 1`] = `
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c3 {
   padding: 8px;
 }
@@ -132,6 +123,15 @@ exports[`Storyshots Atoms | Box Margin and different margin Y-axis 1`] = `
   margin: 32px;
   margin-top: 16px;
   margin-bottom: 16px;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c0 {
@@ -171,6 +171,14 @@ exports[`Storyshots Atoms | Box Margin and different margin Y-axis 1`] = `
 `;
 
 exports[`Storyshots Atoms | Box Padding  1`] = `
+.c3 {
+  padding: 8px;
+}
+
+.c1 {
+  padding: 32px;
+}
+
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -178,14 +186,6 @@ exports[`Storyshots Atoms | Box Padding  1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-}
-
-.c3 {
-  padding: 8px;
-}
-
-.c1 {
-  padding: 32px;
 }
 
 .c0 {
@@ -229,15 +229,6 @@ exports[`Storyshots Atoms | Box Padding  1`] = `
 `;
 
 exports[`Storyshots Atoms | Box Padding and different X-axis and left  1`] = `
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c3 {
   padding: 8px;
 }
@@ -246,6 +237,15 @@ exports[`Storyshots Atoms | Box Padding and different X-axis and left  1`] = `
   padding: 32px;
   padding-left: 0px;
   padding-right: 16px;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c0 {
