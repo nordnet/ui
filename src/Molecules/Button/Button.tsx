@@ -166,7 +166,13 @@ export const Button: ButtonComponent = props => {
     rel,
     color,
   } = props;
+  const toAndDisabledAreNotPresentTogether = !(to && disabled);
 
+  assert(
+    toAndDisabledAreNotPresentTogether,
+    "You're using `to` prop together with `disabled` prop. `Disabled` prop won't be propagated to the dom node, because <a> element can't be disabled",
+    { level: 'warn' },
+  );
   if (to && !disabled) {
     assert(
       typeIsNotPresent,
