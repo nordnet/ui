@@ -481,7 +481,7 @@ exports[`Storyshots Atoms | Switch Disabled On 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Switch On Change 1`] = `
+exports[`Storyshots Atoms | Switch With onChange callback 1`] = `
 .c1 {
   box-sizing: border-box;
 }
