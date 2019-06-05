@@ -4,4 +4,5 @@ export type Props = {
   disabled?: boolean;
   labelText: string;
   onClick?: React.MouseEventHandler;
+  onChange?: (checked: boolean) => void;
 };

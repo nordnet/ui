@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { Typography, Flexbox } from '../..';
 import NormalizedElements from '../../common/NormalizedElements';
@@ -73,10 +73,12 @@ export const Switch: React.FC<Props> = ({
   labelText,
   disabled,
   onClick,
+  onChange,
   defaultOn = false,
 }) => {
   const [checked, setChecked] = useState(defaultOn);
-
+  const isFirstRun = useRef(true);
+  const somewhatRandomId = generateSomewhatUniqueId(labelText);
   const clickHandler = (e: React.MouseEvent) => {
     setChecked(!checked);
 
@@ -85,7 +87,18 @@ export const Switch: React.FC<Props> = ({
     }
   };
 
-  const somewhatRandomId = generateSomewhatUniqueId(labelText);
+  useEffect(() => {
+    if (!onChange) {
+      return;
+    }
+
+    if (isFirstRun.current) {
+      isFirstRun.current = false;
+      return;
+    }
+
+    onChange(checked);
+  }, [checked, onChange]);
 
   return (
     <Flexbox container gutter={2} alignItems="center">
