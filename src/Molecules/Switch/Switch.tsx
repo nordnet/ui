@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Typography, Flexbox } from '../..';
 import NormalizedElements from '../../common/NormalizedElements';
@@ -7,6 +7,10 @@ import { Props } from './Switch.types';
 const TRACK_HEIGHT = 4;
 const TRACK_WIDTH = 10;
 const KNOB_SIZE = 6;
+
+const Label = styled.label`
+  display: inline-block;
+`;
 
 const Knob = styled.span`
   background: white;
@@ -62,65 +66,44 @@ const Button = styled(NormalizedElements.Button)`
   }
 `;
 
-const generateSomewhatUniqueId = (str: string) => {
-  const safeString = str.replace(/^[^a-z]+|[^\w:.-]+/gi, '').toLowerCase();
-
-  return `switch-${safeString}`;
-};
-
 export const Switch: React.FC<Props> = ({
   className,
   labelText,
   disabled,
   onClick,
-  onChange,
   defaultOn = false,
 }) => {
   const [checked, setChecked] = useState(defaultOn);
-  const isFirstRun = useRef(true);
-  const somewhatRandomId = generateSomewhatUniqueId(labelText);
   const clickHandler = (e: React.MouseEvent) => {
-    setChecked(!checked);
+    const nextState = !checked;
+
+    setChecked(nextState);
 
     if (onClick) {
-      onClick(e);
+      onClick(e, nextState);
     }
   };
 
-  useEffect(() => {
-    if (!onChange) {
-      return;
-    }
-
-    if (isFirstRun.current) {
-      isFirstRun.current = false;
-      return;
-    }
-
-    onChange(checked);
-  }, [checked, onChange]);
-
   return (
-    <Flexbox container gutter={2} alignItems="center">
-      <Flexbox item>
-        <Typography type="secondary">
-          <span id={somewhatRandomId}>{labelText}</span>
-        </Typography>
+    <Label>
+      <Flexbox container gutter={2} alignItems="center" as="span">
+        <Flexbox item as="span">
+          <Typography type="secondary">{labelText}</Typography>
+        </Flexbox>
+        <Flexbox item as="span">
+          <Button
+            className={className}
+            type="button"
+            role="switch"
+            aria-checked={checked}
+            onClick={clickHandler}
+            disabled={disabled}
+          >
+            <Knob />
+            <Track />
+          </Button>
+        </Flexbox>
       </Flexbox>
-      <Flexbox item>
-        <Button
-          className={className}
-          type="button"
-          role="switch"
-          aria-checked={checked}
-          aria-labelledby={somewhatRandomId}
-          onClick={clickHandler}
-          disabled={disabled}
-        >
-          <Knob />
-          <Track />
-        </Button>
-      </Flexbox>
-    </Flexbox>
+    </Label>
   );
 };

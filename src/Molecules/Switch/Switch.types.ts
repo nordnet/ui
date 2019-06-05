@@ -3,6 +3,5 @@ export type Props = {
   defaultOn?: boolean;
   disabled?: boolean;
   labelText: string;
-  onClick?: React.MouseEventHandler;
-  onChange?: (checked: boolean) => void;
+  onClick?: (e: React.MouseEvent, checked: boolean) => void;
 };

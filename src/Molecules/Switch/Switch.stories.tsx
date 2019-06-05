@@ -9,11 +9,4 @@ storiesOf('Molecules | Switch', module)
   .add('Disabled On', () => (
     <Switch labelText="Notify me by email" onClick={action('clicked')} defaultOn />
   ))
-  .add('Disabled', () => <Switch labelText="Notify me by email" disabled />)
-  .add('With onChange callback', () => (
-    <Switch
-      labelText="Notify me by email"
-      onClick={action('clicked')}
-      onChange={checked => console.log('checked: ', checked)}
-    />
-  ));
+  .add('Disabled', () => <Switch labelText="Notify me by email" disabled />);
