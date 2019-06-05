@@ -11,7 +11,6 @@ import ListItem from './Atoms/ListItem';
 import Media from './Atoms/Media';
 import Separator from './Atoms/Separator';
 import Spinner from './Atoms/Spinner';
-import Switch from './Atoms/Switch';
 import TabTitle from './Atoms/TabTitle';
 import Time from './Atoms/Time';
 import Typography from './Atoms/Typography';
@@ -31,6 +30,7 @@ import Number from './Molecules/Number';
 import PageHeaderCard from './Molecules/PageHeaderCard';
 import PageWrapper from './Molecules/PageWrapper';
 import Select from './Molecules/Select';
+import Switch from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
 
