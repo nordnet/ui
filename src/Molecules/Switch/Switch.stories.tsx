@@ -2,25 +2,24 @@ import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import { Switch } from '../..';
+import { Switch, Typography } from '../..';
 
 storiesOf('Molecules | Switch', module)
-  .add('Default Off', () => <Switch labelText="Notify me by email" onClick={action('clicked')} />)
+  .add('Default Off', () => <Switch label="Notify me by email" onClick={action('clicked')} />)
   .add('Default On', () => (
-    <Switch labelText="Notify me by email" onClick={action('clicked')} checkedInitially />
+    <Switch label="Notify me by email" onClick={action('clicked')} checkedInitially />
   ))
-  .add('Disabled', () => <Switch labelText="Notify me by email" disabled />)
+  .add('Disabled', () => <Switch label="Notify me by email" disabled />)
   .add('Controlled behaviour', () => {
     const ControlledExample = () => {
       const [checked, setChecked] = useState(true);
 
       return (
-        <Switch
-          labelText="Notify me by email"
-          onClick={() => setChecked(!checked)}
-          checked={checked}
-        />
+        <Switch label="Notify me by email" onClick={() => setChecked(!checked)} checked={checked} />
       );
     };
     return <ControlledExample />;
-  });
+  })
+  .add('With Label prop as ReactNode', () => (
+    <Switch label={<Typography>Notify me by email</Typography>} onClick={action('clicked')} />
+  ));

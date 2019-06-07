@@ -652,3 +652,165 @@ exports[`Storyshots Molecules | Switch Disabled 1`] = `
   </span>
 </label>
 `;
+
+exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 > *:not(:first-child) {
+  margin-top: 0;
+  margin-left: 8px;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c0 {
+  display: inline-block;
+}
+
+.c6 {
+  background: white;
+  display: block;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border: 1px solid #BCBCB6;
+  margin-top: -12px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
+  -webkit-transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
+  transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
+}
+
+.c8 {
+  display: block;
+  height: 16px;
+  width: 40px;
+  margin: 4px 0;
+  background-color: #BCBCB6;
+  border-radius: 8px;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.c4 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  position: relative;
+  background: none;
+  padding: 0;
+  border: 0;
+}
+
+.c4,
+.c4[type='button'],
+.c4[type='reset'],
+.c4[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c4::-moz-focus-inner,
+.c4[type='button']::-moz-focus-inner,
+.c4[type='reset']::-moz-focus-inner,
+.c4[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c4:-moz-focusring,
+.c4[type='button']:-moz-focusring,
+.c4[type='reset']:-moz-focusring,
+.c4[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c4[aria-checked='true'] .c7 {
+  background-color: #0046FF;
+}
+
+.c4[aria-checked='true'] .c5 {
+  -webkit-transform: translate(16px);
+  -ms-transform: translate(16px);
+  transform: translate(16px);
+}
+
+.c4[disabled] .c7 {
+  background-color: #EBEBE8;
+}
+
+.c4[disabled] .c5 {
+  border: 1px solid #EBEBE8;
+}
+
+@media (min-width:360px) {
+  .c3 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+<label
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Notify me by email
+      </span>
+    </span>
+    <span
+      className="c2"
+    >
+      <button
+        aria-checked={false}
+        className="c4"
+        onClick={[Function]}
+        role="switch"
+        type="button"
+      >
+        <span
+          className="c5 c6"
+        />
+        <span
+          className="c7 c8"
+        />
+      </button>
+    </span>
+  </span>
+</label>
+`;

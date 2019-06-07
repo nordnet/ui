@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Typography, Flexbox } from '../..';
+import { isElement } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 import { Props } from './Switch.types';
 
@@ -68,7 +69,7 @@ const Button = styled(NormalizedElements.Button)`
 
 export const Switch: React.FC<Props> = ({
   className,
-  labelText,
+  label,
   disabled,
   onClick,
   checkedInitially = false,
@@ -90,7 +91,7 @@ export const Switch: React.FC<Props> = ({
     <Label>
       <Flexbox container gutter={2} alignItems="center" as="span">
         <Flexbox item as="span">
-          <Typography type="secondary">{labelText}</Typography>
+          {isElement(label) ? label : <Typography type="secondary">{label}</Typography>}
         </Flexbox>
         <Flexbox item as="span">
           <Button
