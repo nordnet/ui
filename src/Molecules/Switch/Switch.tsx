@@ -71,9 +71,11 @@ export const Switch: React.FC<Props> = ({
   labelText,
   disabled,
   onClick,
-  defaultOn = false,
+  checkedInitially = false,
+  checked: checkedControlled,
 }) => {
-  const [checked, setChecked] = useState(defaultOn);
+  const isControlled = typeof checkedControlled !== 'undefined';
+  const [checked, setChecked] = useState(checkedInitially);
   const clickHandler = (e: React.MouseEvent) => {
     const nextState = !checked;
 
@@ -95,8 +97,8 @@ export const Switch: React.FC<Props> = ({
             className={className}
             type="button"
             role="switch"
-            aria-checked={checked}
-            onClick={clickHandler}
+            aria-checked={isControlled ? checkedControlled : checked}
+            onClick={isControlled ? onClick : clickHandler}
             disabled={disabled}
           >
             <Knob />
