@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Typography, Flexbox } from '../..';
+import { Typography, Flexbox, VisuallyHidden } from '../..';
 import { isElement } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 import { Props } from './Switch.types';
@@ -70,12 +70,14 @@ const Button = styled(NormalizedElements.Button)`
 export const Switch: React.FC<Props> = ({
   className,
   label,
+  hiddenLabel,
   disabled,
   onClick,
   checkedInitially = false,
   checked: checkedControlled,
 }) => {
   const isControlled = typeof checkedControlled !== 'undefined';
+  const titleNode = isElement ? label : <Typography type="secondary">{label}</Typography>;
   const [checked, setChecked] = useState(checkedInitially);
   const clickHandler = (e: React.MouseEvent) => {
     const nextState = !checked;
@@ -91,7 +93,7 @@ export const Switch: React.FC<Props> = ({
     <Label>
       <Flexbox container gutter={2} alignItems="center" as="span">
         <Flexbox item as="span">
-          {isElement(label) ? label : <Typography type="secondary">{label}</Typography>}
+          {hiddenLabel ? <VisuallyHidden>{titleNode}</VisuallyHidden> : titleNode}
         </Flexbox>
         <Flexbox item as="span">
           <Button

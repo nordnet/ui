@@ -8,5 +8,6 @@ export type Props = {
   checked?: boolean;
   disabled?: boolean;
   label: string | React.ReactNode;
+  hiddenLabel?: boolean;
   onClick?: (e: React.MouseEvent, checked: boolean) => void;
 };

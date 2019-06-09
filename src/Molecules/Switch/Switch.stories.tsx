@@ -22,4 +22,7 @@ storiesOf('Molecules | Switch', module)
   })
   .add('With Label prop as ReactNode', () => (
     <Switch label={<Typography>Notify me by email</Typography>} onClick={action('clicked')} />
+  ))
+  .add('With hidden label', () => (
+    <Switch label="Notify me by email" onClick={action('clicked')} hiddenLabel />
   ));
