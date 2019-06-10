@@ -4,7 +4,7 @@ import Color from 'color';
 import { Link as RouterLink } from 'react-router-dom';
 import { ButtonComponent, ButtonProps, LinkProps } from './Button.types';
 import { Theme } from '../../theme/theme.types';
-import { isUndefined, assert } from '../../common/utils';
+import { assert } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 import { Typography } from '../..';
 
@@ -13,7 +13,16 @@ const HEIGHT = {
   m: 8,
   l: 10,
 };
-
+const PADDING_VERTICAL = {
+  s: 0,
+  m: 1,
+  l: 2,
+};
+const PADDING_HORIZONTAL = {
+  s: 2,
+  m: 3,
+  l: 4,
+};
 const BORDER_SIZE = 2;
 
 const isSecondary = (variant: ButtonProps['variant']) => variant === 'secondary';
@@ -84,33 +93,24 @@ const getBackgroundColor = (props: ThemedStyledProps<ButtonProps | LinkProps, Th
     `;
 };
 
-const getHeight = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
-  const { theme, size } = props;
-  const hugeness = isUndefined(size) ? HEIGHT.m : HEIGHT[size];
+const getMinHeight = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
+  const { theme, size = 'm' } = props;
 
-  return theme.spacing.unit(hugeness);
+  return `min-height: ${theme.spacing.unit(HEIGHT[size])}px`;
 };
 
 const getPadding = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
-  let horizontalPadding: number;
-  switch (props.size) {
-    case 's':
-      horizontalPadding = 2;
-      break;
-    case 'm':
-      horizontalPadding = 3;
-      break;
-    default:
-      horizontalPadding = 4;
-      break;
-  }
+  const { size = 'm' } = props;
+
   return `
-    padding: 0 ${props.theme.spacing.unit(horizontalPadding)}px;
+    padding:
+      ${props.theme.spacing.unit(PADDING_VERTICAL[size])}px
+      ${props.theme.spacing.unit(PADDING_HORIZONTAL[size])}px;
   `;
 };
+
 const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
   const { theme, variant, fullWidth, colorFn, disabled } = props;
-  const height = getHeight(props);
 
   const color = colorFn && colorFn(theme);
   const getColorWithDefault = (defaultColor: string) => {
@@ -129,18 +129,31 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>
 
   return `
     ${getBackgroundColor(props)}
-    box-sizing: border-box;
-    border: ${BORDER_SIZE}px solid ${getColorWithDefault('transparent')};
-    color: ${disabled ? theme.color.disabledText : getColorWithDefault(theme.color.buttonText)};
-    height: ${height}px;
-    line-height: ${height - BORDER_SIZE * 2}px;
     ${getPadding(props)}
-    ${fullWidth ? `display: block; width: 100%;` : `display: inline-block;`}
+    ${getMinHeight(props)}
+    position: relative;
+    box-sizing: border-box;
+    color: ${disabled ? theme.color.disabledText : getColorWithDefault(theme.color.buttonText)};
+    align-items: center;
+    justify-content: center;
+    ${fullWidth ? `display: flex; width: 100%;` : `display: inline-flex;`}
+
+    &::before {
+      content: '';
+      display: block;
+      border: ${BORDER_SIZE}px solid ${getColorWithDefault('transparent')};
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100% - ${BORDER_SIZE * 2}px);
+      height: calc(100% - ${BORDER_SIZE * 2}px);
+    }
   `;
 };
 
 const StyledButton = styled(NormalizedElements.Button)<ButtonProps>`
   ${p => getSharedStyle(p)}
+  border: none;
   border-radius: 0;
   cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
 `;
@@ -148,7 +161,6 @@ const StyledButton = styled(NormalizedElements.Button)<ButtonProps>`
 const StyledLink = styled(RouterLink)<LinkProps>`
   ${p => getSharedStyle(p)}
   text-decoration: none;
-  text-align: center;
 `;
 
 export const Button: ButtonComponent = props => {
@@ -191,11 +203,7 @@ export const Button: ButtonComponent = props => {
         fullWidth={fullWidth}
         colorFn={color}
       >
-        <Typography
-          type={size === 'l' ? 'primary' : 'secondary'}
-          color="inherit"
-          lineHeight="inherit"
-        >
+        <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
           {children}
         </Typography>
       </StyledLink>
@@ -213,11 +221,7 @@ export const Button: ButtonComponent = props => {
       fullWidth={fullWidth}
       colorFn={color}
     >
-      <Typography
-        type={size === 'l' ? 'primary' : 'secondary'}
-        color="inherit"
-        lineHeight="inherit"
-      >
+      <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
         {children}
       </Typography>
     </StyledButton>
