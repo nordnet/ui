@@ -77,7 +77,7 @@ export const Switch: React.FC<Props> = ({
   checked: checkedControlled,
 }) => {
   const isControlled = typeof checkedControlled !== 'undefined';
-  const titleNode = isElement ? label : <Typography type="secondary">{label}</Typography>;
+  const titleNode = isElement(label) ? label : <Typography type="secondary">{label}</Typography>;
   const [checked, setChecked] = useState(checkedInitially);
   const clickHandler = (e: React.MouseEvent) => {
     const nextState = !checked;
