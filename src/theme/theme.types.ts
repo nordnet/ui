@@ -97,6 +97,10 @@ export type Theme = {
     spinnerBlack: RawColor['black'];
     /** white */
     spinnerWhite: RawColor['white'];
+    /** gray0 */
+    svgFill: RawColor['gray0'];
+    /** gray2 */
+    svgStroke: RawColor['gray2'];
     /** gray4 */
     inputBorder: RawColor['gray4'];
     /** gray1 */

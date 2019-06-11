@@ -10,16 +10,16 @@ const StyledPath = styled.path<StyledChildProps>`
   }}
 `;
 
-export const Star = ({ stroke, ...props }: ChildProps) => {
+export const Star16 = ({ stroke, ...props }: ChildProps) => {
   return (
     <IconBase {...props}>
       <StyledPath
         strokeColorFn={stroke}
-        strokeWidth="2"
-        d="M12,3.28909585 L9.7518819,10.3333333 L2.94990324,10.3333333 L8.34965326,14.4696321 L6.10344598,21.3821992 L12,17.0986537 L17.896554,21.3821992 L15.6503467,14.4696321 L21.0500967,10.3333333 L14.2481181,10.3333333 L12,3.28909585 Z"
+        strokeWidth="1"
+        d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       />
     </IconBase>
   );
 };
 
-Star.displayName = 'Icon.Star';
+Star16.displayName = 'Icon.Star16';

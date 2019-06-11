@@ -12,6 +12,7 @@ import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
 import { Printer } from './components/Printer';
 import { Star } from './components/Star';
+import { Star16 } from './components/Star16';
 import { Trash } from './components/Trash';
 
 export default {
@@ -29,5 +30,6 @@ export default {
   Globe,
   Printer,
   Star,
+  Star16,
   Trash,
 };
