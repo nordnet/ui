@@ -19,9 +19,13 @@ storiesOf('Atoms | Icon', module)
           component: <Icon.Star size={10} stroke={t => t.color.positive} />,
         },
         {
-          title: 'Star16 with both stroke and fill modified',
+          title: 'Star24 with both stroke modified',
+          component: <Icon.Star24 size={10} stroke={t => t.color.positive} />,
+        },
+        {
+          title: 'Star24 with both stroke and fill modified',
           component: (
-            <Icon.Star16 size={10} fill={t => t.color.positive} stroke={t => t.color.positive} />
+            <Icon.Star24 size={10} fill={t => t.color.positive} stroke={t => t.color.positive} />
           ),
         },
       ]}
