@@ -17,9 +17,7 @@ storiesOf('Molecules | LinkBuy', module)
     return (
       <BrowserRouter>
         <Typography type="primary">
-          <LinkBuy to="somewhere" disabled>
-            Buy
-          </LinkBuy>
+          <LinkBuy disabled>Buy</LinkBuy>
         </Typography>
       </BrowserRouter>
     );
