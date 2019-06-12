@@ -93,6 +93,8 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       sell: a11yColors ? rawColor.a11yNegative : rawColor.negative,
       spinnerBlack: rawColor.black,
       spinnerWhite: rawColor.white,
+      svgFill: rawColor.gray0,
+      svgStroke: rawColor.gray2,
       text: rawColor.gray0,
       textLight: rawColor.white, // FIXME: to be removed later
       warning: a11yColors ? rawColor.a11yIndex : rawColor.index,

@@ -1,3 +1,17 @@
+# [1.12.0](https://github.com/nordnet/ui/compare/v1.11.2...v1.12.0) (2019-06-12)
+
+
+### Bug Fixes
+
+* make change not be a breaking change ([775cf1c](https://github.com/nordnet/ui/commit/775cf1c))
+* update snap ([9e0886f](https://github.com/nordnet/ui/commit/9e0886f))
+* update snaps ([0637efa](https://github.com/nordnet/ui/commit/0637efa))
+
+
+### Features
+
+* add new stars and add support for stroke ([f2b1f16](https://github.com/nordnet/ui/commit/f2b1f16))
+
 ## [1.11.2](https://github.com/nordnet/ui/compare/v1.11.1...v1.11.2) (2019-06-11)
 
 

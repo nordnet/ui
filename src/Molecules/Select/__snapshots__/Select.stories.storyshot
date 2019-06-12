@@ -8,11 +8,10 @@ exports[`Storyshots Molecules | Select Select with hidden label 1`] = `
   user-select: none;
   width: 20px;
   height: 20px;
-  fill: currentColor;
+  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  color: #282823;
   display: block;
 }
 
@@ -178,11 +177,10 @@ exports[`Storyshots Molecules | Select Select with overflowing placeholder 1`] =
   user-select: none;
   width: 20px;
   height: 20px;
-  fill: currentColor;
+  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  color: #282823;
   display: block;
 }
 
@@ -333,11 +331,10 @@ exports[`Storyshots Molecules | Select Select with placeholder 1`] = `
   user-select: none;
   width: 20px;
   height: 20px;
-  fill: currentColor;
+  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  color: #282823;
   display: block;
 }
 
@@ -496,11 +493,10 @@ exports[`Storyshots Molecules | Select Select with placeholder and preselected v
   user-select: none;
   width: 20px;
   height: 20px;
-  fill: currentColor;
+  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  color: #282823;
   display: block;
 }
 
@@ -660,11 +656,10 @@ exports[`Storyshots Molecules | Select Select with prepended empty value 1`] = `
   user-select: none;
   width: 20px;
   height: 20px;
-  fill: currentColor;
+  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  color: #282823;
   display: block;
 }
 
@@ -835,11 +830,10 @@ exports[`Storyshots Molecules | Select Select with preselected value 1`] = `
   user-select: none;
   width: 20px;
   height: 20px;
-  fill: currentColor;
+  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  color: #282823;
   display: block;
 }
 
@@ -992,11 +986,10 @@ exports[`Storyshots Molecules | Select Select without placeholder 1`] = `
   user-select: none;
   width: 20px;
   height: 20px;
-  fill: currentColor;
+  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  color: #282823;
   display: block;
 }
 

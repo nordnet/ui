@@ -10,8 +10,26 @@ storiesOf('Atoms | Icon', module)
       You can put the <Icon.ArrowRight inline /> directly in the text with inline prop!
     </span>
   ))
-  .add('Different size and color', () => (
-    <Icon.ArrowRight size={10} color={t => t.color.positive} />
+  .add('Different size and fill', () => <Icon.ArrowRight size={10} fill={t => t.color.positive} />)
+  .add('With modified stroke', () => (
+    <Display
+      items={[
+        {
+          title: 'Star with stroke modified',
+          component: <Icon.Star size={10} stroke={t => t.color.positive} />,
+        },
+        {
+          title: 'Star24 with both stroke modified',
+          component: <Icon.Star24 size={10} stroke={t => t.color.positive} />,
+        },
+        {
+          title: 'Star24 with both stroke and fill modified',
+          component: (
+            <Icon.Star24 size={10} fill={t => t.color.positive} stroke={t => t.color.positive} />
+          ),
+        },
+      ]}
+    />
   ))
   .add('Available icons', () => (
     <Display
