@@ -39,7 +39,7 @@ storiesOf('Atoms | Flexbox', module)
       </Flexbox>
     </Flexbox>
   ))
-  .add('Flexbox with custom gutter', () => (
+  .add('With custom gutter', () => (
     <Flexbox container gutter={5}>
       <Flexbox item size={6}>
         <Content>Col 1</Content>
@@ -49,7 +49,7 @@ storiesOf('Atoms | Flexbox', module)
       </Flexbox>
     </Flexbox>
   ))
-  .add('Flexbox with direction: column', () => (
+  .add('With direction: column', () => (
     <Flexbox container direction="column">
       <Flexbox item order={2}>
         <Content>Col 1</Content>
@@ -62,7 +62,7 @@ storiesOf('Atoms | Flexbox', module)
       </Flexbox>
     </Flexbox>
   ))
-  .add('Flexbox with conditionally hidden flex item', () => {
+  .add('With conditionally hidden flex item', () => {
     const showFirstItem = false;
     return (
       <Flexbox container>
@@ -77,7 +77,7 @@ storiesOf('Atoms | Flexbox', module)
       </Flexbox>
     );
   })
-  .add('Flexbox with conditionally visible flex item', () => {
+  .add('With conditionally visible flex item', () => {
     const showFirstItem = true;
     return (
       <Flexbox container>
@@ -92,7 +92,7 @@ storiesOf('Atoms | Flexbox', module)
       </Flexbox>
     );
   })
-  .add('Flexbox container item', () => {
+  .add('With container and item props', () => {
     return (
       <Flexbox container gutter={5}>
         <Flexbox container item direction="column" gutter={5}>
@@ -117,9 +117,16 @@ storiesOf('Atoms | Flexbox', module)
       </Flexbox>
     );
   })
-  .add('Flexbox depending on screen size', () => {
+  .add('With media query props', () => {
     return (
-      <Flexbox container gutter={4} direction="column" md={{ gutter: 10, direction: 'row' }}>
+      <Flexbox
+        container
+        gutter={4}
+        direction="column"
+        sm={{ gutter: 6 }}
+        md={{ gutter: 10, direction: 'row' }}
+        lg={{ gutter: 12 }}
+      >
         <Flexbox item>
           <Content>First element here</Content>
         </Flexbox>
@@ -139,4 +146,17 @@ storiesOf('Atoms | Flexbox', module)
         </Flexbox>
       </Flexbox>
     );
-  });
+  })
+  .add('With height modified', () => (
+    <Flexbox container height={10}>
+      <Flexbox item>
+        <Content>Col 1</Content>
+      </Flexbox>
+      <Flexbox item>
+        <Content>Col 2</Content>
+      </Flexbox>
+      <Flexbox item>
+        <Content>Col 3</Content>
+      </Flexbox>
+    </Flexbox>
+  ));
