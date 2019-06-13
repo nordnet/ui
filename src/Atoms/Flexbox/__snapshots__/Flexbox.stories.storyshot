@@ -526,7 +526,7 @@ exports[`Storyshots Atoms | Flexbox With media query props 1`] = `
 
   .c0 > *:not(:first-child) {
     margin-top: 0;
-    margin-left: 40px;
+    margin-left: 24px;
   }
 }
 
@@ -536,14 +536,14 @@ exports[`Storyshots Atoms | Flexbox With media query props 1`] = `
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 
   .c0 > *:not(:first-child) {
-    margin-left: 0;
-    margin-top: 48px;
+    margin-top: 0;
+    margin-left: 40px;
   }
 }
 
@@ -551,13 +551,14 @@ exports[`Storyshots Atoms | Flexbox With media query props 1`] = `
   className="c0"
   lg={
     Object {
-      "gutter": 12,
+      "direction": "row",
+      "gutter": 10,
     }
   }
   md={
     Object {
       "direction": "row",
-      "gutter": 10,
+      "gutter": 6,
     }
   }
   sm={

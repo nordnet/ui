@@ -124,8 +124,8 @@ storiesOf('Atoms | Flexbox', module)
         gutter={4}
         direction="column"
         sm={{ gutter: 6 }}
-        md={{ gutter: 10, direction: 'row' }}
-        lg={{ gutter: 12 }}
+        md={{ gutter: 6, direction: 'row' }}
+        lg={{ gutter: 10, direction: 'row' }}
       >
         <Flexbox item>
           <Content>First element here</Content>
