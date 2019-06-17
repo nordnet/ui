@@ -24,7 +24,7 @@ exports[`Storyshots Molecules | LabeledValue Default 1`] = `
   margin-bottom: 4px;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c2 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -82,14 +82,14 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue secondary
   margin-bottom: 4px;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c3 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c2 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -154,14 +154,14 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue title1 1`
   margin-bottom: 4px;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c3 {
     font-size: 28px;
     line-height: 1.1428571428571428;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c2 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -258,21 +258,21 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
   color: #FF1900;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c5 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c7 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c2 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -391,14 +391,14 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
   color: #00D200;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c5 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c2 {
     font-size: 14px;
     line-height: 1.7142857142857142;

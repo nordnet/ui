@@ -33,7 +33,7 @@ exports[`Storyshots Molecules | LinkSell LinkSell 1`] = `
   background-color: #FF1900;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 16px;
     line-height: 1.5;
@@ -74,7 +74,7 @@ exports[`Storyshots Molecules | LinkSell LinkSell disabled 1`] = `
   text-decoration: none;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 16px;
     line-height: 1.5;
@@ -128,7 +128,7 @@ exports[`Storyshots Molecules | LinkSell LinkSell with rel as nofollow 1`] = `
   background-color: #FF1900;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 16px;
     line-height: 1.5;

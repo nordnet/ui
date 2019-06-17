@@ -118,7 +118,7 @@ exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
   border: 1px solid #EBEBE8;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c3 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -281,7 +281,7 @@ exports[`Storyshots Molecules | Switch Default Off 1`] = `
   border: 1px solid #EBEBE8;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c3 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -444,7 +444,7 @@ exports[`Storyshots Molecules | Switch Default On 1`] = `
   border: 1px solid #EBEBE8;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c3 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -607,7 +607,7 @@ exports[`Storyshots Molecules | Switch Disabled 1`] = `
   border: 1px solid #EBEBE8;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c3 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -771,7 +771,7 @@ exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
   border: 1px solid #EBEBE8;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c3 {
     font-size: 16px;
     line-height: 1.5;
@@ -942,7 +942,7 @@ exports[`Storyshots Molecules | Switch With hidden label 1`] = `
   border: 1px solid #EBEBE8;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c4 {
     font-size: 14px;
     line-height: 1.7142857142857142;

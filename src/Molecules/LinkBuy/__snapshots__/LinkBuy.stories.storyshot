@@ -33,7 +33,7 @@ exports[`Storyshots Molecules | LinkBuy LinkBuy 1`] = `
   background-color: #0046FF;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 16px;
     line-height: 1.5;
@@ -74,7 +74,7 @@ exports[`Storyshots Molecules | LinkBuy LinkBuy disabled 1`] = `
   text-decoration: none;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 16px;
     line-height: 1.5;
@@ -128,7 +128,7 @@ exports[`Storyshots Molecules | LinkBuy LinkBuy with rel as nofollow 1`] = `
   background-color: #0046FF;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 16px;
     line-height: 1.5;

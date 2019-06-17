@@ -21,7 +21,7 @@ exports[`Storyshots Molecules | Link Default usage 1`] = `
   text-decoration: underline;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -64,7 +64,7 @@ exports[`Storyshots Molecules | Link Link with _blank target 1`] = `
   text-decoration: underline;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -108,7 +108,7 @@ exports[`Storyshots Molecules | Link Link with rel as nofollow 1`] = `
   text-decoration: underline;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 14px;
     line-height: 1.7142857142857142;

@@ -114,14 +114,14 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
   margin-bottom: -1px;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c5 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -336,14 +336,14 @@ exports[`Storyshots Molecules | Tabs Default 1`] = `
   margin-bottom: -1px;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c5 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -570,14 +570,14 @@ exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
   padding: 0 20px;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c6 {
     font-size: 14px;
     line-height: 1.7142857142857142;
