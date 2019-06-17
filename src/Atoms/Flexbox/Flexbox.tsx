@@ -96,7 +96,7 @@ const sanitizeProps = R.omit([
 const SanitizedDiv = (props: Props) => <div {...sanitizeProps(props)} />;
 
 const getStylesForSize = (size: string) => css<Partial<Props>>`
-  ${p => p.theme.media.greaterThan(p.theme.size[size])} {
+  ${p => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
     ${p => (p.container ? getContainerStyles({ ...p, ...p[size] }) : '')}
     ${p => (p.item ? getItemStyles({ ...p, ...p[size] }) : '')}
   }

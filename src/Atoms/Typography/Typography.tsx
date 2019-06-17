@@ -10,7 +10,7 @@ const WEIGHTS = {
   extrabold: 800,
 };
 
-const SMALL_DEVICE_BP = 'xs';
+const SMALL_DEVICE_BP = 'sm';
 
 const getColor = (props: ThemedStyledProps<Props, Theme>) => {
   const { color, theme } = props;
@@ -128,7 +128,7 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
     font-size: ${sizeMobile}px;
     line-height: ${lineHeight ? 'inherit' : lineHeightMobile / sizeMobile};
 
-    ${theme.media.greaterThan(theme.size[SMALL_DEVICE_BP])} {
+    ${theme.media.greaterThan(theme.breakpoints[SMALL_DEVICE_BP])} {
       font-size: ${sizeDesktop}px;
       line-height: ${lineHeight ? 'inherit' : lineHeightDesktop / sizeDesktop};
     }
