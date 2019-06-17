@@ -117,7 +117,7 @@ storiesOf('Atoms | Flexbox', module)
       </Flexbox>
     );
   })
-  .add('With media query props', () => {
+  .add('With breakpoint props', () => {
     return (
       <Flexbox
         container
