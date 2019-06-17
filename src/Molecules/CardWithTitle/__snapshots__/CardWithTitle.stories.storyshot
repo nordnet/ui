@@ -151,14 +151,14 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
   padding-left: 4px;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c6 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c4 {
     font-size: 20px;
     line-height: 1.2;

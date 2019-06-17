@@ -19,7 +19,7 @@ exports[`Storyshots Molecules | Avatar Basic usage 1`] = `
   text-align: center;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c1 {
     font-size: 12px;
     line-height: 1.6666666666666667;
@@ -58,7 +58,7 @@ exports[`Storyshots Molecules | Avatar Best practice, with element as children 1
   text-align: center;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c1 {
     font-size: 12px;
     line-height: 1.6666666666666667;

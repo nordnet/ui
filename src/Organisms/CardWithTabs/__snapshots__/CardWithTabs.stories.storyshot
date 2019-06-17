@@ -143,21 +143,21 @@ Array [
   padding: 0 20px;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c11 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c8 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c2 {
     font-size: 20px;
     line-height: 1.2;
@@ -409,21 +409,21 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   color: red;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c11 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c8 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c2 {
     font-size: 20px;
     line-height: 1.2;
@@ -671,21 +671,21 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   padding: 0 20px;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c8 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c11 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c2 {
     font-size: 20px;
     line-height: 1.2;

@@ -93,14 +93,14 @@ exports[`Storyshots Molecules | Select Select with hidden label 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c5 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c1 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -253,14 +253,14 @@ exports[`Storyshots Molecules | Select Select with overflowing placeholder 1`] =
   box-sizing: border-box;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c4 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -407,14 +407,14 @@ exports[`Storyshots Molecules | Select Select with placeholder 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c4 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -569,14 +569,14 @@ exports[`Storyshots Molecules | Select Select with placeholder and preselected v
   box-sizing: border-box;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c4 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -741,14 +741,14 @@ exports[`Storyshots Molecules | Select Select with prepended empty value 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c5 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c1 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -906,14 +906,14 @@ exports[`Storyshots Molecules | Select Select with preselected value 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c4 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -1062,14 +1062,14 @@ exports[`Storyshots Molecules | Select Select without placeholder 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c4 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 14px;
     line-height: 1.7142857142857142;

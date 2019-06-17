@@ -106,14 +106,14 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
   margin-bottom: -1px;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c2 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c6 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -280,7 +280,7 @@ exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] 
   margin-bottom: -1px;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c2 {
     font-size: 14px;
     line-height: 1.7142857142857142;

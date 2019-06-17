@@ -2,15 +2,11 @@
 
 exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
 .c1 {
-  margin: 0 auto;
-}
-
-.c2 {
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -19,15 +15,14 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
   line-height: 1.5;
 }
 
-@media (min-width:768px) {
-  .c1 {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
+.c0 {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 12px;
 }
 
-@media (min-width:360px) {
-  .c3 {
+@media (min-width:768px) {
+  .c2 {
     font-size: 16px;
     line-height: 1.5;
   }
@@ -35,19 +30,29 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
 
 @media (min-width:768px) {
   .c0 {
-    max-width: 718px;
+    max-width: 768px;
+    padding: 0 24px;
   }
 }
 
 @media (min-width:992px) {
   .c0 {
-    max-width: 942px;
+    max-width: 992px;
+    padding: 0 28px;
   }
 }
 
-@media (min-width:1300px) {
+@media (min-width:1440px) {
   .c0 {
-    max-width: 1250px;
+    max-width: 1440px;
+    padding: 0 96px;
+  }
+}
+
+@media (min-width:1680px) {
+  .c0 {
+    max-width: 1680px;
+    padding: 0 40px;
   }
 }
 
@@ -55,13 +60,13 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
   className=""
 >
   <div
-    className="c0 c1"
+    className="c0"
   >
     <div
-      className="c2"
+      className="c1"
     >
       <span
-        className="c3"
+        className="c2"
         type="primary"
       >
         Page contents inside the PageWrapper can be anything.
@@ -73,15 +78,11 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
 
 exports[`Storyshots Molecules | PageWrapper PageWrapper with a custom background 1`] = `
 .c2 {
-  margin: 0 auto;
-}
-
-.c3 {
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
-.c4 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -94,15 +95,14 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper with a custom background
   background-color: #F5F5F5;
 }
 
-@media (min-width:768px) {
-  .c2 {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
+.c1 {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 12px;
 }
 
-@media (min-width:360px) {
-  .c4 {
+@media (min-width:768px) {
+  .c3 {
     font-size: 16px;
     line-height: 1.5;
   }
@@ -110,19 +110,29 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper with a custom background
 
 @media (min-width:768px) {
   .c1 {
-    max-width: 718px;
+    max-width: 768px;
+    padding: 0 24px;
   }
 }
 
 @media (min-width:992px) {
   .c1 {
-    max-width: 942px;
+    max-width: 992px;
+    padding: 0 28px;
   }
 }
 
-@media (min-width:1300px) {
+@media (min-width:1440px) {
   .c1 {
-    max-width: 1250px;
+    max-width: 1440px;
+    padding: 0 96px;
+  }
+}
+
+@media (min-width:1680px) {
+  .c1 {
+    max-width: 1680px;
+    padding: 0 40px;
   }
 }
 
@@ -130,13 +140,13 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper with a custom background
   className="c0"
 >
   <div
-    className="c1 c2"
+    className="c1"
   >
     <div
-      className="c3"
+      className="c2"
     >
       <span
-        className="c4"
+        className="c3"
         type="primary"
       >
         Page contents inside the PageWrapper can be anything.

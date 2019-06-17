@@ -251,56 +251,56 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
   align-self: center;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c3 {
     font-size: 16px;
     line-height: 1.5;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c4 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c5 {
     font-size: 12px;
     line-height: 1.6666666666666667;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c6 {
     font-size: 10px;
     line-height: 1.6;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c7 {
     font-size: 28px;
     line-height: 1.1428571428571428;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c8 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c9 {
     font-size: 20px;
     line-height: 1.2;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c10 {
     font-size: 48px;
     line-height: 1.0833333333333333;
@@ -1247,14 +1247,14 @@ Array [
   font-weight: inherit;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c3 {
     font-size: 20px;
     line-height: 1.2;
@@ -1317,14 +1317,14 @@ Array [
   font-weight: inherit;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c3 {
     font-size: 14px;
     line-height: 1.7142857142857142;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 16px;
     line-height: 1.5;

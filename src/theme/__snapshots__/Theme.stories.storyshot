@@ -1981,7 +1981,7 @@ exports[`Storyshots Theme Screen sizes 1`] = `
     </div>
     <div>
       <pre>
-        360
+        
       </pre>
     </div>
   </div>
@@ -2026,7 +2026,22 @@ exports[`Storyshots Theme Screen sizes 1`] = `
     </div>
     <div>
       <pre>
-        1300
+        1440
+      </pre>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      xl
+    </div>
+    <div>
+      <pre>
+        1680
       </pre>
     </div>
   </div>
