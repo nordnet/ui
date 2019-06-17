@@ -5,4 +5,4 @@ export type Props = {
   as?: string;
 };
 
-export type LinkBuyComponent = React.FunctionComponent<LinkProps | ButtonProps & Props>;
+export type LinkBuyComponent = React.FunctionComponent<(LinkProps | ButtonProps) & Props>;
