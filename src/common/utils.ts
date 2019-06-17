@@ -22,5 +22,6 @@ export const assert = (
 
 export const isUndefined = (x: any): x is undefined => typeof x === 'undefined';
 export const isElement = (x: any): x is React.ReactNode => React.isValidElement(x);
+export const isNumber = (x: any): x is number => typeof x === 'number';
 
 export const pickAriaAttributes = R.pickBy((_, key: string) => R.test(/^aria-/, key));

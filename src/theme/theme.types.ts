@@ -50,6 +50,8 @@ export type RawColor = {
   a11yIndex: '#C15700';
 };
 
+type NumberOrObjectWithNumber = number | { size: number };
+
 export type Theme = {
   /** Semantic names for the colors */
   color: {
@@ -122,6 +124,19 @@ export type Theme = {
     gutter: 5;
   };
 
+  breakpoints: {
+    /** Mobile offset: 3; */
+    xs: Record<'offset', number>;
+    /** Tablet, mobile size: 768; offset: 6; */
+    sm: Record<'offset' | 'size', number>;
+    /** Tablet, desktop size: 992; offset: 7; */
+    md: Record<'offset' | 'size', number>;
+    /** Desktop size: 1440; offset: 24; */
+    lg: Record<'offset' | 'size', number>;
+    /** Desktop big size: 1680; offset: 10 */
+    xl: Record<'offset' | 'size', number>;
+  };
+
   size: {
     /** Mobile */
     xs: 360;
@@ -130,22 +145,20 @@ export type Theme = {
     /** Tablet, desktop */
     md: 992;
     /** Desktop */
-    lg: 1300;
+    lg: 1440;
+    /** Desktop big */
+    xl: 1680;
   };
+
   media: {
     /**
+     * @param size One of theme.breakpoints
      * @example
-     * styled.div`
-  ${({ theme }) => theme.media.lessThan(theme.size.tablet)} {
-      }
-`
+     * styled.div`${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {}`
      */
-    lessThan: (/** One of theme.size */ size: number) => MediaQuery;
-    greaterThan: (/** One of theme.size */ size: number) => MediaQuery;
-    between: (
-      /** One of theme.size */ size1: number,
-      /** One of theme.size */ size2: number,
-    ) => MediaQuery;
+    lessThan: (number: NumberOrObjectWithNumber) => MediaQuery;
+    greaterThan: (number: NumberOrObjectWithNumber) => MediaQuery;
+    between: (size1: NumberOrObjectWithNumber, size2: NumberOrObjectWithNumber) => MediaQuery;
   };
   /** Some units for animation */
   animation: {

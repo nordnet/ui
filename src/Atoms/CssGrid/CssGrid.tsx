@@ -196,7 +196,7 @@ const StyledDiv = styled.div<Props>`
 
       return size
         ? css`
-            ${props.theme.media.greaterThan(props.theme.size[size])} {
+            ${props.theme.media.greaterThan(props.theme.breakpoints[size])} {
               ${baseStyles}
             }
           `
@@ -250,7 +250,7 @@ const generateChildStyles = (
   // prettier-ignore
   return size
     ? `
-    ${theme.media.greaterThan(theme.size[size])} {
+    ${theme.media.greaterThan(theme.breakpoints[size])} {
       ${styles.join('\n')}
     }
     `

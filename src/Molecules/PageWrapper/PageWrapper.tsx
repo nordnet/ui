@@ -1,35 +1,33 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Props } from './PageWrapper.types';
-import { Box } from '../..';
 
-const OLD_GRID_PADDING = 10 * 2; // px
-const OLD_GRID_REDUCTION = 30; // px
-const OLD_GRID_COMPABILITY = OLD_GRID_PADDING + OLD_GRID_REDUCTION;
-// TODO: remove OLD_GRID_COMPABILITY when header and footer uses new grid
+const getBreakpointStyles = (size: string) => css`
+  ${p => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
+    max-width: ${p => p.theme.breakpoints[size].size}px;
+    padding: 0 ${p => p.theme.spacing.unit(p.theme.breakpoints[size].offset)}px;
+  }
+`;
 
 const Outer = styled.div<Props>`
   ${p => (p.background ? `background-color: ${p.background(p.theme)}` : '')}
 `;
 
-const Inner = styled(Box)`
-  ${p => p.theme.media.greaterThan(p.theme.size.sm)} {
-    max-width: ${p => p.theme.size.sm - OLD_GRID_COMPABILITY}px;
-  }
-  ${p => p.theme.media.greaterThan(p.theme.size.md)} {
-    max-width: ${p => p.theme.size.md - OLD_GRID_COMPABILITY}px;
-  }
-  ${p => p.theme.media.greaterThan(p.theme.size.lg)} {
-    max-width: ${p => p.theme.size.lg - OLD_GRID_COMPABILITY}px;
-  }
+const Inner = styled.div`
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 ${p => p.theme.spacing.unit(p.theme.breakpoints.xs.offset)}px;
+
+  ${getBreakpointStyles('sm')};
+  ${getBreakpointStyles('md')};
+  ${getBreakpointStyles('lg')};
+  ${getBreakpointStyles('xl')};
 `;
 
 export const PageWrapper: React.FC<Props> = ({ children, background }) => {
   return (
     <Outer background={background}>
-      <Inner m="0 auto" p={0} sm={{ px: 2 }}>
-        {children}
-      </Inner>
+      <Inner>{children}</Inner>
     </Outer>
   );
 };

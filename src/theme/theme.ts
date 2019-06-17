@@ -1,4 +1,5 @@
-import { assert } from '../common/utils'; // eslint-disable-line import/no-unresolved
+import { filter, values, mapObjIndexed, pipe, prop as Rprop } from 'ramda';
+import { assert, isNumber } from '../common/utils'; // eslint-disable-line import/no-unresolved
 import { ThemeConfig, Theme, RawColor } from './theme.types';
 
 // Export from here for showing in story,
@@ -45,17 +46,50 @@ export const rawColor = {
   a11yIndex: '#C15700',
 } as RawColor;
 
+const breakpoints: Theme['breakpoints'] = {
+  xs: {
+    offset: 3,
+  },
+  sm: {
+    size: 768,
+    offset: 6,
+  },
+  md: {
+    size: 992,
+    offset: 7,
+  },
+  lg: {
+    size: 1440,
+    offset: 24,
+  },
+  xl: {
+    size: 1680,
+    offset: 10,
+  },
+};
+
+const size: Theme['size'] = {
+  xs: 360,
+  sm: 768,
+  md: 992,
+  lg: 1440,
+  xl: 1680,
+};
+
+const getSizesValues = pipe(
+  // @ts-ignore
+  mapObjIndexed(Rprop('size')),
+  // @ts-ignore
+  values,
+  filter(Boolean),
+);
+
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const createTheme = (config: ThemeConfig = {}): Theme => {
   const { a11yColors = false } = config;
-  const size: Theme['size'] = {
-    xs: 360,
-    sm: 768,
-    md: 992,
-    lg: 1300,
-  };
 
-  const sizeValues = Object.values(size) as number[];
+  // @ts-ignore
+  const sizeValues = getSizesValues(breakpoints) as number[];
 
   const GUTTER = 5;
   const UNIT = 4;
@@ -73,6 +107,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       easing: {},
       duration: {},
     },
+    breakpoints,
     color: {
       background: rawColor.gray7,
       backgroundDark: rawColor.gray0,
@@ -104,18 +139,25 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     },
     media: {
       between: (s1, s2) => {
-        assert(sizeValues.includes(s1), `[theme.media] Unrecognized size value: ${s1}`);
-        assert(sizeValues.includes(s2), `[theme.media] Unrecognized size value: ${s2}`);
+        const number1 = isNumber(s1) ? s1 : s1.size;
+        const number2 = isNumber(s2) ? s2 : s2.size;
 
-        return `@media (min-width: ${s1}px) and (max-width: ${s2 - 1}px)`;
+        assert(sizeValues.includes(number1), `[theme.media] Unrecognized size value: ${number1}`);
+        assert(sizeValues.includes(number2), `[theme.media] Unrecognized size value: ${number2}`);
+
+        return `@media (min-width: ${number1}px) and (max-width: ${number2 - 1}px)`;
       },
       greaterThan: s => {
-        assert(sizeValues.includes(s), `[theme.media] Unrecognized size value: ${s}`);
-        return `@media (min-width: ${s}px)`;
+        const number = isNumber(s) ? s : s.size;
+
+        assert(sizeValues.includes(number), `[theme.media] Unrecognized size value: ${number}`);
+        return `@media (min-width: ${number}px)`;
       },
       lessThan: s => {
-        assert(sizeValues.includes(s), `[theme.media] Unrecognized size value: ${s}`);
-        return `@media (max-width: ${s - 1}px)`;
+        const number = isNumber(s) ? s : s.size;
+
+        assert(sizeValues.includes(number), `[theme.media] Unrecognized size value: ${number}`);
+        return `@media (max-width: ${number - 1}px)`;
       },
     },
     size,

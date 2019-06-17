@@ -77,7 +77,7 @@ const getStyles = (props: Props) => {
 };
 
 const getStylesForSize = (size: string) => css<Partial<Props>>`
-  ${p => p.theme.media.greaterThan(p.theme.size[size])} {
+  ${p => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
     ${p => getStyles(p[size])}
   }
 `;
