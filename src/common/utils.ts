@@ -20,6 +20,24 @@ export const assert = (
   return true;
 };
 
+export const deprecate = (message: string) => <T extends {} | Function>(target: T): T => {
+  if (process.env.NODE_ENV !== 'production') {
+    return typeof Proxy === 'undefined'
+      ? target
+      : new Proxy(target, {
+          get(getTarget, getProp) {
+            console.warn(`Deprecated: ${message}`);
+            return getTarget[getProp];
+          },
+          apply(applyTarget, thisArg, argumentsList) {
+            // @ts-ignore
+            return applyTarget.apply(thisArg, argumentsList);
+          },
+        });
+  }
+  return target;
+};
+
 export const isUndefined = (x: any): x is undefined => typeof x === 'undefined';
 export const isElement = (x: any): x is React.ReactNode => React.isValidElement(x);
 export const isNumber = (x: any): x is number => typeof x === 'number';

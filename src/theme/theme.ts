@@ -1,5 +1,5 @@
 import { filter, values, mapObjIndexed, pipe, prop as Rprop } from 'ramda';
-import { assert, isNumber } from '../common/utils'; // eslint-disable-line import/no-unresolved
+import { assert, isNumber, deprecate } from '../common/utils'; // eslint-disable-line import/no-unresolved
 import { ThemeConfig, Theme, RawColor } from './theme.types';
 
 // Export from here for showing in story,
@@ -160,7 +160,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
         return `@media (max-width: ${number - 1}px)`;
       },
     },
-    size,
+    size: deprecate('theme.size, please use theme.breakpoint instead.')(size),
     spacing,
   };
   return theme;

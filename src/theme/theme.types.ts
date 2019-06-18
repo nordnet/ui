@@ -156,8 +156,19 @@ export type Theme = {
      * @example
      * styled.div`${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {}`
      */
-    lessThan: (number: NumberOrObjectWithNumber) => MediaQuery;
-    greaterThan: (number: NumberOrObjectWithNumber) => MediaQuery;
+    lessThan: (size: NumberOrObjectWithNumber) => MediaQuery;
+    /**
+     * @param size One of theme.breakpoints
+     * @example
+     * styled.div`${({ theme }) => theme.media.greaterThan(theme.breakpoints.lg)} {}`
+     */
+    greaterThan: (size: NumberOrObjectWithNumber) => MediaQuery;
+    /**
+     * @param size1 One of theme.breakpoints
+     * @param size2 One of theme.breakpoints
+     * @example
+     * styled.div`${({ theme }) => theme.media.between(theme.breakpoints.md, theme.breakpoints.lg)} {}`
+     */
     between: (size1: NumberOrObjectWithNumber, size2: NumberOrObjectWithNumber) => MediaQuery;
   };
   /** Some units for animation */

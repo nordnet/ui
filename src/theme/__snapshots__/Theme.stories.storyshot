@@ -1910,140 +1910,222 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
 
 exports[`Storyshots Theme Screen sizes 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
   width: 100%;
-  box-sizing: border-box;
+  table-layout: fixed;
+  border-collapse: collapse;
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
+  width: 100%;
+  border-bottom: 1px solid #EBEBE8;
 }
 
-.c1 > * {
-  padding: 20px;
+.c4 {
   width: 100%;
-  box-sizing: border-box;
+  overflow: 'auto';
 }
 
 .c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  height: 100%;
+  padding: 8px 0;
+  overflow: 'hidden';
 }
 
-<div
+.c2:not(:first-child) {
+  border-top: 1px solid #EBEBE8;
+}
+
+.c5 {
+  height: 100%;
+  padding: 8px 4px;
+  text-align: left;
+}
+
+.c5:first-child {
+  padding-left: 0;
+}
+
+.c5:last-child {
+  padding-right: 0;
+}
+
+.c3 {
+  color: #6E6E69;
+  font-weight: normal;
+  height: 100%;
+  padding: 8px 4px;
+  text-align: left;
+  width: auto;
+}
+
+.c3:first-child {
+  padding-left: 0;
+}
+
+.c3:last-child {
+  padding-right: 0;
+}
+
+@supports (-webkit-overflow-scrolling:touch): {
+  .c4 {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+<table
   className="c0"
-  direction="column"
+  width="100%"
 >
-  <div
+  <thead
     className="c1"
-    direction="row"
   >
-    <div
+    <tr
       className="c2"
     >
-      xs
-    </div>
-    <div>
-      <pre>
-        
-      </pre>
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
+      <th
+        className="c3"
+        width="auto"
+      >
+        Name
+      </th>
+      <th
+        className="c3"
+        width="auto"
+      >
+        Size
+      </th>
+      <th
+        className="c3"
+        width="auto"
+      >
+        Offset
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="c4"
   >
-    <div
+    <tr
       className="c2"
     >
-      sm
-    </div>
-    <div>
-      <pre>
-        768
-      </pre>
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
+      <td
+        className="c5"
+      >
+        xs
+      </td>
+      <td
+        className="c5"
+      >
+        <pre>
+          
+        </pre>
+      </td>
+      <td
+        className="c5"
+      >
+        <pre>
+          3
+           units
+        </pre>
+      </td>
+    </tr>
+    <tr
       className="c2"
     >
-      md
-    </div>
-    <div>
-      <pre>
-        992
-      </pre>
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
+      <td
+        className="c5"
+      >
+        sm
+      </td>
+      <td
+        className="c5"
+      >
+        <pre>
+          768
+        </pre>
+      </td>
+      <td
+        className="c5"
+      >
+        <pre>
+          6
+           units
+        </pre>
+      </td>
+    </tr>
+    <tr
       className="c2"
     >
-      lg
-    </div>
-    <div>
-      <pre>
-        1440
-      </pre>
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
+      <td
+        className="c5"
+      >
+        md
+      </td>
+      <td
+        className="c5"
+      >
+        <pre>
+          992
+        </pre>
+      </td>
+      <td
+        className="c5"
+      >
+        <pre>
+          7
+           units
+        </pre>
+      </td>
+    </tr>
+    <tr
       className="c2"
     >
-      xl
-    </div>
-    <div>
-      <pre>
-        1680
-      </pre>
-    </div>
-  </div>
-</div>
+      <td
+        className="c5"
+      >
+        lg
+      </td>
+      <td
+        className="c5"
+      >
+        <pre>
+          1440
+        </pre>
+      </td>
+      <td
+        className="c5"
+      >
+        <pre>
+          24
+           units
+        </pre>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        xl
+      </td>
+      <td
+        className="c5"
+      >
+        <pre>
+          1680
+        </pre>
+      </td>
+      <td
+        className="c5"
+      >
+        <pre>
+          10
+           units
+        </pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
 `;

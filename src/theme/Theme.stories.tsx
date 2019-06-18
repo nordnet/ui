@@ -71,10 +71,26 @@ storiesOf('Theme', module)
     );
   })
   .add('Screen sizes', () => (
-    <Display
-      items={Object.entries(theme.breakpoints).map(([title, breakpoint]) => ({
-        title,
-        component: <pre>{propOr('', 'size', breakpoint)}</pre>,
-      }))}
-    />
+    <Table>
+      <Thead>
+        <Tr>
+          <Th>Name</Th>
+          <Th>Size</Th>
+          <Th>Offset</Th>
+        </Tr>
+      </Thead>
+      <Tbody>
+        {Object.entries(theme.breakpoints).map(([title, breakpoint]) => (
+          <Tr key={`breakpoints-${title}`}>
+            <Td>{title}</Td>
+            <Td>
+              <pre>{propOr('', 'size', breakpoint)}</pre>
+            </Td>
+            <Td>
+              <pre>{propOr(0, 'offset', breakpoint)} units</pre>
+            </Td>
+          </Tr>
+        ))}
+      </Tbody>
+    </Table>
   ));
