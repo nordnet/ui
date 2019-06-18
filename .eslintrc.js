@@ -40,6 +40,15 @@ module.exports = {
         ignoreRestSiblings: false,
       },
     ],
+    'jsx-a11y/anchor-is-valid': [
+      // remove this rule when Link component only render links
+      'error',
+      {
+        components: ['Link'],
+        specialLink: ['to'],
+        aspects: [],
+      },
+    ],
   },
   overrides: {
     files: 'src/**/*.stories.tsx',

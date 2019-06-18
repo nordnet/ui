@@ -205,7 +205,7 @@ storiesOf('Molecules | Button', module)
       </Button>
     </HashRouter>
   ))
-  .add('Link looking like a buttons composed in a group', () => (
+  .add('Links looking like buttons composed in a group', () => (
     <HashRouter>
       <Flexbox container>
         <Flexbox item flex="1">

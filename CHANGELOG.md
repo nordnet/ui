@@ -1,3 +1,34 @@
+# [1.14.0](https://github.com/nordnet/ui/compare/v1.13.3...v1.14.0) (2019-06-18)
+
+
+### Bug Fixes
+
+* disable href linting of link component ([d30bbca](https://github.com/nordnet/ui/commit/d30bbca))
+* logic fix in types ([472663e](https://github.com/nordnet/ui/commit/472663e))
+* update paths to link component types ([569d442](https://github.com/nordnet/ui/commit/569d442))
+* update snaps ([e25c386](https://github.com/nordnet/ui/commit/e25c386))
+
+
+### Features
+
+* render buttons looking like links ([b108543](https://github.com/nordnet/ui/commit/b108543))
+
+## [1.13.3](https://github.com/nordnet/ui/compare/v1.13.2...v1.13.3) (2019-06-18)
+
+
+### Bug Fixes
+
+* do not show error if tab is null ([0a9183f](https://github.com/nordnet/ui/commit/0a9183f))
+
+## [1.13.2](https://github.com/nordnet/ui/compare/v1.13.1...v1.13.2) (2019-06-17)
+
+
+### Bug Fixes
+
+* make height prop work ([99c2f73](https://github.com/nordnet/ui/commit/99c2f73))
+* media query story ([c4c15a6](https://github.com/nordnet/ui/commit/c4c15a6))
+* update story name ([db79ad1](https://github.com/nordnet/ui/commit/db79ad1))
+
 ## [1.13.1](https://github.com/nordnet/ui/compare/v1.13.0...v1.13.1) (2019-06-17)
 
 ### Bug Fixes

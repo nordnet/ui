@@ -3141,7 +3141,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Button Link looking like a buttons composed in a group 1`] = `
+exports[`Storyshots Molecules | Button Links looking like buttons composed in a group 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;

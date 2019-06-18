@@ -55,8 +55,13 @@ const StyledUl = styled(List)`
   margin-bottom: -1px;
 `;
 
-const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
-  x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
+const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps } => {
+  if (x == null || typeof x === 'undefined') {
+    return true;
+  }
+
+  return typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
+};
 
 const Tabs: ContainerComponent = ({
   children,
@@ -83,9 +88,9 @@ const Tabs: ContainerComponent = ({
   React.Children.forEach(children, (c, i) => {
     const isActive = i === active;
 
-    if (!isItemElement(c)) {
+    if (!isItemOrUndefined(c)) {
       assert(false, 'There should be only <Tabs.Tab> children inside of <Tabs> component');
-    } else {
+    } else if (c) {
       titles.push(
         // eslint-disable-next-line react/no-array-index-key
         <Flexbox item as="li" role="presentation" key={`tabs-${i}`}>

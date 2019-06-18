@@ -446,6 +446,159 @@ exports[`Storyshots Molecules | Tabs Default 1`] = `
 </span>
 `;
 
+exports[`Storyshots Molecules | Tabs With conditionally hidden tab 1`] = `
+.c5 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 > *:not(:first-child) {
+  margin-top: 0;
+  margin-left: 16px;
+}
+
+.c4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c8 {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBE8;
+}
+
+.c7 {
+  background: none;
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 4px;
+  color: #282823;
+  border-bottom: 2px solid transparent;
+}
+
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background: none;
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.c6,
+.c6[type='button'],
+.c6[type='reset'],
+.c6[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c6::-moz-focus-inner,
+.c6[type='button']::-moz-focus-inner,
+.c6[type='reset']::-moz-focus-inner,
+.c6[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c6:-moz-focusring,
+.c6[type='button']:-moz-focusring,
+.c6[type='reset']:-moz-focusring,
+.c6[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  margin-bottom: -1px;
+}
+
+.c1 {
+  padding: 0 20px;
+}
+
+@media (min-width:360px) {
+  .c0 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<span
+  className="c0"
+  type="secondary"
+>
+  <div>
+    <ul
+      className="c1 c2 c3 c4"
+    >
+      <li
+        className="c5"
+        role="presentation"
+      >
+        <span
+          className="c0"
+          type="secondary"
+        >
+          <button
+            aria-selected={false}
+            className="c6"
+            id="tabs-tab-1"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            <div
+              className="c7"
+            >
+              <span
+                className="c0"
+                type="secondary"
+              >
+                two
+              </span>
+            </div>
+          </button>
+        </span>
+      </li>
+    </ul>
+    <div
+      className="c8"
+    />
+    <div />
+  </div>
+</span>
+`;
+
 exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
 .c5 {
   box-sizing: border-box;

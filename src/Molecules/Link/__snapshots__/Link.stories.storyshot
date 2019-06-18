@@ -3,7 +3,7 @@
 exports[`Storyshots Molecules | Link Default usage 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #0046FF;
+  color: #282823;
   margin: 0;
   font-weight: 700;
   font-size: 14px;
@@ -11,6 +11,8 @@ exports[`Storyshots Molecules | Link Default usage 1`] = `
 }
 
 .c1 {
+  display: inline-block;
+  padding: 0;
   color: #0046FF;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -30,7 +32,6 @@ exports[`Storyshots Molecules | Link Default usage 1`] = `
 
 <span
   className="c0"
-  color={[Function]}
   type="secondary"
 >
   <a
@@ -46,7 +47,7 @@ exports[`Storyshots Molecules | Link Default usage 1`] = `
 exports[`Storyshots Molecules | Link Link with _blank target 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #0046FF;
+  color: #282823;
   margin: 0;
   font-weight: 700;
   font-size: 14px;
@@ -54,6 +55,8 @@ exports[`Storyshots Molecules | Link Link with _blank target 1`] = `
 }
 
 .c1 {
+  display: inline-block;
+  padding: 0;
   color: #0046FF;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -73,7 +76,6 @@ exports[`Storyshots Molecules | Link Link with _blank target 1`] = `
 
 <span
   className="c0"
-  color={[Function]}
   type="secondary"
 >
   <a
@@ -90,7 +92,7 @@ exports[`Storyshots Molecules | Link Link with _blank target 1`] = `
 exports[`Storyshots Molecules | Link Link with rel as nofollow 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #0046FF;
+  color: #282823;
   margin: 0;
   font-weight: 700;
   font-size: 14px;
@@ -98,6 +100,8 @@ exports[`Storyshots Molecules | Link Link with rel as nofollow 1`] = `
 }
 
 .c1 {
+  display: inline-block;
+  padding: 0;
   color: #0046FF;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -117,7 +121,6 @@ exports[`Storyshots Molecules | Link Link with rel as nofollow 1`] = `
 
 <span
   className="c0"
-  color={[Function]}
   type="secondary"
 >
   <a
@@ -128,5 +131,196 @@ exports[`Storyshots Molecules | Link Link with rel as nofollow 1`] = `
   >
     Link
   </a>
+</span>
+`;
+
+exports[`Storyshots Molecules | Link With disabled prop results in a disabled button looking like a link 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: inline-block;
+  padding: 0;
+  color: #A0A09B;
+  cursor: not-allowed;
+  border: none;
+  border-radius: 0;
+  font-weight: inherit;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (min-width:360px) {
+  .c0 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<span
+  className="c0"
+  type="secondary"
+>
+  <button
+    className="c1"
+    disabled={true}
+    onClick={[Function]}
+  >
+    Link
+  </button>
+</span>
+`;
+
+exports[`Storyshots Molecules | Link With typography primary as type 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c1 {
+  display: inline-block;
+  padding: 0;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (min-width:360px) {
+  .c0 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+<span
+  className="c0"
+  type="primary"
+>
+  <a
+    className="c1"
+    href="/startpage"
+    onClick={[Function]}
+  >
+    Link
+  </a>
+</span>
+`;
+
+exports[`Storyshots Molecules | Link Without to prop results in a button looking like a link 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: inline-block;
+  padding: 0;
+  color: #0046FF;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  font-weight: inherit;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (min-width:360px) {
+  .c0 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<span
+  className="c0"
+  type="secondary"
+>
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    Link
+  </button>
 </span>
 `;

@@ -11,6 +11,8 @@ exports[`Storyshots Molecules | LinkSell LinkSell 1`] = `
 }
 
 .c2 {
+  display: inline-block;
+  padding: 0;
   color: #0046FF;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -88,7 +90,6 @@ exports[`Storyshots Molecules | LinkSell LinkSell disabled 1`] = `
   <span
     className="c1"
     disabled={true}
-    to="somewhere"
   >
     Sell
   </span>
@@ -106,6 +107,8 @@ exports[`Storyshots Molecules | LinkSell LinkSell with rel as nofollow 1`] = `
 }
 
 .c2 {
+  display: inline-block;
+  padding: 0;
   color: #0046FF;
   -webkit-text-decoration: none;
   text-decoration: none;

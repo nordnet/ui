@@ -72,4 +72,21 @@ storiesOf('Molecules | Tabs', module)
       );
     };
     return <ControlledExample />;
+  })
+  .add('With conditionally hidden tab', () => {
+    const showFirstTab = false;
+    return (
+      <Typography type="secondary">
+        <StyledTabs>
+          {showFirstTab && (
+            <Tabs.Tab title="One" onTitleClick={action('Clicked title1')}>
+              <SpacingInside>Ones children</SpacingInside>
+            </Tabs.Tab>
+          )}
+          <Tabs.Tab title="two" onTitleClick={action('Clicked title2')}>
+            <SpacingInside>Twos children</SpacingInside>
+          </Tabs.Tab>
+        </StyledTabs>
+      </Typography>
+    );
   });
