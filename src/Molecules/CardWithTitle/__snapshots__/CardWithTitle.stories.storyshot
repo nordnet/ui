@@ -116,7 +116,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 24px;
 }
 
 .c4 {
@@ -125,7 +125,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
   margin: 0;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.3333333333333333;
+  line-height: 24px;
 }
 
 .c1 {
@@ -154,16 +154,9 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
 }
 
 @media (min-width:768px) {
-  .c6 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:768px) {
   .c4 {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
   }
 }
 

@@ -7,7 +7,7 @@ exports[`Storyshots Molecules | Avatar Basic usage 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 20px;
 }
 
 .c0 {
@@ -17,13 +17,6 @@ exports[`Storyshots Molecules | Avatar Basic usage 1`] = `
   border-radius: 50%;
   line-height: 31px;
   text-align: center;
-}
-
-@media (min-width:768px) {
-  .c1 {
-    font-size: 12px;
-    line-height: 1.6666666666666667;
-  }
 }
 
 <div
@@ -46,7 +39,7 @@ exports[`Storyshots Molecules | Avatar Best practice, with element as children 1
   margin: 0;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 20px;
 }
 
 .c0 {
@@ -56,13 +49,6 @@ exports[`Storyshots Molecules | Avatar Best practice, with element as children 1
   border-radius: 50%;
   line-height: 31px;
   text-align: center;
-}
-
-@media (min-width:768px) {
-  .c1 {
-    font-size: 12px;
-    line-height: 1.6666666666666667;
-  }
 }
 
 <div

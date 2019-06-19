@@ -128,7 +128,7 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c4 {
@@ -137,7 +137,7 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 24px;
 }
 
 .c5 {
@@ -146,7 +146,7 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
   margin: 0;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 20px;
 }
 
 .c6 {
@@ -155,7 +155,7 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
   margin: 0;
   font-weight: 400;
   font-size: 10px;
-  line-height: 1.6;
+  line-height: 16px;
 }
 
 .c7 {
@@ -164,7 +164,7 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
   margin: 0;
   font-weight: 800;
   font-size: 24px;
-  line-height: 1.1666666666666667;
+  line-height: 28px;
 }
 
 .c8 {
@@ -173,7 +173,7 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
   margin: 0;
   font-weight: 800;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 24px;
 }
 
 .c9 {
@@ -182,7 +182,7 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
   margin: 0;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.3333333333333333;
+  line-height: 24px;
 }
 
 .c10 {
@@ -191,7 +191,7 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
   margin: 0;
   font-weight: 800;
   font-size: 46px;
-  line-height: 1.0434782608695652;
+  line-height: 48px;
 }
 
 .c0 {
@@ -252,58 +252,30 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
 }
 
 @media (min-width:768px) {
-  .c3 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    font-size: 12px;
-    line-height: 1.6666666666666667;
-  }
-}
-
-@media (min-width:768px) {
-  .c6 {
-    font-size: 10px;
-    line-height: 1.6;
-  }
-}
-
-@media (min-width:768px) {
   .c7 {
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 32px;
   }
 }
 
 @media (min-width:768px) {
   .c8 {
     font-size: 24px;
-    line-height: 1.1666666666666667;
+    line-height: 28px;
   }
 }
 
 @media (min-width:768px) {
   .c9 {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
   }
 }
 
 @media (min-width:768px) {
   .c10 {
     font-size: 48px;
-    line-height: 1.0833333333333333;
+    line-height: 52px;
   }
 }
 
@@ -1222,7 +1194,7 @@ Array [
   margin: 0;
   font-weight: 800;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 24px;
 }
 
 .c3 {
@@ -1231,7 +1203,7 @@ Array [
   margin: 0;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.3333333333333333;
+  line-height: 24px;
 }
 
 .c1 {
@@ -1250,14 +1222,14 @@ Array [
 @media (min-width:768px) {
   .c0 {
     font-size: 24px;
-    line-height: 1.1666666666666667;
+    line-height: 28px;
   }
 }
 
 @media (min-width:768px) {
   .c3 {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
   }
 }
 
@@ -1292,7 +1264,7 @@ Array [
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 24px;
 }
 
 .c0 {
@@ -1301,7 +1273,7 @@ Array [
   margin: 0;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c1 {
@@ -1315,20 +1287,6 @@ Array [
 
 .c2 {
   font-weight: inherit;
-}
-
-@media (min-width:768px) {
-  .c3 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
 }
 
 <div

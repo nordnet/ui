@@ -1139,20 +1139,13 @@ exports[`Storyshots Atoms | Table Integration: Table (stickyHeader) with Typogra
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 24px;
 }
 
 @supports (-webkit-overflow-scrolling:touch): {
   .c9 {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
   }
 }
 
@@ -5794,20 +5787,13 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 24px;
 }
 
 @supports (-webkit-overflow-scrolling:touch): {
   .c9 {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
   }
 }
 
@@ -10466,20 +10452,13 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography and ellipsi
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 24px;
 }
 
 @supports (-webkit-overflow-scrolling:touch): {
   .c9 {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
   }
 }
 

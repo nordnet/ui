@@ -442,7 +442,7 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c7 {
@@ -451,7 +451,7 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 24px;
 }
 
 .c8 {
@@ -460,7 +460,7 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   margin: 0;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 20px;
 }
 
 .c9 {
@@ -469,7 +469,7 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   margin: 0;
   font-weight: 400;
   font-size: 10px;
-  line-height: 1.6;
+  line-height: 16px;
 }
 
 .c10 {
@@ -478,7 +478,7 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   margin: 0;
   font-weight: 800;
   font-size: 24px;
-  line-height: 1.1666666666666667;
+  line-height: 28px;
 }
 
 .c11 {
@@ -487,7 +487,7 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   margin: 0;
   font-weight: 800;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 24px;
 }
 
 .c12 {
@@ -496,7 +496,7 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   margin: 0;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.3333333333333333;
+  line-height: 24px;
 }
 
 .c13 {
@@ -505,7 +505,7 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   margin: 0;
   font-weight: 800;
   font-size: 46px;
-  line-height: 1.0434782608695652;
+  line-height: 48px;
 }
 
 .c4 {
@@ -578,58 +578,30 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
 }
 
 @media (min-width:768px) {
-  .c3 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:768px) {
-  .c7 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:768px) {
-  .c8 {
-    font-size: 12px;
-    line-height: 1.6666666666666667;
-  }
-}
-
-@media (min-width:768px) {
-  .c9 {
-    font-size: 10px;
-    line-height: 1.6;
-  }
-}
-
-@media (min-width:768px) {
   .c10 {
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 32px;
   }
 }
 
 @media (min-width:768px) {
   .c11 {
     font-size: 24px;
-    line-height: 1.1666666666666667;
+    line-height: 28px;
   }
 }
 
 @media (min-width:768px) {
   .c12 {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
   }
 }
 
 @media (min-width:768px) {
   .c13 {
     font-size: 48px;
-    line-height: 1.0833333333333333;
+    line-height: 52px;
   }
 }
 

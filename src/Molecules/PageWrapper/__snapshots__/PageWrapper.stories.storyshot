@@ -12,20 +12,13 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c0 {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 12px;
-}
-
-@media (min-width:768px) {
-  .c2 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
 }
 
 @media (min-width:768px) {
@@ -88,7 +81,7 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper with a custom background
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c0 {
@@ -99,13 +92,6 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper with a custom background
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 12px;
-}
-
-@media (min-width:768px) {
-  .c3 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
 }
 
 @media (min-width:768px) {
