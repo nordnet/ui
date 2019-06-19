@@ -29,7 +29,7 @@ jobs:
       after_script:
         - npm run build-storybook
         - npm run docs-publish
-      if: (NOT type IN (pull_request)) AND ((branch = beta) OR (branch = master))
+      if: (NOT type IN (pull_request)) AND (branch = master)
 
 stages:
   - name: test-and-build
