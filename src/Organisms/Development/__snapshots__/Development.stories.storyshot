@@ -442,7 +442,7 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 .c7 {
@@ -451,7 +451,7 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7142857142857142;
 }
 
 .c8 {
@@ -460,7 +460,7 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   margin: 0;
   font-weight: 400;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 1.6666666666666667;
 }
 
 .c9 {
@@ -469,7 +469,7 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   margin: 0;
   font-weight: 400;
   font-size: 10px;
-  line-height: 16px;
+  line-height: 1.6;
 }
 
 .c10 {
@@ -478,7 +478,7 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   margin: 0;
   font-weight: 800;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.1666666666666667;
 }
 
 .c11 {
@@ -487,7 +487,7 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   margin: 0;
   font-weight: 800;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
 }
 
 .c12 {
@@ -496,7 +496,7 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   margin: 0;
   font-weight: 800;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.3333333333333333;
 }
 
 .c13 {
@@ -505,7 +505,7 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   margin: 0;
   font-weight: 800;
   font-size: 46px;
-  line-height: 48px;
+  line-height: 1.0434782608695652;
 }
 
 .c4 {
@@ -580,28 +580,28 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
 @media (min-width:768px) {
   .c10 {
     font-size: 28px;
-    line-height: 32px;
+    line-height: 1.1428571428571428;
   }
 }
 
 @media (min-width:768px) {
   .c11 {
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.1666666666666667;
   }
 }
 
 @media (min-width:768px) {
   .c12 {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
   }
 }
 
 @media (min-width:768px) {
   .c13 {
     font-size: 48px;
-    line-height: 52px;
+    line-height: 1.0833333333333333;
   }
 }
 

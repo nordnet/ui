@@ -7,7 +7,7 @@ exports[`Storyshots Molecules | LinkBuy LinkBuy 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 .c2 {
@@ -56,7 +56,7 @@ exports[`Storyshots Molecules | LinkBuy LinkBuy disabled 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 .c1 {
@@ -89,7 +89,7 @@ exports[`Storyshots Molecules | LinkBuy LinkBuy with rel as nofollow 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 .c2 {

@@ -138,7 +138,7 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
       return 'inherit';
     }
 
-    return `${mode.lineHeight ? `line-height: ${mode.lineHeight}px;` : ''}`;
+    return `${mode.lineHeight ? `line-height: ${mode.lineHeight / mode.size};` : ''}`;
   };
 
   assert(

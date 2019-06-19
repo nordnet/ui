@@ -33,7 +33,7 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7142857142857142;
 }
 
 .c0 {
@@ -142,7 +142,7 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7142857142857142;
 }
 
 .c0 {
@@ -308,7 +308,7 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7142857142857142;
 }
 
 .c0 {

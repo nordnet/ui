@@ -116,7 +116,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7142857142857142;
 }
 
 .c4 {
@@ -125,7 +125,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
   margin: 0;
   font-weight: 800;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.3333333333333333;
 }
 
 .c1 {
@@ -156,7 +156,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
 @media (min-width:768px) {
   .c4 {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
   }
 }
 

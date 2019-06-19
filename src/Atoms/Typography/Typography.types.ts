@@ -68,6 +68,6 @@ export type Props = {
 };
 
 export type FontProps = {
-  lineHeight?: number;
-  size?: number;
+  lineHeight: number;
+  size: number;
 } | null;
