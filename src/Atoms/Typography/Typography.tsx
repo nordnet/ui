@@ -130,7 +130,7 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
   }
 
   const getFontSize = (mode: Exclude<FontProps, null>) => {
-    return `${mode.size ? `font-size: ${mode!.size}px;` : ''}`;
+    return `${mode.size ? `font-size: ${mode.size}px;` : ''}`;
   };
 
   const getLineHeight = (mode: Exclude<FontProps, null>) => {
