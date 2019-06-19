@@ -66,3 +66,8 @@ export type Props = {
    */
   children: React.ReactNode;
 };
+
+export type FontProps = {
+  lineHeight?: number;
+  size?: number;
+} | null;

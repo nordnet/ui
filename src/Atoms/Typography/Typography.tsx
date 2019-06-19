@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
 import { Theme } from '../../theme/theme.types';
-import { Props, Types } from './Typography.types';
+import { Props, Types, FontProps } from './Typography.types';
 import { assert, pickAriaAttributes } from '../../common/utils';
 
 const WEIGHTS = {
@@ -39,81 +39,107 @@ export const TYPOGRAPHY_TYPES: Record<Types, Types> = {
 
 const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
   const { type, weight, theme, lineHeight } = props;
-  let sizeMobile;
-  let sizeDesktop;
-  let lineHeightMobile;
-  let lineHeightDesktop;
+  let mobile: FontProps = null;
+  let desktop: FontProps = null;
   let defaultWeight;
   let allowedWeights = ['regular', 'bold', 'extrabold'];
 
   switch (type) {
     case TYPOGRAPHY_TYPES.primary:
-      sizeMobile = 16;
-      sizeDesktop = 16;
-      lineHeightMobile = theme.spacing.unit(6);
-      lineHeightDesktop = theme.spacing.unit(6);
+      mobile = {
+        size: 16,
+        lineHeight: theme.spacing.unit(6),
+      };
       defaultWeight = 'regular';
       break;
     case TYPOGRAPHY_TYPES.secondary:
-      sizeMobile = 14;
-      sizeDesktop = 14;
-      lineHeightMobile = theme.spacing.unit(6);
-      lineHeightDesktop = theme.spacing.unit(6);
+      mobile = {
+        size: 14,
+        lineHeight: theme.spacing.unit(6),
+      };
       defaultWeight = 'regular';
       allowedWeights = ['regular', 'bold'];
       break;
     case TYPOGRAPHY_TYPES.tertiary:
-      sizeMobile = 12;
-      sizeDesktop = 12;
-      lineHeightMobile = theme.spacing.unit(5);
-      lineHeightDesktop = theme.spacing.unit(5);
+      mobile = {
+        size: 12,
+        lineHeight: theme.spacing.unit(5),
+      };
       defaultWeight = 'regular';
       allowedWeights = ['regular', 'bold'];
       break;
     case TYPOGRAPHY_TYPES.caption:
-      sizeMobile = 10;
-      sizeDesktop = 10;
-      lineHeightMobile = theme.spacing.unit(4);
-      lineHeightDesktop = theme.spacing.unit(4);
+      mobile = {
+        size: 10,
+        lineHeight: theme.spacing.unit(4),
+      };
       defaultWeight = 'regular';
       allowedWeights = ['regular', 'bold'];
       break;
     case TYPOGRAPHY_TYPES.title1:
-      sizeMobile = 24;
-      sizeDesktop = 28;
-      lineHeightMobile = theme.spacing.unit(7);
-      lineHeightDesktop = theme.spacing.unit(8);
+      mobile = {
+        size: 24,
+        lineHeight: theme.spacing.unit(7),
+      };
+      desktop = {
+        size: 28,
+        lineHeight: theme.spacing.unit(8),
+      };
       defaultWeight = 'extrabold';
       break;
     case TYPOGRAPHY_TYPES.title2:
-      sizeMobile = 20;
-      sizeDesktop = 24;
-      lineHeightMobile = theme.spacing.unit(6);
-      lineHeightDesktop = theme.spacing.unit(7);
+      mobile = {
+        size: 20,
+        lineHeight: theme.spacing.unit(6),
+      };
+      desktop = {
+        size: 24,
+        lineHeight: theme.spacing.unit(7),
+      };
       defaultWeight = 'extrabold';
       break;
     case TYPOGRAPHY_TYPES.title3:
-      sizeMobile = 18;
-      sizeDesktop = 20;
-      lineHeightMobile = theme.spacing.unit(6);
-      lineHeightDesktop = theme.spacing.unit(6);
+      mobile = {
+        size: 18,
+        lineHeight: theme.spacing.unit(6),
+      };
+      desktop = {
+        size: 20,
+        lineHeight: theme.spacing.unit(6),
+      };
       defaultWeight = 'extrabold';
       break;
     case TYPOGRAPHY_TYPES.hero:
-      sizeMobile = 46;
-      sizeDesktop = 48;
-      lineHeightMobile = theme.spacing.unit(12);
-      lineHeightDesktop = theme.spacing.unit(13);
+      mobile = {
+        size: 46,
+        lineHeight: theme.spacing.unit(12),
+      };
+      desktop = {
+        size: 48,
+        lineHeight: theme.spacing.unit(13),
+      };
       defaultWeight = 'extrabold';
       allowedWeights = ['bold', 'extrabold'];
       break;
     default:
-      sizeMobile = 16;
-      sizeDesktop = 16;
-      lineHeightMobile = theme.spacing.unit(6);
-      lineHeightDesktop = theme.spacing.unit(6);
+      mobile = {
+        size: 16,
+        lineHeight: theme.spacing.unit(6),
+      };
       defaultWeight = 'regular';
   }
+
+  const getFontSize = (mode: Exclude<FontProps, null>) => {
+    return `${mode.size ? `font-size: ${mode!.size}px;` : ''}`;
+  };
+
+  const getLineHeight = (mode: Exclude<FontProps, null>) => {
+    if (lineHeight) {
+      return 'inherit';
+    }
+
+    return `${mode.lineHeight ? `line-height: ${mode.lineHeight}px;` : ''}`;
+  };
 
   assert(
     allowedWeights.includes(weight || defaultWeight),
@@ -121,17 +147,25 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
       .map(s => `"${s}"`)
       .join(', ')}`,
   );
+
   return `
     font-weight ${
       weight && allowedWeights.includes(weight) ? WEIGHTS[weight] : WEIGHTS[defaultWeight]
     };
-    font-size: ${sizeMobile}px;
-    line-height: ${lineHeight ? 'inherit' : lineHeightMobile / sizeMobile};
+    ${getFontSize(mobile)}
+    ${getLineHeight(mobile)}
 
-    ${theme.media.greaterThan(theme.breakpoints[SMALL_DEVICE_BP])} {
-      font-size: ${sizeDesktop}px;
-      line-height: ${lineHeight ? 'inherit' : lineHeightDesktop / sizeDesktop};
+    ${
+      desktop
+        ? `
+          ${theme.media.greaterThan(theme.breakpoints[SMALL_DEVICE_BP])} {
+            ${getFontSize(desktop)}
+            ${getLineHeight(desktop)}
+          }
+        `
+        : ''
     }
+    
   `;
 };
 
