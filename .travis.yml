@@ -26,10 +26,7 @@ jobs:
     - stage: release
       script:
         - TRAVIS_JOB_NUMBER=WORKAROUND.1 npm run semantic-release
-      after_script:
-        - npm run build-storybook
-        - npm run docs-publish
-      if: (NOT type IN (pull_request)) AND (branch = master)
+      if: (NOT type IN (pull_request)) AND (branch = beta)
 
 stages:
   - name: test-and-build
