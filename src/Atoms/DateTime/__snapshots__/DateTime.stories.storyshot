@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms | DateTime DateTime 1`] = `
+<time>
+  1/18/1970, 23:53
+</time>
+`;
+
+exports[`Storyshots Atoms | DateTime Invalid value 1`] = `"-"`;
+
+exports[`Storyshots Atoms | DateTime Uses custom symbol for invalid value 1`] = `"X"`;
+
+exports[`Storyshots Atoms | DateTime With date only 1`] = `
+<time>
+  1/18/1970
+</time>
+`;
