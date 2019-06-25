@@ -3,6 +3,7 @@ import { Table, Tbody, Td, Tfoot, Th, Thead, Tr } from './Atoms/Table';
 import Box from './Atoms/Box';
 import Card from './Atoms/Card';
 import CssGrid from './Atoms/CssGrid';
+import DateTime from './Atoms/DateTime';
 import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';
 import Icon from './Atoms/Icon';
@@ -50,6 +51,7 @@ export {
   CollapsibleCard,
   createTheme,
   CssGrid,
+  DateTime,
   Development,
   Flag,
   Flexbox,

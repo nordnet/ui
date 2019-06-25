@@ -1,19 +1,7 @@
 import { injectIntl } from 'react-intl';
 import React from 'react';
-import * as R from 'ramda';
+import { isValidDateTimeNumber } from '../../common/utils';
 import { TimeComponent } from './Time.types';
-
-const convertToDate = (value: number) => new Date(value);
-const isInvalid = R.anyPass([
-  R.isNil,
-  R.pipe(
-    convertToDate,
-    R.toString,
-    R.equals('Invalid Date'),
-  ),
-]);
-
-const isValid = R.complement(isInvalid) as (x: any) => x is number;
 
 const timeOptions = {
   hour12: false,
@@ -23,6 +11,10 @@ const timeOptions = {
 };
 
 const Time: TimeComponent = ({ intl, value, invalidValue = '-' }) =>
-  isValid(value) ? <time>{intl.formatTime(value, timeOptions)}</time> : <>{invalidValue}</>;
+  isValidDateTimeNumber(value) ? (
+    <time>{intl.formatTime(value, timeOptions)}</time>
+  ) : (
+    <>{invalidValue}</>
+  );
 
 export default injectIntl(Time);

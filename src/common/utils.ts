@@ -24,3 +24,15 @@ export const isUndefined = (x: any): x is undefined => typeof x === 'undefined';
 export const isElement = (x: any): x is React.ReactNode => React.isValidElement(x);
 
 export const pickAriaAttributes = R.pickBy((_, key: string) => R.test(/^aria-/, key));
+
+const convertToDate = (value: number) => new Date(value);
+const isInvalid = R.anyPass([
+  R.isNil,
+  R.pipe(
+    convertToDate,
+    R.toString,
+    R.equals('Invalid Date'),
+  ),
+]);
+
+export const isValidDateTimeNumber = R.complement(isInvalid) as (x: any) => x is number;
