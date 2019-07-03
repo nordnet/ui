@@ -38,44 +38,6 @@ Array [
 ]
 `;
 
-exports[`Storyshots Atoms | Media Old depricated usage 1`] = `
-Array [
-  @media not all and (max-width:991px) {
-  .c0 {
-    display: none;
-  }
-}
-
-<div
-    className="c0"
-  >
-    I am only shown on screens smaller than medium size
-  </div>,
-  @media not all and (min-width:992px) and (max-width:1439px) {
-  .c0 {
-    display: none;
-  }
-}
-
-<div
-    className="c0"
-  >
-    I am only shown between medium and large sizes
-  </div>,
-  @media not all and (min-width:1440px) {
-  .c0 {
-    display: none;
-  }
-}
-
-<div
-    className="c0"
-  >
-    I am only shown on screens bigger than large size
-  </div>,
-]
-`;
-
 exports[`Storyshots Atoms | Media With size key 1`] = `
 Array [
   @media not all and (max-width:991px) {

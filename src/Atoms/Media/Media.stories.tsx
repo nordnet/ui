@@ -33,19 +33,4 @@ storiesOf('Atoms | Media', module)
         </Media>
       </>
     );
-  })
-  .add('Old depricated usage', () => {
-    return (
-      <>
-        <Media query={t => t.media.lessThan(t.size.md)}>
-          I am only shown on screens smaller than medium size
-        </Media>
-        <Media query={t => t.media.between(t.size.md, t.size.lg)}>
-          I am only shown between medium and large sizes
-        </Media>
-        <Media query={t => t.media.greaterThan(t.size.lg)}>
-          I am only shown on screens bigger than large size
-        </Media>
-      </>
-    );
   });

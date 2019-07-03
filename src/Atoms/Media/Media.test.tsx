@@ -16,7 +16,7 @@ beforeEach(() => {
     dispatchEvent: () => null,
     onchange: () => null,
     removeListener: () => null,
-    matches: media === theme.media.greaterThan(theme.size.sm).replace('@media ', ''),
+    matches: media === theme.media.greaterThan(theme.breakpoints.sm.size).replace('@media ', ''),
     addEventListener: () => null,
     removeEventListener: () => null,
   });
@@ -26,7 +26,7 @@ test('useMedia hook: returns true if matches', () => {
   const theme = createTheme();
 
   const ConsumerThatMatches = () => {
-    const matches = useMedia(t => t.media.greaterThan(t.size.sm));
+    const matches = useMedia(t => t.media.greaterThan(t.breakpoints.sm.size));
     return <div data-testid="consumer">{`${matches}`}</div>;
   };
 
@@ -43,7 +43,7 @@ test('useMedia hook: returns true if matches', () => {
 test('useMedia hook: returns null if SSR', () => {
   const theme = createTheme();
   const ConsumerThatDoesntMatch = () => {
-    const matches = useMedia(t => t.media.greaterThan(t.size.lg));
+    const matches = useMedia(t => t.media.greaterThan(t.breakpoints.lg.size));
     return <div data-testid="consumer">{`${matches}`}</div>;
   };
 
@@ -59,7 +59,7 @@ test('useMedia hook: returns false if doesnt match', async () => {
   const theme = createTheme();
 
   const ConsumerThatDoesntMatch = () => {
-    const matches = useMedia(t => t.media.greaterThan(t.size.lg));
+    const matches = useMedia(t => t.media.greaterThan(t.breakpoints.lg.size));
     return <div data-testid="consumer">{`${matches}`}</div>;
   };
 
@@ -78,8 +78,10 @@ test('Server-side rendering works: rendering all medias with CSS workaround', ()
   const html = renderToString(
     <ThemeProvider theme={createTheme()}>
       <>
-        <Media query={t => t.media.greaterThan(t.size.sm)}>This shows on and above sm</Media>
-        <Media query={t => t.media.lessThan(t.size.sm)}>This shows below sm</Media>
+        <Media query={t => t.media.greaterThan(t.breakpoints.sm.size)}>
+          This shows on and above sm
+        </Media>
+        <Media query={t => t.media.lessThan(t.breakpoints.sm.size)}>This shows below sm</Media>
       </>
     </ThemeProvider>,
   );
@@ -90,10 +92,10 @@ test('Client-side rendering works: not rendering non-matched media', async () =>
   const { getByTestId } = render(
     <ThemeProvider theme={createTheme()}>
       <>
-        <Media query={t => t.media.greaterThan(t.size.sm)}>
+        <Media query={t => t.media.greaterThan(t.breakpoints.sm.size)}>
           <div data-testid="one">This shows on and above sm</div>
         </Media>
-        <Media query={t => t.media.lessThan(t.size.sm)}>
+        <Media query={t => t.media.lessThan(t.breakpoints.sm.size)}>
           <div data-testid="two">This shows below sm</div>
         </Media>
       </>
@@ -110,8 +112,8 @@ test('Hydration', async () => {
   const Element = () => (
     <ThemeProvider theme={createTheme()}>
       <>
-        <Media query={t => t.media.greaterThan(t.size.sm)}>gt sm</Media>
-        <Media query={t => t.media.lessThan(t.size.sm)}>lt sm</Media>
+        <Media query={t => t.media.greaterThan(t.breakpoints.sm.size)}>gt sm</Media>
+        <Media query={t => t.media.lessThan(t.breakpoints.sm.size)}>lt sm</Media>
       </>
     </ThemeProvider>
   );
@@ -134,7 +136,7 @@ test('Hydration', async () => {
 });
 
 test('Client-side: case when media query changes', () => {
-  const firstQuery = (t: Theme) => t.media.greaterThan(t.size.sm);
+  const firstQuery = (t: Theme) => t.media.greaterThan(t.breakpoints.sm.size);
   const { rerender, getByTestId } = render(
     <ThemeProvider theme={createTheme()}>
       <Media query={firstQuery}>
@@ -145,7 +147,7 @@ test('Client-side: case when media query changes', () => {
 
   expect(getByTestId('target')).toBeDefined();
 
-  const secondQuery = (t: Theme) => t.media.lessThan(t.size.sm);
+  const secondQuery = (t: Theme) => t.media.lessThan(t.breakpoints.sm.size);
 
   rerender(
     <ThemeProvider theme={createTheme()}>
