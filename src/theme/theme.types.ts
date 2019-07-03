@@ -131,7 +131,7 @@ export type Theme = {
     md: Record<'offset' | 'size', number>;
     /** Desktop size: 1440; offset: 24; */
     lg: Record<'offset' | 'size', number>;
-    /** Desktop big size: 1680; offset: 10 */
+    /** Desktop big size: 1680; offset: 15 */
     xl: Record<'offset' | 'size', number>;
   };
 
