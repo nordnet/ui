@@ -28,6 +28,7 @@ import LinkBuy from './Molecules/LinkBuy';
 import LinkSell from './Molecules/LinkSell';
 import ListWithTitles from './Molecules/ListWithTitles';
 import Number from './Molecules/Number';
+import Modal from './Molecules/Modal';
 import PageHeaderCard from './Molecules/PageHeaderCard';
 import PageWrapper from './Molecules/PageWrapper';
 import Select from './Molecules/Select';
@@ -64,6 +65,7 @@ export {
   ListItem,
   ListWithTitles,
   Media,
+  Modal,
   useMedia,
   Number,
   PageHeaderCard,

@@ -119,6 +119,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       disabledBackground: rawColor.gray6,
       divider: rawColor.gray6,
       label: rawColor.gray2,
+      modalBackdrop: rawColor.gray2,
       module: rawColor.white,
       negative: a11yColors ? rawColor.a11yNegative : rawColor.negative,
       positive: a11yColors ? rawColor.a11yPositive : rawColor.positive,

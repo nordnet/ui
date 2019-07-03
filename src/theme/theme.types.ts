@@ -93,6 +93,8 @@ export type Theme = {
     disabledBackground: RawColor['gray6'];
     /** white */
     buttonSecondaryBackground: RawColor['white'];
+    /** gray2 */
+    modalBackdrop: RawColor['gray2'];
     /** white */
     module: RawColor['white'];
     /** black */
