@@ -20,10 +20,8 @@ storiesOf('Molecules | Modal', module)
           <button type="button" onClick={onOpen}>
             Open modal
           </button>
-          <Modal open={open} onClose={onClose} title="Title">
-            <Typography type="primary">
-              Page contents inside the PageWrapper can be anything.
-            </Typography>
+          <Modal onClose={onClose} title="Confirm order" open={open}>
+            <Typography type="primary">Please confirm your oder</Typography>
           </Modal>
         </div>
       );
@@ -46,10 +44,8 @@ storiesOf('Molecules | Modal', module)
           <button type="button" onClick={onOpen}>
             Open modal
           </button>
-          <Modal open={open} onClose={onClose}>
-            <Typography type="primary">
-              Page contents inside the PageWrapper can be anything.
-            </Typography>
+          <Modal onClose={onClose} open={open}>
+            <Typography type="primary">Confirm order</Typography>
           </Modal>
         </div>
       );
