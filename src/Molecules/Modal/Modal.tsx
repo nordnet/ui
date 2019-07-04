@@ -79,6 +79,7 @@ export const Modal: React.FC<Props> = ({ children, className, title, open, onClo
   const [show, setShow] = useState(false);
 
   useEffect(() => {
+    // doing this for the show animation
     setShow(open);
   }, [open]);
 
