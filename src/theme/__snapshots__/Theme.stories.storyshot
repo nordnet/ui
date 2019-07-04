@@ -2097,7 +2097,7 @@ exports[`Storyshots Theme Screen sizes 1`] = `
         className="c5"
       >
         <pre>
-          10
+          15
            units
         </pre>
       </td>

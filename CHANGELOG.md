@@ -1,3 +1,18 @@
+## [1.20.3](https://github.com/nordnet/ui/compare/v1.20.2...v1.20.3) (2019-07-04)
+
+
+### Bug Fixes
+
+* add more padding to xl breakpoint ([5c969d6](https://github.com/nordnet/ui/commit/5c969d6))
+
+## [1.20.2](https://github.com/nordnet/ui/compare/v1.20.1...v1.20.2) (2019-07-03)
+
+
+### Bug Fixes
+
+* simplify breakpoints references ([fd7ba1c](https://github.com/nordnet/ui/commit/fd7ba1c))
+* stop using theme.size internally ([cc2691e](https://github.com/nordnet/ui/commit/cc2691e))
+
 ## [1.20.1](https://github.com/nordnet/ui/compare/v1.20.0...v1.20.1) (2019-07-01)
 
 

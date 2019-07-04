@@ -61,7 +61,7 @@ const breakpoints: Theme['breakpoints'] = {
   },
   xl: {
     size: 1680,
-    offset: 10,
+    offset: 15,
   },
 };
 
