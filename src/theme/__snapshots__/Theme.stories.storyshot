@@ -1476,6 +1476,37 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
+        modalBackdrop
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c13"
+          color="#6E6E69"
+        />
+        <div>
+          #6E6E69
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c13"
+          color="#6E6E69"
+        />
+        <div>
+          #6E6E69
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
         module
       </td>
       <td

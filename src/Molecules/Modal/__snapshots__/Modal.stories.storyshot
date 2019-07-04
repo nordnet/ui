@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | Modal Default 1`] = `
+.c1 {
+  margin-bottom: 8px;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c0 {
+  box-sizing: border-box;
+  padding: 20px;
+  border: 0;
+  background: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6,
+.c6[type='button'],
+.c6[type='reset'],
+.c6[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c6::-moz-focus-inner,
+.c6[type='button']::-moz-focus-inner,
+.c6[type='reset']::-moz-focus-inner,
+.c6[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c6:-moz-focusring,
+.c6[type='button']:-moz-focusring,
+.c6[type='reset']:-moz-focusring,
+.c6[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5 {
+  margin-left: auto;
+}
+
+.c8 {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    background-color: rgba(110,110,105,0.63);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width:767px) {
+  .c0 {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 480px;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+    -webkit-transform: translate(-50%,0%);
+    -ms-transform: translate(-50%,0%);
+    transform: translate(-50%,0%);
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s ease-in,opacity 0.3s ease-in;
+    -webkit-transition: transform 0.3s ease-in,opacity 0.3s ease-in;
+    transition: transform 0.3s ease-in,opacity 0.3s ease-in;
+  }
+}
+
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Open modal
+  </button>
+  <div
+    aria-labelledby="dialogTitle"
+    className="c0"
+    role="dialog"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          <h2
+            className="c4"
+            type="title2"
+          >
+            Confirm order
+          </h2>
+        </div>
+        <div
+          className="c5 c3"
+        >
+          <button
+            aria-label="Close this dialog window"
+            className="c6"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="false"
+              className="c7"
+              focusable="false"
+              role="img"
+              size={5}
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+              />
+              <title>
+                Close this dialog
+              </title>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c8"
+    >
+      <span
+        className="c9"
+      >
+        Please confirm your oder
+      </span>
+    </div>
+  </div>
+  <div
+    className="c10"
+  />
+</div>
+`;
+
+exports[`Storyshots Molecules | Modal Without header 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Open modal
+  </button>
+</div>
+`;
