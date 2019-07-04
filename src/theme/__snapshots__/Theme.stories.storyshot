@@ -1631,6 +1631,37 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
+        shadow
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c18"
+          color="#000000"
+        />
+        <div>
+          #000000
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c18"
+          color="#000000"
+        />
+        <div>
+          #000000
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
         spinnerBlack
       </td>
       <td

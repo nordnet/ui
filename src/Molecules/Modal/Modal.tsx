@@ -39,7 +39,12 @@ const Dialog = styled.div<DialogProps>`
     width: ${({ theme }) => theme.spacing.unit(120)}px;
     top: 50%;
     left: 50%;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.03);
+    box-shadow: 0 2px 2px 0
+      ${({ theme }) =>
+        Color(theme.color.shadow)
+          .alpha(0.03)
+          .rgb()
+          .string()};
     transform: translate(-50%, 0%);
     opacity: 0;
     transition: transform 0.3s ease-in, opacity 0.3s ease-in;

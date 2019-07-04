@@ -98,6 +98,8 @@ export type Theme = {
     /** white */
     module: RawColor['white'];
     /** black */
+    shadow: RawColor['black'];
+    /** black */
     spinnerBlack: RawColor['black'];
     /** white */
     spinnerWhite: RawColor['white'];

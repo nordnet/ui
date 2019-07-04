@@ -124,6 +124,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       negative: a11yColors ? rawColor.a11yNegative : rawColor.negative,
       positive: a11yColors ? rawColor.a11yPositive : rawColor.positive,
       sell: a11yColors ? rawColor.a11yNegative : rawColor.negative,
+      shadow: rawColor.black,
       spinnerBlack: rawColor.black,
       spinnerWhite: rawColor.white,
       svgFill: rawColor.gray0,

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import Color from 'color';
 import { Typography, Flexbox, VisuallyHidden } from '../..';
 import { isElement } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
@@ -25,7 +26,12 @@ const Knob = styled.span`
   margin-top: -${p => p.theme.spacing.unit(KNOB_SIZE / 2)}px;
   border-radius: ${p => p.theme.spacing.unit(KNOB_SIZE / 2)}px;
   box-sizing: border-box;
-  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 3px 1px
+    ${p =>
+      Color(p.theme.color.shadow)
+        .alpha(0.05)
+        .rgb()
+        .string()};
   transition: transform 0.2s cubic-bezier(0.18, 0.9, 0.35, 1.15);
 `;
 
