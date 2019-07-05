@@ -1,3 +1,3 @@
-import useKeyPress from './KeyPress';
+import useKeyPress from './useKeyPress';
 
 export { useKeyPress };
