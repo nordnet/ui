@@ -24,7 +24,8 @@ const useKeyPress = (targetKey: string) => {
       window.removeEventListener('keydown', downHandler);
       window.removeEventListener('keyup', upHandler);
     };
-  }, []); // Empty array makes effect only run on mount and unmount
+  }, []); // eslint-disable-line
+  // Empty array on the line above makes effect only run on mount and unmount
 
   return keyPressed;
 };
