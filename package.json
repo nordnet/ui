@@ -61,7 +61,9 @@
   "dependencies": {
     "color": "^3.1.1",
     "ramda": "^0.26.1",
+    "react-focus-lock": "^2.0.3",
     "react-intl": "^2.8.0",
+    "react-remove-scroll": "^2.0.4",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "styled-components": "^4.2.0"

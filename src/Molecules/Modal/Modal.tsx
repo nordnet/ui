@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
+import { RemoveScroll } from 'react-remove-scroll';
+import FocusLock from 'react-focus-lock';
 import styled from 'styled-components';
 import Color from 'color';
+import { useKeyPress } from '../../common/Hooks';
 import { Props, DialogProps } from './Modal.types';
 import NormalizedElements from '../../common/NormalizedElements';
 import { Flexbox, Typography, Icon, Box } from '../..';
@@ -79,7 +83,6 @@ export const Modal: React.FC<Props> = ({ children, className, title, open, onClo
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    // doing this for the show animation
     setShow(open);
   }, [open]);
 
@@ -89,34 +92,45 @@ export const Modal: React.FC<Props> = ({ children, className, title, open, onClo
     }
   };
 
-  if (!open) {
-    return null;
+  if (useKeyPress('Escape')) {
+    closeHandler();
   }
 
-  return (
-    <>
-      <Dialog className={className} aria-labelledby="dialogTitle" role="dialog" show={show}>
-        <Box mb={2}>
-          <Flexbox container alignItems="center">
-            {title && (
-              <Flexbox item>
-                <Typography as="h2" type="title2">
-                  {title}
-                </Typography>
-              </Flexbox>
-            )}
-            <RightAlignedFlex item>
-              <Button type="button" aria-label="Close this dialog window" onClick={closeHandler}>
-                <Icon.Cross size={5} title="Close this dialog" />
-              </Button>
-            </RightAlignedFlex>
-          </Flexbox>
-        </Box>
-        <Content>{children}</Content>
-      </Dialog>
-      <Backdrop />
-    </>
-  );
+  return open
+    ? createPortal(
+        <>
+          <FocusLock>
+            <RemoveScroll>
+              <Dialog className={className} aria-labelledby="dialogTitle" role="dialog" show={show}>
+                <Box mb={2}>
+                  <Flexbox container alignItems="center">
+                    {title && (
+                      <Flexbox item>
+                        <Typography as="h2" type="title2">
+                          {title}
+                        </Typography>
+                      </Flexbox>
+                    )}
+                    <RightAlignedFlex item>
+                      <Button
+                        type="button"
+                        aria-label="Close this dialog window"
+                        onClick={closeHandler}
+                      >
+                        <Icon.Cross size={5} title="Close this dialog" />
+                      </Button>
+                    </RightAlignedFlex>
+                  </Flexbox>
+                </Box>
+                <Content>{children}</Content>
+              </Dialog>
+            </RemoveScroll>
+          </FocusLock>
+          <Backdrop />
+        </>,
+        document.body,
+      )
+    : null;
 };
 
 Modal.displayName = 'Modal';
