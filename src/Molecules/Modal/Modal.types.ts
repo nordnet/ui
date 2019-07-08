@@ -1,8 +1,8 @@
 export type Props = {
   className?: string;
   onClose?: Function;
-  title?: React.ReactNode;
-  open: boolean;
+  title?: string;
+  open?: boolean;
 };
 
 export type DialogProps = {

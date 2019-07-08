@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Color from 'color';
 import { Props, DialogProps } from './Modal.types';
 import NormalizedElements from '../../common/NormalizedElements';
+import { isBoolean } from '../../common/utils';
 import { Flexbox, Typography, Icon, Box, useKeyPress } from '../..';
 
 const Backdrop = styled.div`
@@ -77,14 +78,26 @@ const Content = styled.div`
   overflow-y: auto;
 `;
 
-export const Modal: React.FC<Props> = ({ children, className, title, open, onClose }) => {
+export const Modal: React.FC<Props> = ({
+  children,
+  className,
+  title,
+  open: openExternal,
+  onClose,
+}) => {
+  const isControlled = isBoolean(openExternal);
+  const [openInternal, setOpenInternal] = useState(true);
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    setShow(open);
-  }, [open]);
+    const openState = isControlled ? openExternal : openInternal;
+
+    setShow(openState!);
+  }, [openExternal, openInternal]); // eslint-disable-line
 
   const closeHandler = () => {
+    setOpenInternal(false);
+
     if (onClose) {
       onClose();
     }
@@ -94,7 +107,9 @@ export const Modal: React.FC<Props> = ({ children, className, title, open, onClo
     closeHandler();
   }
 
-  return open ? (
+  const render = isControlled ? openExternal : openInternal;
+
+  return render ? (
     <>
       <FocusLock>
         <RemoveScroll>
@@ -102,7 +117,7 @@ export const Modal: React.FC<Props> = ({ children, className, title, open, onClo
             className={className}
             role="dialog"
             show={show}
-            {...(title ? { 'aria-title': title } : {})} // TODO: move to aria-labeledby when SSR uid works
+            {...(title ? { 'aria-label': title } : {})} // TODO: move to aria-labeledby when SSR uid works
           >
             <Box mb={2}>
               <Flexbox container alignItems="center">
@@ -114,11 +129,7 @@ export const Modal: React.FC<Props> = ({ children, className, title, open, onClo
                   </Flexbox>
                 )}
                 <RightAlignedFlex item>
-                  <Button
-                    type="button"
-                    aria-label="Close this dialog window"
-                    onClick={closeHandler}
-                  >
+                  <Button type="button" onClick={closeHandler}>
                     <Icon.Cross size={5} title="Close this dialog" />
                   </Button>
                 </RightAlignedFlex>

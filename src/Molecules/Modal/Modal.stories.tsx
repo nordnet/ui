@@ -20,6 +20,7 @@ storiesOf('Molecules | Modal', module)
       const onOpen = () => {
         setOpen(true);
       };
+
       const onClose = () => {
         setOpen(false);
       };
@@ -69,6 +70,7 @@ storiesOf('Molecules | Modal', module)
       const onOpen = () => {
         setOpen(true);
       };
+
       const onClose = () => {
         setOpen(false);
       };
@@ -111,15 +113,12 @@ storiesOf('Molecules | Modal', module)
     };
     return <Example />;
   })
-  .add('Unmounted when not open', () => {
+  .add('Uncontrolled behavior', () => {
     const Example = () => {
-      const [open, setOpen] = useState(true);
+      const [open, setOpen] = useState(false);
 
       const onOpen = () => {
         setOpen(true);
-      };
-      const onClose = () => {
-        setOpen(false);
       };
 
       return (
@@ -129,7 +128,7 @@ storiesOf('Molecules | Modal', module)
           </button>
           <ScrollMaker />
           {open && (
-            <Modal onClose={onClose} title="Dialog information" open={open}>
+            <Modal title="Dialog information">
               <Box mb={2}>
                 <Typography type="primary" as="p">
                   Modals should be used with care as they are quite intrusive on the user experience
