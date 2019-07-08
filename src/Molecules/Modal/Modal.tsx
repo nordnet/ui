@@ -3,10 +3,9 @@ import { RemoveScroll } from 'react-remove-scroll';
 import FocusLock from 'react-focus-lock';
 import styled from 'styled-components';
 import Color from 'color';
-import { useKeyPress } from '../../common/Hooks';
 import { Props, DialogProps } from './Modal.types';
 import NormalizedElements from '../../common/NormalizedElements';
-import { Flexbox, Typography, Icon, Box } from '../..';
+import { Flexbox, Typography, Icon, Box, useKeyPress } from '../..';
 
 const Backdrop = styled.div`
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
@@ -99,7 +98,12 @@ export const Modal: React.FC<Props> = ({ children, className, title, open, onClo
     <>
       <FocusLock>
         <RemoveScroll>
-          <Dialog className={className} aria-labelledby="dialogTitle" role="dialog" show={show}>
+          <Dialog
+            className={className}
+            role="dialog"
+            show={show}
+            {...(title ? { 'aria-title': title } : {})} // TODO: move to aria-labeledby when SSR uid works
+          >
             <Box mb={2}>
               <Flexbox container alignItems="center">
                 {title && (

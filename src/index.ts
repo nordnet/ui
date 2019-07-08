@@ -40,6 +40,9 @@ import TabsNav from './Molecules/TabsNav';
 import CardWithTabs from './Organisms/CardWithTabs';
 import Development from './Organisms/Development';
 
+/** Hooks */
+import useKeyPress from './common/Hooks/useKeyPress';
+
 import theme, { createTheme } from './theme';
 /** Runtime code */
 export {
@@ -87,5 +90,6 @@ export {
   Time,
   Tr,
   Typography,
+  useKeyPress,
   VisuallyHidden,
 };
