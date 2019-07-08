@@ -22,7 +22,8 @@ export type ContainerProps = {
     | 'flex-start'
     | 'flex-end'
     | 'self-start'
-    | 'self-end';
+    | 'self-end'
+    | 'baseline';
   alignContent?:
     | 'center'
     | 'start'

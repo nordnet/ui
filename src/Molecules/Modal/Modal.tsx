@@ -63,6 +63,7 @@ const Dialog = styled.div<DialogProps>`
 
 const Button = styled(NormalizedElements.Button)`
   background: none;
+  margin-left: ${p => p.theme.spacing.unit(4)}px;
   padding: 0;
   border: 0;
   cursor: pointer;
@@ -120,7 +121,7 @@ export const Modal: React.FC<Props> = ({
             {...(title ? { 'aria-label': title } : {})} // TODO: move to aria-labeledby when SSR uid works
           >
             <Box mb={2}>
-              <Flexbox container alignItems="center">
+              <Flexbox container alignItems="baseline">
                 {title && (
                   <Flexbox item>
                     <Typography as="h2" type="title2">
