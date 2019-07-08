@@ -5,16 +5,20 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
   margin-bottom: 8px;
 }
 
+.c4 {
+  box-sizing: border-box;
+}
+
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c4 {
-  box-sizing: border-box;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 .c8 {
@@ -68,7 +72,7 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
   overflow: visible;
   text-transform: none;
   background: none;
-  margin: 4px 0 0 16px;
+  margin-left: 16px;
   padding: 0;
   border: 0;
   cursor: pointer;
@@ -357,16 +361,20 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
   margin-bottom: 8px;
 }
 
+.c5 {
+  box-sizing: border-box;
+}
+
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c5 {
-  box-sizing: border-box;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 .c7 {
@@ -411,7 +419,7 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
   overflow: visible;
   text-transform: none;
   background: none;
-  margin: 4px 0 0 16px;
+  margin-left: 16px;
   padding: 0;
   border: 0;
   cursor: pointer;
