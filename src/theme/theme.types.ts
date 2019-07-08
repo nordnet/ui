@@ -93,12 +93,16 @@ export type Theme = {
     disabledBackground: RawColor['gray6'];
     /** white */
     buttonSecondaryBackground: RawColor['white'];
-    /** gray2 */
-    modalBackdrop: RawColor['gray2'];
+    /** 63 percent of gray2 */
+    modalBackdrop: string;
     /** white */
     module: RawColor['white'];
-    /** black */
-    shadow: RawColor['black'];
+    /** 3 percent of black */
+    shadowCard: string;
+    /** 3 percent of black */
+    shadowModal: string;
+    /** 5 percent of black */
+    shadowSwitch: string;
     /** black */
     spinnerBlack: RawColor['black'];
     /** white */

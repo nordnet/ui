@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
 import FocusLock from 'react-focus-lock';
 import styled from 'styled-components';
-import Color from 'color';
 import { Props, DialogProps } from './Modal.types';
 import NormalizedElements from '../../common/NormalizedElements';
 import { isBoolean } from '../../common/utils';
@@ -10,11 +9,7 @@ import { Flexbox, Typography, Icon, Box, useKeyPress } from '../..';
 
 const Backdrop = styled.div`
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
-    background-color: ${({ theme }) =>
-      Color(theme.color.modalBackdrop)
-        .alpha(0.63)
-        .rgb()
-        .string()};
+    background-color: ${({ theme }) => theme.color.modalBackdrop};
     position: fixed;
     top: 0;
     left: 0;
@@ -42,12 +37,7 @@ const Dialog = styled.div<DialogProps>`
     width: ${({ theme }) => theme.spacing.unit(120)}px;
     top: 50%;
     left: 50%;
-    box-shadow: 0 2px 2px 0
-      ${({ theme }) =>
-        Color(theme.color.shadow)
-          .alpha(0.03)
-          .rgb()
-          .string()};
+    box-shadow: 0 2px 2px 0 ${({ theme }) => theme.color.shadowModal};
     transform: translate(-50%, 0%);
     opacity: 0;
     transition: transform 0.3s ease-in, opacity 0.3s ease-in;
