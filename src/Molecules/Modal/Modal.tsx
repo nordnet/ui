@@ -4,24 +4,24 @@ import { isBoolean } from '../../common/utils';
 import { ModalInner } from './ModalInner';
 
 export const Modal: React.FC<Props> = ({
-  open: openExternal,
+  open: isOpenExternal,
   onClose: onCloseExternal,
   ...rest
 }) => {
-  const isControlled = isBoolean(openExternal);
-  const [openInternal, setOpenInternal] = useState(true);
+  const isControlled = isBoolean(isOpenExternal);
+  const [isOpenInternal, setIsOpenInternal] = useState(true);
 
   const onClose = () => {
-    setOpenInternal(false);
+    setIsOpenInternal(false);
 
     if (onCloseExternal) {
       onCloseExternal();
     }
   };
 
-  const render = isControlled ? openExternal : openInternal;
+  const shouldRender = isControlled ? isOpenExternal : isOpenInternal;
 
-  return render ? <ModalInner {...rest} onClose={onClose} /> : null;
+  return shouldRender ? <ModalInner {...rest} onClose={onClose} /> : null;
 };
 
 Modal.displayName = 'Modal';
