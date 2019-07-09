@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { WrapperProps } from './Modal.types';
+import { Props } from './Modal.types';
 import { isBoolean } from '../../common/utils';
 import { ModalInner } from './ModalInner';
 
-export const Modal: React.FC<WrapperProps> = ({
+export const Modal: React.FC<Props> = ({
   open: openExternal,
   onClose: onCloseExternal,
   ...rest

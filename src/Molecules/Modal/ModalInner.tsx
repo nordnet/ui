@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
 import FocusLock from 'react-focus-lock';
 import styled from 'styled-components';
-import { Props, DialogProps } from './Modal.types';
+import { InnerProps, DialogProps } from './Modal.types';
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Flexbox, Typography, Icon, Box, useKeyPress } from '../..';
@@ -69,7 +69,7 @@ const Content = styled.div`
   overflow-y: auto;
 `;
 
-export const ModalInner: React.FC<Props> = ({ children, className, title, onClose }) => {
+export const ModalInner: React.FC<InnerProps> = ({ children, className, title, onClose }) => {
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
 
