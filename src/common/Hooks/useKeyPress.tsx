@@ -1,19 +1,25 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 
 const useKeyPress = (targetKey: string) => {
   const [keyPressed, setKeyPressed] = useState(false);
 
-  const downHandler = (e: KeyboardEvent) => {
-    if (e.key === targetKey) {
-      setKeyPressed(true);
-    }
-  };
+  const downHandler = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key === targetKey) {
+        setKeyPressed(true);
+      }
+    },
+    [targetKey],
+  );
 
-  const upHandler = (e: KeyboardEvent) => {
-    if (e.key === targetKey) {
-      setKeyPressed(false);
-    }
-  };
+  const upHandler = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key === targetKey) {
+        setKeyPressed(false);
+      }
+    },
+    [targetKey],
+  );
 
   useEffect(() => {
     window.addEventListener('keydown', downHandler);
@@ -24,7 +30,7 @@ const useKeyPress = (targetKey: string) => {
       window.removeEventListener('keydown', downHandler);
       window.removeEventListener('keyup', upHandler);
     };
-  }, []); // eslint-disable-line
+  }, [downHandler, upHandler]);
   // Empty array on the line above makes effect only run on mount and unmount
 
   return keyPressed;
