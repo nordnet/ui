@@ -40,7 +40,7 @@ Title.displayName = 'TabsNav.Title';
 
 const StyledUl = styled(List)`
   /** @todo check this out */
-  margin-bottom: -1px;
+  margin-bottom: 1px;
 `;
 
 const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps } => {
