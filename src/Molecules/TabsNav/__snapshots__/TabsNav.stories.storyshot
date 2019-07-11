@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
-.c11 {
+.c10 {
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -37,19 +37,19 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
   margin-left: 16px;
 }
 
-.c4 {
+.c3 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.c10 {
+.c9 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c7 {
+.c6 {
   height: 44px;
   position: relative;
   display: -webkit-inline-box;
@@ -62,18 +62,18 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
   align-items: center;
 }
 
-.c7::after {
+.c6::after {
   content: '';
   background-color: #0046FF;
   display: block;
   width: 100%;
   height: 2px;
   position: absolute;
-  bottom: -1px;
+  bottom: 0;
   left: 0;
 }
 
-.c9 {
+.c8 {
   height: 44px;
   position: relative;
   display: -webkit-inline-box;
@@ -86,7 +86,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -95,7 +95,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
   line-height: 1.5;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -104,7 +104,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
   line-height: 1.5;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -112,10 +112,6 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
-}
-
-.c3 {
-  margin-bottom: 1px;
 }
 
 @media (min-width:768px) {
@@ -142,23 +138,23 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
     className="c1"
   >
     <ul
-      className="c2 c3 c4"
+      className="c2 c3"
     >
       <li
         className="c1"
       >
         <span
-          className="c5"
+          className="c4"
         >
           <a
             aria-current="page"
-            className="c6"
+            className="c5"
             href="#/route1"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
             <span
-              className="c7"
+              className="c6"
               height={11}
             >
               Link to /route1
@@ -170,17 +166,17 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
         className="c1"
       >
         <span
-          className="c8"
+          className="c7"
         >
           <a
             aria-current={false}
-            className="c6"
+            className="c5"
             href="#/route2"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
             <span
-              className="c9"
+              className="c8"
               height={11}
             >
               <div>
@@ -196,14 +192,14 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
     className="c1"
   >
     <div
-      className="c10"
+      className="c9"
     />
   </div>
   <div
     className="c1"
   >
     <div
-      className="c11"
+      className="c10"
     >
       /route1 content
     </div>
@@ -212,7 +208,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
 `;
 
 exports[`Storyshots Molecules | TabsNav Integration: With react-router and height modified 1`] = `
-.c11 {
+.c10 {
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -248,19 +244,19 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
   margin-left: 16px;
 }
 
-.c4 {
+.c3 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.c10 {
+.c9 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c7 {
+.c6 {
   height: 48px;
   position: relative;
   display: -webkit-inline-box;
@@ -273,18 +269,18 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
   align-items: center;
 }
 
-.c7::after {
+.c6::after {
   content: '';
   background-color: #0046FF;
   display: block;
   width: 100%;
   height: 2px;
   position: absolute;
-  bottom: -1px;
+  bottom: 0;
   left: 0;
 }
 
-.c9 {
+.c8 {
   height: 48px;
   position: relative;
   display: -webkit-inline-box;
@@ -297,7 +293,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
   align-items: center;
 }
 
-.c8 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -306,7 +302,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
   line-height: 1.5;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -315,7 +311,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
   line-height: 1.5;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -323,10 +319,6 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
-}
-
-.c3 {
-  margin-bottom: 1px;
 }
 
 @media (min-width:768px) {
@@ -353,23 +345,23 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
     className="c1"
   >
     <ul
-      className="c2 c3 c4"
+      className="c2 c3"
     >
       <li
         className="c1"
       >
         <span
-          className="c5"
+          className="c4"
         >
           <a
             aria-current="page"
-            className="c6"
+            className="c5"
             href="#/route1"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
             <span
-              className="c7"
+              className="c6"
               height={12}
             >
               Link to /route1
@@ -381,17 +373,17 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
         className="c1"
       >
         <span
-          className="c8"
+          className="c7"
         >
           <a
             aria-current={false}
-            className="c6"
+            className="c5"
             href="#/route2"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
             <span
-              className="c9"
+              className="c8"
               height={12}
             >
               <div>
@@ -407,14 +399,14 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
     className="c1"
   >
     <div
-      className="c10"
+      className="c9"
     />
   </div>
   <div
     className="c1"
   >
     <div
-      className="c11"
+      className="c10"
     >
       /route1 content
     </div>
@@ -454,13 +446,13 @@ exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] 
   margin-left: 16px;
 }
 
-.c4 {
+.c3 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.c7 {
+.c6 {
   height: 44px;
   position: relative;
   display: -webkit-inline-box;
@@ -473,7 +465,7 @@ exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] 
   align-items: center;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -482,7 +474,7 @@ exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] 
   line-height: 1.5;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -490,10 +482,6 @@ exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] 
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
-}
-
-.c3 {
-  margin-bottom: 1px;
 }
 
 @media (min-width:768px) {
@@ -520,23 +508,23 @@ exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] 
     className="c1"
   >
     <ul
-      className="c2 c3 c4"
+      className="c2 c3"
     >
       <li
         className="c1"
       >
         <span
-          className="c5"
+          className="c4"
         >
           <a
             aria-current={false}
-            className="c6"
+            className="c5"
             href="#/route2"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
             <span
-              className="c7"
+              className="c6"
               height={11}
             >
               <div>
@@ -550,17 +538,17 @@ exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] 
         className="c1"
       >
         <span
-          className="c5"
+          className="c4"
         >
           <a
             aria-current={false}
-            className="c6"
+            className="c5"
             href="#/route3"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
             <span
-              className="c7"
+              className="c6"
               height={11}
             >
               <div>

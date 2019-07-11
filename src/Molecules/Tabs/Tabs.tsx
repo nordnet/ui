@@ -54,11 +54,6 @@ const Title: TitleComponent = ({
 };
 Title.displayName = 'Tabs.Title';
 
-const StyledUl = styled(List)`
-  /** @todo check this out */
-  margin-bottom: 1px;
-`;
-
 const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps } => {
   if (x == null || typeof x === 'undefined') {
     return true;
@@ -133,14 +128,7 @@ const Tabs: ContainerComponent = ({
 
   return (
     <>
-      <Flexbox
-        container
-        direction="row"
-        gutter={4}
-        as={StyledUl}
-        role="tablist"
-        className={className}
-      >
+      <Flexbox container direction="row" gutter={4} as={List} role="tablist" className={className}>
         {titles}
       </Flexbox>
       <Separator />

@@ -38,11 +38,6 @@ const Title: TitleComponent = ({ active, children, setRef, to, onKeyDown, onClic
 };
 Title.displayName = 'TabsNav.Title';
 
-const StyledUl = styled(List)`
-  /** @todo check this out */
-  margin-bottom: 1px;
-`;
-
 const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps } => {
   if (x == null || typeof x === 'undefined') {
     return true;
@@ -85,7 +80,7 @@ const TabsNav: Component = (withRouter(({ children, location, height = 11 }) => 
   });
 
   return (
-    <Flexbox container direction="row" gutter={4} as={StyledUl} sm={{ gutter: 8 }}>
+    <Flexbox container direction="row" gutter={4} as={List} sm={{ gutter: 8 }}>
       {titles}
     </Flexbox>
   );
