@@ -6,7 +6,7 @@ type Colors = Theme['color'];
 type ColorFn = (t: Theme) => Colors['cta'] | Colors['negative'];
 export type ButtonProps = {
   /** @default primary */
-  variant?: 'primary' | 'secondary';
+  variant?: 'primary' | 'secondary' | 'neutral';
   /** @default m */
   size?: 's' | 'm' | 'l';
   /** @default false */

@@ -20,9 +20,9 @@ exports[`Storyshots Molecules | Button Button primary with colors 1`] = `
   background-color: #0046FF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
-  color: #FFFFFF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -92,9 +92,9 @@ exports[`Storyshots Molecules | Button Button primary with colors 1`] = `
   background-color: #FF1900;
   padding: 4px 12px;
   min-height: 32px;
+  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
-  color: #FFFFFF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -295,9 +295,9 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
   background-color: #0046FF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
-  color: #FFFFFF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -366,9 +366,9 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
   background-color: #0046FF;
   padding: 0px 8px;
   min-height: 24px;
+  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
-  color: #FFFFFF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -437,9 +437,9 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
   background-color: #0046FF;
   padding: 8px 16px;
   min-height: 40px;
+  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
-  color: #FFFFFF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -651,9 +651,9 @@ exports[`Storyshots Molecules | Button Button secondary with colors 1`] = `
   background-color: #FFFFFF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #0046FF;
   position: relative;
   box-sizing: border-box;
-  color: #0046FF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -723,9 +723,9 @@ exports[`Storyshots Molecules | Button Button secondary with colors 1`] = `
   background-color: #FFFFFF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #FF1900;
   position: relative;
   box-sizing: border-box;
-  color: #FF1900;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -926,9 +926,9 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
   background-color: #FFFFFF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #0046FF;
   position: relative;
   box-sizing: border-box;
-  color: #0046FF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -998,9 +998,9 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
   background-color: #FFFFFF;
   padding: 0px 8px;
   min-height: 24px;
+  color: #0046FF;
   position: relative;
   box-sizing: border-box;
-  color: #0046FF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1070,9 +1070,9 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
   background-color: #FFFFFF;
   padding: 8px 16px;
   min-height: 40px;
+  color: #0046FF;
   position: relative;
   box-sizing: border-box;
-  color: #0046FF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1288,9 +1288,9 @@ exports[`Storyshots Molecules | Button Button that is full width 1`] = `
   background-color: #0046FF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
-  color: #FFFFFF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1363,6 +1363,357 @@ exports[`Storyshots Molecules | Button Button that is full width 1`] = `
 </button>
 `;
 
+exports[`Storyshots Molecules | Button Button with different variants 1`] = `
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c3 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background-color: #0046FF;
+  padding: 4px 12px;
+  min-height: 32px;
+  color: #FFFFFF;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c3:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c3::before {
+  content: '';
+  display: block;
+  border: 2px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c5 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background-color: #FFFFFF;
+  padding: 4px 12px;
+  min-height: 32px;
+  color: #0046FF;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5:hover {
+  background-color: hsl(223.5,100%,45%);
+  color: #FFFFFF;
+}
+
+.c5:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c5::before {
+  content: '';
+  display: block;
+  border: 2px solid #0046FF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  padding: 0;
+  min-height: 32px;
+  color: #282823;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c6,
+.c6[type='button'],
+.c6[type='reset'],
+.c6[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c6::-moz-focus-inner,
+.c6[type='button']::-moz-focus-inner,
+.c6[type='reset']::-moz-focus-inner,
+.c6[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c6:-moz-focusring,
+.c6[type='button']:-moz-focusring,
+.c6[type='reset']:-moz-focusring,
+.c6[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c6::before {
+  content: '';
+  display: block;
+  border: 2px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-bottom: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="row"
+>
+  <div
+    className="c1"
+    direction="column"
+  >
+    <div
+      className="c2"
+    >
+      primary
+    </div>
+    <div>
+      <button
+        className="c3"
+        onClick={[Function]}
+        type="button"
+        variant="primary"
+      >
+        <span
+          className="c4"
+        >
+          Button
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="column"
+  >
+    <div
+      className="c2"
+    >
+      secondary
+    </div>
+    <div>
+      <button
+        className="c5"
+        onClick={[Function]}
+        type="button"
+        variant="secondary"
+      >
+        <span
+          className="c4"
+        >
+          Button
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="column"
+  >
+    <div
+      className="c2"
+    >
+      neutral
+    </div>
+    <div>
+      <button
+        className="c6"
+        onClick={[Function]}
+        type="button"
+        variant="neutral"
+      >
+        <span
+          className="c4"
+        >
+          Button
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules | Button Button with type modified 1`] = `
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -1383,9 +1734,9 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
   background-color: #0046FF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
-  color: #FFFFFF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1554,102 +1905,6 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Button Button with variant 1`] = `
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-}
-
-.c0 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  background-color: #FFFFFF;
-  padding: 4px 12px;
-  min-height: 32px;
-  position: relative;
-  box-sizing: border-box;
-  color: #0046FF;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c0,
-.c0[type='button'],
-.c0[type='reset'],
-.c0[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c0::-moz-focus-inner,
-.c0[type='button']::-moz-focus-inner,
-.c0[type='reset']::-moz-focus-inner,
-.c0[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c0:-moz-focusring,
-.c0[type='button']:-moz-focusring,
-.c0[type='reset']:-moz-focusring,
-.c0[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c0:hover {
-  background-color: hsl(223.5,100%,45%);
-  color: #FFFFFF;
-}
-
-.c0:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c0::before {
-  content: '';
-  display: block;
-  border: 2px solid #0046FF;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-<button
-  className="c0"
-  onClick={[Function]}
-  type="button"
-  variant="secondary"
->
-  <span
-    className="c1"
-  >
-    Button
-  </span>
-</button>
-`;
-
 exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
 .c0 {
   box-sizing: border-box;
@@ -1685,9 +1940,9 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
   background-color: #0046FF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
-  color: #FFFFFF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1757,9 +2012,9 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
   background-color: #FFFFFF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #0046FF;
   position: relative;
   box-sizing: border-box;
-  color: #0046FF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1879,9 +2134,9 @@ exports[`Storyshots Molecules | Button Default usage 1`] = `
   background-color: #0046FF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
-  color: #FFFFFF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1953,8 +2208,8 @@ exports[`Storyshots Molecules | Button Default usage 1`] = `
 </button>
 `;
 
-exports[`Storyshots Molecules | Button Disabled button 1`] = `
-.c1 {
+exports[`Storyshots Molecules | Button Disabled Button with different variants 1`] = `
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1963,7 +2218,7 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
   line-height: 1.7142857142857142;
 }
 
-.c0 {
+.c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1973,9 +2228,9 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
   background-color: #EBEBE8;
   padding: 4px 12px;
   min-height: 32px;
+  color: #A0A09B;
   position: relative;
   box-sizing: border-box;
-  color: #A0A09B;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1993,29 +2248,29 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
   cursor: not-allowed;
 }
 
-.c0,
-.c0[type='button'],
-.c0[type='reset'],
-.c0[type='submit'] {
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c0::-moz-focus-inner,
-.c0[type='button']::-moz-focus-inner,
-.c0[type='reset']::-moz-focus-inner,
-.c0[type='submit']::-moz-focus-inner {
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c0:-moz-focusring,
-.c0[type='button']:-moz-focusring,
-.c0[type='reset']:-moz-focusring,
-.c0[type='submit']:-moz-focusring {
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c0::before {
+.c3::before {
   content: '';
   display: block;
   border: 2px solid transparent;
@@ -2026,18 +2281,205 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
   height: calc(100% - 4px);
 }
 
-<button
+.c5 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  padding: 0;
+  min-height: 32px;
+  color: #A0A09B;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5::before {
+  content: '';
+  display: block;
+  border: 2px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-bottom: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
   className="c0"
-  disabled={true}
-  onClick={[Function]}
-  type="button"
+  direction="row"
 >
-  <span
+  <div
     className="c1"
+    direction="column"
   >
-    Button
-  </span>
-</button>
+    <div
+      className="c2"
+    >
+      primary
+    </div>
+    <div>
+      <button
+        className="c3"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+        variant="primary"
+      >
+        <span
+          className="c4"
+        >
+          Button
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="column"
+  >
+    <div
+      className="c2"
+    >
+      secondary
+    </div>
+    <div>
+      <button
+        className="c3"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+        variant="secondary"
+      >
+        <span
+          className="c4"
+        >
+          Button
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="column"
+  >
+    <div
+      className="c2"
+    >
+      neutral
+    </div>
+    <div>
+      <button
+        className="c5"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+        variant="neutral"
+      >
+        <span
+          className="c4"
+        >
+          Button
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Molecules | Button Disabled link looking like a button 1`] = `
@@ -2060,9 +2502,9 @@ exports[`Storyshots Molecules | Button Disabled link looking like a button 1`] =
   background-color: #EBEBE8;
   padding: 4px 12px;
   min-height: 32px;
+  color: #A0A09B;
   position: relative;
   box-sizing: border-box;
-  color: #A0A09B;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2143,9 +2585,9 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
   background-color: #0046FF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
-  color: #FFFFFF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2185,9 +2627,9 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
   background-color: #FFFFFF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #0046FF;
   position: relative;
   box-sizing: border-box;
-  color: #0046FF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2349,9 +2791,9 @@ exports[`Storyshots Molecules | Button Link looking like a button that is full w
   background-color: #0046FF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
-  color: #FFFFFF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2415,9 +2857,9 @@ exports[`Storyshots Molecules | Button Link looking like a button with rel as no
   background-color: #0046FF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
-  color: #FFFFFF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2512,9 +2954,9 @@ Array [
   background-color: #0046FF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
-  color: #FFFFFF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2555,9 +2997,9 @@ Array [
   background-color: #FF1900;
   padding: 4px 12px;
   min-height: 32px;
+  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
-  color: #FFFFFF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2751,9 +3193,9 @@ Array [
   background-color: #FFFFFF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #0046FF;
   position: relative;
   box-sizing: border-box;
-  color: #0046FF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2794,9 +3236,9 @@ Array [
   background-color: #FFFFFF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #FF1900;
   position: relative;
   box-sizing: border-box;
-  color: #FF1900;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2982,9 +3424,9 @@ exports[`Storyshots Molecules | Button Links looking like buttons composed in a 
   background-color: #0046FF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
-  color: #FFFFFF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3025,9 +3467,9 @@ exports[`Storyshots Molecules | Button Links looking like buttons composed in a 
   background-color: #FFFFFF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #0046FF;
   position: relative;
   box-sizing: border-box;
-  color: #0046FF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;

@@ -15,15 +15,67 @@ storiesOf('Molecules | Button', module)
     </Typography>
   ))
   .add('Default usage', () => <Button onClick={action('clicked')}>Button</Button>)
-  .add('Disabled button', () => (
-    <Button disabled onClick={action('clicked')}>
-      Button
-    </Button>
+  .add('Button with different variants', () => (
+    <Display
+      horizontal
+      items={[
+        {
+          title: 'primary',
+          component: (
+            <Button onClick={action('clicked')} variant="primary">
+              Button
+            </Button>
+          ),
+        },
+        {
+          title: 'secondary',
+          component: (
+            <Button onClick={action('clicked')} variant="secondary">
+              Button
+            </Button>
+          ),
+        },
+        {
+          title: 'neutral',
+          component: (
+            <Button onClick={action('clicked')} variant="neutral">
+              Button
+            </Button>
+          ),
+        },
+      ]}
+    />
   ))
-  .add('Button with variant', () => (
-    <Button onClick={action('clicked')} variant="secondary">
-      Button
-    </Button>
+  .add('Disabled Button with different variants', () => (
+    <Display
+      horizontal
+      items={[
+        {
+          title: 'primary',
+          component: (
+            <Button onClick={action('clicked')} variant="primary" disabled>
+              Button
+            </Button>
+          ),
+        },
+        {
+          title: 'secondary',
+          component: (
+            <Button onClick={action('clicked')} variant="secondary" disabled>
+              Button
+            </Button>
+          ),
+        },
+        {
+          title: 'neutral',
+          component: (
+            <Button onClick={action('clicked')} variant="neutral" disabled>
+              Button
+            </Button>
+          ),
+        },
+      ]}
+    />
   ))
   .add('Button primary with colors', () => (
     <Display

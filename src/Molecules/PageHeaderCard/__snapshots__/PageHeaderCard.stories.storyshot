@@ -90,9 +90,9 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
   background-color: #0046FF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
-  color: #FFFFFF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
