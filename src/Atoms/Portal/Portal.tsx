@@ -1,14 +1,25 @@
 import { useRef, useEffect, useMemo } from 'react';
-import { createPortal } from 'react-dom';
+import { createPortal, findDOMNode } from 'react-dom';
 import useSSR from 'use-ssr';
-import { isHTMLElement } from '../../common/utils';
+import { isHTMLElement, isUndefined } from '../../common/utils';
+import { Props } from './Portal.types';
 
-export const Portal: React.FC = ({ children }) => {
+export const Portal: React.FC<Props> = ({ children, attachTo }) => {
   const { isServer, isBrowser } = useSSR();
   const portal = useRef(isBrowser && document.createElement('div'));
   const elToMountTo = useMemo(() => {
-    return isBrowser ? document.body : undefined;
-  }, [isBrowser]);
+    if (isServer) {
+      return null;
+    }
+
+    // ref's  are usually null on init
+    if (!isUndefined(attachTo)) {
+      // dont render if attachTo is specified but not a real HTMLElement
+      return findDOMNode(attachTo) ? attachTo : null;
+    }
+
+    return document.body;
+  }, [attachTo, isServer]);
 
   useEffect(() => {
     if (isBrowser && !portal.current) {
