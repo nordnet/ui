@@ -38,7 +38,7 @@ storiesOf('Atoms | Portal', module)
     };
     return <ControlledExample />;
   })
-  .add('If attachTo prop is wrong then nothing is rendered', () => {
+  .add('If attachTo prop is not a HTMLElement then nothing is rendered', () => {
     const ControlledExample = () => {
       const destination = useRef(null);
 
