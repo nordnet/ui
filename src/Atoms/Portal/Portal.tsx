@@ -5,25 +5,22 @@ import { isHTMLElement, isUndefined } from '../../common/utils';
 import { Props } from './Portal.types';
 
 export const Portal: React.FC<Props> = ({ children, attachTo }) => {
-  const { isServer } = useSSR();
-  const portal = useRef(document.createElement('div'));
+  const { isBrowser, isServer } = useSSR();
+  const portal = useRef(isBrowser && document.createElement('div'));
 
   useEffect(() => {
     const elToMountTo = isUndefined(attachTo) ? document.body : attachTo;
+    const portalNode = portal.current;
 
-    if (isServer || !isHTMLElement(elToMountTo)) {
+    if (isServer || !isHTMLElement(elToMountTo) || !isHTMLElement(portalNode)) {
       return;
     }
-
-    const portalNode = portal.current;
 
     elToMountTo.appendChild(portalNode);
 
     // eslint-disable-next-line consistent-return
     return function cleanup() {
-      if (isHTMLElement(portalNode)) {
-        elToMountTo.removeChild(portalNode);
-      }
+      elToMountTo.removeChild(portalNode);
     };
   }, [attachTo, isServer]);
 
