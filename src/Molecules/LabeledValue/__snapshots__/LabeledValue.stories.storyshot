@@ -170,11 +170,17 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin: -4px;
+  margin-left: -4px;
+  margin-right: -4px;
 }
 
 .c3 > * {
-  padding: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c3 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c5 {
@@ -287,11 +293,17 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin: -4px;
+  margin-left: -4px;
+  margin-right: -4px;
 }
 
 .c3 > * {
-  padding: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c3 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c5 {

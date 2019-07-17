@@ -24,11 +24,17 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 .c2 > * {
-  padding: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c2 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c6 {
@@ -204,11 +210,17 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 .c2 > * {
-  padding: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c2 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c6 {
@@ -386,11 +398,17 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 .c2 > * {
-  padding: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c2 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c6 {
@@ -566,11 +584,17 @@ exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 .c2 > * {
-  padding: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c2 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c6 {

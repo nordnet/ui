@@ -132,11 +132,10 @@ exports[`Storyshots Atoms | Flexbox With breakpoint props 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: -8px;
 }
 
-.c0 > * {
-  padding: 8px;
+.c0 > *:not(:first-child) {
+  padding-top: 16px;
 }
 
 .c2 {
@@ -155,11 +154,10 @@ exports[`Storyshots Atoms | Flexbox With breakpoint props 1`] = `
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin: -12px;
   }
 
-  .c0 > * {
-    padding: 12px;
+  .c0 > *:not(:first-child) {
+    padding-top: 24px;
   }
 }
 
@@ -172,11 +170,17 @@ exports[`Storyshots Atoms | Flexbox With breakpoint props 1`] = `
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    margin: -12px;
+    margin-left: -12px;
+    margin-right: -12px;
   }
 
   .c0 > * {
-    padding: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .c0 > *:not(:first-child) {
+    padding-top: 0;
   }
 }
 
@@ -189,11 +193,17 @@ exports[`Storyshots Atoms | Flexbox With breakpoint props 1`] = `
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    margin: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
   }
 
   .c0 > * {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .c0 > *:not(:first-child) {
+    padding-top: 0;
   }
 }
 
@@ -333,11 +343,17 @@ exports[`Storyshots Atoms | Flexbox With container and item props 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .c0 > * {
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c1 {
@@ -349,11 +365,10 @@ exports[`Storyshots Atoms | Flexbox With container and item props 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: -10px;
 }
 
-.c1 > * {
-  padding: 10px;
+.c1 > *:not(:first-child) {
+  padding-top: 20px;
 }
 
 .c3 {
@@ -415,11 +430,17 @@ exports[`Storyshots Atoms | Flexbox With custom gutter 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .c0 > * {
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c2 {

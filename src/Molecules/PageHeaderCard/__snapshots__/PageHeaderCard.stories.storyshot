@@ -49,11 +49,17 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: -4px;
+  margin-left: -4px;
+  margin-right: -4px;
 }
 
 .c10 > * {
-  padding: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c10 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c7 {
