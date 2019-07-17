@@ -34,7 +34,7 @@ const getBackgroundColor = (props: ThemedStyledProps<ButtonProps, Theme>) => {
   const { disabled, theme, variant, colorFn } = props;
 
   if (isNeutral(variant)) {
-    return ``;
+    return `transparent`;
   }
 
   if (disabled) {
