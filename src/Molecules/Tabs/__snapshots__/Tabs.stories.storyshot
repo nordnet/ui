@@ -132,6 +132,8 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
 .c2 {
   list-style-type: none;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 <span
@@ -349,6 +351,8 @@ exports[`Storyshots Molecules | Tabs Default 1`] = `
 .c2 {
   list-style-type: none;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 <span
@@ -535,6 +539,8 @@ exports[`Storyshots Molecules | Tabs With conditionally hidden tab 1`] = `
 .c3 {
   list-style-type: none;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .c1 {
@@ -715,6 +721,8 @@ exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
 .c3 {
   list-style-type: none;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .c10 {
@@ -940,6 +948,8 @@ exports[`Storyshots Molecules | Tabs With height modified 1`] = `
 .c2 {
   list-style-type: none;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 <span

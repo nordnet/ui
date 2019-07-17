@@ -157,6 +157,8 @@ Array [
 .c5 {
   list-style-type: none;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .c3 {
@@ -408,6 +410,8 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
 .c5 {
   list-style-type: none;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .c3 {
@@ -677,6 +681,8 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
 .c5 {
   list-style-type: none;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .c3 {

@@ -41,6 +41,8 @@ Title.displayName = 'TabsNav.Title';
 const StyledUl = styled.ul`
   list-style-type: none;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 `;
 
 const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps } => {
