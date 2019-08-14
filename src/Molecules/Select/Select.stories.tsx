@@ -12,6 +12,9 @@ storiesOf('Molecules | Select', module)
   .add('Select with placeholder', () => (
     <Select options={options} placeholder="Select option" label="Options" />
   ))
+  .add('Select with bold options', () => (
+    <Select optionWeight="bold" options={options} placeholder="Select option" label="Options" />
+  ))
   .add('Select with overflowing placeholder', () => (
     <div style={{ width: 150 }}>
       <Select
