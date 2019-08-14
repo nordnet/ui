@@ -65,6 +65,7 @@ const Select: SelectComponent = ({
   onChange: onChangeFromProps,
   onBlur: onBlurFromProps,
   onFocus: onFocusFromProps,
+  optionWeight,
 }) => {
   const [focus, setFocus] = useState(false);
   const [value, setValue] = useState();
@@ -128,7 +129,7 @@ const Select: SelectComponent = ({
             </option>
           ))}
         </StyledSelect>
-        <SelectedValue type="secondary" aria-hidden>
+        <SelectedValue weight={optionWeight} type="secondary" aria-hidden>
           {typeof selectedOption !== 'undefined' ? selectedOption.label : placeholder}
         </SelectedValue>
         <Chevron focus={false} />
