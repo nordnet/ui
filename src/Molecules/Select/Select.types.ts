@@ -17,6 +17,7 @@ export type Props = {
   onFocus?: React.FocusEventHandler;
   onBlur?: React.FocusEventHandler;
   className?: string;
+  optionWeight?: string;
 };
 
 export type SelectComponent = React.FunctionComponent<Props>;
