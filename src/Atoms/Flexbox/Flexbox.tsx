@@ -3,9 +3,9 @@ import styled, { css } from 'styled-components';
 import R from 'ramda';
 import { Theme } from '../../theme/theme.types';
 import { Props } from './Flexbox.types';
+import { isUndefined } from '../../common/utils';
 
 const isNumber = (x: any): x is number => x === parseInt(x, 10);
-const isUndefined = (x: any): x is undefined => typeof x === 'undefined';
 
 const getSizeStyles = (size: Props['size']) => {
   const oneCol = 100 / 12;
@@ -29,24 +29,32 @@ const getSizeStyles = (size: Props['size']) => {
   `;
 };
 
-const getGutterStyles = ({
-  direction = 'row',
-  theme,
-  gutter = theme.spacing.gutter,
-}: {
-  theme: Theme;
-  direction?: Props['direction'];
-  gutter?: Props['gutter'];
-}) => {
-  return direction === 'row' || direction === 'row-reverse'
-    ? `
-    margin-top: 0;
-    margin-left: ${theme.spacing.unit(gutter)}px;
-    `
-    : `
-      margin-left: 0;
-      margin-top: ${theme.spacing.unit(gutter)}px;
+const getGutterStyles = (
+  theme: Theme,
+  gutter: Exclude<Props['gutter'], undefined>,
+  direction: Props['direction'],
+) => {
+  if (direction === 'column' || direction === 'column-reverse') {
+    return `
+      & > *:not(:first-child) {
+        padding-top: ${theme.spacing.unit(gutter)}px;
+      }
     `;
+  }
+
+  return `
+    margin-left: -${theme.spacing.unit(gutter / 2)}px;
+    margin-right: -${theme.spacing.unit(gutter / 2)}px;
+
+    & > * {
+      padding-left: ${theme.spacing.unit(gutter / 2)}px;
+      padding-right: ${theme.spacing.unit(gutter / 2)}px;
+
+      &:not(:first-child) {
+        padding-top: 0;
+      }
+    }
+  `;
 };
 
 const getContainerStyles = (p: Props & { theme: Theme }) => `
@@ -57,15 +65,7 @@ const getContainerStyles = (p: Props & { theme: Theme }) => `
   ${p.justifyContent ? `justify-content: ${p.justifyContent};` : ''}
   ${p.alignItems ? `align-items: ${p.alignItems};` : ''}
   ${p.alignContent ? `align-content: ${p.alignContent};` : ''}
-  ${
-    p.gutter
-      ? `
-    & > *:not(:first-child) {
-      ${getGutterStyles(p)}
-    }
-  `
-      : ''
-  }
+  ${p.gutter ? getGutterStyles(p.theme, p.gutter, p.direction) : ''}
 `;
 
 const getItemStyles = (p: Props & { theme: Theme }) => `
@@ -90,6 +90,10 @@ const sanitizeProps = R.omit([
   'alignItems',
   'grow',
   'shrink',
+  'sm',
+  'md',
+  'lg',
+  'xl',
   'basis',
   'order',
   'justifyContent',

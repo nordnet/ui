@@ -10,6 +10,7 @@ export type TitleProps = {
   index: number;
   setRef: (el: HTMLButtonElement | null) => void;
   onKeyDown: (e: React.KeyboardEvent) => void;
+  height?: number;
 };
 
 export type ContainerProps = {
@@ -21,6 +22,7 @@ export type ContainerProps = {
   activeTabIndex?: number;
   children: React.ReactNode;
   className?: string;
+  height?: number;
 };
 
 export type ItemComponent = React.FC<ItemProps>;

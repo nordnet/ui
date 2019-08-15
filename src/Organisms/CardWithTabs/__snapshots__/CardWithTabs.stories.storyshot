@@ -13,7 +13,7 @@ Array [
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c7 {
+.c6 {
   box-sizing: border-box;
 }
 
@@ -26,48 +26,63 @@ Array [
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c4 > * {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .c4 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 16px;
+  padding-top: 0;
 }
 
-.c6 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c13 {
+.c12 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c12 {
-  background: none;
-  display: inline-block;
-  border: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
-  color: #282823;
-  border-bottom: 2px solid transparent;
+.c11 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .c10 {
-  background: none;
-  display: inline-block;
-  border: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
-  color: #282823;
-  border-bottom: 2px solid #0046FF;
-}
-
-.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -76,7 +91,7 @@ Array [
   line-height: 1.7142857142857142;
 }
 
-.c8 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -98,7 +113,7 @@ Array [
   padding: 20px;
 }
 
-.c9 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -106,37 +121,44 @@ Array [
   overflow: visible;
   text-transform: none;
   background: none;
-  display: inline-block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   border: none;
   margin: 0;
   padding: 0;
   cursor: pointer;
+  font-weight: inherit;
 }
 
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 .c5 {
-  margin-bottom: -1px;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .c3 {
@@ -163,82 +185,76 @@ Array [
         Title for the card
       </h2>
     </header>
-    <div>
-      <ul
-        className="c3 c4 c5 c6"
+    <ul
+      className="c3 c4 c5"
+      direction="row"
+      role="tablist"
+    >
+      <li
+        className="c6"
+        role="presentation"
       >
-        <li
+        <span
           className="c7"
-          role="presentation"
         >
-          <span
+          <button
+            aria-selected={true}
             className="c8"
+            id="tabs-tab-0"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="tab"
+            tabIndex={0}
+            type="button"
           >
-            <button
-              aria-selected={true}
+            <span
               className="c9"
-              id="tabs-tab-0"
-              onClick={[Function]}
-              onKeyDown={[Function]}
-              role="tab"
-              tabIndex={0}
-              type="button"
+              height={8}
             >
-              <div
-                className="c10"
-              >
-                <span
-                  className="c8"
-                >
-                  Tab title 1
-                </span>
-              </div>
-            </button>
-          </span>
-        </li>
-        <li
-          className="c7"
-          role="presentation"
+              Tab title 1
+            </span>
+          </button>
+        </span>
+      </li>
+      <li
+        className="c6"
+        role="presentation"
+      >
+        <span
+          className="c10"
         >
-          <span
-            className="c11"
+          <button
+            aria-selected={false}
+            className="c8"
+            id="tabs-tab-1"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
           >
-            <button
-              aria-selected={false}
-              className="c9"
-              id="tabs-tab-1"
-              onClick={[Function]}
-              onKeyDown={[Function]}
-              role="tab"
-              tabIndex={-1}
-              type="button"
+            <span
+              className="c11"
+              height={8}
             >
-              <div
-                className="c12"
-              >
-                <span
-                  className="c11"
-                >
-                  Tab title 2
-                </span>
-              </div>
-            </button>
-          </span>
-        </li>
-      </ul>
-      <div
-        className="c13"
-      />
-      <div>
-        <section
-          aria-labelledby="tabs-tab-0"
-          hidden={false}
-          id="tabs-tabpanel-0"
-          role="tabpanel"
-        >
-          Tab content 1
-        </section>
-      </div>
+              Tab title 2
+            </span>
+          </button>
+        </span>
+      </li>
+    </ul>
+    <div
+      className="c12"
+    />
+    <div>
+      <section
+        aria-labelledby="tabs-tab-0"
+        hidden={false}
+        id="tabs-tabpanel-0"
+        role="tabpanel"
+      >
+        Tab content 1
+      </section>
     </div>
   </div>,
 ]
@@ -250,7 +266,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c7 {
+.c6 {
   box-sizing: border-box;
 }
 
@@ -263,48 +279,63 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c4 > * {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .c4 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 16px;
+  padding-top: 0;
 }
 
-.c6 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c14 {
+.c13 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c12 {
-  background: none;
-  display: inline-block;
-  border: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
-  color: #282823;
-  border-bottom: 2px solid transparent;
+.c11 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .c10 {
-  background: none;
-  display: inline-block;
-  border: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
-  color: #282823;
-  border-bottom: 2px solid #0046FF;
-}
-
-.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -313,7 +344,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   line-height: 1.7142857142857142;
 }
 
-.c8 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -335,7 +366,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   padding: 20px;
 }
 
-.c9 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -343,51 +374,58 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   overflow: visible;
   text-transform: none;
   background: none;
-  display: inline-block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   border: none;
   margin: 0;
   padding: 0;
   cursor: pointer;
+  font-weight: inherit;
 }
 
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 .c5 {
-  margin-bottom: -1px;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .c3 {
   padding: 0 20px;
 }
 
-.c15 {
+.c14 {
   padding-top: 16px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
 }
 
-.c13 {
+.c12 {
   color: red;
 }
 
@@ -411,90 +449,84 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
       Title for the card
     </h2>
   </header>
-  <div>
-    <ul
-      className="c3 c4 c5 c6"
+  <ul
+    className="c3 c4 c5"
+    direction="row"
+    role="tablist"
+  >
+    <li
+      className="c6"
+      role="presentation"
     >
-      <li
+      <span
         className="c7"
-        role="presentation"
       >
-        <span
+        <button
+          aria-selected={true}
           className="c8"
+          id="tabs-tab-0"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={0}
+          type="button"
         >
-          <button
-            aria-selected={true}
+          <span
             className="c9"
-            id="tabs-tab-0"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            role="tab"
-            tabIndex={0}
-            type="button"
+            height={8}
           >
-            <div
-              className="c10"
-            >
-              <span
-                className="c8"
-              >
-                Tab title 1
-              </span>
-            </div>
-          </button>
-        </span>
-      </li>
-      <li
-        className="c7"
-        role="presentation"
+            Tab title 1
+          </span>
+        </button>
+      </span>
+    </li>
+    <li
+      className="c6"
+      role="presentation"
+    >
+      <span
+        className="c10"
       >
-        <span
-          className="c11"
+        <button
+          aria-selected={false}
+          className="c8"
+          id="tabs-tab-1"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={-1}
+          type="button"
         >
-          <button
-            aria-selected={false}
-            className="c9"
-            id="tabs-tab-1"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            role="tab"
-            tabIndex={-1}
-            type="button"
+          <span
+            className="c11"
+            height={8}
           >
             <div
               className="c12"
             >
-              <span
-                className="c11"
-              >
-                <div
-                  className="c13"
-                >
-                  Custom title component
-                </div>
-              </span>
+              Custom title component
             </div>
-          </button>
-        </span>
-      </li>
-    </ul>
-    <div
-      className="c14"
-    />
-    <div>
-      <section
-        aria-labelledby="tabs-tab-0"
-        hidden={false}
-        id="tabs-tabpanel-0"
-        role="tabpanel"
+          </span>
+        </button>
+      </span>
+    </li>
+  </ul>
+  <div
+    className="c13"
+  />
+  <div>
+    <section
+      aria-labelledby="tabs-tab-0"
+      hidden={false}
+      id="tabs-tabpanel-0"
+      role="tabpanel"
+    >
+      <div
+        className="c14"
       >
-        <div
-          className="c15"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum nulla tincidunt interdum ornare. Duis blandit nibh nec dui varius lobortis. Sed viverra, metus quis vulputate accumsan, eros lacus semper nisl, in commodo risus lacus ut libero. Aliquam augue quam, sollicitudin quis lectus quis, viverra gravida nibh. Quisque vel mi non tortor sollicitudin sodales id eget odio. Sed mollis eleifend leo, et sagittis mi. Curabitur cursus, elit ut porta vehicula, elit ipsum sagittis erat, in dapibus sapien ipsum ut purus. Aliquam sit amet egestas lacus. Aenean leo augue, malesuada id nibh ac, malesuada fermentum tortor. Vivamus dolor ante, fringilla vel consequat in, hendrerit vel metus. Quisque eget ornare turpis. Suspendisse a lectus tortor. Sed ultrices lorem nibh, ultrices pulvinar eros dictum sit amet. Quisque et ipsum in tellus pharetra tempus. Morbi non nunc rhoncus nisi pellentesque sagittis. Ut eu sem et ante facilisis consequat. Aliquam lorem ligula, laoreet quis maximus vel, rhoncus ut odio. Mauris interdum aliquet dolor ac efficitur. Maecenas egestas porttitor tempor. In at dui tellus. Praesent at lorem metus. Quisque ultricies, nulla sed pulvinar volutpat, libero enim auctor erat, nec consectetur purus lacus sed orci. In eleifend a risus at pulvinar. Donec ultricies justo et ligula venenatis, sed ultrices nunc dignissim.
-        </div>
-      </section>
-    </div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum nulla tincidunt interdum ornare. Duis blandit nibh nec dui varius lobortis. Sed viverra, metus quis vulputate accumsan, eros lacus semper nisl, in commodo risus lacus ut libero. Aliquam augue quam, sollicitudin quis lectus quis, viverra gravida nibh. Quisque vel mi non tortor sollicitudin sodales id eget odio. Sed mollis eleifend leo, et sagittis mi. Curabitur cursus, elit ut porta vehicula, elit ipsum sagittis erat, in dapibus sapien ipsum ut purus. Aliquam sit amet egestas lacus. Aenean leo augue, malesuada id nibh ac, malesuada fermentum tortor. Vivamus dolor ante, fringilla vel consequat in, hendrerit vel metus. Quisque eget ornare turpis. Suspendisse a lectus tortor. Sed ultrices lorem nibh, ultrices pulvinar eros dictum sit amet. Quisque et ipsum in tellus pharetra tempus. Morbi non nunc rhoncus nisi pellentesque sagittis. Ut eu sem et ante facilisis consequat. Aliquam lorem ligula, laoreet quis maximus vel, rhoncus ut odio. Mauris interdum aliquet dolor ac efficitur. Maecenas egestas porttitor tempor. In at dui tellus. Praesent at lorem metus. Quisque ultricies, nulla sed pulvinar volutpat, libero enim auctor erat, nec consectetur purus lacus sed orci. In eleifend a risus at pulvinar. Donec ultricies justo et ligula venenatis, sed ultrices nunc dignissim.
+      </div>
+    </section>
   </div>
 </div>
 `;
@@ -505,7 +537,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c7 {
+.c6 {
   box-sizing: border-box;
 }
 
@@ -518,48 +550,63 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c4 > * {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .c4 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 16px;
+  padding-top: 0;
 }
 
-.c6 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c13 {
+.c12 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c10 {
-  background: none;
-  display: inline-block;
-  border: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
-  color: #282823;
-  border-bottom: 2px solid transparent;
+.c9 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c12 {
-  background: none;
-  display: inline-block;
-  border: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
-  color: #282823;
-  border-bottom: 2px solid #0046FF;
+.c11 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c8 {
+.c11::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -568,7 +615,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   line-height: 1.7142857142857142;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -590,7 +637,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   padding: 20px;
 }
 
-.c9 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -598,37 +645,44 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   overflow: visible;
   text-transform: none;
   background: none;
-  display: inline-block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   border: none;
   margin: 0;
   padding: 0;
   cursor: pointer;
+  font-weight: inherit;
 }
 
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 .c5 {
-  margin-bottom: -1px;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .c3 {
@@ -655,82 +709,76 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
       Title for the card
     </h2>
   </header>
-  <div>
-    <ul
-      className="c3 c4 c5 c6"
+  <ul
+    className="c3 c4 c5"
+    direction="row"
+    role="tablist"
+  >
+    <li
+      className="c6"
+      role="presentation"
     >
-      <li
+      <span
         className="c7"
-        role="presentation"
       >
-        <span
+        <button
+          aria-selected={false}
           className="c8"
+          id="tabs-tab-0"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={-1}
+          type="button"
         >
-          <button
-            aria-selected={false}
+          <span
             className="c9"
-            id="tabs-tab-0"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            role="tab"
-            tabIndex={-1}
-            type="button"
+            height={8}
           >
-            <div
-              className="c10"
-            >
-              <span
-                className="c8"
-              >
-                Tab title 1
-              </span>
-            </div>
-          </button>
-        </span>
-      </li>
-      <li
-        className="c7"
-        role="presentation"
+            Tab title 1
+          </span>
+        </button>
+      </span>
+    </li>
+    <li
+      className="c6"
+      role="presentation"
+    >
+      <span
+        className="c10"
       >
-        <span
-          className="c11"
+        <button
+          aria-selected={true}
+          className="c8"
+          id="tabs-tab-1"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={0}
+          type="button"
         >
-          <button
-            aria-selected={true}
-            className="c9"
-            id="tabs-tab-1"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            role="tab"
-            tabIndex={0}
-            type="button"
+          <span
+            className="c11"
+            height={8}
           >
-            <div
-              className="c12"
-            >
-              <span
-                className="c11"
-              >
-                Tab title 2
-              </span>
-            </div>
-          </button>
-        </span>
-      </li>
-    </ul>
-    <div
-      className="c13"
-    />
-    <div>
-      <section
-        aria-labelledby="tabs-tab-1"
-        hidden={false}
-        id="tabs-tabpanel-1"
-        role="tabpanel"
-      >
-        2
-      </section>
-    </div>
+            Tab title 2
+          </span>
+        </button>
+      </span>
+    </li>
+  </ul>
+  <div
+    className="c12"
+  />
+  <div>
+    <section
+      aria-labelledby="tabs-tab-1"
+      hidden={false}
+      id="tabs-tabpanel-1"
+      role="tabpanel"
+    >
+      2
+    </section>
   </div>
 </div>
 `;

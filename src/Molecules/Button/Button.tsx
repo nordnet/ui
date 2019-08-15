@@ -26,15 +26,22 @@ const PADDING_HORIZONTAL = {
 };
 const BORDER_SIZE = 2;
 
+const isPrimary = (variant: ButtonProps['variant']) => variant === 'primary';
 const isSecondary = (variant: ButtonProps['variant']) => variant === 'secondary';
+const isNeutral = (variant: ButtonProps['variant']) => variant === 'neutral';
 
 const getBackgroundColor = (props: ThemedStyledProps<ButtonProps, Theme>) => {
   const { disabled, theme, variant, colorFn } = props;
+
+  if (isNeutral(variant)) {
+    return `background-color: transparent;`;
+  }
+
   if (disabled) {
     return `background-color: ${theme.color.disabledBackground};`;
   }
 
-  if (variant === 'secondary') {
+  if (isSecondary(variant)) {
     if (colorFn) {
       const color = colorFn(theme);
       assert(
@@ -101,7 +108,11 @@ const getMinHeight = (props: ThemedStyledProps<ButtonProps, Theme>) => {
 };
 
 const getPadding = (props: ThemedStyledProps<ButtonProps, Theme>) => {
-  const { size = 'm' } = props;
+  const { size = 'm', variant } = props;
+
+  if (isNeutral(variant)) {
+    return `padding: 0;`;
+  }
 
   return `
     padding:
@@ -114,17 +125,30 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps, Theme>) => {
   const { theme, variant, fullWidth, colorFn, disabled } = props;
 
   const color = colorFn && colorFn(theme);
-  const getColorWithDefault = (defaultColor: string) => {
+  const getColor = () => {
     if (disabled) {
-      return 'transparent';
+      return `color: ${theme.color.disabledText};`;
     }
-    return isSecondary(variant) ? color || theme.color.cta : defaultColor;
+
+    if (isNeutral(variant)) {
+      return `color: ${color || theme.color.text}`;
+    }
+
+    return `color: ${isSecondary(variant) ? color || theme.color.cta : theme.color.buttonText};`;
   };
 
-  if (color) {
+  const getBorderColor = () => {
+    if (disabled || isNeutral(variant)) {
+      return 'transparent';
+    }
+
+    return isSecondary(variant) ? color || theme.color.cta : 'transparent';
+  };
+
+  if ((isPrimary(variant) || isSecondary(variant)) && color) {
     assert(
       color === theme.color.cta || color === theme.color.negative,
-      'Button: color is incorrect, use only `t => t.color.cta` or `t => t.color.negative`',
+      'Button: color is incorrect, use only `t => t.color.cta` or `t => t.color.negative` for primary and secondary variant.',
     );
   }
 
@@ -132,9 +156,9 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps, Theme>) => {
     ${getBackgroundColor(props)}
     ${getPadding(props)}
     ${getMinHeight(props)}
+    ${getColor()}
     position: relative;
     box-sizing: border-box;
-    color: ${disabled ? theme.color.disabledText : getColorWithDefault(theme.color.buttonText)};
     align-items: center;
     justify-content: center;
     ${fullWidth ? `display: flex; width: 100%;` : `display: inline-flex;`}
@@ -142,7 +166,7 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps, Theme>) => {
     &::before {
       content: '';
       display: block;
-      border: ${BORDER_SIZE}px solid ${getColorWithDefault('transparent')};
+      border: ${BORDER_SIZE}px solid ${getBorderColor()};
       position: absolute;
       top: 0;
       left: 0;

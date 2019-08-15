@@ -1,0 +1,925 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.c1 > * {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #FFCF00;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+  border-left: 4px solid #FFCF00;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+.c6 {
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span>
+      <svg
+        aria-hidden="true"
+        className="c2"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <polygon
+          points="12 1 24 23 0 23"
+        />
+        <path
+          d="M11,10 L13,10 L13,16 L11,16 L11,10 Z M11,17 L13,17 L13,19 L11,19 L11,17 Z"
+          fill="#FFFFFF"
+        />
+      </svg>
+    </span>
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Warning, complex child
+      </span>
+      <span
+        className="c5"
+      >
+        <div>
+          <div>
+            The message can also be stuctured as a more complex item than just a string
+          </div>
+          <div>
+            For example, you can provide a 
+            <a
+              className="c6"
+              href="#/"
+              onClick={[Function]}
+            >
+              link to somewhere
+            </a>
+             if you want to
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FeedbackBanner Default usage 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.c1 > * {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+  border-left: 4px solid #0046FF;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span>
+      <svg
+        aria-hidden="true"
+        className="c2"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
+        />
+        <path
+          d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
+          fill="#FFFFFF"
+        />
+      </svg>
+    </span>
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Feedback banner
+      </span>
+      <span
+        className="c5"
+      >
+        Feedback banner should be used within modules to display information that needs attention. Content is flexible, it can contain links and plain text.
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.c4 > * {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c4 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #FF1900;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #FFCF00;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #00D200;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c3 {
+  background-color: #F5F5F5;
+  border-left: 4px solid #0046FF;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+.c9 {
+  background-color: #F5F5F5;
+  border-left: 4px solid #FF1900;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+.c11 {
+  background-color: #F5F5F5;
+  border-left: 4px solid #FFCF00;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+.c13 {
+  background-color: #F5F5F5;
+  border-left: 4px solid #00D200;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      info
+    </div>
+    <div>
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              className="c5"
+              focusable="false"
+              role="presentation"
+              size={5}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
+              />
+              <path
+                d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
+                fill="#FFFFFF"
+              />
+            </svg>
+          </span>
+          <div
+            className="c6"
+          >
+            <span
+              className="c7"
+            >
+              Info
+            </span>
+            <span
+              className="c8"
+            >
+              This is an information message
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      error
+    </div>
+    <div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c4"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              className="c10"
+              focusable="false"
+              role="presentation"
+              size={5}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,23.8695652 C18.627417,23.8695652 24,18.5553799 24,12 C24,5.44462014 18.627417,0.130434783 12,0.130434783 C5.372583,0.130434783 0,5.44462014 0,12 C0,18.5553799 5.372583,23.8695652 12,23.8695652 Z"
+              />
+              <polygon
+                fill="#FFF"
+                points="11.492 6.847 11.492 17.137 12.492 17.137 12.492 6.847"
+                transform="rotate(-45 11.992 11.992)"
+              />
+              <polygon
+                fill="#FFF"
+                points="11.492 6.847 11.492 17.137 12.492 17.137 12.492 6.847"
+                transform="rotate(45 11.992 11.992)"
+              />
+            </svg>
+          </span>
+          <div
+            className="c6"
+          >
+            <span
+              className="c7"
+            >
+              Error
+            </span>
+            <span
+              className="c8"
+            >
+              This is an error message
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      warning
+    </div>
+    <div>
+      <div
+        className="c11"
+      >
+        <div
+          className="c4"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              className="c12"
+              focusable="false"
+              role="presentation"
+              size={5}
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="12 1 24 23 0 23"
+              />
+              <path
+                d="M11,10 L13,10 L13,16 L11,16 L11,10 Z M11,17 L13,17 L13,19 L11,19 L11,17 Z"
+                fill="#FFFFFF"
+              />
+            </svg>
+          </span>
+          <div
+            className="c6"
+          >
+            <span
+              className="c7"
+            >
+              Warning
+            </span>
+            <span
+              className="c8"
+            >
+              This is a warning message
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      success
+    </div>
+    <div>
+      <div
+        className="c13"
+      >
+        <div
+          className="c4"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              className="c14"
+              focusable="false"
+              role="presentation"
+              size={5}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,23.8695652 C18.627417,23.8695652 24,18.5553799 24,12 C24,5.44462014 18.627417,0.130434783 12,0.130434783 C5.372583,0.130434783 0,5.44462014 0,12 C0,18.5553799 5.372583,23.8695652 12,23.8695652 Z"
+              />
+              <polygon
+                fill="#FFF"
+                points="16.474 8.87 17.407 9.797 11 16.174 7.121 12.313 8.053 11.385 11 14.318"
+              />
+            </svg>
+          </span>
+          <div
+            className="c6"
+          >
+            <span
+              className="c7"
+            >
+              Success
+            </span>
+            <span
+              className="c8"
+            >
+              This is a success message
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FeedbackBanner Displaying title 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.c4 > * {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c4 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c3 {
+  background-color: #F5F5F5;
+  border-left: 4px solid #0046FF;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      With title
+    </div>
+    <div>
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              className="c5"
+              focusable="false"
+              role="presentation"
+              size={5}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
+              />
+              <path
+                d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
+                fill="#FFFFFF"
+              />
+            </svg>
+          </span>
+          <div
+            className="c6"
+          >
+            <span
+              className="c7"
+            >
+              This is a title
+            </span>
+            <span
+              className="c8"
+            >
+              This message has a title
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Without title
+    </div>
+    <div>
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              className="c5"
+              focusable="false"
+              role="presentation"
+              size={5}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
+              />
+              <path
+                d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
+                fill="#FFFFFF"
+              />
+            </svg>
+          </span>
+          <div
+            className="c6"
+          >
+            <span
+              className="c8"
+            >
+              This message does not have a title
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
