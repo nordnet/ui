@@ -7,7 +7,7 @@ exports[`Storyshots Molecules | Link Default usage 1`] = `
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c1 {
@@ -43,7 +43,7 @@ exports[`Storyshots Molecules | Link Link with _blank target 1`] = `
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c1 {
@@ -80,7 +80,7 @@ exports[`Storyshots Molecules | Link Link with rel as nofollow 1`] = `
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c1 {
@@ -117,7 +117,7 @@ exports[`Storyshots Molecules | Link With disabled prop results in a disabled bu
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c1 {
@@ -219,7 +219,7 @@ exports[`Storyshots Molecules | Link Without to prop results in a button looking
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c1 {
