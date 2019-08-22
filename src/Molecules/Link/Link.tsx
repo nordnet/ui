@@ -47,7 +47,16 @@ const StyledButton = styled(NormalizedElements.Button)<LinkProps>`
 `;
 
 export const Link: LinkComponent = props => {
-  const { to, children, disabled, className, onClick, target, rel, external } = props;
+  const {
+    to,
+    children,
+    disabled,
+    className,
+    onClick,
+    external,
+    target = external ? '_blank' : undefined,
+    rel = external ? 'noopener noreferrer nofollow' : undefined,
+  } = props;
   const destinationProp = external ? { href: to } : { to };
 
   if (isUndefined(to) || disabled) {

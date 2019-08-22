@@ -36,7 +36,7 @@ exports[`Storyshots Molecules | Link Default usage 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | Link External link with _blank target 1`] = `
+exports[`Storyshots Molecules | Link External link with its default values 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -67,6 +67,7 @@ exports[`Storyshots Molecules | Link External link with _blank target 1`] = `
     external={true}
     href="http://www.google.com"
     onClick={[Function]}
+    rel="noopener noreferrer nofollow"
     target="_blank"
   >
     Link
@@ -74,7 +75,7 @@ exports[`Storyshots Molecules | Link External link with _blank target 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | Link External link with rel as nofollow 1`] = `
+exports[`Storyshots Molecules | Link External link with rel and target overriden 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -103,9 +104,10 @@ exports[`Storyshots Molecules | Link External link with rel as nofollow 1`] = `
   <a
     className="c1"
     external={true}
-    href="http://ww.google.com"
+    href="http://www.google.com"
     onClick={[Function]}
     rel="nofollow"
+    target="_self"
   >
     Link
   </a>
