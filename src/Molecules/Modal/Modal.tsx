@@ -1,14 +1,26 @@
 import React, { useState } from 'react';
 import { Props } from './Modal.types';
 import { isBoolean } from '../../common/utils';
-import { ModalInner } from './ModalInner';
+import { ModalInner, Dialog } from './ModalInner';
 import { Portal } from '../..';
 
-export const Modal: React.FC<Props> = ({
-  open: isOpenExternal,
-  onClose: onCloseExternal,
-  ...rest
-}) => {
+const components = {
+  Dialog,
+};
+
+export const Modal: React.FC<Props> & {
+  /**
+   * This will allow you to customize
+   * inner parts with styled-components
+   * @example
+   * const CustomModal = styled(Modal)`
+   *  ${Modal.components.Dialog} {
+   *    background-color: pink;
+   * }
+   * `
+   * */
+  components: typeof components;
+} = ({ open: isOpenExternal, onClose: onCloseExternal, ...rest }) => {
   const isControlled = isBoolean(isOpenExternal);
   const [isOpenInternal, setIsOpenInternal] = useState(true);
 
@@ -28,5 +40,7 @@ export const Modal: React.FC<Props> = ({
     </Portal>
   ) : null;
 };
+
+Modal.components = components;
 
 Modal.displayName = 'Modal';

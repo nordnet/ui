@@ -21,7 +21,7 @@ const Backdrop = styled(Flexbox)`
   }
 `;
 
-const Dialog = styled(motion.div)<DialogProps>`
+export const Dialog = styled(motion.div)<DialogProps>`
   box-sizing: border-box;
   padding: ${({ theme }) => theme.spacing.unit(5)}px;
   border: 0;
