@@ -35,6 +35,7 @@ export const IconBase: React.FC<InternalProps> = (props: InternalProps) => {
   return (
     <StyledIconBase
       className={className}
+      preserveAspectRatio="xMidYMid meet"
       size={size}
       focusable="false"
       viewBox={viewBox}
