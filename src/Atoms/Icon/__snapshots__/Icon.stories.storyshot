@@ -477,6 +477,31 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div
       className="c2"
     >
+      Import
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="c3"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M0 22h24v2H0v-2zM12.836 0v15.338l6.333-6.383v3.326l-7.5 7.557-7.5-7.558V8.955l6.334 6.382V0h2.333z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       InfoCircle
     </div>
     <div>
@@ -519,6 +544,56 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
         <path
           d="M5.72727273,14.1935484 L5.72727273,3.87096774 L1.27272727,3.87096774 L1.27272727,14.1935484 L5.72727273,14.1935484 Z M5.72727273,15.483871 L1.27272727,15.483871 L3.5,18.0645161 L5.72727273,15.483871 Z M5.72727273,2.58064516 L5.72727273,1.29032258 L1.27272727,1.29032258 L1.27272727,2.58064516 L5.72727273,2.58064516 Z M0,0 L7,0 L7,16.1290323 L3.5,20 L0,16.1290323 L0,0 Z M1.90909091,13.5483871 L1.90909091,4.51612903 L3.18181818,4.51612903 L3.18181818,13.5483871 L1.90909091,13.5483871 Z M3.81818182,13.5483871 L3.81818182,4.51612903 L5.09090909,4.51612903 L5.09090909,13.5483871 L3.81818182,13.5483871 Z M2.54545455,17.4193548 L4.45454545,17.4193548 L4.45454545,18.7096774 L2.54545455,18.7096774 L2.54545455,17.4193548 Z"
           transform="rotate(45,7,21) scale(1.35)"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Plus
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="c3"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      PlusWithCircle
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="c3"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm0 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1 2v7h7v2h-7v7h-2v-7.001L4 13v-2l7-.001V4h2z"
+          fillRule="evenodd"
         />
       </svg>
     </div>
@@ -662,6 +737,31 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
           className="c6"
           d="M12,3.28909585 L9.7518819,10.3333333 L2.94990324,10.3333333 L8.34965326,14.4696321 L6.10344598,21.3821992 L12,17.0986537 L17.896554,21.3821992 L15.6503467,14.4696321 L21.0500967,10.3333333 L14.2481181,10.3333333 L12,3.28909585 Z"
           strokeWidth="2"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      ThreeDots
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="c3"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M21 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM3 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm9 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+          fillRule="evenodd"
         />
       </svg>
     </div>
