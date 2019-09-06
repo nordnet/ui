@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { injectIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
 import { Props, NumberComponent } from './Number.types';
@@ -144,17 +144,31 @@ const NumberInput: NumberComponent & {
     success,
     value: controlledValueRaw,
   } = props;
-  const [uncontrolledValue, setUncontrolledValue] = useState(getNumberAsString(defaultValue));
+  const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
+  const previousInternalValue = usePrevious(internalValue);
+  const inputRef = useRef<HTMLInputElement>(null);
   const isControlled = isString(controlledValueRaw) || isNumber(controlledValueRaw);
   const controlledValue = isControlled && getNumberAsString(controlledValueRaw);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const value = isControlled ? controlledValue : internalValue;
+  const internalValueHasChanged = internalValue !== previousInternalValue;
+  const needToSyncControlledValue = internalValueHasChanged && internalValue !== controlledValue;
+
+  if (onChange) {
+    if (isControlled) {
+      if (needToSyncControlledValue && previousInternalValue) {
+        onChange(internalValue);
+      }
+    } else if (internalValueHasChanged) {
+      onChange(internalValue);
+    }
+  }
+
   const sanitizedNumbers = {
     max: max ? getStringAsNumber(max) : undefined,
     min: min ? getStringAsNumber(min) : undefined,
     step: isNumber(step) ? step : getStringAsNumber(step),
-    uncontrolledValue: getStringAsNumber(uncontrolledValue),
+    uncontrolledValue: getStringAsNumber(value),
   };
-  const previousValue = usePrevious(isControlled ? controlledValue : uncontrolledValue);
 
   const getUpdateValue = (increment: boolean) => {
     return adjustValue({
@@ -168,19 +182,15 @@ const NumberInput: NumberComponent & {
   };
 
   const onStepHandler = (stepUp: boolean) => {
-    if (!isControlled) {
-      const updatedValue = getUpdateValue(stepUp);
-      setUncontrolledValue(updatedValue);
+    const updatedValue = getUpdateValue(stepUp);
+    setInternalValue(updatedValue);
+
+    if (stepUp && onStepUp) {
+      onStepUp();
     }
 
-    if (onStepUp || onStepDown) {
-      if (stepUp && onStepUp) {
-        onStepUp();
-      }
-
-      if (!stepUp && onStepDown) {
-        onStepDown();
-      }
+    if (!stepUp && onStepDown) {
+      onStepDown();
     }
 
     if (inputRef.current) {
@@ -189,40 +199,23 @@ const NumberInput: NumberComponent & {
   };
 
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (!isControlled) {
-      const newValue = e.target.value;
-      setUncontrolledValue(newValue);
-    }
+    setInternalValue(e.target.value);
   };
 
   const onKeyDownHandler = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (!isControlled) {
-      const { key } = e;
-      const upKey = 'ArrowUp';
-      const downKey = 'ArrowDown';
+    const { key } = e;
+    const upKey = 'ArrowUp';
+    const downKey = 'ArrowDown';
 
-      if (key === upKey || key === downKey) {
-        e.preventDefault();
-        onStepHandler(key === upKey);
-      }
+    if (key === upKey || key === downKey) {
+      e.preventDefault();
+      onStepHandler(key === upKey);
     }
 
     if (onKeyDown) {
       onKeyDown(e);
     }
   };
-
-  useEffect(() => {
-    if (onChange) {
-      if (isControlled) {
-        if (previousValue !== controlledValue) {
-          onChange(controlledValue);
-        }
-      } else if (previousValue !== uncontrolledValue) {
-        onChange(uncontrolledValue);
-      }
-    }
-  }, [onChange, previousValue, uncontrolledValue]); // eslint-disable-line
 
   return (
     <FormFieldSimple {...props}>
@@ -247,7 +240,7 @@ const NumberInput: NumberComponent & {
             required,
             step,
             success,
-            value: controlledValue || uncontrolledValue,
+            value,
           }}
           {...(hasError(error) ? { 'aria-invalid': true } : {})}
         />

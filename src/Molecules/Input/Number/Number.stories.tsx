@@ -23,6 +23,10 @@ storiesOf('Molecules | Input / Number', module)
   .add('With value (Controlled behaviour)', () => {
     const Component = () => {
       const [value, setValue] = React.useState(10);
+      const changeHandler = (v: string) => {
+        const newValueAsNumber = parseInt(v, 10);
+        setValue(newValueAsNumber);
+      };
 
       return (
         <>
@@ -30,9 +34,7 @@ storiesOf('Molecules | Input / Number', module)
             fieldId="insert-unique-id"
             label="Label"
             value={value}
-            onChange={action('onChange')}
-            onStepUp={() => setValue(value + 1)}
-            onStepDown={() => setValue(value - 1)}
+            onChange={changeHandler}
           />
           <button type="button" onClick={() => setValue(value - 1)}>
             Decrease

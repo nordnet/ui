@@ -33,7 +33,7 @@ export type Props = {
 
   onStepUp?: () => void;
   onStepDown?: () => void;
-  onChange?: (value?: string) => void;
+  onChange?: (value: string) => void;
   onClick?: React.MouseEventHandler<HTMLInputElement>;
   onBlur?: React.FocusEventHandler<HTMLInputElement>;
   onFocus?: React.FocusEventHandler<HTMLInputElement>;
