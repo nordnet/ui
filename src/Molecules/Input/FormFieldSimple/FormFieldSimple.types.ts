@@ -8,6 +8,7 @@ export type Props = {
   extraInfo?: string;
   fieldId: string;
   required?: boolean;
+  showRequired?: boolean;
   size?: 's';
   /**
    * You need to specify width

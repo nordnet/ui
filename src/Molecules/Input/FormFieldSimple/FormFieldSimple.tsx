@@ -3,21 +3,13 @@ import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Props } from './FormFieldSimple.types';
 
-import { VisuallyHidden, FormLabel, Typography, Flexbox } from '../../..';
+import { VisuallyHidden, FormLabel, Typography } from '../../..';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
 const Wrapper = styled.div<{ width?: string | number }>`
   ${p => (p.width ? `width: ${p.width};` : 'width: 200px;')}
   display: inline-block;
-`;
-
-const InnerWrapper = styled(Flexbox)`
-  position: relative;
-  background-color: #ffffff;
-  height: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
-  box-shadow: 0 1px 3px ${p => p.theme.color.shadowInput};
-  box-sizing: border-box;
 `;
 
 const BottomWrapper = styled(motion.div)``;
@@ -31,19 +23,15 @@ export const FormFieldSimple: React.FC<Props> = ({
   hideLabel,
   label,
   required,
-  size,
+  showRequired = false,
   width,
 }) => (
   <Wrapper width={width} className={className}>
     <FormLabel hideLabel={hideLabel} forId={fieldId}>
       {label}
-      {required ? ' *' : ''}
+      {required && showRequired ? ' *' : ''}
     </FormLabel>
-    <Typography type="secondary" color={t => t.color.text}>
-      <InnerWrapper container {...{ size }}>
-        {children}
-      </InnerWrapper>
-    </Typography>
+    {children}
     <AnimatePresence>
       {hasError(error) ? (
         <BottomWrapper

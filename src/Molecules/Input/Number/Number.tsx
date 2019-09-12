@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { injectIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
 import { Props, NumberComponent } from './Number.types';
-import { Flexbox, VisuallyHidden, Icon } from '../../..';
+import { Flexbox, VisuallyHidden, Icon, Typography } from '../../..';
 import { FormFieldSimple } from '../FormFieldSimple';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber, getNumberAsString } from './utils';
@@ -14,6 +14,10 @@ const hasError = (error?: Props['error']) => error && error !== '';
 
 const width = css<Pick<Props, 'size'>>`
   width: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+`;
+
+const height = css<Pick<Props, 'size'>>`
+  height: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
 `;
 
 const background = css<Pick<Props, 'disabled'>>`
@@ -53,11 +57,15 @@ const borderStyles = css<Pick<Props, 'error' | 'success'>>`
   ${focusBorderStyles}
 `;
 
+const Wrapper = styled(Flexbox)`
+  box-shadow: 0 1px 3px ${p => p.theme.color.shadowInput};
+`;
+
 const Stepper = styled.button.attrs({ type: 'button' })<Partial<Props>>`
   ${width}
+  ${height}
   ${background}
   ${borderStyles}
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -65,26 +73,26 @@ const Stepper = styled.button.attrs({ type: 'button' })<Partial<Props>>`
   align-items: center;
   justify-content: center;
   flex: 1 0 auto;
-
+  
   &:first-of-type {
     order: -1;
   }
-
+  
   &:active:enabled {
     background-color: ${p => p.theme.color.cta};
-
+    
     svg {
       fill: ${p => p.theme.color.buttonText};
     }
   }
-`;
+  `;
 
 const Input = styled(NormalizedElements.Input).attrs({ type: 'number' })<Partial<Props>>`
   ${background}
   ${borderStyles}
-  padding: ${p => p.theme.spacing.unit(2)}px;
+  ${height}
   width: 100%;
-  height: 100%;
+  padding: ${p => p.theme.spacing.unit(2)}px;
   margin: 0 -1px;
   box-sizing: border-box;
   z-index: 1;
@@ -219,44 +227,46 @@ const NumberInput: NumberComponent & {
 
   return (
     <FormFieldSimple {...props}>
-      <Flexbox container item grow={1} alignItems="center">
-        <Input
-          {...{
-            autoFocus,
-            disabled,
-            error,
-            id: fieldId,
-            max,
-            min,
-            name,
-            onBlur,
-            onChange: onChangeHandler,
-            onClick,
-            onFocus,
-            onKeyDown: onKeyDownHandler,
-            onKeyPress,
-            onKeyUp,
-            ref: inputRef,
-            required,
-            step,
-            success,
-            value,
-          }}
-          {...(hasError(error) ? { 'aria-invalid': true } : {})}
-        />
-        {!noSteppers && (
-          <>
-            <Stepper onClick={() => onStepHandler(false)} size={size} disabled={disabled}>
-              <VisuallyHidden>decrease number by {step}</VisuallyHidden>
-              <Icon.Minus size={3} />
-            </Stepper>
-            <Stepper onClick={() => onStepHandler(true)} size={size} disabled={disabled}>
-              <VisuallyHidden>increase number by {step}</VisuallyHidden>
-              <Icon.Plus size={3} />
-            </Stepper>
-          </>
-        )}
-      </Flexbox>
+      <Typography type="secondary" color={t => t.color.text}>
+        <Wrapper container item grow={1} alignItems="center">
+          <Input
+            {...{
+              autoFocus,
+              disabled,
+              error,
+              id: fieldId,
+              max,
+              min,
+              name,
+              onBlur,
+              onChange: onChangeHandler,
+              onClick,
+              onFocus,
+              onKeyDown: onKeyDownHandler,
+              onKeyPress,
+              onKeyUp,
+              ref: inputRef,
+              required,
+              step,
+              success,
+              value,
+            }}
+            {...(hasError(error) ? { 'aria-invalid': true } : {})}
+          />
+          {!noSteppers && (
+            <>
+              <Stepper onClick={() => onStepHandler(false)} size={size} disabled={disabled}>
+                <VisuallyHidden>decrease number by {step}</VisuallyHidden>
+                <Icon.Minus size={3} />
+              </Stepper>
+              <Stepper onClick={() => onStepHandler(true)} size={size} disabled={disabled}>
+                <VisuallyHidden>increase number by {step}</VisuallyHidden>
+                <Icon.Plus size={3} />
+              </Stepper>
+            </>
+          )}
+        </Wrapper>
+      </Typography>
     </FormFieldSimple>
   );
 };
