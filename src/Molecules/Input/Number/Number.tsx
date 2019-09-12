@@ -94,6 +94,7 @@ const Input = styled(NormalizedElements.Input).attrs({ type: 'number' })<Partial
   width: 100%;
   padding: ${p => p.theme.spacing.unit(2)}px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 

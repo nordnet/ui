@@ -139,6 +139,7 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -385,6 +386,7 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -634,6 +636,7 @@ exports[`Storyshots Molecules | Input / Number Required 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -886,6 +889,7 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -1137,6 +1141,7 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -1393,6 +1398,7 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -1645,6 +1651,7 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -1905,6 +1912,7 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -2178,6 +2186,7 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -2451,6 +2460,7 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -2715,6 +2725,7 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -2966,6 +2977,7 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -3144,6 +3156,7 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -3382,6 +3395,7 @@ Array [
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -3420,6 +3434,7 @@ Array [
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -3914,6 +3929,7 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -4167,6 +4183,7 @@ Array [
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
