@@ -1,3 +1,4 @@
+import { Alert } from './components/Alert';
 import { ArrowRight } from './components/ArrowRight';
 import { Attachement } from './components/Attachement';
 import { Bank } from './components/Bank';
@@ -29,6 +30,7 @@ import { WarningTriangle } from './components/WarningTriangle';
 import { Rtmt } from './components/Rtmt';
 
 export default {
+  Alert,
   ArrowRight,
   Attachement,
   Bank,
