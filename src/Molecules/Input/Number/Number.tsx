@@ -248,6 +248,7 @@ const NumberInput: NumberComponent & {
               onKeyUp,
               ref: inputRef,
               required,
+              size,
               step,
               success,
               value,

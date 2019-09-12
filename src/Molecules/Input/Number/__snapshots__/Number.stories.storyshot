@@ -3391,7 +3391,7 @@ Array [
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  height: 40px;
+  height: 32px;
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
@@ -3430,7 +3430,7 @@ Array [
   outline: none;
   border: 1px solid #FF1900;
   position: relative;
-  height: 40px;
+  height: 32px;
   width: 100%;
   padding: 8px;
   margin: 0 -1px;
