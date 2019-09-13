@@ -7,7 +7,6 @@ import { FormFieldSimple } from '../FormFieldSimple';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber, getNumberAsString } from './utils';
 import { isNumber, isString } from '../../../common/utils';
-import { usePrevious } from '../../../common/Hooks';
 import adjustValue from './adjustValue';
 
 const hasError = (error?: Props['error']) => error && error !== '';
@@ -153,24 +152,19 @@ const NumberInput: NumberComponent & {
     success,
     value: controlledValueRaw,
   } = props;
-  const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
-  const previousInternalValue = usePrevious(internalValue);
+  const [internalValue, setInternalValueState] = useState(getNumberAsString(defaultValue));
+  const setInternalValue = (val: string) => {
+    setInternalValueState(val);
+
+    if (typeof onChange === 'function') {
+      onChange(val);
+    }
+  };
+
   const inputRef = useRef<HTMLInputElement>(null);
   const isControlled = isString(controlledValueRaw) || isNumber(controlledValueRaw);
   const controlledValue = isControlled && getNumberAsString(controlledValueRaw);
   const value = isControlled ? controlledValue : internalValue;
-  const internalValueHasChanged = internalValue !== previousInternalValue;
-  const needToSyncControlledValue = internalValueHasChanged && internalValue !== controlledValue;
-
-  if (onChange) {
-    if (isControlled) {
-      if (needToSyncControlledValue && previousInternalValue) {
-        onChange(internalValue);
-      }
-    } else if (internalValueHasChanged) {
-      onChange(internalValue);
-    }
-  }
 
   const sanitizedNumbers = {
     max: max ? getStringAsNumber(max) : undefined,
