@@ -152,9 +152,9 @@ const NumberInput: NumberComponent & {
     success,
     value: controlledValueRaw,
   } = props;
-  const [internalValue, setInternalValueState] = useState(getNumberAsString(defaultValue));
-  const setInternalValue = (val: string) => {
-    setInternalValueState(val);
+  const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
+  const handleValueChange = (val: string) => {
+    setInternalValue(val);
 
     if (typeof onChange === 'function') {
       onChange(val);
@@ -186,7 +186,7 @@ const NumberInput: NumberComponent & {
 
   const onStepHandler = (stepUp: boolean) => {
     const updatedValue = getUpdateValue(stepUp);
-    setInternalValue(updatedValue);
+    handleValueChange(updatedValue);
 
     if (stepUp && onStepUp) {
       onStepUp();
@@ -202,7 +202,7 @@ const NumberInput: NumberComponent & {
   };
 
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setInternalValue(e.target.value);
+    handleValueChange(e.target.value);
   };
 
   const onKeyDownHandler = (e: React.KeyboardEvent<HTMLInputElement>) => {
