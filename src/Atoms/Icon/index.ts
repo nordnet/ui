@@ -1,7 +1,7 @@
-import { Alert } from './components/Alert';
 import { ArrowRight } from './components/ArrowRight';
 import { Attachement } from './components/Attachement';
 import { Bank } from './components/Bank';
+import { Bell } from './components/Bell';
 import { Bolt } from './components/Bolt';
 import { DiagonalWithCircle } from './components/DiagonalWithCircle';
 import { CheckMarkCircle } from './components/CheckMarkCircle';
@@ -33,10 +33,10 @@ import { WarningTriangle } from './components/WarningTriangle';
 import { Rtmt } from './components/Rtmt';
 
 export default {
-  Alert,
   ArrowRight,
   Attachement,
   Bank,
+  Bell,
   Bolt,
   CheckMarkCircle,
   ChevronDown,
