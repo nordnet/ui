@@ -1,3 +1,13 @@
+## [1.38.5](https://github.com/nordnet/ui/compare/v1.38.4...v1.38.5) (2019-09-13)
+
+
+### Bug Fixes
+
+* add alert icon ([77c040e](https://github.com/nordnet/ui/commit/77c040e))
+* remove fill in path ([353e8d5](https://github.com/nordnet/ui/commit/353e8d5))
+* update snapshop ([f26b23e](https://github.com/nordnet/ui/commit/f26b23e))
+* update snapshot ([1fe2a7c](https://github.com/nordnet/ui/commit/1fe2a7c))
+
 ## [1.38.4](https://github.com/nordnet/ui/compare/v1.38.3...v1.38.4) (2019-09-12)
 
 
