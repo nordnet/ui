@@ -3,12 +3,12 @@ import { Attachement } from './components/Attachement';
 import { Bank } from './components/Bank';
 import { Bell } from './components/Bell';
 import { Bolt } from './components/Bolt';
-import { DiagonalWithCircle } from './components/DiagonalWithCircle';
 import { CheckMarkCircle } from './components/CheckMarkCircle';
 import { ChevronDown } from './components/ChevronDown';
 import { ChevronUp } from './components/ChevronUp';
 import { Cross } from './components/Cross';
 import { CrossCircle } from './components/CrossCircle';
+import { DiagonalWithCircle } from './components/DiagonalWithCircle';
 import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
 import { EyeWithPlus } from './components/EyeWithPlus';
@@ -43,9 +43,9 @@ export default {
   ChevronUp,
   Cross,
   CrossCircle,
+  DiagonalWithCircle,
   DirectionDown,
   DirectionUp,
-  DiagonalWithCircle,
   EyeWithPlus,
   EyeWithPlusActive,
   File,
