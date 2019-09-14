@@ -188,11 +188,12 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
       <input
         className="c6"
         id="insert-unique-id"
+        inputMode="decimal"
         min={0}
         onChange={[Function]}
         onKeyDown={[Function]}
         step={1}
-        type="number"
+        type="text"
         value="1"
       />
       <button
@@ -431,11 +432,12 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
         className="c6"
         disabled={true}
         id="insert-unique-id"
+        inputMode="decimal"
         min={0}
         onChange={[Function]}
         onKeyDown={[Function]}
         step="0.25"
-        type="number"
+        type="text"
         value="152.25"
       />
       <button
@@ -685,12 +687,13 @@ exports[`Storyshots Molecules | Input / Number Required 1`] = `
       <input
         className="c6"
         id="insert-unique-id"
+        inputMode="decimal"
         min={0}
         onChange={[Function]}
         onKeyDown={[Function]}
         required={true}
         step={1}
-        type="number"
+        type="text"
         value="91"
       />
       <button
@@ -938,11 +941,12 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
       <input
         className="c6"
         id="insert-unique-id"
+        inputMode="decimal"
         min={0}
         onChange={[Function]}
         onKeyDown={[Function]}
         step="0.005"
-        type="number"
+        type="text"
         value="15.200"
       />
       <button
@@ -1190,6 +1194,7 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
       <input
         className="c6"
         id="insert-unique-id"
+        inputMode="decimal"
         min={0}
         onBlur={[Function]}
         onChange={[Function]}
@@ -1199,7 +1204,7 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
         onKeyPress={[Function]}
         onKeyUp={[Function]}
         step={1}
-        type="number"
+        type="text"
         value="1"
       />
       <button
@@ -1448,11 +1453,12 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
         autoFocus={true}
         className="c6"
         id="insert-unique-id"
+        inputMode="decimal"
         min={0}
         onChange={[Function]}
         onKeyDown={[Function]}
         step="0.25"
-        type="number"
+        type="text"
         value="152.25"
       />
       <button
@@ -1700,11 +1706,12 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
       <input
         className="c6"
         id="insert-unique-id"
+        inputMode="decimal"
         min={0}
         onChange={[Function]}
         onKeyDown={[Function]}
         step="0.1"
-        type="number"
+        type="text"
         value="15.2"
       />
       <button
@@ -1962,11 +1969,12 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
         aria-invalid={true}
         className="c6"
         id="insert-unique-id"
+        inputMode="decimal"
         min={0}
         onChange={[Function]}
         onKeyDown={[Function]}
         step="1"
-        type="number"
+        type="text"
         value="0"
       />
       <button
@@ -2236,11 +2244,12 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
         aria-invalid={true}
         className="c6"
         id="insert-unique-id"
+        inputMode="decimal"
         min={0}
         onChange={[Function]}
         onKeyDown={[Function]}
         step={1}
-        type="number"
+        type="text"
         value="0"
       />
       <button
@@ -2509,11 +2518,12 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
       <input
         className="c6"
         id="insert-unique-id"
+        inputMode="decimal"
         min={0}
         onChange={[Function]}
         onKeyDown={[Function]}
         step={1}
-        type="number"
+        type="text"
         value="1"
       />
       <button
@@ -2774,11 +2784,12 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
       <input
         className="c6"
         id="insert-unique-id"
+        inputMode="decimal"
         min={0}
         onChange={[Function]}
         onKeyDown={[Function]}
         step={1}
-        type="number"
+        type="text"
         value="1"
       />
       <button
@@ -3026,12 +3037,13 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
       <input
         className="c6"
         id="insert-unique-id"
+        inputMode="decimal"
         max="20"
         min="10"
         onChange={[Function]}
         onKeyDown={[Function]}
         step={1}
-        type="number"
+        type="text"
         value="12"
       />
       <button
@@ -3205,11 +3217,12 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
       <input
         className="c6"
         id="insert-unique-id"
+        inputMode="decimal"
         min={0}
         onChange={[Function]}
         onKeyDown={[Function]}
         step={1}
-        type="number"
+        type="text"
         value="1"
       />
     </div>
@@ -3554,11 +3567,12 @@ Array [
               <input
                 className="c9"
                 id="insert-unique-id"
+                inputMode="decimal"
                 min={0}
                 onChange={[Function]}
                 onKeyDown={[Function]}
                 step={1}
-                type="number"
+                type="text"
                 value="1"
               />
               <button
@@ -3654,11 +3668,12 @@ Array [
               <input
                 className="c9"
                 id="insert-unique-id"
+                inputMode="decimal"
                 min={0}
                 onChange={[Function]}
                 onKeyDown={[Function]}
                 step={1}
-                type="number"
+                type="text"
                 value="1"
               />
             </div>
@@ -3701,11 +3716,12 @@ Array [
                 aria-invalid={true}
                 className="c13"
                 id="insert-unique-id"
+                inputMode="decimal"
                 min={0}
                 onChange={[Function]}
                 onKeyDown={[Function]}
                 step={1}
-                type="number"
+                type="text"
                 value="1"
               />
               <button
@@ -3978,12 +3994,13 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
       <input
         className="c6"
         id="insert-unique-id"
+        inputMode="decimal"
         min={0}
         onChange={[Function]}
         onKeyDown={[Function]}
         step={1}
         success={true}
-        type="number"
+        type="text"
         value="1"
       />
       <button
@@ -4232,11 +4249,12 @@ Array [
         <input
           className="c6"
           id="insert-unique-id"
+          inputMode="decimal"
           min={0}
           onChange={[Function]}
           onKeyDown={[Function]}
           step={1}
-          type="number"
+          type="text"
           value="10"
         />
         <button

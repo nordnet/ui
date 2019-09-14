@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { injectIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
+import * as R from 'ramda';
 import { Props, NumberComponent } from './Number.types';
 import { Flexbox, VisuallyHidden, Icon, Typography } from '../../..';
 import { FormFieldSimple } from '../FormFieldSimple';
@@ -10,6 +11,7 @@ import { isNumber, isString } from '../../../common/utils';
 import adjustValue from './adjustValue';
 
 const hasError = (error?: Props['error']) => error && error !== '';
+const removeNonNumberCharacters = R.replace(/[^0-9\-.,]+/, '');
 
 const width = css<Pick<Props, 'size'>>`
   width: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
@@ -86,7 +88,7 @@ const Stepper = styled.button.attrs({ type: 'button' })<Partial<Props>>`
   }
   `;
 
-const Input = styled(NormalizedElements.Input).attrs({ type: 'number' })<Partial<Props>>`
+const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<Partial<Props>>`
   ${background}
   ${borderStyles}
   ${height}
@@ -149,6 +151,7 @@ const NumberInput: NumberComponent & {
     required,
     size,
     step = 1,
+    inputMode = 'decimal',
     success,
     value: controlledValueRaw,
   } = props;
@@ -163,7 +166,10 @@ const NumberInput: NumberComponent & {
 
   const inputRef = useRef<HTMLInputElement>(null);
   const isControlled = isString(controlledValueRaw) || isNumber(controlledValueRaw);
-  const controlledValue = isControlled && getNumberAsString(controlledValueRaw);
+  // handle case for entered negative values
+  const numberAsString =
+    controlledValueRaw === '-' ? controlledValueRaw : getNumberAsString(controlledValueRaw);
+  const controlledValue = isControlled && numberAsString;
   const value = isControlled ? controlledValue : internalValue;
 
   const sanitizedNumbers = {
@@ -245,7 +251,8 @@ const NumberInput: NumberComponent & {
               size,
               step,
               success,
-              value,
+              value: removeNonNumberCharacters(value),
+              inputMode,
             }}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />
