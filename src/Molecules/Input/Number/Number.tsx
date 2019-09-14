@@ -104,10 +104,6 @@ const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<Partial<P
     -webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
     margin: 0;
   }
-
-  &[type='number'] {
-    -moz-appearance: textfield; /* stylelint-disable-line property-no-vendor-prefix */
-  }
 `;
 
 const components = {

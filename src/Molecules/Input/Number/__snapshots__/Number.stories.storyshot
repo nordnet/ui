@@ -160,10 +160,6 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   margin: 0;
 }
 
-.c6[type='number'] {
-  -moz-appearance: textfield;
-}
-
 <div
   className="c0"
 >
@@ -401,10 +397,6 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
 .c6::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-.c6[type='number'] {
-  -moz-appearance: textfield;
 }
 
 <div
@@ -659,10 +651,6 @@ exports[`Storyshots Molecules | Input / Number Required 1`] = `
   margin: 0;
 }
 
-.c6[type='number'] {
-  -moz-appearance: textfield;
-}
-
 <div
   className="c0"
 >
@@ -913,10 +901,6 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   margin: 0;
 }
 
-.c6[type='number'] {
-  -moz-appearance: textfield;
-}
-
 <div
   className="c0"
 >
@@ -1164,10 +1148,6 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
 .c6::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-.c6[type='number'] {
-  -moz-appearance: textfield;
 }
 
 <div
@@ -1424,10 +1404,6 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   margin: 0;
 }
 
-.c6[type='number'] {
-  -moz-appearance: textfield;
-}
-
 <div
   className="c0"
 >
@@ -1676,10 +1652,6 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
 .c6::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-.c6[type='number'] {
-  -moz-appearance: textfield;
 }
 
 <div
@@ -1938,10 +1910,6 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
 .c6::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-.c6[type='number'] {
-  -moz-appearance: textfield;
 }
 
 <div
@@ -2215,10 +2183,6 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   margin: 0;
 }
 
-.c6[type='number'] {
-  -moz-appearance: textfield;
-}
-
 <div
   className="c0"
 >
@@ -2490,10 +2454,6 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   margin: 0;
 }
 
-.c6[type='number'] {
-  -moz-appearance: textfield;
-}
-
 <div
   className="c0"
 >
@@ -2756,10 +2716,6 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   margin: 0;
 }
 
-.c6[type='number'] {
-  -moz-appearance: textfield;
-}
-
 <div
   className="c0"
 >
@@ -3009,10 +2965,6 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   margin: 0;
 }
 
-.c6[type='number'] {
-  -moz-appearance: textfield;
-}
-
 <div
   className="c0"
 >
@@ -3187,10 +3139,6 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
 .c6::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-.c6[type='number'] {
-  -moz-appearance: textfield;
 }
 
 <div
@@ -3429,10 +3377,6 @@ Array [
   margin: 0;
 }
 
-.c9[type='number'] {
-  -moz-appearance: textfield;
-}
-
 .c13 {
   font-family: inherit;
   font-size: 100%;
@@ -3466,10 +3410,6 @@ Array [
 .c13::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-.c13[type='number'] {
-  -moz-appearance: textfield;
 }
 
 .c0 {
@@ -3966,10 +3906,6 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   margin: 0;
 }
 
-.c6[type='number'] {
-  -moz-appearance: textfield;
-}
-
 <div
   className="c0"
 >
@@ -4219,10 +4155,6 @@ Array [
 .c6::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-.c6[type='number'] {
-  -moz-appearance: textfield;
 }
 
 <div
