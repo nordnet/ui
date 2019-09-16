@@ -11,6 +11,7 @@ import { CrossCircle } from './components/CrossCircle';
 import { DiagonalWithCircle } from './components/DiagonalWithCircle';
 import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
+import { ExternalLink } from './components/ExternalLink';
 import { EyeWithPlus } from './components/EyeWithPlus';
 import { EyeWithPlusActive } from './components/EyeWithPlusActive';
 import { File } from './components/File';
@@ -46,6 +47,7 @@ export default {
   DiagonalWithCircle,
   DirectionDown,
   DirectionUp,
+  ExternalLink,
   EyeWithPlus,
   EyeWithPlusActive,
   File,
