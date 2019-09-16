@@ -98,12 +98,6 @@ const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<Partial<P
   text-align: center;
   box-sizing: border-box;
   z-index: 1;
-
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
-    -webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
-    margin: 0;
-  }
 `;
 
 const components = {

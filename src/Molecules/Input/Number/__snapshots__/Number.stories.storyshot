@@ -154,12 +154,6 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   z-index: 3;
 }
 
-.c6::-webkit-outer-spin-button,
-.c6::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 <div
   className="c0"
 >
@@ -391,12 +385,6 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
 .c6:focus {
   border-color: #0046FF;
   z-index: 3;
-}
-
-.c6::-webkit-outer-spin-button,
-.c6::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 <div
@@ -645,12 +633,6 @@ exports[`Storyshots Molecules | Input / Number Required 1`] = `
   z-index: 3;
 }
 
-.c6::-webkit-outer-spin-button,
-.c6::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 <div
   className="c0"
 >
@@ -895,12 +877,6 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   z-index: 3;
 }
 
-.c6::-webkit-outer-spin-button,
-.c6::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 <div
   className="c0"
 >
@@ -1142,12 +1118,6 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
 .c6:focus {
   border-color: #0046FF;
   z-index: 3;
-}
-
-.c6::-webkit-outer-spin-button,
-.c6::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 <div
@@ -1398,12 +1368,6 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   z-index: 3;
 }
 
-.c6::-webkit-outer-spin-button,
-.c6::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 <div
   className="c0"
 >
@@ -1646,12 +1610,6 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
 .c6:focus {
   border-color: #0046FF;
   z-index: 3;
-}
-
-.c6::-webkit-outer-spin-button,
-.c6::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 <div
@@ -1904,12 +1862,6 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
 .c6:focus {
   border-color: #0046FF;
   z-index: 3;
-}
-
-.c6::-webkit-outer-spin-button,
-.c6::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 <div
@@ -2177,12 +2129,6 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   z-index: 3;
 }
 
-.c6::-webkit-outer-spin-button,
-.c6::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 <div
   className="c0"
 >
@@ -2448,12 +2394,6 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   z-index: 3;
 }
 
-.c6::-webkit-outer-spin-button,
-.c6::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 <div
   className="c0"
 >
@@ -2710,12 +2650,6 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   z-index: 3;
 }
 
-.c6::-webkit-outer-spin-button,
-.c6::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 <div
   className="c0"
 >
@@ -2959,12 +2893,6 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   z-index: 3;
 }
 
-.c6::-webkit-outer-spin-button,
-.c6::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 <div
   className="c0"
 >
@@ -3133,12 +3061,6 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
 .c6:focus {
   border-color: #0046FF;
   z-index: 3;
-}
-
-.c6::-webkit-outer-spin-button,
-.c6::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 <div
@@ -3371,12 +3293,6 @@ Array [
   z-index: 3;
 }
 
-.c9::-webkit-outer-spin-button,
-.c9::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 .c13 {
   font-family: inherit;
   font-size: 100%;
@@ -3404,12 +3320,6 @@ Array [
 .c13:focus {
   border-color: #0046FF;
   z-index: 3;
-}
-
-.c13::-webkit-outer-spin-button,
-.c13::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 .c0 {
@@ -3900,12 +3810,6 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   z-index: 3;
 }
 
-.c6::-webkit-outer-spin-button,
-.c6::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 <div
   className="c0"
 >
@@ -4149,12 +4053,6 @@ Array [
 .c6:focus {
   border-color: #0046FF;
   z-index: 3;
-}
-
-.c6::-webkit-outer-spin-button,
-.c6::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 <div
