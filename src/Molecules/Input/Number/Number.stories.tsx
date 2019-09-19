@@ -60,7 +60,7 @@ storiesOf('Molecules | Input / Number', module)
     </FormField>
   ))
   .add('Required', () => (
-    <FormField forId="insert-matching-unique-id" label="Label" required>
+    <FormField forId="insert-matching-unique-id" label="Label" required showRequired>
       <Input.Number id="insert-matching-unique-id" defaultValue="91" required />
     </FormField>
   ))
