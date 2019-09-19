@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms | Legend Default 1`] = `
+.c0 {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  margin: 0 0 16px 0;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<legend
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Caption text
+  </span>
+</legend>
+`;
+
+exports[`Storyshots Atoms | Legend Docs 1`] = `
+<p>
+  The Legend component defines a caption for the Fieldset component.
+</p>
+`;
+
+exports[`Storyshots Atoms | Legend Looking like a label 1`] = `
+.c0 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+<label
+  className="c0"
+  hidden={false}
+>
+  <span
+    className="c1"
+  >
+    Caption text
+  </span>
+</label>
+`;
