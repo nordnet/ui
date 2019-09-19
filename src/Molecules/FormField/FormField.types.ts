@@ -3,13 +3,16 @@ export type Props = {
   label: string;
   /** But you can hide it visually */
   hideLabel?: boolean;
+
   className?: string;
   error?: string;
   extraInfo?: string;
-  fieldId: string;
+  forId?: string;
+  group?: boolean;
   required?: boolean;
   showRequired?: boolean;
   size?: 's';
+
   /**
    * You need to specify width
    * (better in pixels), because

@@ -1,19 +1,30 @@
 import { InjectedIntlProps, InjectedIntl } from 'react-intl';
 
 export type Props = {
-  /** Label should always be presented - A11y */
-  label: string;
-  /** But you can hide it visually */
+  /** @deprecated wrap Input in FormFieldSimple and give that this prop */
+  label?: string;
+  /** @deprecated wrap Input in FormFieldSimple and give that this prop */
   hideLabel?: boolean;
+  /** @deprecated wrap Input in FormFieldSimple and give that this prop */
+  error?: string;
+  /** @deprecated wrap Input in FormFieldSimple and give that this prop */
+  extraInfo?: string;
+  /** @deprecated wrap Input in FormFieldSimple and give that this prop.
+   * Also match it to the new id prop of this component. */
+  fieldId?: string;
+  /** @deprecated wrap Input in FormFieldSimple and give that this prop */
+  fullWidth?: boolean;
+  /** @deprecated wrap Input in FormFieldSimple and give that this prop */
+  width?: string | number;
+
   autoFocus?: boolean;
   className?: string;
   defaultValue?: string | number;
   disabled?: boolean;
-  error?: string;
-  extraInfo?: string;
-  fieldId: string;
-  fullWidth?: boolean;
-  /**
+  hasError?: boolean;
+  id?: string;
+
+  /** inputMode:
    * none
      No virtual keyboard;
      this is useful when the application or site
@@ -37,14 +48,6 @@ export type Props = {
   step?: string | number;
   success?: boolean;
   value?: string | number;
-  /**
-   * You need to specify width
-   * (better in pixels), because
-   * that will affect wrapping
-   * of the error/info text
-   * underneath
-   */
-  width?: string | number;
 
   onStepUp?: () => void;
   onStepDown?: () => void;

@@ -9,14 +9,15 @@ const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement
     {...R.omit(
       [
         'color',
-        'fullWidth',
-        'size',
         'colorFn',
         'display',
+        'error',
+        'fullWidth',
+        'hasError',
         'leftAddon',
         'rightAddon',
+        'size',
         'sizeProp',
-        'error',
       ],
       props,
     )}

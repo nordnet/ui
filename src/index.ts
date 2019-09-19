@@ -27,6 +27,7 @@ import CardWithTitle from './Molecules/CardWithTitle';
 import CollapsibleCard from './Molecules/CollapsibleCard';
 import FeedbackBanner from './Molecules/FeedbackBanner';
 import Fieldset from './Molecules/Fieldset';
+import FormField from './Molecules/FormField';
 import Input from './Molecules/Input';
 import LabeledValue from './Molecules/LabeledValue';
 import Link from './Molecules/Link';
@@ -68,6 +69,7 @@ export {
   Fieldset,
   Flag,
   Flexbox,
+  FormField,
   FormLabel,
   Icon,
   Input,
