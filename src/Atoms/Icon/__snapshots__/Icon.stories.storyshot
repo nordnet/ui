@@ -33,6 +33,43 @@ Array [
       size={5}
       viewBox="0 0 24 24"
     >
+      <path
+        d="M24,2 L24,8 L22,8 L22,24 L2,24 L2,8 L0,8 L0,2 L24,2 Z M20,8 L4,8 L4,22 L20,22 L20,8 Z M18,10 L18,12 L6,12 L6,10 L18,10 Z M22,4 L2,4 L2,6 L22,6 L22,4 Z M6,12 L8,12 L8,14 L6,14 L6,12 Z M6,14 L18,14 L18,16 L6,16 L6,14 Z M16,12 L18,12 L18,14 L16,14 L16,12 Z"
+        id="path-1"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      size={5}
+      viewBox="0 0 24 24"
+    >
       <polygon
         points="16.278 14 0 14 0 10 16.278 10 8.211 2 13.916 2 24 12 21.148 14.828 13.916 22 8.211 22"
       />
@@ -1452,6 +1489,41 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
   className="c0"
   direction="column"
 >
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Archive
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={5}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24,2 L24,8 L22,8 L22,24 L2,24 L2,8 L0,8 L0,2 L24,2 Z M20,8 L4,8 L4,22 L20,22 L20,8 Z M18,10 L18,12 L6,12 L6,10 L18,10 Z M22,4 L2,4 L2,6 L22,6 L22,4 Z M6,12 L8,12 L8,14 L6,14 L6,12 Z M6,14 L18,14 L18,16 L6,16 L6,14 Z M16,12 L18,12 L18,14 L16,14 L16,12 Z"
+            id="path-1"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
   <div
     className="c1"
     direction="row"
