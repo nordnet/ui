@@ -1,3 +1,4 @@
+import { Archive } from './components/Archive';
 import { ArrowRight } from './components/ArrowRight';
 import { Attachement } from './components/Attachement';
 import { Bank } from './components/Bank';
@@ -35,6 +36,7 @@ import { WarningTriangle } from './components/WarningTriangle';
 import { Rtmt } from './components/Rtmt';
 
 export default {
+  Archive,
   ArrowRight,
   Attachement,
   Bank,
