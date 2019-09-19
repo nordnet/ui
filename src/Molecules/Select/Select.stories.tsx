@@ -33,4 +33,13 @@ storiesOf('Molecules | Select', module)
   ))
   .add('Select with prepended empty value', () => (
     <Select options={[{ label: 'All', value: '' }, ...options]} value="" label="Stocks" hideLabel />
+  ))
+  .add('Select with error text', () => (
+    <Select
+      options={[{ label: 'All', value: '' }, ...options]}
+      value=""
+      label="Stocks"
+      hideLabel
+      error="Error text"
+    />
   ));

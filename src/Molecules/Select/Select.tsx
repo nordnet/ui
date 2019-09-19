@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import * as R from 'ramda';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { VisuallyHidden, Icon, Typography } from '../..';
-import { SelectComponent } from './Select.types';
+import { SelectComponent, Props } from './Select.types';
+
+const hasError = (error?: Props['error']) => error && error !== '';
 
 const SELECT_HEIGHT = 8;
 const ARROW_SPACE = 7;
@@ -27,14 +29,27 @@ const Chevron = styled(Icon.ChevronDown)<{ focus: boolean }>`
   pointer-events: none;
 `;
 
-const SelectWrapper = styled.div<{ focus: boolean }>`
+const SelectWrapper = styled.div<{ focus: boolean; error: Props['error'] }>`
   position: relative;
   height: ${p => p.theme.spacing.unit(SELECT_HEIGHT)}px;
   box-sizing: border-box;
   border: 1px solid ${p => (p.focus ? p.theme.color.borderActive : p.theme.color.inputBorder)};
 
+  ${p =>
+    p.error &&
+    p.error.length &&
+    css`
+      border: 1px solid ${p.theme.color.negative};
+    `}
+
   &:hover {
     border-color: ${p => (p.focus ? p.theme.color.borderActive : p.theme.color.inputBorderHover)};
+    ${p =>
+      p.error &&
+      p.error.length &&
+      css`
+        border: 1px solid ${p.theme.color.negative};
+      `}
   }
 `;
 
@@ -53,6 +68,10 @@ const SelectedValue = styled(Typography)`
   box-sizing: border-box;
 `;
 
+const ErrorText = styled(Typography)`
+  line-height: 17px;
+`;
+
 const Select: SelectComponent = ({
   options = [],
   disabled = false,
@@ -65,6 +84,7 @@ const Select: SelectComponent = ({
   onChange: onChangeFromProps,
   onBlur: onBlurFromProps,
   onFocus: onFocusFromProps,
+  error,
 }) => {
   const [focus, setFocus] = useState(false);
   const [value, setValue] = useState();
@@ -104,36 +124,43 @@ const Select: SelectComponent = ({
 
   return (
     /* eslint-disable jsx-a11y/label-has-associated-control, jsx-a11y/label-has-for */
-    <label>
-      {hideLabel ? <VisuallyHidden>{Label}</VisuallyHidden> : <>{Label}</>}
-      <SelectWrapper focus={focus}>
-        <StyledSelect
-          disabled={disabled}
-          value={selectValue}
-          {...(placeholder && !selectValue ? { defaultValue: PLACEHOLDER_VALUE } : {})}
-          name={name}
-          onChange={onChange}
-          className={className}
-          onFocus={onFocus}
-          onBlur={onBlur}
-        >
-          {placeholder && (
-            <option value={PLACEHOLDER_VALUE} disabled>
-              {placeholder}
-            </option>
-          )}
-          {options.map(option => (
-            <option key={option.value} value={option.value}>
-              {option.label}
-            </option>
-          ))}
-        </StyledSelect>
-        <SelectedValue type="secondary" aria-hidden>
-          {typeof selectedOption !== 'undefined' ? selectedOption.label : placeholder}
-        </SelectedValue>
-        <Chevron focus={false} />
-      </SelectWrapper>
-    </label>
+    <>
+      <label>
+        {hideLabel ? <VisuallyHidden>{Label}</VisuallyHidden> : <>{Label}</>}
+        <SelectWrapper focus={focus} error={error}>
+          <StyledSelect
+            disabled={disabled}
+            value={selectValue}
+            {...(placeholder && !selectValue ? { defaultValue: PLACEHOLDER_VALUE } : {})}
+            name={name}
+            onChange={onChange}
+            className={className}
+            onFocus={onFocus}
+            onBlur={onBlur}
+          >
+            {placeholder && (
+              <option value={PLACEHOLDER_VALUE} disabled>
+                {placeholder}
+              </option>
+            )}
+            {options.map(option => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
+          </StyledSelect>
+          <SelectedValue type="secondary" aria-hidden>
+            {typeof selectedOption !== 'undefined' ? selectedOption.label : placeholder}
+          </SelectedValue>
+          <Chevron focus={false} />
+        </SelectWrapper>
+      </label>
+      {hasError(error) && (
+        <ErrorText type="tertiary" color={t => t.color.negative}>
+          {error}
+        </ErrorText>
+      )}
+    </>
   );
 };
 
