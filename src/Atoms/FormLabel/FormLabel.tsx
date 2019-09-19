@@ -12,8 +12,8 @@ const StyledLabel = styled.label`
   white-space: nowrap;
 `;
 
-export const FormLabel: React.FC<Props> = ({ children, className, forId, hideLabel }) => (
-  <StyledLabel className={className} htmlFor={forId} hidden={Boolean(hideLabel)}>
+export const FormLabel: React.FC<Props> = ({ as, children, className, forId, hideLabel }) => (
+  <StyledLabel as={as} className={className} htmlFor={forId} hidden={Boolean(hideLabel)}>
     <Typography type="secondary" color={t => t.color.label}>
       {children}
     </Typography>

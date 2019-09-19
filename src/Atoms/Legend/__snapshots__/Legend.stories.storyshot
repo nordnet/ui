@@ -53,6 +53,16 @@ exports[`Storyshots Atoms | Legend Looking like a label 1`] = `
 }
 
 .c1 {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  cursor: auto;
+}
+
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -61,14 +71,14 @@ exports[`Storyshots Atoms | Legend Looking like a label 1`] = `
   line-height: 1.4285714285714286;
 }
 
-<label
-  className="c0"
+<legend
+  className="c0 c1"
   hidden={false}
 >
   <span
-    className="c1"
+    className="c2"
   >
     Caption text
   </span>
-</label>
+</legend>
 `;
