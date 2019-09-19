@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | Fieldset Default 1`] = `
+.c0 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+<fieldset
+  className="c0"
+>
+  <legend>
+    Colors
+  </legend>
+  <label>
+    <input
+      name="example"
+      type="checkbox"
+      value="green"
+    />
+    Green
+  </label>
+  <label>
+    <input
+      name="example"
+      type="checkbox"
+      value="blue"
+    />
+    Blue
+  </label>
+  <label>
+    <input
+      name="example"
+      type="checkbox"
+      value="yellow"
+    />
+    Yellow
+  </label>
+</fieldset>
+`;
+
+exports[`Storyshots Molecules | Fieldset Docs 1`] = `
+<p>
+  The Fieldset component is used to group related elements in a form.
+</p>
+`;

@@ -25,6 +25,7 @@ import Button from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
 import CollapsibleCard from './Molecules/CollapsibleCard';
 import FeedbackBanner from './Molecules/FeedbackBanner';
+import Fieldset from './Molecules/Fieldset';
 import Input from './Molecules/Input';
 import LabeledValue from './Molecules/LabeledValue';
 import Link from './Molecules/Link';
@@ -63,6 +64,7 @@ export {
   DateTime,
   Development,
   FeedbackBanner,
+  Fieldset,
   Flag,
   Flexbox,
   FormLabel,
