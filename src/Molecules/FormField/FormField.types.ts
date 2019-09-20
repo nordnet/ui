@@ -9,7 +9,6 @@ export type Props = {
   extraInfo?: string;
   forId?: string;
   group?: boolean;
-  required?: boolean;
   showRequired?: boolean;
   size?: 's';
 

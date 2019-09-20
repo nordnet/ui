@@ -27,12 +27,7 @@ storiesOf('Molecules | FormField', module)
     </FormField>
   ))
   .add('Required', () => (
-    <FormField label="Label" forId="unique-id-1" required showRequired>
-      <div style={{ background: 'aqua' }}>Pass in any children you want</div>
-    </FormField>
-  ))
-  .add('Required with no star', () => (
-    <FormField label="Label" forId="unique-id-1" required>
+    <FormField label="Label" forId="unique-id-1" showRequired>
       <div style={{ background: 'aqua' }}>Pass in any children you want</div>
     </FormField>
   ))

@@ -244,54 +244,6 @@ exports[`Storyshots Molecules | FormField Required 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | FormField Required with no star 1`] = `
-.c1 {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-<div
-  className="c0"
->
-  <label
-    className="c1"
-    hidden={false}
-    htmlFor="unique-id-1"
-  >
-    <span
-      className="c2"
-    >
-      Label 
-    </span>
-  </label>
-  <div
-    style={
-      Object {
-        "background": "aqua",
-      }
-    }
-  >
-    Pass in any children you want
-  </div>
-</div>
-`;
-
 exports[`Storyshots Molecules | FormField With group of items 1`] = `
 .c6 {
   box-sizing: border-box;
