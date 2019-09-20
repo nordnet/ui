@@ -220,7 +220,7 @@ const NumberInput: NumberComponent & {
   // TODO: remove the line below when the depricated label prop is removed
   const inputHasError = label ? hasError : hasError || deprecatedErrorPresent(error);
 
-  const InputNumber = () => (
+  const InputNumber = (
     <Typography type="secondary" color={t => t.color.text}>
       <Wrapper container item grow={1} alignItems="center">
         <Input
@@ -334,12 +334,12 @@ const NumberInput: NumberComponent & {
 
     return (
       <FormField {...props} label={label}>
-        <InputNumber />
+        {InputNumber}
       </FormField>
     );
   }
 
-  return <InputNumber />;
+  return InputNumber;
 };
 
 NumberInput.components = components;
