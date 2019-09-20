@@ -1,20 +1,20 @@
 import { InjectedIntlProps, InjectedIntl } from 'react-intl';
 
 export type Props = {
-  /** @deprecated wrap Input in FormFieldSimple and give that this prop */
+  /** @deprecated wrap Input in FormField and give that this prop */
   label?: string;
-  /** @deprecated wrap Input in FormFieldSimple and give that this prop */
+  /** @deprecated wrap Input in FormField and give that this prop */
   hideLabel?: boolean;
-  /** @deprecated wrap Input in FormFieldSimple and give that this prop */
+  /** @deprecated wrap Input in FormField and give that this prop */
   error?: string;
-  /** @deprecated wrap Input in FormFieldSimple and give that this prop */
+  /** @deprecated wrap Input in FormField and give that this prop */
   extraInfo?: string;
-  /** @deprecated wrap Input in FormFieldSimple and give that this prop.
+  /** @deprecated wrap Input in FormField and give that this prop.
    * Also match it to the new id prop of this component. */
   fieldId?: string;
-  /** @deprecated wrap Input in FormFieldSimple and give that this prop */
+  /** @deprecated wrap Input in FormField and give that this prop */
   fullWidth?: boolean;
-  /** @deprecated wrap Input in FormFieldSimple and give that this prop */
+  /** @deprecated wrap Input in FormField and give that this prop */
   width?: string | number;
 
   autoFocus?: boolean;
