@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import * as R from 'ramda';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { VisuallyHidden, Icon, Typography } from '../..';
-import { SelectComponent } from './Select.types';
+import { SelectComponent, Props } from './Select.types';
 
 const SELECT_HEIGHT = 8;
 const ARROW_SPACE = 7;
@@ -27,7 +27,15 @@ const Chevron = styled(Icon.ChevronDown)<{ focus: boolean }>`
   pointer-events: none;
 `;
 
-const SelectWrapper = styled.div<{ focus: boolean }>`
+const errorBorderStyles = css`
+  border: 1px solid ${p => p.theme.color.inputBorderError};
+
+  &:hover {
+    border: 1px solid ${p => p.theme.color.inputBorderError};
+  }
+`;
+
+const SelectWrapper = styled.div<{ focus: boolean; hasError: Props['hasError'] }>`
   position: relative;
   height: ${p => p.theme.spacing.unit(SELECT_HEIGHT)}px;
   box-sizing: border-box;
@@ -36,6 +44,8 @@ const SelectWrapper = styled.div<{ focus: boolean }>`
   &:hover {
     border-color: ${p => (p.focus ? p.theme.color.borderActive : p.theme.color.inputBorderHover)};
   }
+
+  ${p => p.hasError && errorBorderStyles}
 `;
 
 const SelectedValue = styled(Typography)`
@@ -65,6 +75,7 @@ const Select: SelectComponent = ({
   onChange: onChangeFromProps,
   onBlur: onBlurFromProps,
   onFocus: onFocusFromProps,
+  hasError,
 }) => {
   const [focus, setFocus] = useState(false);
   const [value, setValue] = useState();
@@ -106,7 +117,7 @@ const Select: SelectComponent = ({
     /* eslint-disable jsx-a11y/label-has-associated-control, jsx-a11y/label-has-for */
     <label>
       {hideLabel ? <VisuallyHidden>{Label}</VisuallyHidden> : <>{Label}</>}
-      <SelectWrapper focus={focus}>
+      <SelectWrapper focus={focus} hasError={hasError}>
         <StyledSelect
           disabled={disabled}
           value={selectValue}

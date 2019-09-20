@@ -17,6 +17,7 @@ export type Props = {
   onFocus?: React.FocusEventHandler;
   onBlur?: React.FocusEventHandler;
   className?: string;
+  hasError?: boolean;
 };
 
 export type SelectComponent = React.FunctionComponent<Props>;
