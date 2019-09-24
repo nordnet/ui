@@ -57,6 +57,7 @@ export const Content = styled.div`
     max-height: 50vh;
   }
   overflow-y: auto;
+  overflow-x: hidden;
 `;
 
 export const ModalInner: React.FC<InnerProps> = ({ children, className, title, onClose }) => {

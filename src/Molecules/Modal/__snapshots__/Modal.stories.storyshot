@@ -124,6 +124,7 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
 
 .c10 {
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .c0 {
@@ -444,6 +445,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
 
 .c10 {
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .c0 {
@@ -749,6 +751,7 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
 
 .c9 {
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .c0 {
