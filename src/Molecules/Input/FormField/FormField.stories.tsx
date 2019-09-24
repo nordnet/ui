@@ -6,7 +6,7 @@ import { Flexbox } from '../../..';
 // since we are not exporting this component itself
 import { FormField } from '.';
 
-storiesOf('Molecules | FormField', module)
+storiesOf('Molecules | Input / FormField', module)
   .add('Docs', () => (
     <p>
       This component provides a label including the required look of the label. It also provides the
@@ -31,7 +31,7 @@ storiesOf('Molecules | FormField', module)
     </FormField>
   ))
   .add('Required', () => (
-    <FormField label="Label" fieldId="unique-id-1" showRequired>
+    <FormField label="Label" fieldId="unique-id-1" required>
       <div style={{ background: 'aqua' }}>Pass in any children you want</div>
     </FormField>
   ))

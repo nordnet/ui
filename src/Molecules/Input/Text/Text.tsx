@@ -123,56 +123,55 @@ export const Text: React.FC<Props> & {
 } = props => {
   const {
     autoFocus,
+    defaultValue,
     disabled,
     error,
     leftAddon,
-    placeholder,
-    rightAddon,
-    success,
-    size,
-    defaultValue,
-    value,
+    name,
     onBlur,
     onChange,
     onClick,
     onFocus,
     onKeyDown,
-    onKeyUp,
     onKeyPress,
-    name,
+    onKeyUp,
+    placeholder,
     required,
+    rightAddon,
+    size,
+    success,
+    value,
+    visuallyEmphasiseRequired,
   } = props;
-  /* eslint-disable jsx-a11y/label-has-associated-control,jsx-a11y/label-has-for */
+
   return (
     <FormField
-      {...R.pick(
-        ['error', 'extraInfo', 'fieldId', 'hideLabel', 'label', 'showRequired', 'width'],
-        props,
-      )}
+      {...R.pick(['error', 'extraInfo', 'fieldId', 'hideLabel', 'label', 'width'], props)}
+      required={visuallyEmphasiseRequired}
     >
       <Typography type="secondary" color={t => t.color.text}>
         <Wrapper>
           <Input
             {...{
               autoFocus,
-              sizeProp: size,
-              placeholder,
-              error,
-              success,
-              leftAddon,
-              rightAddon,
-              value,
               defaultValue,
               disabled,
-              onChange,
-              onFocus,
-              onClick,
-              onBlur,
-              onKeyDown,
-              onKeyUp,
-              onKeyPress,
+              error,
+              leftAddon,
               name,
+              onBlur,
+              onChange,
+              onClick,
+              onFocus,
+              onKeyDown,
+              onKeyPress,
+              onKeyUp,
+              placeholder,
               required,
+              rightAddon,
+              sizeProp: size,
+              success,
+              value,
             }}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />

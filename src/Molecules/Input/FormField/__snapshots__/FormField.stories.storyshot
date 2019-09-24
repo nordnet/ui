@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | FormField Default 1`] = `
+exports[`Storyshots Molecules | Input / FormField Default 1`] = `
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -47,13 +47,13 @@ exports[`Storyshots Molecules | FormField Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | FormField Docs 1`] = `
+exports[`Storyshots Molecules | Input / FormField Docs 1`] = `
 <p>
   This component provides a label including the required look of the label. It also provides the displaying of error message and additional information.
 </p>
 `;
 
-exports[`Storyshots Molecules | FormField Error 1`] = `
+exports[`Storyshots Molecules | Input / FormField Error 1`] = `
 .c4 {
   position: absolute;
   height: 1px;
@@ -130,7 +130,7 @@ exports[`Storyshots Molecules | FormField Error 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | FormField Extra info 1`] = `
+exports[`Storyshots Molecules | Input / FormField Extra info 1`] = `
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -193,7 +193,7 @@ exports[`Storyshots Molecules | FormField Extra info 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | FormField Required 1`] = `
+exports[`Storyshots Molecules | Input / FormField Required 1`] = `
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -240,7 +240,7 @@ exports[`Storyshots Molecules | FormField Required 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | FormField With group of items 1`] = `
+exports[`Storyshots Molecules | Input / FormField With group of items 1`] = `
 .c6 {
   box-sizing: border-box;
 }

@@ -24,10 +24,10 @@ export const FormField: React.FC<Props> = ({
   group,
   hideLabel,
   label,
-  showRequired = false,
+  required = false,
   width,
 }) => {
-  const labelText = `${label} ${showRequired ? '*' : ''}`;
+  const labelText = `${label} ${required ? '*' : ''}`;
 
   const Field = () => {
     if (group) {

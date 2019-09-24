@@ -52,7 +52,7 @@ storiesOf('Molecules | Input / Text', module)
   .add('With auto focus', () => <Input.Text label="Label" placeholder="Placeholder" autoFocus />)
   .add('Required', () => <Input.Text label="Label" placeholder="Placeholder" required />)
   .add('Required with star', () => (
-    <Input.Text label="Label" placeholder="Placeholder" required showRequired />
+    <Input.Text label="Label" placeholder="Placeholder" required visuallyEmphasiseRequired />
   ))
   .add('Actions', () => (
     <>

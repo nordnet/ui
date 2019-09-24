@@ -10,7 +10,7 @@ export type Props = {
   fieldId?: string;
   forId?: string;
   group?: boolean;
-  showRequired?: boolean;
+  required?: boolean;
 
   /**
    * You need to specify width
