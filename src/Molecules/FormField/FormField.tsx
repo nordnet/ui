@@ -13,7 +13,6 @@ const Wrapper = styled.div<{ width?: string | number }>`
 `;
 
 const BottomWrapper = styled(motion.div)``;
-
 export const FormField: React.FC<Props> = React.forwardRef(
   (
     {
@@ -37,8 +36,8 @@ export const FormField: React.FC<Props> = React.forwardRef(
 
     if (label) {
       field = (
-        <FormLabel hideLabel={hideLabel}>
-          {labelText}
+        <FormLabel>
+          {hideLabel ? <VisuallyHidden>{labelText}</VisuallyHidden> : labelText}
           {children}
         </FormLabel>
       );
