@@ -5,7 +5,7 @@ module.exports = ({ config, mode }) => {
   config.entry.unshift(require.resolve('focus-within-polyfill'));
   config.module.rules.push({
     test: /\.stories\.tsx?$/,
-    loaders: [require.resolve('@storybook/addon-storysource/loader')],
+    loaders: [require.resolve('@storybook/source-loader')],
     enforce: 'pre',
   });
   config.module.rules.push({

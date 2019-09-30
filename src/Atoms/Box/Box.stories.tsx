@@ -1,6 +1,6 @@
 import React from 'react';
 import Color from 'color';
-import { storiesOf, RenderFunction } from '@storybook/react';
+import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import { Box, Typography } from '../..';
 
@@ -26,7 +26,7 @@ const StyledBox = styled(Box)`
   background-color: ${p => p.theme.color.background};
 `;
 
-const withOuter = (storyFn: RenderFunction) => <Outer>{storyFn()}</Outer>;
+const withOuter = (storyFn: () => JSX.Element) => <Outer>{storyFn()}</Outer>;
 const text = (
   <StyledBox p={2}>
     <Typography color={t => t.color.text}>Some random content here</Typography>

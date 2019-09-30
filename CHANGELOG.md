@@ -1,18 +1,371 @@
-# [1.33.0-beta.2](https://github.com/nordnet/ui/compare/v1.33.0-beta.1@beta...v1.33.0-beta.2@beta) (2019-08-26)
+## [1.47.2](https://github.com/nordnet/ui/compare/v1.47.1...v1.47.2) (2019-09-26)
+
+
+### Bug Fixes
+
+* make text wrap if long ([d28be5c](https://github.com/nordnet/ui/commit/d28be5c))
+
+## [1.47.1](https://github.com/nordnet/ui/compare/v1.47.0...v1.47.1) (2019-09-26)
+
+
+### Bug Fixes
+
+* one more attempt to fix storysource ([8b18796](https://github.com/nordnet/ui/commit/8b18796))
+* storysource ([e53071b](https://github.com/nordnet/ui/commit/e53071b))
+
+# [1.47.0](https://github.com/nordnet/ui/compare/v1.46.0...v1.47.0) (2019-09-26)
+
+
+### Bug Fixes
+
+* colors and borders ([0ec9f0d](https://github.com/nordnet/ui/commit/0ec9f0d))
+* deprecate old props ([cde8550](https://github.com/nordnet/ui/commit/cde8550))
+* merge fix ([2f9431a](https://github.com/nordnet/ui/commit/2f9431a))
+* merge master ([761fa96](https://github.com/nordnet/ui/commit/761fa96))
+* refactor stories of required ([25023b1](https://github.com/nordnet/ui/commit/25023b1))
+* remove internal form field ([8b14e49](https://github.com/nordnet/ui/commit/8b14e49))
+* remove star from required by defaut ([fb76e7a](https://github.com/nordnet/ui/commit/fb76e7a))
 
 
 ### Features
 
-* add tracking context ([019027f](https://github.com/nordnet/ui/commit/019027f))
-* add tracking to button and link ([90d51cb](https://github.com/nordnet/ui/commit/90d51cb))
+* add with error and required props ([8992488](https://github.com/nordnet/ui/commit/8992488))
+* wrap with form field ([3f08b98](https://github.com/nordnet/ui/commit/3f08b98))
 
-# [1.33.0-beta.1](https://github.com/nordnet/ui/compare/v1.32.0...v1.33.0-beta.1@beta) (2019-08-26)
+# [1.46.0](https://github.com/nordnet/ui/compare/v1.45.5...v1.46.0) (2019-09-25)
+
+
+### Bug Fixes
+
+* adapt to the new formField ([83c817b](https://github.com/nordnet/ui/commit/83c817b))
+* add color for selectoptionbackground ([36ebc70](https://github.com/nordnet/ui/commit/36ebc70))
+* avatar flex ([6d16ac3](https://github.com/nordnet/ui/commit/6d16ac3))
+* avatar size S adjustment ([db8041c](https://github.com/nordnet/ui/commit/db8041c))
+* button-ish link styles resetting ([76dc10f](https://github.com/nordnet/ui/commit/76dc10f))
+* icons ([9c70c66](https://github.com/nordnet/ui/commit/9c70c66))
+* pr edits ([e15d088](https://github.com/nordnet/ui/commit/e15d088))
+* remove unnesessary styles from link ([bdb45f5](https://github.com/nordnet/ui/commit/bdb45f5))
+* revert normalizedButton, gen storyshots ([e89e521](https://github.com/nordnet/ui/commit/e89e521))
+* storyshots ([11f0a23](https://github.com/nordnet/ui/commit/11f0a23))
+* stylelint ([2a47c5a](https://github.com/nordnet/ui/commit/2a47c5a))
+* stylelint ([5fc06ac](https://github.com/nordnet/ui/commit/5fc06ac))
+* tests ([e9cbdfd](https://github.com/nordnet/ui/commit/e9cbdfd))
+* types ([45489ef](https://github.com/nordnet/ui/commit/45489ef))
+* types and tests ([7691848](https://github.com/nordnet/ui/commit/7691848))
 
 
 ### Features
 
-* add tracking context ([e46839f](https://github.com/nordnet/ui/commit/e46839f))
-* track button and link ([5c04a99](https://github.com/nordnet/ui/commit/5c04a99))
+* add checkmark icon ([d63141b](https://github.com/nordnet/ui/commit/d63141b))
+* add fullWidth support ([a227fe7](https://github.com/nordnet/ui/commit/a227fe7))
+* add singleSelectList ([cf25974](https://github.com/nordnet/ui/commit/cf25974))
+* deprecate old select ([80f1b13](https://github.com/nordnet/ui/commit/80f1b13))
+* focus handlers ([f9f88dc](https://github.com/nordnet/ui/commit/f9f88dc))
+* formField forwardRef and error state focus state ([fa4d5c7](https://github.com/nordnet/ui/commit/fa4d5c7))
+* forwardRefs, size for avatar, normallizedButton no padding ([8062898](https://github.com/nordnet/ui/commit/8062898))
+* hidden select ([963c920](https://github.com/nordnet/ui/commit/963c920))
+* hookz ([a230723](https://github.com/nordnet/ui/commit/a230723))
+* icon improvements, add checkmark, addwithCircle ([7152156](https://github.com/nordnet/ui/commit/7152156))
+* more adjustments ([2ea0bce](https://github.com/nordnet/ui/commit/2ea0bce))
+* pr edits ([96c5ecf](https://github.com/nordnet/ui/commit/96c5ecf))
+* remove provider, add disabled state ([c895977](https://github.com/nordnet/ui/commit/c895977))
+* select refactoring ([7b90286](https://github.com/nordnet/ui/commit/7b90286))
+* wip lets start with review of select ([1225942](https://github.com/nordnet/ui/commit/1225942))
+
+## [1.45.5](https://github.com/nordnet/ui/compare/v1.45.4...v1.45.5) (2019-09-24)
+
+
+### Bug Fixes
+
+* 🐛 add generation savings colors ([c394886](https://github.com/nordnet/ui/commit/c394886))
+* add deprecation messages ([4347781](https://github.com/nordnet/ui/commit/4347781))
+* change field id to just id ([b88bd3b](https://github.com/nordnet/ui/commit/b88bd3b))
+* clean form field props ([a018076](https://github.com/nordnet/ui/commit/a018076))
+* deprecate forid ([7525265](https://github.com/nordnet/ui/commit/7525265))
+* error state ([933a6ef](https://github.com/nordnet/ui/commit/933a6ef))
+* merge master ([b509ca6](https://github.com/nordnet/ui/commit/b509ca6))
+* omit success in final output ([271ba12](https://github.com/nordnet/ui/commit/271ba12))
+* refactor input text to use refactored form field ([9f8f1c6](https://github.com/nordnet/ui/commit/9f8f1c6))
+
+## [1.45.4](https://github.com/nordnet/ui/compare/v1.45.3...v1.45.4) (2019-09-24)
+
+
+### Bug Fixes
+
+* clean form field props ([407d295](https://github.com/nordnet/ui/commit/407d295))
+* deprecate forid ([566e879](https://github.com/nordnet/ui/commit/566e879))
+* handle required field with star ([ea68f53](https://github.com/nordnet/ui/commit/ea68f53))
+* refactor input text to use refactored form field ([edabc83](https://github.com/nordnet/ui/commit/edabc83))
+
+## [1.45.3](https://github.com/nordnet/ui/compare/v1.45.2...v1.45.3) (2019-09-24)
+
+
+### Bug Fixes
+
+* modal overflow ([26ea656](https://github.com/nordnet/ui/commit/26ea656))
+
+## [1.45.2](https://github.com/nordnet/ui/compare/v1.45.1...v1.45.2) (2019-09-23)
+
+
+### Bug Fixes
+
+* types ([a07d466](https://github.com/nordnet/ui/commit/a07d466))
+
+## [1.45.1](https://github.com/nordnet/ui/compare/v1.45.0...v1.45.1) (2019-09-23)
+
+
+### Bug Fixes
+
+* cleanup ([62514dd](https://github.com/nordnet/ui/commit/62514dd))
+* remove unnecessary function ([434ddd1](https://github.com/nordnet/ui/commit/434ddd1))
+
+# [1.45.0](https://github.com/nordnet/ui/compare/v1.44.1...v1.45.0) (2019-09-20)
+
+
+### Bug Fixes
+
+* cleanup ([5998620](https://github.com/nordnet/ui/commit/5998620))
+* merge master ([02ee7ce](https://github.com/nordnet/ui/commit/02ee7ce))
+* merge master ([a39c2f5](https://github.com/nordnet/ui/commit/a39c2f5))
+* simplify ([2a415da](https://github.com/nordnet/ui/commit/2a415da))
+* update snaps ([887e43e](https://github.com/nordnet/ui/commit/887e43e))
+* update snaps ([55ca070](https://github.com/nordnet/ui/commit/55ca070))
+* update snaps ([034d6f1](https://github.com/nordnet/ui/commit/034d6f1))
+* update snaps ([01c112c](https://github.com/nordnet/ui/commit/01c112c))
+
+
+### Features
+
+* add check mark icon ([d033bc2](https://github.com/nordnet/ui/commit/d033bc2))
+* add checkbox input ([2570be6](https://github.com/nordnet/ui/commit/2570be6))
+* add events ([c15a11f](https://github.com/nordnet/ui/commit/c15a11f))
+* add warnings for deprecated usage ([7d293b7](https://github.com/nordnet/ui/commit/7d293b7))
+* creat public form field ([bbdad6b](https://github.com/nordnet/ui/commit/bbdad6b))
+* create fieldset and legend ([5645c2e](https://github.com/nordnet/ui/commit/5645c2e))
+
+## [1.44.1](https://github.com/nordnet/ui/compare/v1.44.0...v1.44.1) (2019-09-20)
+
+
+### Bug Fixes
+
+* 🐛 add archive icon ([96d2645](https://github.com/nordnet/ui/commit/96d2645))
+* 🐛 adjust viewbox and remove id from archive icon ([0252543](https://github.com/nordnet/ui/commit/0252543))
+
+# [1.44.0](https://github.com/nordnet/ui/compare/v1.43.0...v1.44.0) (2019-09-20)
+
+
+### Bug Fixes
+
+* remove unnecessary required prop ([4d617ac](https://github.com/nordnet/ui/commit/4d617ac))
+* show required ([1e08e54](https://github.com/nordnet/ui/commit/1e08e54))
+
+
+### Features
+
+* move out form field component ([08a5045](https://github.com/nordnet/ui/commit/08a5045))
+
+# [1.43.0](https://github.com/nordnet/ui/compare/v1.42.0...v1.43.0) (2019-09-19)
+
+
+### Features
+
+* create checkmark icon ([d470218](https://github.com/nordnet/ui/commit/d470218))
+
+# [1.42.0](https://github.com/nordnet/ui/compare/v1.41.0...v1.42.0) (2019-09-19)
+
+
+### Bug Fixes
+
+* eslint rule for label ([b8b21ff](https://github.com/nordnet/ui/commit/b8b21ff))
+
+
+### Features
+
+* add as prop to formlabel ([a8aaadc](https://github.com/nordnet/ui/commit/a8aaadc))
+* create legend ([551b78f](https://github.com/nordnet/ui/commit/551b78f))
+
+# [1.41.0](https://github.com/nordnet/ui/compare/v1.40.0...v1.41.0) (2019-09-17)
+
+
+### Bug Fixes
+
+* 🐛 allow LabeledValue to accept Node as label ([ac1d016](https://github.com/nordnet/ui/commit/ac1d016))
+* 🐛 only set max-height to 50vh if desktop ([c0d60e2](https://github.com/nordnet/ui/commit/c0d60e2))
+* 🐛 remove unused type ([a498ecf](https://github.com/nordnet/ui/commit/a498ecf))
+* 🐛 use breakpoint sm ([1d6f9bf](https://github.com/nordnet/ui/commit/1d6f9bf))
+
+
+### Features
+
+* 🎸 add tertiary title to labeled value ([3d87e55](https://github.com/nordnet/ui/commit/3d87e55))
+* 🎸 expose modal content for styling ([4a155d8](https://github.com/nordnet/ui/commit/4a155d8))
+
+# [1.40.0](https://github.com/nordnet/ui/compare/v1.39.0...v1.40.0) (2019-09-17)
+
+
+### Bug Fixes
+
+* 🐛 minify svg ([f75be8a](https://github.com/nordnet/ui/commit/f75be8a))
+* 🐛 snapshot ([4437e44](https://github.com/nordnet/ui/commit/4437e44))
+
+
+### Features
+
+* 🎸 add external link icon ([dfe35d0](https://github.com/nordnet/ui/commit/dfe35d0))
+
+# [1.39.0](https://github.com/nordnet/ui/compare/v1.38.7...v1.39.0) (2019-09-16)
+
+
+### Bug Fixes
+
+* remove unneeded css ([1392fd4](https://github.com/nordnet/ui/commit/1392fd4))
+* remove unneeded style ([7c40e01](https://github.com/nordnet/ui/commit/7c40e01))
+
+
+### Features
+
+* make number input as type text ([5ce780c](https://github.com/nordnet/ui/commit/5ce780c))
+
+## [1.38.7](https://github.com/nordnet/ui/compare/v1.38.6...v1.38.7) (2019-09-13)
+
+
+### Bug Fixes
+
+* added diagonal with circle and bolt is corrected ([9a7c498](https://github.com/nordnet/ui/commit/9a7c498))
+* added eye with plus and eye with plus active ([3a8fe76](https://github.com/nordnet/ui/commit/3a8fe76))
+* added imports to index and updated snapshots ([acf24a1](https://github.com/nordnet/ui/commit/acf24a1))
+* alphabetical order ([4ff52c4](https://github.com/nordnet/ui/commit/4ff52c4))
+* change icon alert to bell ([1f6aae8](https://github.com/nordnet/ui/commit/1f6aae8))
+* updated snapshot ([e5d32a3](https://github.com/nordnet/ui/commit/e5d32a3))
+
+## [1.38.6](https://github.com/nordnet/ui/compare/v1.38.5...v1.38.6) (2019-09-13)
+
+
+### Bug Fixes
+
+* controlled value ([c683481](https://github.com/nordnet/ui/commit/c683481))
+* naming ([4cfcd63](https://github.com/nordnet/ui/commit/4cfcd63))
+
+## [1.38.5](https://github.com/nordnet/ui/compare/v1.38.4...v1.38.5) (2019-09-13)
+
+
+### Bug Fixes
+
+* add alert icon ([77c040e](https://github.com/nordnet/ui/commit/77c040e))
+* remove fill in path ([353e8d5](https://github.com/nordnet/ui/commit/353e8d5))
+* update snapshop ([f26b23e](https://github.com/nordnet/ui/commit/f26b23e))
+* update snapshot ([1fe2a7c](https://github.com/nordnet/ui/commit/1fe2a7c))
+
+## [1.38.4](https://github.com/nordnet/ui/compare/v1.38.3...v1.38.4) (2019-09-12)
+
+
+### Bug Fixes
+
+* center text ([c3e1ed8](https://github.com/nordnet/ui/commit/c3e1ed8))
+* size prop to input ([de6cc79](https://github.com/nordnet/ui/commit/de6cc79))
+
+## [1.38.3](https://github.com/nordnet/ui/compare/v1.38.2...v1.38.3) (2019-09-12)
+
+
+### Bug Fixes
+
+* make component more simple ([ea828e3](https://github.com/nordnet/ui/commit/ea828e3))
+
+## [1.38.2](https://github.com/nordnet/ui/compare/v1.38.1...v1.38.2) (2019-09-12)
+
+
+### Bug Fixes
+
+* allow reactnode as title ([fe96ef7](https://github.com/nordnet/ui/commit/fe96ef7))
+* update story and snapshot ([c041713](https://github.com/nordnet/ui/commit/c041713))
+
+## [1.38.1](https://github.com/nordnet/ui/compare/v1.38.0...v1.38.1) (2019-09-10)
+
+
+### Bug Fixes
+
+* handle onchange better ([91f2c28](https://github.com/nordnet/ui/commit/91f2c28))
+* update snaps ([672f4f6](https://github.com/nordnet/ui/commit/672f4f6))
+
+# [1.38.0](https://github.com/nordnet/ui/compare/v1.37.0...v1.38.0) (2019-09-10)
+
+
+### Bug Fixes
+
+* 🐛 only set max-height to 50vh if desktop ([2893b34](https://github.com/nordnet/ui/commit/2893b34))
+* 🐛 use breakpoint sm ([e6c8eb6](https://github.com/nordnet/ui/commit/e6c8eb6))
+
+
+### Features
+
+* 🎸 expose modal content for styling ([ca986f5](https://github.com/nordnet/ui/commit/ca986f5))
+
+# [1.37.0](https://github.com/nordnet/ui/compare/v1.36.0...v1.37.0) (2019-09-05)
+
+
+### Bug Fixes
+
+* always trigger onchange if changed ([011a787](https://github.com/nordnet/ui/commit/011a787))
+* merge master ([a19c238](https://github.com/nordnet/ui/commit/a19c238))
+* merge master ([a8bfe11](https://github.com/nordnet/ui/commit/a8bfe11))
+* pr feedback ([40bf915](https://github.com/nordnet/ui/commit/40bf915))
+* reset background of button in link component ([d5c5e93](https://github.com/nordnet/ui/commit/d5c5e93))
+* squash commit ([434a3b8](https://github.com/nordnet/ui/commit/434a3b8))
+* typo in doc ([a86d664](https://github.com/nordnet/ui/commit/a86d664))
+
+
+### Features
+
+* 🎸 add icons import, plus, pluswithcircle, threedots ([887d76e](https://github.com/nordnet/ui/commit/887d76e))
+* preserve aspect ratio and stories ([b8566b9](https://github.com/nordnet/ui/commit/b8566b9))
+
+# [1.36.0](https://github.com/nordnet/ui/compare/v1.35.0...v1.36.0) (2019-09-04)
+
+
+### Features
+
+* create access to inner components ([602f4f2](https://github.com/nordnet/ui/commit/602f4f2))
+
+# [1.35.0](https://github.com/nordnet/ui/compare/v1.34.0...v1.35.0) (2019-09-04)
+
+
+### Features
+
+* 🎸 add new icon for RTMT ([822ce39](https://github.com/nordnet/ui/commit/822ce39))
+* 🎸 enable custom viewbox size for IconBase ([a42a645](https://github.com/nordnet/ui/commit/a42a645))
+
+# [1.34.0](https://github.com/nordnet/ui/compare/v1.33.0...v1.34.0) (2019-09-04)
+
+
+### Bug Fixes
+
+* remove manual fill ([d227330](https://github.com/nordnet/ui/commit/d227330))
+* ts props ([55f3637](https://github.com/nordnet/ui/commit/55f3637))
+
+
+### Features
+
+* add questionmark icon ([ac33b03](https://github.com/nordnet/ui/commit/ac33b03))
+
+# [1.33.0](https://github.com/nordnet/ui/compare/v1.32.1...v1.33.0) (2019-09-03)
+
+
+### Bug Fixes
+
+* merge master ([858b71b](https://github.com/nordnet/ui/commit/858b71b))
+* mobile full screen modal ([8b03457](https://github.com/nordnet/ui/commit/8b03457))
+
+
+### Features
+
+* **modal:** change modal to use framer-motion ([6571fa3](https://github.com/nordnet/ui/commit/6571fa3))
+
+## [1.32.1](https://github.com/nordnet/ui/compare/v1.32.0...v1.32.1) (2019-08-30)
+
+
+### Bug Fixes
+
+* add default values to external link ([26e437c](https://github.com/nordnet/ui/commit/26e437c))
 
 # [1.32.0](https://github.com/nordnet/ui/compare/v1.31.0...v1.32.0) (2019-08-23)
 

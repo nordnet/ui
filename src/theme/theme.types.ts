@@ -125,6 +125,16 @@ export type Theme = {
     inputBorderSuccess: RawColor['positive'];
     /** gray6 */
     flagBorder: RawColor['gray6'];
+    /** white */
+    selectOptionBackground: RawColor['white'];
+    /** complementaryGreen1 */
+    generationSavingsTimelineColor1: RawColor['complementaryGreen1'];
+    /** complementaryPink1 */
+    generationSavingsTimelineColor2: RawColor['complementaryPink1'];
+    /** brandBlue */
+    generationSavingsTimelineColor3: RawColor['brandBlue'];
+    /** complementaryBlue1 */
+    generationSavingsTimelineColor4: RawColor['complementaryBlue1'];
   };
 
   spacing: {

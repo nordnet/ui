@@ -1,0 +1,322 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | Fieldset Default 1`] = `
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  margin: 0 0 16px 0;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c3 {
+  width: auto;
+  display: inline-block;
+}
+
+.c10 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c10::before {
+  content: '';
+  display: block;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.c4 {
+  position: relative;
+}
+
+.c4:hover .c9 {
+  border-color: #4B4B46;
+}
+
+.c8 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c8:checked + .c9 {
+  border-color: #0046FF;
+  background: #0046FF;
+}
+
+.c8[disabled] + .c9 {
+  border-color: #EBEBE8;
+}
+
+.c8:checked[disabled] + .c9 {
+  border-color: #EBEBE8;
+  background: #EBEBE8;
+}
+
+.c8:focus + .c9::before {
+  border: 1px solid #0046FF;
+}
+
+.c13 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<fieldset
+  className="c0"
+>
+  <legend
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Colors
+    </span>
+  </legend>
+  <div
+    className="c3"
+    width="auto"
+  >
+    <label
+      className="c4 c5"
+      hidden={false}
+    >
+      <span
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          <input
+            className="c8"
+            name="example"
+            type="checkbox"
+            value="green"
+          />
+          <div
+            className="c9 c10 c11"
+          >
+            <svg
+              aria-hidden="true"
+              className="c12"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              size={3}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+              />
+            </svg>
+          </div>
+          <span
+            className="c13 c14"
+          >
+            Green
+          </span>
+        </div>
+      </span>
+    </label>
+  </div>
+  <div
+    className="c3"
+    width="auto"
+  >
+    <label
+      className="c4 c5"
+      hidden={false}
+    >
+      <span
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          <input
+            className="c8"
+            name="example"
+            type="checkbox"
+            value="blue"
+          />
+          <div
+            className="c9 c10 c11"
+          >
+            <svg
+              aria-hidden="true"
+              className="c12"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              size={3}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+              />
+            </svg>
+          </div>
+          <span
+            className="c13 c14"
+          >
+            Blue
+          </span>
+        </div>
+      </span>
+    </label>
+  </div>
+  <div
+    className="c3"
+    width="auto"
+  >
+    <label
+      className="c4 c5"
+      hidden={false}
+    >
+      <span
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          <input
+            className="c8"
+            name="example"
+            type="checkbox"
+            value="yellow"
+          />
+          <div
+            className="c9 c10 c11"
+          >
+            <svg
+              aria-hidden="true"
+              className="c12"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              size={3}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+              />
+            </svg>
+          </div>
+          <span
+            className="c13 c14"
+          >
+            Yellow
+          </span>
+        </div>
+      </span>
+    </label>
+  </div>
+</fieldset>
+`;
+
+exports[`Storyshots Molecules | Fieldset Docs 1`] = `
+<p>
+  The Fieldset component is used to group related elements in a form.
+</p>
+`;

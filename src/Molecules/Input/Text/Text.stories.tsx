@@ -49,6 +49,29 @@ storiesOf('Molecules | Input / Text', module)
       rightAddon="SEK"
     />
   ))
+  .add('With auto focus', () => <Input.Text label="Label" placeholder="Placeholder" autoFocus />)
+  .add('Required', () => (
+    <Display
+      title="Required"
+      items={[
+        {
+          component: <Input.Text label="Label" placeholder="Placeholder" required />,
+          title: 'Default (without star)',
+        },
+        {
+          component: (
+            <Input.Text
+              label="Label"
+              placeholder="Placeholder"
+              required
+              visuallyEmphasiseRequired
+            />
+          ),
+          title: 'With star',
+        },
+      ]}
+    />
+  ))
   .add('Actions', () => (
     <>
       <p>

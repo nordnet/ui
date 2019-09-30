@@ -2,9 +2,8 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
 import { Props, Spacings } from './Box.types';
+import { isString, isNumber } from '../../common/utils';
 
-const isString = (x: any): x is string => typeof x === 'string';
-const isNumber = (x: any): x is number => typeof x === 'number';
 const isPropPresentedIn = (props: Props) => (prop: keyof Props) =>
   typeof props[prop] !== 'undefined';
 
@@ -89,31 +88,9 @@ const StyledDiv = styled.div<Props>`
   ${p => (p.lg ? getStylesForSize('lg') : '')}
 `;
 
-export const Box: React.FC<Props> = ({
-  as,
-  children,
-  m,
-  mb,
-  ml,
-  mr,
-  mt,
-  mx,
-  my,
-  p,
-  pb,
-  pl,
-  pr,
-  pt,
-  px,
-  py,
-  lg,
-  md,
-  sm,
-  xl,
-  className,
-}) => (
-  <StyledDiv
-    {...{
+export const Box: React.FC<Props> = React.forwardRef<HTMLDivElement, Props>(
+  (
+    {
       as,
       children,
       m,
@@ -135,6 +112,36 @@ export const Box: React.FC<Props> = ({
       sm,
       xl,
       className,
-    }}
-  />
+      ...rest
+    },
+    ref,
+  ) => (
+    <StyledDiv
+      ref={ref}
+      {...{
+        as,
+        children,
+        m,
+        mb,
+        ml,
+        mr,
+        mt,
+        mx,
+        my,
+        p,
+        pb,
+        pl,
+        pr,
+        pt,
+        px,
+        py,
+        lg,
+        md,
+        sm,
+        xl,
+        className,
+        ...rest,
+      }}
+    />
+  ),
 );

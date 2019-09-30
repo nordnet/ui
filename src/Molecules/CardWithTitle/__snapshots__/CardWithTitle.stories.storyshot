@@ -196,6 +196,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
             aria-hidden="true"
             className="c7 c8"
             focusable="false"
+            preserveAspectRatio="xMidYMid meet"
             role="presentation"
             size={3}
             viewBox="0 0 24 24"

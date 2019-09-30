@@ -181,10 +181,31 @@ Array [
   border: 1px solid #eee;
 }
 
+.c9 {
+  width: 56px;
+  height: 56px;
+  background-color: #3A913F;
+  border: 1px solid #eee;
+}
+
+.c11 {
+  width: 56px;
+  height: 56px;
+  background-color: #AC135A;
+  border: 1px solid #eee;
+}
+
 .c3 {
   width: 56px;
   height: 56px;
   background-color: #00C8F5;
+  border: 1px solid #eee;
+}
+
+.c7 {
+  width: 56px;
+  height: 56px;
+  background-color: #385E9D;
   border: 1px solid #eee;
 }
 
@@ -209,13 +230,6 @@ Array [
   border: 1px solid #eee;
 }
 
-.c7 {
-  width: 56px;
-  height: 56px;
-  background-color: #385E9D;
-  border: 1px solid #eee;
-}
-
 .c8 {
   width: 56px;
   height: 56px;
@@ -223,24 +237,10 @@ Array [
   border: 1px solid #eee;
 }
 
-.c9 {
-  width: 56px;
-  height: 56px;
-  background-color: #3A913F;
-  border: 1px solid #eee;
-}
-
 .c10 {
   width: 56px;
   height: 56px;
   background-color: #023C00;
-  border: 1px solid #eee;
-}
-
-.c11 {
-  width: 56px;
-  height: 56px;
-  background-color: #AC135A;
   border: 1px solid #eee;
 }
 
@@ -1048,6 +1048,34 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
   border: 1px solid #eee;
 }
 
+.c26 {
+  width: 56px;
+  height: 56px;
+  background-color: #3A913F;
+  border: 1px solid #eee;
+}
+
+.c27 {
+  width: 56px;
+  height: 56px;
+  background-color: #AC135A;
+  border: 1px solid #eee;
+}
+
+.c28 {
+  width: 56px;
+  height: 56px;
+  background-color: #00C8F5;
+  border: 1px solid #eee;
+}
+
+.c29 {
+  width: 56px;
+  height: 56px;
+  background-color: #385E9D;
+  border: 1px solid #eee;
+}
+
 @supports (-webkit-overflow-scrolling:touch): {
   .c4 {
     overflow: scroll;
@@ -1519,6 +1547,37 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         />
         <div>
           #6E6E69
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        selectOptionBackground
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c6"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c6"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
         </div>
       </td>
     </tr>
@@ -2170,6 +2229,130 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         />
         <div>
           #00D200
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        generationSavingsTimelineColor1
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c26"
+          color="#3A913F"
+        />
+        <div>
+          #3A913F
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c26"
+          color="#3A913F"
+        />
+        <div>
+          #3A913F
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        generationSavingsTimelineColor2
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c27"
+          color="#AC135A"
+        />
+        <div>
+          #AC135A
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c27"
+          color="#AC135A"
+        />
+        <div>
+          #AC135A
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        generationSavingsTimelineColor3
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c28"
+          color="#00C8F5"
+        />
+        <div>
+          #00C8F5
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c28"
+          color="#00C8F5"
+        />
+        <div>
+          #00C8F5
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        generationSavingsTimelineColor4
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c29"
+          color="#385E9D"
+        />
+        <div>
+          #385E9D
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c29"
+          color="#385E9D"
+        />
+        <div>
+          #385E9D
         </div>
       </td>
     </tr>

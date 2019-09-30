@@ -1,22 +1,30 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { StyledProps } from 'styled-components';
 import { Props } from './Avatar.types';
 
-import Typography from '../../Atoms/Typography';
+import { Flexbox, Typography } from '../..';
 
-const StyledDiv = styled.div`
+const getSize = (p: StyledProps<Props>) => {
+  switch (p.size) {
+    case 's':
+      return p.theme.spacing.unit(6);
+    case 'm':
+    default:
+      return p.theme.spacing.unit(8);
+  }
+};
+
+const StyledDiv = styled(Flexbox)`
   background-color: ${p => p.theme.color.backgroundDark};
-  width: ${p => p.theme.spacing.unit(8)}px;
-  height: ${p => p.theme.spacing.unit(8)}px;
+  width: ${getSize}px;
+  height: ${getSize}px;
+  font-size: ${getSize}px;
   border-radius: 50%;
-  line-height: ${p =>
-    p.theme.spacing.unit(8) - 1}px; /* FIXME: font is buggy, so baseline is 1px off */
-  text-align: center;
 `;
 
-export const Avatar: React.FunctionComponent<Props> = ({ children }) => (
-  <StyledDiv>
-    <Typography type="tertiary" color={t => t.color.textLight}>
+export const Avatar: React.FunctionComponent<Props> = ({ children, size = 'm' }) => (
+  <StyledDiv container alignItems="center" justifyContent="center" size={size}>
+    <Typography type={size === 'm' ? 'tertiary' : 'caption'} color={t => t.color.textLight}>
       {children}
     </Typography>
   </StyledDiv>

@@ -121,6 +121,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       disabledBackground: rawColor.gray6,
       divider: rawColor.gray6,
       label: rawColor.gray2,
+      selectOptionBackground: rawColor.white,
       modalBackdrop: Color(rawColor.gray2)
         .alpha(0.63)
         .rgb()
@@ -157,6 +158,10 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       flagBorder: rawColor.gray6,
       inputBorderError: rawColor.negative,
       inputBorderSuccess: rawColor.positive,
+      generationSavingsTimelineColor1: rawColor.complementaryGreen1,
+      generationSavingsTimelineColor2: rawColor.complementaryPink1,
+      generationSavingsTimelineColor3: rawColor.brandBlue,
+      generationSavingsTimelineColor4: rawColor.complementaryBlue1,
     },
     media: {
       between: (s1, s2) => {

@@ -41,20 +41,20 @@ exports[`Storyshots Molecules | LabeledValue Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue secondary currency 1`] = `
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -96,15 +96,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue secondary
 `;
 
 exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue title1 1`] = `
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -112,6 +103,15 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue title1 1`
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
 }
 
 .c0 {
@@ -156,6 +156,59 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue title1 1`
 </div>
 `;
 
+exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with custom title 1`] = `
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  margin-bottom: 4px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Foo
+    </span>
+  </div>
+  <span
+    className="c3"
+  >
+    Bar
+  </span>
+</div>
+`;
+
 exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with negative development and currency 1`] = `
 .c4 {
   box-sizing: border-box;
@@ -183,6 +236,15 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
   padding-top: 0;
 }
 
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -197,15 +259,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
   color: #282823;
   margin: 0;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -306,20 +359,20 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
   padding-top: 0;
 }
 
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }

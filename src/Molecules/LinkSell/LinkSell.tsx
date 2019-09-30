@@ -17,7 +17,7 @@ const StyledLink = styled(Link)<Props>`
 
 export const LinkSell: LinkSellComponent = props => (
   <StyledLink
-    {...(props.disabled ? { as: 'span' } : {})}
+    {...(props.disabled ? { as: 'span' as 'span' } : {})}
     disabled={props.disabled}
     onClick={props.onClick}
     to={props.to}

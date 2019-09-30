@@ -1,15 +1,49 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import * as R from 'ramda';
 import { Props } from './Text.types';
-import { Flexbox } from '../../..';
-import { FormField } from '../FormField';
+import { Flexbox, Typography, FormField } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
-const inputBackgroundColor = css<Pick<Props, 'disabled'>>`
+const height = css<Pick<Props, 'size'>>`
+  height: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+`;
+
+const background = css<Pick<Props, 'disabled'>>`
   background-color: ${p =>
     p.disabled ? p.theme.color.disabledBackground : p.theme.color.backgroundInput};
+`;
+
+const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
+  ${p =>
+    p.disabled
+      ? ''
+      : `
+      &:hover {
+        border-color: ${p.theme.color.inputBorderHover};
+      }
+`}
+`;
+
+const focusBorderStyles = css`
+  &:focus {
+    border-color: ${p => p.theme.color.borderActive};
+  }
+`;
+
+const borderStyles = css<Pick<Props, 'error' | 'success'>>`
+  outline: none;
+  border: 1px solid
+    ${p => {
+      if (hasError(p.error)) return p.theme.color.inputBorderError;
+      if (p.success) return p.theme.color.inputBorderSuccess;
+      return p.theme.color.inputBorder;
+    }};
+  position: relative;
+  ${hoverBorderStyles}
+  ${focusBorderStyles}
 `;
 
 const placeholderNormalizaion = css<{ sizeProp: Props['size'] }>`
@@ -33,31 +67,28 @@ const placeholderNormalizaion = css<{ sizeProp: Props['size'] }>`
   }
 `;
 
-const UnstyledInput = styled(NormalizedElements.Input).attrs({ type: 'text' })<
+const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<
   Partial<Props> & { sizeProp: Props['size'] }
 >`
   border: 0;
-  box-sizing: border-box;
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  color: inherit;
   width: 100%;
   padding: ${p => p.theme.spacing.unit(2)}px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  outline: 0;
-  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
 
+  ${height}
+  ${borderStyles}
+  ${background}
   ${placeholderNormalizaion}
-  ${inputBackgroundColor}
   ${p => (p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px;` : '')}
   ${p =>
     p.rightAddon
       ? `padding-right: ${p.theme.spacing.unit(10)}px;` // compensate for right paddings
       : ''}
+`;
+
+const Wrapper = styled.div`
+  position: relative;
 `;
 
 const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
@@ -72,7 +103,7 @@ const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
 `;
 
 const components = {
-  UnstyledInput,
+  Input,
   AddonBox,
 };
 
@@ -81,8 +112,8 @@ export const Text: React.FC<Props> & {
    * This will allow you to customize
    * inner parts with styled-components
    * @example
-   * const CustomText = styled(Text)`
-   *  ${UnstyledInput} {
+   * const CustomText = styled(Input.Text)`
+   *  ${Input.Text.components.Input} {
    *    color: pink;
    * }
    * `
@@ -90,59 +121,71 @@ export const Text: React.FC<Props> & {
   components: typeof components;
 } = props => {
   const {
+    autoFocus,
+    defaultValue,
     disabled,
     error,
     leftAddon,
-    placeholder,
-    rightAddon,
-    success,
-    size,
-    defaultValue,
-    value,
+    name,
     onBlur,
     onChange,
     onClick,
     onFocus,
     onKeyDown,
-    onKeyUp,
     onKeyPress,
-    name,
+    onKeyUp,
+    placeholder,
+    required,
+    rightAddon,
+    size,
+    success,
+    value,
+    visuallyEmphasiseRequired,
   } = props;
-  /* eslint-disable jsx-a11y/label-has-associated-control,jsx-a11y/label-has-for */
+
   return (
-    <FormField {...props}>
-      <UnstyledInput
-        {...{
-          sizeProp: size,
-          placeholder,
-          error,
-          success,
-          leftAddon,
-          rightAddon,
-          value,
-          defaultValue,
-          disabled,
-          onChange,
-          onFocus,
-          onClick,
-          onBlur,
-          onKeyDown,
-          onKeyUp,
-          onKeyPress,
-          name,
-        }}
-        {...(hasError(error) ? { 'aria-invalid': true } : {})}
-      />
-      {leftAddon && (
-        <AddonBox container justifyContent="center" alignItems="center" position="left">
-          {leftAddon}
-        </AddonBox>
-      )}
-      {rightAddon && (
-        <AddonBox container justifyContent="center" alignItems="center" position="right">
-          {rightAddon}
-        </AddonBox>
-      )}
+    <FormField
+      {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'width'], props)}
+      required={visuallyEmphasiseRequired}
+    >
+      <Typography type="secondary" color={t => t.color.text}>
+        <Wrapper>
+          <Input
+            {...{
+              autoFocus,
+              defaultValue,
+              disabled,
+              error,
+              leftAddon,
+              name,
+              onBlur,
+              onChange,
+              onClick,
+              onFocus,
+              onKeyDown,
+              onKeyPress,
+              onKeyUp,
+              placeholder,
+              required,
+              rightAddon,
+              sizeProp: size,
+              success,
+              value,
+            }}
+            {...(hasError(error) ? { 'aria-invalid': true } : {})}
+          />
+          {leftAddon && (
+            <AddonBox container justifyContent="center" alignItems="center" position="left">
+              {leftAddon}
+            </AddonBox>
+          )}
+          {rightAddon && (
+            <AddonBox container justifyContent="center" alignItems="center" position="right">
+              {rightAddon}
+            </AddonBox>
+          )}
+        </Wrapper>
+      </Typography>
     </FormField>
   );
 };

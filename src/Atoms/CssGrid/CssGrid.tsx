@@ -343,9 +343,11 @@ const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({ theme, childr
         // @ts-ignore
         <RawCssGridItem
           {...child.props}
-          css={css`
-            ${stylesFnForChild(child.props.area)}
-          `}
+          css={
+            css`
+              ${stylesFnForChild(child.props.area)}
+            ` as any
+          }
         />
       );
     },

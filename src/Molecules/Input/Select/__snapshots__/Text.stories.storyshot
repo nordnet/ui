@@ -1,0 +1,4790 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | Input / Text Actions 1`] = `
+Array [
+  <p>
+    Actions are a bit laggy because of the @storybook/addon-actions. Prod performance is not affected.
+  </p>,
+  .c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c9 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.c9::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder {
+  line-height: 22px;
+}
+
+.c7 {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c7:focus-within {
+  border-color: #0046FF;
+}
+
+.c7.focus-within {
+  border-color: #0046FF;
+}
+
+.c7:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+}
+
+.c3 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c0 {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+<div
+    className="c0"
+  >
+    <label>
+      <div
+        className="c1 c2"
+      >
+        <span
+          className="c3 c4"
+        >
+          Label
+        </span>
+        <div
+          className="c5"
+        >
+          <div
+            className="c6"
+            color={[Function]}
+            type="secondary"
+          >
+            <div
+              className="c7 c8"
+            >
+              <input
+                className="c9"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyPress={[Function]}
+                onKeyUp={[Function]}
+                placeholder="Placeholder"
+                type="text"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </label>
+  </div>,
+]
+`;
+
+exports[`Storyshots Molecules | Input / Text Default 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c9 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.c9::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder {
+  line-height: 22px;
+}
+
+.c7 {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c7:focus-within {
+  border-color: #0046FF;
+}
+
+.c7.focus-within {
+  border-color: #0046FF;
+}
+
+.c7:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+}
+
+.c3 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c0 {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label>
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c3 c4"
+      >
+        Label
+      </span>
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+          color={[Function]}
+          type="secondary"
+        >
+          <div
+            className="c7 c8"
+          >
+            <input
+              className="c9"
+              placeholder="Placeholder"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c9 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #EBEBE8;
+}
+
+.c9::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder {
+  line-height: 22px;
+}
+
+.c7 {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c7:focus-within {
+  border-color: #0046FF;
+}
+
+.c7.focus-within {
+  border-color: #0046FF;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+}
+
+.c3 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c0 {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label>
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c3 c4"
+      >
+        Label
+      </span>
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+          color={[Function]}
+          type="secondary"
+        >
+          <div
+            className="c7 c8"
+          >
+            <input
+              className="c9"
+              disabled={true}
+              placeholder="Placeholder"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c8 {
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+}
+
+.c12 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.c12::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c12::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c12:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c12::placeholder {
+  line-height: 17px;
+}
+
+.c12:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c12::-moz-placeholder {
+  line-height: 22px;
+}
+
+.c10 {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c10:focus-within {
+  border-color: #0046FF;
+}
+
+.c10.focus-within {
+  border-color: #0046FF;
+}
+
+.c10:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c10::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c10::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c10:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c10::placeholder {
+  color: #6E6E69;
+}
+
+.c6 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c13 {
+  line-height: 17px;
+  display: inline-block;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c3 {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Long values
+    </div>
+    <div>
+      <div
+        className="c3"
+      >
+        <label>
+          <div
+            className="c4 c5"
+          >
+            <span
+              className="c6 c7"
+            >
+              Too long label, goes into ellipsis. Consider smaller label or bigger input
+            </span>
+            <div
+              className="c8"
+            >
+              <div
+                className="c9"
+                color={[Function]}
+                type="secondary"
+              >
+                <div
+                  className="c10 c11"
+                >
+                  <input
+                    className="c12"
+                    placeholder="If placeholder goes too long though, it probably should be truncated into ellipsis, right?"
+                    type="text"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+        <span>
+          <span
+            className="c13 c14"
+          >
+            This is much neccessary info wow
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Long extraInfo
+    </div>
+    <div>
+      <div
+        className="c3"
+      >
+        <label>
+          <div
+            className="c4 c5"
+          >
+            <span
+              className="c6 c7"
+            >
+              Small label
+            </span>
+            <div
+              className="c8"
+            >
+              <div
+                className="c9"
+                color={[Function]}
+                type="secondary"
+              >
+                <div
+                  className="c10 c11"
+                >
+                  <input
+                    className="c12"
+                    placeholder=""
+                    type="text"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+        <span>
+          <span
+            className="c13 c14"
+          >
+            Big extra fat extraInfo that will wrap over many lines. Be careful with this pattern, use it only with small texts!
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+}
+
+.c12 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c9 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.c9::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder {
+  line-height: 22px;
+}
+
+.c7 {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #FF1900;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c7:focus-within {
+  border-color: #FF1900;
+}
+
+.c7.focus-within {
+  border-color: #FF1900;
+}
+
+.c7:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+}
+
+.c3 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c10 {
+  line-height: 17px;
+  display: inline-block;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c0 {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label>
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c3 c4"
+      >
+        My awesome text field
+      </span>
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+          color={[Function]}
+          type="secondary"
+        >
+          <div
+            className="c7 c8"
+          >
+            <input
+              aria-invalid={true}
+              className="c9"
+              onChange={[Function]}
+              placeholder="This is a placeholder"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+  <span>
+    <span
+      className="c10 c11"
+    >
+      <div
+        className="c12"
+      >
+        Error: 
+      </div>
+      Something went wrong
+    </span>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+}
+
+.c9 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.c9::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder {
+  line-height: 22px;
+}
+
+.c7 {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c7:focus-within {
+  border-color: #0046FF;
+}
+
+.c7.focus-within {
+  border-color: #0046FF;
+}
+
+.c7:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+}
+
+.c3 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c10 {
+  line-height: 17px;
+  display: inline-block;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c0 {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label>
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c3 c4"
+      >
+        Label
+      </span>
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+          color={[Function]}
+          type="secondary"
+        >
+          <div
+            className="c7 c8"
+          >
+            <input
+              className="c9"
+              placeholder="Placeholder"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+  <span>
+    <span
+      className="c10 c11"
+    >
+      Use wisely this space
+    </span>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+}
+
+.c12 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c9 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.c9::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder {
+  line-height: 22px;
+}
+
+.c7 {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #FF1900;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c7:focus-within {
+  border-color: #FF1900;
+}
+
+.c7.focus-within {
+  border-color: #FF1900;
+}
+
+.c7:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+}
+
+.c3 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c10 {
+  line-height: 17px;
+  display: inline-block;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c0 {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label>
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c3 c4"
+      >
+        My awesome text field
+      </span>
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+          color={[Function]}
+          type="secondary"
+        >
+          <div
+            className="c7 c8"
+          >
+            <input
+              aria-invalid={true}
+              className="c9"
+              onChange={[Function]}
+              placeholder="This is a placeholder"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+  <span>
+    <span
+      className="c10 c11"
+    >
+      <div
+        className="c12"
+      >
+        Error: 
+      </div>
+      Enter text
+    </span>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Text Full width 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Full width inputs
+    </span>
+  </div>,
+  .c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c8 {
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c16 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c12 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.c12::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c12::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c12:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c12::placeholder {
+  line-height: 17px;
+}
+
+.c12:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c12::-moz-placeholder {
+  line-height: 22px;
+}
+
+.c13 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+  padding-left: 32px;
+}
+
+.c13::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c13::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c13:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c13::placeholder {
+  line-height: 17px;
+}
+
+.c13:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c13::-moz-placeholder {
+  line-height: 22px;
+}
+
+.c17 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+  padding-right: 40px;
+}
+
+.c17::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c17::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c17:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c17::placeholder {
+  line-height: 17px;
+}
+
+.c17:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c17::-moz-placeholder {
+  line-height: 22px;
+}
+
+.c10 {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c10:focus-within {
+  border-color: #0046FF;
+}
+
+.c10.focus-within {
+  border-color: #0046FF;
+}
+
+.c10:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c10::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c10::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c10:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c10::placeholder {
+  color: #6E6E69;
+}
+
+.c6 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c14 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.c18 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  right: 4px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c3 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+    className="c0"
+    direction="column"
+  >
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Default
+      </div>
+      <div>
+        <div
+          className="c3"
+          width="100%"
+        >
+          <label>
+            <div
+              className="c4 c5"
+            >
+              <span
+                className="c6 c7"
+              >
+                Label
+              </span>
+              <div
+                className="c8"
+              >
+                <div
+                  className="c9"
+                  color={[Function]}
+                  type="secondary"
+                >
+                  <div
+                    className="c10 c11"
+                  >
+                    <input
+                      className="c12"
+                      placeholder="Placeholder"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Left addon
+      </div>
+      <div>
+        <div
+          className="c3"
+          width="100%"
+        >
+          <label>
+            <div
+              className="c4 c5"
+            >
+              <span
+                className="c6 c7"
+              >
+                Label
+              </span>
+              <div
+                className="c8"
+              >
+                <div
+                  className="c9"
+                  color={[Function]}
+                  type="secondary"
+                >
+                  <div
+                    className="c10 c11"
+                  >
+                    <input
+                      className="c13"
+                      placeholder="Placeholder"
+                      type="text"
+                    />
+                    <div
+                      className="c14 c15"
+                      position="left"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="c16"
+                        focusable="false"
+                        role="presentation"
+                        size={4}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M 12 21.816406 C 9.683594 21.816406 7.558594 21.011719 5.875 19.667969 L 19.667969 5.875 C 21.011719 7.558594 21.816406 9.683594 21.816406 12 C 21.816406 17.414062 17.414062 21.816406 12 21.816406 M 2.183594 12 C 2.183594 6.585938 6.585938 2.183594 12 2.183594 C 14.316406 2.183594 16.441406 2.988281 18.125 4.332031 L 4.332031 18.125 C 2.988281 16.441406 2.183594 14.316406 2.183594 12 M 12 0 C 5.382812 0 0 5.382812 0 12 C 0 18.617188 5.382812 24 12 24 C 18.617188 24 24 18.617188 24 12 C 24 5.382812 18.617188 0 12 0"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Right addon
+      </div>
+      <div>
+        <div
+          className="c3"
+          width="100%"
+        >
+          <label>
+            <div
+              className="c4 c5"
+            >
+              <span
+                className="c6 c7"
+              >
+                Label
+              </span>
+              <div
+                className="c8"
+              >
+                <div
+                  className="c9"
+                  color={[Function]}
+                  type="secondary"
+                >
+                  <div
+                    className="c10 c11"
+                  >
+                    <input
+                      className="c17"
+                      placeholder="Placeholder"
+                      type="text"
+                    />
+                    <div
+                      className="c18 c15"
+                      position="right"
+                    >
+                      SEK
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  margin-bottom: 32px;
+}
+
+<div
+    className="c0"
+  />,
+]
+`;
+
+exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c9 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.c9::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder {
+  line-height: 22px;
+}
+
+.c7 {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c7:focus-within {
+  border-color: #0046FF;
+}
+
+.c7.focus-within {
+  border-color: #0046FF;
+}
+
+.c7:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+}
+
+.c3 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c0 {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label>
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c3 c4"
+      >
+        Label
+      </span>
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+          color={[Function]}
+          type="secondary"
+        >
+          <div
+            className="c7 c8"
+          >
+            <input
+              className="c9"
+              placeholder="Placeholder"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c9 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+  padding-left: 32px;
+}
+
+.c9::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder {
+  line-height: 22px;
+}
+
+.c7 {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c7:focus-within {
+  border-color: #0046FF;
+}
+
+.c7.focus-within {
+  border-color: #0046FF;
+}
+
+.c7:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+}
+
+.c3 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c10 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c0 {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label>
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c3 c4"
+      >
+        Label
+      </span>
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+          color={[Function]}
+          type="secondary"
+        >
+          <div
+            className="c7 c8"
+          >
+            <input
+              className="c9"
+              placeholder="Placeholder"
+              type="text"
+            />
+            <div
+              className="c10 c11"
+              position="left"
+            >
+              <svg
+                aria-hidden="true"
+                className="c12"
+                focusable="false"
+                role="presentation"
+                size={4}
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M 12 21.816406 C 9.683594 21.816406 7.558594 21.011719 5.875 19.667969 L 19.667969 5.875 C 21.011719 7.558594 21.816406 9.683594 21.816406 12 C 21.816406 17.414062 17.414062 21.816406 12 21.816406 M 2.183594 12 C 2.183594 6.585938 6.585938 2.183594 12 2.183594 C 14.316406 2.183594 16.441406 2.988281 18.125 4.332031 L 4.332031 18.125 C 2.988281 16.441406 2.183594 14.316406 2.183594 12 M 12 0 C 5.382812 0 0 5.382812 0 12 C 0 18.617188 5.382812 24 12 24 C 18.617188 24 24 18.617188 24 12 C 24 5.382812 18.617188 0 12 0"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c9 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+  padding-right: 40px;
+}
+
+.c9::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder {
+  line-height: 22px;
+}
+
+.c7 {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c7:focus-within {
+  border-color: #0046FF;
+}
+
+.c7.focus-within {
+  border-color: #0046FF;
+}
+
+.c7:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+}
+
+.c3 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c10 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  right: 4px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c0 {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label>
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c3 c4"
+      >
+        Label
+      </span>
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+          color={[Function]}
+          type="secondary"
+        >
+          <div
+            className="c7 c8"
+          >
+            <input
+              className="c9"
+              placeholder="Placeholder"
+              type="text"
+            />
+            <div
+              className="c10 c11"
+              position="right"
+            >
+              SEK
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c8 {
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 16px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c1 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+}
+
+.c18 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c20 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+}
+
+.c17 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c19 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background-color: #0046FF;
+  padding: 4px 12px;
+  min-height: 32px;
+  color: #FFFFFF;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c19,
+.c19[type='button'],
+.c19[type='reset'],
+.c19[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c19::-moz-focus-inner,
+.c19[type='button']::-moz-focus-inner,
+.c19[type='reset']::-moz-focus-inner,
+.c19[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c19:-moz-focusring,
+.c19[type='button']:-moz-focusring,
+.c19[type='reset']:-moz-focusring,
+.c19[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c19:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c19:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c19::before {
+  content: '';
+  display: block;
+  border: 2px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c12 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.c12::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c12::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c12:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c12::placeholder {
+  line-height: 17px;
+}
+
+.c12:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c12::-moz-placeholder {
+  line-height: 22px;
+}
+
+.c10 {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c10:focus-within {
+  border-color: #0046FF;
+}
+
+.c10.focus-within {
+  border-color: #0046FF;
+}
+
+.c10:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c10::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c10::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c10:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c10::placeholder {
+  color: #6E6E69;
+}
+
+.c15 {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #FF1900;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c15:focus-within {
+  border-color: #FF1900;
+}
+
+.c15.focus-within {
+  border-color: #FF1900;
+}
+
+.c15:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c15::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c15::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c15:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c15::placeholder {
+  color: #6E6E69;
+}
+
+.c6 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c13 {
+  line-height: 17px;
+  display: inline-block;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c3 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+        width="100%"
+      >
+        <label>
+          <div
+            className="c4 c5"
+          >
+            <span
+              className="c6 c7"
+            >
+              Username
+            </span>
+            <div
+              className="c8"
+            >
+              <div
+                className="c9"
+                color={[Function]}
+                type="secondary"
+              >
+                <div
+                  className="c10 c11"
+                >
+                  <input
+                    className="c12"
+                    placeholder="Username"
+                    type="text"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+        <span>
+          <span
+            className="c13 c14"
+          >
+            Please provide your username (worst UX right here)
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+        width="100%"
+      >
+        <label>
+          <div
+            className="c4 c5"
+          >
+            <span
+              className="c6 c7"
+            >
+              Password
+            </span>
+            <div
+              className="c8"
+            >
+              <div
+                className="c9"
+                color={[Function]}
+                type="secondary"
+              >
+                <div
+                  className="c15 c11"
+                >
+                  <input
+                    aria-invalid={true}
+                    className="c12"
+                    placeholder="Password"
+                    type="text"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+        <span>
+          <span
+            className="c13 c16"
+          >
+            <div
+              className="c17"
+            >
+              Error: 
+            </div>
+            Simple error
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c18"
+  >
+    <button
+      className="c19"
+      type="button"
+    >
+      <span
+        className="c20"
+      >
+        Login
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Text Small 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Size = "s"
+    </span>
+  </div>,
+  .c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c8 {
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c20 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c21 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+}
+
+.c17 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c12 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.c12::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c12::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c12:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c12::placeholder {
+  line-height: 17px;
+}
+
+.c12:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c12::-moz-placeholder {
+  line-height: 15px;
+}
+
+.c18 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+  padding-left: 32px;
+}
+
+.c18::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c18::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c18:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c18::placeholder {
+  line-height: 17px;
+}
+
+.c18:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c18::-moz-placeholder {
+  line-height: 15px;
+}
+
+.c22 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+  padding-right: 40px;
+}
+
+.c22::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c22::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c22:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c22::placeholder {
+  line-height: 17px;
+}
+
+.c22:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c22::-moz-placeholder {
+  line-height: 15px;
+}
+
+.c10 {
+  position: relative;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c10:focus-within {
+  border-color: #0046FF;
+}
+
+.c10.focus-within {
+  border-color: #0046FF;
+}
+
+.c10:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c10::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c10::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c10:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c10::placeholder {
+  color: #6E6E69;
+}
+
+.c14 {
+  position: relative;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #FF1900;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c14:focus-within {
+  border-color: #FF1900;
+}
+
+.c14.focus-within {
+  border-color: #FF1900;
+}
+
+.c14:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c14::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c14::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c14:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c14::placeholder {
+  color: #6E6E69;
+}
+
+.c6 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c19 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.c23 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  right: 4px;
+}
+
+.c15 {
+  line-height: 17px;
+  display: inline-block;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c3 {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+.c13 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+    className="c0"
+    direction="column"
+  >
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Default
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label>
+            <div
+              className="c4 c5"
+            >
+              <span
+                className="c6 c7"
+              >
+                Label
+              </span>
+              <div
+                className="c8"
+              >
+                <div
+                  className="c9"
+                  color={[Function]}
+                  type="secondary"
+                >
+                  <div
+                    className="c10 c11"
+                  >
+                    <input
+                      className="c12"
+                      placeholder="Placeholder"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Full width
+      </div>
+      <div>
+        <div
+          className="c13"
+          width="100%"
+        >
+          <label>
+            <div
+              className="c4 c5"
+            >
+              <span
+                className="c6 c7"
+              >
+                Label
+              </span>
+              <div
+                className="c8"
+              >
+                <div
+                  className="c9"
+                  color={[Function]}
+                  type="secondary"
+                >
+                  <div
+                    className="c10 c11"
+                  >
+                    <input
+                      className="c12"
+                      placeholder="Placeholder"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Error
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label>
+            <div
+              className="c4 c5"
+            >
+              <span
+                className="c6 c7"
+              >
+                Label
+              </span>
+              <div
+                className="c8"
+              >
+                <div
+                  className="c9"
+                  color={[Function]}
+                  type="secondary"
+                >
+                  <div
+                    className="c14 c11"
+                  >
+                    <input
+                      aria-invalid={true}
+                      className="c12"
+                      placeholder="Placeholder"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </label>
+          <span>
+            <span
+              className="c15 c16"
+            >
+              <div
+                className="c17"
+              >
+                Error: 
+              </div>
+              Some error text that will wrap itself over couple of lines
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Left addon
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label>
+            <div
+              className="c4 c5"
+            >
+              <span
+                className="c6 c7"
+              >
+                Label
+              </span>
+              <div
+                className="c8"
+              >
+                <div
+                  className="c9"
+                  color={[Function]}
+                  type="secondary"
+                >
+                  <div
+                    className="c10 c11"
+                  >
+                    <input
+                      className="c18"
+                      placeholder="Placeholder"
+                      type="text"
+                    />
+                    <div
+                      className="c19 c20"
+                      position="left"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="c21"
+                        focusable="false"
+                        role="presentation"
+                        size={4}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M 12 21.816406 C 9.683594 21.816406 7.558594 21.011719 5.875 19.667969 L 19.667969 5.875 C 21.011719 7.558594 21.816406 9.683594 21.816406 12 C 21.816406 17.414062 17.414062 21.816406 12 21.816406 M 2.183594 12 C 2.183594 6.585938 6.585938 2.183594 12 2.183594 C 14.316406 2.183594 16.441406 2.988281 18.125 4.332031 L 4.332031 18.125 C 2.988281 16.441406 2.183594 14.316406 2.183594 12 M 12 0 C 5.382812 0 0 5.382812 0 12 C 0 18.617188 5.382812 24 12 24 C 18.617188 24 24 18.617188 24 12 C 24 5.382812 18.617188 0 12 0"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Right addon
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label>
+            <div
+              className="c4 c5"
+            >
+              <span
+                className="c6 c7"
+              >
+                Label
+              </span>
+              <div
+                className="c8"
+              >
+                <div
+                  className="c9"
+                  color={[Function]}
+                  type="secondary"
+                >
+                  <div
+                    className="c10 c11"
+                  >
+                    <input
+                      className="c22"
+                      placeholder="Placeholder"
+                      type="text"
+                    />
+                    <div
+                      className="c23 c20"
+                      position="right"
+                    >
+                      SEK
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  margin-bottom: 32px;
+}
+
+<div
+    className="c0"
+  />,
+]
+`;
+
+exports[`Storyshots Molecules | Input / Text Success 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c9 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.c9::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder {
+  line-height: 22px;
+}
+
+.c7 {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #00D200;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c7:focus-within {
+  border-color: #0046FF;
+}
+
+.c7.focus-within {
+  border-color: #0046FF;
+}
+
+.c7:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+}
+
+.c3 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c0 {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label>
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c3 c4"
+      >
+        Label
+      </span>
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+          color={[Function]}
+          type="secondary"
+        >
+          <div
+            className="c7 c8"
+            success={true}
+          >
+            <input
+              className="c9"
+              placeholder="Placeholder"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled behaviour) 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c9 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.c9::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder {
+  line-height: 22px;
+}
+
+.c7 {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c7:focus-within {
+  border-color: #0046FF;
+}
+
+.c7.focus-within {
+  border-color: #0046FF;
+}
+
+.c7:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+}
+
+.c3 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c0 {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label>
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c3 c4"
+      >
+        Label
+      </span>
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+          color={[Function]}
+          type="secondary"
+        >
+          <div
+            className="c7 c8"
+          >
+            <input
+              className="c9"
+              defaultValue="Some predefined text"
+              placeholder="Placeholder"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Text With value (Controlled behaviour) 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c9 {
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.c9::-webkit-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::-moz-placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 17px;
+}
+
+.c9::placeholder {
+  line-height: 17px;
+}
+
+.c9:-ms-input-placeholder {
+  line-height: 1;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder {
+  line-height: 22px;
+}
+
+.c7 {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c7:focus-within {
+  border-color: #0046FF;
+}
+
+.c7.focus-within {
+  border-color: #0046FF;
+}
+
+.c7:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+}
+
+.c3 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c0 {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label>
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c3 c4"
+      >
+        Label
+      </span>
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+          color={[Function]}
+          type="secondary"
+        >
+          <div
+            className="c7 c8"
+          >
+            <input
+              className="c9"
+              placeholder="Placeholder"
+              type="text"
+              value="Some predefined text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
