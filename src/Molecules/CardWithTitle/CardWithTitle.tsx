@@ -10,7 +10,21 @@ const StyledHeader = styled.header`
 
 const omitProps = R.omit(['children', 'title']);
 
-export const CardWithTitle: CardWithTitleComponent = props => {
+const components = { StyledHeader };
+
+export const CardWithTitle: CardWithTitleComponent & {
+  /**
+   * This will allow you to customize
+   * inner parts with styled-components
+   * @example
+   * const CustomCardWithTitle= styled(CardWithTitle)`
+   *  ${CardWithTitle.components.StyledHeader} {
+   *    color: pink;
+   * }
+   * `
+   * */
+  components: typeof components;
+} = props => {
   const { title, children } = props;
 
   return (
@@ -20,5 +34,7 @@ export const CardWithTitle: CardWithTitleComponent = props => {
     </Card>
   );
 };
+
+CardWithTitle.components = components;
 
 CardWithTitle.displayName = 'CardWithTitle';

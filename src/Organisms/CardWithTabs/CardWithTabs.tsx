@@ -7,12 +7,18 @@ const StyledTabs = styled(Tabs)`
   padding: 0 ${({ theme }) => theme.spacing.unit(5)}px;
 `;
 
+const CustomCardWithTitle = styled(CardWithTitle)`
+  ${CardWithTitle.components.StyledHeader} {
+    padding-bottom: ${({ theme }) => theme.spacing.unit(2)}px;
+  }
+`;
+
 const CardWithTabs: Component = ({ children, initialActiveTabIndex, activeTabIndex, ...rest }) => (
-  <CardWithTitle {...rest}>
+  <CustomCardWithTitle {...rest}>
     <StyledTabs activeTabIndex={activeTabIndex} initialActiveTabIndex={initialActiveTabIndex}>
       {children}
     </StyledTabs>
-  </CardWithTitle>
+  </CustomCardWithTitle>
 );
 
 CardWithTabs.Tab = Tabs.Tab;

@@ -8,16 +8,16 @@ Array [
   >
     Change state outside
   </button>,
-  .c0 {
+  .c1 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c6 {
+.c8 {
   box-sizing: border-box;
 }
 
-.c4 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -30,546 +30,22 @@ Array [
   margin-right: -8px;
 }
 
-.c4 > * {
+.c6 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c4 > *:not(:first-child) {
+.c6 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c12 {
-  width: 100%;
-  height: 1px;
-  background-color: #EBEBE8;
-}
-
-.c11 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9::after {
-  content: '';
-  background-color: #0046FF;
-  display: block;
-  width: 100%;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c1 {
-  padding: 20px;
-}
-
-.c8 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  background: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border: none;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  font-weight: inherit;
-}
-
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c5 {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.c3 {
-  padding: 0 20px;
-}
-
-@media (min-width:768px) {
-  .c2 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-<div
-    className="c0"
-  >
-    <header
-      className="c1"
-    >
-      <h2
-        className="c2"
-        type="title3"
-      >
-        Title for the card
-      </h2>
-    </header>
-    <ul
-      className="c3 c4 c5"
-      direction="row"
-      role="tablist"
-    >
-      <li
-        className="c6"
-        role="presentation"
-      >
-        <span
-          className="c7"
-        >
-          <button
-            aria-selected={true}
-            className="c8"
-            id="tabs-tab-0"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            role="tab"
-            tabIndex={0}
-            type="button"
-          >
-            <span
-              className="c9"
-              height={8}
-            >
-              Tab title 1
-            </span>
-          </button>
-        </span>
-      </li>
-      <li
-        className="c6"
-        role="presentation"
-      >
-        <span
-          className="c10"
-        >
-          <button
-            aria-selected={false}
-            className="c8"
-            id="tabs-tab-1"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            role="tab"
-            tabIndex={-1}
-            type="button"
-          >
-            <span
-              className="c11"
-              height={8}
-            >
-              Tab title 2
-            </span>
-          </button>
-        </span>
-      </li>
-    </ul>
-    <div
-      className="c12"
-    />
-    <div>
-      <section
-        aria-labelledby="tabs-tab-0"
-        hidden={false}
-        id="tabs-tabpanel-0"
-        role="tabpanel"
-      >
-        Tab content 1
-      </section>
-    </div>
-  </div>,
-]
-`;
-
-exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and extra space inside 1`] = `
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c6 {
-  box-sizing: border-box;
-}
-
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c4 > * {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.c4 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c13 {
-  width: 100%;
-  height: 1px;
-  background-color: #EBEBE8;
-}
-
-.c11 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9::after {
-  content: '';
-  background-color: #0046FF;
-  display: block;
-  width: 100%;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c1 {
-  padding: 20px;
-}
-
-.c8 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  background: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border: none;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  font-weight: inherit;
-}
-
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c5 {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.c3 {
-  padding: 0 20px;
 }
 
 .c14 {
-  padding-top: 16px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-}
-
-.c12 {
-  color: red;
-}
-
-@media (min-width:768px) {
-  .c2 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-<div
-  className="c0"
->
-  <header
-    className="c1"
-  >
-    <h2
-      className="c2"
-      type="title3"
-    >
-      Title for the card
-    </h2>
-  </header>
-  <ul
-    className="c3 c4 c5"
-    direction="row"
-    role="tablist"
-  >
-    <li
-      className="c6"
-      role="presentation"
-    >
-      <span
-        className="c7"
-      >
-        <button
-          aria-selected={true}
-          className="c8"
-          id="tabs-tab-0"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-          role="tab"
-          tabIndex={0}
-          type="button"
-        >
-          <span
-            className="c9"
-            height={8}
-          >
-            Tab title 1
-          </span>
-        </button>
-      </span>
-    </li>
-    <li
-      className="c6"
-      role="presentation"
-    >
-      <span
-        className="c10"
-      >
-        <button
-          aria-selected={false}
-          className="c8"
-          id="tabs-tab-1"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-          role="tab"
-          tabIndex={-1}
-          type="button"
-        >
-          <span
-            className="c11"
-            height={8}
-          >
-            <div
-              className="c12"
-            >
-              Custom title component
-            </div>
-          </span>
-        </button>
-      </span>
-    </li>
-  </ul>
-  <div
-    className="c13"
-  />
-  <div>
-    <section
-      aria-labelledby="tabs-tab-0"
-      hidden={false}
-      id="tabs-tabpanel-0"
-      role="tabpanel"
-    >
-      <div
-        className="c14"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum nulla tincidunt interdum ornare. Duis blandit nibh nec dui varius lobortis. Sed viverra, metus quis vulputate accumsan, eros lacus semper nisl, in commodo risus lacus ut libero. Aliquam augue quam, sollicitudin quis lectus quis, viverra gravida nibh. Quisque vel mi non tortor sollicitudin sodales id eget odio. Sed mollis eleifend leo, et sagittis mi. Curabitur cursus, elit ut porta vehicula, elit ipsum sagittis erat, in dapibus sapien ipsum ut purus. Aliquam sit amet egestas lacus. Aenean leo augue, malesuada id nibh ac, malesuada fermentum tortor. Vivamus dolor ante, fringilla vel consequat in, hendrerit vel metus. Quisque eget ornare turpis. Suspendisse a lectus tortor. Sed ultrices lorem nibh, ultrices pulvinar eros dictum sit amet. Quisque et ipsum in tellus pharetra tempus. Morbi non nunc rhoncus nisi pellentesque sagittis. Ut eu sem et ante facilisis consequat. Aliquam lorem ligula, laoreet quis maximus vel, rhoncus ut odio. Mauris interdum aliquet dolor ac efficitur. Maecenas egestas porttitor tempor. In at dui tellus. Praesent at lorem metus. Quisque ultricies, nulla sed pulvinar volutpat, libero enim auctor erat, nec consectetur purus lacus sed orci. In eleifend a risus at pulvinar. Donec ultricies justo et ligula venenatis, sed ultrices nunc dignissim.
-      </div>
-    </section>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c6 {
-  box-sizing: border-box;
-}
-
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c4 > * {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.c4 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c12 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c9 {
+.c13 {
   height: 32px;
   position: relative;
   display: -webkit-inline-box;
@@ -606,7 +82,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   left: 0;
 }
 
-.c7 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -615,7 +91,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -624,7 +100,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c2 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -633,11 +109,11 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c1 {
+.c3 {
   padding: 20px;
 }
 
-.c8 {
+.c10 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -656,101 +132,347 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   font-weight: inherit;
 }
 
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c5 {
+.c7 {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.c3 {
+.c5 {
   padding: 0 20px;
 }
 
+.c0 .c2 {
+  padding-bottom: 8px;
+}
+
 @media (min-width:768px) {
-  .c2 {
+  .c4 {
     font-size: 20px;
     line-height: 1.2;
   }
 }
 
 <div
-  className="c0"
+    className="c0 c1"
+  >
+    <header
+      className="c2 c3"
+    >
+      <h2
+        className="c4"
+        type="title3"
+      >
+        Title for the card
+      </h2>
+    </header>
+    <ul
+      className="c5 c6 c7"
+      direction="row"
+      role="tablist"
+    >
+      <li
+        className="c8"
+        role="presentation"
+      >
+        <span
+          className="c9"
+        >
+          <button
+            aria-selected={true}
+            className="c10"
+            id="tabs-tab-0"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="tab"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="c11"
+              height={8}
+            >
+              Tab title 1
+            </span>
+          </button>
+        </span>
+      </li>
+      <li
+        className="c8"
+        role="presentation"
+      >
+        <span
+          className="c12"
+        >
+          <button
+            aria-selected={false}
+            className="c10"
+            id="tabs-tab-1"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            <span
+              className="c13"
+              height={8}
+            >
+              Tab title 2
+            </span>
+          </button>
+        </span>
+      </li>
+    </ul>
+    <div
+      className="c14"
+    />
+    <div>
+      <section
+        aria-labelledby="tabs-tab-0"
+        hidden={false}
+        id="tabs-tabpanel-0"
+        role="tabpanel"
+      >
+        Tab content 1
+      </section>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and extra space inside 1`] = `
+.c1 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c8 {
+  box-sizing: border-box;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c6 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c15 {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBE8;
+}
+
+.c13 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c3 {
+  padding: 20px;
+}
+
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c5 {
+  padding: 0 20px;
+}
+
+.c0 .c2 {
+  padding-bottom: 8px;
+}
+
+.c16 {
+  padding-top: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.c14 {
+  color: red;
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0 c1"
 >
   <header
-    className="c1"
+    className="c2 c3"
   >
     <h2
-      className="c2"
+      className="c4"
       type="title3"
     >
       Title for the card
     </h2>
   </header>
   <ul
-    className="c3 c4 c5"
+    className="c5 c6 c7"
     direction="row"
     role="tablist"
   >
     <li
-      className="c6"
+      className="c8"
       role="presentation"
     >
       <span
-        className="c7"
-      >
-        <button
-          aria-selected={false}
-          className="c8"
-          id="tabs-tab-0"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-          role="tab"
-          tabIndex={-1}
-          type="button"
-        >
-          <span
-            className="c9"
-            height={8}
-          >
-            Tab title 1
-          </span>
-        </button>
-      </span>
-    </li>
-    <li
-      className="c6"
-      role="presentation"
-    >
-      <span
-        className="c10"
+        className="c9"
       >
         <button
           aria-selected={true}
-          className="c8"
-          id="tabs-tab-1"
+          className="c10"
+          id="tabs-tab-0"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="tab"
@@ -761,6 +483,296 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
             className="c11"
             height={8}
           >
+            Tab title 1
+          </span>
+        </button>
+      </span>
+    </li>
+    <li
+      className="c8"
+      role="presentation"
+    >
+      <span
+        className="c12"
+      >
+        <button
+          aria-selected={false}
+          className="c10"
+          id="tabs-tab-1"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={-1}
+          type="button"
+        >
+          <span
+            className="c13"
+            height={8}
+          >
+            <div
+              className="c14"
+            >
+              Custom title component
+            </div>
+          </span>
+        </button>
+      </span>
+    </li>
+  </ul>
+  <div
+    className="c15"
+  />
+  <div>
+    <section
+      aria-labelledby="tabs-tab-0"
+      hidden={false}
+      id="tabs-tabpanel-0"
+      role="tabpanel"
+    >
+      <div
+        className="c16"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum nulla tincidunt interdum ornare. Duis blandit nibh nec dui varius lobortis. Sed viverra, metus quis vulputate accumsan, eros lacus semper nisl, in commodo risus lacus ut libero. Aliquam augue quam, sollicitudin quis lectus quis, viverra gravida nibh. Quisque vel mi non tortor sollicitudin sodales id eget odio. Sed mollis eleifend leo, et sagittis mi. Curabitur cursus, elit ut porta vehicula, elit ipsum sagittis erat, in dapibus sapien ipsum ut purus. Aliquam sit amet egestas lacus. Aenean leo augue, malesuada id nibh ac, malesuada fermentum tortor. Vivamus dolor ante, fringilla vel consequat in, hendrerit vel metus. Quisque eget ornare turpis. Suspendisse a lectus tortor. Sed ultrices lorem nibh, ultrices pulvinar eros dictum sit amet. Quisque et ipsum in tellus pharetra tempus. Morbi non nunc rhoncus nisi pellentesque sagittis. Ut eu sem et ante facilisis consequat. Aliquam lorem ligula, laoreet quis maximus vel, rhoncus ut odio. Mauris interdum aliquet dolor ac efficitur. Maecenas egestas porttitor tempor. In at dui tellus. Praesent at lorem metus. Quisque ultricies, nulla sed pulvinar volutpat, libero enim auctor erat, nec consectetur purus lacus sed orci. In eleifend a risus at pulvinar. Donec ultricies justo et ligula venenatis, sed ultrices nunc dignissim.
+      </div>
+    </section>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
+.c1 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c8 {
+  box-sizing: border-box;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c6 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c14 {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBE8;
+}
+
+.c11 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c3 {
+  padding: 20px;
+}
+
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c5 {
+  padding: 0 20px;
+}
+
+.c0 .c2 {
+  padding-bottom: 8px;
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0 c1"
+>
+  <header
+    className="c2 c3"
+  >
+    <h2
+      className="c4"
+      type="title3"
+    >
+      Title for the card
+    </h2>
+  </header>
+  <ul
+    className="c5 c6 c7"
+    direction="row"
+    role="tablist"
+  >
+    <li
+      className="c8"
+      role="presentation"
+    >
+      <span
+        className="c9"
+      >
+        <button
+          aria-selected={false}
+          className="c10"
+          id="tabs-tab-0"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={-1}
+          type="button"
+        >
+          <span
+            className="c11"
+            height={8}
+          >
+            Tab title 1
+          </span>
+        </button>
+      </span>
+    </li>
+    <li
+      className="c8"
+      role="presentation"
+    >
+      <span
+        className="c12"
+      >
+        <button
+          aria-selected={true}
+          className="c10"
+          id="tabs-tab-1"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="c13"
+            height={8}
+          >
             Tab title 2
           </span>
         </button>
@@ -768,7 +780,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
     </li>
   </ul>
   <div
-    className="c12"
+    className="c14"
   />
   <div>
     <section
