@@ -155,7 +155,7 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
   white-space: initial;
 }
 
-@media (min-width:768px) {
+@media (min-width:765px) {
   .c2 {
     font-size: 20px;
     line-height: 1.2;

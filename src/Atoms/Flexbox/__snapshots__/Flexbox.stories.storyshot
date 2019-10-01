@@ -145,7 +145,7 @@ exports[`Storyshots Atoms | Flexbox With breakpoint props 1`] = `
   height: 100%;
 }
 
-@media (min-width:768px) {
+@media (min-width:765px) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -161,7 +161,7 @@ exports[`Storyshots Atoms | Flexbox With breakpoint props 1`] = `
   }
 }
 
-@media (min-width:992px) {
+@media (min-width:976px) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -184,7 +184,7 @@ exports[`Storyshots Atoms | Flexbox With breakpoint props 1`] = `
   }
 }
 
-@media (min-width:1440px) {
+@media (min-width:1292px) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;

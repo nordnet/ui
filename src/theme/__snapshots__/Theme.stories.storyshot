@@ -2470,14 +2470,14 @@ exports[`Storyshots Theme Screen sizes 1`] = `
         className="c5"
       >
         <pre>
-          768
+          765
         </pre>
       </td>
       <td
         className="c5"
       >
         <pre>
-          6
+          5
            units
         </pre>
       </td>
@@ -2494,14 +2494,14 @@ exports[`Storyshots Theme Screen sizes 1`] = `
         className="c5"
       >
         <pre>
-          992
+          976
         </pre>
       </td>
       <td
         className="c5"
       >
         <pre>
-          7
+          5
            units
         </pre>
       </td>
@@ -2518,14 +2518,14 @@ exports[`Storyshots Theme Screen sizes 1`] = `
         className="c5"
       >
         <pre>
-          1440
+          1292
         </pre>
       </td>
       <td
         className="c5"
       >
         <pre>
-          24
+          5
            units
         </pre>
       </td>
@@ -2542,14 +2542,14 @@ exports[`Storyshots Theme Screen sizes 1`] = `
         className="c5"
       >
         <pre>
-          1680
+          1600
         </pre>
       </td>
       <td
         className="c5"
       >
         <pre>
-          15
+          5
            units
         </pre>
       </td>
