@@ -2,7 +2,7 @@
 
 exports[`Storyshots Atoms | Media Basic usage 1`] = `
 Array [
-  @media not all and (max-width:975px) {
+  @media not all and (max-width:951px) {
   .c0 {
     display: none;
   }
@@ -13,7 +13,7 @@ Array [
   >
     I am only shown on screens smaller than medium size
   </div>,
-  @media not all and (min-width:976px) and (max-width:1291px) {
+  @media not all and (min-width:952px) and (max-width:1267px) {
   .c0 {
     display: none;
   }
@@ -24,7 +24,7 @@ Array [
   >
     I am only shown between medium and large sizes
   </div>,
-  @media not all and (min-width:1292px) {
+  @media not all and (min-width:1268px) {
   .c0 {
     display: none;
   }
@@ -40,7 +40,7 @@ Array [
 
 exports[`Storyshots Atoms | Media With size key 1`] = `
 Array [
-  @media not all and (max-width:975px) {
+  @media not all and (max-width:951px) {
   .c0 {
     display: none;
   }
@@ -51,7 +51,7 @@ Array [
   >
     I am only shown on screens smaller than medium size
   </div>,
-  @media not all and (min-width:976px) and (max-width:1291px) {
+  @media not all and (min-width:952px) and (max-width:1267px) {
   .c0 {
     display: none;
   }
@@ -62,7 +62,7 @@ Array [
   >
     I am only shown between medium and large sizes
   </div>,
-  @media not all and (min-width:1292px) {
+  @media not all and (min-width:1268px) {
   .c0 {
     display: none;
   }
