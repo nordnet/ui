@@ -1,5 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Server-side rendering works: rendering all medias with CSS workaround 1`] = `"<div class=\\"Media__StyledDiv-sc-1dic02p-0 jCsGgI\\">This shows on and above sm</div><div class=\\"Media__StyledDiv-sc-1dic02p-0 kdcEJj\\">This shows below sm</div>"`;
+exports[`Server-side rendering works: rendering all medias with CSS workaround 1`] = `"<div class=\\"Media__StyledDiv-sc-1dic02p-0 kqYqji\\">This shows on and above sm</div><div class=\\"Media__StyledDiv-sc-1dic02p-0 bcARGX\\">This shows below sm</div>"`;
 
 exports[`useMedia hook: returns null if SSR 1`] = `"<div data-testid=\\"consumer\\">null</div>"`;

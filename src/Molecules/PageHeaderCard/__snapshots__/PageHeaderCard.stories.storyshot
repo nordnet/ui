@@ -39,7 +39,7 @@ exports[`Storyshots Molecules | PageHeader Page header ReactNode title 1`] = `
   margin: 0 auto;
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c4 {
     padding-left: 0px;
     padding-top: 8px;
@@ -48,7 +48,7 @@ exports[`Storyshots Molecules | PageHeader Page header ReactNode title 1`] = `
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c2 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -68,16 +68,16 @@ exports[`Storyshots Molecules | PageHeader Page header ReactNode title 1`] = `
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c5 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c1 {
-    max-width: 765px;
+    max-width: 760px;
     padding: 0 20px;
   }
 }
@@ -297,7 +297,7 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
   margin: 0 auto;
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c4 {
     padding-left: 0px;
     padding-top: 8px;
@@ -306,21 +306,21 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c8 {
     padding-left: 0px;
     padding-right: 0px;
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c9 {
     padding-top: 0px;
     padding-bottom: 0px;
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c2 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -340,22 +340,22 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
   }
 }
 
-@media not all and (max-width:764px) {
+@media not all and (max-width:759px) {
   .c6 {
     display: none;
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c5 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c1 {
-    max-width: 765px;
+    max-width: 760px;
     padding: 0 20px;
   }
 }
@@ -498,7 +498,7 @@ exports[`Storyshots Molecules | PageHeader Regular page header 1`] = `
   margin: 0 auto;
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c4 {
     padding-left: 0px;
     padding-top: 8px;
@@ -507,7 +507,7 @@ exports[`Storyshots Molecules | PageHeader Regular page header 1`] = `
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c2 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -527,16 +527,16 @@ exports[`Storyshots Molecules | PageHeader Regular page header 1`] = `
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c5 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c1 {
-    max-width: 765px;
+    max-width: 760px;
     padding: 0 20px;
   }
 }

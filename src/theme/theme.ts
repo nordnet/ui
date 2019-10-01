@@ -49,7 +49,7 @@ export const rawColor = {
 
 const breakpoints: Theme['breakpoints'] = {
   sm: {
-    size: 765,
+    size: 760,
     offset: 5,
   },
   md: {

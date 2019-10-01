@@ -121,7 +121,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
   margin-bottom: 0;
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c2 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -342,7 +342,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
   margin-bottom: 0;
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c2 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -519,7 +519,7 @@ exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] 
   margin-bottom: 0;
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c2 {
     display: -webkit-box;
     display: -webkit-flex;
