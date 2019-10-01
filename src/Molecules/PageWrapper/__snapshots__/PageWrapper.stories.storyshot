@@ -20,31 +20,31 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
   margin: 0 auto;
 }
 
-@media (min-width:760px) {
+@media (min-width:736px) {
   .c0 {
-    max-width: 760px;
-    padding: 0 20px;
+    max-width: 736px;
+    padding: 0 8px;
   }
 }
 
-@media (min-width:976px) {
+@media (min-width:952px) {
   .c0 {
-    max-width: 976px;
-    padding: 0 20px;
+    max-width: 952px;
+    padding: 0 8px;
   }
 }
 
-@media (min-width:1292px) {
+@media (min-width:1268px) {
   .c0 {
-    max-width: 1292px;
-    padding: 0 20px;
+    max-width: 1268px;
+    padding: 0 8px;
   }
 }
 
-@media (min-width:1600px) {
+@media (min-width:1576px) {
   .c0 {
-    max-width: 1600px;
-    padding: 0 20px;
+    max-width: 1576px;
+    padding: 0 8px;
   }
 }
 
@@ -91,31 +91,31 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper with a custom background
   margin: 0 auto;
 }
 
-@media (min-width:760px) {
+@media (min-width:736px) {
   .c1 {
-    max-width: 760px;
-    padding: 0 20px;
+    max-width: 736px;
+    padding: 0 8px;
   }
 }
 
-@media (min-width:976px) {
+@media (min-width:952px) {
   .c1 {
-    max-width: 976px;
-    padding: 0 20px;
+    max-width: 952px;
+    padding: 0 8px;
   }
 }
 
-@media (min-width:1292px) {
+@media (min-width:1268px) {
   .c1 {
-    max-width: 1292px;
-    padding: 0 20px;
+    max-width: 1268px;
+    padding: 0 8px;
   }
 }
 
-@media (min-width:1600px) {
+@media (min-width:1576px) {
   .c1 {
-    max-width: 1600px;
-    padding: 0 20px;
+    max-width: 1576px;
+    padding: 0 8px;
   }
 }
 
