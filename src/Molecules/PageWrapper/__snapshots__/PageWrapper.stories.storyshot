@@ -20,9 +20,9 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
   margin: 0 auto;
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c0 {
-    max-width: 765px;
+    max-width: 760px;
     padding: 0 20px;
   }
 }
@@ -91,9 +91,9 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper with a custom background
   margin: 0 auto;
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c1 {
-    max-width: 765px;
+    max-width: 760px;
     padding: 0 20px;
   }
 }

@@ -602,7 +602,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
   height: 100%;
 }
 
-@media (min-width:765px), {
+@media (min-width:760px), {
   .c0 {
     grid-template-areas: "left top sidebar" "left content sidebar" "left content sidebar";
     grid-template-rows: auto 1fr 1fr;
@@ -614,7 +614,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -625,7 +625,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c3 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
@@ -636,7 +636,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c4 {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
@@ -647,7 +647,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c5 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;

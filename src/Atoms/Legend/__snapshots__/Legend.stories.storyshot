@@ -20,7 +20,7 @@ exports[`Storyshots Atoms | Legend Default 1`] = `
   line-height: 1.3333333333333333;
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c1 {
     font-size: 20px;
     line-height: 1.2;

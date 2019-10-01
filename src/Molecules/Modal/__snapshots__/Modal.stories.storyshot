@@ -136,20 +136,20 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
   height: 200vh;
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c6 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c1 {
     background-color: rgba(110,110,105,0.63);
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c10 {
     max-height: 50vh;
   }
@@ -457,20 +457,20 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
   height: 200vh;
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c6 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c1 {
     background-color: rgba(110,110,105,0.63);
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c10 {
     max-height: 50vh;
   }
@@ -763,13 +763,13 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
   height: 200vh;
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c1 {
     background-color: rgba(110,110,105,0.63);
   }
 }
 
-@media (min-width:765px) {
+@media (min-width:760px) {
   .c9 {
     max-height: 50vh;
   }
