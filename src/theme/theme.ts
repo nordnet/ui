@@ -49,29 +49,29 @@ export const rawColor = {
 
 const breakpoints: Theme['breakpoints'] = {
   sm: {
-    size: 736,
-    offset: 2,
+    size: 760,
+    offset: 5,
   },
   md: {
-    size: 952,
-    offset: 2,
+    size: 976,
+    offset: 5,
   },
   lg: {
-    size: 1268,
-    offset: 2,
+    size: 1280,
+    offset: 5,
   },
   xl: {
-    size: 1576,
-    offset: 2,
+    size: 1600,
+    offset: 5,
   },
 };
 
 const size: Theme['size'] = {
   xs: 360,
-  sm: 736,
-  md: 952,
-  lg: 1268,
-  xl: 1576,
+  sm: 760,
+  md: 976,
+  lg: 1280,
+  xl: 1600,
 };
 
 const getSizesValues = pipe(

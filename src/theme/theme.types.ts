@@ -151,13 +151,13 @@ export type Theme = {
   };
 
   breakpoints: {
-    /** Tablet, mobile size: 736; offset: 2; */
+    /** Tablet, mobile size: 760; offset: 5; */
     sm: Record<'offset' | 'size', number>;
-    /** Tablet, desktop size: 952; offset: 2; */
+    /** Tablet, desktop size: 976; offset: 5; */
     md: Record<'offset' | 'size', number>;
-    /** Desktop size: 1268; offset: 52; */
+    /** Desktop size: 1280; offset: 5; */
     lg: Record<'offset' | 'size', number>;
-    /** Desktop big size: 1576; offset: 2 */
+    /** Desktop big size: 1600; offset: 5; */
     xl: Record<'offset' | 'size', number>;
   };
 
@@ -165,13 +165,13 @@ export type Theme = {
     /** Mobile */
     xs: 360;
     /** Tablet, mobile */
-    sm: 736;
+    sm: 760;
     /** Tablet, desktop */
-    md: 952;
+    md: 976;
     /** Desktop */
-    lg: 1268;
+    lg: 1280;
     /** Desktop big */
-    xl: 1576;
+    xl: 1600;
   };
 
   media: {
