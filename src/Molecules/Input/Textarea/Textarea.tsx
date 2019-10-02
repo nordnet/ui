@@ -1,15 +1,12 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
-import { Props } from './Text.types';
-import { Flexbox, Typography, FormField } from '../../..';
+import { Props } from './Textarea.types';
+import { Typography, FormField } from '../../..';
+import { placeholderNormalizaion } from '../Text/Text';
 import NormalizedElements from '../../../common/NormalizedElements';
 
 const hasError = (error?: Props['error']) => error && error !== '';
-
-const height = css<Pick<Props, 'size'>>`
-  height: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
-`;
 
 const background = css<Pick<Props, 'disabled'>>`
   background-color: ${p =>
@@ -46,58 +43,24 @@ const borderStyles = css<Pick<Props, 'error' | 'success'>>`
   ${focusBorderStyles}
 `;
 
-export const placeholderNormalizaion = css`
-  &::-moz-placeholder,
-  &:-ms-input-placeholder,
-  &::placeholder {
-    height: inherit;
-    line-height: inherit;
-    color: ${p => p.theme.color.label};
-  }
-`;
-
-const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<
-  Partial<Props> & { sizeProp: Props['size'] }
->`
+const StyledTextarea = styled(NormalizedElements.Textarea)`
   border: 0;
   width: 100%;
   padding: ${p => p.theme.spacing.unit(2)}px;
   margin: 0;
-  line-height: inherit;
+  vertical-align: top; /* removes space underneath */
   box-sizing: border-box;
 
-  ${height}
   ${borderStyles}
   ${background}
   ${placeholderNormalizaion}
-  ${p => (p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px;` : '')}
-  ${p =>
-    p.rightAddon
-      ? `padding-right: ${p.theme.spacing.unit(10)}px;` // compensate for right paddings
-      : ''}
-`;
-
-const Wrapper = styled.div`
-  position: relative;
-`;
-
-const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
-  width: ${p => p.theme.spacing.unit(8)}px;
-  top: 0;
-  height: 100%;
-  padding-left: ${p => p.theme.spacing.unit(1)}px;
-  padding-right: ${p => p.theme.spacing.unit(1)}px;
-  position: absolute;
-  ${p => (p.position === 'left' ? 'left: 0;' : '')}
-  ${p => (p.position === 'right' ? `right: ${p.theme.spacing.unit(1)}px;` : '')}
 `;
 
 const components = {
-  Input,
-  AddonBox,
+  StyledTextarea,
 };
 
-export const Text: React.FC<Props> & {
+export const Textarea: React.FC<Props> & {
   /**
    * This will allow you to customize
    * inner parts with styled-components
@@ -115,7 +78,6 @@ export const Text: React.FC<Props> & {
     defaultValue,
     disabled,
     error,
-    leftAddon,
     name,
     onBlur,
     onChange,
@@ -126,8 +88,7 @@ export const Text: React.FC<Props> & {
     onKeyUp,
     placeholder,
     required,
-    rightAddon,
-    size,
+    rows = 3,
     success,
     value,
     visuallyEmphasiseRequired,
@@ -138,15 +99,14 @@ export const Text: React.FC<Props> & {
       {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'width'], props)}
       required={visuallyEmphasiseRequired}
     >
-      <Typography type="secondary" color={t => t.color.text}>
-        <Wrapper>
-          <Input
+      <div>
+        <Typography type="secondary" color={t => t.color.text}>
+          <StyledTextarea
             {...{
               autoFocus,
               defaultValue,
               disabled,
               error,
-              leftAddon,
               name,
               onBlur,
               onChange,
@@ -157,26 +117,15 @@ export const Text: React.FC<Props> & {
               onKeyUp,
               placeholder,
               required,
-              rightAddon,
-              sizeProp: size,
+              rows,
               success,
               value,
             }}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />
-          {leftAddon && (
-            <AddonBox container justifyContent="center" alignItems="center" position="left">
-              {leftAddon}
-            </AddonBox>
-          )}
-          {rightAddon && (
-            <AddonBox container justifyContent="center" alignItems="center" position="right">
-              {rightAddon}
-            </AddonBox>
-          )}
-        </Wrapper>
-      </Typography>
+        </Typography>
+      </div>
     </FormField>
   );
 };
-Text.components = components;
+Textarea.components = components;
