@@ -23,7 +23,7 @@ exports[`Storyshots Atoms | Box Different padding for different screen sizes  1`
   background-color: #F5F5F5;
 }
 
-@media (min-width:736px) {
+@media (min-width:760px) {
   .c1 {
     padding: 16px;
   }

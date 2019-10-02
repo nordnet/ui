@@ -128,7 +128,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue title1 1`
   margin-bottom: 4px;
 }
 
-@media (min-width:736px) {
+@media (min-width:760px) {
   .c3 {
     font-size: 28px;
     line-height: 1.1428571428571428;
