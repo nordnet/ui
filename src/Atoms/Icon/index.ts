@@ -29,6 +29,7 @@ import { Printer } from './components/Printer';
 import { Minus } from './components/Minus';
 import { Questionmark } from './components/Questionmark';
 import { Search } from './components/Search';
+import { SolidCircle } from './components/Circle';
 import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
 import { ThreeDots } from './components/ThreeDots';
@@ -68,6 +69,7 @@ export default {
   Minus,
   Questionmark,
   Search,
+  SolidCircle,
   Star,
   Star24,
   ThreeDots,
