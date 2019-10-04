@@ -39,6 +39,10 @@ const Track = styled.span`
   transition: background-color 0.2s ease-out;
 `;
 
+const ButtonContent = styled.span`
+  position: relative; /* IE fix for nudge on click */
+`;
+
 const Button = styled(NormalizedElements.Button)`
   display: block;
   position: relative;
@@ -104,8 +108,10 @@ export const Switch: React.FC<Props> = ({
             onClick={isControlled ? onClick : clickHandler}
             disabled={disabled}
           >
-            <Knob />
-            <Track />
+            <ButtonContent>
+              <Knob />
+              <Track />
+            </ButtonContent>
           </Button>
         </Flexbox>
       </Flexbox>
