@@ -3535,6 +3535,7 @@ Array [
             >
               <div
                 className="c5"
+                onClick={[Function]}
               >
                 <div
                   className="c6"
