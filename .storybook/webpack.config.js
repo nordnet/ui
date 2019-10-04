@@ -15,6 +15,11 @@ module.exports = ({ config, mode }) => {
       presets: [['react-app', { flow: false, typescript: true }]],
     },
   });
+  config.module.rules.push({
+    test: /\.jsx?$/,
+    loader: require.resolve('babel-loader'),
+    include: [path.resolve(__dirname, '..', 'node_modules', 'use-ssr')],
+  });
   config.resolve.extensions.push('.ts', '.tsx', '.d.ts', '.md');
   return config;
 };
