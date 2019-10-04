@@ -6,7 +6,7 @@ import { Props, NumberComponent } from './Number.types';
 import { Flexbox, VisuallyHidden, Icon, Typography, FormField } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber, getNumberAsString } from './utils';
-import { isNumber, isString, assert } from '../../../common/utils';
+import { isNumber, isString, isUndefined, assert } from '../../../common/utils';
 import adjustValue from './adjustValue';
 
 const hasError = (error?: Props['error']) => error && error !== '';
@@ -58,7 +58,17 @@ const borderStyles = css<Pick<Props, 'error' | 'success'>>`
 `;
 
 const Wrapper = styled(Flexbox)`
+  position: relative;
   box-shadow: 0 1px 3px ${p => p.theme.color.shadowInput};
+`;
+
+const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 3;
+  ${p => (p.position === 'left' ? `left: ${p.theme.spacing.unit(2)}px;` : '')}
+  ${p => (p.position === 'right' ? `right: ${p.theme.spacing.unit(2)}px;` : '')}
 `;
 
 const Stepper = styled.button.attrs({ type: 'button' })<Partial<Props>>`
@@ -92,11 +102,19 @@ const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<Partial<P
   ${borderStyles}
   ${height}
   width: 100%;
-  padding: ${p => p.theme.spacing.unit(2)}px;
-  margin: 0 -1px;
   text-align: center;
   box-sizing: border-box;
-  z-index: 1;
+  ${p =>
+    p.leftAddon || p.rightAddon
+      ? `
+      padding: ${p.theme.spacing.unit(2)}px ${p.theme.spacing.unit(10)}px;
+      `
+      : `
+      padding: ${p.theme.spacing.unit(2)}px;
+      margin: 0 -1px;
+      z-index: 1;
+      `}
+  
 `;
 
 const components = {
@@ -124,6 +142,7 @@ const NumberInput: NumberComponent & {
     error,
     id,
     intl,
+    leftAddon,
     max,
     min = 0,
     name,
@@ -137,6 +156,7 @@ const NumberInput: NumberComponent & {
     onKeyUp,
     onStepDown,
     onStepUp,
+    rightAddon,
     required,
     size,
     step = 1,
@@ -146,6 +166,7 @@ const NumberInput: NumberComponent & {
     visuallyEmphasiseRequired,
   } = props;
   const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
+  const showSteppers = noSteppers !== true && isUndefined(leftAddon) && isUndefined(rightAddon);
   const handleValueChange = (val: string) => {
     setInternalValue(val);
 
@@ -246,6 +267,7 @@ const NumberInput: NumberComponent & {
               disabled,
               id,
               error,
+              leftAddon,
               max,
               min,
               name,
@@ -257,6 +279,7 @@ const NumberInput: NumberComponent & {
               onKeyPress,
               onKeyUp,
               ref: inputRef,
+              rightAddon,
               required,
               size,
               step,
@@ -266,7 +289,7 @@ const NumberInput: NumberComponent & {
             }}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />
-          {!noSteppers && (
+          {showSteppers && (
             <>
               <Stepper onClick={() => onStepHandler(false)} size={size} disabled={disabled}>
                 <VisuallyHidden>decrease number by {step}</VisuallyHidden>
@@ -277,6 +300,16 @@ const NumberInput: NumberComponent & {
                 <Icon.Plus size={3} />
               </Stepper>
             </>
+          )}
+          {leftAddon && (
+            <AddonBox container justifyContent="center" alignItems="center" position="left">
+              {leftAddon}
+            </AddonBox>
+          )}
+          {rightAddon && (
+            <AddonBox container justifyContent="center" alignItems="center" position="right">
+              {rightAddon}
+            </AddonBox>
           )}
         </Wrapper>
       </Typography>

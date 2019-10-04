@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { actions, action } from '@storybook/addon-actions';
-import { Input } from '../../..';
+import { Input, Icon } from '../../..';
 import { Display } from '../../../common/Display';
 
 const handlers = actions(
@@ -131,6 +131,20 @@ storiesOf('Molecules | Input / Number', module)
     return <Component />;
   })
   .add('With no steppers', () => <Input.Number id="insert-unique-id" label="Label" noSteppers />)
+  .add('With left addon', () => (
+    <Input.Number id="insert-unique-id" label="Label" leftAddon={<Icon.Bolt size={4} />} />
+  ))
+  .add('With right addon', () => (
+    <Input.Number id="insert-unique-id" label="Label" rightAddon="SEK" />
+  ))
+  .add('With both addons', () => (
+    <Input.Number
+      id="insert-unique-id"
+      label="Label"
+      leftAddon={<Icon.Bolt size={4} />}
+      rightAddon="SEK"
+    />
+  ))
   .add('With hidden label', () => <Input.Number id="insert-unique-id" label="Label" hideLabel />)
   .add('With size small', () => (
     <Display
