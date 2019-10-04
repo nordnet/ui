@@ -125,6 +125,16 @@ export type Theme = {
     inputBorderSuccess: RawColor['positive'];
     /** gray6 */
     flagBorder: RawColor['gray6'];
+    /** white */
+    selectOptionBackground: RawColor['white'];
+    /** complementaryGreen1 */
+    generationSavingsTimelineColor1: RawColor['complementaryGreen1'];
+    /** complementaryPink1 */
+    generationSavingsTimelineColor2: RawColor['complementaryPink1'];
+    /** brandBlue */
+    generationSavingsTimelineColor3: RawColor['brandBlue'];
+    /** complementaryBlue1 */
+    generationSavingsTimelineColor4: RawColor['complementaryBlue1'];
   };
 
   spacing: {
@@ -141,13 +151,13 @@ export type Theme = {
   };
 
   breakpoints: {
-    /** Tablet, mobile size: 768; offset: 6; */
+    /** Tablet, mobile size: 760; offset: 5; */
     sm: Record<'offset' | 'size', number>;
-    /** Tablet, desktop size: 992; offset: 7; */
+    /** Tablet, desktop size: 976; offset: 5; */
     md: Record<'offset' | 'size', number>;
-    /** Desktop size: 1440; offset: 24; */
+    /** Desktop size: 1280; offset: 5; */
     lg: Record<'offset' | 'size', number>;
-    /** Desktop big size: 1680; offset: 15 */
+    /** Desktop big size: 1600; offset: 5; */
     xl: Record<'offset' | 'size', number>;
   };
 
@@ -155,13 +165,13 @@ export type Theme = {
     /** Mobile */
     xs: 360;
     /** Tablet, mobile */
-    sm: 768;
+    sm: 760;
     /** Tablet, desktop */
-    md: 992;
+    md: 976;
     /** Desktop */
-    lg: 1440;
+    lg: 1280;
     /** Desktop big */
-    xl: 1680;
+    xl: 1600;
   };
 
   media: {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { PageHeaderCard, Flexbox, Button, Box } from '../..';
+import { PageHeaderCard, Flexbox, Button, Box, Typography } from '../..';
 
 storiesOf('Molecules | PageHeader', module)
   .add('Regular page header', () => <PageHeaderCard title="Your darkest loaves" />)
@@ -15,4 +15,15 @@ storiesOf('Molecules | PageHeader', module)
         </Flexbox>
       </Box>
     </PageHeaderCard>
-  ));
+  ))
+  .add('Page header ReactNode title', () => {
+    return (
+      <PageHeaderCard
+        title={
+          <Typography type="title2" as="h1">
+            I am a ReactNode
+          </Typography>
+        }
+      />
+    );
+  });

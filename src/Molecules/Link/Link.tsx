@@ -24,14 +24,14 @@ const getSharedStyle = (props: ThemedStyledProps<LinkProps, Theme>) => {
   `;
 };
 
-const CleanLink = (props: LinkProps) => {
+const CleanLink = React.forwardRef((props: LinkProps, ref) => {
   return props.external ? (
     // eslint-disable-next-line jsx-a11y/anchor-has-content
-    <a {...R.omit(['fullWidth', 'colorFn', 'color', 'display'], props) as any} />
+    <a ref={ref} {...R.omit(['fullWidth', 'colorFn', 'color', 'display'], props) as any} />
   ) : (
-    <RouterLink {...R.omit(['fullWidth', 'colorFn', 'color', 'display'], props) as any} />
+    <RouterLink ref={ref} {...R.omit(['fullWidth', 'colorFn', 'color', 'display'], props) as any} />
   );
-};
+});
 
 const StyledLink = styled(CleanLink)<LinkProps>`
   ${p => getSharedStyle(p)}
@@ -40,15 +40,31 @@ const StyledLink = styled(CleanLink)<LinkProps>`
 
 const StyledButton = styled(NormalizedElements.Button)<LinkProps>`
   ${p => getSharedStyle(p)}
-  cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
+  /* resetting button styles */
   border: none;
-  border-radius: 0;
+  background: transparent;
+  overflow: visible;
+
+  -webkit-appearance: none !important; /* stylelint-disable-line property-no-vendor-prefix */
+  /* resetting button styles end */
+
+  cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
 
   font-weight: inherit; /* remove when and if typography is handled inside the component */
 `;
 
-export const Link: LinkComponent = props => {
-  const { to, children, disabled, className, onClick, target, rel, external } = props;
+export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref) => {
+  const {
+    to,
+    children,
+    disabled,
+    className,
+    onClick,
+    external,
+    target = external ? '_blank' : undefined,
+    rel = external ? 'noopener noreferrer nofollow' : undefined,
+    as,
+  } = props;
   const destinationProp = external ? { href: to } : { to };
 
   const trackContext = useContext(TrackingContext);
@@ -59,7 +75,13 @@ export const Link: LinkComponent = props => {
 
   if (isUndefined(to) || disabled) {
     return (
-      <StyledButton className={className} onClick={trackClick} disabled={disabled}>
+      <StyledButton
+        ref={ref}
+        className={className}
+        onClick={trackClick}
+        disabled={disabled}
+        as={as}
+      >
         {children}
       </StyledButton>
     );
@@ -67,14 +89,16 @@ export const Link: LinkComponent = props => {
 
   return (
     <StyledLink
+      ref={ref}
       className={className}
       onClick={onClick}
       {...destinationProp}
       target={target}
       rel={rel}
       external={external}
+      as={as}
     >
       {children}
     </StyledLink>
   );
-};
+});

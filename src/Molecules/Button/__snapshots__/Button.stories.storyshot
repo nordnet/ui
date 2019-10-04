@@ -1913,6 +1913,17 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c0 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c1 {
@@ -2927,7 +2938,7 @@ Array [
   line-height: 1.1666666666666667;
 }
 
-@media (min-width:768px) {
+@media (min-width:760px) {
   .c1 {
     font-size: 28px;
     line-height: 1.1428571428571428;
@@ -3166,7 +3177,7 @@ Array [
   line-height: 1.1666666666666667;
 }
 
-@media (min-width:768px) {
+@media (min-width:760px) {
   .c1 {
     font-size: 28px;
     line-height: 1.1428571428571428;
@@ -3404,6 +3415,17 @@ exports[`Storyshots Molecules | Button Links looking like buttons composed in a 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c0 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c1 {

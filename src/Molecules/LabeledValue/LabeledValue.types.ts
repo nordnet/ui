@@ -1,8 +1,7 @@
 import React, { ReactNode } from 'react';
-import { FormattedMessage } from 'react-intl';
 
 export type Props = {
-  label: React.ReactText | FormattedMessage.MessageDescriptor;
+  label: string | React.ReactNode;
   children: ReactNode;
 };
 

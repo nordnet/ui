@@ -36,8 +36,21 @@ storiesOf('Atoms | Icon', module)
       items={Object.entries(Icon).map(
         ([iconName, IconComponent]: [string, React.ComponentType<any>]) => ({
           title: iconName,
-          component: <IconComponent />,
+          component: (
+            <div style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
+              <IconComponent />
+            </div>
+          ),
         }),
       )}
     />
+  ))
+  .add('All icons (colored)', () => (
+    <>
+      {Object.entries(Icon).map(([_, IconComponent]: [string, React.ComponentType<any>]) => (
+        <div style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
+          <IconComponent color={(t: any) => t.color.cta} />
+        </div>
+      ))}
+    </>
   ));

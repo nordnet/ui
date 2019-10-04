@@ -6,7 +6,9 @@ import CssGrid from './Atoms/CssGrid';
 import DateTime from './Atoms/DateTime';
 import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';
+import FormLabel from './Atoms/FormLabel';
 import Icon from './Atoms/Icon';
+import Legend from './Atoms/Legend';
 import List from './Atoms/List';
 import ListItem from './Atoms/ListItem';
 import Media, { useMedia } from './Atoms/Media';
@@ -24,6 +26,8 @@ import Button from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
 import CollapsibleCard from './Molecules/CollapsibleCard';
 import FeedbackBanner from './Molecules/FeedbackBanner';
+import Fieldset from './Molecules/Fieldset';
+import FormField from './Molecules/FormField';
 import Input from './Molecules/Input';
 import LabeledValue from './Molecules/LabeledValue';
 import Link from './Molecules/Link';
@@ -44,7 +48,7 @@ import CardWithTabs from './Organisms/CardWithTabs';
 import Development from './Organisms/Development';
 
 /** Hooks */
-import useKeyPress from './common/Hooks/useKeyPress';
+import { useKeyPress } from './common/Hooks';
 
 import theme, { createTheme } from './theme';
 import TrackingContext from './common/tracking';
@@ -63,11 +67,15 @@ export {
   DateTime,
   Development,
   FeedbackBanner,
+  Fieldset,
   Flag,
   Flexbox,
+  FormField,
+  FormLabel,
   Icon,
   Input,
   LabeledValue,
+  Legend,
   Link,
   LinkBuy,
   LinkSell,
@@ -80,7 +88,7 @@ export {
   PageHeaderCard,
   PageWrapper,
   Portal,
-  Select,
+  /** @deprecated */ Select,
   Separator,
   Spinner,
   Switch,

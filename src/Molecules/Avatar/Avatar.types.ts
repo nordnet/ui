@@ -1,5 +1,4 @@
 export type Props = {
-  // size;
-  // color;
+  size?: 's' | 'm';
   children: React.ReactText | React.ReactNode;
 };

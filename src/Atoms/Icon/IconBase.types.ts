@@ -23,6 +23,7 @@ export type BaseProps = {
   /** unit-based */
   size?: number;
   inline?: boolean;
+  viewBox?: string;
 };
 
 export type ChildProps = {

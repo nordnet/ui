@@ -49,29 +49,29 @@ export const rawColor = {
 
 const breakpoints: Theme['breakpoints'] = {
   sm: {
-    size: 768,
-    offset: 6,
+    size: 760,
+    offset: 5,
   },
   md: {
-    size: 992,
-    offset: 7,
+    size: 976,
+    offset: 5,
   },
   lg: {
-    size: 1440,
-    offset: 24,
+    size: 1280,
+    offset: 5,
   },
   xl: {
-    size: 1680,
-    offset: 15,
+    size: 1600,
+    offset: 5,
   },
 };
 
 const size: Theme['size'] = {
   xs: 360,
-  sm: 768,
-  md: 992,
-  lg: 1440,
-  xl: 1680,
+  sm: 760,
+  md: 976,
+  lg: 1280,
+  xl: 1600,
 };
 
 const getSizesValues = pipe(
@@ -121,6 +121,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       disabledBackground: rawColor.gray6,
       divider: rawColor.gray6,
       label: rawColor.gray2,
+      selectOptionBackground: rawColor.white,
       modalBackdrop: Color(rawColor.gray2)
         .alpha(0.63)
         .rgb()
@@ -157,6 +158,10 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       flagBorder: rawColor.gray6,
       inputBorderError: rawColor.negative,
       inputBorderSuccess: rawColor.positive,
+      generationSavingsTimelineColor1: rawColor.complementaryGreen1,
+      generationSavingsTimelineColor2: rawColor.complementaryPink1,
+      generationSavingsTimelineColor3: rawColor.brandBlue,
+      generationSavingsTimelineColor4: rawColor.complementaryBlue1,
     },
     media: {
       between: (s1, s2) => {

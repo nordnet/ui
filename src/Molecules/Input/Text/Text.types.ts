@@ -4,7 +4,7 @@ export type Props = {
   label: string;
   /** But you can hide it visually */
   hideLabel?: boolean;
-
+  autoFocus?: boolean;
   name?: string;
   error?: string;
   success?: boolean;
@@ -27,6 +27,8 @@ export type Props = {
 
   value?: string;
   defaultValue?: string;
+  required?: boolean;
+  visuallyEmphasiseRequired?: boolean;
 
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   onClick?: React.MouseEventHandler<HTMLInputElement>;

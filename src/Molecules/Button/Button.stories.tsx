@@ -213,7 +213,7 @@ storiesOf('Molecules | Button', module)
     </Button>
   ))
   .add('Buttons composed in a group', () => (
-    <Flexbox container>
+    <Flexbox container gutter={2}>
       <Flexbox item flex="1 1 50%">
         <Button type="submit" onClick={action('submit')} fullWidth>
           Submit
@@ -259,7 +259,7 @@ storiesOf('Molecules | Button', module)
   ))
   .add('Links looking like buttons composed in a group', () => (
     <HashRouter>
-      <Flexbox container>
+      <Flexbox container gutter={2}>
         <Flexbox item flex="1">
           <Button to="route1" onClick={action('submit')} fullWidth>
             Submit

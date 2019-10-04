@@ -8,9 +8,11 @@ const StyledList = styled.ul<Props>`
   padding: 0;
 `;
 
-export const List: React.FunctionComponent<Props> = ({ as = 'ul', className, children }) => (
-  <StyledList className={className} as={as}>
-    {children}
-  </StyledList>
+export const List: React.FunctionComponent<Props> = React.forwardRef<HTMLUListElement, Props>(
+  ({ as = 'ul', className, children, ...rest }, ref) => (
+    <StyledList ref={ref} className={className} as={as} {...rest}>
+      {children}
+    </StyledList>
+  ),
 );
 List.displayName = 'List';

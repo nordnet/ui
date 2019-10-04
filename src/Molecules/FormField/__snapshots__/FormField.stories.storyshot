@@ -1,0 +1,351 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | FormField Default 1`] = `
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="unique-id-1"
+  >
+    <span
+      className="c2"
+    >
+      Label 
+    </span>
+  </label>
+  <div
+    style={
+      Object {
+        "background": "aqua",
+      }
+    }
+  >
+    Pass in any children you want
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FormField Docs 1`] = `
+<p>
+  This component provides a label including the required look of the label. It also provides the displaying of error message and additional information.
+</p>
+`;
+
+exports[`Storyshots Molecules | FormField Error 1`] = `
+.c4 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="unique-id-2"
+  >
+    <span
+      className="c2"
+    >
+      Label 
+    </span>
+  </label>
+  <div
+    style={
+      Object {
+        "background": "aqua",
+      }
+    }
+  >
+    Pass in any children you want
+  </div>
+  <div>
+    <span
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        Error: 
+      </div>
+      error
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FormField Extra info 1`] = `
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="unique-id-2"
+  >
+    <span
+      className="c2"
+    >
+      Label 
+    </span>
+  </label>
+  <div
+    style={
+      Object {
+        "background": "aqua",
+      }
+    }
+  >
+    Pass in any children you want
+  </div>
+  <div>
+    <span
+      className="c3"
+    >
+      Some extra info
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FormField Required 1`] = `
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="unique-id-1"
+  >
+    <span
+      className="c2"
+    >
+      Label *
+    </span>
+  </label>
+  <div
+    style={
+      Object {
+        "background": "aqua",
+      }
+    }
+  >
+    Pass in any children you want
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FormField With group of items 1`] = `
+.c6 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.c5 > * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c5 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c3 {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  cursor: auto;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <fieldset
+    className="c1"
+  >
+    <legend
+      className="c2 c3"
+      hidden={false}
+    >
+      <span
+        className="c4"
+      >
+        Caption to a group of items 
+      </span>
+    </legend>
+    <div
+      className="c5"
+    >
+      <div
+        className="c6"
+      >
+        <div
+          style={
+            Object {
+              "background": "aqua",
+            }
+          }
+        >
+          Pass in any children you want
+        </div>
+      </div>
+      <div
+        className="c6"
+      >
+        <div
+          style={
+            Object {
+              "background": "aqua",
+            }
+          }
+        >
+          Pass in any children you want
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;

@@ -577,28 +577,28 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   align-self: center;
 }
 
-@media (min-width:768px) {
+@media (min-width:760px) {
   .c10 {
     font-size: 28px;
     line-height: 1.1428571428571428;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:760px) {
   .c11 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:760px) {
   .c12 {
     font-size: 20px;
     line-height: 1.2;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:760px) {
   .c13 {
     font-size: 48px;
     line-height: 1.0833333333333333;

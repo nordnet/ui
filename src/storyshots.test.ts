@@ -14,6 +14,8 @@ addSerializer(styleSheetSerializer);
 // @ts-ignore
 ReactDOM.createPortal = node => React.createElement('portal-dummy', null, node);
 
+Math.random = () => 0.421;
+
 initStoryshots({
   test: multiSnapshotWithOptions({}),
   storyNameRegex: /^(?!(Documentation|Experimental)).*$/,

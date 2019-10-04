@@ -169,18 +169,20 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
     
   `;
 };
-const CleanSpan = (props: any) => (
-  <span {...R.omit(['color', 'type', 'weight', 'lineHeight'])(props)} />
-);
+
+const CleanSpan = React.forwardRef<HTMLSpanElement, any>((props, ref) => (
+  <span ref={ref} {...R.omit(['color', 'type', 'weight', 'lineHeight'])(props)} />
+));
+
 const StyledTypography = styled(CleanSpan)<Props>`
   font-family: 'Nordnet Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     sans-serif;
   color: ${p => getColor(p)};
   margin: 0;
   ${p => getTypeStyles(p)}
-` as React.FC<Props>;
+`;
 
-export const Typography: React.FC<Props> = props => {
+export const Typography: React.FC<Props> = React.forwardRef<HTMLElement, Props>((props, ref) => {
   const { as, className, children, color, type, weight, lineHeight } = props;
 
   return (
@@ -192,8 +194,9 @@ export const Typography: React.FC<Props> = props => {
       weight={weight}
       lineHeight={lineHeight}
       {...pickAriaAttributes(props)}
+      ref={ref}
     >
       {children}
     </StyledTypography>
   );
-};
+});

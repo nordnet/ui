@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Select from './Select';
+import Select from '.';
 
 const options = [
   { label: 'Option 1', value: 'Option 1' },
@@ -8,7 +8,7 @@ const options = [
   { label: 'Option 3', value: 'Option 3' },
 ];
 
-storiesOf('Molecules | Select', module)
+storiesOf('DEPRECATED | Molecules / Select ', module)
   .add('Select with placeholder', () => (
     <Select options={options} placeholder="Select option" label="Options" />
   ))

@@ -1,0 +1,924 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | Input / Select / SingleSelectList Item default 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c2 {
+  height: 100%;
+}
+
+.c0 {
+  padding-right: 8px;
+  padding-left: 8px;
+  color: #4B4B46;
+  height: 24px;
+  outline: none;
+  white-space: nowrap;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c0:focus {
+  background: #F5F5F5;
+}
+
+<div
+  className="c0"
+  tabIndex={0}
+>
+  <span
+    className="c1"
+  >
+    <div
+      className="c2 c3"
+    >
+      <div
+        className="c4"
+      >
+        First
+      </div>
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Select / SingleSelectList Item disabled 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c2 {
+  height: 100%;
+}
+
+.c0 {
+  padding-right: 8px;
+  padding-left: 8px;
+  color: #4B4B46;
+  height: 24px;
+  outline: none;
+  white-space: nowrap;
+  background: #EBEBE8;
+  cursor: pointer;
+  color: #A0A09B;
+  pointer-events: none;
+}
+
+<div
+  className="c0"
+  disabled={true}
+  tabIndex={-1}
+>
+  <span
+    className="c1"
+  >
+    <div
+      className="c2 c3"
+    >
+      <div
+        className="c4"
+      >
+        First
+      </div>
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Select / SingleSelectList Item selected 1`] = `
+.c5 {
+  padding-left: 8px;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c2 {
+  height: 100%;
+}
+
+.c0 {
+  padding-right: 8px;
+  padding-left: 8px;
+  color: #0046FF;
+  height: 24px;
+  outline: none;
+  white-space: nowrap;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c0:focus {
+  background: #F5F5F5;
+}
+
+<div
+  className="c0"
+  selected={true}
+  tabIndex={0}
+>
+  <span
+    className="c1"
+  >
+    <div
+      className="c2 c3"
+    >
+      <div
+        className="c4"
+      >
+        First
+      </div>
+      <div
+        className="c4"
+      >
+        <div
+          className="c5"
+        >
+          <svg
+            aria-hidden="true"
+            className="c6"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            size={5}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Select / SingleSelectList List with different arrow positions 1`] = `
+.c11 {
+  padding-left: 8px;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  list-style: none;
+  position: relative;
+  top: 10px;
+  border: 1px solid #ebebe8;
+  background-color: #ffffff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.03);
+}
+
+.c3:before {
+  right: 20px;
+  position: absolute;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -10px;
+  border-bottom: 10px solid;
+  border-bottom-color: #ebebe8;
+}
+
+.c3:after {
+  right: 20px;
+  position: absolute;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -8px;
+  border-bottom: 10px solid;
+  border-bottom-color: #ffffff;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  list-style: none;
+  position: relative;
+  top: 10px;
+  border: 1px solid #ebebe8;
+  background-color: #ffffff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.03);
+}
+
+.c14:before {
+  left: 20px;
+  position: absolute;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -10px;
+  border-bottom: 10px solid;
+  border-bottom-color: #ebebe8;
+}
+
+.c14:after {
+  left: 20px;
+  position: absolute;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -8px;
+  border-bottom: 10px solid;
+  border-bottom-color: #ffffff;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  list-style: none;
+  position: relative;
+  top: 10px;
+  border: 1px solid #ebebe8;
+  background-color: #ffffff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.03);
+}
+
+.c15:before {
+  left: 50%;
+  position: absolute;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -10px;
+  border-bottom: 10px solid;
+  border-bottom-color: #ebebe8;
+}
+
+.c15:after {
+  left: 50%;
+  position: absolute;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -8px;
+  border-bottom: 10px solid;
+  border-bottom-color: #ffffff;
+}
+
+.c7 {
+  height: 100%;
+}
+
+.c5 {
+  padding-right: 8px;
+  padding-left: 8px;
+  color: #4B4B46;
+  height: 24px;
+  outline: none;
+  white-space: nowrap;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.c5:hover {
+  background: #F5F5F5;
+}
+
+.c5:focus {
+  background: #F5F5F5;
+}
+
+.c10 {
+  padding-right: 8px;
+  padding-left: 8px;
+  color: #0046FF;
+  height: 24px;
+  outline: none;
+  white-space: nowrap;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.c10:hover {
+  background: #F5F5F5;
+}
+
+.c10:focus {
+  background: #F5F5F5;
+}
+
+.c13 {
+  padding-right: 8px;
+  padding-left: 8px;
+  color: #4B4B46;
+  height: 24px;
+  outline: none;
+  white-space: nowrap;
+  background: #EBEBE8;
+  cursor: pointer;
+  color: #A0A09B;
+  pointer-events: none;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Default (right)
+    </div>
+    <div>
+      <ul
+        className="c3 c4"
+        role="listbox"
+      >
+        <div
+          className="c5"
+          tabIndex={0}
+        >
+          <span
+            className="c6"
+          >
+            <div
+              className="c7 c8"
+            >
+              <div
+                className="c9"
+              >
+                Default?
+              </div>
+            </div>
+          </span>
+        </div>
+        <div
+          className="c10"
+          selected={true}
+          tabIndex={0}
+        >
+          <span
+            className="c6"
+          >
+            <div
+              className="c7 c8"
+            >
+              <div
+                className="c9"
+              >
+                First
+              </div>
+              <div
+                className="c9"
+              >
+                <div
+                  className="c11"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="c12"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    size={5}
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div
+          className="c5"
+          tabIndex={0}
+        >
+          <span
+            className="c6"
+          >
+            <div
+              className="c7 c8"
+            >
+              <div
+                className="c9"
+              >
+                Second
+              </div>
+            </div>
+          </span>
+        </div>
+        <div
+          className="c13"
+          disabled={true}
+          tabIndex={-1}
+        >
+          <span
+            className="c6"
+          >
+            <div
+              className="c7 c8"
+            >
+              <div
+                className="c9"
+              >
+                Disabled
+              </div>
+            </div>
+          </span>
+        </div>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Left
+    </div>
+    <div>
+      <ul
+        className="c14 c4"
+        role="listbox"
+      >
+        <div
+          className="c5"
+          tabIndex={0}
+        >
+          <span
+            className="c6"
+          >
+            <div
+              className="c7 c8"
+            >
+              <div
+                className="c9"
+              >
+                Default?
+              </div>
+            </div>
+          </span>
+        </div>
+        <div
+          className="c10"
+          selected={true}
+          tabIndex={0}
+        >
+          <span
+            className="c6"
+          >
+            <div
+              className="c7 c8"
+            >
+              <div
+                className="c9"
+              >
+                First
+              </div>
+              <div
+                className="c9"
+              >
+                <div
+                  className="c11"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="c12"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    size={5}
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div
+          className="c5"
+          tabIndex={0}
+        >
+          <span
+            className="c6"
+          >
+            <div
+              className="c7 c8"
+            >
+              <div
+                className="c9"
+              >
+                Second
+              </div>
+            </div>
+          </span>
+        </div>
+        <div
+          className="c13"
+          disabled={true}
+          tabIndex={-1}
+        >
+          <span
+            className="c6"
+          >
+            <div
+              className="c7 c8"
+            >
+              <div
+                className="c9"
+              >
+                Disabled
+              </div>
+            </div>
+          </span>
+        </div>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Center
+    </div>
+    <div>
+      <ul
+        className="c15 c4"
+        role="listbox"
+      >
+        <div
+          className="c5"
+          tabIndex={0}
+        >
+          <span
+            className="c6"
+          >
+            <div
+              className="c7 c8"
+            >
+              <div
+                className="c9"
+              >
+                Default?
+              </div>
+            </div>
+          </span>
+        </div>
+        <div
+          className="c10"
+          selected={true}
+          tabIndex={0}
+        >
+          <span
+            className="c6"
+          >
+            <div
+              className="c7 c8"
+            >
+              <div
+                className="c9"
+              >
+                First
+              </div>
+              <div
+                className="c9"
+              >
+                <div
+                  className="c11"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="c12"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    size={5}
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div
+          className="c5"
+          tabIndex={0}
+        >
+          <span
+            className="c6"
+          >
+            <div
+              className="c7 c8"
+            >
+              <div
+                className="c9"
+              >
+                Second
+              </div>
+            </div>
+          </span>
+        </div>
+        <div
+          className="c13"
+          disabled={true}
+          tabIndex={-1}
+        >
+          <span
+            className="c6"
+          >
+            <div
+              className="c7 c8"
+            >
+              <div
+                className="c9"
+              >
+                Disabled
+              </div>
+            </div>
+          </span>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

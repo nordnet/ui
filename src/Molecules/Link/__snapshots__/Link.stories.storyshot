@@ -36,7 +36,7 @@ exports[`Storyshots Molecules | Link Default usage 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | Link External link with _blank target 1`] = `
+exports[`Storyshots Molecules | Link External link with its default values 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -67,6 +67,7 @@ exports[`Storyshots Molecules | Link External link with _blank target 1`] = `
     external={true}
     href="http://www.google.com"
     onClick={[Function]}
+    rel="noopener noreferrer nofollow"
     target="_blank"
   >
     Link
@@ -74,7 +75,7 @@ exports[`Storyshots Molecules | Link External link with _blank target 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | Link External link with rel as nofollow 1`] = `
+exports[`Storyshots Molecules | Link External link with rel and target overriden 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -103,9 +104,10 @@ exports[`Storyshots Molecules | Link External link with rel as nofollow 1`] = `
   <a
     className="c1"
     external={true}
-    href="http://ww.google.com"
+    href="http://www.google.com"
     onClick={[Function]}
     rel="nofollow"
+    target="_self"
   >
     Link
   </a>
@@ -132,9 +134,11 @@ exports[`Storyshots Molecules | Link With disabled prop results in a disabled bu
   display: inline;
   padding: 0;
   color: #A0A09B;
-  cursor: not-allowed;
   border: none;
-  border-radius: 0;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: not-allowed;
   font-weight: inherit;
 }
 
@@ -234,9 +238,11 @@ exports[`Storyshots Molecules | Link Without to prop results in a button looking
   display: inline;
   padding: 0;
   color: #0046FF;
-  cursor: pointer;
   border: none;
-  border-radius: 0;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: pointer;
   font-weight: inherit;
 }
 
