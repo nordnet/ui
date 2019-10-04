@@ -82,7 +82,6 @@ exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
   overflow: visible;
   text-transform: none;
   display: block;
-  position: relative;
   background: none;
   padding: 0;
   border: 0;
@@ -153,7 +152,7 @@ exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
         role="switch"
         type="button"
       >
-        <span
+        <div
           className="c5"
         >
           <span
@@ -162,7 +161,7 @@ exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
           <span
             className="c8 c9"
           />
-        </span>
+        </div>
       </button>
     </span>
   </span>
@@ -251,7 +250,6 @@ exports[`Storyshots Molecules | Switch Default Off 1`] = `
   overflow: visible;
   text-transform: none;
   display: block;
-  position: relative;
   background: none;
   padding: 0;
   border: 0;
@@ -322,7 +320,7 @@ exports[`Storyshots Molecules | Switch Default Off 1`] = `
         role="switch"
         type="button"
       >
-        <span
+        <div
           className="c5"
         >
           <span
@@ -331,7 +329,7 @@ exports[`Storyshots Molecules | Switch Default Off 1`] = `
           <span
             className="c8 c9"
           />
-        </span>
+        </div>
       </button>
     </span>
   </span>
@@ -420,7 +418,6 @@ exports[`Storyshots Molecules | Switch Default On 1`] = `
   overflow: visible;
   text-transform: none;
   display: block;
-  position: relative;
   background: none;
   padding: 0;
   border: 0;
@@ -491,7 +488,7 @@ exports[`Storyshots Molecules | Switch Default On 1`] = `
         role="switch"
         type="button"
       >
-        <span
+        <div
           className="c5"
         >
           <span
@@ -500,7 +497,7 @@ exports[`Storyshots Molecules | Switch Default On 1`] = `
           <span
             className="c8 c9"
           />
-        </span>
+        </div>
       </button>
     </span>
   </span>
@@ -589,7 +586,6 @@ exports[`Storyshots Molecules | Switch Disabled 1`] = `
   overflow: visible;
   text-transform: none;
   display: block;
-  position: relative;
   background: none;
   padding: 0;
   border: 0;
@@ -661,7 +657,7 @@ exports[`Storyshots Molecules | Switch Disabled 1`] = `
         role="switch"
         type="button"
       >
-        <span
+        <div
           className="c5"
         >
           <span
@@ -670,7 +666,7 @@ exports[`Storyshots Molecules | Switch Disabled 1`] = `
           <span
             className="c8 c9"
           />
-        </span>
+        </div>
       </button>
     </span>
   </span>
@@ -759,7 +755,6 @@ exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
   overflow: visible;
   text-transform: none;
   display: block;
-  position: relative;
   background: none;
   padding: 0;
   border: 0;
@@ -830,7 +825,7 @@ exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
         role="switch"
         type="button"
       >
-        <span
+        <div
           className="c5"
         >
           <span
@@ -839,7 +834,7 @@ exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
           <span
             className="c8 c9"
           />
-        </span>
+        </div>
       </button>
     </span>
   </span>
@@ -937,7 +932,6 @@ exports[`Storyshots Molecules | Switch With hidden label 1`] = `
   overflow: visible;
   text-transform: none;
   display: block;
-  position: relative;
   background: none;
   padding: 0;
   border: 0;
@@ -1012,7 +1006,7 @@ exports[`Storyshots Molecules | Switch With hidden label 1`] = `
         role="switch"
         type="button"
       >
-        <span
+        <div
           className="c6"
         >
           <span
@@ -1021,7 +1015,7 @@ exports[`Storyshots Molecules | Switch With hidden label 1`] = `
           <span
             className="c9 c10"
           />
-        </span>
+        </div>
       </button>
     </span>
   </span>

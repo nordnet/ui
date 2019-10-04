@@ -39,13 +39,12 @@ const Track = styled.span`
   transition: background-color 0.2s ease-out;
 `;
 
-const ButtonContent = styled.span`
+const ButtonContent = styled.div`
   position: relative; /* IE fix for nudge on click */
 `;
 
 const Button = styled(NormalizedElements.Button)`
   display: block;
-  position: relative;
   background: none;
   padding: 0;
   border: 0;
