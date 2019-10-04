@@ -118,8 +118,10 @@ const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<Partial<P
 `;
 
 const components = {
+  AddonBox,
   Input,
   Stepper,
+  Wrapper,
 };
 
 const NumberInput: NumberComponent & {
