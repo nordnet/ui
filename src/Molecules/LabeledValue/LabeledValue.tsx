@@ -13,7 +13,7 @@ const StyledLabel = styled.div`
   margin-bottom: ${p => p.theme.spacing.unit(1)}px;
 `;
 
-export const LabeledValue: LabeledValueComponent = ({ label, children }) => {
+export const LabeledValue: LabeledValueComponent = ({ children, className, label }) => {
   const pageHeaderTitle = () => {
     if (isElement(label)) {
       return label;
@@ -25,7 +25,7 @@ export const LabeledValue: LabeledValueComponent = ({ label, children }) => {
     );
   };
   return (
-    <StyledLabeledValue>
+    <StyledLabeledValue className={className}>
       <StyledLabel>{pageHeaderTitle()}</StyledLabel>
       {children}
     </StyledLabeledValue>
