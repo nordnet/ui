@@ -165,7 +165,7 @@ const Select = (props: Props) => {
         value: isControlledMode ? valueFromProps : _state.value,
       },
     });
-  }, [options, placeholder, isControlledMode, valueFromProps, dispatch, _state.value]);
+  }, [options, placeholder, isControlledMode, valueFromProps, dispatch]);
   const { open, value } = state;
   const buttonRef = React.useRef<HTMLButtonElement>(null);
   const customSelectListRef = React.useRef<HTMLDivElement>(null);
