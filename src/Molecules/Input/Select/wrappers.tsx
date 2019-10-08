@@ -36,7 +36,7 @@ const StyledListWrapper = styled.div<any>`
   height: 100%;
   position: absolute;
   top: 100%;
-  z-index: 1;
+  z-index: 4;
 `;
 
 export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
