@@ -135,6 +135,10 @@ export type Theme = {
     generationSavingsTimelineColor3: RawColor['brandBlue'];
     /** complementaryBlue1 */
     generationSavingsTimelineColor4: RawColor['complementaryBlue1'];
+    /** white */
+    orderDepthBackground: RawColor['white'];
+    /** gray6 */
+    orderDepthDarkBackground: RawColor['gray6'];
   };
 
   spacing: {
