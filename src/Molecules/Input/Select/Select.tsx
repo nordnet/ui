@@ -89,7 +89,7 @@ const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
         {noFormField ? (
           children
         ) : (
-          <FormField {...props} ref={ref}>
+          <FormField {...props} {...(fullWidth ? { width: '100%' } : {})} ref={ref}>
             <SelectWrapper {...props}>
               {children}
               <Chevron open={open} />
@@ -165,7 +165,7 @@ const Select = (props: Props) => {
         value: isControlledMode ? valueFromProps : _state.value,
       },
     });
-  }, [options, placeholder, isControlledMode, valueFromProps, dispatch]);
+  }, [options, placeholder, isControlledMode, valueFromProps, dispatch, _state.value]);
   const { open, value } = state;
   const buttonRef = React.useRef<HTMLButtonElement>(null);
   const customSelectListRef = React.useRef<HTMLDivElement>(null);
