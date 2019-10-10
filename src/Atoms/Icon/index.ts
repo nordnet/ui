@@ -36,6 +36,7 @@ import { ThreeDots } from './components/ThreeDots';
 import { Trash } from './components/Trash';
 import { WarningTriangle } from './components/WarningTriangle';
 import { Rtmt } from './components/Rtmt';
+import { Pending } from './components/Pending';
 
 export default {
   AddWithCircle,
@@ -63,6 +64,7 @@ export default {
   Import,
   InfoCircle,
   Pen,
+  Pending,
   Plus,
   PlusWithCircle,
   Printer,
