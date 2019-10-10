@@ -1776,7 +1776,7 @@ exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
   box-sizing: border-box;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-left: 40px;
+  padding-left: 32px;
   padding-right: 40px;
 }
 
@@ -3232,7 +3232,7 @@ exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
   box-sizing: border-box;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-left: 40px;
+  padding-left: 32px;
   padding-right: 8px;
 }
 

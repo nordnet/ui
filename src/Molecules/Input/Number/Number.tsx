@@ -109,7 +109,7 @@ const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<Partial<P
       ? `
       padding-top: ${p.theme.spacing.unit(2)}px;
       padding-bottom: ${p.theme.spacing.unit(2)}px;
-      padding-left: ${p.leftAddon ? p.theme.spacing.unit(10) : p.theme.spacing.unit(2)}px;
+      padding-left: ${p.leftAddon ? p.theme.spacing.unit(8) : p.theme.spacing.unit(2)}px;
       padding-right: ${p.rightAddon ? p.theme.spacing.unit(10) : p.theme.spacing.unit(2)}px;
       `
       : `
