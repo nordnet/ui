@@ -102,12 +102,15 @@ const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<Partial<P
   ${borderStyles}
   ${height}
   width: 100%;
-  text-align: center;
+  text-align: ${p => (p.showSteppers ? 'center' : 'left')};
   box-sizing: border-box;
   ${p =>
     p.leftAddon || p.rightAddon
       ? `
-      padding: ${p.theme.spacing.unit(2)}px ${p.theme.spacing.unit(10)}px;
+      padding-top: ${p.theme.spacing.unit(2)}px;
+      padding-bottom: ${p.theme.spacing.unit(2)}px;
+      padding-left: ${p.leftAddon ? p.theme.spacing.unit(10) : p.theme.spacing.unit(2)}px;
+      padding-right: ${p.rightAddon ? p.theme.spacing.unit(10) : p.theme.spacing.unit(2)}px;
       `
       : `
       padding: ${p.theme.spacing.unit(2)}px;
@@ -288,6 +291,7 @@ const NumberInput: NumberComponent & {
               success,
               value: removeNonNumberCharacters(value),
               inputMode,
+              showSteppers,
             }}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />

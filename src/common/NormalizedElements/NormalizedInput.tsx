@@ -19,6 +19,7 @@ const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement
         'size',
         'sizeProp',
         'success',
+        'showSteppers',
       ],
       props,
     )}
