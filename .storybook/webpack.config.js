@@ -20,7 +20,9 @@ module.exports = ({ config, mode }) => {
       },
       {
         loader: 'react-docgen-typescript-loader',
-        options: { compilerOptions: tsConfig.compilerOptions },
+        // For some reason loader doesn't like moduleResolution field
+        // @hack
+        options: { compilerOptions: { ...tsConfig.compilerOptions, moduleResolution: undefined } },
       },
     ],
   });

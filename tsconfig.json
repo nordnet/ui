@@ -10,6 +10,7 @@
     "rootDirs": ["src"],
     "noEmit": false,
     "strict": true,
+    "moduleResolution": "node",
     "types": ["./src/common/injectTheme", "./src/common/allowMd"],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
