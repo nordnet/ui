@@ -48,6 +48,10 @@ export type Spacings = {
 };
 
 export type Props = {
+  /**
+   * Render this element as different DOM node
+   * @default div
+   * */
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   className?: string;
 } & Paddings &

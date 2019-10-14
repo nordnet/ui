@@ -35,6 +35,9 @@ const text = (
 
 storiesOf('Atoms | Box', module)
   .addDecorator(withOuter)
+  .addParameters({
+    component: Box,
+  })
   .add('Margin', () => <Box m={4}>{text}</Box>)
   .add('Margin and different margin Y-axis', () => (
     <Box m={8} my={4}>

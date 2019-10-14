@@ -88,6 +88,9 @@ const StyledDiv = styled.div<Props>`
   ${p => (p.lg ? getStylesForSize('lg') : '')}
 `;
 
+/**
+ * Use `Box` component to handle margins/paddings.
+ */
 export const Box: React.FC<Props> = React.forwardRef<HTMLDivElement, Props>(
   (
     {
