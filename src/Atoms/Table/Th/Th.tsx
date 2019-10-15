@@ -16,10 +16,31 @@ const StyledTh = styled.th<Props>`
   :last-child {
     padding-right: 0;
   }
+
+  ${p =>
+    p.ellipsis
+      ? `white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+    `
+      : ''}
 `;
 
-export const Th: ThComponent = ({ width = 'auto', textAlign = 'left', className, children }) => (
-  <StyledTh width={width} textAlign={textAlign} className={className}>
+export const Th: ThComponent = ({
+  width = 'auto',
+  textAlign = 'left',
+  ellipsis = false,
+  scope,
+  className,
+  children,
+}) => (
+  <StyledTh
+    width={width}
+    textAlign={textAlign}
+    ellipsis={ellipsis}
+    scope={scope}
+    className={className}
+  >
     {children}
   </StyledTh>
 );
