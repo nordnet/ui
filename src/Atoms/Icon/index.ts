@@ -22,6 +22,8 @@ import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
 import { Import } from './components/Import';
 import { InfoCircle } from './components/InfoCircle';
+import { Maximize } from './components/Maximize';
+import { Minimize } from './components/Minimize';
 import { Pen } from './components/Pen';
 import { Plus } from './components/Plus';
 import { PlusWithCircle } from './components/PlusWithCircle';
@@ -63,6 +65,8 @@ export default {
   Globe,
   Import,
   InfoCircle,
+  Maximize,
+  Minimize,
   Pen,
   Pending,
   Plus,

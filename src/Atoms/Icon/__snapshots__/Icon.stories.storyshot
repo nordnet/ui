@@ -951,6 +951,78 @@ Array [
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
       size={5}
+      viewBox="0 0 20 20"
+    >
+      <path
+        d="M7.585938 11L9 12.414062 3.414062 18H8l-2 2H0v-6l2-2v4.585938zM20 0v6l-2 2V3.414062L12.414062 9 11 7.585938 16.585938 2H12l2-2zm0 0"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      size={5}
+      viewBox="0 0 20 20"
+    >
+      <path
+        d="M9 11v6l-2 2v-4.585938L1.414062 20 0 18.585938 5.585938 13H1l2-2zm9.585938-11L20 1.414062 14.414062 7H19l-2 2h-6V3l2-2v4.585938zm0 0"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      size={5}
       viewBox="0 0 24 24"
     >
       <path
@@ -2474,6 +2546,74 @@ exports[`Storyshots Atoms | Icon Available Icons 1`] = `
           <path
             d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
             fill="#FFFFFF"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Maximize
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={5}
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M7.585938 11L9 12.414062 3.414062 18H8l-2 2H0v-6l2-2v4.585938zM20 0v6l-2 2V3.414062L12.414062 9 11 7.585938 16.585938 2H12l2-2zm0 0"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Minimize
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={5}
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M9 11v6l-2 2v-4.585938L1.414062 20 0 18.585938 5.585938 13H1l2-2zm9.585938-11L20 1.414062 14.414062 7H19l-2 2h-6V3l2-2v4.585938zm0 0"
           />
         </svg>
       </div>
