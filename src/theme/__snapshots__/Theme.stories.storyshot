@@ -209,6 +209,13 @@ Array [
   border: 1px solid #eee;
 }
 
+.c21 {
+  width: 56px;
+  height: 56px;
+  background-color: #D7D7D2;
+  border: 1px solid #eee;
+}
+
 .c4 {
   width: 56px;
   height: 56px;
@@ -262,13 +269,6 @@ Array [
   width: 56px;
   height: 56px;
   background-color: #01424C;
-  border: 1px solid #eee;
-}
-
-.c21 {
-  width: 56px;
-  height: 56px;
-  background-color: #D7D7D2;
   border: 1px solid #eee;
 }
 
@@ -1073,6 +1073,13 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
   width: 56px;
   height: 56px;
   background-color: #385E9D;
+  border: 1px solid #eee;
+}
+
+.c30 {
+  width: 56px;
+  height: 56px;
+  background-color: #D7D7D2;
   border: 1px solid #eee;
 }
 
@@ -2446,6 +2453,37 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         />
         <div>
           #EBEBE8
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        orderDepthDarkBackground
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c30"
+          color="#D7D7D2"
+        />
+        <div>
+          #D7D7D2
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c30"
+          color="#D7D7D2"
+        />
+        <div>
+          #D7D7D2
         </div>
       </td>
     </tr>

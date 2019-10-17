@@ -141,6 +141,8 @@ export type Theme = {
     generationSavingsTimelineColor4: RawColor['complementaryBlue1'];
     /** gray6 */
     orderDepthBackground: RawColor['gray6'];
+    /** gray5 */
+    orderDepthDarkBackground: RawColor['gray5'];
   };
 
   spacing: {

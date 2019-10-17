@@ -165,6 +165,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       generationSavingsTimelineColor3: rawColor.brandBlue,
       generationSavingsTimelineColor4: rawColor.complementaryBlue1,
       orderDepthBackground: rawColor.gray6,
+      orderDepthDarkBackground: rawColor.gray5,
     },
     media: {
       between: (s1, s2) => {
