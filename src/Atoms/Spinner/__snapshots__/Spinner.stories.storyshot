@@ -520,6 +520,15 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
 `;
 
 exports[`Storyshots Atoms | Spinner Regression 2 Spinners With Same Color And Size Affects Each Other In Chrome 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c1 {
   display: inline-block;
   -webkit-animation: spinner 1s linear infinite;
@@ -528,15 +537,6 @@ exports[`Storyshots Atoms | Spinner Regression 2 Spinners With Same Color And Si
 
 .c2 {
   display: block;
-}
-
-.c0 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 <div>

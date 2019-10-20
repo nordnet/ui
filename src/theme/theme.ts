@@ -39,6 +39,10 @@ export const rawColor = {
   positive: '#00D200',
   negative: '#FF1900',
   index: '#FFCF00',
+  slider: '#D2F500',
+  sliderBackground: '#EBEBE8',
+  sliderWhite: '#FFFFFF',
+  sliderBorder: '#BCBCB6',
 
   // ACCESSIBLE FUNCTIONAL COLORS
   a11yCta: '#2D67FF',
@@ -147,6 +151,10 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
         .rgb()
         .string(),
       shareville: rawColor.complementaryGreen1,
+      slider: rawColor.slider,
+      sliderBackground: rawColor.sliderBackground,
+      sliderWhite: rawColor.sliderWhite,
+      sliderBorder: rawColor.sliderBorder,
       spinnerBlack: rawColor.black,
       spinnerWhite: rawColor.white,
       streamingBolt: rawColor.index,

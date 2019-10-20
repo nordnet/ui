@@ -14,6 +14,7 @@ import ListItem from './Atoms/ListItem';
 import Media, { useMedia } from './Atoms/Media';
 import Portal from './Atoms/Portal';
 import Separator from './Atoms/Separator';
+import Slider from './Atoms/Slider';
 import Spinner from './Atoms/Spinner';
 import TabTitle from './Atoms/TabTitle';
 import Time from './Atoms/Time';
@@ -90,6 +91,7 @@ export {
   Portal,
   /** @deprecated */ Select,
   Separator,
+  Slider,
   Spinner,
   Switch,
   Table,
