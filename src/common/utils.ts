@@ -59,3 +59,6 @@ const isInvalid = R.anyPass([
 ]);
 
 export const isValidDateTimeNumber = R.complement(isInvalid) as (x: any) => x is number;
+
+export const isIE = (): boolean =>
+  window.matchMedia('all and (-ms-high-contrast: none), (-ms-high-contrast: active) ').matches;

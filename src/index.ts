@@ -48,7 +48,10 @@ import CardWithTabs from './Organisms/CardWithTabs';
 import Development from './Organisms/Development';
 
 /** Hooks */
-import { useKeyPress } from './common/Hooks';
+import { useKeyPress, useIsIE } from './common/Hooks';
+
+/** Utils */
+import { isIE } from './common/utils';
 
 import theme, { createTheme } from './theme';
 import TrackingContext from './common/tracking';
@@ -74,6 +77,7 @@ export {
   FormLabel,
   Icon,
   Input,
+  isIE,
   LabeledValue,
   Legend,
   Link,
@@ -106,6 +110,7 @@ export {
   Tr,
   TrackingContext,
   Typography,
+  useIsIE,
   useKeyPress,
   useMedia,
   VisuallyHidden,
