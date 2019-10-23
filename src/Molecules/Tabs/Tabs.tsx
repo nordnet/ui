@@ -61,6 +61,11 @@ const StyledUl = styled.ul`
   margin-bottom: 0;
 `;
 
+const Content = styled.section`
+  height: 100%;
+  overflow: hidden;
+`;
+
 const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps } => {
   if (x == null || typeof x === 'undefined') {
     return true;
@@ -120,14 +125,14 @@ export const Tabs: ContainerComponent = ({
 
       if (isActive) {
         contents = (
-          <section
+          <Content
             id={`tabs-tabpanel-${i}`}
             role="tabpanel"
             aria-labelledby={`tabs-tab-${i}`}
             hidden={!isActive}
           >
             {c}
-          </section>
+          </Content>
         );
       }
     }
@@ -147,7 +152,7 @@ export const Tabs: ContainerComponent = ({
       </Flexbox>
       <Separator />
 
-      <div>{contents}</div>
+      {contents}
     </>
   );
 };
