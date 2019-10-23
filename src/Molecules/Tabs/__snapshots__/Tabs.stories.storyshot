@@ -138,7 +138,6 @@ exports[`Storyshots Molecules | Tabs Controlled Behaviour 1`] = `
 
 .c9 {
   height: 100%;
-  overflow: hidden;
 }
 
 <span
@@ -361,7 +360,6 @@ exports[`Storyshots Molecules | Tabs Default Story 1`] = `
 
 .c9 {
   height: 100%;
-  overflow: hidden;
 }
 
 <span
@@ -734,7 +732,6 @@ exports[`Storyshots Molecules | Tabs With Custom Styling Like Spacing 1`] = `
 
 .c10 {
   height: 100%;
-  overflow: hidden;
 }
 
 .c11 {
@@ -965,7 +962,6 @@ exports[`Storyshots Molecules | Tabs With Height Modified 1`] = `
 
 .c9 {
   height: 100%;
-  overflow: hidden;
 }
 
 <span

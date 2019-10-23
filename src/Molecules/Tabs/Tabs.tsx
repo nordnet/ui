@@ -63,7 +63,6 @@ const StyledUl = styled.ul`
 
 const Content = styled.section`
   height: 100%;
-  overflow: hidden;
 `;
 
 const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps } => {

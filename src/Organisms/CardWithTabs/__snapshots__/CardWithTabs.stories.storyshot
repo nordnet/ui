@@ -163,7 +163,6 @@ Array [
 
 .c15 {
   height: 100%;
-  overflow: hidden;
 }
 
 .c5 {
@@ -424,7 +423,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Typography And Ext
 
 .c16 {
   height: 100%;
-  overflow: hidden;
 }
 
 .c5 {
@@ -703,7 +701,6 @@ exports[`Storyshots Organisms | CardWithTabs With Initial Active Tab Index 1`] =
 
 .c15 {
   height: 100%;
-  overflow: hidden;
 }
 
 .c5 {
