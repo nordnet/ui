@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext, useCallback } from 'react';
 import styled, { css } from 'styled-components';
+import * as R from 'ramda';
 import { Icon, Flexbox, FormField } from '../../..';
 
 import { usePrevious, useOnClickOutside } from '../../../common/Hooks';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
 import { noop, createCounter } from './utils';
+import TrackingContext from '../../../common/tracking';
 
 import { ListItemWrapper, ListWrapper, SelectedValueWrapper } from './wrappers';
 import { useSelectReducer, SelectStateContext } from './context';
@@ -122,11 +124,41 @@ const Select = (props: Props) => {
     autoFocusFirstOption = true,
     fullWidth,
   } = props;
-
+  const { track } = useContext(TrackingContext);
   const isControlledMode = typeof valueFromProps !== 'undefined';
-  const [_state, dispatch] = React.useReducer(
+  const [_state, _dispatch] = React.useReducer(
     reducer as typeof defaultSelectReducer,
     initialState as typeof defaultSelectInitialState,
+  );
+  const dispatch = useCallback(
+    action => {
+      if (typeof track === 'function') {
+        if (
+          [
+            defaultActionTypes['Select.Open'],
+            defaultActionTypes['Select.Close'],
+            defaultActionTypes['Select.Toggle'],
+          ].includes(action.type)
+        ) {
+          track('select', action.type, props);
+        }
+
+        if (
+          [
+            defaultActionTypes['Select.SelectValue'],
+            defaultActionTypes['Select.DeselectValue'],
+          ].includes(action.type)
+        ) {
+          track('select', action.type, {
+            ...props,
+            label: R.path(['payload', 'label'], action),
+          });
+        }
+      }
+
+      _dispatch(action);
+    },
+    [_dispatch],
   );
   const previousState = usePrevious(_state);
   const { ListItem, List, SelectedValue } = useComponentsWithDefaults(components);
