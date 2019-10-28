@@ -134,13 +134,12 @@ const Select = (props: Props) => {
     action => {
       if (typeof track === 'function') {
         if (
-          [
-            defaultActionTypes['Select.Open'],
-            defaultActionTypes['Select.Close'],
-            defaultActionTypes['Select.Toggle'],
-          ].includes(action.type)
+          [defaultActionTypes['Select.Open'], defaultActionTypes['Select.Close']].includes(
+            action.type,
+          )
         ) {
-          track('select', action.type, props);
+          const event = action.type === defaultActionTypes['Select.Open'] ? 'open' : 'close';
+          track('select', event, props);
         }
 
         if (
@@ -149,10 +148,18 @@ const Select = (props: Props) => {
             defaultActionTypes['Select.DeselectValue'],
           ].includes(action.type)
         ) {
-          track('select', action.type, {
+          const event =
+            action.type === defaultActionTypes['Select.SelectValue'] ? 'select' : 'deselect';
+          const label = R.pathOr('', ['payload', 'label'], action);
+          track('select', `${event} ${label}`, {
             ...props,
-            label: R.path(['payload', 'label'], action),
+            label,
           });
+        }
+
+        if (action.type === defaultActionTypes['Select.Toggle']) {
+          const event = _state.open ? 'close' : 'open';
+          track('select', event, props);
         }
       }
 
