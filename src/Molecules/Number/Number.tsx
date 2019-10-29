@@ -69,13 +69,13 @@ export const getRoundedValue = (
   value: number,
   { ticks, decimals, maximumDecimals, minimumDecimals }: Options,
 ) => {
-  let dec = null;
-  if (typeof decimals !== 'undefined') dec = decimals;
-  if (typeof ticks !== 'undefined') dec = getTickDecimals(value, ticks);
+  let numberOfSignificantDigits = null;
+  if (typeof decimals !== 'undefined') numberOfSignificantDigits = decimals;
+  if (typeof ticks !== 'undefined') numberOfSignificantDigits = getTickDecimals(value, ticks);
   if (typeof maximumDecimals !== 'undefined' || typeof minimumDecimals !== 'undefined')
-    dec = getDecimalsFromMinMax(value, maximumDecimals, minimumDecimals);
-  if (dec === null) return value;
-  return dec === 0 ? Math.round(value) : +Number(value).toPrecision(dec);
+    numberOfSignificantDigits = getDecimalsFromMinMax(value, maximumDecimals, minimumDecimals);
+  if (numberOfSignificantDigits === null) return value;
+  return numberOfSignificantDigits === 0 ? Math.round(value) : +Number(value).toPrecision(numberOfSignificantDigits);
 };
 
 const TypographyWithInheritedWeight = styled(Typography)`
