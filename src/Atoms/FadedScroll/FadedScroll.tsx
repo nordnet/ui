@@ -10,21 +10,13 @@ const scroll = css<Pick<Props, 'maxHeight'>>`
   overflow-y: auto;
 `;
 
-const desktopsScroll = css<Pick<Props, 'maxHeight'>>`
+const desktopScroll = css<Pick<Props, 'maxHeight'>>`
   ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
     ${scroll}
   }
 `;
 
-const Container = styled.div`
-  height: 100%;
-  min-height: 0; /* Firefox */
-  flex-grow: 1;
-  box-sizing: border-box;
-  padding-bottom: ${p => p.theme.spacing.unit(5)}px;
-`;
-
-const Fade = styled.div<Pick<InternalProps, 'intersectionOnScreen'> & Props>`
+const fade = css<Pick<InternalProps, 'intersectionOnScreen'> & Props>`
   position: relative;
   height: 100%;
 
@@ -46,8 +38,28 @@ const Fade = styled.div<Pick<InternalProps, 'intersectionOnScreen'> & Props>`
   }
 `;
 
+const desktopFade = css`
+  ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
+    ${fade}
+  }
+`;
+
+const Container = styled.div`
+  height: 100%;
+  min-height: 0; /* Firefox */
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding-bottom: ${p => p.theme.spacing.unit(5)}px;
+`;
+
+const Fade = styled.div<Pick<InternalProps, 'intersectionOnScreen'> & Props>`
+  height: 100%;
+
+  ${p => (p.enableMobileFade ? fade : desktopFade)}
+`;
+
 const Scroll = styled.div<Props>`
-  ${p => (p.enableMobileFade ? scroll : desktopsScroll)}
+  ${p => (p.enableMobileFade ? scroll : desktopScroll)}
 `;
 
 const Content = styled.div`
