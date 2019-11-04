@@ -1,3 +1,27 @@
+# [1.65.0](https://github.com/nordnet/ui/compare/v1.64.0...v1.65.0) (2019-11-04)
+
+
+### Bug Fixes
+
+* adjust  console log messages ([c340324](https://github.com/nordnet/ui/commit/c340324))
+* clean up ([f780777](https://github.com/nordnet/ui/commit/f780777))
+* dont show fade by default ([0e83ead](https://github.com/nordnet/ui/commit/0e83ead))
+* ie11 ([0e33faf](https://github.com/nordnet/ui/commit/0e33faf))
+* pr fixes ([fecd488](https://github.com/nordnet/ui/commit/fecd488))
+* simplify ([ea46197](https://github.com/nordnet/ui/commit/ea46197))
+* typos ([673e9e8](https://github.com/nordnet/ui/commit/673e9e8))
+* update docs and pr fixes ([418da12](https://github.com/nordnet/ui/commit/418da12))
+* update mdx of fadedscroll ([6d197d3](https://github.com/nordnet/ui/commit/6d197d3))
+* update types of useonscreen hook ([8c9de73](https://github.com/nordnet/ui/commit/8c9de73))
+
+
+### Features
+
+* add fadeheight prop ([3331fcb](https://github.com/nordnet/ui/commit/3331fcb))
+* create fadedscroll component ([deaf3bc](https://github.com/nordnet/ui/commit/deaf3bc))
+* create scrollable card ([201f28a](https://github.com/nordnet/ui/commit/201f28a))
+* expose components of fadedscroll ([f630ab8](https://github.com/nordnet/ui/commit/f630ab8))
+
 # [1.64.0](https://github.com/nordnet/ui/compare/v1.63.1...v1.64.0) (2019-11-04)
 
 
