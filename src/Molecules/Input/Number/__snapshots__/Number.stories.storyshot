@@ -4876,7 +4876,7 @@ Array [
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M24 11v2H0v-2z"
+                    d="M12.166 0v2h-12V0z"
                     fillRule="evenodd"
                   />
                 </svg>
@@ -4902,7 +4902,7 @@ Array [
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+                    d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
                     fillRule="evenodd"
                   />
                 </svg>
