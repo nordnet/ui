@@ -302,24 +302,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
 }
 
 .c18 {
-  position: relative;
   height: 100%;
-}
-
-.c18::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 52px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  pointer-events: none;
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-  opacity: 1;
-  -webkit-transition: 0.3s opacity ease-out;
-  transition: 0.3s opacity ease-out;
 }
 
 .c20 {
@@ -507,6 +490,29 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
 }
 
 @media (min-width:976px) {
+  .c18 {
+    position: relative;
+    height: 100%;
+  }
+
+  .c18::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    opacity: 1;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+  }
+}
+
+@media (min-width:976px) {
   .c19 {
     max-height: 80px;
     overflow-y: auto;
@@ -668,24 +674,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
 }
 
 .c19 {
-  position: relative;
   height: 100%;
-}
-
-.c19::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 52px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  pointer-events: none;
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-  opacity: 1;
-  -webkit-transition: 0.3s opacity ease-out;
-  transition: 0.3s opacity ease-out;
 }
 
 .c21 {
@@ -870,6 +859,29 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
 
 .c1 .c4 {
   padding-bottom: 8px;
+}
+
+@media (min-width:976px) {
+  .c19 {
+    position: relative;
+    height: 100%;
+  }
+
+  .c19::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    opacity: 1;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+  }
 }
 
 @media (min-width:976px) {
