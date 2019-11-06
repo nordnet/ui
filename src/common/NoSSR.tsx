@@ -1,14 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 const isNode = require('is-node');
 
 const NoSSR: React.FC<{ onSSR?: React.ReactElement }> = ({ children, onSSR }) => {
-  const [isSSR, setIsSSR] = useState(isNode);
-  useEffect(() => {
-    setIsSSR(isNode);
-  }, []);
-
-  if (isSSR) {
+  if (isNode) {
     return onSSR || null;
   }
 
