@@ -10,6 +10,7 @@ const StyledA11yButton = styled(NormalizedElements.Button)`
   background: ${p => (p.disabled ? p.theme.color.disabledBackground : 'transparent')};
   width: 100%;
   height: 100%;
+  padding: 0;
   cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
 
   display: flex;
