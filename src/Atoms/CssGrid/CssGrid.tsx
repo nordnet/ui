@@ -14,6 +14,8 @@ import {
 import { isUndefined, assert } from '../../common/utils';
 import { getAreasInfo } from './utils';
 
+const spacesNotInsideParentheses = /\s(?=[^)]*([(]|$))/g;
+
 const formatAreas = (areas: Props['areas']) =>
   areas
     .map(areaRow => areaRow.join(' '))
@@ -161,7 +163,10 @@ const generateMSGridStyles = ({
        * space-separated set of css units
        * @todo verify this hypothesis
        */
-      const msGridRowsStyles = rawTemplateRowsStyles.split(' ').join(` ${rowGutter} `);
+      const msGridRowsStyles = rawTemplateRowsStyles.replace(
+        spacesNotInsideParentheses,
+        ` ${rowGutter} `,
+      );
       const msGridRows = `-ms-grid-rows: ${msGridRowsStyles};`;
       styles.push(msGridRows);
     } else {
@@ -179,7 +184,10 @@ const generateMSGridStyles = ({
        * space-separated set of css units
        * @todo verify this hypothesis
        */
-      const msGridColumnsStyles = rawTemplateColumnStyles.split(' ').join(` ${colGutter} `);
+      const msGridColumnsStyles = rawTemplateColumnStyles.replace(
+        spacesNotInsideParentheses,
+        ` ${colGutter} `,
+      );
       const msGridColumns = `-ms-grid-columns: ${msGridColumnsStyles};`;
       styles.push(msGridColumns);
     } else {

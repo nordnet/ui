@@ -211,7 +211,7 @@ cssGridWithDifferentLayoutsForDifferentScreenSizes.story = {
   name: 'CssGrid with different layouts for different screen sizes',
 };
 
-export const experimentalMinmaxDoesNotWorkInIe11 = () => (
+export const withMinMax = () => (
   <Grid.Container
     templateColumns={['1fr', 'minmax(30ch, 2fr)', '1fr']}
     // prettier-ignore
@@ -235,8 +235,8 @@ export const experimentalMinmaxDoesNotWorkInIe11 = () => (
   </Grid.Container>
 );
 
-experimentalMinmaxDoesNotWorkInIe11.story = {
-  name: 'Experimental! minmax() does not work in IE11',
+withMinMax.story = {
+  name: 'CssGrid with minmax()',
 };
 
 export const shownOnMdHiddenOnSmallScreens = () => (
