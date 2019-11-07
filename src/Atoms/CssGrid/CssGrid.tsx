@@ -12,9 +12,7 @@ import {
   Size,
 } from './CssGrid.types';
 import { isUndefined, assert } from '../../common/utils';
-import { getAreasInfo } from './utils';
-
-const spacesNotInsideParentheses = /\s(?=[^)]*([(]|$))/g;
+import { getAreasInfo, getMsRawTemplateColumnOrRowStyles } from './utils';
 
 const formatAreas = (areas: Props['areas']) =>
   areas
@@ -163,10 +161,7 @@ const generateMSGridStyles = ({
        * space-separated set of css units
        * @todo verify this hypothesis
        */
-      const msGridRowsStyles = rawTemplateRowsStyles.replace(
-        spacesNotInsideParentheses,
-        ` ${rowGutter} `,
-      );
+      const msGridRowsStyles = getMsRawTemplateColumnOrRowStyles(rawTemplateRowsStyles, rowGutter);
       const msGridRows = `-ms-grid-rows: ${msGridRowsStyles};`;
       styles.push(msGridRows);
     } else {
@@ -184,9 +179,9 @@ const generateMSGridStyles = ({
        * space-separated set of css units
        * @todo verify this hypothesis
        */
-      const msGridColumnsStyles = rawTemplateColumnStyles.replace(
-        spacesNotInsideParentheses,
-        ` ${colGutter} `,
+      const msGridColumnsStyles = getMsRawTemplateColumnOrRowStyles(
+        rawTemplateColumnStyles,
+        colGutter,
       );
       const msGridColumns = `-ms-grid-columns: ${msGridColumnsStyles};`;
       styles.push(msGridColumns);

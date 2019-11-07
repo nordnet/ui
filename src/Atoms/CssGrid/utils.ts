@@ -3,6 +3,7 @@ import { AreaInfo } from './CssGrid.types';
 
 const minimal = R.reduce(R.min, Infinity);
 const maximal = R.reduce(R.max, -Infinity);
+const spacesNotInsideParentheses = /\s+(?=[^)]*([(]|$))/g;
 
 /**
  * Calculate info for areas:
@@ -75,4 +76,8 @@ export const getAreasInfo = (
     },
     {} as Record<string, AreaInfo>,
   );
+};
+
+export const getMsRawTemplateColumnOrRowStyles = (raw: string, gutter: string) => {
+  return raw.replace(spacesNotInsideParentheses, ` ${gutter} `);
 };
