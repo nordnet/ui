@@ -216,6 +216,13 @@ Array [
   border: 1px solid #eee;
 }
 
+.c8 {
+  width: 56px;
+  height: 56px;
+  background-color: #131F4F;
+  border: 1px solid #eee;
+}
+
 .c4 {
   width: 56px;
   height: 56px;
@@ -234,13 +241,6 @@ Array [
   width: 56px;
   height: 56px;
   background-color: #00F0E1;
-  border: 1px solid #eee;
-}
-
-.c8 {
-  width: 56px;
-  height: 56px;
-  background-color: #131F4F;
   border: 1px solid #eee;
 }
 
@@ -1080,6 +1080,13 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
   width: 56px;
   height: 56px;
   background-color: #D7D7D2;
+  border: 1px solid #eee;
+}
+
+.c31 {
+  width: 56px;
+  height: 56px;
+  background-color: #131F4F;
   border: 1px solid #eee;
 }
 
@@ -2515,6 +2522,37 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         />
         <div>
           #D7D7D2
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        loanRatesGraphColor2
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c31"
+          color="#131F4F"
+        />
+        <div>
+          #131F4F
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c31"
+          color="#131F4F"
+        />
+        <div>
+          #131F4F
         </div>
       </td>
     </tr>
