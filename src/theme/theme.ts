@@ -167,6 +167,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       generationSavingsTimelineColor4: rawColor.complementaryBlue1,
       orderDepthBackground: rawColor.gray6,
       orderDepthDarkBackground: rawColor.gray5,
+      loanRatesGraphColor2: rawColor.complementaryBlue2,
     },
     media: {
       between: (s1, s2) => {

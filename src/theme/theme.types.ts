@@ -145,6 +145,8 @@ export type Theme = {
     orderDepthBackground: RawColor['gray6'];
     /** gray5 */
     orderDepthDarkBackground: RawColor['gray5'];
+    /** complementaryBlue2 */
+    loanRatesGraphColor2: RawColor['complementaryBlue2'];
   };
 
   spacing: {
