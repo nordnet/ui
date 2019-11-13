@@ -18,7 +18,7 @@ const Container = styled.div<InternalProps & Props>`
   ${p => (p.enableMobileFade ? fadeBottomStyles : fadeBottomDesktopStyles)}
 `;
 
-const Scroller = styled.div<Props>`
+const Scroller = styled.div<InternalProps & Props>`
   ${scrollerStyles}
 `;
 
@@ -65,6 +65,7 @@ export const FadedScroll: Component & {
       fadeHeight={fadeHeight}
       intersectionTopOnScreen={intersectionTopOnScreen}
       intersectionBottomOnScreen={intersectionBottomOnScreen}
+      maxHeight={maxHeight}
     >
       <Scroller enableMobileFade={enableMobileFade} maxHeight={maxHeight}>
         <Content ref={contentRef}>
