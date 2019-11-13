@@ -1,4 +1,5 @@
 import * as React from 'react';
+import scrollIntoView from 'scroll-into-view-if-needed';
 import { ContextType } from './context';
 import { Context } from '../machine';
 
@@ -21,17 +22,26 @@ export const useFocusFromMachine = (
       machineState.matches({ open: 'on' })
     ) {
       if (searchRef.current) {
-        searchRef.current.focus();
+        searchRef.current.focus({
+          preventScroll: true,
+        });
         if (
           machineState.context.itemFocusIdx !== null &&
           itemRefs[machineState.context.itemFocusIdx] &&
           itemRefs[machineState.context.itemFocusIdx].scrollIntoView
         ) {
-          itemRefs[machineState.context.itemFocusIdx!].scrollIntoView({ block: 'nearest' });
+          scrollIntoView(itemRefs[machineState.context.itemFocusIdx!], {
+            behavior: 'smooth',
+            block: 'nearest',
+            inline: 'center',
+          });
         }
       }
     } else if (isInButtonFocusState) {
-      if (buttonRef.current) buttonRef.current.focus();
+      if (buttonRef.current)
+        buttonRef.current.focus({
+          preventScroll: true,
+        });
     }
   }, [machineState.context.itemFocusIdx, isInButtonFocusState]); // eslint-disable-line react-hooks/exhaustive-deps
 };

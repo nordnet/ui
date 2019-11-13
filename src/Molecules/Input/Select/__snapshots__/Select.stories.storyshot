@@ -3634,6 +3634,350 @@ Array [
 ]
 `;
 
+exports[`Storyshots Molecules | Input / Select Focus Without Scrolling 1`] = `
+Array [
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  .c0 {
+  display: none;
+}
+
+<select
+    aria-hidden="true"
+    className="c0"
+    disabled={false}
+    onChange={[Function]}
+  >
+    <option
+      label="Select account"
+      value=""
+    />
+    <option
+      label="First account"
+      value="1"
+    />
+    <option
+      label="Second acc 2"
+      value="2"
+    />
+    <option
+      label="Third 3"
+      value="3"
+    />
+  </select>,
+  .c12 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c14 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+  width: auto;
+}
+
+.c5 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  position: relative;
+}
+
+.c5:hover {
+  border-color: #4B4B46;
+}
+
+.c5:focus-within {
+  border-color: #0046FF;
+}
+
+.c5.focus-within {
+  border-color: #0046FF;
+}
+
+.c9 {
+  width: 100%;
+}
+
+.c7 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c7:active {
+  color: inherit;
+}
+
+.c13 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+}
+
+.c11 {
+  width: calc(100% - 20px - 4px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <div
+          className="c1"
+        >
+          <label
+            className="c3"
+            hidden={false}
+            htmlFor="no-scroll-select"
+          >
+            <span
+              className="c4"
+            >
+              User account 
+            </span>
+          </label>
+        </div>
+        <div
+          className="c5"
+          disabled={false}
+          label="User account"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="c6"
+          >
+            <button
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="User account: Select account"
+              className="c7 c8"
+              data-testid="input-select-button"
+              disabled={false}
+              form=""
+              id="no-scroll-select"
+              onClick={[Function]}
+              tabIndex={0}
+              type="button"
+            >
+              <div
+                aria-hidden="true"
+                className="c9 c10"
+              >
+                <div
+                  className="c11 c12"
+                >
+                  <span
+                    className="c13"
+                  >
+                    Select account
+                  </span>
+                </div>
+              </div>
+            </button>
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c14 c15"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            size={5}
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </div>
+        
+      </div>
+    </div>
+  </div>,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+  <br />,
+]
+`;
+
 exports[`Storyshots Molecules | Input / Select Full Width 1`] = `
 Array [
   .c0 {

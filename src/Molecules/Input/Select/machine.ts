@@ -161,8 +161,8 @@ export const SelectMachine = Machine<Context>(
                 actions: 'sendSelectOrDeselectVisibleFocusedOption',
               },
               [ACTION_TYPES.DESELECT_ITEM]: {
-                target: '.unknown',
-                actions: 'deselectOption',
+                target: '.changeUncommitted',
+                actions: 'updateUncommittedItems',
                 cond: ctx => !!ctx.multiselect,
               },
             },
@@ -219,8 +219,8 @@ export const SelectMachine = Machine<Context>(
                 actions: 'sendSelectOrDeselectVisibleFocusedOption',
               },
               [ACTION_TYPES.DESELECT_ITEM]: {
-                target: '.unknown',
-                actions: 'deselectOption',
+                target: '.changeUncommitted',
+                actions: 'updateUncommittedItems',
                 cond: ctx => !!ctx.multiselect,
               },
             },
@@ -559,16 +559,29 @@ export const SelectMachine = Machine<Context>(
       updateUncommittedItems: assign<Context>({
         uncommitedSelectedItems: (ctx, e) => {
           if (ctx.multiselect) {
-            const activeOptions = ctx.options.filter(x => !x.disabled);
-            if (e.payload[SYMBOL_ALL]) {
-              return activeOptions;
+            if (e.type === ACTION_TYPES.SELECT_ITEM) {
+              const activeOptions = ctx.options.filter(x => !x.disabled);
+              if (e.payload[SYMBOL_ALL]) {
+                return activeOptions;
+              }
+              let newSelectedItems = ctx.selectedItems.concat(e.payload);
+              const selectAllOption = ctx.options.find(x => x[SYMBOL_ALL]);
+              if (selectAllOption && newSelectedItems.length === activeOptions.length - 1) {
+                newSelectedItems = newSelectedItems.concat(selectAllOption);
+              }
+              return newSelectedItems;
+              // eslint-disable-next-line no-else-return
+            } else if (e.type === ACTION_TYPES.DESELECT_ITEM) {
+              if (e.payload[SYMBOL_ALL]) {
+                return [];
+              }
+              let predicate = (x: OptionLike) => !isEqualOptions(x, e.payload);
+              if (ctx.options.some(x => x[SYMBOL_ALL])) {
+                // @ts-ignore
+                predicate = (x: OptionLike) => !x[SYMBOL_ALL] && !isEqualOptions(x, e.payload);
+              }
+              return ctx.selectedItems.filter(predicate);
             }
-            let newSelectedItems = ctx.selectedItems.concat(e.payload);
-            const selectAllOption = ctx.options.find(x => x[SYMBOL_ALL]);
-            if (selectAllOption && newSelectedItems.length === activeOptions.length - 1) {
-              newSelectedItems = newSelectedItems.concat(selectAllOption);
-            }
-            return newSelectedItems;
           }
           return [e.payload];
         },

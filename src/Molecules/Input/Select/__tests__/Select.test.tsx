@@ -95,6 +95,7 @@ test('Multi select with actions (also disabled actions)', async () => {
     { label: 'second action', onSelect: jest.fn() },
     { label: 'disabled action', onSelect: jest.fn(), disabled: true },
   ];
+  const handleChange = jest.fn();
   const options = new Array(3)
     .fill(null)
     .map((_, i) => ({ label: `${testMessage}${i}`, value: i }));
@@ -107,6 +108,7 @@ test('Multi select with actions (also disabled actions)', async () => {
         multiselect
         label="Label"
         placeholder="Placeholder"
+        onChange={handleChange}
         components={{
           SelectedValue: (_, ref) => {
             const [state] = useSelectMachineFromContext();
@@ -145,6 +147,16 @@ test('Multi select with actions (also disabled actions)', async () => {
   await waitForDomChange({ container: list });
 
   expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-1`);
+
+  const option0 = queryElementByText(list, options[0].label);
+
+  fireEvent.click(option0);
+
+  expect(handleChange).toBeCalledWith([options[0]]);
+
+  fireEvent.click(option0);
+
+  expect(handleChange).toBeCalledWith([]);
 
   // After another double ArrowDown we should be on the 3rd ACTION
   // Which is disabled

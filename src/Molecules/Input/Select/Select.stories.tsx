@@ -1128,6 +1128,56 @@ export const onSearchQueryChange = () => (
     placeholder="Select account"
   />
 );
+export const focusWithoutScrolling = () => (
+  <>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <Input.Select
+      id="no-scroll-select"
+      options={accountOptions}
+      label="User account"
+      placeholder="Select account"
+    />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </>
+);
 export default {
   title: 'Molecules | Input / Select',
   parameters: {

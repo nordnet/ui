@@ -1,3 +1,18 @@
+## [2.0.2](https://github.com/nordnet/ui/compare/v2.0.1...v2.0.2) (2019-11-13)
+
+
+### Bug Fixes
+
+* let content be as wide as possible ([dbb3d86](https://github.com/nordnet/ui/commit/dbb3d86))
+
+## [2.0.1](https://github.com/nordnet/ui/compare/v2.0.0...v2.0.1) (2019-11-13)
+
+
+### Bug Fixes
+
+* deselect in multiselect onChange ([40efc03](https://github.com/nordnet/ui/commit/40efc03))
+* **select:** ie11 scroll-into-view ([c71af94](https://github.com/nordnet/ui/commit/c71af94))
+
 # [2.0.0](https://github.com/nordnet/ui/compare/v1.70.0...v2.0.0) (2019-11-12)
 
 
