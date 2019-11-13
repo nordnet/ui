@@ -292,6 +292,13 @@ exports[`Storyshots Molecules | CardWithTitle Integration Faded Scroll With Heig
   flex-basis: auto;
 }
 
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 .c7 {
   position: relative;
 }

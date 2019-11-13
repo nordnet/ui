@@ -2,7 +2,7 @@ import { css } from 'styled-components';
 import { InternalProps, Props } from './FadedScroll.types';
 import { getValueFromNumberOrString } from '../../common/utils';
 
-export const flexAutoHeightStyles = css`
+const flexAutoHeightStyles = css`
   min-height: 0; /* Firefox */
   flex-grow: 1;
   flex-shrink: 1;
@@ -77,4 +77,23 @@ export const intersectionStyles = css`
   position: absolute;
   right: 0;
   pointer-events: none;
+`;
+
+// prettier-ignore
+export const containerStyles = css<Props>`
+  ${p => !p.maxHeight && `
+    display: flex;
+    height: 100%;
+    
+    ${flexAutoHeightStyles}
+  `}
+`;
+
+// prettier-ignore
+export const scrollerStyles = css<Props>`
+  ${p => !p.maxHeight && `
+    flex-grow: 1;
+  `}
+  
+  ${p => (p.enableMobileFade ? scrollStyles : scrollDesktopStyles)}
 `;

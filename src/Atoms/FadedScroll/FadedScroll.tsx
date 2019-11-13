@@ -3,24 +3,23 @@ import styled from 'styled-components';
 import { useOnScreen } from '../../common/Hooks';
 import { Component, InternalProps, Props } from './FadedScroll.types';
 import {
+  containerStyles,
   fadeBottomStyles,
   fadeBottomDesktopStyles,
   fadeTopStyles,
   fadeTopDesktopStyles,
-  flexAutoHeightStyles,
   intersectionStyles,
-  scrollStyles,
-  scrollDesktopStyles,
+  scrollerStyles,
 } from './FadedScroll.styles';
 
 const Container = styled.div<InternalProps & Props>`
-  ${p => !p.maxHeight && `display: flex; height: 100%; ${flexAutoHeightStyles}`}
+  ${containerStyles}
   ${p => !p.disableTopFade && (p.enableMobileFade ? fadeTopStyles : fadeTopDesktopStyles)}
   ${p => (p.enableMobileFade ? fadeBottomStyles : fadeBottomDesktopStyles)}
 `;
 
 const Scroller = styled.div<Props>`
-  ${p => (p.enableMobileFade ? scrollStyles : scrollDesktopStyles)}
+  ${scrollerStyles}
 `;
 
 const Content = styled.div`
