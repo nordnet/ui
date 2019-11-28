@@ -1,0 +1,1357 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | Drawer Default Story 1`] = `
+.c3 {
+  margin-bottom: 8px;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c14 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: none;
+  margin-left: 16px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.c14,
+.c14[type='button'],
+.c14[type='reset'],
+.c14[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c14::-moz-focus-inner,
+.c14[type='button']::-moz-focus-inner,
+.c14[type='reset']::-moz-focus-inner,
+.c14[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c14:-moz-focusring,
+.c14[type='button']:-moz-focusring,
+.c14[type='reset']:-moz-focusring,
+.c14[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c13 {
+  margin-left: auto;
+}
+
+.c15 {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.c1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: none;
+  margin-left: 16px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  margin-left: auto;
+}
+
+.c10 {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@media not all and (max-width:759px) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media not all and (min-width:760px) {
+  .c12 {
+    display: none;
+  }
+}
+
+@media (min-width:760px) {
+  .c6 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+  .c1 {
+    background-color: rgba(110,110,105,0.63);
+  }
+}
+
+@media (min-width:760px) {
+  .c10 {
+    max-height: 50vh;
+  }
+}
+
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Open modal
+  </button>
+  <div
+    className="c0"
+  >
+    <portal-dummy>
+      <div
+        data-focus-guard={true}
+        style={
+          Object {
+            "height": "0px",
+            "left": "1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "fixed",
+            "top": "1px",
+            "width": "1px",
+          }
+        }
+        tabIndex={0}
+      />
+      <div
+        data-focus-guard={true}
+        style={
+          Object {
+            "height": "0px",
+            "left": "1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "fixed",
+            "top": "1px",
+            "width": "1px",
+          }
+        }
+        tabIndex={1}
+      />
+      <div
+        data-focus-lock-disabled={false}
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          onScrollCapture={[Function]}
+          onTouchMoveCapture={[Function]}
+          onWheelCapture={[Function]}
+        >
+          <div
+            className="c1 c2"
+          >
+            <div>
+              <div
+                className="c3"
+              >
+                <div
+                  className="c4"
+                >
+                  <div
+                    className="c5"
+                  >
+                    <h2
+                      className="c6"
+                      type="title2"
+                    >
+                      Dialog information
+                    </h2>
+                  </div>
+                  <div
+                    className="c7 c5"
+                  >
+                    <button
+                      className="c8"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="false"
+                        className="c9"
+                        focusable="false"
+                        preserveAspectRatio="xMidYMid meet"
+                        role="img"
+                        viewBox="0 0 24 24"
+                      >
+                        <polygon
+                          points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                        />
+                        <title>
+                          Close this dialog
+                        </title>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="c10"
+              >
+                <div
+                  className="c3"
+                >
+                  <p
+                    className="c11"
+                    type="primary"
+                  >
+                    Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                  </p>
+                </div>
+                <div
+                  className="c3"
+                >
+                  <p
+                    className="c11"
+                    type="primary"
+                  >
+                    That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+                  </p>
+                </div>
+                <div
+                  className="c3"
+                >
+                  <p
+                    className="c11"
+                    type="primary"
+                  >
+                    Nielsen/Norman has an excellent article about their usage here
+                  </p>
+                </div>
+                <p
+                  className="c11"
+                  type="primary"
+                >
+                  <a
+                    href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+                  >
+                    https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-focus-guard={true}
+        style={
+          Object {
+            "height": "0px",
+            "left": "1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "fixed",
+            "top": "1px",
+            "width": "1px",
+          }
+        }
+        tabIndex={0}
+      />
+    </portal-dummy>
+  </div>
+  <div
+    className="c12"
+  >
+    <div>
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <h2
+              className="c6"
+              type="title2"
+            >
+              Dialog information
+            </h2>
+          </div>
+          <div
+            className="c13 c5"
+          >
+            <button
+              className="c14"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c9"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                />
+                <title>
+                  Close this drawer
+                </title>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c15"
+      >
+        <div
+          className="c3"
+        >
+          <p
+            className="c11"
+            type="primary"
+          >
+            Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+          </p>
+        </div>
+        <div
+          className="c3"
+        >
+          <p
+            className="c11"
+            type="primary"
+          >
+            That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+          </p>
+        </div>
+        <div
+          className="c3"
+        >
+          <p
+            className="c11"
+            type="primary"
+          >
+            Nielsen/Norman has an excellent article about their usage here
+          </p>
+        </div>
+        <p
+          className="c11"
+          type="primary"
+        >
+          <a
+            href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+          >
+            https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Drawer Uncontrolled Behavior 1`] = `
+.c3 {
+  margin-bottom: 8px;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c14 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: none;
+  margin-left: 16px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.c14,
+.c14[type='button'],
+.c14[type='reset'],
+.c14[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c14::-moz-focus-inner,
+.c14[type='button']::-moz-focus-inner,
+.c14[type='reset']::-moz-focus-inner,
+.c14[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c14:-moz-focusring,
+.c14[type='button']:-moz-focusring,
+.c14[type='reset']:-moz-focusring,
+.c14[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c13 {
+  margin-left: auto;
+}
+
+.c15 {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.c1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: none;
+  margin-left: 16px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  margin-left: auto;
+}
+
+.c10 {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@media not all and (max-width:759px) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media not all and (min-width:760px) {
+  .c12 {
+    display: none;
+  }
+}
+
+@media (min-width:760px) {
+  .c6 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+  .c1 {
+    background-color: rgba(110,110,105,0.63);
+  }
+}
+
+@media (min-width:760px) {
+  .c10 {
+    max-height: 50vh;
+  }
+}
+
+<div>
+  <div
+    className="c0"
+  >
+    <portal-dummy>
+      <div
+        data-focus-guard={true}
+        style={
+          Object {
+            "height": "0px",
+            "left": "1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "fixed",
+            "top": "1px",
+            "width": "1px",
+          }
+        }
+        tabIndex={0}
+      />
+      <div
+        data-focus-guard={true}
+        style={
+          Object {
+            "height": "0px",
+            "left": "1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "fixed",
+            "top": "1px",
+            "width": "1px",
+          }
+        }
+        tabIndex={1}
+      />
+      <div
+        data-focus-lock-disabled={false}
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          onScrollCapture={[Function]}
+          onTouchMoveCapture={[Function]}
+          onWheelCapture={[Function]}
+        >
+          <div
+            className="c1 c2"
+          >
+            <div>
+              <div
+                className="c3"
+              >
+                <div
+                  className="c4"
+                >
+                  <div
+                    className="c5"
+                  >
+                    <h2
+                      className="c6"
+                      type="title2"
+                    >
+                      Dialog information
+                    </h2>
+                  </div>
+                  <div
+                    className="c7 c5"
+                  >
+                    <button
+                      className="c8"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="false"
+                        className="c9"
+                        focusable="false"
+                        preserveAspectRatio="xMidYMid meet"
+                        role="img"
+                        viewBox="0 0 24 24"
+                      >
+                        <polygon
+                          points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                        />
+                        <title>
+                          Close this dialog
+                        </title>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="c10"
+              >
+                <div
+                  className="c3"
+                >
+                  <p
+                    className="c11"
+                    type="primary"
+                  >
+                    Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                  </p>
+                </div>
+                <div
+                  className="c3"
+                >
+                  <p
+                    className="c11"
+                    type="primary"
+                  >
+                    That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+                  </p>
+                </div>
+                <div
+                  className="c3"
+                >
+                  <p
+                    className="c11"
+                    type="primary"
+                  >
+                    Nielsen/Norman has an excellent article about their usage here
+                  </p>
+                </div>
+                <p
+                  className="c11"
+                  type="primary"
+                >
+                  <a
+                    href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+                  >
+                    https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-focus-guard={true}
+        style={
+          Object {
+            "height": "0px",
+            "left": "1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "fixed",
+            "top": "1px",
+            "width": "1px",
+          }
+        }
+        tabIndex={0}
+      />
+    </portal-dummy>
+  </div>
+  <div
+    className="c12"
+  >
+    <div>
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <h2
+              className="c6"
+              type="title2"
+            >
+              Dialog information
+            </h2>
+          </div>
+          <div
+            className="c13 c5"
+          >
+            <button
+              className="c14"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c9"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                />
+                <title>
+                  Close this drawer
+                </title>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c15"
+      >
+        <div
+          className="c3"
+        >
+          <p
+            className="c11"
+            type="primary"
+          >
+            Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+          </p>
+        </div>
+        <div
+          className="c3"
+        >
+          <p
+            className="c11"
+            type="primary"
+          >
+            That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+          </p>
+        </div>
+        <div
+          className="c3"
+        >
+          <p
+            className="c11"
+            type="primary"
+          >
+            Nielsen/Norman has an excellent article about their usage here
+          </p>
+        </div>
+        <p
+          className="c11"
+          type="primary"
+        >
+          <a
+            href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+          >
+            https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Drawer Without Header 1`] = `
+.c3 {
+  margin-bottom: 8px;
+}
+
+.c6 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.c8 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c13 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: none;
+  margin-left: 16px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.c13,
+.c13[type='button'],
+.c13[type='reset'],
+.c13[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c13::-moz-focus-inner,
+.c13[type='button']::-moz-focus-inner,
+.c13[type='reset']::-moz-focus-inner,
+.c13[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c13:-moz-focusring,
+.c13[type='button']:-moz-focusring,
+.c13[type='reset']:-moz-focusring,
+.c13[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c12 {
+  margin-left: auto;
+}
+
+.c14 {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.c1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: none;
+  margin-left: 16px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5 {
+  margin-left: auto;
+}
+
+.c9 {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@media not all and (max-width:759px) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media not all and (min-width:760px) {
+  .c11 {
+    display: none;
+  }
+}
+
+@media (min-width:760px) {
+  .c1 {
+    background-color: rgba(110,110,105,0.63);
+  }
+}
+
+@media (min-width:760px) {
+  .c9 {
+    max-height: 50vh;
+  }
+}
+
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Open modal
+  </button>
+  <div
+    className="c0"
+  >
+    <portal-dummy>
+      <div
+        data-focus-guard={true}
+        style={
+          Object {
+            "height": "0px",
+            "left": "1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "fixed",
+            "top": "1px",
+            "width": "1px",
+          }
+        }
+        tabIndex={0}
+      />
+      <div
+        data-focus-guard={true}
+        style={
+          Object {
+            "height": "0px",
+            "left": "1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "fixed",
+            "top": "1px",
+            "width": "1px",
+          }
+        }
+        tabIndex={1}
+      />
+      <div
+        data-focus-lock-disabled={false}
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          onScrollCapture={[Function]}
+          onTouchMoveCapture={[Function]}
+          onWheelCapture={[Function]}
+        >
+          <div
+            className="c1 c2"
+          >
+            <div>
+              <div
+                className="c3"
+              >
+                <div
+                  className="c4"
+                >
+                  <div
+                    className="c5 c6"
+                  >
+                    <button
+                      className="c7"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="false"
+                        className="c8"
+                        focusable="false"
+                        preserveAspectRatio="xMidYMid meet"
+                        role="img"
+                        viewBox="0 0 24 24"
+                      >
+                        <polygon
+                          points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                        />
+                        <title>
+                          Close this dialog
+                        </title>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="c9"
+              >
+                <div
+                  className="c3"
+                >
+                  <p
+                    className="c10"
+                    type="primary"
+                  >
+                    Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                  </p>
+                </div>
+                <div
+                  className="c3"
+                >
+                  <p
+                    className="c10"
+                    type="primary"
+                  >
+                    That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+                  </p>
+                </div>
+                <div
+                  className="c3"
+                >
+                  <p
+                    className="c10"
+                    type="primary"
+                  >
+                    Nielsen/Norman has an excellent article about their usage here
+                  </p>
+                </div>
+                <p
+                  className="c10"
+                  type="primary"
+                >
+                  <a
+                    href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+                  >
+                    https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-focus-guard={true}
+        style={
+          Object {
+            "height": "0px",
+            "left": "1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "fixed",
+            "top": "1px",
+            "width": "1px",
+          }
+        }
+        tabIndex={0}
+      />
+    </portal-dummy>
+  </div>
+  <div
+    className="c11"
+  >
+    <div>
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <div
+            className="c12 c6"
+          >
+            <button
+              className="c13"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c8"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                />
+                <title>
+                  Close this drawer
+                </title>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c14"
+      >
+        <div
+          className="c3"
+        >
+          <p
+            className="c10"
+            type="primary"
+          >
+            Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+          </p>
+        </div>
+        <div
+          className="c3"
+        >
+          <p
+            className="c10"
+            type="primary"
+          >
+            That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+          </p>
+        </div>
+        <div
+          className="c3"
+        >
+          <p
+            className="c10"
+            type="primary"
+          >
+            Nielsen/Norman has an excellent article about their usage here
+          </p>
+        </div>
+        <p
+          className="c10"
+          type="primary"
+        >
+          <a
+            href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+          >
+            https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

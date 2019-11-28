@@ -27,6 +27,7 @@ import Avatar from './Molecules/Avatar';
 import Button from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
 import CollapsibleCard from './Molecules/CollapsibleCard';
+import Drawer from './Molecules/Drawer';
 import FeedbackBanner from './Molecules/FeedbackBanner';
 import Fieldset from './Molecules/Fieldset';
 import FormField from './Molecules/FormField';
@@ -67,6 +68,7 @@ export {
   createTheme,
   CssGrid,
   DateTime,
+  Drawer,
   DropdownBubble,
   Development,
   FadedScroll,
