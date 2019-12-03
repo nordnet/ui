@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 import { HashRouter } from 'react-router-dom';
 import MD from 'react-markdown';
@@ -154,76 +154,175 @@ buttonSecondaryWithColors.story = {
   name: 'Button secondary with colors',
 };
 
-export const buttonPrimaryWithSizeModified = () => (
-  <Display
-    horizontal
-    items={[
-      {
-        title: 'Small',
-        component: (
-          <Button size="s" onClick={action('clickSmall')}>
-            Small
-          </Button>
-        ),
-      },
-      {
-        title: 'Medium',
-        component: (
-          <Button size="m" onClick={action('clickMedium')}>
-            Medium
-          </Button>
-        ),
-      },
-      {
-        title: 'Large',
-        component: (
-          <Button size="l" onClick={action('clickLarge')}>
-            Large
-          </Button>
-        ),
-      },
-    ]}
-  />
+export const buttonWithSizeModified = () => (
+  <>
+    <Display
+      title="Primary"
+      horizontal
+      items={[
+        {
+          title: 'Medium',
+          component: (
+            <Button size="m" onClick={action('clickMedium')}>
+              Medium
+            </Button>
+          ),
+        },
+        {
+          title: 'Large',
+          component: (
+            <Button size="l" onClick={action('clickLarge')}>
+              Large
+            </Button>
+          ),
+        },
+      ]}
+    />
+    <Display
+      title="Secondary"
+      horizontal
+      items={[
+        {
+          title: 'Medium',
+          component: (
+            <Button size="m" variant="secondary" onClick={action('clickMedium')}>
+              Medium
+            </Button>
+          ),
+        },
+        {
+          title: 'Large',
+          component: (
+            <Button size="l" variant="secondary" onClick={action('clickLarge')}>
+              Large
+            </Button>
+          ),
+        },
+      ]}
+    />
+  </>
 );
 
-buttonPrimaryWithSizeModified.story = {
-  name: 'Button primary with size modified',
+buttonWithSizeModified.story = {
+  name: 'Button with size modified',
 };
 
-export const buttonSecondaryWithSizeModified = () => (
-  <Display
-    horizontal
-    items={[
-      {
-        title: 'Small',
-        component: (
-          <Button size="s" variant="secondary" onClick={action('clickSmall')}>
-            Small
-          </Button>
-        ),
-      },
-      {
-        title: 'Medium',
-        component: (
-          <Button size="m" variant="secondary" onClick={action('clickMedium')}>
-            Medium
-          </Button>
-        ),
-      },
-      {
-        title: 'Large',
-        component: (
-          <Button size="l" variant="secondary" onClick={action('clickLarge')}>
-            Large
-          </Button>
-        ),
-      },
-    ]}
-  />
-);
+export const buttonWithLoadingState = () => {
+  const LoadingExample = () => {
+    const [loading, setLoading] = useState(true);
+    const toggleLoading = () => setLoading(!loading);
 
-buttonSecondaryWithSizeModified.story = {
-  name: 'Button secondary with size modified',
+    return (
+      <>
+        <Display
+          title="Primary"
+          horizontal
+          items={[
+            {
+              title: 'Medium',
+              component: (
+                <Button size="m" loading={loading}>
+                  Medium
+                </Button>
+              ),
+            },
+            {
+              title: 'Large',
+              component: (
+                <Button size="l" loading={loading}>
+                  Large
+                </Button>
+              ),
+            },
+          ]}
+        />
+        <Display
+          title="Primary with custom color"
+          horizontal
+          items={[
+            {
+              title: 'Medium',
+              component: (
+                <Button size="m" color={t => t.color.negative} loading={loading}>
+                  Medium
+                </Button>
+              ),
+            },
+            {
+              title: 'Large',
+              component: (
+                <Button size="l" color={t => t.color.negative} loading={loading}>
+                  Large
+                </Button>
+              ),
+            },
+          ]}
+        />
+        <Display
+          title="Secondary"
+          horizontal
+          items={[
+            {
+              title: 'Medium',
+              component: (
+                <Button size="m" variant="secondary" loading={loading}>
+                  Medium
+                </Button>
+              ),
+            },
+            {
+              title: 'Large',
+              component: (
+                <Button size="l" variant="secondary" loading={loading}>
+                  Large
+                </Button>
+              ),
+            },
+          ]}
+        />
+        <Display
+          title="Secondary with custom color"
+          horizontal
+          items={[
+            {
+              title: 'Medium',
+              component: (
+                <Button
+                  size="m"
+                  variant="secondary"
+                  color={t => t.color.negative}
+                  loading={loading}
+                >
+                  Medium
+                </Button>
+              ),
+            },
+            {
+              title: 'Large',
+              component: (
+                <Button
+                  size="l"
+                  variant="secondary"
+                  color={t => t.color.negative}
+                  loading={loading}
+                >
+                  Large
+                </Button>
+              ),
+            },
+          ]}
+        />
+        <button type="button" onClick={toggleLoading}>
+          toggle loading
+        </button>
+      </>
+    );
+  };
+  return <LoadingExample />;
+};
+
+buttonWithLoadingState.story = {
+  name: 'Button with loading state',
 };
 
 export const buttonWithTypeModified = () => (
@@ -352,6 +451,10 @@ export const linkLookingLikeAButtonWithRelAsNofollow = () => (
   </HashRouter>
 );
 
+linkLookingLikeAButtonWithRelAsNofollow.story = {
+  name: 'Link looking like a button with rel as nofollow',
+};
+
 export const externalLinkLookingLikeAButton = () => (
   <HashRouter>
     <Button to="//www.google.com" external rel="nofollow" onClick={action('clicked')} fullWidth>
@@ -360,8 +463,8 @@ export const externalLinkLookingLikeAButton = () => (
   </HashRouter>
 );
 
-linkLookingLikeAButtonWithRelAsNofollow.story = {
-  name: 'Link looking like a button with rel as nofollow',
+externalLinkLookingLikeAButton.story = {
+  name: 'External link looking like a button',
 };
 
 export const disabledLinkLookingLikeAButton = () => (

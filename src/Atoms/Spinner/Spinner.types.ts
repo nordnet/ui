@@ -4,6 +4,7 @@ type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; /
 type ColorFn = (t: Theme) => Values<Theme['color']>;
 
 export type Props = {
+  /** @default 4 units */
   size?: number;
   color?: ColorFn;
   /** Globally unique id for the spinner */

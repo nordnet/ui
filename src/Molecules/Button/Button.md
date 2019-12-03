@@ -18,7 +18,6 @@ If the `to` prop is specified then the output will always be a link and all the 
 - `fullWidth` - a boolean value, default it's `false`.
 - `color` - function, selector from the theme, e.g. `t => t.color.cta`. Currently only cta and negative are available.
 
-
 ### Button Props
 
 - `disabled` - a boolean value.
@@ -43,7 +42,7 @@ Basic usage
 
 ### With disabled prop
 
-If you want to disable your button
+Disable your button just by passing the prop disabled. When the disabled prop is present, the `<Button>` will no longer be able to become a link. Because a html link can't really be disabled.
 
 ```javascript
 <Button type="submit" onClick={action('clicked')} disabled>
@@ -63,7 +62,7 @@ Variant, Size and fullWidth all changes the looks of the button. These props can
 
 ### With to prop
 
-If you want to navigate the user somewhere.
+Turn your `<Button>` into a link by passing the `to` prop. When doing this the `type` prop will be omitted because this is a html `<button>` specific prop.
 
 ```javascript
 <Button to="www.nordnet.se">To Nordnet</Button>

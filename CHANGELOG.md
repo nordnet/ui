@@ -1,3 +1,58 @@
+## [2.7.2](https://github.com/nordnet/ui/compare/v2.7.1...v2.7.2) (2019-12-02)
+
+
+### Bug Fixes
+
+* get new version ([8019271](https://github.com/nordnet/ui/commit/8019271))
+
+## [2.7.1](https://github.com/nordnet/ui/compare/v2.7.0...v2.7.1) (2019-12-02)
+
+
+### Bug Fixes
+
+* deprecate small size ([60ce3ed](https://github.com/nordnet/ui/commit/60ce3ed))
+* merge master ([03f35dd](https://github.com/nordnet/ui/commit/03f35dd))
+
+# [2.7.0](https://github.com/nordnet/ui/compare/v2.6.1...v2.7.0) (2019-12-02)
+
+
+### Bug Fixes
+
+* clean up loading prop ([138d36f](https://github.com/nordnet/ui/commit/138d36f))
+* make bold ([eb7883e](https://github.com/nordnet/ui/commit/eb7883e))
+* merge master ([4af55d1](https://github.com/nordnet/ui/commit/4af55d1))
+* merge master ([0cb0e3d](https://github.com/nordnet/ui/commit/0cb0e3d))
+
+
+### Features
+
+* add color to loading state spinners ([741b885](https://github.com/nordnet/ui/commit/741b885))
+
+## [2.6.1](https://github.com/nordnet/ui/compare/v2.6.0...v2.6.1) (2019-12-02)
+
+
+### Bug Fixes
+
+* add disabled state to neutral ([3883a5d](https://github.com/nordnet/ui/commit/3883a5d))
+* compiling error ([19f763e](https://github.com/nordnet/ui/commit/19f763e))
+* deprecate small size ([1cc97ca](https://github.com/nordnet/ui/commit/1cc97ca))
+* make bold ([fdea6e1](https://github.com/nordnet/ui/commit/fdea6e1))
+* merge master ([7f0400b](https://github.com/nordnet/ui/commit/7f0400b))
+* only warn when small is not used with neutral ([e93bc86](https://github.com/nordnet/ui/commit/e93bc86))
+* remove small size ([f95746d](https://github.com/nordnet/ui/commit/f95746d))
+* revert deprecation of small size for later pr ([3e2b6c3](https://github.com/nordnet/ui/commit/3e2b6c3))
+* sync button styles with design ([d32f2aa](https://github.com/nordnet/ui/commit/d32f2aa))
+* update padding function ([fc9ed87](https://github.com/nordnet/ui/commit/fc9ed87))
+* update snaps ([6d8649e](https://github.com/nordnet/ui/commit/6d8649e))
+* use innerprops ([29a530a](https://github.com/nordnet/ui/commit/29a530a))
+
+# [2.6.0](https://github.com/nordnet/ui/compare/v2.5.1...v2.6.0) (2019-12-02)
+
+
+### Features
+
+* added left/right chevron and calendar icons ([2d90602](https://github.com/nordnet/ui/commit/2d90602))
+
 ## [2.5.1](https://github.com/nordnet/ui/compare/v2.5.0...v2.5.1) (2019-11-26)
 
 

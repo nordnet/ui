@@ -19,8 +19,8 @@ const StyledSvg = styled.svg`
   display: block;
 `;
 
-const RawSpinner: React.FC<PropsWithTheme> = ({ theme, size, color, id }) => {
-  const calculatedSize = theme.spacing.unit(size || 4);
+const RawSpinner: React.FC<PropsWithTheme> = ({ theme, size = 4, color, id }) => {
+  const calculatedSize = theme.spacing.unit(size);
   const usedColor = typeof color === 'function' ? color(theme) : color || theme.color.cta;
   const id1 = `spinner-${id}-1`;
   const id2 = `spinner-${id}-2`;

@@ -7,7 +7,10 @@ type ColorFn = (t: Theme) => Colors['cta'] | Colors['negative'];
 export type ButtonProps = {
   /** @default primary */
   variant?: 'primary' | 'secondary' | 'neutral';
-  /** @default m */
+  /**
+   * @default m
+   * @deprecated s
+   */
   size?: 's' | 'm' | 'l';
   /** @default false */
   fullWidth?: boolean;
@@ -24,6 +27,12 @@ export type ButtonProps = {
   colorFn?: ColorFn;
   id?: string;
   as?: any;
+  loading?: boolean;
 };
+
+type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;
+type ForceRequired<T, K extends keyof T> = Omit<T, K> & Required<Pick<T, K>>;
+
+export type InnerProps = ForceRequired<ButtonProps, 'size'>;
 
 export type ButtonComponent = React.FC<ButtonProps>;

@@ -216,7 +216,7 @@ exports[`Storyshots Molecules | PageHeader Page Header With Children 1`] = `
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -228,10 +228,6 @@ exports[`Storyshots Molecules | PageHeader Page Header With Children 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  background-color: #0046FF;
-  padding: 4px 12px;
-  min-height: 32px;
-  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -246,6 +242,10 @@ exports[`Storyshots Molecules | PageHeader Page Header With Children 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -273,23 +273,23 @@ exports[`Storyshots Molecules | PageHeader Page Header With Children 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c11::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
 .c11:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
 .c11:active {
   background-color: hsl(223.5,100%,40%);
-}
-
-.c11::before {
-  content: '';
-  display: block;
-  border: 2px solid transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
 }
 
 .c1 {
@@ -443,10 +443,12 @@ exports[`Storyshots Molecules | PageHeader Page Header With Children 1`] = `
                     onClick={[Function]}
                     type="button"
                   >
-                    <span
-                      className="c12"
-                    >
-                      Click here to recruit carl
+                    <span>
+                      <span
+                        className="c12"
+                      >
+                        Click here to recruit carl
+                      </span>
                     </span>
                   </button>
                 </div>
