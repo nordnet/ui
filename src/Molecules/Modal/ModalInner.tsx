@@ -14,7 +14,7 @@ const Backdrop = styled(Flexbox)`
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 2;
+  z-index: ${({ theme }) => theme.zIndex.modal};
 
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
     background-color: ${({ theme }) => theme.color.modalBackdrop};
@@ -39,17 +39,13 @@ export const Dialog = styled(motion.div)<DialogProps>`
   }
 `;
 
-const Button = styled(NormalizedElements.Button)`
+const CloseButton = styled(NormalizedElements.Button)`
   display: flex;
   background: none;
-  margin-left: ${p => p.theme.spacing.unit(4)}px;
+  margin-left: auto;
   padding: 0;
   border: 0;
   cursor: pointer;
-`;
-
-const RightAlignedFlex = styled(Flexbox)`
-  margin-left: auto;
 `;
 
 export const Content = styled.div`
@@ -58,6 +54,10 @@ export const Content = styled.div`
   }
   overflow-y: auto;
   overflow-x: hidden;
+`;
+
+const H2 = styled.h2`
+  padding-right: ${p => p.theme.spacing.unit(4)}px;
 `;
 
 export const ModalInner: React.FC<InnerProps> = ({
@@ -112,18 +112,14 @@ export const ModalInner: React.FC<InnerProps> = ({
               <Box mb={2}>
                 <Flexbox container alignItems="baseline">
                   {title && (
-                    <Flexbox item>
-                      <Typography as="h2" type="title2">
-                        {title}
-                      </Typography>
-                    </Flexbox>
+                    <Typography as={H2} type="title2">
+                      {title}
+                    </Typography>
                   )}
                   {!hideClose && (
-                    <RightAlignedFlex item>
-                      <Button type="button" onClick={onClose}>
-                        <Icon.Cross size={5} title="Close this dialog" />
-                      </Button>
-                    </RightAlignedFlex>
+                    <CloseButton type="button" onClick={onClose}>
+                      <Icon.Cross size={5} title="Close this dialog" />
+                    </CloseButton>
                   )}
                 </Flexbox>
               </Box>
