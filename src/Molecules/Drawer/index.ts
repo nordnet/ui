@@ -1,3 +1,3 @@
-import { DrawerSwitch } from './DrawerSwitch';
+import { Drawer } from './Drawer';
 
-export default DrawerSwitch;
+export default Drawer;

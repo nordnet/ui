@@ -264,4 +264,11 @@ export type Theme = {
     duration: {};
     easing: {};
   };
+  zIndex: {
+    footer: 100;
+    header: 200;
+    dropdown: 300;
+    overlay: 400;
+    modal: 500;
+  };
 };

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Drawer, Typography, Box } from '../../index';
+import { Drawer, Typography } from '../../index';
 
 export default {
   title: 'Molecules | Drawer',
@@ -8,12 +8,51 @@ export default {
   },
 };
 
+const content = (
+  <div>
+    <Typography type="primary" as="p">
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
+      sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+    </Typography>
+    <Typography type="primary">
+      <ul>
+        <li>
+          Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a,
+          ultricies in, diam. Sed arcu. Cras consequat.
+        </li>
+        <li>
+          Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
+          eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+          facilisis luctus, metus.
+        </li>
+        <li>
+          Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate
+          sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.
+        </li>
+        <li>
+          Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut,
+          elementum vulputate, nunc.
+        </li>
+      </ul>
+    </Typography>
+    <Typography type="primary" as="p">
+      Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed,
+      commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros
+      ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+      facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue,
+      eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan
+      porttitor, facilisis luctus, metus
+    </Typography>
+  </div>
+);
+
 export const defaultStory = () => {
   const Example = () => {
     const [open, setOpen] = useState(true);
 
-    const onOpen = () => {
-      setOpen(true);
+    const toggle = () => {
+      setOpen(!open);
     };
 
     const onClose = () => {
@@ -22,35 +61,11 @@ export const defaultStory = () => {
 
     return (
       <div>
-        <button type="button" onClick={onOpen}>
-          Open modal
+        <button type="button" onClick={toggle}>
+          Toggle drawer
         </button>
-        {/* ScrollMaker is just used to show how the Modal locks scrolling when open */}
-        <Drawer onClose={onClose} title="Dialog information" open={open}>
-          <Box mb={2}>
-            <Typography type="primary" as="p">
-              Modals should be used with care as they are quite intrusive on the user experience and
-              demand immediate attention (while also blocking all other actions on the site). Always
-              consider if you can solve a problem in another way first before you choose to go with
-              the modal.
-            </Typography>
-          </Box>
-          <Box mb={2}>
-            <Typography type="primary" as="p">
-              That being said they are a good tool if you need to grab the users attention, either
-              to communicate something very important or make them take an action before proceeding.
-            </Typography>
-          </Box>
-          <Box mb={2}>
-            <Typography type="primary" as="p">
-              Nielsen/Norman has an excellent article about their usage here
-            </Typography>
-          </Box>
-          <Typography type="primary" as="p">
-            <a href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/">
-              https:// www.nngroup.com/articles/modal-nonmodal-dialog/
-            </a>
-          </Typography>
+        <Drawer onClose={onClose} title="Drawer title" open={open}>
+          {content}
         </Drawer>
       </div>
     );
@@ -60,99 +75,4 @@ export const defaultStory = () => {
 
 defaultStory.story = {
   name: 'Default',
-};
-
-export const withoutHeader = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(true);
-
-    const onOpen = () => {
-      setOpen(true);
-    };
-
-    const onClose = () => {
-      setOpen(false);
-    };
-
-    return (
-      <div>
-        <button type="button" onClick={onOpen}>
-          Open modal
-        </button>
-        {/* ScrollMaker is just used to show how the Modal locks scrolling when open */}
-        <Drawer onClose={onClose} open={open}>
-          <Box mb={2}>
-            <Typography type="primary" as="p">
-              Modals should be used with care as they are quite intrusive on the user experience and
-              demand immediate attention (while also blocking all other actions on the site). Always
-              consider if you can solve a problem in another way first before you choose to go with
-              the modal.
-            </Typography>
-          </Box>
-          <Box mb={2}>
-            <Typography type="primary" as="p">
-              That being said they are a good tool if you need to grab the users attention, either
-              to communicate something very important or make them take an action before proceeding.
-            </Typography>
-          </Box>
-          <Box mb={2}>
-            <Typography type="primary" as="p">
-              Nielsen/Norman has an excellent article about their usage here
-            </Typography>
-          </Box>
-          <Typography type="primary" as="p">
-            <a href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/">
-              https:// www.nngroup.com/articles/modal-nonmodal-dialog/
-            </a>
-          </Typography>
-        </Drawer>
-      </div>
-    );
-  };
-  return <Example />;
-};
-
-withoutHeader.story = {
-  name: 'Without header',
-};
-
-export const uncontrolledBehavior = () => {
-  const Example = () => {
-    return (
-      <div>
-        {/* ScrollMaker is just used to show how the Modal locks scrolling when open */}
-        <Drawer title="Dialog information">
-          <Box mb={2}>
-            <Typography type="primary" as="p">
-              Modals should be used with care as they are quite intrusive on the user experience and
-              demand immediate attention (while also blocking all other actions on the site). Always
-              consider if you can solve a problem in another way first before you choose to go with
-              the modal.
-            </Typography>
-          </Box>
-          <Box mb={2}>
-            <Typography type="primary" as="p">
-              That being said they are a good tool if you need to grab the users attention, either
-              to communicate something very important or make them take an action before proceeding.
-            </Typography>
-          </Box>
-          <Box mb={2}>
-            <Typography type="primary" as="p">
-              Nielsen/Norman has an excellent article about their usage here
-            </Typography>
-          </Box>
-          <Typography type="primary" as="p">
-            <a href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/">
-              https:// www.nngroup.com/articles/modal-nonmodal-dialog/
-            </a>
-          </Typography>
-        </Drawer>
-      </div>
-    );
-  };
-  return <Example />;
-};
-
-uncontrolledBehavior.story = {
-  name: 'Uncontrolled behavior',
 };
