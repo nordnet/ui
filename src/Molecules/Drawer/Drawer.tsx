@@ -29,7 +29,7 @@ const Container = styled(motion.div)`
   top: 0;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2px 2px 0 ${({ theme }) => theme.color.shadowModal};
+  box-shadow: 0 -10px 16px 0 ${({ theme }) => theme.color.shadowDrawer};
 
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
     width: ${({ theme }) => theme.spacing.unit(100)}px;

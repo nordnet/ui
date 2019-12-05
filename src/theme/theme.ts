@@ -166,6 +166,10 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
         .alpha(0.03)
         .rgb()
         .string(),
+      shadowDrawer: Color(rawColor.black)
+        .alpha(0.16)
+        .rgb()
+        .string(),
       shadowModal: Color(rawColor.black)
         .alpha(0.05)
         .rgb()
