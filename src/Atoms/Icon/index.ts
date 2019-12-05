@@ -13,6 +13,7 @@ import { ChevronLeft } from './components/ChevronLeft';
 import { ChevronRight } from './components/ChevronRight';
 import { ChevronUp } from './components/ChevronUp';
 import { Cross } from './components/Cross';
+import { CrossThin } from './components/CrossThin';
 import { CrossCircle } from './components/CrossCircle';
 import { DiagonalWithCircle } from './components/DiagonalWithCircle';
 import { DirectionDown } from './components/DirectionDown';
@@ -61,6 +62,7 @@ export default {
   ChevronRight,
   ChevronUp,
   Cross,
+  CrossThin,
   CrossCircle,
   DiagonalWithCircle,
   DirectionDown,
