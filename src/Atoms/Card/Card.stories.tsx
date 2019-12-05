@@ -54,3 +54,13 @@ export const cardRenderedWithDifferentHtmlTags = () => (
 cardRenderedWithDifferentHtmlTags.story = {
   name: 'Card rendered with different html tags',
 };
+
+export const cardWithBar = () => (
+  <Card barColor={t => t.color.shareville}>
+    <Content>A Card as a div containing content</Content>
+  </Card>
+);
+
+cardWithBar.story = {
+  name: 'Card with colored top bar',
+};
