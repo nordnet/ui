@@ -38,6 +38,10 @@ export const withModifiedStroke = () => (
         component: <Icon.Star size={10} stroke={t => t.color.positive} />,
       },
       {
+        title: 'CrossThin with stroke modified',
+        component: <Icon.CrossThin size={10} stroke={t => t.color.positive} />,
+      },
+      {
         title: 'Star24 with both stroke modified',
         component: <Icon.Star24 size={10} stroke={t => t.color.positive} />,
       },

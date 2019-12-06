@@ -31,7 +31,7 @@ const StyledButton = styled(NormalizedElements.Button)<InnerProps>`
 `;
 
 const CleanRouterLink = (props: InnerProps) => (
-  <RouterLink {...R.omit(['fullWidth', 'colorFn', 'color', 'variant'], props) as any} />
+  <RouterLink {...R.omit(['fullWidth', 'colorFn', 'color', 'variant', 'size'], props) as any} />
 );
 
 const StyledLink = styled(CleanRouterLink)<InnerProps>`

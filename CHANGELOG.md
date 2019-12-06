@@ -1,3 +1,25 @@
+# [2.8.0](https://github.com/nordnet/ui/compare/v2.7.4...v2.8.0) (2019-12-06)
+
+
+### Features
+
+* 🎸 add ThinCross icon ([0c1fb42](https://github.com/nordnet/ui/commit/0c1fb42))
+* add colored top bar ([824647f](https://github.com/nordnet/ui/commit/824647f))
+
+## [2.7.4](https://github.com/nordnet/ui/compare/v2.7.3...v2.7.4) (2019-12-04)
+
+
+### Bug Fixes
+
+* omit size from button link ([3be80c9](https://github.com/nordnet/ui/commit/3be80c9))
+
+## [2.7.3](https://github.com/nordnet/ui/compare/v2.7.2...v2.7.3) (2019-12-03)
+
+
+### Bug Fixes
+
+* add type to link that looks like button ([8d36c74](https://github.com/nordnet/ui/commit/8d36c74))
+
 ## [2.7.2](https://github.com/nordnet/ui/compare/v2.7.1...v2.7.2) (2019-12-02)
 
 

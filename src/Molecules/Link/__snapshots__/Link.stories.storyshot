@@ -248,6 +248,7 @@ exports[`Storyshots Molecules | Link With Disabled Prop Results In A Disabled Bu
     className="c1"
     disabled={true}
     onClick={[Function]}
+    type="button"
   >
     Link
   </button>
@@ -389,6 +390,7 @@ exports[`Storyshots Molecules | Link Without To Prop Results In A Button Looking
   <button
     className="c1"
     onClick={[Function]}
+    type="button"
   >
     Link
   </button>

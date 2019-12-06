@@ -5162,6 +5162,7 @@ Array [
             <div
               className="c7"
               onClick={[Function]}
+              type="button"
             >
               <div
                 className="c8"
@@ -5484,6 +5485,7 @@ Array [
             <div
               className="c7"
               onClick={[Function]}
+              type="button"
             >
               <div
                 className="c8"
@@ -5815,6 +5817,7 @@ Array [
             <div
               className="c7"
               onClick={[Function]}
+              type="button"
             >
               <div
                 className="c8"
@@ -6162,6 +6165,7 @@ exports[`Storyshots Molecules | Input / Select List Positioned To The Left 1`] =
             <div
               className="c9"
               onClick={[Function]}
+              type="button"
             >
               <div
                 className="c10"

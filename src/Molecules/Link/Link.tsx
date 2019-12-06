@@ -96,6 +96,7 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
         onClick={trackClick}
         disabled={disabled}
         as={as}
+        type="button"
       >
         {children}
       </StyledButton>

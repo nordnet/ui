@@ -4643,7 +4643,6 @@ exports[`Storyshots Molecules | Button Link Looking Like A Button 1`] = `
         className="c3"
         href="#/route1"
         onClick={[Function]}
-        size="m"
       >
         <span>
           <span
@@ -4669,7 +4668,6 @@ exports[`Storyshots Molecules | Button Link Looking Like A Button 1`] = `
         className="c5"
         href="#/route2"
         onClick={[Function]}
-        size="m"
       >
         <span>
           <span
@@ -4741,7 +4739,6 @@ exports[`Storyshots Molecules | Button Link Looking Like A Button That Is Full W
   className="c0"
   href="#/overview"
   onClick={[Function]}
-  size="m"
 >
   <span>
     <span
@@ -4811,7 +4808,6 @@ exports[`Storyshots Molecules | Button Link Looking Like A Button With Rel As No
   href="#/overview"
   onClick={[Function]}
   rel="nofollow"
-  size="m"
 >
   <span>
     <span
@@ -5022,7 +5018,6 @@ Array [
           className="c3"
           href="#/overview"
           onClick={[Function]}
-          size="m"
         >
           <span>
             <span
@@ -5048,7 +5043,6 @@ Array [
           className="c5"
           href="#/overview"
           onClick={[Function]}
-          size="m"
         >
           <span>
             <span
@@ -5281,7 +5275,6 @@ Array [
           className="c3"
           href="#/overview"
           onClick={[Function]}
-          size="m"
         >
           <span>
             <span
@@ -5307,7 +5300,6 @@ Array [
           className="c5"
           href="#/overview"
           onClick={[Function]}
-          size="m"
         >
           <span>
             <span
@@ -5470,7 +5462,6 @@ exports[`Storyshots Molecules | Button Links Looking Like Buttons Composed In A 
       className="c2"
       href="#/route1"
       onClick={[Function]}
-      size="m"
     >
       <span>
         <span
@@ -5488,7 +5479,6 @@ exports[`Storyshots Molecules | Button Links Looking Like Buttons Composed In A 
       className="c4"
       href="#/route2"
       onClick={[Function]}
-      size="m"
     >
       <span>
         <span
