@@ -110,7 +110,7 @@ export const Drawer: DrawerComponent & {
                   </Typography>
                 )}
                 <CloseButton type="button" variant="neutral" onClick={handleCloseClick}>
-                  <Icon.Cross size={5} title="Close this drawer" />
+                  <Icon.CrossThin size={5} title="Close this drawer" />
                 </CloseButton>
               </Flexbox>
             </Box>

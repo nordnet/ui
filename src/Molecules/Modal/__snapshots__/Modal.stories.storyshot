@@ -47,7 +47,11 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
   display: block;
 }
 
-.c10 {
+.c9 {
+  stroke: #6E6E69;
+}
+
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -114,7 +118,7 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c9 {
+.c10 {
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -146,7 +150,7 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
 }
 
 @media (min-width:760px) {
-  .c9 {
+  .c10 {
     max-height: 50vh;
   }
 }
@@ -231,8 +235,10 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
                     role="img"
                     viewBox="0 0 24 24"
                   >
-                    <polygon
-                      points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                    <path
+                      className="c9"
+                      d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                      strokeWidth={2}
                     />
                     <title>
                       Close this dialog
@@ -242,13 +248,13 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
               </div>
             </div>
             <div
-              className="c9"
+              className="c10"
             >
               <div
                 className="c3"
               >
                 <p
-                  className="c10"
+                  className="c11"
                   type="primary"
                 >
                   Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
@@ -258,7 +264,7 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
                 className="c3"
               >
                 <p
-                  className="c10"
+                  className="c11"
                   type="primary"
                 >
                   That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
@@ -268,14 +274,14 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
                 className="c3"
               >
                 <p
-                  className="c10"
+                  className="c11"
                   type="primary"
                 >
                   Nielsen/Norman has an excellent article about their usage here
                 </p>
               </div>
               <p
-                className="c10"
+                className="c11"
                 type="primary"
               >
                 <a
@@ -313,7 +319,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   margin-bottom: 8px;
 }
 
-.c11 {
+.c12 {
   margin: -1px;
   padding: 1px;
   padding-top: 16px;
@@ -361,7 +367,11 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   display: block;
 }
 
-.c10 {
+.c9 {
+  stroke: #6E6E69;
+}
+
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -379,7 +389,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   line-height: 1.2;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -388,7 +398,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c13 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -418,29 +428,29 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   cursor: pointer;
 }
 
-.c12,
-.c12[type='button'],
-.c12[type='reset'],
-.c12[type='submit'] {
+.c13,
+.c13[type='button'],
+.c13[type='reset'],
+.c13[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c12::-moz-focus-inner,
-.c12[type='button']::-moz-focus-inner,
-.c12[type='reset']::-moz-focus-inner,
-.c12[type='submit']::-moz-focus-inner {
+.c13::-moz-focus-inner,
+.c13[type='button']::-moz-focus-inner,
+.c13[type='reset']::-moz-focus-inner,
+.c13[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c12:-moz-focusring,
-.c12[type='button']:-moz-focusring,
-.c12[type='reset']:-moz-focusring,
-.c12[type='submit']:-moz-focusring {
+.c13:-moz-focusring,
+.c13[type='button']:-moz-focusring,
+.c13[type='reset']:-moz-focusring,
+.c13[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c12::before {
+.c13::before {
   content: '';
   display: block;
   position: absolute;
@@ -451,11 +461,11 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   height: calc(100% - 4px);
 }
 
-.c12:hover {
+.c13:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c12:active {
+.c13:active {
   background-color: hsl(223.5,100%,40%);
 }
 
@@ -508,7 +518,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c9 {
+.c10 {
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -540,7 +550,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
 }
 
 @media (min-width:760px) {
-  .c9 {
+  .c10 {
     max-height: 50vh;
   }
 }
@@ -625,8 +635,10 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
                     role="img"
                     viewBox="0 0 24 24"
                   >
-                    <polygon
-                      points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                    <path
+                      className="c9"
+                      d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                      strokeWidth={2}
                     />
                     <title>
                       Close this dialog
@@ -636,13 +648,13 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
               </div>
             </div>
             <div
-              className="c9"
+              className="c10"
             >
               <div
                 className="c3"
               >
                 <p
-                  className="c10"
+                  className="c11"
                   type="primary"
                 >
                   Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
@@ -652,7 +664,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
                 className="c3"
               >
                 <p
-                  className="c10"
+                  className="c11"
                   type="primary"
                 >
                   That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
@@ -662,14 +674,14 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
                 className="c3"
               >
                 <p
-                  className="c10"
+                  className="c11"
                   type="primary"
                 >
                   Nielsen/Norman has an excellent article about their usage here
                 </p>
               </div>
               <p
-                className="c10"
+                className="c11"
                 type="primary"
               >
                 <a
@@ -680,23 +692,23 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
               </p>
             </div>
             <div
-              className="c11"
+              className="c12"
             >
               <div>
                 <p
-                  className="c10"
+                  className="c11"
                   type="primary"
                 >
                   This is a footer which is a ReactNode, which could e.g. contain a button or only text
                 </p>
                 <button
-                  className="c12"
+                  className="c13"
                   onClick={[Function]}
                   type="button"
                 >
                   <span>
                     <span
-                      className="c13"
+                      className="c14"
                     >
                       Button
                     </span>
@@ -977,7 +989,11 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
   display: block;
 }
 
-.c10 {
+.c9 {
+  stroke: #6E6E69;
+}
+
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1044,7 +1060,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c9 {
+.c10 {
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -1076,7 +1092,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
 }
 
 @media (min-width:760px) {
-  .c9 {
+  .c10 {
     max-height: 50vh;
   }
 }
@@ -1155,8 +1171,10 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
                     role="img"
                     viewBox="0 0 24 24"
                   >
-                    <polygon
-                      points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                    <path
+                      className="c9"
+                      d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                      strokeWidth={2}
                     />
                     <title>
                       Close this dialog
@@ -1166,13 +1184,13 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
               </div>
             </div>
             <div
-              className="c9"
+              className="c10"
             >
               <div
                 className="c3"
               >
                 <p
-                  className="c10"
+                  className="c11"
                   type="primary"
                 >
                   Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
@@ -1182,7 +1200,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
                 className="c3"
               >
                 <p
-                  className="c10"
+                  className="c11"
                   type="primary"
                 >
                   That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
@@ -1192,14 +1210,14 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
                 className="c3"
               >
                 <p
-                  className="c10"
+                  className="c11"
                   type="primary"
                 >
                   Nielsen/Norman has an excellent article about their usage here
                 </p>
               </div>
               <p
-                className="c10"
+                className="c11"
                 type="primary"
               >
                 <a
@@ -1279,7 +1297,11 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
   display: block;
 }
 
-.c8 {
+.c7 {
+  stroke: #6E6E69;
+}
+
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1337,7 +1359,7 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c7 {
+.c8 {
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -1358,7 +1380,7 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
 }
 
 @media (min-width:760px) {
-  .c7 {
+  .c8 {
     max-height: 50vh;
   }
 }
@@ -1437,8 +1459,10 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
                     role="img"
                     viewBox="0 0 24 24"
                   >
-                    <polygon
-                      points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                    <path
+                      className="c7"
+                      d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                      strokeWidth={2}
                     />
                     <title>
                       Close this dialog
@@ -1448,13 +1472,13 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
               </div>
             </div>
             <div
-              className="c7"
+              className="c8"
             >
               <div
                 className="c3"
               >
                 <p
-                  className="c8"
+                  className="c9"
                   type="primary"
                 >
                   Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
@@ -1464,7 +1488,7 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
                 className="c3"
               >
                 <p
-                  className="c8"
+                  className="c9"
                   type="primary"
                 >
                   That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
@@ -1474,14 +1498,14 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
                 className="c3"
               >
                 <p
-                  className="c8"
+                  className="c9"
                   type="primary"
                 >
                   Nielsen/Norman has an excellent article about their usage here
                 </p>
               </div>
               <p
-                className="c8"
+                className="c9"
                 type="primary"
               >
                 <a

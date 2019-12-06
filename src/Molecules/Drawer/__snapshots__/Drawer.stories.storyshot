@@ -5,7 +5,7 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
   margin-bottom: 8px;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24,18 +24,18 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
   flex-basis: auto;
 }
 
-.c9 {
+.c10 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c10 {
+.c11 {
   position: relative;
 }
 
-.c13 {
+.c14 {
   height: 4px;
   width: 4px;
   position: absolute;
@@ -44,7 +44,7 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
   bottom: 0;
 }
 
-.c11 {
+.c12 {
   height: 4px;
   width: 4px;
   position: absolute;
@@ -79,7 +79,11 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
   display: block;
 }
 
-.c12 {
+.c8 {
+  stroke: #6E6E69;
+}
+
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -167,11 +171,11 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
 }
 
 @media (min-width:976px) {
-  .c8 {
+  .c9 {
     position: relative;
   }
 
-  .c8::before {
+  .c9::before {
     content: '';
     display: block;
     width: 100%;
@@ -190,11 +194,11 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
 }
 
 @media (min-width:976px) {
-  .c8 {
+  .c9 {
     position: relative;
   }
 
-  .c8::after {
+  .c9::after {
     content: '';
     display: block;
     width: 100%;
@@ -213,7 +217,7 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
 }
 
 @media (min-width:976px) {
-  .c9 {
+  .c10 {
     min-height: 0;
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
@@ -313,8 +317,10 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
                     role="img"
                     viewBox="0 0 24 24"
                   >
-                    <polygon
-                      points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                    <path
+                      className="c8"
+                      d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                      strokeWidth={2}
                     />
                     <title>
                       Close this drawer
@@ -325,26 +331,26 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
             </div>
           </div>
           <div
-            className="c8"
+            className="c9"
           >
             <div
-              className="c9"
+              className="c10"
             >
               <div
-                className="c10"
+                className="c11"
               >
                 <div
-                  className="c11"
+                  className="c12"
                 />
                 <div>
                   <p
-                    className="c12"
+                    className="c13"
                     type="primary"
                   >
                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
                   </p>
                   <span
-                    className="c12"
+                    className="c13"
                   >
                     <ul>
                       <li>
@@ -362,14 +368,14 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
                     </ul>
                   </span>
                   <p
-                    className="c12"
+                    className="c13"
                     type="primary"
                   >
                     Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
                   </p>
                 </div>
                 <div
-                  className="c13"
+                  className="c14"
                 />
               </div>
             </div>

@@ -118,7 +118,7 @@ export const ModalInner: React.FC<InnerProps> = ({
                   )}
                   {!hideClose && (
                     <CloseButton type="button" onClick={onClose}>
-                      <Icon.Cross size={5} title="Close this dialog" />
+                      <Icon.CrossThin size={5} title="Close this dialog" />
                     </CloseButton>
                   )}
                 </Flexbox>
