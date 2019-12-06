@@ -115,8 +115,6 @@ export type Theme = {
     module: RawColor['white'];
     /** 3 percent of black */
     shadowCard: string;
-    /** 16 percent of black */
-    shadowDrawer: string;
     /** 5 percent of black */
     shadowModal: string;
     /** 5 percent of black */
