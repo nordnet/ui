@@ -44,6 +44,7 @@ import Select from './Molecules/Select';
 import Switch from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
+import Tooltip from './Molecules/Tooltip';
 
 /** Organisms */
 import CardWithTabs from './Organisms/CardWithTabs';
@@ -107,6 +108,7 @@ export {
   Thead,
   theme,
   Time,
+  Tooltip,
   Tr,
   TrackingContext,
   Typography,
