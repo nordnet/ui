@@ -4,7 +4,15 @@ import { useTooltip, TooltipPopup } from '@reach/tooltip';
 import { TooltipComponent, Props } from './Tooltip.types';
 import { Typography } from '../..';
 import Triangle from './Triangle';
-import { leftAuto, leftAfter, leftBefore, topAuto, topOver, topUnder } from './utils';
+import {
+  getCollisions,
+  leftAfter,
+  leftAuto,
+  leftBefore,
+  topAuto,
+  topOver,
+  topUnder,
+} from './utils';
 
 const BORDER_SIZE = 1;
 
@@ -19,13 +27,6 @@ const StyledTooltip = styled(TooltipPopup)`
   max-width: 200px;
 `;
 
-const positionAuto = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
-  return {
-    left: `${leftAuto(triggerRect, tooltipRect)}px`,
-    top: `${topAuto(triggerRect, tooltipRect)}px`,
-  };
-};
-
 const positionTop = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
   return {
     left: `${leftAuto(triggerRect, tooltipRect)}px`,
@@ -35,7 +36,7 @@ const positionTop = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
 
 const positionBottom = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
   return {
-    left: ` ${leftAuto(triggerRect, tooltipRect)}px`,
+    left: `${leftAuto(triggerRect, tooltipRect)}px`,
     top: `${topUnder(triggerRect, tooltipRect)}px`,
   };
 };
@@ -52,6 +53,21 @@ const positionRight = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
     left: `${leftAfter(triggerRect, tooltipRect)}px`,
     top: `${topAuto(triggerRect, tooltipRect)}px`,
   };
+};
+
+const positionAuto = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
+  const collisions = getCollisions(triggerRect, tooltipRect);
+  const left = `${leftAuto(triggerRect, tooltipRect)}px`;
+
+  return collisions.top
+    ? {
+        left,
+        top: `${topUnder(triggerRect, tooltipRect)}px`,
+      }
+    : {
+        left,
+        top: `${topOver(triggerRect, tooltipRect)}px`,
+      };
 };
 
 const getPosition = (position: Props['position']) => {
@@ -81,7 +97,7 @@ export const Tooltip: TooltipComponent = ({ children, label, ariaLabel, position
     <>
       {cloneElement(children, trigger)}
 
-      {isVisible && <Triangle triggerRect={triggerRect} position={position} />}
+      {isVisible && <Triangle triggerRect={triggerRect} toolTipPosition={position} />}
       <StyledTooltip
         {...tooltip}
         label={<Typography type="tertiary">{label}</Typography>}

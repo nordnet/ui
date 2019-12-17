@@ -1,20 +1,24 @@
 const TRIANGLE_SIZE = 10;
-const OFFSET = TRIANGLE_SIZE + 3;
+const OFFSET = 4 - 1;
+
+export const getCollisions = (triggerRect: ClientRect, tooltipRect: ClientRect) => ({
+  right: window.innerWidth < triggerRect.left + tooltipRect.width,
+  left: triggerRect.left - tooltipRect.width < 0,
+  top: triggerRect.top - tooltipRect.height < 0,
+  bottom: window.innerHeight < triggerRect.bottom + tooltipRect.height + OFFSET + TRIANGLE_SIZE,
+});
 
 export const leftBefore = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
-  return triggerRect.left - tooltipRect.width - OFFSET - TRIANGLE_SIZE * 2 - window.pageXOffset;
+  return triggerRect.left - tooltipRect.width - OFFSET - TRIANGLE_SIZE;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const leftAfter = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
-  return triggerRect.right + OFFSET + TRIANGLE_SIZE * 2 + window.pageXOffset;
+  return triggerRect.right + OFFSET + TRIANGLE_SIZE;
 };
 
 export const leftAuto = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
-  const collisions = {
-    right: window.innerWidth < triggerRect.left + tooltipRect.width,
-    left: triggerRect.left - tooltipRect.width < 0,
-  };
-
+  const collisions = getCollisions(triggerRect, tooltipRect);
   const centered = !collisions.right && !collisions.left;
   const directionRight = collisions.right && !collisions.left;
 
@@ -34,19 +38,16 @@ export const leftAuto = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
 };
 
 export const topOver = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
-  return triggerRect.top - OFFSET - tooltipRect.height + window.pageYOffset;
+  return triggerRect.top - tooltipRect.height - OFFSET - TRIANGLE_SIZE + window.pageYOffset;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const topUnder = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
-  return triggerRect.top + OFFSET + triggerRect.height + window.pageYOffset;
+  return triggerRect.bottom + OFFSET + TRIANGLE_SIZE + window.pageYOffset;
 };
 
 export const topAuto = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
-  const collisions = {
-    top: triggerRect.top - tooltipRect.height < 0,
-    bottom: window.innerHeight < triggerRect.bottom + tooltipRect.height + OFFSET,
-  };
-
+  const collisions = getCollisions(triggerRect, tooltipRect);
   const centered = !collisions.bottom && !collisions.top;
   const directionUp = collisions.bottom && !collisions.top;
 

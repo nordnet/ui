@@ -1,13 +1,12 @@
-import { Props as TooltipProps } from '../Tooltip.types';
-
 export type InternalProps = {
   left: number;
   top: number;
+  arrowDirection: 'up' | 'right' | 'down' | 'left';
 };
 
 export type Props = {
   triggerRect: ClientRect;
-  position: TooltipProps['positoin'];
+  toolTipPosition: 'top' | 'right' | 'bottom' | 'left';
 };
 
 export type TriangleComponent = React.FC<Props>;
