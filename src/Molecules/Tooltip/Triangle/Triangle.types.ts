@@ -1,12 +1,12 @@
-export type InternalProps = {
+export type InternalArrowProps = {
   left: number;
   top: number;
-  arrowDirection: 'up' | 'right' | 'down' | 'left';
+  direction: 'up' | 'right' | 'down' | 'left';
 };
 
 export type Props = {
   triggerRect: ClientRect;
-  toolTipPosition: 'top' | 'right' | 'bottom' | 'left';
+  tooltipPosition: 'top' | 'right' | 'bottom' | 'left';
 };
 
 export type TriangleComponent = React.FC<Props>;

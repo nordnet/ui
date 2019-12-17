@@ -1,11 +1,9 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { Portal } from '../../..';
-import { InternalProps, TriangleComponent, Props } from './Triangle.types';
+import { InternalArrowProps, TriangleComponent, Props } from './Triangle.types';
 
-const TRIANGLE_SIZE = 10;
-const BORDER_SIZE = 1;
-const OFFSET = 4;
+import { BORDER_SIZE, TRIANGLE_SIZE, OFFSET } from '../consts';
 
 const arrowUp = css`
   &::before {
@@ -71,7 +69,7 @@ const arrowLeft = css`
   }
 `;
 
-const TriangleEl = styled.div<InternalProps>`
+const Arrow = styled.div<InternalArrowProps>`
   position: absolute;
   left: ${p => p.left}px;
   top: ${p => p.top}px;
@@ -95,31 +93,31 @@ const TriangleEl = styled.div<InternalProps>`
     z-index: 2;
   }
 
-  ${p => (p.arrowDirection === 'right' ? arrowRight : '')}
-  ${p => (p.arrowDirection === 'down' ? arrowDown : '')}
-  ${p => (p.arrowDirection === 'left' ? arrowLeft : '')}
-  ${p => (p.arrowDirection === 'up' ? arrowUp : '')}
+  ${p => (p.direction === 'right' ? arrowRight : '')}
+  ${p => (p.direction === 'down' ? arrowDown : '')}
+  ${p => (p.direction === 'left' ? arrowLeft : '')}
+  ${p => (p.direction === 'up' ? arrowUp : '')}
 `;
 
 const getPosition = (
   triggerRect: Props['triggerRect'],
-  toolTipPosition: Props['toolTipPosition'],
+  tooltipPosition: Props['tooltipPosition'],
 ) => {
-  if (toolTipPosition === 'top') {
+  if (tooltipPosition === 'top') {
     return {
       left: triggerRect && triggerRect.left - TRIANGLE_SIZE + triggerRect.width / 2,
       top: triggerRect && window.scrollY + triggerRect.top - TRIANGLE_SIZE - OFFSET,
     };
   }
 
-  if (toolTipPosition === 'right') {
+  if (tooltipPosition === 'right') {
     return {
       left: triggerRect && triggerRect.right + OFFSET,
       top: triggerRect && window.scrollY + triggerRect.top - TRIANGLE_SIZE + triggerRect.height / 2,
     };
   }
 
-  if (toolTipPosition === 'left') {
+  if (tooltipPosition === 'left') {
     return {
       left: triggerRect && triggerRect.left - TRIANGLE_SIZE - OFFSET,
       top: triggerRect && window.scrollY + triggerRect.top - TRIANGLE_SIZE + triggerRect.height / 2,
@@ -133,36 +131,31 @@ const getPosition = (
   };
 };
 
-const getDirection = (toolTipPosition: Props['toolTipPosition']) => {
-  if (toolTipPosition === 'top') {
+const getDirection = (tooltipPosition: Props['tooltipPosition']) => {
+  if (tooltipPosition === 'top') {
     return 'down';
   }
-  if (toolTipPosition === 'right') {
+  if (tooltipPosition === 'right') {
     return 'left';
   }
-  if (toolTipPosition === 'left') {
+  if (tooltipPosition === 'left') {
     return 'right';
   }
 
   return 'up';
 };
 
-export const Triangle: TriangleComponent = ({ triggerRect, toolTipPosition }) => {
-  const chosenPosition = getPosition(triggerRect, toolTipPosition);
-  const arrowDirection = getDirection(toolTipPosition);
+export const Triangle: TriangleComponent = ({ triggerRect, tooltipPosition }) => {
+  const chosenPosition = getPosition(triggerRect, tooltipPosition);
+  const direction = getDirection(tooltipPosition);
 
   return (
     // The Triangle. We position it relative to the trigger, not the popup
-    // so that collisions don't have a triangle pointing off to nowhere.
     // Using a Portal may seem a little extreme, but we can keep the
     // positioning logic simpler here instead of needing to consider
     // the popup's position relative to the trigger and collisions
     <Portal>
-      <TriangleEl
-        left={chosenPosition.left}
-        top={chosenPosition.top}
-        arrowDirection={arrowDirection}
-      />
+      <Arrow left={chosenPosition.left} top={chosenPosition.top} direction={direction} />
     </Portal>
   );
 };

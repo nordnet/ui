@@ -13,8 +13,7 @@ import {
   topOver,
   topUnder,
 } from './utils';
-
-const BORDER_SIZE = 1;
+import { BORDER_SIZE } from './consts';
 
 const StyledTooltip = styled(TooltipPopup)`
   z-index: 1;
@@ -27,28 +26,28 @@ const StyledTooltip = styled(TooltipPopup)`
   max-width: 200px;
 `;
 
-const positionTop = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
+const positionOver = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
   return {
     left: `${leftAuto(triggerRect, tooltipRect)}px`,
     top: `${topOver(triggerRect, tooltipRect)}px`,
   };
 };
 
-const positionBottom = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
+const positionUnder = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
   return {
     left: `${leftAuto(triggerRect, tooltipRect)}px`,
     top: `${topUnder(triggerRect, tooltipRect)}px`,
   };
 };
 
-const positionLeft = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
+const positionBefore = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
   return {
     left: `${leftBefore(triggerRect, tooltipRect)}px`,
     top: `${topAuto(triggerRect, tooltipRect)}px`,
   };
 };
 
-const positionRight = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
+const positionAfter = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
   return {
     left: `${leftAfter(triggerRect, tooltipRect)}px`,
     top: `${topAuto(triggerRect, tooltipRect)}px`,
@@ -70,39 +69,36 @@ const positionAuto = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
       };
 };
 
-const getPosition = (position: Props['position']) => {
+const getToolTipPosition = (position: Props['position']) => {
   switch (position) {
     case 'top':
-      return positionTop;
+      return positionOver;
     case 'right':
-      return positionRight;
+      return positionAfter;
     case 'bottom':
-      return positionBottom;
+      return positionUnder;
     case 'left':
-      return positionLeft;
+      return positionBefore;
     default:
       return positionAuto;
   }
 };
 
 export const Tooltip: TooltipComponent = ({ children, label, ariaLabel, position = 'auto' }) => {
-  // get the props from useTooltip
   const [trigger, tooltip] = useTooltip();
-
-  // destructure off what we need to position the triangle
   const { isVisible, triggerRect } = tooltip;
-  const chosenPosition = getPosition(position);
+  const tooltipPosition = getToolTipPosition(position);
 
   return (
     <>
       {cloneElement(children, trigger)}
 
-      {isVisible && <Triangle triggerRect={triggerRect} toolTipPosition={position} />}
+      {isVisible && <Triangle triggerRect={triggerRect} tooltipPosition={position} />}
       <StyledTooltip
         {...tooltip}
         label={<Typography type="tertiary">{label}</Typography>}
         ariaLabel={ariaLabel}
-        position={chosenPosition}
+        position={tooltipPosition}
       />
     </>
   );
