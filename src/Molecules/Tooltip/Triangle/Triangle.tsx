@@ -150,10 +150,6 @@ export const Triangle: TriangleComponent = ({ triggerRect, tooltipPosition }) =>
   const direction = getDirection(tooltipPosition);
 
   return (
-    // The Triangle. We position it relative to the trigger, not the popup
-    // Using a Portal may seem a little extreme, but we can keep the
-    // positioning logic simpler here instead of needing to consider
-    // the popup's position relative to the trigger and collisions
     <Portal>
       <Arrow left={chosenPosition.left} top={chosenPosition.top} direction={direction} />
     </Portal>

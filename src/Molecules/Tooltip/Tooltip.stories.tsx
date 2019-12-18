@@ -10,13 +10,14 @@ export default {
   },
 };
 
+const label = 'Modals should be used with care as they are quite intrusive on the user';
+
 const Button = styled.button`
-  margin: 0 auto;
   display: block;
 `;
 
 export const defaultStory = () => (
-  <Tooltip label="Modals should be used with care as they are quite intrusive on the user">
+  <Tooltip label={label}>
     <Button type="button">Hover me</Button>
   </Tooltip>
 );
@@ -30,43 +31,7 @@ export const withPosition = () => (
     items={[
       {
         component: (
-          <Tooltip
-            label="Modals should be used with care as they are quite intrusive on the user"
-            position="auto"
-          >
-            <Button type="button">Hover me</Button>
-          </Tooltip>
-        ),
-        title: 'auto',
-      },
-      {
-        component: (
-          <Tooltip
-            label="Modals should be used with care as they are quite intrusive on the user"
-            position="top"
-          >
-            <Button type="button">Hover me</Button>
-          </Tooltip>
-        ),
-        title: 'top',
-      },
-      {
-        component: (
-          <Tooltip
-            label="Modals should be used with care as they are quite intrusive on the user"
-            position="right"
-          >
-            <Button type="button">Hover me</Button>
-          </Tooltip>
-        ),
-        title: 'right',
-      },
-      {
-        component: (
-          <Tooltip
-            label="Modals should be used with care as they are quite intrusive on the user"
-            position="bottom"
-          >
+          <Tooltip label={label} position="bottom">
             <Button type="button">Hover me</Button>
           </Tooltip>
         ),
@@ -74,14 +39,27 @@ export const withPosition = () => (
       },
       {
         component: (
-          <Tooltip
-            label="Modals should be used with care as they are quite intrusive on the user"
-            position="left"
-          >
+          <Tooltip label={label} position="left">
             <Button type="button">Hover me</Button>
           </Tooltip>
         ),
         title: 'left',
+      },
+      {
+        component: (
+          <Tooltip label={label} position="top">
+            <Button type="button">Hover me</Button>
+          </Tooltip>
+        ),
+        title: 'top',
+      },
+      {
+        component: (
+          <Tooltip label={label} position="right">
+            <Button type="button">Hover me</Button>
+          </Tooltip>
+        ),
+        title: 'right',
       },
     ]}
   />
