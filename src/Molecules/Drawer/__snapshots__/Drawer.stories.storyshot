@@ -295,12 +295,16 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
             <div
               className="c1"
             >
-              <h2
-                className="c2 c3"
-                type="title2"
+              <span
+                id="1val-Drawer"
               >
-                Drawer title
-              </h2>
+                <h2
+                  className="c2 c3"
+                  type="title2"
+                >
+                  Drawer title
+                </h2>
+              </span>
               <button
                 className="c4 c5"
                 onClick={[Function]}
@@ -312,6 +316,447 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
                   <svg
                     aria-hidden="false"
                     className="c7"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="img"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      className="c8"
+                      d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                      strokeWidth={2}
+                    />
+                    <title>
+                      Close this drawer
+                    </title>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            className="c9"
+          >
+            <div
+              className="c10"
+            >
+              <div
+                className="c11"
+              >
+                <div
+                  className="c12"
+                />
+                <div>
+                  <p
+                    className="c13"
+                    type="primary"
+                  >
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+                  </p>
+                  <span
+                    className="c13"
+                  >
+                    <ul>
+                      <li>
+                        Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                      </li>
+                      <li>
+                        Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+                      </li>
+                      <li>
+                        Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.
+                      </li>
+                      <li>
+                        Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
+                      </li>
+                    </ul>
+                  </span>
+                  <p
+                    className="c13"
+                    type="primary"
+                  >
+                    Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+                  </p>
+                </div>
+                <div
+                  className="c14"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+  </portal-dummy>
+</div>
+`;
+
+exports[`Storyshots Molecules | Drawer With Custom Title 1`] = `
+.c0 {
+  margin-bottom: 8px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+
+.c10 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c11 {
+  position: relative;
+}
+
+.c14 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  bottom: 0;
+}
+
+.c12 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  top: 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c2 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c2 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c3 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  stroke: #6E6E69;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-height: 32px;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c6,
+.c6[type='button'],
+.c6[type='reset'],
+.c6[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c6::-moz-focus-inner,
+.c6[type='button']::-moz-focus-inner,
+.c6[type='reset']::-moz-focus-inner,
+.c6[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c6:-moz-focusring,
+.c6[type='button']:-moz-focusring,
+.c6[type='reset']:-moz-focusring,
+.c6[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5 {
+  margin-left: auto;
+}
+
+@media (min-width:976px) {
+  .c9 {
+    position: relative;
+  }
+
+  .c9::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+    top: 0;
+    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c9 {
+    position: relative;
+  }
+
+  .c9::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+    bottom: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c10 {
+    min-height: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    overflow-y: auto;
+  }
+}
+
+@media (min-width:760px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Toggle drawer
+  </button>
+  <portal-dummy>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
+      >
+        <div>
+          <div
+            className="c0"
+          >
+            <div
+              className="c1"
+            >
+              <span
+                id="2val-Drawer"
+              >
+                <div
+                  className="c2"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="c3"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M14.8800001 20.4C15.2774401 20.4 15.6 20.6688 15.6 21.0000001 15.6 21.3312001 15.2774401 21.6 14.8800001 21.6L9.12 21.6C8.72256 21.6 8.4 21.3312001 8.4 21.0000001 8.4 20.6688 8.72256 20.4 9.12 20.4L9.84000001 20.4 9.84000001 9.60000001 9.12 9.60000001C8.72256 9.60000001 8.4 9.33120001 8.4 9 8.4 8.6688 8.72256 8.4 9.12 8.4L14.8800001 8.4C15.2774401 8.4 15.6 8.6688 15.6 9 15.6 9.33120001 15.2774401 9.60000001 14.8800001 9.60000001L14.16 9.60000001 14.16 20.4 14.8800001 20.4zM10.8 20.4L13.2 20.4 13.2 9.60000001 10.8 9.60000001 10.8 20.4zM23.2800001 20.4C23.6774401 20.4 24 20.6688 24 21.0000001 24 21.3312001 23.6774401 21.6 23.2800001 21.6L17.52 21.6C17.12256 21.6 16.8 21.3312001 16.8 21.0000001 16.8 20.6688 17.12256 20.4 17.52 20.4L18.24 20.4 18.24 9.60000001 17.52 9.60000001C17.12256 9.60000001 16.8 9.33120001 16.8 9 16.8 8.6688 17.12256 8.4 17.52 8.4L23.2800001 8.4C23.6774401 8.4 24 8.6688 24 9 24 9.33120001 23.6774401 9.60000001 23.2800001 9.60000001L22.56 9.60000001 22.56 20.4 23.2800001 20.4zM19.2 20.4L21.6 20.4 21.6 9.60000001 19.2 9.60000001 19.2 20.4zM6.48000008 20.4C6.87744005 20.4 7.2 20.6688 7.2 21.0000001 7.2 21.3312001 6.87744005 21.6 6.48000008 21.6L.72 21.6C.322560005 21.6 0 21.3312001 0 21.0000001 0 20.6688.322560005 20.4.72 20.4L1.44000001 20.4 1.44000001 9.60000001.72 9.60000001C.322560005 9.60000001 0 9.33120001 0 9 0 8.6688.322560005 8.4.72 8.4L6.48000008 8.4C6.87744005 8.4 7.2 8.6688 7.2 9 7.2 9.33120001 6.87744005 9.60000001 6.48000008 9.60000001L5.76000003 9.60000001 5.76000003 20.4 6.48000008 20.4zM2.40000001 20.4L4.80000001 20.4 4.80000001 9.60000001 2.40000001 9.60000001 2.40000001 20.4zM23.3684211 24L.631578948 24C.282947369 24 0 23.7312 0 23.3999999 0 23.0687999.282947369 22.8.631578948 22.8L23.3684211 22.8C23.7170527 22.8 24 23.0687999 24 23.3999999 24 23.7312 23.7170527 24 23.3684211 24M2.40153427 6L21.6 6 12 1.2 2.4 6 2.40153427 6zM23.2939215 7.2L.706788396 7.2C.391980231 7.2.115287854 7.02239259.027762717 6.7655819-.0597624258 6.5087712.0644668033 6.23275969.332689009 6.0911538L11.6262555.0909037876C11.8549503-.0303012625 12.1457596-.0303012625 12.3744543.0909037876L23.6680208 6.0911538C23.9348314 6.23275969 24.0590605 6.50757114 23.9729471 6.7655819 23.8868338 7.02359265 23.6087297 7.2 23.2939215 7.2z"
+                    />
+                  </svg>
+                  <h2
+                    className="c4"
+                    type="title2"
+                  >
+                    Custom title
+                  </h2>
+                </div>
+              </span>
+              <button
+                className="c5 c6"
+                onClick={[Function]}
+                type="button"
+              >
+                <span
+                  className="c7"
+                >
+                  <svg
+                    aria-hidden="false"
+                    className="c3"
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="img"
