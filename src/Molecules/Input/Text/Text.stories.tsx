@@ -333,3 +333,11 @@ export const withLabelTooltip = () => (
 withLabelTooltip.story = {
   name: 'With tooltip as label addon',
 };
+
+export const withMaxLength = () => (
+  <Input.Text maxLength={3} label="has max length" placeholder="Placeholder" />
+);
+
+withMaxLength.story = {
+  name: 'With maxLength',
+};

@@ -33,12 +33,7 @@ export const useComponentsWithDefaults = (
     () =>
       // @ts-ignore
       R.pipe(
-        // @ts-ignore
-        R.map(componentRefFn =>
-          typeof componentRefFn !== 'function'
-            ? componentRefFn
-            : React.forwardRef(componentRefFn as any),
-        ),
+        // prettier-ignore
         R.mergeRight(options.multiselect ? defaultComponentsMultiselect : defaultComponents),
       )(components),
     [components, options.multiselect],

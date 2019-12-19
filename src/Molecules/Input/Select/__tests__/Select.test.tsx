@@ -110,9 +110,10 @@ test('Multi select with actions (also disabled actions)', async () => {
         placeholder="Placeholder"
         onChange={handleChange}
         components={{
-          SelectedValue: (_, ref) => {
+          SelectedValue: React.forwardRef((_, ref) => {
             const [state] = useSelectMachineFromContext();
             return (
+              // @ts-ignore
               <div ref={ref} data-testid="custom-selected-value">
                 {
                   // @ts-ignore
@@ -121,7 +122,7 @@ test('Multi select with actions (also disabled actions)', async () => {
                 items
               </div>
             );
-          },
+          }),
         }}
       />
     </ThemeProvider>,
@@ -262,9 +263,10 @@ test('Multiselect without custom components and with select all', async () => {
         )}
         multiselect
         components={{
-          SelectedValue: (_, ref) => {
+          SelectedValue: React.forwardRef((_, ref) => {
             const [state] = useSelectMachineFromContext();
             return (
+              // @ts-ignore
               <div ref={ref} data-testid="custom-selected-value">
                 {
                   // @ts-ignore
@@ -273,7 +275,7 @@ test('Multiselect without custom components and with select all', async () => {
                 items
               </div>
             );
-          },
+          }),
         }}
         label="Label"
         placeholder="Placeholder"
