@@ -1,3 +1,23 @@
+# [2.11.0](https://github.com/nordnet/ui/compare/v2.10.0...v2.11.0) (2019-12-19)
+
+
+### Bug Fixes
+
+* add uid and make title take elements ([661f76a](https://github.com/nordnet/ui/commit/661f76a))
+* adjust shadow ([8b81c7a](https://github.com/nordnet/ui/commit/8b81c7a))
+* minor fixes to modal to match drawer more ([b82acaa](https://github.com/nordnet/ui/commit/b82acaa))
+* remove uncertain shadow ([35df563](https://github.com/nordnet/ui/commit/35df563))
+* update commit analyzer ([c6cad5c](https://github.com/nordnet/ui/commit/c6cad5c))
+* update snaps ([38affad](https://github.com/nordnet/ui/commit/38affad))
+* update snaps ([dbccc3f](https://github.com/nordnet/ui/commit/dbccc3f))
+* use cross thin icon ([f276420](https://github.com/nordnet/ui/commit/f276420))
+
+
+### Features
+
+* add mobile behavior and remove switch ([a4b877d](https://github.com/nordnet/ui/commit/a4b877d))
+* create drawer component ([4ad5e95](https://github.com/nordnet/ui/commit/4ad5e95))
+
 # [2.10.0](https://github.com/nordnet/ui/compare/v2.9.0...v2.10.0) (2019-12-13)
 
 

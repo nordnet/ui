@@ -115,7 +115,7 @@ export type Theme = {
     module: RawColor['white'];
     /** 3 percent of black */
     shadowCard: string;
-    /** 3 percent of black */
+    /** 5 percent of black */
     shadowModal: string;
     /** 5 percent of black */
     shadowInput: string;
@@ -263,5 +263,12 @@ export type Theme = {
   animation: {
     duration: {};
     easing: {};
+  };
+  zIndex: {
+    footer: 100;
+    header: 200;
+    dropdown: 300;
+    overlay: 400;
+    modal: 500;
   };
 };

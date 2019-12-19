@@ -74,6 +74,14 @@ const size: Theme['size'] = {
   xl: 1600,
 };
 
+const zIndex: Theme['zIndex'] = {
+  footer: 100,
+  header: 200,
+  dropdown: 300,
+  overlay: 400,
+  modal: 500,
+};
+
 const getSizesValues = pipe(
   // @ts-ignore
   mapObjIndexed(Rprop('size')),
@@ -232,6 +240,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     },
     size: deprecate('theme.size, please use theme.breakpoint instead.')(size),
     spacing,
+    zIndex,
   };
   return theme;
 };
