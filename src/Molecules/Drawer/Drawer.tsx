@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useUIDSeed } from 'react-uid';
 import styled from 'styled-components';
 import FocusLock from 'react-focus-lock';
 import { RemoveScroll } from 'react-remove-scroll';
 import { motion } from 'framer-motion';
-import { DrawerComponent } from './Drawer.types';
-import { isBoolean } from '../../common/utils';
+import { DrawerComponent, TitleProps } from './Drawer.types';
+import { isBoolean, isElement } from '../../common/utils';
 import {
   Flexbox,
   Typography,
@@ -16,6 +17,8 @@ import {
   useMedia,
   Button,
 } from '../..';
+
+const displayName = 'Drawer';
 
 const Container = styled(motion.div)`
   box-sizing: border-box;
@@ -70,6 +73,20 @@ const components = {
   Content,
 };
 
+const Title: React.FC<TitleProps> = ({ title, uid }) => {
+  return (
+    <span id={uid}>
+      {isElement(title) ? (
+        title
+      ) : (
+        <Typography as={H2} type="title2">
+          {title}
+        </Typography>
+      )}
+    </span>
+  );
+};
+
 export const Drawer: DrawerComponent & {
   components: typeof components;
 } = ({ className, children, onClose, open: isOpenExternal, title }) => {
@@ -78,6 +95,8 @@ export const Drawer: DrawerComponent & {
   const [isOpenInternal, setIsOpenInternal] = useState(true);
   const isOpen = isControlled ? isOpenExternal : isOpenInternal;
   const isDesktop = useMedia(t => t.media.greaterThan(t.breakpoints.sm)) || false;
+  const seed = useUIDSeed();
+  const uid = seed(displayName);
 
   const handleCloseClick = () => {
     setIsOpenInternal(false);
@@ -97,18 +116,10 @@ export const Drawer: DrawerComponent & {
     <Portal>
       <FocusLock disabled={isDesktop}>
         <RemoveScroll enabled={!isDesktop}>
-          <Container
-            className={className}
-            {...(title ? { 'aria-label': title } : {})} // TODO: move to aria-labeledby when SSR uid works
-            {...animationProps}
-          >
+          <Container className={className} aria-labelledby={uid} {...animationProps}>
             <Box mb={2}>
               <Flexbox container alignItems="baseline">
-                {title && (
-                  <Typography as={H2} type="title2">
-                    {title}
-                  </Typography>
-                )}
+                {title && <Title title={title} uid={uid} />}
                 <CloseButton type="button" variant="neutral" onClick={handleCloseClick}>
                   <Icon.CrossThin size={5} title="Close this drawer" />
                 </CloseButton>
@@ -124,4 +135,4 @@ export const Drawer: DrawerComponent & {
 
 Drawer.components = components;
 
-Drawer.displayName = 'Drawer';
+Drawer.displayName = displayName;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Drawer, Typography } from '../../index';
+import { Drawer, Typography, Icon, Flexbox } from '../../index';
 
 export default {
   title: 'Molecules | Drawer',
@@ -75,4 +75,45 @@ export const defaultStory = () => {
 
 defaultStory.story = {
   name: 'Default',
+};
+
+export const withCustomTitle = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const toggle = () => {
+      setOpen(!open);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <div>
+        <button type="button" onClick={toggle}>
+          Toggle drawer
+        </button>
+        <Drawer
+          onClose={onClose}
+          title={
+            <Flexbox container gutter={2} alignItems="center">
+              <Icon.Bank />
+              <Typography type="title2" as="h2">
+                Custom title
+              </Typography>
+            </Flexbox>
+          }
+          open={open}
+        >
+          {content}
+        </Drawer>
+      </div>
+    );
+  };
+  return <Example />;
+};
+
+withCustomTitle.story = {
+  name: 'With a custom title',
 };
