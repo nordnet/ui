@@ -3,6 +3,8 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import R from 'ramda';
 import styled from 'styled-components';
+import { StateChart } from '@statecharts/xstate-viz';
+import { SelectMachine } from './machine';
 import {
   Input,
   Avatar,
@@ -782,8 +784,17 @@ export const sizeS = () => {
   );
 };
 
+const createCounter = () => {
+  let i = 0;
+  // eslint-disable-next-line no-plusplus
+  return { next: () => i++ };
+};
+
 export const linkWithDropdownAndSearchBoxSecondary = () =>
   React.createElement(() => {
+    // Don't mind counter
+    // just to have persistent unique keys
+    const counter = createCounter();
     const customComponents = React.useMemo(
       () => ({
         // @ts-ignore
@@ -816,22 +827,22 @@ export const linkWithDropdownAndSearchBoxSecondary = () =>
           .concat(
             accountOptions.map(x => ({
               ...x,
-              value: x.value + Math.random(),
-              label: x.label + Math.random(),
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
             })),
           )
           .concat(
             accountOptions.map(x => ({
               ...x,
-              value: x.value + Math.random(),
-              label: x.label + Math.random(),
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
             })),
           )
           .concat(
             accountOptions.map(x => ({
               ...x,
-              value: x.value + Math.random(),
-              label: x.label + Math.random(),
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
             })),
           ),
       [accountOptions],
@@ -887,28 +898,31 @@ export const linkWithDropdownAndSearchBoxTertiary = () =>
     );
 
     const [value, setValue] = React.useState([]);
+    // Don't mind counter
+    // just to have persistent unique keys
+    const counter = createCounter();
     const hugeOptionsList = React.useMemo(
       () =>
         accountOptions
           .concat(
             accountOptions.map(x => ({
               ...x,
-              value: x.value + Math.random(),
-              label: x.label + Math.random(),
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
             })),
           )
           .concat(
             accountOptions.map(x => ({
               ...x,
-              value: x.value + Math.random(),
-              label: x.label + Math.random(),
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
             })),
           )
           .concat(
             accountOptions.map(x => ({
               ...x,
-              value: x.value + Math.random(),
-              label: x.label + Math.random(),
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
             })),
           ),
       [accountOptions],
@@ -964,28 +978,31 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
     );
 
     const [value, setValue] = React.useState([]);
+    // Don't mind counter
+    // just to have persistent unique keys
+    const counter = createCounter();
     const hugeOptionsList = React.useMemo(
       () =>
         accountOptions
           .concat(
             accountOptions.map(x => ({
               ...x,
-              value: x.value + Math.random(),
-              label: x.label + Math.random(),
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
             })),
           )
           .concat(
             accountOptions.map(x => ({
               ...x,
-              value: x.value + Math.random(),
-              label: x.label + Math.random(),
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
             })),
           )
           .concat(
             accountOptions.map(x => ({
               ...x,
-              value: x.value + Math.random(),
-              label: x.label + Math.random(),
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
             })),
           ),
       [accountOptions],
@@ -1057,28 +1074,31 @@ export const listPositionedToTheLeft = () =>
     );
 
     const [value, setValue] = React.useState([]);
+    // Don't mind counter
+    // just to have persistent unique keys
+    const counter = createCounter();
     const hugeOptionsList = React.useMemo(
       () =>
         accountOptions
           .concat(
             accountOptions.map(x => ({
               ...x,
-              value: x.value + Math.random(),
-              label: x.label + Math.random(),
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
             })),
           )
           .concat(
             accountOptions.map(x => ({
               ...x,
-              value: x.value + Math.random(),
-              label: x.label + Math.random(),
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
             })),
           )
           .concat(
             accountOptions.map(x => ({
               ...x,
-              value: x.value + Math.random(),
-              label: x.label + Math.random(),
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
             })),
           ),
       [accountOptions],
@@ -1116,6 +1136,11 @@ export const listPositionedToTheLeft = () =>
       </Flexbox>
     );
   });
+
+export const DocumentationCore = () => <StateChart machine={SelectMachine} onSave={() => {}} />;
+DocumentationCore.story = {
+  name: 'Documentation: Core',
+};
 
 export const onSearchQueryChange = () => (
   <Input.Select

@@ -4731,6 +4731,145 @@ exports[`Storyshots Molecules | Input / Text With Label Tooltip 1`] = `
 </div>
 `;
 
+exports[`Storyshots Molecules | Input / Text With Max Length 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c5 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+  >
+    <span
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        has max length 
+      </div>
+      <span
+        className="c4"
+      >
+        <div
+          className="c5"
+        >
+          <input
+            className="c6"
+            maxLength={3}
+            placeholder="Placeholder"
+            type="text"
+          />
+        </div>
+      </span>
+    </span>
+  </label>
+</div>
+`;
+
 exports[`Storyshots Molecules | Input / Text With Value Controlled Behaviour 1`] = `
 .c3 {
   box-sizing: border-box;
