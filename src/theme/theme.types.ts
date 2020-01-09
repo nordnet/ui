@@ -123,6 +123,8 @@ export type Theme = {
     shadowSwitch: string;
     /** complementaryGreen1 */
     shareville: string;
+    /** gray6 */
+    skeleton: RawColor['gray6'];
     /** black */
     spinnerBlack: RawColor['black'];
     /** white */

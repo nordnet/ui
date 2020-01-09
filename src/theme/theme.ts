@@ -179,6 +179,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
         .rgb()
         .string(),
       shareville: rawColor.complementaryGreen1,
+      skeleton: rawColor.gray6,
       spinnerBlack: rawColor.black,
       spinnerWhite: rawColor.white,
       streamingBolt: rawColor.index,
