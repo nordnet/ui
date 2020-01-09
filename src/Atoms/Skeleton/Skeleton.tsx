@@ -36,7 +36,6 @@ const Base = styled(CleanDiv)<Props>`
 const Text = styled(Base)`
   margin-top: 0;
   margin-bottom: 0;
-  border-radius: 4px;
 
   &:empty:before {
     content: '\\00a0';

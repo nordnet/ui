@@ -9,7 +9,6 @@ exports[`Storyshots Atoms | Skeleton Default Story 1`] = `
   animation: bzcbYv 1.5s ease-in-out 0.5s infinite;
   margin-top: 0;
   margin-bottom: 0;
-  border-radius: 4px;
 }
 
 .c0:empty:before {
@@ -61,7 +60,6 @@ Array [
   animation: bzcbYv 1.5s ease-in-out 0.5s infinite;
   margin-top: 0;
   margin-bottom: 0;
-  border-radius: 4px;
 }
 
 .c3:empty:before {
