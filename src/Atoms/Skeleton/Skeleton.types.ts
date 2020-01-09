@@ -9,7 +9,7 @@ export type Props = {
   height?: StringOrNumber;
   /** Number as value will translate into units */
   width?: StringOrNumber;
-  /** @default text */
+  /** @default 'text' */
   variant?: 'text' | 'rect' | 'circle';
 };
 
