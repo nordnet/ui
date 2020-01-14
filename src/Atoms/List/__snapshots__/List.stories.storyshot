@@ -63,3 +63,39 @@ exports[`Storyshots Atoms | List Basic Unordered List 1`] = `
   </li>
 </ul>
 `;
+
+exports[`Storyshots Atoms | List Separeted List 1`] = `
+.c0 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c0 li + li {
+  border-top: 1px solid #EBEBE8;
+}
+
+.c1 {
+  display: block;
+}
+
+<ul
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    List item 1
+  </li>
+  <li
+    className="c1"
+  >
+    List item 2
+  </li>
+  <li
+    className="c1"
+  >
+    List item 3
+  </li>
+</ul>
+`;
