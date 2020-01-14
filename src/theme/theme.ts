@@ -167,7 +167,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
         .rgb()
         .string(),
       shadowModal: Color(rawColor.black)
-        .alpha(0.05)
+        .alpha(0.16)
         .rgb()
         .string(),
       shadowInput: Color(rawColor.black)

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useUIDSeed } from 'react-uid';
 import styled from 'styled-components';
 import FocusLock from 'react-focus-lock';
@@ -36,6 +36,10 @@ const Container = styled(motion.div)`
 
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
     width: ${({ theme }) => theme.spacing.unit(100)}px;
+  }
+
+  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.xl)} {
+    width: ${({ theme }) => theme.spacing.unit(120)}px;
   }
 `;
 
@@ -98,19 +102,19 @@ export const Drawer: DrawerComponent & {
   const seed = useUIDSeed();
   const uid = seed(displayName);
 
-  const handleCloseClick = () => {
+  const handleCloseClick = useCallback(() => {
     setIsOpenInternal(false);
 
     if (onClose) {
       onClose();
     }
-  };
+  }, [onClose]);
 
   useEffect(() => {
     if (isOpen && escapePress) {
       handleCloseClick();
     }
-  }, [escapePress, isOpen]);
+  }, [escapePress, handleCloseClick, isOpen]);
 
   return isOpen ? (
     <Portal>
