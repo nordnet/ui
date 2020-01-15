@@ -28,6 +28,7 @@ export type ButtonProps = {
   id?: string;
   as?: any;
   loading?: boolean;
+  ref?: React.Ref<HTMLAnchorElement> | React.Ref<HTMLButtonElement>;
 };
 
 type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;

@@ -30,9 +30,12 @@ const StyledButton = styled(NormalizedElements.Button)<InnerProps>`
   cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
 `;
 
-const CleanRouterLink = (props: InnerProps) => (
-  <RouterLink {...R.omit(['fullWidth', 'colorFn', 'color', 'variant', 'size'], props) as any} />
-);
+const CleanRouterLink = React.forwardRef<HTMLAnchorElement, ButtonProps>((props, ref) => (
+  <RouterLink
+    ref={ref}
+    {...R.omit(['fullWidth', 'colorFn', 'color', 'variant', 'size'], props) as any}
+  />
+));
 
 const StyledLink = styled(CleanRouterLink)<InnerProps>`
   ${p => {
@@ -49,7 +52,10 @@ const StyledLink = styled(CleanRouterLink)<InnerProps>`
   text-decoration: none;
 `;
 
-export const Button: ButtonComponent = props => {
+export const Button: ButtonComponent = React.forwardRef<
+  HTMLAnchorElement | HTMLButtonElement,
+  ButtonProps
+>((props, ref) => {
   const {
     className,
     disabled,
@@ -78,6 +84,16 @@ export const Button: ButtonComponent = props => {
 
   const colorFromTheme = color && color(theme);
 
+  const sharedProps = {
+    className,
+    onClick: trackClick,
+    size,
+    variant,
+    fullWidth,
+    colorFn: color,
+    id,
+  };
+
   if (colorFromTheme && (isPrimary(variant) || isSecondary(variant))) {
     assert(
       colorFromTheme === theme.color.cta || colorFromTheme === theme.color.negative,
@@ -102,14 +118,9 @@ export const Button: ButtonComponent = props => {
   if (to && !disabled) {
     return (
       <StyledLink
-        className={className}
+        {...sharedProps}
         rel={rel}
-        onClick={trackClick}
-        size={size}
-        variant={variant}
-        fullWidth={fullWidth}
-        colorFn={color}
-        id={id}
+        ref={ref as React.Ref<HTMLAnchorElement>}
         {...(external
           ? // TODO: unify these parts with link
             { as: 'a' as 'a', href: to, target: '_blank', rel: 'noopener noreferrer nofollow' }
@@ -131,20 +142,15 @@ export const Button: ButtonComponent = props => {
   );
   return (
     <StyledButton
-      id={id}
-      className={className}
+      {...sharedProps}
       disabled={disabled}
-      onClick={trackClick}
-      size={size}
       type={type}
-      variant={variant}
-      fullWidth={fullWidth}
-      colorFn={color}
       as={as}
+      ref={ref as React.Ref<HTMLButtonElement>}
     >
       <ButtonContent loading={loading} variant={variant} size={size} colorFn={color}>
         {children}
       </ButtonContent>
     </StyledButton>
   );
-};
+});

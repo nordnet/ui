@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { action } from '@storybook/addon-actions';
 import { HashRouter } from 'react-router-dom';
 import MD from 'react-markdown';
@@ -205,6 +205,34 @@ export const buttonWithSizeModified = () => (
 
 buttonWithSizeModified.story = {
   name: 'Button with size modified',
+};
+
+export const buttonWithFocusOn = () => {
+  const FocusExample = () => {
+    const ref = useRef<HTMLButtonElement>(null);
+    const handleFocus = () => {
+      if (ref.current !== null) {
+        ref.current.focus();
+      }
+    };
+    return (
+      <Flexbox container gutter={5}>
+        <Flexbox item>
+          <Button onClick={handleFocus}>Click to focus</Button>
+        </Flexbox>
+        <Flexbox item>
+          <Button color={t => t.color.negative} ref={ref}>
+            Focus me
+          </Button>
+        </Flexbox>
+      </Flexbox>
+    );
+  };
+  return <FocusExample />;
+};
+
+buttonWithFocusOn.story = {
+  name: 'Button which sets focus on another button',
 };
 
 export const buttonWithLoadingState = () => {
