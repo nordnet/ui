@@ -38,7 +38,10 @@ const shared = css<InnerProps>`
 `;
 
 const minHeight = css<InnerProps>`
-  min-height: ${p => p.theme.spacing.unit(HEIGHT[p.size])}px;
+  ${p =>
+    p.size === 'm' || p.size === 'l'
+      ? `min-height: ${p.theme.spacing.unit(HEIGHT[p.size])}px;`
+      : ''}
 `;
 
 const padding = css<InnerProps>`
