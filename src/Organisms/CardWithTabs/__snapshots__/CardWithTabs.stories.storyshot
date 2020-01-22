@@ -292,6 +292,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
 
 .c19 {
   position: relative;
+  overflow-x: hidden;
 }
 
 .c22 {
@@ -706,6 +707,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
 
 .c20 {
   position: relative;
+  overflow-x: hidden;
 }
 
 .c23 {

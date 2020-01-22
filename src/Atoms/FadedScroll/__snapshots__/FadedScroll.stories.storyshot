@@ -3,6 +3,7 @@
 exports[`Storyshots Atoms | FadedScroll Default Story 1`] = `
 .c2 {
   position: relative;
+  overflow-x: hidden;
 }
 
 .c7 {
@@ -183,6 +184,7 @@ exports[`Storyshots Atoms | FadedScroll With Auto Height Of Scrollable Area 1`] 
 
 .c3 {
   position: relative;
+  overflow-x: hidden;
 }
 
 .c8 {
@@ -353,6 +355,7 @@ exports[`Storyshots Atoms | FadedScroll With Auto Height Of Scrollable Area 1`] 
 exports[`Storyshots Atoms | FadedScroll With Height Of Fade Changed 1`] = `
 .c2 {
   position: relative;
+  overflow-x: hidden;
 }
 
 .c7 {
@@ -581,6 +584,7 @@ exports[`Storyshots Atoms | FadedScroll With Mobile Fade Enabled 1`] = `
 
 .c3 {
   position: relative;
+  overflow-x: hidden;
 }
 
 .c8 {
@@ -686,6 +690,7 @@ exports[`Storyshots Atoms | FadedScroll With Mobile Fade Enabled 1`] = `
 exports[`Storyshots Atoms | FadedScroll With Top Fade Disabled 1`] = `
 .c2 {
   position: relative;
+  overflow-x: hidden;
 }
 
 .c6 {

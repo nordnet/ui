@@ -300,6 +300,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration Faded Scroll With Heig
 
 .c7 {
   position: relative;
+  overflow-x: hidden;
 }
 
 .c11 {
@@ -481,6 +482,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration With Faded Scroll 1`] 
 
 .c6 {
   position: relative;
+  overflow-x: hidden;
 }
 
 .c10 {

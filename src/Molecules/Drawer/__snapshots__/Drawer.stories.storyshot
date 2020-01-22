@@ -33,6 +33,7 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
 
 .c11 {
   position: relative;
+  overflow-x: hidden;
 }
 
 .c14 {
@@ -439,6 +440,7 @@ exports[`Storyshots Molecules | Drawer With Custom Title 1`] = `
 
 .c11 {
   position: relative;
+  overflow-x: hidden;
 }
 
 .c14 {

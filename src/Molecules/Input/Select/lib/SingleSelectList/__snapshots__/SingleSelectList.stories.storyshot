@@ -292,6 +292,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
 
 .c6 {
   position: relative;
+  overflow-x: hidden;
 }
 
 .c16 {

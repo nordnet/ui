@@ -1068,6 +1068,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
 
 .c6 {
   position: relative;
+  overflow-x: hidden;
 }
 
 .c30 {
