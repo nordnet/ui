@@ -24,6 +24,7 @@ const Scroller = styled.div<InternalProps & Props>`
 
 const Content = styled.div`
   position: relative;
+  overflow-x: hidden;
 `;
 
 const IntersectionBottom = styled.div`
