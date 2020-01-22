@@ -826,7 +826,6 @@ exports[`Storyshots Molecules | Button Button With Different Variants 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-height: 32px;
   padding: 0;
   background-color: transparent;
   color: #282823;
@@ -4349,7 +4348,6 @@ exports[`Storyshots Molecules | Button Disabled Button With Different Variants 1
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-height: 32px;
   padding: 0;
   background-color: transparent;
   color: #A0A09B;

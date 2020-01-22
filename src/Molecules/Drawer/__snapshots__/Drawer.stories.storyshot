@@ -132,7 +132,6 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-height: 32px;
   padding: 0;
   background-color: transparent;
   color: #282823;
@@ -562,7 +561,6 @@ exports[`Storyshots Molecules | Drawer With Custom Title 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-height: 32px;
   padding: 0;
   background-color: transparent;
   color: #282823;

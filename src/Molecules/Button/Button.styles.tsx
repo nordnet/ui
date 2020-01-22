@@ -124,7 +124,6 @@ export const secondaryStyles = css<InnerProps>`
 
 export const neutralStyles = css<InnerProps>`
   ${shared}
-  ${minHeight}
   padding: 0;
   background-color: transparent;
 
