@@ -1,7 +1,7 @@
 export type InnerProps = {
   className?: string;
   onClose?: Function;
-  title?: string;
+  title?: React.ReactNode;
   footer?: React.ReactNode;
   hideClose?: boolean;
 };

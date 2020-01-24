@@ -7,7 +7,8 @@ import { motion } from 'framer-motion';
 import { DialogProps, Props } from './Modal.types';
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
-import { Flexbox, Typography, Icon, Box, useKeyPress } from '../..';
+import { Title } from './Title';
+import { Flexbox, Icon, Box, useKeyPress } from '../..';
 
 const PADDING = 5;
 const CLOSE_ICON_SIZE = 5;
@@ -117,15 +118,7 @@ export const ModalInner: React.FC<Props> = ({
         <RemoveScroll>
           <Backdrop className={className} container alignItems="center" justifyContent="center">
             <Dialog role="dialog" show={show} aria-labelledby={titleId} {...animationProps}>
-              {hasHeader && (
-                <Header>
-                  {title && (
-                    <Typography id={titleId} as="h2" type="title2">
-                      {title}
-                    </Typography>
-                  )}
-                </Header>
-              )}
+              {hasHeader && <Header>{title && <Title title={title} uid={titleId} />}</Header>}
               <Content>{children}</Content>
               {footer && (
                 <Box pt={4} p="1px" m="-1px">

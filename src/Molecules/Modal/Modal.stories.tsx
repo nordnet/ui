@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Modal, Typography, Box, Button } from '../..';
+import { Modal, Typography, Box, Button, Flexbox, Icon } from '../..';
 
 const ScrollMaker = styled.div`
   background-image: linear-gradient(${p => p.theme.color.positive}, ${p => p.theme.color.negative});
@@ -273,4 +273,55 @@ export const hideClose = () => {
 
 hideClose.story = {
   name: 'Hide Close button',
+};
+
+export const nodeAsTitle = () => {
+  const Title = (
+    <Flexbox container gutter={2} alignItems="center">
+      <Icon.Bolt />
+      <Typography type="title2" as="h2">
+        React Node Title
+      </Typography>
+      <Icon.Bolt />
+    </Flexbox>
+  );
+  const Example = () => {
+    return (
+      <div>
+        <ScrollMaker />
+        {/* ScrollMaker is just used to show how the Modal locks scrolling when open */}
+        <Modal title={Title}>
+          <Box mb={2}>
+            <Typography type="primary" as="p">
+              Modals should be used with care as they are quite intrusive on the user experience and
+              demand immediate attention (while also blocking all other actions on the site). Always
+              consider if you can solve a problem in another way first before you choose to go with
+              the modal.
+            </Typography>
+          </Box>
+          <Box mb={2}>
+            <Typography type="primary" as="p">
+              That being said they are a good tool if you need to grab the users attention, either
+              to communicate something very important or make them take an action before proceeding.
+            </Typography>
+          </Box>
+          <Box mb={2}>
+            <Typography type="primary" as="p">
+              Nielsen/Norman has an excellent article about their usage here
+            </Typography>
+          </Box>
+          <Typography type="primary" as="p">
+            <a href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/">
+              https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+            </a>
+          </Typography>
+        </Modal>
+      </div>
+    );
+  };
+  return <Example />;
+};
+
+nodeAsTitle.story = {
+  name: 'Node as Title',
 };
