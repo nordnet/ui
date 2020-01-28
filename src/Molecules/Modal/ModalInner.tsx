@@ -8,12 +8,13 @@ import { DialogProps, Props } from './Modal.types';
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Title } from './Title';
-import { Flexbox, Icon, Box, useKeyPress } from '../..';
+import { Flexbox, Icon, useKeyPress } from '../..';
 
-const PADDING = 5;
+const PADDING_DESKTOP = 10;
+const PADDING_MOBILE = 5;
 const CLOSE_ICON_SIZE = 5;
 
-const Backdrop = styled(Flexbox)`
+export const Backdrop = styled(Flexbox)`
   position: fixed;
   top: 0;
   left: 0;
@@ -26,12 +27,15 @@ const Backdrop = styled(Flexbox)`
   }
 `;
 
-export const Dialog = styled(motion.div)<DialogProps>`
+const Dialog = styled(motion.div)<DialogProps>`
   box-sizing: border-box;
-  padding: ${({ theme }) => theme.spacing.unit(PADDING)}px;
+  padding: ${({ theme }) => theme.spacing.unit(PADDING_MOBILE)}px;
   border: 0;
   background: ${({ theme }) => theme.color.card};
   position: relative;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
 
   ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
     width: 100%;
@@ -40,7 +44,9 @@ export const Dialog = styled(motion.div)<DialogProps>`
   }
 
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
+    padding: ${({ theme }) => theme.spacing.unit(PADDING_DESKTOP)}px;
     width: ${({ theme }) => theme.spacing.unit(120)}px;
+    max-height: 65vh;
     box-shadow: 0 2px 2px 0 ${({ theme }) => theme.color.shadowModal};
   }
 `;
@@ -52,22 +58,26 @@ const CloseButton = styled(NormalizedElements.Button)`
   border: 0;
   cursor: pointer;
   position: absolute;
-  top: ${p => p.theme.spacing.unit(PADDING)}px;
-  right: ${p => p.theme.spacing.unit(PADDING)}px;
+  transform: translateY(3px); /* to align with header */
+  top: ${p => p.theme.spacing.unit(PADDING_MOBILE)}px;
+  right: ${p => p.theme.spacing.unit(PADDING_MOBILE)}px;
+
+  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
+    top: ${p => p.theme.spacing.unit(PADDING_DESKTOP)}px;
+    right: ${p => p.theme.spacing.unit(PADDING_DESKTOP)}px;
+  }
 `;
 
-const Header = styled.div`
-  padding-bottom: ${p => p.theme.spacing.unit(2)}px;
+export const Header = styled.div`
+  padding-bottom: ${p => p.theme.spacing.unit(4)}px;
   padding-right: ${p => p.theme.spacing.unit(CLOSE_ICON_SIZE + 2)}px;
   min-height: ${p => p.theme.spacing.unit(CLOSE_ICON_SIZE)}px;
+  flex: 1 0 auto;
 `;
 
-export const Content = styled.div`
-  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
-    max-height: 50vh;
-  }
-  overflow-y: auto;
-  overflow-x: hidden;
+export const Footer = styled.div`
+  padding-top: ${p => p.theme.spacing.unit(4)}px;
+  flex: 1 0 auto;
 `;
 
 export const ModalInner: React.FC<Props> = ({
@@ -116,15 +126,17 @@ export const ModalInner: React.FC<Props> = ({
     <>
       <FocusLock autoFocus={autoFocus}>
         <RemoveScroll>
-          <Backdrop className={className} container alignItems="center" justifyContent="center">
-            <Dialog role="dialog" show={show} aria-labelledby={titleId} {...animationProps}>
+          <Backdrop container alignItems="center" justifyContent="center">
+            <Dialog
+              aria-labelledby={titleId}
+              className={className}
+              show={show}
+              role="dialog"
+              {...animationProps}
+            >
               {hasHeader && <Header>{title && <Title title={title} uid={titleId} />}</Header>}
-              <Content>{children}</Content>
-              {footer && (
-                <Box pt={4} p="1px" m="-1px">
-                  {footer}
-                </Box>
-              )}
+              {children}
+              {footer && <Footer>{footer}</Footer>}
               {!hideClose && (
                 <CloseButton type="button" onClick={onClose}>
                   <Icon.CrossThin size={5} title="Close this dialog" />

@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Props } from './Modal.types';
 import { isBoolean } from '../../common/utils';
-import { ModalInner, Dialog, Content } from './ModalInner';
+import { Backdrop, Footer, Header, ModalInner } from './ModalInner';
 import { Portal } from '../..';
 
 const components = {
-  Dialog,
-  Content,
+  Backdrop,
+  Footer,
+  Header,
 };
 
 export const Modal: React.FC<Props> & {
@@ -15,7 +16,7 @@ export const Modal: React.FC<Props> & {
    * inner parts with styled-components
    * @example
    * const CustomModal = styled(Modal)`
-   *  ${Modal.components.Dialog} {
+   *  ${Modal.components.Footer} {
    *    background-color: pink;
    * }
    * `
