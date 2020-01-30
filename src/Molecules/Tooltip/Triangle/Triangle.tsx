@@ -84,13 +84,13 @@ const Arrow = styled.div<InternalArrowProps>`
   }
 
   &::before {
-    z-index: ${p => (p.isonoverlay ? ({ theme }) => theme.zIndex.overlayTooltip : 1)};
+    z-index: ${p => (p.overlayTooltip ? ({ theme }) => theme.zIndex.overlayTooltip : 1)};
     left: 0;
     top: 0;
   }
 
   &::after {
-    z-index: ${p => (p.isonoverlay ? ({ theme }) => theme.zIndex.overlayTooltip + 1 : 2)};
+    z-index: ${p => (p.overlayTooltip ? ({ theme }) => theme.zIndex.overlayTooltip + 1 : 2)};
   }
 
   ${p => (p.direction === 'right' ? arrowRight : '')}
