@@ -157,6 +157,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed Initially 1`] = `
         <svg
           aria-hidden="true"
           className="c5 c6"
+          collapsed={true}
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -345,6 +346,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With Custom Componen
         <svg
           aria-hidden="true"
           className="c5 c6"
+          collapsed={false}
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -531,6 +533,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With On Click Listen
         <svg
           aria-hidden="true"
           className="c5 c6"
+          collapsed={false}
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -717,6 +720,7 @@ exports[`Storyshots Molecules | CollapsibleCard Default Story 1`] = `
         <svg
           aria-hidden="true"
           className="c5 c6"
+          collapsed={false}
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
