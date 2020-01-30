@@ -52,32 +52,37 @@ const StyledIconBase = styled(CleanSvg)<StyledIconBaseProps>`
   }}
 `;
 
-export const IconBase: React.FC<InternalProps> = (props: InternalProps) => {
-  const {
-    className,
-    children,
-    title,
-    size = 5,
-    color,
-    fill,
-    inline,
-    viewBox = '0 0 24 24',
-  } = props;
+export const IconBase: React.FC<InternalProps> = React.forwardRef<SVGSVGElement, InternalProps>(
+  (props, ref) => {
+    const {
+      className,
+      children,
+      title,
+      size = 5,
+      color,
+      fill,
+      inline,
+      viewBox = '0 0 24 24',
+      ...rest
+    } = props;
 
-  return (
-    <StyledIconBase
-      className={className}
-      preserveAspectRatio="xMidYMid meet"
-      size={size}
-      focusable="false"
-      viewBox={viewBox}
-      aria-hidden={title ? 'false' : 'true'}
-      role={title ? 'img' : 'presentation'}
-      colorFn={fill || color}
-      inline={inline}
-    >
-      {children}
-      {title ? <title>{title}</title> : null}
-    </StyledIconBase>
-  );
-};
+    return (
+      <StyledIconBase
+        className={className}
+        preserveAspectRatio="xMidYMid meet"
+        size={size}
+        focusable="false"
+        viewBox={viewBox}
+        aria-hidden={title ? 'false' : 'true'}
+        role={title ? 'img' : 'presentation'}
+        colorFn={fill || color}
+        inline={inline}
+        ref={ref}
+        {...rest}
+      >
+        {children}
+        {title ? <title>{title}</title> : null}
+      </StyledIconBase>
+    );
+  },
+);

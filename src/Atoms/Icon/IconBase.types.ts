@@ -32,4 +32,5 @@ export type ChildProps = {
 
 export type InternalProps = BaseProps & {
   children: React.ReactNode;
+  ref?: React.Ref<SVGSVGElement>;
 };
