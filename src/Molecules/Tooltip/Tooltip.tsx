@@ -7,8 +7,8 @@ import Triangle from './Triangle';
 import { leftAfter, leftCenter, leftBefore, topCenter, topOver, topUnder } from './utils';
 import { BORDER_SIZE } from './consts';
 
-const StyledTooltip = styled(TooltipPopup)`
-  z-index: 1;
+const StyledTooltip = styled(TooltipPopup)<{ overlayTooltip?: boolean }>`
+  z-index: ${p => (p.overlayTooltip ? ({ theme }) => theme.zIndex.overlayTooltip : 1)};
   pointer-events: none;
   position: absolute;
   padding: ${p => p.theme.spacing.unit(1)}px ${p => p.theme.spacing.unit(2)}px;
@@ -60,7 +60,13 @@ const getToolTipPosition = (position: Props['position']) => {
   }
 };
 
-export const Tooltip: TooltipComponent = ({ children, label, ariaLabel, position = 'auto' }) => {
+export const Tooltip: TooltipComponent = ({
+  children,
+  label,
+  ariaLabel,
+  overlayTooltip = false,
+  position = 'auto',
+}) => {
   const [trigger, tooltip] = useTooltip();
   const { isVisible, triggerRect } = tooltip;
   const tooltipPosition = getToolTipPosition(position);
@@ -69,12 +75,19 @@ export const Tooltip: TooltipComponent = ({ children, label, ariaLabel, position
     <>
       {cloneElement(children, trigger)}
 
-      {isVisible && <Triangle triggerRect={triggerRect} tooltipPosition={position} />}
+      {isVisible && (
+        <Triangle
+          triggerRect={triggerRect}
+          tooltipPosition={position}
+          overlayTooltip={overlayTooltip}
+        />
+      )}
       <StyledTooltip
         {...tooltip}
         label={<Typography type="tertiary">{label}</Typography>}
         ariaLabel={ariaLabel}
         position={tooltipPosition}
+        overlayTooltip={overlayTooltip}
       />
     </>
   );

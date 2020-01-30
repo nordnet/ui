@@ -79,6 +79,7 @@ const zIndex: Theme['zIndex'] = {
   header: 200,
   dropdown: 300,
   overlay: 400,
+  overlayTooltip: 410,
   modal: 500,
 };
 
