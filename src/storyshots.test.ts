@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 
 // eslint-disable-next-line import/no-extraneous-dependencies
 import initStoryshots, { multiSnapshotWithOptions } from '@storybook/addon-storyshots';
+import 'jest-styled-components';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { styleSheetSerializer } from 'jest-styled-components';
+import { styleSheetSerializer } from 'jest-styled-components/serializer';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { addSerializer } from 'jest-specific-snapshot';
 
