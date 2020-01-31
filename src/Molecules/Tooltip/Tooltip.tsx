@@ -7,8 +7,10 @@ import Triangle from './Triangle';
 import { leftAfter, leftCenter, leftBefore, topCenter, topOver, topUnder } from './utils';
 import { BORDER_SIZE } from './consts';
 
-const StyledTooltip = styled(TooltipPopup)<{ overlayTooltip?: boolean }>`
-  z-index: ${p => (p.overlayTooltip ? ({ theme }) => theme.zIndex.overlayTooltip : 1)};
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const StyledTooltip = styled(({ overlayTooltip, ...rest }) => <TooltipPopup {...rest} />)`
+  z-index: ${({ overlayTooltip }) =>
+    overlayTooltip ? ({ theme }) => theme.zIndex.overlayTooltip : 1};
   pointer-events: none;
   position: absolute;
   padding: ${p => p.theme.spacing.unit(1)}px ${p => p.theme.spacing.unit(2)}px;
@@ -70,6 +72,10 @@ export const Tooltip: TooltipComponent = ({
   const [trigger, tooltip] = useTooltip();
   const { isVisible, triggerRect } = tooltip;
   const tooltipPosition = getToolTipPosition(position);
+
+  console.log('Tooltip:', tooltip);
+  console.log('Trigger:', trigger);
+  console.log('Children:', children);
 
   return (
     <>
