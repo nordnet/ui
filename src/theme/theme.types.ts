@@ -271,8 +271,8 @@ export type Theme = {
     header: 200;
     dropdown: 300;
     overlay: 400;
-    overlayTooltip: 500;
-    overlayTooltipTriangle: 501;
-    modal: 600;
+    modal: 500;
+    foregroundTooltip: 600;
+    foregroundTooltipTriangle: 601;
   };
 };

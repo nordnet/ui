@@ -8,9 +8,9 @@ import Triangle from './Triangle';
 import { leftAfter, leftCenter, leftBefore, topCenter, topOver, topUnder } from './utils';
 import { BORDER_SIZE } from './consts';
 
-const StyledTooltip = styled(props => <TooltipPopup {...R.omit(['overlayTooltip'], props)} />)`
-  z-index: ${({ overlayTooltip }) =>
-    overlayTooltip ? ({ theme }) => theme.zIndex.overlayTooltip : 1};
+const StyledTooltip = styled(props => <TooltipPopup {...R.omit(['foregroundTooltip'], props)} />)`
+  z-index: ${({ foregroundTooltip }) =>
+    foregroundTooltip ? ({ theme }) => theme.zIndex.foregroundTooltip : 1};
   pointer-events: none;
   position: absolute;
   padding: ${p => p.theme.spacing.unit(1)}px ${p => p.theme.spacing.unit(2)}px;
@@ -66,7 +66,7 @@ export const Tooltip: TooltipComponent = ({
   children,
   label,
   ariaLabel,
-  overlayTooltip = false,
+  foregroundTooltip = false,
   position = 'auto',
 }) => {
   const [trigger, tooltip] = useTooltip();
@@ -81,7 +81,7 @@ export const Tooltip: TooltipComponent = ({
         <Triangle
           triggerRect={triggerRect}
           tooltipPosition={position}
-          overlayTooltip={overlayTooltip}
+          foregroundTooltip={foregroundTooltip}
         />
       )}
       <StyledTooltip
@@ -89,7 +89,7 @@ export const Tooltip: TooltipComponent = ({
         label={<Typography type="tertiary">{label}</Typography>}
         ariaLabel={ariaLabel}
         position={tooltipPosition}
-        overlayTooltip={overlayTooltip}
+        foregroundTooltip={foregroundTooltip}
       />
     </>
   );

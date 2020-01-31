@@ -84,13 +84,14 @@ const Arrow = styled.div<InternalArrowProps>`
   }
 
   &::before {
-    z-index: ${p => (p.overlayTooltip ? ({ theme }) => theme.zIndex.overlayTooltip : 1)};
+    z-index: ${p => (p.foregroundTooltip ? ({ theme }) => theme.zIndex.foregroundTooltip : 1)};
     left: 0;
     top: 0;
   }
 
   &::after {
-    z-index: ${p => (p.overlayTooltip ? ({ theme }) => theme.zIndex.overlayTooltipTriangle : 2)};
+    z-index: ${p =>
+      p.foregroundTooltip ? ({ theme }) => theme.zIndex.foregroundTooltipTriangle : 2};
   }
 
   ${p => (p.direction === 'right' ? arrowRight : '')}
@@ -148,7 +149,7 @@ const getDirection = (tooltipPosition: Props['tooltipPosition']) => {
 export const Triangle: TriangleComponent = ({
   triggerRect,
   tooltipPosition,
-  overlayTooltip = false,
+  foregroundTooltip = false,
 }) => {
   const chosenPosition = getPosition(triggerRect, tooltipPosition);
   const direction = getDirection(tooltipPosition);
@@ -159,7 +160,7 @@ export const Triangle: TriangleComponent = ({
         left={chosenPosition.left}
         top={chosenPosition.top}
         direction={direction}
-        overlayTooltip={overlayTooltip}
+        foregroundTooltip={foregroundTooltip}
       />
     </Portal>
   );
