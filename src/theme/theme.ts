@@ -80,8 +80,8 @@ const zIndex: Theme['zIndex'] = {
   dropdown: 300,
   overlay: 400,
   modal: 500,
-  foregroundTooltip: 600,
-  foregroundTooltipTriangle: 601,
+  tooltip: 600,
+  tooltipTriangle: 601,
 };
 
 const getSizesValues = pipe(

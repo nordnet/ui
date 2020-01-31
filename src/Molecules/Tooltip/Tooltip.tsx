@@ -1,6 +1,6 @@
 import React, { cloneElement } from 'react';
 import styled from 'styled-components';
-import * as R from 'ramda';
+
 import { useTooltip, TooltipPopup } from '@reach/tooltip';
 import { TooltipComponent, Props } from './Tooltip.types';
 import { Typography } from '../..';
@@ -8,9 +8,8 @@ import Triangle from './Triangle';
 import { leftAfter, leftCenter, leftBefore, topCenter, topOver, topUnder } from './utils';
 import { BORDER_SIZE } from './consts';
 
-const StyledTooltip = styled(props => <TooltipPopup {...R.omit(['foregroundTooltip'], props)} />)`
-  z-index: ${({ foregroundTooltip }) =>
-    foregroundTooltip ? ({ theme }) => theme.zIndex.foregroundTooltip : 1};
+const StyledTooltip = styled(TooltipPopup)`
+  z-index: ${({ theme }) => theme.zIndex.tooltip};
   pointer-events: none;
   position: absolute;
   padding: ${p => p.theme.spacing.unit(1)}px ${p => p.theme.spacing.unit(2)}px;
@@ -62,13 +61,7 @@ const getToolTipPosition = (position: Props['position']) => {
   }
 };
 
-export const Tooltip: TooltipComponent = ({
-  children,
-  label,
-  ariaLabel,
-  foregroundTooltip = false,
-  position = 'auto',
-}) => {
+export const Tooltip: TooltipComponent = ({ children, label, ariaLabel, position = 'auto' }) => {
   const [trigger, tooltip] = useTooltip();
   const { isVisible, triggerRect } = tooltip;
   const tooltipPosition = getToolTipPosition(position);
@@ -77,19 +70,12 @@ export const Tooltip: TooltipComponent = ({
     <>
       {cloneElement(children, trigger)}
 
-      {isVisible && (
-        <Triangle
-          triggerRect={triggerRect}
-          tooltipPosition={position}
-          foregroundTooltip={foregroundTooltip}
-        />
-      )}
+      {isVisible && <Triangle triggerRect={triggerRect} tooltipPosition={position} />}
       <StyledTooltip
         {...tooltip}
         label={<Typography type="tertiary">{label}</Typography>}
         ariaLabel={ariaLabel}
         position={tooltipPosition}
-        foregroundTooltip={foregroundTooltip}
       />
     </>
   );
