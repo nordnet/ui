@@ -67,7 +67,7 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 500;
+  z-index: 600;
 }
 
 .c8 {
@@ -557,7 +557,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 500;
+  z-index: 600;
 }
 
 .c16 {
@@ -922,7 +922,7 @@ exports[`Storyshots Molecules | Modal Hide Close 1`] = `
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 500;
+  z-index: 600;
 }
 
 .c3 {
@@ -1152,7 +1152,7 @@ exports[`Storyshots Molecules | Modal Node As Title 1`] = `
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 500;
+  z-index: 600;
 }
 
 .c9 {
@@ -1489,7 +1489,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 500;
+  z-index: 600;
 }
 
 .c8 {
@@ -1783,7 +1783,7 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 500;
+  z-index: 600;
 }
 
 .c5 {
