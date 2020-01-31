@@ -73,10 +73,6 @@ export const Tooltip: TooltipComponent = ({
   const { isVisible, triggerRect } = tooltip;
   const tooltipPosition = getToolTipPosition(position);
 
-  console.log('Tooltip:', tooltip);
-  console.log('Trigger:', trigger);
-  console.log('Children:', children);
-
   return (
     <>
       {cloneElement(children, trigger)}
