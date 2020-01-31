@@ -1,6 +1,5 @@
 import React, { cloneElement } from 'react';
 import styled from 'styled-components';
-
 import { useTooltip, TooltipPopup } from '@reach/tooltip';
 import { TooltipComponent, Props } from './Tooltip.types';
 import { Typography } from '../..';
