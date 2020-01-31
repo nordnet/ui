@@ -90,7 +90,7 @@ const Arrow = styled.div<InternalArrowProps>`
   }
 
   &::after {
-    z-index: ${p => (p.overlayTooltip ? ({ theme }) => theme.zIndex.overlayTooltip + 1 : 2)};
+    z-index: ${p => (p.overlayTooltip ? ({ theme }) => theme.zIndex.overlayTooltipTriangle : 2)};
   }
 
   ${p => (p.direction === 'right' ? arrowRight : '')}

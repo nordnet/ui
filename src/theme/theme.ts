@@ -79,8 +79,9 @@ const zIndex: Theme['zIndex'] = {
   header: 200,
   dropdown: 300,
   overlay: 400,
-  overlayTooltip: 401,
-  modal: 500,
+  overlayTooltip: 500,
+  overlayTooltipTriangle: 501,
+  modal: 600,
 };
 
 const getSizesValues = pipe(
