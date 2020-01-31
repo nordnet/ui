@@ -1,5 +1,6 @@
 import React, { cloneElement } from 'react';
 import styled from 'styled-components';
+import * as R from 'ramda';
 import { useTooltip, TooltipPopup } from '@reach/tooltip';
 import { TooltipComponent, Props } from './Tooltip.types';
 import { Typography } from '../..';
@@ -7,8 +8,7 @@ import Triangle from './Triangle';
 import { leftAfter, leftCenter, leftBefore, topCenter, topOver, topUnder } from './utils';
 import { BORDER_SIZE } from './consts';
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const StyledTooltip = styled(({ overlayTooltip, ...rest }) => <TooltipPopup {...rest} />)`
+const StyledTooltip = styled(props => <TooltipPopup {...R.omit(['overlayTooltip'], props)} />)`
   z-index: ${({ overlayTooltip }) =>
     overlayTooltip ? ({ theme }) => theme.zIndex.overlayTooltip : 1};
   pointer-events: none;
