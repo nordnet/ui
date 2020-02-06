@@ -72,12 +72,12 @@ export const Header = styled.div`
   padding-bottom: ${p => p.theme.spacing.unit(4)}px;
   padding-right: ${p => p.theme.spacing.unit(CLOSE_ICON_SIZE + 2)}px;
   min-height: ${p => p.theme.spacing.unit(CLOSE_ICON_SIZE)}px;
-  flex: 1 0 auto;
+  flex: 0 0 auto;
 `;
 
 export const Footer = styled.div`
   padding-top: ${p => p.theme.spacing.unit(4)}px;
-  flex: 1 0 auto;
+  flex: 0 0 auto;
 `;
 
 export const ModalInner: React.FC<Props> = ({

@@ -116,9 +116,9 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
   padding-bottom: 16px;
   padding-right: 28px;
   min-height: 20px;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .c0 {
@@ -597,16 +597,16 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   padding-bottom: 16px;
   padding-right: 28px;
   min-height: 20px;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .c13 {
   padding-top: 16px;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .c0 {
@@ -912,9 +912,9 @@ exports[`Storyshots Molecules | Modal Hide Close 1`] = `
   padding-bottom: 16px;
   padding-right: 28px;
   min-height: 20px;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .c0 {
@@ -1182,9 +1182,9 @@ exports[`Storyshots Molecules | Modal Node As Title 1`] = `
   padding-bottom: 16px;
   padding-right: 28px;
   min-height: 20px;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .c0 {
@@ -1514,9 +1514,9 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
   padding-bottom: 16px;
   padding-right: 28px;
   min-height: 20px;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .c0 {
