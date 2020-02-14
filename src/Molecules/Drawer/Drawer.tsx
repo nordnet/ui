@@ -127,7 +127,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
                   <Icon.CrossThin size={CROSS_SIZE} title="Close this drawer" />
                 </CloseButton>
               </TitleWrapper>
-              <FadedScroll>{children}</FadedScroll>
+              <FadedScroll enableMobileFade>{children}</FadedScroll>
             </Container>
           </RemoveScroll>
         </FocusLock>

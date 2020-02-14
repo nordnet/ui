@@ -18,6 +18,38 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
+  position: relative;
+  position: relative;
+}
+
+.c8::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  background: transparent;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+}
+
+.c8::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  background: transparent;
+  z-index: 1;
+  opacity: 0;
+  bottom: 0;
+  background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
 }
 
 .c9 {
@@ -25,6 +57,18 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  overflow-y: auto;
 }
 
 .c10 {
@@ -163,65 +207,6 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
-}
-
-@media (min-width:976px) {
-  .c8 {
-    position: relative;
-  }
-
-  .c8::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    top: 0;
-    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c8 {
-    position: relative;
-  }
-
-  .c8::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    bottom: 0;
-    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c9 {
-    min-height: 0;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -webkit-flex-shrink: 1;
-    -ms-flex-negative: 1;
-    flex-shrink: 1;
-    -webkit-flex-basis: auto;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-    overflow-y: auto;
-  }
 }
 
 @media (min-width:760px) {
@@ -416,6 +401,38 @@ exports[`Storyshots Molecules | Drawer With Custom Title 1`] = `
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
+  position: relative;
+  position: relative;
+}
+
+.c8::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  background: transparent;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+}
+
+.c8::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  background: transparent;
+  z-index: 1;
+  opacity: 0;
+  bottom: 0;
+  background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
 }
 
 .c9 {
@@ -423,6 +440,18 @@ exports[`Storyshots Molecules | Drawer With Custom Title 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  overflow-y: auto;
 }
 
 .c10 {
@@ -580,65 +609,6 @@ exports[`Storyshots Molecules | Drawer With Custom Title 1`] = `
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
-}
-
-@media (min-width:976px) {
-  .c8 {
-    position: relative;
-  }
-
-  .c8::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    top: 0;
-    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c8 {
-    position: relative;
-  }
-
-  .c8::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    bottom: 0;
-    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c9 {
-    min-height: 0;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -webkit-flex-shrink: 1;
-    -ms-flex-negative: 1;
-    flex-shrink: 1;
-    -webkit-flex-basis: auto;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-    overflow-y: auto;
-  }
 }
 
 @media (min-width:760px) {
@@ -849,6 +819,38 @@ exports[`Storyshots Molecules | Drawer With Ref Story 1`] = `
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
+  position: relative;
+  position: relative;
+}
+
+.c8::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  background: transparent;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+}
+
+.c8::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  background: transparent;
+  z-index: 1;
+  opacity: 0;
+  bottom: 0;
+  background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
 }
 
 .c9 {
@@ -856,6 +858,18 @@ exports[`Storyshots Molecules | Drawer With Ref Story 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  overflow-y: auto;
 }
 
 .c10 {
@@ -994,65 +1008,6 @@ exports[`Storyshots Molecules | Drawer With Ref Story 1`] = `
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
-}
-
-@media (min-width:976px) {
-  .c8 {
-    position: relative;
-  }
-
-  .c8::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    top: 0;
-    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c8 {
-    position: relative;
-  }
-
-  .c8::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    bottom: 0;
-    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c9 {
-    min-height: 0;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -webkit-flex-shrink: 1;
-    -ms-flex-negative: 1;
-    flex-shrink: 1;
-    -webkit-flex-basis: auto;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-    overflow-y: auto;
-  }
 }
 
 @media (min-width:760px) {
