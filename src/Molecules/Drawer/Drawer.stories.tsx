@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Drawer, Typography, Icon, Flexbox } from '../../index';
+import { Drawer, Typography, Icon, Flexbox, FadedScroll } from '../../index';
 import { useOnClickOutside } from '../../common/Hooks';
 
 export default {
@@ -9,7 +9,17 @@ export default {
   },
 };
 
-const content = (
+const contentSmall = (
+  <div>
+    <Typography type="primary" as="p">
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
+      sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+    </Typography>
+  </div>
+);
+
+const contentLarge = (
   <div>
     <Typography type="primary" as="p">
       Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
@@ -66,7 +76,7 @@ export const defaultStory = () => {
           Toggle drawer
         </button>
         <Drawer onClose={onClose} title="Drawer title" open={open}>
-          {content}
+          {contentLarge}
         </Drawer>
       </div>
     );
@@ -107,7 +117,7 @@ export const withCustomTitle = () => {
           }
           open={open}
         >
-          {content}
+          {contentSmall}
         </Drawer>
       </div>
     );
@@ -117,6 +127,36 @@ export const withCustomTitle = () => {
 
 withCustomTitle.story = {
   name: 'With a custom title',
+};
+
+export const integrationWithFadedScroll = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const toggle = () => {
+      setOpen(!open);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <div>
+        <button type="button" onClick={toggle}>
+          Toggle drawer
+        </button>
+        <Drawer onClose={onClose} title="Drawer title" open={open}>
+          <FadedScroll enableMobileFade>{contentLarge}</FadedScroll>
+        </Drawer>
+      </div>
+    );
+  };
+  return <Example />;
+};
+
+integrationWithFadedScroll.story = {
+  name: 'Integration: With FadedScroll',
 };
 
 export const WithRefStory = () => {

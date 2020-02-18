@@ -6,14 +6,14 @@ import { RemoveScroll } from 'react-remove-scroll';
 import { motion } from 'framer-motion';
 import { Props, TitleProps } from './Drawer.types';
 import { isBoolean, isElement } from '../../common/utils';
-import { Typography, Icon, useKeyPress, FadedScroll, Portal, useMedia, Button } from '../..';
+import { Typography, Icon, useKeyPress, Portal, useMedia, Button } from '../..';
 
 const CROSS_SIZE = 5;
+const PADDING = 5;
 const displayName = 'Drawer';
 
 const Container = styled(motion.div)`
   box-sizing: border-box;
-  padding: ${({ theme }) => theme.spacing.unit(5)}px;
   width: 100%;
   height: 100%;
   background: ${({ theme }) => theme.color.card};
@@ -36,13 +36,15 @@ const Container = styled(motion.div)`
 
 const CloseButton = styled(Button)`
   position: absolute;
-  top: 0;
-  right: 0;
+  top: ${p => p.theme.spacing.unit(PADDING)}px;
+  right: ${p => p.theme.spacing.unit(PADDING)}px;
 `;
 
 const Content = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
+  margin-bottom: ${p => p.theme.spacing.unit(PADDING)}px;
+  padding: 0 ${p => p.theme.spacing.unit(PADDING)}px;
 `;
 
 const H2 = styled.h2`
@@ -51,9 +53,13 @@ const H2 = styled.h2`
 
 const TitleWrapper = styled.div`
   position: relative;
+  padding: ${p =>
+    `${p.theme.spacing.unit(PADDING)}px ${p.theme.spacing.unit(PADDING)}px 0 ${p.theme.spacing.unit(
+      PADDING,
+    )}px`};
   margin-bottom: ${p => p.theme.spacing.unit(2)}px;
   min-height: ${p => p.theme.spacing.unit(CROSS_SIZE)}px;
-  flex: 1 0 auto;
+  flex: 0 0 auto;
 `;
 
 const animationProps = {
@@ -73,6 +79,7 @@ const animationProps = {
 };
 
 const components = {
+  CloseButton,
   Container,
   Content,
   TitleWrapper,
@@ -93,7 +100,7 @@ const Title: React.FC<TitleProps> = ({ title, uid }) => {
 };
 
 export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
-  ({ className, children, onClose, open: isOpenExternal, title }, ref) => {
+  ({ className, children, disableContentStyle, onClose, open: isOpenExternal, title }, ref) => {
     const isControlled = isBoolean(isOpenExternal);
     const escapePress = useKeyPress('Escape');
     const [isOpenInternal, setIsOpenInternal] = useState(true);
@@ -127,7 +134,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
                   <Icon.CrossThin size={CROSS_SIZE} title="Close this drawer" />
                 </CloseButton>
               </TitleWrapper>
-              <FadedScroll>{children}</FadedScroll>
+              {disableContentStyle ? children : <Content>{children}</Content>}
             </Container>
           </RemoveScroll>
         </FocusLock>
