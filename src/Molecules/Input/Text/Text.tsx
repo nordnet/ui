@@ -7,8 +7,19 @@ import NormalizedElements from '../../../common/NormalizedElements';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
+const getInputHeight = (size: string | undefined) => {
+  switch (size) {
+    case 's':
+      return 8;
+    case 'm':
+      return 10.75;
+    default:
+      return 10;
+  }
+};
+
 const height = css<Pick<Props, 'size'>>`
-  height: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+  height: ${p => p.theme.spacing.unit(getInputHeight(p.size))}px;
 `;
 
 const background = css<Pick<Props, 'disabled'>>`

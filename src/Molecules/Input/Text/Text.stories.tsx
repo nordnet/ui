@@ -326,6 +326,48 @@ export const small = () => (
   />
 );
 
+export const medium = () => (
+  <Display
+    title={`Size = "m"`}
+    items={[
+      {
+        component: <Input.Text label="Label" size="m" placeholder="Placeholder" />,
+        title: 'Default',
+      },
+      {
+        component: <Input.Text label="Label" size="m" width="100%" placeholder="Placeholder" />,
+        title: 'Full width',
+      },
+      {
+        component: (
+          <Input.Text
+            label="Label"
+            size="m"
+            placeholder="Placeholder"
+            error="Some error text that will wrap itself over couple of lines"
+          />
+        ),
+        title: 'Error',
+      },
+      {
+        component: (
+          <Input.Text
+            label="Label"
+            size="m"
+            placeholder="Placeholder"
+            leftAddon={<Icon.Bolt size={4} />}
+          />
+        ),
+        title: 'Left addon',
+      },
+      {
+        component: <Input.Text label="Label" size="m" placeholder="Placeholder" rightAddon="SEK" />,
+        title: 'Right addon',
+      },
+    ]}
+  />
+);
+
 export const withLabelTooltip = () => (
   <Input.Text label="Label" labelTooltip="Tooltip content" placeholder="Placeholder" />
 );
