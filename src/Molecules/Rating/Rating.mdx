@@ -1,0 +1,22 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { Playground } from '../../../docs/Playground';
+import { Rating } from './Rating';
+
+# Rating
+
+This component will render5 star icons with 0 to 5 filled in star icons depending on what props you pass to it.
+Only integer number of filled stars.
+
+## Props
+<Props of={Rating} />
+
+## Usage
+
+Basic usage
+
+```javascript
+<Rating rating={3} />
+```
+
+## Playground
+<Playground code={`<Rating rating={3} />`} />
