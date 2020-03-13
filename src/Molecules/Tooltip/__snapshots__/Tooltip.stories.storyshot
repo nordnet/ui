@@ -22,6 +22,10 @@ exports[`Storyshots Molecules | Tooltip Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] = `
+.c7 {
+  margin-bottom: 16px;
+}
+
 .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -123,7 +127,7 @@ exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] =
   flex: 0 0 auto;
 }
 
-.c7 {
+.c8 {
   display: block;
 }
 
@@ -212,21 +216,25 @@ exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] =
         <div
           className="c6"
         >
-          <button
+          <div
             className="c7"
-            data-reach-tooltip-trigger=""
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseMove={[Function]}
           >
-            Hover me
-          </button>
+            <button
+              className="c8"
+              data-reach-tooltip-trigger=""
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseMove={[Function]}
+            >
+              Hover me
+            </button>
+          </div>
           <button
-            className="c7"
+            className="c8"
             onClick={[Function]}
           >
             Open modal
