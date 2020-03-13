@@ -80,6 +80,7 @@ const zIndex: Theme['zIndex'] = {
   dropdown: 300,
   overlay: 400,
   modal: 500,
+  overlayInModal: 600,
 };
 
 const getSizesValues = pipe(

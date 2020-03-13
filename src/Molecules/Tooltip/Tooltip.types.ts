@@ -1,9 +1,11 @@
-import { TooltipProps } from '@reach/tooltip';
+import { TooltipProps as ReachProps } from '@reach/tooltip';
 
 export type Props = {
   className?: string;
   /** @default bottom */
   position?: 'top' | 'right' | 'bottom' | 'left';
-} & TooltipProps;
+  /** Adjusts z-index when used inside Modal */
+  inModal?: boolean;
+} & ReachProps;
 
 export type TooltipComponent = React.FC<Props>;
