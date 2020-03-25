@@ -406,6 +406,10 @@ Array [
   display: block;
 }
 
+.c1 {
+  fill: #FFFFFF;
+}
+
 <div
     style={
       Object {
@@ -420,14 +424,14 @@ Array [
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
-      viewBox="0 0 24 24"
+      viewBox="0 0 20 20"
     >
       <path
-        d="M12,23.8695652 C18.627417,23.8695652 24,18.5553799 24,12 C24,5.44462014 18.627417,0.130434783 12,0.130434783 C5.372583,0.130434783 0,5.44462014 0,12 C0,18.5553799 5.372583,23.8695652 12,23.8695652 Z"
+        d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
       />
       <polygon
-        fill="#FFF"
-        points="16.474 8.87 17.407 9.797 11 16.174 7.121 12.313 8.053 11.385 11 14.318"
+        className="c1"
+        points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
       />
     </svg>
   </div>,
@@ -808,7 +812,7 @@ Array [
 }
 
 .c1 {
-  fill: #6E6E69;
+  fill: #FFFFFF;
 }
 
 <div
@@ -825,20 +829,14 @@ Array [
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
-      viewBox="0 0 24 24"
+      viewBox="0 0 20 20"
     >
       <path
-        d="M12,23.8695652 C18.627417,23.8695652 24,18.5553799 24,12 C24,5.44462014 18.627417,0.130434783 12,0.130434783 C5.372583,0.130434783 0,5.44462014 0,12 C0,18.5553799 5.372583,23.8695652 12,23.8695652 Z"
+        d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
       />
       <polygon
         className="c1"
-        points="11.492 6.847 11.492 17.137 12.492 17.137 12.492 6.847"
-        transform="rotate(-45 11.992 11.992)"
-      />
-      <polygon
-        className="c1"
-        points="11.492 6.847 11.492 17.137 12.492 17.137 12.492 6.847"
-        transform="rotate(45 11.992 11.992)"
+        points="8.681 9.967 5.073 6.333 6.396 5 10.004 8.634 13.604 5.007 14.916 6.329 11.316 9.956 15 13.667 13.677 15 9.993 11.289 6.312 14.997 5 13.675"
       />
     </svg>
   </div>,
@@ -1501,6 +1499,10 @@ Array [
   display: block;
 }
 
+.c1 {
+  fill: #FFFFFF;
+}
+
 <div
     style={
       Object {
@@ -1515,14 +1517,14 @@ Array [
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
-      viewBox="0 0 24 24"
+      viewBox="0 0 20 20"
     >
       <path
-        d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
+        d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
       />
-      <path
-        d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
-        fill="#FFFFFF"
+      <polygon
+        className="c1"
+        points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
       />
     </svg>
   </div>,
@@ -2652,6 +2654,10 @@ Array [
   display: block;
 }
 
+.c1 {
+  fill: #FFFFFF;
+}
+
 <div
     style={
       Object {
@@ -2666,14 +2672,14 @@ Array [
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
-      viewBox="0 0 24 24"
+      viewBox="0 0 20 20"
     >
       <polygon
-        points="12 1 24 23 0 23"
+        points="10 1 20 19 0 19"
       />
-      <path
-        d="M11,10 L13,10 L13,16 L11,16 L11,10 Z M11,17 L13,17 L13,19 L11,19 L11,17 Z"
-        fill="#FFFFFF"
+      <polygon
+        className="c1"
+        points="11 14 11 16 9 16 9 14 11 14 11 8 11 13 9 13 9 8 11 8"
       />
     </svg>
   </div>,
@@ -2695,7 +2701,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
   display: block;
 }
 
-.c7 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2709,7 +2715,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
   display: block;
 }
 
-.c8 {
+.c10 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2723,7 +2729,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
   display: block;
 }
 
-.c9 {
+.c11 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2737,7 +2743,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
   display: block;
 }
 
-.c10 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2752,23 +2758,35 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
 }
 
 .c4 {
-  fill: #6E6E69;
+  fill: #FFFFFF;
 }
 
 .c5 {
-  stroke: #6E6E69;
+  fill: #FFFFFF;
 }
 
 .c6 {
   stroke: #6E6E69;
 }
 
-.c11 {
+.c7 {
+  fill: #FFFFFF;
+}
+
+.c8 {
   stroke: #6E6E69;
 }
 
-.c12 {
+.c13 {
   stroke: #6E6E69;
+}
+
+.c14 {
+  stroke: #6E6E69;
+}
+
+.c15 {
+  fill: #FFFFFF;
 }
 
 .c0 {
@@ -3224,14 +3242,14 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          viewBox="0 0 24 24"
+          viewBox="0 0 20 20"
         >
           <path
-            d="M12,23.8695652 C18.627417,23.8695652 24,18.5553799 24,12 C24,5.44462014 18.627417,0.130434783 12,0.130434783 C5.372583,0.130434783 0,5.44462014 0,12 C0,18.5553799 5.372583,23.8695652 12,23.8695652 Z"
+            d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
           />
           <polygon
-            fill="#FFF"
-            points="16.474 8.87 17.407 9.797 11 16.174 7.121 12.313 8.053 11.385 11 14.318"
+            className="c4"
+            points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
           />
         </svg>
       </div>
@@ -3603,20 +3621,14 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          viewBox="0 0 24 24"
+          viewBox="0 0 20 20"
         >
           <path
-            d="M12,23.8695652 C18.627417,23.8695652 24,18.5553799 24,12 C24,5.44462014 18.627417,0.130434783 12,0.130434783 C5.372583,0.130434783 0,5.44462014 0,12 C0,18.5553799 5.372583,23.8695652 12,23.8695652 Z"
+            d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
           />
           <polygon
-            className="c4"
-            points="11.492 6.847 11.492 17.137 12.492 17.137 12.492 6.847"
-            transform="rotate(-45 11.992 11.992)"
-          />
-          <polygon
-            className="c4"
-            points="11.492 6.847 11.492 17.137 12.492 17.137 12.492 6.847"
-            transform="rotate(45 11.992 11.992)"
+            className="c5"
+            points="8.681 9.967 5.073 6.333 6.396 5 10.004 8.634 13.604 5.007 14.916 6.329 11.316 9.956 15 13.667 13.677 15 9.993 11.289 6.312 14.997 5 13.675"
           />
         </svg>
       </div>
@@ -3649,7 +3661,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            className="c5"
+            className="c6"
             d="m 1 1 l 22 22 m -22 0 l 22 -22"
             strokeWidth={2}
           />
@@ -4253,14 +4265,14 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          viewBox="0 0 24 24"
+          viewBox="0 0 20 20"
         >
           <path
-            d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
+            d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
           />
-          <path
-            d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
-            fill="#FFFFFF"
+          <polygon
+            className="c7"
+            points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
           />
         </svg>
       </div>
@@ -4611,7 +4623,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
             transform="translate(1 1)"
           >
             <circle
-              className="c6"
+              className="c8"
               cx="11"
               cy="11"
               fill="none"
@@ -4935,7 +4947,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c7"
+          className="c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -4974,7 +4986,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c8"
+          className="c10"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -5018,7 +5030,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c9"
+          className="c11"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -5057,7 +5069,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c10"
+          className="c12"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -5138,7 +5150,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            className="c11"
+            className="c13"
             d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
             strokeWidth="1"
           />
@@ -5173,7 +5185,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            className="c12"
+            className="c14"
             d="M12,3.28909585 L9.7518819,10.3333333 L2.94990324,10.3333333 L8.34965326,14.4696321 L6.10344598,21.3821992 L12,17.0986537 L17.896554,21.3821992 L15.6503467,14.4696321 L21.0500967,10.3333333 L14.2481181,10.3333333 L12,3.28909585 Z"
             strokeWidth="2"
           />
@@ -5340,14 +5352,14 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          viewBox="0 0 24 24"
+          viewBox="0 0 20 20"
         >
           <polygon
-            points="12 1 24 23 0 23"
+            points="10 1 20 19 0 19"
           />
-          <path
-            d="M11,10 L13,10 L13,16 L11,16 L11,10 Z M11,17 L13,17 L13,19 L11,19 L11,17 Z"
-            fill="#FFFFFF"
+          <polygon
+            className="c15"
+            points="11 14 11 16 9 16 9 14 11 14 11 8 11 13 9 13 9 8 11 8"
           />
         </svg>
       </div>
@@ -5481,16 +5493,28 @@ exports[`Storyshots Atoms | Icon With modified stroke 1`] = `
   fill: #FF1900;
 }
 
+.c8 {
+  fill: #FF1900;
+}
+
 .c5 {
   stroke: #00D200;
+}
+
+.c9 {
+  fill: #FF1900;
 }
 
 .c4 {
   stroke: #00D200;
 }
 
-.c8 {
+.c11 {
   stroke: #00D200;
+}
+
+.c10 {
+  fill: #FF1900;
 }
 
 .c0 {
@@ -5613,6 +5637,34 @@ exports[`Storyshots Atoms | Icon With modified stroke 1`] = `
     <div
       className="c2"
     >
+      CheckMarkCircle with stroke modified
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="c6"
+        focusable="false"
+        preserveAspectRatio="xMidYMid meet"
+        role="presentation"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+        />
+        <polygon
+          className="c7"
+          points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       CrossCircle with stroke modified
     </div>
     <div>
@@ -5622,20 +5674,70 @@ exports[`Storyshots Atoms | Icon With modified stroke 1`] = `
         focusable="false"
         preserveAspectRatio="xMidYMid meet"
         role="presentation"
-        viewBox="0 0 24 24"
+        viewBox="0 0 20 20"
       >
         <path
-          d="M12,23.8695652 C18.627417,23.8695652 24,18.5553799 24,12 C24,5.44462014 18.627417,0.130434783 12,0.130434783 C5.372583,0.130434783 0,5.44462014 0,12 C0,18.5553799 5.372583,23.8695652 12,23.8695652 Z"
+          d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
         />
         <polygon
-          className="c7"
-          points="11.492 6.847 11.492 17.137 12.492 17.137 12.492 6.847"
-          transform="rotate(-45 11.992 11.992)"
+          className="c8"
+          points="8.681 9.967 5.073 6.333 6.396 5 10.004 8.634 13.604 5.007 14.916 6.329 11.316 9.956 15 13.667 13.677 15 9.993 11.289 6.312 14.997 5 13.675"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      InfoCircle with stroke modified
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="c6"
+        focusable="false"
+        preserveAspectRatio="xMidYMid meet"
+        role="presentation"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
         />
         <polygon
-          className="c7"
-          points="11.492 6.847 11.492 17.137 12.492 17.137 12.492 6.847"
-          transform="rotate(45 11.992 11.992)"
+          className="c9"
+          points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      WarningTriangle with stroke modified
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="c6"
+        focusable="false"
+        preserveAspectRatio="xMidYMid meet"
+        role="presentation"
+        viewBox="0 0 20 20"
+      >
+        <polygon
+          points="10 1 20 19 0 19"
+        />
+        <polygon
+          className="c10"
+          points="11 14 11 16 9 16 9 14 11 14 11 8 11 13 9 13 9 8 11 8"
         />
       </svg>
     </div>
@@ -5659,7 +5761,7 @@ exports[`Storyshots Atoms | Icon With modified stroke 1`] = `
         viewBox="0 0 24 24"
       >
         <path
-          className="c8"
+          className="c11"
           d="M12,3.28909585 L9.7518819,10.3333333 L2.94990324,10.3333333 L8.34965326,14.4696321 L6.10344598,21.3821992 L12,17.0986537 L17.896554,21.3821992 L15.6503467,14.4696321 L21.0500967,10.3333333 L14.2481181,10.3333333 L12,3.28909585 Z"
           strokeWidth="2"
         />
@@ -5685,7 +5787,7 @@ exports[`Storyshots Atoms | Icon With modified stroke 1`] = `
         viewBox="0 0 24 24"
       >
         <path
-          className="c8"
+          className="c11"
           d="M12,3.28909585 L9.7518819,10.3333333 L2.94990324,10.3333333 L8.34965326,14.4696321 L6.10344598,21.3821992 L12,17.0986537 L17.896554,21.3821992 L15.6503467,14.4696321 L21.0500967,10.3333333 L14.2481181,10.3333333 L12,3.28909585 Z"
           strokeWidth="2"
         />

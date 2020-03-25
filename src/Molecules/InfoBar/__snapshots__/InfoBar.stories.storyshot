@@ -28,7 +28,7 @@ exports[`Storyshots Molecules | InfoBar Default usage 1`] = `
   box-sizing: border-box;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
   -webkit-box-flex: 2;
   -webkit-flex-grow: 2;
@@ -50,7 +50,11 @@ exports[`Storyshots Molecules | InfoBar Default usage 1`] = `
   display: block;
 }
 
-.c9 {
+.c8 {
+  fill: #FFFFFF;
+}
+
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -150,23 +154,23 @@ exports[`Storyshots Molecules | InfoBar Default usage 1`] = `
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
-                viewBox="0 0 24 24"
+                viewBox="0 0 20 20"
               >
                 <path
-                  d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
+                  d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
                 />
-                <path
-                  d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
-                  fill="#FFFFFF"
+                <polygon
+                  className="c8"
+                  points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
                 />
               </svg>
             </div>
           </div>
           <div
-            className="c8"
+            className="c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               InfoBar should be used on top of the pages to show Marketing or Customer Support communication messages. Content of the InfoBar is just rendered 
               <code>
@@ -209,7 +213,7 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
   box-sizing: border-box;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
   -webkit-box-flex: 2;
   -webkit-flex-grow: 2;
@@ -231,7 +235,7 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
   display: block;
 }
 
-.c11 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -245,7 +249,7 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
   display: block;
 }
 
-.c13 {
+.c15 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -259,11 +263,23 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
   display: block;
 }
 
-.c14 {
+.c18 {
+  fill: #FFFFFF;
+}
+
+.c16 {
   fill: #FF1900;
 }
 
-.c9 {
+.c8 {
+  fill: #FFFFFF;
+}
+
+.c13 {
+  fill: #FFFFFF;
+}
+
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -297,61 +313,61 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
   cursor: pointer;
 }
 
-.c10 {
+.c11 {
   background: #FFCF00;
   color: #282823;
 }
 
-.c10 span {
+.c11 span {
   color: inherit;
 }
 
-.c10 a {
+.c11 a {
   font-weight: bold;
   color: #282823;
 }
 
-.c10 button {
+.c11 button {
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.c12 {
+.c14 {
   background: #FF1900;
   color: #FFFFFF;
 }
 
-.c12 span {
+.c14 span {
   color: inherit;
 }
 
-.c12 a {
+.c14 a {
   font-weight: bold;
   color: #FFFFFF;
 }
 
-.c12 button {
+.c14 button {
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.c15 {
+.c17 {
   background: #00D200;
   color: #282823;
 }
 
-.c15 span {
+.c17 span {
   color: inherit;
 }
 
-.c15 a {
+.c17 a {
   font-weight: bold;
   color: #282823;
 }
 
-.c15 button {
+.c17 button {
   background: none;
   border: none;
   cursor: pointer;
@@ -427,23 +443,23 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
-                viewBox="0 0 24 24"
+                viewBox="0 0 20 20"
               >
                 <path
-                  d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
+                  d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
                 />
-                <path
-                  d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
-                  fill="#FFFFFF"
+                <polygon
+                  className="c8"
+                  points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
                 />
               </svg>
             </div>
           </div>
           <div
-            className="c8"
+            className="c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               We’re currently working on the new main menu. Links marked with arrow icon will redirect you to the previous website experience. 
               <a
@@ -488,23 +504,23 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
-                viewBox="0 0 24 24"
+                viewBox="0 0 20 20"
               >
                 <path
-                  d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
+                  d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
                 />
-                <path
-                  d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
-                  fill="#FFFFFF"
+                <polygon
+                  className="c8"
+                  points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
                 />
               </svg>
             </div>
           </div>
           <div
-            className="c8"
+            className="c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               We’re currently working on the new main menu. Links marked with arrow icon will redirect you to the previous website experience. 
               <a
@@ -526,7 +542,7 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
   </code>
   <br />
   <div
-    className="c10"
+    className="c11"
   >
     <div
       className="c2"
@@ -545,27 +561,27 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className="c11"
+                className="c12"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
-                viewBox="0 0 24 24"
+                viewBox="0 0 20 20"
               >
                 <polygon
-                  points="12 1 24 23 0 23"
+                  points="10 1 20 19 0 19"
                 />
-                <path
-                  d="M11,10 L13,10 L13,16 L11,16 L11,10 Z M11,17 L13,17 L13,19 L11,19 L11,17 Z"
-                  fill="#FFFFFF"
+                <polygon
+                  className="c13"
+                  points="11 14 11 16 9 16 9 14 11 14 11 8 11 13 9 13 9 8 11 8"
                 />
               </svg>
             </div>
           </div>
           <div
-            className="c8"
+            className="c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               We’re currently working on the new main menu. Links marked with arrow icon will redirect you to the previous website experience. 
               <a
@@ -587,7 +603,7 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
   </code>
   <br />
   <div
-    className="c12"
+    className="c14"
   >
     <div
       className="c2"
@@ -606,33 +622,27 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className="c13"
+                className="c15"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
-                viewBox="0 0 24 24"
+                viewBox="0 0 20 20"
               >
                 <path
-                  d="M12,23.8695652 C18.627417,23.8695652 24,18.5553799 24,12 C24,5.44462014 18.627417,0.130434783 12,0.130434783 C5.372583,0.130434783 0,5.44462014 0,12 C0,18.5553799 5.372583,23.8695652 12,23.8695652 Z"
+                  d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
                 />
                 <polygon
-                  className="c14"
-                  points="11.492 6.847 11.492 17.137 12.492 17.137 12.492 6.847"
-                  transform="rotate(-45 11.992 11.992)"
-                />
-                <polygon
-                  className="c14"
-                  points="11.492 6.847 11.492 17.137 12.492 17.137 12.492 6.847"
-                  transform="rotate(45 11.992 11.992)"
+                  className="c16"
+                  points="8.681 9.967 5.073 6.333 6.396 5 10.004 8.634 13.604 5.007 14.916 6.329 11.316 9.956 15 13.667 13.677 15 9.993 11.289 6.312 14.997 5 13.675"
                 />
               </svg>
             </div>
           </div>
           <div
-            className="c8"
+            className="c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               The US market is currently down, we are fixing it right now. It will soon be back and running. 
               <a
@@ -654,7 +664,7 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
   </code>
   <br />
   <div
-    className="c15"
+    className="c17"
   >
     <div
       className="c2"
@@ -673,27 +683,27 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className="c11"
+                className="c12"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
-                viewBox="0 0 24 24"
+                viewBox="0 0 20 20"
               >
                 <path
-                  d="M12,23.8695652 C18.627417,23.8695652 24,18.5553799 24,12 C24,5.44462014 18.627417,0.130434783 12,0.130434783 C5.372583,0.130434783 0,5.44462014 0,12 C0,18.5553799 5.372583,23.8695652 12,23.8695652 Z"
+                  d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
                 />
                 <polygon
-                  fill="#FFF"
-                  points="16.474 8.87 17.407 9.797 11 16.174 7.121 12.313 8.053 11.385 11 14.318"
+                  className="c18"
+                  points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
                 />
               </svg>
             </div>
           </div>
           <div
-            className="c8"
+            className="c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               We have fixed the US market issue. It is now back to service. 
               <a
@@ -724,7 +734,7 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
   padding-right: 8px;
 }
 
-.c11 {
+.c12 {
   padding-left: 8px;
 }
 
@@ -744,7 +754,7 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
   box-sizing: border-box;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
   -webkit-box-flex: 2;
   -webkit-flex-grow: 2;
@@ -752,7 +762,7 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
   flex-grow: 2;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
@@ -773,7 +783,7 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
   display: block;
 }
 
-.c12 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -787,7 +797,11 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
   display: block;
 }
 
-.c9 {
+.c8 {
+  fill: #FFFFFF;
+}
+
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -887,23 +901,23 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
-                viewBox="0 0 24 24"
+                viewBox="0 0 20 20"
               >
                 <path
-                  d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
+                  d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
                 />
-                <path
-                  d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
-                  fill="#FFFFFF"
+                <polygon
+                  className="c8"
+                  points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
                 />
               </svg>
             </div>
           </div>
           <div
-            className="c8"
+            className="c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               Without onClose prop InfoBar cannot be dismissed
             </span>
@@ -939,32 +953,32 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
-                viewBox="0 0 24 24"
+                viewBox="0 0 20 20"
               >
                 <path
-                  d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
+                  d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
                 />
-                <path
-                  d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
-                  fill="#FFFFFF"
+                <polygon
+                  className="c8"
+                  points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
                 />
               </svg>
             </div>
           </div>
           <div
-            className="c8"
+            className="c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               With onClose prop InfoBar can be dismissed, but ParentComponent is in charge to react and actually hide the InfoBar.
             </span>
           </div>
           <div
-            className="c10"
+            className="c11"
           >
             <div
-              className="c11"
+              className="c12"
             >
               <button
                 onClick={[Function]}
@@ -972,7 +986,7 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
               >
                 <svg
                   aria-hidden="true"
-                  className="c12"
+                  className="c13"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"

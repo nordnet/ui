@@ -42,9 +42,35 @@ export const withModifiedStroke = () => (
         component: <Icon.CrossThin size={10} stroke={t => t.color.positive} />,
       },
       {
+        title: 'CheckMarkCircle with stroke modified',
+        component: (
+          <Icon.CheckMarkCircle
+            size={10}
+            fill={t => t.color.positive}
+            stroke={t => t.color.negative}
+          />
+        ),
+      },
+      {
         title: 'CrossCircle with stroke modified',
         component: (
           <Icon.CrossCircle size={10} fill={t => t.color.positive} stroke={t => t.color.negative} />
+        ),
+      },
+      {
+        title: 'InfoCircle with stroke modified',
+        component: (
+          <Icon.InfoCircle size={10} fill={t => t.color.positive} stroke={t => t.color.negative} />
+        ),
+      },
+      {
+        title: 'WarningTriangle with stroke modified',
+        component: (
+          <Icon.WarningTriangle
+            size={10}
+            fill={t => t.color.positive}
+            stroke={t => t.color.negative}
+          />
         ),
       },
       {

@@ -135,6 +135,8 @@ export type Theme = {
     svgFill: RawColor['gray0'];
     /** gray2 */
     svgStroke: RawColor['gray2'];
+    /** white */
+    svgStokeLight: RawColor['white'];
     /** gray4 */
     inputBorder: RawColor['gray4'];
     /** gray1 */

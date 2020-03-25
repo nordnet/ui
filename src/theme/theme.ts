@@ -186,6 +186,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       streamingBolt: rawColor.index,
       svgFill: rawColor.gray0,
       svgStroke: rawColor.gray2,
+      svgStokeLight: rawColor.white,
       text: rawColor.gray0,
       textLight: rawColor.white, // FIXME: to be removed later
       warning: a11yColors ? rawColor.a11yIndex : rawColor.index,
