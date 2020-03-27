@@ -36,7 +36,7 @@ exports[`Storyshots Molecules | Rating Rating 0 1`] = `
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #A0A09B;
+  fill: #EBEBE8;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -44,7 +44,7 @@ exports[`Storyshots Molecules | Rating Rating 0 1`] = `
 }
 
 .c3 {
-  stroke: #A0A09B;
+  stroke: #EBEBE8;
 }
 
 <div
@@ -164,7 +164,7 @@ exports[`Storyshots Molecules | Rating Rating 1 1`] = `
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #282823;
+  fill: #FFCF00;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -178,7 +178,7 @@ exports[`Storyshots Molecules | Rating Rating 1 1`] = `
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #A0A09B;
+  fill: #EBEBE8;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -186,11 +186,11 @@ exports[`Storyshots Molecules | Rating Rating 1 1`] = `
 }
 
 .c3 {
-  stroke: #282823;
+  stroke: #FFCF00;
 }
 
 .c5 {
-  stroke: #A0A09B;
+  stroke: #EBEBE8;
 }
 
 <div
@@ -310,7 +310,7 @@ exports[`Storyshots Molecules | Rating Rating 5 1`] = `
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #282823;
+  fill: #FFCF00;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -318,7 +318,7 @@ exports[`Storyshots Molecules | Rating Rating 5 1`] = `
 }
 
 .c3 {
-  stroke: #282823;
+  stroke: #FFCF00;
 }
 
 <div
@@ -438,7 +438,7 @@ exports[`Storyshots Molecules | Rating Rating Not Defined 1`] = `
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #A0A09B;
+  fill: #EBEBE8;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -446,7 +446,7 @@ exports[`Storyshots Molecules | Rating Rating Not Defined 1`] = `
 }
 
 .c3 {
-  stroke: #A0A09B;
+  stroke: #EBEBE8;
 }
 
 <div
