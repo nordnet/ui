@@ -7,7 +7,7 @@ import {
   Gutter,
   TemplateColumn,
   TemplateRow,
-  AreaName,
+  ItemProps,
   AreaInfo,
   Size,
 } from './CssGrid.types';
@@ -255,24 +255,75 @@ const StyledDiv = styled.div<Props>`
   }}
 ` as React.FC<Props>;
 
-export type ItemProps = {
-  area: AreaName;
-  justify?: 'start' | 'end' | 'center' | 'stretch';
-  align?: 'start' | 'end' | 'center' | 'stretch';
-  place?: string;
+const getMsJustifySelfStyles = (justify: ItemProps['justify']) =>
+  `-ms-grid-column-align: ${justify};`;
+
+const getMsAlignSelfStyles = (align: ItemProps['align']) => `-ms-grid-row-align: ${align};`;
+
+const getJustifySelfStyles = (justify: ItemProps['justify']) =>
+  justify
+    ? `
+  justify-self: ${justify};
+  ${getMsJustifySelfStyles(justify)}
+`
+    : '';
+
+const getAlignSelfStyles = (align: ItemProps['align']) =>
+  align
+    ? `
+  align-self: ${align};
+  ${getMsAlignSelfStyles(align)}
+`
+    : '';
+
+const getPlaceSelfStyles = (place: ItemProps['place']) => {
+  const styles = [];
+  if (typeof place === 'string' && place) {
+    const [alignOrBoth, justify] = place.split(' ') as [ItemProps['align'], ItemProps['justify']];
+    styles.push(`place-self: ${place};`);
+    styles.push(getMsAlignSelfStyles(alignOrBoth));
+    styles.push(getMsJustifySelfStyles(justify || alignOrBoth));
+  }
+  return styles.join('\n');
 };
 
-const RawCssGridItem = styled.div<ItemProps>`
-  box-sizing: border-box;
-  min-width: 0; /* prevents grid blowout */
-  ${({ justify }) => (justify ? `justify-self: ${justify};` : '')}
-  ${({ align }) => (align ? `align-self: ${align};` : '')}
-  ${({ place }) => (place ? `place-self: ${place};` : '')}
+const getCssGridItemStylesFromProps = ({
+  justify,
+  align,
+  place,
+}: Pick<ItemProps, 'justify' | 'align' | 'place'>) => `
+  ${getJustifySelfStyles(justify)}
+  ${getAlignSelfStyles(align)}
+  ${getPlaceSelfStyles(place)}
 `;
 
-export const CssGridItem: React.FC<ItemProps> = ({ align, area, children, justify, place }) => (
-  <RawCssGridItem {...{ align, area, children, justify, place }} />
-);
+const RawCssGridItem = styled.div<ItemProps & { css?: any }>`
+  box-sizing: border-box;
+  min-width: 0; /* prevents grid blowout */
+  ${p => getCssGridItemStylesFromProps(p)}
+  ${p =>
+    Object.keys(p.theme.breakpoints)
+      .filter(breakpoint => p[breakpoint])
+      .map(
+        breakpoint =>
+          `${p.theme.media.greaterThan(p.theme.breakpoints[breakpoint])} {
+          ${getCssGridItemStylesFromProps(p[breakpoint])}
+        }`,
+      )
+      .join('\n')}
+`;
+
+export const CssGridItem: React.FC<ItemProps> = ({
+  align,
+  area,
+  children,
+  justify,
+  place,
+  sm,
+  md,
+  lg,
+  xl,
+}) => <RawCssGridItem {...{ align, area, children, justify, place, sm, md, lg, xl }} />;
 CssGridItem.displayName = 'CssGrid.Item';
 
 const generateChildStyles = (areasInfo: Record<string, AreaInfo>, size: Size, theme: Theme) => (

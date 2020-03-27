@@ -82,7 +82,7 @@ export const SelectMachine = Machine<Context>(
     on: {
       [ACTION_TYPES.SYNC]: {
         actions: 'syncProps',
-        target: 'selection.unknown',
+        target: ['selection.unknown', 'interaction.unknown', 'open.unknown', 'correctness.unknown'],
       },
     },
     states: {
@@ -126,10 +126,10 @@ export const SelectMachine = Machine<Context>(
             },
           },
           on: {
-            onEntry: assign({ open: true }),
+            onEntry: 'open',
           },
           off: {
-            onEntry: assign({ open: false }),
+            onEntry: 'close',
           },
         },
       },
@@ -467,6 +467,8 @@ export const SelectMachine = Machine<Context>(
   },
   {
     actions: {
+      open: assign<Context>(() => ({ open: true })),
+      close: assign<Context>(() => ({ open: false })),
       updateSearch: assign<Context>({
         searchQuery: (_, e) => e.payload,
       }),

@@ -1,14 +1,22 @@
 import React from 'react';
-import { IconBase } from '../IconBase';
-import { BaseProps } from '../IconBase.types';
+import styled from 'styled-components';
+import { IconBase, getColor } from '../IconBase';
+import { ChildProps, StyledChildProps } from '../IconBase.types';
 
-export const WarningTriangle = (props: BaseProps) => {
+const StyledPolygon = styled.polygon<StyledChildProps>`
+  ${p => {
+    const strokeColor = getColor(p.theme, p.theme.color.svgStokeLight, p.strokeColorFn);
+    return `fill: ${strokeColor};`;
+  }}
+`;
+
+export const WarningTriangle = ({ stroke, ...props }: ChildProps) => {
   return (
-    <IconBase {...props}>
-      <polygon points="12 1 24 23 0 23" />
-      <path
-        d="M11,10 L13,10 L13,16 L11,16 L11,10 Z M11,17 L13,17 L13,19 L11,19 L11,17 Z"
-        fill="#FFFFFF"
+    <IconBase {...props} viewBox="0 0 20 20">
+      <polygon points="10 1 20 19 0 19" />
+      <StyledPolygon
+        strokeColorFn={stroke}
+        points="11 14 11 16 9 16 9 14 11 14 11 8 11 13 9 13 9 8 11 8"
       />
     </IconBase>
   );

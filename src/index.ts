@@ -32,6 +32,7 @@ import Drawer from './Molecules/Drawer';
 import FeedbackBanner from './Molecules/FeedbackBanner';
 import Fieldset from './Molecules/Fieldset';
 import FormField from './Molecules/FormField';
+import InfoBar from './Molecules/InfoBar';
 import Input from './Molecules/Input';
 import LabeledValue from './Molecules/LabeledValue';
 import Link from './Molecules/Link';
@@ -82,6 +83,7 @@ export {
   FormField,
   FormLabel,
   Icon,
+  InfoBar,
   Input,
   LabeledValue,
   Legend,

@@ -18,7 +18,7 @@ import {
   defaultComponents,
   defaultComponentsMultiselect,
 } from './lib/defaults';
-import { SelectMachine, Context, OptionLike, ACTION_TYPES } from './machine';
+import { SelectMachine, OptionLike, ACTION_TYPES } from './machine';
 import { Props, Action as ActionType } from './Select.types';
 
 import { assert } from '../../../common/utils';
@@ -61,7 +61,7 @@ const Select = (props: Props) => {
   const isFirstRender = useIsFirstRender();
 
   /******      Machine instantiation      ******/
-  const machineHandlers = useMachine<Context, any>(SelectMachine, {
+  const machineHandlers = useMachine(SelectMachine, {
     context: {
       label: props.label,
       error: props.error || '',

@@ -2,6 +2,7 @@
   "name": "@nordnet/ui",
   "version": "1.0.0-beta.X",
   "author": "Nordnet <frontend@nordnet.se> (https://nordnet.se)",
+  "repository": "https://github.com/nordnet/ui",
   "bugs": "https://github.com/nordnet/ui/issues",
   "main": "dist/cjs",
   "module": "dist/esm",
@@ -62,11 +63,11 @@
     }
   },
   "dependencies": {
-    "@reach/tooltip": "^0.6.3",
+    "@reach/tooltip": "^0.9.1",
     "@xstate/react": "^0.7.1",
     "color": "^3.1.1",
     "focus-within-polyfill": "^5.0.4",
-    "framer-motion": "^1.8.4",
+    "framer-motion": "^1.9.1",
     "ramda": "^0.26.1",
     "react-focus-lock": "^2.0.3",
     "react-intl": "^2.8.0",
@@ -113,7 +114,7 @@
     "@types/jest": "24.0.13",
     "@types/node": "^12.7.12",
     "@types/ramda": "0.26.8",
-    "@types/react": "16.9.5",
+    "@types/react": "16.9.25",
     "@types/react-dom": "16.9.1",
     "@types/react-intl": "2.3.17",
     "@types/react-router-dom": "5.1.0",
@@ -165,7 +166,7 @@
     "stylelint-config-recommended": "2.2.0",
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-processor-styled-components": "1.7.0",
-    "typescript": "3.3.4000",
+    "typescript": "3.8.3",
     "webpack": "4.32.0"
   },
   "resolutions": {

@@ -52,14 +52,14 @@ export const getAreasInfo = (
       const { coordinates, name, id } = area;
       const rows = coordinates.map(R.prop('row'));
       const cols = coordinates.map(R.prop('col'));
-      let rowStart = minimal(rows);
-      let rowSpan = maximal(rows) - rowStart;
+      let rowStart = minimal(rows) as number;
+      let rowSpan = (maximal(rows) as number) - rowStart;
       if (isGapPresented.row) {
         rowSpan *= 2;
         rowStart *= 2;
       }
-      let colStart = minimal(cols);
-      let colSpan = maximal(cols) - colStart;
+      let colStart = minimal(cols) as number;
+      let colSpan = (maximal(cols) as number) - colStart;
       if (isGapPresented.col) {
         colSpan *= 2;
         colStart *= 2;

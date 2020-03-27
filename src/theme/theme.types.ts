@@ -135,6 +135,8 @@ export type Theme = {
     svgFill: RawColor['gray0'];
     /** gray2 */
     svgStroke: RawColor['gray2'];
+    /** white */
+    svgStokeLight: RawColor['white'];
     /** gray4 */
     inputBorder: RawColor['gray4'];
     /** gray1 */
@@ -272,5 +274,6 @@ export type Theme = {
     dropdown: 300;
     overlay: 400;
     modal: 500;
+    overlayInModal: 600;
   };
 };

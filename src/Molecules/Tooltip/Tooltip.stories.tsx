@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Tooltip } from '../..';
+import { Box, Tooltip, Modal, Drawer } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
@@ -10,7 +10,7 @@ export default {
   },
 };
 
-const label = 'Modals should be used with care as they are quite intrusive on the user';
+const label = 'Information in a Tooltip should not be vital for the user to complete a task';
 
 const Button = styled.button`
   display: block;
@@ -67,4 +67,40 @@ export const withPosition = () => (
 
 withPosition.story = {
   name: 'With position defined',
+};
+
+export const zindexWars = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(false);
+
+    const openModal = () => {
+      setOpen(true);
+    };
+
+    const closeModal = () => {
+      setOpen(false);
+    };
+
+    return (
+      <Drawer>
+        <Box mb={4}>
+          <Tooltip label={label}>
+            <Button>Hover me</Button>
+          </Tooltip>
+        </Box>
+        <Button onClick={openModal}>Open modal</Button>
+        <Modal open={open} onClose={closeModal}>
+          <Tooltip label={label} inModal>
+            <Button>Hover me</Button>
+          </Tooltip>
+        </Modal>
+      </Drawer>
+    );
+  };
+
+  return <Example />;
+};
+
+zindexWars.story = {
+  name: 'Integration: With Drawer and Modal',
 };

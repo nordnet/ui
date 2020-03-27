@@ -6,7 +6,7 @@ export type LabelAddonProp = {
 export type Props = {
   label?: string;
   hideLabel?: boolean;
-
+  children: React.ReactNode;
   className?: string;
   error?: string;
   extraInfo?: string;

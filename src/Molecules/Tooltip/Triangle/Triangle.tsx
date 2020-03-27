@@ -1,9 +1,16 @@
 import React from 'react';
+import * as R from 'ramda';
 import styled, { css } from 'styled-components';
 import { Portal } from '../../..';
 import { InternalArrowProps, TriangleComponent, Props } from './Triangle.types';
 
 import { BORDER_SIZE, TRIANGLE_SIZE, OFFSET } from '../consts';
+
+// TODO: Remove CleanDiv on next release of Styled-Components. Use shouldForwardProp
+const Div = styled.div``;
+const CleanDiv = React.forwardRef<HTMLDivElement, any>((props, ref) => (
+  <Div ref={ref} as={props.forwardedAs} {...R.omit(['inModal, left, top, direction'])(props)} />
+));
 
 const arrowUp = css`
   &::before {
@@ -69,7 +76,7 @@ const arrowLeft = css`
   }
 `;
 
-const Arrow = styled.div<InternalArrowProps>`
+const Arrow = styled(CleanDiv)<InternalArrowProps>`
   position: absolute;
   left: ${p => p.left}px;
   top: ${p => p.top}px;
@@ -84,13 +91,13 @@ const Arrow = styled.div<InternalArrowProps>`
   }
 
   &::before {
-    z-index: 1;
+    z-index: ${p => (p.inModal ? p.theme.zIndex.overlayInModal : p.theme.zIndex.overlay)};
     left: 0;
     top: 0;
   }
 
   &::after {
-    z-index: 2;
+    z-index: ${p => (p.inModal ? p.theme.zIndex.overlayInModal : p.theme.zIndex.overlay)};
   }
 
   ${p => (p.direction === 'right' ? arrowRight : '')}
@@ -145,13 +152,18 @@ const getDirection = (tooltipPosition: Props['tooltipPosition']) => {
   return 'up';
 };
 
-export const Triangle: TriangleComponent = ({ triggerRect, tooltipPosition }) => {
+export const Triangle: TriangleComponent = ({ triggerRect, tooltipPosition, inModal }) => {
   const chosenPosition = getPosition(triggerRect, tooltipPosition);
   const direction = getDirection(tooltipPosition);
 
   return (
     <Portal>
-      <Arrow left={chosenPosition.left} top={chosenPosition.top} direction={direction} />
+      <Arrow
+        left={chosenPosition.left}
+        top={chosenPosition.top}
+        direction={direction}
+        inModal={inModal}
+      />
     </Portal>
   );
 };

@@ -28,7 +28,7 @@ const WithOptionalAddon: React.FC<LabelAddonProp> = ({ children, labelTooltip, h
     </Flexbox>
   );
 
-export const FormField: React.FC<Props> = React.forwardRef(
+export const FormField = React.forwardRef<HTMLDivElement, Props>(
   (
     {
       children,

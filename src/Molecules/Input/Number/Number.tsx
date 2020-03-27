@@ -117,6 +117,7 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
       : `
       padding: ${p.theme.spacing.unit(2)}px;
       margin: 0 -1px;
+      min-width: 0;
       z-index: 1;
       `}
   

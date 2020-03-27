@@ -483,3 +483,62 @@ export const conditionallyHiddenWrongWayShown = () => {
 conditionallyHiddenWrongWayShown.story = {
   name: 'Conditionally hidden: WRONG way [shown]',
 };
+
+const BgContent = styled.div`
+  background-color: ${p => p.theme.color.background};
+`;
+
+export const itemsWithDifferentPlacements = () => {
+  return (
+    <Grid.Container
+      templateColumns={['100px', '100px', '100px', '100px']}
+      templateRows={['100px', '100px', '100px']}
+      areas={[
+        ['alignStart', 'alignCenter', 'alignStretch', 'alignEnd'],
+        ['justifyStart', 'justifyCenter', 'justifyStretch', 'justifyEnd'],
+        ['placeStart', 'placeCenter', 'placeStretch', 'placeEnd'],
+      ]}
+    >
+      <Grid.Item area="alignStart" align="start">
+        <BgContent>left</BgContent>
+      </Grid.Item>
+      <Grid.Item area="alignCenter" align="center">
+        <BgContent>center</BgContent>
+      </Grid.Item>
+      <Grid.Item area="alignStretch" align="stretch">
+        <BgContent>stretch</BgContent>
+      </Grid.Item>
+      <Grid.Item area="alignEnd" align="end">
+        <BgContent>end</BgContent>
+      </Grid.Item>
+      <Grid.Item area="justifyStart" justify="start">
+        <BgContent>left</BgContent>
+      </Grid.Item>
+      <Grid.Item area="justifyCenter" justify="center">
+        <BgContent>center</BgContent>
+      </Grid.Item>
+      <Grid.Item area="justifyStretch" justify="stretch">
+        <BgContent>stretch</BgContent>
+      </Grid.Item>
+      <Grid.Item area="justifyEnd" justify="end">
+        <BgContent>end</BgContent>
+      </Grid.Item>
+      <Grid.Item area="placeStart" place="start">
+        <BgContent>left</BgContent>
+      </Grid.Item>
+      <Grid.Item area="placeCenter" place="center">
+        <BgContent>center</BgContent>
+      </Grid.Item>
+      <Grid.Item area="placeStretch" place="stretch">
+        <BgContent>stretch</BgContent>
+      </Grid.Item>
+      <Grid.Item area="placeEnd" place="end">
+        <BgContent>end</BgContent>
+      </Grid.Item>
+    </Grid.Container>
+  );
+};
+
+conditionallyHiddenWrongWayShown.story = {
+  name: 'Items with different placements',
+};

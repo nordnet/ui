@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import * as R from 'ramda';
 import styled from 'styled-components';
 import { VisuallyHidden, Icon, Typography } from '../..';
-import { SelectComponent } from './Select.types';
+import { SelectComponent, Props } from './Select.types';
 
 const SELECT_HEIGHT = 8;
 const ARROW_SPACE = 7;
@@ -67,7 +67,7 @@ const Select: SelectComponent = ({
   onFocus: onFocusFromProps,
 }) => {
   const [focus, setFocus] = useState(false);
-  const [value, setValue] = useState();
+  const [value, setValue] = useState<Props['value']>(undefined);
 
   const onChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     if (typeof onChangeFromProps === 'function') {
@@ -109,7 +109,7 @@ const Select: SelectComponent = ({
       <SelectWrapper focus={focus}>
         <StyledSelect
           disabled={disabled}
-          value={selectValue}
+          value={selectValue as any}
           {...(placeholder && !selectValue ? { defaultValue: PLACEHOLDER_VALUE } : {})}
           name={name}
           onChange={onChange}

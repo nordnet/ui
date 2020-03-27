@@ -47,6 +47,15 @@ type BaseProps = {
    */
   templateColumns?: TemplateColumn;
 };
+
+type BaseItemProps = {
+  area: AreaName;
+  justify?: 'start' | 'end' | 'center' | 'stretch';
+  align?: 'start' | 'end' | 'center' | 'stretch';
+  place?: string;
+};
+
+export type ItemProps = SizeAwareProps<BaseItemProps>;
 export type Props = SizeAwareProps<BaseProps>;
 
 export type Size = 'sm' | 'md' | 'lg' | 'xl' | undefined;

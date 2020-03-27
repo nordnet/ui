@@ -1,20 +1,22 @@
 import React from 'react';
-import { IconBase } from '../IconBase';
-import { BaseProps } from '../IconBase.types';
+import styled from 'styled-components';
+import { IconBase, getColor } from '../IconBase';
+import { ChildProps, StyledChildProps } from '../IconBase.types';
 
-export const CrossCircle = (props: BaseProps) => {
+const StyledPolygon = styled.polygon<StyledChildProps>`
+  ${p => {
+    const strokeColor = getColor(p.theme, p.theme.color.svgStokeLight, p.strokeColorFn);
+    return `fill: ${strokeColor};`;
+  }}
+`;
+
+export const CrossCircle = ({ stroke, ...props }: ChildProps) => {
   return (
-    <IconBase {...props}>
-      <path d="M12,23.8695652 C18.627417,23.8695652 24,18.5553799 24,12 C24,5.44462014 18.627417,0.130434783 12,0.130434783 C5.372583,0.130434783 0,5.44462014 0,12 C0,18.5553799 5.372583,23.8695652 12,23.8695652 Z" />
-      <polygon
-        fill="#FFF"
-        points="11.492 6.847 11.492 17.137 12.492 17.137 12.492 6.847"
-        transform="rotate(-45 11.992 11.992)"
-      />
-      <polygon
-        fill="#FFF"
-        points="11.492 6.847 11.492 17.137 12.492 17.137 12.492 6.847"
-        transform="rotate(45 11.992 11.992)"
+    <IconBase {...props} viewBox="0 0 20 20">
+      <path d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z" />
+      <StyledPolygon
+        strokeColorFn={stroke}
+        points="8.681 9.967 5.073 6.333 6.396 5 10.004 8.634 13.604 5.007 14.916 6.329 11.316 9.956 15 13.667 13.677 15 9.993 11.289 6.312 14.997 5 13.675"
       />
     </IconBase>
   );

@@ -1,3 +1,120 @@
+## [2.25.3](https://github.com/nordnet/ui/compare/v2.25.2...v2.25.3) (2020-03-25)
+
+
+### Bug Fixes
+
+* **InfoBar:** update variant icons to utilise secondary color ([76496f7](https://github.com/nordnet/ui/commit/76496f7))
+* **InfoBar:** vertically align close icon ([1c03be0](https://github.com/nordnet/ui/commit/1c03be0))
+
+## [2.25.2](https://github.com/nordnet/ui/compare/v2.25.1...v2.25.2) (2020-03-25)
+
+
+### Bug Fixes
+
+* update icons for infobar ([a17a853](https://github.com/nordnet/ui/commit/a17a853))
+
+## [2.25.1](https://github.com/nordnet/ui/compare/v2.25.0...v2.25.1) (2020-03-23)
+
+
+### Bug Fixes
+
+* 🐛 add -ms grid styles for align justify place self ([dab0a24](https://github.com/nordnet/ui/commit/dab0a24))
+
+# [2.25.0](https://github.com/nordnet/ui/compare/v2.24.0...v2.25.0) (2020-03-23)
+
+
+### Bug Fixes
+
+* **InfoBar:** fix exports ([1f6581d](https://github.com/nordnet/ui/commit/1f6581d))
+* **InfoBar:** fix stories ([54c82d4](https://github.com/nordnet/ui/commit/54c82d4))
+* **InfoBar:** fix stories and types ([7837192](https://github.com/nordnet/ui/commit/7837192))
+* **InfoBar:** fix TS types ([2878cee](https://github.com/nordnet/ui/commit/2878cee))
+* **InfoBar:** fix TS types ([7c6d14c](https://github.com/nordnet/ui/commit/7c6d14c))
+
+
+### Features
+
+* **Icon.CrossCircle:** add an option to modify CrossCircle's cross color via stroke prop ([94fa3f4](https://github.com/nordnet/ui/commit/94fa3f4))
+* **InfoBar:** add InfoBar Component ([ff6ca4e](https://github.com/nordnet/ui/commit/ff6ca4e))
+
+# [2.24.0](https://github.com/nordnet/ui/compare/v2.23.0...v2.24.0) (2020-03-23)
+
+
+### Features
+
+* 🎸 add breakpoint props to CssGrid.Item ([4fb11b3](https://github.com/nordnet/ui/commit/4fb11b3))
+
+# [2.23.0](https://github.com/nordnet/ui/compare/v2.22.3...v2.23.0) (2020-03-23)
+
+
+### Features
+
+* add 12 new sector icons ([4a5ab30](https://github.com/nordnet/ui/commit/4a5ab30))
+
+## [2.22.3](https://github.com/nordnet/ui/compare/v2.22.2...v2.22.3) (2020-03-13)
+
+
+### Bug Fixes
+
+* add inmodal prop ([0684856](https://github.com/nordnet/ui/commit/0684856))
+* update snaps ([dcc037f](https://github.com/nordnet/ui/commit/dcc037f))
+
+## [2.22.2](https://github.com/nordnet/ui/compare/v2.22.1...v2.22.2) (2020-03-11)
+
+
+### Bug Fixes
+
+* **deps:** updated framer-motion@1.9.1 ([f0feae6](https://github.com/nordnet/ui/commit/f0feae6))
+
+## [2.22.1](https://github.com/nordnet/ui/compare/v2.22.0...v2.22.1) (2020-03-10)
+
+
+### Bug Fixes
+
+* select machine not updating on props change ([75b3cee](https://github.com/nordnet/ui/commit/75b3cee))
+
+# [2.22.0](https://github.com/nordnet/ui/compare/v2.21.4...v2.22.0) (2020-03-09)
+
+
+### Features
+
+* icon filter ([1480b4d](https://github.com/nordnet/ui/commit/1480b4d))
+
+## [2.21.4](https://github.com/nordnet/ui/compare/v2.21.3...v2.21.4) (2020-03-04)
+
+
+### Bug Fixes
+
+* rebuild docs ([66dc4eb](https://github.com/nordnet/ui/commit/66dc4eb))
+
+## [2.21.3](https://github.com/nordnet/ui/compare/v2.21.2...v2.21.3) (2020-03-04)
+
+
+### Bug Fixes
+
+* add min-width 0 to fix firefox ([7c5a8f5](https://github.com/nordnet/ui/commit/7c5a8f5))
+
+## [2.21.2](https://github.com/nordnet/ui/compare/v2.21.1...v2.21.2) (2020-03-02)
+
+
+### Bug Fixes
+
+* 🐛 overflow auto instead of scroll ([a7a0958](https://github.com/nordnet/ui/commit/a7a0958))
+
+## [2.21.1](https://github.com/nordnet/ui/compare/v2.21.0...v2.21.1) (2020-02-28)
+
+
+### Bug Fixes
+
+* 🐛 Modal overflowing vertically is not breaking ([07f87ae](https://github.com/nordnet/ui/commit/07f87ae))
+
+# [2.21.0](https://github.com/nordnet/ui/compare/v2.20.1...v2.21.0) (2020-02-28)
+
+
+### Features
+
+* 🎸 add bank deposit icon ([e6d2955](https://github.com/nordnet/ui/commit/e6d2955))
+
 ## [2.20.1](https://github.com/nordnet/ui/compare/v2.20.0...v2.20.1) (2020-02-27)
 
 

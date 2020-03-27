@@ -46,6 +46,7 @@ const Dialog = styled(motion.div)<DialogProps>`
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
     padding: ${({ theme }) => theme.spacing.unit(PADDING_DESKTOP)}px;
     width: ${({ theme }) => theme.spacing.unit(120)}px;
+    overflow: auto;
     max-height: 65vh;
     box-shadow: 0 2px 2px 0 ${({ theme }) => theme.color.shadowModal};
   }

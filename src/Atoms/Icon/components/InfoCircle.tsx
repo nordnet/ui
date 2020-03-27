@@ -1,12 +1,24 @@
 import React from 'react';
-import { IconBase } from '../IconBase';
-import { BaseProps } from '../IconBase.types';
+import styled from 'styled-components';
+import { IconBase, getColor } from '../IconBase';
+import { ChildProps, StyledChildProps } from '../IconBase.types';
 
-export const InfoCircle = (props: BaseProps) => {
+const StyledPolygon = styled.polygon<StyledChildProps>`
+  ${p => {
+    const strokeColor = getColor(p.theme, p.theme.color.svgStokeLight, p.strokeColorFn);
+    return `fill: ${strokeColor};`;
+  }}
+`;
+
+export const InfoCircle = ({ stroke, ...props }: ChildProps) => {
   return (
-    <IconBase {...props}>
-      <path d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z" />
-      <path d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z" fill="#FFFFFF" />
+    <IconBase {...props} viewBox="0 0 20 20">
+      <path d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z" />
+
+      <StyledPolygon
+        strokeColorFn={stroke}
+        points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
+      />
     </IconBase>
   );
 };
