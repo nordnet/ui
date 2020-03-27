@@ -1,31 +1,149 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Input / Radio Default 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
+.c7 {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c7::before,
+.c7::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c7::before {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.c7::after {
+  width: 11px;
+  height: 11px;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2:hover .c6 {
+  border-color: #4B4B46;
+}
+
+.c5 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c5:checked + .c6::after {
+  background: #0046FF;
+}
+
+.c5[disabled] + .c6 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6::after {
+  background: #EBEBE8;
+}
+
+.c5:focus + .c6::before {
+  border: 1px solid #0046FF;
+}
+
+.c9 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+  className="c0"
   width="auto"
 >
   <label
-    className="FormLabel__StyledLabel-skax1c-0 VHIlu Radio__StyledFormLabel-sc-1qc8m3x-1 kweFKd"
+    className="c1 c2"
     hidden={false}
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c3"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+        className="c4"
       >
         <input
-          className="Radio__Input-sc-1qc8m3x-2 knFFza"
+          className="c5"
           name="example"
           type="radio"
           value="green"
         />
         <div
-          className="Radio__Circle-sc-1qc8m3x-0 kBuwpJ"
+          className="c6 c7"
         />
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Radio__Label-sc-1qc8m3x-3 btXBZP"
+          className="c8 c9"
         >
           Green
         </span>
@@ -37,45 +155,244 @@ exports[`Storyshots Molecules | Input / Radio Default 1`] = `
 
 exports[`Storyshots Molecules | Input / Radio Disabled 1`] = `
 Array [
-  <div
-    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
+  .c0 {
+  margin-bottom: 16px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+<div
+    className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
+      className="c1"
     >
       Disabled
     </span>
   </div>,
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+  .c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  width: auto;
+  display: inline-block;
+}
+
+.c10 {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c10::before,
+.c10::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c10::before {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.c10::after {
+  width: 11px;
+  height: 11px;
+}
+
+.c5 {
+  position: relative;
+}
+
+.c5:hover .c9 {
+  border-color: #4B4B46;
+}
+
+.c8 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c8:checked + .c9::after {
+  background: #0046FF;
+}
+
+.c8[disabled] + .c9 {
+  border-color: #EBEBE8;
+}
+
+.c8:checked[disabled] + .c9 {
+  border-color: #EBEBE8;
+}
+
+.c8:checked[disabled] + .c9::after {
+  background: #EBEBE8;
+}
+
+.c8:focus + .c9::before {
+  border: 1px solid #0046FF;
+}
+
+.c12 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
     direction="column"
   >
     <div
-      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+      className="c1"
       direction="row"
     >
       <div
-        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+        className="c2"
       >
         Checked
       </div>
       <div>
         <div
-          className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+          className="c3"
           width="auto"
         >
           <label
-            className="FormLabel__StyledLabel-skax1c-0 VHIlu Radio__StyledFormLabel-sc-1qc8m3x-1 kweFKd"
+            className="c4 c5"
             hidden={false}
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+              className="c6"
             >
               <div
-                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+                className="c7"
               >
                 <input
-                  className="Radio__Input-sc-1qc8m3x-2 knFFza"
+                  className="c8"
                   defaultChecked={true}
                   disabled={true}
                   name="example"
@@ -83,10 +400,10 @@ Array [
                   value="green"
                 />
                 <div
-                  className="Radio__Circle-sc-1qc8m3x-0 kBuwpJ"
+                  className="c9 c10"
                 />
                 <span
-                  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ecXtkX Radio__Label-sc-1qc8m3x-3 btXBZP"
+                  className="c11 c12"
                 >
                   Green
                 </span>
@@ -97,41 +414,41 @@ Array [
       </div>
     </div>
     <div
-      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+      className="c1"
       direction="row"
     >
       <div
-        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+        className="c2"
       >
         Not Checked
       </div>
       <div>
         <div
-          className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+          className="c3"
           width="auto"
         >
           <label
-            className="FormLabel__StyledLabel-skax1c-0 VHIlu Radio__StyledFormLabel-sc-1qc8m3x-1 kweFKd"
+            className="c4 c5"
             hidden={false}
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+              className="c6"
             >
               <div
-                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+                className="c7"
               >
                 <input
-                  className="Radio__Input-sc-1qc8m3x-2 knFFza"
+                  className="c8"
                   disabled={true}
                   name="example"
                   type="radio"
                   value="blue"
                 />
                 <div
-                  className="Radio__Circle-sc-1qc8m3x-0 kBuwpJ"
+                  className="c9 c10"
                 />
                 <span
-                  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ecXtkX Radio__Label-sc-1qc8m3x-3 btXBZP"
+                  className="c11 c12"
                 >
                   Blue
                 </span>
@@ -142,61 +459,227 @@ Array [
       </div>
     </div>
   </div>,
-  <div
-    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
+  .c0 {
+  margin-bottom: 32px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
   />,
 ]
 `;
 
 exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.c6 > * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c3 {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  cursor: auto;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c7 {
+  width: auto;
+  display: inline-block;
+}
+
+.c11 {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c11::before,
+.c11::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c11::before {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.c11::after {
+  width: 11px;
+  height: 11px;
+}
+
+.c8 {
+  position: relative;
+}
+
+.c8:hover .c10 {
+  border-color: #4B4B46;
+}
+
+.c9 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c9:checked + .c10::after {
+  background: #0046FF;
+}
+
+.c9[disabled] + .c10 {
+  border-color: #EBEBE8;
+}
+
+.c9:checked[disabled] + .c10 {
+  border-color: #EBEBE8;
+}
+
+.c9:checked[disabled] + .c10::after {
+  background: #EBEBE8;
+}
+
+.c9:focus + .c10::before {
+  border: 1px solid #0046FF;
+}
+
+.c13 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
+  className="c0"
 >
   <fieldset
-    className="Fieldset__StyledFieldset-sc-1fwvu26-0 GQPdY"
+    className="c1"
   >
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+      className="c2"
     >
       <legend
-        className="NormalizedLegend__Legend-sc-1svgb20-0 Legend__StyledLegendAsLabel-x6z4g1-1 jtzsJR FormLabel__StyledLabel-skax1c-0 VHIlu"
+        className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
         hidden={false}
       >
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+          className="c5"
         >
           Colors 
         </span>
       </legend>
     </div>
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hEIiGr"
+      className="c6"
     >
       <div
-        className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+        className="c7"
         width="auto"
       >
         <label
-          className="FormLabel__StyledLabel-skax1c-0 VHIlu Radio__StyledFormLabel-sc-1qc8m3x-1 kweFKd"
+          className="c4 c8"
           hidden={false}
         >
           <span
-            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+            className="c5"
           >
             <div
-              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+              className="c2"
             >
               <input
-                className="Radio__Input-sc-1qc8m3x-2 knFFza"
+                className="c9"
                 name="example"
                 type="radio"
                 value="green"
               />
               <div
-                className="Radio__Circle-sc-1qc8m3x-0 kBuwpJ"
+                className="c10 c11"
               />
               <span
-                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Radio__Label-sc-1qc8m3x-3 btXBZP"
+                className="c12 c13"
               >
                 Green
               </span>
@@ -205,30 +688,30 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
         </label>
       </div>
       <div
-        className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+        className="c7"
         width="auto"
       >
         <label
-          className="FormLabel__StyledLabel-skax1c-0 VHIlu Radio__StyledFormLabel-sc-1qc8m3x-1 kweFKd"
+          className="c4 c8"
           hidden={false}
         >
           <span
-            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+            className="c5"
           >
             <div
-              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+              className="c2"
             >
               <input
-                className="Radio__Input-sc-1qc8m3x-2 knFFza"
+                className="c9"
                 name="example"
                 type="radio"
                 value="blue"
               />
               <div
-                className="Radio__Circle-sc-1qc8m3x-0 kBuwpJ"
+                className="c10 c11"
               />
               <span
-                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Radio__Label-sc-1qc8m3x-3 btXBZP"
+                className="c12 c13"
               >
                 Blue
               </span>
@@ -237,30 +720,30 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
         </label>
       </div>
       <div
-        className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+        className="c7"
         width="auto"
       >
         <label
-          className="FormLabel__StyledLabel-skax1c-0 VHIlu Radio__StyledFormLabel-sc-1qc8m3x-1 kweFKd"
+          className="c4 c8"
           hidden={false}
         >
           <span
-            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+            className="c5"
           >
             <div
-              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+              className="c2"
             >
               <input
-                className="Radio__Input-sc-1qc8m3x-2 knFFza"
+                className="c9"
                 name="example"
                 type="radio"
                 value="yellow"
               />
               <div
-                className="Radio__Circle-sc-1qc8m3x-0 kBuwpJ"
+                className="c10 c11"
               />
               <span
-                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Radio__Label-sc-1qc8m3x-3 btXBZP"
+                className="c12 c13"
               >
                 Yellow
               </span>
@@ -274,45 +757,225 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.c6 > * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c15 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c3 {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  cursor: auto;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c7 {
+  width: auto;
+  display: inline-block;
+}
+
+.c11 {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c11::before,
+.c11::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c11::before {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.c11::after {
+  width: 11px;
+  height: 11px;
+}
+
+.c8 {
+  position: relative;
+}
+
+.c8:hover .c10 {
+  border-color: #4B4B46;
+}
+
+.c9 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c9:checked + .c10::after {
+  background: #0046FF;
+}
+
+.c9[disabled] + .c10 {
+  border-color: #EBEBE8;
+}
+
+.c9:checked[disabled] + .c10 {
+  border-color: #EBEBE8;
+}
+
+.c9:checked[disabled] + .c10::after {
+  background: #EBEBE8;
+}
+
+.c9 + .c10::before {
+  border: 1px solid #FF1900;
+}
+
+.c9:focus + .c10::before {
+  border: 1px solid #0046FF;
+}
+
+.c13 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
+  className="c0"
 >
   <fieldset
-    className="Fieldset__StyledFieldset-sc-1fwvu26-0 GQPdY"
+    className="c1"
   >
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+      className="c2"
     >
       <legend
-        className="NormalizedLegend__Legend-sc-1svgb20-0 Legend__StyledLegendAsLabel-x6z4g1-1 jtzsJR FormLabel__StyledLabel-skax1c-0 VHIlu"
+        className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
         hidden={false}
       >
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+          className="c5"
         >
           Colors 
         </span>
       </legend>
     </div>
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hEIiGr"
+      className="c6"
     >
       <div
-        className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+        className="c7"
         width="auto"
       >
         <label
-          className="FormLabel__StyledLabel-skax1c-0 VHIlu Radio__StyledFormLabel-sc-1qc8m3x-1 kweFKd"
+          className="c4 c8"
           hidden={false}
         >
           <span
-            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+            className="c5"
           >
             <div
-              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+              className="c2"
             >
               <input
-                className="Radio__Input-sc-1qc8m3x-2 dBXMrp"
+                className="c9"
                 name="example"
                 onChange={[Function]}
                 required={true}
@@ -320,10 +983,10 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
                 value="green"
               />
               <div
-                className="Radio__Circle-sc-1qc8m3x-0 kBuwpJ"
+                className="c10 c11"
               />
               <span
-                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Radio__Label-sc-1qc8m3x-3 btXBZP"
+                className="c12 c13"
               >
                 Green
               </span>
@@ -332,21 +995,21 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
         </label>
       </div>
       <div
-        className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+        className="c7"
         width="auto"
       >
         <label
-          className="FormLabel__StyledLabel-skax1c-0 VHIlu Radio__StyledFormLabel-sc-1qc8m3x-1 kweFKd"
+          className="c4 c8"
           hidden={false}
         >
           <span
-            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+            className="c5"
           >
             <div
-              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+              className="c2"
             >
               <input
-                className="Radio__Input-sc-1qc8m3x-2 dBXMrp"
+                className="c9"
                 name="example"
                 onChange={[Function]}
                 required={true}
@@ -354,10 +1017,10 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
                 value="blue"
               />
               <div
-                className="Radio__Circle-sc-1qc8m3x-0 kBuwpJ"
+                className="c10 c11"
               />
               <span
-                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Radio__Label-sc-1qc8m3x-3 btXBZP"
+                className="c12 c13"
               >
                 Blue
               </span>
@@ -366,21 +1029,21 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
         </label>
       </div>
       <div
-        className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+        className="c7"
         width="auto"
       >
         <label
-          className="FormLabel__StyledLabel-skax1c-0 VHIlu Radio__StyledFormLabel-sc-1qc8m3x-1 kweFKd"
+          className="c4 c8"
           hidden={false}
         >
           <span
-            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+            className="c5"
           >
             <div
-              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+              className="c2"
             >
               <input
-                className="Radio__Input-sc-1qc8m3x-2 dBXMrp"
+                className="c9"
                 name="example"
                 onChange={[Function]}
                 required={true}
@@ -388,10 +1051,10 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
                 value="yellow"
               />
               <div
-                className="Radio__Circle-sc-1qc8m3x-0 kBuwpJ"
+                className="c10 c11"
               />
               <span
-                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Radio__Label-sc-1qc8m3x-3 btXBZP"
+                className="c12 c13"
               >
                 Yellow
               </span>
@@ -403,10 +1066,10 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
   </fieldset>
   <div>
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hPnwKK"
+      className="c14"
     >
       <div
-        className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
+        className="c15"
       >
         Error: 
       </div>
@@ -418,55 +1081,254 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
 
 exports[`Storyshots Molecules | Input / Radio Required 1`] = `
 Array [
-  <div
-    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
+  .c0 {
+  margin-bottom: 16px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+<div
+    className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
+      className="c1"
     >
       Required
     </span>
   </div>,
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+  .c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  width: auto;
+  display: inline-block;
+}
+
+.c10 {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c10::before,
+.c10::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c10::before {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.c10::after {
+  width: 11px;
+  height: 11px;
+}
+
+.c5 {
+  position: relative;
+}
+
+.c5:hover .c9 {
+  border-color: #4B4B46;
+}
+
+.c8 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c8:checked + .c9::after {
+  background: #0046FF;
+}
+
+.c8[disabled] + .c9 {
+  border-color: #EBEBE8;
+}
+
+.c8:checked[disabled] + .c9 {
+  border-color: #EBEBE8;
+}
+
+.c8:checked[disabled] + .c9::after {
+  background: #EBEBE8;
+}
+
+.c8:focus + .c9::before {
+  border: 1px solid #0046FF;
+}
+
+.c12 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
     direction="column"
   >
     <div
-      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+      className="c1"
       direction="row"
     >
       <div
-        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+        className="c2"
       >
         Default (without star)
       </div>
       <div>
         <div
-          className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+          className="c3"
           width="auto"
         >
           <label
-            className="FormLabel__StyledLabel-skax1c-0 VHIlu Radio__StyledFormLabel-sc-1qc8m3x-1 kweFKd"
+            className="c4 c5"
             hidden={false}
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+              className="c6"
             >
               <div
-                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+                className="c7"
               >
                 <input
-                  className="Radio__Input-sc-1qc8m3x-2 knFFza"
+                  className="c8"
                   name="example"
                   required={true}
                   type="radio"
                   value="green"
                 />
                 <div
-                  className="Radio__Circle-sc-1qc8m3x-0 kBuwpJ"
+                  className="c9 c10"
                 />
                 <span
-                  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Radio__Label-sc-1qc8m3x-3 btXBZP"
+                  className="c11 c12"
                 >
                   Green
                 </span>
@@ -477,41 +1339,41 @@ Array [
       </div>
     </div>
     <div
-      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+      className="c1"
       direction="row"
     >
       <div
-        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+        className="c2"
       >
         With star
       </div>
       <div>
         <div
-          className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+          className="c3"
           width="auto"
         >
           <label
-            className="FormLabel__StyledLabel-skax1c-0 VHIlu Radio__StyledFormLabel-sc-1qc8m3x-1 kweFKd"
+            className="c4 c5"
             hidden={false}
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+              className="c6"
             >
               <div
-                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+                className="c7"
               >
                 <input
-                  className="Radio__Input-sc-1qc8m3x-2 knFFza"
+                  className="c8"
                   name="example"
                   required={true}
                   type="radio"
                   value="green"
                 />
                 <div
-                  className="Radio__Circle-sc-1qc8m3x-0 kBuwpJ"
+                  className="c9 c10"
                 />
                 <span
-                  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Radio__Label-sc-1qc8m3x-3 btXBZP"
+                  className="c11 c12"
                 >
                   Green *
                 </span>
@@ -522,29 +1384,155 @@ Array [
       </div>
     </div>
   </div>,
-  <div
-    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
+  .c0 {
+  margin-bottom: 32px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
   />,
 ]
 `;
 
 exports[`Storyshots Molecules | Input / Radio With all actions 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
+.c7 {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c7::before,
+.c7::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c7::before {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.c7::after {
+  width: 11px;
+  height: 11px;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2:hover .c6 {
+  border-color: #4B4B46;
+}
+
+.c5 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c5:checked + .c6::after {
+  background: #0046FF;
+}
+
+.c5[disabled] + .c6 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6::after {
+  background: #EBEBE8;
+}
+
+.c5:focus + .c6::before {
+  border: 1px solid #0046FF;
+}
+
+.c9 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+  className="c0"
   width="auto"
 >
   <label
-    className="FormLabel__StyledLabel-skax1c-0 VHIlu Radio__StyledFormLabel-sc-1qc8m3x-1 kweFKd"
+    className="c1 c2"
     hidden={false}
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c3"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+        className="c4"
       >
         <input
-          className="Radio__Input-sc-1qc8m3x-2 knFFza"
+          className="c5"
           name="example6"
           onBlur={[Function]}
           onChange={[Function]}
@@ -557,10 +1545,10 @@ exports[`Storyshots Molecules | Input / Radio With all actions 1`] = `
           value="green"
         />
         <div
-          className="Radio__Circle-sc-1qc8m3x-0 kBuwpJ"
+          className="c6 c7"
         />
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Radio__Label-sc-1qc8m3x-3 btXBZP"
+          className="c8 c9"
         >
           Green
         </span>
@@ -571,22 +1559,162 @@ exports[`Storyshots Molecules | Input / Radio With all actions 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Radio With an error if not checked 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
+.c7 {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c7::before,
+.c7::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c7::before {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.c7::after {
+  width: 11px;
+  height: 11px;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2:hover .c6 {
+  border-color: #4B4B46;
+}
+
+.c5 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c5:checked + .c6::after {
+  background: #0046FF;
+}
+
+.c5[disabled] + .c6 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6::after {
+  background: #EBEBE8;
+}
+
+.c5 + .c6::before {
+  border: 1px solid #FF1900;
+}
+
+.c5:focus + .c6::before {
+  border: 1px solid #0046FF;
+}
+
+.c9 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+  className="c0"
   width="auto"
 >
   <label
-    className="FormLabel__StyledLabel-skax1c-0 VHIlu Radio__StyledFormLabel-sc-1qc8m3x-1 kweFKd"
+    className="c1 c2"
     hidden={false}
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c3"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+        className="c4"
       >
         <input
-          className="Radio__Input-sc-1qc8m3x-2 dBXMrp"
+          className="c5"
           name="example"
           onChange={[Function]}
           required={true}
@@ -594,10 +1722,10 @@ exports[`Storyshots Molecules | Input / Radio With an error if not checked 1`] =
           value="green"
         />
         <div
-          className="Radio__Circle-sc-1qc8m3x-0 kBuwpJ"
+          className="c6 c7"
         />
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Radio__Label-sc-1qc8m3x-3 btXBZP"
+          className="c8 c9"
         >
           Green
         </span>
@@ -606,10 +1734,10 @@ exports[`Storyshots Molecules | Input / Radio With an error if not checked 1`] =
   </label>
   <div>
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hPnwKK"
+      className="c10"
     >
       <div
-        className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
+        className="c11"
       >
         Error: 
       </div>
@@ -620,32 +1748,150 @@ exports[`Storyshots Molecules | Input / Radio With an error if not checked 1`] =
 `;
 
 exports[`Storyshots Molecules | Input / Radio With auto focus 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
+.c7 {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c7::before,
+.c7::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c7::before {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.c7::after {
+  width: 11px;
+  height: 11px;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2:hover .c6 {
+  border-color: #4B4B46;
+}
+
+.c5 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c5:checked + .c6::after {
+  background: #0046FF;
+}
+
+.c5[disabled] + .c6 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6::after {
+  background: #EBEBE8;
+}
+
+.c5:focus + .c6::before {
+  border: 1px solid #0046FF;
+}
+
+.c9 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+  className="c0"
   width="auto"
 >
   <label
-    className="FormLabel__StyledLabel-skax1c-0 VHIlu Radio__StyledFormLabel-sc-1qc8m3x-1 kweFKd"
+    className="c1 c2"
     hidden={false}
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c3"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+        className="c4"
       >
         <input
           autoFocus={true}
-          className="Radio__Input-sc-1qc8m3x-2 knFFza"
+          className="c5"
           name="example"
           type="radio"
           value="green"
         />
         <div
-          className="Radio__Circle-sc-1qc8m3x-0 kBuwpJ"
+          className="c6 c7"
         />
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Radio__Label-sc-1qc8m3x-3 btXBZP"
+          className="c8 c9"
         >
           Green
         </span>
@@ -657,33 +1903,151 @@ exports[`Storyshots Molecules | Input / Radio With auto focus 1`] = `
 
 exports[`Storyshots Molecules | Input / Radio With checked (Controlled behaviour) 1`] = `
 Array [
-  <div
-    className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+  .c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
+.c7 {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c7::before,
+.c7::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c7::before {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.c7::after {
+  width: 11px;
+  height: 11px;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2:hover .c6 {
+  border-color: #4B4B46;
+}
+
+.c5 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c5:checked + .c6::after {
+  background: #0046FF;
+}
+
+.c5[disabled] + .c6 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6::after {
+  background: #EBEBE8;
+}
+
+.c5:focus + .c6::before {
+  border: 1px solid #0046FF;
+}
+
+.c9 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
+<div
+    className="c0"
     width="auto"
   >
     <label
-      className="FormLabel__StyledLabel-skax1c-0 VHIlu Radio__StyledFormLabel-sc-1qc8m3x-1 kweFKd"
+      className="c1 c2"
       hidden={false}
     >
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+        className="c3"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+          className="c4"
         >
           <input
             checked={false}
-            className="Radio__Input-sc-1qc8m3x-2 knFFza"
+            className="c5"
             name="example"
             onChange={[Function]}
             type="radio"
             value="green"
           />
           <div
-            className="Radio__Circle-sc-1qc8m3x-0 kBuwpJ"
+            className="c6 c7"
           />
           <span
-            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Radio__Label-sc-1qc8m3x-3 btXBZP"
+            className="c8 c9"
           >
             Green
           </span>
@@ -701,32 +2065,150 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Radio With default checked 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
+.c7 {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c7::before,
+.c7::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c7::before {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.c7::after {
+  width: 11px;
+  height: 11px;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2:hover .c6 {
+  border-color: #4B4B46;
+}
+
+.c5 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c5:checked + .c6::after {
+  background: #0046FF;
+}
+
+.c5[disabled] + .c6 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6::after {
+  background: #EBEBE8;
+}
+
+.c5:focus + .c6::before {
+  border: 1px solid #0046FF;
+}
+
+.c9 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+  className="c0"
   width="auto"
 >
   <label
-    className="FormLabel__StyledLabel-skax1c-0 VHIlu Radio__StyledFormLabel-sc-1qc8m3x-1 kweFKd"
+    className="c1 c2"
     hidden={false}
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c3"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+        className="c4"
       >
         <input
-          className="Radio__Input-sc-1qc8m3x-2 knFFza"
+          className="c5"
           defaultChecked={true}
           name="example"
           type="radio"
           value="green"
         />
         <div
-          className="Radio__Circle-sc-1qc8m3x-0 kBuwpJ"
+          className="c6 c7"
         />
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Radio__Label-sc-1qc8m3x-3 btXBZP"
+          className="c8 c9"
         >
           Green
         </span>

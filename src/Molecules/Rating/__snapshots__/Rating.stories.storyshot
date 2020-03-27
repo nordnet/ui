@@ -1,80 +1,126 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Rating Rating 0 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c0 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c1 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #EBEBE8;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  stroke: #EBEBE8;
+}
+
 <div
-  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 cLPjZL"
+  className="c0"
 >
   <div
-    className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
+    className="c1"
   >
     0 stars
   </div>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 feaBbx"
+    className="c2"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 drEHMh"
+      className="c3"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
   </svg>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 feaBbx"
+    className="c2"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 drEHMh"
+      className="c3"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
   </svg>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 feaBbx"
+    className="c2"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 drEHMh"
+      className="c3"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
   </svg>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 feaBbx"
+    className="c2"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 drEHMh"
+      className="c3"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
   </svg>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 feaBbx"
+    className="c2"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 drEHMh"
+      className="c3"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
@@ -83,80 +129,144 @@ exports[`Storyshots Molecules | Rating Rating 0 1`] = `
 `;
 
 exports[`Storyshots Molecules | Rating Rating 1 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c0 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c1 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #FFCF00;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #EBEBE8;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  stroke: #FFCF00;
+}
+
+.c5 {
+  stroke: #EBEBE8;
+}
+
 <div
-  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 cLPjZL"
+  className="c0"
 >
   <div
-    className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
+    className="c1"
   >
     1 star
   </div>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 YxAQB"
+    className="c2"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 leJZiN"
+      className="c3"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
   </svg>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 feaBbx"
+    className="c4"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 drEHMh"
+      className="c5"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
   </svg>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 feaBbx"
+    className="c4"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 drEHMh"
+      className="c5"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
   </svg>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 feaBbx"
+    className="c4"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 drEHMh"
+      className="c5"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
   </svg>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 feaBbx"
+    className="c4"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 drEHMh"
+      className="c5"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
@@ -165,80 +275,126 @@ exports[`Storyshots Molecules | Rating Rating 1 1`] = `
 `;
 
 exports[`Storyshots Molecules | Rating Rating 5 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c0 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c1 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #FFCF00;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  stroke: #FFCF00;
+}
+
 <div
-  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 cLPjZL"
+  className="c0"
 >
   <div
-    className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
+    className="c1"
   >
     5 stars
   </div>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 YxAQB"
+    className="c2"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 leJZiN"
+      className="c3"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
   </svg>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 YxAQB"
+    className="c2"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 leJZiN"
+      className="c3"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
   </svg>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 YxAQB"
+    className="c2"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 leJZiN"
+      className="c3"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
   </svg>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 YxAQB"
+    className="c2"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 leJZiN"
+      className="c3"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
   </svg>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 YxAQB"
+    className="c2"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 leJZiN"
+      className="c3"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
@@ -247,80 +403,126 @@ exports[`Storyshots Molecules | Rating Rating 5 1`] = `
 `;
 
 exports[`Storyshots Molecules | Rating Rating Not Defined 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c0 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c1 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #EBEBE8;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  stroke: #EBEBE8;
+}
+
 <div
-  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 cLPjZL"
+  className="c0"
 >
   <div
-    className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
+    className="c1"
   >
     0 stars
   </div>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 feaBbx"
+    className="c2"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 drEHMh"
+      className="c3"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
   </svg>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 feaBbx"
+    className="c2"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 drEHMh"
+      className="c3"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
   </svg>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 feaBbx"
+    className="c2"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 drEHMh"
+      className="c3"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
   </svg>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 feaBbx"
+    className="c2"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 drEHMh"
+      className="c3"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />
   </svg>
   <svg
     aria-hidden="true"
-    className="IconBase__StyledIconBase-sc-10cbji3-0 feaBbx"
+    className="c2"
     focusable="false"
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
     viewBox="0 0 24 24"
   >
     <path
-      className="Star__StyledPath-sc-1ipi5vt-0 drEHMh"
+      className="c3"
       d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
       strokeWidth="1"
     />

@@ -1,32 +1,170 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
+.c8 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c8::before {
+  content: '';
+  display: block;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2:hover .c7 {
+  border-color: #4B4B46;
+}
+
+.c5 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c5:checked + .c7 {
+  border-color: #0046FF;
+  background: #0046FF;
+}
+
+.c5:checked + .c7 svg {
+  fill: #FFFFFF;
+}
+
+.c5[disabled] + .c7 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c7 {
+  border-color: #EBEBE8;
+  background: #EBEBE8;
+}
+
+.c5:focus + .c7::before {
+  border: 1px solid #0046FF;
+}
+
+.c11 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+  className="c0"
   width="auto"
 >
   <label
-    className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+    className="c1 c2"
     hidden={false}
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c3"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+        className="c4"
       >
         <input
-          className="Checkbox__Input-vu58cg-2 fuTURf"
+          className="c5"
           name="example"
           type="checkbox"
           value="green"
         />
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+          className="c6 c7 c8"
         >
           <svg
             aria-hidden="true"
-            className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+            className="c9"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -38,7 +176,7 @@ exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
           </svg>
         </div>
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Checkbox__Label-vu58cg-3 jfGcbP"
+          className="c10 c11"
         >
           Green
         </span>
@@ -50,45 +188,264 @@ exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
 
 exports[`Storyshots Molecules | Input / Checkbox Disabled 1`] = `
 Array [
-  <div
-    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
+  .c0 {
+  margin-bottom: 16px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+<div
+    className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
+      className="c1"
     >
       Disabled
     </span>
   </div>,
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+  .c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  width: auto;
+  display: inline-block;
+}
+
+.c11 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c11::before {
+  content: '';
+  display: block;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c5 {
+  position: relative;
+}
+
+.c5:hover .c10 {
+  border-color: #4B4B46;
+}
+
+.c8 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c8:checked + .c10 {
+  border-color: #0046FF;
+  background: #0046FF;
+}
+
+.c8:checked + .c10 svg {
+  fill: #FFFFFF;
+}
+
+.c8[disabled] + .c10 {
+  border-color: #EBEBE8;
+}
+
+.c8:checked[disabled] + .c10 {
+  border-color: #EBEBE8;
+  background: #EBEBE8;
+}
+
+.c8:focus + .c10::before {
+  border: 1px solid #0046FF;
+}
+
+.c14 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
     direction="column"
   >
     <div
-      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+      className="c1"
       direction="row"
     >
       <div
-        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+        className="c2"
       >
         Checked
       </div>
       <div>
         <div
-          className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+          className="c3"
           width="auto"
         >
           <label
-            className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+            className="c4 c5"
             hidden={false}
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+              className="c6"
             >
               <div
-                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+                className="c7"
               >
                 <input
-                  className="Checkbox__Input-vu58cg-2 fuTURf"
+                  className="c8"
                   defaultChecked={true}
                   disabled={true}
                   name="example"
@@ -96,11 +453,11 @@ Array [
                   value="green"
                 />
                 <div
-                  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+                  className="c9 c10 c11"
                 >
                   <svg
                     aria-hidden="true"
-                    className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+                    className="c12"
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="presentation"
@@ -112,7 +469,7 @@ Array [
                   </svg>
                 </div>
                 <span
-                  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ecXtkX Checkbox__Label-vu58cg-3 jfGcbP"
+                  className="c13 c14"
                 >
                   Green
                 </span>
@@ -123,42 +480,42 @@ Array [
       </div>
     </div>
     <div
-      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+      className="c1"
       direction="row"
     >
       <div
-        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+        className="c2"
       >
         Not Checked
       </div>
       <div>
         <div
-          className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+          className="c3"
           width="auto"
         >
           <label
-            className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+            className="c4 c5"
             hidden={false}
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+              className="c6"
             >
               <div
-                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+                className="c7"
               >
                 <input
-                  className="Checkbox__Input-vu58cg-2 fuTURf"
+                  className="c8"
                   disabled={true}
                   name="example"
                   type="checkbox"
                   value="blue"
                 />
                 <div
-                  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+                  className="c9 c10 c11"
                 >
                   <svg
                     aria-hidden="true"
-                    className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+                    className="c12"
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="presentation"
@@ -170,7 +527,7 @@ Array [
                   </svg>
                 </div>
                 <span
-                  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ecXtkX Checkbox__Label-vu58cg-3 jfGcbP"
+                  className="c13 c14"
                 >
                   Blue
                 </span>
@@ -181,62 +538,248 @@ Array [
       </div>
     </div>
   </div>,
-  <div
-    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
+  .c0 {
+  margin-bottom: 32px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
   />,
 ]
 `;
 
 exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.c6 > * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c13 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  cursor: auto;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c7 {
+  width: auto;
+  display: inline-block;
+}
+
+.c12 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c12::before {
+  content: '';
+  display: block;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c8 {
+  position: relative;
+}
+
+.c8:hover .c11 {
+  border-color: #4B4B46;
+}
+
+.c9 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c9:checked + .c11 {
+  border-color: #0046FF;
+  background: #0046FF;
+}
+
+.c9:checked + .c11 svg {
+  fill: #FFFFFF;
+}
+
+.c9[disabled] + .c11 {
+  border-color: #EBEBE8;
+}
+
+.c9:checked[disabled] + .c11 {
+  border-color: #EBEBE8;
+  background: #EBEBE8;
+}
+
+.c9:focus + .c11::before {
+  border: 1px solid #0046FF;
+}
+
+.c15 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
+  className="c0"
 >
   <fieldset
-    className="Fieldset__StyledFieldset-sc-1fwvu26-0 GQPdY"
+    className="c1"
   >
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+      className="c2"
     >
       <legend
-        className="NormalizedLegend__Legend-sc-1svgb20-0 Legend__StyledLegendAsLabel-x6z4g1-1 jtzsJR FormLabel__StyledLabel-skax1c-0 VHIlu"
+        className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
         hidden={false}
       >
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+          className="c5"
         >
           Colors 
         </span>
       </legend>
     </div>
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hEIiGr"
+      className="c6"
     >
       <div
-        className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+        className="c7"
         width="auto"
       >
         <label
-          className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+          className="c4 c8"
           hidden={false}
         >
           <span
-            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+            className="c5"
           >
             <div
-              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+              className="c2"
             >
               <input
-                className="Checkbox__Input-vu58cg-2 fuTURf"
+                className="c9"
                 name="example"
                 type="checkbox"
                 value="green"
               />
               <div
-                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+                className="c10 c11 c12"
               >
                 <svg
                   aria-hidden="true"
-                  className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+                  className="c13"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -248,7 +791,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
                 </svg>
               </div>
               <span
-                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Checkbox__Label-vu58cg-3 jfGcbP"
+                className="c14 c15"
               >
                 Green
               </span>
@@ -257,31 +800,31 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
         </label>
       </div>
       <div
-        className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+        className="c7"
         width="auto"
       >
         <label
-          className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+          className="c4 c8"
           hidden={false}
         >
           <span
-            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+            className="c5"
           >
             <div
-              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+              className="c2"
             >
               <input
-                className="Checkbox__Input-vu58cg-2 fuTURf"
+                className="c9"
                 name="example"
                 type="checkbox"
                 value="blue"
               />
               <div
-                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+                className="c10 c11 c12"
               >
                 <svg
                   aria-hidden="true"
-                  className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+                  className="c13"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -293,7 +836,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
                 </svg>
               </div>
               <span
-                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Checkbox__Label-vu58cg-3 jfGcbP"
+                className="c14 c15"
               >
                 Blue
               </span>
@@ -302,31 +845,31 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
         </label>
       </div>
       <div
-        className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+        className="c7"
         width="auto"
       >
         <label
-          className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+          className="c4 c8"
           hidden={false}
         >
           <span
-            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+            className="c5"
           >
             <div
-              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+              className="c2"
             >
               <input
-                className="Checkbox__Input-vu58cg-2 fuTURf"
+                className="c9"
                 name="example"
                 type="checkbox"
                 value="yellow"
               />
               <div
-                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+                className="c10 c11 c12"
               >
                 <svg
                   aria-hidden="true"
-                  className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+                  className="c13"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -338,7 +881,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
                 </svg>
               </div>
               <span
-                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Checkbox__Label-vu58cg-3 jfGcbP"
+                className="c14 c15"
               >
                 Yellow
               </span>
@@ -352,45 +895,245 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.c6 > * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c13 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  cursor: auto;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c7 {
+  width: auto;
+  display: inline-block;
+}
+
+.c12 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c12::before {
+  content: '';
+  display: block;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c8 {
+  position: relative;
+}
+
+.c8:hover .c11 {
+  border-color: #4B4B46;
+}
+
+.c9 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c9:checked + .c11 {
+  border-color: #0046FF;
+  background: #0046FF;
+}
+
+.c9:checked + .c11 svg {
+  fill: #FFFFFF;
+}
+
+.c9[disabled] + .c11 {
+  border-color: #EBEBE8;
+}
+
+.c9:checked[disabled] + .c11 {
+  border-color: #EBEBE8;
+  background: #EBEBE8;
+}
+
+.c9 + .c11::before {
+  border: 1px solid #FF1900;
+}
+
+.c9:focus + .c11::before {
+  border: 1px solid #0046FF;
+}
+
+.c15 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
+  className="c0"
 >
   <fieldset
-    className="Fieldset__StyledFieldset-sc-1fwvu26-0 GQPdY"
+    className="c1"
   >
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+      className="c2"
     >
       <legend
-        className="NormalizedLegend__Legend-sc-1svgb20-0 Legend__StyledLegendAsLabel-x6z4g1-1 jtzsJR FormLabel__StyledLabel-skax1c-0 VHIlu"
+        className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
         hidden={false}
       >
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+          className="c5"
         >
           Colors 
         </span>
       </legend>
     </div>
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hEIiGr"
+      className="c6"
     >
       <div
-        className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+        className="c7"
         width="auto"
       >
         <label
-          className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+          className="c4 c8"
           hidden={false}
         >
           <span
-            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+            className="c5"
           >
             <div
-              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+              className="c2"
             >
               <input
-                className="Checkbox__Input-vu58cg-2 kthxAc"
+                className="c9"
                 name="example"
                 onChange={[Function]}
                 required={true}
@@ -398,11 +1141,11 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
                 value="green"
               />
               <div
-                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+                className="c10 c11 c12"
               >
                 <svg
                   aria-hidden="true"
-                  className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+                  className="c13"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -414,7 +1157,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
                 </svg>
               </div>
               <span
-                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Checkbox__Label-vu58cg-3 jfGcbP"
+                className="c14 c15"
               >
                 Green
               </span>
@@ -423,21 +1166,21 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
         </label>
       </div>
       <div
-        className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+        className="c7"
         width="auto"
       >
         <label
-          className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+          className="c4 c8"
           hidden={false}
         >
           <span
-            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+            className="c5"
           >
             <div
-              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+              className="c2"
             >
               <input
-                className="Checkbox__Input-vu58cg-2 kthxAc"
+                className="c9"
                 name="example"
                 onChange={[Function]}
                 required={true}
@@ -445,11 +1188,11 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
                 value="blue"
               />
               <div
-                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+                className="c10 c11 c12"
               >
                 <svg
                   aria-hidden="true"
-                  className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+                  className="c13"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -461,7 +1204,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
                 </svg>
               </div>
               <span
-                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Checkbox__Label-vu58cg-3 jfGcbP"
+                className="c14 c15"
               >
                 Blue
               </span>
@@ -470,21 +1213,21 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
         </label>
       </div>
       <div
-        className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+        className="c7"
         width="auto"
       >
         <label
-          className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+          className="c4 c8"
           hidden={false}
         >
           <span
-            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+            className="c5"
           >
             <div
-              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+              className="c2"
             >
               <input
-                className="Checkbox__Input-vu58cg-2 kthxAc"
+                className="c9"
                 name="example"
                 onChange={[Function]}
                 required={true}
@@ -492,11 +1235,11 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
                 value="yellow"
               />
               <div
-                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+                className="c10 c11 c12"
               >
                 <svg
                   aria-hidden="true"
-                  className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+                  className="c13"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -508,7 +1251,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
                 </svg>
               </div>
               <span
-                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Checkbox__Label-vu58cg-3 jfGcbP"
+                className="c14 c15"
               >
                 Yellow
               </span>
@@ -520,10 +1263,10 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
   </fieldset>
   <div>
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hPnwKK"
+      className="c16"
     >
       <div
-        className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
+        className="c17"
       >
         Error: 
       </div>
@@ -535,56 +1278,275 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
 
 exports[`Storyshots Molecules | Input / Checkbox Required 1`] = `
 Array [
-  <div
-    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
+  .c0 {
+  margin-bottom: 16px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+<div
+    className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
+      className="c1"
     >
       Required
     </span>
   </div>,
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+  .c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  width: auto;
+  display: inline-block;
+}
+
+.c11 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c11::before {
+  content: '';
+  display: block;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c5 {
+  position: relative;
+}
+
+.c5:hover .c10 {
+  border-color: #4B4B46;
+}
+
+.c8 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c8:checked + .c10 {
+  border-color: #0046FF;
+  background: #0046FF;
+}
+
+.c8:checked + .c10 svg {
+  fill: #FFFFFF;
+}
+
+.c8[disabled] + .c10 {
+  border-color: #EBEBE8;
+}
+
+.c8:checked[disabled] + .c10 {
+  border-color: #EBEBE8;
+  background: #EBEBE8;
+}
+
+.c8:focus + .c10::before {
+  border: 1px solid #0046FF;
+}
+
+.c14 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
     direction="column"
   >
     <div
-      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+      className="c1"
       direction="row"
     >
       <div
-        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+        className="c2"
       >
         Default (without star)
       </div>
       <div>
         <div
-          className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+          className="c3"
           width="auto"
         >
           <label
-            className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+            className="c4 c5"
             hidden={false}
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+              className="c6"
             >
               <div
-                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+                className="c7"
               >
                 <input
-                  className="Checkbox__Input-vu58cg-2 fuTURf"
+                  className="c8"
                   name="example"
                   required={true}
                   type="checkbox"
                   value="green"
                 />
                 <div
-                  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+                  className="c9 c10 c11"
                 >
                   <svg
                     aria-hidden="true"
-                    className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+                    className="c12"
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="presentation"
@@ -596,7 +1558,7 @@ Array [
                   </svg>
                 </div>
                 <span
-                  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Checkbox__Label-vu58cg-3 jfGcbP"
+                  className="c13 c14"
                 >
                   Green
                 </span>
@@ -607,42 +1569,42 @@ Array [
       </div>
     </div>
     <div
-      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+      className="c1"
       direction="row"
     >
       <div
-        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+        className="c2"
       >
         With star
       </div>
       <div>
         <div
-          className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+          className="c3"
           width="auto"
         >
           <label
-            className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+            className="c4 c5"
             hidden={false}
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+              className="c6"
             >
               <div
-                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+                className="c7"
               >
                 <input
-                  className="Checkbox__Input-vu58cg-2 fuTURf"
+                  className="c8"
                   name="example"
                   required={true}
                   type="checkbox"
                   value="green"
                 />
                 <div
-                  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+                  className="c9 c10 c11"
                 >
                   <svg
                     aria-hidden="true"
-                    className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+                    className="c12"
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="presentation"
@@ -654,7 +1616,7 @@ Array [
                   </svg>
                 </div>
                 <span
-                  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Checkbox__Label-vu58cg-3 jfGcbP"
+                  className="c13 c14"
                 >
                   Green *
                 </span>
@@ -665,29 +1627,175 @@ Array [
       </div>
     </div>
   </div>,
-  <div
-    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
+  .c0 {
+  margin-bottom: 32px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
   />,
 ]
 `;
 
 exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
+.c8 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c8::before {
+  content: '';
+  display: block;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2:hover .c7 {
+  border-color: #4B4B46;
+}
+
+.c5 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c5:checked + .c7 {
+  border-color: #0046FF;
+  background: #0046FF;
+}
+
+.c5:checked + .c7 svg {
+  fill: #FFFFFF;
+}
+
+.c5[disabled] + .c7 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c7 {
+  border-color: #EBEBE8;
+  background: #EBEBE8;
+}
+
+.c5:focus + .c7::before {
+  border: 1px solid #0046FF;
+}
+
+.c11 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+  className="c0"
   width="auto"
 >
   <label
-    className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+    className="c1 c2"
     hidden={false}
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c3"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+        className="c4"
       >
         <input
-          className="Checkbox__Input-vu58cg-2 fuTURf"
+          className="c5"
           name="example6"
           onBlur={[Function]}
           onChange={[Function]}
@@ -700,11 +1808,11 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
           value="green"
         />
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+          className="c6 c7 c8"
         >
           <svg
             aria-hidden="true"
-            className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+            className="c9"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -716,7 +1824,7 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
           </svg>
         </div>
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Checkbox__Label-vu58cg-3 jfGcbP"
+          className="c10 c11"
         >
           Green
         </span>
@@ -727,22 +1835,182 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
+.c8 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c8::before {
+  content: '';
+  display: block;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2:hover .c7 {
+  border-color: #4B4B46;
+}
+
+.c5 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c5:checked + .c7 {
+  border-color: #0046FF;
+  background: #0046FF;
+}
+
+.c5:checked + .c7 svg {
+  fill: #FFFFFF;
+}
+
+.c5[disabled] + .c7 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c7 {
+  border-color: #EBEBE8;
+  background: #EBEBE8;
+}
+
+.c5 + .c7::before {
+  border: 1px solid #FF1900;
+}
+
+.c5:focus + .c7::before {
+  border: 1px solid #0046FF;
+}
+
+.c11 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+  className="c0"
   width="auto"
 >
   <label
-    className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+    className="c1 c2"
     hidden={false}
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c3"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+        className="c4"
       >
         <input
-          className="Checkbox__Input-vu58cg-2 kthxAc"
+          className="c5"
           name="example"
           onChange={[Function]}
           required={true}
@@ -750,11 +2018,11 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
           value="green"
         />
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+          className="c6 c7 c8"
         >
           <svg
             aria-hidden="true"
-            className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+            className="c9"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -766,7 +2034,7 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
           </svg>
         </div>
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Checkbox__Label-vu58cg-3 jfGcbP"
+          className="c10 c11"
         >
           Green
         </span>
@@ -775,10 +2043,10 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
   </label>
   <div>
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hPnwKK"
+      className="c12"
     >
       <div
-        className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
+        className="c13"
       >
         Error: 
       </div>
@@ -789,33 +2057,171 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
 `;
 
 exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
+.c8 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c8::before {
+  content: '';
+  display: block;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2:hover .c7 {
+  border-color: #4B4B46;
+}
+
+.c5 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c5:checked + .c7 {
+  border-color: #0046FF;
+  background: #0046FF;
+}
+
+.c5:checked + .c7 svg {
+  fill: #FFFFFF;
+}
+
+.c5[disabled] + .c7 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c7 {
+  border-color: #EBEBE8;
+  background: #EBEBE8;
+}
+
+.c5:focus + .c7::before {
+  border: 1px solid #0046FF;
+}
+
+.c11 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+  className="c0"
   width="auto"
 >
   <label
-    className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+    className="c1 c2"
     hidden={false}
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c3"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+        className="c4"
       >
         <input
           autoFocus={true}
-          className="Checkbox__Input-vu58cg-2 fuTURf"
+          className="c5"
           name="example"
           type="checkbox"
           value="green"
         />
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+          className="c6 c7 c8"
         >
           <svg
             aria-hidden="true"
-            className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+            className="c9"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -827,7 +2233,7 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
           </svg>
         </div>
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Checkbox__Label-vu58cg-3 jfGcbP"
+          className="c10 c11"
         >
           Green
         </span>
@@ -839,34 +2245,172 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
 
 exports[`Storyshots Molecules | Input / Checkbox With checked (Controlled behaviour) 1`] = `
 Array [
-  <div
-    className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+  .c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
+.c8 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c8::before {
+  content: '';
+  display: block;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2:hover .c7 {
+  border-color: #4B4B46;
+}
+
+.c5 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c5:checked + .c7 {
+  border-color: #0046FF;
+  background: #0046FF;
+}
+
+.c5:checked + .c7 svg {
+  fill: #FFFFFF;
+}
+
+.c5[disabled] + .c7 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c7 {
+  border-color: #EBEBE8;
+  background: #EBEBE8;
+}
+
+.c5:focus + .c7::before {
+  border: 1px solid #0046FF;
+}
+
+.c11 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
+<div
+    className="c0"
     width="auto"
   >
     <label
-      className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+      className="c1 c2"
       hidden={false}
     >
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+        className="c3"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+          className="c4"
         >
           <input
             checked={false}
-            className="Checkbox__Input-vu58cg-2 fuTURf"
+            className="c5"
             name="example"
             onChange={[Function]}
             type="checkbox"
             value="green"
           />
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+            className="c6 c7 c8"
           >
             <svg
               aria-hidden="true"
-              className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+              className="c9"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -878,7 +2422,7 @@ Array [
             </svg>
           </div>
           <span
-            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Checkbox__Label-vu58cg-3 jfGcbP"
+            className="c10 c11"
           >
             Green
           </span>
@@ -896,33 +2440,171 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Checkbox With default checked 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
+.c8 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c8::before {
+  content: '';
+  display: block;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2:hover .c7 {
+  border-color: #4B4B46;
+}
+
+.c5 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c5:checked + .c7 {
+  border-color: #0046FF;
+  background: #0046FF;
+}
+
+.c5:checked + .c7 svg {
+  fill: #FFFFFF;
+}
+
+.c5[disabled] + .c7 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c7 {
+  border-color: #EBEBE8;
+  background: #EBEBE8;
+}
+
+.c5:focus + .c7::before {
+  border: 1px solid #0046FF;
+}
+
+.c11 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+  className="c0"
   width="auto"
 >
   <label
-    className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+    className="c1 c2"
     hidden={false}
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c3"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+        className="c4"
       >
         <input
-          className="Checkbox__Input-vu58cg-2 fuTURf"
+          className="c5"
           defaultChecked={true}
           name="example"
           type="checkbox"
           value="green"
         />
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+          className="c6 c7 c8"
         >
           <svg
             aria-hidden="true"
-            className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+            className="c9"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -934,7 +2616,7 @@ exports[`Storyshots Molecules | Input / Checkbox With default checked 1`] = `
           </svg>
         </div>
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Checkbox__Label-vu58cg-3 jfGcbP"
+          className="c10 c11"
         >
           Green
         </span>

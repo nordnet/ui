@@ -1,33 +1,161 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c2 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c2 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c7 {
+  overflow: hidden;
+  will-change: height;
+  height: 0px;
+  -webkit-transition: height 0.16s ease-out;
+  transition: height 0.16s ease-out;
+}
+
+.c7[hidden] {
+  display: none;
+}
+
+.c1 {
+  touch-action: none;
+  position: relative;
+  background: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 20px 20px;
+  border: 0;
+}
+
+.c1::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 1;
+}
+
+.c6 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+}
+
+.c8 {
+  margin: 0;
+}
+
+@media (min-width:760px) {
+  .c4 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
 <div
-  className="Card__StyledCard-sc-1e5czjc-0 fCiISE"
+  className="c0"
 >
   <button
     aria-expanded={false}
-    className="CollapsibleCard__StyledButton-xk1kem-1 bnCTBS"
+    className="c1"
     onClick={[Function]}
     type="button"
   >
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 gLivVz"
+      className="c2"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+        className="c3"
       >
         <h2
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kZoBvC"
+          className="c4"
         >
           Collapsed initially
         </h2>
       </div>
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+        className="c3"
       >
         <svg
           aria-hidden="true"
-          className="IconBase__StyledIconBase-sc-10cbji3-0 boQuyh CollapsibleCard__AnimatedChevronUp-xk1kem-2 jKuLUJ"
+          className="c5 c6"
           collapsed={true}
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
@@ -43,13 +171,13 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
     </div>
   </button>
   <div
-    className="CollapsibleCard__StyledCollapsible-xk1kem-0 eleYqQ"
+    className="c7"
     height="0px"
     hidden={true}
     onTransitionEnd={[Function]}
   >
     <p
-      className="CollapsibleCardstories__styledText-zzyqmg-0 chdbZp Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
+      className="c8 c9"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
@@ -58,23 +186,151 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
 `;
 
 exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom component as title 1`] = `
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c2 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c2 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c7 {
+  overflow: hidden;
+  will-change: height;
+  height: auto;
+  -webkit-transition: height 0.16s ease-out;
+  transition: height 0.16s ease-out;
+}
+
+.c7[hidden] {
+  display: none;
+}
+
+.c1 {
+  touch-action: none;
+  position: relative;
+  background: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 20px 20px;
+  border: 0;
+}
+
+.c1::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 0;
+}
+
+.c6 {
+  -webkit-transform: rodate(0);
+  -ms-transform: rodate(0);
+  transform: rodate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+}
+
+.c8 {
+  margin: 0;
+}
+
+@media (min-width:760px) {
+  .c4 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
 <div
-  className="Card__StyledCard-sc-1e5czjc-0 fCiISE"
+  className="c0"
 >
   <button
     aria-expanded={true}
-    className="CollapsibleCard__StyledButton-xk1kem-1 bnDGCP"
+    className="c1"
     onClick={[Function]}
     type="button"
   >
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 gLivVz"
+      className="c2"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+        className="c3"
       >
         <h2
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kZoBvC"
+          className="c4"
         >
           <div>
             Custom title
@@ -82,11 +338,11 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
         </h2>
       </div>
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+        className="c3"
       >
         <svg
           aria-hidden="true"
-          className="IconBase__StyledIconBase-sc-10cbji3-0 boQuyh CollapsibleCard__AnimatedChevronUp-xk1kem-2 eGZoly"
+          className="c5 c6"
           collapsed={false}
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
@@ -102,13 +358,13 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
     </div>
   </button>
   <div
-    className="CollapsibleCard__StyledCollapsible-xk1kem-0 hCAsfz"
+    className="c7"
     height={null}
     hidden={false}
     onTransitionEnd={[Function]}
   >
     <p
-      className="CollapsibleCardstories__styledText-zzyqmg-0 chdbZp Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
+      className="c8 c9"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
@@ -117,33 +373,161 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
 `;
 
 exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listener 1`] = `
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c2 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c2 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c7 {
+  overflow: hidden;
+  will-change: height;
+  height: auto;
+  -webkit-transition: height 0.16s ease-out;
+  transition: height 0.16s ease-out;
+}
+
+.c7[hidden] {
+  display: none;
+}
+
+.c1 {
+  touch-action: none;
+  position: relative;
+  background: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 20px 20px;
+  border: 0;
+}
+
+.c1::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 0;
+}
+
+.c6 {
+  -webkit-transform: rodate(0);
+  -ms-transform: rodate(0);
+  transform: rodate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+}
+
+.c8 {
+  margin: 0;
+}
+
+@media (min-width:760px) {
+  .c4 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
 <div
-  className="Card__StyledCard-sc-1e5czjc-0 fCiISE"
+  className="c0"
 >
   <button
     aria-expanded={true}
-    className="CollapsibleCard__StyledButton-xk1kem-1 bnDGCP"
+    className="c1"
     onClick={[Function]}
     type="button"
   >
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 gLivVz"
+      className="c2"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+        className="c3"
       >
         <h2
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kZoBvC"
+          className="c4"
         >
           I've been clicked 0 times
         </h2>
       </div>
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+        className="c3"
       >
         <svg
           aria-hidden="true"
-          className="IconBase__StyledIconBase-sc-10cbji3-0 boQuyh CollapsibleCard__AnimatedChevronUp-xk1kem-2 eGZoly"
+          className="c5 c6"
           collapsed={false}
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
@@ -159,13 +543,13 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
     </div>
   </button>
   <div
-    className="CollapsibleCard__StyledCollapsible-xk1kem-0 hCAsfz"
+    className="c7"
     height={null}
     hidden={false}
     onTransitionEnd={[Function]}
   >
     <p
-      className="CollapsibleCardstories__styledText-zzyqmg-0 chdbZp Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
+      className="c8 c9"
     >
       On mobile the onClick event should fire for onTouchStart and not onClick.
     </p>
@@ -174,33 +558,161 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
 `;
 
 exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c2 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c2 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c7 {
+  overflow: hidden;
+  will-change: height;
+  height: auto;
+  -webkit-transition: height 0.16s ease-out;
+  transition: height 0.16s ease-out;
+}
+
+.c7[hidden] {
+  display: none;
+}
+
+.c1 {
+  touch-action: none;
+  position: relative;
+  background: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 20px 20px;
+  border: 0;
+}
+
+.c1::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 0;
+}
+
+.c6 {
+  -webkit-transform: rodate(0);
+  -ms-transform: rodate(0);
+  transform: rodate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+}
+
+.c8 {
+  margin: 0;
+}
+
+@media (min-width:760px) {
+  .c4 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
 <div
-  className="Card__StyledCard-sc-1e5czjc-0 fCiISE"
+  className="c0"
 >
   <button
     aria-expanded={true}
-    className="CollapsibleCard__StyledButton-xk1kem-1 bnDGCP"
+    className="c1"
     onClick={[Function]}
     type="button"
   >
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 gLivVz"
+      className="c2"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+        className="c3"
       >
         <h2
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kZoBvC"
+          className="c4"
         >
           Collapsible
         </h2>
       </div>
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+        className="c3"
       >
         <svg
           aria-hidden="true"
-          className="IconBase__StyledIconBase-sc-10cbji3-0 boQuyh CollapsibleCard__AnimatedChevronUp-xk1kem-2 eGZoly"
+          className="c5 c6"
           collapsed={false}
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
@@ -216,13 +728,13 @@ exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
     </div>
   </button>
   <div
-    className="CollapsibleCard__StyledCollapsible-xk1kem-0 hCAsfz"
+    className="c7"
     height={null}
     hidden={false}
     onTransitionEnd={[Function]}
   >
     <p
-      className="CollapsibleCardstories__styledText-zzyqmg-0 chdbZp Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
+      className="c8 c9"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>

@@ -1,21 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Atoms | List Basic ordered list 1`] = `
+.c0 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c1 {
+  display: block;
+}
+
 <ol
-  className="List__BaseList-sc-67l9u3-0 cLiOUp"
+  className="c0"
 >
   <li
-    className="ListItem__StyledListItem-pn91gs-0 eAAaLc"
+    className="c1"
   >
     List item 1
   </li>
   <li
-    className="ListItem__StyledListItem-pn91gs-0 eAAaLc"
+    className="c1"
   >
     List item 2
   </li>
   <li
-    className="ListItem__StyledListItem-pn91gs-0 eAAaLc"
+    className="c1"
   >
     List item 3
   </li>
@@ -23,21 +33,31 @@ exports[`Storyshots Atoms | List Basic ordered list 1`] = `
 `;
 
 exports[`Storyshots Atoms | List Basic unordered list 1`] = `
+.c0 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c1 {
+  display: block;
+}
+
 <ul
-  className="List__BaseList-sc-67l9u3-0 cLiOUp"
+  className="c0"
 >
   <li
-    className="ListItem__StyledListItem-pn91gs-0 eAAaLc"
+    className="c1"
   >
     List item
   </li>
   <li
-    className="ListItem__StyledListItem-pn91gs-0 eAAaLc"
+    className="c1"
   >
     List item
   </li>
   <li
-    className="ListItem__StyledListItem-pn91gs-0 eAAaLc"
+    className="c1"
   >
     List item
   </li>
@@ -45,21 +65,35 @@ exports[`Storyshots Atoms | List Basic unordered list 1`] = `
 `;
 
 exports[`Storyshots Atoms | List With separators between each li 1`] = `
+.c0 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c0 li + li {
+  border-top: 1px solid #EBEBE8;
+}
+
+.c1 {
+  display: block;
+}
+
 <ul
-  className="List__BaseList-sc-67l9u3-0 czDDwy"
+  className="c0"
 >
   <li
-    className="ListItem__StyledListItem-pn91gs-0 eAAaLc"
+    className="c1"
   >
     List item 1
   </li>
   <li
-    className="ListItem__StyledListItem-pn91gs-0 eAAaLc"
+    className="c1"
   >
     List item 2
   </li>
   <li
-    className="ListItem__StyledListItem-pn91gs-0 eAAaLc"
+    className="c1"
   >
     List item 3
   </li>

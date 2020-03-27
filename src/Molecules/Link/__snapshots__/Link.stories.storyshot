@@ -1,11 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Link Cms link with its default values 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <span
-  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
+  className="c0"
 >
   <a
-    className="Link__StyledLink-apj04t-0 ixkkIR"
+    className="c1"
     href="http://www.google.com"
     onClick={[Function]}
   >
@@ -15,11 +37,33 @@ exports[`Storyshots Molecules | Link Cms link with its default values 1`] = `
 `;
 
 exports[`Storyshots Molecules | Link Default usage 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <span
-  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
+  className="c0"
 >
   <a
-    className="Link__StyledLink-apj04t-0 ixkkIR"
+    className="c1"
     href="/startpage"
     onClick={[Function]}
   >
@@ -29,11 +73,33 @@ exports[`Storyshots Molecules | Link Default usage 1`] = `
 `;
 
 exports[`Storyshots Molecules | Link External link with its default values 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <span
-  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
+  className="c0"
 >
   <a
-    className="Link__StyledLink-apj04t-0 ixkkIR"
+    className="c1"
     href="http://www.google.com"
     onClick={[Function]}
     rel="noopener noreferrer nofollow"
@@ -45,11 +111,33 @@ exports[`Storyshots Molecules | Link External link with its default values 1`] =
 `;
 
 exports[`Storyshots Molecules | Link External link with rel and target overriden 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <span
-  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
+  className="c0"
 >
   <a
-    className="Link__StyledLink-apj04t-0 ixkkIR"
+    className="c1"
     href="http://www.google.com"
     onClick={[Function]}
     rel="nofollow"
@@ -61,11 +149,33 @@ exports[`Storyshots Molecules | Link External link with rel and target overriden
 `;
 
 exports[`Storyshots Molecules | Link With black color 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c1 {
+  display: inline;
+  padding: 0;
+  color: #282823;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <span
-  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
+  className="c0"
 >
   <a
-    className="Link__StyledLink-apj04t-0 ijaISG"
+    className="c1"
     href="http://www.google.com"
     onClick={[Function]}
     rel="noopener noreferrer nofollow"
@@ -77,11 +187,65 @@ exports[`Storyshots Molecules | Link With black color 1`] = `
 `;
 
 exports[`Storyshots Molecules | Link With disabled prop results in a disabled button looking like a link 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: inline;
+  padding: 0;
+  color: #A0A09B;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: not-allowed;
+  font-weight: inherit;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <span
-  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
+  className="c0"
 >
   <button
-    className="NormalizedButton__Button-ey7f5x-0 Link__StyledButton-apj04t-1 gOQraJ"
+    className="NormalizedButton__Button-ey7f5x-0 c1"
     disabled={true}
     onClick={[Function]}
     type="button"
@@ -92,11 +256,33 @@ exports[`Storyshots Molecules | Link With disabled prop results in a disabled bu
 `;
 
 exports[`Storyshots Molecules | Link With inherited color 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #AC135A;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c1 {
+  display: inline;
+  padding: 0;
+  color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <span
-  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 iVJrff"
+  className="c0"
 >
   <a
-    className="Link__StyledLink-apj04t-0 ckDnVB"
+    className="c1"
     href="http://www.google.com"
     onClick={[Function]}
     rel="noopener noreferrer nofollow"
@@ -108,11 +294,33 @@ exports[`Storyshots Molecules | Link With inherited color 1`] = `
 `;
 
 exports[`Storyshots Molecules | Link With typography primary as type 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c1 {
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <span
-  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 lhwrhZ"
+  className="c0"
 >
   <a
-    className="Link__StyledLink-apj04t-0 ixkkIR"
+    className="c1"
     href="/startpage"
     onClick={[Function]}
   >
@@ -122,11 +330,65 @@ exports[`Storyshots Molecules | Link With typography primary as type 1`] = `
 `;
 
 exports[`Storyshots Molecules | Link Without to prop results in a button looking like a link 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <span
-  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
+  className="c0"
 >
   <button
-    className="NormalizedButton__Button-ey7f5x-0 Link__StyledButton-apj04t-1 dubrSr"
+    className="NormalizedButton__Button-ey7f5x-0 c1"
     onClick={[Function]}
     type="button"
   >

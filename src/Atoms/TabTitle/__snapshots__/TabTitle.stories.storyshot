@@ -1,11 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Atoms | TabTitle Active 1`] = `
+.c1 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 <div
-  className="TabTitlestories__Container-kfnrg2-0 bfsypW"
+  className="c0"
 >
   <span
-    className="TabTitle__StyledTitle-sc-1sa0gl6-0 dgGiju"
+    className="c1"
     height={8}
   >
     This is tab title
@@ -14,11 +45,31 @@ exports[`Storyshots Atoms | TabTitle Active 1`] = `
 `;
 
 exports[`Storyshots Atoms | TabTitle Default 1`] = `
+.c1 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 <div
-  className="TabTitlestories__Container-kfnrg2-0 bfsypW"
+  className="c0"
 >
   <span
-    className="TabTitle__StyledTitle-sc-1sa0gl6-0 fAyBAw"
+    className="c1"
     height={8}
   >
     This is tab title
@@ -27,17 +78,76 @@ exports[`Storyshots Atoms | TabTitle Default 1`] = `
 `;
 
 exports[`Storyshots Atoms | TabTitle Integration: with Flexbox 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 <div
-  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 kChVEw"
+  className="c0"
 >
   <div
-    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+    className="c1"
   >
     <div
-      className="TabTitlestories__Container-kfnrg2-0 bfsypW"
+      className="c2"
     >
       <span
-        className="TabTitle__StyledTitle-sc-1sa0gl6-0 fAyBAw"
+        className="c3"
         height={8}
       >
         TabTitle1
@@ -45,13 +155,13 @@ exports[`Storyshots Atoms | TabTitle Integration: with Flexbox 1`] = `
     </div>
   </div>
   <div
-    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+    className="c1"
   >
     <div
-      className="TabTitlestories__Container-kfnrg2-0 bfsypW"
+      className="c2"
     >
       <span
-        className="TabTitle__StyledTitle-sc-1sa0gl6-0 dgGiju"
+        className="c4"
         height={8}
       >
         TabTitle2
@@ -59,13 +169,13 @@ exports[`Storyshots Atoms | TabTitle Integration: with Flexbox 1`] = `
     </div>
   </div>
   <div
-    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+    className="c1"
   >
     <div
-      className="TabTitlestories__Container-kfnrg2-0 bfsypW"
+      className="c2"
     >
       <span
-        className="TabTitle__StyledTitle-sc-1sa0gl6-0 fAyBAw"
+        className="c3"
         height={8}
       >
         TabTitle3
@@ -76,11 +186,42 @@ exports[`Storyshots Atoms | TabTitle Integration: with Flexbox 1`] = `
 `;
 
 exports[`Storyshots Atoms | TabTitle With height modified 1`] = `
+.c1 {
+  height: 44px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 <div
-  className="TabTitlestories__Container-kfnrg2-0 bfsypW"
+  className="c0"
 >
   <span
-    className="TabTitle__StyledTitle-sc-1sa0gl6-0 jOgXPf"
+    className="c1"
     height={11}
   >
     This is tab title

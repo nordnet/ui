@@ -1,21 +1,113 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots DEPRECATED | Molecules / Select  Select with hidden label 1`] = `
+.c0 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  width: 100%;
+  height: 32px;
+  opacity: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.c7 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c2 {
+  position: relative;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+}
+
+.c2:hover {
+  border-color: #4B4B46;
+}
+
+.c5 {
+  height: 32px;
+  width: 100%;
+  line-height: 32px;
+  padding: 0 28px 0 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+
 <label>
   <div
-    className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
+    className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c1"
     >
       Stocks
     </span>
   </div>
   <div
-    className="Select__SelectWrapper-jbievh-2 kNxlVf"
+    className="c2"
   >
     <select
-      className="Select__StyledSelect-jbievh-0 kKDEGw"
+      className="c3"
       disabled={false}
       onBlur={[Function]}
       onChange={[Function]}
@@ -40,13 +132,13 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with hidden label 1`
     </select>
     <span
       aria-hidden={true}
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Select__SelectedValue-jbievh-3 gVZZOz"
+      className="c4 c5"
     >
       Option 2
     </span>
     <svg
       aria-hidden="true"
-      className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV Select__Chevron-jbievh-1 bzobpz"
+      className="c6 c7"
       focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
@@ -62,6 +154,89 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with hidden label 1`
 `;
 
 exports[`Storyshots DEPRECATED | Molecules / Select  Select with overflowing placeholder 1`] = `
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  width: 100%;
+  height: 32px;
+  opacity: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.c6 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+}
+
+.c1:hover {
+  border-color: #4B4B46;
+}
+
+.c4 {
+  height: 32px;
+  width: 100%;
+  line-height: 32px;
+  padding: 0 28px 0 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+
 <div
   style={
     Object {
@@ -71,15 +246,15 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with overflowing pla
 >
   <label>
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c0"
     >
       Options
     </span>
     <div
-      className="Select__SelectWrapper-jbievh-2 kNxlVf"
+      className="c1"
     >
       <select
-        className="Select__StyledSelect-jbievh-0 kKDEGw"
+        className="c2"
         disabled={false}
         onBlur={[Function]}
         onChange={[Function]}
@@ -94,13 +269,13 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with overflowing pla
       </select>
       <span
         aria-hidden={true}
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Select__SelectedValue-jbievh-3 gVZZOz"
+        className="c3 c4"
       >
         Reaaaaaaaaaally long option
       </span>
       <svg
         aria-hidden="true"
-        className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV Select__Chevron-jbievh-1 bzobpz"
+        className="c5 c6"
         focus={false}
         focusable="false"
         preserveAspectRatio="xMidYMid meet"
@@ -117,17 +292,100 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with overflowing pla
 `;
 
 exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder 1`] = `
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  width: 100%;
+  height: 32px;
+  opacity: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.c6 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+}
+
+.c1:hover {
+  border-color: #4B4B46;
+}
+
+.c4 {
+  height: 32px;
+  width: 100%;
+  line-height: 32px;
+  padding: 0 28px 0 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+
 <label>
   <span
-    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+    className="c0"
   >
     Options
   </span>
   <div
-    className="Select__SelectWrapper-jbievh-2 kNxlVf"
+    className="c1"
   >
     <select
-      className="Select__StyledSelect-jbievh-0 kKDEGw"
+      className="c2"
       defaultValue=""
       disabled={false}
       onBlur={[Function]}
@@ -158,13 +416,13 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder 1`]
     </select>
     <span
       aria-hidden={true}
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Select__SelectedValue-jbievh-3 gVZZOz"
+      className="c3 c4"
     >
       Select option
     </span>
     <svg
       aria-hidden="true"
-      className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV Select__Chevron-jbievh-1 bzobpz"
+      className="c5 c6"
       focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
@@ -180,17 +438,100 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder 1`]
 `;
 
 exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder and preselected value 1`] = `
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  width: 100%;
+  height: 32px;
+  opacity: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.c6 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+}
+
+.c1:hover {
+  border-color: #4B4B46;
+}
+
+.c4 {
+  height: 32px;
+  width: 100%;
+  line-height: 32px;
+  padding: 0 28px 0 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+
 <label>
   <span
-    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+    className="c0"
   >
     Options
   </span>
   <div
-    className="Select__SelectWrapper-jbievh-2 kNxlVf"
+    className="c1"
   >
     <select
-      className="Select__StyledSelect-jbievh-0 kKDEGw"
+      className="c2"
       disabled={false}
       onBlur={[Function]}
       onChange={[Function]}
@@ -221,13 +562,13 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder and
     </select>
     <span
       aria-hidden={true}
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Select__SelectedValue-jbievh-3 gVZZOz"
+      className="c3 c4"
     >
       Option 2
     </span>
     <svg
       aria-hidden="true"
-      className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV Select__Chevron-jbievh-1 bzobpz"
+      className="c5 c6"
       focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
@@ -243,21 +584,113 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder and
 `;
 
 exports[`Storyshots DEPRECATED | Molecules / Select  Select with prepended empty value 1`] = `
+.c0 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  width: 100%;
+  height: 32px;
+  opacity: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.c7 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c2 {
+  position: relative;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+}
+
+.c2:hover {
+  border-color: #4B4B46;
+}
+
+.c5 {
+  height: 32px;
+  width: 100%;
+  line-height: 32px;
+  padding: 0 28px 0 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+
 <label>
   <div
-    className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
+    className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c1"
     >
       Stocks
     </span>
   </div>
   <div
-    className="Select__SelectWrapper-jbievh-2 kNxlVf"
+    className="c2"
   >
     <select
-      className="Select__StyledSelect-jbievh-0 kKDEGw"
+      className="c3"
       disabled={false}
       onBlur={[Function]}
       onChange={[Function]}
@@ -287,13 +720,13 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with prepended empty
     </select>
     <span
       aria-hidden={true}
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Select__SelectedValue-jbievh-3 gVZZOz"
+      className="c4 c5"
     >
       All
     </span>
     <svg
       aria-hidden="true"
-      className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV Select__Chevron-jbievh-1 bzobpz"
+      className="c6 c7"
       focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
@@ -309,17 +742,100 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with prepended empty
 `;
 
 exports[`Storyshots DEPRECATED | Molecules / Select  Select with preselected value 1`] = `
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  width: 100%;
+  height: 32px;
+  opacity: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.c6 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+}
+
+.c1:hover {
+  border-color: #4B4B46;
+}
+
+.c4 {
+  height: 32px;
+  width: 100%;
+  line-height: 32px;
+  padding: 0 28px 0 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+
 <label>
   <span
-    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+    className="c0"
   >
     Stocks
   </span>
   <div
-    className="Select__SelectWrapper-jbievh-2 kNxlVf"
+    className="c1"
   >
     <select
-      className="Select__StyledSelect-jbievh-0 kKDEGw"
+      className="c2"
       disabled={false}
       onBlur={[Function]}
       onChange={[Function]}
@@ -344,13 +860,13 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with preselected val
     </select>
     <span
       aria-hidden={true}
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Select__SelectedValue-jbievh-3 gVZZOz"
+      className="c3 c4"
     >
       Option 2
     </span>
     <svg
       aria-hidden="true"
-      className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV Select__Chevron-jbievh-1 bzobpz"
+      className="c5 c6"
       focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
@@ -366,17 +882,100 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with preselected val
 `;
 
 exports[`Storyshots DEPRECATED | Molecules / Select  Select without placeholder 1`] = `
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  width: 100%;
+  height: 32px;
+  opacity: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.c6 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+}
+
+.c1:hover {
+  border-color: #4B4B46;
+}
+
+.c4 {
+  height: 32px;
+  width: 100%;
+  line-height: 32px;
+  padding: 0 28px 0 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+
 <label>
   <span
-    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+    className="c0"
   >
     Stocks
   </span>
   <div
-    className="Select__SelectWrapper-jbievh-2 kNxlVf"
+    className="c1"
   >
     <select
-      className="Select__StyledSelect-jbievh-0 kKDEGw"
+      className="c2"
       disabled={false}
       onBlur={[Function]}
       onChange={[Function]}
@@ -400,11 +999,11 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select without placeholder 
     </select>
     <span
       aria-hidden={true}
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Select__SelectedValue-jbievh-3 gVZZOz"
+      className="c3 c4"
     />
     <svg
       aria-hidden="true"
-      className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV Select__Chevron-jbievh-1 bzobpz"
+      className="c5 c6"
       focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"

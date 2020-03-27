@@ -1,16 +1,113 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.c1 > * {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #FFCF00;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+  border-left: 4px solid #FFCF00;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+.c5 {
+  width: 100%;
+}
+
+.c8 {
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c8:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <div
-  className="FeedbackBanner__StyledContainer-sc-1q6qf62-0 bcKJBz"
+  className="c0"
 >
   <div
-    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dFWLhn"
+    className="c1"
   >
     <span>
       <svg
         aria-hidden="true"
-        className="IconBase__StyledIconBase-sc-10cbji3-0 iEPtiZ"
+        className="c2"
         focusable="false"
         preserveAspectRatio="xMidYMid meet"
         role="presentation"
@@ -20,21 +117,21 @@ exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
           points="10 1 20 19 0 19"
         />
         <polygon
-          className="WarningTriangle__StyledPolygon-sc-6bppq2-0 eCyUAX"
+          className="c3"
           points="11 14 11 16 9 16 9 14 11 14 11 8 11 13 9 13 9 8 11 8"
         />
       </svg>
     </span>
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jeamru FeedbackBanner__TextFlexbox-sc-1q6qf62-1 eBdvBH"
+      className="c4 c5"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
+        className="c6"
       >
         Warning, complex child
       </span>
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+        className="c7"
       >
         <div>
           <div>
@@ -43,7 +140,7 @@ exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
           <div>
             For example, you can provide a 
             <a
-              className="Link__StyledLink-apj04t-0 ixkkIR"
+              className="c8"
               href="#/"
               onClick={[Function]}
             >
@@ -59,16 +156,100 @@ exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
 `;
 
 exports[`Storyshots Molecules | FeedbackBanner Default usage 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.c1 > * {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+  border-left: 4px solid #0046FF;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+.c5 {
+  width: 100%;
+}
+
 <div
-  className="FeedbackBanner__StyledContainer-sc-1q6qf62-0 gfMatM"
+  className="c0"
 >
   <div
-    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dFWLhn"
+    className="c1"
   >
     <span>
       <svg
         aria-hidden="true"
-        className="IconBase__StyledIconBase-sc-10cbji3-0 uMaOK"
+        className="c2"
         focusable="false"
         preserveAspectRatio="xMidYMid meet"
         role="presentation"
@@ -78,21 +259,21 @@ exports[`Storyshots Molecules | FeedbackBanner Default usage 1`] = `
           d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
         />
         <polygon
-          className="InfoCircle__StyledPolygon-sc-1e9thdu-0 ihBKvY"
+          className="c3"
           points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
         />
       </svg>
     </span>
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jeamru FeedbackBanner__TextFlexbox-sc-1q6qf62-1 eBdvBH"
+      className="c4 c5"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
+        className="c6"
       >
         Feedback banner
       </span>
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+        className="c7"
       >
         Feedback banner should be used within modules to display information that needs attention. Content is flexible, it can contain links and plain text.
       </span>
@@ -102,30 +283,246 @@ exports[`Storyshots Molecules | FeedbackBanner Default usage 1`] = `
 `;
 
 exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.c4 > * {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c4 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #FF1900;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #FFCF00;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #00D200;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c19 {
+  fill: #FFFFFF;
+}
+
+.c13 {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  fill: #FFFFFF;
+}
+
+.c16 {
+  fill: #FFFFFF;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  background-color: #F5F5F5;
+  border-left: 4px solid #0046FF;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+.c11 {
+  background-color: #F5F5F5;
+  border-left: 4px solid #FF1900;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+.c14 {
+  background-color: #F5F5F5;
+  border-left: 4px solid #FFCF00;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+.c17 {
+  background-color: #F5F5F5;
+  border-left: 4px solid #00D200;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+.c8 {
+  width: 100%;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
 <div
-  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+  className="c0"
   direction="column"
 >
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       info
     </div>
     <div>
       <div
-        className="FeedbackBanner__StyledContainer-sc-1q6qf62-0 gfMatM"
+        className="c3"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dFWLhn"
+          className="c4"
         >
           <span>
             <svg
               aria-hidden="true"
-              className="IconBase__StyledIconBase-sc-10cbji3-0 uMaOK"
+              className="c5"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -135,21 +532,21 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
                 d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
               />
               <polygon
-                className="InfoCircle__StyledPolygon-sc-1e9thdu-0 ihBKvY"
+                className="c6"
                 points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
               />
             </svg>
           </span>
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jeamru FeedbackBanner__TextFlexbox-sc-1q6qf62-1 eBdvBH"
+            className="c7 c8"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
+              className="c9"
             >
               Info
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+              className="c10"
             >
               This is an information message
             </span>
@@ -159,25 +556,25 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       error
     </div>
     <div>
       <div
-        className="FeedbackBanner__StyledContainer-sc-1q6qf62-0 iFRXQq"
+        className="c11"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dFWLhn"
+          className="c4"
         >
           <span>
             <svg
               aria-hidden="true"
-              className="IconBase__StyledIconBase-sc-10cbji3-0 jQqIls"
+              className="c12"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -187,21 +584,21 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
                 d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
               />
               <polygon
-                className="CrossCircle__StyledPolygon-trx5td-0 jFynFK"
+                className="c13"
                 points="8.681 9.967 5.073 6.333 6.396 5 10.004 8.634 13.604 5.007 14.916 6.329 11.316 9.956 15 13.667 13.677 15 9.993 11.289 6.312 14.997 5 13.675"
               />
             </svg>
           </span>
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jeamru FeedbackBanner__TextFlexbox-sc-1q6qf62-1 eBdvBH"
+            className="c7 c8"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
+              className="c9"
             >
               Error
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+              className="c10"
             >
               This is an error message
             </span>
@@ -211,25 +608,25 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       warning
     </div>
     <div>
       <div
-        className="FeedbackBanner__StyledContainer-sc-1q6qf62-0 bcKJBz"
+        className="c14"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dFWLhn"
+          className="c4"
         >
           <span>
             <svg
               aria-hidden="true"
-              className="IconBase__StyledIconBase-sc-10cbji3-0 iEPtiZ"
+              className="c15"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -239,21 +636,21 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
                 points="10 1 20 19 0 19"
               />
               <polygon
-                className="WarningTriangle__StyledPolygon-sc-6bppq2-0 eCyUAX"
+                className="c16"
                 points="11 14 11 16 9 16 9 14 11 14 11 8 11 13 9 13 9 8 11 8"
               />
             </svg>
           </span>
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jeamru FeedbackBanner__TextFlexbox-sc-1q6qf62-1 eBdvBH"
+            className="c7 c8"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
+              className="c9"
             >
               Warning
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+              className="c10"
             >
               This is a warning message
             </span>
@@ -263,25 +660,25 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       success
     </div>
     <div>
       <div
-        className="FeedbackBanner__StyledContainer-sc-1q6qf62-0 jAwhWg"
+        className="c17"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dFWLhn"
+          className="c4"
         >
           <span>
             <svg
               aria-hidden="true"
-              className="IconBase__StyledIconBase-sc-10cbji3-0 ycRqa"
+              className="c18"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -291,21 +688,21 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
                 d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
               />
               <polygon
-                className="CheckMarkCircle__StyledPolygon-m74und-0 fOEqGh"
+                className="c19"
                 points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
               />
             </svg>
           </span>
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jeamru FeedbackBanner__TextFlexbox-sc-1q6qf62-1 eBdvBH"
+            className="c7 c8"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
+              className="c9"
             >
               Success
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+              className="c10"
             >
               This is a success message
             </span>
@@ -318,30 +715,171 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
 `;
 
 exports[`Storyshots Molecules | FeedbackBanner Displaying title 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.c4 > * {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c4 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  fill: #FFFFFF;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  background-color: #F5F5F5;
+  border-left: 4px solid #0046FF;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+.c8 {
+  width: 100%;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
 <div
-  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+  className="c0"
   direction="column"
 >
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       With title
     </div>
     <div>
       <div
-        className="FeedbackBanner__StyledContainer-sc-1q6qf62-0 gfMatM"
+        className="c3"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dFWLhn"
+          className="c4"
         >
           <span>
             <svg
               aria-hidden="true"
-              className="IconBase__StyledIconBase-sc-10cbji3-0 uMaOK"
+              className="c5"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -351,21 +889,21 @@ exports[`Storyshots Molecules | FeedbackBanner Displaying title 1`] = `
                 d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
               />
               <polygon
-                className="InfoCircle__StyledPolygon-sc-1e9thdu-0 ihBKvY"
+                className="c6"
                 points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
               />
             </svg>
           </span>
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jeamru FeedbackBanner__TextFlexbox-sc-1q6qf62-1 eBdvBH"
+            className="c7 c8"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
+              className="c9"
             >
               This is a title
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+              className="c10"
             >
               This message has a title
             </span>
@@ -375,25 +913,25 @@ exports[`Storyshots Molecules | FeedbackBanner Displaying title 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       Without title
     </div>
     <div>
       <div
-        className="FeedbackBanner__StyledContainer-sc-1q6qf62-0 gfMatM"
+        className="c3"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dFWLhn"
+          className="c4"
         >
           <span>
             <svg
               aria-hidden="true"
-              className="IconBase__StyledIconBase-sc-10cbji3-0 uMaOK"
+              className="c5"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -403,16 +941,16 @@ exports[`Storyshots Molecules | FeedbackBanner Displaying title 1`] = `
                 d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
               />
               <polygon
-                className="InfoCircle__StyledPolygon-sc-1e9thdu-0 ihBKvY"
+                className="c6"
                 points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
               />
             </svg>
           </span>
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jeamru FeedbackBanner__TextFlexbox-sc-1q6qf62-1 eBdvBH"
+            className="c7 c8"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+              className="c10"
             >
               This message does not have a title
             </span>

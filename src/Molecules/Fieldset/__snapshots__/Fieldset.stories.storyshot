@@ -1,44 +1,214 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Fieldset Default 1`] = `
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  margin: 0 0 16px 0;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c3 {
+  width: auto;
+  display: inline-block;
+}
+
+.c11 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c11::before {
+  content: '';
+  display: block;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c5 {
+  position: relative;
+}
+
+.c5:hover .c10 {
+  border-color: #4B4B46;
+}
+
+.c8 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c8:checked + .c10 {
+  border-color: #0046FF;
+  background: #0046FF;
+}
+
+.c8:checked + .c10 svg {
+  fill: #FFFFFF;
+}
+
+.c8[disabled] + .c10 {
+  border-color: #EBEBE8;
+}
+
+.c8:checked[disabled] + .c10 {
+  border-color: #EBEBE8;
+  background: #EBEBE8;
+}
+
+.c8:focus + .c10::before {
+  border: 1px solid #0046FF;
+}
+
+.c14 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
+@media (min-width:760px) {
+  .c2 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
 <fieldset
-  className="Fieldset__StyledFieldset-sc-1fwvu26-0 GQPdY"
+  className="c0"
 >
   <legend
-    className="NormalizedLegend__Legend-sc-1svgb20-0 Legend__StyledLegendAsCaption-x6z4g1-0 cjPeLN"
+    className="NormalizedLegend__Legend-sc-1svgb20-0 c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 cQSKGF"
+      className="c2"
     >
       Colors
     </span>
   </legend>
   <div
-    className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+    className="c3"
     width="auto"
   >
     <label
-      className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+      className="c4 c5"
       hidden={false}
     >
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+        className="c6"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+          className="c7"
         >
           <input
-            className="Checkbox__Input-vu58cg-2 fuTURf"
+            className="c8"
             name="example"
             type="checkbox"
             value="green"
           />
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+            className="c9 c10 c11"
           >
             <svg
               aria-hidden="true"
-              className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+              className="c12"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -50,7 +220,7 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
             </svg>
           </div>
           <span
-            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Checkbox__Label-vu58cg-3 jfGcbP"
+            className="c13 c14"
           >
             Green
           </span>
@@ -59,31 +229,31 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
     </label>
   </div>
   <div
-    className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+    className="c3"
     width="auto"
   >
     <label
-      className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+      className="c4 c5"
       hidden={false}
     >
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+        className="c6"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+          className="c7"
         >
           <input
-            className="Checkbox__Input-vu58cg-2 fuTURf"
+            className="c8"
             name="example"
             type="checkbox"
             value="blue"
           />
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+            className="c9 c10 c11"
           >
             <svg
               aria-hidden="true"
-              className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+              className="c12"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -95,7 +265,7 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
             </svg>
           </div>
           <span
-            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Checkbox__Label-vu58cg-3 jfGcbP"
+            className="c13 c14"
           >
             Blue
           </span>
@@ -104,31 +274,31 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
     </label>
   </div>
   <div
-    className="FormField__Wrapper-ydn0fr-0 jGJZfM"
+    className="c3"
     width="auto"
   >
     <label
-      className="FormLabel__StyledLabel-skax1c-0 VHIlu Checkbox__StyledFormLabel-vu58cg-1 gqmvIF"
+      className="c4 c5"
       hidden={false}
     >
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+        className="c6"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+          className="c7"
         >
           <input
-            className="Checkbox__Input-vu58cg-2 fuTURf"
+            className="c8"
             name="example"
             type="checkbox"
             value="yellow"
           />
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Checkbox__CheckmarkBox-vu58cg-0 irEJXT"
+            className="c9 c10 c11"
           >
             <svg
               aria-hidden="true"
-              className="IconBase__StyledIconBase-sc-10cbji3-0 kZOWKt"
+              className="c12"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -140,7 +310,7 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
             </svg>
           </div>
           <span
-            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Checkbox__Label-vu58cg-3 jfGcbP"
+            className="c13 c14"
           >
             Yellow
           </span>

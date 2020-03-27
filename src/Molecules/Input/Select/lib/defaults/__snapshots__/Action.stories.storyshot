@@ -1,32 +1,178 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Input / Select / Action All States 1`] = `
+.c3 {
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c6 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #0046FF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  cursor: pointer;
+  min-width: 140px;
+}
+
+.c4:hover {
+  background: #F5F5F5;
+}
+
+.c9 {
+  cursor: pointer;
+  min-width: 140px;
+  background: #F5F5F5;
+}
+
+.c10 {
+  cursor: not-allowed;
+  min-width: 140px;
+}
+
+.c8 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
 <div
-  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+  className="c0"
   direction="column"
 >
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       Normal
     </div>
     <div>
       <div
-        className="Box__StyledDiv-sc-1bfv3i9-0 fGUCsQ Action__StyledBoxWithBorder-k6v935-0 dEFPdn"
+        className="c3 c4"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fCXAnV"
+          className="c5"
         >
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 eJlHQf"
+            className="c6"
           >
             <svg
               aria-hidden="true"
-              className="IconBase__StyledIconBase-sc-10cbji3-0 gYBlcz"
+              className="c7"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -37,7 +183,7 @@ exports[`Storyshots Molecules | Input / Select / Action All States 1`] = `
               />
             </svg>
             <span
-              className="Action__EllipsizingText-k6v935-1 ckzIvL"
+              className="c8"
             >
               Normal
             </span>
@@ -47,27 +193,27 @@ exports[`Storyshots Molecules | Input / Select / Action All States 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       Focused
     </div>
     <div>
       <div
-        className="Box__StyledDiv-sc-1bfv3i9-0 fGUCsQ Action__StyledBoxWithBorder-k6v935-0 eobdxP"
+        className="c3 c9"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fCXAnV"
+          className="c5"
         >
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 eJlHQf"
+            className="c6"
           >
             <svg
               aria-hidden="true"
-              className="IconBase__StyledIconBase-sc-10cbji3-0 gYBlcz"
+              className="c7"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -78,7 +224,7 @@ exports[`Storyshots Molecules | Input / Select / Action All States 1`] = `
               />
             </svg>
             <span
-              className="Action__EllipsizingText-k6v935-1 ckzIvL"
+              className="c8"
             >
               Focused
             </span>
@@ -88,28 +234,28 @@ exports[`Storyshots Molecules | Input / Select / Action All States 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       Disabled
     </div>
     <div>
       <div
-        className="Box__StyledDiv-sc-1bfv3i9-0 fGUCsQ Action__StyledBoxWithBorder-k6v935-0 dRqVTn"
+        className="c3 c10"
         disabled={true}
       >
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ixwJpU"
+          className="c11"
         >
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 eJlHQf"
+            className="c6"
           >
             <svg
               aria-hidden="true"
-              className="IconBase__StyledIconBase-sc-10cbji3-0 gYBlcz"
+              className="c7"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -120,7 +266,7 @@ exports[`Storyshots Molecules | Input / Select / Action All States 1`] = `
               />
             </svg>
             <span
-              className="Action__EllipsizingText-k6v935-1 ckzIvL"
+              className="c8"
             >
               Disabled
             </span>
@@ -130,27 +276,27 @@ exports[`Storyshots Molecules | Input / Select / Action All States 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       No icon
     </div>
     <div>
       <div
-        className="Box__StyledDiv-sc-1bfv3i9-0 fGUCsQ Action__StyledBoxWithBorder-k6v935-0 dRqVTn"
+        className="c3 c10"
         disabled={true}
       >
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ixwJpU"
+          className="c11"
         >
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 eJlHQf"
+            className="c6"
           >
             <span
-              className="Action__EllipsizingText-k6v935-1 ckzIvL"
+              className="c8"
             >
               No icon
             </span>

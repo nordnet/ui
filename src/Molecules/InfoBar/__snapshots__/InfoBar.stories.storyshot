@@ -1,30 +1,158 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | InfoBar Default usage 1`] = `
+.c3 {
+  padding-left: 12px;
+  padding-top: 4px;
+  padding-right: 12px;
+  padding-bottom: 4px;
+}
+
+.c6 {
+  padding-right: 8px;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c9 {
+  box-sizing: border-box;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  fill: #FFFFFF;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.c1 {
+  background: #FFFFFF;
+  color: #282823;
+}
+
+.c1 span {
+  color: inherit;
+}
+
+.c1 a {
+  font-weight: bold;
+  color: #0046FF;
+}
+
+.c1 button {
+  display: block;
+  padding: 0;
+  background: none;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.c0 {
+  background: #f5f5f5;
+}
+
+@media (min-width:760px) {
+  .c3 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width:760px) {
+  .c2 {
+    max-width: 760px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width:976px) {
+  .c2 {
+    max-width: 976px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width:1280px) {
+  .c2 {
+    max-width: 1280px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width:1600px) {
+  .c2 {
+    max-width: 1600px;
+    padding: 0 20px;
+  }
+}
+
 <div
-  className="InfoBarstories__StyledBg-sc-1ah3c7t-0 kVPWZe"
+  className="c0"
 >
   <div
-    className="PageWrapper__Outer-sc-1ur2ylx-0 iYsWey InfoBar__InfoBarPageWrapper-sc-1xd3qwc-0 egztwC"
+    className="c1"
   >
     <div
-      className="PageWrapper__Inner-sc-1ur2ylx-1 kOfIEH"
+      className="c2"
     >
       <div
-        className="Box__StyledDiv-sc-1bfv3i9-0 dJZrHK"
+        className="c3"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+          className="c4"
         >
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+            className="c5"
           >
             <div
-              className="Box__StyledDiv-sc-1bfv3i9-0 emLnfS"
+              className="c6"
             >
               <svg
                 aria-hidden="true"
-                className="IconBase__StyledIconBase-sc-10cbji3-0 uMaOK"
+                className="c7"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -34,17 +162,17 @@ exports[`Storyshots Molecules | InfoBar Default usage 1`] = `
                   d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
                 />
                 <polygon
-                  className="InfoCircle__StyledPolygon-sc-1e9thdu-0 ihBKvY"
+                  className="c8"
                   points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
                 />
               </svg>
             </div>
           </div>
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 fywQJM"
+            className="c9"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+              className="c10"
             >
               InfoBar should be used on top of the pages to show Marketing or Customer Support communication messages. Content of the InfoBar is just rendered 
               <code>
@@ -60,34 +188,268 @@ exports[`Storyshots Molecules | InfoBar Default usage 1`] = `
 `;
 
 exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
+.c3 {
+  padding-left: 12px;
+  padding-top: 4px;
+  padding-right: 12px;
+  padding-bottom: 4px;
+}
+
+.c6 {
+  padding-right: 8px;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c9 {
+  box-sizing: border-box;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c18 {
+  fill: #00D200;
+}
+
+.c16 {
+  fill: #FF1900;
+}
+
+.c8 {
+  fill: #FFFFFF;
+}
+
+.c13 {
+  fill: #FFCF00;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.c1 {
+  background: #FFFFFF;
+  color: #282823;
+}
+
+.c1 span {
+  color: inherit;
+}
+
+.c1 a {
+  font-weight: bold;
+  color: #0046FF;
+}
+
+.c1 button {
+  display: block;
+  padding: 0;
+  background: none;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.c11 {
+  background: #FFCF00;
+  color: #282823;
+}
+
+.c11 span {
+  color: inherit;
+}
+
+.c11 a {
+  font-weight: bold;
+  color: #282823;
+}
+
+.c11 button {
+  display: block;
+  padding: 0;
+  background: none;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.c14 {
+  background: #FF1900;
+  color: #FFFFFF;
+}
+
+.c14 span {
+  color: inherit;
+}
+
+.c14 a {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.c14 button {
+  display: block;
+  padding: 0;
+  background: none;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.c17 {
+  background: #00D200;
+  color: #282823;
+}
+
+.c17 span {
+  color: inherit;
+}
+
+.c17 a {
+  font-weight: bold;
+  color: #282823;
+}
+
+.c17 button {
+  display: block;
+  padding: 0;
+  background: none;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.c0 {
+  background: #f5f5f5;
+}
+
+@media (min-width:760px) {
+  .c3 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width:760px) {
+  .c2 {
+    max-width: 760px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width:976px) {
+  .c2 {
+    max-width: 976px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width:1280px) {
+  .c2 {
+    max-width: 1280px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width:1600px) {
+  .c2 {
+    max-width: 1600px;
+    padding: 0 20px;
+  }
+}
+
 <div
-  className="InfoBarstories__StyledBg-sc-1ah3c7t-0 kVPWZe"
+  className="c0"
 >
   <code>
     no variant passed, defaults to general
   </code>
   <br />
   <div
-    className="PageWrapper__Outer-sc-1ur2ylx-0 iYsWey InfoBar__InfoBarPageWrapper-sc-1xd3qwc-0 egztwC"
+    className="c1"
   >
     <div
-      className="PageWrapper__Inner-sc-1ur2ylx-1 kOfIEH"
+      className="c2"
     >
       <div
-        className="Box__StyledDiv-sc-1bfv3i9-0 dJZrHK"
+        className="c3"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+          className="c4"
         >
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+            className="c5"
           >
             <div
-              className="Box__StyledDiv-sc-1bfv3i9-0 emLnfS"
+              className="c6"
             >
               <svg
                 aria-hidden="true"
-                className="IconBase__StyledIconBase-sc-10cbji3-0 uMaOK"
+                className="c7"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -97,17 +459,17 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
                   d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
                 />
                 <polygon
-                  className="InfoCircle__StyledPolygon-sc-1e9thdu-0 ihBKvY"
+                  className="c8"
                   points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
                 />
               </svg>
             </div>
           </div>
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 fywQJM"
+            className="c9"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+              className="c10"
             >
               We’re currently working on the new main menu. Links marked with arrow icon will redirect you to the previous website experience. 
               <a
@@ -129,26 +491,26 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
   </code>
   <br />
   <div
-    className="PageWrapper__Outer-sc-1ur2ylx-0 iYsWey InfoBar__InfoBarPageWrapper-sc-1xd3qwc-0 egztwC"
+    className="c1"
   >
     <div
-      className="PageWrapper__Inner-sc-1ur2ylx-1 kOfIEH"
+      className="c2"
     >
       <div
-        className="Box__StyledDiv-sc-1bfv3i9-0 dJZrHK"
+        className="c3"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+          className="c4"
         >
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+            className="c5"
           >
             <div
-              className="Box__StyledDiv-sc-1bfv3i9-0 emLnfS"
+              className="c6"
             >
               <svg
                 aria-hidden="true"
-                className="IconBase__StyledIconBase-sc-10cbji3-0 uMaOK"
+                className="c7"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -158,17 +520,17 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
                   d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
                 />
                 <polygon
-                  className="InfoCircle__StyledPolygon-sc-1e9thdu-0 ihBKvY"
+                  className="c8"
                   points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
                 />
               </svg>
             </div>
           </div>
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 fywQJM"
+            className="c9"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+              className="c10"
             >
               We’re currently working on the new main menu. Links marked with arrow icon will redirect you to the previous website experience. 
               <a
@@ -190,26 +552,26 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
   </code>
   <br />
   <div
-    className="PageWrapper__Outer-sc-1ur2ylx-0 iYsWey InfoBar__InfoBarPageWrapper-sc-1xd3qwc-0 kbtoaI"
+    className="c11"
   >
     <div
-      className="PageWrapper__Inner-sc-1ur2ylx-1 kOfIEH"
+      className="c2"
     >
       <div
-        className="Box__StyledDiv-sc-1bfv3i9-0 dJZrHK"
+        className="c3"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+          className="c4"
         >
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+            className="c5"
           >
             <div
-              className="Box__StyledDiv-sc-1bfv3i9-0 emLnfS"
+              className="c6"
             >
               <svg
                 aria-hidden="true"
-                className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV"
+                className="c12"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -219,17 +581,17 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
                   points="10 1 20 19 0 19"
                 />
                 <polygon
-                  className="WarningTriangle__StyledPolygon-sc-6bppq2-0 dqUcHO"
+                  className="c13"
                   points="11 14 11 16 9 16 9 14 11 14 11 8 11 13 9 13 9 8 11 8"
                 />
               </svg>
             </div>
           </div>
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 fywQJM"
+            className="c9"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+              className="c10"
             >
               We’re currently working on the new main menu. Links marked with arrow icon will redirect you to the previous website experience. 
               <a
@@ -251,26 +613,26 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
   </code>
   <br />
   <div
-    className="PageWrapper__Outer-sc-1ur2ylx-0 iYsWey InfoBar__InfoBarPageWrapper-sc-1xd3qwc-0 keIpJJ"
+    className="c14"
   >
     <div
-      className="PageWrapper__Inner-sc-1ur2ylx-1 kOfIEH"
+      className="c2"
     >
       <div
-        className="Box__StyledDiv-sc-1bfv3i9-0 dJZrHK"
+        className="c3"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+          className="c4"
         >
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+            className="c5"
           >
             <div
-              className="Box__StyledDiv-sc-1bfv3i9-0 emLnfS"
+              className="c6"
             >
               <svg
                 aria-hidden="true"
-                className="IconBase__StyledIconBase-sc-10cbji3-0 gXhzJA"
+                className="c15"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -280,17 +642,17 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
                   d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
                 />
                 <polygon
-                  className="CrossCircle__StyledPolygon-trx5td-0 jclHrK"
+                  className="c16"
                   points="8.681 9.967 5.073 6.333 6.396 5 10.004 8.634 13.604 5.007 14.916 6.329 11.316 9.956 15 13.667 13.677 15 9.993 11.289 6.312 14.997 5 13.675"
                 />
               </svg>
             </div>
           </div>
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 fywQJM"
+            className="c9"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+              className="c10"
             >
               The US market is currently down, we are fixing it right now. It will soon be back and running. 
               <a
@@ -312,26 +674,26 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
   </code>
   <br />
   <div
-    className="PageWrapper__Outer-sc-1ur2ylx-0 iYsWey InfoBar__InfoBarPageWrapper-sc-1xd3qwc-0 fpxKiX"
+    className="c17"
   >
     <div
-      className="PageWrapper__Inner-sc-1ur2ylx-1 kOfIEH"
+      className="c2"
     >
       <div
-        className="Box__StyledDiv-sc-1bfv3i9-0 dJZrHK"
+        className="c3"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+          className="c4"
         >
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+            className="c5"
           >
             <div
-              className="Box__StyledDiv-sc-1bfv3i9-0 emLnfS"
+              className="c6"
             >
               <svg
                 aria-hidden="true"
-                className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV"
+                className="c12"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -341,17 +703,17 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
                   d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
                 />
                 <polygon
-                  className="CheckMarkCircle__StyledPolygon-m74und-0 beCCsj"
+                  className="c18"
                   points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
                 />
               </svg>
             </div>
           </div>
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 fywQJM"
+            className="c9"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+              className="c10"
             >
               We have fixed the US market issue. It is now back to service. 
               <a
@@ -371,30 +733,176 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
 `;
 
 exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
+.c3 {
+  padding-left: 12px;
+  padding-top: 4px;
+  padding-right: 12px;
+  padding-bottom: 4px;
+}
+
+.c6 {
+  padding-right: 8px;
+}
+
+.c11 {
+  padding-left: 8px;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c9 {
+  box-sizing: border-box;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  fill: #FFFFFF;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.c1 {
+  background: #FFFFFF;
+  color: #282823;
+}
+
+.c1 span {
+  color: inherit;
+}
+
+.c1 a {
+  font-weight: bold;
+  color: #0046FF;
+}
+
+.c1 button {
+  display: block;
+  padding: 0;
+  background: none;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.c0 {
+  background: #f5f5f5;
+}
+
+@media (min-width:760px) {
+  .c3 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width:760px) {
+  .c2 {
+    max-width: 760px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width:976px) {
+  .c2 {
+    max-width: 976px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width:1280px) {
+  .c2 {
+    max-width: 1280px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width:1600px) {
+  .c2 {
+    max-width: 1600px;
+    padding: 0 20px;
+  }
+}
+
 <div
-  className="InfoBarstories__StyledBg-sc-1ah3c7t-0 kVPWZe"
+  className="c0"
 >
   <div
-    className="PageWrapper__Outer-sc-1ur2ylx-0 iYsWey InfoBar__InfoBarPageWrapper-sc-1xd3qwc-0 egztwC"
+    className="c1"
   >
     <div
-      className="PageWrapper__Inner-sc-1ur2ylx-1 kOfIEH"
+      className="c2"
     >
       <div
-        className="Box__StyledDiv-sc-1bfv3i9-0 dJZrHK"
+        className="c3"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+          className="c4"
         >
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+            className="c5"
           >
             <div
-              className="Box__StyledDiv-sc-1bfv3i9-0 emLnfS"
+              className="c6"
             >
               <svg
                 aria-hidden="true"
-                className="IconBase__StyledIconBase-sc-10cbji3-0 uMaOK"
+                className="c7"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -404,17 +912,17 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
                   d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
                 />
                 <polygon
-                  className="InfoCircle__StyledPolygon-sc-1e9thdu-0 ihBKvY"
+                  className="c8"
                   points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
                 />
               </svg>
             </div>
           </div>
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 fywQJM"
+            className="c9"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+              className="c10"
             >
               Without onClose prop InfoBar cannot be dismissed
             </span>
@@ -427,26 +935,26 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
   <br />
   <br />
   <div
-    className="PageWrapper__Outer-sc-1ur2ylx-0 iYsWey InfoBar__InfoBarPageWrapper-sc-1xd3qwc-0 egztwC"
+    className="c1"
   >
     <div
-      className="PageWrapper__Inner-sc-1ur2ylx-1 kOfIEH"
+      className="c2"
     >
       <div
-        className="Box__StyledDiv-sc-1bfv3i9-0 dJZrHK"
+        className="c3"
       >
         <div
-          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+          className="c4"
         >
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+            className="c5"
           >
             <div
-              className="Box__StyledDiv-sc-1bfv3i9-0 emLnfS"
+              className="c6"
             >
               <svg
                 aria-hidden="true"
-                className="IconBase__StyledIconBase-sc-10cbji3-0 uMaOK"
+                className="c7"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -456,26 +964,26 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
                   d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
                 />
                 <polygon
-                  className="InfoCircle__StyledPolygon-sc-1e9thdu-0 ihBKvY"
+                  className="c8"
                   points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
                 />
               </svg>
             </div>
           </div>
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 fywQJM"
+            className="c9"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+              className="c10"
             >
               With onClose prop InfoBar can be dismissed, but ParentComponent is in charge to react and actually hide the InfoBar.
             </span>
           </div>
           <div
-            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+            className="c5"
           >
             <div
-              className="Box__StyledDiv-sc-1bfv3i9-0 ggbGKR"
+              className="c11"
             >
               <button
                 onClick={[Function]}
@@ -483,7 +991,7 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
               >
                 <svg
                   aria-hidden="true"
-                  className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
+                  className="c12"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"

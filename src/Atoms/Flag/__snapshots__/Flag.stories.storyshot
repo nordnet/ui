@@ -1,22 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Atoms | Flag Available flags 1`] = `
+.c3 {
+  height: 20px;
+  box-sizing: border-box;
+  display: block;
+  width: 26.666666666666668px;
+  overflow: hidden;
+}
+
+.c4 {
+  height: 20px;
+  border: 1px solid #EBEBE8;
+  box-sizing: border-box;
+  display: block;
+  width: 26.666666666666668px;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
 <div
-  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+  className="c0"
   direction="column"
 >
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       ca
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 hnKcUY"
+        className="c3"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -41,17 +115,17 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       de
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 hnKcUY"
+        className="c3"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -79,17 +153,17 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       eu
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 hnKcUY"
+        className="c3"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -196,17 +270,17 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       fr
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 hnKcUY"
+        className="c3"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -235,17 +309,17 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       ru
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 jyEYmn"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -274,17 +348,17 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       gb
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 hnKcUY"
+        className="c3"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -331,17 +405,17 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       dk
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 hnKcUY"
+        className="c3"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -365,17 +439,17 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       fi
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 jyEYmn"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -399,17 +473,17 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       no
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 hnKcUY"
+        className="c3"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -441,17 +515,17 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       se
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 hnKcUY"
+        className="c3"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -492,17 +566,17 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       us
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 hnKcUY"
+        className="c3"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -588,17 +662,17 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       jp
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 jyEYmn"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -639,17 +713,17 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       cn
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 hnKcUY"
+        className="c3"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -702,17 +776,17 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       in
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 hnKcUY"
+        className="c3"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -744,17 +818,17 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       za
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 hnKcUY"
+        className="c3"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -814,17 +888,17 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       hk
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 hnKcUY"
+        className="c3"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -926,17 +1000,17 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       br
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 hnKcUY"
+        className="c3"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -996,17 +1070,17 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       au
     </div>
     <div>
       <svg
-        className="Flag__StyledSvg-sc-14ojzvi-0 hnKcUY"
+        className="c3"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1045,8 +1119,16 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
 `;
 
 exports[`Storyshots Atoms | Flag Default use 1`] = `
+.c0 {
+  height: 20px;
+  box-sizing: border-box;
+  display: block;
+  width: 26.666666666666668px;
+  overflow: hidden;
+}
+
 <svg
-  className="Flag__StyledSvg-sc-14ojzvi-0 hnKcUY"
+  className="c0"
   focusable="false"
   role="img"
   viewBox="0 0 640 480"
@@ -1087,8 +1169,16 @@ exports[`Storyshots Atoms | Flag Default use 1`] = `
 `;
 
 exports[`Storyshots Atoms | Flag Different size  1`] = `
+.c0 {
+  height: 40px;
+  box-sizing: border-box;
+  display: block;
+  width: 53.333333333333336px;
+  overflow: hidden;
+}
+
 <svg
-  className="Flag__StyledSvg-sc-14ojzvi-0 lcbCky"
+  className="c0"
   focusable="false"
   role="img"
   viewBox="0 0 640 480"
@@ -1129,10 +1219,21 @@ exports[`Storyshots Atoms | Flag Different size  1`] = `
 `;
 
 exports[`Storyshots Atoms | Flag Inline 1`] = `
+.c0 {
+  height: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+  width: 26.666666666666668px;
+  overflow: hidden;
+}
+
 <span>
   You can put the 
   <svg
-    className="Flag__StyledSvg-sc-14ojzvi-0 gjcPWB"
+    className="c0"
     focusable="false"
     role="img"
     viewBox="0 0 640 480"

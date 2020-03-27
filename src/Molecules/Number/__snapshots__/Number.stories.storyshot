@@ -1,16 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Number Default 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
 <div
-  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+  className="c0"
   direction="column"
 >
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       value = 1000
     </div>
@@ -20,11 +77,11 @@ exports[`Storyshots Molecules | Number Default 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       value = 9000000
     </div>
@@ -34,11 +91,11 @@ exports[`Storyshots Molecules | Number Default 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       value = 0.01
     </div>
@@ -48,11 +105,11 @@ exports[`Storyshots Molecules | Number Default 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       value = 111.2
     </div>
@@ -65,33 +122,190 @@ exports[`Storyshots Molecules | Number Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | Number Integration: with different typographies 1`] = `
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 1.0434782608695652;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+@media (min-width:760px) {
+  .c7 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+@media (min-width:760px) {
+  .c8 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+  .c9 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width:760px) {
+  .c10 {
+    font-size: 48px;
+    line-height: 1.0833333333333333;
+  }
+}
+
 <div
-  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+  className="c0"
   direction="column"
 >
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       primary
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
+        className="c3"
       >
         <div
-          className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+          className="c0"
           direction="column"
         >
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 1000
             </div>
@@ -101,11 +315,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 9000000
             </div>
@@ -115,11 +329,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 0.01
             </div>
@@ -129,11 +343,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 111.2
             </div>
@@ -147,28 +361,28 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       secondary
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+        className="c4"
       >
         <div
-          className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+          className="c0"
           direction="column"
         >
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 1000
             </div>
@@ -178,11 +392,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 9000000
             </div>
@@ -192,11 +406,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 0.01
             </div>
@@ -206,11 +420,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 111.2
             </div>
@@ -224,28 +438,28 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       tertiary
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 cHzAen"
+        className="c5"
       >
         <div
-          className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+          className="c0"
           direction="column"
         >
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 1000
             </div>
@@ -255,11 +469,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 9000000
             </div>
@@ -269,11 +483,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 0.01
             </div>
@@ -283,11 +497,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 111.2
             </div>
@@ -301,28 +515,28 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       caption
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ejTVkr"
+        className="c6"
       >
         <div
-          className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+          className="c0"
           direction="column"
         >
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 1000
             </div>
@@ -332,11 +546,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 9000000
             </div>
@@ -346,11 +560,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 0.01
             </div>
@@ -360,11 +574,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 111.2
             </div>
@@ -378,28 +592,28 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       title1
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
+        className="c7"
       >
         <div
-          className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+          className="c0"
           direction="column"
         >
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 1000
             </div>
@@ -409,11 +623,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 9000000
             </div>
@@ -423,11 +637,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 0.01
             </div>
@@ -437,11 +651,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 111.2
             </div>
@@ -455,28 +669,28 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       title2
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ekyJLf"
+        className="c8"
       >
         <div
-          className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+          className="c0"
           direction="column"
         >
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 1000
             </div>
@@ -486,11 +700,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 9000000
             </div>
@@ -500,11 +714,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 0.01
             </div>
@@ -514,11 +728,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 111.2
             </div>
@@ -532,28 +746,28 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       title3
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kZoBvC"
+        className="c9"
       >
         <div
-          className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+          className="c0"
           direction="column"
         >
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 1000
             </div>
@@ -563,11 +777,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 9000000
             </div>
@@ -577,11 +791,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 0.01
             </div>
@@ -591,11 +805,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 111.2
             </div>
@@ -609,28 +823,28 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       hero
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 lmsdTq"
+        className="c10"
       >
         <div
-          className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+          className="c0"
           direction="column"
         >
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 1000
             </div>
@@ -640,11 +854,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 9000000
             </div>
@@ -654,11 +868,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 0.01
             </div>
@@ -668,11 +882,11 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
             </div>
           </div>
           <div
-            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+            className="c1"
             direction="row"
           >
             <div
-              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+              className="c2"
             >
               value = 111.2
             </div>
@@ -714,16 +928,73 @@ Array [
   }
 ]
   </pre>,
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+    className="c0"
     direction="column"
   >
     <div
-      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+      className="c1"
       direction="row"
     >
       <div
-        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+        className="c2"
       >
         value = 0.55555
       </div>
@@ -733,11 +1004,11 @@ Array [
       </div>
     </div>
     <div
-      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+      className="c1"
       direction="row"
     >
       <div
-        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+        className="c2"
       >
         value = 10.333
       </div>
@@ -747,11 +1018,11 @@ Array [
       </div>
     </div>
     <div
-      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+      className="c1"
       direction="row"
     >
       <div
-        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+        className="c2"
       >
         value = 10.5
       </div>
@@ -761,11 +1032,11 @@ Array [
       </div>
     </div>
     <div
-      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+      className="c1"
       direction="row"
     >
       <div
-        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+        className="c2"
       >
         value = 100001.22
       </div>
@@ -779,16 +1050,73 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Number Number with 2 decimals  1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
 <div
-  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+  className="c0"
   direction="column"
 >
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       value = 10.378
     </div>
@@ -798,11 +1126,11 @@ exports[`Storyshots Molecules | Number Number with 2 decimals  1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       value = 10.333
     </div>
@@ -812,11 +1140,11 @@ exports[`Storyshots Molecules | Number Number with 2 decimals  1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       value = 10
     </div>
@@ -826,11 +1154,11 @@ exports[`Storyshots Molecules | Number Number with 2 decimals  1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       value = 10.5
     </div>
@@ -852,11 +1180,56 @@ Array [
 
 exports[`Storyshots Molecules | Number Number with currency as different size 1`] = `
 Array [
-  <div
-    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ekyJLf"
+  .c1 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c3 {
+  font-weight: inherit;
+}
+
+@media (min-width:760px) {
+  .c0 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+  .c2 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+    className="c0"
   >
     <div
-      className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
+      className="c1"
     >
       
       2.3
@@ -869,17 +1242,56 @@ Array [
       2.3
        
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kZoBvC Number__TypographyWithInheritedWeight-sc-1pkc1h1-0 bqBnmb"
+        className="c2 c3"
       >
         SEK
       </span>
     </span>
   </div>,
-  <div
-    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 lhwrhZ"
+  .c1 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-weight: inherit;
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
   >
     <div
-      className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
+      className="c1"
     >
       
       2.3
@@ -892,7 +1304,7 @@ Array [
       2.3
        
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ Number__TypographyWithInheritedWeight-sc-1pkc1h1-0 bqBnmb"
+        className="c2 c3"
       >
         SEK
       </span>
@@ -927,16 +1339,73 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Number Number with sign 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
 <div
-  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+  className="c0"
   direction="column"
 >
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       value = 2
     </div>
@@ -946,11 +1415,11 @@ exports[`Storyshots Molecules | Number Number with sign 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       value = 0
     </div>
@@ -960,11 +1429,11 @@ exports[`Storyshots Molecules | Number Number with sign 1`] = `
     </div>
   </div>
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       value = -1
     </div>
@@ -978,16 +1447,73 @@ exports[`Storyshots Molecules | Number Number with sign 1`] = `
 
 exports[`Storyshots Molecules | Number Regression: -0 should be 0 1`] = `
 Array [
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+    className="c0"
     direction="column"
   >
     <div
-      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+      className="c1"
       direction="row"
     >
       <div
-        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+        className="c2"
       >
         value = 0.1
       </div>
@@ -997,16 +1523,73 @@ Array [
       </div>
     </div>
   </div>,
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+    className="c0"
     direction="column"
   >
     <div
-      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+      className="c1"
       direction="row"
     >
       <div
-        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+        className="c2"
       >
         value = 0.1
       </div>
@@ -1021,16 +1604,73 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Number Regression: value is positive, but rounded value is 0 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
 <div
-  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
+  className="c0"
   direction="column"
 >
   <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
+    className="c1"
     direction="row"
   >
     <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
+      className="c2"
     >
       value = 0.1
     </div>

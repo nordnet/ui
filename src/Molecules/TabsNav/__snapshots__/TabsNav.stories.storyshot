@@ -1,31 +1,174 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
+.c10 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c3 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c3 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c9 {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBE8;
+}
+
+.c8 {
+  height: 44px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  height: 44px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c2 {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width:760px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  .c3 > * {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .c3 > *:not(:first-child) {
+    padding-top: 0;
+  }
+}
+
 <div
-  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 iopGic"
+  className="c0"
 >
   <div
-    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+    className="c1"
   >
     <ul
-      className="TabsNav__StyledUl-sc-1vlwnet-1 iFoMqp Flexbox__StyledFlexbox-sc-1ob4g1e-0 cJYisf"
+      className="c2 c3"
       direction="row"
     >
       <li
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+        className="c1"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 lhwrhZ"
+          className="c4"
         >
           <a
             aria-current="page"
-            className="TabsNav__StyledLink-sc-1vlwnet-0 eonNTL"
+            className="c5"
             href="#/route1"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
             <span
-              className="TabTitle__StyledTitle-sc-1sa0gl6-0 jOgXPf"
+              className="c6"
               height={11}
             >
               Link to /route1
@@ -34,20 +177,20 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
         </span>
       </li>
       <li
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+        className="c1"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
+          className="c7"
         >
           <a
             aria-current={false}
-            className="TabsNav__StyledLink-sc-1vlwnet-0 eonNTL"
+            className="c5"
             href="#/route2"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
             <span
-              className="TabTitle__StyledTitle-sc-1sa0gl6-0 hVZBrR"
+              className="c8"
               height={11}
             >
               <div>
@@ -60,17 +203,17 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
     </ul>
   </div>
   <div
-    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+    className="c1"
   >
     <div
-      className="Separator__StyledSeparator-a5vdsz-0 kXyqdV"
+      className="c9"
     />
   </div>
   <div
-    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+    className="c1"
   >
     <div
-      className="Box__StyledDiv-sc-1bfv3i9-0 iBOtCP"
+      className="c10"
     >
       /route1 content
     </div>
@@ -79,31 +222,174 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
 `;
 
 exports[`Storyshots Molecules | TabsNav Integration: With react-router and height modified 1`] = `
+.c10 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c3 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c3 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c9 {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBE8;
+}
+
+.c6 {
+  height: 48px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.c8 {
+  height: 48px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c2 {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width:760px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  .c3 > * {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .c3 > *:not(:first-child) {
+    padding-top: 0;
+  }
+}
+
 <div
-  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 iopGic"
+  className="c0"
 >
   <div
-    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+    className="c1"
   >
     <ul
-      className="TabsNav__StyledUl-sc-1vlwnet-1 iFoMqp Flexbox__StyledFlexbox-sc-1ob4g1e-0 cJYisf"
+      className="c2 c3"
       direction="row"
     >
       <li
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+        className="c1"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 lhwrhZ"
+          className="c4"
         >
           <a
             aria-current="page"
-            className="TabsNav__StyledLink-sc-1vlwnet-0 eonNTL"
+            className="c5"
             href="#/route1"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
             <span
-              className="TabTitle__StyledTitle-sc-1sa0gl6-0 jEUhAT"
+              className="c6"
               height={12}
             >
               Link to /route1
@@ -112,20 +398,20 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
         </span>
       </li>
       <li
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+        className="c1"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
+          className="c7"
         >
           <a
             aria-current={false}
-            className="TabsNav__StyledLink-sc-1vlwnet-0 eonNTL"
+            className="c5"
             href="#/route2"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
             <span
-              className="TabTitle__StyledTitle-sc-1sa0gl6-0 bLfRLp"
+              className="c8"
               height={12}
             >
               <div>
@@ -138,17 +424,17 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
     </ul>
   </div>
   <div
-    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+    className="c1"
   >
     <div
-      className="Separator__StyledSeparator-a5vdsz-0 kXyqdV"
+      className="c9"
     />
   </div>
   <div
-    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+    className="c1"
   >
     <div
-      className="Box__StyledDiv-sc-1bfv3i9-0 iBOtCP"
+      className="c10"
     >
       /route1 content
     </div>
@@ -157,31 +443,130 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
 `;
 
 exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c3 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c3 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c6 {
+  height: 44px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c2 {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width:760px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  .c3 > * {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .c3 > *:not(:first-child) {
+    padding-top: 0;
+  }
+}
+
 <div
-  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 iopGic"
+  className="c0"
 >
   <div
-    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+    className="c1"
   >
     <ul
-      className="TabsNav__StyledUl-sc-1vlwnet-1 iFoMqp Flexbox__StyledFlexbox-sc-1ob4g1e-0 cJYisf"
+      className="c2 c3"
       direction="row"
     >
       <li
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+        className="c1"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
+          className="c4"
         >
           <a
             aria-current={false}
-            className="TabsNav__StyledLink-sc-1vlwnet-0 eonNTL"
+            className="c5"
             href="#/route2"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
             <span
-              className="TabTitle__StyledTitle-sc-1sa0gl6-0 hVZBrR"
+              className="c6"
               height={11}
             >
               <div>
@@ -192,20 +577,20 @@ exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] 
         </span>
       </li>
       <li
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+        className="c1"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
+          className="c4"
         >
           <a
             aria-current={false}
-            className="TabsNav__StyledLink-sc-1vlwnet-0 eonNTL"
+            className="c5"
             href="#/route3"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
             <span
-              className="TabTitle__StyledTitle-sc-1sa0gl6-0 hVZBrR"
+              className="c6"
               height={11}
             >
               <div>

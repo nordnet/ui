@@ -1,13 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | LinkBuy LinkBuy 1`] = `
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 {
+  color: #0046FF;
+  padding: 2px 4px;
+}
+
+.c1:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #0046FF;
+}
+
+.c1:active {
+  background-color: hsl(223.5,100%,35%);
+}
+
 <a
-  className="Link__StyledLink-apj04t-0 ixkkIR LinkBuy__StyledLink-sc-1qysrjt-0 jytFJk"
+  className="c0 c1"
   href="/somewhere"
   onClick={[Function]}
 >
   <span
-    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
+    className="c2"
   >
     Buy
   </span>
@@ -15,12 +53,31 @@ exports[`Storyshots Molecules | LinkBuy LinkBuy 1`] = `
 `;
 
 exports[`Storyshots Molecules | LinkBuy LinkBuy disabled 1`] = `
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  color: #A0A09B;
+  padding: 2px 4px;
+}
+
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <span
-  className="LinkBuy__StyledLink-sc-1qysrjt-0 fMFZOI"
+  className="c0"
   disabled={true}
 >
   <span
-    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
+    className="c1"
   >
     Buy
   </span>
@@ -28,14 +85,52 @@ exports[`Storyshots Molecules | LinkBuy LinkBuy disabled 1`] = `
 `;
 
 exports[`Storyshots Molecules | LinkBuy LinkBuy with rel as nofollow 1`] = `
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 {
+  color: #0046FF;
+  padding: 2px 4px;
+}
+
+.c1:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #0046FF;
+}
+
+.c1:active {
+  background-color: hsl(223.5,100%,35%);
+}
+
 <a
-  className="Link__StyledLink-apj04t-0 ixkkIR LinkBuy__StyledLink-sc-1qysrjt-0 jytFJk"
+  className="c0 c1"
   href="/somewhere"
   onClick={[Function]}
   rel="nofollow"
 >
   <span
-    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
+    className="c2"
   >
     Buy
   </span>

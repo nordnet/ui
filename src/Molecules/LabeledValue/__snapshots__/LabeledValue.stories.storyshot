@@ -1,14 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | LabeledValue Default 1`] = `
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  margin-bottom: 4px;
+}
+
 <div
-  className="LabeledValue__StyledLabeledValue-hatse2-0 dbfeTh"
+  className="c0"
 >
   <div
-    className="LabeledValue__StyledLabel-hatse2-1 kVQTc"
+    className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c2"
     >
       Label
     </span>
@@ -18,20 +41,52 @@ exports[`Storyshots Molecules | LabeledValue Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue secondary currency 1`] = `
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  margin-bottom: 4px;
+}
+
 <div
-  className="LabeledValue__StyledLabeledValue-hatse2-0 dbfeTh"
+  className="c0"
 >
   <div
-    className="LabeledValue__StyledLabel-hatse2-1 kVQTc"
+    className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c2"
     >
       Market value
     </span>
   </div>
   <span
-    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
+    className="c3"
   >
     
     4,672,198
@@ -41,20 +96,59 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue secondary
 `;
 
 exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue title1 1`] = `
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  margin-bottom: 4px;
+}
+
+@media (min-width:760px) {
+  .c3 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
 <div
-  className="LabeledValue__StyledLabeledValue-hatse2-0 dbfeTh"
+  className="c0"
 >
   <div
-    className="LabeledValue__StyledLabel-hatse2-1 kVQTc"
+    className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c2"
     >
       Holdings (SEK)
     </span>
   </div>
   <span
-    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
+    className="c3"
   >
     
     4,713,119
@@ -63,20 +157,52 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue title1 1`
 `;
 
 exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with custom title 1`] = `
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  margin-bottom: 4px;
+}
+
 <div
-  className="LabeledValue__StyledLabeledValue-hatse2-0 dbfeTh"
+  className="c0"
 >
   <div
-    className="LabeledValue__StyledLabel-hatse2-1 kVQTc"
+    className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 cHzAen"
+      className="c2"
     >
       Foo
     </span>
   </div>
   <span
-    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hbYQjk"
+    className="c3"
   >
     Bar
   </span>
@@ -84,29 +210,100 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with cust
 `;
 
 exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with negative development and currency 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c3 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c3 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c4 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  margin-bottom: 4px;
+}
+
+.c6 {
+  color: #FF1900;
+}
+
 <div
-  className="LabeledValue__StyledLabeledValue-hatse2-0 dbfeTh"
+  className="c0"
 >
   <div
-    className="LabeledValue__StyledLabel-hatse2-1 kVQTc"
+    className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c2"
     >
       Development this year
     </span>
   </div>
   <div
-    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 bsBJRz"
+    className="c3"
   >
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
+        className="c5"
       >
         <span
-          className="Development__StyledDevelopment-hnn1ri-0 dSohiW"
+          className="c6"
           value={-9.2}
         >
           <span
@@ -121,10 +318,10 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
       </span>
     </div>
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
+        className="c7"
       >
         
         -4,672,198
@@ -136,29 +333,91 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
 `;
 
 exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with positive development and currency 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c3 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c3 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c4 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  margin-bottom: 4px;
+}
+
+.c6 {
+  color: #00D200;
+}
+
 <div
-  className="LabeledValue__StyledLabeledValue-hatse2-0 dbfeTh"
+  className="c0"
 >
   <div
-    className="LabeledValue__StyledLabel-hatse2-1 kVQTc"
+    className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c2"
     >
       Development this year
     </span>
   </div>
   <div
-    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 bsBJRz"
+    className="c3"
   >
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
+        className="c5"
       >
         <span
-          className="Development__StyledDevelopment-hnn1ri-0 fTxyUg"
+          className="c6"
           value={9.2}
         >
           <span
@@ -173,10 +432,10 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
       </span>
     </div>
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
+        className="c5"
       >
         +
         4,672,198

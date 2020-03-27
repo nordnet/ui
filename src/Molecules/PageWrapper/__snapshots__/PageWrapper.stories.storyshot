@@ -1,17 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
+.c1 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c0 {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@media (min-width:760px) {
+  .c0 {
+    max-width: 760px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width:976px) {
+  .c0 {
+    max-width: 976px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width:1280px) {
+  .c0 {
+    max-width: 1280px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width:1600px) {
+  .c0 {
+    max-width: 1600px;
+    padding: 0 20px;
+  }
+}
+
 <div
-  className="PageWrapper__Outer-sc-1ur2ylx-0 iYsWey"
+  className=""
 >
   <div
-    className="PageWrapper__Inner-sc-1ur2ylx-1 kOfIEH"
+    className="c0"
   >
     <div
-      className="Box__StyledDiv-sc-1bfv3i9-0 iBOtCP"
+      className="c1"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
+        className="c2"
       >
         Page contents inside the PageWrapper can be anything.
       </span>
@@ -21,17 +68,68 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
 `;
 
 exports[`Storyshots Molecules | PageWrapper PageWrapper with a custom background 1`] = `
+.c2 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+}
+
+.c1 {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    max-width: 760px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width:976px) {
+  .c1 {
+    max-width: 976px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width:1280px) {
+  .c1 {
+    max-width: 1280px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width:1600px) {
+  .c1 {
+    max-width: 1600px;
+    padding: 0 20px;
+  }
+}
+
 <div
-  className="PageWrapper__Outer-sc-1ur2ylx-0 fWdHha"
+  className="c0"
 >
   <div
-    className="PageWrapper__Inner-sc-1ur2ylx-1 kOfIEH"
+    className="c1"
   >
     <div
-      className="Box__StyledDiv-sc-1bfv3i9-0 iBOtCP"
+      className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
+        className="c3"
       >
         Page contents inside the PageWrapper can be anything.
       </span>

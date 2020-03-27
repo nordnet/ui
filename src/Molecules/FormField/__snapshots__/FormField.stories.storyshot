@@ -1,19 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | FormField Default 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
+  className="c0"
 >
   <label
-    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
+    className="c1"
     hidden={false}
     htmlFor="unique-id-1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c2"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+        className="c3"
       >
         Label 
       </div>
@@ -38,19 +70,69 @@ exports[`Storyshots Molecules | FormField Docs 1`] = `
 `;
 
 exports[`Storyshots Molecules | FormField Error 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
+  className="c0"
 >
   <label
-    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
+    className="c1"
     hidden={false}
     htmlFor="unique-id-2"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c2"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+        className="c3"
       >
         Label 
       </div>
@@ -67,10 +149,10 @@ exports[`Storyshots Molecules | FormField Error 1`] = `
   </div>
   <div>
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hPnwKK"
+      className="c4"
     >
       <div
-        className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
+        className="c5"
       >
         Error: 
       </div>
@@ -81,19 +163,60 @@ exports[`Storyshots Molecules | FormField Error 1`] = `
 `;
 
 exports[`Storyshots Molecules | FormField Extra info 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
+  className="c0"
 >
   <label
-    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
+    className="c1"
     hidden={false}
     htmlFor="unique-id-2"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c2"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+        className="c3"
       >
         Label 
       </div>
@@ -110,7 +233,7 @@ exports[`Storyshots Molecules | FormField Extra info 1`] = `
   </div>
   <div>
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 WSuqZ"
+      className="c4"
     >
       Some extra info
     </span>
@@ -119,19 +242,51 @@ exports[`Storyshots Molecules | FormField Extra info 1`] = `
 `;
 
 exports[`Storyshots Molecules | FormField Required 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
+  className="c0"
 >
   <label
-    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
+    className="c1"
     hidden={false}
     htmlFor="unique-id-1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c2"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+        className="c3"
       >
         Label *
       </div>
@@ -150,31 +305,102 @@ exports[`Storyshots Molecules | FormField Required 1`] = `
 `;
 
 exports[`Storyshots Molecules | FormField With group of items 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.c6 > * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c7 {
+  box-sizing: border-box;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c3 {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  cursor: auto;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
+  className="c0"
 >
   <fieldset
-    className="Fieldset__StyledFieldset-sc-1fwvu26-0 GQPdY"
+    className="c1"
   >
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+      className="c2"
     >
       <legend
-        className="NormalizedLegend__Legend-sc-1svgb20-0 Legend__StyledLegendAsLabel-x6z4g1-1 jtzsJR FormLabel__StyledLabel-skax1c-0 VHIlu"
+        className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
         hidden={false}
       >
         <span
-          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+          className="c5"
         >
           Caption to a group of items 
         </span>
       </legend>
     </div>
     <div
-      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hEIiGr"
+      className="c6"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+        className="c7"
       >
         <div
           style={
@@ -187,7 +413,7 @@ exports[`Storyshots Molecules | FormField With group of items 1`] = `
         </div>
       </div>
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
+        className="c7"
       >
         <div
           style={
@@ -205,24 +431,78 @@ exports[`Storyshots Molecules | FormField With group of items 1`] = `
 `;
 
 exports[`Storyshots Molecules | FormField With label tooltip 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c4 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  stroke: #6E6E69;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c5 {
+  margin-left: 4px;
+}
+
 <div
-  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
+  className="c0"
 >
   <label
-    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
+    className="c1"
     hidden={false}
     htmlFor="unique-id-1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
+      className="c2"
     >
       <div
-        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
+        className="c3"
       >
         Label 
         <svg
           aria-hidden="false"
-          className="IconBase__StyledIconBase-sc-10cbji3-0 cpMDhR FormField__TooltipIcon-ydn0fr-1 ioayVJ"
+          className="c4 c5"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="img"
@@ -233,7 +513,7 @@ exports[`Storyshots Molecules | FormField With label tooltip 1`] = `
             transform="translate(1 1)"
           >
             <circle
-              className="Questionmark__StyledCircle-sc-1uxskjf-0 gHSezF"
+              className="c6"
               cx="11"
               cy="11"
               fill="none"
