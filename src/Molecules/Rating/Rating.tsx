@@ -22,8 +22,8 @@ export const Rating: RatingComponent = ({ rating = 0, intl: { formatMessage } })
         <Icon.Star
           key={index} // eslint-disable-line react/no-array-index-key
           size={3}
-          stroke={t => (index >= finalRating ? t.color.disabled : t.color.text)}
-          fill={t => (index >= finalRating ? t.color.disabled : t.color.text)}
+          stroke={t => (index >= finalRating ? t.color.starRatingOff : t.color.starRating)}
+          fill={t => (index >= finalRating ? t.color.starRatingOff : t.color.starRating)}
         />
       ))}
     </Flexbox>

@@ -101,7 +101,8 @@ export type Theme = {
     divider: RawColor['gray6'];
     /** gray0 */
     backgroundDark: RawColor['gray0'];
-    /** @deprecated gray3 */
+    /** @deprecated
+     * gray3 */
     disabled: RawColor['gray3'];
     /** gray3 */
     disabledText: RawColor['gray3'];
@@ -129,6 +130,10 @@ export type Theme = {
     spinnerBlack: RawColor['black'];
     /** white */
     spinnerWhite: RawColor['white'];
+    /** index */
+    starRating: RawColor['index'];
+    /** gray6 */
+    starRatingOff: RawColor['gray6'];
     /** index */
     streamingBolt: RawColor['index'];
     /** gray0 */

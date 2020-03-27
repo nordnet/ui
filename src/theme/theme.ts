@@ -183,6 +183,8 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       skeleton: rawColor.gray6,
       spinnerBlack: rawColor.black,
       spinnerWhite: rawColor.white,
+      starRating: rawColor.index,
+      starRatingOff: rawColor.gray6,
       streamingBolt: rawColor.index,
       svgFill: rawColor.gray0,
       svgStroke: rawColor.gray2,
