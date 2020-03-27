@@ -1,165 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  display: inline-block;
-}
-
-.c7 {
-  background: white;
-  display: block;
-  height: 24px;
-  width: 24px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  border: 1px solid #BCBCB6;
-  margin-top: -12px;
-  border-radius: 12px;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-  -webkit-transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-  transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-}
-
-.c9 {
-  display: block;
-  height: 16px;
-  width: 40px;
-  margin: 4px 0;
-  background-color: #BCBCB6;
-  border-radius: 8px;
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
-}
-
-.c5 {
-  position: relative;
-}
-
-.c4 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
-}
-
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c4[aria-checked='true'] .c8 {
-  background-color: #0046FF;
-}
-
-.c4[aria-checked='true'] .c6 {
-  -webkit-transform: translate(16px);
-  -ms-transform: translate(16px);
-  transform: translate(16px);
-}
-
-.c4[disabled] .c8 {
-  background-color: #EBEBE8;
-}
-
-.c4[disabled] .c6 {
-  border: 1px solid #EBEBE8;
-}
-
 <label
-  className="c0"
+  className="Switch__Label-dtrlro-0 fTdfdO"
 >
   <span
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 eJlHQf"
   >
     <span
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         Notify me by email
       </span>
     </span>
     <span
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
     >
       <button
         aria-checked={true}
-        className="NormalizedButton__Button-ey7f5x-0 c4"
+        className="NormalizedButton__Button-ey7f5x-0 Switch__Button-dtrlro-4 hsrTzS"
         onClick={[Function]}
         role="switch"
         type="button"
       >
         <div
-          className="c5"
+          className="Switch__ButtonContent-dtrlro-3 kiZmkS"
         >
           <span
-            className="c6 c7"
+            className="Switch__Knob-dtrlro-1 dynvSY"
           />
           <span
-            className="c8 c9"
+            className="Switch__Track-dtrlro-2 gnIMxq"
           />
         </div>
       </button>
@@ -169,165 +43,39 @@ exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
 `;
 
 exports[`Storyshots Molecules | Switch Default Off 1`] = `
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  display: inline-block;
-}
-
-.c7 {
-  background: white;
-  display: block;
-  height: 24px;
-  width: 24px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  border: 1px solid #BCBCB6;
-  margin-top: -12px;
-  border-radius: 12px;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-  -webkit-transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-  transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-}
-
-.c9 {
-  display: block;
-  height: 16px;
-  width: 40px;
-  margin: 4px 0;
-  background-color: #BCBCB6;
-  border-radius: 8px;
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
-}
-
-.c5 {
-  position: relative;
-}
-
-.c4 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
-}
-
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c4[aria-checked='true'] .c8 {
-  background-color: #0046FF;
-}
-
-.c4[aria-checked='true'] .c6 {
-  -webkit-transform: translate(16px);
-  -ms-transform: translate(16px);
-  transform: translate(16px);
-}
-
-.c4[disabled] .c8 {
-  background-color: #EBEBE8;
-}
-
-.c4[disabled] .c6 {
-  border: 1px solid #EBEBE8;
-}
-
 <label
-  className="c0"
+  className="Switch__Label-dtrlro-0 fTdfdO"
 >
   <span
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 eJlHQf"
   >
     <span
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         Notify me by email
       </span>
     </span>
     <span
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
     >
       <button
         aria-checked={false}
-        className="NormalizedButton__Button-ey7f5x-0 c4"
+        className="NormalizedButton__Button-ey7f5x-0 Switch__Button-dtrlro-4 hsrTzS"
         onClick={[Function]}
         role="switch"
         type="button"
       >
         <div
-          className="c5"
+          className="Switch__ButtonContent-dtrlro-3 kiZmkS"
         >
           <span
-            className="c6 c7"
+            className="Switch__Knob-dtrlro-1 dynvSY"
           />
           <span
-            className="c8 c9"
+            className="Switch__Track-dtrlro-2 gnIMxq"
           />
         </div>
       </button>
@@ -337,165 +85,39 @@ exports[`Storyshots Molecules | Switch Default Off 1`] = `
 `;
 
 exports[`Storyshots Molecules | Switch Default On 1`] = `
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  display: inline-block;
-}
-
-.c7 {
-  background: white;
-  display: block;
-  height: 24px;
-  width: 24px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  border: 1px solid #BCBCB6;
-  margin-top: -12px;
-  border-radius: 12px;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-  -webkit-transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-  transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-}
-
-.c9 {
-  display: block;
-  height: 16px;
-  width: 40px;
-  margin: 4px 0;
-  background-color: #BCBCB6;
-  border-radius: 8px;
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
-}
-
-.c5 {
-  position: relative;
-}
-
-.c4 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
-}
-
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c4[aria-checked='true'] .c8 {
-  background-color: #0046FF;
-}
-
-.c4[aria-checked='true'] .c6 {
-  -webkit-transform: translate(16px);
-  -ms-transform: translate(16px);
-  transform: translate(16px);
-}
-
-.c4[disabled] .c8 {
-  background-color: #EBEBE8;
-}
-
-.c4[disabled] .c6 {
-  border: 1px solid #EBEBE8;
-}
-
 <label
-  className="c0"
+  className="Switch__Label-dtrlro-0 fTdfdO"
 >
   <span
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 eJlHQf"
   >
     <span
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         Notify me by email
       </span>
     </span>
     <span
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
     >
       <button
         aria-checked={true}
-        className="NormalizedButton__Button-ey7f5x-0 c4"
+        className="NormalizedButton__Button-ey7f5x-0 Switch__Button-dtrlro-4 hsrTzS"
         onClick={[Function]}
         role="switch"
         type="button"
       >
         <div
-          className="c5"
+          className="Switch__ButtonContent-dtrlro-3 kiZmkS"
         >
           <span
-            className="c6 c7"
+            className="Switch__Knob-dtrlro-1 dynvSY"
           />
           <span
-            className="c8 c9"
+            className="Switch__Track-dtrlro-2 gnIMxq"
           />
         </div>
       </button>
@@ -505,166 +127,40 @@ exports[`Storyshots Molecules | Switch Default On 1`] = `
 `;
 
 exports[`Storyshots Molecules | Switch Disabled 1`] = `
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  display: inline-block;
-}
-
-.c7 {
-  background: white;
-  display: block;
-  height: 24px;
-  width: 24px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  border: 1px solid #BCBCB6;
-  margin-top: -12px;
-  border-radius: 12px;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-  -webkit-transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-  transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-}
-
-.c9 {
-  display: block;
-  height: 16px;
-  width: 40px;
-  margin: 4px 0;
-  background-color: #BCBCB6;
-  border-radius: 8px;
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
-}
-
-.c5 {
-  position: relative;
-}
-
-.c4 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
-}
-
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c4[aria-checked='true'] .c8 {
-  background-color: #0046FF;
-}
-
-.c4[aria-checked='true'] .c6 {
-  -webkit-transform: translate(16px);
-  -ms-transform: translate(16px);
-  transform: translate(16px);
-}
-
-.c4[disabled] .c8 {
-  background-color: #EBEBE8;
-}
-
-.c4[disabled] .c6 {
-  border: 1px solid #EBEBE8;
-}
-
 <label
-  className="c0"
+  className="Switch__Label-dtrlro-0 fTdfdO"
 >
   <span
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 eJlHQf"
   >
     <span
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         Notify me by email
       </span>
     </span>
     <span
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
     >
       <button
         aria-checked={false}
-        className="NormalizedButton__Button-ey7f5x-0 c4"
+        className="NormalizedButton__Button-ey7f5x-0 Switch__Button-dtrlro-4 hsrTzS"
         disabled={true}
         onClick={[Function]}
         role="switch"
         type="button"
       >
         <div
-          className="c5"
+          className="Switch__ButtonContent-dtrlro-3 kiZmkS"
         >
           <span
-            className="c6 c7"
+            className="Switch__Knob-dtrlro-1 dynvSY"
           />
           <span
-            className="c8 c9"
+            className="Switch__Track-dtrlro-2 gnIMxq"
           />
         </div>
       </button>
@@ -674,165 +170,39 @@ exports[`Storyshots Molecules | Switch Disabled 1`] = `
 `;
 
 exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c0 {
-  display: inline-block;
-}
-
-.c7 {
-  background: white;
-  display: block;
-  height: 24px;
-  width: 24px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  border: 1px solid #BCBCB6;
-  margin-top: -12px;
-  border-radius: 12px;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-  -webkit-transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-  transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-}
-
-.c9 {
-  display: block;
-  height: 16px;
-  width: 40px;
-  margin: 4px 0;
-  background-color: #BCBCB6;
-  border-radius: 8px;
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
-}
-
-.c5 {
-  position: relative;
-}
-
-.c4 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
-}
-
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c4[aria-checked='true'] .c8 {
-  background-color: #0046FF;
-}
-
-.c4[aria-checked='true'] .c6 {
-  -webkit-transform: translate(16px);
-  -ms-transform: translate(16px);
-  transform: translate(16px);
-}
-
-.c4[disabled] .c8 {
-  background-color: #EBEBE8;
-}
-
-.c4[disabled] .c6 {
-  border: 1px solid #EBEBE8;
-}
-
 <label
-  className="c0"
+  className="Switch__Label-dtrlro-0 fTdfdO"
 >
   <span
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 eJlHQf"
   >
     <span
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
       >
         Notify me by email
       </span>
     </span>
     <span
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
     >
       <button
         aria-checked={false}
-        className="NormalizedButton__Button-ey7f5x-0 c4"
+        className="NormalizedButton__Button-ey7f5x-0 Switch__Button-dtrlro-4 hsrTzS"
         onClick={[Function]}
         role="switch"
         type="button"
       >
         <div
-          className="c5"
+          className="Switch__ButtonContent-dtrlro-3 kiZmkS"
         >
           <span
-            className="c6 c7"
+            className="Switch__Knob-dtrlro-1 dynvSY"
           />
           <span
-            className="c8 c9"
+            className="Switch__Track-dtrlro-2 gnIMxq"
           />
         </div>
       </button>
@@ -842,178 +212,43 @@ exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
 `;
 
 exports[`Storyshots Molecules | Switch With hidden label 1`] = `
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c3 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  display: inline-block;
-}
-
-.c8 {
-  background: white;
-  display: block;
-  height: 24px;
-  width: 24px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  border: 1px solid #BCBCB6;
-  margin-top: -12px;
-  border-radius: 12px;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-  -webkit-transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-  transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-}
-
-.c10 {
-  display: block;
-  height: 16px;
-  width: 40px;
-  margin: 4px 0;
-  background-color: #BCBCB6;
-  border-radius: 8px;
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
-}
-
-.c6 {
-  position: relative;
-}
-
-.c5 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
-}
-
-.c5,
-.c5[type='button'],
-.c5[type='reset'],
-.c5[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c5::-moz-focus-inner,
-.c5[type='button']::-moz-focus-inner,
-.c5[type='reset']::-moz-focus-inner,
-.c5[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c5:-moz-focusring,
-.c5[type='button']:-moz-focusring,
-.c5[type='reset']:-moz-focusring,
-.c5[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c5[aria-checked='true'] .c9 {
-  background-color: #0046FF;
-}
-
-.c5[aria-checked='true'] .c7 {
-  -webkit-transform: translate(16px);
-  -ms-transform: translate(16px);
-  transform: translate(16px);
-}
-
-.c5[disabled] .c9 {
-  background-color: #EBEBE8;
-}
-
-.c5[disabled] .c7 {
-  border: 1px solid #EBEBE8;
-}
-
 <label
-  className="c0"
+  className="Switch__Label-dtrlro-0 fTdfdO"
 >
   <span
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 eJlHQf"
   >
     <span
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
     >
       <div
-        className="c3"
+        className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
       >
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
         >
           Notify me by email
         </span>
       </div>
     </span>
     <span
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
     >
       <button
         aria-checked={false}
-        className="NormalizedButton__Button-ey7f5x-0 c5"
+        className="NormalizedButton__Button-ey7f5x-0 Switch__Button-dtrlro-4 hsrTzS"
         onClick={[Function]}
         role="switch"
         type="button"
       >
         <div
-          className="c6"
+          className="Switch__ButtonContent-dtrlro-3 kiZmkS"
         >
           <span
-            className="c7 c8"
+            className="Switch__Knob-dtrlro-1 dynvSY"
           />
           <span
-            className="c9 c10"
+            className="Switch__Track-dtrlro-2 gnIMxq"
           />
         </div>
       </button>

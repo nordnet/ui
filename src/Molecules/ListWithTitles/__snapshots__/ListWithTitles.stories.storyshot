@@ -1,66 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with left and right titles 1`] = `
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c4 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c5 {
-  display: block;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  margin-bottom: 4px;
-}
-
 <div>
   <div
-    className="c0"
+    className="ListWithTitles__TitleContainer-sc-1mk4x8k-0 cWrugo"
   >
     <div
-      className="c1"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 juusSY"
     >
       <div
-        className="c2"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
         >
           title1
         </span>
       </div>
       <div
-        className="c2"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
         >
           title2
         </span>
@@ -68,13 +29,13 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
     </div>
   </div>
   <ol
-    className="c4"
+    className="List__BaseList-sc-67l9u3-0 cLiOUp"
   >
     <li
-      className="c5"
+      className="ListItem__StyledListItem-pn91gs-0 eAAaLc"
     >
       <div
-        className="c1"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 juusSY"
       >
         <div>
           Left List Item 1
@@ -85,10 +46,10 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
       </div>
     </li>
     <li
-      className="c5"
+      className="ListItem__StyledListItem-pn91gs-0 eAAaLc"
     >
       <div
-        className="c1"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 juusSY"
       >
         <div>
           Left List Item 2
@@ -103,78 +64,39 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
 `;
 
 exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with left title 1`] = `
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c4 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c5 {
-  display: block;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  margin-bottom: 4px;
-}
-
 <div>
   <div
-    className="c0"
+    className="ListWithTitles__TitleContainer-sc-1mk4x8k-0 cWrugo"
   >
     <div
-      className="c1"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 juusSY"
     >
       <div
-        className="c2"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
         >
           title1
         </span>
       </div>
       <div
-        className="c2"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
         />
       </div>
     </div>
   </div>
   <ol
-    className="c4"
+    className="List__BaseList-sc-67l9u3-0 cLiOUp"
   >
     <li
-      className="c5"
+      className="ListItem__StyledListItem-pn91gs-0 eAAaLc"
     >
       <div
-        className="c1"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 juusSY"
       >
         <div>
           Left List Item 1
@@ -185,10 +107,10 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
       </div>
     </li>
     <li
-      className="c5"
+      className="ListItem__StyledListItem-pn91gs-0 eAAaLc"
     >
       <div
-        className="c1"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 juusSY"
       >
         <div>
           Left List Item 2
@@ -203,36 +125,14 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
 `;
 
 exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with no titles 1`] = `
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c0 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c1 {
-  display: block;
-}
-
 <ol
-  className="c0"
+  className="List__BaseList-sc-67l9u3-0 cLiOUp"
 >
   <li
-    className="c1"
+    className="ListItem__StyledListItem-pn91gs-0 eAAaLc"
   >
     <div
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 juusSY"
     >
       <div>
         Left List Item 1
@@ -243,10 +143,10 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
     </div>
   </li>
   <li
-    className="c1"
+    className="ListItem__StyledListItem-pn91gs-0 eAAaLc"
   >
     <div
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 juusSY"
     >
       <div>
         Left List Item 2
@@ -260,64 +160,25 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
 `;
 
 exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with right title 1`] = `
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c4 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c5 {
-  display: block;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  margin-bottom: 4px;
-}
-
 <div>
   <div
-    className="c0"
+    className="ListWithTitles__TitleContainer-sc-1mk4x8k-0 cWrugo"
   >
     <div
-      className="c1"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 juusSY"
     >
       <div
-        className="c2"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
         />
       </div>
       <div
-        className="c2"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
         >
           title1
         </span>
@@ -325,13 +186,13 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
     </div>
   </div>
   <ol
-    className="c4"
+    className="List__BaseList-sc-67l9u3-0 cLiOUp"
   >
     <li
-      className="c5"
+      className="ListItem__StyledListItem-pn91gs-0 eAAaLc"
     >
       <div
-        className="c1"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 juusSY"
       >
         <div>
           Left List Item 1
@@ -342,10 +203,10 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
       </div>
     </li>
     <li
-      className="c5"
+      className="ListItem__StyledListItem-pn91gs-0 eAAaLc"
     >
       <div
-        className="c1"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 juusSY"
       >
         <div>
           Left List Item 2

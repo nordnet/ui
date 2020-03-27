@@ -1,27 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Atoms | FormLabel As a wrapper 1`] = `
-.c0 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 <label
-  className="c0"
+  className="FormLabel__StyledLabel-skax1c-0 VHIlu"
   hidden={false}
 >
   <span
-    className="c1"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
   >
     Username
     <input
@@ -33,28 +18,13 @@ exports[`Storyshots Atoms | FormLabel As a wrapper 1`] = `
 
 exports[`Storyshots Atoms | FormLabel Default 1`] = `
 Array [
-  .c0 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-<label
-    className="c0"
+  <label
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
     htmlFor="unique-id"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       Username
     </span>
@@ -68,34 +38,13 @@ Array [
 
 exports[`Storyshots Atoms | FormLabel With hidden label 1`] = `
 Array [
-  .c0 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-<label
-    className="c0"
+  <label
+    className="FormLabel__StyledLabel-skax1c-0 gyUewZ"
     hidden={true}
     htmlFor="unique-id-2"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       Username
     </span>

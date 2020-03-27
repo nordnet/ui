@@ -1,12 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Tooltip Default 1`] = `
-.c0 {
-  display: block;
-}
-
 <button
-  className="c0"
+  className="Tooltipstories__Button-j9k610-0 cAmMZI"
   data-reach-tooltip-trigger=""
   onBlur={[Function]}
   onFocus={[Function]}
@@ -22,123 +18,6 @@ exports[`Storyshots Molecules | Tooltip Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] = `
-.c7 {
-  margin-bottom: 16px;
-}
-
-.c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c5 {
-  stroke: #6E6E69;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c1 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c1,
-.c1[type='button'],
-.c1[type='reset'],
-.c1[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c1::-moz-focus-inner,
-.c1[type='button']::-moz-focus-inner,
-.c1[type='reset']::-moz-focus-inner,
-.c1[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c1:-moz-focusring,
-.c1[type='button']:-moz-focusring,
-.c1[type='reset']:-moz-focusring,
-.c1[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c2 {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.c6 {
-  overflow-y: auto;
-  overflow-x: hidden;
-  margin-bottom: 20px;
-  padding: 0 20px;
-}
-
-.c0 {
-  position: relative;
-  padding: 20px 20px 0 20px;
-  margin-bottom: 8px;
-  min-height: 20px;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.c8 {
-  display: block;
-}
-
-@media (min-width:760px) {
-
-}
-
-@media (min-width:1600px) {
-
-}
-
 <portal-dummy>
   <div
     data-focus-guard={true}
@@ -182,27 +61,27 @@ exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] =
     >
       <div>
         <div
-          className="c0"
+          className="Drawer__TitleWrapper-sc-1ebdzul-4 iBLwhJ"
           onTouchStart={[Function]}
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c1 c2"
+            className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kJslgx Drawer__CloseButton-sc-1ebdzul-1 iHARyV"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c3"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
             >
               <svg
                 aria-hidden="false"
-                className="c4"
+                className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c5"
+                  className="CrossThin__StyledPath-sc-1a8pgle-0 jFUCAe"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -214,13 +93,13 @@ exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] =
           </button>
         </div>
         <div
-          className="c6"
+          className="Drawer__Content-sc-1ebdzul-2 bboXsW"
         >
           <div
-            className="c7"
+            className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
           >
             <button
-              className="c8"
+              className="Tooltipstories__Button-j9k610-0 cAmMZI"
               data-reach-tooltip-trigger=""
               onBlur={[Function]}
               onFocus={[Function]}
@@ -234,7 +113,7 @@ exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] =
             </button>
           </div>
           <button
-            className="c8"
+            className="Tooltipstories__Button-j9k610-0 cAmMZI"
             onClick={[Function]}
           >
             Open modal
@@ -262,83 +141,22 @@ exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] =
 `;
 
 exports[`Storyshots Molecules | Tooltip With position defined 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c3 {
-  display: block;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       bottom
     </div>
     <div>
       <button
-        className="c3"
+        className="Tooltipstories__Button-j9k610-0 cAmMZI"
         data-reach-tooltip-trigger=""
         onBlur={[Function]}
         onFocus={[Function]}
@@ -354,17 +172,17 @@ exports[`Storyshots Molecules | Tooltip With position defined 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       left
     </div>
     <div>
       <button
-        className="c3"
+        className="Tooltipstories__Button-j9k610-0 cAmMZI"
         data-reach-tooltip-trigger=""
         onBlur={[Function]}
         onFocus={[Function]}
@@ -380,17 +198,17 @@ exports[`Storyshots Molecules | Tooltip With position defined 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       top
     </div>
     <div>
       <button
-        className="c3"
+        className="Tooltipstories__Button-j9k610-0 cAmMZI"
         data-reach-tooltip-trigger=""
         onBlur={[Function]}
         onFocus={[Function]}
@@ -406,17 +224,17 @@ exports[`Storyshots Molecules | Tooltip With position defined 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       right
     </div>
     <div>
       <button
-        className="c3"
+        className="Tooltipstories__Button-j9k610-0 cAmMZI"
         data-reach-tooltip-trigger=""
         onBlur={[Function]}
         onFocus={[Function]}

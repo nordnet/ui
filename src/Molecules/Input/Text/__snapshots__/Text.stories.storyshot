@@ -5,133 +5,29 @@ Array [
   <p>
     Actions are a bit laggy because of the @storybook/addon-actions. Prod performance is not affected.
   </p>,
-  .c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
-<div
-    className="c0"
+  <div
+    className="FormField__Wrapper-ydn0fr-0 kMOuNd"
   >
     <label
-      className="c1"
+      className="FormLabel__StyledLabel-skax1c-0 VHIlu"
       hidden={false}
     >
       <span
-        className="c2"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
       >
         <div
-          className="c3"
+          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
         >
           Label 
         </div>
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
         >
           <div
-            className="c5"
+            className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
           >
             <input
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -151,137 +47,33 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
 <form
   onSubmit={[Function]}
 >
   <div>
     <div
-      className="c0"
+      className="FormField__Wrapper-ydn0fr-0 kMOuNd"
     >
       <label
-        className="c1"
+        className="FormLabel__StyledLabel-skax1c-0 VHIlu"
         hidden={false}
       >
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
         >
           <div
-            className="c3"
+            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
           >
             email 
           </div>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
           >
             <div
-              className="c5"
+              className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
                 type="email"
               />
             </div>
@@ -292,28 +84,28 @@ exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
   </div>
   <div>
     <div
-      className="c0"
+      className="FormField__Wrapper-ydn0fr-0 kMOuNd"
     >
       <label
-        className="c1"
+        className="FormLabel__StyledLabel-skax1c-0 VHIlu"
         hidden={false}
       >
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
         >
           <div
-            className="c3"
+            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
           >
             password 
           </div>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
           >
             <div
-              className="c5"
+              className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
                 type="password"
               />
             </div>
@@ -324,28 +116,28 @@ exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
   </div>
   <div>
     <div
-      className="c0"
+      className="FormField__Wrapper-ydn0fr-0 kMOuNd"
     >
       <label
-        className="c1"
+        className="FormLabel__StyledLabel-skax1c-0 VHIlu"
         hidden={false}
       >
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
         >
           <div
-            className="c3"
+            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
           >
             search 
           </div>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
           >
             <div
-              className="c5"
+              className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
                 type="search"
               />
             </div>
@@ -356,28 +148,28 @@ exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
   </div>
   <div>
     <div
-      className="c0"
+      className="FormField__Wrapper-ydn0fr-0 kMOuNd"
     >
       <label
-        className="c1"
+        className="FormLabel__StyledLabel-skax1c-0 VHIlu"
         hidden={false}
       >
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
         >
           <div
-            className="c3"
+            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
           >
             search 
           </div>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
           >
             <div
-              className="c5"
+              className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
                 type="submit"
               />
             </div>
@@ -390,195 +182,39 @@ exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c7 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-left: 32px;
-  padding-right: 40px;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
-.c8 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  left: 0;
-}
-
-.c10 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  right: 4px;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <div
-          className="c5"
+          className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
         >
           <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iQXYwt"
             placeholder="Placeholder"
             type="text"
           />
           <div
-            className="c7 c8"
+            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Text__AddonBox-sc-11cwodo-2 gFEiIR"
             position="left"
           >
             <svg
               aria-hidden="true"
-              className="c9"
+              className="IconBase__StyledIconBase-sc-10cbji3-0 cpMDhR"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -591,7 +227,7 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
             </svg>
           </div>
           <div
-            className="c7 c10"
+            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Text__AddonBox-sc-11cwodo-2 eBobVi"
             position="right"
           >
             SEK
@@ -604,133 +240,29 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text Default 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <div
-          className="c5"
+          className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
         >
           <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
             placeholder="Placeholder"
             type="text"
           />
@@ -742,192 +274,40 @@ exports[`Storyshots Molecules | Input / Text Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c7 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #EBEBE8;
-  padding-left: 32px;
-  padding-right: 40px;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
-.c8 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  left: 0;
-}
-
-.c10 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  right: 4px;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <div
-          className="c5"
+          className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
         >
           <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 lznLI"
             disabled={true}
             placeholder="Placeholder"
             type="text"
           />
           <div
-            className="c7 c8"
+            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Text__AddonBox-sc-11cwodo-2 gFEiIR"
             position="left"
           >
             <svg
               aria-hidden="true"
-              className="c9"
+              className="IconBase__StyledIconBase-sc-10cbji3-0 cpMDhR"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -940,7 +320,7 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
             </svg>
           </div>
           <div
-            className="c7 c10"
+            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Text__AddonBox-sc-11cwodo-2 eBobVi"
             position="right"
           >
             SEK
@@ -953,129 +333,29 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #EBEBE8;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <div
-          className="c5"
+          className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
         >
           <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 kA-dxnu"
             disabled={true}
             placeholder="Placeholder"
             type="text"
@@ -1088,213 +368,43 @@ exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c9 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c9:hover {
-  border-color: #4B4B46;
-}
-
-.c9:focus {
-  border-color: #0046FF;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c8 {
-  position: relative;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Long values
     </div>
     <div>
       <div
-        className="c3"
+        className="FormField__Wrapper-ydn0fr-0 kMOuNd"
       >
         <label
-          className="c4"
+          className="FormLabel__StyledLabel-skax1c-0 VHIlu"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
           >
             <div
-              className="c6"
+              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
             >
               Too long label, goes into ellipsis. Consider smaller label or bigger input 
             </div>
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
             >
               <div
-                className="c8"
+                className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
               >
                 <input
-                  className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                  className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
                   placeholder="If placeholder goes too long though, it probably should be truncated into ellipsis, right?"
                   type="text"
                 />
@@ -1304,7 +414,7 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
         </label>
         <div>
           <span
-            className="c10"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 WSuqZ"
           >
             This is much neccessary info wow
           </span>
@@ -1313,38 +423,38 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Long extraInfo
     </div>
     <div>
       <div
-        className="c3"
+        className="FormField__Wrapper-ydn0fr-0 kMOuNd"
       >
         <label
-          className="c4"
+          className="FormLabel__StyledLabel-skax1c-0 VHIlu"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
           >
             <div
-              className="c6"
+              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
             >
               Small label 
             </div>
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
             >
               <div
-                className="c8"
+                className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
               >
                 <input
-                  className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                  className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
                   placeholder=""
                   type="text"
                 />
@@ -1354,7 +464,7 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
         </label>
         <div>
           <span
-            className="c10"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 WSuqZ"
           >
             Big extra fat extraInfo that will wrap over many lines. Be careful with this pattern, use it only with small texts!
           </span>
@@ -1366,152 +476,30 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FF1900;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         My awesome text field 
       </div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <div
-          className="c5"
+          className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
         >
           <input
             aria-invalid={true}
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 jdsQij"
             onChange={[Function]}
             placeholder="This is a placeholder"
             type="text"
@@ -1522,10 +510,10 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
   </label>
   <div>
     <span
-      className="c7"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hPnwKK"
     >
       <div
-        className="c8"
+        className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
       >
         Error: 
       </div>
@@ -1536,142 +524,29 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <div
-          className="c5"
+          className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
         >
           <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
             placeholder="Placeholder"
             type="text"
           />
@@ -1681,7 +556,7 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
   </label>
   <div>
     <span
-      className="c7"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 WSuqZ"
     >
       Use wisely this space
     </span>
@@ -1690,152 +565,30 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FF1900;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         My awesome text field 
       </div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <div
-          className="c5"
+          className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
         >
           <input
             aria-invalid={true}
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 jdsQij"
             onChange={[Function]}
             placeholder="This is a placeholder"
             type="text"
@@ -1846,10 +599,10 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
   </label>
   <div>
     <span
-      className="c7"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hPnwKK"
     >
       <div
-        className="c8"
+        className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
       >
         Error: 
       </div>
@@ -1861,408 +614,53 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
 
 exports[`Storyshots Molecules | Input / Text Full width 1`] = `
 Array [
-  .c0 {
-  margin-bottom: 16px;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
     >
       Full width inputs
     </span>
   </div>,
-  .c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c11 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c13 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c3 {
-  width: 100%;
-  display: inline-block;
-}
-
-.c9 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c9:hover {
-  border-color: #4B4B46;
-}
-
-.c9:focus {
-  border-color: #0046FF;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-left: 32px;
-}
-
-.c10:hover {
-  border-color: #4B4B46;
-}
-
-.c10:focus {
-  border-color: #0046FF;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
-}
-
-.c14:hover {
-  border-color: #4B4B46;
-}
-
-.c14:focus {
-  border-color: #0046FF;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c8 {
-  position: relative;
-}
-
-.c12 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  left: 0;
-}
-
-.c15 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  right: 4px;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
     direction="column"
   >
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         Default
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 hSHDlv"
           width="100%"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
               >
                 <div
-                  className="c8"
+                  className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
                     placeholder="Placeholder"
                     type="text"
                   />
@@ -2274,49 +672,49 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         Left addon
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 hSHDlv"
           width="100%"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
               >
                 <div
-                  className="c8"
+                  className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 DNqQY"
                     placeholder="Placeholder"
                     type="text"
                   />
                   <div
-                    className="c11 c12"
+                    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Text__AddonBox-sc-11cwodo-2 gFEiIR"
                     position="left"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c13"
+                      className="IconBase__StyledIconBase-sc-10cbji3-0 cpMDhR"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="presentation"
@@ -2336,44 +734,44 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         Right addon
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 hSHDlv"
           width="100%"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
               >
                 <div
-                  className="c8"
+                  className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 eTHSiK"
                     placeholder="Placeholder"
                     type="text"
                   />
                   <div
-                    className="c11 c15"
+                    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Text__AddonBox-sc-11cwodo-2 eBobVi"
                     position="right"
                   >
                     SEK
@@ -2386,145 +784,36 @@ Array [
       </div>
     </div>
   </div>,
-  .c0 {
-  margin-bottom: 32px;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
   />,
 ]
 `;
 
 exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
-.c3 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
       >
         Label 
       </div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <div
-          className="c5"
+          className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
         >
           <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
             placeholder="Placeholder"
             type="text"
           />
@@ -2536,184 +825,39 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c7 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-left: 32px;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
-.c8 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  left: 0;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <div
-          className="c5"
+          className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
         >
           <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 DNqQY"
             placeholder="Placeholder"
             type="text"
           />
           <div
-            className="c7 c8"
+            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Text__AddonBox-sc-11cwodo-2 gFEiIR"
             position="left"
           >
             <svg
               aria-hidden="true"
-              className="c9"
+              className="IconBase__StyledIconBase-sc-10cbji3-0 cpMDhR"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -2734,237 +878,52 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
 
 exports[`Storyshots Molecules | Input / Text Required 1`] = `
 Array [
-  .c0 {
-  margin-bottom: 16px;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
     >
       Required
     </span>
   </div>,
-  .c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c9 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c9:hover {
-  border-color: #4B4B46;
-}
-
-.c9:focus {
-  border-color: #0046FF;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c8 {
-  position: relative;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
     direction="column"
   >
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         Default (without star)
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 kMOuNd"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
               >
                 <div
-                  className="c8"
+                  className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
                     placeholder="Placeholder"
                     required={true}
                     type="text"
@@ -2977,38 +936,38 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         With star
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 kMOuNd"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label *
               </div>
               <span
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
               >
                 <div
-                  className="c8"
+                  className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
                     placeholder="Placeholder"
                     required={true}
                     type="text"
@@ -3021,180 +980,41 @@ Array [
       </div>
     </div>
   </div>,
-  .c0 {
-  margin-bottom: 32px;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
   />,
 ]
 `;
 
 exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c7 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
-.c8 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  right: 4px;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <div
-          className="c5"
+          className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
         >
           <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 eTHSiK"
             placeholder="Placeholder"
             type="text"
           />
           <div
-            className="c7 c8"
+            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Text__AddonBox-sc-11cwodo-2 eBobVi"
             position="right"
           >
             SEK
@@ -3207,367 +1027,39 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 > *:not(:first-child) {
-  padding-top: 16px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c1 > * {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c2 {
-  box-sizing: border-box;
-  -webkit-flex-basis: 50%;
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c14 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c13 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c4 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FF1900;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c16 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c15 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c15,
-.c15[type='button'],
-.c15[type='reset'],
-.c15[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c15::-moz-focus-inner,
-.c15[type='button']::-moz-focus-inner,
-.c15[type='reset']::-moz-focus-inner,
-.c15[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c15:-moz-focusring,
-.c15[type='button']:-moz-focusring,
-.c15[type='reset']:-moz-focusring,
-.c15[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c15::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c15:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c15:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c3 {
-  width: 100%;
-  display: inline-block;
-}
-
-.c9 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c9:hover {
-  border-color: #4B4B46;
-}
-
-.c9:focus {
-  border-color: #0046FF;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c11 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c11:hover {
-  border-color: #4B4B46;
-}
-
-.c11:focus {
-  border-color: #0046FF;
-}
-
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
-.c11::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
-.c11::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
-.c11:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
-.c11::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c8 {
-  position: relative;
-}
-
 <div
-  className="c0"
+  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 eZXbOw"
 >
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hrRNUt"
   >
     <div
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 fDpmzJ"
     >
       <div
-        className="c3"
+        className="FormField__Wrapper-ydn0fr-0 hSHDlv"
         width="100%"
       >
         <label
-          className="c4"
+          className="FormLabel__StyledLabel-skax1c-0 VHIlu"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
           >
             <div
-              className="c6"
+              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
             >
               Username 
             </div>
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
             >
               <div
-                className="c8"
+                className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
               >
                 <input
-                  className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                  className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
                   placeholder="Username"
                   type="text"
                 />
@@ -3577,7 +1069,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
         </label>
         <div>
           <span
-            className="c10"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 WSuqZ"
           >
             Please provide your username (worst UX right here)
           </span>
@@ -3585,33 +1077,33 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
       </div>
     </div>
     <div
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 fDpmzJ"
     >
       <div
-        className="c3"
+        className="FormField__Wrapper-ydn0fr-0 hSHDlv"
         width="100%"
       >
         <label
-          className="c4"
+          className="FormLabel__StyledLabel-skax1c-0 VHIlu"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
           >
             <div
-              className="c6"
+              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
             >
               Password 
             </div>
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
             >
               <div
-                className="c8"
+                className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
               >
                 <input
                   aria-invalid={true}
-                  className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
+                  className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 jdsQij"
                   placeholder="Password"
                   type="text"
                 />
@@ -3621,10 +1113,10 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
         </label>
         <div>
           <span
-            className="c12"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hPnwKK"
           >
             <div
-              className="c13"
+              className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
             >
               Error: 
             </div>
@@ -3635,16 +1127,16 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
     </div>
   </div>
   <div
-    className="c14"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hJsTgX"
   >
     <button
-      className="NormalizedButton__Button-ey7f5x-0 c15"
+      className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 chxgx"
       onClick={[Function]}
       type="button"
     >
       <span>
         <span
-          className="c16"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
         >
           Login
         </span>
@@ -3656,489 +1148,52 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
 
 exports[`Storyshots Molecules | Input / Text Small 1`] = `
 Array [
-  .c0 {
-  margin-bottom: 16px;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
     >
       Size = "s"
     </span>
   </div>,
-  .c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c15 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c13 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c4 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c17 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FF1900;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c10 {
-  width: 100%;
-  display: inline-block;
-}
-
-.c9 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 32px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c9:hover {
-  border-color: #4B4B46;
-}
-
-.c9:focus {
-  border-color: #0046FF;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c11 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 32px;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c11:hover {
-  border-color: #4B4B46;
-}
-
-.c11:focus {
-  border-color: #0046FF;
-}
-
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
-.c11::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
-.c11::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
-.c11:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
-.c11::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 32px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-left: 32px;
-}
-
-.c14:hover {
-  border-color: #4B4B46;
-}
-
-.c14:focus {
-  border-color: #0046FF;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c18 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 32px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
-}
-
-.c18:hover {
-  border-color: #4B4B46;
-}
-
-.c18:focus {
-  border-color: #0046FF;
-}
-
-.c18::-moz-placeholder,
-.c18:-ms-input-placeholder,
-.c18::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c18::-moz-placeholder,
-.c18:-ms-input-placeholder,
-.c18::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c18::-moz-placeholder,
-.c18:-ms-input-placeholder,
-.c18:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c18::-moz-placeholder,
-.c18:-ms-input-placeholder,
-.c18::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c8 {
-  position: relative;
-}
-
-.c16 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  left: 0;
-}
-
-.c19 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  right: 4px;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
     direction="column"
   >
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         Default
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 kMOuNd"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
               >
                 <div
-                  className="c8"
+                  className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 kwigCG"
                     placeholder="Placeholder"
                     type="text"
                   />
@@ -4150,39 +1205,39 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         Full width
       </div>
       <div>
         <div
-          className="c10"
+          className="FormField__Wrapper-ydn0fr-0 hSHDlv"
           width="100%"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
               >
                 <div
-                  className="c8"
+                  className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 kwigCG"
                     placeholder="Placeholder"
                     type="text"
                   />
@@ -4194,39 +1249,39 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         Error
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 kMOuNd"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
               >
                 <div
-                  className="c8"
+                  className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
                 >
                   <input
                     aria-invalid={true}
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 fongcK"
                     placeholder="Placeholder"
                     type="text"
                   />
@@ -4236,10 +1291,10 @@ Array [
           </label>
           <div>
             <span
-              className="c12"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hPnwKK"
             >
               <div
-                className="c13"
+                className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
               >
                 Error: 
               </div>
@@ -4250,48 +1305,48 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         Left addon
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 kMOuNd"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
               >
                 <div
-                  className="c8"
+                  className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 cXdEtd"
                     placeholder="Placeholder"
                     type="text"
                   />
                   <div
-                    className="c15 c16"
+                    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Text__AddonBox-sc-11cwodo-2 gFEiIR"
                     position="left"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c17"
+                      className="IconBase__StyledIconBase-sc-10cbji3-0 cpMDhR"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="presentation"
@@ -4311,43 +1366,43 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         Right addon
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 kMOuNd"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
               >
                 <div
-                  className="c8"
+                  className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c18"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 cawQjT"
                     placeholder="Placeholder"
                     type="text"
                   />
                   <div
-                    className="c15 c19"
+                    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Text__AddonBox-sc-11cwodo-2 eBobVi"
                     position="right"
                   >
                     SEK
@@ -4360,148 +1415,36 @@ Array [
       </div>
     </div>
   </div>,
-  .c0 {
-  margin-bottom: 32px;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
   />,
 ]
 `;
 
 exports[`Storyshots Molecules | Input / Text Success 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #00D200;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <div
-          className="c5"
+          className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
         >
           <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 kkAiKh"
             placeholder="Placeholder"
             type="text"
           />
@@ -4513,134 +1456,30 @@ exports[`Storyshots Molecules | Input / Text Success 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text With auto focus 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <div
-          className="c5"
+          className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
         >
           <input
             autoFocus={true}
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
             placeholder="Placeholder"
             type="text"
           />
@@ -4652,133 +1491,29 @@ exports[`Storyshots Molecules | Input / Text With auto focus 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled behaviour) 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <div
-          className="c5"
+          className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
         >
           <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
             defaultValue="Some predefined text"
             placeholder="Placeholder"
             type="text"
@@ -4791,133 +1526,29 @@ exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled be
 `;
 
 exports[`Storyshots Molecules | Input / Text With maxLength 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         has max length 
       </div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <div
-          className="c5"
+          className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
         >
           <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
             maxLength={3}
             placeholder="Placeholder"
             type="text"
@@ -4930,149 +1561,23 @@ exports[`Storyshots Molecules | Input / Text With maxLength 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c6 {
-  stroke: #6E6E69;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c5 {
-  margin-left: 4px;
-}
-
-.c9 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c9:hover {
-  border-color: #4B4B46;
-}
-
-.c9:focus {
-  border-color: #0046FF;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c8 {
-  position: relative;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
         <svg
           aria-hidden="false"
-          className="c4 c5"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 cpMDhR FormField__TooltipIcon-ydn0fr-1 ioayVJ"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="img"
@@ -5083,7 +1588,7 @@ exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
             transform="translate(1 1)"
           >
             <circle
-              className="c6"
+              className="Questionmark__StyledCircle-sc-1uxskjf-0 gHSezF"
               cx="11"
               cy="11"
               fill="none"
@@ -5100,13 +1605,13 @@ exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
         </svg>
       </div>
       <span
-        className="c7"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <div
-          className="c8"
+          className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
         >
           <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
             placeholder="Placeholder"
             type="text"
           />
@@ -5118,133 +1623,29 @@ exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text With value (Controlled behaviour) 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <div
-          className="c5"
+          className="Text__Wrapper-sc-11cwodo-1 dLRNwJ"
         >
           <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 Text__Input-sc-11cwodo-0 iftejb"
             placeholder="Placeholder"
             type="text"
             value="Some predefined text"

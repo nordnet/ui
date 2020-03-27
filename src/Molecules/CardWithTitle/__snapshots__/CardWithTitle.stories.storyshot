@@ -1,26 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article (most CardWithTitle should be article) 1`] = `
-.c1 {
-  padding: 20px;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  max-height: 100%;
-}
-
 <article
-  className="c0"
+  className="CardWithTitle__StyledCard-sc-1ny6tjx-1 hmmprL"
 >
   <header
-    className="c1"
+    className="CardWithTitle__StyledHeader-sc-1ny6tjx-0 gnUsaT"
   >
     Konton
   </header>
@@ -29,26 +14,11 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article (most Car
 `;
 
 exports[`Storyshots Molecules | CardWithTitle CardWithTitle as section 1`] = `
-.c1 {
-  padding: 20px;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  max-height: 100%;
-}
-
 <section
-  className="c0"
+  className="CardWithTitle__StyledCard-sc-1ny6tjx-1 hmmprL"
 >
   <header
-    className="c1"
+    className="CardWithTitle__StyledHeader-sc-1ny6tjx-0 gnUsaT"
   >
     Konton
   </header>
@@ -57,31 +27,11 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as section 1`] = `
 `;
 
 exports[`Storyshots Molecules | CardWithTitle Default 1`] = `
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c2 {
-  padding: 20px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  max-height: 100%;
-}
-
 <div
-  className="c0 c1"
+  className="Card__StyledCard-sc-1e5czjc-0 fCiISE CardWithTitle__StyledCard-sc-1ny6tjx-1 hmmprL"
 >
   <header
-    className="c2"
+    className="CardWithTitle__StyledHeader-sc-1ny6tjx-0 gnUsaT"
   >
     Konton
   </header>
@@ -90,151 +40,40 @@ exports[`Storyshots Molecules | CardWithTitle Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with custom component as title 1`] = `
-.c10 {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-}
-
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  box-sizing: border-box;
-}
-
-.c8 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #0046FF;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
-  padding: 20px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  max-height: 100%;
-}
-
-.c6 {
-  display: inline;
-  padding: 0;
-  color: #0046FF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c6:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c11 {
-  display: inline-block;
-  max-width: 400px;
-}
-
-.c9 {
-  padding-left: 4px;
-}
-
-@media (min-width:760px) {
-  .c5 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
 <div
-  className="c0 c1"
+  className="Card__StyledCard-sc-1e5czjc-0 fCiISE CardWithTitle__StyledCard-sc-1ny6tjx-1 hmmprL"
 >
   <header
-    className="c2"
+    className="CardWithTitle__StyledHeader-sc-1ny6tjx-0 gnUsaT"
   >
     <div
-      className="c3"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 lfTaQs"
     >
       <div
-        className="c4"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
       >
         <h2
-          className="c5"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kZoBvC"
         >
           Konton
         </h2>
       </div>
       <div
-        className="c4"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
       >
         <a
-          className="c6"
+          className="Link__StyledLink-apj04t-0 ixkkIR"
           href="#/www.google.com"
           onClick={[Function]}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
           >
             Marknadsöversikt
           </span>
           <svg
             aria-hidden="true"
-            className="c8 c9"
+            className="IconBase__StyledIconBase-sc-10cbji3-0 getaRI CardWithTitlestories__PaddedIcon-sc-1jyecxu-2 jjdLNM"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -249,10 +88,10 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
     </div>
   </header>
   <div
-    className="c10"
+    className="Box__StyledDiv-sc-1bfv3i9-0 tSIkM"
   >
     <span
-      className="c11"
+      className="CardWithTitlestories__Text-sc-1jyecxu-0 cFfEQd"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac lectus aliquam, scelerisque est eget, lobortis massa. Praesent in pretium orci. Phasellus est sapien, maximus at nulla ac, condimentum dictum ante. Sed consequat erat lacinia, molestie augue vitae, efficitur purus. In venenatis elit nec tortor condimentum, sit amet elementum magna fermentum. Phasellus dictum non augue vitae pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent rutrum egestas sollicitudin. Cras semper, mi vitae vulputate aliquam, tortor ante maximus libero, vitae maximus velit dui quis augue. Aenean condimentum molestie ante, nec rhoncus nunc aliquet non. Aliquam bibendum tortor dui, eget porttitor nibh fermentum eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse nec magna lectus. Fusce posuere nisi vel purus faucibus sodales. Quisque ac ullamcorper eros, sed lobortis risus. Sed eu magna mi. Vestibulum accumsan porta velit. Donec ligula arcu, cursus eu nisl vel, molestie pretium neque. Etiam urna elit, mollis vel arcu id, vulputate mattis nisi. Fusce eget odio id ipsum consectetur feugiat vitae ut tortor. Aliquam non tempor nibh, scelerisque placerat eros. Nulla facilisi.
     </span>
@@ -261,159 +100,41 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
 `;
 
 exports[`Storyshots Molecules | CardWithTitle Integration: with FadedScroll 1`] = `
-.c8 {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c6 {
-  position: relative;
-  overflow-x: hidden;
-}
-
-.c10 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  bottom: 0;
-}
-
-.c7 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  top: 0;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c2 {
-  padding: 20px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  max-height: 100%;
-}
-
-.c9 {
-  display: inline-block;
-  max-width: 400px;
-}
-
-@media (min-width:976px) {
-  .c4 {
-    position: relative;
-  }
-
-  .c4::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    top: 0;
-    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c4 {
-    position: relative;
-  }
-
-  .c4::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    bottom: 0;
-    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c5 {
-    max-height: 200px;
-    overflow-y: auto;
-  }
-}
-
-@media (min-width:760px) {
-  .c3 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
 <div
-  className="c0 c1"
+  className="Card__StyledCard-sc-1e5czjc-0 fCiISE CardWithTitle__StyledCard-sc-1ny6tjx-1 hmmprL"
 >
   <header
-    className="c2"
+    className="CardWithTitle__StyledHeader-sc-1ny6tjx-0 gnUsaT"
   >
     <h2
-      className="c3"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kZoBvC"
     >
       Konton
     </h2>
   </header>
   <div
-    className="c4"
+    className="FadedScroll__Container-sc-134qq0d-0 dCAKgx"
   >
     <div
-      className="c5"
+      className="FadedScroll__Scroller-sc-134qq0d-1 gHdLDQ"
     >
       <div
-        className="c6"
+        className="FadedScroll__Content-sc-134qq0d-2 hzHbxu"
       >
         <div
-          className="c7"
+          className="FadedScroll__IntersectionTop-sc-134qq0d-4 crnks"
         />
         <div
-          className="c8"
+          className="Box__StyledDiv-sc-1bfv3i9-0 hLGnJk"
         >
           <span
-            className="c9"
+            className="CardWithTitlestories__Text-sc-1jyecxu-0 cFfEQd"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac lectus aliquam, scelerisque est eget, lobortis massa. Praesent in pretium orci. Phasellus est sapien, maximus at nulla ac, condimentum dictum ante. Sed consequat erat lacinia, molestie augue vitae, efficitur purus. In venenatis elit nec tortor condimentum, sit amet elementum magna fermentum. Phasellus dictum non augue vitae pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent rutrum egestas sollicitudin. Cras semper, mi vitae vulputate aliquam, tortor ante maximus libero, vitae maximus velit dui quis augue. Aenean condimentum molestie ante, nec rhoncus nunc aliquet non. Aliquam bibendum tortor dui, eget porttitor nibh fermentum eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse nec magna lectus. Fusce posuere nisi vel purus faucibus sodales. Quisque ac ullamcorper eros, sed lobortis risus. Sed eu magna mi. Vestibulum accumsan porta velit. Donec ligula arcu, cursus eu nisl vel, molestie pretium neque. Etiam urna elit, mollis vel arcu id, vulputate mattis nisi. Fusce eget odio id ipsum consectetur feugiat vitae ut tortor. Aliquam non tempor nibh, scelerisque placerat eros. Nulla facilisi.
           </span>
         </div>
         <div
-          className="c10"
+          className="FadedScroll__IntersectionBottom-sc-134qq0d-3 bLKvVr"
         />
       </div>
     </div>
@@ -422,201 +143,41 @@ exports[`Storyshots Molecules | CardWithTitle Integration: with FadedScroll 1`] 
 `;
 
 exports[`Storyshots Molecules | CardWithTitle Integration: with FadedScroll of content and height being whatever is available left of parents height. 1`] = `
-.c9 {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  min-height: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: auto;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
-}
-
-.c6 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c7 {
-  position: relative;
-  overflow-x: hidden;
-}
-
-.c11 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  bottom: 0;
-}
-
-.c8 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  top: 0;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c3 {
-  padding: 20px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  max-height: 100%;
-}
-
-.c10 {
-  display: inline-block;
-  max-width: 400px;
-}
-
-@media (min-width:976px) {
-  .c5 {
-    position: relative;
-  }
-
-  .c5::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    top: 0;
-    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c5 {
-    position: relative;
-  }
-
-  .c5::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    bottom: 0;
-    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c6 {
-    min-height: 0;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -webkit-flex-shrink: 1;
-    -ms-flex-negative: 1;
-    flex-shrink: 1;
-    -webkit-flex-basis: auto;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-    overflow-y: auto;
-  }
-}
-
-@media (min-width:760px) {
-  .c4 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-@media (min-width:976px) {
-  .c2 {
-    height: 250px;
-  }
-}
-
 <div
-  className="c0 c1 c2"
+  className="Card__StyledCard-sc-1e5czjc-0 fCiISE CardWithTitle__StyledCard-sc-1ny6tjx-1 hmmprL CardWithTitlestories__HeightOnCardWithTitle-sc-1jyecxu-1 cybgHF"
 >
   <header
-    className="c3"
+    className="CardWithTitle__StyledHeader-sc-1ny6tjx-0 gnUsaT"
   >
     <h2
-      className="c4"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kZoBvC"
     >
       Konton
     </h2>
   </header>
   <div
-    className="c5"
+    className="FadedScroll__Container-sc-134qq0d-0 bMeIvy"
   >
     <div
-      className="c6"
+      className="FadedScroll__Scroller-sc-134qq0d-1 euYWMJ"
     >
       <div
-        className="c7"
+        className="FadedScroll__Content-sc-134qq0d-2 hzHbxu"
       >
         <div
-          className="c8"
+          className="FadedScroll__IntersectionTop-sc-134qq0d-4 crnks"
         />
         <div
-          className="c9"
+          className="Box__StyledDiv-sc-1bfv3i9-0 hLGnJk"
         >
           <span
-            className="c10"
+            className="CardWithTitlestories__Text-sc-1jyecxu-0 cFfEQd"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac lectus aliquam, scelerisque est eget, lobortis massa. Praesent in pretium orci. Phasellus est sapien, maximus at nulla ac, condimentum dictum ante. Sed consequat erat lacinia, molestie augue vitae, efficitur purus. In venenatis elit nec tortor condimentum, sit amet elementum magna fermentum. Phasellus dictum non augue vitae pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent rutrum egestas sollicitudin. Cras semper, mi vitae vulputate aliquam, tortor ante maximus libero, vitae maximus velit dui quis augue. Aenean condimentum molestie ante, nec rhoncus nunc aliquet non. Aliquam bibendum tortor dui, eget porttitor nibh fermentum eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse nec magna lectus. Fusce posuere nisi vel purus faucibus sodales. Quisque ac ullamcorper eros, sed lobortis risus. Sed eu magna mi. Vestibulum accumsan porta velit. Donec ligula arcu, cursus eu nisl vel, molestie pretium neque. Etiam urna elit, mollis vel arcu id, vulputate mattis nisi. Fusce eget odio id ipsum consectetur feugiat vitae ut tortor. Aliquam non tempor nibh, scelerisque placerat eros. Nulla facilisi.
           </span>
         </div>
         <div
-          className="c11"
+          className="FadedScroll__IntersectionBottom-sc-134qq0d-3 bLKvVr"
         />
       </div>
     </div>

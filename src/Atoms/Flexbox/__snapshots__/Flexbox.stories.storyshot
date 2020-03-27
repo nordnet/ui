@@ -1,63 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Atoms | Flexbox Column sized flexboxes 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1 {
-  box-sizing: border-box;
-  max-width: 25%;
-  -webkit-flex-basis: 25%;
-  -ms-flex-preferred-size: 25%;
-  flex-basis: 25%;
-}
-
-.c3 {
-  box-sizing: border-box;
-  max-width: 50%;
-  -webkit-flex-basis: 50%;
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
 <div
-  className="c0"
+  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 yTyLg"
 >
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dETdtx"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Col 1
     </div>
   </div>
   <div
-    className="c3"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 eMdjRx"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Col 2
     </div>
   </div>
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dETdtx"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Col 3
     </div>
@@ -66,51 +35,32 @@ exports[`Storyshots Atoms | Flexbox Column sized flexboxes 1`] = `
 `;
 
 exports[`Storyshots Atoms | Flexbox Default 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
 <div
-  className="c0"
+  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 yTyLg"
 >
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Col 1
     </div>
   </div>
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Col 2
     </div>
   </div>
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Col 3
     </div>
@@ -119,120 +69,32 @@ exports[`Storyshots Atoms | Flexbox Default 1`] = `
 `;
 
 exports[`Storyshots Atoms | Flexbox With breakpoint props 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 > *:not(:first-child) {
-  padding-top: 16px;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
-@media (min-width:760px) {
-  .c0 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .c0 > *:not(:first-child) {
-    padding-top: 24px;
-  }
-}
-
-@media (min-width:976px) {
-  .c0 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-
-  .c0 > * {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
-  .c0 > *:not(:first-child) {
-    padding-top: 0;
-  }
-}
-
-@media (min-width:1280px) {
-  .c0 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    margin-left: -20px;
-    margin-right: -20px;
-  }
-
-  .c0 > * {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .c0 > *:not(:first-child) {
-    padding-top: 0;
-  }
-}
-
 <div
-  className="c0"
+  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hLMSUN"
 >
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       First element here
     </div>
   </div>
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Second element here
     </div>
   </div>
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus neque in venenatis faucibus. Fusce vitae maximus diam. Ut placerat lacus id porttitor tristique. Mauris in neque tempus, venenatis metus vitae, pellentesque massa. Etiam blandit lacus diam, dignissim posuere massa semper maximus. In pretium commodo nisl sed ultrices. Duis gravida diam ac nisl sodales mollis. Quisque iaculis semper mi, eu interdum elit molestie quis. Vivamus rutrum cursus interdum. Suspendisse vehicula quam mi, a efficitur ante egestas eget.
     </div>
@@ -241,36 +103,14 @@ exports[`Storyshots Atoms | Flexbox With breakpoint props 1`] = `
 `;
 
 exports[`Storyshots Atoms | Flexbox With conditionally hidden flex item 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1 {
-  box-sizing: border-box;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
 <div
-  className="c0"
+  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 yTyLg"
 >
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 bkvXvK"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Col 2
     </div>
@@ -279,52 +119,23 @@ exports[`Storyshots Atoms | Flexbox With conditionally hidden flex item 1`] = `
 `;
 
 exports[`Storyshots Atoms | Flexbox With conditionally visible flex item 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1 {
-  box-sizing: border-box;
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-}
-
-.c3 {
-  box-sizing: border-box;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
 <div
-  className="c0"
+  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 yTyLg"
 >
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 bzujMt"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Col 1
     </div>
   </div>
   <div
-    className="c3"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 bkvXvK"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Col 2
     </div>
@@ -333,81 +144,36 @@ exports[`Storyshots Atoms | Flexbox With conditionally visible flex item 1`] = `
 `;
 
 exports[`Storyshots Atoms | Flexbox With container and item props 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.c0 > * {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c0 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 20px;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c3 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
 <div
-  className="c0"
+  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hEIiGr"
 >
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hkdNcr"
   >
     <div
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
     >
       <div
-        className="c3"
+        className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
       >
         First element here
       </div>
     </div>
     <div
-      className="c2"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
     >
       <div
-        className="c3"
+        className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
       >
         Second element here
       </div>
     </div>
   </div>
   <div
-    className="c2"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
   >
     <div
-      className="c3"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus neque in venenatis faucibus. Fusce vitae maximus diam. Ut placerat lacus id porttitor tristique. Mauris in neque tempus, venenatis metus vitae, pellentesque massa. Etiam blandit lacus diam, dignissim posuere massa semper maximus. In pretium commodo nisl sed ultrices. Duis gravida diam ac nisl sodales mollis. Quisque iaculis semper mi, eu interdum elit molestie quis. Vivamus rutrum cursus interdum. Suspendisse vehicula quam mi, a efficitur ante egestas eget.
     </div>
@@ -416,57 +182,23 @@ exports[`Storyshots Atoms | Flexbox With container and item props 1`] = `
 `;
 
 exports[`Storyshots Atoms | Flexbox With custom gutter 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.c0 > * {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c0 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c1 {
-  box-sizing: border-box;
-  max-width: 50%;
-  -webkit-flex-basis: 50%;
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
 <div
-  className="c0"
+  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hEIiGr"
 >
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 eMdjRx"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Col 1
     </div>
   </div>
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 eMdjRx"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Col 2
     </div>
@@ -475,71 +207,32 @@ exports[`Storyshots Atoms | Flexbox With custom gutter 1`] = `
 `;
 
 exports[`Storyshots Atoms | Flexbox With direction: column 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 {
-  box-sizing: border-box;
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-}
-
-.c3 {
-  box-sizing: border-box;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-}
-
-.c4 {
-  box-sizing: border-box;
-  -webkit-order: 3;
-  -ms-flex-order: 3;
-  order: 3;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
 <div
-  className="c0"
+  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 iopGic"
 >
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 bzujMt"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Col 1
     </div>
   </div>
   <div
-    className="c3"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 bkvXvK"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Col 2
     </div>
   </div>
   <div
-    className="c4"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 fevmho"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Col 3
     </div>
@@ -548,52 +241,32 @@ exports[`Storyshots Atoms | Flexbox With direction: column 1`] = `
 `;
 
 exports[`Storyshots Atoms | Flexbox With height modified 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 40px;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
 <div
-  className="c0"
+  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hyGNMq"
 >
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Col 1
     </div>
   </div>
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Col 2
     </div>
   </div>
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
   >
     <div
-      className="c2"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 imjWUH"
     >
       Col 3
     </div>

@@ -1,91 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Organisms | Development As currency 1`] = `
-.c3 {
-  color: #00D200;
-}
-
-.c4 {
-  color: #282823;
-}
-
-.c5 {
-  color: #FF1900;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Positive value
     </div>
     <div>
       <span
-        className="c3"
+        className="Development__StyledDevelopment-hnn1ri-0 fTxyUg"
         value={50}
       >
         <span
@@ -98,17 +29,17 @@ exports[`Storyshots Organisms | Development As currency 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Zero value
     </div>
     <div>
       <span
-        className="c4"
+        className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
         value={0}
       >
         <span
@@ -121,17 +52,17 @@ exports[`Storyshots Organisms | Development As currency 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Negative value
     </div>
     <div>
       <span
-        className="c5"
+        className="Development__StyledDevelopment-hnn1ri-0 dSohiW"
         value={-200}
       >
         <span
@@ -147,91 +78,22 @@ exports[`Storyshots Organisms | Development As currency 1`] = `
 `;
 
 exports[`Storyshots Organisms | Development As percentage 1`] = `
-.c3 {
-  color: #00D200;
-}
-
-.c4 {
-  color: #282823;
-}
-
-.c5 {
-  color: #FF1900;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Positive value
     </div>
     <div>
       <span
-        className="c3"
+        className="Development__StyledDevelopment-hnn1ri-0 fTxyUg"
         value={5.4}
       >
         <span
@@ -244,17 +106,17 @@ exports[`Storyshots Organisms | Development As percentage 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Zero value
     </div>
     <div>
       <span
-        className="c4"
+        className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
         value={0}
       >
         <span
@@ -267,17 +129,17 @@ exports[`Storyshots Organisms | Development As percentage 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Negative value
     </div>
     <div>
       <span
-        className="c5"
+        className="Development__StyledDevelopment-hnn1ri-0 dSohiW"
         value={-2.1}
       >
         <span
@@ -293,91 +155,22 @@ exports[`Storyshots Organisms | Development As percentage 1`] = `
 `;
 
 exports[`Storyshots Organisms | Development Default 1`] = `
-.c3 {
-  color: #00D200;
-}
-
-.c4 {
-  color: #282823;
-}
-
-.c5 {
-  color: #FF1900;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Positive value
     </div>
     <div>
       <span
-        className="c3"
+        className="Development__StyledDevelopment-hnn1ri-0 fTxyUg"
         value={50}
       >
         <span
@@ -389,17 +182,17 @@ exports[`Storyshots Organisms | Development Default 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Zero value
     </div>
     <div>
       <span
-        className="c4"
+        className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
         value={0}
       >
         <span
@@ -411,17 +204,17 @@ exports[`Storyshots Organisms | Development Default 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Negative value
     </div>
     <div>
       <span
-        className="c5"
+        className="Development__StyledDevelopment-hnn1ri-0 dSohiW"
         value={-200}
       >
         <span
@@ -436,208 +229,39 @@ exports[`Storyshots Organisms | Development Default 1`] = `
 `;
 
 exports[`Storyshots Organisms | Development Integration: with different typographies 1`] = `
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1.6;
-}
-
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-.c11 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 46px;
-  line-height: 1.0434782608695652;
-}
-
-.c4 {
-  color: #00D200;
-}
-
-.c5 {
-  color: #282823;
-}
-
-.c6 {
-  color: #FF1900;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-  .c10 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-@media (min-width:760px) {
-  .c11 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
-  .c12 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-@media (min-width:760px) {
-  .c13 {
-    font-size: 48px;
-    line-height: 1.0833333333333333;
-  }
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       primary
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
       >
         <div
-          className="c0"
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
           direction="column"
         >
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Positive value
             </div>
             <div>
               <span
-                className="c4"
+                className="Development__StyledDevelopment-hnn1ri-0 fTxyUg"
                 value={5.4}
               >
                 <span
@@ -649,17 +273,17 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
             </div>
           </div>
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Zero value
             </div>
             <div>
               <span
-                className="c5"
+                className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
                 value={0}
               >
                 <span
@@ -671,17 +295,17 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
             </div>
           </div>
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Negative value
             </div>
             <div>
               <span
-                className="c6"
+                className="Development__StyledDevelopment-hnn1ri-0 dSohiW"
                 value={-2.1}
               >
                 <span
@@ -697,34 +321,34 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       secondary
     </div>
     <div>
       <span
-        className="c7"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <div
-          className="c0"
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
           direction="column"
         >
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Positive value
             </div>
             <div>
               <span
-                className="c4"
+                className="Development__StyledDevelopment-hnn1ri-0 fTxyUg"
                 value={5.4}
               >
                 <span
@@ -736,17 +360,17 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
             </div>
           </div>
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Zero value
             </div>
             <div>
               <span
-                className="c5"
+                className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
                 value={0}
               >
                 <span
@@ -758,17 +382,17 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
             </div>
           </div>
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Negative value
             </div>
             <div>
               <span
-                className="c6"
+                className="Development__StyledDevelopment-hnn1ri-0 dSohiW"
                 value={-2.1}
               >
                 <span
@@ -784,34 +408,34 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       tertiary
     </div>
     <div>
       <span
-        className="c8"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 cHzAen"
       >
         <div
-          className="c0"
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
           direction="column"
         >
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Positive value
             </div>
             <div>
               <span
-                className="c4"
+                className="Development__StyledDevelopment-hnn1ri-0 fTxyUg"
                 value={5.4}
               >
                 <span
@@ -823,17 +447,17 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
             </div>
           </div>
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Zero value
             </div>
             <div>
               <span
-                className="c5"
+                className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
                 value={0}
               >
                 <span
@@ -845,17 +469,17 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
             </div>
           </div>
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Negative value
             </div>
             <div>
               <span
-                className="c6"
+                className="Development__StyledDevelopment-hnn1ri-0 dSohiW"
                 value={-2.1}
               >
                 <span
@@ -871,34 +495,34 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       caption
     </div>
     <div>
       <span
-        className="c9"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ejTVkr"
       >
         <div
-          className="c0"
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
           direction="column"
         >
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Positive value
             </div>
             <div>
               <span
-                className="c4"
+                className="Development__StyledDevelopment-hnn1ri-0 fTxyUg"
                 value={5.4}
               >
                 <span
@@ -910,17 +534,17 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
             </div>
           </div>
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Zero value
             </div>
             <div>
               <span
-                className="c5"
+                className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
                 value={0}
               >
                 <span
@@ -932,17 +556,17 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
             </div>
           </div>
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Negative value
             </div>
             <div>
               <span
-                className="c6"
+                className="Development__StyledDevelopment-hnn1ri-0 dSohiW"
                 value={-2.1}
               >
                 <span
@@ -958,34 +582,34 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       title1
     </div>
     <div>
       <span
-        className="c10"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
       >
         <div
-          className="c0"
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
           direction="column"
         >
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Positive value
             </div>
             <div>
               <span
-                className="c4"
+                className="Development__StyledDevelopment-hnn1ri-0 fTxyUg"
                 value={5.4}
               >
                 <span
@@ -997,17 +621,17 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
             </div>
           </div>
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Zero value
             </div>
             <div>
               <span
-                className="c5"
+                className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
                 value={0}
               >
                 <span
@@ -1019,17 +643,17 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
             </div>
           </div>
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Negative value
             </div>
             <div>
               <span
-                className="c6"
+                className="Development__StyledDevelopment-hnn1ri-0 dSohiW"
                 value={-2.1}
               >
                 <span
@@ -1045,34 +669,34 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       title2
     </div>
     <div>
       <span
-        className="c11"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ekyJLf"
       >
         <div
-          className="c0"
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
           direction="column"
         >
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Positive value
             </div>
             <div>
               <span
-                className="c4"
+                className="Development__StyledDevelopment-hnn1ri-0 fTxyUg"
                 value={5.4}
               >
                 <span
@@ -1084,17 +708,17 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
             </div>
           </div>
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Zero value
             </div>
             <div>
               <span
-                className="c5"
+                className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
                 value={0}
               >
                 <span
@@ -1106,17 +730,17 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
             </div>
           </div>
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Negative value
             </div>
             <div>
               <span
-                className="c6"
+                className="Development__StyledDevelopment-hnn1ri-0 dSohiW"
                 value={-2.1}
               >
                 <span
@@ -1132,34 +756,34 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       title3
     </div>
     <div>
       <span
-        className="c12"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kZoBvC"
       >
         <div
-          className="c0"
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
           direction="column"
         >
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Positive value
             </div>
             <div>
               <span
-                className="c4"
+                className="Development__StyledDevelopment-hnn1ri-0 fTxyUg"
                 value={5.4}
               >
                 <span
@@ -1171,17 +795,17 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
             </div>
           </div>
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Zero value
             </div>
             <div>
               <span
-                className="c5"
+                className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
                 value={0}
               >
                 <span
@@ -1193,17 +817,17 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
             </div>
           </div>
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Negative value
             </div>
             <div>
               <span
-                className="c6"
+                className="Development__StyledDevelopment-hnn1ri-0 dSohiW"
                 value={-2.1}
               >
                 <span
@@ -1219,34 +843,34 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       hero
     </div>
     <div>
       <span
-        className="c13"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 lmsdTq"
       >
         <div
-          className="c0"
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
           direction="column"
         >
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Positive value
             </div>
             <div>
               <span
-                className="c4"
+                className="Development__StyledDevelopment-hnn1ri-0 fTxyUg"
                 value={5.4}
               >
                 <span
@@ -1258,17 +882,17 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
             </div>
           </div>
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Zero value
             </div>
             <div>
               <span
-                className="c5"
+                className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
                 value={0}
               >
                 <span
@@ -1280,17 +904,17 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
             </div>
           </div>
           <div
-            className="c1"
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
             direction="row"
           >
             <div
-              className="c2"
+              className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
             >
               Negative value
             </div>
             <div>
               <span
-                className="c6"
+                className="Development__StyledDevelopment-hnn1ri-0 dSohiW"
                 value={-2.1}
               >
                 <span
@@ -1309,83 +933,22 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
 `;
 
 exports[`Storyshots Organisms | Development Regression: infinity 1`] = `
-.c3 {
-  color: #282823;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       +Infinity
     </div>
     <div>
       <span
-        className="c3"
+        className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
         value={Infinity}
       >
         <span
@@ -1396,17 +959,17 @@ exports[`Storyshots Organisms | Development Regression: infinity 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       -Infinity
     </div>
     <div>
       <span
-        className="c3"
+        className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
         value={-Infinity}
       >
         <span
@@ -1420,87 +983,22 @@ exports[`Storyshots Organisms | Development Regression: infinity 1`] = `
 `;
 
 exports[`Storyshots Organisms | Development Regression: value is non-zero, but rounded value is 0 1`] = `
-.c3 {
-  color: #282823;
-}
-
-.c4 {
-  color: #FF1900;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       \`value = 0.3\` and decimals = 0
     </div>
     <div>
       <span
-        className="c3"
+        className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
         value={0}
       >
         <span
@@ -1512,17 +1010,17 @@ exports[`Storyshots Organisms | Development Regression: value is non-zero, but r
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       \`value = -0.3 and decimals = 0\`
     </div>
     <div>
       <span
-        className="c3"
+        className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
         value={-0}
       >
         <span
@@ -1534,17 +1032,17 @@ exports[`Storyshots Organisms | Development Regression: value is non-zero, but r
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       \`value = -1.3123 and decimals = 3\`
     </div>
     <div>
       <span
-        className="c4"
+        className="Development__StyledDevelopment-hnn1ri-0 dSohiW"
         value={-1.312}
       >
         <span
@@ -1556,17 +1054,17 @@ exports[`Storyshots Organisms | Development Regression: value is non-zero, but r
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       \`value = -0.3 and maximumDecimals = 0\`
     </div>
     <div>
       <span
-        className="c3"
+        className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
         value={-0}
       >
         <span
@@ -1578,17 +1076,17 @@ exports[`Storyshots Organisms | Development Regression: value is non-zero, but r
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       \`value = 0.3\`
     </div>
     <div>
       <span
-        className="c3"
+        className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
         value={0}
       >
         <span
@@ -1603,91 +1101,22 @@ exports[`Storyshots Organisms | Development Regression: value is non-zero, but r
 `;
 
 exports[`Storyshots Organisms | Development With icon 1`] = `
-.c3 {
-  color: #00D200;
-}
-
-.c4 {
-  color: #282823;
-}
-
-.c5 {
-  color: #FF1900;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Positive value
     </div>
     <div>
       <span
-        className="c3"
+        className="Development__StyledDevelopment-hnn1ri-0 fTxyUg"
         value={50}
       >
         <span
@@ -1701,17 +1130,17 @@ exports[`Storyshots Organisms | Development With icon 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Zero value
     </div>
     <div>
       <span
-        className="c4"
+        className="Development__StyledDevelopment-hnn1ri-0 fPVylT"
         value={0}
       >
         <span
@@ -1725,17 +1154,17 @@ exports[`Storyshots Organisms | Development With icon 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Negative value
     </div>
     <div>
       <span
-        className="c5"
+        className="Development__StyledDevelopment-hnn1ri-0 dSohiW"
         value={-200}
       >
         <span

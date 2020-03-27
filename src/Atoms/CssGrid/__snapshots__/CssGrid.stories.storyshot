@@ -1,64 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Atoms | CssGrid Conditionally hidden: WRONG way [hidden] 1`] = `
-.c0 {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-areas: "left top top" "left content content";
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  display: -ms-grid;
-  -ms-grid-rows: auto 20px auto;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-}
-
-.c1 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 3;
-  display: block;
-  grid-area: left;
-}
-
-.c3 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: content;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
 <div
-  className="c0"
+  className="CssGrid__StyledDiv-bu5cxy-0 fVxASH"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm bUoTpk"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Left
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm ksQTna"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Content
     </div>
@@ -67,75 +26,23 @@ exports[`Storyshots Atoms | CssGrid Conditionally hidden: WRONG way [hidden] 1`]
 `;
 
 exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [hidden] 1`] = `
-.c0 {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-areas: "left top top" "left content content";
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  display: -ms-grid;
-  -ms-grid-rows: auto 20px auto;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-}
-
-.c1 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 3;
-  display: block;
-  grid-area: left;
-}
-
-.c3 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: top;
-}
-
-.c4 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: content;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
 <div
-  className="c0"
+  className="CssGrid__StyledDiv-bu5cxy-0 fVxASH"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm bUoTpk"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Left
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm kaIqfW"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       <div>
         This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
@@ -143,10 +50,10 @@ exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [hidden] 1`] 
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm ksQTna"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Content
     </div>
@@ -155,71 +62,23 @@ exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [hidden] 1`] 
 `;
 
 exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [shown] 1`] = `
-.c0 {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-areas: "left content content";
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  display: -ms-grid;
-  -ms-grid-rows: auto;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-}
-
-.c1 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: left;
-}
-
-.c3 {
-  box-sizing: border-box;
-  min-width: 0;
-  display: none;
-  grid-area: none;
-}
-
-.c4 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: content;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
 <div
-  className="c0"
+  className="CssGrid__StyledDiv-bu5cxy-0 exhgmq"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm jdUBvW"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Left
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm eHQBKw"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       <div>
         This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
@@ -227,10 +86,10 @@ exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [shown] 1`] =
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm idSHvI"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Content
     </div>
@@ -239,104 +98,41 @@ exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [shown] 1`] =
 `;
 
 exports[`Storyshots Atoms | CssGrid CssGrid with custom gutter 1`] = `
-.c0 {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-areas: "left top sidebar" "left content sidebar" "left content sidebar";
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 0px;
-  display: -ms-grid;
-  -ms-grid-rows: 1fr 0px 1fr 0px 1fr;
-  -ms-grid-columns: 1fr 0px 1fr 0px 1fr;
-}
-
-.c1 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 5;
-  display: block;
-  grid-area: left;
-}
-
-.c3 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: top;
-}
-
-.c4 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 3;
-  display: block;
-  grid-area: content;
-}
-
-.c5 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 5;
-  display: block;
-  grid-area: sidebar;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
 <div
-  className="c0"
+  className="CssGrid__StyledDiv-bu5cxy-0 jrjinV"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm dMkyia"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Left
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm cpaVPY"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Top
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm hGPGzG"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Content
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm dUdgNj"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Sidebar
     </div>
@@ -345,104 +141,41 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom gutter 1`] = `
 `;
 
 exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
-.c0 {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-areas: "left top sidebar" "left content sidebar" "left content sidebar";
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 25fr 50fr 25fr;
-  grid-gap: 20px;
-  display: -ms-grid;
-  -ms-grid-rows: 1fr 20px 1fr 20px 1fr;
-  -ms-grid-columns: 25fr 20px 50fr 20px 25fr;
-}
-
-.c1 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 5;
-  display: block;
-  grid-area: left;
-}
-
-.c3 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: top;
-}
-
-.c4 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 3;
-  display: block;
-  grid-area: content;
-}
-
-.c5 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 5;
-  display: block;
-  grid-area: sidebar;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
 <div
-  className="c0"
+  className="CssGrid__StyledDiv-bu5cxy-0 VlCaH"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm dMkyia"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Left
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm cpaVPY"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Top
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm hGPGzG"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Content
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm dUdgNj"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Sidebar
     </div>
@@ -451,160 +184,41 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
 `;
 
 exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different screen sizes 1`] = `
-.c0 {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-areas: "top top" "left sidebar" "content sidebar";
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 50fr 50fr;
-  grid-gap: 20px;
-  display: -ms-grid;
-  -ms-grid-rows: 1fr 20px 1fr 20px 1fr;
-  -ms-grid-columns: 50fr 20px 50fr;
-}
-
-.c1 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: left;
-}
-
-.c3 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: top;
-}
-
-.c4 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: content;
-}
-
-.c5 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 3;
-  display: block;
-  grid-area: sidebar;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
-@media (min-width:760px) {
-  .c0 {
-    grid-template-areas: "left top sidebar" "left content sidebar" "left content sidebar";
-    grid-template-rows: auto 1fr 1fr;
-    grid-template-columns: 25fr 50fr 25fr;
-    grid-gap: 20px;
-    display: -ms-grid;
-    -ms-grid-rows: auto 20px 1fr 20px 1fr;
-    -ms-grid-columns: 25fr 20px 50fr 20px 25fr;
-  }
-}
-
-@media (min-width:760px) {
-  .c1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    -ms-grid-row-span: 5;
-    display: block;
-    grid-area: left;
-  }
-}
-
-@media (min-width:760px) {
-  .c3 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    -ms-grid-row-span: 1;
-    display: block;
-    grid-area: top;
-  }
-}
-
-@media (min-width:760px) {
-  .c4 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    -ms-grid-row-span: 3;
-    display: block;
-    grid-area: content;
-  }
-}
-
-@media (min-width:760px) {
-  .c5 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 1;
-    -ms-grid-row-span: 5;
-    display: block;
-    grid-area: sidebar;
-  }
-}
-
 <div
-  className="c0"
+  className="CssGrid__StyledDiv-bu5cxy-0 bYJZKG"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm fKuWIB"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Left
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm edzhVj"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Top
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm OPFnV"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Content
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm ftqBnt"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Sidebar
     </div>
@@ -613,103 +227,41 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
 `;
 
 exports[`Storyshots Atoms | CssGrid CssGrid with minmax() 1`] = `
-.c0 {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-areas: "left top sidebar" "left content sidebar";
-  grid-template-columns: 1fr minmax(30ch,2fr) 1fr;
-  grid-gap: 20px;
-  display: -ms-grid;
-  -ms-grid-rows: 1fr 20px 1fr;
-  -ms-grid-columns: 1fr 20px minmax(30ch,2fr) 20px 1fr;
-}
-
-.c1 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 3;
-  display: block;
-  grid-area: left;
-}
-
-.c3 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: top;
-}
-
-.c4 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: content;
-}
-
-.c5 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 3;
-  display: block;
-  grid-area: sidebar;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
 <div
-  className="c0"
+  className="CssGrid__StyledDiv-bu5cxy-0 ggxZDp"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm bUoTpk"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Left
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm cpaVPY"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Top
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm bobjew"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Content
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm iCYbbp"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Sidebar
     </div>
@@ -718,146 +270,59 @@ exports[`Storyshots Atoms | CssGrid CssGrid with minmax() 1`] = `
 `;
 
 exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom sized columns 1`] = `
-.c0 {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-areas: "left top messages" "left top order" "left top sidebar" "left top sidebar" "left content sidebar";
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 2fr 1fr;
-  -webkit-column-gap: 16px;
-  column-gap: 16px;
-  row-gap: 24px;
-  display: -ms-grid;
-  -ms-grid-rows: 1fr 24px 1fr 24px 1fr;
-  -ms-grid-columns: 1fr 16px 2fr 16px 1fr;
-}
-
-.c1 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 9;
-  display: block;
-  grid-area: left;
-}
-
-.c3 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 7;
-  display: block;
-  grid-area: top;
-}
-
-.c4 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 9;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: content;
-}
-
-.c5 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: messages;
-}
-
-.c6 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: order;
-}
-
-.c7 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 5;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 5;
-  display: block;
-  grid-area: sidebar;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
 <div
-  className="c0"
+  className="CssGrid__StyledDiv-bu5cxy-0 jlWxIs"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm epSNJG"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Left
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm huZzFu"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Top
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm evJVcK"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Content
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm goOQIB"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Messages
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c6"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm fgviax"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Order
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c7"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm eJpAVL"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Sidebar
     </div>
@@ -866,297 +331,113 @@ exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom siz
 `;
 
 exports[`Storyshots Atoms | CssGrid Items With Different Placements 1`] = `
-.c0 {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-areas: "alignStart alignCenter alignStretch alignEnd" "justifyStart justifyCenter justifyStretch justifyEnd" "placeStart placeCenter placeStretch placeEnd";
-  grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 100px 100px 100px 100px;
-  grid-gap: 20px;
-  display: -ms-grid;
-  -ms-grid-rows: 100px 20px 100px 20px 100px;
-  -ms-grid-columns: 100px 20px 100px 20px 100px 20px 100px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  min-width: 0;
-  -webkit-align-self: start;
-  -ms-flex-item-align: start;
-  align-self: start;
-  -ms-grid-row-align: start;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: alignStart;
-}
-
-.c3 {
-  box-sizing: border-box;
-  min-width: 0;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -ms-grid-row-align: center;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: alignCenter;
-}
-
-.c4 {
-  box-sizing: border-box;
-  min-width: 0;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  -ms-grid-row-align: stretch;
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: alignStretch;
-}
-
-.c5 {
-  box-sizing: border-box;
-  min-width: 0;
-  -webkit-align-self: end;
-  -ms-flex-item-align: end;
-  align-self: end;
-  -ms-grid-row-align: end;
-  -ms-grid-row: 1;
-  -ms-grid-column: 7;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: alignEnd;
-}
-
-.c6 {
-  box-sizing: border-box;
-  min-width: 0;
-  justify-self: start;
-  -ms-grid-column-align: start;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: justifyStart;
-}
-
-.c7 {
-  box-sizing: border-box;
-  min-width: 0;
-  justify-self: center;
-  -ms-grid-column-align: center;
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: justifyCenter;
-}
-
-.c8 {
-  box-sizing: border-box;
-  min-width: 0;
-  justify-self: stretch;
-  -ms-grid-column-align: stretch;
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: justifyStretch;
-}
-
-.c9 {
-  box-sizing: border-box;
-  min-width: 0;
-  justify-self: end;
-  -ms-grid-column-align: end;
-  -ms-grid-row: 3;
-  -ms-grid-column: 7;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: justifyEnd;
-}
-
-.c10 {
-  box-sizing: border-box;
-  min-width: 0;
-  place-self: start;
-  -ms-grid-row-align: start;
-  -ms-grid-column-align: start;
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: placeStart;
-}
-
-.c11 {
-  box-sizing: border-box;
-  min-width: 0;
-  place-self: center;
-  -ms-grid-row-align: center;
-  -ms-grid-column-align: center;
-  -ms-grid-row: 5;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: placeCenter;
-}
-
-.c12 {
-  box-sizing: border-box;
-  min-width: 0;
-  place-self: stretch;
-  -ms-grid-row-align: stretch;
-  -ms-grid-column-align: stretch;
-  -ms-grid-row: 5;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: placeStretch;
-}
-
-.c13 {
-  box-sizing: border-box;
-  min-width: 0;
-  place-self: end;
-  -ms-grid-row-align: end;
-  -ms-grid-column-align: end;
-  -ms-grid-row: 5;
-  -ms-grid-column: 7;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: placeEnd;
-}
-
-.c2 {
-  background-color: #F5F5F5;
-}
-
 <div
-  className="c0"
+  className="CssGrid__StyledDiv-bu5cxy-0 kmYAyA"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm iKTBxP"
   >
     <div
-      className="c2"
+      className="CssGridstories__BgContent-sc-1pgrjiv-1 gABIIE"
     >
       left
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm dRscDi"
   >
     <div
-      className="c2"
+      className="CssGridstories__BgContent-sc-1pgrjiv-1 gABIIE"
     >
       center
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm hGroao"
   >
     <div
-      className="c2"
+      className="CssGridstories__BgContent-sc-1pgrjiv-1 gABIIE"
     >
       stretch
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm hCAkLi"
   >
     <div
-      className="c2"
+      className="CssGridstories__BgContent-sc-1pgrjiv-1 gABIIE"
     >
       end
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c6"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm dwASFp"
   >
     <div
-      className="c2"
+      className="CssGridstories__BgContent-sc-1pgrjiv-1 gABIIE"
     >
       left
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c7"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm eIzdfE"
   >
     <div
-      className="c2"
+      className="CssGridstories__BgContent-sc-1pgrjiv-1 gABIIE"
     >
       center
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c8"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm hYpYoy"
   >
     <div
-      className="c2"
+      className="CssGridstories__BgContent-sc-1pgrjiv-1 gABIIE"
     >
       stretch
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c9"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm cafqkk"
   >
     <div
-      className="c2"
+      className="CssGridstories__BgContent-sc-1pgrjiv-1 gABIIE"
     >
       end
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c10"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm eufNyN"
   >
     <div
-      className="c2"
+      className="CssGridstories__BgContent-sc-1pgrjiv-1 gABIIE"
     >
       left
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c11"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm dkvDtP"
   >
     <div
-      className="c2"
+      className="CssGridstories__BgContent-sc-1pgrjiv-1 gABIIE"
     >
       center
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c12"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm kXzRWJ"
   >
     <div
-      className="c2"
+      className="CssGridstories__BgContent-sc-1pgrjiv-1 gABIIE"
     >
       stretch
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c13"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm ljFBL"
   >
     <div
-      className="c2"
+      className="CssGridstories__BgContent-sc-1pgrjiv-1 gABIIE"
     >
       end
     </div>
@@ -1165,75 +446,23 @@ exports[`Storyshots Atoms | CssGrid Items With Different Placements 1`] = `
 `;
 
 exports[`Storyshots Atoms | CssGrid Items with different placements 1`] = `
-.c0 {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-areas: "left top top" "left content content";
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  display: -ms-grid;
-  -ms-grid-rows: auto 20px auto;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-}
-
-.c1 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 3;
-  display: block;
-  grid-area: left;
-}
-
-.c3 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: top;
-}
-
-.c4 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: content;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
 <div
-  className="c0"
+  className="CssGrid__StyledDiv-bu5cxy-0 fVxASH"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm bUoTpk"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Left
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm kaIqfW"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       <div>
         This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
@@ -1241,10 +470,10 @@ exports[`Storyshots Atoms | CssGrid Items with different placements 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm ksQTna"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Content
     </div>
@@ -1253,130 +482,23 @@ exports[`Storyshots Atoms | CssGrid Items with different placements 1`] = `
 `;
 
 exports[`Storyshots Atoms | CssGrid Shown on md+, hidden on small screens 1`] = `
-.c0 {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-areas: "left content content" "left content content";
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  display: -ms-grid;
-  -ms-grid-rows: auto 20px auto;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-}
-
-.c1 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 3;
-  display: block;
-  grid-area: left;
-}
-
-.c3 {
-  box-sizing: border-box;
-  min-width: 0;
-  display: none;
-  grid-area: none;
-}
-
-.c4 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
-  -ms-grid-row-span: 3;
-  display: block;
-  grid-area: content;
-}
-
-.c5 {
-  box-sizing: border-box;
-  min-width: 0;
-  display: none;
-  grid-area: none;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
-@media (min-width:976px) {
-  .c0 {
-    grid-template-areas: "left" "top" "content";
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    display: -ms-grid;
-    -ms-grid-rows: auto 20px auto;
-    -ms-grid-columns: 1fr;
-  }
-}
-
-@media (min-width:976px) {
-  .c1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    -ms-grid-row-span: 1;
-    display: block;
-    grid-area: left;
-  }
-}
-
-@media (min-width:976px) {
-  .c3 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    -ms-grid-row-span: 1;
-    display: block;
-    grid-area: top;
-  }
-}
-
-@media (min-width:976px) {
-  .c4 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    -ms-grid-row-span: 1;
-    display: block;
-    grid-area: content;
-  }
-}
-
-@media (min-width:976px) {
-  .c5 {
-    display: none;
-    grid-area: none;
-  }
-}
-
 <div
-  className="c0"
+  className="CssGrid__StyledDiv-bu5cxy-0 kaaaEA"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm cNUivk"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Left
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm ejcPtG"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       <div>
         This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
@@ -1384,19 +506,19 @@ exports[`Storyshots Atoms | CssGrid Shown on md+, hidden on small screens 1`] = 
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm gJcQAc"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Content
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm kUbdJG"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       something that doesn‘t exist
     </div>
@@ -1405,130 +527,23 @@ exports[`Storyshots Atoms | CssGrid Shown on md+, hidden on small screens 1`] = 
 `;
 
 exports[`Storyshots Atoms | CssGrid Shown on small screen sizes, hidden on md+ 1`] = `
-.c0 {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-areas: "left top top" "left content content";
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  display: -ms-grid;
-  -ms-grid-rows: auto 20px auto;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-}
-
-.c1 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 3;
-  display: block;
-  grid-area: left;
-}
-
-.c3 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: top;
-}
-
-.c4 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: content;
-}
-
-.c5 {
-  box-sizing: border-box;
-  min-width: 0;
-  display: none;
-  grid-area: none;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
-@media (min-width:976px) {
-  .c0 {
-    grid-template-areas: "left" "content";
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    display: -ms-grid;
-    -ms-grid-rows: auto 20px auto;
-    -ms-grid-columns: 1fr;
-  }
-}
-
-@media (min-width:976px) {
-  .c1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    -ms-grid-row-span: 1;
-    display: block;
-    grid-area: left;
-  }
-}
-
-@media (min-width:976px) {
-  .c3 {
-    display: none;
-    grid-area: none;
-  }
-}
-
-@media (min-width:976px) {
-  .c4 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    -ms-grid-row-span: 1;
-    display: block;
-    grid-area: content;
-  }
-}
-
-@media (min-width:976px) {
-  .c5 {
-    display: none;
-    grid-area: none;
-  }
-}
-
 <div
-  className="c0"
+  className="CssGrid__StyledDiv-bu5cxy-0 igXuzL"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm cNUivk"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Left
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm eHZoYg"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       <div>
         This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
@@ -1536,19 +551,19 @@ exports[`Storyshots Atoms | CssGrid Shown on small screen sizes, hidden on md+ 1
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm kAEOWS"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Content
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm kUbdJG"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       something that doesn‘t exist
     </div>
@@ -1557,124 +572,50 @@ exports[`Storyshots Atoms | CssGrid Shown on small screen sizes, hidden on md+ 1
 `;
 
 exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
-.c0 {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-areas: "header header header" "menu content ads" "footer footer footer";
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  display: -ms-grid;
-  -ms-grid-rows: 1fr 20px 1fr 20px 1fr;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-}
-
-.c1 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: header;
-}
-
-.c3 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: content;
-}
-
-.c4 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: menu;
-}
-
-.c5 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: ads;
-}
-
-.c6 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: footer;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
 <div
-  className="c0"
+  className="CssGrid__StyledDiv-bu5cxy-0 hkwpmT"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm iitozW"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Header
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm bobjew"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Content
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm iTRrDA"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Menu
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm iZcbfB"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Ads
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c6"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-AxjAm kjEPlU"
   >
     <div
-      className="c2"
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 ianIXz"
     >
       Footer
     </div>

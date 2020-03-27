@@ -1,51 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | LinkSell LinkSell 1`] = `
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  display: inline;
-  padding: 0;
-  color: #0046FF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c0:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c1 {
-  color: #FF1900;
-  padding: 2px 4px;
-}
-
-.c1:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #FFFFFF;
-  background-color: #FF1900;
-}
-
-.c1:active {
-  background-color: hsl(5.899999999999977,100%,35%);
-}
-
 <a
-  className="c0 c1"
+  className="Link__StyledLink-apj04t-0 ixkkIR LinkSell__StyledLink-c5ecjk-0 kjvaTR"
   href="/somewhere"
   onClick={[Function]}
 >
   <span
-    className="c2"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
   >
     Sell
   </span>
@@ -53,31 +15,12 @@ exports[`Storyshots Molecules | LinkSell LinkSell 1`] = `
 `;
 
 exports[`Storyshots Molecules | LinkSell LinkSell disabled 1`] = `
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  color: #A0A09B;
-  padding: 2px 4px;
-}
-
-.c0:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 <span
-  className="c0"
+  className="LinkSell__StyledLink-c5ecjk-0 Gelnm"
   disabled={true}
 >
   <span
-    className="c1"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
   >
     Sell
   </span>
@@ -85,52 +28,14 @@ exports[`Storyshots Molecules | LinkSell LinkSell disabled 1`] = `
 `;
 
 exports[`Storyshots Molecules | LinkSell LinkSell with rel as nofollow 1`] = `
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  display: inline;
-  padding: 0;
-  color: #0046FF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c0:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c1 {
-  color: #FF1900;
-  padding: 2px 4px;
-}
-
-.c1:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #FFFFFF;
-  background-color: #FF1900;
-}
-
-.c1:active {
-  background-color: hsl(5.899999999999977,100%,35%);
-}
-
 <a
-  className="c0 c1"
+  className="Link__StyledLink-apj04t-0 ixkkIR LinkSell__StyledLink-c5ecjk-0 kjvaTR"
   href="/somewhere"
   onClick={[Function]}
   rel="nofollow"
 >
   <span
-    className="c2"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
   >
     Sell
   </span>

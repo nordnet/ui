@@ -1,157 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Atoms | Typography All 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 46px;
-  line-height: 1.0434782608695652;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1.6;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 48px;
-    line-height: 1.0833333333333333;
-  }
-}
-
-@media (min-width:760px) {
-  .c2 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-@media (min-width:760px) {
-  .c3 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
-  .c4 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
 <div
-  className="c0"
+  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 iopGic"
 >
   <span
-    className="c1"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 lmsdTq"
   >
     Hero 48/52px extrabold (46/48px mobile)
   </span>
   <span
-    className="c2"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
   >
     Title1 28/32px extrabold (24/28px mobile)
   </span>
   <span
-    className="c3"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ekyJLf"
   >
     Title2 24/28px extrabold (20/24px mobile)
   </span>
   <span
-    className="c4"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kZoBvC"
   >
     Title3 20/24px extrabold (18/24px mobile)
   </span>
   <span
-    className="c5"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
   >
     Primary 16/24px regular
   </span>
   <span
-    className="c6"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     Secondary 14/20px regular
   </span>
   <span
-    className="c7"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 cHzAen"
   >
     Tertiary 12/16px regular
   </span>
   <span
-    className="c8"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ejTVkr"
   >
     Caption 10/16px regular
   </span>
@@ -159,114 +48,39 @@ exports[`Storyshots Atoms | Typography All 1`] = `
 `;
 
 exports[`Storyshots Atoms | Typography Caption 1`] = `
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1.6;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 1.6;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Caption Default
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ejTVkr"
       >
         Caption text
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Caption with bold text
     </div>
     <div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jVEIlU"
       >
         Caption bold text
       </span>
@@ -276,235 +90,124 @@ exports[`Storyshots Atoms | Typography Caption 1`] = `
 `;
 
 exports[`Storyshots Atoms | Typography Colors 1`] = `
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #00D200;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FF1900;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFCF00;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #0046FF;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Default
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
       >
         Default
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Color: text
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
       >
         Text
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Color: positive
     </div>
     <div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 gAaOtF"
       >
         Positive
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Color: negative
     </div>
     <div>
       <span
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ciUkzX"
       >
         Negative
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Color: warning
     </div>
     <div>
       <span
-        className="c6"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 cpSA-dm"
       >
         Warning
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Color: cta
     </div>
     <div>
       <span
-        className="c7"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 deXNHR"
       >
         CTA
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Color: label
     </div>
     <div>
       <span
-        className="c8"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 blJBCc"
       >
         Label
       </span>
@@ -514,128 +217,39 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
 `;
 
 exports[`Storyshots Atoms | Typography Hero 1`] = `
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 46px;
-  line-height: 1.0434782608695652;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 46px;
-  line-height: 1.0434782608695652;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-  .c3 {
-    font-size: 48px;
-    line-height: 1.0833333333333333;
-  }
-}
-
-@media (min-width:760px) {
-  .c4 {
-    font-size: 48px;
-    line-height: 1.0833333333333333;
-  }
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Hero Default
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 lmsdTq"
       >
         Hero text
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       With bold font weight
     </div>
     <div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bFluzx"
       >
         Hero text
       </span>
@@ -645,140 +259,56 @@ exports[`Storyshots Atoms | Typography Hero 1`] = `
 `;
 
 exports[`Storyshots Atoms | Typography Primary 1`] = `
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Primary default
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
       >
         Primary text
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Primary with bold text
     </div>
     <div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 lhwrhZ"
       >
         Primary bold text
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Primary with extrabold text
     </div>
     <div>
       <span
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fNdzfm"
       >
         Primary extrabold text
       </span>
@@ -788,114 +318,39 @@ exports[`Storyshots Atoms | Typography Primary 1`] = `
 `;
 
 exports[`Storyshots Atoms | Typography Secondary 1`] = `
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Secondary
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         Secondary text
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Secondary with bold text
     </div>
     <div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
       >
         Secondary bold text
       </span>
@@ -905,114 +360,39 @@ exports[`Storyshots Atoms | Typography Secondary 1`] = `
 `;
 
 exports[`Storyshots Atoms | Typography Tertiary 1`] = `
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Tertiary Default
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 cHzAen"
       >
         Tertiary text
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Tertiary with bold text
     </div>
     <div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hbYQjk"
       >
         Tertiary bold text
       </span>
@@ -1022,161 +402,56 @@ exports[`Storyshots Atoms | Typography Tertiary 1`] = `
 `;
 
 exports[`Storyshots Atoms | Typography Title1 1`] = `
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-  .c3 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-@media (min-width:760px) {
-  .c4 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-@media (min-width:760px) {
-  .c5 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Title1 Default
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
       >
         Title1 text
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       With regular font weight
     </div>
     <div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 izNqMi"
       >
         Title1 text
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       With bold font weight
     </div>
     <div>
       <span
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 cTDHKJ"
       >
         Title1 text
       </span>
@@ -1186,161 +461,56 @@ exports[`Storyshots Atoms | Typography Title1 1`] = `
 `;
 
 exports[`Storyshots Atoms | Typography Title2 1`] = `
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-  .c3 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
-  .c4 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
-  .c5 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Title2 Default
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ekyJLf"
       >
         Title2 text
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       With regular font weight
     </div>
     <div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kyOJwn"
       >
         Title2 text
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       With bold font weight
     </div>
     <div>
       <span
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dDSqco"
       >
         Title2 text
       </span>
@@ -1350,161 +520,56 @@ exports[`Storyshots Atoms | Typography Title2 1`] = `
 `;
 
 exports[`Storyshots Atoms | Typography Title3 1`] = `
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-  .c3 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-@media (min-width:760px) {
-  .c4 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-@media (min-width:760px) {
-  .c5 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Title3 Default
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kZoBvC"
       >
         Title3 text
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       With regular font weight
     </div>
     <div>
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ixctIe"
       >
         Title3 text
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       With bold font weight
     </div>
     <div>
       <span
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 cQSKGF"
       >
         Title3 text
       </span>
@@ -1514,89 +579,23 @@ exports[`Storyshots Atoms | Typography Title3 1`] = `
 `;
 
 exports[`Storyshots Atoms | Typography aria attributes 1`] = `
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       with aria-hidden
     </div>
     <div>
       <span
         aria-hidden={true}
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
       >
         I'm hidden
       </span>

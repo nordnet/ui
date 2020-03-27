@@ -2,60 +2,18 @@
 
 exports[`Storyshots Atoms | Media Basic usage 1`] = `
 Array [
-  @media not all and (max-width:975px) {
-  .c0 {
-    display: none;
-  }
-}
-
-@media not all and (min-width:976px) and (max-width:1279px) {
-
-}
-
-@media not all and (min-width:1280px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Media__StyledDiv-sc-1dic02p-0 gfbduZ"
   >
     I am only shown on screens smaller than medium size
   </div>,
-  @media not all and (max-width:975px) {
-
-}
-
-@media not all and (min-width:976px) and (max-width:1279px) {
-  .c0 {
-    display: none;
-  }
-}
-
-@media not all and (min-width:1280px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Media__StyledDiv-sc-1dic02p-0 zFAPW"
   >
     I am only shown between medium and large sizes
   </div>,
-  @media not all and (max-width:975px) {
-
-}
-
-@media not all and (min-width:976px) and (max-width:1279px) {
-
-}
-
-@media not all and (min-width:1280px) {
-  .c0 {
-    display: none;
-  }
-}
-
-<div
-    className="c0"
+  <div
+    className="Media__StyledDiv-sc-1dic02p-0 jpzWT"
   >
     I am only shown on screens bigger than large size
   </div>,
@@ -64,60 +22,18 @@ Array [
 
 exports[`Storyshots Atoms | Media With size key 1`] = `
 Array [
-  @media not all and (max-width:975px) {
-  .c0 {
-    display: none;
-  }
-}
-
-@media not all and (min-width:976px) and (max-width:1279px) {
-
-}
-
-@media not all and (min-width:1280px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Media__StyledDiv-sc-1dic02p-0 gfbduZ"
   >
     I am only shown on screens smaller than medium size
   </div>,
-  @media not all and (max-width:975px) {
-
-}
-
-@media not all and (min-width:976px) and (max-width:1279px) {
-  .c0 {
-    display: none;
-  }
-}
-
-@media not all and (min-width:1280px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Media__StyledDiv-sc-1dic02p-0 zFAPW"
   >
     I am only shown between medium and large sizes
   </div>,
-  @media not all and (max-width:975px) {
-
-}
-
-@media not all and (min-width:976px) and (max-width:1279px) {
-
-}
-
-@media not all and (min-width:1280px) {
-  .c0 {
-    display: none;
-  }
-}
-
-<div
-    className="c0"
+  <div
+    className="Media__StyledDiv-sc-1dic02p-0 jpzWT"
   >
     I am only shown on screens bigger than large size
   </div>,

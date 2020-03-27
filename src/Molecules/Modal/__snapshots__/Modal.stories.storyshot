@@ -1,163 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Modal Default 1`] = `
-.c6 {
-  margin-bottom: 8px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c10 {
-  stroke: #6E6E69;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c4 {
-  padding-right: 16px;
-}
-
-.c2 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 500;
-}
-
-.c8 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-  position: absolute;
-  -webkit-transform: translateY(3px);
-  -ms-transform: translateY(3px);
-  transform: translateY(3px);
-  top: 20px;
-  right: 20px;
-}
-
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c3 {
-  padding-bottom: 16px;
-  padding-right: 28px;
-  min-height: 20px;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.c0 {
-  background-image: linear-gradient(#00D200,#FF1900);
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 20px;
-  height: 200vh;
-}
-
-@media (min-width:760px) {
-  .c5 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
-  .c2 {
-    background-color: rgba(110,110,105,0.63);
-  }
-}
-
-@media (max-width:759px) {
-
-}
-
-@media (min-width:760px) {
-
-}
-
-@media (min-width:760px) {
-  .c8 {
-    top: 40px;
-    right: 40px;
-  }
-}
-
 <div>
   <button
     onClick={[Function]}
@@ -166,7 +9,7 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
     Open modal
   </button>
   <div
-    className="c0"
+    className="Modalstories__ScrollMaker-sc-70fm6s-0 jXCFNb"
   />
   <portal-dummy>
     <div
@@ -210,51 +53,51 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
         onWheelCapture={[Function]}
       >
         <div
-          className="c1 c2"
+          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs ModalInner__Backdrop-sc-1ghkydj-0 eMTTpE"
         >
           <div>
             <div
-              className="c3"
+              className="ModalInner__Header-sc-1ghkydj-3 eETGhq"
             >
               <span
                 id="5val-ModalTitle"
               >
                 <h2
-                  className="c4 c5"
+                  className="Title__H2-sc-1ls1ckn-0 kYuiJU Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ekyJLf"
                 >
                   Dialog information
                 </h2>
               </span>
             </div>
             <div
-              className="c6"
+              className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
             >
               <p
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
               </p>
             </div>
             <div
-              className="c6"
+              className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
             >
               <p
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
               >
                 That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
               </p>
             </div>
             <div
-              className="c6"
+              className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
             >
               <p
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
               >
                 Nielsen/Norman has an excellent article about their usage here
               </p>
             </div>
             <p
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
             >
               <a
                 href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
@@ -263,20 +106,20 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
               </a>
             </p>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c8"
+              className="NormalizedButton__Button-ey7f5x-0 ModalInner__CloseButton-sc-1ghkydj-2 iqbhId"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c9"
+                className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c10"
+                  className="CrossThin__StyledPath-sc-1a8pgle-0 jFUCAe"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -309,96 +152,6 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | Modal Hide Close button 1`] = `
-.c6 {
-  margin-bottom: 8px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c4 {
-  padding-right: 16px;
-}
-
-.c2 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 500;
-}
-
-.c3 {
-  padding-bottom: 16px;
-  padding-right: 28px;
-  min-height: 20px;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.c0 {
-  background-image: linear-gradient(#00D200,#FF1900);
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 20px;
-  height: 200vh;
-}
-
-@media (min-width:760px) {
-  .c5 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
-  .c2 {
-    background-color: rgba(110,110,105,0.63);
-  }
-}
-
-@media (max-width:759px) {
-
-}
-
-@media (min-width:760px) {
-
-}
-
 <div>
   <button
     onClick={[Function]}
@@ -407,7 +160,7 @@ exports[`Storyshots Molecules | Modal Hide Close button 1`] = `
     Open modal
   </button>
   <div
-    className="c0"
+    className="Modalstories__ScrollMaker-sc-70fm6s-0 jXCFNb"
   />
   <portal-dummy>
     <div
@@ -451,27 +204,27 @@ exports[`Storyshots Molecules | Modal Hide Close button 1`] = `
         onWheelCapture={[Function]}
       >
         <div
-          className="c1 c2"
+          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs ModalInner__Backdrop-sc-1ghkydj-0 eMTTpE"
         >
           <div>
             <div
-              className="c3"
+              className="ModalInner__Header-sc-1ghkydj-3 eETGhq"
             >
               <span
                 id="13val-ModalTitle"
               >
                 <h2
-                  className="c4 c5"
+                  className="Title__H2-sc-1ls1ckn-0 kYuiJU Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ekyJLf"
                 >
                   Dialog information
                 </h2>
               </span>
             </div>
             <div
-              className="c6"
+              className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
             >
               <p
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
               >
                 The close button in the upper right corner is now hidden because the prop hideClose is true.
               </p>
@@ -500,343 +253,6 @@ exports[`Storyshots Molecules | Modal Hide Close button 1`] = `
 `;
 
 exports[`Storyshots Molecules | Modal Integration: Modal with a footer and Button 1`] = `
-.c10 {
-  margin-bottom: 8px;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  min-height: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: auto;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
-  position: relative;
-  position: relative;
-}
-
-.c6::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 52px;
-  position: absolute;
-  left: 0;
-  pointer-events: none;
-  background: transparent;
-  z-index: 1;
-  opacity: 0;
-  top: 0;
-  background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
-}
-
-.c6::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 52px;
-  position: absolute;
-  left: 0;
-  pointer-events: none;
-  background: transparent;
-  z-index: 1;
-  opacity: 0;
-  bottom: 0;
-  background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
-}
-
-.c7 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  min-height: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: auto;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
-  overflow-y: auto;
-}
-
-.c8 {
-  position: relative;
-  overflow-x: hidden;
-}
-
-.c12 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  bottom: 0;
-}
-
-.c9 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  top: 0;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c17 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c18 {
-  stroke: #6E6E69;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c11 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c15 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c14 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c14,
-.c14[type='button'],
-.c14[type='reset'],
-.c14[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c14::-moz-focus-inner,
-.c14[type='button']::-moz-focus-inner,
-.c14[type='reset']::-moz-focus-inner,
-.c14[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c14:-moz-focusring,
-.c14[type='button']:-moz-focusring,
-.c14[type='reset']:-moz-focusring,
-.c14[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c14::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c14:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c14:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c4 {
-  padding-right: 16px;
-}
-
-.c2 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 500;
-}
-
-.c16 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-  position: absolute;
-  -webkit-transform: translateY(3px);
-  -ms-transform: translateY(3px);
-  transform: translateY(3px);
-  top: 20px;
-  right: 20px;
-}
-
-.c16,
-.c16[type='button'],
-.c16[type='reset'],
-.c16[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c16::-moz-focus-inner,
-.c16[type='button']::-moz-focus-inner,
-.c16[type='reset']::-moz-focus-inner,
-.c16[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c16:-moz-focusring,
-.c16[type='button']:-moz-focusring,
-.c16[type='reset']:-moz-focusring,
-.c16[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c3 {
-  padding-bottom: 16px;
-  padding-right: 28px;
-  min-height: 20px;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.c13 {
-  padding-top: 16px;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.c0 {
-  background-image: linear-gradient(#00D200,#FF1900);
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 20px;
-  height: 200vh;
-}
-
-@media (min-width:760px) {
-  .c5 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
-  .c2 {
-    background-color: rgba(110,110,105,0.63);
-  }
-}
-
-@media (max-width:759px) {
-
-}
-
-@media (min-width:760px) {
-
-}
-
-@media (min-width:760px) {
-  .c16 {
-    top: 40px;
-    right: 40px;
-  }
-}
-
 <div>
   <button
     onClick={[Function]}
@@ -845,7 +261,7 @@ exports[`Storyshots Molecules | Modal Integration: Modal with a footer and Butto
     Open modal
   </button>
   <div
-    className="c0"
+    className="Modalstories__ScrollMaker-sc-70fm6s-0 jXCFNb"
   />
   <portal-dummy>
     <div
@@ -889,81 +305,81 @@ exports[`Storyshots Molecules | Modal Integration: Modal with a footer and Butto
         onWheelCapture={[Function]}
       >
         <div
-          className="c1 c2"
+          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs ModalInner__Backdrop-sc-1ghkydj-0 eMTTpE"
         >
           <div>
             <div
-              className="c3"
+              className="ModalInner__Header-sc-1ghkydj-3 eETGhq"
             >
               <span
                 id="7val-ModalTitle"
               >
                 <h2
-                  className="c4 c5"
+                  className="Title__H2-sc-1ls1ckn-0 kYuiJU Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ekyJLf"
                 >
                   Dialog information
                 </h2>
               </span>
             </div>
             <div
-              className="c6"
+              className="FadedScroll__Container-sc-134qq0d-0 xzNjy"
             >
               <div
-                className="c7"
+                className="FadedScroll__Scroller-sc-134qq0d-1 iWgyxh"
               >
                 <div
-                  className="c8"
+                  className="FadedScroll__Content-sc-134qq0d-2 hzHbxu"
                 >
                   <div
-                    className="c9"
+                    className="FadedScroll__IntersectionTop-sc-134qq0d-4 crnks"
                   />
                   <div
-                    className="c10"
+                    className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
                   >
                     <p
-                      className="c11"
+                      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                     </p>
                   </div>
                   <div
-                    className="c10"
+                    className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
                   >
                     <p
-                      className="c11"
+                      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
                     >
                       That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding. That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
                     </p>
                   </div>
                   <div
-                    className="c10"
+                    className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
                   >
                     <p
-                      className="c11"
+                      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                     </p>
                   </div>
                   <div
-                    className="c10"
+                    className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
                   >
                     <p
-                      className="c11"
+                      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                     </p>
                   </div>
                   <div
-                    className="c10"
+                    className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
                   >
                     <p
-                      className="c11"
+                      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
                     >
                       Nielsen/Norman has an excellent article about their usage here
                     </p>
                   </div>
                   <p
-                    className="c11"
+                    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
                   >
                     <a
                       href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
@@ -972,28 +388,28 @@ exports[`Storyshots Molecules | Modal Integration: Modal with a footer and Butto
                     </a>
                   </p>
                   <div
-                    className="c12"
+                    className="FadedScroll__IntersectionBottom-sc-134qq0d-3 bLKvVr"
                   />
                 </div>
               </div>
             </div>
             <div
-              className="c13"
+              className="ModalInner__Footer-sc-1ghkydj-4 iPSwuD"
             >
               <div>
                 <p
-                  className="c11"
+                  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
                 >
                   This is a footer which is a ReactNode, which could e.g. contain a button or only text
                 </p>
                 <button
-                  className="NormalizedButton__Button-ey7f5x-0 c14"
+                  className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kavUlS"
                   onClick={[Function]}
                   type="button"
                 >
                   <span>
                     <span
-                      className="c15"
+                      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
                     >
                       Button
                     </span>
@@ -1002,20 +418,20 @@ exports[`Storyshots Molecules | Modal Integration: Modal with a footer and Butto
               </div>
             </div>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c16"
+              className="NormalizedButton__Button-ey7f5x-0 ModalInner__CloseButton-sc-1ghkydj-2 iqbhId"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c17"
+                className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c18"
+                  className="CrossThin__StyledPath-sc-1a8pgle-0 jFUCAe"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -1048,185 +464,9 @@ exports[`Storyshots Molecules | Modal Integration: Modal with a footer and Butto
 `;
 
 exports[`Storyshots Molecules | Modal Node as Title 1`] = `
-.c7 {
-  margin-bottom: 8px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c4 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c4 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c5 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c10 {
-  stroke: #6E6E69;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c2 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 500;
-}
-
-.c9 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-  position: absolute;
-  -webkit-transform: translateY(3px);
-  -ms-transform: translateY(3px);
-  transform: translateY(3px);
-  top: 20px;
-  right: 20px;
-}
-
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c3 {
-  padding-bottom: 16px;
-  padding-right: 28px;
-  min-height: 20px;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.c0 {
-  background-image: linear-gradient(#00D200,#FF1900);
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 20px;
-  height: 200vh;
-}
-
-@media (min-width:760px) {
-  .c6 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
-  .c2 {
-    background-color: rgba(110,110,105,0.63);
-  }
-}
-
-@media (max-width:759px) {
-
-}
-
-@media (min-width:760px) {
-
-}
-
-@media (min-width:760px) {
-  .c9 {
-    top: 40px;
-    right: 40px;
-  }
-}
-
 <div>
   <div
-    className="c0"
+    className="Modalstories__ScrollMaker-sc-70fm6s-0 jXCFNb"
   />
   <portal-dummy>
     <div
@@ -1270,21 +510,21 @@ exports[`Storyshots Molecules | Modal Node as Title 1`] = `
         onWheelCapture={[Function]}
       >
         <div
-          className="c1 c2"
+          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs ModalInner__Backdrop-sc-1ghkydj-0 eMTTpE"
         >
           <div>
             <div
-              className="c3"
+              className="ModalInner__Header-sc-1ghkydj-3 eETGhq"
             >
               <span
                 id="15val-ModalTitle"
               >
                 <div
-                  className="c4"
+                  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 eJlHQf"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c5"
+                    className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV"
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="presentation"
@@ -1296,13 +536,13 @@ exports[`Storyshots Molecules | Modal Node as Title 1`] = `
                     />
                   </svg>
                   <h2
-                    className="c6"
+                    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ekyJLf"
                   >
                     React Node Title
                   </h2>
                   <svg
                     aria-hidden="true"
-                    className="c5"
+                    className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV"
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="presentation"
@@ -1317,34 +557,34 @@ exports[`Storyshots Molecules | Modal Node as Title 1`] = `
               </span>
             </div>
             <div
-              className="c7"
+              className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
             >
               <p
-                className="c8"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
               </p>
             </div>
             <div
-              className="c7"
+              className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
             >
               <p
-                className="c8"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
               >
                 That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
               </p>
             </div>
             <div
-              className="c7"
+              className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
             >
               <p
-                className="c8"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
               >
                 Nielsen/Norman has an excellent article about their usage here
               </p>
             </div>
             <p
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
             >
               <a
                 href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
@@ -1353,20 +593,20 @@ exports[`Storyshots Molecules | Modal Node as Title 1`] = `
               </a>
             </p>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c9"
+              className="NormalizedButton__Button-ey7f5x-0 ModalInner__CloseButton-sc-1ghkydj-2 iqbhId"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c5"
+                className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c10"
+                  className="CrossThin__StyledPath-sc-1a8pgle-0 jFUCAe"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -1399,166 +639,9 @@ exports[`Storyshots Molecules | Modal Node as Title 1`] = `
 `;
 
 exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
-.c6 {
-  margin-bottom: 8px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c10 {
-  stroke: #6E6E69;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c4 {
-  padding-right: 16px;
-}
-
-.c2 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 500;
-}
-
-.c8 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-  position: absolute;
-  -webkit-transform: translateY(3px);
-  -ms-transform: translateY(3px);
-  transform: translateY(3px);
-  top: 20px;
-  right: 20px;
-}
-
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c3 {
-  padding-bottom: 16px;
-  padding-right: 28px;
-  min-height: 20px;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.c0 {
-  background-image: linear-gradient(#00D200,#FF1900);
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 20px;
-  height: 200vh;
-}
-
-@media (min-width:760px) {
-  .c5 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
-  .c2 {
-    background-color: rgba(110,110,105,0.63);
-  }
-}
-
-@media (max-width:759px) {
-
-}
-
-@media (min-width:760px) {
-
-}
-
-@media (min-width:760px) {
-  .c8 {
-    top: 40px;
-    right: 40px;
-  }
-}
-
 <div>
   <div
-    className="c0"
+    className="Modalstories__ScrollMaker-sc-70fm6s-0 jXCFNb"
   />
   <portal-dummy>
     <div
@@ -1602,51 +685,51 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
         onWheelCapture={[Function]}
       >
         <div
-          className="c1 c2"
+          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs ModalInner__Backdrop-sc-1ghkydj-0 eMTTpE"
         >
           <div>
             <div
-              className="c3"
+              className="ModalInner__Header-sc-1ghkydj-3 eETGhq"
             >
               <span
                 id="11val-ModalTitle"
               >
                 <h2
-                  className="c4 c5"
+                  className="Title__H2-sc-1ls1ckn-0 kYuiJU Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ekyJLf"
                 >
                   Dialog information
                 </h2>
               </span>
             </div>
             <div
-              className="c6"
+              className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
             >
               <p
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
               </p>
             </div>
             <div
-              className="c6"
+              className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
             >
               <p
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
               >
                 That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
               </p>
             </div>
             <div
-              className="c6"
+              className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
             >
               <p
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
               >
                 Nielsen/Norman has an excellent article about their usage here
               </p>
             </div>
             <p
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
             >
               <a
                 href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
@@ -1655,20 +738,20 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
               </a>
             </p>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c8"
+              className="NormalizedButton__Button-ey7f5x-0 ModalInner__CloseButton-sc-1ghkydj-2 iqbhId"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c9"
+                className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c10"
+                  className="CrossThin__StyledPath-sc-1a8pgle-0 jFUCAe"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -1701,143 +784,6 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
 `;
 
 exports[`Storyshots Molecules | Modal Without header 1`] = `
-.c4 {
-  margin-bottom: 8px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c8 {
-  stroke: #6E6E69;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c2 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 500;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-  position: absolute;
-  -webkit-transform: translateY(3px);
-  -ms-transform: translateY(3px);
-  transform: translateY(3px);
-  top: 20px;
-  right: 20px;
-}
-
-.c6,
-.c6[type='button'],
-.c6[type='reset'],
-.c6[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c6::-moz-focus-inner,
-.c6[type='button']::-moz-focus-inner,
-.c6[type='reset']::-moz-focus-inner,
-.c6[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c6:-moz-focusring,
-.c6[type='button']:-moz-focusring,
-.c6[type='reset']:-moz-focusring,
-.c6[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c3 {
-  padding-bottom: 16px;
-  padding-right: 28px;
-  min-height: 20px;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.c0 {
-  background-image: linear-gradient(#00D200,#FF1900);
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 20px;
-  height: 200vh;
-}
-
-@media (min-width:760px) {
-  .c2 {
-    background-color: rgba(110,110,105,0.63);
-  }
-}
-
-@media (max-width:759px) {
-
-}
-
-@media (min-width:760px) {
-
-}
-
-@media (min-width:760px) {
-  .c6 {
-    top: 40px;
-    right: 40px;
-  }
-}
-
 <div>
   <button
     onClick={[Function]}
@@ -1846,7 +792,7 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
     Open modal
   </button>
   <div
-    className="c0"
+    className="Modalstories__ScrollMaker-sc-70fm6s-0 jXCFNb"
   />
   <portal-dummy>
     <div
@@ -1890,41 +836,41 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
         onWheelCapture={[Function]}
       >
         <div
-          className="c1 c2"
+          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs ModalInner__Backdrop-sc-1ghkydj-0 eMTTpE"
         >
           <div>
             <div
-              className="c3"
+              className="ModalInner__Header-sc-1ghkydj-3 eETGhq"
             />
             <div
-              className="c4"
+              className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
             >
               <p
-                className="c5"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
               </p>
             </div>
             <div
-              className="c4"
+              className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
             >
               <p
-                className="c5"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
               >
                 That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
               </p>
             </div>
             <div
-              className="c4"
+              className="Box__StyledDiv-sc-1bfv3i9-0 begqaa"
             >
               <p
-                className="c5"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
               >
                 Nielsen/Norman has an excellent article about their usage here
               </p>
             </div>
             <p
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
             >
               <a
                 href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
@@ -1933,20 +879,20 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
               </a>
             </p>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c6"
+              className="NormalizedButton__Button-ey7f5x-0 ModalInner__CloseButton-sc-1ghkydj-2 iqbhId"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c7"
+                className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c8"
+                  className="CrossThin__StyledPath-sc-1a8pgle-0 jFUCAe"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />

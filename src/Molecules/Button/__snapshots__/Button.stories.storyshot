@@ -1,236 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Button Button primary with colors 1`] = `
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c3 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c3:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c5 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #FF1900;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c5,
-.c5[type='button'],
-.c5[type='reset'],
-.c5[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c5::-moz-focus-inner,
-.c5[type='button']::-moz-focus-inner,
-.c5[type='reset']::-moz-focus-inner,
-.c5[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c5:-moz-focusring,
-.c5[type='button']:-moz-focusring,
-.c5[type='reset']:-moz-focusring,
-.c5[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c5::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c5:hover {
-  background-color: hsl(5.899999999999977,100%,45%);
-}
-
-.c5:active {
-  background-color: hsl(5.899999999999977,100%,40%);
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-bottom: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 gSjdqX"
   direction="row"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
     direction="column"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
     >
       t =&gt; t.color.cta
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 c3"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kavUlS"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
           >
             Button
           </span>
@@ -239,23 +31,23 @@ exports[`Storyshots Molecules | Button Button primary with colors 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
     direction="column"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
     >
       t =&gt; t.color.negative
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 c5"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 cvcdIk"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
           >
             Button
           </span>
@@ -267,252 +59,28 @@ exports[`Storyshots Molecules | Button Button primary with colors 1`] = `
 `;
 
 exports[`Storyshots Molecules | Button Button secondary with colors 1`] = `
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c3 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #FFFFFF;
-  color: #0046FF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid #0046FF;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  color: hsl(223.5,100%,40%);
-}
-
-.c3:hover::before {
-  border-color: hsl(223.5,100%,40%);
-}
-
-.c3:active {
-  color: hsl(223.5,100%,35%);
-}
-
-.c3:active::before {
-  border-color: hsl(223.5,100%,35%);
-}
-
-.c5 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #FFFFFF;
-  color: #FF1900;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c5,
-.c5[type='button'],
-.c5[type='reset'],
-.c5[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c5::-moz-focus-inner,
-.c5[type='button']::-moz-focus-inner,
-.c5[type='reset']::-moz-focus-inner,
-.c5[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c5:-moz-focusring,
-.c5[type='button']:-moz-focusring,
-.c5[type='reset']:-moz-focusring,
-.c5[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c5::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid #FF1900;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c5:hover {
-  color: hsl(5.899999999999977,100%,40%);
-}
-
-.c5:hover::before {
-  border-color: hsl(5.899999999999977,100%,40%);
-}
-
-.c5:active {
-  color: hsl(5.899999999999977,100%,35%);
-}
-
-.c5:active::before {
-  border-color: hsl(5.899999999999977,100%,35%);
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-bottom: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 gSjdqX"
   direction="row"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
     direction="column"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
     >
       t =&gt; t.color.cta
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 c3"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 erknFv"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
           >
             Button
           </span>
@@ -521,23 +89,23 @@ exports[`Storyshots Molecules | Button Button secondary with colors 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
     direction="column"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
     >
       t =&gt; t.color.negative
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 c5"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 gwHKfT"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
           >
             Button
           </span>
@@ -549,95 +117,14 @@ exports[`Storyshots Molecules | Button Button secondary with colors 1`] = `
 `;
 
 exports[`Storyshots Molecules | Button Button that is full width 1`] = `
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c0,
-.c0[type='button'],
-.c0[type='reset'],
-.c0[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c0::-moz-focus-inner,
-.c0[type='button']::-moz-focus-inner,
-.c0[type='reset']::-moz-focus-inner,
-.c0[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c0:-moz-focusring,
-.c0[type='button']:-moz-focusring,
-.c0[type='reset']:-moz-focusring,
-.c0[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c0::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c0:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c0:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
 <button
-  className="NormalizedButton__Button-ey7f5x-0 c0"
+  className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 chxgx"
   onClick={[Function]}
   type="button"
 >
   <span>
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
     >
       Button
     </span>
@@ -646,194 +133,20 @@ exports[`Storyshots Molecules | Button Button that is full width 1`] = `
 `;
 
 exports[`Storyshots Molecules | Button Button which sets focus on another button 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.c0 > * {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c0 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c2,
-.c2[type='button'],
-.c2[type='reset'],
-.c2[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c2::-moz-focus-inner,
-.c2[type='button']::-moz-focus-inner,
-.c2[type='reset']::-moz-focus-inner,
-.c2[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c2:-moz-focusring,
-.c2[type='button']:-moz-focusring,
-.c2[type='reset']:-moz-focusring,
-.c2[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c2::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c2:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c2:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c4 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #FF1900;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c4::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c4:hover {
-  background-color: hsl(5.899999999999977,100%,45%);
-}
-
-.c4:active {
-  background-color: hsl(5.899999999999977,100%,40%);
-}
-
 <div
-  className="c0"
+  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hEIiGr"
 >
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
   >
     <button
-      className="NormalizedButton__Button-ey7f5x-0 c2"
+      className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kavUlS"
       onClick={[Function]}
       type="button"
     >
       <span>
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
         >
           Click to focus
         </span>
@@ -841,16 +154,16 @@ exports[`Storyshots Molecules | Button Button which sets focus on another button
     </button>
   </div>
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
   >
     <button
-      className="NormalizedButton__Button-ey7f5x-0 c4"
+      className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 cvcdIk"
       onClick={[Function]}
       type="button"
     >
       <span>
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
         >
           Focus me
         </span>
@@ -861,295 +174,28 @@ exports[`Storyshots Molecules | Button Button which sets focus on another button
 `;
 
 exports[`Storyshots Molecules | Button Button with different variants 1`] = `
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c3 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c3:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c5 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #FFFFFF;
-  color: #0046FF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c5,
-.c5[type='button'],
-.c5[type='reset'],
-.c5[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c5::-moz-focus-inner,
-.c5[type='button']::-moz-focus-inner,
-.c5[type='reset']::-moz-focus-inner,
-.c5[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c5:-moz-focusring,
-.c5[type='button']:-moz-focusring,
-.c5[type='reset']:-moz-focusring,
-.c5[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c5::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid #0046FF;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c5:hover {
-  color: hsl(223.5,100%,40%);
-}
-
-.c5:hover::before {
-  border-color: hsl(223.5,100%,40%);
-}
-
-.c5:active {
-  color: hsl(223.5,100%,35%);
-}
-
-.c5:active::before {
-  border-color: hsl(223.5,100%,35%);
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c6,
-.c6[type='button'],
-.c6[type='reset'],
-.c6[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c6::-moz-focus-inner,
-.c6[type='button']::-moz-focus-inner,
-.c6[type='reset']::-moz-focus-inner,
-.c6[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c6:-moz-focusring,
-.c6[type='button']:-moz-focusring,
-.c6[type='reset']:-moz-focusring,
-.c6[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-bottom: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 gSjdqX"
   direction="row"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
     direction="column"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
     >
       primary
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 c3"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kavUlS"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
           >
             Button
           </span>
@@ -1158,23 +204,23 @@ exports[`Storyshots Molecules | Button Button with different variants 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
     direction="column"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
     >
       secondary
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 c5"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 erknFv"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
           >
             Button
           </span>
@@ -1183,22 +229,22 @@ exports[`Storyshots Molecules | Button Button with different variants 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
     direction="column"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
     >
       neutral
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 c6"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kJslgx"
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
         >
           Button
         </span>
@@ -1210,298 +256,47 @@ exports[`Storyshots Molecules | Button Button with different variants 1`] = `
 
 exports[`Storyshots Molecules | Button Button with loading state 1`] = `
 Array [
-  .c0 {
-  margin-bottom: 16px;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
     >
       Primary
     </span>
   </div>,
-  .c5 {
-  display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
-}
-
-.c6 {
-  display: block;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c3:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 16px;
-  min-height: 40px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c7::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c7:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c7:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-bottom: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 gSjdqX"
     direction="row"
   >
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
       direction="column"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
       >
         Medium
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3"
+          className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kavUlS"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
             >
               Medium
             </span>
           </span>
           <span>
             <span
-              className="c5"
+              className="Spinner__Animation-x7jzy3-0 fapQym"
             >
               <svg
-                className="c6"
+                className="Spinner__StyledSvg-x7jzy3-1 ldbroN"
                 height={20}
                 viewBox="0 0 24 24"
                 width={20}
@@ -1564,33 +359,33 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
       direction="column"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
       >
         Large
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c7"
+          className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 hqSLHb"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dQxbEG"
             >
               Large
             </span>
           </span>
           <span>
             <span
-              className="c5"
+              className="Spinner__Animation-x7jzy3-0 fapQym"
             >
               <svg
-                className="c6"
+                className="Spinner__StyledSvg-x7jzy3-1 ldbroN"
                 height={24}
                 viewBox="0 0 24 24"
                 width={24}
@@ -1653,309 +448,50 @@ Array [
       </div>
     </div>
   </div>,
-  .c0 {
-  margin-bottom: 32px;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
   />,
-  .c0 {
-  margin-bottom: 16px;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
     >
       Primary with custom color
     </span>
   </div>,
-  .c5 {
-  display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
-}
-
-.c6 {
-  display: block;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #FF1900;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  background-color: hsl(5.899999999999977,100%,45%);
-}
-
-.c3:active {
-  background-color: hsl(5.899999999999977,100%,40%);
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 16px;
-  min-height: 40px;
-  background-color: #FF1900;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c7::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c7:hover {
-  background-color: hsl(5.899999999999977,100%,45%);
-}
-
-.c7:active {
-  background-color: hsl(5.899999999999977,100%,40%);
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-bottom: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 gSjdqX"
     direction="row"
   >
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
       direction="column"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
       >
         Medium
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3"
+          className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 cvcdIk"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
             >
               Medium
             </span>
           </span>
           <span>
             <span
-              className="c5"
+              className="Spinner__Animation-x7jzy3-0 fapQym"
             >
               <svg
-                className="c6"
+                className="Spinner__StyledSvg-x7jzy3-1 ldbroN"
                 height={20}
                 viewBox="0 0 24 24"
                 width={20}
@@ -2018,33 +554,33 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
       direction="column"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
       >
         Large
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c7"
+          className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kcuhuV"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dQxbEG"
             >
               Large
             </span>
           </span>
           <span>
             <span
-              className="c5"
+              className="Spinner__Animation-x7jzy3-0 fapQym"
             >
               <svg
-                className="c6"
+                className="Spinner__StyledSvg-x7jzy3-1 ldbroN"
                 height={24}
                 viewBox="0 0 24 24"
                 width={24}
@@ -2107,325 +643,50 @@ Array [
       </div>
     </div>
   </div>,
-  .c0 {
-  margin-bottom: 32px;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
   />,
-  .c0 {
-  margin-bottom: 16px;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
     >
       Secondary
     </span>
   </div>,
-  .c5 {
-  display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
-}
-
-.c6 {
-  display: block;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #FFFFFF;
-  color: #0046FF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid #0046FF;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  color: hsl(223.5,100%,40%);
-}
-
-.c3:hover::before {
-  border-color: hsl(223.5,100%,40%);
-}
-
-.c3:active {
-  color: hsl(223.5,100%,35%);
-}
-
-.c3:active::before {
-  border-color: hsl(223.5,100%,35%);
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 16px;
-  min-height: 40px;
-  background-color: #FFFFFF;
-  color: #0046FF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c7::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid #0046FF;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c7:hover {
-  color: hsl(223.5,100%,40%);
-}
-
-.c7:hover::before {
-  border-color: hsl(223.5,100%,40%);
-}
-
-.c7:active {
-  color: hsl(223.5,100%,35%);
-}
-
-.c7:active::before {
-  border-color: hsl(223.5,100%,35%);
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-bottom: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 gSjdqX"
     direction="row"
   >
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
       direction="column"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
       >
         Medium
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3"
+          className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 erknFv"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
             >
               Medium
             </span>
           </span>
           <span>
             <span
-              className="c5"
+              className="Spinner__Animation-x7jzy3-0 fapQym"
             >
               <svg
-                className="c6"
+                className="Spinner__StyledSvg-x7jzy3-1 ldbroN"
                 height={20}
                 viewBox="0 0 24 24"
                 width={20}
@@ -2488,33 +749,33 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
       direction="column"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
       >
         Large
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c7"
+          className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 bybvYe"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dQxbEG"
             >
               Large
             </span>
           </span>
           <span>
             <span
-              className="c5"
+              className="Spinner__Animation-x7jzy3-0 fapQym"
             >
               <svg
-                className="c6"
+                className="Spinner__StyledSvg-x7jzy3-1 ldbroN"
                 height={24}
                 viewBox="0 0 24 24"
                 width={24}
@@ -2577,325 +838,50 @@ Array [
       </div>
     </div>
   </div>,
-  .c0 {
-  margin-bottom: 32px;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
   />,
-  .c0 {
-  margin-bottom: 16px;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
     >
       Secondary with custom color
     </span>
   </div>,
-  .c5 {
-  display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
-}
-
-.c6 {
-  display: block;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #FFFFFF;
-  color: #FF1900;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid #FF1900;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  color: hsl(5.899999999999977,100%,40%);
-}
-
-.c3:hover::before {
-  border-color: hsl(5.899999999999977,100%,40%);
-}
-
-.c3:active {
-  color: hsl(5.899999999999977,100%,35%);
-}
-
-.c3:active::before {
-  border-color: hsl(5.899999999999977,100%,35%);
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 16px;
-  min-height: 40px;
-  background-color: #FFFFFF;
-  color: #FF1900;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c7::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid #FF1900;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c7:hover {
-  color: hsl(5.899999999999977,100%,40%);
-}
-
-.c7:hover::before {
-  border-color: hsl(5.899999999999977,100%,40%);
-}
-
-.c7:active {
-  color: hsl(5.899999999999977,100%,35%);
-}
-
-.c7:active::before {
-  border-color: hsl(5.899999999999977,100%,35%);
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-bottom: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 gSjdqX"
     direction="row"
   >
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
       direction="column"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
       >
         Medium
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3"
+          className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 gwHKfT"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
             >
               Medium
             </span>
           </span>
           <span>
             <span
-              className="c5"
+              className="Spinner__Animation-x7jzy3-0 fapQym"
             >
               <svg
-                className="c6"
+                className="Spinner__StyledSvg-x7jzy3-1 ldbroN"
                 height={20}
                 viewBox="0 0 24 24"
                 width={20}
@@ -2958,33 +944,33 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
       direction="column"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
       >
         Large
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c7"
+          className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 dDySyC"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dQxbEG"
             >
               Large
             </span>
           </span>
           <span>
             <span
-              className="c5"
+              className="Spinner__Animation-x7jzy3-0 fapQym"
             >
               <svg
-                className="c6"
+                className="Spinner__StyledSvg-x7jzy3-1 ldbroN"
                 height={24}
                 viewBox="0 0 24 24"
                 width={24}
@@ -3047,22 +1033,10 @@ Array [
       </div>
     </div>
   </div>,
-  .c0 {
-  margin-bottom: 32px;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
   />,
-  @media (min-width:760px) {
-
-}
-
-<button
+  <button
     onClick={[Function]}
     type="button"
   >
@@ -3073,278 +1047,37 @@ Array [
 
 exports[`Storyshots Molecules | Button Button with size modified 1`] = `
 Array [
-  .c0 {
-  margin-bottom: 16px;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
     >
       Primary
     </span>
   </div>,
-  .c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c3:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c5 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 16px;
-  min-height: 40px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c5,
-.c5[type='button'],
-.c5[type='reset'],
-.c5[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c5::-moz-focus-inner,
-.c5[type='button']::-moz-focus-inner,
-.c5[type='reset']::-moz-focus-inner,
-.c5[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c5:-moz-focusring,
-.c5[type='button']:-moz-focusring,
-.c5[type='reset']:-moz-focusring,
-.c5[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c5::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c5:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c5:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-bottom: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 gSjdqX"
     direction="row"
   >
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
       direction="column"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
       >
         Medium
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3"
+          className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kavUlS"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
             >
               Medium
             </span>
@@ -3353,23 +1086,23 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
       direction="column"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
       >
         Large
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 hqSLHb"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c6"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dQxbEG"
             >
               Large
             </span>
@@ -3378,305 +1111,40 @@ Array [
       </div>
     </div>
   </div>,
-  .c0 {
-  margin-bottom: 32px;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
   />,
-  .c0 {
-  margin-bottom: 16px;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
     >
       Secondary
     </span>
   </div>,
-  .c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #FFFFFF;
-  color: #0046FF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid #0046FF;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  color: hsl(223.5,100%,40%);
-}
-
-.c3:hover::before {
-  border-color: hsl(223.5,100%,40%);
-}
-
-.c3:active {
-  color: hsl(223.5,100%,35%);
-}
-
-.c3:active::before {
-  border-color: hsl(223.5,100%,35%);
-}
-
-.c5 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 16px;
-  min-height: 40px;
-  background-color: #FFFFFF;
-  color: #0046FF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c5,
-.c5[type='button'],
-.c5[type='reset'],
-.c5[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c5::-moz-focus-inner,
-.c5[type='button']::-moz-focus-inner,
-.c5[type='reset']::-moz-focus-inner,
-.c5[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c5:-moz-focusring,
-.c5[type='button']:-moz-focusring,
-.c5[type='reset']:-moz-focusring,
-.c5[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c5::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid #0046FF;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c5:hover {
-  color: hsl(223.5,100%,40%);
-}
-
-.c5:hover::before {
-  border-color: hsl(223.5,100%,40%);
-}
-
-.c5:active {
-  color: hsl(223.5,100%,35%);
-}
-
-.c5:active::before {
-  border-color: hsl(223.5,100%,35%);
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-bottom: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 gSjdqX"
     direction="row"
   >
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
       direction="column"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
       >
         Medium
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3"
+          className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 erknFv"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
             >
               Medium
             </span>
@@ -3685,23 +1153,23 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
       direction="column"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
       >
         Large
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 bybvYe"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c6"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dQxbEG"
             >
               Large
             </span>
@@ -3710,180 +1178,35 @@ Array [
       </div>
     </div>
   </div>,
-  .c0 {
-  margin-bottom: 32px;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
   />,
 ]
 `;
 
 exports[`Storyshots Molecules | Button Button with type modified 1`] = `
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c3 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c3:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Reset
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 c3"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kavUlS"
         onClick={[Function]}
         type="reset"
       >
         <span>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
           >
             Reset
           </span>
@@ -3892,23 +1215,23 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Submit
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 c3"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kavUlS"
         onClick={[Function]}
         type="submit"
       >
         <span>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
           >
             Submit
           </span>
@@ -3920,207 +1243,20 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
 `;
 
 exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c0 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c0 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c1 {
-  box-sizing: border-box;
-  -webkit-flex: 1 1 50%;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c2,
-.c2[type='button'],
-.c2[type='reset'],
-.c2[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c2::-moz-focus-inner,
-.c2[type='button']::-moz-focus-inner,
-.c2[type='reset']::-moz-focus-inner,
-.c2[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c2:-moz-focusring,
-.c2[type='button']:-moz-focusring,
-.c2[type='reset']:-moz-focusring,
-.c2[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c2::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c2:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c2:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c4 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #FFFFFF;
-  color: #0046FF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c4::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid #0046FF;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c4:hover {
-  color: hsl(223.5,100%,40%);
-}
-
-.c4:hover::before {
-  border-color: hsl(223.5,100%,40%);
-}
-
-.c4:active {
-  color: hsl(223.5,100%,35%);
-}
-
-.c4:active::before {
-  border-color: hsl(223.5,100%,35%);
-}
-
 <div
-  className="c0"
+  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ijWdOb"
 >
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 iwwqHC"
   >
     <button
-      className="NormalizedButton__Button-ey7f5x-0 c2"
+      className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 chxgx"
       onClick={[Function]}
       type="submit"
     >
       <span>
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
         >
           Submit
         </span>
@@ -4128,16 +1264,16 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
     </button>
   </div>
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 iwwqHC"
   >
     <button
-      className="NormalizedButton__Button-ey7f5x-0 c4"
+      className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 UrEfI"
       onClick={[Function]}
       type="reset"
     >
       <span>
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
         >
           Reset
         </span>
@@ -4148,94 +1284,14 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
 `;
 
 exports[`Storyshots Molecules | Button Default usage 1`] = `
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c0,
-.c0[type='button'],
-.c0[type='reset'],
-.c0[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c0::-moz-focus-inner,
-.c0[type='button']::-moz-focus-inner,
-.c0[type='reset']::-moz-focus-inner,
-.c0[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c0:-moz-focusring,
-.c0[type='button']:-moz-focusring,
-.c0[type='reset']:-moz-focusring,
-.c0[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c0::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c0:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c0:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
 <button
-  className="NormalizedButton__Button-ey7f5x-0 c0"
+  className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kavUlS"
   onClick={[Function]}
   type="button"
 >
   <span>
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
     >
       Button
     </span>
@@ -4244,272 +1300,29 @@ exports[`Storyshots Molecules | Button Default usage 1`] = `
 `;
 
 exports[`Storyshots Molecules | Button Disabled Button with different variants 1`] = `
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c3 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #EBEBE8;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
-}
-
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c5 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #EBEBE8;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
-}
-
-.c5,
-.c5[type='button'],
-.c5[type='reset'],
-.c5[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c5::-moz-focus-inner,
-.c5[type='button']::-moz-focus-inner,
-.c5[type='reset']::-moz-focus-inner,
-.c5[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c5:-moz-focusring,
-.c5[type='button']:-moz-focusring,
-.c5[type='reset']:-moz-focusring,
-.c5[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c5::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
-}
-
-.c6,
-.c6[type='button'],
-.c6[type='reset'],
-.c6[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c6::-moz-focus-inner,
-.c6[type='button']::-moz-focus-inner,
-.c6[type='reset']::-moz-focus-inner,
-.c6[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c6:-moz-focusring,
-.c6[type='button']:-moz-focusring,
-.c6[type='reset']:-moz-focusring,
-.c6[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-bottom: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 gSjdqX"
   direction="row"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
     direction="column"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
     >
       primary
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 c3"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 eDsllM"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
           >
             Button
           </span>
@@ -4518,24 +1331,24 @@ exports[`Storyshots Molecules | Button Disabled Button with different variants 1
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
     direction="column"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
     >
       secondary
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 c5"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 chhBPF"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
           >
             Button
           </span>
@@ -4544,23 +1357,23 @@ exports[`Storyshots Molecules | Button Disabled Button with different variants 1
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 fJcYPb"
     direction="column"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 ihZCpP"
     >
       neutral
     </div>
     <div>
       <button
-        className="NormalizedButton__Button-ey7f5x-0 c6"
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 haeClc"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
         >
           Button
         </span>
@@ -4571,88 +1384,15 @@ exports[`Storyshots Molecules | Button Disabled Button with different variants 1
 `;
 
 exports[`Storyshots Molecules | Button Disabled link looking like a button 1`] = `
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #EBEBE8;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
-}
-
-.c0,
-.c0[type='button'],
-.c0[type='reset'],
-.c0[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c0::-moz-focus-inner,
-.c0[type='button']::-moz-focus-inner,
-.c0[type='reset']::-moz-focus-inner,
-.c0[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c0:-moz-focusring,
-.c0[type='button']:-moz-focusring,
-.c0[type='reset']:-moz-focusring,
-.c0[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c0::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
 <button
-  className="NormalizedButton__Button-ey7f5x-0 c0"
+  className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 cTijES"
   disabled={true}
   onClick={[Function]}
   type="button"
 >
   <span>
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
     >
       Button
     </span>
@@ -4661,60 +1401,8 @@ exports[`Storyshots Molecules | Button Disabled link looking like a button 1`] =
 `;
 
 exports[`Storyshots Molecules | Button External link looking like a button 1`] = `
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c0::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c0:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c0:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
 <a
-  className="c0"
+  className="Button__StyledLink-lqp9m3-1 ghEktL"
   href="//www.google.com"
   onClick={[Function]}
   rel="noopener noreferrer nofollow"
@@ -4723,7 +1411,7 @@ exports[`Storyshots Molecules | Button External link looking like a button 1`] =
 >
   <span>
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
     >
       Button
     </span>
@@ -4732,186 +1420,28 @@ exports[`Storyshots Molecules | Button External link looking like a button 1`] =
 `;
 
 exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c3 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c3:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c5 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #FFFFFF;
-  color: #0046FF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c5::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid #0046FF;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c5:hover {
-  color: hsl(223.5,100%,40%);
-}
-
-.c5:hover::before {
-  border-color: hsl(223.5,100%,40%);
-}
-
-.c5:active {
-  color: hsl(223.5,100%,35%);
-}
-
-.c5:active::before {
-  border-color: hsl(223.5,100%,35%);
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Reset
     </div>
     <div>
       <a
-        className="c3"
+        className="Button__StyledLink-lqp9m3-1 iDrOCM"
         href="#/route1"
         onClick={[Function]}
       >
         <span>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
           >
             To Route1
           </span>
@@ -4920,23 +1450,23 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       Submit
     </div>
     <div>
       <a
-        className="c5"
+        className="Button__StyledLink-lqp9m3-1 iklELl"
         href="#/route2"
         onClick={[Function]}
       >
         <span>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
           >
             To Route2
           </span>
@@ -4948,66 +1478,14 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
 `;
 
 exports[`Storyshots Molecules | Button Link looking like a button that is full width 1`] = `
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c0::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c0:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c0:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
 <a
-  className="c0"
+  className="Button__StyledLink-lqp9m3-1 ghEktL"
   href="#/overview"
   onClick={[Function]}
 >
   <span>
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
     >
       Button
     </span>
@@ -5016,67 +1494,15 @@ exports[`Storyshots Molecules | Button Link looking like a button that is full w
 `;
 
 exports[`Storyshots Molecules | Button Link looking like a button with rel as nofollow 1`] = `
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c0::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c0:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c0:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
 <a
-  className="c0"
+  className="Button__StyledLink-lqp9m3-1 ghEktL"
   href="#/overview"
   onClick={[Function]}
   rel="nofollow"
 >
   <span>
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
     >
       Button
     </span>
@@ -5086,211 +1512,37 @@ exports[`Storyshots Molecules | Button Link looking like a button with rel as no
 
 exports[`Storyshots Molecules | Button Link looking like a button with with colors 1`] = `
 Array [
-  .c0 {
-  margin-bottom: 16px;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
     >
       Primary
     </span>
   </div>,
-  .c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c3 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c3:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c5 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #FF1900;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c5::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c5:hover {
-  background-color: hsl(5.899999999999977,100%,45%);
-}
-
-.c5:active {
-  background-color: hsl(5.899999999999977,100%,40%);
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
     direction="column"
   >
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         t =&gt; t.color.cta
       </div>
       <div>
         <a
-          className="c3"
+          className="Button__StyledLink-lqp9m3-1 iDrOCM"
           href="#/overview"
           onClick={[Function]}
         >
           <span>
             <span
-              className="c4"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
             >
               Button
             </span>
@@ -5299,23 +1551,23 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         t =&gt; t.color.negative
       </div>
       <div>
         <a
-          className="c5"
+          className="Button__StyledLink-lqp9m3-1 dYDiXi"
           href="#/overview"
           onClick={[Function]}
         >
           <span>
             <span
-              className="c4"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
             >
               Button
             </span>
@@ -5324,238 +1576,40 @@ Array [
       </div>
     </div>
   </div>,
-  .c0 {
-  margin-bottom: 32px;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
   />,
-  .c0 {
-  margin-bottom: 16px;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
     >
       Secondary
     </span>
   </div>,
-  .c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c3 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #FFFFFF;
-  color: #0046FF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid #0046FF;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  color: hsl(223.5,100%,40%);
-}
-
-.c3:hover::before {
-  border-color: hsl(223.5,100%,40%);
-}
-
-.c3:active {
-  color: hsl(223.5,100%,35%);
-}
-
-.c3:active::before {
-  border-color: hsl(223.5,100%,35%);
-}
-
-.c5 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #FFFFFF;
-  color: #FF1900;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c5::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid #FF1900;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c5:hover {
-  color: hsl(5.899999999999977,100%,40%);
-}
-
-.c5:hover::before {
-  border-color: hsl(5.899999999999977,100%,40%);
-}
-
-.c5:active {
-  color: hsl(5.899999999999977,100%,35%);
-}
-
-.c5:active::before {
-  border-color: hsl(5.899999999999977,100%,35%);
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
     direction="column"
   >
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         t =&gt; t.color.cta
       </div>
       <div>
         <a
-          className="c3"
+          className="Button__StyledLink-lqp9m3-1 iklELl"
           href="#/overview"
           onClick={[Function]}
         >
           <span>
             <span
-              className="c4"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
             >
               Button
             </span>
@@ -5564,23 +1618,23 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         t =&gt; t.color.negative
       </div>
       <div>
         <a
-          className="c5"
+          className="Button__StyledLink-lqp9m3-1 ZgvqF"
           href="#/overview"
           onClick={[Function]}
         >
           <span>
             <span
-              className="c4"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
             >
               Button
             </span>
@@ -5589,164 +1643,27 @@ Array [
       </div>
     </div>
   </div>,
-  .c0 {
-  margin-bottom: 32px;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
   />,
 ]
 `;
 
 exports[`Storyshots Molecules | Button Links looking like buttons composed in a group 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c0 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c0 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c1 {
-  box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c2::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c2:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c2:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c4 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #FFFFFF;
-  color: #0046FF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c4::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid #0046FF;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c4:hover {
-  color: hsl(223.5,100%,40%);
-}
-
-.c4:hover::before {
-  border-color: hsl(223.5,100%,40%);
-}
-
-.c4:active {
-  color: hsl(223.5,100%,35%);
-}
-
-.c4:active::before {
-  border-color: hsl(223.5,100%,35%);
-}
-
 <div
-  className="c0"
+  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ijWdOb"
 >
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 byHxgz"
   >
     <a
-      className="c2"
+      className="Button__StyledLink-lqp9m3-1 ghEktL"
       href="#/route1"
       onClick={[Function]}
     >
       <span>
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
         >
           Submit
         </span>
@@ -5754,16 +1671,16 @@ exports[`Storyshots Molecules | Button Links looking like buttons composed in a 
     </a>
   </div>
   <div
-    className="c1"
+    className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 byHxgz"
   >
     <a
-      className="c4"
+      className="Button__StyledLink-lqp9m3-1 bpmqui"
       href="#/route2"
       onClick={[Function]}
     >
       <span>
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
         >
           Reset
         </span>

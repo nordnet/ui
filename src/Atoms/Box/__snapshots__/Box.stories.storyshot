@@ -1,48 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Atoms | Box Different padding for different screen sizes  1`] = `
-.c2 {
-  padding: 8px;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c0 {
-  display: inline-block;
-  background: repeating-linear-gradient( -45deg, #FFCF00, #FFCF00 8px, hsl(48.69999999999999,100%,75%) 8px, hsl(48.69999999999999,100%,75%) 16px );
-}
-
-.c3 {
-  background-color: #F5F5F5;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    padding: 16px;
-  }
-}
-
 <div
-  className="c0"
+  className="Boxstories__Outer-sc-1599xyf-0 jHwrE"
 >
   <div
-    className="c0"
+    className="Boxstories__Outer-sc-1599xyf-0 jHwrE"
   >
     <div
-      className="c1"
+      className="Box__StyledDiv-sc-1bfv3i9-0 cuxncB"
     >
       <div
-        className="c2 c3"
+        className="Box__StyledDiv-sc-1bfv3i9-0 fXWqCD Boxstories__StyledBox-sc-1599xyf-1 iJkTua"
       >
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
         >
           Some random content here
         </span>
@@ -53,43 +25,17 @@ exports[`Storyshots Atoms | Box Different padding for different screen sizes  1`
 `;
 
 exports[`Storyshots Atoms | Box Margin 1`] = `
-.c1 {
-  margin: 16px;
-}
-
-.c2 {
-  padding: 8px;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c0 {
-  display: inline-block;
-  background: repeating-linear-gradient( -45deg, #FFCF00, #FFCF00 8px, hsl(48.69999999999999,100%,75%) 8px, hsl(48.69999999999999,100%,75%) 16px );
-}
-
-.c3 {
-  background-color: #F5F5F5;
-}
-
 <div
-  className="c0"
+  className="Boxstories__Outer-sc-1599xyf-0 jHwrE"
 >
   <div
-    className="c1"
+    className="Box__StyledDiv-sc-1bfv3i9-0 cYJaqD"
   >
     <div
-      className="c2 c3"
+      className="Box__StyledDiv-sc-1bfv3i9-0 fXWqCD Boxstories__StyledBox-sc-1599xyf-1 iJkTua"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
       >
         Some random content here
       </span>
@@ -99,45 +45,17 @@ exports[`Storyshots Atoms | Box Margin 1`] = `
 `;
 
 exports[`Storyshots Atoms | Box Margin and different margin Y-axis 1`] = `
-.c1 {
-  margin: 32px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
-.c2 {
-  padding: 8px;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c0 {
-  display: inline-block;
-  background: repeating-linear-gradient( -45deg, #FFCF00, #FFCF00 8px, hsl(48.69999999999999,100%,75%) 8px, hsl(48.69999999999999,100%,75%) 16px );
-}
-
-.c3 {
-  background-color: #F5F5F5;
-}
-
 <div
-  className="c0"
+  className="Boxstories__Outer-sc-1599xyf-0 jHwrE"
 >
   <div
-    className="c1"
+    className="Box__StyledDiv-sc-1bfv3i9-0 hrEPdt"
   >
     <div
-      className="c2 c3"
+      className="Box__StyledDiv-sc-1bfv3i9-0 fXWqCD Boxstories__StyledBox-sc-1599xyf-1 iJkTua"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
       >
         Some random content here
       </span>
@@ -147,46 +65,20 @@ exports[`Storyshots Atoms | Box Margin and different margin Y-axis 1`] = `
 `;
 
 exports[`Storyshots Atoms | Box Padding  1`] = `
-.c1 {
-  padding: 32px;
-}
-
-.c2 {
-  padding: 8px;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c0 {
-  display: inline-block;
-  background: repeating-linear-gradient( -45deg, #FFCF00, #FFCF00 8px, hsl(48.69999999999999,100%,75%) 8px, hsl(48.69999999999999,100%,75%) 16px );
-}
-
-.c3 {
-  background-color: #F5F5F5;
-}
-
 <div
-  className="c0"
+  className="Boxstories__Outer-sc-1599xyf-0 jHwrE"
 >
   <div
-    className="c0"
+    className="Boxstories__Outer-sc-1599xyf-0 jHwrE"
   >
     <div
-      className="c1"
+      className="Box__StyledDiv-sc-1bfv3i9-0 dsDbLG"
     >
       <div
-        className="c2 c3"
+        className="Box__StyledDiv-sc-1bfv3i9-0 fXWqCD Boxstories__StyledBox-sc-1599xyf-1 iJkTua"
       >
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
         >
           Some random content here
         </span>
@@ -197,48 +89,20 @@ exports[`Storyshots Atoms | Box Padding  1`] = `
 `;
 
 exports[`Storyshots Atoms | Box Padding and different X-axis and left  1`] = `
-.c1 {
-  padding: 32px;
-  padding-left: 0px;
-  padding-right: 16px;
-}
-
-.c2 {
-  padding: 8px;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c0 {
-  display: inline-block;
-  background: repeating-linear-gradient( -45deg, #FFCF00, #FFCF00 8px, hsl(48.69999999999999,100%,75%) 8px, hsl(48.69999999999999,100%,75%) 16px );
-}
-
-.c3 {
-  background-color: #F5F5F5;
-}
-
 <div
-  className="c0"
+  className="Boxstories__Outer-sc-1599xyf-0 jHwrE"
 >
   <div
-    className="c0"
+    className="Boxstories__Outer-sc-1599xyf-0 jHwrE"
   >
     <div
-      className="c1"
+      className="Box__StyledDiv-sc-1bfv3i9-0 jNpPpC"
     >
       <div
-        className="c2 c3"
+        className="Box__StyledDiv-sc-1bfv3i9-0 fXWqCD Boxstories__StyledBox-sc-1599xyf-1 iJkTua"
       >
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
         >
           Some random content here
         </span>

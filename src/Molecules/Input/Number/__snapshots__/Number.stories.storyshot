@@ -1,230 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Input / Number Default 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c9 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c8 {
-  width: 40px;
-  height: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
     htmlFor="insert-unique-id"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
     </span>
   </label>
   <span
-    className="c4"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     <div
-      className="c5 c6"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
     >
       <input
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 fawBKy"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -235,19 +37,19 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
         value="1"
       />
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           decrease number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -260,19 +62,19 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
         </svg>
       </button>
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           increase number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -290,220 +92,32 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c9 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c8 {
-  width: 40px;
-  height: 40px;
-  background-color: #EBEBE8;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #EBEBE8;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
     htmlFor="insert-unique-id"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
     </span>
   </label>
   <span
-    className="c4"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     <div
-      className="c5 c6"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
     >
       <input
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 lkRoav"
         disabled={true}
         id="insert-unique-id"
         inputMode="decimal"
@@ -515,20 +129,20 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
         value="152.25"
       />
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 hKKoqB"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           decrease number by 
           0.25
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -541,20 +155,20 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
         </svg>
       </button>
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 hKKoqB"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           increase number by 
           0.25
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -573,334 +187,55 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
 
 exports[`Storyshots Molecules | Input / Number Required 1`] = `
 Array [
-  .c0 {
-  margin-bottom: 16px;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
     >
       Required
     </span>
   </div>,
-  .c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c12 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c4 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c13 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c9 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c11 {
-  width: 40px;
-  height: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c11:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c11:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c11:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c11:active:enabled {
-  background-color: #0046FF;
-}
-
-.c11:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c10:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c10:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
     direction="column"
   >
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         Default (without star)
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 kMOuNd"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
           >
             <div
-              className="c8 c9"
+              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 fawBKy"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -912,19 +247,19 @@ Array [
                 value="91"
               />
               <button
-                className="c11"
+                className="Number__Stepper-qvkb6m-2 dDksNQ"
                 onClick={[Function]}
                 type="button"
               >
                 <div
-                  className="c12"
+                  className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
                 >
                   decrease number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -937,19 +272,19 @@ Array [
                 </svg>
               </button>
               <button
-                className="c11"
+                className="Number__Stepper-qvkb6m-2 dDksNQ"
                 onClick={[Function]}
                 type="button"
               >
                 <div
-                  className="c12"
+                  className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
                 >
                   increase number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -967,41 +302,41 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         With star
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 kMOuNd"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label *
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
           >
             <div
-              className="c8 c9"
+              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 fawBKy"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -1013,19 +348,19 @@ Array [
                 value="91"
               />
               <button
-                className="c11"
+                className="Number__Stepper-qvkb6m-2 dDksNQ"
                 onClick={[Function]}
                 type="button"
               >
                 <div
-                  className="c12"
+                  className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
                 >
                   decrease number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -1038,19 +373,19 @@ Array [
                 </svg>
               </button>
               <button
-                className="c11"
+                className="Number__Stepper-qvkb6m-2 dDksNQ"
                 onClick={[Function]}
                 type="button"
               >
                 <div
-                  className="c12"
+                  className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
                 >
                   increase number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -1068,245 +403,39 @@ Array [
       </div>
     </div>
   </div>,
-  .c0 {
-  margin-bottom: 32px;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
   />,
 ]
 `;
 
 exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c9 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c8 {
-  width: 40px;
-  height: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
     htmlFor="insert-unique-id"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
     </span>
   </label>
   <span
-    className="c4"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     <div
-      className="c5 c6"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
     >
       <input
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 fawBKy"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -1317,19 +446,19 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
         value="15.200"
       />
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           decrease number by 
           0.005
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -1342,19 +471,19 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
         </svg>
       </button>
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           increase number by 
           0.005
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -1372,230 +501,32 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c9 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c8 {
-  width: 40px;
-  height: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
     htmlFor="insert-unique-id"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
     </span>
   </label>
   <span
-    className="c4"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     <div
-      className="c5 c6"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
     >
       <input
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 fawBKy"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -1611,19 +542,19 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
         value="1"
       />
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           decrease number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -1636,19 +567,19 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
         </svg>
       </button>
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           increase number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -1666,231 +597,33 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c9 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c8 {
-  width: 40px;
-  height: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
     htmlFor="insert-unique-id"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
     </span>
   </label>
   <span
-    className="c4"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     <div
-      className="c5 c6"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
     >
       <input
         autoFocus={true}
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 fawBKy"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -1901,19 +634,19 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
         value="152.25"
       />
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           decrease number by 
           0.25
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -1926,19 +659,19 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
         </svg>
       </button>
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           increase number by 
           0.25
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -1956,202 +689,32 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c9 {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  z-index: 3;
-  left: 8px;
-}
-
-.c11 {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  z-index: 3;
-  right: 8px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 40px;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
     htmlFor="insert-unique-id"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
     </span>
   </label>
   <span
-    className="c4"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     <div
-      className="c5 c6"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
     >
       <input
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 fCodKG"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -2162,12 +725,12 @@ exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
         value="1"
       />
       <div
-        className="c8 c9"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Number__AddonBox-qvkb6m-1 jEkHkH"
         position="left"
       >
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 cpMDhR"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -2180,7 +743,7 @@ exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
         </svg>
       </div>
       <div
-        className="c8 c11"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Number__AddonBox-qvkb6m-1 ipRtnU"
         position="right"
       >
         SEK
@@ -2191,230 +754,32 @@ exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled behaviour) 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c9 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c8 {
-  width: 40px;
-  height: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
     htmlFor="insert-unique-id"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
     </span>
   </label>
   <span
-    className="c4"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     <div
-      className="c5 c6"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
     >
       <input
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 fawBKy"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -2425,19 +790,19 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
         value="15.2"
       />
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           decrease number by 
           0.1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -2450,19 +815,19 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
         </svg>
       </button>
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           increase number by 
           0.1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -2480,240 +845,33 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
 `;
 
 exports[`Storyshots Molecules | Input / Number With error if value is less than 1 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c9 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c11 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FF1900;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c8 {
-  width: 40px;
-  height: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
     htmlFor="insert-unique-id"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
     </span>
   </label>
   <span
-    className="c4"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     <div
-      className="c5 c6"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
     >
       <input
         aria-invalid={true}
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 gmxWOK"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -2724,19 +882,19 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
         value="0"
       />
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           decrease number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -2749,19 +907,19 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
         </svg>
       </button>
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           increase number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -2777,10 +935,10 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   </span>
   <div>
     <span
-      className="c11"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hPnwKK"
     >
       <div
-        className="c9"
+        className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
       >
         Error: 
       </div>
@@ -2791,240 +949,33 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
 `;
 
 exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c9 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c11 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FF1900;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c8 {
-  width: 40px;
-  height: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
     htmlFor="insert-unique-id"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
     </span>
   </label>
   <span
-    className="c4"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     <div
-      className="c5 c6"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
     >
       <input
         aria-invalid={true}
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 gmxWOK"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -3035,19 +986,19 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
         value="0"
       />
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           decrease number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -3060,19 +1011,19 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
         </svg>
       </button>
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           increase number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -3088,10 +1039,10 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   </span>
   <div>
     <span
-      className="c11"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hPnwKK"
     >
       <div
-        className="c9"
+        className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
       >
         Error: 
       </div>
@@ -3102,239 +1053,32 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c9 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c11 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c8 {
-  width: 40px;
-  height: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
     htmlFor="insert-unique-id"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
     </span>
   </label>
   <span
-    className="c4"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     <div
-      className="c5 c6"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
     >
       <input
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 fawBKy"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -3345,19 +1089,19 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
         value="1"
       />
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           decrease number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -3370,19 +1114,19 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
         </svg>
       </button>
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           increase number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -3398,7 +1142,7 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   </span>
   <div>
     <span
-      className="c11"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 WSuqZ"
     >
       Use wisely this space
     </span>
@@ -3407,220 +1151,28 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c8 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c5 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c7 {
-  width: 40px;
-  height: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c7:active:enabled {
-  background-color: #0046FF;
-}
-
-.c7:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 gyUewZ"
     hidden={true}
     htmlFor="insert-unique-id"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       Label 
     </span>
   </label>
   <span
-    className="c3"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     <div
-      className="c4 c5"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
     >
       <input
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 fawBKy"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -3631,19 +1183,19 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
         value="1"
       />
       <button
-        className="c7"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c8"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           decrease number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c9"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -3656,19 +1208,19 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
         </svg>
       </button>
       <button
-        className="c7"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c8"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           increase number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c9"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -3686,244 +1238,24 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c12 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c13 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c6 {
-  stroke: #6E6E69;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c5 {
-  margin-left: 4px;
-}
-
-.c9 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c11 {
-  width: 40px;
-  height: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c11:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c11:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c11:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c11:active:enabled {
-  background-color: #0046FF;
-}
-
-.c11:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c10:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c10:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
     htmlFor="insert-unique-id"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
         <svg
           aria-hidden="false"
-          className="c4 c5"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 cpMDhR FormField__TooltipIcon-ydn0fr-1 ioayVJ"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="img"
@@ -3934,7 +1266,7 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
             transform="translate(1 1)"
           >
             <circle
-              className="c6"
+              className="Questionmark__StyledCircle-sc-1uxskjf-0 gHSezF"
               cx="11"
               cy="11"
               fill="none"
@@ -3953,13 +1285,13 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
     </span>
   </label>
   <span
-    className="c7"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     <div
-      className="c8 c9"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
     >
       <input
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 fawBKy"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -3970,19 +1302,19 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
         value="1"
       />
       <button
-        className="c11"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c12"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           decrease number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c13"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -3995,19 +1327,19 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
         </svg>
       </button>
       <button
-        className="c11"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c12"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           increase number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c13"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -4025,194 +1357,32 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c9 {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  z-index: 3;
-  left: 8px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 8px;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
     htmlFor="insert-unique-id"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
     </span>
   </label>
   <span
-    className="c4"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     <div
-      className="c5 c6"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
     >
       <input
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 iBAQHO"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -4223,12 +1393,12 @@ exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
         value="1"
       />
       <div
-        className="c8 c9"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Number__AddonBox-qvkb6m-1 jEkHkH"
         position="left"
       >
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 cpMDhR"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -4246,230 +1416,32 @@ exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c9 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c8 {
-  width: 40px;
-  height: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
     htmlFor="insert-unique-id"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
     </span>
   </label>
   <span
-    className="c4"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     <div
-      className="c5 c6"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
     >
       <input
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 fawBKy"
         id="insert-unique-id"
         inputMode="decimal"
         max="20"
@@ -4481,19 +1453,19 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
         value="12"
       />
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           decrease number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -4506,19 +1478,19 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
         </svg>
       </button>
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           increase number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -4536,156 +1508,32 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
     htmlFor="insert-unique-id"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
     </span>
   </label>
   <span
-    className="c4"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     <div
-      className="c5 c6"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
     >
       <input
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 kyMiQa"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -4702,566 +1550,55 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
 
 exports[`Storyshots Molecules | Input / Number With placeholder 1`] = `
 Array [
-  .c0 {
-  margin-bottom: 16px;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
     >
       Placeholders
     </span>
   </div>,
-  .c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c12 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c19 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c4 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c16 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c20 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c9 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c13 {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  z-index: 3;
-  right: 8px;
-}
-
-.c15 {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  z-index: 3;
-  left: 8px;
-}
-
-.c18 {
-  width: 40px;
-  height: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c18:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c18:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c18:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c18:active:enabled {
-  background-color: #0046FF;
-}
-
-.c18:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c10:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c10:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c11 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 8px;
-  padding-right: 40px;
-}
-
-.c11:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c11:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
-.c11::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
-.c11::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
-.c11:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
-.c11::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 8px;
-}
-
-.c14:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c14:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c17 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c17:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c17:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c17::-moz-placeholder,
-.c17:-ms-input-placeholder,
-.c17::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c17::-moz-placeholder,
-.c17:-ms-input-placeholder,
-.c17::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c17::-moz-placeholder,
-.c17:-ms-input-placeholder,
-.c17:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c17::-moz-placeholder,
-.c17:-ms-input-placeholder,
-.c17::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
     direction="column"
   >
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         Default
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 kMOuNd"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
           >
             <div
-              className="c8 c9"
+              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 kyMiQa"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -5278,41 +1615,41 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         With right addon
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 kMOuNd"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
           >
             <div
-              className="c8 c9"
+              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 gXnHUX"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -5324,7 +1661,7 @@ Array [
                 value=""
               />
               <div
-                className="c12 c13"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Number__AddonBox-qvkb6m-1 ipRtnU"
                 position="right"
               >
                 EUR
@@ -5335,41 +1672,41 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         With left addon
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 kMOuNd"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
           >
             <div
-              className="c8 c9"
+              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 iBAQHO"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -5381,12 +1718,12 @@ Array [
                 value=""
               />
               <div
-                className="c12 c15"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Number__AddonBox-qvkb6m-1 jEkHkH"
                 position="left"
               >
                 <svg
                   aria-hidden="true"
-                  className="c16"
+                  className="IconBase__StyledIconBase-sc-10cbji3-0 cpMDhR"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -5404,41 +1741,41 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         With steppers (placeholder removed)
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 kMOuNd"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
           >
             <div
-              className="c8 c9"
+              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c17"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 fawBKy"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -5449,19 +1786,19 @@ Array [
                 value=""
               />
               <button
-                className="c18"
+                className="Number__Stepper-qvkb6m-2 dDksNQ"
                 onClick={[Function]}
                 type="button"
               >
                 <div
-                  className="c19"
+                  className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
                 >
                   decrease number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c20"
+                  className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -5474,19 +1811,19 @@ Array [
                 </svg>
               </button>
               <button
-                className="c18"
+                className="Number__Stepper-qvkb6m-2 dDksNQ"
                 onClick={[Function]}
                 type="button"
               >
                 <div
-                  className="c19"
+                  className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
                 >
                   increase number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c20"
+                  className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -5504,195 +1841,39 @@ Array [
       </div>
     </div>
   </div>,
-  .c0 {
-  margin-bottom: 32px;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
   />,
 ]
 `;
 
 exports[`Storyshots Molecules | Input / Number With right addon 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c9 {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  z-index: 3;
-  right: 8px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 8px;
-  padding-right: 40px;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
     htmlFor="insert-unique-id"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
     </span>
   </label>
   <span
-    className="c4"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     <div
-      className="c5 c6"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
     >
       <input
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 gXnHUX"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -5703,7 +1884,7 @@ exports[`Storyshots Molecules | Input / Number With right addon 1`] = `
         value="1"
       />
       <div
-        className="c8 c9"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 hWVWbs Number__AddonBox-qvkb6m-1 ipRtnU"
         position="right"
       >
         SEK
@@ -5715,467 +1896,55 @@ exports[`Storyshots Molecules | Input / Number With right addon 1`] = `
 
 exports[`Storyshots Molecules | Input / Number With size small 1`] = `
 Array [
-  .c0 {
-  margin-bottom: 16px;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 iVZgSV"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 fXBiYK"
     >
       Size = "s"
     </span>
   </div>,
-  .c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c12 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c4 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c13 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c16 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FF1900;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c9 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c11 {
-  width: 32px;
-  height: 32px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c11:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c11:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c11:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c11:active:enabled {
-  background-color: #0046FF;
-}
-
-.c11:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 32px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c10:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c10:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 32px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c14:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c14:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c15 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  height: 32px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c15:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c15:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c15::-moz-placeholder,
-.c15:-ms-input-placeholder,
-.c15::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c15::-moz-placeholder,
-.c15:-ms-input-placeholder,
-.c15::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c15::-moz-placeholder,
-.c15:-ms-input-placeholder,
-.c15:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c15::-moz-placeholder,
-.c15:-ms-input-placeholder,
-.c15::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
     direction="column"
   >
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         Default
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 kMOuNd"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
           >
             <div
-              className="c8 c9"
+              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 idrvCD"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -6186,20 +1955,20 @@ Array [
                 value="1"
               />
               <button
-                className="c11"
+                className="Number__Stepper-qvkb6m-2 cacvY"
                 onClick={[Function]}
                 size="s"
                 type="button"
               >
                 <div
-                  className="c12"
+                  className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
                 >
                   decrease number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -6212,20 +1981,20 @@ Array [
                 </svg>
               </button>
               <button
-                className="c11"
+                className="Number__Stepper-qvkb6m-2 cacvY"
                 onClick={[Function]}
                 size="s"
                 type="button"
               >
                 <div
-                  className="c12"
+                  className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
                 >
                   increase number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -6243,41 +2012,41 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         No steppers
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 kMOuNd"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
           >
             <div
-              className="c8 c9"
+              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 ebRoJr"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -6293,42 +2062,42 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         Error
       </div>
       <div>
         <div
-          className="c3"
+          className="FormField__Wrapper-ydn0fr-0 kMOuNd"
         >
           <label
-            className="c4"
+            className="FormLabel__StyledLabel-skax1c-0 VHIlu"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
             >
               <div
-                className="c6"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
           >
             <div
-              className="c8 c9"
+              className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
             >
               <input
                 aria-invalid={true}
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c15"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 buchqr"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -6339,20 +2108,20 @@ Array [
                 value="1"
               />
               <button
-                className="c11"
+                className="Number__Stepper-qvkb6m-2 cacvY"
                 onClick={[Function]}
                 size="s"
                 type="button"
               >
                 <div
-                  className="c12"
+                  className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
                 >
                   decrease number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -6365,20 +2134,20 @@ Array [
                 </svg>
               </button>
               <button
-                className="c11"
+                className="Number__Stepper-qvkb6m-2 cacvY"
                 onClick={[Function]}
                 size="s"
                 type="button"
               >
                 <div
-                  className="c12"
+                  className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
                 >
                   increase number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -6394,10 +2163,10 @@ Array [
           </span>
           <div>
             <span
-              className="c16"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hPnwKK"
             >
               <div
-                className="c12"
+                className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
               >
                 Error: 
               </div>
@@ -6408,245 +2177,39 @@ Array [
       </div>
     </div>
   </div>,
-  .c0 {
-  margin-bottom: 32px;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
+  <div
+    className="Box__StyledDiv-sc-1bfv3i9-0 dOfUcX"
   />,
 ]
 `;
 
 exports[`Storyshots Molecules | Input / Number With success 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c9 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c8 {
-  width: 40px;
-  height: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #00D200;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
 <div
-  className="c0"
+  className="FormField__Wrapper-ydn0fr-0 kMOuNd"
 >
   <label
-    className="c1"
+    className="FormLabel__StyledLabel-skax1c-0 VHIlu"
     hidden={false}
     htmlFor="insert-unique-id"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
     >
       <div
-        className="c3"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
       >
         Label 
       </div>
     </span>
   </label>
   <span
-    className="c4"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
   >
     <div
-      className="c5 c6"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
     >
       <input
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 jgVsPM"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -6657,19 +2220,19 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
         value="1"
       />
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           decrease number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6682,19 +2245,19 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
         </svg>
       </button>
       <button
-        className="c8"
+        className="Number__Stepper-qvkb6m-2 dDksNQ"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
         >
           increase number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6713,230 +2276,32 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
 
 exports[`Storyshots Molecules | Input / Number With value (Controlled behaviour) 1`] = `
 Array [
-  .c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c9 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c8 {
-  width: 40px;
-  height: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-<div
-    className="c0"
+  <div
+    className="FormField__Wrapper-ydn0fr-0 kMOuNd"
   >
     <label
-      className="c1"
+      className="FormLabel__StyledLabel-skax1c-0 VHIlu"
       hidden={false}
       htmlFor="insert-unique-id"
     >
       <span
-        className="c2"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 bQFSIv"
       >
         <div
-          className="c3"
+          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jaAqWg"
         >
           Label 
         </div>
       </span>
     </label>
     <span
-      className="c4"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
     >
       <div
-        className="c5 c6"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 dWgTod Number__Wrapper-qvkb6m-0 fdbvNy"
       >
         <input
-          className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+          className="NormalizedInput__Input-sc-1m4kmh9-0 Number__Input-qvkb6m-3 fawBKy"
           id="insert-unique-id"
           inputMode="decimal"
           min={0}
@@ -6947,19 +2312,19 @@ Array [
           value="10"
         />
         <button
-          className="c8"
+          className="Number__Stepper-qvkb6m-2 dDksNQ"
           onClick={[Function]}
           type="button"
         >
           <div
-            className="c9"
+            className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
           >
             decrease number by 
             1
           </div>
           <svg
             aria-hidden="true"
-            className="c10"
+            className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -6972,19 +2337,19 @@ Array [
           </svg>
         </button>
         <button
-          className="c8"
+          className="Number__Stepper-qvkb6m-2 dDksNQ"
           onClick={[Function]}
           type="button"
         >
           <div
-            className="c9"
+            className="VisuallyHidden__Hidden-sc-1mwv7fg-0 jHTVpT"
           >
             increase number by 
             1
           </div>
           <svg
             aria-hidden="true"
-            className="c10"
+            className="IconBase__StyledIconBase-sc-10cbji3-0 Qzjd"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"

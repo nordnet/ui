@@ -1,128 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | PageHeader Page header ReactNode title 1`] = `
-.c4 {
-  padding: 12px;
-}
-
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  box-sizing: border-box;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c1 {
-  box-sizing: border-box;
-  margin: 0 auto;
-}
-
-@media (min-width:760px) {
-  .c4 {
-    padding-left: 0px;
-    padding-top: 8px;
-    padding-right: 0px;
-    padding-bottom: 8px;
-  }
-}
-
-@media (min-width:760px) {
-  .c2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media (min-width:760px) {
-  .c5 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
-  .c1 {
-    max-width: 760px;
-    padding: 0 20px;
-  }
-}
-
-@media (min-width:976px) {
-  .c1 {
-    max-width: 976px;
-    padding: 0 20px;
-  }
-}
-
-@media (min-width:1280px) {
-  .c1 {
-    max-width: 1280px;
-    padding: 0 20px;
-  }
-}
-
-@media (min-width:1600px) {
-  .c1 {
-    max-width: 1600px;
-    padding: 0 20px;
-  }
-}
-
 <div
-  className="c0"
+  className="Card__StyledCard-sc-1e5czjc-0 fCiISE"
 >
   <div
-    className=""
+    className="PageWrapper__Outer-sc-1ur2ylx-0 iYsWey"
   >
     <div
-      className="c1"
+      className="PageWrapper__Inner-sc-1ur2ylx-1 kOfIEH"
     >
       <div
-        className="c2"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jCrsZz"
       >
         <div
-          className="c3"
+          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
         >
           <div
-            className="c4"
+            className="Box__StyledDiv-sc-1bfv3i9-0 xnKOi"
           >
             <h1
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ekyJLf"
             >
               I am a ReactNode
             </h1>
@@ -135,315 +33,70 @@ exports[`Storyshots Molecules | PageHeader Page header ReactNode title 1`] = `
 `;
 
 exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
-.c4 {
-  padding: 12px;
-}
-
-.c8 {
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-.c9 {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  box-sizing: border-box;
-}
-
-.c10 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c10 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c10 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c7 {
-  width: 100%;
-  height: 1px;
-  background-color: #EBEBE8;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c11 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c11::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c11:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c11:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c1 {
-  box-sizing: border-box;
-  margin: 0 auto;
-}
-
-@media (min-width:760px) {
-  .c4 {
-    padding-left: 0px;
-    padding-top: 8px;
-    padding-right: 0px;
-    padding-bottom: 8px;
-  }
-}
-
-@media (min-width:760px) {
-  .c8 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-
-@media (min-width:760px) {
-  .c9 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-}
-
-@media (min-width:760px) {
-  .c2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media not all and (max-width:759px) {
-  .c6 {
-    display: none;
-  }
-}
-
-@media (min-width:760px) {
-  .c5 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
-  .c1 {
-    max-width: 760px;
-    padding: 0 20px;
-  }
-}
-
-@media (min-width:976px) {
-  .c1 {
-    max-width: 976px;
-    padding: 0 20px;
-  }
-}
-
-@media (min-width:1280px) {
-  .c1 {
-    max-width: 1280px;
-    padding: 0 20px;
-  }
-}
-
-@media (min-width:1600px) {
-  .c1 {
-    max-width: 1600px;
-    padding: 0 20px;
-  }
-}
-
 <div
-  className="c0"
+  className="Card__StyledCard-sc-1e5czjc-0 fCiISE"
 >
   <div
-    className=""
+    className="PageWrapper__Outer-sc-1ur2ylx-0 iYsWey"
   >
     <div
-      className="c1"
+      className="PageWrapper__Inner-sc-1ur2ylx-1 kOfIEH"
     >
       <div
-        className="c2"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jCrsZz"
       >
         <div
-          className="c3"
+          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
         >
           <div
-            className="c4"
+            className="Box__StyledDiv-sc-1bfv3i9-0 xnKOi"
           >
             <h1
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ekyJLf"
             >
               Your darkest loaves
             </h1>
           </div>
         </div>
         <div
-          className="c6"
+          className="Media__StyledDiv-sc-1dic02p-0 grJSKJ"
         >
           <div
-            className="c3"
+            className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
           >
             <div
-              className="c7"
+              className="Separator__StyledSeparator-a5vdsz-0 kXyqdV"
             />
           </div>
         </div>
         <div
-          className="c3"
+          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
         >
           <div
-            className="c8"
+            className="Box__StyledDiv-sc-1bfv3i9-0 kzvCce"
           >
             <div
-              className="c9"
+              className="Box__StyledDiv-sc-1bfv3i9-0 ikmDpW"
             >
               <div
-                className="c10"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 bTsvfH"
               >
                 <div
-                  className="c3"
+                  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
                 >
                   The eternal techlead, The portugese friend
                 </div>
                 <div
-                  className="c3"
+                  className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
                 >
                   <button
-                    className="NormalizedButton__Button-ey7f5x-0 c11"
+                    className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kavUlS"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="c12"
+                        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
                       >
                         Click here to recruit carl
                       </span>
@@ -461,128 +114,26 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
 `;
 
 exports[`Storyshots Molecules | PageHeader Regular page header 1`] = `
-.c4 {
-  padding: 12px;
-}
-
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  box-sizing: border-box;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c1 {
-  box-sizing: border-box;
-  margin: 0 auto;
-}
-
-@media (min-width:760px) {
-  .c4 {
-    padding-left: 0px;
-    padding-top: 8px;
-    padding-right: 0px;
-    padding-bottom: 8px;
-  }
-}
-
-@media (min-width:760px) {
-  .c2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media (min-width:760px) {
-  .c5 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
-  .c1 {
-    max-width: 760px;
-    padding: 0 20px;
-  }
-}
-
-@media (min-width:976px) {
-  .c1 {
-    max-width: 976px;
-    padding: 0 20px;
-  }
-}
-
-@media (min-width:1280px) {
-  .c1 {
-    max-width: 1280px;
-    padding: 0 20px;
-  }
-}
-
-@media (min-width:1600px) {
-  .c1 {
-    max-width: 1600px;
-    padding: 0 20px;
-  }
-}
-
 <div
-  className="c0"
+  className="Card__StyledCard-sc-1e5czjc-0 fCiISE"
 >
   <div
-    className=""
+    className="PageWrapper__Outer-sc-1ur2ylx-0 iYsWey"
   >
     <div
-      className="c1"
+      className="PageWrapper__Inner-sc-1ur2ylx-1 kOfIEH"
     >
       <div
-        className="c2"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 jCrsZz"
       >
         <div
-          className="c3"
+          className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
         >
           <div
-            className="c4"
+            className="Box__StyledDiv-sc-1bfv3i9-0 xnKOi"
           >
             <h1
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ekyJLf"
             >
               Your darkest loaves
             </h1>

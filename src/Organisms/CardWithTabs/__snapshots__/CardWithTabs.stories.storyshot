@@ -2,226 +2,39 @@
 
 exports[`Storyshots Organisms | CardWithTabs Controlled behaviour 1`] = `
 Array [
-  @media (min-width:760px) {
-
-}
-
-<button
+  <button
     onClick={[Function]}
     type="button"
   >
     Change state outside
   </button>,
-  .c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c7 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c7 > * {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.c7 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c9 {
-  box-sizing: border-box;
-}
-
-.c15 {
-  width: 100%;
-  height: 1px;
-  background-color: #EBEBE8;
-}
-
-.c12 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c12::after {
-  content: '';
-  background-color: #0046FF;
-  display: block;
-  width: 100%;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.c14 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  padding: 20px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  max-height: 100%;
-}
-
-.c11 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  background: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border: none;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  font-weight: inherit;
-}
-
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c6 {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.c16 {
-  height: 100%;
-}
-
-.c8 {
-  padding: 0 20px;
-}
-
-.c2 .c3 {
-  padding-bottom: 8px;
-}
-
-@media (min-width:760px) {
-  .c5 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-<div
-    className="c0 c1 c2"
+  <div
+    className="Card__StyledCard-sc-1e5czjc-0 fCiISE CardWithTitle__StyledCard-sc-1ny6tjx-1 hmmprL CardWithTabs__CustomCardWithTitle-eom33o-1 fMiyle"
   >
     <header
-      className="c3 c4"
+      className="CardWithTitle__StyledHeader-sc-1ny6tjx-0 gnUsaT"
     >
       <h2
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kZoBvC"
       >
         Title for the card
       </h2>
     </header>
     <ul
-      className="c6 c7 c8"
+      className="Tabs__StyledUl-bqti0u-1 fvoSDF Flexbox__StyledFlexbox-sc-1ob4g1e-0 ldKkQD CardWithTabs__StyledTabs-eom33o-0 jGvfzD"
       direction="row"
       role="tablist"
     >
       <li
-        className="c9"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
         role="presentation"
       >
         <span
-          className="c10"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
         >
           <button
             aria-selected={true}
-            className="NormalizedButton__Button-ey7f5x-0 c11"
+            className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 bBpoDR"
             id="tabs-tab-0"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -230,7 +43,7 @@ Array [
             type="button"
           >
             <span
-              className="c12"
+              className="TabTitle__StyledTitle-sc-1sa0gl6-0 dgGiju"
               height={8}
             >
               Tab title 1
@@ -239,15 +52,15 @@ Array [
         </span>
       </li>
       <li
-        className="c9"
+        className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
         role="presentation"
       >
         <span
-          className="c13"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
         >
           <button
             aria-selected={false}
-            className="NormalizedButton__Button-ey7f5x-0 c11"
+            className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 bBpoDR"
             id="tabs-tab-1"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -256,7 +69,7 @@ Array [
             type="button"
           >
             <span
-              className="c14"
+              className="TabTitle__StyledTitle-sc-1sa0gl6-0 fAyBAw"
               height={8}
             >
               Tab title 2
@@ -266,11 +79,11 @@ Array [
       </li>
     </ul>
     <div
-      className="c15"
+      className="Separator__StyledSeparator-a5vdsz-0 kXyqdV"
     />
     <section
       aria-labelledby="tabs-tab-0"
-      className="c16"
+      className="Tabs__Content-bqti0u-2 hYgPOB"
       hidden={false}
       id="tabs-tabpanel-0"
       role="tabpanel"
@@ -282,294 +95,33 @@ Array [
 `;
 
 exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll 1`] = `
-.c21 {
-  padding-left: 20px;
-  padding-top: 16px;
-  padding-right: 20px;
-}
-
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c19 {
-  position: relative;
-  overflow-x: hidden;
-}
-
-.c22 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  bottom: 0;
-}
-
-.c20 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  top: 0;
-}
-
-.c7 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c7 > * {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.c7 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c9 {
-  box-sizing: border-box;
-}
-
-.c15 {
-  width: 100%;
-  height: 1px;
-  background-color: #EBEBE8;
-}
-
-.c12 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c12::after {
-  content: '';
-  background-color: #0046FF;
-  display: block;
-  width: 100%;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.c14 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  padding: 20px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  max-height: 100%;
-}
-
-.c11 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  background: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border: none;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  font-weight: inherit;
-}
-
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c6 {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.c16 {
-  height: 100%;
-}
-
-.c8 {
-  padding: 0 20px;
-}
-
-.c2 .c3 {
-  padding-bottom: 8px;
-}
-
-@media (min-width:976px) {
-  .c17 {
-    position: relative;
-  }
-
-  .c17::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    top: 0;
-    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c17 {
-    position: relative;
-  }
-
-  .c17::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    bottom: 0;
-    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c18 {
-    max-height: 80px;
-    overflow-y: auto;
-  }
-}
-
-@media (min-width:760px) {
-  .c5 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
 <div
-  className="c0 c1 c2"
+  className="Card__StyledCard-sc-1e5czjc-0 fCiISE CardWithTitle__StyledCard-sc-1ny6tjx-1 hmmprL CardWithTabs__CustomCardWithTitle-eom33o-1 fMiyle"
 >
   <header
-    className="c3 c4"
+    className="CardWithTitle__StyledHeader-sc-1ny6tjx-0 gnUsaT"
   >
     <h2
-      className="c5"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kZoBvC"
     >
       Title for the card
     </h2>
   </header>
   <ul
-    className="c6 c7 c8"
+    className="Tabs__StyledUl-bqti0u-1 fvoSDF Flexbox__StyledFlexbox-sc-1ob4g1e-0 ldKkQD CardWithTabs__StyledTabs-eom33o-0 jGvfzD"
     direction="row"
     role="tablist"
   >
     <li
-      className="c9"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
       role="presentation"
     >
       <span
-        className="c10"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
       >
         <button
           aria-selected={true}
-          className="NormalizedButton__Button-ey7f5x-0 c11"
+          className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 bBpoDR"
           id="tabs-tab-0"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -578,7 +130,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll 1`] =
           type="button"
         >
           <span
-            className="c12"
+            className="TabTitle__StyledTitle-sc-1sa0gl6-0 dgGiju"
             height={8}
           >
             Tab title 1
@@ -587,15 +139,15 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll 1`] =
       </span>
     </li>
     <li
-      className="c9"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
       role="presentation"
     >
       <span
-        className="c13"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <button
           aria-selected={false}
-          className="NormalizedButton__Button-ey7f5x-0 c11"
+          className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 bBpoDR"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -604,7 +156,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll 1`] =
           type="button"
         >
           <span
-            className="c14"
+            className="TabTitle__StyledTitle-sc-1sa0gl6-0 fAyBAw"
             height={8}
           >
             Tab title 2
@@ -614,29 +166,29 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll 1`] =
     </li>
   </ul>
   <div
-    className="c15"
+    className="Separator__StyledSeparator-a5vdsz-0 kXyqdV"
   />
   <section
     aria-labelledby="tabs-tab-0"
-    className="c16"
+    className="Tabs__Content-bqti0u-2 hYgPOB"
     hidden={false}
     id="tabs-tabpanel-0"
     role="tabpanel"
   >
     <div
-      className="c17"
+      className="FadedScroll__Container-sc-134qq0d-0 dCAKgx"
     >
       <div
-        className="c18"
+        className="FadedScroll__Scroller-sc-134qq0d-1 bPAhDW"
       >
         <div
-          className="c19"
+          className="FadedScroll__Content-sc-134qq0d-2 hzHbxu"
         >
           <div
-            className="c20"
+            className="FadedScroll__IntersectionTop-sc-134qq0d-4 crnks"
           />
           <div
-            className="c21"
+            className="Box__StyledDiv-sc-1bfv3i9-0 ecSuzB"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum nulla tincidunt
 interdum ornare. Duis blandit nibh nec dui varius lobortis. Sed viverra, metus quis
@@ -656,7 +208,7 @@ In eleifend a risus at pulvinar. Donec ultricies justo et ligula venenatis, sed 
 nunc dignissim.
           </div>
           <div
-            className="c22"
+            className="FadedScroll__IntersectionBottom-sc-134qq0d-3 bLKvVr"
           />
         </div>
       </div>
@@ -666,336 +218,33 @@ nunc dignissim.
 `;
 
 exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll of content and height being whatever is available left of parents height. 1`] = `
-.c22 {
-  padding-left: 20px;
-  padding-top: 16px;
-  padding-right: 20px;
-}
-
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c18 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  min-height: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: auto;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
-}
-
-.c19 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c20 {
-  position: relative;
-  overflow-x: hidden;
-}
-
-.c23 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  bottom: 0;
-}
-
-.c21 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  top: 0;
-}
-
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c8 > * {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.c8 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c10 {
-  box-sizing: border-box;
-}
-
-.c16 {
-  width: 100%;
-  height: 1px;
-  background-color: #EBEBE8;
-}
-
-.c13 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c13::after {
-  content: '';
-  background-color: #0046FF;
-  display: block;
-  width: 100%;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.c15 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c11 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c14 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c5 {
-  padding: 20px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  max-height: 100%;
-}
-
-.c12 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  background: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border: none;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  font-weight: inherit;
-}
-
-.c12,
-.c12[type='button'],
-.c12[type='reset'],
-.c12[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c12::-moz-focus-inner,
-.c12[type='button']::-moz-focus-inner,
-.c12[type='reset']::-moz-focus-inner,
-.c12[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c12:-moz-focusring,
-.c12[type='button']:-moz-focusring,
-.c12[type='reset']:-moz-focusring,
-.c12[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c7 {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.c17 {
-  height: 100%;
-}
-
-.c9 {
-  padding: 0 20px;
-}
-
-.c2 .c4 {
-  padding-bottom: 8px;
-}
-
-@media (min-width:976px) {
-  .c18 {
-    position: relative;
-  }
-
-  .c18::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    top: 0;
-    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c18 {
-    position: relative;
-  }
-
-  .c18::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    bottom: 0;
-    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c19 {
-    min-height: 0;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -webkit-flex-shrink: 1;
-    -ms-flex-negative: 1;
-    flex-shrink: 1;
-    -webkit-flex-basis: auto;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-    overflow-y: auto;
-  }
-}
-
-@media (min-width:760px) {
-  .c6 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-@media (min-width:976px) {
-  .c3 {
-    height: 200px;
-  }
-}
-
 <div
-  className="c0 c1 c2 c3"
+  className="Card__StyledCard-sc-1e5czjc-0 fCiISE CardWithTitle__StyledCard-sc-1ny6tjx-1 hmmprL CardWithTabs__CustomCardWithTitle-eom33o-1 fMiyle CardWithTabsstories__HeightOnCardWithTabs-sc-11n6k03-0 dDxHCU"
 >
   <header
-    className="c4 c5"
+    className="CardWithTitle__StyledHeader-sc-1ny6tjx-0 gnUsaT"
   >
     <h2
-      className="c6"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kZoBvC"
     >
       Title for the card
     </h2>
   </header>
   <ul
-    className="c7 c8 c9"
+    className="Tabs__StyledUl-bqti0u-1 fvoSDF Flexbox__StyledFlexbox-sc-1ob4g1e-0 ldKkQD CardWithTabs__StyledTabs-eom33o-0 jGvfzD"
     direction="row"
     role="tablist"
   >
     <li
-      className="c10"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
       role="presentation"
     >
       <span
-        className="c11"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
       >
         <button
           aria-selected={true}
-          className="NormalizedButton__Button-ey7f5x-0 c12"
+          className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 bBpoDR"
           id="tabs-tab-0"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1004,7 +253,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll of co
           type="button"
         >
           <span
-            className="c13"
+            className="TabTitle__StyledTitle-sc-1sa0gl6-0 dgGiju"
             height={8}
           >
             Tab title 1
@@ -1013,15 +262,15 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll of co
       </span>
     </li>
     <li
-      className="c10"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
       role="presentation"
     >
       <span
-        className="c14"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <button
           aria-selected={false}
-          className="NormalizedButton__Button-ey7f5x-0 c12"
+          className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 bBpoDR"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1030,7 +279,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll of co
           type="button"
         >
           <span
-            className="c15"
+            className="TabTitle__StyledTitle-sc-1sa0gl6-0 fAyBAw"
             height={8}
           >
             Tab title 2
@@ -1040,29 +289,29 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll of co
     </li>
   </ul>
   <div
-    className="c16"
+    className="Separator__StyledSeparator-a5vdsz-0 kXyqdV"
   />
   <section
     aria-labelledby="tabs-tab-0"
-    className="c17"
+    className="Tabs__Content-bqti0u-2 hYgPOB"
     hidden={false}
     id="tabs-tabpanel-0"
     role="tabpanel"
   >
     <div
-      className="c18"
+      className="FadedScroll__Container-sc-134qq0d-0 bMeIvy"
     >
       <div
-        className="c19"
+        className="FadedScroll__Scroller-sc-134qq0d-1 euYWMJ"
       >
         <div
-          className="c20"
+          className="FadedScroll__Content-sc-134qq0d-2 hzHbxu"
         >
           <div
-            className="c21"
+            className="FadedScroll__IntersectionTop-sc-134qq0d-4 crnks"
           />
           <div
-            className="c22"
+            className="Box__StyledDiv-sc-1bfv3i9-0 ecSuzB"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum nulla tincidunt
 interdum ornare. Duis blandit nibh nec dui varius lobortis. Sed viverra, metus quis
@@ -1082,7 +331,7 @@ In eleifend a risus at pulvinar. Donec ultricies justo et ligula venenatis, sed 
 nunc dignissim.
           </div>
           <div
-            className="c23"
+            className="FadedScroll__IntersectionBottom-sc-134qq0d-3 bLKvVr"
           />
         </div>
       </div>
@@ -1092,223 +341,33 @@ nunc dignissim.
 `;
 
 exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and extra space inside 1`] = `
-.c17 {
-  padding-left: 20px;
-  padding-top: 16px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-}
-
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c7 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c7 > * {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.c7 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c9 {
-  box-sizing: border-box;
-}
-
-.c15 {
-  width: 100%;
-  height: 1px;
-  background-color: #EBEBE8;
-}
-
-.c12 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c12::after {
-  content: '';
-  background-color: #0046FF;
-  display: block;
-  width: 100%;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.c14 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  padding: 20px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  max-height: 100%;
-}
-
-.c11 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  background: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border: none;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  font-weight: inherit;
-}
-
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c6 {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.c16 {
-  height: 100%;
-}
-
-.c8 {
-  padding: 0 20px;
-}
-
-.c2 .c3 {
-  padding-bottom: 8px;
-}
-
-@media (min-width:760px) {
-  .c5 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
 <div
-  className="c0 c1 c2"
+  className="Card__StyledCard-sc-1e5czjc-0 fCiISE CardWithTitle__StyledCard-sc-1ny6tjx-1 hmmprL CardWithTabs__CustomCardWithTitle-eom33o-1 fMiyle"
 >
   <header
-    className="c3 c4"
+    className="CardWithTitle__StyledHeader-sc-1ny6tjx-0 gnUsaT"
   >
     <h2
-      className="c5"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kZoBvC"
     >
       Title for the card
     </h2>
   </header>
   <ul
-    className="c6 c7 c8"
+    className="Tabs__StyledUl-bqti0u-1 fvoSDF Flexbox__StyledFlexbox-sc-1ob4g1e-0 ldKkQD CardWithTabs__StyledTabs-eom33o-0 jGvfzD"
     direction="row"
     role="tablist"
   >
     <li
-      className="c9"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
       role="presentation"
     >
       <span
-        className="c10"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
       >
         <button
           aria-selected={true}
-          className="NormalizedButton__Button-ey7f5x-0 c11"
+          className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 bBpoDR"
           id="tabs-tab-0"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1317,7 +376,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
           type="button"
         >
           <span
-            className="c12"
+            className="TabTitle__StyledTitle-sc-1sa0gl6-0 dgGiju"
             height={8}
           >
             Tab title 1
@@ -1326,15 +385,15 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
       </span>
     </li>
     <li
-      className="c9"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
       role="presentation"
     >
       <span
-        className="c13"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <button
           aria-selected={false}
-          className="NormalizedButton__Button-ey7f5x-0 c11"
+          className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 bBpoDR"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1343,7 +402,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
           type="button"
         >
           <span
-            className="c14"
+            className="TabTitle__StyledTitle-sc-1sa0gl6-0 fAyBAw"
             height={8}
           >
             <span
@@ -1361,17 +420,17 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
     </li>
   </ul>
   <div
-    className="c15"
+    className="Separator__StyledSeparator-a5vdsz-0 kXyqdV"
   />
   <section
     aria-labelledby="tabs-tab-0"
-    className="c16"
+    className="Tabs__Content-bqti0u-2 hYgPOB"
     hidden={false}
     id="tabs-tabpanel-0"
     role="tabpanel"
   >
     <div
-      className="c17"
+      className="Box__StyledDiv-sc-1bfv3i9-0 irzwcp"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum nulla tincidunt
 interdum ornare. Duis blandit nibh nec dui varius lobortis. Sed viverra, metus quis
@@ -1395,216 +454,33 @@ nunc dignissim.
 `;
 
 exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c7 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c7 > * {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.c7 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c9 {
-  box-sizing: border-box;
-}
-
-.c15 {
-  width: 100%;
-  height: 1px;
-  background-color: #EBEBE8;
-}
-
-.c12 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c14 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c14::after {
-  content: '';
-  background-color: #0046FF;
-  display: block;
-  width: 100%;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  padding: 20px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  max-height: 100%;
-}
-
-.c11 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  background: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border: none;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  font-weight: inherit;
-}
-
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c6 {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.c16 {
-  height: 100%;
-}
-
-.c8 {
-  padding: 0 20px;
-}
-
-.c2 .c3 {
-  padding-bottom: 8px;
-}
-
-@media (min-width:760px) {
-  .c5 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
 <div
-  className="c0 c1 c2"
+  className="Card__StyledCard-sc-1e5czjc-0 fCiISE CardWithTitle__StyledCard-sc-1ny6tjx-1 hmmprL CardWithTabs__CustomCardWithTitle-eom33o-1 fMiyle"
 >
   <header
-    className="c3 c4"
+    className="CardWithTitle__StyledHeader-sc-1ny6tjx-0 gnUsaT"
   >
     <h2
-      className="c5"
+      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 kZoBvC"
     >
       Title for the card
     </h2>
   </header>
   <ul
-    className="c6 c7 c8"
+    className="Tabs__StyledUl-bqti0u-1 fvoSDF Flexbox__StyledFlexbox-sc-1ob4g1e-0 ldKkQD CardWithTabs__StyledTabs-eom33o-0 jGvfzD"
     direction="row"
     role="tablist"
   >
     <li
-      className="c9"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
       role="presentation"
     >
       <span
-        className="c10"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 hhBrGJ"
       >
         <button
           aria-selected={false}
-          className="NormalizedButton__Button-ey7f5x-0 c11"
+          className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 bBpoDR"
           id="tabs-tab-0"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1613,7 +489,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
           type="button"
         >
           <span
-            className="c12"
+            className="TabTitle__StyledTitle-sc-1sa0gl6-0 fAyBAw"
             height={8}
           >
             Tab title 1
@@ -1622,15 +498,15 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
       </span>
     </li>
     <li
-      className="c9"
+      className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 ikbdiw"
       role="presentation"
     >
       <span
-        className="c13"
+        className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 jhNVIy"
       >
         <button
           aria-selected={true}
-          className="NormalizedButton__Button-ey7f5x-0 c11"
+          className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 bBpoDR"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1639,7 +515,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
           type="button"
         >
           <span
-            className="c14"
+            className="TabTitle__StyledTitle-sc-1sa0gl6-0 dgGiju"
             height={8}
           >
             Tab title 2
@@ -1649,11 +525,11 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
     </li>
   </ul>
   <div
-    className="c15"
+    className="Separator__StyledSeparator-a5vdsz-0 kXyqdV"
   />
   <section
     aria-labelledby="tabs-tab-1"
-    className="c16"
+    className="Tabs__Content-bqti0u-2 hYgPOB"
     hidden={false}
     id="tabs-tabpanel-1"
     role="tabpanel"

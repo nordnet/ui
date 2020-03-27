@@ -1,73 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Atoms | DropdownBubble Default Story 1`] = `
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 0;
-  -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
-  border: 1px solid #BCBCB6;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
-}
-
-.c0:before {
-  right: 20px;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  bottom: 100%;
-  border-bottom: 6px solid;
-  border-bottom-color: #BCBCB6;
-}
-
-.c0:after {
-  right: 20px;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  bottom: calc(100% - 1px);
-  border-bottom: 6px solid;
-  border-bottom-color: #FFFFFF;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 46px;
-  line-height: 1.0434782608695652;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 48px;
-    line-height: 1.0833333333333333;
-  }
-}
-
 <div
-  className="c0"
+  className="DropdownBubble-sc-16ly6j0-0 FVerW"
 >
   <span
-    className="c1"
+    className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 lmsdTq"
   >
     Hello world!
   </span>
@@ -75,236 +13,25 @@ exports[`Storyshots Atoms | DropdownBubble Default Story 1`] = `
 `;
 
 exports[`Storyshots Atoms | DropdownBubble Different Triangle Position 1`] = `
-.c3 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 0;
-  -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
-  border: 1px solid #BCBCB6;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
-}
-
-.c3:before {
-  left: 20px;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  bottom: 100%;
-  border-bottom: 6px solid;
-  border-bottom-color: #BCBCB6;
-}
-
-.c3:after {
-  left: 20px;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  bottom: calc(100% - 1px);
-  border-bottom: 6px solid;
-  border-bottom-color: #FFFFFF;
-}
-
-.c5 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 0;
-  -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
-  border: 1px solid #BCBCB6;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
-}
-
-.c5:before {
-  right: 20px;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  bottom: 100%;
-  border-bottom: 6px solid;
-  border-bottom-color: #BCBCB6;
-}
-
-.c5:after {
-  right: 20px;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  bottom: calc(100% - 1px);
-  border-bottom: 6px solid;
-  border-bottom-color: #FFFFFF;
-}
-
-.c6 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 0;
-  -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
-  border: 1px solid #BCBCB6;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
-}
-
-.c6:before {
-  left: 50%;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  bottom: 100%;
-  border-bottom: 6px solid;
-  border-bottom-color: #BCBCB6;
-}
-
-.c6:after {
-  left: 50%;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  bottom: calc(100% - 1px);
-  border-bottom: 6px solid;
-  border-bottom-color: #FFFFFF;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 46px;
-  line-height: 1.0434782608695652;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-@media (min-width:760px) {
-  .c4 {
-    font-size: 48px;
-    line-height: 1.0833333333333333;
-  }
-}
-
 <div
-  className="c0"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
   direction="column"
 >
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       left
     </div>
     <div>
       <div
-        className="c3"
+        className="DropdownBubble-sc-16ly6j0-0 ivmKuu"
       >
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 lmsdTq"
         >
           Hello world!
         </span>
@@ -312,20 +39,20 @@ exports[`Storyshots Atoms | DropdownBubble Different Triangle Position 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       right
     </div>
     <div>
       <div
-        className="c5"
+        className="DropdownBubble-sc-16ly6j0-0 FVerW"
       >
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 lmsdTq"
         >
           Hello world!
         </span>
@@ -333,20 +60,20 @@ exports[`Storyshots Atoms | DropdownBubble Different Triangle Position 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
     direction="row"
   >
     <div
-      className="c2"
+      className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
     >
       center
     </div>
     <div>
       <div
-        className="c6"
+        className="DropdownBubble-sc-16ly6j0-0 kyYQQC"
       >
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 lmsdTq"
         >
           Hello world!
         </span>

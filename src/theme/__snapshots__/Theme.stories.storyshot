@@ -5,289 +5,22 @@ Array [
   <h1>
     ⚠️ Internal object, use colors (semantic)
   </h1>,
-  .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c3 {
-  width: 56px;
-  height: 56px;
-  background-color: #00C8F5;
-  border: 1px solid #eee;
-}
-
-.c4 {
-  width: 56px;
-  height: 56px;
-  background-color: #D2F500;
-  border: 1px solid #eee;
-}
-
-.c5 {
-  width: 56px;
-  height: 56px;
-  background-color: #FF2B83;
-  border: 1px solid #eee;
-}
-
-.c6 {
-  width: 56px;
-  height: 56px;
-  background-color: #00F0E1;
-  border: 1px solid #eee;
-}
-
-.c7 {
-  width: 56px;
-  height: 56px;
-  background-color: #385E9D;
-  border: 1px solid #eee;
-}
-
-.c8 {
-  width: 56px;
-  height: 56px;
-  background-color: #131F4F;
-  border: 1px solid #eee;
-}
-
-.c9 {
-  width: 56px;
-  height: 56px;
-  background-color: #3A913F;
-  border: 1px solid #eee;
-}
-
-.c10 {
-  width: 56px;
-  height: 56px;
-  background-color: #023C00;
-  border: 1px solid #eee;
-}
-
-.c11 {
-  width: 56px;
-  height: 56px;
-  background-color: #AC135A;
-  border: 1px solid #eee;
-}
-
-.c12 {
-  width: 56px;
-  height: 56px;
-  background-color: #78013A;
-  border: 1px solid #eee;
-}
-
-.c13 {
-  width: 56px;
-  height: 56px;
-  background-color: #009195;
-  border: 1px solid #eee;
-}
-
-.c14 {
-  width: 56px;
-  height: 56px;
-  background-color: #01424C;
-  border: 1px solid #eee;
-}
-
-.c15 {
-  width: 56px;
-  height: 56px;
-  background-color: #000000;
-  border: 1px solid #eee;
-}
-
-.c16 {
-  width: 56px;
-  height: 56px;
-  background-color: #282823;
-  border: 1px solid #eee;
-}
-
-.c17 {
-  width: 56px;
-  height: 56px;
-  background-color: #4B4B46;
-  border: 1px solid #eee;
-}
-
-.c18 {
-  width: 56px;
-  height: 56px;
-  background-color: #6E6E69;
-  border: 1px solid #eee;
-}
-
-.c19 {
-  width: 56px;
-  height: 56px;
-  background-color: #A0A09B;
-  border: 1px solid #eee;
-}
-
-.c20 {
-  width: 56px;
-  height: 56px;
-  background-color: #BCBCB6;
-  border: 1px solid #eee;
-}
-
-.c21 {
-  width: 56px;
-  height: 56px;
-  background-color: #D7D7D2;
-  border: 1px solid #eee;
-}
-
-.c22 {
-  width: 56px;
-  height: 56px;
-  background-color: #EBEBE8;
-  border: 1px solid #eee;
-}
-
-.c23 {
-  width: 56px;
-  height: 56px;
-  background-color: #F5F5F5;
-  border: 1px solid #eee;
-}
-
-.c24 {
-  width: 56px;
-  height: 56px;
-  background-color: #FFFFFF;
-  border: 1px solid #eee;
-}
-
-.c25 {
-  width: 56px;
-  height: 56px;
-  background-color: #0046FF;
-  border: 1px solid #eee;
-}
-
-.c26 {
-  width: 56px;
-  height: 56px;
-  background-color: #00D200;
-  border: 1px solid #eee;
-}
-
-.c27 {
-  width: 56px;
-  height: 56px;
-  background-color: #FF1900;
-  border: 1px solid #eee;
-}
-
-.c28 {
-  width: 56px;
-  height: 56px;
-  background-color: #FFCF00;
-  border: 1px solid #eee;
-}
-
-.c29 {
-  width: 56px;
-  height: 56px;
-  background-color: #2D67FF;
-  border: 1px solid #eee;
-}
-
-.c30 {
-  width: 56px;
-  height: 56px;
-  background-color: #008A00;
-  border: 1px solid #eee;
-}
-
-.c31 {
-  width: 56px;
-  height: 56px;
-  background-color: #E81700;
-  border: 1px solid #eee;
-}
-
-.c32 {
-  width: 56px;
-  height: 56px;
-  background-color: #C15700;
-  border: 1px solid #eee;
-}
-
-<div
-    className="c0"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 dODlaT"
     direction="column"
   >
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         brandBlue
       </div>
       <div>
         <div
-          className="c3"
+          className="Themestories__Color-skwibd-0 bvSLOI"
           color="#00C8F5"
         />
         <div>
@@ -296,17 +29,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         brandGreen
       </div>
       <div>
         <div
-          className="c4"
+          className="Themestories__Color-skwibd-0 kfsTJZ"
           color="#D2F500"
         />
         <div>
@@ -315,17 +48,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         brandPink
       </div>
       <div>
         <div
-          className="c5"
+          className="Themestories__Color-skwibd-0 kwUHSH"
           color="#FF2B83"
         />
         <div>
@@ -334,17 +67,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         brandTurquoise
       </div>
       <div>
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hYdGsW"
           color="#00F0E1"
         />
         <div>
@@ -353,17 +86,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         complementaryBlue1
       </div>
       <div>
         <div
-          className="c7"
+          className="Themestories__Color-skwibd-0 inaXZW"
           color="#385E9D"
         />
         <div>
@@ -372,17 +105,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         complementaryBlue2
       </div>
       <div>
         <div
-          className="c8"
+          className="Themestories__Color-skwibd-0 jKAvQf"
           color="#131F4F"
         />
         <div>
@@ -391,17 +124,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         complementaryGreen1
       </div>
       <div>
         <div
-          className="c9"
+          className="Themestories__Color-skwibd-0 bQeHvH"
           color="#3A913F"
         />
         <div>
@@ -410,17 +143,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         complementaryGreen2
       </div>
       <div>
         <div
-          className="c10"
+          className="Themestories__Color-skwibd-0 krPrhS"
           color="#023C00"
         />
         <div>
@@ -429,17 +162,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         complementaryPink1
       </div>
       <div>
         <div
-          className="c11"
+          className="Themestories__Color-skwibd-0 ftqrHQ"
           color="#AC135A"
         />
         <div>
@@ -448,17 +181,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         complementaryPink2
       </div>
       <div>
         <div
-          className="c12"
+          className="Themestories__Color-skwibd-0 kTYrkU"
           color="#78013A"
         />
         <div>
@@ -467,17 +200,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         complementaryTurquoise1
       </div>
       <div>
         <div
-          className="c13"
+          className="Themestories__Color-skwibd-0 PkofA"
           color="#009195"
         />
         <div>
@@ -486,17 +219,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         complementaryTurquoise2
       </div>
       <div>
         <div
-          className="c14"
+          className="Themestories__Color-skwibd-0 khxDFU"
           color="#01424C"
         />
         <div>
@@ -505,17 +238,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         black
       </div>
       <div>
         <div
-          className="c15"
+          className="Themestories__Color-skwibd-0 cfyNTM"
           color="#000000"
         />
         <div>
@@ -524,17 +257,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         gray0
       </div>
       <div>
         <div
-          className="c16"
+          className="Themestories__Color-skwibd-0 ldgEzN"
           color="#282823"
         />
         <div>
@@ -543,17 +276,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         gray1
       </div>
       <div>
         <div
-          className="c17"
+          className="Themestories__Color-skwibd-0 ehXLju"
           color="#4B4B46"
         />
         <div>
@@ -562,17 +295,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         gray2
       </div>
       <div>
         <div
-          className="c18"
+          className="Themestories__Color-skwibd-0 fHbKYT"
           color="#6E6E69"
         />
         <div>
@@ -581,17 +314,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         gray3
       </div>
       <div>
         <div
-          className="c19"
+          className="Themestories__Color-skwibd-0 fquUQz"
           color="#A0A09B"
         />
         <div>
@@ -600,17 +333,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         gray4
       </div>
       <div>
         <div
-          className="c20"
+          className="Themestories__Color-skwibd-0 luMaU"
           color="#BCBCB6"
         />
         <div>
@@ -619,17 +352,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         gray5
       </div>
       <div>
         <div
-          className="c21"
+          className="Themestories__Color-skwibd-0 ctNWCC"
           color="#D7D7D2"
         />
         <div>
@@ -638,17 +371,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         gray6
       </div>
       <div>
         <div
-          className="c22"
+          className="Themestories__Color-skwibd-0 iLgySx"
           color="#EBEBE8"
         />
         <div>
@@ -657,17 +390,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         gray7
       </div>
       <div>
         <div
-          className="c23"
+          className="Themestories__Color-skwibd-0 fcPaWP"
           color="#F5F5F5"
         />
         <div>
@@ -676,17 +409,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         white
       </div>
       <div>
         <div
-          className="c24"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -695,17 +428,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         cta
       </div>
       <div>
         <div
-          className="c25"
+          className="Themestories__Color-skwibd-0 iDOsLu"
           color="#0046FF"
         />
         <div>
@@ -714,17 +447,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         positive
       </div>
       <div>
         <div
-          className="c26"
+          className="Themestories__Color-skwibd-0 eTmQfO"
           color="#00D200"
         />
         <div>
@@ -733,17 +466,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         negative
       </div>
       <div>
         <div
-          className="c27"
+          className="Themestories__Color-skwibd-0 kyfYZw"
           color="#FF1900"
         />
         <div>
@@ -752,17 +485,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         index
       </div>
       <div>
         <div
-          className="c28"
+          className="Themestories__Color-skwibd-0 fwBLJt"
           color="#FFCF00"
         />
         <div>
@@ -771,17 +504,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         a11yCta
       </div>
       <div>
         <div
-          className="c29"
+          className="Themestories__Color-skwibd-0 fIqrpr"
           color="#2D67FF"
         />
         <div>
@@ -790,17 +523,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         a11yPositive
       </div>
       <div>
         <div
-          className="c30"
+          className="Themestories__Color-skwibd-0 gQpRVN"
           color="#008A00"
         />
         <div>
@@ -809,17 +542,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         a11yNegative
       </div>
       <div>
         <div
-          className="c31"
+          className="Themestories__Color-skwibd-0 OHAYz"
           color="#E81700"
         />
         <div>
@@ -828,17 +561,17 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 ckYvtD"
       direction="row"
     >
       <div
-        className="c2"
+        className="Display__DivWithBorder-sc-1yo6rmg-1 dAxmSk"
       >
         a11yIndex
       </div>
       <div>
         <div
-          className="c32"
+          className="Themestories__Color-skwibd-0 iyMJAs"
           color="#C15700"
         />
         <div>
@@ -851,360 +584,30 @@ Array [
 `;
 
 exports[`Storyshots Theme Colors (semantic) 1`] = `
-.c0 {
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
-}
-
-.c1 {
-  width: 100%;
-  border-bottom: 1px solid #EBEBE8;
-}
-
-.c4 {
-  width: 100%;
-  overflow: 'auto';
-}
-
-.c2 {
-  height: 100%;
-  padding: 8px 0;
-  overflow: 'hidden';
-}
-
-.c2:not(:first-child) {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c5 {
-  height: 100%;
-  padding: 8px 4px;
-  text-align: left;
-}
-
-.c5:first-child {
-  padding-left: 0;
-}
-
-.c5:last-child {
-  padding-right: 0;
-}
-
-.c3 {
-  color: #6E6E69;
-  font-weight: normal;
-  height: 100%;
-  padding: 8px 4px;
-  text-align: left;
-  width: auto;
-}
-
-.c3:first-child {
-  padding-left: 0;
-}
-
-.c3:last-child {
-  padding-right: 0;
-}
-
-.c6 {
-  width: 56px;
-  height: 56px;
-  background-color: #FFFFFF;
-  border: 1px solid #eee;
-}
-
-.c7 {
-  width: 56px;
-  height: 56px;
-  background-color: #F5F5F5;
-  border: 1px solid #eee;
-}
-
-.c8 {
-  width: 56px;
-  height: 56px;
-  background-color: #000000;
-  border: 1px solid #eee;
-}
-
-.c9 {
-  width: 56px;
-  height: 56px;
-  background-color: #282823;
-  border: 1px solid #eee;
-}
-
-.c10 {
-  width: 56px;
-  height: 56px;
-  background-color: #BCBCB6;
-  border: 1px solid #eee;
-}
-
-.c11 {
-  width: 56px;
-  height: 56px;
-  background-color: #0046FF;
-  border: 1px solid #eee;
-}
-
-.c12 {
-  width: 56px;
-  height: 56px;
-  background-color: #2D67FF;
-  border: 1px solid #eee;
-}
-
-.c13 {
-  width: 56px;
-  height: 56px;
-  background-color: hsl(223.5,100%,35%);
-  border: 1px solid #eee;
-}
-
-.c14 {
-  width: 56px;
-  height: 56px;
-  background-color: hsl(223.39999999999998,100%,41.2%);
-  border: 1px solid #eee;
-}
-
-.c15 {
-  width: 56px;
-  height: 56px;
-  background-color: #AC135A;
-  border: 1px solid #eee;
-}
-
-.c16 {
-  width: 56px;
-  height: 56px;
-  background-color: #78013A;
-  border: 1px solid #eee;
-}
-
-.c17 {
-  width: 56px;
-  height: 56px;
-  background-color: #A0A09B;
-  border: 1px solid #eee;
-}
-
-.c18 {
-  width: 56px;
-  height: 56px;
-  background-color: #EBEBE8;
-  border: 1px solid #eee;
-}
-
-.c19 {
-  width: 56px;
-  height: 56px;
-  background-color: #6E6E69;
-  border: 1px solid #eee;
-}
-
-.c20 {
-  width: 56px;
-  height: 56px;
-  background-color: #D2F500;
-  border: 1px solid #eee;
-}
-
-.c21 {
-  width: 56px;
-  height: 56px;
-  background-color: #00F0E1;
-  border: 1px solid #eee;
-}
-
-.c22 {
-  width: 56px;
-  height: 56px;
-  background-color: #FFCF00;
-  border: 1px solid #eee;
-}
-
-.c23 {
-  width: 56px;
-  height: 56px;
-  background-color: #FF2B83;
-  border: 1px solid #eee;
-}
-
-.c24 {
-  width: 56px;
-  height: 56px;
-  background-color: #00C8F5;
-  border: 1px solid #eee;
-}
-
-.c25 {
-  width: 56px;
-  height: 56px;
-  background-color: rgba(110,110,105,0.63);
-  border: 1px solid #eee;
-}
-
-.c26 {
-  width: 56px;
-  height: 56px;
-  background-color: #FF1900;
-  border: 1px solid #eee;
-}
-
-.c27 {
-  width: 56px;
-  height: 56px;
-  background-color: #E81700;
-  border: 1px solid #eee;
-}
-
-.c28 {
-  width: 56px;
-  height: 56px;
-  background-color: #00D200;
-  border: 1px solid #eee;
-}
-
-.c29 {
-  width: 56px;
-  height: 56px;
-  background-color: #008A00;
-  border: 1px solid #eee;
-}
-
-.c30 {
-  width: 56px;
-  height: 56px;
-  background-color: hsl(5.899999999999977,100%,35%);
-  border: 1px solid #eee;
-}
-
-.c31 {
-  width: 56px;
-  height: 56px;
-  background-color: hsl(5.899999999999977,100%,31.8%);
-  border: 1px solid #eee;
-}
-
-.c32 {
-  width: 56px;
-  height: 56px;
-  background-color: rgba(0,0,0,0.03);
-  border: 1px solid #eee;
-}
-
-.c33 {
-  width: 56px;
-  height: 56px;
-  background-color: rgba(0,0,0,0.16);
-  border: 1px solid #eee;
-}
-
-.c34 {
-  width: 56px;
-  height: 56px;
-  background-color: rgba(0,0,0,0.05);
-  border: 1px solid #eee;
-}
-
-.c35 {
-  width: 56px;
-  height: 56px;
-  background-color: #3A913F;
-  border: 1px solid #eee;
-}
-
-.c36 {
-  width: 56px;
-  height: 56px;
-  background-color: #C15700;
-  border: 1px solid #eee;
-}
-
-.c37 {
-  width: 56px;
-  height: 56px;
-  background-color: #4B4B46;
-  border: 1px solid #eee;
-}
-
-.c38 {
-  width: 56px;
-  height: 56px;
-  background-color: #385E9D;
-  border: 1px solid #eee;
-}
-
-.c39 {
-  width: 56px;
-  height: 56px;
-  background-color: #D7D7D2;
-  border: 1px solid #eee;
-}
-
-.c40 {
-  width: 56px;
-  height: 56px;
-  background-color: #131F4F;
-  border: 1px solid #eee;
-}
-
-.c41 {
-  width: 56px;
-  height: 56px;
-  background-color: #023C00;
-  border: 1px solid #eee;
-}
-
-.c42 {
-  width: 56px;
-  height: 56px;
-  background-color: #009195;
-  border: 1px solid #eee;
-}
-
-.c43 {
-  width: 56px;
-  height: 56px;
-  background-color: #01424C;
-  border: 1px solid #eee;
-}
-
-@supports (-webkit-overflow-scrolling:touch): {
-  .c4 {
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-}
-
 <table
-  className="c0"
+  className="Table__StyledTable-vgcwcw-0 gApnzk"
   width="100%"
 >
   <thead
-    className="c1"
+    className="Thead__StyledThead-ck14n6-0 kAQXLs"
   >
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <th
-        className="c3"
+        className="Th__StyledTh-sc-1p4dh6v-0 fYKpSm"
         width="auto"
       >
         Name
       </th>
       <th
-        className="c3"
+        className="Th__StyledTh-sc-1p4dh6v-0 fYKpSm"
         width="auto"
       >
         Default
       </th>
       <th
-        className="c3"
+        className="Th__StyledTh-sc-1p4dh6v-0 fYKpSm"
         width="auto"
       >
         A11y
@@ -1212,21 +615,21 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
     </tr>
   </thead>
   <tbody
-    className="c4"
+    className="Tbody__StyledTbody-sc-1d56nd1-0 fNzYDP"
   >
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         backgroundInput
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -1234,10 +637,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -1246,18 +649,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         background
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c7"
+          className="Themestories__Color-skwibd-0 fcPaWP"
           color="#F5F5F5"
         />
         <div>
@@ -1265,10 +668,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c7"
+          className="Themestories__Color-skwibd-0 fcPaWP"
           color="#F5F5F5"
         />
         <div>
@@ -1277,18 +680,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         backgroundBlack
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c8"
+          className="Themestories__Color-skwibd-0 cfyNTM"
           color="#000000"
         />
         <div>
@@ -1296,10 +699,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c8"
+          className="Themestories__Color-skwibd-0 cfyNTM"
           color="#000000"
         />
         <div>
@@ -1308,18 +711,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         backgroundDark
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c9"
+          className="Themestories__Color-skwibd-0 ldgEzN"
           color="#282823"
         />
         <div>
@@ -1327,10 +730,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c9"
+          className="Themestories__Color-skwibd-0 ldgEzN"
           color="#282823"
         />
         <div>
@@ -1339,18 +742,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         bubbleBackground
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -1358,10 +761,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -1370,18 +773,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         bubbleBorder
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c10"
+          className="Themestories__Color-skwibd-0 luMaU"
           color="#BCBCB6"
         />
         <div>
@@ -1389,10 +792,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c10"
+          className="Themestories__Color-skwibd-0 luMaU"
           color="#BCBCB6"
         />
         <div>
@@ -1401,18 +804,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         buttonSecondaryBackground
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -1420,10 +823,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -1432,18 +835,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         buttonText
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -1451,10 +854,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -1463,18 +866,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         buy
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c11"
+          className="Themestories__Color-skwibd-0 iDOsLu"
           color="#0046FF"
         />
         <div>
@@ -1482,10 +885,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c12"
+          className="Themestories__Color-skwibd-0 fIqrpr"
           color="#2D67FF"
         />
         <div>
@@ -1494,18 +897,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         buyActive
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c13"
+          className="Themestories__Color-skwibd-0 ebTpsy"
           color="hsl(223.5, 100%, 35%)"
         />
         <div>
@@ -1513,10 +916,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c14"
+          className="Themestories__Color-skwibd-0 dgntCr"
           color="hsl(223.39999999999998, 100%, 41.2%)"
         />
         <div>
@@ -1525,18 +928,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         borderActive
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c11"
+          className="Themestories__Color-skwibd-0 iDOsLu"
           color="#0046FF"
         />
         <div>
@@ -1544,10 +947,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c12"
+          className="Themestories__Color-skwibd-0 fIqrpr"
           color="#2D67FF"
         />
         <div>
@@ -1556,18 +959,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         card
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -1575,10 +978,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -1587,18 +990,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         cta
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c11"
+          className="Themestories__Color-skwibd-0 iDOsLu"
           color="#0046FF"
         />
         <div>
@@ -1606,10 +1009,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c12"
+          className="Themestories__Color-skwibd-0 fIqrpr"
           color="#2D67FF"
         />
         <div>
@@ -1618,18 +1021,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         creditsPiePrimary
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c15"
+          className="Themestories__Color-skwibd-0 ftqrHQ"
           color="#AC135A"
         />
         <div>
@@ -1637,10 +1040,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c15"
+          className="Themestories__Color-skwibd-0 ftqrHQ"
           color="#AC135A"
         />
         <div>
@@ -1649,18 +1052,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         creditsPieSecondary
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c16"
+          className="Themestories__Color-skwibd-0 kTYrkU"
           color="#78013A"
         />
         <div>
@@ -1668,10 +1071,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c16"
+          className="Themestories__Color-skwibd-0 kTYrkU"
           color="#78013A"
         />
         <div>
@@ -1680,18 +1083,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         disabled
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c17"
+          className="Themestories__Color-skwibd-0 fquUQz"
           color="#A0A09B"
         />
         <div>
@@ -1699,10 +1102,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c17"
+          className="Themestories__Color-skwibd-0 fquUQz"
           color="#A0A09B"
         />
         <div>
@@ -1711,18 +1114,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         disabledText
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c17"
+          className="Themestories__Color-skwibd-0 fquUQz"
           color="#A0A09B"
         />
         <div>
@@ -1730,10 +1133,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c17"
+          className="Themestories__Color-skwibd-0 fquUQz"
           color="#A0A09B"
         />
         <div>
@@ -1742,18 +1145,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         disabledBackground
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c18"
+          className="Themestories__Color-skwibd-0 iLgySx"
           color="#EBEBE8"
         />
         <div>
@@ -1761,10 +1164,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c18"
+          className="Themestories__Color-skwibd-0 iLgySx"
           color="#EBEBE8"
         />
         <div>
@@ -1773,18 +1176,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         divider
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c18"
+          className="Themestories__Color-skwibd-0 iLgySx"
           color="#EBEBE8"
         />
         <div>
@@ -1792,10 +1195,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c18"
+          className="Themestories__Color-skwibd-0 iLgySx"
           color="#EBEBE8"
         />
         <div>
@@ -1804,18 +1207,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         label
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c19"
+          className="Themestories__Color-skwibd-0 fHbKYT"
           color="#6E6E69"
         />
         <div>
@@ -1823,10 +1226,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c19"
+          className="Themestories__Color-skwibd-0 fHbKYT"
           color="#6E6E69"
         />
         <div>
@@ -1835,18 +1238,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         selectOptionBackground
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -1854,10 +1257,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -1866,18 +1269,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         menuAccent1
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c20"
+          className="Themestories__Color-skwibd-0 kfsTJZ"
           color="#D2F500"
         />
         <div>
@@ -1885,10 +1288,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c20"
+          className="Themestories__Color-skwibd-0 kfsTJZ"
           color="#D2F500"
         />
         <div>
@@ -1897,18 +1300,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         menuAccent2
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c21"
+          className="Themestories__Color-skwibd-0 hYdGsW"
           color="#00F0E1"
         />
         <div>
@@ -1916,10 +1319,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c21"
+          className="Themestories__Color-skwibd-0 hYdGsW"
           color="#00F0E1"
         />
         <div>
@@ -1928,18 +1331,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         menuAccent3
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c22"
+          className="Themestories__Color-skwibd-0 fwBLJt"
           color="#FFCF00"
         />
         <div>
@@ -1947,10 +1350,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c22"
+          className="Themestories__Color-skwibd-0 fwBLJt"
           color="#FFCF00"
         />
         <div>
@@ -1959,18 +1362,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         menuAccent4
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c23"
+          className="Themestories__Color-skwibd-0 kwUHSH"
           color="#FF2B83"
         />
         <div>
@@ -1978,10 +1381,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c23"
+          className="Themestories__Color-skwibd-0 kwUHSH"
           color="#FF2B83"
         />
         <div>
@@ -1990,18 +1393,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         menuAccent5
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c24"
+          className="Themestories__Color-skwibd-0 bvSLOI"
           color="#00C8F5"
         />
         <div>
@@ -2009,10 +1412,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c24"
+          className="Themestories__Color-skwibd-0 bvSLOI"
           color="#00C8F5"
         />
         <div>
@@ -2021,18 +1424,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         modalBackdrop
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c25"
+          className="Themestories__Color-skwibd-0 jdHcWn"
           color="rgba(110, 110, 105, 0.63)"
         />
         <div>
@@ -2040,10 +1443,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c25"
+          className="Themestories__Color-skwibd-0 jdHcWn"
           color="rgba(110, 110, 105, 0.63)"
         />
         <div>
@@ -2052,18 +1455,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         module
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -2071,10 +1474,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -2083,18 +1486,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         negative
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c26"
+          className="Themestories__Color-skwibd-0 kyfYZw"
           color="#FF1900"
         />
         <div>
@@ -2102,10 +1505,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c27"
+          className="Themestories__Color-skwibd-0 OHAYz"
           color="#E81700"
         />
         <div>
@@ -2114,18 +1517,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         positive
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c28"
+          className="Themestories__Color-skwibd-0 eTmQfO"
           color="#00D200"
         />
         <div>
@@ -2133,10 +1536,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c29"
+          className="Themestories__Color-skwibd-0 gQpRVN"
           color="#008A00"
         />
         <div>
@@ -2145,18 +1548,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         sell
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c26"
+          className="Themestories__Color-skwibd-0 kyfYZw"
           color="#FF1900"
         />
         <div>
@@ -2164,10 +1567,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c27"
+          className="Themestories__Color-skwibd-0 OHAYz"
           color="#E81700"
         />
         <div>
@@ -2176,18 +1579,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         sellActive
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c30"
+          className="Themestories__Color-skwibd-0 cMLmuR"
           color="hsl(5.899999999999977, 100%, 35%)"
         />
         <div>
@@ -2195,10 +1598,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c31"
+          className="Themestories__Color-skwibd-0 hSuhuP"
           color="hsl(5.899999999999977, 100%, 31.8%)"
         />
         <div>
@@ -2207,18 +1610,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         shadowCard
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c32"
+          className="Themestories__Color-skwibd-0 fDtgnR"
           color="rgba(0, 0, 0, 0.03)"
         />
         <div>
@@ -2226,10 +1629,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c32"
+          className="Themestories__Color-skwibd-0 fDtgnR"
           color="rgba(0, 0, 0, 0.03)"
         />
         <div>
@@ -2238,18 +1641,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         shadowModal
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c33"
+          className="Themestories__Color-skwibd-0 iRpnAZ"
           color="rgba(0, 0, 0, 0.16)"
         />
         <div>
@@ -2257,10 +1660,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c33"
+          className="Themestories__Color-skwibd-0 iRpnAZ"
           color="rgba(0, 0, 0, 0.16)"
         />
         <div>
@@ -2269,18 +1672,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         shadowInput
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c32"
+          className="Themestories__Color-skwibd-0 fDtgnR"
           color="rgba(0, 0, 0, 0.03)"
         />
         <div>
@@ -2288,10 +1691,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c32"
+          className="Themestories__Color-skwibd-0 fDtgnR"
           color="rgba(0, 0, 0, 0.03)"
         />
         <div>
@@ -2300,18 +1703,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         shadowSwitch
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c34"
+          className="Themestories__Color-skwibd-0 cBdKPv"
           color="rgba(0, 0, 0, 0.05)"
         />
         <div>
@@ -2319,10 +1722,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c34"
+          className="Themestories__Color-skwibd-0 cBdKPv"
           color="rgba(0, 0, 0, 0.05)"
         />
         <div>
@@ -2331,18 +1734,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         shareville
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c35"
+          className="Themestories__Color-skwibd-0 bQeHvH"
           color="#3A913F"
         />
         <div>
@@ -2350,10 +1753,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c35"
+          className="Themestories__Color-skwibd-0 bQeHvH"
           color="#3A913F"
         />
         <div>
@@ -2362,18 +1765,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         skeleton
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c18"
+          className="Themestories__Color-skwibd-0 iLgySx"
           color="#EBEBE8"
         />
         <div>
@@ -2381,10 +1784,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c18"
+          className="Themestories__Color-skwibd-0 iLgySx"
           color="#EBEBE8"
         />
         <div>
@@ -2393,18 +1796,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         spinnerBlack
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c8"
+          className="Themestories__Color-skwibd-0 cfyNTM"
           color="#000000"
         />
         <div>
@@ -2412,10 +1815,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c8"
+          className="Themestories__Color-skwibd-0 cfyNTM"
           color="#000000"
         />
         <div>
@@ -2424,18 +1827,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         spinnerWhite
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -2443,10 +1846,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -2455,18 +1858,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         starRating
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c22"
+          className="Themestories__Color-skwibd-0 fwBLJt"
           color="#FFCF00"
         />
         <div>
@@ -2474,10 +1877,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c22"
+          className="Themestories__Color-skwibd-0 fwBLJt"
           color="#FFCF00"
         />
         <div>
@@ -2486,18 +1889,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         starRatingOff
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c18"
+          className="Themestories__Color-skwibd-0 iLgySx"
           color="#EBEBE8"
         />
         <div>
@@ -2505,10 +1908,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c18"
+          className="Themestories__Color-skwibd-0 iLgySx"
           color="#EBEBE8"
         />
         <div>
@@ -2517,18 +1920,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         streamingBolt
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c22"
+          className="Themestories__Color-skwibd-0 fwBLJt"
           color="#FFCF00"
         />
         <div>
@@ -2536,10 +1939,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c22"
+          className="Themestories__Color-skwibd-0 fwBLJt"
           color="#FFCF00"
         />
         <div>
@@ -2548,18 +1951,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         svgFill
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c9"
+          className="Themestories__Color-skwibd-0 ldgEzN"
           color="#282823"
         />
         <div>
@@ -2567,10 +1970,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c9"
+          className="Themestories__Color-skwibd-0 ldgEzN"
           color="#282823"
         />
         <div>
@@ -2579,18 +1982,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         svgStroke
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c19"
+          className="Themestories__Color-skwibd-0 fHbKYT"
           color="#6E6E69"
         />
         <div>
@@ -2598,10 +2001,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c19"
+          className="Themestories__Color-skwibd-0 fHbKYT"
           color="#6E6E69"
         />
         <div>
@@ -2610,18 +2013,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         svgStokeLight
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -2629,10 +2032,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -2641,18 +2044,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         text
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c9"
+          className="Themestories__Color-skwibd-0 ldgEzN"
           color="#282823"
         />
         <div>
@@ -2660,10 +2063,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c9"
+          className="Themestories__Color-skwibd-0 ldgEzN"
           color="#282823"
         />
         <div>
@@ -2672,18 +2075,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         textLight
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -2691,10 +2094,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c6"
+          className="Themestories__Color-skwibd-0 hoENDM"
           color="#FFFFFF"
         />
         <div>
@@ -2703,18 +2106,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         warning
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c22"
+          className="Themestories__Color-skwibd-0 fwBLJt"
           color="#FFCF00"
         />
         <div>
@@ -2722,10 +2125,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c36"
+          className="Themestories__Color-skwibd-0 iyMJAs"
           color="#C15700"
         />
         <div>
@@ -2734,18 +2137,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         inputBorder
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c10"
+          className="Themestories__Color-skwibd-0 luMaU"
           color="#BCBCB6"
         />
         <div>
@@ -2753,10 +2156,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c10"
+          className="Themestories__Color-skwibd-0 luMaU"
           color="#BCBCB6"
         />
         <div>
@@ -2765,18 +2168,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         inputBorderHover
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c37"
+          className="Themestories__Color-skwibd-0 ehXLju"
           color="#4B4B46"
         />
         <div>
@@ -2784,10 +2187,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c37"
+          className="Themestories__Color-skwibd-0 ehXLju"
           color="#4B4B46"
         />
         <div>
@@ -2796,18 +2199,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         flagBorder
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c18"
+          className="Themestories__Color-skwibd-0 iLgySx"
           color="#EBEBE8"
         />
         <div>
@@ -2815,10 +2218,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c18"
+          className="Themestories__Color-skwibd-0 iLgySx"
           color="#EBEBE8"
         />
         <div>
@@ -2827,18 +2230,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         inputBorderError
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c26"
+          className="Themestories__Color-skwibd-0 kyfYZw"
           color="#FF1900"
         />
         <div>
@@ -2846,10 +2249,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c26"
+          className="Themestories__Color-skwibd-0 kyfYZw"
           color="#FF1900"
         />
         <div>
@@ -2858,18 +2261,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         inputBorderSuccess
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c28"
+          className="Themestories__Color-skwibd-0 eTmQfO"
           color="#00D200"
         />
         <div>
@@ -2877,10 +2280,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c28"
+          className="Themestories__Color-skwibd-0 eTmQfO"
           color="#00D200"
         />
         <div>
@@ -2889,18 +2292,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         generationSavingsTimelineColor1
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c35"
+          className="Themestories__Color-skwibd-0 bQeHvH"
           color="#3A913F"
         />
         <div>
@@ -2908,10 +2311,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c35"
+          className="Themestories__Color-skwibd-0 bQeHvH"
           color="#3A913F"
         />
         <div>
@@ -2920,18 +2323,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         generationSavingsTimelineColor2
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c15"
+          className="Themestories__Color-skwibd-0 ftqrHQ"
           color="#AC135A"
         />
         <div>
@@ -2939,10 +2342,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c15"
+          className="Themestories__Color-skwibd-0 ftqrHQ"
           color="#AC135A"
         />
         <div>
@@ -2951,18 +2354,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         generationSavingsTimelineColor3
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c24"
+          className="Themestories__Color-skwibd-0 bvSLOI"
           color="#00C8F5"
         />
         <div>
@@ -2970,10 +2373,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c24"
+          className="Themestories__Color-skwibd-0 bvSLOI"
           color="#00C8F5"
         />
         <div>
@@ -2982,18 +2385,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         generationSavingsTimelineColor4
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c38"
+          className="Themestories__Color-skwibd-0 inaXZW"
           color="#385E9D"
         />
         <div>
@@ -3001,10 +2404,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c38"
+          className="Themestories__Color-skwibd-0 inaXZW"
           color="#385E9D"
         />
         <div>
@@ -3013,18 +2416,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         orderDepthBackground
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c18"
+          className="Themestories__Color-skwibd-0 iLgySx"
           color="#EBEBE8"
         />
         <div>
@@ -3032,10 +2435,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c18"
+          className="Themestories__Color-skwibd-0 iLgySx"
           color="#EBEBE8"
         />
         <div>
@@ -3044,18 +2447,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         orderDepthDarkBackground
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c39"
+          className="Themestories__Color-skwibd-0 ctNWCC"
           color="#D7D7D2"
         />
         <div>
@@ -3063,10 +2466,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c39"
+          className="Themestories__Color-skwibd-0 ctNWCC"
           color="#D7D7D2"
         />
         <div>
@@ -3075,18 +2478,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         loanRatesGraphColor2
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c40"
+          className="Themestories__Color-skwibd-0 jKAvQf"
           color="#131F4F"
         />
         <div>
@@ -3094,10 +2497,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c40"
+          className="Themestories__Color-skwibd-0 jKAvQf"
           color="#131F4F"
         />
         <div>
@@ -3106,18 +2509,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         barChartColor1
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c24"
+          className="Themestories__Color-skwibd-0 bvSLOI"
           color="#00C8F5"
         />
         <div>
@@ -3125,10 +2528,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c24"
+          className="Themestories__Color-skwibd-0 bvSLOI"
           color="#00C8F5"
         />
         <div>
@@ -3137,18 +2540,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         barChartColor2
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c40"
+          className="Themestories__Color-skwibd-0 jKAvQf"
           color="#131F4F"
         />
         <div>
@@ -3156,10 +2559,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c40"
+          className="Themestories__Color-skwibd-0 jKAvQf"
           color="#131F4F"
         />
         <div>
@@ -3168,18 +2571,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         barChartColor3
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c38"
+          className="Themestories__Color-skwibd-0 inaXZW"
           color="#385E9D"
         />
         <div>
@@ -3187,10 +2590,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c38"
+          className="Themestories__Color-skwibd-0 inaXZW"
           color="#385E9D"
         />
         <div>
@@ -3199,18 +2602,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         barChartColor4
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c35"
+          className="Themestories__Color-skwibd-0 bQeHvH"
           color="#3A913F"
         />
         <div>
@@ -3218,10 +2621,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c35"
+          className="Themestories__Color-skwibd-0 bQeHvH"
           color="#3A913F"
         />
         <div>
@@ -3230,18 +2633,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         barChartColor5
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c15"
+          className="Themestories__Color-skwibd-0 ftqrHQ"
           color="#AC135A"
         />
         <div>
@@ -3249,10 +2652,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c15"
+          className="Themestories__Color-skwibd-0 ftqrHQ"
           color="#AC135A"
         />
         <div>
@@ -3261,18 +2664,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         barChartColor6
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c22"
+          className="Themestories__Color-skwibd-0 fwBLJt"
           color="#FFCF00"
         />
         <div>
@@ -3280,10 +2683,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c22"
+          className="Themestories__Color-skwibd-0 fwBLJt"
           color="#FFCF00"
         />
         <div>
@@ -3292,18 +2695,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         barChartColor7
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c35"
+          className="Themestories__Color-skwibd-0 bQeHvH"
           color="#3A913F"
         />
         <div>
@@ -3311,10 +2714,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c35"
+          className="Themestories__Color-skwibd-0 bQeHvH"
           color="#3A913F"
         />
         <div>
@@ -3323,18 +2726,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         columnChartColor1
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c20"
+          className="Themestories__Color-skwibd-0 kfsTJZ"
           color="#D2F500"
         />
         <div>
@@ -3342,10 +2745,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c20"
+          className="Themestories__Color-skwibd-0 kfsTJZ"
           color="#D2F500"
         />
         <div>
@@ -3354,18 +2757,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         columnChartColor2
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c41"
+          className="Themestories__Color-skwibd-0 krPrhS"
           color="#023C00"
         />
         <div>
@@ -3373,10 +2776,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c41"
+          className="Themestories__Color-skwibd-0 krPrhS"
           color="#023C00"
         />
         <div>
@@ -3385,18 +2788,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         columnChartColor3
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c35"
+          className="Themestories__Color-skwibd-0 bQeHvH"
           color="#3A913F"
         />
         <div>
@@ -3404,10 +2807,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c35"
+          className="Themestories__Color-skwibd-0 bQeHvH"
           color="#3A913F"
         />
         <div>
@@ -3416,18 +2819,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         columnChartColor4
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c42"
+          className="Themestories__Color-skwibd-0 PkofA"
           color="#009195"
         />
         <div>
@@ -3435,10 +2838,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c42"
+          className="Themestories__Color-skwibd-0 PkofA"
           color="#009195"
         />
         <div>
@@ -3447,18 +2850,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         columnChartColor5
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c43"
+          className="Themestories__Color-skwibd-0 khxDFU"
           color="#01424C"
         />
         <div>
@@ -3466,10 +2869,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c43"
+          className="Themestories__Color-skwibd-0 khxDFU"
           color="#01424C"
         />
         <div>
@@ -3478,18 +2881,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         pieChartColor1
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c16"
+          className="Themestories__Color-skwibd-0 kTYrkU"
           color="#78013A"
         />
         <div>
@@ -3497,10 +2900,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c16"
+          className="Themestories__Color-skwibd-0 kTYrkU"
           color="#78013A"
         />
         <div>
@@ -3509,18 +2912,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         pieChartColor2
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c23"
+          className="Themestories__Color-skwibd-0 kwUHSH"
           color="#FF2B83"
         />
         <div>
@@ -3528,10 +2931,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c23"
+          className="Themestories__Color-skwibd-0 kwUHSH"
           color="#FF2B83"
         />
         <div>
@@ -3540,18 +2943,18 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         pieChartColor3
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c10"
+          className="Themestories__Color-skwibd-0 luMaU"
           color="#BCBCB6"
         />
         <div>
@@ -3559,10 +2962,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         </div>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <div
-          className="c10"
+          className="Themestories__Color-skwibd-0 luMaU"
           color="#BCBCB6"
         />
         <div>
@@ -3575,94 +2978,30 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
 `;
 
 exports[`Storyshots Theme Screen sizes 1`] = `
-.c0 {
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
-}
-
-.c1 {
-  width: 100%;
-  border-bottom: 1px solid #EBEBE8;
-}
-
-.c4 {
-  width: 100%;
-  overflow: 'auto';
-}
-
-.c2 {
-  height: 100%;
-  padding: 8px 0;
-  overflow: 'hidden';
-}
-
-.c2:not(:first-child) {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c5 {
-  height: 100%;
-  padding: 8px 4px;
-  text-align: left;
-}
-
-.c5:first-child {
-  padding-left: 0;
-}
-
-.c5:last-child {
-  padding-right: 0;
-}
-
-.c3 {
-  color: #6E6E69;
-  font-weight: normal;
-  height: 100%;
-  padding: 8px 4px;
-  text-align: left;
-  width: auto;
-}
-
-.c3:first-child {
-  padding-left: 0;
-}
-
-.c3:last-child {
-  padding-right: 0;
-}
-
-@supports (-webkit-overflow-scrolling:touch): {
-  .c4 {
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-}
-
 <table
-  className="c0"
+  className="Table__StyledTable-vgcwcw-0 gApnzk"
   width="100%"
 >
   <thead
-    className="c1"
+    className="Thead__StyledThead-ck14n6-0 kAQXLs"
   >
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <th
-        className="c3"
+        className="Th__StyledTh-sc-1p4dh6v-0 fYKpSm"
         width="auto"
       >
         Name
       </th>
       <th
-        className="c3"
+        className="Th__StyledTh-sc-1p4dh6v-0 fYKpSm"
         width="auto"
       >
         Size
       </th>
       <th
-        className="c3"
+        className="Th__StyledTh-sc-1p4dh6v-0 fYKpSm"
         width="auto"
       >
         Offset
@@ -3670,25 +3009,25 @@ exports[`Storyshots Theme Screen sizes 1`] = `
     </tr>
   </thead>
   <tbody
-    className="c4"
+    className="Tbody__StyledTbody-sc-1d56nd1-0 fNzYDP"
   >
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         sm
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <pre>
           760
         </pre>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <pre>
           5
@@ -3697,22 +3036,22 @@ exports[`Storyshots Theme Screen sizes 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         md
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <pre>
           976
         </pre>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <pre>
           5
@@ -3721,22 +3060,22 @@ exports[`Storyshots Theme Screen sizes 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         lg
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <pre>
           1280
         </pre>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <pre>
           5
@@ -3745,22 +3084,22 @@ exports[`Storyshots Theme Screen sizes 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="Tr__StyledTr-sc-1aap6l7-0 ddBema"
     >
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         xl
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <pre>
           1600
         </pre>
       </td>
       <td
-        className="c5"
+        className="Td__StyledTd-sc-1r6yxrk-0 lkkgce"
       >
         <pre>
           5

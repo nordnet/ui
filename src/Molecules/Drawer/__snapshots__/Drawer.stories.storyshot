@@ -1,144 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Drawer Default 1`] = `
-.c6 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c7 {
-  stroke: #6E6E69;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c4 {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.c8 {
-  overflow-y: auto;
-  overflow-x: hidden;
-  margin-bottom: 20px;
-  padding: 0 20px;
-}
-
-.c1 {
-  padding-right: 16px;
-}
-
-.c0 {
-  position: relative;
-  padding: 20px 20px 0 20px;
-  margin-bottom: 8px;
-  min-height: 20px;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-@media (min-width:760px) {
-  .c2 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
-
-}
-
-@media (min-width:1600px) {
-
-}
-
 <div>
   <button
     onClick={[Function]}
@@ -189,36 +51,36 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
       >
         <div>
           <div
-            className="c0"
+            className="Drawer__TitleWrapper-sc-1ebdzul-4 iBLwhJ"
             onTouchStart={[Function]}
           >
             <span
               id="1val-Drawer"
             >
               <h2
-                className="c1 c2"
+                className="Drawer__H2-sc-1ebdzul-3 ceBblk Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ekyJLf"
               >
                 Drawer title
               </h2>
             </span>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c3 c4"
+              className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kJslgx Drawer__CloseButton-sc-1ebdzul-1 iHARyV"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c5"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
               >
                 <svg
                   aria-hidden="false"
-                  className="c6"
+                  className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="img"
                   viewBox="0 0 24 24"
                 >
                   <path
-                    className="c7"
+                    className="CrossThin__StyledPath-sc-1a8pgle-0 jFUCAe"
                     d="m 1 1 l 22 22 m -22 0 l 22 -22"
                     strokeWidth={2}
                   />
@@ -230,16 +92,16 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
             </button>
           </div>
           <div
-            className="c8"
+            className="Drawer__Content-sc-1ebdzul-2 bboXsW"
           >
             <div>
               <p
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
               >
                 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
               </p>
               <span
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
               >
                 <ul>
                   <li>
@@ -257,7 +119,7 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
                 </ul>
               </span>
               <p
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
               >
                 Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
               </p>
@@ -286,237 +148,6 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  min-height: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: auto;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
-  position: relative;
-  position: relative;
-}
-
-.c9::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 52px;
-  position: absolute;
-  left: 0;
-  pointer-events: none;
-  background: transparent;
-  z-index: 1;
-  opacity: 0;
-  top: 0;
-  background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
-}
-
-.c9::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 52px;
-  position: absolute;
-  left: 0;
-  pointer-events: none;
-  background: transparent;
-  z-index: 1;
-  opacity: 0;
-  bottom: 0;
-  background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
-}
-
-.c10 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  min-height: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: auto;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
-  overflow-y: auto;
-}
-
-.c11 {
-  position: relative;
-  overflow-x: hidden;
-}
-
-.c14 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  bottom: 0;
-}
-
-.c12 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  top: 0;
-}
-
-.c6 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c7 {
-  stroke: #6E6E69;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c4 {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.c8 {
-  overflow-y: auto;
-  overflow-x: hidden;
-  margin-bottom: 20px;
-  padding: 0 20px;
-}
-
-.c1 {
-  padding-right: 16px;
-}
-
-.c0 {
-  position: relative;
-  padding: 20px 20px 0 20px;
-  margin-bottom: 8px;
-  min-height: 20px;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-@media (min-width:760px) {
-  .c2 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
-
-}
-
-@media (min-width:1600px) {
-
-}
-
 <div>
   <button
     onClick={[Function]}
@@ -567,36 +198,36 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
       >
         <div>
           <div
-            className="c0"
+            className="Drawer__TitleWrapper-sc-1ebdzul-4 iBLwhJ"
             onTouchStart={[Function]}
           >
             <span
               id="3val-Drawer"
             >
               <h2
-                className="c1 c2"
+                className="Drawer__H2-sc-1ebdzul-3 ceBblk Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ekyJLf"
               >
                 Drawer title
               </h2>
             </span>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c3 c4"
+              className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kJslgx Drawer__CloseButton-sc-1ebdzul-1 iHARyV"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c5"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
               >
                 <svg
                   aria-hidden="false"
-                  className="c6"
+                  className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="img"
                   viewBox="0 0 24 24"
                 >
                   <path
-                    className="c7"
+                    className="CrossThin__StyledPath-sc-1a8pgle-0 jFUCAe"
                     d="m 1 1 l 22 22 m -22 0 l 22 -22"
                     strokeWidth={2}
                   />
@@ -608,28 +239,28 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
             </button>
           </div>
           <div
-            className="c8"
+            className="Drawer__Content-sc-1ebdzul-2 bboXsW"
           >
             <div
-              className="c9"
+              className="FadedScroll__Container-sc-134qq0d-0 xzNjy"
             >
               <div
-                className="c10"
+                className="FadedScroll__Scroller-sc-134qq0d-1 iWgyxh"
               >
                 <div
-                  className="c11"
+                  className="FadedScroll__Content-sc-134qq0d-2 hzHbxu"
                 >
                   <div
-                    className="c12"
+                    className="FadedScroll__IntersectionTop-sc-134qq0d-4 crnks"
                   />
                   <div>
                     <p
-                      className="c13"
+                      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
                     >
                       Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
                     </p>
                     <span
-                      className="c13"
+                      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
                     >
                       <ul>
                         <li>
@@ -647,13 +278,13 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
                       </ul>
                     </span>
                     <p
-                      className="c13"
+                      className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
                     >
                       Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
                     </p>
                   </div>
                   <div
-                    className="c14"
+                    className="FadedScroll__IntersectionBottom-sc-134qq0d-3 bLKvVr"
                   />
                 </div>
               </div>
@@ -682,163 +313,6 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
 `;
 
 exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c2 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c7 {
-  stroke: #6E6E69;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c4 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c5 {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.c8 {
-  overflow-y: auto;
-  overflow-x: hidden;
-  margin-bottom: 20px;
-  padding: 0 20px;
-}
-
-.c0 {
-  position: relative;
-  padding: 20px 20px 0 20px;
-  margin-bottom: 8px;
-  min-height: 20px;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-@media (min-width:760px) {
-  .c3 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
-
-}
-
-@media (min-width:1600px) {
-
-}
-
 <div>
   <button
     onClick={[Function]}
@@ -889,18 +363,18 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
       >
         <div>
           <div
-            className="c0"
+            className="Drawer__TitleWrapper-sc-1ebdzul-4 iBLwhJ"
             onTouchStart={[Function]}
           >
             <span
               id="2val-Drawer"
             >
               <div
-                className="c1"
+                className="Flexbox__StyledFlexbox-sc-1ob4g1e-0 eJlHQf"
               >
                 <svg
                   aria-hidden="true"
-                  className="c2"
+                  className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -911,30 +385,30 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
                   />
                 </svg>
                 <h2
-                  className="c3"
+                  className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ekyJLf"
                 >
                   Custom title
                 </h2>
               </div>
             </span>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c4 c5"
+              className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kJslgx Drawer__CloseButton-sc-1ebdzul-1 iHARyV"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c6"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
               >
                 <svg
                   aria-hidden="false"
-                  className="c2"
+                  className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="img"
                   viewBox="0 0 24 24"
                 >
                   <path
-                    className="c7"
+                    className="CrossThin__StyledPath-sc-1a8pgle-0 jFUCAe"
                     d="m 1 1 l 22 22 m -22 0 l 22 -22"
                     strokeWidth={2}
                   />
@@ -946,11 +420,11 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
             </button>
           </div>
           <div
-            className="c8"
+            className="Drawer__Content-sc-1ebdzul-2 bboXsW"
           >
             <div>
               <p
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
               >
                 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
               </p>
@@ -979,144 +453,6 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
 `;
 
 exports[`Storyshots Molecules | Drawer With ref story 1`] = `
-.c6 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c7 {
-  stroke: #6E6E69;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c4 {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.c8 {
-  overflow-y: auto;
-  overflow-x: hidden;
-  margin-bottom: 20px;
-  padding: 0 20px;
-}
-
-.c1 {
-  padding-right: 16px;
-}
-
-.c0 {
-  position: relative;
-  padding: 20px 20px 0 20px;
-  margin-bottom: 8px;
-  min-height: 20px;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-@media (min-width:760px) {
-  .c2 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
-
-}
-
-@media (min-width:1600px) {
-
-}
-
 <div>
   <button
     onClick={[Function]}
@@ -1167,36 +503,36 @@ exports[`Storyshots Molecules | Drawer With ref story 1`] = `
       >
         <div>
           <div
-            className="c0"
+            className="Drawer__TitleWrapper-sc-1ebdzul-4 iBLwhJ"
             onTouchStart={[Function]}
           >
             <span
               id="4val-Drawer"
             >
               <h2
-                className="c1 c2"
+                className="Drawer__H2-sc-1ebdzul-3 ceBblk Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 ekyJLf"
               >
                 Drawer title
               </h2>
             </span>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c3 c4"
+              className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kJslgx Drawer__CloseButton-sc-1ebdzul-1 iHARyV"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c5"
+                className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 koEYRB"
               >
                 <svg
                   aria-hidden="false"
-                  className="c6"
+                  className="IconBase__StyledIconBase-sc-10cbji3-0 jQLYEV"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="img"
                   viewBox="0 0 24 24"
                 >
                   <path
-                    className="c7"
+                    className="CrossThin__StyledPath-sc-1a8pgle-0 jFUCAe"
                     d="m 1 1 l 22 22 m -22 0 l 22 -22"
                     strokeWidth={2}
                   />
@@ -1208,10 +544,10 @@ exports[`Storyshots Molecules | Drawer With ref story 1`] = `
             </button>
           </div>
           <div
-            className="c8"
+            className="Drawer__Content-sc-1ebdzul-2 bboXsW"
           >
             <span
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 AEhz Typography__StyledTypography-sc-10mju41-1 dkRrrO"
             >
               This Drawer uses a forwardRef. The ref is used with useOnClickOutside hook. Try to click outside the Drawer to close it.
             </span>
