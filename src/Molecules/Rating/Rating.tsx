@@ -13,7 +13,7 @@ const restrictRange = (rating: Props['rating']) => {
   return rating;
 };
 
-export const Rating: RatingComponent = ({ rating = 0, intl: { formatMessage } }) => {
+export const Rating: RatingComponent = ({ rating = 0, size = 5, intl: { formatMessage } }) => {
   const finalRating = restrictRange(rating);
   return (
     <Flexbox container gutter={1}>
@@ -21,7 +21,7 @@ export const Rating: RatingComponent = ({ rating = 0, intl: { formatMessage } })
       {[...Array(5)].map((_, index) => (
         <Icon.Star
           key={index} // eslint-disable-line react/no-array-index-key
-          size={5}
+          size={size}
           stroke={t => (index >= finalRating ? t.color.starRatingOff : t.color.starRating)}
           fill={t => (index >= finalRating ? t.color.starRatingOff : t.color.starRating)}
         />

@@ -19,3 +19,4 @@ export const Rating0 = () => <Rating {...getRatingProps({ rating: 0 })} />;
 export const Rating1 = () => <Rating {...getRatingProps({ rating: 1 })} />;
 export const Rating5 = () => <Rating {...getRatingProps({ rating: 5 })} />;
 export const RatingNotDefined = () => <Rating {...getRatingProps({ rating: undefined })} />;
+export const RatingWithSize = () => <Rating size={4} {...getRatingProps({ rating: 3 })} />;
