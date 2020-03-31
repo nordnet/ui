@@ -21,7 +21,7 @@ export const Rating: RatingComponent = ({ rating = 0, intl: { formatMessage } })
       {[...Array(5)].map((_, index) => (
         <Icon.Star
           key={index} // eslint-disable-line react/no-array-index-key
-          size={3}
+          size={5}
           stroke={t => (index >= finalRating ? t.color.starRatingOff : t.color.starRating)}
           fill={t => (index >= finalRating ? t.color.starRatingOff : t.color.starRating)}
         />

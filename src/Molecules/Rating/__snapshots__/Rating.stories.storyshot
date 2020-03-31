@@ -34,8 +34,8 @@ exports[`Storyshots Molecules | Rating Rating 0 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   fill: #EBEBE8;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -162,8 +162,8 @@ exports[`Storyshots Molecules | Rating Rating 1 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   fill: #FFCF00;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -176,8 +176,8 @@ exports[`Storyshots Molecules | Rating Rating 1 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   fill: #EBEBE8;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -308,8 +308,8 @@ exports[`Storyshots Molecules | Rating Rating 5 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   fill: #FFCF00;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -436,8 +436,8 @@ exports[`Storyshots Molecules | Rating Rating Not Defined 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   fill: #EBEBE8;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
