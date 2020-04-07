@@ -430,6 +430,43 @@ Array [
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M4 0v4h1v3H4v9H2V7H1V4h1V0h2zm5 0v8h1v5H9v3H7v-3H6V8h1V0h2zm5 0v2h1v2h-1v12h-2V4h-1V2h1V0h2z"
+        fill="#282823"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
       viewBox="0 0 24 24"
     >
       <path
@@ -1454,6 +1491,43 @@ Array [
     >
       <path
         d="M12,2.66453526e-15 L12,2.999 L16,3 L16,16 L0,16 L0,3 L4,2.999 L4,2.66453526e-15 L12,2.66453526e-15 Z M4,3.999 L1,4 L1,15 L15,15 L15,4 L12,3.999 L12,4 L4,4 L4,3.999 Z M8.5,6 L8.5,9 L11.5,9 L11.5,10 L8.5,10 L8.5,13 L7.5,13 L7.5,10 L4.5,10 L4.5,9 L7.5,9 L7.5,6 L8.5,6 Z M11,1 L5,1 L5,3 L11,3 L11,1 Z"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M2 0v13.999L16 14v2l-14-.001V16H0V0h2zm12.213.034l1.757.955-4.531 8.34-3.991-2.014-2.647 5.189-1.782-.909 3.552-6.961 4.036 2.036L14.213.034z"
+        fill="#282823"
         fillRule="evenodd"
       />
     </svg>
@@ -3280,6 +3354,41 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div
       className="c2"
     >
+      CandleSticks
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M4 0v4h1v3H4v9H2V7H1V4h1V0h2zm5 0v8h1v5H9v3H7v-3H6V8h1V0h2zm5 0v2h1v2h-1v12h-2V4h-1V2h1V0h2z"
+            fill="#282823"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       CheckMark
     </div>
     <div>
@@ -4255,6 +4364,41 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
         >
           <path
             d="M12,2.66453526e-15 L12,2.999 L16,3 L16,16 L0,16 L0,3 L4,2.999 L4,2.66453526e-15 L12,2.66453526e-15 Z M4,3.999 L1,4 L1,15 L15,15 L15,4 L12,3.999 L12,4 L4,4 L4,3.999 Z M8.5,6 L8.5,9 L11.5,9 L11.5,10 L8.5,10 L8.5,13 L7.5,13 L7.5,10 L4.5,10 L4.5,9 L7.5,9 L7.5,6 L8.5,6 Z M11,1 L5,1 L5,3 L11,3 L11,1 Z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      LineGraph
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M2 0v13.999L16 14v2l-14-.001V16H0V0h2zm12.213.034l1.757.955-4.531 8.34-3.991-2.014-2.647 5.189-1.782-.909 3.552-6.961 4.036 2.036L14.213.034z"
+            fill="#282823"
             fillRule="evenodd"
           />
         </svg>
