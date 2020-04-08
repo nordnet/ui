@@ -434,7 +434,6 @@ Array [
     >
       <path
         d="M4 0v4h1v3H4v9H2V7H1V4h1V0h2zm5 0v8h1v5H9v3H7v-3H6V8h1V0h2zm5 0v2h1v2h-1v12h-2V4h-1V2h1V0h2z"
-        fill="#282823"
         fillRule="evenodd"
       />
     </svg>
@@ -1527,7 +1526,6 @@ Array [
     >
       <path
         d="M2 0v13.999L16 14v2l-14-.001V16H0V0h2zm12.213.034l1.757.955-4.531 8.34-3.991-2.014-2.647 5.189-1.782-.909 3.552-6.961 4.036 2.036L14.213.034z"
-        fill="#282823"
         fillRule="evenodd"
       />
     </svg>
@@ -3422,7 +3420,6 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
         >
           <path
             d="M4 0v4h1v3H4v9H2V7H1V4h1V0h2zm5 0v8h1v5H9v3H7v-3H6V8h1V0h2zm5 0v2h1v2h-1v12h-2V4h-1V2h1V0h2z"
-            fill="#282823"
             fillRule="evenodd"
           />
         </svg>
@@ -4445,7 +4442,6 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
         >
           <path
             d="M2 0v13.999L16 14v2l-14-.001V16H0V0h2zm12.213.034l1.757.955-4.531 8.34-3.991-2.014-2.647 5.189-1.782-.909 3.552-6.961 4.036 2.036L14.213.034z"
-            fill="#282823"
             fillRule="evenodd"
           />
         </svg>
