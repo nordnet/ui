@@ -1,3 +1,16 @@
+# [2.31.0](https://github.com/nordnet/ui/compare/v2.30.0...v2.31.0) (2020-04-08)
+
+
+### Bug Fixes
+
+* add case for each thin arrow state ([a308eb8](https://github.com/nordnet/ui/commit/a308eb8))
+* snapshots ([0402104](https://github.com/nordnet/ui/commit/0402104))
+
+
+### Features
+
+* add thin arrow icon ([55ef9ce](https://github.com/nordnet/ui/commit/55ef9ce))
+
 # [2.30.0](https://github.com/nordnet/ui/compare/v2.29.0...v2.30.0) (2020-04-06)
 
 

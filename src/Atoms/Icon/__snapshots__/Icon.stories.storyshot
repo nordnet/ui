@@ -2802,6 +2802,47 @@ Array [
       />
     </svg>
   </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  -webkit-transform: rotate(undefineddeg);
+  -ms-transform: rotate(undefineddeg);
+  transform: rotate(undefineddeg);
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0 c1"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 15 16"
+    >
+      <path
+        d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z"
+      />
+    </svg>
+  </div>,
 ]
 `;
 
@@ -2906,6 +2947,12 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
 
 .c15 {
   fill: #FFFFFF;
+}
+
+.c16 {
+  -webkit-transform: rotate(undefineddeg);
+  -ms-transform: rotate(undefineddeg);
+  transform: rotate(undefineddeg);
 }
 
 .c0 {
@@ -5597,6 +5644,39 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
       </div>
     </div>
   </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      ThinArrow
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3 c16"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 15 16"
+        >
+          <path
+            d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
@@ -5689,6 +5769,158 @@ exports[`Storyshots Atoms | Icon Inline 1`] = `
     />
   </svg>
    directly in the text with inline prop!
+</span>
+`;
+
+exports[`Storyshots Atoms | Icon Thin Arrow Down 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+<span>
+  <svg
+    aria-hidden="true"
+    className="c0 c1"
+    direction="down"
+    focusable="false"
+    preserveAspectRatio="xMidYMid meet"
+    role="presentation"
+    viewBox="0 0 15 16"
+  >
+    <path
+      d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Storyshots Atoms | Icon Thin Arrow Left 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+<span>
+  <svg
+    aria-hidden="true"
+    className="c0 c1"
+    direction="left"
+    focusable="false"
+    preserveAspectRatio="xMidYMid meet"
+    role="presentation"
+    viewBox="0 0 15 16"
+  >
+    <path
+      d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Storyshots Atoms | Icon Thin Arrow Right 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+<span>
+  <svg
+    aria-hidden="true"
+    className="c0 c1"
+    direction="right"
+    focusable="false"
+    preserveAspectRatio="xMidYMid meet"
+    role="presentation"
+    viewBox="0 0 15 16"
+  >
+    <path
+      d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Storyshots Atoms | Icon Thin Arrow Up 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+<span>
+  <svg
+    aria-hidden="true"
+    className="c0 c1"
+    direction="up"
+    focusable="false"
+    preserveAspectRatio="xMidYMid meet"
+    role="presentation"
+    viewBox="0 0 15 16"
+  >
+    <path
+      d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z"
+    />
+  </svg>
 </span>
 `;
 

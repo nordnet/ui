@@ -1,9 +1,11 @@
 import React from 'react';
+import { select, withKnobs } from '@storybook/addon-knobs';
 import { Icon } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
   title: 'Atoms | Icon',
+  decorators: [withKnobs],
 };
 
 export const defaultUse = () => <Icon.ArrowRight />;
@@ -15,6 +17,30 @@ defaultUse.story = {
 export const inlineStory = () => (
   <span>
     You can put the <Icon.ArrowRight inline /> directly in the text with inline prop!
+  </span>
+);
+
+export const thinArrowUp = () => (
+  <span>
+    <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'up')} />
+  </span>
+);
+
+export const thinArrowRight = () => (
+  <span>
+    <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'right')} />
+  </span>
+);
+
+export const thinArrowDown = () => (
+  <span>
+    <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'down')} />
+  </span>
+);
+
+export const thinArrowLeft = () => (
+  <span>
+    <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'left')} />
   </span>
 );
 
