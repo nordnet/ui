@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link, Typography } from '../..';
-import { LinkSellComponent, Props } from './LinkSell.types';
+import { LinkSellComponent, Props, UsedLinkProps } from './LinkSell.types';
 
 // TODO: change the 0.5 unit padding top when line-height is divisible by the unit (4px)
 // prettier-ignore
-const StyledLink = styled(Link)<Props>`
+const StyledLink = styled(Link)<Props & UsedLinkProps>`
   color: ${p => (p.disabled ? p.theme.color.disabled : p.theme.color.sell)};
   padding: ${p => p.theme.spacing.unit(0.5)}px ${p => p.theme.spacing.unit(1)}px;
 

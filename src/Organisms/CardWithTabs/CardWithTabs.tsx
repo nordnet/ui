@@ -13,13 +13,25 @@ const CustomCardWithTitle = styled(CardWithTitle)`
   }
 `;
 
-const CardWithTabs: Component = ({ children, initialActiveTabIndex, activeTabIndex, ...rest }) => (
-  <CustomCardWithTitle {...rest}>
-    <StyledTabs activeTabIndex={activeTabIndex} initialActiveTabIndex={initialActiveTabIndex}>
-      {children}
-    </StyledTabs>
-  </CustomCardWithTitle>
-);
+const CardWithTabs: Component = ({
+  children,
+  initialActiveTabIndex,
+  activeTabIndex,
+  title,
+  ...rest
+}) => {
+  if (!title) {
+    return null;
+  }
+
+  return (
+    <CustomCardWithTitle {...rest}>
+      <StyledTabs activeTabIndex={activeTabIndex} initialActiveTabIndex={initialActiveTabIndex}>
+        {children}
+      </StyledTabs>
+    </CustomCardWithTitle>
+  );
+};
 
 CardWithTabs.Tab = Tabs.Tab;
 
