@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as R from 'ramda';
 import { Card } from '../..';
 import { CardWithTitleComponent } from './CardWithTitle.types';
 
@@ -13,8 +12,6 @@ const StyledCard = styled(Card)`
   flex-direction: column;
   max-height: 100%;
 `;
-
-const omitProps = R.omit(['children', 'title']);
 
 const components = { StyledHeader };
 
@@ -31,10 +28,10 @@ export const CardWithTitle: CardWithTitleComponent & {
    * */
   components: typeof components;
 } = props => {
-  const { title, children } = props;
+  const { title, children, ...rest } = props;
 
   return (
-    <StyledCard {...omitProps(props)}>
+    <StyledCard {...rest}>
       <StyledHeader>{title}</StyledHeader>
       {children}
     </StyledCard>

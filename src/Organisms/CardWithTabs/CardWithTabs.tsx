@@ -13,17 +13,9 @@ const CustomCardWithTitle = styled(CardWithTitle)`
   }
 `;
 
-const CardWithTabs: Component = ({
-  children,
-  initialActiveTabIndex,
-  activeTabIndex,
-  title,
-  ...rest
-}) => {
-  if (!title) {
-    return null;
-  }
-
+const CardWithTabs: Component & {
+  Tab: typeof Tabs.Tab;
+} = ({ activeTabIndex, children, initialActiveTabIndex, ...rest }) => {
   return (
     <CustomCardWithTitle {...rest}>
       <StyledTabs activeTabIndex={activeTabIndex} initialActiveTabIndex={initialActiveTabIndex}>
