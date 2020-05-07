@@ -247,6 +247,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       indicatorPillColor9: rawColor.complementaryBlue2,
       indicatorPillColor10: rawColor.complementaryPink2,
     },
+    isHighContrastMode: a11yColors,
     media: {
       between: (s1, s2) => {
         const number1 = isNumber(s1) ? s1 : s1.size;
