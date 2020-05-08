@@ -1,3 +1,10 @@
+# [2.35.0](https://github.com/nordnet/ui/compare/v2.34.1...v2.35.0) (2020-05-08)
+
+
+### Features
+
+* 🎸 implement slider component ([743d158](https://github.com/nordnet/ui/commit/743d158))
+
 ## [2.34.1](https://github.com/nordnet/ui/compare/v2.34.0...v2.34.1) (2020-05-07)
 
 

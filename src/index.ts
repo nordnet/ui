@@ -48,6 +48,7 @@ import PageHeaderCard from './Molecules/PageHeaderCard';
 import PageWrapper from './Molecules/PageWrapper';
 import Rating from './Molecules/Rating';
 import Select from './Molecules/Select';
+import Slider from './Molecules/Slider';
 import Switch from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
@@ -109,6 +110,7 @@ export {
   /** @deprecated */ Select,
   Separator,
   Skeleton,
+  Slider,
   Spinner,
   Switch,
   Table,

@@ -252,6 +252,18 @@ export type Theme = {
     pill10: RawColor['complementaryPink2'];
     /** complementaryPink2 */
     indicatorPillColor10: RawColor['complementaryPink2'];
+    /** brandGreen */
+    sliderLeftColor: RawColor['brandGreen'];
+    /** gray6 */
+    sliderRightColor: RawColor['gray6'];
+    /** white */
+    sliderThumbColor: RawColor['white'];
+    /** gray4 */
+    sliderThumbBackground: RawColor['gray4'];
+    /** gray4 */
+    sliderThumbBorder: RawColor['gray4'];
+    /** cta */
+    sliderThumbActive: RawColor['cta'];
   };
 
   spacing: {

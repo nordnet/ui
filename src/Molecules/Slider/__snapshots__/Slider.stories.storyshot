@@ -1,0 +1,641 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | Slider Custom Colors 1`] = `
+Array [
+  .c0 {
+  background: linear-gradient( to right,#00D200 0% 50%,#FF1900 50% 100% );
+  height: 15px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.c1 {
+  max-width: 100%;
+  height: 15px;
+  margin: 5px auto;
+  position: relative;
+  width: calc(100% - 30px);
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #FFFFFF;
+  border: 1px solid #BCBCB6;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.c2:focus {
+  border: 1px solid #0046FF;
+}
+
+.c3 {
+  background: #BCBCB6;
+  height: 2px;
+  position: absolute;
+  width: 12px;
+}
+
+.c3:before {
+  background: #BCBCB6;
+  height: 2px;
+  position: absolute;
+  width: 12px;
+  content: '';
+  top: -6px;
+}
+
+.c3:after {
+  background: #BCBCB6;
+  height: 2px;
+  position: absolute;
+  width: 12px;
+  content: '';
+  top: 6px;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "linear-gradient(to right, #00D200 50% , #FF1900 50%)",
+        }
+      }
+    >
+      <div
+        aria-valuemax={100}
+        aria-valuemin={0}
+        aria-valuenow={50}
+        className="c2"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        role="slider"
+        style={
+          Object {
+            "left": "calc(50% - 15px)",
+          }
+        }
+        tabIndex={0}
+      >
+        <div
+          className="c3"
+        />
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+<span
+    className="c0"
+  >
+    
+    50
+     Kronor
+  </span>,
+]
+`;
+
+exports[`Storyshots Molecules | Slider Default 1`] = `
+Array [
+  .c0 {
+  background: linear-gradient( to right,#D2F500 0% 50%,#EBEBE8 50% 100% );
+  height: 15px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.c1 {
+  max-width: 100%;
+  height: 15px;
+  margin: 5px auto;
+  position: relative;
+  width: calc(100% - 30px);
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #FFFFFF;
+  border: 1px solid #BCBCB6;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.c2:focus {
+  border: 1px solid #0046FF;
+}
+
+.c3 {
+  background: #BCBCB6;
+  height: 2px;
+  position: absolute;
+  width: 12px;
+}
+
+.c3:before {
+  background: #BCBCB6;
+  height: 2px;
+  position: absolute;
+  width: 12px;
+  content: '';
+  top: -6px;
+}
+
+.c3:after {
+  background: #BCBCB6;
+  height: 2px;
+  position: absolute;
+  width: 12px;
+  content: '';
+  top: 6px;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "linear-gradient(to right, #D2F500 50% , #EBEBE8 50%)",
+        }
+      }
+    >
+      <div
+        aria-valuemax={100}
+        aria-valuemin={0}
+        aria-valuenow={50}
+        className="c2"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        role="slider"
+        style={
+          Object {
+            "left": "calc(50% - 15px)",
+          }
+        }
+        tabIndex={0}
+      >
+        <div
+          className="c3"
+        />
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+<span
+    className="c0"
+  >
+    
+    50
+     Kronor
+  </span>,
+]
+`;
+
+exports[`Storyshots Molecules | Slider Maximum Value 1`] = `
+Array [
+  .c0 {
+  background: linear-gradient( to right,#D2F500 0% 50%,#EBEBE8 50% 100% );
+  height: 15px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.c1 {
+  max-width: 100%;
+  height: 15px;
+  margin: 5px auto;
+  position: relative;
+  width: calc(100% - 30px);
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #FFFFFF;
+  border: 1px solid #BCBCB6;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.c2:focus {
+  border: 1px solid #0046FF;
+}
+
+.c3 {
+  background: #BCBCB6;
+  height: 2px;
+  position: absolute;
+  width: 12px;
+}
+
+.c3:before {
+  background: #BCBCB6;
+  height: 2px;
+  position: absolute;
+  width: 12px;
+  content: '';
+  top: -6px;
+}
+
+.c3:after {
+  background: #BCBCB6;
+  height: 2px;
+  position: absolute;
+  width: 12px;
+  content: '';
+  top: 6px;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "linear-gradient(to right, #D2F500 100% , #EBEBE8 100%)",
+        }
+      }
+    >
+      <div
+        aria-valuemax={100}
+        aria-valuemin={0}
+        aria-valuenow={100}
+        className="c2"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        role="slider"
+        style={
+          Object {
+            "left": "calc(100% - 15px)",
+          }
+        }
+        tabIndex={0}
+      >
+        <div
+          className="c3"
+        />
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+<span
+    className="c0"
+  >
+    
+    100
+     Kronor
+  </span>,
+]
+`;
+
+exports[`Storyshots Molecules | Slider Minimum Value 1`] = `
+Array [
+  .c0 {
+  background: linear-gradient( to right,#D2F500 0% 50%,#EBEBE8 50% 100% );
+  height: 15px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.c1 {
+  max-width: 100%;
+  height: 15px;
+  margin: 5px auto;
+  position: relative;
+  width: calc(100% - 30px);
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #FFFFFF;
+  border: 1px solid #BCBCB6;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.c2:focus {
+  border: 1px solid #0046FF;
+}
+
+.c3 {
+  background: #BCBCB6;
+  height: 2px;
+  position: absolute;
+  width: 12px;
+}
+
+.c3:before {
+  background: #BCBCB6;
+  height: 2px;
+  position: absolute;
+  width: 12px;
+  content: '';
+  top: -6px;
+}
+
+.c3:after {
+  background: #BCBCB6;
+  height: 2px;
+  position: absolute;
+  width: 12px;
+  content: '';
+  top: 6px;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "linear-gradient(to right, #D2F500 0% , #EBEBE8 0%)",
+        }
+      }
+    >
+      <div
+        aria-valuemax={100}
+        aria-valuemin={0}
+        aria-valuenow={0}
+        className="c2"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        role="slider"
+        style={
+          Object {
+            "left": "calc(0% - 15px)",
+          }
+        }
+        tabIndex={0}
+      >
+        <div
+          className="c3"
+        />
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+<span
+    className="c0"
+  >
+    
+    0
+     Kronor
+  </span>,
+]
+`;
+
+exports[`Storyshots Molecules | Slider Negative To Positive 1`] = `
+Array [
+  .c0 {
+  background: linear-gradient( to right,#D2F500 0% 50%,#EBEBE8 50% 100% );
+  height: 15px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.c1 {
+  max-width: 100%;
+  height: 15px;
+  margin: 5px auto;
+  position: relative;
+  width: calc(100% - 30px);
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #FFFFFF;
+  border: 1px solid #BCBCB6;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.c2:focus {
+  border: 1px solid #0046FF;
+}
+
+.c3 {
+  background: #BCBCB6;
+  height: 2px;
+  position: absolute;
+  width: 12px;
+}
+
+.c3:before {
+  background: #BCBCB6;
+  height: 2px;
+  position: absolute;
+  width: 12px;
+  content: '';
+  top: -6px;
+}
+
+.c3:after {
+  background: #BCBCB6;
+  height: 2px;
+  position: absolute;
+  width: 12px;
+  content: '';
+  top: 6px;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "linear-gradient(to right, #D2F500 50% , #EBEBE8 50%)",
+        }
+      }
+    >
+      <div
+        aria-valuemax={50}
+        aria-valuemin={-50}
+        aria-valuenow={0}
+        className="c2"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        role="slider"
+        style={
+          Object {
+            "left": "calc(50% - 15px)",
+          }
+        }
+        tabIndex={0}
+      >
+        <div
+          className="c3"
+        />
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+<span
+    className="c0"
+  >
+    
+    0
+     Kronor
+  </span>,
+]
+`;
