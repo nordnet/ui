@@ -85,6 +85,7 @@ export const ModalInner: React.FC<Props> = ({
   autoFocus = false,
   children,
   className,
+  closeTitle = 'Close this modal',
   title,
   onClose,
   footer,
@@ -140,7 +141,7 @@ export const ModalInner: React.FC<Props> = ({
               {footer && <Footer>{footer}</Footer>}
               {!hideClose && (
                 <CloseButton type="button" onClick={onClose}>
-                  <Icon.CrossThin size={5} title="Close this dialog" />
+                  <Icon.CrossThin size={5} title={closeTitle} />
                 </CloseButton>
               )}
             </Dialog>

@@ -1,5 +1,6 @@
 export type InnerProps = {
   className?: string;
+  closeTitle?: string;
   onClose?: Function;
   title?: React.ReactNode;
   footer?: React.ReactNode;
