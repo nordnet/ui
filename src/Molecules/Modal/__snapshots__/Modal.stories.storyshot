@@ -281,7 +281,7 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
                   strokeWidth={2}
                 />
                 <title>
-                  Close this dialog
+                  Close this modal
                 </title>
               </svg>
             </button>
@@ -1020,7 +1020,7 @@ exports[`Storyshots Molecules | Modal Integration: Modal with a footer and Butto
                   strokeWidth={2}
                 />
                 <title>
-                  Close this dialog
+                  Close this modal
                 </title>
               </svg>
             </button>
@@ -1371,7 +1371,7 @@ exports[`Storyshots Molecules | Modal Node as Title 1`] = `
                   strokeWidth={2}
                 />
                 <title>
-                  Close this dialog
+                  Close this modal
                 </title>
               </svg>
             </button>
@@ -1673,7 +1673,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
                   strokeWidth={2}
                 />
                 <title>
-                  Close this dialog
+                  Close this modal
                 </title>
               </svg>
             </button>
@@ -1951,7 +1951,7 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
                   strokeWidth={2}
                 />
                 <title>
-                  Close this dialog
+                  Close this modal
                 </title>
               </svg>
             </button>
