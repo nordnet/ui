@@ -125,6 +125,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   disabledBackground: RawColor['gray6'];
   /** white */
   buttonSecondaryBackground: RawColor['white'];
+  /** gray2 */
+  accordionText: RawColor['gray2'];
   /** 63 percent of gray2 */
   modalBackdrop: string;
   /** white */
