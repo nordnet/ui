@@ -184,6 +184,10 @@ Array [
   padding: 0 20px;
 }
 
+.c2 {
+  overflow: hidden;
+}
+
 .c2 .c3 {
   padding-bottom: 8px;
 }
@@ -481,6 +485,10 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll 1`] =
 
 .c8 {
   padding: 0 20px;
+}
+
+.c2 {
+  overflow: hidden;
 }
 
 .c2 .c3 {
@@ -893,6 +901,10 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll of co
   padding: 0 20px;
 }
 
+.c2 {
+  overflow: hidden;
+}
+
 .c2 .c4 {
   padding-bottom: 8px;
 }
@@ -1271,6 +1283,10 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   padding: 0 20px;
 }
 
+.c2 {
+  overflow: hidden;
+}
+
 .c2 .c3 {
   padding-bottom: 8px;
 }
@@ -1565,6 +1581,10 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
 
 .c8 {
   padding: 0 20px;
+}
+
+.c2 {
+  overflow: hidden;
 }
 
 .c2 .c3 {

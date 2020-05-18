@@ -8,6 +8,7 @@ const StyledTabs = styled(Tabs)`
 `;
 
 const CustomCardWithTitle = styled(CardWithTitle)`
+  overflow: hidden;
   ${CardWithTitle.components.StyledHeader} {
     padding-bottom: ${({ theme }) => theme.spacing.unit(2)}px;
   }
