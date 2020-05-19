@@ -1,3 +1,15 @@
+# [2.40.0](https://github.com/nordnet/ui/compare/v2.39.1...v2.40.0) (2020-05-15)
+
+
+### Bug Fixes
+
+* 🐛 new colors for DateAvatar ([19004f8](https://github.com/nordnet/ui/commit/19004f8))
+
+
+### Features
+
+* add accordion text color ([3768edc](https://github.com/nordnet/ui/commit/3768edc))
+
 # [2.40.0-beta.1](https://github.com/nordnet/ui/compare/v2.39.1...v2.40.0-beta.1@beta) (2020-05-15)
 
 

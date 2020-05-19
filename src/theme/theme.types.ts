@@ -125,6 +125,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   disabledBackground: RawColor['gray6'];
   /** white */
   buttonSecondaryBackground: RawColor['white'];
+  /** gray2 */
+  accordionText: RawColor['gray2'];
   /** 63 percent of gray2 */
   modalBackdrop: string;
   /** white */
@@ -275,12 +277,14 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   sliderThumbBorder: RawColor['gray4'];
   /** cta */
   sliderThumbActive: RawColor['cta'];
-  /** 10 percent of complementaryBlue1 */
-  dateAvatarBackground: string;
+  /** gray6 */
+  dateAvatarBackground1: RawColor['gray6'];
+  /** gray7 */
+  dateAvatarBackground2: RawColor['gray7'];
   /** gray2 */
   dateAvatarText1: RawColor['gray2'];
-  /** complementaryBlue2 */
-  dateAvatarText2: RawColor['complementaryBlue2'];
+  /** gray0 */
+  dateAvatarText2: RawColor['gray0'];
   /** cta */
   timelineColor1: ChangeableColor<RawColor['cta'], RawColor['a11yCta'], Version>;
   /** positive */

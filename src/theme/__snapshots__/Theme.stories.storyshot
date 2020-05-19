@@ -1923,6 +1923,37 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
+        accordionText
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c20"
+          color="#6E6E69"
+        />
+        <div>
+          #6E6E69
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c20"
+          color="#6E6E69"
+        />
+        <div>
+          #6E6E69
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
         selectOptionBackground
       </td>
       <td
@@ -4620,28 +4651,59 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
-        dateAvatarBackground
+        dateAvatarBackground1
       </td>
       <td
         className="c5"
       >
         <div
-          className="c44"
-          color="rgba(56, 94, 157, 0.1)"
+          className="c11"
+          color="#EBEBE8"
         />
         <div>
-          rgba(56, 94, 157, 0.1)
+          #EBEBE8
         </div>
       </td>
       <td
         className="c5"
       >
         <div
-          className="c44"
-          color="rgba(56, 94, 157, 0.1)"
+          className="c11"
+          color="#EBEBE8"
         />
         <div>
-          rgba(56, 94, 157, 0.1)
+          #EBEBE8
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        dateAvatarBackground2
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c7"
+          color="#F5F5F5"
+        />
+        <div>
+          #F5F5F5
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c7"
+          color="#F5F5F5"
+        />
+        <div>
+          #F5F5F5
         </div>
       </td>
     </tr>
@@ -4688,22 +4750,22 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c26"
-          color="#131F4F"
+          className="c9"
+          color="#282823"
         />
         <div>
-          #131F4F
+          #282823
         </div>
       </td>
       <td
         className="c5"
       >
         <div
-          className="c26"
-          color="#131F4F"
+          className="c9"
+          color="#282823"
         />
         <div>
-          #131F4F
+          #282823
         </div>
       </td>
     </tr>
