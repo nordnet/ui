@@ -75,6 +75,7 @@ export const Button: ButtonComponent = React.forwardRef<
     onMouseEnter,
     onMouseLeave,
     onMouseOver,
+    ...rest
   } = props;
   const externalIsNotPresent = typeof external === 'undefined';
   const toAndDisabledAreNotPresentTogether = !(to && disabled);
@@ -88,6 +89,7 @@ export const Button: ButtonComponent = React.forwardRef<
   const colorFromTheme = color && color(theme);
 
   const sharedProps = {
+    ...rest,
     className,
     onClick: trackClick,
     size,
