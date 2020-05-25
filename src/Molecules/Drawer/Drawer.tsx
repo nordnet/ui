@@ -122,7 +122,7 @@ const useDifferentAnimationBasedOnSwipeDirection = () => {
 };
 
 export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
-  ({ className, children, disableContentStyle, onClose, open: isOpenExternal, title }, ref) => {
+  ({ as, className, children, disableContentStyle, onClose, open: isOpenExternal, title }, ref) => {
     const isControlled = isBoolean(isOpenExternal);
     const escapePress = useKeyPress('Escape');
     const [isOpenInternal, setIsOpenInternal] = useState(true);
@@ -168,7 +168,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
           // Todo: handle small offsets -> rollback
         }
       },
-      [handleCloseClick],
+      [handleCloseClick, setSwipeDirection],
     );
 
     useEffect(() => {
@@ -184,6 +184,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
             <FocusLock disabled={isDesktop}>
               <RemoveScroll enabled={!isDesktop}>
                 <Container
+                  as={as}
                   className={className}
                   aria-labelledby={uid}
                   {...animationProps}

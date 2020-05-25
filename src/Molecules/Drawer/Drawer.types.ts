@@ -6,6 +6,7 @@ export type Props = {
   title?: React.ReactNode;
   open?: boolean;
   ref?: React.Ref<HTMLDivElement>;
+  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
 };
 
 export type TitleProps = {
