@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { HashRouter } from 'react-router-dom';
-import { Typography, Link } from '../..';
+import { AccordionItem, Typography, Link } from '../..';
 import Accordion from '.';
 
 const ExampleContent = () => (
@@ -21,7 +21,12 @@ const exampleFooter = (
 storiesOf('Instrument | Accordion', module).add('Default', () => (
   <HashRouter>
     <Accordion footer={exampleFooter}>
-      <ExampleContent />
+      <AccordionItem title="Låg CO₂ risk">
+        <ExampleContent />
+      </AccordionItem>
+      <AccordionItem title="Sustainability score">
+        <ExampleContent />
+      </AccordionItem>
     </Accordion>
   </HashRouter>
 ));
