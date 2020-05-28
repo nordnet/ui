@@ -6,6 +6,7 @@ type Props = {
   title: string;
   onClick?: React.MouseEventHandler;
   onToggle?: (expanded: boolean) => void;
+  ref?: React.Ref<HTMLButtonElement>;
 };
 
 export type AccordionItemComponent = React.FC<Props>;

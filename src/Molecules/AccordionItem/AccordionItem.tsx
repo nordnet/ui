@@ -46,48 +46,53 @@ const IconWrapper = styled.div`
   left: 0;
 `;
 
-export const AccordionItem: AccordionItemComponent = ({
-  as = 'h3',
-  children,
-  expanded: controlledExpand,
-  expandedInitial = false,
-  title,
-  onClick,
-  onToggle,
-}) => {
-  const [expandedInternal, setExpandedInternal] = useState(expandedInitial);
-  const isControlled = isBoolean(controlledExpand);
-  const expanded = isControlled ? controlledExpand : expandedInternal;
+export const AccordionItem: AccordionItemComponent = React.forwardRef(
+  (
+    {
+      as = 'h3',
+      children,
+      expanded: controlledExpand,
+      expandedInitial = false,
+      title,
+      onClick,
+      onToggle,
+    },
+    ref,
+  ) => {
+    const [expandedInternal, setExpandedInternal] = useState(expandedInitial);
+    const isControlled = isBoolean(controlledExpand);
+    const expanded = isControlled ? controlledExpand : expandedInternal;
 
-  const clickHandler: React.MouseEventHandler = e => {
-    if (!isControlled) {
-      setExpandedInternal(!expandedInternal);
-    }
+    const clickHandler: React.MouseEventHandler = e => {
+      if (!isControlled) {
+        setExpandedInternal(!expandedInternal);
+      }
 
-    if (isFunction(onClick)) {
-      onClick(e);
-    }
+      if (isFunction(onClick)) {
+        onClick(e);
+      }
 
-    if (isFunction(onToggle)) {
-      onToggle(!expanded);
-    }
-  };
+      if (isFunction(onToggle)) {
+        onToggle(!expanded);
+      }
+    };
 
-  return (
-    <Item>
-      <Typography as={as} type="secondary">
-        <Button type="button" aria-expanded={expanded} onClick={clickHandler}>
-          <IconWrapper>
-            {expanded ? (
-              <Icon.Minus size={3} fill={t => t.color.cta} />
-            ) : (
-              <Icon.Plus size={3} fill={t => t.color.cta} />
-            )}
-          </IconWrapper>
-          {title}
-        </Button>
-      </Typography>
-      <Panel hidden={!expanded}>{children}</Panel>
-    </Item>
-  );
-};
+    return (
+      <Item>
+        <Typography as={as} type="secondary">
+          <Button type="button" aria-expanded={expanded} onClick={clickHandler} ref={ref}>
+            <IconWrapper>
+              {expanded ? (
+                <Icon.Minus size={3} fill={t => t.color.cta} />
+              ) : (
+                <Icon.Plus size={3} fill={t => t.color.cta} />
+              )}
+            </IconWrapper>
+            {title}
+          </Button>
+        </Typography>
+        <Panel hidden={!expanded}>{children}</Panel>
+      </Item>
+    );
+  },
+);
