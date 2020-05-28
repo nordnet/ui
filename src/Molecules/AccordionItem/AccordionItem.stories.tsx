@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AccordionItem, Typography } from '../..';
+import { AccordionItem, Box, Button, Flexbox, Typography } from '../..';
 
 export default {
   title: 'Molecules | AccordionItem',
@@ -21,18 +21,12 @@ export const defaultCollapsed = () => (
     <AccordionItem title="Låg CO₂ risk">
       <ExampleContent />
     </AccordionItem>
-    <AccordionItem title="Sustainability score">
-      <ExampleContent />
-    </AccordionItem>
   </>
 );
 
 export const expanded = () => (
   <>
     <AccordionItem title="Låg CO₂ risk" expandedInitial>
-      <ExampleContent />
-    </AccordionItem>
-    <AccordionItem title="Sustainability score" expandedInitial>
       <ExampleContent />
     </AccordionItem>
   </>
@@ -53,6 +47,20 @@ export const controlled = () => {
 
     return (
       <>
+        <Box mb={4}>
+          <Flexbox container gutter={4}>
+            <Flexbox item>
+              <Button variant="primary" onClick={() => clickHandler('first')}>
+                Toggle first
+              </Button>
+            </Flexbox>
+            <Flexbox item>
+              <Button variant="primary" onClick={() => clickHandler('second')}>
+                Toggle second
+              </Button>
+            </Flexbox>
+          </Flexbox>
+        </Box>
         <AccordionItem
           title="Låg CO₂ risk"
           expanded={expandedAreas.includes('first')}

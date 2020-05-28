@@ -1,10 +1,12 @@
 import React from 'react';
 import { HashRouter } from 'react-router-dom';
 import { Accordion, AccordionItem, Typography, Link } from '../..';
+import docs from './Accordion.mdx';
 
 export default {
   title: 'Molecules | Accordion',
   parameters: {
+    ...docs.parameters,
     component: Accordion,
   },
 };
@@ -24,6 +26,21 @@ const exampleFooter = (
 );
 
 export const defaultStory = () => (
+  <Accordion>
+    <AccordionItem title="Låg CO₂ risk">
+      <ExampleContent />
+    </AccordionItem>
+    <AccordionItem title="Sustainability score">
+      <ExampleContent />
+    </AccordionItem>
+  </Accordion>
+);
+
+defaultStory.story = {
+  name: 'Default',
+};
+
+export const withFooter = () => (
   <HashRouter>
     <Accordion footer={exampleFooter}>
       <AccordionItem title="Låg CO₂ risk">
@@ -35,7 +52,3 @@ export const defaultStory = () => (
     </Accordion>
   </HashRouter>
 );
-
-defaultStory.story = {
-  name: 'Default',
-};

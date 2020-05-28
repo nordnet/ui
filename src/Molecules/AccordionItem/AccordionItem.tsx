@@ -53,14 +53,14 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
       children,
       className,
       expanded: controlledExpand,
-      expandedInitial = false,
+      expandedInitial,
       title,
       onClick,
       onToggle,
     },
     ref,
   ) => {
-    const [expandedInternal, setExpandedInternal] = useState(expandedInitial);
+    const [expandedInternal, setExpandedInternal] = useState(expandedInitial || false);
     const isControlled = isBoolean(controlledExpand);
     const expanded = isControlled ? controlledExpand : expandedInternal;
 
