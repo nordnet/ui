@@ -1,3 +1,3 @@
 import { AccordionItem } from './AccordionItem';
 
-export { AccordionItem };
+export default AccordionItem;

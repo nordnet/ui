@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Typography } from '../..';
-import { AccordionItem } from '.';
+import AccordionItem from '.';
 
 const ExampleContent = () => (
   <Typography as="p" type="secondary" color={t => t.color.accordionText}>
