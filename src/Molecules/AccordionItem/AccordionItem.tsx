@@ -36,7 +36,7 @@ const Button = styled.button`
 
   &:hover,
   &:focus {
-    background-color: #f5f5f5; /* TODO: get from theme */
+    background-color: ${p => p.theme.color.background};
   }
 `;
 
