@@ -1,8 +1,13 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { HashRouter } from 'react-router-dom';
-import { AccordionItem, Typography, Link } from '../..';
-import Accordion from '.';
+import { Accordion, AccordionItem, Typography, Link } from '../..';
+
+export default {
+  title: 'Molecules | Accordion',
+  parameters: {
+    component: Accordion,
+  },
+};
 
 const ExampleContent = () => (
   <Typography as="p" type="secondary" color={t => t.color.accordionText}>
@@ -18,7 +23,7 @@ const exampleFooter = (
   </Typography>
 );
 
-storiesOf('Instrument | Accordion', module).add('Default', () => (
+export const defaultStory = () => (
   <HashRouter>
     <Accordion footer={exampleFooter}>
       <AccordionItem title="Låg CO₂ risk">
@@ -29,4 +34,8 @@ storiesOf('Instrument | Accordion', module).add('Default', () => (
       </AccordionItem>
     </Accordion>
   </HashRouter>
-));
+);
+
+defaultStory.story = {
+  name: 'Default',
+};
