@@ -1,6 +1,7 @@
 type Props = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   children?: React.ReactNode;
+  className?: string;
   expanded?: boolean;
   expandedInitial?: boolean;
   title: string;

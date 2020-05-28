@@ -51,6 +51,7 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
     {
       as = 'h3',
       children,
+      className,
       expanded: controlledExpand,
       expandedInitial = false,
       title,
@@ -78,7 +79,7 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
     };
 
     return (
-      <Item>
+      <Item className={className}>
         <Typography as={as} type="secondary">
           <Button type="button" aria-expanded={expanded} onClick={clickHandler} ref={ref}>
             <IconWrapper>
