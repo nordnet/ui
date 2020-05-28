@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Instrument | Accordion Default 1`] = `
+Array [
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+<p
+    className="c0"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+  </p>,
+  .c0 {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBE8;
+}
+
+<div
+    className="c0"
+  />,
+  .c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0 {
+  padding-top: 12px;
+}
+
+<div
+    className="c0"
+  >
+    <p
+      className="c1"
+    >
+      Did not find what you look for? 
+      <a
+        className="c2"
+        href="#/"
+        onClick={[Function]}
+      >
+        Check out FAQ
+      </a>
+    </p>
+  </div>,
+]
+`;
