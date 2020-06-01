@@ -11,13 +11,11 @@ export const Accordion: Component = ({ children, footer }) => {
   return (
     <>
       {children}
-      {footer ? (
+      {footer && (
         <>
           <Separator />
           <Footer>{footer}</Footer>
         </>
-      ) : (
-        ''
       )}
     </>
   );
