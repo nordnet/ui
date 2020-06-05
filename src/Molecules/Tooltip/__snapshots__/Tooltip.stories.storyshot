@@ -22,7 +22,7 @@ exports[`Storyshots Molecules | Tooltip Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] = `
-.c7 {
+.c6 {
   margin-bottom: 16px;
 }
 
@@ -31,17 +31,13 @@ exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] =
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
-}
-
-.c5 {
-  stroke: #6E6E69;
 }
 
 .c3 {
@@ -105,12 +101,11 @@ exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] =
 }
 
 .c2 {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  padding-left: 8px;
+  margin-left: auto;
 }
 
-.c6 {
+.c5 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
@@ -118,16 +113,22 @@ exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] =
 }
 
 .c0 {
-  position: relative;
   padding: 20px 20px 0 20px;
   margin-bottom: 8px;
-  min-height: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
-.c8 {
+.c7 {
   display: block;
 }
 
@@ -199,12 +200,11 @@ exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] =
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
-                viewBox="0 0 24 24"
+                viewBox="0 0 16 16"
               >
                 <path
-                  className="c5"
-                  d="m 1 1 l 22 22 m -22 0 l 22 -22"
-                  strokeWidth={2}
+                  d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                  fillRule="evenodd"
                 />
                 <title>
                   Close this drawer
@@ -214,13 +214,13 @@ exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] =
           </button>
         </div>
         <div
-          className="c6"
+          className="c5"
         >
           <div
-            className="c7"
+            className="c6"
           >
             <button
-              className="c8"
+              className="c7"
               data-reach-tooltip-trigger=""
               onBlur={[Function]}
               onFocus={[Function]}
@@ -234,7 +234,7 @@ exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] =
             </button>
           </div>
           <button
-            className="c8"
+            className="c7"
             onClick={[Function]}
           >
             Open modal

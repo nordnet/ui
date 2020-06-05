@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Drawer Default 1`] = `
-.c6 {
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -15,11 +15,7 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
   display: block;
 }
 
-.c7 {
-  stroke: #6E6E69;
-}
-
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -28,7 +24,7 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
   line-height: 1.2;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -37,7 +33,7 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -46,7 +42,7 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
   line-height: 1.5;
 }
 
-.c3 {
+.c2 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -75,57 +71,58 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
   cursor: pointer;
 }
 
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
+.c2,
+.c2[type='button'],
+.c2[type='reset'],
+.c2[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
+.c2::-moz-focus-inner,
+.c2[type='button']::-moz-focus-inner,
+.c2[type='reset']::-moz-focus-inner,
+.c2[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
+.c2:-moz-focusring,
+.c2[type='button']:-moz-focusring,
+.c2[type='reset']:-moz-focusring,
+.c2[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c4 {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+.c3 {
+  padding-left: 8px;
+  margin-left: auto;
 }
 
-.c8 {
+.c6 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
   padding: 0 20px;
 }
 
-.c1 {
-  padding-right: 16px;
-}
-
 .c0 {
-  position: relative;
   padding: 20px 20px 0 20px;
   margin-bottom: 8px;
-  min-height: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 @media (min-width:760px) {
-  .c2 {
+  .c1 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
@@ -196,31 +193,30 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
               id="1val-Drawer"
             >
               <h2
-                className="c1 c2"
+                className="c1"
               >
                 Drawer title
               </h2>
             </span>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c3 c4"
+              className="NormalizedButton__Button-ey7f5x-0 c2 c3"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c5"
+                className="c4"
               >
                 <svg
                   aria-hidden="false"
-                  className="c6"
+                  className="c5"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="img"
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 16 16"
                 >
                   <path
-                    className="c7"
-                    d="m 1 1 l 22 22 m -22 0 l 22 -22"
-                    strokeWidth={2}
+                    d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                    fillRule="evenodd"
                   />
                   <title>
                     Close this drawer
@@ -230,16 +226,16 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
             </button>
           </div>
           <div
-            className="c8"
+            className="c6"
           >
             <div>
               <p
-                className="c9"
+                className="c7"
               >
                 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
               </p>
               <span
-                className="c9"
+                className="c7"
               >
                 <ul>
                   <li>
@@ -257,7 +253,7 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
                 </ul>
               </span>
               <p
-                className="c9"
+                className="c7"
               >
                 Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
               </p>
@@ -286,7 +282,7 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
-.c9 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -307,7 +303,7 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
   position: relative;
 }
 
-.c9::before {
+.c7::before {
   content: '';
   display: block;
   width: 100%;
@@ -322,7 +318,7 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
   background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
 }
 
-.c9::after {
+.c7::after {
   content: '';
   display: block;
   width: 100%;
@@ -337,7 +333,7 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
   background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
 }
 
-.c10 {
+.c8 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -356,18 +352,9 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
   overflow-y: auto;
 }
 
-.c11 {
+.c9 {
   position: relative;
   overflow-x: hidden;
-}
-
-.c14 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  bottom: 0;
 }
 
 .c12 {
@@ -376,16 +363,25 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
   position: absolute;
   right: 0;
   pointer-events: none;
+  bottom: 0;
+}
+
+.c10 {
+  height: 16px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
   top: 0;
 }
 
-.c6 {
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -393,11 +389,7 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
   display: block;
 }
 
-.c7 {
-  stroke: #6E6E69;
-}
-
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -406,7 +398,7 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
   line-height: 1.2;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -415,7 +407,7 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c13 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -424,7 +416,7 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
   line-height: 1.5;
 }
 
-.c3 {
+.c2 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -453,57 +445,58 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
   cursor: pointer;
 }
 
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
+.c2,
+.c2[type='button'],
+.c2[type='reset'],
+.c2[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
+.c2::-moz-focus-inner,
+.c2[type='button']::-moz-focus-inner,
+.c2[type='reset']::-moz-focus-inner,
+.c2[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
+.c2:-moz-focusring,
+.c2[type='button']:-moz-focusring,
+.c2[type='reset']:-moz-focusring,
+.c2[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c4 {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+.c3 {
+  padding-left: 8px;
+  margin-left: auto;
 }
 
-.c8 {
+.c6 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
   padding: 0 20px;
 }
 
-.c1 {
-  padding-right: 16px;
-}
-
 .c0 {
-  position: relative;
   padding: 20px 20px 0 20px;
   margin-bottom: 8px;
-  min-height: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 @media (min-width:760px) {
-  .c2 {
+  .c1 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
@@ -571,34 +564,33 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
             onTouchStart={[Function]}
           >
             <span
-              id="3val-Drawer"
+              id="4val-Drawer"
             >
               <h2
-                className="c1 c2"
+                className="c1"
               >
                 Drawer title
               </h2>
             </span>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c3 c4"
+              className="NormalizedButton__Button-ey7f5x-0 c2 c3"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c5"
+                className="c4"
               >
                 <svg
                   aria-hidden="false"
-                  className="c6"
+                  className="c5"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="img"
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 16 16"
                 >
                   <path
-                    className="c7"
-                    d="m 1 1 l 22 22 m -22 0 l 22 -22"
-                    strokeWidth={2}
+                    d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                    fillRule="evenodd"
                   />
                   <title>
                     Close this drawer
@@ -608,28 +600,28 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
             </button>
           </div>
           <div
-            className="c8"
+            className="c6"
           >
             <div
-              className="c9"
+              className="c7"
             >
               <div
-                className="c10"
+                className="c8"
               >
                 <div
-                  className="c11"
+                  className="c9"
                 >
                   <div
-                    className="c12"
+                    className="c10"
                   />
                   <div>
                     <p
-                      className="c13"
+                      className="c11"
                     >
                       Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
                     </p>
                     <span
-                      className="c13"
+                      className="c11"
                     >
                       <ul>
                         <li>
@@ -647,13 +639,13 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
                       </ul>
                     </span>
                     <p
-                      className="c13"
+                      className="c11"
                     >
                       Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
                     </p>
                   </div>
                   <div
-                    className="c14"
+                    className="c12"
                   />
                 </div>
               </div>
@@ -720,7 +712,17 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
 }
 
 .c7 {
-  stroke: #6E6E69;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c3 {
@@ -802,9 +804,8 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
 }
 
 .c5 {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  padding-left: 8px;
+  margin-left: auto;
 }
 
 .c8 {
@@ -815,13 +816,19 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
 }
 
 .c0 {
-  position: relative;
   padding: 20px 20px 0 20px;
   margin-bottom: 8px;
-  min-height: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 @media (min-width:760px) {
@@ -927,16 +934,15 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
               >
                 <svg
                   aria-hidden="false"
-                  className="c2"
+                  className="c7"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="img"
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 16 16"
                 >
                   <path
-                    className="c7"
-                    d="m 1 1 l 22 22 m -22 0 l 22 -22"
-                    strokeWidth={2}
+                    d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                    fillRule="evenodd"
                   />
                   <title>
                     Close this drawer
@@ -978,14 +984,14 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Drawer With ref story 1`] = `
-.c6 {
+exports[`Storyshots Molecules | Drawer With no title 1`] = `
+.c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -993,20 +999,7 @@ exports[`Storyshots Molecules | Drawer With ref story 1`] = `
   display: block;
 }
 
-.c7 {
-  stroke: #6E6E69;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c5 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1015,7 +1008,7 @@ exports[`Storyshots Molecules | Drawer With ref story 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1024,7 +1017,7 @@ exports[`Storyshots Molecules | Drawer With ref story 1`] = `
   line-height: 1.5;
 }
 
-.c3 {
+.c1 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1053,57 +1046,300 @@ exports[`Storyshots Molecules | Drawer With ref story 1`] = `
   cursor: pointer;
 }
 
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c4 {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+.c2 {
+  padding-left: 8px;
+  margin-left: auto;
 }
 
-.c8 {
+.c5 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
   padding: 0 20px;
 }
 
-.c1 {
-  padding-right: 16px;
-}
-
 .c0 {
-  position: relative;
   padding: 20px 20px 0 20px;
   margin-bottom: 8px;
-  min-height: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 @media (min-width:760px) {
-  .c2 {
+
+}
+
+@media (min-width:1600px) {
+
+}
+
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Toggle drawer
+  </button>
+  <portal-dummy>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
+      >
+        <div>
+          <div
+            className="c0"
+            onTouchStart={[Function]}
+          >
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c1 c2"
+              onClick={[Function]}
+              type="button"
+            >
+              <span
+                className="c3"
+              >
+                <svg
+                  aria-hidden="false"
+                  className="c4"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="img"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                    fillRule="evenodd"
+                  />
+                  <title>
+                    Close this drawer
+                  </title>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div
+            className="c5"
+          >
+            <div>
+              <p
+                className="c6"
+              >
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+  </portal-dummy>
+</div>
+`;
+
+exports[`Storyshots Molecules | Drawer With ref story 1`] = `
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c2 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2,
+.c2[type='button'],
+.c2[type='reset'],
+.c2[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c2::-moz-focus-inner,
+.c2[type='button']::-moz-focus-inner,
+.c2[type='reset']::-moz-focus-inner,
+.c2[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c2:-moz-focusring,
+.c2[type='button']:-moz-focusring,
+.c2[type='reset']:-moz-focusring,
+.c2[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  padding-left: 8px;
+  margin-left: auto;
+}
+
+.c6 {
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.c0 {
+  padding: 20px 20px 0 20px;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+@media (min-width:760px) {
+  .c1 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
@@ -1171,34 +1407,33 @@ exports[`Storyshots Molecules | Drawer With ref story 1`] = `
             onTouchStart={[Function]}
           >
             <span
-              id="4val-Drawer"
+              id="5val-Drawer"
             >
               <h2
-                className="c1 c2"
+                className="c1"
               >
                 Drawer title
               </h2>
             </span>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c3 c4"
+              className="NormalizedButton__Button-ey7f5x-0 c2 c3"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c5"
+                className="c4"
               >
                 <svg
                   aria-hidden="false"
-                  className="c6"
+                  className="c5"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="img"
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 16 16"
                 >
                   <path
-                    className="c7"
-                    d="m 1 1 l 22 22 m -22 0 l 22 -22"
-                    strokeWidth={2}
+                    d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                    fillRule="evenodd"
                   />
                   <title>
                     Close this drawer
@@ -1208,10 +1443,10 @@ exports[`Storyshots Molecules | Drawer With ref story 1`] = `
             </button>
           </div>
           <div
-            className="c8"
+            className="c6"
           >
             <span
-              className="c9"
+              className="c7"
             >
               This Drawer uses a forwardRef. The ref is used with useOnClickOutside hook. Try to click outside the Drawer to close it.
             </span>

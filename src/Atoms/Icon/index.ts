@@ -24,6 +24,7 @@ import { ConsumerCyclic } from './components/ConsumerCyclic';
 import { ConsumerStable } from './components/ConsumerStable';
 import { Cross } from './components/Cross';
 import { CrossCircle } from './components/CrossCircle';
+import { CrossMedium } from './components/CrossMedium';
 import { CrossThin } from './components/CrossThin';
 import { DiagonalWithCircle } from './components/DiagonalWithCircle';
 import { DirectionDown } from './components/DirectionDown';
@@ -99,6 +100,7 @@ export default {
   ConsumerStable,
   Cross,
   CrossCircle,
+  CrossMedium,
   CrossThin,
   DiagonalWithCircle,
   DirectionDown,

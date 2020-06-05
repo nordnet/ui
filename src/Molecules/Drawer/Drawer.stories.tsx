@@ -129,6 +129,36 @@ withCustomTitle.story = {
   name: 'With a custom title',
 };
 
+export const withNoTitle = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const toggle = () => {
+      setOpen(!open);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <div>
+        <button type="button" onClick={toggle}>
+          Toggle drawer
+        </button>
+        <Drawer onClose={onClose} open={open}>
+          {contentSmall}
+        </Drawer>
+      </div>
+    );
+  };
+  return <Example />;
+};
+
+withNoTitle.story = {
+  name: 'With no title',
+};
+
 export const integrationWithFadedScroll = () => {
   const Example = () => {
     const [open, setOpen] = useState(true);

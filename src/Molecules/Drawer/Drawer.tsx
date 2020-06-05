@@ -8,7 +8,6 @@ import { Props, TitleProps } from './Drawer.types';
 import { isBoolean, isElement } from '../../common/utils';
 import { Typography, Icon, useKeyPress, Portal, useMedia, Button } from '../..';
 
-const CROSS_SIZE = 5;
 const PADDING = 5;
 const displayName = 'Drawer';
 
@@ -35,9 +34,8 @@ const Container = styled(motion.div)`
 `;
 
 const CloseButton = styled(Button)`
-  position: absolute;
-  top: ${p => p.theme.spacing.unit(PADDING)}px;
-  right: ${p => p.theme.spacing.unit(PADDING)}px;
+  padding-left: ${p => p.theme.spacing.unit(2)}px;
+  margin-left: auto;
 `;
 
 const Content = styled.div`
@@ -47,19 +45,15 @@ const Content = styled.div`
   padding: 0 ${p => p.theme.spacing.unit(PADDING)}px;
 `;
 
-const H2 = styled.h2`
-  padding-right: ${p => p.theme.spacing.unit(4)}px;
-`;
-
 const TitleWrapper = styled.div`
-  position: relative;
   padding: ${p =>
     `${p.theme.spacing.unit(PADDING)}px ${p.theme.spacing.unit(PADDING)}px 0 ${p.theme.spacing.unit(
       PADDING,
     )}px`};
   margin-bottom: ${p => p.theme.spacing.unit(2)}px;
-  min-height: ${p => p.theme.spacing.unit(CROSS_SIZE)}px;
+  display: flex;
   flex: 0 0 auto;
+  align-items: baseline;
 `;
 
 const animationProps = {
@@ -90,7 +84,7 @@ const Title: React.FC<TitleProps> = ({ title, uid }) => {
       {isElement(title) ? (
         title
       ) : (
-        <Typography as={H2} type="title2">
+        <Typography as="h2" type="title2">
           {title}
         </Typography>
       )}
@@ -199,7 +193,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
                   <TitleWrapper onTouchStart={startDrag}>
                     {title && <Title title={title} uid={uid} />}
                     <CloseButton type="button" variant="neutral" onClick={handleCloseClick}>
-                      <Icon.CrossThin size={CROSS_SIZE} title="Close this drawer" />
+                      <Icon.CrossMedium size={4} title="Close this drawer" />
                     </CloseButton>
                   </TitleWrapper>
                   {disableContentStyle ? children : <Content>{children}</Content>}
