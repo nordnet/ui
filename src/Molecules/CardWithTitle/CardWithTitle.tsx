@@ -25,7 +25,7 @@ export const CardWithTitle: CardWithTitleComponent = props => {
           </Typography>
         )}
       </Box>
-      <Box px={3} pb={2} sm={{ px: 5, pb: 2 }}>
+      <Box px={3} pb={5} sm={{ px: 5 }}>
         {children}
       </Box>
     </StyledCard>

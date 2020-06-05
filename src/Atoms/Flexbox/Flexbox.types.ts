@@ -45,6 +45,7 @@ export type ContainerProps = {
 
   /** a11y */
   role?: string;
+  title?: string;
 };
 
 export type ItemProps = {
@@ -60,6 +61,7 @@ export type ItemProps = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   /** a11y */
   role?: string;
+  title?: string;
 };
 
 type InternalProps = ItemProps & ContainerProps & { className?: string };

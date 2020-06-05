@@ -11,7 +11,7 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article (most Car
 .c3 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c2 {
@@ -46,7 +46,6 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article (most Car
   .c3 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -88,7 +87,7 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as section 1`] = `
 .c3 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c2 {
@@ -123,7 +122,6 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as section 1`] = `
   .c3 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -165,7 +163,7 @@ exports[`Storyshots Molecules | CardWithTitle Default 1`] = `
 .c4 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c0 {
@@ -205,7 +203,6 @@ exports[`Storyshots Molecules | CardWithTitle Default 1`] = `
   .c4 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -247,7 +244,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
 .c10 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c11 {
@@ -362,7 +359,6 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
   .c10 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -447,7 +443,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: with FadedScroll 1`] 
 .c4 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c9 {
@@ -520,7 +516,6 @@ exports[`Storyshots Molecules | CardWithTitle Integration: with FadedScroll 1`] 
   .c4 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -637,7 +632,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: with FadedScroll of c
 .c5 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c10 {
@@ -736,7 +731,6 @@ exports[`Storyshots Molecules | CardWithTitle Integration: with FadedScroll of c
   .c5 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -869,7 +863,7 @@ exports[`Storyshots Molecules | CardWithTitle With Component As Title 1`] = `
 .c4 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c0 {
@@ -909,7 +903,6 @@ exports[`Storyshots Molecules | CardWithTitle With Component As Title 1`] = `
   .c4 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 

@@ -211,6 +211,7 @@ exports[`Storyshots Molecules | Modal Close On Backdrop Click Story 1`] = `
       >
         <div
           className="c1 c2"
+          onClick={[Function]}
         >
           <div>
             <div
@@ -519,6 +520,7 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
       >
         <div
           className="c1 c2"
+          onClick={[Function]}
         >
           <div>
             <div
@@ -760,6 +762,7 @@ exports[`Storyshots Molecules | Modal Hide Close button 1`] = `
       >
         <div
           className="c1 c2"
+          onClick={[Function]}
         >
           <div>
             <div
@@ -1198,6 +1201,7 @@ exports[`Storyshots Molecules | Modal Integration: Modal with a footer and Butto
       >
         <div
           className="c1 c2"
+          onClick={[Function]}
         >
           <div>
             <div
@@ -1579,6 +1583,7 @@ exports[`Storyshots Molecules | Modal Node as Title 1`] = `
       >
         <div
           className="c1 c2"
+          onClick={[Function]}
         >
           <div>
             <div
@@ -1911,6 +1916,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
       >
         <div
           className="c1 c2"
+          onClick={[Function]}
         >
           <div>
             <div
@@ -2199,6 +2205,7 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
       >
         <div
           className="c1 c2"
+          onClick={[Function]}
         >
           <div>
             <div

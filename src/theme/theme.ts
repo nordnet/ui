@@ -258,6 +258,10 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     transferStatusBannerText2: rawColor.complementaryPink1,
     transferStatusBannerText3: rawColor.gray0,
     transferStatusBannerChevron: rawColor.gray0,
+    progressBarText: rawColor.white,
+    progressBarDone: rawColor.positive,
+    progressBarActive: rawColor.cta,
+    progressBarNext: rawColor.gray4,
   };
 };
 

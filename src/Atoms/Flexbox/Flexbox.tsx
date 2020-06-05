@@ -77,7 +77,7 @@ const getContainerStyles = (p: Props & { theme: Theme }) => `
 
 const getItemStyles = (p: Props & { theme: Theme }) => `
   ${p.size ? getSizeStyles(p.size) : ''}
-  ${p.alignSelf ? `align-self: ${p.alignSelf}` : ''}
+  ${p.alignSelf ? `align-self: ${p.alignSelf};` : ''}
   ${!R.isNil(p.order) ? `order: ${p.order};` : ''}
   ${!R.isNil(p.grow) ? `flex-grow: ${p.grow};` : ''}
   ${!R.isNil(p.shrink) ? `flex-shrink: ${p.shrink};` : ''}

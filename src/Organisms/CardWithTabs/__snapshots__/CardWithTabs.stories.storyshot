@@ -30,7 +30,7 @@ Array [
 .c4 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c0 {
@@ -209,7 +209,6 @@ Array [
   .c4 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -321,7 +320,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll 1`] =
 .c4 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c19 {
@@ -529,7 +528,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll 1`] =
   .c4 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -726,7 +724,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll of co
 .c5 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c20 {
@@ -960,7 +958,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll of co
   .c5 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -1173,7 +1170,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
 .c4 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c15 {
@@ -1359,7 +1356,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   .c4 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -1497,7 +1493,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
 .c4 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c0 {
@@ -1676,7 +1672,6 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   .c4 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import { InjectedIntlProps } from 'react-intl';
 
 export type Props = {
   /** Needs to be between 0 and 5 */
@@ -9,4 +8,4 @@ export type Props = {
   size?: number;
 };
 
-export type RatingComponent = React.FunctionComponent<Props & InjectedIntlProps>;
+export type RatingComponent = React.FunctionComponent<Props>;

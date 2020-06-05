@@ -333,6 +333,14 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   transferStatusBannerText3: RawColor['gray0'];
   /** gray0 */
   transferStatusBannerChevron: RawColor['gray0'];
+  /** white */
+  progressBarText: RawColor['white'];
+  /** positive */
+  progressBarDone: RawColor['positive'];
+  /** cta */
+  progressBarActive: RawColor['cta'];
+  /** gray4 */
+  progressBarNext: RawColor['gray4'];
 };
 
 export type ColorSets = {
