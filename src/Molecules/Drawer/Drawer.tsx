@@ -70,9 +70,8 @@ const animationProps = {
     x: '100%',
   },
   transition: {
-    type: 'spring',
-    damping: 20,
-    stiffness: 175,
+    ease: 'easeInOut',
+    duration: 0.2,
   },
 };
 
