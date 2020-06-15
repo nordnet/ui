@@ -101,8 +101,9 @@ exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] =
 }
 
 .c2 {
-  padding-left: 8px;
-  margin-left: auto;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .c5 {
@@ -115,17 +116,7 @@ exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] =
 .c0 {
   padding: 20px 20px 0 20px;
   margin-bottom: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
+  min-height: 20px;
 }
 
 .c7 {

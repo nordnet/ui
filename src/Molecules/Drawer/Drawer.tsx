@@ -8,6 +8,7 @@ import { Props, TitleProps } from './Drawer.types';
 import { isBoolean, isElement } from '../../common/utils';
 import { Typography, Icon, useKeyPress, Portal, useMedia, Button } from '../..';
 
+const CROSS_SIZE = 5;
 const PADDING = 5;
 const displayName = 'Drawer';
 
@@ -34,8 +35,9 @@ const Container = styled(motion.div)`
 `;
 
 const CloseButton = styled(Button)`
-  padding-left: ${p => p.theme.spacing.unit(2)}px;
-  margin-left: auto;
+  position: absolute;
+  top: ${p => p.theme.spacing.unit(PADDING)}px;
+  right: ${p => p.theme.spacing.unit(PADDING)}px;
 `;
 
 const Content = styled.div`
@@ -45,15 +47,17 @@ const Content = styled.div`
   padding: 0 ${p => p.theme.spacing.unit(PADDING)}px;
 `;
 
+const H2 = styled.h2`
+  padding-right: ${p => p.theme.spacing.unit(4)}px;
+`;
+
 const TitleWrapper = styled.div`
   padding: ${p =>
     `${p.theme.spacing.unit(PADDING)}px ${p.theme.spacing.unit(PADDING)}px 0 ${p.theme.spacing.unit(
       PADDING,
     )}px`};
   margin-bottom: ${p => p.theme.spacing.unit(2)}px;
-  display: flex;
-  flex: 0 0 auto;
-  align-items: baseline;
+  min-height: ${p => p.theme.spacing.unit(CROSS_SIZE)}px;
 `;
 
 const animationProps = {
@@ -88,7 +92,7 @@ const Title: React.FC<TitleProps> = ({ title, uid }) => {
       {isElement(title) ? (
         title
       ) : (
-        <Typography as="h2" type="title2">
+        <Typography as={H2} type="title2">
           {title}
         </Typography>
       )}
