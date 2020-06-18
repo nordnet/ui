@@ -4,25 +4,14 @@ import * as R from 'ramda';
 import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
 import { useColumnLayout } from '../shared/ColumnProvider';
-import { CellComponent, InnerCellComponent } from './Cell.types';
+import { CellComponent } from './Cell.types';
 import { TextWrapper } from './TextWrapper';
 
 const StyledFlexbox = styled(Flexbox)`
   overflow: hidden;
 `;
 
-const InnerCell: InnerCellComponent = React.memo(
-  ({ flexProps, children, className, fontSize, columnId }) => (
-    <StyledFlexbox className={className} role="cell" {...flexProps}>
-      {isElement(children) && children}
-      {isFunction(children)
-        ? children({ fontSize, columnId })
-        : !isElement(children) && <TextWrapper fontSize={fontSize}>{children}</TextWrapper>}
-    </StyledFlexbox>
-  ),
-);
-
-const Cell: CellComponent = ({ children, className, fontSize, columnId }) => {
+const Cell: CellComponent = React.memo(({ children, className, fontSize, columnId }) => {
   const [columnLayout] = useColumnLayout(columnId);
 
   if (!R.prop('flexProps', columnLayout)) {
@@ -30,15 +19,13 @@ const Cell: CellComponent = ({ children, className, fontSize, columnId }) => {
   }
 
   return (
-    <InnerCell
-      flexProps={columnLayout.flexProps}
-      className={className}
-      fontSize={fontSize}
-      columnId={columnId}
-    >
-      {children}
-    </InnerCell>
+    <StyledFlexbox className={className} role="cell" {...columnLayout.flexProps}>
+      {isElement(children) && children}
+      {isFunction(children)
+        ? children({ fontSize, columnId })
+        : !isElement(children) && <TextWrapper fontSize={fontSize}>{children}</TextWrapper>}
+    </StyledFlexbox>
   );
-};
+});
 
 export default Cell;
