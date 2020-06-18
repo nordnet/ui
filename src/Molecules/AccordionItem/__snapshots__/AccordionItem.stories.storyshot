@@ -1,0 +1,633 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | AccordionItem Controlled 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c1 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c3:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c3:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <button
+          className="NormalizedButton__Button-ey7f5x-0 c3"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              Toggle first
+            </span>
+          </span>
+        </button>
+      </div>
+      <div
+        className="c2"
+      >
+        <button
+          className="NormalizedButton__Button-ey7f5x-0 c3"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              Toggle second
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>,
+  .c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 + .c0 {
+  border-top: 1px solid #EBEBE8;
+}
+
+.c6 {
+  padding-top: 4px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+}
+
+.c6[hidden] {
+  display: none;
+}
+
+.c3 {
+  font: inherit;
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border: 0;
+  padding-top: 12px;
+  padding-right: 0;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #F5F5F5;
+}
+
+.c4 {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+<div
+    className="c0 c1"
+  >
+    <h3
+      className="c2"
+    >
+      <button
+        aria-expanded={false}
+        className="c3"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="c4"
+        >
+          <svg
+            aria-hidden="true"
+            className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 12 12"
+          >
+            <path
+              d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+        Låg CO₂ risk
+      </button>
+    </h3>
+    <div
+      className="c6"
+      hidden={true}
+    >
+      <p
+        className="c7"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+      </p>
+    </div>
+  </div>,
+  .c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 + .c0 {
+  border-top: 1px solid #EBEBE8;
+}
+
+.c6 {
+  padding-top: 4px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+}
+
+.c6[hidden] {
+  display: none;
+}
+
+.c3 {
+  font: inherit;
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border: 0;
+  padding-top: 12px;
+  padding-right: 0;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #F5F5F5;
+}
+
+.c4 {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+<div
+    className="c0 c1"
+  >
+    <h3
+      className="c2"
+    >
+      <button
+        aria-expanded={false}
+        className="c3"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="c4"
+        >
+          <svg
+            aria-hidden="true"
+            className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 12 12"
+          >
+            <path
+              d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+        Sustainability score
+      </button>
+    </h3>
+    <div
+      className="c6"
+      hidden={true}
+    >
+      <p
+        className="c7"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+      </p>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Molecules | AccordionItem Default Collapsed 1`] = `
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 + .c0 {
+  border-top: 1px solid #EBEBE8;
+}
+
+.c6 {
+  padding-top: 4px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+}
+
+.c6[hidden] {
+  display: none;
+}
+
+.c3 {
+  font: inherit;
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border: 0;
+  padding-top: 12px;
+  padding-right: 0;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #F5F5F5;
+}
+
+.c4 {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+<div
+  className="c0 c1"
+>
+  <h3
+    className="c2"
+  >
+    <button
+      aria-expanded={false}
+      className="c3"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="c4"
+      >
+        <svg
+          aria-hidden="true"
+          className="c5"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 12 12"
+        >
+          <path
+            d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+      Låg CO₂ risk
+    </button>
+  </h3>
+  <div
+    className="c6"
+    hidden={true}
+  >
+    <p
+      className="c7"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | AccordionItem Expanded 1`] = `
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 + .c0 {
+  border-top: 1px solid #EBEBE8;
+}
+
+.c6 {
+  padding-top: 4px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+}
+
+.c6[hidden] {
+  display: none;
+}
+
+.c3 {
+  font: inherit;
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border: 0;
+  padding-top: 12px;
+  padding-right: 0;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #F5F5F5;
+}
+
+.c4 {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+<div
+  className="c0 c1"
+>
+  <h3
+    className="c2"
+  >
+    <button
+      aria-expanded={true}
+      className="c3"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="c4"
+      >
+        <svg
+          aria-hidden="true"
+          className="c5"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 12 2"
+        >
+          <path
+            d="M12.166 0v2h-12V0z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+      Låg CO₂ risk
+    </button>
+  </h3>
+  <div
+    className="c6"
+    hidden={false}
+  >
+    <p
+      className="c7"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+    </p>
+  </div>
+</div>
+`;

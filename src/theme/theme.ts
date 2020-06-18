@@ -232,6 +232,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     dateAvatarBackground2: rawColor.gray7,
     dateAvatarText1: rawColor.gray2,
     dateAvatarText2: rawColor.gray0,
+    transferPendingIconColor: a11yColors ? rawColor.a11yIndex : rawColor.index,
     timelineColor1: a11yColors ? rawColor.a11yCta : rawColor.cta,
     timelineColor2: a11yColors ? rawColor.a11yPositive : rawColor.positive,
     timelineColor3: a11yColors ? rawColor.a11yIndex : rawColor.index,
@@ -258,6 +259,10 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     transferStatusBannerText2: rawColor.complementaryPink1,
     transferStatusBannerText3: rawColor.gray0,
     transferStatusBannerChevron: rawColor.gray0,
+    progressBarText: rawColor.white,
+    progressBarDone: rawColor.positive,
+    progressBarActive: rawColor.cta,
+    progressBarNext: rawColor.gray4,
   };
 };
 

@@ -30,7 +30,7 @@ Array [
 .c4 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c0 {
@@ -209,7 +209,6 @@ Array [
   .c4 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -321,7 +320,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll 1`] =
 .c4 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c19 {
@@ -529,7 +528,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll 1`] =
   .c4 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -726,7 +724,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll of co
 .c5 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c20 {
@@ -960,7 +958,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll of co
   .c5 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -1173,7 +1170,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
 .c4 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c15 {
@@ -1359,7 +1356,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   .c4 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -1486,6 +1482,338 @@ nunc dignissim.
 </div>
 `;
 
+exports[`Storyshots Organisms | CardWithTabs With variant big 1`] = `
+.c2 {
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+}
+
+.c7 {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 20px;
+}
+
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c9 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c9 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c10 {
+  box-sizing: border-box;
+}
+
+.c16 {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBE8;
+}
+
+.c13 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.c15 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c8 {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c17 {
+  height: 100%;
+}
+
+@media (min-width:760px) {
+  .c2 {
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (min-width:760px) {
+  .c7 {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media not all and (min-width:760px) {
+  .c3 {
+    display: none;
+  }
+}
+
+@media not all and (max-width:759px) {
+  .c5 {
+    display: none;
+  }
+}
+
+@media (min-width:760px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+  .c6 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0 c1"
+>
+  <header
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Title for the card
+      </span>
+    </div>
+    <div
+      className="c5"
+    >
+      <span
+        className="c6"
+      >
+        Title for the card
+      </span>
+    </div>
+  </header>
+  <div
+    className="c7"
+  >
+    <ul
+      className="c8 c9"
+      direction="row"
+      role="tablist"
+    >
+      <li
+        className="c10"
+        role="presentation"
+      >
+        <span
+          className="c11"
+        >
+          <button
+            aria-selected={true}
+            className="NormalizedButton__Button-ey7f5x-0 c12"
+            id="tabs-tab-0"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="tab"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="c13"
+              height={8}
+            >
+              Tab title 1
+            </span>
+          </button>
+        </span>
+      </li>
+      <li
+        className="c10"
+        role="presentation"
+      >
+        <span
+          className="c14"
+        >
+          <button
+            aria-selected={false}
+            className="NormalizedButton__Button-ey7f5x-0 c12"
+            id="tabs-tab-1"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            <span
+              className="c15"
+              height={8}
+            >
+              Tab title 2
+            </span>
+          </button>
+        </span>
+      </li>
+    </ul>
+    <div
+      className="c16"
+    />
+    <section
+      aria-labelledby="tabs-tab-0"
+      className="c17"
+      hidden={false}
+      id="tabs-tabpanel-0"
+      role="tabpanel"
+    >
+      1
+    </section>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
 .c2 {
   padding-left: 12px;
@@ -1497,7 +1825,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
 .c4 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c0 {
@@ -1676,7 +2004,6 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   .c4 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 

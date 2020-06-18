@@ -3,12 +3,11 @@ import { useUIDSeed } from 'react-uid';
 import styled from 'styled-components';
 import FocusLock from 'react-focus-lock';
 import { RemoveScroll } from 'react-remove-scroll';
-import { motion, useDragControls, AnimatePresence, PanInfo } from 'framer-motion';
+import { motion, useDragControls, AnimatePresence } from 'framer-motion';
 import { Props, TitleProps } from './Drawer.types';
 import { isBoolean, isElement } from '../../common/utils';
 import { Typography, Icon, useKeyPress, Portal, useMedia, Button } from '../..';
 
-const CROSS_SIZE = 5;
 const PADDING = 5;
 const displayName = 'Drawer';
 
@@ -35,9 +34,8 @@ const Container = styled(motion.div)`
 `;
 
 const CloseButton = styled(Button)`
-  position: absolute;
-  top: ${p => p.theme.spacing.unit(PADDING)}px;
-  right: ${p => p.theme.spacing.unit(PADDING)}px;
+  padding-left: ${p => p.theme.spacing.unit(2)}px;
+  margin-left: auto;
 `;
 
 const Content = styled.div`
@@ -47,35 +45,35 @@ const Content = styled.div`
   padding: 0 ${p => p.theme.spacing.unit(PADDING)}px;
 `;
 
-const H2 = styled.h2`
-  padding-right: ${p => p.theme.spacing.unit(4)}px;
-`;
-
 const TitleWrapper = styled.div`
-  position: relative;
   padding: ${p =>
     `${p.theme.spacing.unit(PADDING)}px ${p.theme.spacing.unit(PADDING)}px 0 ${p.theme.spacing.unit(
       PADDING,
     )}px`};
   margin-bottom: ${p => p.theme.spacing.unit(2)}px;
-  min-height: ${p => p.theme.spacing.unit(CROSS_SIZE)}px;
+  display: flex;
   flex: 0 0 auto;
+  align-items: baseline;
 `;
 
 const animationProps = {
+  initial: {
+    opacity: 0,
+    x: '100%',
+  },
   animate: {
     opacity: 1,
-    x: 0,
+    x: '0%',
+  },
+  exit: {
+    opacity: 0,
+    x: '100%',
   },
   transition: {
     ease: 'easeInOut',
     duration: 0.2,
   },
 };
-
-// Todo: handle rollback if small offset
-const shouldCloseBecauseOfDrag = (info: PanInfo) =>
-  Math.abs(info.offset.x) > 0 || Math.abs(info.velocity.x) > 300;
 
 const components = {
   CloseButton,
@@ -90,35 +88,12 @@ const Title: React.FC<TitleProps> = ({ title, uid }) => {
       {isElement(title) ? (
         title
       ) : (
-        <Typography as={H2} type="title2">
+        <Typography as="h2" type="title2">
           {title}
         </Typography>
       )}
     </span>
   );
-};
-
-const useDifferentAnimationBasedOnSwipeDirection = () => {
-  const [swipeDirection, setSwipeDirection] = React.useState('right');
-  const exitAnimation = React.useMemo(
-    () => ({
-      opacity: 0,
-      x: swipeDirection === 'right' ? 700 : -700,
-    }),
-    [swipeDirection],
-  );
-  const initialAnimation = React.useMemo(
-    () => ({
-      opacity: 0,
-      x: swipeDirection === 'right' ? 70 : -70,
-    }),
-    [swipeDirection],
-  );
-  return {
-    setSwipeDirection,
-    exitAnimation,
-    initialAnimation,
-  };
 };
 
 export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
@@ -131,12 +106,6 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
     const seed = useUIDSeed();
     const uid = seed(displayName);
     const dragControls = useDragControls();
-
-    const {
-      setSwipeDirection,
-      exitAnimation,
-      initialAnimation,
-    } = useDifferentAnimationBasedOnSwipeDirection();
 
     const startDrag = useCallback(
       event => {
@@ -155,21 +124,9 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
       }
     }, [onClose]);
 
-    const handleDragEnd = useCallback(
-      (_, info) => {
-        if (info.offset.x < 0) {
-          setSwipeDirection('left');
-        } else {
-          setSwipeDirection('right');
-        }
-        if (shouldCloseBecauseOfDrag(info)) {
-          handleCloseClick();
-        } else {
-          // Todo: handle small offsets -> rollback
-        }
-      },
-      [handleCloseClick, setSwipeDirection],
-    );
+    const handleDragEnd = useCallback(() => {
+      handleCloseClick();
+    }, [handleCloseClick]);
 
     useEffect(() => {
       if (isOpen && escapePress) {
@@ -188,8 +145,6 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
                   className={className}
                   aria-labelledby={uid}
                   {...animationProps}
-                  initial={initialAnimation}
-                  exit={exitAnimation}
                   ref={ref}
                   dragControls={dragControls}
                   dragListener={false}
@@ -199,7 +154,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
                   <TitleWrapper onTouchStart={startDrag}>
                     {title && <Title title={title} uid={uid} />}
                     <CloseButton type="button" variant="neutral" onClick={handleCloseClick}>
-                      <Icon.CrossThin size={CROSS_SIZE} title="Close this drawer" />
+                      <Icon.CrossMedium size={4} title="Close this drawer" />
                     </CloseButton>
                   </TitleWrapper>
                   {disableContentStyle ? children : <Content>{children}</Content>}

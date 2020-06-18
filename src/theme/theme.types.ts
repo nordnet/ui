@@ -299,6 +299,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   dateAvatarText1: RawColor['gray2'];
   /** gray0 */
   dateAvatarText2: RawColor['gray0'];
+  /** index */
+  transferPendingIconColor: ChangeableColor<RawColor['index'], RawColor['a11yIndex'], Version>;
   /** cta */
   timelineColor1: ChangeableColor<RawColor['cta'], RawColor['a11yCta'], Version>;
   /** positive */
@@ -333,6 +335,14 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   transferStatusBannerText3: RawColor['gray0'];
   /** gray0 */
   transferStatusBannerChevron: RawColor['gray0'];
+  /** white */
+  progressBarText: RawColor['white'];
+  /** positive */
+  progressBarDone: RawColor['positive'];
+  /** cta */
+  progressBarActive: RawColor['cta'];
+  /** gray4 */
+  progressBarNext: RawColor['gray4'];
 };
 
 export type ColorSets = {

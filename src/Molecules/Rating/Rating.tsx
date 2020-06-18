@@ -3,7 +3,6 @@ import { injectIntl } from 'react-intl';
 import { Flexbox, Icon, VisuallyHidden } from '../..';
 import { isNumber } from '../../common/utils';
 import { Props, RatingComponent } from './Rating.types';
-import messages from './Rating.messages';
 
 const restrictRange = (rating: Props['rating']) => {
   if (!isNumber(rating)) return 0;
@@ -13,11 +12,13 @@ const restrictRange = (rating: Props['rating']) => {
   return rating;
 };
 
-export const Rating: RatingComponent = ({ rating = 0, size = 5, intl: { formatMessage } }) => {
+export const Rating: RatingComponent = ({ rating = 0, size = 5 }) => {
   const finalRating = restrictRange(rating);
+  const screenReaderText = rating === 1 ? `${rating} star` : `${rating} stars`;
+
   return (
     <Flexbox container gutter={1}>
-      <VisuallyHidden>{formatMessage(messages.rating, { rating: finalRating })}</VisuallyHidden>
+      <VisuallyHidden>{screenReaderText}</VisuallyHidden>
       {[...Array(5)].map((_, index) => (
         <Icon.Star
           key={index} // eslint-disable-line react/no-array-index-key

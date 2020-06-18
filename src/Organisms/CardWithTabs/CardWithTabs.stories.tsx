@@ -50,6 +50,21 @@ withInitialActiveTabIndex.story = {
   name: 'with initialActiveTabIndex',
 };
 
+export const withVariantBig = () => (
+  <CardWithTabs variant="big" title="Title for the card" initialActiveTabIndex={0}>
+    <CardWithTabs.Tab title="Tab title 1" onTitleClick={action('Clicked title1')}>
+      1
+    </CardWithTabs.Tab>
+    <CardWithTabs.Tab title="Tab title 2" onTitleClick={action('Clicked title2')}>
+      2
+    </CardWithTabs.Tab>
+  </CardWithTabs>
+);
+
+withVariantBig.story = {
+  name: 'With variant big',
+};
+
 export const controlledBehaviour = () => {
   const ControlledComponent = () => {
     const [active, setActive] = useState(0);

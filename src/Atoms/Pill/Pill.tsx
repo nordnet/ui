@@ -7,7 +7,7 @@ import { Theme } from '../../theme/theme.types';
 import { isFunction } from '../../common/utils';
 
 const CleanDiv = React.forwardRef<HTMLDivElement, any>((props, ref) => (
-  <div ref={ref} {...R.omit(['noPadding'])(props)} />
+  <div ref={ref} {...R.omit(['barColor', 'noPadding'])(props)} />
 ));
 
 const getColor = (props: ThemedStyledProps<Props, Theme>) => {

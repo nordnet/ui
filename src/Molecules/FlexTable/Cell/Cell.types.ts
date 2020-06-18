@@ -26,6 +26,7 @@ type ExpandCellProps = {
   disabled?: boolean;
   expanded: boolean;
   onClick: () => void;
+  columnId: string;
 };
 
 export type ExpandCellComponent = React.FC<ExpandCellProps>;

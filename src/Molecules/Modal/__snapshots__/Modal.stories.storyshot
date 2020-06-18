@@ -1,5 +1,314 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Molecules | Modal Close On Backdrop Click Story 1`] = `
+.c6 {
+  margin-bottom: 8px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c10 {
+  stroke: #6E6E69;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  padding-right: 16px;
+}
+
+.c2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 20px;
+  right: 20px;
+}
+
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  padding-bottom: 16px;
+  padding-right: 28px;
+  min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c0 {
+  background-image: linear-gradient(#00D200,#FF1900);
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 200vh;
+}
+
+@media (min-width:760px) {
+  .c5 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+  .c2 {
+    background-color: rgba(110,110,105,0.63);
+  }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+  .c8 {
+    top: 40px;
+    right: 40px;
+  }
+}
+
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Open modal
+  </button>
+  <div
+    className="c0"
+  />
+  <portal-dummy>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
+      >
+        <div
+          className="c1 c2"
+          onClick={[Function]}
+        >
+          <div>
+            <div
+              className="c3"
+            >
+              <span
+                id="18val-ModalTitle"
+              >
+                <h2
+                  className="c4 c5"
+                >
+                  Dialog information
+                </h2>
+              </span>
+            </div>
+            <div
+              className="c6"
+            >
+              <p
+                className="c7"
+              >
+                Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+              </p>
+            </div>
+            <div
+              className="c6"
+            >
+              <p
+                className="c7"
+              >
+                That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+              </p>
+            </div>
+            <div
+              className="c6"
+            >
+              <p
+                className="c7"
+              >
+                Nielsen/Norman has an excellent article about their usage here
+              </p>
+            </div>
+            <p
+              className="c7"
+            >
+              <a
+                href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+              >
+                https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+              </a>
+            </p>
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c8"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c9"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  className="c10"
+                  d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                  strokeWidth={2}
+                />
+                <title>
+                  Close this modal
+                </title>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+  </portal-dummy>
+</div>
+`;
+
 exports[`Storyshots Molecules | Modal Default 1`] = `
 .c6 {
   margin-bottom: 8px;
@@ -211,13 +520,14 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
       >
         <div
           className="c1 c2"
+          onClick={[Function]}
         >
           <div>
             <div
               className="c3"
             >
               <span
-                id="5val-ModalTitle"
+                id="6val-ModalTitle"
               >
                 <h2
                   className="c4 c5"
@@ -452,13 +762,14 @@ exports[`Storyshots Molecules | Modal Hide Close button 1`] = `
       >
         <div
           className="c1 c2"
+          onClick={[Function]}
         >
           <div>
             <div
               className="c3"
             >
               <span
-                id="13val-ModalTitle"
+                id="14val-ModalTitle"
               >
                 <h2
                   className="c4 c5"
@@ -890,13 +1201,14 @@ exports[`Storyshots Molecules | Modal Integration: Modal with a footer and Butto
       >
         <div
           className="c1 c2"
+          onClick={[Function]}
         >
           <div>
             <div
               className="c3"
             >
               <span
-                id="7val-ModalTitle"
+                id="8val-ModalTitle"
               >
                 <h2
                   className="c4 c5"
@@ -1271,13 +1583,14 @@ exports[`Storyshots Molecules | Modal Node as Title 1`] = `
       >
         <div
           className="c1 c2"
+          onClick={[Function]}
         >
           <div>
             <div
               className="c3"
             >
               <span
-                id="15val-ModalTitle"
+                id="16val-ModalTitle"
               >
                 <div
                   className="c4"
@@ -1603,13 +1916,14 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
       >
         <div
           className="c1 c2"
+          onClick={[Function]}
         >
           <div>
             <div
               className="c3"
             >
               <span
-                id="11val-ModalTitle"
+                id="12val-ModalTitle"
               >
                 <h2
                   className="c4 c5"
@@ -1891,6 +2205,7 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
       >
         <div
           className="c1 c2"
+          onClick={[Function]}
         >
           <div>
             <div

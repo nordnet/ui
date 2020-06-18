@@ -8,13 +8,13 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article (most Car
   padding-bottom: 8px;
 }
 
-.c3 {
+.c5 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
-.c2 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -43,15 +43,26 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article (most Car
 }
 
 @media (min-width:760px) {
-  .c3 {
+  .c5 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
+  }
+}
+
+@media not all and (min-width:760px) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media not all and (max-width:759px) {
+  .c4 {
+    display: none;
   }
 }
 
 @media (min-width:760px) {
-  .c2 {
+  .c3 {
     font-size: 20px;
     line-height: 1.2;
   }
@@ -63,14 +74,27 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article (most Car
   <header
     className="c1"
   >
-    <span
+    <div
       className="c2"
     >
-      Konton
-    </span>
+      <span
+        className="c3"
+      >
+        Konton
+      </span>
+    </div>
+    <div
+      className="c4"
+    >
+      <span
+        className="c3"
+      >
+        Konton
+      </span>
+    </div>
   </header>
   <div
-    className="c3"
+    className="c5"
   >
     A CardWithTitle as a article containing content
   </div>
@@ -85,13 +109,13 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as section 1`] = `
   padding-bottom: 8px;
 }
 
-.c3 {
+.c5 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
-.c2 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -120,15 +144,26 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as section 1`] = `
 }
 
 @media (min-width:760px) {
-  .c3 {
+  .c5 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
+  }
+}
+
+@media not all and (min-width:760px) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media not all and (max-width:759px) {
+  .c4 {
+    display: none;
   }
 }
 
 @media (min-width:760px) {
-  .c2 {
+  .c3 {
     font-size: 20px;
     line-height: 1.2;
   }
@@ -140,14 +175,27 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as section 1`] = `
   <header
     className="c1"
   >
-    <span
+    <div
       className="c2"
     >
-      Konton
-    </span>
+      <span
+        className="c3"
+      >
+        Konton
+      </span>
+    </div>
+    <div
+      className="c4"
+    >
+      <span
+        className="c3"
+      >
+        Konton
+      </span>
+    </div>
   </header>
   <div
-    className="c3"
+    className="c5"
   >
     A CardWithTitle as a section containing content
   </div>
@@ -162,10 +210,10 @@ exports[`Storyshots Molecules | CardWithTitle Default 1`] = `
   padding-bottom: 8px;
 }
 
-.c4 {
+.c6 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c0 {
@@ -173,7 +221,7 @@ exports[`Storyshots Molecules | CardWithTitle Default 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -202,15 +250,26 @@ exports[`Storyshots Molecules | CardWithTitle Default 1`] = `
 }
 
 @media (min-width:760px) {
-  .c4 {
+  .c6 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
+  }
+}
+
+@media not all and (min-width:760px) {
+  .c3 {
+    display: none;
+  }
+}
+
+@media not all and (max-width:759px) {
+  .c5 {
+    display: none;
   }
 }
 
 @media (min-width:760px) {
-  .c3 {
+  .c4 {
     font-size: 20px;
     line-height: 1.2;
   }
@@ -222,14 +281,27 @@ exports[`Storyshots Molecules | CardWithTitle Default 1`] = `
   <header
     className="c2"
   >
-    <span
+    <div
       className="c3"
     >
-      Konton
-    </span>
+      <span
+        className="c4"
+      >
+        Konton
+      </span>
+    </div>
+    <div
+      className="c5"
+    >
+      <span
+        className="c4"
+      >
+        Konton
+      </span>
+    </div>
   </header>
   <div
-    className="c4"
+    className="c6"
   >
     A CardWithTitle containing content
   </div>
@@ -247,7 +319,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
 .c10 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c11 {
@@ -362,7 +434,6 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
   .c10 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -447,7 +518,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: with FadedScroll 1`] 
 .c4 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c9 {
@@ -520,7 +591,6 @@ exports[`Storyshots Molecules | CardWithTitle Integration: with FadedScroll 1`] 
   .c4 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -637,7 +707,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: with FadedScroll of c
 .c5 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c10 {
@@ -736,7 +806,6 @@ exports[`Storyshots Molecules | CardWithTitle Integration: with FadedScroll of c
   .c5 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -869,7 +938,7 @@ exports[`Storyshots Molecules | CardWithTitle With Component As Title 1`] = `
 .c4 {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .c0 {
@@ -909,7 +978,6 @@ exports[`Storyshots Molecules | CardWithTitle With Component As Title 1`] = `
   .c4 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
   }
 }
 
@@ -936,6 +1004,130 @@ exports[`Storyshots Molecules | CardWithTitle With Component As Title 1`] = `
     className="c4"
   >
     A CardWithTitle containing content
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | CardWithTitle With variant big 1`] = `
+.c2 {
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+}
+
+.c7 {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 20px;
+}
+
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+@media (min-width:760px) {
+  .c2 {
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (min-width:760px) {
+  .c7 {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media not all and (min-width:760px) {
+  .c3 {
+    display: none;
+  }
+}
+
+@media not all and (max-width:759px) {
+  .c5 {
+    display: none;
+  }
+}
+
+@media (min-width:760px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+  .c6 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0 c1"
+>
+  <header
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Title for the card
+      </span>
+    </div>
+    <div
+      className="c5"
+    >
+      <span
+        className="c6"
+      >
+        Title for the card
+      </span>
+    </div>
+  </header>
+  <div
+    className="c7"
+  >
+    A CardWithTitle with extra padding
   </div>
 </div>
 `;

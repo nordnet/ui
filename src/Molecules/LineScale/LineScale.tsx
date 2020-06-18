@@ -30,7 +30,7 @@ const IntersectionLeft = styled.div`
 
 const IntersectionRight = styled.div`
   ${intersectionStyles}
-  right: 6px;
+  right: -6px;
 `;
 
 const leftCollisionStyle = css`
@@ -83,6 +83,10 @@ const AverageLabel = styled('span').withConfig({
   white-space: nowrap;
   text-align: center;
   color: ${({ theme }) => theme.color.label};
+`;
+
+const StyledBox = styled(Box)`
+  position: relative;
 `;
 
 const StyledFlexbox = styled(Flexbox).withConfig({
@@ -170,7 +174,7 @@ export const LineScale: React.FC<Props> = ({
 
   return (
     <Typography type="tertiary" color={t => t.color.label}>
-      <Box mt={8}>
+      <StyledBox mt={8}>
         <Flexbox container direction="column">
           <IntersectionLeft ref={intersectionLeft} />
           <IntersectionRight ref={intersectionRight} />
@@ -217,7 +221,7 @@ export const LineScale: React.FC<Props> = ({
             </Flexbox>
           )}
         </Flexbox>
-      </Box>
+      </StyledBox>
     </Typography>
   );
 };

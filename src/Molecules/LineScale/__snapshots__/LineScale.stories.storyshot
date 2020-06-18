@@ -5,7 +5,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Left Edge 1`] = `
   margin-top: 32px;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -16,14 +16,14 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Left Edge 1`] = `
   flex-direction: column;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -31,7 +31,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Left Edge 1`] = `
   display: flex;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -43,7 +43,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Left Edge 1`] = `
   justify-content: space-between;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
 }
 
@@ -56,23 +56,13 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Left Edge 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c3 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  left: -6px;
 }
 
 .c4 {
@@ -82,10 +72,20 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Left Edge 1`] = `
   bottom: 100%;
   margin-bottom: 12px;
   pointer-events: none;
-  right: 6px;
+  left: -6px;
 }
 
-.c8 {
+.c5 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 12px;
+  pointer-events: none;
+  right: -6px;
+}
+
+.c9 {
   position: relative;
   bottom: 100%;
   margin: 0 1% 12px;
@@ -100,7 +100,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Left Edge 1`] = `
   color: #FFFFFF;
 }
 
-.c12 {
+.c13 {
   position: relative;
   bottom: -32px;
   margin-left: 1%;
@@ -114,14 +114,18 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Left Edge 1`] = `
   color: #6E6E69;
 }
 
-.c7 {
+.c2 {
+  position: relative;
+}
+
+.c8 {
   position: relative;
   height: 2px;
   background-color: #000000;
   margin-bottom: 8px;
 }
 
-.c7::before {
+.c8::before {
   display: block;
   content: '';
   position: absolute;
@@ -132,7 +136,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Left Edge 1`] = `
   border-left: 1px dashed #6E6E69;
 }
 
-.c7::after {
+.c8::after {
   display: block;
   content: '';
   position: absolute;
@@ -151,28 +155,28 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Left Edge 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="c1 c2"
   >
     <div
-      className="c2"
+      className="c3"
     >
-      <div
-        className="c3"
-      />
       <div
         className="c4"
       />
       <div
         className="c5"
+      />
+      <div
+        className="c6"
       >
         <div
-          className="c6 c7"
+          className="c7 c8"
         >
           <span
-            className="c8"
+            className="c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               1.00
             </span>
@@ -180,27 +184,27 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Left Edge 1`] = `
         </div>
       </div>
       <div
-        className="c10"
+        className="c11"
       >
         <div
-          className="c11"
+          className="c12"
         >
           0
         </div>
         <div
-          className="c11"
+          className="c12"
         >
           100
         </div>
       </div>
       <div
-        className="c5"
+        className="c6"
       >
         <div
-          className="c6"
+          className="c7"
         >
           <span
-            className="c12"
+            className="c13"
           >
             <span
               className="c0"
@@ -220,7 +224,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Right Edge 1`] = 
   margin-top: 32px;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -231,14 +235,14 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Right Edge 1`] = 
   flex-direction: column;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -246,7 +250,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Right Edge 1`] = 
   display: flex;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -258,7 +262,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Right Edge 1`] = 
   justify-content: space-between;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
 }
 
@@ -271,23 +275,13 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Right Edge 1`] = 
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c3 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  left: -6px;
 }
 
 .c4 {
@@ -297,10 +291,20 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Right Edge 1`] = 
   bottom: 100%;
   margin-bottom: 12px;
   pointer-events: none;
-  right: 6px;
+  left: -6px;
 }
 
-.c8 {
+.c5 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 12px;
+  pointer-events: none;
+  right: -6px;
+}
+
+.c9 {
   position: relative;
   bottom: 100%;
   margin: 0 99% 12px;
@@ -315,7 +319,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Right Edge 1`] = 
   color: #FFFFFF;
 }
 
-.c12 {
+.c13 {
   position: relative;
   bottom: -32px;
   margin-left: 99%;
@@ -329,14 +333,18 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Right Edge 1`] = 
   color: #6E6E69;
 }
 
-.c7 {
+.c2 {
+  position: relative;
+}
+
+.c8 {
   position: relative;
   height: 2px;
   background-color: #000000;
   margin-bottom: 8px;
 }
 
-.c7::before {
+.c8::before {
   display: block;
   content: '';
   position: absolute;
@@ -347,7 +355,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Right Edge 1`] = 
   border-left: 1px dashed #6E6E69;
 }
 
-.c7::after {
+.c8::after {
   display: block;
   content: '';
   position: absolute;
@@ -366,28 +374,28 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Right Edge 1`] = 
   className="c0"
 >
   <div
-    className="c1"
+    className="c1 c2"
   >
     <div
-      className="c2"
+      className="c3"
     >
-      <div
-        className="c3"
-      />
       <div
         className="c4"
       />
       <div
         className="c5"
+      />
+      <div
+        className="c6"
       >
         <div
-          className="c6 c7"
+          className="c7 c8"
         >
           <span
-            className="c8"
+            className="c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               99.00
             </span>
@@ -395,27 +403,27 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Right Edge 1`] = 
         </div>
       </div>
       <div
-        className="c10"
+        className="c11"
       >
         <div
-          className="c11"
+          className="c12"
         >
           Lowest value
         </div>
         <div
-          className="c11"
+          className="c12"
         >
           Highest value
         </div>
       </div>
       <div
-        className="c5"
+        className="c6"
       >
         <div
-          className="c6"
+          className="c7"
         >
           <span
-            className="c12"
+            className="c13"
           >
             <span
               className="c0"
@@ -435,7 +443,7 @@ exports[`Storyshots Molecules | LineScale Line Scale At Left Edge 1`] = `
   margin-top: 32px;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -446,14 +454,14 @@ exports[`Storyshots Molecules | LineScale Line Scale At Left Edge 1`] = `
   flex-direction: column;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -461,7 +469,7 @@ exports[`Storyshots Molecules | LineScale Line Scale At Left Edge 1`] = `
   display: flex;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -473,7 +481,7 @@ exports[`Storyshots Molecules | LineScale Line Scale At Left Edge 1`] = `
   justify-content: space-between;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
 }
 
@@ -486,23 +494,13 @@ exports[`Storyshots Molecules | LineScale Line Scale At Left Edge 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c3 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  left: -6px;
 }
 
 .c4 {
@@ -512,10 +510,20 @@ exports[`Storyshots Molecules | LineScale Line Scale At Left Edge 1`] = `
   bottom: 100%;
   margin-bottom: 12px;
   pointer-events: none;
-  right: 6px;
+  left: -6px;
 }
 
-.c8 {
+.c5 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 12px;
+  pointer-events: none;
+  right: -6px;
+}
+
+.c9 {
   position: relative;
   bottom: 100%;
   margin: 0 0% 12px;
@@ -530,7 +538,7 @@ exports[`Storyshots Molecules | LineScale Line Scale At Left Edge 1`] = `
   color: #FFFFFF;
 }
 
-.c12 {
+.c13 {
   position: relative;
   bottom: -32px;
   margin-left: 0%;
@@ -544,14 +552,18 @@ exports[`Storyshots Molecules | LineScale Line Scale At Left Edge 1`] = `
   color: #6E6E69;
 }
 
-.c7 {
+.c2 {
+  position: relative;
+}
+
+.c8 {
   position: relative;
   height: 2px;
   background-color: #000000;
   margin-bottom: 8px;
 }
 
-.c7::before {
+.c8::before {
   display: block;
   content: '';
   position: absolute;
@@ -562,7 +574,7 @@ exports[`Storyshots Molecules | LineScale Line Scale At Left Edge 1`] = `
   border-left: 1px dashed #6E6E69;
 }
 
-.c7::after {
+.c8::after {
   display: block;
   content: '';
   position: absolute;
@@ -581,28 +593,28 @@ exports[`Storyshots Molecules | LineScale Line Scale At Left Edge 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="c1 c2"
   >
     <div
-      className="c2"
+      className="c3"
     >
-      <div
-        className="c3"
-      />
       <div
         className="c4"
       />
       <div
         className="c5"
+      />
+      <div
+        className="c6"
       >
         <div
-          className="c6 c7"
+          className="c7 c8"
         >
           <span
-            className="c8"
+            className="c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               0.00
             </span>
@@ -610,27 +622,27 @@ exports[`Storyshots Molecules | LineScale Line Scale At Left Edge 1`] = `
         </div>
       </div>
       <div
-        className="c10"
+        className="c11"
       >
         <div
-          className="c11"
+          className="c12"
         >
           0
         </div>
         <div
-          className="c11"
+          className="c12"
         >
           100
         </div>
       </div>
       <div
-        className="c5"
+        className="c6"
       >
         <div
-          className="c6"
+          className="c7"
         >
           <span
-            className="c12"
+            className="c13"
           >
             <span
               className="c0"
@@ -650,7 +662,7 @@ exports[`Storyshots Molecules | LineScale Line Scale At Right Edge 1`] = `
   margin-top: 32px;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -661,14 +673,14 @@ exports[`Storyshots Molecules | LineScale Line Scale At Right Edge 1`] = `
   flex-direction: column;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -676,7 +688,7 @@ exports[`Storyshots Molecules | LineScale Line Scale At Right Edge 1`] = `
   display: flex;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -688,7 +700,7 @@ exports[`Storyshots Molecules | LineScale Line Scale At Right Edge 1`] = `
   justify-content: space-between;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
 }
 
@@ -701,23 +713,13 @@ exports[`Storyshots Molecules | LineScale Line Scale At Right Edge 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c3 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  left: -6px;
 }
 
 .c4 {
@@ -727,10 +729,20 @@ exports[`Storyshots Molecules | LineScale Line Scale At Right Edge 1`] = `
   bottom: 100%;
   margin-bottom: 12px;
   pointer-events: none;
-  right: 6px;
+  left: -6px;
 }
 
-.c8 {
+.c5 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 12px;
+  pointer-events: none;
+  right: -6px;
+}
+
+.c9 {
   position: relative;
   bottom: 100%;
   margin: 0 100% 12px;
@@ -745,7 +757,7 @@ exports[`Storyshots Molecules | LineScale Line Scale At Right Edge 1`] = `
   color: #FFFFFF;
 }
 
-.c12 {
+.c13 {
   position: relative;
   bottom: -32px;
   margin-left: 100%;
@@ -759,14 +771,18 @@ exports[`Storyshots Molecules | LineScale Line Scale At Right Edge 1`] = `
   color: #6E6E69;
 }
 
-.c7 {
+.c2 {
+  position: relative;
+}
+
+.c8 {
   position: relative;
   height: 2px;
   background-color: #000000;
   margin-bottom: 8px;
 }
 
-.c7::before {
+.c8::before {
   display: block;
   content: '';
   position: absolute;
@@ -777,7 +793,7 @@ exports[`Storyshots Molecules | LineScale Line Scale At Right Edge 1`] = `
   border-left: 1px dashed #6E6E69;
 }
 
-.c7::after {
+.c8::after {
   display: block;
   content: '';
   position: absolute;
@@ -796,28 +812,28 @@ exports[`Storyshots Molecules | LineScale Line Scale At Right Edge 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="c1 c2"
   >
     <div
-      className="c2"
+      className="c3"
     >
-      <div
-        className="c3"
-      />
       <div
         className="c4"
       />
       <div
         className="c5"
+      />
+      <div
+        className="c6"
       >
         <div
-          className="c6 c7"
+          className="c7 c8"
         >
           <span
-            className="c8"
+            className="c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               100.00
             </span>
@@ -825,27 +841,27 @@ exports[`Storyshots Molecules | LineScale Line Scale At Right Edge 1`] = `
         </div>
       </div>
       <div
-        className="c10"
+        className="c11"
       >
         <div
-          className="c11"
+          className="c12"
         >
           0
         </div>
         <div
-          className="c11"
+          className="c12"
         >
           100
         </div>
       </div>
       <div
-        className="c5"
+        className="c6"
       >
         <div
-          className="c6"
+          className="c7"
         >
           <span
-            className="c12"
+            className="c13"
           >
             <span
               className="c0"
@@ -865,7 +881,7 @@ exports[`Storyshots Molecules | LineScale Line Scale In The Middle With Knobs 1`
   margin-top: 32px;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -876,14 +892,14 @@ exports[`Storyshots Molecules | LineScale Line Scale In The Middle With Knobs 1`
   flex-direction: column;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -891,7 +907,7 @@ exports[`Storyshots Molecules | LineScale Line Scale In The Middle With Knobs 1`
   display: flex;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -903,7 +919,7 @@ exports[`Storyshots Molecules | LineScale Line Scale In The Middle With Knobs 1`
   justify-content: space-between;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
 }
 
@@ -916,23 +932,13 @@ exports[`Storyshots Molecules | LineScale Line Scale In The Middle With Knobs 1`
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c3 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  left: -6px;
 }
 
 .c4 {
@@ -942,10 +948,20 @@ exports[`Storyshots Molecules | LineScale Line Scale In The Middle With Knobs 1`
   bottom: 100%;
   margin-bottom: 12px;
   pointer-events: none;
-  right: 6px;
+  left: -6px;
 }
 
-.c8 {
+.c5 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 12px;
+  pointer-events: none;
+  right: -6px;
+}
+
+.c9 {
   position: relative;
   bottom: 100%;
   margin: 0 50% 12px;
@@ -960,7 +976,7 @@ exports[`Storyshots Molecules | LineScale Line Scale In The Middle With Knobs 1`
   color: #FFFFFF;
 }
 
-.c12 {
+.c13 {
   position: relative;
   bottom: -32px;
   margin-left: 50%;
@@ -974,14 +990,18 @@ exports[`Storyshots Molecules | LineScale Line Scale In The Middle With Knobs 1`
   color: #6E6E69;
 }
 
-.c7 {
+.c2 {
+  position: relative;
+}
+
+.c8 {
   position: relative;
   height: 2px;
   background-color: #000000;
   margin-bottom: 8px;
 }
 
-.c7::before {
+.c8::before {
   display: block;
   content: '';
   position: absolute;
@@ -992,7 +1012,7 @@ exports[`Storyshots Molecules | LineScale Line Scale In The Middle With Knobs 1`
   border-left: 1px dashed #6E6E69;
 }
 
-.c7::after {
+.c8::after {
   display: block;
   content: '';
   position: absolute;
@@ -1011,28 +1031,28 @@ exports[`Storyshots Molecules | LineScale Line Scale In The Middle With Knobs 1`
   className="c0"
 >
   <div
-    className="c1"
+    className="c1 c2"
   >
     <div
-      className="c2"
+      className="c3"
     >
-      <div
-        className="c3"
-      />
       <div
         className="c4"
       />
       <div
         className="c5"
+      />
+      <div
+        className="c6"
       >
         <div
-          className="c6 c7"
+          className="c7 c8"
         >
           <span
-            className="c8"
+            className="c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               50
             </span>
@@ -1040,27 +1060,27 @@ exports[`Storyshots Molecules | LineScale Line Scale In The Middle With Knobs 1`
         </div>
       </div>
       <div
-        className="c10"
+        className="c11"
       >
         <div
-          className="c11"
+          className="c12"
         >
           0
         </div>
         <div
-          className="c11"
+          className="c12"
         >
           100
         </div>
       </div>
       <div
-        className="c5"
+        className="c6"
       >
         <div
-          className="c6"
+          className="c7"
         >
           <span
-            className="c12"
+            className="c13"
           >
             <span
               className="c0"
@@ -1080,7 +1100,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge 1`] = `
   margin-top: 32px;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1091,14 +1111,14 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge 1`] = `
   flex-direction: column;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1106,7 +1126,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge 1`] = `
   display: flex;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1118,7 +1138,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge 1`] = `
   justify-content: space-between;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
 }
 
@@ -1131,23 +1151,13 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c3 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  left: -6px;
 }
 
 .c4 {
@@ -1157,10 +1167,20 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge 1`] = `
   bottom: 100%;
   margin-bottom: 12px;
   pointer-events: none;
-  right: 6px;
+  left: -6px;
 }
 
-.c8 {
+.c5 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 12px;
+  pointer-events: none;
+  right: -6px;
+}
+
+.c9 {
   position: relative;
   bottom: 100%;
   margin: 0 5% 12px;
@@ -1175,7 +1195,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge 1`] = `
   color: #FFFFFF;
 }
 
-.c12 {
+.c13 {
   position: relative;
   bottom: -32px;
   margin-left: 5%;
@@ -1189,14 +1209,18 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge 1`] = `
   color: #6E6E69;
 }
 
-.c7 {
+.c2 {
+  position: relative;
+}
+
+.c8 {
   position: relative;
   height: 2px;
   background-color: #000000;
   margin-bottom: 8px;
 }
 
-.c7::before {
+.c8::before {
   display: block;
   content: '';
   position: absolute;
@@ -1207,7 +1231,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge 1`] = `
   border-left: 1px dashed #6E6E69;
 }
 
-.c7::after {
+.c8::after {
   display: block;
   content: '';
   position: absolute;
@@ -1226,28 +1250,28 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="c1 c2"
   >
     <div
-      className="c2"
+      className="c3"
     >
-      <div
-        className="c3"
-      />
       <div
         className="c4"
       />
       <div
         className="c5"
+      />
+      <div
+        className="c6"
       >
         <div
-          className="c6 c7"
+          className="c7 c8"
         >
           <span
-            className="c8"
+            className="c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               5.00
             </span>
@@ -1255,27 +1279,27 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge 1`] = `
         </div>
       </div>
       <div
-        className="c10"
+        className="c11"
       >
         <div
-          className="c11"
+          className="c12"
         >
           Lowest value
         </div>
         <div
-          className="c11"
+          className="c12"
         >
           Highest value
         </div>
       </div>
       <div
-        className="c5"
+        className="c6"
       >
         <div
-          className="c6"
+          className="c7"
         >
           <span
-            className="c12"
+            className="c13"
           >
             <span
               className="c0"
@@ -1295,7 +1319,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge With Bigger 
   margin-top: 32px;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1306,14 +1330,14 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge With Bigger 
   flex-direction: column;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1321,7 +1345,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge With Bigger 
   display: flex;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1333,7 +1357,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge With Bigger 
   justify-content: space-between;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
 }
 
@@ -1346,23 +1370,13 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge With Bigger 
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c3 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  left: -6px;
 }
 
 .c4 {
@@ -1372,10 +1386,20 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge With Bigger 
   bottom: 100%;
   margin-bottom: 12px;
   pointer-events: none;
-  right: 6px;
+  left: -6px;
 }
 
-.c8 {
+.c5 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 12px;
+  pointer-events: none;
+  right: -6px;
+}
+
+.c9 {
   position: relative;
   bottom: 100%;
   margin: 0 5% 12px;
@@ -1390,7 +1414,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge With Bigger 
   color: #FFFFFF;
 }
 
-.c12 {
+.c13 {
   position: relative;
   bottom: -32px;
   margin-left: 5%;
@@ -1404,14 +1428,18 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge With Bigger 
   color: #6E6E69;
 }
 
-.c7 {
+.c2 {
+  position: relative;
+}
+
+.c8 {
   position: relative;
   height: 2px;
   background-color: #000000;
   margin-bottom: 8px;
 }
 
-.c7::before {
+.c8::before {
   display: block;
   content: '';
   position: absolute;
@@ -1422,7 +1450,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge With Bigger 
   border-left: 1px dashed #6E6E69;
 }
 
-.c7::after {
+.c8::after {
   display: block;
   content: '';
   position: absolute;
@@ -1441,28 +1469,28 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge With Bigger 
   className="c0"
 >
   <div
-    className="c1"
+    className="c1 c2"
   >
     <div
-      className="c2"
+      className="c3"
     >
-      <div
-        className="c3"
-      />
       <div
         className="c4"
       />
       <div
         className="c5"
+      />
+      <div
+        className="c6"
       >
         <div
-          className="c6 c7"
+          className="c7 c8"
         >
           <span
-            className="c8"
+            className="c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               Latest 5.00
             </span>
@@ -1470,27 +1498,27 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge With Bigger 
         </div>
       </div>
       <div
-        className="c10"
+        className="c11"
       >
         <div
-          className="c11"
+          className="c12"
         >
           0
         </div>
         <div
-          className="c11"
+          className="c12"
         >
           100
         </div>
       </div>
       <div
-        className="c5"
+        className="c6"
       >
         <div
-          className="c6"
+          className="c7"
         >
           <span
-            className="c12"
+            className="c13"
           >
             <span
               className="c0"
@@ -1510,7 +1538,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge 1`] = `
   margin-top: 32px;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1521,14 +1549,14 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge 1`] = `
   flex-direction: column;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1536,7 +1564,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge 1`] = `
   display: flex;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1548,7 +1576,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge 1`] = `
   justify-content: space-between;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
 }
 
@@ -1561,23 +1589,13 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c3 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  left: -6px;
 }
 
 .c4 {
@@ -1587,10 +1605,20 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge 1`] = `
   bottom: 100%;
   margin-bottom: 12px;
   pointer-events: none;
-  right: 6px;
+  left: -6px;
 }
 
-.c8 {
+.c5 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 12px;
+  pointer-events: none;
+  right: -6px;
+}
+
+.c9 {
   position: relative;
   bottom: 100%;
   margin: 0 95% 12px;
@@ -1605,7 +1633,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge 1`] = `
   color: #FFFFFF;
 }
 
-.c12 {
+.c13 {
   position: relative;
   bottom: -32px;
   margin-left: 95%;
@@ -1619,14 +1647,18 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge 1`] = `
   color: #6E6E69;
 }
 
-.c7 {
+.c2 {
+  position: relative;
+}
+
+.c8 {
   position: relative;
   height: 2px;
   background-color: #000000;
   margin-bottom: 8px;
 }
 
-.c7::before {
+.c8::before {
   display: block;
   content: '';
   position: absolute;
@@ -1637,7 +1669,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge 1`] = `
   border-left: 1px dashed #6E6E69;
 }
 
-.c7::after {
+.c8::after {
   display: block;
   content: '';
   position: absolute;
@@ -1656,28 +1688,28 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="c1 c2"
   >
     <div
-      className="c2"
+      className="c3"
     >
-      <div
-        className="c3"
-      />
       <div
         className="c4"
       />
       <div
         className="c5"
+      />
+      <div
+        className="c6"
       >
         <div
-          className="c6 c7"
+          className="c7 c8"
         >
           <span
-            className="c8"
+            className="c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               95.00
             </span>
@@ -1685,27 +1717,27 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge 1`] = `
         </div>
       </div>
       <div
-        className="c10"
+        className="c11"
       >
         <div
-          className="c11"
+          className="c12"
         >
           0
         </div>
         <div
-          className="c11"
+          className="c12"
         >
           100
         </div>
       </div>
       <div
-        className="c5"
+        className="c6"
       >
         <div
-          className="c6"
+          className="c7"
         >
           <span
-            className="c12"
+            className="c13"
           >
             <span
               className="c0"
@@ -1725,7 +1757,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge With Bigger
   margin-top: 32px;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1736,14 +1768,14 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge With Bigger
   flex-direction: column;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1751,7 +1783,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge With Bigger
   display: flex;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1763,7 +1795,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge With Bigger
   justify-content: space-between;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
 }
 
@@ -1776,23 +1808,13 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge With Bigger
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c3 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  left: -6px;
 }
 
 .c4 {
@@ -1802,10 +1824,20 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge With Bigger
   bottom: 100%;
   margin-bottom: 12px;
   pointer-events: none;
-  right: 6px;
+  left: -6px;
 }
 
-.c8 {
+.c5 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 12px;
+  pointer-events: none;
+  right: -6px;
+}
+
+.c9 {
   position: relative;
   bottom: 100%;
   margin: 0 95% 12px;
@@ -1820,7 +1852,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge With Bigger
   color: #FFFFFF;
 }
 
-.c12 {
+.c13 {
   position: relative;
   bottom: -32px;
   margin-left: 95%;
@@ -1834,14 +1866,18 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge With Bigger
   color: #6E6E69;
 }
 
-.c7 {
+.c2 {
+  position: relative;
+}
+
+.c8 {
   position: relative;
   height: 2px;
   background-color: #000000;
   margin-bottom: 8px;
 }
 
-.c7::before {
+.c8::before {
   display: block;
   content: '';
   position: absolute;
@@ -1852,7 +1888,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge With Bigger
   border-left: 1px dashed #6E6E69;
 }
 
-.c7::after {
+.c8::after {
   display: block;
   content: '';
   position: absolute;
@@ -1871,28 +1907,28 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge With Bigger
   className="c0"
 >
   <div
-    className="c1"
+    className="c1 c2"
   >
     <div
-      className="c2"
+      className="c3"
     >
-      <div
-        className="c3"
-      />
       <div
         className="c4"
       />
       <div
         className="c5"
+      />
+      <div
+        className="c6"
       >
         <div
-          className="c6 c7"
+          className="c7 c8"
         >
           <span
-            className="c8"
+            className="c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               Latest 95.00
             </span>
@@ -1900,27 +1936,27 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge With Bigger
         </div>
       </div>
       <div
-        className="c10"
+        className="c11"
       >
         <div
-          className="c11"
+          className="c12"
         >
           0
         </div>
         <div
-          className="c11"
+          className="c12"
         >
           100
         </div>
       </div>
       <div
-        className="c5"
+        className="c6"
       >
         <div
-          className="c6"
+          className="c7"
         >
           <span
-            className="c12"
+            className="c13"
           >
             <span
               className="c0"

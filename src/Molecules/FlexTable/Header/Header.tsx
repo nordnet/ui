@@ -89,19 +89,19 @@ const Header: HeaderComponent = props => {
       {...R.propOr(cellFlexProps, 'flexProps', columnLayout)}
     >
       {isElement(children) && children}
-      {isFunction(children) ? (
-        children({ fontSize, sortable, sortOrder, onSortClick, sorted, columnId })
-      ) : (
-        <HeaderContent
-          onSortClick={onSortClick}
-          sortable={sortable}
-          sortOrder={sortOrder}
-          fontSize={fontSize}
-          sorted={sorted}
-        >
-          {children}
-        </HeaderContent>
-      )}
+      {isFunction(children)
+        ? children({ fontSize, sortable, sortOrder, onSortClick, sorted, columnId })
+        : !isElement(children) && (
+            <HeaderContent
+              onSortClick={onSortClick}
+              sortable={sortable}
+              sortOrder={sortOrder}
+              fontSize={fontSize}
+              sorted={sorted}
+            >
+              {children}
+            </HeaderContent>
+          )}
     </Flexbox>
   );
 };

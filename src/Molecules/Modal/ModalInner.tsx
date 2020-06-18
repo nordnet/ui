@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useUIDSeed } from 'react-uid';
 import { RemoveScroll } from 'react-remove-scroll';
 import FocusLock from 'react-focus-lock';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { DialogProps, Props } from './Modal.types';
+import { DialogProps, BackdropProps, Props } from './Modal.types';
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Title } from './Title';
@@ -14,7 +14,7 @@ const PADDING_DESKTOP = 10;
 const PADDING_MOBILE = 5;
 const CLOSE_ICON_SIZE = 5;
 
-export const Backdrop = styled(Flexbox)`
+export const Backdrop = styled(Flexbox)<BackdropProps>`
   position: fixed;
   top: 0;
   left: 0;
@@ -90,6 +90,7 @@ export const ModalInner: React.FC<Props> = ({
   onClose,
   footer,
   hideClose = false,
+  closeOnBackdropClick = false,
 }) => {
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
@@ -111,6 +112,23 @@ export const ModalInner: React.FC<Props> = ({
   const seed = useUIDSeed();
   const titleId = seed('ModalTitle');
   const hasHeader = !hideClose || title;
+  const backdropRef = useRef<HTMLDivElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+
+  const handleBackdropClick = (e: React.ChangeEvent<HTMLElement>) => {
+    if (
+      backdropRef.current &&
+      backdropRef.current.contains(e.target) &&
+      closeOnBackdropClick &&
+      isFunction(onClose)
+    ) {
+      onClose();
+    }
+  };
+
+  const handleDialogClick = (e: React.MouseEvent<HTMLElement>) => {
+    e.stopPropagation();
+  };
 
   useEffect(() => {
     setShow(true); // Show is only used for animation
@@ -128,13 +146,21 @@ export const ModalInner: React.FC<Props> = ({
     <>
       <FocusLock autoFocus={autoFocus}>
         <RemoveScroll>
-          <Backdrop container alignItems="center" justifyContent="center">
+          <Backdrop
+            container
+            alignItems="center"
+            justifyContent="center"
+            ref={backdropRef}
+            onClick={handleBackdropClick}
+          >
             <Dialog
               aria-labelledby={titleId}
               className={className}
               show={show}
               role="dialog"
               {...animationProps}
+              ref={dialogRef}
+              onClick={handleDialogClick}
             >
               {hasHeader && <Header>{title && <Title title={title} uid={titleId} />}</Header>}
               {children}

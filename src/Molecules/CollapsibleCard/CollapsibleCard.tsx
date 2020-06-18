@@ -37,7 +37,7 @@ const StyledButton = styled.button<IndicatorsProps>`
     top: 0;
     left: 0;
     transition: opacity 0.16s ease-out;
-    opacity: ${p => (p.$collapsed ? 1 : 0)};
+    opacity: ${p => (p.$collapsed && !p.$noIndicator ? 1 : 0)};
   }
 `;
 
@@ -52,6 +52,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
   children,
   collapsedInitial: collapsedInitial = false,
   heading = 'h2',
+  noIndicator = false,
   onClick = () => {},
 }) => {
   const [collapsed, setCollapsed] = useState(collapsedInitial);
@@ -148,6 +149,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
         type="button"
         {...{ [hasOnTouch ? 'onTouchStart' : 'onClick']: toggle }}
         $collapsed={collapsed}
+        $noIndicator={noIndicator}
         aria-expanded={!collapsed}
       >
         <Flexbox container gutter={4} alignItems="center" justifyContent="space-between">
@@ -157,7 +159,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
             </Typography>
           </Flexbox>
           <Flexbox item>
-            <AnimatedChevronUp size={2} $collapsed={collapsed} />
+            <AnimatedChevronUp size={2} $collapsed={collapsed} $noIndicator={noIndicator} />
           </Flexbox>
         </Flexbox>
       </StyledButton>

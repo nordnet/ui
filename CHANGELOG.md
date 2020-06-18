@@ -1,3 +1,170 @@
+## [2.49.2](https://github.com/nordnet/ui/compare/v2.49.1...v2.49.2) (2020-06-10)
+
+
+### Bug Fixes
+
+* update storyshot and rename icon ([d355d3c](https://github.com/nordnet/ui/commit/d355d3c))
+
+## [2.49.1](https://github.com/nordnet/ui/compare/v2.49.0...v2.49.1) (2020-06-10)
+
+
+### Bug Fixes
+
+* add extra padded version of card with title and card with tabs ([b7764c7](https://github.com/nordnet/ui/commit/b7764c7))
+
+# [2.49.0](https://github.com/nordnet/ui/compare/v2.48.0...v2.49.0) (2020-06-10)
+
+
+### Bug Fixes
+
+* rename icon ([3ddf1cd](https://github.com/nordnet/ui/commit/3ddf1cd))
+* update storyshot ([a436549](https://github.com/nordnet/ui/commit/a436549))
+
+
+### Features
+
+* add new icons ([20e6980](https://github.com/nordnet/ui/commit/20e6980))
+* add new icons ([58f36e2](https://github.com/nordnet/ui/commit/58f36e2))
+
+# [2.48.0](https://github.com/nordnet/ui/compare/v2.47.2...v2.48.0) (2020-06-09)
+
+
+### Features
+
+* 🎸 amend ([53fc9c2](https://github.com/nordnet/ui/commit/53fc9c2))
+* 🎸 amend ([673ac0e](https://github.com/nordnet/ui/commit/673ac0e))
+
+## [2.47.2](https://github.com/nordnet/ui/compare/v2.47.1...v2.47.2) (2020-06-09)
+
+
+### Bug Fixes
+
+* omit barColor too ([48c8313](https://github.com/nordnet/ui/commit/48c8313))
+
+## [2.47.1](https://github.com/nordnet/ui/compare/v2.47.0...v2.47.1) (2020-06-09)
+
+
+### Bug Fixes
+
+* adjust animation ([aa776be](https://github.com/nordnet/ui/commit/aa776be))
+* adjust drawer heading alignment and icon ([5e0acc1](https://github.com/nordnet/ui/commit/5e0acc1))
+* animation revert ([cd899d0](https://github.com/nordnet/ui/commit/cd899d0))
+
+# [2.47.0](https://github.com/nordnet/ui/compare/v2.46.3...v2.47.0) (2020-06-08)
+
+
+### Features
+
+* 🎸 add house icon ([7180fc1](https://github.com/nordnet/ui/commit/7180fc1))
+* 🎸 add increase icon ([76374fd](https://github.com/nordnet/ui/commit/76374fd))
+* 🎸 add move icon ([3aa1d3e](https://github.com/nordnet/ui/commit/3aa1d3e))
+* 🎸 amended ([be63914](https://github.com/nordnet/ui/commit/be63914))
+* 🎸 Apartment icon added ([bc6c487](https://github.com/nordnet/ui/commit/bc6c487))
+
+## [2.46.3](https://github.com/nordnet/ui/compare/v2.46.2...v2.46.3) (2020-06-08)
+
+
+### Bug Fixes
+
+* resolution to transitive dependency, also bump react and react-dom ([69b989d](https://github.com/nordnet/ui/commit/69b989d))
+
+## [2.46.2](https://github.com/nordnet/ui/compare/v2.46.1...v2.46.2) (2020-06-05)
+
+
+### Bug Fixes
+
+* 🐛 chanage to same padding bottom on all screen widths ([2d87b79](https://github.com/nordnet/ui/commit/2d87b79))
+* change padding bottom for children in cards ([e95f37a](https://github.com/nordnet/ui/commit/e95f37a))
+
+## [2.46.1](https://github.com/nordnet/ui/compare/v2.46.0...v2.46.1) (2020-06-04)
+
+
+### Bug Fixes
+
+* replace formatMessage with string ([d1eb592](https://github.com/nordnet/ui/commit/d1eb592))
+
+# [2.46.0](https://github.com/nordnet/ui/compare/v2.45.1...v2.46.0) (2020-06-04)
+
+
+### Bug Fixes
+
+* 🐛 add customisable colors to ProgressBar ([999018c](https://github.com/nordnet/ui/commit/999018c))
+* 🐛 allow passing custom titles to ProgressBar ([15e3b0a](https://github.com/nordnet/ui/commit/15e3b0a))
+* 🐛 small adjustments to ProgressBar ([6ebb4d4](https://github.com/nordnet/ui/commit/6ebb4d4))
+
+
+### Features
+
+* 🎸 implement ProgressBar ([2c7751d](https://github.com/nordnet/ui/commit/2c7751d))
+
+## [2.45.1](https://github.com/nordnet/ui/compare/v2.45.0...v2.45.1) (2020-06-02)
+
+
+### Bug Fixes
+
+* 🐛 make closing modal on backdrop click more performant ([b917773](https://github.com/nordnet/ui/commit/b917773))
+
+# [2.45.0](https://github.com/nordnet/ui/compare/v2.44.0...v2.45.0) (2020-06-01)
+
+
+### Features
+
+* 🎸 adds transferPendingIconColor ([bfa047e](https://github.com/nordnet/ui/commit/bfa047e))
+
+# [2.44.0](https://github.com/nordnet/ui/compare/v2.43.0...v2.44.0) (2020-06-01)
+
+
+### Bug Fixes
+
+* add accordion snaps ([4bbbff6](https://github.com/nordnet/ui/commit/4bbbff6))
+* add jsdoc to expanded prop ([4cf9f05](https://github.com/nordnet/ui/commit/4cf9f05))
+* add types to test utils ([9eae9a8](https://github.com/nordnet/ui/commit/9eae9a8))
+* cleanup stories ([8bbba7f](https://github.com/nordnet/ui/commit/8bbba7f))
+* imports ([aa05f2d](https://github.com/nordnet/ui/commit/aa05f2d))
+* remove script from package json ([7506a4b](https://github.com/nordnet/ui/commit/7506a4b))
+* remove unnecessary turnery ([42dd89e](https://github.com/nordnet/ui/commit/42dd89e))
+* replace hex with color from theme ([98661ed](https://github.com/nordnet/ui/commit/98661ed))
+* stories ([b96d244](https://github.com/nordnet/ui/commit/b96d244))
+* update snaps ([34fc714](https://github.com/nordnet/ui/commit/34fc714))
+* update snaps ([2937960](https://github.com/nordnet/ui/commit/2937960))
+
+
+### Features
+
+* add classname ([af69008](https://github.com/nordnet/ui/commit/af69008))
+* add forwardref ([3077aed](https://github.com/nordnet/ui/commit/3077aed))
+* add mdx file ([6f618a4](https://github.com/nordnet/ui/commit/6f618a4))
+* add tests ([3392adc](https://github.com/nordnet/ui/commit/3392adc))
+* create accordion ([cb5ab65](https://github.com/nordnet/ui/commit/cb5ab65))
+* create accordion item ([5233e90](https://github.com/nordnet/ui/commit/5233e90))
+* create accordion stories ([ef248f5](https://github.com/nordnet/ui/commit/ef248f5))
+
+# [2.43.0](https://github.com/nordnet/ui/compare/v2.42.2...v2.43.0) (2020-05-29)
+
+
+### Bug Fixes
+
+* 🐛 add js doc for types ([722e4f9](https://github.com/nordnet/ui/commit/722e4f9))
+
+
+### Features
+
+* 🎸 add bolean for closing modal on backdrop click ([e80872c](https://github.com/nordnet/ui/commit/e80872c))
+
+## [2.42.2](https://github.com/nordnet/ui/compare/v2.42.1...v2.42.2) (2020-05-28)
+
+
+### Bug Fixes
+
+* now collision triggers properly ([e60ab60](https://github.com/nordnet/ui/commit/e60ab60))
+
+## [2.42.1](https://github.com/nordnet/ui/compare/v2.42.0...v2.42.1) (2020-05-27)
+
+
+### Bug Fixes
+
+* 🐛 makes indicator optional for CollapsibleCard ([54cd535](https://github.com/nordnet/ui/commit/54cd535))
+
 # [2.42.0](https://github.com/nordnet/ui/compare/v2.41.4...v2.42.0) (2020-05-26)
 
 

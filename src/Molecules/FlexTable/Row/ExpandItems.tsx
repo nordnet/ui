@@ -1,7 +1,20 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Media, Flexbox, Typography, LabeledValue, List } from '../../..';
 import { ExpandItemsComponent, ExpandItemComponent } from './Row.types';
 import { isElement } from '../../../common/utils';
+import { Props as FlexBoxProps } from '../../../Atoms/Flexbox/Flexbox.types';
+import { Props as ListProps } from '../../../Atoms/List/List.types';
+
+const StyledFlexboxItem = styled(Flexbox)<FlexBoxProps>`
+  padding-bottom: ${p => p.theme.spacing.unit(5)}px;
+`;
+
+type FlexListProps = FlexBoxProps & ListProps;
+
+const FlexList = styled(List).withConfig({
+  shouldForwardProp: prop => !['wrap', 'container', 'gutter'].includes(prop),
+})<FlexListProps>``;
 
 export const MobileItem: ExpandItemComponent = ({ item }) => (
   <Flexbox container justifyContent="space-between" as="li">
@@ -21,7 +34,7 @@ export const MobileItem: ExpandItemComponent = ({ item }) => (
 );
 
 export const DesktopItem: ExpandItemComponent = ({ item }) => (
-  <Flexbox item as="li">
+  <StyledFlexboxItem item as="li">
     <LabeledValue
       label={
         isElement(item.label) ? (
@@ -35,7 +48,7 @@ export const DesktopItem: ExpandItemComponent = ({ item }) => (
     >
       {isElement(item.value) ? item.value : <Typography>{item.value}</Typography>}
     </LabeledValue>
-  </Flexbox>
+  </StyledFlexboxItem>
 );
 
 export const ExpandItems: ExpandItemsComponent = ({ items }) => {
@@ -49,7 +62,7 @@ export const ExpandItems: ExpandItemsComponent = ({ items }) => {
         </List>
       </Media>
       <Media query={t => t.media.greaterThan(t.breakpoints.md)}>
-        <Flexbox container wrap="wrap" gutter={10} as={List}>
+        <Flexbox container wrap="wrap" gutter={10} as={FlexList}>
           {items.map(item => (
             <DesktopItem item={item} />
           ))}

@@ -8,15 +8,15 @@ type Direction = {
 };
 
 const DIRECTION = {
-  ascending: 180,
-  descending: 0,
+  descending: 180,
+  ascending: 0,
 };
 
 const StyledIconBase = styled(IconBase)<Direction>`
   transform: rotate(${p => `${DIRECTION[p.direction]}`}deg);
 `;
 
-export const SortArrow = ({ direction = 'descending', ...props }: BaseProps & Direction) => {
+export const SortArrow = ({ direction = 'ascending', ...props }: BaseProps & Direction) => {
   return (
     <StyledIconBase direction={direction} {...props} viewBox="0 0 8 12">
       <path

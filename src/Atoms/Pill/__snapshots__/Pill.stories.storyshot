@@ -178,7 +178,6 @@ exports[`Storyshots Atoms | Pill Pill with colored bar 1`] = `
 }
 
 <div
-  barColor={[Function]}
   className="c0"
 >
   <div
@@ -269,7 +268,6 @@ exports[`Storyshots Atoms | Pill Pill with no padding 1`] = `
 }
 
 <div
-  barColor={[Function]}
   className="c0"
 >
   <span

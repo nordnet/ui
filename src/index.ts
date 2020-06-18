@@ -25,6 +25,8 @@ import Typography from './Atoms/Typography';
 import VisuallyHidden from './Atoms/VisuallyHidden';
 
 /** Molecules */
+import Accordion from './Molecules/Accordion';
+import AccordionItem from './Molecules/AccordionItem';
 import Avatar from './Molecules/Avatar';
 import BarScale from './Molecules/BarScale';
 import Button from './Molecules/Button';
@@ -45,6 +47,7 @@ import ListWithTitles from './Molecules/ListWithTitles';
 import Number from './Molecules/Number';
 import Modal from './Molecules/Modal';
 import PageHeaderCard from './Molecules/PageHeaderCard';
+import ProgressBar from './Molecules/ProgressBar';
 import PageWrapper from './Molecules/PageWrapper';
 import Rating from './Molecules/Rating';
 import Select from './Molecules/Select';
@@ -66,6 +69,8 @@ import TrackingContext from './common/tracking';
 
 /** Runtime code */
 export {
+  Accordion,
+  AccordionItem,
   Avatar,
   BarScale,
   Box,
@@ -106,6 +111,7 @@ export {
   PageWrapper,
   Portal,
   Pill,
+  ProgressBar,
   Rating,
   /** @deprecated */ Select,
   Separator,
