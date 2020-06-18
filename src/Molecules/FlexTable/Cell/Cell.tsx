@@ -11,6 +11,8 @@ const StyledFlexbox = styled(Flexbox)`
   overflow: hidden;
 `;
 
+// TODO: Fix typings that react memo causes when exporting textwrapper on cell
+// @ts-ignore
 const Cell: CellComponent = React.memo(({ children, className, fontSize, columnId }) => {
   const [columnLayout] = useColumnLayout(columnId);
 
@@ -28,4 +30,5 @@ const Cell: CellComponent = React.memo(({ children, className, fontSize, columnI
   );
 });
 
+Cell.TextWrapper = React.memo(TextWrapper);
 export default Cell;
