@@ -83,6 +83,7 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
     onMouseLeave,
     onMouseOver,
     onFocus,
+    ...rest
   } = props;
   const destinationProp = external || cms ? { href: to } : { to };
 
@@ -101,6 +102,7 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
         disabled={disabled}
         as={as}
         type="button"
+        {...rest}
       >
         {children}
       </StyledButton>
@@ -123,6 +125,7 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
       onMouseLeave={onMouseLeave}
       onMouseOver={onMouseOver}
       onFocus={onFocus}
+      {...rest}
     >
       {children}
     </StyledLink>
