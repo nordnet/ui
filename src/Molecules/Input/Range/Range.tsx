@@ -1,25 +1,20 @@
 import React, { useRef, FC, MouseEvent, TouchEvent, KeyboardEvent } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { Props } from './Range.types';
-import { Theme } from '../../../theme/theme.types';
 
 const THUMB_WIDTH = 30;
 
-const StyledSliderWrapper = styled.div<{
-  leftColor: Props['leftColor'];
-  rightColor: Props['rightColor'];
-}>`
-  background: linear-gradient(
-    to right,
-    ${p => (p.leftColor ? p.leftColor(p.theme) : p.theme.color.sliderLeftColor)} 0% 50%,
-    ${p => (p.rightColor ? p.rightColor(p.theme) : p.theme.color.sliderRightColor)} 50% 100%
-  );
+const StyledSliderWrapper = styled.div`
   height: 15px;
   max-width: 100%;
   width: 100%;
 `;
 
-const StyledRange = styled.div`
+const StyledRange = styled.div<{
+  sliderColor: Props['sliderColor'];
+}>`
+  background: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)},
+  color: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)},
   max-width: 100%;
   height: 15px;
   margin: 5px auto;
@@ -27,7 +22,9 @@ const StyledRange = styled.div`
   width: calc(100% - ${THUMB_WIDTH}px);
 `;
 
-const StyledThumb = styled.div`
+const StyledThumb = styled.div<{
+  sliderColor: Props['sliderColor'];
+}>`
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -36,35 +33,15 @@ const StyledThumb = styled.div`
   width: ${THUMB_WIDTH}px;
   height: ${THUMB_WIDTH}px;
   top: 50%;
+  border-radius: 50%;
   transform: translateY(-50%);
-  background: ${p => p.theme.color.sliderThumbColor};
-  border: 1px solid ${p => p.theme.color.sliderThumbBorder};
+  background: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)},
+  color: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)},
+  border: 3px solid black;
   cursor: grab;
   &:focus {
-    border: 1px solid ${p => p.theme.color.sliderThumbActive};
-  }
-`;
-
-const HamburgerSlice = (theme: Theme) => `
-  background: ${theme.color.sliderThumbBackground};
-  height: 2px;
-  position: absolute;
-  width: 12px;
-`;
-
-const StyledIcon = styled.div`
-  &:before {
-    ${p => HamburgerSlice(p.theme)}
-    content: '';
-    top: -6px;
-  }
-
-  ${p => HamburgerSlice(p.theme)}
-
-  &:after {
-    ${p => HamburgerSlice(p.theme)}
-    content: '';
-    top: 6px;
+    border: 1px solid ${p =>
+      p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor};
   }
 `;
 
@@ -76,9 +53,8 @@ const getValue = (percentage: number, min: number, max: number) =>
 
 const getLeft = (percentage: number) => `calc(${percentage}% - ${THUMB_WIDTH / 2}px)`;
 
-const Range: FC<Props> = ({ onChange, value, max, min, step, leftColor, rightColor, theme }) => {
+const Range: FC<Props> = ({ onChange, value, max, min, step, sliderColor }) => {
   const initialPercentage = getPercentage(value, min, max);
-  const linearGradient: number = ((value - min) / (max - min)) * 100;
 
   const sliderRef = useRef() as React.MutableRefObject<HTMLInputElement>;
   const thumbRef = useRef() as React.MutableRefObject<HTMLInputElement>;
@@ -180,18 +156,11 @@ const Range: FC<Props> = ({ onChange, value, max, min, step, leftColor, rightCol
     }
   };
 
-  const gradient = {
-    background: `linear-gradient(to right, ${
-      leftColor ? leftColor(theme) : theme.color.sliderLeftColor
-    } ${linearGradient}% , ${
-      rightColor ? rightColor(theme) : theme.color.sliderRightColor
-    } ${linearGradient}%)`,
-  };
-
   return (
-    <StyledSliderWrapper leftColor={leftColor} rightColor={rightColor}>
-      <StyledRange ref={sliderRef} style={gradient} onClick={handleSliderClick}>
+    <StyledSliderWrapper>
+      <StyledRange ref={sliderRef} sliderColor={sliderColor} onClick={handleSliderClick}>
         <StyledThumb
+          sliderColor={sliderColor}
           tabIndex={0}
           ref={thumbRef}
           onClick={handleThumbClick}
@@ -203,9 +172,7 @@ const Range: FC<Props> = ({ onChange, value, max, min, step, leftColor, rightCol
           aria-valuemin={min}
           aria-valuenow={value}
           aria-valuemax={max}
-        >
-          <StyledIcon />
-        </StyledThumb>
+        />
       </StyledRange>
     </StyledSliderWrapper>
   );
