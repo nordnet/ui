@@ -13,5 +13,5 @@ export type Props = {
   max: number;
   step: number;
   value: number;
-  sliderColor: ColorFn;
+  sliderColor?: ColorFn;
 } & ThemeProp;

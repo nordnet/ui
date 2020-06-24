@@ -114,7 +114,7 @@ export const CustomColors = () => {
           onChange={handleChange}
           value={value}
           {...getSliderProps({ min: 0, max: 100, step: 1 })}
-          color={t => t.color.positive}
+          sliderColor={t => t.color.positive}
         />
         <Typography>
           <Number value={value} maximumDecimals={2} /> Kronor
