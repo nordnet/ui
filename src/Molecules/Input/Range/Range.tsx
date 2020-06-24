@@ -13,8 +13,8 @@ const StyledSliderWrapper = styled.div`
 const StyledRange = styled.div<{
   sliderColor: Props['sliderColor'];
 }>`
-  background: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)},
-  color: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)},
+  background: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)};
+  color: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)};
   max-width: 100%;
   height: 15px;
   margin: 5px auto;
@@ -35,13 +35,13 @@ const StyledThumb = styled.div<{
   top: 50%;
   border-radius: 50%;
   transform: translateY(-50%);
-  background: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)},
-  color: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)},
+  background: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)};
+  color: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)};
   border: 3px solid black;
   cursor: grab;
   &:focus {
-    border: 1px solid ${p =>
-      p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor};
+    border: 1px solid
+      ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)};
   }
 `;
 
