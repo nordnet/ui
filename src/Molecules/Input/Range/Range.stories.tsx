@@ -28,7 +28,7 @@ export const Default = () => {
           {...getSliderProps({ min: 0, max: 100, step: 1 })}
         />
         <Typography>
-          <Number value={value} maximumDecimals={2} /> Kronor
+          <Number value={value} maximumDecimals={2} /> SEK
         </Typography>
       </>
     );
@@ -50,7 +50,7 @@ export const MinimumValue = () => {
           {...getSliderProps({ min: 0, max: 100, step: 1 })}
         />
         <Typography>
-          <Number value={value} maximumDecimals={2} /> Kronor
+          <Number value={value} maximumDecimals={2} /> DKK
         </Typography>
       </>
     );
@@ -72,7 +72,7 @@ export const MaximumValue = () => {
           {...getSliderProps({ min: 0, max: 100, step: 1 })}
         />
         <Typography>
-          <Number value={value} maximumDecimals={2} /> Kronor
+          <Number value={value} maximumDecimals={2} /> NOK
         </Typography>
       </>
     );
@@ -94,7 +94,7 @@ export const NegativeToPositive = () => {
           {...getSliderProps({ min: -50, max: 50, step: 1 })}
         />
         <Typography>
-          <Number value={value} maximumDecimals={2} /> Kronor
+          <Number value={value} maximumDecimals={2} /> USD
         </Typography>
       </>
     );
@@ -114,10 +114,10 @@ export const CustomColors = () => {
           onChange={handleChange}
           value={value}
           {...getSliderProps({ min: 0, max: 100, step: 1 })}
-          sliderColor={t => t.color.positive}
+          sliderColor={t => t.color.negative}
         />
         <Typography>
-          <Number value={value} maximumDecimals={2} /> Kronor
+          <Number value={value} maximumDecimals={2} /> EUR
         </Typography>
       </>
     );

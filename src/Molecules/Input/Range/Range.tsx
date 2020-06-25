@@ -2,22 +2,25 @@ import React, { useRef, FC, MouseEvent, TouchEvent, KeyboardEvent } from 'react'
 import styled, { withTheme } from 'styled-components';
 import { Props } from './Range.types';
 
-const THUMB_WIDTH = 30;
+const THUMB_WIDTH = 20;
 
-const StyledSliderWrapper = styled.div`
-  height: 15px;
+const StyledSliderWrapper = styled.div<{
+  sliderColor: Props['sliderColor'];
+}>`
+  background: linear-gradient(
+    to right,
+    ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderRightColor)} 0% 50%,
+    transparent 50% 100%
+  );
+  height: ${t => t.theme.spacing.unit(1)}px;
   max-width: 100%;
   width: 100%;
 `;
 
-const StyledRange = styled.div<{
-  sliderColor: Props['sliderColor'];
-}>`
-  background: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)};
-  color: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)};
+const StyledRange = styled.div`
   max-width: 100%;
-  height: 15px;
-  margin: 5px auto;
+  height: ${t => t.theme.spacing.unit(1)}px;
+  margin: ${t => t.theme.spacing.unit(1)}px auto;
   position: relative;
   width: calc(100% - ${THUMB_WIDTH}px);
 `;
@@ -35,13 +38,12 @@ const StyledThumb = styled.div<{
   top: 50%;
   border-radius: 50%;
   transform: translateY(-50%);
-  background: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)};
-  color: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)};
-  border: 3px solid black;
+  background: ${p => p.theme.color.bubbleBackground};
+  border: 3px solid
+    ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderRightColor)};
   cursor: grab;
   &:focus {
-    border: 1px solid
-      ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)};
+    background: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.sliderRightColor)};
   }
 `;
 
@@ -53,8 +55,9 @@ const getValue = (percentage: number, min: number, max: number) =>
 
 const getLeft = (percentage: number) => `calc(${percentage}% - ${THUMB_WIDTH / 2}px)`;
 
-const Range: FC<Props> = ({ onChange, value, max, min, step, sliderColor }) => {
+const Range: FC<Props> = ({ onChange, value, max, min, step, sliderColor, theme }) => {
   const initialPercentage = getPercentage(value, min, max);
+  const linearGradient: number = ((value - min) / (max - min)) * 100;
 
   const sliderRef = useRef() as React.MutableRefObject<HTMLInputElement>;
   const thumbRef = useRef() as React.MutableRefObject<HTMLInputElement>;
@@ -156,9 +159,15 @@ const Range: FC<Props> = ({ onChange, value, max, min, step, sliderColor }) => {
     }
   };
 
+  const gradient = {
+    background: `linear-gradient(to right, ${
+      sliderColor ? sliderColor(theme) : theme.color.sliderRightColor
+    } ${linearGradient}% , ${theme.color.sliderRightColor} ${linearGradient}%)`,
+  };
+
   return (
-    <StyledSliderWrapper>
-      <StyledRange ref={sliderRef} sliderColor={sliderColor} onClick={handleSliderClick}>
+    <StyledSliderWrapper sliderColor={sliderColor}>
+      <StyledRange ref={sliderRef} style={gradient} onClick={handleSliderClick}>
         <StyledThumb
           sliderColor={sliderColor}
           tabIndex={0}
