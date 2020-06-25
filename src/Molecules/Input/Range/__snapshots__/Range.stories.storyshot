@@ -3,19 +3,18 @@
 exports[`Storyshots Molecules | Input / Range Custom Colors 1`] = `
 Array [
   .c0 {
-  height: 15px;
+  background: linear-gradient( to right,#FF1900 0% 50%,transparent 50% 100% );
+  height: 4px;
   max-width: 100%;
   width: 100%;
 }
 
 .c1 {
-  background: #00D200;
-  color: #00D200;
   max-width: 100%;
-  height: 15px;
-  margin: 5px auto;
+  height: 4px;
+  margin: 4px auto;
   position: relative;
-  width: calc(100% - 30px);
+  width: calc(100% - 20px);
 }
 
 .c2 {
@@ -33,23 +32,22 @@ Array [
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   top: 50%;
   border-radius: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background: #00D200;
-  color: #00D200;
-  border: 3px solid black;
+  background: #FFFFFF;
+  border: 3px solid #FF1900;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
 }
 
 .c2:focus {
-  border: 1px solid #00D200;
+  background: #FF1900;
 }
 
 <div
@@ -58,6 +56,11 @@ Array [
     <div
       className="c1"
       onClick={[Function]}
+      style={
+        Object {
+          "background": "linear-gradient(to right, #FF1900 50% , #EBEBE8 50%)",
+        }
+      }
     >
       <div
         aria-valuemax={100}
@@ -71,7 +74,7 @@ Array [
         role="slider"
         style={
           Object {
-            "left": "calc(50% - 15px)",
+            "left": "calc(50% - 10px)",
           }
         }
         tabIndex={0}
@@ -92,7 +95,7 @@ Array [
   >
     
     50
-     Kronor
+     EUR
   </span>,
 ]
 `;
@@ -100,19 +103,18 @@ Array [
 exports[`Storyshots Molecules | Input / Range Default 1`] = `
 Array [
   .c0 {
-  height: 15px;
+  background: linear-gradient( to right,#EBEBE8 0% 50%,transparent 50% 100% );
+  height: 4px;
   max-width: 100%;
   width: 100%;
 }
 
 .c1 {
-  background: #D2F500;
-  color: #D2F500;
   max-width: 100%;
-  height: 15px;
-  margin: 5px auto;
+  height: 4px;
+  margin: 4px auto;
   position: relative;
-  width: calc(100% - 30px);
+  width: calc(100% - 20px);
 }
 
 .c2 {
@@ -130,23 +132,22 @@ Array [
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   top: 50%;
   border-radius: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background: #D2F500;
-  color: #D2F500;
-  border: 3px solid black;
+  background: #FFFFFF;
+  border: 3px solid #EBEBE8;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
 }
 
 .c2:focus {
-  border: 1px solid #D2F500;
+  background: #EBEBE8;
 }
 
 <div
@@ -155,6 +156,11 @@ Array [
     <div
       className="c1"
       onClick={[Function]}
+      style={
+        Object {
+          "background": "linear-gradient(to right, #EBEBE8 50% , #EBEBE8 50%)",
+        }
+      }
     >
       <div
         aria-valuemax={100}
@@ -168,7 +174,7 @@ Array [
         role="slider"
         style={
           Object {
-            "left": "calc(50% - 15px)",
+            "left": "calc(50% - 10px)",
           }
         }
         tabIndex={0}
@@ -189,7 +195,7 @@ Array [
   >
     
     50
-     Kronor
+     SEK
   </span>,
 ]
 `;
@@ -197,19 +203,18 @@ Array [
 exports[`Storyshots Molecules | Input / Range Maximum Value 1`] = `
 Array [
   .c0 {
-  height: 15px;
+  background: linear-gradient( to right,#EBEBE8 0% 50%,transparent 50% 100% );
+  height: 4px;
   max-width: 100%;
   width: 100%;
 }
 
 .c1 {
-  background: #D2F500;
-  color: #D2F500;
   max-width: 100%;
-  height: 15px;
-  margin: 5px auto;
+  height: 4px;
+  margin: 4px auto;
   position: relative;
-  width: calc(100% - 30px);
+  width: calc(100% - 20px);
 }
 
 .c2 {
@@ -227,23 +232,22 @@ Array [
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   top: 50%;
   border-radius: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background: #D2F500;
-  color: #D2F500;
-  border: 3px solid black;
+  background: #FFFFFF;
+  border: 3px solid #EBEBE8;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
 }
 
 .c2:focus {
-  border: 1px solid #D2F500;
+  background: #EBEBE8;
 }
 
 <div
@@ -252,6 +256,11 @@ Array [
     <div
       className="c1"
       onClick={[Function]}
+      style={
+        Object {
+          "background": "linear-gradient(to right, #EBEBE8 100% , #EBEBE8 100%)",
+        }
+      }
     >
       <div
         aria-valuemax={100}
@@ -265,7 +274,7 @@ Array [
         role="slider"
         style={
           Object {
-            "left": "calc(100% - 15px)",
+            "left": "calc(100% - 10px)",
           }
         }
         tabIndex={0}
@@ -286,7 +295,7 @@ Array [
   >
     
     100
-     Kronor
+     NOK
   </span>,
 ]
 `;
@@ -294,19 +303,18 @@ Array [
 exports[`Storyshots Molecules | Input / Range Minimum Value 1`] = `
 Array [
   .c0 {
-  height: 15px;
+  background: linear-gradient( to right,#EBEBE8 0% 50%,transparent 50% 100% );
+  height: 4px;
   max-width: 100%;
   width: 100%;
 }
 
 .c1 {
-  background: #D2F500;
-  color: #D2F500;
   max-width: 100%;
-  height: 15px;
-  margin: 5px auto;
+  height: 4px;
+  margin: 4px auto;
   position: relative;
-  width: calc(100% - 30px);
+  width: calc(100% - 20px);
 }
 
 .c2 {
@@ -324,23 +332,22 @@ Array [
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   top: 50%;
   border-radius: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background: #D2F500;
-  color: #D2F500;
-  border: 3px solid black;
+  background: #FFFFFF;
+  border: 3px solid #EBEBE8;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
 }
 
 .c2:focus {
-  border: 1px solid #D2F500;
+  background: #EBEBE8;
 }
 
 <div
@@ -349,6 +356,11 @@ Array [
     <div
       className="c1"
       onClick={[Function]}
+      style={
+        Object {
+          "background": "linear-gradient(to right, #EBEBE8 0% , #EBEBE8 0%)",
+        }
+      }
     >
       <div
         aria-valuemax={100}
@@ -362,7 +374,7 @@ Array [
         role="slider"
         style={
           Object {
-            "left": "calc(0% - 15px)",
+            "left": "calc(0% - 10px)",
           }
         }
         tabIndex={0}
@@ -383,7 +395,7 @@ Array [
   >
     
     0
-     Kronor
+     DKK
   </span>,
 ]
 `;
@@ -391,19 +403,18 @@ Array [
 exports[`Storyshots Molecules | Input / Range Negative To Positive 1`] = `
 Array [
   .c0 {
-  height: 15px;
+  background: linear-gradient( to right,#EBEBE8 0% 50%,transparent 50% 100% );
+  height: 4px;
   max-width: 100%;
   width: 100%;
 }
 
 .c1 {
-  background: #D2F500;
-  color: #D2F500;
   max-width: 100%;
-  height: 15px;
-  margin: 5px auto;
+  height: 4px;
+  margin: 4px auto;
   position: relative;
-  width: calc(100% - 30px);
+  width: calc(100% - 20px);
 }
 
 .c2 {
@@ -421,23 +432,22 @@ Array [
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   top: 50%;
   border-radius: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background: #D2F500;
-  color: #D2F500;
-  border: 3px solid black;
+  background: #FFFFFF;
+  border: 3px solid #EBEBE8;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
 }
 
 .c2:focus {
-  border: 1px solid #D2F500;
+  background: #EBEBE8;
 }
 
 <div
@@ -446,6 +456,11 @@ Array [
     <div
       className="c1"
       onClick={[Function]}
+      style={
+        Object {
+          "background": "linear-gradient(to right, #EBEBE8 50% , #EBEBE8 50%)",
+        }
+      }
     >
       <div
         aria-valuemax={50}
@@ -459,7 +474,7 @@ Array [
         role="slider"
         style={
           Object {
-            "left": "calc(50% - 15px)",
+            "left": "calc(50% - 10px)",
           }
         }
         tabIndex={0}
@@ -480,7 +495,7 @@ Array [
   >
     
     0
-     Kronor
+     USD
   </span>,
 ]
 `;
