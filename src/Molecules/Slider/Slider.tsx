@@ -1,6 +1,6 @@
 import React, { useRef, FC, MouseEvent, TouchEvent, KeyboardEvent } from 'react';
 import styled, { withTheme } from 'styled-components';
-import { Props } from './Slider.types';
+import { Props, getLeftFn, SliderTypes } from './Slider.types';
 import { Theme } from '../../theme/theme.types';
 
 const THUMB_BIG = 30;
@@ -9,11 +9,10 @@ const THUMB_SMALL = 20;
 const StyledSliderWrapper = styled.div<{
   leftColor: Props['leftColor'];
   rightColor: Props['rightColor'];
-  sliderColor: Props['sliderColor'];
 }>`
   background: linear-gradient(
     to right,
-    ${p => (p.leftColor ? p.leftColor(p.theme) : p.sliderColor(p.theme))} 0% 50%,
+    ${p => (p.leftColor ? p.leftColor(p.theme) : p.theme.color.sliderLeftColor)} 0% 50%,
     ${p => (p.rightColor ? p.rightColor(p.theme) : p.theme.color.sliderRightColor)} 50% 100%
   );
   height: ${p =>
@@ -41,9 +40,9 @@ const StyledSlider = styled.div<{
 const StyledThumb = styled('div').withConfig({
   shouldForwardProp: prop => !['sliderColor'].includes(prop),
 })<{
-  sliderColor: Props['sliderColor'];
-  leftColor: Props['leftColor'];
-  rightColor: Props['rightColor'];
+  leftColor: SliderTypes['leftColor'];
+  variant: SliderTypes['variant'];
+  rightColor: SliderTypes['rightColor'];
 }>`
   box-sizing: border-box;
   display: flex;
@@ -53,16 +52,19 @@ const StyledThumb = styled('div').withConfig({
   width: ${p => (p.leftColor && p.rightColor ? THUMB_BIG : THUMB_SMALL)}px;
   height: ${p => (p.leftColor && p.rightColor ? THUMB_BIG : THUMB_SMALL)}px;
   top: 50%;
-  border-radius: ${p => (p.sliderColor ? '50%' : 0)};
+  border-radius: ${p => (p.variant === 'rounded' ? '50%' : 0)};
   transform: translateY(-50%);
   background: ${p => p.theme.color.bubbleBackground};
   border: ${p =>
-    p.sliderColor
-      ? `4px solid ${p.sliderColor(p.theme)}`
+    p.variant === 'rounded' && p.leftColor
+      ? `4px solid ${p.leftColor(p.theme)}`
       : `1px solid ${p.theme.color.sliderThumbBorder}`};
   cursor: grab;
   &:focus {
-    background: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.bubbleBackground)};
+    background: ${p =>
+      p.variant === 'rounded' && p.leftColor
+        ? p.leftColor(p.theme)
+        : p.theme.color.bubbleBackground};
     border: ${p =>
       p.leftColor && p.rightColor ? `1px solid ${p.theme.color.sliderThumbActive}` : 'none'};
   }
@@ -97,7 +99,8 @@ const getPercentage = (current: number, min: number, max: number) =>
 const getValue = (percentage: number, min: number, max: number) =>
   ((max - min) / 100) * percentage + min;
 
-const getLeft = (percentage: number) => `calc(${percentage}% - ${THUMB_BIG / 2}px)`;
+const getLeft: getLeftFn = (percentage, variant) =>
+  `calc(${percentage}% - ${variant === 'square' ? THUMB_BIG : THUMB_SMALL / 2}px)`;
 
 const Slider: FC<Props> = ({
   onChange,
@@ -108,7 +111,7 @@ const Slider: FC<Props> = ({
   leftColor,
   rightColor,
   theme,
-  sliderColor,
+  variant = 'square',
 }) => {
   const initialPercentage = getPercentage(value, min, max);
   const linearGradient: number = ((value - min) / (max - min)) * 100;
@@ -133,7 +136,7 @@ const Slider: FC<Props> = ({
     const newValue = getValue(newPercentage, min, max);
 
     if (newValue % step === 0) {
-      thumbRef.current.style.left = getLeft(newPercentage);
+      thumbRef.current.style.left = getLeft(newPercentage, variant);
     }
 
     if (typeof onChange === 'function') {
@@ -215,14 +218,14 @@ const Slider: FC<Props> = ({
 
   const gradient = {
     background: `linear-gradient(to right, ${
-      leftColor ? leftColor(theme) : sliderColor(theme)
+      leftColor ? leftColor(theme) : theme.color.sliderLeftColor
     } ${linearGradient}% , ${
       rightColor ? rightColor(theme) : theme.color.sliderRightColor
     } ${linearGradient}%)`,
   };
 
   return (
-    <StyledSliderWrapper leftColor={leftColor} rightColor={rightColor} sliderColor={sliderColor}>
+    <StyledSliderWrapper leftColor={leftColor} rightColor={rightColor}>
       <StyledSlider
         ref={sliderRef}
         style={gradient}
@@ -233,18 +236,18 @@ const Slider: FC<Props> = ({
         <StyledThumb
           leftColor={leftColor}
           rightColor={rightColor}
-          sliderColor={sliderColor}
           tabIndex={0}
           ref={thumbRef}
           onClick={handleThumbClick}
           onMouseDown={handleMouseDown}
           onTouchStart={handleTouchStart}
           onKeyDown={handleKeyDown}
-          style={{ left: getLeft(initialPercentage) }}
+          style={{ left: getLeft(initialPercentage, variant) }}
           role="slider"
           aria-valuemin={min}
           aria-valuenow={value}
           aria-valuemax={max}
+          variant={variant}
         >
           {leftColor && rightColor && <StyledIcon />}
         </StyledThumb>

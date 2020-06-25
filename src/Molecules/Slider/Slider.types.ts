@@ -6,6 +6,18 @@ type ThemeProp = {
 
 type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // c
 type ColorFn = (t: Theme) => Values<Theme['color']>;
+type Variant = {
+  /** @default square */
+  variant: 'square' | 'rounded';
+};
+
+export type getLeftFn = (percentage: number, variant?: Variant) => string;
+
+export type SliderTypes = {
+  leftColor?: ColorFn;
+  rightColor?: ColorFn;
+  variant?: Variant;
+};
 
 export type Props = {
   onChange: (v: number) => void;
@@ -13,7 +25,5 @@ export type Props = {
   max: number;
   step: number;
   value: number;
-  leftColor?: ColorFn;
-  rightColor?: ColorFn;
-  sliderColor?: ColorFn;
-} & ThemeProp;
+} & SliderTypes &
+  ThemeProp;

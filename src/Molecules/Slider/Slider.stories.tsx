@@ -124,7 +124,8 @@ export const CustomColors = () => {
           onChange={handleChange}
           value={value}
           {...getSliderProps({ min: 0, max: 100, step: 1 })}
-          sliderColor={t => t.color.pill5}
+          leftColor={t => t.color.pill5}
+          variant="rounded"
         />
         <br />
         <Typography>
