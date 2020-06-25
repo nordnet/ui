@@ -3,45 +3,68 @@ import styled, { withTheme } from 'styled-components';
 import { Props } from './Slider.types';
 import { Theme } from '../../theme/theme.types';
 
-const THUMB_WIDTH = 30;
+const THUMB_BIG = 30;
+const THUMB_SMALL = 20;
 
 const StyledSliderWrapper = styled.div<{
   leftColor: Props['leftColor'];
   rightColor: Props['rightColor'];
+  sliderColor: Props['sliderColor'];
 }>`
   background: linear-gradient(
     to right,
-    ${p => (p.leftColor ? p.leftColor(p.theme) : p.theme.color.sliderLeftColor)} 0% 50%,
+    ${p => (p.leftColor ? p.leftColor(p.theme) : p.sliderColor(p.theme))} 0% 50%,
     ${p => (p.rightColor ? p.rightColor(p.theme) : p.theme.color.sliderRightColor)} 50% 100%
   );
-  height: 15px;
+  height: ${p =>
+    p.leftColor && p.rightColor
+      ? `${p.theme.spacing.unit(4.25)}px`
+      : `${p.theme.spacing.unit(1)}px`};
   max-width: 100%;
   width: 100%;
 `;
 
-const StyledSlider = styled.div`
+const StyledSlider = styled.div<{
+  leftColor: Props['leftColor'];
+  rightColor: Props['rightColor'];
+}>`
   max-width: 100%;
-  height: 15px;
-  margin: 5px auto;
+  height: ${p =>
+    p.leftColor && p.rightColor
+      ? `${p.theme.spacing.unit(4.25)}px`
+      : `${p.theme.spacing.unit(1)}px`};
+  margin: ${t => t.theme.spacing.unit(1.25)}px auto;
   position: relative;
-  width: calc(100% - ${THUMB_WIDTH}px);
+  width: calc(100% - ${p => (p.leftColor && p.rightColor ? THUMB_BIG : THUMB_SMALL)}px);
 `;
 
-const StyledThumb = styled.div`
+const StyledThumb = styled('div').withConfig({
+  shouldForwardProp: prop => !['sliderColor'].includes(prop),
+})<{
+  sliderColor: Props['sliderColor'];
+  leftColor: Props['leftColor'];
+  rightColor: Props['rightColor'];
+}>`
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  width: ${THUMB_WIDTH}px;
-  height: ${THUMB_WIDTH}px;
+  width: ${p => (p.leftColor && p.rightColor ? THUMB_BIG : THUMB_SMALL)}px;
+  height: ${p => (p.leftColor && p.rightColor ? THUMB_BIG : THUMB_SMALL)}px;
   top: 50%;
+  border-radius: ${p => (p.sliderColor ? '50%' : 0)};
   transform: translateY(-50%);
-  background: ${p => p.theme.color.sliderThumbColor};
-  border: 1px solid ${p => p.theme.color.sliderThumbBorder};
+  background: ${p => p.theme.color.bubbleBackground};
+  border: ${p =>
+    p.sliderColor
+      ? `4px solid ${p.sliderColor(p.theme)}`
+      : `1px solid ${p.theme.color.sliderThumbBorder}`};
   cursor: grab;
   &:focus {
-    border: 1px solid ${p => p.theme.color.sliderThumbActive};
+    background: ${p => (p.sliderColor ? p.sliderColor(p.theme) : p.theme.color.bubbleBackground)};
+    border: ${p =>
+      p.leftColor && p.rightColor ? `1px solid ${p.theme.color.sliderThumbActive}` : 'none'};
   }
 `;
 
@@ -74,9 +97,19 @@ const getPercentage = (current: number, min: number, max: number) =>
 const getValue = (percentage: number, min: number, max: number) =>
   ((max - min) / 100) * percentage + min;
 
-const getLeft = (percentage: number) => `calc(${percentage}% - ${THUMB_WIDTH / 2}px)`;
+const getLeft = (percentage: number) => `calc(${percentage}% - ${THUMB_BIG / 2}px)`;
 
-const Slider: FC<Props> = ({ onChange, value, max, min, step, leftColor, rightColor, theme }) => {
+const Slider: FC<Props> = ({
+  onChange,
+  value,
+  max,
+  min,
+  step,
+  leftColor,
+  rightColor,
+  theme,
+  sliderColor,
+}) => {
   const initialPercentage = getPercentage(value, min, max);
   const linearGradient: number = ((value - min) / (max - min)) * 100;
 
@@ -182,16 +215,25 @@ const Slider: FC<Props> = ({ onChange, value, max, min, step, leftColor, rightCo
 
   const gradient = {
     background: `linear-gradient(to right, ${
-      leftColor ? leftColor(theme) : theme.color.sliderLeftColor
+      leftColor ? leftColor(theme) : sliderColor(theme)
     } ${linearGradient}% , ${
       rightColor ? rightColor(theme) : theme.color.sliderRightColor
     } ${linearGradient}%)`,
   };
 
   return (
-    <StyledSliderWrapper leftColor={leftColor} rightColor={rightColor}>
-      <StyledSlider ref={sliderRef} style={gradient} onClick={handleSliderClick}>
+    <StyledSliderWrapper leftColor={leftColor} rightColor={rightColor} sliderColor={sliderColor}>
+      <StyledSlider
+        ref={sliderRef}
+        style={gradient}
+        onClick={handleSliderClick}
+        leftColor={leftColor}
+        rightColor={rightColor}
+      >
         <StyledThumb
+          leftColor={leftColor}
+          rightColor={rightColor}
+          sliderColor={sliderColor}
           tabIndex={0}
           ref={thumbRef}
           onClick={handleThumbClick}
@@ -204,7 +246,7 @@ const Slider: FC<Props> = ({ onChange, value, max, min, step, leftColor, rightCo
           aria-valuenow={value}
           aria-valuemax={max}
         >
-          <StyledIcon />
+          {leftColor && rightColor && <StyledIcon />}
         </StyledThumb>
       </StyledSlider>
     </StyledSliderWrapper>

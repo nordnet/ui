@@ -15,4 +15,5 @@ export type Props = {
   value: number;
   leftColor?: ColorFn;
   rightColor?: ColorFn;
+  sliderColor?: ColorFn;
 } & ThemeProp;
