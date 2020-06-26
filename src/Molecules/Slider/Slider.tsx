@@ -30,7 +30,7 @@ const StyledSliderWrapper = styled('div').withConfig({
   height: ${p =>
     p.variant === VARIANT_TYPES.ROUND
       ? `${p.theme.spacing.unit(1)}`
-      : `${p.theme.spacing.unit(4.25)}`}px;
+      : `${p.theme.spacing.unit(4)}`}px;
   height: ${p => (p.variant === VARIANT_TYPES.ROUND ? 1 : 5)};
   max-width: 100%;
   width: 100%;
@@ -43,7 +43,7 @@ const StyledSlider = styled('div').withConfig({
   height: ${p =>
     p.variant === VARIANT_TYPES.ROUND
       ? `${p.theme.spacing.unit(1)}`
-      : `${p.theme.spacing.unit(4.25)}`}px;
+      : `${p.theme.spacing.unit(4)}`}px;
   margin: ${p => p.theme.spacing.unit(1.25)}px auto;
   position: relative;
   width: calc(100% - ${p => (p.variant === VARIANT_TYPES.ROUND ? THUMB_SMALL : THUMB_BIG)}px);
