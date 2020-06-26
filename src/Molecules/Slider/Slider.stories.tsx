@@ -117,17 +117,27 @@ export const CustomColors = () => {
           leftColor={t => t.color.positive}
           rightColor={t => t.color.negative}
         />
-        <br />
-        <br />
-        <br />
+      </>
+    );
+  };
+  return <ControlledExample />;
+};
+
+export const RoundedVariant = () => {
+  const ControlledExample = () => {
+    const [value, setValue] = useState(50);
+
+    const handleChange = (v: number) => setValue(v);
+
+    return (
+      <>
         <Slider
           onChange={handleChange}
           value={value}
           {...getSliderProps({ min: 0, max: 100, step: 1 })}
           leftColor={t => t.color.pill5}
-          variant="rounded"
+          variant="round"
         />
-        <br />
         <Typography>
           <Number value={value} maximumDecimals={2} /> Kronor
         </Typography>

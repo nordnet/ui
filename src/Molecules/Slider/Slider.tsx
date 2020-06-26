@@ -1,73 +1,81 @@
 import React, { useRef, FC, MouseEvent, TouchEvent, KeyboardEvent } from 'react';
-import styled, { withTheme } from 'styled-components';
+import Color from 'color';
+import styled, { withTheme, css } from 'styled-components';
 import { Props, getLeftFn, SliderTypes } from './Slider.types';
 import { Theme } from '../../theme/theme.types';
 
 const THUMB_BIG = 30;
 const THUMB_SMALL = 20;
+const VARIANT_TYPES = { ROUND: 'round', SQUARE: 'square' };
 
-const StyledSliderWrapper = styled.div<{
-  leftColor: Props['leftColor'];
-  rightColor: Props['rightColor'];
-}>`
+const pressedThumbStyle = css<SliderTypes>`
+  &:active {
+    background: ${p => {
+      const thumbColor = p.leftColor ? p.leftColor(p.theme) : '';
+      return `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
+    }};
+    height: ${p => p.theme.spacing.unit(4)}px;
+    width: ${p => p.theme.spacing.unit(4)}px;
+  }
+`;
+
+const StyledSliderWrapper = styled('div').withConfig({
+  shouldForwardProp: prop => !['variant', 'leftColor', 'rightColor'].includes(prop),
+})<SliderTypes>`
   background: linear-gradient(
     to right,
     ${p => (p.leftColor ? p.leftColor(p.theme) : p.theme.color.sliderLeftColor)} 0% 50%,
     ${p => (p.rightColor ? p.rightColor(p.theme) : p.theme.color.sliderRightColor)} 50% 100%
   );
   height: ${p =>
-    p.leftColor && p.rightColor
-      ? `${p.theme.spacing.unit(4.25)}px`
-      : `${p.theme.spacing.unit(1)}px`};
+    p.variant === VARIANT_TYPES.ROUND
+      ? `${p.theme.spacing.unit(1)}px`
+      : `${p.theme.spacing.unit(4.25)}px`};
   max-width: 100%;
   width: 100%;
 `;
 
-const StyledSlider = styled.div<{
-  leftColor: Props['leftColor'];
-  rightColor: Props['rightColor'];
-}>`
+const StyledSlider = styled('div').withConfig({
+  shouldForwardProp: prop => !['variant', 'leftColor', 'rightColor'].includes(prop),
+})<SliderTypes>`
   max-width: 100%;
   height: ${p =>
-    p.leftColor && p.rightColor
-      ? `${p.theme.spacing.unit(4.25)}px`
-      : `${p.theme.spacing.unit(1)}px`};
-  margin: ${t => t.theme.spacing.unit(1.25)}px auto;
+    p.variant === VARIANT_TYPES.ROUND
+      ? `${p.theme.spacing.unit(1)}px`
+      : `${p.theme.spacing.unit(4.25)}px`};
+  margin: ${p => p.theme.spacing.unit(1.25)}px auto;
   position: relative;
-  width: calc(100% - ${p => (p.leftColor && p.rightColor ? THUMB_BIG : THUMB_SMALL)}px);
+  width: calc(100% - ${p => (p.variant === VARIANT_TYPES.ROUND ? THUMB_SMALL : THUMB_BIG)}px);
 `;
 
 const StyledThumb = styled('div').withConfig({
-  shouldForwardProp: prop => !['sliderColor'].includes(prop),
-})<{
-  leftColor: SliderTypes['leftColor'];
-  variant: SliderTypes['variant'];
-  rightColor: SliderTypes['rightColor'];
-}>`
+  shouldForwardProp: prop => !['variant', 'leftColor', 'rightColor'].includes(prop),
+})<SliderTypes>`
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  width: ${p => (p.leftColor && p.rightColor ? THUMB_BIG : THUMB_SMALL)}px;
-  height: ${p => (p.leftColor && p.rightColor ? THUMB_BIG : THUMB_SMALL)}px;
+  width: ${p => (p.variant === VARIANT_TYPES.ROUND ? THUMB_SMALL : THUMB_BIG)}px;
+  height: ${p => (p.variant === VARIANT_TYPES.ROUND ? THUMB_SMALL : THUMB_BIG)}px;
   top: 50%;
-  border-radius: ${p => (p.variant === 'rounded' ? '50%' : 0)};
+  border-radius: ${p => (p.variant === VARIANT_TYPES.ROUND ? '50%' : 0)};
   transform: translateY(-50%);
   background: ${p => p.theme.color.bubbleBackground};
   border: ${p =>
-    p.variant === 'rounded' && p.leftColor
+    p.variant === VARIANT_TYPES.ROUND && p.leftColor
       ? `4px solid ${p.leftColor(p.theme)}`
       : `1px solid ${p.theme.color.sliderThumbBorder}`};
   cursor: grab;
   &:focus {
     background: ${p =>
-      p.variant === 'rounded' && p.leftColor
+      p.variant === VARIANT_TYPES.ROUND && p.leftColor
         ? p.leftColor(p.theme)
         : p.theme.color.bubbleBackground};
     border: ${p =>
       p.leftColor && p.rightColor ? `1px solid ${p.theme.color.sliderThumbActive}` : 'none'};
   }
+  ${p => p.variant === VARIANT_TYPES.ROUND && pressedThumbStyle}
 `;
 
 const HamburgerSlice = (theme: Theme) => `
@@ -100,7 +108,7 @@ const getValue = (percentage: number, min: number, max: number) =>
   ((max - min) / 100) * percentage + min;
 
 const getLeft: getLeftFn = (percentage, variant) =>
-  `calc(${percentage}% - ${variant === 'square' ? THUMB_BIG : THUMB_SMALL / 2}px)`;
+  `calc(${percentage}% - ${variant === 'square' ? THUMB_BIG / 2 : THUMB_SMALL / 2}px)`;
 
 const Slider: FC<Props> = ({
   onChange,
@@ -223,7 +231,6 @@ const Slider: FC<Props> = ({
       rightColor ? rightColor(theme) : theme.color.sliderRightColor
     } ${linearGradient}%)`,
   };
-
   return (
     <StyledSliderWrapper leftColor={leftColor} rightColor={rightColor}>
       <StyledSlider
@@ -240,6 +247,7 @@ const Slider: FC<Props> = ({
           ref={thumbRef}
           onClick={handleThumbClick}
           onMouseDown={handleMouseDown}
+          onMouseUp={handleMouseUp}
           onTouchStart={handleTouchStart}
           onKeyDown={handleKeyDown}
           style={{ left: getLeft(initialPercentage, variant) }}
@@ -249,7 +257,7 @@ const Slider: FC<Props> = ({
           aria-valuemax={max}
           variant={variant}
         >
-          {leftColor && rightColor && <StyledIcon />}
+          {variant === VARIANT_TYPES.SQUARE && <StyledIcon />}
         </StyledThumb>
       </StyledSlider>
     </StyledSliderWrapper>
