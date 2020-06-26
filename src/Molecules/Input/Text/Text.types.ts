@@ -1,5 +1,6 @@
 export type Props = {
   className?: string;
+  id?: string;
   /** Label should always be presented - A11y */
   label: string;
   /** But you can hide it visually */

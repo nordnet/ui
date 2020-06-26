@@ -65,7 +65,7 @@ const getGutterStyles = (
 };
 
 const getContainerStyles = (p: Props & { theme: Theme }) => `
-  display: flex;
+  display: ${p.hidden ? 'none' : 'flex'};
   ${p.height ? `height: ${p.theme.spacing.unit(p.height)}px;` : ''}
   ${p.direction ? `flex-direction: ${p.direction};` : ''}
   ${p.wrap ? `flex-wrap: ${p.wrap};` : ''}
@@ -84,6 +84,7 @@ const getItemStyles = (p: Props & { theme: Theme }) => `
   ${p.basis ? `flex-basis: ${p.basis};` : ''}
   ${p.flex ? `flex: ${p.flex};` : ''}
   ${p.align ? `align-self: ${p.align};` : ''}
+  ${p.hidden ? 'display: none;' : ''}
 `;
 
 const sanitizeProps = R.omit([
@@ -95,6 +96,7 @@ const sanitizeProps = R.omit([
   'container',
   'item',
   'gutter',
+  'alignContent',
   'alignItems',
   'alignSelf',
   'grow',

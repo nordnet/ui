@@ -3208,6 +3208,68 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
+        tableHeaderBackground
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c6"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c6"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        tableRowHover
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c7"
+          color="#F5F5F5"
+        />
+        <div>
+          #F5F5F5
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c7"
+          color="#F5F5F5"
+        />
+        <div>
+          #F5F5F5
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
         flagBorder
       </td>
       <td

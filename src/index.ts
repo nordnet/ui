@@ -23,6 +23,7 @@ import TabTitle from './Atoms/TabTitle';
 import Time from './Atoms/Time';
 import Typography from './Atoms/Typography';
 import VisuallyHidden from './Atoms/VisuallyHidden';
+import Truncate from './Atoms/Truncate';
 
 /** Molecules */
 import Accordion from './Molecules/Accordion';
@@ -56,6 +57,7 @@ import Switch from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
 import Tooltip from './Molecules/Tooltip';
+import TruncateWithTooltip from './Molecules/TruncateWithTooltip';
 
 /** Organisms */
 import CardWithTabs from './Organisms/CardWithTabs';
@@ -133,6 +135,8 @@ export {
   Tooltip,
   Tr,
   TrackingContext,
+  Truncate,
+  TruncateWithTooltip,
   Typography,
   useKeyPress,
   useMedia,

@@ -87,6 +87,8 @@ import { ThreeDots } from './components/ThreeDots';
 import { Trash } from './components/Trash';
 import { Utilities } from './components/Utilities';
 import { WarningTriangle } from './components/WarningTriangle';
+import { ThinChevron } from './components/ThinChevron';
+import { SortArrow } from './components/SortArrow';
 
 export default {
   AccountNumbers,
@@ -178,4 +180,6 @@ export default {
   Trash,
   Utilities,
   WarningTriangle,
+  ThinChevron,
+  SortArrow,
 };

@@ -18,9 +18,9 @@ const StyledIconBase = styled(IconBase)<Direction>`
   transform: ${p => `rotate(${DIRECTION[p.direction]}deg`});
 `;
 
-export const ThinArrow = (props: BaseProps & Direction) => {
+export const ThinArrow = ({ direction = 'up', ...props }: BaseProps & Direction) => {
   return (
-    <StyledIconBase {...props} viewBox="0 0 15 16">
+    <StyledIconBase direction={direction} {...props} viewBox="0 0 15 16">
       <path d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z" />
     </StyledIconBase>
   );

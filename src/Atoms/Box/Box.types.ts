@@ -56,4 +56,5 @@ export type Props = {
   className?: string;
 } & Paddings &
   Margins &
-  MediaRelatedProps;
+  MediaRelatedProps &
+  React.HTMLAttributes<HTMLDivElement>;
