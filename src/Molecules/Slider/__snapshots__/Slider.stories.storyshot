@@ -102,7 +102,7 @@ Array [
         role="slider"
         style={
           Object {
-            "left": "calc(50% - 10px)",
+            "left": "calc(50% - 30px)",
           }
         }
         tabIndex={0}
@@ -294,7 +294,7 @@ Array [
         role="slider"
         style={
           Object {
-            "left": "calc(50% - 10px)",
+            "left": "calc(50% - 30px)",
           }
         }
         tabIndex={0}
@@ -396,7 +396,7 @@ Array [
         role="slider"
         style={
           Object {
-            "left": "calc(100% - 10px)",
+            "left": "calc(100% - 30px)",
           }
         }
         tabIndex={0}
@@ -498,7 +498,7 @@ Array [
         role="slider"
         style={
           Object {
-            "left": "calc(0% - 10px)",
+            "left": "calc(0% - 30px)",
           }
         }
         tabIndex={0}
@@ -600,7 +600,7 @@ Array [
         role="slider"
         style={
           Object {
-            "left": "calc(50% - 10px)",
+            "left": "calc(50% - 30px)",
           }
         }
         tabIndex={0}
