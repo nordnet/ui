@@ -20,7 +20,7 @@ const pressedThumbStyle = css<SliderTypes>`
 `;
 
 const StyledSliderWrapper = styled('div').withConfig({
-  shouldForwardProp: prop => !['variant', 'leftColor', 'rightColor'].includes(prop),
+  shouldForwardProp: prop => !['leftColor', 'rightColor'].includes(prop),
 })<SliderTypes>`
   background: linear-gradient(
     to right,
@@ -29,20 +29,21 @@ const StyledSliderWrapper = styled('div').withConfig({
   );
   height: ${p =>
     p.variant === VARIANT_TYPES.ROUND
-      ? `${p.theme.spacing.unit(1)}px`
-      : `${p.theme.spacing.unit(4.25)}px`};
+      ? `${p.theme.spacing.unit(1)}`
+      : `${p.theme.spacing.unit(4.25)}`}px;
+  height: ${p => (p.variant === VARIANT_TYPES.ROUND ? 1 : 5)};
   max-width: 100%;
   width: 100%;
 `;
 
 const StyledSlider = styled('div').withConfig({
-  shouldForwardProp: prop => !['variant', 'leftColor', 'rightColor'].includes(prop),
+  shouldForwardProp: prop => !['leftColor', 'rightColor'].includes(prop),
 })<SliderTypes>`
   max-width: 100%;
   height: ${p =>
     p.variant === VARIANT_TYPES.ROUND
-      ? `${p.theme.spacing.unit(1)}px`
-      : `${p.theme.spacing.unit(4.25)}px`};
+      ? `${p.theme.spacing.unit(1)}`
+      : `${p.theme.spacing.unit(4.25)}`}px;
   margin: ${p => p.theme.spacing.unit(1.25)}px auto;
   position: relative;
   width: calc(100% - ${p => (p.variant === VARIANT_TYPES.ROUND ? THUMB_SMALL : THUMB_BIG)}px);
@@ -232,13 +233,14 @@ const Slider: FC<Props> = ({
     } ${linearGradient}%)`,
   };
   return (
-    <StyledSliderWrapper leftColor={leftColor} rightColor={rightColor}>
+    <StyledSliderWrapper leftColor={leftColor} rightColor={rightColor} variant={variant}>
       <StyledSlider
         ref={sliderRef}
         style={gradient}
         onClick={handleSliderClick}
         leftColor={leftColor}
         rightColor={rightColor}
+        variant={variant}
       >
         <StyledThumb
           leftColor={leftColor}
