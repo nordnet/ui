@@ -1,8 +1,12 @@
-import { DENSITY_PADDING_LARGE, DENSITY_PADDING_MEDIUM, DENSITY_PADDING_SMALL } from './constants';
 import { Density, FontSize } from './shared.types';
 
 export const getFontSizeTypographyType = (fontSize: FontSize) =>
   fontSize === 'm' ? 'secondary' : 'tertiary';
+
+// TODO: use theme spacing (on the following 3 constants)
+const DENSITY_PADDING_SMALL = 0;
+const DENSITY_PADDING_MEDIUM = 4;
+const DENSITY_PADDING_LARGE = 8;
 
 export const getDensityPaddings = (density: Density) => {
   switch (density) {

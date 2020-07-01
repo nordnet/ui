@@ -37,6 +37,7 @@ import Drawer from './Molecules/Drawer';
 import FeedbackBanner from './Molecules/FeedbackBanner';
 import Fieldset from './Molecules/Fieldset';
 import FormField from './Molecules/FormField';
+import FlexTable from './Molecules/FlexTable';
 import InfoBar from './Molecules/InfoBar';
 import Input from './Molecules/Input';
 import LabeledValue from './Molecules/LabeledValue';
@@ -56,6 +57,7 @@ import Slider from './Molecules/Slider';
 import Switch from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
+import Timeline from './Molecules/Timeline';
 import Tooltip from './Molecules/Tooltip';
 import TruncateWithTooltip from './Molecules/TruncateWithTooltip';
 
@@ -92,6 +94,7 @@ export {
   Fieldset,
   Flag,
   Flexbox,
+  FlexTable,
   FormField,
   FormLabel,
   Icon,
@@ -132,6 +135,7 @@ export {
   Thead,
   theme,
   Time,
+  Timeline,
   Tooltip,
   Tr,
   TrackingContext,

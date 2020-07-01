@@ -1,3 +1,3 @@
-import { Row, HeaderRow } from './Row';
+import FlexTable from './FlexTable';
 
-export { Row, HeaderRow };
+export default FlexTable;

@@ -204,6 +204,13 @@ export const TableWithDifferentRows = () => (
 );
 
 export const TableWithDifferentColumns = () => {
+  const FlagCell: React.FC<{ columnId: string }> = React.memo(({ children, columnId }) => (
+    <FlexTable.Cell columnId={columnId}>
+      <Flag country="SE" />
+      <FlexTable.Cell.TextWrapper>{children}</FlexTable.Cell.TextWrapper>
+    </FlexTable.Cell>
+  ));
+
   const ColumnWidthTableExample = () => (
     <StyledFlexTable>
       <FlexTable.HeaderRow>
@@ -230,7 +237,7 @@ export const TableWithDifferentColumns = () => {
       <FlexTable.Row>
         <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
         <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+        <FlagCell columnId="column3">Long cell with flag</FlagCell>
         <FlexTable.Cell columnId="column4">Cell 2-4</FlexTable.Cell>
       </FlexTable.Row>
       <FlexTable.Row>
@@ -318,17 +325,34 @@ export const TableWithDifferentColumns = () => {
 
 export const TableWithDifferentHeaders = () => {
   const DefaultTableHeaders = () => {
+    const StyledFlexboxContainer = styled(Flexbox)`
+      justify-content: inherit;
+    `;
+
+    const StyledFlexbox = styled(Flexbox)`
+      display: inline-flex;
+      min-width: 0;
+    `;
+
     const CustomisedTableHeader: React.FC = ({ children }) => (
       <FlexTable.Header columnId="column3" sortable>
         {({ sortable, sorted, fontSize, onSortClick, sortOrder }) => (
           <FlexTable.Header.SortButton onClick={onSortClick}>
-            <>
-              <Flag country="SE" inline height={3} />
-              <FlexTable.Header.TextWrapper fontSize={fontSize} sorted={sorted}>
-                {children}
-              </FlexTable.Header.TextWrapper>
-              {sortable && <FlexTable.Header.SortIcon sortOrder={sortOrder} />}
-            </>
+            <StyledFlexboxContainer container>
+              <Flexbox item>
+                <Flag country="SE" inline height={3} />
+              </Flexbox>
+              <StyledFlexbox item>
+                <FlexTable.Header.TextWrapper fontSize={fontSize} sorted={sorted}>
+                  {children}
+                </FlexTable.Header.TextWrapper>
+              </StyledFlexbox>
+              {sortable && (
+                <Flexbox item>
+                  <FlexTable.Header.SortIcon sortOrder={sortOrder} />
+                </Flexbox>
+              )}
+            </StyledFlexboxContainer>
           </FlexTable.Header.SortButton>
         )}
       </FlexTable.Header>

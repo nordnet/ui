@@ -304,15 +304,15 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   /** index */
   transferPendingIconColor: ChangeableColor<RawColor['index'], RawColor['a11yIndex'], Version>;
   /** cta */
-  timelineColor1: ChangeableColor<RawColor['cta'], RawColor['a11yCta'], Version>;
+  timelineActive: ChangeableColor<RawColor['cta'], RawColor['a11yCta'], Version>;
   /** positive */
-  timelineColor2: ChangeableColor<RawColor['positive'], RawColor['a11yPositive'], Version>;
+  timelineSuccess: ChangeableColor<RawColor['positive'], RawColor['a11yPositive'], Version>;
   /** index */
-  timelineColor3: ChangeableColor<RawColor['index'], RawColor['a11yIndex'], Version>;
+  timelineWarning: ChangeableColor<RawColor['index'], RawColor['a11yIndex'], Version>;
   /** negative */
-  timelineColor4: ChangeableColor<RawColor['negative'], RawColor['a11yNegative'], Version>;
+  timelineFailure: ChangeableColor<RawColor['negative'], RawColor['a11yNegative'], Version>;
   /** gray4 */
-  timelineColor5: RawColor['gray4'];
+  timelineNext: RawColor['gray4'];
   /** brankPink */
   transferProgressBar1: RawColor['brandPink'];
   /** positive */

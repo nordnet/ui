@@ -13,8 +13,8 @@
     "node": ">=10"
   },
   "scripts": {
-    "test": "jest",
-    "test-ci": "jest --coverage --ci && codecov",
+    "test": "TZ=UTC jest",
+    "test-ci": "TZ=UTC jest --coverage --ci && codecov",
     "dev": "start-storybook -p 6006 -s ./static",
     "lint:js": "eslint --ext=.tsx --ext=.ts src",
     "lint:css": "stylelint './src/**/*.{ts,tsx}'",

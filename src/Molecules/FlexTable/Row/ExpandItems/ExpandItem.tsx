@@ -11,10 +11,6 @@ const StyledFlexboxItem = styled(Flexbox)<FlexBoxProps>`
   padding-bottom: ${p => p.theme.spacing.unit(5)}px;
 `;
 
-const StyledLabeledValue = styled(LabeledValue)`
-  overflow: hidden;
-`;
-
 const MobileItem: React.FC<{ item: ExpandItemProps }> = ({ item }) => (
   <Flexbox container justifyContent="space-between" as="li">
     <Flexbox item>
@@ -28,11 +24,11 @@ const MobileItem: React.FC<{ item: ExpandItemProps }> = ({ item }) => (
 
 const DesktopItem: React.FC<{ item: ExpandItemProps }> = ({ item }) => (
   <StyledFlexboxItem item as="li">
-    <StyledLabeledValue
+    <LabeledValue
       label={isElement(item.label) ? item.label : <TextWrapperLabel>{item.label}</TextWrapperLabel>}
     >
       {isElement(item.value) ? item.value : <TextWrapperValue>{item.value}</TextWrapperValue>}
-    </StyledLabeledValue>
+    </LabeledValue>
   </StyledFlexboxItem>
 );
 

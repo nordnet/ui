@@ -5006,7 +5006,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
-        timelineColor1
+        timelineActive
       </td>
       <td
         className="c5"
@@ -5037,7 +5037,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
-        timelineColor2
+        timelineSuccess
       </td>
       <td
         className="c5"
@@ -5068,7 +5068,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
-        timelineColor3
+        timelineWarning
       </td>
       <td
         className="c5"
@@ -5099,7 +5099,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
-        timelineColor4
+        timelineFailure
       </td>
       <td
         className="c5"
@@ -5130,7 +5130,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
-        timelineColor5
+        timelineNext
       </td>
       <td
         className="c5"

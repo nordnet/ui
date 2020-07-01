@@ -1,3 +1,44 @@
+## [2.56.1](https://github.com/nordnet/ui/compare/v2.56.0...v2.56.1) (2020-07-01)
+
+
+### Bug Fixes
+
+* 🐛 added column id type to flag cell ([46d3953](https://github.com/nordnet/ui/commit/46d3953))
+* 🐛 inner cell to retain export of text wrapper ([a32d8f9](https://github.com/nordnet/ui/commit/a32d8f9))
+
+# [2.56.0](https://github.com/nordnet/ui/compare/v2.55.3...v2.56.0) (2020-07-01)
+
+
+### Features
+
+* **Timeline:** adds Timeline component ([f36dd45](https://github.com/nordnet/ui/commit/f36dd45))
+
+## [2.55.3](https://github.com/nordnet/ui/compare/v2.55.2...v2.55.3) (2020-06-30)
+
+
+### Bug Fixes
+
+* 🐛 change line-height to display: inline-flex ([2d8c1c6](https://github.com/nordnet/ui/commit/2d8c1c6))
+* 🐛 correct truncate and icon on same row as text ([5c39159](https://github.com/nordnet/ui/commit/5c39159))
+* 🐛 extra padding from overflow: hidden ([a603411](https://github.com/nordnet/ui/commit/a603411))
+
+## [2.55.2](https://github.com/nordnet/ui/compare/v2.55.1...v2.55.2) (2020-06-30)
+
+
+### Bug Fixes
+
+* 🐛 cell ts error ([6ec2683](https://github.com/nordnet/ui/commit/6ec2683))
+* 🐛 fixed ts error for cell, header and column provider ([bda8c3b](https://github.com/nordnet/ui/commit/bda8c3b))
+* 🐛 recast to ReactNode and added clarifying comment ([3398f9f](https://github.com/nordnet/ui/commit/3398f9f))
+
+## [2.55.1](https://github.com/nordnet/ui/compare/v2.55.0...v2.55.1) (2020-06-29)
+
+
+### Bug Fixes
+
+* bump package version ([31a375c](https://github.com/nordnet/ui/commit/31a375c))
+* wip flex table export errors ([e7e1754](https://github.com/nordnet/ui/commit/e7e1754))
+
 # [2.55.0](https://github.com/nordnet/ui/compare/v2.54.0...v2.55.0) (2020-06-26)
 
 

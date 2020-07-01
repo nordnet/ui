@@ -1,0 +1,1545 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | Timeline Default 1`] = `
+.c0 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.c6 {
+  margin-right: 8px;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c12 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c8 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c16 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #FF1900;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c19 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #00D200;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c20 {
+  fill: #FFFFFF;
+}
+
+.c17 {
+  fill: #FFFFFF;
+}
+
+.c9 {
+  fill: #FFFFFF;
+}
+
+.c2 {
+  display: block;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  z-index: 2;
+}
+
+.c1 {
+  padding-left: 0;
+}
+
+.c5 {
+  width: 100%;
+}
+
+.c11 {
+  width: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c3:not(:last-of-type) > div > div:nth-child(2) {
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c3::before {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #00D200;
+}
+
+.c3:first-child::before {
+  content: none;
+}
+
+.c3::after {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #BCBCB6;
+  bottom: 0;
+}
+
+.c3:last-child::after {
+  content: none;
+}
+
+.c15 {
+  position: relative;
+}
+
+.c15:not(:last-of-type) > div > div:nth-child(2) {
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c15::before {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #BCBCB6;
+}
+
+.c15:first-child::before {
+  content: none;
+}
+
+.c15::after {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #BCBCB6;
+  bottom: 0;
+}
+
+.c15:last-child::after {
+  content: none;
+}
+
+.c18 {
+  position: relative;
+}
+
+.c18:not(:last-of-type) > div > div:nth-child(2) {
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c18::before {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #BCBCB6;
+}
+
+.c18:first-child::before {
+  content: none;
+}
+
+.c18::after {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #00D200;
+  bottom: 0;
+}
+
+.c18:last-child::after {
+  content: none;
+}
+
+<div
+  className="c0"
+>
+  <ul
+    className="c1"
+  >
+    <li
+      className="c2 c3"
+    >
+      <div
+        className="c4 c5"
+      >
+        <div
+          className="c6 c7"
+        >
+          <svg
+            aria-hidden="true"
+            className="c8"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+            />
+            <polygon
+              className="c9"
+              points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
+            />
+          </svg>
+        </div>
+        <div
+          className="c10 c11"
+        >
+          <div
+            className="c12"
+          >
+            <span
+              className="c13"
+            >
+              <time>
+                3/1/2020
+              </time>
+            </span>
+            <span
+              className="c14"
+            >
+              Old
+            </span>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li
+      className="c2 c15"
+    >
+      <div
+        className="c4 c5"
+      >
+        <div
+          className="c6 c7"
+        >
+          <svg
+            aria-hidden="true"
+            className="c16"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+            />
+            <polygon
+              className="c17"
+              points="8.681 9.967 5.073 6.333 6.396 5 10.004 8.634 13.604 5.007 14.916 6.329 11.316 9.956 15 13.667 13.677 15 9.993 11.289 6.312 14.997 5 13.675"
+            />
+          </svg>
+        </div>
+        <div
+          className="c10 c11"
+        >
+          <div
+            className="c12"
+          >
+            <span
+              className="c13"
+            >
+              <time>
+                4/1/2020
+              </time>
+            </span>
+            <span
+              className="c14"
+            >
+              Kinda new
+            </span>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li
+      className="c2 c18"
+    >
+      <div
+        className="c4 c5"
+      >
+        <div
+          className="c6 c7"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+            />
+            <polygon
+              className="c20"
+              points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
+            />
+          </svg>
+        </div>
+        <div
+          className="c10 c11"
+        >
+          <div
+            className="c12"
+          >
+            <span
+              className="c13"
+            >
+              <time>
+                7/1/2020
+              </time>
+            </span>
+            <span
+              className="c14"
+            >
+              Newest
+            </span>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Molecules | Timeline Different Heights 1`] = `
+.c0 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.c6 {
+  margin-right: 8px;
+}
+
+.c15 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.c19 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.c24 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c12 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c8 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c17 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #FF1900;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c21 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #00D200;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c22 {
+  fill: #FFFFFF;
+}
+
+.c18 {
+  fill: #FFFFFF;
+}
+
+.c9 {
+  fill: #FFFFFF;
+}
+
+.c2 {
+  display: block;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  z-index: 2;
+}
+
+.c1 {
+  padding-left: 0;
+}
+
+.c5 {
+  width: 100%;
+}
+
+.c11 {
+  width: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c3:not(:last-of-type) > div > div:nth-child(2) {
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c3::before {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #00D200;
+}
+
+.c3:first-child::before {
+  content: none;
+}
+
+.c3::after {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #BCBCB6;
+  bottom: 0;
+}
+
+.c3:last-child::after {
+  content: none;
+}
+
+.c16 {
+  position: relative;
+}
+
+.c16:not(:last-of-type) > div > div:nth-child(2) {
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c16::before {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #BCBCB6;
+}
+
+.c16:first-child::before {
+  content: none;
+}
+
+.c16::after {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #BCBCB6;
+  bottom: 0;
+}
+
+.c16:last-child::after {
+  content: none;
+}
+
+.c20 {
+  position: relative;
+}
+
+.c20:not(:last-of-type) > div > div:nth-child(2) {
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c20::before {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #BCBCB6;
+}
+
+.c20:first-child::before {
+  content: none;
+}
+
+.c20::after {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #00D200;
+  bottom: 0;
+}
+
+.c20:last-child::after {
+  content: none;
+}
+
+.c23 {
+  position: relative;
+}
+
+.c23:not(:last-of-type) > div > div:nth-child(2) {
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c23::before {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #00D200;
+}
+
+.c23:first-child::before {
+  content: none;
+}
+
+.c23::after {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #00D200;
+  bottom: 0;
+}
+
+.c23:last-child::after {
+  content: none;
+}
+
+<div
+  className="c0"
+>
+  <ul
+    className="c1"
+  >
+    <li
+      className="c2 c3"
+    >
+      <div
+        className="c4 c5"
+      >
+        <div
+          className="c6 c7"
+        >
+          <svg
+            aria-hidden="true"
+            className="c8"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+            />
+            <polygon
+              className="c9"
+              points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
+            />
+          </svg>
+        </div>
+        <div
+          className="c10 c11"
+        >
+          <div
+            className="c12"
+          >
+            <span
+              className="c13"
+            >
+              <time>
+                1/1/2020
+              </time>
+            </span>
+            <span
+              className="c14"
+            >
+              <div
+                className="c15"
+              >
+                Oldest
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li
+      className="c2 c16"
+    >
+      <div
+        className="c4 c5"
+      >
+        <div
+          className="c6 c7"
+        >
+          <svg
+            aria-hidden="true"
+            className="c17"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+            />
+            <polygon
+              className="c18"
+              points="8.681 9.967 5.073 6.333 6.396 5 10.004 8.634 13.604 5.007 14.916 6.329 11.316 9.956 15 13.667 13.677 15 9.993 11.289 6.312 14.997 5 13.675"
+            />
+          </svg>
+        </div>
+        <div
+          className="c10 c11"
+        >
+          <div
+            className="c12"
+          >
+            <span
+              className="c13"
+            >
+              <time>
+                2/1/2020
+              </time>
+            </span>
+            <span
+              className="c14"
+            >
+              <div
+                className="c19"
+              >
+                Kinda old
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li
+      className="c2 c20"
+    >
+      <div
+        className="c4 c5"
+      >
+        <div
+          className="c6 c7"
+        >
+          <svg
+            aria-hidden="true"
+            className="c21"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+            />
+            <polygon
+              className="c22"
+              points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
+            />
+          </svg>
+        </div>
+        <div
+          className="c10 c11"
+        >
+          <div
+            className="c12"
+          >
+            <span
+              className="c13"
+            >
+              <time>
+                4/1/2020
+              </time>
+            </span>
+            <span
+              className="c14"
+            >
+              Kinda new
+            </span>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li
+      className="c2 c23"
+    >
+      <div
+        className="c4 c5"
+      >
+        <div
+          className="c6 c7"
+        >
+          <svg
+            aria-hidden="true"
+            className="c21"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+            />
+            <polygon
+              className="c22"
+              points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
+            />
+          </svg>
+        </div>
+        <div
+          className="c10 c11"
+        >
+          <div
+            className="c12"
+          >
+            <span
+              className="c13"
+            >
+              <time>
+                7/1/2020
+              </time>
+            </span>
+            <span
+              className="c14"
+            >
+              <div
+                className="c24"
+              >
+                Newest
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Molecules | Timeline Single Element 1`] = `
+.c0 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.c6 {
+  margin-right: 8px;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c12 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c8 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #00D200;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c9 {
+  fill: #FFFFFF;
+}
+
+.c2 {
+  display: block;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  z-index: 2;
+}
+
+.c1 {
+  padding-left: 0;
+}
+
+.c5 {
+  width: 100%;
+}
+
+.c11 {
+  width: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c3:not(:last-of-type) > div > div:nth-child(2) {
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c3::before {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #00D200;
+}
+
+.c3:first-child::before {
+  content: none;
+}
+
+.c3::after {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #00D200;
+  bottom: 0;
+}
+
+.c3:last-child::after {
+  content: none;
+}
+
+<div
+  className="c0"
+>
+  <ul
+    className="c1"
+  >
+    <li
+      className="c2 c3"
+    >
+      <div
+        className="c4 c5"
+      >
+        <div
+          className="c6 c7"
+        >
+          <svg
+            aria-hidden="true"
+            className="c8"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+            />
+            <polygon
+              className="c9"
+              points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
+            />
+          </svg>
+        </div>
+        <div
+          className="c10 c11"
+        >
+          <div
+            className="c12"
+          >
+            <span
+              className="c13"
+            >
+              <time>
+                7/1/2020
+              </time>
+            </span>
+            <span
+              className="c14"
+            >
+              Single element. So lonely 😭
+            </span>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Molecules | Timeline With Button 1`] = `
+.c0 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.c6 {
+  margin-right: 8px;
+}
+
+.c15 {
+  margin-left: auto;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c12 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c8 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c19 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #00D200;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c20 {
+  fill: #FFFFFF;
+}
+
+.c9 {
+  fill: #FFFFFF;
+}
+
+.c2 {
+  display: block;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c16,
+.c16[type='button'],
+.c16[type='reset'],
+.c16[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c16::-moz-focus-inner,
+.c16[type='button']::-moz-focus-inner,
+.c16[type='reset']::-moz-focus-inner,
+.c16[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c16:-moz-focusring,
+.c16[type='button']:-moz-focusring,
+.c16[type='reset']:-moz-focusring,
+.c16[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c16::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c16:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c16:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c7 {
+  z-index: 2;
+}
+
+.c1 {
+  padding-left: 0;
+}
+
+.c5 {
+  width: 100%;
+}
+
+.c11 {
+  width: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c3:not(:last-of-type) > div > div:nth-child(2) {
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c3::before {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #00D200;
+}
+
+.c3:first-child::before {
+  content: none;
+}
+
+.c3::after {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #BCBCB6;
+  bottom: 0;
+}
+
+.c3:last-child::after {
+  content: none;
+}
+
+.c18 {
+  position: relative;
+}
+
+.c18:not(:last-of-type) > div > div:nth-child(2) {
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c18::before {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #BCBCB6;
+}
+
+.c18:first-child::before {
+  content: none;
+}
+
+.c18::after {
+  content: '';
+  position: absolute;
+  height: 50%;
+  left: 9px;
+  width: 2px;
+  z-index: 1;
+  background: #00D200;
+  bottom: 0;
+}
+
+.c18:last-child::after {
+  content: none;
+}
+
+<div
+  className="c0"
+>
+  <ul
+    className="c1"
+  >
+    <li
+      className="c2 c3"
+    >
+      <div
+        className="c4 c5"
+      >
+        <div
+          className="c6 c7"
+        >
+          <svg
+            aria-hidden="true"
+            className="c8"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+            />
+            <polygon
+              className="c9"
+              points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
+            />
+          </svg>
+        </div>
+        <div
+          className="c10 c11"
+        >
+          <div
+            className="c12"
+          >
+            <span
+              className="c13"
+            >
+              <time>
+                6/1/2020
+              </time>
+            </span>
+            <span
+              className="c14"
+            >
+              Old
+            </span>
+          </div>
+          <div
+            className="c15"
+          >
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c16"
+              onClick={[Function]}
+              type="button"
+            >
+              <span>
+                <span
+                  className="c17"
+                >
+                  Click me
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li
+      className="c2 c18"
+    >
+      <div
+        className="c4 c5"
+      >
+        <div
+          className="c6 c7"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+            />
+            <polygon
+              className="c20"
+              points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
+            />
+          </svg>
+        </div>
+        <div
+          className="c10 c11"
+        >
+          <div
+            className="c12"
+          >
+            <span
+              className="c13"
+            >
+              <time>
+                7/1/2020
+              </time>
+            </span>
+            <span
+              className="c14"
+            >
+              Newest
+            </span>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
