@@ -15,6 +15,11 @@ export type SliderTypes = {
   variant?: Variant;
 };
 
+export type InternalSliderTypes = {
+  $variant?: Variant;
+  $sliderColor: ColorFn;
+};
+
 export type Props = {
   onChange: (v: number) => void;
   min: number;
