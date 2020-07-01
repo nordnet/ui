@@ -2,7 +2,7 @@
 
 exports[`Storyshots Molecules | Slider Custom Colors 1`] = `
 .c0 {
-  background: linear-gradient( to right,#00D200 0% 50%,#FF1900 50% 100% );
+  background: linear-gradient( to right,#00D200 0% 50%,#EBEBE8 50% 100% );
   height: 16px;
   height: 5;
   max-width: 100%;
@@ -12,7 +12,6 @@ exports[`Storyshots Molecules | Slider Custom Colors 1`] = `
 .c1 {
   max-width: 100%;
   height: 16px;
-  margin: 5px auto;
   position: relative;
   width: calc(100% - 30px);
 }
@@ -35,60 +34,32 @@ exports[`Storyshots Molecules | Slider Custom Colors 1`] = `
   width: 30px;
   height: 30px;
   top: 50%;
-  border-radius: 0;
+  border-radius: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background: #FFFFFF;
-  border: 1px solid #BCBCB6;
+  border: 4px solid #00D200;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
 }
 
 .c2:focus {
-  background: #FFFFFF;
-  border: 1px solid #0046FF;
-}
-
-.c3 {
-  background: #BCBCB6;
-  height: 2px;
-  position: absolute;
-  width: 12px;
-}
-
-.c3:before {
-  background: #BCBCB6;
-  height: 2px;
-  position: absolute;
-  width: 12px;
-  content: '';
-  top: -6px;
-}
-
-.c3:after {
-  background: #BCBCB6;
-  height: 2px;
-  position: absolute;
-  width: 12px;
-  content: '';
-  top: 6px;
+  background: #00D200;
 }
 
 <div
   className="c0"
-  variant="square"
 >
   <div
     className="c1"
     onClick={[Function]}
     style={
       Object {
-        "background": "linear-gradient(to right, #00D200 50% , #FF1900 50%)",
+        "background": "linear-gradient(to right, #00D200 50% , #EBEBE8 50%)",
       }
     }
-    variant="square"
   >
     <div
       aria-valuemax={100}
@@ -107,11 +78,7 @@ exports[`Storyshots Molecules | Slider Custom Colors 1`] = `
         }
       }
       tabIndex={0}
-    >
-      <div
-        className="c3"
-      />
-    </div>
+    />
   </div>
 </div>
 `;
@@ -119,7 +86,7 @@ exports[`Storyshots Molecules | Slider Custom Colors 1`] = `
 exports[`Storyshots Molecules | Slider Default 1`] = `
 Array [
   .c0 {
-  background: linear-gradient( to right,#D2F500 0% 50%,#EBEBE8 50% 100% );
+  background: linear-gradient( to right,#AC135A 0% 50%,#EBEBE8 50% 100% );
   height: 16px;
   height: 5;
   max-width: 100%;
@@ -129,7 +96,6 @@ Array [
 .c1 {
   max-width: 100%;
   height: 16px;
-  margin: 5px auto;
   position: relative;
   width: calc(100% - 30px);
 }
@@ -152,60 +118,32 @@ Array [
   width: 30px;
   height: 30px;
   top: 50%;
-  border-radius: 0;
+  border-radius: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background: #FFFFFF;
-  border: 1px solid #BCBCB6;
+  border: 4px solid #AC135A;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
 }
 
 .c2:focus {
-  background: #FFFFFF;
-  border: none;
-}
-
-.c3 {
-  background: #BCBCB6;
-  height: 2px;
-  position: absolute;
-  width: 12px;
-}
-
-.c3:before {
-  background: #BCBCB6;
-  height: 2px;
-  position: absolute;
-  width: 12px;
-  content: '';
-  top: -6px;
-}
-
-.c3:after {
-  background: #BCBCB6;
-  height: 2px;
-  position: absolute;
-  width: 12px;
-  content: '';
-  top: 6px;
+  background: #AC135A;
 }
 
 <div
     className="c0"
-    variant="square"
   >
     <div
       className="c1"
       onClick={[Function]}
       style={
         Object {
-          "background": "linear-gradient(to right, #D2F500 50% , #EBEBE8 50%)",
+          "background": "linear-gradient(to right, #AC135A 50% , #EBEBE8 50%)",
         }
       }
-      variant="square"
     >
       <div
         aria-valuemax={100}
@@ -224,11 +162,7 @@ Array [
           }
         }
         tabIndex={0}
-      >
-        <div
-          className="c3"
-        />
-      </div>
+      />
     </div>
   </div>,
   .c0 {
@@ -253,7 +187,7 @@ Array [
 exports[`Storyshots Molecules | Slider Maximum Value 1`] = `
 Array [
   .c0 {
-  background: linear-gradient( to right,#D2F500 0% 50%,#EBEBE8 50% 100% );
+  background: linear-gradient( to right,#3A913F 0% 50%,#EBEBE8 50% 100% );
   height: 16px;
   height: 5;
   max-width: 100%;
@@ -263,7 +197,6 @@ Array [
 .c1 {
   max-width: 100%;
   height: 16px;
-  margin: 5px auto;
   position: relative;
   width: calc(100% - 30px);
 }
@@ -286,60 +219,32 @@ Array [
   width: 30px;
   height: 30px;
   top: 50%;
-  border-radius: 0;
+  border-radius: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background: #FFFFFF;
-  border: 1px solid #BCBCB6;
+  border: 4px solid #3A913F;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
 }
 
 .c2:focus {
-  background: #FFFFFF;
-  border: none;
-}
-
-.c3 {
-  background: #BCBCB6;
-  height: 2px;
-  position: absolute;
-  width: 12px;
-}
-
-.c3:before {
-  background: #BCBCB6;
-  height: 2px;
-  position: absolute;
-  width: 12px;
-  content: '';
-  top: -6px;
-}
-
-.c3:after {
-  background: #BCBCB6;
-  height: 2px;
-  position: absolute;
-  width: 12px;
-  content: '';
-  top: 6px;
+  background: #3A913F;
 }
 
 <div
     className="c0"
-    variant="square"
   >
     <div
       className="c1"
       onClick={[Function]}
       style={
         Object {
-          "background": "linear-gradient(to right, #D2F500 100% , #EBEBE8 100%)",
+          "background": "linear-gradient(to right, #3A913F 100% , #EBEBE8 100%)",
         }
       }
-      variant="square"
     >
       <div
         aria-valuemax={100}
@@ -358,11 +263,7 @@ Array [
           }
         }
         tabIndex={0}
-      >
-        <div
-          className="c3"
-        />
-      </div>
+      />
     </div>
   </div>,
   .c0 {
@@ -387,7 +288,7 @@ Array [
 exports[`Storyshots Molecules | Slider Minimum Value 1`] = `
 Array [
   .c0 {
-  background: linear-gradient( to right,#D2F500 0% 50%,#EBEBE8 50% 100% );
+  background: linear-gradient( to right,#009195 0% 50%,#EBEBE8 50% 100% );
   height: 16px;
   height: 5;
   max-width: 100%;
@@ -397,7 +298,6 @@ Array [
 .c1 {
   max-width: 100%;
   height: 16px;
-  margin: 5px auto;
   position: relative;
   width: calc(100% - 30px);
 }
@@ -420,60 +320,32 @@ Array [
   width: 30px;
   height: 30px;
   top: 50%;
-  border-radius: 0;
+  border-radius: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background: #FFFFFF;
-  border: 1px solid #BCBCB6;
+  border: 4px solid #009195;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
 }
 
 .c2:focus {
-  background: #FFFFFF;
-  border: none;
-}
-
-.c3 {
-  background: #BCBCB6;
-  height: 2px;
-  position: absolute;
-  width: 12px;
-}
-
-.c3:before {
-  background: #BCBCB6;
-  height: 2px;
-  position: absolute;
-  width: 12px;
-  content: '';
-  top: -6px;
-}
-
-.c3:after {
-  background: #BCBCB6;
-  height: 2px;
-  position: absolute;
-  width: 12px;
-  content: '';
-  top: 6px;
+  background: #009195;
 }
 
 <div
     className="c0"
-    variant="square"
   >
     <div
       className="c1"
       onClick={[Function]}
       style={
         Object {
-          "background": "linear-gradient(to right, #D2F500 0% , #EBEBE8 0%)",
+          "background": "linear-gradient(to right, #009195 0% , #EBEBE8 0%)",
         }
       }
-      variant="square"
     >
       <div
         aria-valuemax={100}
@@ -492,11 +364,7 @@ Array [
           }
         }
         tabIndex={0}
-      >
-        <div
-          className="c3"
-        />
-      </div>
+      />
     </div>
   </div>,
   .c0 {
@@ -521,7 +389,7 @@ Array [
 exports[`Storyshots Molecules | Slider Negative To Positive 1`] = `
 Array [
   .c0 {
-  background: linear-gradient( to right,#D2F500 0% 50%,#EBEBE8 50% 100% );
+  background: linear-gradient( to right,#FF1900 0% 50%,#EBEBE8 50% 100% );
   height: 16px;
   height: 5;
   max-width: 100%;
@@ -531,7 +399,6 @@ Array [
 .c1 {
   max-width: 100%;
   height: 16px;
-  margin: 5px auto;
   position: relative;
   width: calc(100% - 30px);
 }
@@ -554,60 +421,32 @@ Array [
   width: 30px;
   height: 30px;
   top: 50%;
-  border-radius: 0;
+  border-radius: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background: #FFFFFF;
-  border: 1px solid #BCBCB6;
+  border: 4px solid #FF1900;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
 }
 
 .c2:focus {
-  background: #FFFFFF;
-  border: none;
-}
-
-.c3 {
-  background: #BCBCB6;
-  height: 2px;
-  position: absolute;
-  width: 12px;
-}
-
-.c3:before {
-  background: #BCBCB6;
-  height: 2px;
-  position: absolute;
-  width: 12px;
-  content: '';
-  top: -6px;
-}
-
-.c3:after {
-  background: #BCBCB6;
-  height: 2px;
-  position: absolute;
-  width: 12px;
-  content: '';
-  top: 6px;
+  background: #FF1900;
 }
 
 <div
     className="c0"
-    variant="square"
   >
     <div
       className="c1"
       onClick={[Function]}
       style={
         Object {
-          "background": "linear-gradient(to right, #D2F500 50% , #EBEBE8 50%)",
+          "background": "linear-gradient(to right, #FF1900 50% , #EBEBE8 50%)",
         }
       }
-      variant="square"
     >
       <div
         aria-valuemax={50}
@@ -626,11 +465,7 @@ Array [
           }
         }
         tabIndex={0}
-      >
-        <div
-          className="c3"
-        />
-      </div>
+      />
     </div>
   </div>,
   .c0 {
@@ -652,7 +487,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Slider Rounded Variant 1`] = `
+exports[`Storyshots Molecules | Slider Small Variant 1`] = `
 Array [
   .c0 {
   background: linear-gradient( to right,#FF2B83 0% 50%,#EBEBE8 50% 100% );
@@ -665,7 +500,6 @@ Array [
 .c1 {
   max-width: 100%;
   height: 4px;
-  margin: 5px auto;
   position: relative;
   width: calc(100% - 20px);
 }
@@ -701,7 +535,6 @@ Array [
 
 .c2:focus {
   background: #FF2B83;
-  border: none;
 }
 
 .c2:active {
@@ -712,7 +545,6 @@ Array [
 
 <div
     className="c0"
-    variant="round"
   >
     <div
       className="c1"
@@ -722,7 +554,6 @@ Array [
           "background": "linear-gradient(to right, #FF2B83 50% , #EBEBE8 50%)",
         }
       }
-      variant="round"
     >
       <div
         aria-valuemax={100}

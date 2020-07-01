@@ -6,13 +6,12 @@ type ThemeProp = {
 
 type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // c
 type ColorFn = (t: Theme) => Values<Theme['color']>;
-type Variant = 'square' | 'round';
+type Variant = 'big' | 'small';
 
 export type getLeftFn = (percentage: number, variant?: Variant) => string;
 
 export type SliderTypes = {
-  leftColor?: ColorFn;
-  rightColor?: ColorFn;
+  color: ColorFn;
   variant?: Variant;
 };
 
