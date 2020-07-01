@@ -11,7 +11,7 @@ type Variant = 'big' | 'small';
 export type getLeftFn = (percentage: number, variant?: Variant) => string;
 
 export type SliderTypes = {
-  color: ColorFn;
+  sliderColor: ColorFn;
   variant?: Variant;
 };
 

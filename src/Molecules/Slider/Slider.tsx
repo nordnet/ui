@@ -10,7 +10,7 @@ const VARIANT_TYPES = { SMALL: 'small', BIG: 'big' };
 const pressedThumbStyle = css<SliderTypes>`
   &:active {
     background: ${p => {
-      const thumbColor = p.color ? p.color(p.theme) : '';
+      const thumbColor = p.sliderColor ? p.sliderColor(p.theme) : '';
       return `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
     }};
     height: ${p => p.theme.spacing.unit(4)}px;
@@ -23,7 +23,7 @@ const StyledSliderWrapper = styled('div').withConfig({
 })<SliderTypes>`
   background: linear-gradient(
     to right,
-    ${p => (p.color ? p.color(p.theme) : p.theme.color.sliderLeftColor)} 0% 50%,
+    ${p => (p.color ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)} 0% 50%,
     ${p => p.theme.color.sliderRightColor} 50% 100%
   );
   height: ${p =>
@@ -36,7 +36,7 @@ const StyledSliderWrapper = styled('div').withConfig({
 `;
 
 const StyledSlider = styled('div').withConfig({
-  shouldForwardProp: prop => !['color', 'variant'].includes(prop),
+  shouldForwardProp: prop => !['sliderColor', 'variant'].includes(prop),
 })<SliderTypes>`
   max-width: 100%;
   height: ${p =>
@@ -48,7 +48,7 @@ const StyledSlider = styled('div').withConfig({
 `;
 
 const StyledThumb = styled('div').withConfig({
-  shouldForwardProp: prop => !['color', 'variant'].includes(prop),
+  shouldForwardProp: prop => !['sliderColor', 'variant'].includes(prop),
 })<SliderTypes>`
   box-sizing: border-box;
   display: flex;
@@ -62,10 +62,10 @@ const StyledThumb = styled('div').withConfig({
   transform: translateY(-50%);
   background: ${p => p.theme.color.bubbleBackground};
   border: ${p =>
-    p.color ? `4px solid ${p.color(p.theme)}` : `4px solid ${p.theme.color.sliderLeftColor}`};
+    p.color ? `4px solid ${p.sliderColor(p.theme)}` : `4px solid ${p.theme.color.sliderLeftColor}`};
   cursor: grab;
   &:focus {
-    background: ${p => (p.color ? p.color(p.theme) : p.theme.color.sliderLeftColor)};
+    background: ${p => (p.color ? p.sliderColor(p.theme) : p.theme.color.sliderLeftColor)};
   }
   ${p => p.variant === VARIANT_TYPES.SMALL && pressedThumbStyle}
 `;
@@ -79,7 +79,16 @@ const getValue = (percentage: number, min: number, max: number) =>
 const getLeft: getLeftFn = (percentage, variant) =>
   `calc(${percentage}% - ${variant === 'big' ? THUMB_BIG / 2 : THUMB_SMALL / 2}px)`;
 
-const Slider: FC<Props> = ({ onChange, value, max, min, step, color, theme, variant = 'big' }) => {
+const Slider: FC<Props> = ({
+  onChange,
+  value,
+  max,
+  min,
+  step,
+  sliderColor,
+  theme,
+  variant = 'big',
+}) => {
   const initialPercentage = getPercentage(value, min, max);
   const linearGradient: number = ((value - min) / (max - min)) * 100;
 
@@ -185,20 +194,20 @@ const Slider: FC<Props> = ({ onChange, value, max, min, step, color, theme, vari
 
   const gradient = {
     background: `linear-gradient(to right, ${
-      color ? color(theme) : theme.color.sliderLeftColor
+      sliderColor ? sliderColor(theme) : theme.color.sliderLeftColor
     } ${linearGradient}% , ${theme.color.sliderRightColor} ${linearGradient}%)`,
   };
   return (
-    <StyledSliderWrapper color={color} variant={variant}>
+    <StyledSliderWrapper sliderColor={sliderColor} variant={variant}>
       <StyledSlider
         ref={sliderRef}
         style={gradient}
         onClick={handleSliderClick}
-        color={color}
+        sliderColor={sliderColor}
         variant={variant}
       >
         <StyledThumb
-          color={color}
+          sliderColor={sliderColor}
           tabIndex={0}
           ref={thumbRef}
           onClick={handleThumbClick}
