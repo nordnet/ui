@@ -89,7 +89,6 @@ const getValue = (percentage: number, min: number, max: number) =>
   ((max - min) / 100) * percentage + min;
 
 const getLeft: getLeftFn = (percentage, variant) => {
-  console.log(percentage, 'plx');
   return `calc(${percentage}% - ${
     variant === 'big' ? `${THUMB_BIG / 2}px` : `${THUMB_SMALL / 2}px`
   })`;
