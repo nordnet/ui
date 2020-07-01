@@ -64,6 +64,7 @@ exports[`Storyshots Molecules | Slider Custom Colors 1`] = `
   <div
     className="c1"
     onClick={[Function]}
+    sliderColor={[Function]}
     style={
       Object {
         "background": "linear-gradient(to right, #00D200 50% , #EBEBE8 50%)",
@@ -81,6 +82,7 @@ exports[`Storyshots Molecules | Slider Custom Colors 1`] = `
       onMouseUp={[Function]}
       onTouchStart={[Function]}
       role="slider"
+      sliderColor={[Function]}
       style={
         Object {
           "left": "calc(50% - 15px)",
@@ -157,6 +159,7 @@ Array [
     <div
       className="c1"
       onClick={[Function]}
+      sliderColor={[Function]}
       style={
         Object {
           "background": "linear-gradient(to right, #AC135A 50% , #EBEBE8 50%)",
@@ -174,6 +177,7 @@ Array [
         onMouseUp={[Function]}
         onTouchStart={[Function]}
         role="slider"
+        sliderColor={[Function]}
         style={
           Object {
             "left": "calc(50% - 15px)",
@@ -267,6 +271,7 @@ Array [
     <div
       className="c1"
       onClick={[Function]}
+      sliderColor={[Function]}
       style={
         Object {
           "background": "linear-gradient(to right, #3A913F 100% , #EBEBE8 100%)",
@@ -284,6 +289,7 @@ Array [
         onMouseUp={[Function]}
         onTouchStart={[Function]}
         role="slider"
+        sliderColor={[Function]}
         style={
           Object {
             "left": "calc(100% - 15px)",
@@ -377,6 +383,7 @@ Array [
     <div
       className="c1"
       onClick={[Function]}
+      sliderColor={[Function]}
       style={
         Object {
           "background": "linear-gradient(to right, #009195 0% , #EBEBE8 0%)",
@@ -394,6 +401,7 @@ Array [
         onMouseUp={[Function]}
         onTouchStart={[Function]}
         role="slider"
+        sliderColor={[Function]}
         style={
           Object {
             "left": "calc(0% - 15px)",
@@ -487,6 +495,7 @@ Array [
     <div
       className="c1"
       onClick={[Function]}
+      sliderColor={[Function]}
       style={
         Object {
           "background": "linear-gradient(to right, #FF1900 50% , #EBEBE8 50%)",
@@ -504,6 +513,7 @@ Array [
         onMouseUp={[Function]}
         onTouchStart={[Function]}
         role="slider"
+        sliderColor={[Function]}
         style={
           Object {
             "left": "calc(50% - 15px)",
@@ -597,6 +607,7 @@ Array [
     <div
       className="c1"
       onClick={[Function]}
+      sliderColor={[Function]}
       style={
         Object {
           "background": "linear-gradient(to right, #FF2B83 50% , #EBEBE8 50%)",
@@ -614,6 +625,7 @@ Array [
         onMouseUp={[Function]}
         onTouchStart={[Function]}
         role="slider"
+        sliderColor={[Function]}
         style={
           Object {
             "left": "calc(50% - 10px)",

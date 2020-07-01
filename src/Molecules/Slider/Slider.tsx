@@ -35,7 +35,7 @@ const StyledSliderWrapper = styled('div').withConfig({
 `;
 
 const StyledSlider = styled('div').withConfig({
-  shouldForwardProp: prop => !['sliderColor', 'variant'].includes(prop),
+  shouldForwardProp: prop => !['variant'].includes(prop),
 })<SliderTypes>`
   max-width: 100%;
   height: ${p =>
@@ -50,7 +50,7 @@ const StyledSlider = styled('div').withConfig({
 `;
 
 const StyledThumb = styled('div').withConfig({
-  shouldForwardProp: prop => !['sliderColor', 'variant'].includes(prop),
+  shouldForwardProp: prop => !['variant'].includes(prop),
 })<SliderTypes>`
   box-sizing: border-box;
   display: flex;
