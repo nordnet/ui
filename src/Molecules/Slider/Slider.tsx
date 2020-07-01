@@ -19,7 +19,7 @@ const pressedThumbStyle = css<SliderTypes>`
 `;
 
 const StyledSliderWrapper = styled('div').withConfig({
-  shouldForwardProp: prop => !['sliderColor', 'variant'].includes(prop),
+  shouldForwardProp: prop => !['variant'].includes(prop),
 })<SliderTypes>`
   background: linear-gradient(
     to right,
