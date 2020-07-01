@@ -59,6 +59,7 @@ exports[`Storyshots Molecules | Slider Custom Colors 1`] = `
 
 <div
   className="c0"
+  sliderColor={[Function]}
 >
   <div
     className="c1"
@@ -151,6 +152,7 @@ Array [
 
 <div
     className="c0"
+    sliderColor={[Function]}
   >
     <div
       className="c1"
@@ -260,6 +262,7 @@ Array [
 
 <div
     className="c0"
+    sliderColor={[Function]}
   >
     <div
       className="c1"
@@ -369,6 +372,7 @@ Array [
 
 <div
     className="c0"
+    sliderColor={[Function]}
   >
     <div
       className="c1"
@@ -478,6 +482,7 @@ Array [
 
 <div
     className="c0"
+    sliderColor={[Function]}
   >
     <div
       className="c1"
@@ -587,6 +592,7 @@ Array [
 
 <div
     className="c0"
+    sliderColor={[Function]}
   >
     <div
       className="c1"
