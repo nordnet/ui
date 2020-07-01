@@ -13,8 +13,10 @@ const pressedThumbStyle = css<InternalSliderTypes>`
       const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : '';
       return `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
     }};
-    height: ${p => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}px` : `${THUMB_BIG}px`)};
-    width: ${p => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}px` : `${THUMB_BIG}px`)};
+    height: ${p =>
+      p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL - 4}px` : `${THUMB_BIG - 6}px`};
+    width: ${p =>
+      p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL - 4}px` : `${THUMB_BIG - 6}px`};
   }
 `;
 
@@ -26,8 +28,8 @@ const StyledSliderWrapper = styled('div')<InternalSliderTypes>`
   );
   height: ${p =>
     p.$variant === VARIANT_TYPES.SMALL
-      ? `${p.theme.spacing.unit(1)}`
-      : `${p.theme.spacing.unit(4)}`}px;
+      ? `${p.theme.spacing.unit(1)} px`
+      : `${p.theme.spacing.unit(3)} px`};
   max-width: 100%;
   width: 100%;
 `;
@@ -37,7 +39,7 @@ const StyledSlider = styled('div')<InternalSliderTypes>`
   height: ${p =>
     p.$variant === VARIANT_TYPES.SMALL
       ? `${p.theme.spacing.unit(1)}`
-      : `${p.theme.spacing.unit(4)}`}px;
+      : `${p.theme.spacing.unit(3)}`}px;
   position: relative;
   width: calc(
     100% - ${p => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}px` : `${THUMB_BIG}px`)}
