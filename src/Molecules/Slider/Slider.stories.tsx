@@ -26,7 +26,7 @@ export const Default = () => {
           onChange={handleChange}
           value={value}
           {...getSliderProps({ min: 0, max: 100, step: 1 })}
-          color={t => t.color.pill1}
+          sliderColor={t => t.color.pill1}
         />
         <Typography>
           <Number value={value} maximumDecimals={2} /> Kronor
@@ -49,7 +49,7 @@ export const MinimumValue = () => {
           onChange={handleChange}
           value={value}
           {...getSliderProps({ min: 0, max: 100, step: 1 })}
-          color={t => t.color.pill2}
+          sliderColor={t => t.color.pill2}
         />
         <Typography>
           <Number value={value} maximumDecimals={2} /> Kronor
@@ -72,7 +72,7 @@ export const MaximumValue = () => {
           onChange={handleChange}
           value={value}
           {...getSliderProps({ min: 0, max: 100, step: 1 })}
-          color={t => t.color.pill3}
+          sliderColor={t => t.color.pill3}
         />
         <Typography>
           <Number value={value} maximumDecimals={2} /> Kronor
@@ -95,7 +95,7 @@ export const NegativeToPositive = () => {
           onChange={handleChange}
           value={value}
           {...getSliderProps({ min: -50, max: 50, step: 1 })}
-          color={t => t.color.negative}
+          sliderColor={t => t.color.negative}
         />
         <Typography>
           <Number value={value} maximumDecimals={2} /> Kronor
@@ -118,7 +118,7 @@ export const CustomColors = () => {
           onChange={handleChange}
           value={value}
           {...getSliderProps({ min: 0, max: 100, step: 1 })}
-          color={t => t.color.positive}
+          sliderColor={t => t.color.positive}
         />
       </>
     );
@@ -138,7 +138,7 @@ export const SmallVariant = () => {
           onChange={handleChange}
           value={value}
           {...getSliderProps({ min: 0, max: 100, step: 1 })}
-          color={t => t.color.pill5}
+          sliderColor={t => t.color.pill5}
           variant="small"
         />
         <Typography>
