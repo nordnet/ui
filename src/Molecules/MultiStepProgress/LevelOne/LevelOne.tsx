@@ -1,9 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import Box from '../../../Atoms/Box';
 import Button from '../../Button';
 import Typography from '../../../Atoms/Typography';
-import { InternalProps, LevelOneComponent } from './LevelOne.types';
+import {
+  InternalProps,
+  LevelOneComponent,
+  InternalOLProps,
+  DefaultOrderedListComponent,
+} from './LevelOne.types';
 import { LevelTwo } from '../LevelTwo';
 import Status from '../Status';
 import {
@@ -14,8 +20,17 @@ import {
   STEP_NUMBER_SIZE,
   VERTICAL_PADDING,
 } from '../constants';
+import { Icon, Flexbox, Media } from '../../..';
 
-const OrderedList = styled.ol`
+const contentLeftPadding = HORIZONTAL_PADDING + STEP_NUMBER_SIZE + SPACE_TO_STEP_NUMBER;
+const contentLeftPaddingDesktop =
+  HORIZONTAL_PADDING_DESKTOP + STEP_NUMBER_SIZE + SPACE_TO_STEP_NUMBER;
+
+const StyledOrderedList = styled.ol<InternalOLProps>`
+  ${listReset}
+`;
+
+const StyledMobileOrderedList = styled.ol`
   ${listReset}
 `;
 
@@ -49,51 +64,55 @@ const StyledButton = styled(Button)`
   justify-content: flex-start;
 `;
 
-export const LevelOne: LevelOneComponent = ({
+const StyledMobileButton = styled(Button)`
+  justify-content: flex-start;
+
+  & > span {
+    width: 100%;
+  }
+`;
+
+const DefaultOrderedList: DefaultOrderedListComponent = ({
+  steps,
   onStepClick,
   onSubStepClick,
-  steps = [],
   titleDone,
   titleNotDone,
 }) => {
-  const contentLeftPadding = HORIZONTAL_PADDING + STEP_NUMBER_SIZE + SPACE_TO_STEP_NUMBER;
-  const contentLeftPaddingDesktop =
-    HORIZONTAL_PADDING_DESKTOP + STEP_NUMBER_SIZE + SPACE_TO_STEP_NUMBER;
-
   return (
-    <OrderedList>
-      {steps.map((step, i) => {
-        const { current, done, label, name, steps: substeps = [] } = step;
-        const number = i + 1;
+    <StyledOrderedList>
+      {steps &&
+        steps.map((step, i) => {
+          const { current, done, label, name, steps: substeps = [] } = step;
+          const number = i + 1;
 
-        return (
-          <ListItem key={label} $current={current}>
-            {current || done ? (
-              <StyledButton
-                onClick={() => onStepClick && onStepClick(name)}
-                variant="neutral"
-                fullWidth
-              >
-                <Typography type="primary" weight={current ? 'bold' : 'regular'}>
-                  <Content
-                    py={VERTICAL_PADDING}
-                    pr={HORIZONTAL_PADDING}
-                    pl={contentLeftPadding}
-                    sm={{ pl: contentLeftPaddingDesktop, pr: HORIZONTAL_PADDING_DESKTOP }}
-                  >
-                    <Status
-                      current={current}
-                      done={done}
-                      number={number}
-                      titleDone={titleDone}
-                      titleNotDone={titleNotDone}
-                    />
-                    {label}
-                  </Content>
-                </Typography>
-              </StyledButton>
-            ) : (
-              <>
+          return (
+            <ListItem key={label} $current={current}>
+              {current || done ? (
+                <StyledButton
+                  onClick={() => onStepClick && onStepClick(name)}
+                  variant="neutral"
+                  fullWidth
+                >
+                  <Typography type="primary" weight={current ? 'bold' : 'regular'}>
+                    <Content
+                      py={VERTICAL_PADDING}
+                      pr={HORIZONTAL_PADDING}
+                      pl={contentLeftPadding}
+                      sm={{ pl: contentLeftPaddingDesktop, pr: HORIZONTAL_PADDING_DESKTOP }}
+                    >
+                      <Status
+                        current={current}
+                        done={done}
+                        number={number}
+                        titleDone={titleDone}
+                        titleNotDone={titleNotDone}
+                      />
+                      {label}
+                    </Content>
+                  </Typography>
+                </StyledButton>
+              ) : (
                 <Typography color={t => t.color.disabledText} type="primary">
                   <Content
                     py={VERTICAL_PADDING}
@@ -111,19 +130,101 @@ export const LevelOne: LevelOneComponent = ({
                     {label}
                   </Content>
                 </Typography>
-              </>
-            )}
-            {substeps.length > 0 && current && (
-              <LevelTwo
-                onStepClick={onSubStepClick}
-                steps={substeps}
-                titleDone={titleDone}
-                titleNotDone={titleNotDone}
-              />
-            )}
-          </ListItem>
-        );
-      })}
-    </OrderedList>
+              )}
+              {substeps.length > 0 && current && (
+                <LevelTwo
+                  onStepClick={onSubStepClick}
+                  steps={substeps}
+                  titleDone={titleDone}
+                  titleNotDone={titleNotDone}
+                />
+              )}
+            </ListItem>
+          );
+        })}
+    </StyledOrderedList>
+  );
+};
+
+export const LevelOne: LevelOneComponent = ({
+  onStepClick,
+  onSubStepClick,
+  onMobileStepClick,
+  steps = [],
+  titleDone,
+  titleNotDone,
+  isInDrawer,
+}) => {
+  if (isInDrawer) {
+    return (
+      <DefaultOrderedList
+        steps={steps}
+        onStepClick={onStepClick}
+        onSubStepClick={onSubStepClick}
+        titleDone={titleDone}
+        titleNotDone={titleNotDone}
+      />
+    );
+  }
+
+  return (
+    <>
+      <Media query={t => t.media.greaterThan(t.breakpoints.md.size)}>
+        <DefaultOrderedList
+          steps={steps}
+          onStepClick={onStepClick}
+          onSubStepClick={onSubStepClick}
+          titleDone={titleDone}
+          titleNotDone={titleNotDone}
+        />
+      </Media>
+
+      <Media query={t => t.media.lessThan(t.breakpoints.md)}>
+        <StyledMobileOrderedList>
+          {steps &&
+            steps.map((step, i) => {
+              const { current, done, label } = step;
+              const number = i + 1;
+
+              return (
+                <ListItem key={label} $current={current}>
+                  {current && (
+                    <StyledMobileButton
+                      onClick={() => onMobileStepClick && onMobileStepClick()}
+                      variant="neutral"
+                      fullWidth
+                    >
+                      <Typography type="primary" weight={current ? 'bold' : 'regular'}>
+                        <Content
+                          py={VERTICAL_PADDING}
+                          pr={HORIZONTAL_PADDING}
+                          pl={contentLeftPadding}
+                          sm={{ pl: contentLeftPaddingDesktop, pr: HORIZONTAL_PADDING_DESKTOP }}
+                        >
+                          <Flexbox container justifyContent="space-between" alignItems="center">
+                            <Flexbox item>
+                              <Status
+                                current={current}
+                                done={done}
+                                number={number}
+                                titleDone={titleDone}
+                                titleNotDone={titleNotDone}
+                              />
+                              {label}
+                            </Flexbox>
+                            <Flexbox item>
+                              <Icon.ChevronDown />
+                            </Flexbox>
+                          </Flexbox>
+                        </Content>
+                      </Typography>
+                    </StyledMobileButton>
+                  )}
+                </ListItem>
+              );
+            })}
+        </StyledMobileOrderedList>
+      </Media>
+    </>
   );
 };

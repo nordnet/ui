@@ -6,7 +6,7 @@ import { MultiStepProgress } from './MultiStepProgress';
 const mockedSteps = [
   { current: false, done: true, label: 'Investment objective', name: 'investment_objective' },
   {
-    current: false,
+    current: true,
     done: false,
     label: 'Time and risk',
     name: 'time_and_risk',

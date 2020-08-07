@@ -6,6 +6,11 @@ export type InternalProps = {
   $current?: boolean;
 };
 
+export type InternalOLProps = {
+  $isDesktop?: boolean;
+  $isInDrawer?: boolean;
+};
+
 export type StepLevelOneProps = {
   steps?: StepLevelTwoProps[];
 } & StepBaseProps;
@@ -13,7 +18,10 @@ export type StepLevelOneProps = {
 type Props = {
   onStepClick?: (stepName: string) => void;
   onSubStepClick?: (stepName: string) => void;
+  onMobileStepClick?: () => void;
   steps?: StepLevelOneProps[];
+  isInDrawer?: boolean;
 };
 
+export type DefaultOrderedListComponent = React.FC<Props & A11yProps>;
 export type LevelOneComponent = React.FC<Props & A11yProps>;

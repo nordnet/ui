@@ -17,6 +17,7 @@ export type MultiStepProgressProps = {
   titleDone?: string;
   /** Visible on non completed steps */
   titleNotDone?: string;
+  mobileDrawerTitle?: string;
 };
 
 export type MultiStepProgressComponent = React.FC<MultiStepProgressProps>;
