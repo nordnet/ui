@@ -87,6 +87,12 @@ Array [
   fill: #FFFFFF;
 }
 
+.c37 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
 .c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -721,14 +727,15 @@ Array [
                       >
                         <svg
                           aria-hidden="true"
-                          className="c36"
+                          className="c36 c37"
+                          direction="down"
                           focusable="false"
                           preserveAspectRatio="xMidYMid meet"
                           role="presentation"
-                          viewBox="0 0 24 24"
+                          viewBox="0 0 16 16"
                         >
                           <polygon
-                            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                            points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
                           />
                         </svg>
                       </div>
@@ -844,6 +851,12 @@ Array [
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
+}
+
+.c33 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .c5 {
@@ -1379,14 +1392,15 @@ Array [
                       >
                         <svg
                           aria-hidden="true"
-                          className="c32"
+                          className="c32 c33"
+                          direction="down"
                           focusable="false"
                           preserveAspectRatio="xMidYMid meet"
                           role="presentation"
-                          viewBox="0 0 24 24"
+                          viewBox="0 0 16 16"
                         >
                           <polygon
-                            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                            points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
                           />
                         </svg>
                       </div>

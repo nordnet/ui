@@ -238,7 +238,7 @@ export const LevelOne: LevelOneComponent = ({
                               {label}
                             </Flexbox>
                             <Flexbox item>
-                              <Icon.ChevronDown />
+                              <Icon.ThinChevron direction="down" />
                             </Flexbox>
                           </Flexbox>
                         </Content>
