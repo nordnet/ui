@@ -1,4 +1,4 @@
-import { StepLevelTwoProps } from '../LevelTwo/LevelTwo.types';
+import { StepSubLevelProps } from '../SubLevel/SubLevel.types';
 import { A11yProps } from '../Status/Status.types';
 import { StepBaseProps } from '../MultiStepProgress.types';
 
@@ -12,17 +12,17 @@ export type InternalOLProps = {
   $isInDrawer?: boolean;
 };
 
-export type StepLevelOneProps = {
-  steps?: StepLevelTwoProps[];
+export type StepTopLevelProps = {
+  steps?: StepSubLevelProps[];
 } & StepBaseProps;
 
 type Props = {
   onStepClick?: (stepName: string) => void;
   onSubStepClick?: (stepName: string) => void;
   onMobileStepClick?: () => void;
-  steps?: StepLevelOneProps[];
+  steps?: StepTopLevelProps[];
   isInDrawer?: boolean;
 };
 
 export type ProgressLevelsComponent = React.FC<Props & A11yProps>;
-export type LevelOneComponent = React.FC<Props & A11yProps>;
+export type TopLevelComponent = React.FC<Props & A11yProps>;

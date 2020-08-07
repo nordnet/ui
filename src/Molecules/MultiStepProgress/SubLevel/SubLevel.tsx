@@ -4,7 +4,7 @@ import Typography from '../../../Atoms/Typography';
 import Box from '../../../Atoms/Box';
 import Button from '../../Button';
 import Status from '../Status';
-import { LevelTwoComponent } from './LevelTwo.types';
+import { SubLevelComponent } from './SubLevel.types';
 import {
   listReset,
   HORIZONTAL_PADDING,
@@ -27,7 +27,7 @@ const ListItem = styled.li`
   }
 `;
 
-export const LevelTwo: LevelTwoComponent = ({
+export const SubLevel: SubLevelComponent = ({
   onStepClick,
   steps = [],
   titleDone,

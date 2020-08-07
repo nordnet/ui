@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import Card from '../../Atoms/Card';
-import { LevelOne } from './LevelOne';
+import { TopLevel } from './TopLevel';
 import { MultiStepProgressComponent } from './MultiStepProgress.types';
 import { Drawer, Media, Flexbox, Typography } from '../..';
 
@@ -35,7 +35,7 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
     <>
       <Card>
         <div role="group" aria-label={title}>
-          <LevelOne
+          <TopLevel
             onStepClick={onStepClick}
             onSubStepClick={onSubStepClick}
             steps={steps}
@@ -59,7 +59,7 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
           open={open}
         >
           <div role="group" aria-label={title}>
-            <LevelOne
+            <TopLevel
               onStepClick={onStepClick}
               onSubStepClick={onSubStepClick}
               steps={steps}

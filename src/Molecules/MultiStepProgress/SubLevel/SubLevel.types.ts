@@ -1,11 +1,11 @@
 import { StepBaseProps } from '../MultiStepProgress.types';
 import { A11yProps } from '../Status/Status.types';
 
-export type StepLevelTwoProps = StepBaseProps;
+export type StepSubLevelProps = StepBaseProps;
 
 export type Props = {
   onStepClick?: (stepName: string) => void;
-  steps: StepLevelTwoProps[];
+  steps: StepSubLevelProps[];
 };
 
-export type LevelTwoComponent = React.FC<Props & A11yProps>;
+export type SubLevelComponent = React.FC<Props & A11yProps>;

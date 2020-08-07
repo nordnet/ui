@@ -6,11 +6,11 @@ import Button from '../../Button';
 import Typography from '../../../Atoms/Typography';
 import {
   InternalProps,
-  LevelOneComponent,
+  TopLevelComponent,
   InternalOLProps,
   ProgressLevelsComponent,
-} from './LevelOne.types';
-import { LevelTwo } from '../LevelTwo';
+} from './TopLevel.types';
+import { SubLevel } from '../SubLevel';
 import Status from '../Status';
 import {
   listReset,
@@ -156,7 +156,7 @@ const ProgressLevels: ProgressLevelsComponent = ({
                 </Typography>
               )}
               {substeps.length > 0 && current && (
-                <LevelTwo
+                <SubLevel
                   onStepClick={onSubStepClick}
                   steps={substeps}
                   titleDone={titleDone}
@@ -170,7 +170,7 @@ const ProgressLevels: ProgressLevelsComponent = ({
   );
 };
 
-export const LevelOne: LevelOneComponent = ({
+export const TopLevel: TopLevelComponent = ({
   onStepClick,
   onSubStepClick,
   onMobileStepClick,

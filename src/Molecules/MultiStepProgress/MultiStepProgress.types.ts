@@ -1,4 +1,4 @@
-import { StepLevelOneProps } from './LevelOne/LevelOne.types';
+import { StepTopLevelProps } from './TopLevel/TopLevel.types';
 
 export type StepBaseProps = {
   current?: boolean;
@@ -10,7 +10,7 @@ export type StepBaseProps = {
 export type MultiStepProgressProps = {
   onStepClick?: (stepName: string) => void;
   onSubStepClick?: (stepName: string) => void;
-  steps?: StepLevelOneProps[];
+  steps?: StepTopLevelProps[];
   /** Used to label the component */
   title?: string;
   /** Visible on completed steps */
