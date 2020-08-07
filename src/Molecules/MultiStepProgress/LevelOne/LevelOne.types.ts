@@ -5,7 +5,6 @@ import { StepBaseProps } from '../MultiStepProgress.types';
 export type InternalProps = {
   $current?: boolean;
   $isInDrawer?: boolean;
-  $isMobile?: boolean;
 };
 
 export type InternalOLProps = {
@@ -25,5 +24,5 @@ type Props = {
   isInDrawer?: boolean;
 };
 
-export type DefaultOrderedListComponent = React.FC<Props & A11yProps>;
+export type ProgressLevelsComponent = React.FC<Props & A11yProps>;
 export type LevelOneComponent = React.FC<Props & A11yProps>;

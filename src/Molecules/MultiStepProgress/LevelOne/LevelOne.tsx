@@ -8,7 +8,7 @@ import {
   InternalProps,
   LevelOneComponent,
   InternalOLProps,
-  DefaultOrderedListComponent,
+  ProgressLevelsComponent,
 } from './LevelOne.types';
 import { LevelTwo } from '../LevelTwo';
 import Status from '../Status';
@@ -30,7 +30,7 @@ const StyledOrderedList = styled.ol<InternalOLProps>`
   ${listReset}
 `;
 
-const StyledMobileOrderedList = styled.ol`
+const MobileProgressLevels = styled.ol`
   ${listReset}
 `;
 
@@ -95,7 +95,7 @@ const StyledMobileButton = styled(Button)`
   }
 `;
 
-const DefaultOrderedList: DefaultOrderedListComponent = ({
+const ProgressLevels: ProgressLevelsComponent = ({
   steps,
   onStepClick,
   onSubStepClick,
@@ -181,7 +181,7 @@ export const LevelOne: LevelOneComponent = ({
 }) => {
   if (isInDrawer) {
     return (
-      <DefaultOrderedList
+      <ProgressLevels
         steps={steps}
         onStepClick={onStepClick}
         onSubStepClick={onSubStepClick}
@@ -195,7 +195,7 @@ export const LevelOne: LevelOneComponent = ({
   return (
     <>
       <Media query={t => t.media.greaterThan(t.breakpoints.md.size)}>
-        <DefaultOrderedList
+        <ProgressLevels
           steps={steps}
           onStepClick={onStepClick}
           onSubStepClick={onSubStepClick}
@@ -205,7 +205,7 @@ export const LevelOne: LevelOneComponent = ({
       </Media>
 
       <Media query={t => t.media.lessThan(t.breakpoints.md)}>
-        <StyledMobileOrderedList>
+        <MobileProgressLevels>
           {steps &&
             steps.map((step, i) => {
               const { current, done, label } = step;
@@ -248,7 +248,7 @@ export const LevelOne: LevelOneComponent = ({
                 </MobileListItem>
               );
             })}
-        </StyledMobileOrderedList>
+        </MobileProgressLevels>
       </Media>
     </>
   );
