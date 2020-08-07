@@ -52,7 +52,30 @@ const ListItem = styled.li<InternalProps>`
   }
 
   & + & {
-    border-top: ${p => p.theme.spacing.unit(2)}px solid ${p => p.theme.color.divider};
+    border-top: ${p => (p.$isInDrawer ? 1 : p.theme.spacing.unit(2))}px solid
+      ${p => p.theme.color.divider};
+  }
+`;
+
+const MobileListItem = styled.li<InternalProps>`
+  display: block;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    background: ${p => p.theme.color.cta};
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.16s ease-out;
+    opacity: ${p => (p.$current ? 1 : 0)};
+  }
+
+  & + & {
+    border-top: 1px solid ${p => p.theme.color.divider};
   }
 `;
 
@@ -78,6 +101,7 @@ const DefaultOrderedList: DefaultOrderedListComponent = ({
   onSubStepClick,
   titleDone,
   titleNotDone,
+  isInDrawer,
 }) => {
   return (
     <StyledOrderedList>
@@ -87,7 +111,7 @@ const DefaultOrderedList: DefaultOrderedListComponent = ({
           const number = i + 1;
 
           return (
-            <ListItem key={label} $current={current}>
+            <ListItem key={label} $current={current} $isInDrawer={isInDrawer}>
               {current || done ? (
                 <StyledButton
                   onClick={() => onStepClick && onStepClick(name)}
@@ -153,7 +177,7 @@ export const LevelOne: LevelOneComponent = ({
   steps = [],
   titleDone,
   titleNotDone,
-  isInDrawer,
+  isInDrawer = false,
 }) => {
   if (isInDrawer) {
     return (
@@ -163,6 +187,7 @@ export const LevelOne: LevelOneComponent = ({
         onSubStepClick={onSubStepClick}
         titleDone={titleDone}
         titleNotDone={titleNotDone}
+        isInDrawer
       />
     );
   }
@@ -187,7 +212,7 @@ export const LevelOne: LevelOneComponent = ({
               const number = i + 1;
 
               return (
-                <ListItem key={label} $current={current}>
+                <MobileListItem key={label} $current={current}>
                   {current && (
                     <StyledMobileButton
                       onClick={() => onMobileStepClick && onMobileStepClick()}
@@ -220,7 +245,7 @@ export const LevelOne: LevelOneComponent = ({
                       </Typography>
                     </StyledMobileButton>
                   )}
-                </ListItem>
+                </MobileListItem>
               );
             })}
         </StyledMobileOrderedList>

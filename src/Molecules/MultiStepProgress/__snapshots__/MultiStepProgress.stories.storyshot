@@ -1,14 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Multi Step Progress Basic Multi Step Progress 1`] = `
-.c8 {
+Array [
+  .c9 {
   padding-left: 44px;
   padding-top: 12px;
   padding-right: 12px;
   padding-bottom: 12px;
 }
 
-.c16 {
+.c22 {
+  padding-left: 44px;
+  padding-right: 12px;
+}
+
+.c26 {
   padding-left: 44px;
   padding-top: 12px;
   padding-right: 12px;
@@ -20,7 +26,27 @@ exports[`Storyshots Molecules | Multi Step Progress Basic Multi Step Progress 1`
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c10 {
+.c34 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c35 {
+  box-sizing: border-box;
+}
+
+.c11 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -29,7 +55,7 @@ exports[`Storyshots Molecules | Multi Step Progress Basic Multi Step Progress 1`
   clip: rect(1px,1px,1px,1px);
 }
 
-.c13 {
+.c14 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -43,365 +69,52 @@ exports[`Storyshots Molecules | Multi Step Progress Basic Multi Step Progress 1`
   display: block;
 }
 
-.c14 {
+.c36 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c15 {
   fill: #FFFFFF;
 }
 
-.c6 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c11 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c15 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #A0A09B;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c4 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c12 {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-}
-
-.c17 {
-  width: 24px;
-  height: 24px;
-  background-color: #EBEBE8;
-  color: #A0A09B;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c1 {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c3 {
-  display: block;
-  position: relative;
-}
-
-.c3::before {
-  content: '';
-  display: block;
-  background: #0046FF;
-  width: 2px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transition: opacity 0.16s ease-out;
-  transition: opacity 0.16s ease-out;
-  opacity: 0;
-}
-
-.c3 + .c2 {
-  border-top: 8px solid #EBEBE8;
-}
-
-.c9 {
-  position: relative;
-}
-
-.c5 {
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-@media (min-width:760px) {
-  .c8 {
-    padding-left: 52px;
-    padding-right: 20px;
-  }
-}
-
-@media (min-width:760px) {
-  .c16 {
-    padding-left: 52px;
-  }
-}
-
-@media (min-width:760px) {
-  .c12 {
-    left: 20px;
-  }
-}
-
-<div
-  className="c0"
->
-  <div
-    aria-label="Progress"
-    role="group"
-  >
-    <ol
-      className="c1"
-    >
-      <li
-        className="c2 c3"
-      >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c4 c5"
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c6"
-          >
-            <span
-              className="c7"
-            >
-              <div
-                className="c8 c9"
-              >
-                <div
-                  className="c10"
-                >
-                  Completed
-                </div>
-                <span
-                  aria-hidden={true}
-                  className="c11 c12"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="c13"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
-                    />
-                    <polygon
-                      className="c14"
-                      points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
-                    />
-                  </svg>
-                </span>
-                Investment objective
-              </div>
-            </span>
-          </span>
-        </button>
-      </li>
-      <li
-        className="c2 c3"
-      >
-        <span
-          className="c15"
-        >
-          <div
-            className="c16 c9"
-          >
-            <div
-              className="c10"
-            >
-              Not completed
-            </div>
-            <span
-              aria-hidden={true}
-              className="c11 c12"
-            >
-              <span
-                className="c17"
-              >
-                2
-              </span>
-            </span>
-            Time and risk
-          </div>
-        </span>
-      </li>
-      <li
-        className="c2 c3"
-      >
-        <span
-          className="c15"
-        >
-          <div
-            className="c16 c9"
-          >
-            <div
-              className="c10"
-            >
-              Not completed
-            </div>
-            <span
-              aria-hidden={true}
-              className="c11 c12"
-            >
-              <span
-                className="c17"
-              >
-                3
-              </span>
-            </span>
-            Allocations
-          </div>
-        </span>
-      </li>
-    </ol>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules | Multi Step Progress Not Started Multi Step Progress 1`] = `
-.c5 {
-  padding-left: 44px;
-  padding-top: 12px;
-  padding-right: 12px;
-  padding-bottom: 12px;
-}
-
-.c16 {
-  padding-left: 44px;
-  padding-top: 12px;
-  padding-right: 12px;
-  padding-bottom: 12px;
-}
-
-.c21 {
-  padding-left: 44px;
-  padding-right: 12px;
-}
-
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c7 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #A0A09B;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.c14 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
+  color: #282823;
   margin: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c17 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -410,7 +123,7 @@ exports[`Storyshots Molecules | Multi Step Progress Not Started Multi Step Progr
   line-height: 1.5;
 }
 
-.c22 {
+.c24 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -419,7 +132,16 @@ exports[`Storyshots Molecules | Multi Step Progress Not Started Multi Step Progr
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c25 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -449,44 +171,37 @@ exports[`Storyshots Molecules | Multi Step Progress Not Started Multi Step Progr
   cursor: pointer;
 }
 
-.c12,
-.c12[type='button'],
-.c12[type='reset'],
-.c12[type='submit'] {
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c12::-moz-focus-inner,
-.c12[type='button']::-moz-focus-inner,
-.c12[type='reset']::-moz-focus-inner,
-.c12[type='submit']::-moz-focus-inner {
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c12:-moz-focusring,
-.c12[type='button']:-moz-focusring,
-.c12[type='reset']:-moz-focusring,
-.c12[type='submit']:-moz-focusring {
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c9 {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-}
-
-.c10 {
-  width: 24px;
-  height: 24px;
-  background-color: #EBEBE8;
-  color: #A0A09B;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+.c23 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -495,9 +210,47 @@ exports[`Storyshots Molecules | Multi Step Progress Not Started Multi Step Progr
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
-.c17 {
+.c23,
+.c23[type='button'],
+.c23[type='reset'],
+.c23[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c23::-moz-focus-inner,
+.c23[type='button']::-moz-focus-inner,
+.c23[type='reset']::-moz-focus-inner,
+.c23[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c23:-moz-focusring,
+.c23[type='button']:-moz-focusring,
+.c23[type='reset']:-moz-focusring,
+.c23[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c13 {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.c18 {
   width: 24px;
   height: 24px;
   background-color: #0046FF;
@@ -517,33 +270,59 @@ exports[`Storyshots Molecules | Multi Step Progress Not Started Multi Step Progr
   justify-content: center;
 }
 
-.c18 {
+.c27 {
+  width: 24px;
+  height: 24px;
+  background-color: #EBEBE8;
+  color: #A0A09B;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c19 {
   list-style: none;
   margin: 0;
   padding: 0;
   padding-bottom: 12px;
 }
 
-.c20 {
+.c21 {
   display: block;
 }
 
-.c20 + .c19 {
+.c21 + .c20 {
   padding-top: 8px;
 }
 
-.c1 {
+.c2 {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.c3 {
+.c29 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c4 {
   display: block;
   position: relative;
 }
 
-.c3::before {
+.c4::before {
   content: '';
   display: block;
   background: #0046FF;
@@ -557,16 +336,16 @@ exports[`Storyshots Molecules | Multi Step Progress Not Started Multi Step Progr
   opacity: 0;
 }
 
-.c3 + .c2 {
+.c4 + .c3 {
   border-top: 8px solid #EBEBE8;
 }
 
-.c11 {
+.c16 {
   display: block;
   position: relative;
 }
 
-.c11::before {
+.c16::before {
   content: '';
   display: block;
   background: #0046FF;
@@ -580,205 +359,1078 @@ exports[`Storyshots Molecules | Multi Step Progress Not Started Multi Step Progr
   opacity: 1;
 }
 
-.c11 + .c2 {
+.c16 + .c3 {
   border-top: 8px solid #EBEBE8;
 }
 
-.c6 {
+.c31 {
+  display: block;
   position: relative;
 }
 
-.c13 {
+.c31::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 0;
+}
+
+.c31 + .c30 {
+  border-top: 1px solid #EBEBE8;
+}
+
+.c32 {
+  display: block;
+  position: relative;
+}
+
+.c32::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 1;
+}
+
+.c32 + .c30 {
+  border-top: 1px solid #EBEBE8;
+}
+
+.c10 {
+  position: relative;
+}
+
+.c6 {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
-@media (min-width:760px) {
-  .c5 {
-    padding-left: 52px;
-  }
+.c33 {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
-@media (min-width:760px) {
-  .c16 {
-    padding-left: 52px;
-    padding-right: 20px;
-  }
-}
-
-@media (min-width:760px) {
-  .c21 {
-    padding-left: 52px;
-    padding-right: 20px;
-  }
+.c33 > span {
+  width: 100%;
 }
 
 @media (min-width:760px) {
   .c9 {
+    padding-left: 52px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:760px) {
+  .c22 {
+    padding-left: 52px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:760px) {
+  .c26 {
+    padding-left: 52px;
+  }
+}
+
+@media not all and (min-width:976px) {
+  .c1 {
+    display: none;
+  }
+}
+
+@media not all and (max-width:975px) {
+  .c28 {
+    display: none;
+  }
+}
+
+@media (min-width:760px) {
+  .c13 {
     left: 20px;
   }
 }
 
 <div
-  className="c0"
->
-  <div
-    aria-label="Progress"
-    role="group"
+    className="c0"
   >
-    <ol
-      className="c1"
+    <div
+      aria-label="Progress"
+      role="group"
     >
-      <li
-        className="c2 c3"
+      <div
+        className="c1"
       >
-        <span
-          className="c4"
+        <ol
+          className="c2"
         >
-          <div
-            className="c5 c6"
+          <li
+            className="c3 c4"
           >
-            <div
-              className="c7"
-            >
-              Not completed
-            </div>
-            <span
-              aria-hidden={true}
-              className="c8 c9"
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c5 c6"
+              onClick={[Function]}
+              type="button"
             >
               <span
-                className="c10"
-              >
-                1
-              </span>
-            </span>
-            Investment objective
-          </div>
-        </span>
-      </li>
-      <li
-        className="c2 c11"
-      >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c12 c13"
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c14"
-          >
-            <span
-              className="c15"
-            >
-              <div
-                className="c16 c6"
+                className="c7"
               >
                 <span
-                  aria-hidden={true}
-                  className="c8 c9"
+                  className="c8"
+                >
+                  <div
+                    className="c9 c10"
+                  >
+                    <div
+                      className="c11"
+                    >
+                      Completed
+                    </div>
+                    <span
+                      aria-hidden={true}
+                      className="c12 c13"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="c14"
+                        focusable="false"
+                        preserveAspectRatio="xMidYMid meet"
+                        role="presentation"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+                        />
+                        <polygon
+                          className="c15"
+                          points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
+                        />
+                      </svg>
+                    </span>
+                    Investment objective
+                  </div>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li
+            className="c3 c16"
+          >
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c5 c6"
+              onClick={[Function]}
+              type="button"
+            >
+              <span
+                className="c7"
+              >
+                <span
+                  className="c17"
+                >
+                  <div
+                    className="c9 c10"
+                  >
+                    <span
+                      aria-hidden={true}
+                      className="c12 c13"
+                    >
+                      <span
+                        className="c18"
+                      >
+                        2
+                      </span>
+                    </span>
+                    Time and risk
+                  </div>
+                </span>
+              </span>
+            </button>
+            <ol
+              className="c19"
+            >
+              <li
+                className="c20 c21"
+              >
+                <div
+                  className="c22"
+                >
+                  <button
+                    className="NormalizedButton__Button-ey7f5x-0 c23"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="c7"
+                    >
+                      <span
+                        className="c24"
+                      >
+                        <div
+                          className="c11"
+                        >
+                          Completed
+                        </div>
+                        Investment period
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                className="c20 c21"
+              >
+                <div
+                  className="c22"
+                >
+                  <button
+                    className="NormalizedButton__Button-ey7f5x-0 c23"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="c7"
+                    >
+                      <span
+                        className="c12"
+                      >
+                        <div
+                          className="c11"
+                        >
+                          Not completed
+                        </div>
+                        Frequency
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                className="c20 c21"
+              >
+                <div
+                  className="c22"
                 >
                   <span
-                    className="c17"
+                    className="c24"
                   >
-                    2
+                    <div
+                      className="c11"
+                    >
+                      Not completed
+                    </div>
+                    Amount
+                  </span>
+                </div>
+              </li>
+            </ol>
+          </li>
+          <li
+            className="c3 c4"
+          >
+            <span
+              className="c25"
+            >
+              <div
+                className="c26 c10"
+              >
+                <div
+                  className="c11"
+                >
+                  Not completed
+                </div>
+                <span
+                  aria-hidden={true}
+                  className="c12 c13"
+                >
+                  <span
+                    className="c27"
+                  >
+                    3
                   </span>
                 </span>
-                Time and risk
+                Allocations
               </div>
             </span>
-          </span>
-        </button>
-        <ol
-          className="c18"
-        >
-          <li
-            className="c19 c20"
-          >
-            <div
-              className="c21"
-            >
-              <span
-                className="c22"
-              >
-                <div
-                  className="c7"
-                >
-                  Not completed
-                </div>
-                Investment period
-              </span>
-            </div>
-          </li>
-          <li
-            className="c19 c20"
-          >
-            <div
-              className="c21"
-            >
-              <span
-                className="c22"
-              >
-                <div
-                  className="c7"
-                >
-                  Not completed
-                </div>
-                Frequency
-              </span>
-            </div>
-          </li>
-          <li
-            className="c19 c20"
-          >
-            <div
-              className="c21"
-            >
-              <span
-                className="c22"
-              >
-                <div
-                  className="c7"
-                >
-                  Not completed
-                </div>
-                Amount
-              </span>
-            </div>
           </li>
         </ol>
-      </li>
-      <li
-        className="c2 c3"
+      </div>
+      <div
+        className="c28"
       >
-        <span
-          className="c4"
+        <ol
+          className="c29"
         >
-          <div
-            className="c5 c6"
+          <li
+            className="c30 c31"
+          />
+          <li
+            className="c30 c32"
           >
-            <div
-              className="c7"
-            >
-              Not completed
-            </div>
-            <span
-              aria-hidden={true}
-              className="c8 c9"
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c5 c33"
+              onClick={[Function]}
+              type="button"
             >
               <span
-                className="c10"
+                className="c7"
               >
-                3
+                <span
+                  className="c17"
+                >
+                  <div
+                    className="c9 c10"
+                  >
+                    <div
+                      className="c34"
+                    >
+                      <div
+                        className="c35"
+                      >
+                        <span
+                          aria-hidden={true}
+                          className="c12 c13"
+                        >
+                          <span
+                            className="c18"
+                          >
+                            2
+                          </span>
+                        </span>
+                        Time and risk
+                      </div>
+                      <div
+                        className="c35"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="c36"
+                          focusable="false"
+                          preserveAspectRatio="xMidYMid meet"
+                          role="presentation"
+                          viewBox="0 0 24 24"
+                        >
+                          <polygon
+                            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </span>
               </span>
+            </button>
+          </li>
+          <li
+            className="c30 c31"
+          />
+        </ol>
+      </div>
+    </div>
+  </div>,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  />,
+]
+`;
+
+exports[`Storyshots Molecules | Multi Step Progress Not Started Multi Step Progress 1`] = `
+Array [
+  .c6 {
+  padding-left: 44px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+}
+
+.c17 {
+  padding-left: 44px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+}
+
+.c22 {
+  padding-left: 44px;
+  padding-right: 12px;
+}
+
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c30 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c31 {
+  box-sizing: border-box;
+}
+
+.c8 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c32 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c15 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c23 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c13,
+.c13[type='button'],
+.c13[type='reset'],
+.c13[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c13::-moz-focus-inner,
+.c13[type='button']::-moz-focus-inner,
+.c13[type='reset']::-moz-focus-inner,
+.c13[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c13:-moz-focusring,
+.c13[type='button']:-moz-focusring,
+.c13[type='reset']:-moz-focusring,
+.c13[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c10 {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.c11 {
+  width: 24px;
+  height: 24px;
+  background-color: #EBEBE8;
+  color: #A0A09B;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c18 {
+  width: 24px;
+  height: 24px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c19 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 12px;
+}
+
+.c21 {
+  display: block;
+}
+
+.c21 + .c20 {
+  padding-top: 8px;
+}
+
+.c2 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c25 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c4 {
+  display: block;
+  position: relative;
+}
+
+.c4::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 0;
+}
+
+.c4 + .c3 {
+  border-top: 8px solid #EBEBE8;
+}
+
+.c12 {
+  display: block;
+  position: relative;
+}
+
+.c12::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 1;
+}
+
+.c12 + .c3 {
+  border-top: 8px solid #EBEBE8;
+}
+
+.c27 {
+  display: block;
+  position: relative;
+}
+
+.c27::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 0;
+}
+
+.c27 + .c26 {
+  border-top: 1px solid #EBEBE8;
+}
+
+.c28 {
+  display: block;
+  position: relative;
+}
+
+.c28::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 1;
+}
+
+.c28 + .c26 {
+  border-top: 1px solid #EBEBE8;
+}
+
+.c7 {
+  position: relative;
+}
+
+.c14 {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c29 {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c29 > span {
+  width: 100%;
+}
+
+@media (min-width:760px) {
+  .c6 {
+    padding-left: 52px;
+  }
+}
+
+@media (min-width:760px) {
+  .c17 {
+    padding-left: 52px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:760px) {
+  .c22 {
+    padding-left: 52px;
+    padding-right: 20px;
+  }
+}
+
+@media not all and (min-width:976px) {
+  .c1 {
+    display: none;
+  }
+}
+
+@media not all and (max-width:975px) {
+  .c24 {
+    display: none;
+  }
+}
+
+@media (min-width:760px) {
+  .c10 {
+    left: 20px;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <div
+      aria-label="Progress"
+      role="group"
+    >
+      <div
+        className="c1"
+      >
+        <ol
+          className="c2"
+        >
+          <li
+            className="c3 c4"
+          >
+            <span
+              className="c5"
+            >
+              <div
+                className="c6 c7"
+              >
+                <div
+                  className="c8"
+                >
+                  Not completed
+                </div>
+                <span
+                  aria-hidden={true}
+                  className="c9 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    1
+                  </span>
+                </span>
+                Investment objective
+              </div>
             </span>
-            Allocations
-          </div>
-        </span>
-      </li>
-    </ol>
-  </div>
-</div>
+          </li>
+          <li
+            className="c3 c12"
+          >
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c13 c14"
+              onClick={[Function]}
+              type="button"
+            >
+              <span
+                className="c15"
+              >
+                <span
+                  className="c16"
+                >
+                  <div
+                    className="c17 c7"
+                  >
+                    <span
+                      aria-hidden={true}
+                      className="c9 c10"
+                    >
+                      <span
+                        className="c18"
+                      >
+                        2
+                      </span>
+                    </span>
+                    Time and risk
+                  </div>
+                </span>
+              </span>
+            </button>
+            <ol
+              className="c19"
+            >
+              <li
+                className="c20 c21"
+              >
+                <div
+                  className="c22"
+                >
+                  <span
+                    className="c23"
+                  >
+                    <div
+                      className="c8"
+                    >
+                      Not completed
+                    </div>
+                    Investment period
+                  </span>
+                </div>
+              </li>
+              <li
+                className="c20 c21"
+              >
+                <div
+                  className="c22"
+                >
+                  <span
+                    className="c23"
+                  >
+                    <div
+                      className="c8"
+                    >
+                      Not completed
+                    </div>
+                    Frequency
+                  </span>
+                </div>
+              </li>
+              <li
+                className="c20 c21"
+              >
+                <div
+                  className="c22"
+                >
+                  <span
+                    className="c23"
+                  >
+                    <div
+                      className="c8"
+                    >
+                      Not completed
+                    </div>
+                    Amount
+                  </span>
+                </div>
+              </li>
+            </ol>
+          </li>
+          <li
+            className="c3 c4"
+          >
+            <span
+              className="c5"
+            >
+              <div
+                className="c6 c7"
+              >
+                <div
+                  className="c8"
+                >
+                  Not completed
+                </div>
+                <span
+                  aria-hidden={true}
+                  className="c9 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    3
+                  </span>
+                </span>
+                Allocations
+              </div>
+            </span>
+          </li>
+        </ol>
+      </div>
+      <div
+        className="c24"
+      >
+        <ol
+          className="c25"
+        >
+          <li
+            className="c26 c27"
+          />
+          <li
+            className="c26 c28"
+          >
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c13 c29"
+              onClick={[Function]}
+              type="button"
+            >
+              <span
+                className="c15"
+              >
+                <span
+                  className="c16"
+                >
+                  <div
+                    className="c17 c7"
+                  >
+                    <div
+                      className="c30"
+                    >
+                      <div
+                        className="c31"
+                      >
+                        <span
+                          aria-hidden={true}
+                          className="c9 c10"
+                        >
+                          <span
+                            className="c18"
+                          >
+                            2
+                          </span>
+                        </span>
+                        Time and risk
+                      </div>
+                      <div
+                        className="c31"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="c32"
+                          focusable="false"
+                          preserveAspectRatio="xMidYMid meet"
+                          role="presentation"
+                          viewBox="0 0 24 24"
+                        >
+                          <polygon
+                            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li
+            className="c26 c27"
+          />
+        </ol>
+      </div>
+    </div>
+  </div>,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  />,
+]
 `;

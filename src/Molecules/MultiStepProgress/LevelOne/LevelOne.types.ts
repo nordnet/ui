@@ -4,6 +4,8 @@ import { StepBaseProps } from '../MultiStepProgress.types';
 
 export type InternalProps = {
   $current?: boolean;
+  $isInDrawer?: boolean;
+  $isMobile?: boolean;
 };
 
 export type InternalOLProps = {

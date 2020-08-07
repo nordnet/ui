@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 
 import Card from '../../Atoms/Card';
 import { LevelOne } from './LevelOne';
 import { MultiStepProgressComponent } from './MultiStepProgress.types';
 import { Drawer, Media, Flexbox, Typography } from '../..';
+
+const StyledDrawer = styled(Drawer)`
+  ${Drawer.components.Content} {
+    padding: 0;
+  }
+`;
 
 export const MultiStepProgress: MultiStepProgressComponent = ({
   onStepClick,
@@ -40,7 +47,7 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
       </Card>
 
       <Media query={t => t.media.lessThan(t.breakpoints.md)}>
-        <Drawer
+        <StyledDrawer
           onClose={onDrawerClose}
           title={
             <Flexbox container gutter={2} alignItems="center">
@@ -61,7 +68,7 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
               isInDrawer
             />
           </div>
-        </Drawer>
+        </StyledDrawer>
       </Media>
     </>
   );
