@@ -52,30 +52,11 @@ const ListItem = styled.li<InternalProps>`
   }
 
   & + & {
-    border-top: ${p => (p.$isInDrawer ? 1 : p.theme.spacing.unit(2))}px solid
-      ${p => p.theme.color.divider};
-  }
-`;
-
-const MobileListItem = styled.li<InternalProps>`
-  display: block;
-  position: relative;
-
-  &::before {
-    content: '';
-    display: block;
-    background: ${p => p.theme.color.cta};
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.16s ease-out;
-    opacity: ${p => (p.$current ? 1 : 0)};
-  }
-
-  & + & {
     border-top: 1px solid ${p => p.theme.color.divider};
+
+    ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
+      border-top-width: ${p => p.theme.spacing.unit(2)}px;
+    }
   }
 `;
 
@@ -87,14 +68,11 @@ const StyledButton = styled(Button)`
   justify-content: flex-start;
 `;
 
-const StyledMobileButton = styled(Button)`
-  justify-content: flex-start;
-
+const StyledMobileButton = styled(StyledButton)`
   & > span {
     width: 100%;
   }
 `;
-
 const ProgressLevels: ProgressLevelsComponent = ({
   steps,
   onStepClick,
@@ -212,7 +190,7 @@ export const TopLevel: TopLevelComponent = ({
               const number = i + 1;
 
               return (
-                <MobileListItem key={label} $current={current}>
+                <ListItem key={label} $current={current}>
                   {current && (
                     <StyledMobileButton
                       onClick={() => onMobileStepClick && onMobileStepClick()}
@@ -245,7 +223,7 @@ export const TopLevel: TopLevelComponent = ({
                       </Typography>
                     </StyledMobileButton>
                   )}
-                </MobileListItem>
+                </ListItem>
               );
             })}
         </MobileProgressLevels>
