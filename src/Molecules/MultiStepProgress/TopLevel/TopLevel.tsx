@@ -52,11 +52,7 @@ const ListItem = styled.li<InternalProps>`
   }
 
   & + & {
-    border-top: 1px solid ${p => p.theme.color.divider};
-
-    ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
-      border-top-width: ${p => p.theme.spacing.unit(2)}px;
-    }
+    border-top: ${p => p.theme.spacing.unit(2)}px solid ${p => p.theme.color.divider};
   }
 `;
 
