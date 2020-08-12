@@ -651,12 +651,10 @@ Array [
           className="c29"
         >
           <li
-            className="c3 c4"
-          />
-          <li
             className="c3 c16"
           >
             <button
+              aria-expanded={false}
               className="NormalizedButton__Button-ey7f5x-0 c5 c30"
               onClick={[Function]}
               type="button"
@@ -711,9 +709,6 @@ Array [
               </span>
             </button>
           </li>
-          <li
-            className="c3 c4"
-          />
         </ol>
       </div>
     </div>
@@ -1290,12 +1285,10 @@ Array [
           className="c25"
         >
           <li
-            className="c3 c4"
-          />
-          <li
             className="c3 c12"
           >
             <button
+              aria-expanded={false}
               className="NormalizedButton__Button-ey7f5x-0 c13 c26"
               onClick={[Function]}
               type="button"
@@ -1350,9 +1343,6 @@ Array [
               </span>
             </button>
           </li>
-          <li
-            className="c3 c4"
-          />
         </ol>
       </div>
     </div>

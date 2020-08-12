@@ -149,6 +149,7 @@ const ProgressLevels: ProgressLevelsComponent = ({
 };
 
 export const TopLevel: TopLevelComponent = ({
+  drawerOpen,
   onStepClick,
   onSubStepClick,
   onMobileStepClick,
@@ -189,40 +190,43 @@ export const TopLevel: TopLevelComponent = ({
               const { current, done, label } = step;
               const number = i + 1;
 
+              if (!current) {
+                return null;
+              }
+
               return (
                 <ListItem key={label} $current={current}>
-                  {current && (
-                    <StyledMobileButton
-                      onClick={() => onMobileStepClick && onMobileStepClick()}
-                      variant="neutral"
-                      fullWidth
-                    >
-                      <Typography type="primary" weight={current ? 'bold' : 'regular'}>
-                        <Content
-                          py={VERTICAL_PADDING}
-                          pr={HORIZONTAL_PADDING}
-                          pl={contentLeftPadding}
-                          sm={{ pl: contentLeftPaddingDesktop, pr: HORIZONTAL_PADDING_DESKTOP }}
-                        >
-                          <Flexbox container justifyContent="space-between" alignItems="center">
-                            <Flexbox item>
-                              <Status
-                                current={current}
-                                done={done}
-                                number={number}
-                                titleDone={titleDone}
-                                titleNotDone={titleNotDone}
-                              />
-                              {label}
-                            </Flexbox>
-                            <Flexbox item>
-                              <Icon.ThinChevron direction="down" />
-                            </Flexbox>
+                  <StyledMobileButton
+                    onClick={() => onMobileStepClick && onMobileStepClick()}
+                    variant="neutral"
+                    aria-expanded={drawerOpen}
+                    fullWidth
+                  >
+                    <Typography type="primary" weight={current ? 'bold' : 'regular'}>
+                      <Content
+                        py={VERTICAL_PADDING}
+                        pr={HORIZONTAL_PADDING}
+                        pl={contentLeftPadding}
+                        sm={{ pl: contentLeftPaddingDesktop, pr: HORIZONTAL_PADDING_DESKTOP }}
+                      >
+                        <Flexbox container justifyContent="space-between" alignItems="center">
+                          <Flexbox item>
+                            <Status
+                              current={current}
+                              done={done}
+                              number={number}
+                              titleDone={titleDone}
+                              titleNotDone={titleNotDone}
+                            />
+                            {label}
                           </Flexbox>
-                        </Content>
-                      </Typography>
-                    </StyledMobileButton>
-                  )}
+                          <Flexbox item>
+                            <Icon.ThinChevron direction="down" />
+                          </Flexbox>
+                        </Flexbox>
+                      </Content>
+                    </Typography>
+                  </StyledMobileButton>
                 </ListItem>
               );
             })}

@@ -36,6 +36,7 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
       <Card>
         <div role="group" aria-label={title}>
           <TopLevel
+            drawerOpen={open}
             onStepClick={onStepClick}
             onSubStepClick={onSubStepClick}
             steps={steps}

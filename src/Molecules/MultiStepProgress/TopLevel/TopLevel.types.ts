@@ -17,6 +17,7 @@ export type StepTopLevelProps = {
 } & StepBaseProps;
 
 type Props = {
+  drawerOpen?: boolean;
   onStepClick?: (stepName: string) => void;
   onSubStepClick?: (stepName: string) => void;
   onMobileStepClick?: () => void;
