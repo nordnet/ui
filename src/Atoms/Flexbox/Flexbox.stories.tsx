@@ -3,13 +3,12 @@ import styled from 'styled-components';
 
 import { Flexbox } from '../..';
 
-const StyledContent = styled.div`
+const Content = styled.div`
   box-sizing: border-box;
   border: 1px solid black;
   background-color: #eee;
   height: 100%;
 `;
-const Content = ({ children }: any) => <StyledContent>{children}</StyledContent>;
 
 export default {
   title: 'Atoms | Flexbox',
@@ -208,4 +207,31 @@ export const withHeightModified = () => (
 
 withHeightModified.story = {
   name: 'With height modified',
+};
+
+export const withContain = () => (
+  <Flexbox container height={10}>
+    <Flexbox item contain>
+      <Content>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+      </Content>
+    </Flexbox>
+    <Flexbox item contain>
+      <Content>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+      </Content>
+    </Flexbox>
+    <Flexbox item contain>
+      <Content>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+      </Content>
+    </Flexbox>
+  </Flexbox>
+);
+
+withContain.story = {
+  name: 'With IE11 text wrapping fix',
 };

@@ -85,6 +85,7 @@ const getItemStyles = (p: Props & { theme: Theme }) => `
   ${p.flex ? `flex: ${p.flex};` : ''}
   ${p.align ? `align-self: ${p.align};` : ''}
   ${p.hidden ? 'display: none;' : ''}
+  ${p.contain ? 'max-width: 100%' : ''}
 `;
 
 const sanitizeProps = R.omit([
@@ -93,6 +94,7 @@ const sanitizeProps = R.omit([
   'height',
   'direction',
   'wrap',
+  'contain',
   'container',
   'item',
   'gutter',
@@ -116,19 +118,21 @@ const SanitizedDiv = React.forwardRef((props: Props, ref: React.Ref<HTMLDivEleme
 ));
 
 const getStylesForSize = (size: string) => css<Partial<Props>>`
-  ${p => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
-    ${p => (p.container ? getContainerStyles({ ...p, ...p[size] }) : '')}
-    ${p => (p.item ? getItemStyles({ ...p, ...p[size] }) : '')}
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
+    ${(p) => (p.container ? getContainerStyles({ ...p, ...p[size] }) : '')}
+    ${(p) => (p.item ? getItemStyles({ ...p, ...p[size] }) : '')}
   }
 `;
 
 const StyledFlexbox = styled(SanitizedDiv)<Props>`
   box-sizing: border-box;
-  ${p => (p.container ? getContainerStyles(p) : '')}
-  ${p => (p.item ? getItemStyles(p) : '')}
-  ${p => (p.sm ? getStylesForSize('sm') : '')}
-  ${p => (p.md ? getStylesForSize('md') : '')}
-  ${p => (p.lg ? getStylesForSize('lg') : '')}
+  ${(p) => (p.container ? getContainerStyles(p) : '')}
+  ${(p) => (p.item ? getItemStyles(p) : '')}
+  ${(p) => (p.sm ? getStylesForSize('sm') : '')}
+  ${(
+    p,
+  ) => (p.md ? getStylesForSize('md') : '')}
+  ${(p) => (p.lg ? getStylesForSize('lg') : '')}
 `;
 
 export const Flexbox = React.forwardRef<HTMLDivElement, Props>((props, ref) => (

@@ -64,6 +64,8 @@ export type ItemProps = {
   /** a11y */
   role?: string;
   title?: string;
+  /** IE11 text wrapping fix */
+  contain?: boolean;
 };
 
 export type FlexProps = ItemProps & ContainerProps & { className?: string };
