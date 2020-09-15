@@ -48,6 +48,12 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
   }
 }
 
+@media print {
+  .c0 {
+    max-width: none;
+  }
+}
+
 <div
   className=""
 >
@@ -116,6 +122,12 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper with a custom background
   .c1 {
     max-width: 1600px;
     padding: 0 20px;
+  }
+}
+
+@media print {
+  .c1 {
+    max-width: none;
   }
 }
 
