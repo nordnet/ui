@@ -5,28 +5,24 @@ type ThemeProp = {
 };
 
 type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // c
-type ColorFn = (t: Theme) => Values<Theme['color']>;
-type Variant = 'big' | 'small';
+export type ColorFn = (t: Theme) => Values<Theme['color']>;
+export type Variant = 'big' | 'small';
 
 export type getLeftFn = (percentage: number, variant?: Variant) => string;
 
-export type SliderTypes = {
-  sliderColor?: ColorFn;
-  variant?: Variant;
-  disabled?: boolean;
-};
-
-export type InternalSliderTypes = {
-  $variant?: Variant;
-  $sliderColor?: ColorFn;
+export type InternalProps = {
   $disabled?: boolean;
+  $sliderColor?: ColorFn;
+  $variant?: Variant;
 };
 
 export type Props = {
-  onChange: (v: number) => void;
-  min: number;
+  disabled?: boolean;
   max: number;
+  min: number;
+  onChange: (v: number) => void;
+  sliderColor?: ColorFn;
   step: number;
   value: number;
-} & SliderTypes &
-  ThemeProp;
+  variant?: Variant;
+} & ThemeProp;

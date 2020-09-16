@@ -1,66 +1,35 @@
 import React, { useRef, FC, MouseEvent, TouchEvent, KeyboardEvent } from 'react';
-import Color from 'color';
 import styled, { withTheme, css } from 'styled-components';
-import { Props, getLeftFn, InternalSliderTypes } from './Slider.types';
+import { Props, getLeftFn, InternalProps } from './Slider.types';
+import { THUMB_BIG, THUMB_SMALL, VARIANT_TYPES } from './constants';
+import { SliderThumb } from './SliderThumb';
 
-const THUMB_BIG = 30;
-const THUMB_SMALL = 20;
-const VARIANT_TYPES = { SMALL: 'small', BIG: 'big' };
-
-const pressedThumbStyle = css<InternalSliderTypes>`
-  &:active {
-    background: ${p => {
-      const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : '';
-      return !p.$disabled && `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
-    }};
-    height: ${p => (p.$variant === VARIANT_TYPES.SMALL ? THUMB_SMALL - 4 : THUMB_BIG - 6)}px;
-    width: ${p => (p.$variant === VARIANT_TYPES.SMALL ? THUMB_SMALL - 4 : THUMB_BIG - 6)}px;
-  }
-`;
-
-const focusedThumbStyle = css<InternalSliderTypes>`
-  &:focus {
-    border: ${p => {
-      const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : '';
-      return (
-        !p.$disabled &&
-        `${thumbColor ? `${p.theme.spacing.unit(1)}px solid ${Color(thumbColor).darken(0.1)}` : ''}`
-      );
-    }};
-    background: ${p => {
-      const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : '';
-      return !p.$disabled && `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
-    }};
-    border-radius: 50%;
-  }
-`;
-
-const height = css<InternalSliderTypes>`
-  height: ${p =>
+const height = css<InternalProps>`
+  height: ${(p) =>
     p.$variant === VARIANT_TYPES.SMALL
       ? `${p.theme.spacing.unit(1)}`
       : `${p.theme.spacing.unit(3)}`}px;
 `;
 
-const cursor = css<InternalSliderTypes>`
-  cursor: ${p => (p.$disabled ? 'not-allowed' : 'default')};
+const cursor = css<InternalProps>`
+  cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'default')};
 `;
 
-const Container = styled.div<InternalSliderTypes>`
-  height: ${p => (p.$variant === VARIANT_TYPES.SMALL ? THUMB_SMALL : THUMB_BIG)}px;
+const Container = styled.div<InternalProps>`
+  height: ${(p) => (p.$variant === VARIANT_TYPES.SMALL ? THUMB_SMALL : THUMB_BIG)}px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 `;
 
-const StyledSliderWrapper = styled.div<InternalSliderTypes>`
+const StyledSliderWrapper = styled.div<InternalProps>`
   background: linear-gradient(
     to right,
-    ${p => (p.$sliderColor && !p.$disabled ? p.$sliderColor(p.theme) : p.theme.color.sliderColor)}
+    ${(p) => (p.$sliderColor && !p.$disabled ? p.$sliderColor(p.theme) : p.theme.color.sliderColor)}
       0% 50%,
-    ${p => p.theme.color.sliderBackgroundColor} 50% 100%
+    ${(p) => p.theme.color.sliderBackgroundColor} 50% 100%
   );
-  background: ${p => p.$disabled && p.theme.color.sliderDisabled};
+  background: ${(p) => p.$disabled && p.theme.color.sliderDisabled};
   ${height};
   max-width: 100%;
   /* TODO: move this into a prop */
@@ -69,12 +38,12 @@ const StyledSliderWrapper = styled.div<InternalSliderTypes>`
   ${cursor}
 `;
 
-const StyledSlider = styled.div<InternalSliderTypes>`
+const StyledSlider = styled.div<InternalProps>`
   max-width: 100%;
   ${height};
   position: relative;
   width: calc(
-    100% - ${p => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}` : `${THUMB_BIG}`)}px
+    100% - ${(p) => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}` : `${THUMB_BIG}`)}px
   );
   margin: 0 auto;
   ${cursor};
@@ -85,29 +54,6 @@ const getPercentage = (current: number, min: number, max: number) =>
 
 const getValue = (percentage: number, min: number, max: number) =>
   ((max - min) / 100) * percentage + min;
-
-const StyledThumb = styled('div')<InternalSliderTypes>`
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: ${p => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}` : `${THUMB_BIG}`)}px;
-  height: ${p => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}` : `${THUMB_BIG}`)}px;
-  top: 50%;
-  border-radius: 50%;
-  transform: translateY(-50%);
-  background: ${p => p.theme.color.sliderThumbBackground};
-  border: ${p =>
-    `${p.theme.spacing.unit(1)}px solid ${
-      p.$sliderColor && !p.$disabled ? p.$sliderColor(p.theme) : p.theme.color.sliderColor
-    }`};
-  border: ${p =>
-    p.$disabled ? `${p.theme.spacing.unit(1)}px solid ${p.theme.color.sliderDisabled}` : ''};
-  cursor: ${p => (p.$disabled ? 'not-allowed' : 'grab')};
-  ${focusedThumbStyle}
-  ${pressedThumbStyle}
-`;
 
 const getLeft: getLeftFn = (percentage, variant) => {
   return `calc(${percentage}% - ${
@@ -125,7 +71,7 @@ const Slider: FC<Props> = ({
   sliderColor,
   theme,
   variant = 'big',
-  disabled = false,
+  disabled,
 }) => {
   const initialPercentage = getPercentage(value, min, max);
   const linearGradient: number = ((value - min) / (max - min)) * 100;
@@ -255,22 +201,20 @@ const Slider: FC<Props> = ({
           $variant={variant}
           $disabled={disabled}
         >
-          <StyledThumb
-            $sliderColor={sliderColor}
-            tabIndex={0}
-            ref={thumbRef}
+          <SliderThumb
+            disabled={disabled}
+            max={max}
+            min={min}
             onClick={handleThumbClick}
+            onKeyDown={handleKeyDown}
             onMouseDown={handleMouseDown}
             onMouseUp={handleMouseUp}
             onTouchStart={handleTouchStart}
-            onKeyDown={handleKeyDown}
+            ref={thumbRef}
+            sliderColor={sliderColor}
             style={{ left: getLeft(initialPercentage, variant) }}
-            role="slider"
-            aria-valuemin={min}
-            aria-valuenow={value}
-            aria-valuemax={max}
-            $variant={variant}
-            $disabled={disabled}
+            value={value}
+            variant={variant}
           />
         </StyledSlider>
       </StyledSliderWrapper>
