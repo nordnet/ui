@@ -1,53 +1,27 @@
-import React, { useRef, FC, MouseEvent, TouchEvent, KeyboardEvent } from 'react';
-import styled, { withTheme, css } from 'styled-components';
-import { Props, getLeftFn, InternalProps } from './Slider.types';
-import { THUMB_BIG, THUMB_SMALL, VARIANT_TYPES } from './constants';
+import React, { KeyboardEvent, MouseEvent, TouchEvent, useRef } from 'react';
+import styled from 'styled-components';
+import { Component, getLeftFn, InternalProps } from './Slider.types';
+import {
+  THUMB_BIG_PX,
+  THUMB_SMALL_PX,
+  TRACK_HEIGHT_BIG,
+  TRACK_HEIGHT_SMALL,
+  VARIANT_TYPES,
+} from './constants';
 import { SliderThumb } from './SliderThumb';
+import { SliderHighlight } from './SliderHighlight';
 
-const height = css<InternalProps>`
-  height: ${(p) =>
-    p.$variant === VARIANT_TYPES.SMALL
-      ? `${p.theme.spacing.unit(1)}`
-      : `${p.theme.spacing.unit(3)}`}px;
-`;
+const clamp = (val: number, min: number, max: number) => {
+  if (val < min) {
+    return min;
+  }
 
-const cursor = css<InternalProps>`
-  cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'default')};
-`;
+  if (val > max) {
+    return max;
+  }
 
-const Container = styled.div<InternalProps>`
-  height: ${(p) => (p.$variant === VARIANT_TYPES.SMALL ? THUMB_SMALL : THUMB_BIG)}px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
-
-const StyledSliderWrapper = styled.div<InternalProps>`
-  background: linear-gradient(
-    to right,
-    ${(p) => (p.$sliderColor && !p.$disabled ? p.$sliderColor(p.theme) : p.theme.color.sliderColor)}
-      0% 50%,
-    ${(p) => p.theme.color.sliderBackgroundColor} 50% 100%
-  );
-  background: ${(p) => p.$disabled && p.theme.color.sliderDisabled};
-  ${height};
-  max-width: 100%;
-  /* TODO: move this into a prop */
-  /* border-radius: 10px; */
-  width: 100%;
-  ${cursor}
-`;
-
-const StyledSlider = styled.div<InternalProps>`
-  max-width: 100%;
-  ${height};
-  position: relative;
-  width: calc(
-    100% - ${(p) => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}` : `${THUMB_BIG}`)}px
-  );
-  margin: 0 auto;
-  ${cursor};
-`;
+  return val;
+};
 
 const getPercentage = (current: number, min: number, max: number) =>
   ((current - min) / (max - min)) * 100;
@@ -57,41 +31,44 @@ const getValue = (percentage: number, min: number, max: number) =>
 
 const getLeft: getLeftFn = (percentage, variant) => {
   return `calc(${percentage}% - ${
-    variant === 'big' ? `${THUMB_BIG / 2 + 1}` : `${THUMB_SMALL / 2}` // + 1 to make left side of the slider look
-    // good when magnified
-  }px)`;
+    variant === 'big' ? `${THUMB_BIG_PX}` : `${THUMB_SMALL_PX}`
+  }px * ${percentage * 0.01})`;
 };
 
-const Slider: FC<Props> = ({
-  onChange,
-  value,
+const Track = styled.div<InternalProps>`
+  margin: 50px 0;
+  position: relative;
+  width: 100%;
+  height: ${(p) =>
+    p.$variant === VARIANT_TYPES.SMALL
+      ? `${p.theme.spacing.unit(TRACK_HEIGHT_SMALL)}`
+      : `${p.theme.spacing.unit(TRACK_HEIGHT_BIG)}`}px;
+  background: ${(p) =>
+    p.$disabled ? p.theme.color.sliderDisabled : p.theme.color.sliderBackgroundColor};
+  cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'default')};
+`;
+
+const Slider: Component = ({
+  disabled,
   max,
   min,
-  step,
+  onChange,
   sliderColor,
-  theme,
+  step,
+  value,
   variant = 'big',
-  disabled,
 }) => {
-  const initialPercentage = getPercentage(value, min, max);
-  const linearGradient: number = ((value - min) / (max - min)) * 100;
-
-  const sliderRef = useRef() as React.MutableRefObject<HTMLInputElement>;
-  const thumbRef = useRef() as React.MutableRefObject<HTMLInputElement>;
+  const trackRef = useRef() as React.MutableRefObject<HTMLDivElement>;
+  const thumbRef = useRef() as React.MutableRefObject<HTMLDivElement>;
   const diff = useRef() as React.MutableRefObject<number>;
+
+  const initialPercentage = getPercentage(value, min, max);
 
   const handleChange = (val: number) => {
     if (!disabled) {
-      let newX = val;
       const start = 0;
-      const end = sliderRef.current.offsetWidth - thumbRef.current.offsetWidth;
-
-      if (newX < start) {
-        newX = start;
-      }
-      if (newX > end) {
-        newX = end;
-      }
+      const end = trackRef.current.offsetWidth - thumbRef.current.offsetWidth;
+      const newX = clamp(val, start, end);
 
       const newPercentage = getPercentage(newX, start, end);
       const newValue = getValue(newPercentage, min, max);
@@ -110,7 +87,7 @@ const Slider: FC<Props> = ({
     event.stopPropagation();
     event.preventDefault();
 
-    const newX = event.clientX - diff.current - sliderRef.current.getBoundingClientRect().left;
+    const newX = event.clientX - diff.current - trackRef.current.getBoundingClientRect().left;
     handleChange(newX);
   };
 
@@ -131,7 +108,7 @@ const Slider: FC<Props> = ({
     event.preventDefault();
 
     const newX =
-      event.touches[0].clientX - diff.current - sliderRef.current.getBoundingClientRect().left;
+      event.touches[0].clientX - diff.current - trackRef.current.getBoundingClientRect().left;
     handleChange(newX);
   };
 
@@ -151,8 +128,8 @@ const Slider: FC<Props> = ({
     event.stopPropagation();
   };
 
-  const handleSliderClick = (event: MouseEvent) => {
-    const newX = event.clientX - sliderRef.current.getBoundingClientRect().left;
+  const handleTrackClick = (event: MouseEvent) => {
+    const newX = event.clientX - trackRef.current.getBoundingClientRect().left;
     handleChange(newX);
   };
 
@@ -180,46 +157,32 @@ const Slider: FC<Props> = ({
     }
   };
 
-  const sliderBackground = {
-    background: `linear-gradient(to right, ${
-      sliderColor ? sliderColor(theme) : theme.color.sliderColor
-    } ${linearGradient}% , ${theme.color.sliderBackgroundColor} ${linearGradient}%)`,
-  };
-
-  const disabledBackground = {
-    background: `${theme.color.sliderDisabled}`,
-  };
-
   return (
-    <Container $variant={variant}>
-      <StyledSliderWrapper $sliderColor={sliderColor} $variant={variant} $disabled={disabled}>
-        <StyledSlider
-          ref={sliderRef}
-          style={disabled ? disabledBackground : sliderBackground}
-          onClick={handleSliderClick}
-          $sliderColor={sliderColor}
-          $variant={variant}
-          $disabled={disabled}
-        >
-          <SliderThumb
-            disabled={disabled}
-            max={max}
-            min={min}
-            onClick={handleThumbClick}
-            onKeyDown={handleKeyDown}
-            onMouseDown={handleMouseDown}
-            onMouseUp={handleMouseUp}
-            onTouchStart={handleTouchStart}
-            ref={thumbRef}
-            sliderColor={sliderColor}
-            style={{ left: getLeft(initialPercentage, variant) }}
-            value={value}
-            variant={variant}
-          />
-        </StyledSlider>
-      </StyledSliderWrapper>
-    </Container>
+    <Track
+      ref={trackRef}
+      onClick={handleTrackClick}
+      onKeyDown={handleKeyDown}
+      $sliderColor={sliderColor}
+      $variant={variant}
+      $disabled={disabled}
+    >
+      <SliderHighlight sliderColor={sliderColor} value={value} variant={variant} />
+      <SliderThumb
+        disabled={disabled}
+        max={max}
+        min={min}
+        onClick={handleThumbClick}
+        onMouseDown={handleMouseDown}
+        onMouseUp={handleMouseUp}
+        onTouchStart={handleTouchStart}
+        ref={thumbRef}
+        sliderColor={sliderColor}
+        style={{ left: getLeft(initialPercentage, variant) }}
+        value={value}
+        variant={variant}
+      />
+    </Track>
   );
 };
 
-export default withTheme(Slider);
+export default Slider;

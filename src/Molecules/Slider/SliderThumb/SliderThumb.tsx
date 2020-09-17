@@ -1,22 +1,35 @@
 import React from 'react';
 import Color from 'color';
-import styled, { css } from 'styled-components';
-import { Component } from './SliderThumb.types';
+import styled from 'styled-components';
+import { Component, Props } from './SliderThumb.types';
 import { InternalProps } from '../Slider.types';
-import { THUMB_BIG, THUMB_SMALL, VARIANT_TYPES } from '../constants';
+import { THUMB_BIG_PX, THUMB_SMALL_PX, VARIANT_TYPES } from '../constants';
 
-const pressedThumbStyle = css<InternalProps>`
+const Handle = styled('div')<InternalProps>`
+  box-sizing: border-box;
+  position: absolute;
+  width: ${(p) => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL_PX}` : `${THUMB_BIG_PX}`)}px;
+  height: ${(p) =>
+    p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL_PX}` : `${THUMB_BIG_PX}`}px;
+  top: 50%;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background: ${(p) => p.theme.color.sliderThumbBackground};
+  cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'grab')};
+  border-width: ${(p) => p.theme.spacing.unit(1)}px;
+  border-style: solid;
+  border-color: ${(p) => (p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor)};
+  ${(p) => (p.$disabled ? `border-color: ${p.theme.color.sliderDisabled};` : '')}
+  transition: transform 0.16s ease-out;
+
   &:active {
     background: ${(p) => {
       const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : '';
       return !p.$disabled && `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
     }};
-    height: ${(p) => (p.$variant === VARIANT_TYPES.SMALL ? THUMB_SMALL - 4 : THUMB_BIG - 6)}px;
-    width: ${(p) => (p.$variant === VARIANT_TYPES.SMALL ? THUMB_SMALL - 4 : THUMB_BIG - 6)}px;
+    transform: translateY(-50%) scale3d(0.8, 0.8, 0.8);
   }
-`;
 
-const focusedThumbStyle = css<InternalProps>`
   &:focus {
     border: ${(p) => {
       const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : '';
@@ -29,67 +42,45 @@ const focusedThumbStyle = css<InternalProps>`
       const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : '';
       return !p.$disabled && `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
     }};
-    border-radius: 50%;
   }
 `;
 
-const StyledThumb = styled('div')<InternalProps>`
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: ${(p) => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}` : `${THUMB_BIG}`)}px;
-  height: ${(p) => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}` : `${THUMB_BIG}`)}px;
-  top: 50%;
-  border-radius: 50%;
-  transform: translateY(-50%);
-  background: ${(p) => p.theme.color.sliderThumbBackground};
-  border: ${(p) =>
-    `${p.theme.spacing.unit(1)}px solid ${
-      p.$sliderColor && !p.$disabled ? p.$sliderColor(p.theme) : p.theme.color.sliderColor
-    }`};
-  border: ${(p) =>
-    p.$disabled ? `${p.theme.spacing.unit(1)}px solid ${p.theme.color.sliderDisabled}` : ''};
-  cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'grab')};
-  ${focusedThumbStyle}
-  ${pressedThumbStyle}
-`;
-
-const SliderThumb: Component = ({
-  disabled,
-  max,
-  min,
-  onClick,
-  onKeyDown,
-  onMouseDown,
-  onMouseUp,
-  onTouchStart,
-  ref,
-  sliderColor,
-  style,
-  value,
-  variant,
-}) => {
-  return (
-    <StyledThumb
-      $disabled={disabled}
-      $sliderColor={sliderColor}
-      $variant={variant}
-      aria-orientation="horizontal"
-      aria-valuemax={max}
-      aria-valuemin={min}
-      aria-valuenow={value}
-      onClick={onClick}
-      onKeyDown={onKeyDown}
-      onMouseDown={onMouseDown}
-      onMouseUp={onMouseUp}
-      onTouchStart={onTouchStart}
-      ref={ref}
-      role="slider"
-      style={style}
-    />
-  );
-};
+const SliderThumb: Component = React.forwardRef<HTMLDivElement, Props>(
+  (
+    {
+      disabled,
+      max,
+      min,
+      onClick,
+      onMouseDown,
+      onMouseUp,
+      onTouchStart,
+      sliderColor,
+      style,
+      value,
+      variant,
+    },
+    ref,
+  ) => {
+    return (
+      <Handle
+        $disabled={disabled}
+        $sliderColor={sliderColor}
+        $variant={variant}
+        aria-orientation="horizontal"
+        aria-valuemax={max}
+        aria-valuemin={min}
+        aria-valuenow={value}
+        onClick={onClick}
+        onMouseDown={onMouseDown}
+        onMouseUp={onMouseUp}
+        onTouchStart={onTouchStart}
+        ref={ref}
+        role="slider"
+        style={style}
+      />
+    );
+  },
+);
 
 export default SliderThumb;

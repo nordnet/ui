@@ -1,9 +1,5 @@
 import { Theme } from '../../theme/theme.types';
 
-type ThemeProp = {
-  theme: Theme;
-};
-
 type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // c
 export type ColorFn = (t: Theme) => Values<Theme['color']>;
 export type Variant = 'big' | 'small';
@@ -23,6 +19,9 @@ export type Props = {
   onChange: (v: number) => void;
   sliderColor?: ColorFn;
   step: number;
+  /** Makes component controlled */
   value: number;
   variant?: Variant;
-} & ThemeProp;
+};
+
+export type Component = React.FC<Props>;
