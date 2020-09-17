@@ -52,6 +52,7 @@ const SliderThumb: Component = React.forwardRef<HTMLDivElement, Props>(
       max,
       min,
       onClick,
+      onKeyDown,
       onMouseDown,
       onMouseUp,
       onTouchStart,
@@ -72,10 +73,12 @@ const SliderThumb: Component = React.forwardRef<HTMLDivElement, Props>(
         aria-valuemin={min}
         aria-valuenow={value}
         onClick={onClick}
+        onKeyDown={onKeyDown}
         onMouseDown={onMouseDown}
         onMouseUp={onMouseUp}
         onTouchStart={onTouchStart}
         ref={ref}
+        tabIndex={0}
         role="slider"
         style={style}
       />

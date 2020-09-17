@@ -5,6 +5,7 @@ export type Props = {
   max: number;
   min: number;
   onClick: React.MouseEventHandler;
+  onKeyDown: React.KeyboardEventHandler;
   onMouseDown: React.MouseEventHandler;
   onMouseUp: React.MouseEventHandler;
   onTouchStart: React.TouchEventHandler;

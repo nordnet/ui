@@ -148,12 +148,12 @@ const Slider: Component = ({
 
   return (
     <Container
-      ref={trackRef}
-      onClick={handleTrackClick}
-      onKeyDown={handleKeyDown}
+      $disabled={disabled}
       $sliderColor={sliderColor}
       $variant={variant}
-      $disabled={disabled}
+      onClick={handleTrackClick}
+      ref={trackRef}
+      tabIndex={-1}
     >
       <SliderTrack variant={variant}>
         <SliderTrackHighlight sliderColor={sliderColor} value={value} variant={variant} />
@@ -162,6 +162,7 @@ const Slider: Component = ({
           max={max}
           min={min}
           onClick={handleThumbClick}
+          onKeyDown={handleKeyDown}
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
           onTouchStart={handleTouchStart}
