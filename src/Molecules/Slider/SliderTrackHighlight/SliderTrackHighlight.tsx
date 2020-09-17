@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { TRACK_HEIGHT_BIG, TRACK_HEIGHT_SMALL, VARIANT_TYPES } from '../constants';
-import { Component, InternalProps } from './SliderHighlight.types';
+import { Component, InternalProps } from './SliderTrackHighlight.types';
 
 const TrackHighlight = styled.div<InternalProps>`
   width: 100%;
@@ -13,10 +13,10 @@ const TrackHighlight = styled.div<InternalProps>`
       : `${p.theme.spacing.unit(TRACK_HEIGHT_BIG)}`}px;
 `;
 
-const SliderHighlight: Component = ({ sliderColor, value, variant }) => {
+const SliderTrackHighlight: Component = ({ sliderColor, value, variant }) => {
   return (
     <TrackHighlight $sliderColor={sliderColor} style={{ width: `${value}%` }} $variant={variant} />
   );
 };
 
-export default SliderHighlight;
+export default SliderTrackHighlight;

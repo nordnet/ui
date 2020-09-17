@@ -1,15 +1,10 @@
 import React, { KeyboardEvent, MouseEvent, TouchEvent, useRef } from 'react';
 import styled from 'styled-components';
 import { Component, getLeftFn, InternalProps } from './Slider.types';
-import {
-  THUMB_BIG_PX,
-  THUMB_SMALL_PX,
-  TRACK_HEIGHT_BIG,
-  TRACK_HEIGHT_SMALL,
-  VARIANT_TYPES,
-} from './constants';
+import { THUMB_BIG_PX, THUMB_SMALL_PX, VARIANT_TYPES } from './constants';
 import { SliderThumb } from './SliderThumb';
-import { SliderHighlight } from './SliderHighlight';
+import { SliderTrack } from './SliderTrack';
+import { SliderTrackHighlight } from './SliderTrackHighlight';
 
 const clamp = (val: number, min: number, max: number) => {
   if (val < min) {
@@ -35,17 +30,11 @@ const getLeft: getLeftFn = (percentage, variant) => {
   }px * ${percentage * 0.01})`;
 };
 
-const Track = styled.div<InternalProps>`
-  margin: 50px 0;
-  position: relative;
-  width: 100%;
+const Container = styled.div<InternalProps>`
+  display: flex;
+  align-items: center;
   height: ${(p) =>
-    p.$variant === VARIANT_TYPES.SMALL
-      ? `${p.theme.spacing.unit(TRACK_HEIGHT_SMALL)}`
-      : `${p.theme.spacing.unit(TRACK_HEIGHT_BIG)}`}px;
-  background: ${(p) =>
-    p.$disabled ? p.theme.color.sliderDisabled : p.theme.color.sliderBackgroundColor};
-  cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'default')};
+    p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL_PX}px` : `${THUMB_BIG_PX}px`};
 `;
 
 const Slider: Component = ({
@@ -158,7 +147,7 @@ const Slider: Component = ({
   };
 
   return (
-    <Track
+    <Container
       ref={trackRef}
       onClick={handleTrackClick}
       onKeyDown={handleKeyDown}
@@ -166,22 +155,24 @@ const Slider: Component = ({
       $variant={variant}
       $disabled={disabled}
     >
-      <SliderHighlight sliderColor={sliderColor} value={value} variant={variant} />
-      <SliderThumb
-        disabled={disabled}
-        max={max}
-        min={min}
-        onClick={handleThumbClick}
-        onMouseDown={handleMouseDown}
-        onMouseUp={handleMouseUp}
-        onTouchStart={handleTouchStart}
-        ref={thumbRef}
-        sliderColor={sliderColor}
-        style={{ left: getLeft(initialPercentage, variant) }}
-        value={value}
-        variant={variant}
-      />
-    </Track>
+      <SliderTrack variant={variant}>
+        <SliderTrackHighlight sliderColor={sliderColor} value={value} variant={variant} />
+        <SliderThumb
+          disabled={disabled}
+          max={max}
+          min={min}
+          onClick={handleThumbClick}
+          onMouseDown={handleMouseDown}
+          onMouseUp={handleMouseUp}
+          onTouchStart={handleTouchStart}
+          ref={thumbRef}
+          sliderColor={sliderColor}
+          style={{ left: getLeft(initialPercentage, variant) }}
+          value={value}
+          variant={variant}
+        />
+      </SliderTrack>
+    </Container>
   );
 };
 
