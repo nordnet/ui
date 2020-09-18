@@ -53,8 +53,7 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>(
     };
 
     const handleInputOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-      const value = event.target.value;
-      const date = parseISO(value as string);
+      const date = parseISO(event.target.value);
       if (isValid(date)) {
         setSelectedDate(date);
       }
