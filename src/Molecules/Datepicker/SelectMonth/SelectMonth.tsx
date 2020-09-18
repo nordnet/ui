@@ -46,7 +46,7 @@ const SelectMonth: React.FC<Props> = ({ locale, now, onChange }) => {
         );
       },
     }),
-    [now, useSelectMachineFromContext],
+    [now, opts, useSelectMachineFromContext],
   );
 
   const selected = monthOptions.filter((p) => p.value === now.getMonth());
