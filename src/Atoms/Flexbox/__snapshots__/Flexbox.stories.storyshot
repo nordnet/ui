@@ -118,61 +118,6 @@ exports[`Storyshots Atoms | Flexbox Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Flexbox With IE11 text wrapping fix 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 40px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  max-width: 100%;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </div>
-  </div>
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </div>
-  </div>
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Atoms | Flexbox With breakpoint props 1`] = `
 .c0 {
   box-sizing: border-box;
@@ -592,60 +537,6 @@ exports[`Storyshots Atoms | Flexbox With direction: column 1`] = `
   </div>
   <div
     className="c4"
-  >
-    <div
-      className="c2"
-    >
-      Col 3
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Atoms | Flexbox With height modified 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 40px;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      Col 1
-    </div>
-  </div>
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      Col 2
-    </div>
-  </div>
-  <div
-    className="c1"
   >
     <div
       className="c2"
