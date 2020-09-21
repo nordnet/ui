@@ -1,10 +1,11 @@
-import React, { KeyboardEvent, MouseEvent, TouchEvent, useRef } from 'react';
+import React, { KeyboardEvent, MouseEvent, TouchEvent, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { Component, getLeftFn, InternalProps } from './Slider.types';
+import { Component, InternalProps } from './Slider.types';
 import { THUMB_BIG_PX, THUMB_SMALL_PX, VARIANT_TYPES } from './constants';
 import { SliderThumb } from './SliderThumb';
 import { SliderTrack } from './SliderTrack';
 import { SliderTrackHighlight } from './SliderTrackHighlight';
+import { isNumber, isFunction } from '../../common/utils';
 
 const clamp = (val: number, min: number, max: number) => {
   if (val < min) {
@@ -18,16 +19,28 @@ const clamp = (val: number, min: number, max: number) => {
   return val;
 };
 
-const getPercentage = (current: number, min: number, max: number) =>
-  ((current - min) / (max - min)) * 100;
+const getDecimalPrecision = (num: number) => {
+  if (Math.abs(num) < 1) {
+    const parts = num.toExponential().split('e-');
+    const matissaDecimalPart = parts[0].split('.')[1];
+    return (matissaDecimalPart ? matissaDecimalPart.length : 0) + parseInt(parts[1], 10);
+  }
 
-const getValue = (percentage: number, min: number, max: number) =>
-  ((max - min) / 100) * percentage + min;
+  const decimalPart = num.toString().split('.')[1];
+  return decimalPart ? decimalPart.length : 0;
+};
 
-const getLeft: getLeftFn = (percentage, variant) => {
-  return `calc(${percentage}% - ${
-    variant === 'big' ? `${THUMB_BIG_PX}` : `${THUMB_SMALL_PX}`
-  }px * ${percentage * 0.01})`;
+const roundValueToStep = (value: number, step: number, min: number) => {
+  const nearest = Math.round((value - min) / step) * step + min;
+  return Number(nearest.toFixed(getDecimalPrecision(step)));
+};
+
+const percentToValue = (percent: number, min: number, max: number) => {
+  return (max - min) * percent + min;
+};
+
+const valueToPercent = (value: number, min: number, max: number) => {
+  return ((value - min) * 100) / (max - min);
 };
 
 const Container = styled.div<InternalProps>`
@@ -38,36 +51,50 @@ const Container = styled.div<InternalProps>`
 `;
 
 const Slider: Component = ({
+  defaultValue,
   disabled,
   max,
   min,
   onChange,
   sliderColor,
   step,
-  value,
+  value: controlledValue,
   variant = 'big',
 }) => {
-  const trackRef = useRef() as React.MutableRefObject<HTMLDivElement>;
-  const thumbRef = useRef() as React.MutableRefObject<HTMLDivElement>;
-  const diff = useRef() as React.MutableRefObject<number>;
+  const trackRef: React.Ref<HTMLDivElement> = useRef(null);
+  const thumbRef: React.Ref<HTMLDivElement> = useRef(null);
+  const isControlled = isNumber(controlledValue);
+  const [valueInternal, setValueInternal] = useState(defaultValue || min);
+  const value = isControlled ? controlledValue! : valueInternal;
+  const trackPercent = valueToPercent(value, min, max);
+  const handlePosition = `calc(${trackPercent}% - ${
+    variant === 'big' ? `${THUMB_BIG_PX}` : `${THUMB_SMALL_PX}`
+  }px * ${trackPercent * 0.01})`;
 
-  const initialPercentage = getPercentage(value, min, max);
+  const getNewValue = (clickPosition: number) => {
+    if (!trackRef.current || !handlePosition) {
+      return null;
+    }
 
-  const handleChange = (val: number) => {
+    const { left, width } = trackRef.current.getBoundingClientRect();
+    const diff = clickPosition - left;
+    const percent = diff / width;
+    const newValue = percentToValue(percent, min, max);
+    const newValueRounded = roundValueToStep(newValue, step, min);
+
+    return clamp(newValueRounded, min, max);
+  };
+
+  const handleChange = (clickPosition: number) => {
     if (!disabled) {
-      const start = 0;
-      const end = trackRef.current.offsetWidth - thumbRef.current.offsetWidth;
-      const newX = clamp(val, start, end);
+      const newValue = getNewValue(clickPosition);
 
-      const newPercentage = getPercentage(newX, start, end);
-      const newValue = getValue(newPercentage, min, max);
+      if (newValue !== null) {
+        setValueInternal(newValue);
 
-      if (newValue % step === 0) {
-        thumbRef.current.style.left = getLeft(newPercentage, variant);
-      }
-
-      if (typeof onChange === 'function') {
-        onChange(newValue - (newValue % step));
+        if (isFunction(onChange)) {
+          onChange(newValue - (newValue % step));
+        }
       }
     }
   };
@@ -75,9 +102,9 @@ const Slider: Component = ({
   const handleMouseMove = (event: MouseEvent) => {
     event.stopPropagation();
     event.preventDefault();
+    const pointerPosition = event.clientX;
 
-    const newX = event.clientX - diff.current - trackRef.current.getBoundingClientRect().left;
-    handleChange(newX);
+    handleChange(pointerPosition);
   };
 
   const handleMouseUp = () => {
@@ -85,9 +112,7 @@ const Slider: Component = ({
     document.removeEventListener('mousemove', handleMouseMove as () => void);
   };
 
-  const handleMouseDown = (event: MouseEvent) => {
-    diff.current = event.clientX - thumbRef.current.getBoundingClientRect().left;
-
+  const handleMouseDown = () => {
     document.addEventListener('mousemove', handleMouseMove as () => void);
     document.addEventListener('mouseup', handleMouseUp);
   };
@@ -95,10 +120,9 @@ const Slider: Component = ({
   const handleTouchMove = (event: TouchEvent) => {
     event.stopPropagation();
     event.preventDefault();
+    const touchPosition = event.touches[0].clientX;
 
-    const newX =
-      event.touches[0].clientX - diff.current - trackRef.current.getBoundingClientRect().left;
-    handleChange(newX);
+    handleChange(touchPosition);
   };
 
   const handleTouchEnd = () => {
@@ -106,9 +130,7 @@ const Slider: Component = ({
     document.removeEventListener('touchmove', handleTouchMove as () => void);
   };
 
-  const handleTouchStart = (event: TouchEvent) => {
-    diff.current = event.touches[0].clientX - thumbRef.current.getBoundingClientRect().left;
-
+  const handleTouchStart = () => {
     document.addEventListener('touchmove', handleTouchMove as () => void);
     document.addEventListener('touchend', handleTouchEnd);
   };
@@ -118,8 +140,9 @@ const Slider: Component = ({
   };
 
   const handleTrackClick = (event: MouseEvent) => {
-    const newX = event.clientX - trackRef.current.getBoundingClientRect().left;
-    handleChange(newX);
+    const pointerPosition = event.clientX;
+
+    handleChange(pointerPosition);
   };
 
   const handleKeyDown = (event: KeyboardEvent) => {
@@ -139,7 +162,7 @@ const Slider: Component = ({
         newX = value - step;
       }
       if (newX >= min && newX <= max) {
-        if (typeof onChange === 'function') {
+        if (isFunction(onChange)) {
           onChange(newX);
         }
       }
@@ -168,7 +191,7 @@ const Slider: Component = ({
           onTouchStart={handleTouchStart}
           ref={thumbRef}
           sliderColor={sliderColor}
-          style={{ left: getLeft(initialPercentage, variant) }}
+          style={{ left: handlePosition }}
           value={value}
           variant={variant}
         />

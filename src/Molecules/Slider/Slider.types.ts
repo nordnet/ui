@@ -4,8 +4,6 @@ type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; /
 export type ColorFn = (t: Theme) => Values<Theme['color']>;
 export type Variant = 'big' | 'small';
 
-export type getLeftFn = (percentage: number, variant?: Variant) => string;
-
 export type InternalProps = {
   $disabled?: boolean;
   $sliderColor?: ColorFn;
@@ -13,14 +11,15 @@ export type InternalProps = {
 };
 
 export type Props = {
+  defaultValue?: number;
   disabled?: boolean;
   max: number;
   min: number;
-  onChange: (v: number) => void;
+  onChange?: (v: number) => void;
   sliderColor?: ColorFn;
   step: number;
   /** Makes component controlled */
-  value: number;
+  value?: number;
   variant?: Variant;
 };
 
