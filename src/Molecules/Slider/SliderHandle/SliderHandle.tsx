@@ -1,7 +1,7 @@
 import React from 'react';
 import Color from 'color';
 import styled from 'styled-components';
-import { Component, Props } from './SliderThumb.types';
+import { Component, Props } from './SliderHandle.types';
 import { InternalProps } from '../Slider.types';
 import { THUMB_BIG_PX, THUMB_SMALL_PX, VARIANT_TYPES } from '../constants';
 
@@ -27,7 +27,7 @@ const Handle = styled('div')<InternalProps>`
       const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : '';
       return !p.$disabled && `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
     }};
-    transform: translateY(-50%) scale3d(0.8, 0.8, 0.8);
+    transform: translateY(-50%) scale3d(0.85, 0.85, 0.85);
   }
 
   &:focus {
@@ -45,7 +45,7 @@ const Handle = styled('div')<InternalProps>`
   }
 `;
 
-const SliderThumb: Component = React.forwardRef<HTMLDivElement, Props>(
+const SliderHandle: Component = React.forwardRef<HTMLDivElement, Props>(
   (
     {
       disabled,
@@ -86,4 +86,4 @@ const SliderThumb: Component = React.forwardRef<HTMLDivElement, Props>(
   },
 );
 
-export default SliderThumb;
+export default SliderHandle;

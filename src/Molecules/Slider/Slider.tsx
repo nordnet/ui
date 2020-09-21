@@ -2,7 +2,7 @@ import React, { KeyboardEvent, MouseEvent, TouchEvent, useRef, useState } from '
 import styled from 'styled-components';
 import { Component, InternalProps } from './Slider.types';
 import { THUMB_BIG_PX, THUMB_SMALL_PX, VARIANT_TYPES } from './constants';
-import { SliderThumb } from './SliderThumb';
+import { SliderHandle } from './SliderHandle';
 import { SliderTrack } from './SliderTrack';
 import { SliderTrackHighlight } from './SliderTrackHighlight';
 import { isNumber, isFunction } from '../../common/utils';
@@ -179,8 +179,8 @@ const Slider: Component = ({
       tabIndex={-1}
     >
       <SliderTrack variant={variant}>
-        <SliderTrackHighlight sliderColor={sliderColor} value={value} variant={variant} />
-        <SliderThumb
+        <SliderTrackHighlight sliderColor={sliderColor} value={trackPercent} variant={variant} />
+        <SliderHandle
           disabled={disabled}
           max={max}
           min={min}
