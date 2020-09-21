@@ -43,6 +43,30 @@ const valueToPercent = (value: number, min: number, max: number) => {
   return ((value - min) * 100) / (max - min);
 };
 
+const getNewValue = (
+  clickPosition: number,
+  track: HTMLElement | null,
+  props: {
+    min: number;
+    max: number;
+    step: number;
+  },
+) => {
+  if (!track || !clickPosition) {
+    return null;
+  }
+
+  const { min, max, step } = props;
+
+  const { left, width } = track.getBoundingClientRect();
+  const diff = clickPosition - left;
+  const percent = diff / width;
+  const newValue = percentToValue(percent, min, max);
+  const newValueRounded = roundValueToStep(newValue, step, min);
+
+  return clamp(newValueRounded, min, max);
+};
+
 const Container = styled.div<InternalProps>`
   display: flex;
   align-items: center;
@@ -71,23 +95,13 @@ const Slider: Component = ({
     variant === 'big' ? `${THUMB_BIG_PX}` : `${THUMB_SMALL_PX}`
   }px * ${trackPercent * 0.01})`;
 
-  const getNewValue = (clickPosition: number) => {
-    if (!trackRef.current || !handlePosition) {
-      return null;
-    }
-
-    const { left, width } = trackRef.current.getBoundingClientRect();
-    const diff = clickPosition - left;
-    const percent = diff / width;
-    const newValue = percentToValue(percent, min, max);
-    const newValueRounded = roundValueToStep(newValue, step, min);
-
-    return clamp(newValueRounded, min, max);
-  };
-
   const handleChange = (clickPosition: number) => {
     if (!disabled) {
-      const newValue = getNewValue(clickPosition);
+      const newValue = getNewValue(clickPosition, trackRef.current, {
+        min,
+        max,
+        step,
+      });
 
       if (newValue !== null) {
         setValueInternal(newValue);
