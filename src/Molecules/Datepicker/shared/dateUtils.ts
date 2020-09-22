@@ -7,7 +7,7 @@ import parseISO from 'date-fns/parseISO';
 import startOfWeek from 'date-fns/startOfWeek';
 import svLocale from 'date-fns/locale/sv';
 import enLocale from 'date-fns/locale/en-US';
-import noLocale from 'date-fns/locale/nn';
+import nbLocale from 'date-fns/locale/nb';
 import daLocale from 'date-fns/locale/da';
 import fiLocale from 'date-fns/locale/fi';
 
@@ -17,10 +17,10 @@ type Options = {
 
 const locales: { [key: string]: any } = {
   sv: svLocale,
-  en: enLocale,
-  no: noLocale,
+  nb: nbLocale,
   da: daLocale,
   fi: fiLocale,
+  en: enLocale,
 };
 
 export const getLocale = (locale: string = ''): any => {
