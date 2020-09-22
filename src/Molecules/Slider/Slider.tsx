@@ -104,10 +104,12 @@ const Slider: Component = ({
       });
 
       if (newValue !== null) {
-        setValueInternal(newValue);
+        if (!isControlled) {
+          setValueInternal(newValue);
+        }
 
         if (isFunction(onChange)) {
-          onChange(newValue - (newValue % step));
+          onChange(newValue);
         }
       }
     }
