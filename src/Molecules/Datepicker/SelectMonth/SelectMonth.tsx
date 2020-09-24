@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import format from 'date-fns/format';
 import styled from 'styled-components';
 import { getLocale } from '../shared/dateUtils';
@@ -8,6 +8,7 @@ import { Box, Input, Icon, Flexbox, Typography } from '../../..';
 const months = [...Array(12).keys()];
 
 const SelectMonth: React.FC<Props> = ({ locale, now, onChange }) => {
+  const [isHover, setIsHover] = useState(false);
   const opts = { locale: getLocale(locale) };
   const monthOptions = months.map((index: number) => ({
     value: index,
@@ -25,7 +26,16 @@ const SelectMonth: React.FC<Props> = ({ locale, now, onChange }) => {
       // @ts-ignore
       SelectedValue: () => {
         const [state] = useSelectMachineFromContext();
-        const open = (state.value as any).open === 'on';
+        let icon = null;
+
+        if ((state.value as any).open === 'on') {
+          icon = <Icon.ChevronUp size={2} color={(t: any) => t.color.black} />;
+        } else if (isHover) {
+          icon = <Icon.ChevronDown size={2} color={(t: any) => t.color.cta} />;
+        } else {
+          icon = <Box px={1} />;
+        }
+
         return (
           <Flexbox container>
             <Flexbox item>
@@ -35,18 +45,14 @@ const SelectMonth: React.FC<Props> = ({ locale, now, onChange }) => {
             </Flexbox>
             <Flexbox item>
               <Box pt={4} mr={2}>
-                {open ? (
-                  <Icon.ChevronDown size={2} color={(t: any) => t.color.cta} />
-                ) : (
-                  <Box px={1} />
-                )}
+                {icon}
               </Box>
             </Flexbox>
           </Flexbox>
         );
       },
     }),
-    [now, opts, useSelectMachineFromContext],
+    [now, opts, isHover, useSelectMachineFromContext],
   );
 
   const selected = monthOptions.filter((p) => p.value === now.getMonth());
@@ -56,16 +62,18 @@ const SelectMonth: React.FC<Props> = ({ locale, now, onChange }) => {
   `;
 
   return (
-    <StyledInputSelect
-      label="Month"
-      id="datepicker-selectmonth"
-      options={monthOptions}
-      noFormField
-      components={components}
-      onChange={onChangeHandler}
-      value={selected}
-      listPosition="left"
-    />
+    <div onMouseLeave={() => setIsHover(false)} onMouseEnter={() => setIsHover(true)}>
+      <StyledInputSelect
+        label="Month"
+        id="datepicker-selectmonth"
+        options={monthOptions}
+        noFormField
+        components={components}
+        onChange={onChangeHandler}
+        value={selected}
+        listPosition="left"
+      />
+    </div>
   );
 };
 

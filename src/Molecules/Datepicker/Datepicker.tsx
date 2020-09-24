@@ -15,7 +15,6 @@ const StyledInputText = styled(Input.Text)`
 
 const StyledDropdownBubble = styled(DropdownBubble)`
   max-width: 317px;
-  background: ${({ theme }) => theme.color.background};
   margin-top: -11px;
   &:after,
   &:before {
@@ -24,7 +23,7 @@ const StyledDropdownBubble = styled(DropdownBubble)`
 `;
 
 export const Datepicker = (React.forwardRef<HTMLDivElement, Props>(
-  ({ onChange, label, locale = 'en', dateFormat = 'yyyy-MM-dd', disabled, width }, ref) => {
+  ({ onChange, label, locale = 'en', dateFormat = 'dd/MM/yyyy', disabled, width }, ref) => {
     const opts = {
       locale: getLocale(locale),
     };
