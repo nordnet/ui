@@ -58,6 +58,10 @@ Array [
   height: 30px;
 }
 
+.c0:focus {
+  outline: none;
+}
+
 <div
     className="c0"
     onClick={[Function]}
@@ -439,6 +443,10 @@ Array [
   height: 30px;
 }
 
+.c0:focus {
+  outline: none;
+}
+
 <div
     className="c0"
     onClick={[Function]}
@@ -550,6 +558,10 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   height: 30px;
+}
+
+.c0:focus {
+  outline: none;
 }
 
 <div
@@ -672,6 +684,10 @@ Array [
   height: 30px;
 }
 
+.c0:focus {
+  outline: none;
+}
+
 <div
     className="c0"
     onClick={[Function]}
@@ -790,6 +806,10 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   height: 30px;
+}
+
+.c0:focus {
+  outline: none;
 }
 
 <div
@@ -912,6 +932,10 @@ Array [
   height: 30px;
 }
 
+.c0:focus {
+  outline: none;
+}
+
 <div
     className="c0"
     onClick={[Function]}
@@ -1030,6 +1054,10 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   height: 20px;
+}
+
+.c0:focus {
+  outline: none;
 }
 
 <div

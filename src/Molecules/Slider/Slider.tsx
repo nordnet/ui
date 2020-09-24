@@ -72,6 +72,10 @@ const Container = styled.div<InternalProps>`
   align-items: center;
   height: ${(p) =>
     p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL_PX}px` : `${THUMB_BIG_PX}px`};
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 const Slider: Component = ({
@@ -95,6 +99,16 @@ const Slider: Component = ({
     variant === 'big' ? `${THUMB_BIG_PX}` : `${THUMB_SMALL_PX}`
   }px * ${trackPercent * 0.01})`;
 
+  const updateValue = (newValue: number) => {
+    if (!isControlled) {
+      setValueInternal(newValue);
+    }
+
+    if (isFunction(onChange)) {
+      onChange(newValue);
+    }
+  };
+
   const handleChange = (clickPosition: number) => {
     if (!disabled) {
       const newValue = getNewValue(clickPosition, trackRef.current, {
@@ -104,13 +118,7 @@ const Slider: Component = ({
       });
 
       if (newValue !== null) {
-        if (!isControlled) {
-          setValueInternal(newValue);
-        }
-
-        if (isFunction(onChange)) {
-          onChange(newValue);
-        }
+        updateValue(newValue);
       }
     }
   };
@@ -157,6 +165,7 @@ const Slider: Component = ({
 
   const handleTrackClick = (event: MouseEvent) => {
     const pointerPosition = event.clientX;
+    thumbRef.current?.focus();
 
     handleChange(pointerPosition);
   };
@@ -170,18 +179,15 @@ const Slider: Component = ({
         (event.key && ['ArrowLeft', 'ArrowDown'].includes(event.key)) ||
         (event.keyCode && [37, 40].includes(event.keyCode));
 
-      let newX = value;
+      let newValue = value;
       if (increase) {
-        newX = value + step;
+        newValue = value + step;
       }
       if (decrease) {
-        newX = value - step;
+        newValue = value - step;
       }
-      if (newX >= min && newX <= max) {
-        if (isFunction(onChange)) {
-          onChange(newX);
-        }
-      }
+
+      updateValue(clamp(newValue, min, max));
     }
   };
 
