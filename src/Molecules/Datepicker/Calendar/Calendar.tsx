@@ -2,6 +2,7 @@ import React from 'react';
 import format from 'date-fns/format';
 import isSameDay from 'date-fns/isSameDay';
 import isSameMonth from 'date-fns/isSameMonth';
+import isToday from 'date-fns/isToday';
 import styled from 'styled-components';
 import { Box, Flexbox, Typography } from '../../..';
 import { getCalendar, getLocale } from '../shared/dateUtils';
@@ -17,7 +18,10 @@ const StyledCalendarDay = styled(Box)`
   min-width: 17px;
   border: 1px solid transparent;
   text-align: center;
-  margin-bottom: 5px;
+
+  &.today {
+    border: 1px solid ${({ theme }) => theme.color.background};
+  }
 
   &.active {
     border: 1px solid ${({ theme }) => theme.color.cta};
@@ -37,7 +41,11 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
   sameMonth = true,
   selected,
 }) => {
-  const classNames: Array<string> = [className, selected ? 'active' : ''];
+  const classNames: Array<string> = [
+    className,
+    selected ? 'active' : '',
+    isToday(date) ? 'today' : '',
+  ];
 
   return (
     <StyledCalendarDay
