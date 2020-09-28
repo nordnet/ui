@@ -58,6 +58,8 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>(
       }
     };
 
+    const handleInputOnFocus = () => setOpen(true);
+
     const datepicker = (
       <Box pl={2} pb={1}>
         <Header
@@ -76,6 +78,7 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>(
     );
 
     const inputLeftAddon = open ? <Icon.CrossThin size={3} /> : null;
+    const inputRightAddon = <Icon.Calendar size={4} />;
 
     const datepickerRef = useRef<HTMLDivElement>(null);
     useOnClickOutside(datepickerRef, () => setOpen(false));
@@ -90,9 +93,9 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>(
             placeholder={dateFormat.toLowerCase()}
             value={selectedDateFormatted}
             leftAddon={inputLeftAddon}
-            rightAddon={<Icon.Calendar size={4} />}
+            rightAddon={inputRightAddon}
             onChange={handleInputOnChange}
-            onFocus={() => setOpen(true)}
+            onFocus={handleInputOnFocus}
             width={width}
           />
         </Flexbox>

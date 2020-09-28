@@ -65,6 +65,7 @@ const Calendar: React.FC<Props> = ({ locale, now, onClick, selectedDate }) => {
   const calendar = getCalendar(now, {
     locale: getLocale(locale),
   });
+
   return (
     <Flexbox container direction="column">
       <Flexbox container>
