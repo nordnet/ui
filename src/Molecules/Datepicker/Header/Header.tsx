@@ -6,7 +6,7 @@ import SelectYear from '../SelectYear';
 
 const Header: React.FC<Props> = ({ locale, now, onMonthChange, onYearChange }) => {
   return (
-    <Box mt={2}>
+    <>
       <Flexbox container justifyContent="space-between">
         <Flexbox item>
           <Box p={3}>
@@ -39,7 +39,7 @@ const Header: React.FC<Props> = ({ locale, now, onMonthChange, onYearChange }) =
           </Box>
         </Flexbox>
       </Flexbox>
-    </Box>
+    </>
   );
 };
 

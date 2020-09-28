@@ -9,15 +9,22 @@ import { getCalendar, getLocale } from '../shared/dateUtils';
 import { CalendarDayProps, Props } from './Calendar.types';
 
 const StyledWeekDay = styled(Box)`
-  min-width: 43px;
+  min-width: 44px;
   text-align: center;
+  margin-bottom: 8px;
+  margin-top: 20px;
 `;
 
 const StyledCalendarDay = styled(Box)`
   background: ${({ theme }) => theme.color.backgroundInput};
-  min-width: 17px;
+  min-width: 38px;
+  min-height: 38px;
   border: 1px solid transparent;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: gray;
+  margin: 2px;
 
   &.today {
     border: 1px solid ${({ theme }) => theme.color.background};
@@ -26,8 +33,6 @@ const StyledCalendarDay = styled(Box)`
   &.active {
     border: 1px solid ${({ theme }) => theme.color.cta};
   }
-
-  color: gray;
 
   &.same {
     color: black;
@@ -48,13 +53,8 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
   ];
 
   return (
-    <StyledCalendarDay
-      className={classNames.join(' ')}
-      py={2}
-      px={3}
-      onClick={() => onClick && onClick(date)}
-    >
-      <Typography type="secondary" color={(t) => t.color[sameMonth ? 'text' : 'label']}>
+    <StyledCalendarDay className={classNames.join(' ')} onClick={() => onClick && onClick(date)}>
+      <Typography type="tertiary" color={(t) => t.color[sameMonth ? 'text' : 'label']}>
         {format(date, 'd')}
       </Typography>
     </StyledCalendarDay>
@@ -70,9 +70,9 @@ const Calendar: React.FC<Props> = ({ locale, now, onClick, selectedDate }) => {
     <Flexbox container direction="column">
       <Flexbox container>
         {calendar.weekDays.map((n) => (
-          <Flexbox container item key={n}>
-            <StyledWeekDay py={3}>
-              <Typography type="secondary">{n}</Typography>
+          <Flexbox item justifyContent="center" alignItems="center" key={n}>
+            <StyledWeekDay>
+              <Typography type="tertiary">{n}</Typography>
             </StyledWeekDay>
           </Flexbox>
         ))}
@@ -80,14 +80,12 @@ const Calendar: React.FC<Props> = ({ locale, now, onClick, selectedDate }) => {
       {calendar.dates.map((week) => (
         <Flexbox container key={week.toString()}>
           {week.map((d) => (
-            <Flexbox container item key={d.toString()}>
-              <CalendarDay
-                date={d}
-                onClick={() => onClick(d)}
-                selected={selectedDate && isSameDay(selectedDate, d)}
-                sameMonth={isSameMonth(now, d)}
-              />
-            </Flexbox>
+            <CalendarDay
+              date={d}
+              onClick={() => onClick(d)}
+              selected={selectedDate && isSameDay(selectedDate, d)}
+              sameMonth={isSameMonth(now, d)}
+            />
           ))}
         </Flexbox>
       ))}
