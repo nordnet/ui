@@ -5,6 +5,7 @@ export type Props = {
   locale?: string;
   dateFormat?: string;
   disabled?: boolean;
+  id: string;
   width?: string | number;
   ref?: React.Ref<HTMLDivElement>;
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;

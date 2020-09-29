@@ -9,14 +9,19 @@ const theme = createTheme();
 afterEach(cleanup);
 
 test('Select single date', async () => {
+  const INPUT_ID = 'datepicker-input';
   const onChange = (date: Date) => {
     expect(date.getDate()).toBe(20);
   };
-  const { getByText } = render(
+
+  const { getByText, getByTestId } = render(
     <ThemeProvider theme={theme}>
-      <Datepicker label="Label" onChange={onChange} />
+      <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
     </ThemeProvider>,
   );
+
+  const input = getByTestId(INPUT_ID);
+  fireEvent.focus(input);
 
   const date = getByText('20');
   fireEvent.click(date);

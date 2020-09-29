@@ -9,7 +9,7 @@ export default {
 };
 
 export const defaultStory = () => {
-  return <Datepicker label="Label" />;
+  return <Datepicker id="input-id" label="Label" />;
 };
 
 defaultStory.story = {
