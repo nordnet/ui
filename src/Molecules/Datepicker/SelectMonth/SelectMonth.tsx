@@ -7,6 +7,10 @@ import { Box, Input, Icon, Flexbox, Typography } from '../../..';
 
 const months = [...Array(12).keys()];
 
+const StyledInputSelect = styled(Input.Select)`
+  margin-right: 12px;
+`;
+
 const SelectMonth: React.FC<Props> = ({ locale, now, onChange }) => {
   const [isHover, setIsHover] = useState(false);
   const opts = { locale: getLocale(locale) };
@@ -39,12 +43,12 @@ const SelectMonth: React.FC<Props> = ({ locale, now, onChange }) => {
         return (
           <Flexbox container>
             <Flexbox item>
-              <Box pt={2} pr={2}>
+              <Box pt={2} pr={1}>
                 <Typography weight="bold">{format(now, 'MMMM', opts)}</Typography>
               </Box>
             </Flexbox>
             <Flexbox item>
-              <Box pt={4} mr={2}>
+              <Box pt={4} mr={1}>
                 {icon}
               </Box>
             </Flexbox>
@@ -56,10 +60,6 @@ const SelectMonth: React.FC<Props> = ({ locale, now, onChange }) => {
   );
 
   const selected = monthOptions.filter((p) => p.value === now.getMonth());
-
-  const StyledInputSelect = styled(Input.Select)`
-    right: -15px;
-  `;
 
   return (
     <div onMouseLeave={() => setIsHover(false)} onMouseEnter={() => setIsHover(true)}>

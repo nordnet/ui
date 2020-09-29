@@ -9,7 +9,7 @@ const Header: React.FC<Props> = ({ locale, now, onMonthChange, onYearChange }) =
     <>
       <Flexbox container justifyContent="space-between">
         <Flexbox item>
-          <Box p={3}>
+          <Box pt={3}>
             <Link
               onClick={() => {
                 onMonthChange(now.getMonth() - 1);
@@ -28,7 +28,7 @@ const Header: React.FC<Props> = ({ locale, now, onMonthChange, onYearChange }) =
           </Flexbox>
         </Flexbox>
         <Flexbox item>
-          <Box p={3}>
+          <Box pt={3}>
             <Link
               onClick={() => {
                 onMonthChange(now.getMonth() + 1);
