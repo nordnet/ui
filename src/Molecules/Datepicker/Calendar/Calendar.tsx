@@ -81,6 +81,7 @@ const Calendar: React.FC<Props> = ({ locale, now, onClick, selectedDate }) => {
         <Flexbox container key={week.toString()}>
           {week.map((d) => (
             <CalendarDay
+              key={d.toString()}
               date={d}
               onClick={() => onClick(d)}
               selected={selectedDate && isSameDay(selectedDate, d)}
