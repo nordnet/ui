@@ -4,13 +4,14 @@ import { Box, Flexbox, Link, Icon } from '../../..';
 import SelectMonth from '../SelectMonth';
 import SelectYear from '../SelectYear';
 
-const Header: React.FC<Props> = ({ locale, now, onMonthChange, onYearChange }) => {
+const Header: React.FC<Props> = ({ id, locale, now, onMonthChange, onYearChange }) => {
   return (
     <>
       <Flexbox container justifyContent="space-between">
         <Flexbox item>
           <Box pt={3}>
             <Link
+              data-testid="datepicker-arrow-left"
               onClick={() => {
                 onMonthChange(now.getMonth() - 1);
               }}
@@ -21,15 +22,16 @@ const Header: React.FC<Props> = ({ locale, now, onMonthChange, onYearChange }) =
         </Flexbox>
         <Flexbox container>
           <Flexbox item>
-            <SelectMonth locale={locale} now={now} onChange={onMonthChange} />
+            <SelectMonth id={id} locale={locale} now={now} onChange={onMonthChange} />
           </Flexbox>
           <Flexbox item>
-            <SelectYear locale={locale} now={now} onChange={onYearChange} />
+            <SelectYear id={id} locale={locale} now={now} onChange={onYearChange} />
           </Flexbox>
         </Flexbox>
         <Flexbox item>
           <Box pt={3}>
             <Link
+              data-testid="datepicker-arrow-right"
               onClick={() => {
                 onMonthChange(now.getMonth() + 1);
               }}

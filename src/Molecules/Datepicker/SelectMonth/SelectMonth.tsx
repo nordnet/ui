@@ -11,7 +11,7 @@ const StyledInputSelect = styled(Input.Select)`
   margin-right: 12px;
 `;
 
-const SelectMonth: React.FC<Props> = ({ locale, now, onChange }) => {
+const SelectMonth: React.FC<Props> = ({ id, locale, now, onChange }) => {
   const [isHover, setIsHover] = useState(false);
   const opts = { locale: getLocale(locale) };
   const monthOptions = months.map((index: number) => ({
@@ -41,7 +41,7 @@ const SelectMonth: React.FC<Props> = ({ locale, now, onChange }) => {
         }
 
         return (
-          <Flexbox container>
+          <Flexbox container data-testid="datepicker-select-month">
             <Flexbox item>
               <Box pt={2} pr={1}>
                 <Typography weight="bold">{format(now, 'MMMM', opts)}</Typography>
@@ -65,7 +65,7 @@ const SelectMonth: React.FC<Props> = ({ locale, now, onChange }) => {
     <div onMouseLeave={() => setIsHover(false)} onMouseEnter={() => setIsHover(true)}>
       <StyledInputSelect
         label="Month"
-        id="datepicker-selectmonth"
+        id={`${id}-select-month`}
         options={monthOptions}
         noFormField
         components={components}

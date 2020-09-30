@@ -3,7 +3,7 @@ import { Props } from './SelectYear.types';
 import { Box, Input, Flexbox, Icon, Typography } from '../../..';
 import { newDate } from '../shared/dateUtils';
 
-const SelectYear: React.FC<Props> = ({ now, onChange, years = 10 }) => {
+const SelectYear: React.FC<Props> = ({ id, now, onChange, years = 10 }) => {
   const [isHover, setIsHover] = useState(false);
   const today = newDate();
   const yearOptions = [...Array(years).keys()].map((index: number) => ({
@@ -33,7 +33,7 @@ const SelectYear: React.FC<Props> = ({ now, onChange, years = 10 }) => {
         }
 
         return (
-          <Flexbox container>
+          <Flexbox container data-testid="datepicker-select-year">
             <Flexbox item>
               <Box pt={2} pr={1}>
                 <Typography weight="bold">{now.getFullYear()}</Typography>
@@ -57,7 +57,7 @@ const SelectYear: React.FC<Props> = ({ now, onChange, years = 10 }) => {
     <div onMouseLeave={() => setIsHover(false)} onMouseEnter={() => setIsHover(true)}>
       <Input.Select
         label="Year"
-        id="datepicker-selectyear"
+        id={`${id}-select-year`}
         options={yearOptions}
         noFormField
         components={components}

@@ -67,6 +67,7 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const datepicker = (
     <Box m={3}>
       <Header
+        id={id}
         now={now}
         locale={locale}
         onMonthChange={handleOnMonthChange}
