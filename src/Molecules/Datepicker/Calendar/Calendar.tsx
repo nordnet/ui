@@ -30,8 +30,16 @@ const StyledCalendarDay = styled(Box)`
     border: 1px solid ${({ theme }) => theme.color.background};
   }
 
-  &.active {
+  &:hover {
     border: 1px solid ${({ theme }) => theme.color.cta};
+  }
+
+  &.selected {
+    background: ${({ theme }) => theme.color.cta};
+
+    span {
+      color: white;
+    }
   }
 
   &.same {
@@ -48,7 +56,7 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
 }) => {
   const classNames: Array<string> = [
     className,
-    selected ? 'active' : '',
+    selected ? 'selected' : '',
     isToday(date) ? 'today' : '',
   ];
 
