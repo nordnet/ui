@@ -9,6 +9,11 @@ const months = [...Array(12).keys()];
 
 const StyledInputSelect = styled(Input.Select)`
   margin-right: 12px;
+
+  > div > div > div {
+    margin-right: -22px;
+    margin-top: -10px;
+  }
 `;
 
 const SelectMonth: React.FC<Props> = ({ id, locale, now, onChange }) => {
@@ -72,6 +77,7 @@ const SelectMonth: React.FC<Props> = ({ id, locale, now, onChange }) => {
         onChange={onChangeHandler}
         value={selected}
         listPosition="left"
+        width="140px"
       />
     </div>
   );

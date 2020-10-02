@@ -1,7 +1,15 @@
 import React, { useMemo, useState } from 'react';
+import styled from 'styled-components';
 import { Props } from './SelectYear.types';
 import { Box, Input, Flexbox, Icon, Typography } from '../../..';
 import { newDate } from '../shared/dateUtils';
+
+const StyledInputSelect = styled(Input.Select)`
+  > div > div > div {
+    margin-right: -22px;
+    margin-top: -10px;
+  }
+`;
 
 const SelectYear: React.FC<Props> = ({ id, now, onChange, years = 10 }) => {
   const [isHover, setIsHover] = useState(false);
@@ -55,7 +63,7 @@ const SelectYear: React.FC<Props> = ({ id, now, onChange, years = 10 }) => {
 
   return (
     <div onMouseLeave={() => setIsHover(false)} onMouseEnter={() => setIsHover(true)}>
-      <Input.Select
+      <StyledInputSelect
         label="Year"
         id={`${id}-select-year`}
         options={yearOptions}
@@ -64,6 +72,7 @@ const SelectYear: React.FC<Props> = ({ id, now, onChange, years = 10 }) => {
         onChange={onChangeHandler}
         value={selected}
         listPosition="left"
+        width="100px"
       />
     </div>
   );
