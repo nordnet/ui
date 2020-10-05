@@ -150,9 +150,38 @@ test('Change year with select input', async () => {
   const select = getByTestId('datepicker-select-year');
   fireEvent.click(select);
 
-  const month = getByText('2019');
-  fireEvent.click(month);
+  const year = getByText('2019');
+  fireEvent.click(year);
 
   const date = getByText('20');
   fireEvent.click(date);
+});
+
+test('Disable certain dates', async () => {
+  const INPUT_ID = 'datepicker-input';
+  const onChange = () => {
+    expect(true).toBe(false);
+  };
+
+  const { getByText, getByTestId } = render(
+    <ThemeProvider theme={theme}>
+      <Datepicker
+        id={INPUT_ID}
+        label="Label"
+        onChange={onChange}
+        disableDate={(date: Date) => date.getDate() === 20}
+      />
+    </ThemeProvider>,
+  );
+
+  const input = getByTestId(INPUT_ID);
+  fireEvent.focus(input);
+
+  const select = getByTestId('datepicker-select-year');
+  fireEvent.click(select);
+
+  const date = getByText('20');
+  fireEvent.click(date);
+
+  expect(date.parentElement.className).toContain('disabled');
 });

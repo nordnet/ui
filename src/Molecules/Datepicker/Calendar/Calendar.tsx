@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import format from 'date-fns/format';
 import isSameDay from 'date-fns/isSameDay';
 import isSameMonth from 'date-fns/isSameMonth';
@@ -42,26 +42,49 @@ const StyledCalendarDay = styled(Box)`
     }
   }
 
-  &.same {
-    color: black;
+  &.disabled {
+    background: ${({ theme }) => theme.color.disabledBackground};
+    color: ${({ theme }) => theme.color.disabledText};
+    cursor: not-allowed;
+
+    span {
+      color: ${({ theme }) => theme.color.disabledText};
+    }
+
+    &:hover {
+      border: 1px solid ${({ theme }) => theme.color.disabledBackground};
+    }
   }
 `;
 
 const CalendarDay: React.FC<CalendarDayProps> = ({
   className = '',
   date,
+  enabled = true,
+  disabled = false,
   onClick,
   sameMonth = true,
   selected,
 }) => {
   const classNames: Array<string> = [
     className,
+    disabled || (typeof enabled === 'boolean' && !enabled) ? 'disabled' : '',
     selected ? 'selected' : '',
     isToday(date) ? 'today' : '',
   ];
 
+  const handleOnClick = useCallback(() => {
+    if (disabled) {
+      return;
+    }
+
+    if (onClick) {
+      onClick(date);
+    }
+  }, [date, disabled]);
+
   return (
-    <StyledCalendarDay className={classNames.join(' ')} onClick={() => onClick && onClick(date)}>
+    <StyledCalendarDay className={classNames.join(' ')} onClick={handleOnClick}>
       <Typography type="tertiary" color={(t) => t.color[sameMonth ? 'text' : 'label']}>
         {format(date, 'd')}
       </Typography>
@@ -69,7 +92,14 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
   );
 };
 
-const Calendar: React.FC<Props> = ({ locale, now, onClick, selectedDate }) => {
+const Calendar: React.FC<Props> = ({
+  disableDate,
+  enableDate,
+  locale,
+  now,
+  onClick,
+  selectedDate,
+}) => {
   const calendar = getCalendar(now, {
     locale: getLocale(locale),
   });
@@ -91,6 +121,8 @@ const Calendar: React.FC<Props> = ({ locale, now, onClick, selectedDate }) => {
             <CalendarDay
               key={d.toString()}
               date={d}
+              enabled={enableDate && enableDate(d)}
+              disabled={disableDate && disableDate(d)}
               onClick={() => onClick(d)}
               selected={selectedDate && isSameDay(selectedDate, d)}
               sameMonth={isSameMonth(now, d)}

@@ -4,7 +4,7 @@ import parseISO from 'date-fns/parseISO';
 import format from 'date-fns/format';
 import { Props } from './Datepicker.types';
 import { Box, Flexbox, Input, Icon, DropdownBubble } from '../..';
-import { assert } from '../../common/utils';
+import { assert, isUndefined } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
 import { newDate, getLocale, isValid } from './shared/dateUtils';
 import Header from './Header';
@@ -24,9 +24,33 @@ const StyledDropdownBubble = styled(DropdownBubble)`
 `;
 
 export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) => {
-  const { onChange, label, locale = 'en', dateFormat = 'dd/MM/yyyy', disabled, id, width } = props;
+  const {
+    onChange,
+    label,
+    locale = 'en',
+    dateFormat = 'dd/MM/yyyy',
+    disabled,
+    disableDate,
+    enableDate,
+    id,
+    width,
+  } = props;
 
   assert(Boolean(props.id), `Datepicker: "id" is required.`);
+
+  if (disableDate) {
+    assert(
+      isUndefined(enableDate),
+      `Datepicker: "enableDate" cannot be used at the same time as "disableDate".`,
+    );
+  }
+
+  if (enableDate) {
+    assert(
+      isUndefined(disableDate),
+      `Datepicker: "disableDate" cannot be used at the same time as "enableDate".`,
+    );
+  }
 
   const opts = {
     locale: getLocale(locale),
@@ -74,6 +98,8 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         onYearChange={handleOnYearChange}
       />
       <Calendar
+        disableDate={disableDate}
+        enableDate={enableDate}
         now={now}
         locale={locale}
         onClick={handleOnDateCliked}
