@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { getLocale } from '../shared/dateUtils';
 import { Props } from './SelectMonth.types';
 import { Box, Input, Icon, Flexbox, Typography } from '../../..';
+import { capitalize } from '../shared/textUtils';
 
 const months = [...Array(12).keys()];
 
@@ -21,7 +22,7 @@ const SelectMonth: React.FC<Props> = ({ id, locale, now, onChange }) => {
   const opts = { locale: getLocale(locale) };
   const monthOptions = months.map((index: number) => ({
     value: index,
-    label: format(new Date(now.getFullYear(), index), 'MMMM', opts),
+    label: capitalize(format(new Date(now.getFullYear(), index), 'MMMM', opts)),
   }));
 
   const onChangeHandler = (selected: Array<any>) => {
@@ -49,7 +50,7 @@ const SelectMonth: React.FC<Props> = ({ id, locale, now, onChange }) => {
           <Flexbox container data-testid="datepicker-select-month">
             <Flexbox item>
               <Box pt={2} pr={1}>
-                <Typography weight="bold">{format(now, 'MMMM', opts)}</Typography>
+                <Typography weight="bold">{capitalize(format(now, 'MMMM', opts))}</Typography>
               </Box>
             </Flexbox>
             <Flexbox item>

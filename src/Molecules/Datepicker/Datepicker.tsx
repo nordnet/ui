@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
 import parseISO from 'date-fns/parseISO';
 import format from 'date-fns/format';
+import { useIntl } from 'react-intl';
 import { Props } from './Datepicker.types';
 import { Box, Flexbox, Input, Icon, DropdownBubble } from '../..';
 import { assert, isUndefined } from '../../common/utils';
@@ -27,7 +28,6 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const {
     onChange,
     label,
-    locale = 'en',
     dateFormat = 'dd/MM/yyyy',
     disabled,
     disableDate,
@@ -35,6 +35,8 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     id,
     width,
   } = props;
+
+  const { locale } = useIntl();
 
   assert(Boolean(props.id), `Datepicker: "id" is required.`);
 

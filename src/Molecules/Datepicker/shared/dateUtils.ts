@@ -10,6 +10,7 @@ import enLocale from 'date-fns/locale/en-US';
 import nbLocale from 'date-fns/locale/nb';
 import daLocale from 'date-fns/locale/da';
 import fiLocale from 'date-fns/locale/fi';
+import { capitalize } from './textUtils';
 
 type Options = {
   locale: Locale;
@@ -59,9 +60,11 @@ export const getCalendar = (now: Date, opts?: Options): CalendarType => {
   });
 
   calendar.weekDays = [...Array(7).keys()].map((w) =>
-    format(addDays(firstCalDay, w), 'EEE', {
-      locale: opts?.locale,
-    }),
+    capitalize(
+      format(addDays(firstCalDay, w), 'EEE', {
+        locale: opts?.locale,
+      }),
+    ),
   );
 
   calendar.dates = [...Array(6).keys()].map((w) =>

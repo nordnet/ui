@@ -1,12 +1,10 @@
 import React from 'react';
 import { render, fireEvent, cleanup } from '@testing-library/react';
-import { ThemeProvider } from 'styled-components';
 import '@testing-library/jest-dom/extend-expect';
 import { advanceTo, clear } from 'jest-date-mock';
 import { Datepicker } from '../Datepicker';
-import { createTheme } from '../../../theme';
+import { PageProviders } from '../../../common/testUtils';
 
-const theme = createTheme();
 afterEach(cleanup);
 
 beforeAll(() => {
@@ -24,9 +22,9 @@ test('Select single date', async () => {
   };
 
   const { getByText, getByTestId } = render(
-    <ThemeProvider theme={theme}>
+    <PageProviders>
       <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
-    </ThemeProvider>,
+    </PageProviders>,
   );
 
   const input = getByTestId(INPUT_ID);
@@ -44,9 +42,9 @@ test('Select previous month', async () => {
   };
 
   const { getByText, getByTestId } = render(
-    <ThemeProvider theme={theme}>
+    <PageProviders>
       <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
-    </ThemeProvider>,
+    </PageProviders>,
   );
 
   const input = getByTestId(INPUT_ID);
@@ -67,9 +65,9 @@ test('Select next month with left arrow', async () => {
   };
 
   const { getByText, getByTestId } = render(
-    <ThemeProvider theme={theme}>
+    <PageProviders>
       <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
-    </ThemeProvider>,
+    </PageProviders>,
   );
 
   const input = getByTestId(INPUT_ID);
@@ -90,9 +88,9 @@ test('Select next month with right arrow', async () => {
   };
 
   const { getByText, getByTestId } = render(
-    <ThemeProvider theme={theme}>
+    <PageProviders>
       <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
-    </ThemeProvider>,
+    </PageProviders>,
   );
 
   const input = getByTestId(INPUT_ID);
@@ -113,9 +111,9 @@ test('Change month with select input', async () => {
   };
 
   const { getByText, getByTestId } = render(
-    <ThemeProvider theme={theme}>
+    <PageProviders>
       <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
-    </ThemeProvider>,
+    </PageProviders>,
   );
 
   const input = getByTestId(INPUT_ID);
@@ -139,9 +137,9 @@ test('Change year with select input', async () => {
   };
 
   const { getByText, getByTestId } = render(
-    <ThemeProvider theme={theme}>
+    <PageProviders>
       <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
-    </ThemeProvider>,
+    </PageProviders>,
   );
 
   const input = getByTestId(INPUT_ID);
@@ -164,14 +162,14 @@ test('Disable certain dates', async () => {
   };
 
   const { getByText, getByTestId } = render(
-    <ThemeProvider theme={theme}>
+    <PageProviders>
       <Datepicker
         id={INPUT_ID}
         label="Label"
         onChange={onChange}
         disableDate={(date: Date) => date.getDate() === 20}
       />
-    </ThemeProvider>,
+    </PageProviders>,
   );
 
   const input = getByTestId(INPUT_ID);
