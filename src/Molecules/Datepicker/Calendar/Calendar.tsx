@@ -128,7 +128,7 @@ const Calendar: React.FC<Props> = ({
   });
 
   return (
-    <Flexbox container direction="column">
+    <Flexbox container direction="column" data-testid="datepicker-calendar">
       <Flexbox container>
         {calendar.weekDays.map((n) => (
           <Flexbox item justifyContent="center" alignItems="center" key={n}>
