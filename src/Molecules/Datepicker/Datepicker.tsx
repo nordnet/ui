@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useCallback } from 'react';
 import styled from 'styled-components';
 import parseISO from 'date-fns/parseISO';
 import format from 'date-fns/format';
@@ -36,8 +36,6 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     width,
   } = props;
 
-  const { locale } = useIntl();
-
   assert(Boolean(props.id), `Datepicker: "id" is required.`);
 
   if (disableDate) {
@@ -54,6 +52,8 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     );
   }
 
+  const { locale } = useIntl();
+
   const opts = {
     locale: getLocale(locale),
   };
@@ -63,32 +63,44 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const [selectedDate, setSelectedDate] = useState<Date>();
   const selectedDateFormatted = selectedDate ? format(selectedDate, dateFormat, opts) : '';
 
-  const handleOnDateCliked = (date: Date) => {
-    setSelectedDate(date);
-
-    if (onChange) {
-      onChange(date);
-    }
-  };
-
-  const handleOnMonthChange = (index: number) => {
-    now.setMonth(index);
-    setNow(newDate(now));
-  };
-
-  const handleOnYearChange = (year: number) => {
-    now.setFullYear(year);
-    setNow(newDate(now));
-  };
-
-  const handleInputOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const date = parseISO(event.target.value);
-    if (isValid(date)) {
+  const handleOnDateCliked = useCallback(
+    (date: Date) => {
       setSelectedDate(date);
-    }
-  };
 
-  const handleInputOnFocus = () => setOpen(true);
+      if (onChange) {
+        onChange(date);
+      }
+    },
+    [onChange, setSelectedDate],
+  );
+
+  const handleOnMonthChange = useCallback(
+    (index: number) => {
+      now.setMonth(index);
+      setNow(newDate(now));
+    },
+    [now, setNow, newDate],
+  );
+
+  const handleOnYearChange = useCallback(
+    (year: number) => {
+      now.setFullYear(year);
+      setNow(newDate(now));
+    },
+    [now, setNow, newDate],
+  );
+
+  const handleInputOnChange = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      const date = parseISO(event.target.value);
+      if (isValid(date)) {
+        setSelectedDate(date);
+      }
+    },
+    [parseISO, isValid, setSelectedDate],
+  );
+
+  const handleInputOnFocus = useCallback(() => setOpen(true), [setOpen]);
 
   const datepicker = (
     <Box m={3}>

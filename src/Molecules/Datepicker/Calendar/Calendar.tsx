@@ -1,10 +1,11 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import format from 'date-fns/format';
 import isSameDay from 'date-fns/isSameDay';
 import isSameMonth from 'date-fns/isSameMonth';
 import isToday from 'date-fns/isToday';
 import styled from 'styled-components';
 import { Box, Flexbox, Typography } from '../../..';
+import { useKeyPress } from '../../../common/Hooks';
 import { getCalendar, getLocale } from '../shared/dateUtils';
 import { CalendarDayProps, Props } from './Calendar.types';
 
@@ -100,6 +101,28 @@ const Calendar: React.FC<Props> = ({
   onClick,
   selectedDate,
 }) => {
+  const arrowLeft = useKeyPress('ArrowLeft');
+  const arrowRight = useKeyPress('ArrowRight');
+  const arrowUp = useKeyPress('ArrowUp');
+  const arrowDown = useKeyPress('ArrowDown');
+  const arrowDate = selectedDate || now;
+
+  useEffect(() => {
+    if (arrowLeft) {
+      arrowDate.setDate(arrowDate.getDate() - 1);
+      onClick(arrowDate);
+    } else if (arrowRight) {
+      arrowDate.setDate(arrowDate.getDate() + 1);
+      onClick(arrowDate);
+    } else if (arrowUp) {
+      arrowDate.setDate(arrowDate.getDate() - 7);
+      onClick(arrowDate);
+    } else if (arrowDown) {
+      arrowDate.setDate(arrowDate.getDate() + 7);
+      onClick(arrowDate);
+    }
+  }, [arrowDate, arrowLeft, arrowRight, arrowUp, arrowDown, onClick]);
+
   const calendar = getCalendar(now, {
     locale: getLocale(locale),
   });
