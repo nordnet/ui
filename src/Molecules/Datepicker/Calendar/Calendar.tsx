@@ -82,7 +82,7 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
     if (onClick) {
       onClick(date);
     }
-  }, [date, disabled]);
+  }, [date, disabled, onClick]);
 
   return (
     <StyledCalendarDay className={classNames.join(' ')} onClick={handleOnClick}>

@@ -262,7 +262,6 @@ test('Select previous week date with arrow up', async () => {
 test('Select next week date with arrow up', async () => {
   const INPUT_ID = 'datepicker-input';
   const onChange = (date: Date) => {
-    console.log(date);
     expect(date.getMonth()).toBe(9);
     expect(date.getDate()).toBe(6);
   };

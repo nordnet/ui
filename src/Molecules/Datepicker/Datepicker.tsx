@@ -79,7 +79,7 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
       now.setMonth(index);
       setNow(newDate(now));
     },
-    [now, setNow, newDate],
+    [now, setNow],
   );
 
   const handleOnYearChange = useCallback(
@@ -87,7 +87,7 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
       now.setFullYear(year);
       setNow(newDate(now));
     },
-    [now, setNow, newDate],
+    [now, setNow],
   );
 
   const handleInputOnChange = useCallback(
@@ -97,7 +97,7 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         setSelectedDate(date);
       }
     },
-    [parseISO, isValid, setSelectedDate],
+    [setSelectedDate],
   );
 
   const handleInputOnFocus = useCallback(() => setOpen(true), [setOpen]);
