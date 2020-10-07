@@ -57,6 +57,7 @@ export const getCalendar = (now: Date, opts?: Options): CalendarType => {
 
   const firstCalDay = startOfWeek(new Date(now.getFullYear(), now.getMonth(), 0), {
     locale: opts?.locale,
+    weekStartsOn: 1,
   });
 
   calendar.weekDays = [...Array(7).keys()].map((w) =>
