@@ -18,7 +18,7 @@ const StyledInputText = styled(Input.Text)`
 `;
 
 const StyledDropdownBubble = styled(DropdownBubble)`
-  max-width: 331px;
+  max-width: 301px;
   margin-top: -11px;
   &:after,
   &:before {
@@ -69,7 +69,7 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     locale: getLocale(locale),
   };
 
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const [now, setNow] = useState<Date>(newDate());
   const [selectedDate, setSelectedDate] = useState<Date>();
   const selectedDateFormatted = selectedDate ? format(selectedDate, dateFormat, opts) : '';
@@ -114,7 +114,7 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const handleInputOnFocus = useCallback(() => setOpen(true), [setOpen]);
 
   const datepicker = (
-    <Box m={3}>
+    <Box my={3} mx={2.8}>
       <Header
         id={id}
         now={now}

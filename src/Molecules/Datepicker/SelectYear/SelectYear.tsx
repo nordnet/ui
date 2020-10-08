@@ -43,12 +43,12 @@ const SelectYear: React.FC<Props> = ({ id, now, onChange, years = 10 }) => {
         return (
           <Flexbox container data-testid="datepicker-select-year">
             <Flexbox item>
-              <Box pt={2} pr={1}>
+              <Box pr={1}>
                 <Typography weight="bold">{now.getFullYear()}</Typography>
               </Box>
             </Flexbox>
             <Flexbox item>
-              <Box pt={4} mr={1}>
+              <Box pt={2} mr={1}>
                 {icon}
               </Box>
             </Flexbox>

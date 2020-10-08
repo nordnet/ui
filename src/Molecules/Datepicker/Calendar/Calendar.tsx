@@ -10,10 +10,10 @@ import { getCalendar, getLocale } from '../shared/dateUtils';
 import { CalendarDayProps, Props } from './Calendar.types';
 
 const StyledWeekDay = styled(Box)`
-  min-width: 44px;
+  min-width: 40px;
   text-align: center;
   margin-bottom: 8px;
-  margin-top: 20px;
+  margin-top: 14px;
 `;
 
 const StyledCalendarDay = styled(Box)`
@@ -25,7 +25,7 @@ const StyledCalendarDay = styled(Box)`
   align-items: center;
   display: flex;
   color: gray;
-  margin: 2px;
+  margin-bottom: 2px;
 
   &.today {
     border: 1px solid ${({ theme }) => theme.color.background};

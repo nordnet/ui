@@ -49,12 +49,12 @@ const SelectMonth: React.FC<Props> = ({ id, locale, now, onChange }) => {
         return (
           <Flexbox container data-testid="datepicker-select-month">
             <Flexbox item>
-              <Box pt={2} pr={1}>
+              <Box pr={1}>
                 <Typography weight="bold">{capitalize(format(now, 'MMMM', opts))}</Typography>
               </Box>
             </Flexbox>
             <Flexbox item>
-              <Box pt={4} mr={1}>
+              <Box pt={2} mr={1}>
                 {icon}
               </Box>
             </Flexbox>
