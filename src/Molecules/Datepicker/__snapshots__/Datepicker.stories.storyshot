@@ -1,6 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Datepicker Default 1`] = `
+.c16 {
+  margin-left: 11.2px;
+  margin-top: 12px;
+  margin-right: 11.2px;
+  margin-bottom: 12px;
+}
+
+.c19 {
+  margin-left: -0.4px;
+  margin-top: 3.2px;
+}
+
+.c30 {
+  padding-right: 4px;
+}
+
+.c32 {
+  margin-right: 4px;
+  padding-top: 8px;
+}
+
+.c33 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c35 {
+  margin-top: 3.2px;
+  margin-right: 0.4px;
+}
+
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -37,6 +68,41 @@ exports[`Storyshots Molecules | Datepicker Default 1`] = `
   align-items: center;
 }
 
+.c17 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c18 {
+  box-sizing: border-box;
+}
+
+.c28 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c37 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c3 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -48,6 +114,20 @@ exports[`Storyshots Molecules | Datepicker Default 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   width: 24px;
   height: 24px;
   fill: #282823;
@@ -55,6 +135,67 @@ exports[`Storyshots Molecules | Datepicker Default 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
+}
+
+.c21 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c12 {
+  stroke: #6E6E69;
+}
+
+.c22 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.c36 {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.c26 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c26,
+.c26[type='button'],
+.c26[type='reset'],
+.c26[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c26::-moz-focus-inner,
+.c26[type='button']::-moz-focus-inner,
+.c26[type='reset']::-moz-focus-inner,
+.c26[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c26:-moz-focusring,
+.c26[type='button']:-moz-focusring,
+.c26[type='reset']:-moz-focusring,
+.c26[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c4 {
@@ -75,12 +216,49 @@ exports[`Storyshots Molecules | Datepicker Default 1`] = `
   line-height: 1.4285714285714286;
 }
 
+.c31 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c39 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c41 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
 .c1 {
   width: 200px;
   display: inline-block;
 }
 
 .c10 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.c13 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -109,6 +287,7 @@ exports[`Storyshots Molecules | Datepicker Default 1`] = `
   border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+  padding-left: 32px;
   padding-right: 40px;
 }
 
@@ -157,8 +336,210 @@ exports[`Storyshots Molecules | Datepicker Default 1`] = `
   padding: 0px 0;
 }
 
+.c25 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c29 {
+  height: 100%;
+  width: 100%;
+}
+
+.c27 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+}
+
+.c27:active {
+  color: inherit;
+}
+
+.c24 {
+  display: none;
+}
+
+.c20 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c20,
+.c20[type='button'],
+.c20[type='reset'],
+.c20[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c20::-moz-focus-inner,
+.c20[type='button']::-moz-focus-inner,
+.c20[type='reset']::-moz-focus-inner,
+.c20[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c20:-moz-focusring,
+.c20[type='button']:-moz-focusring,
+.c20[type='reset']:-moz-focusring,
+.c20[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c20:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c23 {
+  margin-right: 12px;
+}
+
+.c23 > div > div > div {
+  margin-right: -22px;
+  margin-top: -10px;
+}
+
+.c34 > div > div > div {
+  margin-right: -22px;
+  margin-top: -10px;
+}
+
+.c38 {
+  min-width: 40px;
+  text-align: center;
+  margin-bottom: 8px;
+  margin-top: 14px;
+}
+
+.c40 {
+  background: #FFFFFF;
+  min-width: 38px;
+  min-height: 38px;
+  border: 1px solid transparent;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: gray;
+  margin-bottom: 2px;
+}
+
+.c40.today {
+  border: 1px solid #F5F5F5;
+}
+
+.c40:hover {
+  border: 1px solid #0046FF;
+}
+
+.c40.selected {
+  background: #0046FF;
+}
+
+.c40.selected span {
+  color: white;
+}
+
+.c40.disabled {
+  background: #EBEBE8;
+  color: #A0A09B;
+  cursor: not-allowed;
+}
+
+.c40.disabled span {
+  color: #A0A09B;
+}
+
+.c40.disabled:hover {
+  border: 1px solid #EBEBE8;
+}
+
 .c2 {
   z-index: 1;
+}
+
+.c15 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  max-width: 301px;
+  margin-top: -11px;
+}
+
+.c15:before {
+  right: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  bottom: 100%;
+  border-bottom: 6px solid;
+  border-bottom-color: #BCBCB6;
+}
+
+.c15:after {
+  right: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  bottom: calc(100% - 1px);
+  border-bottom: 6px solid;
+  border-bottom-color: #FFFFFF;
+}
+
+.c15:after,
+.c15:before {
+  display: none;
 }
 
 <div>
@@ -199,12 +580,32 @@ exports[`Storyshots Molecules | Datepicker Default 1`] = `
               />
               <div
                 className="c9 c10"
-                position="right"
+                position="left"
                 variant="normal"
               >
                 <svg
                   aria-hidden="true"
                   className="c11"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    className="c12"
+                    d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                    strokeWidth={2}
+                  />
+                </svg>
+              </div>
+              <div
+                className="c9 c13"
+                position="right"
+                variant="normal"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -221,10 +622,915 @@ exports[`Storyshots Molecules | Datepicker Default 1`] = `
       </label>
     </div>
   </div>
+  <div
+    className="DropdownBubble-sc-16ly6j0-0 c15"
+  >
+    <div
+      className="c16"
+    >
+      <div
+        className="c17"
+      >
+        <div
+          className="c18"
+        >
+          <div
+            className="c19"
+          >
+            <button
+              className="c20"
+              data-testid="datepicker-arrow-left"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="c21 c22"
+                direction="left"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c18"
+          >
+            <div
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <div
+                className="c23"
+              >
+                <select
+                  aria-hidden="true"
+                  className="c24"
+                  disabled={false}
+                  onChange={[Function]}
+                  value={9}
+                >
+                  
+                  <option
+                    label="January"
+                    value={0}
+                  />
+                  <option
+                    label="February"
+                    value={1}
+                  />
+                  <option
+                    label="March"
+                    value={2}
+                  />
+                  <option
+                    label="April"
+                    value={3}
+                  />
+                  <option
+                    label="May"
+                    value={4}
+                  />
+                  <option
+                    label="June"
+                    value={5}
+                  />
+                  <option
+                    label="July"
+                    value={6}
+                  />
+                  <option
+                    label="August"
+                    value={7}
+                  />
+                  <option
+                    label="September"
+                    value={8}
+                  />
+                  <option
+                    label="October"
+                    value={9}
+                  />
+                  <option
+                    label="November"
+                    value={10}
+                  />
+                  <option
+                    label="December"
+                    value={11}
+                  />
+                </select>
+                <div
+                  className="c25"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  width="140px"
+                >
+                  <div
+                    className="c5"
+                  >
+                    <span
+                      className="c6"
+                    >
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-label="Month: October"
+                        className="c26 c27"
+                        data-testid="input-select-button"
+                        disabled={false}
+                        form=""
+                        id="input-id-select-month"
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
+                      >
+                        <div
+                          aria-hidden="true"
+                          className="c28 c29"
+                        >
+                          <div
+                            className="c0"
+                            data-testid="datepicker-select-month"
+                          >
+                            <div
+                              className="c18"
+                            >
+                              <div
+                                className="c30"
+                              >
+                                <span
+                                  className="c31"
+                                >
+                                  October
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="c18"
+                            >
+                              <div
+                                className="c32"
+                              >
+                                <div
+                                  className="c33"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <div
+                className="c34"
+              >
+                <select
+                  aria-hidden="true"
+                  className="c24"
+                  disabled={false}
+                  onChange={[Function]}
+                  value={2020}
+                >
+                  
+                  <option
+                    label="2020"
+                    value={2020}
+                  />
+                  <option
+                    label="2019"
+                    value={2019}
+                  />
+                  <option
+                    label="2018"
+                    value={2018}
+                  />
+                  <option
+                    label="2017"
+                    value={2017}
+                  />
+                  <option
+                    label="2016"
+                    value={2016}
+                  />
+                  <option
+                    label="2015"
+                    value={2015}
+                  />
+                  <option
+                    label="2014"
+                    value={2014}
+                  />
+                  <option
+                    label="2013"
+                    value={2013}
+                  />
+                  <option
+                    label="2012"
+                    value={2012}
+                  />
+                  <option
+                    label="2011"
+                    value={2011}
+                  />
+                </select>
+                <div
+                  className="c25"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  width="100px"
+                >
+                  <div
+                    className="c5"
+                  >
+                    <span
+                      className="c6"
+                    >
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-label="Year: 2020"
+                        className="c26 c27"
+                        data-testid="input-select-button"
+                        disabled={false}
+                        form=""
+                        id="input-id-select-year"
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
+                      >
+                        <div
+                          aria-hidden="true"
+                          className="c28 c29"
+                        >
+                          <div
+                            className="c0"
+                            data-testid="datepicker-select-year"
+                          >
+                            <div
+                              className="c18"
+                            >
+                              <div
+                                className="c30"
+                              >
+                                <span
+                                  className="c31"
+                                >
+                                  2020
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="c18"
+                            >
+                              <div
+                                className="c32"
+                              >
+                                <div
+                                  className="c33"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="c18"
+        >
+          <div
+            className="c35"
+          >
+            <button
+              className="c20"
+              data-testid="datepicker-arrow-right"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="c21 c36"
+                direction="right"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c37"
+        data-testid="datepicker-calendar"
+      >
+        <div
+          className="c0"
+        >
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Mon
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Tue
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Wed
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Thu
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Fri
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Sat
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Sun
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              28
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              29
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              30
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              1
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              2
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              3
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              4
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              5
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              6
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              7
+            </span>
+          </div>
+          <div
+            className="c40    today"
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              8
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              9
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              10
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              11
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              12
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              13
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              14
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              15
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              16
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              17
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              18
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              19
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              20
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              21
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              22
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              23
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              24
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              25
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              26
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              27
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              28
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              29
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              30
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              31
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              1
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              2
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              3
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              4
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              5
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              6
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              7
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              8
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Molecules | Datepicker Disable certain dates 1`] = `
+.c16 {
+  margin-left: 11.2px;
+  margin-top: 12px;
+  margin-right: 11.2px;
+  margin-bottom: 12px;
+}
+
+.c19 {
+  margin-left: -0.4px;
+  margin-top: 3.2px;
+}
+
+.c30 {
+  padding-right: 4px;
+}
+
+.c32 {
+  margin-right: 4px;
+  padding-top: 8px;
+}
+
+.c33 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c35 {
+  margin-top: 3.2px;
+  margin-right: 0.4px;
+}
+
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -261,6 +1567,41 @@ exports[`Storyshots Molecules | Datepicker Disable certain dates 1`] = `
   align-items: center;
 }
 
+.c17 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c18 {
+  box-sizing: border-box;
+}
+
+.c28 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c37 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c3 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -272,6 +1613,20 @@ exports[`Storyshots Molecules | Datepicker Disable certain dates 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   width: 24px;
   height: 24px;
   fill: #282823;
@@ -279,6 +1634,67 @@ exports[`Storyshots Molecules | Datepicker Disable certain dates 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
+}
+
+.c21 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c12 {
+  stroke: #6E6E69;
+}
+
+.c22 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.c36 {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.c26 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c26,
+.c26[type='button'],
+.c26[type='reset'],
+.c26[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c26::-moz-focus-inner,
+.c26[type='button']::-moz-focus-inner,
+.c26[type='reset']::-moz-focus-inner,
+.c26[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c26:-moz-focusring,
+.c26[type='button']:-moz-focusring,
+.c26[type='reset']:-moz-focusring,
+.c26[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c4 {
@@ -299,12 +1715,49 @@ exports[`Storyshots Molecules | Datepicker Disable certain dates 1`] = `
   line-height: 1.4285714285714286;
 }
 
+.c31 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c39 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c41 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
 .c1 {
   width: 200px;
   display: inline-block;
 }
 
 .c10 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.c13 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -333,6 +1786,7 @@ exports[`Storyshots Molecules | Datepicker Disable certain dates 1`] = `
   border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+  padding-left: 32px;
   padding-right: 40px;
 }
 
@@ -381,8 +1835,210 @@ exports[`Storyshots Molecules | Datepicker Disable certain dates 1`] = `
   padding: 0px 0;
 }
 
+.c25 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c29 {
+  height: 100%;
+  width: 100%;
+}
+
+.c27 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+}
+
+.c27:active {
+  color: inherit;
+}
+
+.c24 {
+  display: none;
+}
+
+.c20 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c20,
+.c20[type='button'],
+.c20[type='reset'],
+.c20[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c20::-moz-focus-inner,
+.c20[type='button']::-moz-focus-inner,
+.c20[type='reset']::-moz-focus-inner,
+.c20[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c20:-moz-focusring,
+.c20[type='button']:-moz-focusring,
+.c20[type='reset']:-moz-focusring,
+.c20[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c20:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c23 {
+  margin-right: 12px;
+}
+
+.c23 > div > div > div {
+  margin-right: -22px;
+  margin-top: -10px;
+}
+
+.c34 > div > div > div {
+  margin-right: -22px;
+  margin-top: -10px;
+}
+
+.c38 {
+  min-width: 40px;
+  text-align: center;
+  margin-bottom: 8px;
+  margin-top: 14px;
+}
+
+.c40 {
+  background: #FFFFFF;
+  min-width: 38px;
+  min-height: 38px;
+  border: 1px solid transparent;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: gray;
+  margin-bottom: 2px;
+}
+
+.c40.today {
+  border: 1px solid #F5F5F5;
+}
+
+.c40:hover {
+  border: 1px solid #0046FF;
+}
+
+.c40.selected {
+  background: #0046FF;
+}
+
+.c40.selected span {
+  color: white;
+}
+
+.c40.disabled {
+  background: #EBEBE8;
+  color: #A0A09B;
+  cursor: not-allowed;
+}
+
+.c40.disabled span {
+  color: #A0A09B;
+}
+
+.c40.disabled:hover {
+  border: 1px solid #EBEBE8;
+}
+
 .c2 {
   z-index: 1;
+}
+
+.c15 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  max-width: 301px;
+  margin-top: -11px;
+}
+
+.c15:before {
+  right: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  bottom: 100%;
+  border-bottom: 6px solid;
+  border-bottom-color: #BCBCB6;
+}
+
+.c15:after {
+  right: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  bottom: calc(100% - 1px);
+  border-bottom: 6px solid;
+  border-bottom-color: #FFFFFF;
+}
+
+.c15:after,
+.c15:before {
+  display: none;
 }
 
 <div>
@@ -423,12 +2079,32 @@ exports[`Storyshots Molecules | Datepicker Disable certain dates 1`] = `
               />
               <div
                 className="c9 c10"
-                position="right"
+                position="left"
                 variant="normal"
               >
                 <svg
                   aria-hidden="true"
                   className="c11"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    className="c12"
+                    d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                    strokeWidth={2}
+                  />
+                </svg>
+              </div>
+              <div
+                className="c9 c13"
+                position="right"
+                variant="normal"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -445,10 +2121,915 @@ exports[`Storyshots Molecules | Datepicker Disable certain dates 1`] = `
       </label>
     </div>
   </div>
+  <div
+    className="DropdownBubble-sc-16ly6j0-0 c15"
+  >
+    <div
+      className="c16"
+    >
+      <div
+        className="c17"
+      >
+        <div
+          className="c18"
+        >
+          <div
+            className="c19"
+          >
+            <button
+              className="c20"
+              data-testid="datepicker-arrow-left"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="c21 c22"
+                direction="left"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c18"
+          >
+            <div
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <div
+                className="c23"
+              >
+                <select
+                  aria-hidden="true"
+                  className="c24"
+                  disabled={false}
+                  onChange={[Function]}
+                  value={9}
+                >
+                  
+                  <option
+                    label="January"
+                    value={0}
+                  />
+                  <option
+                    label="February"
+                    value={1}
+                  />
+                  <option
+                    label="March"
+                    value={2}
+                  />
+                  <option
+                    label="April"
+                    value={3}
+                  />
+                  <option
+                    label="May"
+                    value={4}
+                  />
+                  <option
+                    label="June"
+                    value={5}
+                  />
+                  <option
+                    label="July"
+                    value={6}
+                  />
+                  <option
+                    label="August"
+                    value={7}
+                  />
+                  <option
+                    label="September"
+                    value={8}
+                  />
+                  <option
+                    label="October"
+                    value={9}
+                  />
+                  <option
+                    label="November"
+                    value={10}
+                  />
+                  <option
+                    label="December"
+                    value={11}
+                  />
+                </select>
+                <div
+                  className="c25"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  width="140px"
+                >
+                  <div
+                    className="c5"
+                  >
+                    <span
+                      className="c6"
+                    >
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-label="Month: October"
+                        className="c26 c27"
+                        data-testid="input-select-button"
+                        disabled={false}
+                        form=""
+                        id="disable-dates-input-select-month"
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
+                      >
+                        <div
+                          aria-hidden="true"
+                          className="c28 c29"
+                        >
+                          <div
+                            className="c0"
+                            data-testid="datepicker-select-month"
+                          >
+                            <div
+                              className="c18"
+                            >
+                              <div
+                                className="c30"
+                              >
+                                <span
+                                  className="c31"
+                                >
+                                  October
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="c18"
+                            >
+                              <div
+                                className="c32"
+                              >
+                                <div
+                                  className="c33"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <div
+                className="c34"
+              >
+                <select
+                  aria-hidden="true"
+                  className="c24"
+                  disabled={false}
+                  onChange={[Function]}
+                  value={2020}
+                >
+                  
+                  <option
+                    label="2020"
+                    value={2020}
+                  />
+                  <option
+                    label="2019"
+                    value={2019}
+                  />
+                  <option
+                    label="2018"
+                    value={2018}
+                  />
+                  <option
+                    label="2017"
+                    value={2017}
+                  />
+                  <option
+                    label="2016"
+                    value={2016}
+                  />
+                  <option
+                    label="2015"
+                    value={2015}
+                  />
+                  <option
+                    label="2014"
+                    value={2014}
+                  />
+                  <option
+                    label="2013"
+                    value={2013}
+                  />
+                  <option
+                    label="2012"
+                    value={2012}
+                  />
+                  <option
+                    label="2011"
+                    value={2011}
+                  />
+                </select>
+                <div
+                  className="c25"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  width="100px"
+                >
+                  <div
+                    className="c5"
+                  >
+                    <span
+                      className="c6"
+                    >
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-label="Year: 2020"
+                        className="c26 c27"
+                        data-testid="input-select-button"
+                        disabled={false}
+                        form=""
+                        id="disable-dates-input-select-year"
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
+                      >
+                        <div
+                          aria-hidden="true"
+                          className="c28 c29"
+                        >
+                          <div
+                            className="c0"
+                            data-testid="datepicker-select-year"
+                          >
+                            <div
+                              className="c18"
+                            >
+                              <div
+                                className="c30"
+                              >
+                                <span
+                                  className="c31"
+                                >
+                                  2020
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="c18"
+                            >
+                              <div
+                                className="c32"
+                              >
+                                <div
+                                  className="c33"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="c18"
+        >
+          <div
+            className="c35"
+          >
+            <button
+              className="c20"
+              data-testid="datepicker-arrow-right"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="c21 c36"
+                direction="right"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c37"
+        data-testid="datepicker-calendar"
+      >
+        <div
+          className="c0"
+        >
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Mon
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Tue
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Wed
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Thu
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Fri
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Sat
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Sun
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              28
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              29
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              30
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              1
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              2
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              3
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              4
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              5
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              6
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              7
+            </span>
+          </div>
+          <div
+            className="c40    today"
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              8
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              9
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              10
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              11
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              12
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              13
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              14
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              15
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              16
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              17
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              18
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              19
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              20
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              21
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              22
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              23
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              24
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              25
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              26
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              27
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              28
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              29
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              30
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              31
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              1
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              2
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              3
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              4
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              5
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              6
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              7
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              8
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Molecules | Datepicker Disabled input 1`] = `
+.c16 {
+  margin-left: 11.2px;
+  margin-top: 12px;
+  margin-right: 11.2px;
+  margin-bottom: 12px;
+}
+
+.c19 {
+  margin-left: -0.4px;
+  margin-top: 3.2px;
+}
+
+.c30 {
+  padding-right: 4px;
+}
+
+.c32 {
+  margin-right: 4px;
+  padding-top: 8px;
+}
+
+.c33 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c35 {
+  margin-top: 3.2px;
+  margin-right: 0.4px;
+}
+
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -485,6 +3066,41 @@ exports[`Storyshots Molecules | Datepicker Disabled input 1`] = `
   align-items: center;
 }
 
+.c17 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c18 {
+  box-sizing: border-box;
+}
+
+.c28 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c37 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c3 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -496,6 +3112,20 @@ exports[`Storyshots Molecules | Datepicker Disabled input 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   width: 24px;
   height: 24px;
   fill: #282823;
@@ -503,6 +3133,67 @@ exports[`Storyshots Molecules | Datepicker Disabled input 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
+}
+
+.c21 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c12 {
+  stroke: #6E6E69;
+}
+
+.c22 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.c36 {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.c26 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c26,
+.c26[type='button'],
+.c26[type='reset'],
+.c26[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c26::-moz-focus-inner,
+.c26[type='button']::-moz-focus-inner,
+.c26[type='reset']::-moz-focus-inner,
+.c26[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c26:-moz-focusring,
+.c26[type='button']:-moz-focusring,
+.c26[type='reset']:-moz-focusring,
+.c26[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c4 {
@@ -523,12 +3214,49 @@ exports[`Storyshots Molecules | Datepicker Disabled input 1`] = `
   line-height: 1.4285714285714286;
 }
 
+.c31 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c39 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c41 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
 .c1 {
   width: 200px;
   display: inline-block;
 }
 
 .c10 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.c13 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -557,6 +3285,7 @@ exports[`Storyshots Molecules | Datepicker Disabled input 1`] = `
   border-width: 1px;
   position: relative;
   background-color: #EBEBE8;
+  padding-left: 32px;
   padding-right: 40px;
 }
 
@@ -601,8 +3330,210 @@ exports[`Storyshots Molecules | Datepicker Disabled input 1`] = `
   padding: 0px 0;
 }
 
+.c25 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c29 {
+  height: 100%;
+  width: 100%;
+}
+
+.c27 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+}
+
+.c27:active {
+  color: inherit;
+}
+
+.c24 {
+  display: none;
+}
+
+.c20 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c20,
+.c20[type='button'],
+.c20[type='reset'],
+.c20[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c20::-moz-focus-inner,
+.c20[type='button']::-moz-focus-inner,
+.c20[type='reset']::-moz-focus-inner,
+.c20[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c20:-moz-focusring,
+.c20[type='button']:-moz-focusring,
+.c20[type='reset']:-moz-focusring,
+.c20[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c20:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c23 {
+  margin-right: 12px;
+}
+
+.c23 > div > div > div {
+  margin-right: -22px;
+  margin-top: -10px;
+}
+
+.c34 > div > div > div {
+  margin-right: -22px;
+  margin-top: -10px;
+}
+
+.c38 {
+  min-width: 40px;
+  text-align: center;
+  margin-bottom: 8px;
+  margin-top: 14px;
+}
+
+.c40 {
+  background: #FFFFFF;
+  min-width: 38px;
+  min-height: 38px;
+  border: 1px solid transparent;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: gray;
+  margin-bottom: 2px;
+}
+
+.c40.today {
+  border: 1px solid #F5F5F5;
+}
+
+.c40:hover {
+  border: 1px solid #0046FF;
+}
+
+.c40.selected {
+  background: #0046FF;
+}
+
+.c40.selected span {
+  color: white;
+}
+
+.c40.disabled {
+  background: #EBEBE8;
+  color: #A0A09B;
+  cursor: not-allowed;
+}
+
+.c40.disabled span {
+  color: #A0A09B;
+}
+
+.c40.disabled:hover {
+  border: 1px solid #EBEBE8;
+}
+
 .c2 {
   z-index: 1;
+}
+
+.c15 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  max-width: 301px;
+  margin-top: -11px;
+}
+
+.c15:before {
+  right: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  bottom: 100%;
+  border-bottom: 6px solid;
+  border-bottom-color: #BCBCB6;
+}
+
+.c15:after {
+  right: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  bottom: calc(100% - 1px);
+  border-bottom: 6px solid;
+  border-bottom-color: #FFFFFF;
+}
+
+.c15:after,
+.c15:before {
+  display: none;
 }
 
 <div>
@@ -644,12 +3575,32 @@ exports[`Storyshots Molecules | Datepicker Disabled input 1`] = `
               />
               <div
                 className="c9 c10"
-                position="right"
+                position="left"
                 variant="normal"
               >
                 <svg
                   aria-hidden="true"
                   className="c11"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    className="c12"
+                    d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                    strokeWidth={2}
+                  />
+                </svg>
+              </div>
+              <div
+                className="c9 c13"
+                position="right"
+                variant="normal"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -666,10 +3617,915 @@ exports[`Storyshots Molecules | Datepicker Disabled input 1`] = `
       </label>
     </div>
   </div>
+  <div
+    className="DropdownBubble-sc-16ly6j0-0 c15"
+  >
+    <div
+      className="c16"
+    >
+      <div
+        className="c17"
+      >
+        <div
+          className="c18"
+        >
+          <div
+            className="c19"
+          >
+            <button
+              className="c20"
+              data-testid="datepicker-arrow-left"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="c21 c22"
+                direction="left"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c18"
+          >
+            <div
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <div
+                className="c23"
+              >
+                <select
+                  aria-hidden="true"
+                  className="c24"
+                  disabled={false}
+                  onChange={[Function]}
+                  value={9}
+                >
+                  
+                  <option
+                    label="January"
+                    value={0}
+                  />
+                  <option
+                    label="February"
+                    value={1}
+                  />
+                  <option
+                    label="March"
+                    value={2}
+                  />
+                  <option
+                    label="April"
+                    value={3}
+                  />
+                  <option
+                    label="May"
+                    value={4}
+                  />
+                  <option
+                    label="June"
+                    value={5}
+                  />
+                  <option
+                    label="July"
+                    value={6}
+                  />
+                  <option
+                    label="August"
+                    value={7}
+                  />
+                  <option
+                    label="September"
+                    value={8}
+                  />
+                  <option
+                    label="October"
+                    value={9}
+                  />
+                  <option
+                    label="November"
+                    value={10}
+                  />
+                  <option
+                    label="December"
+                    value={11}
+                  />
+                </select>
+                <div
+                  className="c25"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  width="140px"
+                >
+                  <div
+                    className="c5"
+                  >
+                    <span
+                      className="c6"
+                    >
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-label="Month: October"
+                        className="c26 c27"
+                        data-testid="input-select-button"
+                        disabled={false}
+                        form=""
+                        id="disabled-input-select-month"
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
+                      >
+                        <div
+                          aria-hidden="true"
+                          className="c28 c29"
+                        >
+                          <div
+                            className="c0"
+                            data-testid="datepicker-select-month"
+                          >
+                            <div
+                              className="c18"
+                            >
+                              <div
+                                className="c30"
+                              >
+                                <span
+                                  className="c31"
+                                >
+                                  October
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="c18"
+                            >
+                              <div
+                                className="c32"
+                              >
+                                <div
+                                  className="c33"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <div
+                className="c34"
+              >
+                <select
+                  aria-hidden="true"
+                  className="c24"
+                  disabled={false}
+                  onChange={[Function]}
+                  value={2020}
+                >
+                  
+                  <option
+                    label="2020"
+                    value={2020}
+                  />
+                  <option
+                    label="2019"
+                    value={2019}
+                  />
+                  <option
+                    label="2018"
+                    value={2018}
+                  />
+                  <option
+                    label="2017"
+                    value={2017}
+                  />
+                  <option
+                    label="2016"
+                    value={2016}
+                  />
+                  <option
+                    label="2015"
+                    value={2015}
+                  />
+                  <option
+                    label="2014"
+                    value={2014}
+                  />
+                  <option
+                    label="2013"
+                    value={2013}
+                  />
+                  <option
+                    label="2012"
+                    value={2012}
+                  />
+                  <option
+                    label="2011"
+                    value={2011}
+                  />
+                </select>
+                <div
+                  className="c25"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  width="100px"
+                >
+                  <div
+                    className="c5"
+                  >
+                    <span
+                      className="c6"
+                    >
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-label="Year: 2020"
+                        className="c26 c27"
+                        data-testid="input-select-button"
+                        disabled={false}
+                        form=""
+                        id="disabled-input-select-year"
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
+                      >
+                        <div
+                          aria-hidden="true"
+                          className="c28 c29"
+                        >
+                          <div
+                            className="c0"
+                            data-testid="datepicker-select-year"
+                          >
+                            <div
+                              className="c18"
+                            >
+                              <div
+                                className="c30"
+                              >
+                                <span
+                                  className="c31"
+                                >
+                                  2020
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="c18"
+                            >
+                              <div
+                                className="c32"
+                              >
+                                <div
+                                  className="c33"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="c18"
+        >
+          <div
+            className="c35"
+          >
+            <button
+              className="c20"
+              data-testid="datepicker-arrow-right"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="c21 c36"
+                direction="right"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c37"
+        data-testid="datepicker-calendar"
+      >
+        <div
+          className="c0"
+        >
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Mon
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Tue
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Wed
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Thu
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Fri
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Sat
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Sun
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              28
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              29
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              30
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              1
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              2
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              3
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              4
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              5
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              6
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              7
+            </span>
+          </div>
+          <div
+            className="c40    today"
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              8
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              9
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              10
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              11
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              12
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              13
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              14
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              15
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              16
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              17
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              18
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              19
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              20
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              21
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              22
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              23
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              24
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              25
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              26
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              27
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              28
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              29
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              30
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              31
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              1
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              2
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              3
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              4
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              5
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              6
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              7
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              8
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Molecules | Datepicker Enable certain dates 1`] = `
+.c16 {
+  margin-left: 11.2px;
+  margin-top: 12px;
+  margin-right: 11.2px;
+  margin-bottom: 12px;
+}
+
+.c19 {
+  margin-left: -0.4px;
+  margin-top: 3.2px;
+}
+
+.c30 {
+  padding-right: 4px;
+}
+
+.c32 {
+  margin-right: 4px;
+  padding-top: 8px;
+}
+
+.c33 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c35 {
+  margin-top: 3.2px;
+  margin-right: 0.4px;
+}
+
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -706,6 +4562,41 @@ exports[`Storyshots Molecules | Datepicker Enable certain dates 1`] = `
   align-items: center;
 }
 
+.c17 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c18 {
+  box-sizing: border-box;
+}
+
+.c28 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c37 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c3 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -717,6 +4608,20 @@ exports[`Storyshots Molecules | Datepicker Enable certain dates 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   width: 24px;
   height: 24px;
   fill: #282823;
@@ -724,6 +4629,67 @@ exports[`Storyshots Molecules | Datepicker Enable certain dates 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
+}
+
+.c21 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c12 {
+  stroke: #6E6E69;
+}
+
+.c22 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.c36 {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.c26 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c26,
+.c26[type='button'],
+.c26[type='reset'],
+.c26[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c26::-moz-focus-inner,
+.c26[type='button']::-moz-focus-inner,
+.c26[type='reset']::-moz-focus-inner,
+.c26[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c26:-moz-focusring,
+.c26[type='button']:-moz-focusring,
+.c26[type='reset']:-moz-focusring,
+.c26[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c4 {
@@ -744,12 +4710,49 @@ exports[`Storyshots Molecules | Datepicker Enable certain dates 1`] = `
   line-height: 1.4285714285714286;
 }
 
+.c31 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c39 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c41 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
 .c1 {
   width: 200px;
   display: inline-block;
 }
 
 .c10 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.c13 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -778,6 +4781,7 @@ exports[`Storyshots Molecules | Datepicker Enable certain dates 1`] = `
   border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+  padding-left: 32px;
   padding-right: 40px;
 }
 
@@ -826,8 +4830,210 @@ exports[`Storyshots Molecules | Datepicker Enable certain dates 1`] = `
   padding: 0px 0;
 }
 
+.c25 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c29 {
+  height: 100%;
+  width: 100%;
+}
+
+.c27 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+}
+
+.c27:active {
+  color: inherit;
+}
+
+.c24 {
+  display: none;
+}
+
+.c20 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c20,
+.c20[type='button'],
+.c20[type='reset'],
+.c20[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c20::-moz-focus-inner,
+.c20[type='button']::-moz-focus-inner,
+.c20[type='reset']::-moz-focus-inner,
+.c20[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c20:-moz-focusring,
+.c20[type='button']:-moz-focusring,
+.c20[type='reset']:-moz-focusring,
+.c20[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c20:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c23 {
+  margin-right: 12px;
+}
+
+.c23 > div > div > div {
+  margin-right: -22px;
+  margin-top: -10px;
+}
+
+.c34 > div > div > div {
+  margin-right: -22px;
+  margin-top: -10px;
+}
+
+.c38 {
+  min-width: 40px;
+  text-align: center;
+  margin-bottom: 8px;
+  margin-top: 14px;
+}
+
+.c40 {
+  background: #FFFFFF;
+  min-width: 38px;
+  min-height: 38px;
+  border: 1px solid transparent;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: gray;
+  margin-bottom: 2px;
+}
+
+.c40.today {
+  border: 1px solid #F5F5F5;
+}
+
+.c40:hover {
+  border: 1px solid #0046FF;
+}
+
+.c40.selected {
+  background: #0046FF;
+}
+
+.c40.selected span {
+  color: white;
+}
+
+.c40.disabled {
+  background: #EBEBE8;
+  color: #A0A09B;
+  cursor: not-allowed;
+}
+
+.c40.disabled span {
+  color: #A0A09B;
+}
+
+.c40.disabled:hover {
+  border: 1px solid #EBEBE8;
+}
+
 .c2 {
   z-index: 1;
+}
+
+.c15 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  max-width: 301px;
+  margin-top: -11px;
+}
+
+.c15:before {
+  right: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  bottom: 100%;
+  border-bottom: 6px solid;
+  border-bottom-color: #BCBCB6;
+}
+
+.c15:after {
+  right: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  bottom: calc(100% - 1px);
+  border-bottom: 6px solid;
+  border-bottom-color: #FFFFFF;
+}
+
+.c15:after,
+.c15:before {
+  display: none;
 }
 
 <div>
@@ -868,12 +5074,32 @@ exports[`Storyshots Molecules | Datepicker Enable certain dates 1`] = `
               />
               <div
                 className="c9 c10"
-                position="right"
+                position="left"
                 variant="normal"
               >
                 <svg
                   aria-hidden="true"
                   className="c11"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    className="c12"
+                    d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                    strokeWidth={2}
+                  />
+                </svg>
+              </div>
+              <div
+                className="c9 c13"
+                position="right"
+                variant="normal"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -888,6 +5114,880 @@ exports[`Storyshots Molecules | Datepicker Enable certain dates 1`] = `
           </span>
         </span>
       </label>
+    </div>
+  </div>
+  <div
+    className="DropdownBubble-sc-16ly6j0-0 c15"
+  >
+    <div
+      className="c16"
+    >
+      <div
+        className="c17"
+      >
+        <div
+          className="c18"
+        >
+          <div
+            className="c19"
+          >
+            <button
+              className="c20"
+              data-testid="datepicker-arrow-left"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="c21 c22"
+                direction="left"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c18"
+          >
+            <div
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <div
+                className="c23"
+              >
+                <select
+                  aria-hidden="true"
+                  className="c24"
+                  disabled={false}
+                  onChange={[Function]}
+                  value={9}
+                >
+                  
+                  <option
+                    label="January"
+                    value={0}
+                  />
+                  <option
+                    label="February"
+                    value={1}
+                  />
+                  <option
+                    label="March"
+                    value={2}
+                  />
+                  <option
+                    label="April"
+                    value={3}
+                  />
+                  <option
+                    label="May"
+                    value={4}
+                  />
+                  <option
+                    label="June"
+                    value={5}
+                  />
+                  <option
+                    label="July"
+                    value={6}
+                  />
+                  <option
+                    label="August"
+                    value={7}
+                  />
+                  <option
+                    label="September"
+                    value={8}
+                  />
+                  <option
+                    label="October"
+                    value={9}
+                  />
+                  <option
+                    label="November"
+                    value={10}
+                  />
+                  <option
+                    label="December"
+                    value={11}
+                  />
+                </select>
+                <div
+                  className="c25"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  width="140px"
+                >
+                  <div
+                    className="c5"
+                  >
+                    <span
+                      className="c6"
+                    >
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-label="Month: October"
+                        className="c26 c27"
+                        data-testid="input-select-button"
+                        disabled={false}
+                        form=""
+                        id="enable-dates-input-select-month"
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
+                      >
+                        <div
+                          aria-hidden="true"
+                          className="c28 c29"
+                        >
+                          <div
+                            className="c0"
+                            data-testid="datepicker-select-month"
+                          >
+                            <div
+                              className="c18"
+                            >
+                              <div
+                                className="c30"
+                              >
+                                <span
+                                  className="c31"
+                                >
+                                  October
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="c18"
+                            >
+                              <div
+                                className="c32"
+                              >
+                                <div
+                                  className="c33"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <div
+                className="c34"
+              >
+                <select
+                  aria-hidden="true"
+                  className="c24"
+                  disabled={false}
+                  onChange={[Function]}
+                  value={2020}
+                >
+                  
+                  <option
+                    label="2020"
+                    value={2020}
+                  />
+                  <option
+                    label="2019"
+                    value={2019}
+                  />
+                  <option
+                    label="2018"
+                    value={2018}
+                  />
+                  <option
+                    label="2017"
+                    value={2017}
+                  />
+                  <option
+                    label="2016"
+                    value={2016}
+                  />
+                  <option
+                    label="2015"
+                    value={2015}
+                  />
+                  <option
+                    label="2014"
+                    value={2014}
+                  />
+                  <option
+                    label="2013"
+                    value={2013}
+                  />
+                  <option
+                    label="2012"
+                    value={2012}
+                  />
+                  <option
+                    label="2011"
+                    value={2011}
+                  />
+                </select>
+                <div
+                  className="c25"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  width="100px"
+                >
+                  <div
+                    className="c5"
+                  >
+                    <span
+                      className="c6"
+                    >
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-label="Year: 2020"
+                        className="c26 c27"
+                        data-testid="input-select-button"
+                        disabled={false}
+                        form=""
+                        id="enable-dates-input-select-year"
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
+                      >
+                        <div
+                          aria-hidden="true"
+                          className="c28 c29"
+                        >
+                          <div
+                            className="c0"
+                            data-testid="datepicker-select-year"
+                          >
+                            <div
+                              className="c18"
+                            >
+                              <div
+                                className="c30"
+                              >
+                                <span
+                                  className="c31"
+                                >
+                                  2020
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="c18"
+                            >
+                              <div
+                                className="c32"
+                              >
+                                <div
+                                  className="c33"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="c18"
+        >
+          <div
+            className="c35"
+          >
+            <button
+              className="c20"
+              data-testid="datepicker-arrow-right"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="c21 c36"
+                direction="right"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c37"
+        data-testid="datepicker-calendar"
+      >
+        <div
+          className="c0"
+        >
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Mon
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Tue
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Wed
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Thu
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Fri
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Sat
+              </span>
+            </div>
+          </div>
+          <div
+            className="c18"
+          >
+            <div
+              className="c38"
+            >
+              <span
+                className="c39"
+              >
+                Sun
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              28
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              29
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              30
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              1
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              2
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              3
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              4
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              5
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              6
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              7
+            </span>
+          </div>
+          <div
+            className="c40    today"
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              8
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              9
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              10
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              11
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              12
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              13
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              14
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              15
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              16
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              17
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              18
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              19
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              20
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              21
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              22
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              23
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              24
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              25
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              26
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              27
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              28
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              29
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              30
+            </span>
+          </div>
+          <div
+            className="c40    "
+            onClick={[Function]}
+          >
+            <span
+              className="c39"
+            >
+              31
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              1
+            </span>
+          </div>
+        </div>
+        <div
+          className="c0"
+        >
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              2
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              3
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              4
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              5
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              6
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              7
+            </span>
+          </div>
+          <div
+            className="c40  disabled  "
+            onClick={[Function]}
+          >
+            <span
+              className="c41"
+            >
+              8
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
