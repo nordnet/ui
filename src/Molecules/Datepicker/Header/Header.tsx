@@ -16,7 +16,7 @@ const Header: React.FC<Props> = ({ id, locale, now, onMonthChange, onYearChange 
                 onMonthChange(now.getMonth() - 1);
               }}
             >
-              <Icon.ChevronLeft size={4} />
+              <Icon.ThinChevron size={4} direction="left" />
             </Link>
           </Box>
         </Flexbox>
@@ -36,7 +36,7 @@ const Header: React.FC<Props> = ({ id, locale, now, onMonthChange, onYearChange 
                 onMonthChange(now.getMonth() + 1);
               }}
             >
-              <Icon.ChevronRight size={4} />
+              <Icon.ThinChevron size={4} direction="right" />
             </Link>
           </Box>
         </Flexbox>
