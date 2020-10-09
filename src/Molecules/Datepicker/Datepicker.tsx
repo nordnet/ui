@@ -69,7 +69,7 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     locale: getLocale(locale),
   };
 
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [now, setNow] = useState<Date>(newDate());
   const [selectedDate, setSelectedDate] = useState<Date>();
   const selectedDateFormatted = selectedDate ? format(selectedDate, dateFormat, opts) : '';
