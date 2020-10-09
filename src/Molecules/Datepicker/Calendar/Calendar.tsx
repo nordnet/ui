@@ -24,7 +24,7 @@ const StyledCalendarDay = styled(Box)`
   justify-content: center;
   align-items: center;
   display: flex;
-  color: gray;
+  color: ${({ theme }) => theme.color.label};
   margin-bottom: 2px;
 
   &.today {
