@@ -63,8 +63,10 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
       if (onChange) {
         onChange(date);
       }
+
+      setOpen(false);
     },
-    [onChange, setSelectedDate],
+    [onChange, setSelectedDate, setOpen],
   );
 
   const handleOnMonthChange = useCallback(
