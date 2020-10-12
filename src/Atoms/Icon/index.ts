@@ -14,6 +14,7 @@ import { BellPlain } from './components/BellPlain';
 import { Bolt } from './components/Bolt';
 import { BrowserWindow } from './components/BrowserWindow';
 import { Calendar } from './components/Calendar';
+import { CalendarTwoRows } from './components/CalendarTwoRows';
 import { CandleSticks } from './components/CandleSticks';
 import { CheckMark } from './components/CheckMark';
 import { CheckMarkCircle } from './components/CheckMarkCircle';
@@ -115,6 +116,7 @@ export default {
   Bolt,
   BrowserWindow,
   Calendar,
+  CalendarTwoRows,
   CandleSticks,
   CheckMark,
   CheckMarkCircle,
