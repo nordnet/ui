@@ -26,6 +26,7 @@ const StyledCalendarDay = styled(Box)`
   display: flex;
   color: ${({ theme }) => theme.color.label};
   margin-bottom: 2px;
+  cursor: pointer;
 
   &.today {
     border: 1px solid ${({ theme }) => theme.color.background};
