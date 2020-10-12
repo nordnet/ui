@@ -16,6 +16,14 @@ type Options = {
   locale: Locale;
 };
 
+const dateFormat = {
+  sv: 'yyyy-MM-dd',
+  nb: 'dd.MM.yy',
+  da: 'yyyy-MM-dd',
+  fi: 'dd.MM.yyyy',
+  en: 'dd/MM/yyyy',
+};
+
 const locales: { [key: string]: any } = {
   sv: svLocale,
   nb: nbLocale,
@@ -30,6 +38,14 @@ export const getLocale = (locale: string = ''): any => {
   }
 
   return locales.en;
+};
+
+export const getDateFormat = (locale: string = ''): any => {
+  if (dateFormat[locale]) {
+    return dateFormat[locale];
+  }
+
+  return dateFormat.en;
 };
 
 export const isValid = (date: Date) => {

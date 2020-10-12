@@ -7,7 +7,7 @@ import { Props } from './Datepicker.types';
 import { Box, Flexbox, Input, Icon, DropdownBubble } from '../..';
 import { assert, isUndefined } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
-import { newDate, getLocale, isValid } from './shared/dateUtils';
+import { newDate, getLocale, isValid, getDateFormat } from './shared/dateUtils';
 import Header from './Header';
 import Calendar from './Calendar';
 
@@ -25,16 +25,7 @@ const StyledDropdownBubble = styled(DropdownBubble)`
 `;
 
 export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) => {
-  const {
-    onChange,
-    label,
-    dateFormat = 'dd/MM/yyyy',
-    disabled,
-    disableDate,
-    enableDate,
-    id,
-    width,
-  } = props;
+  const { onChange, label, disabled, disableDate, enableDate, id, width } = props;
 
   assert(Boolean(props.id), `Datepicker: "id" is required.`);
 
@@ -57,6 +48,8 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const opts = {
     locale: getLocale(locale),
   };
+
+  const dateFormat = getDateFormat(locale);
 
   const [open, setOpen] = useState(false);
   const [now, setNow] = useState<Date>(newDate());

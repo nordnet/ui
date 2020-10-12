@@ -2,7 +2,6 @@ export type Props = {
   open?: boolean;
   onChange?: (date: Date) => void;
   label: string;
-  dateFormat?: string;
   disableDate?: (date: Date) => boolean;
   disabled?: boolean;
   enableDate?: (date: Date) => boolean;
