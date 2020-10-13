@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import format from 'date-fns/format';
-import styled from 'styled-components';
+import styled, { useTheme } from 'styled-components';
 import { getLocale } from '../shared/dateUtils';
 import { Props } from './SelectMonth.types';
 import { Box, Input, Icon, Flexbox, Typography } from '../../..';
@@ -9,7 +9,7 @@ import { capitalize } from '../shared/textUtils';
 const months = [...Array(12).keys()];
 
 const StyledInputSelect = styled(Input.Select)`
-  margin-right: 12px;
+  margin-right: ${({ theme }) => theme.spacing.unit(3)}px;
 
   > div > div > div {
     margin-right: -22px;
@@ -66,6 +66,7 @@ const SelectMonth: React.FC<Props> = ({ id, locale, now, onChange }) => {
   );
 
   const selected = monthOptions.filter((p) => p.value === now.getMonth());
+  const theme = useTheme();
 
   return (
     <div onMouseLeave={() => setIsHover(false)} onMouseEnter={() => setIsHover(true)}>
@@ -78,7 +79,7 @@ const SelectMonth: React.FC<Props> = ({ id, locale, now, onChange }) => {
         onChange={onChangeHandler}
         value={selected}
         listPosition="left"
-        width="140px"
+        width={`${theme.spacing.unit(35)}px`}
       />
     </div>
   );

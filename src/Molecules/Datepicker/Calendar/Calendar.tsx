@@ -10,22 +10,21 @@ import { getCalendar, getLocale } from '../shared/dateUtils';
 import { CalendarDayProps, Props } from './Calendar.types';
 
 const StyledWeekDay = styled(Box)`
-  min-width: 40px;
+  border: 1px solid transparent;
+  min-width: ${({ theme }) => theme.spacing.unit(10)}px;
   text-align: center;
-  margin-bottom: 8px;
-  margin-top: 14px;
+  margin-bottom: ${({ theme }) => theme.spacing.unit(2)}px;
+  margin-top: ${({ theme }) => theme.spacing.unit(3)}px;
 `;
 
 const StyledCalendarDay = styled(Box)`
   background: ${({ theme }) => theme.color.backgroundInput};
-  min-width: 38px;
-  min-height: 38px;
+  min-width: ${({ theme }) => theme.spacing.unit(10)}px;
+  min-height: ${({ theme }) => theme.spacing.unit(10)}px;
   border: 1px solid transparent;
   justify-content: center;
   align-items: center;
   display: flex;
-  color: ${({ theme }) => theme.color.label};
-  margin-bottom: 2px;
   cursor: pointer;
 
   &.today {
@@ -38,20 +37,12 @@ const StyledCalendarDay = styled(Box)`
 
   &.selected {
     background: ${({ theme }) => theme.color.cta};
-
-    span {
-      color: white;
-    }
   }
 
   &.disabled {
     background: ${({ theme }) => theme.color.disabledBackground};
     color: ${({ theme }) => theme.color.disabledText};
     cursor: not-allowed;
-
-    span {
-      color: ${({ theme }) => theme.color.disabledText};
-    }
 
     &:hover {
       border: 1px solid ${({ theme }) => theme.color.disabledBackground};
@@ -75,6 +66,14 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
     isToday(date) ? 'today' : '',
   ];
 
+  const textColor: string | undefined = [
+    disabled || (typeof enabled === 'boolean' && !enabled) ? 'disabledText' : '',
+    !sameMonth ? 'label' : '',
+    selected ? 'buttonText' : '',
+  ]
+    .filter((c) => c)
+    .shift();
+
   const handleOnClick = useCallback(() => {
     if (disabled) {
       return;
@@ -87,7 +86,7 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
 
   return (
     <StyledCalendarDay className={classNames.join(' ')} onClick={handleOnClick}>
-      <Typography type="tertiary" color={(t) => t.color[sameMonth ? 'text' : 'label']}>
+      <Typography type="tertiary" color={(t) => t.color[textColor || 'text']}>
         {format(date, 'd')}
       </Typography>
     </StyledCalendarDay>

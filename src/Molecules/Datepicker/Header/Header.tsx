@@ -8,7 +8,7 @@ const Header: React.FC<Props> = ({ id, locale, now, onMonthChange, onYearChange 
   return (
     <Flexbox container justifyContent="space-between">
       <Flexbox item>
-        <Box mt={0.8} ml={-0.1}>
+        <Box mt={1}>
           <Link
             data-testid="datepicker-arrow-left"
             onClick={() => {
@@ -28,7 +28,7 @@ const Header: React.FC<Props> = ({ id, locale, now, onMonthChange, onYearChange 
         </Flexbox>
       </Flexbox>
       <Flexbox item>
-        <Box mt={0.8} mr={0.1}>
+        <Box mt={1}>
           <Link
             data-testid="datepicker-arrow-right"
             onClick={() => {

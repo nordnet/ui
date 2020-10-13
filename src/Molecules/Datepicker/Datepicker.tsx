@@ -16,8 +16,8 @@ const StyledInputText = styled(Input.Text)`
 `;
 
 const StyledDropdownBubble = styled(DropdownBubble)`
-  max-width: 301px;
-  margin-top: -11px;
+  max-width: ${({ theme }) => theme.spacing.unit(78)}px;
+  top: -11px;
   &:after,
   &:before {
     display: none;
@@ -98,7 +98,7 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const handleInputOnFocus = useCallback(() => setOpen(true), [setOpen]);
 
   const datepicker = (
-    <Box my={3} mx={2.8}>
+    <Box my={3} mx={2}>
       <Header
         id={id}
         now={now}

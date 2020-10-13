@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import styled from 'styled-components';
+import styled, { useTheme } from 'styled-components';
 import { Props } from './SelectYear.types';
 import { Box, Input, Flexbox, Icon, Typography } from '../../..';
 import { newDate } from '../shared/dateUtils';
@@ -60,6 +60,7 @@ const SelectYear: React.FC<Props> = ({ id, now, onChange, years = 10 }) => {
   );
 
   const selected = yearOptions.filter((p) => p.value === now.getFullYear());
+  const theme = useTheme();
 
   return (
     <div onMouseLeave={() => setIsHover(false)} onMouseEnter={() => setIsHover(true)}>
@@ -72,7 +73,7 @@ const SelectYear: React.FC<Props> = ({ id, now, onChange, years = 10 }) => {
         onChange={onChangeHandler}
         value={selected}
         listPosition="left"
-        width="100px"
+        width={`${theme.spacing.unit(25)}px`}
       />
     </div>
   );
