@@ -28,7 +28,7 @@ const StyledCalendarDay = styled(Box)`
   cursor: pointer;
 
   &.today {
-    border: 1px solid ${({ theme }) => theme.color.background};
+    border: 1px solid ${({ theme }) => theme.color.inputBorder};
   }
 
   &:hover {
@@ -37,12 +37,14 @@ const StyledCalendarDay = styled(Box)`
 
   &.selected {
     background: ${({ theme }) => theme.color.cta};
+    border: 1px solid transparent;
   }
 
   &.disabled {
     background: ${({ theme }) => theme.color.disabledBackground};
     color: ${({ theme }) => theme.color.disabledText};
     cursor: not-allowed;
+    border: 1px solid transparent;
 
     &:hover {
       border: 1px solid ${({ theme }) => theme.color.disabledBackground};
