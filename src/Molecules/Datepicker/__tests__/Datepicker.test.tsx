@@ -283,3 +283,23 @@ test('Select next week date with arrow up', async () => {
     charCode: 40,
   });
 });
+
+test('Enter date manually', async () => {
+  const INPUT_ID = 'datepicker-input';
+  const onChange = (date: Date) => {
+    expect(date.getDate()).toBe(19);
+  };
+
+  const { getByText, getByTestId } = render(
+    <PageProviders>
+      <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
+    </PageProviders>,
+  );
+
+  const input = getByTestId(INPUT_ID);
+  fireEvent.focus(input);
+  fireEvent.change(input, { target: { value: '19/08/2020' } });
+
+  const date = getByText('19');
+  expect(date.parentElement.className).toContain('selected');
+});

@@ -1,7 +1,8 @@
 import React, { useRef, useState, useCallback } from 'react';
 import styled from 'styled-components';
-import parseISO from 'date-fns/parseISO';
+import parse from 'date-fns/parse';
 import format from 'date-fns/format';
+import isMatch from 'date-fns/isMatch';
 import { useIntl } from 'react-intl';
 import { Props } from './Datepicker.types';
 import { Box, Flexbox, Input, Icon, DropdownBubble } from '../..';
@@ -64,7 +65,7 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const [open, setOpen] = useState(false);
   const [now, setNow] = useState<Date>(newDate());
   const [selectedDate, setSelectedDate] = useState<Date>();
-  const selectedDateFormatted = selectedDate ? format(selectedDate, dateFormat, opts) : '';
+  const [inputValue, setInputValue] = useState('');
 
   const handleOnDateCliked = useCallback(
     (date: Date) => {
@@ -97,12 +98,27 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
 
   const handleInputOnChange = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
-      const date = parseISO(event.target.value);
-      if (isValid(date)) {
-        setSelectedDate(date);
+      const { value } = event.target;
+      setInputValue(value);
+
+      if (!isMatch(value, dateFormat, opts)) {
+        return;
+      }
+
+      const date = parse(value, dateFormat, newDate());
+      if (!isValid(date)) {
+        return;
+      }
+
+      setInputValue(format(date, dateFormat, opts));
+      setSelectedDate(date);
+      setNow(newDate(date));
+
+      if (onChange) {
+        onChange(date);
       }
     },
-    [setSelectedDate],
+    [opts, dateFormat, onChange, setSelectedDate, setInputValue],
   );
 
   const handleInputOnFocus = useCallback(() => setOpen(true), [setOpen]);
@@ -144,7 +160,7 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
           id={id}
           data-testid="datepicker-input"
           placeholder={dateFormat.toLowerCase()}
-          value={selectedDateFormatted}
+          value={inputValue}
           leftAddon={inputLeftAddon}
           rightAddon={inputRightAddon}
           onChange={handleInputOnChange}

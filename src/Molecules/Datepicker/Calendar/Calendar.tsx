@@ -66,7 +66,7 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
 
   const textColor: string | undefined = [
     disabled || (typeof enabled === 'boolean' && !enabled) ? 'label' : '',
-    !sameMonth ? 'label' : '',
+    !sameMonth && !selected ? 'label' : '',
     selected ? 'buttonText' : '',
   ]
     .filter((c) => c)
