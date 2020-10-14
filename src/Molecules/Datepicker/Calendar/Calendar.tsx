@@ -41,14 +41,9 @@ const StyledCalendarDay = styled(Box)`
   }
 
   &.disabled {
-    background: ${({ theme }) => theme.color.disabledBackground};
     color: ${({ theme }) => theme.color.disabledText};
     cursor: not-allowed;
     border: 1px solid transparent;
-
-    &:hover {
-      border: 1px solid ${({ theme }) => theme.color.disabledBackground};
-    }
   }
 `;
 
@@ -70,7 +65,7 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
   ];
 
   const textColor: string | undefined = [
-    disabled || (typeof enabled === 'boolean' && !enabled) ? 'disabledText' : '',
+    disabled || (typeof enabled === 'boolean' && !enabled) ? 'label' : '',
     !sameMonth ? 'label' : '',
     selected ? 'buttonText' : '',
   ]
