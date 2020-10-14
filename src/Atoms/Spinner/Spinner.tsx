@@ -15,7 +15,7 @@ const Animation = styled.span`
     }
   }
   display: inline-block;
-  animation: spinner 1s linear infinite;
+  animation: spinner 0.6s linear infinite;
 `;
 
 const StyledSvg = styled.svg`
@@ -77,7 +77,7 @@ const TimeoutSpinner: React.FC<PropsWithTheme> = ({ delay, ...restProps }) => {
       () => {
         setSpinning(true);
       },
-      typeof delay === 'boolean' ? 270 : delay || 0,
+      typeof delay === 'boolean' ? 1000 : delay || 0,
     );
     return () => clearTimeout(timer);
   }, []);

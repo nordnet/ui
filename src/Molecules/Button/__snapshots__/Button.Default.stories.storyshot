@@ -1241,8 +1241,8 @@ Array [
   </div>,
   .c5 {
   display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
 }
 
 .c6 {
@@ -1695,8 +1695,8 @@ Array [
   </div>,
   .c5 {
   display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
 }
 
 .c6 {
@@ -2149,8 +2149,8 @@ Array [
   </div>,
   .c5 {
   display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
 }
 
 .c6 {
@@ -2619,8 +2619,8 @@ Array [
   </div>,
   .c5 {
   display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
 }
 
 .c6 {

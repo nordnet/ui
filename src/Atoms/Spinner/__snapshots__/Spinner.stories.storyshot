@@ -3,8 +3,8 @@
 exports[`Storyshots Atoms | Spinner Colors 1`] = `
 .c3 {
   display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
 }
 
 .c4 {
@@ -522,8 +522,8 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
 exports[`Storyshots Atoms | Spinner Regression: 2 spinners with same color and size affects each other in Chrome 1`] = `
 .c1 {
   display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
 }
 
 .c2 {
@@ -694,8 +694,8 @@ exports[`Storyshots Atoms | Spinner Regression: 2 spinners with same color and s
 exports[`Storyshots Atoms | Spinner Spinner big 1`] = `
 .c0 {
   display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
 }
 
 .c1 {
@@ -769,8 +769,8 @@ exports[`Storyshots Atoms | Spinner Spinner big 1`] = `
 exports[`Storyshots Atoms | Spinner Spinner default 1`] = `
 .c0 {
   display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
 }
 
 .c1 {
@@ -848,8 +848,8 @@ exports[`Storyshots Atoms | Spinner Spinner with default delay 1`] = `null`;
 exports[`Storyshots Atoms | Spinner Spinner with delay is set to false 1`] = `
 .c0 {
   display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
 }
 
 .c1 {
