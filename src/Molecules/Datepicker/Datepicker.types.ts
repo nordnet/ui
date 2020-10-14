@@ -1,4 +1,6 @@
 export type Props = {
+  ariaLabelPrevious?: string;
+  ariaLabelNext?: string;
   open?: boolean;
   onChange?: (date: Date) => void;
   label: string;

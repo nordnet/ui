@@ -25,7 +25,17 @@ const StyledDropdownBubble = styled(DropdownBubble)`
 `;
 
 export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) => {
-  const { onChange, label, disabled, disableDate, enableDate, id, width } = props;
+  const {
+    ariaLabelPrevious,
+    ariaLabelNext,
+    onChange,
+    label,
+    disabled,
+    disableDate,
+    enableDate,
+    id,
+    width,
+  } = props;
 
   assert(Boolean(props.id), `Datepicker: "id" is required.`);
 
@@ -100,6 +110,8 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const datepicker = (
     <Box my={3} mx={2}>
       <Header
+        ariaLabelPrevious={ariaLabelPrevious}
+        ariaLabelNext={ariaLabelNext}
         id={id}
         now={now}
         locale={locale}

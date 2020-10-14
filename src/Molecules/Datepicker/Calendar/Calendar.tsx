@@ -57,6 +57,7 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
   date,
   enabled = true,
   disabled = false,
+  locale,
   onClick,
   sameMonth = true,
   selected,
@@ -86,8 +87,16 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
     }
   }, [date, disabled, onClick]);
 
+  const ariaLabel = format(date, 'cccc co MMMM, yyyy', {
+    locale,
+  });
+
   return (
-    <StyledCalendarDay className={classNames.join(' ')} onClick={handleOnClick}>
+    <StyledCalendarDay
+      className={classNames.join(' ')}
+      onClick={handleOnClick}
+      aria-label={ariaLabel}
+    >
       <Typography type="tertiary" color={(t) => t.color[textColor || 'text']}>
         {format(date, 'd')}
       </Typography>
@@ -125,8 +134,9 @@ const Calendar: React.FC<Props> = ({
     }
   }, [arrowDate, arrowLeft, arrowRight, arrowUp, arrowDown, onClick]);
 
+  const localeObj = getLocale(locale);
   const calendar = getCalendar(now, {
-    locale: getLocale(locale),
+    locale: localeObj,
   });
 
   return (
@@ -151,6 +161,7 @@ const Calendar: React.FC<Props> = ({
               onClick={() => onClick(d)}
               selected={selectedDate && isSameDay(selectedDate, d)}
               sameMonth={isSameMonth(now, d)}
+              locale={localeObj}
             />
           ))}
         </Flexbox>

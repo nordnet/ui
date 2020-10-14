@@ -1,8 +1,11 @@
+import Locale from 'date-fns/locale';
+
 export type CalendarDayProps = {
   className?: string;
   date: Date;
   disabled?: boolean;
   enabled?: boolean;
+  locale: Locale;
   onClick?: (date: Date) => void;
   sameMonth?: boolean;
   selected?: boolean;

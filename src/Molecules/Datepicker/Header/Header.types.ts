@@ -1,4 +1,6 @@
 export type Props = {
+  ariaLabelPrevious?: string;
+  ariaLabelNext?: string;
   id: string;
   locale: string;
   now: Date;

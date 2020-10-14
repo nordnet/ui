@@ -1,15 +1,42 @@
 import React from 'react';
+import format from 'date-fns/format';
+import sub from 'date-fns/sub';
+import add from 'date-fns/add';
 import { Props } from './Header.types';
 import { Box, Flexbox, Link, Icon } from '../../..';
+import { getLocale } from '../shared/dateUtils';
 import SelectMonth from '../SelectMonth';
 import SelectYear from '../SelectYear';
 
-const Header: React.FC<Props> = ({ id, locale, now, onMonthChange, onYearChange }) => {
+const Header: React.FC<Props> = ({
+  ariaLabelPrevious = 'Previous month {date}, button',
+  ariaLabelNext = 'Next month {date}, button',
+  id,
+  locale,
+  now,
+  onMonthChange,
+  onYearChange,
+}) => {
+  const opts = {
+    locale: getLocale(locale),
+  };
+
+  const ariaLabelPreviousText = ariaLabelPrevious.replace(
+    '{date}',
+    format(sub(now, { months: 1 }), 'MMMM yyyy', opts),
+  );
+
+  const ariaLabelNextText = ariaLabelNext.replace(
+    '{date}',
+    format(add(now, { months: 1 }), 'MMMM yyyy', opts),
+  );
+
   return (
     <Flexbox container justifyContent="space-between">
       <Flexbox item>
         <Box mt={1}>
           <Link
+            aria-label={ariaLabelPreviousText}
             data-testid="datepicker-arrow-left"
             onClick={() => {
               onMonthChange(now.getMonth() - 1);
@@ -30,6 +57,7 @@ const Header: React.FC<Props> = ({ id, locale, now, onMonthChange, onYearChange 
       <Flexbox item>
         <Box mt={1}>
           <Link
+            aria-label={ariaLabelNextText}
             data-testid="datepicker-arrow-right"
             onClick={() => {
               onMonthChange(now.getMonth() + 1);
