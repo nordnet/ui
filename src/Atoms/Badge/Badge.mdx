@@ -1,0 +1,33 @@
+import { Preview } from '@storybook/addon-docs/blocks';
+import { Playground } from '../../../docs/Playground';
+import { Badge } from './Badge';
+import { Typography } from '../..';
+
+# Badge
+
+This component will render a badge component with children or nothing inside.
+
+## Props
+
+Accepts `HTMLDivElement` props, with two caveats:
+
+| name            | description | default               | comments                                                          |
+| :-------------- | :---------- | :-------------------- | :---------------------------------------------------------------- |
+| backgroundColor | colorFn     | theme.color.cta       |                                                                   |
+| color           | colorFn     | theme.color.textLight | default color is set if children is a not a component or function |
+
+## Usage
+
+Basic usage
+
+<Preview>
+  <Badge>1</Badge>
+</Preview>
+
+## Playground
+
+<Playground
+  code={`<Badge backgroundColor={(t => t.color.warning)} color={t => t.color.black}>
+    5
+</Badge>`}
+/>

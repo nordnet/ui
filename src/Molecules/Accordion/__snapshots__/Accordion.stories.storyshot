@@ -488,17 +488,7 @@ Array [
 <div
     className="c0"
   />,
-  .c2 {
-  display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
-}
-
-.c3 {
-  display: block;
-}
-
-.c1 {
+  .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -518,68 +508,6 @@ Array [
       className="c1"
     >
       Did not find what you look for? ...Thats a shame. 
-      <span
-        className="c2"
-      >
-        <svg
-          className="c3"
-          height={16}
-          viewBox="0 0 24 24"
-          width={16}
-        >
-          <defs>
-            <linearGradient
-              id="spinner-shame-1"
-              x1="50%"
-              x2="50%"
-              y1="0%"
-              y2="100%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#0046FF"
-                stopOpacity="0"
-              />
-              <stop
-                offset="100%"
-                stopColor="#0046FF"
-                stopOpacity=".5"
-              />
-            </linearGradient>
-            <linearGradient
-              id="spinner-shame-2"
-              x1="50%"
-              x2="50%"
-              y1="0%"
-              y2="100%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#0046FF"
-                stopOpacity=".5"
-              />
-              <stop
-                offset="100%"
-                stopColor="#0046FF"
-              />
-            </linearGradient>
-          </defs>
-          <g
-            fill="none"
-            fillRule="evenodd"
-          >
-            <path
-              d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-              fill="url(#spinner-shame-1)"
-            />
-            <path
-              d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-              fill="url(#spinner-shame-2)"
-              transform="rotate(-180 6 12)"
-            />
-          </g>
-        </svg>
-      </span>
     </p>
   </div>,
 ]

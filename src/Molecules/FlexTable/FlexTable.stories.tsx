@@ -5,6 +5,7 @@ import FlexTable from './FlexTable';
 import { Typography, Flag, Number, Flexbox, DateTime } from '../..';
 import docs from './FlexTable.mdx';
 import { FlexPropsType } from './shared/ColumnProvider/ColumnProvider.types';
+import { StyledBackground } from './storiesShared';
 
 export default {
   title: 'Molecules | FlexTable',
@@ -15,22 +16,9 @@ export default {
   },
 };
 
-const StyledDiv = styled.div`
-  background-color: ${(p) => p.theme.color.background};
-  &:not(:last-of-type) {
-    margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
-  }
-`;
-
-const StyledFlexTable = styled(FlexTable)`
-  &:not(:last-of-type) {
-    margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
-  }
-`;
-
 export const FlexTableWithDifferentRows = () => {
   const FlexTableWithDifferentRowsExample = () => (
-    <StyledFlexTable>
+    <FlexTable>
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
@@ -61,14 +49,14 @@ export const FlexTableWithDifferentRows = () => {
         <FlexTable.Cell columnId="column2">Separator color set</FlexTable.Cell>
         <FlexTable.Cell columnId="column3">Separator color set</FlexTable.Cell>
       </FlexTable.Row>
-    </StyledFlexTable>
+    </FlexTable>
   );
 
   return (
-    <StyledDiv>
+    <StyledBackground>
       <Typography type="title3">FlexTable With Different Rows</Typography>
       <FlexTableWithDifferentRowsExample />
-    </StyledDiv>
+    </StyledBackground>
   );
 };
 
@@ -219,4 +207,33 @@ export const TableCustomDataCells = () => {
     );
   };
   return <Story />;
+};
+
+export const FlexTableWithHiddenExpandItem = () => {
+  const FlexTableWithHiddenExpandItemExample = () => (
+    <FlexTable expandable>
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row
+        expandItems={[
+          { label: 'Always visible', value: 123 },
+          { label: 'Hidden', value: 1000, hidden: true },
+        ]}
+      >
+        <FlexTable.Cell columnId="column1">Value 1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Value 2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Value 3</FlexTable.Cell>
+      </FlexTable.Row>
+    </FlexTable>
+  );
+
+  return (
+    <StyledBackground>
+      <Typography type="title3">FlexTable With Hidden Expand Item</Typography>
+      <FlexTableWithHiddenExpandItemExample />
+    </StyledBackground>
+  );
 };

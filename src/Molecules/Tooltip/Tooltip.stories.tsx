@@ -104,3 +104,13 @@ export const zindexWars = () => {
 zindexWars.story = {
   name: 'Integration: With Drawer and Modal',
 };
+
+export const customMaxWidth = () => (
+  <Tooltip label={label} maxWidth={100}>
+    <Button type="button">Hover me</Button>
+  </Tooltip>
+);
+
+customMaxWidth.story = {
+  name: 'Custom max-width',
+};

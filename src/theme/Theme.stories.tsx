@@ -2,25 +2,42 @@ import React from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
 import { propOr } from 'ramda';
-import { theme, createTheme, Table, Thead, Tbody, Th, Tr, Td } from '..';
+import { theme, createTheme, Table, Thead, Tbody, Th, Tr, Td, Flexbox } from '..';
 import { rawColor } from './theme';
 import colorDocs from './Colors.md';
 import { Display } from '../common/Display';
 
 const Color = styled.div`
-  width: ${p => p.theme.spacing.unit(14)}px;
-  height: ${p => p.theme.spacing.unit(14)}px;
-  background-color: ${p => p.color};
+  width: ${(p) => p.theme.spacing.unit(14)}px;
+  height: ${(p) => p.theme.spacing.unit(14)}px;
+  background-color: ${(p) => p.color};
   border: 1px solid #eee;
   display: ;
 `;
 
-const ColorWithValue: React.FC<{ color: string }> = ({ color }) => (
-  <>
-    <Color color={color} />
-    <div>{color}</div>
-  </>
-);
+const ColorInArray = styled.div`
+  width: ${(p) => p.theme.spacing.unit(4)}px;
+  height: ${(p) => p.theme.spacing.unit(4)}px;
+  padding: 0;
+  background-color: ${(p) => p.color};
+  border: 1px solid #eee;
+  display: ;
+`;
+
+const colorWithValue = (color: string | string[]) =>
+  typeof color === 'string' ? (
+    <>
+      <Color color={color} />
+      <div>{color}</div>
+    </>
+  ) : (
+    color.map((c: string) => (
+      <Flexbox container gutter={1}>
+        <ColorInArray color={c} />
+        <div>{c}</div>
+      </Flexbox>
+    ))
+  );
 
 export default {
   title: 'Theme',
@@ -40,15 +57,11 @@ export const colorsSemantic = () => {
         </Tr>
       </Thead>
       <Tbody>
-        {Object.keys(theme.color).map(title => (
+        {Object.keys(theme.color).map((title) => (
           <Tr key={`theme-${title}`}>
             <Td>{title}</Td>
-            <Td>
-              <ColorWithValue color={theme.color[title]} />
-            </Td>
-            <Td>
-              <ColorWithValue color={a11yTheme.color[title]} />
-            </Td>
+            <Td>{colorWithValue(theme.color[title])}</Td>
+            <Td>{colorWithValue(a11yTheme.color[title])}</Td>
           </Tr>
         ))}
       </Tbody>

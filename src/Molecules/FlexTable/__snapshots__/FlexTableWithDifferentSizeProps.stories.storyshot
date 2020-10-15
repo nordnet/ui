@@ -14,26 +14,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   position: relative;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c5 {
-  padding-left: 4px;
-}
-
 .c0 {
   background-color: #F5F5F5;
 }
 
 .c0:not(:last-of-type) {
-  margin-bottom: 40px;
-}
-
-.c3:not(:last-of-type) {
   margin-bottom: 40px;
 }
 
@@ -53,26 +38,18 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
     Tables With Different Column Distance on mobile
   </span>
   <div
-    className="c0"
-  >
-    <div
-      className="c2 c3"
-      role="table"
-    >
-      <caption
-        className="c4"
-      >
-        <span
-          className="c1 c5"
-        />
-      </caption>
-    </div>
-  </div>
+    className="c2"
+    role="table"
+  />
 </div>
 `;
 
 exports[`Storyshots Molecules | FlexTable / FlexTable with different size props Tables With Different Densities 1`] = `
-.c7 {
+.c3 {
+  margin-bottom: 40px;
+}
+
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -86,16 +63,16 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   margin-right: -4px;
 }
 
-.c7 > * {
+.c5 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c7 > *:not(:first-child) {
+.c5 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c10 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -127,7 +104,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   line-height: 1.5;
 }
 
-.c14 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -136,7 +113,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   line-height: 1.4285714285714286;
 }
 
-.c17 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -145,7 +122,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c10 {
   display: inline-block;
   width: 100%;
   text-overflow: ellipsis;
@@ -153,15 +130,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   overflow: hidden;
 }
 
-.c13 {
+.c11 {
   width: inherit;
 }
 
-.c16 {
+.c14 {
   overflow: hidden;
 }
 
-.c8 {
+.c6 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -173,15 +150,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   margin-left: 0;
 }
 
-.c8 > *:first-child {
+.c6 > *:first-child {
   padding-left: 0;
 }
 
-.c8 > *:last-child {
+.c6 > *:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c13 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -193,15 +170,59 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   margin-left: 0;
 }
 
-.c15:hover {
+.c13:hover {
   background: #F5F5F5;
 }
 
-.c15 > *:first-child {
+.c13 > *:first-child {
   padding-left: 0;
 }
 
-.c15 > *:last-child {
+.c13 > *:last-child {
+  padding-right: 0;
+}
+
+.c16 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c16 > *:first-child {
+  padding-left: 0;
+}
+
+.c16 > *:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c17:hover {
+  background: #F5F5F5;
+}
+
+.c17 > *:first-child {
+  padding-left: 0;
+}
+
+.c17 > *:last-child {
   padding-right: 0;
 }
 
@@ -211,8 +232,8 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   margin-right: 0;
   margin-left: 0;
 }
@@ -231,8 +252,8 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   margin-right: 0;
   margin-left: 0;
 }
@@ -249,51 +270,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   padding-right: 0;
 }
 
-.c20 {
-  background: #FFFFFF;
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.c20 > *:first-child {
-  padding-left: 0;
-}
-
-.c20 > *:last-child {
-  padding-right: 0;
-}
-
-.c21 {
-  background: #FFFFFF;
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.c21:hover {
-  background: #F5F5F5;
-}
-
-.c21 > *:first-child {
-  padding-left: 0;
-}
-
-.c21 > *:last-child {
-  padding-right: 0;
-}
-
-.c9 {
+.c7 {
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
@@ -301,23 +278,12 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   border-bottom: 1px solid #282823;
 }
 
-.c11 {
+.c9 {
   overflow: hidden;
 }
 
-.c3 {
+.c4 {
   position: relative;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
-  padding-left: 4px;
 }
 
 .c0 {
@@ -325,10 +291,6 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
 }
 
 .c0:not(:last-of-type) {
-  margin-bottom: 40px;
-}
-
-.c4:not(:last-of-type) {
   margin-bottom: 40px;
 }
 
@@ -347,66 +309,59 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   >
     Tables With Different Densities
   </span>
-  <div
-    className="c0"
+  <span
+    className="c2"
   >
-    <span
-      className="c2"
-    >
-      Default (Medium)
-    </span>
+    Default (Medium)
+  </span>
+  <div
+    className="c3"
+  >
     <div
-      className="c3 c4"
+      className="c4"
       role="table"
     >
-      <caption
-        className="c5"
-      >
-        <span
-          className="c1 c6"
-        />
-      </caption>
       <div
-        className="c7 c8 c9"
+        className="c5 c6 c7"
         role="row"
       >
         <div
-          className="c10 c11"
+          className="c8 c9"
           role="columnheader"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c14"
+              className="c12"
             >
               Header 1
             </span>
           </div>
         </div>
         <div
-          className="c10 c11"
+          className="c8 c9"
           role="columnheader"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c14"
+              className="c12"
             >
               Header 2
             </span>
           </div>
         </div>
         <div
-          className="c10 c11"
+          className="c8 c9"
           role="columnheader"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c14"
+              className="c12"
             >
               Header 3
             </span>
@@ -414,46 +369,46 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
         </div>
       </div>
       <div
-        className="c7 c15"
+        className="c5 c13"
         role="row"
       >
         <div
-          className="c10 c16"
+          className="c8 c14"
           role="cell"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c17"
+              className="c15"
             >
               Cell 1-1
             </span>
           </div>
         </div>
         <div
-          className="c10 c16"
+          className="c8 c14"
           role="cell"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c17"
+              className="c15"
             >
               Cell 1-2
             </span>
           </div>
         </div>
         <div
-          className="c10 c16"
+          className="c8 c14"
           role="cell"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c17"
+              className="c15"
             >
               Cell 1-3
             </span>
@@ -461,520 +416,46 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
         </div>
       </div>
       <div
-        className="c7 c15"
+        className="c5 c13"
         role="row"
       >
         <div
-          className="c10 c16"
+          className="c8 c14"
           role="cell"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c17"
+              className="c15"
             >
               Cell 2-1
             </span>
           </div>
         </div>
         <div
-          className="c10 c16"
+          className="c8 c14"
           role="cell"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c17"
+              className="c15"
             >
               Cell 2-2
             </span>
           </div>
         </div>
         <div
-          className="c10 c16"
+          className="c8 c14"
           role="cell"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c17"
-            >
-              Cell 2-3
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <span
-      className="c2"
-    >
-      Small
-    </span>
-    <div
-      className="c3 c4"
-      role="table"
-    >
-      <caption
-        className="c5"
-      >
-        <span
-          className="c1 c6"
-        />
-      </caption>
-      <div
-        className="c7 c18 c9"
-        role="row"
-      >
-        <div
-          className="c10 c11"
-          role="columnheader"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c14"
-            >
-              Header 1
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c11"
-          role="columnheader"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c14"
-            >
-              Header 2
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c11"
-          role="columnheader"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c14"
-            >
-              Header 3
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="c7 c19"
-        role="row"
-      >
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 1-1
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 1-2
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 1-3
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="c7 c19"
-        role="row"
-      >
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 2-1
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 2-2
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 2-3
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <span
-      className="c2"
-    >
-      Medium
-    </span>
-    <div
-      className="c3 c4"
-      role="table"
-    >
-      <caption
-        className="c5"
-      >
-        <span
-          className="c1 c6"
-        />
-      </caption>
-      <div
-        className="c7 c8 c9"
-        role="row"
-      >
-        <div
-          className="c10 c11"
-          role="columnheader"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c14"
-            >
-              Header 1
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c11"
-          role="columnheader"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c14"
-            >
-              Header 2
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c11"
-          role="columnheader"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c14"
-            >
-              Header 3
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="c7 c15"
-        role="row"
-      >
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 1-1
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 1-2
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 1-3
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="c7 c15"
-        role="row"
-      >
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 2-1
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 2-2
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 2-3
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <span
-      className="c2"
-    >
-      Large
-    </span>
-    <div
-      className="c3 c4"
-      role="table"
-    >
-      <caption
-        className="c5"
-      >
-        <span
-          className="c1 c6"
-        />
-      </caption>
-      <div
-        className="c7 c20 c9"
-        role="row"
-      >
-        <div
-          className="c10 c11"
-          role="columnheader"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c14"
-            >
-              Header 1
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c11"
-          role="columnheader"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c14"
-            >
-              Header 2
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c11"
-          role="columnheader"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c14"
-            >
-              Header 3
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="c7 c21"
-        role="row"
-      >
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 1-1
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 1-2
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 1-3
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="c7 c21"
-        role="row"
-      >
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 2-1
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 2-2
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
+              className="c15"
             >
               Cell 2-3
             </span>
@@ -983,11 +464,476 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
       </div>
     </div>
   </div>
+  <div
+    className="c3"
+  >
+    <span
+      className="c2"
+    >
+      Small
+    </span>
+    <div
+      className="c4"
+      role="table"
+    >
+      <div
+        className="c5 c16 c7"
+        role="row"
+      >
+        <div
+          className="c8 c9"
+          role="columnheader"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c12"
+            >
+              Header 1
+            </span>
+          </div>
+        </div>
+        <div
+          className="c8 c9"
+          role="columnheader"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c12"
+            >
+              Header 2
+            </span>
+          </div>
+        </div>
+        <div
+          className="c8 c9"
+          role="columnheader"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c12"
+            >
+              Header 3
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c5 c17"
+        role="row"
+      >
+        <div
+          className="c8 c14"
+          role="cell"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c15"
+            >
+              Cell 1-1
+            </span>
+          </div>
+        </div>
+        <div
+          className="c8 c14"
+          role="cell"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c15"
+            >
+              Cell 1-2
+            </span>
+          </div>
+        </div>
+        <div
+          className="c8 c14"
+          role="cell"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c15"
+            >
+              Cell 1-3
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c5 c17"
+        role="row"
+      >
+        <div
+          className="c8 c14"
+          role="cell"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c15"
+            >
+              Cell 2-1
+            </span>
+          </div>
+        </div>
+        <div
+          className="c8 c14"
+          role="cell"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c15"
+            >
+              Cell 2-2
+            </span>
+          </div>
+        </div>
+        <div
+          className="c8 c14"
+          role="cell"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c15"
+            >
+              Cell 2-3
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c3"
+  >
+    <span
+      className="c2"
+    >
+      Medium
+    </span>
+    <div
+      className="c4"
+      role="table"
+    >
+      <div
+        className="c5 c6 c7"
+        role="row"
+      >
+        <div
+          className="c8 c9"
+          role="columnheader"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c12"
+            >
+              Header 1
+            </span>
+          </div>
+        </div>
+        <div
+          className="c8 c9"
+          role="columnheader"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c12"
+            >
+              Header 2
+            </span>
+          </div>
+        </div>
+        <div
+          className="c8 c9"
+          role="columnheader"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c12"
+            >
+              Header 3
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c5 c13"
+        role="row"
+      >
+        <div
+          className="c8 c14"
+          role="cell"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c15"
+            >
+              Cell 1-1
+            </span>
+          </div>
+        </div>
+        <div
+          className="c8 c14"
+          role="cell"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c15"
+            >
+              Cell 1-2
+            </span>
+          </div>
+        </div>
+        <div
+          className="c8 c14"
+          role="cell"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c15"
+            >
+              Cell 1-3
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c5 c13"
+        role="row"
+      >
+        <div
+          className="c8 c14"
+          role="cell"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c15"
+            >
+              Cell 2-1
+            </span>
+          </div>
+        </div>
+        <div
+          className="c8 c14"
+          role="cell"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c15"
+            >
+              Cell 2-2
+            </span>
+          </div>
+        </div>
+        <div
+          className="c8 c14"
+          role="cell"
+        >
+          <div
+            className="c10 c11"
+          >
+            <span
+              className="c15"
+            >
+              Cell 2-3
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span
+    className="c2"
+  >
+    Large
+  </span>
+  <div
+    className="c4"
+    role="table"
+  >
+    <div
+      className="c5 c18 c7"
+      role="row"
+    >
+      <div
+        className="c8 c9"
+        role="columnheader"
+      >
+        <div
+          className="c10 c11"
+        >
+          <span
+            className="c12"
+          >
+            Header 1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c8 c9"
+        role="columnheader"
+      >
+        <div
+          className="c10 c11"
+        >
+          <span
+            className="c12"
+          >
+            Header 2
+          </span>
+        </div>
+      </div>
+      <div
+        className="c8 c9"
+        role="columnheader"
+      >
+        <div
+          className="c10 c11"
+        >
+          <span
+            className="c12"
+          >
+            Header 3
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c5 c19"
+      role="row"
+    >
+      <div
+        className="c8 c14"
+        role="cell"
+      >
+        <div
+          className="c10 c11"
+        >
+          <span
+            className="c15"
+          >
+            Cell 1-1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c8 c14"
+        role="cell"
+      >
+        <div
+          className="c10 c11"
+        >
+          <span
+            className="c15"
+          >
+            Cell 1-2
+          </span>
+        </div>
+      </div>
+      <div
+        className="c8 c14"
+        role="cell"
+      >
+        <div
+          className="c10 c11"
+        >
+          <span
+            className="c15"
+          >
+            Cell 1-3
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c5 c19"
+      role="row"
+    >
+      <div
+        className="c8 c14"
+        role="cell"
+      >
+        <div
+          className="c10 c11"
+        >
+          <span
+            className="c15"
+          >
+            Cell 2-1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c8 c14"
+        role="cell"
+      >
+        <div
+          className="c10 c11"
+        >
+          <span
+            className="c15"
+          >
+            Cell 2-2
+          </span>
+        </div>
+      </div>
+      <div
+        className="c8 c14"
+        role="cell"
+      >
+        <div
+          className="c10 c11"
+        >
+          <span
+            className="c15"
+          >
+            Cell 2-3
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Molecules | FlexTable / FlexTable with different size props Tables With Different Font Sizes 1`] = `
-.c7 {
+.c2 {
+  margin-bottom: 40px;
+}
+
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1001,16 +947,16 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   margin-right: -4px;
 }
 
-.c7 > * {
+.c5 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c7 > *:not(:first-child) {
+.c5 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c10 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1033,7 +979,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   line-height: 1.3333333333333333;
 }
 
-.c2 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1042,13 +988,31 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   line-height: 1.5;
 }
 
-.c14 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
+}
+
+.c15 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
 }
 
 .c17 {
@@ -1056,29 +1020,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   color: #282823;
   margin: 0;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c18 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
 }
 
-.c19 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c12 {
+.c10 {
   display: inline-block;
   width: 100%;
   text-overflow: ellipsis;
@@ -1086,15 +1032,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   overflow: hidden;
 }
 
-.c13 {
+.c11 {
   width: inherit;
 }
 
-.c16 {
+.c14 {
   overflow: hidden;
 }
 
-.c8 {
+.c6 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -1106,15 +1052,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   margin-left: 0;
 }
 
-.c8 > *:first-child {
+.c6 > *:first-child {
   padding-left: 0;
 }
 
-.c8 > *:last-child {
+.c6 > *:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c13 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -1126,19 +1072,19 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   margin-left: 0;
 }
 
-.c15:hover {
+.c13:hover {
   background: #F5F5F5;
 }
 
-.c15 > *:first-child {
+.c13 > *:first-child {
   padding-left: 0;
 }
 
-.c15 > *:last-child {
+.c13 > *:last-child {
   padding-right: 0;
 }
 
-.c9 {
+.c7 {
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
@@ -1146,23 +1092,12 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   border-bottom: 1px solid #282823;
 }
 
-.c11 {
+.c9 {
   overflow: hidden;
 }
 
-.c3 {
+.c4 {
   position: relative;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
-  padding-left: 4px;
 }
 
 .c0 {
@@ -1170,10 +1105,6 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
 }
 
 .c0:not(:last-of-type) {
-  margin-bottom: 40px;
-}
-
-.c4:not(:last-of-type) {
   margin-bottom: 40px;
 }
 
@@ -1195,379 +1126,366 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   <div
     className="c0"
   >
-    <span
+    <div
       className="c2"
     >
-      Default (Medium)
-    </span>
+      <span
+        className="c3"
+      >
+        Default (Medium)
+      </span>
+      <div
+        className="c4"
+        role="table"
+      >
+        <div
+          className="c5 c6 c7"
+          role="row"
+        >
+          <div
+            className="c8 c9"
+            role="columnheader"
+          >
+            <div
+              className="c10 c11"
+            >
+              <span
+                className="c12"
+              >
+                Header 1
+              </span>
+            </div>
+          </div>
+          <div
+            className="c8 c9"
+            role="columnheader"
+          >
+            <div
+              className="c10 c11"
+            >
+              <span
+                className="c12"
+              >
+                Header 2
+              </span>
+            </div>
+          </div>
+          <div
+            className="c8 c9"
+            role="columnheader"
+          >
+            <div
+              className="c10 c11"
+            >
+              <span
+                className="c12"
+              >
+                Header 3
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="c5 c13"
+          role="row"
+        >
+          <div
+            className="c8 c14"
+            role="cell"
+          >
+            <div
+              className="c10 c11"
+            >
+              <span
+                className="c15"
+              >
+                Cell 1-1
+              </span>
+            </div>
+          </div>
+          <div
+            className="c8 c14"
+            role="cell"
+          >
+            <div
+              className="c10 c11"
+            >
+              <span
+                className="c15"
+              >
+                Cell 1-2
+              </span>
+            </div>
+          </div>
+          <div
+            className="c8 c14"
+            role="cell"
+          >
+            <div
+              className="c10 c11"
+            >
+              <span
+                className="c15"
+              >
+                Cell 1-3
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="c5 c13"
+          role="row"
+        >
+          <div
+            className="c8 c14"
+            role="cell"
+          >
+            <div
+              className="c10 c11"
+            >
+              <span
+                className="c15"
+              >
+                Cell 2-1
+              </span>
+            </div>
+          </div>
+          <div
+            className="c8 c14"
+            role="cell"
+          >
+            <div
+              className="c10 c11"
+            >
+              <span
+                className="c15"
+              >
+                Cell 2-2
+              </span>
+            </div>
+          </div>
+          <div
+            className="c8 c14"
+            role="cell"
+          >
+            <div
+              className="c10 c11"
+            >
+              <span
+                className="c15"
+              >
+                Cell 2-3
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div
-      className="c3 c4"
-      role="table"
+      className="c2"
     >
-      <caption
-        className="c5"
+      <span
+        className="c3"
       >
-        <span
-          className="c1 c6"
-        />
-      </caption>
+        Small
+      </span>
       <div
-        className="c7 c8 c9"
-        role="row"
+        className="c4"
+        role="table"
       >
         <div
-          className="c10 c11"
-          role="columnheader"
+          className="c5 c6 c7"
+          role="row"
         >
           <div
-            className="c12 c13"
+            className="c8 c9"
+            role="columnheader"
           >
-            <span
-              className="c14"
+            <div
+              className="c10 c11"
             >
-              Header 1
-            </span>
+              <span
+                className="c16"
+              >
+                Header 1
+              </span>
+            </div>
+          </div>
+          <div
+            className="c8 c9"
+            role="columnheader"
+          >
+            <div
+              className="c10 c11"
+            >
+              <span
+                className="c16"
+              >
+                Header 2
+              </span>
+            </div>
+          </div>
+          <div
+            className="c8 c9"
+            role="columnheader"
+          >
+            <div
+              className="c10 c11"
+            >
+              <span
+                className="c16"
+              >
+                Header 3
+              </span>
+            </div>
           </div>
         </div>
         <div
-          className="c10 c11"
-          role="columnheader"
+          className="c5 c13"
+          role="row"
         >
           <div
-            className="c12 c13"
+            className="c8 c14"
+            role="cell"
           >
-            <span
-              className="c14"
+            <div
+              className="c10 c11"
             >
-              Header 2
-            </span>
+              <span
+                className="c17"
+              >
+                Cell 1-1
+              </span>
+            </div>
+          </div>
+          <div
+            className="c8 c14"
+            role="cell"
+          >
+            <div
+              className="c10 c11"
+            >
+              <span
+                className="c17"
+              >
+                Cell 1-2
+              </span>
+            </div>
+          </div>
+          <div
+            className="c8 c14"
+            role="cell"
+          >
+            <div
+              className="c10 c11"
+            >
+              <span
+                className="c17"
+              >
+                Cell 1-3
+              </span>
+            </div>
           </div>
         </div>
         <div
-          className="c10 c11"
-          role="columnheader"
+          className="c5 c13"
+          role="row"
         >
           <div
-            className="c12 c13"
+            className="c8 c14"
+            role="cell"
           >
-            <span
-              className="c14"
+            <div
+              className="c10 c11"
             >
-              Header 3
-            </span>
+              <span
+                className="c17"
+              >
+                Cell 2-1
+              </span>
+            </div>
           </div>
-        </div>
-      </div>
-      <div
-        className="c7 c15"
-        role="row"
-      >
-        <div
-          className="c10 c16"
-          role="cell"
-        >
           <div
-            className="c12 c13"
+            className="c8 c14"
+            role="cell"
           >
-            <span
-              className="c17"
+            <div
+              className="c10 c11"
             >
-              Cell 1-1
-            </span>
+              <span
+                className="c17"
+              >
+                Cell 2-2
+              </span>
+            </div>
           </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
           <div
-            className="c12 c13"
+            className="c8 c14"
+            role="cell"
           >
-            <span
-              className="c17"
+            <div
+              className="c10 c11"
             >
-              Cell 1-2
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 1-3
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="c7 c15"
-        role="row"
-      >
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 2-1
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 2-2
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c17"
-            >
-              Cell 2-3
-            </span>
+              <span
+                className="c17"
+              >
+                Cell 2-3
+              </span>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <span
-      className="c2"
-    >
-      Small
-    </span>
-    <div
-      className="c3 c4"
-      role="table"
-    >
-      <caption
-        className="c5"
-      >
-        <span
-          className="c1 c6"
-        />
-      </caption>
-      <div
-        className="c7 c8 c9"
-        role="row"
-      >
-        <div
-          className="c10 c11"
-          role="columnheader"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c18"
-            >
-              Header 1
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c11"
-          role="columnheader"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c18"
-            >
-              Header 2
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c11"
-          role="columnheader"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c18"
-            >
-              Header 3
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="c7 c15"
-        role="row"
-      >
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c19"
-            >
-              Cell 1-1
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c19"
-            >
-              Cell 1-2
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c19"
-            >
-              Cell 1-3
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="c7 c15"
-        role="row"
-      >
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c19"
-            >
-              Cell 2-1
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c19"
-            >
-              Cell 2-2
-            </span>
-          </div>
-        </div>
-        <div
-          className="c10 c16"
-          role="cell"
-        >
-          <div
-            className="c12 c13"
-          >
-            <span
-              className="c19"
-            >
-              Cell 2-3
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <span
-      className="c2"
+      className="c3"
     >
       Medium
     </span>
     <div
-      className="c3 c4"
+      className="c4"
       role="table"
     >
-      <caption
-        className="c5"
-      >
-        <span
-          className="c1 c6"
-        />
-      </caption>
       <div
-        className="c7 c8 c9"
+        className="c5 c6 c7"
         role="row"
       >
         <div
-          className="c10 c11"
+          className="c8 c9"
           role="columnheader"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c14"
+              className="c12"
             >
               Header 1
             </span>
           </div>
         </div>
         <div
-          className="c10 c11"
+          className="c8 c9"
           role="columnheader"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c14"
+              className="c12"
             >
               Header 2
             </span>
           </div>
         </div>
         <div
-          className="c10 c11"
+          className="c8 c9"
           role="columnheader"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c14"
+              className="c12"
             >
               Header 3
             </span>
@@ -1575,46 +1493,46 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
         </div>
       </div>
       <div
-        className="c7 c15"
+        className="c5 c13"
         role="row"
       >
         <div
-          className="c10 c16"
+          className="c8 c14"
           role="cell"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c17"
+              className="c15"
             >
               Cell 1-1
             </span>
           </div>
         </div>
         <div
-          className="c10 c16"
+          className="c8 c14"
           role="cell"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c17"
+              className="c15"
             >
               Cell 1-2
             </span>
           </div>
         </div>
         <div
-          className="c10 c16"
+          className="c8 c14"
           role="cell"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c17"
+              className="c15"
             >
               Cell 1-3
             </span>
@@ -1622,46 +1540,46 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
         </div>
       </div>
       <div
-        className="c7 c15"
+        className="c5 c13"
         role="row"
       >
         <div
-          className="c10 c16"
+          className="c8 c14"
           role="cell"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c17"
+              className="c15"
             >
               Cell 2-1
             </span>
           </div>
         </div>
         <div
-          className="c10 c16"
+          className="c8 c14"
           role="cell"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c17"
+              className="c15"
             >
               Cell 2-2
             </span>
           </div>
         </div>
         <div
-          className="c10 c16"
+          className="c8 c14"
           role="cell"
         >
           <div
-            className="c12 c13"
+            className="c10 c11"
           >
             <span
-              className="c17"
+              className="c15"
             >
               Cell 2-3
             </span>
@@ -1696,26 +1614,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   position: relative;
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
-  padding-left: 4px;
-}
-
 .c0 {
   background-color: #F5F5F5;
 }
 
 .c0:not(:last-of-type) {
-  margin-bottom: 40px;
-}
-
-.c4:not(:last-of-type) {
   margin-bottom: 40px;
 }
 
@@ -1734,26 +1637,14 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   >
     Tables With Different Sizes on mobile
   </span>
-  <div
-    className="c0"
+  <span
+    className="c2"
   >
-    <span
-      className="c2"
-    >
-      Small density and font on desktop, large on mobile
-    </span>
-    <div
-      className="c3 c4"
-      role="table"
-    >
-      <caption
-        className="c5"
-      >
-        <span
-          className="c1 c6"
-        />
-      </caption>
-    </div>
-  </div>
+    Small density and font on desktop, large on mobile
+  </span>
+  <div
+    className="c3"
+    role="table"
+  />
 </div>
 `;

@@ -93,6 +93,7 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -123,6 +124,10 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   z-index: 3;
 }
 
+.c8:focus {
+  border-width: 1px;
+}
+
 .c8:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -147,7 +152,9 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -165,6 +172,10 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7:focus {
+  border-width: 1px;
 }
 
 .c7::-webkit-input-placeholder {
@@ -229,6 +240,7 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
         step={1}
         type="text"
         value="1"
+        variant="normal"
       />
       <button
         className="c8"
@@ -378,6 +390,7 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -401,6 +414,10 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
 .c8:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c8:focus {
+  border-width: 1px;
 }
 
 .c8:first-of-type {
@@ -427,7 +444,9 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -440,6 +459,10 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7:focus {
+  border-width: 1px;
 }
 
 .c7::-webkit-input-placeholder {
@@ -505,6 +528,7 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
         step="0.25"
         type="text"
         value="152.25"
+        variant="normal"
       />
       <button
         className="c8"
@@ -561,6 +585,1100 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
     </div>
   </span>
 </div>
+`;
+
+exports[`Storyshots Molecules | Input / Number Quiet 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Variant = "quiet"
+    </span>
+  </div>,
+  .c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c18 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c21 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c11 {
+  width: 100%;
+  display: inline-block;
+}
+
+.c9 {
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.c20 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 3;
+  left: 8px;
+}
+
+.c23 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 3;
+  right: 8px;
+}
+
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  border-width: 0 0 2px 0;
+  height: 40px;
+  padding: 0px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 0 -1px;
+  min-width: 0;
+  z-index: 1;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c10:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c10:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c10:focus {
+  border-width: 1px;
+}
+
+.c10::-webkit-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c10::-moz-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c10:-ms-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c10::placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c10:disabled {
+  color: #A0A09B;
+}
+
+.c10:focus {
+  padding-left: 8px;
+  padding-right: 0px;
+}
+
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  border-width: 0 0 2px 0;
+  border-color: #EBEBE8;
+  height: 40px;
+  padding: 0px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 0 -1px;
+  min-width: 0;
+  z-index: 1;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c12:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c12:focus {
+  border-width: 1px;
+}
+
+.c12::-webkit-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12::-moz-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12:-ms-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12::placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12:disabled {
+  color: #A0A09B;
+}
+
+.c12:focus {
+  padding-left: 8px;
+  padding-right: 0px;
+}
+
+.c13 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #FF1900;
+  position: relative;
+  border-width: 0 0 2px 0;
+  height: 40px;
+  padding: 0px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 0 -1px;
+  min-width: 0;
+  z-index: 1;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c13:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c13:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c13:focus {
+  border-width: 1px;
+}
+
+.c13::-webkit-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c13::-moz-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c13:-ms-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c13::placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c13:disabled {
+  color: #A0A09B;
+}
+
+.c13:focus {
+  padding-left: 8px;
+  padding-right: 0px;
+}
+
+.c16 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #00D200;
+  position: relative;
+  border-width: 0 0 2px 0;
+  height: 40px;
+  padding: 0px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 0 -1px;
+  min-width: 0;
+  z-index: 1;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c16:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c16:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c16:focus {
+  border-width: 1px;
+}
+
+.c16::-webkit-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c16::-moz-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c16:-ms-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c16::placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c16:disabled {
+  color: #A0A09B;
+}
+
+.c16:focus {
+  padding-left: 8px;
+  padding-right: 0px;
+}
+
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  border-width: 0 0 2px 0;
+  height: 40px;
+  padding: 0px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 32px;
+  padding-right: 8px;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c17:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c17:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c17:focus {
+  border-width: 1px;
+}
+
+.c17::-webkit-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c17::-moz-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c17:-ms-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c17::placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c17:disabled {
+  color: #A0A09B;
+}
+
+.c17:focus {
+  padding-left: 32px;
+  padding-right: 0px;
+}
+
+.c22 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  border-width: 0 0 2px 0;
+  height: 40px;
+  padding: 0px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 40px;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c22:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c22:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c22:focus {
+  border-width: 1px;
+}
+
+.c22::-webkit-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c22::-moz-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c22:-ms-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c22::placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c22:disabled {
+  color: #A0A09B;
+}
+
+.c22:focus {
+  padding-left: 8px;
+  padding-right: 32px;
+}
+
+.c22:focus + .c19 {
+  padding-right: 8px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+    direction="column"
+  >
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Default
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label
+            className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
+          >
+            <span
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                Label 
+              </div>
+            </span>
+          </label>
+          <span
+            className="c7"
+          >
+            <div
+              className="c8 c9"
+            >
+              <input
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
+                id="insert-unique-id"
+                inputMode="decimal"
+                min={0}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                step={1}
+                type="text"
+                value="1"
+                variant="quiet"
+              />
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Full width
+      </div>
+      <div>
+        <div
+          className="c11"
+          width="100%"
+        >
+          <label
+            className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
+          >
+            <span
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                Label 
+              </div>
+            </span>
+          </label>
+          <span
+            className="c7"
+          >
+            <div
+              className="c8 c9"
+            >
+              <input
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
+                id="insert-unique-id"
+                inputMode="decimal"
+                min={0}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                step={1}
+                type="text"
+                value="1"
+                variant="quiet"
+              />
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Disabled
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label
+            className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
+          >
+            <span
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                Label 
+              </div>
+            </span>
+          </label>
+          <span
+            className="c7"
+          >
+            <div
+              className="c8 c9"
+            >
+              <input
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c12"
+                disabled={true}
+                id="insert-unique-id"
+                inputMode="decimal"
+                min={0}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                step={1}
+                type="text"
+                value="1"
+                variant="quiet"
+              />
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Error
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label
+            className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
+          >
+            <span
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                Label 
+              </div>
+            </span>
+          </label>
+          <span
+            className="c7"
+          >
+            <div
+              className="c8 c9"
+            >
+              <input
+                aria-invalid={true}
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c13"
+                id="insert-unique-id"
+                inputMode="decimal"
+                min={0}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                step={1}
+                type="text"
+                value="1"
+                variant="quiet"
+              />
+            </div>
+          </span>
+          <div>
+            <span
+              className="c14"
+            >
+              <div
+                className="c15"
+              >
+                Error: 
+              </div>
+              Some error text that will wrap itself over couple of lines
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Success
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label
+            className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
+          >
+            <span
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                Label 
+              </div>
+            </span>
+          </label>
+          <span
+            className="c7"
+          >
+            <div
+              className="c8 c9"
+            >
+              <input
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c16"
+                id="insert-unique-id"
+                inputMode="decimal"
+                min={0}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                step={1}
+                type="text"
+                value="1"
+                variant="quiet"
+              />
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Left addon
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label
+            className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
+          >
+            <span
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                Label 
+              </div>
+            </span>
+          </label>
+          <span
+            className="c7"
+          >
+            <div
+              className="c8 c9"
+            >
+              <input
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c17"
+                id="insert-unique-id"
+                inputMode="decimal"
+                min={0}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                step={1}
+                type="text"
+                value="1"
+                variant="quiet"
+              />
+              <div
+                className="c18 c19 c20"
+                position="left"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="c21"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15 0L3 13.5h7.5L9 24l12-13.5h-7.5z"
+                    id="a"
+                  />
+                </svg>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Right addon
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label
+            className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
+          >
+            <span
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                Label 
+              </div>
+            </span>
+          </label>
+          <span
+            className="c7"
+          >
+            <div
+              className="c8 c9"
+            >
+              <input
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+                id="insert-unique-id"
+                inputMode="decimal"
+                min={0}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                step={1}
+                type="text"
+                value="1"
+                variant="quiet"
+              />
+              <div
+                className="c18 c19 c23"
+                position="right"
+              >
+                %
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  margin-bottom: 32px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  />,
+]
 `;
 
 exports[`Storyshots Molecules | Input / Number Required 1`] = `
@@ -686,6 +1804,7 @@ Array [
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -716,6 +1835,10 @@ Array [
   z-index: 3;
 }
 
+.c11:focus {
+  border-width: 1px;
+}
+
 .c11:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -740,7 +1863,9 @@ Array [
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -758,6 +1883,10 @@ Array [
 .c10:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c10:focus {
+  border-width: 1px;
 }
 
 .c10::-webkit-input-placeholder {
@@ -898,6 +2027,7 @@ Array [
                 step={1}
                 type="text"
                 value="91"
+                variant="normal"
               />
               <button
                 className="c11"
@@ -999,6 +2129,7 @@ Array [
                 step={1}
                 type="text"
                 value="91"
+                variant="normal"
               />
               <button
                 className="c11"
@@ -1163,6 +2294,7 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -1193,6 +2325,10 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   z-index: 3;
 }
 
+.c8:focus {
+  border-width: 1px;
+}
+
 .c8:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -1217,7 +2353,9 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -1235,6 +2373,10 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7:focus {
+  border-width: 1px;
 }
 
 .c7::-webkit-input-placeholder {
@@ -1299,6 +2441,7 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
         step="0.005"
         type="text"
         value="15.200"
+        variant="normal"
       />
       <button
         className="c8"
@@ -1448,6 +2591,7 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -1478,6 +2622,10 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   z-index: 3;
 }
 
+.c8:focus {
+  border-width: 1px;
+}
+
 .c8:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -1502,7 +2650,9 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -1520,6 +2670,10 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7:focus {
+  border-width: 1px;
 }
 
 .c7::-webkit-input-placeholder {
@@ -1589,6 +2743,7 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
         step={1}
         type="text"
         value="1"
+        variant="normal"
       />
       <button
         className="c8"
@@ -1738,6 +2893,7 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -1768,6 +2924,10 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   z-index: 3;
 }
 
+.c8:focus {
+  border-width: 1px;
+}
+
 .c8:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -1792,7 +2952,9 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -1810,6 +2972,10 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7:focus {
+  border-width: 1px;
 }
 
 .c7::-webkit-input-placeholder {
@@ -1875,6 +3041,7 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
         step="0.25"
         type="text"
         value="152.25"
+        variant="normal"
       />
       <button
         className="c8"
@@ -2050,7 +3217,9 @@ exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: left;
   box-sizing: border-box;
@@ -2068,6 +3237,10 @@ exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7:focus {
+  border-width: 1px;
 }
 
 .c7::-webkit-input-placeholder {
@@ -2132,6 +3305,7 @@ exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
         step={1}
         type="text"
         value="1"
+        variant="normal"
       />
       <div
         className="c8 c9"
@@ -2255,6 +3429,7 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -2285,6 +3460,10 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   z-index: 3;
 }
 
+.c8:focus {
+  border-width: 1px;
+}
+
 .c8:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -2309,7 +3488,9 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -2327,6 +3508,10 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7:focus {
+  border-width: 1px;
 }
 
 .c7::-webkit-input-placeholder {
@@ -2391,6 +3576,7 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
         step="0.1"
         type="text"
         value="15.2"
+        variant="normal"
       />
       <button
         className="c8"
@@ -2549,6 +3735,7 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -2579,6 +3766,10 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   z-index: 3;
 }
 
+.c8:focus {
+  border-width: 1px;
+}
+
 .c8:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -2603,7 +3794,9 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   outline: none;
   border: 1px solid #FF1900;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -2621,6 +3814,10 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7:focus {
+  border-width: 1px;
 }
 
 .c7::-webkit-input-placeholder {
@@ -2686,6 +3883,7 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
         step="1"
         type="text"
         value="0"
+        variant="normal"
       />
       <button
         className="c8"
@@ -2856,6 +4054,7 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -2886,6 +4085,10 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   z-index: 3;
 }
 
+.c8:focus {
+  border-width: 1px;
+}
+
 .c8:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -2910,7 +4113,9 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   outline: none;
   border: 1px solid #FF1900;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -2928,6 +4133,10 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7:focus {
+  border-width: 1px;
 }
 
 .c7::-webkit-input-placeholder {
@@ -2993,6 +4202,7 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
         step={1}
         type="text"
         value="0"
+        variant="normal"
       />
       <button
         className="c8"
@@ -3163,6 +4373,7 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -3193,6 +4404,10 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   z-index: 3;
 }
 
+.c8:focus {
+  border-width: 1px;
+}
+
 .c8:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -3217,7 +4432,9 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -3235,6 +4452,10 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7:focus {
+  border-width: 1px;
 }
 
 .c7::-webkit-input-placeholder {
@@ -3299,6 +4520,7 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
         step={1}
         type="text"
         value="1"
+        variant="normal"
       />
       <button
         className="c8"
@@ -3449,6 +4671,7 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -3479,6 +4702,10 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   z-index: 3;
 }
 
+.c7:focus {
+  border-width: 1px;
+}
+
 .c7:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -3503,7 +4730,9 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -3521,6 +4750,10 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
 .c6:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6::-webkit-input-placeholder {
@@ -3581,6 +4814,7 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
         step={1}
         type="text"
         value="1"
+        variant="normal"
       />
       <button
         className="c7"
@@ -3635,6 +4869,362 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
     </div>
   </span>
 </div>
+`;
+
+exports[`Storyshots Molecules | Input / Number With label tooltip (position top) 1`] = `
+Array [
+  <br />,
+  <br />,
+  .c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c12 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c4 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c13 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  stroke: #6E6E69;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c5 {
+  margin-left: 4px;
+}
+
+.c9 {
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.c11 {
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  border-width: 1px;
+  padding: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.c11:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c11:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c11:focus {
+  border-width: 1px;
+}
+
+.c11:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+.c11:active:enabled {
+  background-color: #0046FF;
+}
+
+.c11:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  border-width: 1px;
+  height: 40px;
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 0 -1px;
+  min-width: 0;
+  z-index: 1;
+}
+
+.c10:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c10:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c10:focus {
+  border-width: 1px;
+}
+
+.c10::-webkit-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c10::-moz-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c10:-ms-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c10::placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+<div
+    className="c0"
+  >
+    <label
+      className="c1"
+      hidden={false}
+      htmlFor="insert-unique-id"
+    >
+      <span
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          Label 
+          <svg
+            aria-hidden="true"
+            className="c4 c5"
+            data-reach-tooltip-trigger=""
+            focusable="false"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseMove={[Function]}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fillRule="evenodd"
+              transform="translate(1 1)"
+            >
+              <circle
+                className="c6"
+                cx="11"
+                cy="11"
+                fill="none"
+                r="11"
+              />
+              <path
+                d="M9.4544,13.5528 L9.4544,13.3008 C9.4544,12.1584 9.4376,11.6376 11.1512,10.2432 C11.8904,9.6384 12.4784,9.2184 12.4784,8.496 C12.4784,7.8576 12.0248,7.3536 11.1176,7.3536 C10.1768,7.3536 9.656,7.9416 9.4376,8.6472 L6.9008,8.6472 C7.2368,6.3624 8.9504,5.1696 11.168,5.1696 C13.5032,5.1696 15.0992,6.4128 15.0992,8.3784 C15.0992,9.6888 14.5448,10.3776 13.0496,11.6544 C12.344,12.2424 11.84,12.6456 11.7056,13.3008 L11.6552,13.5528 L9.4544,13.5528 Z M11.9072,14.7288 L11.9072,17.4 L9.2696,17.4 L9.2696,14.7288 L11.9072,14.7288 Z"
+                fillRule="nonzero"
+              />
+            </g>
+          </svg>
+        </div>
+      </span>
+    </label>
+    <span
+      className="c7"
+    >
+      <div
+        className="c8 c9"
+      >
+        <input
+          className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
+          id="insert-unique-id"
+          inputMode="decimal"
+          min={0}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          step={1}
+          type="text"
+          value="1"
+          variant="normal"
+        />
+        <button
+          className="c11"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="c12"
+          >
+            decrease number by 
+            1
+          </div>
+          <svg
+            aria-hidden="true"
+            className="c13"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 12 2"
+          >
+            <path
+              d="M12.166 0v2h-12V0z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </button>
+        <button
+          className="c11"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="c12"
+          >
+            increase number by 
+            1
+          </div>
+          <svg
+            aria-hidden="true"
+            className="c13"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 12 12"
+          >
+            <path
+              d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
+    </span>
+  </div>,
+]
 `;
 
 exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
@@ -3752,6 +5342,7 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -3782,6 +5373,10 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
   z-index: 3;
 }
 
+.c11:focus {
+  border-width: 1px;
+}
+
 .c11:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -3806,7 +5401,9 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -3824,6 +5421,10 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
 .c10:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c10:focus {
+  border-width: 1px;
 }
 
 .c10::-webkit-input-placeholder {
@@ -3870,11 +5471,19 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
       >
         Label 
         <svg
-          aria-hidden="false"
+          aria-hidden="true"
           className="c4 c5"
+          data-reach-tooltip-trigger=""
           focusable="false"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
           preserveAspectRatio="xMidYMid meet"
-          role="img"
+          role="presentation"
           viewBox="0 0 24 24"
         >
           <g
@@ -3893,9 +5502,6 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
               fillRule="nonzero"
             />
           </g>
-          <title>
-            Tooltip content
-          </title>
         </svg>
       </div>
     </span>
@@ -3916,6 +5522,7 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
         step={1}
         type="text"
         value="1"
+        variant="normal"
       />
       <button
         className="c11"
@@ -4083,7 +5690,9 @@ exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: left;
   box-sizing: border-box;
@@ -4101,6 +5710,10 @@ exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7:focus {
+  border-width: 1px;
 }
 
 .c7::-webkit-input-placeholder {
@@ -4165,6 +5778,7 @@ exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
         step={1}
         type="text"
         value="1"
+        variant="normal"
       />
       <div
         className="c8 c9"
@@ -4282,6 +5896,7 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -4312,6 +5927,10 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   z-index: 3;
 }
 
+.c8:focus {
+  border-width: 1px;
+}
+
 .c8:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -4336,7 +5955,9 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -4354,6 +5975,10 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7:focus {
+  border-width: 1px;
 }
 
 .c7::-webkit-input-placeholder {
@@ -4419,6 +6044,7 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
         step={1}
         type="text"
         value="12"
+        variant="normal"
       />
       <button
         className="c8"
@@ -4548,7 +6174,9 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: left;
   box-sizing: border-box;
@@ -4566,6 +6194,10 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7:focus {
+  border-width: 1px;
 }
 
 .c7::-webkit-input-placeholder {
@@ -4630,6 +6262,7 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
         step={1}
         type="text"
         value="1"
+        variant="normal"
       />
     </div>
   </span>
@@ -4805,6 +6438,7 @@ Array [
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -4835,6 +6469,10 @@ Array [
   z-index: 3;
 }
 
+.c18:focus {
+  border-width: 1px;
+}
+
 .c18:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -4859,7 +6497,9 @@ Array [
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: left;
   box-sizing: border-box;
@@ -4877,6 +6517,10 @@ Array [
 .c10:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c10:focus {
+  border-width: 1px;
 }
 
 .c10::-webkit-input-placeholder {
@@ -4917,7 +6561,9 @@ Array [
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: left;
   box-sizing: border-box;
@@ -4935,6 +6581,10 @@ Array [
 .c11:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c11:focus {
+  border-width: 1px;
 }
 
 .c11::-webkit-input-placeholder {
@@ -4975,7 +6625,9 @@ Array [
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: left;
   box-sizing: border-box;
@@ -4993,6 +6645,10 @@ Array [
 .c14:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c14:focus {
+  border-width: 1px;
 }
 
 .c14::-webkit-input-placeholder {
@@ -5033,7 +6689,9 @@ Array [
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -5051,6 +6709,10 @@ Array [
 .c17:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c17:focus {
+  border-width: 1px;
 }
 
 .c17::-webkit-input-placeholder {
@@ -5191,6 +6853,7 @@ Array [
                 step={1}
                 type="text"
                 value=""
+                variant="normal"
               />
             </div>
           </span>
@@ -5242,6 +6905,7 @@ Array [
                 step={1}
                 type="text"
                 value=""
+                variant="normal"
               />
               <div
                 className="c12 c13"
@@ -5299,6 +6963,7 @@ Array [
                 step={1}
                 type="text"
                 value=""
+                variant="normal"
               />
               <div
                 className="c12 c15"
@@ -5367,6 +7032,7 @@ Array [
                 step={1}
                 type="text"
                 value=""
+                variant="normal"
               />
               <button
                 className="c18"
@@ -5535,7 +7201,9 @@ exports[`Storyshots Molecules | Input / Number With right addon 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: left;
   box-sizing: border-box;
@@ -5553,6 +7221,10 @@ exports[`Storyshots Molecules | Input / Number With right addon 1`] = `
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7:focus {
+  border-width: 1px;
 }
 
 .c7::-webkit-input-placeholder {
@@ -5617,6 +7289,7 @@ exports[`Storyshots Molecules | Input / Number With right addon 1`] = `
         step={1}
         type="text"
         value="1"
+        variant="normal"
       />
       <div
         className="c8 c9"
@@ -5761,6 +7434,7 @@ Array [
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -5791,6 +7465,10 @@ Array [
   z-index: 3;
 }
 
+.c11:focus {
+  border-width: 1px;
+}
+
 .c11:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -5815,7 +7493,9 @@ Array [
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 32px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -5833,6 +7513,10 @@ Array [
 .c10:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c10:focus {
+  border-width: 1px;
 }
 
 .c10::-webkit-input-placeholder {
@@ -5873,7 +7557,9 @@ Array [
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 32px;
+  padding: 8px;
   width: 100%;
   text-align: left;
   box-sizing: border-box;
@@ -5891,6 +7577,10 @@ Array [
 .c14:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c14:focus {
+  border-width: 1px;
 }
 
 .c14::-webkit-input-placeholder {
@@ -5931,7 +7621,9 @@ Array [
   outline: none;
   border: 1px solid #FF1900;
   position: relative;
+  border-width: 1px;
   height: 32px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -5949,6 +7641,10 @@ Array [
 .c15:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c15:focus {
+  border-width: 1px;
 }
 
 .c15::-webkit-input-placeholder {
@@ -6088,6 +7784,7 @@ Array [
                 step={1}
                 type="text"
                 value="1"
+                variant="normal"
               />
               <button
                 className="c11"
@@ -6190,6 +7887,7 @@ Array [
                 step={1}
                 type="text"
                 value="1"
+                variant="normal"
               />
             </div>
           </span>
@@ -6241,6 +7939,7 @@ Array [
                 step={1}
                 type="text"
                 value="1"
+                variant="normal"
               />
               <button
                 className="c11"
@@ -6419,6 +8118,7 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -6449,6 +8149,10 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   z-index: 3;
 }
 
+.c8:focus {
+  border-width: 1px;
+}
+
 .c8:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -6473,7 +8177,9 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   outline: none;
   border: 1px solid #00D200;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -6491,6 +8197,10 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7:focus {
+  border-width: 1px;
 }
 
 .c7::-webkit-input-placeholder {
@@ -6555,6 +8265,7 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
         step={1}
         type="text"
         value="1"
+        variant="normal"
       />
       <button
         className="c8"
@@ -6705,6 +8416,7 @@ Array [
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -6735,6 +8447,10 @@ Array [
   z-index: 3;
 }
 
+.c8:focus {
+  border-width: 1px;
+}
+
 .c8:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -6759,7 +8475,9 @@ Array [
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -6777,6 +8495,10 @@ Array [
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7:focus {
+  border-width: 1px;
 }
 
 .c7::-webkit-input-placeholder {
@@ -6841,6 +8563,7 @@ Array [
           step={1}
           type="text"
           value="10"
+          variant="normal"
         />
         <button
           className="c8"

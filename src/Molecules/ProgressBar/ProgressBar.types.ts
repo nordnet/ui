@@ -10,6 +10,8 @@ export type Props = {
   numberOfSteps: number;
   /** The currently active step */
   currentStep: number;
+  /** Marks active step as failed */
+  failed?: boolean;
   /** Label that will be rendered together with each corresponding step bubble
    * The array must be same length as numberOfSteps
    * Labels will be hidden on smaller screen widths */
@@ -29,6 +31,11 @@ export type Props = {
    * @default gray4
    *  */
   colorNext?: ColorFn;
+  /**
+   * Color of all failed steps and lines leading back to active step
+   * @default negative
+   *  */
+  colorFailure?: ColorFn;
   /**
    * Color of the icon on completed steps and number on active and steps not yet completed
    * @default white
@@ -59,6 +66,11 @@ export type Props = {
    * @default 'step not done'
    *  */
   titleNext?: string;
+  /**
+   * Title for all failure steps
+   * @default 'failure step'
+   *  */
+  titleFailure?: string;
 };
 
 export type ProgressBarComponent = React.FC<Props>;

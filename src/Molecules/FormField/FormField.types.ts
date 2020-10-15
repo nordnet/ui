@@ -1,5 +1,6 @@
 export type LabelAddonProp = {
   labelTooltip?: string;
+  labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
   hideLabel?: boolean;
 };
 

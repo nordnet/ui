@@ -14,7 +14,7 @@ const getTickDecimals = (value: number, ticks: Ticks) => {
     const wrongTick = ticks.find(R.or(R.has('from_price'), R.has('to_price')));
     assert(!wrongTick, `Found ticks with snake cased keys, they should be camelcased.`);
   }
-  const tick = ticks.find(t => value >= t.fromPrice && value < t.toPrice + (t.tick || 0));
+  const tick = ticks.find((t) => value >= t.fromPrice && value < t.toPrice + (t.tick || 0));
 
   return tick ? tick.decimals : undefined;
 };

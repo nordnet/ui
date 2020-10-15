@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import { withKnobs } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
 import { Typography, Flag, Flexbox } from '../..';
 import docs from './FlexTable.mdx';
 import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
 import { OnSort } from './Header/Header.types';
+import { StyledFlexboxContainer, StyledBackground } from './storiesShared';
 
 export default {
   title: 'Molecules | FlexTable / FlexTable with different headers',
@@ -15,23 +15,6 @@ export default {
     ...docs.parameters,
   },
 };
-
-const StyledDiv = styled.div`
-  background-color: ${(p) => p.theme.color.background};
-  &:not(:last-of-type) {
-    margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
-  }
-`;
-
-const StyledFlexTable = styled(FlexTable)`
-  &:not(:last-of-type) {
-    margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
-  }
-`;
-
-const StyledFlexboxContainer = styled(Flexbox)`
-  justify-content: inherit;
-`;
 
 export const DefaultTableHeaders = () => {
   const DefaultTableHeadersExample = () => {
@@ -60,7 +43,7 @@ export const DefaultTableHeaders = () => {
     );
 
     return (
-      <StyledFlexTable>
+      <FlexTable>
         <FlexTable.HeaderRow>
           <FlexTable.Header columnId="column1" flex="1">
             Table header 1 flex 1
@@ -74,22 +57,22 @@ export const DefaultTableHeaders = () => {
             <Typography type="title3">React component</Typography>
           </FlexTable.Header>
         </FlexTable.HeaderRow>
-      </StyledFlexTable>
+      </FlexTable>
     );
   };
 
   return (
-    <StyledDiv>
+    <StyledBackground>
       <Typography type="title3">Table Header Variations</Typography>
       <DefaultTableHeadersExample />
-    </StyledDiv>
+    </StyledBackground>
   );
 };
 
 export const UncontrolledSortableHeaders = () => {
   const UncontrolledSortableHeadersExample = () => {
     return (
-      <StyledFlexTable>
+      <FlexTable>
         <FlexTable.HeaderRow>
           <FlexTable.Header columnId="column1" sortable>
             Uncontrolled 1
@@ -108,14 +91,14 @@ export const UncontrolledSortableHeaders = () => {
             Non sortable
           </FlexTable.Header>
         </FlexTable.HeaderRow>
-      </StyledFlexTable>
+      </FlexTable>
     );
   };
   return (
-    <StyledDiv>
+    <StyledBackground>
       <Typography type="title3">Uncontrolled Sortable Headers</Typography>
       <UncontrolledSortableHeadersExample />
-    </StyledDiv>
+    </StyledBackground>
   );
 };
 
@@ -136,7 +119,7 @@ export const ControlledSortableHeaders = () => {
         setColumnSort({ columnId, sortOrder: nextSortOrder });
 
       return (
-        <StyledFlexTable>
+        <FlexTable>
           <FlexTable.HeaderRow>
             <FlexTable.Header
               columnId="column1"
@@ -166,7 +149,7 @@ export const ControlledSortableHeaders = () => {
               Controlled3
             </FlexTable.Header>
           </FlexTable.HeaderRow>
-        </StyledFlexTable>
+        </FlexTable>
       );
     };
 
@@ -174,10 +157,10 @@ export const ControlledSortableHeaders = () => {
   };
 
   return (
-    <StyledDiv>
+    <StyledBackground>
       <Typography type="title3">Controlled Sortable Headers</Typography>
       <ControlledSortableHeadersExample />
-    </StyledDiv>
+    </StyledBackground>
   );
 };
 
@@ -206,7 +189,7 @@ export const SortableHeadersOnlyAscendingDescending = () => {
       };
 
       return (
-        <StyledFlexTable>
+        <FlexTable>
           <FlexTable.HeaderRow>
             <FlexTable.Header
               columnId="column1"
@@ -236,23 +219,23 @@ export const SortableHeadersOnlyAscendingDescending = () => {
               Controlled3
             </FlexTable.Header>
           </FlexTable.HeaderRow>
-        </StyledFlexTable>
+        </FlexTable>
       );
     };
     return <ReactComponent />;
   };
   return (
-    <StyledDiv>
+    <StyledBackground>
       <Typography type="title3">Sortable Headers – Only Ascending/Descending</Typography>
       <SortableHeadersOnlyAscendingDescendingExample />
-    </StyledDiv>
+    </StyledBackground>
   );
 };
 
 export const SortableHeaderUncontrolledWithDifferentAlignment = () => {
   const SortableHeaderUncontrolledWithDifferentAlignmentExample = () => {
     return (
-      <StyledFlexTable>
+      <FlexTable>
         <FlexTable.HeaderRow>
           <FlexTable.Header columnId="column1" sortable justifyContent="center">
             Uncontrolled center
@@ -267,13 +250,13 @@ export const SortableHeaderUncontrolledWithDifferentAlignment = () => {
             Not sortable
           </FlexTable.Header>
         </FlexTable.HeaderRow>
-      </StyledFlexTable>
+      </FlexTable>
     );
   };
   return (
-    <StyledDiv>
+    <StyledBackground>
       <Typography type="title3">Uncontrolled Sortable Headers With Different Alignments</Typography>
       <SortableHeaderUncontrolledWithDifferentAlignmentExample />
-    </StyledDiv>
+    </StyledBackground>
   );
 };

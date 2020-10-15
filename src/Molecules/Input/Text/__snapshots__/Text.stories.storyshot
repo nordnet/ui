@@ -6532,6 +6532,207 @@ exports[`Storyshots Molecules | Input / Text With maxLength 1`] = `
 </div>
 `;
 
+exports[`Storyshots Molecules | Input / Text With tooltip (position top) as label addon 1`] = `
+Array [
+  <br />,
+  <br />,
+  .c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c4 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  stroke: #6E6E69;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c5 {
+  margin-left: 4px;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c9:focus {
+  border-width: 1px;
+}
+
+.c9:hover {
+  border-color: #4B4B46;
+}
+
+.c9:focus {
+  border-color: #0046FF;
+}
+
+.c9::-webkit-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c9::-moz-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c9:-ms-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c9::placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8 {
+  position: relative;
+  padding: 0px 0;
+}
+
+<div
+    className="c0"
+  >
+    <label
+      className="c1"
+      hidden={false}
+    >
+      <span
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          Label 
+          <svg
+            aria-hidden="true"
+            className="c4 c5"
+            data-reach-tooltip-trigger=""
+            focusable="false"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseMove={[Function]}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fillRule="evenodd"
+              transform="translate(1 1)"
+            >
+              <circle
+                className="c6"
+                cx="11"
+                cy="11"
+                fill="none"
+                r="11"
+              />
+              <path
+                d="M9.4544,13.5528 L9.4544,13.3008 C9.4544,12.1584 9.4376,11.6376 11.1512,10.2432 C11.8904,9.6384 12.4784,9.2184 12.4784,8.496 C12.4784,7.8576 12.0248,7.3536 11.1176,7.3536 C10.1768,7.3536 9.656,7.9416 9.4376,8.6472 L6.9008,8.6472 C7.2368,6.3624 8.9504,5.1696 11.168,5.1696 C13.5032,5.1696 15.0992,6.4128 15.0992,8.3784 C15.0992,9.6888 14.5448,10.3776 13.0496,11.6544 C12.344,12.2424 11.84,12.6456 11.7056,13.3008 L11.6552,13.5528 L9.4544,13.5528 Z M11.9072,14.7288 L11.9072,17.4 L9.2696,17.4 L9.2696,14.7288 L11.9072,14.7288 Z"
+                fillRule="nonzero"
+              />
+            </g>
+          </svg>
+        </div>
+        <span
+          className="c7"
+        >
+          <div
+            className="c8"
+          >
+            <input
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+              placeholder="Placeholder"
+              type="text"
+              variant="normal"
+            />
+          </div>
+        </span>
+      </span>
+    </label>
+  </div>,
+]
+`;
+
 exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
 .c3 {
   box-sizing: border-box;
@@ -6677,11 +6878,19 @@ exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
       >
         Label 
         <svg
-          aria-hidden="false"
+          aria-hidden="true"
           className="c4 c5"
+          data-reach-tooltip-trigger=""
           focusable="false"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
           preserveAspectRatio="xMidYMid meet"
-          role="img"
+          role="presentation"
           viewBox="0 0 24 24"
         >
           <g
@@ -6700,9 +6909,6 @@ exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
               fillRule="nonzero"
             />
           </g>
-          <title>
-            Tooltip content
-          </title>
         </svg>
       </div>
       <span

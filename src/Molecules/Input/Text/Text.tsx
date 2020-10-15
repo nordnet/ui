@@ -8,18 +8,18 @@ import NormalizedElements from '../../../common/NormalizedElements';
 const hasError = (error?: Props['error']) => error && error !== '';
 
 const height = css<Pick<Props, 'size'>>`
-  height: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
 `;
 
 const background = css<Pick<Props, 'disabled' | 'variant'>>`
-  background-color: ${p =>
+  background-color: ${(p) =>
     p.disabled && p.variant !== 'quiet'
       ? p.theme.color.disabledBackground
       : p.theme.color.backgroundInput};
 `;
 
 const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
-  ${p =>
+  ${(p) =>
     p.disabled
       ? ''
       : `
@@ -31,32 +31,32 @@ const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
 
 const focusBorderStyles = css`
   &:focus {
-    border-color: ${p => p.theme.color.borderActive};
+    border-color: ${(p) => p.theme.color.borderActive};
   }
 `;
 
 const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant'>>`
   outline: none;
   border: solid;
-  border-color: ${p => {
+  border-color: ${(p) => {
     if (hasError(p.error)) return p.theme.color.inputBorderError;
     if (p.success) return p.theme.color.inputBorderSuccess;
     return p.theme.color.inputBorder;
   }};
-  border-width: ${p => (p.variant === 'quiet' ? '0 0 2px 0' : '1px')};
+  border-width: ${(p) => (p.variant === 'quiet' ? '0 0 2px 0' : '1px')};
   &:focus {
     border-width: 1px;
   }
   position: relative;
   ${hoverBorderStyles}
   ${focusBorderStyles}
-  ${p =>
+  ${(p) =>
     p.disabled && p.variant === 'quiet' ? `border-color: ${p.theme.color.disabledBackground};` : ''}
 `;
 
 export const placeholderNormalizaion = css<Pick<Props, 'variant'>>`
   &::placeholder {
-    color: ${p => (p.variant === 'quiet' ? p.theme.color.cta : p.theme.color.label)};
+    color: ${(p) => (p.variant === 'quiet' ? p.theme.color.cta : p.theme.color.label)};
     height: inherit;
     line-height: inherit;
     opacity: 1;
@@ -64,22 +64,22 @@ export const placeholderNormalizaion = css<Pick<Props, 'variant'>>`
 `;
 
 const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right'; variant?: Variant }>`
-  width: ${p => p.theme.spacing.unit(8)}px;
+  width: ${(p) => p.theme.spacing.unit(8)}px;
   top: 0;
   height: 100%;
-  padding-left: ${p => p.theme.spacing.unit(1)}px;
-  padding-right: ${p => p.theme.spacing.unit(1)}px;
+  padding-left: ${(p) => p.theme.spacing.unit(1)}px;
+  padding-right: ${(p) => p.theme.spacing.unit(1)}px;
   position: absolute;
-  ${p => (p.position === 'left' ? 'left: 0;' : '')}
-  ${p => (p.position === 'right' ? `right: ${p.theme.spacing.unit(1)}px;` : '')}
-  ${p =>
+  ${(p) => (p.position === 'left' ? 'left: 0;' : '')}
+  ${(p) => (p.position === 'right' ? `right: ${p.theme.spacing.unit(1)}px;` : '')}
+  ${(p) =>
     p.variant === 'quiet'
       ? `&:not(:focus) {    
           padding-left: 0;
           padding-right: 0;
         }`
       : ''}
-  ${p =>
+  ${(p) =>
     p.variant === 'quiet' && p.position === 'right'
       ? `&:not(:focus) {   
           right: 0;
@@ -87,12 +87,12 @@ const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right'; variant?: Varian
       : ''}
 `;
 
-const Input = styled(NormalizedElements.Input).attrs(p => ({ type: p.type || 'text' }))<
+const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || 'text' }))<
   Partial<Props>
 >`
   border: 0;
   width: 100%;
-  padding: ${p => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
+  padding: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
@@ -100,12 +100,13 @@ const Input = styled(NormalizedElements.Input).attrs(p => ({ type: p.type || 'te
   ${borderStyles}
   ${background}
   ${placeholderNormalizaion}
-  ${p => (p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px;` : '')}
-  ${p =>
+  ${(p) =>
+    p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px;` : ''}
+  ${(p) =>
     p.rightAddon
       ? `padding-right: ${p.theme.spacing.unit(10)}px;` // compensate for right paddings
       : ''}
-  ${p =>
+  ${(p) =>
     p.variant === 'quiet'
       ? `color: ${p.theme.color.cta}; 
          &:disabled {
@@ -118,17 +119,17 @@ const Input = styled(NormalizedElements.Input).attrs(p => ({ type: p.type || 'te
            padding-right: ${p.theme.spacing.unit(p.rightAddon ? 8 : 0)}px;
          }`
       : ''}
-  ${p =>
+  ${(p) =>
     p.variant === 'quiet' && p.rightAddon
       ? `&:focus + ${AddonBox} {
           padding-right: ${p.theme.spacing.unit(2)}px;
         }`
       : ''}
-  `;
+`;
 
 const Wrapper = styled.div<{ variant?: Variant }>`
   position: relative;
-  padding: ${p => p.theme.spacing.unit(p.variant === 'quiet' ? 1 : 0)}px 0;
+  padding: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 1 : 0)}px 0;
 `;
 
 const components = {
@@ -177,6 +178,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
           'hideLabel',
           'label',
           'labelTooltip',
+          'labelTooltipPosition',
           'className',
           'width',
           'disabled',
@@ -185,7 +187,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
       )}
       required={visuallyEmphasiseRequired}
     >
-      <Typography type="secondary" color={t => t.color.text}>
+      <Typography type="secondary" color={(t) => t.color.text}>
         <Wrapper>
           <Input
             {...{

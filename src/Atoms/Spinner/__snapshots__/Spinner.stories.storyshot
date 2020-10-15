@@ -1,16 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Atoms | Spinner Colors 1`] = `
-.c3 {
-  display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
-}
-
-.c4 {
-  display: block;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -81,70 +71,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     >
       Default
     </div>
-    <div>
-      <span
-        className="c3"
-      >
-        <svg
-          className="c4"
-          height={16}
-          viewBox="0 0 24 24"
-          width={16}
-        >
-          <defs>
-            <linearGradient
-              id="spinner-defaultSpinner-1"
-              x1="50%"
-              x2="50%"
-              y1="0%"
-              y2="100%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#0046FF"
-                stopOpacity="0"
-              />
-              <stop
-                offset="100%"
-                stopColor="#0046FF"
-                stopOpacity=".5"
-              />
-            </linearGradient>
-            <linearGradient
-              id="spinner-defaultSpinner-2"
-              x1="50%"
-              x2="50%"
-              y1="0%"
-              y2="100%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#0046FF"
-                stopOpacity=".5"
-              />
-              <stop
-                offset="100%"
-                stopColor="#0046FF"
-              />
-            </linearGradient>
-          </defs>
-          <g
-            fill="none"
-            fillRule="evenodd"
-          >
-            <path
-              d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-              fill="url(#spinner-defaultSpinner-1)"
-            />
-            <path
-              d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-              fill="url(#spinner-defaultSpinner-2)"
-              transform="rotate(-180 6 12)"
-            />
-          </g>
-        </svg>
-      </span>
-    </div>
+    <div />
   </div>
   <div
     className="c1"
@@ -155,70 +82,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     >
       Color: text
     </div>
-    <div>
-      <span
-        className="c3"
-      >
-        <svg
-          className="c4"
-          height={16}
-          viewBox="0 0 24 24"
-          width={16}
-        >
-          <defs>
-            <linearGradient
-              id="spinner-defaultSpinnerText-1"
-              x1="50%"
-              x2="50%"
-              y1="0%"
-              y2="100%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#282823"
-                stopOpacity="0"
-              />
-              <stop
-                offset="100%"
-                stopColor="#282823"
-                stopOpacity=".5"
-              />
-            </linearGradient>
-            <linearGradient
-              id="spinner-defaultSpinnerText-2"
-              x1="50%"
-              x2="50%"
-              y1="0%"
-              y2="100%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#282823"
-                stopOpacity=".5"
-              />
-              <stop
-                offset="100%"
-                stopColor="#282823"
-              />
-            </linearGradient>
-          </defs>
-          <g
-            fill="none"
-            fillRule="evenodd"
-          >
-            <path
-              d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-              fill="url(#spinner-defaultSpinnerText-1)"
-            />
-            <path
-              d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-              fill="url(#spinner-defaultSpinnerText-2)"
-              transform="rotate(-180 6 12)"
-            />
-          </g>
-        </svg>
-      </span>
-    </div>
+    <div />
   </div>
   <div
     className="c1"
@@ -229,70 +93,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     >
       Color: positive
     </div>
-    <div>
-      <span
-        className="c3"
-      >
-        <svg
-          className="c4"
-          height={16}
-          viewBox="0 0 24 24"
-          width={16}
-        >
-          <defs>
-            <linearGradient
-              id="spinner-defaultSpinnerPositive-1"
-              x1="50%"
-              x2="50%"
-              y1="0%"
-              y2="100%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#00D200"
-                stopOpacity="0"
-              />
-              <stop
-                offset="100%"
-                stopColor="#00D200"
-                stopOpacity=".5"
-              />
-            </linearGradient>
-            <linearGradient
-              id="spinner-defaultSpinnerPositive-2"
-              x1="50%"
-              x2="50%"
-              y1="0%"
-              y2="100%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#00D200"
-                stopOpacity=".5"
-              />
-              <stop
-                offset="100%"
-                stopColor="#00D200"
-              />
-            </linearGradient>
-          </defs>
-          <g
-            fill="none"
-            fillRule="evenodd"
-          >
-            <path
-              d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-              fill="url(#spinner-defaultSpinnerPositive-1)"
-            />
-            <path
-              d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-              fill="url(#spinner-defaultSpinnerPositive-2)"
-              transform="rotate(-180 6 12)"
-            />
-          </g>
-        </svg>
-      </span>
-    </div>
+    <div />
   </div>
   <div
     className="c1"
@@ -303,70 +104,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     >
       Color: negative
     </div>
-    <div>
-      <span
-        className="c3"
-      >
-        <svg
-          className="c4"
-          height={16}
-          viewBox="0 0 24 24"
-          width={16}
-        >
-          <defs>
-            <linearGradient
-              id="spinner-defaultSpinnerNegative-1"
-              x1="50%"
-              x2="50%"
-              y1="0%"
-              y2="100%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#FF1900"
-                stopOpacity="0"
-              />
-              <stop
-                offset="100%"
-                stopColor="#FF1900"
-                stopOpacity=".5"
-              />
-            </linearGradient>
-            <linearGradient
-              id="spinner-defaultSpinnerNegative-2"
-              x1="50%"
-              x2="50%"
-              y1="0%"
-              y2="100%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#FF1900"
-                stopOpacity=".5"
-              />
-              <stop
-                offset="100%"
-                stopColor="#FF1900"
-              />
-            </linearGradient>
-          </defs>
-          <g
-            fill="none"
-            fillRule="evenodd"
-          >
-            <path
-              d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-              fill="url(#spinner-defaultSpinnerNegative-1)"
-            />
-            <path
-              d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-              fill="url(#spinner-defaultSpinnerNegative-2)"
-              transform="rotate(-180 6 12)"
-            />
-          </g>
-        </svg>
-      </span>
-    </div>
+    <div />
   </div>
   <div
     className="c1"
@@ -377,70 +115,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     >
       Color: warning
     </div>
-    <div>
-      <span
-        className="c3"
-      >
-        <svg
-          className="c4"
-          height={16}
-          viewBox="0 0 24 24"
-          width={16}
-        >
-          <defs>
-            <linearGradient
-              id="spinner-defaultSpinnerWarning-1"
-              x1="50%"
-              x2="50%"
-              y1="0%"
-              y2="100%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#FFCF00"
-                stopOpacity="0"
-              />
-              <stop
-                offset="100%"
-                stopColor="#FFCF00"
-                stopOpacity=".5"
-              />
-            </linearGradient>
-            <linearGradient
-              id="spinner-defaultSpinnerWarning-2"
-              x1="50%"
-              x2="50%"
-              y1="0%"
-              y2="100%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#FFCF00"
-                stopOpacity=".5"
-              />
-              <stop
-                offset="100%"
-                stopColor="#FFCF00"
-              />
-            </linearGradient>
-          </defs>
-          <g
-            fill="none"
-            fillRule="evenodd"
-          >
-            <path
-              d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-              fill="url(#spinner-defaultSpinnerWarning-1)"
-            />
-            <path
-              d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-              fill="url(#spinner-defaultSpinnerWarning-2)"
-              transform="rotate(-180 6 12)"
-            />
-          </g>
-        </svg>
-      </span>
-    </div>
+    <div />
   </div>
   <div
     className="c1"
@@ -451,85 +126,12 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
     >
       Color: label
     </div>
-    <div>
-      <span
-        className="c3"
-      >
-        <svg
-          className="c4"
-          height={16}
-          viewBox="0 0 24 24"
-          width={16}
-        >
-          <defs>
-            <linearGradient
-              id="spinner-defaultSpinnerLabel-1"
-              x1="50%"
-              x2="50%"
-              y1="0%"
-              y2="100%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#6E6E69"
-                stopOpacity="0"
-              />
-              <stop
-                offset="100%"
-                stopColor="#6E6E69"
-                stopOpacity=".5"
-              />
-            </linearGradient>
-            <linearGradient
-              id="spinner-defaultSpinnerLabel-2"
-              x1="50%"
-              x2="50%"
-              y1="0%"
-              y2="100%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#6E6E69"
-                stopOpacity=".5"
-              />
-              <stop
-                offset="100%"
-                stopColor="#6E6E69"
-              />
-            </linearGradient>
-          </defs>
-          <g
-            fill="none"
-            fillRule="evenodd"
-          >
-            <path
-              d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-              fill="url(#spinner-defaultSpinnerLabel-1)"
-            />
-            <path
-              d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-              fill="url(#spinner-defaultSpinnerLabel-2)"
-              transform="rotate(-180 6 12)"
-            />
-          </g>
-        </svg>
-      </span>
-    </div>
+    <div />
   </div>
 </div>
 `;
 
 exports[`Storyshots Atoms | Spinner Regression: 2 spinners with same color and size affects each other in Chrome 1`] = `
-.c1 {
-  display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
-}
-
-.c2 {
-  display: block;
-}
-
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -554,302 +156,28 @@ exports[`Storyshots Atoms | Spinner Regression: 2 spinners with same color and s
         "display": "none",
       }
     }
-  >
-    <span
-      className="c1"
-    >
-      <svg
-        className="c2"
-        height={32}
-        viewBox="0 0 24 24"
-        width={32}
-      >
-        <defs>
-          <linearGradient
-            id="spinner-firstSpinner-1"
-            x1="50%"
-            x2="50%"
-            y1="0%"
-            y2="100%"
-          >
-            <stop
-              offset="0%"
-              stopColor="#0046FF"
-              stopOpacity="0"
-            />
-            <stop
-              offset="100%"
-              stopColor="#0046FF"
-              stopOpacity=".5"
-            />
-          </linearGradient>
-          <linearGradient
-            id="spinner-firstSpinner-2"
-            x1="50%"
-            x2="50%"
-            y1="0%"
-            y2="100%"
-          >
-            <stop
-              offset="0%"
-              stopColor="#0046FF"
-              stopOpacity=".5"
-            />
-            <stop
-              offset="100%"
-              stopColor="#0046FF"
-            />
-          </linearGradient>
-        </defs>
-        <g
-          fill="none"
-          fillRule="evenodd"
-        >
-          <path
-            d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-            fill="url(#spinner-firstSpinner-1)"
-          />
-          <path
-            d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-            fill="url(#spinner-firstSpinner-2)"
-            transform="rotate(-180 6 12)"
-          />
-        </g>
-      </svg>
-    </span>
-  </div>
+  />
   <div
     style={
       Object {
         "border": "1px green solid",
       }
     }
-  >
-    <span
-      className="c1"
-    >
-      <svg
-        className="c2"
-        height={32}
-        viewBox="0 0 24 24"
-        width={32}
-      >
-        <defs>
-          <linearGradient
-            id="spinner-secondSpinner-1"
-            x1="50%"
-            x2="50%"
-            y1="0%"
-            y2="100%"
-          >
-            <stop
-              offset="0%"
-              stopColor="#0046FF"
-              stopOpacity="0"
-            />
-            <stop
-              offset="100%"
-              stopColor="#0046FF"
-              stopOpacity=".5"
-            />
-          </linearGradient>
-          <linearGradient
-            id="spinner-secondSpinner-2"
-            x1="50%"
-            x2="50%"
-            y1="0%"
-            y2="100%"
-          >
-            <stop
-              offset="0%"
-              stopColor="#0046FF"
-              stopOpacity=".5"
-            />
-            <stop
-              offset="100%"
-              stopColor="#0046FF"
-            />
-          </linearGradient>
-        </defs>
-        <g
-          fill="none"
-          fillRule="evenodd"
-        >
-          <path
-            d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-            fill="url(#spinner-secondSpinner-1)"
-          />
-          <path
-            d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-            fill="url(#spinner-secondSpinner-2)"
-            transform="rotate(-180 6 12)"
-          />
-        </g>
-      </svg>
-    </span>
-  </div>
+  />
 </div>
 `;
 
-exports[`Storyshots Atoms | Spinner Spinner big 1`] = `
-.c0 {
-  display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
-}
+exports[`Storyshots Atoms | Spinner Spinner big 1`] = `null`;
 
-.c1 {
-  display: block;
-}
-
-<span
-  className="c0"
->
-  <svg
-    className="c1"
-    height={64}
-    viewBox="0 0 24 24"
-    width={64}
-  >
-    <defs>
-      <linearGradient
-        id="spinner-mySpinner-1"
-        x1="50%"
-        x2="50%"
-        y1="0%"
-        y2="100%"
-      >
-        <stop
-          offset="0%"
-          stopColor="#0046FF"
-          stopOpacity="0"
-        />
-        <stop
-          offset="100%"
-          stopColor="#0046FF"
-          stopOpacity=".5"
-        />
-      </linearGradient>
-      <linearGradient
-        id="spinner-mySpinner-2"
-        x1="50%"
-        x2="50%"
-        y1="0%"
-        y2="100%"
-      >
-        <stop
-          offset="0%"
-          stopColor="#0046FF"
-          stopOpacity=".5"
-        />
-        <stop
-          offset="100%"
-          stopColor="#0046FF"
-        />
-      </linearGradient>
-    </defs>
-    <g
-      fill="none"
-      fillRule="evenodd"
-    >
-      <path
-        d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-        fill="url(#spinner-mySpinner-1)"
-      />
-      <path
-        d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-        fill="url(#spinner-mySpinner-2)"
-        transform="rotate(-180 6 12)"
-      />
-    </g>
-  </svg>
-</span>
-`;
-
-exports[`Storyshots Atoms | Spinner Spinner default 1`] = `
-.c0 {
-  display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
-}
-
-.c1 {
-  display: block;
-}
-
-<span
-  className="c0"
->
-  <svg
-    className="c1"
-    height={16}
-    viewBox="0 0 24 24"
-    width={16}
-  >
-    <defs>
-      <linearGradient
-        id="spinner-mySpinner-1"
-        x1="50%"
-        x2="50%"
-        y1="0%"
-        y2="100%"
-      >
-        <stop
-          offset="0%"
-          stopColor="#0046FF"
-          stopOpacity="0"
-        />
-        <stop
-          offset="100%"
-          stopColor="#0046FF"
-          stopOpacity=".5"
-        />
-      </linearGradient>
-      <linearGradient
-        id="spinner-mySpinner-2"
-        x1="50%"
-        x2="50%"
-        y1="0%"
-        y2="100%"
-      >
-        <stop
-          offset="0%"
-          stopColor="#0046FF"
-          stopOpacity=".5"
-        />
-        <stop
-          offset="100%"
-          stopColor="#0046FF"
-        />
-      </linearGradient>
-    </defs>
-    <g
-      fill="none"
-      fillRule="evenodd"
-    >
-      <path
-        d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-        fill="url(#spinner-mySpinner-1)"
-      />
-      <path
-        d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-        fill="url(#spinner-mySpinner-2)"
-        transform="rotate(-180 6 12)"
-      />
-    </g>
-  </svg>
-</span>
-`;
+exports[`Storyshots Atoms | Spinner Spinner default 1`] = `null`;
 
 exports[`Storyshots Atoms | Spinner Spinner with custom 2 sec delay 1`] = `null`;
 
-exports[`Storyshots Atoms | Spinner Spinner with default delay 1`] = `null`;
-
-exports[`Storyshots Atoms | Spinner Spinner with delay is set to false 1`] = `
+exports[`Storyshots Atoms | Spinner Spinner without default delay 1`] = `
 .c0 {
   display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
 }
 
 .c1 {

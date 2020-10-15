@@ -1,0 +1,2376 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules / Pagination / Large 1 page 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c6 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c2 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2,
+.c2[type='button'],
+.c2[type='reset'],
+.c2[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c2::-moz-focus-inner,
+.c2[type='button']::-moz-focus-inner,
+.c2[type='reset']::-moz-focus-inner,
+.c2[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c2:-moz-focusring,
+.c2[type='button']:-moz-focusring,
+.c2[type='reset']:-moz-focusring,
+.c2[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c2:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c2:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  background-color: #0046FF;
+  cursor: default;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 40px;
+}
+
+<nav
+  aria-label="Pagination"
+  role="navigation"
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <button
+        aria-label="Go to previous page"
+        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          <span
+            className="c4"
+          >
+            <svg
+              aria-hidden="true"
+              className="c5"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(90 12 12)"
+              />
+            </svg>
+          </span>
+        </span>
+      </button>
+    </div>
+    <ul
+      className="c6 c7"
+    >
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={true}
+          aria-label="Current Page, page: 1"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c10"
+              >
+                1
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+    </ul>
+    <div
+      className="c1"
+    >
+      <button
+        aria-label="Go to next page"
+        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          <span
+            className="c4"
+          >
+            <svg
+              aria-hidden="true"
+              className="c5"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(-90 12 12)"
+              />
+            </svg>
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c6 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c2 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2,
+.c2[type='button'],
+.c2[type='reset'],
+.c2[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c2::-moz-focus-inner,
+.c2[type='button']::-moz-focus-inner,
+.c2[type='reset']::-moz-focus-inner,
+.c2[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c2:-moz-focusring,
+.c2[type='button']:-moz-focusring,
+.c2[type='reset']:-moz-focusring,
+.c2[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c2:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c2:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  background-color: #0046FF;
+  cursor: default;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 80px;
+}
+
+<nav
+  aria-label="Pagination"
+  role="navigation"
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <button
+        aria-label="Go to previous page"
+        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          <span
+            className="c4"
+          >
+            <svg
+              aria-hidden="true"
+              className="c5"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(90 12 12)"
+              />
+            </svg>
+          </span>
+        </span>
+      </button>
+    </div>
+    <ul
+      className="c6 c7"
+    >
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={true}
+          aria-label="Current Page, page: 1"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c10"
+              >
+                1
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={false}
+          aria-label="Go to Page 2"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c12"
+              >
+                2
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+    </ul>
+    <div
+      className="c1"
+    >
+      <button
+        aria-label="Go to next page"
+        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          <span
+            className="c4"
+          >
+            <svg
+              aria-hidden="true"
+              className="c5"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(-90 12 12)"
+              />
+            </svg>
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c6 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2,
+.c2[type='button'],
+.c2[type='reset'],
+.c2[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c2::-moz-focus-inner,
+.c2[type='button']::-moz-focus-inner,
+.c2[type='reset']::-moz-focus-inner,
+.c2[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c2:-moz-focusring,
+.c2[type='button']:-moz-focusring,
+.c2[type='reset']:-moz-focusring,
+.c2[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c2:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c2:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  background-color: #0046FF;
+  cursor: default;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 20px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 240px;
+}
+
+<nav
+  aria-label="Pagination"
+  role="navigation"
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <button
+        aria-label="Go to previous page"
+        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          <span
+            className="c4"
+          >
+            <svg
+              aria-hidden="true"
+              className="c5"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(90 12 12)"
+              />
+            </svg>
+          </span>
+        </span>
+      </button>
+    </div>
+    <ul
+      className="c6 c7"
+    >
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={true}
+          aria-label="Current Page, page: 1"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c10"
+              >
+                1
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={false}
+          aria-label="Go to Page 2"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c12"
+              >
+                2
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={false}
+          aria-label="Go to Page 3"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c12"
+              >
+                3
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+      <li
+        className="c13"
+      >
+        <span
+          className="c14"
+        >
+          ...
+        </span>
+      </li>
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={false}
+          aria-label="Go to Page 12"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c12"
+              >
+                12
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+    </ul>
+    <div
+      className="c1"
+    >
+      <button
+        aria-label="Go to next page"
+        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          <span
+            className="c4"
+          >
+            <svg
+              aria-hidden="true"
+              className="c5"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(-90 12 12)"
+              />
+            </svg>
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c6 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2,
+.c2[type='button'],
+.c2[type='reset'],
+.c2[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c2::-moz-focus-inner,
+.c2[type='button']::-moz-focus-inner,
+.c2[type='reset']::-moz-focus-inner,
+.c2[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c2:-moz-focusring,
+.c2[type='button']:-moz-focusring,
+.c2[type='reset']:-moz-focusring,
+.c2[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c2:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c2:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  background-color: #0046FF;
+  cursor: default;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 20px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 240px;
+}
+
+<nav
+  aria-label="Pagination"
+  role="navigation"
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <button
+        aria-label="Go to previous page"
+        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          <span
+            className="c4"
+          >
+            <svg
+              aria-hidden="true"
+              className="c5"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(90 12 12)"
+              />
+            </svg>
+          </span>
+        </span>
+      </button>
+    </div>
+    <ul
+      className="c6 c7"
+    >
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={true}
+          aria-label="Current Page, page: 1"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c10"
+              >
+                1
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={false}
+          aria-label="Go to Page 2"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c12"
+              >
+                2
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={false}
+          aria-label="Go to Page 3"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c12"
+              >
+                3
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+      <li
+        className="c13"
+      >
+        <span
+          className="c14"
+        >
+          ...
+        </span>
+      </li>
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={false}
+          aria-label="Go to Page 999"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c12"
+              >
+                999
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+    </ul>
+    <div
+      className="c1"
+    >
+      <button
+        aria-label="Go to next page"
+        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          <span
+            className="c4"
+          >
+            <svg
+              aria-hidden="true"
+              className="c5"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(-90 12 12)"
+              />
+            </svg>
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c6 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c2 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2,
+.c2[type='button'],
+.c2[type='reset'],
+.c2[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c2::-moz-focus-inner,
+.c2[type='button']::-moz-focus-inner,
+.c2[type='reset']::-moz-focus-inner,
+.c2[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c2:-moz-focusring,
+.c2[type='button']:-moz-focusring,
+.c2[type='reset']:-moz-focusring,
+.c2[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c2:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c2:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  background-color: #0046FF;
+  cursor: default;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 20px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 240px;
+}
+
+<nav
+  aria-label="Pagination"
+  role="navigation"
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <button
+        aria-label="Go to previous page"
+        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          <span
+            className="c4"
+          >
+            <svg
+              aria-hidden="true"
+              className="c5"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(90 12 12)"
+              />
+            </svg>
+          </span>
+        </span>
+      </button>
+    </div>
+    <ul
+      className="c6 c7"
+    >
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={false}
+          aria-label="Go to Page 1"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c10"
+              >
+                1
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+      <li
+        className="c11"
+      >
+        <span
+          className="c12"
+        >
+          ...
+        </span>
+      </li>
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={false}
+          aria-label="Go to Page 4"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c10"
+              >
+                4
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={true}
+          aria-label="Current Page, page: 5"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c13"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c14"
+              >
+                5
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={false}
+          aria-label="Go to Page 6"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c10"
+              >
+                6
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+      <li
+        className="c11"
+      >
+        <span
+          className="c12"
+        >
+          ...
+        </span>
+      </li>
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={false}
+          aria-label="Go to Page 10"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c10"
+              >
+                10
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+    </ul>
+    <div
+      className="c1"
+    >
+      <button
+        aria-label="Go to next page"
+        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          <span
+            className="c4"
+          >
+            <svg
+              aria-hidden="true"
+              className="c5"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(-90 12 12)"
+              />
+            </svg>
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c6 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2,
+.c2[type='button'],
+.c2[type='reset'],
+.c2[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c2::-moz-focus-inner,
+.c2[type='button']::-moz-focus-inner,
+.c2[type='reset']::-moz-focus-inner,
+.c2[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c2:-moz-focusring,
+.c2[type='button']:-moz-focusring,
+.c2[type='reset']:-moz-focusring,
+.c2[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c2:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c2:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  background-color: #0046FF;
+  cursor: default;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 20px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 240px;
+}
+
+<nav
+  aria-label="Pagination"
+  role="navigation"
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <button
+        aria-label="Go to previous page"
+        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          <span
+            className="c4"
+          >
+            <svg
+              aria-hidden="true"
+              className="c5"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(90 12 12)"
+              />
+            </svg>
+          </span>
+        </span>
+      </button>
+    </div>
+    <ul
+      className="c6 c7"
+    >
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={true}
+          aria-label="Current Page, page: 1"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c10"
+              >
+                1
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={false}
+          aria-label="Go to Page 2"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c12"
+              >
+                2
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={false}
+          aria-label="Go to Page 3"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c12"
+              >
+                3
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+      <li
+        className="c13"
+      >
+        <span
+          className="c14"
+        >
+          ...
+        </span>
+      </li>
+      <li
+        className="c8"
+      >
+        <button
+          aria-disabled={false}
+          aria-label="Go to Page 10"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c4"
+            >
+              <span
+                className="c12"
+              >
+                10
+              </span>
+            </span>
+          </span>
+        </button>
+      </li>
+    </ul>
+    <div
+      className="c1"
+    >
+      <button
+        aria-label="Go to next page"
+        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          <span
+            className="c4"
+          >
+            <svg
+              aria-hidden="true"
+              className="c5"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(-90 12 12)"
+              />
+            </svg>
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</nav>
+`;

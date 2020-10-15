@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
-import { FormLabel, Icon, Flexbox, Typography, FormField } from '../../..';
+import { FormLabel, Icon, Flexbox, Typography, FormField, Tooltip } from '../../..';
 import { CheckboxComponent, Props, InternalInputProps } from './Checkbox.types';
 import { isString } from '../../../common/utils';
 
@@ -11,6 +11,12 @@ const checkIfHasError = (error?: Props['error']) => isString(error) && error !==
 const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement>) => (
   <input ref={ref} {...R.omit(['hasError', 'visuallyFocused'], props)} />
 ));
+
+const TooltipIcon = styled(Icon.Questionmark)`
+  display: inline;
+  vertical-align: middle;
+  margin-left: ${(p) => p.theme.spacing.unit(1)}px;
+`;
 
 const getSize = (size: Props['size']): number => {
   if (size && size === 's') {
@@ -118,6 +124,8 @@ const Checkbox: CheckboxComponent & { components: typeof components } = (props) 
     error,
     hasError,
     label,
+    labelTooltip,
+    labelTooltipPosition,
     name,
     onBlur,
     onChange,
@@ -160,11 +168,21 @@ const Checkbox: CheckboxComponent & { components: typeof components } = (props) 
               visuallyFocused,
             }}
           />
+
           <CheckmarkBox container alignItems="center" justifyContent="center" size={getSize(size)}>
             <Icon.CheckMark size={3} color="transparent" />
           </CheckmarkBox>
+
           <Label type="secondary" color={(t) => (disabled ? t.color.disabledText : t.color.text)}>
             {visuallyEmphasiseRequired ? `${label} *` : label}
+            {labelTooltip && (
+              <Tooltip
+                label={labelTooltip}
+                {...(labelTooltipPosition && { position: labelTooltipPosition })}
+              >
+                <TooltipIcon size={4} />
+              </Tooltip>
+            )}
           </Label>
         </Flexbox>
       </StyledFormLabel>

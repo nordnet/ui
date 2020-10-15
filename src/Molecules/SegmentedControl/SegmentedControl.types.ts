@@ -5,6 +5,7 @@ export type MouseEventProps = ((e: React.MouseEvent, selected: number) => void) 
 export type OverlayProps = {
   $count: number;
   $selected: number;
+  disabled?: boolean;
 };
 
 export type ItemProps = {
@@ -24,6 +25,7 @@ export type ContainerProps = {
   selected?: number;
   className?: string;
   onClick?: MouseEventProps;
+  disabled?: boolean;
 };
 
 export type ItemComponent = React.FC<ItemProps>;

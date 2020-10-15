@@ -1,10 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
 import { withKnobs } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
 import { Typography, Flag } from '../..';
 import docs from './FlexTable.mdx';
 import { FlexProps } from '../../Atoms/Flexbox/Flexbox.types';
+import { StyledBackground } from './storiesShared';
 
 export default {
   title: 'Molecules | FlexTable / FlexTable with different columns',
@@ -15,22 +15,10 @@ export default {
   },
 };
 
-const StyledDiv = styled.div`
-  background-color: ${(p) => p.theme.color.background};
-  &:not(:last-of-type) {
-    margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
-  }
-`;
-
-const StyledFlexTable = styled(FlexTable)`
-  &:not(:last-of-type) {
-    margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
-  }
-`;
-
-export const DifferentAlignmentsTable = () => {
-  const DifferentAlignmentsTableExample = () => (
-    <StyledFlexTable>
+export const DifferentAlignmentsTable = () => (
+  <StyledBackground>
+    <Typography type="title3">Table With Different Alignments</Typography>
+    <FlexTable>
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Left</FlexTable.Header>
         <FlexTable.Header columnId="column2" justifyContent="flex-end">
@@ -79,31 +67,25 @@ export const DifferentAlignmentsTable = () => {
           Cell 3-4
         </FlexTable.Cell>
       </FlexTable.Row>
-    </StyledFlexTable>
-  );
+    </FlexTable>
+  </StyledBackground>
+);
 
-  return (
-    <StyledDiv>
-      <Typography type="title3">Table With Different Alignments</Typography>
-      <DifferentAlignmentsTableExample />
-    </StyledDiv>
-  );
-};
+const FlagCell: React.FC<{ columnId: string } & FlexProps> = React.memo(
+  ({ children, columnId, ...cellProps }) => (
+    <FlexTable.Cell columnId={columnId} {...cellProps}>
+      <FlexTable.CellInlineContainer>
+        <FlexTable.Cell.TextWrapper>{children}</FlexTable.Cell.TextWrapper>
+        <Flag country="SE" />
+      </FlexTable.CellInlineContainer>
+    </FlexTable.Cell>
+  ),
+);
 
-export const ColumnWidthTableWithCustomFlagCell = () => {
-  const FlagCell: React.FC<{ columnId: string } & FlexProps> = React.memo(
-    ({ children, columnId, ...cellProps }) => (
-      <FlexTable.Cell columnId={columnId} {...cellProps}>
-        <FlexTable.CellInlineContainer>
-          <FlexTable.Cell.TextWrapper>{children}</FlexTable.Cell.TextWrapper>
-          <Flag country="SE" />
-        </FlexTable.CellInlineContainer>
-      </FlexTable.Cell>
-    ),
-  );
-
-  const ColumnWidthTableWithCustomFlagCellExample = () => (
-    <StyledFlexTable>
+export const ColumnWidthTableWithCustomFlagCell = () => (
+  <StyledBackground>
+    <Typography type="title3">Table With Different Widths and Custom Flag Cell</Typography>
+    <FlexTable>
       <FlexTable.HeaderRow>
         <FlexTable.Header flex="1" columnId="column1">
           Flex 1
@@ -153,31 +135,14 @@ export const ColumnWidthTableWithCustomFlagCell = () => {
         </FlexTable.Cell>
         <FlexTable.Cell columnId="column4">Cell 3-4</FlexTable.Cell>
       </FlexTable.Row>
-    </StyledFlexTable>
-  );
+    </FlexTable>
+  </StyledBackground>
+);
 
-  return (
-    <StyledDiv>
-      <Typography type="title3">Table With Different Widths and Custom Flag Cell</Typography>
-      <ColumnWidthTableWithCustomFlagCellExample />
-    </StyledDiv>
-  );
-};
-
-export const ColumnWidthSortableTable = () => {
-  const FlagCell: React.FC<{ columnId: string } & FlexProps> = React.memo(
-    ({ children, columnId, ...cellProps }) => (
-      <FlexTable.Cell columnId={columnId} {...cellProps}>
-        <FlexTable.CellInlineContainer>
-          <FlexTable.Cell.TextWrapper>{children}</FlexTable.Cell.TextWrapper>
-          <Flag country="SE" />
-        </FlexTable.CellInlineContainer>
-      </FlexTable.Cell>
-    ),
-  );
-
-  const ColumnWidthSortableTableExample = () => (
-    <StyledFlexTable>
+export const ColumnWidthSortableTable = () => (
+  <StyledBackground>
+    <Typography type="title3">Sortable Table With Column Width Set</Typography>
+    <FlexTable>
       <FlexTable.HeaderRow>
         <FlexTable.Header sortable flex="1" columnId="column1">
           Flex 1
@@ -229,20 +194,14 @@ export const ColumnWidthSortableTable = () => {
         </FlexTable.Cell>
         <FlexTable.Cell columnId="column4">Cell 3-4</FlexTable.Cell>
       </FlexTable.Row>
-    </StyledFlexTable>
-  );
+    </FlexTable>
+  </StyledBackground>
+);
 
-  return (
-    <StyledDiv>
-      <Typography type="title3">Sortable Table With Column Width Set</Typography>
-      <ColumnWidthSortableTableExample />
-    </StyledDiv>
-  );
-};
-
-export const MediaColumns = () => {
-  const MediaColumnsExample = () => (
-    <StyledFlexTable>
+export const MediaColumns = () => (
+  <StyledBackground>
+    <Typography type="title3">Table With Columns Hidden Based On Screen Size</Typography>
+    <FlexTable>
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2" hidden md={{ hidden: false }}>
@@ -271,13 +230,6 @@ export const MediaColumns = () => {
         </FlexTable.Cell>
         <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
       </FlexTable.Row>
-    </StyledFlexTable>
-  );
-
-  return (
-    <StyledDiv>
-      <Typography type="title3">Table With Columns Hidden Based On Screen Size</Typography>
-      <MediaColumnsExample />
-    </StyledDiv>
-  );
-};
+    </FlexTable>
+  </StyledBackground>
+);

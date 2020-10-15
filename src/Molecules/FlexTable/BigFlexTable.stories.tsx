@@ -5,8 +5,9 @@ import { FixedSizeList as List } from 'react-window';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import { withKnobs, number } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
-import { Typography } from '../..';
+import { Typography, Box } from '../..';
 import docs from './FlexTable.mdx';
+import { StyledBackground } from './storiesShared';
 
 export default {
   title: 'Molecules | FlexTable / Big FlexTables example',
@@ -17,18 +18,6 @@ export default {
   },
 };
 
-const StyledDiv = styled.div`
-  background-color: ${(p) => p.theme.color.background};
-  &:not(:last-of-type) {
-    margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
-  }
-`;
-
-const StyledFlexTable = styled(FlexTable)`
-  &:not(:last-of-type) {
-    margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
-  }
-`;
 const generateUniqueId = (rowIndex: number) =>
   `${rowIndex}_${Math.random().toString(36).substr(2, 9)}`;
 
@@ -120,10 +109,10 @@ export const BigTable = () => {
     return <ReactComponent />;
   };
   return (
-    <StyledDiv>
+    <StyledBackground>
       <Typography type="title3">Big FlexTable</Typography>
       <BigTableExample />
-    </StyledDiv>
+    </StyledBackground>
   );
 };
 
@@ -219,10 +208,10 @@ export const VirtualizedTable = () => {
   };
 
   return (
-    <StyledDiv>
+    <StyledBackground>
       <Typography type="title3">Virtualized FlexTable</Typography>
       <VirtualizedTableExample />
-    </StyledDiv>
+    </StyledBackground>
   );
 };
 
@@ -275,10 +264,10 @@ export const BigTableWithoutStickyHeader = () => {
     return <ReactComponent />;
   };
   return (
-    <StyledDiv>
+    <StyledBackground>
       <Typography type="title3">Big FlexTable Without Sticky Header</Typography>
       <BigTableWithoutStickyHeaderExample />
-    </StyledDiv>
+    </StyledBackground>
   );
 };
 export const MultipleBigTablesWithStickyHeaders = () => {
@@ -306,32 +295,34 @@ export const MultipleBigTablesWithStickyHeaders = () => {
     }, [tableData, sort]);
 
     return (
-      <StyledDiv>
+      <StyledBackground>
         <Typography type="title3">
           Table 1 - Multiple Big Tables Demonstrating Proper Sticky Header
         </Typography>
-        <StyledFlexTable>
-          <FlexTable.HeaderRow>
-            {[...Array(columnsLength)].map((_, index) => (
-              <FlexTable.Header
-                columnId={`column${index + 1}`}
-                sortable
-                onSort={(columnId, nextSortOrder) => {
-                  setSort({ columnId, sortOrder: nextSortOrder });
-                }}
-              >
-                Table 1 Header {index + 1}
-              </FlexTable.Header>
+        <Box mb={10}>
+          <FlexTable>
+            <FlexTable.HeaderRow>
+              {[...Array(columnsLength)].map((_, index) => (
+                <FlexTable.Header
+                  columnId={`column${index + 1}`}
+                  sortable
+                  onSort={(columnId, nextSortOrder) => {
+                    setSort({ columnId, sortOrder: nextSortOrder });
+                  }}
+                >
+                  Table 1 Header {index + 1}
+                </FlexTable.Header>
+              ))}
+            </FlexTable.HeaderRow>
+            {sortedData.map((data) => (
+              <BigTableRow key={data.rowId} data={data} />
             ))}
-          </FlexTable.HeaderRow>
-          {sortedData.map((data) => (
-            <BigTableRow key={data.rowId} data={data} />
-          ))}
-        </StyledFlexTable>
+          </FlexTable>
+        </Box>
         <Typography type="title3">
           Table 2 - Multiple Big Tables Demonstrating Proper Sticky Header
         </Typography>
-        <StyledFlexTable>
+        <FlexTable>
           <FlexTable.HeaderRow>
             {[...Array(columnsLength)].map((_, index) => (
               <FlexTable.Header
@@ -348,8 +339,8 @@ export const MultipleBigTablesWithStickyHeaders = () => {
           {sortedData.map((data) => (
             <BigTableRow key={data.rowId} data={data} />
           ))}
-        </StyledFlexTable>
-      </StyledDiv>
+        </FlexTable>
+      </StyledBackground>
     );
   };
   return <ReactComponent />;

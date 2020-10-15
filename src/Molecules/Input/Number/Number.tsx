@@ -14,20 +14,22 @@ const hasError = (error?: Props['error']) => error && error !== '';
 const removeNonNumberCharacters = R.replace(/[^0-9\-.,]+/, '');
 
 const width = css<Pick<Props, 'size'>>`
-  width: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+  width: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
 `;
 
 const height = css<Pick<Props, 'size'>>`
-  height: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
 `;
 
-const background = css<Pick<Props, 'disabled'>>`
-  background-color: ${p =>
-    p.disabled ? p.theme.color.disabledBackground : p.theme.color.backgroundInput};
+const background = css<Pick<Props, 'disabled' | 'variant'>>`
+  background-color: ${(p) =>
+    p.disabled && p.variant !== 'quiet'
+      ? p.theme.color.disabledBackground
+      : p.theme.color.backgroundInput};
 `;
 
 const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
-  ${p =>
+  ${(p) =>
     p.disabled
       ? ''
       : `
@@ -40,15 +42,15 @@ const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
 
 const focusBorderStyles = css`
   &:focus {
-    border-color: ${p => p.theme.color.borderActive};
+    border-color: ${(p) => p.theme.color.borderActive};
     z-index: 3;
   }
 `;
 
-const borderStyles = css<Pick<Props, 'error' | 'success'>>`
+const borderStyles = css<Pick<Props, 'error' | 'success' | 'variant' | 'disabled'>>`
   outline: none;
   border: 1px solid
-    ${p => {
+    ${(p) => {
       if (hasError(p.error)) return p.theme.color.inputBorderError;
       if (p.success) return p.theme.color.inputBorderSuccess;
       return p.theme.color.inputBorder;
@@ -56,11 +58,17 @@ const borderStyles = css<Pick<Props, 'error' | 'success'>>`
   position: relative;
   ${hoverBorderStyles}
   ${focusBorderStyles}
+  border-width: ${(p) => (p.variant === 'quiet' ? '0 0 2px 0' : '1px')};
+  &:focus {
+    border-width: 1px;
+  }
+  ${(p) =>
+    p.disabled && p.variant === 'quiet' ? `border-color: ${p.theme.color.disabledBackground};` : ''}
 `;
 
 const Wrapper = styled(Flexbox)`
   position: relative;
-  box-shadow: 0 1px 3px ${p => p.theme.color.shadowInput};
+  box-shadow: 0 1px 3px ${(p) => p.theme.color.shadowInput};
 `;
 
 const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
@@ -68,8 +76,8 @@ const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
   top: 0;
   height: 100%;
   z-index: 3;
-  ${p => (p.position === 'left' ? `left: ${p.theme.spacing.unit(2)}px;` : '')}
-  ${p => (p.position === 'right' ? `right: ${p.theme.spacing.unit(2)}px;` : '')}
+  ${(p) => (p.position === 'left' ? `left: ${p.theme.spacing.unit(2)}px;` : '')}
+  ${(p) => (p.position === 'right' ? `right: ${p.theme.spacing.unit(2)}px;` : '')}
 `;
 
 const Stepper = styled.button.attrs(() => ({ type: 'button' }))<Partial<Props>>`
@@ -84,29 +92,31 @@ const Stepper = styled.button.attrs(() => ({ type: 'button' }))<Partial<Props>>`
   align-items: center;
   justify-content: center;
   flex: 1 0 auto;
-  
+
   &:first-of-type {
     order: -1;
   }
-  
+
   &:active:enabled {
-    background-color: ${p => p.theme.color.cta};
-    
+    background-color: ${(p) => p.theme.color.cta};
+
     svg {
-      fill: ${p => p.theme.color.buttonText};
+      fill: ${(p) => p.theme.color.buttonText};
     }
   }
-  `;
+`;
 
 const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<Partial<Props>>`
   ${background}
   ${borderStyles}
   ${height}
   ${placeholderNormalizaion}
+  padding: ${(p) =>
+    p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   width: 100%;
-  text-align: ${p => (p.showSteppers ? 'center' : 'left')};
+  text-align: ${(p) => (p.showSteppers ? 'center' : 'left')};
   box-sizing: border-box;
-  ${p =>
+  ${(p) =>
     p.leftAddon || p.rightAddon
       ? `
       padding-top: ${p.theme.spacing.unit(2)}px;
@@ -120,7 +130,25 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
       min-width: 0;
       z-index: 1;
       `}
-  
+  ${(p) =>
+    p.variant === 'quiet'
+      ? `color: ${p.theme.color.cta}; 
+         &:disabled {
+           color: ${p.theme.color.disabledText};
+         }
+         font-size: 28px; 
+         font-weight: bold;
+         &:focus {
+           padding-left: ${p.theme.spacing.unit(p.leftAddon ? 8 : 2)}px;
+           padding-right: ${p.theme.spacing.unit(p.rightAddon ? 8 : 0)}px;
+         }`
+      : ''}
+  ${(p) =>
+    p.variant === 'quiet' && p.rightAddon
+      ? `&:focus + ${AddonBox} {
+          padding-right: ${p.theme.spacing.unit(2)}px;
+        }`
+      : ''}
 `;
 
 const components = {
@@ -142,7 +170,7 @@ const NumberInput: NumberComponent & {
    * `
    * */
   components: typeof components;
-} = props => {
+} = (props) => {
   const {
     autoFocus,
     defaultValue = 1,
@@ -172,12 +200,14 @@ const NumberInput: NumberComponent & {
     success,
     value: controlledValueRaw,
     visuallyEmphasiseRequired,
+    variant = 'normal',
   } = props;
   const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
   const intl = useIntl();
-  const showSteppers = noSteppers !== true && isUndefined(leftAddon) && isUndefined(rightAddon);
+  // Quiet variant only works while there are noSteppers
+  const showSteppers =
+    noSteppers !== true && isUndefined(leftAddon) && isUndefined(rightAddon) && variant !== 'quiet';
   const placeholder = showSteppers ? undefined : placeholderRaw;
-
   const handleValueChange = (val: string) => {
     setInternalValue(val);
 
@@ -266,11 +296,22 @@ const NumberInput: NumberComponent & {
 
   return (
     <FormField
-      {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'labelTooltip', 'width'], props)}
+      {...R.pick(
+        [
+          'error',
+          'extraInfo',
+          'hideLabel',
+          'label',
+          'labelTooltip',
+          'labelTooltipPosition',
+          'width',
+        ],
+        props,
+      )}
       required={visuallyEmphasiseRequired}
       fieldId={id}
     >
-      <Typography type="secondary" color={t => t.color.text}>
+      <Typography type="secondary" color={(t) => t.color.text}>
         <Wrapper container item grow={1} alignItems="center">
           <Input
             {...{
@@ -299,6 +340,7 @@ const NumberInput: NumberComponent & {
               value: removeNonNumberCharacters(value),
               inputMode,
               showSteppers,
+              variant,
             }}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />

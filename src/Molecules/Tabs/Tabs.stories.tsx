@@ -6,13 +6,13 @@ import { Tabs, Typography } from '../..';
 import docs from './Tabs.mdx';
 
 const SpacingInside = styled.div`
-  padding-left: ${p => p.theme.spacing.unit(5)}px;
-  padding-right: ${p => p.theme.spacing.unit(5)}px;
-  padding-top: ${p => p.theme.spacing.unit(4)}px;
+  padding-left: ${(p) => p.theme.spacing.unit(5)}px;
+  padding-right: ${(p) => p.theme.spacing.unit(5)}px;
+  padding-top: ${(p) => p.theme.spacing.unit(4)}px;
 `;
 
 const StyledTabs = styled(Tabs)`
-  padding: 0 ${p => p.theme.spacing.unit(5)}px;
+  padding: 0 ${(p) => p.theme.spacing.unit(5)}px;
 `;
 
 export default {
@@ -48,6 +48,30 @@ export const defaultStory = () => (
 
 defaultStory.story = {
   name: 'Default',
+};
+
+const StyledTabsContent = styled(Tabs)`
+  & ~ ${Tabs.components.TabContent} {
+    height: inherit;
+    background: ${({ theme }) => theme.color.sliderBackgroundColor};
+  }
+`;
+
+export const withStyledTabContent = () => (
+  <Typography type="secondary">
+    <StyledTabsContent>
+      <Tabs.Tab title="One" onTitleClick={action('Clicked title1')}>
+        Tab 1. Content have gray background
+      </Tabs.Tab>
+      <Tabs.Tab title="Two" onTitleClick={action('Clicked title2')}>
+        Tab 2. Content have gray background
+      </Tabs.Tab>
+    </StyledTabsContent>
+  </Typography>
+);
+
+withStyledTabContent.story = {
+  name: 'With styled tab content',
 };
 
 export const withCustomStylingLikeSpacing = () => (

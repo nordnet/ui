@@ -1036,6 +1036,25 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
   padding-right: 0;
 }
 
+.c42 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c42 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c42 > *:not(:first-child) {
+  padding-top: 0;
+}
+
 .c6 {
   width: 56px;
   height: 56px;
@@ -1256,105 +1275,224 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
 .c37 {
   width: 56px;
   height: 56px;
-  background-color: #131F4F;
+  background-color: rgba(0,145,149,0.1);
   border: 1px solid #eee;
 }
 
 .c38 {
   width: 56px;
   height: 56px;
-  background-color: rgba(56,94,157,0.1);
+  background-color: #131F4F;
   border: 1px solid #eee;
 }
 
 .c39 {
   width: 56px;
   height: 56px;
-  background-color: rgba(172,19,90,0.1);
+  background-color: rgba(56,94,157,0.1);
   border: 1px solid #eee;
 }
 
 .c40 {
   width: 56px;
   height: 56px;
-  background-color: rgba(255,207,0,0.1);
+  background-color: rgba(172,19,90,0.1);
   border: 1px solid #eee;
 }
 
 .c41 {
   width: 56px;
   height: 56px;
-  background-color: #131F4F#385E9D#00C8F5#4B4B46#A0A09B;
+  background-color: rgba(255,207,0,0.1);
   border: 1px solid #eee;
 }
 
-.c42 {
-  width: 56px;
-  height: 56px;
-  background-color: #FF2B83#AC135A#78013A#00F0E1#009195#EBEBE8#BCBCB6#A0A09B#4B4B46#282823;
-  border: 1px solid #eee;
-}
-
-.c43 {
-  width: 56px;
-  height: 56px;
-  background-color: #00C8F5#385E9D#131F4F#FF2B83#78013A#EBEBE8#BCBCB6#A0A09B#4B4B46#282823;
-  border: 1px solid #eee;
-}
-
-.c44 {
-  width: 56px;
-  height: 56px;
-  background-color: #D2F500#3A913F#023C00#00F0E1#009195#EBEBE8#BCBCB6#A0A09B#4B4B46#282823;
-  border: 1px solid #eee;
-}
-
-.c45 {
-  width: 56px;
-  height: 56px;
-  background-color: #00C8F5#385E9D#131F4F#00F0E1#009195#EBEBE8#BCBCB6#A0A09B#4B4B46#282823;
-  border: 1px solid #eee;
-}
-
-.c46 {
-  width: 56px;
-  height: 56px;
-  background-color: #00F0E1#009195#01424C#00C8F5#385E9D#EBEBE8#BCBCB6#A0A09B#4B4B46#282823;
-  border: 1px solid #eee;
-}
-
-.c47 {
-  width: 56px;
-  height: 56px;
-  background-color: #0046FF#FFCF00#AC135A#385E9D#009195#3A913F#FF2B83#023C00#131F4F#78013A#01424C#4B4B46;
-  border: 1px solid #eee;
-}
-
-.c48 {
-  width: 56px;
-  height: 56px;
-  background-color: #0046FF#DFC700#AC135A#385E9D#009195#3A913F#FF2B83#023C00#131F4F#78013A#01424C#4B4B46;
-  border: 1px solid #eee;
-}
-
-.c49 {
+.c64 {
   width: 56px;
   height: 56px;
   background-color: #023C00;
   border: 1px solid #eee;
 }
 
-.c50 {
+.c65 {
   width: 56px;
   height: 56px;
   background-color: #009195;
   border: 1px solid #eee;
 }
 
-.c51 {
+.c66 {
   width: 56px;
   height: 56px;
   background-color: #01424C;
+  border: 1px solid #eee;
+}
+
+.c43 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #FF2B83;
+  border: 1px solid #eee;
+}
+
+.c44 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #00C8F5;
+  border: 1px solid #eee;
+}
+
+.c45 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #131F4F;
+  border: 1px solid #eee;
+}
+
+.c46 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #000000;
+  border: 1px solid #eee;
+}
+
+.c47 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #009195;
+  border: 1px solid #eee;
+}
+
+.c48 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #385E9D;
+  border: 1px solid #eee;
+}
+
+.c49 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #4B4B46;
+  border: 1px solid #eee;
+}
+
+.c50 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #A0A09B;
+  border: 1px solid #eee;
+}
+
+.c51 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #AC135A;
+  border: 1px solid #eee;
+}
+
+.c52 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #78013A;
+  border: 1px solid #eee;
+}
+
+.c53 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #00F0E1;
+  border: 1px solid #eee;
+}
+
+.c54 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #EBEBE8;
+  border: 1px solid #eee;
+}
+
+.c55 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #BCBCB6;
+  border: 1px solid #eee;
+}
+
+.c56 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #282823;
+  border: 1px solid #eee;
+}
+
+.c57 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #D2F500;
+  border: 1px solid #eee;
+}
+
+.c58 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #3A913F;
+  border: 1px solid #eee;
+}
+
+.c59 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #023C00;
+  border: 1px solid #eee;
+}
+
+.c60 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #01424C;
+  border: 1px solid #eee;
+}
+
+.c61 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #0046FF;
+  border: 1px solid #eee;
+}
+
+.c62 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #FFCF00;
+  border: 1px solid #eee;
+}
+
+.c63 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #DFC700;
   border: 1px solid #eee;
 }
 
@@ -1984,6 +2122,37 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         />
         <div>
           #BCBCB6
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        fundExchange
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c17"
+          color="#6E6E69"
+        />
+        <div>
+          #6E6E69
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c17"
+          color="#6E6E69"
+        />
+        <div>
+          #6E6E69
         </div>
       </td>
     </tr>
@@ -3419,13 +3588,75 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
-        loanRatesGraphColor2
+        orderAccountLabel
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c35"
+          color="#4B4B46"
+        />
+        <div>
+          #4B4B46
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c35"
+          color="#4B4B46"
+        />
+        <div>
+          #4B4B46
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        listItemBackgroundHover
       </td>
       <td
         className="c5"
       >
         <div
           className="c37"
+          color="rgba(0, 145, 149, 0.1)"
+        />
+        <div>
+          rgba(0, 145, 149, 0.1)
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c37"
+          color="rgba(0, 145, 149, 0.1)"
+        />
+        <div>
+          rgba(0, 145, 149, 0.1)
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        loanRatesGraphColor2
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c38"
           color="#131F4F"
         />
         <div>
@@ -3436,7 +3667,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c37"
+          className="c38"
           color="#131F4F"
         />
         <div>
@@ -3596,6 +3827,68 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         />
         <div>
           #EBEBE8
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        statusFulfilledBackgroundColor
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c13"
+          color="#0046FF"
+        />
+        <div>
+          #0046FF
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c13"
+          color="#0046FF"
+        />
+        <div>
+          #0046FF
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        statusFulfilledTextColor
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c6"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c6"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
         </div>
       </td>
     </tr>
@@ -4076,7 +4369,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c38"
+          className="c39"
           color="rgba(56, 94, 157, 0.1)"
         />
         <div>
@@ -4087,7 +4380,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c38"
+          className="c39"
           color="rgba(56, 94, 157, 0.1)"
         />
         <div>
@@ -4107,7 +4400,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c39"
+          className="c40"
           color="rgba(172, 19, 90, 0.1)"
         />
         <div>
@@ -4118,7 +4411,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c39"
+          className="c40"
           color="rgba(172, 19, 90, 0.1)"
         />
         <div>
@@ -4138,7 +4431,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c40"
+          className="c41"
           color="rgba(255, 207, 0, 0.1)"
         />
         <div>
@@ -4149,7 +4442,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c40"
+          className="c41"
           color="rgba(255, 207, 0, 0.1)"
         />
         <div>
@@ -4380,6 +4673,37 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
+        progressBarFailure
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c24"
+          color="#FF1900"
+        />
+        <div>
+          #FF1900
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c24"
+          color="#FF1900"
+        />
+        <div>
+          #FF1900
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
         progressBarNext
       </td>
       <td
@@ -4411,52 +4735,313 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
-        paletteMap
+        indexFundsBackground
       </td>
       <td
         className="c5"
       >
         <div
-          className="c41"
-          color={
-            Array [
-              "#131F4F",
-              "#385E9D",
-              "#00C8F5",
-              "#4B4B46",
-              "#A0A09B",
-            ]
-          }
+          className="c11"
+          color="#EBEBE8"
         />
         <div>
-          #131F4F
-          #385E9D
-          #00C8F5
-          #4B4B46
-          #A0A09B
+          #EBEBE8
         </div>
       </td>
       <td
         className="c5"
       >
         <div
-          className="c41"
-          color={
-            Array [
-              "#131F4F",
-              "#385E9D",
-              "#00C8F5",
-              "#4B4B46",
-              "#A0A09B",
-            ]
-          }
+          className="c11"
+          color="#EBEBE8"
         />
         <div>
-          #131F4F
-          #385E9D
+          #EBEBE8
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        indexFundsNorwegianAccent
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c22"
+          color="#00C8F5"
+        />
+        <div>
           #00C8F5
-          #4B4B46
-          #A0A09B
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c22"
+          color="#00C8F5"
+        />
+        <div>
+          #00C8F5
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        indexFundsFinnishAccent
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c42"
+        >
+          <div
+            className="c43"
+            color="#FF2B83"
+          />
+          <div>
+            #FF2B83
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c44"
+            color="#00C8F5"
+          />
+          <div>
+            #00C8F5
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c45"
+            color="#131F4F"
+          />
+          <div>
+            #131F4F
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c46"
+            color="#000000"
+          />
+          <div>
+            #000000
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c47"
+            color="#009195"
+          />
+          <div>
+            #009195
+          </div>
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c42"
+        >
+          <div
+            className="c43"
+            color="#FF2B83"
+          />
+          <div>
+            #FF2B83
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c44"
+            color="#00C8F5"
+          />
+          <div>
+            #00C8F5
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c45"
+            color="#131F4F"
+          />
+          <div>
+            #131F4F
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c46"
+            color="#000000"
+          />
+          <div>
+            #000000
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c47"
+            color="#009195"
+          />
+          <div>
+            #009195
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        paletteMap
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c42"
+        >
+          <div
+            className="c45"
+            color="#131F4F"
+          />
+          <div>
+            #131F4F
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c48"
+            color="#385E9D"
+          />
+          <div>
+            #385E9D
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c44"
+            color="#00C8F5"
+          />
+          <div>
+            #00C8F5
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c49"
+            color="#4B4B46"
+          />
+          <div>
+            #4B4B46
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c50"
+            color="#A0A09B"
+          />
+          <div>
+            #A0A09B
+          </div>
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c42"
+        >
+          <div
+            className="c45"
+            color="#131F4F"
+          />
+          <div>
+            #131F4F
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c48"
+            color="#385E9D"
+          />
+          <div>
+            #385E9D
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c44"
+            color="#00C8F5"
+          />
+          <div>
+            #00C8F5
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c49"
+            color="#4B4B46"
+          />
+          <div>
+            #4B4B46
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c50"
+            color="#A0A09B"
+          />
+          <div>
+            #A0A09B
+          </div>
         </div>
       </td>
     </tr>
@@ -4473,65 +5058,227 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       >
         <div
           className="c42"
-          color={
-            Array [
-              "#FF2B83",
-              "#AC135A",
-              "#78013A",
-              "#00F0E1",
-              "#009195",
-              "#EBEBE8",
-              "#BCBCB6",
-              "#A0A09B",
-              "#4B4B46",
-              "#282823",
-            ]
-          }
-        />
-        <div>
-          #FF2B83
-          #AC135A
-          #78013A
-          #00F0E1
-          #009195
-          #EBEBE8
-          #BCBCB6
-          #A0A09B
-          #4B4B46
-          #282823
+        >
+          <div
+            className="c43"
+            color="#FF2B83"
+          />
+          <div>
+            #FF2B83
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c51"
+            color="#AC135A"
+          />
+          <div>
+            #AC135A
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c52"
+            color="#78013A"
+          />
+          <div>
+            #78013A
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c53"
+            color="#00F0E1"
+          />
+          <div>
+            #00F0E1
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c47"
+            color="#009195"
+          />
+          <div>
+            #009195
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c54"
+            color="#EBEBE8"
+          />
+          <div>
+            #EBEBE8
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c55"
+            color="#BCBCB6"
+          />
+          <div>
+            #BCBCB6
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c50"
+            color="#A0A09B"
+          />
+          <div>
+            #A0A09B
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c49"
+            color="#4B4B46"
+          />
+          <div>
+            #4B4B46
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c56"
+            color="#282823"
+          />
+          <div>
+            #282823
+          </div>
         </div>
       </td>
       <td
         className="c5"
       >
         <div
-          className="c43"
-          color={
-            Array [
-              "#00C8F5",
-              "#385E9D",
-              "#131F4F",
-              "#FF2B83",
-              "#78013A",
-              "#EBEBE8",
-              "#BCBCB6",
-              "#A0A09B",
-              "#4B4B46",
-              "#282823",
-            ]
-          }
-        />
-        <div>
-          #00C8F5
-          #385E9D
-          #131F4F
-          #FF2B83
-          #78013A
-          #EBEBE8
-          #BCBCB6
-          #A0A09B
-          #4B4B46
-          #282823
+          className="c42"
+        >
+          <div
+            className="c44"
+            color="#00C8F5"
+          />
+          <div>
+            #00C8F5
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c48"
+            color="#385E9D"
+          />
+          <div>
+            #385E9D
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c45"
+            color="#131F4F"
+          />
+          <div>
+            #131F4F
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c43"
+            color="#FF2B83"
+          />
+          <div>
+            #FF2B83
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c52"
+            color="#78013A"
+          />
+          <div>
+            #78013A
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c54"
+            color="#EBEBE8"
+          />
+          <div>
+            #EBEBE8
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c55"
+            color="#BCBCB6"
+          />
+          <div>
+            #BCBCB6
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c50"
+            color="#A0A09B"
+          />
+          <div>
+            #A0A09B
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c49"
+            color="#4B4B46"
+          />
+          <div>
+            #4B4B46
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c56"
+            color="#282823"
+          />
+          <div>
+            #282823
+          </div>
         </div>
       </td>
     </tr>
@@ -4547,66 +5294,228 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c44"
-          color={
-            Array [
-              "#D2F500",
-              "#3A913F",
-              "#023C00",
-              "#00F0E1",
-              "#009195",
-              "#EBEBE8",
-              "#BCBCB6",
-              "#A0A09B",
-              "#4B4B46",
-              "#282823",
-            ]
-          }
-        />
-        <div>
-          #D2F500
-          #3A913F
-          #023C00
-          #00F0E1
-          #009195
-          #EBEBE8
-          #BCBCB6
-          #A0A09B
-          #4B4B46
-          #282823
+          className="c42"
+        >
+          <div
+            className="c57"
+            color="#D2F500"
+          />
+          <div>
+            #D2F500
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c58"
+            color="#3A913F"
+          />
+          <div>
+            #3A913F
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c59"
+            color="#023C00"
+          />
+          <div>
+            #023C00
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c53"
+            color="#00F0E1"
+          />
+          <div>
+            #00F0E1
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c47"
+            color="#009195"
+          />
+          <div>
+            #009195
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c54"
+            color="#EBEBE8"
+          />
+          <div>
+            #EBEBE8
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c55"
+            color="#BCBCB6"
+          />
+          <div>
+            #BCBCB6
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c50"
+            color="#A0A09B"
+          />
+          <div>
+            #A0A09B
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c49"
+            color="#4B4B46"
+          />
+          <div>
+            #4B4B46
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c56"
+            color="#282823"
+          />
+          <div>
+            #282823
+          </div>
         </div>
       </td>
       <td
         className="c5"
       >
         <div
-          className="c43"
-          color={
-            Array [
-              "#00C8F5",
-              "#385E9D",
-              "#131F4F",
-              "#FF2B83",
-              "#78013A",
-              "#EBEBE8",
-              "#BCBCB6",
-              "#A0A09B",
-              "#4B4B46",
-              "#282823",
-            ]
-          }
-        />
-        <div>
-          #00C8F5
-          #385E9D
-          #131F4F
-          #FF2B83
-          #78013A
-          #EBEBE8
-          #BCBCB6
-          #A0A09B
-          #4B4B46
-          #282823
+          className="c42"
+        >
+          <div
+            className="c44"
+            color="#00C8F5"
+          />
+          <div>
+            #00C8F5
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c48"
+            color="#385E9D"
+          />
+          <div>
+            #385E9D
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c45"
+            color="#131F4F"
+          />
+          <div>
+            #131F4F
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c43"
+            color="#FF2B83"
+          />
+          <div>
+            #FF2B83
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c52"
+            color="#78013A"
+          />
+          <div>
+            #78013A
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c54"
+            color="#EBEBE8"
+          />
+          <div>
+            #EBEBE8
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c55"
+            color="#BCBCB6"
+          />
+          <div>
+            #BCBCB6
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c50"
+            color="#A0A09B"
+          />
+          <div>
+            #A0A09B
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c49"
+            color="#4B4B46"
+          />
+          <div>
+            #4B4B46
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c56"
+            color="#282823"
+          />
+          <div>
+            #282823
+          </div>
         </div>
       </td>
     </tr>
@@ -4622,66 +5531,228 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c45"
-          color={
-            Array [
-              "#00C8F5",
-              "#385E9D",
-              "#131F4F",
-              "#00F0E1",
-              "#009195",
-              "#EBEBE8",
-              "#BCBCB6",
-              "#A0A09B",
-              "#4B4B46",
-              "#282823",
-            ]
-          }
-        />
-        <div>
-          #00C8F5
-          #385E9D
-          #131F4F
-          #00F0E1
-          #009195
-          #EBEBE8
-          #BCBCB6
-          #A0A09B
-          #4B4B46
-          #282823
+          className="c42"
+        >
+          <div
+            className="c44"
+            color="#00C8F5"
+          />
+          <div>
+            #00C8F5
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c48"
+            color="#385E9D"
+          />
+          <div>
+            #385E9D
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c45"
+            color="#131F4F"
+          />
+          <div>
+            #131F4F
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c53"
+            color="#00F0E1"
+          />
+          <div>
+            #00F0E1
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c47"
+            color="#009195"
+          />
+          <div>
+            #009195
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c54"
+            color="#EBEBE8"
+          />
+          <div>
+            #EBEBE8
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c55"
+            color="#BCBCB6"
+          />
+          <div>
+            #BCBCB6
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c50"
+            color="#A0A09B"
+          />
+          <div>
+            #A0A09B
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c49"
+            color="#4B4B46"
+          />
+          <div>
+            #4B4B46
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c56"
+            color="#282823"
+          />
+          <div>
+            #282823
+          </div>
         </div>
       </td>
       <td
         className="c5"
       >
         <div
-          className="c43"
-          color={
-            Array [
-              "#00C8F5",
-              "#385E9D",
-              "#131F4F",
-              "#FF2B83",
-              "#78013A",
-              "#EBEBE8",
-              "#BCBCB6",
-              "#A0A09B",
-              "#4B4B46",
-              "#282823",
-            ]
-          }
-        />
-        <div>
-          #00C8F5
-          #385E9D
-          #131F4F
-          #FF2B83
-          #78013A
-          #EBEBE8
-          #BCBCB6
-          #A0A09B
-          #4B4B46
-          #282823
+          className="c42"
+        >
+          <div
+            className="c44"
+            color="#00C8F5"
+          />
+          <div>
+            #00C8F5
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c48"
+            color="#385E9D"
+          />
+          <div>
+            #385E9D
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c45"
+            color="#131F4F"
+          />
+          <div>
+            #131F4F
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c43"
+            color="#FF2B83"
+          />
+          <div>
+            #FF2B83
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c52"
+            color="#78013A"
+          />
+          <div>
+            #78013A
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c54"
+            color="#EBEBE8"
+          />
+          <div>
+            #EBEBE8
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c55"
+            color="#BCBCB6"
+          />
+          <div>
+            #BCBCB6
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c50"
+            color="#A0A09B"
+          />
+          <div>
+            #A0A09B
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c49"
+            color="#4B4B46"
+          />
+          <div>
+            #4B4B46
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c56"
+            color="#282823"
+          />
+          <div>
+            #282823
+          </div>
         </div>
       </td>
     </tr>
@@ -4697,66 +5768,228 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c46"
-          color={
-            Array [
-              "#00F0E1",
-              "#009195",
-              "#01424C",
-              "#00C8F5",
-              "#385E9D",
-              "#EBEBE8",
-              "#BCBCB6",
-              "#A0A09B",
-              "#4B4B46",
-              "#282823",
-            ]
-          }
-        />
-        <div>
-          #00F0E1
-          #009195
-          #01424C
-          #00C8F5
-          #385E9D
-          #EBEBE8
-          #BCBCB6
-          #A0A09B
-          #4B4B46
-          #282823
+          className="c42"
+        >
+          <div
+            className="c53"
+            color="#00F0E1"
+          />
+          <div>
+            #00F0E1
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c47"
+            color="#009195"
+          />
+          <div>
+            #009195
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c60"
+            color="#01424C"
+          />
+          <div>
+            #01424C
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c44"
+            color="#00C8F5"
+          />
+          <div>
+            #00C8F5
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c48"
+            color="#385E9D"
+          />
+          <div>
+            #385E9D
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c54"
+            color="#EBEBE8"
+          />
+          <div>
+            #EBEBE8
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c55"
+            color="#BCBCB6"
+          />
+          <div>
+            #BCBCB6
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c50"
+            color="#A0A09B"
+          />
+          <div>
+            #A0A09B
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c49"
+            color="#4B4B46"
+          />
+          <div>
+            #4B4B46
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c56"
+            color="#282823"
+          />
+          <div>
+            #282823
+          </div>
         </div>
       </td>
       <td
         className="c5"
       >
         <div
-          className="c43"
-          color={
-            Array [
-              "#00C8F5",
-              "#385E9D",
-              "#131F4F",
-              "#FF2B83",
-              "#78013A",
-              "#EBEBE8",
-              "#BCBCB6",
-              "#A0A09B",
-              "#4B4B46",
-              "#282823",
-            ]
-          }
-        />
-        <div>
-          #00C8F5
-          #385E9D
-          #131F4F
-          #FF2B83
-          #78013A
-          #EBEBE8
-          #BCBCB6
-          #A0A09B
-          #4B4B46
-          #282823
+          className="c42"
+        >
+          <div
+            className="c44"
+            color="#00C8F5"
+          />
+          <div>
+            #00C8F5
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c48"
+            color="#385E9D"
+          />
+          <div>
+            #385E9D
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c45"
+            color="#131F4F"
+          />
+          <div>
+            #131F4F
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c43"
+            color="#FF2B83"
+          />
+          <div>
+            #FF2B83
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c52"
+            color="#78013A"
+          />
+          <div>
+            #78013A
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c54"
+            color="#EBEBE8"
+          />
+          <div>
+            #EBEBE8
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c55"
+            color="#BCBCB6"
+          />
+          <div>
+            #BCBCB6
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c50"
+            color="#A0A09B"
+          />
+          <div>
+            #A0A09B
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c49"
+            color="#4B4B46"
+          />
+          <div>
+            #4B4B46
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c56"
+            color="#282823"
+          />
+          <div>
+            #282823
+          </div>
         </div>
       </td>
     </tr>
@@ -4772,74 +6005,272 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c47"
-          color={
-            Array [
-              "#0046FF",
-              "#FFCF00",
-              "#AC135A",
-              "#385E9D",
-              "#009195",
-              "#3A913F",
-              "#FF2B83",
-              "#023C00",
-              "#131F4F",
-              "#78013A",
-              "#01424C",
-              "#4B4B46",
-            ]
-          }
-        />
-        <div>
-          #0046FF
-          #FFCF00
-          #AC135A
-          #385E9D
-          #009195
-          #3A913F
-          #FF2B83
-          #023C00
-          #131F4F
-          #78013A
-          #01424C
-          #4B4B46
+          className="c42"
+        >
+          <div
+            className="c61"
+            color="#0046FF"
+          />
+          <div>
+            #0046FF
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c62"
+            color="#FFCF00"
+          />
+          <div>
+            #FFCF00
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c51"
+            color="#AC135A"
+          />
+          <div>
+            #AC135A
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c48"
+            color="#385E9D"
+          />
+          <div>
+            #385E9D
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c47"
+            color="#009195"
+          />
+          <div>
+            #009195
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c58"
+            color="#3A913F"
+          />
+          <div>
+            #3A913F
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c43"
+            color="#FF2B83"
+          />
+          <div>
+            #FF2B83
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c59"
+            color="#023C00"
+          />
+          <div>
+            #023C00
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c45"
+            color="#131F4F"
+          />
+          <div>
+            #131F4F
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c52"
+            color="#78013A"
+          />
+          <div>
+            #78013A
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c60"
+            color="#01424C"
+          />
+          <div>
+            #01424C
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c49"
+            color="#4B4B46"
+          />
+          <div>
+            #4B4B46
+          </div>
         </div>
       </td>
       <td
         className="c5"
       >
         <div
-          className="c48"
-          color={
-            Array [
-              "#0046FF",
-              "#DFC700",
-              "#AC135A",
-              "#385E9D",
-              "#009195",
-              "#3A913F",
-              "#FF2B83",
-              "#023C00",
-              "#131F4F",
-              "#78013A",
-              "#01424C",
-              "#4B4B46",
-            ]
-          }
-        />
-        <div>
-          #0046FF
-          #DFC700
-          #AC135A
-          #385E9D
-          #009195
-          #3A913F
-          #FF2B83
-          #023C00
-          #131F4F
-          #78013A
-          #01424C
-          #4B4B46
+          className="c42"
+        >
+          <div
+            className="c61"
+            color="#0046FF"
+          />
+          <div>
+            #0046FF
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c63"
+            color="#DFC700"
+          />
+          <div>
+            #DFC700
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c51"
+            color="#AC135A"
+          />
+          <div>
+            #AC135A
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c48"
+            color="#385E9D"
+          />
+          <div>
+            #385E9D
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c47"
+            color="#009195"
+          />
+          <div>
+            #009195
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c58"
+            color="#3A913F"
+          />
+          <div>
+            #3A913F
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c43"
+            color="#FF2B83"
+          />
+          <div>
+            #FF2B83
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c59"
+            color="#023C00"
+          />
+          <div>
+            #023C00
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c45"
+            color="#131F4F"
+          />
+          <div>
+            #131F4F
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c52"
+            color="#78013A"
+          />
+          <div>
+            #78013A
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c60"
+            color="#01424C"
+          />
+          <div>
+            #01424C
+          </div>
+        </div>
+        <div
+          className="c42"
+        >
+          <div
+            className="c49"
+            color="#4B4B46"
+          />
+          <div>
+            #4B4B46
+          </div>
         </div>
       </td>
     </tr>
@@ -4948,7 +6379,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c37"
+          className="c38"
           color="#131F4F"
         />
         <div>
@@ -4959,7 +6390,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c37"
+          className="c38"
           color="#131F4F"
         />
         <div>
@@ -5134,7 +6565,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c37"
+          className="c38"
           color="#131F4F"
         />
         <div>
@@ -5145,7 +6576,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c37"
+          className="c38"
           color="#131F4F"
         />
         <div>
@@ -5351,7 +6782,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c49"
+          className="c64"
           color="#023C00"
         />
         <div>
@@ -5362,7 +6793,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c49"
+          className="c64"
           color="#023C00"
         />
         <div>
@@ -5413,7 +6844,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c50"
+          className="c65"
           color="#009195"
         />
         <div>
@@ -5424,7 +6855,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c50"
+          className="c65"
           color="#009195"
         />
         <div>
@@ -5444,7 +6875,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c51"
+          className="c66"
           color="#01424C"
         />
         <div>
@@ -5455,7 +6886,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c51"
+          className="c66"
           color="#01424C"
         />
         <div>
@@ -5599,7 +7030,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c50"
+          className="c65"
           color="#009195"
         />
         <div>
@@ -5610,7 +7041,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c50"
+          className="c65"
           color="#009195"
         />
         <div>
@@ -5785,7 +7216,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c49"
+          className="c64"
           color="#023C00"
         />
         <div>
@@ -5796,7 +7227,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c49"
+          className="c64"
           color="#023C00"
         />
         <div>
@@ -5816,7 +7247,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c37"
+          className="c38"
           color="#131F4F"
         />
         <div>
@@ -5827,7 +7258,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c37"
+          className="c38"
           color="#131F4F"
         />
         <div>

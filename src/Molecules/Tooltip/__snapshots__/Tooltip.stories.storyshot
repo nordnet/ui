@@ -1,5 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Molecules | Tooltip Custom max-width 1`] = `
+.c0 {
+  display: block;
+}
+
+<button
+  className="c0"
+  data-reach-tooltip-trigger=""
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseMove={[Function]}
+  type="button"
+>
+  Hover me
+</button>
+`;
+
 exports[`Storyshots Molecules | Tooltip Default 1`] = `
 .c0 {
   display: block;

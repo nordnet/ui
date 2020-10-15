@@ -1,10 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
 import { withKnobs } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
-import { Button, Typography, Flag, Icon, Flexbox } from '../..';
+import { Button, Typography, Flag, Icon, Flexbox, Box } from '../..';
 import { ICON_COLUMN_DEFAULT_FLEX_PROPS } from './shared/constants';
 import docs from './FlexTable.mdx';
+import { StyledBackground } from './storiesShared';
 
 export default {
   title: 'Molecules | FlexTable / Default FlexTable',
@@ -15,22 +15,10 @@ export default {
   },
 };
 
-const StyledDiv = styled.div`
-  background-color: ${(p) => p.theme.color.background};
-  &:not(:last-of-type) {
-    margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
-  }
-`;
-
-const StyledFlexTable = styled(FlexTable)`
-  &:not(:last-of-type) {
-    margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
-  }
-`;
-
-export const DefaultTable = () => {
-  const DefaultTableExample = () => (
-    <StyledFlexTable>
+export const DefaultTable = () => (
+  <StyledBackground>
+    <Typography type="title3">Default Table</Typography>
+    <FlexTable>
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
@@ -51,20 +39,13 @@ export const DefaultTable = () => {
         <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
         <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
       </FlexTable.Row>
-    </StyledFlexTable>
-  );
-
-  return (
-    <StyledDiv>
-      <Typography type="title3">Default Table</Typography>
-      <DefaultTableExample />
-    </StyledDiv>
-  );
-};
+    </FlexTable>
+  </StyledBackground>
+);
 
 export const DefaultTableWithTitle = () => {
   const DefaultTableWithTitleExample = () => (
-    <StyledFlexTable title="Title">
+    <FlexTable id="table-with-title" title="Table with title">
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
@@ -85,80 +66,102 @@ export const DefaultTableWithTitle = () => {
         <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
         <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
       </FlexTable.Row>
-    </StyledFlexTable>
+    </FlexTable>
+  );
+
+  const DefaultTableWithTitleExampleTwo = () => (
+    <FlexTable id="some-other-table" title="Some other table">
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
+      </FlexTable.Row>
+    </FlexTable>
   );
 
   return (
-    <StyledDiv>
+    <StyledBackground>
       <Typography type="title3">Default Table With Title</Typography>
-      <DefaultTableWithTitleExample />
-    </StyledDiv>
+      <Box mb={10}>
+        <DefaultTableWithTitleExample />
+      </Box>
+      <DefaultTableWithTitleExampleTwo />
+    </StyledBackground>
   );
 };
 
-export const DefaultTableWithCustomTitle = () => {
-  const DefaultTableWithCustomTitleExample = () => {
-    const CustomTitle: React.FC<{ country: string; name: string; shortName: string }> = ({
-      country,
-      name,
-      shortName,
-    }) => (
-      <Flexbox container alignItems="baseline" gutter={1}>
-        <Flexbox item>
-          <Flag country={country} height={3} />
-        </Flexbox>
-        <Flexbox item>
-          <Typography type="secondary" weight="bold">
-            {name}
-          </Typography>
-        </Flexbox>
-        <Flexbox item>
-          <Typography type="secondary" color={(t) => t.color.label}>
-            ({shortName})
-          </Typography>
-        </Flexbox>
-      </Flexbox>
-    );
+const CustomTitle: React.FC<{ country: string; name: string; shortName: string }> = ({
+  country,
+  name,
+  shortName,
+}) => (
+  <Flexbox container alignItems="baseline" gutter={1}>
+    <Flexbox item>
+      <Flag country={country} height={3} />
+    </Flexbox>
+    <Flexbox item>
+      <Typography type="secondary" weight="bold">
+        {name}
+      </Typography>
+    </Flexbox>
+    <Flexbox item>
+      <Typography type="secondary" color={(t) => t.color.label}>
+        ({shortName})
+      </Typography>
+    </Flexbox>
+  </Flexbox>
+);
 
-    return (
-      <StyledFlexTable
-        title={<CustomTitle country="SE" name="Ericsson Corporation" shortName="ERICSSON" />}
-      >
-        <FlexTable.HeaderRow>
-          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
-          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
-          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-        </FlexTable.HeaderRow>
-        <FlexTable.Row>
-          <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
-          <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
-          <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
-        </FlexTable.Row>
-        <FlexTable.Row>
-          <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
-          <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
-          <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
-        </FlexTable.Row>
-        <FlexTable.Row>
-          <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
-          <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
-          <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
-        </FlexTable.Row>
-      </StyledFlexTable>
-    );
-  };
+export const DefaultTableWithCustomTitle = () => (
+  <StyledBackground>
+    <Typography type="title3">Default Table Custom With Title</Typography>
+    <FlexTable
+      id="custom-title"
+      title={<CustomTitle country="SE" name="Ericsson Corporation" shortName="ERICSSON" />}
+    >
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
+      </FlexTable.Row>
+    </FlexTable>
+  </StyledBackground>
+);
 
-  return (
-    <StyledDiv>
-      <Typography type="title3">Default Table Custom With Title</Typography>
-      <DefaultTableWithCustomTitleExample />
-    </StyledDiv>
-  );
-};
-
-export const DefaultTableWithFooter = () => {
-  const DefaultTableWithFooterExample = () => (
-    <StyledFlexTable>
+export const DefaultTableWithFooter = () => (
+  <StyledBackground>
+    <Typography type="title3">Default Table With Footer</Typography>
+    <FlexTable>
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
@@ -184,20 +187,14 @@ export const DefaultTableWithFooter = () => {
         <FlexTable.Footer columnId="column2">Footer 2</FlexTable.Footer>
         <FlexTable.Footer columnId="column3">Footer 3</FlexTable.Footer>
       </FlexTable.FooterRow>
-    </StyledFlexTable>
-  );
+    </FlexTable>
+  </StyledBackground>
+);
 
-  return (
-    <StyledDiv>
-      <Typography type="title3">Default Table With Footer</Typography>
-      <DefaultTableWithFooterExample />
-    </StyledDiv>
-  );
-};
-
-export const DefaultTableWithActionsColumn = () => {
-  const DefaultTableWithActionsColumnExample = () => (
-    <StyledFlexTable>
+export const DefaultTableWithActionsColumn = () => (
+  <StyledBackground>
+    <Typography type="title3">Default Table With Actions Column</Typography>
+    <FlexTable>
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
@@ -234,13 +231,6 @@ export const DefaultTableWithActionsColumn = () => {
           </Button>
         </FlexTable.Cell>
       </FlexTable.Row>
-    </StyledFlexTable>
-  );
-
-  return (
-    <StyledDiv>
-      <Typography type="title3">Default Table With Actions Column</Typography>
-      <DefaultTableWithActionsColumnExample />
-    </StyledDiv>
-  );
-};
+    </FlexTable>
+  </StyledBackground>
+);

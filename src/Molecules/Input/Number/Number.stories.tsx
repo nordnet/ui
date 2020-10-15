@@ -145,7 +145,7 @@ export const withErrorIfValueIsLessThan1 = () => {
         label="Label"
         step="1"
         defaultValue={defaultValue}
-        onChange={x => x && setValue(x)}
+        onChange={(x) => x && setValue(x)}
         {...(showError ? { error: 'Number needs to be greater than 0' } : {})}
       />
     );
@@ -182,7 +182,7 @@ export const withExtraInfoAndError = () => {
         id="insert-unique-id"
         label="Label"
         defaultValue={defaultValue}
-        onChange={x => x && setValue(x)}
+        onChange={(x) => x && setValue(x)}
         extraInfo="Use wisely this space"
         {...(showError ? { error: 'Number needs to be greater than 0' } : {})}
       />
@@ -280,6 +280,24 @@ withLabelTooltip.story = {
   name: 'With label tooltip',
 };
 
+export const withLabelTooltipPositionTop = () => (
+  <>
+    <br />
+    <br />
+    <Input.Number
+      id="insert-unique-id"
+      label="Label"
+      labelTooltip="Tooltip content"
+      labelTooltipPosition="top"
+      onChange={action('onChange')}
+    />
+  </>
+);
+
+withLabelTooltipPositionTop.story = {
+  name: 'With label tooltip (position top)',
+};
+
 export const withPlaceholder = () => (
   <Display
     title="Placeholders"
@@ -337,4 +355,104 @@ export const withPlaceholder = () => (
 
 withPlaceholder.story = {
   name: 'With placeholder',
+};
+
+export const quietNumber = () => (
+  <Display
+    title={`Variant = "quiet"`}
+    items={[
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
+          />
+        ),
+        title: 'Default',
+      },
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
+            noSteppers
+            width="100%"
+          />
+        ),
+        title: 'Full width',
+      },
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
+            noSteppers
+            disabled
+          />
+        ),
+        title: 'Disabled',
+      },
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
+            noSteppers
+            error="Some error text that will wrap itself over couple of lines"
+          />
+        ),
+        title: 'Error',
+      },
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
+            noSteppers
+            success
+          />
+        ),
+        title: 'Success',
+      },
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
+            noSteppers
+            leftAddon={<Icon.Bolt size={4} />}
+          />
+        ),
+        title: 'Left addon',
+      },
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
+            noSteppers
+            rightAddon="%"
+          />
+        ),
+        title: 'Right addon',
+      },
+    ]}
+  />
+);
+quietNumber.story = {
+  name: 'Quiet',
 };

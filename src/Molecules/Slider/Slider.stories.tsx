@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { number, withKnobs } from '@storybook/addon-knobs';
 import Slider from '.';
-import { Typography, Number } from '../..';
+import { Typography, Number, Input } from '../..';
 
 export default {
   title: 'Molecules | Slider',
@@ -15,7 +15,7 @@ const getSliderProps = ({ min = 0, max = 100, step = 1 }) => ({
 });
 
 export const Default = () => {
-  const ControlledExample = () => {
+  const Example = () => {
     const [value, setValue] = useState(50);
 
     const handleChange = (v: number) => setValue(v);
@@ -24,7 +24,7 @@ export const Default = () => {
       <>
         <Slider
           onChange={handleChange}
-          value={value}
+          defaultValue={50}
           {...getSliderProps({ min: 0, max: 100, step: 1 })}
         />
         <Typography>
@@ -33,11 +33,11 @@ export const Default = () => {
       </>
     );
   };
-  return <ControlledExample />;
+  return <Example />;
 };
 
 export const MinimumValue = () => {
-  const ControlledExample = () => {
+  const Example = () => {
     const [value, setValue] = useState(0);
 
     const handleChange = (v: number) => setValue(v);
@@ -46,9 +46,9 @@ export const MinimumValue = () => {
       <>
         <Slider
           onChange={handleChange}
-          value={value}
-          {...getSliderProps({ min: 0, max: 100, step: 1 })}
-          sliderColor={t => t.color.sliderColor}
+          defaultValue={0}
+          {...getSliderProps({ min: 0, max: 10, step: 1 })}
+          sliderColor={(t) => t.color.sliderColor}
         />
         <Typography>
           <Number value={value} maximumDecimals={2} /> Kronor
@@ -56,11 +56,11 @@ export const MinimumValue = () => {
       </>
     );
   };
-  return <ControlledExample />;
+  return <Example />;
 };
 
 export const MaximumValue = () => {
-  const ControlledExample = () => {
+  const Example = () => {
     const [value, setValue] = useState(100);
 
     const handleChange = (v: number) => setValue(v);
@@ -69,9 +69,9 @@ export const MaximumValue = () => {
       <>
         <Slider
           onChange={handleChange}
-          value={value}
-          {...getSliderProps({ min: 0, max: 100, step: 1 })}
-          sliderColor={t => t.color.sliderColor}
+          defaultValue={100}
+          {...getSliderProps({ min: 50, max: 100, step: 1 })}
+          sliderColor={(t) => t.color.sliderColor}
         />
         <Typography>
           <Number value={value} maximumDecimals={2} /> Kronor
@@ -79,11 +79,11 @@ export const MaximumValue = () => {
       </>
     );
   };
-  return <ControlledExample />;
+  return <Example />;
 };
 
 export const NegativeToPositive = () => {
-  const ControlledExample = () => {
+  const Example = () => {
     const [value, setValue] = useState(0);
 
     const handleChange = (v: number) => setValue(v);
@@ -92,9 +92,9 @@ export const NegativeToPositive = () => {
       <>
         <Slider
           onChange={handleChange}
-          value={value}
+          defaultValue={0}
           {...getSliderProps({ min: -50, max: 50, step: 1 })}
-          sliderColor={t => t.color.negative}
+          sliderColor={(t) => (value > 0 ? t.color.positive : t.color.negative)}
         />
         <Typography>
           <Number value={value} maximumDecimals={2} /> Kronor
@@ -102,31 +102,11 @@ export const NegativeToPositive = () => {
       </>
     );
   };
-  return <ControlledExample />;
-};
-
-export const CustomColors = () => {
-  const ControlledExample = () => {
-    const [value, setValue] = useState(50);
-
-    const handleChange = (v: number) => setValue(v);
-
-    return (
-      <>
-        <Slider
-          onChange={handleChange}
-          value={value}
-          {...getSliderProps({ min: 0, max: 100, step: 1 })}
-          sliderColor={t => t.color.positive}
-        />
-      </>
-    );
-  };
-  return <ControlledExample />;
+  return <Example />;
 };
 
 export const SmallVariant = () => {
-  const ControlledExample = () => {
+  const Example = () => {
     const [value, setValue] = useState(50);
 
     const handleChange = (v: number) => setValue(v);
@@ -135,9 +115,9 @@ export const SmallVariant = () => {
       <>
         <Slider
           onChange={handleChange}
-          value={value}
+          defaultValue={50}
           {...getSliderProps({ min: 0, max: 100, step: 1 })}
-          sliderColor={t => t.color.sliderColor}
+          sliderColor={(t) => t.color.sliderColor}
           variant="small"
         />
         <Typography>
@@ -146,11 +126,11 @@ export const SmallVariant = () => {
       </>
     );
   };
-  return <ControlledExample />;
+  return <Example />;
 };
 
 export const Disabled = () => {
-  const ControlledExample = () => {
+  const Example = () => {
     const [value, setValue] = useState(50);
 
     const handleChange = (v: number) => setValue(v);
@@ -159,14 +139,40 @@ export const Disabled = () => {
       <>
         <Slider
           onChange={handleChange}
-          value={value}
+          defaultValue={50}
           {...getSliderProps({ min: 0, max: 100, step: 1 })}
-          sliderColor={t => t.color.sliderDisabled}
+          sliderColor={(t) => t.color.sliderDisabled}
           disabled
         />
         <Typography>
           <Number value={value} maximumDecimals={2} /> Kronor
         </Typography>
+      </>
+    );
+  };
+  return <Example />;
+};
+
+export const Controlled = () => {
+  const ControlledExample = () => {
+    const start = 50;
+    const [value, setValue] = useState(start);
+
+    const handleChange = (v: string) => setValue(parseInt(v, 10));
+
+    return (
+      <>
+        <Slider value={value} {...getSliderProps({ min: 0, max: 100, step: 1 })} />
+
+        <Input.Number
+          id="unique-id"
+          label="Controlled from outside"
+          defaultValue={start}
+          onChange={handleChange}
+          min="0"
+          max="100"
+          step="1"
+        />
       </>
     );
   };

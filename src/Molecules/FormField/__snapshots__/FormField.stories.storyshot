@@ -501,11 +501,19 @@ exports[`Storyshots Molecules | FormField With label tooltip 1`] = `
       >
         Label 
         <svg
-          aria-hidden="false"
+          aria-hidden="true"
           className="c4 c5"
+          data-reach-tooltip-trigger=""
           focusable="false"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
           preserveAspectRatio="xMidYMid meet"
-          role="img"
+          role="presentation"
           viewBox="0 0 24 24"
         >
           <g
@@ -524,9 +532,6 @@ exports[`Storyshots Molecules | FormField With label tooltip 1`] = `
               fillRule="nonzero"
             />
           </g>
-          <title>
-            Tooltip content
-          </title>
         </svg>
       </div>
     </span>

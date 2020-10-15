@@ -1,3 +1,303 @@
+# [3.36.0](https://github.com/nordnet/ui/compare/v3.35.0...v3.36.0) (2020-10-15)
+
+
+### Features
+
+* **Spinner:** make delay opt-out instead of opt-in ([eca8aa2](https://github.com/nordnet/ui/commit/eca8aa2))
+
+# [3.35.0](https://github.com/nordnet/ui/compare/v3.34.0...v3.35.0) (2020-10-15)
+
+
+### Features
+
+* 🎸 add maxWidth prop to Tooltip ([f27aeaf](https://github.com/nordnet/ui/commit/f27aeaf))
+
+# [3.34.0](https://github.com/nordnet/ui/compare/v3.33.0...v3.34.0) (2020-10-15)
+
+
+### Features
+
+* **Spinner:** spin faster, increase show delay ([a577cc1](https://github.com/nordnet/ui/commit/a577cc1))
+
+# [3.33.0](https://github.com/nordnet/ui/compare/v3.32.2...v3.33.0) (2020-10-13)
+
+
+### Features
+
+* add exchange fund color ([5071492](https://github.com/nordnet/ui/commit/5071492))
+* add list item background hover color ([a808db2](https://github.com/nordnet/ui/commit/a808db2))
+* add order account label color ([1df3709](https://github.com/nordnet/ui/commit/1df3709))
+* add status fulfilled background color ([3e2d0bb](https://github.com/nordnet/ui/commit/3e2d0bb))
+* add status fulfilled text color ([2bf16c5](https://github.com/nordnet/ui/commit/2bf16c5))
+
+## [3.32.2](https://github.com/nordnet/ui/compare/v3.32.1...v3.32.2) (2020-10-12)
+
+
+### Bug Fixes
+
+* 🐛 change segmented control color when disabled ([a7ee250](https://github.com/nordnet/ui/commit/a7ee250))
+
+## [3.32.1](https://github.com/nordnet/ui/compare/v3.32.0...v3.32.1) (2020-10-09)
+
+
+### Bug Fixes
+
+* 🐛 add focus borders and more story cases ([f17b7dc](https://github.com/nordnet/ui/commit/f17b7dc))
+* 🐛 add quiet variant to input number ([9cab6bd](https://github.com/nordnet/ui/commit/9cab6bd))
+
+# [3.32.0](https://github.com/nordnet/ui/compare/v3.31.1...v3.32.0) (2020-10-08)
+
+
+### Bug Fixes
+
+* 🐛 controlled state for current page ([c8d46e1](https://github.com/nordnet/ui/commit/c8d46e1))
+* 🐛 correct width and styling for page items list ([328c91e](https://github.com/nordnet/ui/commit/328c91e))
+* 🐛 props from leaking into the DOM ([2ac957c](https://github.com/nordnet/ui/commit/2ac957c))
+* 🐛 props leak into DOM ([70d7325](https://github.com/nordnet/ui/commit/70d7325))
+* 🐛 update storyshots ([ea8bd26](https://github.com/nordnet/ui/commit/ea8bd26))
+
+
+### Features
+
+* 🎸 new style for mobile pagination compact ([e4ec83b](https://github.com/nordnet/ui/commit/e4ec83b))
+* 🎸 replace media with a variant prop to pagination ([1ced442](https://github.com/nordnet/ui/commit/1ced442))
+
+## [3.31.1](https://github.com/nordnet/ui/compare/v3.31.0...v3.31.1) (2020-10-07)
+
+
+### Bug Fixes
+
+* add disabled prop to segmented control ([a2634e0](https://github.com/nordnet/ui/commit/a2634e0))
+
+# [3.31.0](https://github.com/nordnet/ui/compare/v3.30.1...v3.31.0) (2020-10-05)
+
+
+### Features
+
+* 🎸 added proper tooltips to all relevant input components ([788f539](https://github.com/nordnet/ui/commit/788f539))
+
+## [3.30.1](https://github.com/nordnet/ui/compare/v3.30.0...v3.30.1) (2020-10-05)
+
+
+### Bug Fixes
+
+* no recalculation on expand for controlled table examples ([fb36d50](https://github.com/nordnet/ui/commit/fb36d50))
+
+# [3.30.0](https://github.com/nordnet/ui/compare/v3.29.0...v3.30.0) (2020-10-05)
+
+
+### Bug Fixes
+
+* 🐛 add missing storyshot ([04c21b3](https://github.com/nordnet/ui/commit/04c21b3))
+* 🐛 change medium badge size to 20 x 20 px ([2ad0674](https://github.com/nordnet/ui/commit/2ad0674))
+* 🐛 padding fix for large numbers ([cb27cac](https://github.com/nordnet/ui/commit/cb27cac))
+* 🐛 remove curly braces in string ([39eb319](https://github.com/nordnet/ui/commit/39eb319))
+* 🐛 remove padding for small sized badges ([20a0e84](https://github.com/nordnet/ui/commit/20a0e84))
+* 🐛 remove unnessary helper number with limit ([b7d9285](https://github.com/nordnet/ui/commit/b7d9285))
+* 🐛 render no typography when badge is not passed children ([c6f2d04](https://github.com/nordnet/ui/commit/c6f2d04))
+
+
+### Features
+
+* 🎸 add circle functionality ([1f977f7](https://github.com/nordnet/ui/commit/1f977f7))
+* 🎸 add color prop to badge component ([b02e6da](https://github.com/nordnet/ui/commit/b02e6da))
+* 🎸 add export of number with limit in index ([4d96a51](https://github.com/nordnet/ui/commit/4d96a51))
+* 🎸 add html props to badge and handle color prop ([0bf5d48](https://github.com/nordnet/ui/commit/0bf5d48))
+* 🎸 add number with limit function and component ([e8f8ac0](https://github.com/nordnet/ui/commit/e8f8ac0))
+* 🎸 add scaffolding for badge component ([278ce6c](https://github.com/nordnet/ui/commit/278ce6c))
+* 🎸 convert badge component to span ([7b6f9ef](https://github.com/nordnet/ui/commit/7b6f9ef))
+
+# [3.29.0](https://github.com/nordnet/ui/compare/v3.28.1...v3.29.0) (2020-10-05)
+
+
+### Bug Fixes
+
+* snapshots ([27d3469](https://github.com/nordnet/ui/commit/27d3469))
+
+
+### Features
+
+* add hidden prop to expand items similar to hidden columns ([609805e](https://github.com/nordnet/ui/commit/609805e))
+
+## [3.28.1](https://github.com/nordnet/ui/compare/v3.28.0...v3.28.1) (2020-10-02)
+
+
+### Bug Fixes
+
+* adjust modal widths ([5e8679c](https://github.com/nordnet/ui/commit/5e8679c))
+* fix padding om mobile ([5cef275](https://github.com/nordnet/ui/commit/5cef275))
+* status modal option ([1a5512f](https://github.com/nordnet/ui/commit/1a5512f))
+
+# [3.28.0](https://github.com/nordnet/ui/compare/v3.27.2...v3.28.0) (2020-09-30)
+
+
+### Features
+
+* 🎸 add styled tabs content typing and story example ([29e439b](https://github.com/nordnet/ui/commit/29e439b))
+* wip export and style tabs content ([8f04d04](https://github.com/nordnet/ui/commit/8f04d04))
+
+## [3.27.2](https://github.com/nordnet/ui/compare/v3.27.1...v3.27.2) (2020-09-29)
+
+
+### Bug Fixes
+
+* 🐛 reset pagination if totalItems or itemsPerPage changes ([980085a](https://github.com/nordnet/ui/commit/980085a))
+
+## [3.27.1](https://github.com/nordnet/ui/compare/v3.27.0...v3.27.1) (2020-09-29)
+
+
+### Bug Fixes
+
+* active step can be failed ([01760c6](https://github.com/nordnet/ui/commit/01760c6))
+
+# [3.27.0](https://github.com/nordnet/ui/compare/v3.26.7...v3.27.0) (2020-09-29)
+
+
+### Bug Fixes
+
+* 🐛 click on page item on mobile and code cleanup ([3024c70](https://github.com/nordnet/ui/commit/3024c70))
+* 🐛 incorrect condition in if-statement ([efa9a12](https://github.com/nordnet/ui/commit/efa9a12))
+* 🐛 prevent prop leak to DOM in pagination component ([d7dbfae](https://github.com/nordnet/ui/commit/d7dbfae))
+* 🐛 total pagination width goes outside bounderies xs device ([f536bf2](https://github.com/nordnet/ui/commit/f536bf2))
+
+
+### Features
+
+* 🎸 add mobile default and compact pagination components ([ab4c7b5](https://github.com/nordnet/ui/commit/ab4c7b5))
+* 🎸 add navigation role and visually hidden labels ([ac78d20](https://github.com/nordnet/ui/commit/ac78d20))
+* 🎸 add pagination component ([ee0a298](https://github.com/nordnet/ui/commit/ee0a298))
+* 🎸 add stories to pagination ([18d0a23](https://github.com/nordnet/ui/commit/18d0a23))
+* 🎸 dynamic a11y labels ([28ee5ba](https://github.com/nordnet/ui/commit/28ee5ba))
+* 🎸 improve a11y for pagination ([14e4f64](https://github.com/nordnet/ui/commit/14e4f64))
+* 🎸 pagination support uncontrolled behaviour ([cd1ba98](https://github.com/nordnet/ui/commit/cd1ba98))
+* 🎸 wip improved ally ([4a9763a](https://github.com/nordnet/ui/commit/4a9763a))
+
+## [3.26.7](https://github.com/nordnet/ui/compare/v3.26.6...v3.26.7) (2020-09-25)
+
+
+### Bug Fixes
+
+* 🐛 fix styled types on Avatar ([45a5984](https://github.com/nordnet/ui/commit/45a5984))
+* 🐛 needs prop fix ([27578af](https://github.com/nordnet/ui/commit/27578af))
+* 🐛 prop name change ([36eb14c](https://github.com/nordnet/ui/commit/36eb14c))
+* 🐛 use function check ([58503eb](https://github.com/nordnet/ui/commit/58503eb))
+
+## [3.26.6](https://github.com/nordnet/ui/compare/v3.26.5...v3.26.6) (2020-09-24)
+
+
+### Bug Fixes
+
+* enable keyboard keys when uncontrolled and focus look ([fc5bb7e](https://github.com/nordnet/ui/commit/fc5bb7e))
+
+## [3.26.5](https://github.com/nordnet/ui/compare/v3.26.4...v3.26.5) (2020-09-24)
+
+
+### Bug Fixes
+
+* add better object check ([62b5390](https://github.com/nordnet/ui/commit/62b5390))
+* remove object check ([d1df7e9](https://github.com/nordnet/ui/commit/d1df7e9))
+
+## [3.26.4](https://github.com/nordnet/ui/compare/v3.26.3...v3.26.4) (2020-09-22)
+
+
+### Bug Fixes
+
+* dont save uncontrolled value when component is controlled ([cecffcd](https://github.com/nordnet/ui/commit/cecffcd))
+
+## [3.26.3](https://github.com/nordnet/ui/compare/v3.26.2...v3.26.3) (2020-09-22)
+
+
+### Bug Fixes
+
+* break out sliderthumb ([53acbd3](https://github.com/nordnet/ui/commit/53acbd3))
+* create track component and rename highlight ([2cfe07f](https://github.com/nordnet/ui/commit/2cfe07f))
+* enable focus again ([fa4f19b](https://github.com/nordnet/ui/commit/fa4f19b))
+* more accurate value when draging ([b6aec35](https://github.com/nordnet/ui/commit/b6aec35))
+* move out getnewvalue function from component ([b2f8d2f](https://github.com/nordnet/ui/commit/b2f8d2f))
+* proper controlled and uncontrolled and refactor ([7948cc8](https://github.com/nordnet/ui/commit/7948cc8))
+* rename thumb to handle and add controlled story ([8c1cc24](https://github.com/nordnet/ui/commit/8c1cc24))
+* update snaps ([d8f125d](https://github.com/nordnet/ui/commit/d8f125d))
+
+## [3.26.2](https://github.com/nordnet/ui/compare/v3.26.1...v3.26.2) (2020-09-21)
+
+
+### Bug Fixes
+
+* export hook as well as component ([b049aa8](https://github.com/nordnet/ui/commit/b049aa8))
+
+## [3.26.1](https://github.com/nordnet/ui/compare/v3.26.0...v3.26.1) (2020-09-20)
+
+
+### Bug Fixes
+
+* add component to index ([9f122af](https://github.com/nordnet/ui/commit/9f122af))
+
+# [3.26.0](https://github.com/nordnet/ui/compare/v3.25.1...v3.26.0) (2020-09-18)
+
+
+### Bug Fixes
+
+* 🐛 add aria label to stories ([c7888eb](https://github.com/nordnet/ui/commit/c7888eb))
+* 🐛 add id to flex table ([e47b7a1](https://github.com/nordnet/ui/commit/e47b7a1))
+* 🐛 set flextable title prop to require id prop ([3557613](https://github.com/nordnet/ui/commit/3557613))
+* documentation ([3b23ac1](https://github.com/nordnet/ui/commit/3b23ac1))
+* naming of title wrapper ([b455a2a](https://github.com/nordnet/ui/commit/b455a2a))
+* wip a11y to table title ([0f0ce32](https://github.com/nordnet/ui/commit/0f0ce32))
+* wip trying to name typing where id is required if title as passed as props ([b2abde2](https://github.com/nordnet/ui/commit/b2abde2))
+
+
+### Features
+
+* pass aria-labelledby in flextable ([07624fe](https://github.com/nordnet/ui/commit/07624fe))
+
+## [3.25.1](https://github.com/nordnet/ui/compare/v3.25.0...v3.25.1) (2020-09-17)
+
+
+### Bug Fixes
+
+* 🐛 add index funds colors ([fae63ee](https://github.com/nordnet/ui/commit/fae63ee))
+* 🐛 convert finnish index funds colors into array ([b2d5658](https://github.com/nordnet/ui/commit/b2d5658))
+
+# [3.25.0](https://github.com/nordnet/ui/compare/v3.24.0...v3.25.0) (2020-09-17)
+
+
+### Bug Fixes
+
+* 🐛 replace icon to icon with path instead of text ([ff5315a](https://github.com/nordnet/ui/commit/ff5315a))
+
+
+### Features
+
+* 🎸 add tax icon ([8752bbc](https://github.com/nordnet/ui/commit/8752bbc))
+
+# [3.24.0](https://github.com/nordnet/ui/compare/v3.23.3...v3.24.0) (2020-09-16)
+
+
+### Bug Fixes
+
+* update snapshot ([8df2730](https://github.com/nordnet/ui/commit/8df2730))
+* update story ([39618f3](https://github.com/nordnet/ui/commit/39618f3))
+* update story ([8f556fe](https://github.com/nordnet/ui/commit/8f556fe))
+
+
+### Features
+
+* add fullScreenMobile prop to modal ([7bed657](https://github.com/nordnet/ui/commit/7bed657))
+
+## [3.23.3](https://github.com/nordnet/ui/compare/v3.23.2...v3.23.3) (2020-09-16)
+
+
+### Bug Fixes
+
+* 🐛 update filter icon with new design ([f8fb043](https://github.com/nordnet/ui/commit/f8fb043))
+
+## [3.23.2](https://github.com/nordnet/ui/compare/v3.23.1...v3.23.2) (2020-09-15)
+
+
+### Bug Fixes
+
+* **PageWrapper:** no max-width when printing ([143a2e6](https://github.com/nordnet/ui/commit/143a2e6))
+
 ## [3.23.1](https://github.com/nordnet/ui/compare/v3.23.0...v3.23.1) (2020-09-09)
 
 

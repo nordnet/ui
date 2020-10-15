@@ -1,5 +1,6 @@
 /** Atoms */
 import { Table, Tbody, Td, Tfoot, Th, Thead, Tr } from './Atoms/Table';
+import Badge from './Atoms/Badge';
 import Box from './Atoms/Box';
 import Card from './Atoms/Card';
 import CssGrid from './Atoms/CssGrid';
@@ -10,6 +11,7 @@ import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';
 import FormLabel from './Atoms/FormLabel';
 import Icon from './Atoms/Icon';
+import IsomorphicMedia, { useIsomorphicMedia } from './Atoms/IsomorphicMedia';
 import Legend from './Atoms/Legend';
 import List from './Atoms/List';
 import ListItem from './Atoms/ListItem';
@@ -51,6 +53,7 @@ import Modal from './Molecules/Modal';
 import MultiStepProgress from './Molecules/MultiStepProgress';
 import Number from './Molecules/Number';
 import PageHeaderCard from './Molecules/PageHeaderCard';
+import Pagination from './Molecules/Pagination';
 import ProgressBar from './Molecules/ProgressBar';
 import PageWrapper from './Molecules/PageWrapper';
 import Rating from './Molecules/Rating';
@@ -76,11 +79,15 @@ import TrackingContext from './common/tracking';
 
 import { LinkContext, LinkProvider, LinkProviderProps, LinkProps, useLink } from './common/Links';
 
+/** Utils */
+import { numberWithLimit } from './common/utils';
+
 /** Runtime code */
 export {
   Accordion,
   AccordionItem,
   Avatar,
+  Badge,
   BarScale,
   Box,
   Button,
@@ -103,6 +110,7 @@ export {
   FlexTable,
   FormField,
   FormLabel,
+  IsomorphicMedia,
   Icon,
   InfoBar,
   Input,
@@ -121,6 +129,7 @@ export {
   Modal,
   PageHeaderCard,
   PageWrapper,
+  Pagination,
   Portal,
   Pill,
   ProgressBar,
@@ -152,6 +161,7 @@ export {
   Typography,
   useKeyPress,
   useMedia,
+  useIsomorphicMedia,
   useOnClickOutside,
   VisuallyHidden,
   LinkContext,
@@ -159,4 +169,5 @@ export {
   LinkProviderProps,
   LinkProps,
   useLink,
+  numberWithLimit,
 };

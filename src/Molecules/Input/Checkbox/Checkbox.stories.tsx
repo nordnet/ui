@@ -26,6 +26,58 @@ defaultStory.story = {
   name: 'Default',
 };
 
+export const defaultStoryWithTooltip = () => (
+  <Input.Checkbox name="example" value="green" label="Green" labelTooltip="Checkbox tooltip" />
+);
+
+defaultStoryWithTooltip.story = {
+  name: 'Default with tooltip',
+};
+
+export const defaultStoryWithTooltipPositionTop = () => (
+  <>
+    <br />
+    <br />
+    <Input.Checkbox
+      name="example"
+      value="green"
+      label="Green"
+      labelTooltip="Checkbox tooltip"
+      labelTooltipPosition="top"
+    />
+  </>
+);
+
+export const defaultStoryWithTooltipParagraph = () => (
+  <Input.Checkbox
+    name="example"
+    value="green"
+    label="Quisque varius massa ut augue convallis, ac vehicula orci aliquet. Mauris consequat pretium tempus. Morbi sagittis facilisis pellentesque. Maecenas sodales neque nec sapien suscipit tempus. Quisque elementum auctor urna, nec laoreet nibh vehicula et."
+    labelTooltip="Checkbox tooltip"
+  />
+);
+
+defaultStoryWithTooltipParagraph.story = {
+  name: 'Default with tooltip with a long paragraph',
+};
+
+export const defaultStoryWithTooltipPositionTopParagraph = () => (
+  <>
+    <br />
+    <Input.Checkbox
+      name="example"
+      value="green"
+      label="Quisque varius massa ut augue convallis, ac vehicula orci aliquet. Mauris consequat pretium tempus. Morbi sagittis facilisis pellentesque. Maecenas sodales neque nec sapien suscipit tempus. Quisque elementum auctor urna, nec laoreet nibh vehicula et."
+      labelTooltip="Checkbox tooltip"
+      labelTooltipPosition="top"
+    />
+  </>
+);
+
+defaultStoryWithTooltipPositionTopParagraph.story = {
+  name: 'Default with tooltip (position top) with a long paragraph',
+};
+
 export const withDefaultChecked = () => (
   <Input.Checkbox name="example" value="green" label="Green" defaultChecked />
 );
@@ -124,6 +176,38 @@ export const inAGroup = () => (
 
 inAGroup.story = {
   name: 'In a group',
+};
+
+export const inAGroupWithTooltip = () => (
+  <FormField label="Colors" labelTooltip="Checkboxgroup tooltip" group>
+    <Flexbox container gutter={5}>
+      <Input.Checkbox name="example" value="green" label="Green" />
+      <Input.Checkbox name="example" value="blue" label="Blue" />
+      <Input.Checkbox name="example" value="yellow" label="Yellow" />
+    </Flexbox>
+  </FormField>
+);
+
+inAGroupWithTooltip.story = {
+  name: 'In a group with a label tooltip',
+};
+
+export const inAGroupWithTooltipPositionTop = () => (
+  <>
+    <br />
+    <br />
+    <FormField label="Colors" labelTooltip="Checkboxgroup tooltip" labelTooltipPosition="top" group>
+      <Flexbox container gutter={5}>
+        <Input.Checkbox name="example" value="green" label="Green" />
+        <Input.Checkbox name="example" value="blue" label="Blue" />
+        <Input.Checkbox name="example" value="yellow" label="Yellow" />
+      </Flexbox>
+    </FormField>
+  </>
+);
+
+inAGroupWithTooltipPositionTop.story = {
+  name: 'In a group with a label tooltip (position top)',
 };
 
 export const inAGroupWithError = () => {

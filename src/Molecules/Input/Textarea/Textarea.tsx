@@ -9,12 +9,12 @@ import NormalizedElements from '../../../common/NormalizedElements';
 const hasError = (error?: Props['error']) => error && error !== '';
 
 const background = css<Pick<Props, 'disabled'>>`
-  background-color: ${p =>
+  background-color: ${(p) =>
     p.disabled ? p.theme.color.disabledBackground : p.theme.color.backgroundInput};
 `;
 
 const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
-  ${p =>
+  ${(p) =>
     p.disabled
       ? ''
       : `
@@ -26,14 +26,14 @@ const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
 
 const focusBorderStyles = css`
   &:focus {
-    border-color: ${p => p.theme.color.borderActive};
+    border-color: ${(p) => p.theme.color.borderActive};
   }
 `;
 
 const borderStyles = css<Pick<Props, 'error' | 'success'>>`
   outline: none;
   border: 1px solid
-    ${p => {
+    ${(p) => {
       if (hasError(p.error)) return p.theme.color.inputBorderError;
       if (p.success) return p.theme.color.inputBorderSuccess;
       return p.theme.color.inputBorder;
@@ -46,7 +46,7 @@ const borderStyles = css<Pick<Props, 'error' | 'success'>>`
 const StyledTextarea = styled(NormalizedElements.Textarea)`
   border: 0;
   width: 100%;
-  padding: ${p => p.theme.spacing.unit(2)}px;
+  padding: ${(p) => p.theme.spacing.unit(2)}px;
   margin: 0;
   vertical-align: top; /* removes space underneath */
   box-sizing: border-box;
@@ -72,7 +72,7 @@ export const Textarea: React.FC<Props> & {
    * `
    * */
   components: typeof components;
-} = props => {
+} = (props) => {
   const {
     autoFocus,
     defaultValue,
@@ -96,11 +96,22 @@ export const Textarea: React.FC<Props> & {
 
   return (
     <FormField
-      {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'labelTooltip', 'width'], props)}
+      {...R.pick(
+        [
+          'error',
+          'extraInfo',
+          'hideLabel',
+          'label',
+          'labelTooltip',
+          'labelTooltipPosition',
+          'width',
+        ],
+        props,
+      )}
       required={visuallyEmphasiseRequired}
     >
       <div>
-        <Typography type="secondary" color={t => t.color.text}>
+        <Typography type="secondary" color={(t) => t.color.text}>
           <StyledTextarea
             {...{
               autoFocus,

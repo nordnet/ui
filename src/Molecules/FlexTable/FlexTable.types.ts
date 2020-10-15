@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactElement } from 'react';
 import { RowComponent, FooterRowComponent, HeaderRowComponent } from './Row/Row.types';
 import { HeaderComponent } from './Header/Header.types';
 import { FooterComponent } from './Footer/Footer.types';
@@ -13,14 +13,32 @@ import {
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
+interface Title {
+  id?: string;
+  /**
+   * Will render a title above the table.
+   * Note, will require id for
+   */
+  title?: ReactElement | string;
+}
+
+interface PropsWithTitle extends Title {
+  id: string;
+  title: ReactElement | string;
+}
+
+interface PropsWithoutTitle extends Title {
+  id?: string;
+  title?: never;
+}
+
+type TitleProps = PropsWithTitle | PropsWithoutTitle;
+
 export type Props = {
   className?: string;
-  /**
-   * Will render a title above the table
-   */
-  title?: ReactNode;
-} & Partial<FlexTableProviderProps> &
-  Omit<HtmlProps, 'title'>;
+} & TitleProps &
+  Partial<FlexTableProviderProps> &
+  Omit<HtmlProps, 'title' | 'id'>;
 
 export type FlexTableComponent = React.FC<Props>;
 

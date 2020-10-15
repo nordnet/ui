@@ -68,7 +68,7 @@ const AccountValue = () => {
             <Avatar size="s">{selectedOption.symbol}</Avatar>
           </Flexbox>
           <Flexbox item container alignItems="center" grow={1}>
-            <Typography type="tertiary" weight="bold" color={t => t.color.text}>
+            <Typography type="tertiary" weight="bold" color={(t) => t.color.text}>
               {selectedOption.label}
             </Typography>
             <Typography type="tertiary">
@@ -85,10 +85,10 @@ const AccountValue = () => {
 // @ts-ignore
 const StyledBox = styled(Box)`
   cursor: pointer;
-  background: ${p =>
+  background: ${(p) =>
     // @ts-ignore
     p.focused ? p.theme.color.background : p.theme.color.card};
-  ${p =>
+  ${(p) =>
     // @ts-ignore
     !p.isKeyboardNavigation
       ? `
@@ -114,7 +114,7 @@ const AccountListItem = ({ index }) => {
         </Flexbox>
         <Flexbox item container direction="column" grow={1}>
           <Flexbox item>
-            <Typography type="tertiary" weight="bold" color={t => t.color.text}>
+            <Typography type="tertiary" weight="bold" color={(t) => t.color.text}>
               {option.label}
             </Typography>
             <Typography type="tertiary">
@@ -123,7 +123,7 @@ const AccountListItem = ({ index }) => {
             </Typography>
           </Flexbox>
           <Flexbox item>
-            <Typography type="caption" color={t => t.color.text}>
+            <Typography type="caption" color={(t) => t.color.text}>
               <Number value={option.amount.value} currency={option.amount.currency} />
             </Typography>
           </Flexbox>
@@ -131,7 +131,7 @@ const AccountListItem = ({ index }) => {
         {selected && (
           <Flexbox item container alignItems="center">
             <Box pl={2}>
-              <Icon.CheckMark color={t => t.color.cta} size={4} />
+              <Icon.CheckMark color={(t) => t.color.cta} size={4} />
             </Box>
           </Flexbox>
         )}
@@ -143,16 +143,57 @@ const AccountListItem = ({ index }) => {
 export const defaultStory = () => (
   <Input.Select
     id="input-1"
-    options={[{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }]}
+    options={[
+      { value: 1, label: '1' },
+      { value: 2, label: '2' },
+      { value: 3, label: '3' },
+    ]}
     label="Label"
     placeholder="Placeholder"
   />
 );
 
+export const withLabelTooltip = () => (
+  <Input.Select
+    id="input-1"
+    options={[
+      { value: 1, label: '1' },
+      { value: 2, label: '2' },
+      { value: 3, label: '3' },
+    ]}
+    label="Label"
+    placeholder="Placeholder"
+    labelTooltip="Tooltip for select field"
+  />
+);
+
+export const withLabelTooltipPositionTop = () => (
+  <>
+    <br />
+    <br />
+    <Input.Select
+      id="input-1"
+      options={[
+        { value: 1, label: '1' },
+        { value: 2, label: '2' },
+        { value: 3, label: '3' },
+      ]}
+      label="Label"
+      placeholder="Placeholder"
+      labelTooltip="Tooltip for select field"
+      labelTooltipPosition="top"
+    />
+  </>
+);
+
 export const hideLabel = () => (
   <Input.Select
     id="input-1"
-    options={[{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }]}
+    options={[
+      { value: 1, label: '1' },
+      { value: 2, label: '2' },
+      { value: 3, label: '3' },
+    ]}
     label="Label"
     hideLabel
     placeholder="Placeholder"
@@ -244,7 +285,11 @@ export const tracking = () => (
   >
     <Input.Select
       id="input-1"
-      options={[{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }]}
+      options={[
+        { value: 1, label: '1' },
+        { value: 2, label: '2' },
+        { value: 3, label: '3' },
+      ]}
       label="Label"
       placeholder="Placeholder"
     />
@@ -271,13 +316,21 @@ export const two = () => (
   <>
     <Input.Select
       id="input-1"
-      options={[{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }]}
+      options={[
+        { value: 1, label: '1' },
+        { value: 2, label: '2' },
+        { value: 3, label: '3' },
+      ]}
       label="Label"
       placeholder="Placeholder"
     />
     <Input.Select
       id="input-2"
-      options={[{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }]}
+      options={[
+        { value: 1, label: '1' },
+        { value: 2, label: '2' },
+        { value: 3, label: '3' },
+      ]}
       label="Label"
       placeholder="Placeholder"
     />
@@ -535,7 +588,9 @@ export const multiselectSelectAll = () =>
     const CustomSelectedValue = React.useCallback(() => {
       const [machineState] = useSelectMachineFromContext();
       const selectedCount = machineState.context.selectedItems.length;
-      const allSelected = machineState.context.selectedItems.some(x => x[Input.Select.SYMBOL_ALL]);
+      const allSelected = machineState.context.selectedItems.some(
+        (x) => x[Input.Select.SYMBOL_ALL],
+      );
       let label;
       if (allSelected) {
         label = 'All selected';
@@ -805,10 +860,10 @@ export const linkWithDropdownAndSearchBoxSecondary = () =>
             <Link as="div">
               <Flexbox container alignItems="center" gutter={1}>
                 <Flexbox item container alignItems="center">
-                  <Icon.AddWithCircle inline color={t => t.color.text} size={3.5} />
+                  <Icon.AddWithCircle inline color={(t) => t.color.text} size={3.5} />
                 </Flexbox>
                 <Flexbox item>
-                  <Typography type="secondary" color={t => t.color.text}>
+                  <Typography type="secondary" color={(t) => t.color.text}>
                     {state.context.placeholder}
                   </Typography>
                 </Flexbox>
@@ -825,21 +880,21 @@ export const linkWithDropdownAndSearchBoxSecondary = () =>
       () =>
         accountOptions
           .concat(
-            accountOptions.map(x => ({
+            accountOptions.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map(x => ({
+            accountOptions.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map(x => ({
+            accountOptions.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -849,7 +904,7 @@ export const linkWithDropdownAndSearchBoxSecondary = () =>
     );
 
     // @ts-ignore
-    const handleChange = newVal => {
+    const handleChange = (newVal) => {
       action('change')(newVal);
       setValue(newVal);
     };
@@ -882,10 +937,10 @@ export const linkWithDropdownAndSearchBoxTertiary = () =>
             <Link as="div">
               <Flexbox container alignItems="center" gutter={1}>
                 <Flexbox item container alignItems="center">
-                  <Icon.AddWithCircle inline color={t => t.color.text} size={3} />
+                  <Icon.AddWithCircle inline color={(t) => t.color.text} size={3} />
                 </Flexbox>
                 <Flexbox item>
-                  <Typography type="tertiary" color={t => t.color.text}>
+                  <Typography type="tertiary" color={(t) => t.color.text}>
                     {state.context.placeholder}
                   </Typography>
                 </Flexbox>
@@ -905,21 +960,21 @@ export const linkWithDropdownAndSearchBoxTertiary = () =>
       () =>
         accountOptions
           .concat(
-            accountOptions.map(x => ({
+            accountOptions.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map(x => ({
+            accountOptions.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map(x => ({
+            accountOptions.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -929,7 +984,7 @@ export const linkWithDropdownAndSearchBoxTertiary = () =>
     );
 
     // @ts-ignore
-    const handleChange = newVal => {
+    const handleChange = (newVal) => {
       action('change')(newVal);
       setValue(newVal);
     };
@@ -962,10 +1017,10 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
             <Link as="div">
               <Flexbox container alignItems="center" gutter={1}>
                 <Flexbox item container alignItems="center">
-                  <Icon.AddWithCircle inline color={t => t.color.text} size={3} />
+                  <Icon.AddWithCircle inline color={(t) => t.color.text} size={3} />
                 </Flexbox>
                 <Flexbox item>
-                  <Typography type="tertiary" color={t => t.color.text}>
+                  <Typography type="tertiary" color={(t) => t.color.text}>
                     {state.context.placeholder}
                   </Typography>
                 </Flexbox>
@@ -985,21 +1040,21 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
       () =>
         accountOptions
           .concat(
-            accountOptions.map(x => ({
+            accountOptions.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map(x => ({
+            accountOptions.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map(x => ({
+            accountOptions.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -1009,7 +1064,7 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
     );
 
     // @ts-ignore
-    const handleChange = newVal => {
+    const handleChange = (newVal) => {
       action('change')(newVal);
       setValue(newVal);
     };
@@ -1058,10 +1113,10 @@ export const listPositionedToTheLeft = () =>
             <Link as="div">
               <Flexbox container alignItems="center" gutter={1}>
                 <Flexbox item container alignItems="center">
-                  <Icon.AddWithCircle inline color={t => t.color.text} size={3} />
+                  <Icon.AddWithCircle inline color={(t) => t.color.text} size={3} />
                 </Flexbox>
                 <Flexbox item>
-                  <Typography type="tertiary" color={t => t.color.text}>
+                  <Typography type="tertiary" color={(t) => t.color.text}>
                     {state.context.placeholder}
                   </Typography>
                 </Flexbox>
@@ -1081,21 +1136,21 @@ export const listPositionedToTheLeft = () =>
       () =>
         accountOptions
           .concat(
-            accountOptions.map(x => ({
+            accountOptions.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map(x => ({
+            accountOptions.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map(x => ({
+            accountOptions.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -1105,7 +1160,7 @@ export const listPositionedToTheLeft = () =>
     );
 
     // @ts-ignore
-    const handleChange = newVal => {
+    const handleChange = (newVal) => {
       action('change')(newVal);
       setValue(newVal);
     };

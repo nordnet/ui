@@ -657,6 +657,302 @@ exports[`Storyshots Molecules | ProgressBar Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Molecules | ProgressBar Failure Step 1`] = `
+.c0 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 8px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  width: 100%;
+  padding-bottom: 0px;
+}
+
+.c5 {
+  position: relative;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  color: #FFFFFF;
+  background: #00D200;
+}
+
+.c11 {
+  position: relative;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  color: #FFFFFF;
+  background: #FF1900;
+}
+
+.c15 {
+  position: relative;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  color: #FFFFFF;
+  background: #BCBCB6;
+}
+
+.c9 {
+  position: absolute;
+  top: 40px;
+  text-align: center;
+  white-space: nowrap;
+  display: none;
+}
+
+.c10 {
+  width: 100%;
+  height: 2px;
+  background: #00D200;
+}
+
+.c14 {
+  width: 100%;
+  height: 2px;
+  background: #BCBCB6;
+}
+
+@media (min-width:976px) {
+  .c3 {
+    padding-bottom: 32px;
+  }
+}
+
+@media (min-width:976px) {
+  .c9 {
+    display: block;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2 c3"
+      title="progress bar"
+    >
+      <div
+        className="c4 c5"
+        title="One - step done"
+      >
+        <span
+          aria-hidden={true}
+          className="c6"
+        >
+          <svg
+            aria-hidden="true"
+            className="c7"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+            />
+          </svg>
+        </span>
+        <span
+          aria-hidden={true}
+          className="c8 c9"
+        >
+          One
+        </span>
+      </div>
+      <div
+        className="c10"
+      />
+      <div
+        className="c4 c5"
+        title="Two - step done"
+      >
+        <span
+          aria-hidden={true}
+          className="c6"
+        >
+          <svg
+            aria-hidden="true"
+            className="c7"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+            />
+          </svg>
+        </span>
+        <span
+          aria-hidden={true}
+          className="c8 c9"
+        >
+          Two
+        </span>
+      </div>
+      <div
+        className="c10"
+      />
+      <div
+        className="c4 c11"
+        title="Failed step - active step"
+      >
+        <span
+          aria-hidden={true}
+          className="c6"
+        >
+          <svg
+            aria-hidden="true"
+            className="c12"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+            />
+          </svg>
+        </span>
+        <span
+          aria-hidden={true}
+          className="c13 c9"
+        >
+          Failed step
+        </span>
+      </div>
+      <div
+        className="c14"
+      />
+      <div
+        className="c4 c15"
+        title="Four - failure step"
+      >
+        <span
+          aria-hidden={true}
+          className="c6"
+        >
+          4
+        </span>
+        <span
+          aria-hidden={true}
+          className="c8 c9"
+        >
+          Four
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules | ProgressBar Lots Of Steps 1`] = `
 .c0 {
   padding-left: 40px;

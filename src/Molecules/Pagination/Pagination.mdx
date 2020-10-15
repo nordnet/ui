@@ -1,0 +1,29 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { Playground } from '../../../docs/Playground';
+import Pagination from './Pagination';
+
+# Pagination
+
+This component enables the user to select a specific page from a range of pages. The number of pages is calculated based on the `totalItems` and `itemsPerPage` props.
+
+## Props
+
+<Props of={Pagination} />
+
+## Usage
+
+Basic usage
+
+```javascript
+<Pagination itemsPerPage={10} totalItems={120} onPageChange={onPageChange} />
+```
+
+Compact mode (only mobile)
+
+```javascript
+<Pagination itemsPerPage={10} totalItems={120} onPageChange={onPageChange} compact />
+```
+
+## Playground
+
+<Playground code={`<Pagination itemsPerPage={10} totalItems={120} onPageChange={() => {}} />`} />

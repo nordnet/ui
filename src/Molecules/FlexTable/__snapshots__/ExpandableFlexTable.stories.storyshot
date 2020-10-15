@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expandable Table With Custom Row 1`] = `
-.c30 {
+.c27 {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 8px;
 }
 
-.c4 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -21,16 +21,16 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   margin-right: -4px;
 }
 
-.c4 > * {
+.c1 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c4 > *:not(:first-child) {
+.c1 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c7 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -44,7 +44,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   flex: 1;
 }
 
-.c12 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -62,7 +62,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   flex: 0 20px;
 }
 
-.c33 {
+.c30 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -75,22 +75,36 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   margin-right: -20px;
 }
 
-.c33 > * {
+.c30 > * {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.c33 > *:not(:first-child) {
+.c30 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c20 {
+.c17 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   width: 8px;
   height: 8px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c19 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
   fill: #A0A09B;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -103,20 +117,6 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #A0A09B;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c25 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   width: 8px;
   height: 8px;
   fill: #282823;
@@ -126,7 +126,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   display: block;
 }
 
-.c26 {
+.c23 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -140,34 +140,25 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   display: block;
 }
 
-.c23 {
+.c20 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c28 {
+.c25 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.c32 {
+.c29 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c11 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -176,7 +167,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -185,7 +176,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   line-height: 1.4285714285714286;
 }
 
-.c19 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -194,7 +185,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c6 {
   display: inline-block;
   width: 100%;
   text-overflow: ellipsis;
@@ -202,7 +193,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   overflow: hidden;
 }
 
-.c17 {
+.c14 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -231,29 +222,29 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   cursor: not-allowed;
 }
 
-.c17,
-.c17[type='button'],
-.c17[type='reset'],
-.c17[type='submit'] {
+.c14,
+.c14[type='button'],
+.c14[type='reset'],
+.c14[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c17::-moz-focus-inner,
-.c17[type='button']::-moz-focus-inner,
-.c17[type='reset']::-moz-focus-inner,
-.c17[type='submit']::-moz-focus-inner {
+.c14::-moz-focus-inner,
+.c14[type='button']::-moz-focus-inner,
+.c14[type='reset']::-moz-focus-inner,
+.c14[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c17:-moz-focusring,
-.c17[type='button']:-moz-focusring,
-.c17[type='reset']:-moz-focusring,
-.c17[type='submit']:-moz-focusring {
+.c14:-moz-focusring,
+.c14[type='button']:-moz-focusring,
+.c14[type='reset']:-moz-focusring,
+.c14[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c24 {
+.c21 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -282,45 +273,45 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   cursor: pointer;
 }
 
-.c24,
-.c24[type='button'],
-.c24[type='reset'],
-.c24[type='submit'] {
+.c21,
+.c21[type='button'],
+.c21[type='reset'],
+.c21[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c24::-moz-focus-inner,
-.c24[type='button']::-moz-focus-inner,
-.c24[type='reset']::-moz-focus-inner,
-.c24[type='submit']::-moz-focus-inner {
+.c21::-moz-focus-inner,
+.c21[type='button']::-moz-focus-inner,
+.c21[type='reset']::-moz-focus-inner,
+.c21[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c24:-moz-focusring,
-.c24[type='button']:-moz-focusring,
-.c24[type='reset']:-moz-focusring,
-.c24[type='submit']:-moz-focusring {
+.c21:-moz-focusring,
+.c21[type='button']:-moz-focusring,
+.c21[type='reset']:-moz-focusring,
+.c21[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c10 {
+.c7 {
   width: inherit;
 }
 
-.c14 {
+.c11 {
   overflow: hidden;
 }
 
-.c18:focus {
+.c15:focus {
   outline: none;
 }
 
-.c31 {
+.c28 {
   background: #FFFFFF;
 }
 
-.c5 {
+.c2 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -332,15 +323,15 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   margin-left: 0;
 }
 
-.c5 > *:first-child {
+.c2 > *:first-child {
   padding-left: 0;
 }
 
-.c5 > *:last-child {
+.c2 > *:last-child {
   padding-right: 0;
 }
 
-.c13 {
+.c10 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -352,19 +343,19 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   margin-left: 0;
 }
 
-.c13:hover {
+.c10:hover {
   background: #F5F5F5;
 }
 
-.c13 > *:first-child {
+.c10 > *:first-child {
   padding-left: 0;
 }
 
-.c13 > *:last-child {
+.c10 > *:last-child {
   padding-right: 0;
 }
 
-.c27 {
+.c24 {
   background: #FFFFFF;
   padding-right: 4px;
   padding-left: 2px;
@@ -375,20 +366,20 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   margin-left: 0;
 }
 
-.c27 > *:first-child {
+.c24 > *:first-child {
   padding-left: 0;
 }
 
-.c27 > *:last-child {
+.c24 > *:last-child {
   padding-right: 0;
 }
 
-.c29 {
+.c26 {
   border-left: 2px solid #0046FF;
   border-bottom: 1px solid #EBEBE8;
 }
 
-.c6 {
+.c3 {
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
@@ -396,7 +387,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   border-bottom: 1px solid #282823;
 }
 
-.c8 {
+.c5 {
   overflow: hidden;
 }
 
@@ -404,19 +395,8 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   position: relative;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c3 {
-  padding-left: 4px;
-}
-
 @media (min-width:976px) {
-  .c30 {
+  .c27 {
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
@@ -425,21 +405,14 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
 }
 
 @media not all and (max-width:975px) {
-  .c16 {
+  .c13 {
     display: none;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c21 {
+  .c18 {
     display: none;
-  }
-}
-
-@media (min-width:760px) {
-  .c2 {
-    font-size: 20px;
-    line-height: 1.2;
   }
 }
 
@@ -447,137 +420,130 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   className="c0"
   role="table"
 >
-  <caption
-    className="c1"
-  >
-    <span
-      className="c2 c3"
-    />
-  </caption>
   <div
-    className="c4 c5 c6"
+    className="c1 c2 c3"
     role="row"
   >
     <div
-      className="c7 c8"
+      className="c4 c5"
       role="columnheader"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c11"
+          className="c8"
         >
           Header 1
         </span>
       </div>
     </div>
     <div
-      className="c7 c8"
+      className="c4 c5"
       role="columnheader"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c11"
+          className="c8"
         >
           Header 2
         </span>
       </div>
     </div>
     <div
-      className="c7 c8"
+      className="c4 c5"
       role="columnheader"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c11"
+          className="c8"
         >
           Header 3
         </span>
       </div>
     </div>
     <div
-      className="c12 c8"
+      className="c9 c5"
       role="columnheader"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c11"
+          className="c8"
         />
       </div>
     </div>
   </div>
   <div
-    className="c4 c13"
+    className="c1 c10"
     role="row"
   >
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Disabled
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Disabled
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Disabled
         </span>
       </div>
     </div>
     <div
-      className="c12 c14"
+      className="c9 c11"
       role="cell"
     >
       <div
-        className="c16"
+        className="c13"
       >
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c17 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c14 c15"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c20"
+              className="c17"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -591,20 +557,20 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
         </button>
       </div>
       <div
-        className="c21"
+        className="c18"
       >
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c17 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c14 c15"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c22 c23"
+              className="c19 c20"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -621,71 +587,71 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
     </div>
   </div>
   <div
-    className="c4 c13"
+    className="c1 c10"
     role="row"
   >
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable
         </span>
       </div>
     </div>
     <div
-      className="c12 c14"
+      className="c9 c11"
       role="cell"
     >
       <div
-        className="c16"
+        className="c13"
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c15"
           disabled={false}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c25"
+              className="c22"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -699,21 +665,21 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
         </button>
       </div>
       <div
-        className="c21"
+        className="c18"
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c15"
           disabled={false}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c26 c23"
+              className="c23 c20"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -730,71 +696,71 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
     </div>
   </div>
   <div
-    className="c4 c27"
+    className="c1 c24"
     role="row"
   >
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable with initial state
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable with initial state
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable with initial state
         </span>
       </div>
     </div>
     <div
-      className="c12 c14"
+      className="c9 c11"
       role="cell"
     >
       <div
-        className="c16"
+        className="c13"
       >
         <button
           aria-expanded={true}
-          className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c15"
           disabled={false}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c25"
+              className="c22"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -809,21 +775,21 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
         </button>
       </div>
       <div
-        className="c21"
+        className="c18"
       >
         <button
           aria-expanded={true}
-          className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c15"
           disabled={false}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c26 c28"
+              className="c23 c25"
               direction="up"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -840,95 +806,95 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
     </div>
   </div>
   <div
-    className="c29"
+    className="c26"
     role="row"
   >
     <div
-      className="c30 c31"
+      className="c27 c28"
       role="cell"
     >
       <div
-        className="c16"
+        className="c13"
       >
         <ul
-          className="c32"
+          className="c29"
         />
       </div>
       <div
-        className="c21"
+        className="c18"
       >
         <ul
-          className="c32 c33"
+          className="c29 c30"
         />
       </div>
     </div>
   </div>
   <div
-    className="c4 c13"
+    className="c1 c10"
     role="row"
   >
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable component items
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable component items
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable component items
         </span>
       </div>
     </div>
     <div
-      className="c12 c14"
+      className="c9 c11"
       role="cell"
     >
       <div
-        className="c16"
+        className="c13"
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c15"
           disabled={false}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c25"
+              className="c22"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -942,21 +908,21 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
         </button>
       </div>
       <div
-        className="c21"
+        className="c18"
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c15"
           disabled={false}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c26 c23"
+              className="c23 c20"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -973,71 +939,71 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
     </div>
   </div>
   <div
-    className="c4 c13"
+    className="c1 c10"
     role="row"
   >
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable with children
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable with children
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable with children
         </span>
       </div>
     </div>
     <div
-      className="c12 c14"
+      className="c9 c11"
       role="cell"
     >
       <div
-        className="c16"
+        className="c13"
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c15"
           disabled={false}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c25"
+              className="c22"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -1051,21 +1017,21 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
         </button>
       </div>
       <div
-        className="c21"
+        className="c18"
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c15"
           disabled={false}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c26 c23"
+              className="c23 c20"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -1085,13 +1051,13 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
 `;
 
 exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expanded Table 1`] = `
-.c30 {
+.c27 {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 8px;
 }
 
-.c4 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1105,16 +1071,16 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   margin-right: -4px;
 }
 
-.c4 > * {
+.c1 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c4 > *:not(:first-child) {
+.c1 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c7 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1128,7 +1094,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   flex: 1;
 }
 
-.c12 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1146,7 +1112,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   flex: 0 20px;
 }
 
-.c33 {
+.c30 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1159,22 +1125,36 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   margin-right: -20px;
 }
 
-.c33 > * {
+.c30 > * {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.c33 > *:not(:first-child) {
+.c30 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c20 {
+.c17 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   width: 8px;
   height: 8px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c19 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
   fill: #A0A09B;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -1187,20 +1167,6 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #A0A09B;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c25 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   width: 8px;
   height: 8px;
   fill: #282823;
@@ -1210,7 +1176,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   display: block;
 }
 
-.c26 {
+.c23 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1224,34 +1190,25 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   display: block;
 }
 
-.c23 {
+.c20 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c28 {
+.c25 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.c32 {
+.c29 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c11 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1260,7 +1217,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1269,7 +1226,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   line-height: 1.4285714285714286;
 }
 
-.c19 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1278,7 +1235,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c6 {
   display: inline-block;
   width: 100%;
   text-overflow: ellipsis;
@@ -1286,7 +1243,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   overflow: hidden;
 }
 
-.c17 {
+.c14 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1315,29 +1272,29 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   cursor: not-allowed;
 }
 
-.c17,
-.c17[type='button'],
-.c17[type='reset'],
-.c17[type='submit'] {
+.c14,
+.c14[type='button'],
+.c14[type='reset'],
+.c14[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c17::-moz-focus-inner,
-.c17[type='button']::-moz-focus-inner,
-.c17[type='reset']::-moz-focus-inner,
-.c17[type='submit']::-moz-focus-inner {
+.c14::-moz-focus-inner,
+.c14[type='button']::-moz-focus-inner,
+.c14[type='reset']::-moz-focus-inner,
+.c14[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c17:-moz-focusring,
-.c17[type='button']:-moz-focusring,
-.c17[type='reset']:-moz-focusring,
-.c17[type='submit']:-moz-focusring {
+.c14:-moz-focusring,
+.c14[type='button']:-moz-focusring,
+.c14[type='reset']:-moz-focusring,
+.c14[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c24 {
+.c21 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1366,45 +1323,45 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   cursor: pointer;
 }
 
-.c24,
-.c24[type='button'],
-.c24[type='reset'],
-.c24[type='submit'] {
+.c21,
+.c21[type='button'],
+.c21[type='reset'],
+.c21[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c24::-moz-focus-inner,
-.c24[type='button']::-moz-focus-inner,
-.c24[type='reset']::-moz-focus-inner,
-.c24[type='submit']::-moz-focus-inner {
+.c21::-moz-focus-inner,
+.c21[type='button']::-moz-focus-inner,
+.c21[type='reset']::-moz-focus-inner,
+.c21[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c24:-moz-focusring,
-.c24[type='button']:-moz-focusring,
-.c24[type='reset']:-moz-focusring,
-.c24[type='submit']:-moz-focusring {
+.c21:-moz-focusring,
+.c21[type='button']:-moz-focusring,
+.c21[type='reset']:-moz-focusring,
+.c21[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c10 {
+.c7 {
   width: inherit;
 }
 
-.c14 {
+.c11 {
   overflow: hidden;
 }
 
-.c18:focus {
+.c15:focus {
   outline: none;
 }
 
-.c31 {
+.c28 {
   background: #FFFFFF;
 }
 
-.c5 {
+.c2 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 8px;
@@ -1416,15 +1373,15 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   margin-left: 0;
 }
 
-.c5 > *:first-child {
+.c2 > *:first-child {
   padding-left: 0;
 }
 
-.c5 > *:last-child {
+.c2 > *:last-child {
   padding-right: 0;
 }
 
-.c13 {
+.c10 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 8px;
@@ -1436,19 +1393,19 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   margin-left: 0;
 }
 
-.c13:hover {
+.c10:hover {
   background: #F5F5F5;
 }
 
-.c13 > *:first-child {
+.c10 > *:first-child {
   padding-left: 0;
 }
 
-.c13 > *:last-child {
+.c10 > *:last-child {
   padding-right: 0;
 }
 
-.c27 {
+.c24 {
   background: #FFFFFF;
   padding-right: 8px;
   padding-left: 6px;
@@ -1459,20 +1416,20 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   margin-left: 0;
 }
 
-.c27 > *:first-child {
+.c24 > *:first-child {
   padding-left: 0;
 }
 
-.c27 > *:last-child {
+.c24 > *:last-child {
   padding-right: 0;
 }
 
-.c29 {
+.c26 {
   border-left: 2px solid #0046FF;
   border-bottom: 1px solid #EBEBE8;
 }
 
-.c6 {
+.c3 {
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
@@ -1480,7 +1437,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   border-bottom: 1px solid #282823;
 }
 
-.c8 {
+.c5 {
   overflow: hidden;
 }
 
@@ -1488,19 +1445,8 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   position: relative;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c3 {
-  padding-left: 4px;
-}
-
 @media (min-width:976px) {
-  .c30 {
+  .c27 {
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
@@ -1509,21 +1455,14 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
 }
 
 @media not all and (max-width:975px) {
-  .c16 {
+  .c13 {
     display: none;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c21 {
+  .c18 {
     display: none;
-  }
-}
-
-@media (min-width:760px) {
-  .c2 {
-    font-size: 20px;
-    line-height: 1.2;
   }
 }
 
@@ -1531,138 +1470,131 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   className="c0"
   role="table"
 >
-  <caption
-    className="c1"
-  >
-    <span
-      className="c2 c3"
-    />
-  </caption>
   <div
-    className="c4 c5 c6"
+    className="c1 c2 c3"
     role="row"
   >
     <div
-      className="c7 c8"
+      className="c4 c5"
       role="columnheader"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c11"
+          className="c8"
         >
           Header 1
         </span>
       </div>
     </div>
     <div
-      className="c7 c8"
+      className="c4 c5"
       role="columnheader"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c11"
+          className="c8"
         >
           Header 2
         </span>
       </div>
     </div>
     <div
-      className="c7 c8"
+      className="c4 c5"
       role="columnheader"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c11"
+          className="c8"
         >
           Header 3
         </span>
       </div>
     </div>
     <div
-      className="c12 c8"
+      className="c9 c5"
       role="columnheader"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c11"
+          className="c8"
         />
       </div>
     </div>
   </div>
   <div
-    className="c4 c13"
+    className="c1 c10"
     role="row"
   >
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Disabled
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Disabled
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Disabled
         </span>
       </div>
     </div>
     <div
-      className="c12 c14"
+      className="c9 c11"
       role="cell"
     >
       <div
-        className="c16"
+        className="c13"
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c17 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c14 c15"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c20"
+              className="c17"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -1676,21 +1608,21 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
         </button>
       </div>
       <div
-        className="c21"
+        className="c18"
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c17 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c14 c15"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c22 c23"
+              className="c19 c20"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -1707,71 +1639,71 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
     </div>
   </div>
   <div
-    className="c4 c13"
+    className="c1 c10"
     role="row"
   >
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable
         </span>
       </div>
     </div>
     <div
-      className="c12 c14"
+      className="c9 c11"
       role="cell"
     >
       <div
-        className="c16"
+        className="c13"
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c15"
           disabled={false}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c25"
+              className="c22"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -1785,21 +1717,21 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
         </button>
       </div>
       <div
-        className="c21"
+        className="c18"
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c15"
           disabled={false}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c26 c23"
+              className="c23 c20"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -1816,71 +1748,71 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
     </div>
   </div>
   <div
-    className="c4 c27"
+    className="c1 c24"
     role="row"
   >
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable with initial state
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable with initial state
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable with initial state
         </span>
       </div>
     </div>
     <div
-      className="c12 c14"
+      className="c9 c11"
       role="cell"
     >
       <div
-        className="c16"
+        className="c13"
       >
         <button
           aria-expanded={true}
-          className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c15"
           disabled={false}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c25"
+              className="c22"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -1895,21 +1827,21 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
         </button>
       </div>
       <div
-        className="c21"
+        className="c18"
       >
         <button
           aria-expanded={true}
-          className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c15"
           disabled={false}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c26 c28"
+              className="c23 c25"
               direction="up"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -1926,95 +1858,95 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
     </div>
   </div>
   <div
-    className="c29"
+    className="c26"
     role="row"
   >
     <div
-      className="c30 c31"
+      className="c27 c28"
       role="cell"
     >
       <div
-        className="c16"
+        className="c13"
       >
         <ul
-          className="c32"
+          className="c29"
         />
       </div>
       <div
-        className="c21"
+        className="c18"
       >
         <ul
-          className="c32 c33"
+          className="c29 c30"
         />
       </div>
     </div>
   </div>
   <div
-    className="c4 c13"
+    className="c1 c10"
     role="row"
   >
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable component items
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable component items
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable component items
         </span>
       </div>
     </div>
     <div
-      className="c12 c14"
+      className="c9 c11"
       role="cell"
     >
       <div
-        className="c16"
+        className="c13"
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c15"
           disabled={false}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c25"
+              className="c22"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -2028,21 +1960,21 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
         </button>
       </div>
       <div
-        className="c21"
+        className="c18"
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c15"
           disabled={false}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c26 c23"
+              className="c23 c20"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -2059,71 +1991,71 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
     </div>
   </div>
   <div
-    className="c4 c13"
+    className="c1 c10"
     role="row"
   >
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable with children
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable with children
         </span>
       </div>
     </div>
     <div
-      className="c7 c14"
+      className="c4 c11"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c15"
+          className="c12"
         >
           Expandable with children
         </span>
       </div>
     </div>
     <div
-      className="c12 c14"
+      className="c9 c11"
       role="cell"
     >
       <div
-        className="c16"
+        className="c13"
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c15"
           disabled={false}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c25"
+              className="c22"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -2137,21 +2069,21 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
         </button>
       </div>
       <div
-        className="c21"
+        className="c18"
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c15"
           disabled={false}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c19"
+            className="c16"
           >
             <svg
               aria-hidden="true"
-              className="c26 c23"
+              className="c23 c20"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -2171,13 +2103,13 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
 `;
 
 exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 1`] = `
-.c30 {
+.c27 {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 8px;
 }
 
-.c4 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2191,16 +2123,16 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   margin-right: -4px;
 }
 
-.c4 > * {
+.c1 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c4 > *:not(:first-child) {
+.c1 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c7 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2214,7 +2146,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   flex: 1;
 }
 
-.c12 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2232,7 +2164,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   flex: 0 20px;
 }
 
-.c33 {
+.c30 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2245,22 +2177,36 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   margin-right: -20px;
 }
 
-.c33 > * {
+.c30 > * {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.c33 > *:not(:first-child) {
+.c30 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c20 {
+.c17 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   width: 8px;
   height: 8px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c19 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
   fill: #A0A09B;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -2273,20 +2219,6 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #A0A09B;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c25 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   width: 8px;
   height: 8px;
   fill: #282823;
@@ -2296,7 +2228,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   display: block;
 }
 
-.c26 {
+.c23 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2310,34 +2242,25 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   display: block;
 }
 
-.c23 {
+.c20 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c28 {
+.c25 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.c32 {
+.c29 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c11 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -2346,7 +2269,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2355,7 +2278,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   line-height: 1.4285714285714286;
 }
 
-.c19 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2364,7 +2287,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c6 {
   display: inline-block;
   width: 100%;
   text-overflow: ellipsis;
@@ -2372,7 +2295,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   overflow: hidden;
 }
 
-.c17 {
+.c14 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2401,29 +2324,29 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   cursor: not-allowed;
 }
 
-.c17,
-.c17[type='button'],
-.c17[type='reset'],
-.c17[type='submit'] {
+.c14,
+.c14[type='button'],
+.c14[type='reset'],
+.c14[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c17::-moz-focus-inner,
-.c17[type='button']::-moz-focus-inner,
-.c17[type='reset']::-moz-focus-inner,
-.c17[type='submit']::-moz-focus-inner {
+.c14::-moz-focus-inner,
+.c14[type='button']::-moz-focus-inner,
+.c14[type='reset']::-moz-focus-inner,
+.c14[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c17:-moz-focusring,
-.c17[type='button']:-moz-focusring,
-.c17[type='reset']:-moz-focusring,
-.c17[type='submit']:-moz-focusring {
+.c14:-moz-focusring,
+.c14[type='button']:-moz-focusring,
+.c14[type='reset']:-moz-focusring,
+.c14[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c24 {
+.c21 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2452,45 +2375,45 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   cursor: pointer;
 }
 
-.c24,
-.c24[type='button'],
-.c24[type='reset'],
-.c24[type='submit'] {
+.c21,
+.c21[type='button'],
+.c21[type='reset'],
+.c21[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c24::-moz-focus-inner,
-.c24[type='button']::-moz-focus-inner,
-.c24[type='reset']::-moz-focus-inner,
-.c24[type='submit']::-moz-focus-inner {
+.c21::-moz-focus-inner,
+.c21[type='button']::-moz-focus-inner,
+.c21[type='reset']::-moz-focus-inner,
+.c21[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c24:-moz-focusring,
-.c24[type='button']:-moz-focusring,
-.c24[type='reset']:-moz-focusring,
-.c24[type='submit']:-moz-focusring {
+.c21:-moz-focusring,
+.c21[type='button']:-moz-focusring,
+.c21[type='reset']:-moz-focusring,
+.c21[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c10 {
+.c7 {
   width: inherit;
 }
 
-.c14 {
+.c11 {
   overflow: hidden;
 }
 
-.c18:focus {
+.c15:focus {
   outline: none;
 }
 
-.c31 {
+.c28 {
   background: #FFFFFF;
 }
 
-.c5 {
+.c2 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 8px;
@@ -2502,15 +2425,15 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   margin-left: 0;
 }
 
-.c5 > *:first-child {
+.c2 > *:first-child {
   padding-left: 0;
 }
 
-.c5 > *:last-child {
+.c2 > *:last-child {
   padding-right: 0;
 }
 
-.c13 {
+.c10 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 8px;
@@ -2522,19 +2445,19 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   margin-left: 0;
 }
 
-.c13:hover {
+.c10:hover {
   background: #F5F5F5;
 }
 
-.c13 > *:first-child {
+.c10 > *:first-child {
   padding-left: 0;
 }
 
-.c13 > *:last-child {
+.c10 > *:last-child {
   padding-right: 0;
 }
 
-.c27 {
+.c24 {
   background: #FFFFFF;
   padding-right: 8px;
   padding-left: 6px;
@@ -2545,20 +2468,20 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   margin-left: 0;
 }
 
-.c27 > *:first-child {
+.c24 > *:first-child {
   padding-left: 0;
 }
 
-.c27 > *:last-child {
+.c24 > *:last-child {
   padding-right: 0;
 }
 
-.c29 {
+.c26 {
   border-left: 2px solid #0046FF;
   border-bottom: 1px solid #EBEBE8;
 }
 
-.c6 {
+.c3 {
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
@@ -2566,7 +2489,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   border-bottom: 1px solid #282823;
 }
 
-.c8 {
+.c5 {
   overflow: hidden;
 }
 
@@ -2574,19 +2497,8 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   position: relative;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c3 {
-  padding-left: 4px;
-}
-
 @media (min-width:976px) {
-  .c30 {
+  .c27 {
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
@@ -2595,21 +2507,14 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
 }
 
 @media not all and (max-width:975px) {
-  .c16 {
+  .c13 {
     display: none;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c21 {
+  .c18 {
     display: none;
-  }
-}
-
-@media (min-width:760px) {
-  .c2 {
-    font-size: 20px;
-    line-height: 1.2;
   }
 }
 
@@ -2618,138 +2523,131 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
     className="c0"
     role="table"
   >
-    <caption
-      className="c1"
-    >
-      <span
-        className="c2 c3"
-      />
-    </caption>
     <div
-      className="c4 c5 c6"
+      className="c1 c2 c3"
       role="row"
     >
       <div
-        className="c7 c8"
+        className="c4 c5"
         role="columnheader"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c11"
+            className="c8"
           >
             Header 1
           </span>
         </div>
       </div>
       <div
-        className="c7 c8"
+        className="c4 c5"
         role="columnheader"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c11"
+            className="c8"
           >
             Header 2
           </span>
         </div>
       </div>
       <div
-        className="c7 c8"
+        className="c4 c5"
         role="columnheader"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c11"
+            className="c8"
           >
             Header 3
           </span>
         </div>
       </div>
       <div
-        className="c12 c8"
+        className="c9 c5"
         role="columnheader"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c11"
+            className="c8"
           />
         </div>
       </div>
     </div>
     <div
-      className="c4 c13"
+      className="c1 c10"
       role="row"
     >
       <div
-        className="c7 c14"
+        className="c4 c11"
         role="cell"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c15"
+            className="c12"
           >
             Disabled
           </span>
         </div>
       </div>
       <div
-        className="c7 c14"
+        className="c4 c11"
         role="cell"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c15"
+            className="c12"
           >
             Disabled
           </span>
         </div>
       </div>
       <div
-        className="c7 c14"
+        className="c4 c11"
         role="cell"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c15"
+            className="c12"
           >
             Disabled
           </span>
         </div>
       </div>
       <div
-        className="c12 c14"
+        className="c9 c11"
         role="cell"
       >
         <div
-          className="c16"
+          className="c13"
         >
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c17 c18"
+            className="NormalizedButton__Button-ey7f5x-0 c14 c15"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c19"
+              className="c16"
             >
               <svg
                 aria-hidden="true"
-                className="c20"
+                className="c17"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -2763,21 +2661,21 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
           </button>
         </div>
         <div
-          className="c21"
+          className="c18"
         >
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c17 c18"
+            className="NormalizedButton__Button-ey7f5x-0 c14 c15"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c19"
+              className="c16"
             >
               <svg
                 aria-hidden="true"
-                className="c22 c23"
+                className="c19 c20"
                 direction="down"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -2794,71 +2692,71 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
       </div>
     </div>
     <div
-      className="c4 c13"
+      className="c1 c10"
       role="row"
     >
       <div
-        className="c7 c14"
+        className="c4 c11"
         role="cell"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c15"
+            className="c12"
           >
             Expandable
           </span>
         </div>
       </div>
       <div
-        className="c7 c14"
+        className="c4 c11"
         role="cell"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c15"
+            className="c12"
           >
             Expandable
           </span>
         </div>
       </div>
       <div
-        className="c7 c14"
+        className="c4 c11"
         role="cell"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c15"
+            className="c12"
           >
             Expandable
           </span>
         </div>
       </div>
       <div
-        className="c12 c14"
+        className="c9 c11"
         role="cell"
       >
         <div
-          className="c16"
+          className="c13"
         >
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+            className="NormalizedButton__Button-ey7f5x-0 c21 c15"
             disabled={false}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c19"
+              className="c16"
             >
               <svg
                 aria-hidden="true"
-                className="c25"
+                className="c22"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -2872,21 +2770,21 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
           </button>
         </div>
         <div
-          className="c21"
+          className="c18"
         >
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+            className="NormalizedButton__Button-ey7f5x-0 c21 c15"
             disabled={false}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c19"
+              className="c16"
             >
               <svg
                 aria-hidden="true"
-                className="c26 c23"
+                className="c23 c20"
                 direction="down"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -2903,71 +2801,71 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
       </div>
     </div>
     <div
-      className="c4 c27"
+      className="c1 c24"
       role="row"
     >
       <div
-        className="c7 c14"
+        className="c4 c11"
         role="cell"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c15"
+            className="c12"
           >
             Expandable with initial state
           </span>
         </div>
       </div>
       <div
-        className="c7 c14"
+        className="c4 c11"
         role="cell"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c15"
+            className="c12"
           >
             Expandable with initial state
           </span>
         </div>
       </div>
       <div
-        className="c7 c14"
+        className="c4 c11"
         role="cell"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c15"
+            className="c12"
           >
             Expandable with initial state
           </span>
         </div>
       </div>
       <div
-        className="c12 c14"
+        className="c9 c11"
         role="cell"
       >
         <div
-          className="c16"
+          className="c13"
         >
           <button
             aria-expanded={true}
-            className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+            className="NormalizedButton__Button-ey7f5x-0 c21 c15"
             disabled={false}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c19"
+              className="c16"
             >
               <svg
                 aria-hidden="true"
-                className="c25"
+                className="c22"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -2982,21 +2880,21 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
           </button>
         </div>
         <div
-          className="c21"
+          className="c18"
         >
           <button
             aria-expanded={true}
-            className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+            className="NormalizedButton__Button-ey7f5x-0 c21 c15"
             disabled={false}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c19"
+              className="c16"
             >
               <svg
                 aria-hidden="true"
-                className="c26 c28"
+                className="c23 c25"
                 direction="up"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -3013,95 +2911,95 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
       </div>
     </div>
     <div
-      className="c29"
+      className="c26"
       role="row"
     >
       <div
-        className="c30 c31"
+        className="c27 c28"
         role="cell"
       >
         <div
-          className="c16"
+          className="c13"
         >
           <ul
-            className="c32"
+            className="c29"
           />
         </div>
         <div
-          className="c21"
+          className="c18"
         >
           <ul
-            className="c32 c33"
+            className="c29 c30"
           />
         </div>
       </div>
     </div>
     <div
-      className="c4 c13"
+      className="c1 c10"
       role="row"
     >
       <div
-        className="c7 c14"
+        className="c4 c11"
         role="cell"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c15"
+            className="c12"
           >
             Expandable component items
           </span>
         </div>
       </div>
       <div
-        className="c7 c14"
+        className="c4 c11"
         role="cell"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c15"
+            className="c12"
           >
             Expandable component items
           </span>
         </div>
       </div>
       <div
-        className="c7 c14"
+        className="c4 c11"
         role="cell"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c15"
+            className="c12"
           >
             Expandable component items
           </span>
         </div>
       </div>
       <div
-        className="c12 c14"
+        className="c9 c11"
         role="cell"
       >
         <div
-          className="c16"
+          className="c13"
         >
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+            className="NormalizedButton__Button-ey7f5x-0 c21 c15"
             disabled={false}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c19"
+              className="c16"
             >
               <svg
                 aria-hidden="true"
-                className="c25"
+                className="c22"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -3115,21 +3013,21 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
           </button>
         </div>
         <div
-          className="c21"
+          className="c18"
         >
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+            className="NormalizedButton__Button-ey7f5x-0 c21 c15"
             disabled={false}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c19"
+              className="c16"
             >
               <svg
                 aria-hidden="true"
-                className="c26 c23"
+                className="c23 c20"
                 direction="down"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -3146,71 +3044,71 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
       </div>
     </div>
     <div
-      className="c4 c13"
+      className="c1 c10"
       role="row"
     >
       <div
-        className="c7 c14"
+        className="c4 c11"
         role="cell"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c15"
+            className="c12"
           >
             Expandable with children
           </span>
         </div>
       </div>
       <div
-        className="c7 c14"
+        className="c4 c11"
         role="cell"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c15"
+            className="c12"
           >
             Expandable with children
           </span>
         </div>
       </div>
       <div
-        className="c7 c14"
+        className="c4 c11"
         role="cell"
       >
         <div
-          className="c9 c10"
+          className="c6 c7"
         >
           <span
-            className="c15"
+            className="c12"
           >
             Expandable with children
           </span>
         </div>
       </div>
       <div
-        className="c12 c14"
+        className="c9 c11"
         role="cell"
       >
         <div
-          className="c16"
+          className="c13"
         >
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+            className="NormalizedButton__Button-ey7f5x-0 c21 c15"
             disabled={false}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c19"
+              className="c16"
             >
               <svg
                 aria-hidden="true"
-                className="c25"
+                className="c22"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -3224,21 +3122,21 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
           </button>
         </div>
         <div
-          className="c21"
+          className="c18"
         >
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c24 c18"
+            className="NormalizedButton__Button-ey7f5x-0 c21 c15"
             disabled={false}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c19"
+              className="c16"
             >
               <svg
                 aria-hidden="true"
-                className="c26 c23"
+                className="c23 c20"
                 direction="down"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -3259,13 +3157,13 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
 `;
 
 exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table Different Font Size On Mobile 1`] = `
-.c5 {
+.c2 {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 8px;
 }
 
-.c10 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3278,35 +3176,26 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   margin-right: -20px;
 }
 
-.c10 > * {
+.c7 > * {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.c10 > *:not(:first-child) {
+.c7 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c8 {
+.c5 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c6 {
+.c3 {
   background: #FFFFFF;
 }
 
-.c4 {
+.c1 {
   border-left: 2px solid #0046FF;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -3315,19 +3204,8 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   position: relative;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c3 {
-  padding-left: 4px;
-}
-
 @media (min-width:976px) {
-  .c5 {
+  .c2 {
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
@@ -3336,21 +3214,14 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
 }
 
 @media not all and (max-width:975px) {
-  .c7 {
+  .c4 {
     display: none;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c9 {
+  .c6 {
     display: none;
-  }
-}
-
-@media (min-width:760px) {
-  .c2 {
-    font-size: 20px;
-    line-height: 1.2;
   }
 }
 
@@ -3358,33 +3229,26 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   className="c0"
   role="table"
 >
-  <caption
-    className="c1"
-  >
-    <span
-      className="c2 c3"
-    />
-  </caption>
   <div
-    className="c4"
+    className="c1"
     role="row"
   >
     <div
-      className="c5 c6"
+      className="c2 c3"
       role="cell"
     >
       <div
-        className="c7"
+        className="c4"
       >
         <ul
-          className="c8"
+          className="c5"
         />
       </div>
       <div
-        className="c9"
+        className="c6"
       >
         <ul
-          className="c8 c10"
+          className="c5 c7"
         />
       </div>
     </div>
@@ -3393,47 +3257,12 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
 `;
 
 exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Only Expandable On Mobile Table 1`] = `
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
 .c0 {
   position: relative;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c3 {
-  padding-left: 4px;
-}
-
-@media (min-width:760px) {
-  .c2 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
 }
 
 <div
   className="c0"
   role="table"
->
-  <caption
-    className="c1"
-  >
-    <span
-      className="c2 c3"
-    />
-  </caption>
-</div>
+/>
 `;

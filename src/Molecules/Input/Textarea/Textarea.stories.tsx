@@ -51,7 +51,7 @@ export const errorIfEmptyText = () => {
       <Input.Textarea
         label="My awesome text field"
         placeholder="This is a placeholder"
-        onChange={e => setValue(e.target.value)}
+        onChange={(e) => setValue(e.target.value)}
         {...(value === '' ? { error: 'Something went wrong' } : {})}
       />
     );
@@ -145,7 +145,7 @@ export const extraInfoWithError = () => {
         label="My awesome text field"
         placeholder="This is a placeholder"
         extraInfo="Use wisely this space"
-        onChange={e => setValue(e.target.value)}
+        onChange={(e) => setValue(e.target.value)}
         {...(value === '' ? { error: 'Enter text' } : {})}
       />
     );
@@ -218,4 +218,21 @@ export const withLabelTooltip = () => (
 
 withLabelTooltip.story = {
   name: 'With tooltip as label addon',
+};
+
+export const withLabelTooltipPositionTop = () => (
+  <>
+    <br />
+    <br />
+    <Input.Textarea
+      label="Label"
+      labelTooltip="Tooltip content"
+      labelTooltipPosition="top"
+      placeholder="Placeholder"
+    />
+  </>
+);
+
+withLabelTooltipPositionTop.story = {
+  name: 'With tooltip (position top) as label addon',
 };

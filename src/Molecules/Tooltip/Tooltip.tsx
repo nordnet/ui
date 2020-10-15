@@ -15,14 +15,14 @@ const CleanTooltipPopup = React.forwardRef<HTMLDivElement, any>(
 );
 
 const StyledTooltip = styled(CleanTooltipPopup)`
-  z-index: ${p => (p.inModal ? p.theme.zIndex.overlayInModal : p.theme.zIndex.overlay)};
+  z-index: ${(p) => (p.inModal ? p.theme.zIndex.overlayInModal : p.theme.zIndex.overlay)};
   pointer-events: none;
   position: absolute;
-  padding: ${p => p.theme.spacing.unit(1)}px ${p => p.theme.spacing.unit(2)}px;
-  box-shadow: 0 10px 16px ${p => p.theme.color.shadowModal};
-  background: ${p => p.theme.color.bubbleBackground};
-  border: solid ${BORDER_SIZE}px ${p => p.theme.color.bubbleBorder};
-  max-width: 200px;
+  padding: ${(p) => p.theme.spacing.unit(1)}px ${(p) => p.theme.spacing.unit(2)}px;
+  box-shadow: 0 10px 16px ${(p) => p.theme.color.shadowModal};
+  background: ${(p) => p.theme.color.bubbleBackground};
+  border: solid ${BORDER_SIZE}px ${(p) => p.theme.color.bubbleBorder};
+  max-width: ${(p) => p.theme.spacing.unit(p.maxWidth)}px;
 `;
 
 const positionOver: Position = (triggerRect, tooltipRect) => {
@@ -89,6 +89,7 @@ export const Tooltip: TooltipComponent = ({
   ariaLabel,
   position = 'bottom',
   inModal,
+  maxWidth = 50,
 }) => {
   const [trigger, tooltip] = useTooltip();
   const { isVisible, triggerRect } = tooltip;
@@ -107,6 +108,7 @@ export const Tooltip: TooltipComponent = ({
         aria-label={ariaLabel}
         position={tooltipPosition}
         inModal={inModal}
+        maxWidth={maxWidth}
       />
     </>
   );

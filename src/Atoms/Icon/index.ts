@@ -91,6 +91,7 @@ import { SortArrow } from './components/SortArrow';
 import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
 import { StarOutline } from './components/StarOutline';
+import { Tax } from './components/Tax';
 import { Technology } from './components/Technology';
 import { ThinArrow } from './components/ThinArrow';
 import { ThinChevron } from './components/ThinChevron';
@@ -193,6 +194,7 @@ export default {
   Star,
   Star24,
   StarOutline,
+  Tax,
   Technology,
   ThinArrow,
   ThinChevron,

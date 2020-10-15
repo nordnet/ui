@@ -36,18 +36,10 @@ spinnerBig.story = {
   name: 'Spinner big',
 };
 
-export const spinnerWithDefaultDelay = () => <Spinner size={16} id="mySpinner" delay />;
+export const spinnerWithoutDefaultDelay = () => <Spinner size={16} id="mySpinner" delay={false} />;
 
-spinnerWithDefaultDelay.story = {
-  name: 'Spinner with default delay',
-};
-
-export const spinnerWithDelayIsSetToFalse = () => (
-  <Spinner size={16} id="mySpinner" delay={false} />
-);
-
-spinnerWithDelayIsSetToFalse.story = {
-  name: 'Spinner with delay is set to false',
+spinnerWithoutDefaultDelay.story = {
+  name: 'Spinner without default delay',
 };
 
 export const spinnerWithCustom2SecDelay = () => <Spinner size={16} id="mySpinner" delay={2000} />;
@@ -62,23 +54,23 @@ export const colors = () => (
       { title: 'Default', component: <Spinner id="defaultSpinner" /> },
       {
         title: 'Color: text',
-        component: <Spinner color={t => t.color.text} id="defaultSpinnerText" />,
+        component: <Spinner color={(t) => t.color.text} id="defaultSpinnerText" />,
       },
       {
         title: 'Color: positive',
-        component: <Spinner color={t => t.color.positive} id="defaultSpinnerPositive" />,
+        component: <Spinner color={(t) => t.color.positive} id="defaultSpinnerPositive" />,
       },
       {
         title: 'Color: negative',
-        component: <Spinner color={t => t.color.negative} id="defaultSpinnerNegative" />,
+        component: <Spinner color={(t) => t.color.negative} id="defaultSpinnerNegative" />,
       },
       {
         title: 'Color: warning',
-        component: <Spinner color={t => t.color.warning} id="defaultSpinnerWarning" />,
+        component: <Spinner color={(t) => t.color.warning} id="defaultSpinnerWarning" />,
       },
       {
         title: 'Color: label',
-        component: <Spinner color={t => t.color.label} id="defaultSpinnerLabel" />,
+        component: <Spinner color={(t) => t.color.label} id="defaultSpinnerLabel" />,
       },
     ]}
   />

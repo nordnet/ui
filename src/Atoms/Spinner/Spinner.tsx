@@ -15,7 +15,7 @@ const Animation = styled.span`
     }
   }
   display: inline-block;
-  animation: spinner 1s linear infinite;
+  animation: spinner 0.6s linear infinite;
 `;
 
 const StyledSvg = styled.svg`
@@ -33,6 +33,14 @@ const evalColor = (theme: Theme, color?: ColorFn): string => {
   }
 
   return color || theme.color.cta;
+};
+
+const getDelay = (delay?: boolean | number) => {
+  if (typeof delay === 'number') {
+    return delay;
+  }
+
+  return delay === false ? 0 : 1000;
 };
 
 const RawSpinner: React.FC<PropsWithTheme> = ({ theme, size = 4, color, id }) => {
@@ -72,17 +80,15 @@ const RawSpinner: React.FC<PropsWithTheme> = ({ theme, size = 4, color, id }) =>
 
 const TimeoutSpinner: React.FC<PropsWithTheme> = ({ delay, ...restProps }) => {
   const [spinning, setSpinning] = useState(false);
+  const noDelay = delay === 0 || delay === false;
   useEffect(() => {
-    const timer = setTimeout(
-      () => {
-        setSpinning(true);
-      },
-      typeof delay === 'boolean' ? 270 : delay || 0,
-    );
+    const timer = setTimeout(() => {
+      setSpinning(true);
+    }, getDelay(delay));
     return () => clearTimeout(timer);
   }, []);
 
-  if (!delay || spinning) {
+  if (noDelay || spinning) {
     return <RawSpinner {...restProps} />;
   }
 

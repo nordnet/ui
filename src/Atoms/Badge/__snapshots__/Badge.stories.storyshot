@@ -1,0 +1,1462 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms | Badge A 11 Y Badge Use Cases 1`] = `
+Array [
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c0 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<span
+    className="c0"
+  >
+    Badge with aria-label
+  </span>,
+  .c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0046FF;
+  border-radius: 20px;
+  text-align: center;
+  height: 20px;
+  min-width: 20px;
+  box-sizing: border-box;
+  padding: 0 6px;
+}
+
+.c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Orders 
+      <span
+        aria-label="7 new orders"
+        className="c2"
+        size={5}
+      >
+        <span
+          className="c3"
+        >
+          7
+        </span>
+      </span>
+    </span>
+  </div>,
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c0 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<span
+    className="c0"
+  >
+    Badge without aria-label
+  </span>,
+  .c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0046FF;
+  border-radius: 20px;
+  text-align: center;
+  height: 20px;
+  min-width: 20px;
+  box-sizing: border-box;
+  padding: 0 6px;
+}
+
+.c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Orders 
+      <span
+        className="c2"
+        size={5}
+      >
+        <span
+          className="c3"
+        >
+          7
+        </span>
+      </span>
+    </span>
+  </div>,
+]
+`;
+
+exports[`Storyshots Atoms | Badge Badge With Number Limit 1`] = `
+Array [
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c0 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<span
+    className="c0"
+  >
+    Number With Limit
+  </span>,
+  .c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0046FF;
+  border-radius: 20px;
+  text-align: center;
+  height: 20px;
+  min-width: 20px;
+  box-sizing: border-box;
+  padding: 0 6px;
+}
+
+.c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+      size={5}
+    >
+      <span
+        className="c2"
+      >
+        99+
+      </span>
+    </span>
+  </div>,
+]
+`;
+
+exports[`Storyshots Atoms | Badge Common Badge Use Cases 1`] = `
+Array [
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c0 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<span
+    className="c0"
+  >
+    Text with numbered badge
+  </span>,
+  .c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0046FF;
+  border-radius: 20px;
+  text-align: center;
+  height: 20px;
+  min-width: 20px;
+  box-sizing: border-box;
+  padding: 0 6px;
+}
+
+.c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Orders 
+      <span
+        className="c2"
+        size={5}
+      >
+        <span
+          className="c3"
+        >
+          7
+        </span>
+      </span>
+    </span>
+  </div>,
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c0 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<span
+    className="c0"
+  >
+    Text with small badge
+  </span>,
+  .c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0046FF;
+  border-radius: 8px;
+  text-align: center;
+  height: 8px;
+  min-width: 8px;
+  box-sizing: border-box;
+}
+
+.c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      <span
+        className="c2"
+        size={2}
+      />
+       
+      Buy order
+    </span>
+  </div>,
+  .c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FF1900;
+  border-radius: 8px;
+  text-align: center;
+  height: 8px;
+  min-width: 8px;
+  box-sizing: border-box;
+}
+
+.c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      <span
+        className="c2"
+        size={2}
+      />
+       
+      Sell order
+    </span>
+  </div>,
+  .c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #A0A09B;
+  border-radius: 8px;
+  text-align: center;
+  height: 8px;
+  min-width: 8px;
+  box-sizing: border-box;
+}
+
+.c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      <span
+        className="c2"
+        size={2}
+      />
+       
+      Exchange order
+    </span>
+  </div>,
+]
+`;
+
+exports[`Storyshots Atoms | Badge Common Badges 1`] = `
+Array [
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+@media (min-width:760px) {
+  .c0 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+<span
+    className="c0"
+  >
+    Badge component
+  </span>,
+  .c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0046FF;
+  border-radius: 20px;
+  text-align: center;
+  height: 20px;
+  min-width: 20px;
+  box-sizing: border-box;
+  padding: 0 6px;
+}
+
+.c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Default Badge
+    </span>
+    <div
+      className="c0"
+    >
+      <span
+        className="c2"
+        size={5}
+      >
+        <span
+          className="c3"
+        >
+          1
+        </span>
+      </span>
+    </div>
+  </div>,
+  .c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0046FF;
+  border-radius: 8px;
+  text-align: center;
+  height: 8px;
+  min-width: 8px;
+  box-sizing: border-box;
+}
+
+.c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Default empty Badge
+    </span>
+    <div
+      className="c0"
+    >
+      <span
+        className="c2"
+        size={2}
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #00D200;
+  border-radius: 20px;
+  text-align: center;
+  height: 20px;
+  min-width: 20px;
+  box-sizing: border-box;
+  padding: 0 6px;
+}
+
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FF1900;
+  border-radius: 20px;
+  text-align: center;
+  height: 20px;
+  min-width: 20px;
+  box-sizing: border-box;
+  padding: 0 6px;
+}
+
+.c6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #A0A09B;
+  border-radius: 20px;
+  text-align: center;
+  height: 20px;
+  min-width: 20px;
+  box-sizing: border-box;
+  padding: 0 6px;
+}
+
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #00D200;
+  border-radius: 8px;
+  text-align: center;
+  height: 8px;
+  min-width: 8px;
+  box-sizing: border-box;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FF1900;
+  border-radius: 8px;
+  text-align: center;
+  height: 8px;
+  min-width: 8px;
+  box-sizing: border-box;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #A0A09B;
+  border-radius: 8px;
+  text-align: center;
+  height: 8px;
+  min-width: 8px;
+  box-sizing: border-box;
+}
+
+.c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c2 {
+  margin-bottom: 4px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Custom background colors
+    </span>
+    <div
+      className="c0"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+          size={5}
+        >
+          <span
+            className="c4"
+          >
+            2
+          </span>
+        </span>
+      </div>
+      <div
+        className="c2"
+      >
+        <span
+          className="c5"
+          size={5}
+        >
+          <span
+            className="c4"
+          >
+            3
+          </span>
+        </span>
+      </div>
+      <div
+        className="c2"
+      >
+        <span
+          className="c6"
+          size={5}
+        >
+          <span
+            className="c4"
+          >
+            4
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      className="c0"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="c7"
+          size={2}
+        />
+      </div>
+      <div
+        className="c2"
+      >
+        <span
+          className="c8"
+          size={2}
+        />
+      </div>
+      <div
+        className="c2"
+      >
+        <span
+          className="c9"
+          size={2}
+        />
+      </div>
+    </div>
+  </div>,
+  .c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0046FF;
+  border-radius: 20px;
+  text-align: center;
+  height: 20px;
+  min-width: 20px;
+  box-sizing: border-box;
+  padding: 0 6px;
+}
+
+.c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFCF00;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Custom text color
+    </span>
+    <div
+      className=""
+    >
+      <span
+        className="c2"
+        size={5}
+      >
+        <span
+          className="c3"
+        >
+          5
+        </span>
+      </span>
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0046FF;
+  border-radius: 20px;
+  text-align: center;
+  height: 20px;
+  min-width: 20px;
+  box-sizing: border-box;
+  padding: 0 6px;
+}
+
+.c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c2 {
+  margin-bottom: 4px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Badge with large number
+    </span>
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+        size={5}
+      >
+        <span
+          className="c4"
+        >
+          99
+        </span>
+      </span>
+    </div>
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+        size={5}
+      >
+        <span
+          className="c4"
+        >
+          999
+        </span>
+      </span>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Atoms | Badge Function As Child 1`] = `
+Array [
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c0 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<span
+    className="c0"
+  >
+    Function as child
+  </span>,
+  .c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0046FF;
+  border-radius: 20px;
+  text-align: center;
+  height: 20px;
+  min-width: 20px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  padding: 0 6px;
+}
+
+.c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+      color={[Function]}
+      size={5}
+    >
+      <span
+        className="c2"
+      >
+        9%
+      </span>
+    </span>
+  </div>,
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+@media (min-width:760px) {
+
+}
+
+<p
+    className="c0"
+  >
+    * Observe, up to developer to set child function font (family, size, etc.)
+  </p>,
+]
+`;
+
+exports[`Storyshots Atoms | Badge JSX As Child 1`] = `
+Array [
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c0 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+
+}
+
+<span
+    className="c0"
+  >
+    Component as child
+  </span>,
+  .c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0046FF;
+  border-radius: 20px;
+  text-align: center;
+  height: 20px;
+  min-width: 20px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  padding: 0 6px;
+}
+
+.c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+  .c2 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+      color={[Function]}
+      size={5}
+    >
+      <span>
+        <span
+          className="c2"
+        >
+          8
+        </span>
+        <span
+          className="c3"
+        >
+          %
+        </span>
+      </span>
+    </span>
+  </div>,
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+<p
+    className="c0"
+  >
+    * Observe, up to developer to set child component font (family, size, etc.)
+  </p>,
+]
+`;
+
+exports[`Storyshots Atoms | Badge Styled Badges 1`] = `
+Array [
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c0 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<span
+    className="c0"
+  >
+    Styled Badge component
+  </span>,
+  .c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0046FF;
+  border-radius: 8px;
+  text-align: center;
+  height: 8px;
+  min-width: 8px;
+  box-sizing: border-box;
+}
+
+.c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.c2 {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1 c2"
+      size={2}
+    />
+  </div>,
+]
+`;

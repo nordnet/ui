@@ -61,7 +61,7 @@ const StyledUl = styled.ul`
   margin-bottom: 0;
 `;
 
-const Content = styled.section`
+const TabContent = styled.section`
   height: 100%;
 `;
 
@@ -73,13 +73,25 @@ const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps }
   return typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
 };
 
-export const Tabs: ContainerComponent = ({
-  children,
-  initialActiveTabIndex = 0,
-  activeTabIndex,
-  className,
-  height = 8,
-}) => {
+const components = {
+  TabContent,
+};
+
+export const Tabs: ContainerComponent & {
+  /**
+   * This will allow you to customize
+   * inner parts with styled-components
+   * Tabs component does not have a parent html element but consists of 3 elements that are siblings.
+   * Use the ~ selector to access the siblings like TabContent in this example.
+   * @example
+   * const StyledContentTabs = styled(Tabs)`
+   *  & ~ ${Tabs.components.TabContent} {
+   *    height: inherit;
+   *  }
+   * `;
+   * */
+  components: typeof components;
+} = ({ children, initialActiveTabIndex = 0, activeTabIndex, className, height = 8 }) => {
   // eslint-disable-next-line prefer-const
   let [active, setActive] = useState(initialActiveTabIndex);
   const isControlled = typeof activeTabIndex !== 'undefined';
@@ -124,14 +136,14 @@ export const Tabs: ContainerComponent = ({
 
       if (isActive) {
         contents = (
-          <Content
+          <TabContent
             id={`tabs-tabpanel-${i}`}
             role="tabpanel"
             aria-labelledby={`tabs-tab-${i}`}
             hidden={!isActive}
           >
             {c}
-          </Content>
+          </TabContent>
         );
       }
     }
@@ -155,5 +167,7 @@ export const Tabs: ContainerComponent = ({
     </>
   );
 };
+
 Tabs.displayName = 'Tabs';
 Tabs.Tab = Item;
+Tabs.components = components;

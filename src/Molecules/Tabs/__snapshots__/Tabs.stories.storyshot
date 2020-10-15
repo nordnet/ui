@@ -1039,3 +1039,224 @@ exports[`Storyshots Molecules | Tabs With height modified 1`] = `
   </section>
 </span>
 `;
+
+exports[`Storyshots Molecules | Tabs With styled tab content 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c2 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c2 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c4 {
+  box-sizing: border-box;
+}
+
+.c9 {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBE8;
+}
+
+.c7 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.c8 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c6,
+.c6[type='button'],
+.c6[type='reset'],
+.c6[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c6::-moz-focus-inner,
+.c6[type='button']::-moz-focus-inner,
+.c6[type='reset']::-moz-focus-inner,
+.c6[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c6:-moz-focusring,
+.c6[type='button']:-moz-focusring,
+.c6[type='reset']:-moz-focusring,
+.c6[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c1 {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c11 {
+  height: 100%;
+}
+
+.c3 ~ .c10 {
+  height: inherit;
+  background: #EBEBE8;
+}
+
+<span
+  className="c0"
+>
+  <ul
+    className="c1 c2 c3"
+    direction="row"
+    role="tablist"
+  >
+    <li
+      className="c4"
+      role="presentation"
+    >
+      <span
+        className="c5"
+      >
+        <button
+          aria-selected={true}
+          className="NormalizedButton__Button-ey7f5x-0 c6"
+          id="tabs-tab-0"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="c7"
+            height={8}
+          >
+            One
+          </span>
+        </button>
+      </span>
+    </li>
+    <li
+      className="c4"
+      role="presentation"
+    >
+      <span
+        className="c0"
+      >
+        <button
+          aria-selected={false}
+          className="NormalizedButton__Button-ey7f5x-0 c6"
+          id="tabs-tab-1"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={-1}
+          type="button"
+        >
+          <span
+            className="c8"
+            height={8}
+          >
+            Two
+          </span>
+        </button>
+      </span>
+    </li>
+  </ul>
+  <div
+    className="c9"
+  />
+  <section
+    aria-labelledby="tabs-tab-0"
+    className="c10 c11"
+    hidden={false}
+    id="tabs-tabpanel-0"
+    role="tabpanel"
+  >
+    Tab 1. Content have gray background
+  </section>
+</span>
+`;

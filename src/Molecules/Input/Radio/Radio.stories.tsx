@@ -126,6 +126,38 @@ inAGroup.story = {
   name: 'In a group',
 };
 
+export const inAGroupWithTooltip = () => (
+  <FormField label="Colors" labelTooltip="Checkbox tooltip" group>
+    <Flexbox container gutter={5}>
+      <Input.Radio name="example" value="green" label="Green" />
+      <Input.Radio name="example" value="blue" label="Blue" />
+      <Input.Radio name="example" value="yellow" label="Yellow" />
+    </Flexbox>
+  </FormField>
+);
+
+inAGroupWithTooltip.story = {
+  name: 'In a group with tooltip',
+};
+
+export const inAGroupWithTooltipPositionTop = () => (
+  <>
+    <br />
+    <br />
+    <FormField label="Colors" labelTooltip="Checkbox tooltip" labelTooltipPosition="top" group>
+      <Flexbox container gutter={5}>
+        <Input.Radio name="example" value="green" label="Green" />
+        <Input.Radio name="example" value="blue" label="Blue" />
+        <Input.Radio name="example" value="yellow" label="Yellow" />
+      </Flexbox>
+    </FormField>
+  </>
+);
+
+inAGroupWithTooltipPositionTop.story = {
+  name: 'In a group with tooltip (position top)',
+};
+
 export const inAGroupWithError = () => {
   const Component = () => {
     const [oneChecked, setOneChecked] = React.useState(false);

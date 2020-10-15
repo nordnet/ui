@@ -129,6 +129,12 @@ exports[`Storyshots Molecules | InfoBar Default usage 1`] = `
   }
 }
 
+@media print {
+  .c2 {
+    max-width: none;
+  }
+}
+
 <div
   className="c0"
 >
@@ -415,6 +421,12 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
   .c2 {
     max-width: 1600px;
     padding: 0 20px;
+  }
+}
+
+@media print {
+  .c2 {
+    max-width: none;
   }
 }
 
@@ -881,6 +893,12 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
   .c2 {
     max-width: 1600px;
     padding: 0 20px;
+  }
+}
+
+@media print {
+  .c2 {
+    max-width: none;
   }
 }
 

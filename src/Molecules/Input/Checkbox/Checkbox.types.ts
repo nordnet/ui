@@ -9,6 +9,8 @@ export type Props = {
   error?: string;
   hasError?: boolean;
   label: string | JSX.Element;
+  labelTooltip?: string;
+  labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
   name?: string;
   required?: boolean;
   value?: string;

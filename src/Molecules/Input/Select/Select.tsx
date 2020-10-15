@@ -44,7 +44,7 @@ const noop = () => {};
 
 const getValuesForNativeSelect = (selectedItems: { value: any }[], isMultiselect: boolean) => {
   if (isMultiselect) {
-    return selectedItems.map(x => x.value);
+    return selectedItems.map((x) => x.value);
   }
   return selectedItems.length > 0 ? selectedItems[0].value : undefined;
 };
@@ -227,7 +227,7 @@ const Select = (props: Props) => {
         onChange={noop}
       >
         {placeholder && <option label={placeholder} value="" />}
-        {options.map(x => (
+        {options.map((x) => (
           <option label={x.label} value={x.value} key={`${x.label}${x.value}`} />
         ))}
       </HiddenSelect>
@@ -235,6 +235,8 @@ const Select = (props: Props) => {
         <FormFieldOrFragment
           label={label}
           hideLabel={props.hideLabel}
+          labelToolTip={props.labelTooltip}
+          labelTooltipPosition={props.labelTooltipPosition}
           noFormField={props.noFormField}
           ref={formFieldRef}
           disabled={isDisabled}

@@ -67,7 +67,22 @@ const SelectWrapper = styled.div`
 `;
 
 export const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
-  ({ children, noFormField, open, onFocus, onBlur, fullWidth, id, size, ...props }, ref) => {
+  (
+    {
+      children,
+      noFormField,
+      open,
+      onFocus,
+      onBlur,
+      fullWidth,
+      id,
+      size,
+      labelToolTip,
+      labelTooltipPosition,
+      ...props
+    },
+    ref,
+  ) => {
     if (noFormField) {
       return (
         <StyledRelativeDiv
@@ -86,7 +101,14 @@ export const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
     return (
       <StyledRelativeDiv fullWidth={fullWidth} width={props.width}>
         <Flexbox container alignItems="center" {...(fullWidth ? { width: '100%' } : {})}>
-          <FormField fieldId={id} {...props} {...(fullWidth ? { width: '100%' } : {})} ref={ref}>
+          <FormField
+            fieldId={id}
+            labelTooltip={labelToolTip}
+            labelTooltipPosition={labelTooltipPosition}
+            {...props}
+            {...(fullWidth ? { width: '100%' } : {})}
+            ref={ref}
+          >
             <SelectWrapper onBlur={onBlur} onFocus={onFocus} size={size} {...props} tabIndex={0}>
               {children}
               <Chevron open={open} />

@@ -3,7 +3,10 @@ import styled from 'styled-components';
 import { Modal, Typography, Box, Button, Flexbox, Icon, FadedScroll } from '../..';
 
 const ScrollMaker = styled.div`
-  background-image: linear-gradient(${p => p.theme.color.positive}, ${p => p.theme.color.negative});
+  background-image: linear-gradient(
+    ${(p) => p.theme.color.positive},
+    ${(p) => p.theme.color.negative}
+  );
   position: absolute;
   right: 0;
   top: 0;
@@ -405,4 +408,101 @@ export const closeOnBackdropClickStory = () => {
 
 nodeAsTitle.story = {
   name: 'Node as Title',
+};
+
+export const notFullScreenMobile = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const onOpen = () => {
+      setOpen(true);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    const footer = (
+      <Flexbox container justifyContent="flex-end">
+        <Box mr={2}>
+          <Button variant="secondary" size="l" onClick={() => {}}>
+            Cancel
+          </Button>
+        </Box>
+        <Button size="l" onClick={() => {}}>
+          Confirm
+        </Button>
+      </Flexbox>
+    );
+
+    return (
+      <div>
+        <button type="button" onClick={onOpen}>
+          Open modal
+        </button>
+        <ScrollMaker />
+        <Modal
+          onClose={onClose}
+          title="Dialog information"
+          open={open}
+          footer={footer}
+          fullScreenMobile={false}
+        >
+          <Box mb={2}>
+            <Typography type="primary" as="p">
+              Resize the window to see the result of setting fullScreenMobile to false.
+            </Typography>
+          </Box>
+        </Modal>
+      </div>
+    );
+  };
+  return <Example />;
+};
+
+export const statusModal = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const onOpen = () => {
+      setOpen(true);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <div>
+        <button type="button" onClick={onOpen}>
+          Open modal
+        </button>
+        <ScrollMaker />
+        {/* ScrollMaker is just used to show how the Modal locks scrolling when open */}
+        <Modal onClose={onClose} open={open} closeOnBackdropClick isStatusModal fullScreenMobile={false}>
+          <Box md={{ pt: 5 }}>
+            <Flexbox container direction="column" alignItems="center" gutter={6} md={{ gutter: 7 }}>
+              <Icon.CheckMarkCircle color={(t) => t.color.positive} size={24} />
+              <Flexbox container justifyContent="center">
+                <Typography type="title2">Title</Typography>
+              </Flexbox>
+              <Flexbox container justifyContent="center">
+                <Typography type="primary">Lorum ipsum</Typography>
+              </Flexbox>
+              <Flexbox item>
+                <Box pt={2}>
+                  <Button size="l">Ok</Button>
+                </Box>
+              </Flexbox>
+            </Flexbox>
+          </Box>
+        </Modal>
+      </div>
+    );
+  };
+  return <Example />;
+};
+
+notFullScreenMobile.story = {
+  name: 'Not full screen mobile',
 };

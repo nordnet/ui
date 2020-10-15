@@ -68,8 +68,8 @@ exports[`Storyshots Molecules | SegmentedControl Controlled Behaviour 1`] = `
   border: none;
   padding: 0;
   background-color: transparent;
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
 }
 
 .c5[aria-checked='true'] {
@@ -104,6 +104,7 @@ exports[`Storyshots Molecules | SegmentedControl Controlled Behaviour 1`] = `
   >
     <div
       className="c2"
+      disabled={false}
     />
     <div
       className="c3 c4"
@@ -111,6 +112,7 @@ exports[`Storyshots Molecules | SegmentedControl Controlled Behaviour 1`] = `
       <button
         aria-checked={true}
         className="c5"
+        disabled={false}
         onClick={[Function]}
         role="radio"
       >
@@ -127,6 +129,7 @@ exports[`Storyshots Molecules | SegmentedControl Controlled Behaviour 1`] = `
       <button
         aria-checked={false}
         className="c5"
+        disabled={false}
         onClick={[Function]}
         role="radio"
       >
@@ -143,6 +146,7 @@ exports[`Storyshots Molecules | SegmentedControl Controlled Behaviour 1`] = `
       <button
         aria-checked={false}
         className="c5"
+        disabled={false}
         onClick={[Function]}
         role="radio"
       >
@@ -153,6 +157,266 @@ exports[`Storyshots Molecules | SegmentedControl Controlled Behaviour 1`] = `
         </span>
       </button>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | SegmentedControl Controlled Disabled 1`] = `
+.c8 {
+  margin-top: 16px;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c9::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c9:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c9:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c2 {
+  position: absolute;
+  width: 33.333333333333336%;
+  height: 32px;
+  background-color: #EBEBE8;
+  left: 0%;
+  margin: -1px 0 0 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: not-allowed;
+}
+
+.c5[aria-checked='true'] {
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  background-color: #F5F5F5;
+  height: 32px;
+  margin: 2px;
+}
+
+.c4 {
+  width: 100%;
+  height: 100%;
+}
+
+<div
+  style={
+    Object {
+      "backgroundColor": "white",
+      "height": "100%",
+      "margin": "50px",
+      "width": "250px",
+    }
+  }
+>
+  <div
+    className="c0 c1"
+    role="radiogroup"
+  >
+    <div
+      className="c2"
+      disabled={true}
+    />
+    <div
+      className="c3 c4"
+    >
+      <button
+        aria-checked={true}
+        className="c5"
+        disabled={true}
+        onClick={[Function]}
+        role="radio"
+      >
+        <span
+          className="c6"
+        >
+          Option 1
+        </span>
+      </button>
+    </div>
+    <div
+      className="c3 c4"
+    >
+      <button
+        aria-checked={false}
+        className="c5"
+        disabled={true}
+        onClick={[Function]}
+        role="radio"
+      >
+        <span
+          className="c7"
+        >
+          Option 2
+        </span>
+      </button>
+    </div>
+    <div
+      className="c3 c4"
+    >
+      <button
+        aria-checked={false}
+        className="c5"
+        disabled={true}
+        onClick={[Function]}
+        role="radio"
+      >
+        <span
+          className="c7"
+        >
+          Option 3
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c8"
+  >
+    <button
+      className="NormalizedButton__Button-ey7f5x-0 c9"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="c10"
+        >
+          Next
+        </span>
+      </span>
+    </button>
   </div>
 </div>
 `;
@@ -225,8 +489,8 @@ exports[`Storyshots Molecules | SegmentedControl Default 1`] = `
   border: none;
   padding: 0;
   background-color: transparent;
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
 }
 
 .c5[aria-checked='true'] {
@@ -261,6 +525,7 @@ exports[`Storyshots Molecules | SegmentedControl Default 1`] = `
   >
     <div
       className="c2"
+      disabled={false}
     />
     <div
       className="c3 c4"
@@ -268,6 +533,7 @@ exports[`Storyshots Molecules | SegmentedControl Default 1`] = `
       <button
         aria-checked={true}
         className="c5"
+        disabled={false}
         onClick={[Function]}
         role="radio"
       >
@@ -284,6 +550,7 @@ exports[`Storyshots Molecules | SegmentedControl Default 1`] = `
       <button
         aria-checked={false}
         className="c5"
+        disabled={false}
         onClick={[Function]}
         role="radio"
       >
@@ -300,6 +567,7 @@ exports[`Storyshots Molecules | SegmentedControl Default 1`] = `
       <button
         aria-checked={false}
         className="c5"
+        disabled={false}
         onClick={[Function]}
         role="radio"
       >
@@ -307,6 +575,148 @@ exports[`Storyshots Molecules | SegmentedControl Default 1`] = `
           className="c7"
         >
           Option 3
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | SegmentedControl Disabled 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  position: absolute;
+  width: 50%;
+  height: 32px;
+  background-color: #EBEBE8;
+  left: 0%;
+  margin: -1px 0 0 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: not-allowed;
+}
+
+.c5[aria-checked='true'] {
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  background-color: #F5F5F5;
+  height: 32px;
+  margin: 2px;
+}
+
+.c4 {
+  width: 100%;
+  height: 100%;
+}
+
+<div
+  style={
+    Object {
+      "backgroundColor": "white",
+      "height": "100%",
+      "margin": "50px",
+      "width": "50%",
+    }
+  }
+>
+  <div
+    className="c0 c1"
+    role="radiogroup"
+  >
+    <div
+      className="c2"
+      disabled={true}
+    />
+    <div
+      className="c3 c4"
+    >
+      <button
+        aria-checked={true}
+        className="c5"
+        disabled={true}
+        onClick={[Function]}
+        role="radio"
+      >
+        <span
+          className="c6"
+        >
+          Option 1
+        </span>
+      </button>
+    </div>
+    <div
+      className="c3 c4"
+    >
+      <button
+        aria-checked={false}
+        className="c5"
+        disabled={true}
+        onClick={[Function]}
+        role="radio"
+      >
+        <span
+          className="c7"
+        >
+          Option 2
         </span>
       </button>
     </div>
@@ -382,8 +792,8 @@ exports[`Storyshots Molecules | SegmentedControl Last Item Selected 1`] = `
   border: none;
   padding: 0;
   background-color: transparent;
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
 }
 
 .c5[aria-checked='true'] {
@@ -418,6 +828,7 @@ exports[`Storyshots Molecules | SegmentedControl Last Item Selected 1`] = `
   >
     <div
       className="c2"
+      disabled={false}
     />
     <div
       className="c3 c4"
@@ -425,6 +836,7 @@ exports[`Storyshots Molecules | SegmentedControl Last Item Selected 1`] = `
       <button
         aria-checked={false}
         className="c5"
+        disabled={false}
         onClick={[Function]}
         role="radio"
       >
@@ -441,6 +853,7 @@ exports[`Storyshots Molecules | SegmentedControl Last Item Selected 1`] = `
       <button
         aria-checked={true}
         className="c5"
+        disabled={false}
         onClick={[Function]}
         role="radio"
       >

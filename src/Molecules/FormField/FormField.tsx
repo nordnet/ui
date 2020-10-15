@@ -2,29 +2,47 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Props, LabelAddonProp } from './FormField.types';
-import { Flexbox, Icon, VisuallyHidden, FormLabel, Typography, Fieldset, Legend } from '../..';
+import {
+  Flexbox,
+  Icon,
+  VisuallyHidden,
+  FormLabel,
+  Typography,
+  Fieldset,
+  Legend,
+  Tooltip,
+} from '../..';
 import { assert } from '../../common/utils';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
 const Wrapper = styled.div<{ width?: string | number }>`
-  ${p => (p.width ? `width: ${p.width};` : 'width: 200px;')}
+  ${(p) => (p.width ? `width: ${p.width};` : 'width: 200px;')}
   display: inline-block;
 `;
 
 const TooltipIcon = styled(Icon.Questionmark)`
-  margin-left: ${p => p.theme.spacing.unit(1)}px;
+  margin-left: ${(p) => p.theme.spacing.unit(1)}px;
 `;
 
 const BottomWrapper = styled(motion.div)``;
 
-const WithOptionalAddon: React.FC<LabelAddonProp> = ({ children, labelTooltip, hideLabel }) =>
+const WithOptionalAddon: React.FC<LabelAddonProp> = ({
+  children,
+  labelTooltip,
+  labelTooltipPosition,
+  hideLabel,
+}) =>
   hideLabel ? (
     <>{children}</>
   ) : (
     <Flexbox container alignItems="center">
       {children}
-      {labelTooltip && <TooltipIcon title={labelTooltip} size={4} />}
+      {labelTooltip && (
+        <Tooltip position={labelTooltipPosition} label={labelTooltip}>
+          <TooltipIcon size={4} />
+        </Tooltip>
+      )}
     </Flexbox>
   );
 
@@ -41,6 +59,7 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
       hideLabel,
       label,
       labelTooltip,
+      labelTooltipPosition,
       required = false,
       showRequired = false,
       width,
@@ -54,7 +73,11 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
     if (label) {
       field = (
         <FormLabel disabled={disabled}>
-          <WithOptionalAddon labelTooltip={labelTooltip} hideLabel={hideLabel}>
+          <WithOptionalAddon
+            labelTooltip={labelTooltip}
+            labelTooltipPosition={labelTooltipPosition}
+            hideLabel={hideLabel}
+          >
             {hideLabel ? <VisuallyHidden>{labelText}</VisuallyHidden> : labelText}
           </WithOptionalAddon>
           {children}
@@ -64,7 +87,11 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
       if (group) {
         field = (
           <Fieldset>
-            <WithOptionalAddon labelTooltip={labelTooltip} hideLabel={hideLabel}>
+            <WithOptionalAddon
+              labelTooltip={labelTooltip}
+              labelTooltipPosition={labelTooltipPosition}
+              hideLabel={hideLabel}
+            >
               <Legend styleType="label">{labelText}</Legend>
             </WithOptionalAddon>
             {children}
@@ -74,7 +101,11 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
         field = (
           <>
             <FormLabel hideLabel={hideLabel} forId={fieldId || forId}>
-              <WithOptionalAddon labelTooltip={labelTooltip} hideLabel={hideLabel}>
+              <WithOptionalAddon
+                labelTooltip={labelTooltip}
+                labelTooltipPosition={labelTooltipPosition}
+                hideLabel={hideLabel}
+              >
                 {labelText}
               </WithOptionalAddon>
             </FormLabel>
@@ -110,7 +141,7 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
               exit={{ y: 0, opacity: 0 }}
               aria-live="polite"
             >
-              <Typography type="tertiary" color={t => t.color.negative}>
+              <Typography type="tertiary" color={(t) => t.color.negative}>
                 <VisuallyHidden>Error: </VisuallyHidden>
                 {error}
               </Typography>
@@ -125,7 +156,7 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
               >
                 <Typography
                   type="tertiary"
-                  color={t => (disabled ? t.color.disabled : t.color.label)}
+                  color={(t) => (disabled ? t.color.disabled : t.color.label)}
                 >
                   {extraInfo}
                 </Typography>

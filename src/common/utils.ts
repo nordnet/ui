@@ -51,14 +51,7 @@ export const isHTMLElement = (x: any): x is HTMLElement => x instanceof HTMLElem
 export const pickAriaAttributes = R.pickBy((_, key: string) => R.test(/^aria-/, key));
 
 const convertToDate = (value: number) => new Date(value);
-const isInvalid = R.anyPass([
-  R.isNil,
-  R.pipe(
-    convertToDate,
-    R.toString,
-    R.equals('Invalid Date'),
-  ),
-]);
+const isInvalid = R.anyPass([R.isNil, R.pipe(convertToDate, R.toString, R.equals('Invalid Date'))]);
 
 export const isValidDateTimeNumber = R.complement(isInvalid) as (x: any) => x is number;
 
@@ -68,4 +61,11 @@ export const getValueFromNumberOrString = (value: number | string, theme: Theme)
   }
 
   return null;
+};
+
+type NumberWithLimit = (amount: number, limit: number) => string;
+
+export const numberWithLimit: NumberWithLimit = (amount, limit) => {
+  const isOverLimit = amount > limit;
+  return isOverLimit ? `${limit}+` : `${amount}`;
 };

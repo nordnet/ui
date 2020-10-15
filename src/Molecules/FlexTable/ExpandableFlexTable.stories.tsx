@@ -152,6 +152,8 @@ export const OnlyExpandableOnMobileTable = () => {
 };
 
 export const ControlledExpandedTable = () => {
+  const expandItemsText = expandedItemsGenerator();
+  const expandItemsComponents = expandedItemsGenerator(true);
   const ControlledExpandedTableExample = () => {
     const [expandedRows, setExpandedRows] = useState<string[]>(['row3']);
     const isExpanded = (rowId: string) => expandedRows.includes(rowId);
@@ -159,8 +161,6 @@ export const ControlledExpandedTable = () => {
       newExpanded
         ? setExpandedRows([...expandedRows, rowId])
         : setExpandedRows(expandedRows.filter((row) => row !== rowId));
-    const expandItemsText = expandedItemsGenerator();
-    const expandItemsComponents = expandedItemsGenerator(true);
     return (
       <FlexTable expandable>
         <FlexTable.HeaderRow>
@@ -236,9 +236,9 @@ const ExpandRow = ({ expandItems, expanded, expandChildren, children, toggleExpa
 );
 
 export const ControlledExpandableTableWithCustomRow = () => {
+  const expandItemsText = expandedItemsGenerator();
+  const expandItemsComponents = expandedItemsGenerator(true);
   const ControlledExpandableTableWithCustomRowExample = () => {
-    const expandItemsText = expandedItemsGenerator();
-    const expandItemsComponents = expandedItemsGenerator(true);
     const [expandedRows, setExpandedRows] = useState<string[]>(['row3']);
     const toggleExpand = (rowId: string) => {
       const isAlreadyExpanded = expandedRows.includes(rowId);

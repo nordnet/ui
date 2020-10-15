@@ -47,6 +47,17 @@ export const StepProgression = () => {
   );
 };
 
+export const FailureStep = () => {
+  const stepLabels = ['One', 'Two', 'Failed step', 'Four'];
+  return (
+    <Box px={10}>
+      <Flexbox container direction="column" gutter={2}>
+        <ProgressBar numberOfSteps={4} currentStep={3} stepLabels={stepLabels} failed />
+      </Flexbox>
+    </Box>
+  );
+};
+
 export const LotsOfSteps = () => {
   const stepLabels = ['Lorem', 'Ipsum', 'Dolor', 'Sit', 'Amet', 'Ego', 'Sum'];
   return (
@@ -64,11 +75,11 @@ export const CustomColors = () => {
         numberOfSteps={3}
         currentStep={2}
         stepLabels={stepLabels}
-        colorDone={t => t.color.menuAccent4}
-        colorActive={t => t.color.menuAccent1}
-        colorNext={t => t.color.menuAccent2}
-        colorText={t => t.color.menuAccent5}
-        colorLabel={t => t.color.cta}
+        colorDone={(t) => t.color.menuAccent4}
+        colorActive={(t) => t.color.menuAccent1}
+        colorNext={(t) => t.color.menuAccent2}
+        colorText={(t) => t.color.menuAccent5}
+        colorLabel={(t) => t.color.cta}
       />
     </Box>
   );

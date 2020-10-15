@@ -73,6 +73,7 @@ type ChangeableColor<
   : A11yColor;
 
 export type ThemeColors<Version extends ThemeColorsVersion> = {
+  /** white */
   backgroundInput: RawColor['white'];
   /** gray7 */
   background: RawColor['gray7'];
@@ -128,6 +129,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   divider: RawColor['gray6'];
   /** gray4 */
   emptyState: RawColor['gray4'];
+  /** gray2 */
+  fundExchange: RawColor['gray2'];
   /** gray0 */
   separator: RawColor['gray0'];
   /** gray0 */
@@ -200,6 +203,10 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   orderDepthBackground: RawColor['gray6'];
   /** gray5 */
   orderDepthDarkBackground: RawColor['gray5'];
+  /** gray1 */
+  orderAccountLabel: RawColor['gray1'];
+  /** complementaryTurquoise1 */
+  listItemBackgroundHover: string;
   /** complementaryBlue2 */
   loanRatesGraphColor2: RawColor['complementaryBlue2'];
   /** brandGreen */
@@ -220,6 +227,10 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   sliderDisabled: RawColor['gray6'];
   /** gray6 */
   sliderBackgroundColor: RawColor['gray6'];
+  /** cta */
+  statusFulfilledBackgroundColor: RawColor['cta'];
+  /** white */
+  statusFulfilledTextColor: RawColor['white'];
   /** white */
   sliderThumbBackground: RawColor['white'];
   /** gray6 */
@@ -270,10 +281,18 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   progressBarText: RawColor['white'];
   /** positive */
   progressBarDone: RawColor['positive'];
+  /** positive */
+  progressBarFailure: RawColor['negative'];
   /** cta */
   progressBarActive: RawColor['cta'];
   /** gray4 */
   progressBarNext: RawColor['gray4'];
+  /** gray6 */
+  indexFundsBackground: RawColor['gray6'];
+  /** brandBlue */
+  indexFundsNorwegianAccent: RawColor['brandBlue'];
+  /** brandPink, brandBlue, complementaryBlue2, black, complementaryTurquoise1 */
+  indexFundsFinnishAccent: string[];
   paletteMap: string[];
   palettePink: string[];
   paletteGreen: string[];

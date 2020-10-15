@@ -11208,3 +11208,729 @@ Array [
   </div>,
 ]
 `;
+
+exports[`Storyshots Molecules | Input / Select With Label Tooltip 1`] = `
+.c15 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  stroke: #6E6E69;
+}
+
+.c11 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c11,
+.c11[type='button'],
+.c11[type='reset'],
+.c11[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c11::-moz-focus-inner,
+.c11[type='button']::-moz-focus-inner,
+.c11[type='reset']::-moz-focus-inner,
+.c11[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c11:-moz-focusring,
+.c11[type='button']:-moz-focusring,
+.c11[type='reset']:-moz-focusring,
+.c11[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c7 {
+  margin-left: 4px;
+}
+
+.c19 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c9 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c9:hover {
+  border-color: #4B4B46;
+}
+
+.c9:focus-within {
+  border-color: #0046FF;
+}
+
+.c9.focus-within {
+  border-color: #0046FF;
+}
+
+.c14 {
+  height: 100%;
+  width: 100%;
+}
+
+.c12 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c12:active {
+  color: inherit;
+}
+
+.c17 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+}
+
+.c16 {
+  width: calc(100% - 20px - 4px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  display: none;
+}
+
+<div>
+  <select
+    aria-hidden="true"
+    className="c0"
+    disabled={false}
+    onChange={[Function]}
+  >
+    <option
+      label="Placeholder"
+      value=""
+    />
+    <option
+      label="1"
+      value={1}
+    />
+    <option
+      label="2"
+      value={2}
+    />
+    <option
+      label="3"
+      value={3}
+    />
+  </select>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="input-1"
+        >
+          <span
+            className="c5"
+          >
+            <div
+              className="c2"
+            >
+              Label 
+              <svg
+                aria-hidden="true"
+                className="c6 c7"
+                data-reach-tooltip-trigger=""
+                focusable="false"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onMouseDown={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseMove={[Function]}
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  fillRule="evenodd"
+                  transform="translate(1 1)"
+                >
+                  <circle
+                    className="c8"
+                    cx="11"
+                    cy="11"
+                    fill="none"
+                    r="11"
+                  />
+                  <path
+                    d="M9.4544,13.5528 L9.4544,13.3008 C9.4544,12.1584 9.4376,11.6376 11.1512,10.2432 C11.8904,9.6384 12.4784,9.2184 12.4784,8.496 C12.4784,7.8576 12.0248,7.3536 11.1176,7.3536 C10.1768,7.3536 9.656,7.9416 9.4376,8.6472 L6.9008,8.6472 C7.2368,6.3624 8.9504,5.1696 11.168,5.1696 C13.5032,5.1696 15.0992,6.4128 15.0992,8.3784 C15.0992,9.6888 14.5448,10.3776 13.0496,11.6544 C12.344,12.2424 11.84,12.6456 11.7056,13.3008 L11.6552,13.5528 L9.4544,13.5528 Z M11.9072,14.7288 L11.9072,17.4 L9.2696,17.4 L9.2696,14.7288 L11.9072,14.7288 Z"
+                    fillRule="nonzero"
+                  />
+                </g>
+              </svg>
+            </div>
+          </span>
+        </label>
+        <div
+          className="c9"
+          disabled={false}
+          label="Label"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="c10"
+          >
+            <button
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="Label: Placeholder"
+              className="c11 c12"
+              data-testid="input-select-button"
+              disabled={false}
+              form=""
+              id="input-1"
+              onClick={[Function]}
+              tabIndex={0}
+              type="button"
+            >
+              <div
+                aria-hidden="true"
+                className="c13 c14"
+              >
+                <div
+                  className="c15 c16"
+                >
+                  <span
+                    className="c17"
+                  >
+                    Placeholder
+                  </span>
+                </div>
+              </div>
+            </button>
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c18 c19"
+            focusable="false"
+            open={false}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Select With Label Tooltip Position Top 1`] = `
+Array [
+  <br />,
+  <br />,
+  .c15 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  stroke: #6E6E69;
+}
+
+.c11 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c11,
+.c11[type='button'],
+.c11[type='reset'],
+.c11[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c11::-moz-focus-inner,
+.c11[type='button']::-moz-focus-inner,
+.c11[type='reset']::-moz-focus-inner,
+.c11[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c11:-moz-focusring,
+.c11[type='button']:-moz-focusring,
+.c11[type='reset']:-moz-focusring,
+.c11[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c7 {
+  margin-left: 4px;
+}
+
+.c19 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c9 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c9:hover {
+  border-color: #4B4B46;
+}
+
+.c9:focus-within {
+  border-color: #0046FF;
+}
+
+.c9.focus-within {
+  border-color: #0046FF;
+}
+
+.c14 {
+  height: 100%;
+  width: 100%;
+}
+
+.c12 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c12:active {
+  color: inherit;
+}
+
+.c17 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+}
+
+.c16 {
+  width: calc(100% - 20px - 4px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  display: none;
+}
+
+<div>
+    <select
+      aria-hidden="true"
+      className="c0"
+      disabled={false}
+      onChange={[Function]}
+    >
+      <option
+        label="Placeholder"
+        value=""
+      />
+      <option
+        label="1"
+        value={1}
+      />
+      <option
+        label="2"
+        value={2}
+      />
+      <option
+        label="3"
+        value={3}
+      />
+    </select>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          <label
+            className="c4"
+            hidden={false}
+            htmlFor="input-1"
+          >
+            <span
+              className="c5"
+            >
+              <div
+                className="c2"
+              >
+                Label 
+                <svg
+                  aria-hidden="true"
+                  className="c6 c7"
+                  data-reach-tooltip-trigger=""
+                  focusable="false"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseMove={[Function]}
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fillRule="evenodd"
+                    transform="translate(1 1)"
+                  >
+                    <circle
+                      className="c8"
+                      cx="11"
+                      cy="11"
+                      fill="none"
+                      r="11"
+                    />
+                    <path
+                      d="M9.4544,13.5528 L9.4544,13.3008 C9.4544,12.1584 9.4376,11.6376 11.1512,10.2432 C11.8904,9.6384 12.4784,9.2184 12.4784,8.496 C12.4784,7.8576 12.0248,7.3536 11.1176,7.3536 C10.1768,7.3536 9.656,7.9416 9.4376,8.6472 L6.9008,8.6472 C7.2368,6.3624 8.9504,5.1696 11.168,5.1696 C13.5032,5.1696 15.0992,6.4128 15.0992,8.3784 C15.0992,9.6888 14.5448,10.3776 13.0496,11.6544 C12.344,12.2424 11.84,12.6456 11.7056,13.3008 L11.6552,13.5528 L9.4544,13.5528 Z M11.9072,14.7288 L11.9072,17.4 L9.2696,17.4 L9.2696,14.7288 L11.9072,14.7288 Z"
+                      fillRule="nonzero"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </span>
+          </label>
+          <div
+            className="c9"
+            disabled={false}
+            label="Label"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            tabIndex={0}
+          >
+            <span
+              className="c10"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-label="Label: Placeholder"
+                className="c11 c12"
+                data-testid="input-select-button"
+                disabled={false}
+                form=""
+                id="input-1"
+                onClick={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <div
+                  aria-hidden="true"
+                  className="c13 c14"
+                >
+                  <div
+                    className="c15 c16"
+                  >
+                    <span
+                      className="c17"
+                    >
+                      Placeholder
+                    </span>
+                  </div>
+                </div>
+              </button>
+            </span>
+            <svg
+              aria-hidden="true"
+              className="c18 c19"
+              focusable="false"
+              open={false}
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

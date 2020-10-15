@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Column Width Sortable Table 1`] = `
-.c27 {
+.c24 {
   height: 20px;
   box-sizing: border-box;
   display: block;
@@ -9,7 +9,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   overflow: hidden;
 }
 
-.c6 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -23,16 +23,16 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   margin-right: -4px;
 }
 
-.c6 > * {
+.c3 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c6 > *:not(:first-child) {
+.c3 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c9 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -46,7 +46,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   flex: 1;
 }
 
-.c12 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -54,11 +54,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   display: flex;
 }
 
-.c14 {
+.c11 {
   box-sizing: border-box;
 }
 
-.c21 {
+.c18 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -72,7 +72,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   flex: 0 15%;
 }
 
-.c22 {
+.c19 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -86,11 +86,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   flex: 0 100px;
 }
 
-.c26 {
+.c23 {
   box-sizing: border-box;
 }
 
-.c19 {
+.c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -114,7 +114,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   line-height: 1.3333333333333333;
 }
 
-.c18 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -123,7 +123,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   line-height: 1.4285714285714286;
 }
 
-.c25 {
+.c22 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -132,7 +132,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c13 {
   display: inline-block;
   width: 100%;
   text-overflow: ellipsis;
@@ -140,7 +140,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   overflow: hidden;
 }
 
-.c15 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -148,15 +148,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   min-width: 0;
 }
 
-.c17 {
+.c14 {
   width: inherit;
 }
 
-.c24 {
+.c21 {
   overflow: hidden;
 }
 
-.c7 {
+.c4 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -168,15 +168,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   margin-left: 0;
 }
 
-.c7 > *:first-child {
+.c4 > *:first-child {
   padding-left: 0;
 }
 
-.c7 > *:last-child {
+.c4 > *:last-child {
   padding-right: 0;
 }
 
-.c23 {
+.c20 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -188,19 +188,19 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   margin-left: 0;
 }
 
-.c23:hover {
+.c20:hover {
   background: #F5F5F5;
 }
 
-.c23 > *:first-child {
+.c20 > *:first-child {
   padding-left: 0;
 }
 
-.c23 > *:last-child {
+.c20 > *:last-child {
   padding-right: 0;
 }
 
-.c8 {
+.c5 {
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
@@ -208,11 +208,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   border-bottom: 1px solid #282823;
 }
 
-.c20 {
+.c17 {
   margin-left: 4px;
 }
 
-.c11 {
+.c8 {
   -webkit-box-pack: inherit;
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
@@ -223,14 +223,14 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   width: 100%;
 }
 
-.c13 {
+.c10 {
   -webkit-box-pack: inherit;
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
   justify-content: inherit;
 }
 
-.c10 {
+.c7 {
   overflow: hidden;
 }
 
@@ -238,26 +238,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   position: relative;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c5 {
-  padding-left: 4px;
-}
-
 .c0 {
   background-color: #F5F5F5;
 }
 
 .c0:not(:last-of-type) {
-  margin-bottom: 40px;
-}
-
-.c3:not(:last-of-type) {
   margin-bottom: 40px;
 }
 
@@ -277,54 +262,47 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
     Sortable Table With Column Width Set
   </span>
   <div
-    className="c2 c3"
+    className="c2"
     role="table"
   >
-    <caption
-      className="c4"
-    >
-      <span
-        className="c1 c5"
-      />
-    </caption>
     <div
-      className="c6 c7 c8"
+      className="c3 c4 c5"
       role="row"
     >
       <div
         aria-sort="none"
-        className="c9 c10"
+        className="c6 c7"
         role="columnheader"
       >
         <a
-          className="c11"
+          className="c8"
           href="#"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
         >
           <div
-            className="c12 c13"
+            className="c9 c10"
           >
             <div
-              className="c14 c15"
+              className="c11 c12"
             >
               <div
-                className="c16 c17"
+                className="c13 c14"
               >
                 <span
-                  className="c18"
+                  className="c15"
                 >
                   Flex 1
                 </span>
               </div>
             </div>
             <div
-              className="c14"
+              className="c11"
             >
               <svg
                 aria-hidden="true"
-                className="c19 c20"
+                className="c16 c17"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -340,38 +318,38 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
       </div>
       <div
         aria-sort="none"
-        className="c21 c10"
+        className="c18 c7"
         role="columnheader"
       >
         <a
-          className="c11"
+          className="c8"
           href="#"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
         >
           <div
-            className="c12 c13"
+            className="c9 c10"
           >
             <div
-              className="c14 c15"
+              className="c11 c12"
             >
               <div
-                className="c16 c17"
+                className="c13 c14"
               >
                 <span
-                  className="c18"
+                  className="c15"
                 >
                   Fifteen percent
                 </span>
               </div>
             </div>
             <div
-              className="c14"
+              className="c11"
             >
               <svg
                 aria-hidden="true"
-                className="c19 c20"
+                className="c16 c17"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -387,38 +365,38 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
       </div>
       <div
         aria-sort="none"
-        className="c22 c10"
+        className="c19 c7"
         role="columnheader"
       >
         <a
-          className="c11"
+          className="c8"
           href="#"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
         >
           <div
-            className="c12 c13"
+            className="c9 c10"
           >
             <div
-              className="c14 c15"
+              className="c11 c12"
             >
               <div
-                className="c16 c17"
+                className="c13 c14"
               >
                 <span
-                  className="c18"
+                  className="c15"
                 >
                   Loooooooooooooong header set width
                 </span>
               </div>
             </div>
             <div
-              className="c14"
+              className="c11"
             >
               <svg
                 aria-hidden="true"
-                className="c19 c20"
+                className="c16 c17"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -434,38 +412,38 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
       </div>
       <div
         aria-sort="none"
-        className="c9 c10"
+        className="c6 c7"
         role="columnheader"
       >
         <a
-          className="c11"
+          className="c8"
           href="#"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
         >
           <div
-            className="c12 c13"
+            className="c9 c10"
           >
             <div
-              className="c14 c15"
+              className="c11 c12"
             >
               <div
-                className="c16 c17"
+                className="c13 c14"
               >
                 <span
-                  className="c18"
+                  className="c15"
                 >
                   Default
                 </span>
               </div>
             </div>
             <div
-              className="c14"
+              className="c11"
             >
               <svg
                 aria-hidden="true"
-                className="c19 c20"
+                className="c16 c17"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -481,60 +459,60 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
       </div>
     </div>
     <div
-      className="c6 c23"
+      className="c3 c20"
       role="row"
     >
       <div
-        className="c9 c24"
+        className="c6 c21"
         role="cell"
       >
         <div
-          className="c16 c17"
+          className="c13 c14"
         >
           <span
-            className="c25"
+            className="c22"
           >
             Cell 1-1
           </span>
         </div>
       </div>
       <div
-        className="c21 c24"
+        className="c18 c21"
         role="cell"
       >
         <div
-          className="c16 c17"
+          className="c13 c14"
         >
           <span
-            className="c25"
+            className="c22"
           >
             Very long cell content that should be truncated or ellipsized depepending on your language preferences
           </span>
         </div>
       </div>
       <div
-        className="c22 c24"
+        className="c19 c21"
         role="cell"
       >
         <div
-          className="c16 c17"
+          className="c13 c14"
         >
           <span
-            className="c25"
+            className="c22"
           >
             Cell 1-3
           </span>
         </div>
       </div>
       <div
-        className="c9 c24"
+        className="c6 c21"
         role="cell"
       >
         <div
-          className="c16 c17"
+          className="c13 c14"
         >
           <span
-            className="c25"
+            className="c22"
           >
             Cell 1-4
           </span>
@@ -542,55 +520,55 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
       </div>
     </div>
     <div
-      className="c6 c23"
+      className="c3 c20"
       role="row"
     >
       <div
-        className="c9 c24"
+        className="c6 c21"
         role="cell"
       >
         <div
-          className="c16 c17"
+          className="c13 c14"
         >
           <span
-            className="c25"
+            className="c22"
           >
             Cell 2-1
           </span>
         </div>
       </div>
       <div
-        className="c21 c24"
+        className="c18 c21"
         role="cell"
       >
         <div
-          className="c16 c17"
+          className="c13 c14"
         >
           <span
-            className="c25"
+            className="c22"
           >
             Cell 2-2
           </span>
         </div>
       </div>
       <div
-        className="c22 c24"
+        className="c19 c21"
         role="cell"
       >
         <div
-          className="c26 c15"
+          className="c23 c12"
         >
           <div
-            className="c16 c17"
+            className="c13 c14"
           >
             <span
-              className="c25"
+              className="c22"
             >
               Long cell with flag
             </span>
           </div>
           <svg
-            className="c27"
+            className="c24"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -631,14 +609,14 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
         </div>
       </div>
       <div
-        className="c9 c24"
+        className="c6 c21"
         role="cell"
       >
         <div
-          className="c16 c17"
+          className="c13 c14"
         >
           <span
-            className="c25"
+            className="c22"
           >
             Cell 2-4
           </span>
@@ -646,60 +624,60 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
       </div>
     </div>
     <div
-      className="c6 c23"
+      className="c3 c20"
       role="row"
     >
       <div
-        className="c9 c24"
+        className="c6 c21"
         role="cell"
       >
         <div
-          className="c16 c17"
+          className="c13 c14"
         >
           <span
-            className="c25"
+            className="c22"
           >
             Cell 3-1
           </span>
         </div>
       </div>
       <div
-        className="c21 c24"
+        className="c18 c21"
         role="cell"
       >
         <div
-          className="c16 c17"
+          className="c13 c14"
         >
           <span
-            className="c25"
+            className="c22"
           >
             Cell 3-2
           </span>
         </div>
       </div>
       <div
-        className="c22 c24"
+        className="c19 c21"
         role="cell"
       >
         <div
-          className="c16 c17"
+          className="c13 c14"
         >
           <span
-            className="c25"
+            className="c22"
           >
             Cell 3-3
           </span>
         </div>
       </div>
       <div
-        className="c9 c24"
+        className="c6 c21"
         role="cell"
       >
         <div
-          className="c16 c17"
+          className="c13 c14"
         >
           <span
-            className="c25"
+            className="c22"
           >
             Cell 3-4
           </span>
@@ -711,7 +689,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
 `;
 
 exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Column Width Table With Custom Flag Cell 1`] = `
-.c21 {
+.c18 {
   height: 20px;
   box-sizing: border-box;
   display: block;
@@ -719,7 +697,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   overflow: hidden;
 }
 
-.c6 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -733,16 +711,16 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   margin-right: -4px;
 }
 
-.c6 > * {
+.c3 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c6 > *:not(:first-child) {
+.c3 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c9 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -756,7 +734,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   flex: 1;
 }
 
-.c14 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -770,7 +748,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   flex: 0 15%;
 }
 
-.c15 {
+.c12 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -784,7 +762,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   flex: 0 100px;
 }
 
-.c19 {
+.c16 {
   box-sizing: border-box;
 }
 
@@ -797,7 +775,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   line-height: 1.3333333333333333;
 }
 
-.c13 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -806,7 +784,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   line-height: 1.4285714285714286;
 }
 
-.c18 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -815,7 +793,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c8 {
   display: inline-block;
   width: 100%;
   text-overflow: ellipsis;
@@ -823,7 +801,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   overflow: hidden;
 }
 
-.c20 {
+.c17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -831,15 +809,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   min-width: 0;
 }
 
-.c12 {
+.c9 {
   width: inherit;
 }
 
-.c17 {
+.c14 {
   overflow: hidden;
 }
 
-.c7 {
+.c4 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -851,15 +829,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   margin-left: 0;
 }
 
-.c7 > *:first-child {
+.c4 > *:first-child {
   padding-left: 0;
 }
 
-.c7 > *:last-child {
+.c4 > *:last-child {
   padding-right: 0;
 }
 
-.c16 {
+.c13 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -871,19 +849,19 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   margin-left: 0;
 }
 
-.c16:hover {
+.c13:hover {
   background: #F5F5F5;
 }
 
-.c16 > *:first-child {
+.c13 > *:first-child {
   padding-left: 0;
 }
 
-.c16 > *:last-child {
+.c13 > *:last-child {
   padding-right: 0;
 }
 
-.c8 {
+.c5 {
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
@@ -891,7 +869,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   border-bottom: 1px solid #282823;
 }
 
-.c10 {
+.c7 {
   overflow: hidden;
 }
 
@@ -899,26 +877,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
   position: relative;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c5 {
-  padding-left: 4px;
-}
-
 .c0 {
   background-color: #F5F5F5;
 }
 
 .c0:not(:last-of-type) {
-  margin-bottom: 40px;
-}
-
-.c3:not(:last-of-type) {
   margin-bottom: 40px;
 }
 
@@ -938,71 +901,64 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
     Table With Different Widths and Custom Flag Cell
   </span>
   <div
-    className="c2 c3"
+    className="c2"
     role="table"
   >
-    <caption
-      className="c4"
-    >
-      <span
-        className="c1 c5"
-      />
-    </caption>
     <div
-      className="c6 c7 c8"
+      className="c3 c4 c5"
       role="row"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
         role="columnheader"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c13"
+            className="c10"
           >
             Flex 1
           </span>
         </div>
       </div>
       <div
-        className="c14 c10"
+        className="c11 c7"
         role="columnheader"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c13"
+            className="c10"
           >
             Fifteen percent
           </span>
         </div>
       </div>
       <div
-        className="c15 c10"
+        className="c12 c7"
         role="columnheader"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c13"
+            className="c10"
           >
             Loooooooooooooong header set width
           </span>
         </div>
       </div>
       <div
-        className="c9 c10"
+        className="c6 c7"
         role="columnheader"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c13"
+            className="c10"
           >
             Default
           </span>
@@ -1010,60 +966,60 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
       </div>
     </div>
     <div
-      className="c6 c16"
+      className="c3 c13"
       role="row"
     >
       <div
-        className="c9 c17"
+        className="c6 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 1-1
           </span>
         </div>
       </div>
       <div
-        className="c14 c17"
+        className="c11 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Very long cell content that should be truncated or ellipsized depepending on your language preferences
           </span>
         </div>
       </div>
       <div
-        className="c15 c17"
+        className="c12 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 1-3
           </span>
         </div>
       </div>
       <div
-        className="c9 c17"
+        className="c6 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 1-4
           </span>
@@ -1071,55 +1027,55 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
       </div>
     </div>
     <div
-      className="c6 c16"
+      className="c3 c13"
       role="row"
     >
       <div
-        className="c9 c17"
+        className="c6 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 2-1
           </span>
         </div>
       </div>
       <div
-        className="c14 c17"
+        className="c11 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 2-2
           </span>
         </div>
       </div>
       <div
-        className="c15 c17"
+        className="c12 c14"
         role="cell"
       >
         <div
-          className="c19 c20"
+          className="c16 c17"
         >
           <div
-            className="c11 c12"
+            className="c8 c9"
           >
             <span
-              className="c18"
+              className="c15"
             >
               Long cell with flag
             </span>
           </div>
           <svg
-            className="c21"
+            className="c18"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -1160,14 +1116,14 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
         </div>
       </div>
       <div
-        className="c9 c17"
+        className="c6 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 2-4
           </span>
@@ -1175,60 +1131,60 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
       </div>
     </div>
     <div
-      className="c6 c16"
+      className="c3 c13"
       role="row"
     >
       <div
-        className="c9 c17"
+        className="c6 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 3-1
           </span>
         </div>
       </div>
       <div
-        className="c14 c17"
+        className="c11 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 3-2
           </span>
         </div>
       </div>
       <div
-        className="c15 c17"
+        className="c12 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 3-3
           </span>
         </div>
       </div>
       <div
-        className="c9 c17"
+        className="c6 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 3-4
           </span>
@@ -1240,7 +1196,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
 `;
 
 exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Different Alignments Table 1`] = `
-.c6 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1254,16 +1210,16 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Dif
   margin-right: -4px;
 }
 
-.c6 > * {
+.c3 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c6 > *:not(:first-child) {
+.c3 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c9 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1277,7 +1233,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Dif
   flex: 1;
 }
 
-.c14 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1295,7 +1251,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Dif
   flex: 1;
 }
 
-.c15 {
+.c12 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1322,7 +1278,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Dif
   line-height: 1.3333333333333333;
 }
 
-.c13 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1331,7 +1287,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Dif
   line-height: 1.4285714285714286;
 }
 
-.c18 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1340,7 +1296,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Dif
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c8 {
   display: inline-block;
   width: 100%;
   text-overflow: ellipsis;
@@ -1348,15 +1304,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Dif
   overflow: hidden;
 }
 
-.c12 {
+.c9 {
   width: inherit;
 }
 
-.c17 {
+.c14 {
   overflow: hidden;
 }
 
-.c7 {
+.c4 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -1368,15 +1324,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Dif
   margin-left: 0;
 }
 
-.c7 > *:first-child {
+.c4 > *:first-child {
   padding-left: 0;
 }
 
-.c7 > *:last-child {
+.c4 > *:last-child {
   padding-right: 0;
 }
 
-.c16 {
+.c13 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -1388,19 +1344,19 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Dif
   margin-left: 0;
 }
 
-.c16:hover {
+.c13:hover {
   background: #F5F5F5;
 }
 
-.c16 > *:first-child {
+.c13 > *:first-child {
   padding-left: 0;
 }
 
-.c16 > *:last-child {
+.c13 > *:last-child {
   padding-right: 0;
 }
 
-.c8 {
+.c5 {
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
@@ -1408,7 +1364,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Dif
   border-bottom: 1px solid #282823;
 }
 
-.c10 {
+.c7 {
   overflow: hidden;
 }
 
@@ -1416,26 +1372,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Dif
   position: relative;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c5 {
-  padding-left: 4px;
-}
-
 .c0 {
   background-color: #F5F5F5;
 }
 
 .c0:not(:last-of-type) {
-  margin-bottom: 40px;
-}
-
-.c3:not(:last-of-type) {
   margin-bottom: 40px;
 }
 
@@ -1455,71 +1396,64 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Dif
     Table With Different Alignments
   </span>
   <div
-    className="c2 c3"
+    className="c2"
     role="table"
   >
-    <caption
-      className="c4"
-    >
-      <span
-        className="c1 c5"
-      />
-    </caption>
     <div
-      className="c6 c7 c8"
+      className="c3 c4 c5"
       role="row"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
         role="columnheader"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c13"
+            className="c10"
           >
             Left
           </span>
         </div>
       </div>
       <div
-        className="c14 c10"
+        className="c11 c7"
         role="columnheader"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c13"
+            className="c10"
           >
             Right
           </span>
         </div>
       </div>
       <div
-        className="c14 c10"
+        className="c11 c7"
         role="columnheader"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c13"
+            className="c10"
           >
             Right
           </span>
         </div>
       </div>
       <div
-        className="c15 c10"
+        className="c12 c7"
         role="columnheader"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c13"
+            className="c10"
           >
             Center
           </span>
@@ -1527,60 +1461,60 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Dif
       </div>
     </div>
     <div
-      className="c6 c16"
+      className="c3 c13"
       role="row"
     >
       <div
-        className="c9 c17"
+        className="c6 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 1-1
           </span>
         </div>
       </div>
       <div
-        className="c14 c17"
+        className="c11 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 1-2
           </span>
         </div>
       </div>
       <div
-        className="c14 c17"
+        className="c11 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 1-3
           </span>
         </div>
       </div>
       <div
-        className="c15 c17"
+        className="c12 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 1-4
           </span>
@@ -1588,60 +1522,60 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Dif
       </div>
     </div>
     <div
-      className="c6 c16"
+      className="c3 c13"
       role="row"
     >
       <div
-        className="c9 c17"
+        className="c6 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 2-1
           </span>
         </div>
       </div>
       <div
-        className="c14 c17"
+        className="c11 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 2-2
           </span>
         </div>
       </div>
       <div
-        className="c14 c17"
+        className="c11 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 2-3
           </span>
         </div>
       </div>
       <div
-        className="c15 c17"
+        className="c12 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 2-4
           </span>
@@ -1649,60 +1583,60 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Dif
       </div>
     </div>
     <div
-      className="c6 c16"
+      className="c3 c13"
       role="row"
     >
       <div
-        className="c9 c17"
+        className="c6 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 3-1
           </span>
         </div>
       </div>
       <div
-        className="c14 c17"
+        className="c11 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 3-2
           </span>
         </div>
       </div>
       <div
-        className="c14 c17"
+        className="c11 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 3-3
           </span>
         </div>
       </div>
       <div
-        className="c15 c17"
+        className="c12 c14"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c18"
+            className="c15"
           >
             Cell 3-4
           </span>
@@ -1714,7 +1648,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Dif
 `;
 
 exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Media Columns 1`] = `
-.c6 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1728,16 +1662,16 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Med
   margin-right: -4px;
 }
 
-.c6 > * {
+.c3 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c6 > *:not(:first-child) {
+.c3 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c9 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1751,7 +1685,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Med
   flex: 1;
 }
 
-.c14 {
+.c11 {
   box-sizing: border-box;
   display: none;
   -webkit-flex-wrap: nowrap;
@@ -1772,7 +1706,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Med
   line-height: 1.3333333333333333;
 }
 
-.c13 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1781,7 +1715,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Med
   line-height: 1.4285714285714286;
 }
 
-.c17 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1790,7 +1724,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Med
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c8 {
   display: inline-block;
   width: 100%;
   text-overflow: ellipsis;
@@ -1798,15 +1732,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Med
   overflow: hidden;
 }
 
-.c12 {
+.c9 {
   width: inherit;
 }
 
-.c16 {
+.c13 {
   overflow: hidden;
 }
 
-.c7 {
+.c4 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -1818,15 +1752,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Med
   margin-left: 0;
 }
 
-.c7 > *:first-child {
+.c4 > *:first-child {
   padding-left: 0;
 }
 
-.c7 > *:last-child {
+.c4 > *:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c12 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -1838,19 +1772,19 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Med
   margin-left: 0;
 }
 
-.c15:hover {
+.c12:hover {
   background: #F5F5F5;
 }
 
-.c15 > *:first-child {
+.c12 > *:first-child {
   padding-left: 0;
 }
 
-.c15 > *:last-child {
+.c12 > *:last-child {
   padding-right: 0;
 }
 
-.c8 {
+.c5 {
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
@@ -1858,23 +1792,12 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Med
   border-bottom: 1px solid #282823;
 }
 
-.c10 {
+.c7 {
   overflow: hidden;
 }
 
 .c2 {
   position: relative;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c5 {
-  padding-left: 4px;
 }
 
 .c0 {
@@ -1885,12 +1808,8 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Med
   margin-bottom: 40px;
 }
 
-.c3:not(:last-of-type) {
-  margin-bottom: 40px;
-}
-
 @media (min-width:976px) {
-  .c14 {
+  .c11 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1920,58 +1839,51 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Med
     Table With Columns Hidden Based On Screen Size
   </span>
   <div
-    className="c2 c3"
+    className="c2"
     role="table"
   >
-    <caption
-      className="c4"
-    >
-      <span
-        className="c1 c5"
-      />
-    </caption>
     <div
-      className="c6 c7 c8"
+      className="c3 c4 c5"
       role="row"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
         role="columnheader"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c13"
+            className="c10"
           >
             Header 1
           </span>
         </div>
       </div>
       <div
-        className="c14 c10"
+        className="c11 c7"
         hidden={true}
         role="columnheader"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c13"
+            className="c10"
           >
             Hidden column on mobile
           </span>
         </div>
       </div>
       <div
-        className="c9 c10"
+        className="c6 c7"
         role="columnheader"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c13"
+            className="c10"
           >
             Header 3
           </span>
@@ -1979,47 +1891,47 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Med
       </div>
     </div>
     <div
-      className="c6 c15"
+      className="c3 c12"
       role="row"
     >
       <div
-        className="c9 c16"
+        className="c6 c13"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c17"
+            className="c14"
           >
             Cell 1-1
           </span>
         </div>
       </div>
       <div
-        className="c14 c16"
+        className="c11 c13"
         hidden={true}
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c17"
+            className="c14"
           >
             Hidden on mobile
           </span>
         </div>
       </div>
       <div
-        className="c9 c16"
+        className="c6 c13"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c17"
+            className="c14"
           >
             Cell 1-3
           </span>
@@ -2027,47 +1939,47 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Med
       </div>
     </div>
     <div
-      className="c6 c15"
+      className="c3 c12"
       role="row"
     >
       <div
-        className="c9 c16"
+        className="c6 c13"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c17"
+            className="c14"
           >
             Cell 2-1
           </span>
         </div>
       </div>
       <div
-        className="c14 c16"
+        className="c11 c13"
         hidden={true}
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c17"
+            className="c14"
           >
             Hidden on mobile
           </span>
         </div>
       </div>
       <div
-        className="c9 c16"
+        className="c6 c13"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c17"
+            className="c14"
           >
             Cell 2-3
           </span>
@@ -2075,47 +1987,47 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Med
       </div>
     </div>
     <div
-      className="c6 c15"
+      className="c3 c12"
       role="row"
     >
       <div
-        className="c9 c16"
+        className="c6 c13"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c17"
+            className="c14"
           >
             Cell 3-1
           </span>
         </div>
       </div>
       <div
-        className="c14 c16"
+        className="c11 c13"
         hidden={true}
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c17"
+            className="c14"
           >
             Hidden on mobile
           </span>
         </div>
       </div>
       <div
-        className="c9 c16"
+        className="c6 c13"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c17"
+            className="c14"
           >
             Cell 3-3
           </span>

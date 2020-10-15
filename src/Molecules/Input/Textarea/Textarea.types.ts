@@ -5,6 +5,7 @@ export type Props = {
   /** But you can hide it visually */
   hideLabel?: boolean;
   labelTooltip?: string;
+  labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
   autoFocus?: boolean;
   name?: string;
   error?: string;

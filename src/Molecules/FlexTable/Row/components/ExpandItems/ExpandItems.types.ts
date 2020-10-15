@@ -7,6 +7,7 @@ export type RenderFunc = (props: RenderPropArguments) => ReactNode;
 export type ExpandItemProps = {
   label: ReactNode | RenderFunc;
   value: ReactNode | RenderFunc;
+  hidden?: boolean;
 };
 
 export type ExpandItems = Array<ExpandItemProps>;

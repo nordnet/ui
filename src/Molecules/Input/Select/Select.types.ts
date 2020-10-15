@@ -20,6 +20,8 @@ export type Props = {
   extraInfo?: string;
   success?: boolean;
   hideLabel?: boolean;
+  labelTooltip?: string;
+  labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
   placeholder?: string;
   label: string;
   name?: string;
