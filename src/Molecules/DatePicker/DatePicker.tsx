@@ -10,7 +10,7 @@ import { Props } from './DatePicker.types';
  * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
 import Input from '../Input';
-import { Box, Flexbox, Icon, DropdownBubble } from '../..';
+import { Box, Icon, DropdownBubble } from '../..';
 import { assert, isUndefined } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
 import { newDate, getLocale, isValid, getDateFormat } from './shared/dateUtils';
@@ -28,6 +28,10 @@ const StyledDropdownBubble = styled(DropdownBubble)`
   &:before {
     display: none;
   }
+`;
+
+const StyledDropdownBubbleWrapper = styled.div`
+  position: absolute;
 `;
 
 export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) => {
@@ -159,22 +163,24 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
 
   return (
     <div ref={ref as React.Ref<HTMLDivElement>}>
-      <Flexbox container>
-        <StyledInputText
-          label={label}
-          disabled={disabled}
-          id={id}
-          data-testid="datepicker-input"
-          placeholder={dateFormat.toLowerCase()}
-          value={inputValue}
-          leftAddon={inputLeftAddon}
-          rightAddon={inputRightAddon}
-          onChange={handleInputOnChange}
-          onFocus={handleInputOnFocus}
-          width={width}
-        />
-      </Flexbox>
-      {open ? <StyledDropdownBubble ref={datepickerRef}>{datepicker}</StyledDropdownBubble> : null}
+      <StyledInputText
+        label={label}
+        disabled={disabled}
+        id={id}
+        data-testid="datepicker-input"
+        placeholder={dateFormat.toLowerCase()}
+        value={inputValue}
+        leftAddon={inputLeftAddon}
+        rightAddon={inputRightAddon}
+        onChange={handleInputOnChange}
+        onFocus={handleInputOnFocus}
+        width={width}
+      />
+      {open ? (
+        <StyledDropdownBubbleWrapper>
+          <StyledDropdownBubble ref={datepickerRef}>{datepicker}</StyledDropdownBubble>
+        </StyledDropdownBubbleWrapper>
+      ) : null}
     </div>
   );
 }) as any) as React.FC<Props> & {};
