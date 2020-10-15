@@ -1,8 +1,9 @@
 export type CalendarDayProps = {
-  className?: string;
+  className?: string | Array<string>;
   date: Date;
   disabled?: boolean;
   enabled?: boolean;
+  hover?: boolean;
   locale: any;
   onClick?: (date: Date) => void;
   sameMonth?: boolean;
@@ -10,10 +11,10 @@ export type CalendarDayProps = {
 };
 
 export type Props = {
-  locale: string;
   disableDate?: (date: Date) => boolean;
   enableDate?: (date: Date) => boolean;
-  onClick: (date: Date) => void;
+  locale: string;
   now: Date;
-  selectedDate?: Date;
+  onClick: (date: Date) => void;
+  selectedDate: Date;
 };

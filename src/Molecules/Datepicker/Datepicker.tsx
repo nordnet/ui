@@ -69,6 +69,7 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
 
   const handleOnDateCliked = useCallback(
     (date: Date) => {
+      setInputValue(format(date, dateFormat, opts));
       setSelectedDate(date);
 
       if (onChange) {
@@ -77,7 +78,7 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
 
       setOpen(false);
     },
-    [onChange, setSelectedDate, setOpen],
+    [dateFormat, opts, onChange, setSelectedDate, setOpen],
   );
 
   const handleOnMonthChange = useCallback(
@@ -140,7 +141,7 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         now={now}
         locale={locale}
         onClick={handleOnDateCliked}
-        selectedDate={selectedDate}
+        selectedDate={selectedDate as Date}
       />
     </Box>
   );

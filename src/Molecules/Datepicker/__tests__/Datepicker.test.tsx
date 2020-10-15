@@ -203,9 +203,17 @@ test('Select previous date with arrow left', async () => {
   const calendar = getByTestId('datepicker-calendar');
   fireEvent.keyDown(calendar, {
     key: 'ArrowLeft',
-    code: 'ArrowLeft',
     keyCode: 37,
-    charCode: 37,
+  });
+
+  fireEvent.keyUp(calendar, {
+    key: 'ArrowLeft',
+    keyCode: 37,
+  });
+
+  fireEvent.keyDown(calendar, {
+    key: 'Enter',
+    keyCode: 13,
   });
 });
 
@@ -228,9 +236,17 @@ test('Select next date with arrow right', async () => {
   const calendar = getByTestId('datepicker-calendar');
   fireEvent.keyDown(calendar, {
     key: 'ArrowRight',
-    code: 'ArrowRight',
     keyCode: 39,
-    charCode: 39,
+  });
+
+  fireEvent.keyUp(calendar, {
+    key: 'ArrowRight',
+    keyCode: 39,
+  });
+
+  fireEvent.keyDown(calendar, {
+    key: 'Enter',
+    keyCode: 13,
   });
 });
 
@@ -253,9 +269,17 @@ test('Select previous week date with arrow up', async () => {
   const calendar = getByTestId('datepicker-calendar');
   fireEvent.keyDown(calendar, {
     key: 'ArrowUp',
-    code: 'ArrowUp',
     keyCode: 38,
-    charCode: 38,
+  });
+
+  fireEvent.keyUp(calendar, {
+    key: 'ArrowUp',
+    keyCode: 38,
+  });
+
+  fireEvent.keyDown(calendar, {
+    key: 'Enter',
+    keyCode: 13,
   });
 });
 
@@ -278,9 +302,17 @@ test('Select next week date with arrow up', async () => {
   const calendar = getByTestId('datepicker-calendar');
   fireEvent.keyDown(calendar, {
     key: 'ArrowDown',
-    code: 'ArrowDown',
     keyCode: 40,
-    charCode: 40,
+  });
+
+  fireEvent.keyUp(calendar, {
+    key: 'ArrowDown',
+    keyCode: 40,
+  });
+
+  fireEvent.keyDown(calendar, {
+    key: 'Enter',
+    keyCode: 13,
   });
 });
 

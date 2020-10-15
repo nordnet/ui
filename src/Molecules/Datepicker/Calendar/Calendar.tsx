@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import format from 'date-fns/format';
 import isSameDay from 'date-fns/isSameDay';
 import isSameMonth from 'date-fns/isSameMonth';
@@ -6,7 +6,7 @@ import isToday from 'date-fns/isToday';
 import styled from 'styled-components';
 import { Box, Flexbox, Typography } from '../../..';
 import { useKeyPress } from '../../../common/Hooks';
-import { getCalendar, getLocale } from '../shared/dateUtils';
+import { getCalendar, getLocale, newDate } from '../shared/dateUtils';
 import { CalendarDayProps, Props } from './Calendar.types';
 
 const StyledWeekDay = styled(Box)`
@@ -31,7 +31,8 @@ const StyledCalendarDay = styled(Box)`
     border: 1px solid ${({ theme }) => theme.color.inputBorder};
   }
 
-  &:hover {
+  &:hover,
+  &.hover {
     border: 1px solid ${({ theme }) => theme.color.cta};
   }
 
@@ -55,19 +56,21 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
   locale,
   onClick,
   sameMonth = true,
+  hover = false,
   selected,
 }) => {
   const classNames: Array<string> = [
-    className,
     disabled || (typeof enabled === 'boolean' && !enabled) ? 'disabled' : '',
     selected ? 'selected' : '',
+    !selected && hover ? 'hover' : '',
     isToday(date) ? 'today' : '',
-  ];
+  ].concat(className);
 
   const textColor: string | undefined = [
     disabled || (typeof enabled === 'boolean' && !enabled) ? 'label' : '',
     !sameMonth && !selected ? 'label' : '',
     selected ? 'buttonText' : '',
+    !selected && hover ? 'text' : '',
   ]
     .filter((c) => c)
     .shift();
@@ -111,23 +114,26 @@ const Calendar: React.FC<Props> = ({
   const arrowRight = useKeyPress('ArrowRight');
   const arrowUp = useKeyPress('ArrowUp');
   const arrowDown = useKeyPress('ArrowDown');
-  const arrowDate = selectedDate || now;
+  const enter = useKeyPress('Enter');
+  const [hoverDate, setHoverDate] = useState<Date>(newDate(selectedDate || now));
 
   useEffect(() => {
     if (arrowLeft) {
-      arrowDate.setDate(arrowDate.getDate() - 1);
-      onClick(arrowDate);
+      hoverDate.setDate(hoverDate.getDate() - 1);
+      setHoverDate(hoverDate);
     } else if (arrowRight) {
-      arrowDate.setDate(arrowDate.getDate() + 1);
-      onClick(arrowDate);
+      hoverDate.setDate(hoverDate.getDate() + 1);
+      setHoverDate(hoverDate);
     } else if (arrowUp) {
-      arrowDate.setDate(arrowDate.getDate() - 7);
-      onClick(arrowDate);
+      hoverDate.setDate(hoverDate.getDate() - 7);
+      setHoverDate(hoverDate);
     } else if (arrowDown) {
-      arrowDate.setDate(arrowDate.getDate() + 7);
-      onClick(arrowDate);
+      hoverDate.setDate(hoverDate.getDate() + 7);
+      setHoverDate(hoverDate);
+    } else if (enter) {
+      onClick(hoverDate);
     }
-  }, [arrowDate, arrowLeft, arrowRight, arrowUp, arrowDown, onClick]);
+  }, [hoverDate, arrowLeft, arrowRight, arrowUp, arrowDown, enter, onClick, setHoverDate]);
 
   const localeObj = getLocale(locale);
   const calendar = getCalendar(now, {
@@ -157,6 +163,7 @@ const Calendar: React.FC<Props> = ({
               selected={selectedDate && isSameDay(selectedDate, d)}
               sameMonth={isSameMonth(now, d)}
               locale={localeObj}
+              hover={hoverDate && isSameDay(hoverDate, d)}
             />
           ))}
         </Flexbox>
