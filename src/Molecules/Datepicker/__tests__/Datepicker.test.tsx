@@ -2,7 +2,7 @@ import React from 'react';
 import { render, fireEvent, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { advanceTo, clear } from 'jest-date-mock';
-import { Datepicker } from '../Datepicker';
+import { DatePicker } from '../DatePicker';
 import { PageProviders } from '../../../common/testUtils';
 
 afterEach(cleanup);
@@ -23,7 +23,7 @@ test('Select single date', async () => {
 
   const { getByText, getByTestId } = render(
     <PageProviders>
-      <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
     </PageProviders>,
   );
 
@@ -43,7 +43,7 @@ test('Select previous month', async () => {
 
   const { getByText, getByTestId } = render(
     <PageProviders>
-      <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
     </PageProviders>,
   );
 
@@ -66,7 +66,7 @@ test('Select next month with left arrow', async () => {
 
   const { getByText, getByTestId } = render(
     <PageProviders>
-      <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
     </PageProviders>,
   );
 
@@ -89,7 +89,7 @@ test('Select next month with right arrow', async () => {
 
   const { getByText, getByTestId } = render(
     <PageProviders>
-      <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
     </PageProviders>,
   );
 
@@ -112,7 +112,7 @@ test('Change month with select input', async () => {
 
   const { getByText, getByTestId } = render(
     <PageProviders>
-      <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
     </PageProviders>,
   );
 
@@ -138,7 +138,7 @@ test('Change year with select input', async () => {
 
   const { getByText, getByTestId } = render(
     <PageProviders>
-      <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
     </PageProviders>,
   );
 
@@ -163,7 +163,7 @@ test('Disable certain dates', async () => {
 
   const { getByText, getByTestId } = render(
     <PageProviders>
-      <Datepicker
+      <DatePicker
         id={INPUT_ID}
         label="Label"
         onChange={onChange}
@@ -193,7 +193,7 @@ test('Select previous date with arrow left', async () => {
 
   const { getByTestId } = render(
     <PageProviders>
-      <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
     </PageProviders>,
   );
 
@@ -226,7 +226,7 @@ test('Select next date with arrow right', async () => {
 
   const { getByTestId } = render(
     <PageProviders>
-      <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
     </PageProviders>,
   );
 
@@ -259,7 +259,7 @@ test('Select previous week date with arrow up', async () => {
 
   const { getByTestId } = render(
     <PageProviders>
-      <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
     </PageProviders>,
   );
 
@@ -292,7 +292,7 @@ test('Select next week date with arrow up', async () => {
 
   const { getByTestId } = render(
     <PageProviders>
-      <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
     </PageProviders>,
   );
 
@@ -324,7 +324,7 @@ test('Enter date manually', async () => {
 
   const { getByText, getByTestId } = render(
     <PageProviders>
-      <Datepicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
     </PageProviders>,
   );
 

@@ -1,19 +1,19 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 import isSameMonth from 'date-fns/isSameMonth';
-import { Datepicker } from './Datepicker';
+import { DatePicker } from './DatePicker';
 
 export default {
-  title: 'Molecules | Datepicker',
+  title: 'Molecules | DatePicker',
   parameters: {
-    component: Datepicker,
+    component: DatePicker,
   },
 };
 
 const dateNow = new Date();
 
 export const defaultStory = () => {
-  return <Datepicker id="input-id" label="Label" onChange={action('onChange')} />;
+  return <DatePicker id="input-id" label="Label" onChange={action('onChange')} />;
 };
 
 defaultStory.story = {
@@ -22,7 +22,7 @@ defaultStory.story = {
 
 export const disableDates = () => {
   return (
-    <Datepicker
+    <DatePicker
       id="disable-dates-input"
       label="Label"
       disableDate={(date) => !isSameMonth(dateNow, date)}
@@ -37,7 +37,7 @@ disableDates.story = {
 
 export const enableDates = () => {
   return (
-    <Datepicker
+    <DatePicker
       id="enable-dates-input"
       label="Label"
       enableDate={(date) => isSameMonth(dateNow, date)}
@@ -51,7 +51,7 @@ enableDates.story = {
 };
 
 export const disabledInput = () => {
-  return <Datepicker id="disabled-input" label="Label" disabled />;
+  return <DatePicker id="disabled-input" label="Label" disabled />;
 };
 
 disabledInput.story = {

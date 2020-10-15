@@ -4,7 +4,7 @@ import parse from 'date-fns/parse';
 import format from 'date-fns/format';
 import isMatch from 'date-fns/isMatch';
 import { useIntl } from 'react-intl';
-import { Props } from './Datepicker.types';
+import { Props } from './DatePicker.types';
 import { Box, Flexbox, Input, Icon, DropdownBubble } from '../..';
 import { assert, isUndefined } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
@@ -25,7 +25,7 @@ const StyledDropdownBubble = styled(DropdownBubble)`
   }
 `;
 
-export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) => {
+export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) => {
   const {
     ariaLabelPrevious,
     ariaLabelNext,
@@ -38,19 +38,19 @@ export const Datepicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     width,
   } = props;
 
-  assert(Boolean(props.id), `Datepicker: "id" is required.`);
+  assert(Boolean(props.id), `DatePicker: "id" is required.`);
 
   if (disableDate) {
     assert(
       isUndefined(enableDate),
-      `Datepicker: "enableDate" cannot be used at the same time as "disableDate".`,
+      `DatePicker: "enableDate" cannot be used at the same time as "disableDate".`,
     );
   }
 
   if (enableDate) {
     assert(
       isUndefined(disableDate),
-      `Datepicker: "disableDate" cannot be used at the same time as "enableDate".`,
+      `DatePicker: "disableDate" cannot be used at the same time as "enableDate".`,
     );
   }
 
