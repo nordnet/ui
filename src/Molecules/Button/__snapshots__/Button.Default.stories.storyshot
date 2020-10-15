@@ -1239,17 +1239,7 @@ Array [
       Primary
     </span>
   </div>,
-  .c5 {
-  display: inline-block;
-  -webkit-animation: spinner 0.6s linear infinite;
-  animation: spinner 0.6s linear infinite;
-}
-
-.c6 {
-  display: block;
-}
-
-.c4 {
+  .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1258,7 +1248,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c8 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1338,7 +1328,7 @@ Array [
   background-color: hsl(223.5,100%,40%);
 }
 
-.c7 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1368,29 +1358,29 @@ Array [
   cursor: pointer;
 }
 
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c7::before {
+.c5::before {
   content: '';
   display: block;
   position: absolute;
@@ -1401,11 +1391,11 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c7:hover {
+.c5:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c7:active {
+.c5:active {
   background-color: hsl(223.5,100%,40%);
 }
 
@@ -1496,70 +1486,7 @@ Array [
               Medium
             </span>
           </span>
-          <span>
-            <span
-              className="c5"
-            >
-              <svg
-                className="c6"
-                height={20}
-                viewBox="0 0 24 24"
-                width={20}
-              >
-                <defs>
-                  <linearGradient
-                    id="spinner-spinner-primary-m-undefined-1"
-                    x1="50%"
-                    x2="50%"
-                    y1="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      stopColor="#FFFFFF"
-                      stopOpacity="0"
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="#FFFFFF"
-                      stopOpacity=".5"
-                    />
-                  </linearGradient>
-                  <linearGradient
-                    id="spinner-spinner-primary-m-undefined-2"
-                    x1="50%"
-                    x2="50%"
-                    y1="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      stopColor="#FFFFFF"
-                      stopOpacity=".5"
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="#FFFFFF"
-                    />
-                  </linearGradient>
-                </defs>
-                <g
-                  fill="none"
-                  fillRule="evenodd"
-                >
-                  <path
-                    d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-                    fill="url(#spinner-spinner-primary-m-undefined-1)"
-                  />
-                  <path
-                    d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-                    fill="url(#spinner-spinner-primary-m-undefined-2)"
-                    transform="rotate(-180 6 12)"
-                  />
-                </g>
-              </svg>
-            </span>
-          </span>
+          <span />
         </button>
       </div>
     </div>
@@ -1574,81 +1501,18 @@ Array [
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c7"
+          className="NormalizedButton__Button-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="c6"
             >
               Large
             </span>
           </span>
-          <span>
-            <span
-              className="c5"
-            >
-              <svg
-                className="c6"
-                height={24}
-                viewBox="0 0 24 24"
-                width={24}
-              >
-                <defs>
-                  <linearGradient
-                    id="spinner-spinner-primary-l-undefined-1"
-                    x1="50%"
-                    x2="50%"
-                    y1="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      stopColor="#FFFFFF"
-                      stopOpacity="0"
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="#FFFFFF"
-                      stopOpacity=".5"
-                    />
-                  </linearGradient>
-                  <linearGradient
-                    id="spinner-spinner-primary-l-undefined-2"
-                    x1="50%"
-                    x2="50%"
-                    y1="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      stopColor="#FFFFFF"
-                      stopOpacity=".5"
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="#FFFFFF"
-                    />
-                  </linearGradient>
-                </defs>
-                <g
-                  fill="none"
-                  fillRule="evenodd"
-                >
-                  <path
-                    d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-                    fill="url(#spinner-spinner-primary-l-undefined-1)"
-                  />
-                  <path
-                    d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-                    fill="url(#spinner-spinner-primary-l-undefined-2)"
-                    transform="rotate(-180 6 12)"
-                  />
-                </g>
-              </svg>
-            </span>
-          </span>
+          <span />
         </button>
       </div>
     </div>
@@ -1693,17 +1557,7 @@ Array [
       Primary with custom color
     </span>
   </div>,
-  .c5 {
-  display: inline-block;
-  -webkit-animation: spinner 0.6s linear infinite;
-  animation: spinner 0.6s linear infinite;
-}
-
-.c6 {
-  display: block;
-}
-
-.c4 {
+  .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1712,7 +1566,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c8 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1792,7 +1646,7 @@ Array [
   background-color: hsl(5.899999999999977,100%,40%);
 }
 
-.c7 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1822,29 +1676,29 @@ Array [
   cursor: pointer;
 }
 
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c7::before {
+.c5::before {
   content: '';
   display: block;
   position: absolute;
@@ -1855,11 +1709,11 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c7:hover {
+.c5:hover {
   background-color: hsl(5.899999999999977,100%,45%);
 }
 
-.c7:active {
+.c5:active {
   background-color: hsl(5.899999999999977,100%,40%);
 }
 
@@ -1950,70 +1804,7 @@ Array [
               Medium
             </span>
           </span>
-          <span>
-            <span
-              className="c5"
-            >
-              <svg
-                className="c6"
-                height={20}
-                viewBox="0 0 24 24"
-                width={20}
-              >
-                <defs>
-                  <linearGradient
-                    id="spinner-spinner-primary-m-#FF1900-1"
-                    x1="50%"
-                    x2="50%"
-                    y1="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      stopColor="#FFFFFF"
-                      stopOpacity="0"
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="#FFFFFF"
-                      stopOpacity=".5"
-                    />
-                  </linearGradient>
-                  <linearGradient
-                    id="spinner-spinner-primary-m-#FF1900-2"
-                    x1="50%"
-                    x2="50%"
-                    y1="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      stopColor="#FFFFFF"
-                      stopOpacity=".5"
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="#FFFFFF"
-                    />
-                  </linearGradient>
-                </defs>
-                <g
-                  fill="none"
-                  fillRule="evenodd"
-                >
-                  <path
-                    d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-                    fill="url(#spinner-spinner-primary-m-#FF1900-1)"
-                  />
-                  <path
-                    d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-                    fill="url(#spinner-spinner-primary-m-#FF1900-2)"
-                    transform="rotate(-180 6 12)"
-                  />
-                </g>
-              </svg>
-            </span>
-          </span>
+          <span />
         </button>
       </div>
     </div>
@@ -2028,81 +1819,18 @@ Array [
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c7"
+          className="NormalizedButton__Button-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="c6"
             >
               Large
             </span>
           </span>
-          <span>
-            <span
-              className="c5"
-            >
-              <svg
-                className="c6"
-                height={24}
-                viewBox="0 0 24 24"
-                width={24}
-              >
-                <defs>
-                  <linearGradient
-                    id="spinner-spinner-primary-l-#FF1900-1"
-                    x1="50%"
-                    x2="50%"
-                    y1="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      stopColor="#FFFFFF"
-                      stopOpacity="0"
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="#FFFFFF"
-                      stopOpacity=".5"
-                    />
-                  </linearGradient>
-                  <linearGradient
-                    id="spinner-spinner-primary-l-#FF1900-2"
-                    x1="50%"
-                    x2="50%"
-                    y1="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      stopColor="#FFFFFF"
-                      stopOpacity=".5"
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="#FFFFFF"
-                    />
-                  </linearGradient>
-                </defs>
-                <g
-                  fill="none"
-                  fillRule="evenodd"
-                >
-                  <path
-                    d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-                    fill="url(#spinner-spinner-primary-l-#FF1900-1)"
-                  />
-                  <path
-                    d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-                    fill="url(#spinner-spinner-primary-l-#FF1900-2)"
-                    transform="rotate(-180 6 12)"
-                  />
-                </g>
-              </svg>
-            </span>
-          </span>
+          <span />
         </button>
       </div>
     </div>
@@ -2147,17 +1875,7 @@ Array [
       Secondary
     </span>
   </div>,
-  .c5 {
-  display: inline-block;
-  -webkit-animation: spinner 0.6s linear infinite;
-  animation: spinner 0.6s linear infinite;
-}
-
-.c6 {
-  display: block;
-}
-
-.c4 {
+  .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2166,7 +1884,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c8 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2254,7 +1972,7 @@ Array [
   border-color: hsl(223.5,100%,35%);
 }
 
-.c7 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2284,29 +2002,29 @@ Array [
   cursor: pointer;
 }
 
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c7::before {
+.c5::before {
   content: '';
   display: block;
   position: absolute;
@@ -2317,19 +2035,19 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c7:hover {
+.c5:hover {
   color: hsl(223.5,100%,40%);
 }
 
-.c7:hover::before {
+.c5:hover::before {
   border-color: hsl(223.5,100%,40%);
 }
 
-.c7:active {
+.c5:active {
   color: hsl(223.5,100%,35%);
 }
 
-.c7:active::before {
+.c5:active::before {
   border-color: hsl(223.5,100%,35%);
 }
 
@@ -2420,70 +2138,7 @@ Array [
               Medium
             </span>
           </span>
-          <span>
-            <span
-              className="c5"
-            >
-              <svg
-                className="c6"
-                height={20}
-                viewBox="0 0 24 24"
-                width={20}
-              >
-                <defs>
-                  <linearGradient
-                    id="spinner-spinner-secondary-m-undefined-1"
-                    x1="50%"
-                    x2="50%"
-                    y1="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      stopColor="#0046FF"
-                      stopOpacity="0"
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="#0046FF"
-                      stopOpacity=".5"
-                    />
-                  </linearGradient>
-                  <linearGradient
-                    id="spinner-spinner-secondary-m-undefined-2"
-                    x1="50%"
-                    x2="50%"
-                    y1="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      stopColor="#0046FF"
-                      stopOpacity=".5"
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="#0046FF"
-                    />
-                  </linearGradient>
-                </defs>
-                <g
-                  fill="none"
-                  fillRule="evenodd"
-                >
-                  <path
-                    d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-                    fill="url(#spinner-spinner-secondary-m-undefined-1)"
-                  />
-                  <path
-                    d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-                    fill="url(#spinner-spinner-secondary-m-undefined-2)"
-                    transform="rotate(-180 6 12)"
-                  />
-                </g>
-              </svg>
-            </span>
-          </span>
+          <span />
         </button>
       </div>
     </div>
@@ -2498,81 +2153,18 @@ Array [
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c7"
+          className="NormalizedButton__Button-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="c6"
             >
               Large
             </span>
           </span>
-          <span>
-            <span
-              className="c5"
-            >
-              <svg
-                className="c6"
-                height={24}
-                viewBox="0 0 24 24"
-                width={24}
-              >
-                <defs>
-                  <linearGradient
-                    id="spinner-spinner-secondary-l-undefined-1"
-                    x1="50%"
-                    x2="50%"
-                    y1="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      stopColor="#0046FF"
-                      stopOpacity="0"
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="#0046FF"
-                      stopOpacity=".5"
-                    />
-                  </linearGradient>
-                  <linearGradient
-                    id="spinner-spinner-secondary-l-undefined-2"
-                    x1="50%"
-                    x2="50%"
-                    y1="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      stopColor="#0046FF"
-                      stopOpacity=".5"
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="#0046FF"
-                    />
-                  </linearGradient>
-                </defs>
-                <g
-                  fill="none"
-                  fillRule="evenodd"
-                >
-                  <path
-                    d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-                    fill="url(#spinner-spinner-secondary-l-undefined-1)"
-                  />
-                  <path
-                    d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-                    fill="url(#spinner-spinner-secondary-l-undefined-2)"
-                    transform="rotate(-180 6 12)"
-                  />
-                </g>
-              </svg>
-            </span>
-          </span>
+          <span />
         </button>
       </div>
     </div>
@@ -2617,17 +2209,7 @@ Array [
       Secondary with custom color
     </span>
   </div>,
-  .c5 {
-  display: inline-block;
-  -webkit-animation: spinner 0.6s linear infinite;
-  animation: spinner 0.6s linear infinite;
-}
-
-.c6 {
-  display: block;
-}
-
-.c4 {
+  .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2636,7 +2218,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c8 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2724,7 +2306,7 @@ Array [
   border-color: hsl(5.899999999999977,100%,35%);
 }
 
-.c7 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2754,29 +2336,29 @@ Array [
   cursor: pointer;
 }
 
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c7::before {
+.c5::before {
   content: '';
   display: block;
   position: absolute;
@@ -2787,19 +2369,19 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c7:hover {
+.c5:hover {
   color: hsl(5.899999999999977,100%,40%);
 }
 
-.c7:hover::before {
+.c5:hover::before {
   border-color: hsl(5.899999999999977,100%,40%);
 }
 
-.c7:active {
+.c5:active {
   color: hsl(5.899999999999977,100%,35%);
 }
 
-.c7:active::before {
+.c5:active::before {
   border-color: hsl(5.899999999999977,100%,35%);
 }
 
@@ -2890,70 +2472,7 @@ Array [
               Medium
             </span>
           </span>
-          <span>
-            <span
-              className="c5"
-            >
-              <svg
-                className="c6"
-                height={20}
-                viewBox="0 0 24 24"
-                width={20}
-              >
-                <defs>
-                  <linearGradient
-                    id="spinner-spinner-secondary-m-#FF1900-1"
-                    x1="50%"
-                    x2="50%"
-                    y1="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      stopColor="#FF1900"
-                      stopOpacity="0"
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="#FF1900"
-                      stopOpacity=".5"
-                    />
-                  </linearGradient>
-                  <linearGradient
-                    id="spinner-spinner-secondary-m-#FF1900-2"
-                    x1="50%"
-                    x2="50%"
-                    y1="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      stopColor="#FF1900"
-                      stopOpacity=".5"
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="#FF1900"
-                    />
-                  </linearGradient>
-                </defs>
-                <g
-                  fill="none"
-                  fillRule="evenodd"
-                >
-                  <path
-                    d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-                    fill="url(#spinner-spinner-secondary-m-#FF1900-1)"
-                  />
-                  <path
-                    d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-                    fill="url(#spinner-spinner-secondary-m-#FF1900-2)"
-                    transform="rotate(-180 6 12)"
-                  />
-                </g>
-              </svg>
-            </span>
-          </span>
+          <span />
         </button>
       </div>
     </div>
@@ -2968,81 +2487,18 @@ Array [
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c7"
+          className="NormalizedButton__Button-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="c6"
             >
               Large
             </span>
           </span>
-          <span>
-            <span
-              className="c5"
-            >
-              <svg
-                className="c6"
-                height={24}
-                viewBox="0 0 24 24"
-                width={24}
-              >
-                <defs>
-                  <linearGradient
-                    id="spinner-spinner-secondary-l-#FF1900-1"
-                    x1="50%"
-                    x2="50%"
-                    y1="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      stopColor="#FF1900"
-                      stopOpacity="0"
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="#FF1900"
-                      stopOpacity=".5"
-                    />
-                  </linearGradient>
-                  <linearGradient
-                    id="spinner-spinner-secondary-l-#FF1900-2"
-                    x1="50%"
-                    x2="50%"
-                    y1="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      stopColor="#FF1900"
-                      stopOpacity=".5"
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="#FF1900"
-                    />
-                  </linearGradient>
-                </defs>
-                <g
-                  fill="none"
-                  fillRule="evenodd"
-                >
-                  <path
-                    d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
-                    fill="url(#spinner-spinner-secondary-l-#FF1900-1)"
-                  />
-                  <path
-                    d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
-                    fill="url(#spinner-spinner-secondary-l-#FF1900-2)"
-                    transform="rotate(-180 6 12)"
-                  />
-                </g>
-              </svg>
-            </span>
-          </span>
+          <span />
         </button>
       </div>
     </div>
