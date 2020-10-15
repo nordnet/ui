@@ -23,7 +23,7 @@ const StyledInputText = styled(Input.Text)`
 
 const StyledDropdownBubble = styled(DropdownBubble)`
   max-width: ${({ theme }) => theme.spacing.unit(78)}px;
-  top: -11px;
+  top: -10px;
   &:after,
   &:before {
     display: none;
