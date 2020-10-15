@@ -3,7 +3,12 @@ import format from 'date-fns/format';
 import styled, { useTheme } from 'styled-components';
 import { getLocale } from '../shared/dateUtils';
 import { Props } from './SelectMonth.types';
-import { Box, Input, Icon, Flexbox, Typography } from '../../..';
+
+/**
+ * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and error will be thrown
+ */
+import Input from '../../Input';
+import { Box, Icon, Flexbox, Typography } from '../../..';
 import { capitalize } from '../shared/textUtils';
 
 const months = [...Array(12).keys()];

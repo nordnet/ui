@@ -5,7 +5,12 @@ import format from 'date-fns/format';
 import isMatch from 'date-fns/isMatch';
 import { useIntl } from 'react-intl';
 import { Props } from './DatePicker.types';
-import { Box, Flexbox, Input, Icon, DropdownBubble } from '../..';
+
+/**
+ * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
+ */
+import Input from '../Input';
+import { Box, Flexbox, Icon, DropdownBubble } from '../..';
 import { assert, isUndefined } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
 import { newDate, getLocale, isValid, getDateFormat } from './shared/dateUtils';

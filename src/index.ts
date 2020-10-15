@@ -33,6 +33,7 @@ import BarScale from './Molecules/BarScale';
 import Button from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
 import CollapsibleCard from './Molecules/CollapsibleCard';
+import DatePicker from './Molecules/DatePicker';
 import Drawer from './Molecules/Drawer';
 import FeedbackBanner from './Molecules/FeedbackBanner';
 import Fieldset from './Molecules/Fieldset';
@@ -90,6 +91,7 @@ export {
   createTheme,
   CssGrid,
   DateTime,
+  DatePicker,
   Drawer,
   DropdownBubble,
   Development,

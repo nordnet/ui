@@ -1,7 +1,11 @@
 import React, { useMemo, useState } from 'react';
 import styled, { useTheme } from 'styled-components';
 import { Props } from './SelectYear.types';
-import { Box, Input, Flexbox, Icon, Typography } from '../../..';
+/**
+ * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and error will be thrown
+ */
+import Input from '../../Input';
+import { Box, Flexbox, Icon, Typography } from '../../..';
 import { newDate } from '../shared/dateUtils';
 
 const StyledInputSelect = styled(Input.Select)`
