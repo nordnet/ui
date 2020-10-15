@@ -1,5 +1,5 @@
 import React, { useRef, useState, useCallback } from 'react';
-import styled from 'styled-components';
+import styled, { useTheme } from 'styled-components';
 import parse from 'date-fns/parse';
 import format from 'date-fns/format';
 import isMatch from 'date-fns/isMatch';
@@ -44,7 +44,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     disableDate,
     enableDate,
     id,
-    width,
+    width = 78,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -75,6 +75,8 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const [now, setNow] = useState<Date>(newDate());
   const [selectedDate, setSelectedDate] = useState<Date>();
   const [inputValue, setInputValue] = useState('');
+
+  const theme = useTheme();
 
   const handleOnDateCliked = useCallback(
     (date: Date) => {
@@ -174,7 +176,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         rightAddon={inputRightAddon}
         onChange={handleInputOnChange}
         onFocus={handleInputOnFocus}
-        width={width}
+        width={width ? `${theme.spacing.unit(width)}px` : ''}
       />
       {open ? (
         <StyledDropdownBubbleWrapper>
