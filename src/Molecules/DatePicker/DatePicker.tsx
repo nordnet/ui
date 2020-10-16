@@ -186,6 +186,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         onChange={handleInputOnChange}
         onFocus={handleInputOnFocus}
         width={width ? `${theme.spacing.unit(width)}px` : ''}
+        autoComplete="off"
       />
       {open ? (
         <StyledDropdownBubbleWrapper>
