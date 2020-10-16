@@ -8,7 +8,9 @@ import Input from '../../Input';
 import { Box, Flexbox, Icon, Typography } from '../../..';
 import { newDate } from '../shared/dateUtils';
 
-const StyledInputSelect = styled(Input.Select)`
+/* using styled like this as a workaround for 
+ Select.test.tsx failing because Input.Select is undefined */
+const StyledInputSelect = styled((props) => <Input.Select {...props} />)`
   > div > div > div {
     margin-right: -22px;
     margin-top: -10px;

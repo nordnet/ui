@@ -13,7 +13,9 @@ import { capitalize } from '../shared/textUtils';
 
 const months = [...Array(12).keys()];
 
-const StyledInputSelect = styled(Input.Select)`
+/* using styled like this as a workaround for 
+ Select.test.tsx failing because Input.Select is undefined */
+const StyledInputSelect = styled((props) => <Input.Select {...props} />)`
   margin-right: ${({ theme }) => theme.spacing.unit(3)}px;
 
   > div > div > div {
