@@ -45,6 +45,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     enableDate,
     id,
     open: openProp = false,
+    selectedDate: selectedDateProp,
     width = 78,
   } = props;
 
@@ -72,10 +73,12 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
 
   const dateFormat = getDateFormat(locale);
 
+  const initialInputValue = selectedDateProp ? format(selectedDateProp, dateFormat, opts) : '';
+
   const [open, setOpen] = useState<boolean>(openProp);
-  const [now, setNow] = useState<Date>(newDate());
-  const [selectedDate, setSelectedDate] = useState<Date>();
-  const [inputValue, setInputValue] = useState('');
+  const [now, setNow] = useState<Date>(selectedDateProp || newDate());
+  const [selectedDate, setSelectedDate] = useState<Date>(selectedDateProp || now);
+  const [inputValue, setInputValue] = useState<string>(initialInputValue);
 
   const theme = useTheme();
 

@@ -8,6 +8,7 @@ export type Props = {
   disabled?: boolean;
   enableDate?: (date: Date) => boolean;
   id: string;
+  selectedDate?: Date;
   width?: number;
   ref?: React.Ref<HTMLDivElement>;
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
