@@ -177,6 +177,7 @@ exports[`Storyshots Molecules | DatePicker Default 1`] = `
             className="c6"
           >
             <input
+              autoComplete="off"
               className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input"
               id="input-id"
@@ -390,6 +391,7 @@ exports[`Storyshots Molecules | DatePicker Disable certain dates 1`] = `
             className="c6"
           >
             <input
+              autoComplete="off"
               className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input"
               id="disable-dates-input"
@@ -599,6 +601,7 @@ exports[`Storyshots Molecules | DatePicker Disabled input 1`] = `
             className="c6"
           >
             <input
+              autoComplete="off"
               className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input"
               disabled={true}
@@ -813,6 +816,7 @@ exports[`Storyshots Molecules | DatePicker Enable certain dates 1`] = `
             className="c6"
           >
             <input
+              autoComplete="off"
               className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input"
               id="enable-dates-input"
@@ -1044,6 +1048,7 @@ exports[`Storyshots Molecules | DatePicker Side by side 1`] = `
                 className="c8"
               >
                 <input
+                  autoComplete="off"
                   className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
                   data-testid="datepicker-input"
                   id="input-id-side-one"
@@ -1106,6 +1111,7 @@ exports[`Storyshots Molecules | DatePicker Side by side 1`] = `
                 className="c8"
               >
                 <input
+                  autoComplete="off"
                   className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
                   data-testid="datepicker-input"
                   id="input-id-side-two"
