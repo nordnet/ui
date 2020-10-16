@@ -8,7 +8,7 @@ export type Props = {
   disabled?: boolean;
   enableDate?: (date: Date) => boolean;
   id: string;
-  width?: string | number;
+  width?: number;
   ref?: React.Ref<HTMLDivElement>;
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
 };

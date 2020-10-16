@@ -1,5 +1,5 @@
 import React, { useRef, useState, useCallback } from 'react';
-import styled from 'styled-components';
+import styled, { useTheme } from 'styled-components';
 import parse from 'date-fns/parse';
 import format from 'date-fns/format';
 import isMatch from 'date-fns/isMatch';
@@ -10,7 +10,7 @@ import { Props } from './DatePicker.types';
  * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
 import Input from '../Input';
-import { Box, Flexbox, Icon, DropdownBubble } from '../..';
+import { Box, Icon, DropdownBubble } from '../..';
 import { assert, isUndefined } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
 import { newDate, getLocale, isValid, getDateFormat } from './shared/dateUtils';
@@ -23,11 +23,15 @@ const StyledInputText = styled(Input.Text)`
 
 const StyledDropdownBubble = styled(DropdownBubble)`
   max-width: ${({ theme }) => theme.spacing.unit(78)}px;
-  top: -11px;
+  top: -10px;
   &:after,
   &:before {
     display: none;
   }
+`;
+
+const StyledDropdownBubbleWrapper = styled.div`
+  position: absolute;
 `;
 
 export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) => {
@@ -40,7 +44,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     disableDate,
     enableDate,
     id,
-    width,
+    width = 78,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -71,6 +75,8 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const [now, setNow] = useState<Date>(newDate());
   const [selectedDate, setSelectedDate] = useState<Date>();
   const [inputValue, setInputValue] = useState('');
+
+  const theme = useTheme();
 
   const handleOnDateCliked = useCallback(
     (date: Date) => {
@@ -159,22 +165,24 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
 
   return (
     <div ref={ref as React.Ref<HTMLDivElement>}>
-      <Flexbox container>
-        <StyledInputText
-          label={label}
-          disabled={disabled}
-          id={id}
-          data-testid="datepicker-input"
-          placeholder={dateFormat.toLowerCase()}
-          value={inputValue}
-          leftAddon={inputLeftAddon}
-          rightAddon={inputRightAddon}
-          onChange={handleInputOnChange}
-          onFocus={handleInputOnFocus}
-          width={width}
-        />
-      </Flexbox>
-      {open ? <StyledDropdownBubble ref={datepickerRef}>{datepicker}</StyledDropdownBubble> : null}
+      <StyledInputText
+        label={label}
+        disabled={disabled}
+        id={id}
+        data-testid="datepicker-input"
+        placeholder={dateFormat.toLowerCase()}
+        value={inputValue}
+        leftAddon={inputLeftAddon}
+        rightAddon={inputRightAddon}
+        onChange={handleInputOnChange}
+        onFocus={handleInputOnFocus}
+        width={width ? `${theme.spacing.unit(width)}px` : ''}
+      />
+      {open ? (
+        <StyledDropdownBubbleWrapper>
+          <StyledDropdownBubble ref={datepickerRef}>{datepicker}</StyledDropdownBubble>
+        </StyledDropdownBubbleWrapper>
+      ) : null}
     </div>
   );
 }) as any) as React.FC<Props> & {};

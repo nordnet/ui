@@ -2,6 +2,7 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import isSameMonth from 'date-fns/isSameMonth';
 import { DatePicker } from './DatePicker';
+import { Flexbox } from '../..';
 
 export default {
   title: 'Molecules | DatePicker',
@@ -56,4 +57,21 @@ export const disabledInput = () => {
 
 disabledInput.story = {
   name: 'Disabled input',
+};
+
+export const sideBySideStory = () => {
+  return (
+    <Flexbox container>
+      <Flexbox item>
+        <DatePicker id="input-id-side-one" label="Label" onChange={action('onChange')} />
+      </Flexbox>
+      <Flexbox item>
+        <DatePicker id="input-id-side-two" label="Label" onChange={action('onChange')} />
+      </Flexbox>
+    </Flexbox>
+  );
+};
+
+sideBySideStory.story = {
+  name: 'Side by side',
 };
