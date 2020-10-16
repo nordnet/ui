@@ -1,4 +1,4 @@
-import React, { useRef, useState, useCallback } from 'react';
+import React, { useRef, useState, useCallback, useEffect } from 'react';
 import styled, { useTheme } from 'styled-components';
 import parse from 'date-fns/parse';
 import format from 'date-fns/format';
@@ -44,6 +44,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     disableDate,
     enableDate,
     id,
+    open: openProp = false,
     width = 78,
   } = props;
 
@@ -71,12 +72,16 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
 
   const dateFormat = getDateFormat(locale);
 
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<boolean>(openProp);
   const [now, setNow] = useState<Date>(newDate());
   const [selectedDate, setSelectedDate] = useState<Date>();
   const [inputValue, setInputValue] = useState('');
 
   const theme = useTheme();
+
+  useEffect(() => {
+    setOpen(openProp);
+  }, [openProp]);
 
   const handleOnDateCliked = useCallback(
     (date: Date) => {
