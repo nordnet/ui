@@ -1,4 +1,4 @@
-import React, { useRef, useState, useCallback, useEffect } from 'react';
+import React, { useRef, useState, useCallback, useEffect, SyntheticEvent } from 'react';
 import styled, { useTheme } from 'styled-components';
 import parse from 'date-fns/parse';
 import format from 'date-fns/format';
@@ -10,7 +10,7 @@ import { Props } from './DatePicker.types';
  * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
 import Input from '../Input';
-import { Box, Icon, DropdownBubble } from '../..';
+import { Box, Icon, DropdownBubble, Button } from '../..';
 import { assert, isUndefined } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
 import { newDate, getLocale, isValid, getDateFormat } from './shared/dateUtils';
@@ -166,14 +166,26 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     </Box>
   );
 
-  const inputLeftAddon = open ? <Icon.CrossThin size={3} /> : null;
+  const inputLeftAddon = open ? (
+    <Button
+      variant="neutral"
+      type="button"
+      onClick={(e: SyntheticEvent) => {
+        // prevent default to avoid triggering focus on the input element
+        e.preventDefault();
+        setOpen(false);
+      }}
+    >
+      <Icon.CrossThin size={3} />
+    </Button>
+  ) : null;
   const inputRightAddon = <Icon.CalendarTwoRows size={6} />;
 
-  const datepickerRef = useRef<HTMLDivElement>(null);
-  useOnClickOutside(datepickerRef, () => setOpen(false));
+  const selfRef = useRef<HTMLDivElement>(null);
+  useOnClickOutside(selfRef, () => setOpen(false));
 
   return (
-    <div ref={ref as React.Ref<HTMLDivElement>}>
+    <div ref={(ref || selfRef) as React.Ref<HTMLDivElement>}>
       <StyledInputText
         label={label}
         disabled={disabled}
@@ -190,7 +202,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
       />
       {open ? (
         <StyledDropdownBubbleWrapper>
-          <StyledDropdownBubble ref={datepickerRef}>{datepicker}</StyledDropdownBubble>
+          <StyledDropdownBubble>{datepicker}</StyledDropdownBubble>
         </StyledDropdownBubbleWrapper>
       ) : null}
     </div>
