@@ -82,11 +82,6 @@ exports[`Storyshots Molecules | Input / Checkbox Checkboxes with different size 
   line-height: 1.4285714285714286;
 }
 
-.c1 {
-  width: auto;
-  display: inline-block;
-}
-
 .c9 {
   width: 16px;
   height: 16px;
@@ -176,6 +171,11 @@ exports[`Storyshots Molecules | Input / Checkbox Checkboxes with different size 
 .c12 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c1 {
+  width: auto;
+  display: inline-block;
 }
 
 <div
@@ -386,11 +386,6 @@ exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c0 {
-  width: auto;
-  display: inline-block;
-}
-
 .c8 {
   width: 20px;
   height: 20px;
@@ -456,6 +451,11 @@ exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
 .c11 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
 }
 
 <div
@@ -593,11 +593,6 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c0 {
-  width: auto;
-  display: inline-block;
-}
-
 .c13 {
   display: inline;
   vertical-align: middle;
@@ -669,6 +664,11 @@ Array [
 .c11 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
 }
 
 <div
@@ -839,11 +839,6 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c0 {
-  width: auto;
-  display: inline-block;
-}
-
 .c13 {
   display: inline;
   vertical-align: middle;
@@ -915,6 +910,11 @@ Array [
 .c11 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
 }
 
 <div
@@ -1083,11 +1083,6 @@ exports[`Storyshots Molecules | Input / Checkbox Default with tooltip 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c0 {
-  width: auto;
-  display: inline-block;
-}
-
 .c13 {
   display: inline;
   vertical-align: middle;
@@ -1159,6 +1154,11 @@ exports[`Storyshots Molecules | Input / Checkbox Default with tooltip 1`] = `
 .c11 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
 }
 
 <div
@@ -1326,11 +1326,6 @@ exports[`Storyshots Molecules | Input / Checkbox Default with tooltip with a lon
   line-height: 1.4285714285714286;
 }
 
-.c0 {
-  width: auto;
-  display: inline-block;
-}
-
 .c13 {
   display: inline;
   vertical-align: middle;
@@ -1402,6 +1397,11 @@ exports[`Storyshots Molecules | Input / Checkbox Default with tooltip with a lon
 .c11 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
 }
 
 <div
@@ -1581,11 +1581,6 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: auto;
-  display: inline-block;
-}
-
 .c11 {
   width: 20px;
   height: 20px;
@@ -1651,6 +1646,11 @@ Array [
 .c14 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c3 {
+  width: auto;
+  display: inline-block;
 }
 
 .c0 {
@@ -1926,11 +1926,6 @@ exports[`Storyshots Molecules | Input / Checkbox Element as label 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c0 {
-  width: auto;
-  display: inline-block;
-}
-
 .c8 {
   width: 20px;
   height: 20px;
@@ -1996,6 +1991,11 @@ exports[`Storyshots Molecules | Input / Checkbox Element as label 1`] = `
 .c11 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
 }
 
 <div
@@ -2151,22 +2151,6 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c1 {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c7 {
-  width: auto;
-  display: inline-block;
-}
-
 .c12 {
   width: 20px;
   height: 20px;
@@ -2232,6 +2216,22 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
 .c15 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c7 {
+  width: auto;
+  display: inline-block;
 }
 
 <div
@@ -2514,26 +2514,6 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c1 {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c10 {
-  width: auto;
-  display: inline-block;
-}
-
-.c7 {
-  margin-left: 4px;
-}
-
 .c15 {
   width: 20px;
   height: 20px;
@@ -2599,6 +2579,26 @@ Array [
 .c18 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c10 {
+  width: auto;
+  display: inline-block;
+}
+
+.c7 {
+  margin-left: 4px;
 }
 
 <div
@@ -2912,26 +2912,6 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with a label tooltip
   line-height: 1.4285714285714286;
 }
 
-.c1 {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c10 {
-  width: auto;
-  display: inline-block;
-}
-
-.c7 {
-  margin-left: 4px;
-}
-
 .c15 {
   width: 20px;
   height: 20px;
@@ -2997,6 +2977,26 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with a label tooltip
 .c18 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c10 {
+  width: auto;
+  display: inline-block;
+}
+
+.c7 {
+  margin-left: 4px;
 }
 
 <div
@@ -3309,22 +3309,6 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c1 {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c7 {
-  width: auto;
-  display: inline-block;
-}
-
 .c12 {
   width: 20px;
   height: 20px;
@@ -3394,6 +3378,22 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
 .c15 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c7 {
+  width: auto;
+  display: inline-block;
 }
 
 <div
@@ -3674,11 +3674,6 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: auto;
-  display: inline-block;
-}
-
 .c11 {
   width: 20px;
   height: 20px;
@@ -3744,6 +3739,11 @@ Array [
 .c14 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c3 {
+  width: auto;
+  display: inline-block;
 }
 
 .c0 {
@@ -4009,11 +4009,6 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c0 {
-  width: auto;
-  display: inline-block;
-}
-
 .c8 {
   width: 20px;
   height: 20px;
@@ -4079,6 +4074,11 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
 .c11 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
 }
 
 <div
@@ -4220,11 +4220,6 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
   line-height: 1.3333333333333333;
 }
 
-.c0 {
-  width: auto;
-  display: inline-block;
-}
-
 .c8 {
   width: 20px;
   height: 20px;
@@ -4294,6 +4289,11 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
 .c11 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
 }
 
 <div
@@ -4424,11 +4424,6 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c0 {
-  width: auto;
-  display: inline-block;
-}
-
 .c8 {
   width: 20px;
   height: 20px;
@@ -4494,6 +4489,11 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
 .c11 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
 }
 
 <div
@@ -4612,11 +4612,6 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c0 {
-  width: auto;
-  display: inline-block;
-}
-
 .c8 {
   width: 20px;
   height: 20px;
@@ -4682,6 +4677,11 @@ Array [
 .c11 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
 }
 
 <div
@@ -4807,11 +4807,6 @@ exports[`Storyshots Molecules | Input / Checkbox With default checked 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c0 {
-  width: auto;
-  display: inline-block;
-}
-
 .c8 {
   width: 20px;
   height: 20px;
@@ -4877,6 +4872,11 @@ exports[`Storyshots Molecules | Input / Checkbox With default checked 1`] = `
 .c11 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
 }
 
 <div

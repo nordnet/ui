@@ -121,11 +121,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
   line-height: 1.4285714285714286;
 }
 
-.c4 {
-  width: 16px;
-  display: inline-block;
-}
-
 .c13 {
   width: 20px;
   height: 20px;
@@ -231,6 +226,11 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.c4 {
+  width: 16px;
+  display: inline-block;
 }
 
 <div
@@ -431,11 +431,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
   line-height: 1.4285714285714286;
 }
 
-.c4 {
-  width: 16px;
-  display: inline-block;
-}
-
 .c13 {
   width: 20px;
   height: 20px;
@@ -534,6 +529,11 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.c4 {
+  width: 16px;
+  display: inline-block;
 }
 
 <div
@@ -726,11 +726,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
   line-height: 1.4285714285714286;
 }
 
-.c4 {
-  width: 16px;
-  display: inline-block;
-}
-
 .c13 {
   width: 20px;
   height: 20px;
@@ -836,6 +831,11 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.c4 {
+  width: 16px;
+  display: inline-block;
 }
 
 <div
@@ -1133,11 +1133,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   line-height: 1.4285714285714286;
 }
 
-.c12 {
-  width: 16px;
-  display: inline-block;
-}
-
 .c21 {
   width: 20px;
   height: 20px;
@@ -1253,6 +1248,11 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.c12 {
+  width: 16px;
+  display: inline-block;
 }
 
 .c0 {

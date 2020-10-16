@@ -174,11 +174,6 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
@@ -302,6 +297,11 @@ Array [
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div

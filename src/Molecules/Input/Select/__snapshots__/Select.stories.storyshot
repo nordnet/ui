@@ -95,11 +95,6 @@ exports[`Storyshots Molecules | Input / Select Accessible From Document Forms 1`
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -195,6 +190,11 @@ exports[`Storyshots Molecules | Input / Select Accessible From Document Forms 1`
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <form
@@ -409,11 +409,6 @@ exports[`Storyshots Molecules | Input / Select Actions 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -509,6 +504,11 @@ exports[`Storyshots Molecules | Input / Select Actions 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div>
@@ -715,11 +715,6 @@ exports[`Storyshots Molecules | Input / Select Actions And Empty Option List 1`]
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -815,6 +810,11 @@ exports[`Storyshots Molecules | Input / Select Actions And Empty Option List 1`]
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div>
@@ -1009,11 +1009,6 @@ exports[`Storyshots Molecules | Input / Select Auto Focus 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -1109,6 +1104,11 @@ exports[`Storyshots Molecules | Input / Select Auto Focus 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div>
@@ -1377,11 +1377,6 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -1477,6 +1472,11 @@ Array [
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div>
@@ -1684,11 +1684,6 @@ exports[`Storyshots Molecules | Input / Select Controlled behaviour 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -1784,6 +1779,11 @@ exports[`Storyshots Molecules | Input / Select Controlled behaviour 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div>
@@ -1991,11 +1991,6 @@ exports[`Storyshots Molecules | Input / Select Custom Renderers 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c15 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -2071,6 +2066,11 @@ exports[`Storyshots Molecules | Input / Select Custom Renderers 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 .c13 {
@@ -2288,11 +2288,6 @@ exports[`Storyshots Molecules | Input / Select Default Story 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -2388,6 +2383,11 @@ exports[`Storyshots Molecules | Input / Select Default Story 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div>
@@ -2621,11 +2621,6 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c6 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c19 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -2804,6 +2799,11 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
 
 .c3 {
   display: none;
+}
+
+.c6 {
+  width: 200px;
+  display: inline-block;
 }
 
 .c0 {
@@ -3458,11 +3458,6 @@ exports[`Storyshots Molecules | Input / Select Disabled Items 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -3558,6 +3553,11 @@ exports[`Storyshots Molecules | Input / Select Disabled Items 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div>
@@ -3790,11 +3790,6 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -3890,6 +3885,11 @@ Array [
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div>
@@ -4112,11 +4112,6 @@ exports[`Storyshots Molecules | Input / Select Full Width 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 100%;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -4212,6 +4207,11 @@ exports[`Storyshots Molecules | Input / Select Full Width 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 100%;
+  display: inline-block;
 }
 
 <div>
@@ -4419,11 +4419,6 @@ exports[`Storyshots Molecules | Input / Select Fully Empty 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -4519,6 +4514,11 @@ exports[`Storyshots Molecules | Input / Select Fully Empty 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div>
@@ -4719,11 +4719,6 @@ exports[`Storyshots Molecules | Input / Select Hide Label 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -4819,6 +4814,11 @@ exports[`Storyshots Molecules | Input / Select Hide Label 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div>
@@ -6364,11 +6364,6 @@ exports[`Storyshots Molecules | Input / Select Multi Select Uncontrolled 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c15 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -6444,6 +6439,11 @@ exports[`Storyshots Molecules | Input / Select Multi Select Uncontrolled 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 .c13 {
@@ -6667,11 +6667,6 @@ exports[`Storyshots Molecules | Input / Select Multiselect 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c15 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -6747,6 +6742,11 @@ exports[`Storyshots Molecules | Input / Select Multiselect 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 .c13 {
@@ -6970,11 +6970,6 @@ exports[`Storyshots Molecules | Input / Select Multiselect Actions 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c15 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -7050,6 +7045,11 @@ exports[`Storyshots Molecules | Input / Select Multiselect Actions 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 .c13 {
@@ -7273,11 +7273,6 @@ exports[`Storyshots Molecules | Input / Select Multiselect Select All 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c15 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -7353,6 +7348,11 @@ exports[`Storyshots Molecules | Input / Select Multiselect Select All 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 .c13 {
@@ -7583,11 +7583,6 @@ exports[`Storyshots Molecules | Input / Select On Blur And On Focus 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -7683,6 +7678,11 @@ exports[`Storyshots Molecules | Input / Select On Blur And On Focus 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div>
@@ -7889,11 +7889,6 @@ exports[`Storyshots Molecules | Input / Select On Search Query Change 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -7989,6 +7984,11 @@ exports[`Storyshots Molecules | Input / Select On Search Query Change 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div>
@@ -8195,11 +8195,6 @@ exports[`Storyshots Molecules | Input / Select Overflow Story 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -8295,6 +8290,11 @@ exports[`Storyshots Molecules | Input / Select Overflow Story 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div>
@@ -8889,11 +8889,6 @@ exports[`Storyshots Molecules | Input / Select Preselected Options 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c15 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -8969,6 +8964,11 @@ exports[`Storyshots Molecules | Input / Select Preselected Options 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 .c13 {
@@ -9197,11 +9197,6 @@ exports[`Storyshots Molecules | Input / Select Search Story 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -9297,6 +9292,11 @@ exports[`Storyshots Molecules | Input / Select Search Story 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div>
@@ -9546,11 +9546,6 @@ exports[`Storyshots Molecules | Input / Select Size S 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c6 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c19 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -9729,6 +9724,11 @@ exports[`Storyshots Molecules | Input / Select Size S 1`] = `
 
 .c3 {
   display: none;
+}
+
+.c6 {
+  width: 200px;
+  display: inline-block;
 }
 
 .c0 {
@@ -10387,11 +10387,6 @@ exports[`Storyshots Molecules | Input / Select Tracking 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -10487,6 +10482,11 @@ exports[`Storyshots Molecules | Input / Select Tracking 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div>
@@ -10694,11 +10694,6 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -10794,6 +10789,11 @@ Array [
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div>
@@ -10997,11 +10997,6 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -11097,6 +11092,11 @@ Array [
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div>
@@ -11322,15 +11322,6 @@ exports[`Storyshots Molecules | Input / Select With Label Tooltip 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c7 {
-  margin-left: 4px;
-}
-
 .c19 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -11426,6 +11417,15 @@ exports[`Storyshots Molecules | Input / Select With Label Tooltip 1`] = `
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c7 {
+  margin-left: 4px;
 }
 
 <div>
@@ -11686,15 +11686,6 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c7 {
-  margin-left: 4px;
-}
-
 .c19 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
@@ -11790,6 +11781,15 @@ Array [
 
 .c0 {
   display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c7 {
+  margin-left: 4px;
 }
 
 <div>
