@@ -3,7 +3,7 @@ export type Props = {
   ariaLabelNext?: string;
   id: string;
   locale: string;
-  now: Date;
+  viewedDate: Date;
   onMonthChange: (index: number) => void;
   onYearChange: (year: number) => void;
 };

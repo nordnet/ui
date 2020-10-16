@@ -106,7 +106,7 @@ const Calendar: React.FC<Props> = ({
   disableDate,
   enableDate,
   locale,
-  now,
+  viewedDate,
   onClick,
   selectedDate,
 }) => {
@@ -115,7 +115,7 @@ const Calendar: React.FC<Props> = ({
   const arrowUp = useKeyPress('ArrowUp');
   const arrowDown = useKeyPress('ArrowDown');
   const enter = useKeyPress('Enter');
-  const [hoverDate, setHoverDate] = useState<Date>(newDate(selectedDate || now));
+  const [hoverDate, setHoverDate] = useState<Date>(newDate(selectedDate || viewedDate));
 
   useEffect(() => {
     if (arrowLeft) {
@@ -136,7 +136,7 @@ const Calendar: React.FC<Props> = ({
   }, [hoverDate, arrowLeft, arrowRight, arrowUp, arrowDown, enter, onClick, setHoverDate]);
 
   const localeObj = getLocale(locale);
-  const calendar = getCalendar(now, {
+  const calendar = getCalendar(viewedDate, {
     locale: localeObj,
   });
 
@@ -161,7 +161,7 @@ const Calendar: React.FC<Props> = ({
               disabled={disableDate && disableDate(d)}
               onClick={() => onClick(d)}
               selected={selectedDate && isSameDay(selectedDate, d)}
-              sameMonth={isSameMonth(now, d)}
+              sameMonth={isSameMonth(viewedDate, d)}
               locale={localeObj}
               hover={hoverDate && isSameDay(hoverDate, d)}
             />

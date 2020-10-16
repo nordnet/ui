@@ -24,12 +24,12 @@ const StyledInputSelect = styled((props) => <Input.Select {...props} />)`
   }
 `;
 
-const SelectMonth: React.FC<Props> = ({ id, locale, now, onChange }) => {
+const SelectMonth: React.FC<Props> = ({ id, locale, viewedDate, onChange }) => {
   const [isHover, setIsHover] = useState(false);
   const opts = { locale: getLocale(locale) };
   const monthOptions = months.map((index: number) => ({
     value: index,
-    label: capitalize(format(new Date(now.getFullYear(), index), 'MMMM', opts)),
+    label: capitalize(format(new Date(viewedDate.getFullYear(), index), 'MMMM', opts)),
   }));
 
   const onChangeHandler = (selected: Array<any>) => {
@@ -57,7 +57,9 @@ const SelectMonth: React.FC<Props> = ({ id, locale, now, onChange }) => {
           <Flexbox container data-testid="datepicker-select-month">
             <Flexbox item>
               <Box pr={1}>
-                <Typography weight="bold">{capitalize(format(now, 'MMMM', opts))}</Typography>
+                <Typography weight="bold">
+                  {capitalize(format(viewedDate, 'MMMM', opts))}
+                </Typography>
               </Box>
             </Flexbox>
             <Flexbox item>
@@ -69,10 +71,10 @@ const SelectMonth: React.FC<Props> = ({ id, locale, now, onChange }) => {
         );
       },
     }),
-    [now, opts, isHover, useSelectMachineFromContext],
+    [viewedDate, opts, isHover, useSelectMachineFromContext],
   );
 
-  const selected = monthOptions.filter((p) => p.value === now.getMonth());
+  const selected = monthOptions.filter((p) => p.value === viewedDate.getMonth());
   const theme = useTheme();
 
   return (

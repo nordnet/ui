@@ -1,6 +1,6 @@
 export type Props = {
   id: string;
   locale: string;
-  now: Date;
+  viewedDate: Date;
   onChange: (index: number) => void;
 };

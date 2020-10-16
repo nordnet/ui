@@ -17,7 +17,7 @@ const StyledInputSelect = styled((props) => <Input.Select {...props} />)`
   }
 `;
 
-const SelectYear: React.FC<Props> = ({ id, now, onChange, years = 10 }) => {
+const SelectYear: React.FC<Props> = ({ id, viewedDate, onChange, years = 10 }) => {
   const [isHover, setIsHover] = useState(false);
   const today = newDate();
   const yearOptions = [...Array(years).keys()].map((index: number) => ({
@@ -50,7 +50,7 @@ const SelectYear: React.FC<Props> = ({ id, now, onChange, years = 10 }) => {
           <Flexbox container data-testid="datepicker-select-year">
             <Flexbox item>
               <Box pr={1}>
-                <Typography weight="bold">{now.getFullYear()}</Typography>
+                <Typography weight="bold">{viewedDate.getFullYear()}</Typography>
               </Box>
             </Flexbox>
             <Flexbox item>
@@ -62,10 +62,10 @@ const SelectYear: React.FC<Props> = ({ id, now, onChange, years = 10 }) => {
         );
       },
     }),
-    [now, isHover, useSelectMachineFromContext],
+    [viewedDate, isHover, useSelectMachineFromContext],
   );
 
-  const selected = yearOptions.filter((p) => p.value === now.getFullYear());
+  const selected = yearOptions.filter((p) => p.value === viewedDate.getFullYear());
   const theme = useTheme();
 
   return (

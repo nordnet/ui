@@ -14,7 +14,7 @@ export type Props = {
   disableDate?: (date: Date) => boolean;
   enableDate?: (date: Date) => boolean;
   locale: string;
-  now: Date;
+  viewedDate: Date;
   onClick: (date: Date) => void;
   selectedDate: Date;
 };

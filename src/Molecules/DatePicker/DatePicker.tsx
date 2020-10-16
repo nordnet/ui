@@ -77,8 +77,8 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const initialInputValue = selectedDateProp ? format(selectedDateProp, dateFormat, opts) : '';
 
   const [open, setOpen] = useState<boolean>(openProp);
-  const [now, setNow] = useState<Date>(selectedDateProp || newDate());
-  const [selectedDate, setSelectedDate] = useState<Date>(selectedDateProp || now);
+  const [viewedDate, setViewedDate] = useState<Date>(selectedDateProp || newDate());
+  const [selectedDate, setSelectedDate] = useState<Date>(selectedDateProp || viewedDate);
   const [inputValue, setInputValue] = useState<string>(initialInputValue);
 
   const theme = useTheme();
@@ -103,18 +103,18 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
 
   const handleOnMonthChange = useCallback(
     (index: number) => {
-      now.setMonth(index);
-      setNow(newDate(now));
+      viewedDate.setMonth(index);
+      setViewedDate(newDate(viewedDate));
     },
-    [now, setNow],
+    [viewedDate, setViewedDate],
   );
 
   const handleOnYearChange = useCallback(
     (year: number) => {
-      now.setFullYear(year);
-      setNow(newDate(now));
+      viewedDate.setFullYear(year);
+      setViewedDate(newDate(viewedDate));
     },
-    [now, setNow],
+    [viewedDate, setViewedDate],
   );
 
   const handleInputOnChange = useCallback(
@@ -133,7 +133,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
 
       setInputValue(format(date, dateFormat, opts));
       setSelectedDate(date);
-      setNow(newDate(date));
+      setViewedDate(newDate(date));
 
       if (onChange) {
         onChange(date);
@@ -150,7 +150,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         ariaLabelPrevious={ariaLabelPrevious}
         ariaLabelNext={ariaLabelNext}
         id={id}
-        now={now}
+        viewedDate={viewedDate}
         locale={locale}
         onMonthChange={handleOnMonthChange}
         onYearChange={handleOnYearChange}
@@ -158,7 +158,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
       <Calendar
         disableDate={disableDate}
         enableDate={enableDate}
-        now={now}
+        viewedDate={viewedDate}
         locale={locale}
         onClick={handleOnDateCliked}
         selectedDate={selectedDate as Date}

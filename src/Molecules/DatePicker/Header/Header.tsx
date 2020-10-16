@@ -13,7 +13,7 @@ const Header: React.FC<Props> = ({
   ariaLabelNext = 'Next month {date}, button',
   id,
   locale,
-  now,
+  viewedDate,
   onMonthChange,
   onYearChange,
 }) => {
@@ -23,12 +23,12 @@ const Header: React.FC<Props> = ({
 
   const ariaLabelPreviousText = ariaLabelPrevious.replace(
     '{date}',
-    format(sub(now, { months: 1 }), 'MMMM yyyy', opts),
+    format(sub(viewedDate, { months: 1 }), 'MMMM yyyy', opts),
   );
 
   const ariaLabelNextText = ariaLabelNext.replace(
     '{date}',
-    format(add(now, { months: 1 }), 'MMMM yyyy', opts),
+    format(add(viewedDate, { months: 1 }), 'MMMM yyyy', opts),
   );
 
   return (
@@ -39,7 +39,7 @@ const Header: React.FC<Props> = ({
             aria-label={ariaLabelPreviousText}
             data-testid="datepicker-arrow-left"
             onClick={() => {
-              onMonthChange(now.getMonth() - 1);
+              onMonthChange(viewedDate.getMonth() - 1);
             }}
           >
             <Icon.ThinChevron size={4} direction="left" />
@@ -48,10 +48,10 @@ const Header: React.FC<Props> = ({
       </Flexbox>
       <Flexbox container>
         <Flexbox item>
-          <SelectMonth id={id} locale={locale} now={now} onChange={onMonthChange} />
+          <SelectMonth id={id} locale={locale} viewedDate={viewedDate} onChange={onMonthChange} />
         </Flexbox>
         <Flexbox item>
-          <SelectYear id={id} locale={locale} now={now} onChange={onYearChange} />
+          <SelectYear id={id} locale={locale} viewedDate={viewedDate} onChange={onYearChange} />
         </Flexbox>
       </Flexbox>
       <Flexbox item>
@@ -60,7 +60,7 @@ const Header: React.FC<Props> = ({
             aria-label={ariaLabelNextText}
             data-testid="datepicker-arrow-right"
             onClick={() => {
-              onMonthChange(now.getMonth() + 1);
+              onMonthChange(viewedDate.getMonth() + 1);
             }}
           >
             <Icon.ThinChevron size={4} direction="right" />
