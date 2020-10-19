@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | Pill Basic Pill 1`] = `
+exports[`Storyshots Atoms / Pill Basic Pill 1`] = `
 .c0 {
   display: inline-block;
   padding: 0 4px;
@@ -44,7 +44,7 @@ exports[`Storyshots Atoms | Pill Basic Pill 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Pill Pill with colored bar 1`] = `
+exports[`Storyshots Atoms / Pill Pill with colored bar 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -240,7 +240,7 @@ exports[`Storyshots Atoms | Pill Pill with colored bar 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Pill Pill with no padding 1`] = `
+exports[`Storyshots Atoms / Pill Pill with no padding 1`] = `
 .c0 {
   display: inline-block;
   box-sizing: border-box;

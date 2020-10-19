@@ -7,7 +7,7 @@ import { Display } from '../../common/Display';
 import { TYPOGRAPHY_TYPES } from '../../Atoms/Typography/Typography';
 
 export default {
-  title: 'Molecules | Number',
+  title: 'Molecules / Number',
   parameters: {
     component: Number,
   },
@@ -210,7 +210,7 @@ regression0ShouldBe0.story = {
 };
 
 export const integrationWithDifferentTypographies = () => {
-  const items = Object.values(TYPOGRAPHY_TYPES).map(type => ({
+  const items = Object.values(TYPOGRAPHY_TYPES).map((type) => ({
     title: type,
     component: (
       <Typography type={type}>

@@ -3,14 +3,14 @@ import styled from 'styled-components';
 import { Typography, TruncateWithTooltip, Box } from '../..';
 
 export default {
-  title: 'Molecules | TruncateWithTooltip',
+  title: 'Molecules / TruncateWithTooltip',
   parameters: {
     component: TruncateWithTooltip,
   },
 };
 
 const StyledDiv = styled.div`
-  max-width: ${p => p.theme.spacing.unit(35)}px;
+  max-width: ${(p) => p.theme.spacing.unit(35)}px;
 `;
 
 export const truncateWithTooltipDefault = () => (

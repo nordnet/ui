@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
+exports[`Storyshots Molecules / CollapsibleCard Collapsed initially 1`] = `
 .c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
@@ -184,7 +184,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom component as title 1`] = `
+exports[`Storyshots Molecules / CollapsibleCard Collapsible with custom component as title 1`] = `
 .c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
@@ -370,7 +370,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
 </div>
 `;
 
-exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listener 1`] = `
+exports[`Storyshots Molecules / CollapsibleCard Collapsible with onClick listener 1`] = `
 .c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
@@ -554,7 +554,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
 </div>
 `;
 
-exports[`Storyshots Molecules | CollapsibleCard Collapsible without indicator 1`] = `
+exports[`Storyshots Molecules / CollapsibleCard Collapsible without indicator 1`] = `
 .c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
@@ -738,7 +738,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible without indicator 1`
 </div>
 `;
 
-exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
+exports[`Storyshots Molecules / CollapsibleCard Default 1`] = `
 .c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);

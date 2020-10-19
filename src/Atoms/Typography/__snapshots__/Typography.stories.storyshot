@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | Typography All 1`] = `
+exports[`Storyshots Atoms / Typography All 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -158,7 +158,7 @@ exports[`Storyshots Atoms | Typography All 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Typography Caption 1`] = `
+exports[`Storyshots Atoms / Typography Caption 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -275,7 +275,7 @@ exports[`Storyshots Atoms | Typography Caption 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Typography Colors 1`] = `
+exports[`Storyshots Atoms / Typography Colors 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -513,7 +513,7 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Typography Hero 1`] = `
+exports[`Storyshots Atoms / Typography Hero 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -644,7 +644,7 @@ exports[`Storyshots Atoms | Typography Hero 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Typography Primary 1`] = `
+exports[`Storyshots Atoms / Typography Primary 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -787,7 +787,7 @@ exports[`Storyshots Atoms | Typography Primary 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Typography Secondary 1`] = `
+exports[`Storyshots Atoms / Typography Secondary 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -904,7 +904,7 @@ exports[`Storyshots Atoms | Typography Secondary 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Typography Tertiary 1`] = `
+exports[`Storyshots Atoms / Typography Tertiary 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -1021,7 +1021,7 @@ exports[`Storyshots Atoms | Typography Tertiary 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Typography Title1 1`] = `
+exports[`Storyshots Atoms / Typography Title1 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -1185,7 +1185,7 @@ exports[`Storyshots Atoms | Typography Title1 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Typography Title2 1`] = `
+exports[`Storyshots Atoms / Typography Title2 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -1349,7 +1349,7 @@ exports[`Storyshots Atoms | Typography Title2 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Typography Title3 1`] = `
+exports[`Storyshots Atoms / Typography Title3 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -1513,7 +1513,7 @@ exports[`Storyshots Atoms | Typography Title3 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Typography aria attributes 1`] = `
+exports[`Storyshots Atoms / Typography aria attributes 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;

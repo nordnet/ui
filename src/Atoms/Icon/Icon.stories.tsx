@@ -1,11 +1,10 @@
 import React from 'react';
-import { select, withKnobs } from '@storybook/addon-knobs';
+import { select } from '@storybook/addon-knobs';
 import { Icon } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
-  title: 'Atoms | Icon',
-  decorators: [withKnobs],
+  title: 'Atoms / Icon',
 };
 
 export const defaultUse = () => <Icon.ArrowRight />;
@@ -73,7 +72,7 @@ inlineStory.story = {
 };
 
 export const differentSizeAndFill = () => (
-  <Icon.ArrowRight size={10} fill={t => t.color.positive} />
+  <Icon.ArrowRight size={10} fill={(t) => t.color.positive} />
 );
 
 differentSizeAndFill.story = {
@@ -85,32 +84,40 @@ export const withModifiedStroke = () => (
     items={[
       {
         title: 'Star with stroke modified',
-        component: <Icon.Star size={10} stroke={t => t.color.positive} />,
+        component: <Icon.Star size={10} stroke={(t) => t.color.positive} />,
       },
       {
         title: 'CrossThin with stroke modified',
-        component: <Icon.CrossThin size={10} stroke={t => t.color.positive} />,
+        component: <Icon.CrossThin size={10} stroke={(t) => t.color.positive} />,
       },
       {
         title: 'CheckMarkCircle with stroke modified',
         component: (
           <Icon.CheckMarkCircle
             size={10}
-            fill={t => t.color.positive}
-            stroke={t => t.color.negative}
+            fill={(t) => t.color.positive}
+            stroke={(t) => t.color.negative}
           />
         ),
       },
       {
         title: 'CrossCircle with stroke modified',
         component: (
-          <Icon.CrossCircle size={10} fill={t => t.color.positive} stroke={t => t.color.negative} />
+          <Icon.CrossCircle
+            size={10}
+            fill={(t) => t.color.positive}
+            stroke={(t) => t.color.negative}
+          />
         ),
       },
       {
         title: 'InfoCircle with stroke modified',
         component: (
-          <Icon.InfoCircle size={10} fill={t => t.color.positive} stroke={t => t.color.negative} />
+          <Icon.InfoCircle
+            size={10}
+            fill={(t) => t.color.positive}
+            stroke={(t) => t.color.negative}
+          />
         ),
       },
       {
@@ -118,19 +125,19 @@ export const withModifiedStroke = () => (
         component: (
           <Icon.WarningTriangle
             size={10}
-            fill={t => t.color.positive}
-            stroke={t => t.color.negative}
+            fill={(t) => t.color.positive}
+            stroke={(t) => t.color.negative}
           />
         ),
       },
       {
         title: 'Star24 with both stroke modified',
-        component: <Icon.Star24 size={10} stroke={t => t.color.positive} />,
+        component: <Icon.Star24 size={10} stroke={(t) => t.color.positive} />,
       },
       {
         title: 'Star24 with both stroke and fill modified',
         component: (
-          <Icon.Star24 size={10} fill={t => t.color.positive} stroke={t => t.color.positive} />
+          <Icon.Star24 size={10} fill={(t) => t.color.positive} stroke={(t) => t.color.positive} />
         ),
       },
     ]}

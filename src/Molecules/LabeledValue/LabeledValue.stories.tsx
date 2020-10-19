@@ -3,7 +3,7 @@ import LabeledValue from './index';
 import { Typography, Development, Number, Flexbox } from '../..';
 
 export default {
-  title: 'Molecules | LabeledValue',
+  title: 'Molecules / LabeledValue',
 };
 
 export const defaultStory = () => <LabeledValue label="Label">Value</LabeledValue>;

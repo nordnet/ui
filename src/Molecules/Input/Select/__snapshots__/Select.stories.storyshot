@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Input / Select Accessible From Document Forms 1`] = `
+exports[`Storyshots Molecules / Input / Select Accessible From Document Forms 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -314,7 +314,7 @@ exports[`Storyshots Molecules | Input / Select Accessible From Document Forms 1`
 </form>
 `;
 
-exports[`Storyshots Molecules | Input / Select Actions 1`] = `
+exports[`Storyshots Molecules / Input / Select Actions 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -620,7 +620,7 @@ exports[`Storyshots Molecules | Input / Select Actions 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Actions And Empty Option List 1`] = `
+exports[`Storyshots Molecules / Input / Select Actions And Empty Option List 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -914,7 +914,7 @@ exports[`Storyshots Molecules | Input / Select Actions And Empty Option List 1`]
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Auto Focus 1`] = `
+exports[`Storyshots Molecules / Input / Select Auto Focus 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -1220,7 +1220,7 @@ exports[`Storyshots Molecules | Input / Select Auto Focus 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Changes From Props 1`] = `
+exports[`Storyshots Molecules / Input / Select Changes From Props 1`] = `
 Array [
   <button
     onClick={[Function]}
@@ -1589,7 +1589,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Select Controlled behaviour 1`] = `
+exports[`Storyshots Molecules / Input / Select Controlled behaviour 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -1896,7 +1896,7 @@ exports[`Storyshots Molecules | Input / Select Controlled behaviour 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Custom Renderers 1`] = `
+exports[`Storyshots Molecules / Input / Select Custom Renderers 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 32px;
@@ -2193,7 +2193,7 @@ exports[`Storyshots Molecules | Input / Select Custom Renderers 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Default Story 1`] = `
+exports[`Storyshots Molecules / Input / Select Default Story 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -2499,7 +2499,7 @@ exports[`Storyshots Molecules | Input / Select Default Story 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
+exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
 .c15 {
   padding-left: 8px;
   padding-right: 8px;
@@ -3363,7 +3363,7 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Disabled Items 1`] = `
+exports[`Storyshots Molecules / Input / Select Disabled Items 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -3669,7 +3669,7 @@ exports[`Storyshots Molecules | Input / Select Disabled Items 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Focus Without Scrolling 1`] = `
+exports[`Storyshots Molecules / Input / Select Focus Without Scrolling 1`] = `
 Array [
   <br />,
   <br />,
@@ -4017,7 +4017,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Select Full Width 1`] = `
+exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -4324,7 +4324,7 @@ exports[`Storyshots Molecules | Input / Select Full Width 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Fully Empty 1`] = `
+exports[`Storyshots Molecules / Input / Select Fully Empty 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -4618,7 +4618,7 @@ exports[`Storyshots Molecules | Input / Select Fully Empty 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Hide Label 1`] = `
+exports[`Storyshots Molecules / Input / Select Hide Label 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -4926,7 +4926,7 @@ exports[`Storyshots Molecules | Input / Select Hide Label 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Link With Dropdown And Search Box Multiselect 1`] = `
+exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box Multiselect 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -5261,7 +5261,7 @@ exports[`Storyshots Molecules | Input / Select Link With Dropdown And Search Box
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Link With Dropdown And Search Box Secondary 1`] = `
+exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box Secondary 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -5585,7 +5585,7 @@ exports[`Storyshots Molecules | Input / Select Link With Dropdown And Search Box
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Link With Dropdown And Search Box Tertiary 1`] = `
+exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box Tertiary 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -5918,7 +5918,7 @@ exports[`Storyshots Molecules | Input / Select Link With Dropdown And Search Box
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select List Positioned To The Left 1`] = `
+exports[`Storyshots Molecules / Input / Select List Positioned To The Left 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -6269,7 +6269,7 @@ exports[`Storyshots Molecules | Input / Select List Positioned To The Left 1`] =
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Multi Select Uncontrolled 1`] = `
+exports[`Storyshots Molecules / Input / Select Multi Select Uncontrolled 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -6572,7 +6572,7 @@ exports[`Storyshots Molecules | Input / Select Multi Select Uncontrolled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Multiselect 1`] = `
+exports[`Storyshots Molecules / Input / Select Multiselect 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -6875,7 +6875,7 @@ exports[`Storyshots Molecules | Input / Select Multiselect 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Multiselect Actions 1`] = `
+exports[`Storyshots Molecules / Input / Select Multiselect Actions 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -7178,7 +7178,7 @@ exports[`Storyshots Molecules | Input / Select Multiselect Actions 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Multiselect Select All 1`] = `
+exports[`Storyshots Molecules / Input / Select Multiselect Select All 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -7488,7 +7488,7 @@ exports[`Storyshots Molecules | Input / Select Multiselect Select All 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select On Blur And On Focus 1`] = `
+exports[`Storyshots Molecules / Input / Select On Blur And On Focus 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -7794,7 +7794,7 @@ exports[`Storyshots Molecules | Input / Select On Blur And On Focus 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select On Search Query Change 1`] = `
+exports[`Storyshots Molecules / Input / Select On Search Query Change 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -8100,7 +8100,7 @@ exports[`Storyshots Molecules | Input / Select On Search Query Change 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Overflow Story 1`] = `
+exports[`Storyshots Molecules / Input / Select Overflow Story 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -8794,7 +8794,7 @@ exports[`Storyshots Molecules | Input / Select Overflow Story 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Preselected Options 1`] = `
+exports[`Storyshots Molecules / Input / Select Preselected Options 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -9102,7 +9102,7 @@ exports[`Storyshots Molecules | Input / Select Preselected Options 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Search Story 1`] = `
+exports[`Storyshots Molecules / Input / Select Search Story 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -9424,7 +9424,7 @@ exports[`Storyshots Molecules | Input / Select Search Story 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Size S 1`] = `
+exports[`Storyshots Molecules / Input / Select Size S 1`] = `
 .c15 {
   padding-left: 8px;
   padding-right: 8px;
@@ -10292,7 +10292,7 @@ exports[`Storyshots Molecules | Input / Select Size S 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Tracking 1`] = `
+exports[`Storyshots Molecules / Input / Select Tracking 1`] = `
 .c12 {
   padding-left: 8px;
   padding-right: 8px;
@@ -10598,7 +10598,7 @@ exports[`Storyshots Molecules | Input / Select Tracking 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select Two 1`] = `
+exports[`Storyshots Molecules / Input / Select Two 1`] = `
 Array [
   .c12 {
   padding-left: 8px;
@@ -11209,7 +11209,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Select With Label Tooltip 1`] = `
+exports[`Storyshots Molecules / Input / Select With Label Tooltip 1`] = `
 .c15 {
   padding-left: 8px;
   padding-right: 8px;
@@ -11570,7 +11570,7 @@ exports[`Storyshots Molecules | Input / Select With Label Tooltip 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select With Label Tooltip Position Top 1`] = `
+exports[`Storyshots Molecules / Input / Select With Label Tooltip Position Top 1`] = `
 Array [
   <br />,
   <br />,

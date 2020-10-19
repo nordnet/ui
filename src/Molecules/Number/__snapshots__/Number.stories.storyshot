@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Number Default 1`] = `
+exports[`Storyshots Molecules / Number Default 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -121,7 +121,7 @@ exports[`Storyshots Molecules | Number Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Number Integration: with different typographies 1`] = `
+exports[`Storyshots Molecules / Number Integration: with different typographies 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -902,9 +902,9 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
 </div>
 `;
 
-exports[`Storyshots Molecules | Number Invalid value 1`] = `"-"`;
+exports[`Storyshots Molecules / Number Invalid value 1`] = `"-"`;
 
-exports[`Storyshots Molecules | Number Number ticks 1`] = `
+exports[`Storyshots Molecules / Number Number ticks 1`] = `
 Array [
   <pre>
     ticks = [
@@ -1049,7 +1049,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Number Number with 2 decimals  1`] = `
+exports[`Storyshots Molecules / Number Number with 2 decimals  1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1170,7 +1170,7 @@ exports[`Storyshots Molecules | Number Number with 2 decimals  1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Number Number with currency 1`] = `
+exports[`Storyshots Molecules / Number Number with currency 1`] = `
 Array [
   "",
   "2.3",
@@ -1178,7 +1178,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Number Number with currency as different size 1`] = `
+exports[`Storyshots Molecules / Number Number with currency as different size 1`] = `
 Array [
   .c1 {
   position: absolute;
@@ -1313,7 +1313,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Number Number with min/max digits 1`] = `
+exports[`Storyshots Molecules / Number Number with min/max digits 1`] = `
 <div>
   
   10.38
@@ -1330,7 +1330,7 @@ exports[`Storyshots Molecules | Number Number with min/max digits 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Number Number with percentage 1`] = `
+exports[`Storyshots Molecules / Number Number with percentage 1`] = `
 Array [
   "",
   "2.3",
@@ -1338,7 +1338,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Number Number with sign 1`] = `
+exports[`Storyshots Molecules / Number Number with sign 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1445,7 +1445,7 @@ exports[`Storyshots Molecules | Number Number with sign 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Number Regression: -0 should be 0 1`] = `
+exports[`Storyshots Molecules / Number Regression: -0 should be 0 1`] = `
 Array [
   .c0 {
   display: -webkit-box;
@@ -1603,7 +1603,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Number Regression: value is positive, but rounded value is 0 1`] = `
+exports[`Storyshots Molecules / Number Regression: value is positive, but rounded value is 0 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1682,4 +1682,4 @@ exports[`Storyshots Molecules | Number Regression: value is positive, but rounde
 </div>
 `;
 
-exports[`Storyshots Molecules | Number null currency 1`] = `"-"`;
+exports[`Storyshots Molecules / Number null currency 1`] = `"-"`;

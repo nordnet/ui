@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Avatar Basic usage 1`] = `
+exports[`Storyshots Molecules / Avatar Basic usage 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -45,7 +45,7 @@ exports[`Storyshots Molecules | Avatar Basic usage 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Avatar Best practice, with element as children 1`] = `
+exports[`Storyshots Molecules / Avatar Best practice, with element as children 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -94,7 +94,7 @@ exports[`Storyshots Molecules | Avatar Best practice, with element as children 1
 </div>
 `;
 
-exports[`Storyshots Molecules | Avatar Different sizes 1`] = `
+exports[`Storyshots Molecules / Avatar Different sizes 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;

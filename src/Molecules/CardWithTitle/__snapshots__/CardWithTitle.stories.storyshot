@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article (most CardWithTitle should be article) 1`] = `
+exports[`Storyshots Molecules / CardWithTitle CardWithTitle as article (most CardWithTitle should be article) 1`] = `
 .c1 {
   padding-left: 12px;
   padding-top: 12px;
@@ -101,7 +101,7 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article (most Car
 </article>
 `;
 
-exports[`Storyshots Molecules | CardWithTitle CardWithTitle as section 1`] = `
+exports[`Storyshots Molecules / CardWithTitle CardWithTitle as section 1`] = `
 .c1 {
   padding-left: 12px;
   padding-top: 12px;
@@ -202,7 +202,7 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as section 1`] = `
 </section>
 `;
 
-exports[`Storyshots Molecules | CardWithTitle Default 1`] = `
+exports[`Storyshots Molecules / CardWithTitle Default 1`] = `
 .c2 {
   padding-left: 12px;
   padding-top: 12px;
@@ -308,7 +308,7 @@ exports[`Storyshots Molecules | CardWithTitle Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with custom component as title 1`] = `
+exports[`Storyshots Molecules / CardWithTitle Integration: CardWithTitle with custom component as title 1`] = `
 .c2 {
   padding-left: 12px;
   padding-top: 12px;
@@ -488,7 +488,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
 </div>
 `;
 
-exports[`Storyshots Molecules | CardWithTitle Integration: with FadedScroll 1`] = `
+exports[`Storyshots Molecules / CardWithTitle Integration: with FadedScroll 1`] = `
 .c2 {
   padding-left: 12px;
   padding-top: 12px;
@@ -678,7 +678,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: with FadedScroll 1`] 
 </div>
 `;
 
-exports[`Storyshots Molecules | CardWithTitle Integration: with FadedScroll of content and height being whatever is available left of parents height. 1`] = `
+exports[`Storyshots Molecules / CardWithTitle Integration: with FadedScroll of content and height being whatever is available left of parents height. 1`] = `
 .c3 {
   padding-left: 12px;
   padding-top: 12px;
@@ -911,7 +911,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: with FadedScroll of c
 </div>
 `;
 
-exports[`Storyshots Molecules | CardWithTitle With Component As Title 1`] = `
+exports[`Storyshots Molecules / CardWithTitle With Component As Title 1`] = `
 .c2 {
   padding-left: 12px;
   padding-top: 12px;
@@ -992,7 +992,7 @@ exports[`Storyshots Molecules | CardWithTitle With Component As Title 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | CardWithTitle With variant big 1`] = `
+exports[`Storyshots Molecules / CardWithTitle With variant big 1`] = `
 .c2 {
   padding-left: 12px;
   padding-top: 12px;

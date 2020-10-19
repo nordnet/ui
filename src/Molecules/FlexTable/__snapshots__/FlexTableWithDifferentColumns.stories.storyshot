@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Column Width Sortable Table 1`] = `
+exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Column Width Sortable Table 1`] = `
 .c24 {
   height: 20px;
   box-sizing: border-box;
@@ -688,7 +688,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Column Width Table With Custom Flag Cell 1`] = `
+exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Column Width Table With Custom Flag Cell 1`] = `
 .c18 {
   height: 20px;
   box-sizing: border-box;
@@ -1195,7 +1195,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Col
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Different Alignments Table 1`] = `
+exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Different Alignments Table 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1647,7 +1647,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Dif
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Media Columns 1`] = `
+exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Media Columns 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;

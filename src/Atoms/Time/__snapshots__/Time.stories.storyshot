@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | Time Invalid value 1`] = `"-"`;
+exports[`Storyshots Atoms / Time Invalid value 1`] = `"-"`;
 
-exports[`Storyshots Atoms | Time Time  1`] = `
+exports[`Storyshots Atoms / Time Time  1`] = `
 <time>
   23:53:44
 </time>
 `;
 
-exports[`Storyshots Atoms | Time Uses custom symbol for invalid value 1`] = `"X"`;
+exports[`Storyshots Atoms / Time Uses custom symbol for invalid value 1`] = `"X"`;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Drawer Default 1`] = `
+exports[`Storyshots Molecules / Drawer Default 1`] = `
 .c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -279,7 +279,7 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
+exports[`Storyshots Molecules / Drawer Integration: With FadedScroll 1`] = `
 .c8 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -671,7 +671,7 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
+exports[`Storyshots Molecules / Drawer With a custom title 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -976,7 +976,7 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Drawer With no title 1`] = `
+exports[`Storyshots Molecules / Drawer With no title 1`] = `
 .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1203,7 +1203,7 @@ exports[`Storyshots Molecules | Drawer With no title 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Drawer With ref story 1`] = `
+exports[`Storyshots Molecules / Drawer With ref story 1`] = `
 .c6 {
   -webkit-user-select: none;
   -moz-user-select: none;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | LineScale Line Scale Almost At Left Edge 1`] = `
+exports[`Storyshots Molecules / LineScale Line Scale Almost At Left Edge 1`] = `
 .c1 {
   margin-top: 32px;
 }
@@ -219,7 +219,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Left Edge 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | LineScale Line Scale Almost At Right Edge 1`] = `
+exports[`Storyshots Molecules / LineScale Line Scale Almost At Right Edge 1`] = `
 .c1 {
   margin-top: 32px;
 }
@@ -438,7 +438,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Almost At Right Edge 1`] = 
 </span>
 `;
 
-exports[`Storyshots Molecules | LineScale Line Scale At Left Edge 1`] = `
+exports[`Storyshots Molecules / LineScale Line Scale At Left Edge 1`] = `
 .c1 {
   margin-top: 32px;
 }
@@ -657,7 +657,7 @@ exports[`Storyshots Molecules | LineScale Line Scale At Left Edge 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | LineScale Line Scale At Right Edge 1`] = `
+exports[`Storyshots Molecules / LineScale Line Scale At Right Edge 1`] = `
 .c1 {
   margin-top: 32px;
 }
@@ -876,7 +876,7 @@ exports[`Storyshots Molecules | LineScale Line Scale At Right Edge 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | LineScale Line Scale In The Middle With Knobs 1`] = `
+exports[`Storyshots Molecules / LineScale Line Scale In The Middle With Knobs 1`] = `
 .c1 {
   margin-top: 32px;
 }
@@ -1095,7 +1095,7 @@ exports[`Storyshots Molecules | LineScale Line Scale In The Middle With Knobs 1`
 </span>
 `;
 
-exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge 1`] = `
+exports[`Storyshots Molecules / LineScale Line Scale Near Left Edge 1`] = `
 .c1 {
   margin-top: 32px;
 }
@@ -1314,7 +1314,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge With Bigger Label 1`] = `
+exports[`Storyshots Molecules / LineScale Line Scale Near Left Edge With Bigger Label 1`] = `
 .c1 {
   margin-top: 32px;
 }
@@ -1533,7 +1533,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Left Edge With Bigger 
 </span>
 `;
 
-exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge 1`] = `
+exports[`Storyshots Molecules / LineScale Line Scale Near Right Edge 1`] = `
 .c1 {
   margin-top: 32px;
 }
@@ -1752,7 +1752,7 @@ exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | LineScale Line Scale Near Right Edge With Bigger Label 1`] = `
+exports[`Storyshots Molecules / LineScale Line Scale Near Right Edge With Bigger Label 1`] = `
 .c1 {
   margin-top: 32px;
 }

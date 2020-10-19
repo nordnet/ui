@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | Flexbox Column sized flexboxes 1`] = `
+exports[`Storyshots Atoms / Flexbox Column sized flexboxes 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -65,7 +65,7 @@ exports[`Storyshots Atoms | Flexbox Column sized flexboxes 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Flexbox Default 1`] = `
+exports[`Storyshots Atoms / Flexbox Default 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -118,7 +118,7 @@ exports[`Storyshots Atoms | Flexbox Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Flexbox With breakpoint props 1`] = `
+exports[`Storyshots Atoms / Flexbox With breakpoint props 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -240,7 +240,7 @@ exports[`Storyshots Atoms | Flexbox With breakpoint props 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Flexbox With conditionally hidden flex item 1`] = `
+exports[`Storyshots Atoms / Flexbox With conditionally hidden flex item 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -278,7 +278,7 @@ exports[`Storyshots Atoms | Flexbox With conditionally hidden flex item 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Flexbox With conditionally visible flex item 1`] = `
+exports[`Storyshots Atoms / Flexbox With conditionally visible flex item 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -332,7 +332,7 @@ exports[`Storyshots Atoms | Flexbox With conditionally visible flex item 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Flexbox With container and item props 1`] = `
+exports[`Storyshots Atoms / Flexbox With container and item props 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -415,7 +415,7 @@ exports[`Storyshots Atoms | Flexbox With container and item props 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Flexbox With custom gutter 1`] = `
+exports[`Storyshots Atoms / Flexbox With custom gutter 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -474,7 +474,7 @@ exports[`Storyshots Atoms | Flexbox With custom gutter 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Flexbox With direction: column 1`] = `
+exports[`Storyshots Atoms / Flexbox With direction: column 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;

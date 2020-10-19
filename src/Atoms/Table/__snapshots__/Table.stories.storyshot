@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | Table Default 1`] = `
+exports[`Storyshots Atoms / Table Default 1`] = `
 .c0 {
   width: 100%;
   table-layout: fixed;
@@ -960,7 +960,7 @@ exports[`Storyshots Atoms | Table Default 1`] = `
 </table>
 `;
 
-exports[`Storyshots Atoms | Table Integration: Table (stickyHeader) with Typography 1`] = `
+exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typography 1`] = `
 .c1 {
   width: 100%;
   table-layout: fixed;
@@ -5626,7 +5626,7 @@ exports[`Storyshots Atoms | Table Integration: Table (stickyHeader) with Typogra
 </span>
 `;
 
-exports[`Storyshots Atoms | Table Integration: Table with Typography 1`] = `
+exports[`Storyshots Atoms / Table Integration: Table with Typography 1`] = `
 .c1 {
   width: 100%;
   table-layout: fixed;
@@ -10273,7 +10273,7 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography 1`] = `
 </span>
 `;
 
-exports[`Storyshots Atoms | Table Integration: Table with Typography and ellipsis on name 1`] = `
+exports[`Storyshots Atoms / Table Integration: Table with Typography and ellipsis on name 1`] = `
 .c1 {
   width: 100%;
   table-layout: fixed;

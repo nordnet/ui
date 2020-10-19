@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Organisms | CardWithTabs Controlled behaviour 1`] = `
+exports[`Storyshots Organisms / CardWithTabs Controlled behaviour 1`] = `
 Array [
   @media (min-width:760px) {
 
@@ -309,7 +309,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll 1`] = `
+exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll 1`] = `
 .c2 {
   padding-left: 12px;
   padding-top: 12px;
@@ -714,7 +714,7 @@ nunc dignissim.
 </div>
 `;
 
-exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll of content and height being whatever is available left of parents height. 1`] = `
+exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll of content and height being whatever is available left of parents height. 1`] = `
 .c3 {
   padding-left: 12px;
   padding-top: 12px;
@@ -1162,7 +1162,7 @@ nunc dignissim.
 </div>
 `;
 
-exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and extra space inside 1`] = `
+exports[`Storyshots Organisms / CardWithTabs Integration: with Typography and extra space inside 1`] = `
 .c2 {
   padding-left: 12px;
   padding-top: 12px;
@@ -1485,7 +1485,7 @@ nunc dignissim.
 </div>
 `;
 
-exports[`Storyshots Organisms | CardWithTabs With variant big 1`] = `
+exports[`Storyshots Organisms / CardWithTabs With variant big 1`] = `
 .c2 {
   padding-left: 12px;
   padding-top: 12px;
@@ -1817,7 +1817,7 @@ exports[`Storyshots Organisms | CardWithTabs With variant big 1`] = `
 </div>
 `;
 
-exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
+exports[`Storyshots Organisms / CardWithTabs with initialActiveTabIndex 1`] = `
 .c2 {
   padding-left: 12px;
   padding-top: 12px;

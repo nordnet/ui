@@ -6,7 +6,7 @@ import docs from './Display.md';
 import { Display } from '.';
 
 export default {
-  title: 'Display',
+  title: 'Others / Display',
 };
 
 export const documentation = () => {

@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { Switch, Typography } from '../..';
 
 export default {
-  title: 'Molecules | Switch',
+  title: 'Molecules / Switch',
   parameters: {
     component: Switch,
   },

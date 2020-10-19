@@ -3,7 +3,7 @@ import { Skeleton } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
-  title: 'Atoms | Skeleton',
+  title: 'Atoms / Skeleton',
   parameters: {
     component: Skeleton,
   },

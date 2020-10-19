@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import { withKnobs } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
 import docs from './FlexTable.mdx';
 import { Button, Flexbox, Number } from '../..';
 import { ICON_COLUMN_DEFAULT_FLEX_PROPS } from './shared/constants';
 
 export default {
-  title: 'Molecules | FlexTable / Expandable FlexTable',
-  decorators: [withKnobs],
+  title: 'Molecules / FlexTable / Expandable FlexTable',
   parameters: {
     component: FlexTable,
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
 };
 

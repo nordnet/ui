@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | FlexTable / Big FlexTables example Big Table 1`] = `
+exports[`Storyshots Molecules / FlexTable / Big FlexTables example Big Table 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -44,7 +44,7 @@ exports[`Storyshots Molecules | FlexTable / Big FlexTables example Big Table 1`]
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / Big FlexTables example Big Table Without Sticky Header 1`] = `
+exports[`Storyshots Molecules / FlexTable / Big FlexTables example Big Table Without Sticky Header 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -78306,7 +78306,7 @@ exports[`Storyshots Molecules | FlexTable / Big FlexTables example Big Table Wit
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / Big FlexTables example Multiple Big Tables With Sticky Headers 1`] = `
+exports[`Storyshots Molecules / FlexTable / Big FlexTables example Multiple Big Tables With Sticky Headers 1`] = `
 .c2 {
   margin-bottom: 40px;
 }
@@ -95099,7 +95099,7 @@ exports[`Storyshots Molecules | FlexTable / Big FlexTables example Multiple Big 
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / Big FlexTables example Virtualized Table 1`] = `
+exports[`Storyshots Molecules / FlexTable / Big FlexTables example Virtualized Table 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;

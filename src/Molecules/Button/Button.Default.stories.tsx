@@ -7,7 +7,7 @@ import { Button, Flexbox, Typography } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
-  title: 'Molecules | Button',
+  title: 'Molecules / Button',
   parameters: {
     component: Button,
   },
@@ -104,7 +104,7 @@ export const buttonPrimaryWithColors = () => (
       {
         title: 't => t.color.cta',
         component: (
-          <Button variant="primary" color={t => t.color.cta} onClick={action('clicked')}>
+          <Button variant="primary" color={(t) => t.color.cta} onClick={action('clicked')}>
             Button
           </Button>
         ),
@@ -112,7 +112,7 @@ export const buttonPrimaryWithColors = () => (
       {
         title: 't => t.color.negative',
         component: (
-          <Button variant="primary" color={t => t.color.negative} onClick={action('clicked')}>
+          <Button variant="primary" color={(t) => t.color.negative} onClick={action('clicked')}>
             Button
           </Button>
         ),
@@ -132,7 +132,7 @@ export const buttonSecondaryWithColors = () => (
       {
         title: 't => t.color.cta',
         component: (
-          <Button variant="secondary" color={t => t.color.cta} onClick={action('clicked')}>
+          <Button variant="secondary" color={(t) => t.color.cta} onClick={action('clicked')}>
             Button
           </Button>
         ),
@@ -140,7 +140,7 @@ export const buttonSecondaryWithColors = () => (
       {
         title: 't => t.color.negative',
         component: (
-          <Button variant="secondary" color={t => t.color.negative} onClick={action('clicked')}>
+          <Button variant="secondary" color={(t) => t.color.negative} onClick={action('clicked')}>
             Button
           </Button>
         ),
@@ -220,7 +220,7 @@ export const buttonWithFocusOn = () => {
           <Button onClick={handleFocus}>Click to focus</Button>
         </Flexbox>
         <Flexbox item>
-          <Button color={t => t.color.negative} ref={ref}>
+          <Button color={(t) => t.color.negative} ref={ref}>
             Focus me
           </Button>
         </Flexbox>
@@ -270,7 +270,7 @@ export const buttonWithLoadingState = () => {
             {
               title: 'Medium',
               component: (
-                <Button size="m" color={t => t.color.negative} loading={loading}>
+                <Button size="m" color={(t) => t.color.negative} loading={loading}>
                   Medium
                 </Button>
               ),
@@ -278,7 +278,7 @@ export const buttonWithLoadingState = () => {
             {
               title: 'Large',
               component: (
-                <Button size="l" color={t => t.color.negative} loading={loading}>
+                <Button size="l" color={(t) => t.color.negative} loading={loading}>
                   Large
                 </Button>
               ),
@@ -317,7 +317,7 @@ export const buttonWithLoadingState = () => {
                 <Button
                   size="m"
                   variant="secondary"
-                  color={t => t.color.negative}
+                  color={(t) => t.color.negative}
                   loading={loading}
                 >
                   Medium
@@ -330,7 +330,7 @@ export const buttonWithLoadingState = () => {
                 <Button
                   size="l"
                   variant="secondary"
-                  color={t => t.color.negative}
+                  color={(t) => t.color.negative}
                   loading={loading}
                 >
                   Large

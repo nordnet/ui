@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
+exports[`Storyshots Molecules / FeedbackBanner Complex children 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -131,7 +131,7 @@ exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | FeedbackBanner Default usage 1`] = `
+exports[`Storyshots Molecules / FeedbackBanner Default usage 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -258,7 +258,7 @@ exports[`Storyshots Molecules | FeedbackBanner Default usage 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
+exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -694,7 +694,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | FeedbackBanner Displaying title 1`] = `
+exports[`Storyshots Molecules / FeedbackBanner Displaying title 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;

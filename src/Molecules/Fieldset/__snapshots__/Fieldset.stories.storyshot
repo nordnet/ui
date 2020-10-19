@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Fieldset Default 1`] = `
+exports[`Storyshots Molecules / Fieldset Default 1`] = `
 .c7 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -321,7 +321,7 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
 </fieldset>
 `;
 
-exports[`Storyshots Molecules | Fieldset Docs 1`] = `
+exports[`Storyshots Molecules / Fieldset Docs 1`] = `
 <p>
   The Fieldset component is used to group related elements in a form.
 </p>

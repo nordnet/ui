@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Flexbox, FormField } from '../..';
 
 export default {
-  title: 'Molecules | FormField',
+  title: 'Molecules / FormField',
   parameters: {
     component: FormField,
   },

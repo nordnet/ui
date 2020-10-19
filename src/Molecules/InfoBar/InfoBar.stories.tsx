@@ -5,7 +5,7 @@ import InfoBar from '.';
 import { Variant } from './InfoBar.types';
 
 export default {
-  title: 'Molecules | InfoBar',
+  title: 'Molecules / InfoBar',
   parameters: {
     component: InfoBar,
   },

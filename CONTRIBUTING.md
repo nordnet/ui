@@ -13,6 +13,11 @@ yarn install
 yarn dev # This will start a local instance of the storybook
 ```
 
+optionally you can pass the source directory of the component you are currently working on like so
+```shell script
+yarn dev Molecules/FlexTable # this will only load stories from the src/Molecules/FlexTable directory
+```
+
 ## Contract-driven development
 
 Todo

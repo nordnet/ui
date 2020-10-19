@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | TruncateWithTooltip Truncate With Tooltip Default 1`] = `
+exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Default 1`] = `
 Array [
   .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;

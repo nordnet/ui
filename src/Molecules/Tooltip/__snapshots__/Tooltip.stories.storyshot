@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Tooltip Custom max-width 1`] = `
+exports[`Storyshots Molecules / Tooltip Custom max-width 1`] = `
 .c0 {
   display: block;
 }
@@ -21,7 +21,7 @@ exports[`Storyshots Molecules | Tooltip Custom max-width 1`] = `
 </button>
 `;
 
-exports[`Storyshots Molecules | Tooltip Default 1`] = `
+exports[`Storyshots Molecules / Tooltip Default 1`] = `
 .c0 {
   display: block;
 }
@@ -42,7 +42,7 @@ exports[`Storyshots Molecules | Tooltip Default 1`] = `
 </button>
 `;
 
-exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] = `
+exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] = `
 .c6 {
   margin-bottom: 16px;
 }
@@ -276,7 +276,7 @@ exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] =
 </portal-dummy>
 `;
 
-exports[`Storyshots Molecules | Tooltip With position defined 1`] = `
+exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;

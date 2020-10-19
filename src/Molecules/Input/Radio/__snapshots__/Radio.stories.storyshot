@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Input / Radio Default 1`] = `
+exports[`Storyshots Molecules / Input / Radio Default 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -153,7 +153,7 @@ exports[`Storyshots Molecules | Input / Radio Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Radio Disabled 1`] = `
+exports[`Storyshots Molecules / Input / Radio Disabled 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -473,7 +473,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
+exports[`Storyshots Molecules / Input / Radio In a group 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -756,7 +756,7 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
+exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1079,7 +1079,7 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Radio In a group with tooltip (position top) 1`] = `
+exports[`Storyshots Molecules / Input / Radio In a group with tooltip (position top) 1`] = `
 Array [
   <br />,
   <br />,
@@ -1421,7 +1421,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Radio In a group with tooltip 1`] = `
+exports[`Storyshots Molecules / Input / Radio In a group with tooltip 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1759,7 +1759,7 @@ exports[`Storyshots Molecules | Input / Radio In a group with tooltip 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Radio Required 1`] = `
+exports[`Storyshots Molecules / Input / Radio Required 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -2078,7 +2078,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Radio With all actions 1`] = `
+exports[`Storyshots Molecules / Input / Radio With all actions 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2238,7 +2238,7 @@ exports[`Storyshots Molecules | Input / Radio With all actions 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Radio With an error if not checked 1`] = `
+exports[`Storyshots Molecules / Input / Radio With an error if not checked 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2427,7 +2427,7 @@ exports[`Storyshots Molecules | Input / Radio With an error if not checked 1`] =
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Radio With auto focus 1`] = `
+exports[`Storyshots Molecules / Input / Radio With auto focus 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2581,7 +2581,7 @@ exports[`Storyshots Molecules | Input / Radio With auto focus 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Radio With checked (Controlled behaviour) 1`] = `
+exports[`Storyshots Molecules / Input / Radio With checked (Controlled behaviour) 1`] = `
 Array [
   .c4 {
   box-sizing: border-box;
@@ -2744,7 +2744,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Radio With default checked 1`] = `
+exports[`Storyshots Molecules / Input / Radio With default checked 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;

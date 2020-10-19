@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { number, withKnobs } from '@storybook/addon-knobs';
+import { number } from '@storybook/addon-knobs';
 import Slider from '.';
 import { Typography, Number, Input } from '../..';
 
 export default {
-  title: 'Molecules | Slider',
-  decorators: [withKnobs],
+  title: 'Molecules / Slider',
 };
 
 const getSliderProps = ({ min = 0, max = 100, step = 1 }) => ({

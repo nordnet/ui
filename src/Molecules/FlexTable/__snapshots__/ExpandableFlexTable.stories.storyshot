@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expandable Table With Custom Row 1`] = `
+exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expandable Table With Custom Row 1`] = `
 .c27 {
   padding-left: 20px;
   padding-right: 20px;
@@ -1050,7 +1050,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expanded Table 1`] = `
+exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expanded Table 1`] = `
 .c27 {
   padding-left: 20px;
   padding-right: 20px;
@@ -2102,7 +2102,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 1`] = `
+exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 1`] = `
 .c27 {
   padding-left: 20px;
   padding-right: 20px;
@@ -3156,7 +3156,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table Different Font Size On Mobile 1`] = `
+exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table Different Font Size On Mobile 1`] = `
 .c2 {
   padding-left: 20px;
   padding-right: 20px;
@@ -3256,7 +3256,7 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Only Expandable On Mobile Table 1`] = `
+exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Only Expandable On Mobile Table 1`] = `
 .c0 {
   position: relative;
 }

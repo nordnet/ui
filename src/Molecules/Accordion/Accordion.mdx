@@ -1,4 +1,4 @@
-import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
 import { Playground } from '../../../docs/Playground';
 import { Accordion, AccordionItem, Typography } from '../..';
 
@@ -7,7 +7,8 @@ import { Accordion, AccordionItem, Typography } from '../..';
 The Accordion component is a optional wrapper component to AccordionItem to handle footer styles.
 
 ## Props
-<Props of={Accordion} />
+
+<ArgsTable of={Accordion} />
 
 ## Usage
 
@@ -20,8 +21,9 @@ Basic usage
 ```
 
 ## Playground
-<Playground code={
-  `
+
+<Playground
+  code={`
     <Accordion>
       <AccordionItem title="Sustainability">Information on sustainability</AccordionItem>
     </Accordion>

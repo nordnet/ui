@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | LinkSell LinkSell 1`] = `
+exports[`Storyshots Molecules / LinkSell LinkSell 1`] = `
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -52,7 +52,7 @@ exports[`Storyshots Molecules | LinkSell LinkSell 1`] = `
 </a>
 `;
 
-exports[`Storyshots Molecules | LinkSell LinkSell disabled 1`] = `
+exports[`Storyshots Molecules / LinkSell LinkSell disabled 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -84,7 +84,7 @@ exports[`Storyshots Molecules | LinkSell LinkSell disabled 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | LinkSell LinkSell with rel as nofollow 1`] = `
+exports[`Storyshots Molecules / LinkSell LinkSell with rel as nofollow 1`] = `
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;

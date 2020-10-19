@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | Skeleton Default 1`] = `
+exports[`Storyshots Atoms / Skeleton Default 1`] = `
 .c0 {
   width: 300px;
   display: block;
@@ -21,7 +21,7 @@ exports[`Storyshots Atoms | Skeleton Default 1`] = `
 />
 `;
 
-exports[`Storyshots Atoms | Skeleton Different variants 1`] = `
+exports[`Storyshots Atoms / Skeleton Different variants 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;

@@ -1,14 +1,15 @@
 import React from 'react';
-import { text, number, withKnobs } from '@storybook/addon-knobs';
+import { text, number } from '@storybook/addon-knobs';
 import docs from './LineScale.mdx';
 import LineScale from '.';
 
 export default {
-  title: 'Molecules | LineScale',
+  title: 'Molecules / LineScale',
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
-  decorators: [withKnobs],
 };
 
 const getLineScaleProps = ({

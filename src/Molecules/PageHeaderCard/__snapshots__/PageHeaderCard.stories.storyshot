@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | PageHeader Page header ReactNode title 1`] = `
+exports[`Storyshots Molecules / PageHeader Page header ReactNode title 1`] = `
 .c4 {
   padding: 12px;
 }
@@ -140,7 +140,7 @@ exports[`Storyshots Molecules | PageHeader Page header ReactNode title 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
+exports[`Storyshots Molecules / PageHeader Page header with children 1`] = `
 .c4 {
   padding: 12px;
 }
@@ -472,7 +472,7 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | PageHeader Regular page header 1`] = `
+exports[`Storyshots Molecules / PageHeader Regular page header 1`] = `
 .c4 {
   padding: 12px;
 }

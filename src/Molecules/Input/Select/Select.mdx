@@ -1,4 +1,4 @@
-import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
 import { Input, Flexbox, Icon, Typography } from '../../..';
 import Renderers from './Renderers.png';
 import { PseudoComponentWithPropsConsistingOfContext } from './lib/context.ts';
@@ -7,7 +7,7 @@ import { PseudoComponentWithPropsConsistingOfContext } from './lib/context.ts';
 
 # Input.Select
 
-<Props height={200} of={Input.Select} />
+<ArgsTable height={200} of={Input.Select} />
 
 ## General Info
 
@@ -53,16 +53,16 @@ The options passed to `value` will be checked with `options` first by referentia
     <Flexbox item container>
       <Flexbox container direction="column">
         <Flexbox item container alignItems="center" gutter={2}>
-          <Icon.SolidCircle color={t => 'rgb(255,147,1)'} /> FormField
+          <Icon.SolidCircle color={(t) => 'rgb(255,147,1)'} /> FormField
         </Flexbox>
         <Flexbox item container alignItems="center" gutter={2}>
-          <Icon.SolidCircle color={t => 'rgb(25,25,255)'} /> SelectedValue
+          <Icon.SolidCircle color={(t) => 'rgb(25,25,255)'} /> SelectedValue
         </Flexbox>
         <Flexbox item container alignItems="center" gutter={2}>
-          <Icon.SolidCircle color={t => 'rgb(255,25,1)'} /> List
+          <Icon.SolidCircle color={(t) => 'rgb(255,25,1)'} /> List
         </Flexbox>
         <Flexbox item container alignItems="center" gutter={2}>
-          <Icon.SolidCircle color={t => 'rgb(25,100,25)'} /> ListItem
+          <Icon.SolidCircle color={(t) => 'rgb(25,100,25)'} /> ListItem
         </Flexbox>
       </Flexbox>
     </Flexbox>
@@ -109,12 +109,12 @@ const [state] = useSelectMachineFromContext();
 
 ### State type
 
-<Props of={PseudoComponentWithPropsConsistingOfContext} />
+<ArgsTable of={PseudoComponentWithPropsConsistingOfContext} />
 
 Example:
 
 ```jsx
-const ListItemRenderer = props => <div>Hey there {props.index}</div>;
+const ListItemRenderer = (props) => <div>Hey there {props.index}</div>;
 ```
 
 ```jsx
@@ -122,16 +122,22 @@ const ListItemRenderer = props => <div>Hey there {props.index}</div>;
   components={{
     ListItem: ListItemRenderer,
   }}
-  options={[{ label: '1', value: 1 }, { label: '2', value: 2 }]}
+  options={[
+    { label: '1', value: 1 },
+    { label: '2', value: 2 },
+  ]}
 />
 ```
 
 <Input.Select
   id="demo-1"
   components={{
-    ListItem: props => <div>Hey there {props.index}</div>,
+    ListItem: (props) => <div>Hey there {props.index}</div>,
   }}
-  options={[{ label: '1', value: 1 }, { label: '2', value: 2 }]}
+  options={[
+    { label: '1', value: 1 },
+    { label: '2', value: 2 },
+  ]}
 />
 
 You can also _hide_ **FormField** with `noFormField` prop, but then you need to redefine **SelectedValue** renderer

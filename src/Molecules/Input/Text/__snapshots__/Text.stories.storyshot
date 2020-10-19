@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Input / Text Actions 1`] = `
+exports[`Storyshots Molecules / Input / Text Actions 1`] = `
 Array [
   <p>
     Actions are a bit laggy because of the @storybook/addon-actions. Prod performance is not affected.
@@ -154,7 +154,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
+exports[`Storyshots Molecules / Input / Text Alternating Types 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -400,7 +400,7 @@ exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
 </form>
 `;
 
-exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
+exports[`Storyshots Molecules / Input / Text Both addons 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -620,7 +620,7 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Default 1`] = `
+exports[`Storyshots Molecules / Input / Text Default 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -762,7 +762,7 @@ exports[`Storyshots Molecules | Input / Text Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
+exports[`Storyshots Molecules / Input / Text Disabled +addon 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -979,7 +979,7 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
+exports[`Storyshots Molecules / Input / Text Disabled 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1118,7 +1118,7 @@ exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
+exports[`Storyshots Molecules / Input / Text Edge cases 1`] = `
 .c6 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1401,7 +1401,7 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
+exports[`Storyshots Molecules / Input / Text Error if empty text 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1575,7 +1575,7 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
+exports[`Storyshots Molecules / Input / Text Extra info below 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1733,7 +1733,7 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
+exports[`Storyshots Molecules / Input / Text Extra info with error 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1907,7 +1907,7 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Full width 1`] = `
+exports[`Storyshots Molecules / Input / Text Full width 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -2460,7 +2460,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
+exports[`Storyshots Molecules / Input / Text Hidden label 1`] = `
 .c3 {
   position: absolute;
   height: 1px;
@@ -2599,7 +2599,7 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
+exports[`Storyshots Molecules / Input / Text Left addon 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2801,7 +2801,7 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Quiet 1`] = `
+exports[`Storyshots Molecules / Input / Text Quiet 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -3861,7 +3861,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text Required 1`] = `
+exports[`Storyshots Molecules / Input / Text Required 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -4169,7 +4169,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
+exports[`Storyshots Molecules / Input / Text Right addon 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4345,7 +4345,7 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
+exports[`Storyshots Molecules / Input / Text Simple login form 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4800,7 +4800,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Small 1`] = `
+exports[`Storyshots Molecules / Input / Text Small 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -5536,7 +5536,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text Success 1`] = `
+exports[`Storyshots Molecules / Input / Text Success 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -5678,7 +5678,7 @@ exports[`Storyshots Molecules | Input / Text Success 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text With auto complete 1`] = `
+exports[`Storyshots Molecules / Input / Text With auto complete 1`] = `
 Array [
   .c3 {
   box-sizing: border-box;
@@ -6103,7 +6103,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text With auto focus 1`] = `
+exports[`Storyshots Molecules / Input / Text With auto focus 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -6246,7 +6246,7 @@ exports[`Storyshots Molecules | Input / Text With auto focus 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled behaviour) 1`] = `
+exports[`Storyshots Molecules / Input / Text With default value (Uncontrolled behaviour) 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -6389,7 +6389,7 @@ exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled be
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text With maxLength 1`] = `
+exports[`Storyshots Molecules / Input / Text With maxLength 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -6532,7 +6532,7 @@ exports[`Storyshots Molecules | Input / Text With maxLength 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text With tooltip (position top) as label addon 1`] = `
+exports[`Storyshots Molecules / Input / Text With tooltip (position top) as label addon 1`] = `
 Array [
   <br />,
   <br />,
@@ -6733,7 +6733,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
+exports[`Storyshots Molecules / Input / Text With tooltip as label addon 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -6930,7 +6930,7 @@ exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text With value (Controlled behaviour) 1`] = `
+exports[`Storyshots Molecules / Input / Text With value (Controlled behaviour) 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;

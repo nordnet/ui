@@ -15,7 +15,7 @@ const handlers = actions(
 );
 
 export default {
-  title: 'Molecules | Input / Text',
+  title: 'Molecules / Input / Text',
   parameters: {
     component: Input.Text,
   },

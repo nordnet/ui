@@ -1,15 +1,16 @@
 import React from 'react';
-import { boolean, text, number, withKnobs } from '@storybook/addon-knobs';
+import { boolean, text, number } from '@storybook/addon-knobs';
 import { Flexbox } from '../..';
 import docs from './BarScale.mdx';
 import BarScale from '.';
 
 export default {
-  title: 'Molecules | BarScale',
+  title: 'Molecules / BarScale',
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
-  decorators: [withKnobs],
 };
 
 const getBarScaleProps = ({

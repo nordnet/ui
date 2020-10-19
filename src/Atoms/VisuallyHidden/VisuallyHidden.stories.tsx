@@ -3,7 +3,7 @@ import React from 'react';
 import { VisuallyHidden } from '../..';
 
 export default {
-  title: 'Atoms | VisuallyHidden',
+  title: 'Atoms / VisuallyHidden',
   parameters: {
     component: VisuallyHidden,
   },

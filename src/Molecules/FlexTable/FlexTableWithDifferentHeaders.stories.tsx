@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { withKnobs } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
 import { Typography, Flag, Flexbox } from '../..';
 import docs from './FlexTable.mdx';
@@ -8,11 +7,12 @@ import { OnSort } from './Header/Header.types';
 import { StyledFlexboxContainer, StyledBackground } from './storiesShared';
 
 export default {
-  title: 'Molecules | FlexTable / FlexTable with different headers',
-  decorators: [withKnobs],
+  title: 'Molecules / FlexTable / FlexTable with different headers',
   parameters: {
     component: FlexTable,
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
 };
 

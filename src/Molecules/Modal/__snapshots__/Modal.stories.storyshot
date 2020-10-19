@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Modal Close On Backdrop Click Story 1`] = `
+exports[`Storyshots Molecules / Modal Close On Backdrop Click Story 1`] = `
 .c6 {
   margin-bottom: 8px;
 }
@@ -318,7 +318,7 @@ exports[`Storyshots Molecules | Modal Close On Backdrop Click Story 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Modal Default 1`] = `
+exports[`Storyshots Molecules / Modal Default 1`] = `
 .c6 {
   margin-bottom: 8px;
 }
@@ -636,7 +636,7 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Modal Hide Close button 1`] = `
+exports[`Storyshots Molecules / Modal Hide Close button 1`] = `
 .c6 {
   margin-bottom: 8px;
 }
@@ -837,7 +837,7 @@ exports[`Storyshots Molecules | Modal Hide Close button 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Modal Integration: Modal with a footer and Button 1`] = `
+exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Button 1`] = `
 .c10 {
   margin-bottom: 8px;
 }
@@ -1397,7 +1397,7 @@ exports[`Storyshots Molecules | Modal Integration: Modal with a footer and Butto
 </div>
 `;
 
-exports[`Storyshots Molecules | Modal Node as Title 1`] = `
+exports[`Storyshots Molecules / Modal Node as Title 1`] = `
 .c7 {
   margin-bottom: 8px;
 }
@@ -1758,7 +1758,7 @@ exports[`Storyshots Molecules | Modal Node as Title 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Modal Not full screen mobile 1`] = `
+exports[`Storyshots Molecules / Modal Not full screen mobile 1`] = `
 .c6 {
   margin-bottom: 8px;
 }
@@ -2264,7 +2264,7 @@ exports[`Storyshots Molecules | Modal Not full screen mobile 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Modal Status Modal 1`] = `
+exports[`Storyshots Molecules / Modal Status Modal 1`] = `
 .c12 {
   padding-top: 8px;
 }
@@ -2745,7 +2745,7 @@ exports[`Storyshots Molecules | Modal Status Modal 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
+exports[`Storyshots Molecules / Modal Uncontrolled behavior 1`] = `
 .c6 {
   margin-bottom: 8px;
 }
@@ -3057,7 +3057,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Modal Without header 1`] = `
+exports[`Storyshots Molecules / Modal Without header 1`] = `
 .c4 {
   margin-bottom: 8px;
 }

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Controlled Sortable Headers 1`] = `
+exports[`Storyshots Molecules / FlexTable / FlexTable with different headers Controlled Sortable Headers 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -352,7 +352,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Con
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Default Table Headers 1`] = `
+exports[`Storyshots Molecules / FlexTable / FlexTable with different headers Default Table Headers 1`] = `
 .c16 {
   height: 12px;
   box-sizing: border-box;
@@ -716,7 +716,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sortable Header Uncontrolled With Different Alignment 1`] = `
+exports[`Storyshots Molecules / FlexTable / FlexTable with different headers Sortable Header Uncontrolled With Different Alignment 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1104,7 +1104,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sortable Headers Only Ascending Descending 1`] = `
+exports[`Storyshots Molecules / FlexTable / FlexTable with different headers Sortable Headers Only Ascending Descending 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1493,7 +1493,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Uncontrolled Sortable Headers 1`] = `
+exports[`Storyshots Molecules / FlexTable / FlexTable with different headers Uncontrolled Sortable Headers 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;

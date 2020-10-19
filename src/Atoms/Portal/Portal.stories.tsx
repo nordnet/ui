@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { Typography, Portal } from '../..';
 
 export default {
-  title: 'Atoms | Portal',
+  title: 'Atoms / Portal',
   parameters: {
     component: Portal,
   },

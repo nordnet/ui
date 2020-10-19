@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | Box Different padding for different screen sizes  1`] = `
+exports[`Storyshots Atoms / Box Different padding for different screen sizes  1`] = `
 .c2 {
   padding: 8px;
 }
@@ -52,7 +52,7 @@ exports[`Storyshots Atoms | Box Different padding for different screen sizes  1`
 </div>
 `;
 
-exports[`Storyshots Atoms | Box Margin 1`] = `
+exports[`Storyshots Atoms / Box Margin 1`] = `
 .c1 {
   margin: 16px;
 }
@@ -98,7 +98,7 @@ exports[`Storyshots Atoms | Box Margin 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Box Margin and different margin Y-axis 1`] = `
+exports[`Storyshots Atoms / Box Margin and different margin Y-axis 1`] = `
 .c1 {
   margin: 32px;
   margin-top: 16px;
@@ -146,7 +146,7 @@ exports[`Storyshots Atoms | Box Margin and different margin Y-axis 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Box Padding  1`] = `
+exports[`Storyshots Atoms / Box Padding  1`] = `
 .c1 {
   padding: 32px;
 }
@@ -196,7 +196,7 @@ exports[`Storyshots Atoms | Box Padding  1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Box Padding and different X-axis and left  1`] = `
+exports[`Storyshots Atoms / Box Padding and different X-axis and left  1`] = `
 .c1 {
   padding: 32px;
   padding-left: 0px;

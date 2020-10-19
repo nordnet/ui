@@ -6,7 +6,7 @@ import docs from './Spinner.md';
 import { Spinner, Typography } from '../..';
 
 export default {
-  title: 'Atoms | Spinner',
+  title: 'Atoms / Spinner',
   parameters: {
     component: Spinner,
   },

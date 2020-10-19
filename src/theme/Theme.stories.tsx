@@ -40,7 +40,7 @@ const colorWithValue = (color: string | string[]) =>
   );
 
 export default {
-  title: 'Theme',
+  title: 'Others / Theme',
 };
 
 export const documentation = () => <MD source={colorDocs} />;

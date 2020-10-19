@@ -5,7 +5,7 @@ import { FeedbackBanner, Spinner } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
-  title: 'Molecules | FeedbackBanner',
+  title: 'Molecules / FeedbackBanner',
   parameters: {
     component: FeedbackBanner,
   },

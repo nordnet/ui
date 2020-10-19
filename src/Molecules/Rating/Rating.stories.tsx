@@ -1,14 +1,15 @@
 import React from 'react';
-import { number, withKnobs } from '@storybook/addon-knobs';
+import { number } from '@storybook/addon-knobs';
 import docs from './Rating.mdx';
 import Rating from '.';
 
 export default {
-  title: 'Molecules | Rating',
+  title: 'Molecules / Rating',
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
-  decorators: [withKnobs],
 };
 
 const getRatingProps = ({ rating = 0 } = {}) => ({

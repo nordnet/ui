@@ -1,4 +1,4 @@
-import { AlignSelfProperty } from 'csstype';
+import { Property } from 'csstype';
 
 export type ContainerProps = {
   container?: boolean;
@@ -57,7 +57,7 @@ export type ItemProps = {
   basis?: string;
   flex?: string;
   align?: 'auto' | 'flex-start' | 'flex-end' | 'center' | 'baseline' | 'stretch';
-  alignSelf?: AlignSelfProperty;
+  alignSelf?: Property.AlignSelf;
   size?: number | string;
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   hidden?: boolean;

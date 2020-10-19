@@ -3,7 +3,7 @@ import { LinkBuy } from '../..';
 import { Provider } from '../../common/Links/ReactRouterLinkHelper';
 
 export default {
-  title: 'Molecules | LinkBuy',
+  title: 'Molecules / LinkBuy',
   parameters: {
     component: LinkBuy,
   },

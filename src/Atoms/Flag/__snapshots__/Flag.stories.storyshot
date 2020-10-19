@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | Flag Available flags 1`] = `
+exports[`Storyshots Atoms / Flag Available flags 1`] = `
 .c3 {
   height: 20px;
   box-sizing: border-box;
@@ -1118,7 +1118,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Flag Default use 1`] = `
+exports[`Storyshots Atoms / Flag Default use 1`] = `
 .c0 {
   height: 20px;
   box-sizing: border-box;
@@ -1168,7 +1168,7 @@ exports[`Storyshots Atoms | Flag Default use 1`] = `
 </svg>
 `;
 
-exports[`Storyshots Atoms | Flag Different size  1`] = `
+exports[`Storyshots Atoms / Flag Different size  1`] = `
 .c0 {
   height: 40px;
   box-sizing: border-box;
@@ -1218,7 +1218,7 @@ exports[`Storyshots Atoms | Flag Different size  1`] = `
 </svg>
 `;
 
-exports[`Storyshots Atoms | Flag Inline 1`] = `
+exports[`Storyshots Atoms / Flag Inline 1`] = `
 .c0 {
   height: 20px;
   box-sizing: border-box;
@@ -1275,4 +1275,4 @@ exports[`Storyshots Atoms | Flag Inline 1`] = `
 </span>
 `;
 
-exports[`Storyshots Atoms | Flag Renders nothing if wrong country code 1`] = `null`;
+exports[`Storyshots Atoms / Flag Renders nothing if wrong country code 1`] = `null`;

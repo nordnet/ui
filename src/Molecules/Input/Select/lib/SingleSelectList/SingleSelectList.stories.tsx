@@ -5,7 +5,7 @@ import { Display } from '../../../../../common/Display';
 import { DropdownBubble, FadedScroll } from '../../../../..';
 
 export default {
-  title: 'Molecules | Input / Select / SingleSelectList',
+  title: 'Molecules / Input / Select / SingleSelectList',
 };
 
 export const itemDefault = () => <Option value={0} label="First" />;
@@ -32,7 +32,7 @@ const DropdownBubbleWithPadding = styled(DropdownBubble)`
   width: 300px;
 `;
 // @ts-ignore
-const Wrapper = props => (
+const Wrapper = (props) => (
   <DropdownBubbleWithPadding position={props.position} maxHeight="200px">
     <FadedScroll enableMobileFade>{props.children}</FadedScroll>
   </DropdownBubbleWithPadding>

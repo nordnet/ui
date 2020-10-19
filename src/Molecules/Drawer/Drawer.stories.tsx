@@ -3,7 +3,7 @@ import { Drawer, Typography, Icon, Flexbox, FadedScroll } from '../../index';
 import { useOnClickOutside } from '../../common/Hooks';
 
 export default {
-  title: 'Molecules | Drawer',
+  title: 'Molecules / Drawer',
   parameters: {
     component: Drawer,
   },

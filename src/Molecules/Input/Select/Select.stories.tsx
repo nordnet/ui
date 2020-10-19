@@ -1259,8 +1259,10 @@ export const focusWithoutScrolling = () => (
   </>
 );
 export default {
-  title: 'Molecules | Input / Select',
+  title: 'Molecules / Input / Select',
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
 };

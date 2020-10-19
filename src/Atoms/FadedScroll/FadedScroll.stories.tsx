@@ -4,14 +4,16 @@ import { FadedScroll, List, ListItem } from '../..';
 import docs from './FadedScroll.mdx';
 
 export default {
-  title: 'Atoms | FadedScroll',
+  title: 'Atoms / FadedScroll',
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
 };
 
 const FadedScrollWithHeightDesktopOnly = styled(FadedScroll)`
-  ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
     height: 220px;
   }
 `;
@@ -21,7 +23,7 @@ const FadedScrollWithHeight = styled(FadedScroll)`
 `;
 
 const StyledListItem = styled(ListItem)`
-  padding: ${p => p.theme.spacing.unit(2)}px;
+  padding: ${(p) => p.theme.spacing.unit(2)}px;
 `;
 
 const content = (

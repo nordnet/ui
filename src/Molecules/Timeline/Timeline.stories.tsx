@@ -3,7 +3,7 @@ import { Box } from '../..';
 import Timeline from './Timeline';
 
 export default {
-  title: 'Molecules | Timeline',
+  title: 'Molecules / Timeline',
   parameters: {
     component: Timeline,
   },

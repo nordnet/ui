@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | Legend Default 1`] = `
+exports[`Storyshots Atoms / Legend Default 1`] = `
 .c0 {
   box-sizing: border-box;
   color: inherit;
@@ -38,13 +38,13 @@ exports[`Storyshots Atoms | Legend Default 1`] = `
 </legend>
 `;
 
-exports[`Storyshots Atoms | Legend Docs 1`] = `
+exports[`Storyshots Atoms / Legend Docs 1`] = `
 <p>
   The Legend component defines a caption for the Fieldset component.
 </p>
 `;
 
-exports[`Storyshots Atoms | Legend Looking like a label 1`] = `
+exports[`Storyshots Atoms / Legend Looking like a label 1`] = `
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;

@@ -5,7 +5,7 @@ import docs from './PageWrapper.md';
 import { PageWrapper, Typography, Box } from '../..';
 
 export default {
-  title: 'Molecules | PageWrapper',
+  title: 'Molecules / PageWrapper',
   parameters: {
     component: PageWrapper,
   },
@@ -30,7 +30,7 @@ pageWrapper.story = {
 };
 
 export const pageWrapperWithACustomBackground = () => (
-  <PageWrapper background={t => t.color.background}>
+  <PageWrapper background={(t) => t.color.background}>
     <Box py={4}>
       <Typography type="primary">Page contents inside the PageWrapper can be anything.</Typography>
     </Box>

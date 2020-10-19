@@ -5,7 +5,7 @@ import { Box, Typography } from '../..';
 
 const Outer = styled.div`
   display: inline-block;
-  ${p => {
+  ${(p) => {
     const stripes = p.theme.color.warning;
     const stripesDark = Color(stripes).lighten(0.5);
 
@@ -22,18 +22,18 @@ const Outer = styled.div`
 `;
 
 const StyledBox = styled(Box)`
-  background-color: ${p => p.theme.color.background};
+  background-color: ${(p) => p.theme.color.background};
 `;
 
 const withOuter = (storyFn: () => JSX.Element) => <Outer>{storyFn()}</Outer>;
 const text = (
   <StyledBox p={2}>
-    <Typography color={t => t.color.text}>Some random content here</Typography>
+    <Typography color={(t) => t.color.text}>Some random content here</Typography>
   </StyledBox>
 );
 
 export default {
-  title: 'Atoms | Box',
+  title: 'Atoms / Box',
   decorators: [withOuter],
 
   parameters: {

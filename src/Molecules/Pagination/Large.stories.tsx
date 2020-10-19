@@ -6,7 +6,9 @@ import Pagination from './Pagination';
 export default {
   title: 'Molecules / Pagination / Large',
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
 };
 

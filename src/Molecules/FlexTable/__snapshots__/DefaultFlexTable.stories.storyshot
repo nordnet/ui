@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | FlexTable / Default FlexTable Default Table 1`] = `
+exports[`Storyshots Molecules / FlexTable / Default FlexTable Default Table 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -360,7 +360,7 @@ exports[`Storyshots Molecules | FlexTable / Default FlexTable Default Table 1`] 
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / Default FlexTable Default Table With Actions Column 1`] = `
+exports[`Storyshots Molecules / FlexTable / Default FlexTable Default Table With Actions Column 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -908,7 +908,7 @@ exports[`Storyshots Molecules | FlexTable / Default FlexTable Default Table With
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / Default FlexTable Default Table With Custom Title 1`] = `
+exports[`Storyshots Molecules / FlexTable / Default FlexTable Default Table With Custom Title 1`] = `
 .c6 {
   height: 12px;
   box-sizing: border-box;
@@ -1393,7 +1393,7 @@ exports[`Storyshots Molecules | FlexTable / Default FlexTable Default Table With
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / Default FlexTable Default Table With Footer 1`] = `
+exports[`Storyshots Molecules / FlexTable / Default FlexTable Default Table With Footer 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1818,7 +1818,7 @@ exports[`Storyshots Molecules | FlexTable / Default FlexTable Default Table With
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / Default FlexTable Default Table With Title 1`] = `
+exports[`Storyshots Molecules / FlexTable / Default FlexTable Default Table With Title 1`] = `
 .c2 {
   margin-bottom: 40px;
 }

@@ -1,0 +1,879 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | SelectionCard Default 1`] = `
+.c9 {
+  padding-top: 16px;
+  padding-right: 20px;
+}
+
+.c1 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  box-sizing: border-box;
+}
+
+.c13 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13 > *:not(:first-child) {
+  padding-top: 4px;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c15 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c14 {
+  width: 100%;
+}
+
+.c11 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.c5 {
+  color: inherit;
+  width: 100%;
+  position: absolute;
+  top: 4px;
+}
+
+.c8 {
+  box-sizing: border-box;
+  padding: 0px 4px;
+  background: #0046FF;
+  color: #FFFFFF;
+}
+
+.c10 {
+  border-radius: 100%;
+  border: 1px solid #D7D7D2;
+  height: 20px;
+  width: 20px;
+}
+
+.c3 {
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #282823;
+  background: #FFFFFF;
+  border: 1px solid #BCBCB6;
+}
+
+.c3:hover {
+  background: rgba(0,70,255,0.1);
+  outline: 2px solid #0046FF;
+  outline-offset: -2px;
+  vertical-align: top;
+}
+
+.c0 {
+  cursor: inherit;
+}
+
+.c0:focus-within .c2 {
+  outline: 2px solid #0046FF;
+  outline-offset: -2px;
+  vertical-align: top;
+}
+
+.c12 {
+  text-align: left;
+  padding: 20px;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+<label
+  className="c0"
+>
+  <div
+    className="c1 c2 c3"
+  >
+    
+    <div
+      className="c4 c5"
+    >
+      <div
+        className="c6"
+      >
+        <span
+          className="c7 c8"
+        >
+          Tag
+        </span>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c10"
+        />
+        <input
+          checked={false}
+          className="c11"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </div>
+    </div>
+    <div
+      className="c12"
+    >
+      <div
+        className="c13"
+      >
+        <div
+          className="c6 c14"
+        >
+          <span
+            className="c15 "
+          >
+            Selection Card Default
+          </span>
+        </div>
+        <div
+          className="c6 c14"
+        >
+          <span
+            className="c16 "
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dignissim dolor.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Molecules | SelectionCard With ReactNode 1`] = `
+.c9 {
+  padding-top: 16px;
+  padding-right: 20px;
+}
+
+.c1 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  box-sizing: border-box;
+}
+
+.c13 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13 > *:not(:first-child) {
+  padding-top: 4px;
+}
+
+.c14 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c17 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c11 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.c5 {
+  color: inherit;
+  width: 100%;
+  position: absolute;
+  top: 4px;
+}
+
+.c8 {
+  box-sizing: border-box;
+  padding: 0px 4px;
+  background: #0046FF;
+  color: #FFFFFF;
+}
+
+.c10 {
+  border-radius: 100%;
+  border: 1px solid #D7D7D2;
+  height: 20px;
+  width: 20px;
+}
+
+.c3 {
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #282823;
+  background: #FFFFFF;
+  border: 1px solid #BCBCB6;
+}
+
+.c3:hover {
+  background: rgba(0,70,255,0.1);
+  outline: 2px solid #0046FF;
+  outline-offset: -2px;
+  vertical-align: top;
+}
+
+.c0 {
+  cursor: inherit;
+}
+
+.c0:focus-within .c2 {
+  outline: 2px solid #0046FF;
+  outline-offset: -2px;
+  vertical-align: top;
+}
+
+.c12 {
+  text-align: left;
+  padding: 20px;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.c15 {
+  width: 100%;
+}
+
+<label
+  className="c0"
+>
+  <div
+    className="c1 c2 c3"
+  >
+    
+    <div
+      className="c4 c5"
+    >
+      <div
+        className="c6"
+      >
+        <span
+          className="c7 c8"
+        >
+          Tag
+        </span>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c10"
+        />
+        <input
+          checked={false}
+          className="c11"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </div>
+    </div>
+    <div
+      className="c12"
+    >
+      <div
+        className="c13"
+      >
+        <div
+          className="c14 c15"
+        >
+          <div
+            className="c6"
+          >
+            <span
+              className="c16"
+            >
+              Title in a flexbox
+            </span>
+          </div>
+        </div>
+        <div
+          className="c17 c15"
+        >
+          <div
+            className="c6"
+          >
+            <span
+              className="c7"
+            >
+              Text in a flexbox
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Molecules | SelectionCard With controlled behavior 1`] = `
+Array [
+  .c7 {
+  padding-top: 16px;
+  padding-right: 20px;
+}
+
+.c1 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  box-sizing: border-box;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 > *:not(:first-child) {
+  padding-top: 4px;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c11 {
+  width: 100%;
+}
+
+.c8 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.c5 {
+  color: inherit;
+  width: 100%;
+  position: absolute;
+  top: 4px;
+}
+
+.c3 {
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #282823;
+  background: #FFFFFF;
+}
+
+.c3:hover {
+  background: rgba(0,70,255,0.1);
+  outline: 2px solid #0046FF;
+  outline-offset: -2px;
+  vertical-align: top;
+}
+
+.c0 {
+  cursor: inherit;
+}
+
+.c0:focus-within .c2 {
+  outline: 2px solid #0046FF;
+  outline-offset: -2px;
+  vertical-align: top;
+}
+
+.c9 {
+  text-align: left;
+  padding: 20px;
+}
+
+<label
+    className="c0"
+  >
+    <div
+      className="c1 c2 c3"
+    >
+      
+      <div
+        className="c4 c5"
+      >
+        <div
+          className="c6"
+        >
+          
+        </div>
+        <div
+          className="c7"
+        >
+          <input
+            checked={false}
+            className="c8"
+            disabled={false}
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c10"
+        >
+          <div
+            className="c6 c11"
+          >
+            <span
+              className="c12 "
+            >
+              Controlled selection card
+            </span>
+          </div>
+          <div
+            className="c6 c11"
+          >
+            <span
+              className="c13 "
+            >
+              This component is controlled
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>,
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Selected
+  </button>,
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Not selected
+  </button>,
+  <span>
+    value: 
+    false
+  </span>,
+]
+`;
+
+exports[`Storyshots Molecules | SelectionCard With icon 1`] = `
+.c9 {
+  padding-top: 16px;
+  padding-right: 20px;
+}
+
+.c1 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  box-sizing: border-box;
+}
+
+.c13 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13 > *:not(:first-child) {
+  padding-top: 4px;
+}
+
+.c14 {
+  box-sizing: border-box;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 32px;
+  height: 32px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c18 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c16 {
+  width: 100%;
+}
+
+.c11 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.c5 {
+  color: inherit;
+  width: 100%;
+  position: absolute;
+  top: 4px;
+}
+
+.c8 {
+  box-sizing: border-box;
+  padding: 0px 4px;
+  background: #0046FF;
+  color: #FFFFFF;
+}
+
+.c10 {
+  border-radius: 100%;
+  border: 1px solid #D7D7D2;
+  height: 20px;
+  width: 20px;
+}
+
+.c3 {
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #282823;
+  background: #FFFFFF;
+  border: 1px solid #BCBCB6;
+}
+
+.c3:hover {
+  background: rgba(0,70,255,0.1);
+  outline: 2px solid #0046FF;
+  outline-offset: -2px;
+  vertical-align: top;
+}
+
+.c0 {
+  cursor: inherit;
+}
+
+.c0:focus-within .c2 {
+  outline: 2px solid #0046FF;
+  outline-offset: -2px;
+  vertical-align: top;
+}
+
+.c12 {
+  text-align: left;
+  padding: 20px;
+  padding-top: 28px;
+  padding-bottom: 20px;
+}
+
+<label
+  className="c0"
+>
+  <div
+    className="c1 c2 c3"
+  >
+    
+    <div
+      className="c4 c5"
+    >
+      <div
+        className="c6"
+      >
+        <span
+          className="c7 c8"
+        >
+          Tag
+        </span>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c10"
+        />
+        <input
+          checked={false}
+          className="c11"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </div>
+    </div>
+    <div
+      className="c12"
+    >
+      <div
+        className="c13"
+      >
+        <div
+          className="c14"
+        >
+          <svg
+            aria-hidden="true"
+            className="c15"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 32 32"
+          >
+            <g
+              fill="inherit"
+              fillRule="evenodd"
+              stroke="none"
+              strokeWidth="1"
+            >
+              <g
+                fill="inherit"
+                fillRule="nonzero"
+              >
+                <path
+                  d="M15.9939671,0.177860141 L20.9999671,5.34486014 L21,4 L29,4 L28.9999671,13.6038601 L31.4939671,16.1778601 L28.9999671,16.1778601 L29,32 L3,32 L2.99996713,16.1778601 L0.493967134,16.1778601 L15.9939671,0.177860141 Z M26.9999671,16.1778601 L4.99996713,16.1778601 L5,30 L9.49396713,29.9998601 L9.49396713,23.1778601 L13.4939671,23.1778601 L13.4939671,29.9998601 L27,30 L26.9999671,16.1778601 Z M22.4939671,19.1778601 L22.4939671,26.1778601 L19.4939671,26.1778601 L19.4939671,19.1778601 L22.4939671,19.1778601 Z M15.9939671,3.12127487 L5.45296713,13.9998601 L26.5329671,13.9998601 L21.2289671,8.52486014 L21,8.52536478 L20.9999671,8.28786014 L15.9939671,3.12127487 Z M26.8181818,6.00009139 L23.1818182,6.00009139 L23.1809671,7.59686014 L26.8179671,11.3508601 L26.8181818,6.00009139 Z"
+                  id="Combined-Shape"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div
+          className="c6 c16"
+        >
+          <span
+            className="c17 "
+          >
+            With Icon
+          </span>
+        </div>
+        <div
+          className="c6 c16"
+        >
+          <span
+            className="c18 "
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dignissim dolor.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</label>
+`;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | Portal Default 1`] = `
+exports[`Storyshots Atoms / Portal Default 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -19,7 +19,7 @@ exports[`Storyshots Atoms | Portal Default 1`] = `
 </portal-dummy>
 `;
 
-exports[`Storyshots Atoms | Portal If attachTo prop is not a HTMLElement then nothing is rendered 1`] = `
+exports[`Storyshots Atoms / Portal If attachTo prop is not a HTMLElement then nothing is rendered 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -42,7 +42,7 @@ exports[`Storyshots Atoms | Portal If attachTo prop is not a HTMLElement then no
 </div>
 `;
 
-exports[`Storyshots Atoms | Portal Portal to specified destination 1`] = `
+exports[`Storyshots Atoms / Portal Portal to specified destination 1`] = `
 <div
   id="destination"
 />

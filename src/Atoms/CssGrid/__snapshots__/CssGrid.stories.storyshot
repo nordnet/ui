@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | CssGrid Conditionally hidden: WRONG way [hidden] 1`] = `
+exports[`Storyshots Atoms / CssGrid Conditionally hidden: WRONG way [hidden] 1`] = `
 .c0 {
   display: grid;
   box-sizing: border-box;
@@ -66,7 +66,7 @@ exports[`Storyshots Atoms | CssGrid Conditionally hidden: WRONG way [hidden] 1`]
 </div>
 `;
 
-exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [hidden] 1`] = `
+exports[`Storyshots Atoms / CssGrid Conditionally hidden: good way [hidden] 1`] = `
 .c0 {
   display: grid;
   box-sizing: border-box;
@@ -154,7 +154,7 @@ exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [hidden] 1`] 
 </div>
 `;
 
-exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [shown] 1`] = `
+exports[`Storyshots Atoms / CssGrid Conditionally hidden: good way [shown] 1`] = `
 .c0 {
   display: grid;
   box-sizing: border-box;
@@ -238,7 +238,7 @@ exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [shown] 1`] =
 </div>
 `;
 
-exports[`Storyshots Atoms | CssGrid CssGrid with custom gutter 1`] = `
+exports[`Storyshots Atoms / CssGrid CssGrid with custom gutter 1`] = `
 .c0 {
   display: grid;
   box-sizing: border-box;
@@ -344,7 +344,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom gutter 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
+exports[`Storyshots Atoms / CssGrid CssGrid with custom templateColumns 1`] = `
 .c0 {
   display: grid;
   box-sizing: border-box;
@@ -450,7 +450,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different screen sizes 1`] = `
+exports[`Storyshots Atoms / CssGrid CssGrid with different layouts for different screen sizes 1`] = `
 .c0 {
   display: grid;
   box-sizing: border-box;
@@ -612,7 +612,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
 </div>
 `;
 
-exports[`Storyshots Atoms | CssGrid CssGrid with minmax() 1`] = `
+exports[`Storyshots Atoms / CssGrid CssGrid with minmax() 1`] = `
 .c0 {
   display: grid;
   box-sizing: border-box;
@@ -717,7 +717,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with minmax() 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom sized columns 1`] = `
+exports[`Storyshots Atoms / CssGrid CssGrid with object as gutter and custom sized columns 1`] = `
 .c0 {
   display: grid;
   box-sizing: border-box;
@@ -865,7 +865,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom siz
 </div>
 `;
 
-exports[`Storyshots Atoms | CssGrid Different gutter on different screen sizes 1`] = `
+exports[`Storyshots Atoms / CssGrid Different gutter on different screen sizes 1`] = `
 .c0 {
   display: grid;
   box-sizing: border-box;
@@ -1023,7 +1023,7 @@ exports[`Storyshots Atoms | CssGrid Different gutter on different screen sizes 1
 </div>
 `;
 
-exports[`Storyshots Atoms | CssGrid Items With Different Placements 1`] = `
+exports[`Storyshots Atoms / CssGrid Items With Different Placements 1`] = `
 .c0 {
   display: grid;
   box-sizing: border-box;
@@ -1322,7 +1322,7 @@ exports[`Storyshots Atoms | CssGrid Items With Different Placements 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | CssGrid Items with different placements 1`] = `
+exports[`Storyshots Atoms / CssGrid Items with different placements 1`] = `
 .c0 {
   display: grid;
   box-sizing: border-box;
@@ -1410,7 +1410,7 @@ exports[`Storyshots Atoms | CssGrid Items with different placements 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | CssGrid Shown on md+, hidden on small screens 1`] = `
+exports[`Storyshots Atoms / CssGrid Shown on md+, hidden on small screens 1`] = `
 .c0 {
   display: grid;
   box-sizing: border-box;
@@ -1562,7 +1562,7 @@ exports[`Storyshots Atoms | CssGrid Shown on md+, hidden on small screens 1`] = 
 </div>
 `;
 
-exports[`Storyshots Atoms | CssGrid Shown on small screen sizes, hidden on md+ 1`] = `
+exports[`Storyshots Atoms / CssGrid Shown on small screen sizes, hidden on md+ 1`] = `
 .c0 {
   display: grid;
   box-sizing: border-box;
@@ -1714,7 +1714,7 @@ exports[`Storyshots Atoms | CssGrid Shown on small screen sizes, hidden on md+ 1
 </div>
 `;
 
-exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
+exports[`Storyshots Atoms / CssGrid Simple CssGrid 1`] = `
 .c0 {
   display: grid;
   box-sizing: border-box;

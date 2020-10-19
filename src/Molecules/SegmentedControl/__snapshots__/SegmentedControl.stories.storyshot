@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | SegmentedControl Controlled Behaviour 1`] = `
+exports[`Storyshots Molecules / SegmentedControl Controlled Behaviour 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -161,7 +161,7 @@ exports[`Storyshots Molecules | SegmentedControl Controlled Behaviour 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | SegmentedControl Controlled Disabled 1`] = `
+exports[`Storyshots Molecules / SegmentedControl Controlled Disabled 1`] = `
 .c8 {
   margin-top: 16px;
 }
@@ -421,7 +421,7 @@ exports[`Storyshots Molecules | SegmentedControl Controlled Disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | SegmentedControl Default 1`] = `
+exports[`Storyshots Molecules / SegmentedControl Default 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -582,7 +582,7 @@ exports[`Storyshots Molecules | SegmentedControl Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | SegmentedControl Disabled 1`] = `
+exports[`Storyshots Molecules / SegmentedControl Disabled 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -724,7 +724,7 @@ exports[`Storyshots Molecules | SegmentedControl Disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | SegmentedControl Last Item Selected 1`] = `
+exports[`Storyshots Molecules / SegmentedControl Last Item Selected 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;

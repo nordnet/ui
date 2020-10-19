@@ -199,6 +199,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   generationSavingsTimelineColor3: RawColor['brandBlue'];
   /** complementaryBlue1 */
   generationSavingsTimelineColor4: RawColor['complementaryBlue1'];
+  /** brandPink */
+  guidanceSelectionCardIcon: RawColor['brandPink'];
   /** gray6 */
   orderDepthBackground: RawColor['gray6'];
   /** gray5 */
@@ -219,6 +221,10 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   menuAccent4: RawColor['brandPink'];
   /** brandBlue */
   menuAccent5: RawColor['brandBlue'];
+  /** gray5 */
+  selectionCardBorder: RawColor['gray5'];
+  /** gray2 */
+  selectionCardText: RawColor['gray2'];
   /** cta */
   sliderColor: RawColor['cta'];
   /** brandGreen */

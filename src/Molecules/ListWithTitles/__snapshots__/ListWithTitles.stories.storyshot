@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with left and right titles 1`] = `
+exports[`Storyshots Molecules / ListWithTitles Integration: ListWithTitles with left and right titles 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -102,7 +102,7 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
 </div>
 `;
 
-exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with left title 1`] = `
+exports[`Storyshots Molecules / ListWithTitles Integration: ListWithTitles with left title 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -202,7 +202,7 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
 </div>
 `;
 
-exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with no titles 1`] = `
+exports[`Storyshots Molecules / ListWithTitles Integration: ListWithTitles with no titles 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -259,7 +259,7 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
 </ol>
 `;
 
-exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with right title 1`] = `
+exports[`Storyshots Molecules / ListWithTitles Integration: ListWithTitles with right title 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;

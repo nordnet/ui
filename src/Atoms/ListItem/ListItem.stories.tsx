@@ -2,7 +2,7 @@ import React from 'react';
 import { ListItem } from '../..';
 
 export default {
-  title: 'Atoms | ListItem',
+  title: 'Atoms / ListItem',
   parameters: {
     component: ListItem,
   },

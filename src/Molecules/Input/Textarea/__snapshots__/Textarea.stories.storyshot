@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Input / Textarea Actions 1`] = `
+exports[`Storyshots Molecules / Input / Textarea Actions 1`] = `
 Array [
   <p>
     Actions are a bit laggy because of the @storybook/addon-actions. Prod performance is not affected.
@@ -139,7 +139,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Textarea Default 1`] = `
+exports[`Storyshots Molecules / Input / Textarea Default 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -266,7 +266,7 @@ exports[`Storyshots Molecules | Input / Textarea Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Textarea Disabled 1`] = `
+exports[`Storyshots Molecules / Input / Textarea Disabled 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -390,7 +390,7 @@ exports[`Storyshots Molecules | Input / Textarea Disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Textarea Edge cases 1`] = `
+exports[`Storyshots Molecules / Input / Textarea Edge cases 1`] = `
 .c6 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -655,7 +655,7 @@ exports[`Storyshots Molecules | Input / Textarea Edge cases 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Textarea Error if empty text 1`] = `
+exports[`Storyshots Molecules / Input / Textarea Error if empty text 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -814,7 +814,7 @@ exports[`Storyshots Molecules | Input / Textarea Error if empty text 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Textarea Extra info below 1`] = `
+exports[`Storyshots Molecules / Input / Textarea Extra info below 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -957,7 +957,7 @@ exports[`Storyshots Molecules | Input / Textarea Extra info below 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Textarea Extra info with error 1`] = `
+exports[`Storyshots Molecules / Input / Textarea Extra info with error 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1116,7 +1116,7 @@ exports[`Storyshots Molecules | Input / Textarea Extra info with error 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Textarea Full width 1`] = `
+exports[`Storyshots Molecules / Input / Textarea Full width 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1244,7 +1244,7 @@ exports[`Storyshots Molecules | Input / Textarea Full width 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Textarea Hidden label 1`] = `
+exports[`Storyshots Molecules / Input / Textarea Hidden label 1`] = `
 .c3 {
   position: absolute;
   height: 1px;
@@ -1368,7 +1368,7 @@ exports[`Storyshots Molecules | Input / Textarea Hidden label 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Textarea Required 1`] = `
+exports[`Storyshots Molecules / Input / Textarea Required 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -1658,7 +1658,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Textarea Specific width 1`] = `
+exports[`Storyshots Molecules / Input / Textarea Specific width 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1786,7 +1786,7 @@ exports[`Storyshots Molecules | Input / Textarea Specific width 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Textarea Success 1`] = `
+exports[`Storyshots Molecules / Input / Textarea Success 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1913,7 +1913,7 @@ exports[`Storyshots Molecules | Input / Textarea Success 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Textarea With auto focus 1`] = `
+exports[`Storyshots Molecules / Input / Textarea With auto focus 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2041,7 +2041,7 @@ exports[`Storyshots Molecules | Input / Textarea With auto focus 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Textarea With default value (Uncontrolled behaviour) 1`] = `
+exports[`Storyshots Molecules / Input / Textarea With default value (Uncontrolled behaviour) 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2169,7 +2169,7 @@ exports[`Storyshots Molecules | Input / Textarea With default value (Uncontrolle
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Textarea With tooltip (position top) as label addon 1`] = `
+exports[`Storyshots Molecules / Input / Textarea With tooltip (position top) as label addon 1`] = `
 Array [
   <br />,
   <br />,
@@ -2355,7 +2355,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Textarea With tooltip as label addon 1`] = `
+exports[`Storyshots Molecules / Input / Textarea With tooltip as label addon 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2537,7 +2537,7 @@ exports[`Storyshots Molecules | Input / Textarea With tooltip as label addon 1`]
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Textarea With value (Controlled behaviour) 1`] = `
+exports[`Storyshots Molecules / Input / Textarea With value (Controlled behaviour) 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;

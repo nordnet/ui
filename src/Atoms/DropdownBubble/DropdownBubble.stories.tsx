@@ -3,7 +3,7 @@ import { DropdownBubble, Typography } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
-  title: 'Atoms | DropdownBubble',
+  title: 'Atoms / DropdownBubble',
   parameters: {
     component: DropdownBubble,
   },

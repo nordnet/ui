@@ -5,10 +5,12 @@ import docs from './Pill.mdx';
 import { Flexbox, Icon, Typography, Button } from '../..';
 
 export default {
-  title: 'Atoms | Pill',
+  title: 'Atoms / Pill',
 
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
     component: Pill,
   },
 };
@@ -27,7 +29,7 @@ basicPill.story = {
 };
 
 export const pillWithBar = () => (
-  <Pill barColor={t => t.color.indicatorPillColor8}>
+  <Pill barColor={(t) => t.color.indicatorPillColor8}>
     <Flexbox container gutter={1} alignItems="center">
       <Flexbox item>
         <Button type="button" variant="neutral">
@@ -50,7 +52,7 @@ pillWithBar.story = {
   name: 'Pill with colored bar',
 };
 export const pillWithNoPadding = () => (
-  <Pill barColor={t => t.color.indicatorPillColor8} noPadding>
+  <Pill barColor={(t) => t.color.indicatorPillColor8} noPadding>
     <Typography type="tertiary" weight="bold">
       OMXS30
     </Typography>{' '}

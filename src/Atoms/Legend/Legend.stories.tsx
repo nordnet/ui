@@ -2,7 +2,7 @@ import React from 'react';
 import { Legend } from '../..';
 
 export default {
-  title: 'Atoms | Legend',
+  title: 'Atoms / Legend',
   parameters: {
     component: Legend,
   },

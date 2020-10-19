@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Input / Select / Action All States 1`] = `
+exports[`Storyshots Molecules / Input / Select / Action All States 1`] = `
 .c3 {
   padding-left: 12px;
   padding-top: 8px;

@@ -10,7 +10,7 @@ const StyledContainer = styled.div`
 const Container = ({ children }: any) => <StyledContainer>{children}</StyledContainer>;
 
 export default {
-  title: 'Atoms | Separator',
+  title: 'Atoms / Separator',
   parameters: {
     component: Separator,
   },
@@ -28,9 +28,9 @@ separatorDefault.story = {
 
 export const separatorsWithDifferentColor = () => (
   <Container>
-    <Separator color={t => t.color.negative} />
+    <Separator color={(t) => t.color.negative} />
     <br />
-    <Separator color={t => t.color.backgroundDark} />
+    <Separator color={(t) => t.color.backgroundDark} />
   </Container>
 );
 

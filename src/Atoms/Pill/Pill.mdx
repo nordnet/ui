@@ -1,4 +1,4 @@
-import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
 import { Playground } from '../../../docs/Playground';
 import { Pill } from './Pill';
 import { Typography } from '../..';
@@ -8,19 +8,23 @@ import { Typography } from '../..';
 This component will render a pill component with nothing inside.
 
 ## Props
-<Props of={Pill} />
+
+<ArgsTable of={Pill} />
 
 ## Usage
 
 Basic usage
 
 ```javascript
-<Pill barColor={t => t.color.indicatorPillColor8}>
-    <Typography type="tertiary">123</Typography>
+<Pill barColor={(t) => t.color.indicatorPillColor8}>
+  <Typography type="tertiary">123</Typography>
 </Pill>
 ```
 
 ## Playground
-<Playground code={`<Pill barColor={t => t.color.indicatorPillColor8}>
+
+<Playground
+  code={`<Pill barColor={t => t.color.indicatorPillColor8}>
     <Typography type="tertiary">123</Typography>
-</Pill>`} />
+</Pill>`}
+/>

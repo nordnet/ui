@@ -4,7 +4,7 @@ import { Box, Tooltip, Modal, Drawer } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
-  title: 'Molecules | Tooltip',
+  title: 'Molecules / Tooltip',
   parameters: {
     component: Tooltip,
   },

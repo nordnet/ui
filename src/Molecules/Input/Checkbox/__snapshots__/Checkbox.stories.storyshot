@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Input / Checkbox Checkboxes with different size 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox Checkboxes with different size 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -319,7 +319,7 @@ exports[`Storyshots Molecules | Input / Checkbox Checkboxes with different size 
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox Default 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -505,7 +505,7 @@ exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox Default Story With Tooltip Position Top 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox Default Story With Tooltip Position Top 1`] = `
 Array [
   <br />,
   <br />,
@@ -752,7 +752,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox Default with tooltip (position top) with a long paragraph 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox Default with tooltip (position top) with a long paragraph 1`] = `
 Array [
   <br />,
   .c4 {
@@ -998,7 +998,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox Default with tooltip 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox Default with tooltip 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1241,7 +1241,7 @@ exports[`Storyshots Molecules | Input / Checkbox Default with tooltip 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox Default with tooltip with a long paragraph 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox Default with tooltip with a long paragraph 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1484,7 +1484,7 @@ exports[`Storyshots Molecules | Input / Checkbox Default with tooltip with a lon
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox Disabled 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox Disabled 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -1850,7 +1850,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox Element as label 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox Element as label 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2055,7 +2055,7 @@ exports[`Storyshots Molecules | Input / Checkbox Element as label 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2397,7 +2397,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox In a group with a label tooltip (position top) 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip (position top) 1`] = `
 Array [
   <br />,
   <br />,
@@ -2798,7 +2798,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox In a group with a label tooltip 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -3195,7 +3195,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with a label tooltip
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -3577,7 +3577,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox Required 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox Required 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -3942,7 +3942,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox With all actions 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4135,7 +4135,7 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox With an error if not checked 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4357,7 +4357,7 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox With auto focus 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4544,7 +4544,7 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox With checked (Controlled behaviour) 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox With checked (Controlled behaviour) 1`] = `
 Array [
   .c4 {
   box-sizing: border-box;
@@ -4740,7 +4740,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox With default checked 1`] = `
+exports[`Storyshots Molecules / Input / Checkbox With default checked 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;

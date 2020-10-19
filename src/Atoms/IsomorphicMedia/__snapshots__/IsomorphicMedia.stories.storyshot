@@ -1,5 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | IsomorphicMedia Basic usage 1`] = `null`;
+exports[`Storyshots Atoms / IsomorphicMedia Basic usage 1`] = `null`;
 
-exports[`Storyshots Atoms | IsomorphicMedia With size key 1`] = `null`;
+exports[`Storyshots Atoms / IsomorphicMedia With size key 1`] = `null`;

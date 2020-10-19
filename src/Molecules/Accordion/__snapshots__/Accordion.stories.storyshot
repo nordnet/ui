@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Accordion Default 1`] = `
+exports[`Storyshots Molecules / Accordion Default 1`] = `
 Array [
   .c5 {
   -webkit-user-select: none;
@@ -241,7 +241,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Accordion With Footer 1`] = `
+exports[`Storyshots Molecules / Accordion With Footer 1`] = `
 Array [
   .c5 {
   -webkit-user-select: none;

@@ -14,7 +14,7 @@ const handlers = actions(
 );
 
 export default {
-  title: 'Molecules | Input / Radio',
+  title: 'Molecules / Input / Radio',
   parameters: {
     component: Input.Radio,
   },

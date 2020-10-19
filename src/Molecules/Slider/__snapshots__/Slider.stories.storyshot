@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Slider Controlled 1`] = `
+exports[`Storyshots Molecules / Slider Controlled 1`] = `
 Array [
   .c3 {
   box-sizing: border-box;
@@ -397,7 +397,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Slider Default 1`] = `
+exports[`Storyshots Molecules / Slider Default 1`] = `
 Array [
   .c3 {
   box-sizing: border-box;
@@ -515,7 +515,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Slider Disabled 1`] = `
+exports[`Storyshots Molecules / Slider Disabled 1`] = `
 Array [
   .c3 {
   box-sizing: border-box;
@@ -632,7 +632,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Slider Maximum Value 1`] = `
+exports[`Storyshots Molecules / Slider Maximum Value 1`] = `
 Array [
   .c3 {
   box-sizing: border-box;
@@ -756,7 +756,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Slider Minimum Value 1`] = `
+exports[`Storyshots Molecules / Slider Minimum Value 1`] = `
 Array [
   .c3 {
   box-sizing: border-box;
@@ -880,7 +880,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Slider Negative To Positive 1`] = `
+exports[`Storyshots Molecules / Slider Negative To Positive 1`] = `
 Array [
   .c3 {
   box-sizing: border-box;
@@ -1004,7 +1004,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Slider Small Variant 1`] = `
+exports[`Storyshots Molecules / Slider Small Variant 1`] = `
 Array [
   .c3 {
   box-sizing: border-box;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | Badge A 11 Y Badge Use Cases 1`] = `
+exports[`Storyshots Atoms / Badge A 11 Y Badge Use Cases 1`] = `
 Array [
   .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -184,7 +184,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Atoms | Badge Badge With Number Limit 1`] = `
+exports[`Storyshots Atoms / Badge Badge With Number Limit 1`] = `
 Array [
   .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -264,7 +264,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Atoms | Badge Common Badge Use Cases 1`] = `
+exports[`Storyshots Atoms / Badge Common Badge Use Cases 1`] = `
 Array [
   .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -538,7 +538,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Atoms | Badge Common Badges 1`] = `
+exports[`Storyshots Atoms / Badge Common Badges 1`] = `
 Array [
   .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -1160,7 +1160,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Atoms | Badge Function As Child 1`] = `
+exports[`Storyshots Atoms / Badge Function As Child 1`] = `
 Array [
   .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -1260,7 +1260,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Atoms | Badge JSX As Child 1`] = `
+exports[`Storyshots Atoms / Badge JSX As Child 1`] = `
 Array [
   .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -1391,7 +1391,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Atoms | Badge Styled Badges 1`] = `
+exports[`Storyshots Atoms / Badge Styled Badges 1`] = `
 Array [
   .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;

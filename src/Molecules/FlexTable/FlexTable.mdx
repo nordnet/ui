@@ -1,4 +1,4 @@
-import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
 import { IntlProvider } from 'react-intl';
 import FlexTable from './FlexTable';
 import { Number } from '../..';
@@ -10,7 +10,7 @@ import { Number } from '../..';
 Flextable is a table component built using the `Flexbox` component to allow responsive headers and columns.
 The Flextable component only handles UI states.
 
-<Preview>
+<Canvas>
   <FlexTable>
     <FlexTable.HeaderRow>
       <FlexTable.Header columnId="instrument-name">Instrument Name</FlexTable.Header>
@@ -33,7 +33,7 @@ The Flextable component only handles UI states.
       <FlexTable.Cell columnId="country">FI</FlexTable.Cell>
     </FlexTable.Row>
   </FlexTable>
-</Preview>
+</Canvas>
 
 **Table of Contents**
 
@@ -105,7 +105,7 @@ This example cell will fit in with the rest of the cells and change its font siz
 
 `xs`, `sm`, `md`, `lg` and `xl` are all applicable to `FlexTable` as with `Flexbox` enabling users to modify properties depending on screen size.
 
-<Preview>
+<Canvas>
   <FlexTable density="l" fontSize="m" md={{ density: 's', fontSize: 's' }}>
     <FlexTable.HeaderRow>
       <FlexTable.Header columnId="instrument-name">Instrument Name</FlexTable.Header>
@@ -128,7 +128,7 @@ This example cell will fit in with the rest of the cells and change its font siz
       <FlexTable.Cell columnId="country">FI</FlexTable.Cell>
     </FlexTable.Row>
   </FlexTable>
-</Preview>
+</Canvas>
 
 ## Layout properties
 
@@ -144,14 +144,14 @@ some performance problems with cells being rendered multiple times and it does n
 Title for the the table can be a string or a react component.
 If a title is set for the table, an id must be set as well. The id will be set as as the id for the whole table, but also used as a base for the id of the table title.
 
-**NOTE: For some reason if Flextable is wrapped as a styled component the TypeScript validation for the id and title props breake. This is important to know because if there is a title prop then there must be an id for a11y reasons.
+\*\*NOTE: For some reason if Flextable is wrapped as a styled component the TypeScript validation for the id and title props breaks. This is important to know because if there is a title prop then there must be an id for a11y reasons.
 
 ## Header
 
 `Header` uses layout properties from props and handles sorting.
 The `fontSize` defined in the `FlexTable` component is inherited here. If the content does not fit within the `Header`, it will be truncated and produces a tooltip on hover via the molecule `TruncateWithToolTip`.
 
-<Preview>
+<Canvas>
   <FlexTable>
     <FlexTable.HeaderRow>
       <FlexTable.Header columnId="instrument-name">Instrument Name (default)</FlexTable.Header>
@@ -172,11 +172,11 @@ The `fontSize` defined in the `FlexTable` component is inherited here. If the co
       </FlexTable.Cell>
     </FlexTable.Row>
   </FlexTable>
-</Preview>
+</Canvas>
 
 `Header` features conditional hiding based on `Media`. To hide columns e.g. if size `md` or smaller:
 
-<Preview>
+<Canvas>
   <FlexTable>
     <FlexTable.HeaderRow>
       <FlexTable.Header columnId="instrument-name">Instrument Name</FlexTable.Header>
@@ -197,7 +197,7 @@ The `fontSize` defined in the `FlexTable` component is inherited here. If the co
       </FlexTable.Cell>
     </FlexTable.Row>
   </FlexTable>
-</Preview>
+</Canvas>
 
 ### Sorting
 
@@ -324,7 +324,7 @@ More info regarding this can be found under _Performance_.
 
 Similar functionality to `Cell`. Has like `Header` the property `isContent = false` to render empty cell instead of chevron.
 
-<Preview>
+<Canvas>
   <IntlProvider locale="en-UK">
     <FlexTable>
       <FlexTable.HeaderRow>
@@ -377,7 +377,7 @@ Similar functionality to `Cell`. Has like `Header` the property `isContent = fal
       </FlexTable.FooterRow>
     </FlexTable>
   </IntlProvider>
-</Preview>
+</Canvas>
 
 ## Row
 

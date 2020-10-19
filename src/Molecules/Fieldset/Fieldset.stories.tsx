@@ -2,7 +2,7 @@ import React from 'react';
 import { Fieldset, Legend, Input } from '../..';
 
 export default {
-  title: 'Molecules | Fieldset',
+  title: 'Molecules / Fieldset',
   parameters: {
     component: Fieldset,
   },

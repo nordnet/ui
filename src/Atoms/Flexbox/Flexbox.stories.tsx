@@ -11,7 +11,7 @@ const Content = styled.div`
 `;
 
 export default {
-  title: 'Atoms | Flexbox',
+  title: 'Atoms / Flexbox',
   parameters: {
     component: Flexbox,
   },

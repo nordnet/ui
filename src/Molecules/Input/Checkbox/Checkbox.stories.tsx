@@ -14,7 +14,7 @@ const handlers = actions(
 );
 
 export default {
-  title: 'Molecules | Input / Checkbox',
+  title: 'Molecules / Input / Checkbox',
   parameters: {
     component: Input.Checkbox,
   },

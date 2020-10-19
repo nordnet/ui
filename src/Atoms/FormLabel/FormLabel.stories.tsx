@@ -3,7 +3,7 @@ import React from 'react';
 import { FormLabel } from '../..';
 
 export default {
-  title: 'Atoms | FormLabel',
+  title: 'Atoms / FormLabel',
   parameters: {
     component: FormLabel,
   },

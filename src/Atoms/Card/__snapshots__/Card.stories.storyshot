@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | Card Basic Card 1`] = `
+exports[`Storyshots Atoms / Card Basic Card 1`] = `
 .c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
@@ -33,7 +33,7 @@ exports[`Storyshots Atoms | Card Basic Card 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Card Card rendered with different html tags 1`] = `
+exports[`Storyshots Atoms / Card Card rendered with different html tags 1`] = `
 .c3 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
@@ -161,7 +161,7 @@ exports[`Storyshots Atoms | Card Card rendered with different html tags 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Card Card with colored top bar 1`] = `
+exports[`Storyshots Atoms / Card Card with colored top bar 1`] = `
 .c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);

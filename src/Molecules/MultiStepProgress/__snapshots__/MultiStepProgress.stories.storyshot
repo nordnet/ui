@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Multi Step Progress Basic Multi Step Progress (With Closing Drawer) 1`] = `
+exports[`Storyshots Molecules / Multi Step Progress Basic Multi Step Progress (With Closing Drawer) 1`] = `
 Array [
   .c10 {
   padding-left: 44px;
@@ -775,7 +775,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Multi Step Progress Basic Multi Step Progress 1`] = `
+exports[`Storyshots Molecules / Multi Step Progress Basic Multi Step Progress 1`] = `
 Array [
   .c10 {
   padding-left: 44px;
@@ -1550,7 +1550,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Multi Step Progress Not Started Multi Step Progress 1`] = `
+exports[`Storyshots Molecules / Multi Step Progress Not Started Multi Step Progress 1`] = `
 Array [
   .c7 {
   padding-left: 44px;

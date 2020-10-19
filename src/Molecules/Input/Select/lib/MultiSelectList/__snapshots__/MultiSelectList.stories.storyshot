@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`] = `
+exports[`Storyshots Molecules / Input / Select / MultiSelectList Item default 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -301,7 +301,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1`] = `
+exports[`Storyshots Molecules / Input / Select / MultiSelectList Item disabled 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -605,7 +605,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1`] = `
+exports[`Storyshots Molecules / Input / Select / MultiSelectList Item selected 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -908,7 +908,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select / MultiSelectList List with different arrow positions 1`] = `
+exports[`Storyshots Molecules / Input / Select / MultiSelectList List with different arrow positions 1`] = `
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;

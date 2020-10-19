@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { AccordionItem, Box, Button, Flexbox, Typography } from '../..';
 
 export default {
-  title: 'Molecules | AccordionItem',
+  title: 'Molecules / AccordionItem',
   parameters: {
     component: AccordionItem,
   },
 };
 
 const ExampleContent = () => (
-  <Typography as="p" type="secondary" color={t => t.color.accordionText}>
+  <Typography as="p" type="secondary" color={(t) => t.color.accordionText}>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
     laboris nisi ut aliquip ex ea commodo consequat
@@ -38,7 +38,7 @@ export const controlled = () => {
 
     const clickHandler = (id: string) => {
       if (expandedAreas.includes(id)) {
-        const removed = expandedAreas.filter(x => x !== id);
+        const removed = expandedAreas.filter((x) => x !== id);
         setExpandedAreas([...removed]);
       } else {
         setExpandedAreas([...expandedAreas, id]);

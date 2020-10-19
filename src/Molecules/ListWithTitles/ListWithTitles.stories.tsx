@@ -8,7 +8,7 @@ const ItemContainer: React.FunctionComponent = ({ children }) => (
 );
 
 export default {
-  title: 'Molecules | ListWithTitles',
+  title: 'Molecules / ListWithTitles',
   parameters: {
     component: ListWithTitles,
   },

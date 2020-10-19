@@ -36,10 +36,12 @@ const mockedStepsNotStarted = [
 ];
 
 export default {
-  title: 'Molecules | Multi Step Progress',
+  title: 'Molecules / Multi Step Progress',
 
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
     component: MultiStepProgress,
   },
 };

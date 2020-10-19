@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Timeline Default 1`] = `
+exports[`Storyshots Molecules / Timeline Default 1`] = `
 .c0 {
   padding-left: 40px;
   padding-right: 40px;
@@ -420,7 +420,7 @@ exports[`Storyshots Molecules | Timeline Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Timeline Different Heights 1`] = `
+exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
 .c0 {
   padding-left: 40px;
   padding-right: 40px;
@@ -956,7 +956,7 @@ exports[`Storyshots Molecules | Timeline Different Heights 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Timeline Single Element 1`] = `
+exports[`Storyshots Molecules / Timeline Single Element 1`] = `
 .c0 {
   padding-left: 40px;
   padding-right: 40px;
@@ -1166,7 +1166,7 @@ exports[`Storyshots Molecules | Timeline Single Element 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Timeline With Button 1`] = `
+exports[`Storyshots Molecules / Timeline With Button 1`] = `
 .c0 {
   padding-left: 40px;
   padding-right: 40px;

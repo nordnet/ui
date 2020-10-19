@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | FadedScroll Default, using maxHeight prop 1`] = `
+exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
 .c2 {
   position: relative;
   overflow-x: hidden;
@@ -272,7 +272,7 @@ exports[`Storyshots Atoms | FadedScroll Default, using maxHeight prop 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | FadedScroll With height of fade changed 1`] = `
+exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
 .c2 {
   position: relative;
   overflow-x: hidden;
@@ -544,7 +544,7 @@ exports[`Storyshots Atoms | FadedScroll With height of fade changed 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | FadedScroll With height of scrollable area being whatever is available 1`] = `
+exports[`Storyshots Atoms / FadedScroll With height of scrollable area being whatever is available 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -859,7 +859,7 @@ exports[`Storyshots Atoms | FadedScroll With height of scrollable area being wha
 </div>
 `;
 
-exports[`Storyshots Atoms | FadedScroll With mobile fade enabled 1`] = `
+exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1157,7 +1157,7 @@ exports[`Storyshots Atoms | FadedScroll With mobile fade enabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | FadedScroll With top fade disabled 1`] = `
+exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
 .c2 {
   position: relative;
   overflow-x: hidden;

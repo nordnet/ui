@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Link Cms link with its default values 1`] = `
+exports[`Storyshots Molecules / Link Cms link with its default values 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -36,7 +36,7 @@ exports[`Storyshots Molecules | Link Cms link with its default values 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | Link Default usage 1`] = `
+exports[`Storyshots Molecules / Link Default usage 1`] = `
 Array [
   .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -107,7 +107,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Link External link with its default values 1`] = `
+exports[`Storyshots Molecules / Link External link with its default values 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -145,7 +145,7 @@ exports[`Storyshots Molecules | Link External link with its default values 1`] =
 </span>
 `;
 
-exports[`Storyshots Molecules | Link External link with rel and target overriden 1`] = `
+exports[`Storyshots Molecules / Link External link with rel and target overriden 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -183,7 +183,7 @@ exports[`Storyshots Molecules | Link External link with rel and target overriden
 </span>
 `;
 
-exports[`Storyshots Molecules | Link With black color 1`] = `
+exports[`Storyshots Molecules / Link With black color 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -221,7 +221,7 @@ exports[`Storyshots Molecules | Link With black color 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | Link With disabled prop results in a disabled button looking like a link 1`] = `
+exports[`Storyshots Molecules / Link With disabled prop results in a disabled button looking like a link 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -290,7 +290,7 @@ exports[`Storyshots Molecules | Link With disabled prop results in a disabled bu
 </span>
 `;
 
-exports[`Storyshots Molecules | Link With inherited color 1`] = `
+exports[`Storyshots Molecules / Link With inherited color 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #AC135A;
@@ -328,7 +328,7 @@ exports[`Storyshots Molecules | Link With inherited color 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | Link With typography primary as type 1`] = `
+exports[`Storyshots Molecules / Link With typography primary as type 1`] = `
 Array [
   .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -399,7 +399,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Link Without to prop results in a button looking like a link 1`] = `
+exports[`Storyshots Molecules / Link Without to prop results in a button looking like a link 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;

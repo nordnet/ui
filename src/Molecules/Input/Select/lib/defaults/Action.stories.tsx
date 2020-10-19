@@ -4,7 +4,7 @@ import { Display } from '../../../../../common/Display';
 import { Icon } from '../../../../..';
 
 export default {
-  title: 'Molecules | Input / Select / Action',
+  title: 'Molecules / Input / Select / Action',
 };
 
 export const allStates = () => (

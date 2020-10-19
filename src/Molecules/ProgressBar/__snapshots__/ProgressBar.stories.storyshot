@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | ProgressBar Custom Colors 1`] = `
+exports[`Storyshots Molecules / ProgressBar Custom Colors 1`] = `
 .c0 {
   padding-left: 40px;
   padding-right: 40px;
@@ -221,7 +221,7 @@ exports[`Storyshots Molecules | ProgressBar Custom Colors 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | ProgressBar Custom Titles 1`] = `
+exports[`Storyshots Molecules / ProgressBar Custom Titles 1`] = `
 .c0 {
   padding-left: 40px;
   padding-right: 40px;
@@ -442,7 +442,7 @@ exports[`Storyshots Molecules | ProgressBar Custom Titles 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | ProgressBar Default 1`] = `
+exports[`Storyshots Molecules / ProgressBar Default 1`] = `
 .c0 {
   padding-left: 40px;
   padding-right: 40px;
@@ -657,7 +657,7 @@ exports[`Storyshots Molecules | ProgressBar Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | ProgressBar Failure Step 1`] = `
+exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
 .c0 {
   padding-left: 40px;
   padding-right: 40px;
@@ -953,7 +953,7 @@ exports[`Storyshots Molecules | ProgressBar Failure Step 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | ProgressBar Lots Of Steps 1`] = `
+exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
 .c0 {
   padding-left: 40px;
   padding-right: 40px;
@@ -1276,7 +1276,7 @@ exports[`Storyshots Molecules | ProgressBar Lots Of Steps 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | ProgressBar Step Progression 1`] = `
+exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
 .c0 {
   padding-left: 40px;
   padding-right: 40px;
@@ -1662,7 +1662,7 @@ exports[`Storyshots Molecules | ProgressBar Step Progression 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | ProgressBar With Labels 1`] = `
+exports[`Storyshots Molecules / ProgressBar With Labels 1`] = `
 .c0 {
   padding-left: 40px;
   padding-right: 40px;

@@ -15,7 +15,7 @@ const StyledContent = styled.div`
 const Content: React.FC<Props> = ({ children }) => <StyledContent>{children}</StyledContent>;
 
 export default {
-  title: 'Atoms | Card',
+  title: 'Atoms / Card',
 
   parameters: {
     component: Card,
@@ -56,7 +56,7 @@ cardRenderedWithDifferentHtmlTags.story = {
 };
 
 export const cardWithBar = () => (
-  <Card barColor={t => t.color.shareville}>
+  <Card barColor={(t) => t.color.shareville}>
     <Content>A Card as a div containing content</Content>
   </Card>
 );

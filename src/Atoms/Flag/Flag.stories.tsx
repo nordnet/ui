@@ -5,7 +5,7 @@ import { Flag } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
-  title: 'Atoms | Flag',
+  title: 'Atoms / Flag',
   parameters: {
     component: Flag,
   },

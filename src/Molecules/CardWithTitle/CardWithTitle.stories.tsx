@@ -32,13 +32,13 @@ const MockedContent = () => {
 };
 
 const HeightOnCardWithTitle = styled(CardWithTitle)`
-  ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
     height: 250px;
   }
 `;
 
 export default {
-  title: 'Molecules | CardWithTitle',
+  title: 'Molecules / CardWithTitle',
   parameters: {
     component: CardWithTitle,
   },
@@ -96,7 +96,7 @@ cardWithTitleAsSection.story = {
 
 export const integrationCardWithTitleWithCustomComponentAsTitle = () => {
   const PaddedIcon = styled(Icon.ArrowRight)`
-    padding-left: ${p => p.theme.spacing.unit(1)}px;
+    padding-left: ${(p) => p.theme.spacing.unit(1)}px;
   `;
   const CustomTitle = (
     <Flexbox container justifyContent="space-between" alignItems="center" direction="row">
@@ -106,10 +106,10 @@ export const integrationCardWithTitleWithCustomComponentAsTitle = () => {
         </Typography>
       </Flexbox>
       <Flexbox item>
-        <Typography type="secondary" color={t => t.color.text} weight="bold">
+        <Typography type="secondary" color={(t) => t.color.text} weight="bold">
           Marknadsöversikt (Not Really a link)
         </Typography>
-        <PaddedIcon inline color={t => t.color.cta} size={3} />
+        <PaddedIcon inline color={(t) => t.color.cta} size={3} />
       </Flexbox>
     </Flexbox>
   );

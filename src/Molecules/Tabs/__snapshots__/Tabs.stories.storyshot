@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
+exports[`Storyshots Molecules / Tabs Controlled behaviour 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -222,7 +222,7 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | Tabs Default 1`] = `
+exports[`Storyshots Molecules / Tabs Default 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -446,7 +446,7 @@ exports[`Storyshots Molecules | Tabs Default 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | Tabs With conditionally hidden tab 1`] = `
+exports[`Storyshots Molecules / Tabs With conditionally hidden tab 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -594,7 +594,7 @@ exports[`Storyshots Molecules | Tabs With conditionally hidden tab 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
+exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -824,7 +824,7 @@ exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | Tabs With height modified 1`] = `
+exports[`Storyshots Molecules / Tabs With height modified 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1040,7 +1040,7 @@ exports[`Storyshots Molecules | Tabs With height modified 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules | Tabs With styled tab content 1`] = `
+exports[`Storyshots Molecules / Tabs With styled tab content 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;

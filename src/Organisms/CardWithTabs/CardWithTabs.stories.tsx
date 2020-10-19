@@ -21,13 +21,13 @@ In eleifend a risus at pulvinar. Donec ultricies justo et ligula venenatis, sed 
 nunc dignissim.`;
 
 const HeightOnCardWithTabs = styled(CardWithTabs)`
-  ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
     height: 200px;
   }
 `;
 
 export default {
-  title: 'Organisms | CardWithTabs',
+  title: 'Organisms / CardWithTabs',
 };
 
 export const withInitialActiveTabIndex = () => (

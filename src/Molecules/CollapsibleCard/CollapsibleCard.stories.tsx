@@ -21,7 +21,7 @@ const ExampleWithOnClick = () => {
 };
 
 export default {
-  title: 'Molecules | CollapsibleCard',
+  title: 'Molecules / CollapsibleCard',
   parameters: {
     component: CollapsibleCard,
   },

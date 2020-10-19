@@ -5,7 +5,7 @@ import { Typography, Flexbox } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
-  title: 'Atoms | Typography',
+  title: 'Atoms / Typography',
   parameters: {
     component: Typography,
   },
@@ -237,7 +237,7 @@ export const colors = () => (
       {
         title: 'Color: text',
         component: (
-          <Typography type="primary" color={t => t.color.text}>
+          <Typography type="primary" color={(t) => t.color.text}>
             Text
           </Typography>
         ),
@@ -245,7 +245,7 @@ export const colors = () => (
       {
         title: 'Color: positive',
         component: (
-          <Typography type="primary" color={t => t.color.positive}>
+          <Typography type="primary" color={(t) => t.color.positive}>
             Positive
           </Typography>
         ),
@@ -253,7 +253,7 @@ export const colors = () => (
       {
         title: 'Color: negative',
         component: (
-          <Typography type="primary" color={t => t.color.negative}>
+          <Typography type="primary" color={(t) => t.color.negative}>
             Negative
           </Typography>
         ),
@@ -261,7 +261,7 @@ export const colors = () => (
       {
         title: 'Color: warning',
         component: (
-          <Typography type="primary" color={t => t.color.warning}>
+          <Typography type="primary" color={(t) => t.color.warning}>
             Warning
           </Typography>
         ),
@@ -269,7 +269,7 @@ export const colors = () => (
       {
         title: 'Color: cta',
         component: (
-          <Typography type="primary" color={t => t.color.cta}>
+          <Typography type="primary" color={(t) => t.color.cta}>
             CTA
           </Typography>
         ),
@@ -277,7 +277,7 @@ export const colors = () => (
       {
         title: 'Color: label',
         component: (
-          <Typography type="primary" color={t => t.color.label}>
+          <Typography type="primary" color={(t) => t.color.label}>
             Label
           </Typography>
         ),

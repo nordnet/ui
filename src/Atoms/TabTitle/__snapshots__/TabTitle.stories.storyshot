@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | TabTitle Active 1`] = `
+exports[`Storyshots Atoms / TabTitle Active 1`] = `
 .c1 {
   height: 32px;
   position: relative;
@@ -44,7 +44,7 @@ exports[`Storyshots Atoms | TabTitle Active 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | TabTitle Default 1`] = `
+exports[`Storyshots Atoms / TabTitle Default 1`] = `
 .c1 {
   height: 32px;
   position: relative;
@@ -77,7 +77,7 @@ exports[`Storyshots Atoms | TabTitle Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | TabTitle Integration: with Flexbox 1`] = `
+exports[`Storyshots Atoms / TabTitle Integration: with Flexbox 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -185,7 +185,7 @@ exports[`Storyshots Atoms | TabTitle Integration: with Flexbox 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | TabTitle With height modified 1`] = `
+exports[`Storyshots Atoms / TabTitle With height modified 1`] = `
 .c1 {
   height: 44px;
   position: relative;

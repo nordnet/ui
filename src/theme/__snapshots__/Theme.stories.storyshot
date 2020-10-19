@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Theme Colors (palette) 1`] = `
+exports[`Storyshots Others / Theme Colors (palette) 1`] = `
 Array [
   <h1>
     ⚠️ Internal object, use colors (semantic)
@@ -978,7 +978,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Theme Colors (semantic) 1`] = `
+exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
 .c0 {
   width: 100%;
   table-layout: fixed;
@@ -3526,6 +3526,37 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
+        guidanceSelectionCardIcon
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c21"
+          color="#FF2B83"
+        />
+        <div>
+          #FF2B83
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c21"
+          color="#FF2B83"
+        />
+        <div>
+          #FF2B83
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
         orderDepthBackground
       </td>
       <td
@@ -3672,6 +3703,68 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         />
         <div>
           #131F4F
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        selectionCardBorder
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c36"
+          color="#D7D7D2"
+        />
+        <div>
+          #D7D7D2
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c36"
+          color="#D7D7D2"
+        />
+        <div>
+          #D7D7D2
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        selectionCardText
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c17"
+          color="#6E6E69"
+        />
+        <div>
+          #6E6E69
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c17"
+          color="#6E6E69"
+        />
+        <div>
+          #6E6E69
         </div>
       </td>
     </tr>
@@ -7301,7 +7394,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
 </table>
 `;
 
-exports[`Storyshots Theme Screen sizes 1`] = `
+exports[`Storyshots Others / Theme Screen sizes 1`] = `
 .c0 {
   width: 100%;
   table-layout: fixed;

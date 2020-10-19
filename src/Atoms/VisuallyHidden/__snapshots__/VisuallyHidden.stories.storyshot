@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | VisuallyHidden Visually hidden label 1`] = `
+exports[`Storyshots Atoms / VisuallyHidden Visually hidden label 1`] = `
 Array [
   "There's text here that's only displayed for screenreaders:",
   .c0 {

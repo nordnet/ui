@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
+exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
 .c10 {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -217,7 +217,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | TabsNav Integration: With react-router and height modified 1`] = `
+exports[`Storyshots Molecules / TabsNav Integration: With react-router and height modified 1`] = `
 .c10 {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -434,7 +434,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
 </div>
 `;
 
-exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] = `
+exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] = `
 .c8 {
   padding-top: 16px;
   padding-bottom: 16px;

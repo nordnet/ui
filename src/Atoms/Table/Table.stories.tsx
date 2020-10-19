@@ -10,7 +10,7 @@ for (let i = 0; i < 5; i += 1) {
 }
 
 export default {
-  title: 'Atoms | Table',
+  title: 'Atoms / Table',
 };
 
 export const defaultStory = () => (

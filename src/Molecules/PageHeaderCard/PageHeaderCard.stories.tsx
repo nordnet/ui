@@ -2,7 +2,7 @@ import React from 'react';
 import { PageHeaderCard, Flexbox, Button, Box, Typography } from '../..';
 
 export default {
-  title: 'Molecules | PageHeader',
+  title: 'Molecules / PageHeader',
   parameters: {
     component: PageHeaderCard,
   },

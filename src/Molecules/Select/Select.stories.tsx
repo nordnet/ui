@@ -8,7 +8,7 @@ const options = [
 ];
 
 export default {
-  title: 'DEPRECATED | Molecules / Select ',
+  title: 'DEPRECATED / Molecules / Select ',
 };
 
 export const selectWithPlaceholder = () => (

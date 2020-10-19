@@ -414,6 +414,7 @@ const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({ theme, childr
 
   return <StyledDiv {...props}>{renderedChildren}</StyledDiv>;
 };
+
 export const CssGridContainer = withTheme(RawCSSGridContainer);
 CssGridContainer.displayName = 'CssGrid.Container';
 

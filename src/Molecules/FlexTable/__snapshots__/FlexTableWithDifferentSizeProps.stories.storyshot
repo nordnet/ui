@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | FlexTable / FlexTable with different size props Tables With Different Column Distance On Mobile 1`] = `
+exports[`Storyshots Molecules / FlexTable / FlexTable with different size props Tables With Different Column Distance On Mobile 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -44,7 +44,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / FlexTable with different size props Tables With Different Densities 1`] = `
+exports[`Storyshots Molecules / FlexTable / FlexTable with different size props Tables With Different Densities 1`] = `
 .c3 {
   margin-bottom: 40px;
 }
@@ -928,7 +928,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / FlexTable with different size props Tables With Different Font Sizes 1`] = `
+exports[`Storyshots Molecules / FlexTable / FlexTable with different size props Tables With Different Font Sizes 1`] = `
 .c2 {
   margin-bottom: 40px;
 }
@@ -1591,7 +1591,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable / FlexTable with different size props Tables With Different Sizes In Mobile 1`] = `
+exports[`Storyshots Molecules / FlexTable / FlexTable with different size props Tables With Different Sizes In Mobile 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;

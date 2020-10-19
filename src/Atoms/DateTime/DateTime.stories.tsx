@@ -2,7 +2,7 @@ import React from 'react';
 import DateTime from '.';
 
 export default {
-  title: 'Atoms | DateTime',
+  title: 'Atoms / DateTime',
   parameters: {
     component: DateTime,
   },

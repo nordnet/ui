@@ -6,7 +6,7 @@ import { Button, Flexbox } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
-  title: 'Molecules | Button',
+  title: 'Molecules / Button',
   parameters: {
     component: Button,
   },
@@ -122,7 +122,7 @@ export const linkLookingLikeAButtonWithWithColors = () => (
           {
             title: 't => t.color.cta',
             component: (
-              <Button to="/overview" color={t => t.color.cta} onClick={action('clicked')}>
+              <Button to="/overview" color={(t) => t.color.cta} onClick={action('clicked')}>
                 Button
               </Button>
             ),
@@ -130,7 +130,7 @@ export const linkLookingLikeAButtonWithWithColors = () => (
           {
             title: 't => t.color.negative',
             component: (
-              <Button to="/overview" color={t => t.color.negative} onClick={action('clicked')}>
+              <Button to="/overview" color={(t) => t.color.negative} onClick={action('clicked')}>
                 Button
               </Button>
             ),
@@ -146,7 +146,7 @@ export const linkLookingLikeAButtonWithWithColors = () => (
               <Button
                 variant="secondary"
                 to="/overview"
-                color={t => t.color.cta}
+                color={(t) => t.color.cta}
                 onClick={action('clicked')}
               >
                 Button
@@ -159,7 +159,7 @@ export const linkLookingLikeAButtonWithWithColors = () => (
               <Button
                 variant="secondary"
                 to="/overview"
-                color={t => t.color.negative}
+                color={(t) => t.color.negative}
                 onClick={action('clicked')}
               >
                 Button

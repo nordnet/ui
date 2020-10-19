@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
+exports[`Storyshots Molecules / Switch Controlled behaviour 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -168,7 +168,7 @@ exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
 </label>
 `;
 
-exports[`Storyshots Molecules | Switch Default Off 1`] = `
+exports[`Storyshots Molecules / Switch Default Off 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -336,7 +336,7 @@ exports[`Storyshots Molecules | Switch Default Off 1`] = `
 </label>
 `;
 
-exports[`Storyshots Molecules | Switch Default On 1`] = `
+exports[`Storyshots Molecules / Switch Default On 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -504,7 +504,7 @@ exports[`Storyshots Molecules | Switch Default On 1`] = `
 </label>
 `;
 
-exports[`Storyshots Molecules | Switch Disabled 1`] = `
+exports[`Storyshots Molecules / Switch Disabled 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -673,7 +673,7 @@ exports[`Storyshots Molecules | Switch Disabled 1`] = `
 </label>
 `;
 
-exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
+exports[`Storyshots Molecules / Switch With Label prop as ReactNode 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -841,7 +841,7 @@ exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
 </label>
 `;
 
-exports[`Storyshots Molecules | Switch With hidden label 1`] = `
+exports[`Storyshots Molecules / Switch With hidden label 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;

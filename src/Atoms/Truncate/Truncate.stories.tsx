@@ -4,14 +4,14 @@ import Truncate from '.';
 import { Typography } from '../..';
 
 export default {
-  title: 'Atoms | Truncate',
+  title: 'Atoms / Truncate',
   parameters: {
     component: Truncate,
   },
 };
 
 const StyledDiv = styled.div`
-  max-width: ${p => p.theme.spacing.unit(35)}px;
+  max-width: ${(p) => p.theme.spacing.unit(35)}px;
 `;
 
 export const truncateDefault = () => (

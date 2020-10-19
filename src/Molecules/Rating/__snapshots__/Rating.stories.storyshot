@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Rating Rating 0 1`] = `
+exports[`Storyshots Molecules / Rating Rating 0 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -128,7 +128,7 @@ exports[`Storyshots Molecules | Rating Rating 0 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Rating Rating 1 1`] = `
+exports[`Storyshots Molecules / Rating Rating 1 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -274,7 +274,7 @@ exports[`Storyshots Molecules | Rating Rating 1 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Rating Rating 5 1`] = `
+exports[`Storyshots Molecules / Rating Rating 5 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -402,7 +402,7 @@ exports[`Storyshots Molecules | Rating Rating 5 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Rating Rating Not Defined 1`] = `
+exports[`Storyshots Molecules / Rating Rating Not Defined 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -530,7 +530,7 @@ exports[`Storyshots Molecules | Rating Rating Not Defined 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Rating Rating With Size 1`] = `
+exports[`Storyshots Molecules / Rating Rating With Size 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;

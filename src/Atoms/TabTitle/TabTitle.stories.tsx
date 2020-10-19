@@ -7,7 +7,7 @@ const Container = styled.div`
 `;
 
 export default {
-  title: 'Atoms | TabTitle',
+  title: 'Atoms / TabTitle',
   parameters: {
     component: TabTitle,
   },

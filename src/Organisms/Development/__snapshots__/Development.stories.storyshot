@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Organisms | Development As currency 1`] = `
+exports[`Storyshots Organisms / Development As currency 1`] = `
 .c3 {
   color: #00D200;
 }
@@ -146,7 +146,7 @@ exports[`Storyshots Organisms | Development As currency 1`] = `
 </div>
 `;
 
-exports[`Storyshots Organisms | Development As percentage 1`] = `
+exports[`Storyshots Organisms / Development As percentage 1`] = `
 .c3 {
   color: #00D200;
 }
@@ -292,7 +292,7 @@ exports[`Storyshots Organisms | Development As percentage 1`] = `
 </div>
 `;
 
-exports[`Storyshots Organisms | Development Default 1`] = `
+exports[`Storyshots Organisms / Development Default 1`] = `
 .c3 {
   color: #00D200;
 }
@@ -435,7 +435,7 @@ exports[`Storyshots Organisms | Development Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Organisms | Development Integration: with different typographies 1`] = `
+exports[`Storyshots Organisms / Development Integration: with different typographies 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -1308,7 +1308,7 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
 </div>
 `;
 
-exports[`Storyshots Organisms | Development Regression: infinity 1`] = `
+exports[`Storyshots Organisms / Development Regression: infinity 1`] = `
 .c3 {
   color: #282823;
 }
@@ -1419,7 +1419,7 @@ exports[`Storyshots Organisms | Development Regression: infinity 1`] = `
 </div>
 `;
 
-exports[`Storyshots Organisms | Development Regression: value is non-zero, but rounded value is 0 1`] = `
+exports[`Storyshots Organisms / Development Regression: value is non-zero, but rounded value is 0 1`] = `
 .c3 {
   color: #282823;
 }
@@ -1602,7 +1602,7 @@ exports[`Storyshots Organisms | Development Regression: value is non-zero, but r
 </div>
 `;
 
-exports[`Storyshots Organisms | Development With different colors 1`] = `
+exports[`Storyshots Organisms / Development With different colors 1`] = `
 .c3 {
   color: #008A00;
 }
@@ -1745,7 +1745,7 @@ exports[`Storyshots Organisms | Development With different colors 1`] = `
 </div>
 `;
 
-exports[`Storyshots Organisms | Development With icon 1`] = `
+exports[`Storyshots Organisms / Development With icon 1`] = `
 .c3 {
   color: #00D200;
 }

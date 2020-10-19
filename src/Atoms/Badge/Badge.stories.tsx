@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { withKnobs } from '@storybook/addon-knobs';
 import { Badge } from './Badge';
 import docs from './Badge.mdx';
 import { Box, Typography } from '../..';
@@ -8,11 +7,12 @@ import { numberWithLimit } from '../../common/utils';
 import { Props as BadgeProps } from './Badge.types';
 
 export default {
-  title: 'Atoms | Badge',
-  decorators: [withKnobs],
+  title: 'Atoms / Badge',
   parameters: {
     component: Badge,
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
 };
 

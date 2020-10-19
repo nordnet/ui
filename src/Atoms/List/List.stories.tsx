@@ -3,7 +3,7 @@ import ListItem from '../ListItem';
 import { List } from '../..';
 
 export default {
-  title: 'Atoms | List',
+  title: 'Atoms / List',
   parameters: {
     component: List,
   },

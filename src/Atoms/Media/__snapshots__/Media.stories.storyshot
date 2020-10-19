@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | Media Basic usage 1`] = `
+exports[`Storyshots Atoms / Media Basic usage 1`] = `
 Array [
   @media not all and (max-width:975px) {
   .c0 {
@@ -62,7 +62,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Atoms | Media With size key 1`] = `
+exports[`Storyshots Atoms / Media With size key 1`] = `
 Array [
   @media not all and (max-width:975px) {
   .c0 {

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
+exports[`Storyshots Molecules / FlexTable Flex Table With Different Rows 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -520,7 +520,7 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable Flex Table With Hidden Expand Item 1`] = `
+exports[`Storyshots Molecules / FlexTable Flex Table With Hidden Expand Item 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -988,7 +988,7 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Hidden Expand Item 1`]
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
+exports[`Storyshots Molecules / FlexTable Table Custom Data Cells 1`] = `
 .c21 {
   height: 20px;
   box-sizing: border-box;

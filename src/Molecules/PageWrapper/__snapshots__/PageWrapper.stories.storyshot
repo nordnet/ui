@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
+exports[`Storyshots Molecules / PageWrapper PageWrapper 1`] = `
 .c1 {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -73,7 +73,7 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | PageWrapper PageWrapper with a custom background 1`] = `
+exports[`Storyshots Molecules / PageWrapper PageWrapper with a custom background 1`] = `
 .c2 {
   padding-top: 16px;
   padding-bottom: 16px;

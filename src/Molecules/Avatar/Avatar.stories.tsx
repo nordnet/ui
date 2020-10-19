@@ -3,7 +3,7 @@ import { Avatar } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
-  title: 'Molecules | Avatar',
+  title: 'Molecules / Avatar',
 };
 
 export const basicUsage = () => <Avatar>ASK</Avatar>;

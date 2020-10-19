@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots DEPRECATED | Molecules / Select  Select with hidden label 1`] = `
+exports[`Storyshots DEPRECATED / Molecules / Select  Select with hidden label 1`] = `
 .c0 {
   position: absolute;
   height: 1px;
@@ -153,7 +153,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with hidden label 1`
 </label>
 `;
 
-exports[`Storyshots DEPRECATED | Molecules / Select  Select with overflowing placeholder 1`] = `
+exports[`Storyshots DEPRECATED / Molecules / Select  Select with overflowing placeholder 1`] = `
 .c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -291,7 +291,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with overflowing pla
 </div>
 `;
 
-exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder 1`] = `
+exports[`Storyshots DEPRECATED / Molecules / Select  Select with placeholder 1`] = `
 .c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -437,7 +437,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder 1`]
 </label>
 `;
 
-exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder and preselected value 1`] = `
+exports[`Storyshots DEPRECATED / Molecules / Select  Select with placeholder and preselected value 1`] = `
 .c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -583,7 +583,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder and
 </label>
 `;
 
-exports[`Storyshots DEPRECATED | Molecules / Select  Select with prepended empty value 1`] = `
+exports[`Storyshots DEPRECATED / Molecules / Select  Select with prepended empty value 1`] = `
 .c0 {
   position: absolute;
   height: 1px;
@@ -741,7 +741,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with prepended empty
 </label>
 `;
 
-exports[`Storyshots DEPRECATED | Molecules / Select  Select with preselected value 1`] = `
+exports[`Storyshots DEPRECATED / Molecules / Select  Select with preselected value 1`] = `
 .c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -881,7 +881,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with preselected val
 </label>
 `;
 
-exports[`Storyshots DEPRECATED | Molecules / Select  Select without placeholder 1`] = `
+exports[`Storyshots DEPRECATED / Molecules / Select  Select without placeholder 1`] = `
 .c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
