@@ -14,6 +14,25 @@ import { ExpandItem, ExpandItems } from './Row/components';
 
 type HtmlDivProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
+const renderWithLimit = (
+  children: Array<React.ReactElement>,
+  renderLimit: number,
+): Array<React.ReactElement> => {
+  let rowIndex = 0;
+  return React.Children.map(children, (child: React.ReactElement) => {
+    if (!child?.props?.data?.rowId) {
+      return child;
+    }
+
+    if (rowIndex > renderLimit) {
+      return null;
+    }
+
+    rowIndex += 1;
+    return child;
+  }).filter(Boolean);
+};
+
 const StyledDiv = styled('div').withConfig({
   shouldForwardProp: (prop) => !['stickyHeader'].includes(prop),
 })<
@@ -55,6 +74,7 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
   md,
   lg,
   xl,
+  initialRenderLimit,
   ...htmlProps
 }) => (
   <FlexTableProvider
@@ -79,7 +99,9 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
           {isElement(title) ? title : <StyledTypography type="title3">{title}</StyledTypography>}
         </StyledTitleWrapper>
       )}
-      <ColumnProvider>{children}</ColumnProvider>
+      <ColumnProvider>
+        {initialRenderLimit ? renderWithLimit(children, initialRenderLimit) : children}
+      </ColumnProvider>
     </FlexTableContainer>
   </FlexTableProvider>
 );

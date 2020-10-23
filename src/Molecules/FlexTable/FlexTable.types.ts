@@ -36,6 +36,7 @@ type TitleProps = PropsWithTitle | PropsWithoutTitle;
 
 export type Props = {
   className?: string;
+  initialRenderLimit?: number;
 } & TitleProps &
   Partial<FlexTableProviderProps> &
   Omit<HtmlProps, 'title' | 'id'>;
