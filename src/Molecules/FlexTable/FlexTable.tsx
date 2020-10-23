@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import styled from 'styled-components';
 import { HeaderRow, FooterRow, Row } from './Row';
 import { Header } from './Header';
@@ -8,11 +8,13 @@ import { constants, ColumnProvider, CellInlineContainer } from './shared';
 import { FlexTableComponents, FlexTableComponent } from './FlexTable.types';
 import { FlexTableProvider, useFlexTable } from './shared/FlexTableProvider';
 import { ExpandCell } from './Cell/ExpandCell';
-import { Typography } from '../..';
+import { Box, Button, Flexbox, Typography } from '../..';
 import { isElement } from '../../common/utils';
 import { ExpandItem, ExpandItems } from './Row/components';
 
 type HtmlDivProps = {} & React.HTMLAttributes<HTMLDivElement>;
+
+const isChildrenRow = (child: React.ReactElement): boolean => child?.props?.data?.rowId;
 
 const renderWithLimit = (
   children: Array<React.ReactElement>,
@@ -20,11 +22,11 @@ const renderWithLimit = (
 ): Array<React.ReactElement> => {
   let rowIndex = 0;
   return React.Children.map(children, (child: React.ReactElement) => {
-    if (!child?.props?.data?.rowId) {
+    if (!isChildrenRow(child)) {
       return child;
     }
 
-    if (rowIndex > renderLimit) {
+    if (rowIndex >= renderLimit) {
       return null;
     }
 
@@ -32,6 +34,15 @@ const renderWithLimit = (
     return child;
   }).filter(Boolean);
 };
+
+const childrenRowLength = (children: Array<React.ReactElement>): number =>
+  React.Children.map(children, (child: React.ReactElement) => {
+    if (!isChildrenRow(child)) {
+      return null;
+    }
+
+    return child;
+  }).filter(Boolean).length;
 
 const StyledDiv = styled('div').withConfig({
   shouldForwardProp: (prop) => !['stickyHeader'].includes(prop),
@@ -61,6 +72,10 @@ const StyledTypography = styled(Typography)`
   padding-left: ${(p) => p.theme.spacing.unit(1)}px;
 `;
 
+const StyledTotalFlexbox = styled(Flexbox)`
+  background: ${({ theme }) => theme.color.backgroundInput};
+`;
+
 const FlexTable: FlexTableComponent & FlexTableComponents = ({
   className,
   density = 'm',
@@ -76,35 +91,58 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
   xl,
   initialRenderLimit,
   ...htmlProps
-}) => (
-  <FlexTableProvider
-    density={density}
-    columnDistance={columnDistance}
-    stickyHeader={stickyHeader}
-    fontSize={fontSize}
-    expandable={expandable}
-    sm={sm}
-    md={md}
-    lg={lg}
-    xl={xl}
-  >
-    {/* pass sticky with context instead of prop-drilling, since context might change */}
-    <FlexTableContainer
-      className={className}
-      {...htmlProps}
-      {...(title ? { 'aria-labelledby': `${htmlProps.id}-title` } : {})}
+}) => {
+  const [renderLimit, setRenderLimit] = useState<number>(initialRenderLimit || Infinity);
+  const handleShowAll = useCallback(() => {
+    setRenderLimit(Infinity);
+  }, [setRenderLimit]);
+
+  return (
+    <FlexTableProvider
+      density={density}
+      columnDistance={columnDistance}
+      stickyHeader={stickyHeader}
+      fontSize={fontSize}
+      expandable={expandable}
+      sm={sm}
+      md={md}
+      lg={lg}
+      xl={xl}
     >
-      {Boolean(title) && (
-        <StyledTitleWrapper id={`${htmlProps.id}-title`}>
-          {isElement(title) ? title : <StyledTypography type="title3">{title}</StyledTypography>}
-        </StyledTitleWrapper>
-      )}
-      <ColumnProvider>
-        {initialRenderLimit ? renderWithLimit(children, initialRenderLimit) : children}
-      </ColumnProvider>
-    </FlexTableContainer>
-  </FlexTableProvider>
-);
+      {/* pass sticky with context instead of prop-drilling, since context might change */}
+      <FlexTableContainer
+        className={className}
+        {...htmlProps}
+        {...(title ? { 'aria-labelledby': `${htmlProps.id}-title` } : {})}
+      >
+        {Boolean(title) && (
+          <StyledTitleWrapper id={`${htmlProps.id}-title`}>
+            {isElement(title) ? title : <StyledTypography type="title3">{title}</StyledTypography>}
+          </StyledTitleWrapper>
+        )}
+        <ColumnProvider>
+          {initialRenderLimit && renderLimit !== Infinity
+            ? renderWithLimit(children as Array<React.ReactElement>, initialRenderLimit)
+            : children}
+        </ColumnProvider>
+      </FlexTableContainer>
+      {renderLimit ? (
+        <StyledTotalFlexbox container>
+          <Flexbox item>
+            <Box p={1}>
+              <Typography type="secondary" weight="bold">
+                {childrenRowLength(children as Array<React.ReactElement>)} total
+              </Typography>
+            </Box>
+          </Flexbox>
+          <Flexbox item>
+            {renderLimit !== Infinity ? <Button onClick={handleShowAll}>Show all</Button> : null}
+          </Flexbox>
+        </StyledTotalFlexbox>
+      ) : null}
+    </FlexTableProvider>
+  );
+};
 
 FlexTable.Row = Row;
 FlexTable.HeaderRow = HeaderRow;
