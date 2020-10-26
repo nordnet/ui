@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useIntl } from 'react-intl';
 import { Box, Flexbox, Icon, Link, Spinner, Typography } from '../..';
 import { Props } from './ShowRenderLimit.types';
 
@@ -16,6 +17,33 @@ const StyledTotalFlexbox = styled(Flexbox)`
   padding-top: ${({ theme }) => theme.spacing.unit(2)}px;
 `;
 
+/*
+ sv
+ nb
+ da
+ fi
+ en
+*/
+
+const labels = {
+  showLess: {
+    en: 'Show less',
+    sv: 'Visa mindre',
+  },
+  showMore: {
+    en: 'Show more',
+    sv: 'Visa mer',
+  },
+  total: {
+    en: 'Showing {limit} out of {total} results',
+  },
+};
+
+const getLabel = (key: string, locale: string) => {
+  const label = labels[key];
+  return label[locale] ? label[locale] : label.en;
+};
+
 export const ShowRenderLimit: React.FC<Props> = ({
   id,
   initialRenderLimit,
@@ -25,23 +53,26 @@ export const ShowRenderLimit: React.FC<Props> = ({
   total,
 }) => {
   const ShowMoreOrLessIcon = renderingAll ? StyledIconChevronUp : StyledIconChevronDown;
+  const { locale } = useIntl();
 
   return (
     <StyledTotalFlexbox container alignItems="center" direction="column">
       <Flexbox container direction="column">
         <Flexbox item>
-          <Typography type="secondary" weight="bold">
-            Showing {renderingAll ? total : initialRenderLimit} out of {total} results
+          <Typography type="secondary" weight="semibold">
+            {getLabel('total', locale)
+              .replace('{total}', total)
+              .replace('{limit}', renderingAll ? total : initialRenderLimit)}
           </Typography>
         </Flexbox>
         <Flexbox item alignSelf="center">
           <Box mt={1}>
-            <Typography type="secondary">
+            <Typography type="secondary" weight="semibold">
               {showingAll ? (
                 <Spinner size={4} delay={false} id={`${id}-show-all-spinner`} />
               ) : (
                 <Link onClick={onClick}>
-                  {renderingAll ? 'Show less ' : 'Show all'}{' '}
+                  {renderingAll ? getLabel('showLess', locale) : getLabel('showMore', locale)}{' '}
                   <ShowMoreOrLessIcon size={2} fill={() => 'currentColor'} />
                 </Link>
               )}
