@@ -8,6 +8,7 @@ import {
 } from './ColumnProvider.types';
 import { SORT_ORDER_NONE } from '../constants';
 import getColumnFlexPropsFunc from './getColumnFlexProps';
+import getColumnScreenSizePropsFunc from './getColumnScreenSizeProps';
 
 export const ACTION_SET_SORTING = 'SET_SORTING';
 export const ACTION_SET_INITIAL_SORTING = 'SET_INITIAL_SORTING';
@@ -16,7 +17,11 @@ export const ColumnDataContext = React.createContext<ColumnsDataState | undefine
 export const ColumnDispatchContext = React.createContext<ColumnsDispatch | undefined>(undefined);
 export const ColumnLayoutContext = React.createContext<{
   getColumnFlexProps: ReturnType<typeof getColumnFlexPropsFunc>;
-}>({ getColumnFlexProps: getColumnFlexPropsFunc() });
+  getColumnScreenSizeProps: ReturnType<typeof getColumnScreenSizePropsFunc>;
+}>({
+  getColumnFlexProps: getColumnFlexPropsFunc(),
+  getColumnScreenSizeProps: getColumnScreenSizePropsFunc(),
+});
 
 // We need to set the rest of the sorting to none when sorting a new header
 const setRestOfSortingState = (data: ColumnsDataState): ColumnsDataState =>
@@ -71,7 +76,12 @@ export const ColumnProvider: React.FC = ({ children }) => {
   return (
     <ColumnDataContext.Provider value={state.data}>
       <ColumnDispatchContext.Provider value={dispatch}>
-        <ColumnLayoutContext.Provider value={{ getColumnFlexProps: getColumnFlexPropsFunc() }}>
+        <ColumnLayoutContext.Provider
+          value={{
+            getColumnFlexProps: getColumnFlexPropsFunc(),
+            getColumnScreenSizeProps: getColumnScreenSizePropsFunc(),
+          }}
+        >
           {children}
         </ColumnLayoutContext.Provider>
       </ColumnDispatchContext.Provider>

@@ -32,6 +32,7 @@ const Footer: FooterComponent = (props) => {
       md={mdTable}
       lg={lgTable}
       xl={xlTable}
+      columnId={columnId}
     >
       {({ fontSize, className: mediaClassName }) => (
         <StyledFlexbox

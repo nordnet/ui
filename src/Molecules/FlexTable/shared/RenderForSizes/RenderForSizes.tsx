@@ -1,34 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {
-  ScreenSize,
-  ScreenSizePropsAndSize,
   GetMediaQuery,
-  GetPropsForScreenSizes,
   RenderForSizesComponent,
   ChildWrapperComponent,
 } from './RenderForSizes.types';
 import IsomorphicMedia from '../../../../Atoms/IsomorphicMedia';
-
-const getPropsForScreenSizes: GetPropsForScreenSizes = ({ xs, sm, md, lg, xl }) =>
-  [
-    { size: 'xs' as ScreenSize, ...xs },
-    { size: 'sm' as ScreenSize, ...sm },
-    { size: 'md' as ScreenSize, ...md },
-    { size: 'lg' as ScreenSize, ...lg },
-    { size: 'xl' as ScreenSize, ...xl },
-  ]
-    .filter((media) => Object.keys(media).length > 1)
-    .map((_, index, arr) => {
-      const sizesUpToNow = arr.slice(0, index + 1);
-      const screenSizeProps = sizesUpToNow.reduce<ScreenSizePropsAndSize>(
-        (acc, values) => ({
-          ...acc,
-          ...values,
-        }),
-        {} as ScreenSizePropsAndSize,
-      );
-      return screenSizeProps;
-    });
+import { ColumnLayoutContext } from '../ColumnProvider/ColumnProvider';
 
 const getMediaQuery: GetMediaQuery = (theme, currentSize, nextSize) => {
   if (currentSize === 'xs' && nextSize) {
@@ -42,8 +19,9 @@ const getMediaQuery: GetMediaQuery = (theme, currentSize, nextSize) => {
 
 const ChildWrapper: ChildWrapperComponent = ({ children, ...props }) => <>{children(props)}</>;
 
-export const RenderForSizes: RenderForSizesComponent = ({ xs, sm, md, lg, xl, children }) => {
-  const propsForScreenSizes = getPropsForScreenSizes({ xs, sm, md, lg, xl });
+export const RenderForSizes: RenderForSizesComponent = ({ children, ...props }) => {
+  const { getColumnScreenSizeProps } = useContext(ColumnLayoutContext);
+  const propsForScreenSizes = getColumnScreenSizeProps(props);
 
   return (
     <>
