@@ -8,9 +8,10 @@ import { constants, ColumnProvider, CellInlineContainer } from './shared';
 import { FlexTableComponents, FlexTableComponent } from './FlexTable.types';
 import { FlexTableProvider, useFlexTable } from './shared/FlexTableProvider';
 import { ExpandCell } from './Cell/ExpandCell';
-import { Link, Flexbox, Typography, Icon, Spinner } from '../..';
+import { Typography } from '../..';
 import { isElement } from '../../common/utils';
 import { ExpandItem, ExpandItems } from './Row/components';
+import { ShowRenderLimit } from './ShowRenderLimit';
 
 type HtmlDivProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
@@ -64,20 +65,12 @@ const FlexTableContainer: React.FC<HtmlDivProps> = ({ className, children, ...ht
   );
 };
 
-const StyledIconChevron = styled(Icon.ThinChevron)`
-  display: inline;
-`;
-
 const StyledTitleWrapper = styled.div`
   display: flex;
 `;
 
 const StyledTypography = styled(Typography)`
   padding-left: ${(p) => p.theme.spacing.unit(1)}px;
-`;
-
-const StyledTotalFlexbox = styled(Flexbox)`
-  background: ${({ theme }) => theme.color.backgroundInput};
 `;
 
 const FlexTable: FlexTableComponent & FlexTableComponents = ({
@@ -98,22 +91,22 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
 }) => {
   const [renderLimit, setRenderLimit] = useState<number>(initialRenderLimit || Infinity);
   const [isShowingAll, setIsShowingAll] = useState<boolean>(false);
-  const showingAll = renderLimit === Infinity;
+  const renderingAll = renderLimit === Infinity;
 
   const handleShowAll = useCallback(() => {
     setIsShowingAll(true);
     setTimeout(() => {
-      setRenderLimit(showingAll ? (initialRenderLimit as number) : Infinity);
+      setRenderLimit(renderingAll ? (initialRenderLimit as number) : Infinity);
     }, 200);
-  }, [renderLimit, setRenderLimit, setIsShowingAll, showingAll]);
+  }, [renderLimit, setRenderLimit, setIsShowingAll, renderingAll]);
 
   useEffect(() => {
-    if (showingAll) {
+    if (renderingAll) {
       setIsShowingAll(false);
     } else if (renderLimit === initialRenderLimit) {
       setIsShowingAll(false);
     }
-  }, [renderLimit, showingAll]);
+  }, [renderLimit, renderingAll]);
 
   return (
     <FlexTableProvider
@@ -139,37 +132,20 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
           </StyledTitleWrapper>
         )}
         <ColumnProvider>
-          {initialRenderLimit && !showingAll
+          {initialRenderLimit && !renderingAll
             ? renderWithLimit(children as Array<React.ReactElement>, initialRenderLimit)
             : children}
         </ColumnProvider>
       </FlexTableContainer>
       {renderLimit ? (
-        <StyledTotalFlexbox container alignItems="center" direction="column">
-          <Flexbox container direction="column">
-            <Flexbox item>
-              <Typography type="secondary" weight="bold">
-                {childrenRowLength(children as Array<React.ReactElement>)} total
-              </Typography>
-            </Flexbox>
-            <Flexbox item alignSelf="center">
-              <Typography type="secondary">
-                {isShowingAll ? (
-                  <Spinner size={4} delay={false} id="show-all-spinner" />
-                ) : (
-                  <Link onClick={handleShowAll}>
-                    {showingAll ? 'Show less ' : 'Show all'}{' '}
-                    <StyledIconChevron
-                      size={2}
-                      direction={showingAll ? 'up' : 'down'}
-                      fill={() => 'currentColor'}
-                    />
-                  </Link>
-                )}
-              </Typography>
-            </Flexbox>
-          </Flexbox>
-        </StyledTotalFlexbox>
+        <ShowRenderLimit
+          id={htmlProps.id as string}
+          initialRenderLimit={initialRenderLimit}
+          showingAll={isShowingAll}
+          onClick={handleShowAll}
+          renderingAll={renderingAll}
+          total={childrenRowLength(children as Array<React.ReactElement>)}
+        />
       ) : null}
     </FlexTableProvider>
   );
