@@ -7,6 +7,7 @@ import { assert, pickAriaAttributes } from '../../common/utils';
 
 const WEIGHTS = {
   regular: 400,
+  semibold: 600,
   bold: 700,
   extrabold: 800,
 };
@@ -43,7 +44,7 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
   let mobile: FontProps = null;
   let desktop: FontProps = null;
   let defaultWeight;
-  let allowedWeights = ['regular', 'bold', 'extrabold'];
+  let allowedWeights = ['regular', 'semibold', 'bold', 'extrabold'];
 
   switch (type) {
     case TYPOGRAPHY_TYPES.primary:
@@ -59,7 +60,7 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
         lineHeight: theme.spacing.unit(5),
       };
       defaultWeight = 'regular';
-      allowedWeights = ['regular', 'bold'];
+      allowedWeights = ['regular', 'bold', 'semibold'];
       break;
     case TYPOGRAPHY_TYPES.tertiary:
       mobile = {
@@ -145,7 +146,7 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
   assert(
     allowedWeights.includes(weight || defaultWeight),
     `"${weight}" is not one of the allowed weights for ${type}: ${allowedWeights
-      .map(s => `"${s}"`)
+      .map((s) => `"${s}"`)
       .join(', ')}`,
   );
 
@@ -182,9 +183,9 @@ const CleanSpan = React.forwardRef<HTMLSpanElement, any>((props, ref) => (
 const StyledTypography = styled(CleanSpan)<Props>`
   font-family: 'Nordnet Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     sans-serif;
-  color: ${p => getColor(p)};
+  color: ${(p) => getColor(p)};
   margin: 0;
-  ${p => getTypeStyles(p)}
+  ${(p) => getTypeStyles(p)}
 `;
 
 export const Typography: React.FC<Props> = React.forwardRef<HTMLElement, Props>((props, ref) => {
