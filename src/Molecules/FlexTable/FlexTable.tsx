@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { HeaderRow, FooterRow, Row } from './Row';
 import { Header } from './Header';
@@ -8,7 +8,7 @@ import { constants, ColumnProvider, CellInlineContainer } from './shared';
 import { FlexTableComponents, FlexTableComponent } from './FlexTable.types';
 import { FlexTableProvider, useFlexTable } from './shared/FlexTableProvider';
 import { ExpandCell } from './Cell/ExpandCell';
-import { Box, Button, Flexbox, Typography } from '../..';
+import { Box, Link, Flexbox, Typography, Icon, Spinner } from '../..';
 import { isElement } from '../../common/utils';
 import { ExpandItem, ExpandItems } from './Row/components';
 
@@ -64,6 +64,10 @@ const FlexTableContainer: React.FC<HtmlDivProps> = ({ className, children, ...ht
   );
 };
 
+const StyledIconChevron = styled(Icon.ThinChevron)`
+  display: inline;
+`;
+
 const StyledTitleWrapper = styled.div`
   display: flex;
 `;
@@ -93,9 +97,19 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
   ...htmlProps
 }) => {
   const [renderLimit, setRenderLimit] = useState<number>(initialRenderLimit || Infinity);
+  const [isShowingAll, setIsShowingAll] = useState<boolean>(false);
   const handleShowAll = useCallback(() => {
-    setRenderLimit(Infinity);
+    setIsShowingAll(true);
+    setTimeout(() => {
+      setRenderLimit(Infinity);
+    }, 1000);
   }, [setRenderLimit]);
+
+  useEffect(() => {
+    if (renderLimit === Infinity) {
+      setIsShowingAll(false);
+    }
+  }, [renderLimit]);
 
   return (
     <FlexTableProvider
@@ -127,7 +141,7 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
         </ColumnProvider>
       </FlexTableContainer>
       {renderLimit ? (
-        <StyledTotalFlexbox container>
+        <StyledTotalFlexbox container alignItems="center">
           <Flexbox item>
             <Box p={1}>
               <Typography type="secondary" weight="bold">
@@ -136,7 +150,16 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
             </Box>
           </Flexbox>
           <Flexbox item>
-            {renderLimit !== Infinity ? <Button onClick={handleShowAll}>Show all</Button> : null}
+            {isShowingAll || renderLimit !== Infinity ? (
+              <Typography type="secondary">
+                <Link onClick={handleShowAll}>
+                  Show all{' '}
+                  <StyledIconChevron size={2} direction="down" fill={() => 'currentColor'} />
+                  {console.log({ isShowingAll }) ||
+                    (isShowingAll && <Spinner delay={false} id="show-all-spinner" />)}
+                </Link>
+              </Typography>
+            ) : null}
           </Flexbox>
         </StyledTotalFlexbox>
       ) : null}
