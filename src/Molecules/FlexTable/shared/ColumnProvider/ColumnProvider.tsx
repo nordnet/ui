@@ -14,7 +14,7 @@ export const ACTION_SET_INITIAL_SORTING = 'SET_INITIAL_SORTING';
 
 export const ColumnDataContext = React.createContext<ColumnsDataState | undefined>(undefined);
 export const ColumnDispatchContext = React.createContext<ColumnsDispatch | undefined>(undefined);
-export const FlexLayoutContext = React.createContext<{
+export const ColumnLayoutContext = React.createContext<{
   getColumnFlexProps: ReturnType<typeof getColumnFlexPropsFunc>;
 }>({ getColumnFlexProps: getColumnFlexPropsFunc() });
 
@@ -71,9 +71,9 @@ export const ColumnProvider: React.FC = ({ children }) => {
   return (
     <ColumnDataContext.Provider value={state.data}>
       <ColumnDispatchContext.Provider value={dispatch}>
-        <FlexLayoutContext.Provider value={{ getColumnFlexProps: getColumnFlexPropsFunc() }}>
+        <ColumnLayoutContext.Provider value={{ getColumnFlexProps: getColumnFlexPropsFunc() }}>
           {children}
-        </FlexLayoutContext.Provider>
+        </ColumnLayoutContext.Provider>
       </ColumnDispatchContext.Provider>
     </ColumnDataContext.Provider>
   );
