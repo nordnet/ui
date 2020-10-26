@@ -8,7 +8,7 @@ import { constants, ColumnProvider, CellInlineContainer } from './shared';
 import { FlexTableComponents, FlexTableComponent } from './FlexTable.types';
 import { FlexTableProvider, useFlexTable } from './shared/FlexTableProvider';
 import { ExpandCell } from './Cell/ExpandCell';
-import { Box, Link, Flexbox, Typography, Icon, Spinner } from '../..';
+import { Link, Flexbox, Typography, Icon, Spinner } from '../..';
 import { isElement } from '../../common/utils';
 import { ExpandItem, ExpandItems } from './Row/components';
 
@@ -98,18 +98,22 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
 }) => {
   const [renderLimit, setRenderLimit] = useState<number>(initialRenderLimit || Infinity);
   const [isShowingAll, setIsShowingAll] = useState<boolean>(false);
+  const showingAll = renderLimit === Infinity;
+
   const handleShowAll = useCallback(() => {
     setIsShowingAll(true);
     setTimeout(() => {
-      setRenderLimit(Infinity);
-    }, 1000);
-  }, [setRenderLimit]);
+      setRenderLimit(showingAll ? (initialRenderLimit as number) : Infinity);
+    }, 200);
+  }, [renderLimit, setRenderLimit, setIsShowingAll, showingAll]);
 
   useEffect(() => {
-    if (renderLimit === Infinity) {
+    if (showingAll) {
+      setIsShowingAll(false);
+    } else if (renderLimit === initialRenderLimit) {
       setIsShowingAll(false);
     }
-  }, [renderLimit]);
+  }, [renderLimit, showingAll]);
 
   return (
     <FlexTableProvider
@@ -135,31 +139,35 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
           </StyledTitleWrapper>
         )}
         <ColumnProvider>
-          {initialRenderLimit && renderLimit !== Infinity
+          {initialRenderLimit && !showingAll
             ? renderWithLimit(children as Array<React.ReactElement>, initialRenderLimit)
             : children}
         </ColumnProvider>
       </FlexTableContainer>
       {renderLimit ? (
-        <StyledTotalFlexbox container alignItems="center">
-          <Flexbox item>
-            <Box p={1}>
+        <StyledTotalFlexbox container alignItems="center" direction="column">
+          <Flexbox container direction="column">
+            <Flexbox item>
               <Typography type="secondary" weight="bold">
                 {childrenRowLength(children as Array<React.ReactElement>)} total
               </Typography>
-            </Box>
-          </Flexbox>
-          <Flexbox item>
-            {isShowingAll || renderLimit !== Infinity ? (
+            </Flexbox>
+            <Flexbox item alignSelf="center">
               <Typography type="secondary">
-                <Link onClick={handleShowAll}>
-                  Show all{' '}
-                  <StyledIconChevron size={2} direction="down" fill={() => 'currentColor'} />
-                  {console.log({ isShowingAll }) ||
-                    (isShowingAll && <Spinner delay={false} id="show-all-spinner" />)}
-                </Link>
+                {isShowingAll ? (
+                  <Spinner size={4} delay={false} id="show-all-spinner" />
+                ) : (
+                  <Link onClick={handleShowAll}>
+                    {showingAll ? 'Show less ' : 'Show all'}{' '}
+                    <StyledIconChevron
+                      size={2}
+                      direction={showingAll ? 'up' : 'down'}
+                      fill={() => 'currentColor'}
+                    />
+                  </Link>
+                )}
               </Typography>
-            ) : null}
+            </Flexbox>
           </Flexbox>
         </StyledTotalFlexbox>
       ) : null}
