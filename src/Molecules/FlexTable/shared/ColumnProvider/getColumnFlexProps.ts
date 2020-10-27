@@ -9,7 +9,7 @@ const DEFAULT_COLUMN_FLEX_PROPS: Partial<FlexPropsType> = {
   wrap: 'nowrap',
 };
 
-const pickColumnFlexProps = ({
+const pickFlexProps = ({
   align,
   alignContent,
   alignItems,
@@ -61,7 +61,7 @@ const pickColumnFlexProps = ({
 };
 
 const getColumnFlexProps = (props: Partial<FlexPropsType>) => {
-  const columnFlexProps = pickColumnFlexProps(props) || EMPTY_OBJECT;
+  const columnFlexProps = pickFlexProps(props) || EMPTY_OBJECT;
   const flexProps = { ...DEFAULT_COLUMN_FLEX_PROPS, ...columnFlexProps };
   return flexProps;
 };
@@ -70,12 +70,15 @@ type GetFlexProps = (
   props: { columnId: string } & Partial<FlexPropsType>,
 ) => ReturnType<typeof getColumnFlexProps>;
 
-export default () => {
+const getColumnFlexPropsFunc = () => {
   // Utilizing a JavaScript Closure here to ensure that getColumnFlexProps only has to be invoked once for every column
   // Subsequent calls with same columnId will just return the previously calculated value
   const propsByColumns = {};
   return (({ columnId, ...props }) => {
+    // Flex props are only calculated first time the function is called with a specific columnId
     propsByColumns[columnId] = propsByColumns[columnId] ?? getColumnFlexProps(props);
     return propsByColumns[columnId];
   }) as GetFlexProps;
 };
+
+export default getColumnFlexPropsFunc;
