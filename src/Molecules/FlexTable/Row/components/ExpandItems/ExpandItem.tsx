@@ -79,7 +79,6 @@ export const ExpandItem: ExpandItemComponent = ({ item }) => {
       md={{ ...md, mobileItem: false }}
       lg={lg}
       xl={xl}
-      columnId="expandItem"
     >
       {({ fontSize, mobileItem, className }) => {
         if (mobileItem) {

@@ -70,7 +70,7 @@ type GetFlexProps = (
   props: { columnId: string } & Partial<FlexPropsType>,
 ) => ReturnType<typeof getColumnFlexProps>;
 
-const getColumnFlexPropsFunc = () => {
+export default () => {
   // Utilizing a JavaScript Closure here to ensure that getColumnFlexProps only has to be invoked once for every column
   // Subsequent calls with same columnId will just return the previously calculated value
   const propsByColumns = {};
@@ -79,5 +79,3 @@ const getColumnFlexPropsFunc = () => {
     return propsByColumns[columnId];
   }) as GetFlexProps;
 };
-
-export default getColumnFlexPropsFunc;

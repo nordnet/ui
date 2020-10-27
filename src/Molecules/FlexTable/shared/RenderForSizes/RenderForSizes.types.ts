@@ -22,7 +22,6 @@ export type GetPropsForScreenSizes = (
 
 export type RenderForSizesComponent = React.FC<
   PropsForScreenSizes & {
-    columnId?: string;
     children: (props: ScreenSizePropsAndSize) => React.ReactNode;
   }
 >;
