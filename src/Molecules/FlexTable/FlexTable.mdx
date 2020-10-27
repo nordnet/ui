@@ -130,15 +130,6 @@ This example cell will fit in with the rest of the cells and change its font siz
   </FlexTable>
 </Canvas>
 
-## Layout properties
-
-The layout of the table can be customized using the same properties as `FlexBox` uses.
-For performance reason as well as to make the table compatible with server-side rendering (SSR), the layout properties have to be attached to each of the `Header`, `Cell` and `Footer` components with the same `columnId`.
-If no layout properties are specified, some default values will be used.
-
-**NOTE: Previously the layout properties were only attached to the `Header` component, and that would set the layout for the entire column. This API was designed with ease-of-use in mind, but unfortunately it creates
-some performance problems with cells being rendered multiple times and it does not work at all in an SSR context. This API has therefore been deprecated and layout properties should now be added to each of the cells in a column instead.**
-
 ## Table Title
 
 Title for the the table can be a string or a react component.
@@ -148,7 +139,9 @@ If a title is set for the table, an id must be set as well. The id will be set a
 
 ## Header
 
-`Header` uses layout properties from props and handles sorting.
+`Header` sets the layout for the entire column and handles sorting as well.
+The layout is set using the same properties that `Flexbox`uses.
+Setting the same `columnId` on `Cell` and `Footer` makes them inherit the layout properties.
 The `fontSize` defined in the `FlexTable` component is inherited here. If the content does not fit within the `Header`, it will be truncated and produces a tooltip on hover via the molecule `TruncateWithToolTip`.
 
 <Canvas>
@@ -164,12 +157,8 @@ The `fontSize` defined in the `FlexTable` component is inherited here. If the co
     </FlexTable.HeaderRow>
     <FlexTable.Row>
       <FlexTable.Cell columnId="instrument-name">Ericsson</FlexTable.Cell>
-      <FlexTable.Cell columnId="currency" flex="0 0 150px">
-        SEK
-      </FlexTable.Cell>
-      <FlexTable.Cell columnId="country" justifyContent="flex-end" flex="2">
-        SE
-      </FlexTable.Cell>
+      <FlexTable.Cell columnId="currency">SEK</FlexTable.Cell>
+      <FlexTable.Cell columnId="country">SE</FlexTable.Cell>
     </FlexTable.Row>
   </FlexTable>
 </Canvas>
@@ -189,12 +178,8 @@ The `fontSize` defined in the `FlexTable` component is inherited here. If the co
     </FlexTable.HeaderRow>
     <FlexTable.Row>
       <FlexTable.Cell columnId="instrument-name">Ericsson</FlexTable.Cell>
-      <FlexTable.Cell columnId="currency" hidden md={{ hidden: false }}>
-        SEK
-      </FlexTable.Cell>
-      <FlexTable.Cell columnId="country" md={{ justifyContent: 'flex-end' }}>
-        SE
-      </FlexTable.Cell>
+      <FlexTable.Cell columnId="currency">SEK</FlexTable.Cell>
+      <FlexTable.Cell columnId="country">SE</FlexTable.Cell>
     </FlexTable.Row>
   </FlexTable>
 </Canvas>
@@ -338,7 +323,7 @@ Similar functionality to `Cell`. Has like `Header` the property `isContent = fal
       </FlexTable.HeaderRow>
       <FlexTable.Row>
         <FlexTable.Cell columnId="instrument-name">Ericsson</FlexTable.Cell>
-        <FlexTable.Cell columnId="amt" hidden md={{ hidden: false }} justifyContent="flex-end">
+        <FlexTable.Cell columnId="amt">
           <FlexTable.Cell.TextWrapper>
             <Number value={100} />
           </FlexTable.Cell.TextWrapper>
@@ -351,12 +336,12 @@ Similar functionality to `Cell`. Has like `Header` the property `isContent = fal
       </FlexTable.Row>
       <FlexTable.Row>
         <FlexTable.Cell columnId="instrument-name">Apple</FlexTable.Cell>
-        <FlexTable.Cell columnId="amt" hidden md={{ hidden: false }} justifyContent="flex-end">
+        <FlexTable.Cell columnId="amt">
           <FlexTable.Cell.TextWrapper>
             <Number value={300} />
           </FlexTable.Cell.TextWrapper>
         </FlexTable.Cell>
-        <FlexTable.Cell columnId="percentage" justifyContent="flex-end">
+        <FlexTable.Cell columnId="percentage">
           <FlexTable.Cell.TextWrapper>
             <Number value={75} percentage />
           </FlexTable.Cell.TextWrapper>
@@ -364,12 +349,12 @@ Similar functionality to `Cell`. Has like `Header` the property `isContent = fal
       </FlexTable.Row>
       <FlexTable.FooterRow>
         <FlexTable.Footer columnId="instrument-name">Summary</FlexTable.Footer>
-        <FlexTable.Footer columnId="amt" hidden md={{ hidden: false }} justifyContent="flex-end">
+        <FlexTable.Footer columnId="amt">
           <FlexTable.Footer.TextWrapper>
             <Number value={400} />
           </FlexTable.Footer.TextWrapper>
         </FlexTable.Footer>
-        <FlexTable.Footer columnId="percentage" justifyContent="flex-end">
+        <FlexTable.Footer columnId="percentage">
           <FlexTable.Footer.TextWrapper>
             <Number value={100} percentage />
           </FlexTable.Footer.TextWrapper>
@@ -401,9 +386,7 @@ const ConditionalMediaExpand = () => {
 
       <FlexTable.Row expandItems={columnData} md={{ expandItems: [] }}>
         <FlexTable.Cell columnId="instrumentName">Ericsson</FlexTable.Cell>
-        <FlexTable.Cell columnId="country" hidden md={{ hidden: false }}>
-          SE
-        </FlexTable.Cell>
+        <FlexTable.Cell columnId="country">SE</FlexTable.Cell>
       </FlexTable.Row>
     </FlexTable>
   );
