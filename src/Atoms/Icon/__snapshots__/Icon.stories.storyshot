@@ -619,6 +619,51 @@ Array [
   display: block;
 }
 
+.c1 {
+  fill: #00D200;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 32 32"
+    >
+      <circle
+        className="c1"
+        cx="16"
+        cy="16"
+        r="16"
+      />
+      <path
+        d="M15.6764562,10.3037862 C17.1392622,10.2182628 18.5802352,10.6886414 19.6937143,11.6507795 C19.9120436,11.8218263 20.1085399,12.0356347 20.2613704,12.2494432 C21.1788494,13.3359789 21.6375889,14.7083951 21.5153216,16.1272205 L21.5058471,16.2262806 C21.3748495,17.6801782 20.654363,18.9844098 19.5190509,19.9037862 C19.142433,20.2111359 18.9262264,20.6559391 18.908863,21.1252877 L18.9077291,21.186637 L18.9077291,24.8 L13.1001712,24.8 L13.1001712,21.1224944 C13.1001712,20.630735 12.860009,20.1603563 12.4670163,19.8396437 C11.0260433,18.685078 10.2837239,16.9104677 10.5020531,15.1144766 C10.6330507,14.0026726 11.113375,12.976392 11.8556945,12.142539 C12.8381761,11.0521158 14.1918174,10.3893096 15.6764562,10.3037862 Z M17.6414194,21.8494432 L14.3883137,21.8494432 L14.3883137,23.5385301 L17.6414194,23.5385301 L17.6414194,21.8494432 Z M16.5061074,11.586637 C14.1699844,11.3300668 12.0521908,12.9550111 11.7901957,15.2427617 C11.6155323,16.6111359 12.1831883,17.97951 13.2748345,18.8561247 C13.7996645,19.2672948 14.1630082,19.8563751 14.3066377,20.5093206 L14.3228149,20.5879733 L15.3489624,20.5879733 L17.7069182,20.5665924 C17.8324575,19.9518931 18.158511,19.3961024 18.6274309,18.9744927 L18.6893998,18.9202673 L18.7112327,18.9202673 C19.5627168,18.2360802 20.1085399,17.2739421 20.2395374,16.1835189 C20.370535,15.0930958 20.0430411,14.0026726 19.3443875,13.1260579 C18.645734,12.2708241 17.6414194,11.714922 16.5061074,11.586637 Z M8.91084559,7.71670379 L11.5353159,10.2868312 L10.6244703,11.1788166 L8,8.60868918 L8.91084559,7.71670379 Z M23.0892832,7.71670379 L24,8.60881532 L21.3751333,11.1786039 L20.4644166,10.2864923 L23.0892832,7.71670379 Z M16.6436548,5.6 L16.6436548,9.23474388 L15.3555122,9.23474388 L15.3555122,5.6 L16.6436548,5.6 Z"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 <div
     style={
       Object {
@@ -4683,7 +4728,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
   display: block;
 }
 
-.c18 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4697,7 +4742,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
   display: block;
 }
 
-.c19 {
+.c20 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4711,7 +4756,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
   display: block;
 }
 
-.c20 {
+.c21 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4725,7 +4770,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
   display: block;
 }
 
-.c21 {
+.c22 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4744,29 +4789,29 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
 }
 
 .c5 {
-  fill: #FFFFFF;
+  fill: #00D200;
 }
 
 .c6 {
+  fill: #FFFFFF;
+}
+
+.c7 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
+}
+
+.c9 {
+  fill: #FFFFFF;
 }
 
 .c8 {
   fill: #FFFFFF;
 }
 
-.c7 {
-  fill: #FFFFFF;
-}
-
-.c9 {
-  stroke: #6E6E69;
-}
-
 .c10 {
-  fill: #FFFFFF;
+  stroke: #6E6E69;
 }
 
 .c11 {
@@ -4774,11 +4819,11 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
 }
 
 .c12 {
-  stroke: #6E6E69;
+  fill: #FFFFFF;
 }
 
 .c13 {
-  stroke: #28282A;
+  stroke: #6E6E69;
 }
 
 .c14 {
@@ -4797,14 +4842,14 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
   stroke: #28282A;
 }
 
-.c22 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
+.c18 {
+  stroke: #28282A;
 }
 
 .c23 {
-  stroke: #6E6E69;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .c24 {
@@ -4812,12 +4857,16 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
 }
 
 .c25 {
+  stroke: #6E6E69;
+}
+
+.c26 {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
-.c26 {
+.c27 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -5460,6 +5509,45 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
     <div
       className="c2"
     >
+      BulbInCircle
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 32 32"
+        >
+          <circle
+            className="c5"
+            cx="16"
+            cy="16"
+            r="16"
+          />
+          <path
+            d="M15.6764562,10.3037862 C17.1392622,10.2182628 18.5802352,10.6886414 19.6937143,11.6507795 C19.9120436,11.8218263 20.1085399,12.0356347 20.2613704,12.2494432 C21.1788494,13.3359789 21.6375889,14.7083951 21.5153216,16.1272205 L21.5058471,16.2262806 C21.3748495,17.6801782 20.654363,18.9844098 19.5190509,19.9037862 C19.142433,20.2111359 18.9262264,20.6559391 18.908863,21.1252877 L18.9077291,21.186637 L18.9077291,24.8 L13.1001712,24.8 L13.1001712,21.1224944 C13.1001712,20.630735 12.860009,20.1603563 12.4670163,19.8396437 C11.0260433,18.685078 10.2837239,16.9104677 10.5020531,15.1144766 C10.6330507,14.0026726 11.113375,12.976392 11.8556945,12.142539 C12.8381761,11.0521158 14.1918174,10.3893096 15.6764562,10.3037862 Z M17.6414194,21.8494432 L14.3883137,21.8494432 L14.3883137,23.5385301 L17.6414194,23.5385301 L17.6414194,21.8494432 Z M16.5061074,11.586637 C14.1699844,11.3300668 12.0521908,12.9550111 11.7901957,15.2427617 C11.6155323,16.6111359 12.1831883,17.97951 13.2748345,18.8561247 C13.7996645,19.2672948 14.1630082,19.8563751 14.3066377,20.5093206 L14.3228149,20.5879733 L15.3489624,20.5879733 L17.7069182,20.5665924 C17.8324575,19.9518931 18.158511,19.3961024 18.6274309,18.9744927 L18.6893998,18.9202673 L18.7112327,18.9202673 C19.5627168,18.2360802 20.1085399,17.2739421 20.2395374,16.1835189 C20.370535,15.0930958 20.0430411,14.0026726 19.3443875,13.1260579 C18.645734,12.2708241 17.6414194,11.714922 16.5061074,11.586637 Z M8.91084559,7.71670379 L11.5353159,10.2868312 L10.6244703,11.1788166 L8,8.60868918 L8.91084559,7.71670379 Z M23.0892832,7.71670379 L24,8.60881532 L21.3751333,11.1786039 L20.4644166,10.2864923 L23.0892832,7.71670379 Z M16.6436548,5.6 L16.6436548,9.23474388 L15.3555122,9.23474388 L15.3555122,5.6 L16.6436548,5.6 Z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       Calendar
     </div>
     <div>
@@ -5620,7 +5708,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             fill="#FFF"
           />
           <polygon
-            className="c5"
+            className="c6"
             points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
           />
         </svg>
@@ -5647,7 +5735,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c3 c6"
+          className="c3 c7"
           direction="down"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
@@ -6132,11 +6220,11 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             d="M46 92.0000003c25.4050985 0 46-20.5949015 46-46S71.4050985 3.3e-7 46 3.3e-7 0 20.5949018 0 46.0000003c0 25.4050985 20.5949015 46 46 46z"
           />
           <path
-            className="c7"
+            className="c8"
             d="M58.5601262 30.666667l2.710576 2.710576-12.5920355 12.591424 12.5920355 12.5914595-2.710576 2.710576L45.9686667 48.678667l-12.591424 12.5920355-2.710576-2.710576 12.591-12.5914595-12.591-12.591424 2.710576-2.710576 12.591424 12.591 12.5914595-12.591z"
           />
           <polygon
-            className="c8"
+            className="c9"
             points="8.681 9.967 5.073 6.333 6.396 5 10.004 8.634 13.604 5.007 14.916 6.329 11.316 9.956 15 13.667 13.677 15 9.993 11.289 6.312 14.997 5 13.675"
           />
         </svg>
@@ -6204,7 +6292,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            className="c9"
+            className="c10"
             d="m 1 1 l 22 22 m -22 0 l 22 -22"
             strokeWidth={2}
           />
@@ -6245,7 +6333,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             d="M0 6.4h11.95v6.4H0z"
           />
           <path
-            className="c10"
+            className="c11"
             d="M2.74 11.38c.83 0 1.5-.55 1.55-1.26h-.8a.77.77 0 01-.77.57c-.57 0-.94-.46-.94-1.17s.37-1.16.94-1.16c.35 0 .62.16.76.5h.8c-.08-.67-.73-1.2-1.54-1.2-1.1 0-1.77.82-1.77 1.86s.66 1.86 1.77 1.86zm3.42.01c.9 0 1.44-.46 1.44-1.13 0-.63-.43-.89-1.28-1.1-.58-.15-.83-.22-.83-.47 0-.21.18-.37.55-.37.41 0 .67.2.71.46h.77c-.07-.76-.74-1.11-1.46-1.11-.86 0-1.35.47-1.35 1.06 0 .54.28.84 1.24 1.1.53.13.87.19.87.49 0 .27-.24.41-.63.41s-.76-.15-.82-.52H4.6c.04.71.62 1.18 1.57 1.18zm3.88-.09l1.1-3.55h-.8l-.85 2.96-.84-2.96h-.82l1.1 3.55h1.11z"
           />
         </svg>
@@ -7133,7 +7221,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
           />
           <polygon
-            className="c11"
+            className="c12"
             points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
           />
         </svg>
@@ -7800,7 +7888,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             transform="translate(1 1)"
           >
             <circle
-              className="c12"
+              className="c13"
               cx="11"
               cy="11"
               fill="none"
@@ -8006,7 +8094,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           viewBox="0 0 22 22"
         >
           <g
-            className="c13"
+            className="c14"
             fill="none"
             fillRule="evenodd"
             strokeWidth="2"
@@ -8086,7 +8174,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           viewBox="0 0 24 16"
         >
           <g
-            className="c14"
+            className="c15"
             fill="none"
             fillRule="evenodd"
             strokeWidth="2"
@@ -8132,7 +8220,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           viewBox="0 0 20 20"
         >
           <g
-            className="c15"
+            className="c16"
             fill="none"
             fillRule="evenodd"
             strokeWidth="2"
@@ -8183,7 +8271,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           viewBox="0 0 20 25"
         >
           <g
-            className="c16"
+            className="c17"
             fill="none"
             fillRule="evenodd"
             strokeWidth="2"
@@ -8226,7 +8314,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           viewBox="0 0 24 15"
         >
           <g
-            className="c17"
+            className="c18"
             fill="none"
             fillRule="evenodd"
             strokeWidth="2"
@@ -8453,7 +8541,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c18"
+          className="c19"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8492,7 +8580,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c19"
+          className="c20"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8536,7 +8624,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c20"
+          className="c21"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8575,7 +8663,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c21"
+          className="c22"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8649,7 +8737,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c3 c22"
+          className="c3 c23"
           direction="ascending"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
@@ -8692,7 +8780,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            className="c23"
+            className="c24"
             d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
             strokeWidth="1"
           />
@@ -8727,7 +8815,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            className="c24"
+            className="c25"
             d="M12,3.28909585 L9.7518819,10.3333333 L2.94990324,10.3333333 L8.34965326,14.4696321 L6.10344598,21.3821992 L12,17.0986537 L17.896554,21.3821992 L15.6503467,14.4696321 L21.0500967,10.3333333 L14.2481181,10.3333333 L12,3.28909585 Z"
             strokeWidth="2"
           />
@@ -8926,7 +9014,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c3 c25"
+          className="c3 c26"
           direction="up"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
@@ -8960,7 +9048,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c3 c26"
+          className="c3 c27"
           direction="down"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"

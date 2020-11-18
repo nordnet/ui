@@ -13,6 +13,7 @@ import { BellInactive } from './components/BellInactive';
 import { BellPlain } from './components/BellPlain';
 import { Bolt } from './components/Bolt';
 import { BrowserWindow } from './components/BrowserWindow';
+import { BulbInCircle } from './components/BulbInCircle';
 import { Calendar } from './components/Calendar';
 import { CalendarTwoRows } from './components/CalendarTwoRows';
 import { CandleSticks } from './components/CandleSticks';
@@ -130,6 +131,7 @@ export default {
   BellPlain,
   Bolt,
   BrowserWindow,
+  BulbInCircle,
   Calendar,
   CalendarTwoRows,
   CandleSticks,

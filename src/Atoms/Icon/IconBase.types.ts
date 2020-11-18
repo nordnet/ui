@@ -12,6 +12,7 @@ export type StyledIconBaseProps = {
 
 export type StyledChildProps = {
   strokeColorFn?: ColorFn | string;
+  backgroundColorFn?: ColorFn | string;
 };
 
 export type BaseProps = {
@@ -25,6 +26,10 @@ export type BaseProps = {
   inline?: boolean;
   viewBox?: string;
 };
+
+export type WithBackgroundColor = {
+  backgroundColor?: ColorFn | string;
+} & BaseProps;
 
 export type ChildProps = {
   stroke?: ColorFn | string;
