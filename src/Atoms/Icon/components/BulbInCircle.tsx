@@ -5,7 +5,7 @@ import { WithBackgroundColor, StyledChildProps } from '../IconBase.types';
 
 const Circle = styled.circle<StyledChildProps>`
   ${(p) => {
-    const backgroundColor = getColor(p.theme, p.theme.color.positive, p.backgroundColorFn);
+    const backgroundColor = getColor(p.theme, p.theme.color.bulbBackground, p.backgroundColorFn);
     return `fill: ${backgroundColor};`;
   }}
 `;

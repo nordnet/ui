@@ -89,6 +89,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   textLight: RawColor['white'];
   /** gray2 */
   label: RawColor['gray2'];
+  /** brandGreen */
+  bulbBackground: RawColor['brandGreen'];
   /** cta */
   buy: ChangeableColor<RawColor['cta'], RawColor['a11yCta'], Version>;
   /** ctaPressed */

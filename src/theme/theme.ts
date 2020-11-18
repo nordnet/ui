@@ -143,6 +143,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     bubbleBorder: rawColor.gray4,
     bubbleSecondaryText: rawColor.gray2,
     tableBorder: rawColor.gray0,
+    bulbBackground: rawColor.brandGreen,
     buttonSecondaryBackground: rawColor.white,
     buttonText: rawColor.white,
     buy: a11yColors ? rawColor.a11yCta : rawColor.cta,

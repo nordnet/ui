@@ -620,7 +620,7 @@ Array [
 }
 
 .c1 {
-  fill: #00D200;
+  fill: #D2F500;
 }
 
 <div
@@ -4789,7 +4789,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
 }
 
 .c5 {
-  fill: #00D200;
+  fill: #D2F500;
 }
 
 .c6 {
