@@ -51,11 +51,13 @@ module.exports = {
       },
     ],
   },
-  overrides: {
-    files: 'src/**/*.stories.tsx',
-    rules: {
-      'import/no-extraneous-dependencies': 0,
-      'import/no-unresolved': 0,
+  overrides: [
+    {
+      files: 'src/**/*.stories.tsx',
+      rules: {
+        'import/no-extraneous-dependencies': 0,
+        'import/no-unresolved': 0,
+      },
     },
-  },
+  ],
 };
