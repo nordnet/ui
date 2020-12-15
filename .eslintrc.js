@@ -41,13 +41,12 @@ module.exports = {
         ignoreRestSiblings: false,
       },
     ],
-    // remove this rule when Link component only render links
     'jsx-a11y/anchor-is-valid': [
+      // remove this rule when Link component only render links
       'error',
       {
         components: ['Link'],
         specialLink: ['to'],
-        aspects: [],
       },
     ],
   },
