@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useUIDSeed } from 'react-uid';
 import styled from 'styled-components';
 import FocusLock from 'react-focus-lock';
@@ -6,6 +6,7 @@ import { RemoveScroll } from 'react-remove-scroll';
 import { motion, useDragControls, AnimatePresence } from 'framer-motion';
 import { Props, TitleProps } from './Drawer.types';
 import { isBoolean, isElement } from '../../common/utils';
+import { useOnClickOutside } from '../../common/Hooks';
 import { Typography, Icon, useKeyPress, Portal, useMedia, Button } from '../..';
 
 const CROSS_SIZE = 5;
@@ -107,6 +108,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
       as,
       className,
       children,
+      disableCloseOnClickOutside = false,
       disableContentStyle,
       onClose,
       open: isOpenExternal,
@@ -119,6 +121,8 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
     const escapePress = useKeyPress('Escape');
     const [isOpenInternal, setIsOpenInternal] = useState(true);
     const isOpen = isControlled ? isOpenExternal : isOpenInternal;
+    const internalDrawerRef = useRef<HTMLDivElement>(null);
+    const drawerRef = (ref || internalDrawerRef) as React.RefObject<HTMLDivElement>;
     const isDesktop = useMedia((t) => t.media.greaterThan(t.breakpoints.sm)) || false;
     const seed = useUIDSeed();
     const uid = seed(displayName);
@@ -133,7 +137,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
       [dragControls],
     );
 
-    const handleCloseClick = useCallback(() => {
+    const handleClose = useCallback(() => {
       setIsOpenInternal(false);
 
       if (onClose) {
@@ -142,14 +146,20 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
     }, [onClose]);
 
     const handleDragEnd = useCallback(() => {
-      handleCloseClick();
-    }, [handleCloseClick]);
+      handleClose();
+    }, [handleClose]);
+
+    useOnClickOutside(drawerRef, () => {
+      if (!disableCloseOnClickOutside) {
+        handleClose();
+      }
+    });
 
     useEffect(() => {
       if (isOpen && escapePress) {
-        handleCloseClick();
+        handleClose();
       }
-    }, [escapePress, handleCloseClick, isOpen]);
+    }, [escapePress, handleClose, isOpen]);
 
     return (
       <AnimatePresence onExitComplete={onExitAnimationComplete}>
@@ -162,7 +172,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
                   className={className}
                   aria-labelledby={uid}
                   {...animationProps}
-                  ref={ref}
+                  ref={drawerRef}
                   dragControls={dragControls}
                   dragListener={false}
                   drag="x"
@@ -170,7 +180,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
                 >
                   <TitleWrapper onTouchStart={startDrag}>
                     {title && <Title title={title} uid={uid} />}
-                    <CloseButton type="button" variant="neutral" onClick={handleCloseClick}>
+                    <CloseButton type="button" variant="neutral" onClick={handleClose}>
                       <Icon.CrossMedium size={4} title="Close this drawer" />
                     </CloseButton>
                   </TitleWrapper>
