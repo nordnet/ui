@@ -63,7 +63,25 @@ export const WebviewEmbeddedLastStepAndLoading = () => (
   />
 );
 
-export const PreviousButtonDisabled = () => (
+export const PreviousButtonHidden = () => (
+  <BottomWizardBar
+    isLastStep={false}
+    isLoading={false}
+    isEmbedded={false}
+    onCancel={action('cancel')}
+    onNext={action('next')}
+    onPrevious={action('previous')}
+    onSubmit={action('submit')}
+    titleText="Title"
+    cancelText="Cancel"
+    previousText="Previous"
+    nextText="Next"
+    submitText="Submit"
+    hidePreviousButton
+  />
+);
+
+export const PreviousButtonHiddenEmbedded = () => (
   <BottomWizardBar
     isLastStep={false}
     isLoading={false}

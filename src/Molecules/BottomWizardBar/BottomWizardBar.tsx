@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flexbox, useMedia, Box } from '../..';
+import { Flexbox, Box } from '../..';
 import Button from '../Button';
 import PageWrapper from '../PageWrapper';
 import { Props } from './BottomWizardBar.types';
@@ -48,8 +48,6 @@ const BottomWizardBar: React.FC<Props> = ({
   submitButtonLink = '',
   nextButtonLink = '',
 }) => {
-  const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
-
   return (
     <StyledFooterPageWrapper background={(t) => t.color.card}>
       <StyledBox py={isEmbedded ? 3 : 2} px={isEmbedded ? 4 : 3} sm={{ py: 2, px: 0 }}>
@@ -85,7 +83,7 @@ const BottomWizardBar: React.FC<Props> = ({
               alignItems="center"
               justifyContent="space-between"
             >
-              {(!isMobile || isEmbedded) && !hidePreviousButton && (
+              {!hidePreviousButton && (
                 <Flexbox item {...(isEmbedded && { flex: '1' })}>
                   <Button
                     onClick={onPrevious}
