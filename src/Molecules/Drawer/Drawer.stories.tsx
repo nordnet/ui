@@ -205,7 +205,7 @@ export const WithoutCloseOnClickOutside = () => {
         <button type="button" onClick={toggle}>
           Toggle drawer
         </button>
-        <Drawer onClose={onClose} title="Drawer title" open={open} disableCloseOnClickOutside>
+        <Drawer onClose={onClose} title="Drawer title" open={open} closeOnClickOutside={false}>
           <Typography>
             This Drawer uses a forwardRef. The ref is used with useOnClickOutside hook. Try to click
             outside the Drawer to close it.

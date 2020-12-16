@@ -108,7 +108,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
       as,
       className,
       children,
-      disableCloseOnClickOutside = false,
+      closeOnClickOutside = true,
       disableContentStyle,
       onClose,
       open: isOpenExternal,
@@ -150,7 +150,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
     }, [handleClose]);
 
     useOnClickOutside(drawerRef, () => {
-      if (!disableCloseOnClickOutside) {
+      if (closeOnClickOutside) {
         handleClose();
       }
     });

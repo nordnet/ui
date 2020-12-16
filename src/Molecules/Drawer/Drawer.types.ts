@@ -1,6 +1,7 @@
 export type Props = {
   className?: string;
-  disableCloseOnClickOutside?: boolean;
+  /** @default true */
+  closeOnClickOutside?: boolean;
   /** Useful when integrating with FadedScroll component */
   disableContentStyle?: boolean;
   onClose?: Function;

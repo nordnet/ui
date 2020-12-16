@@ -1203,7 +1203,7 @@ exports[`Storyshots Molecules / Drawer With no title 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules / Drawer With ref story 1`] = `
+exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking outside 1`] = `
 .c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
