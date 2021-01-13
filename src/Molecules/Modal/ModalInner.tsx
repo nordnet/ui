@@ -116,6 +116,8 @@ export const Footer = styled.div`
   flex: 0 0 auto;
 `;
 
+const noop = () => {};
+
 export const ModalInner: React.FC<Props> = ({
   autoFocus = false,
   children,
@@ -128,6 +130,7 @@ export const ModalInner: React.FC<Props> = ({
   closeOnBackdropClick = false,
   fullScreenMobile = true,
   isStatusModal = false,
+  onAnimationComplete,
 }) => {
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
@@ -192,6 +195,7 @@ export const ModalInner: React.FC<Props> = ({
             fullScreenMobile={fullScreenMobile}
           >
             <Dialog
+              onAnimationComplete={onAnimationComplete || noop}
               aria-labelledby={titleId}
               className={className}
               show={show}

@@ -10,6 +10,7 @@ export type InnerProps = {
   /** @default false */
   closeOnBackdropClick?: boolean;
   isStatusModal?: boolean;
+  onAnimationComplete?: () => void;
 };
 
 export type BackdropProps = {
