@@ -32,6 +32,7 @@ import AccordionItem from './Molecules/AccordionItem';
 import Avatar from './Molecules/Avatar';
 import BarScale from './Molecules/BarScale';
 import BottomWizardBar from './Molecules/BottomWizardBar';
+import Bubble from './Molecules/Bubble';
 import Button from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
 import CollapsibleCard from './Molecules/CollapsibleCard';
@@ -96,6 +97,7 @@ export {
   BarScale,
   Box,
   BottomWizardBar,
+  Bubble,
   Button,
   Card,
   CardWithTabs,
