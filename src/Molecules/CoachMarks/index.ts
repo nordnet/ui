@@ -1,1 +1,3 @@
-export { default as CoachMarks } from './CoachMarks';
+import { CoachMarks } from './CoachMarks';
+
+export default CoachMarks;

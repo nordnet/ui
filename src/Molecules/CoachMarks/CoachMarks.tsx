@@ -1,5 +1,4 @@
 import React, { useLayoutEffect, useState } from 'react';
-import { useIntl } from 'react-intl';
 import styled from 'styled-components';
 import { RemoveScroll } from 'react-remove-scroll';
 import FocusLock from 'react-focus-lock';
@@ -7,7 +6,6 @@ import { Bubble, Button, Icon, Flexbox, Media, Typography } from '../..';
 import { Component, ColsTrimmerProps } from './CoachMarks.types';
 import { getElement, makeBackdropPath, getBubblePositionStyles } from './utils';
 import { useClientRectWithCbRef, useWindowSize } from '../../common/Hooks';
-import messages from './CoachMarks.messages';
 
 const CLOSE_ICON_SIZE = 4;
 
@@ -51,8 +49,16 @@ const CloseButton = styled(Button)`
   right: ${(p) => p.theme.spacing.unit(5)}px;
 `;
 
-const CoachMarks: Component = ({ steps, onClose, onDone, onNext, onPrev }) => {
-  const { formatMessage } = useIntl();
+export const CoachMarks: Component = ({
+  steps,
+  onClose,
+  onDone,
+  onNext,
+  onPrev,
+  prevText = 'Previous',
+  nextText = 'Next',
+  doneText = 'Done',
+}) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [targetRect, setTargetRect] = useState<ClientRect | null>(null);
   const windowSize = useWindowSize();
@@ -152,18 +158,18 @@ const CoachMarks: Component = ({ steps, onClose, onDone, onNext, onPrev }) => {
                   {hasPrevStep && (
                     <Flexbox item flex="1 0 50%">
                       <Button variant="secondary" onClick={handleStepBackwards} fullWidth>
-                        {formatMessage(messages.previous)}
+                        {prevText}
                       </Button>
                     </Flexbox>
                   )}
                   <Flexbox item flex="1 0 50%">
                     {hasNextStep ? (
                       <Button variant="primary" onClick={handleStepForward} fullWidth>
-                        {formatMessage(messages.next)}
+                        {nextText}
                       </Button>
                     ) : (
                       <Button variant="primary" onClick={handleDone} fullWidth>
-                        {formatMessage(messages.done)}
+                        {doneText}
                       </Button>
                     )}
                   </Flexbox>
@@ -182,5 +188,3 @@ const CoachMarks: Component = ({ steps, onClose, onDone, onNext, onPrev }) => {
     </Media>
   ) : null;
 };
-
-export default CoachMarks;

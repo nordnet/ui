@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { action } from '@storybook/addon-actions';
-import { Box, Button, Card, Flexbox, Icon, Typography } from '../..';
-import { CoachMarks } from '.';
+import { Box, Button, Card, CoachMarks, Flexbox, Icon, Typography } from '../..';
 
 const MockItem = styled.div`
   padding: ${(p) => p.theme.spacing.unit(5)}px;

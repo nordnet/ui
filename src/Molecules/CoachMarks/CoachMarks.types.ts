@@ -20,6 +20,9 @@ export type Props = {
   onNext?: (newStep: number) => void;
   onPrev?: (newStep: number) => void;
   steps: Step[];
+  prevText?: string;
+  nextText?: string;
+  doneText?: string;
 };
 
 export type Component = React.FC<Props>;

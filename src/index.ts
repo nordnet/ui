@@ -35,6 +35,7 @@ import BottomWizardBar from './Molecules/BottomWizardBar';
 import Bubble from './Molecules/Bubble';
 import Button from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
+import CoachMarks from './Molecules/CoachMarks';
 import CollapsibleCard from './Molecules/CollapsibleCard';
 import DatePicker from './Molecules/DatePicker';
 import Drawer from './Molecules/Drawer';
@@ -102,6 +103,7 @@ export {
   Card,
   CardWithTabs,
   CardWithTitle,
+  CoachMarks,
   CollapsibleCard,
   CssGrid,
   DatePicker,
