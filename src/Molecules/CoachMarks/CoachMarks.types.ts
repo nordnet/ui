@@ -1,9 +1,5 @@
 import { Placement } from '../Bubble/Bubble.types';
 
-type Target = string | HTMLElement;
-
-export type GetElement = (element: Target) => HTMLElement;
-
 export type ColsTrimmerProps = {
   $hasIcon: boolean;
 };
@@ -14,7 +10,7 @@ type Step = {
   content?: React.ReactNode;
   icon?: React.ReactNode;
   position?: Placement;
-  target: Target;
+  target: string | HTMLElement;
   title?: string;
 };
 

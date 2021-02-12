@@ -1,8 +1,10 @@
 import { useCallback, useState, useEffect } from 'react';
 
-function useClientRectWithCbRef(dependency) {
-  const [rect, setRect] = useState(null);
-  const [nodeEl, setNodeEl] = useState(null);
+type T = (dependancy: any) => [ClientRect | null, (node: any) => void];
+
+const useClientRectWithCbRef: T = (dependency) => {
+  const [rect, setRect] = useState<ClientRect | null>(null);
+  const [nodeEl, setNodeEl] = useState<HTMLElement | null>(null);
 
   const ref = useCallback((node) => {
     if (node !== null) {
@@ -18,6 +20,6 @@ function useClientRectWithCbRef(dependency) {
   }, [nodeEl, dependency]);
 
   return [rect, ref];
-}
+};
 
 export default useClientRectWithCbRef;

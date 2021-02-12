@@ -5,37 +5,11 @@ import { RemoveScroll } from 'react-remove-scroll';
 import FocusLock from 'react-focus-lock';
 import { Bubble, Button, Icon, Flexbox, Media, Typography } from '../..';
 import { Component, ColsTrimmerProps } from './CoachMarks.types';
-import {
-  getElement,
-  makeBackdropPath,
-  positionBubbleAfter,
-  positionBubbleBefore,
-  positionBubbleOver,
-  positionBubbleUnder,
-} from './utils';
+import { getElement, makeBackdropPath, getBubblePositionStyles } from './utils';
 import { useClientRectWithCbRef, useWindowSize } from '../../common/Hooks';
-import { Placement } from '../Bubble/Bubble.types';
 import messages from './CoachMarks.messages';
 
 const CLOSE_ICON_SIZE = 4;
-
-const getBubblePositionStyles = (
-  position: Placement,
-  targetRect: ClientRect,
-  bubbleRect: ClientRect,
-) => {
-  switch (position) {
-    case 'top':
-      return positionBubbleOver(targetRect, bubbleRect);
-    case 'right':
-      return positionBubbleAfter(targetRect);
-    case 'left':
-      return positionBubbleBefore(targetRect, bubbleRect);
-    case 'bottom':
-    default:
-      return positionBubbleUnder(targetRect);
-  }
-};
 
 const SVG = styled.svg`
   overflow: hidden;
@@ -80,28 +54,24 @@ const CloseButton = styled(Button)`
 const CoachMarks: Component = ({ steps, onClose, onDone, onNext, onPrev }) => {
   const { formatMessage } = useIntl();
   const [currentStep, setCurrentStep] = useState(0);
-  const [targetRect, setTargetRect] = useState(null);
+  const [targetRect, setTargetRect] = useState<ClientRect | null>(null);
   const windowSize = useWindowSize();
   const [bubbleRect, bubbleRef] = useClientRectWithCbRef(currentStep);
   const { body, content, icon, position = 'left', target, title } = steps[currentStep];
   const hasMultipleSteps = steps.length > 1;
   const hasPrevStep = currentStep > 0;
   const hasNextStep = currentStep + 1 < steps.length;
-  const path = targetRect
-    ? makeBackdropPath({
-        width: targetRect.width,
-        height: targetRect.height,
-        x: targetRect.left,
-        y: targetRect.top,
-        r: 0,
-      })
-    : ({} as string);
-  const bubblePositionStyles = getBubblePositionStyles(position, targetRect, bubbleRect);
+  const path = targetRect ? makeBackdropPath(targetRect) : '';
+  const bubblePositionStyles =
+    targetRect && bubbleRect ? getBubblePositionStyles(position, targetRect, bubbleRect) : {};
 
   useLayoutEffect(() => {
     if (target) {
       const targetEl = getElement(target);
-      setTargetRect(targetEl?.getBoundingClientRect());
+
+      if (targetEl) {
+        setTargetRect(targetEl.getBoundingClientRect());
+      }
     }
   }, [target, windowSize]);
 

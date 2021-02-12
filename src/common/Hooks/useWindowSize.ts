@@ -8,7 +8,7 @@ const isClient = !!(
 );
 
 function useWindowSize(throttleDelay: number = 1000) {
-  const [windowSize, setWindowSize] = useState({
+  const [windowSize, setWindowSize] = useState<{ width?: number; height?: number }>({
     width: undefined,
     height: undefined,
   });
