@@ -22,6 +22,7 @@ export type Props = {
   prevText?: string;
   nextText?: string;
   doneText?: string;
+  multiStepIndicatorText?: string;
 };
 
 export type Component = React.FC<Props>;

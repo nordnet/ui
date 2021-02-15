@@ -60,6 +60,7 @@ export const CoachMarks: Component = ({
   prevText = 'Previous',
   nextText = 'Next',
   doneText = 'Done',
+  multiStepIndicatorText = 'of',
 }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
@@ -160,7 +161,7 @@ export const CoachMarks: Component = ({
                 {hasMultipleSteps && (
                   <Flexbox item>
                     <Typography type="secondary" color={(t) => t.color.bubbleSecondaryText}>
-                      {`${currentStep + 1} of ${steps.length}`}
+                      {`${currentStep + 1} ${multiStepIndicatorText} ${steps.length}`}
                     </Typography>
                   </Flexbox>
                 )}
