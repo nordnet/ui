@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BubbleArrow } from './BubbleArrow';
 import { Component, Props } from './Bubble.types';
 import { BORDER_SIZE } from './consts';
 
@@ -17,10 +16,9 @@ const Card = styled.div`
 `;
 
 export const Bubble: Component = React.forwardRef<HTMLDivElement, Props>(
-  ({ children, className, position, style }, ref) => (
+  ({ children, className, style }, ref) => (
     <Card className={className} style={style} ref={ref}>
       {children}
-      <BubbleArrow bubblePlacement={position} />
     </Card>
   ),
 );

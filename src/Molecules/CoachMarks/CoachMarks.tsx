@@ -1,11 +1,13 @@
 import React, { useLayoutEffect, useState } from 'react';
 import styled from 'styled-components';
+import { usePopper } from 'react-popper';
 import { RemoveScroll } from 'react-remove-scroll';
 import FocusLock from 'react-focus-lock';
-import { Bubble, Button, Icon, Flexbox, Media, Typography } from '../..';
+import { Button, Icon, Flexbox, Media, Typography } from '../..';
 import { Component, ColsTrimmerProps } from './CoachMarks.types';
-import { getElement, makeBackdropPath, getBubblePositionStyles } from './utils';
-import { useClientRectWithCbRef, useWindowSize } from '../../common/Hooks';
+import { makeBackdropPath } from './utils';
+import Bubble from './Bubble';
+import BubbleArrow from './BubbleArrow';
 
 const CLOSE_ICON_SIZE = 4;
 
@@ -60,26 +62,33 @@ export const CoachMarks: Component = ({
   doneText = 'Done',
 }) => {
   const [currentStep, setCurrentStep] = useState(0);
-  const [targetRect, setTargetRect] = useState<ClientRect | null>(null);
-  const windowSize = useWindowSize();
-  const [bubbleRect, bubbleRef] = useClientRectWithCbRef(currentStep);
-  const { body, content, icon, position = 'left', target, title } = steps[currentStep];
+  const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
+  const { body, content, icon, placement = 'left', title, referenceElement } = steps[currentStep];
+
+  const [popperElement, setPopperElement] = useState<HTMLElement | null>(null);
+  const [arrowElement, setArrowElement] = useState<HTMLElement | null>(null);
+  const { styles, attributes } = usePopper(referenceElement, popperElement, {
+    // @ts-ignore
+    placement: `${placement}-start`,
+    modifiers: [
+      { name: 'arrow', options: { element: arrowElement } },
+      {
+        name: 'offset',
+        options: { offset: [0, 20] },
+      },
+    ],
+  });
+
   const hasMultipleSteps = steps.length > 1;
   const hasPrevStep = currentStep > 0;
   const hasNextStep = currentStep + 1 < steps.length;
-  const path = targetRect ? makeBackdropPath(targetRect) : '';
-  const bubblePositionStyles =
-    targetRect && bubbleRect ? getBubblePositionStyles(position, targetRect, bubbleRect) : {};
+  const path = referenceElementRect ? makeBackdropPath(referenceElementRect) : '';
 
   useLayoutEffect(() => {
-    if (target) {
-      const targetEl = getElement(target);
-
-      if (targetEl) {
-        setTargetRect(targetEl.getBoundingClientRect());
-      }
+    if (referenceElement) {
+      setReferenceElementRect(referenceElement.getBoundingClientRect());
     }
-  }, [target, windowSize]);
+  }, [referenceElement]);
 
   const handleStepBackwards = () => {
     if (hasPrevStep) {
@@ -113,11 +122,12 @@ export const CoachMarks: Component = ({
     }
   };
 
-  return targetRect ? (
+  return referenceElementRect ? (
     <Media query={(t) => t.media.greaterThan(t.breakpoints.lg)}>
       <FocusLock>
         <RemoveScroll>
-          <Bubble position={position} style={bubblePositionStyles} ref={bubbleRef}>
+          <Bubble ref={setPopperElement} style={styles.popper} {...attributes.popper}>
+            <BubbleArrow ref={setArrowElement} style={styles.arrow} bubblePlacement={placement} />
             <Flexbox container item direction="column" flex="1" gutter={5}>
               {body || (
                 <Flexbox container direction="column" gutter={1}>

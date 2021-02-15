@@ -1,7 +1,8 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { Component, Props, InternalProps } from './BubbleArrow.types';
-import { BORDER_SIZE, TRIANGLE_INDENTATION, TRIANGLE_SIZE } from '../consts';
+import { TRIANGLE_INDENTATION, TRIANGLE_SIZE } from './consts';
+import { BORDER_SIZE } from '../Bubble/consts';
 
 const arrowUp = css`
   &::before {
@@ -120,10 +121,10 @@ const getArrowPositionStyles = (bubblePlacement: Props['bubblePlacement']) => {
   };
 };
 
-const BubbleArrow: Component = ({ bubblePlacement }) => {
-  const arrowPositionStyles = getArrowPositionStyles(bubblePlacement);
+export const BubbleArrow: Component = React.forwardRef<HTMLDivElement, Props>(
+  ({ bubblePlacement }, ref) => {
+    const arrowPositionStyles = getArrowPositionStyles(bubblePlacement);
 
-  return <Arrow $bubblePlacement={bubblePlacement} style={arrowPositionStyles} />;
-};
-
-export default BubbleArrow;
+    return <Arrow $bubblePlacement={bubblePlacement} style={arrowPositionStyles} ref={ref} />;
+  },
+);

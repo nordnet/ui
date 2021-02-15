@@ -1,7 +1,9 @@
-import { Placement } from '../Bubble.types';
+import { Placement } from '../CoachMarks.types';
 
 export type Props = {
   bubblePlacement: Placement;
+  ref?: React.Ref<HTMLDivElement>;
+  style?: object;
 };
 
 export type InternalProps = {
