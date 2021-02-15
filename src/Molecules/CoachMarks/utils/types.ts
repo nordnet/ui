@@ -1,1 +1,1 @@
-export type MakeBackdropPath = (rect: ClientRect) => string;
+export type MakeBackdropPath = (rect: ClientRect, padding?: number) => string;

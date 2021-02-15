@@ -8,8 +8,8 @@ import { Component, ColsTrimmerProps } from './CoachMarks.types';
 import { makeBackdropPath } from './utils';
 import Bubble from './Bubble';
 import BubbleArrow from './BubbleArrow';
-
-const CLOSE_ICON_SIZE = 4;
+import { OFFSET_AWAY_FROM_REFERENCE } from './Bubble/consts';
+import { BACKDROP_PADDING, CLOSE_ICON_SIZE } from './consts';
 
 const SVG = styled.svg`
   overflow: hidden;
@@ -24,7 +24,7 @@ const SVG = styled.svg`
 `;
 
 const TitleWrapper = styled.div<ColsTrimmerProps>`
-  padding-right: ${(p) => (p.$hasIcon ? 0 : p.theme.spacing.unit(CLOSE_ICON_SIZE + 5))}px;
+  padding-right: ${(p) => (p.$hasIcon ? 0 : p.theme.spacing.unit(CLOSE_ICON_SIZE))}px;
 `;
 
 const FooterFlex = styled(Flexbox)`
@@ -74,7 +74,7 @@ export const CoachMarks: Component = ({
       { name: 'arrow', options: { element: arrowElement } },
       {
         name: 'offset',
-        options: { offset: [0, 20] },
+        options: { offset: [-BACKDROP_PADDING, OFFSET_AWAY_FROM_REFERENCE + BACKDROP_PADDING] },
       },
     ],
   });
@@ -82,7 +82,7 @@ export const CoachMarks: Component = ({
   const hasMultipleSteps = steps.length > 1;
   const hasPrevStep = currentStep > 0;
   const hasNextStep = currentStep + 1 < steps.length;
-  const path = referenceElementRect ? makeBackdropPath(referenceElementRect) : '';
+  const path = referenceElementRect ? makeBackdropPath(referenceElementRect, BACKDROP_PADDING) : '';
 
   useLayoutEffect(() => {
     if (referenceElement) {
