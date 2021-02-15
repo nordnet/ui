@@ -1,0 +1,340 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules / CoachMarks Default 1`] = `
+.c3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c1::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c1:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c1:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c6 {
+  padding: 20px;
+  border: 1px solid #00D200;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="NormalizedButton__Button-ey7f5x-0 c1"
+    onClick={[Function]}
+    type="button"
+  >
+    <span>
+      <span
+        className="c2"
+      >
+        Start guide
+      </span>
+    </span>
+  </button>
+  <div
+    className="c3"
+  >
+    <div
+      className="c4"
+    >
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+        >
+          New feature
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / CoachMarks Multpiple Steps 1`] = `
+.c3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c1::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c1:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c1:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c6 {
+  padding: 20px;
+  border: 1px solid #00D200;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="NormalizedButton__Button-ey7f5x-0 c1"
+    onClick={[Function]}
+    type="button"
+  >
+    <span>
+      <span
+        className="c2"
+      >
+        Start guide
+      </span>
+    </span>
+  </button>
+  <div
+    className="c3"
+  >
+    <div
+      className="c4"
+    >
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+        >
+          New feature
+        </div>
+      </div>
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+        >
+          Another new feature
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      className="c4"
+    >
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+        >
+          New feature
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      className="c4"
+    >
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+        >
+          Another new feature
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
