@@ -1,3 +1,20 @@
+# [5.14.0](https://github.com/nordnet/ui/compare/v5.13.1...v5.14.0) (2021-02-16)
+
+
+### Bug Fixes
+
+* add padding to highlight ([97786be](https://github.com/nordnet/ui/commit/97786be))
+* add padding to highlight ([ec35ba4](https://github.com/nordnet/ui/commit/ec35ba4))
+* add text prop for multi step separator text ([100e034](https://github.com/nordnet/ui/commit/100e034))
+* messages and exports ([1f75a00](https://github.com/nordnet/ui/commit/1f75a00))
+* types ([7a535a4](https://github.com/nordnet/ui/commit/7a535a4))
+* use popper for positioning ([53f8ecb](https://github.com/nordnet/ui/commit/53f8ecb))
+
+
+### Features
+
+* add coach marks ([5acf0e1](https://github.com/nordnet/ui/commit/5acf0e1))
+
 ## [5.13.1](https://github.com/nordnet/ui/compare/v5.13.0...v5.13.1) (2021-02-10)
 
 
