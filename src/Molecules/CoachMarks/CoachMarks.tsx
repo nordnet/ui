@@ -6,6 +6,7 @@ import FocusLock from 'react-focus-lock';
 import { Button, Icon, Flexbox, Media, Typography } from '../..';
 import { Component, ColsTrimmerProps } from './CoachMarks.types';
 import { makeBackdropPath } from './utils';
+import { useWindowSize } from '../../common/Hooks';
 import Bubble from './Bubble';
 import BubbleArrow from './BubbleArrow';
 import { OFFSET_AWAY_FROM_REFERENCE } from './Bubble/consts';
@@ -80,6 +81,7 @@ export const CoachMarks: Component = ({
     ],
   });
 
+  const windowSize = useWindowSize();
   const hasMultipleSteps = steps.length > 1;
   const hasPrevStep = currentStep > 0;
   const hasNextStep = currentStep + 1 < steps.length;
@@ -89,7 +91,7 @@ export const CoachMarks: Component = ({
     if (referenceElement) {
       setReferenceElementRect(referenceElement.getBoundingClientRect());
     }
-  }, [referenceElement]);
+  }, [referenceElement, windowSize]);
 
   const handleStepBackwards = () => {
     if (hasPrevStep) {
