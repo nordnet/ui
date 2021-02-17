@@ -6,7 +6,7 @@ type SizeObj = {
   height: number | undefined;
 };
 
-type UseWindowResize = (throttleDelay?: number) => SizeObj;
+type UseWindowSize = (throttleDelay?: number) => SizeObj;
 
 const isClient = !!(
   typeof window !== 'undefined' &&
@@ -14,7 +14,7 @@ const isClient = !!(
   window.document.createElement
 );
 
-const useWindowSize: UseWindowResize = (throttleDelay = 1000) => {
+const useWindowSize: UseWindowSize = (throttleDelay = 1000) => {
   const [windowSize, setWindowSize] = useState<SizeObj>({
     width: undefined,
     height: undefined,
