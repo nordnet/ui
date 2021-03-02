@@ -98,6 +98,7 @@ const components = {
   CloseButton,
   Container,
   Content,
+  Footer,
   TitleWrapper,
 };
 
