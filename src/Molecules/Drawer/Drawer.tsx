@@ -48,6 +48,12 @@ const Content = styled.div`
   padding: 0 ${(p) => p.theme.spacing.unit(PADDING)}px;
 `;
 
+const Footer = styled.div`
+  margin-top: auto;
+  padding: 0 ${(p) => p.theme.spacing.unit(PADDING)}px ${(p) => p.theme.spacing.unit(PADDING)}px
+    ${(p) => p.theme.spacing.unit(PADDING)}px;
+`;
+
 const H2 = styled.h2`
   padding-right: ${(p) => p.theme.spacing.unit(4)}px;
 `;
@@ -117,6 +123,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
       children,
       closeOnClickOutside = true,
       disableContentStyle,
+      footer,
       onClose,
       open: isOpenExternal,
       title,
@@ -196,6 +203,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
                     </CloseButton>
                   </TitleWrapper>
                   {disableContentStyle ? children : <Content>{children}</Content>}
+                  {footer && <Footer>{footer}</Footer>}
                 </Container>
               </RemoveScroll>
             </FocusLock>

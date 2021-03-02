@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
-import { Drawer, Typography, Icon, Flexbox, FadedScroll } from '../../index';
+import { Button, Drawer, Typography, Icon, Flexbox, FadedScroll } from '../../index';
 
 export default {
   title: 'Molecules / Drawer',
@@ -187,6 +187,45 @@ export const integrationWithFadedScroll = () => {
 
 integrationWithFadedScroll.story = {
   name: 'Integration: With FadedScroll',
+};
+
+export const withFooterAndintegrationWithFadedScroll = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const toggle = () => {
+      setOpen(!open);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <div>
+        <button type="button" onClick={toggle}>
+          Toggle drawer
+        </button>
+        <Drawer
+          onClose={onClose}
+          title="Drawer title"
+          open={open}
+          footer={
+            <Button variant="secondary" fullWidth>
+              Agree
+            </Button>
+          }
+        >
+          <FadedScroll enableMobileFade>{contentLarge}</FadedScroll>
+        </Drawer>
+      </div>
+    );
+  };
+  return <Example />;
+};
+
+withFooterAndintegrationWithFadedScroll.story = {
+  name: 'Integration: FadedScroll with sticky footer',
 };
 
 export const WithoutCloseOnClickOutside = () => {
