@@ -1,3 +1,5 @@
+type HtmlDivProps = React.HTMLAttributes<HTMLDivElement>;
+
 export type Props = {
   className?: string;
   /** @default true */
@@ -13,7 +15,7 @@ export type Props = {
   onExitAnimationComplete?: () => void;
   onAnimationComplete?: () => void;
   disableInitialAnimation?: boolean;
-};
+} & Omit<HtmlDivProps, 'title'>;
 
 export type TitleProps = {
   title: React.ReactNode;

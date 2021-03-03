@@ -131,6 +131,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
       onExitAnimationComplete,
       onAnimationComplete,
       disableInitialAnimation,
+      ...rest
     },
     ref,
   ) => {
@@ -196,6 +197,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
                   drag="x"
                   onDragEnd={handleDragEnd}
                   onAnimationComplete={onAnimationComplete}
+                  {...rest}
                 >
                   <TitleWrapper onTouchStart={startDrag}>
                     {title && <Title title={title} uid={uid} />}
