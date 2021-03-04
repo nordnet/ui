@@ -52,3 +52,7 @@ export const withHiddenLabel = () => (
 withHiddenLabel.story = {
   name: 'With hidden label',
 };
+
+export const readOnly = () => (
+  <Switch label="Necessary cookies" onClick={action('clicked')} readOnly checkedInitially />
+);
