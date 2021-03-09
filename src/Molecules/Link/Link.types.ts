@@ -6,6 +6,7 @@ export type LinkProps = {
   className?: string;
   display?: 'inline' | 'block' | 'inline-block' | 'flex' | 'inline-flex';
   color?: 'blue' | 'black' | 'inherit';
+  underlined?: boolean;
   /** @default _self */
   target?: '_blank' | '_self';
   to?: any; // TODO define this, used to be LinkProps.to from 'react-router-dom' types.

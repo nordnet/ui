@@ -47,12 +47,14 @@ const CleanLink: FC<RawLinkProps> = (props) => {
   return <RawLink {...props} />;
 };
 
-const StyledLink = styled(CleanLink)<LinkProps>`
+const StyledLink = styled(CleanLink)<LinkProps & { $underlined: LinkProps['underlined'] }>`
   ${(p) => getSharedStyle(p)}
-  text-decoration: none;
+  text-decoration: ${(p) => (p.$underlined ? `underline` : `none`)};
 `;
 
-const StyledButton = styled(NormalizedElements.Button)<LinkProps>`
+const StyledButton = styled(NormalizedElements.Button)<
+  LinkProps & { $underlined: LinkProps['underlined'] }
+>`
   ${(p) => getSharedStyle(p)}
   /* resetting button styles */
   border: none;
@@ -61,6 +63,8 @@ const StyledButton = styled(NormalizedElements.Button)<LinkProps>`
 
   -webkit-appearance: none !important; /* stylelint-disable-line property-no-vendor-prefix */
   /* resetting button styles end */
+
+  ${(p) => (p.$underlined ? `text-decoration: underline;` : ``)};
 
   cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
 
@@ -80,6 +84,7 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
     fullServerRedirect,
     as, // FIXME Might have broken as functionallity, needs verification.
     color,
+    underlined,
     onMouseEnter,
     onMouseLeave,
     onMouseOver,
@@ -96,12 +101,15 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
   if (isUndefined(to) || disabled) {
     return (
       <StyledButton
+        type="button"
         ref={ref}
         className={className}
         onClick={trackClick}
         disabled={disabled}
         as={as}
-        type="button"
+        $color={color}
+        $display={display}
+        $underlined={underlined}
         {...rest}
       >
         {children}
@@ -127,6 +135,7 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
       as={as}
       $color={color}
       $display={display}
+      $underlined={underlined}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       onMouseOver={onMouseOver}
