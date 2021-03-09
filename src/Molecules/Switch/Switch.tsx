@@ -59,13 +59,21 @@ const Button = styled(NormalizedElements.Button)`
     }
   }
 
-  &[disabled] {
+  &[disabled],
+  &[aria-readonly] {
     ${Track} {
       background-color: ${(p) => p.theme.color.disabledBackground};
     }
 
     ${Knob} {
       border: 1px solid ${(p) => p.theme.color.disabledBackground};
+      background-color: ${(p) => p.theme.color.switchReadOnlyKnobBg};
+    }
+  }
+
+  &[aria-checked='true'][aria-readonly] {
+    ${Track} {
+      background-color: ${(p) => p.theme.color.switchReadOnlyTrackBg};
     }
   }
 `;

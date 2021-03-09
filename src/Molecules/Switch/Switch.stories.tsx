@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 
 import { Switch, Typography } from '../..';
+import { Display } from '../../common/Display';
 
 export default {
   title: 'Molecules / Switch',
@@ -54,5 +55,18 @@ withHiddenLabel.story = {
 };
 
 export const readOnly = () => (
-  <Switch label="Necessary cookies" onClick={action('clicked')} readOnly checkedInitially />
+  <Display
+    items={[
+      {
+        component: <Switch label="Necessary cookies" onClick={action('clicked')} readOnly />,
+        title: 'Off',
+      },
+      {
+        component: (
+          <Switch label="Necessary cookies" onClick={action('clicked')} readOnly checkedInitially />
+        ),
+        title: 'On',
+      },
+    ]}
+  />
 );

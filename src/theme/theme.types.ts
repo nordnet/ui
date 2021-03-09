@@ -185,6 +185,10 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   svgStroke: RawColor['gray2'];
   /** white */
   svgStokeLight: RawColor['white'];
+  /** 10 percent of cta */
+  switchReadOnlyTrackBg: string;
+  /** gray7 */
+  switchReadOnlyKnobBg: RawColor['gray7'];
   /** gray4 */
   inputBorder: RawColor['gray4'];
   /** gray1 */

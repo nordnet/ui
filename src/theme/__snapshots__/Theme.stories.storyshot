@@ -1000,7 +1000,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   padding-right: 0;
 }
 
-.c44 {
+.c45 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1010,12 +1010,12 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   margin-right: -2px;
 }
 
-.c44 > * {
+.c45 > * {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.c44 > *:not(:first-child) {
+.c45 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -1267,50 +1267,49 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
 .c41 {
   width: 56px;
   height: 56px;
-  background-color: rgba(56,94,157,0.1);
+  background-color: rgba(0,70,255,0.1);
   border: 1px solid #eee;
 }
 
 .c42 {
   width: 56px;
   height: 56px;
-  background-color: rgba(172,19,90,0.1);
+  background-color: rgba(56,94,157,0.1);
   border: 1px solid #eee;
 }
 
 .c43 {
   width: 56px;
   height: 56px;
-  background-color: rgba(255,207,0,0.1);
+  background-color: rgba(172,19,90,0.1);
   border: 1px solid #eee;
 }
 
-.c66 {
+.c44 {
   width: 56px;
   height: 56px;
-  background-color: #023C00;
+  background-color: rgba(255,207,0,0.1);
   border: 1px solid #eee;
 }
 
 .c67 {
   width: 56px;
   height: 56px;
-  background-color: #009195;
+  background-color: #023C00;
   border: 1px solid #eee;
 }
 
 .c68 {
   width: 56px;
   height: 56px;
-  background-color: #01424C;
+  background-color: #009195;
   border: 1px solid #eee;
 }
 
-.c45 {
-  width: 16px;
-  height: 16px;
-  padding: 0;
-  background-color: #FF2B83;
+.c69 {
+  width: 56px;
+  height: 56px;
+  background-color: #01424C;
   border: 1px solid #eee;
 }
 
@@ -1318,7 +1317,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #00C8F5;
+  background-color: #FF2B83;
   border: 1px solid #eee;
 }
 
@@ -1326,7 +1325,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #131F4F;
+  background-color: #00C8F5;
   border: 1px solid #eee;
 }
 
@@ -1334,7 +1333,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #000000;
+  background-color: #131F4F;
   border: 1px solid #eee;
 }
 
@@ -1342,7 +1341,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #009195;
+  background-color: #000000;
   border: 1px solid #eee;
 }
 
@@ -1350,7 +1349,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #385E9D;
+  background-color: #009195;
   border: 1px solid #eee;
 }
 
@@ -1358,7 +1357,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #4B4B46;
+  background-color: #385E9D;
   border: 1px solid #eee;
 }
 
@@ -1366,7 +1365,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #A0A09B;
+  background-color: #4B4B46;
   border: 1px solid #eee;
 }
 
@@ -1374,7 +1373,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #AC135A;
+  background-color: #A0A09B;
   border: 1px solid #eee;
 }
 
@@ -1382,7 +1381,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #78013A;
+  background-color: #AC135A;
   border: 1px solid #eee;
 }
 
@@ -1390,7 +1389,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #00F0E1;
+  background-color: #78013A;
   border: 1px solid #eee;
 }
 
@@ -1398,7 +1397,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #EBEBE8;
+  background-color: #00F0E1;
   border: 1px solid #eee;
 }
 
@@ -1406,7 +1405,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #BCBCB6;
+  background-color: #EBEBE8;
   border: 1px solid #eee;
 }
 
@@ -1414,7 +1413,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #282823;
+  background-color: #BCBCB6;
   border: 1px solid #eee;
 }
 
@@ -1422,7 +1421,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #D2F500;
+  background-color: #282823;
   border: 1px solid #eee;
 }
 
@@ -1430,7 +1429,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #3A913F;
+  background-color: #D2F500;
   border: 1px solid #eee;
 }
 
@@ -1438,7 +1437,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #023C00;
+  background-color: #3A913F;
   border: 1px solid #eee;
 }
 
@@ -1446,7 +1445,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #01424C;
+  background-color: #023C00;
   border: 1px solid #eee;
 }
 
@@ -1454,7 +1453,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #0046FF;
+  background-color: #01424C;
   border: 1px solid #eee;
 }
 
@@ -1462,11 +1461,19 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
   width: 16px;
   height: 16px;
   padding: 0;
-  background-color: #FFCF00;
+  background-color: #0046FF;
   border: 1px solid #eee;
 }
 
 .c65 {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #FFCF00;
+  border: 1px solid #eee;
+}
+
+.c66 {
   width: 16px;
   height: 16px;
   padding: 0;
@@ -4014,6 +4021,64 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
+        switchReadOnlyTrackBg
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c41"
+        />
+        <div>
+          rgba(0, 70, 255, 0.1)
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c41"
+        />
+        <div>
+          rgba(0, 70, 255, 0.1)
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        switchReadOnlyKnobBg
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c7"
+        />
+        <div>
+          #F5F5F5
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c7"
+        />
+        <div>
+          #F5F5F5
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
         dateAvatarBackground1
       </td>
       <td
@@ -4455,7 +4520,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c41"
+          className="c42"
         />
         <div>
           rgba(56, 94, 157, 0.1)
@@ -4465,7 +4530,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c41"
+          className="c42"
         />
         <div>
           rgba(56, 94, 157, 0.1)
@@ -4484,7 +4549,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c42"
+          className="c43"
         />
         <div>
           rgba(172, 19, 90, 0.1)
@@ -4494,7 +4559,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c42"
+          className="c43"
         />
         <div>
           rgba(172, 19, 90, 0.1)
@@ -4513,7 +4578,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c43"
+          className="c44"
         />
         <div>
           rgba(255, 207, 0, 0.1)
@@ -4523,7 +4588,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c43"
+          className="c44"
         />
         <div>
           rgba(255, 207, 0, 0.1)
@@ -4890,50 +4955,50 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c45"
+            className="c46"
           />
           <div>
             #FF2B83
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c46"
+            className="c47"
           />
           <div>
             #00C8F5
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c47"
+            className="c48"
           />
           <div>
             #131F4F
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c48"
+            className="c49"
           />
           <div>
             #000000
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c49"
+            className="c50"
           />
           <div>
             #009195
@@ -4944,50 +5009,50 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c45"
+            className="c46"
           />
           <div>
             #FF2B83
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c46"
+            className="c47"
           />
           <div>
             #00C8F5
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c47"
+            className="c48"
           />
           <div>
             #131F4F
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c48"
+            className="c49"
           />
           <div>
             #000000
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c49"
+            className="c50"
           />
           <div>
             #009195
@@ -5094,50 +5159,50 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c47"
+            className="c48"
           />
           <div>
             #131F4F
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c50"
+            className="c51"
           />
           <div>
             #385E9D
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c46"
+            className="c47"
           />
           <div>
             #00C8F5
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c51"
+            className="c52"
           />
           <div>
             #4B4B46
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c52"
+            className="c53"
           />
           <div>
             #A0A09B
@@ -5148,50 +5213,50 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c47"
+            className="c48"
           />
           <div>
             #131F4F
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c50"
+            className="c51"
           />
           <div>
             #385E9D
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c46"
+            className="c47"
           />
           <div>
             #00C8F5
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c51"
+            className="c52"
           />
           <div>
             #4B4B46
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c52"
+            className="c53"
           />
           <div>
             #A0A09B
@@ -5211,100 +5276,100 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c45"
+            className="c46"
           />
           <div>
             #FF2B83
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c53"
+            className="c54"
           />
           <div>
             #AC135A
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c54"
+            className="c55"
           />
           <div>
             #78013A
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c55"
+            className="c56"
           />
           <div>
             #00F0E1
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c49"
+            className="c50"
           />
           <div>
             #009195
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c56"
+            className="c57"
           />
           <div>
             #EBEBE8
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c57"
+            className="c58"
           />
           <div>
             #BCBCB6
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c52"
+            className="c53"
           />
           <div>
             #A0A09B
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c51"
+            className="c52"
           />
           <div>
             #4B4B46
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c58"
+            className="c59"
           />
           <div>
             #282823
@@ -5315,100 +5380,100 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c46"
+            className="c47"
           />
           <div>
             #00C8F5
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c50"
+            className="c51"
           />
           <div>
             #385E9D
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c47"
+            className="c48"
           />
           <div>
             #131F4F
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c45"
+            className="c46"
           />
           <div>
             #FF2B83
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c54"
+            className="c55"
           />
           <div>
             #78013A
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c56"
+            className="c57"
           />
           <div>
             #EBEBE8
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c57"
+            className="c58"
           />
           <div>
             #BCBCB6
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c52"
+            className="c53"
           />
           <div>
             #A0A09B
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c51"
+            className="c52"
           />
           <div>
             #4B4B46
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c58"
+            className="c59"
           />
           <div>
             #282823
@@ -5428,100 +5493,100 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c59"
+            className="c60"
           />
           <div>
             #D2F500
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c60"
+            className="c61"
           />
           <div>
             #3A913F
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c61"
+            className="c62"
           />
           <div>
             #023C00
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c55"
+            className="c56"
           />
           <div>
             #00F0E1
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c49"
+            className="c50"
           />
           <div>
             #009195
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c56"
+            className="c57"
           />
           <div>
             #EBEBE8
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c57"
+            className="c58"
           />
           <div>
             #BCBCB6
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c52"
+            className="c53"
           />
           <div>
             #A0A09B
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c51"
+            className="c52"
           />
           <div>
             #4B4B46
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c58"
+            className="c59"
           />
           <div>
             #282823
@@ -5532,100 +5597,100 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c46"
+            className="c47"
           />
           <div>
             #00C8F5
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c50"
+            className="c51"
           />
           <div>
             #385E9D
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c47"
+            className="c48"
           />
           <div>
             #131F4F
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c45"
+            className="c46"
           />
           <div>
             #FF2B83
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c54"
+            className="c55"
           />
           <div>
             #78013A
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c56"
+            className="c57"
           />
           <div>
             #EBEBE8
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c57"
+            className="c58"
           />
           <div>
             #BCBCB6
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c52"
+            className="c53"
           />
           <div>
             #A0A09B
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c51"
+            className="c52"
           />
           <div>
             #4B4B46
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c58"
+            className="c59"
           />
           <div>
             #282823
@@ -5645,100 +5710,100 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c46"
+            className="c47"
           />
           <div>
             #00C8F5
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c50"
+            className="c51"
           />
           <div>
             #385E9D
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c47"
+            className="c48"
           />
           <div>
             #131F4F
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c55"
+            className="c56"
           />
           <div>
             #00F0E1
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c49"
+            className="c50"
           />
           <div>
             #009195
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c56"
+            className="c57"
           />
           <div>
             #EBEBE8
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c57"
+            className="c58"
           />
           <div>
             #BCBCB6
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c52"
+            className="c53"
           />
           <div>
             #A0A09B
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c51"
+            className="c52"
           />
           <div>
             #4B4B46
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c58"
+            className="c59"
           />
           <div>
             #282823
@@ -5749,100 +5814,100 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c46"
+            className="c47"
           />
           <div>
             #00C8F5
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c50"
+            className="c51"
           />
           <div>
             #385E9D
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c47"
+            className="c48"
           />
           <div>
             #131F4F
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c45"
+            className="c46"
           />
           <div>
             #FF2B83
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c54"
+            className="c55"
           />
           <div>
             #78013A
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c56"
+            className="c57"
           />
           <div>
             #EBEBE8
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c57"
+            className="c58"
           />
           <div>
             #BCBCB6
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c52"
+            className="c53"
           />
           <div>
             #A0A09B
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c51"
+            className="c52"
           />
           <div>
             #4B4B46
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c58"
+            className="c59"
           />
           <div>
             #282823
@@ -5862,100 +5927,100 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c55"
+            className="c56"
           />
           <div>
             #00F0E1
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c49"
+            className="c50"
           />
           <div>
             #009195
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c62"
+            className="c63"
           />
           <div>
             #01424C
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c46"
+            className="c47"
           />
           <div>
             #00C8F5
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c50"
+            className="c51"
           />
           <div>
             #385E9D
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c56"
+            className="c57"
           />
           <div>
             #EBEBE8
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c57"
+            className="c58"
           />
           <div>
             #BCBCB6
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c52"
+            className="c53"
           />
           <div>
             #A0A09B
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c51"
+            className="c52"
           />
           <div>
             #4B4B46
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c58"
+            className="c59"
           />
           <div>
             #282823
@@ -5966,100 +6031,100 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c46"
+            className="c47"
           />
           <div>
             #00C8F5
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c50"
+            className="c51"
           />
           <div>
             #385E9D
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c47"
+            className="c48"
           />
           <div>
             #131F4F
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c45"
+            className="c46"
           />
           <div>
             #FF2B83
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c54"
+            className="c55"
           />
           <div>
             #78013A
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c56"
+            className="c57"
           />
           <div>
             #EBEBE8
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c57"
+            className="c58"
           />
           <div>
             #BCBCB6
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c52"
+            className="c53"
           />
           <div>
             #A0A09B
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c51"
+            className="c52"
           />
           <div>
             #4B4B46
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c58"
+            className="c59"
           />
           <div>
             #282823
@@ -6079,120 +6144,120 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c63"
+            className="c64"
           />
           <div>
             #0046FF
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c64"
+            className="c65"
           />
           <div>
             #FFCF00
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c53"
+            className="c54"
           />
           <div>
             #AC135A
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c50"
+            className="c51"
           />
           <div>
             #385E9D
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c49"
+            className="c50"
           />
           <div>
             #009195
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c60"
+            className="c61"
           />
           <div>
             #3A913F
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c45"
+            className="c46"
           />
           <div>
             #FF2B83
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c61"
+            className="c62"
           />
           <div>
             #023C00
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c47"
+            className="c48"
           />
           <div>
             #131F4F
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c54"
+            className="c55"
           />
           <div>
             #78013A
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c62"
+            className="c63"
           />
           <div>
             #01424C
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c51"
+            className="c52"
           />
           <div>
             #4B4B46
@@ -6203,120 +6268,120 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c63"
+            className="c64"
           />
           <div>
             #0046FF
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c65"
+            className="c66"
           />
           <div>
             #DFC700
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c53"
+            className="c54"
           />
           <div>
             #AC135A
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c50"
+            className="c51"
           />
           <div>
             #385E9D
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c49"
+            className="c50"
           />
           <div>
             #009195
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c60"
+            className="c61"
           />
           <div>
             #3A913F
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c45"
+            className="c46"
           />
           <div>
             #FF2B83
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c61"
+            className="c62"
           />
           <div>
             #023C00
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c47"
+            className="c48"
           />
           <div>
             #131F4F
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c54"
+            className="c55"
           />
           <div>
             #78013A
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c62"
+            className="c63"
           />
           <div>
             #01424C
           </div>
         </div>
         <div
-          className="c44"
+          className="c45"
         >
           <div
-            className="c51"
+            className="c52"
           />
           <div>
             #4B4B46
@@ -6800,7 +6865,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c66"
+          className="c67"
         />
         <div>
           #023C00
@@ -6810,7 +6875,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c66"
+          className="c67"
         />
         <div>
           #023C00
@@ -6858,7 +6923,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c67"
+          className="c68"
         />
         <div>
           #009195
@@ -6868,7 +6933,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c67"
+          className="c68"
         />
         <div>
           #009195
@@ -6887,7 +6952,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c68"
+          className="c69"
         />
         <div>
           #01424C
@@ -6897,7 +6962,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c68"
+          className="c69"
         />
         <div>
           #01424C
@@ -7032,7 +7097,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c67"
+          className="c68"
         />
         <div>
           #009195
@@ -7042,7 +7107,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c67"
+          className="c68"
         />
         <div>
           #009195
@@ -7206,7 +7271,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c66"
+          className="c67"
         />
         <div>
           #023C00
@@ -7216,7 +7281,7 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c66"
+          className="c67"
         />
         <div>
           #023C00
