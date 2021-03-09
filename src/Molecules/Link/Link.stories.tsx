@@ -1,8 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
 import { action } from '@storybook/addon-actions';
 import { Route } from 'react-router';
 import { Link, Typography } from '../..';
 import { Provider } from '../../common/Links/ReactRouterLinkHelper';
+import { Display } from '../../common/Display';
 
 export default {
   title: 'Molecules / Link',
@@ -10,6 +12,10 @@ export default {
     component: Link,
   },
 };
+
+const ExampleBlackBackground = styled.div`
+  background: ${(p) => p.theme.color.backgroundDark};
+`;
 
 const View = ({ location }: any) => {
   return (
@@ -133,30 +139,113 @@ withoutToPropResultsInAButtonLookingLikeALink.story = {
   name: 'Without to prop results in a button looking like a link',
 };
 
-export const withBlackColor = () => (
+export const withColor = () => (
   <Provider>
-    <Typography type="primary">
-      <Link color="black" to="https://example.com" external onClick={action('clicked')}>
-        Link
-      </Link>
-    </Typography>
+    <Display
+      items={[
+        {
+          title: 'Black',
+          component: (
+            <Typography type="primary">
+              <Link color="black" to="https://example.com" external onClick={action('clicked')}>
+                Link
+              </Link>
+            </Typography>
+          ),
+        },
+        {
+          title: 'Blue',
+          component: (
+            <Typography type="primary">
+              <Link color="blue" to="https://example.com" external onClick={action('clicked')}>
+                Link
+              </Link>
+            </Typography>
+          ),
+        },
+        {
+          title: 'Inherit',
+          component: (
+            <ExampleBlackBackground>
+              <Typography type="primary" color={(t) => t.color.textLight}>
+                <Link color="inherit" to="https://example.com" external onClick={action('clicked')}>
+                  Link
+                </Link>
+              </Typography>
+            </ExampleBlackBackground>
+          ),
+        },
+      ]}
+    />
   </Provider>
 );
 
-withBlackColor.story = {
-  name: 'With black color',
+withColor.story = {
+  name: 'With color prop',
 };
 
-export const withInheritedColor = () => (
+export const withDisplay = () => (
   <Provider>
-    <Typography type="primary" color={(t) => t.color.generationSavingsTimelineColor2}>
-      <Link color="inherit" to="https://example.com" external onClick={action('clicked')}>
-        Link
-      </Link>
-    </Typography>
+    <Display
+      items={[
+        {
+          title: 'Link',
+          component: (
+            <Typography type="primary">
+              <Link display="block" to="https://example.com" external onClick={action('clicked')}>
+                Link
+              </Link>
+            </Typography>
+          ),
+        },
+        {
+          title: 'Button',
+          component: (
+            <Typography type="primary">
+              <Link display="block" onClick={action('clicked')}>
+                Link
+              </Link>
+            </Typography>
+          ),
+        },
+      ]}
+    />
   </Provider>
 );
 
-withInheritedColor.story = {
-  name: 'With inherited color',
+withDisplay.story = {
+  name: 'With display prop',
+};
+
+export const withUnderline = () => (
+  <Provider>
+    <Display
+      items={[
+        {
+          title: 'Link',
+          component: (
+            <Typography type="primary">
+              <Link to="https://example.com" external underlined onClick={action('clicked')}>
+                Link
+              </Link>
+            </Typography>
+          ),
+        },
+        {
+          title: 'Button',
+          component: (
+            <Typography type="primary">
+              <Link onClick={action('clicked')} underlined>
+                Link
+              </Link>
+            </Typography>
+          ),
+        },
+      ]}
+    />
+  </Provider>
+);
+
+withUnderline.story = {
+  name: 'With underline',
 };
