@@ -1472,12 +1472,12 @@ Array [
   display: block;
 }
 
-.c1 {
-  fill: #0046FF;
-}
-
 .c2 {
   fill: #FFF;
+}
+
+.c1 {
+  fill: #0046FF;
 }
 
 <div
@@ -1500,13 +1500,13 @@ Array [
         fill="none"
         fillRule="evenodd"
       >
-        <path
+        <polygon
           className="c1"
-          d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z"
+          points="16.8 0 24 7.2 24 16.8 16.8 24 7.2 24 0 16.8 0 7.2 7.2 0"
         />
         <path
           className="c2"
-          d="M7.826 8.897l.922-.922 3.177 3.178 3.178-3.178.922.922-3.178 3.178 3.178 3.177-.922.922-3.178-3.177-3.177 3.177-.922-.922 3.177-3.177-3.177-3.178z"
+          d="M13,17 L13,19 L11,19 L11,17 L13,17 Z M13,5 L13,15 L11,15 L11,5 L13,5 Z"
         />
       </g>
     </svg>
@@ -5225,12 +5225,12 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
   transform: rotate(0deg);
 }
 
-.c9 {
-  fill: #28282A;
-}
-
 .c10 {
   fill: #FFF;
+}
+
+.c9 {
+  fill: #28282A;
 }
 
 .c11 {
@@ -6756,13 +6756,13 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             fill="none"
             fillRule="evenodd"
           >
-            <path
+            <polygon
               className="c9"
-              d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z"
+              points="16.8 0 24 7.2 24 16.8 16.8 24 7.2 24 0 16.8 0 7.2 7.2 0"
             />
             <path
               className="c10"
-              d="M7.826 8.897l.922-.922 3.177 3.178 3.178-3.178.922.922-3.178 3.178 3.178 3.177-.922.922-3.178-3.177-3.177 3.177-.922-.922 3.177-3.177-3.177-3.178z"
+              d="M13,17 L13,19 L11,19 L11,17 L13,17 Z M13,5 L13,15 L11,15 L11,5 L13,5 Z"
             />
           </g>
         </svg>
@@ -10805,12 +10805,12 @@ exports[`Storyshots Atoms / Icon With modified stroke 1`] = `
   fill: #FF1900;
 }
 
-.c8 {
-  fill: #00D200;
-}
-
 .c9 {
   fill: #FF1900;
+}
+
+.c8 {
+  fill: #00D200;
 }
 
 .c5 {
@@ -10998,13 +10998,13 @@ exports[`Storyshots Atoms / Icon With modified stroke 1`] = `
           fill="none"
           fillRule="evenodd"
         >
-          <path
+          <polygon
             className="c8"
-            d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z"
+            points="16.8 0 24 7.2 24 16.8 16.8 24 7.2 24 0 16.8 0 7.2 7.2 0"
           />
           <path
             className="c9"
-            d="M7.826 8.897l.922-.922 3.177 3.178 3.178-3.178.922.922-3.178 3.178 3.178 3.177-.922.922-3.178-3.177-3.177 3.177-.922-.922 3.177-3.177-3.177-3.178z"
+            d="M13,17 L13,19 L11,19 L11,17 L13,17 Z M13,5 L13,15 L11,15 L11,5 L13,5 Z"
           />
         </g>
       </svg>

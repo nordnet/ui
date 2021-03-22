@@ -10,17 +10,24 @@ const StyledPath = styled.path<StyledChildProps>`
   }}
 `;
 
+const StyledPolygon = styled.polygon<StyledChildProps>`
+  ${(p) => {
+    const strokeColor = getColor(p.theme, p.theme.color.svgStokeLight, p.strokeColorFn);
+    return `fill: ${strokeColor};`;
+  }}
+`;
+
 export const CrossCircle = ({ fill, stroke, ...props }: ChildProps) => {
   return (
     <IconBase {...props} viewBox="0 0 24 24">
       <g fill="none" fillRule="evenodd">
-        <StyledPath
-          d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z"
+        <StyledPolygon
           strokeColorFn={fill || (() => '#28282A')}
+          points="16.8 0 24 7.2 24 16.8 16.8 24 7.2 24 0 16.8 0 7.2 7.2 0"
         />
         <StyledPath
-          d="M7.826 8.897l.922-.922 3.177 3.178 3.178-3.178.922.922-3.178 3.178 3.178 3.177-.922.922-3.178-3.177-3.177 3.177-.922-.922 3.177-3.177-3.177-3.178z"
           strokeColorFn={stroke || (() => '#FFF')}
+          d="M13,17 L13,19 L11,19 L11,17 L13,17 Z M13,5 L13,15 L11,15 L11,5 L13,5 Z"
         />
       </g>
     </IconBase>

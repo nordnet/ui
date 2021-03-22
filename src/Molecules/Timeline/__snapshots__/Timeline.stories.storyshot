@@ -103,12 +103,12 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
   fill: #FFF;
 }
 
-.c20 {
-  fill: #FF1900;
-}
-
 .c21 {
   fill: #FFF;
+}
+
+.c20 {
+  fill: #FF1900;
 }
 
 .c17 {
@@ -442,13 +442,13 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
               fill="none"
               fillRule="evenodd"
             >
-              <path
+              <polygon
                 className="c20"
-                d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z"
+                points="16.8 0 24 7.2 24 16.8 16.8 24 7.2 24 0 16.8 0 7.2 7.2 0"
               />
               <path
                 className="c21"
-                d="M7.826 8.897l.922-.922 3.177 3.178 3.178-3.178.922.922-3.178 3.178 3.178 3.177-.922.922-3.178-3.177-3.177 3.177-.922-.922 3.177-3.177-3.177-3.178z"
+                d="M13,17 L13,19 L11,19 L11,17 L13,17 Z M13,5 L13,15 L11,15 L11,5 L13,5 Z"
               />
             </g>
           </svg>
@@ -640,12 +640,12 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
   fill: #FFF;
 }
 
-.c18 {
-  fill: #FF1900;
-}
-
 .c19 {
   fill: #FFF;
+}
+
+.c18 {
+  fill: #FF1900;
 }
 
 .c9 {
@@ -921,13 +921,13 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
               fill="none"
               fillRule="evenodd"
             >
-              <path
+              <polygon
                 className="c18"
-                d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z"
+                points="16.8 0 24 7.2 24 16.8 16.8 24 7.2 24 0 16.8 0 7.2 7.2 0"
               />
               <path
                 className="c19"
-                d="M7.826 8.897l.922-.922 3.177 3.178 3.178-3.178.922.922-3.178 3.178 3.178 3.177-.922.922-3.178-3.177-3.177 3.177-.922-.922 3.177-3.177-3.177-3.178z"
+                d="M13,17 L13,19 L11,19 L11,17 L13,17 Z M13,5 L13,15 L11,15 L11,5 L13,5 Z"
               />
             </g>
           </svg>
