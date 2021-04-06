@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Portal } from '../..';
 import { TooltipArrow } from './TooltipArrow';
 import { TooltipContent } from './TooltipContent';
-import { Props } from './TooltipPopup.types';
+import { Props } from './PopOver.types';
 import { mergeRefs } from '../utils';
 
 type StyledSpanProps = {
@@ -34,7 +34,7 @@ const StyledSpan = styled.span<StyledSpanProps>`
   }
 `;
 
-// styled to allow consumers to use it as styling-identifier directly from TooltipPopup.components.TooltipContent
+// styled to allow consumers to use it as styling-identifier directly from PopOver.components.TooltipContent
 const StyledTooltipContent = styled(TooltipContent)``;
 
 const displayName = 'Tooltip Popup';
@@ -43,7 +43,7 @@ const components = {
   TooltipContent: StyledTooltipContent,
 };
 
-const TooltipPopup = (forwardRef<HTMLSpanElement, Props>(
+const PopOver = (forwardRef<HTMLSpanElement, Props>(
   (
     {
       label,
@@ -116,7 +116,7 @@ const TooltipPopup = (forwardRef<HTMLSpanElement, Props>(
   components: typeof components;
 };
 
-TooltipPopup.components = components;
-TooltipPopup.displayName = displayName;
+PopOver.components = components;
+PopOver.displayName = displayName;
 
-export default TooltipPopup;
+export default PopOver;

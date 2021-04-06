@@ -1,6 +1,6 @@
 import React, { cloneElement, forwardRef, useState } from 'react';
 import { TooltipComponent } from './Tooltip.types';
-import { TooltipPopup } from '../../common/TooltipPopup';
+import { PopOver } from '../../common/PopOver';
 import { mergeRefs, wrapEvent } from '../../common/utils';
 import { useTooltip } from './hooks';
 
@@ -62,7 +62,7 @@ export const Tooltip: TooltipComponent = forwardRef(
         })}
 
         {isOpen && (
-          <TooltipPopup
+          <PopOver
             ref={ref as any}
             triggerElement={triggerElement}
             ariaLabel={ariaLabel}

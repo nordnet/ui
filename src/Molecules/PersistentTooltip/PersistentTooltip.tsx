@@ -2,11 +2,11 @@ import React, { cloneElement, forwardRef, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { isElement, mergeRefs } from '../../common/utils';
 import { Box, Button, Flexbox, Icon, Typography } from '../..';
-import { TooltipPopup } from '../../common/TooltipPopup';
+import { PopOver } from '../../common/PopOver';
 import { Props as PersistentTooltipProps } from './PersistentTooltip.types';
 
-const StyledTooltipPopup = styled(TooltipPopup)`
-  ${TooltipPopup.components.TooltipContent} {
+const StyledTooltipPopup = styled(PopOver)`
+  ${PopOver.components.TooltipContent} {
     padding: ${(p) => p.theme.spacing.unit(3)}px;
   }
 `;
@@ -18,7 +18,7 @@ const StyledButton = styled(Button)`
 const StyledCrossIcon = styled(Icon.CrossMedium)``;
 
 const components = {
-  TooltipContent: TooltipPopup.components.TooltipContent,
+  TooltipContent: PopOver.components.TooltipContent,
   CloseButtonIcon: StyledCrossIcon,
 };
 
@@ -90,7 +90,7 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
             position={position}
             positionCallback={positionCallback}
             triggerElement={triggerElement}
-            maxWidth={maxWidth === 'auto' ? undefined : maxWidth} // Let TooltipPopup handle default maxWidth if auto.
+            maxWidth={maxWidth === 'auto' ? undefined : maxWidth} // Let PopOver handle default maxWidth if auto.
             backgroundColor={(t) => {
               return backgroundColorProp ? backgroundColorProp(t) : t.color.backgroundDark;
             }}

@@ -1,6 +1,6 @@
 import { CSSProperties } from 'styled-components';
 import { ColorFn } from '../../Types';
-import { Position } from '../TooltipPopup.types';
+import { Position } from '../PopOver.types';
 
 export type Props = {
   position: Position;

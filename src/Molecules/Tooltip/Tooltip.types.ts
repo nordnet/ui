@@ -1,4 +1,4 @@
-import { InModal, Position } from 'common/TooltipPopup/TooltipPopup.types';
+import { InModal, Position } from 'common/PopOver/PopOver.types';
 
 export type Props = {
   label: React.ReactNode;
