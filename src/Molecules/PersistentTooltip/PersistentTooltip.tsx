@@ -5,9 +5,7 @@ import { Box, Button, Flexbox, Icon, Typography } from '../..';
 import { TooltipPopup } from '../Tooltip/TooltipPopup';
 import { Props as PersistentTooltipProps } from './PersistentTooltip.types';
 
-const StyledTooltipPopup = styled(TooltipPopup)<{
-  $calculatedPosition: PersistentTooltipProps['position'];
-}>`
+const StyledTooltipPopup = styled(TooltipPopup)`
   ${TooltipPopup.components.TooltipContent} {
     padding: ${(p) => p.theme.spacing.unit(3)}px;
   }
@@ -46,15 +44,10 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
     const [triggerElement, setTriggerElement] = useState(undefined);
     const triggerElementRef = useRef(null);
 
-    const [calculatedPosition, setCalculatedPosition] = useState<
-      NonNullable<PersistentTooltipProps['position']>
-    >();
-
     const positionCallback = (finalPosition: NonNullable<PersistentTooltipProps['position']>) => {
       if (positionCallbackProp) {
         positionCallbackProp(finalPosition);
       }
-      setCalculatedPosition(finalPosition);
     };
 
     const title = isElement(titleProp) ? (
@@ -102,7 +95,6 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
               return backgroundColorProp ? backgroundColorProp(t) : t.color.backgroundDark;
             }}
             borderColor={(t) => (borderColorProp ? borderColorProp(t) : 'transparent')}
-            $calculatedPosition={calculatedPosition}
             {...htmlDivProps}
           />
         )}
