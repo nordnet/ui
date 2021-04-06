@@ -70,7 +70,7 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
 
     const label = (
       <Box>
-        <Flexbox container justifyContent="space-between">
+        <Flexbox container justifyContent="space-between" alignItems="flex-start">
           {title}
           <StyledButton onClick={onClose} variant="neutral">
             <StyledCrossIcon size={4} color={(t) => t.color.textLight} title={closeButtonTitle} />
