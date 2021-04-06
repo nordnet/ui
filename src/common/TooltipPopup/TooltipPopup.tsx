@@ -1,11 +1,11 @@
 import React, { forwardRef, useEffect, useState } from 'react';
 import { usePopper } from 'react-popper';
 import styled from 'styled-components';
-import { Portal } from '../../..';
+import { Portal } from '../..';
 import { TooltipArrow } from './TooltipArrow';
 import { TooltipContent } from './TooltipContent';
 import { Props } from './TooltipPopup.types';
-import { mergeRefs } from '../../../common/utils';
+import { mergeRefs } from '../utils';
 
 type StyledSpanProps = {
   $inModal: Props['inModal'];

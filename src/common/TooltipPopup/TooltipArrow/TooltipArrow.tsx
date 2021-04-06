@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import styled, { css } from 'styled-components';
 import { Props } from './TooltipArrow.types';
-import { BORDER_SIZE, TRIANGLE_SIZE } from '../../consts';
+import { BORDER_SIZE, TRIANGLE_SIZE } from '../consts';
 
 type ArrorProps = {
   borderColor: Props['borderColor'];

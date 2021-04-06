@@ -1,12 +1,14 @@
+import { InModal, Position } from 'common/TooltipPopup/TooltipPopup.types';
+
 export type Props = {
   label: React.ReactNode;
   ariaLabel?: string;
   className?: string;
   children?: React.ReactNode;
   /** @default bottom */
-  position?: 'top' | 'right' | 'bottom' | 'left';
+  position?: Position;
   /** Adjusts z-index when used inside Modal */
-  inModal?: boolean;
+  inModal?: InModal;
   /** max-width in units */
   maxWidth?: number;
   mode?: 'hover' | 'click';

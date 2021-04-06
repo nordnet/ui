@@ -1,6 +1,6 @@
 import React, { cloneElement, forwardRef, useState } from 'react';
 import { TooltipComponent } from './Tooltip.types';
-import { TooltipPopup } from './TooltipPopup';
+import { TooltipPopup } from '../../common/TooltipPopup';
 import { mergeRefs, wrapEvent } from '../../common/utils';
 import { useTooltip } from './hooks';
 

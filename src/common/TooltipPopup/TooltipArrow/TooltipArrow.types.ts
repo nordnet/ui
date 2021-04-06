@@ -1,9 +1,9 @@
 import { CSSProperties } from 'styled-components';
-import { ColorFn } from '../../../../common/Types';
-import { Props as TooltipProps } from '../../Tooltip.types';
+import { ColorFn } from '../../Types';
+import { Position } from '../TooltipPopup.types';
 
 export type Props = {
-  position: TooltipProps['position'];
+  position: Position;
   style?: CSSProperties;
   ref?: React.RefObject<any>;
   backgroundColor: ColorFn;

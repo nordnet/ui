@@ -2,8 +2,8 @@ import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { ColorFn } from 'common/Types';
 import { StyledTooltipProps } from './TooltipContent.types';
-import { BORDER_SIZE } from '../../consts';
-import { Typography } from '../../../..';
+import { BORDER_SIZE } from '../consts';
+import { Typography } from '../../..';
 
 const StyledTooltip = styled.div<StyledTooltipProps>`
   padding: ${(p) => p.theme.spacing.unit(1)}px ${(p) => p.theme.spacing.unit(2)}px;

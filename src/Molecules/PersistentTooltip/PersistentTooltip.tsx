@@ -2,7 +2,7 @@ import React, { cloneElement, forwardRef, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { isElement, mergeRefs } from '../../common/utils';
 import { Box, Button, Flexbox, Icon, Typography } from '../..';
-import { TooltipPopup } from '../Tooltip/TooltipPopup';
+import { TooltipPopup } from '../../common/TooltipPopup';
 import { Props as PersistentTooltipProps } from './PersistentTooltip.types';
 
 const StyledTooltipPopup = styled(TooltipPopup)`
