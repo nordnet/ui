@@ -3,12 +3,12 @@ import styled, { css } from 'styled-components';
 import { Props } from './TooltipArrow.types';
 import { BORDER_SIZE, TRIANGLE_SIZE } from '../consts';
 
-type ArrorProps = {
+type ArrowProps = {
   borderColor: Props['borderColor'];
   backgroundColor: Props['backgroundColor'];
 };
 
-const arrowTop = css<ArrorProps>`
+const arrowTop = css<ArrowProps>`
   top: 3px;
   margin-left: -${TRIANGLE_SIZE}px;
   &::before {
@@ -26,7 +26,7 @@ const arrowTop = css<ArrorProps>`
   }
 `;
 
-const arrowBottom = css<ArrorProps>`
+const arrowBottom = css<ArrowProps>`
   bottom: 13px;
   margin-left: -${TRIANGLE_SIZE}px;
   &::before {
@@ -44,7 +44,7 @@ const arrowBottom = css<ArrorProps>`
   }
 `;
 
-const arrowLeft = css<ArrorProps>`
+const arrowLeft = css<ArrowProps>`
   left: 3px;
   margin-top: -${TRIANGLE_SIZE}px;
   &::before {
@@ -62,7 +62,7 @@ const arrowLeft = css<ArrorProps>`
   }
 `;
 
-const arrowRight = css<ArrorProps>`
+const arrowRight = css<ArrowProps>`
   left: auto;
   right: 13px;
   margin-top: -${TRIANGLE_SIZE}px;

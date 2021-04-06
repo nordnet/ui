@@ -15,7 +15,7 @@ const StyledButton = styled(Button)`
   margin-left: ${(p) => p.theme.spacing.unit(5)}px;
 `;
 
-const StyledCrossIcon = styled(Icon.CrossMedium)``;
+const StyledCrossIcon = styled(Icon.CrossMedium)``; // styled to allow consumers to use it as styling-identifier directly from TooltipPopup.components.TooltipContent
 
 const components = {
   TooltipContent: PopOver.components.TooltipContent,
