@@ -341,6 +341,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   privateBankingBannerText: RawColor['white'];
   /** gray6 */
   privateBankingBannerBackground: RawColor['gray6'];
+  /** brandTurquoise */
+  marketingCardMortageHighlight: RawColor['brandTurquoise'];
   /** @deprecated
    * gray3 */
   disabled: RawColor['gray3'];

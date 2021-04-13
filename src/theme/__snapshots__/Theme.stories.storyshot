@@ -2130,6 +2130,31 @@ exports[`Storyshots Others / Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
+        marketingCardMortageHighlight
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c20"
+        />
+        #00F0E1
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c20"
+        />
+        #00F0E1
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
         menuAccent1
       </td>
       <td
