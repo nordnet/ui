@@ -133,11 +133,11 @@ export const Button: React.ForwardRefExoticComponent<
     return (
       <StyledLink
         {...sharedProps}
+        $fullServerRedirect={fullServerRedirect}
         rel={rel}
         innerRef={ref as React.Ref<HTMLAnchorElement>}
         external={external}
         cms={cms}
-        fullServerRedirect={fullServerRedirect}
         to={to}
         as={as}
         target={target}
