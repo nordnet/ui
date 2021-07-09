@@ -29,7 +29,7 @@ export const getColor = (
 };
 
 const CleanSvg = React.forwardRef<SVGSVGElement, React.SVGProps<SVGSVGElement>>((props, ref) => (
-  <svg ref={ref} {...R.omit(['size', 'colorFn', 'inline'])(props)} />
+  <svg ref={ref} {...R.omit(['size', 'colorFn', 'inline', 'focus'])(props)} />
 ));
 
 const StyledIconBase = styled(CleanSvg)<StyledIconBaseProps>`
