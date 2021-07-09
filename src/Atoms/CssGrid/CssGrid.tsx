@@ -22,11 +22,6 @@ const formatAreas = (areas: Props['areas']) =>
 
 const isNumber = (x: any): x is number => x === parseInt(x, 10);
 const isArrayOfStrings = (xs: any[]): xs is string[] => xs.every((x) => typeof x === 'string');
-const isSupportedCssValue = (s: string) => {
-  const stringS = `${s}`;
-
-  return !(stringS.includes('minmax') || stringS.includes('repeat') || stringS.includes('('));
-};
 
 const getGutterStyles = (props: { gutter: Gutter; theme: Theme }) => {
   const { gutter, theme } = props;
@@ -49,28 +44,14 @@ const getGutterStyles = (props: { gutter: Gutter; theme: Theme }) => {
 };
 
 const getTemplateColumns = (props: { templateColumns?: TemplateColumn; size: Size }): string => {
-  const { templateColumns, size } = props;
+  const { templateColumns } = props;
   const oneColSize = 100 / 12;
 
   if (isUndefined(templateColumns)) {
-    assert(
-      false,
-      `CssGrid: It seems like you don't have templateColumns specified for '${
-        size || 'default'
-      }' size. This may lead to some weird IE11 bugs.`,
-      { level: 'warn' },
-    );
     return '';
   }
 
   if (isArrayOfStrings(templateColumns)) {
-    assert(
-      templateColumns.every(isSupportedCssValue),
-      `CssGrid: Probably unsupported css value used in templateColumns for ${
-        size || 'default'
-      }. This will cause some IE11 bugs.`,
-      { level: 'warn' },
-    );
     return `grid-template-columns: ${templateColumns.join(' ')};`;
   }
 
@@ -80,26 +61,12 @@ const getTemplateColumns = (props: { templateColumns?: TemplateColumn; size: Siz
 };
 
 const getTemplateRows = (props: { templateRows?: TemplateRow; size: Size }): string => {
-  const { templateRows, size } = props;
+  const { templateRows } = props;
 
   if (isUndefined(templateRows)) {
-    assert(
-      false,
-      `CssGrid: It seems like you don't have templateRows specified for '${
-        size || 'default'
-      }' size. This will definitely cause some weird IE11 bugs. Please check and fix`,
-      { level: 'warn' },
-    );
     return '';
   }
 
-  assert(
-    templateRows.every(isSupportedCssValue),
-    `CssGrid: Probably unsupported css value used in templateRows for ${
-      size || 'default'
-    }. This will cause some IE11 bugs.`,
-    { level: 'warn' },
-  );
   return `grid-template-rows: ${templateRows.join(' ')};`;
 };
 
