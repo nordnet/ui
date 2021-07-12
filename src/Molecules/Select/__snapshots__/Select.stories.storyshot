@@ -139,7 +139,6 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with hidden label 1`
     <svg
       aria-hidden="true"
       className="c6 c7"
-      focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
@@ -276,7 +275,6 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with overflowing pla
       <svg
         aria-hidden="true"
         className="c5 c6"
-        focus={false}
         focusable="false"
         preserveAspectRatio="xMidYMid meet"
         role="presentation"
@@ -423,7 +421,6 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with placeholder 1`]
     <svg
       aria-hidden="true"
       className="c5 c6"
-      focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
@@ -569,7 +566,6 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with placeholder and
     <svg
       aria-hidden="true"
       className="c5 c6"
-      focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
@@ -727,7 +723,6 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with prepended empty
     <svg
       aria-hidden="true"
       className="c6 c7"
-      focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
@@ -867,7 +862,6 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with preselected val
     <svg
       aria-hidden="true"
       className="c5 c6"
-      focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
@@ -1004,7 +998,6 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select without placeholder 
     <svg
       aria-hidden="true"
       className="c5 c6"
-      focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
