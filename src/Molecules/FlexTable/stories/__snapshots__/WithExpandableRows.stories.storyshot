@@ -302,6 +302,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -321,6 +322,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -1066,6 +1068,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
 }
 
 .c29 {
+  margin-left: -2px;
   border-left: 2px solid #0046FF;
   border-bottom: 1px solid #EBEBE8;
   display: block;
@@ -1078,6 +1081,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -1097,6 +1101,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -1120,6 +1125,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid #0046FF;
 }
 
@@ -3264,6 +3270,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -3283,6 +3290,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
   cursor: pointer;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -4025,6 +4033,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
 }
 
 .c29 {
+  margin-left: -2px;
   border-left: 2px solid #0046FF;
   border-bottom: 1px solid #EBEBE8;
   display: block;
@@ -4037,6 +4046,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -4056,6 +4066,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -4079,6 +4090,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid #0046FF;
 }
 
@@ -6302,6 +6314,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
 }
 
 .c24 {
+  margin-left: -2px;
   border-left: 2px solid #0046FF;
   border-bottom: 1px solid #EBEBE8;
   display: block;
@@ -6314,6 +6327,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -6333,6 +6347,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid #0046FF;
 }
 
@@ -8172,6 +8187,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
 }
 
 .c24 {
+  margin-left: -2px;
   border-left: 2px solid #0046FF;
   border-bottom: 1px solid #EBEBE8;
   display: block;
@@ -8184,6 +8200,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -8203,6 +8220,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid #0046FF;
 }
 
@@ -8869,6 +8887,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -8888,6 +8907,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -8998,6 +9018,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   .c2 {
     padding-right: 4px;
     padding-left: 2px;
+    margin-left: -2px;
     border-left: 2px solid transparent;
     border-bottom: 1px solid #EBEBE8;
   }
@@ -9015,6 +9036,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   .c13 {
     padding-right: 4px;
     padding-left: 2px;
+    margin-left: -2px;
     border-left: 2px solid transparent;
     border-bottom: 1px solid #EBEBE8;
   }
@@ -9530,6 +9552,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -9549,6 +9572,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
   cursor: pointer;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -9572,6 +9596,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }

@@ -17,6 +17,7 @@ const getExpandableStyles = (
   padding-right: ${p.expandable ? p.theme.spacing.unit(2) : p.theme.spacing.unit(1)}px;
   padding-left: ${p.expandable ? p.theme.spacing.unit(1.5) : p.theme.spacing.unit(0.5)}px;
 
+  margin-left: ${p.theme.spacing.unit(-0.5)}px;
   border-left: ${p.theme.spacing.unit(0.5)}px solid ${
   p.expanded && p.expandable ? p.theme.color.cta : 'transparent'
 };

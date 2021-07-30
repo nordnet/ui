@@ -220,6 +220,7 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows Default Rows 1`]
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -239,6 +240,7 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows Default Rows 1`]
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -925,6 +927,7 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows With Colored Sep
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -944,6 +947,7 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows With Colored Sep
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #D2F500;
 }
@@ -967,6 +971,7 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows With Colored Sep
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #00F0E1;
 }
@@ -990,6 +995,7 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows With Colored Sep
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #FFCF00;
 }
@@ -1676,6 +1682,7 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows With Hidden Sepa
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -1695,6 +1702,7 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows With Hidden Sepa
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
 }
 
@@ -2380,6 +2388,7 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows Without Hover Hi
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }

@@ -279,6 +279,7 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table 1`] = `
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -298,6 +299,7 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table 1`] = `
   cursor: auto;
   padding-right: 8px;
   padding-left: 6px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -460,6 +462,7 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table 1`] = `
   .c4 {
     padding-right: 4px;
     padding-left: 2px;
+    margin-left: -2px;
     border-left: 2px solid transparent;
     border-bottom: 1px solid #EBEBE8;
   }
@@ -477,6 +480,7 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table 1`] = `
   .c22 {
     padding-right: 4px;
     padding-left: 2px;
+    margin-left: -2px;
     border-left: 2px solid transparent;
     border-bottom: 1px solid #EBEBE8;
   }
@@ -21193,6 +21197,7 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table Without 
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -21212,6 +21217,7 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table Without 
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -121667,6 +121673,7 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Multiple Big Table
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -121686,6 +121693,7 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Multiple Big Table
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }

@@ -304,6 +304,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -323,6 +324,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -1331,6 +1333,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -1350,6 +1353,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -2192,6 +2196,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -2211,6 +2216,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -2986,6 +2992,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -3005,6 +3012,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }

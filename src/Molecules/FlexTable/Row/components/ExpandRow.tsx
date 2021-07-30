@@ -27,6 +27,7 @@ type StyledExpandedRowType = {
 };
 
 const StyledExpandedRow = styled('div')<StyledExpandedRowType>`
+  margin-left: ${(p) => p.theme.spacing.unit(-0.5)}px;
   border-left: ${(p) => p.theme.spacing.unit(0.5)}px solid ${(p) => p.theme.color.cta};
   border-bottom: 1px solid ${(p) => p.$separatorColor(p.theme)};
 

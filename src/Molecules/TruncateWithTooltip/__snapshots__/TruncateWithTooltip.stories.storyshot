@@ -357,6 +357,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -376,6 +377,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }

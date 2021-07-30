@@ -220,6 +220,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -239,6 +240,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -978,6 +980,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -997,6 +1000,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -1820,6 +1824,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -1839,6 +1844,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -2401,6 +2407,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -2420,6 +2427,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -3173,6 +3181,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -3192,6 +3201,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
+  margin-left: -2px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
