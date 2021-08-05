@@ -212,9 +212,11 @@ export const ModalInner: React.FC<Props> = ({
     };
   }, []);
 
-  if (escapePress && isFunction(onClose)) {
-    onClose();
-  }
+  useEffect(() => {
+    if (escapePress && isFunction(onClose)) {
+      onClose();
+    }
+  }, [escapePress, onClose]);
 
   return (
     <>
