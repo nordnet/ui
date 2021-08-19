@@ -85,3 +85,12 @@ export const AllowUpdateWhileTyping = () => {
     />
   );
 };
+
+export const FullscreenOnMobile = () => (
+  <DatePicker
+    id="fullscreen-on-mobile"
+    variant="RANGE"
+    label="FullscreenOnMobile"
+    fullScreenOnMobile
+  />
+);
