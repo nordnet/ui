@@ -9,7 +9,7 @@ import { SingleDatePickerProps } from './DatePicker.types';
  * Imported separately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
 import Input from '../../Input';
-import { Box, DropdownBubble, Icon } from '../../..';
+import { Box, DropdownBubble, Icon, Modal, useMedia } from '../../..';
 import { assert, isUndefined } from '../../../common/utils';
 import { useOnClickOutside } from '../../../common/Hooks';
 import {
@@ -31,6 +31,7 @@ const StyledDropdownBubble = styled(DropdownBubble)`
   max-width: ${({ theme }) => theme.spacing.unit(78)}px;
   z-index: ${({ theme }) => theme.zIndex.overlay};
   top: -10px;
+
   &:after,
   &:before {
     display: none;
@@ -61,6 +62,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     width = DEFAULT_INPUT_WIDTH,
     yearSelectLength,
     inputSize,
+    fullScreenOnMobile = false,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -75,6 +77,8 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
   const theme = useTheme();
   const { locale } = useIntl();
   const dateFormat = getDateFormat(locale);
+  const isFullscreenMode =
+    useMedia((t) => t.media.lessThan(t.breakpoints.sm)) && fullScreenOnMobile;
 
   const options = useMemo(
     () => ({
@@ -364,7 +368,9 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
   const selfRef = useRef<HTMLDivElement>(null);
   useOnClickOutside(selfRef, () => {
     setFocused([null, null]);
-    setOpen(false);
+    if (!isFullscreenMode) {
+      setOpen(false);
+    }
   });
 
   return (
@@ -389,11 +395,16 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
         width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
         autoComplete="off"
       />
-      {open ? (
+      {open && !isFullscreenMode && (
         <StyledDropdownBubbleWrapper data-testid="styled-dropdown-bubble-wrapper">
           <StyledDropdownBubble>{datepicker}</StyledDropdownBubble>
         </StyledDropdownBubbleWrapper>
-      ) : null}
+      )}
+      {open && isFullscreenMode && (
+        <Modal open={open} onClose={() => setOpen(false)} fullScreenMobile>
+          {datepicker}
+        </Modal>
+      )}
     </div>
   );
 });

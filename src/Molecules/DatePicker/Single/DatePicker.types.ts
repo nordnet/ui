@@ -22,4 +22,5 @@ export type SingleDatePickerProps = {
   width?: number | string;
   ref?: React.Ref<HTMLDivElement>;
   yearSelectLength?: number;
+  fullScreenOnMobile?: boolean;
 };
