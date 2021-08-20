@@ -367,8 +367,8 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
 
   const selfRef = useRef<HTMLDivElement>(null);
   useOnClickOutside(selfRef, () => {
-    setFocused([null, null]);
     if (!isFullscreenMode) {
+      setFocused([null, null]);
       setOpen(false);
     }
   });
