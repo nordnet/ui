@@ -63,7 +63,6 @@ export const SelectedValueWrapper = React.forwardRef<any, any>(
       value.length > 0 ? `${label}: ${screenReaderTextSelection}` : `${label}: ${placeholder}`;
 
     const handleClick: React.MouseEventHandler = (e) => {
-      console.log({ e });
       e.preventDefault();
       send({ type: 'TOGGLE' });
     };
