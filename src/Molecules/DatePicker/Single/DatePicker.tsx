@@ -3,14 +3,18 @@ import styled, { useTheme } from 'styled-components';
 import format from 'date-fns/format';
 import { useIntl } from 'react-intl';
 import { isBefore, isSameDay, isSameMonth, startOfDay } from 'date-fns';
-import { SingleDatePickerProps } from './DatePicker.types';
+import {
+  Props as SingleDatePickerProps,
+  PropsWithFullscreen,
+  PropsWithoutFullscreen,
+} from './DatePicker.types';
 
 /**
  * Imported separately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
 import Input from '../../Input';
-import { Box, DropdownBubble, Icon, Modal, useMedia } from '../../..';
-import { assert, isUndefined } from '../../../common/utils';
+import { Box, Button, DropdownBubble, Icon, Modal, Typography, useMedia } from '../../..';
+import { assert, isElement, isUndefined } from '../../../common/utils';
 import { useOnClickOutside } from '../../../common/Hooks';
 import {
   getDateFormat,
@@ -42,6 +46,11 @@ const StyledDropdownBubbleWrapper = styled.div`
   position: absolute;
 `;
 
+const isFullscreenMode = (
+  props: PropsWithFullscreen | PropsWithoutFullscreen,
+  isSmallScreen: boolean | null,
+): props is PropsWithFullscreen => Boolean(props.fullscreenOnMobile) && Boolean(isSmallScreen);
+
 const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((props, ref) => {
   const {
     ariaLabelPrevious,
@@ -62,7 +71,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     width = DEFAULT_INPUT_WIDTH,
     yearSelectLength,
     inputSize,
-    fullScreenOnMobile = false,
+    fullscreenTitle,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -77,8 +86,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
   const theme = useTheme();
   const { locale } = useIntl();
   const dateFormat = getDateFormat(locale);
-  const isFullscreenMode =
-    useMedia((t) => t.media.lessThan(t.breakpoints.sm)) && fullScreenOnMobile;
+  const isSmallScreen = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
 
   const options = useMemo(
     () => ({
@@ -367,11 +375,21 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
 
   const selfRef = useRef<HTMLDivElement>(null);
   useOnClickOutside(selfRef, () => {
-    if (!isFullscreenMode) {
+    if (!isFullscreenMode(props, isSmallScreen)) {
       setFocused([null, null]);
       setOpen(false);
     }
   });
+
+  const onClose = useCallback(() => setOpen(false), []);
+
+  const modalTitle = isElement(fullscreenTitle) ? (
+    fullscreenTitle
+  ) : (
+    <Typography type="title1" as="h1">
+      {fullscreenTitle}
+    </Typography>
+  );
 
   return (
     <div ref={(ref || selfRef) as React.Ref<HTMLDivElement>}>
@@ -395,13 +413,23 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
         width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
         autoComplete="off"
       />
-      {open && !isFullscreenMode && (
+      {open && !isFullscreenMode(props, isSmallScreen) && (
         <StyledDropdownBubbleWrapper data-testid="styled-dropdown-bubble-wrapper">
           <StyledDropdownBubble>{datepicker}</StyledDropdownBubble>
         </StyledDropdownBubbleWrapper>
       )}
-      {open && isFullscreenMode && (
-        <Modal open={open} onClose={() => setOpen(false)} fullScreenMobile>
+      {open && isFullscreenMode(props, isSmallScreen) && (
+        <Modal
+          title={modalTitle}
+          open={open}
+          onClose={onClose}
+          fullScreenMobile
+          footer={
+            <Button onClick={onClose} size="l" fullWidth>
+              {props.fullscreenCloseButtonTitle}
+            </Button>
+          }
+        >
           {datepicker}
         </Modal>
       )}

@@ -91,6 +91,8 @@ export const FullscreenOnMobile = () => (
     id="fullscreen-on-mobile"
     variant="RANGE"
     label="FullscreenOnMobile"
-    fullScreenOnMobile
+    fullscreenOnMobile
+    fullscreenCloseButtonTitle="Ok"
+    fullscreenTitle="Pick a date"
   />
 );

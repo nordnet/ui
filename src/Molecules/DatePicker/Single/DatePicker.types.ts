@@ -1,8 +1,31 @@
+import { ReactElement } from 'react';
 import { RANGE_DATE_PICKER, REGULAR_DATE_PICKER } from '../shared/constants';
 
 type DatePickerVariant = typeof REGULAR_DATE_PICKER | typeof RANGE_DATE_PICKER;
 
-export type SingleDatePickerProps = {
+interface Fullscreen {
+  /**
+   * Renders datepicker inside a full screen modal on "mobile-sized" resolutions
+   */
+  fullscreenOnMobile?: boolean;
+  fullscreenTitle?: ReactElement | string;
+  fullscreenCloseButtonTitle?: ReactElement | string;
+}
+
+export interface PropsWithFullscreen extends Fullscreen {
+  fullscreenOnMobile: true;
+  fullscreenCloseButtonTitle: ReactElement | string;
+}
+
+export interface PropsWithoutFullscreen extends Fullscreen {
+  fullscreenOnMobile?: false;
+  fullscreenTitle?: never;
+  fullscreenCloseButtonTitle?: never;
+}
+
+type FullscreenProps = PropsWithoutFullscreen | PropsWithFullscreen;
+
+export type Props = {
   ariaLabelPrevious?: string;
   ariaLabelNext?: string;
   open?: boolean;
@@ -22,5 +45,4 @@ export type SingleDatePickerProps = {
   width?: number | string;
   ref?: React.Ref<HTMLDivElement>;
   yearSelectLength?: number;
-  fullScreenOnMobile?: boolean;
-};
+} & FullscreenProps;
