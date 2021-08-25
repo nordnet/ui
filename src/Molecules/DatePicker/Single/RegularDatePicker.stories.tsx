@@ -88,6 +88,10 @@ export const FullscreenOnMobile = () => (
     label="Fullscreen on mobile"
     onChange={action('onChange regular')}
     fullscreenOnMobile
-    fullscreenCloseButtonTitle="close"
+    fullscreenProps={{
+      title: 'Select a date',
+      closeButtonLabel: 'Ok',
+      clearButtonLabel: 'Clear date',
+    }}
   />
 );

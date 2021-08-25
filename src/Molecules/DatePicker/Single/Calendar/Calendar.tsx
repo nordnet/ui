@@ -144,7 +144,7 @@ const Calendar: React.FC<Props> = ({
 
   return (
     <Flexbox container direction="column" data-testid="datepicker-calendar">
-      <Flexbox container aria-hidden>
+      <Flexbox container justifyContent="space-between" aria-hidden>
         {calendar.weekDays?.map((n) => (
           <Flexbox item justifyContent="center" alignItems="center" key={n}>
             <StyledBox>
@@ -154,7 +154,7 @@ const Calendar: React.FC<Props> = ({
         ))}
       </Flexbox>
       {calendar.dates?.map((week, weekIndex) => (
-        <Flexbox container key={week.toString()}>
+        <Flexbox container justifyContent="space-between" key={week.toString()}>
           {week?.map((day, dayIndex) => (
             <CalendarDay
               ref={calendarDayRefs.current[weekIndex][dayIndex]}

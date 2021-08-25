@@ -92,7 +92,10 @@ export const FullscreenOnMobile = () => (
     variant="RANGE"
     label="FullscreenOnMobile"
     fullscreenOnMobile
-    fullscreenCloseButtonTitle="Ok"
-    fullscreenTitle="Pick a date"
+    fullscreenProps={{
+      title: 'Select a date',
+      closeButtonLabel: 'Ok',
+      clearButtonLabel: 'Clear dates',
+    }}
   />
 );

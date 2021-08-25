@@ -13,8 +13,8 @@ import {
  * Imported separately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
 import Input from '../../Input';
-import { Box, Button, DropdownBubble, Icon, Modal, Typography, useMedia } from '../../..';
-import { assert, isElement, isUndefined } from '../../../common/utils';
+import { Box, Button, DropdownBubble, Icon, Modal, useMedia } from '../../..';
+import { assert, isUndefined } from '../../../common/utils';
 import { useOnClickOutside } from '../../../common/Hooks';
 import {
   getDateFormat,
@@ -71,7 +71,6 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     width = DEFAULT_INPUT_WIDTH,
     yearSelectLength,
     inputSize,
-    fullscreenTitle,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -340,13 +339,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
   );
 
   const datepicker = (
-    <Box
-      my={3}
-      mx={2}
-      onBlur={() => {
-        setFocused([null, null]);
-      }}
-    >
+    <>
       <Header
         ariaLabelPrevious={ariaLabelPrevious}
         ariaLabelNext={ariaLabelNext}
@@ -368,7 +361,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
         selectedEndDate={selectedEndDate as Date}
         focusedState={focusedState}
       />
-    </Box>
+    </>
   );
 
   const inputRightAddon = <Icon.CalendarTwoRows size={6} />;
@@ -382,14 +375,6 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
   });
 
   const onClose = useCallback(() => setOpen(false), []);
-
-  const modalTitle = isElement(fullscreenTitle) ? (
-    fullscreenTitle
-  ) : (
-    <Typography type="title1" as="h1">
-      {fullscreenTitle}
-    </Typography>
-  );
 
   return (
     <div ref={(ref || selfRef) as React.Ref<HTMLDivElement>}>
@@ -415,19 +400,40 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
       />
       {open && !isFullscreenMode(props, isSmallScreen) && (
         <StyledDropdownBubbleWrapper data-testid="styled-dropdown-bubble-wrapper">
-          <StyledDropdownBubble>{datepicker}</StyledDropdownBubble>
+          <StyledDropdownBubble>
+            <Box
+              my={3}
+              mx={2}
+              onBlur={() => {
+                setFocused([null, null]);
+              }}
+            >
+              {datepicker}
+            </Box>
+          </StyledDropdownBubble>
         </StyledDropdownBubbleWrapper>
       )}
       {open && isFullscreenMode(props, isSmallScreen) && (
         <Modal
-          title={modalTitle}
+          title={props.fullscreenProps.title}
           open={open}
           onClose={onClose}
           fullScreenMobile
           footer={
-            <Button onClick={onClose} size="l" fullWidth>
-              {props.fullscreenCloseButtonTitle}
-            </Button>
+            <>
+              <Box py={5}>
+                <Button
+                  variant="neutral"
+                  color={(p) => p.color.cta}
+                  onClick={() => setInputValue('')}
+                >
+                  {props.fullscreenProps.clearButtonLabel}
+                </Button>
+              </Box>
+              <Button onClick={onClose} size="l" fullWidth>
+                {props.fullscreenProps.closeButtonLabel}
+              </Button>
+            </>
           }
         >
           {datepicker}
