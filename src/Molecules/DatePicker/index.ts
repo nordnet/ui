@@ -1,3 +1,4 @@
 import DatePicker from './DatePicker';
+import { DateRangePicker } from './Range';
 
-export default DatePicker;
+export { DateRangePicker, DatePicker };

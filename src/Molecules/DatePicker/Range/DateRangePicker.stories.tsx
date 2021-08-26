@@ -5,7 +5,7 @@ import DateRangePicker from './DateRangePicker';
 import { Button, Flexbox } from '../../..';
 
 export default {
-  title: 'Molecules / DatePicker / DatePicker with range (new)',
+  title: 'Molecules / DatePicker / DatePicker with range',
   parameters: {
     component: DateRangePicker,
   },

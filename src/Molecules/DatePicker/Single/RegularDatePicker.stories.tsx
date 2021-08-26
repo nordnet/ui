@@ -14,9 +14,7 @@ export default {
 const dateNow = new Date();
 
 export const Default = () => {
-  return (
-    <DatePicker id="input-id" label="Default" onChange={action('onChange')} variant="REGULAR" />
-  );
+  return <DatePicker id="input-id" label="Default" onChange={action('onChange')} />;
 };
 
 export const SameWeekDisabled = () => {
@@ -26,7 +24,6 @@ export const SameWeekDisabled = () => {
       label="Disabled dates on same week"
       disableDate={(date) => isSameWeek(dateNow, date)}
       onChange={action('onChange')}
-      variant="REGULAR"
     />
   );
 };
@@ -38,7 +35,6 @@ export const SameWeekEnabled = () => {
       label="Enabled dates on same week"
       enableDate={(date) => isSameWeek(dateNow, date)}
       onChange={action('onChange')}
-      variant="REGULAR"
     />
   );
 };
@@ -53,7 +49,6 @@ export const Controlled = () => {
         id="controlled"
         label="Label"
         selectedDate={date}
-        variant="REGULAR"
         onChange={(selectedDate) => {
           setDate(selectedDate);
           action('onChange');
@@ -64,22 +59,15 @@ export const Controlled = () => {
 };
 
 export const DisabledInput = () => {
-  return <DatePicker id="disabled-input" label="Label" disabled variant="REGULAR" />;
+  return <DatePicker id="disabled-input" label="Label" disabled />;
 };
 
 export const FullWidthInput = () => {
-  return <DatePicker id="full-width-input" label="Label" variant="REGULAR" width="100%" />;
+  return <DatePicker id="full-width-input" label="Label" width="100%" />;
 };
 
 export const AllowUpdateWhileTyping = () => {
-  return (
-    <DatePicker
-      id="disabled-input"
-      variant="REGULAR"
-      allowDateUpdateOnType
-      label="Allow update while typing"
-    />
-  );
+  return <DatePicker id="disabled-input" allowDateUpdateOnType label="Allow update while typing" />;
 };
 
 export const FullscreenOnMobile = () => (

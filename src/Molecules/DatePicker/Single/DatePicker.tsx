@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import styled, { useTheme } from 'styled-components';
 import format from 'date-fns/format';
 import { useIntl } from 'react-intl';
-import { isBefore, isSameDay, isSameMonth, startOfDay } from 'date-fns';
+import { isSameDay, isSameMonth, startOfDay } from 'date-fns';
 import {
   Props as SingleDatePickerProps,
   PropsWithFullscreen,
@@ -16,16 +16,10 @@ import Input from '../../Input';
 import { Box, Button, DropdownBubble, Icon, Modal, useMedia } from '../../..';
 import { assert, isUndefined } from '../../../common/utils';
 import { useOnClickOutside } from '../../../common/Hooks';
-import {
-  getDateFormat,
-  getLocale,
-  newDate,
-  parseDateString,
-  parseDateStrings,
-} from '../shared/dateUtils';
+import { getDateFormat, getLocale, newDate, parseDateString } from '../shared/dateUtils';
 import Header from './Header';
 import Calendar from './Calendar';
-import { DEFAULT_INPUT_WIDTH, RANGE_DATE_PICKER, REGULAR_DATE_PICKER } from '../shared/constants';
+import { DEFAULT_INPUT_WIDTH } from '../shared/constants';
 
 const StyledInputText = styled(Input.Text)`
   z-index: 1;
@@ -65,9 +59,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     id,
     open: openProp = false,
     selectedDate: selectedDateProp,
-    selectedEndDate: selectedEndDateProp,
     inputValue: inputValueProp,
-    variant = REGULAR_DATE_PICKER,
     width = DEFAULT_INPUT_WIDTH,
     yearSelectLength,
     inputSize,
@@ -99,7 +91,6 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     (selectedDateProp && new Date(selectedDateProp)) || startOfDay(new Date()),
   );
   const [selectedDate, setSelectedDate] = useState<Date | null>(selectedDateProp || null);
-  const [selectedEndDate, setSelectedEndDate] = useState<Date | null>(selectedEndDateProp || null);
   const [inputValue, setInputValue] = useState<string>(inputValueProp || '');
 
   const focusedState = useState<[number | null, number | null]>([null, null]);
@@ -111,34 +102,23 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
 
   useEffect(() => {
     if (selectedDateProp) setSelectedDate(selectedDateProp);
-    if (selectedEndDateProp) setSelectedEndDate(selectedEndDateProp);
     if (inputValueProp) {
       setInputValue(inputValueProp);
     } else {
       const controlledInputValue = (() => {
-        if (variant === REGULAR_DATE_PICKER && selectedDateProp) {
+        if (selectedDateProp) {
           return format(selectedDateProp, dateFormat, options);
-        }
-        if (variant === RANGE_DATE_PICKER && selectedDateProp) {
-          return !selectedEndDateProp
-            ? `${format(selectedDateProp, dateFormat, options)} - `
-            : `${format(selectedDateProp, dateFormat, options)} - ${format(
-                selectedEndDateProp,
-                dateFormat,
-                options,
-              )}`;
         }
         return '';
       })();
 
       setInputValue(controlledInputValue);
     }
-  }, [dateFormat, inputValueProp, options, selectedDateProp, selectedEndDateProp, variant]);
+  }, [dateFormat, inputValueProp, options, selectedDateProp]);
 
   useEffect(() => {
     if (!inputValue) {
       setSelectedDate(null);
-      setSelectedEndDate(null);
     }
   }, [inputValue]);
 
@@ -153,55 +133,15 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     [dateFormat, onChange, options],
   );
 
-  const handleDateClickRange = useCallback(
-    (date: Date) => {
-      const [startDate, endDate] = ((): [Date, Date | null] => {
-        if (!selectedDate) return [date, null];
-
-        if (selectedDate && isBefore(date, selectedDate)) return [date, selectedEndDate];
-        const swapDate = !selectedEndDate && isBefore(date, selectedDate);
-        if (swapDate) return [date, selectedDate];
-        if (selectedDate && isSameDay(date, selectedDate)) return [date, null];
-        if (selectedDate && selectedEndDate && isSameDay(date, selectedEndDate))
-          return [date, null];
-        if (selectedDate) return [selectedDate, date];
-
-        return [selectedDate, date];
-      })();
-
-      if (endDate && isSameDay(startDate, endDate)) return;
-      if (
-        selectedDate &&
-        isSameDay(startDate, selectedDate) &&
-        endDate &&
-        selectedEndDate &&
-        isSameDay(endDate, selectedEndDate)
-      )
-        return;
-
-      const rangeDateString = !endDate
-        ? `${format(startDate, dateFormat, options)}`
-        : `${format(startDate, dateFormat, options)} - ${format(endDate, dateFormat, options)}`;
-
-      setSelectedDate(startDate);
-      setSelectedEndDate(endDate);
-      setInputValue(rangeDateString);
-
-      if (onChange) onChange(startDate, endDate);
-    },
-    [selectedDate, dateFormat, options, onChange, selectedEndDate],
-  );
-
   const onDateClick = useCallback(
     (date: Date) => {
       if (date && !isSameMonth(date, viewedDate)) {
         setViewedDate(newDate(date));
         setFocused([null, null]);
       }
-      if (variant === REGULAR_DATE_PICKER) handleDateClickRegular(date);
-      else handleDateClickRange(date);
+      handleDateClickRegular(date);
     },
-    [viewedDate, variant, handleDateClickRegular, handleDateClickRange, setFocused],
+    [viewedDate, handleDateClickRegular, setFocused],
   );
 
   const allowedDate = useCallback(
@@ -230,54 +170,6 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     [allowedDate, dateFormat, locale, onBlur, onChange, options, selectedDate],
   );
 
-  const handleInputSubmitRange = useCallback(
-    (dateString: string) => {
-      const [startDateString, endDateString] = dateString.split(' - ');
-      const [parsedStartDate, parsedEndDate] = parseDateStrings(
-        startDateString,
-        endDateString,
-        locale,
-      );
-      const [startDate, endDate] = [allowedDate(parsedStartDate), allowedDate(parsedEndDate)];
-
-      if (startDate && !endDate) {
-        const selectedDateReselected = selectedDate && isSameDay(startDate, selectedDate);
-
-        if (selectedDateReselected) return;
-
-        setSelectedDate(startDate);
-        setSelectedEndDate(endDate);
-        setViewedDate(newDate(startDate));
-
-        if (onChange) onChange(startDate, endDate);
-      } else if (startDate && endDate) {
-        const selectedDatesReselected =
-          selectedDate &&
-          selectedEndDate &&
-          isSameDay(startDate, selectedDate) &&
-          isSameDay(endDate, selectedEndDate);
-
-        if (isSameDay(startDate, endDate)) return;
-        if (selectedDatesReselected) return;
-
-        const rangeDateString = `${format(startDate, dateFormat, options)} - ${format(
-          endDate,
-          dateFormat,
-          options,
-        )}`;
-
-        setSelectedDate(startDate);
-        setSelectedEndDate(endDate);
-        setViewedDate(newDate(endDate));
-
-        setInputValue(rangeDateString);
-
-        if (onChange) onChange(startDate, endDate);
-      }
-    },
-    [allowedDate, dateFormat, locale, onChange, options, selectedDate, selectedEndDate],
-  );
-
   const handleInputKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     const { value } = event.target as HTMLInputElement;
 
@@ -290,8 +182,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
         break;
 
       case 'Enter':
-        if (variant === RANGE_DATE_PICKER) handleInputSubmitRange(value);
-        else handleInputSubmitRegular(value);
+        handleInputSubmitRegular(value);
         break;
 
       default:
@@ -305,21 +196,19 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     (event: React.ChangeEvent<HTMLInputElement>) => {
       const { value } = event.target;
 
-      if (variant === REGULAR_DATE_PICKER && allowDateUpdateOnType) handleInputSubmitRegular(value);
-      if (variant === RANGE_DATE_PICKER && allowDateUpdateOnType) handleInputSubmitRange(value);
+      if (allowDateUpdateOnType) handleInputSubmitRegular(value);
       setInputValue(value);
     },
-    [handleInputSubmitRange, handleInputSubmitRegular, allowDateUpdateOnType, variant],
+    [handleInputSubmitRegular, allowDateUpdateOnType],
   );
 
   const handleInputOnBlur = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
       const { value } = event.target;
 
-      if (variant === REGULAR_DATE_PICKER) handleInputSubmitRegular(value);
-      if (variant === RANGE_DATE_PICKER) handleInputSubmitRange(value);
+      handleInputSubmitRegular(value);
     },
-    [handleInputSubmitRange, handleInputSubmitRegular, variant],
+    [handleInputSubmitRegular],
   );
 
   const onMonthChange = useCallback(
@@ -358,7 +247,6 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
         locale={locale}
         onClick={onDateClick}
         selectedDate={selectedDate as Date}
-        selectedEndDate={selectedEndDate as Date}
         focusedState={focusedState}
       />
     </>
@@ -384,11 +272,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
         disabled={disabled}
         id={id}
         data-testid="datepicker-input"
-        placeholder={
-          variant === REGULAR_DATE_PICKER
-            ? dateFormat.toLowerCase()
-            : `${dateFormat.toLowerCase()} - ${dateFormat.toLowerCase()}`
-        }
+        placeholder={dateFormat.toLowerCase()}
         value={inputValue}
         rightAddon={inputRightAddon}
         onChange={handleInputOnChange}

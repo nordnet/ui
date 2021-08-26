@@ -36,7 +36,7 @@ import Button from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
 import CoachMarks from './Molecules/CoachMarks';
 import CollapsibleCard from './Molecules/CollapsibleCard';
-import DatePicker from './Molecules/DatePicker';
+import { DatePicker, DateRangePicker } from './Molecules/DatePicker';
 import Drawer from './Molecules/Drawer';
 import FeedbackBanner from './Molecules/FeedbackBanner';
 import Fieldset from './Molecules/Fieldset';
@@ -134,6 +134,7 @@ export {
   CollapsibleCard,
   CssGrid,
   DatePicker,
+  DateRangePicker,
   DateTime,
   Development,
   Drawer,
