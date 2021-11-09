@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 import { Box, OldIcon, Typography } from '../..';
 import { isBoolean, isFunction, isString } from '../../common/utils';
-import { AccordionItemComponent } from './AccordionItem.types';
+import { Props } from './AccordionItem.types';
 
 const Item = styled.div<{
   $hasFocus: boolean;
@@ -20,11 +20,6 @@ const Item = styled.div<{
 }>`
   & + & {
     border-top: 1px solid ${(p) => p.theme.color.divider};
-  }
-
-  &:hover {
-    background-color: ${({ $disabled, $disableBackgroundColor, theme }) =>
-      $disableBackgroundColor || $disabled ? '' : theme.color.background};
   }
 
   outline: ${({ $hasFocus, theme }) => ($hasFocus ? `1px solid ${theme.color.cta}` : 'none')};
@@ -70,7 +65,13 @@ const OldIconWrapper = styled.div<{ $withChevron?: boolean }>`
   ${(p) => (p.$withChevron ? 'right' : 'left')}: 0;
 `;
 
-export const AccordionItem: AccordionItemComponent = React.forwardRef(
+const Content = styled(Box)``;
+
+const components = {
+  Content,
+};
+
+export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
   (
     {
       as = 'h3',
@@ -176,7 +177,7 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
               }}
               transition={{ duration: 0.16, ease: 'easeOut' }}
             >
-              <Box pt={1} pb={3} pl={withChevron ? 0 : 6} pr={withChevron ? 6 : 0}>
+              <Content pt={1} pb={3} pl={withChevron ? 0 : 6} pr={withChevron ? 6 : 0}>
                 {isString(children) ? (
                   <Typography as="p" type="secondary" color={(t) => t.color.accordionText}>
                     {children}
@@ -184,11 +185,13 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
                 ) : (
                   children
                 )}
-              </Box>
+              </Content>
             </motion.section>
           )}
         </AnimatePresence>
       </Item>
     );
   },
-);
+) as any as React.FC<Props> & { components: typeof components };
+
+AccordionItem.components = components;

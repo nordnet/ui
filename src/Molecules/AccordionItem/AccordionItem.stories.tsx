@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 import { AccordionItem, Box, Button, Flexbox, Typography } from '../..';
 
 export default {
@@ -7,6 +8,12 @@ export default {
     component: AccordionItem,
   },
 };
+
+const StyledAccordionItem = styled(AccordionItem)`
+  ${AccordionItem.components.Content} {
+    padding-left: ${(p) => p.theme.spacing.unit(20)}px;
+  }
+`;
 
 const ExampleContent = () => (
   <Typography as="p" type="secondary" color={(t) => t.color.accordionText}>
@@ -26,6 +33,12 @@ export const expanded = () => (
   <AccordionItem title="Låg CO₂ risk" expandedInitial>
     <ExampleContent />
   </AccordionItem>
+);
+
+export const withStyledContent = () => (
+  <StyledAccordionItem title="Sustainability score">
+    <ExampleContent />
+  </StyledAccordionItem>
 );
 
 export const controlled = () => {

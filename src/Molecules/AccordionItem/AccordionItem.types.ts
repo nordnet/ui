@@ -1,4 +1,4 @@
-type Props = {
+export type Props = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   children?: React.ReactNode;
   className?: string;
@@ -20,5 +20,3 @@ type Props = {
   pl?: number;
   pr?: number;
 };
-
-export type AccordionItemComponent = React.FC<Props>;
