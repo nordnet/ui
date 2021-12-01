@@ -139,6 +139,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     orderAccountLabel: rawColor.gray1,
     orderDepthBackground: rawColor.gray6,
     orderDepthDarkBackground: rawColor.gray5,
+    orderPanelLabelColor: rawColor.gray600,
 
     otherMonthDateText: rawColor.gray4,
 
