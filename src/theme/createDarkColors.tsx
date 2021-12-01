@@ -187,7 +187,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     shadowSwitch: Color(rawColor.black).alpha(0.05).rgb().string(),
 
     shareville: rawColor.complementaryGreen1,
-    skeleton: rawColor.gray6,
+    skeleton: rawColor.gray0,
 
     sliderBackgroundColor: rawColor.gray6,
     sliderColor: rawColor.cta,
