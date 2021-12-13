@@ -3430,7 +3430,7 @@ exports[`Storyshots Molecules / Input / Radio With hide label 1`] = `
 .c7 {
   width: 18px;
   height: 18px;
-  border: 1px solid #BCBCB6;
+  border: 1px solid #BDBDBD;
   background-color: #FFFFFF;
   position: relative;
   border-radius: 50%;
@@ -3468,7 +3468,7 @@ exports[`Storyshots Molecules / Input / Radio With hide label 1`] = `
 }
 
 .c2:hover .c6 {
-  border-color: #4B4B46;
+  border-color: #424242;
 }
 
 .c5 {

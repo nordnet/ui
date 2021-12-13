@@ -282,6 +282,10 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     quickFilterSelectedText: rawColor.blue400,
 
     warning: rawColor.index,
+    
+    worldMapLand: rawColor.blue700,
+    worldMapWater: rawColor.gray800,
+
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,

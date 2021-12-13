@@ -286,6 +286,10 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     quickFilterSelectedText: rawColor.blue500,
 
     warning: rawColor.index,
+
+    worldMapLand: rawColor.blue600,
+    worldMapWater: rawColor.gray800,
+
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,

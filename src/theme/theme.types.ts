@@ -548,6 +548,10 @@ export type ThemeColors = {
   transferStatusBannerText3: string;
   /** index */
   warning: string;
+  /** index */
+  worldMapLand: string;
+  /** index */
+  worldMapWater: string;
   /** SFDR Article 6 */
   sfdrArticle6: string;
   /** SFDR Article 8 */
