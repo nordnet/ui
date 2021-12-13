@@ -40,7 +40,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     barScaleActiveBar: rawColor.complementaryBlue1,
     barScaleInactiveBar: rawColor.gray6,
 
-    borderActive: rawColor.cta,
+    borderActive: rawColor.blue500,
 
     bubbleBackground: rawColor.white,
     bubbleBorder: rawColor.gray4,

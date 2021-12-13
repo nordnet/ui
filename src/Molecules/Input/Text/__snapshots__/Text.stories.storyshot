@@ -71,7 +71,7 @@ Array [
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -237,7 +237,7 @@ exports[`Storyshots Molecules / Input / Text Alternating Types 1`] = `
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -314,7 +314,7 @@ exports[`Storyshots Molecules / Input / Text Alternating Types 1`] = `
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7::-webkit-input-placeholder {
@@ -632,7 +632,7 @@ exports[`Storyshots Molecules / Input / Text Both addons 1`] = `
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -816,7 +816,7 @@ exports[`Storyshots Molecules / Input / Text Default 1`] = `
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -1023,7 +1023,7 @@ exports[`Storyshots Molecules / Input / Text Disabled +addon 1`] = `
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -1205,7 +1205,7 @@ exports[`Storyshots Molecules / Input / Text Disabled 1`] = `
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -1382,7 +1382,7 @@ exports[`Storyshots Molecules / Input / Text Edge cases 1`] = `
 }
 
 .c10:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c10::-webkit-input-placeholder {
@@ -1698,7 +1698,7 @@ exports[`Storyshots Molecules / Input / Text Error if empty text 1`] = `
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -1879,7 +1879,7 @@ exports[`Storyshots Molecules / Input / Text Extra info below 1`] = `
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -2062,7 +2062,7 @@ exports[`Storyshots Molecules / Input / Text Extra info with error 1`] = `
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -2324,7 +2324,7 @@ Array [
 }
 
 .c10:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c10::-webkit-input-placeholder {
@@ -2402,7 +2402,7 @@ Array [
 }
 
 .c11:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11::-webkit-input-placeholder {
@@ -2480,7 +2480,7 @@ Array [
 }
 
 .c15:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c15::-webkit-input-placeholder {
@@ -2852,7 +2852,7 @@ exports[`Storyshots Molecules / Input / Text Hidden label 1`] = `
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -3015,7 +3015,7 @@ exports[`Storyshots Molecules / Input / Text On a coloured background 1`] = `
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7::-webkit-input-placeholder {
@@ -3287,7 +3287,7 @@ Array [
 }
 
 .c10:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c10::-webkit-input-placeholder {
@@ -3385,7 +3385,7 @@ Array [
 }
 
 .c14:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c14::-webkit-input-placeholder {
@@ -3485,7 +3485,7 @@ Array [
 }
 
 .c15:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c15::-webkit-input-placeholder {
@@ -3585,7 +3585,7 @@ Array [
 }
 
 .c18:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c18::-webkit-input-placeholder {
@@ -3686,7 +3686,7 @@ Array [
 }
 
 .c19:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c19::-webkit-input-placeholder {
@@ -4270,7 +4270,7 @@ Array [
 }
 
 .c10:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c10::-webkit-input-placeholder {
@@ -4600,7 +4600,7 @@ exports[`Storyshots Molecules / Input / Text Right addon 1`] = `
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -4930,7 +4930,7 @@ exports[`Storyshots Molecules / Input / Text Simple login form 1`] = `
 }
 
 .c9:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c9::-webkit-input-placeholder {
@@ -5007,7 +5007,7 @@ exports[`Storyshots Molecules / Input / Text Simple login form 1`] = `
 }
 
 .c11:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11::-webkit-input-placeholder {
@@ -5358,7 +5358,7 @@ Array [
 }
 
 .c10:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c10::-webkit-input-placeholder {
@@ -5435,7 +5435,7 @@ Array [
 }
 
 .c12:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c12::-webkit-input-placeholder {
@@ -5513,7 +5513,7 @@ Array [
 }
 
 .c15:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c15::-webkit-input-placeholder {
@@ -5591,7 +5591,7 @@ Array [
 }
 
 .c19:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c19::-webkit-input-placeholder {
@@ -6080,7 +6080,7 @@ exports[`Storyshots Molecules / Input / Text Success 1`] = `
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -6239,7 +6239,7 @@ Array [
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -6395,7 +6395,7 @@ Array [
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -6551,7 +6551,7 @@ Array [
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -6711,7 +6711,7 @@ exports[`Storyshots Molecules / Input / Text With auto focus 1`] = `
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -6870,7 +6870,7 @@ exports[`Storyshots Molecules / Input / Text With default value (Uncontrolled be
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -7029,7 +7029,7 @@ exports[`Storyshots Molecules / Input / Text With maxLength 1`] = `
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -7209,7 +7209,7 @@ Array [
 }
 
 .c9:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c9::-webkit-input-placeholder {
@@ -7422,7 +7422,7 @@ exports[`Storyshots Molecules / Input / Text With tooltip as label addon 1`] = `
 }
 
 .c9:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c9::-webkit-input-placeholder {
@@ -7616,7 +7616,7 @@ exports[`Storyshots Molecules / Input / Text With value (Controlled behaviour) 1
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {

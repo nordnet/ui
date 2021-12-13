@@ -38,7 +38,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     barScaleActiveBar: rawColor.complementaryTurquoise1,
     barScaleInactiveBar: rawColor.gray6,
 
-    borderActive: rawColor.cta,
+    borderActive: rawColor.blue500,
 
     bubbleBackground: rawColor.gray800,
     bubbleBorder: rawColor.gray700,

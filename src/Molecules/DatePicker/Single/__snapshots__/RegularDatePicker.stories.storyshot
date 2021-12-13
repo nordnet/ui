@@ -108,7 +108,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Allow Update Wh
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7::-webkit-input-placeholder {
@@ -433,7 +433,7 @@ Array [
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7::-webkit-input-placeholder {
@@ -665,7 +665,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Default 1`] = `
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7::-webkit-input-placeholder {
@@ -893,7 +893,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Disabled Input 
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7::-webkit-input-placeholder {
@@ -1125,7 +1125,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Full Width Inpu
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7::-webkit-input-placeholder {
@@ -1356,7 +1356,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Fullscreen On M
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7::-webkit-input-placeholder {
@@ -1587,7 +1587,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Same Week Disab
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7::-webkit-input-placeholder {
@@ -1818,7 +1818,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Same Week Enabl
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7::-webkit-input-placeholder {

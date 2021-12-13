@@ -114,7 +114,7 @@ exports[`Storyshots Molecules / Input / Number Default 1`] = `
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -163,7 +163,7 @@ exports[`Storyshots Molecules / Input / Number Default 1`] = `
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -420,7 +420,7 @@ exports[`Storyshots Molecules / Input / Number Disabled 1`] = `
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -464,7 +464,7 @@ exports[`Storyshots Molecules / Input / Number Disabled 1`] = `
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -734,7 +734,7 @@ exports[`Storyshots Molecules / Input / Number On a coloured background 1`] = `
 }
 
 .c9:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -783,7 +783,7 @@ exports[`Storyshots Molecules / Input / Number On a coloured background 1`] = `
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -1127,7 +1127,7 @@ Array [
 }
 
 .c11:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -1234,7 +1234,7 @@ Array [
 }
 
 .c13:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -1345,7 +1345,7 @@ Array [
 }
 
 .c14:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -1456,7 +1456,7 @@ Array [
 }
 
 .c17:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -1566,7 +1566,7 @@ Array [
 }
 
 .c18:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -1681,7 +1681,7 @@ Array [
 }
 
 .c22:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -2447,7 +2447,7 @@ Array [
 }
 
 .c12:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -2496,7 +2496,7 @@ Array [
 }
 
 .c11:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -2960,7 +2960,7 @@ exports[`Storyshots Molecules / Input / Number With a smaller step 1`] = `
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -3009,7 +3009,7 @@ exports[`Storyshots Molecules / Input / Number With a smaller step 1`] = `
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -3271,7 +3271,7 @@ exports[`Storyshots Molecules / Input / Number With all actions 1`] = `
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -3320,7 +3320,7 @@ exports[`Storyshots Molecules / Input / Number With all actions 1`] = `
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -3587,7 +3587,7 @@ exports[`Storyshots Molecules / Input / Number With auto focus 1`] = `
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -3636,7 +3636,7 @@ exports[`Storyshots Molecules / Input / Number With auto focus 1`] = `
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -3916,7 +3916,7 @@ exports[`Storyshots Molecules / Input / Number With both addons 1`] = `
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -4153,7 +4153,7 @@ exports[`Storyshots Molecules / Input / Number With default value (Uncontrolled 
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -4202,7 +4202,7 @@ exports[`Storyshots Molecules / Input / Number With default value (Uncontrolled 
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -4473,7 +4473,7 @@ exports[`Storyshots Molecules / Input / Number With error if value is less than 
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -4522,7 +4522,7 @@ exports[`Storyshots Molecules / Input / Number With error if value is less than 
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -4806,7 +4806,7 @@ exports[`Storyshots Molecules / Input / Number With extra info and error 1`] = `
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -4855,7 +4855,7 @@ exports[`Storyshots Molecules / Input / Number With extra info and error 1`] = `
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -5139,7 +5139,7 @@ exports[`Storyshots Molecules / Input / Number With extra info below 1`] = `
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -5188,7 +5188,7 @@ exports[`Storyshots Molecules / Input / Number With extra info below 1`] = `
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -5451,7 +5451,7 @@ exports[`Storyshots Molecules / Input / Number With hidden label 1`] = `
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -5500,7 +5500,7 @@ exports[`Storyshots Molecules / Input / Number With hidden label 1`] = `
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -5779,7 +5779,7 @@ Array [
 }
 
 .c11:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -5828,7 +5828,7 @@ Array [
 }
 
 .c10:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -6145,7 +6145,7 @@ exports[`Storyshots Molecules / Input / Number With label tooltip 1`] = `
 }
 
 .c11:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -6194,7 +6194,7 @@ exports[`Storyshots Molecules / Input / Number With label tooltip 1`] = `
 }
 
 .c10:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -6492,7 +6492,7 @@ exports[`Storyshots Molecules / Input / Number With max and min 1`] = `
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -6541,7 +6541,7 @@ exports[`Storyshots Molecules / Input / Number With max and min 1`] = `
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -6775,7 +6775,7 @@ exports[`Storyshots Molecules / Input / Number With no steppers 1`] = `
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -7073,7 +7073,7 @@ Array [
 }
 
 .c19:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -7122,7 +7122,7 @@ Array [
 }
 
 .c11:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -7200,7 +7200,7 @@ Array [
 }
 
 .c12:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -7279,7 +7279,7 @@ Array [
 }
 
 .c15:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -7358,7 +7358,7 @@ Array [
 }
 
 .c18:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -7902,7 +7902,7 @@ exports[`Storyshots Molecules / Input / Number With right addon 1`] = `
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -8170,7 +8170,7 @@ Array [
 }
 
 .c12:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -8219,7 +8219,7 @@ Array [
 }
 
 .c11:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -8298,7 +8298,7 @@ Array [
 }
 
 .c15:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -8377,7 +8377,7 @@ Array [
 }
 
 .c16:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -8911,7 +8911,7 @@ exports[`Storyshots Molecules / Input / Number With success 1`] = `
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -8960,7 +8960,7 @@ exports[`Storyshots Molecules / Input / Number With success 1`] = `
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -9223,7 +9223,7 @@ Array [
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -9272,7 +9272,7 @@ Array [
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 

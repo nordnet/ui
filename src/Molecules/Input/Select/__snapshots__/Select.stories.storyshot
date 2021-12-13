@@ -133,11 +133,11 @@ exports[`Storyshots Molecules / Input / Select Accessible From Document Forms 1`
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -482,11 +482,11 @@ exports[`Storyshots Molecules / Input / Select Actions 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -823,11 +823,11 @@ exports[`Storyshots Molecules / Input / Select Actions And Empty Option List 1`]
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -1116,11 +1116,11 @@ exports[`Storyshots Molecules / Input / Select Auto Focus 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -1461,11 +1461,11 @@ Array [
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -1965,11 +1965,11 @@ Array [
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -2307,11 +2307,11 @@ exports[`Storyshots Molecules / Input / Select Controlled behaviour 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -2648,11 +2648,11 @@ exports[`Storyshots Molecules / Input / Select Custom Renderers 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -2979,11 +2979,11 @@ exports[`Storyshots Molecules / Input / Select Default Story 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -3316,11 +3316,11 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
 }
 
 .c10:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c10.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c21 {
@@ -3337,11 +3337,11 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
 }
 
 .c21:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c21.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c25 {
@@ -3358,11 +3358,11 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
 }
 
 .c25:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c25.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c27 {
@@ -3379,11 +3379,11 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
 }
 
 .c27:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c27.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c15 {
@@ -4313,11 +4313,11 @@ exports[`Storyshots Molecules / Input / Select Disabled Items 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -4680,11 +4680,11 @@ Array [
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -5050,11 +5050,11 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
 }
 
 .c7:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c12 {
@@ -5391,11 +5391,11 @@ exports[`Storyshots Molecules / Input / Select Fully Empty 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -5684,11 +5684,11 @@ exports[`Storyshots Molecules / Input / Select Grouped Options 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -6065,11 +6065,11 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect 1`] =
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -6442,11 +6442,11 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect Contr
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -6829,11 +6829,11 @@ exports[`Storyshots Molecules / Input / Select Hide Label 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -7150,11 +7150,11 @@ exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
 }
 
 .c9:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c9.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c14 {
@@ -10115,11 +10115,11 @@ exports[`Storyshots Molecules / Input / Select Multi Select Uncontrolled 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -10452,11 +10452,11 @@ exports[`Storyshots Molecules / Input / Select Multiselect 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -10789,11 +10789,11 @@ exports[`Storyshots Molecules / Input / Select Multiselect Actions 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -11126,11 +11126,11 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -11470,11 +11470,11 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All With Full 
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -11831,11 +11831,11 @@ exports[`Storyshots Molecules / Input / Select On A Coloured Background 1`] = `
 }
 
 .c7:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c12 {
@@ -12136,11 +12136,11 @@ exports[`Storyshots Molecules / Input / Select On Blur And On Focus 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -12477,11 +12477,11 @@ exports[`Storyshots Molecules / Input / Select On Search Query Change 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -12818,11 +12818,11 @@ exports[`Storyshots Molecules / Input / Select On Search Query Change Without Op
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -13115,11 +13115,11 @@ exports[`Storyshots Molecules / Input / Select Overflow Story 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -13802,11 +13802,11 @@ exports[`Storyshots Molecules / Input / Select Passing Truncated Components 1`] 
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -14146,11 +14146,11 @@ exports[`Storyshots Molecules / Input / Select Placement Top 1`] = `
 }
 
 .c7:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c12 {
@@ -14491,11 +14491,11 @@ exports[`Storyshots Molecules / Input / Select Preselected Options 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -14833,11 +14833,11 @@ exports[`Storyshots Molecules / Input / Select Search Story 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -15186,11 +15186,11 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
 }
 
 .c10:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c10.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c21 {
@@ -15207,11 +15207,11 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
 }
 
 .c21:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c21.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c25 {
@@ -15228,11 +15228,11 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
 }
 
 .c25:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c25.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c27 {
@@ -15249,11 +15249,11 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
 }
 
 .c27:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c27.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c15 {
@@ -16187,11 +16187,11 @@ exports[`Storyshots Molecules / Input / Select Tracking 1`] = `
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -16493,11 +16493,11 @@ Array [
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -16795,11 +16795,11 @@ Array [
 }
 
 .c6:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c11 {
@@ -17159,11 +17159,11 @@ exports[`Storyshots Molecules / Input / Select With Custom Height 1`] = `
 }
 
 .c15:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c15.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c20 {
@@ -17551,11 +17551,11 @@ exports[`Storyshots Molecules / Input / Select With Label Tooltip 1`] = `
 }
 
 .c9:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c9.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c14 {
@@ -17909,11 +17909,11 @@ Array [
 }
 
 .c9:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c9.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c14 {
@@ -18265,11 +18265,11 @@ exports[`Storyshots Molecules / Input / Select With Modal Title Full Screen On M
 }
 
 .c9:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c9.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c14 {
@@ -18607,11 +18607,11 @@ exports[`Storyshots Molecules / Input / Select Without Search Component 1`] = `
 }
 
 .c7:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c12 {

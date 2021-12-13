@@ -181,11 +181,11 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
 }
 
 .c9:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c9.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c14 {
@@ -727,11 +727,11 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
 }
 
 .c9:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c9.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c14 {
@@ -1275,11 +1275,11 @@ exports[`Storyshots Molecules / Input / Phone Enable search component 1`] = `
 }
 
 .c9:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c9.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c14 {
@@ -1823,11 +1823,11 @@ exports[`Storyshots Molecules / Input / Phone Full width 1`] = `
 }
 
 .c10:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c10.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c15 {
@@ -2391,11 +2391,11 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
 }
 
 .c9:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c9.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c14 {
@@ -2950,11 +2950,11 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
 }
 
 .c9:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c9.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c14 {
@@ -3501,11 +3501,11 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
 }
 
 .c10:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c10.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c15 {
@@ -4063,11 +4063,11 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
 }
 
 .c9:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c9.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c14 {
@@ -4663,11 +4663,11 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
 }
 
 .c10:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c10.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c15 {
@@ -6133,11 +6133,11 @@ exports[`Storyshots Molecules / Input / Phone With blur and focus function 1`] =
 }
 
 .c9:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c9.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c14 {
@@ -6690,11 +6690,11 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
 }
 
 .c9:focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c9.focus-within {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c14 {

@@ -134,7 +134,7 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Allow Update Whil
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c8::-webkit-input-placeholder {
@@ -582,7 +582,7 @@ Array [
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c8::-webkit-input-placeholder {
@@ -903,7 +903,7 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Default 1`] = `
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c8::-webkit-input-placeholder {
@@ -1206,7 +1206,7 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Disabled Input 1`
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c8::-webkit-input-placeholder {
@@ -1514,7 +1514,7 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Disallow Single D
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c8::-webkit-input-placeholder {
@@ -1820,7 +1820,7 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Same Week Disable
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c8::-webkit-input-placeholder {
@@ -2126,7 +2126,7 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Same Week Enabled
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c8::-webkit-input-placeholder {
@@ -2432,7 +2432,7 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker With Clear Button
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c8::-webkit-input-placeholder {

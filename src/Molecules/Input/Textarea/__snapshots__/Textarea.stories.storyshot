@@ -63,7 +63,7 @@ Array [
 }
 
 .c5:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c5::-webkit-input-placeholder {
@@ -207,7 +207,7 @@ exports[`Storyshots Molecules / Input / Textarea Default 1`] = `
 }
 
 .c5:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c5::-webkit-input-placeholder {
@@ -339,7 +339,7 @@ exports[`Storyshots Molecules / Input / Textarea Disabled 1`] = `
 }
 
 .c5:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c5::-webkit-input-placeholder {
@@ -494,7 +494,7 @@ exports[`Storyshots Molecules / Input / Textarea Edge cases 1`] = `
 }
 
 .c9:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c9::-webkit-input-placeholder {
@@ -783,7 +783,7 @@ exports[`Storyshots Molecules / Input / Textarea Error if empty text 1`] = `
 }
 
 .c5:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c5::-webkit-input-placeholder {
@@ -942,7 +942,7 @@ exports[`Storyshots Molecules / Input / Textarea Extra info below 1`] = `
 }
 
 .c5:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c5::-webkit-input-placeholder {
@@ -1103,7 +1103,7 @@ exports[`Storyshots Molecules / Input / Textarea Extra info with error 1`] = `
 }
 
 .c5:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c5::-webkit-input-placeholder {
@@ -1253,7 +1253,7 @@ exports[`Storyshots Molecules / Input / Textarea Full width 1`] = `
 }
 
 .c5:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c5::-webkit-input-placeholder {
@@ -1386,7 +1386,7 @@ exports[`Storyshots Molecules / Input / Textarea Hidden label 1`] = `
 }
 
 .c5:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c5::-webkit-input-placeholder {
@@ -1527,7 +1527,7 @@ exports[`Storyshots Molecules / Input / Textarea On a coloured background 1`] = 
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -1707,7 +1707,7 @@ Array [
 }
 
 .c9:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c9::-webkit-input-placeholder {
@@ -1983,7 +1983,7 @@ exports[`Storyshots Molecules / Input / Textarea Specific width 1`] = `
 }
 
 .c5:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c5::-webkit-input-placeholder {
@@ -2119,7 +2119,7 @@ exports[`Storyshots Molecules / Input / Textarea Success 1`] = `
 }
 
 .c5:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c5::-webkit-input-placeholder {
@@ -2255,7 +2255,7 @@ exports[`Storyshots Molecules / Input / Textarea With auto focus 1`] = `
 }
 
 .c5:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c5::-webkit-input-placeholder {
@@ -2392,7 +2392,7 @@ exports[`Storyshots Molecules / Input / Textarea With default value (Uncontrolle
 }
 
 .c5:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c5::-webkit-input-placeholder {
@@ -2529,7 +2529,7 @@ exports[`Storyshots Molecules / Input / Textarea With max length 20 characters 1
 }
 
 .c5:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c5::-webkit-input-placeholder {
@@ -2666,7 +2666,7 @@ exports[`Storyshots Molecules / Input / Textarea With resize none 1`] = `
 }
 
 .c5:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c5::-webkit-input-placeholder {
@@ -2823,7 +2823,7 @@ Array [
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c8::-webkit-input-placeholder {
@@ -3014,7 +3014,7 @@ exports[`Storyshots Molecules / Input / Textarea With tooltip as label addon 1`]
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c8::-webkit-input-placeholder {
@@ -3186,7 +3186,7 @@ exports[`Storyshots Molecules / Input / Textarea With value (Controlled behaviou
 }
 
 .c5:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c5::-webkit-input-placeholder {

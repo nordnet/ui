@@ -441,7 +441,7 @@ Array [
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -934,7 +934,7 @@ Array [
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -1518,7 +1518,7 @@ Array [
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7::-webkit-input-placeholder {
@@ -1941,7 +1941,7 @@ Array [
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7::-webkit-input-placeholder {
@@ -2364,7 +2364,7 @@ Array [
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7::-webkit-input-placeholder {
@@ -2787,7 +2787,7 @@ Array [
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c7::-webkit-input-placeholder {
@@ -3204,7 +3204,7 @@ Array [
 }
 
 .c12:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c12::-webkit-input-placeholder {
@@ -3627,7 +3627,7 @@ Array [
 }
 
 .c13:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c13::-webkit-input-placeholder {
@@ -3959,7 +3959,7 @@ Array [
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -4412,7 +4412,7 @@ Array [
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {
@@ -4865,7 +4865,7 @@ Array [
 }
 
 .c6:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
 }
 
 .c6::-webkit-input-placeholder {

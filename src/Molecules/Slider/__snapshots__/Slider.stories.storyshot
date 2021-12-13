@@ -208,7 +208,7 @@ Array [
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -257,7 +257,7 @@ Array [
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
