@@ -32,7 +32,8 @@ const Wrapper: WrapperComponent = styled.span<WrapperComponentProps>`
   box-sizing: border-box;
   height: ${(p) => p.theme.spacing.unit(p.badgeSize)}px;
   min-width: ${(p) => p.theme.spacing.unit(p.badgeSize)}px;
-  background-color: ${(p) => (p.backgroundColor ? p.backgroundColor(p.theme) : p.theme.color.cta)};
+  background-color: ${(p) =>
+    p.backgroundColor ? p.backgroundColor(p.theme) : p.theme.color.badgeBackground};
   ${(p) => (p.color ? `color ${p.color(p.theme)}` : '')};
   ${(p) =>
     p.variant !== 'square' && p.variant !== 'rect'
@@ -61,7 +62,7 @@ export const Badge: BadgeComponent = ({
     return (
       <Typography
         type="tertiary"
-        color={(t) => (color ? color(t) : t.color.textLight)}
+        color={(t) => (color ? color(t) : t.color.badgeTextColor)}
         weight={weight}
       >
         {children}

@@ -35,6 +35,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     backgroundBlack: rawColor.black,
     backgroundDark: rawColor.gray0,
 
+    badgeBackground: rawColor.blue500,
+    badgeTextColor: rawColor.white,
+
     barGraphHighlight: Color(rawColor.complementaryBlue1).alpha(0.1).rgb().string(),
 
     barScaleActiveBar: rawColor.complementaryBlue1,

@@ -159,6 +159,14 @@ export type ThemeColors = {
   /**
    * blue500
    */
+  badgeBackground: string;
+  /**
+   * white
+   */
+  badgeTextColor: string;
+  /**
+   * blue500
+   */
   buttonBackgroundPrimary: string;
   /**
    * blue600
