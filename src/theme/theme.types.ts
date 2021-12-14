@@ -254,6 +254,10 @@ export type ThemeColors = {
   cta: string;
   /** blue600 */
   ctaHover: string;
+  /** blue800 */
+  darkmodeIllustrationBackground: string;
+  /** blue400 */
+  darkmodeIllustrationLightBulb: string;
   /** gray6 */
   dateAvatarBackground1: string;
   /** gray7 */

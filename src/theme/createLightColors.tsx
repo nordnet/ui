@@ -76,6 +76,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     cta: rawColor.blue500,
     ctaHover: rawColor.blue600,
 
+    darkmodeIllustrationBackground: rawColor.blue800,
+    darkmodeIllustrationLightBulb: rawColor.blue400,
+
     dateAvatarBackground1: rawColor.gray6,
     dateAvatarBackground2: rawColor.gray7,
     dateAvatarText1: rawColor.gray2,
