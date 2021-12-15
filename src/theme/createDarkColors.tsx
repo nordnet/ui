@@ -249,7 +249,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     switchReadOnlyTrackBg: Color(rawColor.cta).alpha(0.1).rgb().string(),
 
     tableBorder: rawColor.gray0,
-    tableRowBackground: rawColor.gray0,
+    tableRowBackground: rawColor.gray800,
     tableRowHover: rawColor.gray1,
     tableEmphasis: rawColor.blue800,
 
