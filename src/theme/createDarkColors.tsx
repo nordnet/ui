@@ -95,6 +95,10 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     divider: rawColor.gray900,
     pageWrapperDivider: rawColor.gray800,
     emptyState: rawColor.gray4,
+
+    feedbackModuleBackground: rawColor.gray700,
+    feedbackPageBackground: rawColor.gray800,
+
     flagBorder: rawColor.gray6,
     fundExchange: rawColor.gray2,
 

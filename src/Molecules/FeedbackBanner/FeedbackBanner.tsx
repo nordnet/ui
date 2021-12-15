@@ -41,7 +41,7 @@ const getIcon = (variant: FeedbackBannerProps['variant']) => {
 
 const StyledContainer = styled.div<FeedbackBannerProps>`
   background-color: ${({ theme, scope }) =>
-    theme.color[scope === 'module' ? 'background' : 'card']};
+    theme.color[scope === 'module' ? 'feedbackModuleBackground' : 'feedbackPageBackground']};
   border-left: ${(p) => p.theme.spacing.unit(1)}px solid ${getBorderColor};
   padding: ${(p) => `${p.theme.spacing.unit(1)}px ${p.theme.spacing.unit(3)}px`};
   box-sizing: border-box;

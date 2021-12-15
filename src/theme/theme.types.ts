@@ -284,6 +284,13 @@ export type ThemeColors = {
   divider: string;
   /** gray4 */
   emptyState: string;
+
+  /** gray100 */
+  feedbackModuleBackground: string;
+  /** white */
+  feedbackPageBackground: string;
+
+
   /** gray6 */
   flagBorder: string;
   /** gray2 */
