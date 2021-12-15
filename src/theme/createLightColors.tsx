@@ -84,6 +84,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     dateAvatarText1: rawColor.gray2,
     dateAvatarText2: rawColor.gray0,
 
+    dateBadgeUpperBackground: rawColor.gray200,
+    dateBadgeLowerBackground: rawColor.gray100,
+
     datePickerWithinRangeBackground: Color(rawColor.gray2).alpha(0.1).rgb().string(),
     datePickerWithinRangeFade: Color(rawColor.gray2).alpha(0.01).rgb().string(),
 

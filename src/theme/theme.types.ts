@@ -266,6 +266,12 @@ export type ThemeColors = {
   dateAvatarText1: string;
   /** gray0 */
   dateAvatarText2: string;
+
+  /** gray200 */
+  dateBadgeUpperBackground: string;
+  /** gray100 */
+  dateBadgeLowerBackground: string;
+
   /** gray2 */
   datePickerWithinRangeBackground: string;
   /** gray2 */
