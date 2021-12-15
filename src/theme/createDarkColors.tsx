@@ -253,7 +253,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     tableBorder: rawColor.gray0,
     tableRowBackground: rawColor.gray800,
-    tableRowHover: rawColor.gray1,
+    tableRowHover: rawColor.gray700,
     tableEmphasis: rawColor.blue800,
 
     text: rawColor.gray7,
