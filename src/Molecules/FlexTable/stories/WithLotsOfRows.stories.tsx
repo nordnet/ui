@@ -144,6 +144,7 @@ export const BigTableWithoutStickyHeader = () => {
           <FlexTable.HeaderRow>
             {[...Array(columnsLength)]?.map((_, index) => (
               <FlexTable.Header
+                key={`column${index + 1}`}
                 columnId={`column${index + 1}`}
                 sortable
                 onSort={(columnId, nextSortOrder) => {
