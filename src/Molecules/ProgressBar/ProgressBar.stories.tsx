@@ -1,36 +1,29 @@
 import React from 'react';
-import { array, number } from '@storybook/addon-knobs';
+import { Meta, Story } from '@storybook/react';
+
 import ProgressBar from '.';
 import { Box, Flexbox } from '../..';
+import { Props } from './ProgressBar.types';
 
 export default {
   title: 'Molecules / ProgressBar',
-  parameters: {
-    component: ProgressBar,
-  },
+  component: ProgressBar,
+} as Meta;
+
+const Template: Story<Props> = (args) => <ProgressBar {...args} />;
+
+export const DefaultStory = Template.bind({});
+DefaultStory.args = {
+  currentStep: 2,
+  numberOfSteps: 3,
+  stepLabels: [],
 };
+DefaultStory.storyName = 'Default';
 
-const getProps = ({ numberOfSteps = 3, currentStep = 1, stepLabels = ['foo', 'bar', 'baz'] }) => ({
-  numberOfSteps: number('Number of steps', numberOfSteps),
-  currentStep: number('Current step', currentStep),
-  stepLabels: array('Step labels', stepLabels),
-});
-
-export const Default = () => {
-  return (
-    <Box px={10}>
-      <ProgressBar {...getProps({ numberOfSteps: 3, currentStep: 2, stepLabels: [] })} />
-    </Box>
-  );
-};
-
-export const WithLabels = () => {
-  const stepLabels: string[] = ['Lorem ipsum', 'Dolor sit amet', 'Foo bar'];
-  return (
-    <Box px={10}>
-      <ProgressBar {...getProps({ numberOfSteps: 3, currentStep: 2, stepLabels })} />
-    </Box>
-  );
+export const WithLabels = Template.bind({});
+WithLabels.args = {
+  ...DefaultStory.args,
+  stepLabels: ['Lorem ipsum', 'Dolor sit amet', 'Foo bar'],
 };
 
 export const StepProgression = () => {

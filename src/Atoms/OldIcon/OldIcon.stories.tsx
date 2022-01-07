@@ -1,12 +1,13 @@
 import React from 'react';
-import { number, select, color } from '@storybook/addon-knobs';
-import { Theme } from '../../theme/theme.types';
+import { Meta, Story } from '@storybook/react';
+
 import { OldIcon } from '../..';
 import { Display } from '../../common/Display';
+import { BaseProps, ChildProps } from './IconBase.types';
 
 export default {
   title: 'Atoms / OldIcon',
-};
+} as Meta;
 
 export const defaultUse = () => <OldIcon.ArrowRight />;
 
@@ -19,82 +20,111 @@ export const inlineStory = () => (
     You can put the <OldIcon.ArrowRight inline /> directly in the text with inline prop!
   </>
 );
+inlineStory.storyName = 'Inline';
 
-const directionKnob = () => select('Direction', ['up', 'right', 'down', 'left'], 'up');
+const TemplateThinArrow: Story<
+  BaseProps & {
+    direction: 'up' | 'right' | 'down' | 'left';
+  }
+> = (args) => <OldIcon.ThinArrow {...args} />;
 
-export const thinArrow = () => <OldIcon.ThinArrow direction={directionKnob()} />;
+export const ThinArrow = TemplateThinArrow.bind({});
+ThinArrow.args = {
+  direction: 'up',
+};
 
-export const thinChevron = () => <OldIcon.ThinChevron direction={directionKnob()} />;
+const TemplateThinChevron: Story<
+  BaseProps & {
+    direction: 'up' | 'right' | 'down' | 'left';
+  }
+> = (args) => <OldIcon.ThinChevron {...args} />;
+export const ThinChevron = TemplateThinChevron.bind({});
+ThinChevron.args = {
+  direction: 'up',
+};
 
-export const chevron = () => <OldIcon.Chevron direction={directionKnob()} />;
+const TemplateChevron: Story<
+  BaseProps & {
+    direction: 'up' | 'right' | 'down' | 'left';
+  }
+> = (args) => <OldIcon.Chevron {...args} />;
+export const Chevron = TemplateChevron.bind({});
+Chevron.args = {
+  direction: 'up',
+};
 
-export const sortArrow = () => (
-  <OldIcon.SortArrow direction={select('Direction', ['ascending', 'descending'], 'ascending')} />
-);
+const TemplateSortArrow: Story<
+  BaseProps & {
+    direction: 'ascending' | 'descending';
+  }
+> = (args) => <OldIcon.SortArrow {...args} />;
+export const SortArrow = TemplateSortArrow.bind({});
+SortArrow.args = {
+  direction: 'ascending',
+};
 
-export const Account = () => (
-  <OldIcon.Account
-    size={number('Size', 10)}
-    fill={(t) => color('Fill color', t.color.backgroundBlack)}
-  />
-);
+const TemplateAccount: Story<BaseProps> = (args) => <OldIcon.Account {...args} />;
+export const Account = TemplateAccount.bind({});
+Account.args = {
+  size: 10,
+  fill: (t) => t.color.backgroundBlack,
+};
 
-export const CalendarO = () => (
-  <OldIcon.CalendarO
-    size={number('Size', 10)}
-    fill={(t) => color('Fill color', t.color.backgroundBlack)}
-  />
-);
+const TemplateCalendarO: Story<BaseProps> = (args) => <OldIcon.CalendarO {...args} />;
+export const CalendarO = TemplateCalendarO.bind({});
+CalendarO.args = {
+  size: 10,
+  fill: (t) => t.color.backgroundBlack,
+};
 
-export const FAQ = () => (
-  <OldIcon.FAQ size={number('Size', 10)} fill={(t) => color('Fill color', t.color.cta)} />
-);
+const TemplateFAQ: Story<BaseProps> = (args) => <OldIcon.FAQ {...args} />;
+export const FAQ = TemplateFAQ.bind({});
+FAQ.args = {
+  size: 10,
+  fill: (t) => t.color.cta,
+};
 
-export const Percent = () => (
-  <OldIcon.Percent
-    size={number('Size', 10)}
-    fill={(t) => color('Fill color', t.color.backgroundBlack)}
-  />
-);
+const TemplatePercent: Story<BaseProps> = (args) => <OldIcon.Percent {...args} />;
+export const Percent = TemplatePercent.bind({});
+Percent.args = {
+  size: 10,
+  fill: (t) => t.color.backgroundBlack,
+};
 
-export const Profile = () => (
-  <OldIcon.Profile
-    size={number('Size', 10)}
-    fill={(t) => color('Fill color', t.color.backgroundBlack)}
-  />
-);
+const TemplateProfile: Story<BaseProps> = (args) => <OldIcon.Profile {...args} />;
+export const Profile = TemplateProfile.bind({});
+Profile.args = {
+  size: 10,
+  fill: (t) => t.color.backgroundBlack,
+};
 
-export const ThreeDotsO = () => (
-  <OldIcon.ThreeDotsO
-    size={number('Size', 10)}
-    fill={(t) => color('Fill color', t.color.backgroundBlack)}
-  />
-);
+const TemplateThreeDotsO: Story<BaseProps> = (args) => <OldIcon.ThreeDotsO {...args} />;
+export const ThreeDotsO = TemplateThreeDotsO.bind({});
+ThreeDotsO.args = {
+  size: 10,
+  fill: (t) => t.color.backgroundBlack,
+};
 
-export const TaxPercentage = () => (
-  <OldIcon.TaxPercentage
-    size={number('Size', 10)}
-    fill={(t) => color('Fill color', t.color.backgroundBlack)}
-  />
-);
+const TemplateTaxPercentage: Story<BaseProps> = (args) => <OldIcon.TaxPercentage {...args} />;
+export const TaxPercentage = TemplateTaxPercentage.bind({});
+TaxPercentage.args = {
+  size: 10,
+  fill: (t) => t.color.backgroundBlack,
+};
 
-export const Transfer = () => (
-  <OldIcon.Transfer
-    size={number('Size', 10)}
-    fill={(t) => color('Fill color', t.color.backgroundBlack)}
-  />
-);
+const TemplateTransfer: Story<BaseProps> = (args) => <OldIcon.Transfer {...args} />;
+export const Transfer = TemplateTransfer.bind({});
+Transfer.args = {
+  size: 10,
+  fill: (t) => t.color.backgroundBlack,
+};
 
-export const UrgentMessage = () => (
-  <OldIcon.UrgentMessage
-    size={number('Size', 10)}
-    fill={(t: Theme) => color('Fill color', t.color.text)}
-    stroke={(t: Theme) => color('Stroke color', t.color.negative)}
-  />
-);
-
-inlineStory.story = {
-  name: 'Inline',
+const TemplateUrgentMessage: Story<ChildProps> = (args) => <OldIcon.UrgentMessage {...args} />;
+export const UrgentMessage = TemplateUrgentMessage.bind({});
+UrgentMessage.args = {
+  size: 10,
+  fill: (t) => t.color.text,
+  stroke: (t) => t.color.negative,
 };
 
 export const differentSizeAndFill = () => (

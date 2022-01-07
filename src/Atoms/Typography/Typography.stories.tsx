@@ -1,16 +1,15 @@
 import React from 'react';
-import { select, withKnobs } from '@storybook/addon-knobs';
+import { Meta, Story } from '@storybook/react';
 
 import { Flexbox, Typography } from '../..';
 import { Display } from '../../common/Display';
+import { Props } from './Typography.types';
 
 export default {
   title: 'Atoms / Typography',
-  parameters: {
-    component: Typography,
-  },
-  decorators: [withKnobs],
-};
+  component: Typography,
+} as Meta;
+
 export const all = () => (
   <Flexbox container direction="column">
     <Typography type="hero">Hero 48/52px extrabold (46/48px mobile)</Typography>
@@ -299,29 +298,10 @@ export const textAlign = () => (
   </Flexbox>
 );
 
-export const whiteSpace = () => {
-  const sampleText = 'This text \nshould have \nline breaks.';
-  return (
-    <Typography
-      type="primary"
-      whiteSpace={select(
-        'White space',
-        {
-          normal: 'normal',
-          nowrap: 'nowrap',
-          pre: 'pre',
-          preWrap: 'pre-wrap',
-          preLine: 'pre-line',
-          breakSpaces: 'break-spaces',
-          inherit: 'inherit',
-          initial: 'initial',
-          revert: 'revert',
-          unset: 'unset',
-        },
-        'pre-wrap',
-      )}
-    >
-      {sampleText}
-    </Typography>
-  );
+const WhiteSpaceTemplate: Story<Props> = (args) => <Typography {...args} />;
+export const WhiteSpace = WhiteSpaceTemplate.bind({});
+WhiteSpace.args = {
+  type: 'primary',
+  whiteSpace: 'normal',
+  children: 'This text \nshould have \nline breaks.',
 };

@@ -81,3 +81,8 @@ type MediaRelatedProps<T> = {
 };
 
 export type Props = MediaRelatedProps<FlexProps> & FlexProps & { children?: React.ReactNode };
+
+export type StoryTemplateProps = {
+  cols: { children: React.ReactNode; itemArgs?: ItemProps }[];
+  containerArgs?: ContainerProps;
+};

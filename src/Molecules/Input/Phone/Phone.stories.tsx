@@ -1,33 +1,26 @@
 import React from 'react';
-import { boolean, select, withKnobs } from '@storybook/addon-knobs';
+import { Meta, Story } from '@storybook/react';
 import { actions } from '@storybook/addon-actions';
 
 import { Flexbox, Input } from '../../..';
+import { Props } from './Phone.types';
 
-const { onBlur, onFocus, onChange } = actions('onBlur', 'onFocus', 'onChange');
+const { onChange } = actions('onBlur', 'onFocus', 'onChange');
 
 export default {
   title: 'Molecules / Input / Phone',
-  parameters: {
-    component: Input.Phone,
-  },
-  decorators: [withKnobs],
-};
+  component: Input.Phone,
+} as Meta;
 
-export const defaultStory = () => (
-  <Input.Phone
-    name="default-example"
-    label="Phone number"
-    placeholder="123 456 789"
-    size={select('Size', { Small: 's', Normal: undefined }, undefined)}
-    disabled={boolean('Disabled', false)}
-    onChange={onChange}
-  />
-);
+const Template: Story<Props> = (args) => <Input.Phone {...args} />;
 
-defaultStory.story = {
-  name: 'Default',
+export const DefaultStory = Template.bind({});
+DefaultStory.args = {
+  name: 'default-example',
+  label: 'Phone number',
+  placeholder: '123 456 789',
 };
+DefaultStory.storyName = 'Default';
 
 export const prefilledDefaultValues = () => (
   <Input.Phone
@@ -37,10 +30,6 @@ export const prefilledDefaultValues = () => (
     defaultValue={{ countryCode: '46', phoneNumber: '123 456 789' }}
   />
 );
-
-prefilledDefaultValues.story = {
-  name: 'Prefilled default values',
-};
 
 export const autoFocus = () => (
   <Input.Phone
@@ -52,10 +41,6 @@ export const autoFocus = () => (
   />
 );
 
-autoFocus.story = {
-  name: 'Auto focus',
-};
-
 export const fullWidth = () => (
   <Input.Phone
     name="full-width-example"
@@ -65,10 +50,6 @@ export const fullWidth = () => (
     width="100%"
   />
 );
-
-fullWidth.story = {
-  name: 'Full width',
-};
 
 export const withHelpText = () => (
   <Input.Phone
@@ -80,10 +61,6 @@ export const withHelpText = () => (
   />
 );
 
-withHelpText.story = {
-  name: 'With help text',
-};
-
 export const hasError = () => (
   <Input.Phone
     name="has-error-example"
@@ -93,10 +70,6 @@ export const hasError = () => (
     error="Incorrect phone number"
   />
 );
-
-hasError.story = {
-  name: 'Has an error',
-};
 
 export const hasSuccess = () => (
   <Input.Phone
@@ -108,10 +81,6 @@ export const hasSuccess = () => (
   />
 );
 
-hasSuccess.story = {
-  name: 'Has success',
-};
-
 export const isDisabled = () => (
   <Input.Phone
     name="disabled-example"
@@ -120,10 +89,6 @@ export const isDisabled = () => (
     disabled
   />
 );
-
-isDisabled.story = {
-  name: 'Is disabled',
-};
 
 export const sortByCountry = () => (
   <Flexbox container direction="column" gutter={3}>
@@ -135,39 +100,9 @@ export const sortByCountry = () => (
   </Flexbox>
 );
 
-sortByCountry.story = {
-  name: 'Sort by country',
-};
-
-export const enableSearchComponent = () => (
-  <Input.Phone
-    name="enable-search-component-example"
-    label="Phone number"
-    placeholder="123 456 789"
-    size={select('Size', { Small: 's', Normal: undefined }, undefined)}
-    disabled={boolean('Disabled', false)}
-    onChange={onChange}
-    disableSearchComponent={false}
-  />
-);
-
-enableSearchComponent.story = {
-  name: 'Enable search component',
-};
-
-export const withBlurAndFocus = () => (
-  <Input.Phone
-    name="on-blur-example"
-    label="Phone number"
-    placeholder="123 456 789"
-    size={select('Size', { Small: 's', Normal: undefined }, undefined)}
-    disabled={boolean('Disabled', false)}
-    onChange={onChange}
-    onBlur={onBlur}
-    onFocus={onFocus}
-  />
-);
-
-withBlurAndFocus.story = {
-  name: 'With blur and focus function',
+export const EnableSearchComponent = Template.bind({});
+EnableSearchComponent.args = {
+  ...DefaultStory.args,
+  name: 'enable-search-component-example',
+  disableSearchComponent: false,
 };

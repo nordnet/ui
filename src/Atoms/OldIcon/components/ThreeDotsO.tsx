@@ -1,9 +1,9 @@
 import React from 'react';
 import { IconBase } from '../IconBase';
-import { BaseProps, ColorFn } from '../IconBase.types';
+import { BaseProps } from '../IconBase.types';
 import StyledPath from '../StyledPath';
 
-export const ThreeDotsO = ({ fill, ...props }: BaseProps & { fill: ColorFn | string }) => (
+export const ThreeDotsO = ({ fill, ...props }: BaseProps) => (
   <IconBase {...props} viewBox="0 0 32 32">
     <StyledPath
       fillRule="evenodd"

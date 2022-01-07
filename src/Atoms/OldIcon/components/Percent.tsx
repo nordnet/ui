@@ -1,9 +1,9 @@
 import React from 'react';
 import { IconBase } from '../IconBase';
-import { BaseProps, ColorFn } from '../IconBase.types';
+import { BaseProps } from '../IconBase.types';
 import StyledPath from '../StyledPath';
 
-export const Percent = ({ fill, ...props }: BaseProps & { fill: ColorFn | string }) => (
+export const Percent = ({ fill, ...props }: BaseProps) => (
   <IconBase {...props} viewBox="0 0 32 32">
     <StyledPath d="M3.522 30L25.92 2h2.56L6.084 30H3.522z" strokeColorFn={fill} strokeWidth={0} />
     <StyledPath

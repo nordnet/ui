@@ -1,8 +1,9 @@
 import React, { createElement, useCallback, useMemo, useState } from 'react';
+import { Meta, Story } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { number } from '@storybook/addon-knobs';
 import R from 'ramda';
 import styled from 'styled-components';
+
 import {
   Avatar,
   Box,
@@ -18,7 +19,7 @@ import {
 } from '../../..';
 import { Display } from '../../../common/Display';
 import docs from './Select.mdx';
-import { Option } from './Select.types';
+import { Option, Props } from './Select.types';
 
 const useSelectMachineFromContext = Input.Select.useSelectMachineFromContext;
 
@@ -197,6 +198,15 @@ const AccountListItem = ({ index }) => {
     </StyledBox>
   );
 };
+
+export default {
+  title: 'Molecules / Input / Select',
+  parameters: {
+    docs: {
+      page: docs,
+    },
+  },
+} as Meta;
 
 export const defaultStory = () => (
   <Input.Select
@@ -1792,7 +1802,7 @@ export const withoutSearchComponent = () => (
   </Box>
 );
 
-export const withCustomHeight = () => (
+const CustomHeightTemplate: Story<Props> = (args) => (
   <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
     <CardWithTitle title="Setting a custom `height` overwrites the `size` prop">
       <Input.Select
@@ -1805,17 +1815,13 @@ export const withCustomHeight = () => (
         label="This is a tall input"
         placeholder="What's your favourite berry?"
         fullWidth
-        height={number('Height', 20)}
+        height={args.height}
       />
     </CardWithTitle>
   </Box>
 );
 
-export default {
-  title: 'Molecules / Input / Select',
-  parameters: {
-    docs: {
-      page: docs,
-    },
-  },
+export const WithCustomHeight = CustomHeightTemplate.bind({});
+WithCustomHeight.args = {
+  height: 20,
 };

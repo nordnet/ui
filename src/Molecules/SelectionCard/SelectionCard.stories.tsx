@@ -1,87 +1,61 @@
 import React, { useState } from 'react';
-import { boolean, text, withKnobs } from '@storybook/addon-knobs';
-import { action } from '@storybook/addon-actions';
+import { Meta, Story } from '@storybook/react';
 import styled from 'styled-components';
+
 import { Flexbox, OldIcon, Typography } from '../..';
 import { SelectionCard } from './SelectionCard';
+import { SelectionCard as Props } from './SelectionCard.types';
 
 export default {
   title: 'Molecules / SelectionCard',
-  parameters: {
-    component: SelectionCard,
-  },
-  decorators: [withKnobs],
-};
+  component: SelectionCard,
+} as Meta;
 
 const StyledFlexbox = styled(Flexbox)`
   width: 100%;
 `;
 
-const onChange = action('on change triggered');
+const Template: Story<Props> = (args) => <SelectionCard {...args} />;
 
-const getCardProps = () => ({
-  tag: text('Tag', 'Tag'),
-  text: text(
-    'Text',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dignissim dolor.',
+export const SelectionCardDefault = Template.bind({});
+SelectionCardDefault.args = {
+  title: 'Selection Card Default',
+  tag: 'Tag',
+  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dignissim dolor.',
+  border: true,
+  disabled: false,
+  outline: true,
+  horizontal: false,
+  error: false,
+};
+SelectionCardDefault.storyName = 'Default';
+
+export const WithReactNode = Template.bind({});
+WithReactNode.args = {
+  ...SelectionCardDefault,
+  title: (
+    <StyledFlexbox container justifyContent="flex-start">
+      <Flexbox item>
+        <Typography type="primary" weight="bold">
+          Title in a flexbox
+        </Typography>
+      </Flexbox>
+    </StyledFlexbox>
   ),
-  border: boolean('Border', true),
-  disabled: boolean('Disabled', false),
-  outline: boolean('Outline', true),
-  horizontal: boolean('Horizontal', false),
-  error: boolean('Error', false),
-});
-
-export const SelectionCardDefault = () => (
-  <SelectionCard {...getCardProps()} title="Selection Card Default" onChange={onChange} />
-);
-
-SelectionCardDefault.story = {
-  name: 'Default',
+  text: (
+    <StyledFlexbox container justifyContent="flex-end">
+      <Flexbox item>
+        <Typography type="secondary">Text in a flexbox</Typography>
+      </Flexbox>
+    </StyledFlexbox>
+  ),
 };
 
-export const SelectionCardWithReactNode = () => (
-  <SelectionCard
-    {...getCardProps()}
-    onChange={onChange}
-    title={
-      <StyledFlexbox container justifyContent="flex-start">
-        <Flexbox item>
-          <Typography type="primary" weight="bold">
-            Title in a flexbox
-          </Typography>
-        </Flexbox>
-      </StyledFlexbox>
-    }
-    text={
-      <StyledFlexbox container justifyContent="flex-end">
-        <Flexbox item>
-          <Typography type="secondary">Text in a flexbox</Typography>
-        </Flexbox>
-      </StyledFlexbox>
-    }
-  />
-);
-
-SelectionCardWithReactNode.story = {
-  name: 'With ReactNode',
-};
-
-export const SelectionCardWithIcon = () => {
-  return (
-    <>
-      <SelectionCard
-        {...getCardProps()}
-        title="With Icon"
-        onChange={onChange}
-        icon={<OldIcon.House size={8} />}
-      />
-    </>
-  );
-};
-
-SelectionCardWithIcon.story = {
-  name: 'With icon',
+export const WithIcon = Template.bind({});
+WithIcon.args = {
+  ...SelectionCardDefault,
+  title: 'With Icon',
+  icon: <OldIcon.House size={8} />,
 };
 
 export const withValueControlledBehavior = () => {
@@ -109,6 +83,4 @@ export const withValueControlledBehavior = () => {
   return <Component />;
 };
 
-withValueControlledBehavior.story = {
-  name: 'With controlled behavior',
-};
+withValueControlledBehavior.storyName = 'With controlled behavior';

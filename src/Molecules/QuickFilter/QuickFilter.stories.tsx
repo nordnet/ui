@@ -1,81 +1,37 @@
 import React, { useState } from 'react';
-import { boolean, text, withKnobs } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
+import { Meta, Story } from '@storybook/react';
+
 import { Icon, Card } from '../..';
 import { QuickFilter } from './QuickFilter';
+import { Props } from './QuickFilter.types';
 
 export default {
   title: 'Molecules / QuickFilter',
-  parameters: {
-    component: QuickFilter,
-  },
-  decorators: [withKnobs],
-};
+  component: QuickFilter,
+} as Meta;
 
 const onChange = action('on change triggered');
 
-const getCardProps = (label = '', value = '') => ({
-  label: text(
-    'Label',
-    label ||
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dignissim dolor.',
-  ),
-  value:
-    value ||
-    text(
-      'Value',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dignissim dolor.',
-    ),
-  disabled: boolean('Disabled', false),
-});
+const Template: Story<Props> = (args) => <QuickFilter {...args} />;
 
-export const QuickFilterDefault = () => (
-  <Card>
-    <QuickFilter {...getCardProps('Default')} />
-  </Card>
-);
-
-QuickFilterDefault.story = {
-  name: 'Default',
+export const OnlyLabel = Template.bind({});
+OnlyLabel.args = {
+  label: 'Default',
 };
 
-export const QuickFilterOnlyLabel = () => {
-  return (
-    <Card>
-      <QuickFilter {...getCardProps('Only label')} onChange={onChange} />
-    </Card>
-  );
+export const OnlyIcon = Template.bind({});
+OnlyIcon.args = {
+  icon: <Icon.Money16 />,
 };
 
-QuickFilterOnlyLabel.story = {
-  name: 'Only label',
+export const WithSelectedInitially = Template.bind({});
+WithSelectedInitially.args = {
+  icon: <Icon.Money16 />,
+  selectedInitially: true,
 };
 
-export const QuickFilterOnlyIcon = () => {
-  return (
-    <Card>
-      <QuickFilter {...getCardProps()} label="" onChange={onChange} icon={<Icon.Money16 />} />
-    </Card>
-  );
-};
-
-QuickFilterOnlyIcon.story = {
-  name: 'Only icon',
-};
-
-export const QuickFilterWithSelectedInitially = () => {
-  return (
-    <Card>
-      <QuickFilter {...getCardProps()} label="" icon={<Icon.Money16 />} selectedInitially />
-    </Card>
-  );
-};
-
-QuickFilterWithSelectedInitially.story = {
-  name: 'With selectedInitially',
-};
-
-export const QuickFilterWithValueControlledBehavior = () => {
+export const WithValueControlledBehavior = () => {
   const Component = () => {
     const [isChecked, setIsChecked] = useState(false);
 
@@ -98,8 +54,4 @@ export const QuickFilterWithValueControlledBehavior = () => {
     );
   };
   return <Component />;
-};
-
-QuickFilterWithValueControlledBehavior.story = {
-  name: 'With controlled behavior',
 };

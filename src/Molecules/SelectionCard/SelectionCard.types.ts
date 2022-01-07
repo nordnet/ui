@@ -1,4 +1,4 @@
-type SelectionCard = {
+export type SelectionCard = {
   title: string | React.ReactNode;
   /** @default '' */
   text?: string | React.ReactNode;

@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
-import { boolean, select, text, withKnobs } from '@storybook/addon-knobs';
+import { Meta, Story } from '@storybook/react';
+
 import docs from './CardWithTitle.md';
+import { Props } from './CardWithTitle.types';
 
 import { Box, CardWithTitle, FadedScroll, Flexbox, OldIcon, Typography } from '../..';
 
@@ -40,11 +42,8 @@ const HeightOnCardWithTitle = styled(CardWithTitle)`
 
 export default {
   title: 'Molecules / CardWithTitle',
-  parameters: {
-    component: CardWithTitle,
-  },
-  decorators: [withKnobs],
-};
+  component: CardWithTitle,
+} as Meta;
 
 export const documentation = () => <MD>{docs}</MD>;
 
@@ -52,19 +51,17 @@ export const defaultStory = () => (
   <CardWithTitle title="Konton">A CardWithTitle containing content</CardWithTitle>
 );
 
-defaultStory.story = {
-  name: 'Default',
-};
+const Template: Story<Props & { children: React.ReactNode }> = (args) => (
+  <CardWithTitle {...args} />
+);
 
-export const withComponentAsTitleStory = () => (
+defaultStory.storyName = 'Default';
+
+export const withComponentAsTitle = () => (
   <CardWithTitle title={<Typography type="hero">Hero Title</Typography>}>
     A CardWithTitle containing content
   </CardWithTitle>
 );
-
-withComponentAsTitleStory.story = {
-  name: 'With Component As Title',
-};
 
 export const withVariantBig = () => (
   <CardWithTitle variant="big" title="Title for the card">
@@ -72,29 +69,20 @@ export const withVariantBig = () => (
   </CardWithTitle>
 );
 
-withVariantBig.story = {
-  name: 'With variant big',
-};
-
 export const cardWithTitleAsArticleMostCardWithTitleShouldBeArticle = () => (
   <CardWithTitle as="article" title="Konton">
     A CardWithTitle as a article containing content
   </CardWithTitle>
 );
 
-cardWithTitleAsArticleMostCardWithTitleShouldBeArticle.story = {
-  name: 'CardWithTitle as article (most CardWithTitle should be article)',
-};
+cardWithTitleAsArticleMostCardWithTitleShouldBeArticle.storyName =
+  'CardWithTitle as article (most CardWithTitle should be article)';
 
 export const cardWithTitleAsSection = () => (
   <CardWithTitle as="section" title="Konton">
     A CardWithTitle as a section containing content
   </CardWithTitle>
 );
-
-cardWithTitleAsSection.story = {
-  name: 'CardWithTitle as section',
-};
 
 export const integrationCardWithTitleWithCustomComponentAsTitle = () => {
   const PaddedIcon = styled(OldIcon.ArrowRight)`
@@ -125,9 +113,8 @@ export const integrationCardWithTitleWithCustomComponentAsTitle = () => {
   );
 };
 
-integrationCardWithTitleWithCustomComponentAsTitle.story = {
-  name: 'Integration: CardWithTitle with custom component as title',
-};
+integrationCardWithTitleWithCustomComponentAsTitle.storyName =
+  'Integration: CardWithTitle with custom component as title';
 
 export const integrationWithFadedScroll = () => {
   const CustomTitle = (
@@ -147,9 +134,7 @@ export const integrationWithFadedScroll = () => {
   );
 };
 
-integrationWithFadedScroll.story = {
-  name: 'Integration: with FadedScroll',
-};
+integrationWithFadedScroll.storyName = 'Integration: with FadedScroll';
 
 export const integrationFadedScrollWithHeightFromParent = () => {
   const CustomTitle = (
@@ -169,24 +154,16 @@ export const integrationFadedScrollWithHeightFromParent = () => {
   );
 };
 
-integrationFadedScrollWithHeightFromParent.story = {
-  name: 'Integration: with FadedScroll of content and height being whatever is available left of parents height.',
-};
+integrationFadedScrollWithHeightFromParent.storyName =
+  'Integration: with FadedScroll of content and height being whatever is available left of parents height.';
 
-export const withoutAllVerticalPadding = () => (
-  <CardWithTitle
-    variant={select('Variant', ['normal', 'big'], 'normal')}
-    title={text('Title', 'This card has neither top nor bottom padding')}
-    noTopPadding={boolean('NoTopPadding', true)}
-    noBottomPadding={boolean('NoBottomPadding', true)}
-  >
-    {text(
-      'Content',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat turpis erat, sit amet tincidunt purus tempus sit amet. Nullam porttitor lorem a nibh efficitur condimentum. Etiam ac dolor eget felis hendrerit pellentesque. Cras efficitur libero quis mattis condimentum. Vestibulum rhoncus nibh et euismod consequat. Etiam semper leo nisl, id aliquet libero consectetur in. Nunc vulputate nec mi eu iaculis. Quisque vel pellentesque odio. Donec tempus turpis nec vehicula tempor. Nulla facilisi. Suspendisse magna ex, vulputate quis risus non, eleifend tincidunt dui. Nam blandit vitae velit non consequat.',
-    )}
-  </CardWithTitle>
-);
-
-withoutAllVerticalPadding.story = {
-  name: 'Cards without padding',
+export const WithoutAllVerticalPadding = Template.bind({});
+WithoutAllVerticalPadding.args = {
+  variant: 'normal',
+  title: 'This card has neither top nor bottom padding',
+  noTopPadding: true,
+  noBottomPadding: true,
+  children:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat turpis erat, sit amet tincidunt purus tempus sit amet. Nullam porttitor lorem a nibh efficitur condimentum. Etiam ac dolor eget felis hendrerit pellentesque. Cras efficitur libero quis mattis condimentum. Vestibulum rhoncus nibh et euismod consequat. Etiam semper leo nisl, id aliquet libero consectetur in. Nunc vulputate nec mi eu iaculis. Quisque vel pellentesque odio. Donec tempus turpis nec vehicula tempor. Nulla facilisi. Suspendisse magna ex, vulputate quis risus non, eleifend tincidunt dui. Nam blandit vitae velit non consequat.',
 };
+WithoutAllVerticalPadding.storyName = 'Cards without padding';

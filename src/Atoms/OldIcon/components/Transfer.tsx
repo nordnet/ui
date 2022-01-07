@@ -1,9 +1,9 @@
 import React from 'react';
 import { IconBase } from '../IconBase';
-import { BaseProps, ColorFn } from '../IconBase.types';
+import { BaseProps } from '../IconBase.types';
 import StyledPath from '../StyledPath';
 
-export const Transfer = ({ fill, ...props }: BaseProps & { fill: ColorFn | string }) => (
+export const Transfer = ({ fill, ...props }: BaseProps) => (
   <IconBase {...props} viewBox="0 0 32 32">
     <StyledPath
       strokeColorFn={fill}

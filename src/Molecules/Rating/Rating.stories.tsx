@@ -1,7 +1,9 @@
 import React from 'react';
-import { number } from '@storybook/addon-knobs';
+import { Meta, Story } from '@storybook/react';
+
 import docs from './Rating.mdx';
 import Rating from '.';
+import { Props } from './Rating.types';
 
 export default {
   title: 'Molecules / Rating',
@@ -10,14 +12,33 @@ export default {
       page: docs,
     },
   },
+  component: Rating,
+} as Meta;
+
+const Template: Story<Props> = (args) => <Rating {...args} />;
+
+export const Rating0 = Template.bind({});
+Rating0.args = {
+  rating: 0,
 };
 
-const getRatingProps = ({ rating = 0 } = {}) => ({
-  rating: number('Rating', rating),
-});
+export const Rating1 = Template.bind({});
+Rating1.args = {
+  rating: 1,
+};
 
-export const Rating0 = () => <Rating {...getRatingProps({ rating: 0 })} />;
-export const Rating1 = () => <Rating {...getRatingProps({ rating: 1 })} />;
-export const Rating5 = () => <Rating {...getRatingProps({ rating: 5 })} />;
-export const RatingNotDefined = () => <Rating {...getRatingProps({ rating: undefined })} />;
-export const RatingWithSize = () => <Rating size={4} {...getRatingProps({ rating: 3 })} />;
+export const Rating5 = Template.bind({});
+Rating5.args = {
+  rating: 5,
+};
+
+export const RatingNotDefined = Template.bind({});
+RatingNotDefined.args = {
+  rating: undefined,
+};
+
+export const RatingWithSize = Template.bind({});
+RatingWithSize.args = {
+  rating: 3,
+  size: 4,
+};

@@ -1,27 +1,25 @@
 import React from 'react';
 import { HashRouter } from 'react-router-dom';
-import { select, withKnobs } from '@storybook/addon-knobs';
+import { Meta, Story } from '@storybook/react';
 
-import { Box, Card, FeedbackBanner, Flexbox, Spinner, Typography } from '../..';
+import { FeedbackBanner, Spinner } from '../..';
 import { Display } from '../../common/Display';
+import { FeedbackBannerProps as Props } from './FeedbackBanner.types';
 
 export default {
   title: 'Molecules / FeedbackBanner',
-  parameters: {
-    component: FeedbackBanner,
-  },
-  decorators: [withKnobs],
-};
+  component: FeedbackBanner,
+} as Meta;
 
-export const defaultUsage = () => (
-  <FeedbackBanner title="Feedback banner">
-    Feedback banner should be used within modules to display information that needs attention.
-    Content is flexible, it can contain links and plain text.
-  </FeedbackBanner>
+const Template: Story<Props & { children: React.ReactNode }> = (args) => (
+  <FeedbackBanner {...args} />
 );
 
-defaultUsage.story = {
-  name: 'Default usage',
+export const DefaultUsage = Template.bind({});
+DefaultUsage.args = {
+  title: 'Feedback banner',
+  children:
+    'Feedback banner should be used within modules to display information that needs attention. Content is flexible, it can contain links and plain text.',
 };
 
 export const displayingTitle = () => (
@@ -40,10 +38,6 @@ export const displayingTitle = () => (
     ]}
   />
 );
-
-displayingTitle.story = {
-  name: 'Displaying title',
-};
 
 export const differentVariant = () => (
   <Display
@@ -84,10 +78,6 @@ export const differentVariant = () => (
   />
 );
 
-differentVariant.story = {
-  name: 'Different variant',
-};
-
 export const complexChildren = () => (
   <HashRouter>
     <FeedbackBanner title="Warning, complex child" variant="warning">
@@ -100,54 +90,3 @@ export const complexChildren = () => (
     </FeedbackBanner>
   </HashRouter>
 );
-
-complexChildren.story = {
-  name: 'Complex children',
-};
-
-export const differentScopes = () => (
-  <Box p={5} backgroundColor={(t) => t.color.background}>
-    <Flexbox container direction="column" gutter={20}>
-      <Card>
-        <Box p={5}>
-          <Flexbox container direction="column" gutter={2}>
-            <Flexbox item>
-              <Typography type="primary">This card has a FeedbackBanner as a child</Typography>
-            </Flexbox>
-            <Flexbox item>
-              <FeedbackBanner
-                scope="module"
-                title="Module scope"
-                variant={select('Variant', ['info', 'warning', 'error', 'success'], 'info')}
-              >
-                This FeedbackBanner is used by default, meant for placement within a module scope
-              </FeedbackBanner>
-            </Flexbox>
-          </Flexbox>
-        </Box>
-      </Card>
-      <Flexbox item container direction="column" gutter={2}>
-        <Flexbox item>
-          <FeedbackBanner
-            scope="page"
-            title="Page scope"
-            variant={select('Variant', ['info', 'warning', 'error', 'success'], 'info')}
-          >
-            This FeedbackBanner is used when placed within a page scope
-          </FeedbackBanner>
-        </Flexbox>
-        <Flexbox item>
-          <Card>
-            <Box p={5}>
-              <Typography type="primary">Some dummy page</Typography>
-            </Box>
-          </Card>
-        </Flexbox>
-      </Flexbox>
-    </Flexbox>
-  </Box>
-);
-
-differentScopes.story = {
-  name: 'Different scopes',
-};

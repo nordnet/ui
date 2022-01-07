@@ -1,8 +1,9 @@
 import React from 'react';
-import { number, text, withKnobs } from '@storybook/addon-knobs';
+import { Meta, Story } from '@storybook/react';
 import styled from 'styled-components';
 
 import { Flexbox } from '../..';
+import { Height, Width } from './Flexbox.types';
 
 const Content = styled.div`
   box-sizing: border-box;
@@ -13,11 +14,8 @@ const Content = styled.div`
 
 export default {
   title: 'Atoms / Flexbox',
-  parameters: {
-    component: Flexbox,
-  },
-  decorators: [withKnobs],
-};
+  component: Flexbox,
+} as Meta;
 
 export const defaultStory = () => (
   <Flexbox container>
@@ -33,9 +31,7 @@ export const defaultStory = () => (
   </Flexbox>
 );
 
-defaultStory.story = {
-  name: 'Default',
-};
+defaultStory.storyName = 'Default';
 
 export const columnSizedFlexboxes = () => (
   <Flexbox container>
@@ -51,10 +47,6 @@ export const columnSizedFlexboxes = () => (
   </Flexbox>
 );
 
-columnSizedFlexboxes.story = {
-  name: 'Column sized flexboxes',
-};
-
 export const withCustomGutter = () => (
   <Flexbox container gutter={5}>
     <Flexbox item size={6}>
@@ -65,10 +57,6 @@ export const withCustomGutter = () => (
     </Flexbox>
   </Flexbox>
 );
-
-withCustomGutter.story = {
-  name: 'With custom gutter',
-};
 
 export const withDirectionColumn = () => (
   <Flexbox container direction="column">
@@ -83,10 +71,6 @@ export const withDirectionColumn = () => (
     </Flexbox>
   </Flexbox>
 );
-
-withDirectionColumn.story = {
-  name: 'With direction: column',
-};
 
 export const withConditionallyHiddenFlexItem = () => {
   const showFirstItem = false;
@@ -104,10 +88,6 @@ export const withConditionallyHiddenFlexItem = () => {
   );
 };
 
-withConditionallyHiddenFlexItem.story = {
-  name: 'With conditionally hidden flex item',
-};
-
 export const withConditionallyVisibleFlexItem = () => {
   const showFirstItem = true;
   return (
@@ -122,10 +102,6 @@ export const withConditionallyVisibleFlexItem = () => {
       </Flexbox>
     </Flexbox>
   );
-};
-
-withConditionallyVisibleFlexItem.story = {
-  name: 'With conditionally visible flex item',
 };
 
 export const withContainerAndItemProps = () => {
@@ -152,10 +128,6 @@ export const withContainerAndItemProps = () => {
       </Flexbox>
     </Flexbox>
   );
-};
-
-withContainerAndItemProps.story = {
-  name: 'With container and item props',
 };
 
 export const withBreakpointProps = () => {
@@ -189,10 +161,6 @@ export const withBreakpointProps = () => {
   );
 };
 
-withBreakpointProps.story = {
-  name: 'With breakpoint props',
-};
-
 const GrowingDiv = styled.div`
   display: flex;
   align-items: center;
@@ -205,37 +173,15 @@ const GrowingDiv = styled.div`
   background-color: #eee;
 `;
 
-export const widthAndHeightInNumbers = () => (
-  <Flexbox
-    container
-    width={number('Width', 100)}
-    height={number('Height', 100)}
-    alignItems="center"
-    justifyContent="space-between"
-    gutter={5}
-  >
-    <Flexbox item height="100%">
-      <GrowingDiv>One</GrowingDiv>
-    </Flexbox>
-    <Flexbox item height="100%">
-      <GrowingDiv>Two</GrowingDiv>
-    </Flexbox>
-    <Flexbox item height="100%">
-      <GrowingDiv>Three</GrowingDiv>
-    </Flexbox>
-  </Flexbox>
-);
-
-widthAndHeightInNumbers.story = {
-  name: 'With width and height as number',
-};
-
-export const widthAndHeightInPercentage = () => (
+const HeightAndWidthTemplate: Story<{
+  height: Height;
+  width: Width;
+}> = ({ height, width }) => (
   <div style={{ height: '500px' }}>
     <Flexbox
       container
-      width={text('Width', '50%')}
-      height={text('Height', '50%')}
+      width={width}
+      height={height}
       alignItems="center"
       justifyContent="space-between"
       gutter={5}
@@ -253,8 +199,16 @@ export const widthAndHeightInPercentage = () => (
   </div>
 );
 
-widthAndHeightInPercentage.story = {
-  name: 'With width and height as percentage',
+export const WidthAndHeightInNumbers = HeightAndWidthTemplate.bind({});
+WidthAndHeightInNumbers.args = {
+  height: 100,
+  width: 100,
+};
+
+export const WidthAndHeightInPercentage = HeightAndWidthTemplate.bind({});
+WidthAndHeightInPercentage.args = {
+  height: '50%',
+  width: '50%',
 };
 
 export const differentSizedItems = () => (
@@ -277,7 +231,3 @@ export const differentSizedItems = () => (
     </Flexbox>
   </Flexbox>
 );
-
-differentSizedItems.story = {
-  name: 'Different sized items',
-};
