@@ -1,12 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules / QuickFilter Default 1`] = `
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c5 {
+exports[`Storyshots Molecules / QuickFilter Only Icon 1`] = `
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -23,134 +18,20 @@ exports[`Storyshots Molecules / QuickFilter Default 1`] = `
   margin-right: -2px;
 }
 
-.c5 > * {
+.c4 > * {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.c5 > *:not(:first-child) {
+.c4 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
-  -webkit-align-self: baseline;
-  -ms-flex-item-align: baseline;
-  align-self: baseline;
 }
 
 .c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  opacity: 0;
-  pointer-events: none;
-  position: absolute;
-}
-
-.c3 {
-  border-radius: 50%;
-  box-sizing: border-box;
-  display: inline-block;
-  background: #F5F5F5;
-  color: #212121;
-  cursor: pointer;
-  padding: 8px;
-  padding: 4px 12px;
-  border-radius: 16px;
-}
-
-.c3:hover {
-  color: #6690FF;
-}
-
-.c1 {
-  cursor: inherit;
-}
-
-.c1:focus-within .c2 {
-  outline: 2px solid Highlight;
-  outline: 2px solid -webkit-focus-ring-color;
-}
-
-<div
-  className="c0"
->
-  <label
-    className="c1"
-  >
-    <div
-      className="c2 c3"
-    >
-      <input
-        checked={false}
-        className="c4"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dignissim dolor."
-      />
-      <div
-        className="c5"
-      >
-        <div
-          className="c6"
-        >
-          <span
-            className="c7"
-          >
-            Default
-          </span>
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots Molecules / QuickFilter Only icon 1`] = `
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -2px;
-  margin-right: -2px;
-}
-
-.c5 > * {
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
-.c5 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c6 {
-  box-sizing: border-box;
-}
-
-.c8 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -162,13 +43,13 @@ exports[`Storyshots Molecules / QuickFilter Only icon 1`] = `
   display: block;
 }
 
-.c4 {
+.c3 {
   opacity: 0;
   pointer-events: none;
   position: absolute;
 }
 
-.c3 {
+.c2 {
   border-radius: 50%;
   box-sizing: border-box;
   display: inline-block;
@@ -178,80 +59,71 @@ exports[`Storyshots Molecules / QuickFilter Only icon 1`] = `
   padding: 8px;
 }
 
-.c3:hover {
+.c2:hover {
   color: #6690FF;
 }
 
-.c1 {
+.c0 {
   cursor: inherit;
 }
 
-.c1:focus-within .c2 {
+.c0:focus-within .c1 {
   outline: 2px solid Highlight;
   outline: 2px solid -webkit-focus-ring-color;
 }
 
-.c7 > * {
+.c6 > * {
   color: inherit;
 }
 
-<div
+<label
   className="c0"
 >
-  <label
-    className="c1"
+  <div
+    className="c1 c2"
   >
+    <input
+      checked={false}
+      className="c3"
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+      value=""
+    />
     <div
-      className="c2 c3"
+      className="c4"
     >
-      <input
-        checked={false}
-        className="c4"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dignissim dolor."
-      />
       <div
-        className="c5"
+        className="c5 c6"
       >
-        <div
-          className="c6 c7"
+        <svg
+          aria-hidden="true"
+          className="c7"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
         >
-          <svg
-            aria-hidden="true"
-            className="c8"
-            focusable="false"
-            height={16}
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            width={16}
-          >
-            <path
-              d="M8 9.5C8.82843 9.5 9.5 8.82843 9.5 8C9.5 7.17157 8.82843 6.5 8 6.5C7.17157 6.5 6.5 7.17157 6.5 8C6.5 8.82843 7.17157 9.5 8 9.5Z"
-              fill="currentColor"
-            />
-            <path
-              clipRule="evenodd"
-              d="M0 13V3H16V13H0ZM2 5H14V11H2V5Z"
-              fill="currentColor"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
+          <path
+            d="M8 9.5C8.82843 9.5 9.5 8.82843 9.5 8C9.5 7.17157 8.82843 6.5 8 6.5C7.17157 6.5 6.5 7.17157 6.5 8C6.5 8.82843 7.17157 9.5 8 9.5Z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M0 13V3H16V13H0ZM2 5H14V11H2V5Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
       </div>
     </div>
-  </label>
-</div>
+  </div>
+</label>
 `;
 
-exports[`Storyshots Molecules / QuickFilter Only label 1`] = `
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c5 {
+exports[`Storyshots Molecules / QuickFilter Only Label 1`] = `
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -268,23 +140,23 @@ exports[`Storyshots Molecules / QuickFilter Only label 1`] = `
   margin-right: -2px;
 }
 
-.c5 > * {
+.c4 > * {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.c5 > *:not(:first-child) {
+.c4 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   -webkit-align-self: baseline;
   -ms-flex-item-align: baseline;
   align-self: baseline;
 }
 
-.c7 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -293,13 +165,13 @@ exports[`Storyshots Molecules / QuickFilter Only label 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c3 {
   opacity: 0;
   pointer-events: none;
   position: absolute;
 }
 
-.c3 {
+.c2 {
   border-radius: 50%;
   box-sizing: border-box;
   display: inline-block;
@@ -311,55 +183,175 @@ exports[`Storyshots Molecules / QuickFilter Only label 1`] = `
   border-radius: 16px;
 }
 
-.c3:hover {
+.c2:hover {
   color: #6690FF;
 }
 
-.c1 {
+.c0 {
   cursor: inherit;
 }
 
-.c1:focus-within .c2 {
+.c0:focus-within .c1 {
   outline: 2px solid Highlight;
   outline: 2px solid -webkit-focus-ring-color;
 }
 
-<div
+<label
   className="c0"
 >
-  <label
-    className="c1"
+  <div
+    className="c1 c2"
   >
+    <input
+      checked={false}
+      className="c3"
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+      value=""
+    />
     <div
-      className="c2 c3"
+      className="c4"
     >
-      <input
-        checked={false}
-        className="c4"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dignissim dolor."
-      />
       <div
         className="c5"
       >
-        <div
+        <span
           className="c6"
         >
-          <span
-            className="c7"
-          >
-            Only label
-          </span>
-        </div>
+          Default
+        </span>
       </div>
     </div>
-  </label>
-</div>
+  </div>
+</label>
 `;
 
-exports[`Storyshots Molecules / QuickFilter With controlled behavior 1`] = `
+exports[`Storyshots Molecules / QuickFilter With Selected Initially 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c4 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c4 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c7 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.c2 {
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  background: #F5F5F5;
+  color: #212121;
+  cursor: pointer;
+  padding: 8px;
+  color: #6690FF;
+  background: #EAF0FF;
+}
+
+.c2:hover {
+  color: #6690FF;
+}
+
+.c0 {
+  cursor: inherit;
+}
+
+.c0:focus-within .c1 {
+  outline: 2px solid Highlight;
+  outline: 2px solid -webkit-focus-ring-color;
+}
+
+.c6 > * {
+  color: inherit;
+}
+
+<label
+  className="c0"
+>
+  <div
+    className="c1 c2"
+  >
+    <input
+      checked={true}
+      className="c3"
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+      value=""
+    />
+    <div
+      className="c4"
+    >
+      <div
+        className="c5 c6"
+      >
+        <svg
+          aria-hidden="true"
+          className="c7"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            d="M8 9.5C8.82843 9.5 9.5 8.82843 9.5 8C9.5 7.17157 8.82843 6.5 8 6.5C7.17157 6.5 6.5 7.17157 6.5 8C6.5 8.82843 7.17157 9.5 8 9.5Z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M0 13V3H16V13H0ZM2 5H14V11H2V5Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Molecules / QuickFilter With Value Controlled Behavior 1`] = `
 .c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
@@ -484,138 +476,5 @@ exports[`Storyshots Molecules / QuickFilter With controlled behavior 1`] = `
   </button>
   value: 
   false
-</div>
-`;
-
-exports[`Storyshots Molecules / QuickFilter With selectedInitially 1`] = `
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -2px;
-  margin-right: -2px;
-}
-
-.c5 > * {
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
-.c5 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c6 {
-  box-sizing: border-box;
-}
-
-.c8 {
-  color: #212121;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c4 {
-  opacity: 0;
-  pointer-events: none;
-  position: absolute;
-}
-
-.c3 {
-  border-radius: 50%;
-  box-sizing: border-box;
-  display: inline-block;
-  background: #F5F5F5;
-  color: #212121;
-  cursor: pointer;
-  padding: 8px;
-  color: #6690FF;
-  background: #EAF0FF;
-}
-
-.c3:hover {
-  color: #6690FF;
-}
-
-.c1 {
-  cursor: inherit;
-}
-
-.c1:focus-within .c2 {
-  outline: 2px solid Highlight;
-  outline: 2px solid -webkit-focus-ring-color;
-}
-
-.c7 > * {
-  color: inherit;
-}
-
-<div
-  className="c0"
->
-  <label
-    className="c1"
-  >
-    <div
-      className="c2 c3"
-    >
-      <input
-        checked={true}
-        className="c4"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dignissim dolor."
-      />
-      <div
-        className="c5"
-      >
-        <div
-          className="c6 c7"
-        >
-          <svg
-            aria-hidden="true"
-            className="c8"
-            focusable="false"
-            height={16}
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            width={16}
-          >
-            <path
-              d="M8 9.5C8.82843 9.5 9.5 8.82843 9.5 8C9.5 7.17157 8.82843 6.5 8 6.5C7.17157 6.5 6.5 7.17157 6.5 8C6.5 8.82843 7.17157 9.5 8 9.5Z"
-              fill="currentColor"
-            />
-            <path
-              clipRule="evenodd"
-              d="M0 13V3H16V13H0ZM2 5H14V11H2V5Z"
-              fill="currentColor"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </label>
 </div>
 `;

@@ -880,7 +880,7 @@ exports[`Storyshots Molecules / LineScale Line Scale At Right Edge 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules / LineScale Line Scale In The Middle With Knobs 1`] = `
+exports[`Storyshots Molecules / LineScale Line Scale In The Middle 1`] = `
 .c1 {
   margin-top: 32px;
   background-color: transparent;
@@ -1499,7 +1499,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Near Left Edge With Bigger 
             <span
               className="c10"
             >
-              Latest 5.00
+              5.00
             </span>
           </span>
         </div>
