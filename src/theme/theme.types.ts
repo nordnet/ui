@@ -173,6 +173,10 @@ export type ThemeColors = {
    */
   badgeBackgroundNegative: string;
   /**
+   * complementaryTurquoise2
+   */
+  badgeBackgroundTurquoise: string;
+  /**
    * white
    */
   badgeIconColor: string;
@@ -296,6 +300,8 @@ export type ThemeColors = {
   cta: string;
   /** blue600 */
   ctaHover: string;
+  /** teal300 */
+  complementaryTeal: string;
   /** blue800 */
   darkmodeIllustrationBackground: string;
   /** blue400 */

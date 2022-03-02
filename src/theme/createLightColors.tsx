@@ -39,6 +39,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     badgeBackgroundPositive: rawColor.green500,
     badgeBackgroundWarning: rawColor.yellow400,
     badgeBackgroundNegative: rawColor.red500,
+    badgeBackgroundTurquoise: rawColor.complementaryTurquoise2,
     badgeIconColor: rawColor.white,
     badgeTextColor: rawColor.white,
 
@@ -87,6 +88,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     card: rawColor.white,
     cta: rawColor.blue500,
     ctaHover: rawColor.blue600,
+
+    complementaryTeal: rawColor.teal300,
 
     darkmodeIllustrationBackground: rawColor.blue800,
     darkmodeIllustrationLightBulb: rawColor.blue400,
