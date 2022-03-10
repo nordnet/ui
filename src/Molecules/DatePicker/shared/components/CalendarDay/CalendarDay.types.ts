@@ -17,4 +17,5 @@ export type CalendarDayProps = {
   isLastDay?: boolean;
   withGutter?: boolean;
   fullscreenMode?: boolean;
+  isDayPicker?: boolean;
 };

@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useTheme } from 'styled-components';
+import { format } from 'date-fns';
 import { useIntl } from 'react-intl';
 import {
   Props as SingleDatePickerProps,
@@ -49,6 +50,8 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     fullscreenOnMobile,
     selectMonthLabel,
     selectYearLabel,
+    variant,
+    placeholder,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -111,22 +114,24 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     },
     [onDateClick, onClose, fullscreenMode],
   );
-
+  const isDayPicker = variant === 'day';
   const datepicker = (
     <>
-      <Header
-        ariaLabelPrevious={ariaLabelPrevious}
-        ariaLabelNext={ariaLabelNext}
-        id={id}
-        viewedDate={viewedDate}
-        locale={locale}
-        onMonthChange={onMonthChange}
-        onYearChange={onYearChange}
-        yearSelectLength={yearSelectLength}
-        fullscreenMode={fullscreenMode}
-        selectMonthLabel={selectMonthLabel}
-        selectYearLabel={selectYearLabel}
-      />
+      {!isDayPicker && (
+        <Header
+          ariaLabelPrevious={ariaLabelPrevious}
+          ariaLabelNext={ariaLabelNext}
+          id={id}
+          viewedDate={viewedDate}
+          locale={locale}
+          onMonthChange={onMonthChange}
+          onYearChange={onYearChange}
+          yearSelectLength={yearSelectLength}
+          fullscreenMode={fullscreenMode}
+          selectMonthLabel={selectMonthLabel}
+          selectYearLabel={selectYearLabel}
+        />
+      )}
       <Calendar
         disableDate={disableDate}
         enableDate={enableDate}
@@ -136,6 +141,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
         onClick={handleClick}
         selectedDate={selectedDate as Date}
         fullscreenMode={fullscreenMode}
+        isDayPicker={isDayPicker}
       />
     </>
   );
@@ -149,6 +155,8 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     }
   });
 
+  const selectedDay = selectedDate ? format(selectedDate, 'd') : '';
+
   return (
     <div ref={(ref || selfRef) as React.Ref<HTMLDivElement>}>
       <StyledInputText
@@ -157,8 +165,8 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
         disabled={disabled}
         id={id}
         data-testid="datepicker-input"
-        placeholder={dateFormat.toLowerCase()}
-        value={inputValue}
+        placeholder={placeholder || dateFormat.toLowerCase()}
+        value={isDayPicker ? selectedDay : inputValue}
         rightAddon={inputRightAddon}
         onChange={handleInputOnChange}
         onKeyDown={handleInputKeyDown}

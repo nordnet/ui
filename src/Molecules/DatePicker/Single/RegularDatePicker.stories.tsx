@@ -17,6 +17,18 @@ export const Default = () => {
   return <DatePicker id="input-id" label="Default" onChange={action('onChange')} />;
 };
 
+export const DayPicker = () => {
+  return (
+    <DatePicker
+      id="input-id"
+      label="Day Picker"
+      onChange={action('onChange')}
+      variant="day"
+      placeholder="Select a day"
+    />
+  );
+};
+
 export const SameWeekDisabled = () => {
   return (
     <DatePicker

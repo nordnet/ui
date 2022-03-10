@@ -26,10 +26,11 @@ const Calendar: React.FC<Props> = ({
   selectedDate,
   selectedEndDate,
   fullscreenMode,
+  isDayPicker,
 }) => {
   const calendarRef = useRef<HTMLDivElement>(null);
   const localeObj = getLocale(locale);
-  const calendar = getCalendar(viewedDate, {
+  const calendar = getCalendar(viewedDate, isDayPicker, {
     locale: localeObj,
   });
 
@@ -54,19 +55,22 @@ const Calendar: React.FC<Props> = ({
 
   return (
     <Flexbox ref={calendarRef} container direction="column" data-testid="datepicker-calendar">
-      <Flexbox container justifyContent="space-between" aria-hidden>
-        {calendar.weekDays?.map((n) => (
-          <Flexbox item justifyContent="center" alignItems="center" key={n}>
-            <StyledBox>
-              <Typography type="tertiary">{n}</Typography>
-            </StyledBox>
-          </Flexbox>
-        ))}
-      </Flexbox>
-      {calendar.dates?.map((week, weekIndex) => (
+      {!isDayPicker && (
+        <Flexbox container justifyContent="space-between" aria-hidden>
+          {calendar.weekDays?.map((n) => (
+            <Flexbox item justifyContent="center" alignItems="center" key={n}>
+              <StyledBox>
+                <Typography type="tertiary">{n}</Typography>
+              </StyledBox>
+            </Flexbox>
+          ))}
+        </Flexbox>
+      )}
+      {calendar.dates.map((week, weekIndex) => (
         <Flexbox container justifyContent="space-between" key={week.toString()}>
           {week?.map((day, dayIndex) => (
             <CalendarDay
+              isDayPicker={isDayPicker}
               onFocus={() => {
                 handleFocus(day);
               }}

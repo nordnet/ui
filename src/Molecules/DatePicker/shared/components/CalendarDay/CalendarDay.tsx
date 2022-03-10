@@ -94,6 +94,7 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
   isLastDay = false,
   withGutter,
   fullscreenMode = false,
+  isDayPicker = false,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -103,7 +104,7 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
   }, [focused]);
 
   const textColor = (() => {
-    if (!sameMonth && !selected) return 'otherMonthDateText';
+    if (!isDayPicker && !sameMonth && !selected) return 'otherMonthDateText';
     if (disabled) return 'disabledText';
     if (selected) return 'buttonText';
     if (!selected) return 'text';

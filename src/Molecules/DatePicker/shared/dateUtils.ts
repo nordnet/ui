@@ -99,16 +99,18 @@ export type CalendarType = {
   dates: Array<Array<Date>>;
 };
 
-export const getCalendar = (now: Date, opts?: Options): CalendarType => {
+export const getCalendar = (now: Date, isDayPicker: boolean, opts?: Options): CalendarType => {
   const calendar: CalendarType = {
     weekDays: [],
     dates: [],
   };
 
-  const firstCalDay = startOfWeek(new Date(now.getFullYear(), now.getMonth(), 0), {
-    locale: opts?.locale,
-    weekStartsOn: 1,
-  });
+  const firstCalDay = isDayPicker
+    ? 1
+    : startOfWeek(new Date(now.getFullYear(), now.getMonth(), 0), {
+        locale: opts?.locale,
+        weekStartsOn: 1,
+      });
 
   calendar.weekDays = [...Array(7).keys()]?.map((w) =>
     capitalize(
@@ -118,7 +120,9 @@ export const getCalendar = (now: Date, opts?: Options): CalendarType => {
     ),
   );
 
-  calendar.dates = [...Array(6).keys()]?.map((w) =>
+  const weeks = isDayPicker ? 4 : 6;
+
+  calendar.dates = [...Array(weeks).keys()]?.map((w) =>
     [...Array(7).keys()]?.map((d) => addDays(firstCalDay, w * 7 + d)),
   );
 
