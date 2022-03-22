@@ -21,6 +21,7 @@ import { capitalize } from './textUtils';
 
 type Options = {
   locale: Locale;
+  isDayPicker: boolean;
 };
 
 const dateFormat = {
@@ -99,13 +100,13 @@ export type CalendarType = {
   dates: Array<Array<Date>>;
 };
 
-export const getCalendar = (now: Date, isDayPicker: boolean, opts?: Options): CalendarType => {
+export const getCalendar = (now: Date, opts?: Options): CalendarType => {
   const calendar: CalendarType = {
     weekDays: [],
     dates: [],
   };
 
-  const firstCalDay = isDayPicker
+  const firstCalDay = opts?.isDayPicker
     ? 1
     : startOfWeek(new Date(now.getFullYear(), now.getMonth(), 0), {
         locale: opts?.locale,
@@ -120,7 +121,7 @@ export const getCalendar = (now: Date, isDayPicker: boolean, opts?: Options): Ca
     ),
   );
 
-  const weeks = isDayPicker ? 4 : 6;
+  const weeks = opts?.isDayPicker ? 4 : 6;
 
   calendar.dates = [...Array(weeks).keys()]?.map((w) =>
     [...Array(7).keys()]?.map((d) => addDays(firstCalDay, w * 7 + d)),

@@ -26,12 +26,13 @@ const Calendar: React.FC<Props> = ({
   selectedDate,
   selectedEndDate,
   fullscreenMode,
-  isDayPicker,
+  isDayPicker = false,
 }) => {
   const calendarRef = useRef<HTMLDivElement>(null);
   const localeObj = getLocale(locale);
-  const calendar = getCalendar(viewedDate, isDayPicker, {
+  const calendar = getCalendar(viewedDate, {
     locale: localeObj,
+    isDayPicker,
   });
 
   const dateIsDisabled = (dateToCheck: Date | null) => {
