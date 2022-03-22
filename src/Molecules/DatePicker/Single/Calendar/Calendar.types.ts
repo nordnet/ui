@@ -8,5 +8,5 @@ export type Props = {
   selectedDate: Date;
   selectedEndDate?: Date;
   fullscreenMode: boolean;
-  isDayPicker: boolean;
+  isDayPicker?: boolean;
 };

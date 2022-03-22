@@ -63,10 +63,10 @@ const DoubleCalendar: React.FC<Props> = ({
   const localeObj = getLocale(locale);
 
   const calendar = useMemo(() => {
-    const leftCalendar = getCalendar(viewedDate, {
+    const leftCalendar = getCalendar(viewedDate, false, {
       locale: localeObj,
     });
-    const rightCalendar = getCalendar(addMonths(viewedDate, 1), {
+    const rightCalendar = getCalendar(addMonths(viewedDate, 1), false, {
       locale: localeObj,
     });
     return {

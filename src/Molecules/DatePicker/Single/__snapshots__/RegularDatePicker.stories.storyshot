@@ -557,6 +557,237 @@ Array [
 ]
 `;
 
+exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Day Picker 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 24px;
+  height: 24px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  right: 4px;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BDBDBD;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+  padding-right: 40px;
+  color: #282823;
+}
+
+.c7:focus {
+  border-width: 1px;
+}
+
+.c7:hover {
+  border-color: #424242;
+}
+
+.c7:focus {
+  border-color: #336BFF;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
+  color: #A0A09B;
+}
+
+.c6 {
+  position: relative;
+  padding: 0px 0;
+}
+
+.c1 {
+  z-index: 1;
+}
+
+.c0 {
+  width: 312px;
+  display: inline-block;
+}
+
+<div>
+  <div
+    className="c0 c1"
+  >
+    <label
+      className="c2"
+      hidden={false}
+    >
+      <span
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          Day Picker 
+        </div>
+        <span
+          className="c5"
+        >
+          <div
+            className="c6"
+          >
+            <input
+              autoComplete="off"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+              data-testid="datepicker-input"
+              id="input-id"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              placeholder="Select a day"
+              type="text"
+              value=""
+              variant="normal"
+            />
+            <div
+              className="c8 c9"
+              position="right"
+              variant="normal"
+            >
+              <svg
+                aria-hidden="true"
+                className="c10"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+                />
+              </svg>
+            </div>
+          </div>
+        </span>
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Default 1`] = `
 .c4 {
   box-sizing: border-box;
