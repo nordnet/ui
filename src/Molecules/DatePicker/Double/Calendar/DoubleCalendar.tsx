@@ -65,11 +65,9 @@ const DoubleCalendar: React.FC<Props> = ({
   const calendar = useMemo(() => {
     const leftCalendar = getCalendar(viewedDate, {
       locale: localeObj,
-      isDayPicker: false,
     });
     const rightCalendar = getCalendar(addMonths(viewedDate, 1), {
       locale: localeObj,
-      isDayPicker: false,
     });
     return {
       weekDays: [...leftCalendar?.weekDays, ...rightCalendar?.weekDays],

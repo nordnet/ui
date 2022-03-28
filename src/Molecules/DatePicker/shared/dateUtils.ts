@@ -21,7 +21,7 @@ import { capitalize } from './textUtils';
 
 type Options = {
   locale: Locale;
-  isDayPicker: boolean;
+  isDayPicker?: boolean;
 };
 
 const dateFormat = {
