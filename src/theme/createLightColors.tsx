@@ -235,7 +235,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     privateBankingBannerText: rawColor.white,
     privateBankingBannerTitle: rawColor.gray6,
 
-    progressBarActive: rawColor.cta,
+    progressBarActive: rawColor.blue500,
     progressBarDone: rawColor.positive,
     progressBarFailure: rawColor.negative,
     progressBarNext: rawColor.gray4,

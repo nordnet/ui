@@ -80,13 +80,15 @@ const ProgressBar: FC<Props> = ({
 
     const getStepIcon = () => {
       if (stepDone) {
-        return <Icon.Check16 color={(t) => (colorText ? colorText(t) : t.color.textLight)} />;
+        return <Icon.Check16 color={(t) => (colorText ? colorText(t) : t.color.progressBarText)} />;
       }
       if (stepActive && failed) {
-        return <Icon.Cross16 color={(t) => (colorText ? colorText(t) : t.color.textLight)} />;
+        return <Icon.Cross16 color={(t) => (colorText ? colorText(t) : t.color.progressBarText)} />;
       }
       if (stepActive && warning) {
-        return <Icon.Warning16 color={(t) => (colorText ? colorText(t) : t.color.textLight)} />;
+        return (
+          <Icon.Warning16 color={(t) => (colorText ? colorText(t) : t.color.progressBarText)} />
+        );
       }
       return stepNumber;
     };
@@ -112,7 +114,8 @@ const ProgressBar: FC<Props> = ({
         <Bubble title={title} badgeColor={() => getColor(stepActive)} badgeSize={8}>
           <Typography
             type="secondary"
-            color={(t) => (colorText ? colorText(t) : t.color.textLight)}
+            color={(t) => (colorText ? colorText(t) : t.color.progressBarText)}
+            weight="bold"
             aria-hidden
           >
             {getStepIcon()}
