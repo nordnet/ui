@@ -345,6 +345,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     worldMapLand: rawColor.blue700, // not yet in use
     worldMapWater: rawColor.gray800, // not yet in use
 
+    removeFundText: rawColor.red600,
+    
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,

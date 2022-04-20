@@ -332,7 +332,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     sfdrArticle8: rawColor.sfdrArticle8,
     sfdrArticle9: rawColor.sfdrArticle9,
 
-    popularBadgeBackground: rawColor.pink100,
+    popularBadgeBackground: rawColor.pink900,
 
     joinSharevilleIllustration: rawColor.green200,
     joinSharevilleBadge: rawColor.green800,
@@ -352,6 +352,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     worldMapLand: rawColor.blue600, // not yet in use
     worldMapWater: rawColor.gray800, // not yet in use
+
+    removeFundText: rawColor.red500,
 
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,

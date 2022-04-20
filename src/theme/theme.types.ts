@@ -679,6 +679,8 @@ export type ThemeColors = {
   monthlySavingsTransferTypeInactive: string;
   /** day select input inactive */
   daySelectInputTextInactive: string;
+  /** remove fund fund added */
+  removeFundText: string;
   /** @deprecated * gray3 */
   disabled: string;
   /** @deprecated * complementaryBlue2 */
