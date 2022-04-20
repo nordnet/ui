@@ -355,7 +355,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     removeInstrumentText: rawColor.red500,
 
-    searchInstrumentPopupBackground: rawColor.blue800,
+    searchPopupBackground: rawColor.blue800,
 
     monthlySavingsTableRowDivider: rawColor.gray800,
 

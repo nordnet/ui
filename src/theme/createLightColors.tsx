@@ -352,7 +352,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     removeInstrumentText: rawColor.red600,
 
-    searchInstrumentPopupBackground: rawColor.blue100,
+    searchPopupBackground: rawColor.blue100,
 
     monthlySavingsTableRowDivider: rawColor.gray100,
 

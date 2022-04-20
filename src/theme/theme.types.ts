@@ -682,7 +682,7 @@ export type ThemeColors = {
   /** remove instrument added */
   removeInstrumentText: string;
   /** background for toaster pop up */
-  searchInstrumentPopupBackground: string;
+  searchPopupBackground: string;
   /** MS table row divider */
   monthlySavingsTableRowDivider: string;
   /** @deprecated * gray3 */
