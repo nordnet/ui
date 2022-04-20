@@ -110,7 +110,7 @@ exports[`Storyshots Molecules / CoachMarks Default 1`] = `
 
 .c6 {
   padding: 20px;
-  border: 1px solid #41A21A;
+  border: 1px solid #368716;
 }
 
 <div
@@ -259,7 +259,7 @@ exports[`Storyshots Molecules / CoachMarks Multpiple Steps 1`] = `
 
 .c6 {
   padding: 20px;
-  border: 1px solid #41A21A;
+  border: 1px solid #368716;
 }
 
 <div
@@ -451,7 +451,7 @@ exports[`Storyshots Molecules / CoachMarks With bar color 1`] = `
 
 .c6 {
   padding: 20px;
-  border: 1px solid #41A21A;
+  border: 1px solid #368716;
 }
 
 <div

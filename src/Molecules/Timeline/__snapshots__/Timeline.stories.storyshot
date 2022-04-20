@@ -104,7 +104,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
 }
 
 .c23 {
-  fill: #41A21A;
+  fill: #368716;
 }
 
 .c24 {
@@ -180,7 +180,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
   left: 9px;
   width: 2px;
   z-index: 1;
-  background: #41A21A;
+  background: #51CB20;
 }
 
 .c3:first-child::before {
@@ -231,7 +231,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
   left: 9px;
   width: 2px;
   z-index: 1;
-  background: #41A21A;
+  background: #51CB20;
   bottom: 0;
 }
 
@@ -665,7 +665,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
 }
 
 .c23 {
-  fill: #41A21A;
+  fill: #368716;
 }
 
 .c24 {
@@ -737,7 +737,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
   left: 9px;
   width: 2px;
   z-index: 1;
-  background: #41A21A;
+  background: #51CB20;
 }
 
 .c3:first-child::before {
@@ -825,7 +825,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
   left: 9px;
   width: 2px;
   z-index: 1;
-  background: #41A21A;
+  background: #51CB20;
   bottom: 0;
 }
 
@@ -848,7 +848,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
   left: 9px;
   width: 2px;
   z-index: 1;
-  background: #41A21A;
+  background: #51CB20;
 }
 
 .c25:first-child::before {
@@ -862,7 +862,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
   left: 9px;
   width: 2px;
   z-index: 1;
-  background: #41A21A;
+  background: #51CB20;
   bottom: 0;
 }
 
@@ -1194,7 +1194,7 @@ exports[`Storyshots Molecules / Timeline Single Element 1`] = `
 }
 
 .c9 {
-  fill: #41A21A;
+  fill: #368716;
 }
 
 .c10 {
@@ -1254,7 +1254,7 @@ exports[`Storyshots Molecules / Timeline Single Element 1`] = `
   left: 9px;
   width: 2px;
   z-index: 1;
-  background: #41A21A;
+  background: #51CB20;
 }
 
 .c3:first-child::before {
@@ -1268,7 +1268,7 @@ exports[`Storyshots Molecules / Timeline Single Element 1`] = `
   left: 9px;
   width: 2px;
   z-index: 1;
-  background: #41A21A;
+  background: #51CB20;
   bottom: 0;
 }
 
@@ -1439,7 +1439,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
 }
 
 .c21 {
-  fill: #41A21A;
+  fill: #368716;
 }
 
 .c22 {
@@ -1583,7 +1583,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   left: 9px;
   width: 2px;
   z-index: 1;
-  background: #41A21A;
+  background: #51CB20;
 }
 
 .c3:first-child::before {
@@ -1634,7 +1634,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   left: 9px;
   width: 2px;
   z-index: 1;
-  background: #41A21A;
+  background: #51CB20;
   bottom: 0;
 }
 

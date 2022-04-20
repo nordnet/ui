@@ -12709,7 +12709,7 @@ exports[`Storyshots Atoms / OldIcon Different size and fill 1`] = `
   user-select: none;
   width: 40px;
   height: 40px;
-  fill: #41A21A;
+  fill: #368716;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -13165,7 +13165,7 @@ exports[`Storyshots Atoms / OldIcon With modified stroke 1`] = `
   user-select: none;
   width: 40px;
   height: 40px;
-  fill: #41A21A;
+  fill: #368716;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -13173,7 +13173,7 @@ exports[`Storyshots Atoms / OldIcon With modified stroke 1`] = `
 }
 
 .c7 {
-  fill: #41A21A;
+  fill: #368716;
 }
 
 .c8 {
@@ -13185,11 +13185,11 @@ exports[`Storyshots Atoms / OldIcon With modified stroke 1`] = `
 }
 
 .c9 {
-  fill: #41A21A;
+  fill: #368716;
 }
 
 .c6 {
-  stroke: #41A21A;
+  stroke: #368716;
 }
 
 .c12 {
@@ -13197,11 +13197,11 @@ exports[`Storyshots Atoms / OldIcon With modified stroke 1`] = `
 }
 
 .c5 {
-  stroke: #41A21A;
+  stroke: #368716;
 }
 
 .c14 {
-  stroke: #41A21A;
+  stroke: #368716;
 }
 
 .c13 {
