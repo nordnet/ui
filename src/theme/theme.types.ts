@@ -683,6 +683,8 @@ export type ThemeColors = {
   removeFundText: string;
   /** background for toaster pop up */
   searchFundPopupBackground: string;
+  /** MS table row divider */
+  monthlySavingsTableRowDivider: string;
   /** @deprecated * gray3 */
   disabled: string;
   /** @deprecated * complementaryBlue2 */

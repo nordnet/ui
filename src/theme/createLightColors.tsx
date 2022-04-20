@@ -107,7 +107,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     dropDownButtonText: rawColor.gray800,
     dropDownButtonTextHover: rawColor.blue500,
-    dropDownButtonTextActive:rawColor.blue500,
+    dropDownButtonTextActive: rawColor.blue500,
     dropDownButtonTextDisabled: rawColor.gray400,
     dropDownButtonBackground: rawColor.gray100,
     dropDownButtonBackgroundHover: rawColor.gray100,
@@ -185,7 +185,12 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     negativeBlackBackground: rawColor.negative,
 
     newsLabelTextColors: [rawColor.green600, rawColor.pink600, rawColor.blue500, rawColor.teal600],
-    newsLabelBackgroundColors: [rawColor.green100, rawColor.pink100, rawColor.blue100, rawColor.teal100],
+    newsLabelBackgroundColors: [
+      rawColor.green100,
+      rawColor.pink100,
+      rawColor.blue100,
+      rawColor.teal100,
+    ],
 
     onboardingAccentBlue: rawColor.brandBlue,
     onboardingAccentGreen: rawColor.brandGreen,
@@ -348,6 +353,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     removeFundText: rawColor.red600,
 
     searchFundPopupBackground: rawColor.blue100,
+
+    monthlySavingsTableRowDivider: rawColor.gray100,
 
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
