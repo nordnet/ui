@@ -327,7 +327,7 @@ exports[`Storyshots Molecules / ProgressBar Custom Titles 1`] = `
   align-items: center;
   text-align: center;
   box-sizing: border-box;
-  background-color: #41A21A;
+  background-color: #51CB20;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -575,7 +575,7 @@ exports[`Storyshots Molecules / ProgressBar Default 1`] = `
   align-items: center;
   text-align: center;
   box-sizing: border-box;
-  background-color: #41A21A;
+  background-color: #51CB20;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -834,7 +834,7 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
   align-items: center;
   text-align: center;
   box-sizing: border-box;
-  background-color: #41A21A;
+  background-color: #51CB20;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -908,7 +908,7 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
 .c10 {
   width: 100%;
   height: 2px;
-  background-color: #41A21A;
+  background-color: #51CB20;
 }
 
 .c11 {
@@ -1146,7 +1146,7 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
   align-items: center;
   text-align: center;
   box-sizing: border-box;
-  background-color: #41A21A;
+  background-color: #51CB20;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1220,7 +1220,7 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
 .c9 {
   width: 100%;
   height: 2px;
-  background-color: #41A21A;
+  background-color: #51CB20;
 }
 
 .c10 {
@@ -1579,7 +1579,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
   align-items: center;
   text-align: center;
   box-sizing: border-box;
-  background-color: #41A21A;
+  background-color: #51CB20;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1617,7 +1617,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
 .c15 {
   width: 100%;
   height: 2px;
-  background-color: #41A21A;
+  background-color: #51CB20;
 }
 
 @media (min-width:976px) {
@@ -1966,7 +1966,7 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
   align-items: center;
   text-align: center;
   box-sizing: border-box;
-  background-color: #41A21A;
+  background-color: #51CB20;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -2040,7 +2040,7 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
 .c10 {
   width: 100%;
   height: 2px;
-  background-color: #41A21A;
+  background-color: #51CB20;
 }
 
 .c11 {
@@ -2278,7 +2278,7 @@ exports[`Storyshots Molecules / ProgressBar With Labels 1`] = `
   align-items: center;
   text-align: center;
   box-sizing: border-box;
-  background-color: #41A21A;
+  background-color: #51CB20;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;

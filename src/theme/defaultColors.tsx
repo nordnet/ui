@@ -43,7 +43,7 @@ const colorScales = {
   green450: '#D2F500',
   green500: '#51CB20',
   green600: '#41A21A',
-  green700: '#317A13',
+  green700: '#368716',
   green800: '#20510D',
   green900: '#102906',
 

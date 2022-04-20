@@ -3,7 +3,7 @@
 exports[`Storyshots Molecules / Modal Animation Complete 1`] = `
 Array [
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;
@@ -350,7 +350,7 @@ Array [
     Open modal
   </button>,
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;
@@ -724,7 +724,7 @@ Array [
     Open modal
   </button>,
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;
@@ -1094,7 +1094,7 @@ Array [
     Open modal
   </button>,
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;
@@ -1347,7 +1347,7 @@ Array [
     Open modal
   </button>,
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;
@@ -2497,7 +2497,7 @@ Array [
     Open modal
   </button>,
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;
@@ -3828,7 +3828,7 @@ Array [
     Open modal
   </button>,
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;
@@ -4426,7 +4426,7 @@ Array [
     Open modal
   </button>,
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;
@@ -5123,7 +5123,7 @@ Array [
     Open modal
   </button>,
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;
@@ -5608,7 +5608,7 @@ Array [
     Open modal
   </button>,
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;
@@ -6079,7 +6079,7 @@ Array [
     Open modal
   </button>,
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;
@@ -6672,7 +6672,7 @@ Array [
     Open modal
   </button>,
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;
@@ -7247,7 +7247,7 @@ Array [
     Open modal
   </button>,
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;
@@ -8156,7 +8156,7 @@ Array [
     Open modal
   </button>,
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;
@@ -8458,7 +8458,7 @@ Array [
 exports[`Storyshots Molecules / Modal Node as Title 1`] = `
 Array [
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;
@@ -8877,7 +8877,7 @@ Array [
     Open modal
   </button>,
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;
@@ -9403,7 +9403,7 @@ Array [
 exports[`Storyshots Molecules / Modal Uncontrolled behavior 1`] = `
 Array [
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;
@@ -9773,7 +9773,7 @@ Array [
     Open modal
   </button>,
   .c0 {
-  background-image: linear-gradient( #41A21A,#CC2269 );
+  background-image: linear-gradient( #368716,#CC2269 );
   position: absolute;
   right: 0;
   top: 0;

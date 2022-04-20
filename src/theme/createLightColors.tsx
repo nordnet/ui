@@ -15,7 +15,7 @@ export const getColorLightScheme = (scheme: ThemeColorsVersion) => {
 export const createLightColors = (rawColor: RawColors): ThemeColors => {
   const lineColors = [
     rawColor.brandPink,
-    rawColor.green600,
+    rawColor.green500,
     rawColor.graphPurple,
     rawColor.complementaryTurquoise1,
     rawColor.pink600,
@@ -216,7 +216,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     pillBackground: rawColor.gray100,
 
-    positive: rawColor.green600,
+    positive: rawColor.green700,
 
     infoBarBackgroundSuccess: rawColor.green100,
     infoBarBackgroundWarning: rawColor.yellow100,
@@ -235,7 +235,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     privateBankingBannerTitle: rawColor.gray6,
 
     progressBarActive: rawColor.cta,
-    progressBarDone: rawColor.green600,
+    progressBarDone: rawColor.green500,
     progressBarFailure: rawColor.pink600,
     progressBarNext: rawColor.gray4,
     progressBarText: rawColor.white,
@@ -297,12 +297,12 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     timelineActive: rawColor.cta,
     timelineFailure: rawColor.pink600,
     timelineNext: rawColor.gray4,
-    timelineSuccess: rawColor.green600,
+    timelineSuccess: rawColor.green500,
     timelineWarning: rawColor.index,
 
     transferPendingIconColor: rawColor.index,
     transferProgressBar1: rawColor.brandPink,
-    transferProgressBar2: rawColor.green600,
+    transferProgressBar2: rawColor.green500,
     transferProgressBar3: rawColor.gray5,
     transferProgressBarText1: rawColor.gray1,
     transferProgressBarText2: rawColor.gray2,
