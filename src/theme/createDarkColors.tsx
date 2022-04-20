@@ -355,6 +355,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     removeFundText: rawColor.red500,
 
+    searchFundPopupBackground: rawColor.blue800,
+
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,

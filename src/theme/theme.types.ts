@@ -681,6 +681,8 @@ export type ThemeColors = {
   daySelectInputTextInactive: string;
   /** remove fund fund added */
   removeFundText: string;
+  /** background for toaster pop up */
+  searchFundPopupBackground: string;
   /** @deprecated * gray3 */
   disabled: string;
   /** @deprecated * complementaryBlue2 */
