@@ -1,3 +1,10 @@
+## [10.22.1-beta.2](https://github.com/nordnet/ui/compare/v10.22.1-beta.1...v10.22.1-beta.2) (2022-04-20)
+
+
+### Bug Fixes
+
+* 🐛 update green700 and use as positive for light mode ([c1be875](https://github.com/nordnet/ui/commit/c1be875))
+
 ## [10.22.1-beta.1](https://github.com/nordnet/ui/compare/v10.22.0...v10.22.1-beta.1) (2022-04-06)
 
 
