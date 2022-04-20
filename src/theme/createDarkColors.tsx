@@ -353,9 +353,9 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     worldMapLand: rawColor.blue600, // not yet in use
     worldMapWater: rawColor.gray800, // not yet in use
 
-    removeFundText: rawColor.red500,
+    removeInstrumentText: rawColor.red500,
 
-    searchFundPopupBackground: rawColor.blue800,
+    searchInstrumentPopupBackground: rawColor.blue800,
 
     monthlySavingsTableRowDivider: rawColor.gray800,
 
