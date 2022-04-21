@@ -1,3 +1,10 @@
+# [10.25.0](https://github.com/nordnet/ui/compare/v10.24.2...v10.25.0) (2022-04-21)
+
+
+### Features
+
+* 🎸 enable flex behaviour on title with multiple items ([46ba7dd](https://github.com/nordnet/ui/commit/46ba7dd))
+
 ## [10.24.2](https://github.com/nordnet/ui/compare/v10.24.1...v10.24.2) (2022-04-21)
 
 
