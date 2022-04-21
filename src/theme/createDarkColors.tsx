@@ -357,7 +357,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     searchPopupBackground: rawColor.blue800,
 
-    monthlySavingsTableRowDivider: rawColor.gray800,
+    monthlySavingsTableRowDivider: rawColor.gray900,
 
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
