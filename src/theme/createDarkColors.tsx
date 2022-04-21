@@ -243,7 +243,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     privateBankingBannerText: rawColor.white,
     privateBankingBannerTitle: rawColor.gray6,
 
-    progressBarActive: rawColor.cta,
+    progressBarActive: rawColor.blue500,
     progressBarDone: rawColor.positive,
     progressBarFailure: rawColor.negative,
     progressBarNext: rawColor.gray4,
@@ -332,7 +332,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     sfdrArticle8: rawColor.sfdrArticle8,
     sfdrArticle9: rawColor.sfdrArticle9,
 
-    popularBadgeBackground: rawColor.pink100,
+    popularBadgeBackground: rawColor.pink900,
 
     joinSharevilleIllustration: rawColor.green200,
     joinSharevilleBadge: rawColor.green800,
@@ -352,6 +352,12 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     worldMapLand: rawColor.blue600, // not yet in use
     worldMapWater: rawColor.gray800, // not yet in use
+
+    removeInstrumentText: rawColor.red500,
+
+    searchPopupBackground: rawColor.blue800,
+
+    monthlySavingsTableRowDivider: rawColor.gray800,
 
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,

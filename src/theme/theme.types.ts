@@ -679,6 +679,12 @@ export type ThemeColors = {
   monthlySavingsTransferTypeInactive: string;
   /** day select input inactive */
   daySelectInputTextInactive: string;
+  /** remove instrument added */
+  removeInstrumentText: string;
+  /** background for toaster pop up */
+  searchPopupBackground: string;
+  /** MS table row divider */
+  monthlySavingsTableRowDivider: string;
   /** @deprecated * gray3 */
   disabled: string;
   /** @deprecated * complementaryBlue2 */
