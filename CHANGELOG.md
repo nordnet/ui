@@ -1,3 +1,15 @@
+## [10.24.1](https://github.com/nordnet/ui/compare/v10.24.0...v10.24.1) (2022-04-21)
+
+
+### Bug Fixes
+
+* add color and update story ([9cd6c53](https://github.com/nordnet/ui/commit/9cd6c53))
+* add more colors ([277f4b8](https://github.com/nordnet/ui/commit/277f4b8))
+* add ms table divider colors ([0d43e55](https://github.com/nordnet/ui/commit/0d43e55))
+* correct progress bar colors ([07bd67d](https://github.com/nordnet/ui/commit/07bd67d))
+* different name ([e4b94b7](https://github.com/nordnet/ui/commit/e4b94b7))
+* use more generic names ([5e18a27](https://github.com/nordnet/ui/commit/5e18a27))
+
 # [10.24.0](https://github.com/nordnet/ui/compare/v10.23.0...v10.24.0) (2022-04-19)
 
 
