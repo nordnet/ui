@@ -149,7 +149,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsed initially 1`] = `
         className="c3"
       >
         <div
-          className="c4"
+          className="c4 "
         >
           <h2
             className="c5"
@@ -185,6 +185,230 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsed initially 1`] = `
   >
     <p
       className="c9 c10"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / CollapsibleCard Collapsible With Custom Full Width Title 1`] = `
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c3 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c3 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c4 {
+  box-sizing: border-box;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c8 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c10 {
+  overflow: hidden;
+  will-change: height;
+  height: auto;
+  -webkit-transition: height 0.16s ease-out;
+  transition: height 0.16s ease-out;
+}
+
+.c10[hidden] {
+  display: none;
+}
+
+.c2 {
+  touch-action: none;
+  position: relative;
+  background: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 20px 20px;
+  border: 0;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  background: #336BFF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 0;
+}
+
+.c9 {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+}
+
+.c5 {
+  width: 100%;
+}
+
+.c11 {
+  margin: 0;
+}
+
+@media (min-width:760px) {
+  .c6 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      aria-expanded={true}
+      className="c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4 c5"
+        >
+          <h2
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              <div
+                className="c4"
+              >
+                Custom title
+              </div>
+              <div
+                className="c4"
+              >
+                Status
+              </div>
+            </div>
+          </h2>
+        </div>
+        <div
+          className="c4"
+        >
+          <svg
+            aria-hidden="true"
+            className="c8 c9"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              transform="rotate(-180 12 12)"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div
+    className="c10"
+    height={null}
+    hidden={false}
+    onTransitionEnd={[Function]}
+  >
+    <p
+      className="c11 c12"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
@@ -341,7 +565,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible card with lots of to
         className="c3"
       >
         <div
-          className="c4"
+          className="c4 "
         >
           <h2
             className="c5"
@@ -533,7 +757,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible card with no title r
         className="c3"
       >
         <div
-          className="c4"
+          className="c4 "
         >
           <h2
             className="c5"
@@ -725,7 +949,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible with custom componen
         className="c3"
       >
         <div
-          className="c4"
+          className="c4 "
         >
           <h2
             className="c5"
@@ -900,7 +1124,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible with custom expand e
         className="c3"
       >
         <div
-          className="c4"
+          className="c4 "
         >
           <h2
             className="c5"
@@ -1067,7 +1291,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible with custom expand e
         className="c3"
       >
         <div
-          className="c4"
+          className="c4 "
         >
           <h2
             className="c5"
@@ -1251,7 +1475,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible with onClick listene
         className="c3"
       >
         <div
-          className="c4"
+          className="c4 "
         >
           <h2
             className="c5"
@@ -1443,7 +1667,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible without indicator 1`
         className="c3"
       >
         <div
-          className="c4"
+          className="c4 "
         >
           <h2
             className="c5"
@@ -1635,7 +1859,7 @@ exports[`Storyshots Molecules / CollapsibleCard Default 1`] = `
         className="c3"
       >
         <div
-          className="c4"
+          className="c4 "
         >
           <h2
             className="c5"
@@ -1915,7 +2139,7 @@ exports[`Storyshots Molecules / CollapsibleCard With an action component that do
           className="c5"
         >
           <div
-            className="c6"
+            className="c6 "
           >
             <h2
               className="c7"

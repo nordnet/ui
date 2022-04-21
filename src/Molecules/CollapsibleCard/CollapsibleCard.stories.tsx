@@ -1,7 +1,7 @@
 import { action } from '@storybook/addon-actions';
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Button, CollapsibleCard, Icon, Typography } from '../..';
+import { Button, CollapsibleCard, Flexbox, Icon, Typography } from '../..';
 
 const styledText = styled.p`
   margin: 0;
@@ -208,4 +208,23 @@ export const collapsibleCardWithLotsOfTopAndBottomPadding = () => (
 
 collapsibleCardWithLotsOfTopAndBottomPadding.story = {
   name: 'Collapsible card with lots of top and bottom padding',
+};
+
+export const collapsibleWithCustomFullWidthTitle = () => {
+  return (
+    <CollapsibleCard
+      fullWidthTitle
+      title={
+        <Flexbox container direction="row" justifyContent="space-between">
+          <Flexbox item>Custom title</Flexbox>
+          <Flexbox item>Status</Flexbox>
+        </Flexbox>
+      }
+    >
+      <Typography type="primary" as={styledText}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+      </Typography>
+    </CollapsibleCard>
+  );
 };
