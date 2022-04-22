@@ -56,7 +56,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
   flex: 1;
 }
 
-.c18 {
+.c19 {
   color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -68,33 +68,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
   display: block;
 }
 
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c14 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c17 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c16 {
   font-family: inherit;
   font-size: 100%;
@@ -102,26 +75,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
 }
 
 .c16,
@@ -144,6 +97,56 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
 .c16[type='reset']:-moz-focusring,
 .c16[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c18 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
 }
 
 .c6 {
@@ -338,7 +341,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
         className="c6 c7"
       >
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Header 1
         </span>
@@ -352,7 +355,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
         className="c6 c7"
       >
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Header 2
         </span>
@@ -366,7 +369,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
         className="c6 c7"
       >
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Header 3
         </span>
@@ -380,7 +383,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
         className="c6 c7"
       >
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         />
       </div>
     </div>
@@ -397,7 +400,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 1-1
         </span>
@@ -411,7 +414,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 1-2
         </span>
@@ -425,7 +428,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 1-3
         </span>
@@ -437,17 +440,17 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16"
+        className="c16 c17"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c17"
+          className="Typography__Span-sc-10mju41-0 c18"
         >
           <svg
             aria-hidden="true"
-            className="c18"
+            className="c19"
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"
@@ -475,7 +478,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 2-1
         </span>
@@ -489,7 +492,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 2-2
         </span>
@@ -503,7 +506,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 2-3
         </span>
@@ -515,17 +518,17 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16"
+        className="c16 c17"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c17"
+          className="Typography__Span-sc-10mju41-0 c18"
         >
           <svg
             aria-hidden="true"
-            className="c18"
+            className="c19"
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"
@@ -553,7 +556,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 3-1
         </span>
@@ -567,7 +570,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 3-2
         </span>
@@ -581,7 +584,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 3-3
         </span>
@@ -593,17 +596,17 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16"
+        className="c16 c17"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c17"
+          className="Typography__Span-sc-10mju41-0 c18"
         >
           <svg
             aria-hidden="true"
-            className="c18"
+            className="c19"
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"
@@ -678,7 +681,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   flex: 1;
 }
 
-.c20 {
+.c21 {
   color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -690,7 +693,38 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   display: block;
 }
 
-.c17 {
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c18 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -722,7 +756,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   line-height: 1.5;
 }
 
-.c16 {
+.c17 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -731,13 +765,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   line-height: 1.4285714285714286;
 }
 
-.c15 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
+.c16 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -760,35 +788,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   cursor: pointer;
 }
 
-.c15,
-.c15[type='button'],
-.c15[type='reset'],
-.c15[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c15::-moz-focus-inner,
-.c15[type='button']::-moz-focus-inner,
-.c15[type='reset']::-moz-focus-inner,
-.c15[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c15:-moz-focusring,
-.c15[type='button']:-moz-focusring,
-.c15[type='reset']:-moz-focusring,
-.c15[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c19 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
+.c20 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -809,28 +809,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   border: none;
   border-radius: 0;
   cursor: not-allowed;
-}
-
-.c19,
-.c19[type='button'],
-.c19[type='reset'],
-.c19[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c19::-moz-focus-inner,
-.c19[type='button']::-moz-focus-inner,
-.c19[type='reset']::-moz-focus-inner,
-.c19[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c19:-moz-focusring,
-.c19[type='button']:-moz-focusring,
-.c19[type='reset']:-moz-focusring,
-.c19[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c6 {
@@ -856,7 +834,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   padding-bottom: 5px;
 }
 
-.c18 {
+.c19 {
   padding-top: 0 !important;
   padding-bottom: 0;
   -webkit-align-self: stretch;
@@ -1025,7 +1003,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         className="c6 c7"
       >
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Header 1
         </span>
@@ -1039,7 +1017,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         className="c6 c7"
       >
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Header 2
         </span>
@@ -1053,7 +1031,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         className="c6 c7"
       >
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Header 3
         </span>
@@ -1067,7 +1045,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         className="c6 c7"
       >
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         />
       </div>
     </div>
@@ -1079,7 +1057,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         className="c6 c7"
       >
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         />
       </div>
     </div>
@@ -1096,7 +1074,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 1-1
         </span>
@@ -1110,7 +1088,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 1-2
         </span>
@@ -1124,7 +1102,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 1-3
         </span>
@@ -1135,16 +1113,16 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
       role="cell"
     >
       <button
-        className="NormalizedButton__Button-sc-ey7f5x-0 c15"
+        className="c15 c16"
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c16"
+          className="Typography__Span-sc-10mju41-0 c17"
         >
           <svg
             aria-hidden="true"
-            className="c17"
+            className="c18"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1159,22 +1137,22 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
       </button>
     </div>
     <div
-      className="c10 c13 c18 c11"
+      className="c10 c13 c19 c11"
       role="cell"
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+        className="c15 c20"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c16"
+          className="Typography__Span-sc-10mju41-0 c17"
         >
           <svg
             aria-hidden="true"
-            className="c20"
+            className="c21"
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"
@@ -1202,7 +1180,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 2-1
         </span>
@@ -1216,7 +1194,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 2-2
         </span>
@@ -1230,7 +1208,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 2-3
         </span>
@@ -1241,16 +1219,16 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
       role="cell"
     >
       <button
-        className="NormalizedButton__Button-sc-ey7f5x-0 c15"
+        className="c15 c16"
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c16"
+          className="Typography__Span-sc-10mju41-0 c17"
         >
           <svg
             aria-hidden="true"
-            className="c17"
+            className="c18"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1265,22 +1243,22 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
       </button>
     </div>
     <div
-      className="c10 c13 c18 c11"
+      className="c10 c13 c19 c11"
       role="cell"
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+        className="c15 c20"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c16"
+          className="Typography__Span-sc-10mju41-0 c17"
         >
           <svg
             aria-hidden="true"
-            className="c20"
+            className="c21"
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"
@@ -1308,7 +1286,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 3-1
         </span>
@@ -1322,7 +1300,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 3-2
         </span>
@@ -1336,7 +1314,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 3-3
         </span>
@@ -1347,16 +1325,16 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
       role="cell"
     >
       <button
-        className="NormalizedButton__Button-sc-ey7f5x-0 c15"
+        className="c15 c16"
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c16"
+          className="Typography__Span-sc-10mju41-0 c17"
         >
           <svg
             aria-hidden="true"
-            className="c17"
+            className="c18"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1371,22 +1349,22 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
       </button>
     </div>
     <div
-      className="c10 c13 c18 c11"
+      className="c10 c13 c19 c11"
       role="cell"
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+        className="c15 c20"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c16"
+          className="Typography__Span-sc-10mju41-0 c17"
         >
           <svg
             aria-hidden="true"
-            className="c20"
+            className="c21"
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"
@@ -1496,7 +1474,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   flex: 1;
 }
 
-.c24 {
+.c25 {
   color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1506,6 +1484,37 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
+}
+
+.c22 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c22,
+.c22[type='button'],
+.c22[type='reset'],
+.c22[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c22::-moz-focus-inner,
+.c22[type='button']::-moz-focus-inner,
+.c22[type='reset']::-moz-focus-inner,
+.c22[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c22:-moz-focusring,
+.c22[type='button']:-moz-focusring,
+.c22[type='reset']:-moz-focusring,
+.c22[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c5 {
@@ -1544,7 +1553,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   line-height: 1.5;
 }
 
-.c23 {
+.c24 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1553,13 +1562,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   line-height: 1.4285714285714286;
 }
 
-.c22 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
+.c23 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -1580,28 +1583,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   border: none;
   border-radius: 0;
   cursor: not-allowed;
-}
-
-.c22,
-.c22[type='button'],
-.c22[type='reset'],
-.c22[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c22::-moz-focus-inner,
-.c22[type='button']::-moz-focus-inner,
-.c22[type='reset']::-moz-focus-inner,
-.c22[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c22:-moz-focusring,
-.c22[type='button']:-moz-focusring,
-.c22[type='reset']:-moz-focusring,
-.c22[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c12 {
@@ -1847,7 +1828,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
         className="c3"
       >
         <span
-          className="c5"
+          className="Typography__Span-sc-10mju41-0 c5"
         >
           Ericsson Corporation
         </span>
@@ -1856,7 +1837,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
         className="c3"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           (
           ERICSSON
@@ -1877,7 +1858,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
         className="c12 c13"
       >
         <span
-          className="c14 c15"
+          className="Typography__Span-sc-10mju41-0 c14 c15"
         >
           Header 1
         </span>
@@ -1891,7 +1872,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
         className="c12 c13"
       >
         <span
-          className="c14 c15"
+          className="Typography__Span-sc-10mju41-0 c14 c15"
         >
           Header 2
         </span>
@@ -1905,7 +1886,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
         className="c12 c13"
       >
         <span
-          className="c14 c15"
+          className="Typography__Span-sc-10mju41-0 c14 c15"
         >
           Header 3
         </span>
@@ -1919,7 +1900,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
         className="c12 c13"
       >
         <span
-          className="c14 c15"
+          className="Typography__Span-sc-10mju41-0 c14 c15"
         />
       </div>
     </div>
@@ -1936,7 +1917,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
         className="c12 c13"
       >
         <span
-          className="c20 c15"
+          className="Typography__Span-sc-10mju41-0 c20 c15"
         >
           Cell 1-1
         </span>
@@ -1950,7 +1931,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
         className="c12 c13"
       >
         <span
-          className="c20 c15"
+          className="Typography__Span-sc-10mju41-0 c20 c15"
         >
           Cell 1-2
         </span>
@@ -1964,7 +1945,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
         className="c12 c13"
       >
         <span
-          className="c20 c15"
+          className="Typography__Span-sc-10mju41-0 c20 c15"
         >
           Cell 1-3
         </span>
@@ -1976,17 +1957,17 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c22"
+        className="c22 c23"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c23"
+          className="Typography__Span-sc-10mju41-0 c24"
         >
           <svg
             aria-hidden="true"
-            className="c24"
+            className="c25"
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"
@@ -2061,7 +2042,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   flex: 1;
 }
 
-.c18 {
+.c19 {
   color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2073,42 +2054,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   display: block;
 }
 
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c14 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c17 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c21 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c16 {
   font-family: inherit;
   font-size: 100%;
@@ -2116,26 +2061,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
 }
 
 .c16,
@@ -2158,6 +2083,65 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
 .c16[type='reset']:-moz-focusring,
 .c16[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c18 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c22 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c17 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
 }
 
 .c6 {
@@ -2247,7 +2231,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   top: 0px;
 }
 
-.c19 {
+.c20 {
   border-top: 1px solid #282823;
   border-bottom: 0;
 }
@@ -2258,7 +2242,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   padding-bottom: 5px;
 }
 
-.c20 {
+.c21 {
   overflow: hidden;
   padding-top: 5px !important;
   padding-bottom: 5px;
@@ -2363,7 +2347,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
         className="c6 c7"
       >
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Header 1
         </span>
@@ -2377,7 +2361,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
         className="c6 c7"
       >
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Header 2
         </span>
@@ -2391,7 +2375,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
         className="c6 c7"
       >
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Header 3
         </span>
@@ -2405,7 +2389,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
         className="c6 c7"
       >
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         />
       </div>
     </div>
@@ -2422,7 +2406,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 1-1
         </span>
@@ -2436,7 +2420,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 1-2
         </span>
@@ -2450,7 +2434,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 1-3
         </span>
@@ -2462,17 +2446,17 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16"
+        className="c16 c17"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c17"
+          className="Typography__Span-sc-10mju41-0 c18"
         >
           <svg
             aria-hidden="true"
-            className="c18"
+            className="c19"
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"
@@ -2500,7 +2484,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 2-1
         </span>
@@ -2514,7 +2498,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 2-2
         </span>
@@ -2528,7 +2512,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 2-3
         </span>
@@ -2540,17 +2524,17 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16"
+        className="c16 c17"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c17"
+          className="Typography__Span-sc-10mju41-0 c18"
         >
           <svg
             aria-hidden="true"
-            className="c18"
+            className="c19"
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"
@@ -2578,7 +2562,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 3-1
         </span>
@@ -2592,7 +2576,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 3-2
         </span>
@@ -2606,7 +2590,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="Typography__Span-sc-10mju41-0 c14 c9"
         >
           Cell 3-3
         </span>
@@ -2618,17 +2602,17 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16"
+        className="c16 c17"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c17"
+          className="Typography__Span-sc-10mju41-0 c18"
         >
           <svg
             aria-hidden="true"
-            className="c18"
+            className="c19"
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"
@@ -2645,60 +2629,60 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
     </div>
   </div>
   <div
-    className="c1 c2 c19"
+    className="c1 c2 c20"
     role="row"
   >
     <div
-      className="c4 c20"
+      className="c4 c21"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c21 c9"
+          className="Typography__Span-sc-10mju41-0 c22 c9"
         >
           Footer 1
         </span>
       </div>
     </div>
     <div
-      className="c4 c20"
+      className="c4 c21"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c21 c9"
+          className="Typography__Span-sc-10mju41-0 c22 c9"
         >
           Footer 2
         </span>
       </div>
     </div>
     <div
-      className="c4 c20"
+      className="c4 c21"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c21 c9"
+          className="Typography__Span-sc-10mju41-0 c22 c9"
         >
           Footer 3
         </span>
       </div>
     </div>
     <div
-      className="c10 c20 c11"
+      className="c10 c21 c11"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c21 c9"
+          className="Typography__Span-sc-10mju41-0 c22 c9"
         />
       </div>
     </div>
@@ -2762,7 +2746,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   flex: 1;
 }
 
-.c21 {
+.c22 {
   color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2772,6 +2756,37 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
+}
+
+.c19 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c19,
+.c19[type='button'],
+.c19[type='reset'],
+.c19[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c19::-moz-focus-inner,
+.c19[type='button']::-moz-focus-inner,
+.c19[type='reset']::-moz-focus-inner,
+.c19[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c19:-moz-focusring,
+.c19[type='button']:-moz-focusring,
+.c19[type='reset']:-moz-focusring,
+.c19[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -2801,7 +2816,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   line-height: 1.5;
 }
 
-.c20 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2810,13 +2825,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   line-height: 1.4285714285714286;
 }
 
-.c19 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
+.c20 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -2837,28 +2846,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   border: none;
   border-radius: 0;
   cursor: not-allowed;
-}
-
-.c19,
-.c19[type='button'],
-.c19[type='reset'],
-.c19[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c19::-moz-focus-inner,
-.c19[type='button']::-moz-focus-inner,
-.c19[type='reset']::-moz-focus-inner,
-.c19[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c19:-moz-focusring,
-.c19[type='button']:-moz-focusring,
-.c19[type='reset']:-moz-focusring,
-.c19[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c9 {
@@ -3066,7 +3053,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
     id="table-with-title-title"
   >
     <span
-      className="c2 c3"
+      className="Typography__Span-sc-10mju41-0 c2 c3"
     >
       A Title
     </span>
@@ -3083,7 +3070,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
         className="c9 c10"
       >
         <span
-          className="c11 c12"
+          className="Typography__Span-sc-10mju41-0 c11 c12"
         >
           Header 1
         </span>
@@ -3097,7 +3084,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
         className="c9 c10"
       >
         <span
-          className="c11 c12"
+          className="Typography__Span-sc-10mju41-0 c11 c12"
         >
           Header 2
         </span>
@@ -3111,7 +3098,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
         className="c9 c10"
       >
         <span
-          className="c11 c12"
+          className="Typography__Span-sc-10mju41-0 c11 c12"
         >
           Header 3
         </span>
@@ -3125,7 +3112,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
         className="c9 c10"
       >
         <span
-          className="c11 c12"
+          className="Typography__Span-sc-10mju41-0 c11 c12"
         />
       </div>
     </div>
@@ -3142,7 +3129,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
         className="c9 c10"
       >
         <span
-          className="c17 c12"
+          className="Typography__Span-sc-10mju41-0 c17 c12"
         >
           Cell 1-1
         </span>
@@ -3156,7 +3143,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
         className="c9 c10"
       >
         <span
-          className="c17 c12"
+          className="Typography__Span-sc-10mju41-0 c17 c12"
         >
           Cell 1-2
         </span>
@@ -3170,7 +3157,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
         className="c9 c10"
       >
         <span
-          className="c17 c12"
+          className="Typography__Span-sc-10mju41-0 c17 c12"
         >
           Cell 1-3
         </span>
@@ -3182,17 +3169,17 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+        className="c19 c20"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c20"
+          className="Typography__Span-sc-10mju41-0 c21"
         >
           <svg
             aria-hidden="true"
-            className="c21"
+            className="c22"
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"

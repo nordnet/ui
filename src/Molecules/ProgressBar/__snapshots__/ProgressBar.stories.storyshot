@@ -184,7 +184,7 @@ exports[`Storyshots Molecules / ProgressBar Custom Colors 1`] = `
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         <svg
           aria-hidden="true"
@@ -205,7 +205,7 @@ exports[`Storyshots Molecules / ProgressBar Custom Colors 1`] = `
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="Typography__Span-sc-10mju41-0 c7 c8"
       >
         Done
       </span>
@@ -219,13 +219,13 @@ exports[`Storyshots Molecules / ProgressBar Custom Colors 1`] = `
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         2
       </span>
       <span
         aria-hidden={true}
-        className="c11 c8"
+        className="Typography__Span-sc-10mju41-0 c11 c8"
       >
         Active
       </span>
@@ -239,13 +239,13 @@ exports[`Storyshots Molecules / ProgressBar Custom Colors 1`] = `
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         3
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="Typography__Span-sc-10mju41-0 c7 c8"
       >
         Next
       </span>
@@ -438,7 +438,7 @@ exports[`Storyshots Molecules / ProgressBar Custom Titles 1`] = `
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         <svg
           aria-hidden="true"
@@ -459,7 +459,7 @@ exports[`Storyshots Molecules / ProgressBar Custom Titles 1`] = `
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="Typography__Span-sc-10mju41-0 c7 c8"
       >
         Huey
       </span>
@@ -473,13 +473,13 @@ exports[`Storyshots Molecules / ProgressBar Custom Titles 1`] = `
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         2
       </span>
       <span
         aria-hidden={true}
-        className="c11 c8"
+        className="Typography__Span-sc-10mju41-0 c11 c8"
       >
         Dewey
       </span>
@@ -493,13 +493,13 @@ exports[`Storyshots Molecules / ProgressBar Custom Titles 1`] = `
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         3
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="Typography__Span-sc-10mju41-0 c7 c8"
       >
         Louie
       </span>
@@ -683,7 +683,7 @@ exports[`Storyshots Molecules / ProgressBar Default 1`] = `
   >
     <span
       aria-hidden={true}
-      className="c4"
+      className="Typography__Span-sc-10mju41-0 c4"
     >
       <svg
         aria-hidden="true"
@@ -704,7 +704,7 @@ exports[`Storyshots Molecules / ProgressBar Default 1`] = `
     </span>
     <span
       aria-hidden={true}
-      className="c6 c7"
+      className="Typography__Span-sc-10mju41-0 c6 c7"
     />
   </span>
   <div
@@ -716,13 +716,13 @@ exports[`Storyshots Molecules / ProgressBar Default 1`] = `
   >
     <span
       aria-hidden={true}
-      className="c4"
+      className="Typography__Span-sc-10mju41-0 c4"
     >
       2
     </span>
     <span
       aria-hidden={true}
-      className="c10 c7"
+      className="Typography__Span-sc-10mju41-0 c10 c7"
     />
   </span>
   <div
@@ -734,13 +734,13 @@ exports[`Storyshots Molecules / ProgressBar Default 1`] = `
   >
     <span
       aria-hidden={true}
-      className="c4"
+      className="Typography__Span-sc-10mju41-0 c4"
     >
       3
     </span>
     <span
       aria-hidden={true}
-      className="c6 c7"
+      className="Typography__Span-sc-10mju41-0 c6 c7"
     />
   </span>
 </div>
@@ -954,7 +954,7 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           <svg
             aria-hidden="true"
@@ -975,7 +975,7 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           One
         </span>
@@ -989,7 +989,7 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           <svg
             aria-hidden="true"
@@ -1010,7 +1010,7 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Two
         </span>
@@ -1024,7 +1024,7 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           <svg
             aria-hidden="true"
@@ -1043,7 +1043,7 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="c13 c9"
+          className="Typography__Span-sc-10mju41-0 c13 c9"
         >
           Failed step
         </span>
@@ -1057,13 +1057,13 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           4
         </span>
         <span
           aria-hidden={true}
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Four
         </span>
@@ -1263,7 +1263,7 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         <svg
           aria-hidden="true"
@@ -1284,7 +1284,7 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="Typography__Span-sc-10mju41-0 c7 c8"
       >
         Lorem
       </span>
@@ -1298,7 +1298,7 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         <svg
           aria-hidden="true"
@@ -1319,7 +1319,7 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="Typography__Span-sc-10mju41-0 c7 c8"
       >
         Ipsum
       </span>
@@ -1333,7 +1333,7 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         <svg
           aria-hidden="true"
@@ -1354,7 +1354,7 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="Typography__Span-sc-10mju41-0 c7 c8"
       >
         Dolor
       </span>
@@ -1368,13 +1368,13 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         4
       </span>
       <span
         aria-hidden={true}
-        className="c12 c8"
+        className="Typography__Span-sc-10mju41-0 c12 c8"
       >
         Sit
       </span>
@@ -1388,13 +1388,13 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         5
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="Typography__Span-sc-10mju41-0 c7 c8"
       >
         Amet
       </span>
@@ -1408,13 +1408,13 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         6
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="Typography__Span-sc-10mju41-0 c7 c8"
       >
         Ego
       </span>
@@ -1428,13 +1428,13 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         7
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="Typography__Span-sc-10mju41-0 c7 c8"
       >
         Sum
       </span>
@@ -1651,13 +1651,13 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           1
         </span>
         <span
           aria-hidden={true}
-          className="c7 c8"
+          className="Typography__Span-sc-10mju41-0 c7 c8"
         >
           One
         </span>
@@ -1671,13 +1671,13 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           2
         </span>
         <span
           aria-hidden={true}
-          className="c11 c8"
+          className="Typography__Span-sc-10mju41-0 c11 c8"
         >
           Two
         </span>
@@ -1691,13 +1691,13 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           3
         </span>
         <span
           aria-hidden={true}
-          className="c11 c8"
+          className="Typography__Span-sc-10mju41-0 c11 c8"
         >
           Three
         </span>
@@ -1714,7 +1714,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           <svg
             aria-hidden="true"
@@ -1735,7 +1735,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="c11 c8"
+          className="Typography__Span-sc-10mju41-0 c11 c8"
         >
           One
         </span>
@@ -1749,13 +1749,13 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           2
         </span>
         <span
           aria-hidden={true}
-          className="c7 c8"
+          className="Typography__Span-sc-10mju41-0 c7 c8"
         >
           Two
         </span>
@@ -1769,13 +1769,13 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           3
         </span>
         <span
           aria-hidden={true}
-          className="c11 c8"
+          className="Typography__Span-sc-10mju41-0 c11 c8"
         >
           Three
         </span>
@@ -1792,7 +1792,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           <svg
             aria-hidden="true"
@@ -1813,7 +1813,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="c11 c8"
+          className="Typography__Span-sc-10mju41-0 c11 c8"
         >
           One
         </span>
@@ -1827,7 +1827,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           <svg
             aria-hidden="true"
@@ -1848,7 +1848,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="c11 c8"
+          className="Typography__Span-sc-10mju41-0 c11 c8"
         >
           Two
         </span>
@@ -1862,13 +1862,13 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           3
         </span>
         <span
           aria-hidden={true}
-          className="c7 c8"
+          className="Typography__Span-sc-10mju41-0 c7 c8"
         >
           Three
         </span>
@@ -2086,7 +2086,7 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           <svg
             aria-hidden="true"
@@ -2107,7 +2107,7 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           One
         </span>
@@ -2121,7 +2121,7 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           <svg
             aria-hidden="true"
@@ -2142,7 +2142,7 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Two
         </span>
@@ -2156,7 +2156,7 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           <svg
             aria-hidden="true"
@@ -2181,7 +2181,7 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="c13 c9"
+          className="Typography__Span-sc-10mju41-0 c13 c9"
         >
           Step with warning
         </span>
@@ -2195,13 +2195,13 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           4
         </span>
         <span
           aria-hidden={true}
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Four
         </span>
@@ -2386,7 +2386,7 @@ exports[`Storyshots Molecules / ProgressBar With Labels 1`] = `
   >
     <span
       aria-hidden={true}
-      className="c4"
+      className="Typography__Span-sc-10mju41-0 c4"
     >
       <svg
         aria-hidden="true"
@@ -2407,7 +2407,7 @@ exports[`Storyshots Molecules / ProgressBar With Labels 1`] = `
     </span>
     <span
       aria-hidden={true}
-      className="c6 c7"
+      className="Typography__Span-sc-10mju41-0 c6 c7"
     >
       Lorem ipsum
     </span>
@@ -2421,13 +2421,13 @@ exports[`Storyshots Molecules / ProgressBar With Labels 1`] = `
   >
     <span
       aria-hidden={true}
-      className="c4"
+      className="Typography__Span-sc-10mju41-0 c4"
     >
       2
     </span>
     <span
       aria-hidden={true}
-      className="c10 c7"
+      className="Typography__Span-sc-10mju41-0 c10 c7"
     >
       Dolor sit amet
     </span>
@@ -2441,13 +2441,13 @@ exports[`Storyshots Molecules / ProgressBar With Labels 1`] = `
   >
     <span
       aria-hidden={true}
-      className="c4"
+      className="Typography__Span-sc-10mju41-0 c4"
     >
       3
     </span>
     <span
       aria-hidden={true}
-      className="c6 c7"
+      className="Typography__Span-sc-10mju41-0 c6 c7"
     >
       Foo bar
     </span>

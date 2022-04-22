@@ -355,7 +355,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
               onClick={[Function]}
             >
               <span
-                className="c8"
+                className="Typography__Span-sc-10mju41-0 c8"
               >
                 Cancel
               </span>
@@ -373,7 +373,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
                 onClick={[Function]}
               >
                 <span
-                  className="c8"
+                  className="Typography__Span-sc-10mju41-0 c8"
                 >
                   <div
                     className="c10"
@@ -406,7 +406,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
               >
                 <span>
                   <span
-                    className="c8"
+                    className="Typography__Span-sc-10mju41-0 c8"
                   >
                     Next
                   </span>
@@ -461,7 +461,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Next Button 1`] = `
   box-sizing: border-box;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -479,16 +479,16 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Next Button 1`] = `
   margin-right: -8px;
 }
 
-.c9 > * {
+.c10 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c9 > *:not(:first-child) {
+.c10 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -506,43 +506,13 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Next Button 1`] = `
   margin-right: -4px;
 }
 
-.c10 > * {
+.c11 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c10 > *:not(:first-child) {
+.c11 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c11 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.c12 {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .c7 {
@@ -552,26 +522,6 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Next Button 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #336BFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c7,
@@ -596,13 +546,60 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Next Button 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .c13 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
   margin: 0;
-  overflow: visible;
-  text-transform: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c8 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #336BFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c14 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -626,29 +623,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Next Button 1`] = `
   cursor: not-allowed;
 }
 
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c13::before {
+.c14::before {
   content: '';
   display: block;
   position: absolute;
@@ -719,7 +694,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Next Button 1`] = `
 }
 
 @media (min-width:760px) {
-  .c9 {
+  .c10 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -736,12 +711,12 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Next Button 1`] = `
     margin-right: -16px;
   }
 
-  .c9 > * {
+  .c10 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c9 > *:not(:first-child) {
+  .c10 > *:not(:first-child) {
     padding-top: 0;
   }
 }
@@ -781,7 +756,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Next Button 1`] = `
 }
 
 @media (min-width:760px) {
-  .c14 {
+  .c15 {
     min-width: 160px;
   }
 }
@@ -811,39 +786,39 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Next Button 1`] = `
             className="c6"
           >
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c7"
+              className="c7 c8"
               disabled={false}
               onClick={[Function]}
               type="reset"
             >
               <span
-                className="c8"
+                className="Typography__Span-sc-10mju41-0 c9"
               >
                 Cancel
               </span>
             </button>
           </div>
           <div
-            className="c9"
+            className="c10"
           >
             <div
               className="c6"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c7"
+                className="c7 c8"
                 disabled={false}
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="c8"
+                  className="Typography__Span-sc-10mju41-0 c9"
                 >
                   <div
-                    className="c10"
+                    className="c11"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c11 c12"
+                      className="c12 c13"
                       direction="left"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
@@ -863,14 +838,14 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Next Button 1`] = `
               className="c6"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c13 c14"
+                className="c7 c14 c15"
                 disabled={true}
                 onClick={[Function]}
                 type="button"
               >
                 <span>
                   <span
-                    className="c8"
+                    className="Typography__Span-sc-10mju41-0 c9"
                   >
                     Next
                   </span>
@@ -925,7 +900,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Submit Button 1`] = `
   box-sizing: border-box;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -943,16 +918,16 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Submit Button 1`] = `
   margin-right: -8px;
 }
 
-.c9 > * {
+.c10 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c9 > *:not(:first-child) {
+.c10 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -970,43 +945,13 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Submit Button 1`] = `
   margin-right: -4px;
 }
 
-.c10 > * {
+.c11 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c10 > *:not(:first-child) {
+.c11 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c11 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.c12 {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .c7 {
@@ -1016,26 +961,6 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Submit Button 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #336BFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c7,
@@ -1060,13 +985,60 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Submit Button 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .c13 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
   margin: 0;
-  overflow: visible;
-  text-transform: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c8 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #336BFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c14 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -1090,29 +1062,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Submit Button 1`] = `
   cursor: not-allowed;
 }
 
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c13::before {
+.c14::before {
   content: '';
   display: block;
   position: absolute;
@@ -1183,7 +1133,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Submit Button 1`] = `
 }
 
 @media (min-width:760px) {
-  .c9 {
+  .c10 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1200,12 +1150,12 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Submit Button 1`] = `
     margin-right: -16px;
   }
 
-  .c9 > * {
+  .c10 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c9 > *:not(:first-child) {
+  .c10 > *:not(:first-child) {
     padding-top: 0;
   }
 }
@@ -1245,7 +1195,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Submit Button 1`] = `
 }
 
 @media (min-width:760px) {
-  .c14 {
+  .c15 {
     min-width: 160px;
   }
 }
@@ -1275,39 +1225,39 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Submit Button 1`] = `
             className="c6"
           >
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c7"
+              className="c7 c8"
               disabled={false}
               onClick={[Function]}
               type="reset"
             >
               <span
-                className="c8"
+                className="Typography__Span-sc-10mju41-0 c9"
               >
                 Cancel
               </span>
             </button>
           </div>
           <div
-            className="c9"
+            className="c10"
           >
             <div
               className="c6"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c7"
+                className="c7 c8"
                 disabled={false}
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="c8"
+                  className="Typography__Span-sc-10mju41-0 c9"
                 >
                   <div
-                    className="c10"
+                    className="c11"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c11 c12"
+                      className="c12 c13"
                       direction="left"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
@@ -1327,14 +1277,14 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Disabled Submit Button 1`] = `
               className="c6"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c13 c14"
+                className="c7 c14 c15"
                 disabled={true}
                 onClick={[Function]}
                 type="submit"
               >
                 <span>
                   <span
-                    className="c8"
+                    className="Typography__Span-sc-10mju41-0 c9"
                   >
                     Submit
                   </span>
@@ -1389,7 +1339,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   box-sizing: border-box;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1407,16 +1357,16 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   margin-right: -8px;
 }
 
-.c9 > * {
+.c10 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c9 > *:not(:first-child) {
+.c10 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1434,53 +1384,13 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   margin-right: -4px;
 }
 
-.c10 > * {
+.c11 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c10 > *:not(:first-child) {
+.c11 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c11 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.c12 {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.c15 {
-  display: inline-block;
-  -webkit-animation: spinner 0.6s linear infinite;
-  animation: spinner 0.6s linear infinite;
-}
-
-.c16 {
-  display: block;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .c7 {
@@ -1490,26 +1400,6 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
 }
 
 .c7,
@@ -1534,13 +1424,70 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .c13 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.c16 {
+  display: inline-block;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
+}
+
+.c17 {
+  display: block;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
   margin: 0;
-  overflow: visible;
-  text-transform: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c8 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c14 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -1564,29 +1511,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   cursor: pointer;
 }
 
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c13::before {
+.c14::before {
   content: '';
   display: block;
   position: absolute;
@@ -1597,11 +1522,11 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   height: calc(100% - 4px);
 }
 
-.c13:hover {
+.c14:hover {
   background-color: #2650BF;
 }
 
-.c13:active {
+.c14:active {
   background-color: #1F4099;
 }
 
@@ -1665,7 +1590,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
 }
 
 @media (min-width:760px) {
-  .c9 {
+  .c10 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1682,12 +1607,12 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
     margin-right: -16px;
   }
 
-  .c9 > * {
+  .c10 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c9 > *:not(:first-child) {
+  .c10 > *:not(:first-child) {
     padding-top: 0;
   }
 }
@@ -1727,7 +1652,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
 }
 
 @media (min-width:760px) {
-  .c14 {
+  .c15 {
     min-width: 160px;
   }
 }
@@ -1757,39 +1682,39 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
             className="c6"
           >
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c7"
+              className="c7 c8"
               disabled={true}
               onClick={[Function]}
               type="reset"
             >
               <span
-                className="c8"
+                className="Typography__Span-sc-10mju41-0 c9"
               >
                 Cancel
               </span>
             </button>
           </div>
           <div
-            className="c9"
+            className="c10"
           >
             <div
               className="c6"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c7"
+                className="c7 c8"
                 disabled={true}
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="c8"
+                  className="Typography__Span-sc-10mju41-0 c9"
                 >
                   <div
-                    className="c10"
+                    className="c11"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c11 c12"
+                      className="c12 c13"
                       direction="left"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
@@ -1809,24 +1734,24 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
               className="c6"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c13 c14"
+                className="c7 c14 c15"
                 disabled={false}
                 onClick={[Function]}
                 type="submit"
               >
                 <span>
                   <span
-                    className="c8"
+                    className="Typography__Span-sc-10mju41-0 c9"
                   >
                     Submit
                   </span>
                 </span>
                 <span>
                   <span
-                    className="c15"
+                    className="c16"
                   >
                     <svg
-                      className="c16"
+                      className="c17"
                       height={24}
                       viewBox="0 0 24 24"
                       width={24}
@@ -1935,7 +1860,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Hidden 1`] = `
   box-sizing: border-box;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1953,22 +1878,13 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Hidden 1`] = `
   margin-right: -8px;
 }
 
-.c9 > * {
+.c10 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c9 > *:not(:first-child) {
+.c10 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .c7 {
@@ -1978,26 +1894,6 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Hidden 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #336BFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c7,
@@ -2022,13 +1918,39 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Hidden 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
   margin: 0;
-  overflow: visible;
-  text-transform: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c8 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #336BFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c11 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -2052,29 +1974,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Hidden 1`] = `
   cursor: pointer;
 }
 
-.c10,
-.c10[type='button'],
-.c10[type='reset'],
-.c10[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c10::-moz-focus-inner,
-.c10[type='button']::-moz-focus-inner,
-.c10[type='reset']::-moz-focus-inner,
-.c10[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c10:-moz-focusring,
-.c10[type='button']:-moz-focusring,
-.c10[type='reset']:-moz-focusring,
-.c10[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c10::before {
+.c11::before {
   content: '';
   display: block;
   position: absolute;
@@ -2085,11 +1985,11 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Hidden 1`] = `
   height: calc(100% - 4px);
 }
 
-.c10:hover {
+.c11:hover {
   background-color: #2650BF;
 }
 
-.c10:active {
+.c11:active {
   background-color: #1F4099;
 }
 
@@ -2153,7 +2053,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Hidden 1`] = `
 }
 
 @media (min-width:760px) {
-  .c9 {
+  .c10 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2170,12 +2070,12 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Hidden 1`] = `
     margin-right: -16px;
   }
 
-  .c9 > * {
+  .c10 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c9 > *:not(:first-child) {
+  .c10 > *:not(:first-child) {
     padding-top: 0;
   }
 }
@@ -2215,7 +2115,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Hidden 1`] = `
 }
 
 @media (min-width:760px) {
-  .c11 {
+  .c12 {
     min-width: 160px;
   }
 }
@@ -2245,33 +2145,33 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Hidden 1`] = `
             className="c6"
           >
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c7"
+              className="c7 c8"
               disabled={false}
               onClick={[Function]}
               type="reset"
             >
               <span
-                className="c8"
+                className="Typography__Span-sc-10mju41-0 c9"
               >
                 Cancel
               </span>
             </button>
           </div>
           <div
-            className="c9"
+            className="c10"
           >
             <div
               className="c6"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c10 c11"
+                className="c7 c11 c12"
                 disabled={false}
                 onClick={[Function]}
                 type="button"
               >
                 <span>
                   <span
-                    className="c8"
+                    className="Typography__Span-sc-10mju41-0 c9"
                   >
                     Next
                   </span>
@@ -2359,15 +2259,6 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Hidden Embedde
   flex: 1;
 }
 
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c8 {
   font-family: inherit;
   font-size: 100%;
@@ -2375,28 +2266,6 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Hidden Embedde
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 8px 16px;
-  min-height: 40px;
-  background-color: #336BFF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c8,
@@ -2421,7 +2290,41 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Hidden Embedde
   outline: 1px dotted ButtonText;
 }
 
-.c8::before {
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c9 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c9::before {
   content: '';
   display: block;
   position: absolute;
@@ -2432,11 +2335,11 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Hidden Embedde
   height: calc(100% - 4px);
 }
 
-.c8:hover {
+.c9:hover {
   background-color: #2650BF;
 }
 
-.c8:active {
+.c9:active {
   background-color: #1F4099;
 }
 
@@ -2565,7 +2468,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Hidden Embedde
 }
 
 @media (min-width:760px) {
-  .c9 {
+  .c10 {
     min-width: 160px;
   }
 }
@@ -2598,14 +2501,14 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Hidden Embedde
               className="c7"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c8 c9"
+                className="c8 c9 c10"
                 disabled={false}
                 onClick={[Function]}
                 type="button"
               >
                 <span>
                   <span
-                    className="c10"
+                    className="Typography__Span-sc-10mju41-0 c11"
                   >
                     Next
                   </span>
@@ -2693,7 +2596,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
   flex: 1;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2711,43 +2614,13 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
   margin-right: -4px;
 }
 
-.c10 > * {
+.c11 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c10 > *:not(:first-child) {
+.c11 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c11 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.c12 {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .c8 {
@@ -2757,27 +2630,6 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 0;
-  background-color: transparent;
-  color: #336BFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c8,
@@ -2802,13 +2654,61 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .c13 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
   margin: 0;
-  overflow: visible;
-  text-transform: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c9 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  color: #336BFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c14 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -2833,29 +2733,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
   cursor: pointer;
 }
 
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c13::before {
+.c14::before {
   content: '';
   display: block;
   position: absolute;
@@ -2866,11 +2744,11 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
   height: calc(100% - 4px);
 }
 
-.c13:hover {
+.c14:hover {
   background-color: #2650BF;
 }
 
-.c13:active {
+.c14:active {
   background-color: #1F4099;
 }
 
@@ -2999,7 +2877,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
 }
 
 @media (min-width:760px) {
-  .c14 {
+  .c15 {
     min-width: 160px;
   }
 }
@@ -3032,20 +2910,20 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
               className="c7"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c8"
+                className="c8 c9"
                 disabled={false}
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="c9"
+                  className="Typography__Span-sc-10mju41-0 c10"
                 >
                   <div
-                    className="c10"
+                    className="c11"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c11 c12"
+                      className="c12 c13"
                       direction="left"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
@@ -3065,14 +2943,14 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
               className="c7"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c13 c14"
+                className="c8 c14 c15"
                 disabled={false}
                 onClick={[Function]}
                 type="button"
               >
                 <span>
                   <span
-                    className="c9"
+                    className="Typography__Span-sc-10mju41-0 c10"
                   >
                     Next
                   </span>
@@ -3160,7 +3038,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   flex: 1;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3178,53 +3056,13 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   margin-right: -4px;
 }
 
-.c10 > * {
+.c11 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c10 > *:not(:first-child) {
+.c11 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c11 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.c12 {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.c15 {
-  display: inline-block;
-  -webkit-animation: spinner 0.6s linear infinite;
-  animation: spinner 0.6s linear infinite;
-}
-
-.c16 {
-  display: block;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .c8 {
@@ -3234,27 +3072,6 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 0;
-  background-color: transparent;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
 }
 
 .c8,
@@ -3279,13 +3096,71 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   outline: 1px dotted ButtonText;
 }
 
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .c13 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.c16 {
+  display: inline-block;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
+}
+
+.c17 {
+  display: block;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
   margin: 0;
-  overflow: visible;
-  text-transform: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c9 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c14 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -3310,29 +3185,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   cursor: pointer;
 }
 
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c13::before {
+.c14::before {
   content: '';
   display: block;
   position: absolute;
@@ -3343,11 +3196,11 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   height: calc(100% - 4px);
 }
 
-.c13:hover {
+.c14:hover {
   background-color: #2650BF;
 }
 
-.c13:active {
+.c14:active {
   background-color: #1F4099;
 }
 
@@ -3476,7 +3329,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
 }
 
 @media (min-width:760px) {
-  .c14 {
+  .c15 {
     min-width: 160px;
   }
 }
@@ -3509,20 +3362,20 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
               className="c7"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c8"
+                className="c8 c9"
                 disabled={true}
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="c9"
+                  className="Typography__Span-sc-10mju41-0 c10"
                 >
                   <div
-                    className="c10"
+                    className="c11"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c11 c12"
+                      className="c12 c13"
                       direction="left"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
@@ -3542,24 +3395,24 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
               className="c7"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c13 c14"
+                className="c8 c14 c15"
                 disabled={false}
                 onClick={[Function]}
                 type="submit"
               >
                 <span>
                   <span
-                    className="c9"
+                    className="Typography__Span-sc-10mju41-0 c10"
                   >
                     Submit
                   </span>
                 </span>
                 <span>
                   <span
-                    className="c15"
+                    className="c16"
                   >
                     <svg
-                      className="c16"
+                      className="c17"
                       height={24}
                       viewBox="0 0 24 24"
                       width={24}

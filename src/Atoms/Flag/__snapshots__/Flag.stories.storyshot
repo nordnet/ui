@@ -96,7 +96,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         au
       </span>
@@ -146,7 +146,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         br
       </span>
@@ -220,7 +220,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         ca
       </span>
@@ -259,7 +259,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         cn
       </span>
@@ -326,7 +326,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         de
       </span>
@@ -368,7 +368,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         dk
       </span>
@@ -406,7 +406,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         eu
       </span>
@@ -527,7 +527,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         fi
       </span>
@@ -565,7 +565,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         fr
       </span>
@@ -608,7 +608,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         gb
       </span>
@@ -669,7 +669,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         hk
       </span>
@@ -785,7 +785,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         in
       </span>
@@ -831,7 +831,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         jp
       </span>
@@ -886,7 +886,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         no
       </span>
@@ -932,7 +932,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         ru
       </span>
@@ -975,7 +975,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         se
       </span>
@@ -1030,7 +1030,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         uk
       </span>
@@ -1091,7 +1091,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         us
       </span>
@@ -1191,7 +1191,7 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         za
       </span>
@@ -1467,7 +1467,7 @@ exports[`Storyshots Atoms / Flag Only Border On Light Mode 1`] = `
     </title>
   </svg>
   <span
-    className="c2"
+    className="Typography__Span-sc-10mju41-0 c2"
   >
     Notice flag does not have border on dark mode
   </span>

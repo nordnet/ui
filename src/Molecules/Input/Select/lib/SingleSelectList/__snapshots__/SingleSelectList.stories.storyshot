@@ -43,7 +43,7 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList Item default 1
 }
 
 <span
-  className="c0 c1"
+  className="Typography__Span-sc-10mju41-0 c0 c1"
 >
   <span
     className="c2"
@@ -98,7 +98,7 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList Item disabled 
 }
 
 <span
-  className="c0 c1"
+  className="Typography__Span-sc-10mju41-0 c0 c1"
 >
   <span
     className="c2"
@@ -182,7 +182,7 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList Item selected 
 }
 
 <span
-  className="c0 c1"
+  className="Typography__Span-sc-10mju41-0 c0 c1"
 >
   <span
     className="c2"
@@ -213,12 +213,300 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList Item selected 
 `;
 
 exports[`Storyshots Molecules / Input / Select / SingleSelectList List with different arrow positions 1`] = `
-.c14 {
+.c15 {
   padding-left: 8px;
   background-color: transparent;
 }
 
-.c5 {
+.c4 {
+  position: relative;
+  max-height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  color: #282823;
+  -webkit-transform: translateY(11px);
+  -ms-transform: translateY(11px);
+  transform: translateY(11px);
+}
+
+.c4:before {
+  right: 12px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  bottom: 100%;
+  border-bottom: 8px solid;
+  border-bottom-color: #BCBCB6;
+}
+
+.c4:after {
+  right: 12px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  bottom: calc(100% - 1px);
+  border-bottom: 8px solid;
+  border-bottom-color: #FFFFFF;
+}
+
+.c19 {
+  position: relative;
+  max-height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  color: #282823;
+  -webkit-transform: translateY(11px);
+  -ms-transform: translateY(11px);
+  transform: translateY(11px);
+}
+
+.c19:before {
+  left: 12px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  bottom: 100%;
+  border-bottom: 8px solid;
+  border-bottom-color: #BCBCB6;
+}
+
+.c19:after {
+  left: 12px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  bottom: calc(100% - 1px);
+  border-bottom: 8px solid;
+  border-bottom-color: #FFFFFF;
+}
+
+.c20 {
+  position: relative;
+  max-height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  color: #282823;
+  -webkit-transform: translateY(11px);
+  -ms-transform: translateY(11px);
+  transform: translateY(11px);
+}
+
+.c20:before {
+  left: 50%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  bottom: 100%;
+  border-bottom: 8px solid;
+  border-bottom-color: #BCBCB6;
+}
+
+.c20:after {
+  left: 50%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  bottom: calc(100% - 1px);
+  border-bottom: 8px solid;
+  border-bottom-color: #FFFFFF;
+}
+
+.c21 {
+  position: relative;
+  max-height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  color: #282823;
+  -webkit-transform: translateY(-11px);
+  -ms-transform: translateY(-11px);
+  transform: translateY(-11px);
+}
+
+.c21:before {
+  right: 12px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  top: 100%;
+  border-top: 8px solid;
+  border-top-color: #BCBCB6;
+}
+
+.c21:after {
+  right: 12px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  top: calc(100% - 1px);
+  border-top: 8px solid;
+  border-top-color: #FFFFFF;
+}
+
+.c22 {
+  position: relative;
+  max-height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  color: #282823;
+  -webkit-transform: translateY(-11px);
+  -ms-transform: translateY(-11px);
+  transform: translateY(-11px);
+}
+
+.c22:before {
+  left: 12px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  top: 100%;
+  border-top: 8px solid;
+  border-top-color: #BCBCB6;
+}
+
+.c22:after {
+  left: 12px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  top: calc(100% - 1px);
+  border-top: 8px solid;
+  border-top-color: #FFFFFF;
+}
+
+.c23 {
+  position: relative;
+  max-height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  color: #282823;
+  -webkit-transform: translateY(-11px);
+  -ms-transform: translateY(-11px);
+  transform: translateY(-11px);
+}
+
+.c23:before {
+  left: 50%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  top: 100%;
+  border-top: 8px solid;
+  border-top-color: #BCBCB6;
+}
+
+.c23:after {
+  left: 50%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  top: calc(100% - 1px);
+  border-top: 8px solid;
+  border-top-color: #FFFFFF;
+}
+
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -238,7 +526,7 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   position: relative;
 }
 
-.c6 {
+.c7 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -259,12 +547,12 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   width: 100%;
 }
 
-.c7 {
+.c8 {
   position: relative;
   overflow-x: hidden;
 }
 
-.c17 {
+.c18 {
   height: 16px;
   width: 4px;
   position: absolute;
@@ -273,7 +561,7 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   bottom: 0;
 }
 
-.c8 {
+.c9 {
   height: 16px;
   width: 4px;
   position: absolute;
@@ -282,7 +570,7 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   top: 0;
 }
 
-.c13 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -294,7 +582,7 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   align-items: center;
 }
 
-.c15 {
+.c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -317,7 +605,7 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   line-height: 1.5;
 }
 
-.c9 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -326,7 +614,7 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -347,11 +635,11 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   cursor: pointer;
 }
 
-.c10:hover {
+.c11:hover {
   background: #F5F5F5;
 }
 
-.c12 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -372,11 +660,11 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   cursor: pointer;
 }
 
-.c12:hover {
+.c13:hover {
   background: #F5F5F5;
 }
 
-.c16 {
+.c17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -399,11 +687,11 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   pointer-events: none;
 }
 
-.c16:hover {
+.c17:hover {
   background: #F5F5F5;
 }
 
-.c11 {
+.c12 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -467,310 +755,10 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   align-self: center;
 }
 
-.c4 {
-  position: relative;
-  max-height: 200px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 0;
-  border: 1px solid #BCBCB6;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
-  color: #282823;
-  -webkit-transform: translateY(11px);
-  -ms-transform: translateY(11px);
-  transform: translateY(11px);
+.c5 {
   padding-top: 12px;
   padding-bottom: 12px;
   width: 300px;
-}
-
-.c4:before {
-  right: 12px;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  bottom: 100%;
-  border-bottom: 8px solid;
-  border-bottom-color: #BCBCB6;
-}
-
-.c4:after {
-  right: 12px;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  bottom: calc(100% - 1px);
-  border-bottom: 8px solid;
-  border-bottom-color: #FFFFFF;
-}
-
-.c18 {
-  position: relative;
-  max-height: 200px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 0;
-  border: 1px solid #BCBCB6;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
-  color: #282823;
-  -webkit-transform: translateY(11px);
-  -ms-transform: translateY(11px);
-  transform: translateY(11px);
-  padding-top: 12px;
-  padding-bottom: 12px;
-  width: 300px;
-}
-
-.c18:before {
-  left: 12px;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  bottom: 100%;
-  border-bottom: 8px solid;
-  border-bottom-color: #BCBCB6;
-}
-
-.c18:after {
-  left: 12px;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  bottom: calc(100% - 1px);
-  border-bottom: 8px solid;
-  border-bottom-color: #FFFFFF;
-}
-
-.c19 {
-  position: relative;
-  max-height: 200px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 0;
-  border: 1px solid #BCBCB6;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
-  color: #282823;
-  -webkit-transform: translateY(11px);
-  -ms-transform: translateY(11px);
-  transform: translateY(11px);
-  padding-top: 12px;
-  padding-bottom: 12px;
-  width: 300px;
-}
-
-.c19:before {
-  left: 50%;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  bottom: 100%;
-  border-bottom: 8px solid;
-  border-bottom-color: #BCBCB6;
-}
-
-.c19:after {
-  left: 50%;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  bottom: calc(100% - 1px);
-  border-bottom: 8px solid;
-  border-bottom-color: #FFFFFF;
-}
-
-.c20 {
-  position: relative;
-  max-height: 200px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 0;
-  border: 1px solid #BCBCB6;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
-  color: #282823;
-  -webkit-transform: translateY(-11px);
-  -ms-transform: translateY(-11px);
-  transform: translateY(-11px);
-  padding-top: 12px;
-  padding-bottom: 12px;
-  width: 300px;
-}
-
-.c20:before {
-  right: 12px;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  top: 100%;
-  border-top: 8px solid;
-  border-top-color: #BCBCB6;
-}
-
-.c20:after {
-  right: 12px;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  top: calc(100% - 1px);
-  border-top: 8px solid;
-  border-top-color: #FFFFFF;
-}
-
-.c21 {
-  position: relative;
-  max-height: 200px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 0;
-  border: 1px solid #BCBCB6;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
-  color: #282823;
-  -webkit-transform: translateY(-11px);
-  -ms-transform: translateY(-11px);
-  transform: translateY(-11px);
-  padding-top: 12px;
-  padding-bottom: 12px;
-  width: 300px;
-}
-
-.c21:before {
-  left: 12px;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  top: 100%;
-  border-top: 8px solid;
-  border-top-color: #BCBCB6;
-}
-
-.c21:after {
-  left: 12px;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  top: calc(100% - 1px);
-  border-top: 8px solid;
-  border-top-color: #FFFFFF;
-}
-
-.c22 {
-  position: relative;
-  max-height: 200px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 0;
-  border: 1px solid #BCBCB6;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
-  color: #282823;
-  -webkit-transform: translateY(-11px);
-  -ms-transform: translateY(-11px);
-  transform: translateY(-11px);
-  padding-top: 12px;
-  padding-bottom: 12px;
-  width: 300px;
-}
-
-.c22:before {
-  left: 50%;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  top: 100%;
-  border-top: 8px solid;
-  border-top-color: #BCBCB6;
-}
-
-.c22:after {
-  left: 50%;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  top: calc(100% - 1px);
-  border-top: 8px solid;
-  border-top-color: #FFFFFF;
 }
 
 <div
@@ -785,53 +773,53 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Placement bottom, arrow default (right)
       </span>
     </div>
     <div>
       <div
-        className="DropdownBubble-sc-16ly6j0-0 c4"
+        className="c4 c5"
       >
         <div
-          className="c5"
+          className="c6"
         >
           <div
-            className="c6"
+            className="c7"
           >
             <div
-              className="c7"
+              className="c8"
             >
               <div
-                className="c8"
+                className="c9"
               />
               <span
-                className="c9 c10"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Default?
                 </span>
               </span>
               <span
-                className="c9 c12"
+                className="Typography__Span-sc-10mju41-0 c10 c13"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   First
                 </span>
                 <div
-                  className="c13"
+                  className="c14"
                 >
                   <div
-                    className="c14"
+                    className="c15"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c15"
+                      className="c16"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="presentation"
@@ -845,106 +833,106 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
                 </div>
               </span>
               <span
-                className="c9 c10"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <div
-                className="c17"
+                className="c18"
               />
             </div>
           </div>
@@ -960,53 +948,53 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Placement bottom, arrow left
       </span>
     </div>
     <div>
       <div
-        className="DropdownBubble-sc-16ly6j0-0 c18"
+        className="c19 c5"
       >
         <div
-          className="c5"
+          className="c6"
         >
           <div
-            className="c6"
+            className="c7"
           >
             <div
-              className="c7"
+              className="c8"
             >
               <div
-                className="c8"
+                className="c9"
               />
               <span
-                className="c9 c10"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Default?
                 </span>
               </span>
               <span
-                className="c9 c12"
+                className="Typography__Span-sc-10mju41-0 c10 c13"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   First
                 </span>
                 <div
-                  className="c13"
+                  className="c14"
                 >
                   <div
-                    className="c14"
+                    className="c15"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c15"
+                      className="c16"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="presentation"
@@ -1020,97 +1008,97 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
                 </div>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <div
-                className="c17"
+                className="c18"
               />
             </div>
           </div>
@@ -1126,53 +1114,53 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Placement bottom, arrow center
       </span>
     </div>
     <div>
       <div
-        className="DropdownBubble-sc-16ly6j0-0 c19"
+        className="c20 c5"
       >
         <div
-          className="c5"
+          className="c6"
         >
           <div
-            className="c6"
+            className="c7"
           >
             <div
-              className="c7"
+              className="c8"
             >
               <div
-                className="c8"
+                className="c9"
               />
               <span
-                className="c9 c10"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Default?
                 </span>
               </span>
               <span
-                className="c9 c12"
+                className="Typography__Span-sc-10mju41-0 c10 c13"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   First
                 </span>
                 <div
-                  className="c13"
+                  className="c14"
                 >
                   <div
-                    className="c14"
+                    className="c15"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c15"
+                      className="c16"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="presentation"
@@ -1186,106 +1174,106 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
                 </div>
               </span>
               <span
-                className="c9 c10"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Second
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <div
-                className="c17"
+                className="c18"
               />
             </div>
           </div>
@@ -1301,53 +1289,53 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Placement top, arrow default (right)
       </span>
     </div>
     <div>
       <div
-        className="DropdownBubble-sc-16ly6j0-0 c20"
+        className="c21 c5"
       >
         <div
-          className="c5"
+          className="c6"
         >
           <div
-            className="c6"
+            className="c7"
           >
             <div
-              className="c7"
+              className="c8"
             >
               <div
-                className="c8"
+                className="c9"
               />
               <span
-                className="c9 c10"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Default?
                 </span>
               </span>
               <span
-                className="c9 c12"
+                className="Typography__Span-sc-10mju41-0 c10 c13"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   First
                 </span>
                 <div
-                  className="c13"
+                  className="c14"
                 >
                   <div
-                    className="c14"
+                    className="c15"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c15"
+                      className="c16"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="presentation"
@@ -1361,106 +1349,106 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
                 </div>
               </span>
               <span
-                className="c9 c10"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <div
-                className="c17"
+                className="c18"
               />
             </div>
           </div>
@@ -1476,53 +1464,53 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Placement top, arrow left
       </span>
     </div>
     <div>
       <div
-        className="DropdownBubble-sc-16ly6j0-0 c21"
+        className="c22 c5"
       >
         <div
-          className="c5"
+          className="c6"
         >
           <div
-            className="c6"
+            className="c7"
           >
             <div
-              className="c7"
+              className="c8"
             >
               <div
-                className="c8"
+                className="c9"
               />
               <span
-                className="c9 c10"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Default?
                 </span>
               </span>
               <span
-                className="c9 c12"
+                className="Typography__Span-sc-10mju41-0 c10 c13"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   First
                 </span>
                 <div
-                  className="c13"
+                  className="c14"
                 >
                   <div
-                    className="c14"
+                    className="c15"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c15"
+                      className="c16"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="presentation"
@@ -1536,97 +1524,97 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
                 </div>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <div
-                className="c17"
+                className="c18"
               />
             </div>
           </div>
@@ -1642,53 +1630,53 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Placement top, arrow center
       </span>
     </div>
     <div>
       <div
-        className="DropdownBubble-sc-16ly6j0-0 c22"
+        className="c23 c5"
       >
         <div
-          className="c5"
+          className="c6"
         >
           <div
-            className="c6"
+            className="c7"
           >
             <div
-              className="c7"
+              className="c8"
             >
               <div
-                className="c8"
+                className="c9"
               />
               <span
-                className="c9 c10"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Default?
                 </span>
               </span>
               <span
-                className="c9 c12"
+                className="Typography__Span-sc-10mju41-0 c10 c13"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   First
                 </span>
                 <div
-                  className="c13"
+                  className="c14"
                 >
                   <div
-                    className="c14"
+                    className="c15"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c15"
+                      className="c16"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="presentation"
@@ -1702,106 +1690,106 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
                 </div>
               </span>
               <span
-                className="c9 c10"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Second
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <span
-                className="c9 c16"
+                className="Typography__Span-sc-10mju41-0 c10 c17"
               >
                 <span
-                  className="c11"
+                  className="c12"
                 >
                   Disabled
                 </span>
               </span>
               <div
-                className="c17"
+                className="c18"
               />
             </div>
           </div>

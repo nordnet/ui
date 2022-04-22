@@ -47,7 +47,7 @@ exports[`Storyshots Atoms / Box Different padding for different screen sizes  1`
         className="c2 c3"
       >
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 c4"
         >
           Some random content here
         </span>
@@ -96,7 +96,7 @@ exports[`Storyshots Atoms / Box Margin 1`] = `
       className="c2 c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Some random content here
       </span>
@@ -146,7 +146,7 @@ exports[`Storyshots Atoms / Box Margin and different margin Y-axis 1`] = `
       className="c2 c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Some random content here
       </span>
@@ -197,7 +197,7 @@ exports[`Storyshots Atoms / Box Padding  1`] = `
         className="c2 c3"
       >
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 c4"
         >
           Some random content here
         </span>
@@ -251,7 +251,7 @@ exports[`Storyshots Atoms / Box Padding and different X-axis and left  1`] = `
         className="c2 c3"
       >
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 c4"
         >
           Some random content here
         </span>
@@ -296,7 +296,7 @@ exports[`Storyshots Atoms / Box With background color 1`] = `
       className="c1"
     >
       <span
-        className="c2"
+        className="Typography__Span-sc-10mju41-0 c2"
       >
         Lorem ipsum dolor sit amet.
       </span>

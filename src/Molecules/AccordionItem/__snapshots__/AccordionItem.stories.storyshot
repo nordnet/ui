@@ -30,15 +30,6 @@ Array [
   box-sizing: border-box;
 }
 
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c3 {
   font-family: inherit;
   font-size: 100%;
@@ -46,27 +37,6 @@ Array [
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #336BFF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c3,
@@ -91,7 +61,40 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c3::before {
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c4::before {
   content: '';
   display: block;
   position: absolute;
@@ -102,11 +105,11 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c3:hover {
+.c4:hover {
   background-color: #2650BF;
 }
 
-.c3:active {
+.c4:active {
   background-color: #1F4099;
 }
 
@@ -120,13 +123,13 @@ Array [
         className="c2"
       >
         <button
-          className="NormalizedButton__Button-sc-ey7f5x-0 c3"
+          className="c3 c4"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               Toggle first
             </span>
@@ -137,13 +140,13 @@ Array [
         className="c2"
       >
         <button
-          className="NormalizedButton__Button-sc-ey7f5x-0 c3"
+          className="c3 c4"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               Toggle second
             </span>
@@ -181,7 +184,7 @@ Array [
   padding: 0px 0px 0px 0px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -222,7 +225,7 @@ Array [
     className="c0 c1"
   >
     <h3
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       <button
         className="c3"
@@ -232,7 +235,7 @@ Array [
         type="button"
       >
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           Låg CO₂ risk
         </span>
@@ -285,7 +288,7 @@ Array [
   padding: 0px 0px 0px 0px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -326,7 +329,7 @@ Array [
     className="c0 c1"
   >
     <h3
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       <button
         className="c3"
@@ -336,7 +339,7 @@ Array [
         type="button"
       >
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           Sustainability score
         </span>
@@ -393,7 +396,7 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
   padding: 0px 0px 0px 0px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -434,7 +437,7 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
   className="c0 c1"
 >
   <h3
-    className="c2"
+    className="Typography__Span-sc-10mju41-0 c2"
   >
     <button
       className="c3"
@@ -444,7 +447,7 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
       type="button"
     >
       <span
-        className="c2"
+        className="Typography__Span-sc-10mju41-0 c2"
       >
         Lemon drops and several cakes for two persons or more
       </span>
@@ -501,7 +504,7 @@ Array [
   padding: 0px 0px 0px 0px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -543,7 +546,7 @@ Array [
     className="c0 c1"
   >
     <h3
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       <button
         className="c3"
@@ -554,7 +557,7 @@ Array [
         type="button"
       >
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           This accordion item is disabled
         </span>
@@ -605,7 +608,7 @@ Array [
   padding: 0px 0px 0px 0px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -656,7 +659,7 @@ Array [
     className="c0 c1"
   >
     <h3
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       <button
         className="c3"
@@ -667,7 +670,7 @@ Array [
         type="button"
       >
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           This accordion item is disabled with chevron
         </span>
@@ -742,7 +745,7 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
   padding: 0px 0px 0px 0px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -783,7 +786,7 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
   className="c0 c1"
 >
   <h3
-    className="c2"
+    className="Typography__Span-sc-10mju41-0 c2"
   >
     <button
       className="c3"
@@ -793,7 +796,7 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
       type="button"
     >
       <span
-        className="c2"
+        className="Typography__Span-sc-10mju41-0 c2"
       >
         Låg CO₂ risk
       </span>
@@ -818,10 +821,10 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
   </h3>
   <section>
     <div
-      className="c6 "
+      className="c6 AccordionItem__Content-sc-1tey38x-4"
     >
       <p
-        className="c7"
+        className="Typography__Span-sc-10mju41-0 c7"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
       </p>
@@ -861,7 +864,7 @@ Array [
   padding: 0px 0px 0px 0px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -902,7 +905,7 @@ Array [
     className="c0 c1"
   >
     <h3
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       <button
         className="c3"
@@ -912,7 +915,7 @@ Array [
         type="button"
       >
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           Content is text only
         </span>
@@ -965,7 +968,7 @@ Array [
   padding: 0px 0px 0px 0px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -1006,7 +1009,7 @@ Array [
     className="c0 c1"
   >
     <h3
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       <button
         className="c3"
@@ -1016,7 +1019,7 @@ Array [
         type="button"
       >
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           Content is a component
         </span>
@@ -1071,7 +1074,7 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
   padding: 0px 0px 0px 0px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -1121,7 +1124,7 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
   className="c0 c1"
 >
   <h3
-    className="c2"
+    className="Typography__Span-sc-10mju41-0 c2"
   >
     <button
       className="c3"
@@ -1131,7 +1134,7 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
       type="button"
     >
       <span
-        className="c2"
+        className="Typography__Span-sc-10mju41-0 c2"
       >
         How much risk are you willing to take?
       </span>
@@ -1189,31 +1192,31 @@ Array [
   padding: 40px 40px 40px 40px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c6 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c7 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c8 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c9 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c10 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c11 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -1254,7 +1257,7 @@ Array [
     className="c0 c1"
   >
     <h3
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       <button
         className="c3"
@@ -1264,7 +1267,7 @@ Array [
         type="button"
       >
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           This accordion item has a custom padding
         </span>
@@ -1311,7 +1314,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c6 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -1321,27 +1324,27 @@ Array [
   padding: 0px 80px 0px 80px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c7 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c8 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c9 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c10 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c11 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -1382,7 +1385,7 @@ Array [
     className="c0 c1"
   >
     <h3
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       <button
         className="c3"
@@ -1392,7 +1395,7 @@ Array [
         type="button"
       >
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           This accordion item has a custom horizontal padding
         </span>
@@ -1439,11 +1442,11 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c6 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c7 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -1453,23 +1456,23 @@ Array [
   padding: 40px 0px 40px 0px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c8 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c9 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c10 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c11 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -1510,7 +1513,7 @@ Array [
     className="c0 c1"
   >
     <h3
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       <button
         className="c3"
@@ -1520,7 +1523,7 @@ Array [
         type="button"
       >
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           This accordion item has a custom vertical padding
         </span>
@@ -1567,15 +1570,15 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c6 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c7 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c8 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -1585,19 +1588,19 @@ Array [
   padding: 40px 0px 0px 0px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c9 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c10 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c11 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -1638,7 +1641,7 @@ Array [
     className="c0 c1"
   >
     <h3
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       <button
         className="c3"
@@ -1648,7 +1651,7 @@ Array [
         type="button"
       >
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           This accordion item has a custom top padding
         </span>
@@ -1695,19 +1698,19 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c6 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c7 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c8 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c9 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -1717,15 +1720,15 @@ Array [
   padding: 0px 0px 40px 0px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c10 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c11 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -1766,7 +1769,7 @@ Array [
     className="c0 c1"
   >
     <h3
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       <button
         className="c3"
@@ -1776,7 +1779,7 @@ Array [
         type="button"
       >
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           This accordion item has a custom bottom padding
         </span>
@@ -1823,23 +1826,23 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c6 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c7 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c8 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c9 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c10 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -1849,11 +1852,11 @@ Array [
   padding: 0px 0px 0px 80px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c11 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -1894,7 +1897,7 @@ Array [
     className="c0 c1"
   >
     <h3
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       <button
         className="c3"
@@ -1904,7 +1907,7 @@ Array [
         type="button"
       >
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           This accordion item has a custom left padding
         </span>
@@ -1949,27 +1952,27 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c8 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c9 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c10 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c11 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c12 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -1979,7 +1982,7 @@ Array [
   padding: 0px 80px 0px 0px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -2029,7 +2032,7 @@ Array [
     className="c0 c1"
   >
     <h3
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       <button
         className="c3"
@@ -2039,7 +2042,7 @@ Array [
         type="button"
       >
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           This accordion item has a custom right padding and chevron to demonstrate
         </span>
@@ -2097,7 +2100,7 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
   padding: 0px 0px 0px 0px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -2138,7 +2141,7 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
   className="c0 c1"
 >
   <h3
-    className="c2"
+    className="Typography__Span-sc-10mju41-0 c2"
   >
     <button
       className="c3"
@@ -2148,7 +2151,7 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
       type="button"
     >
       <span
-        className="c2"
+        className="Typography__Span-sc-10mju41-0 c2"
       >
         This card has its hover and focus color disabled
       </span>
@@ -2175,24 +2178,6 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
 `;
 
 exports[`Storyshots Molecules / AccordionItem With Right Addon 1`] = `
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
 .c4 {
   font-family: inherit;
   font-size: 100%;
@@ -2200,26 +2185,6 @@ exports[`Storyshots Molecules / AccordionItem With Right Addon 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  background-color: #336BFF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c4,
@@ -2244,7 +2209,48 @@ exports[`Storyshots Molecules / AccordionItem With Right Addon 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c4::before {
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c5 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5::before {
   content: '';
   display: block;
   position: absolute;
@@ -2255,19 +2261,19 @@ exports[`Storyshots Molecules / AccordionItem With Right Addon 1`] = `
   height: calc(100% - 4px);
 }
 
-.c4:hover {
+.c5:hover {
   background-color: #2650BF;
 }
 
-.c4:active {
+.c5:active {
   background-color: #1F4099;
 }
 
-.c5 {
+.c6 {
   border-radius: 12px;
 }
 
-.c5::before {
+.c6::before {
   display: none;
 }
 
@@ -2277,7 +2283,7 @@ exports[`Storyshots Molecules / AccordionItem With Right Addon 1`] = `
   padding: 0px 0px 0px 0px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -2310,7 +2316,7 @@ exports[`Storyshots Molecules / AccordionItem With Right Addon 1`] = `
   className="c0 c1"
 >
   <h3
-    className="c2"
+    className="Typography__Span-sc-10mju41-0 c2"
   >
     <button
       className="c3"
@@ -2320,18 +2326,18 @@ exports[`Storyshots Molecules / AccordionItem With Right Addon 1`] = `
       type="button"
     >
       <span
-        className="c2"
+        className="Typography__Span-sc-10mju41-0 c2"
       >
         How much risk are you willing to take?
       </span>
       <button
-        className="NormalizedButton__Button-sc-ey7f5x-0 c4 c5"
+        className="c4 c5 c6"
         onClick={[Function]}
         type="button"
       >
         <span>
           <div
-            className="c6"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             right addon
           </div>
@@ -2372,7 +2378,7 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
   padding: 0px 0px 0px 0px;
 }
 
-.c1 + .c0 {
+.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -2413,7 +2419,7 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
   className="c0 c1 "
 >
   <h3
-    className="c2"
+    className="Typography__Span-sc-10mju41-0 c2"
   >
     <button
       className="c3"
@@ -2423,7 +2429,7 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
       type="button"
     >
       <span
-        className="c2"
+        className="Typography__Span-sc-10mju41-0 c2"
       >
         Sustainability score
       </span>

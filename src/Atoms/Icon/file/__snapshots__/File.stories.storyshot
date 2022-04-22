@@ -105,7 +105,7 @@ exports[`Storyshots Atoms / Icon / Category / File 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Attachment16
       </span>
@@ -137,7 +137,7 @@ exports[`Storyshots Atoms / Icon / Category / File 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Document16
       </span>
@@ -173,7 +173,7 @@ exports[`Storyshots Atoms / Icon / Category / File 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         FactSheet16
       </span>
@@ -207,7 +207,7 @@ exports[`Storyshots Atoms / Icon / Category / File 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Image16
       </span>
@@ -243,7 +243,7 @@ exports[`Storyshots Atoms / Icon / Category / File 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Pdf16
       </span>
@@ -281,7 +281,7 @@ exports[`Storyshots Atoms / Icon / Category / File 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Print16
       </span>
@@ -313,7 +313,7 @@ exports[`Storyshots Atoms / Icon / Category / File 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Spreadsheet16
       </span>
@@ -418,7 +418,7 @@ exports[`Storyshots Atoms / Icon / Category / File 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Attachment24
       </span>
@@ -450,7 +450,7 @@ exports[`Storyshots Atoms / Icon / Category / File 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Document24
       </span>
@@ -486,7 +486,7 @@ exports[`Storyshots Atoms / Icon / Category / File 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         FactSheet24
       </span>
@@ -522,7 +522,7 @@ exports[`Storyshots Atoms / Icon / Category / File 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Image24
       </span>
@@ -560,7 +560,7 @@ exports[`Storyshots Atoms / Icon / Category / File 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Pdf24
       </span>
@@ -598,7 +598,7 @@ exports[`Storyshots Atoms / Icon / Category / File 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Print24
       </span>
@@ -638,7 +638,7 @@ exports[`Storyshots Atoms / Icon / Category / File 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Spreadsheet24
       </span>
