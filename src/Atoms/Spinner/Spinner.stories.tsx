@@ -1,8 +1,6 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
 import { Display } from '../../common/Display';
 
-import docs from './Spinner.md';
 import { Spinner, Typography } from '../..';
 
 export default {
@@ -11,18 +9,6 @@ export default {
     component: Spinner,
   },
 };
-
-export const documentation = () => (
-  <Typography>
-    <ReactMarkdown>{docs}</ReactMarkdown>
-    <div>
-      <Spinner id="defaultSpinner" />
-    </div>
-    <div>
-      <Spinner size={8} id="largerSpinner" />
-    </div>
-  </Typography>
-);
 
 export const spinnerDefault = () => <Spinner id="mySpinner" />;
 
