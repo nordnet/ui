@@ -359,6 +359,10 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     monthlySavingsTableRowDivider: rawColor.gray900,
 
+    illustrationBackgroundBlue: rawColor.blue800,
+    narrowCardBorder: rawColor.gray900,
+    existingMonthlyDepositsDivider: rawColor.gray900,
+
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,

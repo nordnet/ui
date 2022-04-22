@@ -685,6 +685,12 @@ export type ThemeColors = {
   searchPopupBackground: string;
   /** MS table row divider */
   monthlySavingsTableRowDivider: string;
+  /** illustration background blue */
+  illustrationBackgroundBlue: string;
+  /** border for narrow cards in transfer info modal */
+  narrowCardBorder: string;
+  /** existing monthly deposits table row divider */
+  existingMonthlyDepositsDivider: string;
   /** @deprecated * gray3 */
   disabled: string;
   /** @deprecated * complementaryBlue2 */
