@@ -1,3 +1,11 @@
+## [10.25.1](https://github.com/nordnet/ui/compare/v10.25.0...v10.25.1) (2022-04-22)
+
+
+### Bug Fixes
+
+* correct outline ([61426d5](https://github.com/nordnet/ui/commit/61426d5))
+* unwrap styling and add color ([cdd9f48](https://github.com/nordnet/ui/commit/cdd9f48))
+
 # [10.25.0](https://github.com/nordnet/ui/compare/v10.24.2...v10.25.0) (2022-04-21)
 
 
