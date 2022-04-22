@@ -246,7 +246,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     progressBarActive: rawColor.blue500,
     progressBarDone: rawColor.positive,
     progressBarFailure: rawColor.negative,
-    progressBarNext: rawColor.gray4,
+    progressBarNext: rawColor.gray700,
     progressBarText: rawColor.white,
     progressBarWarning: rawColor.index,
 
