@@ -114,7 +114,7 @@ exports[`Storyshots Molecules / PageHeader Page header ReactNode title 1`] = `
   className="c0"
 >
   <div
-    className=""
+    className="PageWrapper__Outer-sc-1ur2ylx-0"
   >
     <div
       className="c1"
@@ -129,7 +129,7 @@ exports[`Storyshots Molecules / PageHeader Page header ReactNode title 1`] = `
             className="c4"
           >
             <h1
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               I am a ReactNode
             </h1>
@@ -206,30 +206,6 @@ exports[`Storyshots Molecules / PageHeader Page header with children 1`] = `
   padding-top: 0;
 }
 
-.c7 {
-  width: 100%;
-  height: 1px;
-  background-color: #EBEBE8;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c11 {
   font-family: inherit;
   font-size: 100%;
@@ -237,27 +213,6 @@ exports[`Storyshots Molecules / PageHeader Page header with children 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #336BFF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c11,
@@ -282,7 +237,55 @@ exports[`Storyshots Molecules / PageHeader Page header with children 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c11::before {
+.c7 {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBE8;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c12 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c12::before {
   content: '';
   display: block;
   position: absolute;
@@ -293,11 +296,11 @@ exports[`Storyshots Molecules / PageHeader Page header with children 1`] = `
   height: calc(100% - 4px);
 }
 
-.c11:hover {
+.c12:hover {
   background-color: #2650BF;
 }
 
-.c11:active {
+.c12:active {
   background-color: #1F4099;
 }
 
@@ -400,7 +403,7 @@ exports[`Storyshots Molecules / PageHeader Page header with children 1`] = `
   className="c0"
 >
   <div
-    className=""
+    className="PageWrapper__Outer-sc-1ur2ylx-0"
   >
     <div
       className="c1"
@@ -415,7 +418,7 @@ exports[`Storyshots Molecules / PageHeader Page header with children 1`] = `
             className="c4"
           >
             <h1
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               Your darkest loaves
             </h1>
@@ -453,13 +456,13 @@ exports[`Storyshots Molecules / PageHeader Page header with children 1`] = `
                   className="c3"
                 >
                   <button
-                    className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+                    className="c11 c12"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="c12"
+                        className="Typography__Span-sc-10mju41-0 c13"
                       >
                         Click here to recruit carl
                       </span>
@@ -590,7 +593,7 @@ exports[`Storyshots Molecules / PageHeader Regular page header 1`] = `
   className="c0"
 >
   <div
-    className=""
+    className="PageWrapper__Outer-sc-1ur2ylx-0"
   >
     <div
       className="c1"
@@ -605,7 +608,7 @@ exports[`Storyshots Molecules / PageHeader Regular page header 1`] = `
             className="c4"
           >
             <h1
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               Your darkest loaves
             </h1>

@@ -192,7 +192,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
             className="c1"
           >
             <span
-              className="c6"
+              className="Typography__Span-sc-10mju41-0 c6"
             >
               <a
                 className="c7"
@@ -214,7 +214,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
             className="c1"
           >
             <span
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <a
                 className="c7"
@@ -236,7 +236,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
             className="c1"
           >
             <span
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <a
                 className="c7"
@@ -258,7 +258,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
             className="c1"
           >
             <span
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <a
                 className="c7"
@@ -280,7 +280,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
             className="c1"
           >
             <span
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <a
                 className="c7"
@@ -302,7 +302,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
             className="c1"
           >
             <span
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <a
                 className="c7"
@@ -522,7 +522,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
           className="c1"
         >
           <span
-            className="c6"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <a
               className="c7"
@@ -542,7 +542,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
           className="c1"
         >
           <span
-            className="c9"
+            className="Typography__Span-sc-10mju41-0 c9"
           >
             <a
               className="c7"
@@ -761,7 +761,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
           className="c1"
         >
           <span
-            className="c6"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <a
               className="c7"
@@ -781,7 +781,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
           className="c1"
         >
           <span
-            className="c9"
+            className="Typography__Span-sc-10mju41-0 c9"
           >
             <a
               className="c7"
@@ -966,7 +966,7 @@ exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] 
           className="c1"
         >
           <span
-            className="c6"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <a
               className="c7"

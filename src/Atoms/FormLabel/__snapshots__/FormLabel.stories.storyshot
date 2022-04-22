@@ -21,7 +21,7 @@ exports[`Storyshots Atoms / FormLabel As a wrapper 1`] = `
   hidden={false}
 >
   <span
-    className="c1"
+    className="Typography__Span-sc-10mju41-0 c1"
   >
     Username
     <input
@@ -54,7 +54,7 @@ Array [
     htmlFor="unique-id"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       Username
     </span>
@@ -89,7 +89,7 @@ Array [
     htmlFor="unique-id"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       This is disabled
     </span>
@@ -131,7 +131,7 @@ Array [
     htmlFor="unique-id-2"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       Username
     </span>

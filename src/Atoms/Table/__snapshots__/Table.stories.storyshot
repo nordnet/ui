@@ -972,10 +972,13 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
 .c2 {
   width: 100%;
   border-bottom: 1px solid #EBEBE8;
+}
+
+.c3 {
   border: 0;
 }
 
-.c2 th {
+.c3 th {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -983,7 +986,7 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
   background-color: #FFFFFF;
 }
 
-.c2 th:before {
+.c3 th:before {
   left: 0;
   width: 100%;
   bottom: 0;
@@ -993,45 +996,31 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
   border-bottom: 1px solid #EBEBE8;
 }
 
-.c9 {
+.c10 {
   width: 100%;
   overflow: auto;
 }
 
-.c13 {
+.c14 {
   height: 100%;
   padding: 8px 0;
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c4 {
   height: 100%;
   padding: 8px 0;
   overflow: hidden;
 }
 
-.c3:not(:first-child) {
+.c4:not(:first-child) {
   border-top: 1px solid #EBEBE8;
-}
-
-.c10 {
-  height: 100%;
-  padding: 8px 4px;
-  text-align: left;
-}
-
-.c10:first-child {
-  padding-left: 0;
-}
-
-.c10:last-child {
-  padding-right: 0;
 }
 
 .c11 {
   height: 100%;
   padding: 8px 4px;
-  text-align: right;
+  text-align: left;
 }
 
 .c11:first-child {
@@ -1042,20 +1031,17 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
   padding-right: 0;
 }
 
-.c4 {
-  color: #6E6E69;
-  font-weight: normal;
+.c12 {
   height: 100%;
   padding: 8px 4px;
-  text-align: left;
-  width: 25%;
+  text-align: right;
 }
 
-.c4:first-child {
+.c12:first-child {
   padding-left: 0;
 }
 
-.c4:last-child {
+.c12:last-child {
   padding-right: 0;
 }
 
@@ -1065,7 +1051,7 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
   height: 100%;
   padding: 8px 4px;
   text-align: left;
-  width: 40%;
+  width: 25%;
 }
 
 .c5:first-child {
@@ -1081,8 +1067,8 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;
-  text-align: right;
-  width: 10%;
+  text-align: left;
+  width: 40%;
 }
 
 .c6:first-child {
@@ -1098,7 +1084,7 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;
-  text-align: left;
+  text-align: right;
   width: 10%;
 }
 
@@ -1116,7 +1102,7 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
   height: 100%;
   padding: 8px 4px;
   text-align: left;
-  width: 5%;
+  width: 10%;
 }
 
 .c8:first-child {
@@ -1127,7 +1113,24 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
   padding-right: 0;
 }
 
-.c12 {
+.c9 {
+  color: #6E6E69;
+  font-weight: normal;
+  height: 100%;
+  padding: 8px 4px;
+  text-align: left;
+  width: 5%;
+}
+
+.c9:first-child {
+  padding-left: 0;
+}
+
+.c9:last-child {
+  padding-right: 0;
+}
+
+.c13 {
   height: 20px;
   box-sizing: border-box;
   display: block;
@@ -1145,57 +1148,57 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
 }
 
 @supports (-webkit-overflow-scrolling:touch): {
-  .c9 {
+  .c10 {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
   }
 }
 
 <span
-  className="c0"
+  className="Typography__Span-sc-10mju41-0 c0"
 >
   <table
     className="c1"
     width="100%"
   >
     <thead
-      className="Thead__StyledThead-sc-ck14n6-0 c2"
+      className="c2 c3"
     >
       <tr
-        className="c3"
+        className="c4"
       >
         <th
-          className="c4"
+          className="c5"
           width="25%"
         >
           Symbol
         </th>
         <th
-          className="c5"
+          className="c6"
           width="40%"
         >
           Name
         </th>
         <th
-          className="c6"
+          className="c7"
           width="10%"
         >
           Development
         </th>
         <th
-          className="c7"
+          className="c8"
           width="10%"
         >
           Last
         </th>
         <th
-          className="c8"
+          className="c9"
           width="5%"
         >
           Flag
         </th>
         <th
-          className="c7"
+          className="c8"
           width="10%"
         >
           Quantity
@@ -1203,37 +1206,37 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
       </tr>
     </thead>
     <tbody
-      className="c9"
+      className="c10"
     >
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           HM B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Hennes & Mauritz AB, H & M ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.48
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           271
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -1273,40 +1276,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           ERIC B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Ericsson, Telefonab. L M ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.73
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           61.4
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -1346,40 +1349,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           BOL A
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Boliden AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.16
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           192.1
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -1419,40 +1422,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           FING B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Fingerprint Cards AB ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           0.28
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           106.8
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -1492,40 +1495,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SKF
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           SKF, AB ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           0.92
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           142
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -1565,40 +1568,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           Nord
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Nordea Bank AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.19
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           78.55
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -1638,40 +1641,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SEB C
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Skandinaviska Enskilda Banken ser. A
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.06
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           77.4
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -1711,40 +1714,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SWED A
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Swedbank AB ser A
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.21
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           187.5
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -1784,40 +1787,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SND
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Sandvik AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.47
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           94.4
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -1857,40 +1860,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SCA B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Svenska Cellulosa AB SCA ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           0.23
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           256
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -1930,40 +1933,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           VLV B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Volvo, AB ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.17
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           89.8
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -2003,40 +2006,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           TEL A
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Telia Company AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.58
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           39.28
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -2076,40 +2079,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           HM B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Hennes & Mauritz AB, H & M ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.48
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           271
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -2149,40 +2152,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           ERIC B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Ericsson, Telefonab. L M ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.73
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           61.4
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -2222,40 +2225,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           BOL A
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Boliden AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.16
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           192.1
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -2295,40 +2298,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           FING B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Fingerprint Cards AB ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           0.28
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           106.8
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -2368,40 +2371,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SKF
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           SKF, AB ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           0.92
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           142
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -2441,40 +2444,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           Nord
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Nordea Bank AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.19
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           78.55
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -2514,40 +2517,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SEB C
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Skandinaviska Enskilda Banken ser. A
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.06
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           77.4
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -2587,40 +2590,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SWED A
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Swedbank AB ser A
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.21
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           187.5
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -2660,40 +2663,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SND
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Sandvik AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.47
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           94.4
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -2733,40 +2736,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SCA B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Svenska Cellulosa AB SCA ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           0.23
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           256
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -2806,40 +2809,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           VLV B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Volvo, AB ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.17
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           89.8
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -2879,40 +2882,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           TEL A
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Telia Company AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.58
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           39.28
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -2952,40 +2955,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           HM B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Hennes & Mauritz AB, H & M ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.48
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           271
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -3025,40 +3028,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           ERIC B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Ericsson, Telefonab. L M ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.73
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           61.4
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -3098,40 +3101,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           BOL A
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Boliden AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.16
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           192.1
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -3171,40 +3174,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           FING B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Fingerprint Cards AB ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           0.28
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           106.8
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -3244,40 +3247,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SKF
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           SKF, AB ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           0.92
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           142
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -3317,40 +3320,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           Nord
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Nordea Bank AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.19
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           78.55
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -3390,40 +3393,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SEB C
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Skandinaviska Enskilda Banken ser. A
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.06
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           77.4
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -3463,40 +3466,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SWED A
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Swedbank AB ser A
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.21
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           187.5
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -3536,40 +3539,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SND
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Sandvik AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.47
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           94.4
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -3609,40 +3612,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SCA B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Svenska Cellulosa AB SCA ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           0.23
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           256
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -3682,40 +3685,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           VLV B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Volvo, AB ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.17
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           89.8
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -3755,40 +3758,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           TEL A
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Telia Company AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.58
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           39.28
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -3828,40 +3831,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           HM B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Hennes & Mauritz AB, H & M ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.48
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           271
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -3901,40 +3904,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           ERIC B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Ericsson, Telefonab. L M ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.73
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           61.4
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -3974,40 +3977,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           BOL A
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Boliden AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.16
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           192.1
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -4047,40 +4050,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           FING B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Fingerprint Cards AB ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           0.28
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           106.8
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -4120,40 +4123,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SKF
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           SKF, AB ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           0.92
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           142
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -4193,40 +4196,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           Nord
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Nordea Bank AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.19
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           78.55
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -4266,40 +4269,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SEB C
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Skandinaviska Enskilda Banken ser. A
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.06
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           77.4
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -4339,40 +4342,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SWED A
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Swedbank AB ser A
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.21
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           187.5
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -4412,40 +4415,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SND
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Sandvik AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.47
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           94.4
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -4485,40 +4488,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SCA B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Svenska Cellulosa AB SCA ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           0.23
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           256
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -4558,40 +4561,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           VLV B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Volvo, AB ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.17
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           89.8
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -4631,40 +4634,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           TEL A
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Telia Company AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.58
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           39.28
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -4704,40 +4707,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           HM B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Hennes & Mauritz AB, H & M ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.48
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           271
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -4777,40 +4780,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           ERIC B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Ericsson, Telefonab. L M ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.73
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           61.4
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -4850,40 +4853,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           BOL A
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Boliden AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.16
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           192.1
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -4923,40 +4926,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           FING B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Fingerprint Cards AB ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           0.28
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           106.8
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -4996,40 +4999,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SKF
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           SKF, AB ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           0.92
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           142
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -5069,40 +5072,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           Nord
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Nordea Bank AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.19
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           78.55
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -5142,40 +5145,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SEB C
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Skandinaviska Enskilda Banken ser. A
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.06
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           77.4
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -5215,40 +5218,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SWED A
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Swedbank AB ser A
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.21
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           187.5
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -5288,40 +5291,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SND
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Sandvik AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.47
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           94.4
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -5361,40 +5364,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           SCA B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Svenska Cellulosa AB SCA ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           0.23
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           256
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -5434,40 +5437,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           VLV B
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Volvo, AB ser. B
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.17
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           89.8
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -5507,40 +5510,40 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           TEL A
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           Telia Company AB
         </td>
         <td
-          className="c11"
+          className="c12"
         >
           -0.58
           %
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           39.28
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           <svg
-            className="c12"
+            className="c13"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -5580,45 +5583,45 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
           </svg>
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           10
         </td>
       </tr>
     </tbody>
     <tfoot
-      className="c13"
+      className="c14"
     >
       <tr
-        className="c3"
+        className="c4"
       >
         <td
-          className="c10"
+          className="c11"
         >
           -
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           -
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           -
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           -
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           -
         </td>
         <td
-          className="c10"
+          className="c11"
         >
           -
         </td>
@@ -5800,7 +5803,7 @@ exports[`Storyshots Atoms / Table Integration: Table with Typography 1`] = `
 }
 
 <span
-  className="c0"
+  className="Typography__Span-sc-10mju41-0 c0"
 >
   <table
     className="c1"
@@ -10465,7 +10468,7 @@ exports[`Storyshots Atoms / Table Integration: Table with Typography and ellipsi
 }
 
 <span
-  className="c0"
+  className="Typography__Span-sc-10mju41-0 c0"
 >
   <table
     className="c1"

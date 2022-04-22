@@ -127,7 +127,7 @@ exports[`Storyshots Molecules / Input / Radio Default 1`] = `
     hidden={false}
   >
     <span
-      className="c3"
+      className="Typography__Span-sc-10mju41-0 c3"
     >
       <div
         className="c4"
@@ -142,7 +142,7 @@ exports[`Storyshots Molecules / Input / Radio Default 1`] = `
           className="c6 c7"
         />
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Green
         </span>
@@ -179,7 +179,7 @@ Array [
     className="c0"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       Disabled
     </span>
@@ -384,7 +384,7 @@ Array [
         className="c2"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 c3"
         >
           Checked
         </span>
@@ -398,7 +398,7 @@ Array [
             hidden={false}
           >
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 c7"
             >
               <div
                 className="c8"
@@ -415,7 +415,7 @@ Array [
                   className="c10 c11"
                 />
                 <span
-                  className="c12 c13"
+                  className="Typography__Span-sc-10mju41-0 c12 c13"
                 >
                   Green
                 </span>
@@ -433,7 +433,7 @@ Array [
         className="c2"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 c3"
         >
           Not Checked
         </span>
@@ -447,7 +447,7 @@ Array [
             hidden={false}
           >
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 c7"
             >
               <div
                 className="c8"
@@ -463,7 +463,7 @@ Array [
                   className="c10 c11"
                 />
                 <span
-                  className="c12 c13"
+                  className="Typography__Span-sc-10mju41-0 c12 c13"
                 >
                   Blue
                 </span>
@@ -502,7 +502,7 @@ exports[`Storyshots Molecules / Input / Radio In a group 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -512,16 +512,16 @@ exports[`Storyshots Molecules / Input / Radio In a group 1`] = `
   margin-right: -10px;
 }
 
-.c6 > * {
+.c7 > * {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c6 > *:not(:first-child) {
+.c7 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -534,10 +534,13 @@ exports[`Storyshots Molecules / Input / Radio In a group 1`] = `
   max-width: 100%;
   padding: 0;
   white-space: normal;
+}
+
+.c4 {
   cursor: auto;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -546,7 +549,7 @@ exports[`Storyshots Molecules / Input / Radio In a group 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -555,7 +558,7 @@ exports[`Storyshots Molecules / Input / Radio In a group 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c12 {
   width: 18px;
   height: 18px;
   border: 1px solid #BDBDBD;
@@ -567,8 +570,8 @@ exports[`Storyshots Molecules / Input / Radio In a group 1`] = `
   flex-shrink: 0;
 }
 
-.c11::before,
-.c11::after {
+.c12::before,
+.c12::after {
   content: '';
   display: block;
   position: absolute;
@@ -580,26 +583,26 @@ exports[`Storyshots Molecules / Input / Radio In a group 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c11::before {
+.c12::before {
   width: 100%;
   height: 100%;
   padding: 2px;
 }
 
-.c11::after {
+.c12::after {
   width: 11px;
   height: 11px;
 }
 
-.c8 {
+.c9 {
   position: relative;
 }
 
-.c8:hover .c10 {
+.c9:hover .c11 {
   border-color: #424242;
 }
 
-.c9 {
+.c10 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -607,27 +610,27 @@ exports[`Storyshots Molecules / Input / Radio In a group 1`] = `
   cursor: pointer;
 }
 
-.c9:checked + .c10::after {
+.c10:checked + .c11::after {
   background: #336BFF;
 }
 
-.c9[disabled] + .c10 {
+.c10[disabled] + .c11 {
   border-color: #EBEBE8;
 }
 
-.c9:checked[disabled] + .c10 {
+.c10:checked[disabled] + .c11 {
   border-color: #EBEBE8;
 }
 
-.c9:checked[disabled] + .c10::after {
+.c10:checked[disabled] + .c11::after {
   background: #EBEBE8;
 }
 
-.c9:focus + .c10::before {
+.c10:focus + .c11::before {
   border: 1px solid #336BFF;
 }
 
-.c13 {
+.c14 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -643,7 +646,7 @@ exports[`Storyshots Molecules / Input / Radio In a group 1`] = `
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   width: auto;
   display: inline-block;
 }
@@ -658,43 +661,43 @@ exports[`Storyshots Molecules / Input / Radio In a group 1`] = `
       className="c2"
     >
       <legend
-        className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
+        className="c3 c4 c5"
         hidden={false}
       >
         <span
-          className="c5"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           Colors 
         </span>
       </legend>
     </div>
     <div
-      className="c6"
+      className="c7"
     >
       <div
-        className="c7"
+        className="c8"
       >
         <label
-          className="c4 c8"
+          className="c5 c9"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c9"
+                className="c10"
                 name="example"
                 type="radio"
                 value="green"
               />
               <div
-                className="c10 c11"
+                className="c11 c12"
               />
               <span
-                className="c12 c13"
+                className="Typography__Span-sc-10mju41-0 c13 c14"
               >
                 Green
               </span>
@@ -703,29 +706,29 @@ exports[`Storyshots Molecules / Input / Radio In a group 1`] = `
         </label>
       </div>
       <div
-        className="c7"
+        className="c8"
       >
         <label
-          className="c4 c8"
+          className="c5 c9"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c9"
+                className="c10"
                 name="example"
                 type="radio"
                 value="blue"
               />
               <div
-                className="c10 c11"
+                className="c11 c12"
               />
               <span
-                className="c12 c13"
+                className="Typography__Span-sc-10mju41-0 c13 c14"
               >
                 Blue
               </span>
@@ -734,29 +737,29 @@ exports[`Storyshots Molecules / Input / Radio In a group 1`] = `
         </label>
       </div>
       <div
-        className="c7"
+        className="c8"
       >
         <label
-          className="c4 c8"
+          className="c5 c9"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c9"
+                className="c10"
                 name="example"
                 type="radio"
                 value="yellow"
               />
               <div
-                className="c10 c11"
+                className="c11 c12"
               />
               <span
-                className="c12 c13"
+                className="Typography__Span-sc-10mju41-0 c13 c14"
               >
                 Yellow
               </span>
@@ -782,7 +785,7 @@ exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] =
   align-items: center;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -792,16 +795,16 @@ exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] =
   margin-right: -10px;
 }
 
-.c9 > * {
+.c10 > * {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c9 > *:not(:first-child) {
+.c10 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -814,10 +817,13 @@ exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] =
   max-width: 100%;
   padding: 0;
   white-space: normal;
+}
+
+.c4 {
   cursor: auto;
 }
 
-.c6 {
+.c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -831,11 +837,11 @@ exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] =
   display: block;
 }
 
-.c8 {
+.c9 {
   stroke: #6E6E69;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -844,11 +850,11 @@ exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] =
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c12 {
   position: relative;
 }
 
-.c12 {
+.c13 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -867,37 +873,13 @@ exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] =
   display: inline-block;
 }
 
-.c10 {
+.c11 {
   width: auto;
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   margin-left: 4px;
-}
-
-.c13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 52px;
-  height: 52px;
-  background-color: #F5F5F5;
-  background-color: #336BFF;
-  color: white;
-}
-
-.c13:hover {
-  cursor: pointer;
 }
 
 .c14 {
@@ -916,9 +898,33 @@ exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] =
   width: 52px;
   height: 52px;
   background-color: #F5F5F5;
+  background-color: #336BFF;
+  color: white;
 }
 
 .c14:hover {
+  cursor: pointer;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  background-color: #F5F5F5;
+}
+
+.c15:hover {
   cursor: pointer;
   background-color: #336BFF;
   color: white;
@@ -934,18 +940,18 @@ exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] =
       className="c2"
     >
       <legend
-        className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
+        className="c3 c4 c5"
         hidden={false}
       >
         <span
-          className="c5"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           Colors 
         </span>
       </legend>
       <svg
         aria-hidden="true"
-        className="c6 c7"
+        className="c7 c8"
         focusable="false"
         onBlur={[Function]}
         onFocus={[Function]}
@@ -963,7 +969,7 @@ exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] =
           transform="translate(1 1)"
         >
           <circle
-            className="c8"
+            className="c9"
             cx="11"
             cy="11"
             fill="none"
@@ -977,23 +983,23 @@ exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] =
       </svg>
     </div>
     <div
-      className="c9"
+      className="c10"
     >
       <div
-        className="c10"
+        className="c11"
       >
         <label
-          className="c4 c11"
+          className="c5 c12"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c12"
+                className="c13"
                 id="Green"
                 name="example"
                 type="radio"
@@ -1001,7 +1007,7 @@ exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] =
               />
               <label
                 checked={true}
-                className="c13"
+                className="c14"
                 htmlFor="Green"
               >
                 Green
@@ -1011,20 +1017,20 @@ exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] =
         </label>
       </div>
       <div
-        className="c10"
+        className="c11"
       >
         <label
-          className="c4 c11"
+          className="c5 c12"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c12"
+                className="c13"
                 id="Blue"
                 name="example"
                 type="radio"
@@ -1032,7 +1038,7 @@ exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] =
               />
               <label
                 checked={false}
-                className="c14"
+                className="c15"
                 htmlFor="Blue"
               >
                 Blue
@@ -1042,20 +1048,20 @@ exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] =
         </label>
       </div>
       <div
-        className="c10"
+        className="c11"
       >
         <label
-          className="c4 c11"
+          className="c5 c12"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c12"
+                className="c13"
                 id="Yellow"
                 name="example"
                 type="radio"
@@ -1063,7 +1069,7 @@ exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] =
               />
               <label
                 checked={false}
-                className="c14"
+                className="c15"
                 htmlFor="Yellow"
               >
                 Yellow
@@ -1090,7 +1096,7 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1100,16 +1106,16 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
   margin-right: -10px;
 }
 
-.c6 > * {
+.c7 > * {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c6 > *:not(:first-child) {
+.c7 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c15 {
+.c16 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1118,7 +1124,7 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -1131,10 +1137,13 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
   max-width: 100%;
   padding: 0;
   white-space: normal;
+}
+
+.c4 {
   cursor: auto;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1143,7 +1152,7 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1152,7 +1161,7 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -1161,7 +1170,7 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c11 {
+.c12 {
   width: 18px;
   height: 18px;
   border: 1px solid #BDBDBD;
@@ -1173,8 +1182,8 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
   flex-shrink: 0;
 }
 
-.c11::before,
-.c11::after {
+.c12::before,
+.c12::after {
   content: '';
   display: block;
   position: absolute;
@@ -1186,26 +1195,26 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c11::before {
+.c12::before {
   width: 100%;
   height: 100%;
   padding: 2px;
 }
 
-.c11::after {
+.c12::after {
   width: 11px;
   height: 11px;
 }
 
-.c8 {
+.c9 {
   position: relative;
 }
 
-.c8:hover .c10 {
+.c9:hover .c11 {
   border-color: #424242;
 }
 
-.c9 {
+.c10 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -1213,31 +1222,31 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
   cursor: pointer;
 }
 
-.c9:checked + .c10::after {
+.c10:checked + .c11::after {
   background: #336BFF;
 }
 
-.c9[disabled] + .c10 {
+.c10[disabled] + .c11 {
   border-color: #EBEBE8;
 }
 
-.c9:checked[disabled] + .c10 {
+.c10:checked[disabled] + .c11 {
   border-color: #EBEBE8;
 }
 
-.c9:checked[disabled] + .c10::after {
+.c10:checked[disabled] + .c11::after {
   background: #EBEBE8;
 }
 
-.c9 + .c10::before {
+.c10 + .c11::before {
   border: 1px solid #CC2269;
 }
 
-.c9:focus + .c10::before {
+.c10:focus + .c11::before {
   border: 1px solid #336BFF;
 }
 
-.c13 {
+.c14 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -1253,7 +1262,7 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   width: auto;
   display: inline-block;
 }
@@ -1268,34 +1277,34 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
       className="c2"
     >
       <legend
-        className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
+        className="c3 c4 c5"
         hidden={false}
       >
         <span
-          className="c5"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           Colors 
         </span>
       </legend>
     </div>
     <div
-      className="c6"
+      className="c7"
     >
       <div
-        className="c7"
+        className="c8"
       >
         <label
-          className="c4 c8"
+          className="c5 c9"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c9"
+                className="c10"
                 name="example"
                 onChange={[Function]}
                 required={true}
@@ -1303,10 +1312,10 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
                 value="green"
               />
               <div
-                className="c10 c11"
+                className="c11 c12"
               />
               <span
-                className="c12 c13"
+                className="Typography__Span-sc-10mju41-0 c13 c14"
               >
                 Green
               </span>
@@ -1315,20 +1324,20 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
         </label>
       </div>
       <div
-        className="c7"
+        className="c8"
       >
         <label
-          className="c4 c8"
+          className="c5 c9"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c9"
+                className="c10"
                 name="example"
                 onChange={[Function]}
                 required={true}
@@ -1336,10 +1345,10 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
                 value="blue"
               />
               <div
-                className="c10 c11"
+                className="c11 c12"
               />
               <span
-                className="c12 c13"
+                className="Typography__Span-sc-10mju41-0 c13 c14"
               >
                 Blue
               </span>
@@ -1348,20 +1357,20 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
         </label>
       </div>
       <div
-        className="c7"
+        className="c8"
       >
         <label
-          className="c4 c8"
+          className="c5 c9"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c9"
+                className="c10"
                 name="example"
                 onChange={[Function]}
                 required={true}
@@ -1369,10 +1378,10 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
                 value="yellow"
               />
               <div
-                className="c10 c11"
+                className="c11 c12"
               />
               <span
-                className="c12 c13"
+                className="Typography__Span-sc-10mju41-0 c13 c14"
               >
                 Yellow
               </span>
@@ -1384,10 +1393,10 @@ exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
   </fieldset>
   <div>
     <span
-      className="c14"
+      className="Typography__Span-sc-10mju41-0 c15"
     >
       <div
-        className="c15"
+        className="c16"
       >
         Error: 
       </div>
@@ -1413,7 +1422,7 @@ Array [
   align-items: center;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1423,16 +1432,16 @@ Array [
   margin-right: -10px;
 }
 
-.c9 > * {
+.c10 > * {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c9 > *:not(:first-child) {
+.c10 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -1445,10 +1454,13 @@ Array [
   max-width: 100%;
   padding: 0;
   white-space: normal;
+}
+
+.c4 {
   cursor: auto;
 }
 
-.c6 {
+.c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1462,11 +1474,11 @@ Array [
   display: block;
 }
 
-.c8 {
+.c9 {
   stroke: #6E6E69;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1475,7 +1487,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1484,7 +1496,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c15 {
   width: 18px;
   height: 18px;
   border: 1px solid #BDBDBD;
@@ -1496,8 +1508,8 @@ Array [
   flex-shrink: 0;
 }
 
-.c14::before,
-.c14::after {
+.c15::before,
+.c15::after {
   content: '';
   display: block;
   position: absolute;
@@ -1509,26 +1521,26 @@ Array [
   transform: translate(-50%,-50%);
 }
 
-.c14::before {
+.c15::before {
   width: 100%;
   height: 100%;
   padding: 2px;
 }
 
-.c14::after {
+.c15::after {
   width: 11px;
   height: 11px;
 }
 
-.c11 {
+.c12 {
   position: relative;
 }
 
-.c11:hover .c13 {
+.c12:hover .c14 {
   border-color: #424242;
 }
 
-.c12 {
+.c13 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -1536,27 +1548,27 @@ Array [
   cursor: pointer;
 }
 
-.c12:checked + .c13::after {
+.c13:checked + .c14::after {
   background: #336BFF;
 }
 
-.c12[disabled] + .c13 {
+.c13[disabled] + .c14 {
   border-color: #EBEBE8;
 }
 
-.c12:checked[disabled] + .c13 {
+.c13:checked[disabled] + .c14 {
   border-color: #EBEBE8;
 }
 
-.c12:checked[disabled] + .c13::after {
+.c13:checked[disabled] + .c14::after {
   background: #EBEBE8;
 }
 
-.c12:focus + .c13::before {
+.c13:focus + .c14::before {
   border: 1px solid #336BFF;
 }
 
-.c16 {
+.c17 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -1572,12 +1584,12 @@ Array [
   display: inline-block;
 }
 
-.c10 {
+.c11 {
   width: auto;
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   margin-left: 4px;
 }
 
@@ -1591,18 +1603,18 @@ Array [
         className="c2"
       >
         <legend
-          className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
+          className="c3 c4 c5"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             Colors 
           </span>
         </legend>
         <svg
           aria-hidden="true"
-          className="c6 c7"
+          className="c7 c8"
           focusable="false"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -1620,7 +1632,7 @@ Array [
             transform="translate(1 1)"
           >
             <circle
-              className="c8"
+              className="c9"
               cx="11"
               cy="11"
               fill="none"
@@ -1634,32 +1646,32 @@ Array [
         </svg>
       </div>
       <div
-        className="c9"
+        className="c10"
       >
         <div
-          className="c10"
+          className="c11"
         >
           <label
-            className="c4 c11"
+            className="c5 c12"
             hidden={false}
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c6"
             >
               <div
                 className="c2"
               >
                 <input
-                  className="c12"
+                  className="c13"
                   name="example"
                   type="radio"
                   value="green"
                 />
                 <div
-                  className="c13 c14"
+                  className="c14 c15"
                 />
                 <span
-                  className="c15 c16"
+                  className="Typography__Span-sc-10mju41-0 c16 c17"
                 >
                   Green
                 </span>
@@ -1668,29 +1680,29 @@ Array [
           </label>
         </div>
         <div
-          className="c10"
+          className="c11"
         >
           <label
-            className="c4 c11"
+            className="c5 c12"
             hidden={false}
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c6"
             >
               <div
                 className="c2"
               >
                 <input
-                  className="c12"
+                  className="c13"
                   name="example"
                   type="radio"
                   value="blue"
                 />
                 <div
-                  className="c13 c14"
+                  className="c14 c15"
                 />
                 <span
-                  className="c15 c16"
+                  className="Typography__Span-sc-10mju41-0 c16 c17"
                 >
                   Blue
                 </span>
@@ -1699,29 +1711,29 @@ Array [
           </label>
         </div>
         <div
-          className="c10"
+          className="c11"
         >
           <label
-            className="c4 c11"
+            className="c5 c12"
             hidden={false}
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c6"
             >
               <div
                 className="c2"
               >
                 <input
-                  className="c12"
+                  className="c13"
                   name="example"
                   type="radio"
                   value="yellow"
                 />
                 <div
-                  className="c13 c14"
+                  className="c14 c15"
                 />
                 <span
-                  className="c15 c16"
+                  className="Typography__Span-sc-10mju41-0 c16 c17"
                 >
                   Yellow
                 </span>
@@ -1748,7 +1760,7 @@ exports[`Storyshots Molecules / Input / Radio In a group with tooltip 1`] = `
   align-items: center;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1758,16 +1770,16 @@ exports[`Storyshots Molecules / Input / Radio In a group with tooltip 1`] = `
   margin-right: -10px;
 }
 
-.c9 > * {
+.c10 > * {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c9 > *:not(:first-child) {
+.c10 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -1780,10 +1792,13 @@ exports[`Storyshots Molecules / Input / Radio In a group with tooltip 1`] = `
   max-width: 100%;
   padding: 0;
   white-space: normal;
+}
+
+.c4 {
   cursor: auto;
 }
 
-.c6 {
+.c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1797,11 +1812,11 @@ exports[`Storyshots Molecules / Input / Radio In a group with tooltip 1`] = `
   display: block;
 }
 
-.c8 {
+.c9 {
   stroke: #6E6E69;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1810,7 +1825,7 @@ exports[`Storyshots Molecules / Input / Radio In a group with tooltip 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1819,7 +1834,7 @@ exports[`Storyshots Molecules / Input / Radio In a group with tooltip 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c15 {
   width: 18px;
   height: 18px;
   border: 1px solid #BDBDBD;
@@ -1831,8 +1846,8 @@ exports[`Storyshots Molecules / Input / Radio In a group with tooltip 1`] = `
   flex-shrink: 0;
 }
 
-.c14::before,
-.c14::after {
+.c15::before,
+.c15::after {
   content: '';
   display: block;
   position: absolute;
@@ -1844,26 +1859,26 @@ exports[`Storyshots Molecules / Input / Radio In a group with tooltip 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c14::before {
+.c15::before {
   width: 100%;
   height: 100%;
   padding: 2px;
 }
 
-.c14::after {
+.c15::after {
   width: 11px;
   height: 11px;
 }
 
-.c11 {
+.c12 {
   position: relative;
 }
 
-.c11:hover .c13 {
+.c12:hover .c14 {
   border-color: #424242;
 }
 
-.c12 {
+.c13 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -1871,27 +1886,27 @@ exports[`Storyshots Molecules / Input / Radio In a group with tooltip 1`] = `
   cursor: pointer;
 }
 
-.c12:checked + .c13::after {
+.c13:checked + .c14::after {
   background: #336BFF;
 }
 
-.c12[disabled] + .c13 {
+.c13[disabled] + .c14 {
   border-color: #EBEBE8;
 }
 
-.c12:checked[disabled] + .c13 {
+.c13:checked[disabled] + .c14 {
   border-color: #EBEBE8;
 }
 
-.c12:checked[disabled] + .c13::after {
+.c13:checked[disabled] + .c14::after {
   background: #EBEBE8;
 }
 
-.c12:focus + .c13::before {
+.c13:focus + .c14::before {
   border: 1px solid #336BFF;
 }
 
-.c16 {
+.c17 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -1907,12 +1922,12 @@ exports[`Storyshots Molecules / Input / Radio In a group with tooltip 1`] = `
   display: inline-block;
 }
 
-.c10 {
+.c11 {
   width: auto;
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   margin-left: 4px;
 }
 
@@ -1926,18 +1941,18 @@ exports[`Storyshots Molecules / Input / Radio In a group with tooltip 1`] = `
       className="c2"
     >
       <legend
-        className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
+        className="c3 c4 c5"
         hidden={false}
       >
         <span
-          className="c5"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           Colors 
         </span>
       </legend>
       <svg
         aria-hidden="true"
-        className="c6 c7"
+        className="c7 c8"
         focusable="false"
         onBlur={[Function]}
         onFocus={[Function]}
@@ -1955,7 +1970,7 @@ exports[`Storyshots Molecules / Input / Radio In a group with tooltip 1`] = `
           transform="translate(1 1)"
         >
           <circle
-            className="c8"
+            className="c9"
             cx="11"
             cy="11"
             fill="none"
@@ -1969,32 +1984,32 @@ exports[`Storyshots Molecules / Input / Radio In a group with tooltip 1`] = `
       </svg>
     </div>
     <div
-      className="c9"
+      className="c10"
     >
       <div
-        className="c10"
+        className="c11"
       >
         <label
-          className="c4 c11"
+          className="c5 c12"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c12"
+                className="c13"
                 name="example"
                 type="radio"
                 value="green"
               />
               <div
-                className="c13 c14"
+                className="c14 c15"
               />
               <span
-                className="c15 c16"
+                className="Typography__Span-sc-10mju41-0 c16 c17"
               >
                 Green
               </span>
@@ -2003,29 +2018,29 @@ exports[`Storyshots Molecules / Input / Radio In a group with tooltip 1`] = `
         </label>
       </div>
       <div
-        className="c10"
+        className="c11"
       >
         <label
-          className="c4 c11"
+          className="c5 c12"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c12"
+                className="c13"
                 name="example"
                 type="radio"
                 value="blue"
               />
               <div
-                className="c13 c14"
+                className="c14 c15"
               />
               <span
-                className="c15 c16"
+                className="Typography__Span-sc-10mju41-0 c16 c17"
               >
                 Blue
               </span>
@@ -2034,29 +2049,29 @@ exports[`Storyshots Molecules / Input / Radio In a group with tooltip 1`] = `
         </label>
       </div>
       <div
-        className="c10"
+        className="c11"
       >
         <label
-          className="c4 c11"
+          className="c5 c12"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c12"
+                className="c13"
                 name="example"
                 type="radio"
                 value="yellow"
               />
               <div
-                className="c13 c14"
+                className="c14 c15"
               />
               <span
-                className="c15 c16"
+                className="Typography__Span-sc-10mju41-0 c16 c17"
               >
                 Yellow
               </span>
@@ -2204,7 +2219,7 @@ exports[`Storyshots Molecules / Input / Radio On a coloured background 1`] = `
       hidden={false}
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         <div
           className="c5"
@@ -2219,7 +2234,7 @@ exports[`Storyshots Molecules / Input / Radio On a coloured background 1`] = `
             className="c7 c8"
           />
           <span
-            className="c9 c10"
+            className="Typography__Span-sc-10mju41-0 c9 c10"
           >
             On a colored background
           </span>
@@ -2257,7 +2272,7 @@ Array [
     className="c0"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       Required
     </span>
@@ -2462,7 +2477,7 @@ Array [
         className="c2"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 c3"
         >
           Default (without star)
         </span>
@@ -2476,7 +2491,7 @@ Array [
             hidden={false}
           >
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 c7"
             >
               <div
                 className="c8"
@@ -2492,7 +2507,7 @@ Array [
                   className="c10 c11"
                 />
                 <span
-                  className="c12 c13"
+                  className="Typography__Span-sc-10mju41-0 c12 c13"
                 >
                   Green
                 </span>
@@ -2510,7 +2525,7 @@ Array [
         className="c2"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 c3"
         >
           With star
         </span>
@@ -2524,7 +2539,7 @@ Array [
             hidden={false}
           >
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 c7"
             >
               <div
                 className="c8"
@@ -2540,7 +2555,7 @@ Array [
                   className="c10 c11"
                 />
                 <span
-                  className="c12 c13"
+                  className="Typography__Span-sc-10mju41-0 c12 c13"
                 >
                   Green *
                 </span>
@@ -2693,7 +2708,7 @@ exports[`Storyshots Molecules / Input / Radio With all actions 1`] = `
     hidden={false}
   >
     <span
-      className="c3"
+      className="Typography__Span-sc-10mju41-0 c3"
     >
       <div
         className="c4"
@@ -2715,7 +2730,7 @@ exports[`Storyshots Molecules / Input / Radio With all actions 1`] = `
           className="c6 c7"
         />
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Green
         </span>
@@ -2874,7 +2889,7 @@ exports[`Storyshots Molecules / Input / Radio With an error if not checked 1`] =
     hidden={false}
   >
     <span
-      className="c3"
+      className="Typography__Span-sc-10mju41-0 c3"
     >
       <div
         className="c4"
@@ -2891,7 +2906,7 @@ exports[`Storyshots Molecules / Input / Radio With an error if not checked 1`] =
           className="c6 c7"
         />
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Green
         </span>
@@ -2900,7 +2915,7 @@ exports[`Storyshots Molecules / Input / Radio With an error if not checked 1`] =
   </label>
   <div>
     <span
-      className="c10"
+      className="Typography__Span-sc-10mju41-0 c10"
     >
       <div
         className="c11"
@@ -3040,7 +3055,7 @@ exports[`Storyshots Molecules / Input / Radio With auto focus 1`] = `
     hidden={false}
   >
     <span
-      className="c3"
+      className="Typography__Span-sc-10mju41-0 c3"
     >
       <div
         className="c4"
@@ -3056,7 +3071,7 @@ exports[`Storyshots Molecules / Input / Radio With auto focus 1`] = `
           className="c6 c7"
         />
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Green
         </span>
@@ -3194,7 +3209,7 @@ Array [
       hidden={false}
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         <div
           className="c4"
@@ -3211,7 +3226,7 @@ Array [
             className="c6 c7"
           />
           <span
-            className="c8 c9"
+            className="Typography__Span-sc-10mju41-0 c8 c9"
           >
             Green
           </span>
@@ -3355,7 +3370,7 @@ exports[`Storyshots Molecules / Input / Radio With default checked 1`] = `
     hidden={false}
   >
     <span
-      className="c3"
+      className="Typography__Span-sc-10mju41-0 c3"
     >
       <div
         className="c4"
@@ -3371,7 +3386,7 @@ exports[`Storyshots Molecules / Input / Radio With default checked 1`] = `
           className="c6 c7"
         />
         <span
-          className="c8 c9"
+          className="Typography__Span-sc-10mju41-0 c8 c9"
         >
           Green
         </span>
@@ -3517,7 +3532,7 @@ exports[`Storyshots Molecules / Input / Radio With hide label 1`] = `
     hidden={false}
   >
     <span
-      className="c3"
+      className="Typography__Span-sc-10mju41-0 c3"
     >
       <div
         className="c4"
@@ -3535,7 +3550,7 @@ exports[`Storyshots Molecules / Input / Radio With hide label 1`] = `
           className="c8"
         >
           <span
-            className="c9 c10"
+            className="Typography__Span-sc-10mju41-0 c9 c10"
           >
             This label is hidden
           </span>

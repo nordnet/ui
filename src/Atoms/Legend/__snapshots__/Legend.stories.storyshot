@@ -8,10 +8,13 @@ exports[`Storyshots Atoms / Legend Default 1`] = `
   max-width: 100%;
   padding: 0;
   white-space: normal;
-  margin: 0 0 16px 0;
 }
 
 .c1 {
+  margin: 0 0 16px 0;
+}
+
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -21,17 +24,17 @@ exports[`Storyshots Atoms / Legend Default 1`] = `
 }
 
 @media (min-width:760px) {
-  .c1 {
+  .c2 {
     font-size: 20px;
     line-height: 1.2;
   }
 }
 
 <legend
-  className="NormalizedLegend__Legend-sc-1svgb20-0 c0"
+  className="c0 c1"
 >
   <span
-    className="c1"
+    className="Typography__Span-sc-10mju41-0 c2"
   >
     Caption text
   </span>
@@ -45,7 +48,7 @@ exports[`Storyshots Atoms / Legend Docs 1`] = `
 `;
 
 exports[`Storyshots Atoms / Legend Looking like a label 1`] = `
-.c1 {
+.c2 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -58,10 +61,13 @@ exports[`Storyshots Atoms / Legend Looking like a label 1`] = `
   max-width: 100%;
   padding: 0;
   white-space: normal;
+}
+
+.c1 {
   cursor: auto;
 }
 
-.c2 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -71,11 +77,11 @@ exports[`Storyshots Atoms / Legend Looking like a label 1`] = `
 }
 
 <legend
-  className="NormalizedLegend__Legend-sc-1svgb20-0 c0 c1"
+  className="c0 c1 c2"
   hidden={false}
 >
   <span
-    className="c2"
+    className="Typography__Span-sc-10mju41-0 c3"
   >
     Caption text
   </span>

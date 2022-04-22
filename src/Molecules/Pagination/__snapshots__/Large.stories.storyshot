@@ -20,7 +20,7 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   box-sizing: border-box;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -32,7 +32,7 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   align-items: center;
 }
 
-.c12 {
+.c13 {
   color: inherit;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -45,39 +45,6 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   vertical-align: sub;
 }
 
-.c1 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c6 {
   font-family: inherit;
   font-size: 100%;
@@ -85,27 +52,6 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #336BFF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c6,
@@ -130,7 +76,64 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c6::before {
+.c1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c7 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c7::before {
   content: '';
   display: block;
   position: absolute;
@@ -141,11 +144,11 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   height: calc(100% - 4px);
 }
 
-.c6:hover {
+.c7:hover {
   background-color: #2650BF;
 }
 
-.c6:active {
+.c7:active {
   background-color: #1F4099;
 }
 
@@ -175,7 +178,7 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   width: 80px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -196,22 +199,22 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   color: #282823;
 }
 
-.c7:hover {
+.c8:hover {
   background-color: #2650BF;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7:hover span {
+.c8:hover span {
   color: #FFFFFF;
 }
 
-.c7:hover svg {
+.c8:hover svg {
   fill: #FFFFFF;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -234,18 +237,18 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   border: 1px solid #BDBDBD;
 }
 
-.c11:hover {
+.c12:hover {
   background-color: #2650BF;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c11:hover span {
+.c12:hover span {
   color: #FFFFFF;
 }
 
-.c11:hover svg {
+.c12:hover svg {
   fill: #FFFFFF;
 }
 
@@ -266,7 +269,7 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
           className="c0 c4"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             1
           </span>
@@ -277,16 +280,16 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
       >
         <button
           aria-label="Go to Page 2"
-          className="NormalizedButton__Button-sc-ey7f5x-0 c6 c7"
+          className="c6 c7 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <span
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 c10"
               >
                 2
               </span>
@@ -296,21 +299,21 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
       </li>
     </ul>
     <div
-      className="c10"
+      className="c11"
     >
       <button
         aria-label="Go to next page"
-        className="NormalizedButton__Button-sc-ey7f5x-0 c6 c11"
+        className="c6 c7 c12"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c8"
+            className="Typography__Span-sc-10mju41-0 c9"
           >
             <svg
               aria-hidden="true"
-              className="c12"
+              className="c13"
               focusable="false"
               height={16}
               preserveAspectRatio="xMidYMid meet"
@@ -343,7 +346,7 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   box-sizing: border-box;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -355,7 +358,7 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   align-items: center;
 }
 
-.c13 {
+.c14 {
   color: inherit;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -368,39 +371,6 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   vertical-align: sub;
 }
 
-.c1 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c6 {
   font-family: inherit;
   font-size: 100%;
@@ -408,27 +378,6 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #336BFF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c6,
@@ -453,7 +402,64 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c6::before {
+.c1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c7 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c7::before {
   content: '';
   display: block;
   position: absolute;
@@ -464,11 +470,11 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   height: calc(100% - 4px);
 }
 
-.c6:hover {
+.c7:hover {
   background-color: #2650BF;
 }
 
-.c6:active {
+.c7:active {
   background-color: #1F4099;
 }
 
@@ -486,7 +492,7 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   width: 40px;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -517,7 +523,7 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   width: 240px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -538,22 +544,22 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   color: #282823;
 }
 
-.c7:hover {
+.c8:hover {
   background-color: #2650BF;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7:hover span {
+.c8:hover span {
   color: #FFFFFF;
 }
 
-.c7:hover svg {
+.c8:hover svg {
   fill: #FFFFFF;
 }
 
-.c12 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -576,18 +582,18 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   border: 1px solid #BDBDBD;
 }
 
-.c12:hover {
+.c13:hover {
   background-color: #2650BF;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c12:hover span {
+.c13:hover span {
   color: #FFFFFF;
 }
 
-.c12:hover svg {
+.c13:hover svg {
   fill: #FFFFFF;
 }
 
@@ -608,7 +614,7 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
           className="c0 c4"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             1
           </span>
@@ -619,16 +625,16 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
       >
         <button
           aria-label="Go to Page 2"
-          className="NormalizedButton__Button-sc-ey7f5x-0 c6 c7"
+          className="c6 c7 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <span
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 c10"
               >
                 2
               </span>
@@ -641,16 +647,16 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
       >
         <button
           aria-label="Go to Page 3"
-          className="NormalizedButton__Button-sc-ey7f5x-0 c6 c7"
+          className="c6 c7 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <span
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 c10"
               >
                 3
               </span>
@@ -659,10 +665,10 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
         </button>
       </li>
       <li
-        className="c10"
+        className="c11"
       >
         <span
-          className="c9"
+          className="Typography__Span-sc-10mju41-0 c10"
         >
           ...
         </span>
@@ -672,16 +678,16 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
       >
         <button
           aria-label="Go to Page 12"
-          className="NormalizedButton__Button-sc-ey7f5x-0 c6 c7"
+          className="c6 c7 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <span
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 c10"
               >
                 12
               </span>
@@ -691,21 +697,21 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
       </li>
     </ul>
     <div
-      className="c11"
+      className="c12"
     >
       <button
         aria-label="Go to next page"
-        className="NormalizedButton__Button-sc-ey7f5x-0 c6 c12"
+        className="c6 c7 c13"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c8"
+            className="Typography__Span-sc-10mju41-0 c9"
           >
             <svg
               aria-hidden="true"
-              className="c13"
+              className="c14"
               focusable="false"
               height={16}
               preserveAspectRatio="xMidYMid meet"
@@ -738,7 +744,7 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   box-sizing: border-box;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -750,7 +756,7 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   align-items: center;
 }
 
-.c13 {
+.c14 {
   color: inherit;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -763,39 +769,6 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   vertical-align: sub;
 }
 
-.c1 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c6 {
   font-family: inherit;
   font-size: 100%;
@@ -803,27 +776,6 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #336BFF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c6,
@@ -848,7 +800,64 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c6::before {
+.c1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c7 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c7::before {
   content: '';
   display: block;
   position: absolute;
@@ -859,11 +868,11 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   height: calc(100% - 4px);
 }
 
-.c6:hover {
+.c7:hover {
   background-color: #2650BF;
 }
 
-.c6:active {
+.c7:active {
   background-color: #1F4099;
 }
 
@@ -881,7 +890,7 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   width: 40px;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -912,7 +921,7 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   width: 240px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -933,22 +942,22 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   color: #282823;
 }
 
-.c7:hover {
+.c8:hover {
   background-color: #2650BF;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7:hover span {
+.c8:hover span {
   color: #FFFFFF;
 }
 
-.c7:hover svg {
+.c8:hover svg {
   fill: #FFFFFF;
 }
 
-.c12 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -971,18 +980,18 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   border: 1px solid #BDBDBD;
 }
 
-.c12:hover {
+.c13:hover {
   background-color: #2650BF;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c12:hover span {
+.c13:hover span {
   color: #FFFFFF;
 }
 
-.c12:hover svg {
+.c13:hover svg {
   fill: #FFFFFF;
 }
 
@@ -1003,7 +1012,7 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
           className="c0 c4"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             1
           </span>
@@ -1014,16 +1023,16 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
       >
         <button
           aria-label="Go to Page 2"
-          className="NormalizedButton__Button-sc-ey7f5x-0 c6 c7"
+          className="c6 c7 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <span
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 c10"
               >
                 2
               </span>
@@ -1036,16 +1045,16 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
       >
         <button
           aria-label="Go to Page 3"
-          className="NormalizedButton__Button-sc-ey7f5x-0 c6 c7"
+          className="c6 c7 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <span
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 c10"
               >
                 3
               </span>
@@ -1054,10 +1063,10 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
         </button>
       </li>
       <li
-        className="c10"
+        className="c11"
       >
         <span
-          className="c9"
+          className="Typography__Span-sc-10mju41-0 c10"
         >
           ...
         </span>
@@ -1067,16 +1076,16 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
       >
         <button
           aria-label="Go to Page 999"
-          className="NormalizedButton__Button-sc-ey7f5x-0 c6 c7"
+          className="c6 c7 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <span
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 c10"
               >
                 999
               </span>
@@ -1086,21 +1095,21 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
       </li>
     </ul>
     <div
-      className="c11"
+      className="c12"
     >
       <button
         aria-label="Go to next page"
-        className="NormalizedButton__Button-sc-ey7f5x-0 c6 c12"
+        className="c6 c7 c13"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c8"
+            className="Typography__Span-sc-10mju41-0 c9"
           >
             <svg
               aria-hidden="true"
-              className="c13"
+              className="c14"
               focusable="false"
               height={16}
               preserveAspectRatio="xMidYMid meet"
@@ -1141,11 +1150,11 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
 }
 
-.c5 {
+.c6 {
   color: inherit;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1158,39 +1167,6 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   vertical-align: sub;
 }
 
-.c6 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c2 {
   font-family: inherit;
   font-size: 100%;
@@ -1198,27 +1174,6 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #336BFF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c2,
@@ -1243,7 +1198,64 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c2::before {
+.c7 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c3 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c3::before {
   content: '';
   display: block;
   position: absolute;
@@ -1254,15 +1266,15 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   height: calc(100% - 4px);
 }
 
-.c2:hover {
+.c3:hover {
   background-color: #2650BF;
 }
 
-.c2:active {
+.c3:active {
   background-color: #1F4099;
 }
 
-.c12 {
+.c13 {
   background-color: #336BFF;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1276,7 +1288,7 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   width: 40px;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1295,7 +1307,7 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1307,7 +1319,7 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   width: 240px;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1330,22 +1342,22 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   border: 1px solid #BDBDBD;
 }
 
-.c3:hover {
+.c4:hover {
   background-color: #2650BF;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c3:hover span {
+.c4:hover span {
   color: #FFFFFF;
 }
 
-.c3:hover svg {
+.c4:hover svg {
   fill: #FFFFFF;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1366,18 +1378,18 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   color: #282823;
 }
 
-.c9:hover {
+.c10:hover {
   background-color: #2650BF;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c9:hover span {
+.c10:hover span {
   color: #FFFFFF;
 }
 
-.c9:hover svg {
+.c10:hover svg {
   fill: #FFFFFF;
 }
 
@@ -1393,17 +1405,17 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
     >
       <button
         aria-label="Go to previous page"
-        className="NormalizedButton__Button-sc-ey7f5x-0 c2 c3"
+        className="c2 c3 c4"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <svg
               aria-hidden="true"
-              className="c5"
+              className="c6"
               focusable="false"
               height={16}
               preserveAspectRatio="xMidYMid meet"
@@ -1420,23 +1432,23 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
       </button>
     </div>
     <ul
-      className="c6 c7"
+      className="c7 c8"
     >
       <li
-        className="c8"
+        className="c9"
       >
         <button
           aria-label="Go to Page 1"
-          className="NormalizedButton__Button-sc-ey7f5x-0 c2 c9"
+          className="c2 c3 c10"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               <span
-                className="c10"
+                className="Typography__Span-sc-10mju41-0 c11"
               >
                 1
               </span>
@@ -1445,29 +1457,29 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
         </button>
       </li>
       <li
-        className="c11"
+        className="c12"
       >
         <span
-          className="c10"
+          className="Typography__Span-sc-10mju41-0 c11"
         >
           ...
         </span>
       </li>
       <li
-        className="c8"
+        className="c9"
       >
         <button
           aria-label="Go to Page 4"
-          className="NormalizedButton__Button-sc-ey7f5x-0 c2 c9"
+          className="c2 c3 c10"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               <span
-                className="c10"
+                className="Typography__Span-sc-10mju41-0 c11"
               >
                 4
               </span>
@@ -1476,33 +1488,33 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
         </button>
       </li>
       <li
-        className="c8"
+        className="c9"
       >
         <div
-          className="c0 c12"
+          className="c0 c13"
         >
           <span
-            className="c13"
+            className="Typography__Span-sc-10mju41-0 c14"
           >
             5
           </span>
         </div>
       </li>
       <li
-        className="c8"
+        className="c9"
       >
         <button
           aria-label="Go to Page 6"
-          className="NormalizedButton__Button-sc-ey7f5x-0 c2 c9"
+          className="c2 c3 c10"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               <span
-                className="c10"
+                className="Typography__Span-sc-10mju41-0 c11"
               >
                 6
               </span>
@@ -1511,29 +1523,29 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
         </button>
       </li>
       <li
-        className="c11"
+        className="c12"
       >
         <span
-          className="c10"
+          className="Typography__Span-sc-10mju41-0 c11"
         >
           ...
         </span>
       </li>
       <li
-        className="c8"
+        className="c9"
       >
         <button
           aria-label="Go to Page 10"
-          className="NormalizedButton__Button-sc-ey7f5x-0 c2 c9"
+          className="c2 c3 c10"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               <span
-                className="c10"
+                className="Typography__Span-sc-10mju41-0 c11"
               >
                 10
               </span>
@@ -1547,17 +1559,17 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
     >
       <button
         aria-label="Go to next page"
-        className="NormalizedButton__Button-sc-ey7f5x-0 c2 c3"
+        className="c2 c3 c4"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c4"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <svg
               aria-hidden="true"
-              className="c5"
+              className="c6"
               focusable="false"
               height={16}
               preserveAspectRatio="xMidYMid meet"
@@ -1590,7 +1602,7 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   box-sizing: border-box;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1602,7 +1614,7 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   align-items: center;
 }
 
-.c13 {
+.c14 {
   color: inherit;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1615,39 +1627,6 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   vertical-align: sub;
 }
 
-.c1 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c6 {
   font-family: inherit;
   font-size: 100%;
@@ -1655,27 +1634,6 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #336BFF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c6,
@@ -1700,7 +1658,64 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c6::before {
+.c1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c7 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c7::before {
   content: '';
   display: block;
   position: absolute;
@@ -1711,11 +1726,11 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   height: calc(100% - 4px);
 }
 
-.c6:hover {
+.c7:hover {
   background-color: #2650BF;
 }
 
-.c6:active {
+.c7:active {
   background-color: #1F4099;
 }
 
@@ -1733,7 +1748,7 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   width: 40px;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1764,7 +1779,7 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   width: 240px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1785,22 +1800,22 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   color: #282823;
 }
 
-.c7:hover {
+.c8:hover {
   background-color: #2650BF;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7:hover span {
+.c8:hover span {
   color: #FFFFFF;
 }
 
-.c7:hover svg {
+.c8:hover svg {
   fill: #FFFFFF;
 }
 
-.c12 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1823,18 +1838,18 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   border: 1px solid #BDBDBD;
 }
 
-.c12:hover {
+.c13:hover {
   background-color: #2650BF;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c12:hover span {
+.c13:hover span {
   color: #FFFFFF;
 }
 
-.c12:hover svg {
+.c13:hover svg {
   fill: #FFFFFF;
 }
 
@@ -1855,7 +1870,7 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
           className="c0 c4"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             1
           </span>
@@ -1866,16 +1881,16 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
       >
         <button
           aria-label="Go to Page 2"
-          className="NormalizedButton__Button-sc-ey7f5x-0 c6 c7"
+          className="c6 c7 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <span
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 c10"
               >
                 2
               </span>
@@ -1888,16 +1903,16 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
       >
         <button
           aria-label="Go to Page 3"
-          className="NormalizedButton__Button-sc-ey7f5x-0 c6 c7"
+          className="c6 c7 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <span
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 c10"
               >
                 3
               </span>
@@ -1906,10 +1921,10 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
         </button>
       </li>
       <li
-        className="c10"
+        className="c11"
       >
         <span
-          className="c9"
+          className="Typography__Span-sc-10mju41-0 c10"
         >
           ...
         </span>
@@ -1919,16 +1934,16 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
       >
         <button
           aria-label="Go to Page 10"
-          className="NormalizedButton__Button-sc-ey7f5x-0 c6 c7"
+          className="c6 c7 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <span
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 c10"
               >
                 10
               </span>
@@ -1938,21 +1953,21 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
       </li>
     </ul>
     <div
-      className="c11"
+      className="c12"
     >
       <button
         aria-label="Go to next page"
-        className="NormalizedButton__Button-sc-ey7f5x-0 c6 c12"
+        className="c6 c7 c13"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c8"
+            className="Typography__Span-sc-10mju41-0 c9"
           >
             <svg
               aria-hidden="true"
-              className="c13"
+              className="c14"
               focusable="false"
               height={16}
               preserveAspectRatio="xMidYMid meet"
@@ -2211,7 +2226,7 @@ exports[`Storyshots Molecules / Pagination / Large Links Pagination 1`] = `
           onClick={[Function]}
         >
           <span
-            className="c9"
+            className="Typography__Span-sc-10mju41-0 c9"
           >
             1
           </span>
@@ -2221,7 +2236,7 @@ exports[`Storyshots Molecules / Pagination / Large Links Pagination 1`] = `
         className="c10"
       >
         <span
-          className="c9"
+          className="Typography__Span-sc-10mju41-0 c9"
         >
           ...
         </span>
@@ -2236,7 +2251,7 @@ exports[`Storyshots Molecules / Pagination / Large Links Pagination 1`] = `
           onClick={[Function]}
         >
           <span
-            className="c9"
+            className="Typography__Span-sc-10mju41-0 c9"
           >
             4
           </span>
@@ -2249,7 +2264,7 @@ exports[`Storyshots Molecules / Pagination / Large Links Pagination 1`] = `
           className="c0 c11"
         >
           <span
-            className="c12"
+            className="Typography__Span-sc-10mju41-0 c12"
           >
             5
           </span>
@@ -2265,7 +2280,7 @@ exports[`Storyshots Molecules / Pagination / Large Links Pagination 1`] = `
           onClick={[Function]}
         >
           <span
-            className="c9"
+            className="Typography__Span-sc-10mju41-0 c9"
           >
             6
           </span>
@@ -2275,7 +2290,7 @@ exports[`Storyshots Molecules / Pagination / Large Links Pagination 1`] = `
         className="c10"
       >
         <span
-          className="c9"
+          className="Typography__Span-sc-10mju41-0 c9"
         >
           ...
         </span>
@@ -2290,7 +2305,7 @@ exports[`Storyshots Molecules / Pagination / Large Links Pagination 1`] = `
           onClick={[Function]}
         >
           <span
-            className="c9"
+            className="Typography__Span-sc-10mju41-0 c9"
           >
             10
           </span>

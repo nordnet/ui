@@ -135,7 +135,7 @@ exports[`Storyshots Molecules / InfoBar Default usage 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="PageWrapper__Outer-sc-1ur2ylx-0 c1"
   >
     <div
       className="c2"
@@ -174,7 +174,7 @@ exports[`Storyshots Molecules / InfoBar Default usage 1`] = `
             className="c8"
           >
             <span
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               InfoBar should be used on top of the pages to show Marketing or Customer Support communication messages. Content of the InfoBar is just rendered 
               <code>
@@ -430,7 +430,7 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
   </code>
   <br />
   <div
-    className="c1"
+    className="PageWrapper__Outer-sc-1ur2ylx-0 c1"
   >
     <div
       className="c2"
@@ -469,7 +469,7 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
             className="c8"
           >
             <span
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               We’re currently working on the new main menu. Links marked with arrow icon will redirect you to the previous website experience. 
               <a
@@ -491,7 +491,7 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
   </code>
   <br />
   <div
-    className="c1"
+    className="PageWrapper__Outer-sc-1ur2ylx-0 c1"
   >
     <div
       className="c2"
@@ -530,7 +530,7 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
             className="c8"
           >
             <span
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               We’re currently working on the new main menu. Links marked with arrow icon will redirect you to the previous website experience. 
               <a
@@ -552,7 +552,7 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
   </code>
   <br />
   <div
-    className="c10"
+    className="PageWrapper__Outer-sc-1ur2ylx-0 c10"
   >
     <div
       className="c2"
@@ -591,7 +591,7 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
             className="c8"
           >
             <span
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               We’re currently working on the new main menu. Links marked with arrow icon will redirect you to the previous website experience. 
               <a
@@ -613,7 +613,7 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
   </code>
   <br />
   <div
-    className="c12"
+    className="PageWrapper__Outer-sc-1ur2ylx-0 c12"
   >
     <div
       className="c2"
@@ -652,7 +652,7 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
             className="c8"
           >
             <span
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               The US market is currently down, we are fixing it right now. It will soon be back and running. 
               <a
@@ -674,7 +674,7 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
   </code>
   <br />
   <div
-    className="c14"
+    className="PageWrapper__Outer-sc-1ur2ylx-0 c14"
   >
     <div
       className="c2"
@@ -713,7 +713,7 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
             className="c8"
           >
             <span
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               We have fixed the US market issue. It is now back to service. 
               <a
@@ -884,7 +884,7 @@ exports[`Storyshots Molecules / InfoBar onClose prop demo 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="PageWrapper__Outer-sc-1ur2ylx-0 c1"
   >
     <div
       className="c2"
@@ -923,7 +923,7 @@ exports[`Storyshots Molecules / InfoBar onClose prop demo 1`] = `
             className="c8"
           >
             <span
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               Without onClose prop InfoBar cannot be dismissed
             </span>
@@ -936,7 +936,7 @@ exports[`Storyshots Molecules / InfoBar onClose prop demo 1`] = `
   <br />
   <br />
   <div
-    className="c1"
+    className="PageWrapper__Outer-sc-1ur2ylx-0 c1"
   >
     <div
       className="c2"
@@ -975,7 +975,7 @@ exports[`Storyshots Molecules / InfoBar onClose prop demo 1`] = `
             className="c8"
           >
             <span
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               With onClose prop InfoBar can be dismissed, but ParentComponent is in charge to react and actually hide the InfoBar.
             </span>

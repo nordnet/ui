@@ -149,10 +149,10 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsed initially 1`] = `
         className="c3"
       >
         <div
-          className="c4 "
+          className="c4 CollapsibleCard__StyledFlexboxItem-sc-xk1kem-4"
         >
           <h2
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             Collapsed initially
           </h2>
@@ -184,7 +184,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsed initially 1`] = `
     onTransitionEnd={[Function]}
   >
     <p
-      className="c9 c10"
+      className="c9 Typography__Span-sc-10mju41-0 c10"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
@@ -363,7 +363,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible With Custom Full Wid
           className="c4 c5"
         >
           <h2
-            className="c6"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c7"
@@ -408,7 +408,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible With Custom Full Wid
     onTransitionEnd={[Function]}
   >
     <p
-      className="c11 c12"
+      className="c11 Typography__Span-sc-10mju41-0 c12"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
@@ -565,10 +565,10 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible card with lots of to
         className="c3"
       >
         <div
-          className="c4 "
+          className="c4 CollapsibleCard__StyledFlexboxItem-sc-xk1kem-4"
         >
           <h2
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             Collapsible card with lots of top and bottom padding
           </h2>
@@ -600,7 +600,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible card with lots of to
     onTransitionEnd={[Function]}
   >
     <p
-      className="c9 c10"
+      className="c9 Typography__Span-sc-10mju41-0 c10"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
@@ -757,10 +757,10 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible card with no title r
         className="c3"
       >
         <div
-          className="c4 "
+          className="c4 CollapsibleCard__StyledFlexboxItem-sc-xk1kem-4"
         >
           <h2
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             Collapsible card with no title row padding
           </h2>
@@ -792,7 +792,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible card with no title r
     onTransitionEnd={[Function]}
   >
     <p
-      className="c9 c10"
+      className="c9 Typography__Span-sc-10mju41-0 c10"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
@@ -949,10 +949,10 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible with custom componen
         className="c3"
       >
         <div
-          className="c4 "
+          className="c4 CollapsibleCard__StyledFlexboxItem-sc-xk1kem-4"
         >
           <h2
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             Custom title
           </h2>
@@ -984,7 +984,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible with custom componen
     onTransitionEnd={[Function]}
   >
     <p
-      className="c9 c10"
+      className="c9 Typography__Span-sc-10mju41-0 c10"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
@@ -1124,10 +1124,10 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible with custom expand e
         className="c3"
       >
         <div
-          className="c4 "
+          className="c4 CollapsibleCard__StyledFlexboxItem-sc-xk1kem-4"
         >
           <h2
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             Custom expand element (ReactNode)
           </h2>
@@ -1136,7 +1136,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible with custom expand e
           className="c4"
         >
           <span
-            className="c6"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             Toggle expand
           </span>
@@ -1151,7 +1151,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible with custom expand e
     onTransitionEnd={[Function]}
   >
     <p
-      className="c8 c9"
+      className="c8 Typography__Span-sc-10mju41-0 c9"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
@@ -1291,10 +1291,10 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible with custom expand e
         className="c3"
       >
         <div
-          className="c4 "
+          className="c4 CollapsibleCard__StyledFlexboxItem-sc-xk1kem-4"
         >
           <h2
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             Custom expand element (function)
           </h2>
@@ -1303,7 +1303,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible with custom expand e
           className="c4"
         >
           <span
-            className="c6"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             Close
           </span>
@@ -1318,7 +1318,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible with custom expand e
     onTransitionEnd={[Function]}
   >
     <p
-      className="c8 c9"
+      className="c8 Typography__Span-sc-10mju41-0 c9"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
@@ -1475,10 +1475,10 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible with onClick listene
         className="c3"
       >
         <div
-          className="c4 "
+          className="c4 CollapsibleCard__StyledFlexboxItem-sc-xk1kem-4"
         >
           <h2
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             I've been clicked 0 times
           </h2>
@@ -1510,7 +1510,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible with onClick listene
     onTransitionEnd={[Function]}
   >
     <p
-      className="c9 c10"
+      className="c9 Typography__Span-sc-10mju41-0 c10"
     >
       On mobile the onClick event should fire for onTouchStart and not onClick.
     </p>
@@ -1667,10 +1667,10 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible without indicator 1`
         className="c3"
       >
         <div
-          className="c4 "
+          className="c4 CollapsibleCard__StyledFlexboxItem-sc-xk1kem-4"
         >
           <h2
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             Collapsible without indicator
           </h2>
@@ -1702,7 +1702,7 @@ exports[`Storyshots Molecules / CollapsibleCard Collapsible without indicator 1`
     onTransitionEnd={[Function]}
   >
     <p
-      className="c9 c10"
+      className="c9 Typography__Span-sc-10mju41-0 c10"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
@@ -1859,10 +1859,10 @@ exports[`Storyshots Molecules / CollapsibleCard Default 1`] = `
         className="c3"
       >
         <div
-          className="c4 "
+          className="c4 CollapsibleCard__StyledFlexboxItem-sc-xk1kem-4"
         >
           <h2
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             Collapsible
           </h2>
@@ -1894,7 +1894,7 @@ exports[`Storyshots Molecules / CollapsibleCard Default 1`] = `
     onTransitionEnd={[Function]}
   >
     <p
-      className="c9 c10"
+      className="c9 Typography__Span-sc-10mju41-0 c10"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
@@ -1951,7 +1951,7 @@ exports[`Storyshots Molecules / CollapsibleCard With an action component that do
   box-sizing: border-box;
 }
 
-.c12 {
+.c13 {
   color: #282823;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1962,6 +1962,37 @@ exports[`Storyshots Molecules / CollapsibleCard With an action component that do
   flex-shrink: 0;
   display: inline-block;
   vertical-align: sub;
+}
+
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c8 {
@@ -1987,7 +2018,7 @@ exports[`Storyshots Molecules / CollapsibleCard With an action component that do
   line-height: 1.3333333333333333;
 }
 
-.c11 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1996,7 +2027,7 @@ exports[`Storyshots Molecules / CollapsibleCard With an action component that do
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2005,13 +2036,7 @@ exports[`Storyshots Molecules / CollapsibleCard With an action component that do
   line-height: 1.5;
 }
 
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
+.c11 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -2034,29 +2059,7 @@ exports[`Storyshots Molecules / CollapsibleCard With an action component that do
   cursor: pointer;
 }
 
-.c10,
-.c10[type='button'],
-.c10[type='reset'],
-.c10[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c10::-moz-focus-inner,
-.c10[type='button']::-moz-focus-inner,
-.c10[type='reset']::-moz-focus-inner,
-.c10[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c10:-moz-focusring,
-.c10[type='button']:-moz-focusring,
-.c10[type='reset']:-moz-focusring,
-.c10[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c13 {
+.c14 {
   overflow: hidden;
   will-change: height;
   height: auto;
@@ -2064,7 +2067,7 @@ exports[`Storyshots Molecules / CollapsibleCard With an action component that do
   transition: height 0.16s ease-out;
 }
 
-.c13[hidden] {
+.c14[hidden] {
   display: none;
 }
 
@@ -2109,7 +2112,7 @@ exports[`Storyshots Molecules / CollapsibleCard With an action component that do
   transition: transform 0.16s ease-out;
 }
 
-.c14 {
+.c15 {
   margin: 0;
 }
 
@@ -2139,10 +2142,10 @@ exports[`Storyshots Molecules / CollapsibleCard With an action component that do
           className="c5"
         >
           <div
-            className="c6 "
+            className="c6 CollapsibleCard__StyledFlexboxItem-sc-xk1kem-4"
           >
             <h2
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 c7"
             >
               Collapsible
             </h2>
@@ -2167,16 +2170,16 @@ exports[`Storyshots Molecules / CollapsibleCard With an action component that do
         </div>
       </button>
       <button
-        className="NormalizedButton__Button-sc-ey7f5x-0 c10"
+        className="c10 c11"
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c11"
+          className="Typography__Span-sc-10mju41-0 c12"
         >
           <svg
             aria-hidden="true"
-            className="c12"
+            className="c13"
             focusable="false"
             height={24}
             preserveAspectRatio="xMidYMid meet"
@@ -2201,13 +2204,13 @@ exports[`Storyshots Molecules / CollapsibleCard With an action component that do
     </div>
   </div>
   <div
-    className="c13"
+    className="c14"
     height={null}
     hidden={false}
     onTransitionEnd={[Function]}
   >
     <p
-      className="c14 c15"
+      className="c15 Typography__Span-sc-10mju41-0 c16"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
