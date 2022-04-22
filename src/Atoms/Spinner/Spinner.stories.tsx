@@ -1,5 +1,5 @@
 import React from 'react';
-import MD from 'react-markdown';
+import ReactMarkdown from 'react-markdown';
 import { Display } from '../../common/Display';
 
 import docs from './Spinner.md';
@@ -14,7 +14,7 @@ export default {
 
 export const documentation = () => (
   <Typography>
-    <MD>{docs}</MD>
+    <ReactMarkdown>{docs}</ReactMarkdown>
     <div>
       <Spinner id="defaultSpinner" />
     </div>
