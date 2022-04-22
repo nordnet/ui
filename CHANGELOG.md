@@ -1,3 +1,10 @@
+## [10.25.2](https://github.com/nordnet/ui/compare/v10.25.1...v10.25.2) (2022-04-22)
+
+
+### Bug Fixes
+
+* add colors for transfer info modal in monthly savings nordics ([612f32e](https://github.com/nordnet/ui/commit/612f32e))
+
 ## [10.25.1](https://github.com/nordnet/ui/compare/v10.25.0...v10.25.1) (2022-04-22)
 
 
