@@ -9,7 +9,7 @@ import { Props, ItemProps } from './AccordionItem.types';
 const TRANSITION_DURATION = 0.16;
 
 const Item = styled.div<ItemProps>`
-  outline: 1px ${(p) => (p.hasFocus ? p.theme.color.cta : 'none')};
+  outline: 1px ${(p) => (p.hasFocus ? `solid ${p.theme.color.cta}` : 'none')};
   background-color: ${(p) =>
     !p.disableBackgroundColor && p.hasFocus ? p.theme.color.background : 'transparent'};
   & + & {
