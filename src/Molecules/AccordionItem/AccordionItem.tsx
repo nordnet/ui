@@ -9,18 +9,16 @@ import { Props, ItemProps } from './AccordionItem.types';
 const TRANSITION_DURATION = 0.16;
 
 const Item = styled.div<ItemProps>`
-  ${({ theme, hasFocus, disableBackgroundColor, p, px, py, pt, pb, pl, pr }) => `
-    outline: 1px solid ${hasFocus ? theme.color.cta : 'none'};
-    background-color: ${
-      !disableBackgroundColor && hasFocus ? theme.color.background : 'transparent'
-    };
+  outline: 1px ${(p) => (p.hasFocus ? `solid ${p.theme.color.cta}` : 'none')};
+  background-color: ${(p) =>
+    !p.disableBackgroundColor && p.hasFocus ? p.theme.color.background : 'transparent'};
+  & + & {
+    border-top: 1px solid ${(p) => p.theme.color.divider};
+  }
 
-    padding: ${theme.spacing.unit(pt || py || p || 0)}px ${theme.spacing.unit(pr || px || p || 0)}px
-      ${theme.spacing.unit(pb || py || p || 0)}px ${theme.spacing.unit(pl || px || p || 0)}px;
-
-    & + & {
-      border-top: 1px solid ${theme.color.divider};
-    }
+  ${({ theme, p, px, py, pt, pb, pl, pr }) => `
+  padding: ${theme.spacing.unit(pt || py || p || 0)}px ${theme.spacing.unit(pr || px || p || 0)}px
+    ${theme.spacing.unit(pb || py || p || 0)}px ${theme.spacing.unit(pl || px || p || 0)}px;
   `}
 `;
 

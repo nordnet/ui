@@ -1635,7 +1635,7 @@ Array [
 }
 
 .c9 {
-  outline: 1px solid none;
+  outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
