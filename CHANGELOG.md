@@ -1,3 +1,13 @@
+## [10.25.3](https://github.com/nordnet/ui/compare/v10.25.2...v10.25.3) (2022-04-25)
+
+
+### Bug Fixes
+
+* bump story shot ([807cf8b](https://github.com/nordnet/ui/commit/807cf8b))
+* bump styled components ([95aa498](https://github.com/nordnet/ui/commit/95aa498))
+* update a few colors ([5f0d530](https://github.com/nordnet/ui/commit/5f0d530))
+* yarn and bump storyshots ([231c61b](https://github.com/nordnet/ui/commit/231c61b))
+
 ## [10.25.2](https://github.com/nordnet/ui/compare/v10.25.1...v10.25.2) (2022-04-22)
 
 
