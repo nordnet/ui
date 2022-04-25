@@ -679,6 +679,8 @@ export type ThemeColors = {
   monthlySavingsTransferTypeInactive: string;
   /** day select input inactive */
   daySelectInputTextInactive: string;
+  /** day select day active / hover */
+  daySelectActiveText: string;
   /** remove instrument added */
   removeInstrumentText: string;
   /** background for toaster pop up */
