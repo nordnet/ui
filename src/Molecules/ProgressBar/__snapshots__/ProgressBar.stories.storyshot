@@ -296,9 +296,18 @@ exports[`Storyshots Molecules / ProgressBar Custom Titles 1`] = `
 
 .c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
+  color: #282823;
   margin: 0;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -351,7 +360,7 @@ exports[`Storyshots Molecules / ProgressBar Custom Titles 1`] = `
   border-radius: 32px;
 }
 
-.c12 {
+.c13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -395,7 +404,7 @@ exports[`Storyshots Molecules / ProgressBar Custom Titles 1`] = `
   background-color: #336BFF;
 }
 
-.c11 {
+.c12 {
   width: 100%;
   height: 2px;
   background-color: #BCBCB6;
@@ -470,16 +479,16 @@ exports[`Storyshots Molecules / ProgressBar Custom Titles 1`] = `
       </span>
       <span
         aria-hidden={true}
-        className="Typography__Span-sc-10mju41-0 c5 c8"
+        className="Typography__Span-sc-10mju41-0 c11 c8"
       >
         Dewey
       </span>
     </span>
     <div
-      className="c11"
+      className="c12"
     />
     <span
-      className="c12 c4"
+      className="c13 c4"
       title="Louie - The green one"
     >
       <span
@@ -535,9 +544,18 @@ exports[`Storyshots Molecules / ProgressBar Default 1`] = `
 
 .c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
+  color: #282823;
   margin: 0;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -590,7 +608,7 @@ exports[`Storyshots Molecules / ProgressBar Default 1`] = `
   border-radius: 32px;
 }
 
-.c11 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -634,7 +652,7 @@ exports[`Storyshots Molecules / ProgressBar Default 1`] = `
   background-color: #336BFF;
 }
 
-.c10 {
+.c11 {
   width: 100%;
   height: 2px;
   background-color: #BCBCB6;
@@ -704,14 +722,14 @@ exports[`Storyshots Molecules / ProgressBar Default 1`] = `
     </span>
     <span
       aria-hidden={true}
-      className="Typography__Span-sc-10mju41-0 c4 c7"
+      className="Typography__Span-sc-10mju41-0 c10 c7"
     />
   </span>
   <div
-    className="c10"
+    className="c11"
   />
   <span
-    className="c11 c3"
+    className="c12 c3"
     title="undefined - step not done"
   >
     <span
@@ -785,9 +803,18 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
 
 .c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
+  color: #282823;
   margin: 0;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -840,7 +867,7 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
   border-radius: 32px;
 }
 
-.c14 {
+.c15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -890,7 +917,7 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
   background-color: #FF1900;
 }
 
-.c13 {
+.c14 {
   width: 100%;
   height: 2px;
   background-color: #BCBCB6;
@@ -1016,16 +1043,16 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="Typography__Span-sc-10mju41-0 c6 c9"
+          className="Typography__Span-sc-10mju41-0 c13 c9"
         >
           Failed step
         </span>
       </span>
       <div
-        className="c13"
+        className="c14"
       />
       <span
-        className="c14 c5"
+        className="c15 c5"
         title="Four - failure step"
       >
         <span
@@ -1088,9 +1115,18 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
 
 .c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
+  color: #282823;
   margin: 0;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -1143,7 +1179,7 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
   border-radius: 32px;
 }
 
-.c13 {
+.c14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1193,7 +1229,7 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
   background-color: #336BFF;
 }
 
-.c12 {
+.c13 {
   width: 100%;
   height: 2px;
   background-color: #BCBCB6;
@@ -1338,16 +1374,16 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
       </span>
       <span
         aria-hidden={true}
-        className="Typography__Span-sc-10mju41-0 c5 c8"
+        className="Typography__Span-sc-10mju41-0 c12 c8"
       >
         Sit
       </span>
     </span>
     <div
-      className="c12"
+      className="c13"
     />
     <span
-      className="c13 c4"
+      className="c14 c4"
       title="Amet - step not done"
     >
       <span
@@ -1364,10 +1400,10 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
       </span>
     </span>
     <div
-      className="c12"
+      className="c13"
     />
     <span
-      className="c13 c4"
+      className="c14 c4"
       title="Ego - step not done"
     >
       <span
@@ -1384,10 +1420,10 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
       </span>
     </span>
     <div
-      className="c12"
+      className="c13"
     />
     <span
-      className="c13 c4"
+      className="c14 c4"
       title="Sum - step not done"
     >
       <span
@@ -1441,7 +1477,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
   align-items: center;
 }
 
-.c12 {
+.c13 {
   color: #FFFFFF;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1462,9 +1498,18 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -1495,7 +1540,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
   border-radius: 32px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1519,7 +1564,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
   border-radius: 32px;
 }
 
-.c11 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1551,25 +1596,25 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
   position: relative;
 }
 
-.c7 {
+.c8 {
   display: none;
   text-align: center;
   white-space: nowrap;
 }
 
-.c8 {
+.c9 {
   width: 100%;
   height: 2px;
   background-color: #BCBCB6;
 }
 
-.c13 {
+.c14 {
   width: 100%;
   height: 2px;
   background-color: #336BFF;
 }
 
-.c14 {
+.c15 {
   width: 100%;
   height: 2px;
   background-color: #00D200;
@@ -1582,7 +1627,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
 }
 
 @media (min-width:976px) {
-  .c7 {
+  .c8 {
     display: block;
     position: absolute;
     top: 40px;
@@ -1612,16 +1657,16 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="Typography__Span-sc-10mju41-0 c6 c7"
+          className="Typography__Span-sc-10mju41-0 c7 c8"
         >
           One
         </span>
       </span>
       <div
-        className="c8"
+        className="c9"
       />
       <span
-        className="c9 c5"
+        className="c10 c5"
         title="Two - step not done"
       >
         <span
@@ -1632,16 +1677,16 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="Typography__Span-sc-10mju41-0 c10 c7"
+          className="Typography__Span-sc-10mju41-0 c11 c8"
         >
           Two
         </span>
       </span>
       <div
-        className="c8"
+        className="c9"
       />
       <span
-        className="c9 c5"
+        className="c10 c5"
         title="Three - step not done"
       >
         <span
@@ -1652,7 +1697,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="Typography__Span-sc-10mju41-0 c10 c7"
+          className="Typography__Span-sc-10mju41-0 c11 c8"
         >
           Three
         </span>
@@ -1664,7 +1709,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
       title="progress bar"
     >
       <span
-        className="c11 c5"
+        className="c12 c5"
         title="One - step done"
       >
         <span
@@ -1673,7 +1718,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="c12"
+            className="c13"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -1690,13 +1735,13 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="Typography__Span-sc-10mju41-0 c10 c7"
+          className="Typography__Span-sc-10mju41-0 c11 c8"
         >
           One
         </span>
       </span>
       <div
-        className="c13"
+        className="c14"
       />
       <span
         className="c4 c5"
@@ -1710,16 +1755,16 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="Typography__Span-sc-10mju41-0 c6 c7"
+          className="Typography__Span-sc-10mju41-0 c7 c8"
         >
           Two
         </span>
       </span>
       <div
-        className="c8"
+        className="c9"
       />
       <span
-        className="c9 c5"
+        className="c10 c5"
         title="Three - step not done"
       >
         <span
@@ -1730,7 +1775,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="Typography__Span-sc-10mju41-0 c10 c7"
+          className="Typography__Span-sc-10mju41-0 c11 c8"
         >
           Three
         </span>
@@ -1742,7 +1787,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
       title="progress bar"
     >
       <span
-        className="c11 c5"
+        className="c12 c5"
         title="One - step done"
       >
         <span
@@ -1751,7 +1796,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="c12"
+            className="c13"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -1768,16 +1813,16 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="Typography__Span-sc-10mju41-0 c10 c7"
+          className="Typography__Span-sc-10mju41-0 c11 c8"
         >
           One
         </span>
       </span>
       <div
-        className="c14"
+        className="c15"
       />
       <span
-        className="c11 c5"
+        className="c12 c5"
         title="Two - step done"
       >
         <span
@@ -1786,7 +1831,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="c12"
+            className="c13"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -1803,13 +1848,13 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="Typography__Span-sc-10mju41-0 c10 c7"
+          className="Typography__Span-sc-10mju41-0 c11 c8"
         >
           Two
         </span>
       </span>
       <div
-        className="c13"
+        className="c14"
       />
       <span
         className="c4 c5"
@@ -1823,7 +1868,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="Typography__Span-sc-10mju41-0 c6 c7"
+          className="Typography__Span-sc-10mju41-0 c7 c8"
         >
           Three
         </span>
@@ -1890,9 +1935,18 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
 
 .c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
+  color: #282823;
   margin: 0;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -1945,7 +1999,7 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
   border-radius: 32px;
 }
 
-.c14 {
+.c15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1995,7 +2049,7 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
   background-color: #FFCF00;
 }
 
-.c13 {
+.c14 {
   width: 100%;
   height: 2px;
   background-color: #BCBCB6;
@@ -2127,16 +2181,16 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
         </span>
         <span
           aria-hidden={true}
-          className="Typography__Span-sc-10mju41-0 c6 c9"
+          className="Typography__Span-sc-10mju41-0 c13 c9"
         >
           Step with warning
         </span>
       </span>
       <div
-        className="c13"
+        className="c14"
       />
       <span
-        className="c14 c5"
+        className="c15 c5"
         title="Four - warning step"
       >
         <span
@@ -2193,9 +2247,18 @@ exports[`Storyshots Molecules / ProgressBar With Labels 1`] = `
 
 .c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
+  color: #282823;
   margin: 0;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -2248,7 +2311,7 @@ exports[`Storyshots Molecules / ProgressBar With Labels 1`] = `
   border-radius: 32px;
 }
 
-.c11 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2292,7 +2355,7 @@ exports[`Storyshots Molecules / ProgressBar With Labels 1`] = `
   background-color: #336BFF;
 }
 
-.c10 {
+.c11 {
   width: 100%;
   height: 2px;
   background-color: #BCBCB6;
@@ -2364,16 +2427,16 @@ exports[`Storyshots Molecules / ProgressBar With Labels 1`] = `
     </span>
     <span
       aria-hidden={true}
-      className="Typography__Span-sc-10mju41-0 c4 c7"
+      className="Typography__Span-sc-10mju41-0 c10 c7"
     >
       Dolor sit amet
     </span>
   </span>
   <div
-    className="c10"
+    className="c11"
   />
   <span
-    className="c11 c3"
+    className="c12 c3"
     title="Foo bar - step not done"
   >
     <span
