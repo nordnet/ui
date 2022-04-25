@@ -105,7 +105,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Attention16
       </span>
@@ -146,7 +146,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Clock16
       </span>
@@ -182,7 +182,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ClockFill16
       </span>
@@ -214,7 +214,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Comment16
       </span>
@@ -246,7 +246,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Dislike16
       </span>
@@ -278,7 +278,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         DislikeFill16
       </span>
@@ -312,7 +312,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Error16
       </span>
@@ -350,7 +350,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ErrorFill16
       </span>
@@ -382,7 +382,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ExclamationMark16
       </span>
@@ -414,7 +414,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Flag16
       </span>
@@ -446,7 +446,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         FlagFill16
       </span>
@@ -476,7 +476,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Help16
       </span>
@@ -512,7 +512,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         HelpFill16
       </span>
@@ -544,7 +544,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Information16
       </span>
@@ -580,7 +580,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         InformationFill16
       </span>
@@ -612,7 +612,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         InformationMark16
       </span>
@@ -644,7 +644,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Like16
       </span>
@@ -676,7 +676,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         LikeFill16
       </span>
@@ -710,7 +710,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Warning16
       </span>
@@ -746,7 +746,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         WarningFill16
       </span>
@@ -778,7 +778,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ViewCompact16
       </span>
@@ -810,7 +810,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ViewDefault16
       </span>
@@ -842,7 +842,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ViewLarge16
       </span>
@@ -947,7 +947,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Article24
       </span>
@@ -994,7 +994,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Blocked24
       </span>
@@ -1026,7 +1026,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Clock24
       </span>
@@ -1062,7 +1062,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ClockFill24
       </span>
@@ -1094,7 +1094,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Comment24
       </span>
@@ -1134,7 +1134,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Dislike24
       </span>
@@ -1166,7 +1166,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         DislikeFill24
       </span>
@@ -1200,7 +1200,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Error24
       </span>
@@ -1238,7 +1238,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ErrorFill24
       </span>
@@ -1270,7 +1270,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ExclamationMark24
       </span>
@@ -1302,7 +1302,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Facebook24
       </span>
@@ -1332,7 +1332,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Faq24
       </span>
@@ -1368,7 +1368,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Feedback24
       </span>
@@ -1404,7 +1404,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Flag24
       </span>
@@ -1436,7 +1436,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Help24
       </span>
@@ -1472,7 +1472,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         HelpFill24
       </span>
@@ -1504,7 +1504,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Information24
       </span>
@@ -1540,7 +1540,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         InformationFill24
       </span>
@@ -1572,7 +1572,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         InformationMark24
       </span>
@@ -1604,7 +1604,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Instagram24
       </span>
@@ -1634,7 +1634,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Language24
       </span>
@@ -1672,7 +1672,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Lightbulb24
       </span>
@@ -1706,7 +1706,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Like24
       </span>
@@ -1738,7 +1738,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         LikeFill24
       </span>
@@ -1772,7 +1772,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Mail24
       </span>
@@ -1808,7 +1808,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Notification24
       </span>
@@ -1842,7 +1842,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Phone24
       </span>
@@ -1874,7 +1874,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Podcast24
       </span>
@@ -1910,7 +1910,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Support24
       </span>
@@ -1942,7 +1942,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Twitter24
       </span>
@@ -1972,7 +1972,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Video24
       </span>
@@ -2008,7 +2008,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Warning24
       </span>
@@ -2048,7 +2048,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         WarningFill24
       </span>
@@ -2080,7 +2080,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         WhatsNew24
       </span>
@@ -2124,7 +2124,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Youtube24
       </span>
@@ -2227,7 +2227,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Attention32
       </span>
@@ -2259,7 +2259,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Clock32
       </span>
@@ -2295,7 +2295,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ClockFill32
       </span>
@@ -2327,7 +2327,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Error32
       </span>
@@ -2368,7 +2368,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ExclamationMark32
       </span>
@@ -2400,7 +2400,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Faq32
       </span>
@@ -2436,7 +2436,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         FaqFill32
       </span>
@@ -2468,7 +2468,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Information32
       </span>
@@ -2500,7 +2500,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         InformationMark32
       </span>
@@ -2532,7 +2532,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Lightbulb32
       </span>
@@ -2583,7 +2583,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Warning32
       </span>
@@ -2624,7 +2624,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         WarningFill32
       </span>

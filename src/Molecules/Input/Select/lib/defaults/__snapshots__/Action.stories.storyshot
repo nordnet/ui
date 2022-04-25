@@ -170,7 +170,7 @@ exports[`Storyshots Molecules / Input / Select / Action All States 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Normal
       </span>
@@ -180,7 +180,7 @@ exports[`Storyshots Molecules / Input / Select / Action All States 1`] = `
         className="c4 c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           <div
             className="c7"
@@ -215,7 +215,7 @@ exports[`Storyshots Molecules / Input / Select / Action All States 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Focused
       </span>
@@ -225,7 +225,7 @@ exports[`Storyshots Molecules / Input / Select / Action All States 1`] = `
         className="c4 c10"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           <div
             className="c7"
@@ -260,7 +260,7 @@ exports[`Storyshots Molecules / Input / Select / Action All States 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Disabled
       </span>
@@ -271,7 +271,7 @@ exports[`Storyshots Molecules / Input / Select / Action All States 1`] = `
         disabled={true}
       >
         <span
-          className="c12"
+          className="Typography__Span-sc-10mju41-0 c12"
         >
           <div
             className="c7"
@@ -306,7 +306,7 @@ exports[`Storyshots Molecules / Input / Select / Action All States 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         No icon
       </span>
@@ -317,7 +317,7 @@ exports[`Storyshots Molecules / Input / Select / Action All States 1`] = `
         disabled={true}
       >
         <span
-          className="c12"
+          className="Typography__Span-sc-10mju41-0 c12"
         >
           <div
             className="c7"

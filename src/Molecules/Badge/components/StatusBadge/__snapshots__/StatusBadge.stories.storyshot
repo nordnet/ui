@@ -67,7 +67,7 @@ Array [
     className="c0"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       Default Status Badge
     </span>
@@ -205,7 +205,7 @@ Array [
     className="c0"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       All combinations
     </span>
@@ -236,12 +236,12 @@ Array [
           className="c6 c7"
         >
           <span
-            className="c8"
+            className="Typography__Span-sc-10mju41-0 c8"
           >
             NOTE
           </span>
           <span
-            className="c9"
+            className="Typography__Span-sc-10mju41-0 c9"
           >
             Triangle shape for warning variant yet to be implemented.
           </span>
