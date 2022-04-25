@@ -1,15 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / Button Configure a Button 1`] = `
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c0 {
   font-family: inherit;
   font-size: 100%;
@@ -17,27 +8,6 @@ exports[`Storyshots Molecules / Button Configure a Button 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #336BFF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c0,
@@ -62,7 +32,40 @@ exports[`Storyshots Molecules / Button Configure a Button 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c0::before {
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c1::before {
   content: '';
   display: block;
   position: absolute;
@@ -73,22 +76,22 @@ exports[`Storyshots Molecules / Button Configure a Button 1`] = `
   height: calc(100% - 4px);
 }
 
-.c0:hover {
+.c1:hover {
   background-color: #2650BF;
 }
 
-.c0:active {
+.c1:active {
   background-color: #1F4099;
 }
 
 <button
-  className="NormalizedButton__Button-sc-ey7f5x-0 c0"
+  className="c0 c1"
   onClick={[Function]}
   type="button"
 >
   <span>
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       Button
     </span>

@@ -25,7 +25,7 @@ Array [
 }
 
 <span
-    className="c0"
+    className="Typography__Span-sc-10mju41-0 c0"
   >
     <a
       className="c1"
@@ -58,7 +58,7 @@ Array [
 }
 
 <span
-    className="c0"
+    className="Typography__Span-sc-10mju41-0 c0"
   >
     <a
       className="c1"
@@ -95,7 +95,7 @@ exports[`Storyshots Molecules / Link External link with its default values 1`] =
 }
 
 <span
-  className="c0"
+  className="Typography__Span-sc-10mju41-0 c0"
 >
   <a
     className="c1"
@@ -133,7 +133,7 @@ exports[`Storyshots Molecules / Link External link with rel and target overriden
 }
 
 <span
-  className="c0"
+  className="Typography__Span-sc-10mju41-0 c0"
 >
   <a
     className="c1"
@@ -171,7 +171,7 @@ exports[`Storyshots Molecules / Link Full server redirect link with its default 
 }
 
 <span
-  className="c0"
+  className="Typography__Span-sc-10mju41-0 c0"
 >
   <a
     className="c1"
@@ -314,14 +314,14 @@ exports[`Storyshots Molecules / Link With color prop 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Black
       </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         <a
           className="c4"
@@ -343,14 +343,14 @@ exports[`Storyshots Molecules / Link With color prop 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Blue
       </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         <a
           className="c5"
@@ -372,7 +372,7 @@ exports[`Storyshots Molecules / Link With color prop 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Inherit
       </span>
@@ -382,7 +382,7 @@ exports[`Storyshots Molecules / Link With color prop 1`] = `
         className="c6"
       >
         <span
-          className="c7"
+          className="Typography__Span-sc-10mju41-0 c7"
         >
           <a
             className="c8"
@@ -401,15 +401,6 @@ exports[`Storyshots Molecules / Link With color prop 1`] = `
 `;
 
 exports[`Storyshots Molecules / Link With disabled prop results in a disabled button looking like a link 1`] = `
-.c0 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c1 {
   font-family: inherit;
   font-size: 100%;
@@ -417,15 +408,6 @@ exports[`Storyshots Molecules / Link With disabled prop results in a disabled bu
   margin: 0;
   overflow: visible;
   text-transform: none;
-  display: inline;
-  padding: 0;
-  color: #A0A09B;
-  border: none;
-  background: transparent;
-  overflow: visible;
-  -webkit-appearance: none !important;
-  cursor: not-allowed;
-  font-weight: inherit;
 }
 
 .c1,
@@ -450,16 +432,37 @@ exports[`Storyshots Molecules / Link With disabled prop results in a disabled bu
   outline: 1px dotted ButtonText;
 }
 
-.c1:hover {
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  display: inline;
+  padding: 0;
+  color: #A0A09B;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: not-allowed;
+  font-weight: inherit;
+}
+
+.c2:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 <span
-  className="c0"
+  className="Typography__Span-sc-10mju41-0 c0"
 >
   <button
-    className="NormalizedButton__Button-sc-ey7f5x-0 c1"
+    className="c1 c2"
     disabled={true}
     onClick={[Function]}
     type="button"
@@ -470,28 +473,6 @@ exports[`Storyshots Molecules / Link With disabled prop results in a disabled bu
 `;
 
 exports[`Storyshots Molecules / Link With display prop 1`] = `
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c4 {
-  display: block;
-  padding: 0;
-  color: #336BFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c4:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
 .c5 {
   font-family: inherit;
   font-size: 100%;
@@ -499,15 +480,6 @@ exports[`Storyshots Molecules / Link With display prop 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  display: block;
-  padding: 0;
-  color: #336BFF;
-  border: none;
-  background: transparent;
-  overflow: visible;
-  -webkit-appearance: none !important;
-  cursor: pointer;
-  font-weight: inherit;
 }
 
 .c5,
@@ -532,7 +504,41 @@ exports[`Storyshots Molecules / Link With display prop 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c5:hover {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  display: block;
+  padding: 0;
+  color: #336BFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c6 {
+  display: block;
+  padding: 0;
+  color: #336BFF;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c6:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -606,14 +612,14 @@ exports[`Storyshots Molecules / Link With display prop 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Link
       </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         <a
           className="c4"
@@ -635,17 +641,17 @@ exports[`Storyshots Molecules / Link With display prop 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Button
       </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         <button
-          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
+          className="c5 c6"
           onClick={[Function]}
           type="button"
         >
@@ -682,7 +688,7 @@ Array [
 }
 
 <span
-    className="c0"
+    className="Typography__Span-sc-10mju41-0 c0"
   >
     <a
       className="c1"
@@ -715,7 +721,7 @@ Array [
 }
 
 <span
-    className="c0"
+    className="Typography__Span-sc-10mju41-0 c0"
   >
     <a
       className="c1"
@@ -729,28 +735,6 @@ Array [
 `;
 
 exports[`Storyshots Molecules / Link With underline 1`] = `
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c4 {
-  display: inline;
-  padding: 0;
-  color: #336BFF;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c4:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
 .c5 {
   font-family: inherit;
   font-size: 100%;
@@ -758,17 +742,6 @@ exports[`Storyshots Molecules / Link With underline 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  display: inline;
-  padding: 0;
-  color: #336BFF;
-  border: none;
-  background: transparent;
-  overflow: visible;
-  -webkit-appearance: none !important;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  cursor: pointer;
-  font-weight: inherit;
 }
 
 .c5,
@@ -793,7 +766,43 @@ exports[`Storyshots Molecules / Link With underline 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c5:hover {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  display: inline;
+  padding: 0;
+  color: #336BFF;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c4:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c6 {
+  display: inline;
+  padding: 0;
+  color: #336BFF;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c6:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -867,14 +876,14 @@ exports[`Storyshots Molecules / Link With underline 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Link
       </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         <a
           className="c4"
@@ -896,17 +905,17 @@ exports[`Storyshots Molecules / Link With underline 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Button
       </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         <button
-          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
+          className="c5 c6"
           onClick={[Function]}
           type="button"
         >
@@ -919,15 +928,6 @@ exports[`Storyshots Molecules / Link With underline 1`] = `
 `;
 
 exports[`Storyshots Molecules / Link Without to prop results in a button looking like a link 1`] = `
-.c0 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c1 {
   font-family: inherit;
   font-size: 100%;
@@ -935,15 +935,6 @@ exports[`Storyshots Molecules / Link Without to prop results in a button looking
   margin: 0;
   overflow: visible;
   text-transform: none;
-  display: inline;
-  padding: 0;
-  color: #336BFF;
-  border: none;
-  background: transparent;
-  overflow: visible;
-  -webkit-appearance: none !important;
-  cursor: pointer;
-  font-weight: inherit;
 }
 
 .c1,
@@ -968,16 +959,37 @@ exports[`Storyshots Molecules / Link Without to prop results in a button looking
   outline: 1px dotted ButtonText;
 }
 
-.c1:hover {
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  display: inline;
+  padding: 0;
+  color: #336BFF;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c2:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 <span
-  className="c0"
+  className="Typography__Span-sc-10mju41-0 c0"
 >
   <button
-    className="NormalizedButton__Button-sc-ey7f5x-0 c1"
+    className="c1 c2"
     onClick={[Function]}
     type="button"
   >

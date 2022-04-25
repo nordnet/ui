@@ -2595,7 +2595,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Account64
       </span>
@@ -2636,7 +2636,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Archive48
       </span>
@@ -2681,7 +2681,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         ArrowDown48
       </span>
@@ -2720,7 +2720,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         ArrowLeft48
       </span>
@@ -2759,7 +2759,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         ArrowRight48
       </span>
@@ -2798,7 +2798,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         ArrowUp48
       </span>
@@ -2837,7 +2837,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Bank64
       </span>
@@ -2878,7 +2878,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Blog64
       </span>
@@ -2919,7 +2919,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Book64
       </span>
@@ -2992,7 +2992,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Bug48
       </span>
@@ -3033,7 +3033,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Export48
       </span>
@@ -3076,7 +3076,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Fee64
       </span>
@@ -3139,7 +3139,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Fund64
       </span>
@@ -3194,7 +3194,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Gold64
       </span>
@@ -3247,7 +3247,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Guidance64
       </span>
@@ -3288,7 +3288,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Import48
       </span>
@@ -3331,7 +3331,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Inbox48
       </span>
@@ -3384,7 +3384,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Information48
       </span>
@@ -3433,7 +3433,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Launch48
       </span>
@@ -3480,7 +3480,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Lightbulb64
       </span>
@@ -3557,7 +3557,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Mail48
       </span>
@@ -3598,7 +3598,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Money64
       </span>
@@ -3651,7 +3651,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         MoneyDeposit64
       </span>
@@ -3692,7 +3692,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         MoneyWithdraw64
       </span>
@@ -3733,7 +3733,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         MonthlySavings48
       </span>
@@ -3774,7 +3774,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         MonthlySavings64
       </span>
@@ -3815,7 +3815,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         News64
       </span>
@@ -3856,7 +3856,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Orders48
       </span>
@@ -3907,7 +3907,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Outbox48
       </span>
@@ -3948,7 +3948,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         PriceAlert48
       </span>
@@ -3993,7 +3993,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Refresh48
       </span>
@@ -4032,7 +4032,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         RiskHigh64
       </span>
@@ -4077,7 +4077,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         RiskLow64
       </span>
@@ -4122,7 +4122,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         RiskMedium64
       </span>
@@ -4167,7 +4167,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Search48
       </span>
@@ -4208,7 +4208,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Security64
       </span>
@@ -4253,7 +4253,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         StatusError64
       </span>
@@ -4302,7 +4302,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         StatusFail64
       </span>
@@ -4351,7 +4351,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         StatusInformation64
       </span>
@@ -4396,7 +4396,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         StatusSuccess64
       </span>
@@ -4441,7 +4441,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         StatusWarning64
       </span>
@@ -4490,7 +4490,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Stock64
       </span>
@@ -4529,7 +4529,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Tax64
       </span>
@@ -4594,7 +4594,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         TransferDeposit64
       </span>
@@ -4638,7 +4638,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         TransferInternal64
       </span>
@@ -4793,7 +4793,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         TransferWithdraw64
       </span>
@@ -4907,7 +4907,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         UrgentMail64
       </span>
@@ -4962,7 +4962,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         UrgentMailFill64
       </span>
@@ -5009,7 +5009,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Watchlist48
       </span>
@@ -5086,7 +5086,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         NotFoundError240
       </span>
@@ -5194,7 +5194,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Shareville240
       </span>
@@ -5533,7 +5533,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Archive48
       </span>
@@ -5566,7 +5566,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ArrowDown48
       </span>
@@ -5596,7 +5596,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ArrowLeft48
       </span>
@@ -5626,7 +5626,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ArrowRight48
       </span>
@@ -5656,7 +5656,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ArrowUp48
       </span>
@@ -5686,7 +5686,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Bug48
       </span>
@@ -5718,7 +5718,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Export48
       </span>
@@ -5752,7 +5752,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Import48
       </span>
@@ -5786,7 +5786,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Inbox48
       </span>
@@ -5830,7 +5830,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Information48
       </span>
@@ -5870,7 +5870,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Launch48
       </span>
@@ -5908,7 +5908,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Mail48
       </span>
@@ -5940,7 +5940,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         MonthlySavings48
       </span>
@@ -5972,7 +5972,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Orders48
       </span>
@@ -6014,7 +6014,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Outbox48
       </span>
@@ -6046,7 +6046,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         PriceAlert48
       </span>
@@ -6082,7 +6082,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Refresh48
       </span>
@@ -6112,7 +6112,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Search48
       </span>
@@ -6144,7 +6144,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Watchlist48
       </span>
@@ -6285,7 +6285,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Account64
       </span>
@@ -6314,7 +6314,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Bank64
       </span>
@@ -6346,7 +6346,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Blog64
       </span>
@@ -6378,7 +6378,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Book64
       </span>
@@ -6442,7 +6442,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Fee64
       </span>
@@ -6496,7 +6496,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Fund64
       </span>
@@ -6542,7 +6542,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Gold64
       </span>
@@ -6586,7 +6586,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Guidance64
       </span>
@@ -6618,7 +6618,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Lightbulb64
       </span>
@@ -6686,7 +6686,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Money64
       </span>
@@ -6730,7 +6730,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         MoneyDeposit64
       </span>
@@ -6762,7 +6762,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         MoneyWithdraw64
       </span>
@@ -6794,7 +6794,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         MonthlySavings64
       </span>
@@ -6826,7 +6826,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         News64
       </span>
@@ -6858,7 +6858,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         RiskHigh64
       </span>
@@ -6894,7 +6894,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         RiskLow64
       </span>
@@ -6930,7 +6930,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         RiskMedium64
       </span>
@@ -6966,7 +6966,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Security64
       </span>
@@ -7002,7 +7002,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         StatusError64
       </span>
@@ -7042,7 +7042,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         StatusFail64
       </span>
@@ -7082,7 +7082,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         StatusInformation64
       </span>
@@ -7118,7 +7118,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         StatusSuccess64
       </span>
@@ -7154,7 +7154,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         StatusWarning64
       </span>
@@ -7194,7 +7194,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Stock64
       </span>
@@ -7224,7 +7224,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Tax64
       </span>
@@ -7280,7 +7280,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         TransferDeposit64
       </span>
@@ -7315,7 +7315,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         TransferInternal64
       </span>
@@ -7461,7 +7461,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         TransferWithdraw64
       </span>
@@ -7566,7 +7566,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         UrgentMail64
       </span>
@@ -7612,7 +7612,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         UrgentMailFill64
       </span>
@@ -7723,7 +7723,7 @@ exports[`Storyshots Atoms / Illustration Size / 240px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         NotFoundError240
       </span>
@@ -7819,7 +7819,7 @@ exports[`Storyshots Atoms / Illustration Size / 240px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Shareville240
       </span>

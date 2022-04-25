@@ -304,7 +304,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
     className="c1"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       Size s
     </span>
@@ -321,7 +321,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           3 badges
         </span>
@@ -337,7 +337,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 KF
               </span>
@@ -350,7 +350,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 AF
               </span>
@@ -363,7 +363,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -380,7 +380,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           3 badges, with truncation
         </span>
@@ -396,7 +396,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 KF
               </span>
@@ -409,7 +409,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 AF
               </span>
@@ -422,7 +422,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 +1
               </span>
@@ -439,7 +439,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           3 badges, with more truncation
         </span>
@@ -455,7 +455,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 KF
               </span>
@@ -468,7 +468,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 AF
               </span>
@@ -481,7 +481,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 +3
               </span>
@@ -498,7 +498,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           10 badges
         </span>
@@ -514,7 +514,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 KF
               </span>
@@ -527,7 +527,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 AF
               </span>
@@ -540,7 +540,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -553,7 +553,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -566,7 +566,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -579,7 +579,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 KF
               </span>
@@ -592,7 +592,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 AF
               </span>
@@ -605,7 +605,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -618,7 +618,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -631,7 +631,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -648,7 +648,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           1 badge
         </span>
@@ -664,7 +664,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 TJP
               </span>
@@ -681,7 +681,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
     className="c1"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       Size m
     </span>
@@ -698,7 +698,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           3 badges
         </span>
@@ -714,7 +714,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 KF
               </span>
@@ -727,7 +727,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 AF
               </span>
@@ -740,7 +740,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -757,7 +757,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           3 badges, with truncation
         </span>
@@ -773,7 +773,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 KF
               </span>
@@ -786,7 +786,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 AF
               </span>
@@ -799,7 +799,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 +1
               </span>
@@ -816,7 +816,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           3 badges, with more truncation
         </span>
@@ -832,7 +832,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 KF
               </span>
@@ -845,7 +845,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 AF
               </span>
@@ -858,7 +858,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 +3
               </span>
@@ -875,7 +875,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           10 badges
         </span>
@@ -891,7 +891,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 KF
               </span>
@@ -904,7 +904,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 AF
               </span>
@@ -917,7 +917,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -930,7 +930,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -943,7 +943,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -956,7 +956,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 KF
               </span>
@@ -969,7 +969,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 AF
               </span>
@@ -982,7 +982,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -995,7 +995,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -1008,7 +1008,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -1025,7 +1025,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           1 badge
         </span>
@@ -1041,7 +1041,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c14"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 TJP
               </span>
@@ -1058,7 +1058,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
     className="c1"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       Size l
     </span>
@@ -1075,7 +1075,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           3 badges
         </span>
@@ -1091,7 +1091,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 KF
               </span>
@@ -1104,7 +1104,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 AF
               </span>
@@ -1117,7 +1117,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 ISK
               </span>
@@ -1134,7 +1134,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           3 badges, with truncation
         </span>
@@ -1150,7 +1150,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 KF
               </span>
@@ -1163,7 +1163,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 AF
               </span>
@@ -1176,7 +1176,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 +1
               </span>
@@ -1193,7 +1193,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           3 badges, with more truncation
         </span>
@@ -1209,7 +1209,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 KF
               </span>
@@ -1222,7 +1222,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 AF
               </span>
@@ -1235,7 +1235,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 +3
               </span>
@@ -1252,7 +1252,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           10 badges
         </span>
@@ -1268,7 +1268,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 KF
               </span>
@@ -1281,7 +1281,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 AF
               </span>
@@ -1294,7 +1294,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 ISK
               </span>
@@ -1307,7 +1307,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 ISK
               </span>
@@ -1320,7 +1320,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 ISK
               </span>
@@ -1333,7 +1333,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 KF
               </span>
@@ -1346,7 +1346,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 AF
               </span>
@@ -1359,7 +1359,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 ISK
               </span>
@@ -1372,7 +1372,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 ISK
               </span>
@@ -1385,7 +1385,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 ISK
               </span>
@@ -1402,7 +1402,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           1 badge
         </span>
@@ -1418,7 +1418,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c16"
             >
               <span
-                className="c17 c11"
+                className="Typography__Span-sc-10mju41-0 c17 c11"
               >
                 TJP
               </span>
@@ -1435,7 +1435,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
     className="c1"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       custom size 40
     </span>
@@ -1452,7 +1452,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           3 badges
         </span>
@@ -1468,7 +1468,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 KF
               </span>
@@ -1481,7 +1481,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 AF
               </span>
@@ -1494,7 +1494,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -1511,7 +1511,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           3 badges, with truncation
         </span>
@@ -1527,7 +1527,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 KF
               </span>
@@ -1540,7 +1540,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 AF
               </span>
@@ -1553,7 +1553,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 +1
               </span>
@@ -1570,7 +1570,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           3 badges, with more truncation
         </span>
@@ -1586,7 +1586,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 KF
               </span>
@@ -1599,7 +1599,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 AF
               </span>
@@ -1612,7 +1612,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 +3
               </span>
@@ -1629,7 +1629,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           10 badges
         </span>
@@ -1645,7 +1645,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 KF
               </span>
@@ -1658,7 +1658,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 AF
               </span>
@@ -1671,7 +1671,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -1684,7 +1684,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -1697,7 +1697,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -1710,7 +1710,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 KF
               </span>
@@ -1723,7 +1723,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 AF
               </span>
@@ -1736,7 +1736,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -1749,7 +1749,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -1762,7 +1762,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 ISK
               </span>
@@ -1779,7 +1779,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           1 badge
         </span>
@@ -1795,7 +1795,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
               className="c19"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 TJP
               </span>
@@ -1817,12 +1817,12 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
   background-color: transparent;
 }
 
-.c23 {
+.c24 {
   margin-bottom: 32px;
   background-color: transparent;
 }
 
-.c17 {
+.c18 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1840,20 +1840,20 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
   margin-right: -4px;
 }
 
-.c17 > * {
+.c18 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c17 > *:not(:first-child) {
+.c18 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c18 {
+.c19 {
   box-sizing: border-box;
 }
 
-.c20 {
+.c21 {
   color: currentColor;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1865,127 +1865,6 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
   display: block;
 }
 
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1.6;
-}
-
-.c12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #000000;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  height: 24px;
-  width: 24px;
-  border-radius: 24px;
-}
-
-.c22 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: currentColor;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  height: 24px;
-  width: 24px;
-  border-radius: 24px;
-}
-
-.c11 {
-  border-radius: 50%;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: relative;
-}
-
-.c11:not(:last-of-type) {
-  -webkit-mask: radial-gradient( circle at 24px,transparent 13px,white 14px );
-  mask: radial-gradient( circle at 24px,transparent 13px,white 14px );
-}
-
-.c11:not(:first-of-type) {
-  margin-left: -11px;
-}
-
-.c10 {
-  white-space: nowrap;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c14 {
-  font-weight: 800;
-}
-
-.c19 {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 .c7 {
   font-family: inherit;
   font-size: 100%;
@@ -1993,27 +1872,6 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #336BFF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c7,
@@ -2038,7 +1896,152 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c7::before {
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.c13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #000000;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+}
+
+.c23 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+}
+
+.c12 {
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+.c12:not(:last-of-type) {
+  -webkit-mask: radial-gradient( circle at 24px,transparent 13px,white 14px );
+  mask: radial-gradient( circle at 24px,transparent 13px,white 14px );
+}
+
+.c12:not(:first-of-type) {
+  margin-left: -11px;
+}
+
+.c11 {
+  white-space: nowrap;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c15 {
+  font-weight: 800;
+}
+
+.c20 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c8 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c8::before {
   content: '';
   display: block;
   position: absolute;
@@ -2049,21 +2052,15 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
   height: calc(100% - 4px);
 }
 
-.c7:hover {
+.c8:hover {
   background-color: #2650BF;
 }
 
-.c7:active {
+.c8:active {
   background-color: #1F4099;
 }
 
-.c15 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
+.c16 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -2087,29 +2084,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
   cursor: pointer;
 }
 
-.c15,
-.c15[type='button'],
-.c15[type='reset'],
-.c15[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c15::-moz-focus-inner,
-.c15[type='button']::-moz-focus-inner,
-.c15[type='reset']::-moz-focus-inner,
-.c15[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c15:-moz-focusring,
-.c15[type='button']:-moz-focusring,
-.c15[type='reset']:-moz-focusring,
-.c15[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c15::before {
+.c16::before {
   content: '';
   display: block;
   position: absolute;
@@ -2120,29 +2095,23 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
   height: calc(100% - 4px);
 }
 
-.c15:hover {
+.c16:hover {
   color: #2650BF;
 }
 
-.c15:hover::before {
+.c16:hover::before {
   border-color: #2650BF;
 }
 
-.c15:active {
+.c16:active {
   color: #1F4099;
 }
 
-.c15:active::before {
+.c16:active::before {
   border-color: #1F4099;
 }
 
-.c21 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
+.c22 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -2166,29 +2135,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
   cursor: not-allowed;
 }
 
-.c21,
-.c21[type='button'],
-.c21[type='reset'],
-.c21[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c21::-moz-focus-inner,
-.c21[type='button']::-moz-focus-inner,
-.c21[type='reset']::-moz-focus-inner,
-.c21[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c21:-moz-focusring,
-.c21[type='button']:-moz-focusring,
-.c21[type='reset']:-moz-focusring,
-.c21[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c21::before {
+.c22::before {
   content: '';
   display: block;
   position: absolute;
@@ -2199,29 +2146,29 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
   height: calc(100% - 4px);
 }
 
-.c8 {
+.c9 {
   border-radius: 16px;
 }
 
-.c8::before {
+.c9::before {
   display: none;
 }
 
-.c16 {
+.c17 {
   border-radius: 16px;
   background-color: #F5F5F5;
   color: #336BFF;
 }
 
-.c16:hover {
+.c17:hover {
   color: #2650BF;
 }
 
-.c16:active {
+.c17:active {
   color: #1F4099;
 }
 
-.c16::before {
+.c17::before {
   display: none;
 }
 
@@ -2301,7 +2248,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
     className="c1"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       Size s
     </span>
@@ -2318,45 +2265,45 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           2 badges
         </span>
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-sc-ey7f5x-0 c7 c8"
+          className="c7 c8 c9"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 c10"
             >
               <div
-                className="c10"
+                className="c11"
               >
                 <div
-                  className="c11"
+                  className="c12"
                 >
                   <span
-                    className="c12"
+                    className="c13"
                   >
                     <span
-                      className="c13 c14"
+                      className="Typography__Span-sc-10mju41-0 c14 c15"
                     >
                       TJP
                     </span>
                   </span>
                 </div>
                 <div
-                  className="c11"
+                  className="c12"
                 >
                   <span
-                    className="c12"
+                    className="c13"
                   >
                     <span
-                      className="c13 c14"
+                      className="Typography__Span-sc-10mju41-0 c14 c15"
                     >
                       TJP
                     </span>
@@ -2376,58 +2323,58 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           3 badges, with truncation
         </span>
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-sc-ey7f5x-0 c7 c8"
+          className="c7 c8 c9"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 c10"
             >
               <div
-                className="c10"
+                className="c11"
               >
                 <div
-                  className="c11"
+                  className="c12"
                 >
                   <span
-                    className="c12"
+                    className="c13"
                   >
                     <span
-                      className="c13 c14"
+                      className="Typography__Span-sc-10mju41-0 c14 c15"
                     >
                       KF
                     </span>
                   </span>
                 </div>
                 <div
-                  className="c11"
+                  className="c12"
                 >
                   <span
-                    className="c12"
+                    className="c13"
                   >
                     <span
-                      className="c13 c14"
+                      className="Typography__Span-sc-10mju41-0 c14 c15"
                     >
                       AF
                     </span>
                   </span>
                 </div>
                 <div
-                  className="c11"
+                  className="c12"
                 >
                   <span
-                    className="c12"
+                    className="c13"
                   >
                     <span
-                      className="c13 c14"
+                      className="Typography__Span-sc-10mju41-0 c14 c15"
                     >
                       +3
                     </span>
@@ -2447,7 +2394,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           2 badges in secondary button
         </span>
@@ -2462,44 +2409,44 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
           }
         >
           <button
-            className="NormalizedButton__Button-sc-ey7f5x-0 c15 c16"
+            className="c7 c16 c17"
             onClick={[Function]}
             type="button"
           >
             <span>
               <div
-                className="c17"
+                className="c18"
               >
                 <div
-                  className="c18"
+                  className="c19"
                 >
                   <div
-                    className="c9"
+                    className="Typography__Span-sc-10mju41-0 c10"
                   >
                     <div
-                      className="c10"
+                      className="c11"
                     >
                       <div
-                        className="c11"
+                        className="c12"
                       >
                         <span
-                          className="c12"
+                          className="c13"
                         >
                           <span
-                            className="c13 c14"
+                            className="Typography__Span-sc-10mju41-0 c14 c15"
                           >
                             TJP
                           </span>
                         </span>
                       </div>
                       <div
-                        className="c11"
+                        className="c12"
                       >
                         <span
-                          className="c12"
+                          className="c13"
                         >
                           <span
-                            className="c13 c14"
+                            className="Typography__Span-sc-10mju41-0 c14 c15"
                           >
                             TJP
                           </span>
@@ -2509,11 +2456,11 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
                   </div>
                 </div>
                 <div
-                  className="c19"
+                  className="c20"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c20"
+                    className="c21"
                     focusable="false"
                     height={8}
                     preserveAspectRatio="xMidYMid meet"
@@ -2540,46 +2487,46 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           2 badges with current color inherited
         </span>
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-sc-ey7f5x-0 c21 c8"
+          className="c7 c22 c9"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 c10"
             >
               <div
-                className="c10"
+                className="c11"
               >
                 <div
-                  className="c11"
+                  className="c12"
                 >
                   <span
-                    className="c22"
+                    className="c23"
                   >
                     <span
-                      className="c13 c14"
+                      className="Typography__Span-sc-10mju41-0 c14 c15"
                     >
                       TJP
                     </span>
                   </span>
                 </div>
                 <div
-                  className="c11"
+                  className="c12"
                 >
                   <span
-                    className="c22"
+                    className="c23"
                   >
                     <span
-                      className="c13 c14"
+                      className="Typography__Span-sc-10mju41-0 c14 c15"
                     >
                       TJP
                     </span>
@@ -2593,7 +2540,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
     </div>
   </div>
   <div
-    className="c23"
+    className="c24"
   />
 </div>
 `;
@@ -2842,7 +2789,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Other variants 1`] = `
     className="c1"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       With different colors
     </span>
@@ -2859,7 +2806,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Other variants 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           Other banks
         </span>
@@ -2875,7 +2822,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Other variants 1`] = `
               className="c9"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 SEB
               </span>
@@ -2888,7 +2835,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Other variants 1`] = `
               className="c12"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 HB
               </span>
@@ -2901,7 +2848,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Other variants 1`] = `
               className="c13"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 +2
               </span>
@@ -2918,7 +2865,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Other variants 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           Custom label
         </span>
@@ -2934,7 +2881,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Other variants 1`] = `
               className="c13"
             >
               <span
-                className="c14"
+                className="Typography__Span-sc-10mju41-0 c14"
               >
                 TJP
               </span>
@@ -2947,7 +2894,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Other variants 1`] = `
               className="c13"
             >
               <span
-                className="c15"
+                className="Typography__Span-sc-10mju41-0 c15"
               >
                 TJP
               </span>
@@ -2960,7 +2907,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Other variants 1`] = `
               className="c13"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 +2
               </span>
@@ -2977,7 +2924,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Other variants 1`] = `
         className="c5"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           Custom truncation item
         </span>
@@ -2993,7 +2940,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Other variants 1`] = `
               className="c13"
             >
               <span
-                className="c10 c11"
+                className="Typography__Span-sc-10mju41-0 c10 c11"
               >
                 KF
               </span>
@@ -3006,7 +2953,7 @@ exports[`Storyshots Molecules / Badge / Account / Stack Other variants 1`] = `
               className="c13"
             >
               <span
-                className="c16"
+                className="Typography__Span-sc-10mju41-0 c16"
               >
                 2
                 !

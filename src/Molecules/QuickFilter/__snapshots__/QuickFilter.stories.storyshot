@@ -159,7 +159,7 @@ exports[`Storyshots Molecules / QuickFilter Another Icon And Label 1`] = `
           className="c5 c8"
         >
           <span
-            className="c9"
+            className="Typography__Span-sc-10mju41-0 c9"
           >
             Another label yqPomå
           </span>
@@ -324,7 +324,7 @@ exports[`Storyshots Molecules / QuickFilter Both Icon And Label 1`] = `
           className="c5 c8"
         >
           <span
-            className="c9"
+            className="Typography__Span-sc-10mju41-0 c9"
           >
             Default
           </span>
@@ -596,7 +596,7 @@ exports[`Storyshots Molecules / QuickFilter Only Label 1`] = `
           className="c5 c6"
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             Default
           </span>
@@ -855,7 +855,7 @@ exports[`Storyshots Molecules / QuickFilter With Four Quick Filters 1`] = `
               className="c8 c12"
             >
               <span
-                className="c13"
+                className="Typography__Span-sc-10mju41-0 c13"
               >
                  
               </span>
@@ -905,7 +905,7 @@ exports[`Storyshots Molecules / QuickFilter With Four Quick Filters 1`] = `
               className="c8 c12"
             >
               <span
-                className="c13"
+                className="Typography__Span-sc-10mju41-0 c13"
               >
                 label
               </span>
@@ -936,7 +936,7 @@ exports[`Storyshots Molecules / QuickFilter With Four Quick Filters 1`] = `
               className="c8 c12"
             >
               <span
-                className="c13"
+                className="Typography__Span-sc-10mju41-0 c13"
               >
                 Label one next to icon one
               </span>
@@ -1215,7 +1215,7 @@ exports[`Storyshots Molecules / QuickFilter With Value Controlled Behavior 1`] =
           className="c6 c7"
         >
           <span
-            className="c8"
+            className="Typography__Span-sc-10mju41-0 c8"
           >
             Controlled selection card
           </span>

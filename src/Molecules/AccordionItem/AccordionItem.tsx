@@ -12,7 +12,7 @@ const Item = styled.div<ItemProps>`
   outline: 1px ${(p) => (p.hasFocus ? `solid ${p.theme.color.cta}` : 'none')};
   background-color: ${(p) =>
     !p.disableBackgroundColor && p.hasFocus ? p.theme.color.background : 'transparent'};
-  & + & {
+  && + & {
     border-top: 1px solid ${(p) => p.theme.color.divider};
   }
 

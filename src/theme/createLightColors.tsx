@@ -344,6 +344,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     monthlySavingsTransferTypeInactive: rawColor.gray500,
     daySelectInputTextInactive: rawColor.gray600,
+    daySelectActiveText: rawColor.white,
 
     warning: rawColor.index,
 

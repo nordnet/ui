@@ -116,7 +116,7 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Behaviour 1`] = `
         role="radio"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           Option 1
         </span>
@@ -133,7 +133,7 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Behaviour 1`] = `
         role="radio"
       >
         <span
-          className="c7"
+          className="Typography__Span-sc-10mju41-0 c7"
         >
           Option 2
         </span>
@@ -150,7 +150,7 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Behaviour 1`] = `
         role="radio"
       >
         <span
-          className="c7"
+          className="Typography__Span-sc-10mju41-0 c7"
         >
           Option 3
         </span>
@@ -182,33 +182,6 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Disabled 1`] = `
   box-sizing: border-box;
 }
 
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #A0A09B;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #A0A09B;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c9 {
   font-family: inherit;
   font-size: 100%;
@@ -216,27 +189,6 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Disabled 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #336BFF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c9,
@@ -261,7 +213,58 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Disabled 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c9::before {
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c10::before {
   content: '';
   display: block;
   position: absolute;
@@ -272,11 +275,11 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Disabled 1`] = `
   height: calc(100% - 4px);
 }
 
-.c9:hover {
+.c10:hover {
   background-color: #2650BF;
 }
 
-.c9:active {
+.c10:active {
   background-color: #1F4099;
 }
 
@@ -359,7 +362,7 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Disabled 1`] = `
         role="radio"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           Option 1
         </span>
@@ -376,7 +379,7 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Disabled 1`] = `
         role="radio"
       >
         <span
-          className="c7"
+          className="Typography__Span-sc-10mju41-0 c7"
         >
           Option 2
         </span>
@@ -393,7 +396,7 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Disabled 1`] = `
         role="radio"
       >
         <span
-          className="c7"
+          className="Typography__Span-sc-10mju41-0 c7"
         >
           Option 3
         </span>
@@ -404,13 +407,13 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Disabled 1`] = `
     className="c8"
   >
     <button
-      className="NormalizedButton__Button-sc-ey7f5x-0 c9"
+      className="c9 c10"
       onClick={[Function]}
       type="button"
     >
       <span>
         <span
-          className="c10"
+          className="Typography__Span-sc-10mju41-0 c11"
         >
           Next
         </span>
@@ -536,7 +539,7 @@ exports[`Storyshots Molecules / SegmentedControl Default 1`] = `
         role="radio"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           Option 1
         </span>
@@ -553,7 +556,7 @@ exports[`Storyshots Molecules / SegmentedControl Default 1`] = `
         role="radio"
       >
         <span
-          className="c7"
+          className="Typography__Span-sc-10mju41-0 c7"
         >
           Option 2
         </span>
@@ -570,7 +573,7 @@ exports[`Storyshots Molecules / SegmentedControl Default 1`] = `
         role="radio"
       >
         <span
-          className="c7"
+          className="Typography__Span-sc-10mju41-0 c7"
         >
           Option 3
         </span>
@@ -694,7 +697,7 @@ exports[`Storyshots Molecules / SegmentedControl Disabled 1`] = `
         role="radio"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           Option 1
         </span>
@@ -711,7 +714,7 @@ exports[`Storyshots Molecules / SegmentedControl Disabled 1`] = `
         role="radio"
       >
         <span
-          className="c7"
+          className="Typography__Span-sc-10mju41-0 c7"
         >
           Option 2
         </span>
@@ -837,7 +840,7 @@ exports[`Storyshots Molecules / SegmentedControl Last Item Selected 1`] = `
         role="radio"
       >
         <span
-          className="c6"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           %
         </span>
@@ -854,7 +857,7 @@ exports[`Storyshots Molecules / SegmentedControl Last Item Selected 1`] = `
         role="radio"
       >
         <span
-          className="c7"
+          className="Typography__Span-sc-10mju41-0 c7"
         >
           SEK
         </span>
