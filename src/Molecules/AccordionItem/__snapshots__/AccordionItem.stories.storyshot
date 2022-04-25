@@ -155,7 +155,7 @@ Array [
       </div>
     </div>
   </div>,
-  .c5 {
+  .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -169,7 +169,7 @@ Array [
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -178,17 +178,17 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -212,7 +212,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -222,29 +222,29 @@ Array [
 
 <div
     aria-expanded={false}
-    className="c0 c1"
+    className="c0"
   >
     <h3
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c3"
+        className="c2"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c2"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           Låg CO₂ risk
         </span>
         <div
-          className="c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c4"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -259,7 +259,7 @@ Array [
       </button>
     </h3>
   </div>,
-  .c5 {
+  .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -273,7 +273,7 @@ Array [
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -282,17 +282,17 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -316,7 +316,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -326,29 +326,29 @@ Array [
 
 <div
     aria-expanded={false}
-    className="c0 c1"
+    className="c0"
   >
     <h3
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c3"
+        className="c2"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c2"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           Sustainability score
         </span>
         <div
-          className="c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c4"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -367,7 +367,7 @@ Array [
 `;
 
 exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
-.c5 {
+.c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -381,7 +381,7 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -390,17 +390,17 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -424,7 +424,7 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -434,29 +434,29 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
 
 <div
   aria-expanded={false}
-  className="c0 c1"
+  className="c0"
 >
   <h3
-    className="Typography__Span-sc-10mju41-0 c2"
+    className="Typography__Span-sc-10mju41-0 c1"
   >
     <button
-      className="c3"
+      className="c2"
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
       type="button"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c2"
+        className="Typography__Span-sc-10mju41-0 c1"
       >
         Lemon drops and several cakes for two persons or more
       </span>
       <div
-        className="c4"
+        className="c3"
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c4"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -475,7 +475,7 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
 
 exports[`Storyshots Molecules / AccordionItem Disabled 1`] = `
 Array [
-  .c5 {
+  .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -489,7 +489,7 @@ Array [
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -498,17 +498,17 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -533,7 +533,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -543,13 +543,13 @@ Array [
 
 <div
     aria-expanded={false}
-    className="c0 c1"
+    className="c0"
   >
     <h3
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c3"
+        className="c2"
         disabled={true}
         onBlur={[Function]}
         onClick={[Function]}
@@ -557,16 +557,16 @@ Array [
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c2"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           This accordion item is disabled
         </span>
         <div
-          className="c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c4"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -581,7 +581,7 @@ Array [
       </button>
     </h3>
   </div>,
-  .c5 {
+  .c4 {
   color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -593,7 +593,7 @@ Array [
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -602,17 +602,17 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -637,7 +637,7 @@ Array [
   justify-content: space-between;
 }
 
-.c4 {
+.c3 {
   margin-top: 0;
   -webkit-order: 1;
   -ms-flex-order: 1;
@@ -645,7 +645,7 @@ Array [
   padding-right: 0px;
 }
 
-.c6 {
+.c5 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -656,13 +656,13 @@ Array [
 
 <div
     aria-expanded={false}
-    className="c0 c1"
+    className="c0"
   >
     <h3
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c3"
+        className="c2"
         disabled={true}
         onBlur={[Function]}
         onClick={[Function]}
@@ -670,16 +670,16 @@ Array [
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c2"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           This accordion item is disabled with chevron
         </span>
         <div
-          className="c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5 c6"
+            className="c4 c5"
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"
@@ -699,7 +699,7 @@ Array [
 `;
 
 exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
-.c6 {
+.c5 {
   padding-left: 24px;
   padding-top: 4px;
   padding-right: 0px;
@@ -707,7 +707,7 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
   background-color: transparent;
 }
 
-.c5 {
+.c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -721,7 +721,7 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -730,7 +730,7 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -739,17 +739,17 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -773,7 +773,7 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -783,29 +783,29 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
 
 <div
   aria-expanded={true}
-  className="c0 c1"
+  className="c0"
 >
   <h3
-    className="Typography__Span-sc-10mju41-0 c2"
+    className="Typography__Span-sc-10mju41-0 c1"
   >
     <button
-      className="c3"
+      className="c2"
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
       type="button"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c2"
+        className="Typography__Span-sc-10mju41-0 c1"
       >
         Låg CO₂ risk
       </span>
       <div
-        className="c4"
+        className="c3"
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c4"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -821,10 +821,10 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
   </h3>
   <section>
     <div
-      className="c6 AccordionItem__Content-sc-1tey38x-4"
+      className="c5 AccordionItem__Content-sc-1tey38x-4"
     >
       <p
-        className="Typography__Span-sc-10mju41-0 c7"
+        className="Typography__Span-sc-10mju41-0 c6"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
       </p>
@@ -835,7 +835,7 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
 
 exports[`Storyshots Molecules / AccordionItem Text Only Content Is Formatted Correct 1`] = `
 Array [
-  .c5 {
+  .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -849,7 +849,7 @@ Array [
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -858,17 +858,17 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -892,7 +892,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -902,29 +902,29 @@ Array [
 
 <div
     aria-expanded={false}
-    className="c0 c1"
+    className="c0"
   >
     <h3
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c3"
+        className="c2"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c2"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           Content is text only
         </span>
         <div
-          className="c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c4"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -939,7 +939,7 @@ Array [
       </button>
     </h3>
   </div>,
-  .c5 {
+  .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -953,7 +953,7 @@ Array [
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -962,17 +962,17 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -996,7 +996,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -1006,29 +1006,29 @@ Array [
 
 <div
     aria-expanded={false}
-    className="c0 c1"
+    className="c0"
   >
     <h3
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c3"
+        className="c2"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c2"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           Content is a component
         </span>
         <div
-          className="c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c4"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1047,7 +1047,7 @@ Array [
 `;
 
 exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
-.c5 {
+.c4 {
   color: #282823;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1059,7 +1059,7 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1068,17 +1068,17 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -1102,7 +1102,7 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
   justify-content: space-between;
 }
 
-.c4 {
+.c3 {
   margin-top: 0;
   -webkit-order: 1;
   -ms-flex-order: 1;
@@ -1110,7 +1110,7 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
   padding-right: 0px;
 }
 
-.c6 {
+.c5 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -1121,29 +1121,29 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
 
 <div
   aria-expanded={false}
-  className="c0 c1"
+  className="c0"
 >
   <h3
-    className="Typography__Span-sc-10mju41-0 c2"
+    className="Typography__Span-sc-10mju41-0 c1"
   >
     <button
-      className="c3"
+      className="c2"
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
       type="button"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c2"
+        className="Typography__Span-sc-10mju41-0 c1"
       >
         How much risk are you willing to take?
       </span>
       <div
-        className="c4"
+        className="c3"
       >
         <svg
           aria-hidden="true"
-          className="c5 c6"
+          className="c4 c5"
           focusable="false"
           height={8}
           preserveAspectRatio="xMidYMid meet"
@@ -1163,7 +1163,7 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
 
 exports[`Storyshots Molecules / AccordionItem With Different Paddings 1`] = `
 Array [
-  .c5 {
+  .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1177,7 +1177,7 @@ Array [
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1186,41 +1186,17 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 40px 40px 40px 40px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -1244,7 +1220,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -1254,29 +1230,29 @@ Array [
 
 <div
     aria-expanded={false}
-    className="c0 c1"
+    className="c0"
   >
     <h3
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c3"
+        className="c2"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c2"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           This accordion item has a custom padding
         </span>
         <div
-          className="c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c4"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1291,7 +1267,7 @@ Array [
       </button>
     </h3>
   </div>,
-  .c5 {
+  .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1305,7 +1281,7 @@ Array [
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1314,41 +1290,17 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 80px 0px 80px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -1372,7 +1324,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -1382,29 +1334,29 @@ Array [
 
 <div
     aria-expanded={false}
-    className="c0 c1"
+    className="c0"
   >
     <h3
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c3"
+        className="c2"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c2"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           This accordion item has a custom horizontal padding
         </span>
         <div
-          className="c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c4"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1419,7 +1371,7 @@ Array [
       </button>
     </h3>
   </div>,
-  .c5 {
+  .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1433,7 +1385,7 @@ Array [
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1442,41 +1394,17 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 40px 0px 40px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -1500,7 +1428,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -1510,29 +1438,29 @@ Array [
 
 <div
     aria-expanded={false}
-    className="c0 c1"
+    className="c0"
   >
     <h3
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c3"
+        className="c2"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c2"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           This accordion item has a custom vertical padding
         </span>
         <div
-          className="c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c4"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1547,7 +1475,7 @@ Array [
       </button>
     </h3>
   </div>,
-  .c5 {
+  .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1561,7 +1489,7 @@ Array [
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1570,41 +1498,17 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 40px 0px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -1628,7 +1532,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -1638,29 +1542,29 @@ Array [
 
 <div
     aria-expanded={false}
-    className="c0 c1"
+    className="c0"
   >
     <h3
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c3"
+        className="c2"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c2"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           This accordion item has a custom top padding
         </span>
         <div
-          className="c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c4"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1675,7 +1579,7 @@ Array [
       </button>
     </h3>
   </div>,
-  .c5 {
+  .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1689,7 +1593,7 @@ Array [
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1698,41 +1602,17 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 40px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -1756,7 +1636,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -1766,29 +1646,29 @@ Array [
 
 <div
     aria-expanded={false}
-    className="c0 c1"
+    className="c0"
   >
     <h3
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c3"
+        className="c2"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c2"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           This accordion item has a custom bottom padding
         </span>
         <div
-          className="c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c4"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1803,7 +1683,7 @@ Array [
       </button>
     </h3>
   </div>,
-  .c5 {
+  .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1817,7 +1697,7 @@ Array [
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1826,41 +1706,17 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 80px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -1884,7 +1740,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -1894,29 +1750,29 @@ Array [
 
 <div
     aria-expanded={false}
-    className="c0 c1"
+    className="c0"
   >
     <h3
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c3"
+        className="c2"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c2"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           This accordion item has a custom left padding
         </span>
         <div
-          className="c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c4"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1931,7 +1787,7 @@ Array [
       </button>
     </h3>
   </div>,
-  .c5 {
+  .c4 {
   color: #282823;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1943,7 +1799,7 @@ Array [
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1952,41 +1808,17 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c0 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 80px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -2010,7 +1842,7 @@ Array [
   justify-content: space-between;
 }
 
-.c4 {
+.c3 {
   margin-top: 0;
   -webkit-order: 1;
   -ms-flex-order: 1;
@@ -2018,7 +1850,7 @@ Array [
   padding-right: 0px;
 }
 
-.c6 {
+.c5 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -2029,29 +1861,29 @@ Array [
 
 <div
     aria-expanded={false}
-    className="c0 c1"
+    className="c0"
   >
     <h3
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c3"
+        className="c2"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c2"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           This accordion item has a custom right padding and chevron to demonstrate
         </span>
         <div
-          className="c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5 c6"
+            className="c4 c5"
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"
@@ -2071,7 +1903,7 @@ Array [
 `;
 
 exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`] = `
-.c5 {
+.c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2085,7 +1917,7 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2094,17 +1926,17 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -2128,7 +1960,7 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -2138,29 +1970,29 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
 
 <div
   aria-expanded={false}
-  className="c0 c1"
+  className="c0"
 >
   <h3
-    className="Typography__Span-sc-10mju41-0 c2"
+    className="Typography__Span-sc-10mju41-0 c1"
   >
     <button
-      className="c3"
+      className="c2"
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
       type="button"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c2"
+        className="Typography__Span-sc-10mju41-0 c1"
       >
         This card has its hover and focus color disabled
       </span>
       <div
-        className="c4"
+        className="c3"
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c4"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -2178,7 +2010,7 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
 `;
 
 exports[`Storyshots Molecules / AccordionItem With Right Addon 1`] = `
-.c4 {
+.c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2187,29 +2019,29 @@ exports[`Storyshots Molecules / AccordionItem With Right Addon 1`] = `
   text-transform: none;
 }
 
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2218,7 +2050,7 @@ exports[`Storyshots Molecules / AccordionItem With Right Addon 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2227,7 +2059,7 @@ exports[`Storyshots Molecules / AccordionItem With Right Addon 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c5 {
+.c4 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -2250,7 +2082,7 @@ exports[`Storyshots Molecules / AccordionItem With Right Addon 1`] = `
   cursor: pointer;
 }
 
-.c5::before {
+.c4::before {
   content: '';
   display: block;
   position: absolute;
@@ -2261,33 +2093,33 @@ exports[`Storyshots Molecules / AccordionItem With Right Addon 1`] = `
   height: calc(100% - 4px);
 }
 
-.c5:hover {
+.c4:hover {
   background-color: #2650BF;
 }
 
-.c5:active {
+.c4:active {
   background-color: #1F4099;
 }
 
-.c6 {
+.c5 {
   border-radius: 12px;
 }
 
-.c6::before {
+.c5::before {
   display: none;
 }
 
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -2313,31 +2145,31 @@ exports[`Storyshots Molecules / AccordionItem With Right Addon 1`] = `
 
 <div
   aria-expanded={false}
-  className="c0 c1"
+  className="c0"
 >
   <h3
-    className="Typography__Span-sc-10mju41-0 c2"
+    className="Typography__Span-sc-10mju41-0 c1"
   >
     <button
-      className="c3"
+      className="c2"
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
       type="button"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c2"
+        className="Typography__Span-sc-10mju41-0 c1"
       >
         How much risk are you willing to take?
       </span>
       <button
-        className="c4 c5 c6"
+        className="c3 c4 c5"
         onClick={[Function]}
         type="button"
       >
         <span>
           <div
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             right addon
           </div>
@@ -2349,7 +2181,7 @@ exports[`Storyshots Molecules / AccordionItem With Right Addon 1`] = `
 `;
 
 exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
-.c5 {
+.c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2363,7 +2195,7 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2372,17 +2204,17 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -2406,7 +2238,7 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -2416,29 +2248,29 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
 
 <div
   aria-expanded={false}
-  className="c0 c1 "
+  className="c0 "
 >
   <h3
-    className="Typography__Span-sc-10mju41-0 c2"
+    className="Typography__Span-sc-10mju41-0 c1"
   >
     <button
-      className="c3"
+      className="c2"
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
       type="button"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c2"
+        className="Typography__Span-sc-10mju41-0 c1"
       >
         Sustainability score
       </span>
       <div
-        className="c4"
+        className="c3"
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c4"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"

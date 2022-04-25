@@ -2,7 +2,7 @@
 
 exports[`Storyshots Molecules / Accordion Default 1`] = `
 Array [
-  .c5 {
+  .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -16,7 +16,7 @@ Array [
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -25,17 +25,17 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -59,7 +59,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -69,29 +69,29 @@ Array [
 
 <div
     aria-expanded={false}
-    className="c0 c1"
+    className="c0"
   >
     <h3
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c3"
+        className="c2"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c2"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           Låg CO₂ risk
         </span>
         <div
-          className="c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c4"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -106,7 +106,7 @@ Array [
       </button>
     </h3>
   </div>,
-  .c5 {
+  .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -120,7 +120,7 @@ Array [
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -129,17 +129,17 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -163,7 +163,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -173,29 +173,29 @@ Array [
 
 <div
     aria-expanded={false}
-    className="c0 c1"
+    className="c0"
   >
     <h3
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c3"
+        className="c2"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c2"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           Sustainability score
         </span>
         <div
-          className="c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c4"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -215,7 +215,7 @@ Array [
 
 exports[`Storyshots Molecules / Accordion With Footer 1`] = `
 Array [
-  .c5 {
+  .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -229,7 +229,7 @@ Array [
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -238,17 +238,17 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -272,7 +272,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -282,29 +282,29 @@ Array [
 
 <div
     aria-expanded={false}
-    className="c0 c1"
+    className="c0"
   >
     <h3
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c3"
+        className="c2"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c2"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           Låg CO₂ risk
         </span>
         <div
-          className="c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c4"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -319,7 +319,7 @@ Array [
       </button>
     </h3>
   </div>,
-  .c5 {
+  .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -333,7 +333,7 @@ Array [
   display: block;
 }
 
-.c2 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -342,17 +342,17 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c0 {
   outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
 
-.c0 + .c0 {
+.c0.c0 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c3 {
+.c2 {
   font: inherit;
   width: 100%;
   border: 0;
@@ -376,7 +376,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c4 {
+.c3 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -386,29 +386,29 @@ Array [
 
 <div
     aria-expanded={false}
-    className="c0 c1"
+    className="c0"
   >
     <h3
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c3"
+        className="c2"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c2"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           Sustainability score
         </span>
         <div
-          className="c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c4"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
