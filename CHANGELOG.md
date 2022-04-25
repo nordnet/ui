@@ -1,3 +1,10 @@
+## [10.25.4](https://github.com/nordnet/ui/compare/v10.25.3...v10.25.4) (2022-04-25)
+
+
+### Bug Fixes
+
+* revert color back ([c22d0ff](https://github.com/nordnet/ui/commit/c22d0ff))
+
 ## [10.25.3](https://github.com/nordnet/ui/compare/v10.25.2...v10.25.3) (2022-04-25)
 
 
