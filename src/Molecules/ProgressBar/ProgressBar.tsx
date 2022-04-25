@@ -123,7 +123,7 @@ const ProgressBar: FC<Props> = ({
           <StyledTypography
             type="secondary"
             weight={stepActive ? 'bold' : 'regular'}
-            color={(t) => (colorLabel ? colorLabel(t) : t.color.progressBarText)}
+            color={(t) => (colorLabel ? colorLabel(t) : t.color.text)}
             aria-hidden
           >
             {stepLabels && stepLabels[stepNumber - 1]}
