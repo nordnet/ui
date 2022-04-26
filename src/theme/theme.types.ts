@@ -681,6 +681,8 @@ export type ThemeColors = {
   daySelectInputTextInactive: string;
   /** day select day active / hover */
   daySelectActiveText: string;
+  /** day select day inactive */
+  daySelectInactiveText: string;
   /** remove instrument added */
   removeInstrumentText: string;
   /** background for toaster pop up */
