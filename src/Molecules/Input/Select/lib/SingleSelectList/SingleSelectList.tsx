@@ -141,7 +141,7 @@ const StyledOption = styled(Typography)<Partial<OptionProps>>`
   `
       : ''}
   background: ${(p) => {
-    if (p.focused && p.isKeyboardNavigation) return p.theme.color.inputBackground;
+    if (p.focused && p.isKeyboardNavigation) return p.theme.color.inputHover;
     return p.theme.color.selectOptionBackground;
   }};
   ${hoverIfNotKeyboardNav}
