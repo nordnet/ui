@@ -1,3 +1,10 @@
+## [10.26.1](https://github.com/nordnet/ui/compare/v10.26.0...v10.26.1) (2022-05-04)
+
+
+### Bug Fixes
+
+* use a visible keyboard navigation focus color for input select ([2ee00ae](https://github.com/nordnet/ui/commit/2ee00ae))
+
 # [10.26.0](https://github.com/nordnet/ui/compare/v10.25.4...v10.26.0) (2022-04-26)
 
 
