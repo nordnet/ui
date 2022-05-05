@@ -13,6 +13,7 @@ export type CollapsibleProps = {
   titleRowPaddingY?: number;
   titleRowPaddingX?: number;
   action?: React.ReactNode;
+  fullWidthTitle?: boolean;
 };
 
 export type IndicatorsProps = {
@@ -21,4 +22,5 @@ export type IndicatorsProps = {
   $py: number;
   $px: number;
   $actionExists?: boolean;
+  $fullWidthTitle?: boolean;
 };

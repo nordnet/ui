@@ -37,6 +37,14 @@ const StyledButton = styled(NormalizedElements.Button)<{ active?: boolean }>`
   color: ${(p) => (p.active ? p.theme.color.tabTitleActive : p.theme.color.tabTitle)};
 `;
 
+// Reset browser styling for ul element
+const StyledUl = styled.ul`
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+`;
+
 const Title: TitleComponent = ({
   active: activeFromProps,
   children,
@@ -209,7 +217,13 @@ export const Tabs: ContainerComponent & {
         $intersectionRightRatio={intersectionRightRatio || 0}
         ref={scrollRef}
       >
-        <Flexbox container direction="row" gutter={4} sm={{ gutter: variant === 'large' ? 8 : 4 }}>
+        <Flexbox
+          container
+          direction="row"
+          gutter={4}
+          sm={{ gutter: variant === 'large' ? 8 : 4 }}
+          as={StyledUl}
+        >
           {titles}
         </Flexbox>
       </StyledFlexbox>

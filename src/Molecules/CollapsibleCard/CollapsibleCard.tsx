@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Card, Flexbox, OldIcon, Typography } from '../..';
 import { useSafeLayoutEffect } from '../../common/Hooks';
 import { isElement, isFunction } from '../../common/utils';
@@ -57,6 +57,14 @@ const AnimatedChevronUp = styled(OldIcon.ChevronUp)<Pick<IndicatorsProps, '$coll
   transition: transform 0.16s ease-out;
 `;
 
+const StyledFlexboxItem = styled(Flexbox)<Pick<IndicatorsProps, '$fullWidthTitle'>>`
+  ${({ $fullWidthTitle }) =>
+    $fullWidthTitle &&
+    css`
+      width: 100%;
+    `}
+`;
+
 export const CollapsibleCard: React.FC<CollapsibleProps> = ({
   className,
   title,
@@ -69,6 +77,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
   titleRowPaddingX = 5,
   titleRowPaddingY = 5,
   action: ActionComponent = false,
+  fullWidthTitle = false,
 }) => {
   const [collapsed, setCollapsed] = useState(collapsedInitial);
   const [collapsing, setCollapsing] = useState(false);
@@ -170,11 +179,11 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
       $actionExists={!!ActionComponent}
     >
       <Flexbox container gutter={4} alignItems="center" justifyContent="space-between">
-        <Flexbox item>
+        <StyledFlexboxItem item $fullWidthTitle={fullWidthTitle}>
           <Typography type="title3" as={heading}>
             {title}
           </Typography>
-        </Flexbox>
+        </StyledFlexboxItem>
         <Flexbox item>
           {(() => {
             if (isFunction(expandElement)) return expandElement(collapsed);

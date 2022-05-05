@@ -106,7 +106,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     dropDownButtonText: rawColor.white,
     dropDownButtonTextHover: rawColor.blue400,
-    dropDownButtonTextActive:rawColor.blue400,
+    dropDownButtonTextActive: rawColor.blue400,
     dropDownButtonTextDisabled: rawColor.gray600,
     dropDownButtonBackground: rawColor.gray700,
     dropDownButtonBackgroundHover: rawColor.gray700,
@@ -134,6 +134,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     graphVolume: rawColor.gray2,
     graphVolumeHover: rawColor.gray3,
+    graphCrosshair: rawColor.gray600,
 
     guidanceSelectionCardIcon: rawColor.brandPink,
     iconBackdropCta: Color(rawColor.cta).alpha(0.1).rgb().string(),
@@ -206,7 +207,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     paletteBlue: rawColor.palettes.blue,
     paletteGreen: rawColor.palettes.green,
-    paletteLineGraph: [rawColor.complementaryTurquoise1, rawColor.index, ...lineColors],
+    paletteLineGraph: [rawColor.teal400, rawColor.index, ...lineColors],
     paletteMap: [
       rawColor.complementaryTurquoise2,
       rawColor.complementaryTurquoise1,
@@ -224,6 +225,9 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     positive: rawColor.green500,
     positiveBlackBackground: rawColor.green500,
 
+    periodScrollButtonBackground: rawColor.gray1,
+    periodScrollButtonIcon: rawColor.white,
+
     infoBarBackgroundSuccess: rawColor.green800,
     infoBarBackgroundWarning: rawColor.yellow800,
     infoBarBackgroundError: rawColor.red800,
@@ -240,10 +244,10 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     privateBankingBannerText: rawColor.white,
     privateBankingBannerTitle: rawColor.gray6,
 
-    progressBarActive: rawColor.cta,
+    progressBarActive: rawColor.blue500,
     progressBarDone: rawColor.green500,
     progressBarFailure: rawColor.pink500,
-    progressBarNext: rawColor.gray4,
+    progressBarNext: rawColor.gray700,
     progressBarText: rawColor.white,
     progressBarWarning: rawColor.index,
 
@@ -300,6 +304,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     text: rawColor.gray7,
     textLight: rawColor.gray0, // FIXME: to be removed later
 
+    technicalAnalysisPlotBands: rawColor.gray900,
+
     timelineActive: rawColor.cta,
     timelineFailure: rawColor.pink500,
     timelineNext: rawColor.gray4,
@@ -327,7 +333,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     sfdrArticle8: rawColor.sfdrArticle8,
     sfdrArticle9: rawColor.sfdrArticle9,
 
-    popularBadgeBackground: rawColor.pink100,
+    popularBadgeBackground: rawColor.pink900,
 
     joinSharevilleIllustration: rawColor.green200,
     joinSharevilleBadge: rawColor.green800,
@@ -341,11 +347,24 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     quickFilterFocusSelectedOutline: rawColor.blue400,
 
     monthlySavingsTransferTypeInactive: rawColor.gray500,
+    daySelectInputTextInactive: rawColor.gray400,
+    daySelectActiveText: rawColor.white,
+    daySelectInactiveText: rawColor.gray600,
 
     warning: rawColor.index,
 
     worldMapLand: rawColor.blue600, // not yet in use
     worldMapWater: rawColor.gray800, // not yet in use
+
+    removeInstrumentText: rawColor.red500,
+
+    searchPopupBackground: rawColor.blue800,
+
+    monthlySavingsTableRowDivider: rawColor.gray900,
+
+    illustrationBackgroundBlue: rawColor.blue800,
+    narrowCardBorder: rawColor.gray900,
+    existingMonthlyDepositsDivider: rawColor.gray900,
 
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,

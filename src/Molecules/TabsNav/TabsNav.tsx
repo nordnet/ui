@@ -39,6 +39,14 @@ const StyledFlexbox = styled(Flexbox)<ScrollStyleProps>`
   ${scrollStyles}
 `;
 
+// Reset browser styling for ul element
+const StyledUl = styled.ul`
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+`;
+
 const Title = React.forwardRef<HTMLSpanElement, TitleProps>(
   ({ active, children, setRef, to, onKeyDown, onClick, height, fullServerRedirect }, ref) => {
     return (
@@ -159,7 +167,7 @@ export const TabsNav: Component = ({
       container
       ref={scrollRef}
     >
-      <Flexbox container direction="row" gutter={4} sm={{ gutter: 8 }}>
+      <Flexbox container direction="row" gutter={4} sm={{ gutter: 8 }} as={StyledUl}>
         {titles}
       </Flexbox>
     </StyledFlexbox>

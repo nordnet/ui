@@ -45,7 +45,7 @@ exports[`Storyshots Molecules / LinkBuy LinkBuy 1`] = `
   onClick={[Function]}
 >
   <span
-    className="c2"
+    className="Typography__Span-sc-10mju41-0 c2"
   >
     Buy
   </span>
@@ -77,7 +77,7 @@ exports[`Storyshots Molecules / LinkBuy LinkBuy disabled 1`] = `
   disabled={true}
 >
   <span
-    className="c1"
+    className="Typography__Span-sc-10mju41-0 c1"
   >
     Buy
   </span>
@@ -130,7 +130,7 @@ exports[`Storyshots Molecules / LinkBuy LinkBuy with rel as nofollow 1`] = `
   rel="nofollow"
 >
   <span
-    className="c2"
+    className="Typography__Span-sc-10mju41-0 c2"
   >
     Buy
   </span>

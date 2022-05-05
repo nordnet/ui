@@ -70,6 +70,37 @@ Array [
   display: block;
 }
 
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c6,
+.c6[type='button'],
+.c6[type='reset'],
+.c6[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c6::-moz-focus-inner,
+.c6[type='button']::-moz-focus-inner,
+.c6[type='reset']::-moz-focus-inner,
+.c6[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c6:-moz-focusring,
+.c6[type='button']:-moz-focusring,
+.c6[type='reset']:-moz-focusring,
+.c6[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
 .c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -147,12 +178,6 @@ Array [
 }
 
 .c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -176,35 +201,7 @@ Array [
   cursor: pointer;
 }
 
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 .c26 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -225,28 +222,6 @@ Array [
   border: none;
   border-radius: 0;
   cursor: pointer;
-}
-
-.c26,
-.c26[type='button'],
-.c26[type='reset'],
-.c26[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c26::-moz-focus-inner,
-.c26[type='button']::-moz-focus-inner,
-.c26[type='reset']::-moz-focus-inner,
-.c26[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c26:-moz-focusring,
-.c26[type='button']:-moz-focusring,
-.c26[type='reset']:-moz-focusring,
-.c26[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c15 {
@@ -306,7 +281,7 @@ Array [
   display: block;
 }
 
-.c24 + .c23 {
+.c23 + .c23 {
   padding-top: 8px;
 }
 
@@ -373,13 +348,6 @@ Array [
   justify-content: flex-start;
 }
 
-.c33 {
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
 .c33 > span {
   width: 100%;
 }
@@ -427,7 +395,7 @@ Array [
 }
 
 @media (max-width:975px) {
-  .c5 + .c4::after {
+  .c4 + .c4::after {
     content: '';
     display: block;
     height: 1px;
@@ -441,13 +409,11 @@ Array [
 }
 
 @media (min-width:976px) {
-  .c5 + .c4 .c6 {
-    margin-top: 8px;
-  }
+
 }
 
 @media (max-width:975px) {
-  .c19 + .c4::after {
+  .c4 + .c4::after {
     content: '';
     display: block;
     height: 1px;
@@ -461,9 +427,7 @@ Array [
 }
 
 @media (min-width:976px) {
-  .c19 + .c4 .c6 {
-    margin-top: 8px;
-  }
+
 }
 
 @media (max-width:975px) {
@@ -494,18 +458,18 @@ Array [
             className="c4 c5"
           >
             <div
-              className="c6 "
+              className="TopLevel__Wrapper-sc-nlt88k-2"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c7 c8"
+                className="c6 c7 c8"
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="c9"
+                  className="Typography__Span-sc-10mju41-0 c9"
                 >
                   <span
-                    className="c10"
+                    className="Typography__Span-sc-10mju41-0 c10"
                   >
                     <div
                       className="c11 c12"
@@ -517,7 +481,7 @@ Array [
                       </div>
                       <span
                         aria-hidden={true}
-                        className="c14 c15"
+                        className="Typography__Span-sc-10mju41-0 c14 c15"
                       >
                         <svg
                           aria-hidden="true"
@@ -553,25 +517,25 @@ Array [
             className="c4 c19"
           >
             <div
-              className="c6 "
+              className="TopLevel__Wrapper-sc-nlt88k-2"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c7 c8"
+                className="c6 c7 c8"
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="c9"
+                  className="Typography__Span-sc-10mju41-0 c9"
                 >
                   <span
-                    className="c20"
+                    className="Typography__Span-sc-10mju41-0 c20"
                   >
                     <div
                       className="c11 c12"
                     >
                       <span
                         aria-hidden={true}
-                        className="c14 c15"
+                        className="Typography__Span-sc-10mju41-0 c14 c15"
                       >
                         <span
                           className="c21"
@@ -595,15 +559,15 @@ Array [
                   className="c25"
                 >
                   <button
-                    className="NormalizedButton__Button-sc-ey7f5x-0 c26"
+                    className="c6 c26"
                     onClick={[Function]}
                     type="button"
                   >
                     <span
-                      className="c9"
+                      className="Typography__Span-sc-10mju41-0 c9"
                     >
                       <span
-                        className="c27"
+                        className="Typography__Span-sc-10mju41-0 c27"
                       >
                         <div
                           className="c13"
@@ -623,15 +587,15 @@ Array [
                   className="c25"
                 >
                   <button
-                    className="NormalizedButton__Button-sc-ey7f5x-0 c26"
+                    className="c6 c26"
                     onClick={[Function]}
                     type="button"
                   >
                     <span
-                      className="c9"
+                      className="Typography__Span-sc-10mju41-0 c9"
                     >
                       <span
-                        className="c14"
+                        className="Typography__Span-sc-10mju41-0 c14"
                       >
                         <div
                           className="c13"
@@ -651,7 +615,7 @@ Array [
                   className="c25"
                 >
                   <span
-                    className="c27"
+                    className="Typography__Span-sc-10mju41-0 c27"
                   >
                     <div
                       className="c13"
@@ -668,10 +632,10 @@ Array [
             className="c4 c5"
           >
             <div
-              className="c6 "
+              className="TopLevel__Wrapper-sc-nlt88k-2"
             >
               <span
-                className="c28"
+                className="Typography__Span-sc-10mju41-0 c28"
               >
                 <div
                   className="c29 c12"
@@ -683,7 +647,7 @@ Array [
                   </div>
                   <span
                     aria-hidden={true}
-                    className="c14 c15"
+                    className="Typography__Span-sc-10mju41-0 c14 c15"
                   >
                     <span
                       className="c30"
@@ -709,15 +673,15 @@ Array [
           >
             <button
               aria-expanded={false}
-              className="NormalizedButton__Button-sc-ey7f5x-0 c7 c33"
+              className="c6 c7 c8 c33"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 c9"
               >
                 <span
-                  className="c20"
+                  className="Typography__Span-sc-10mju41-0 c20"
                 >
                   <div
                     className="c11 c12"
@@ -730,7 +694,7 @@ Array [
                       >
                         <span
                           aria-hidden={true}
-                          className="c14 c15"
+                          className="Typography__Span-sc-10mju41-0 c14 c15"
                         >
                           <span
                             className="c21"
@@ -890,6 +854,37 @@ Array [
   display: block;
 }
 
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c6,
+.c6[type='button'],
+.c6[type='reset'],
+.c6[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c6::-moz-focus-inner,
+.c6[type='button']::-moz-focus-inner,
+.c6[type='reset']::-moz-focus-inner,
+.c6[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c6:-moz-focusring,
+.c6[type='button']:-moz-focusring,
+.c6[type='reset']:-moz-focusring,
+.c6[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
 .c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -967,12 +962,6 @@ Array [
 }
 
 .c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -996,35 +985,7 @@ Array [
   cursor: pointer;
 }
 
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 .c26 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -1045,28 +1006,6 @@ Array [
   border: none;
   border-radius: 0;
   cursor: pointer;
-}
-
-.c26,
-.c26[type='button'],
-.c26[type='reset'],
-.c26[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c26::-moz-focus-inner,
-.c26[type='button']::-moz-focus-inner,
-.c26[type='reset']::-moz-focus-inner,
-.c26[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c26:-moz-focusring,
-.c26[type='button']:-moz-focusring,
-.c26[type='reset']:-moz-focusring,
-.c26[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c15 {
@@ -1126,7 +1065,7 @@ Array [
   display: block;
 }
 
-.c24 + .c23 {
+.c23 + .c23 {
   padding-top: 8px;
 }
 
@@ -1193,13 +1132,6 @@ Array [
   justify-content: flex-start;
 }
 
-.c33 {
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
 .c33 > span {
   width: 100%;
 }
@@ -1247,7 +1179,7 @@ Array [
 }
 
 @media (max-width:975px) {
-  .c5 + .c4::after {
+  .c4 + .c4::after {
     content: '';
     display: block;
     height: 1px;
@@ -1261,13 +1193,11 @@ Array [
 }
 
 @media (min-width:976px) {
-  .c5 + .c4 .c6 {
-    margin-top: 8px;
-  }
+
 }
 
 @media (max-width:975px) {
-  .c19 + .c4::after {
+  .c4 + .c4::after {
     content: '';
     display: block;
     height: 1px;
@@ -1281,9 +1211,7 @@ Array [
 }
 
 @media (min-width:976px) {
-  .c19 + .c4 .c6 {
-    margin-top: 8px;
-  }
+
 }
 
 @media (max-width:975px) {
@@ -1314,18 +1242,18 @@ Array [
             className="c4 c5"
           >
             <div
-              className="c6 "
+              className="TopLevel__Wrapper-sc-nlt88k-2"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c7 c8"
+                className="c6 c7 c8"
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="c9"
+                  className="Typography__Span-sc-10mju41-0 c9"
                 >
                   <span
-                    className="c10"
+                    className="Typography__Span-sc-10mju41-0 c10"
                   >
                     <div
                       className="c11 c12"
@@ -1337,7 +1265,7 @@ Array [
                       </div>
                       <span
                         aria-hidden={true}
-                        className="c14 c15"
+                        className="Typography__Span-sc-10mju41-0 c14 c15"
                       >
                         <svg
                           aria-hidden="true"
@@ -1373,25 +1301,25 @@ Array [
             className="c4 c19"
           >
             <div
-              className="c6 "
+              className="TopLevel__Wrapper-sc-nlt88k-2"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c7 c8"
+                className="c6 c7 c8"
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="c9"
+                  className="Typography__Span-sc-10mju41-0 c9"
                 >
                   <span
-                    className="c20"
+                    className="Typography__Span-sc-10mju41-0 c20"
                   >
                     <div
                       className="c11 c12"
                     >
                       <span
                         aria-hidden={true}
-                        className="c14 c15"
+                        className="Typography__Span-sc-10mju41-0 c14 c15"
                       >
                         <span
                           className="c21"
@@ -1415,15 +1343,15 @@ Array [
                   className="c25"
                 >
                   <button
-                    className="NormalizedButton__Button-sc-ey7f5x-0 c26"
+                    className="c6 c26"
                     onClick={[Function]}
                     type="button"
                   >
                     <span
-                      className="c9"
+                      className="Typography__Span-sc-10mju41-0 c9"
                     >
                       <span
-                        className="c27"
+                        className="Typography__Span-sc-10mju41-0 c27"
                       >
                         <div
                           className="c13"
@@ -1443,15 +1371,15 @@ Array [
                   className="c25"
                 >
                   <button
-                    className="NormalizedButton__Button-sc-ey7f5x-0 c26"
+                    className="c6 c26"
                     onClick={[Function]}
                     type="button"
                   >
                     <span
-                      className="c9"
+                      className="Typography__Span-sc-10mju41-0 c9"
                     >
                       <span
-                        className="c14"
+                        className="Typography__Span-sc-10mju41-0 c14"
                       >
                         <div
                           className="c13"
@@ -1471,7 +1399,7 @@ Array [
                   className="c25"
                 >
                   <span
-                    className="c27"
+                    className="Typography__Span-sc-10mju41-0 c27"
                   >
                     <div
                       className="c13"
@@ -1488,10 +1416,10 @@ Array [
             className="c4 c5"
           >
             <div
-              className="c6 "
+              className="TopLevel__Wrapper-sc-nlt88k-2"
             >
               <span
-                className="c28"
+                className="Typography__Span-sc-10mju41-0 c28"
               >
                 <div
                   className="c29 c12"
@@ -1503,7 +1431,7 @@ Array [
                   </div>
                   <span
                     aria-hidden={true}
-                    className="c14 c15"
+                    className="Typography__Span-sc-10mju41-0 c14 c15"
                   >
                     <span
                       className="c30"
@@ -1529,15 +1457,15 @@ Array [
           >
             <button
               aria-expanded={false}
-              className="NormalizedButton__Button-sc-ey7f5x-0 c7 c33"
+              className="c6 c7 c8 c33"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 c9"
               >
                 <span
-                  className="c20"
+                  className="Typography__Span-sc-10mju41-0 c20"
                 >
                   <div
                     className="c11 c12"
@@ -1550,7 +1478,7 @@ Array [
                       >
                         <span
                           aria-hidden={true}
-                          className="c14 c15"
+                          className="Typography__Span-sc-10mju41-0 c14 c15"
                         >
                           <span
                             className="c21"
@@ -1813,7 +1741,7 @@ Array [
 <div
     className="c0"
   />,
-  .c8 {
+  .c7 {
   padding-left: 44px;
   padding-top: 12px;
   padding-right: 12px;
@@ -1860,7 +1788,7 @@ Array [
   box-sizing: border-box;
 }
 
-.c10 {
+.c9 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1881,7 +1809,38 @@ Array [
   display: block;
 }
 
-.c7 {
+.c14 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c14,
+.c14[type='button'],
+.c14[type='reset'],
+.c14[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c14::-moz-focus-inner,
+.c14[type='button']::-moz-focus-inner,
+.c14[type='reset']::-moz-focus-inner,
+.c14[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c14:-moz-focusring,
+.c14[type='button']:-moz-focusring,
+.c14[type='reset']:-moz-focusring,
+.c14[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -1890,7 +1849,7 @@ Array [
   line-height: 1.5;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1927,12 +1886,6 @@ Array [
 }
 
 .c15 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -1956,35 +1909,13 @@ Array [
   cursor: pointer;
 }
 
-.c15,
-.c15[type='button'],
-.c15[type='reset'],
-.c15[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c15::-moz-focus-inner,
-.c15[type='button']::-moz-focus-inner,
-.c15[type='reset']::-moz-focus-inner,
-.c15[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c15:-moz-focusring,
-.c15[type='button']:-moz-focusring,
-.c15[type='reset']:-moz-focusring,
-.c15[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c12 {
+.c11 {
   position: absolute;
   top: 12px;
   left: 12px;
 }
 
-.c13 {
+.c12 {
   width: 24px;
   height: 24px;
   background-color: #EBEBE8;
@@ -2035,7 +1966,7 @@ Array [
   display: block;
 }
 
-.c23 + .c22 {
+.c22 + .c22 {
   padding-top: 8px;
 }
 
@@ -2071,13 +2002,13 @@ Array [
   opacity: 0;
 }
 
-.c14 {
+.c13 {
   display: block;
   position: relative;
   background-color: #FFFFFF;
 }
 
-.c14::before {
+.c13::before {
   content: '';
   display: block;
   background: #336BFF;
@@ -2091,18 +2022,11 @@ Array [
   opacity: 1;
 }
 
-.c9 {
+.c8 {
   position: relative;
 }
 
 .c16 {
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-.c28 {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -2118,7 +2042,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c8 {
+  .c7 {
     padding-left: 52px;
   }
 }
@@ -2150,13 +2074,13 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c12 {
+  .c11 {
     left: 20px;
   }
 }
 
 @media (max-width:975px) {
-  .c5 + .c4::after {
+  .c4 + .c4::after {
     content: '';
     display: block;
     height: 1px;
@@ -2170,13 +2094,11 @@ Array [
 }
 
 @media (min-width:976px) {
-  .c5 + .c4 .c6 {
-    margin-top: 8px;
-  }
+
 }
 
 @media (max-width:975px) {
-  .c14 + .c4::after {
+  .c4 + .c4::after {
     content: '';
     display: block;
     height: 1px;
@@ -2190,9 +2112,7 @@ Array [
 }
 
 @media (min-width:976px) {
-  .c14 + .c4 .c6 {
-    margin-top: 8px;
-  }
+
 }
 
 @media (max-width:975px) {
@@ -2231,25 +2151,25 @@ Array [
             className="c4 c5"
           >
             <div
-              className="c6 "
+              className="TopLevel__Wrapper-sc-nlt88k-2"
             >
               <span
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 c6"
               >
                 <div
-                  className="c8 c9"
+                  className="c7 c8"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
                     
                   </div>
                   <span
                     aria-hidden={true}
-                    className="c11 c12"
+                    className="Typography__Span-sc-10mju41-0 c10 c11"
                   >
                     <span
-                      className="c13"
+                      className="c12"
                     >
                       1
                     </span>
@@ -2260,28 +2180,28 @@ Array [
             </div>
           </li>
           <li
-            className="c4 c14"
+            className="c4 c13"
           >
             <div
-              className="c6 "
+              className="TopLevel__Wrapper-sc-nlt88k-2"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c15 c16"
+                className="c14 c15 c16"
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="c17"
+                  className="Typography__Span-sc-10mju41-0 c17"
                 >
                   <span
-                    className="c18"
+                    className="Typography__Span-sc-10mju41-0 c18"
                   >
                     <div
-                      className="c19 c9"
+                      className="c19 c8"
                     >
                       <span
                         aria-hidden={true}
-                        className="c11 c12"
+                        className="Typography__Span-sc-10mju41-0 c10 c11"
                       >
                         <span
                           className="c20"
@@ -2305,10 +2225,10 @@ Array [
                   className="c24"
                 >
                   <span
-                    className="c25"
+                    className="Typography__Span-sc-10mju41-0 c25"
                   >
                     <div
-                      className="c10"
+                      className="c9"
                     >
                       
                     </div>
@@ -2323,10 +2243,10 @@ Array [
                   className="c24"
                 >
                   <span
-                    className="c25"
+                    className="Typography__Span-sc-10mju41-0 c25"
                   >
                     <div
-                      className="c10"
+                      className="c9"
                     >
                       
                     </div>
@@ -2341,10 +2261,10 @@ Array [
                   className="c24"
                 >
                   <span
-                    className="c25"
+                    className="Typography__Span-sc-10mju41-0 c25"
                   >
                     <div
-                      className="c10"
+                      className="c9"
                     >
                       
                     </div>
@@ -2358,25 +2278,25 @@ Array [
             className="c4 c5"
           >
             <div
-              className="c6 "
+              className="TopLevel__Wrapper-sc-nlt88k-2"
             >
               <span
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 c6"
               >
                 <div
-                  className="c8 c9"
+                  className="c7 c8"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
                     
                   </div>
                   <span
                     aria-hidden={true}
-                    className="c11 c12"
+                    className="Typography__Span-sc-10mju41-0 c10 c11"
                   >
                     <span
-                      className="c13"
+                      className="c12"
                     >
                       3
                     </span>
@@ -2395,22 +2315,22 @@ Array [
           className="c27"
         >
           <li
-            className="c4 c14"
+            className="c4 c13"
           >
             <button
               aria-expanded={false}
-              className="NormalizedButton__Button-sc-ey7f5x-0 c15 c28"
+              className="c14 c15 c16 c28"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c17"
+                className="Typography__Span-sc-10mju41-0 c17"
               >
                 <span
-                  className="c18"
+                  className="Typography__Span-sc-10mju41-0 c18"
                 >
                   <div
-                    className="c19 c9"
+                    className="c19 c8"
                   >
                     <div
                       className="c29"
@@ -2420,7 +2340,7 @@ Array [
                       >
                         <span
                           aria-hidden={true}
-                          className="c11 c12"
+                          className="Typography__Span-sc-10mju41-0 c10 c11"
                         >
                           <span
                             className="c20"
@@ -3290,7 +3210,7 @@ Array [
 
 exports[`Storyshots Molecules / Multi Step Progress Not Started Multi Step Progress 1`] = `
 Array [
-  .c8 {
+  .c7 {
   padding-left: 44px;
   padding-top: 12px;
   padding-right: 12px;
@@ -3337,7 +3257,7 @@ Array [
   box-sizing: border-box;
 }
 
-.c10 {
+.c9 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -3358,7 +3278,38 @@ Array [
   display: block;
 }
 
-.c7 {
+.c14 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c14,
+.c14[type='button'],
+.c14[type='reset'],
+.c14[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c14::-moz-focus-inner,
+.c14[type='button']::-moz-focus-inner,
+.c14[type='reset']::-moz-focus-inner,
+.c14[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c14:-moz-focusring,
+.c14[type='button']:-moz-focusring,
+.c14[type='reset']:-moz-focusring,
+.c14[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -3367,7 +3318,7 @@ Array [
   line-height: 1.5;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3404,12 +3355,6 @@ Array [
 }
 
 .c15 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -3433,35 +3378,13 @@ Array [
   cursor: pointer;
 }
 
-.c15,
-.c15[type='button'],
-.c15[type='reset'],
-.c15[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c15::-moz-focus-inner,
-.c15[type='button']::-moz-focus-inner,
-.c15[type='reset']::-moz-focus-inner,
-.c15[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c15:-moz-focusring,
-.c15[type='button']:-moz-focusring,
-.c15[type='reset']:-moz-focusring,
-.c15[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c12 {
+.c11 {
   position: absolute;
   top: 12px;
   left: 12px;
 }
 
-.c13 {
+.c12 {
   width: 24px;
   height: 24px;
   background-color: #EBEBE8;
@@ -3512,7 +3435,7 @@ Array [
   display: block;
 }
 
-.c23 + .c22 {
+.c22 + .c22 {
   padding-top: 8px;
 }
 
@@ -3548,13 +3471,13 @@ Array [
   opacity: 0;
 }
 
-.c14 {
+.c13 {
   display: block;
   position: relative;
   background-color: #FFFFFF;
 }
 
-.c14::before {
+.c13::before {
   content: '';
   display: block;
   background: #336BFF;
@@ -3568,18 +3491,11 @@ Array [
   opacity: 1;
 }
 
-.c9 {
+.c8 {
   position: relative;
 }
 
 .c16 {
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-.c28 {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -3595,7 +3511,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c8 {
+  .c7 {
     padding-left: 52px;
   }
 }
@@ -3627,13 +3543,13 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c12 {
+  .c11 {
     left: 20px;
   }
 }
 
 @media (max-width:975px) {
-  .c5 + .c4::after {
+  .c4 + .c4::after {
     content: '';
     display: block;
     height: 1px;
@@ -3647,13 +3563,11 @@ Array [
 }
 
 @media (min-width:976px) {
-  .c5 + .c4 .c6 {
-    margin-top: 8px;
-  }
+
 }
 
 @media (max-width:975px) {
-  .c14 + .c4::after {
+  .c4 + .c4::after {
     content: '';
     display: block;
     height: 1px;
@@ -3667,9 +3581,7 @@ Array [
 }
 
 @media (min-width:976px) {
-  .c14 + .c4 .c6 {
-    margin-top: 8px;
-  }
+
 }
 
 @media (max-width:975px) {
@@ -3700,25 +3612,25 @@ Array [
             className="c4 c5"
           >
             <div
-              className="c6 "
+              className="TopLevel__Wrapper-sc-nlt88k-2"
             >
               <span
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 c6"
               >
                 <div
-                  className="c8 c9"
+                  className="c7 c8"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
                     
                   </div>
                   <span
                     aria-hidden={true}
-                    className="c11 c12"
+                    className="Typography__Span-sc-10mju41-0 c10 c11"
                   >
                     <span
-                      className="c13"
+                      className="c12"
                     >
                       1
                     </span>
@@ -3729,28 +3641,28 @@ Array [
             </div>
           </li>
           <li
-            className="c4 c14"
+            className="c4 c13"
           >
             <div
-              className="c6 "
+              className="TopLevel__Wrapper-sc-nlt88k-2"
             >
               <button
-                className="NormalizedButton__Button-sc-ey7f5x-0 c15 c16"
+                className="c14 c15 c16"
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="c17"
+                  className="Typography__Span-sc-10mju41-0 c17"
                 >
                   <span
-                    className="c18"
+                    className="Typography__Span-sc-10mju41-0 c18"
                   >
                     <div
-                      className="c19 c9"
+                      className="c19 c8"
                     >
                       <span
                         aria-hidden={true}
-                        className="c11 c12"
+                        className="Typography__Span-sc-10mju41-0 c10 c11"
                       >
                         <span
                           className="c20"
@@ -3774,10 +3686,10 @@ Array [
                   className="c24"
                 >
                   <span
-                    className="c25"
+                    className="Typography__Span-sc-10mju41-0 c25"
                   >
                     <div
-                      className="c10"
+                      className="c9"
                     >
                       
                     </div>
@@ -3792,10 +3704,10 @@ Array [
                   className="c24"
                 >
                   <span
-                    className="c25"
+                    className="Typography__Span-sc-10mju41-0 c25"
                   >
                     <div
-                      className="c10"
+                      className="c9"
                     >
                       
                     </div>
@@ -3810,10 +3722,10 @@ Array [
                   className="c24"
                 >
                   <span
-                    className="c25"
+                    className="Typography__Span-sc-10mju41-0 c25"
                   >
                     <div
-                      className="c10"
+                      className="c9"
                     >
                       
                     </div>
@@ -3827,25 +3739,25 @@ Array [
             className="c4 c5"
           >
             <div
-              className="c6 "
+              className="TopLevel__Wrapper-sc-nlt88k-2"
             >
               <span
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 c6"
               >
                 <div
-                  className="c8 c9"
+                  className="c7 c8"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
                     
                   </div>
                   <span
                     aria-hidden={true}
-                    className="c11 c12"
+                    className="Typography__Span-sc-10mju41-0 c10 c11"
                   >
                     <span
-                      className="c13"
+                      className="c12"
                     >
                       3
                     </span>
@@ -3864,22 +3776,22 @@ Array [
           className="c27"
         >
           <li
-            className="c4 c14"
+            className="c4 c13"
           >
             <button
               aria-expanded={false}
-              className="NormalizedButton__Button-sc-ey7f5x-0 c15 c28"
+              className="c14 c15 c16 c28"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c17"
+                className="Typography__Span-sc-10mju41-0 c17"
               >
                 <span
-                  className="c18"
+                  className="Typography__Span-sc-10mju41-0 c18"
                 >
                   <div
-                    className="c19 c9"
+                    className="c19 c8"
                   >
                     <div
                       className="c29"
@@ -3889,7 +3801,7 @@ Array [
                       >
                         <span
                           aria-hidden={true}
-                          className="c11 c12"
+                          className="Typography__Span-sc-10mju41-0 c10 c11"
                         >
                           <span
                             className="c20"

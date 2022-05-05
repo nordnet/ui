@@ -117,7 +117,7 @@ exports[`Storyshots Molecules / Badge / Account Custom children 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Typography as child
       </span>
@@ -127,7 +127,7 @@ exports[`Storyshots Molecules / Badge / Account Custom children 1`] = `
         className="c4"
       >
         <span
-          className="c5"
+          className="Typography__Span-sc-10mju41-0 c5"
         >
           KF
         </span>
@@ -142,7 +142,7 @@ exports[`Storyshots Molecules / Badge / Account Custom children 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Styled typography as child
       </span>
@@ -152,7 +152,7 @@ exports[`Storyshots Molecules / Badge / Account Custom children 1`] = `
         className="c4"
       >
         <span
-          className="c3 c6"
+          className="Typography__Span-sc-10mju41-0 c3 c6"
         >
           ASK
         </span>
@@ -430,7 +430,7 @@ exports[`Storyshots Molecules / Badge / Account Showcase 1`] = `
       className="c2"
     >
       <span
-        className="c3 c4"
+        className="Typography__Span-sc-10mju41-0 c3 c4"
       >
         ISK
       </span>
@@ -439,7 +439,7 @@ exports[`Storyshots Molecules / Badge / Account Showcase 1`] = `
       className="c5"
     >
       <span
-        className="c6 c4"
+        className="Typography__Span-sc-10mju41-0 c6 c4"
       >
         ISK
       </span>
@@ -448,7 +448,7 @@ exports[`Storyshots Molecules / Badge / Account Showcase 1`] = `
       className="c7"
     >
       <span
-        className="c6 c4"
+        className="Typography__Span-sc-10mju41-0 c6 c4"
       >
         ISK
       </span>
@@ -461,7 +461,7 @@ exports[`Storyshots Molecules / Badge / Account Showcase 1`] = `
       className="c8"
     >
       <span
-        className="c3 c4"
+        className="Typography__Span-sc-10mju41-0 c3 c4"
       >
         SEB
       </span>
@@ -470,7 +470,7 @@ exports[`Storyshots Molecules / Badge / Account Showcase 1`] = `
       className="c9"
     >
       <span
-        className="c6 c4"
+        className="Typography__Span-sc-10mju41-0 c6 c4"
       >
         SEB
       </span>
@@ -479,7 +479,7 @@ exports[`Storyshots Molecules / Badge / Account Showcase 1`] = `
       className="c10"
     >
       <span
-        className="c6 c4"
+        className="Typography__Span-sc-10mju41-0 c6 c4"
       >
         SEB
       </span>
@@ -492,7 +492,7 @@ exports[`Storyshots Molecules / Badge / Account Showcase 1`] = `
       className="c11"
     >
       <span
-        className="c3 c4"
+        className="Typography__Span-sc-10mju41-0 c3 c4"
       >
         Handels
       </span>
@@ -501,7 +501,7 @@ exports[`Storyshots Molecules / Badge / Account Showcase 1`] = `
       className="c12"
     >
       <span
-        className="c6 c4"
+        className="Typography__Span-sc-10mju41-0 c6 c4"
       >
         HB
       </span>
@@ -510,7 +510,7 @@ exports[`Storyshots Molecules / Badge / Account Showcase 1`] = `
       className="c13"
     >
       <span
-        className="c6 c4"
+        className="Typography__Span-sc-10mju41-0 c6 c4"
       >
         HB
       </span>

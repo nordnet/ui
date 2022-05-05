@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / Fieldset Default 1`] = `
-.c7 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -13,7 +13,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
   align-items: center;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -29,7 +29,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -42,10 +42,13 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
   max-width: 100%;
   padding: 0;
   white-space: normal;
+}
+
+.c2 {
   margin: 0 0 16px 0;
 }
 
-.c12 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -59,7 +62,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
   display: block;
 }
 
-.c2 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -68,7 +71,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c6 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -77,7 +80,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -86,7 +89,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c12 {
   width: 20px;
   height: 20px;
   border: 1px solid #BDBDBD;
@@ -97,7 +100,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
   flex-shrink: 0;
 }
 
-.c11::before {
+.c12::before {
   content: '';
   display: block;
   padding: 2px;
@@ -111,15 +114,15 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c5 {
+.c6 {
   position: relative;
 }
 
-.c5:hover .c10 {
+.c6:hover .c11 {
   border-color: #424242;
 }
 
-.c8 {
+.c9 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -127,29 +130,29 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
   cursor: pointer;
 }
 
-.c8:checked + .c10 {
+.c9:checked + .c11 {
   border-color: #336BFF;
   background: #336BFF;
 }
 
-.c8:checked + .c10 svg {
+.c9:checked + .c11 svg {
   fill: #FFFFFF;
 }
 
-.c8[disabled] + .c10 {
+.c9[disabled] + .c11 {
   border-color: #EBEBE8;
 }
 
-.c8:checked[disabled] + .c10 {
+.c9:checked[disabled] + .c11 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c8:focus + .c10::before {
+.c9:focus + .c11::before {
   border: 1px solid #336BFF;
 }
 
-.c14 {
+.c15 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -160,13 +163,13 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
   border: 0;
 }
 
-.c3 {
+.c4 {
   width: auto;
   display: inline-block;
 }
 
 @media (min-width:760px) {
-  .c2 {
+  .c3 {
     font-size: 20px;
     line-height: 1.2;
   }
@@ -176,39 +179,39 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
   className="c0"
 >
   <legend
-    className="NormalizedLegend__Legend-sc-1svgb20-0 c1"
+    className="c1 c2"
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c3"
     >
       Colors
     </span>
   </legend>
   <div
-    className="c3"
+    className="c4"
   >
     <label
-      className="c4 c5"
+      className="c5 c6"
       hidden={false}
     >
       <span
-        className="c6"
+        className="Typography__Span-sc-10mju41-0 c7"
       >
         <div
-          className="c7"
+          className="c8"
         >
           <input
-            className="c8"
+            className="c9"
             name="example"
             type="checkbox"
             value="green"
           />
           <div
-            className="c9 c10 c11"
+            className="c10 c11 c12"
           >
             <svg
               aria-hidden="true"
-              className="c12"
+              className="c13"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -220,7 +223,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
             </svg>
           </div>
           <span
-            className="c13 c14"
+            className="Typography__Span-sc-10mju41-0 c14 c15"
           >
             Green
           </span>
@@ -229,30 +232,30 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
     </label>
   </div>
   <div
-    className="c3"
+    className="c4"
   >
     <label
-      className="c4 c5"
+      className="c5 c6"
       hidden={false}
     >
       <span
-        className="c6"
+        className="Typography__Span-sc-10mju41-0 c7"
       >
         <div
-          className="c7"
+          className="c8"
         >
           <input
-            className="c8"
+            className="c9"
             name="example"
             type="checkbox"
             value="blue"
           />
           <div
-            className="c9 c10 c11"
+            className="c10 c11 c12"
           >
             <svg
               aria-hidden="true"
-              className="c12"
+              className="c13"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -264,7 +267,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
             </svg>
           </div>
           <span
-            className="c13 c14"
+            className="Typography__Span-sc-10mju41-0 c14 c15"
           >
             Blue
           </span>
@@ -273,30 +276,30 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
     </label>
   </div>
   <div
-    className="c3"
+    className="c4"
   >
     <label
-      className="c4 c5"
+      className="c5 c6"
       hidden={false}
     >
       <span
-        className="c6"
+        className="Typography__Span-sc-10mju41-0 c7"
       >
         <div
-          className="c7"
+          className="c8"
         >
           <input
-            className="c8"
+            className="c9"
             name="example"
             type="checkbox"
             value="yellow"
           />
           <div
-            className="c9 c10 c11"
+            className="c10 c11 c12"
           >
             <svg
               aria-hidden="true"
-              className="c12"
+              className="c13"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -308,7 +311,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
             </svg>
           </div>
           <span
-            className="c13 c14"
+            className="Typography__Span-sc-10mju41-0 c14 c15"
           >
             Yellow
           </span>

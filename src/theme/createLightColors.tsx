@@ -107,7 +107,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     dropDownButtonText: rawColor.gray800,
     dropDownButtonTextHover: rawColor.blue500,
-    dropDownButtonTextActive:rawColor.blue500,
+    dropDownButtonTextActive: rawColor.blue500,
     dropDownButtonTextDisabled: rawColor.gray400,
     dropDownButtonBackground: rawColor.gray100,
     dropDownButtonBackgroundHover: rawColor.gray100,
@@ -135,6 +135,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     graphVolume: rawColor.gray5,
     graphVolumeHover: rawColor.gray4,
+    graphCrosshair: rawColor.gray400,
 
     guidanceSelectionCardIcon: rawColor.brandPink,
     iconBackdropCta: Color(rawColor.cta).alpha(0.1).rgb().string(),
@@ -184,7 +185,12 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     negativeBlackBackground: rawColor.pink500,
 
     newsLabelTextColors: [rawColor.green600, rawColor.pink600, rawColor.blue500, rawColor.teal600],
-    newsLabelBackgroundColors: [rawColor.green100, rawColor.pink100, rawColor.blue100, rawColor.teal100],
+    newsLabelBackgroundColors: [
+      rawColor.green100,
+      rawColor.pink100,
+      rawColor.blue100,
+      rawColor.teal100,
+    ],
 
     onboardingAccentBlue: rawColor.brandBlue,
     onboardingAccentGreen: rawColor.brandGreen,
@@ -235,12 +241,15 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     privateBankingBannerText: rawColor.white,
     privateBankingBannerTitle: rawColor.gray6,
 
-    progressBarActive: rawColor.cta,
+    progressBarActive: rawColor.blue500,
     progressBarDone: rawColor.green500,
     progressBarFailure: rawColor.pink600,
     progressBarNext: rawColor.gray4,
     progressBarText: rawColor.white,
     progressBarWarning: rawColor.index,
+
+    periodScrollButtonBackground: rawColor.gray100,
+    periodScrollButtonIcon: rawColor.gray800,
 
     searchBackground: rawColor.gray1,
     searchText: rawColor.gray7,
@@ -295,6 +304,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     text: rawColor.gray0,
     textLight: rawColor.white, // FIXME: to be removed later
 
+    technicalAnalysisPlotBands: rawColor.gray200,
+
     timelineActive: rawColor.cta,
     timelineFailure: rawColor.pink600,
     timelineNext: rawColor.gray4,
@@ -333,11 +344,24 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     quickFilterFocusSelectedOutline: rawColor.blue500,
 
     monthlySavingsTransferTypeInactive: rawColor.gray500,
+    daySelectInputTextInactive: rawColor.gray600,
+    daySelectActiveText: rawColor.white,
+    daySelectInactiveText: rawColor.gray500,
 
     warning: rawColor.index,
 
     worldMapLand: rawColor.blue700, // not yet in use
     worldMapWater: rawColor.gray800, // not yet in use
+
+    removeInstrumentText: rawColor.red600,
+
+    searchPopupBackground: rawColor.blue100,
+
+    monthlySavingsTableRowDivider: rawColor.gray100,
+
+    illustrationBackgroundBlue: rawColor.blue100,
+    narrowCardBorder: rawColor.gray200,
+    existingMonthlyDepositsDivider: rawColor.gray200,
 
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,

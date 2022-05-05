@@ -112,12 +112,12 @@ exports[`Storyshots Molecules / FeedbackBanner Complex Children 1`] = `
       className="c4 c5"
     >
       <span
-        className="c6"
+        className="Typography__Span-sc-10mju41-0 c6"
       >
         Warning, complex child
       </span>
       <span
-        className="c7"
+        className="Typography__Span-sc-10mju41-0 c7"
       >
         <p>
           The message can also be structured as a more complex item than just a string
@@ -244,12 +244,12 @@ exports[`Storyshots Molecules / FeedbackBanner Default Usage 1`] = `
       className="c4 c5"
     >
       <span
-        className="c6"
+        className="Typography__Span-sc-10mju41-0 c6"
       >
         Feedback banner
       </span>
       <span
-        className="c7"
+        className="Typography__Span-sc-10mju41-0 c7"
       >
         Feedback banner should be used within modules to display information that needs attention. Content is flexible, it can contain links and plain text.
       </span>
@@ -490,7 +490,7 @@ exports[`Storyshots Molecules / FeedbackBanner Different Variant 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         info
       </span>
@@ -523,12 +523,12 @@ exports[`Storyshots Molecules / FeedbackBanner Different Variant 1`] = `
             className="c8 c9"
           >
             <span
-              className="c10"
+              className="Typography__Span-sc-10mju41-0 c10"
             >
               Info
             </span>
             <span
-              className="c11"
+              className="Typography__Span-sc-10mju41-0 c11"
             >
               This is an information message
             </span>
@@ -545,7 +545,7 @@ exports[`Storyshots Molecules / FeedbackBanner Different Variant 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         error
       </span>
@@ -584,12 +584,12 @@ exports[`Storyshots Molecules / FeedbackBanner Different Variant 1`] = `
             className="c8 c9"
           >
             <span
-              className="c10"
+              className="Typography__Span-sc-10mju41-0 c10"
             >
               Error
             </span>
             <span
-              className="c11"
+              className="Typography__Span-sc-10mju41-0 c11"
             >
               This is an error message
             </span>
@@ -606,7 +606,7 @@ exports[`Storyshots Molecules / FeedbackBanner Different Variant 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         warning
       </span>
@@ -639,12 +639,12 @@ exports[`Storyshots Molecules / FeedbackBanner Different Variant 1`] = `
             className="c8 c9"
           >
             <span
-              className="c10"
+              className="Typography__Span-sc-10mju41-0 c10"
             >
               Warning
             </span>
             <span
-              className="c11"
+              className="Typography__Span-sc-10mju41-0 c11"
             >
               This is a warning message
             </span>
@@ -661,7 +661,7 @@ exports[`Storyshots Molecules / FeedbackBanner Different Variant 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         success
       </span>
@@ -700,12 +700,12 @@ exports[`Storyshots Molecules / FeedbackBanner Different Variant 1`] = `
             className="c8 c9"
           >
             <span
-              className="c10"
+              className="Typography__Span-sc-10mju41-0 c10"
             >
               Success
             </span>
             <span
-              className="c11"
+              className="Typography__Span-sc-10mju41-0 c11"
             >
               This is a success message
             </span>
@@ -880,7 +880,7 @@ exports[`Storyshots Molecules / FeedbackBanner Displaying Title 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         With title
       </span>
@@ -913,12 +913,12 @@ exports[`Storyshots Molecules / FeedbackBanner Displaying Title 1`] = `
             className="c8 c9"
           >
             <span
-              className="c10"
+              className="Typography__Span-sc-10mju41-0 c10"
             >
               This is a title
             </span>
             <span
-              className="c11"
+              className="Typography__Span-sc-10mju41-0 c11"
             >
               This message has a title
             </span>
@@ -935,7 +935,7 @@ exports[`Storyshots Molecules / FeedbackBanner Displaying Title 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Without title
       </span>
@@ -968,7 +968,7 @@ exports[`Storyshots Molecules / FeedbackBanner Displaying Title 1`] = `
             className="c8 c9"
           >
             <span
-              className="c11"
+              className="Typography__Span-sc-10mju41-0 c11"
             >
               This message does not have a title
             </span>
@@ -1058,12 +1058,12 @@ exports[`Storyshots Molecules / FeedbackBanner Without Icon 1`] = `
       className="c2 c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Disable icon
       </span>
       <span
-        className="c5"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         This banner has no icon
       </span>

@@ -28,74 +28,13 @@ Array [
   >
     Toggle drawer
   </button>,
-  .c6 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
+  .c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c3,
@@ -120,13 +59,77 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c4 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5 {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.c7 {
+.c8 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
@@ -162,7 +165,7 @@ Array [
 }
 
 @media (max-width:759px) {
-  .c7 {
+  .c8 {
     padding: 1px 12px;
   }
 }
@@ -223,22 +226,22 @@ Array [
               id="3val-Drawer"
             >
               <h2
-                className="c1 c2"
+                className="c1 Typography__Span-sc-10mju41-0 c2"
               >
                 Drawer title
               </h2>
             </span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c3 c4"
+              className="c3 c4 c5"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c5"
+                className="Typography__Span-sc-10mju41-0 c6"
               >
                 <svg
                   aria-hidden="true"
-                  className="c6"
+                  className="c7"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -253,15 +256,15 @@ Array [
             </button>
           </div>
           <div
-            className="c7"
+            className="c8"
           >
             <p
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
             </p>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <ul>
                 <li>
@@ -279,7 +282,7 @@ Array [
               </ul>
             </span>
             <p
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
             </p>
@@ -338,7 +341,7 @@ Array [
   >
     Toggle drawer
   </button>,
-  .c8 {
+  .c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -358,7 +361,7 @@ Array [
   position: relative;
 }
 
-.c9 {
+.c10 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -379,12 +382,12 @@ Array [
   width: 100%;
 }
 
-.c10 {
+.c11 {
   position: relative;
   overflow-x: hidden;
 }
 
-.c13 {
+.c14 {
   height: 16px;
   width: 4px;
   position: absolute;
@@ -393,54 +396,13 @@ Array [
   bottom: 0;
 }
 
-.c11 {
+.c12 {
   height: 16px;
   width: 4px;
   position: absolute;
   right: 0;
   pointer-events: none;
   top: 0;
-}
-
-.c6 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .c3 {
@@ -450,26 +412,6 @@ Array [
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c3,
@@ -494,13 +436,71 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c15 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
   margin: 0;
-  overflow: visible;
-  text-transform: none;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c16 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -525,29 +525,7 @@ Array [
   cursor: pointer;
 }
 
-.c15,
-.c15[type='button'],
-.c15[type='reset'],
-.c15[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c15::-moz-focus-inner,
-.c15[type='button']::-moz-focus-inner,
-.c15[type='reset']::-moz-focus-inner,
-.c15[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c15:-moz-focusring,
-.c15[type='button']:-moz-focusring,
-.c15[type='reset']:-moz-focusring,
-.c15[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c15::before {
+.c16::before {
   content: '';
   display: block;
   position: absolute;
@@ -558,36 +536,36 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c15:hover {
+.c16:hover {
   color: #2650BF;
 }
 
-.c15:hover::before {
+.c16:hover::before {
   border-color: #2650BF;
 }
 
-.c15:active {
+.c16:active {
   color: #1F4099;
 }
 
-.c15:active::before {
+.c16:active::before {
   border-color: #1F4099;
 }
 
-.c4 {
+.c5 {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.c7 {
+.c8 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
   padding: 1px 20px;
 }
 
-.c14 {
+.c15 {
   margin-top: auto;
   padding: 0 20px 20px 20px;
 }
@@ -621,13 +599,13 @@ Array [
 }
 
 @media (max-width:759px) {
-  .c7 {
+  .c8 {
     padding: 1px 12px;
   }
 }
 
 @media (max-width:759px) {
-  .c14 {
+  .c15 {
     padding: 0 12px 12px 12px;
   }
 }
@@ -688,22 +666,22 @@ Array [
               id="13val-Drawer"
             >
               <h2
-                className="c1 c2"
+                className="c1 Typography__Span-sc-10mju41-0 c2"
               >
                 Drawer title
               </h2>
             </span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c3 c4"
+              className="c3 c4 c5"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c5"
+                className="Typography__Span-sc-10mju41-0 c6"
               >
                 <svg
                   aria-hidden="true"
-                  className="c6"
+                  className="c7"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -718,27 +696,27 @@ Array [
             </button>
           </div>
           <div
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8"
+              className="c9"
             >
               <div
-                className="c9"
+                className="c10"
               >
                 <div
-                  className="c10"
+                  className="c11"
                 >
                   <div
-                    className="c11"
+                    className="c12"
                   />
                   <p
-                    className="c12"
+                    className="Typography__Span-sc-10mju41-0 c13"
                   >
                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
                   </p>
                   <span
-                    className="c12"
+                    className="Typography__Span-sc-10mju41-0 c13"
                   >
                     <ul>
                       <li>
@@ -756,28 +734,28 @@ Array [
                     </ul>
                   </span>
                   <p
-                    className="c12"
+                    className="Typography__Span-sc-10mju41-0 c13"
                   >
                     Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
                   </p>
                   <div
-                    className="c13"
+                    className="c14"
                   />
                 </div>
               </div>
             </div>
           </div>
           <div
-            className="c14"
+            className="c15"
           >
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c15"
+              className="c3 c16"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c5"
+                  className="Typography__Span-sc-10mju41-0 c6"
                 >
                   Agree
                 </span>
@@ -834,7 +812,7 @@ Array [
   >
     Toggle drawer
   </button>,
-  .c8 {
+  .c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -854,7 +832,7 @@ Array [
   position: relative;
 }
 
-.c9 {
+.c10 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -875,12 +853,12 @@ Array [
   width: 100%;
 }
 
-.c10 {
+.c11 {
   position: relative;
   overflow-x: hidden;
 }
 
-.c13 {
+.c14 {
   height: 16px;
   width: 4px;
   position: absolute;
@@ -889,54 +867,13 @@ Array [
   bottom: 0;
 }
 
-.c11 {
+.c12 {
   height: 16px;
   width: 4px;
   position: absolute;
   right: 0;
   pointer-events: none;
   top: 0;
-}
-
-.c6 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .c3 {
@@ -946,26 +883,6 @@ Array [
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c3,
@@ -990,13 +907,77 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c4 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5 {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.c7 {
+.c8 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
@@ -1032,7 +1013,7 @@ Array [
 }
 
 @media (max-width:759px) {
-  .c7 {
+  .c8 {
     padding: 1px 12px;
   }
 }
@@ -1093,22 +1074,22 @@ Array [
               id="11val-Drawer"
             >
               <h2
-                className="c1 c2"
+                className="c1 Typography__Span-sc-10mju41-0 c2"
               >
                 Drawer title
               </h2>
             </span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c3 c4"
+              className="c3 c4 c5"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c5"
+                className="Typography__Span-sc-10mju41-0 c6"
               >
                 <svg
                   aria-hidden="true"
-                  className="c6"
+                  className="c7"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -1123,27 +1104,27 @@ Array [
             </button>
           </div>
           <div
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8"
+              className="c9"
             >
               <div
-                className="c9"
+                className="c10"
               >
                 <div
-                  className="c10"
+                  className="c11"
                 >
                   <div
-                    className="c11"
+                    className="c12"
                   />
                   <p
-                    className="c12"
+                    className="Typography__Span-sc-10mju41-0 c13"
                   >
                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
                   </p>
                   <span
-                    className="c12"
+                    className="Typography__Span-sc-10mju41-0 c13"
                   >
                     <ul>
                       <li>
@@ -1161,12 +1142,12 @@ Array [
                     </ul>
                   </span>
                   <p
-                    className="c12"
+                    className="Typography__Span-sc-10mju41-0 c13"
                   >
                     Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
                   </p>
                   <div
-                    className="c13"
+                    className="c14"
                   />
                 </div>
               </div>
@@ -1222,74 +1203,13 @@ Array [
   >
     Toggle drawer
   </button>,
-  .c6 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
+  .c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c3,
@@ -1314,13 +1234,77 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c4 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5 {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.c7 {
+.c8 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
@@ -1356,7 +1340,7 @@ Array [
 }
 
 @media (max-width:759px) {
-  .c7 {
+  .c8 {
     padding: 1px 12px;
   }
 }
@@ -1417,22 +1401,22 @@ Array [
               id="19val-Drawer"
             >
               <h2
-                className="c1 c2"
+                className="c1 Typography__Span-sc-10mju41-0 c2"
               >
                 Drawer title
               </h2>
             </span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c3 c4"
+              className="c3 c4 c5"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c5"
+                className="Typography__Span-sc-10mju41-0 c6"
               >
                 <svg
                   aria-hidden="true"
-                  className="c6"
+                  className="c7"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -1447,15 +1431,15 @@ Array [
             </button>
           </div>
           <div
-            className="c7"
+            className="c8"
           >
             <p
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
             </p>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <ul>
                 <li>
@@ -1473,7 +1457,7 @@ Array [
               </ul>
             </span>
             <p
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
             </p>
@@ -1528,7 +1512,38 @@ Array [
   >
     Toggle drawer
   </button>,
-  .c6 {
+  .c3 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1565,7 +1580,7 @@ Array [
   line-height: 1.1666666666666667;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1583,13 +1598,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
+.c4 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -1612,35 +1621,13 @@ Array [
   cursor: pointer;
 }
 
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 .c9 {
-  outline: 1px solid none;
+  outline: 1px none;
   background-color: transparent;
   padding: 0px 0px 0px 0px;
 }
 
-.c9 + .c8 {
+.c9.c9 + .c9 {
   border-top: 1px solid #EBEBE8;
 }
 
@@ -1676,13 +1663,13 @@ Array [
   padding-right: 12px;
 }
 
-.c4 {
+.c5 {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.c7 {
+.c8 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
@@ -1718,7 +1705,7 @@ Array [
 }
 
 @media (max-width:759px) {
-  .c7 {
+  .c8 {
     padding: 1px 12px;
   }
 }
@@ -1779,22 +1766,22 @@ Array [
               id="23val-Drawer"
             >
               <h2
-                className="c1 c2"
+                className="c1 Typography__Span-sc-10mju41-0 c2"
               >
                 Drawer title
               </h2>
             </span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c3 c4"
+              className="c3 c4 c5"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c5"
+                className="Typography__Span-sc-10mju41-0 c6"
               >
                 <svg
                   aria-hidden="true"
-                  className="c6"
+                  className="c7"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -1809,14 +1796,14 @@ Array [
             </button>
           </div>
           <div
-            className="c7"
+            className="c8"
           >
             <div
               aria-expanded={false}
-              className="c8 c9"
+              className="c9"
             >
               <h3
-                className="c10"
+                className="Typography__Span-sc-10mju41-0 c10"
               >
                 <button
                   className="c11"
@@ -1826,7 +1813,7 @@ Array [
                   type="button"
                 >
                   <span
-                    className="c10"
+                    className="Typography__Span-sc-10mju41-0 c10"
                   >
                     Låg CO₂ risk
                   </span>
@@ -1852,10 +1839,10 @@ Array [
             </div>
             <div
               aria-expanded={false}
-              className="c8 c9"
+              className="c9"
             >
               <h3
-                className="c10"
+                className="Typography__Span-sc-10mju41-0 c10"
               >
                 <button
                   className="c11"
@@ -1865,7 +1852,7 @@ Array [
                   type="button"
                 >
                   <span
-                    className="c10"
+                    className="Typography__Span-sc-10mju41-0 c10"
                   >
                     Sustainability score
                   </span>
@@ -1940,74 +1927,13 @@ Array [
   >
     Toggle drawer
   </button>,
-  .c6 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
+  .c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c3,
@@ -2032,13 +1958,77 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c4 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5 {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.c7 {
+.c8 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
@@ -2074,7 +2064,7 @@ Array [
 }
 
 @media (max-width:759px) {
-  .c7 {
+  .c8 {
     padding: 1px 12px;
   }
 }
@@ -2135,22 +2125,22 @@ Array [
               id="9val-Drawer"
             >
               <h2
-                className="c1 c2"
+                className="c1 Typography__Span-sc-10mju41-0 c2"
               >
                 Drawer title
               </h2>
             </span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c3 c4"
+              className="c3 c4 c5"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c5"
+                className="Typography__Span-sc-10mju41-0 c6"
               >
                 <svg
                   aria-hidden="false"
-                  className="c6"
+                  className="c7"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="img"
@@ -2168,15 +2158,15 @@ Array [
             </button>
           </div>
           <div
-            className="c7"
+            className="c8"
           >
             <p
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
             </p>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <ul>
                 <li>
@@ -2194,7 +2184,7 @@ Array [
               </ul>
             </span>
             <p
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
             </p>
@@ -2272,61 +2262,6 @@ Array [
   padding-top: 0;
 }
 
-.c2 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c4 {
   font-family: inherit;
   font-size: 100%;
@@ -2334,26 +2269,6 @@ Array [
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c4,
@@ -2378,13 +2293,91 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c5 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c6 {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.c8 {
+.c9 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
@@ -2416,7 +2409,7 @@ Array [
 }
 
 @media (max-width:759px) {
-  .c8 {
+  .c9 {
     padding: 1px 12px;
   }
 }
@@ -2492,23 +2485,23 @@ Array [
                   />
                 </svg>
                 <h2
-                  className="c3"
+                  className="Typography__Span-sc-10mju41-0 c3"
                 >
                   Custom title
                 </h2>
               </div>
             </span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c4 c5"
+              className="c4 c5 c6"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c6"
+                className="Typography__Span-sc-10mju41-0 c7"
               >
                 <svg
                   aria-hidden="true"
-                  className="c7"
+                  className="c8"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -2523,10 +2516,10 @@ Array [
             </button>
           </div>
           <div
-            className="c8"
+            className="c9"
           >
             <p
-              className="c9"
+              className="Typography__Span-sc-10mju41-0 c10"
             >
               Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
             </p>
@@ -2577,65 +2570,13 @@ Array [
   >
     Toggle drawer
   </button>,
-  .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c1 {
+  .c1 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c1,
@@ -2660,13 +2601,68 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c2 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c3 {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.c5 {
+.c6 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
@@ -2691,7 +2687,7 @@ Array [
 }
 
 @media (max-width:759px) {
-  .c5 {
+  .c6 {
     padding: 1px 12px;
   }
 }
@@ -2749,16 +2745,16 @@ Array [
             onTouchStart={[Function]}
           >
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c1 c2"
+              className="c1 c2 c3"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c4"
               >
                 <svg
                   aria-hidden="true"
-                  className="c4"
+                  className="c5"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -2773,10 +2769,10 @@ Array [
             </button>
           </div>
           <div
-            className="c5"
+            className="c6"
           >
             <p
-              className="c6"
+              className="Typography__Span-sc-10mju41-0 c7"
             >
               Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
             </p>
@@ -2831,74 +2827,13 @@ Array [
   >
     Toggle drawer
   </button>,
-  .c6 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
+  .c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c3,
@@ -2923,13 +2858,77 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c4 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5 {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.c7 {
+.c8 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
@@ -2965,7 +2964,7 @@ Array [
 }
 
 @media (max-width:759px) {
-  .c7 {
+  .c8 {
     padding: 1px 12px;
   }
 }
@@ -3026,22 +3025,22 @@ Array [
               id="21val-Drawer"
             >
               <h2
-                className="c1 c2"
+                className="c1 Typography__Span-sc-10mju41-0 c2"
               >
                 Drawer title
               </h2>
             </span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c3 c4"
+              className="c3 c4 c5"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c5"
+                className="Typography__Span-sc-10mju41-0 c6"
               >
                 <svg
                   aria-hidden="true"
-                  className="c6"
+                  className="c7"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -3056,15 +3055,15 @@ Array [
             </button>
           </div>
           <div
-            className="c7"
+            className="c8"
           >
             <p
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
             </p>
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <ul>
                 <li>
@@ -3082,7 +3081,7 @@ Array [
               </ul>
             </span>
             <p
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
             </p>
@@ -3137,74 +3136,13 @@ Array [
   >
     Toggle drawer
   </button>,
-  .c6 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
+  .c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c3,
@@ -3229,13 +3167,77 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c4 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5 {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.c7 {
+.c8 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
@@ -3271,7 +3273,7 @@ Array [
 }
 
 @media (max-width:759px) {
-  .c7 {
+  .c8 {
     padding: 1px 12px;
   }
 }
@@ -3332,22 +3334,22 @@ Array [
               id="15val-Drawer"
             >
               <h2
-                className="c1 c2"
+                className="c1 Typography__Span-sc-10mju41-0 c2"
               >
                 Drawer title
               </h2>
             </span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c3 c4"
+              className="c3 c4 c5"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c5"
+                className="Typography__Span-sc-10mju41-0 c6"
               >
                 <svg
                   aria-hidden="true"
-                  className="c6"
+                  className="c7"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -3362,10 +3364,10 @@ Array [
             </button>
           </div>
           <div
-            className="c7"
+            className="c8"
           >
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               This Drawer uses a forwardRef. The ref is used with useOnClickOutside hook. Try to click outside the Drawer to close it.
             </span>
@@ -3585,7 +3587,7 @@ Array [
     data-drawer-prevent-click-outside={true}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       Random area
     </span>
@@ -3593,12 +3595,12 @@ Array [
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Clicking anywhere here does not close the drawer, using the default
          
         <span
-          className="c5"
+          className="Typography__Span-sc-10mju41-0 c5"
         >
           "data-drawer-prevent-click-outside"
         </span>
@@ -3679,12 +3681,12 @@ Array [
     data-custom-prevent-click-outside={true}
   >
     <span
-      className="c2"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       Another random area
     </span>
     <span
-      className="c3"
+      className="Typography__Span-sc-10mju41-0 c3"
     >
       Clicking anywhere here does not close the drawer as well. But this area uses a custom "data-custom-prevent-click-outside"-attribute, which is passed to the Drawer to recognize it.
     </span>
@@ -3692,7 +3694,7 @@ Array [
       className="c4"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Useful for when multiple drawers might be open but only one should remain open while clicking this area.
       </span>
@@ -3716,15 +3718,6 @@ Array [
   margin: 0;
   overflow: visible;
   text-transform: none;
-  display: inline;
-  padding: 0;
-  color: #336BFF;
-  border: none;
-  background: transparent;
-  overflow: visible;
-  -webkit-appearance: none !important;
-  cursor: pointer;
-  font-weight: inherit;
 }
 
 .c1,
@@ -3749,7 +3742,19 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c1:hover {
+.c2 {
+  display: inline;
+  padding: 0;
+  color: #336BFF;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c2:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -3782,7 +3787,7 @@ Array [
     className="c0"
   >
     <button
-      className="NormalizedButton__Button-sc-ey7f5x-0 c1"
+      className="c1 c2"
       data-custom-prevent-click-outside={true}
       onClick={[Function]}
       type="button"
@@ -3794,7 +3799,38 @@ Array [
   background-color: transparent;
 }
 
-.c2 {
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -3803,13 +3839,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c1 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
+.c2 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -3833,29 +3863,7 @@ Array [
   cursor: pointer;
 }
 
-.c1,
-.c1[type='button'],
-.c1[type='reset'],
-.c1[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c1::-moz-focus-inner,
-.c1[type='button']::-moz-focus-inner,
-.c1[type='reset']::-moz-focus-inner,
-.c1[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c1:-moz-focusring,
-.c1[type='button']:-moz-focusring,
-.c1[type='reset']:-moz-focusring,
-.c1[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c1::before {
+.c2::before {
   content: '';
   display: block;
   position: absolute;
@@ -3866,11 +3874,11 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #2650BF;
 }
 
-.c1:active {
+.c2:active {
   background-color: #1F4099;
 }
 
@@ -3902,14 +3910,14 @@ Array [
     className="c0"
   >
     <button
-      className="NormalizedButton__Button-sc-ey7f5x-0 c1"
+      className="c1 c2"
       data-custom-prevent-click-outside={true}
       onClick={[Function]}
       type="button"
     >
       <span>
         <span
-          className="c2"
+          className="Typography__Span-sc-10mju41-0 c3"
         >
           Buy Button
         </span>
@@ -3920,15 +3928,6 @@ Array [
   background-color: transparent;
 }
 
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c1 {
   font-family: inherit;
   font-size: 100%;
@@ -3936,15 +3935,6 @@ Array [
   margin: 0;
   overflow: visible;
   text-transform: none;
-  display: inline;
-  padding: 0;
-  color: #336BFF;
-  border: none;
-  background: transparent;
-  overflow: visible;
-  -webkit-appearance: none !important;
-  cursor: pointer;
-  font-weight: inherit;
 }
 
 .c1,
@@ -3969,24 +3959,45 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c1:hover {
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  display: inline;
+  padding: 0;
+  color: #336BFF;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c2:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c2 {
+.c3 {
   color: #336BFF;
   padding: 2px 4px;
 }
 
-.c2:hover {
+.c3:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #FFFFFF;
   background-color: #336BFF;
 }
 
-.c2:active {
+.c3:active {
   background-color: #1F4099;
 }
 
@@ -4018,13 +4029,13 @@ Array [
     className="c0"
   >
     <button
-      className="NormalizedButton__Button-sc-ey7f5x-0 c1 c2"
+      className="c1 c2 c3"
       data-custom-prevent-click-outside={true}
       onClick={[Function]}
       type="button"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Buy Link
       </span>
@@ -4034,15 +4045,6 @@ Array [
   background-color: transparent;
 }
 
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c1 {
   font-family: inherit;
   font-size: 100%;
@@ -4050,15 +4052,6 @@ Array [
   margin: 0;
   overflow: visible;
   text-transform: none;
-  display: inline;
-  padding: 0;
-  color: #336BFF;
-  border: none;
-  background: transparent;
-  overflow: visible;
-  -webkit-appearance: none !important;
-  cursor: pointer;
-  font-weight: inherit;
 }
 
 .c1,
@@ -4083,24 +4076,45 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c1:hover {
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  display: inline;
+  padding: 0;
+  color: #336BFF;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c2:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c2 {
+.c3 {
   color: #CC2269;
   padding: 2px 4px;
 }
 
-.c2:hover {
+.c3:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #FFFFFF;
   background-color: #CC2269;
 }
 
-.c2:active {
+.c3:active {
   background-color: #AC135A;
 }
 
@@ -4132,75 +4146,25 @@ Array [
     className="c0"
   >
     <button
-      className="NormalizedButton__Button-sc-ey7f5x-0 c1 c2"
+      className="c1 c2 c3"
       data-custom-prevent-click-outside={true}
       onClick={[Function]}
       type="button"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Sell Link
       </span>
     </button>
   </div>,
-  .c8 {
+  .c9 {
   background-color: transparent;
-}
-
-.c10 {
-  margin-top: 16px;
-  background-color: transparent;
-}
-
-.c6 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .c11 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
+  margin-top: 16px;
+  background-color: transparent;
 }
 
 .c3 {
@@ -4210,26 +4174,6 @@ Array [
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .c3,
@@ -4254,13 +4198,86 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
 .c4 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5 {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.c7 {
+.c8 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
@@ -4300,7 +4317,7 @@ Array [
 }
 
 @media (max-width:759px) {
-  .c7 {
+  .c8 {
     padding: 1px 12px;
   }
 }
@@ -4361,22 +4378,22 @@ Array [
               id="17val-Drawer"
             >
               <h2
-                className="c1 c2"
+                className="c1 Typography__Span-sc-10mju41-0 c2"
               >
                 Drawer title
               </h2>
             </span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c3 c4"
+              className="c3 c4 c5"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c5"
+                className="Typography__Span-sc-10mju41-0 c6"
               >
                 <svg
                   aria-hidden="true"
-                  className="c6"
+                  className="c7"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -4391,26 +4408,26 @@ Array [
             </button>
           </div>
           <div
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8"
+              className="c9"
             >
               <span
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 c10"
               >
                 Certain elements on this page has special data-attributes attached to them, which prevents the Drawer from closing. Try clicking on those elements and compare with clicking somewhere else.
               </span>
             </div>
             <div
-              className="c10"
+              className="c11"
             >
               <span
-                className="c9"
+                className="Typography__Span-sc-10mju41-0 c10"
               >
                 Warning: ALL drawers' remain open when clicking on elements with the default attribute (
                 <span
-                  className="c11"
+                  className="Typography__Span-sc-10mju41-0 c12"
                 >
                   "data-drawer-prevent-click-outside"
                 </span>

@@ -31,36 +31,6 @@ Array [
   justify-content: flex-start;
 }
 
-.c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 8px;
-  height: 8px;
-  fill: currentColor;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.c5 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #336BFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c2 {
   font-family: inherit;
   font-size: 100%;
@@ -68,15 +38,6 @@ Array [
   margin: 0;
   overflow: visible;
   text-transform: none;
-  display: inline;
-  padding: 0;
-  color: #336BFF;
-  border: none;
-  background: transparent;
-  overflow: visible;
-  -webkit-appearance: none !important;
-  cursor: pointer;
-  font-weight: inherit;
 }
 
 .c2,
@@ -101,12 +62,54 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c2:hover {
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c6 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #336BFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  display: inline;
+  padding: 0;
+  color: #336BFF;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c3:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c6 {
+.c7 {
   margin-left: 4px;
 }
 
@@ -118,18 +121,18 @@ Array [
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c2"
+        className="c2 c3"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 c4"
         >
           Show more
           <svg
             aria-hidden="true"
-            className="c4 c5 c6"
+            className="c5 c6 c7"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"

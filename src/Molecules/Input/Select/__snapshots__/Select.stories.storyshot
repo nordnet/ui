@@ -275,7 +275,7 @@ exports[`Storyshots Molecules / Input / Select Accessible From Document Forms 1`
             htmlFor="forms-input-test"
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               <div
                 className="c2"
@@ -293,7 +293,7 @@ exports[`Storyshots Molecules / Input / Select Accessible From Document Forms 1`
             tabIndex={0}
           >
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 c7"
             >
               <button
                 aria-expanded="false"
@@ -620,7 +620,7 @@ exports[`Storyshots Molecules / Input / Select Actions 1`] = `
           htmlFor="custom-renderers-select"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -638,7 +638,7 @@ exports[`Storyshots Molecules / Input / Select Actions 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -913,7 +913,7 @@ exports[`Storyshots Molecules / Input / Select Actions And Empty Option List 1`]
           htmlFor="custom-renderers-select"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -931,7 +931,7 @@ exports[`Storyshots Molecules / Input / Select Actions And Empty Option List 1`]
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -1254,7 +1254,7 @@ exports[`Storyshots Molecules / Input / Select Auto Focus 1`] = `
           htmlFor="onchange-select"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -1272,7 +1272,7 @@ exports[`Storyshots Molecules / Input / Select Auto Focus 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -1608,7 +1608,7 @@ Array [
               htmlFor="no-scroll-select"
             >
               <span
-                className="c5"
+                className="Typography__Span-sc-10mju41-0 c5"
               >
                 <div
                   className="c2"
@@ -1626,7 +1626,7 @@ Array [
               tabIndex={0}
             >
               <span
-                className="c7"
+                className="Typography__Span-sc-10mju41-0 c7"
               >
                 <button
                   aria-expanded="false"
@@ -2103,7 +2103,7 @@ Array [
             htmlFor="onchange-select"
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               <div
                 className="c2"
@@ -2121,7 +2121,7 @@ Array [
             tabIndex={0}
           >
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 c7"
             >
               <button
                 aria-expanded="false"
@@ -2445,7 +2445,7 @@ exports[`Storyshots Molecules / Input / Select Controlled behaviour 1`] = `
           htmlFor="onchange-select"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -2463,7 +2463,7 @@ exports[`Storyshots Molecules / Input / Select Controlled behaviour 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -2780,7 +2780,7 @@ exports[`Storyshots Molecules / Input / Select Custom Renderers 1`] = `
           htmlFor="custom-renderers-select"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -2798,7 +2798,7 @@ exports[`Storyshots Molecules / Input / Select Custom Renderers 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -3089,7 +3089,7 @@ exports[`Storyshots Molecules / Input / Select Default Story 1`] = `
             htmlFor="input-1"
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               <div
                 className="c2"
@@ -3107,7 +3107,7 @@ exports[`Storyshots Molecules / Input / Select Default Story 1`] = `
             tabIndex={0}
           >
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 c7"
             >
               <button
                 aria-expanded="false"
@@ -3541,7 +3541,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Disabled
       </span>
@@ -3622,7 +3622,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 htmlFor="disabled-select"
               >
                 <span
-                  className="c9"
+                  className="Typography__Span-sc-10mju41-0 c9"
                 >
                   <div
                     className="c6"
@@ -3640,7 +3640,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c11"
+                  className="Typography__Span-sc-10mju41-0 c11"
                 >
                   <button
                     aria-expanded="false"
@@ -3700,7 +3700,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Error
       </span>
@@ -3781,7 +3781,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 htmlFor="error-select"
               >
                 <span
-                  className="c9"
+                  className="Typography__Span-sc-10mju41-0 c9"
                 >
                   <div
                     className="c6"
@@ -3799,7 +3799,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c11"
+                  className="Typography__Span-sc-10mju41-0 c11"
                 >
                   <button
                     aria-expanded="false"
@@ -3846,7 +3846,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
               </div>
               <div>
                 <span
-                  className="c23"
+                  className="Typography__Span-sc-10mju41-0 c23"
                 >
                   <div
                     className="c24"
@@ -3870,7 +3870,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Info
       </span>
@@ -3951,7 +3951,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 htmlFor="info-select"
               >
                 <span
-                  className="c9"
+                  className="Typography__Span-sc-10mju41-0 c9"
                 >
                   <div
                     className="c6"
@@ -3969,7 +3969,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c11"
+                  className="Typography__Span-sc-10mju41-0 c11"
                 >
                   <button
                     aria-expanded="false"
@@ -4016,7 +4016,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
               </div>
               <div>
                 <span
-                  className="c26"
+                  className="Typography__Span-sc-10mju41-0 c26"
                 >
                   Some extra info
                 </span>
@@ -4035,7 +4035,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Success
       </span>
@@ -4116,7 +4116,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 htmlFor="success-select"
               >
                 <span
-                  className="c9"
+                  className="Typography__Span-sc-10mju41-0 c9"
                 >
                   <div
                     className="c6"
@@ -4134,7 +4134,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c11"
+                  className="Typography__Span-sc-10mju41-0 c11"
                 >
                   <button
                     aria-expanded="false"
@@ -4460,7 +4460,7 @@ exports[`Storyshots Molecules / Input / Select Disabled Items 1`] = `
           htmlFor="onchange-select"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -4478,7 +4478,7 @@ exports[`Storyshots Molecules / Input / Select Disabled Items 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -4827,7 +4827,7 @@ Array [
             htmlFor="no-scroll-select"
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               <div
                 className="c2"
@@ -4845,7 +4845,7 @@ Array [
             tabIndex={0}
           >
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 c7"
             >
               <button
                 aria-expanded="false"
@@ -5197,7 +5197,7 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
           htmlFor="onchange-select"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c6"
@@ -5215,7 +5215,7 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
           tabIndex={0}
         >
           <span
-            className="c8"
+            className="Typography__Span-sc-10mju41-0 c8"
           >
             <button
               aria-expanded="false"
@@ -5490,7 +5490,7 @@ exports[`Storyshots Molecules / Input / Select Fully Empty 1`] = `
           htmlFor="custom-renderers-select"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -5508,7 +5508,7 @@ exports[`Storyshots Molecules / Input / Select Fully Empty 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -5871,7 +5871,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options 1`] = `
           htmlFor="grouped-options-single"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -5889,7 +5889,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -6248,7 +6248,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect 1`] =
           htmlFor="grouped-options-multiselect"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -6266,7 +6266,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect 1`] =
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -6289,7 +6289,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect 1`] =
                   className="c12 c13"
                 >
                   <span
-                    className="c5"
+                    className="Typography__Span-sc-10mju41-0 c5"
                   >
                     Select options
                   </span>
@@ -6629,7 +6629,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect Contr
           htmlFor="grouped-options-multiselect-test"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -6647,7 +6647,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect Contr
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -6670,7 +6670,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect Contr
                   className="c12 c13"
                 >
                   <span
-                    className="c5"
+                    className="Typography__Span-sc-10mju41-0 c5"
                   >
                     Select account
                   </span>
@@ -6940,7 +6940,7 @@ exports[`Storyshots Molecules / Input / Select Hide Label 1`] = `
           htmlFor="input-1"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             Label 
           </span>
@@ -6954,7 +6954,7 @@ exports[`Storyshots Molecules / Input / Select Hide Label 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -7232,12 +7232,6 @@ exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
 }
 
 .c20 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -7249,28 +7243,6 @@ exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
   transform: translateY(3px);
   top: 20px;
   right: 12px;
-}
-
-.c20,
-.c20[type='button'],
-.c20[type='reset'],
-.c20[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c20::-moz-focus-inner,
-.c20[type='button']::-moz-focus-inner,
-.c20[type='reset']::-moz-focus-inner,
-.c20[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c20:-moz-focusring,
-.c20[type='button']:-moz-focusring,
-.c20[type='reset']:-moz-focusring,
-.c20[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -7434,7 +7406,7 @@ exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
                     htmlFor="no-scroll-select"
                   >
                     <span
-                      className="c8"
+                      className="Typography__Span-sc-10mju41-0 c8"
                     >
                       <div
                         className="c5"
@@ -7451,7 +7423,7 @@ exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
                     tabIndex={0}
                   >
                     <span
-                      className="c10"
+                      className="Typography__Span-sc-10mju41-0 c10"
                     >
                       <button
                         aria-expanded="false"
@@ -7500,7 +7472,7 @@ exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
             </div>
           </div>
           <button
-            className="c20"
+            className="c11 c20"
             onClick={[Function]}
             type="button"
           >
@@ -7710,12 +7682,6 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
 }
 
 .c9 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
   display: inline;
   padding: 0;
   color: #336BFF;
@@ -7725,28 +7691,6 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   -webkit-appearance: none !important;
   cursor: pointer;
   font-weight: inherit;
-}
-
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c9:hover {
@@ -7973,7 +7917,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
         className="c3"
       >
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 c4"
         >
           <button
             aria-expanded="false"
@@ -7993,7 +7937,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
               className="c7 c8"
             >
               <div
-                className="c9"
+                className="c5 c9"
                 onClick={[Function]}
                 type="button"
               >
@@ -8020,7 +7964,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
                     className="c13"
                   >
                     <span
-                      className="c14"
+                      className="Typography__Span-sc-10mju41-0 c14"
                     >
                       Select account
                     </span>
@@ -8202,12 +8146,6 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
 }
 
 .c9 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
   display: inline;
   padding: 0;
   color: #336BFF;
@@ -8217,28 +8155,6 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   -webkit-appearance: none !important;
   cursor: pointer;
   font-weight: inherit;
-}
-
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c9:hover {
@@ -8465,7 +8381,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
         className="c3"
       >
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 c4"
         >
           <button
             aria-expanded="false"
@@ -8485,7 +8401,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
               className="c7 c8"
             >
               <div
-                className="c9"
+                className="c5 c9"
                 onClick={[Function]}
                 type="button"
               >
@@ -8512,7 +8428,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
                     className="c13"
                   >
                     <span
-                      className="c14"
+                      className="Typography__Span-sc-10mju41-0 c14"
                     >
                       Select account
                     </span>
@@ -8685,12 +8601,6 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
 }
 
 .c9 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
   display: inline;
   padding: 0;
   color: #336BFF;
@@ -8700,28 +8610,6 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   -webkit-appearance: none !important;
   cursor: pointer;
   font-weight: inherit;
-}
-
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c9:hover {
@@ -8946,7 +8834,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
         className="c3"
       >
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 c4"
         >
           <button
             aria-expanded="false"
@@ -8966,7 +8854,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
               className="c7 c8"
             >
               <div
-                className="c9"
+                className="c5 c9"
                 onClick={[Function]}
                 type="button"
               >
@@ -8993,7 +8881,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
                     className="c13"
                   >
                     <span
-                      className="c4"
+                      className="Typography__Span-sc-10mju41-0 c4"
                     >
                       Select account
                     </span>
@@ -9175,12 +9063,6 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
 }
 
 .c9 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
   display: inline;
   padding: 0;
   color: #336BFF;
@@ -9190,28 +9072,6 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   -webkit-appearance: none !important;
   cursor: pointer;
   font-weight: inherit;
-}
-
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c9:hover {
@@ -9436,7 +9296,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
         className="c3"
       >
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 c4"
         >
           <button
             aria-expanded="false"
@@ -9456,7 +9316,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
               className="c7 c8"
             >
               <div
-                className="c9"
+                className="c5 c9"
                 onClick={[Function]}
                 type="button"
               >
@@ -9483,7 +9343,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
                     className="c13"
                   >
                     <span
-                      className="c14"
+                      className="Typography__Span-sc-10mju41-0 c14"
                     >
                       Select account
                     </span>
@@ -9665,12 +9525,6 @@ exports[`Storyshots Molecules / Input / Select List Positioned To The Left 1`] =
 }
 
 .c9 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
   display: inline;
   padding: 0;
   color: #336BFF;
@@ -9680,28 +9534,6 @@ exports[`Storyshots Molecules / Input / Select List Positioned To The Left 1`] =
   -webkit-appearance: none !important;
   cursor: pointer;
   font-weight: inherit;
-}
-
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c9:hover {
@@ -9928,7 +9760,7 @@ exports[`Storyshots Molecules / Input / Select List Positioned To The Left 1`] =
         className="c3"
       >
         <span
-          className="c4"
+          className="Typography__Span-sc-10mju41-0 c4"
         >
           <button
             aria-expanded="false"
@@ -9948,7 +9780,7 @@ exports[`Storyshots Molecules / Input / Select List Positioned To The Left 1`] =
               className="c7 c8"
             >
               <div
-                className="c9"
+                className="c5 c9"
                 onClick={[Function]}
                 type="button"
               >
@@ -9975,7 +9807,7 @@ exports[`Storyshots Molecules / Input / Select List Positioned To The Left 1`] =
                     className="c13"
                   >
                     <span
-                      className="c14"
+                      className="Typography__Span-sc-10mju41-0 c14"
                     >
                       Select account
                     </span>
@@ -10258,7 +10090,7 @@ exports[`Storyshots Molecules / Input / Select Multi Select Uncontrolled 1`] = `
           htmlFor="input-1"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -10276,7 +10108,7 @@ exports[`Storyshots Molecules / Input / Select Multi Select Uncontrolled 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -10299,7 +10131,7 @@ exports[`Storyshots Molecules / Input / Select Multi Select Uncontrolled 1`] = `
                   className="c12 c13"
                 >
                   <span
-                    className="c7"
+                    className="Typography__Span-sc-10mju41-0 c7"
                   >
                     Placeholder
                   </span>
@@ -10595,7 +10427,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect 1`] = `
           htmlFor="custom-renderers-select"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -10613,7 +10445,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -10636,7 +10468,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect 1`] = `
                   className="c12 c13"
                 >
                   <span
-                    className="c5"
+                    className="Typography__Span-sc-10mju41-0 c5"
                   >
                     Select account
                   </span>
@@ -10932,7 +10764,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Actions 1`] = `
           htmlFor="custom-renderers-select"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -10950,7 +10782,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Actions 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -10973,7 +10805,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Actions 1`] = `
                   className="c12 c13"
                 >
                   <span
-                    className="c5"
+                    className="Typography__Span-sc-10mju41-0 c5"
                   >
                     Select account
                   </span>
@@ -11269,7 +11101,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Columns 1`] = `
           htmlFor="custom-renderers-select"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -11287,7 +11119,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Columns 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -11310,7 +11142,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Columns 1`] = `
                   className="c12 c13"
                 >
                   <span
-                    className="c5"
+                    className="Typography__Span-sc-10mju41-0 c5"
                   >
                     Select account
                   </span>
@@ -11613,7 +11445,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All 1`] = `
           htmlFor="multiwithall-select"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -11631,7 +11463,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -11654,7 +11486,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All 1`] = `
                   className="c12 c13"
                 >
                   <span
-                    className="c5"
+                    className="Typography__Span-sc-10mju41-0 c5"
                   >
                     Select account
                   </span>
@@ -11969,7 +11801,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All With Full 
           htmlFor="multiwithall-select"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -11987,7 +11819,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All With Full 
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -12010,7 +11842,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All With Full 
                   className="c12 c13"
                 >
                   <span
-                    className="c5"
+                    className="Typography__Span-sc-10mju41-0 c5"
                   >
                     Select account
                   </span>
@@ -12278,7 +12110,7 @@ exports[`Storyshots Molecules / Input / Select On A Coloured Background 1`] = `
             htmlFor="input-on-coloured-background"
           >
             <span
-              className="c6"
+              className="Typography__Span-sc-10mju41-0 c6"
             >
               <div
                 className="c3"
@@ -12296,7 +12128,7 @@ exports[`Storyshots Molecules / Input / Select On A Coloured Background 1`] = `
             tabIndex={0}
           >
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c8"
             >
               <button
                 aria-expanded="false"
@@ -12620,7 +12452,7 @@ exports[`Storyshots Molecules / Input / Select On Blur And On Focus 1`] = `
           htmlFor="custom-renderers-select"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -12638,7 +12470,7 @@ exports[`Storyshots Molecules / Input / Select On Blur And On Focus 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -12961,7 +12793,7 @@ exports[`Storyshots Molecules / Input / Select On Search Query Change 1`] = `
           htmlFor="success-select"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -12979,7 +12811,7 @@ exports[`Storyshots Molecules / Input / Select On Search Query Change 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -13258,7 +13090,7 @@ exports[`Storyshots Molecules / Input / Select On Search Query Change Without Op
           htmlFor="success-select"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -13276,7 +13108,7 @@ exports[`Storyshots Molecules / Input / Select On Search Query Change Without Op
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -13951,7 +13783,7 @@ exports[`Storyshots Molecules / Input / Select Overflow Story 1`] = `
           htmlFor="input-1"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -13969,7 +13801,7 @@ exports[`Storyshots Molecules / Input / Select Overflow Story 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -14284,7 +14116,7 @@ exports[`Storyshots Molecules / Input / Select Passing Truncated Components 1`] 
           htmlFor="input-1"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -14302,7 +14134,7 @@ exports[`Storyshots Molecules / Input / Select Passing Truncated Components 1`] 
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -14325,7 +14157,7 @@ exports[`Storyshots Molecules / Input / Select Passing Truncated Components 1`] 
                   className="c2 c12"
                 >
                   <span
-                    className="c7 c13"
+                    className="Typography__Span-sc-10mju41-0 c7 c13"
                   >
                     2 selected along with a very long text for reference of truncation
                   </span>
@@ -14633,7 +14465,7 @@ exports[`Storyshots Molecules / Input / Select Placement Top 1`] = `
             htmlFor="no-scroll-select"
           >
             <span
-              className="c6"
+              className="Typography__Span-sc-10mju41-0 c6"
             >
               <div
                 className="c3"
@@ -14651,7 +14483,7 @@ exports[`Storyshots Molecules / Input / Select Placement Top 1`] = `
             tabIndex={0}
           >
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c8"
             >
               <button
                 aria-expanded="false"
@@ -14976,7 +14808,7 @@ exports[`Storyshots Molecules / Input / Select Preselected Options 1`] = `
           htmlFor="input-1"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -14994,7 +14826,7 @@ exports[`Storyshots Molecules / Input / Select Preselected Options 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -15017,7 +14849,7 @@ exports[`Storyshots Molecules / Input / Select Preselected Options 1`] = `
                   className="c12 c13"
                 >
                   <span
-                    className="c7"
+                    className="Typography__Span-sc-10mju41-0 c7"
                   >
                     2 selected
                   </span>
@@ -15297,7 +15129,7 @@ exports[`Storyshots Molecules / Input / Select Search Story 1`] = `
           htmlFor="input-1"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -15315,7 +15147,7 @@ exports[`Storyshots Molecules / Input / Select Search Story 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -15748,7 +15580,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Disabled
       </span>
@@ -15829,7 +15661,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 htmlFor="disabled-select"
               >
                 <span
-                  className="c9"
+                  className="Typography__Span-sc-10mju41-0 c9"
                 >
                   <div
                     className="c6"
@@ -15848,7 +15680,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c11"
+                  className="Typography__Span-sc-10mju41-0 c11"
                 >
                   <button
                     aria-expanded="false"
@@ -15908,7 +15740,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Error
       </span>
@@ -15989,7 +15821,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 htmlFor="error-select"
               >
                 <span
-                  className="c9"
+                  className="Typography__Span-sc-10mju41-0 c9"
                 >
                   <div
                     className="c6"
@@ -16008,7 +15840,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c11"
+                  className="Typography__Span-sc-10mju41-0 c11"
                 >
                   <button
                     aria-expanded="false"
@@ -16055,7 +15887,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
               </div>
               <div>
                 <span
-                  className="c23"
+                  className="Typography__Span-sc-10mju41-0 c23"
                 >
                   <div
                     className="c24"
@@ -16079,7 +15911,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Info
       </span>
@@ -16160,7 +15992,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 htmlFor="info-select"
               >
                 <span
-                  className="c9"
+                  className="Typography__Span-sc-10mju41-0 c9"
                 >
                   <div
                     className="c6"
@@ -16179,7 +16011,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c11"
+                  className="Typography__Span-sc-10mju41-0 c11"
                 >
                   <button
                     aria-expanded="false"
@@ -16226,7 +16058,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
               </div>
               <div>
                 <span
-                  className="c26"
+                  className="Typography__Span-sc-10mju41-0 c26"
                 >
                   Some extra info
                 </span>
@@ -16245,7 +16077,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Success
       </span>
@@ -16326,7 +16158,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 htmlFor="success-select"
               >
                 <span
-                  className="c9"
+                  className="Typography__Span-sc-10mju41-0 c9"
                 >
                   <div
                     className="c6"
@@ -16345,7 +16177,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c11"
+                  className="Typography__Span-sc-10mju41-0 c11"
                 >
                   <button
                     aria-expanded="false"
@@ -16635,7 +16467,7 @@ exports[`Storyshots Molecules / Input / Select Tracking 1`] = `
           htmlFor="input-1"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -16653,7 +16485,7 @@ exports[`Storyshots Molecules / Input / Select Tracking 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             <button
               aria-expanded="false"
@@ -16941,7 +16773,7 @@ Array [
             htmlFor="input-1"
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               <div
                 className="c2"
@@ -16959,7 +16791,7 @@ Array [
             tabIndex={0}
           >
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 c7"
             >
               <button
                 aria-expanded="false"
@@ -17243,7 +17075,7 @@ Array [
             htmlFor="input-2"
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               <div
                 className="c2"
@@ -17261,7 +17093,7 @@ Array [
             tabIndex={0}
           >
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 c7"
             >
               <button
                 aria-expanded="false"
@@ -17615,7 +17447,7 @@ exports[`Storyshots Molecules / Input / Select With Custom Height 1`] = `
         className="c4"
       >
         <span
-          className="c5"
+          className="Typography__Span-sc-10mju41-0 c5"
         >
           Setting a custom \`height\` overwrites the \`size\` prop
         </span>
@@ -17624,7 +17456,7 @@ exports[`Storyshots Molecules / Input / Select With Custom Height 1`] = `
         className="c6"
       >
         <span
-          className="c5"
+          className="Typography__Span-sc-10mju41-0 c5"
         >
           Setting a custom \`height\` overwrites the \`size\` prop
         </span>
@@ -17672,7 +17504,7 @@ exports[`Storyshots Molecules / Input / Select With Custom Height 1`] = `
                 htmlFor="input-with-custom-height"
               >
                 <span
-                  className="c13"
+                  className="Typography__Span-sc-10mju41-0 c13"
                 >
                   <div
                     className="c14"
@@ -17691,7 +17523,7 @@ exports[`Storyshots Molecules / Input / Select With Custom Height 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c16"
+                  className="Typography__Span-sc-10mju41-0 c16"
                 >
                   <button
                     aria-expanded="false"
@@ -18002,7 +17834,7 @@ exports[`Storyshots Molecules / Input / Select With Label Tooltip 1`] = `
           htmlFor="input-1"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -18051,7 +17883,7 @@ exports[`Storyshots Molecules / Input / Select With Label Tooltip 1`] = `
           tabIndex={0}
         >
           <span
-            className="c10"
+            className="Typography__Span-sc-10mju41-0 c10"
           >
             <button
               aria-expanded="false"
@@ -18360,7 +18192,7 @@ Array [
             htmlFor="input-1"
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               <div
                 className="c2"
@@ -18409,7 +18241,7 @@ Array [
             tabIndex={0}
           >
             <span
-              className="c10"
+              className="Typography__Span-sc-10mju41-0 c10"
             >
               <button
                 aria-expanded="false"
@@ -18716,7 +18548,7 @@ exports[`Storyshots Molecules / Input / Select With Modal Title Full Screen On M
           htmlFor="input-1"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             <div
               className="c2"
@@ -18765,7 +18597,7 @@ exports[`Storyshots Molecules / Input / Select With Modal Title Full Screen On M
           tabIndex={0}
         >
           <span
-            className="c10"
+            className="Typography__Span-sc-10mju41-0 c10"
           >
             <button
               aria-expanded="false"
@@ -19054,7 +18886,7 @@ exports[`Storyshots Molecules / Input / Select Without Search Component 1`] = `
             htmlFor="input-without-a-search-component"
           >
             <span
-              className="c6"
+              className="Typography__Span-sc-10mju41-0 c6"
             >
               <div
                 className="c3"
@@ -19072,7 +18904,7 @@ exports[`Storyshots Molecules / Input / Select Without Search Component 1`] = `
             tabIndex={0}
           >
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c8"
             >
               <button
                 aria-expanded="false"

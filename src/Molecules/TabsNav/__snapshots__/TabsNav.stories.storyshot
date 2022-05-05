@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
-.c11 {
+.c12 {
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: transparent;
@@ -30,7 +30,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   display: flex;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -43,22 +43,22 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   margin-right: -8px;
 }
 
-.c4 > * {
+.c5 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c4 > *:not(:first-child) {
+.c5 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c10 {
+.c11 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c9 {
+.c10 {
   height: 44px;
   position: relative;
   display: -webkit-inline-box;
@@ -72,7 +72,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   font-size: 16px;
 }
 
-.c7 {
+.c8 {
   height: 44px;
   position: relative;
   display: -webkit-inline-box;
@@ -86,7 +86,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   font-size: 16px;
 }
 
-.c7::after {
+.c8::after {
   content: '';
   background-color: #336BFF;
   display: block;
@@ -97,7 +97,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   left: 0;
 }
 
-.c8 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -106,7 +106,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   line-height: 1.5;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -115,7 +115,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   line-height: 1.5;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -143,8 +143,15 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   display: none;
 }
 
+.c4 {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
 @media (min-width:760px) {
-  .c4 {
+  .c5 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -156,12 +163,12 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
     margin-right: -16px;
   }
 
-  .c4 > * {
+  .c5 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c4 > *:not(:first-child) {
+  .c5 > *:not(:first-child) {
     padding-top: 0;
   }
 }
@@ -177,22 +184,23 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
       <div
         className="c2 c3"
       >
-        <div
-          className="c4"
+        <ul
+          className="c4 c5"
+          direction="row"
         >
           <li
             className="c1"
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c6"
             >
               <a
-                className="c6"
+                className="c7"
                 href="/route1"
                 onClick={[Function]}
               >
                 <span
-                  className="c7"
+                  className="c8"
                   height={11}
                 >
                   <div>
@@ -206,15 +214,15 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
             className="c1"
           >
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <a
-                className="c6"
+                className="c7"
                 href="/route2"
                 onClick={[Function]}
               >
                 <span
-                  className="c9"
+                  className="c10"
                   height={11}
                 >
                   <div>
@@ -228,15 +236,15 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
             className="c1"
           >
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <a
-                className="c6"
+                className="c7"
                 href="/route3"
                 onClick={[Function]}
               >
                 <span
-                  className="c9"
+                  className="c10"
                   height={11}
                 >
                   <div>
@@ -250,15 +258,15 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
             className="c1"
           >
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <a
-                className="c6"
+                className="c7"
                 href="/route4"
                 onClick={[Function]}
               >
                 <span
-                  className="c9"
+                  className="c10"
                   height={11}
                 >
                   <div>
@@ -272,15 +280,15 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
             className="c1"
           >
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <a
-                className="c6"
+                className="c7"
                 href="/route5"
                 onClick={[Function]}
               >
                 <span
-                  className="c9"
+                  className="c10"
                   height={11}
                 >
                   <div>
@@ -294,15 +302,15 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
             className="c1"
           >
             <span
-              className="c8"
+              className="Typography__Span-sc-10mju41-0 c9"
             >
               <a
-                className="c6"
+                className="c7"
                 href="/route6"
                 onClick={[Function]}
               >
                 <span
-                  className="c9"
+                  className="c10"
                   height={11}
                 >
                   <div>
@@ -312,21 +320,21 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
               </a>
             </span>
           </li>
-        </div>
+        </ul>
       </div>
     </div>
     <div
       className="c1"
     >
       <div
-        className="c10"
+        className="c11"
       />
     </div>
     <div
       className="c1"
     >
       <div
-        className="c11"
+        className="c12"
       >
         /route1 content
       </div>
@@ -336,7 +344,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
 `;
 
 exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
-.c11 {
+.c12 {
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: transparent;
@@ -365,7 +373,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
   display: flex;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -378,22 +386,22 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
   margin-right: -8px;
 }
 
-.c4 > * {
+.c5 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c4 > *:not(:first-child) {
+.c5 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c10 {
+.c11 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c9 {
+.c10 {
   height: 44px;
   position: relative;
   display: -webkit-inline-box;
@@ -407,7 +415,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
   font-size: 16px;
 }
 
-.c7 {
+.c8 {
   height: 44px;
   position: relative;
   display: -webkit-inline-box;
@@ -421,7 +429,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
   font-size: 16px;
 }
 
-.c7::after {
+.c8::after {
   content: '';
   background-color: #336BFF;
   display: block;
@@ -432,7 +440,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
   left: 0;
 }
 
-.c8 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -441,7 +449,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
   line-height: 1.5;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -450,7 +458,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
   line-height: 1.5;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -467,8 +475,15 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
   margin-bottom: 0;
 }
 
+.c4 {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
 @media (min-width:760px) {
-  .c4 {
+  .c5 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -480,12 +495,12 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
     margin-right: -16px;
   }
 
-  .c4 > * {
+  .c5 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c4 > *:not(:first-child) {
+  .c5 > *:not(:first-child) {
     padding-top: 0;
   }
 }
@@ -499,22 +514,23 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
     <div
       className="c2 c3"
     >
-      <div
-        className="c4"
+      <ul
+        className="c4 c5"
+        direction="row"
       >
         <li
           className="c1"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <a
-              className="c6"
+              className="c7"
               href="/route1"
               onClick={[Function]}
             >
               <span
-                className="c7"
+                className="c8"
                 height={11}
               >
                 Link to /route1
@@ -526,15 +542,15 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
           className="c1"
         >
           <span
-            className="c8"
+            className="Typography__Span-sc-10mju41-0 c9"
           >
             <a
-              className="c6"
+              className="c7"
               href="/route2"
               onClick={[Function]}
             >
               <span
-                className="c9"
+                className="c10"
                 height={11}
               >
                 <div>
@@ -544,21 +560,21 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
             </a>
           </span>
         </li>
-      </div>
+      </ul>
     </div>
   </div>
   <div
     className="c1"
   >
     <div
-      className="c10"
+      className="c11"
     />
   </div>
   <div
     className="c1"
   >
     <div
-      className="c11"
+      className="c12"
     >
       /route1 content
     </div>
@@ -567,7 +583,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
 `;
 
 exports[`Storyshots Molecules / TabsNav Integration: With react-router and height modified 1`] = `
-.c11 {
+.c12 {
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: transparent;
@@ -596,7 +612,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
   display: flex;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -609,22 +625,22 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
   margin-right: -8px;
 }
 
-.c4 > * {
+.c5 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c4 > *:not(:first-child) {
+.c5 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c10 {
+.c11 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c9 {
+.c10 {
   height: 96px;
   position: relative;
   display: -webkit-inline-box;
@@ -638,7 +654,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
   font-size: 16px;
 }
 
-.c7 {
+.c8 {
   height: 96px;
   position: relative;
   display: -webkit-inline-box;
@@ -652,7 +668,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
   font-size: 16px;
 }
 
-.c7::after {
+.c8::after {
   content: '';
   background-color: #336BFF;
   display: block;
@@ -663,7 +679,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
   left: 0;
 }
 
-.c8 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -672,7 +688,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
   line-height: 1.5;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -681,7 +697,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
   line-height: 1.5;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -698,8 +714,15 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
   margin-bottom: 0;
 }
 
+.c4 {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
 @media (min-width:760px) {
-  .c4 {
+  .c5 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -711,12 +734,12 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
     margin-right: -16px;
   }
 
-  .c4 > * {
+  .c5 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c4 > *:not(:first-child) {
+  .c5 > *:not(:first-child) {
     padding-top: 0;
   }
 }
@@ -730,22 +753,23 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
     <div
       className="c2 c3"
     >
-      <div
-        className="c4"
+      <ul
+        className="c4 c5"
+        direction="row"
       >
         <li
           className="c1"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <a
-              className="c6"
+              className="c7"
               href="/route1"
               onClick={[Function]}
             >
               <span
-                className="c7"
+                className="c8"
                 height={24}
               >
                 Link to /route1
@@ -757,15 +781,15 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
           className="c1"
         >
           <span
-            className="c8"
+            className="Typography__Span-sc-10mju41-0 c9"
           >
             <a
-              className="c6"
+              className="c7"
               href="/route2"
               onClick={[Function]}
             >
               <span
-                className="c9"
+                className="c10"
                 height={24}
               >
                 <div>
@@ -775,21 +799,21 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
             </a>
           </span>
         </li>
-      </div>
+      </ul>
     </div>
   </div>
   <div
     className="c1"
   >
     <div
-      className="c10"
+      className="c11"
     />
   </div>
   <div
     className="c1"
   >
     <div
-      className="c11"
+      className="c12"
     >
       /route1 content
     </div>
@@ -798,7 +822,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
 `;
 
 exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] = `
-.c9 {
+.c10 {
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: transparent;
@@ -827,7 +851,7 @@ exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] 
   display: flex;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -840,22 +864,22 @@ exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] 
   margin-right: -8px;
 }
 
-.c4 > * {
+.c5 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c4 > *:not(:first-child) {
+.c5 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c8 {
+.c9 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c7 {
+.c8 {
   height: 44px;
   position: relative;
   display: -webkit-inline-box;
@@ -869,7 +893,7 @@ exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] 
   font-size: 16px;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -878,7 +902,7 @@ exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] 
   line-height: 1.5;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -895,8 +919,15 @@ exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] 
   margin-bottom: 0;
 }
 
+.c4 {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
 @media (min-width:760px) {
-  .c4 {
+  .c5 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -908,12 +939,12 @@ exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] 
     margin-right: -16px;
   }
 
-  .c4 > * {
+  .c5 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c4 > *:not(:first-child) {
+  .c5 > *:not(:first-child) {
     padding-top: 0;
   }
 }
@@ -927,22 +958,23 @@ exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] 
     <div
       className="c2 c3"
     >
-      <div
-        className="c4"
+      <ul
+        className="c4 c5"
+        direction="row"
       >
         <li
           className="c1"
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <a
-              className="c6"
+              className="c7"
               href="/route2"
               onClick={[Function]}
             >
               <span
-                className="c7"
+                className="c8"
                 height={11}
               >
                 <div>
@@ -952,21 +984,21 @@ exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] 
             </a>
           </span>
         </li>
-      </div>
+      </ul>
     </div>
   </div>
   <div
     className="c1"
   >
     <div
-      className="c8"
+      className="c9"
     />
   </div>
   <div
     className="c1"
   >
     <div
-      className="c9"
+      className="c10"
     >
       /route1 content
     </div>

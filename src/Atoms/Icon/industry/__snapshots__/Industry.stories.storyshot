@@ -105,7 +105,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         BioTech16
       </span>
@@ -137,7 +137,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Commodity16
       </span>
@@ -189,7 +189,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Communications16
       </span>
@@ -225,7 +225,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Consumer16
       </span>
@@ -255,7 +255,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         DividendStock16
       </span>
@@ -287,7 +287,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         EmergingMarkets16
       </span>
@@ -319,7 +319,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Energy16
       </span>
@@ -351,7 +351,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Environment16
       </span>
@@ -383,7 +383,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Financial16
       </span>
@@ -413,7 +413,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Healthcare16
       </span>
@@ -447,7 +447,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         GrowthStock16
       </span>
@@ -477,7 +477,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Industrial16
       </span>
@@ -507,7 +507,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         OtherIndustry16
       </span>
@@ -539,7 +539,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Pharmaceutical16
       </span>
@@ -575,7 +575,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         RealEstate16
       </span>
@@ -607,7 +607,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Technology16
       </span>
@@ -645,7 +645,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Transportation16
       </span>
@@ -681,7 +681,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Utilities16
       </span>
@@ -715,7 +715,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 16px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ValueStock16
       </span>
@@ -820,7 +820,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         BioTech24
       </span>
@@ -852,7 +852,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Commodity24
       </span>
@@ -892,7 +892,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Communications24
       </span>
@@ -928,7 +928,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Consumer24
       </span>
@@ -960,7 +960,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         DividendStock24
       </span>
@@ -992,7 +992,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         EmergingMarkets24
       </span>
@@ -1024,7 +1024,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Energy24
       </span>
@@ -1056,7 +1056,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Environment24
       </span>
@@ -1088,7 +1088,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Financial24
       </span>
@@ -1118,7 +1118,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Healthcare24
       </span>
@@ -1152,7 +1152,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         GrowthStock24
       </span>
@@ -1182,7 +1182,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Industrial24
       </span>
@@ -1214,7 +1214,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         OtherIndustry24
       </span>
@@ -1246,7 +1246,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Pharmaceutical24
       </span>
@@ -1282,7 +1282,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         RealEstate24
       </span>
@@ -1314,7 +1314,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Technology24
       </span>
@@ -1352,7 +1352,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Transportation24
       </span>
@@ -1388,7 +1388,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Utilities24
       </span>
@@ -1422,7 +1422,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 24px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ValueStock24
       </span>
@@ -1527,7 +1527,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         BioTech32
       </span>
@@ -1559,7 +1559,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Commodity32
       </span>
@@ -1599,7 +1599,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Communications32
       </span>
@@ -1641,7 +1641,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Consumer32
       </span>
@@ -1671,7 +1671,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         DividendStock32
       </span>
@@ -1703,7 +1703,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         EmergingMarkets32
       </span>
@@ -1735,7 +1735,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Energy32
       </span>
@@ -1767,7 +1767,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Environment32
       </span>
@@ -1799,7 +1799,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Financial32
       </span>
@@ -1829,7 +1829,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Healthcare32
       </span>
@@ -1863,7 +1863,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         GrowthStock32
       </span>
@@ -1893,7 +1893,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Industrial32
       </span>
@@ -1923,7 +1923,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         OtherIndustry32
       </span>
@@ -1955,7 +1955,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Pharmaceutical32
       </span>
@@ -1991,7 +1991,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         RealEstate32
       </span>
@@ -2023,7 +2023,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Technology32
       </span>
@@ -2061,7 +2061,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Transportation32
       </span>
@@ -2097,7 +2097,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         Utilities32
       </span>
@@ -2131,7 +2131,7 @@ exports[`Storyshots Atoms / Icon / Category / Industry 32px 1`] = `
       className="c3"
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         ValueStock32
       </span>

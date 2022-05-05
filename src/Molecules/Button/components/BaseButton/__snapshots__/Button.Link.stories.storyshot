@@ -1,15 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / Button / Button Disabled link looking like a button 1`] = `
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c0 {
   font-family: inherit;
   font-size: 100%;
@@ -17,28 +8,6 @@ exports[`Storyshots Molecules / Button / Button Disabled link looking like a but
   margin: 0;
   overflow: visible;
   text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #EEEEEE;
-  color: #9E9E9E;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
 }
 
 .c0,
@@ -63,7 +32,41 @@ exports[`Storyshots Molecules / Button / Button Disabled link looking like a but
   outline: 1px dotted ButtonText;
 }
 
-.c0::before {
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #EEEEEE;
+  color: #9E9E9E;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c1::before {
   content: '';
   display: block;
   position: absolute;
@@ -75,14 +78,14 @@ exports[`Storyshots Molecules / Button / Button Disabled link looking like a but
 }
 
 <button
-  className="NormalizedButton__Button-sc-ey7f5x-0 c0"
+  className="c0 c1"
   disabled={true}
   onClick={[Function]}
   type="button"
 >
   <span>
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 c2"
     >
       Button
     </span>
@@ -157,7 +160,7 @@ exports[`Storyshots Molecules / Button / Button External link looking like a but
 >
   <span>
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       Button
     </span>
@@ -355,7 +358,7 @@ exports[`Storyshots Molecules / Button / Button Link looking like a button 1`] =
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Reset
       </span>
@@ -368,7 +371,7 @@ exports[`Storyshots Molecules / Button / Button Link looking like a button 1`] =
       >
         <span>
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             To Route1
           </span>
@@ -384,7 +387,7 @@ exports[`Storyshots Molecules / Button / Button Link looking like a button 1`] =
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Submit
       </span>
@@ -397,7 +400,7 @@ exports[`Storyshots Molecules / Button / Button Link looking like a button 1`] =
       >
         <span>
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c5"
           >
             To Route2
           </span>
@@ -473,7 +476,7 @@ exports[`Storyshots Molecules / Button / Button Link looking like a button that 
 >
   <span>
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       Button
     </span>
@@ -547,7 +550,7 @@ exports[`Storyshots Molecules / Button / Button Link looking like a button with 
 >
   <span>
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       Button
     </span>
@@ -582,7 +585,7 @@ Array [
     className="c0"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       Primary
     </span>
@@ -772,7 +775,7 @@ Array [
         className="c2"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 c3"
         >
           t =&gt; t.color.cta
         </span>
@@ -785,7 +788,7 @@ Array [
         >
           <span>
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               Button
             </span>
@@ -801,7 +804,7 @@ Array [
         className="c2"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 c3"
         >
           t =&gt; t.color.negative
         </span>
@@ -814,7 +817,7 @@ Array [
         >
           <span>
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               Button
             </span>
@@ -860,7 +863,7 @@ Array [
     className="c0"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       Secondary
     </span>
@@ -1066,7 +1069,7 @@ Array [
         className="c2"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 c3"
         >
           t =&gt; t.color.cta
         </span>
@@ -1079,7 +1082,7 @@ Array [
         >
           <span>
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               Button
             </span>
@@ -1095,7 +1098,7 @@ Array [
         className="c2"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 c3"
         >
           t =&gt; t.color.negative
         </span>
@@ -1108,7 +1111,7 @@ Array [
         >
           <span>
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               Button
             </span>
@@ -1285,7 +1288,7 @@ exports[`Storyshots Molecules / Button / Button Links looking like buttons compo
     >
       <span>
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 c3"
         >
           Submit
         </span>
@@ -1302,7 +1305,7 @@ exports[`Storyshots Molecules / Button / Button Links looking like buttons compo
     >
       <span>
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 c3"
         >
           Reset
         </span>
@@ -1476,7 +1479,7 @@ exports[`Storyshots Molecules / Button / Button Neutral button looking like link
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Reset
       </span>
@@ -1488,7 +1491,7 @@ exports[`Storyshots Molecules / Button / Button Neutral button looking like link
         onClick={[Function]}
       >
         <span
-          className="c5"
+          className="Typography__Span-sc-10mju41-0 c5"
         >
           To Route1
         </span>
@@ -1503,7 +1506,7 @@ exports[`Storyshots Molecules / Button / Button Neutral button looking like link
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Reset
       </span>
@@ -1521,7 +1524,7 @@ exports[`Storyshots Molecules / Button / Button Neutral button looking like link
             className="c7"
           >
             <div
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               To Route1
             </div>

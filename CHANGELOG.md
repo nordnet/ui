@@ -1,3 +1,104 @@
+## [10.26.1](https://github.com/nordnet/ui/compare/v10.26.0...v10.26.1) (2022-05-04)
+
+
+### Bug Fixes
+
+* use a visible keyboard navigation focus color for input select ([2ee00ae](https://github.com/nordnet/ui/commit/2ee00ae))
+
+# [10.26.0](https://github.com/nordnet/ui/compare/v10.25.4...v10.26.0) (2022-04-26)
+
+
+### Features
+
+* add new colors ([89159f9](https://github.com/nordnet/ui/commit/89159f9))
+
+## [10.25.4](https://github.com/nordnet/ui/compare/v10.25.3...v10.25.4) (2022-04-25)
+
+
+### Bug Fixes
+
+* revert color back ([c22d0ff](https://github.com/nordnet/ui/commit/c22d0ff))
+
+## [10.25.3](https://github.com/nordnet/ui/compare/v10.25.2...v10.25.3) (2022-04-25)
+
+
+### Bug Fixes
+
+* bump story shot ([807cf8b](https://github.com/nordnet/ui/commit/807cf8b))
+* bump styled components ([95aa498](https://github.com/nordnet/ui/commit/95aa498))
+* update a few colors ([5f0d530](https://github.com/nordnet/ui/commit/5f0d530))
+* yarn and bump storyshots ([231c61b](https://github.com/nordnet/ui/commit/231c61b))
+
+## [10.25.2](https://github.com/nordnet/ui/compare/v10.25.1...v10.25.2) (2022-04-22)
+
+
+### Bug Fixes
+
+* add colors for transfer info modal in monthly savings nordics ([612f32e](https://github.com/nordnet/ui/commit/612f32e))
+
+## [10.25.1](https://github.com/nordnet/ui/compare/v10.25.0...v10.25.1) (2022-04-22)
+
+
+### Bug Fixes
+
+* correct outline ([61426d5](https://github.com/nordnet/ui/commit/61426d5))
+* unwrap styling and add color ([cdd9f48](https://github.com/nordnet/ui/commit/cdd9f48))
+
+# [10.25.0](https://github.com/nordnet/ui/compare/v10.24.2...v10.25.0) (2022-04-21)
+
+
+### Features
+
+* 🎸 enable flex behaviour on title with multiple items ([46ba7dd](https://github.com/nordnet/ui/commit/46ba7dd))
+
+## [10.24.2](https://github.com/nordnet/ui/compare/v10.24.1...v10.24.2) (2022-04-21)
+
+
+### Bug Fixes
+
+* update color ([42e67e0](https://github.com/nordnet/ui/commit/42e67e0))
+
+## [10.24.1](https://github.com/nordnet/ui/compare/v10.24.0...v10.24.1) (2022-04-21)
+
+
+### Bug Fixes
+
+* add color and update story ([9cd6c53](https://github.com/nordnet/ui/commit/9cd6c53))
+* add more colors ([277f4b8](https://github.com/nordnet/ui/commit/277f4b8))
+* add ms table divider colors ([0d43e55](https://github.com/nordnet/ui/commit/0d43e55))
+* correct progress bar colors ([07bd67d](https://github.com/nordnet/ui/commit/07bd67d))
+* different name ([e4b94b7](https://github.com/nordnet/ui/commit/e4b94b7))
+* use more generic names ([5e18a27](https://github.com/nordnet/ui/commit/5e18a27))
+
+# [10.24.0](https://github.com/nordnet/ui/compare/v10.23.0...v10.24.0) (2022-04-19)
+
+
+### Features
+
+* 🎸 add new crosshair color ([949f7ae](https://github.com/nordnet/ui/commit/949f7ae))
+* add new graph colors ([b298cf4](https://github.com/nordnet/ui/commit/b298cf4))
+
+# [10.23.0](https://github.com/nordnet/ui/compare/v10.22.1...v10.23.0) (2022-04-19)
+
+
+### Bug Fixes
+
+* change dark and type ([7557162](https://github.com/nordnet/ui/commit/7557162))
+* make more semantic ([ae08977](https://github.com/nordnet/ui/commit/ae08977))
+
+
+### Features
+
+* add new color ([c1db459](https://github.com/nordnet/ui/commit/c1db459))
+
+## [10.22.1](https://github.com/nordnet/ui/compare/v10.22.0...v10.22.1) (2022-04-05)
+
+
+### Bug Fixes
+
+* 🐛 li elements in tabs now have a ul parent ([b60644c](https://github.com/nordnet/ui/commit/b60644c))
+* 🐛 render titles container as ul in nav tabs ([423c063](https://github.com/nordnet/ui/commit/423c063))
+
 # [10.22.0](https://github.com/nordnet/ui/compare/v10.21.2...v10.22.0) (2022-03-30)
 
 

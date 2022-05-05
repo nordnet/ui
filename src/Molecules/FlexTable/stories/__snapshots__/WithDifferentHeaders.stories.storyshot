@@ -290,7 +290,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
   className="c0"
 >
   <span
-    className="c1"
+    className="Typography__Span-sc-10mju41-0 c1"
   >
     Controlled sortable headers
   </span>
@@ -324,7 +324,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
                 className="c13 c14"
               >
                 <span
-                  className="c15 c16"
+                  className="Typography__Span-sc-10mju41-0 c15 c16"
                 >
                   Controlled1
                 </span>
@@ -371,7 +371,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
                 className="c13 c14"
               >
                 <span
-                  className="c15 c16"
+                  className="Typography__Span-sc-10mju41-0 c15 c16"
                 >
                   Controlled2
                 </span>
@@ -404,7 +404,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
           className="c13 c14"
         >
           <span
-            className="c15 c16"
+            className="Typography__Span-sc-10mju41-0 c15 c16"
           >
             Not sortable
           </span>
@@ -432,7 +432,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
                 className="c13 c14"
               >
                 <span
-                  className="c15 c16"
+                  className="Typography__Span-sc-10mju41-0 c15 c16"
                 >
                   Controlled3
                 </span>
@@ -465,7 +465,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
           className="c13 c14"
         >
           <span
-            className="c15 c16"
+            className="Typography__Span-sc-10mju41-0 c15 c16"
           />
         </div>
       </div>
@@ -789,7 +789,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
   className="c0"
 >
   <span
-    className="c1"
+    className="Typography__Span-sc-10mju41-0 c1"
   >
     Table header variations
   </span>
@@ -809,7 +809,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
           className="c8 c9"
         >
           <span
-            className="c10 c11"
+            className="Typography__Span-sc-10mju41-0 c10 c11"
           >
             Table header 1 flex 1
           </span>
@@ -823,7 +823,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
           className="c8 c9"
         >
           <span
-            className="c10 c11"
+            className="Typography__Span-sc-10mju41-0 c10 c11"
           >
             Table header 2 flex 3
           </span>
@@ -894,7 +894,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
                 className="c8 c9"
               >
                 <span
-                  className="c10 c11"
+                  className="Typography__Span-sc-10mju41-0 c10 c11"
                 >
                   Customised header
                 </span>
@@ -927,7 +927,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
           className="c8 c9"
         >
           <span
-            className="c10 c11"
+            className="Typography__Span-sc-10mju41-0 c10 c11"
           >
             Table header 3 no flex
           </span>
@@ -938,7 +938,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
         role="columnheader"
       >
         <span
-          className="c1"
+          className="Typography__Span-sc-10mju41-0 c1"
         >
           React component
         </span>
@@ -951,7 +951,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
           className="c8 c9"
         >
           <span
-            className="c10 c11"
+            className="Typography__Span-sc-10mju41-0 c10 c11"
           />
         </div>
       </div>
@@ -1304,7 +1304,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   className="c0"
 >
   <span
-    className="c1"
+    className="Typography__Span-sc-10mju41-0 c1"
   >
     Uncontrolled sortable headers with different alignments
   </span>
@@ -1338,7 +1338,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
                 className="c13 c14"
               >
                 <span
-                  className="c15 c16"
+                  className="Typography__Span-sc-10mju41-0 c15 c16"
                 >
                   Center
                 </span>
@@ -1385,7 +1385,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
                 className="c13 c14"
               >
                 <span
-                  className="c15 c16"
+                  className="Typography__Span-sc-10mju41-0 c15 c16"
                 >
                   Right
                 </span>
@@ -1432,7 +1432,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
                 className="c13 c14"
               >
                 <span
-                  className="c15 c16"
+                  className="Typography__Span-sc-10mju41-0 c15 c16"
                 >
                   Left
                 </span>
@@ -1479,7 +1479,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
                 className="c13 c14"
               >
                 <span
-                  className="c15 c16"
+                  className="Typography__Span-sc-10mju41-0 c15 c16"
                 >
                   Left
                 </span>
@@ -1512,7 +1512,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
           className="c13 c14"
         >
           <span
-            className="c15 c16"
+            className="Typography__Span-sc-10mju41-0 c15 c16"
           />
         </div>
       </div>
@@ -1845,7 +1845,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   className="c0"
 >
   <span
-    className="c1"
+    className="Typography__Span-sc-10mju41-0 c1"
   >
     Sortable headers – only ascending/descending
   </span>
@@ -1879,7 +1879,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
                 className="c13 c14"
               >
                 <span
-                  className="c15 c16"
+                  className="Typography__Span-sc-10mju41-0 c15 c16"
                 >
                   Controlled1
                 </span>
@@ -1929,7 +1929,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
                 className="c13 c14"
               >
                 <span
-                  className="c20 c16"
+                  className="Typography__Span-sc-10mju41-0 c20 c16"
                 >
                   Controlled2
                 </span>
@@ -1962,7 +1962,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
           className="c13 c14"
         >
           <span
-            className="c20 c16"
+            className="Typography__Span-sc-10mju41-0 c20 c16"
           >
             Not sortable
           </span>
@@ -1990,7 +1990,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
                 className="c13 c14"
               >
                 <span
-                  className="c20 c16"
+                  className="Typography__Span-sc-10mju41-0 c20 c16"
                 >
                   Controlled3
                 </span>
@@ -2023,7 +2023,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
           className="c13 c14"
         >
           <span
-            className="c20 c16"
+            className="Typography__Span-sc-10mju41-0 c20 c16"
           />
         </div>
       </div>
@@ -2106,7 +2106,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   flex: 1;
 }
 
-.c21 {
+.c22 {
   color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2116,6 +2116,37 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
+}
+
+.c19 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c19,
+.c19[type='button'],
+.c19[type='reset'],
+.c19[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c19::-moz-focus-inner,
+.c19[type='button']::-moz-focus-inner,
+.c19[type='reset']::-moz-focus-inner,
+.c19[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c19:-moz-focusring,
+.c19[type='button']:-moz-focusring,
+.c19[type='reset']:-moz-focusring,
+.c19[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c1 {
@@ -2145,7 +2176,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   line-height: 1.5;
 }
 
-.c20 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2154,13 +2185,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   line-height: 1.4285714285714286;
 }
 
-.c19 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
+.c20 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -2181,28 +2206,6 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   border: none;
   border-radius: 0;
   cursor: not-allowed;
-}
-
-.c19,
-.c19[type='button'],
-.c19[type='reset'],
-.c19[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c19::-moz-focus-inner,
-.c19[type='button']::-moz-focus-inner,
-.c19[type='reset']::-moz-focus-inner,
-.c19[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c19:-moz-focusring,
-.c19[type='button']:-moz-focusring,
-.c19[type='reset']:-moz-focusring,
-.c19[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c8 {
@@ -2454,7 +2457,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   className="c0"
 >
   <span
-    className="c1"
+    className="Typography__Span-sc-10mju41-0 c1"
   >
     Sticky headers for different screen sizes
   </span>
@@ -2474,7 +2477,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c10 c11"
+            className="Typography__Span-sc-10mju41-0 c10 c11"
           >
             Header 1
           </span>
@@ -2488,7 +2491,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c10 c11"
+            className="Typography__Span-sc-10mju41-0 c10 c11"
           >
             Header 2
           </span>
@@ -2502,7 +2505,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c10 c11"
+            className="Typography__Span-sc-10mju41-0 c10 c11"
           >
             Header 3
           </span>
@@ -2516,7 +2519,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c10 c11"
+            className="Typography__Span-sc-10mju41-0 c10 c11"
           >
             Header 4
           </span>
@@ -2530,7 +2533,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c10 c11"
+            className="Typography__Span-sc-10mju41-0 c10 c11"
           />
         </div>
       </div>
@@ -2547,7 +2550,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             1
@@ -2563,7 +2566,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             1
@@ -2579,7 +2582,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             1
@@ -2595,7 +2598,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             1
@@ -2609,17 +2612,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -2647,7 +2650,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             2
@@ -2663,7 +2666,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             2
@@ -2679,7 +2682,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             2
@@ -2695,7 +2698,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             2
@@ -2709,17 +2712,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -2747,7 +2750,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             3
@@ -2763,7 +2766,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             3
@@ -2779,7 +2782,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             3
@@ -2795,7 +2798,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             3
@@ -2809,17 +2812,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -2847,7 +2850,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             4
@@ -2863,7 +2866,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             4
@@ -2879,7 +2882,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             4
@@ -2895,7 +2898,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             4
@@ -2909,17 +2912,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -2947,7 +2950,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             5
@@ -2963,7 +2966,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             5
@@ -2979,7 +2982,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             5
@@ -2995,7 +2998,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             5
@@ -3009,17 +3012,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -3047,7 +3050,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             6
@@ -3063,7 +3066,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             6
@@ -3079,7 +3082,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             6
@@ -3095,7 +3098,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             6
@@ -3109,17 +3112,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -3147,7 +3150,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             7
@@ -3163,7 +3166,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             7
@@ -3179,7 +3182,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             7
@@ -3195,7 +3198,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             7
@@ -3209,17 +3212,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -3247,7 +3250,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             8
@@ -3263,7 +3266,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             8
@@ -3279,7 +3282,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             8
@@ -3295,7 +3298,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             8
@@ -3309,17 +3312,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -3347,7 +3350,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             9
@@ -3363,7 +3366,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             9
@@ -3379,7 +3382,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             9
@@ -3395,7 +3398,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             9
@@ -3409,17 +3412,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -3447,7 +3450,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             10
@@ -3463,7 +3466,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             10
@@ -3479,7 +3482,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             10
@@ -3495,7 +3498,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             10
@@ -3509,17 +3512,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -3547,7 +3550,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             11
@@ -3563,7 +3566,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             11
@@ -3579,7 +3582,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             11
@@ -3595,7 +3598,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             11
@@ -3609,17 +3612,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -3647,7 +3650,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             12
@@ -3663,7 +3666,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             12
@@ -3679,7 +3682,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             12
@@ -3695,7 +3698,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             12
@@ -3709,17 +3712,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -3747,7 +3750,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             13
@@ -3763,7 +3766,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             13
@@ -3779,7 +3782,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             13
@@ -3795,7 +3798,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             13
@@ -3809,17 +3812,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -3847,7 +3850,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             14
@@ -3863,7 +3866,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             14
@@ -3879,7 +3882,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             14
@@ -3895,7 +3898,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             14
@@ -3909,17 +3912,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -3947,7 +3950,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             15
@@ -3963,7 +3966,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             15
@@ -3979,7 +3982,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             15
@@ -3995,7 +3998,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             15
@@ -4009,17 +4012,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -4047,7 +4050,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             16
@@ -4063,7 +4066,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             16
@@ -4079,7 +4082,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             16
@@ -4095,7 +4098,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             16
@@ -4109,17 +4112,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -4147,7 +4150,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             17
@@ -4163,7 +4166,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             17
@@ -4179,7 +4182,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             17
@@ -4195,7 +4198,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             17
@@ -4209,17 +4212,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -4247,7 +4250,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             18
@@ -4263,7 +4266,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             18
@@ -4279,7 +4282,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             18
@@ -4295,7 +4298,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             18
@@ -4309,17 +4312,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -4347,7 +4350,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             19
@@ -4363,7 +4366,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             19
@@ -4379,7 +4382,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             19
@@ -4395,7 +4398,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             19
@@ -4409,17 +4412,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -4447,7 +4450,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             20
@@ -4463,7 +4466,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             20
@@ -4479,7 +4482,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             20
@@ -4495,7 +4498,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             20
@@ -4509,17 +4512,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -4547,7 +4550,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             21
@@ -4563,7 +4566,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             21
@@ -4579,7 +4582,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             21
@@ -4595,7 +4598,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             21
@@ -4609,17 +4612,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -4647,7 +4650,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             22
@@ -4663,7 +4666,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             22
@@ -4679,7 +4682,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             22
@@ -4695,7 +4698,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             22
@@ -4709,17 +4712,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -4747,7 +4750,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             23
@@ -4763,7 +4766,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             23
@@ -4779,7 +4782,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             23
@@ -4795,7 +4798,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             23
@@ -4809,17 +4812,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -4847,7 +4850,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             24
@@ -4863,7 +4866,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             24
@@ -4879,7 +4882,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             24
@@ -4895,7 +4898,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             24
@@ -4909,17 +4912,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -4947,7 +4950,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             25
@@ -4963,7 +4966,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             25
@@ -4979,7 +4982,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             25
@@ -4995,7 +4998,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             25
@@ -5009,17 +5012,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -5047,7 +5050,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             26
@@ -5063,7 +5066,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             26
@@ -5079,7 +5082,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             26
@@ -5095,7 +5098,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             26
@@ -5109,17 +5112,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -5147,7 +5150,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             27
@@ -5163,7 +5166,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             27
@@ -5179,7 +5182,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             27
@@ -5195,7 +5198,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             27
@@ -5209,17 +5212,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -5247,7 +5250,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             28
@@ -5263,7 +5266,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             28
@@ -5279,7 +5282,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             28
@@ -5295,7 +5298,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             28
@@ -5309,17 +5312,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -5347,7 +5350,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             29
@@ -5363,7 +5366,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             29
@@ -5379,7 +5382,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             29
@@ -5395,7 +5398,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             29
@@ -5409,17 +5412,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -5447,7 +5450,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             30
@@ -5463,7 +5466,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             30
@@ -5479,7 +5482,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             30
@@ -5495,7 +5498,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             30
@@ -5509,17 +5512,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -5547,7 +5550,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             31
@@ -5563,7 +5566,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             31
@@ -5579,7 +5582,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             31
@@ -5595,7 +5598,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             31
@@ -5609,17 +5612,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -5647,7 +5650,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             32
@@ -5663,7 +5666,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             32
@@ -5679,7 +5682,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             32
@@ -5695,7 +5698,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             32
@@ -5709,17 +5712,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -5747,7 +5750,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             33
@@ -5763,7 +5766,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             33
@@ -5779,7 +5782,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             33
@@ -5795,7 +5798,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             33
@@ -5809,17 +5812,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -5847,7 +5850,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             34
@@ -5863,7 +5866,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             34
@@ -5879,7 +5882,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             34
@@ -5895,7 +5898,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             34
@@ -5909,17 +5912,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -5947,7 +5950,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             35
@@ -5963,7 +5966,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             35
@@ -5979,7 +5982,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             35
@@ -5995,7 +5998,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             35
@@ -6009,17 +6012,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -6047,7 +6050,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             36
@@ -6063,7 +6066,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             36
@@ -6079,7 +6082,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             36
@@ -6095,7 +6098,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             36
@@ -6109,17 +6112,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -6147,7 +6150,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             37
@@ -6163,7 +6166,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             37
@@ -6179,7 +6182,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             37
@@ -6195,7 +6198,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             37
@@ -6209,17 +6212,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -6247,7 +6250,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             38
@@ -6263,7 +6266,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             38
@@ -6279,7 +6282,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             38
@@ -6295,7 +6298,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             38
@@ -6309,17 +6312,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -6347,7 +6350,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             39
@@ -6363,7 +6366,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             39
@@ -6379,7 +6382,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             39
@@ -6395,7 +6398,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             39
@@ -6409,17 +6412,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -6447,7 +6450,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             40
@@ -6463,7 +6466,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             40
@@ -6479,7 +6482,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             40
@@ -6495,7 +6498,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             40
@@ -6509,17 +6512,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -6547,7 +6550,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             41
@@ -6563,7 +6566,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             41
@@ -6579,7 +6582,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             41
@@ -6595,7 +6598,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             41
@@ -6609,17 +6612,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -6647,7 +6650,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             42
@@ -6663,7 +6666,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             42
@@ -6679,7 +6682,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             42
@@ -6695,7 +6698,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             42
@@ -6709,17 +6712,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -6747,7 +6750,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             43
@@ -6763,7 +6766,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             43
@@ -6779,7 +6782,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             43
@@ -6795,7 +6798,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             43
@@ -6809,17 +6812,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -6847,7 +6850,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             44
@@ -6863,7 +6866,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             44
@@ -6879,7 +6882,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             44
@@ -6895,7 +6898,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             44
@@ -6909,17 +6912,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -6947,7 +6950,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             45
@@ -6963,7 +6966,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             45
@@ -6979,7 +6982,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             45
@@ -6995,7 +6998,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             45
@@ -7009,17 +7012,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -7047,7 +7050,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             46
@@ -7063,7 +7066,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             46
@@ -7079,7 +7082,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             46
@@ -7095,7 +7098,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             46
@@ -7109,17 +7112,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -7147,7 +7150,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             47
@@ -7163,7 +7166,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             47
@@ -7179,7 +7182,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             47
@@ -7195,7 +7198,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             47
@@ -7209,17 +7212,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -7247,7 +7250,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             48
@@ -7263,7 +7266,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             48
@@ -7279,7 +7282,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             48
@@ -7295,7 +7298,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             48
@@ -7309,17 +7312,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -7347,7 +7350,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             49
@@ -7363,7 +7366,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             49
@@ -7379,7 +7382,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             49
@@ -7395,7 +7398,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             49
@@ -7409,17 +7412,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -7447,7 +7450,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             50
@@ -7463,7 +7466,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             50
@@ -7479,7 +7482,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             50
@@ -7495,7 +7498,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           className="c8 c9"
         >
           <span
-            className="c17 c11"
+            className="Typography__Span-sc-10mju41-0 c17 c11"
           >
             Cell 
             50
@@ -7509,17 +7512,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
+          className="c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c20"
+            className="Typography__Span-sc-10mju41-0 c21"
           >
             <svg
               aria-hidden="true"
-              className="c21"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -7847,7 +7850,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
   className="c0"
 >
   <span
-    className="c1"
+    className="Typography__Span-sc-10mju41-0 c1"
   >
     Uncontrolled sortable headers
   </span>
@@ -7881,7 +7884,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
                 className="c13 c14"
               >
                 <span
-                  className="c15 c16"
+                  className="Typography__Span-sc-10mju41-0 c15 c16"
                 >
                   Uncontrolled 1
                 </span>
@@ -7928,7 +7931,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
                 className="c13 c14"
               >
                 <span
-                  className="c15 c16"
+                  className="Typography__Span-sc-10mju41-0 c15 c16"
                 >
                   Uncontrolled 2
                 </span>
@@ -7975,7 +7978,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
                 className="c13 c14"
               >
                 <span
-                  className="c15 c16"
+                  className="Typography__Span-sc-10mju41-0 c15 c16"
                 >
                   With initial sort order
                 </span>
@@ -8022,7 +8025,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
                 className="c13 c14"
               >
                 <span
-                  className="c15 c16"
+                  className="Typography__Span-sc-10mju41-0 c15 c16"
                 >
                   Uncontrolled 3
                 </span>
@@ -8055,7 +8058,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
           className="c13 c14"
         >
           <span
-            className="c15 c16"
+            className="Typography__Span-sc-10mju41-0 c15 c16"
           />
         </div>
       </div>

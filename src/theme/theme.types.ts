@@ -358,6 +358,7 @@ export type ThemeColors = {
   flagBorder: string;
   /** gray2 */
   fundExchange: string;
+
   /** complementaryGreen1 */
   generationSavingsTimelineColor1: string;
   /** complementaryPink1 */
@@ -368,6 +369,8 @@ export type ThemeColors = {
   generationSavingsTimelineColor4: string;
   /** gray100 */
   keyFiguresBackground: string;
+  /** grey400 */
+  graphCrosshair: string;
   /** gray5 */
   graphVolume: string;
   /** gray4 */
@@ -662,6 +665,12 @@ export type ThemeColors = {
   sfdrArticle9: string;
   /** pink100 */
   popularBadgeBackground: string;
+  /** gray800 */
+  periodScrollButtonBackground: string;
+  /** gray100 */
+  periodScrollButtonIcon: string;
+  /** gray200 */
+  technicalAnalysisPlotBands: string;
   /** Join Shareville Illustration */
   joinSharevilleIllustration: string;
   /** Join Shareville Badge */
@@ -670,6 +679,24 @@ export type ThemeColors = {
   joinSharevilleBanner: string;
   /** Monthly Savings Transfer Type Inactive */
   monthlySavingsTransferTypeInactive: string;
+  /** day select input inactive */
+  daySelectInputTextInactive: string;
+  /** day select day active / hover */
+  daySelectActiveText: string;
+  /** day select day inactive */
+  daySelectInactiveText: string;
+  /** remove instrument added */
+  removeInstrumentText: string;
+  /** background for toaster pop up */
+  searchPopupBackground: string;
+  /** MS table row divider */
+  monthlySavingsTableRowDivider: string;
+  /** illustration background blue */
+  illustrationBackgroundBlue: string;
+  /** border for narrow cards in transfer info modal */
+  narrowCardBorder: string;
+  /** existing monthly deposits table row divider */
+  existingMonthlyDepositsDivider: string;
   /** @deprecated * gray3 */
   disabled: string;
   /** @deprecated * complementaryBlue2 */

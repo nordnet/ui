@@ -191,7 +191,7 @@ exports[`Storyshots Molecules / Input / Checkbox Checkboxes with different size 
       hidden={false}
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         <div
           className="c5"
@@ -219,7 +219,7 @@ exports[`Storyshots Molecules / Input / Checkbox Checkboxes with different size 
             </svg>
           </div>
           <span
-            className="c11 c12"
+            className="Typography__Span-sc-10mju41-0 c11 c12"
           >
             small
           </span>
@@ -235,7 +235,7 @@ exports[`Storyshots Molecules / Input / Checkbox Checkboxes with different size 
       hidden={false}
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         <div
           className="c5"
@@ -263,7 +263,7 @@ exports[`Storyshots Molecules / Input / Checkbox Checkboxes with different size 
             </svg>
           </div>
           <span
-            className="c11 c12"
+            className="Typography__Span-sc-10mju41-0 c11 c12"
           >
             medium
           </span>
@@ -279,7 +279,7 @@ exports[`Storyshots Molecules / Input / Checkbox Checkboxes with different size 
       hidden={false}
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         <div
           className="c5"
@@ -307,7 +307,7 @@ exports[`Storyshots Molecules / Input / Checkbox Checkboxes with different size 
             </svg>
           </div>
           <span
-            className="c11 c12"
+            className="Typography__Span-sc-10mju41-0 c11 c12"
           >
             default
           </span>
@@ -466,7 +466,7 @@ exports[`Storyshots Molecules / Input / Checkbox Default 1`] = `
     hidden={false}
   >
     <span
-      className="c3"
+      className="Typography__Span-sc-10mju41-0 c3"
     >
       <div
         className="c4"
@@ -494,7 +494,7 @@ exports[`Storyshots Molecules / Input / Checkbox Default 1`] = `
           </svg>
         </div>
         <span
-          className="c10 c11"
+          className="Typography__Span-sc-10mju41-0 c10 c11"
         >
           Green
         </span>
@@ -679,7 +679,7 @@ Array [
       hidden={false}
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         <div
           className="c4"
@@ -707,7 +707,7 @@ Array [
             </svg>
           </div>
           <span
-            className="c10 c11"
+            className="Typography__Span-sc-10mju41-0 c10 c11"
           >
             Green
             <svg
@@ -924,7 +924,7 @@ Array [
       hidden={false}
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         <div
           className="c4"
@@ -952,7 +952,7 @@ Array [
             </svg>
           </div>
           <span
-            className="c10 c11"
+            className="Typography__Span-sc-10mju41-0 c10 c11"
           >
             Quisque varius massa ut augue convallis, ac vehicula orci aliquet. Mauris consequat pretium tempus. Morbi sagittis facilisis pellentesque. Maecenas sodales neque nec sapien suscipit tempus. Quisque elementum auctor urna, nec laoreet nibh vehicula et.
             <svg
@@ -1167,7 +1167,7 @@ exports[`Storyshots Molecules / Input / Checkbox Default with tooltip 1`] = `
     hidden={false}
   >
     <span
-      className="c3"
+      className="Typography__Span-sc-10mju41-0 c3"
     >
       <div
         className="c4"
@@ -1195,7 +1195,7 @@ exports[`Storyshots Molecules / Input / Checkbox Default with tooltip 1`] = `
           </svg>
         </div>
         <span
-          className="c10 c11"
+          className="Typography__Span-sc-10mju41-0 c10 c11"
         >
           Green
           <svg
@@ -1409,7 +1409,7 @@ exports[`Storyshots Molecules / Input / Checkbox Default with tooltip with a lon
     hidden={false}
   >
     <span
-      className="c3"
+      className="Typography__Span-sc-10mju41-0 c3"
     >
       <div
         className="c4"
@@ -1437,7 +1437,7 @@ exports[`Storyshots Molecules / Input / Checkbox Default with tooltip with a lon
           </svg>
         </div>
         <span
-          className="c10 c11"
+          className="Typography__Span-sc-10mju41-0 c10 c11"
         >
           Quisque varius massa ut augue convallis, ac vehicula orci aliquet. Mauris consequat pretium tempus. Morbi sagittis facilisis pellentesque. Maecenas sodales neque nec sapien suscipit tempus. Quisque elementum auctor urna, nec laoreet nibh vehicula et.
           <svg
@@ -1506,7 +1506,7 @@ Array [
     className="c0"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       Disabled
     </span>
@@ -1741,7 +1741,7 @@ Array [
         className="c2"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 c3"
         >
           Checked
         </span>
@@ -1755,7 +1755,7 @@ Array [
             hidden={false}
           >
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 c7"
             >
               <div
                 className="c8"
@@ -1785,7 +1785,7 @@ Array [
                   </svg>
                 </div>
                 <span
-                  className="c14 c15"
+                  className="Typography__Span-sc-10mju41-0 c14 c15"
                 >
                   Green
                 </span>
@@ -1803,7 +1803,7 @@ Array [
         className="c2"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 c3"
         >
           Not Checked
         </span>
@@ -1817,7 +1817,7 @@ Array [
             hidden={false}
           >
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 c7"
             >
               <div
                 className="c8"
@@ -1846,7 +1846,7 @@ Array [
                   </svg>
                 </div>
                 <span
-                  className="c14 c15"
+                  className="Typography__Span-sc-10mju41-0 c14 c15"
                 >
                   Blue
                 </span>
@@ -1864,7 +1864,7 @@ Array [
         className="c2"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 c3"
         >
           Not Disabled
         </span>
@@ -1878,7 +1878,7 @@ Array [
             hidden={false}
           >
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 c7"
             >
               <div
                 className="c8"
@@ -1906,7 +1906,7 @@ Array [
                   </svg>
                 </div>
                 <span
-                  className="c16 c15"
+                  className="Typography__Span-sc-10mju41-0 c16 c15"
                 >
                   Red
                 </span>
@@ -2089,7 +2089,7 @@ exports[`Storyshots Molecules / Input / Checkbox Element as label 1`] = `
     hidden={false}
   >
     <span
-      className="c3"
+      className="Typography__Span-sc-10mju41-0 c3"
     >
       <div
         className="c4"
@@ -2117,16 +2117,16 @@ exports[`Storyshots Molecules / Input / Checkbox Element as label 1`] = `
           </svg>
         </div>
         <span
-          className="c10 c11"
+          className="Typography__Span-sc-10mju41-0 c10 c11"
         >
           <span
-            className="c12"
+            className="Typography__Span-sc-10mju41-0 c12"
           >
             The first part is bold,
           </span>
            
           <span
-            className="c10"
+            className="Typography__Span-sc-10mju41-0 c10"
           >
             the second part is regular
           </span>
@@ -2150,7 +2150,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2160,16 +2160,16 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
   margin-right: -10px;
 }
 
-.c6 > * {
+.c7 > * {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c6 > *:not(:first-child) {
+.c7 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2185,7 +2185,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -2198,10 +2198,13 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
   max-width: 100%;
   padding: 0;
   white-space: normal;
+}
+
+.c4 {
   cursor: auto;
 }
 
-.c13 {
+.c14 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2215,7 +2218,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
   display: block;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -2224,7 +2227,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2233,7 +2236,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c13 {
   width: 20px;
   height: 20px;
   border: 1px solid #BDBDBD;
@@ -2244,7 +2247,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
   flex-shrink: 0;
 }
 
-.c12::before {
+.c13::before {
   content: '';
   display: block;
   padding: 2px;
@@ -2258,15 +2261,15 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c8 {
+.c9 {
   position: relative;
 }
 
-.c8:hover .c11 {
+.c9:hover .c12 {
   border-color: #424242;
 }
 
-.c9 {
+.c10 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -2274,29 +2277,29 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
   cursor: pointer;
 }
 
-.c9:checked + .c11 {
+.c10:checked + .c12 {
   border-color: #336BFF;
   background: #336BFF;
 }
 
-.c9:checked + .c11 svg {
+.c10:checked + .c12 svg {
   fill: #FFFFFF;
 }
 
-.c9[disabled] + .c11 {
+.c10[disabled] + .c12 {
   border-color: #EBEBE8;
 }
 
-.c9:checked[disabled] + .c11 {
+.c10:checked[disabled] + .c12 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c9:focus + .c11::before {
+.c10:focus + .c12::before {
   border: 1px solid #336BFF;
 }
 
-.c15 {
+.c16 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -2312,7 +2315,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   width: auto;
   display: inline-block;
 }
@@ -2327,44 +2330,44 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
       className="c2"
     >
       <legend
-        className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
+        className="c3 c4 c5"
         hidden={false}
       >
         <span
-          className="c5"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           Colors 
         </span>
       </legend>
     </div>
     <div
-      className="c6"
+      className="c7"
     >
       <div
-        className="c7"
+        className="c8"
       >
         <label
-          className="c4 c8"
+          className="c5 c9"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c9"
+                className="c10"
                 name="example"
                 type="checkbox"
                 value="green"
               />
               <div
-                className="c10 c11 c12"
+                className="c11 c12 c13"
               >
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -2376,7 +2379,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
                 </svg>
               </div>
               <span
-                className="c14 c15"
+                className="Typography__Span-sc-10mju41-0 c15 c16"
               >
                 Green
               </span>
@@ -2385,30 +2388,30 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
         </label>
       </div>
       <div
-        className="c7"
+        className="c8"
       >
         <label
-          className="c4 c8"
+          className="c5 c9"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c9"
+                className="c10"
                 name="example"
                 type="checkbox"
                 value="blue"
               />
               <div
-                className="c10 c11 c12"
+                className="c11 c12 c13"
               >
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -2420,7 +2423,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
                 </svg>
               </div>
               <span
-                className="c14 c15"
+                className="Typography__Span-sc-10mju41-0 c15 c16"
               >
                 Blue
               </span>
@@ -2429,30 +2432,30 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
         </label>
       </div>
       <div
-        className="c7"
+        className="c8"
       >
         <label
-          className="c4 c8"
+          className="c5 c9"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c9"
+                className="c10"
                 name="example"
                 type="checkbox"
                 value="yellow"
               />
               <div
-                className="c10 c11 c12"
+                className="c11 c12 c13"
               >
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -2464,7 +2467,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
                 </svg>
               </div>
               <span
-                className="c14 c15"
+                className="Typography__Span-sc-10mju41-0 c15 c16"
               >
                 Yellow
               </span>
@@ -2493,7 +2496,7 @@ Array [
   align-items: center;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2503,16 +2506,16 @@ Array [
   margin-right: -10px;
 }
 
-.c9 > * {
+.c10 > * {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c9 > *:not(:first-child) {
+.c10 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c13 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2528,7 +2531,7 @@ Array [
   align-items: center;
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -2541,10 +2544,13 @@ Array [
   max-width: 100%;
   padding: 0;
   white-space: normal;
+}
+
+.c4 {
   cursor: auto;
 }
 
-.c6 {
+.c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2558,7 +2564,7 @@ Array [
   display: block;
 }
 
-.c16 {
+.c17 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2572,11 +2578,11 @@ Array [
   display: block;
 }
 
-.c8 {
+.c9 {
   stroke: #6E6E69;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -2585,7 +2591,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c17 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2594,7 +2600,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c16 {
   width: 20px;
   height: 20px;
   border: 1px solid #BDBDBD;
@@ -2605,7 +2611,7 @@ Array [
   flex-shrink: 0;
 }
 
-.c15::before {
+.c16::before {
   content: '';
   display: block;
   padding: 2px;
@@ -2619,15 +2625,15 @@ Array [
   transform: translate(-50%,-50%);
 }
 
-.c11 {
+.c12 {
   position: relative;
 }
 
-.c11:hover .c14 {
+.c12:hover .c15 {
   border-color: #424242;
 }
 
-.c12 {
+.c13 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -2635,29 +2641,29 @@ Array [
   cursor: pointer;
 }
 
-.c12:checked + .c14 {
+.c13:checked + .c15 {
   border-color: #336BFF;
   background: #336BFF;
 }
 
-.c12:checked + .c14 svg {
+.c13:checked + .c15 svg {
   fill: #FFFFFF;
 }
 
-.c12[disabled] + .c14 {
+.c13[disabled] + .c15 {
   border-color: #EBEBE8;
 }
 
-.c12:checked[disabled] + .c14 {
+.c13:checked[disabled] + .c15 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c12:focus + .c14::before {
+.c13:focus + .c15::before {
   border: 1px solid #336BFF;
 }
 
-.c18 {
+.c19 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -2673,12 +2679,12 @@ Array [
   display: inline-block;
 }
 
-.c10 {
+.c11 {
   width: auto;
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   margin-left: 4px;
 }
 
@@ -2692,18 +2698,18 @@ Array [
         className="c2"
       >
         <legend
-          className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
+          className="c3 c4 c5"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             Colors 
           </span>
         </legend>
         <svg
           aria-hidden="true"
-          className="c6 c7"
+          className="c7 c8"
           focusable="false"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -2721,7 +2727,7 @@ Array [
             transform="translate(1 1)"
           >
             <circle
-              className="c8"
+              className="c9"
               cx="11"
               cy="11"
               fill="none"
@@ -2735,33 +2741,33 @@ Array [
         </svg>
       </div>
       <div
-        className="c9"
+        className="c10"
       >
         <div
-          className="c10"
+          className="c11"
         >
           <label
-            className="c4 c11"
+            className="c5 c12"
             hidden={false}
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c6"
             >
               <div
                 className="c2"
               >
                 <input
-                  className="c12"
+                  className="c13"
                   name="example"
                   type="checkbox"
                   value="green"
                 />
                 <div
-                  className="c13 c14 c15"
+                  className="c14 c15 c16"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c16"
+                    className="c17"
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="presentation"
@@ -2773,7 +2779,7 @@ Array [
                   </svg>
                 </div>
                 <span
-                  className="c17 c18"
+                  className="Typography__Span-sc-10mju41-0 c18 c19"
                 >
                   Green
                 </span>
@@ -2782,30 +2788,30 @@ Array [
           </label>
         </div>
         <div
-          className="c10"
+          className="c11"
         >
           <label
-            className="c4 c11"
+            className="c5 c12"
             hidden={false}
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c6"
             >
               <div
                 className="c2"
               >
                 <input
-                  className="c12"
+                  className="c13"
                   name="example"
                   type="checkbox"
                   value="blue"
                 />
                 <div
-                  className="c13 c14 c15"
+                  className="c14 c15 c16"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c16"
+                    className="c17"
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="presentation"
@@ -2817,7 +2823,7 @@ Array [
                   </svg>
                 </div>
                 <span
-                  className="c17 c18"
+                  className="Typography__Span-sc-10mju41-0 c18 c19"
                 >
                   Blue
                 </span>
@@ -2826,30 +2832,30 @@ Array [
           </label>
         </div>
         <div
-          className="c10"
+          className="c11"
         >
           <label
-            className="c4 c11"
+            className="c5 c12"
             hidden={false}
           >
             <span
-              className="c5"
+              className="Typography__Span-sc-10mju41-0 c6"
             >
               <div
                 className="c2"
               >
                 <input
-                  className="c12"
+                  className="c13"
                   name="example"
                   type="checkbox"
                   value="yellow"
                 />
                 <div
-                  className="c13 c14 c15"
+                  className="c14 c15 c16"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c16"
+                    className="c17"
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="presentation"
@@ -2861,7 +2867,7 @@ Array [
                   </svg>
                 </div>
                 <span
-                  className="c17 c18"
+                  className="Typography__Span-sc-10mju41-0 c18 c19"
                 >
                   Yellow
                 </span>
@@ -2888,7 +2894,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
   align-items: center;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2898,16 +2904,16 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
   margin-right: -10px;
 }
 
-.c9 > * {
+.c10 > * {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c9 > *:not(:first-child) {
+.c10 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c13 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2923,7 +2929,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
   align-items: center;
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -2936,10 +2942,13 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
   max-width: 100%;
   padding: 0;
   white-space: normal;
+}
+
+.c4 {
   cursor: auto;
 }
 
-.c6 {
+.c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2953,7 +2962,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
   display: block;
 }
 
-.c16 {
+.c17 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2967,11 +2976,11 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
   display: block;
 }
 
-.c8 {
+.c9 {
   stroke: #6E6E69;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -2980,7 +2989,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
   line-height: 1.4285714285714286;
 }
 
-.c17 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2989,7 +2998,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c16 {
   width: 20px;
   height: 20px;
   border: 1px solid #BDBDBD;
@@ -3000,7 +3009,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
   flex-shrink: 0;
 }
 
-.c15::before {
+.c16::before {
   content: '';
   display: block;
   padding: 2px;
@@ -3014,15 +3023,15 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
   transform: translate(-50%,-50%);
 }
 
-.c11 {
+.c12 {
   position: relative;
 }
 
-.c11:hover .c14 {
+.c12:hover .c15 {
   border-color: #424242;
 }
 
-.c12 {
+.c13 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -3030,29 +3039,29 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
   cursor: pointer;
 }
 
-.c12:checked + .c14 {
+.c13:checked + .c15 {
   border-color: #336BFF;
   background: #336BFF;
 }
 
-.c12:checked + .c14 svg {
+.c13:checked + .c15 svg {
   fill: #FFFFFF;
 }
 
-.c12[disabled] + .c14 {
+.c13[disabled] + .c15 {
   border-color: #EBEBE8;
 }
 
-.c12:checked[disabled] + .c14 {
+.c13:checked[disabled] + .c15 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c12:focus + .c14::before {
+.c13:focus + .c15::before {
   border: 1px solid #336BFF;
 }
 
-.c18 {
+.c19 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -3068,12 +3077,12 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
   display: inline-block;
 }
 
-.c10 {
+.c11 {
   width: auto;
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   margin-left: 4px;
 }
 
@@ -3087,18 +3096,18 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
       className="c2"
     >
       <legend
-        className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
+        className="c3 c4 c5"
         hidden={false}
       >
         <span
-          className="c5"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           Colors 
         </span>
       </legend>
       <svg
         aria-hidden="true"
-        className="c6 c7"
+        className="c7 c8"
         focusable="false"
         onBlur={[Function]}
         onFocus={[Function]}
@@ -3116,7 +3125,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
           transform="translate(1 1)"
         >
           <circle
-            className="c8"
+            className="c9"
             cx="11"
             cy="11"
             fill="none"
@@ -3130,33 +3139,33 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
       </svg>
     </div>
     <div
-      className="c9"
+      className="c10"
     >
       <div
-        className="c10"
+        className="c11"
       >
         <label
-          className="c4 c11"
+          className="c5 c12"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c12"
+                className="c13"
                 name="example"
                 type="checkbox"
                 value="green"
               />
               <div
-                className="c13 c14 c15"
+                className="c14 c15 c16"
               >
                 <svg
                   aria-hidden="true"
-                  className="c16"
+                  className="c17"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -3168,7 +3177,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
                 </svg>
               </div>
               <span
-                className="c17 c18"
+                className="Typography__Span-sc-10mju41-0 c18 c19"
               >
                 Green
               </span>
@@ -3177,30 +3186,30 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
         </label>
       </div>
       <div
-        className="c10"
+        className="c11"
       >
         <label
-          className="c4 c11"
+          className="c5 c12"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c12"
+                className="c13"
                 name="example"
                 type="checkbox"
                 value="blue"
               />
               <div
-                className="c13 c14 c15"
+                className="c14 c15 c16"
               >
                 <svg
                   aria-hidden="true"
-                  className="c16"
+                  className="c17"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -3212,7 +3221,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
                 </svg>
               </div>
               <span
-                className="c17 c18"
+                className="Typography__Span-sc-10mju41-0 c18 c19"
               >
                 Blue
               </span>
@@ -3221,30 +3230,30 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
         </label>
       </div>
       <div
-        className="c10"
+        className="c11"
       >
         <label
-          className="c4 c11"
+          className="c5 c12"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c12"
+                className="c13"
                 name="example"
                 type="checkbox"
                 value="yellow"
               />
               <div
-                className="c13 c14 c15"
+                className="c14 c15 c16"
               >
                 <svg
                   aria-hidden="true"
-                  className="c16"
+                  className="c17"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -3256,7 +3265,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
                 </svg>
               </div>
               <span
-                className="c17 c18"
+                className="Typography__Span-sc-10mju41-0 c18 c19"
               >
                 Yellow
               </span>
@@ -3282,7 +3291,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3292,16 +3301,16 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
   margin-right: -10px;
 }
 
-.c6 > * {
+.c7 > * {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c6 > *:not(:first-child) {
+.c7 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3317,7 +3326,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
   align-items: center;
 }
 
-.c17 {
+.c18 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -3326,7 +3335,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -3339,10 +3348,13 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
   max-width: 100%;
   padding: 0;
   white-space: normal;
+}
+
+.c4 {
   cursor: auto;
 }
 
-.c13 {
+.c14 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3356,7 +3368,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
   display: block;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -3365,7 +3377,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3374,7 +3386,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c17 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #CC2269;
   margin: 0;
@@ -3383,7 +3395,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c12 {
+.c13 {
   width: 20px;
   height: 20px;
   border: 1px solid #BDBDBD;
@@ -3394,7 +3406,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
   flex-shrink: 0;
 }
 
-.c12::before {
+.c13::before {
   content: '';
   display: block;
   padding: 2px;
@@ -3408,15 +3420,15 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c8 {
+.c9 {
   position: relative;
 }
 
-.c8:hover .c11 {
+.c9:hover .c12 {
   border-color: #424242;
 }
 
-.c9 {
+.c10 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -3424,33 +3436,33 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
   cursor: pointer;
 }
 
-.c9:checked + .c11 {
+.c10:checked + .c12 {
   border-color: #336BFF;
   background: #336BFF;
 }
 
-.c9:checked + .c11 svg {
+.c10:checked + .c12 svg {
   fill: #FFFFFF;
 }
 
-.c9[disabled] + .c11 {
+.c10[disabled] + .c12 {
   border-color: #EBEBE8;
 }
 
-.c9:checked[disabled] + .c11 {
+.c10:checked[disabled] + .c12 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c9 + .c11::before {
+.c10 + .c12::before {
   border: 1px solid #CC2269;
 }
 
-.c9:focus + .c11::before {
+.c10:focus + .c12::before {
   border: 1px solid #336BFF;
 }
 
-.c15 {
+.c16 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -3466,7 +3478,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   width: auto;
   display: inline-block;
 }
@@ -3481,34 +3493,34 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
       className="c2"
     >
       <legend
-        className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
+        className="c3 c4 c5"
         hidden={false}
       >
         <span
-          className="c5"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           Colors 
         </span>
       </legend>
     </div>
     <div
-      className="c6"
+      className="c7"
     >
       <div
-        className="c7"
+        className="c8"
       >
         <label
-          className="c4 c8"
+          className="c5 c9"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c9"
+                className="c10"
                 name="example"
                 onChange={[Function]}
                 required={true}
@@ -3516,11 +3528,11 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
                 value="green"
               />
               <div
-                className="c10 c11 c12"
+                className="c11 c12 c13"
               >
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -3532,7 +3544,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
                 </svg>
               </div>
               <span
-                className="c14 c15"
+                className="Typography__Span-sc-10mju41-0 c15 c16"
               >
                 Green
               </span>
@@ -3541,20 +3553,20 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
         </label>
       </div>
       <div
-        className="c7"
+        className="c8"
       >
         <label
-          className="c4 c8"
+          className="c5 c9"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c9"
+                className="c10"
                 name="example"
                 onChange={[Function]}
                 required={true}
@@ -3562,11 +3574,11 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
                 value="blue"
               />
               <div
-                className="c10 c11 c12"
+                className="c11 c12 c13"
               >
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -3578,7 +3590,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
                 </svg>
               </div>
               <span
-                className="c14 c15"
+                className="Typography__Span-sc-10mju41-0 c15 c16"
               >
                 Blue
               </span>
@@ -3587,20 +3599,20 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
         </label>
       </div>
       <div
-        className="c7"
+        className="c8"
       >
         <label
-          className="c4 c8"
+          className="c5 c9"
           hidden={false}
         >
           <span
-            className="c5"
+            className="Typography__Span-sc-10mju41-0 c6"
           >
             <div
               className="c2"
             >
               <input
-                className="c9"
+                className="c10"
                 name="example"
                 onChange={[Function]}
                 required={true}
@@ -3608,11 +3620,11 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
                 value="yellow"
               />
               <div
-                className="c10 c11 c12"
+                className="c11 c12 c13"
               >
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -3624,7 +3636,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
                 </svg>
               </div>
               <span
-                className="c14 c15"
+                className="Typography__Span-sc-10mju41-0 c15 c16"
               >
                 Yellow
               </span>
@@ -3636,10 +3648,10 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
   </fieldset>
   <div>
     <span
-      className="c16"
+      className="Typography__Span-sc-10mju41-0 c17"
     >
       <div
-        className="c17"
+        className="c18"
       >
         Error: 
       </div>
@@ -3805,7 +3817,7 @@ exports[`Storyshots Molecules / Input / Checkbox On a coloured background 1`] = 
       hidden={false}
     >
       <span
-        className="c4"
+        className="Typography__Span-sc-10mju41-0 c4"
       >
         <div
           className="c5"
@@ -3833,7 +3845,7 @@ exports[`Storyshots Molecules / Input / Checkbox On a coloured background 1`] = 
             </svg>
           </div>
           <span
-            className="c11 c12"
+            className="Typography__Span-sc-10mju41-0 c11 c12"
           >
             On a colored background
           </span>
@@ -3871,7 +3883,7 @@ Array [
     className="c0"
   >
     <span
-      className="c1"
+      className="Typography__Span-sc-10mju41-0 c1"
     >
       Required
     </span>
@@ -4097,7 +4109,7 @@ Array [
         className="c2"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 c3"
         >
           Default (without star)
         </span>
@@ -4111,7 +4123,7 @@ Array [
             hidden={false}
           >
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 c7"
             >
               <div
                 className="c8"
@@ -4140,7 +4152,7 @@ Array [
                   </svg>
                 </div>
                 <span
-                  className="c14 c15"
+                  className="Typography__Span-sc-10mju41-0 c14 c15"
                 >
                   Green
                 </span>
@@ -4158,7 +4170,7 @@ Array [
         className="c2"
       >
         <span
-          className="c3"
+          className="Typography__Span-sc-10mju41-0 c3"
         >
           With star
         </span>
@@ -4172,7 +4184,7 @@ Array [
             hidden={false}
           >
             <span
-              className="c7"
+              className="Typography__Span-sc-10mju41-0 c7"
             >
               <div
                 className="c8"
@@ -4201,7 +4213,7 @@ Array [
                   </svg>
                 </div>
                 <span
-                  className="c14 c15"
+                  className="Typography__Span-sc-10mju41-0 c14 c15"
                 >
                   Green *
                 </span>
@@ -4375,7 +4387,7 @@ exports[`Storyshots Molecules / Input / Checkbox With all actions 1`] = `
     hidden={false}
   >
     <span
-      className="c3"
+      className="Typography__Span-sc-10mju41-0 c3"
     >
       <div
         className="c4"
@@ -4410,7 +4422,7 @@ exports[`Storyshots Molecules / Input / Checkbox With all actions 1`] = `
           </svg>
         </div>
         <span
-          className="c10 c11"
+          className="Typography__Span-sc-10mju41-0 c10 c11"
         >
           Green
         </span>
@@ -4590,7 +4602,7 @@ exports[`Storyshots Molecules / Input / Checkbox With an error if not checked 1`
     hidden={false}
   >
     <span
-      className="c3"
+      className="Typography__Span-sc-10mju41-0 c3"
     >
       <div
         className="c4"
@@ -4620,7 +4632,7 @@ exports[`Storyshots Molecules / Input / Checkbox With an error if not checked 1`
           </svg>
         </div>
         <span
-          className="c10 c11"
+          className="Typography__Span-sc-10mju41-0 c10 c11"
         >
           Green
         </span>
@@ -4629,7 +4641,7 @@ exports[`Storyshots Molecules / Input / Checkbox With an error if not checked 1`
   </label>
   <div>
     <span
-      className="c12"
+      className="Typography__Span-sc-10mju41-0 c12"
     >
       <div
         className="c13"
@@ -4790,7 +4802,7 @@ exports[`Storyshots Molecules / Input / Checkbox With auto focus 1`] = `
     hidden={false}
   >
     <span
-      className="c3"
+      className="Typography__Span-sc-10mju41-0 c3"
     >
       <div
         className="c4"
@@ -4819,7 +4831,7 @@ exports[`Storyshots Molecules / Input / Checkbox With auto focus 1`] = `
           </svg>
         </div>
         <span
-          className="c10 c11"
+          className="Typography__Span-sc-10mju41-0 c10 c11"
         >
           Green
         </span>
@@ -4978,7 +4990,7 @@ Array [
       hidden={false}
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         <div
           className="c4"
@@ -5008,7 +5020,7 @@ Array [
             </svg>
           </div>
           <span
-            className="c10 c11"
+            className="Typography__Span-sc-10mju41-0 c10 c11"
           >
             Green
           </span>
@@ -5173,7 +5185,7 @@ exports[`Storyshots Molecules / Input / Checkbox With default checked 1`] = `
     hidden={false}
   >
     <span
-      className="c3"
+      className="Typography__Span-sc-10mju41-0 c3"
     >
       <div
         className="c4"
@@ -5202,7 +5214,7 @@ exports[`Storyshots Molecules / Input / Checkbox With default checked 1`] = `
           </svg>
         </div>
         <span
-          className="c10 c11"
+          className="Typography__Span-sc-10mju41-0 c10 c11"
         >
           Green
         </span>
