@@ -1,3 +1,10 @@
+## [10.22.1-beta.3](https://github.com/nordnet/ui/compare/v10.22.1-beta.2...v10.22.1-beta.3) (2022-05-05)
+
+
+### Bug Fixes
+
+* 🐛 add positive black background color ([ab648a8](https://github.com/nordnet/ui/commit/ab648a8))
+
 ## [10.22.1-beta.2](https://github.com/nordnet/ui/compare/v10.22.1-beta.1...v10.22.1-beta.2) (2022-04-20)
 
 
