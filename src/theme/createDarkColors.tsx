@@ -16,7 +16,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     rawColor.green500,
     rawColor.graphPurple,
     rawColor.complementaryTurquoise1,
-    rawColor.pink500,
+    rawColor.red500,
     rawColor.brandBlue,
     rawColor.gray3,
     rawColor.graphOrange,
@@ -246,7 +246,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     progressBarActive: rawColor.blue500,
     progressBarDone: rawColor.green500,
-    progressBarFailure: rawColor.pink500,
+    progressBarFailure: rawColor.red500,
     progressBarNext: rawColor.gray700,
     progressBarText: rawColor.white,
     progressBarWarning: rawColor.index,
@@ -307,7 +307,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     technicalAnalysisPlotBands: rawColor.gray900,
 
     timelineActive: rawColor.cta,
-    timelineFailure: rawColor.pink500,
+    timelineFailure: rawColor.red500,
     timelineNext: rawColor.gray4,
     timelineSuccess: rawColor.green500,
     timelineWarning: rawColor.index,

@@ -858,7 +858,7 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
   align-items: center;
   text-align: center;
   box-sizing: border-box;
-  background-color: #CC2269;
+  background-color: #FF4733;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -914,7 +914,7 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
 .c11 {
   width: 100%;
   height: 2px;
-  background-color: #CC2269;
+  background-color: #FF4733;
 }
 
 .c14 {

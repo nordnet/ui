@@ -12,10 +12,10 @@ const getStatusIcon = (status?: string) => {
     case 'ACTIVE':
       return <OldIcon.InfoCircle size={5} fill={(t) => t.color.cta} />;
     case 'FAILURE':
-      return <OldIcon.CrossCircle size={5} fill={(t) => t.color.negative} />;
+      return <OldIcon.CrossCircle size={5} fill={(t) => t.color.timelineFailure} />;
     case 'SUCCESS':
     default:
-      return <OldIcon.CheckMarkCircle size={5} fill={(t) => t.color.positive} />;
+      return <OldIcon.CheckMarkCircle size={5} fill={(t) => t.color.timelineSuccess} />;
   }
 };
 

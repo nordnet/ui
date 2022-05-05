@@ -104,7 +104,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
 }
 
 .c23 {
-  fill: #368716;
+  fill: #51CB20;
 }
 
 .c24 {
@@ -116,7 +116,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
 }
 
 .c21 {
-  fill: #CC2269;
+  fill: #FF4733;
 }
 
 .c18 {
@@ -665,7 +665,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
 }
 
 .c23 {
-  fill: #368716;
+  fill: #51CB20;
 }
 
 .c24 {
@@ -677,7 +677,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
 }
 
 .c19 {
-  fill: #CC2269;
+  fill: #FF4733;
 }
 
 .c9 {
@@ -1194,7 +1194,7 @@ exports[`Storyshots Molecules / Timeline Single Element 1`] = `
 }
 
 .c9 {
-  fill: #368716;
+  fill: #51CB20;
 }
 
 .c10 {
@@ -1470,7 +1470,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
 }
 
 .c22 {
-  fill: #368716;
+  fill: #51CB20;
 }
 
 .c23 {
