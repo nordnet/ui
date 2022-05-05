@@ -181,7 +181,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     module: rawColor.white,
 
     negative: rawColor.pink600,
-    negativeBlackBackground: rawColor.pink600,
+    negativeBlackBackground: rawColor.pink500,
 
     newsLabelTextColors: [rawColor.green600, rawColor.pink600, rawColor.blue500, rawColor.teal600],
     newsLabelBackgroundColors: [rawColor.green100, rawColor.pink100, rawColor.blue100, rawColor.teal100],
@@ -217,6 +217,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     pillBackground: rawColor.gray100,
 
     positive: rawColor.green700,
+    positiveBlackBackground: rawColor.green500,
 
     infoBarBackgroundSuccess: rawColor.green100,
     infoBarBackgroundWarning: rawColor.yellow100,
