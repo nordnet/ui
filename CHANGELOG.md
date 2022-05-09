@@ -1,3 +1,13 @@
+## [10.26.2](https://github.com/nordnet/ui/compare/v10.26.1...v10.26.2) (2022-05-09)
+
+
+### Bug Fixes
+
+* 🐛 add positive black background color ([fc1d712](https://github.com/nordnet/ui/commit/fc1d712))
+* 🐛 update green700 and use as positive for light mode ([97938a2](https://github.com/nordnet/ui/commit/97938a2))
+* 🐛 update positive and negative colors ([f000cbe](https://github.com/nordnet/ui/commit/f000cbe))
+* 🐛 use correct red for non negative shapes ([9a2f5e7](https://github.com/nordnet/ui/commit/9a2f5e7))
+
 ## [10.26.1](https://github.com/nordnet/ui/compare/v10.26.0...v10.26.1) (2022-05-04)
 
 
