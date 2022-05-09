@@ -1401,7 +1401,7 @@ Array [
 
 .c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #CC2269;
+  color: #CC3929;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -1744,7 +1744,7 @@ Array [
 
 .c18 {
   background-color: transparent;
-  border: 1px solid #CC2269;
+  border: 1px solid #CC3929;
   position: relative;
   border-width: 0 0 2px 0;
   height: auto;
@@ -4884,7 +4884,7 @@ exports[`Storyshots Molecules / Input / Number With error if value is less than 
 
 .c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #CC2269;
+  color: #CC3929;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -4953,7 +4953,7 @@ exports[`Storyshots Molecules / Input / Number With error if value is less than 
 
 .c8 {
   background-color: #FFFFFF;
-  border: 1px solid #CC2269;
+  border: 1px solid #CC3929;
   position: relative;
   border-width: 1px;
   height: 40px;
@@ -5220,7 +5220,7 @@ exports[`Storyshots Molecules / Input / Number With extra info and error 1`] = `
 
 .c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #CC2269;
+  color: #CC3929;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -5289,7 +5289,7 @@ exports[`Storyshots Molecules / Input / Number With extra info and error 1`] = `
 
 .c8 {
   background-color: #FFFFFF;
-  border: 1px solid #CC2269;
+  border: 1px solid #CC3929;
   position: relative;
   border-width: 1px;
   height: 40px;
@@ -8596,7 +8596,7 @@ Array [
 
 .c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #CC2269;
+  color: #CC3929;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -8813,7 +8813,7 @@ Array [
 
 .c17 {
   background-color: #FFFFFF;
-  border: 1px solid #CC2269;
+  border: 1px solid #CC3929;
   position: relative;
   border-width: 1px;
   height: 32px;

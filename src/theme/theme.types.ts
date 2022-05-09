@@ -27,6 +27,12 @@ export type RawColor = {
   complementaryTurquoise1: string;
   complementaryTurquoise2: string;
 
+  // FUNCTION
+  functionBlue: '#336BFF';
+  functionRed: '#FF4733';
+  functionGreen: '#51CB20';
+  functionYellow: '#E6BB00';
+
   // GRAYSCALE PALETTE OLD
   gray0: string;
   gray1: string;
@@ -296,6 +302,8 @@ export type ThemeColors = {
   cta: string;
   /** blue600 */
   ctaHover: string;
+  /** light: red600, dark: red500 */
+  danger: string;
   /** blue800 */
   darkmodeIllustrationBackground: string;
   /** blue400 */
@@ -359,6 +367,15 @@ export type ThemeColors = {
   /** gray2 */
   fundExchange: string;
 
+  /** functionBlue */
+  functionBlue: string;
+  /** functionRed */
+  functionRed: string;
+  /** functionGreen */
+  functionGreen: string;
+  /** functionYellow */
+  functionYellow: string;
+
   /** complementaryGreen1 */
   generationSavingsTimelineColor1: string;
   /** complementaryPink1 */
@@ -395,7 +412,7 @@ export type ThemeColors = {
   inputBorderError: string;
   /** gray700 */
   inputBorderHover: string;
-  /** positive */
+  /** light: green600, dark: green500 */
   inputBorderSuccess: string;
   /** gray100 */
   inputHover: string;
@@ -523,9 +540,9 @@ export type ThemeColors = {
   privateBankingBannerTitle: string;
   /** cta */
   progressBarActive: string;
-  /** positive */
+  /** green500 */
   progressBarDone: string;
-  /** positive */
+  /** red500 */
   progressBarFailure: string;
   /** gray4 */
   progressBarNext: string;
@@ -617,11 +634,11 @@ export type ThemeColors = {
   textLight: string;
   /** cta */
   timelineActive: string;
-  /** negative */
+  /** red500 */
   timelineFailure: string;
   /** gray4 */
   timelineNext: string;
-  /** positive */
+  /** green500 */
   timelineSuccess: string;
   /** index */
   timelineWarning: string;
@@ -629,7 +646,7 @@ export type ThemeColors = {
   transferPendingIconColor: string;
   /** brandPink */
   transferProgressBar1: string;
-  /** positive */
+  /** green500 */
   transferProgressBar2: string;
   /** gray5 */
   transferProgressBar3: string;

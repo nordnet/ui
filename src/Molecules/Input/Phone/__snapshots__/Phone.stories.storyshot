@@ -2361,7 +2361,7 @@ exports[`Storyshots Molecules / Input / Phone Has Error 1`] = `
 
 .c25 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #CC2269;
+  color: #CC3929;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -2514,7 +2514,7 @@ exports[`Storyshots Molecules / Input / Phone Has Error 1`] = `
   padding: 0px 0;
   background: #FFFFFF;
   border: solid;
-  border-color: #CC2269;
+  border-color: #CC3929;
   border-width: 1px;
   position: relative;
 }

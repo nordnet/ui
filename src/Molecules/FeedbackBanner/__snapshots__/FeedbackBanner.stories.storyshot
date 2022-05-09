@@ -339,7 +339,7 @@ exports[`Storyshots Molecules / FeedbackBanner Different Variant 1`] = `
 }
 
 .c20 {
-  fill: #368716;
+  fill: #51CB20;
 }
 
 .c21 {
@@ -351,7 +351,7 @@ exports[`Storyshots Molecules / FeedbackBanner Different Variant 1`] = `
 }
 
 .c14 {
-  fill: #CC2269;
+  fill: #FF4733;
 }
 
 .c7 {
@@ -398,7 +398,7 @@ exports[`Storyshots Molecules / FeedbackBanner Different Variant 1`] = `
 
 .c12 {
   background-color: #F5F5F5;
-  border-left: 4px solid #CC2269;
+  border-left: 4px solid #FF4733;
   padding: 4px 12px;
   box-sizing: border-box;
 }
@@ -412,7 +412,7 @@ exports[`Storyshots Molecules / FeedbackBanner Different Variant 1`] = `
 
 .c19 {
   background-color: #F5F5F5;
-  border-left: 4px solid #368716;
+  border-left: 4px solid #51CB20;
   padding: 4px 12px;
   box-sizing: border-box;
 }

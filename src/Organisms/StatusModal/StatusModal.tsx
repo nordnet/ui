@@ -47,9 +47,11 @@ const StatusModal: React.FC<Props> = ({ id = '', loading = false, onClose, optio
         >
           {loading && <Spinner id={`${id}-spinner`} size={23} />}
           {status === 'SUCCESS' && (
-            <OldIcon.CheckMarkCircle fill={(t) => t.color.positive} size={23} />
+            <OldIcon.CheckMarkCircle fill={(t) => t.color.functionGreen} size={23} />
           )}
-          {status === 'ERROR' && <OldIcon.CrossCircle fill={(t) => t.color.negative} size={23} />}
+          {status === 'ERROR' && (
+            <OldIcon.CrossCircle fill={(t) => t.color.functionRed} size={23} />
+          )}
           {status === 'WARNING' && (
             <OldIcon.WarningTriangle color={(t) => t.color.warning} size={23} />
           )}
