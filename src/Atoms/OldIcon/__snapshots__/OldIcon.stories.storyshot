@@ -5894,7 +5894,7 @@ Array [
 }
 
 .c2 {
-  fill: #FF1900;
+  fill: #CC2269;
 }
 
 <div
@@ -6317,7 +6317,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
 }
 
 .c39 {
-  fill: #FF1900;
+  fill: #CC2269;
 }
 
 .c40 {
@@ -12709,7 +12709,7 @@ exports[`Storyshots Atoms / OldIcon Different size and fill 1`] = `
   user-select: none;
   width: 40px;
   height: 40px;
-  fill: #00D200;
+  fill: #368716;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -13115,7 +13115,7 @@ exports[`Storyshots Atoms / OldIcon Urgent Message 1`] = `
 }
 
 .c2 {
-  fill: #FF1900;
+  fill: #CC2269;
 }
 
 <svg
@@ -13165,7 +13165,7 @@ exports[`Storyshots Atoms / OldIcon With modified stroke 1`] = `
   user-select: none;
   width: 40px;
   height: 40px;
-  fill: #00D200;
+  fill: #368716;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -13173,35 +13173,35 @@ exports[`Storyshots Atoms / OldIcon With modified stroke 1`] = `
 }
 
 .c7 {
-  fill: #00D200;
+  fill: #368716;
 }
 
 .c8 {
-  fill: #FF1900;
+  fill: #CC2269;
 }
 
 .c10 {
-  fill: #FF1900;
+  fill: #CC2269;
 }
 
 .c9 {
-  fill: #00D200;
+  fill: #368716;
 }
 
 .c6 {
-  stroke: #00D200;
+  stroke: #368716;
 }
 
 .c12 {
-  fill: #FF1900;
+  fill: #CC2269;
 }
 
 .c5 {
-  stroke: #00D200;
+  stroke: #368716;
 }
 
 .c14 {
-  stroke: #00D200;
+  stroke: #368716;
 }
 
 .c13 {

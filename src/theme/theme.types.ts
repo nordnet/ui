@@ -477,6 +477,8 @@ export type ThemeColors = {
   placeholderText: string;
   /** positive */
   positive: string;
+  /** green500 */
+  positiveBlackBackground: string;
   /**
    * positive
    */

@@ -3388,7 +3388,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
 
 .c17 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FF1900;
+  color: #CC2269;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -4510,7 +4510,7 @@ exports[`Storyshots Molecules / Input / Checkbox With an error if not checked 1`
 
 .c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FF1900;
+  color: #CC2269;
   margin: 0;
   font-weight: 400;
   font-size: 12px;

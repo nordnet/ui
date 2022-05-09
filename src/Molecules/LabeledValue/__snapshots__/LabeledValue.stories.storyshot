@@ -278,7 +278,7 @@ exports[`Storyshots Molecules / LabeledValue Integration: LabeledValue with nega
 }
 
 .c6 {
-  color: #FF1900;
+  color: #CC2269;
 }
 
 <div
@@ -392,7 +392,7 @@ exports[`Storyshots Molecules / LabeledValue Integration: LabeledValue with posi
 }
 
 .c6 {
-  color: #00D200;
+  color: #368716;
 }
 
 <div

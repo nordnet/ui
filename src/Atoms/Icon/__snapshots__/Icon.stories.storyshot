@@ -36340,7 +36340,7 @@ exports[`Storyshots Atoms / Icon Default use 1`] = `
 
 exports[`Storyshots Atoms / Icon Different color 1`] = `
 .c0 {
-  color: #00D200;
+  color: #368716;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

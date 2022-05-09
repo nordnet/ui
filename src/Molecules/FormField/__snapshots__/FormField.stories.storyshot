@@ -108,7 +108,7 @@ exports[`Storyshots Molecules / FormField Error 1`] = `
 
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FF1900;
+  color: #CC2269;
   margin: 0;
   font-weight: 400;
   font-size: 12px;

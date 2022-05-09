@@ -15,10 +15,10 @@ export const getColorLightScheme = (scheme: ThemeColorsVersion) => {
 export const createLightColors = (rawColor: RawColors): ThemeColors => {
   const lineColors = [
     rawColor.brandPink,
-    rawColor.positive,
+    rawColor.green500,
     rawColor.graphPurple,
     rawColor.complementaryTurquoise1,
-    rawColor.negative,
+    rawColor.red500,
     rawColor.brandBlue,
     rawColor.gray3,
     rawColor.graphOrange,
@@ -181,8 +181,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     modalBackdrop: Color(rawColor.gray2).alpha(0.63).rgb().string(),
     module: rawColor.white,
 
-    negative: rawColor.negative,
-    negativeBlackBackground: rawColor.negative,
+    negative: rawColor.pink600,
+    negativeBlackBackground: rawColor.pink500,
 
     newsLabelTextColors: [rawColor.green600, rawColor.pink600, rawColor.blue500, rawColor.teal600],
     newsLabelBackgroundColors: [
@@ -222,7 +222,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     pillBackground: rawColor.gray100,
 
-    positive: rawColor.positive,
+    positive: rawColor.green700,
+    positiveBlackBackground: rawColor.green500,
 
     infoBarBackgroundSuccess: rawColor.green100,
     infoBarBackgroundWarning: rawColor.yellow100,
@@ -241,8 +242,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     privateBankingBannerTitle: rawColor.gray6,
 
     progressBarActive: rawColor.blue500,
-    progressBarDone: rawColor.positive,
-    progressBarFailure: rawColor.negative,
+    progressBarDone: rawColor.green500,
+    progressBarFailure: rawColor.red500,
     progressBarNext: rawColor.gray4,
     progressBarText: rawColor.white,
     progressBarWarning: rawColor.index,
@@ -306,14 +307,14 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     technicalAnalysisPlotBands: rawColor.gray200,
 
     timelineActive: rawColor.cta,
-    timelineFailure: rawColor.negative,
+    timelineFailure: rawColor.red500,
     timelineNext: rawColor.gray4,
-    timelineSuccess: rawColor.positive,
+    timelineSuccess: rawColor.green500,
     timelineWarning: rawColor.index,
 
     transferPendingIconColor: rawColor.index,
     transferProgressBar1: rawColor.brandPink,
-    transferProgressBar2: rawColor.positive,
+    transferProgressBar2: rawColor.green500,
     transferProgressBar3: rawColor.gray5,
     transferProgressBarText1: rawColor.gray1,
     transferProgressBarText2: rawColor.gray2,

@@ -2219,7 +2219,7 @@ Array [
       <path
         clipRule="evenodd"
         d="M53.4142 12H46.5858L42 16.5858V23.4142L46.5858 28H53.4142L58 23.4142V16.5858L53.4142 12ZM49 16V21H51V16H49ZM49 24V22H51V24H49Z"
-        fill="#FF1900"
+        fill="#CC2269"
         fillRule="evenodd"
       />
     </svg>
@@ -2332,7 +2332,7 @@ Array [
         <path
           clipRule="evenodd"
           d="M120 23C182.96 23 234 73.8157 234 136.5C234 136.667 234 136.834 233.999 137.001L6.00402 137L6 136.5C6 74.4425 56.0238 24.0175 118.115 23.0152L120 23Z"
-          fill="#FF1900"
+          fill="#CC2269"
           fillRule="evenodd"
         />
         <path
@@ -2436,7 +2436,7 @@ Array [
         <path
           clipRule="evenodd"
           d="M120 23C182.96 23 234 73.8157 234 136.5C234 136.667 234 136.834 233.999 137.001L6.00402 137L6 136.5C6 74.4425 56.0238 24.0175 118.115 23.0152L120 23Z"
-          fill="#FF1900"
+          fill="#CC2269"
           fillRule="evenodd"
         />
         <path
@@ -4994,7 +4994,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
           <path
             clipRule="evenodd"
             d="M53.4142 12H46.5858L42 16.5858V23.4142L46.5858 28H53.4142L58 23.4142V16.5858L53.4142 12ZM49 16V21H51V16H49ZM49 24V22H51V24H49Z"
-            fill="#FF1900"
+            fill="#CC2269"
             fillRule="evenodd"
           />
         </svg>
@@ -5115,7 +5115,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
             <path
               clipRule="evenodd"
               d="M120 23C182.96 23 234 73.8157 234 136.5C234 136.667 234 136.834 233.999 137.001L6.00402 137L6 136.5C6 74.4425 56.0238 24.0175 118.115 23.0152L120 23Z"
-              fill="#FF1900"
+              fill="#CC2269"
               fillRule="evenodd"
             />
             <path
@@ -5223,7 +5223,7 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
             <path
               clipRule="evenodd"
               d="M120 23C182.96 23 234 73.8157 234 136.5C234 136.667 234 136.834 233.999 137.001L6.00402 137L6 136.5C6 74.4425 56.0238 24.0175 118.115 23.0152L120 23Z"
-              fill="#FF1900"
+              fill="#CC2269"
               fillRule="evenodd"
             />
             <path
@@ -5330,7 +5330,7 @@ exports[`Storyshots Atoms / Illustration Default use 1`] = `
 
 exports[`Storyshots Atoms / Illustration Different color 1`] = `
 .c0 {
-  color: #00D200;
+  color: #368716;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -7635,7 +7635,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       <path
         clipRule="evenodd"
         d="M53.4142 12H46.5858L42 16.5858V23.4142L46.5858 28H53.4142L58 23.4142V16.5858L53.4142 12ZM49 16V21H51V16H49ZM49 24V22H51V24H49Z"
-        fill="#FF1900"
+        fill="#CC2269"
         fillRule="evenodd"
       />
       <title>
@@ -7743,7 +7743,7 @@ exports[`Storyshots Atoms / Illustration Size / 240px 1`] = `
         <path
           clipRule="evenodd"
           d="M120 23C182.96 23 234 73.8157 234 136.5C234 136.667 234 136.834 233.999 137.001L6.00402 137L6 136.5C6 74.4425 56.0238 24.0175 118.115 23.0152L120 23Z"
-          fill="#FF1900"
+          fill="#CC2269"
           fillRule="evenodd"
         />
         <path
@@ -7839,7 +7839,7 @@ exports[`Storyshots Atoms / Illustration Size / 240px 1`] = `
         <path
           clipRule="evenodd"
           d="M120 23C182.96 23 234 73.8157 234 136.5C234 136.667 234 136.834 233.999 137.001L6.00402 137L6 136.5C6 74.4425 56.0238 24.0175 118.115 23.0152L120 23Z"
-          fill="#FF1900"
+          fill="#CC2269"
           fillRule="evenodd"
         />
         <path
