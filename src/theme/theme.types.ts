@@ -28,10 +28,10 @@ export type RawColor = {
   complementaryTurquoise2: string;
 
   // FUNCTION
-  functionBlue: '#336BFF';
-  functionRed: '#FF4733';
-  functionGreen: '#51CB20';
-  functionYellow: '#E6BB00';
+  functionBlue: string;
+  functionRed: string;
+  functionGreen: string;
+  functionYellow: string;
 
   // GRAYSCALE PALETTE OLD
   gray0: string;
