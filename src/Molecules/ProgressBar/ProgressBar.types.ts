@@ -35,7 +35,7 @@ export type Props = {
   colorNext?: ColorFn;
   /**
    * Color of all failed steps and lines leading back to active step
-   * @default negative
+   * @default red500
    *  */
   colorFailure?: ColorFn;
   /**

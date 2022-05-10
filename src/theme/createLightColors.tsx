@@ -88,6 +88,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     cta: rawColor.blue500,
     ctaHover: rawColor.blue600,
 
+    danger: rawColor.red600,
+
     darkmodeIllustrationBackground: rawColor.blue800,
     darkmodeIllustrationLightBulb: rawColor.blue400,
 
@@ -126,6 +128,11 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     flagBorder: rawColor.gray6,
     fundExchange: rawColor.gray2,
 
+    functionBlue: rawColor.functionBlue,
+    functionRed: rawColor.functionRed,
+    functionGreen: rawColor.functionGreen,
+    functionYellow: rawColor.functionYellow,
+
     generationSavingsTimelineColor1: rawColor.complementaryGreen1,
     generationSavingsTimelineColor2: rawColor.complementaryPink1,
     generationSavingsTimelineColor3: rawColor.brandBlue,
@@ -152,7 +159,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     inputBackground: rawColor.white,
     inputBorder: rawColor.gray400,
-    inputBorderError: rawColor.pink600,
+    inputBorderError: rawColor.red600,
     inputBorderHover: rawColor.gray700,
     inputBorderSuccess: rawColor.green600,
     inputHover: rawColor.gray100,
