@@ -1,3 +1,15 @@
+# [10.27.0](https://github.com/nordnet/ui/compare/v10.26.2...v10.27.0) (2022-05-10)
+
+
+### Bug Fixes
+
+* 🐛 faulty type ([d10f556](https://github.com/nordnet/ui/commit/d10f556))
+
+
+### Features
+
+* 🎸 introduce new default colors + tweak error color usage ([6ec85c6](https://github.com/nordnet/ui/commit/6ec85c6))
+
 ## [10.26.2](https://github.com/nordnet/ui/compare/v10.26.1...v10.26.2) (2022-05-09)
 
 
