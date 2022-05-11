@@ -9,22 +9,19 @@ This component will render a pill component with nothing inside.
 
 ## Props
 
-<ArgsTable of={Pill} />
+<ArgsTable of={Pill.Rounded} />
 
 ## Usage
 
 Basic usage
 
 ```javascript
-<Pill barColor={(t) => t.color.background}>
-  <Typography type="tertiary">123</Typography>
-</Pill>
+<Pill.Rounded color={(t) => t.color.cta} label="pill test" onClose={() => {}} />
 ```
 
 ## Playground
 
 <Playground
-  code={`<Pill barColor={t => t.color.background}>
-    <Typography type="tertiary">123</Typography>
-</Pill>`}
+  code={`<Pill.Rounded color={t => t.color.cta} label=
+  "pill test" onClose={() => {}}/>`}
 />
