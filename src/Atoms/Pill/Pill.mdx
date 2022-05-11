@@ -16,15 +16,11 @@ This component will render a pill component with nothing inside.
 Basic usage
 
 ```javascript
-<Pill barColor={(t) => t.color.background}>
-  <Typography type="tertiary">123</Typography>
-</Pill>
+<Pill.Rounded label="OMXS30" color={(t) => t.color.cta} onClose={() => {}} />
 ```
 
 ## Playground
 
 <Playground
-  code={`<Pill barColor={t => t.color.background}>
-    <Typography type="tertiary">123</Typography>
-</Pill>`}
+  code={`<Pill.Rounded label="OMXS30" color={(t) => t.color.cta} onClose={() => {}} />`}
 />
