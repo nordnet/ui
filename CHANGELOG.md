@@ -1,3 +1,15 @@
+# [10.28.0](https://github.com/nordnet/ui/compare/v10.27.0...v10.28.0) (2022-05-11)
+
+
+### Bug Fixes
+
+* update label color ([01b0f17](https://github.com/nordnet/ui/commit/01b0f17))
+
+
+### Features
+
+* add auto icon ([3b379c2](https://github.com/nordnet/ui/commit/3b379c2))
+
 # [10.27.0](https://github.com/nordnet/ui/compare/v10.26.2...v10.27.0) (2022-05-10)
 
 
