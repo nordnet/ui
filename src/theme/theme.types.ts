@@ -424,7 +424,7 @@ export type ThemeColors = {
   investmentPredictionGraphPink: string;
   /** complementaryTurquoise2 */
   investmentPredictionGraphTurquoise: string;
-  /** gray2 */
+  /** gray600 */
   label: string;
   /** complementaryTurquoise1 */
   lineScaleValueColor: string;

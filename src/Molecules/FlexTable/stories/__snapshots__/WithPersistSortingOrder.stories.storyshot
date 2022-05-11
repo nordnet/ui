@@ -75,7 +75,7 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Controlle
   user-select: none;
   width: 8px;
   height: 8px;
-  fill: #6E6E69;
+  fill: #6E6E6E;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -94,7 +94,7 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Controlle
 
 .c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -565,7 +565,7 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Only Asce
   user-select: none;
   width: 8px;
   height: 8px;
-  fill: #6E6E69;
+  fill: #6E6E6E;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -599,7 +599,7 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Only Asce
 
 .c20 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -1080,7 +1080,7 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Uncontrol
   user-select: none;
   width: 8px;
   height: 8px;
-  fill: #6E6E69;
+  fill: #6E6E6E;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1099,7 +1099,7 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Uncontrol
 
 .c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
