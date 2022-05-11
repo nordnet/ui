@@ -158,7 +158,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   user-select: none;
   width: 8px;
   height: 8px;
-  fill: #6E6E69;
+  fill: #6E6E6E;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -177,7 +177,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
 
 .c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -1136,7 +1136,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
 
 .c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -1937,7 +1937,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
 
 .c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -2663,7 +2663,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
 
 .c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;

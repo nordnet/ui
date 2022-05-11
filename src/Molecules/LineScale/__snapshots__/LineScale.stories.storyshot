@@ -50,7 +50,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Almost At Left Edge 1`] = `
 
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -112,7 +112,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Almost At Left Edge 1`] = `
   padding: 2px 6px;
   white-space: nowrap;
   text-align: center;
-  color: #6E6E69;
+  color: #6E6E6E;
 }
 
 .c2 {
@@ -134,7 +134,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Almost At Left Edge 1`] = `
   margin-left: 1%;
   width: 0px;
   height: 56px;
-  border-left: 1px dashed #6E6E69;
+  border-left: 1px dashed #6E6E6E;
 }
 
 .c8::after {
@@ -270,7 +270,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Almost At Right Edge 1`] = 
 
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -332,7 +332,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Almost At Right Edge 1`] = 
   padding: 2px 6px;
   white-space: nowrap;
   text-align: center;
-  color: #6E6E69;
+  color: #6E6E6E;
 }
 
 .c2 {
@@ -354,7 +354,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Almost At Right Edge 1`] = 
   margin-left: 99%;
   width: 0px;
   height: 56px;
-  border-left: 1px dashed #6E6E69;
+  border-left: 1px dashed #6E6E6E;
 }
 
 .c8::after {
@@ -490,7 +490,7 @@ exports[`Storyshots Molecules / LineScale Line Scale At Left Edge 1`] = `
 
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -552,7 +552,7 @@ exports[`Storyshots Molecules / LineScale Line Scale At Left Edge 1`] = `
   padding: 2px 6px;
   white-space: nowrap;
   text-align: center;
-  color: #6E6E69;
+  color: #6E6E6E;
 }
 
 .c2 {
@@ -574,7 +574,7 @@ exports[`Storyshots Molecules / LineScale Line Scale At Left Edge 1`] = `
   margin-left: 0%;
   width: 0px;
   height: 56px;
-  border-left: 1px dashed #6E6E69;
+  border-left: 1px dashed #6E6E6E;
 }
 
 .c8::after {
@@ -710,7 +710,7 @@ exports[`Storyshots Molecules / LineScale Line Scale At Right Edge 1`] = `
 
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -772,7 +772,7 @@ exports[`Storyshots Molecules / LineScale Line Scale At Right Edge 1`] = `
   padding: 2px 6px;
   white-space: nowrap;
   text-align: center;
-  color: #6E6E69;
+  color: #6E6E6E;
 }
 
 .c2 {
@@ -794,7 +794,7 @@ exports[`Storyshots Molecules / LineScale Line Scale At Right Edge 1`] = `
   margin-left: 100%;
   width: 0px;
   height: 56px;
-  border-left: 1px dashed #6E6E69;
+  border-left: 1px dashed #6E6E6E;
 }
 
 .c8::after {
@@ -930,7 +930,7 @@ exports[`Storyshots Molecules / LineScale Line Scale In The Middle 1`] = `
 
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -992,7 +992,7 @@ exports[`Storyshots Molecules / LineScale Line Scale In The Middle 1`] = `
   padding: 2px 6px;
   white-space: nowrap;
   text-align: center;
-  color: #6E6E69;
+  color: #6E6E6E;
 }
 
 .c2 {
@@ -1014,7 +1014,7 @@ exports[`Storyshots Molecules / LineScale Line Scale In The Middle 1`] = `
   margin-left: 50%;
   width: 0px;
   height: 56px;
-  border-left: 1px dashed #6E6E69;
+  border-left: 1px dashed #6E6E6E;
 }
 
 .c8::after {
@@ -1150,7 +1150,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Near Left Edge 1`] = `
 
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -1212,7 +1212,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Near Left Edge 1`] = `
   padding: 2px 6px;
   white-space: nowrap;
   text-align: center;
-  color: #6E6E69;
+  color: #6E6E6E;
 }
 
 .c2 {
@@ -1234,7 +1234,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Near Left Edge 1`] = `
   margin-left: 5%;
   width: 0px;
   height: 56px;
-  border-left: 1px dashed #6E6E69;
+  border-left: 1px dashed #6E6E6E;
 }
 
 .c8::after {
@@ -1370,7 +1370,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Near Left Edge With Bigger 
 
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -1432,7 +1432,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Near Left Edge With Bigger 
   padding: 2px 6px;
   white-space: nowrap;
   text-align: center;
-  color: #6E6E69;
+  color: #6E6E6E;
 }
 
 .c2 {
@@ -1454,7 +1454,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Near Left Edge With Bigger 
   margin-left: 5%;
   width: 0px;
   height: 56px;
-  border-left: 1px dashed #6E6E69;
+  border-left: 1px dashed #6E6E6E;
 }
 
 .c8::after {
@@ -1590,7 +1590,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Near Right Edge 1`] = `
 
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -1652,7 +1652,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Near Right Edge 1`] = `
   padding: 2px 6px;
   white-space: nowrap;
   text-align: center;
-  color: #6E6E69;
+  color: #6E6E6E;
 }
 
 .c2 {
@@ -1674,7 +1674,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Near Right Edge 1`] = `
   margin-left: 95%;
   width: 0px;
   height: 56px;
-  border-left: 1px dashed #6E6E69;
+  border-left: 1px dashed #6E6E6E;
 }
 
 .c8::after {
@@ -1810,7 +1810,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Near Right Edge With Bigger
 
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -1872,7 +1872,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Near Right Edge With Bigger
   padding: 2px 6px;
   white-space: nowrap;
   text-align: center;
-  color: #6E6E69;
+  color: #6E6E6E;
 }
 
 .c2 {
@@ -1894,7 +1894,7 @@ exports[`Storyshots Molecules / LineScale Line Scale Near Right Edge With Bigger
   margin-left: 95%;
   width: 0px;
   height: 56px;
-  border-left: 1px dashed #6E6E69;
+  border-left: 1px dashed #6E6E6E;
 }
 
 .c8::after {
