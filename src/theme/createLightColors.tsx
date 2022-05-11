@@ -169,7 +169,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     investmentPredictionGraphPink: rawColor.complementaryPink1,
     investmentPredictionGraphTurquoise: rawColor.complementaryTurquoise2,
 
-    label: rawColor.gray2,
+    label: rawColor.gray600,
     lineScaleValueColor: rawColor.complementaryTurquoise1,
     listItemBackgroundHover: Color(rawColor.complementaryTurquoise1).alpha(0.1).rgb().string(),
     loanRatesGraphColor2: rawColor.complementaryBlue2,
