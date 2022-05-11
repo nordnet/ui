@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / CoachMarks Default 1`] = `
-.c4 {
+.c3 {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: transparent;
@@ -12,7 +12,7 @@ exports[`Storyshots Molecules / CoachMarks Default 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c5 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -24,8 +24,17 @@ exports[`Storyshots Molecules / CoachMarks Default 1`] = `
   justify-content: space-between;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c1 {
@@ -35,6 +44,27 @@ exports[`Storyshots Molecules / CoachMarks Default 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 .c1,
@@ -59,40 +89,7 @@ exports[`Storyshots Molecules / CoachMarks Default 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #336BFF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c2::before {
+.c1::before {
   content: '';
   display: block;
   position: absolute;
@@ -103,15 +100,15 @@ exports[`Storyshots Molecules / CoachMarks Default 1`] = `
   height: calc(100% - 4px);
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #2650BF;
 }
 
-.c2:active {
+.c1:active {
   background-color: #1F4099;
 }
 
-.c7 {
+.c6 {
   padding: 20px;
   border: 1px solid #368716;
 }
@@ -120,29 +117,29 @@ exports[`Storyshots Molecules / CoachMarks Default 1`] = `
   className="c0"
 >
   <button
-    className="c1 c2"
+    className="NormalizedButton__Button-sc-ey7f5x-0 c1"
     onClick={[Function]}
     type="button"
   >
     <span>
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c2"
       >
         Start guide
       </span>
     </span>
   </button>
   <div
-    className="c4"
+    className="c3"
   >
     <div
-      className="c5"
+      className="c4"
     >
       <div
-        className="c6"
+        className="c5"
       >
         <div
-          className="c7"
+          className="c6"
         >
           New feature
         </div>
@@ -153,7 +150,7 @@ exports[`Storyshots Molecules / CoachMarks Default 1`] = `
 `;
 
 exports[`Storyshots Molecules / CoachMarks Multpiple Steps 1`] = `
-.c4 {
+.c3 {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: transparent;
@@ -164,7 +161,7 @@ exports[`Storyshots Molecules / CoachMarks Multpiple Steps 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c5 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -176,8 +173,17 @@ exports[`Storyshots Molecules / CoachMarks Multpiple Steps 1`] = `
   justify-content: space-between;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c1 {
@@ -187,6 +193,27 @@ exports[`Storyshots Molecules / CoachMarks Multpiple Steps 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 .c1,
@@ -211,40 +238,7 @@ exports[`Storyshots Molecules / CoachMarks Multpiple Steps 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #336BFF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c2::before {
+.c1::before {
   content: '';
   display: block;
   position: absolute;
@@ -255,15 +249,15 @@ exports[`Storyshots Molecules / CoachMarks Multpiple Steps 1`] = `
   height: calc(100% - 4px);
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #2650BF;
 }
 
-.c2:active {
+.c1:active {
   background-color: #1F4099;
 }
 
-.c7 {
+.c6 {
   padding: 20px;
   border: 1px solid #368716;
 }
@@ -272,38 +266,38 @@ exports[`Storyshots Molecules / CoachMarks Multpiple Steps 1`] = `
   className="c0"
 >
   <button
-    className="c1 c2"
+    className="NormalizedButton__Button-sc-ey7f5x-0 c1"
     onClick={[Function]}
     type="button"
   >
     <span>
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c2"
       >
         Start guide
       </span>
     </span>
   </button>
   <div
-    className="c4"
+    className="c3"
   >
     <div
-      className="c5"
+      className="c4"
     >
       <div
-        className="c6"
+        className="c5"
       >
         <div
-          className="c7"
+          className="c6"
         >
           New feature
         </div>
       </div>
       <div
-        className="c6"
+        className="c5"
       >
         <div
-          className="c7"
+          className="c6"
         >
           Another new feature
         </div>
@@ -311,16 +305,16 @@ exports[`Storyshots Molecules / CoachMarks Multpiple Steps 1`] = `
     </div>
   </div>
   <div
-    className="c4"
+    className="c3"
   >
     <div
-      className="c5"
+      className="c4"
     >
       <div
-        className="c6"
+        className="c5"
       >
         <div
-          className="c7"
+          className="c6"
         >
           New feature
         </div>
@@ -328,16 +322,16 @@ exports[`Storyshots Molecules / CoachMarks Multpiple Steps 1`] = `
     </div>
   </div>
   <div
-    className="c4"
+    className="c3"
   >
     <div
-      className="c5"
+      className="c4"
     >
       <div
-        className="c6"
+        className="c5"
       >
         <div
-          className="c7"
+          className="c6"
         >
           Another new feature
         </div>
@@ -348,7 +342,7 @@ exports[`Storyshots Molecules / CoachMarks Multpiple Steps 1`] = `
 `;
 
 exports[`Storyshots Molecules / CoachMarks With bar color 1`] = `
-.c4 {
+.c3 {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: transparent;
@@ -359,7 +353,7 @@ exports[`Storyshots Molecules / CoachMarks With bar color 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c5 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -371,8 +365,17 @@ exports[`Storyshots Molecules / CoachMarks With bar color 1`] = `
   justify-content: space-between;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c1 {
@@ -382,6 +385,27 @@ exports[`Storyshots Molecules / CoachMarks With bar color 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 .c1,
@@ -406,40 +430,7 @@ exports[`Storyshots Molecules / CoachMarks With bar color 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #336BFF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c2::before {
+.c1::before {
   content: '';
   display: block;
   position: absolute;
@@ -450,15 +441,15 @@ exports[`Storyshots Molecules / CoachMarks With bar color 1`] = `
   height: calc(100% - 4px);
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #2650BF;
 }
 
-.c2:active {
+.c1:active {
   background-color: #1F4099;
 }
 
-.c7 {
+.c6 {
   padding: 20px;
   border: 1px solid #368716;
 }
@@ -467,29 +458,29 @@ exports[`Storyshots Molecules / CoachMarks With bar color 1`] = `
   className="c0"
 >
   <button
-    className="c1 c2"
+    className="NormalizedButton__Button-sc-ey7f5x-0 c1"
     onClick={[Function]}
     type="button"
   >
     <span>
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c2"
       >
         Start guide
       </span>
     </span>
   </button>
   <div
-    className="c4"
+    className="c3"
   >
     <div
-      className="c5"
+      className="c4"
     >
       <div
-        className="c6"
+        className="c5"
       >
         <div
-          className="c7"
+          className="c6"
         >
           New feature
         </div>

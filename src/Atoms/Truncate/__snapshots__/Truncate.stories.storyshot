@@ -29,7 +29,7 @@ exports[`Storyshots Atoms / Truncate Truncate Default 1`] = `
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       This text will be truncated after 35 units
     </span>

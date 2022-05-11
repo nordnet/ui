@@ -38,7 +38,7 @@ exports[`Storyshots Atoms / Card Basic Card 1`] = `
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       A Card as a div containing content
     </span>
@@ -146,7 +146,7 @@ exports[`Storyshots Atoms / Card Card rendered with different html tags 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Section
       </span>
@@ -159,7 +159,7 @@ exports[`Storyshots Atoms / Card Card rendered with different html tags 1`] = `
           className="c5"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c3"
+            className="c3"
           >
             A Card as a section containing content
           </span>
@@ -175,7 +175,7 @@ exports[`Storyshots Atoms / Card Card rendered with different html tags 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Article
       </span>
@@ -188,7 +188,7 @@ exports[`Storyshots Atoms / Card Card rendered with different html tags 1`] = `
           className="c5"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c3"
+            className="c3"
           >
             A Card as a article containing content
           </span>
@@ -249,7 +249,7 @@ exports[`Storyshots Atoms / Card Card with colored top bar 1`] = `
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       A Card as a div containing content
     </span>

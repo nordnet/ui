@@ -13,7 +13,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Allow Update While
   align-items: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -35,15 +35,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Allow Update While
   cursor: pointer;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-}
-
-.c11 {
+.c10 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -75,7 +67,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Allow Update While
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -85,7 +77,12 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Allow Update While
   right: 4px;
 }
 
-.c8 {
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   border: 0;
   width: 100%;
   padding: 8px;
@@ -102,59 +99,59 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Allow Update While
   color: #282823;
 }
 
-.c8:focus {
+.c7:focus {
   border-width: 1px;
 }
 
-.c8:hover {
+.c7:hover {
   border-color: #424242;
 }
 
-.c8:focus {
+.c7:focus {
   border-color: #336BFF;
 }
 
-.c8::-webkit-input-placeholder {
+.c7::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::-moz-placeholder {
+.c7::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:-ms-input-placeholder {
+.c7:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::placeholder {
+.c7::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:disabled::-webkit-input-placeholder {
+.c7:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::-moz-placeholder {
+.c7:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled:-ms-input-placeholder {
+.c7:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::placeholder {
+.c7:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled {
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -181,7 +178,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Allow Update While
       hidden={false}
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         <div
           className="c4"
@@ -189,14 +186,14 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Allow Update While
           Allow update while typing 
         </div>
         <span
-          className="Typography__Span-sc-10mju41-0 c5"
+          className="c5"
         >
           <div
             className="c6"
           >
             <input
               autoComplete="off"
-              className="c7 c8"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input"
               id="disabled-input-range"
               onBlur={[Function]}
@@ -209,13 +206,13 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Allow Update While
               variant="normal"
             />
             <div
-              className="c9 c10"
+              className="c8 c9"
               position="right"
               variant="normal"
             >
               <svg
                 aria-hidden="true"
-                className="c11"
+                className="c10"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -259,6 +256,15 @@ Array [
   box-sizing: border-box;
 }
 
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 .c2 {
   font-family: inherit;
   font-size: 100%;
@@ -266,6 +272,27 @@ Array [
   margin: 0;
   overflow: visible;
   text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 .c2,
@@ -290,40 +317,7 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c3 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #336BFF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c3::before {
+.c2::before {
   content: '';
   display: block;
   position: absolute;
@@ -334,11 +328,11 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c3:hover {
+.c2:hover {
   background-color: #2650BF;
 }
 
-.c3:active {
+.c2:active {
   background-color: #1F4099;
 }
 
@@ -349,13 +343,13 @@ Array [
       className="c1"
     >
       <button
-        className="c2 c3"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c2"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="Typography__Span-sc-10mju41-0 c4"
+            className="c3"
           >
             Next date
           </span>
@@ -366,13 +360,13 @@ Array [
       className="c1"
     >
       <button
-        className="c2 c3"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c2"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="Typography__Span-sc-10mju41-0 c4"
+            className="c3"
           >
             Next end date
           </span>
@@ -392,7 +386,7 @@ Array [
   align-items: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -414,15 +408,7 @@ Array [
   cursor: pointer;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-}
-
-.c11 {
+.c10 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -454,7 +440,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -464,7 +450,12 @@ Array [
   right: 4px;
 }
 
-.c8 {
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   border: 0;
   width: 100%;
   padding: 8px;
@@ -481,59 +472,59 @@ Array [
   color: #282823;
 }
 
-.c8:focus {
+.c7:focus {
   border-width: 1px;
 }
 
-.c8:hover {
+.c7:hover {
   border-color: #424242;
 }
 
-.c8:focus {
+.c7:focus {
   border-color: #336BFF;
 }
 
-.c8::-webkit-input-placeholder {
+.c7::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::-moz-placeholder {
+.c7::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:-ms-input-placeholder {
+.c7:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::placeholder {
+.c7::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:disabled::-webkit-input-placeholder {
+.c7:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::-moz-placeholder {
+.c7:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled:-ms-input-placeholder {
+.c7:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::placeholder {
+.c7:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled {
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -560,7 +551,7 @@ Array [
         hidden={false}
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           <div
             className="c4"
@@ -568,14 +559,14 @@ Array [
             Controlled 
           </div>
           <span
-            className="Typography__Span-sc-10mju41-0 c5"
+            className="c5"
           >
             <div
               className="c6"
             >
               <input
                 autoComplete="off"
-                className="c7 c8"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
                 data-testid="datepicker-input"
                 id="controlled-range"
                 onBlur={[Function]}
@@ -588,13 +579,13 @@ Array [
                 variant="normal"
               />
               <div
-                className="c9 c10"
+                className="c8 c9"
                 position="right"
                 variant="normal"
               >
                 <svg
                   aria-hidden="true"
-                  className="c11"
+                  className="c10"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -627,7 +618,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Default 1`] = `
   align-items: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -649,15 +640,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Default 1`] = `
   cursor: pointer;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-}
-
-.c11 {
+.c10 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -689,7 +672,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Default 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -699,7 +682,12 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Default 1`] = `
   right: 4px;
 }
 
-.c8 {
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   border: 0;
   width: 100%;
   padding: 8px;
@@ -716,59 +704,59 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Default 1`] = `
   color: #282823;
 }
 
-.c8:focus {
+.c7:focus {
   border-width: 1px;
 }
 
-.c8:hover {
+.c7:hover {
   border-color: #424242;
 }
 
-.c8:focus {
+.c7:focus {
   border-color: #336BFF;
 }
 
-.c8::-webkit-input-placeholder {
+.c7::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::-moz-placeholder {
+.c7::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:-ms-input-placeholder {
+.c7:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::placeholder {
+.c7::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:disabled::-webkit-input-placeholder {
+.c7:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::-moz-placeholder {
+.c7:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled:-ms-input-placeholder {
+.c7:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::placeholder {
+.c7:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled {
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -795,7 +783,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Default 1`] = `
       hidden={false}
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         <div
           className="c4"
@@ -803,14 +791,14 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Default 1`] = `
           Label 
         </div>
         <span
-          className="Typography__Span-sc-10mju41-0 c5"
+          className="c5"
         >
           <div
             className="c6"
           >
             <input
               autoComplete="off"
-              className="c7 c8"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input"
               id="input-id-range"
               onBlur={[Function]}
@@ -823,13 +811,13 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Default 1`] = `
               variant="normal"
             />
             <div
-              className="c9 c10"
+              className="c8 c9"
               position="right"
               variant="normal"
             >
               <svg
                 aria-hidden="true"
-                className="c11"
+                className="c10"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -861,7 +849,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Disabled Input 1`]
   align-items: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -883,15 +871,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Disabled Input 1`]
   cursor: not-allowed;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-}
-
-.c11 {
+.c10 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -923,7 +903,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Disabled Input 1`]
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -933,7 +913,12 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Disabled Input 1`]
   right: 4px;
 }
 
-.c8 {
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   border: 0;
   width: 100%;
   padding: 8px;
@@ -951,55 +936,55 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Disabled Input 1`]
   cursor: not-allowed;
 }
 
-.c8:focus {
+.c7:focus {
   border-width: 1px;
 }
 
-.c8:focus {
+.c7:focus {
   border-color: #336BFF;
 }
 
-.c8::-webkit-input-placeholder {
+.c7::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::-moz-placeholder {
+.c7::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:-ms-input-placeholder {
+.c7:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::placeholder {
+.c7::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:disabled::-webkit-input-placeholder {
+.c7:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::-moz-placeholder {
+.c7:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled:-ms-input-placeholder {
+.c7:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::placeholder {
+.c7:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled {
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -1026,7 +1011,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Disabled Input 1`]
       hidden={false}
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         <div
           className="c4"
@@ -1034,14 +1019,14 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Disabled Input 1`]
           Disabled input 
         </div>
         <span
-          className="Typography__Span-sc-10mju41-0 c5"
+          className="c5"
         >
           <div
             className="c6"
           >
             <input
               autoComplete="off"
-              className="c7 c8"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input"
               disabled={true}
               id="disabled-input-range"
@@ -1055,13 +1040,13 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Disabled Input 1`]
               variant="normal"
             />
             <div
-              className="c9 c10"
+              className="c8 c9"
               position="right"
               variant="normal"
             >
               <svg
                 aria-hidden="true"
-                className="c11"
+                className="c10"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -1093,7 +1078,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Disallow Single Da
   align-items: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1115,15 +1100,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Disallow Single Da
   cursor: pointer;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-}
-
-.c11 {
+.c10 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1155,7 +1132,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Disallow Single Da
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -1165,7 +1142,12 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Disallow Single Da
   right: 4px;
 }
 
-.c8 {
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   border: 0;
   width: 100%;
   padding: 8px;
@@ -1182,59 +1164,59 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Disallow Single Da
   color: #282823;
 }
 
-.c8:focus {
+.c7:focus {
   border-width: 1px;
 }
 
-.c8:hover {
+.c7:hover {
   border-color: #424242;
 }
 
-.c8:focus {
+.c7:focus {
   border-color: #336BFF;
 }
 
-.c8::-webkit-input-placeholder {
+.c7::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::-moz-placeholder {
+.c7::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:-ms-input-placeholder {
+.c7:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::placeholder {
+.c7::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:disabled::-webkit-input-placeholder {
+.c7:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::-moz-placeholder {
+.c7:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled:-ms-input-placeholder {
+.c7:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::placeholder {
+.c7:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled {
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -1261,7 +1243,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Disallow Single Da
       hidden={false}
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         <div
           className="c4"
@@ -1269,14 +1251,14 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Disallow Single Da
           Disallow single day range 
         </div>
         <span
-          className="Typography__Span-sc-10mju41-0 c5"
+          className="c5"
         >
           <div
             className="c6"
           >
             <input
               autoComplete="off"
-              className="c7 c8"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input"
               id="disallow-single-day-range-range"
               onBlur={[Function]}
@@ -1289,13 +1271,13 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Disallow Single Da
               variant="normal"
             />
             <div
-              className="c9 c10"
+              className="c8 c9"
               position="right"
               variant="normal"
             >
               <svg
                 aria-hidden="true"
-                className="c11"
+                className="c10"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -1327,7 +1309,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Fullscreen On Mobi
   align-items: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1349,15 +1331,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Fullscreen On Mobi
   cursor: pointer;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-}
-
-.c11 {
+.c10 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1389,7 +1363,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Fullscreen On Mobi
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -1399,7 +1373,12 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Fullscreen On Mobi
   right: 4px;
 }
 
-.c8 {
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   border: 0;
   width: 100%;
   padding: 8px;
@@ -1416,59 +1395,59 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Fullscreen On Mobi
   color: #282823;
 }
 
-.c8:focus {
+.c7:focus {
   border-width: 1px;
 }
 
-.c8:hover {
+.c7:hover {
   border-color: #424242;
 }
 
-.c8:focus {
+.c7:focus {
   border-color: #336BFF;
 }
 
-.c8::-webkit-input-placeholder {
+.c7::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::-moz-placeholder {
+.c7::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:-ms-input-placeholder {
+.c7:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::placeholder {
+.c7::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:disabled::-webkit-input-placeholder {
+.c7:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::-moz-placeholder {
+.c7:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled:-ms-input-placeholder {
+.c7:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::placeholder {
+.c7:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled {
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -1495,7 +1474,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Fullscreen On Mobi
       hidden={false}
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         <div
           className="c4"
@@ -1503,14 +1482,14 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Fullscreen On Mobi
           FullscreenOnMobile 
         </div>
         <span
-          className="Typography__Span-sc-10mju41-0 c5"
+          className="c5"
         >
           <div
             className="c6"
           >
             <input
               autoComplete="off"
-              className="c7 c8"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input"
               id="fullscreen-on-mobile-range"
               onBlur={[Function]}
@@ -1523,13 +1502,13 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Fullscreen On Mobi
               variant="normal"
             />
             <div
-              className="c9 c10"
+              className="c8 c9"
               position="right"
               variant="normal"
             >
               <svg
                 aria-hidden="true"
-                className="c11"
+                className="c10"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -1561,7 +1540,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Same Week Disabled
   align-items: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1583,15 +1562,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Same Week Disabled
   cursor: pointer;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-}
-
-.c11 {
+.c10 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1623,7 +1594,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Same Week Disabled
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -1633,7 +1604,12 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Same Week Disabled
   right: 4px;
 }
 
-.c8 {
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   border: 0;
   width: 100%;
   padding: 8px;
@@ -1650,59 +1626,59 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Same Week Disabled
   color: #282823;
 }
 
-.c8:focus {
+.c7:focus {
   border-width: 1px;
 }
 
-.c8:hover {
+.c7:hover {
   border-color: #424242;
 }
 
-.c8:focus {
+.c7:focus {
   border-color: #336BFF;
 }
 
-.c8::-webkit-input-placeholder {
+.c7::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::-moz-placeholder {
+.c7::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:-ms-input-placeholder {
+.c7:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::placeholder {
+.c7::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:disabled::-webkit-input-placeholder {
+.c7:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::-moz-placeholder {
+.c7:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled:-ms-input-placeholder {
+.c7:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::placeholder {
+.c7:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled {
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -1729,7 +1705,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Same Week Disabled
       hidden={false}
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         <div
           className="c4"
@@ -1737,14 +1713,14 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Same Week Disabled
           Disabled dates on same week 
         </div>
         <span
-          className="Typography__Span-sc-10mju41-0 c5"
+          className="c5"
         >
           <div
             className="c6"
           >
             <input
               autoComplete="off"
-              className="c7 c8"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input"
               id="disable-dates-input-range"
               onBlur={[Function]}
@@ -1757,13 +1733,13 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Same Week Disabled
               variant="normal"
             />
             <div
-              className="c9 c10"
+              className="c8 c9"
               position="right"
               variant="normal"
             >
               <svg
                 aria-hidden="true"
-                className="c11"
+                className="c10"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -1795,7 +1771,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Same Week Enabled 
   align-items: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1817,15 +1793,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Same Week Enabled 
   cursor: pointer;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-}
-
-.c11 {
+.c10 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1857,7 +1825,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Same Week Enabled 
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -1867,7 +1835,12 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Same Week Enabled 
   right: 4px;
 }
 
-.c8 {
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   border: 0;
   width: 100%;
   padding: 8px;
@@ -1884,59 +1857,59 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Same Week Enabled 
   color: #282823;
 }
 
-.c8:focus {
+.c7:focus {
   border-width: 1px;
 }
 
-.c8:hover {
+.c7:hover {
   border-color: #424242;
 }
 
-.c8:focus {
+.c7:focus {
   border-color: #336BFF;
 }
 
-.c8::-webkit-input-placeholder {
+.c7::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::-moz-placeholder {
+.c7::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:-ms-input-placeholder {
+.c7:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::placeholder {
+.c7::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:disabled::-webkit-input-placeholder {
+.c7:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::-moz-placeholder {
+.c7:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled:-ms-input-placeholder {
+.c7:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::placeholder {
+.c7:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled {
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -1963,7 +1936,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Same Week Enabled 
       hidden={false}
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         <div
           className="c4"
@@ -1971,14 +1944,14 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Same Week Enabled 
           Only enabled dates in same week 
         </div>
         <span
-          className="Typography__Span-sc-10mju41-0 c5"
+          className="c5"
         >
           <div
             className="c6"
           >
             <input
               autoComplete="off"
-              className="c7 c8"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input"
               id="enable-dates-input-range"
               onBlur={[Function]}
@@ -1991,13 +1964,13 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker Same Week Enabled 
               variant="normal"
             />
             <div
-              className="c9 c10"
+              className="c8 c9"
               position="right"
               variant="normal"
             >
               <svg
                 aria-hidden="true"
-                className="c11"
+                className="c10"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -2029,7 +2002,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker With Clear Button 
   align-items: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2051,15 +2024,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker With Clear Button 
   cursor: pointer;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-}
-
-.c11 {
+.c10 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2091,7 +2056,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker With Clear Button 
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -2101,7 +2066,12 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker With Clear Button 
   right: 4px;
 }
 
-.c8 {
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   border: 0;
   width: 100%;
   padding: 8px;
@@ -2118,59 +2088,59 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker With Clear Button 
   color: #282823;
 }
 
-.c8:focus {
+.c7:focus {
   border-width: 1px;
 }
 
-.c8:hover {
+.c7:hover {
   border-color: #424242;
 }
 
-.c8:focus {
+.c7:focus {
   border-color: #336BFF;
 }
 
-.c8::-webkit-input-placeholder {
+.c7::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::-moz-placeholder {
+.c7::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:-ms-input-placeholder {
+.c7:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::placeholder {
+.c7::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:disabled::-webkit-input-placeholder {
+.c7:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::-moz-placeholder {
+.c7:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled:-ms-input-placeholder {
+.c7:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::placeholder {
+.c7:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled {
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -2197,7 +2167,7 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker With Clear Button 
       hidden={false}
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         <div
           className="c4"
@@ -2205,14 +2175,14 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker With Clear Button 
           With clear button 
         </div>
         <span
-          className="Typography__Span-sc-10mju41-0 c5"
+          className="c5"
         >
           <div
             className="c6"
           >
             <input
               autoComplete="off"
-              className="c7 c8"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input"
               id="clear-button-range"
               onBlur={[Function]}
@@ -2225,13 +2195,13 @@ exports[`Storyshots Molecules / DatePicker / Range DatePicker With Clear Button 
               variant="normal"
             />
             <div
-              className="c9 c10"
+              className="c8 c9"
               position="right"
               variant="normal"
             >
               <svg
                 aria-hidden="true"
-                className="c11"
+                className="c10"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"

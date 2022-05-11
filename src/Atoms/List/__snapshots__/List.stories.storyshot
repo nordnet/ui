@@ -27,7 +27,7 @@ exports[`Storyshots Atoms / List Basic ordered list 1`] = `
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       List item 1
     </span>
@@ -36,7 +36,7 @@ exports[`Storyshots Atoms / List Basic ordered list 1`] = `
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       List item 2
     </span>
@@ -45,7 +45,7 @@ exports[`Storyshots Atoms / List Basic ordered list 1`] = `
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       List item 3
     </span>
@@ -80,7 +80,7 @@ exports[`Storyshots Atoms / List Basic unordered list 1`] = `
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       List item
     </span>
@@ -89,7 +89,7 @@ exports[`Storyshots Atoms / List Basic unordered list 1`] = `
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       List item
     </span>
@@ -98,7 +98,7 @@ exports[`Storyshots Atoms / List Basic unordered list 1`] = `
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       List item
     </span>
@@ -137,7 +137,7 @@ exports[`Storyshots Atoms / List With separators between each li 1`] = `
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       List item 1
     </span>
@@ -146,7 +146,7 @@ exports[`Storyshots Atoms / List With separators between each li 1`] = `
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       List item 2
     </span>
@@ -155,7 +155,7 @@ exports[`Storyshots Atoms / List With separators between each li 1`] = `
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       List item 3
     </span>

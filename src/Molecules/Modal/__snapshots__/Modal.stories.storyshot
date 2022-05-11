@@ -63,38 +63,7 @@ Array [
   align-items: center;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c9 {
+.c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -108,7 +77,7 @@ Array [
   display: block;
 }
 
-.c10 {
+.c9 {
   stroke: #282823;
 }
 
@@ -143,7 +112,13 @@ Array [
   z-index: 500;
 }
 
-.c8 {
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -155,6 +130,28 @@ Array [
   transform: translateY(3px);
   top: 20px;
   right: 12px;
+}
+
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -196,7 +193,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c8 {
+  .c7 {
     top: 40px;
     right: 40px;
   }
@@ -255,7 +252,7 @@ Array [
                 id="63val-ModalTitle"
               >
                 <h2
-                  className="c3 Typography__Span-sc-10mju41-0 c4"
+                  className="c3 c4"
                 >
                   Dialog information
                 </h2>
@@ -265,26 +262,26 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 initial text
               </p>
             </div>
             <button
-              className="c7 c8"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c7"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c9"
+                className="c8"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c10"
+                  className="c9"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -413,38 +410,7 @@ Array [
   align-items: center;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c9 {
+.c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -458,7 +424,7 @@ Array [
   display: block;
 }
 
-.c10 {
+.c9 {
   stroke: #282823;
 }
 
@@ -493,7 +459,13 @@ Array [
   z-index: 500;
 }
 
-.c8 {
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -505,6 +477,28 @@ Array [
   transform: translateY(3px);
   top: 20px;
   right: 12px;
+}
+
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -546,7 +540,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c8 {
+  .c7 {
     top: 40px;
     right: 40px;
   }
@@ -605,7 +599,7 @@ Array [
                 id="39val-ModalTitle"
               >
                 <h2
-                  className="c3 Typography__Span-sc-10mju41-0 c4"
+                  className="c3 c4"
                 >
                   Dialog information
                 </h2>
@@ -615,7 +609,7 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
               </p>
@@ -624,7 +618,7 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
               </p>
@@ -633,13 +627,13 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 Nielsen/Norman has an excellent article about their usage here
               </p>
             </div>
             <p
-              className="Typography__Span-sc-10mju41-0 c6"
+              className="c6"
             >
               <a
                 href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
@@ -648,20 +642,20 @@ Array [
               </a>
             </p>
             <button
-              className="c7 c8"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c7"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c9"
+                className="c8"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c10"
+                  className="c9"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -790,38 +784,7 @@ Array [
   align-items: center;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c9 {
+.c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -835,7 +798,7 @@ Array [
   display: block;
 }
 
-.c10 {
+.c9 {
   stroke: #282823;
 }
 
@@ -870,7 +833,13 @@ Array [
   z-index: 500;
 }
 
-.c8 {
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -882,6 +851,28 @@ Array [
   transform: translateY(3px);
   top: 20px;
   right: 12px;
+}
+
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -923,7 +914,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c8 {
+  .c7 {
     top: 40px;
     right: 40px;
   }
@@ -982,7 +973,7 @@ Array [
                 id="27val-ModalTitle"
               >
                 <h2
-                  className="c3 Typography__Span-sc-10mju41-0 c4"
+                  className="c3 c4"
                 >
                   Dialog information
                 </h2>
@@ -992,7 +983,7 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
               </p>
@@ -1001,7 +992,7 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
               </p>
@@ -1010,13 +1001,13 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 Nielsen/Norman has an excellent article about their usage here
               </p>
             </div>
             <p
-              className="Typography__Span-sc-10mju41-0 c6"
+              className="c6"
             >
               <a
                 href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
@@ -1025,20 +1016,20 @@ Array [
               </a>
             </p>
             <button
-              className="c7 c8"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c7"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c9"
+                className="c8"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c10"
+                  className="c9"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -1281,7 +1272,7 @@ Array [
                 id="35val-ModalTitle"
               >
                 <h2
-                  className="c3 Typography__Span-sc-10mju41-0 c4"
+                  className="c3 c4"
                 >
                   Dialog information
                 </h2>
@@ -1291,7 +1282,7 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 The close button in the upper right corner is now hidden because the prop hideClose is true.
               </p>
@@ -1480,6 +1471,51 @@ Array [
   align-items: center;
 }
 
+.c16 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c17 {
+  stroke: #282823;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 .c13 {
   font-family: inherit;
   font-size: 100%;
@@ -1487,6 +1523,27 @@ Array [
   margin: 0;
   overflow: visible;
   text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 .c13,
@@ -1511,76 +1568,7 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c17 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c18 {
-  stroke: #282823;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c15 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c14 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #336BFF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c14::before {
+.c13::before {
   content: '';
   display: block;
   position: absolute;
@@ -1591,11 +1579,11 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c14:hover {
+.c13:hover {
   background-color: #2650BF;
 }
 
-.c14:active {
+.c13:active {
   background-color: #1F4099;
 }
 
@@ -1612,7 +1600,13 @@ Array [
   z-index: 500;
 }
 
-.c16 {
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -1624,6 +1618,28 @@ Array [
   transform: translateY(3px);
   top: 20px;
   right: 12px;
+}
+
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -1673,7 +1689,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c16 {
+  .c15 {
     top: 40px;
     right: 40px;
   }
@@ -1732,7 +1748,7 @@ Array [
                 id="29val-ModalTitle"
               >
                 <h2
-                  className="c3 Typography__Span-sc-10mju41-0 c4"
+                  className="c3 c4"
                 >
                   Dialog information
                 </h2>
@@ -1754,7 +1770,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                     </p>
@@ -1763,7 +1779,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding. That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
                     </p>
@@ -1772,7 +1788,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                     </p>
@@ -1781,7 +1797,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                     </p>
@@ -1790,13 +1806,13 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       Nielsen/Norman has an excellent article about their usage here
                     </p>
                   </div>
                   <p
-                    className="Typography__Span-sc-10mju41-0 c10"
+                    className="c10"
                   >
                     <a
                       href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
@@ -1814,18 +1830,18 @@ Array [
               className="c12"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c10"
+                className="c10"
               >
                 This is a footer which is a ReactNode, which could e.g. contain a button or only text
               </p>
               <button
-                className="c13 c14"
+                className="NormalizedButton__Button-sc-ey7f5x-0 c13"
                 onClick={[Function]}
                 type="button"
               >
                 <span>
                   <span
-                    className="Typography__Span-sc-10mju41-0 c15"
+                    className="c14"
                   >
                     Button
                   </span>
@@ -1833,20 +1849,20 @@ Array [
               </button>
             </div>
             <button
-              className="c13 c16"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c15"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c17"
+                className="c16"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c18"
+                  className="c17"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -1940,37 +1956,6 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   display: flex;
 }
 
-.c15 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c15,
-.c15[type='button'],
-.c15[type='reset'],
-.c15[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c15::-moz-focus-inner,
-.c15[type='button']::-moz-focus-inner,
-.c15[type='reset']::-moz-focus-inner,
-.c15[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c15:-moz-focusring,
-.c15[type='button']:-moz-focusring,
-.c15[type='reset']:-moz-focusring,
-.c15[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 .c11 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1985,7 +1970,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   display: block;
 }
 
-.c20 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1999,7 +1984,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   display: block;
 }
 
-.c21 {
+.c20 {
   stroke: #282823;
 }
 
@@ -2036,7 +2021,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   line-height: 1.5;
 }
 
-.c17 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2045,7 +2030,13 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   line-height: 1.5;
 }
 
-.c16 {
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -2069,7 +2060,29 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   cursor: pointer;
 }
 
-.c16::before {
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c15::before {
   content: '';
   display: block;
   position: absolute;
@@ -2080,23 +2093,29 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   height: calc(100% - 4px);
 }
 
-.c16:hover {
+.c15:hover {
   color: #2650BF;
 }
 
-.c16:hover::before {
+.c15:hover::before {
   border-color: #2650BF;
 }
 
-.c16:active {
+.c15:active {
   color: #1F4099;
 }
 
-.c16:active::before {
+.c15:active::before {
   border-color: #1F4099;
 }
 
-.c18 {
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -2120,7 +2139,29 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   cursor: pointer;
 }
 
-.c18::before {
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c17::before {
   content: '';
   display: block;
   position: absolute;
@@ -2131,11 +2172,11 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   height: calc(100% - 4px);
 }
 
-.c18:hover {
+.c17:hover {
   background-color: #2650BF;
 }
 
-.c18:active {
+.c17:active {
   background-color: #1F4099;
 }
 
@@ -2153,7 +2194,13 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   background-color: rgba(110,110,105,0.63);
 }
 
-.c19 {
+.c18 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -2165,6 +2212,28 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   transform: translateY(3px);
   top: 12px;
   right: 12px;
+}
+
+.c18,
+.c18[type='button'],
+.c18[type='reset'],
+.c18[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c18::-moz-focus-inner,
+.c18[type='button']::-moz-focus-inner,
+.c18[type='reset']::-moz-focus-inner,
+.c18[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c18:-moz-focusring,
+.c18[type='button']:-moz-focusring,
+.c18[type='reset']:-moz-focusring,
+.c18[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -2208,7 +2277,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
 }
 
 @media (min-width:760px) {
-  .c19 {
+  .c18 {
     top: 40px;
     right: 40px;
   }
@@ -2267,7 +2336,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
               id="47val-ModalTitle"
             >
               <h2
-                className="c3 Typography__Span-sc-10mju41-0 c4"
+                className="c3 c4"
               >
                 Header
               </h2>
@@ -2277,7 +2346,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
             className="c5"
           >
             <p
-              className="Typography__Span-sc-10mju41-0 c6"
+              className="c6"
             >
               Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and
             </p>
@@ -2309,7 +2378,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
                   </svg>
                 </div>
                 <span
-                  className="Typography__Span-sc-10mju41-0 c13"
+                  className="c13"
                 >
                   Back
                 </span>
@@ -2321,13 +2390,13 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
                   className="c10"
                 >
                   <button
-                    className="c15 c16"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c15"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="Typography__Span-sc-10mju41-0 c17"
+                        className="c16"
                       >
                         Button
                       </span>
@@ -2335,13 +2404,13 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
                   </button>
                 </div>
                 <button
-                  className="c15 c18"
+                  className="NormalizedButton__Button-sc-ey7f5x-0 c17"
                   onClick={[Function]}
                   type="button"
                 >
                   <span>
                     <span
-                      className="Typography__Span-sc-10mju41-0 c17"
+                      className="c16"
                     >
                       Button
                     </span>
@@ -2351,20 +2420,20 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
             </div>
           </div>
           <button
-            className="c15 c19"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c18"
             onClick={[Function]}
             type="button"
           >
             <svg
               aria-hidden="false"
-              className="c20"
+              className="c19"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="img"
               viewBox="0 0 24 24"
             >
               <path
-                className="c21"
+                className="c20"
                 d="m 1 1 l 22 22 m -22 0 l 22 -22"
                 strokeWidth={2}
               />
@@ -2589,37 +2658,6 @@ Array [
   display: flex;
 }
 
-.c20 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c20,
-.c20[type='button'],
-.c20[type='reset'],
-.c20[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c20::-moz-focus-inner,
-.c20[type='button']::-moz-focus-inner,
-.c20[type='reset']::-moz-focus-inner,
-.c20[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c20:-moz-focusring,
-.c20[type='button']:-moz-focusring,
-.c20[type='reset']:-moz-focusring,
-.c20[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 .c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2634,7 +2672,7 @@ Array [
   display: block;
 }
 
-.c25 {
+.c24 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2648,7 +2686,7 @@ Array [
   display: block;
 }
 
-.c26 {
+.c25 {
   stroke: #282823;
 }
 
@@ -2685,7 +2723,7 @@ Array [
   line-height: 1.5;
 }
 
-.c22 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2694,7 +2732,13 @@ Array [
   line-height: 1.5;
 }
 
-.c21 {
+.c20 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -2718,7 +2762,29 @@ Array [
   cursor: pointer;
 }
 
-.c21::before {
+.c20,
+.c20[type='button'],
+.c20[type='reset'],
+.c20[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c20::-moz-focus-inner,
+.c20[type='button']::-moz-focus-inner,
+.c20[type='reset']::-moz-focus-inner,
+.c20[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c20:-moz-focusring,
+.c20[type='button']:-moz-focusring,
+.c20[type='reset']:-moz-focusring,
+.c20[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c20::before {
   content: '';
   display: block;
   position: absolute;
@@ -2729,23 +2795,29 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c21:hover {
+.c20:hover {
   color: #2650BF;
 }
 
-.c21:hover::before {
+.c20:hover::before {
   border-color: #2650BF;
 }
 
-.c21:active {
+.c20:active {
   color: #1F4099;
 }
 
-.c21:active::before {
+.c20:active::before {
   border-color: #1F4099;
 }
 
-.c23 {
+.c22 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -2769,7 +2841,29 @@ Array [
   cursor: pointer;
 }
 
-.c23::before {
+.c22,
+.c22[type='button'],
+.c22[type='reset'],
+.c22[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c22::-moz-focus-inner,
+.c22[type='button']::-moz-focus-inner,
+.c22[type='reset']::-moz-focus-inner,
+.c22[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c22:-moz-focusring,
+.c22[type='button']:-moz-focusring,
+.c22[type='reset']:-moz-focusring,
+.c22[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c22::before {
   content: '';
   display: block;
   position: absolute;
@@ -2780,11 +2874,11 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c23:hover {
+.c22:hover {
   background-color: #2650BF;
 }
 
-.c23:active {
+.c22:active {
   background-color: #1F4099;
 }
 
@@ -2802,7 +2896,13 @@ Array [
   background-color: rgba(110,110,105,0.63);
 }
 
-.c24 {
+.c23 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -2814,6 +2914,28 @@ Array [
   transform: translateY(3px);
   top: 12px;
   right: 12px;
+}
+
+.c23,
+.c23[type='button'],
+.c23[type='reset'],
+.c23[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c23::-moz-focus-inner,
+.c23[type='button']::-moz-focus-inner,
+.c23[type='reset']::-moz-focus-inner,
+.c23[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c23:-moz-focusring,
+.c23[type='button']:-moz-focusring,
+.c23[type='reset']:-moz-focusring,
+.c23[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -2857,7 +2979,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c24 {
+  .c23 {
     top: 40px;
     right: 40px;
   }
@@ -2916,7 +3038,7 @@ Array [
                 id="49val-ModalTitle"
               >
                 <h2
-                  className="c3 Typography__Span-sc-10mju41-0 c4"
+                  className="c3 c4"
                 >
                   Header
                 </h2>
@@ -2938,7 +3060,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                     </p>
@@ -2947,7 +3069,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding. That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
                     </p>
@@ -2956,7 +3078,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                     </p>
@@ -2965,7 +3087,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                     </p>
@@ -2974,7 +3096,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       Nielsen/Norman has an excellent article about their usage here
                     </p>
@@ -3012,7 +3134,7 @@ Array [
                     </svg>
                   </div>
                   <span
-                    className="Typography__Span-sc-10mju41-0 c18"
+                    className="c18"
                   >
                     Back
                   </span>
@@ -3024,13 +3146,13 @@ Array [
                     className="c15"
                   >
                     <button
-                      className="c20 c21"
+                      className="NormalizedButton__Button-sc-ey7f5x-0 c20"
                       onClick={[Function]}
                       type="button"
                     >
                       <span>
                         <span
-                          className="Typography__Span-sc-10mju41-0 c22"
+                          className="c21"
                         >
                           Button
                         </span>
@@ -3038,13 +3160,13 @@ Array [
                     </button>
                   </div>
                   <button
-                    className="c20 c23"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c22"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="Typography__Span-sc-10mju41-0 c22"
+                        className="c21"
                       >
                         Button
                       </span>
@@ -3054,20 +3176,20 @@ Array [
               </div>
             </div>
             <button
-              className="c20 c24"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c23"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c25"
+                className="c24"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c26"
+                  className="c25"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -3161,37 +3283,6 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   display: flex;
 }
 
-.c15 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c15,
-.c15[type='button'],
-.c15[type='reset'],
-.c15[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c15::-moz-focus-inner,
-.c15[type='button']::-moz-focus-inner,
-.c15[type='reset']::-moz-focus-inner,
-.c15[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c15:-moz-focusring,
-.c15[type='button']:-moz-focusring,
-.c15[type='reset']:-moz-focusring,
-.c15[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 .c11 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3206,7 +3297,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   display: block;
 }
 
-.c20 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3220,7 +3311,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   display: block;
 }
 
-.c21 {
+.c20 {
   stroke: #282823;
 }
 
@@ -3257,7 +3348,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   line-height: 1.5;
 }
 
-.c17 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -3266,7 +3357,13 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   line-height: 1.5;
 }
 
-.c16 {
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -3290,7 +3387,29 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   cursor: pointer;
 }
 
-.c16::before {
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c15::before {
   content: '';
   display: block;
   position: absolute;
@@ -3301,23 +3420,29 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   height: calc(100% - 4px);
 }
 
-.c16:hover {
+.c15:hover {
   color: #2650BF;
 }
 
-.c16:hover::before {
+.c15:hover::before {
   border-color: #2650BF;
 }
 
-.c16:active {
+.c15:active {
   color: #1F4099;
 }
 
-.c16:active::before {
+.c15:active::before {
   border-color: #1F4099;
 }
 
-.c18 {
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -3341,7 +3466,29 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   cursor: pointer;
 }
 
-.c18::before {
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c17::before {
   content: '';
   display: block;
   position: absolute;
@@ -3352,11 +3499,11 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   height: calc(100% - 4px);
 }
 
-.c18:hover {
+.c17:hover {
   background-color: #2650BF;
 }
 
-.c18:active {
+.c17:active {
   background-color: #1F4099;
 }
 
@@ -3374,7 +3521,13 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   background-color: rgba(110,110,105,0.63);
 }
 
-.c19 {
+.c18 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -3386,6 +3539,28 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   transform: translateY(3px);
   top: 12px;
   right: 12px;
+}
+
+.c18,
+.c18[type='button'],
+.c18[type='reset'],
+.c18[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c18::-moz-focus-inner,
+.c18[type='button']::-moz-focus-inner,
+.c18[type='reset']::-moz-focus-inner,
+.c18[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c18:-moz-focusring,
+.c18[type='button']:-moz-focusring,
+.c18[type='reset']:-moz-focusring,
+.c18[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -3429,7 +3604,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
 }
 
 @media (min-width:760px) {
-  .c19 {
+  .c18 {
     top: 40px;
     right: 40px;
   }
@@ -3488,7 +3663,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
               id="45val-ModalTitle"
             >
               <h2
-                className="c3 Typography__Span-sc-10mju41-0 c4"
+                className="c3 c4"
               >
                 Header
               </h2>
@@ -3498,7 +3673,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
             className="c5"
           >
             <p
-              className="Typography__Span-sc-10mju41-0 c6"
+              className="c6"
             >
               Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and
             </p>
@@ -3530,7 +3705,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
                   </svg>
                 </div>
                 <span
-                  className="Typography__Span-sc-10mju41-0 c13"
+                  className="c13"
                 >
                   Back
                 </span>
@@ -3542,13 +3717,13 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
                   className="c10"
                 >
                   <button
-                    className="c15 c16"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c15"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="Typography__Span-sc-10mju41-0 c17"
+                        className="c16"
                       >
                         Button
                       </span>
@@ -3556,13 +3731,13 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
                   </button>
                 </div>
                 <button
-                  className="c15 c18"
+                  className="NormalizedButton__Button-sc-ey7f5x-0 c17"
                   onClick={[Function]}
                   type="button"
                 >
                   <span>
                     <span
-                      className="Typography__Span-sc-10mju41-0 c17"
+                      className="c16"
                     >
                       Button
                     </span>
@@ -3572,20 +3747,20 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
             </div>
           </div>
           <button
-            className="c15 c19"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c18"
             onClick={[Function]}
             type="button"
           >
             <svg
               aria-hidden="false"
-              className="c20"
+              className="c19"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="img"
               viewBox="0 0 24 24"
             >
               <path
-                className="c21"
+                className="c20"
                 d="m 1 1 l 22 22 m -22 0 l 22 -22"
                 strokeWidth={2}
               />
@@ -3796,38 +3971,7 @@ Array [
   flex: 1;
 }
 
-.c15 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c15,
-.c15[type='button'],
-.c15[type='reset'],
-.c15[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c15::-moz-focus-inner,
-.c15[type='button']::-moz-focus-inner,
-.c15[type='reset']::-moz-focus-inner,
-.c15[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c15:-moz-focusring,
-.c15[type='button']:-moz-focusring,
-.c15[type='reset']:-moz-focusring,
-.c15[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c19 {
+.c18 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3841,7 +3985,7 @@ Array [
   display: block;
 }
 
-.c20 {
+.c19 {
   stroke: #282823;
 }
 
@@ -3863,7 +4007,7 @@ Array [
   line-height: 1.5;
 }
 
-.c17 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -3872,7 +4016,13 @@ Array [
   line-height: 1.5;
 }
 
-.c16 {
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -3897,7 +4047,29 @@ Array [
   cursor: pointer;
 }
 
-.c16::before {
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c15::before {
   content: '';
   display: block;
   position: absolute;
@@ -3908,11 +4080,11 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c16:hover {
+.c15:hover {
   background-color: #2650BF;
 }
 
-.c16:active {
+.c15:active {
   background-color: #1F4099;
 }
 
@@ -3929,7 +4101,13 @@ Array [
   z-index: 500;
 }
 
-.c18 {
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -3941,6 +4119,28 @@ Array [
   transform: translateY(3px);
   top: 20px;
   right: 12px;
+}
+
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -3990,7 +4190,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c18 {
+  .c17 {
     top: 40px;
     right: 40px;
   }
@@ -4049,7 +4249,7 @@ Array [
                 id="61val-ModalTitle"
               >
                 <h2
-                  className="c3 Typography__Span-sc-10mju41-0 c4"
+                  className="c3 c4"
                 >
                   Header
                 </h2>
@@ -4071,7 +4271,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                     </p>
@@ -4080,7 +4280,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding. That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
                     </p>
@@ -4089,7 +4289,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                     </p>
@@ -4098,7 +4298,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                     </p>
@@ -4107,7 +4307,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       Nielsen/Norman has an excellent article about their usage here
                     </p>
@@ -4128,13 +4328,13 @@ Array [
                   className="c14"
                 >
                   <button
-                    className="c15 c16"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c15"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="Typography__Span-sc-10mju41-0 c17"
+                        className="c16"
                       >
                         Button
                       </span>
@@ -4144,20 +4344,20 @@ Array [
               </div>
             </div>
             <button
-              className="c15 c18"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c17"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c19"
+                className="c18"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c20"
+                  className="c19"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -4380,38 +4580,7 @@ Array [
   flex: 1;
 }
 
-.c15 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c15,
-.c15[type='button'],
-.c15[type='reset'],
-.c15[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c15::-moz-focus-inner,
-.c15[type='button']::-moz-focus-inner,
-.c15[type='reset']::-moz-focus-inner,
-.c15[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c15:-moz-focusring,
-.c15[type='button']:-moz-focusring,
-.c15[type='reset']:-moz-focusring,
-.c15[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c20 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4425,7 +4594,7 @@ Array [
   display: block;
 }
 
-.c21 {
+.c20 {
   stroke: #282823;
 }
 
@@ -4447,7 +4616,7 @@ Array [
   line-height: 1.5;
 }
 
-.c17 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -4456,7 +4625,13 @@ Array [
   line-height: 1.5;
 }
 
-.c16 {
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -4481,7 +4656,29 @@ Array [
   cursor: pointer;
 }
 
-.c16::before {
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c15::before {
   content: '';
   display: block;
   position: absolute;
@@ -4492,23 +4689,29 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c16:hover {
+.c15:hover {
   color: #2650BF;
 }
 
-.c16:hover::before {
+.c15:hover::before {
   border-color: #2650BF;
 }
 
-.c16:active {
+.c15:active {
   color: #1F4099;
 }
 
-.c16:active::before {
+.c15:active::before {
   border-color: #1F4099;
 }
 
-.c18 {
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -4533,7 +4736,29 @@ Array [
   cursor: pointer;
 }
 
-.c18::before {
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c17::before {
   content: '';
   display: block;
   position: absolute;
@@ -4544,11 +4769,11 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c18:hover {
+.c17:hover {
   background-color: #2650BF;
 }
 
-.c18:active {
+.c17:active {
   background-color: #1F4099;
 }
 
@@ -4565,7 +4790,13 @@ Array [
   z-index: 500;
 }
 
-.c19 {
+.c18 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -4577,6 +4808,28 @@ Array [
   transform: translateY(3px);
   top: 20px;
   right: 12px;
+}
+
+.c18,
+.c18[type='button'],
+.c18[type='reset'],
+.c18[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c18::-moz-focus-inner,
+.c18[type='button']::-moz-focus-inner,
+.c18[type='reset']::-moz-focus-inner,
+.c18[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c18:-moz-focusring,
+.c18[type='button']:-moz-focusring,
+.c18[type='reset']:-moz-focusring,
+.c18[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -4626,7 +4879,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c19 {
+  .c18 {
     top: 40px;
     right: 40px;
   }
@@ -4685,7 +4938,7 @@ Array [
                 id="59val-ModalTitle"
               >
                 <h2
-                  className="c3 Typography__Span-sc-10mju41-0 c4"
+                  className="c3 c4"
                 >
                   Header
                 </h2>
@@ -4707,7 +4960,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                     </p>
@@ -4716,7 +4969,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding. That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
                     </p>
@@ -4725,7 +4978,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                     </p>
@@ -4734,7 +4987,7 @@ Array [
                     className="c9"
                   >
                     <p
-                      className="Typography__Span-sc-10mju41-0 c10"
+                      className="c10"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals
                     </p>
@@ -4755,13 +5008,13 @@ Array [
                   className="c14"
                 >
                   <button
-                    className="c15 c16"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c15"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="Typography__Span-sc-10mju41-0 c17"
+                        className="c16"
                       >
                         Button
                       </span>
@@ -4772,13 +5025,13 @@ Array [
                   className="c14"
                 >
                   <button
-                    className="c15 c18"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c17"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="Typography__Span-sc-10mju41-0 c17"
+                        className="c16"
                       >
                         Button
                       </span>
@@ -4788,20 +5041,20 @@ Array [
               </div>
             </div>
             <button
-              className="c15 c19"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c18"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c20"
+                className="c19"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c21"
+                  className="c20"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -4949,38 +5202,7 @@ Array [
   flex: 1;
 }
 
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c10,
-.c10[type='button'],
-.c10[type='reset'],
-.c10[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c10::-moz-focus-inner,
-.c10[type='button']::-moz-focus-inner,
-.c10[type='reset']::-moz-focus-inner,
-.c10[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c10:-moz-focusring,
-.c10[type='button']:-moz-focusring,
-.c10[type='reset']:-moz-focusring,
-.c10[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c14 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4994,7 +5216,7 @@ Array [
   display: block;
 }
 
-.c15 {
+.c14 {
   stroke: #282823;
 }
 
@@ -5016,7 +5238,7 @@ Array [
   line-height: 1.5;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -5025,7 +5247,13 @@ Array [
   line-height: 1.5;
 }
 
-.c11 {
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -5050,7 +5278,29 @@ Array [
   cursor: pointer;
 }
 
-.c11::before {
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c10::before {
   content: '';
   display: block;
   position: absolute;
@@ -5061,11 +5311,11 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c11:hover {
+.c10:hover {
   background-color: #2650BF;
 }
 
-.c11:active {
+.c10:active {
   background-color: #1F4099;
 }
 
@@ -5082,7 +5332,13 @@ Array [
   z-index: 500;
 }
 
-.c13 {
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -5094,6 +5350,28 @@ Array [
   transform: translateY(3px);
   top: 20px;
   right: 12px;
+}
+
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -5143,7 +5421,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c13 {
+  .c12 {
     top: 40px;
     right: 40px;
   }
@@ -5202,7 +5480,7 @@ Array [
                 id="53val-ModalTitle"
               >
                 <h2
-                  className="c3 Typography__Span-sc-10mju41-0 c4"
+                  className="c3 c4"
                 >
                   Dialog information
                 </h2>
@@ -5212,7 +5490,7 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
               </p>
@@ -5221,7 +5499,7 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience. Modals should be used with care as they are
               </p>
@@ -5236,13 +5514,13 @@ Array [
                   className="c9"
                 >
                   <button
-                    className="c10 c11"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c10"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="Typography__Span-sc-10mju41-0 c12"
+                        className="c11"
                       >
                         Confirm
                       </span>
@@ -5252,20 +5530,20 @@ Array [
               </div>
             </div>
             <button
-              className="c10 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c14"
+                className="c13"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c15"
+                  className="c14"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -5405,38 +5683,7 @@ Array [
   flex: 1;
 }
 
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c10,
-.c10[type='button'],
-.c10[type='reset'],
-.c10[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c10::-moz-focus-inner,
-.c10[type='button']::-moz-focus-inner,
-.c10[type='reset']::-moz-focus-inner,
-.c10[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c10:-moz-focusring,
-.c10[type='button']:-moz-focusring,
-.c10[type='reset']:-moz-focusring,
-.c10[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c14 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5450,7 +5697,7 @@ Array [
   display: block;
 }
 
-.c15 {
+.c14 {
   stroke: #282823;
 }
 
@@ -5472,7 +5719,7 @@ Array [
   line-height: 1.5;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -5481,7 +5728,13 @@ Array [
   line-height: 1.5;
 }
 
-.c11 {
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -5506,7 +5759,29 @@ Array [
   cursor: pointer;
 }
 
-.c11::before {
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c10::before {
   content: '';
   display: block;
   position: absolute;
@@ -5517,11 +5792,11 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c11:hover {
+.c10:hover {
   background-color: #2650BF;
 }
 
-.c11:active {
+.c10:active {
   background-color: #1F4099;
 }
 
@@ -5539,7 +5814,13 @@ Array [
   background-color: rgba(110,110,105,0.63);
 }
 
-.c13 {
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -5551,6 +5832,28 @@ Array [
   transform: translateY(3px);
   top: 12px;
   right: 12px;
+}
+
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -5594,7 +5897,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c13 {
+  .c12 {
     top: 40px;
     right: 40px;
   }
@@ -5653,7 +5956,7 @@ Array [
                 id="57val-ModalTitle"
               >
                 <h2
-                  className="c3 Typography__Span-sc-10mju41-0 c4"
+                  className="c3 c4"
                 >
                   Header
                 </h2>
@@ -5663,7 +5966,7 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable
               </p>
@@ -5678,13 +5981,13 @@ Array [
                   className="c9"
                 >
                   <button
-                    className="c10 c11"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c10"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="Typography__Span-sc-10mju41-0 c12"
+                        className="c11"
                       >
                         Button
                       </span>
@@ -5694,20 +5997,20 @@ Array [
               </div>
             </div>
             <button
-              className="c10 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c14"
+                className="c13"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c15"
+                  className="c14"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -5866,38 +6169,7 @@ Array [
   flex: 1;
 }
 
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c10,
-.c10[type='button'],
-.c10[type='reset'],
-.c10[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c10::-moz-focus-inner,
-.c10[type='button']::-moz-focus-inner,
-.c10[type='reset']::-moz-focus-inner,
-.c10[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c10:-moz-focusring,
-.c10[type='button']:-moz-focusring,
-.c10[type='reset']:-moz-focusring,
-.c10[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c15 {
+.c14 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5911,7 +6183,7 @@ Array [
   display: block;
 }
 
-.c16 {
+.c15 {
   stroke: #282823;
 }
 
@@ -5933,7 +6205,7 @@ Array [
   line-height: 1.5;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -5942,7 +6214,13 @@ Array [
   line-height: 1.5;
 }
 
-.c11 {
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -5967,7 +6245,29 @@ Array [
   cursor: pointer;
 }
 
-.c11::before {
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c10::before {
   content: '';
   display: block;
   position: absolute;
@@ -5978,23 +6278,29 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c11:hover {
+.c10:hover {
   color: #2650BF;
 }
 
-.c11:hover::before {
+.c10:hover::before {
   border-color: #2650BF;
 }
 
-.c11:active {
+.c10:active {
   color: #1F4099;
 }
 
-.c11:active::before {
+.c10:active::before {
   border-color: #1F4099;
 }
 
-.c13 {
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -6019,7 +6325,29 @@ Array [
   cursor: pointer;
 }
 
-.c13::before {
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c12::before {
   content: '';
   display: block;
   position: absolute;
@@ -6030,11 +6358,11 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c13:hover {
+.c12:hover {
   background-color: #2650BF;
 }
 
-.c13:active {
+.c12:active {
   background-color: #1F4099;
 }
 
@@ -6051,7 +6379,13 @@ Array [
   z-index: 500;
 }
 
-.c14 {
+.c13 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -6063,6 +6397,28 @@ Array [
   transform: translateY(3px);
   top: 20px;
   right: 12px;
+}
+
+.c13,
+.c13[type='button'],
+.c13[type='reset'],
+.c13[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c13::-moz-focus-inner,
+.c13[type='button']::-moz-focus-inner,
+.c13[type='reset']::-moz-focus-inner,
+.c13[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c13:-moz-focusring,
+.c13[type='button']:-moz-focusring,
+.c13[type='reset']:-moz-focusring,
+.c13[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -6112,7 +6468,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c14 {
+  .c13 {
     top: 40px;
     right: 40px;
   }
@@ -6171,7 +6527,7 @@ Array [
                 id="51val-ModalTitle"
               >
                 <h2
-                  className="c3 Typography__Span-sc-10mju41-0 c4"
+                  className="c3 c4"
                 >
                   Dialog information
                 </h2>
@@ -6181,7 +6537,7 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
               </p>
@@ -6190,7 +6546,7 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience. Modals should be used with care as they are
               </p>
@@ -6205,13 +6561,13 @@ Array [
                   className="c9"
                 >
                   <button
-                    className="c10 c11"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c10"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="Typography__Span-sc-10mju41-0 c12"
+                        className="c11"
                       >
                         Cancel
                       </span>
@@ -6222,13 +6578,13 @@ Array [
                   className="c9"
                 >
                   <button
-                    className="c10 c13"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c12"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="Typography__Span-sc-10mju41-0 c12"
+                        className="c11"
                       >
                         Confirm
                       </span>
@@ -6238,20 +6594,20 @@ Array [
               </div>
             </div>
             <button
-              className="c10 c14"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c15"
+                className="c14"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c16"
+                  className="c15"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -6402,38 +6758,7 @@ Array [
   flex: 1;
 }
 
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c10,
-.c10[type='button'],
-.c10[type='reset'],
-.c10[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c10::-moz-focus-inner,
-.c10[type='button']::-moz-focus-inner,
-.c10[type='reset']::-moz-focus-inner,
-.c10[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c10:-moz-focusring,
-.c10[type='button']:-moz-focusring,
-.c10[type='reset']:-moz-focusring,
-.c10[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c15 {
+.c14 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -6447,7 +6772,7 @@ Array [
   display: block;
 }
 
-.c16 {
+.c15 {
   stroke: #282823;
 }
 
@@ -6469,7 +6794,7 @@ Array [
   line-height: 1.5;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -6478,7 +6803,13 @@ Array [
   line-height: 1.5;
 }
 
-.c11 {
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -6503,7 +6834,29 @@ Array [
   cursor: pointer;
 }
 
-.c11::before {
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c10::before {
   content: '';
   display: block;
   position: absolute;
@@ -6514,23 +6867,29 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c11:hover {
+.c10:hover {
   color: #2650BF;
 }
 
-.c11:hover::before {
+.c10:hover::before {
   border-color: #2650BF;
 }
 
-.c11:active {
+.c10:active {
   color: #1F4099;
 }
 
-.c11:active::before {
+.c10:active::before {
   border-color: #1F4099;
 }
 
-.c13 {
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -6555,7 +6914,29 @@ Array [
   cursor: pointer;
 }
 
-.c13::before {
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c12::before {
   content: '';
   display: block;
   position: absolute;
@@ -6566,11 +6947,11 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c13:hover {
+.c12:hover {
   background-color: #2650BF;
 }
 
-.c13:active {
+.c12:active {
   background-color: #1F4099;
 }
 
@@ -6588,7 +6969,13 @@ Array [
   background-color: rgba(110,110,105,0.63);
 }
 
-.c14 {
+.c13 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -6600,6 +6987,28 @@ Array [
   transform: translateY(3px);
   top: 12px;
   right: 12px;
+}
+
+.c13,
+.c13[type='button'],
+.c13[type='reset'],
+.c13[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c13::-moz-focus-inner,
+.c13[type='button']::-moz-focus-inner,
+.c13[type='reset']::-moz-focus-inner,
+.c13[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c13:-moz-focusring,
+.c13[type='button']:-moz-focusring,
+.c13[type='reset']:-moz-focusring,
+.c13[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -6643,7 +7052,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c14 {
+  .c13 {
     top: 40px;
     right: 40px;
   }
@@ -6702,7 +7111,7 @@ Array [
                 id="55val-ModalTitle"
               >
                 <h2
-                  className="c3 Typography__Span-sc-10mju41-0 c4"
+                  className="c3 c4"
                 >
                   Header
                 </h2>
@@ -6712,7 +7121,7 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable
               </p>
@@ -6727,13 +7136,13 @@ Array [
                   className="c9"
                 >
                   <button
-                    className="c10 c11"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c10"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="Typography__Span-sc-10mju41-0 c12"
+                        className="c11"
                       >
                         Button
                       </span>
@@ -6744,13 +7153,13 @@ Array [
                   className="c9"
                 >
                   <button
-                    className="c10 c13"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c12"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="Typography__Span-sc-10mju41-0 c12"
+                        className="c11"
                       >
                         Button
                       </span>
@@ -6760,20 +7169,20 @@ Array [
               </div>
             </div>
             <button
-              className="c10 c14"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c15"
+                className="c14"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c16"
+                  className="c15"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -6934,37 +7343,6 @@ Array [
   display: flex;
 }
 
-.c15 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c15,
-.c15[type='button'],
-.c15[type='reset'],
-.c15[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c15::-moz-focus-inner,
-.c15[type='button']::-moz-focus-inner,
-.c15[type='reset']::-moz-focus-inner,
-.c15[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c15:-moz-focusring,
-.c15[type='button']:-moz-focusring,
-.c15[type='reset']:-moz-focusring,
-.c15[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 .c11 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -6979,7 +7357,7 @@ Array [
   display: block;
 }
 
-.c20 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -6993,7 +7371,7 @@ Array [
   display: block;
 }
 
-.c21 {
+.c20 {
   stroke: #282823;
 }
 
@@ -7030,7 +7408,7 @@ Array [
   line-height: 1.5;
 }
 
-.c17 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -7039,7 +7417,13 @@ Array [
   line-height: 1.5;
 }
 
-.c16 {
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -7063,7 +7447,29 @@ Array [
   cursor: pointer;
 }
 
-.c16::before {
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c15::before {
   content: '';
   display: block;
   position: absolute;
@@ -7074,23 +7480,29 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c16:hover {
+.c15:hover {
   color: #2650BF;
 }
 
-.c16:hover::before {
+.c15:hover::before {
   border-color: #2650BF;
 }
 
-.c16:active {
+.c15:active {
   color: #1F4099;
 }
 
-.c16:active::before {
+.c15:active::before {
   border-color: #1F4099;
 }
 
-.c18 {
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -7114,7 +7526,29 @@ Array [
   cursor: pointer;
 }
 
-.c18::before {
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c17::before {
   content: '';
   display: block;
   position: absolute;
@@ -7125,11 +7559,11 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c18:hover {
+.c17:hover {
   background-color: #2650BF;
 }
 
-.c18:active {
+.c17:active {
   background-color: #1F4099;
 }
 
@@ -7147,7 +7581,13 @@ Array [
   background-color: rgba(110,110,105,0.63);
 }
 
-.c19 {
+.c18 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -7159,6 +7599,28 @@ Array [
   transform: translateY(3px);
   top: 12px;
   right: 12px;
+}
+
+.c18,
+.c18[type='button'],
+.c18[type='reset'],
+.c18[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c18::-moz-focus-inner,
+.c18[type='button']::-moz-focus-inner,
+.c18[type='reset']::-moz-focus-inner,
+.c18[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c18:-moz-focusring,
+.c18[type='button']:-moz-focusring,
+.c18[type='reset']:-moz-focusring,
+.c18[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -7202,7 +7664,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c19 {
+  .c18 {
     top: 40px;
     right: 40px;
   }
@@ -7261,7 +7723,7 @@ Array [
                 id="43val-ModalTitle"
               >
                 <h2
-                  className="c3 Typography__Span-sc-10mju41-0 c4"
+                  className="c3 c4"
                 >
                   Header
                 </h2>
@@ -7271,7 +7733,7 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and
               </p>
@@ -7303,7 +7765,7 @@ Array [
                     </svg>
                   </div>
                   <span
-                    className="Typography__Span-sc-10mju41-0 c13"
+                    className="c13"
                   >
                     Back
                   </span>
@@ -7315,13 +7777,13 @@ Array [
                     className="c10"
                   >
                     <button
-                      className="c15 c16"
+                      className="NormalizedButton__Button-sc-ey7f5x-0 c15"
                       onClick={[Function]}
                       type="button"
                     >
                       <span>
                         <span
-                          className="Typography__Span-sc-10mju41-0 c17"
+                          className="c16"
                         >
                           Button
                         </span>
@@ -7329,13 +7791,13 @@ Array [
                     </button>
                   </div>
                   <button
-                    className="c15 c18"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c17"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="Typography__Span-sc-10mju41-0 c17"
+                        className="c16"
                       >
                         Button
                       </span>
@@ -7345,20 +7807,20 @@ Array [
               </div>
             </div>
             <button
-              className="c15 c19"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c18"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c20"
+                className="c19"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c21"
+                  className="c20"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -7412,38 +7874,7 @@ exports[`Storyshots Molecules / Modal Modal with disabled escape-key press 1`] =
   align-items: center;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c9 {
+.c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -7457,7 +7888,7 @@ exports[`Storyshots Molecules / Modal Modal with disabled escape-key press 1`] =
   display: block;
 }
 
-.c10 {
+.c9 {
   stroke: #282823;
 }
 
@@ -7492,7 +7923,13 @@ exports[`Storyshots Molecules / Modal Modal with disabled escape-key press 1`] =
   z-index: 500;
 }
 
-.c8 {
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -7504,6 +7941,28 @@ exports[`Storyshots Molecules / Modal Modal with disabled escape-key press 1`] =
   transform: translateY(3px);
   top: 20px;
   right: 12px;
+}
+
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -7545,7 +8004,7 @@ exports[`Storyshots Molecules / Modal Modal with disabled escape-key press 1`] =
 }
 
 @media (min-width:760px) {
-  .c8 {
+  .c7 {
     top: 40px;
     right: 40px;
   }
@@ -7604,7 +8063,7 @@ exports[`Storyshots Molecules / Modal Modal with disabled escape-key press 1`] =
               id="67val-ModalTitle"
             >
               <h2
-                className="c3 Typography__Span-sc-10mju41-0 c4"
+                className="c3 c4"
               >
                 Dialog information
               </h2>
@@ -7614,26 +8073,26 @@ exports[`Storyshots Molecules / Modal Modal with disabled escape-key press 1`] =
             className="c5"
           >
             <p
-              className="Typography__Span-sc-10mju41-0 c6"
+              className="c6"
             >
               Pressing the escape-key will usually call the modal's onClose function. The prop closeOnEscapePress=false will prevent this functionality.
             </p>
           </div>
           <button
-            className="c7 c8"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c7"
             onClick={[Function]}
             type="button"
           >
             <svg
               aria-hidden="false"
-              className="c9"
+              className="c8"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="img"
               viewBox="0 0 24 24"
             >
               <path
-                className="c10"
+                className="c9"
                 d="m 1 1 l 22 22 m -22 0 l 22 -22"
                 strokeWidth={2}
               />
@@ -7753,38 +8212,7 @@ Array [
   align-items: center;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c9 {
+.c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -7798,7 +8226,7 @@ Array [
   display: block;
 }
 
-.c10 {
+.c9 {
   stroke: #282823;
 }
 
@@ -7833,7 +8261,13 @@ Array [
   z-index: 500;
 }
 
-.c8 {
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -7845,6 +8279,28 @@ Array [
   transform: translateY(3px);
   top: 20px;
   right: 12px;
+}
+
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -7880,7 +8336,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c8 {
+  .c7 {
     top: 40px;
     right: 40px;
   }
@@ -7938,7 +8394,7 @@ Array [
                 id="65val-ModalTitle"
               >
                 <h2
-                  className="c3 Typography__Span-sc-10mju41-0 c4"
+                  className="c3 c4"
                 >
                   Dialog information
                 </h2>
@@ -7948,26 +8404,26 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
               </p>
             </div>
             <button
-              className="c7 c8"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c7"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c9"
+                className="c8"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c10"
+                  className="c9"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -8085,37 +8541,6 @@ Array [
   padding-top: 0;
 }
 
-.c8 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -8130,7 +8555,7 @@ Array [
   display: block;
 }
 
-.c10 {
+.c9 {
   stroke: #282823;
 }
 
@@ -8161,7 +8586,13 @@ Array [
   z-index: 500;
 }
 
-.c9 {
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -8173,6 +8604,28 @@ Array [
   transform: translateY(3px);
   top: 20px;
   right: 12px;
+}
+
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -8214,7 +8667,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c9 {
+  .c8 {
     top: 40px;
     right: 40px;
   }
@@ -8289,7 +8742,7 @@ Array [
                     />
                   </svg>
                   <h2
-                    className="Typography__Span-sc-10mju41-0 c5"
+                    className="c5"
                   >
                     React Node Title
                   </h2>
@@ -8313,7 +8766,7 @@ Array [
               className="c6"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c7"
+                className="c7"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
               </p>
@@ -8322,7 +8775,7 @@ Array [
               className="c6"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c7"
+                className="c7"
               >
                 That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
               </p>
@@ -8331,13 +8784,13 @@ Array [
               className="c6"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c7"
+                className="c7"
               >
                 Nielsen/Norman has an excellent article about their usage here
               </p>
             </div>
             <p
-              className="Typography__Span-sc-10mju41-0 c7"
+              className="c7"
             >
               <a
                 href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
@@ -8346,7 +8799,7 @@ Array [
               </a>
             </p>
             <button
-              className="c8 c9"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c8"
               onClick={[Function]}
               type="button"
             >
@@ -8359,7 +8812,7 @@ Array [
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c10"
+                  className="c9"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -8497,6 +8950,51 @@ Array [
   justify-content: flex-end;
 }
 
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c15 {
+  stroke: #282823;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c10 {
   font-family: inherit;
   font-size: 100%;
@@ -8504,6 +9002,27 @@ Array [
   margin: 0;
   overflow: visible;
   text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: transparent;
+  color: #336BFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 .c10,
@@ -8528,76 +9047,7 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c16 {
-  stroke: #282823;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c11 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 16px;
-  min-height: 40px;
-  background-color: transparent;
-  color: #336BFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c11::before {
+.c10::before {
   content: '';
   display: block;
   position: absolute;
@@ -8608,23 +9058,29 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c11:hover {
+.c10:hover {
   color: #2650BF;
 }
 
-.c11:hover::before {
+.c10:hover::before {
   border-color: #2650BF;
 }
 
-.c11:active {
+.c10:active {
   color: #1F4099;
 }
 
-.c11:active::before {
+.c10:active::before {
   border-color: #1F4099;
 }
 
-.c13 {
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -8648,7 +9104,29 @@ Array [
   cursor: pointer;
 }
 
-.c13::before {
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c12::before {
   content: '';
   display: block;
   position: absolute;
@@ -8659,11 +9137,11 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c13:hover {
+.c12:hover {
   background-color: #2650BF;
 }
 
-.c13:active {
+.c12:active {
   background-color: #1F4099;
 }
 
@@ -8681,7 +9159,13 @@ Array [
   background-color: rgba(110,110,105,0.63);
 }
 
-.c14 {
+.c13 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -8693,6 +9177,28 @@ Array [
   transform: translateY(3px);
   top: 12px;
   right: 12px;
+}
+
+.c13,
+.c13[type='button'],
+.c13[type='reset'],
+.c13[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c13::-moz-focus-inner,
+.c13[type='button']::-moz-focus-inner,
+.c13[type='reset']::-moz-focus-inner,
+.c13[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c13:-moz-focusring,
+.c13[type='button']:-moz-focusring,
+.c13[type='reset']:-moz-focusring,
+.c13[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -8736,7 +9242,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c14 {
+  .c13 {
     top: 40px;
     right: 40px;
   }
@@ -8795,7 +9301,7 @@ Array [
                 id="41val-ModalTitle"
               >
                 <h2
-                  className="c3 Typography__Span-sc-10mju41-0 c4"
+                  className="c3 c4"
                 >
                   Dialog information
                 </h2>
@@ -8805,7 +9311,7 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 Resize the window to see the result of setting fullScreenMobile to false.
               </p>
@@ -8820,13 +9326,13 @@ Array [
                   className="c9"
                 >
                   <button
-                    className="c10 c11"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c10"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="Typography__Span-sc-10mju41-0 c12"
+                        className="c11"
                       >
                         Cancel
                       </span>
@@ -8834,13 +9340,13 @@ Array [
                   </button>
                 </div>
                 <button
-                  className="c10 c13"
+                  className="NormalizedButton__Button-sc-ey7f5x-0 c12"
                   onClick={[Function]}
                   type="button"
                 >
                   <span>
                     <span
-                      className="Typography__Span-sc-10mju41-0 c12"
+                      className="c11"
                     >
                       Confirm
                     </span>
@@ -8849,20 +9355,20 @@ Array [
               </div>
             </div>
             <button
-              className="c10 c14"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c15"
+                className="c14"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c16"
+                  className="c15"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -8957,38 +9463,7 @@ Array [
   align-items: center;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c9 {
+.c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -9002,7 +9477,7 @@ Array [
   display: block;
 }
 
-.c10 {
+.c9 {
   stroke: #282823;
 }
 
@@ -9037,7 +9512,13 @@ Array [
   z-index: 500;
 }
 
-.c8 {
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   display: block;
   background: none;
   padding: 0;
@@ -9049,6 +9530,28 @@ Array [
   transform: translateY(3px);
   top: 20px;
   right: 12px;
+}
+
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -9090,7 +9593,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c8 {
+  .c7 {
     top: 40px;
     right: 40px;
   }
@@ -9149,7 +9652,7 @@ Array [
                 id="33val-ModalTitle"
               >
                 <h2
-                  className="c3 Typography__Span-sc-10mju41-0 c4"
+                  className="c3 c4"
                 >
                   Dialog information
                 </h2>
@@ -9159,7 +9662,7 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
               </p>
@@ -9168,7 +9671,7 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
               </p>
@@ -9177,13 +9680,13 @@ Array [
               className="c5"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 Nielsen/Norman has an excellent article about their usage here
               </p>
             </div>
             <p
-              className="Typography__Span-sc-10mju41-0 c6"
+              className="c6"
             >
               <a
                 href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
@@ -9192,20 +9695,20 @@ Array [
               </a>
             </p>
             <button
-              className="c7 c8"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c7"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c9"
+                className="c8"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c10"
+                  className="c9"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -9326,6 +9829,42 @@ Array [
   align-items: center;
 }
 
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c7 {
+  stroke: #282823;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+}
+
 .c5 {
   font-family: inherit;
   font-size: 100%;
@@ -9333,6 +9872,17 @@ Array [
   margin: 0;
   overflow: visible;
   text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 20px;
+  right: 12px;
 }
 
 .c5,
@@ -9355,56 +9905,6 @@ Array [
 .c5[type='reset']:-moz-focusring,
 .c5[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
-}
-
-.c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c8 {
-  stroke: #282823;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 500;
-}
-
-.c6 {
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-  position: absolute;
-  -webkit-transform: translateY(3px);
-  -ms-transform: translateY(3px);
-  transform: translateY(3px);
-  top: 20px;
-  right: 12px;
 }
 
 .c2 {
@@ -9439,7 +9939,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c6 {
+  .c5 {
     top: 40px;
     right: 40px;
   }
@@ -9498,7 +9998,7 @@ Array [
               className="c3"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c4"
+                className="c4"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
               </p>
@@ -9507,7 +10007,7 @@ Array [
               className="c3"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c4"
+                className="c4"
               >
                 That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
               </p>
@@ -9516,13 +10016,13 @@ Array [
               className="c3"
             >
               <p
-                className="Typography__Span-sc-10mju41-0 c4"
+                className="c4"
               >
                 Nielsen/Norman has an excellent article about their usage here
               </p>
             </div>
             <p
-              className="Typography__Span-sc-10mju41-0 c4"
+              className="c4"
             >
               <a
                 href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
@@ -9531,20 +10031,20 @@ Array [
               </a>
             </p>
             <button
-              className="c5 c6"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c5"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c7"
+                className="c6"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c8"
+                  className="c7"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />

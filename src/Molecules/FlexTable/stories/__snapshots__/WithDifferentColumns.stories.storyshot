@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / FlexTable / With different columns Column Width Sortable Table 1`] = `
-.c32 {
+.c31 {
   height: 20px;
   box-sizing: border-box;
   display: block;
@@ -104,11 +104,11 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   flex: 1;
 }
 
-.c31 {
+.c30 {
   box-sizing: border-box;
 }
 
-.c30 {
+.c29 {
   color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -118,37 +118,6 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
-}
-
-.c27 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c27,
-.c27[type='button'],
-.c27[type='reset'],
-.c27[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c27::-moz-focus-inner,
-.c27[type='button']::-moz-focus-inner,
-.c27[type='reset']::-moz-focus-inner,
-.c27[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c27:-moz-focusring,
-.c27[type='button']:-moz-focusring,
-.c27[type='reset']:-moz-focusring,
-.c27[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c17 {
@@ -193,7 +162,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   line-height: 1.5;
 }
 
-.c29 {
+.c28 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -202,7 +171,13 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   line-height: 1.4285714285714286;
 }
 
-.c28 {
+.c27 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -223,6 +198,28 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   border: none;
   border-radius: 0;
   cursor: not-allowed;
+}
+
+.c27,
+.c27[type='button'],
+.c27[type='reset'],
+.c27[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c27::-moz-focus-inner,
+.c27[type='button']::-moz-focus-inner,
+.c27[type='reset']::-moz-focus-inner,
+.c27[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c27:-moz-focusring,
+.c27[type='button']:-moz-focusring,
+.c27[type='reset']:-moz-focusring,
+.c27[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c12 {
@@ -450,7 +447,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   className="c0"
 >
   <span
-    className="Typography__Span-sc-10mju41-0 c1"
+    className="c1"
   >
     Sortable Table With Column Width Set
   </span>
@@ -484,7 +481,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
                 className="c13 c14"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c15 c16"
+                  className="c15 c16"
                 >
                   Flex 1
                 </span>
@@ -531,7 +528,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
                 className="c13 c14"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c15 c16"
+                  className="c15 c16"
                 >
                   Fifteen percent
                 </span>
@@ -578,7 +575,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
                 className="c13 c14"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c15 c16"
+                  className="c15 c16"
                 >
                   Loooooooooooooong header set width
                 </span>
@@ -625,7 +622,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
                 className="c13 c14"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c15 c16"
+                  className="c15 c16"
                 >
                   Default
                 </span>
@@ -658,7 +655,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c13 c14"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c15 c16"
+            className="c15 c16"
           />
         </div>
       </div>
@@ -675,7 +672,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c13 c14"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c25 c16"
+            className="c25 c16"
           >
             Cell 1-1
           </span>
@@ -689,7 +686,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c13 c14"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c25 c16"
+            className="c25 c16"
           >
             Very long cell content that should be truncated or ellipsized depending on your language preferences
           </span>
@@ -703,7 +700,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c13 c14"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c25 c16"
+            className="c25 c16"
           >
             Cell 1-3
           </span>
@@ -717,7 +714,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c13 c14"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c25 c16"
+            className="c25 c16"
           >
             Cell 1-4
           </span>
@@ -729,17 +726,17 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
       >
         <button
           aria-expanded={false}
-          className="c27 c28"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c27"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c29"
+            className="c28"
           >
             <svg
               aria-hidden="true"
-              className="c30"
+              className="c29"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -767,7 +764,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c13 c14"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c25 c16"
+            className="c25 c16"
           >
             Cell 2-1
           </span>
@@ -781,7 +778,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c13 c14"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c25 c16"
+            className="c25 c16"
           >
             Cell 2-2
           </span>
@@ -792,19 +789,19 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
         role="cell"
       >
         <div
-          className="c31 c12"
+          className="c30 c12"
         >
           <div
             className="c13 c14"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c25 c16"
+              className="c25 c16"
             >
               Long cell with flag
             </span>
           </div>
           <svg
-            className="c32"
+            className="c31"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -852,7 +849,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c13 c14"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c25 c16"
+            className="c25 c16"
           >
             Cell 2-4
           </span>
@@ -864,17 +861,17 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
       >
         <button
           aria-expanded={false}
-          className="c27 c28"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c27"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c29"
+            className="c28"
           >
             <svg
               aria-hidden="true"
-              className="c30"
+              className="c29"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -902,7 +899,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c13 c14"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c25 c16"
+            className="c25 c16"
           >
             Cell 3-1
           </span>
@@ -916,7 +913,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c13 c14"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c25 c16"
+            className="c25 c16"
           >
             Cell 3-2
           </span>
@@ -930,7 +927,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c13 c14"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c25 c16"
+            className="c25 c16"
           >
             Cell 3-3
           </span>
@@ -944,7 +941,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c13 c14"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c25 c16"
+            className="c25 c16"
           >
             Cell 3-4
           </span>
@@ -956,17 +953,17 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
       >
         <button
           aria-expanded={false}
-          className="c27 c28"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c27"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c29"
+            className="c28"
           >
             <svg
               aria-hidden="true"
-              className="c30"
+              className="c29"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -987,7 +984,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
 `;
 
 exports[`Storyshots Molecules / FlexTable / With different columns Column Width Table With Custom Flag Cell 1`] = `
-.c26 {
+.c25 {
   height: 20px;
   box-sizing: border-box;
   display: block;
@@ -1078,11 +1075,11 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   flex: 1;
 }
 
-.c24 {
+.c23 {
   box-sizing: border-box;
 }
 
-.c23 {
+.c22 {
   color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1092,37 +1089,6 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
-}
-
-.c20 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c20,
-.c20[type='button'],
-.c20[type='reset'],
-.c20[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c20::-moz-focus-inner,
-.c20[type='button']::-moz-focus-inner,
-.c20[type='reset']::-moz-focus-inner,
-.c20[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c20:-moz-focusring,
-.c20[type='button']:-moz-focusring,
-.c20[type='reset']:-moz-focusring,
-.c20[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c1 {
@@ -1152,7 +1118,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   line-height: 1.5;
 }
 
-.c22 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1161,7 +1127,13 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   line-height: 1.4285714285714286;
 }
 
-.c21 {
+.c20 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -1184,7 +1156,29 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   cursor: not-allowed;
 }
 
-.c25 {
+.c20,
+.c20[type='button'],
+.c20[type='reset'],
+.c20[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c20::-moz-focus-inner,
+.c20[type='button']::-moz-focus-inner,
+.c20[type='reset']::-moz-focus-inner,
+.c20[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c20:-moz-focusring,
+.c20[type='button']:-moz-focusring,
+.c20[type='reset']:-moz-focusring,
+.c20[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c24 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1387,7 +1381,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   className="c0"
 >
   <span
-    className="Typography__Span-sc-10mju41-0 c1"
+    className="c1"
   >
     Table With Different Widths and Custom Flag Cell
   </span>
@@ -1407,7 +1401,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           >
             Flex 1
           </span>
@@ -1421,7 +1415,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           >
             Fifteen percent
           </span>
@@ -1435,7 +1429,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           >
             Loooooooooooooong header set width
           </span>
@@ -1449,7 +1443,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           >
             Default
           </span>
@@ -1463,7 +1457,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           />
         </div>
       </div>
@@ -1480,7 +1474,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 1-1
           </span>
@@ -1494,7 +1488,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Very long cell content that should be truncated or ellipsized depending on your language preferences
           </span>
@@ -1508,7 +1502,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 1-3
           </span>
@@ -1522,7 +1516,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 1-4
           </span>
@@ -1534,17 +1528,17 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
       >
         <button
           aria-expanded={false}
-          className="c20 c21"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c22"
+            className="c21"
           >
             <svg
               aria-hidden="true"
-              className="c23"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -1572,7 +1566,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 2-1
           </span>
@@ -1586,7 +1580,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 2-2
           </span>
@@ -1597,19 +1591,19 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
         role="cell"
       >
         <div
-          className="c24 c25"
+          className="c23 c24"
         >
           <div
             className="c8 c9"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c18 c11"
+              className="c18 c11"
             >
               Long cell with flag
             </span>
           </div>
           <svg
-            className="c26"
+            className="c25"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -1657,7 +1651,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 2-4
           </span>
@@ -1669,17 +1663,17 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
       >
         <button
           aria-expanded={false}
-          className="c20 c21"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c22"
+            className="c21"
           >
             <svg
               aria-hidden="true"
-              className="c23"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -1707,7 +1701,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 3-1
           </span>
@@ -1721,7 +1715,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 3-2
           </span>
@@ -1735,7 +1729,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 3-3
           </span>
@@ -1749,7 +1743,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 3-4
           </span>
@@ -1761,17 +1755,17 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
       >
         <button
           aria-expanded={false}
-          className="c20 c21"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c22"
+            className="c21"
           >
             <svg
               aria-hidden="true"
-              className="c23"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -1883,7 +1877,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
   flex: 1;
 }
 
-.c23 {
+.c22 {
   color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1893,37 +1887,6 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
-}
-
-.c20 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c20,
-.c20[type='button'],
-.c20[type='reset'],
-.c20[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c20::-moz-focus-inner,
-.c20[type='button']::-moz-focus-inner,
-.c20[type='reset']::-moz-focus-inner,
-.c20[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c20:-moz-focusring,
-.c20[type='button']:-moz-focusring,
-.c20[type='reset']:-moz-focusring,
-.c20[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c1 {
@@ -1953,7 +1916,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
   line-height: 1.5;
 }
 
-.c22 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1962,7 +1925,13 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
   line-height: 1.4285714285714286;
 }
 
-.c21 {
+.c20 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -1983,6 +1952,28 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
   border: none;
   border-radius: 0;
   cursor: not-allowed;
+}
+
+.c20,
+.c20[type='button'],
+.c20[type='reset'],
+.c20[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c20::-moz-focus-inner,
+.c20[type='button']::-moz-focus-inner,
+.c20[type='reset']::-moz-focus-inner,
+.c20[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c20:-moz-focusring,
+.c20[type='button']:-moz-focusring,
+.c20[type='reset']:-moz-focusring,
+.c20[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c8 {
@@ -2180,7 +2171,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
   className="c0"
 >
   <span
-    className="Typography__Span-sc-10mju41-0 c1"
+    className="c1"
   >
     Table With Different Alignments
   </span>
@@ -2200,7 +2191,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           >
             Left
           </span>
@@ -2214,7 +2205,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           >
             Right
           </span>
@@ -2228,7 +2219,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           >
             Right
           </span>
@@ -2242,7 +2233,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           >
             Center
           </span>
@@ -2256,7 +2247,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           />
         </div>
       </div>
@@ -2273,7 +2264,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 1-1
           </span>
@@ -2287,7 +2278,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 1-2
           </span>
@@ -2301,7 +2292,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 1-3
           </span>
@@ -2315,7 +2306,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 1-4
           </span>
@@ -2327,17 +2318,17 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
       >
         <button
           aria-expanded={false}
-          className="c20 c21"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c22"
+            className="c21"
           >
             <svg
               aria-hidden="true"
-              className="c23"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -2365,7 +2356,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 2-1
           </span>
@@ -2379,7 +2370,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 2-2
           </span>
@@ -2393,7 +2384,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 2-3
           </span>
@@ -2407,7 +2398,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 2-4
           </span>
@@ -2419,17 +2410,17 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
       >
         <button
           aria-expanded={false}
-          className="c20 c21"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c22"
+            className="c21"
           >
             <svg
               aria-hidden="true"
-              className="c23"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -2457,7 +2448,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 3-1
           </span>
@@ -2471,7 +2462,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 3-2
           </span>
@@ -2485,7 +2476,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 3-3
           </span>
@@ -2499,7 +2490,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c18 c11"
+            className="c18 c11"
           >
             Cell 3-4
           </span>
@@ -2511,17 +2502,17 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
       >
         <button
           aria-expanded={false}
-          className="c20 c21"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c22"
+            className="c21"
           >
             <svg
               aria-hidden="true"
-              className="c23"
+              className="c22"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -2609,7 +2600,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
   flex: 1;
 }
 
-.c22 {
+.c21 {
   color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2619,37 +2610,6 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
-}
-
-.c19 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c19,
-.c19[type='button'],
-.c19[type='reset'],
-.c19[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c19::-moz-focus-inner,
-.c19[type='button']::-moz-focus-inner,
-.c19[type='reset']::-moz-focus-inner,
-.c19[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c19:-moz-focusring,
-.c19[type='button']:-moz-focusring,
-.c19[type='reset']:-moz-focusring,
-.c19[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c1 {
@@ -2679,7 +2639,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
   line-height: 1.5;
 }
 
-.c21 {
+.c20 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2688,7 +2648,13 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
   line-height: 1.4285714285714286;
 }
 
-.c20 {
+.c19 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -2709,6 +2675,28 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
   border: none;
   border-radius: 0;
   cursor: not-allowed;
+}
+
+.c19,
+.c19[type='button'],
+.c19[type='reset'],
+.c19[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c19::-moz-focus-inner,
+.c19[type='button']::-moz-focus-inner,
+.c19[type='reset']::-moz-focus-inner,
+.c19[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c19:-moz-focusring,
+.c19[type='button']:-moz-focusring,
+.c19[type='reset']:-moz-focusring,
+.c19[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c8 {
@@ -2921,7 +2909,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
   className="c0"
 >
   <span
-    className="Typography__Span-sc-10mju41-0 c1"
+    className="c1"
   >
     Hidden Column On Extra Small And Small Screens
   </span>
@@ -2941,7 +2929,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           >
             Header 1
           </span>
@@ -2955,7 +2943,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           >
             Hidden on xs and sm
           </span>
@@ -2969,7 +2957,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           >
             Header 3
           </span>
@@ -2983,7 +2971,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           />
         </div>
       </div>
@@ -3000,7 +2988,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c17 c11"
+            className="c17 c11"
           >
             Cell 1-1
           </span>
@@ -3014,7 +3002,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c17 c11"
+            className="c17 c11"
           >
             Hidden on xs and sm
           </span>
@@ -3028,7 +3016,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c17 c11"
+            className="c17 c11"
           >
             Cell 1-3
           </span>
@@ -3040,17 +3028,17 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
       >
         <button
           aria-expanded={false}
-          className="c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c21"
+            className="c20"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c21"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -3078,7 +3066,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c17 c11"
+            className="c17 c11"
           >
             Cell 2-1
           </span>
@@ -3092,7 +3080,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c17 c11"
+            className="c17 c11"
           >
             Hidden on xs and sm
           </span>
@@ -3106,7 +3094,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c17 c11"
+            className="c17 c11"
           >
             Cell 2-3
           </span>
@@ -3118,17 +3106,17 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
       >
         <button
           aria-expanded={false}
-          className="c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c21"
+            className="c20"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c21"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -3156,7 +3144,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c17 c11"
+            className="c17 c11"
           >
             Cell 3-1
           </span>
@@ -3170,7 +3158,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c17 c11"
+            className="c17 c11"
           >
             Hidden on xs and sm
           </span>
@@ -3184,7 +3172,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c17 c11"
+            className="c17 c11"
           >
             Cell 3-3
           </span>
@@ -3196,17 +3184,17 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
       >
         <button
           aria-expanded={false}
-          className="c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c21"
+            className="c20"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c21"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"

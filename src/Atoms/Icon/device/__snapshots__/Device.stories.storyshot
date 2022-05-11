@@ -133,7 +133,7 @@ exports[`Storyshots Atoms / Icon / Category / Device 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Camera24
       </span>
@@ -169,7 +169,7 @@ exports[`Storyshots Atoms / Icon / Category / Device 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Delete24
       </span>
@@ -205,7 +205,7 @@ exports[`Storyshots Atoms / Icon / Category / Device 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Desktop24
       </span>
@@ -241,7 +241,7 @@ exports[`Storyshots Atoms / Icon / Category / Device 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Mobile24
       </span>
@@ -273,7 +273,7 @@ exports[`Storyshots Atoms / Icon / Category / Device 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         ModeDark24
       </span>
@@ -305,7 +305,7 @@ exports[`Storyshots Atoms / Icon / Category / Device 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         ModeLight24
       </span>
@@ -345,7 +345,7 @@ exports[`Storyshots Atoms / Icon / Category / Device 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         ScanQR24
       </span>
@@ -385,7 +385,7 @@ exports[`Storyshots Atoms / Icon / Category / Device 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         TabDefault24
       </span>
@@ -419,7 +419,7 @@ exports[`Storyshots Atoms / Icon / Category / Device 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         UserIdFace24
       </span>
@@ -449,7 +449,7 @@ exports[`Storyshots Atoms / Icon / Category / Device 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         UserIdTouch24
       </span>

@@ -19,6 +19,67 @@ exports[`Storyshots Molecules / Badge / Number Badge with animation 1`] = `
   justify-content: space-between;
 }
 
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #336BFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 20px;
+}
+
+.c10 {
+  -webkit-animation: scale 0.5s ease-out;
+  animation: scale 0.5s ease-out;
+  padding: 0 4px;
+}
+
+.c12 {
+  padding: 0 4px;
+}
+
 .c7 {
   font-family: inherit;
   font-size: 100%;
@@ -26,6 +87,27 @@ exports[`Storyshots Molecules / Badge / Number Badge with animation 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: transparent;
+  color: #336BFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 .c7,
@@ -50,92 +132,7 @@ exports[`Storyshots Molecules / Badge / Number Badge with animation 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #336BFF;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  height: 20px;
-  min-width: 20px;
-  border-radius: 20px;
-}
-
-.c11 {
-  -webkit-animation: scale 0.5s ease-out;
-  animation: scale 0.5s ease-out;
-  padding: 0 4px;
-}
-
-.c13 {
-  padding: 0 4px;
-}
-
-.c8 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: transparent;
-  color: #336BFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c8::before {
+.c7::before {
   content: '';
   display: block;
   position: absolute;
@@ -146,19 +143,19 @@ exports[`Storyshots Molecules / Badge / Number Badge with animation 1`] = `
   height: calc(100% - 4px);
 }
 
-.c8:hover {
+.c7:hover {
   color: #2650BF;
 }
 
-.c8:hover::before {
+.c7:hover::before {
   border-color: #2650BF;
 }
 
-.c8:active {
+.c7:active {
   color: #1F4099;
 }
 
-.c8:active::before {
+.c7:active::before {
   border-color: #1F4099;
 }
 
@@ -235,7 +232,7 @@ exports[`Storyshots Molecules / Badge / Number Badge with animation 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Badge with animation
       </span>
@@ -248,35 +245,35 @@ exports[`Storyshots Molecules / Badge / Number Badge with animation 1`] = `
           className="c5 c6"
         >
           <button
-            className="c7 c8"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c7"
             onClick={[Function]}
             type="button"
           >
             <span>
               <span
-                className="Typography__Span-sc-10mju41-0 c9"
+                className="c8"
               >
                 -
               </span>
             </span>
           </button>
           <span
-            className="c10 c11"
+            className="c9 c10"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c12"
+              className="c11"
             >
               4
             </span>
           </span>
           <button
-            className="c7 c8"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c7"
             onClick={[Function]}
             type="button"
           >
             <span>
               <span
-                className="Typography__Span-sc-10mju41-0 c9"
+                className="c8"
               >
                 +
               </span>
@@ -294,7 +291,7 @@ exports[`Storyshots Molecules / Badge / Number Badge with animation 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Badge with animation, but without initial animation example
       </span>
@@ -307,35 +304,35 @@ exports[`Storyshots Molecules / Badge / Number Badge with animation 1`] = `
           className="c5 c6"
         >
           <button
-            className="c7 c8"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c7"
             onClick={[Function]}
             type="button"
           >
             <span>
               <span
-                className="Typography__Span-sc-10mju41-0 c9"
+                className="c8"
               >
                 -
               </span>
             </span>
           </button>
           <span
-            className="c10 c13"
+            className="c9 c12"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c12"
+              className="c11"
             >
               4
             </span>
           </span>
           <button
-            className="c7 c8"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c7"
             onClick={[Function]}
             type="button"
           >
             <span>
               <span
-                className="Typography__Span-sc-10mju41-0 c9"
+                className="c8"
               >
                 +
               </span>
@@ -470,7 +467,7 @@ exports[`Storyshots Molecules / Badge / Number Common use cases 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Number with limit
       </span>
@@ -480,7 +477,7 @@ exports[`Storyshots Molecules / Badge / Number Common use cases 1`] = `
         className="c4 c5"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c6"
+          className="c6"
         >
           99+
         </span>
@@ -495,7 +492,7 @@ exports[`Storyshots Molecules / Badge / Number Common use cases 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Text with Badge
       </span>
@@ -505,14 +502,14 @@ exports[`Storyshots Molecules / Badge / Number Common use cases 1`] = `
         className="c7"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           Orders 
           <span
             className="c4 c5"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c6"
+              className="c6"
             >
               7
             </span>
@@ -529,7 +526,7 @@ exports[`Storyshots Molecules / Badge / Number Common use cases 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Badge with Aria-label
       </span>
@@ -539,7 +536,7 @@ exports[`Storyshots Molecules / Badge / Number Common use cases 1`] = `
         className="c7"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           Orders 
           <span
@@ -547,7 +544,7 @@ exports[`Storyshots Molecules / Badge / Number Common use cases 1`] = `
             className="c4 c5"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c6"
+              className="c6"
             >
               7
             </span>
@@ -564,7 +561,7 @@ exports[`Storyshots Molecules / Badge / Number Common use cases 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Badge without Aria-label
       </span>
@@ -574,14 +571,14 @@ exports[`Storyshots Molecules / Badge / Number Common use cases 1`] = `
         className="c7"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           Orders 
           <span
             className="c4 c5"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c6"
+              className="c6"
             >
               7
             </span>
@@ -889,7 +886,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Default Number Badge
       </span>
@@ -899,7 +896,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
         className="c4 c5"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c6"
+          className="c6"
         >
           1
         </span>
@@ -914,7 +911,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Badge with different sizes
       </span>
@@ -939,7 +936,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
               className="c7 c5"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c8"
+                className="c8"
               >
                 1
               </span>
@@ -952,7 +949,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
               className="c7 c5"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c8"
+                className="c8"
               >
                 99
               </span>
@@ -965,7 +962,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
               className="c7 c5"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c8"
+                className="c8"
               >
                 123
               </span>
@@ -984,7 +981,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
               className="c4 c5"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 1
               </span>
@@ -995,7 +992,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
               className="c4 c5"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 99
               </span>
@@ -1006,7 +1003,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
               className="c4 c5"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 123
               </span>
@@ -1025,7 +1022,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
               className="c9 c5"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 1
               </span>
@@ -1036,7 +1033,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
               className="c9 c5"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 99
               </span>
@@ -1047,7 +1044,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
               className="c9 c5"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c6"
               >
                 123
               </span>
@@ -1066,7 +1063,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
               className="c10 c11"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c12"
+                className="c12"
               >
                 1
               </span>
@@ -1077,7 +1074,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
               className="c10 c11"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c12"
+                className="c12"
               >
                 99
               </span>
@@ -1088,7 +1085,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
               className="c10 c11"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c12"
+                className="c12"
               >
                 123
               </span>
@@ -1106,7 +1103,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Custom background colors with children
       </span>
@@ -1119,7 +1116,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
           className="c14 c5"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c6"
+            className="c6"
           >
             2
           </span>
@@ -1132,7 +1129,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
           className="c15 c5"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c6"
+            className="c6"
           >
             3
           </span>
@@ -1145,7 +1142,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
           className="c16 c5"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c6"
+            className="c6"
           >
             4
           </span>
@@ -1161,7 +1158,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Custom text color
       </span>
@@ -1171,7 +1168,7 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
         className="c4 c5"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c17"
+          className="c17"
         >
           5
         </span>
@@ -1329,7 +1326,7 @@ exports[`Storyshots Molecules / Badge / Number Specialized children 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Component as child
       </span>
@@ -1342,18 +1339,18 @@ exports[`Storyshots Molecules / Badge / Number Specialized children 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             8
           </span>
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             %
           </span>
         </span>
         <p
-          className="Typography__Span-sc-10mju41-0 c9"
+          className="c9"
         >
           * It's up to developer to set child component font (family, size, etc.)
         </p>
@@ -1368,7 +1365,7 @@ exports[`Storyshots Molecules / Badge / Number Specialized children 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Function as child
       </span>
@@ -1381,13 +1378,13 @@ exports[`Storyshots Molecules / Badge / Number Specialized children 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             9%
           </span>
         </span>
         <p
-          className="Typography__Span-sc-10mju41-0 c9"
+          className="c9"
         >
           * It's up to developer to set child function font (family, size, etc.)
         </p>

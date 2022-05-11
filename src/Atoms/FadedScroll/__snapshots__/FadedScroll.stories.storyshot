@@ -78,7 +78,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -87,7 +87,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -96,7 +96,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Class aptent taciti sociosqu
           </span>
@@ -105,7 +105,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -114,7 +114,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -123,7 +123,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -132,7 +132,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -141,7 +141,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -150,7 +150,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -159,7 +159,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -168,7 +168,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Class aptent taciti sociosqu
           </span>
@@ -177,7 +177,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -186,7 +186,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -195,7 +195,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -204,7 +204,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -213,7 +213,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -222,7 +222,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -231,7 +231,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -240,7 +240,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Class aptent taciti sociosqu
           </span>
@@ -249,7 +249,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -258,7 +258,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -267,7 +267,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -276,7 +276,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -285,7 +285,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -294,7 +294,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -303,7 +303,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -312,7 +312,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Class aptent taciti sociosqu
           </span>
@@ -321,7 +321,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -330,7 +330,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -339,7 +339,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -348,7 +348,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -357,7 +357,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -449,7 +449,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -458,7 +458,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -467,7 +467,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Class aptent taciti sociosqu
           </span>
@@ -476,7 +476,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -485,7 +485,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -494,7 +494,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -503,7 +503,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -512,7 +512,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -521,7 +521,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -530,7 +530,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -539,7 +539,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Class aptent taciti sociosqu
           </span>
@@ -548,7 +548,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -557,7 +557,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -566,7 +566,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -575,7 +575,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -584,7 +584,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -593,7 +593,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -602,7 +602,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -611,7 +611,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Class aptent taciti sociosqu
           </span>
@@ -620,7 +620,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -629,7 +629,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -638,7 +638,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -647,7 +647,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -656,7 +656,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -665,7 +665,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -674,7 +674,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -683,7 +683,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Class aptent taciti sociosqu
           </span>
@@ -692,7 +692,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -701,7 +701,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -710,7 +710,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -719,7 +719,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -728,7 +728,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -860,7 +860,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -869,7 +869,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Sed consequat erat lacinia
           </span>
@@ -878,7 +878,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Class aptent taciti sociosqu
           </span>
@@ -887,7 +887,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -896,7 +896,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -905,7 +905,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -914,7 +914,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Sed consequat erat lacinia
           </span>
@@ -923,7 +923,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -932,7 +932,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -941,7 +941,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Sed consequat erat lacinia
           </span>
@@ -950,7 +950,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Class aptent taciti sociosqu
           </span>
@@ -959,7 +959,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -968,7 +968,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -977,7 +977,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -986,7 +986,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Sed consequat erat lacinia
           </span>
@@ -995,7 +995,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1004,7 +1004,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -1013,7 +1013,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Sed consequat erat lacinia
           </span>
@@ -1022,7 +1022,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Class aptent taciti sociosqu
           </span>
@@ -1031,7 +1031,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1040,7 +1040,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -1049,7 +1049,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -1058,7 +1058,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Sed consequat erat lacinia
           </span>
@@ -1067,7 +1067,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1076,7 +1076,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -1085,7 +1085,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Sed consequat erat lacinia
           </span>
@@ -1094,7 +1094,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Class aptent taciti sociosqu
           </span>
@@ -1103,7 +1103,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1112,7 +1112,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -1121,7 +1121,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -1130,7 +1130,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Sed consequat erat lacinia
           </span>
@@ -1139,7 +1139,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1264,7 +1264,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -1273,7 +1273,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Sed consequat erat lacinia
           </span>
@@ -1282,7 +1282,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Class aptent taciti sociosqu
           </span>
@@ -1291,7 +1291,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1300,7 +1300,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -1309,7 +1309,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -1318,7 +1318,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Sed consequat erat lacinia
           </span>
@@ -1327,7 +1327,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1336,7 +1336,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -1345,7 +1345,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Sed consequat erat lacinia
           </span>
@@ -1354,7 +1354,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Class aptent taciti sociosqu
           </span>
@@ -1363,7 +1363,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1372,7 +1372,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -1381,7 +1381,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -1390,7 +1390,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Sed consequat erat lacinia
           </span>
@@ -1399,7 +1399,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1408,7 +1408,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -1417,7 +1417,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Sed consequat erat lacinia
           </span>
@@ -1426,7 +1426,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Class aptent taciti sociosqu
           </span>
@@ -1435,7 +1435,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1444,7 +1444,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -1453,7 +1453,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -1462,7 +1462,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Sed consequat erat lacinia
           </span>
@@ -1471,7 +1471,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1480,7 +1480,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -1489,7 +1489,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Sed consequat erat lacinia
           </span>
@@ -1498,7 +1498,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Class aptent taciti sociosqu
           </span>
@@ -1507,7 +1507,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1516,7 +1516,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -1525,7 +1525,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -1534,7 +1534,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Sed consequat erat lacinia
           </span>
@@ -1543,7 +1543,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
           className="c6 c7"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="c8"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1635,7 +1635,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -1644,7 +1644,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -1653,7 +1653,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Class aptent taciti sociosqu
           </span>
@@ -1662,7 +1662,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1671,7 +1671,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -1680,7 +1680,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -1689,7 +1689,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -1698,7 +1698,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1707,7 +1707,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -1716,7 +1716,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -1725,7 +1725,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Class aptent taciti sociosqu
           </span>
@@ -1734,7 +1734,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1743,7 +1743,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -1752,7 +1752,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -1761,7 +1761,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -1770,7 +1770,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1779,7 +1779,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -1788,7 +1788,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -1797,7 +1797,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Class aptent taciti sociosqu
           </span>
@@ -1806,7 +1806,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1815,7 +1815,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -1824,7 +1824,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -1833,7 +1833,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -1842,7 +1842,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1851,7 +1851,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Lorem ipsum dolor sit amet
           </span>
@@ -1860,7 +1860,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -1869,7 +1869,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Class aptent taciti sociosqu
           </span>
@@ -1878,7 +1878,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
@@ -1887,7 +1887,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Quisque ac ullamcorper eros
           </span>
@@ -1896,7 +1896,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
@@ -1905,7 +1905,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
@@ -1914,7 +1914,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
           className="c5 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>

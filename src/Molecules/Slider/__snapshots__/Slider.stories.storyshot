@@ -123,7 +123,7 @@ Array [
   flex-grow: 1;
 }
 
-.c10 {
+.c9 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -138,15 +138,7 @@ Array [
   cursor: pointer;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-}
-
-.c11 {
+.c10 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -183,7 +175,7 @@ Array [
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
 
-.c9 {
+.c8 {
   width: 40px;
   height: 40px;
   background-color: #FFFFFF;
@@ -210,35 +202,40 @@ Array [
   flex: 1 0 auto;
 }
 
-.c9:hover {
+.c8:hover {
   border-color: #424242;
   z-index: 2;
 }
 
-.c9:focus {
+.c8:focus {
   border-color: #336BFF;
   z-index: 3;
 }
 
-.c9:focus {
+.c8:focus {
   border-width: 1px;
 }
 
-.c9:first-of-type {
+.c8:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
   order: -1;
 }
 
-.c9:active:enabled {
+.c8:active:enabled {
   background-color: #336BFF;
 }
 
-.c9:active:enabled svg {
+.c8:active:enabled svg {
   fill: #FFFFFF;
 }
 
-.c8 {
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   background-color: #FFFFFF;
   border: 1px solid #BDBDBD;
   position: relative;
@@ -254,61 +251,61 @@ Array [
   z-index: 1;
 }
 
-.c8:hover {
+.c7:hover {
   border-color: #424242;
   z-index: 2;
 }
 
-.c8:focus {
+.c7:focus {
   border-color: #336BFF;
   z-index: 3;
 }
 
-.c8:focus {
+.c7:focus {
   border-width: 1px;
 }
 
-.c8::-webkit-input-placeholder {
+.c7::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::-moz-placeholder {
+.c7::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:-ms-input-placeholder {
+.c7:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::placeholder {
+.c7::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:disabled::-webkit-input-placeholder {
+.c7:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::-moz-placeholder {
+.c7:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled:-ms-input-placeholder {
+.c7:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::placeholder {
+.c7:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled {
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -326,7 +323,7 @@ Array [
       htmlFor="unique-id"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c2"
+        className="c2"
       >
         <div
           className="c3"
@@ -336,13 +333,13 @@ Array [
       </span>
     </label>
     <span
-      className="Typography__Span-sc-10mju41-0 c4"
+      className="c4"
     >
       <div
         className="c5 c6"
       >
         <input
-          className="c7 c8"
+          className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
           id="unique-id"
           inputMode="decimal"
           max={100}
@@ -355,19 +352,19 @@ Array [
           variant="normal"
         />
         <button
-          className="c9"
+          className="c8"
           onClick={[Function]}
           type="button"
         >
           <div
-            className="c10"
+            className="c9"
           >
             decrease number by 
             1
           </div>
           <svg
             aria-hidden="true"
-            className="c11"
+            className="c10"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -380,19 +377,19 @@ Array [
           </svg>
         </button>
         <button
-          className="c9"
+          className="c8"
           onClick={[Function]}
           type="button"
         >
           <div
-            className="c10"
+            className="c9"
           >
             increase number by 
             1
           </div>
           <svg
             aria-hidden="true"
-            className="c11"
+            className="c10"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -515,7 +512,7 @@ Array [
 }
 
 <span
-    className="Typography__Span-sc-10mju41-0 c0"
+    className="c0"
   >
     
     50
@@ -628,7 +625,7 @@ Array [
 }
 
 <span
-    className="Typography__Span-sc-10mju41-0 c0"
+    className="c0"
   >
     
     50
@@ -748,7 +745,7 @@ Array [
 }
 
 <span
-    className="Typography__Span-sc-10mju41-0 c0"
+    className="c0"
   >
     
     100
@@ -868,7 +865,7 @@ Array [
 }
 
 <span
-    className="Typography__Span-sc-10mju41-0 c0"
+    className="c0"
   >
     
     0
@@ -988,7 +985,7 @@ Array [
 }
 
 <span
-    className="Typography__Span-sc-10mju41-0 c0"
+    className="c0"
   >
     
     0
@@ -1102,7 +1099,7 @@ Array [
 }
 
 <span
-    className="Typography__Span-sc-10mju41-0 c0"
+    className="c0"
   >
     
     50

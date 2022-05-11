@@ -12,7 +12,7 @@ exports[`Storyshots Atoms / Portal Default 1`] = `
 
 <portal-dummy>
   <p
-    className="Typography__Span-sc-10mju41-0 c0"
+    className="c0"
   >
     This element is moved to the bottom of the body tag
   </p>
@@ -34,7 +34,7 @@ exports[`Storyshots Atoms / Portal If attachTo prop is not a HTMLElement then no
 >
   <portal-dummy>
     <p
-      className="Typography__Span-sc-10mju41-0 c0"
+      className="c0"
     >
       This element should not be rendered
     </p>

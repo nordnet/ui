@@ -27,7 +27,7 @@ Array [
     className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c1"
+      className="c1"
     >
       This component is used to let the user discover new features
     </span>
@@ -37,11 +37,11 @@ Array [
   background-color: transparent;
 }
 
-.c7 {
+.c9 {
   background-color: transparent;
 }
 
-.c15 {
+.c16 {
   margin-top: 4px;
   background-color: transparent;
 }
@@ -54,7 +54,7 @@ Array [
   display: flex;
 }
 
-.c8 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -68,37 +68,6 @@ Array [
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c10,
-.c10[type='button'],
-.c10[type='reset'],
-.c10[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c10::-moz-focus-inner,
-.c10[type='button']::-moz-focus-inner,
-.c10[type='reset']::-moz-focus-inner,
-.c10[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c10:-moz-focusring,
-.c10[type='button']:-moz-focusring,
-.c10[type='reset']:-moz-focusring,
-.c10[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -115,7 +84,7 @@ Array [
   display: block;
 }
 
-.c14 {
+.c15 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -129,7 +98,7 @@ Array [
   display: block;
 }
 
-.c6 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -138,7 +107,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -147,7 +116,7 @@ Array [
   line-height: 1.5;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -156,7 +125,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c17 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -165,7 +134,13 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -188,8 +163,30 @@ Array [
   cursor: pointer;
 }
 
-.c4::before,
-.c4::after {
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5::before,
+.c5::after {
   content: '';
   display: block;
   position: absolute;
@@ -197,12 +194,12 @@ Array [
   height: 0;
 }
 
-.c4::before {
+.c5::before {
   left: 0;
   top: 0;
 }
 
-.c5 {
+.c6 {
   padding: 4px 8px;
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
   background: #282823;
@@ -231,7 +228,11 @@ Array [
   padding-left: 12px;
 }
 
-.c12 {
+.c4 .c7 {
+  padding: 12px;
+}
+
+.c13 {
   margin-left: 20px;
 }
 
@@ -261,7 +262,7 @@ Array [
       </svg>
       <portal-dummy>
         <span
-          className="c3 "
+          className="c3 c4"
           id=""
           style={
             Object {
@@ -272,7 +273,7 @@ Array [
           }
         >
           <span
-            className="c4"
+            className="c5"
             style={
               Object {
                 "position": "absolute",
@@ -280,33 +281,33 @@ Array [
             }
           />
           <div
-            className="c5 PopOver__StyledTooltipContent-sc-1u1gooh-1"
+            className="c6 c7 "
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c6"
+              className="c8"
             >
               <div
-                className="c7"
+                className="c9"
               >
                 <div
-                  className="c8"
+                  className="c10"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c9"
+                    className="c11"
                   >
                     Broken positioning
                   </span>
                   <button
-                    className="c10 c11 c12"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c12 c13"
                     onClick={[Function]}
                     type="button"
                   >
                     <span
-                      className="Typography__Span-sc-10mju41-0 c13"
+                      className="c14"
                     >
                       <svg
                         aria-hidden="false"
-                        className="c14 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                        className="c15 "
                         focusable="false"
                         preserveAspectRatio="xMidYMid meet"
                         role="img"
@@ -324,10 +325,10 @@ Array [
                   </button>
                 </div>
                 <div
-                  className="c15"
+                  className="c16"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c16"
+                    className="c17"
                   >
                     This tooltip has children which doesn't handle refs correctly. Thus, it's positioning doesn't work properly. See wrapChild for examples of how to fix this.
                   </span>
@@ -369,7 +370,7 @@ Array [
     className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c1"
+      className="c1"
     >
       This component is used to let the user discover new features
     </span>
@@ -392,14 +393,6 @@ Array [
   cursor: pointer;
 }
 
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-}
-
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -418,7 +411,12 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   border: 0;
   width: 100%;
   padding: 8px;
@@ -434,59 +432,59 @@ Array [
   color: #282823;
 }
 
-.c7:focus {
+.c6:focus {
   border-width: 1px;
 }
 
-.c7:hover {
+.c6:hover {
   border-color: #424242;
 }
 
-.c7:focus {
+.c6:focus {
   border-color: #336BFF;
 }
 
-.c7::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c7::-moz-placeholder {
+.c6::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c7:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c7::placeholder {
+.c6::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c7:disabled::-webkit-input-placeholder {
+.c6:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c7:disabled::-moz-placeholder {
+.c6:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c7:disabled:-ms-input-placeholder {
+.c6:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c7:disabled::placeholder {
+.c6:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c7:disabled {
+.c6:disabled {
   color: #A0A09B;
 }
 
@@ -512,7 +510,7 @@ Array [
       hidden={false}
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c2"
+        className="c2"
       >
         <div
           className="c3"
@@ -520,14 +518,14 @@ Array [
           Label 
         </div>
         <span
-          className="Typography__Span-sc-10mju41-0 c4"
+          className="c4"
         >
           <div
             className="c5"
           >
             <input
               aria-describedby="nn-persistent-tooltip-25"
-              className="c6 c7"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
               type="text"
               variant="normal"
             />
@@ -536,16 +534,16 @@ Array [
       </span>
     </label>
   </div>,
-  .c6 {
+  .c8 {
   margin-bottom: 16px;
   background-color: transparent;
 }
 
-.c4 {
+.c6 {
   background-color: transparent;
 }
 
-.c5 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -561,7 +559,7 @@ Array [
   align-items: flex-start;
 }
 
-.c13 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -571,51 +569,20 @@ Array [
   margin-right: -8px;
 }
 
-.c13 > * {
+.c14 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c13 > *:not(:first-child) {
+.c14 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c14 {
+.c15 {
   box-sizing: border-box;
 }
 
-.c8 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c12 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -629,7 +596,7 @@ Array [
   display: block;
 }
 
-.c3 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -638,7 +605,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c7 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #CC2269;
   margin: 0;
@@ -647,7 +614,7 @@ Array [
   line-height: 1.5;
 }
 
-.c11 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -656,7 +623,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -665,7 +632,13 @@ Array [
   line-height: 1.5;
 }
 
-.c9 {
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -688,8 +661,30 @@ Array [
   cursor: pointer;
 }
 
-.c1::before,
-.c1::after {
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before,
+.c2::after {
   content: '';
   display: block;
   position: absolute;
@@ -697,12 +692,12 @@ Array [
   height: 0;
 }
 
-.c1::before {
+.c2::before {
   left: 0;
   top: 0;
 }
 
-.c2 {
+.c3 {
   padding: 4px 8px;
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
   background: #282823;
@@ -731,7 +726,11 @@ Array [
   padding-left: 12px;
 }
 
-.c10 {
+.c1 .c4 {
+  padding: 12px;
+}
+
+.c11 {
   margin-left: 20px;
 }
 
@@ -741,7 +740,7 @@ Array [
 
 <portal-dummy>
     <span
-      className="c0 "
+      className="c0 c1"
       id="nn-persistent-tooltip-25"
       style={
         Object {
@@ -752,7 +751,7 @@ Array [
       }
     >
       <span
-        className="c1"
+        className="c2"
         style={
           Object {
             "position": "absolute",
@@ -760,37 +759,37 @@ Array [
         }
       />
       <div
-        className="c2 PopOver__StyledTooltipContent-sc-1u1gooh-1"
+        className="c3 c4 "
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c5"
         >
           <div
-            className="c4"
+            className="c6"
           >
             <div
-              className="c5"
+              className="c7"
             >
               <div
-                className="c6"
+                className="c8"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c7"
+                  className="c9"
                 >
                   I'm in a box
                 </span>
               </div>
               <button
-                className="c8 c9 c10"
+                className="NormalizedButton__Button-sc-ey7f5x-0 c10 c11"
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c11"
+                  className="c12"
                 >
                   <svg
                     aria-hidden="false"
-                    className="c12 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                    className="c13 "
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="img"
@@ -808,22 +807,22 @@ Array [
               </button>
             </div>
             <div
-              className="c13"
+              className="c14"
             >
               <div
-                className="c14"
+                className="c15"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c15"
+                  className="c16"
                 >
                   I am in a custom jsx description.
                 </span>
               </div>
               <div
-                className="c14"
+                className="c15"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c15"
+                  className="c16"
                 >
                   I am in a custom jsx description too!
                 </span>
@@ -864,7 +863,7 @@ Array [
     className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c1"
+      className="c1"
     >
       This component is used to let the user discover new features
     </span>
@@ -887,14 +886,6 @@ Array [
   cursor: pointer;
 }
 
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-}
-
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -913,7 +904,596 @@ Array [
   line-height: 1.4285714285714286;
 }
 
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BDBDBD;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+  color: #282823;
+}
+
+.c6:focus {
+  border-width: 1px;
+}
+
+.c6:hover {
+  border-color: #424242;
+}
+
+.c6:focus {
+  border-color: #336BFF;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled {
+  color: #A0A09B;
+}
+
+.c5 {
+  position: relative;
+  padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <label
+      className="c1"
+      hidden={false}
+    >
+      <span
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          Label 
+        </div>
+        <span
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <input
+              aria-describedby="nn-persistent-tooltip-22"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+              type="text"
+              variant="normal"
+            />
+          </div>
+        </span>
+      </span>
+    </label>
+  </div>,
+  .c6 {
+  background-color: transparent;
+}
+
+.c13 {
+  margin-top: 4px;
+  background-color: transparent;
+}
+
 .c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before,
+.c2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c2::before {
+  left: 0;
+  top: 0;
+}
+
+.c3 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #282823;
+  border: solid 1px transparent;
+  max-width: 316px;
+  overflow-wrap: break-word;
+}
+
+.c0 {
+  z-index: 400;
+}
+
+.c0[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c0[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c0[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c0[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+.c1 .c4 {
+  padding: 12px;
+}
+
+.c10 {
+  margin-left: 20px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<portal-dummy>
+    <span
+      className="c0 c1"
+      id="nn-persistent-tooltip-22"
+      style={
+        Object {
+          "left": "0",
+          "position": "absolute",
+          "top": "0",
+        }
+      }
+    >
+      <span
+        className="c2"
+        style={
+          Object {
+            "position": "absolute",
+          }
+        }
+      />
+      <div
+        className="c3 c4 "
+      >
+        <span
+          className="c5"
+        >
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              <span
+                className="c8"
+              >
+                Default persistent tooltip
+              </span>
+              <button
+                className="NormalizedButton__Button-sc-ey7f5x-0 c9 c10"
+                onClick={[Function]}
+                type="button"
+              >
+                <span
+                  className="c11"
+                >
+                  <svg
+                    aria-hidden="false"
+                    className="c12 "
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="img"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                      fillRule="evenodd"
+                    />
+                    <title>
+                      Close by clicking X
+                    </title>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
+              </span>
+            </div>
+          </div>
+        </span>
+      </div>
+    </span>
+  </portal-dummy>,
+]
+`;
+
+exports[`Storyshots Molecules / Persistent Tooltip Different Positions 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      This component is used to let the user discover new features
+    </span>
+  </div>,
+  .c0 {
+  margin-bottom: 160px;
+  background-color: transparent;
+}
+
+.c14 {
+  background-color: transparent;
+}
+
+.c21 {
+  margin-top: 4px;
+  background-color: transparent;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c20 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c19 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c22 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   border: 0;
   width: 100%;
   padding: 8px;
@@ -985,595 +1565,6 @@ Array [
   color: #A0A09B;
 }
 
-.c5 {
-  position: relative;
-  padding: 0px 0;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
-  >
-    <label
-      className="c1"
-      hidden={false}
-    >
-      <span
-        className="Typography__Span-sc-10mju41-0 c2"
-      >
-        <div
-          className="c3"
-        >
-          Label 
-        </div>
-        <span
-          className="Typography__Span-sc-10mju41-0 c4"
-        >
-          <div
-            className="c5"
-          >
-            <input
-              aria-describedby="nn-persistent-tooltip-22"
-              className="c6 c7"
-              type="text"
-              variant="normal"
-            />
-          </div>
-        </span>
-      </span>
-    </label>
-  </div>,
-  .c4 {
-  background-color: transparent;
-}
-
-.c12 {
-  margin-top: 4px;
-  background-color: transparent;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c11 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #FFFFFF;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c1::before,
-.c1::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-}
-
-.c1::before {
-  left: 0;
-  top: 0;
-}
-
-.c2 {
-  padding: 4px 8px;
-  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
-  background: #282823;
-  border: solid 1px transparent;
-  max-width: 316px;
-  overflow-wrap: break-word;
-}
-
-.c0 {
-  z-index: 400;
-}
-
-.c0[data-popper-placement^='top'] {
-  padding-bottom: 12px;
-}
-
-.c0[data-popper-placement^='bottom'] {
-  padding-top: 12px;
-}
-
-.c0[data-popper-placement^='left'] {
-  padding-right: 12px;
-}
-
-.c0[data-popper-placement^='right'] {
-  padding-left: 12px;
-}
-
-.c9 {
-  margin-left: 20px;
-}
-
-@media (min-width:760px) {
-
-}
-
-<portal-dummy>
-    <span
-      className="c0 "
-      id="nn-persistent-tooltip-22"
-      style={
-        Object {
-          "left": "0",
-          "position": "absolute",
-          "top": "0",
-        }
-      }
-    >
-      <span
-        className="c1"
-        style={
-          Object {
-            "position": "absolute",
-          }
-        }
-      />
-      <div
-        className="c2 PopOver__StyledTooltipContent-sc-1u1gooh-1"
-      >
-        <span
-          className="Typography__Span-sc-10mju41-0 c3"
-        >
-          <div
-            className="c4"
-          >
-            <div
-              className="c5"
-            >
-              <span
-                className="Typography__Span-sc-10mju41-0 c6"
-              >
-                Default persistent tooltip
-              </span>
-              <button
-                className="c7 c8 c9"
-                onClick={[Function]}
-                type="button"
-              >
-                <span
-                  className="Typography__Span-sc-10mju41-0 c10"
-                >
-                  <svg
-                    aria-hidden="false"
-                    className="c11 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="img"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
-                      fillRule="evenodd"
-                    />
-                    <title>
-                      Close by clicking X
-                    </title>
-                  </svg>
-                </span>
-              </button>
-            </div>
-            <div
-              className="c12"
-            >
-              <span
-                className="Typography__Span-sc-10mju41-0 c13"
-              >
-                The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
-              </span>
-            </div>
-          </div>
-        </span>
-      </div>
-    </span>
-  </portal-dummy>,
-]
-`;
-
-exports[`Storyshots Molecules / Persistent Tooltip Different Positions 1`] = `
-Array [
-  .c0 {
-  margin-bottom: 16px;
-  background-color: transparent;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-<div
-    className="c0"
-  >
-    <span
-      className="Typography__Span-sc-10mju41-0 c1"
-    >
-      This component is used to let the user discover new features
-    </span>
-  </div>,
-  .c0 {
-  margin-bottom: 160px;
-  background-color: transparent;
-}
-
-.c13 {
-  background-color: transparent;
-}
-
-.c21 {
-  margin-top: 4px;
-  background-color: transparent;
-}
-
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c14 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c2 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c16 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c16,
-.c16[type='button'],
-.c16[type='reset'],
-.c16[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c16::-moz-focus-inner,
-.c16[type='button']::-moz-focus-inner,
-.c16[type='reset']::-moz-focus-inner,
-.c16[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c16:-moz-focusring,
-.c16[type='button']:-moz-focusring,
-.c16[type='reset']:-moz-focusring,
-.c16[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-}
-
-.c20 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #FFFFFF;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c15 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c19 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c22 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c17 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c8 {
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  border: solid;
-  border-color: #BDBDBD;
-  border-width: 1px;
-  position: relative;
-  background-color: #FFFFFF;
-  color: #282823;
-}
-
-.c8:focus {
-  border-width: 1px;
-}
-
-.c8:hover {
-  border-color: #424242;
-}
-
-.c8:focus {
-  border-color: #336BFF;
-}
-
-.c8::-webkit-input-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c8::-moz-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c8:-ms-input-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c8::placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c8:disabled::-webkit-input-placeholder {
-  color: #A0A09B;
-}
-
-.c8:disabled::-moz-placeholder {
-  color: #A0A09B;
-}
-
-.c8:disabled:-ms-input-placeholder {
-  color: #A0A09B;
-}
-
-.c8:disabled::placeholder {
-  color: #A0A09B;
-}
-
-.c8:disabled {
-  color: #A0A09B;
-}
-
 .c6 {
   position: relative;
   padding: 0px 0;
@@ -1607,24 +1598,28 @@ Array [
   overflow-wrap: break-word;
 }
 
-.c9 {
+.c8 {
   z-index: 400;
 }
 
-.c9[data-popper-placement^='top'] {
+.c8[data-popper-placement^='top'] {
   padding-bottom: 12px;
 }
 
-.c9[data-popper-placement^='bottom'] {
+.c8[data-popper-placement^='bottom'] {
   padding-top: 12px;
 }
 
-.c9[data-popper-placement^='left'] {
+.c8[data-popper-placement^='left'] {
   padding-right: 12px;
 }
 
-.c9[data-popper-placement^='right'] {
+.c8[data-popper-placement^='right'] {
   padding-left: 12px;
+}
+
+.c9 .c12 {
+  padding: 12px;
 }
 
 .c18 {
@@ -1646,7 +1641,7 @@ Array [
         hidden={false}
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           <div
             className="c4"
@@ -1654,14 +1649,14 @@ Array [
             Label 
           </div>
           <span
-            className="Typography__Span-sc-10mju41-0 c5"
+            className="c5"
           >
             <div
               className="c6"
             >
               <input
                 aria-describedby="nn-persistent-tooltip-26"
-                className="c7 c8"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
                 type="text"
                 variant="normal"
               />
@@ -1672,7 +1667,7 @@ Array [
     </div>
     <portal-dummy>
       <span
-        className="c9 "
+        className="c8 c9"
         id="nn-persistent-tooltip-26"
         style={
           Object {
@@ -1691,33 +1686,33 @@ Array [
           }
         />
         <div
-          className="c11 PopOver__StyledTooltipContent-sc-1u1gooh-1"
+          className="c11 c12 "
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c12"
+            className="c13"
           >
             <div
-              className="c13"
+              className="c14"
             >
               <div
-                className="c14"
+                className="c15"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c15"
+                  className="c16"
                 >
                   Different Positions - Right
                 </span>
                 <button
-                  className="c16 c17 c18"
+                  className="NormalizedButton__Button-sc-ey7f5x-0 c17 c18"
                   onClick={[Function]}
                   type="button"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c19"
+                    className="c19"
                   >
                     <svg
                       aria-hidden="false"
-                      className="c20 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                      className="c20 "
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="img"
@@ -1738,7 +1733,7 @@ Array [
                 className="c21"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c22"
+                  className="c22"
                 >
                   This tooltip is positioned on the right
                 </span>
@@ -1754,7 +1749,7 @@ Array [
   background-color: transparent;
 }
 
-.c13 {
+.c14 {
   background-color: transparent;
 }
 
@@ -1775,7 +1770,7 @@ Array [
   align-items: center;
 }
 
-.c14 {
+.c15 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1795,45 +1790,6 @@ Array [
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c16 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c16,
-.c16[type='button'],
-.c16[type='reset'],
-.c16[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c16::-moz-focus-inner,
-.c16[type='button']::-moz-focus-inner,
-.c16[type='reset']::-moz-focus-inner,
-.c16[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c16:-moz-focusring,
-.c16[type='button']:-moz-focusring,
-.c16[type='reset']:-moz-focusring,
-.c16[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
 }
 
 .c20 {
@@ -1868,7 +1824,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1877,7 +1833,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c15 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1905,6 +1861,12 @@ Array [
 }
 
 .c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -1927,7 +1889,34 @@ Array [
   cursor: pointer;
 }
 
-.c8 {
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   border: 0;
   width: 100%;
   padding: 8px;
@@ -1943,59 +1932,59 @@ Array [
   color: #282823;
 }
 
-.c8:focus {
+.c7:focus {
   border-width: 1px;
 }
 
-.c8:hover {
+.c7:hover {
   border-color: #424242;
 }
 
-.c8:focus {
+.c7:focus {
   border-color: #336BFF;
 }
 
-.c8::-webkit-input-placeholder {
+.c7::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::-moz-placeholder {
+.c7::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:-ms-input-placeholder {
+.c7:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::placeholder {
+.c7::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:disabled::-webkit-input-placeholder {
+.c7:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::-moz-placeholder {
+.c7:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled:-ms-input-placeholder {
+.c7:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::placeholder {
+.c7:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled {
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -2032,24 +2021,28 @@ Array [
   overflow-wrap: break-word;
 }
 
-.c9 {
+.c8 {
   z-index: 400;
 }
 
-.c9[data-popper-placement^='top'] {
+.c8[data-popper-placement^='top'] {
   padding-bottom: 12px;
 }
 
-.c9[data-popper-placement^='bottom'] {
+.c8[data-popper-placement^='bottom'] {
   padding-top: 12px;
 }
 
-.c9[data-popper-placement^='left'] {
+.c8[data-popper-placement^='left'] {
   padding-right: 12px;
 }
 
-.c9[data-popper-placement^='right'] {
+.c8[data-popper-placement^='right'] {
   padding-left: 12px;
+}
+
+.c9 .c12 {
+  padding: 12px;
 }
 
 .c18 {
@@ -2071,7 +2064,7 @@ Array [
         hidden={false}
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           <div
             className="c4"
@@ -2079,14 +2072,14 @@ Array [
             Label 
           </div>
           <span
-            className="Typography__Span-sc-10mju41-0 c5"
+            className="c5"
           >
             <div
               className="c6"
             >
               <input
                 aria-describedby="nn-persistent-tooltip-27"
-                className="c7 c8"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
                 type="text"
                 variant="normal"
               />
@@ -2097,7 +2090,7 @@ Array [
     </div>
     <portal-dummy>
       <span
-        className="c9 "
+        className="c8 c9"
         id="nn-persistent-tooltip-27"
         style={
           Object {
@@ -2116,33 +2109,33 @@ Array [
           }
         />
         <div
-          className="c11 PopOver__StyledTooltipContent-sc-1u1gooh-1"
+          className="c11 c12 "
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c12"
+            className="c13"
           >
             <div
-              className="c13"
+              className="c14"
             >
               <div
-                className="c14"
+                className="c15"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c15"
+                  className="c16"
                 >
                   Different Positions - Bottom
                 </span>
                 <button
-                  className="c16 c17 c18"
+                  className="NormalizedButton__Button-sc-ey7f5x-0 c17 c18"
                   onClick={[Function]}
                   type="button"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c19"
+                    className="c19"
                   >
                     <svg
                       aria-hidden="false"
-                      className="c20 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                      className="c20 "
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="img"
@@ -2163,7 +2156,7 @@ Array [
                 className="c21"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c22"
+                  className="c22"
                 >
                   This tooltip is positioned on the bottom
                 </span>
@@ -2179,7 +2172,7 @@ Array [
   background-color: transparent;
 }
 
-.c13 {
+.c14 {
   background-color: transparent;
 }
 
@@ -2200,7 +2193,7 @@ Array [
   align-items: center;
 }
 
-.c14 {
+.c15 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2220,45 +2213,6 @@ Array [
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c16 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c16,
-.c16[type='button'],
-.c16[type='reset'],
-.c16[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c16::-moz-focus-inner,
-.c16[type='button']::-moz-focus-inner,
-.c16[type='reset']::-moz-focus-inner,
-.c16[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c16:-moz-focusring,
-.c16[type='button']:-moz-focusring,
-.c16[type='reset']:-moz-focusring,
-.c16[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
 }
 
 .c20 {
@@ -2293,7 +2247,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2302,7 +2256,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c15 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -2330,6 +2284,12 @@ Array [
 }
 
 .c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -2352,7 +2312,34 @@ Array [
   cursor: pointer;
 }
 
-.c8 {
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   border: 0;
   width: 100%;
   padding: 8px;
@@ -2368,59 +2355,59 @@ Array [
   color: #282823;
 }
 
-.c8:focus {
+.c7:focus {
   border-width: 1px;
 }
 
-.c8:hover {
+.c7:hover {
   border-color: #424242;
 }
 
-.c8:focus {
+.c7:focus {
   border-color: #336BFF;
 }
 
-.c8::-webkit-input-placeholder {
+.c7::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::-moz-placeholder {
+.c7::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:-ms-input-placeholder {
+.c7:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::placeholder {
+.c7::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:disabled::-webkit-input-placeholder {
+.c7:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::-moz-placeholder {
+.c7:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled:-ms-input-placeholder {
+.c7:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::placeholder {
+.c7:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled {
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -2457,24 +2444,28 @@ Array [
   overflow-wrap: break-word;
 }
 
-.c9 {
+.c8 {
   z-index: 400;
 }
 
-.c9[data-popper-placement^='top'] {
+.c8[data-popper-placement^='top'] {
   padding-bottom: 12px;
 }
 
-.c9[data-popper-placement^='bottom'] {
+.c8[data-popper-placement^='bottom'] {
   padding-top: 12px;
 }
 
-.c9[data-popper-placement^='left'] {
+.c8[data-popper-placement^='left'] {
   padding-right: 12px;
 }
 
-.c9[data-popper-placement^='right'] {
+.c8[data-popper-placement^='right'] {
   padding-left: 12px;
+}
+
+.c9 .c12 {
+  padding: 12px;
 }
 
 .c18 {
@@ -2496,7 +2487,7 @@ Array [
         hidden={false}
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           <div
             className="c4"
@@ -2504,14 +2495,14 @@ Array [
             Label 
           </div>
           <span
-            className="Typography__Span-sc-10mju41-0 c5"
+            className="c5"
           >
             <div
               className="c6"
             >
               <input
                 aria-describedby="nn-persistent-tooltip-28"
-                className="c7 c8"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
                 type="text"
                 variant="normal"
               />
@@ -2522,7 +2513,7 @@ Array [
     </div>
     <portal-dummy>
       <span
-        className="c9 "
+        className="c8 c9"
         id="nn-persistent-tooltip-28"
         style={
           Object {
@@ -2541,33 +2532,33 @@ Array [
           }
         />
         <div
-          className="c11 PopOver__StyledTooltipContent-sc-1u1gooh-1"
+          className="c11 c12 "
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c12"
+            className="c13"
           >
             <div
-              className="c13"
+              className="c14"
             >
               <div
-                className="c14"
+                className="c15"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c15"
+                  className="c16"
                 >
                   Different Positions - Left
                 </span>
                 <button
-                  className="c16 c17 c18"
+                  className="NormalizedButton__Button-sc-ey7f5x-0 c17 c18"
                   onClick={[Function]}
                   type="button"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c19"
+                    className="c19"
                   >
                     <svg
                       aria-hidden="false"
-                      className="c20 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                      className="c20 "
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="img"
@@ -2588,7 +2579,7 @@ Array [
                 className="c21"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c22"
+                  className="c22"
                 >
                   This tooltip is positioned on the left, as you can see it's still positioned on the right. This is because it's dynamically repositioned. It does not fit  on left side of target.
                 </span>
@@ -2604,7 +2595,7 @@ Array [
   background-color: transparent;
 }
 
-.c13 {
+.c14 {
   background-color: transparent;
 }
 
@@ -2625,7 +2616,7 @@ Array [
   align-items: center;
 }
 
-.c14 {
+.c15 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2645,45 +2636,6 @@ Array [
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c16 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c16,
-.c16[type='button'],
-.c16[type='reset'],
-.c16[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c16::-moz-focus-inner,
-.c16[type='button']::-moz-focus-inner,
-.c16[type='reset']::-moz-focus-inner,
-.c16[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c16:-moz-focusring,
-.c16[type='button']:-moz-focusring,
-.c16[type='reset']:-moz-focusring,
-.c16[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
 }
 
 .c20 {
@@ -2718,7 +2670,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2727,7 +2679,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c15 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -2755,6 +2707,12 @@ Array [
 }
 
 .c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -2777,7 +2735,34 @@ Array [
   cursor: pointer;
 }
 
-.c8 {
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   border: 0;
   width: 100%;
   padding: 8px;
@@ -2793,59 +2778,59 @@ Array [
   color: #282823;
 }
 
-.c8:focus {
+.c7:focus {
   border-width: 1px;
 }
 
-.c8:hover {
+.c7:hover {
   border-color: #424242;
 }
 
-.c8:focus {
+.c7:focus {
   border-color: #336BFF;
 }
 
-.c8::-webkit-input-placeholder {
+.c7::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::-moz-placeholder {
+.c7::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:-ms-input-placeholder {
+.c7:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::placeholder {
+.c7::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:disabled::-webkit-input-placeholder {
+.c7:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::-moz-placeholder {
+.c7:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled:-ms-input-placeholder {
+.c7:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::placeholder {
+.c7:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled {
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -2882,24 +2867,28 @@ Array [
   overflow-wrap: break-word;
 }
 
-.c9 {
+.c8 {
   z-index: 400;
 }
 
-.c9[data-popper-placement^='top'] {
+.c8[data-popper-placement^='top'] {
   padding-bottom: 12px;
 }
 
-.c9[data-popper-placement^='bottom'] {
+.c8[data-popper-placement^='bottom'] {
   padding-top: 12px;
 }
 
-.c9[data-popper-placement^='left'] {
+.c8[data-popper-placement^='left'] {
   padding-right: 12px;
 }
 
-.c9[data-popper-placement^='right'] {
+.c8[data-popper-placement^='right'] {
   padding-left: 12px;
+}
+
+.c9 .c12 {
+  padding: 12px;
 }
 
 .c18 {
@@ -2921,7 +2910,7 @@ Array [
         hidden={false}
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           <div
             className="c4"
@@ -2929,14 +2918,14 @@ Array [
             Label 
           </div>
           <span
-            className="Typography__Span-sc-10mju41-0 c5"
+            className="c5"
           >
             <div
               className="c6"
             >
               <input
                 aria-describedby="nn-persistent-tooltip-29"
-                className="c7 c8"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
                 type="text"
                 variant="normal"
               />
@@ -2947,7 +2936,7 @@ Array [
     </div>
     <portal-dummy>
       <span
-        className="c9 "
+        className="c8 c9"
         id="nn-persistent-tooltip-29"
         style={
           Object {
@@ -2966,33 +2955,33 @@ Array [
           }
         />
         <div
-          className="c11 PopOver__StyledTooltipContent-sc-1u1gooh-1"
+          className="c11 c12 "
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c12"
+            className="c13"
           >
             <div
-              className="c13"
+              className="c14"
             >
               <div
-                className="c14"
+                className="c15"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c15"
+                  className="c16"
                 >
                   Different Positions - Top
                 </span>
                 <button
-                  className="c16 c17 c18"
+                  className="NormalizedButton__Button-sc-ey7f5x-0 c17 c18"
                   onClick={[Function]}
                   type="button"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c19"
+                    className="c19"
                   >
                     <svg
                       aria-hidden="false"
-                      className="c20 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                      className="c20 "
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="img"
@@ -3013,7 +3002,7 @@ Array [
                 className="c21"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c22"
+                  className="c22"
                 >
                   This tooltip is positioned on the top
                 </span>
@@ -3070,12 +3059,12 @@ Array [
     className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c1"
+      className="c1"
     >
       This component is used to let the user discover new features
     </span>
   </div>,
-  .c10 {
+  .c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3087,10 +3076,51 @@ Array [
   align-items: center;
 }
 
-.c8 {
+.c7 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c4 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c1 {
@@ -3100,6 +3130,26 @@ Array [
   margin: 0;
   overflow: visible;
   text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 .c1,
@@ -3124,79 +3174,12 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c13 {
+.c12 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
   overflow: visible;
-}
-
-.c5 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c11 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c14 {
   border: 0;
   width: 100%;
   padding: 8px;
@@ -3212,74 +3195,74 @@ Array [
   color: #282823;
 }
 
-.c14:focus {
+.c12:focus {
   border-width: 1px;
 }
 
-.c14:hover {
+.c12:hover {
   border-color: #424242;
 }
 
-.c14:focus {
+.c12:focus {
   border-color: #336BFF;
 }
 
-.c14::-webkit-input-placeholder {
+.c12::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c14::-moz-placeholder {
+.c12::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c14:-ms-input-placeholder {
+.c12:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c14::placeholder {
+.c12::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c14:disabled::-webkit-input-placeholder {
+.c12:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c14:disabled::-moz-placeholder {
+.c12:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c14:disabled:-ms-input-placeholder {
+.c12:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c14:disabled::placeholder {
+.c12:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c14:disabled {
+.c12:disabled {
   color: #A0A09B;
 }
 
-.c12 {
+.c11 {
   position: relative;
   padding: 0px 0;
 }
 
-.c3 {
+.c2 {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.c6 {
+.c5 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
@@ -3295,7 +3278,7 @@ Array [
   flex: 0 0 auto;
 }
 
-.c7 {
+.c6 {
   width: 200px;
   display: inline-block;
 }
@@ -3313,7 +3296,7 @@ Array [
 }
 
 @media (max-width:759px) {
-  .c6 {
+  .c5 {
     padding: 1px 12px;
   }
 }
@@ -3371,16 +3354,16 @@ Array [
             onTouchStart={[Function]}
           >
             <button
-              className="c1 c2 c3"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c1 c2"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c4"
+                className="c3"
               >
                 <svg
                   aria-hidden="true"
-                  className="c5"
+                  className="c4"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -3395,31 +3378,31 @@ Array [
             </button>
           </div>
           <div
-            className="c6"
+            className="c5"
           >
             <div
-              className="c7"
+              className="c6"
             >
               <label
-                className="c8"
+                className="c7"
                 hidden={false}
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c9"
+                  className="c8"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
                     Label 
                   </div>
                   <span
-                    className="Typography__Span-sc-10mju41-0 c11"
+                    className="c10"
                   >
                     <div
-                      className="c12"
+                      className="c11"
                     >
                       <input
-                        className="c13 c14"
+                        className="NormalizedInput__Input-sc-1m4kmh9-0 c12"
                         type="text"
                         variant="normal"
                       />
@@ -3494,17 +3477,17 @@ Array [
     className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c1"
+      className="c1"
     >
       This component is used to let the user discover new features
     </span>
   </div>,
-  .c7 {
+  .c6 {
   margin-top: 200px;
   background-color: transparent;
 }
 
-.c11 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3516,10 +3499,51 @@ Array [
   align-items: center;
 }
 
-.c9 {
+.c8 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c4 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c1 {
@@ -3529,6 +3553,26 @@ Array [
   margin: 0;
   overflow: visible;
   text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 .c1,
@@ -3553,79 +3597,12 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c14 {
+.c13 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
   overflow: visible;
-}
-
-.c5 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c15 {
   border: 0;
   width: 100%;
   padding: 8px;
@@ -3641,74 +3618,74 @@ Array [
   color: #282823;
 }
 
-.c15:focus {
+.c13:focus {
   border-width: 1px;
 }
 
-.c15:hover {
+.c13:hover {
   border-color: #424242;
 }
 
-.c15:focus {
+.c13:focus {
   border-color: #336BFF;
 }
 
-.c15::-webkit-input-placeholder {
+.c13::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c15::-moz-placeholder {
+.c13::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c15:-ms-input-placeholder {
+.c13:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c15::placeholder {
+.c13::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c15:disabled::-webkit-input-placeholder {
+.c13:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c15:disabled::-moz-placeholder {
+.c13:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c15:disabled:-ms-input-placeholder {
+.c13:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c15:disabled::placeholder {
+.c13:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c15:disabled {
+.c13:disabled {
   color: #A0A09B;
 }
 
-.c13 {
+.c12 {
   position: relative;
   padding: 0px 0;
 }
 
-.c3 {
+.c2 {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.c6 {
+.c5 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
@@ -3724,7 +3701,7 @@ Array [
   flex: 0 0 auto;
 }
 
-.c8 {
+.c7 {
   width: 200px;
   display: inline-block;
 }
@@ -3742,7 +3719,7 @@ Array [
 }
 
 @media (max-width:759px) {
-  .c6 {
+  .c5 {
     padding: 1px 12px;
   }
 }
@@ -3800,16 +3777,16 @@ Array [
             onTouchStart={[Function]}
           >
             <button
-              className="c1 c2 c3"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c1 c2"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c4"
+                className="c3"
               >
                 <svg
                   aria-hidden="true"
-                  className="c5"
+                  className="c4"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -3824,34 +3801,34 @@ Array [
             </button>
           </div>
           <div
-            className="c6"
+            className="c5"
           >
             <div
-              className="c7"
+              className="c6"
             >
               <div
-                className="c8"
+                className="c7"
               >
                 <label
-                  className="c9"
+                  className="c8"
                   hidden={false}
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c10"
+                    className="c9"
                   >
                     <div
-                      className="c11"
+                      className="c10"
                     >
                       Label 
                     </div>
                     <span
-                      className="Typography__Span-sc-10mju41-0 c12"
+                      className="c11"
                     >
                       <div
-                        className="c13"
+                        className="c12"
                       >
                         <input
-                          className="c14 c15"
+                          className="NormalizedInput__Input-sc-1m4kmh9-0 c13"
                           type="text"
                           variant="normal"
                         />
@@ -3911,7 +3888,7 @@ Array [
     className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c1"
+      className="c1"
     >
       This component is used to let the user discover new features
     </span>
@@ -3934,14 +3911,6 @@ Array [
   cursor: pointer;
 }
 
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-}
-
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -3960,7 +3929,12 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   border: 0;
   width: 100%;
   padding: 8px;
@@ -3976,59 +3950,59 @@ Array [
   color: #282823;
 }
 
-.c7:focus {
+.c6:focus {
   border-width: 1px;
 }
 
-.c7:hover {
+.c6:hover {
   border-color: #424242;
 }
 
-.c7:focus {
+.c6:focus {
   border-color: #336BFF;
 }
 
-.c7::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c7::-moz-placeholder {
+.c6::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c7:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c7::placeholder {
+.c6::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c7:disabled::-webkit-input-placeholder {
+.c6:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c7:disabled::-moz-placeholder {
+.c6:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c7:disabled:-ms-input-placeholder {
+.c6:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c7:disabled::placeholder {
+.c6:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c7:disabled {
+.c6:disabled {
   color: #A0A09B;
 }
 
@@ -4054,7 +4028,7 @@ Array [
       hidden={false}
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c2"
+        className="c2"
       >
         <div
           className="c3"
@@ -4062,14 +4036,14 @@ Array [
           Label 
         </div>
         <span
-          className="Typography__Span-sc-10mju41-0 c4"
+          className="c4"
         >
           <div
             className="c5"
           >
             <input
               aria-describedby="nn-persistent-tooltip-32"
-              className="c6 c7"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
               type="text"
               variant="normal"
             />
@@ -4078,11 +4052,11 @@ Array [
       </span>
     </label>
   </div>,
-  .c4 {
+  .c7 {
   background-color: transparent;
 }
 
-.c5 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4098,38 +4072,7 @@ Array [
   align-items: flex-start;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c11 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4143,7 +4086,7 @@ Array [
   display: block;
 }
 
-.c6 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -4152,7 +4095,7 @@ Array [
   line-height: 1.2;
 }
 
-.c3 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -4161,7 +4104,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c10 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -4170,7 +4113,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -4179,7 +4122,13 @@ Array [
   line-height: 1.5;
 }
 
-.c8 {
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -4202,8 +4151,30 @@ Array [
   cursor: pointer;
 }
 
-.c1::before,
-.c1::after {
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3::before,
+.c3::after {
   content: '';
   display: block;
   position: absolute;
@@ -4211,12 +4182,12 @@ Array [
   height: 0;
 }
 
-.c1::before {
+.c3::before {
   left: 0;
   top: 0;
 }
 
-.c2 {
+.c4 {
   padding: 4px 8px;
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
   background: #FFCF00;
@@ -4245,12 +4216,22 @@ Array [
   padding-left: 12px;
 }
 
-.c9 {
+.c1 .c5 {
+  padding: 12px;
+}
+
+.c11 {
   margin-left: 20px;
 }
 
+.c2 .c14 {
+  fill: #282823;
+  width: 8px;
+  height: 8px;
+}
+
 @media (min-width:760px) {
-  .c6 {
+  .c9 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
@@ -4258,7 +4239,7 @@ Array [
 
 <portal-dummy>
     <span
-      className="c0 "
+      className="c0 c1 c2"
       id="nn-persistent-tooltip-32"
       style={
         Object {
@@ -4269,7 +4250,7 @@ Array [
       }
     >
       <span
-        className="c1"
+        className="c3"
         style={
           Object {
             "position": "absolute",
@@ -4277,33 +4258,33 @@ Array [
         }
       />
       <div
-        className="c2 PopOver__StyledTooltipContent-sc-1u1gooh-1"
+        className="c4 c5 "
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c6"
         >
           <div
-            className="c4"
+            className="c7"
           >
             <div
-              className="c5"
+              className="c8"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c9"
               >
                 I'm in a box
               </span>
               <button
-                className="c7 c8 c9"
+                className="NormalizedButton__Button-sc-ey7f5x-0 c10 c11"
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c10"
+                  className="c12"
                 >
                   <svg
                     aria-hidden="false"
-                    className="c11 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                    className="c13 c14 "
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="img"
@@ -4321,7 +4302,7 @@ Array [
               </button>
             </div>
             <span
-              className="Typography__Span-sc-10mju41-0 c12"
+              className="c15"
             >
               The max width is set with a prop for this tooltip. Also, it's subcomponents styled – different color, smaller close button.
             </span>
@@ -4360,7 +4341,7 @@ Array [
     className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c1"
+      className="c1"
     >
       This component is used to let the user discover new features
     </span>
@@ -4383,14 +4364,6 @@ Array [
   cursor: pointer;
 }
 
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-}
-
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -4409,7 +4382,12 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   border: 0;
   width: 100%;
   padding: 8px;
@@ -4425,59 +4403,59 @@ Array [
   color: #282823;
 }
 
-.c7:focus {
+.c6:focus {
   border-width: 1px;
 }
 
-.c7:hover {
+.c6:hover {
   border-color: #424242;
 }
 
-.c7:focus {
+.c6:focus {
   border-color: #336BFF;
 }
 
-.c7::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c7::-moz-placeholder {
+.c6::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c7:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c7::placeholder {
+.c6::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c7:disabled::-webkit-input-placeholder {
+.c6:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c7:disabled::-moz-placeholder {
+.c6:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c7:disabled:-ms-input-placeholder {
+.c6:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c7:disabled::placeholder {
+.c6:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c7:disabled {
+.c6:disabled {
   color: #A0A09B;
 }
 
@@ -4503,7 +4481,7 @@ Array [
       hidden={false}
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c2"
+        className="c2"
       >
         <div
           className="c3"
@@ -4511,14 +4489,14 @@ Array [
           Label 
         </div>
         <span
-          className="Typography__Span-sc-10mju41-0 c4"
+          className="c4"
         >
           <div
             className="c5"
           >
             <input
               aria-describedby="nn-persistent-tooltip-23"
-              className="c6 c7"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
               type="text"
               variant="normal"
             />
@@ -4527,16 +4505,16 @@ Array [
       </span>
     </label>
   </div>,
-  .c4 {
+  .c6 {
   background-color: transparent;
 }
 
-.c12 {
+.c13 {
   margin-top: 4px;
   background-color: transparent;
 }
 
-.c5 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4552,38 +4530,7 @@ Array [
   align-items: flex-start;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c11 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4597,7 +4544,7 @@ Array [
   display: block;
 }
 
-.c3 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -4606,7 +4553,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c6 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -4615,7 +4562,7 @@ Array [
   line-height: 1.5;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -4624,7 +4571,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -4633,7 +4580,13 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c8 {
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -4656,8 +4609,30 @@ Array [
   cursor: pointer;
 }
 
-.c1::before,
-.c1::after {
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before,
+.c2::after {
   content: '';
   display: block;
   position: absolute;
@@ -4665,12 +4640,12 @@ Array [
   height: 0;
 }
 
-.c1::before {
+.c2::before {
   left: 0;
   top: 0;
 }
 
-.c2 {
+.c3 {
   padding: 4px 8px;
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
   background: #282823;
@@ -4699,7 +4674,11 @@ Array [
   padding-left: 12px;
 }
 
-.c9 {
+.c1 .c4 {
+  padding: 12px;
+}
+
+.c10 {
   margin-left: 20px;
 }
 
@@ -4709,7 +4688,7 @@ Array [
 
 <portal-dummy>
     <span
-      className="c0 "
+      className="c0 c1"
       id="nn-persistent-tooltip-23"
       style={
         Object {
@@ -4720,7 +4699,7 @@ Array [
       }
     >
       <span
-        className="c1"
+        className="c2"
         style={
           Object {
             "position": "absolute",
@@ -4728,33 +4707,33 @@ Array [
         }
       />
       <div
-        className="c2 PopOver__StyledTooltipContent-sc-1u1gooh-1"
+        className="c3 c4 "
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c5"
         >
           <div
-            className="c4"
+            className="c6"
           >
             <div
-              className="c5"
+              className="c7"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c8"
               >
                 Persistent tooltip with Max Width
               </span>
               <button
-                className="c7 c8 c9"
+                className="NormalizedButton__Button-sc-ey7f5x-0 c9 c10"
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c10"
+                  className="c11"
                 >
                   <svg
                     aria-hidden="false"
-                    className="c11 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                    className="c12 "
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="img"
@@ -4772,10 +4751,10 @@ Array [
               </button>
             </div>
             <div
-              className="c12"
+              className="c13"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c13"
+                className="c14"
               >
                 The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
               </span>
@@ -4815,7 +4794,7 @@ Array [
     className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c1"
+      className="c1"
     >
       This component is used to let the user discover new features
     </span>
@@ -4838,14 +4817,6 @@ Array [
   cursor: pointer;
 }
 
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-}
-
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -4864,7 +4835,12 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
   border: 0;
   width: 100%;
   padding: 8px;
@@ -4880,59 +4856,59 @@ Array [
   color: #282823;
 }
 
-.c7:focus {
+.c6:focus {
   border-width: 1px;
 }
 
-.c7:hover {
+.c6:hover {
   border-color: #424242;
 }
 
-.c7:focus {
+.c6:focus {
   border-color: #336BFF;
 }
 
-.c7::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c7::-moz-placeholder {
+.c6::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c7:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c7::placeholder {
+.c6::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c7:disabled::-webkit-input-placeholder {
+.c6:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c7:disabled::-moz-placeholder {
+.c6:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c7:disabled:-ms-input-placeholder {
+.c6:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c7:disabled::placeholder {
+.c6:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c7:disabled {
+.c6:disabled {
   color: #A0A09B;
 }
 
@@ -4958,7 +4934,7 @@ Array [
       hidden={false}
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c2"
+        className="c2"
       >
         <div
           className="c3"
@@ -4966,14 +4942,14 @@ Array [
           Label 
         </div>
         <span
-          className="Typography__Span-sc-10mju41-0 c4"
+          className="c4"
         >
           <div
             className="c5"
           >
             <input
               aria-describedby="nn-persistent-tooltip-24"
-              className="c6 c7"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
               type="text"
               variant="normal"
             />
@@ -4982,16 +4958,16 @@ Array [
       </span>
     </label>
   </div>,
-  .c4 {
+  .c6 {
   background-color: transparent;
 }
 
-.c12 {
+.c13 {
   margin-top: 4px;
   background-color: transparent;
 }
 
-.c5 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5007,38 +4983,7 @@ Array [
   align-items: flex-start;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c11 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5052,7 +4997,7 @@ Array [
   display: block;
 }
 
-.c3 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -5061,7 +5006,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c6 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -5070,7 +5015,7 @@ Array [
   line-height: 1.5;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -5079,7 +5024,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -5088,7 +5033,13 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c8 {
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -5111,8 +5062,30 @@ Array [
   cursor: pointer;
 }
 
-.c1::before,
-.c1::after {
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before,
+.c2::after {
   content: '';
   display: block;
   position: absolute;
@@ -5120,12 +5093,12 @@ Array [
   height: 0;
 }
 
-.c1::before {
+.c2::before {
   left: 0;
   top: 0;
 }
 
-.c2 {
+.c3 {
   padding: 4px 8px;
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
   background: #282823;
@@ -5153,7 +5126,11 @@ Array [
   padding-left: 12px;
 }
 
-.c9 {
+.c1 .c4 {
+  padding: 12px;
+}
+
+.c10 {
   margin-left: 20px;
 }
 
@@ -5163,7 +5140,7 @@ Array [
 
 <portal-dummy>
     <span
-      className="c0 "
+      className="c0 c1"
       id="nn-persistent-tooltip-24"
       style={
         Object {
@@ -5174,7 +5151,7 @@ Array [
       }
     >
       <span
-        className="c1"
+        className="c2"
         style={
           Object {
             "position": "absolute",
@@ -5182,33 +5159,33 @@ Array [
         }
       />
       <div
-        className="c2 PopOver__StyledTooltipContent-sc-1u1gooh-1"
+        className="c3 c4 "
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c5"
         >
           <div
-            className="c4"
+            className="c6"
           >
             <div
-              className="c5"
+              className="c7"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c6"
+                className="c8"
               >
                 Persistent tooltip with max width auto
               </span>
               <button
-                className="c7 c8 c9"
+                className="NormalizedButton__Button-sc-ey7f5x-0 c9 c10"
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c10"
+                  className="c11"
                 >
                   <svg
                     aria-hidden="false"
-                    className="c11 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                    className="c12 "
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="img"
@@ -5226,10 +5203,10 @@ Array [
               </button>
             </div>
             <div
-              className="c12"
+              className="c13"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c13"
+                className="c14"
               >
                 Observe that the width might get very long. The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
               </span>
@@ -5269,7 +5246,7 @@ Array [
     className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c1"
+      className="c1"
     >
       This component is used to let the user discover new features
     </span>
@@ -5279,11 +5256,11 @@ Array [
   background-color: transparent;
 }
 
-.c7 {
+.c9 {
   background-color: transparent;
 }
 
-.c15 {
+.c16 {
   margin-top: 4px;
   background-color: transparent;
 }
@@ -5296,7 +5273,7 @@ Array [
   display: flex;
 }
 
-.c8 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5310,37 +5287,6 @@ Array [
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c10,
-.c10[type='button'],
-.c10[type='reset'],
-.c10[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c10::-moz-focus-inner,
-.c10[type='button']::-moz-focus-inner,
-.c10[type='reset']::-moz-focus-inner,
-.c10[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c10:-moz-focusring,
-.c10[type='button']:-moz-focusring,
-.c10[type='reset']:-moz-focusring,
-.c10[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -5357,7 +5303,7 @@ Array [
   display: block;
 }
 
-.c14 {
+.c15 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5371,7 +5317,7 @@ Array [
   display: block;
 }
 
-.c6 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -5380,7 +5326,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -5389,7 +5335,7 @@ Array [
   line-height: 1.5;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -5398,7 +5344,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c17 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -5407,7 +5353,13 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -5430,8 +5382,30 @@ Array [
   cursor: pointer;
 }
 
-.c4::before,
-.c4::after {
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5::before,
+.c5::after {
   content: '';
   display: block;
   position: absolute;
@@ -5439,12 +5413,12 @@ Array [
   height: 0;
 }
 
-.c4::before {
+.c5::before {
   left: 0;
   top: 0;
 }
 
-.c5 {
+.c6 {
   padding: 4px 8px;
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
   background: #282823;
@@ -5473,7 +5447,11 @@ Array [
   padding-left: 12px;
 }
 
-.c12 {
+.c4 .c7 {
+  padding: 12px;
+}
+
+.c13 {
   margin-left: 20px;
 }
 
@@ -5506,7 +5484,7 @@ Array [
       </span>
       <portal-dummy>
         <span
-          className="c3 "
+          className="c3 c4"
           id="nn-persistent-tooltip-33"
           style={
             Object {
@@ -5517,7 +5495,7 @@ Array [
           }
         >
           <span
-            className="c4"
+            className="c5"
             style={
               Object {
                 "position": "absolute",
@@ -5525,33 +5503,33 @@ Array [
             }
           />
           <div
-            className="c5 PopOver__StyledTooltipContent-sc-1u1gooh-1"
+            className="c6 c7 "
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c6"
+              className="c8"
             >
               <div
-                className="c7"
+                className="c9"
               >
                 <div
-                  className="c8"
+                  className="c10"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c9"
+                    className="c11"
                   >
                     With wrapchild prop
                   </span>
                   <button
-                    className="c10 c11 c12"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c12 c13"
                     onClick={[Function]}
                     type="button"
                   >
                     <span
-                      className="Typography__Span-sc-10mju41-0 c13"
+                      className="c14"
                     >
                       <svg
                         aria-hidden="false"
-                        className="c14 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                        className="c15 "
                         focusable="false"
                         preserveAspectRatio="xMidYMid meet"
                         role="img"
@@ -5569,10 +5547,10 @@ Array [
                   </button>
                 </div>
                 <div
-                  className="c15"
+                  className="c16"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c16"
+                    className="c17"
                   >
                     With the wrapChiild prop, a DOM element of type span wraps the children, this guarantees a element in the DOM to work properly with ref (and thus positioning).
                   </span>
@@ -5584,11 +5562,11 @@ Array [
       </portal-dummy>
     </div>
   </div>,
-  .c7 {
+  .c9 {
   background-color: transparent;
 }
 
-.c15 {
+.c16 {
   margin-top: 4px;
   background-color: transparent;
 }
@@ -5606,7 +5584,7 @@ Array [
   display: flex;
 }
 
-.c8 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5620,37 +5598,6 @@ Array [
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c10,
-.c10[type='button'],
-.c10[type='reset'],
-.c10[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c10::-moz-focus-inner,
-.c10[type='button']::-moz-focus-inner,
-.c10[type='reset']::-moz-focus-inner,
-.c10[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c10:-moz-focusring,
-.c10[type='button']:-moz-focusring,
-.c10[type='reset']:-moz-focusring,
-.c10[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c2 {
@@ -5667,7 +5614,7 @@ Array [
   display: block;
 }
 
-.c14 {
+.c15 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5681,7 +5628,7 @@ Array [
   display: block;
 }
 
-.c6 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -5690,7 +5637,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -5699,7 +5646,7 @@ Array [
   line-height: 1.5;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -5708,7 +5655,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c17 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -5717,7 +5664,13 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -5740,8 +5693,30 @@ Array [
   cursor: pointer;
 }
 
-.c4::before,
-.c4::after {
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5::before,
+.c5::after {
   content: '';
   display: block;
   position: absolute;
@@ -5749,12 +5724,12 @@ Array [
   height: 0;
 }
 
-.c4::before {
+.c5::before {
   left: 0;
   top: 0;
 }
 
-.c5 {
+.c6 {
   padding: 4px 8px;
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
   background: #282823;
@@ -5783,7 +5758,11 @@ Array [
   padding-left: 12px;
 }
 
-.c12 {
+.c4 .c7 {
+  padding: 12px;
+}
+
+.c13 {
   margin-left: 20px;
 }
 
@@ -5816,7 +5795,7 @@ Array [
       </div>
       <portal-dummy>
         <span
-          className="c3 "
+          className="c3 c4"
           id="nn-persistent-tooltip-34"
           style={
             Object {
@@ -5827,7 +5806,7 @@ Array [
           }
         >
           <span
-            className="c4"
+            className="c5"
             style={
               Object {
                 "position": "absolute",
@@ -5835,33 +5814,33 @@ Array [
             }
           />
           <div
-            className="c5 PopOver__StyledTooltipContent-sc-1u1gooh-1"
+            className="c6 c7 "
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c6"
+              className="c8"
             >
               <div
-                className="c7"
+                className="c9"
               >
                 <div
-                  className="c8"
+                  className="c10"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c9"
+                    className="c11"
                   >
                     With a proper DOM-node as children
                   </span>
                   <button
-                    className="c10 c11 c12"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c12 c13"
                     onClick={[Function]}
                     type="button"
                   >
                     <span
-                      className="Typography__Span-sc-10mju41-0 c13"
+                      className="c14"
                     >
                       <svg
                         aria-hidden="false"
-                        className="c14 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                        className="c15 "
                         focusable="false"
                         preserveAspectRatio="xMidYMid meet"
                         role="img"
@@ -5879,10 +5858,10 @@ Array [
                   </button>
                 </div>
                 <div
-                  className="c15"
+                  className="c16"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c16"
+                    className="c17"
                   >
                     This tooltip doesn't use the wrapChild prop, but has a children that correctly handles refs.
                   </span>

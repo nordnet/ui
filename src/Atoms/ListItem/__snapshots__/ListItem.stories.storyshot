@@ -19,7 +19,7 @@ exports[`Storyshots Atoms / ListItem Basic list item 1`] = `
     className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c1"
+      className="c1"
     >
       List item
     </span>

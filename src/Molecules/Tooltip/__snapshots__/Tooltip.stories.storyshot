@@ -130,10 +130,10 @@ exports[`Storyshots Molecules / Tooltip Broken Positioning 1`] = `
           }
         />
         <div
-          className="c5 PopOver__StyledTooltipContent-sc-1u1gooh-1"
+          className="c5 "
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c6"
+            className="c6"
           >
             This tooltip has children which doesn't handle refs correctly. Thus, it's positioning doesn't work properly. See wrapChild for examples of how to fix this.
           </span>
@@ -288,10 +288,10 @@ Array [
             }
           />
           <div
-            className="c5 PopOver__StyledTooltipContent-sc-1u1gooh-1"
+            className="c5 "
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c6"
+              className="c6"
             >
               This is a controlled tooltip.
             </span>
@@ -433,9 +433,32 @@ Array [
 `;
 
 exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] = `
-.c7 {
+.c6 {
   margin-bottom: 16px;
   background-color: transparent;
+}
+
+.c4 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c1 {
@@ -445,6 +468,26 @@ exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] =
   margin: 0;
   overflow: visible;
   text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 .c1,
@@ -469,59 +512,13 @@ exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] =
   outline: 1px dotted ButtonText;
 }
 
-.c5 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c2 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c3 {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.c6 {
+.c5 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
@@ -537,7 +534,7 @@ exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] =
   flex: 0 0 auto;
 }
 
-.c8 {
+.c7 {
   display: block;
 }
 
@@ -550,7 +547,7 @@ exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] =
 }
 
 @media (max-width:759px) {
-  .c6 {
+  .c5 {
     padding: 1px 12px;
   }
 }
@@ -608,16 +605,16 @@ exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] =
           onTouchStart={[Function]}
         >
           <button
-            className="c1 c2 c3"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c1 c2"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c4"
+              className="c3"
             >
               <svg
                 aria-hidden="true"
-                className="c5"
+                className="c4"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -632,13 +629,13 @@ exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] =
           </button>
         </div>
         <div
-          className="c6"
+          className="c5"
         >
           <div
-            className="c7"
+            className="c6"
           >
             <button
-              className="c8"
+              className="c7"
               onBlur={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
@@ -651,7 +648,7 @@ exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] =
             </button>
           </div>
           <button
-            className="c8"
+            className="c7"
             onClick={[Function]}
           >
             Open modal
@@ -692,7 +689,7 @@ exports[`Storyshots Molecules / Tooltip With Clickable Content 1`] = `
   display: flex;
 }
 
-.c5 {
+.c4 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -704,6 +701,15 @@ exports[`Storyshots Molecules / Tooltip With Clickable Content 1`] = `
   display: block;
 }
 
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 .c2 {
   font-family: inherit;
   font-size: 100%;
@@ -711,6 +717,26 @@ exports[`Storyshots Molecules / Tooltip With Clickable Content 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 .c2,
@@ -735,38 +761,6 @@ exports[`Storyshots Molecules / Tooltip With Clickable Content 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c3 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
 <div
   className="c0"
 >
@@ -783,16 +777,16 @@ exports[`Storyshots Molecules / Tooltip With Clickable Content 1`] = `
       onMouseMove={[Function]}
     >
       <button
-        className="c2 c3"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c2"
         onClick={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c4"
+          className="c3"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c4"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -870,7 +864,7 @@ exports[`Storyshots Molecules / Tooltip With Offset 1`] = `
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       Hover the pen!
     </span>
@@ -961,7 +955,7 @@ exports[`Storyshots Molecules / Tooltip With Offset As A Function 1`] = `
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       Hover the pen!
     </span>
@@ -1118,7 +1112,7 @@ exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         bottom
       </span>
@@ -1147,7 +1141,7 @@ exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         left
       </span>
@@ -1176,7 +1170,7 @@ exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         top
       </span>
@@ -1205,7 +1199,7 @@ exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         right
       </span>
@@ -1234,7 +1228,7 @@ exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         right-start
       </span>
@@ -1263,7 +1257,7 @@ exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         right-end
       </span>
@@ -1292,7 +1286,7 @@ exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         top-start
       </span>
@@ -1321,7 +1315,7 @@ exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         top-end
       </span>
@@ -1350,7 +1344,7 @@ exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         left-start
       </span>
@@ -1379,7 +1373,7 @@ exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         left-end
       </span>
@@ -1408,7 +1402,7 @@ exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         bottom-start
       </span>
@@ -1437,7 +1431,7 @@ exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         bottom-end
       </span>
@@ -1595,10 +1589,10 @@ Array [
             }
           />
           <div
-            className="c5 PopOver__StyledTooltipContent-sc-1u1gooh-1"
+            className="c5 "
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c6"
+              className="c6"
             >
               With the wrapChiild prop, a DOM element of type span wraps the children, this guarantees a element in the DOM to work properly with ref (and thus positioning).
             </span>
@@ -1739,10 +1733,10 @@ Array [
             }
           />
           <div
-            className="c5 PopOver__StyledTooltipContent-sc-1u1gooh-1"
+            className="c5 "
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c6"
+              className="c6"
             >
               This tooltip doesn't use the wrapChild prop, but has a children that correctly handles refs
             </span>

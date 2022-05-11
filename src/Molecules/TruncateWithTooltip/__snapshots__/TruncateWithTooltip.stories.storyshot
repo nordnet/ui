@@ -30,7 +30,7 @@ Array [
       className="c1"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c2"
+        className="c2"
       >
         Hover over this truncated text
       </span>
@@ -65,7 +65,7 @@ Array [
       className="c1"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c2"
+        className="c2"
       >
         If not truncated no tooltip will show
       </span>
@@ -184,7 +184,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   flex: 1;
 }
 
-.c24 {
+.c23 {
   color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -194,37 +194,6 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
-}
-
-.c21 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c21,
-.c21[type='button'],
-.c21[type='reset'],
-.c21[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c21::-moz-focus-inner,
-.c21[type='button']::-moz-focus-inner,
-.c21[type='reset']::-moz-focus-inner,
-.c21[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c21:-moz-focusring,
-.c21[type='button']:-moz-focusring,
-.c21[type='reset']:-moz-focusring,
-.c21[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 .c1 {
@@ -254,7 +223,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   line-height: 1.5;
 }
 
-.c23 {
+.c22 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -263,7 +232,13 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c21 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -284,6 +259,28 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   border: none;
   border-radius: 0;
   cursor: not-allowed;
+}
+
+.c21,
+.c21[type='button'],
+.c21[type='reset'],
+.c21[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c21::-moz-focus-inner,
+.c21[type='button']::-moz-focus-inner,
+.c21[type='reset']::-moz-focus-inner,
+.c21[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c21:-moz-focusring,
+.c21[type='button']:-moz-focusring,
+.c21[type='reset']:-moz-focusring,
+.c21[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c8 {
@@ -481,7 +478,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   className="c0"
 >
   <span
-    className="Typography__Span-sc-10mju41-0 c1"
+    className="c1"
   >
     Table With Different Alignments
   </span>
@@ -501,7 +498,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           >
             Truncated Header Truncated Header Truncated Header
           </span>
@@ -515,7 +512,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           >
             Left
           </span>
@@ -529,7 +526,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           >
             Right
           </span>
@@ -543,7 +540,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           >
             Center
           </span>
@@ -557,7 +554,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c10 c11"
+            className="c10 c11"
           />
         </div>
       </div>
@@ -574,7 +571,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c19 c11"
+            className="c19 c11"
           >
             Cell 1-1
           </span>
@@ -588,7 +585,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c19 c11"
+            className="c19 c11"
           >
             Cell 1-2
           </span>
@@ -602,7 +599,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c19 c11"
+            className="c19 c11"
           >
             Truncated Cell Truncated Cell Truncated Cell
           </span>
@@ -616,7 +613,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c19 c11"
+            className="c19 c11"
           >
             Cell 1-4
           </span>
@@ -628,17 +625,17 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
       >
         <button
           aria-expanded={false}
-          className="c21 c22"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c23"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c24"
+              className="c23"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -666,7 +663,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c19 c11"
+            className="c19 c11"
           >
             Truncated Cell Truncated Cell Truncated Cell
           </span>
@@ -680,7 +677,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c19 c11"
+            className="c19 c11"
           >
             Cell 2-2
           </span>
@@ -694,7 +691,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c19 c11"
+            className="c19 c11"
           >
             Cell 2-3
           </span>
@@ -708,7 +705,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c19 c11"
+            className="c19 c11"
           >
             Cell 2-4
           </span>
@@ -720,17 +717,17 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
       >
         <button
           aria-expanded={false}
-          className="c21 c22"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c23"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c24"
+              className="c23"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"
@@ -758,7 +755,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c19 c11"
+            className="c19 c11"
           >
             Cell 3-1
           </span>
@@ -772,7 +769,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c19 c11"
+            className="c19 c11"
           >
             Cell 3-2
           </span>
@@ -786,7 +783,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c19 c11"
+            className="c19 c11"
           >
             Cell 3-3
           </span>
@@ -800,7 +797,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           className="c8 c9"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c19 c11"
+            className="c19 c11"
           >
             Cell 3-4
           </span>
@@ -812,17 +809,17 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
       >
         <button
           aria-expanded={false}
-          className="c21 c22"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c23"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c24"
+              className="c23"
               focusable="false"
               height={8}
               preserveAspectRatio="xMidYMid meet"

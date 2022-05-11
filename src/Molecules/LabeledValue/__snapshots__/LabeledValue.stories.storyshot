@@ -31,7 +31,7 @@ exports[`Storyshots Molecules / LabeledValue Default 1`] = `
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       Label
     </span>
@@ -80,13 +80,13 @@ exports[`Storyshots Molecules / LabeledValue Integration: LabeledValue secondary
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       Market value
     </span>
   </div>
   <span
-    className="Typography__Span-sc-10mju41-0 c3"
+    className="c3"
   >
     
     4,672,198
@@ -142,13 +142,13 @@ exports[`Storyshots Molecules / LabeledValue Integration: LabeledValue title1 1`
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       Holdings (SEK)
     </span>
   </div>
   <span
-    className="Typography__Span-sc-10mju41-0 c3"
+    className="c3"
   >
     
     4,713,119
@@ -196,13 +196,13 @@ exports[`Storyshots Molecules / LabeledValue Integration: LabeledValue with cust
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       Foo
     </span>
   </div>
   <span
-    className="Typography__Span-sc-10mju41-0 c3"
+    className="c3"
   >
     Bar
   </span>
@@ -288,7 +288,7 @@ exports[`Storyshots Molecules / LabeledValue Integration: LabeledValue with nega
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       Development this year
     </span>
@@ -300,7 +300,7 @@ exports[`Storyshots Molecules / LabeledValue Integration: LabeledValue with nega
       className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c5"
+        className="c5"
       >
         <span
           className="c6"
@@ -321,7 +321,7 @@ exports[`Storyshots Molecules / LabeledValue Integration: LabeledValue with nega
       className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c7"
+        className="c7"
       >
         
         -4,672,198
@@ -402,7 +402,7 @@ exports[`Storyshots Molecules / LabeledValue Integration: LabeledValue with posi
     className="c1"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c2"
+      className="c2"
     >
       Development this year
     </span>
@@ -414,7 +414,7 @@ exports[`Storyshots Molecules / LabeledValue Integration: LabeledValue with posi
       className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c5"
+        className="c5"
       >
         <span
           className="c6"
@@ -435,7 +435,7 @@ exports[`Storyshots Molecules / LabeledValue Integration: LabeledValue with posi
       className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c5"
+        className="c5"
       >
         +
         4,672,198

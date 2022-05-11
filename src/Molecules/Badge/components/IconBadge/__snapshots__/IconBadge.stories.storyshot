@@ -294,7 +294,7 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Default use
       </span>
@@ -328,7 +328,7 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Different sizes
       </span>
@@ -447,7 +447,7 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Custom icon badge with custom props
       </span>
@@ -485,7 +485,7 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Custom icon badge size
       </span>
@@ -523,7 +523,7 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Badge with illustration default use
       </span>
@@ -565,7 +565,7 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Badge with illustration with custom props
       </span>

@@ -6406,7 +6406,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Account
       </span>
@@ -6450,7 +6450,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         AccountNumbers
       </span>
@@ -6497,7 +6497,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         AddWithCircle
       </span>
@@ -6534,7 +6534,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Apartment
       </span>
@@ -6583,7 +6583,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Archive
       </span>
@@ -6621,7 +6621,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         ArrowRight
       </span>
@@ -6658,7 +6658,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Attachment
       </span>
@@ -6696,7 +6696,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Bank
       </span>
@@ -6733,7 +6733,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         BankDeposit
       </span>
@@ -6770,7 +6770,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         BankID
       </span>
@@ -6844,7 +6844,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Bell
       </span>
@@ -6881,7 +6881,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         BellActive
       </span>
@@ -6918,7 +6918,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         BellInactive
       </span>
@@ -6955,7 +6955,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         BellPlain
       </span>
@@ -6992,7 +6992,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Book
       </span>
@@ -7030,7 +7030,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Bolt
       </span>
@@ -7068,7 +7068,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         BrowserWindow
       </span>
@@ -7106,7 +7106,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         BulbInCircle
       </span>
@@ -7150,7 +7150,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Calendar
       </span>
@@ -7187,7 +7187,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         CalendarO
       </span>
@@ -7228,7 +7228,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         CalendarTwoRows
       </span>
@@ -7265,7 +7265,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         CandleSticks
       </span>
@@ -7303,7 +7303,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         CheckMark
       </span>
@@ -7340,7 +7340,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         CheckMarkCircle
       </span>
@@ -7387,7 +7387,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         CheckMarkCircleLight
       </span>
@@ -7424,7 +7424,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Chevron
       </span>
@@ -7462,7 +7462,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         ChevronDown
       </span>
@@ -7499,7 +7499,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         ChevronLeft
       </span>
@@ -7537,7 +7537,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         ChevronRight
       </span>
@@ -7575,7 +7575,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         ChevronUp
       </span>
@@ -7613,7 +7613,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Clicks
       </span>
@@ -7650,7 +7650,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Cogwheel
       </span>
@@ -7691,7 +7691,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Commodities
       </span>
@@ -7729,7 +7729,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Communication
       </span>
@@ -7768,7 +7768,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         CommunicationApprove
       </span>
@@ -7805,7 +7805,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         CommunicationMail
       </span>
@@ -7842,7 +7842,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Compass
       </span>
@@ -7879,7 +7879,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         ConfigurationSliders
       </span>
@@ -7916,7 +7916,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         ConsumerCyclic
       </span>
@@ -7954,7 +7954,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         ConsumerStable
       </span>
@@ -7992,7 +7992,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Cross
       </span>
@@ -8029,7 +8029,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         CrossCircle
       </span>
@@ -8076,7 +8076,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         CrossMedium
       </span>
@@ -8114,7 +8114,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         CrossThin
       </span>
@@ -8153,7 +8153,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Csv
       </span>
@@ -8197,7 +8197,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         DiagonalWithCircle
       </span>
@@ -8234,7 +8234,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         DirectionDown
       </span>
@@ -8272,7 +8272,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         DirectionUp
       </span>
@@ -8309,7 +8309,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Energy
       </span>
@@ -8347,7 +8347,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         ExternalLink
       </span>
@@ -8385,7 +8385,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         EyeWithPlus
       </span>
@@ -8423,7 +8423,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         EyeWithPlusActive
       </span>
@@ -8461,7 +8461,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         FAQ
       </span>
@@ -8498,7 +8498,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         File
       </span>
@@ -8535,7 +8535,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Filter
       </span>
@@ -8573,7 +8573,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         FinanceGrowth
       </span>
@@ -8611,7 +8611,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Financial
       </span>
@@ -8649,7 +8649,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Flag
       </span>
@@ -8707,7 +8707,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Glasses
       </span>
@@ -8745,7 +8745,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Global
       </span>
@@ -8784,7 +8784,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Globe
       </span>
@@ -8828,7 +8828,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         GoldBars
       </span>
@@ -8877,7 +8877,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Growth
       </span>
@@ -8914,7 +8914,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Hamburger
       </span>
@@ -8952,7 +8952,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         HandWithCoin
       </span>
@@ -8989,7 +8989,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         HandWithCoinFilled
       </span>
@@ -9027,7 +9027,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Healthcare
       </span>
@@ -9065,7 +9065,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Heart
       </span>
@@ -9102,7 +9102,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         HeartFilled
       </span>
@@ -9140,7 +9140,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         HighRisk
       </span>
@@ -9177,7 +9177,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         House
       </span>
@@ -9227,7 +9227,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Import
       </span>
@@ -9265,7 +9265,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Increase
       </span>
@@ -9307,7 +9307,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Industrial
       </span>
@@ -9345,7 +9345,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         InfoCircle
       </span>
@@ -9386,7 +9386,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         InfoPending
       </span>
@@ -9427,7 +9427,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Leaf
       </span>
@@ -9464,7 +9464,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         LineGraph
       </span>
@@ -9502,7 +9502,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Lock
       </span>
@@ -9546,7 +9546,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         LowRisk
       </span>
@@ -9583,7 +9583,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Maximize
       </span>
@@ -9620,7 +9620,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         MediumRisk
       </span>
@@ -9657,7 +9657,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Minimize
       </span>
@@ -9694,7 +9694,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Minus
       </span>
@@ -9732,7 +9732,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Money
       </span>
@@ -9769,7 +9769,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         MoneyMove
       </span>
@@ -9813,7 +9813,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         MoneyThin
       </span>
@@ -9857,7 +9857,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Move
       </span>
@@ -9899,7 +9899,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         MoveBig
       </span>
@@ -9944,7 +9944,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         NoFee
       </span>
@@ -9981,7 +9981,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Other
       </span>
@@ -10019,7 +10019,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Pen
       </span>
@@ -10057,7 +10057,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Pending
       </span>
@@ -10101,7 +10101,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Plus
       </span>
@@ -10139,7 +10139,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         PlusThin
       </span>
@@ -10180,7 +10180,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         PlusWithCircle
       </span>
@@ -10218,7 +10218,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Percent
       </span>
@@ -10264,7 +10264,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Printer
       </span>
@@ -10306,7 +10306,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Profile
       </span>
@@ -10347,7 +10347,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Questionmark
       </span>
@@ -10397,7 +10397,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Raising
       </span>
@@ -10434,7 +10434,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Refresh
       </span>
@@ -10478,7 +10478,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         RealEstate
       </span>
@@ -10516,7 +10516,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         RiskBarHigh
       </span>
@@ -10575,7 +10575,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         RiskBarLow
       </span>
@@ -10634,7 +10634,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         RiskBarMedium
       </span>
@@ -10693,7 +10693,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         RiskLow
       </span>
@@ -10730,7 +10730,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         RiskMedium
       </span>
@@ -10767,7 +10767,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         RiskHigh
       </span>
@@ -10804,7 +10804,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Rtmt
       </span>
@@ -10841,7 +10841,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Search
       </span>
@@ -10909,7 +10909,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         SellingpointFunds
       </span>
@@ -10959,7 +10959,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         SellingpointGlobal
       </span>
@@ -10997,7 +10997,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         SellingpointMoney
       </span>
@@ -11047,7 +11047,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         SellingpointPhone
       </span>
@@ -11086,7 +11086,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         SellingpointRate
       </span>
@@ -11141,7 +11141,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         SellingpointShareville
       </span>
@@ -11188,7 +11188,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         SellingpointStocks
       </span>
@@ -11235,7 +11235,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         SellingpointTransfer
       </span>
@@ -11272,7 +11272,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Shapes
       </span>
@@ -11309,7 +11309,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         SharevilleLogo
       </span>
@@ -11471,7 +11471,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         SocialFacebook
       </span>
@@ -11514,7 +11514,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         SocialInstagram
       </span>
@@ -11562,7 +11562,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         SocialTwitter
       </span>
@@ -11605,7 +11605,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         SocialYouTube
       </span>
@@ -11647,7 +11647,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         SolidCircle
       </span>
@@ -11687,7 +11687,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         SortArrow
       </span>
@@ -11727,7 +11727,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Star
       </span>
@@ -11766,7 +11766,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Star24
       </span>
@@ -11805,7 +11805,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         StarAboveBars
       </span>
@@ -11843,7 +11843,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         StarOutline
       </span>
@@ -11880,7 +11880,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Stock
       </span>
@@ -11918,7 +11918,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         StockSmallArrow
       </span>
@@ -11955,7 +11955,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Tax
       </span>
@@ -12029,7 +12029,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         TaxPercentage
       </span>
@@ -12075,7 +12075,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Technology
       </span>
@@ -12113,7 +12113,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         ThinArrow
       </span>
@@ -12151,7 +12151,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         ThinChevron
       </span>
@@ -12189,7 +12189,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         ThreeDots
       </span>
@@ -12227,7 +12227,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         ThreeDotsO
       </span>
@@ -12268,7 +12268,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Trash
       </span>
@@ -12305,7 +12305,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Transfer
       </span>
@@ -12343,7 +12343,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         TrendlineArrowhead
       </span>
@@ -12381,7 +12381,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         UrgentMessage
       </span>
@@ -12429,7 +12429,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Utilities
       </span>
@@ -12467,7 +12467,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         WarningCircle
       </span>
@@ -12518,7 +12518,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         WarningTriangle
       </span>
@@ -12559,7 +12559,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         WarningTriangleHollow
       </span>
@@ -13286,7 +13286,7 @@ exports[`Storyshots Atoms / OldIcon With modified stroke 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Star with stroke modified
       </span>
@@ -13316,7 +13316,7 @@ exports[`Storyshots Atoms / OldIcon With modified stroke 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         CrossThin with stroke modified
       </span>
@@ -13346,7 +13346,7 @@ exports[`Storyshots Atoms / OldIcon With modified stroke 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         CheckMarkCircle with stroke modified
       </span>
@@ -13384,7 +13384,7 @@ exports[`Storyshots Atoms / OldIcon With modified stroke 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         CrossCircle with stroke modified
       </span>
@@ -13422,7 +13422,7 @@ exports[`Storyshots Atoms / OldIcon With modified stroke 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         InfoCircle with stroke modified
       </span>
@@ -13454,7 +13454,7 @@ exports[`Storyshots Atoms / OldIcon With modified stroke 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         WarningTriangle with stroke modified
       </span>
@@ -13487,7 +13487,7 @@ exports[`Storyshots Atoms / OldIcon With modified stroke 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Star24 with both stroke modified
       </span>
@@ -13517,7 +13517,7 @@ exports[`Storyshots Atoms / OldIcon With modified stroke 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Star24 with both stroke and fill modified
       </span>

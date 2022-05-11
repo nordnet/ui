@@ -116,42 +116,42 @@ exports[`Storyshots Atoms / Typography All 1`] = `
   className="c0"
 >
   <span
-    className="Typography__Span-sc-10mju41-0 c1"
+    className="c1"
   >
     Hero 48/52px extrabold (46/48px mobile)
   </span>
   <span
-    className="Typography__Span-sc-10mju41-0 c2"
+    className="c2"
   >
     Title1 28/32px extrabold (24/28px mobile)
   </span>
   <span
-    className="Typography__Span-sc-10mju41-0 c3"
+    className="c3"
   >
     Title2 24/28px extrabold (20/24px mobile)
   </span>
   <span
-    className="Typography__Span-sc-10mju41-0 c4"
+    className="c4"
   >
     Title3 20/24px extrabold (18/24px mobile)
   </span>
   <span
-    className="Typography__Span-sc-10mju41-0 c5"
+    className="c5"
   >
     Primary 16/24px regular
   </span>
   <span
-    className="Typography__Span-sc-10mju41-0 c6"
+    className="c6"
   >
     Secondary 14/20px regular
   </span>
   <span
-    className="Typography__Span-sc-10mju41-0 c7"
+    className="c7"
   >
     Tertiary 12/16px regular
   </span>
   <span
-    className="Typography__Span-sc-10mju41-0 c8"
+    className="c8"
   >
     Caption 10/16px regular
   </span>
@@ -255,14 +255,14 @@ exports[`Storyshots Atoms / Typography Caption 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Caption Default
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Caption text
       </span>
@@ -276,14 +276,14 @@ exports[`Storyshots Atoms / Typography Caption 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Caption with bold text
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c5"
+        className="c5"
       >
         Caption bold text
       </span>
@@ -416,14 +416,14 @@ exports[`Storyshots Atoms / Typography Colors 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Default
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Default
       </span>
@@ -437,14 +437,14 @@ exports[`Storyshots Atoms / Typography Colors 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Color: text
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Text
       </span>
@@ -458,14 +458,14 @@ exports[`Storyshots Atoms / Typography Colors 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Color: positive
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Positive
       </span>
@@ -479,14 +479,14 @@ exports[`Storyshots Atoms / Typography Colors 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Color: negative
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c5"
+        className="c5"
       >
         Negative
       </span>
@@ -500,14 +500,14 @@ exports[`Storyshots Atoms / Typography Colors 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Color: warning
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c6"
+        className="c6"
       >
         Warning
       </span>
@@ -521,14 +521,14 @@ exports[`Storyshots Atoms / Typography Colors 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Color: cta
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c7"
+        className="c7"
       >
         CTA
       </span>
@@ -542,14 +542,14 @@ exports[`Storyshots Atoms / Typography Colors 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Color: label
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c8"
+        className="c8"
       >
         Label
       </span>
@@ -669,14 +669,14 @@ exports[`Storyshots Atoms / Typography Hero 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Hero Default
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Hero text
       </span>
@@ -690,14 +690,14 @@ exports[`Storyshots Atoms / Typography Hero 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         With bold font weight
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c5"
+        className="c5"
       >
         Hero text
       </span>
@@ -803,14 +803,14 @@ exports[`Storyshots Atoms / Typography Primary 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Primary default
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Primary text
       </span>
@@ -824,14 +824,14 @@ exports[`Storyshots Atoms / Typography Primary 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Primary with bold text
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Primary bold text
       </span>
@@ -845,14 +845,14 @@ exports[`Storyshots Atoms / Typography Primary 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Primary with extrabold text
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c5"
+        className="c5"
       >
         Primary extrabold text
       </span>
@@ -958,14 +958,14 @@ exports[`Storyshots Atoms / Typography Secondary 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Secondary
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Secondary text
       </span>
@@ -979,14 +979,14 @@ exports[`Storyshots Atoms / Typography Secondary 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Secondary with bold text
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c5"
+        className="c5"
       >
         Secondary bold text
       </span>
@@ -1092,14 +1092,14 @@ exports[`Storyshots Atoms / Typography Tertiary 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Tertiary Default
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Tertiary text
       </span>
@@ -1113,14 +1113,14 @@ exports[`Storyshots Atoms / Typography Tertiary 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Tertiary with bold text
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c5"
+        className="c5"
       >
         Tertiary bold text
       </span>
@@ -1174,17 +1174,17 @@ exports[`Storyshots Atoms / Typography Text Align 1`] = `
   className="c0"
 >
   <span
-    className="Typography__Span-sc-10mju41-0 c1"
+    className="c1"
   >
     Default
   </span>
   <span
-    className="Typography__Span-sc-10mju41-0 c2"
+    className="c2"
   >
     Text align center
   </span>
   <span
-    className="Typography__Span-sc-10mju41-0 c3"
+    className="c3"
   >
     Text align right
   </span>
@@ -1318,14 +1318,14 @@ exports[`Storyshots Atoms / Typography Title1 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Title1 Default
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Title1 text
       </span>
@@ -1339,14 +1339,14 @@ exports[`Storyshots Atoms / Typography Title1 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         With regular font weight
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c5"
+        className="c5"
       >
         Title1 text
       </span>
@@ -1360,14 +1360,14 @@ exports[`Storyshots Atoms / Typography Title1 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         With bold font weight
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c6"
+        className="c6"
       >
         Title1 text
       </span>
@@ -1503,14 +1503,14 @@ exports[`Storyshots Atoms / Typography Title2 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Title2 Default
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Title2 text
       </span>
@@ -1524,14 +1524,14 @@ exports[`Storyshots Atoms / Typography Title2 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         With regular font weight
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c5"
+        className="c5"
       >
         Title2 text
       </span>
@@ -1545,14 +1545,14 @@ exports[`Storyshots Atoms / Typography Title2 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         With bold font weight
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c6"
+        className="c6"
       >
         Title2 text
       </span>
@@ -1688,14 +1688,14 @@ exports[`Storyshots Atoms / Typography Title3 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Title3 Default
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Title3 text
       </span>
@@ -1709,14 +1709,14 @@ exports[`Storyshots Atoms / Typography Title3 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         With regular font weight
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c5"
+        className="c5"
       >
         Title3 text
       </span>
@@ -1730,14 +1730,14 @@ exports[`Storyshots Atoms / Typography Title3 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         With bold font weight
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c6"
+        className="c6"
       >
         Title3 text
       </span>
@@ -1758,7 +1758,7 @@ exports[`Storyshots Atoms / Typography White Space 1`] = `
 }
 
 <span
-  className="Typography__Span-sc-10mju41-0 c0"
+  className="c0"
 >
   This text 
 should have 
@@ -1845,7 +1845,7 @@ exports[`Storyshots Atoms / Typography aria attributes 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         with aria-hidden
       </span>
@@ -1853,7 +1853,7 @@ exports[`Storyshots Atoms / Typography aria attributes 1`] = `
     <div>
       <span
         aria-hidden={true}
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         I'm hidden
       </span>

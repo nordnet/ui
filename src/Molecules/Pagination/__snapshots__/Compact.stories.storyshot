@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / Pagination / Compact Controlled Pagination 1`] = `
-.c7 {
+.c6 {
   margin-left: 0px;
   background-color: transparent;
 }
@@ -37,7 +37,7 @@ exports[`Storyshots Molecules / Pagination / Compact Controlled Pagination 1`] =
   align-items: center;
 }
 
-.c6 {
+.c5 {
   color: inherit;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -50,6 +50,15 @@ exports[`Storyshots Molecules / Pagination / Compact Controlled Pagination 1`] =
   vertical-align: sub;
 }
 
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 .c2 {
   font-family: inherit;
   font-size: 100%;
@@ -57,6 +66,26 @@ exports[`Storyshots Molecules / Pagination / Compact Controlled Pagination 1`] =
   margin: 0;
   overflow: visible;
   text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 .c2,
@@ -81,39 +110,7 @@ exports[`Storyshots Molecules / Pagination / Compact Controlled Pagination 1`] =
   outline: 1px dotted ButtonText;
 }
 
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c3 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -137,7 +134,7 @@ exports[`Storyshots Molecules / Pagination / Compact Controlled Pagination 1`] =
   align-items: center;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -173,16 +170,16 @@ exports[`Storyshots Molecules / Pagination / Compact Controlled Pagination 1`] =
     >
       <button
         aria-label="Go to previous page"
-        className="c2 c3 c4"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c2 c3"
         onClick={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c5"
+          className="c4"
         >
           <svg
             aria-hidden="true"
-            className="c6"
+            className="c5"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -198,23 +195,23 @@ exports[`Storyshots Molecules / Pagination / Compact Controlled Pagination 1`] =
       </button>
     </div>
     <div
-      className="c7"
+      className="c6"
     >
       <div
         className="c1"
       >
         <button
           aria-label="Go to next page"
-          className="c2 c3 c8"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c2 c7"
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c5"
+            className="c4"
           >
             <svg
               aria-hidden="true"
-              className="c6"
+              className="c5"
               focusable="false"
               height={16}
               preserveAspectRatio="xMidYMid meet"
@@ -454,7 +451,7 @@ exports[`Storyshots Molecules / Pagination / Compact Regular 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c6 {
   color: inherit;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -467,6 +464,15 @@ exports[`Storyshots Molecules / Pagination / Compact Regular 1`] = `
   vertical-align: sub;
 }
 
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 .c3 {
   font-family: inherit;
   font-size: 100%;
@@ -474,6 +480,26 @@ exports[`Storyshots Molecules / Pagination / Compact Regular 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 .c3,
@@ -498,39 +524,7 @@ exports[`Storyshots Molecules / Pagination / Compact Regular 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c4 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -569,16 +563,16 @@ exports[`Storyshots Molecules / Pagination / Compact Regular 1`] = `
       >
         <button
           aria-label="Go to next page"
-          className="c3 c4 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c6"
+            className="c5"
           >
             <svg
               aria-hidden="true"
-              className="c7"
+              className="c6"
               focusable="false"
               height={16}
               preserveAspectRatio="xMidYMid meet"

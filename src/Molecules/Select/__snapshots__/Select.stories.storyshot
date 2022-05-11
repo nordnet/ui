@@ -98,7 +98,7 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with hidden label 1`
     className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c1"
+      className="c1"
     >
       Stocks
     </span>
@@ -132,7 +132,7 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with hidden label 1`
     </select>
     <span
       aria-hidden={true}
-      className="Typography__Span-sc-10mju41-0 c4 c5"
+      className="c4 c5"
     >
       Option 2
     </span>
@@ -245,7 +245,7 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with overflowing pla
 >
   <label>
     <span
-      className="Typography__Span-sc-10mju41-0 c0"
+      className="c0"
     >
       Options
     </span>
@@ -268,7 +268,7 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with overflowing pla
       </select>
       <span
         aria-hidden={true}
-        className="Typography__Span-sc-10mju41-0 c3 c4"
+        className="c3 c4"
       >
         Reaaaaaaaaaally long option
       </span>
@@ -375,7 +375,7 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with placeholder 1`]
 
 <label>
   <span
-    className="Typography__Span-sc-10mju41-0 c0"
+    className="c0"
   >
     Options
   </span>
@@ -414,7 +414,7 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with placeholder 1`]
     </select>
     <span
       aria-hidden={true}
-      className="Typography__Span-sc-10mju41-0 c3 c4"
+      className="c3 c4"
     >
       Select option
     </span>
@@ -520,7 +520,7 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with placeholder and
 
 <label>
   <span
-    className="Typography__Span-sc-10mju41-0 c0"
+    className="c0"
   >
     Options
   </span>
@@ -559,7 +559,7 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with placeholder and
     </select>
     <span
       aria-hidden={true}
-      className="Typography__Span-sc-10mju41-0 c3 c4"
+      className="c3 c4"
     >
       Option 2
     </span>
@@ -677,7 +677,7 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with prepended empty
     className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c1"
+      className="c1"
     >
       Stocks
     </span>
@@ -716,7 +716,7 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with prepended empty
     </select>
     <span
       aria-hidden={true}
-      className="Typography__Span-sc-10mju41-0 c4 c5"
+      className="c4 c5"
     >
       All
     </span>
@@ -822,7 +822,7 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with preselected val
 
 <label>
   <span
-    className="Typography__Span-sc-10mju41-0 c0"
+    className="c0"
   >
     Stocks
   </span>
@@ -855,7 +855,7 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select with preselected val
     </select>
     <span
       aria-hidden={true}
-      className="Typography__Span-sc-10mju41-0 c3 c4"
+      className="c3 c4"
     >
       Option 2
     </span>
@@ -961,7 +961,7 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select without placeholder 
 
 <label>
   <span
-    className="Typography__Span-sc-10mju41-0 c0"
+    className="c0"
   >
     Stocks
   </span>
@@ -993,7 +993,7 @@ exports[`Storyshots DEPRECATED / Molecules / Select  Select without placeholder 
     </select>
     <span
       aria-hidden={true}
-      className="Typography__Span-sc-10mju41-0 c3 c4"
+      className="c3 c4"
     />
     <svg
       aria-hidden="true"

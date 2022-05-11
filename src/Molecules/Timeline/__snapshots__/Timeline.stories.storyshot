@@ -314,7 +314,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
             className="c11"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c12"
+              className="c12"
             >
               <span
                 className="c13"
@@ -325,7 +325,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
               </span>
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c14"
+              className="c14"
             >
               Nothing
             </span>
@@ -366,7 +366,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
             className="c11"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c12"
+              className="c12"
             >
               <span
                 className="c13"
@@ -377,7 +377,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
               </span>
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c14"
+              className="c14"
             >
               Waiting for information
             </span>
@@ -418,7 +418,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
             className="c11"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c12"
+              className="c12"
             >
               <span
                 className="c13"
@@ -429,7 +429,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
               </span>
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c14"
+              className="c14"
             >
               Old
             </span>
@@ -476,7 +476,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
             className="c11"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c12"
+              className="c12"
             >
               <span
                 className="c13"
@@ -487,7 +487,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
               </span>
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c14"
+              className="c14"
             >
               Kinda new
             </span>
@@ -534,7 +534,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
             className="c11"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c12"
+              className="c12"
             >
               <span
                 className="c13"
@@ -545,7 +545,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
               </span>
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c14"
+              className="c14"
             >
               Newest
             </span>
@@ -909,7 +909,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
             className="c12"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c13"
+              className="c13"
             >
               <span
                 className="c14"
@@ -920,7 +920,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
               </span>
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c15"
+              className="c15"
             >
               <div
                 className="c16"
@@ -971,7 +971,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
             className="c12"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c13"
+              className="c13"
             >
               <span
                 className="c14"
@@ -982,7 +982,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
               </span>
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c15"
+              className="c15"
             >
               <div
                 className="c21"
@@ -1033,7 +1033,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
             className="c12"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c13"
+              className="c13"
             >
               <span
                 className="c14"
@@ -1044,7 +1044,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
               </span>
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c15"
+              className="c15"
             >
               Kinda new
             </span>
@@ -1091,7 +1091,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
             className="c12"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c13"
+              className="c13"
             >
               <span
                 className="c14"
@@ -1102,7 +1102,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
               </span>
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c15"
+              className="c15"
             >
               <div
                 className="c26"
@@ -1321,7 +1321,7 @@ exports[`Storyshots Molecules / Timeline Single Element 1`] = `
             className="c13"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c14"
+              className="c14"
             >
               <span
                 className="c15"
@@ -1332,7 +1332,7 @@ exports[`Storyshots Molecules / Timeline Single Element 1`] = `
               </span>
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c16"
+              className="c16"
             >
               Single element. So lonely 😭
             </span>
@@ -1406,37 +1406,6 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   flex-direction: column;
 }
 
-.c17 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c17,
-.c17[type='button'],
-.c17[type='reset'],
-.c17[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c17::-moz-focus-inner,
-.c17[type='button']::-moz-focus-inner,
-.c17[type='reset']::-moz-focus-inner,
-.c17[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c17:-moz-focusring,
-.c17[type='button']:-moz-focusring,
-.c17[type='reset']:-moz-focusring,
-.c17[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 .c2 {
   display: block;
 }
@@ -1455,7 +1424,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   display: block;
 }
 
-.c21 {
+.c20 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1469,11 +1438,11 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   display: block;
 }
 
-.c22 {
+.c21 {
   fill: #51CB20;
 }
 
-.c23 {
+.c22 {
   fill: #FFF;
 }
 
@@ -1499,7 +1468,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c19 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1508,7 +1477,13 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c18 {
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -1532,7 +1507,29 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   cursor: pointer;
 }
 
-.c18::before {
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c17::before {
   content: '';
   display: block;
   position: absolute;
@@ -1543,11 +1540,11 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   height: calc(100% - 4px);
 }
 
-.c18:hover {
+.c17:hover {
   background-color: #2650BF;
 }
 
-.c18:active {
+.c17:active {
   background-color: #1F4099;
 }
 
@@ -1608,15 +1605,15 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   content: none;
 }
 
-.c20 {
+.c19 {
   position: relative;
 }
 
-.c20:not(:last-of-type) > div > div:nth-child(2) {
+.c19:not(:last-of-type) > div > div:nth-child(2) {
   border-bottom: 1px solid #EBEBE8;
 }
 
-.c20::before {
+.c19::before {
   content: '';
   position: absolute;
   height: 50%;
@@ -1626,11 +1623,11 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   background: #BCBCB6;
 }
 
-.c20:first-child::before {
+.c19:first-child::before {
   content: none;
 }
 
-.c20::after {
+.c19::after {
   content: '';
   position: absolute;
   height: 50%;
@@ -1641,7 +1638,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   bottom: 0;
 }
 
-.c20:last-child::after {
+.c19:last-child::after {
   content: none;
 }
 
@@ -1684,7 +1681,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
             className="c12"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c13"
+              className="c13"
             >
               <span
                 className="c14"
@@ -1695,7 +1692,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
               </span>
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c15"
+              className="c15"
             >
               Old
             </span>
@@ -1704,13 +1701,13 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
             className="c16"
           >
             <button
-              className="c17 c18"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c17"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="Typography__Span-sc-10mju41-0 c19"
+                  className="c18"
                 >
                   Click me
                 </span>
@@ -1721,7 +1718,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
       </div>
     </li>
     <li
-      className="c2 c20"
+      className="c2 c19"
     >
       <div
         className="c4 c5"
@@ -1731,7 +1728,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="c21"
+            className="c20"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1742,11 +1739,11 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
               fillRule="evenodd"
             >
               <path
-                className="c22"
+                className="c21"
                 d="M12 23.87c6.627 0 12-5.315 12-11.87C24 5.445 18.627.13 12 .13S0 5.445 0 12c0 6.555 5.373 11.87 12 11.87z"
               />
               <path
-                className="c23"
+                className="c22"
                 d="M16.474 8.87l.933.927L11 16.174l-3.88-3.861.933-.928L11 14.318z"
               />
             </g>
@@ -1759,7 +1756,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
             className="c12"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c13"
+              className="c13"
             >
               <span
                 className="c14"
@@ -1770,7 +1767,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
               </span>
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c15"
+              className="c15"
             >
               Newest
             </span>

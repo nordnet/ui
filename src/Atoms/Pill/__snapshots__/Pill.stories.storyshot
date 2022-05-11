@@ -31,22 +31,16 @@ exports[`Storyshots Atoms / Pill Basic Pill 1`] = `
   className="c0"
 >
   <span
-    className="Typography__Span-sc-10mju41-0 c1"
+    className="c1"
   >
     OMXS30
   </span>
    
   <span
-    className="Typography__Span-sc-10mju41-0 c2"
+    className="c2"
   >
     1567
   </span>
-</div>
-`;
-
-exports[`Storyshots Atoms / Pill Pill Rounded 1`] = `
-<div>
-   hello
 </div>
 `;
 
@@ -78,6 +72,60 @@ exports[`Storyshots Atoms / Pill Pill with colored bar 1`] = `
   box-sizing: border-box;
 }
 
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  stroke: #6E6E69;
+}
+
+.c0 {
+  display: inline-block;
+  padding: 0 4px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.21);
+  border-left: 2px solid #336BFF;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
 .c3 {
   font-family: inherit;
   font-size: 100%;
@@ -85,6 +133,26 @@ exports[`Storyshots Atoms / Pill Pill with colored bar 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 .c3,
@@ -109,83 +177,6 @@ exports[`Storyshots Atoms / Pill Pill with colored bar 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c8 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 8px;
-  height: 8px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c9 {
-  stroke: #6E6E69;
-}
-
-.c0 {
-  display: inline-block;
-  padding: 0 4px;
-  box-sizing: border-box;
-  background: #FFFFFF;
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.21);
-  border-left: 2px solid #336BFF;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c4 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
 <div
   className="c0"
 >
@@ -196,21 +187,21 @@ exports[`Storyshots Atoms / Pill Pill with colored bar 1`] = `
       className="c2"
     >
       <button
-        className="c3 c4"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c3"
         onClick={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c5"
+          className="c4"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c6"
+            className="c5"
           >
             Bollinger
           </span>
            
           <span
-            className="Typography__Span-sc-10mju41-0 c7"
+            className="c6"
           >
             1234
           </span>
@@ -221,23 +212,23 @@ exports[`Storyshots Atoms / Pill Pill with colored bar 1`] = `
       className="c2"
     >
       <button
-        className="c3 c4"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c3"
         onClick={[Function]}
         type="button"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c5"
+          className="c4"
         >
           <svg
             aria-hidden="true"
-            className="c8"
+            className="c7"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
             viewBox="0 0 24 24"
           >
             <path
-              className="c9"
+              className="c8"
               d="m 1 1 l 22 22 m -22 0 l 22 -22"
               strokeWidth={2}
             />
@@ -280,13 +271,13 @@ exports[`Storyshots Atoms / Pill Pill with no padding 1`] = `
   className="c0"
 >
   <span
-    className="Typography__Span-sc-10mju41-0 c1"
+    className="c1"
   >
     OMXS30
   </span>
    
   <span
-    className="Typography__Span-sc-10mju41-0 c2"
+    className="c2"
   >
     1567
   </span>
@@ -294,7 +285,7 @@ exports[`Storyshots Atoms / Pill Pill with no padding 1`] = `
 `;
 
 exports[`Storyshots Atoms / Pill Rounded Pill 1`] = `
-.c4 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -308,20 +299,20 @@ exports[`Storyshots Atoms / Pill Rounded Pill 1`] = `
   margin-right: -2px;
 }
 
-.c4 > * {
+.c3 > * {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.c4 > *:not(:first-child) {
+.c3 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c5 {
+.c4 {
   box-sizing: border-box;
 }
 
-.c7 {
+.c6 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -333,6 +324,41 @@ exports[`Storyshots Atoms / Pill Rounded Pill 1`] = `
   display: block;
 }
 
+.c8 {
+  opacity: 0;
+  margin-bottom: 1px;
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+}
+
+.c0 {
+  display: inline-block;
+  box-sizing: border-box;
+  background: #F5F5F5;
+  border-radius: 100px;
+  padding: 2px 12px;
+}
+
+.c0:hover .c7 {
+  opacity: 1;
+}
+
+.c5 {
+  border-radius: 100%;
+  height: 8px;
+  width: 8px;
+  background-color: #336BFF;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 .c1 {
   font-family: inherit;
   font-size: 100%;
@@ -340,6 +366,26 @@ exports[`Storyshots Atoms / Pill Rounded Pill 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 .c1,
@@ -364,96 +410,38 @@ exports[`Storyshots Atoms / Pill Rounded Pill 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c9 {
-  opacity: 0;
-  margin-bottom: 1px;
-  -webkit-transition: opacity 0.2s ease-in;
-  transition: opacity 0.2s ease-in;
-}
-
-.c0 {
-  display: inline-block;
-  box-sizing: border-box;
-  background: #F5F5F5;
-  border-radius: 100px;
-  padding: 2px 12px;
-}
-
-.c0:hover .c8 {
-  opacity: 1;
-}
-
-.c6 {
-  border-radius: 100%;
-  height: 8px;
-  width: 8px;
-  background-color: #336BFF;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
 <div
   className="c0"
 >
   <button
-    className="c1 c2"
+    className="NormalizedButton__Button-sc-ey7f5x-0 c1"
     onClick={[Function]}
     type="button"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c3"
+      className="c2"
     >
       <div
-        className="c4"
+        className="c3"
       >
         <div
-          className="c5"
+          className="c4"
         >
           <div
-            className="c6"
+            className="c5"
           />
         </div>
         <div
-          className="c5"
+          className="c4"
         >
           OMXS30
         </div>
         <div
-          className="c5"
+          className="c4"
         >
           <svg
             aria-hidden="true"
-            className="c7 c8 c9"
+            className="c6 c7 c8"
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"

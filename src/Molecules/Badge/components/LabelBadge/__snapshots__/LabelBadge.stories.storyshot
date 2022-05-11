@@ -218,7 +218,7 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Primary
       </span>
@@ -228,7 +228,7 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
         className="c4 c5"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c6"
+          className="c6"
         >
           Primary
         </span>
@@ -243,7 +243,7 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Primary Bold
       </span>
@@ -253,7 +253,7 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
         className="c4 c5"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c7"
+          className="c7"
         >
           Primary Bold
         </span>
@@ -268,7 +268,7 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Secondary
       </span>
@@ -278,7 +278,7 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
         className="c4 c8"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c9"
+          className="c9"
         >
           Secondary
         </span>
@@ -293,7 +293,7 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Secondary Bold
       </span>
@@ -303,7 +303,7 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
         className="c4 c8"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c10"
+          className="c10"
         >
           Secondary Bold
         </span>
@@ -318,7 +318,7 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Custom badge color
       </span>
@@ -328,7 +328,7 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
         className="c11 c5"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c6"
+          className="c6"
         >
           Custom badge color
         </span>
@@ -343,7 +343,7 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Custom text color
       </span>
@@ -353,7 +353,7 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
         className="c4 c5"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c12"
+          className="c12"
         >
           Custom text color
         </span>
@@ -368,7 +368,7 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Primary Single Character
       </span>
@@ -378,7 +378,7 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
         className="c13 c5"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c7"
+          className="c7"
         >
           8
         </span>
@@ -393,7 +393,7 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Secondary Single Character
       </span>
@@ -403,7 +403,7 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
         className="c14 c8"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c10"
+          className="c10"
         >
           9
         </span>

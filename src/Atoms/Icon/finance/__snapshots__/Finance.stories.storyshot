@@ -105,7 +105,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Bank16
       </span>
@@ -139,7 +139,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Controls16
       </span>
@@ -177,7 +177,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Fee16
       </span>
@@ -215,7 +215,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         FeeNone16
       </span>
@@ -253,7 +253,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Fund16
       </span>
@@ -287,7 +287,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         FundVariety16
       </span>
@@ -337,7 +337,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Global16
       </span>
@@ -369,7 +369,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Gold16
       </span>
@@ -401,7 +401,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Market16
       </span>
@@ -433,7 +433,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Money16
       </span>
@@ -469,7 +469,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Pension16
       </span>
@@ -501,7 +501,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Percent16
       </span>
@@ -537,7 +537,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Recommended16
       </span>
@@ -567,7 +567,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         RecommendedFill16
       </span>
@@ -597,7 +597,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Stock16
       </span>
@@ -627,7 +627,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Sustainable16
       </span>
@@ -657,7 +657,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         SustainableFill16
       </span>
@@ -687,7 +687,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Tag16
       </span>
@@ -796,7 +796,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Apartment24
       </span>
@@ -830,7 +830,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Approve24
       </span>
@@ -866,7 +866,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Bank24
       </span>
@@ -906,7 +906,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         BankId24
       </span>
@@ -952,7 +952,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Controls24
       </span>
@@ -984,7 +984,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Fee24
       </span>
@@ -1020,7 +1020,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         FeeNone24
       </span>
@@ -1062,7 +1062,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Fund24
       </span>
@@ -1096,7 +1096,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         FundVariety24
       </span>
@@ -1140,7 +1140,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Global24
       </span>
@@ -1172,7 +1172,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Gold24
       </span>
@@ -1217,7 +1217,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Growth24
       </span>
@@ -1247,7 +1247,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Guidance24
       </span>
@@ -1279,7 +1279,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Ipo24
       </span>
@@ -1323,7 +1323,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Loan24
       </span>
@@ -1363,7 +1363,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Market24
       </span>
@@ -1395,7 +1395,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Money24
       </span>
@@ -1433,7 +1433,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         News24
       </span>
@@ -1475,7 +1475,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Office24
       </span>
@@ -1509,7 +1509,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Orders24
       </span>
@@ -1542,7 +1542,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Pension24
       </span>
@@ -1578,7 +1578,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Percent24
       </span>
@@ -1620,7 +1620,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Recommended24
       </span>
@@ -1650,7 +1650,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         RecommendedFill24
       </span>
@@ -1682,7 +1682,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         RiskHigh24
       </span>
@@ -1714,7 +1714,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         RiskLow24
       </span>
@@ -1746,7 +1746,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         RiskMedium24
       </span>
@@ -1778,7 +1778,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Shareville24
       </span>
@@ -1812,7 +1812,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Stock24
       </span>
@@ -1842,7 +1842,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Sustainable24
       </span>
@@ -1874,7 +1874,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         SustainableFill24
       </span>
@@ -1904,7 +1904,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Tag24
       </span>
@@ -1940,7 +1940,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Tax24
       </span>
@@ -1976,7 +1976,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Villa24
       </span>
@@ -2085,7 +2085,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Apartment32
       </span>
@@ -2119,7 +2119,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Approve32
       </span>
@@ -2161,7 +2161,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Bank32
       </span>
@@ -2201,7 +2201,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Controls32
       </span>
@@ -2245,7 +2245,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Fee32
       </span>
@@ -2283,7 +2283,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         FeeNone32
       </span>
@@ -2325,7 +2325,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Fund32
       </span>
@@ -2359,7 +2359,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         FundVariety32
       </span>
@@ -2391,7 +2391,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Global32
       </span>
@@ -2423,7 +2423,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Gold32
       </span>
@@ -2467,7 +2467,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Growth32
       </span>
@@ -2497,7 +2497,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Guidance32
       </span>
@@ -2529,7 +2529,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         InvestBear32
       </span>
@@ -2565,7 +2565,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         InvestBull32
       </span>
@@ -2601,7 +2601,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Ipo32
       </span>
@@ -2645,7 +2645,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Loan32
       </span>
@@ -2677,7 +2677,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Market32
       </span>
@@ -2709,7 +2709,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Money32
       </span>
@@ -2747,7 +2747,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         News32
       </span>
@@ -2790,7 +2790,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Office32
       </span>
@@ -2824,7 +2824,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Orders32
       </span>
@@ -2858,7 +2858,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Pension32
       </span>
@@ -2894,7 +2894,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Percent32
       </span>
@@ -2930,7 +2930,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Recommended32
       </span>
@@ -2960,7 +2960,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         RecommendedFill32
       </span>
@@ -2990,7 +2990,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         RiskHigh32
       </span>
@@ -3022,7 +3022,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         RiskLow32
       </span>
@@ -3054,7 +3054,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         RiskMedium32
       </span>
@@ -3086,7 +3086,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Shareville32
       </span>
@@ -3120,7 +3120,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Stock32
       </span>
@@ -3150,7 +3150,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Sustainable32
       </span>
@@ -3180,7 +3180,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         SustainableFill32
       </span>
@@ -3210,7 +3210,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Tag32
       </span>
@@ -3248,7 +3248,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Tax32
       </span>
@@ -3294,7 +3294,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       className="c3"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         Villa32
       </span>

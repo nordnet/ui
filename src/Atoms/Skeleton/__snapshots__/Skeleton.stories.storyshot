@@ -7,19 +7,16 @@ exports[`Storyshots Atoms / Skeleton Default 1`] = `
   background-color: #EBEBE8;
   -webkit-animation: hDWTUO 1.5s ease-in-out 0.5s infinite;
   animation: hDWTUO 1.5s ease-in-out 0.5s infinite;
-}
-
-.c1 {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.c1:empty:before {
+.c0:empty:before {
   content: '\\00a0';
 }
 
 <div
-  className="c0 c1"
+  className="Skeleton__Base-sc-1n2btkl-0 c0"
   width="300px"
 />
 `;
@@ -51,7 +48,7 @@ Array [
     className="c0"
   >
     <span
-      className="Typography__Span-sc-10mju41-0 c1"
+      className="c1"
     >
       Skeleton variants
     </span>
@@ -62,38 +59,29 @@ Array [
   background-color: #EBEBE8;
   -webkit-animation: hDWTUO 1.5s ease-in-out 0.5s infinite;
   animation: hDWTUO 1.5s ease-in-out 0.5s infinite;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.c6 {
+.c4:empty:before {
+  content: '\\00a0';
+}
+
+.c5 {
   width: 100px;
   display: block;
   background-color: #EBEBE8;
   -webkit-animation: hDWTUO 1.5s ease-in-out 0.5s infinite;
   animation: hDWTUO 1.5s ease-in-out 0.5s infinite;
+  height: 100px;
 }
 
-.c8 {
+.c6 {
   width: 64px;
   display: block;
   background-color: #EBEBE8;
   -webkit-animation: hDWTUO 1.5s ease-in-out 0.5s infinite;
   animation: hDWTUO 1.5s ease-in-out 0.5s infinite;
-}
-
-.c5 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.c5:empty:before {
-  content: '\\00a0';
-}
-
-.c7 {
-  height: 100px;
-}
-
-.c9 {
   height: 64px;
   border-radius: 50%;
 }
@@ -180,14 +168,14 @@ Array [
         className="c2"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           Text
         </span>
       </div>
       <div>
         <div
-          className="c4 c5"
+          className="Skeleton__Base-sc-1n2btkl-0 c4"
           width="200px"
         />
       </div>
@@ -200,14 +188,14 @@ Array [
         className="c2"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           Rect
         </span>
       </div>
       <div>
         <div
-          className="c6 c7"
+          className="Skeleton__Base-sc-1n2btkl-0 c5"
           width="100px"
         />
       </div>
@@ -220,14 +208,14 @@ Array [
         className="c2"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           Circle
         </span>
       </div>
       <div>
         <div
-          className="c8 c9"
+          className="Skeleton__Base-sc-1n2btkl-0 c6"
           width={16}
         />
       </div>

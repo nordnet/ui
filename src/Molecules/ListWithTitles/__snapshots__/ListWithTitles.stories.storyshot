@@ -51,7 +51,7 @@ exports[`Storyshots Molecules / ListWithTitles Integration: ListWithTitles with 
         className="c2"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           title1
         </span>
@@ -60,7 +60,7 @@ exports[`Storyshots Molecules / ListWithTitles Integration: ListWithTitles with 
         className="c2"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           title2
         </span>
@@ -153,7 +153,7 @@ exports[`Storyshots Molecules / ListWithTitles Integration: ListWithTitles with 
         className="c2"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           title1
         </span>
@@ -162,7 +162,7 @@ exports[`Storyshots Molecules / ListWithTitles Integration: ListWithTitles with 
         className="c2"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         />
       </div>
     </div>
@@ -310,14 +310,14 @@ exports[`Storyshots Molecules / ListWithTitles Integration: ListWithTitles with 
         className="c2"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         />
       </div>
       <div
         className="c2"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           title1
         </span>
