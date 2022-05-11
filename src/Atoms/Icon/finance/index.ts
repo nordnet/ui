@@ -1,5 +1,6 @@
 import apartment from './apartment';
 import approve from './approve';
+import auto from './auto';
 import bank from './bank';
 import bankId from './bankId';
 import controls from './controls';
@@ -38,6 +39,7 @@ import villa from './villa';
 export default {
   ...apartment,
   ...approve,
+  ...auto,
   ...bank,
   ...bankId,
   ...controls,

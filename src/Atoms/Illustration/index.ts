@@ -1,5 +1,4 @@
 // Small Illustrations
-
 import Archive48 from './Small/Archive48';
 import ArrowDown48 from './Small/ArrowDown48';
 import ArrowUp48 from './Small/ArrowUp48';
@@ -21,8 +20,8 @@ import Search48 from './Small/Search48';
 import Watchlist48 from './Small/Watchlist48';
 
 // Medium Illustrations
-
 import Account64 from './Medium/Account64';
+import Auto64 from './Medium/Auto64';
 import Bank64 from './Medium/Bank64';
 import Blog64 from './Medium/Blog64';
 import Book64 from './Medium/Book64';
@@ -64,6 +63,7 @@ export default {
   ArrowLeft48,
   ArrowRight48,
   ArrowUp48,
+  Auto64,
   Bank64,
   Blog64,
   Book64,
