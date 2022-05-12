@@ -1,3 +1,10 @@
+## [10.28.1](https://github.com/nordnet/ui/compare/v10.28.0...v10.28.1) (2022-05-12)
+
+
+### Bug Fixes
+
+* cleanup the pill button story ([7079e32](https://github.com/nordnet/ui/commit/7079e32))
+
 # [10.28.0](https://github.com/nordnet/ui/compare/v10.27.0...v10.28.0) (2022-05-11)
 
 
