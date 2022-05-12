@@ -44,12 +44,6 @@ exports[`Storyshots Atoms / Pill Basic Pill 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms / Pill Pill Rounded 1`] = `
-<div>
-   hello
-</div>
-`;
-
 exports[`Storyshots Atoms / Pill Pill with colored bar 1`] = `
 .c1 {
   box-sizing: border-box;

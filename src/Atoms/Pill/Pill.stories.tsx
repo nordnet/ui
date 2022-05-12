@@ -29,12 +29,7 @@ basicPill.story = {
 };
 
 export const roundedPill = () => (
-  <Pill.Rounded label="OMXS30" color={(t) => t.color.cta} onClose={() => {}}>
-    <Typography type="tertiary" weight="bold">
-      OMXS30
-    </Typography>{' '}
-    <Typography type="tertiary">1567</Typography>
-  </Pill.Rounded>
+  <Pill.Rounded label="OMXS30" color={(t) => t.color.cta} onClose={() => {}} />
 );
 
 roundedPill.story = {
@@ -63,10 +58,6 @@ export const pillWithBar = () => (
 
 pillWithBar.story = {
   name: 'Pill with colored bar',
-};
-
-export const pillRounded = () => {
-  return <div> hello</div>;
 };
 
 export const pillWithNoPadding = () => (
