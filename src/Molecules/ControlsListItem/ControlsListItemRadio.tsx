@@ -1,21 +1,17 @@
 import React from 'react';
-import { Switch, Flexbox, Typography, Input } from '../..';
+import { Flexbox, Typography, Input } from '../..';
 
-import { ControlsListItemSwitch as Props } from './ControlsListItem.types';
+import { ControlsListItemRadio as Props } from './ControlsListItem.types';
 import ControlsListItem from './ControlsListItem';
-import { isFunction } from '../../common/utils';
 
-const ControlsListItemSwitch: React.FC<Props> = ({
+const ControlsListItemRadio: React.FC<Props> = ({
+  name,
   label,
-  onChange: onChangeFromProps,
+  value,
   Icon,
   checked,
+  onChange,
 }) => {
-  const onChange = () => {
-    if (isFunction(onChangeFromProps)) {
-      onChangeFromProps();
-    }
-  };
   return (
     <ControlsListItem>
       <Flexbox container justifyContent="space-between">
@@ -23,13 +19,20 @@ const ControlsListItemSwitch: React.FC<Props> = ({
           {Icon}
           <Typography>{label}</Typography>
         </Flexbox>
+
         <Flexbox item>
-          <Input.Radio name="example" value="green" label="Green" />
-          {/* <Switch label={label} hiddenLabel onClick={(_) => onChange()} checked={checked} /> */}
+          <Input.Radio
+            name={name}
+            value={value}
+            label={label}
+            checked={checked}
+            onChange={onChange}
+            hideLabel
+          />
         </Flexbox>
       </Flexbox>
     </ControlsListItem>
   );
 };
 
-export default ControlsListItemSwitch;
+export default ControlsListItemRadio;

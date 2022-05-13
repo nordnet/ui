@@ -19,3 +19,11 @@ export type ControlsListItemSelect = {
   onChange: (val: OptionItem[]) => void;
   selectedItem: OptionItem[];
 } & Props;
+
+export type ControlsListItemRadio = {
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  value: string;
+  name: string;
+  label: string;
+  checked?: boolean;
+} & Props;

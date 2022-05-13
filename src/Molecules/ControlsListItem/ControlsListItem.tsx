@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ListItem, Typography } from '../..';
+import { Button, ListItem, Typography } from '../..';
 
 const StyledListItem = styled(ListItem)`
   padding: ${(p) => p.theme.spacing.unit(4)}px;
@@ -12,10 +12,12 @@ const StyledTypography = styled(Typography)`
 
 const ControlsListItem: React.FC<{ description?: string }> = ({ children, description }) => {
   return (
-    <StyledListItem>
-      {children}
-      {description && <StyledTypography type="tertiary">{description}</StyledTypography>}
-    </StyledListItem>
+    <Button variant="neutral" fullWidth>
+      <StyledListItem>
+        {children}
+        {description && <StyledTypography type="tertiary">{description}</StyledTypography>}
+      </StyledListItem>
+    </Button>
   );
 };
 
