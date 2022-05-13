@@ -37,6 +37,7 @@ import Button, { PillButton } from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
 import CoachMarks from './Molecules/CoachMarks';
 import CollapsibleCard from './Molecules/CollapsibleCard';
+import ControlsListItem from './Molecules/ControlsListItem';
 import { DatePicker, DateRangePicker, DoubleDatePicker } from './Molecules/DatePicker';
 import Drawer from './Molecules/Drawer';
 import FeedbackBanner from './Molecules/FeedbackBanner';
@@ -133,6 +134,7 @@ export {
   CardWithTitle,
   CoachMarks,
   CollapsibleCard,
+  ControlsListItem,
   CssGrid,
   DatePicker,
   DateRangePicker,
