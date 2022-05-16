@@ -1,3 +1,10 @@
+# [10.29.0](https://github.com/nordnet/ui/compare/v10.28.1...v10.29.0) (2022-05-16)
+
+
+### Features
+
+* 🎸 add optional development to Rounded Pill ([d472fc6](https://github.com/nordnet/ui/commit/d472fc6))
+
 ## [10.28.1](https://github.com/nordnet/ui/compare/v10.28.0...v10.28.1) (2022-05-12)
 
 
