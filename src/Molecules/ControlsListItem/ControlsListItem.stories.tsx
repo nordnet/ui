@@ -9,7 +9,7 @@ export default {
   component: ControlsListItem,
 };
 
-export const ControlsListItemButton = () => (
+export const ControlsListItemButtonWithIcon24 = () => (
   <ControlsListItem.Button
     buttonText="button text"
     label="label"
@@ -19,8 +19,22 @@ export const ControlsListItemButton = () => (
   />
 );
 
-ControlsListItemButton.story = {
-  name: 'Controls list item button',
+ControlsListItemButtonWithIcon24.story = {
+  name: 'Controls list item button with icon 24',
+};
+
+export const ControlsListItemButtonWithIcon16 = () => (
+  <ControlsListItem.Button
+    buttonText="button text"
+    label="label"
+    onClick={() => {}}
+    Icon={<Icon.Gold16 />}
+    description="description is good otherwise we don't understand"
+  />
+);
+
+ControlsListItemButtonWithIcon16.story = {
+  name: 'Controls list item button with icon 16',
 };
 
 export const ControlsListItemSelect = () => {
@@ -131,4 +145,33 @@ export const ControlsListItemRadio = () => {
 
 ControlsListItemRadio.story = {
   name: 'Controls list item Radio with multiple groups',
+};
+
+export const ControlsListItemRadioWithSubSelector = () => {
+  const OPTIONS = { KARAM: 'KARAM', VIKING: 'VIKING', MICHAEL: 'MICHAEL', JESPER: 'JESPER' };
+
+  const [currentGroup, setCurrentGroup] = useState('');
+
+  const onChange = (s: string) => {
+    setCurrentGroup(s);
+  };
+
+  return (
+    <div style={{ width: '100%' }}>
+      <ControlsListItem.Radio
+        checked={currentGroup === OPTIONS.VIKING}
+        name={OPTIONS.VIKING}
+        label={OPTIONS.VIKING}
+        Icon={<Icon.Gold16 />}
+        value={OPTIONS.VIKING}
+        description="description is good otherwise we don't understand"
+        onChange={(_) => onChange(OPTIONS.VIKING)}
+        onChange2={(_) => {}}
+      />
+    </div>
+  );
+};
+
+ControlsListItemRadioWithSubSelector.story = {
+  name: 'Controls list item Radio with subselector',
 };

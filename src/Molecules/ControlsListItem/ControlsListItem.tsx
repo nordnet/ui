@@ -1,23 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button, ListItem, Typography } from '../..';
+import { Button, ListItem } from '../..';
 
 const StyledListItem = styled(ListItem)`
+  padding: 0;
+  margin: 0;
+`;
+
+const StyledButton = styled(Button)`
   padding: ${(p) => p.theme.spacing.unit(4)}px;
+  text-align: left;
+  span {
+    width: 100%;
+  }
 `;
 
-const StyledTypography = styled(Typography)`
-  margin-left: 20.5px;
-`;
-
-const ControlsListItem: React.FC<{ description?: string }> = ({ children, description }) => {
+const ControlsListItem: React.FC<{ children: React.ReactElement }> = ({ children }) => {
   return (
-    <Button variant="neutral" fullWidth>
-      <StyledListItem>
+    <StyledListItem>
+      <StyledButton variant="neutral" fullWidth>
         {children}
-        {description && <StyledTypography type="tertiary">{description}</StyledTypography>}
-      </StyledListItem>
-    </Button>
+      </StyledButton>
+    </StyledListItem>
   );
 };
 

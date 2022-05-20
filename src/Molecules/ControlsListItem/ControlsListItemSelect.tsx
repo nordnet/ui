@@ -12,6 +12,7 @@ const ControlsListItemSelect: React.FC<Props> = ({
   options,
   onChange,
   selectedItem,
+  description,
 }) => {
   const customGraphTypeComponents = useMemo(
     () => ({
@@ -24,26 +25,35 @@ const ControlsListItemSelect: React.FC<Props> = ({
 
   return (
     <ControlsListItem>
-      <Flexbox container justifyContent="space-between">
-        <Flexbox container item gutter={1} alignItems="center">
-          {Icon}
-          <Typography>{label}</Typography>
-        </Flexbox>
+      <>
+        <Flexbox container justifyContent="space-between">
+          <Flexbox container item gutter={1} alignItems="center">
+            {Icon}
+            <Typography>{label}</Typography>
+          </Flexbox>
 
-        <Flexbox item>
-          <Input.Select
-            id="graph-typ-input"
-            label="Line graph"
-            components={customGraphTypeComponents}
-            onChange={onChange}
-            options={options}
-            listPosition="left"
-            fullWidth
-            hideLabel
-            noFormField
-          />
+          <Flexbox item>
+            <Input.Select
+              id="graph-typ-input"
+              label="Line graph"
+              components={customGraphTypeComponents}
+              onChange={onChange}
+              options={options}
+              listPosition="left"
+              fullWidth
+              hideLabel
+              noFormField
+            />
+          </Flexbox>
         </Flexbox>
-      </Flexbox>
+        {description && (
+          <Flexbox container>
+            <Typography type="secondary" color={(t) => t.color.label}>
+              {description}
+            </Typography>
+          </Flexbox>
+        )}
+      </>
     </ControlsListItem>
   );
 };

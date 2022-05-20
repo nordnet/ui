@@ -10,6 +10,7 @@ const ControlsListItemSwitch: React.FC<Props> = ({
   onChange: onChangeFromProps,
   Icon,
   checked,
+  description,
 }) => {
   const onChange = () => {
     if (isFunction(onChangeFromProps)) {
@@ -18,15 +19,24 @@ const ControlsListItemSwitch: React.FC<Props> = ({
   };
   return (
     <ControlsListItem>
-      <Flexbox container justifyContent="space-between">
-        <Flexbox container item gutter={1} alignItems="center">
-          {Icon}
-          <Typography>{label}</Typography>
+      <>
+        <Flexbox container justifyContent="space-between">
+          <Flexbox container item gutter={1} alignItems="center">
+            {Icon}
+            <Typography>{label}</Typography>
+          </Flexbox>
+          <Flexbox item>
+            <Switch label={label} hiddenLabel onClick={(_) => onChange()} checked={checked} />
+          </Flexbox>
         </Flexbox>
-        <Flexbox item>
-          <Switch label={label} hiddenLabel onClick={(_) => onChange()} checked={checked} />
-        </Flexbox>
-      </Flexbox>
+        {description && (
+          <Flexbox container>
+            <Typography type="secondary" color={(t) => t.color.label}>
+              {description}
+            </Typography>
+          </Flexbox>
+        )}
+      </>
     </ControlsListItem>
   );
 };

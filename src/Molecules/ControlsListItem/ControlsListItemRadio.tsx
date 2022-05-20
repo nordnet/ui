@@ -11,26 +11,36 @@ const ControlsListItemRadio: React.FC<Props> = ({
   Icon,
   checked,
   onChange,
+  description,
 }) => {
   return (
     <ControlsListItem>
-      <Flexbox container justifyContent="space-between">
-        <Flexbox container item gutter={1} alignItems="center">
-          {Icon}
-          <Typography>{label}</Typography>
-        </Flexbox>
+      <>
+        <Flexbox container justifyContent="space-between">
+          <Flexbox container item gutter={1} alignItems="center">
+            {Icon}
+            <Typography>{label}</Typography>
+          </Flexbox>
 
-        <Flexbox item>
-          <Input.Radio
-            name={name}
-            value={value}
-            label={label}
-            checked={checked}
-            onChange={onChange}
-            hideLabel
-          />
+          <Flexbox item>
+            <Input.Radio
+              name={name}
+              value={value}
+              label={label}
+              checked={checked}
+              onChange={onChange}
+              hideLabel
+            />
+          </Flexbox>
         </Flexbox>
-      </Flexbox>
+        {description && (
+          <Flexbox container>
+            <Typography type="secondary" color={(t) => t.color.label}>
+              {description}
+            </Typography>
+          </Flexbox>
+        )}
+      </>
     </ControlsListItem>
   );
 };

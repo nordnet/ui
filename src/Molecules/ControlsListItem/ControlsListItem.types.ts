@@ -5,6 +5,7 @@ export type Props = {
   Icon?: React.ReactNode;
   text?: string;
   description?: string;
+  onChange2?: (val: OptionItem[]) => void;
 };
 
 export type ControlsListItemSwitch = {
