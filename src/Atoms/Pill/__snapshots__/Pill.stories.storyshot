@@ -315,7 +315,7 @@ exports[`Storyshots Atoms / Pill Rounded Pill 1`] = `
   box-sizing: border-box;
 }
 
-.c7 {
+.c8 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -358,7 +358,7 @@ exports[`Storyshots Atoms / Pill Rounded Pill 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c9 {
+.c10 {
   opacity: 0;
   margin-bottom: 1px;
   -webkit-transition: opacity 0.2s ease-in;
@@ -373,7 +373,7 @@ exports[`Storyshots Atoms / Pill Rounded Pill 1`] = `
   padding: 2px 12px;
 }
 
-.c0:hover .c8 {
+.c0:hover .c9 {
   opacity: 1;
 }
 
@@ -416,6 +416,10 @@ exports[`Storyshots Atoms / Pill Rounded Pill 1`] = `
   cursor: pointer;
 }
 
+.c7 {
+  color: #368716;
+}
+
 <div
   className="c0"
 >
@@ -445,9 +449,24 @@ exports[`Storyshots Atoms / Pill Rounded Pill 1`] = `
         <div
           className="c5"
         >
+          <span
+            className="c7"
+            value={20.45}
+          >
+            <span
+              aria-hidden={true}
+            />
+            +
+            20.46
+            %
+          </span>
+        </div>
+        <div
+          className="c5"
+        >
           <svg
             aria-hidden="true"
-            className="c7 c8 c9"
+            className="c8 c9 c10"
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"

@@ -29,7 +29,7 @@ basicPill.story = {
 };
 
 export const roundedPill = () => (
-  <Pill.Rounded label="OMXS30" color={(t) => t.color.cta} onClose={() => {}} />
+  <Pill.Rounded label="OMXS30" color={(t) => t.color.cta} development={20.455} onClose={() => {}} />
 );
 
 roundedPill.story = {

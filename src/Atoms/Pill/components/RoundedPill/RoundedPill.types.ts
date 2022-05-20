@@ -7,6 +7,7 @@ export type Props = {
   className?: string;
   label?: string;
   color?: ColorFn;
+  development?: number;
   onClose?: () => void;
 };
 
