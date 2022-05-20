@@ -1,3 +1,58 @@
+# [10.29.0](https://github.com/nordnet/ui/compare/v10.28.1...v10.29.0) (2022-05-16)
+
+
+### Features
+
+* 🎸 add optional development to Rounded Pill ([d472fc6](https://github.com/nordnet/ui/commit/d472fc6))
+
+## [10.28.1](https://github.com/nordnet/ui/compare/v10.28.0...v10.28.1) (2022-05-12)
+
+
+### Bug Fixes
+
+* cleanup the pill button story ([7079e32](https://github.com/nordnet/ui/commit/7079e32))
+
+# [10.28.0](https://github.com/nordnet/ui/compare/v10.27.0...v10.28.0) (2022-05-11)
+
+
+### Bug Fixes
+
+* update label color ([01b0f17](https://github.com/nordnet/ui/commit/01b0f17))
+
+
+### Features
+
+* add auto icon ([3b379c2](https://github.com/nordnet/ui/commit/3b379c2))
+
+# [10.27.0](https://github.com/nordnet/ui/compare/v10.26.2...v10.27.0) (2022-05-10)
+
+
+### Bug Fixes
+
+* 🐛 faulty type ([d10f556](https://github.com/nordnet/ui/commit/d10f556))
+
+
+### Features
+
+* 🎸 introduce new default colors + tweak error color usage ([6ec85c6](https://github.com/nordnet/ui/commit/6ec85c6))
+
+## [10.26.2](https://github.com/nordnet/ui/compare/v10.26.1...v10.26.2) (2022-05-09)
+
+
+### Bug Fixes
+
+* 🐛 add positive black background color ([fc1d712](https://github.com/nordnet/ui/commit/fc1d712))
+* 🐛 update green700 and use as positive for light mode ([97938a2](https://github.com/nordnet/ui/commit/97938a2))
+* 🐛 update positive and negative colors ([f000cbe](https://github.com/nordnet/ui/commit/f000cbe))
+* 🐛 use correct red for non negative shapes ([9a2f5e7](https://github.com/nordnet/ui/commit/9a2f5e7))
+
+## [10.26.1](https://github.com/nordnet/ui/compare/v10.26.0...v10.26.1) (2022-05-04)
+
+
+### Bug Fixes
+
+* use a visible keyboard navigation focus color for input select ([2ee00ae](https://github.com/nordnet/ui/commit/2ee00ae))
+
 # [10.26.0](https://github.com/nordnet/ui/compare/v10.25.4...v10.26.0) (2022-04-26)
 
 

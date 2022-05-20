@@ -75,7 +75,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
   user-select: none;
   width: 8px;
   height: 8px;
-  fill: #6E6E69;
+  fill: #6E6E6E;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -94,7 +94,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
 
 .c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -574,7 +574,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
   user-select: none;
   width: 8px;
   height: 8px;
-  fill: #6E6E69;
+  fill: #6E6E6E;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -593,7 +593,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
 
 .c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -1089,7 +1089,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   user-select: none;
   width: 8px;
   height: 8px;
-  fill: #6E6E69;
+  fill: #6E6E6E;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1108,7 +1108,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
 
 .c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -1611,7 +1611,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   user-select: none;
   width: 8px;
   height: 8px;
-  fill: #6E6E69;
+  fill: #6E6E6E;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1645,7 +1645,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
 
 .c20 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -2160,7 +2160,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
 
 .c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -7635,7 +7635,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
   user-select: none;
   width: 8px;
   height: 8px;
-  fill: #6E6E69;
+  fill: #6E6E6E;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -7654,7 +7654,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
 
 .c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;

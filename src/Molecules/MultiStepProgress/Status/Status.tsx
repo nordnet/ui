@@ -41,7 +41,7 @@ const Status: StatusComponent = ({ current, done, noIcons, number, titleDone, ti
     {!noIcons && (
       <StyledTypography type="secondary" weight="bold" aria-hidden>
         {done ? (
-          <OldIcon.CheckMarkCircle size={STEP_NUMBER_SIZE} fill={(t) => t.color.positive} />
+          <OldIcon.CheckMarkCircle size={STEP_NUMBER_SIZE} fill={(t) => t.color.functionGreen} />
         ) : (
           <Circle $current={current}>{number}</Circle>
         )}

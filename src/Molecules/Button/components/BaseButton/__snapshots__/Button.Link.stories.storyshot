@@ -672,7 +672,7 @@ Array [
   display: inline-flex;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #FF1900;
+  background-color: #CC2269;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -690,11 +690,11 @@ Array [
 }
 
 .c6:hover {
-  background-color: hsl(5.899999999999977,100%,45%);
+  background-color: hsl(334.9,71.4%,42%);
 }
 
 .c6:active {
-  background-color: hsl(5.899999999999977,100%,40%);
+  background-color: hsl(334.9,71.4%,37.3%);
 }
 
 .c6:hover {
@@ -959,7 +959,7 @@ Array [
   padding: 4px 12px;
   min-height: 32px;
   background-color: transparent;
-  color: #FF1900;
+  color: #CC2269;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -976,19 +976,19 @@ Array [
 }
 
 .c6:hover {
-  color: hsl(5.899999999999977,100%,40%);
+  color: hsl(334.9,71.4%,37.3%);
 }
 
 .c6:hover::before {
-  border-color: hsl(5.899999999999977,100%,40%);
+  border-color: hsl(334.9,71.4%,37.3%);
 }
 
 .c6:active {
-  color: hsl(5.899999999999977,100%,35%);
+  color: hsl(334.9,71.4%,32.7%);
 }
 
 .c6:active::before {
-  border-color: hsl(5.899999999999977,100%,35%);
+  border-color: hsl(334.9,71.4%,32.7%);
 }
 
 .c6:hover {

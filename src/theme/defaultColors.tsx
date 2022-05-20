@@ -43,7 +43,7 @@ const colorScales = {
   green450: '#D2F500',
   green500: '#51CB20',
   green600: '#41A21A',
-  green700: '#317A13',
+  green700: '#368716',
   green800: '#20510D',
   green900: '#102906',
 
@@ -97,6 +97,12 @@ const defaultColors = {
   complementaryTurquoise1: '#009195', // Included in Dark Mode
   complementaryTurquoise2: '#01424C', // Included in Dark Mode
 
+  // FUNCTION
+  functionBlue: '#336BFF',
+  functionRed: '#FF4733',
+  functionGreen: '#51CB20',
+  functionYellow: '#FFCF00',
+
   // GRAYSCALE PALETTE
   black: '#000000', // Included in Dark Mode
   gray100: '#F5F5F5',
@@ -116,10 +122,10 @@ const defaultColors = {
   cta: '#0046FF',
   ctaHover: '#003BD9',
   ctaPressed: '#0030B2',
-  positive: '#00D200', // Included in Dark Mode
-  negative: '#FF1900', // Included in Dark Mode
-  negativeHover: '#D90E00',
-  negativePressed: '#B20300',
+  positive: '#368716', // Included in Dark Mode
+  negative: '#CC2269', // Included in Dark Mode
+  negativeHover: '#AC135A',
+  negativePressed: '#78013A',
   index: '#FFCF00', // Included in Dark Mode
   sfdrArticle9: '#41A21A',
   sfdrArticle8: '#85DA62',

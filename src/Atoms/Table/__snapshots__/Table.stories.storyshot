@@ -49,7 +49,7 @@ exports[`Storyshots Atoms / Table Default 1`] = `
 }
 
 .c3 {
-  color: #6E6E69;
+  color: #6E6E6E;
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;
@@ -1046,7 +1046,7 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
 }
 
 .c5 {
-  color: #6E6E69;
+  color: #6E6E6E;
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;
@@ -1063,7 +1063,7 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
 }
 
 .c6 {
-  color: #6E6E69;
+  color: #6E6E6E;
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;
@@ -1080,7 +1080,7 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
 }
 
 .c7 {
-  color: #6E6E69;
+  color: #6E6E6E;
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;
@@ -1097,7 +1097,7 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
 }
 
 .c8 {
-  color: #6E6E69;
+  color: #6E6E6E;
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;
@@ -1114,7 +1114,7 @@ exports[`Storyshots Atoms / Table Integration: Table (stickyHeader) with Typogra
 }
 
 .c9 {
-  color: #6E6E69;
+  color: #6E6E6E;
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;
@@ -5694,7 +5694,7 @@ exports[`Storyshots Atoms / Table Integration: Table with Typography 1`] = `
 }
 
 .c4 {
-  color: #6E6E69;
+  color: #6E6E6E;
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;
@@ -5711,7 +5711,7 @@ exports[`Storyshots Atoms / Table Integration: Table with Typography 1`] = `
 }
 
 .c5 {
-  color: #6E6E69;
+  color: #6E6E6E;
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;
@@ -5728,7 +5728,7 @@ exports[`Storyshots Atoms / Table Integration: Table with Typography 1`] = `
 }
 
 .c6 {
-  color: #6E6E69;
+  color: #6E6E6E;
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;
@@ -5745,7 +5745,7 @@ exports[`Storyshots Atoms / Table Integration: Table with Typography 1`] = `
 }
 
 .c7 {
-  color: #6E6E69;
+  color: #6E6E6E;
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;
@@ -5762,7 +5762,7 @@ exports[`Storyshots Atoms / Table Integration: Table with Typography 1`] = `
 }
 
 .c8 {
-  color: #6E6E69;
+  color: #6E6E6E;
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;
@@ -10359,7 +10359,7 @@ exports[`Storyshots Atoms / Table Integration: Table with Typography and ellipsi
 }
 
 .c4 {
-  color: #6E6E69;
+  color: #6E6E6E;
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;
@@ -10376,7 +10376,7 @@ exports[`Storyshots Atoms / Table Integration: Table with Typography and ellipsi
 }
 
 .c5 {
-  color: #6E6E69;
+  color: #6E6E6E;
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;
@@ -10393,7 +10393,7 @@ exports[`Storyshots Atoms / Table Integration: Table with Typography and ellipsi
 }
 
 .c6 {
-  color: #6E6E69;
+  color: #6E6E6E;
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;
@@ -10410,7 +10410,7 @@ exports[`Storyshots Atoms / Table Integration: Table with Typography and ellipsi
 }
 
 .c7 {
-  color: #6E6E69;
+  color: #6E6E6E;
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;
@@ -10427,7 +10427,7 @@ exports[`Storyshots Atoms / Table Integration: Table with Typography and ellipsi
 }
 
 .c8 {
-  color: #6E6E69;
+  color: #6E6E6E;
   font-weight: normal;
   height: 100%;
   padding: 8px 4px;

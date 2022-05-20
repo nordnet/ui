@@ -15,10 +15,10 @@ export const getColorLightScheme = (scheme: ThemeColorsVersion) => {
 export const createLightColors = (rawColor: RawColors): ThemeColors => {
   const lineColors = [
     rawColor.brandPink,
-    rawColor.positive,
+    rawColor.green500,
     rawColor.graphPurple,
     rawColor.complementaryTurquoise1,
-    rawColor.negative,
+    rawColor.red500,
     rawColor.brandBlue,
     rawColor.gray3,
     rawColor.graphOrange,
@@ -88,6 +88,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     cta: rawColor.blue500,
     ctaHover: rawColor.blue600,
 
+    danger: rawColor.red600,
+
     darkmodeIllustrationBackground: rawColor.blue800,
     darkmodeIllustrationLightBulb: rawColor.blue400,
 
@@ -126,6 +128,11 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     flagBorder: rawColor.gray6,
     fundExchange: rawColor.gray2,
 
+    functionBlue: rawColor.functionBlue,
+    functionRed: rawColor.functionRed,
+    functionGreen: rawColor.functionGreen,
+    functionYellow: rawColor.functionYellow,
+
     generationSavingsTimelineColor1: rawColor.complementaryGreen1,
     generationSavingsTimelineColor2: rawColor.complementaryPink1,
     generationSavingsTimelineColor3: rawColor.brandBlue,
@@ -152,7 +159,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     inputBackground: rawColor.white,
     inputBorder: rawColor.gray400,
-    inputBorderError: rawColor.pink600,
+    inputBorderError: rawColor.red600,
     inputBorderHover: rawColor.gray700,
     inputBorderSuccess: rawColor.green600,
     inputHover: rawColor.gray100,
@@ -162,7 +169,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     investmentPredictionGraphPink: rawColor.complementaryPink1,
     investmentPredictionGraphTurquoise: rawColor.complementaryTurquoise2,
 
-    label: rawColor.gray2,
+    label: rawColor.gray600,
     lineScaleValueColor: rawColor.complementaryTurquoise1,
     listItemBackgroundHover: Color(rawColor.complementaryTurquoise1).alpha(0.1).rgb().string(),
     loanRatesGraphColor2: rawColor.complementaryBlue2,
@@ -181,8 +188,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     modalBackdrop: Color(rawColor.gray2).alpha(0.63).rgb().string(),
     module: rawColor.white,
 
-    negative: rawColor.negative,
-    negativeBlackBackground: rawColor.negative,
+    negative: rawColor.pink600,
+    negativeBlackBackground: rawColor.pink500,
 
     newsLabelTextColors: [rawColor.green600, rawColor.pink600, rawColor.blue500, rawColor.teal600],
     newsLabelBackgroundColors: [
@@ -222,7 +229,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     pillBackground: rawColor.gray100,
 
-    positive: rawColor.positive,
+    positive: rawColor.green700,
+    positiveBlackBackground: rawColor.green500,
 
     infoBarBackgroundSuccess: rawColor.green100,
     infoBarBackgroundWarning: rawColor.yellow100,
@@ -241,8 +249,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     privateBankingBannerTitle: rawColor.gray6,
 
     progressBarActive: rawColor.blue500,
-    progressBarDone: rawColor.positive,
-    progressBarFailure: rawColor.negative,
+    progressBarDone: rawColor.green500,
+    progressBarFailure: rawColor.red500,
     progressBarNext: rawColor.gray4,
     progressBarText: rawColor.white,
     progressBarWarning: rawColor.index,
@@ -306,14 +314,14 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     technicalAnalysisPlotBands: rawColor.gray200,
 
     timelineActive: rawColor.cta,
-    timelineFailure: rawColor.negative,
+    timelineFailure: rawColor.red500,
     timelineNext: rawColor.gray4,
-    timelineSuccess: rawColor.positive,
+    timelineSuccess: rawColor.green500,
     timelineWarning: rawColor.index,
 
     transferPendingIconColor: rawColor.index,
     transferProgressBar1: rawColor.brandPink,
-    transferProgressBar2: rawColor.positive,
+    transferProgressBar2: rawColor.green500,
     transferProgressBar3: rawColor.gray5,
     transferProgressBarText1: rawColor.gray1,
     transferProgressBarText2: rawColor.gray2,

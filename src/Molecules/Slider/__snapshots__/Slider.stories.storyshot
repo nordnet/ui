@@ -162,7 +162,7 @@ Array [
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -269,25 +269,25 @@ Array [
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -895,22 +895,22 @@ Array [
   cursor: grab;
   border-width: 4px;
   border-style: solid;
-  border-color: #FF1900;
+  border-color: #CC2269;
   -webkit-transition: -webkit-transform 0.16s ease-out;
   -webkit-transition: transform 0.16s ease-out;
   transition: transform 0.16s ease-out;
 }
 
 .c3:active {
-  background: hsl(5.899999999999977,100%,45%);
+  background: hsl(334.9,71.4%,42%);
   -webkit-transform: translateY(-50%) scale3d(0.85,0.85,0.85);
   -ms-transform: translateY(-50%) scale3d(0.85,0.85,0.85);
   transform: translateY(-50%) scale3d(0.85,0.85,0.85);
 }
 
 .c3:focus {
-  border: 4px solid hsl(5.899999999999977,100%,45%);
-  background: hsl(5.899999999999977,100%,45%);
+  border: 4px solid hsl(334.9,71.4%,42%);
+  background: hsl(334.9,71.4%,42%);
 }
 
 .c1 {
@@ -925,7 +925,7 @@ Array [
 .c2 {
   width: 100%;
   border-radius: inherit;
-  background: #FF1900;
+  background: #CC2269;
   height: 12px;
 }
 

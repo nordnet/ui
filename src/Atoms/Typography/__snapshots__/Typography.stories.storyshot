@@ -304,7 +304,7 @@ exports[`Storyshots Atoms / Typography Colors 1`] = `
 
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #00D200;
+  color: #368716;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -313,7 +313,7 @@ exports[`Storyshots Atoms / Typography Colors 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FF1900;
+  color: #CC2269;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -340,7 +340,7 @@ exports[`Storyshots Atoms / Typography Colors 1`] = `
 
 .c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;

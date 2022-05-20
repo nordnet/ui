@@ -550,7 +550,7 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
           <path
             clipRule="evenodd"
             d="M53.4142 12H46.5858L42 16.5858V23.4142L46.5858 28H53.4142L58 23.4142V16.5858L53.4142 12ZM49 16V21H51V16H49ZM49 24V22H51V24H49Z"
-            fill="#FF1900"
+            fill="#CC2269"
             fillRule="evenodd"
           />
         </svg>

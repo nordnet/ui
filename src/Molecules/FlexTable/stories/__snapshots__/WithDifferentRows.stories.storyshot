@@ -101,7 +101,7 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows Default Rows 1`]
 
 .c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -738,7 +738,7 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows With Colored Sep
 
 .c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -1419,7 +1419,7 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows With Hidden Sepa
 
 .c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -2055,7 +2055,7 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows Without Hover Hi
 
 .c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;

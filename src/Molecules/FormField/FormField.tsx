@@ -141,7 +141,7 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
               exit={{ y: 0, opacity: 0 }}
               aria-live="polite"
             >
-              <Typography type="tertiary" color={(t) => t.color.negative}>
+              <Typography type="tertiary" color={(t) => t.color.danger}>
                 <VisuallyHidden>Error: </VisuallyHidden>
                 {error}
               </Typography>

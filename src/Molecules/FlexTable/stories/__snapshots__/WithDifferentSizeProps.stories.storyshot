@@ -128,7 +128,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 
 .c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -739,7 +739,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 
 .c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -2041,7 +2041,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 
 .c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -3093,7 +3093,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 
 .c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;

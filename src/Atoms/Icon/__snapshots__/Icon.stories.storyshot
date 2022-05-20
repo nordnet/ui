@@ -1155,6 +1155,92 @@ Array [
       width={16}
     >
       <path
+        d="M5 9C5.55228 9 6 8.55228 6 8C6 7.44772 5.55228 7 5 7C4.44772 7 4 7.44772 4 8C4 8.55228 4.44772 9 5 9Z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M4.5 1H3V4.25716C2.02273 5.06425 1.32903 6.20246 1.09069 7.5H0V10.5H1.37494C1.86616 11.7578 2.80706 12.7905 4 13.4003V15H7V14H9V15H12V13.4003C13.7808 12.4899 15 10.6373 15 8.5C15 8.24907 14.9832 8.00207 14.9507 7.76005C15.5756 7.42181 16 6.76047 16 6C16 4.89543 15.1046 4 14 4V5.33692C13.0046 3.92345 11.3602 3 9.5 3H6.94999C6.71836 1.85888 5.70948 1 4.5 1ZM3 8.5C3 6.567 4.567 5 6.5 5H9.5C11.433 5 13 6.567 13 8.5C13 10.433 11.433 12 9.5 12H6.5C4.567 12 3 10.433 3 8.5Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  color: #336BFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={32}
+    >
+      <path
+        d="M9 17C9 16.4477 9.44771 16 10 16C10.5523 16 11 16.4477 11 17H13C13 15.3431 11.6569 14 10 14C8.34315 14 7 15.3431 7 17H9Z"
+        fill="currentColor"
+      />
+      <path
+        d="M17 8C17 8.55228 16.5523 9 16 9C15.4477 9 15 8.55228 15 8C15 7.44772 15.4477 7 16 7C16.5523 7 17 7.44772 17 8Z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M20 2H12V8C11.6245 8 11.2539 8.0207 10.8892 8.061C10.4667 6.30491 8.88574 5 7 5H5V10.8586C3.71995 12.1134 2.77584 13.7097 2.31504 15.5H0V20.5H2.31504C3.17614 23.8456 5.72507 26.5136 9 27.5422V31H15V28H17V31H23V27.1679C26.5318 25.6248 29 22.1006 29 18C29 17.3152 28.9312 16.6465 28.8 16.0004C29.2995 15.9955 29.8046 15.8656 30.268 15.5981C31.7029 14.7697 32.1945 12.9349 31.3661 11.5C31.1718 11.1635 30.9205 10.8771 30.6308 10.6478C30.613 10.3474 30.5268 10.0464 30.3661 9.768L28.634 10.768L27.634 9.03595C26.6774 9.58823 26.3497 10.8114 26.902 11.768C27.4543 12.7246 28.6774 13.0523 29.634 12.5001C29.9101 12.9783 29.7463 13.5899 29.268 13.8661C28.8428 14.1116 28.3121 14.0093 28.0056 13.6474C26.525 10.5897 23.533 8.40015 20 8.04938V2ZM26.1699 14.5L26.1901 14.4884C25.029 12.1154 22.7277 10.402 20 10.0619V11H21V13H11V11H12V10C7.58172 10 4 13.5817 4 18C4 22.4183 7.58172 26 12 26H19C23.4183 26 27 22.4183 27 18C27 16.8126 26.7413 15.6857 26.2773 14.6724C26.2398 14.6166 26.204 14.5591 26.1699 14.5ZM18 11V4H14V11H18ZM7 7C7.92454 7 8.70256 7.62733 8.93161 8.47955C8.25323 8.69803 7.60648 8.98699 7 9.33782V7ZM19 29V28H21V29H19ZM13 28V29H11V28H13Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  color: #336BFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={16}
+    >
+      <path
         d="M15.872 3.172l-.743 1.856L8 2.177.872 5.028.129 3.172 8 .022l7.872 3.15zM3 6v8h2v-4h2v4h2v-4h2v4h2V6h2v8h1v2H0v-2h1V6h2z"
         fill="currentColor"
       />
@@ -18541,6 +18627,100 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           <path
             clipRule="evenodd"
             d="M16 31C7.71573 31 0.999999 24.2843 1 16C1 7.71573 7.71573 0.999999 16 1C24.2843 1 31 7.71573 31 16C31 24.2843 24.2843 31 16 31ZM16 29C23.1797 29 29 23.1797 29 16C29 8.8203 23.1797 3 16 3C8.8203 3 3 8.8203 3 16C3 23.1797 8.8203 29 16 29ZM15 20L15 8H17V20H15ZM15 24L15 22H17L17 24H15Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
+        Auto16
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            d="M5 9C5.55228 9 6 8.55228 6 8C6 7.44772 5.55228 7 5 7C4.44772 7 4 7.44772 4 8C4 8.55228 4.44772 9 5 9Z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M4.5 1H3V4.25716C2.02273 5.06425 1.32903 6.20246 1.09069 7.5H0V10.5H1.37494C1.86616 11.7578 2.80706 12.7905 4 13.4003V15H7V14H9V15H12V13.4003C13.7808 12.4899 15 10.6373 15 8.5C15 8.24907 14.9832 8.00207 14.9507 7.76005C15.5756 7.42181 16 6.76047 16 6C16 4.89543 15.1046 4 14 4V5.33692C13.0046 3.92345 11.3602 3 9.5 3H6.94999C6.71836 1.85888 5.70948 1 4.5 1ZM3 8.5C3 6.567 4.567 5 6.5 5H9.5C11.433 5 13 6.567 13 8.5C13 10.433 11.433 12 9.5 12H6.5C4.567 12 3 10.433 3 8.5Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
+        Auto32
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={32}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={32}
+        >
+          <path
+            d="M9 17C9 16.4477 9.44771 16 10 16C10.5523 16 11 16.4477 11 17H13C13 15.3431 11.6569 14 10 14C8.34315 14 7 15.3431 7 17H9Z"
+            fill="currentColor"
+          />
+          <path
+            d="M17 8C17 8.55228 16.5523 9 16 9C15.4477 9 15 8.55228 15 8C15 7.44772 15.4477 7 16 7C16.5523 7 17 7.44772 17 8Z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M20 2H12V8C11.6245 8 11.2539 8.0207 10.8892 8.061C10.4667 6.30491 8.88574 5 7 5H5V10.8586C3.71995 12.1134 2.77584 13.7097 2.31504 15.5H0V20.5H2.31504C3.17614 23.8456 5.72507 26.5136 9 27.5422V31H15V28H17V31H23V27.1679C26.5318 25.6248 29 22.1006 29 18C29 17.3152 28.9312 16.6465 28.8 16.0004C29.2995 15.9955 29.8046 15.8656 30.268 15.5981C31.7029 14.7697 32.1945 12.9349 31.3661 11.5C31.1718 11.1635 30.9205 10.8771 30.6308 10.6478C30.613 10.3474 30.5268 10.0464 30.3661 9.768L28.634 10.768L27.634 9.03595C26.6774 9.58823 26.3497 10.8114 26.902 11.768C27.4543 12.7246 28.6774 13.0523 29.634 12.5001C29.9101 12.9783 29.7463 13.5899 29.268 13.8661C28.8428 14.1116 28.3121 14.0093 28.0056 13.6474C26.525 10.5897 23.533 8.40015 20 8.04938V2ZM26.1699 14.5L26.1901 14.4884C25.029 12.1154 22.7277 10.402 20 10.0619V11H21V13H11V11H12V10C7.58172 10 4 13.5817 4 18C4 22.4183 7.58172 26 12 26H19C23.4183 26 27 22.4183 27 18C27 16.8126 26.7413 15.6857 26.2773 14.6724C26.2398 14.6166 26.204 14.5591 26.1699 14.5ZM18 11V4H14V11H18ZM7 7C7.92454 7 8.70256 7.62733 8.93161 8.47955C8.25323 8.69803 7.60648 8.98699 7 9.33782V7ZM19 29V28H21V29H19ZM13 28V29H11V28H13Z"
             fill="currentColor"
             fillRule="evenodd"
           />
@@ -36340,7 +36520,7 @@ exports[`Storyshots Atoms / Icon Default use 1`] = `
 
 exports[`Storyshots Atoms / Icon Different color 1`] = `
 .c0 {
-  color: #00D200;
+  color: #368716;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
