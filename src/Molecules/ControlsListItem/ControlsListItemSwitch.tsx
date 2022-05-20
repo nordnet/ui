@@ -1,42 +1,49 @@
 import React from 'react';
-import { Switch, Flexbox, Typography } from '../..';
-
-import { ControlsListItemSwitch as Props } from './ControlsListItem.types';
+import { Switch, Typography, CssGrid as Grid } from '../..';
 import ControlsListItem from './ControlsListItem';
-import { isFunction } from '../../common/utils';
+import { ControlsListItemSwitch as Props } from './ControlsListItem.types';
+
+// prettier-ignore
+const GRID = {
+  areas:[
+    ['icon', 'label', 'button'],
+    ['.', 'description', 'description'],
+  ],
+  templateColumns:['auto', '1fr', '1fr'],
+  templateRows:['auto', '1fr'],
+  gutter: {row: 1, col: 2}
+}
 
 const ControlsListItemSwitch: React.FC<Props> = ({
-  label,
-  onChange: onChangeFromProps,
-  Icon,
   checked,
   description,
+  Icon,
+  label,
+  onChange,
 }) => {
-  const onChange = () => {
-    if (isFunction(onChangeFromProps)) {
-      onChangeFromProps();
-    }
-  };
   return (
     <ControlsListItem>
-      <>
-        <Flexbox container justifyContent="space-between">
-          <Flexbox container item gutter={1} alignItems="center">
-            {Icon}
-            <Typography>{label}</Typography>
-          </Flexbox>
-          <Flexbox item>
-            <Switch label={label} hiddenLabel onClick={(_) => onChange()} checked={checked} />
-          </Flexbox>
-        </Flexbox>
-        {description && (
-          <Flexbox container>
+      <Grid.Container {...GRID}>
+        <Grid.Item area="icon" justify="start" align="center">
+          <>{Icon}</>
+        </Grid.Item>
+
+        <Grid.Item area="label" justify="start" align="center">
+          <Typography>{label}</Typography>
+        </Grid.Item>
+
+        <Grid.Item area="button" justify="end" align="center">
+          <Switch label={label} hiddenLabel onClick={(_) => onChange()} checked={checked} />
+        </Grid.Item>
+
+        <Grid.Item area="description">
+          {description && (
             <Typography type="secondary" color={(t) => t.color.label}>
               {description}
             </Typography>
-          </Flexbox>
-        )}
-      </>
+          )}
+        </Grid.Item>
+      </Grid.Container>
     </ControlsListItem>
   );
 };

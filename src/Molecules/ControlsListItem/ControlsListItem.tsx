@@ -10,7 +10,7 @@ const StyledListItem = styled(ListItem)`
 const StyledButton = styled(Button)`
   padding: ${(p) => p.theme.spacing.unit(4)}px;
   text-align: left;
-  span {
+  & > span {
     width: 100%;
   }
 `;

@@ -10,6 +10,17 @@ const StyledButton = styled(Button)`
   }
 `;
 
+// prettier-ignore
+const GRID = {
+  areas:[
+    ['icon', 'label', 'button'],
+    ['.', 'description', 'description'],
+  ],
+  templateColumns:['auto', '1fr', '1fr'],
+  templateRows:['auto', '1fr'],
+  gutter: {row: 1, col: 2}
+}
+
 const ControlsListItemButton: React.FC<Props> = ({
   label,
   onClick,
@@ -19,15 +30,7 @@ const ControlsListItemButton: React.FC<Props> = ({
 }) => {
   return (
     <ControlsListItem>
-      <Grid.Container
-        areas={[
-          ['icon', 'label', 'button'],
-          ['.', 'description', 'description'],
-        ]}
-        templateColumns={['auto', '1fr', '1fr']}
-        templateRows={['auto', '1fr']}
-        gutter={{ row: 1, col: 2 }}
-      >
+      <Grid.Container {...GRID}>
         <Grid.Item area="icon" justify="start" align="center">
           <>{Icon}</>
         </Grid.Item>

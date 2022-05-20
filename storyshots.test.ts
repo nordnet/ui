@@ -28,7 +28,7 @@ jest.mock('framer-motion', () => {
     useDragControls: () => ({}),
     AnimatePresence: Dummy(),
   };
-});
+})
 
 Math.random = () => 0.421;
 

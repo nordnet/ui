@@ -1,46 +1,58 @@
 import React from 'react';
-import { Flexbox, Typography, Input } from '../..';
-
-import { ControlsListItemRadio as Props } from './ControlsListItem.types';
+import { Input, Typography, CssGrid as Grid } from '../..';
 import ControlsListItem from './ControlsListItem';
+import { ControlsListItemRadio as Props } from './ControlsListItem.types';
+
+// prettier-ignore
+const GRID = {
+  areas:[
+    ['icon', 'label', 'button'],
+    ['.', 'description', 'description'],
+  ],
+  templateColumns:['auto', '1fr', '1fr'],
+  templateRows:['auto', '1fr'],
+  gutter: {row: 1, col: 2}
+}
 
 const ControlsListItemRadio: React.FC<Props> = ({
-  name,
-  label,
-  value,
-  Icon,
   checked,
-  onChange,
   description,
+  Icon,
+  label,
+  name,
+  onChange,
+  value,
 }) => {
   return (
     <ControlsListItem>
-      <>
-        <Flexbox container justifyContent="space-between">
-          <Flexbox container item gutter={1} alignItems="center">
-            {Icon}
-            <Typography>{label}</Typography>
-          </Flexbox>
+      <Grid.Container {...GRID}>
+        <Grid.Item area="icon" justify="start" align="center">
+          <>{Icon}</>
+        </Grid.Item>
 
-          <Flexbox item>
-            <Input.Radio
-              name={name}
-              value={value}
-              label={label}
-              checked={checked}
-              onChange={onChange}
-              hideLabel
-            />
-          </Flexbox>
-        </Flexbox>
-        {description && (
-          <Flexbox container>
+        <Grid.Item area="label" justify="start" align="center">
+          <Typography>{label}</Typography>
+        </Grid.Item>
+
+        <Grid.Item area="button" justify="end" align="center">
+          <Input.Radio
+            name={name}
+            value={value}
+            label={label}
+            checked={checked}
+            onChange={onChange}
+            hideLabel
+          />
+        </Grid.Item>
+
+        <Grid.Item area="description">
+          {description && (
             <Typography type="secondary" color={(t) => t.color.label}>
               {description}
             </Typography>
-          </Flexbox>
-        )}
-      </>
+          )}
+        </Grid.Item>
+      </Grid.Container>
     </ControlsListItem>
   );
 };
