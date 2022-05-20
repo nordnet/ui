@@ -1,0 +1,2939 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with multiple groups 1`] = `
+Array [
+  .c3 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "icon label button" ". description description";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  row-gap: 4px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 4px 1fr;
+  -ms-grid-columns: auto 8px 1fr 8px 1fr;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: start;
+  -ms-grid-column-align: start;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: end;
+  -ms-grid-column-align: end;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c22 {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.c5 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: icon;
+}
+
+.c7 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: label;
+}
+
+.c10 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: button;
+}
+
+.c23 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: description;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c19 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c12 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c6 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c0 {
+  display: block;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E6E;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c20 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  padding: 12px;
+}
+
+.c2 {
+  cursor: inherit;
+  width: 100%;
+}
+
+.c18 {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BDBDBD;
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c18::before,
+.c18::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c18::before {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.c18::after {
+  width: 11px;
+  height: 11px;
+}
+
+.c13 {
+  position: relative;
+}
+
+.c13:hover .c17 {
+  border-color: #424242;
+}
+
+.c16 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c16:checked + .c17::after {
+  background: #336BFF;
+}
+
+.c16[disabled] + .c17 {
+  border-color: #EBEBE8;
+}
+
+.c16:checked[disabled] + .c17 {
+  border-color: #EBEBE8;
+}
+
+.c16:checked[disabled] + .c17::after {
+  background: #EBEBE8;
+}
+
+.c16:focus + .c17::before {
+  border: 1px solid #336BFF;
+}
+
+.c21 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
+.c11 {
+  width: auto;
+  display: inline-block;
+}
+
+<li
+    className="c0 c1"
+  >
+    <label
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4 c5"
+        >
+          <svg
+            aria-hidden="true"
+            className="c6"
+            focusable="false"
+            height={16}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            width={16}
+          >
+            <path
+              clipRule="evenodd"
+              d="M5.27078 3H10.729L11.7725 7H14.229L15.7942 13H0.205566L1.77078 7H4.22731L5.27078 3ZM7.9999 9.95505L8.24904 9H7.75076L7.9999 9.95505ZM9.70557 7L9.18383 5H6.81598L6.29424 7H9.70557ZM10.316 9L9.79424 11H13.2056L12.6838 9H10.316ZM5.68383 9L6.20557 11H2.79424L3.31598 9H5.68383Z"
+              fill="currentColor"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+        <div
+          className="c4 c7"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c8"
+          >
+            VIKING
+          </span>
+        </div>
+        <div
+          className="c9 c10"
+        >
+          <div
+            className="c11"
+          >
+            <label
+              className="c12 c13"
+              hidden={false}
+            >
+              <span
+                className="Typography__Span-sc-10mju41-0 c14"
+              >
+                <div
+                  className="c15"
+                >
+                  <input
+                    checked={false}
+                    className="c16"
+                    name="VIKING"
+                    onChange={[Function]}
+                    type="radio"
+                    value="VIKING"
+                  />
+                  <div
+                    className="c17 c18"
+                  />
+                  <div
+                    className="c19"
+                  >
+                    <span
+                      className="Typography__Span-sc-10mju41-0 c20 c21"
+                    >
+                      VIKING
+                    </span>
+                  </div>
+                </div>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div
+          className="c22 c23"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c14"
+          >
+            description is good otherwise we don't understand
+          </span>
+        </div>
+      </div>
+    </label>
+  </li>,
+  .c3 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "icon label button" ". description description";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  row-gap: 4px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 4px 1fr;
+  -ms-grid-columns: auto 8px 1fr 8px 1fr;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: start;
+  -ms-grid-column-align: start;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: end;
+  -ms-grid-column-align: end;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c22 {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.c5 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: icon;
+}
+
+.c7 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: label;
+}
+
+.c10 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: button;
+}
+
+.c23 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: description;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c19 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c12 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c6 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c0 {
+  display: block;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E6E;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c20 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  padding: 12px;
+}
+
+.c2 {
+  cursor: inherit;
+  width: 100%;
+}
+
+.c18 {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BDBDBD;
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c18::before,
+.c18::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c18::before {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.c18::after {
+  width: 11px;
+  height: 11px;
+}
+
+.c13 {
+  position: relative;
+}
+
+.c13:hover .c17 {
+  border-color: #424242;
+}
+
+.c16 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c16:checked + .c17::after {
+  background: #336BFF;
+}
+
+.c16[disabled] + .c17 {
+  border-color: #EBEBE8;
+}
+
+.c16:checked[disabled] + .c17 {
+  border-color: #EBEBE8;
+}
+
+.c16:checked[disabled] + .c17::after {
+  background: #EBEBE8;
+}
+
+.c16:focus + .c17::before {
+  border: 1px solid #336BFF;
+}
+
+.c21 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
+.c11 {
+  width: auto;
+  display: inline-block;
+}
+
+<li
+    className="c0 c1"
+  >
+    <label
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4 c5"
+        >
+          <svg
+            aria-hidden="true"
+            className="c6"
+            focusable="false"
+            height={16}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            width={16}
+          >
+            <path
+              d="M12.531 1.387l.394.308a8 8 0 01-5.082 14.302l-.288-.01.017-1a5.499 5.499 0 003.481-9.672l-.188-.154-.185-.139-.644-.442 2.495-3.193zM8.163 0l.273.01-.008 1a5.499 5.499 0 00-3.481 9.672l.188.155.185.138.644.442-2.495 3.193-.394-.307A8 8 0 017.572.01l.3-.011h.291z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+        <div
+          className="c4 c7"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c8"
+          >
+            KARAM
+          </span>
+        </div>
+        <div
+          className="c9 c10"
+        >
+          <div
+            className="c11"
+          >
+            <label
+              className="c12 c13"
+              hidden={false}
+            >
+              <span
+                className="Typography__Span-sc-10mju41-0 c14"
+              >
+                <div
+                  className="c15"
+                >
+                  <input
+                    checked={false}
+                    className="c16"
+                    name="KARAM"
+                    onChange={[Function]}
+                    type="radio"
+                    value="KARAM"
+                  />
+                  <div
+                    className="c17 c18"
+                  />
+                  <div
+                    className="c19"
+                  >
+                    <span
+                      className="Typography__Span-sc-10mju41-0 c20 c21"
+                    >
+                      KARAM
+                    </span>
+                  </div>
+                </div>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div
+          className="c22 c23"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c14"
+          >
+            description is good otherwise we don't understand
+          </span>
+        </div>
+      </div>
+    </label>
+  </li>,
+  .c0 {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBE8;
+}
+
+<div
+    className="c0"
+  />,
+  .c3 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "icon label button" ". description description";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  row-gap: 4px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 4px 1fr;
+  -ms-grid-columns: auto 8px 1fr 8px 1fr;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: start;
+  -ms-grid-column-align: start;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: end;
+  -ms-grid-column-align: end;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c22 {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.c5 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: icon;
+}
+
+.c7 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: label;
+}
+
+.c10 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: button;
+}
+
+.c23 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: description;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c19 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c12 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c6 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c0 {
+  display: block;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E6E;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c20 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  padding: 12px;
+}
+
+.c2 {
+  cursor: inherit;
+  width: 100%;
+}
+
+.c18 {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BDBDBD;
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c18::before,
+.c18::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c18::before {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.c18::after {
+  width: 11px;
+  height: 11px;
+}
+
+.c13 {
+  position: relative;
+}
+
+.c13:hover .c17 {
+  border-color: #424242;
+}
+
+.c16 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c16:checked + .c17::after {
+  background: #336BFF;
+}
+
+.c16[disabled] + .c17 {
+  border-color: #EBEBE8;
+}
+
+.c16:checked[disabled] + .c17 {
+  border-color: #EBEBE8;
+}
+
+.c16:checked[disabled] + .c17::after {
+  background: #EBEBE8;
+}
+
+.c16:focus + .c17::before {
+  border: 1px solid #336BFF;
+}
+
+.c21 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
+.c11 {
+  width: auto;
+  display: inline-block;
+}
+
+<li
+    className="c0 c1"
+  >
+    <label
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4 c5"
+        >
+          <svg
+            aria-hidden="true"
+            className="c6"
+            focusable="false"
+            height={16}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            width={16}
+          >
+            <path
+              d="M7 9v7h2V9h7V7H9V0H7v7H0v2h7z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+        <div
+          className="c4 c7"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c8"
+          >
+            MICHAEL
+          </span>
+        </div>
+        <div
+          className="c9 c10"
+        >
+          <div
+            className="c11"
+          >
+            <label
+              className="c12 c13"
+              hidden={false}
+            >
+              <span
+                className="Typography__Span-sc-10mju41-0 c14"
+              >
+                <div
+                  className="c15"
+                >
+                  <input
+                    checked={false}
+                    className="c16"
+                    name="MICHAEL"
+                    onChange={[Function]}
+                    type="radio"
+                    value="MICHAEL"
+                  />
+                  <div
+                    className="c17 c18"
+                  />
+                  <div
+                    className="c19"
+                  >
+                    <span
+                      className="Typography__Span-sc-10mju41-0 c20 c21"
+                    >
+                      MICHAEL
+                    </span>
+                  </div>
+                </div>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div
+          className="c22 c23"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c14"
+          >
+            description is good otherwise we don't understand
+          </span>
+        </div>
+      </div>
+    </label>
+  </li>,
+  .c3 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "icon label button" ". description description";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  row-gap: 4px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 4px 1fr;
+  -ms-grid-columns: auto 8px 1fr 8px 1fr;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: start;
+  -ms-grid-column-align: start;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: end;
+  -ms-grid-column-align: end;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c22 {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.c5 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: icon;
+}
+
+.c7 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: label;
+}
+
+.c10 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: button;
+}
+
+.c23 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: description;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c19 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c12 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c6 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c0 {
+  display: block;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E6E;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c20 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  padding: 12px;
+}
+
+.c2 {
+  cursor: inherit;
+  width: 100%;
+}
+
+.c18 {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BDBDBD;
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c18::before,
+.c18::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c18::before {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.c18::after {
+  width: 11px;
+  height: 11px;
+}
+
+.c13 {
+  position: relative;
+}
+
+.c13:hover .c17 {
+  border-color: #424242;
+}
+
+.c16 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c16:checked + .c17::after {
+  background: #336BFF;
+}
+
+.c16[disabled] + .c17 {
+  border-color: #EBEBE8;
+}
+
+.c16:checked[disabled] + .c17 {
+  border-color: #EBEBE8;
+}
+
+.c16:checked[disabled] + .c17::after {
+  background: #EBEBE8;
+}
+
+.c16:focus + .c17::before {
+  border: 1px solid #336BFF;
+}
+
+.c21 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
+.c11 {
+  width: auto;
+  display: inline-block;
+}
+
+<li
+    className="c0 c1"
+  >
+    <label
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4 c5"
+        >
+          <svg
+            aria-hidden="true"
+            className="c6"
+            focusable="false"
+            height={16}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            width={16}
+          >
+            <path
+              d="M6 5L5 6V11L7 13H11.3401C12.3026 13 13.1285 12.3145 13.3059 11.3686L14.0559 7.36858C14.2867 6.13775 13.3424 5 12.0901 5H9V4C9 2.34315 7.65685 1 6 1V5Z"
+              fill="currentColor"
+            />
+            <path
+              d="M1 7C1 6.44772 1.44772 6 2 6H4V12C4 12.5523 3.55228 13 3 13H1V7Z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+        <div
+          className="c4 c7"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c8"
+          >
+            JESPER
+          </span>
+        </div>
+        <div
+          className="c9 c10"
+        >
+          <div
+            className="c11"
+          >
+            <label
+              className="c12 c13"
+              hidden={false}
+            >
+              <span
+                className="Typography__Span-sc-10mju41-0 c14"
+              >
+                <div
+                  className="c15"
+                >
+                  <input
+                    checked={false}
+                    className="c16"
+                    name="JESPER"
+                    onChange={[Function]}
+                    type="radio"
+                    value="JESPER"
+                  />
+                  <div
+                    className="c17 c18"
+                  />
+                  <div
+                    className="c19"
+                  >
+                    <span
+                      className="Typography__Span-sc-10mju41-0 c20 c21"
+                    >
+                      JESPER
+                    </span>
+                  </div>
+                </div>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div
+          className="c22 c23"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c14"
+          >
+            description is good otherwise we don't understand
+          </span>
+        </div>
+      </div>
+    </label>
+  </li>,
+]
+`;
+
+exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with subselector 1`] = `
+.c3 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "icon label button" ". description description";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  row-gap: 4px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 4px 1fr;
+  -ms-grid-columns: auto 8px 1fr 8px 1fr;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: start;
+  -ms-grid-column-align: start;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: end;
+  -ms-grid-column-align: end;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c22 {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.c5 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: icon;
+}
+
+.c7 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: label;
+}
+
+.c10 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: button;
+}
+
+.c23 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: description;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c19 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c12 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c6 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c0 {
+  display: block;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E6E;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c20 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  padding: 12px;
+}
+
+.c2 {
+  cursor: inherit;
+  width: 100%;
+}
+
+.c18 {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BDBDBD;
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c18::before,
+.c18::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c18::before {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.c18::after {
+  width: 11px;
+  height: 11px;
+}
+
+.c13 {
+  position: relative;
+}
+
+.c13:hover .c17 {
+  border-color: #424242;
+}
+
+.c16 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c16:checked + .c17::after {
+  background: #336BFF;
+}
+
+.c16[disabled] + .c17 {
+  border-color: #EBEBE8;
+}
+
+.c16:checked[disabled] + .c17 {
+  border-color: #EBEBE8;
+}
+
+.c16:checked[disabled] + .c17::after {
+  background: #EBEBE8;
+}
+
+.c16:focus + .c17::before {
+  border: 1px solid #336BFF;
+}
+
+.c21 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
+.c11 {
+  width: auto;
+  display: inline-block;
+}
+
+<div
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+>
+  <li
+    className="c0 c1"
+  >
+    <label
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4 c5"
+        >
+          <svg
+            aria-hidden="true"
+            className="c6"
+            focusable="false"
+            height={16}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            width={16}
+          >
+            <path
+              clipRule="evenodd"
+              d="M5.27078 3H10.729L11.7725 7H14.229L15.7942 13H0.205566L1.77078 7H4.22731L5.27078 3ZM7.9999 9.95505L8.24904 9H7.75076L7.9999 9.95505ZM9.70557 7L9.18383 5H6.81598L6.29424 7H9.70557ZM10.316 9L9.79424 11H13.2056L12.6838 9H10.316ZM5.68383 9L6.20557 11H2.79424L3.31598 9H5.68383Z"
+              fill="currentColor"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+        <div
+          className="c4 c7"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c8"
+          >
+            VIKING
+          </span>
+        </div>
+        <div
+          className="c9 c10"
+        >
+          <div
+            className="c11"
+          >
+            <label
+              className="c12 c13"
+              hidden={false}
+            >
+              <span
+                className="Typography__Span-sc-10mju41-0 c14"
+              >
+                <div
+                  className="c15"
+                >
+                  <input
+                    checked={false}
+                    className="c16"
+                    name="VIKING"
+                    onChange={[Function]}
+                    type="radio"
+                    value="VIKING"
+                  />
+                  <div
+                    className="c17 c18"
+                  />
+                  <div
+                    className="c19"
+                  >
+                    <span
+                      className="Typography__Span-sc-10mju41-0 c20 c21"
+                    >
+                      VIKING
+                    </span>
+                  </div>
+                </div>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div
+          className="c22 c23"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c14"
+          >
+            description is good otherwise we don't understand
+          </span>
+        </div>
+      </div>
+    </label>
+  </li>
+</div>
+`;
+
+exports[`Storyshots Molecules / ControlsListItem Controls list item button with icon 16 1`] = `
+.c3 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "icon label button" ". description description";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  row-gap: 4px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 4px 1fr;
+  -ms-grid-columns: auto 8px 1fr 8px 1fr;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: start;
+  -ms-grid-column-align: start;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: end;
+  -ms-grid-column-align: end;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c15 {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.c5 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: icon;
+}
+
+.c7 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: label;
+}
+
+.c10 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: button;
+}
+
+.c16 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: description;
+}
+
+.c6 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c11 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c11,
+.c11[type='button'],
+.c11[type='reset'],
+.c11[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c11::-moz-focus-inner,
+.c11[type='button']::-moz-focus-inner,
+.c11[type='reset']::-moz-focus-inner,
+.c11[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c11:-moz-focusring,
+.c11[type='button']:-moz-focusring,
+.c11[type='reset']:-moz-focusring,
+.c11[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c0 {
+  display: block;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E6E;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c12 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #336BFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c1 {
+  padding: 12px;
+}
+
+.c2 {
+  cursor: inherit;
+  width: 100%;
+}
+
+.c13:hover {
+  border-bottom: 1px solid #336BFF;
+}
+
+<li
+  className="c0 c1"
+>
+  <label
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4 c5"
+      >
+        <svg
+          aria-hidden="true"
+          className="c6"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            clipRule="evenodd"
+            d="M5.27078 3H10.729L11.7725 7H14.229L15.7942 13H0.205566L1.77078 7H4.22731L5.27078 3ZM7.9999 9.95505L8.24904 9H7.75076L7.9999 9.95505ZM9.70557 7L9.18383 5H6.81598L6.29424 7H9.70557ZM10.316 9L9.79424 11H13.2056L12.6838 9H10.316ZM5.68383 9L6.20557 11H2.79424L3.31598 9H5.68383Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        className="c4 c7"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c8"
+        >
+          label
+        </span>
+      </div>
+      <div
+        className="c9 c10"
+      >
+        <button
+          className="c11 c12 c13"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c14"
+          >
+            button text
+          </span>
+        </button>
+      </div>
+      <div
+        className="c15 c16"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c17"
+        >
+          description is good otherwise we don't understand
+        </span>
+      </div>
+    </div>
+  </label>
+</li>
+`;
+
+exports[`Storyshots Molecules / ControlsListItem Controls list item button with icon 24 1`] = `
+.c3 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "icon label button" ". description description";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  row-gap: 4px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 4px 1fr;
+  -ms-grid-columns: auto 8px 1fr 8px 1fr;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: start;
+  -ms-grid-column-align: start;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: end;
+  -ms-grid-column-align: end;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c15 {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.c5 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: icon;
+}
+
+.c7 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: label;
+}
+
+.c10 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: button;
+}
+
+.c16 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: description;
+}
+
+.c6 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c11 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c11,
+.c11[type='button'],
+.c11[type='reset'],
+.c11[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c11::-moz-focus-inner,
+.c11[type='button']::-moz-focus-inner,
+.c11[type='reset']::-moz-focus-inner,
+.c11[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c11:-moz-focusring,
+.c11[type='button']:-moz-focusring,
+.c11[type='reset']:-moz-focusring,
+.c11[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c0 {
+  display: block;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E6E;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c12 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #336BFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c1 {
+  padding: 12px;
+}
+
+.c2 {
+  cursor: inherit;
+  width: 100%;
+}
+
+.c13:hover {
+  border-bottom: 1px solid #336BFF;
+}
+
+<li
+  className="c0 c1"
+>
+  <label
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4 c5"
+      >
+        <svg
+          aria-hidden="true"
+          className="c6"
+          focusable="false"
+          height={24}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={24}
+        >
+          <path
+            d="M19 13v2h-2v-2h2z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M4 1a3 3 0 00-3 3v16a3 3 0 003 3h19V5h-4V1H4zm0 6c-.35 0-.687-.06-1-.17V20a1 1 0 001 1h17V7H4zM3 4a1 1 0 001 1h13V3H4a1 1 0 00-1 1z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        className="c4 c7"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c8"
+        >
+          label
+        </span>
+      </div>
+      <div
+        className="c9 c10"
+      >
+        <button
+          className="c11 c12 c13"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c14"
+          >
+            button text
+          </span>
+        </button>
+      </div>
+      <div
+        className="c15 c16"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c17"
+        >
+          description is good otherwise we don't understand
+        </span>
+      </div>
+    </div>
+  </label>
+</li>
+`;
+
+exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] = `
+.c18 {
+  background-color: transparent;
+}
+
+.c3 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "icon label button" ". description description";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  row-gap: 4px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 4px 1fr;
+  -ms-grid-columns: auto 8px 1fr 8px 1fr;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: start;
+  -ms-grid-column-align: start;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: end;
+  -ms-grid-column-align: end;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c24 {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.c5 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: icon;
+}
+
+.c6 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: label;
+}
+
+.c9 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: button;
+}
+
+.c25 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: description;
+}
+
+.c12 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c16 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c20 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c20 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c20 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c23 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c14 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c14,
+.c14[type='button'],
+.c14[type='reset'],
+.c14[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c14::-moz-focus-inner,
+.c14[type='button']::-moz-focus-inner,
+.c14[type='reset']::-moz-focus-inner,
+.c14[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c14:-moz-focusring,
+.c14[type='button']:-moz-focusring,
+.c14[type='reset']:-moz-focusring,
+.c14[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c0 {
+  display: block;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c21 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c26 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E6E;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  padding: 12px;
+}
+
+.c2 {
+  cursor: inherit;
+  width: 100%;
+}
+
+.c22:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c19 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 32px;
+  z-index: 400;
+  border-color: red;
+}
+
+.c11 {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.c17 {
+  height: 100%;
+  width: 100%;
+}
+
+.c15 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  color: inherit;
+}
+
+.c10 {
+  display: none;
+}
+
+<li
+  className="c0 c1"
+>
+  <label
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4 c5"
+      />
+      <div
+        className="c4 c6"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c7"
+        >
+          label
+        </span>
+      </div>
+      <div
+        className="c8 c9"
+      >
+        <div>
+          <select
+            aria-hidden="true"
+            className="c10"
+            disabled={false}
+            onChange={[Function]}
+          >
+            
+            <option
+              label="first label"
+              value="first value"
+            />
+            <option
+              label="second label"
+              value="second value"
+            />
+            <option
+              label="third label"
+              value="third value"
+            />
+          </select>
+          <div
+            className="c11"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            <div
+              className="c12"
+            >
+              <span
+                className="Typography__Span-sc-10mju41-0 c13"
+              >
+                <button
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  aria-label="Line graph: "
+                  className="c14 c15"
+                  data-testid="input-select-button"
+                  disabled={false}
+                  form=""
+                  id="graph-typ-input"
+                  onClick={[Function]}
+                  tabIndex={0}
+                  type="button"
+                >
+                  <div
+                    aria-hidden="true"
+                    className="c16 c17"
+                  >
+                    <div
+                      className="c18 c19"
+                    >
+                      <div
+                        className="c20"
+                      >
+                        <span
+                          className="Typography__Span-sc-10mju41-0 c21 c22"
+                        >
+                          first label
+                        </span>
+                        <svg
+                          aria-hidden="true"
+                          className="c23"
+                          focusable="false"
+                          height={8}
+                          preserveAspectRatio="xMidYMid meet"
+                          role="presentation"
+                          width={8}
+                        >
+                          <path
+                            d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c24 c25"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c26"
+        >
+          description is good otherwise we don't understand
+        </span>
+      </div>
+    </div>
+  </label>
+</li>
+`;
+
+exports[`Storyshots Molecules / ControlsListItem Controls list item switch 1`] = `
+.c3 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "icon label button" ". description description";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  row-gap: 4px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 4px 1fr;
+  -ms-grid-columns: auto 8px 1fr 8px 1fr;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: start;
+  -ms-grid-column-align: start;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: end;
+  -ms-grid-column-align: end;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c23 {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.c5 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: icon;
+}
+
+.c7 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: label;
+}
+
+.c10 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: button;
+}
+
+.c24 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: description;
+}
+
+.c12 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c12 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c12 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c13 {
+  box-sizing: border-box;
+}
+
+.c14 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c6 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c16 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c16,
+.c16[type='button'],
+.c16[type='reset'],
+.c16[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c16::-moz-focus-inner,
+.c16[type='button']::-moz-focus-inner,
+.c16[type='reset']::-moz-focus-inner,
+.c16[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c16:-moz-focusring,
+.c16[type='button']:-moz-focusring,
+.c16[type='reset']:-moz-focusring,
+.c16[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c0 {
+  display: block;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c15 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c25 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E6E;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  padding: 12px;
+}
+
+.c2 {
+  cursor: inherit;
+  width: 100%;
+}
+
+.c11 {
+  display: inline-block;
+}
+
+.c20 {
+  background: #FFFFFF;
+  display: block;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border: 1px solid #BDBDBD;
+  margin-top: -12px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
+  -webkit-transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
+  transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
+}
+
+.c22 {
+  display: block;
+  height: 16px;
+  width: 40px;
+  margin: 4px 0;
+  background-color: #BDBDBD;
+  border-radius: 8px;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.c18 {
+  position: relative;
+}
+
+.c17 {
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+}
+
+.c17[aria-checked='true'] .c21 {
+  background-color: #336BFF;
+}
+
+.c17[aria-checked='true'] .c19 {
+  -webkit-transform: translate(16px);
+  -ms-transform: translate(16px);
+  transform: translate(16px);
+}
+
+.c17[disabled] .c21,
+.c17[aria-readonly] .c21 {
+  background-color: #EBEBE8;
+}
+
+.c17[disabled] .c19,
+.c17[aria-readonly] .c19 {
+  border: 1px solid #EBEBE8;
+  background-color: #F5F5F5;
+}
+
+.c17[aria-checked='true'][aria-readonly] .c21 {
+  background-color: rgba(0,70,255,0.1);
+}
+
+<li
+  className="c0 c1"
+>
+  <label
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4 c5"
+      >
+        <svg
+          aria-hidden="true"
+          className="c6"
+          focusable="false"
+          height={24}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={24}
+        >
+          <path
+            d="M19 13v2h-2v-2h2z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M4 1a3 3 0 00-3 3v16a3 3 0 003 3h19V5h-4V1H4zm0 6c-.35 0-.687-.06-1-.17V20a1 1 0 001 1h17V7H4zM3 4a1 1 0 001 1h13V3H4a1 1 0 00-1 1z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        className="c4 c7"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c8"
+        >
+          label
+        </span>
+      </div>
+      <div
+        className="c9 c10"
+      >
+        <label
+          className="c11"
+        >
+          <span
+            className="c12"
+          >
+            <span
+              className="c13"
+            >
+              <div
+                className="c14"
+              >
+                <span
+                  className="Typography__Span-sc-10mju41-0 c15"
+                >
+                  label
+                </span>
+              </div>
+            </span>
+            <span
+              className="c13"
+            >
+              <button
+                aria-checked={false}
+                className="c16 c17"
+                onClick={[Function]}
+                role="switch"
+                type="button"
+              >
+                <div
+                  className="c18"
+                >
+                  <span
+                    className="c19 c20"
+                  />
+                  <span
+                    className="c21 c22"
+                  />
+                </div>
+              </button>
+            </span>
+          </span>
+        </label>
+      </div>
+      <div
+        className="c23 c24"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c25"
+        >
+          description is good otherwise we don't understand
+        </span>
+      </div>
+    </div>
+  </label>
+</li>
+`;

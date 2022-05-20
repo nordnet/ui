@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flexbox, Input, Typography, Icon, Button, Box } from '../..';
 
-const { useSelectMachineFromContext } = Input.Select;
-
 export const StyledButton = styled(Button)`
   background: ${(t) => t.theme.color.background};
 `;
@@ -34,7 +32,7 @@ const ControlsListItemSelectListItem = ({
   index: number;
   selectedItem: string | React.ReactElement;
 }) => {
-  const [state] = useSelectMachineFromContext();
+  const [state] = Input.Select.useSelectMachineFromContext();
   const option = state.context.visibleOptions[index];
   const isKeyboardNavigation = state.matches('interaction.enabled.active.navigation.keyboard');
   const { disabled } = state.context.options[index];
