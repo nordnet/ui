@@ -38,6 +38,7 @@ import News64 from './Medium/News64';
 import RiskHigh64 from './Medium/RiskHigh64';
 import RiskLow64 from './Medium/RiskLow64';
 import RiskMedium64 from './Medium/RiskMedium64';
+import Robot64 from './Medium/Robot64';
 import Security64 from './Medium/Security64';
 import StatusError64 from './Medium/StatusError64';
 import StatusFail64 from './Medium/StatusFail64';
@@ -92,6 +93,7 @@ export default {
   RiskHigh64,
   RiskLow64,
   RiskMedium64,
+  Robot64,
   Search48,
   Security64,
   StatusError64,

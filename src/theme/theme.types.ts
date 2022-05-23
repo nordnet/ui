@@ -628,6 +628,10 @@ export type ThemeColors = {
   tabTitle: string;
   /** gray800 */
   tabTitleActive: string;
+  /** teal100 */
+  newBadgeLabelBackground: string;
+  /** teal600 */
+  newBadgeLabelText: string;
   /** gray0 */
   text: string;
   /** white */

@@ -308,6 +308,9 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     tabTitle: rawColor.gray400,
     tabTitleActive: rawColor.white,
 
+    newBadgeLabelBackground: rawColor.teal100,
+    newBadgeLabelText: rawColor.teal600,
+
     text: rawColor.gray7,
     textLight: rawColor.gray0, // FIXME: to be removed later
 
