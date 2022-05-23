@@ -308,6 +308,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     tabTitle: rawColor.gray600,
     tabTitleActive: rawColor.gray800,
 
+    tealLightBackground: rawColor.teal100,
+    tealText: rawColor.teal600,
+
     text: rawColor.gray0,
     textLight: rawColor.white, // FIXME: to be removed later
 
