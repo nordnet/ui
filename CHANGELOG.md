@@ -1,3 +1,10 @@
+# [10.30.0](https://github.com/nordnet/ui/compare/v10.29.0...v10.30.0) (2022-05-23)
+
+
+### Features
+
+* add mediaUtils for media queries ([9f6301d](https://github.com/nordnet/ui/commit/9f6301d))
+
 # [10.29.0](https://github.com/nordnet/ui/compare/v10.28.1...v10.29.0) (2022-05-16)
 
 
