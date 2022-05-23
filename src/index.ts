@@ -103,6 +103,7 @@ import {
 
 /** Utils */
 import { numberWithLimit } from './common/utils';
+import { above, below, between } from './common/mediaUtils';
 
 /** Exports for types */
 export type {
@@ -209,6 +210,9 @@ export {
   VisuallyHidden,
   createTheme,
   numberWithLimit,
+  above,
+  below,
+  between,
   theme,
   useKeyPress,
   useLink,
