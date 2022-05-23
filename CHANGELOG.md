@@ -1,3 +1,11 @@
+## [10.30.2](https://github.com/nordnet/ui/compare/v10.30.1...v10.30.2) (2022-05-23)
+
+
+### Bug Fixes
+
+* robot icon index file ([cb9043b](https://github.com/nordnet/ui/commit/cb9043b))
+* storyshot ([c6be285](https://github.com/nordnet/ui/commit/c6be285))
+
 ## [10.30.1](https://github.com/nordnet/ui/compare/v10.30.0...v10.30.1) (2022-05-23)
 
 
