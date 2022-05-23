@@ -1,3 +1,12 @@
+## [10.30.1](https://github.com/nordnet/ui/compare/v10.30.0...v10.30.1) (2022-05-23)
+
+
+### Bug Fixes
+
+* new teal semantic colors and new icon and illustration Robot ([e25d572](https://github.com/nordnet/ui/commit/e25d572))
+* storyshots ([dc4bf2a](https://github.com/nordnet/ui/commit/dc4bf2a))
+* update color names to more specific ones ([e0b94dc](https://github.com/nordnet/ui/commit/e0b94dc))
+
 # [10.30.0](https://github.com/nordnet/ui/compare/v10.29.0...v10.30.0) (2022-05-23)
 
 
