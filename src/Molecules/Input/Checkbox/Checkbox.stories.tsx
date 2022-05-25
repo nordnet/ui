@@ -26,6 +26,12 @@ defaultStory.story = {
   name: 'Default',
 };
 
+export const roundStory = () => <Input.Checkbox name="example" value="green" label="Green" round />;
+
+roundStory.story = {
+  name: 'Round',
+};
+
 export const defaultStoryWithTooltip = () => (
   <Input.Checkbox name="example" value="green" label="Green" labelTooltip="Checkbox tooltip" />
 );

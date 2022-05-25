@@ -25,13 +25,14 @@ const getSize = (size: Props['size']): number => {
   return CHECKBOX_DEFAULT_SIZE;
 };
 
-const CheckmarkBox = styled(Flexbox)<{ size: number }>`
+const CheckmarkBox = styled(Flexbox)<{ size: number; round: boolean }>`
   width: ${(p) => p.theme.spacing.unit(p.size)}px;
   height: ${(p) => p.theme.spacing.unit(p.size)}px;
   border: 1px solid ${(p) => p.theme.color.inputBorder};
   background: ${(p) => p.theme.color.inputBackground};
   position: relative;
   flex-shrink: 0;
+  ${(p) => (p.round ? 'border-radius: 100%' : '')};
 
   &::before {
     content: '';
@@ -142,6 +143,7 @@ const Checkbox: CheckboxComponent & { components: typeof components } = (props) 
     width,
     readOnly,
     size = 'm',
+    round = false,
   } = props;
 
   return (
@@ -170,7 +172,13 @@ const Checkbox: CheckboxComponent & { components: typeof components } = (props) 
             }}
           />
 
-          <CheckmarkBox container alignItems="center" justifyContent="center" size={getSize(size)}>
+          <CheckmarkBox
+            container
+            alignItems="center"
+            justifyContent="center"
+            size={getSize(size)}
+            round={round}
+          >
             <OldIcon.CheckMark size={3} color="transparent" />
           </CheckmarkBox>
 
