@@ -95,6 +95,7 @@ export const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
     if (noFormField) {
       return (
         <StyledRelativeDiv
+          tabIndex={0}
           ref={ref}
           fullWidth={fullWidth}
           width={props.width}
