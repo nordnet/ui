@@ -1,12 +1,40 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled, { css, DefaultTheme } from 'styled-components';
-import { Listbox } from '@headlessui/react';
+import { Listbox, Transition } from '@headlessui/react';
 import { Props } from './ExperimentalSelect.types';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { Icon } from '../../../index';
 
+const transitionStyles = css`
+  .enter {
+    transition: all 1000ms linear;
+  }
+
+  .enterFrom {
+    opacity: 0%;
+  }
+
+  .enterTo {
+    opacity: 100%;
+  }
+
+  .leave {
+    transition: all 2000ms linear;
+  }
+
+  .leaveFrom {
+    opacity: 100%;
+  }
+
+  .leaveTo {
+    opacity: 0%;
+  }
+`;
+
 const StyledWrapper = styled.div`
   position: relative;
+
+  ${transitionStyles};
 `;
 
 const getBorderColor = (
@@ -65,18 +93,16 @@ const ChevronContainer = styled.div`
 `;
 
 const getTriangleStyles = (color: string, top: number) => css`
-   {
-    left: 12px;
-    position: absolute;
-    width: 0;
-    height: 0;
-    content: '';
-    speak: none;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    top: -${top}px;
-    border-bottom: 8px solid ${color};
-  }
+  left: 12px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  top: -${top}px;
+  border-bottom: 8px solid ${color};
 `;
 
 const ListboxOptions = styled(Listbox.Options)(
@@ -114,7 +140,6 @@ export const ExperimentalSelect = <T,>({
   size = 'm',
   success,
 }: Props<T>) => {
-  console.log(StyledWrapper);
   return (
     <Listbox value={selectedValue} onChange={onChange} disabled={disabled}>
       {({ open }) => (
@@ -131,15 +156,25 @@ export const ExperimentalSelect = <T,>({
               <Chevron open={open} />
             </ChevronContainer>
           </Listbox.Button>
-          <ListboxOptions>
-            {options.map(({ label, value }) => {
-              return (
-                <Listbox.Option as={ListboxOption} value={value}>
-                  {label}
-                </Listbox.Option>
-              );
-            })}
-          </ListboxOptions>
+          <Transition
+            enter="enter"
+            enterFrom="enterFrom"
+            enterTo="enterTo"
+            leave="leave"
+            leaveFrom="leaveFrom"
+            leaveTo="leaveTo"
+            as={Fragment}
+          >
+            <ListboxOptions>
+              {options.map(({ label, value }) => {
+                return (
+                  <Listbox.Option key={`${label}_${value}`} as={ListboxOption} value={value}>
+                    {label}
+                  </Listbox.Option>
+                );
+              })}
+            </ListboxOptions>
+          </Transition>
         </StyledWrapper>
       )}
     </Listbox>
