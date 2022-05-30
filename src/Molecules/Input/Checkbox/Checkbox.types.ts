@@ -1,4 +1,5 @@
 type Size = 's' | 'm';
+type Shape = 'square' | 'circle';
 
 export type Props = {
   autoFocus?: boolean;
@@ -31,7 +32,7 @@ export type Props = {
   onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
-  round?: boolean;
+  shape?: Shape;
 };
 
 export type InternalInputProps = {
