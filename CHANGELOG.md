@@ -1,3 +1,10 @@
+## [10.31.1](https://github.com/nordnet/ui/compare/v10.31.0...v10.31.1) (2022-05-30)
+
+
+### Bug Fixes
+
+* 🐛 don't render hidden search input on mobile screen ([8d56af1](https://github.com/nordnet/ui/commit/8d56af1))
+
 # [10.31.0](https://github.com/nordnet/ui/compare/v10.30.2...v10.31.0) (2022-05-30)
 
 
