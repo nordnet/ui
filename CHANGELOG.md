@@ -1,3 +1,10 @@
+# [10.31.0](https://github.com/nordnet/ui/compare/v10.30.2...v10.31.0) (2022-05-30)
+
+
+### Features
+
+* 🎸 Round checkbox ([40df6b8](https://github.com/nordnet/ui/commit/40df6b8))
+
 ## [10.30.2](https://github.com/nordnet/ui/compare/v10.30.1...v10.30.2) (2022-05-23)
 
 
