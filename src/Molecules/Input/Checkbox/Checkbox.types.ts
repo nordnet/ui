@@ -1,5 +1,6 @@
+import { Shape } from './Checkbox.shape';
+
 type Size = 's' | 'm';
-type Shape = 'square' | 'circle';
 
 export type Props = {
   autoFocus?: boolean;
