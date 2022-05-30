@@ -204,6 +204,7 @@ exports[`Storyshots Molecules / Input / Checkbox Checkboxes with different size 
           />
           <div
             className="c7 c8 c9"
+            shape="square"
           >
             <svg
               aria-hidden="true"
@@ -248,6 +249,7 @@ exports[`Storyshots Molecules / Input / Checkbox Checkboxes with different size 
           />
           <div
             className="c7 c8 c13"
+            shape="square"
           >
             <svg
               aria-hidden="true"
@@ -292,6 +294,7 @@ exports[`Storyshots Molecules / Input / Checkbox Checkboxes with different size 
           />
           <div
             className="c7 c8 c13"
+            shape="square"
           >
             <svg
               aria-hidden="true"
@@ -667,6 +670,7 @@ exports[`Storyshots Molecules / Input / Checkbox Default 1`] = `
         />
         <div
           className="c6 c7 c8"
+          shape="square"
         >
           <svg
             aria-hidden="true"
@@ -880,6 +884,7 @@ Array [
           />
           <div
             className="c6 c7 c8"
+            shape="square"
           >
             <svg
               aria-hidden="true"
@@ -1125,6 +1130,7 @@ Array [
           />
           <div
             className="c6 c7 c8"
+            shape="square"
           >
             <svg
               aria-hidden="true"
@@ -1368,6 +1374,7 @@ exports[`Storyshots Molecules / Input / Checkbox Default with tooltip 1`] = `
         />
         <div
           className="c6 c7 c8"
+          shape="square"
         >
           <svg
             aria-hidden="true"
@@ -1610,6 +1617,7 @@ exports[`Storyshots Molecules / Input / Checkbox Default with tooltip with a lon
         />
         <div
           className="c6 c7 c8"
+          shape="square"
         >
           <svg
             aria-hidden="true"
@@ -1958,6 +1966,7 @@ Array [
                 />
                 <div
                   className="c10 c11 c12"
+                  shape="square"
                 >
                   <svg
                     aria-hidden="true"
@@ -2019,6 +2028,7 @@ Array [
                 />
                 <div
                   className="c10 c11 c12"
+                  shape="square"
                 >
                   <svg
                     aria-hidden="true"
@@ -2079,6 +2089,7 @@ Array [
                 />
                 <div
                   className="c10 c11 c12"
+                  shape="square"
                 >
                   <svg
                     aria-hidden="true"
@@ -2290,6 +2301,7 @@ exports[`Storyshots Molecules / Input / Checkbox Element as label 1`] = `
         />
         <div
           className="c6 c7 c8"
+          shape="square"
         >
           <svg
             aria-hidden="true"
@@ -2552,6 +2564,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
               />
               <div
                 className="c11 c12 c13"
+                shape="square"
               >
                 <svg
                   aria-hidden="true"
@@ -2596,6 +2609,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
               />
               <div
                 className="c11 c12 c13"
+                shape="square"
               >
                 <svg
                   aria-hidden="true"
@@ -2640,6 +2654,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group 1`] = `
               />
               <div
                 className="c11 c12 c13"
+                shape="square"
               >
                 <svg
                   aria-hidden="true"
@@ -2952,6 +2967,7 @@ Array [
                 />
                 <div
                   className="c14 c15 c16"
+                  shape="square"
                 >
                   <svg
                     aria-hidden="true"
@@ -2996,6 +3012,7 @@ Array [
                 />
                 <div
                   className="c14 c15 c16"
+                  shape="square"
                 >
                   <svg
                     aria-hidden="true"
@@ -3040,6 +3057,7 @@ Array [
                 />
                 <div
                   className="c14 c15 c16"
+                  shape="square"
                 >
                   <svg
                     aria-hidden="true"
@@ -3350,6 +3368,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
               />
               <div
                 className="c14 c15 c16"
+                shape="square"
               >
                 <svg
                   aria-hidden="true"
@@ -3394,6 +3413,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
               />
               <div
                 className="c14 c15 c16"
+                shape="square"
               >
                 <svg
                   aria-hidden="true"
@@ -3438,6 +3458,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with a label tooltip
               />
               <div
                 className="c14 c15 c16"
+                shape="square"
               >
                 <svg
                   aria-hidden="true"
@@ -3717,6 +3738,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
               />
               <div
                 className="c11 c12 c13"
+                shape="square"
               >
                 <svg
                   aria-hidden="true"
@@ -3763,6 +3785,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
               />
               <div
                 className="c11 c12 c13"
+                shape="square"
               >
                 <svg
                   aria-hidden="true"
@@ -3809,6 +3832,7 @@ exports[`Storyshots Molecules / Input / Checkbox In a group with error 1`] = `
               />
               <div
                 className="c11 c12 c13"
+                shape="square"
               >
                 <svg
                   aria-hidden="true"
@@ -4018,6 +4042,7 @@ exports[`Storyshots Molecules / Input / Checkbox On a coloured background 1`] = 
           />
           <div
             className="c7 c8 c9"
+            shape="square"
           >
             <svg
               aria-hidden="true"
@@ -4325,6 +4350,7 @@ Array [
                 />
                 <div
                   className="c10 c11 c12"
+                  shape="square"
                 >
                   <svg
                     aria-hidden="true"
@@ -4386,6 +4412,7 @@ Array [
                 />
                 <div
                   className="c10 c11 c12"
+                  shape="square"
                 >
                   <svg
                     aria-hidden="true"
@@ -4595,6 +4622,7 @@ exports[`Storyshots Molecules / Input / Checkbox With all actions 1`] = `
         />
         <div
           className="c6 c7 c8"
+          shape="square"
         >
           <svg
             aria-hidden="true"
@@ -4805,6 +4833,7 @@ exports[`Storyshots Molecules / Input / Checkbox With an error if not checked 1`
         />
         <div
           className="c6 c7 c8"
+          shape="square"
         >
           <svg
             aria-hidden="true"
@@ -5004,6 +5033,7 @@ exports[`Storyshots Molecules / Input / Checkbox With auto focus 1`] = `
         />
         <div
           className="c6 c7 c8"
+          shape="square"
         >
           <svg
             aria-hidden="true"
@@ -5193,6 +5223,7 @@ Array [
           />
           <div
             className="c6 c7 c8"
+            shape="square"
           >
             <svg
               aria-hidden="true"
@@ -5387,6 +5418,7 @@ exports[`Storyshots Molecules / Input / Checkbox With default checked 1`] = `
         />
         <div
           className="c6 c7 c8"
+          shape="square"
         >
           <svg
             aria-hidden="true"
