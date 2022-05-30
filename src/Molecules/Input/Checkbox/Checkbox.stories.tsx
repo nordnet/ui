@@ -26,11 +26,11 @@ defaultStory.story = {
   name: 'Default',
 };
 
-export const roundStory = () => (
+export const circleStory = () => (
   <Input.Checkbox name="example" value="green" label="Green" shape="circle" />
 );
 
-roundStory.story = {
+circleStory.story = {
   name: 'Circle',
 };
 
