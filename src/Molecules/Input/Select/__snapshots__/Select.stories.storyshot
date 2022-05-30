@@ -7929,6 +7929,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
       className="c2"
       onBlur={[Function]}
       onFocus={[Function]}
+      tabIndex={0}
       width="300px"
     >
       <div
@@ -8393,6 +8394,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
       className="c2"
       onBlur={[Function]}
       onFocus={[Function]}
+      tabIndex={0}
       width="300px"
     >
       <div
@@ -8846,6 +8848,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
       className="c2"
       onBlur={[Function]}
       onFocus={[Function]}
+      tabIndex={0}
       width="150px"
     >
       <div
@@ -9308,6 +9311,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
       className="c2"
       onBlur={[Function]}
       onFocus={[Function]}
+      tabIndex={0}
       width="250px"
     >
       <div
@@ -9772,6 +9776,7 @@ exports[`Storyshots Molecules / Input / Select List Positioned To The Left 1`] =
       className="c2"
       onBlur={[Function]}
       onFocus={[Function]}
+      tabIndex={0}
       width="300px"
     >
       <div

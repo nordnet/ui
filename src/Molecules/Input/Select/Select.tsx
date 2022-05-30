@@ -84,7 +84,7 @@ const Select = (props: Props) => {
   const isFullscreenOnMobile = smallScreen && props.fullscreenOnMobile && !props.withPortal;
 
   const isDisableSearchComponent =
-    isFullscreenOnMobile && !props.showSearch ? true : props.disableSearchComponent;
+    smallScreen && !props.showSearch ? true : props.disableSearchComponent;
 
   /******      Machine instantiation      ******/
   const machineHandlers = useMachine(SelectMachine, {
