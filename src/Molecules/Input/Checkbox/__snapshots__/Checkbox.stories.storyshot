@@ -318,6 +318,194 @@ exports[`Storyshots Molecules / Input / Checkbox Checkboxes with different size 
 </div>
 `;
 
+exports[`Storyshots Molecules / Input / Checkbox Circle 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E6E;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BDBDBD;
+  background: #FFFFFF;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 100%;
+}
+
+.c8::before {
+  content: '';
+  display: block;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2:hover .c7 {
+  border-color: #424242;
+}
+
+.c5 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c5:checked + .c7 {
+  border-color: #336BFF;
+  background: #336BFF;
+}
+
+.c5:checked + .c7 svg {
+  fill: #FFFFFF;
+}
+
+.c5[disabled] + .c7 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c7 {
+  border-color: #EBEBE8;
+  background: #EBEBE8;
+}
+
+.c5:focus + .c7::before {
+  border: 1px solid #336BFF;
+}
+
+.c11 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1 c2"
+    hidden={false}
+  >
+    <span
+      className="Typography__Span-sc-10mju41-0 c3"
+    >
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          name="example"
+          type="checkbox"
+          value="green"
+        />
+        <div
+          className="c6 c7 c8"
+          shape="circle"
+        >
+          <svg
+            aria-hidden="true"
+            className="c9"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+            />
+          </svg>
+        </div>
+        <span
+          className="Typography__Span-sc-10mju41-0 c10 c11"
+        >
+          Green
+        </span>
+      </div>
+    </span>
+  </label>
+</div>
+`;
+
 exports[`Storyshots Molecules / Input / Checkbox Default 1`] = `
 .c4 {
   box-sizing: border-box;
