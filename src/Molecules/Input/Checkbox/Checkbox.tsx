@@ -117,7 +117,9 @@ const components = {
   CheckmarkBox,
 };
 
-const Checkbox: CheckboxComponent & { components: typeof components } = (props) => {
+const Checkbox: CheckboxComponent & { components: typeof components; Shape: typeof Shape } = (
+  props,
+) => {
   const {
     autoFocus,
     checked,
@@ -201,5 +203,6 @@ const Checkbox: CheckboxComponent & { components: typeof components } = (props) 
 };
 
 Checkbox.components = components;
+Checkbox.Shape = Shape;
 
 export default Checkbox;
