@@ -1,3 +1,10 @@
+## [10.31.2](https://github.com/nordnet/ui/compare/v10.31.1...v10.31.2) (2022-05-31)
+
+
+### Bug Fixes
+
+* 🐛 export shape enum on checkbox ([77302b8](https://github.com/nordnet/ui/commit/77302b8))
+
 ## [10.31.1](https://github.com/nordnet/ui/compare/v10.31.0...v10.31.1) (2022-05-30)
 
 
