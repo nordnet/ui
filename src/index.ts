@@ -169,7 +169,7 @@ export {
   Modal,
   MultiStepProgress,
   Number,
-  OldIcon,
+  /** @deprecated */ OldIcon,
   PageHeaderCard,
   PageWrapper,
   Pagination,
