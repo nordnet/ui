@@ -558,8 +558,12 @@ export type ThemeColors = {
   searchText: string;
   /** gray5 */
   selectionCardBorder: string;
-  /** gray7 */
+  /** gray100 */
   segmentedControlBackground: string;
+  /** white */
+  segmentedControlBackgroundSelected: string;
+  /** gray100 */
+  segmentedControlBorder: string;
   /** gray2 */
   selectionCardText: string;
   /** white */
