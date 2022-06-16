@@ -1,3 +1,10 @@
+## [10.31.3](https://github.com/nordnet/ui/compare/v10.31.2...v10.31.3) (2022-06-16)
+
+
+### Bug Fixes
+
+* update style for segmentedcontrol to new designs ([968c6ca](https://github.com/nordnet/ui/commit/968c6ca))
+
 ## [10.31.2](https://github.com/nordnet/ui/compare/v10.31.1...v10.31.2) (2022-05-31)
 
 
