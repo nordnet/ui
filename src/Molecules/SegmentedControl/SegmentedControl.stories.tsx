@@ -16,7 +16,7 @@ export default {
 };
 
 export const Default = () => (
-  <div style={{ backgroundColor: 'white', width: '50%', margin: '50px', height: '100%' }}>
+  <div style={{ backgroundColor: 'green', width: '50%', margin: '50px', height: '100%' }}>
     <SegmentedControl>
       <SegmentedControl.Item itemId={0} onItemClick={action('clicked item 0')}>
         Option 1
@@ -32,7 +32,7 @@ export const Default = () => (
 );
 
 export const LastItemSelected = () => (
-  <div style={{ backgroundColor: 'white', width: '110px', margin: '50px', height: '100%' }}>
+  <div style={{ backgroundColor: 'green', width: '110px', margin: '50px', height: '100%' }}>
     <SegmentedControl selectedInitially={1}>
       <SegmentedControl.Item itemId={0} onItemClick={action('clicked item 0')}>
         %
@@ -49,7 +49,7 @@ export const controlledBehaviour = () => {
     const [selected, setSelected] = useState(0);
 
     return (
-      <div style={{ backgroundColor: 'white', width: '250px', margin: '50px', height: '100%' }}>
+      <div style={{ backgroundColor: 'green', width: '250px', margin: '50px', height: '100%' }}>
         <SegmentedControl selected={selected} onClick={(_, itemId) => setSelected(itemId)}>
           <SegmentedControl.Item itemId={0}>Option 1</SegmentedControl.Item>
           <SegmentedControl.Item itemId={1}>Option 2</SegmentedControl.Item>
@@ -62,7 +62,7 @@ export const controlledBehaviour = () => {
 };
 
 export const disabled = () => (
-  <div style={{ backgroundColor: 'white', width: '50%', margin: '50px', height: '100%' }}>
+  <div style={{ backgroundColor: 'green', width: '50%', margin: '50px', height: '100%' }}>
     <SegmentedControl disabled>
       <SegmentedControl.Item itemId={0} onItemClick={action('clicked item 0')}>
         Option 1
@@ -79,7 +79,7 @@ export const controlledDisabled = () => {
     const [selected, setSelected] = useState(0);
 
     return (
-      <div style={{ backgroundColor: 'white', width: '250px', margin: '50px', height: '100%' }}>
+      <div style={{ backgroundColor: 'green', width: '250px', margin: '50px', height: '100%' }}>
         <SegmentedControl disabled selected={selected} onClick={(_, itemId) => setSelected(itemId)}>
           <SegmentedControl.Item itemId={0}>Option 1</SegmentedControl.Item>
           <SegmentedControl.Item itemId={1}>Option 2</SegmentedControl.Item>

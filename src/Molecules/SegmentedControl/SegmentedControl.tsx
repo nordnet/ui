@@ -14,16 +14,11 @@ const Overlay = styled.div<OverlayProps>`
   width: ${(p) => (p.$count === 0 ? 100 : 100 / p.$count)}%;
   height: ${(p) => p.theme.spacing.unit(8)}px;
   background-color: ${(p) =>
-    p.disabled ? p.theme.color.disabledBackground : p.theme.color.inputBackground};
+    p.disabled
+      ? p.theme.color.disabledBackground
+      : p.theme.color.segmentedControlBackgroundSelected};
   left: ${(p) => (p.$count === 0 ? 0 : p.$selected * (100 / p.$count))}%;
-  margin: -1px 0 0 0;
   pointer-events: none;
-  ${(p) =>
-    !p.disabled &&
-    `
-    border: 1px solid ${p.theme.color.sliderBackgroundColor};
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.07);
-  `}
   transition: all 0.3s ease;
 `;
 
@@ -41,6 +36,12 @@ const Button = styled.button`
   padding: 0;
   background-color: transparent;
   cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
+  border-top: 2px solid ${(p) => p.theme.color.segmentedControlBorder};
+  border-bottom: 2px solid ${(p) => p.theme.color.segmentedControlBorder};
+  border-left: ${(p) =>
+    p.theme.isDarkMode ? `1px solid ${p.theme.color.segmentedControlBorder}` : ''};
+  border-right: ${(p) =>
+    p.theme.isDarkMode ? `1px solid ${p.theme.color.segmentedControlBorder}` : ''};
 `;
 
 const SegmentedControlContainer = styled(Flexbox)`
@@ -48,6 +49,14 @@ const SegmentedControlContainer = styled(Flexbox)`
   background-color: ${(p) => p.theme.color.segmentedControlBackground};
   height: ${(p) => p.theme.spacing.unit(8)}px;
   margin: ${(p) => p.theme.spacing.unit(0.5)}px;
+  border-left: ${(p) =>
+    p.theme.isDarkMode
+      ? `1px solid ${p.theme.color.segmentedControlBorder}`
+      : `2px solid ${p.theme.color.segmentedControlBorder}`};
+  border-right: ${(p) =>
+    p.theme.isDarkMode
+      ? `1px solid ${p.theme.color.segmentedControlBorder}`
+      : `2px solid ${p.theme.color.segmentedControlBorder}`};
 `;
 
 const StyledFlexbox = styled(Flexbox)`

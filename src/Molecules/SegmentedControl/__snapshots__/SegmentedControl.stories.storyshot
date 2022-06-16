@@ -41,10 +41,7 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Behaviour 1`] = `
   height: 32px;
   background-color: #FFFFFF;
   left: 0%;
-  margin: -1px 0 0 0;
   pointer-events: none;
-  border: 1px solid #EBEBE8;
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.07);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -69,6 +66,8 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Behaviour 1`] = `
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+  border-top: 2px solid #F5F5F5;
+  border-bottom: 2px solid #F5F5F5;
 }
 
 .c5[aria-checked='true'] {
@@ -80,6 +79,8 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Behaviour 1`] = `
   background-color: #F5F5F5;
   height: 32px;
   margin: 2px;
+  border-left: 2px solid #F5F5F5;
+  border-right: 2px solid #F5F5F5;
 }
 
 .c4 {
@@ -90,7 +91,7 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Behaviour 1`] = `
 <div
   style={
     Object {
-      "backgroundColor": "white",
+      "backgroundColor": "green",
       "height": "100%",
       "margin": "50px",
       "width": "250px",
@@ -289,7 +290,6 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Disabled 1`] = `
   height: 32px;
   background-color: #EBEBE8;
   left: 0%;
-  margin: -1px 0 0 0;
   pointer-events: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -315,6 +315,8 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Disabled 1`] = `
   padding: 0;
   background-color: transparent;
   cursor: not-allowed;
+  border-top: 2px solid #F5F5F5;
+  border-bottom: 2px solid #F5F5F5;
 }
 
 .c5[aria-checked='true'] {
@@ -326,6 +328,8 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Disabled 1`] = `
   background-color: #F5F5F5;
   height: 32px;
   margin: 2px;
+  border-left: 2px solid #F5F5F5;
+  border-right: 2px solid #F5F5F5;
 }
 
 .c4 {
@@ -336,7 +340,7 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Disabled 1`] = `
 <div
   style={
     Object {
-      "backgroundColor": "white",
+      "backgroundColor": "green",
       "height": "100%",
       "margin": "50px",
       "width": "250px",
@@ -464,10 +468,7 @@ exports[`Storyshots Molecules / SegmentedControl Default 1`] = `
   height: 32px;
   background-color: #FFFFFF;
   left: 0%;
-  margin: -1px 0 0 0;
   pointer-events: none;
-  border: 1px solid #EBEBE8;
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.07);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -492,6 +493,8 @@ exports[`Storyshots Molecules / SegmentedControl Default 1`] = `
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+  border-top: 2px solid #F5F5F5;
+  border-bottom: 2px solid #F5F5F5;
 }
 
 .c5[aria-checked='true'] {
@@ -503,6 +506,8 @@ exports[`Storyshots Molecules / SegmentedControl Default 1`] = `
   background-color: #F5F5F5;
   height: 32px;
   margin: 2px;
+  border-left: 2px solid #F5F5F5;
+  border-right: 2px solid #F5F5F5;
 }
 
 .c4 {
@@ -513,7 +518,7 @@ exports[`Storyshots Molecules / SegmentedControl Default 1`] = `
 <div
   style={
     Object {
-      "backgroundColor": "white",
+      "backgroundColor": "green",
       "height": "100%",
       "margin": "50px",
       "width": "50%",
@@ -624,7 +629,6 @@ exports[`Storyshots Molecules / SegmentedControl Disabled 1`] = `
   height: 32px;
   background-color: #EBEBE8;
   left: 0%;
-  margin: -1px 0 0 0;
   pointer-events: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -650,6 +654,8 @@ exports[`Storyshots Molecules / SegmentedControl Disabled 1`] = `
   padding: 0;
   background-color: transparent;
   cursor: not-allowed;
+  border-top: 2px solid #F5F5F5;
+  border-bottom: 2px solid #F5F5F5;
 }
 
 .c5[aria-checked='true'] {
@@ -661,6 +667,8 @@ exports[`Storyshots Molecules / SegmentedControl Disabled 1`] = `
   background-color: #F5F5F5;
   height: 32px;
   margin: 2px;
+  border-left: 2px solid #F5F5F5;
+  border-right: 2px solid #F5F5F5;
 }
 
 .c4 {
@@ -671,7 +679,7 @@ exports[`Storyshots Molecules / SegmentedControl Disabled 1`] = `
 <div
   style={
     Object {
-      "backgroundColor": "white",
+      "backgroundColor": "green",
       "height": "100%",
       "margin": "50px",
       "width": "50%",
@@ -765,10 +773,7 @@ exports[`Storyshots Molecules / SegmentedControl Last Item Selected 1`] = `
   height: 32px;
   background-color: #FFFFFF;
   left: 50%;
-  margin: -1px 0 0 0;
   pointer-events: none;
-  border: 1px solid #EBEBE8;
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.07);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -793,6 +798,8 @@ exports[`Storyshots Molecules / SegmentedControl Last Item Selected 1`] = `
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+  border-top: 2px solid #F5F5F5;
+  border-bottom: 2px solid #F5F5F5;
 }
 
 .c5[aria-checked='true'] {
@@ -804,6 +811,8 @@ exports[`Storyshots Molecules / SegmentedControl Last Item Selected 1`] = `
   background-color: #F5F5F5;
   height: 32px;
   margin: 2px;
+  border-left: 2px solid #F5F5F5;
+  border-right: 2px solid #F5F5F5;
 }
 
 .c4 {
@@ -814,7 +823,7 @@ exports[`Storyshots Molecules / SegmentedControl Last Item Selected 1`] = `
 <div
   style={
     Object {
-      "backgroundColor": "white",
+      "backgroundColor": "green",
       "height": "100%",
       "margin": "50px",
       "width": "110px",

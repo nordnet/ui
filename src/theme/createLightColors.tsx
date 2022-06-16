@@ -261,7 +261,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     searchBackground: rawColor.gray1,
     searchText: rawColor.gray7,
 
-    segmentedControlBackground: rawColor.gray7,
+    segmentedControlBackground: rawColor.gray100,
+    segmentedControlBackgroundSelected: rawColor.white,
+    segmentedControlBorder: rawColor.gray100,
 
     selectionCardBorder: rawColor.gray5,
     selectionCardText: rawColor.gray2,
