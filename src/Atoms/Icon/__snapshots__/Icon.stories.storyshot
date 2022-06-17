@@ -7252,6 +7252,41 @@ Array [
       aria-hidden="true"
       className="c0"
       focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={16}
+    >
+      <path
+        d="M10 3V5.82843L12 3.82843V16H14V3.82843L16 5.82843V3L13 0L10 3Z M8 7H6V16H8V7Z M0 11H2V16H0V11Z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  color: #336BFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
       height={24}
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
@@ -25462,6 +25497,45 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             d="M7 23v-6H1v-2h6V9H1V7h6V1h2v6h6V1h2v6h6v2h-6v6h6v2h-6v6h-2v-6H9v6H7zm8-8V9H9v6h6z"
             fill="currentColor"
             fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
+        Growth16
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            d="M10 3V5.82843L12 3.82843V16H14V3.82843L16 5.82843V3L13 0L10 3Z M8 7H6V16H8V7Z M0 11H2V16H0V11Z"
+            fill="currentColor"
           />
         </svg>
       </div>
