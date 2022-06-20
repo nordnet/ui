@@ -38,3 +38,18 @@ export const variants = () => (
 variants.story = {
   name: 'Different variants',
 };
+export const delay = () => (
+  <Display
+    title="Skeleton with delay"
+    items={[
+      {
+        title: 'Rect',
+        component: <Skeleton variant="rect" width="100px" height={25} delay />,
+      },
+    ]}
+  />
+);
+
+delay.story = {
+  name: 'Skeleton with delay',
+};

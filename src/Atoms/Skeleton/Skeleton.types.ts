@@ -11,6 +11,7 @@ export type Props = {
   width?: StringOrNumber;
   /** @default 'text' */
   variant?: 'text' | 'rect' | 'circle';
+  delay?: boolean | number;
 };
 
 export type SkeletonComponent = React.FunctionComponent<Props>;
