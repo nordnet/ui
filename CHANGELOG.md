@@ -1,3 +1,15 @@
+# [10.32.0](https://github.com/nordnet/ui/compare/v10.31.3...v10.32.0) (2022-06-20)
+
+
+### Bug Fixes
+
+* name ([18607c7](https://github.com/nordnet/ui/commit/18607c7))
+
+
+### Features
+
+* add growth16 icon ([9498164](https://github.com/nordnet/ui/commit/9498164))
+
 ## [10.31.3](https://github.com/nordnet/ui/compare/v10.31.2...v10.31.3) (2022-06-16)
 
 
