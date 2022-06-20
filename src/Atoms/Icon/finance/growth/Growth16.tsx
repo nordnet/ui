@@ -3,7 +3,7 @@ import React from 'react';
 import { IconBase } from '../../IconBase';
 import { IconProps } from '../../IconBase.types';
 
-const Growth24: React.FC<IconProps> = (props) => {
+const Growth16: React.FC<IconProps> = (props) => {
   return (
     <IconBase {...props} width={16} height={16}>
       <path
@@ -14,6 +14,6 @@ const Growth24: React.FC<IconProps> = (props) => {
   );
 };
 
-Growth24.displayName = 'Icon.Growth';
+Growth16.displayName = 'Icon.Growth';
 
-export default Growth24;
+export default Growth16;
