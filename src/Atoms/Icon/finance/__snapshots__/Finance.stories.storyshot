@@ -439,6 +439,36 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       <span
         className="Typography__Span-sc-10mju41-0 c4"
       >
+        Growth16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M10 3V5.82843L12 3.82843V16H14V3.82843L16 5.82843V3L13 0L10 3Z M8 7H6V16H8V7Z M0 11H2V16H0V11Z"
+        fill="currentColor"
+      />
+      <title>
+        10
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c4"
+      >
         Market16
       </span>
     </div>
@@ -458,7 +488,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        10
+        11
       </title>
     </svg>
   </div>
@@ -494,7 +524,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        11
+        12
       </title>
     </svg>
   </div>
@@ -526,7 +556,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        12
+        13
       </title>
     </svg>
   </div>
@@ -562,7 +592,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
         fill="currentColor"
       />
       <title>
-        13
+        14
       </title>
     </svg>
   </div>
@@ -592,7 +622,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
         fill="currentColor"
       />
       <title>
-        14
+        15
       </title>
     </svg>
   </div>
@@ -622,7 +652,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
         fill="currentColor"
       />
       <title>
-        15
+        16
       </title>
     </svg>
   </div>
@@ -666,7 +696,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        16
+        17
       </title>
     </svg>
   </div>
@@ -696,7 +726,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
         fill="currentColor"
       />
       <title>
-        17
+        18
       </title>
     </svg>
   </div>
@@ -726,7 +756,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
         fill="currentColor"
       />
       <title>
-        18
+        19
       </title>
     </svg>
   </div>
@@ -756,7 +786,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
         fill="currentColor"
       />
       <title>
-        19
+        20
       </title>
     </svg>
   </div>
@@ -792,7 +822,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        20
+        21
       </title>
     </svg>
   </div>
