@@ -11,6 +11,11 @@ export type Props = {
   width?: StringOrNumber;
   /** @default 'text' */
   variant?: 'text' | 'rect' | 'circle';
+  /**
+   * Number as value will translate to milliseconds .
+   * This props is false by default .
+   * If true, the default delay is 1000ms
+   */
   delay?: boolean | number;
 };
 

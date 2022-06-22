@@ -21,7 +21,7 @@ const getSize = (x: StringOrNumber, theme: Theme) => {
   return isNumber(x) ? `${theme.spacing.unit(x)}px` : x;
 };
 
-const getDelay = (delay?: boolean | number) => {
+const deriveDelayFromProps = (delay?: boolean | number) => {
   if (typeof delay === 'number') {
     return delay;
   }
@@ -68,11 +68,13 @@ export const Skeleton: SkeletonComponent = React.forwardRef<HTMLElement, Props>(
     width,
     ref,
   };
-
   useEffect(() => {
     const timer = setTimeout(() => {
+      if (noDelay) {
+        return;
+      }
       setRenderSkeleton(true);
-    }, getDelay(delay));
+    }, deriveDelayFromProps(delay));
     return () => clearTimeout(timer);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
