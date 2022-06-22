@@ -690,6 +690,8 @@ export type ThemeColors = {
   sfdrArticle9: string;
   /** pink100 */
   popularBadgeBackground: string;
+  /** pink */
+  popularBadgeText: string;
   /** gray800 */
   periodScrollButtonBackground: string;
   /** gray100 */
