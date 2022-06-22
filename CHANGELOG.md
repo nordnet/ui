@@ -1,3 +1,10 @@
+# [10.33.0](https://github.com/nordnet/ui/compare/v10.32.0...v10.33.0) (2022-06-22)
+
+
+### Features
+
+* new colors for popular badge test ([9055b50](https://github.com/nordnet/ui/commit/9055b50))
+
 # [10.32.0](https://github.com/nordnet/ui/compare/v10.31.3...v10.32.0) (2022-06-20)
 
 
