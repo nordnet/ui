@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import styled from 'styled-components';
 
-import { Flexbox } from '../..';
+import { Flexbox, Typography } from '../..';
 import { Height, Width } from './Flexbox.types';
 
 const Content = styled.div`
@@ -56,6 +56,34 @@ export const withCustomGutter = () => (
       <Content>Col 2</Content>
     </Flexbox>
   </Flexbox>
+);
+
+export const withCustomGap = () => (
+  <>
+    <Typography type="title3">With gap as unit</Typography>
+    <Flexbox container gap={5}>
+      {new Array(10).fill(undefined).map((_, index) => (
+        <Content style={{ width: '200px' }}>{index}</Content>
+      ))}
+    </Flexbox>
+
+    <Typography type="title3">With gap as string</Typography>
+    <Flexbox container gap="10px 10vw" wrap="wrap">
+      {new Array(10).fill(undefined).map((_, index) => (
+        <Content style={{ width: '200px' }}>{index}</Content>
+      ))}
+    </Flexbox>
+
+    <Typography type="title3">With gap as object</Typography>
+
+    <Flexbox container gap={{ column: 5, row: 10 }} wrap="wrap">
+      {new Array(10).fill(undefined).map((_, index) => (
+        <>
+          <Content style={{ width: '200px' }}>{index}</Content>
+        </>
+      ))}
+    </Flexbox>
+  </>
 );
 
 export const withDirectionColumn = () => (
