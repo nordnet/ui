@@ -60,9 +60,8 @@ const Circle = styled(Base)`
 `;
 
 export const Skeleton: SkeletonComponent = React.forwardRef<HTMLElement, Props>((props, ref) => {
-  const [renderSkeleton, setRenderSkeleton] = useState(false);
   const { className, height, variant = 'text', width, delay = false } = props;
-  const noDelay = delay === 0 || delay === false;
+  const [noDelay, setNoDelay] = useState(delay === 0 || delay === false);
   const sharedProps = {
     className,
     width,
@@ -73,20 +72,21 @@ export const Skeleton: SkeletonComponent = React.forwardRef<HTMLElement, Props>(
       if (noDelay) {
         return;
       }
-      setRenderSkeleton(true);
+      setNoDelay(true);
     }, deriveDelayFromProps(delay));
     return () => clearTimeout(timer);
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-  if (variant === 'rect' && (noDelay || renderSkeleton)) {
+  if (variant === 'rect' && noDelay) {
     return <Rect {...sharedProps} height={height} />;
   }
 
-  if (variant === 'circle' && (noDelay || renderSkeleton)) {
+  if (variant === 'circle' && noDelay) {
     return <Circle {...sharedProps} height={height} />;
   }
 
-  if (variant === 'text' && (noDelay || renderSkeleton)) {
+  if (variant === 'text' && noDelay) {
     return <Text {...sharedProps} />;
   }
   return null;

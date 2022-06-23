@@ -43,8 +43,16 @@ export const delay = () => (
     title="Skeleton with delay"
     items={[
       {
-        title: 'Rect',
+        title: 'Without delay',
+        component: <Skeleton variant="rect" width="100px" height={25} />,
+      },
+      {
+        title: 'With default delay',
         component: <Skeleton variant="rect" width="100px" height={25} delay />,
+      },
+      {
+        title: 'With custom delay',
+        component: <Skeleton variant="rect" width="100px" height={25} delay={3000} />,
       },
     ]}
   />
