@@ -1,3 +1,10 @@
+# [10.35.0](https://github.com/nordnet/ui/compare/v10.34.0...v10.35.0) (2022-06-28)
+
+
+### Features
+
+* 🎸 add delay prop to skeleton loader ([cd30028](https://github.com/nordnet/ui/commit/cd30028))
+
 # [10.34.0](https://github.com/nordnet/ui/compare/v10.33.0...v10.34.0) (2022-06-28)
 
 
