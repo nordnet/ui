@@ -343,6 +343,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     sfdrArticle9: rawColor.sfdrArticle9,
 
     popularBadgeBackground: rawColor.pink100,
+    popularBadgeText: rawColor.pink600,
 
     joinSharevilleIllustration: rawColor.green600,
     joinSharevilleBadge: rawColor.green200,

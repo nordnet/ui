@@ -346,6 +346,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     sfdrArticle9: rawColor.sfdrArticle9,
 
     popularBadgeBackground: rawColor.pink900,
+    popularBadgeText: rawColor.pink500,
 
     joinSharevilleIllustration: rawColor.green200,
     joinSharevilleBadge: rawColor.green800,
