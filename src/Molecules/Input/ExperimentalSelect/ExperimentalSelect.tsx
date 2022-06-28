@@ -3,11 +3,11 @@ import styled, { css, DefaultTheme } from 'styled-components';
 import { Listbox, Transition } from '@headlessui/react';
 import { Props } from './ExperimentalSelect.types';
 import NormalizedElements from '../../../common/NormalizedElements';
-import { Icon } from '../../../index';
+import { Icon, Typography } from '../../../index';
 
 const transitionStyles = css`
   .enter {
-    transition: all 1000ms linear;
+    transition: all 100ms linear;
   }
 
   .enterFrom {
@@ -19,7 +19,7 @@ const transitionStyles = css`
   }
 
   .leave {
-    transition: all 2000ms linear;
+    transition: all 100ms linear;
   }
 
   .leaveFrom {
@@ -31,10 +31,19 @@ const transitionStyles = css`
   }
 `;
 
-const StyledWrapper = styled.div`
-  position: relative;
+const StyledWrapper = styled.div<{ $width?: string }>(
+  ({ $width }) => css`
+    position: relative;
+    ${$width ? `width: ${$width}` : ''};
 
-  ${transitionStyles};
+    ${transitionStyles};
+  `,
+);
+
+const OptionLabel = styled(Typography)<{}>`
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 `;
 
 const getBorderColor = (
@@ -69,6 +78,11 @@ const StyledButton = styled(NormalizedElements.Button)<{
     height: ${$size === 'm' ? 40 : 32}px;
 
     border: 1px solid ${getBorderColor(theme, $open, $error, $success)};
+
+    &:disabled {
+      background-color: ${theme.color.disabledBackground};
+      cursor: not-allowed;
+    }
 
     &:hover:not(:disabled, [aria-expanded='true'], :focus) {
       border-color: ${theme.color.inputBorderHover};
@@ -105,15 +119,16 @@ const getTriangleStyles = (color: string, top: number) => css`
   border-bottom: 8px solid ${color};
 `;
 
-const ListboxOptions = styled(Listbox.Options)(
-  ({ theme }) => css`
+const ListboxOptions = styled(Listbox.Options)<{ $height: string }>(
+  ({ theme, $height }) => css`
     z-index: 4;
     background-color: ${theme.color.inputBackground};
     border: ${theme.color.inputBorder} 1px solid;
     position: absolute;
     margin: ${theme.spacing.unit(2)}px 0 0 0;
     width: 100%;
-    padding: 0;
+    max-height: ${$height};
+    padding: 4px 0;
     box-sizing: border-box;
     :before {
       ${getTriangleStyles(theme.color.inputBorder, 8)}
@@ -124,10 +139,19 @@ const ListboxOptions = styled(Listbox.Options)(
   `,
 );
 
-const ListboxOption = styled.li(
-  ({ theme }) => css`
+const ListboxOption = styled.li<{ $active: boolean }>(
+  ({ theme, $active }) => css`
     list-style-type: none;
+    height: 24px;
     padding: ${theme.spacing.unit(1)}px ${theme.spacing.unit(3)}px;
+    background: ${$active ? theme.color.inputHover : ''};
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   `,
 );
 
@@ -139,11 +163,26 @@ export const ExperimentalSelect = <T,>({
   selectedValue,
   size = 'm',
   success,
+  width = '200px',
+  hideLabel = false,
+  label: formLabel,
+  extraInfo,
+  height = '240px',
+  multiple,
 }: Props<T>) => {
+  const selectedLabel = options.find(({ value }) => value === selectedValue);
   return (
-    <Listbox value={selectedValue} onChange={onChange} disabled={disabled}>
+    <Listbox value={selectedValue} onChange={onChange} disabled={disabled} multiple={multiple}>
       {({ open }) => (
-        <StyledWrapper>
+        <StyledWrapper $width={width}>
+          {formLabel && !hideLabel ? (
+            <Typography
+              type="secondary"
+              color={(t) => (disabled ? t.color.disabledText : t.color.label)}
+            >
+              {formLabel}
+            </Typography>
+          ) : null}
           <Listbox.Button
             as={StyledButton}
             $size={size}
@@ -151,7 +190,7 @@ export const ExperimentalSelect = <T,>({
             $success={success}
             $open={open}
           >
-            <span>{selectedValue}</span>
+            <OptionLabel type="secondary">{selectedLabel?.label}</OptionLabel>
             <ChevronContainer>
               <Chevron open={open} />
             </ChevronContainer>
@@ -165,16 +204,36 @@ export const ExperimentalSelect = <T,>({
             leaveTo="leaveTo"
             as={Fragment}
           >
-            <ListboxOptions>
-              {options.map(({ label, value }) => {
+            <Listbox.Options $height={height} as={ListboxOptions}>
+              {options.map(({ label: optionLabel, value }) => {
                 return (
-                  <Listbox.Option key={`${label}_${value}`} as={ListboxOption} value={value}>
-                    {label}
+                  <Listbox.Option key={`${optionLabel}_${value}`} as={React.Fragment} value={value}>
+                    {({ active, selected }) => (
+                      <ListboxOption $active={active}>
+                        <OptionLabel
+                          type="secondary"
+                          color={(t) => (selected ? t.color.cta : t.color.text)}
+                        >
+                          {optionLabel}
+                        </OptionLabel>
+                        {selected ? <Icon.Check16 inline color={(t) => t.color.cta} /> : null}
+                      </ListboxOption>
+                    )}
                   </Listbox.Option>
                 );
               })}
-            </ListboxOptions>
+            </Listbox.Options>
           </Transition>
+          {error ? (
+            <Typography type="tertiary" color={(t) => t.color.danger}>
+              {error}
+            </Typography>
+          ) : null}
+          {extraInfo && !error ? (
+            <Typography type="tertiary" color={(t) => t.color.label}>
+              {extraInfo}
+            </Typography>
+          ) : null}
         </StyledWrapper>
       )}
     </Listbox>

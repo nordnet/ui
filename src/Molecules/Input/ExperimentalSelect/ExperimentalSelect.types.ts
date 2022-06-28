@@ -13,4 +13,10 @@ export type Props<T> = {
   disabled?: boolean;
   error?: string;
   success?: string;
+  width?: string;
+  hideLabel?: boolean;
+  label?: string;
+  extraInfo?: string;
+  height?: string;
+  multiple?: boolean;
 };
