@@ -1,3 +1,10 @@
+# [10.34.0](https://github.com/nordnet/ui/compare/v10.33.0...v10.34.0) (2022-06-28)
+
+
+### Features
+
+* 🎸 add gap property to <Flexbox /> component ([4cada5a](https://github.com/nordnet/ui/commit/4cada5a))
+
 # [10.33.0](https://github.com/nordnet/ui/compare/v10.32.0...v10.33.0) (2022-06-22)
 
 
