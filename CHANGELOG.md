@@ -1,3 +1,10 @@
+## [10.35.1](https://github.com/nordnet/ui/compare/v10.35.0...v10.35.1) (2022-06-29)
+
+
+### Bug Fixes
+
+* 🐛 remove gap property bleeding into dom ([1962842](https://github.com/nordnet/ui/commit/1962842))
+
 # [10.35.0](https://github.com/nordnet/ui/compare/v10.34.0...v10.35.0) (2022-06-28)
 
 
