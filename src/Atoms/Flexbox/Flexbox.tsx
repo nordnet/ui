@@ -126,6 +126,7 @@ const sanitizeProps = R.omit([
   'contain',
   'container',
   'item',
+  'gap',
   'gutter',
   'alignContent',
   'alignItems',
