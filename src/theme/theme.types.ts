@@ -724,6 +724,12 @@ export type ThemeColors = {
   narrowCardBorder: string;
   /** existing monthly deposits table row divider */
   existingMonthlyDepositsDivider: string;
+  /** visited instrument assorted colors */
+  visitedInstrumentsInstrumentBorder: string;
+  visitedInstrumentsEmptyStateColor: string;
+  visitedInstrumentsInstrumentBackground: string;
+  visitedInstrumentsInstrumentColorLoading: string;
+  visitedInstrumentsInstrumentColorError: string;
   /** @deprecated * gray3 */
   disabled: string;
   /** @deprecated * complementaryBlue2 */

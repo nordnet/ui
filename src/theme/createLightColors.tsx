@@ -376,6 +376,12 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     narrowCardBorder: rawColor.gray200,
     existingMonthlyDepositsDivider: rawColor.gray200,
 
+    visitedInstrumentsEmptyStateColor: rawColor.gray500,
+    visitedInstrumentsInstrumentBorder: rawColor.gray200,
+    visitedInstrumentsInstrumentBackground: rawColor.white,
+    visitedInstrumentsInstrumentColorLoading: rawColor.gray200,
+    visitedInstrumentsInstrumentColorError: rawColor.gray600,
+
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,

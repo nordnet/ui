@@ -379,6 +379,12 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     narrowCardBorder: rawColor.gray900,
     existingMonthlyDepositsDivider: rawColor.gray900,
 
+    visitedInstrumentsEmptyStateColor: rawColor.gray400,
+    visitedInstrumentsInstrumentBorder: rawColor.gray700,
+    visitedInstrumentsInstrumentBackground: rawColor.gray800,
+    visitedInstrumentsInstrumentColorLoading: rawColor.gray700,
+    visitedInstrumentsInstrumentColorError: rawColor.gray400,
+
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,
