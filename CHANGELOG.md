@@ -1,3 +1,10 @@
+# [10.36.0](https://github.com/nordnet/ui/compare/v10.35.1...v10.36.0) (2022-07-07)
+
+
+### Features
+
+* add colors ([0dbe4a0](https://github.com/nordnet/ui/commit/0dbe4a0))
+
 ## [10.35.1](https://github.com/nordnet/ui/compare/v10.35.0...v10.35.1) (2022-06-29)
 
 
