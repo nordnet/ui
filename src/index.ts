@@ -68,6 +68,7 @@ import PageWrapper from './Molecules/PageWrapper';
 import Pagination from './Molecules/Pagination';
 import PersistentTooltip from './Molecules/PersistentTooltip';
 import ProgressBar from './Molecules/ProgressBar';
+import PromotionBanner from './Molecules/PromotionBanner';
 import Rating from './Molecules/Rating';
 import SegmentedControl from './Molecules/SegmentedControl';
 import Select from './Molecules/Select';
@@ -178,6 +179,7 @@ export {
   /** @deprecated */ PillButton,
   Portal,
   ProgressBar,
+  PromotionBanner,
   Rating,
   SegmentedControl,
   SelectionCard,
