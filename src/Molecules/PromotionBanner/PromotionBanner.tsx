@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import { ColorFn } from 'common/Types';
@@ -6,7 +6,7 @@ import { PromotionBannerComponent } from './PromotionBanner.types';
 import { Badge, Box, Button, Flexbox, Icon, theme, Typography, useMedia } from '../..';
 
 const StyledContainer = styled.div<{ $bg: ColorFn }>`
-  background-color: ${p => p.$bg(p.theme)};
+  background-color: ${(p) => p.$bg(p.theme)};
   width: 100%;
 `;
 
@@ -16,16 +16,16 @@ const StyledPillButton = styled(Button.Pill)`
 
 const StyledBox = styled(Box)`
   margin: auto;
-  ${p => p.theme.media.greaterThan(theme.breakpoints.sm)} {
+  ${(p) => p.theme.media.greaterThan(theme.breakpoints.sm)} {
     max-width: 720px;
   }
-  ${p => p.theme.media.greaterThan(theme.breakpoints.md)} {
+  ${(p) => p.theme.media.greaterThan(theme.breakpoints.md)} {
     max-width: 936px;
   }
-  ${p => p.theme.media.greaterThan(theme.breakpoints.lg)} {
+  ${(p) => p.theme.media.greaterThan(theme.breakpoints.lg)} {
     max-width: 1240px;
   }
-  ${p => p.theme.media.greaterThan(theme.breakpoints.xl)} {
+  ${(p) => p.theme.media.greaterThan(theme.breakpoints.xl)} {
     max-width: 1560px;
   }
 `;
@@ -35,16 +35,23 @@ const StyledIconCross = styled(Icon.Cross16)`
 `;
 
 export const PromotionBanner: PromotionBannerComponent = ({
+  background = 'blue',
+  badgeBackground,
+  badgeContent,
+  buttonLink,
+  buttonText,
+  children,
+  description,
+  dismissible,
+  mobileBadgeContent,
+  onClose,
   scope = 'module',
   title,
-  badgeContent,
-  mobileBadgeContent,
-  badgeBackground,
-  buttonText,
-  description,
-  background = 'blue',
-  dismissable = true,
 }) => {
+  const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
+  const isDesktop = useMedia((t) => t.media.greaterThan(t.breakpoints.lg));
+  const [showPromotion, setShowPromotion] = useState(true);
+
   const getColor = (t: any) => {
     let bg = t.color.illustrationBackgroundBlue;
     if (background === 'green') {
@@ -55,20 +62,25 @@ export const PromotionBanner: PromotionBannerComponent = ({
     return bg;
   };
 
-  const isMobile = useMedia(t => t.media.lessThan(t.breakpoints.sm));
-  const isDesktop = useMedia(t => t.media.greaterThan(t.breakpoints.lg));
+  const handleClose = () => {
+    setShowPromotion(false);
 
-  return (
-    <StyledContainer $bg={t => getColor(t)}>
+    if (onClose) {
+      onClose();
+    }
+  };
+
+  return showPromotion ? (
+    <StyledContainer $bg={(t) => getColor(t)}>
       <StyledBox p={3} sm={{ p: 5 }}>
-        <Flexbox container justifyContent="space-between">
-          {isDesktop && <Flexbox item width="16px" />}
+        <Flexbox container justifyContent="center">
           <Flexbox
             container
+            flex="1"
             item
             direction="row"
             alignItems="center"
-            justifyContent="space-between"
+            justifyContent="center"
             gutter={3}
             width="100%"
             sm={{ gutter: 5 }}
@@ -76,15 +88,16 @@ export const PromotionBanner: PromotionBannerComponent = ({
             lg={{ gutter: 5, justifyContent: 'center', width: '610px' }}
             xl={{ width: '772px' }}
           >
-            <Flexbox item>
-              <Badge.Icon
-                badgeSize={isMobile ? 16 : 24}
-                badgeColor={badgeBackground !== undefined ? badgeBackground : t => t.color.text}
-              >
-                {isMobile ? mobileBadgeContent : badgeContent}
-              </Badge.Icon>
-            </Flexbox>
-
+            {mobileBadgeContent && badgeContent && (
+              <Flexbox item>
+                <Badge.Icon
+                  badgeSize={isMobile ? 16 : 24}
+                  badgeColor={badgeBackground !== undefined ? badgeBackground : (t) => t.color.text}
+                >
+                  {isMobile ? mobileBadgeContent : badgeContent}
+                </Badge.Icon>
+              </Flexbox>
+            )}
             <Flexbox
               container
               item
@@ -122,20 +135,29 @@ export const PromotionBanner: PromotionBannerComponent = ({
                 <Flexbox item>
                   <Typography
                     type={scope === 'page' && !isMobile ? 'secondary' : 'tertiary'}
-                    color={t => t.color.label}
+                    color={(t) => t.color.label}
                   >
                     {description}
                   </Typography>
                 </Flexbox>
+                {children && <Flexbox item>{children}</Flexbox>}
               </Flexbox>
-              <Flexbox item alignSelf={!isDesktop ? '' : 'center'} width="auto">
-                <StyledPillButton size="m">{buttonText}</StyledPillButton>
-              </Flexbox>
+              {buttonText && (
+                <Flexbox
+                  item
+                  alignSelf={!isDesktop ? '' : 'center'}
+                  width={scope === 'page' ? 'auto' : '100%'}
+                >
+                  <StyledPillButton to={buttonLink} size="m">
+                    {buttonText}
+                  </StyledPillButton>
+                </Flexbox>
+              )}
             </Flexbox>
           </Flexbox>
-          {dismissable && (
-            <Flexbox item>
-              <Button variant="neutral">
+          {dismissible && (
+            <Flexbox container item flex="0" justifyContent="flex-end" alignItems="flex-start">
+              <Button variant="neutral" onClick={handleClose}>
                 <StyledIconCross />
               </Button>
             </Flexbox>
@@ -143,5 +165,5 @@ export const PromotionBanner: PromotionBannerComponent = ({
         </Flexbox>
       </StyledBox>
     </StyledContainer>
-  );
+  ) : null;
 };
