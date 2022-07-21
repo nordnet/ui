@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import styled, { css, DefaultTheme } from 'styled-components';
-import { Listbox, Transition } from '@headlessui/react';
+import { Listbox, Dialog, Transition } from '@headlessui/react';
 import { Props } from './ExperimentalSelect.types';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { Icon, Typography } from '../../../index';
@@ -155,6 +155,65 @@ const ListboxOption = styled.li<{ $active: boolean }>(
   `,
 );
 
+const FullScreenListboxOptions = styled(Listbox.Options)(
+  ({ theme }) => css`
+    background-color: ${theme.color.inputBackground};
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 12px;
+    width: 100%;
+    li + li {
+      border-top: 1px solid ${theme.color.divider};
+    }
+  `,
+);
+
+const StyledDialog = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+  display: flex;
+  justify-content: center;
+  background: white;
+`;
+
+const FullScreenList: React.FC<{ open: boolean }> = ({ open, children }) => {
+  return (
+    <Dialog isOpen={open} onClose={() => {}} as={StyledDialog}>
+      <Listbox.Options as={FullScreenListboxOptions}>{children}</Listbox.Options>
+    </Dialog>
+  );
+};
+
+const ListboxOptionsWrapper: React.FC<{ fullscreen?: boolean; open: boolean; height?: string }> = ({
+  fullscreen,
+  height,
+  open,
+  children,
+}) => {
+  if (fullscreen) {
+    return <FullScreenList open={open}>{children}</FullScreenList>;
+  }
+  return (
+    <Transition
+      enter="enter"
+      enterFrom="enterFrom"
+      enterTo="enterTo"
+      leave="leave"
+      leaveFrom="leaveFrom"
+      leaveTo="leaveTo"
+      as={Fragment}
+    >
+      <Listbox.Options $height={height} as={ListboxOptions}>
+        {children}
+      </Listbox.Options>
+    </Transition>
+  );
+};
+
 export const ExperimentalSelect = <T,>({
   disabled,
   error,
@@ -169,8 +228,10 @@ export const ExperimentalSelect = <T,>({
   extraInfo,
   height = '240px',
   multiple,
+  fullscreenOnMobile,
 }: Props<T>) => {
   const selectedLabel = options.find(({ value }) => value === selectedValue);
+
   return (
     <Listbox value={selectedValue} onChange={onChange} disabled={disabled} multiple={multiple}>
       {({ open }) => (
@@ -195,35 +256,25 @@ export const ExperimentalSelect = <T,>({
               <Chevron open={open} />
             </ChevronContainer>
           </Listbox.Button>
-          <Transition
-            enter="enter"
-            enterFrom="enterFrom"
-            enterTo="enterTo"
-            leave="leave"
-            leaveFrom="leaveFrom"
-            leaveTo="leaveTo"
-            as={Fragment}
-          >
-            <Listbox.Options $height={height} as={ListboxOptions}>
-              {options.map(({ label: optionLabel, value }) => {
-                return (
-                  <Listbox.Option key={`${optionLabel}_${value}`} as={React.Fragment} value={value}>
-                    {({ active, selected }) => (
-                      <ListboxOption $active={active}>
-                        <OptionLabel
-                          type="secondary"
-                          color={(t) => (selected ? t.color.cta : t.color.text)}
-                        >
-                          {optionLabel}
-                        </OptionLabel>
-                        {selected ? <Icon.Check16 inline color={(t) => t.color.cta} /> : null}
-                      </ListboxOption>
-                    )}
-                  </Listbox.Option>
-                );
-              })}
-            </Listbox.Options>
-          </Transition>
+          <ListboxOptionsWrapper fullscreen={fullscreenOnMobile} open={open} height={height}>
+            {options.map(({ label: optionLabel, value }) => {
+              return (
+                <Listbox.Option key={`${optionLabel}_${value}`} as={React.Fragment} value={value}>
+                  {({ active, selected }) => (
+                    <ListboxOption $active={active}>
+                      <OptionLabel
+                        type="secondary"
+                        color={(t) => (selected ? t.color.cta : t.color.text)}
+                      >
+                        {optionLabel}
+                      </OptionLabel>
+                      {selected ? <Icon.Check16 inline color={(t) => t.color.cta} /> : null}
+                    </ListboxOption>
+                  )}
+                </Listbox.Option>
+              );
+            })}
+          </ListboxOptionsWrapper>
           {error ? (
             <Typography type="tertiary" color={(t) => t.color.danger}>
               {error}

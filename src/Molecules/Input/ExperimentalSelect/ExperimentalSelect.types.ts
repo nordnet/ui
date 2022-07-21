@@ -19,4 +19,5 @@ export type Props<T> = {
   extraInfo?: string;
   height?: string;
   multiple?: boolean;
+  fullscreenOnMobile?: boolean;
 };
