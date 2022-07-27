@@ -1,3 +1,10 @@
+## [10.36.1](https://github.com/nordnet/ui/compare/v10.36.0...v10.36.1) (2022-07-27)
+
+
+### Bug Fixes
+
+* add more colors for shareville related instruments ([2c50335](https://github.com/nordnet/ui/commit/2c50335))
+
 # [10.36.0](https://github.com/nordnet/ui/compare/v10.35.1...v10.36.0) (2022-07-07)
 
 
