@@ -730,6 +730,10 @@ export type ThemeColors = {
   visitedInstrumentsInstrumentBackground: string;
   visitedInstrumentsInstrumentColorLoading: string;
   visitedInstrumentsInstrumentColorError: string;
+  visitedInstrumentsPositiveFont: string;
+  visitedInstrumentsPositiveFill: string;
+  visitedInstrumentsNegativeFont: string;
+  visitedInstrumentsNegativeFill: string;
   /** @deprecated * gray3 */
   disabled: string;
   /** @deprecated * complementaryBlue2 */

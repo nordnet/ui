@@ -384,6 +384,11 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     visitedInstrumentsInstrumentBackground: rawColor.gray800,
     visitedInstrumentsInstrumentColorLoading: rawColor.gray700,
     visitedInstrumentsInstrumentColorError: rawColor.gray400,
+    visitedInstrumentsPositiveFont: rawColor.green500,
+    visitedInstrumentsPositiveFill: rawColor.green800,
+    visitedInstrumentsNegativeFont: rawColor.pink500,
+    visitedInstrumentsNegativeFill: rawColor.pink800,
+
 
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
