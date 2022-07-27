@@ -381,6 +381,10 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     visitedInstrumentsInstrumentBackground: rawColor.white,
     visitedInstrumentsInstrumentColorLoading: rawColor.gray200,
     visitedInstrumentsInstrumentColorError: rawColor.gray600,
+    visitedInstrumentsPositiveFont: rawColor.green600,
+    visitedInstrumentsPositiveFill: rawColor.green100,
+    visitedInstrumentsNegativeFont: rawColor.pink600,
+    visitedInstrumentsNegativeFill: rawColor.pink100,
 
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
