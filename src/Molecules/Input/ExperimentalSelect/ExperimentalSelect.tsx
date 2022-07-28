@@ -139,11 +139,11 @@ const ListboxOptions = styled(Listbox.Options)<{ $height: string }>(
   `,
 );
 
-const ListboxOption = styled.li<{ $active: boolean }>(
-  ({ theme, $active }) => css`
+const ListboxOption = styled.li<{ $active: boolean; $fullscreen?: boolean }>(
+  ({ theme, $active, $fullscreen = false }) => css`
     list-style-type: none;
     height: 24px;
-    padding: ${theme.spacing.unit(1)}px ${theme.spacing.unit(3)}px;
+    padding: ${theme.spacing.unit(1)}px ${theme.spacing.unit($fullscreen ? 0 : 3)}px;
     background: ${$active ? theme.color.inputHover : ''};
     cursor: pointer;
     display: flex;
@@ -162,6 +162,7 @@ const FullScreenListboxOptions = styled(Listbox.Options)(
     margin: 0;
     padding: 20px 12px;
     width: 100%;
+    box-sizing: border-box;
     li + li {
       border-top: 1px solid ${theme.color.divider};
     }
@@ -172,30 +173,46 @@ const StyledDialog = styled.div`
   position: fixed;
   top: 0;
   left: 0;
+
   height: 100%;
   width: 100%;
   z-index: 500;
   display: flex;
-  justify-content: center;
+  align-items: center;
   background: white;
+  flex-direction: column;
 `;
 
-const FullScreenList: React.FC<{ open: boolean }> = ({ open, children }) => {
+const TitleContainer = styled.div(
+  ({ theme }) => css`
+    padding-bottom: ${theme.spacing.unit(4)};
+  `,
+);
+const FullScreenList: React.FC<{ open: boolean; label?: string }> = ({ open, children, label }) => {
   return (
     <Dialog isOpen={open} onClose={() => {}} as={StyledDialog}>
+      <TitleContainer>
+        <Typography type="title1" weight="bold">
+          <Listbox.Label>{label}</Listbox.Label>
+        </Typography>
+      </TitleContainer>
       <Listbox.Options as={FullScreenListboxOptions}>{children}</Listbox.Options>
     </Dialog>
   );
 };
 
-const ListboxOptionsWrapper: React.FC<{ fullscreen?: boolean; open: boolean; height?: string }> = ({
-  fullscreen,
-  height,
-  open,
-  children,
-}) => {
+const ListboxOptionsWrapper: React.FC<{
+  fullscreen?: boolean;
+  open: boolean;
+  height?: string;
+  label?: string;
+}> = ({ fullscreen, height, open, children, label }) => {
   if (fullscreen) {
-    return <FullScreenList open={open}>{children}</FullScreenList>;
+    return (
+      <FullScreenList open={open} label={label}>
+        {children}
+      </FullScreenList>
+    );
   }
   return (
     <Transition
@@ -237,12 +254,14 @@ export const ExperimentalSelect = <T,>({
       {({ open }) => (
         <StyledWrapper $width={width}>
           {formLabel && !hideLabel ? (
-            <Typography
-              type="secondary"
-              color={(t) => (disabled ? t.color.disabledText : t.color.label)}
-            >
-              {formLabel}
-            </Typography>
+            <Listbox.Label>
+              <Typography
+                type="secondary"
+                color={(t) => (disabled ? t.color.disabledText : t.color.label)}
+              >
+                {formLabel}
+              </Typography>
+            </Listbox.Label>
           ) : null}
           <Listbox.Button
             as={StyledButton}
@@ -256,12 +275,17 @@ export const ExperimentalSelect = <T,>({
               <Chevron open={open} />
             </ChevronContainer>
           </Listbox.Button>
-          <ListboxOptionsWrapper fullscreen={fullscreenOnMobile} open={open} height={height}>
+          <ListboxOptionsWrapper
+            fullscreen={fullscreenOnMobile}
+            open={open}
+            height={height}
+            label={formLabel}
+          >
             {options.map(({ label: optionLabel, value }) => {
               return (
                 <Listbox.Option key={`${optionLabel}_${value}`} as={React.Fragment} value={value}>
                   {({ active, selected }) => (
-                    <ListboxOption $active={active}>
+                    <ListboxOption $active={active} $fullscreen={fullscreenOnMobile}>
                       <OptionLabel
                         type="secondary"
                         color={(t) => (selected ? t.color.cta : t.color.text)}
