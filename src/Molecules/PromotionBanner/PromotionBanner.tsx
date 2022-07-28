@@ -10,10 +10,6 @@ const StyledContainer = styled.div<{ $bg: ColorFn }>`
   width: 100%;
 `;
 
-const StyledPillButton = styled(Button.Pill)`
-  white-space: nowrap;
-`;
-
 const StyledBox = styled(Box)`
   margin: auto;
   ${(p) => p.theme.media.greaterThan(theme.breakpoints.sm)} {
@@ -34,12 +30,14 @@ const StyledIconCross = styled(Icon.Cross16)`
   padding-left: 4px;
 `;
 
+const StyledBadge = styled(Badge.Icon)`
+  overflow: hidden;
+`;
+
 export const PromotionBanner: PromotionBannerComponent = ({
-  background = 'blue',
+  backgroundColor,
   badgeBackground,
   badgeContent,
-  buttonLink,
-  buttonText,
   children,
   description,
   dismissible,
@@ -49,16 +47,18 @@ export const PromotionBanner: PromotionBannerComponent = ({
   title,
 }) => {
   const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
-  const isDesktop = useMedia((t) => t.media.greaterThan(t.breakpoints.lg));
   const [showPromotion, setShowPromotion] = useState(true);
 
   const getColor = (t: any) => {
     let bg = t.color.illustrationBackgroundBlue;
-    if (background === 'green') {
+    if (backgroundColor === 'green') {
       bg = t.color.infoBarBackgroundSuccess;
-    } else if (background === 'white') {
+    } else if (backgroundColor === 'white') {
       bg = t.color.bubbleBackground;
+    } else if (typeof backgroundColor === 'function') {
+      bg = () => backgroundColor(theme);
     }
+
     return bg;
   };
 
@@ -90,12 +90,12 @@ export const PromotionBanner: PromotionBannerComponent = ({
           >
             {mobileBadgeContent && badgeContent && (
               <Flexbox item>
-                <Badge.Icon
+                <StyledBadge
                   badgeSize={isMobile ? 16 : 24}
-                  badgeColor={badgeBackground !== undefined ? badgeBackground : (t) => t.color.text}
+                  badgeColor={badgeBackground || ((t) => t.color.accountBadgeBackground)}
                 >
                   {isMobile ? mobileBadgeContent : badgeContent}
-                </Badge.Icon>
+                </StyledBadge>
               </Flexbox>
             )}
             <Flexbox
@@ -142,17 +142,6 @@ export const PromotionBanner: PromotionBannerComponent = ({
                 </Flexbox>
                 {children && <Flexbox item>{children}</Flexbox>}
               </Flexbox>
-              {buttonText && (
-                <Flexbox
-                  item
-                  alignSelf={!isDesktop ? '' : 'center'}
-                  width={scope === 'page' ? 'auto' : '100%'}
-                >
-                  <StyledPillButton to={buttonLink} size="m">
-                    {buttonText}
-                  </StyledPillButton>
-                </Flexbox>
-              )}
             </Flexbox>
           </Flexbox>
           {dismissible && (

@@ -3,12 +3,9 @@ import React from 'react';
 
 export type PromotionBannerProps = {
   /** @default blue */
-  background?: 'blue' | 'green' | 'white';
+  backgroundColor?: 'blue' | 'green' | 'white' | ColorFn;
   badgeBackground?: ColorFn;
   badgeContent?: React.ReactNode;
-  buttonText?: string;
-  /** @default string */
-  buttonLink?: any;
   children?: React.ReactNode;
   description?: string | React.ReactChild | React.ReactChild[];
   /** @default true */

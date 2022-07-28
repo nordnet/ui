@@ -2,9 +2,16 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import styled from 'styled-components';
 
-import { Box, CssGrid, Icon, Illustration, PageWrapper, PromotionBanner, Spinner } from '../..';
+import { Box, Button, CssGrid, Icon, Illustration, PageWrapper, PromotionBanner } from '../..';
 import { Display } from '../../common/Display';
 import { PromotionBannerProps as Props } from './PromotionBanner.types';
+
+import imageDesktop from './images/example_image_96px.jpg';
+import imageMobile from './images/example_image_64px.jpg';
+
+const StyledBackground = styled.div`
+  background-color: ${(p) => p.theme.color.background};
+`;
 
 export default {
   title: 'Molecules / PromotionBanner',
@@ -36,7 +43,7 @@ const Template: Story<Props & { children: React.ReactNode }> = (args) => {
               ],
             }}
             lg={{
-              templateColumns: [3, 6, 3],
+              templateColumns: [4, 4, 4],
               templateRows: ['auto', '1fr'],
               areas: [
                 ['account', 'values', 'rightCol'],
@@ -45,26 +52,19 @@ const Template: Story<Props & { children: React.ReactNode }> = (args) => {
             }}
           >
             <CssGrid.Item area="account">
-              <div style={{ background: 'green', height: '100px' }}>
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-              </div>
+              <div style={{ background: 'green', height: '100px' }}>content</div>
             </CssGrid.Item>
             <CssGrid.Item area="values">
-              <div style={{ background: 'green', height: '100px' }}>
-                bbbbbbbbbbbbbbbbbbccbbbbbbbbbbbbbbbbbbbbbbbbbbb
-              </div>
+              <div style={{ background: 'green', height: '100px' }}>content</div>
             </CssGrid.Item>
             <CssGrid.Item area="wnl">
-              <div style={{ background: 'green', height: '100px' }}>
-                cccccccccccccccccccccccccccccccccccccc
-              </div>
+              <div style={{ background: 'green', height: '100px' }}>content</div>
             </CssGrid.Item>
             <CssGrid.Item area="rightCol">
               <PromotionBanner
                 title="A complete saving with Nordnet One"
                 description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
                 badgeContent={<Illustration.Robot64 color={(t) => t.color.menuAccent2} />}
-                buttonText="Compare funds"
                 mobileBadgeContent={<Icon.Robot32 color={(t) => t.color.menuAccent2} />}
                 scope="module"
                 dismissible
@@ -77,17 +77,12 @@ const Template: Story<Props & { children: React.ReactNode }> = (args) => {
   );
 };
 
-const StyledBackground = styled.div`
-  background-color: ${(p) => p.theme.color.background};
-`;
-
 export const DefaultUsage = Template.bind({});
 DefaultUsage.args = {
   title: 'A complete saving with Nordnet One',
   description:
     'Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One.',
   badgeContent: <Illustration.Robot64 color={(t) => t.color.menuAccent2} />,
-  buttonText: 'Compare funds',
   mobileBadgeContent: <Icon.Robot32 color={(t) => t.color.menuAccent2} />,
 };
 
@@ -98,7 +93,7 @@ export const DifferentVariant = () => {
         horizontal
         items={[
           {
-            title: 'Page scope',
+            title: 'Full width banner scope="page"',
             component: (
               <StyledBackground>
                 <PromotionBanner
@@ -106,7 +101,6 @@ export const DifferentVariant = () => {
                   title="A complete saving with Nordnet One"
                   description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
                   badgeContent={<Illustration.Robot64 color={(t) => t.color.menuAccent2} />}
-                  buttonText="Compare funds"
                   mobileBadgeContent={<Icon.Robot32 color={(t) => t.color.menuAccent2} />}
                   dismissible
                   // eslint-disable-next-line no-alert
@@ -120,16 +114,19 @@ export const DifferentVariant = () => {
       <Display
         items={[
           {
-            title: 'With title not dismissible',
+            title: 'With title, description and icon, not dismissible',
             component: (
               <StyledBackground>
                 <PromotionBanner
                   title="A complete saving with Nordnet One"
                   description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
                   badgeContent={<Illustration.Robot64 color={(t) => t.color.menuAccent2} />}
-                  buttonText="Compare funds"
                   mobileBadgeContent={<Icon.Robot32 color={(t) => t.color.menuAccent2} />}
-                />
+                >
+                  <Button.Pill iconPlacement="left" onClick={() => {}} variant="primary">
+                    Compare funds
+                  </Button.Pill>
+                </PromotionBanner>
               </StyledBackground>
             ),
           },
@@ -138,14 +135,37 @@ export const DifferentVariant = () => {
       <Display
         items={[
           {
-            title: 'With title is dismissible',
+            title: 'Background color Blue, Green, White. You can pass custom color',
             component: (
               <StyledBackground>
                 <PromotionBanner
                   title="A complete saving with Nordnet One"
                   description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
                   badgeContent={<Illustration.Robot64 color={(t) => t.color.menuAccent2} />}
-                  buttonText="Compare funds"
+                  mobileBadgeContent={<Icon.Robot32 color={(t) => t.color.menuAccent2} />}
+                  dismissible
+                />
+                <PromotionBanner
+                  title="A complete saving with Nordnet One"
+                  description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
+                  badgeContent={<Illustration.Robot64 color={(t) => t.color.menuAccent2} />}
+                  backgroundColor="green"
+                  mobileBadgeContent={<Icon.Robot32 color={(t) => t.color.menuAccent2} />}
+                  dismissible
+                />
+                <PromotionBanner
+                  title="A complete saving with Nordnet One"
+                  description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
+                  badgeContent={<Illustration.Robot64 color={(t) => t.color.menuAccent2} />}
+                  backgroundColor="white"
+                  mobileBadgeContent={<Icon.Robot32 color={(t) => t.color.menuAccent2} />}
+                  dismissible
+                />
+                <PromotionBanner
+                  title="A complete saving with Nordnet One"
+                  description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
+                  badgeContent={<Illustration.Robot64 color={(t) => t.color.menuAccent2} />}
+                  backgroundColor={(t) => t.color.menuAccent2}
                   mobileBadgeContent={<Icon.Robot32 color={(t) => t.color.menuAccent2} />}
                   dismissible
                 />
@@ -157,35 +177,23 @@ export const DifferentVariant = () => {
       <Display
         items={[
           {
-            title: 'With title no Icon',
+            title: 'Image badge banner',
             component: (
               <StyledBackground>
                 <PromotionBanner
                   title="A complete saving with Nordnet One"
                   description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
-                  buttonLink="https://example.se"
-                  buttonText="Compare funds"
-                  dismissible
-                />
-              </StyledBackground>
-            ),
-          },
-        ]}
-      />
-      <Display
-        items={[
-          {
-            title: 'Warning, complex child',
-            component: (
-              <StyledBackground>
-                <PromotionBanner
-                  title="A complete saving with Nordnet One"
-                  description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
-                  buttonLink="https://example.se"
-                  buttonText="Compare funds"
+                  badgeContent={
+                    <img src={imageDesktop} alt="hello" style={{ height: 'inherit' }} />
+                  }
+                  mobileBadgeContent={
+                    <img src={imageMobile} alt="hello" style={{ height: 'inherit' }} />
+                  }
                   dismissible
                 >
-                  <Spinner id="defaultSpinner" size={10} />
+                  <Button.Pill iconPlacement="left" onClick={() => {}} variant="primary">
+                    Compare funds
+                  </Button.Pill>
                 </PromotionBanner>
               </StyledBackground>
             ),
