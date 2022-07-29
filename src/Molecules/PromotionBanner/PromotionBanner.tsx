@@ -1,27 +1,43 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React, { useState, useCallback } from 'react';
+import styled, { ThemedStyledProps } from 'styled-components';
 
-import { ColorFn } from 'common/Types';
-import { PromotionBannerComponent } from './PromotionBanner.types';
-import { Badge, Box, Button, Flexbox, Icon, theme, Typography, useMedia } from '../..';
+import { Theme } from '../../theme/theme.types';
+import { PromotionBannerComponent, PromotionBannerProps } from './PromotionBanner.types';
+import { Badge, Box, Button, Flexbox, Icon, Typography, useMedia } from '../..';
 
-const StyledContainer = styled.div<{ $bg: ColorFn }>`
-  background-color: ${(p) => p.$bg(p.theme)};
+const getColor = (props: ThemedStyledProps<PromotionBannerProps, Theme>) => {
+  const { backgroundColor, theme } = props;
+
+  if (backgroundColor === 'green') {
+    return theme.color.infoBarBackgroundSuccess;
+  }
+  if (backgroundColor === 'white') {
+    return theme.color.bubbleBackground;
+  }
+  if (typeof backgroundColor === 'function') {
+    return backgroundColor(theme);
+  }
+
+  return theme.color.illustrationBackgroundBlue;
+};
+
+const StyledContainer = styled.div<PromotionBannerProps>`
+  background-color: ${(p) => getColor(p)};
   width: 100%;
 `;
 
 const StyledBox = styled(Box)`
   margin: auto;
-  ${(p) => p.theme.media.greaterThan(theme.breakpoints.sm)} {
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
     max-width: 720px;
   }
-  ${(p) => p.theme.media.greaterThan(theme.breakpoints.md)} {
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
     max-width: 936px;
   }
-  ${(p) => p.theme.media.greaterThan(theme.breakpoints.lg)} {
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.lg)} {
     max-width: 1240px;
   }
-  ${(p) => p.theme.media.greaterThan(theme.breakpoints.xl)} {
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.xl)} {
     max-width: 1560px;
   }
 `;
@@ -49,29 +65,16 @@ export const PromotionBanner: PromotionBannerComponent = ({
   const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
   const [showPromotion, setShowPromotion] = useState(true);
 
-  const getColor = (t: any) => {
-    let bg = t.color.illustrationBackgroundBlue;
-    if (backgroundColor === 'green') {
-      bg = t.color.infoBarBackgroundSuccess;
-    } else if (backgroundColor === 'white') {
-      bg = t.color.bubbleBackground;
-    } else if (typeof backgroundColor === 'function') {
-      bg = () => backgroundColor(theme);
-    }
-
-    return bg;
-  };
-
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     setShowPromotion(false);
 
     if (onClose) {
       onClose();
     }
-  };
+  }, [onClose]);
 
   return showPromotion ? (
-    <StyledContainer $bg={(t) => getColor(t)}>
+    <StyledContainer backgroundColor={backgroundColor}>
       <StyledBox p={3} sm={{ p: 5 }}>
         <Flexbox container justifyContent="center">
           <Flexbox
