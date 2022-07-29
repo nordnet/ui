@@ -15,9 +15,7 @@ export type PromotionBannerProps = {
   mobileBadgeContent?: React.ReactNode;
   /** @default module */
   scope?: 'module' | 'page';
-  title: string | React.ReactChild | React.ReactChild[];
-  /** @default false */
-  // isMobile?: boolean;
+  title?: string | React.ReactChild | React.ReactChild[];
 };
 
 export type PromotionBannerComponent = React.FC<PromotionBannerProps>;
