@@ -1,3 +1,11 @@
+# [10.37.0](https://github.com/nordnet/ui/compare/v10.36.1...v10.37.0) (2022-07-29)
+
+
+### Features
+
+* 🎸 promotion banner ui update ([5054ba7](https://github.com/nordnet/ui/commit/5054ba7))
+* 🎸 This is the new promotion banner component ([859b0fb](https://github.com/nordnet/ui/commit/859b0fb))
+
 ## [10.36.1](https://github.com/nordnet/ui/compare/v10.36.0...v10.36.1) (2022-07-27)
 
 
