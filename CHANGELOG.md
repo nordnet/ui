@@ -1,3 +1,10 @@
+## [10.37.1](https://github.com/nordnet/ui/compare/v10.37.0...v10.37.1) (2022-07-29)
+
+
+### Bug Fixes
+
+* 🐛 using useCallback and removing unused type for Promotion ([8aa3b0c](https://github.com/nordnet/ui/commit/8aa3b0c))
+
 # [10.37.0](https://github.com/nordnet/ui/compare/v10.36.1...v10.37.0) (2022-07-29)
 
 
