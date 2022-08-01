@@ -806,7 +806,182 @@ Array [
       width={16}
     >
       <path
+        d="M9.89 11.3H4.23l2 2h7.07V6.23l-2-2V9.9L4.11 2.7 2.7 4.11l7.19 7.2Z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  color: #336BFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={24}
+    >
+      <path
+        d="M16.59 18H8.1l2 2H20v-9.9l-2-2v8.49L5.41 4 4 5.41 16.59 18Z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  color: #336BFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={16}
+    >
+      <path
+        d="M11.3 6.11v5.66l2-2V2.7H6.23l-2 2H9.9L2.7 11.89l1.41 1.41 7.2-7.19Z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  color: #336BFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={24}
+    >
+      <path
+        d="M18 7.41421L18 15.8995L20 13.8995L20 4L10.1005 4L8.1005 6L16.5858 6L4 18.5858L5.41421 20L18 7.41421Z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  color: #336BFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={16}
+    >
+      <path
         d="M11.167 9l-4 4h2.828l5-5-5-5H7.167l4 4H1v2h10.167z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  color: #336BFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={24}
+    >
+      <path
+        d="m19.17 13-6 6H16l7-7-7-7h-2.83l6 6H1v2h18.17Z"
         fill="currentColor"
       />
     </svg>
@@ -18396,6 +18571,162 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       <span
         className="Typography__Span-sc-10mju41-0 c3"
       >
+        ArrowNegative16
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            d="M9.89 11.3H4.23l2 2h7.07V6.23l-2-2V9.9L4.11 2.7 2.7 4.11l7.19 7.2Z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
+        ArrowNegative24
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={24}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={24}
+        >
+          <path
+            d="M16.59 18H8.1l2 2H20v-9.9l-2-2v8.49L5.41 4 4 5.41 16.59 18Z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
+        ArrowPositive16
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            d="M11.3 6.11v5.66l2-2V2.7H6.23l-2 2H9.9L2.7 11.89l1.41 1.41 7.2-7.19Z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
+        ArrowPositive24
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={24}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={24}
+        >
+          <path
+            d="M18 7.41421L18 15.8995L20 13.8995L20 4L10.1005 4L8.1005 6L16.5858 6L4 18.5858L5.41421 20L18 7.41421Z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
         ArrowRight16
       </span>
     </div>
@@ -18419,6 +18750,45 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
         >
           <path
             d="M11.167 9l-4 4h2.828l5-5-5-5H7.167l4 4H1v2h10.167z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
+        ArrowRight24
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={24}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={24}
+        >
+          <path
+            d="m19.17 13-6 6H16l7-7-7-7h-2.83l6 6H1v2h18.17Z"
             fill="currentColor"
           />
         </svg>
