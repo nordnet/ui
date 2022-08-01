@@ -163,6 +163,10 @@ export type ThemeColors = {
    */
   accountBadgeText: string;
   /**
+   * teal500
+   */
+  allocationBars: string;
+  /**
    * blue500
    */
   badgeBackground: string;
