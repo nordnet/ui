@@ -1,3 +1,15 @@
+# [10.38.0](https://github.com/nordnet/ui/compare/v10.37.1...v10.38.0) (2022-08-01)
+
+
+### Bug Fixes
+
+* status badge docs ([f786553](https://github.com/nordnet/ui/commit/f786553))
+
+
+### Features
+
+* add icons ([036dec2](https://github.com/nordnet/ui/commit/036dec2))
+
 ## [10.37.1](https://github.com/nordnet/ui/compare/v10.37.0...v10.37.1) (2022-07-29)
 
 
