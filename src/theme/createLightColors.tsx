@@ -30,6 +30,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     accountBadgeBackground: rawColor.black,
     accountBadgeText: rawColor.white,
+    allocationBars: rawColor.teal500,
 
     background: rawColor.gray100,
     backgroundBlack: rawColor.black,
