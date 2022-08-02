@@ -1,3 +1,10 @@
+# [10.39.0](https://github.com/nordnet/ui/compare/v10.38.0...v10.39.0) (2022-08-02)
+
+
+### Features
+
+* 🎸 add allocation bar color ([a78fa6c](https://github.com/nordnet/ui/commit/a78fa6c))
+
 # [10.38.0](https://github.com/nordnet/ui/compare/v10.37.1...v10.38.0) (2022-08-01)
 
 
