@@ -20,17 +20,6 @@ export const CompletionBar = styled.div<{ completion: number }>`
     content: '';
   }
 `;
-
-export const StyledButton = styled.button<{ visible?: boolean }>`
-  display: flex;
-  background: transparent;
-  align-items: center;
-  cursor: pointer;
-  line-height: 1;
-  border: none;
-  visibility: ${(p) => (p.visible ? 'hidden' : 'visible')};
-`;
-
 export const HiddenText = styled(Box)`
   overflow: hidden;
   width: 0;
@@ -43,8 +32,14 @@ export const HiddenText = styled(Box)`
   }
 `;
 
-export const Container = styled(Box)<{ charWidth: number }>`
-  padding: ${(p) => p.theme.spacing.unit(3)}px ${(p) => p.theme.spacing.unit(5)}px;
+export const StyledButton = styled.button<{ visible?: boolean; charWidth: number }>`
+  display: flex;
+  background: transparent;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1;
+  border: none;
+  visibility: ${(p) => (p.visible ? 'hidden' : 'visible')};
   svg {
     transition: color 333ms;
   }
@@ -58,4 +53,8 @@ export const Container = styled(Box)<{ charWidth: number }>`
       transform: rotateX(0deg);
     }
   }
+`;
+
+export const Container = styled(Box)`
+  padding: ${(p) => p.theme.spacing.unit(3)}px ${(p) => p.theme.spacing.unit(5)}px;
 `;

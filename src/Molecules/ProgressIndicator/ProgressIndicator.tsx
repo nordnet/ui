@@ -16,14 +16,14 @@ const ProgressIndicator: FC<Props> = ({
   infoIcon = 'info',
 }): ReactElement => {
   const isFirstStep = currentStep === 1;
-  const charWidth = [isFirstStep ? exitText.length : backText.length, infoText.length].sort(
-    (a, b) => a + b,
-  )[0];
 
   return (
-    <Container charWidth={charWidth + 0.5}>
+    <Container>
       <Flexbox container justifyContent="space-between" gap={6} alignItems="center">
-        <StyledButton onClick={() => (isFirstStep ? closeCallback() : backCallback())}>
+        <StyledButton
+          onClick={() => (isFirstStep ? closeCallback() : backCallback())}
+          charWidth={isFirstStep ? exitText.length : backText.length + 0.5}
+        >
           {isFirstStep ? <Icon.Cross16 /> : <Icon.ChevronLeft16 />}
           <HiddenText ml={3}>
             <Typography
@@ -37,7 +37,11 @@ const ProgressIndicator: FC<Props> = ({
           </HiddenText>
         </StyledButton>
         <CompletionBar completion={currentStep / numberOfSteps} />
-        <StyledButton onClick={infoCallback} visible={!infoCallback}>
+        <StyledButton
+          onClick={infoCallback}
+          visible={!infoCallback}
+          charWidth={infoText.length + 0.5}
+        >
           <HiddenText mr={3}>
             <Typography
               type="secondary"
