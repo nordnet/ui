@@ -5,6 +5,8 @@ export const CompletionBar = styled.div<{ completion: number }>`
   height: ${(p) => p.theme.spacing.unit(1)}px;
   position: relative;
   width: 100%;
+  border-radius: 100px;
+  overflow: hidden;
   background: ${(p) => p.theme.color.progressIndicatorBarEmpty};
   &:after {
     position: absolute;
