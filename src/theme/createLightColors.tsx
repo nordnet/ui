@@ -387,6 +387,11 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     visitedInstrumentsNegativeFont: rawColor.pink600,
     visitedInstrumentsNegativeFill: rawColor.pink100,
 
+    progressIndicatorBackground: rawColor.white,
+    progressIndicatorBarEmpty: rawColor.gray200,
+    progressIndicatorBar: rawColor.blue500,
+    progressIndicatorSvgHover: rawColor.blue500,
+
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,

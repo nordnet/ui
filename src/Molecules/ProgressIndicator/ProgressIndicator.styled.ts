@@ -5,14 +5,14 @@ export const CompletionBar = styled.div<{ completion: number }>`
   height: ${(p) => p.theme.spacing.unit(1)}px;
   position: relative;
   width: 100%;
-  background: ${(p) => p.theme.color.visitedInstrumentsInstrumentBorder};
+  background: ${(p) => p.theme.color.progressIndicatorBarEmpty};
   &:after {
     position: absolute;
     left: 0;
     top: 0;
     transition: transform 333ms;
     transform: scaleX(${(p) => p.completion});
-    background: ${(p) => p.theme.color.cta};
+    background: ${(p) => p.theme.color.progressIndicatorBar};
     transform-origin: left;
     width: 100%;
     height: 100%;
@@ -57,4 +57,5 @@ export const StyledButton = styled.button<{ visible?: boolean; charWidth: number
 
 export const Container = styled(Box)`
   padding: ${(p) => p.theme.spacing.unit(3)}px ${(p) => p.theme.spacing.unit(5)}px;
+  background: ${(p) => p.theme.color.progressIndicatorBackground};
 `;

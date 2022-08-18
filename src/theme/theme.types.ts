@@ -738,6 +738,12 @@ export type ThemeColors = {
   visitedInstrumentsPositiveFill: string;
   visitedInstrumentsNegativeFont: string;
   visitedInstrumentsNegativeFill: string;
+  /** progress indicator colors */
+  progressIndicatorBackground: string;
+  progressIndicatorBarEmpty: string;
+  progressIndicatorBar: string;
+  progressIndicatorSvgHover: string;
+
   /** @deprecated * gray3 */
   disabled: string;
   /** @deprecated * complementaryBlue2 */
