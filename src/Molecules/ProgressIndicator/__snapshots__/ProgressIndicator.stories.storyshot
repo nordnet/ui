@@ -143,6 +143,7 @@ Array [
 
 .c1 {
   padding: 12px 20px;
+  background: #FFFFFF;
 }
 
 @media (min-width:760px) {
@@ -565,6 +566,7 @@ Array [
 
 .c1 {
   padding: 12px 20px;
+  background: #FFFFFF;
 }
 
 @media (min-width:760px) {
