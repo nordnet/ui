@@ -1,3 +1,10 @@
+# [10.40.0](https://github.com/nordnet/ui/compare/v10.39.0...v10.40.0) (2022-08-19)
+
+
+### Features
+
+* add fixedBottomMobile prop to Modal and some other colors ([12130e6](https://github.com/nordnet/ui/commit/12130e6))
+
 # [10.39.0](https://github.com/nordnet/ui/compare/v10.38.0...v10.39.0) (2022-08-02)
 
 
