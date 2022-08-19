@@ -69,6 +69,17 @@ const Dialog = styled(motion.div).withConfig({
         : `margin: ${p.theme.spacing.unit(2)}px;
            padding-top: ${p.theme.spacing.unit(PADDING_TOP_MOBILE)}px;
         `}
+    ${(p) =>
+      p.$fixedBottomMobile
+        ? `
+          bottom: 0;
+          position: fixed;
+          margin: 0;
+          transform: none !important; /* disables the appear animation */
+          padding-top: ${p.theme.spacing.unit(PADDING_TOP_MOBILE_FULLSCREEN)}px;
+          padding-bottom: ${p.theme.spacing.unit(PADDING_BOTTOM_MOBILE_FULLSCREEN)}px;
+        `
+        : ''}
   }
 
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
@@ -163,6 +174,7 @@ export const ModalInner: React.FC<Props> = ({
   closeOnBackdropClick = false,
   closeOnEscapePress = true,
   fullScreenMobile = true,
+  fixedBottomMobile = false,
   isStatusModal = false,
   showBackdrop = true,
   onAnimationComplete,
@@ -239,6 +251,7 @@ export const ModalInner: React.FC<Props> = ({
               ref={dialogRef}
               onClick={handleDialogClick}
               $fullScreenMobile={fullScreenMobile}
+              $fixedBottomMobile={fixedBottomMobile}
               isStatusModal={isStatusModal}
             >
               {hasHeader && <Header>{title && <Title title={title} uid={titleId} />}</Header>}
