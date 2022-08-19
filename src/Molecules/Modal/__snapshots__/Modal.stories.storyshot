@@ -252,7 +252,7 @@ Array [
               className="c2"
             >
               <span
-                id="63val-ModalTitle"
+                id="65val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -2264,7 +2264,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
             className="c2"
           >
             <span
-              id="47val-ModalTitle"
+              id="49val-ModalTitle"
             >
               <h2
                 className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -2913,7 +2913,7 @@ Array [
               className="c2"
             >
               <span
-                id="49val-ModalTitle"
+                id="51val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -3485,7 +3485,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
             className="c2"
           >
             <span
-              id="45val-ModalTitle"
+              id="47val-ModalTitle"
             >
               <h2
                 className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -4046,7 +4046,7 @@ Array [
               className="c2"
             >
               <span
-                id="61val-ModalTitle"
+                id="63val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -4682,7 +4682,7 @@ Array [
               className="c2"
             >
               <span
-                id="59val-ModalTitle"
+                id="61val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -5199,7 +5199,7 @@ Array [
               className="c2"
             >
               <span
-                id="53val-ModalTitle"
+                id="55val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -5650,7 +5650,7 @@ Array [
               className="c2"
             >
               <span
-                id="57val-ModalTitle"
+                id="59val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -6168,7 +6168,7 @@ Array [
               className="c2"
             >
               <span
-                id="51val-ModalTitle"
+                id="53val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -6699,7 +6699,7 @@ Array [
               className="c2"
             >
               <span
-                id="55val-ModalTitle"
+                id="57val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -7258,7 +7258,7 @@ Array [
               className="c2"
             >
               <span
-                id="43val-ModalTitle"
+                id="45val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -7601,7 +7601,7 @@ exports[`Storyshots Molecules / Modal Modal with disabled escape-key press 1`] =
             className="c2"
           >
             <span
-              id="67val-ModalTitle"
+              id="69val-ModalTitle"
             >
               <h2
                 className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -7935,7 +7935,7 @@ Array [
               className="c2"
             >
               <span
-                id="65val-ModalTitle"
+                id="67val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -8793,6 +8793,509 @@ Array [
             >
               <span
                 id="41val-ModalTitle"
+              >
+                <h2
+                  className="c3 Typography__Span-sc-10mju41-0 c4"
+                >
+                  Dialog information
+                </h2>
+              </span>
+            </div>
+            <div
+              className="c5"
+            >
+              <p
+                className="Typography__Span-sc-10mju41-0 c6"
+              >
+                Resize the window to see the result of setting fullScreenMobile to false.
+              </p>
+            </div>
+            <div
+              className="c7"
+            >
+              <div
+                className="c8"
+              >
+                <div
+                  className="c9"
+                >
+                  <button
+                    className="c10 c11"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span>
+                      <span
+                        className="Typography__Span-sc-10mju41-0 c12"
+                      >
+                        Cancel
+                      </span>
+                    </span>
+                  </button>
+                </div>
+                <button
+                  className="c10 c13"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span>
+                    <span
+                      className="Typography__Span-sc-10mju41-0 c12"
+                    >
+                      Confirm
+                    </span>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <button
+              className="c10 c14"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c15"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  className="c16"
+                  d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                  strokeWidth={2}
+                />
+                <title>
+                  Close this modal
+                </title>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+  </portal-dummy>,
+]
+`;
+
+exports[`Storyshots Molecules / Modal Not full screen mobile fixed at bottom 1`] = `
+Array [
+  @media (min-width:760px) {
+
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+<button
+    onClick={[Function]}
+    type="button"
+  >
+    Open modal
+  </button>,
+  .c0 {
+  background-image: linear-gradient( #368716,#CC2269 );
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 200vh;
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  />,
+  .c5 {
+  margin-bottom: 8px;
+  background-color: transparent;
+}
+
+.c9 {
+  margin-right: 8px;
+  background-color: transparent;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c16 {
+  stroke: #282823;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c11 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: transparent;
+  color: #336BFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c11::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #336BFF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c11:hover {
+  color: #2650BF;
+}
+
+.c11:hover::before {
+  border-color: #2650BF;
+}
+
+.c11:active {
+  color: #1F4099;
+}
+
+.c11:active::before {
+  border-color: #1F4099;
+}
+
+.c13 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c13::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c13:hover {
+  background-color: #2650BF;
+}
+
+.c13:active {
+  background-color: #1F4099;
+}
+
+.c3 {
+  padding-right: 16px;
+}
+
+.c1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+  background-color: rgba(110,110,105,0.63);
+}
+
+.c14 {
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 12px;
+  right: 12px;
+}
+
+.c2 {
+  padding-bottom: 16px;
+  padding-right: 28px;
+  min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c7 {
+  margin-top: auto;
+  padding-top: 16px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+@media (min-width:760px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+  .c14 {
+    top: 40px;
+    right: 40px;
+  }
+}
+
+<portal-dummy>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
+      >
+        <div
+          className="c0 c1"
+          onClick={[Function]}
+        >
+          <div>
+            <div
+              className="c2"
+            >
+              <span
+                id="43val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"

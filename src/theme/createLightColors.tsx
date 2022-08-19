@@ -259,6 +259,10 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     periodScrollButtonBackground: rawColor.gray100,
     periodScrollButtonIcon: rawColor.gray800,
 
+    savingsForecastExpected: rawColor.green600,
+    savingsForecastNormal: rawColor.gray500,
+    savingsForecastPotential: rawColor.gray300,
+
     searchBackground: rawColor.gray1,
     searchText: rawColor.gray7,
 

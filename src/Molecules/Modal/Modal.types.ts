@@ -10,6 +10,8 @@ export type InnerProps = {
   /** @default true */
   fullScreenMobile?: boolean;
   /** @default false */
+  fixedBottomMobile?: boolean;
+  /** @default false */
   closeOnBackdropClick?: boolean;
   /** @default true */
   closeOnEscapePress?: boolean;
@@ -27,6 +29,7 @@ export type DialogProps = {
   show: boolean;
   onClick: (e: React.MouseEvent<HTMLElement>) => void;
   $fullScreenMobile?: boolean;
+  $fixedBottomMobile?: boolean;
   isStatusModal?: boolean;
 };
 
