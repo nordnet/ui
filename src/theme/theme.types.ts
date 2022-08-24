@@ -556,6 +556,10 @@ export type ThemeColors = {
   progressBarWarning: string;
   /** gray100 */
   pillBackground: string;
+  /** savings forecast drawer colors */
+  savingsForecastExpected: string;
+  savingsForecastNormal: string;
+  savingsForecastPotential: string;
   /** gray1 */
   searchBackground: string;
   /** gray1 */
