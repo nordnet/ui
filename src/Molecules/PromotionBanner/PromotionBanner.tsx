@@ -63,6 +63,8 @@ export const PromotionBanner: PromotionBannerComponent = ({
   title,
 }) => {
   const isDesktop = useMedia((t) => t.media.greaterThan(t.breakpoints.sm));
+  const isSmallScreen = useMedia((t) => t.media.lessThan(t.breakpoints.lg));
+
   const [showPromotion, setShowPromotion] = useState(true);
   const isPageDesktop = isDesktop && scope === 'page';
 
@@ -142,7 +144,10 @@ export const PromotionBanner: PromotionBannerComponent = ({
                 </Flexbox>
               </Flexbox>
               {children && (
-                <Flexbox item alignSelf={isPageDesktop ? 'center' : 'flex-start'}>
+                <Flexbox
+                  item
+                  alignSelf={isSmallScreen || scope !== 'page' ? 'flex-start' : 'center'}
+                >
                   {children}
                 </Flexbox>
               )}
