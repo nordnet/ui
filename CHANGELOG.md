@@ -1,3 +1,12 @@
+## [10.40.2](https://github.com/nordnet/ui/compare/v10.40.1...v10.40.2) (2022-08-24)
+
+
+### Bug Fixes
+
+* 🐛 alignment issue for smaller screen on button flexbox ([62e4e03](https://github.com/nordnet/ui/commit/62e4e03))
+* 🐛 merge conflict ([4484a92](https://github.com/nordnet/ui/commit/4484a92))
+* 🐛 Style update for page scope and added color for typagrap ([c5b4b3d](https://github.com/nordnet/ui/commit/c5b4b3d))
+
 ## [10.40.1](https://github.com/nordnet/ui/compare/v10.40.0...v10.40.1) (2022-08-24)
 
 
