@@ -498,6 +498,10 @@ export type ThemeColors = {
   placeholderText: string;
   /** positive */
   positive: string;
+  /** gray800 */
+  promotionBannerTitle: string;
+  /** gray600 */
+  promotionBannerDescription: string;
   /** green500 */
   positiveBlackBackground: string;
   /**

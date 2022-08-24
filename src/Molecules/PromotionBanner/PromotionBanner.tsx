@@ -62,8 +62,11 @@ export const PromotionBanner: PromotionBannerComponent = ({
   scope = 'module',
   title,
 }) => {
-  const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
+  const isDesktop = useMedia((t) => t.media.greaterThan(t.breakpoints.sm));
+  const isSmallScreen = useMedia((t) => t.media.lessThan(t.breakpoints.lg));
+
   const [showPromotion, setShowPromotion] = useState(true);
+  const isPageDesktop = isDesktop && scope === 'page';
 
   const handleClose = useCallback(() => {
     setShowPromotion(false);
@@ -88,16 +91,16 @@ export const PromotionBanner: PromotionBannerComponent = ({
             width="100%"
             sm={{ gutter: 5 }}
             md={{ gutter: 5 }}
-            lg={{ gutter: 5, justifyContent: 'center', width: '610px' }}
+            lg={{ gutter: 5, justifyContent: 'center', width: '772px' }}
             xl={{ width: '772px' }}
           >
             {mobileBadgeContent && badgeContent && (
               <Flexbox item>
                 <StyledBadge
-                  badgeSize={isMobile ? 16 : 24}
+                  badgeSize={isDesktop ? 24 : 16}
                   badgeColor={badgeBackground || ((t) => t.color.accountBadgeBackground)}
                 >
-                  {isMobile ? mobileBadgeContent : badgeContent}
+                  {isDesktop ? badgeContent : mobileBadgeContent}
                 </StyledBadge>
               </Flexbox>
             )}
@@ -106,45 +109,48 @@ export const PromotionBanner: PromotionBannerComponent = ({
               item
               direction="column"
               gutter={2}
-              width="100%"
+              alignItems="flex-start"
               sm={{ gutter: 3 }}
-              lg={{ direction: scope === 'page' ? 'row' : 'column', gutter: 5, width: 'auto' }}
+              lg={{
+                direction: scope === 'page' ? 'row' : 'column',
+                gutter: isPageDesktop ? 5 : 3,
+                width: 'auto',
+              }}
             >
               <Flexbox
                 container
                 item
                 direction="column"
-                width="100%"
                 gutter={1}
                 sm={{ gutter: 2, justifyContent: 'center' }}
-                lg={{ gutter: 2, width: 'auto' }}
+                lg={{ gutter: isPageDesktop ? 2 : 1 }}
               >
-                <Flexbox
-                  item
-                  container
-                  width="100%"
-                  justifyContent="space-between"
-                  lg={{ width: 'auto' }}
-                >
-                  <Flexbox item>
-                    <Typography
-                      type={scope === 'page' && !isMobile ? 'title3' : 'primary'}
-                      weight="extrabold"
-                    >
-                      {title}
-                    </Typography>
-                  </Flexbox>
+                <Flexbox item>
+                  <Typography
+                    type={isPageDesktop ? 'title3' : 'primary'}
+                    weight="extrabold"
+                    color={(t) => t.color.promotionBannerTitle}
+                  >
+                    {title}
+                  </Typography>
                 </Flexbox>
                 <Flexbox item>
                   <Typography
-                    type={scope === 'page' && !isMobile ? 'secondary' : 'tertiary'}
-                    color={(t) => t.color.label}
+                    type={isPageDesktop ? 'secondary' : 'tertiary'}
+                    color={(t) => t.color.promotionBannerDescription}
                   >
                     {description}
                   </Typography>
                 </Flexbox>
-                {children && <Flexbox item>{children}</Flexbox>}
               </Flexbox>
+              {children && (
+                <Flexbox
+                  item
+                  alignSelf={isSmallScreen || scope !== 'page' ? 'flex-start' : 'center'}
+                >
+                  {children}
+                </Flexbox>
+              )}
             </Flexbox>
           </Flexbox>
           {dismissible && (

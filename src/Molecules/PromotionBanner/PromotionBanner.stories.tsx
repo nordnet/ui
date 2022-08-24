@@ -21,7 +21,16 @@ export default {
 const Template: Story<Props & { children: React.ReactNode }> = (args) => {
   return (
     <StyledBackground>
-      <PromotionBanner dismissible {...args} />
+      <PromotionBanner
+        title="Save with Nordnet One"
+        description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
+        badgeContent={<Illustration.Robot64 color={(t) => t.color.menuAccent2} />}
+        mobileBadgeContent={<Icon.Robot32 color={(t) => t.color.menuAccent2} />}
+        scope="page"
+        dismissible
+      >
+        <Button.Pill size="m">Compare fund</Button.Pill>
+      </PromotionBanner>
       <PageWrapper background={(t) => t.color.background}>
         <Box py={4} pb={10}>
           <CssGrid.Container
@@ -52,7 +61,7 @@ const Template: Story<Props & { children: React.ReactNode }> = (args) => {
             }}
           >
             <CssGrid.Item area="account">
-              <div style={{ background: 'green', height: '100px' }}>content</div>
+              <PromotionBanner dismissible {...args} />
             </CssGrid.Item>
             <CssGrid.Item area="values">
               <div style={{ background: 'green', height: '100px' }}>content</div>
@@ -62,11 +71,10 @@ const Template: Story<Props & { children: React.ReactNode }> = (args) => {
             </CssGrid.Item>
             <CssGrid.Item area="rightCol">
               <PromotionBanner
-                title="A complete saving with Nordnet One"
+                title="Save with Nordnet One"
                 description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
                 badgeContent={<Illustration.Robot64 color={(t) => t.color.menuAccent2} />}
                 mobileBadgeContent={<Icon.Robot32 color={(t) => t.color.menuAccent2} />}
-                scope="module"
                 dismissible
               />
             </CssGrid.Item>
@@ -79,7 +87,7 @@ const Template: Story<Props & { children: React.ReactNode }> = (args) => {
 
 export const DefaultUsage = Template.bind({});
 DefaultUsage.args = {
-  title: 'A complete saving with Nordnet One',
+  title: 'Save with Nordnet One',
   description:
     'Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One.',
   badgeContent: <Illustration.Robot64 color={(t) => t.color.menuAccent2} />,
@@ -98,7 +106,7 @@ export const DifferentVariant = () => {
               <StyledBackground>
                 <PromotionBanner
                   scope="page"
-                  title="A complete saving with Nordnet One"
+                  title="Save with Nordnet One"
                   description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
                   badgeContent={<Illustration.Robot64 color={(t) => t.color.menuAccent2} />}
                   mobileBadgeContent={<Icon.Robot32 color={(t) => t.color.menuAccent2} />}
@@ -118,7 +126,7 @@ export const DifferentVariant = () => {
             component: (
               <StyledBackground>
                 <PromotionBanner
-                  title="A complete saving with Nordnet One"
+                  title="Save with Nordnet One"
                   description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
                   badgeContent={<Illustration.Robot64 color={(t) => t.color.menuAccent2} />}
                   mobileBadgeContent={<Icon.Robot32 color={(t) => t.color.menuAccent2} />}
@@ -135,18 +143,18 @@ export const DifferentVariant = () => {
       <Display
         items={[
           {
-            title: 'Background color Blue, Green, White. You can pass custom color',
+            title: 'Background color Blue, Green, White. You can also pass custom color',
             component: (
               <StyledBackground>
                 <PromotionBanner
-                  title="A complete saving with Nordnet One"
+                  title="Save with Nordnet One"
                   description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
                   badgeContent={<Illustration.Robot64 color={(t) => t.color.menuAccent2} />}
                   mobileBadgeContent={<Icon.Robot32 color={(t) => t.color.menuAccent2} />}
                   dismissible
                 />
                 <PromotionBanner
-                  title="A complete saving with Nordnet One"
+                  title="Save with Nordnet One"
                   description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
                   badgeContent={<Illustration.Robot64 color={(t) => t.color.menuAccent2} />}
                   backgroundColor="green"
@@ -154,7 +162,7 @@ export const DifferentVariant = () => {
                   dismissible
                 />
                 <PromotionBanner
-                  title="A complete saving with Nordnet One"
+                  title="Save with Nordnet One"
                   description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
                   badgeContent={<Illustration.Robot64 color={(t) => t.color.menuAccent2} />}
                   backgroundColor="white"
@@ -162,7 +170,7 @@ export const DifferentVariant = () => {
                   dismissible
                 />
                 <PromotionBanner
-                  title="A complete saving with Nordnet One"
+                  title="Save with Nordnet One"
                   description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
                   badgeContent={<Illustration.Robot64 color={(t) => t.color.menuAccent2} />}
                   backgroundColor={(t) => t.color.menuAccent2}
@@ -181,7 +189,7 @@ export const DifferentVariant = () => {
             component: (
               <StyledBackground>
                 <PromotionBanner
-                  title="A complete saving with Nordnet One"
+                  title="Save with Nordnet One"
                   description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
                   badgeContent={
                     <img src={imageDesktop} alt="hello" style={{ height: 'inherit' }} />
