@@ -353,6 +353,9 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     popularBadgeBackground: rawColor.pink900,
     popularBadgeText: rawColor.pink500,
 
+    promotionBannerTitle: rawColor.white,
+    promotionBannerDescription: rawColor.gray400,
+
     joinSharevilleIllustration: rawColor.green200,
     joinSharevilleBadge: rawColor.green800,
     joinSharevilleBanner: rawColor.green900,
@@ -393,7 +396,6 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     visitedInstrumentsPositiveFill: rawColor.green800,
     visitedInstrumentsNegativeFont: rawColor.pink500,
     visitedInstrumentsNegativeFill: rawColor.pink800,
-
 
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,

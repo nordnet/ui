@@ -350,6 +350,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     popularBadgeBackground: rawColor.pink100,
     popularBadgeText: rawColor.pink600,
 
+    promotionBannerTitle: rawColor.gray800,
+    promotionBannerDescription: rawColor.gray600,
+
     joinSharevilleIllustration: rawColor.green600,
     joinSharevilleBadge: rawColor.green200,
     joinSharevilleBanner: rawColor.green100,
