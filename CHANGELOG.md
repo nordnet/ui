@@ -1,3 +1,16 @@
+## [10.40.1](https://github.com/nordnet/ui/compare/v10.40.0...v10.40.1) (2022-08-24)
+
+
+### Bug Fixes
+
+* add better colors ([10df9a1](https://github.com/nordnet/ui/commit/10df9a1))
+* add new progress indicator ([aab6224](https://github.com/nordnet/ui/commit/aab6224))
+* add progress border-radius ([9820e44](https://github.com/nordnet/ui/commit/9820e44))
+* hover one at a time ([2fe348b](https://github.com/nordnet/ui/commit/2fe348b))
+* update snapshots ([71c8757](https://github.com/nordnet/ui/commit/71c8757))
+* update stories ([1292395](https://github.com/nordnet/ui/commit/1292395))
+* update storyshots ([d7390cd](https://github.com/nordnet/ui/commit/d7390cd))
+
 # [10.40.0](https://github.com/nordnet/ui/compare/v10.39.0...v10.40.0) (2022-08-19)
 
 
