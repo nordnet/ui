@@ -1300,6 +1300,47 @@ Array [
       aria-hidden="true"
       className="c0"
       focusable="false"
+      height={64}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={64}
+    >
+      <path
+        d="M16 38c-4 0-6-3.79-6-6H8a8 8 0 0 0 8 8v-2Z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M29.003 26.801C26.939 21.643 21.895 18 16 18 8.947 18 2.97 23.715 2 30.5H0v3h2C2.97 40.285 8.947 46 16 46c7.732 0 14-6.268 14-14 0-1.105.895-3 2-3s2 1.895 2 3c0 7.732 6.268 14 14 14 7.053 0 13.03-5.715 14-12.5h2V31h-2c-.97-6.785-6.947-13-14-13-5.895 0-10.939 3.643-13.003 8.801A5.973 5.973 0 0 0 32 26a5.973 5.973 0 0 0-2.997.801ZM4 32c-.5-5.5 6.5-12.5 12-12 5.5-.5 12.5 6.5 12 12 .5 5.5-6.5 12.5-12 12-5.5.5-12.5-6.5-12-12Zm32.5 0C36 26.5 41.294 19.707 48 20c7.5.5 12.302 6.801 12 12 0 7.215-6.5 12.5-12 12-5.5.5-12-6.5-11.5-12Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  color: #336BFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
@@ -4064,6 +4105,51 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
           <path
             clipRule="evenodd"
             d="M42.9334 4.38L28.7116 45.6231L18.7904 28.6154L3.07001 20.0406L42.9334 4.38ZM20.7661 28.0329L28.2422 40.8492L38.9225 9.87648L20.7661 28.0329ZM37.1824 8.78811L7.78803 20.3359L19.3358 26.6347L37.1824 8.78811Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
+        Pension64
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={64}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={64}
+        >
+          <path
+            d="M16 38c-4 0-6-3.79-6-6H8a8 8 0 0 0 8 8v-2Z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M29.003 26.801C26.939 21.643 21.895 18 16 18 8.947 18 2.97 23.715 2 30.5H0v3h2C2.97 40.285 8.947 46 16 46c7.732 0 14-6.268 14-14 0-1.105.895-3 2-3s2 1.895 2 3c0 7.732 6.268 14 14 14 7.053 0 13.03-5.715 14-12.5h2V31h-2c-.97-6.785-6.947-13-14-13-5.895 0-10.939 3.643-13.003 8.801A5.973 5.973 0 0 0 32 26a5.973 5.973 0 0 0-2.997.801ZM4 32c-.5-5.5 6.5-12.5 12-12 5.5-.5 12.5 6.5 12 12 .5 5.5-6.5 12.5-12 12-5.5.5-12.5-6.5-12-12Zm32.5 0C36 26.5 41.294 19.707 48 20c7.5.5 12.302 6.801 12 12 0 7.215-6.5 12.5-12 12-5.5.5-12-6.5-11.5-12Z"
             fill="currentColor"
             fillRule="evenodd"
           />
@@ -7080,6 +7166,42 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       <span
         className="Typography__Span-sc-10mju41-0 c4"
       >
+        Pension64
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={64}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={64}
+    >
+      <path
+        d="M16 38c-4 0-6-3.79-6-6H8a8 8 0 0 0 8 8v-2Z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M29.003 26.801C26.939 21.643 21.895 18 16 18 8.947 18 2.97 23.715 2 30.5H0v3h2C2.97 40.285 8.947 46 16 46c7.732 0 14-6.268 14-14 0-1.105.895-3 2-3s2 1.895 2 3c0 7.732 6.268 14 14 14 7.053 0 13.03-5.715 14-12.5h2V31h-2c-.97-6.785-6.947-13-14-13-5.895 0-10.939 3.643-13.003 8.801A5.973 5.973 0 0 0 32 26a5.973 5.973 0 0 0-2.997.801ZM4 32c-.5-5.5 6.5-12.5 12-12 5.5-.5 12.5 6.5 12 12 .5 5.5-6.5 12.5-12 12-5.5.5-12.5-6.5-12-12Zm32.5 0C36 26.5 41.294 19.707 48 20c7.5.5 12.302 6.801 12 12 0 7.215-6.5 12.5-12 12-5.5.5-12-6.5-11.5-12Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        15
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c4"
+      >
         RiskHigh64
       </span>
     </div>
@@ -7103,7 +7225,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        15
+        16
       </title>
     </svg>
   </div>
@@ -7139,7 +7261,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        16
+        17
       </title>
     </svg>
   </div>
@@ -7175,7 +7297,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        17
+        18
       </title>
     </svg>
   </div>
@@ -7223,7 +7345,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        18
+        19
       </title>
     </svg>
   </div>
@@ -7259,7 +7381,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        19
+        20
       </title>
     </svg>
   </div>
@@ -7299,7 +7421,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        20
+        21
       </title>
     </svg>
   </div>
@@ -7339,7 +7461,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        21
+        22
       </title>
     </svg>
   </div>
@@ -7375,7 +7497,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        22
+        23
       </title>
     </svg>
   </div>
@@ -7411,7 +7533,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        23
+        24
       </title>
     </svg>
   </div>
@@ -7451,7 +7573,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        24
+        25
       </title>
     </svg>
   </div>
@@ -7481,7 +7603,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fill="currentColor"
       />
       <title>
-        25
+        26
       </title>
     </svg>
   </div>
@@ -7537,7 +7659,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        26
+        27
       </title>
     </svg>
   </div>
@@ -7572,7 +7694,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         />
       </g>
       <title>
-        27
+        28
       </title>
     </svg>
   </div>
@@ -7718,7 +7840,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         />
       </g>
       <title>
-        28
+        29
       </title>
     </svg>
   </div>
@@ -7823,7 +7945,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         />
       </g>
       <title>
-        29
+        30
       </title>
     </svg>
   </div>
@@ -7869,7 +7991,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        30
+        31
       </title>
     </svg>
   </div>
@@ -7907,7 +8029,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        31
+        32
       </title>
     </svg>
   </div>
