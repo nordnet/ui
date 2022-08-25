@@ -35,6 +35,7 @@ import MoneyDeposit64 from './Medium/MoneyDeposit64';
 import MoneyWithdraw64 from './Medium/MoneyWithdraw64';
 import MonthlySavings64 from './Medium/MonthlySavings64';
 import News64 from './Medium/News64';
+import Pension64 from './Medium/Pension64';
 import RiskHigh64 from './Medium/RiskHigh64';
 import RiskLow64 from './Medium/RiskLow64';
 import RiskMedium64 from './Medium/RiskMedium64';
@@ -88,6 +89,7 @@ export default {
   News64,
   Orders48,
   Outbox48,
+  Pension64,
   PriceAlert48,
   Refresh48,
   RiskHigh64,
