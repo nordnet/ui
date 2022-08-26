@@ -24,6 +24,7 @@ const getColor = (props: ThemedStyledProps<PromotionBannerProps, Theme>) => {
 const StyledContainer = styled.div<PromotionBannerProps>`
   background-color: ${(p) => getColor(p)};
   width: 100%;
+  box-shadow: 0 2px 2px 0 ${({ theme }) => theme.color.shadowCard};
 `;
 
 const StyledBox = styled(Box)`
