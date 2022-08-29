@@ -1,3 +1,10 @@
+## [10.42.1](https://github.com/nordnet/ui/compare/v10.42.0...v10.42.1) (2022-08-29)
+
+
+### Bug Fixes
+
+* adjust savings color ([5712734](https://github.com/nordnet/ui/commit/5712734))
+
 # [10.42.0](https://github.com/nordnet/ui/compare/v10.41.0...v10.42.0) (2022-08-29)
 
 
