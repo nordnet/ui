@@ -23,7 +23,7 @@ const Template: Story<Props & { children: React.ReactNode }> = (args) => {
     <StyledBackground>
       <PromotionBanner
         title="Save with Nordnet One"
-        description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
+        description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet one."
         badgeContent={<Illustration.Robot64 color={(t) => t.color.menuAccent2} />}
         mobileBadgeContent={<Icon.Robot32 color={(t) => t.color.menuAccent2} />}
         scope="page"
