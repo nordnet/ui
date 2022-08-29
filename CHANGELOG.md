@@ -1,3 +1,10 @@
+# [10.41.0](https://github.com/nordnet/ui/compare/v10.40.2...v10.41.0) (2022-08-29)
+
+
+### Features
+
+* 🎸 New pension illustration ([299b10e](https://github.com/nordnet/ui/commit/299b10e))
+
 ## [10.40.2](https://github.com/nordnet/ui/compare/v10.40.1...v10.40.2) (2022-08-24)
 
 
