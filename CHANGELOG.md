@@ -1,3 +1,10 @@
+# [10.42.0](https://github.com/nordnet/ui/compare/v10.41.0...v10.42.0) (2022-08-29)
+
+
+### Features
+
+* 🎸 start the build for previous commit ([c2ac594](https://github.com/nordnet/ui/commit/c2ac594))
+
 # [10.41.0](https://github.com/nordnet/ui/compare/v10.40.2...v10.41.0) (2022-08-29)
 
 
