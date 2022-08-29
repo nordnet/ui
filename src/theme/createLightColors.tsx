@@ -261,7 +261,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     savingsForecastExpected: rawColor.green600,
     savingsForecastNormal: rawColor.gray500,
-    savingsForecastPotential: rawColor.gray300,
+    savingsForecastPotential: rawColor.gray100,
 
     searchBackground: rawColor.gray1,
     searchText: rawColor.gray7,
