@@ -106,6 +106,7 @@ import {
 /** Utils */
 import { numberWithLimit } from './common/utils';
 import { above, below, between } from './common/mediaUtils';
+import { units } from './common/unitUtils';
 
 /** Exports for types */
 export type {
@@ -217,6 +218,7 @@ export {
   above,
   below,
   between,
+  units,
   theme,
   useKeyPress,
   useLink,
