@@ -1,3 +1,10 @@
+# [10.43.0](https://github.com/nordnet/ui/compare/v10.42.1...v10.43.0) (2022-08-30)
+
+
+### Features
+
+* 🎸 add util function to get units ([05f75b0](https://github.com/nordnet/ui/commit/05f75b0))
+
 ## [10.42.1](https://github.com/nordnet/ui/compare/v10.42.0...v10.42.1) (2022-08-29)
 
 
