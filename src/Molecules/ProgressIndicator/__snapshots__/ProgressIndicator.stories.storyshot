@@ -75,6 +75,7 @@ Array [
   border-radius: 100px;
   overflow: hidden;
   background: #EEEEEE;
+  margin: 0 auto;
 }
 
 .c9:after {
@@ -467,6 +468,7 @@ Array [
   border-radius: 100px;
   overflow: hidden;
   background: #EEEEEE;
+  margin: 7px auto;
 }
 
 .c9:after {
@@ -885,6 +887,7 @@ Array [
   border-radius: 100px;
   overflow: hidden;
   background: #EEEEEE;
+  margin: 0 auto;
 }
 
 .c9:after {
@@ -1277,6 +1280,7 @@ Array [
   border-radius: 100px;
   overflow: hidden;
   background: #EEEEEE;
+  margin: 0 auto;
 }
 
 .c9:after {
