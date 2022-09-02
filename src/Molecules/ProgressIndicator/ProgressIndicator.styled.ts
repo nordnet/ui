@@ -1,13 +1,16 @@
 import styled from 'styled-components';
 import { Box } from '../..';
 
-export const CompletionBar = styled.div<{ completion: number }>`
+export const CompletionBar = styled.div<{ completion: number; noButtons: boolean }>`
   height: ${(p) => p.theme.spacing.unit(1)}px;
   position: relative;
   width: 100%;
   border-radius: 100px;
+
   overflow: hidden;
   background: ${(p) => p.theme.color.progressIndicatorBarEmpty};
+  margin: ${(p) => (p.noButtons ? '7px' : 0)} auto;
+
   &:after {
     position: absolute;
     left: 0;

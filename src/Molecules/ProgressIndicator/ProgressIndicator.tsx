@@ -46,7 +46,7 @@ const ProgressIndicator: FC<Props> = ({
             </Typography>
           </HiddenText>
         </StyledButton>
-        <CompletionBar completion={currentStep / numberOfSteps} />
+        <CompletionBar completion={currentStep / numberOfSteps} noButtons={noButtons} />
         <StyledButton
           onClick={infoCallback}
           visible={!infoCallback}
