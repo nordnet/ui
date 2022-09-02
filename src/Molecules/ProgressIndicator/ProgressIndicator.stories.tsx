@@ -54,3 +54,39 @@ export const NoHelpButton = () => {
     </>
   );
 };
+
+export const NoCloseButton = () => {
+  const [currentStep, setCurrentStep] = useState(2);
+
+  return (
+    <>
+      <ProgressIndicator
+        backCallback={() => alert('back callback')}
+        infoCallback={() => alert('info callback')}
+        title="Progress flow title"
+        numberOfSteps={3}
+        currentStep={currentStep}
+      />
+
+      <Flexbox container justifyContent="space-around">
+        <Button onClick={() => setCurrentStep(1)}>1</Button>
+        <Button onClick={() => setCurrentStep(2)}>2</Button>
+        <Button onClick={() => setCurrentStep(3)}>3</Button>
+      </Flexbox>
+    </>
+  );
+};
+
+export const NoButtons = () => {
+  const [currentStep, setCurrentStep] = useState(2);
+  return (
+    <>
+      <ProgressIndicator title="Progress flow title" numberOfSteps={3} currentStep={currentStep} />
+      <Flexbox container justifyContent="space-around">
+        <Button onClick={() => setCurrentStep(1)}>1</Button>
+        <Button onClick={() => setCurrentStep(2)}>2</Button>
+        <Button onClick={() => setCurrentStep(3)}>3</Button>
+      </Flexbox>
+    </>
+  );
+};

@@ -34,8 +34,8 @@ export const HiddenText = styled(Box)`
   }
 `;
 
-export const StyledButton = styled.button<{ visible?: boolean; charWidth: number }>`
-  display: flex;
+export const StyledButton = styled.button<{ visible?: boolean; charWidth: number; $hide: boolean }>`
+  display: ${(p) => (p.$hide ? 'none' : 'flex')};
   background: transparent;
   align-items: center;
   cursor: pointer;
