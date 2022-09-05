@@ -1,3 +1,13 @@
+## [10.43.2](https://github.com/nordnet/ui/compare/v10.43.1...v10.43.2) (2022-09-05)
+
+
+### Bug Fixes
+
+* allow full width no buttons ([7501c13](https://github.com/nordnet/ui/commit/7501c13))
+* correct comment style ([98aa750](https://github.com/nordnet/ui/commit/98aa750))
+* padding updates ([0244165](https://github.com/nordnet/ui/commit/0244165))
+* update storyshot ([dd49425](https://github.com/nordnet/ui/commit/dd49425))
+
 ## [10.43.1](https://github.com/nordnet/ui/compare/v10.43.0...v10.43.1) (2022-09-02)
 
 
