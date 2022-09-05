@@ -90,3 +90,17 @@ export const NoButtons = () => {
     </>
   );
 };
+
+export const NoTitle = () => {
+  const [currentStep, setCurrentStep] = useState(2);
+  return (
+    <>
+      <ProgressIndicator numberOfSteps={3} currentStep={currentStep} />
+      <Flexbox container justifyContent="space-around">
+        <Button onClick={() => setCurrentStep(1)}>1</Button>
+        <Button onClick={() => setCurrentStep(2)}>2</Button>
+        <Button onClick={() => setCurrentStep(3)}>3</Button>
+      </Flexbox>
+    </>
+  );
+};

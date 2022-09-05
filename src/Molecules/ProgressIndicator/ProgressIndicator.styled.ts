@@ -1,13 +1,16 @@
 import styled from 'styled-components';
 import { Box } from '../..';
 
-export const CompletionBar = styled.div<{ completion: number }>`
+export const CompletionBar = styled.div<{ completion: number; noButtons: boolean }>`
   height: ${(p) => p.theme.spacing.unit(1)}px;
   position: relative;
   width: 100%;
   border-radius: 100px;
+
   overflow: hidden;
   background: ${(p) => p.theme.color.progressIndicatorBarEmpty};
+  margin: ${(p) => (p.noButtons ? '7px' : 0)} auto; /* text height - bar height || 18 - 4 / 2 = 7  */
+
   &:after {
     position: absolute;
     left: 0;
@@ -55,9 +58,4 @@ export const StyledButton = styled.button<{ visible?: boolean; charWidth: number
       transform: rotateX(0deg);
     }
   }
-`;
-
-export const Container = styled(Box)`
-  padding: ${(p) => p.theme.spacing.unit(3)}px ${(p) => p.theme.spacing.unit(5)}px;
-  background: ${(p) => p.theme.color.progressIndicatorBackground};
 `;

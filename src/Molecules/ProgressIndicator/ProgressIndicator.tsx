@@ -1,6 +1,6 @@
 import React, { FC, ReactElement } from 'react';
 import { Box, Flexbox, Typography, Icon } from '../..';
-import { Container, StyledButton, HiddenText, CompletionBar } from './ProgressIndicator.styled';
+import { StyledButton, HiddenText, CompletionBar } from './ProgressIndicator.styled';
 import { Props } from './ProgressIndicator.types';
 
 const ProgressIndicator: FC<Props> = ({
@@ -19,17 +19,22 @@ const ProgressIndicator: FC<Props> = ({
 
   const noButtons = !closeCallback && !backCallback && !infoCallback;
 
-  const handleBackClose = () => {
+  const handleBackAndCloseClick = () => {
     if (isFirstStep && closeCallback) return closeCallback();
     if (backCallback) return backCallback();
     return null;
   };
 
   return (
-    <Container>
+    <Box
+      px={5}
+      py={3}
+      lg={{ pt: 4, pb: 3 }}
+      backgroundColor={(t) => t.color.progressIndicatorBackground}
+    >
       <Flexbox container justifyContent="space-between" gap={6} alignItems="center">
         <StyledButton
-          onClick={handleBackClose}
+          onClick={handleBackAndCloseClick}
           visible={isFirstStep && !closeCallback}
           $hide={noButtons}
           charWidth={isFirstStep ? exitText.length : backText.length + 0.5}
@@ -46,7 +51,7 @@ const ProgressIndicator: FC<Props> = ({
             </Typography>
           </HiddenText>
         </StyledButton>
-        <CompletionBar completion={currentStep / numberOfSteps} />
+        <CompletionBar completion={currentStep / numberOfSteps} noButtons={noButtons} />
         <StyledButton
           onClick={infoCallback}
           visible={!infoCallback}
@@ -72,7 +77,7 @@ const ProgressIndicator: FC<Props> = ({
           <Typography type="title1">{title}</Typography>
         </Box>
       )}
-    </Container>
+    </Box>
   );
 };
 export default ProgressIndicator;
