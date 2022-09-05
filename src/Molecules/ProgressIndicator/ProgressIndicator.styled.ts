@@ -9,7 +9,7 @@ export const CompletionBar = styled.div<{ completion: number; noButtons: boolean
 
   overflow: hidden;
   background: ${(p) => p.theme.color.progressIndicatorBarEmpty};
-  margin: ${(p) => (p.noButtons ? '7px' : 0)} auto;
+  margin: ${(p) => (p.noButtons ? '7px' : 0)} auto; // text height - bar height || 18 - 4 / 2 = 7
 
   &:after {
     position: absolute;
@@ -58,9 +58,4 @@ export const StyledButton = styled.button<{ visible?: boolean; charWidth: number
       transform: rotateX(0deg);
     }
   }
-`;
-
-export const Container = styled(Box)`
-  padding: ${(p) => p.theme.spacing.unit(3)}px ${(p) => p.theme.spacing.unit(5)}px;
-  background: ${(p) => p.theme.color.progressIndicatorBackground};
 `;
