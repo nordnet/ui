@@ -1,3 +1,10 @@
+# [10.44.0](https://github.com/nordnet/ui/compare/v10.43.2...v10.44.0) (2022-09-07)
+
+
+### Features
+
+* 🎸 Added ScanQR16 icon ([aaeaefa](https://github.com/nordnet/ui/commit/aaeaefa))
+
 ## [10.43.2](https://github.com/nordnet/ui/compare/v10.43.1...v10.43.2) (2022-09-05)
 
 
