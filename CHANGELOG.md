@@ -1,3 +1,10 @@
+## [10.44.1](https://github.com/nordnet/ui/compare/v10.44.0...v10.44.1) (2022-09-07)
+
+
+### Bug Fixes
+
+* 🐛 Update svg information for the ScanQR16 icon ([c3ba381](https://github.com/nordnet/ui/commit/c3ba381))
+
 # [10.44.0](https://github.com/nordnet/ui/compare/v10.43.2...v10.44.0) (2022-09-07)
 
 
