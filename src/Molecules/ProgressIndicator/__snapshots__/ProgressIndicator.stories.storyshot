@@ -129,6 +129,7 @@ Array [
   line-height: 1;
   border: none;
   visibility: visible;
+  padding: 0;
 }
 
 .c2 svg {
@@ -529,6 +530,7 @@ Array [
   line-height: 1;
   border: none;
   visibility: visible;
+  padding: 0;
 }
 
 .c2 svg {
@@ -559,6 +561,7 @@ Array [
   line-height: 1;
   border: none;
   visibility: hidden;
+  padding: 0;
 }
 
 .c9 svg {
@@ -961,6 +964,7 @@ Array [
   line-height: 1;
   border: none;
   visibility: visible;
+  padding: 0;
 }
 
 .c2 svg {
@@ -1364,6 +1368,7 @@ Array [
   line-height: 1;
   border: none;
   visibility: visible;
+  padding: 0;
 }
 
 .c2 svg {
@@ -1397,6 +1402,7 @@ Array [
   line-height: 1;
   border: none;
   visibility: hidden;
+  padding: 0;
 }
 
 .c9 svg {
@@ -1782,6 +1788,7 @@ Array [
   line-height: 1;
   border: none;
   visibility: visible;
+  padding: 0;
 }
 
 .c2 svg {
@@ -1812,6 +1819,7 @@ Array [
   line-height: 1;
   border: none;
   visibility: hidden;
+  padding: 0;
 }
 
 .c9 svg {
