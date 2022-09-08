@@ -7,11 +7,16 @@ exports[`Storyshots Molecules / Input / Phone Auto Focus 1`] = `
 }
 
 .c17 {
-  height: 12px;
-  box-sizing: border-box;
-  display: block;
+  height: 16px;
   width: 16px;
-  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c3 {
@@ -470,23 +475,35 @@ exports[`Storyshots Molecules / Input / Phone Auto Focus 1`] = `
                             className="c16"
                           >
                             <svg
+                              aria-hidden="true"
                               className="c17"
                               focusable="false"
-                              role="img"
-                              viewBox="0 0 640 480"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              viewBox="0 0 14 14"
                             >
-                              <path
-                                d="M0 0h640.1v480H0z"
-                                fill="#c60c30"
-                              />
-                              <path
-                                d="M205.714 0h68.57v480h-68.57z"
-                                fill="#fff"
-                              />
-                              <path
-                                d="M0 205.714h640.1v68.57H0z"
-                                fill="#fff"
-                              />
+                              <g
+                                clipPath="url(#clip0_1042_149)"
+                              >
+                                <path
+                                  d="M7 14c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7Z"
+                                  fill="#F5F5F5"
+                                />
+                                <path
+                                  d="M5.4783 6.087h8.4625C13.4933 2.6524 10.5565 0 7 0a7.0247 7.0247 0 0 0-1.5217.1664V6.087ZM3.6522 6.087V.851C1.73 1.9.3542 3.8235.0592 6.087h3.593ZM3.6521 7.913H.0593c.2948 2.2635 1.6708 4.1871 3.5929 5.2358V7.913ZM5.4783 7.913v5.9206c.49.1086.999.1664 1.5217.1664 3.5565 0 6.4933-2.6524 6.9408-6.087H5.4783Z"
+                                  fill="#CC3929"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath
+                                  id="clip0_1042_149"
+                                >
+                                  <path
+                                    d="M0 0h14v14H0z"
+                                    fill="#fff"
+                                  />
+                                </clipPath>
+                              </defs>
                               <title>
                                 Denmark
                               </title>
@@ -556,11 +573,16 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
 }
 
 .c17 {
-  height: 12px;
-  box-sizing: border-box;
-  display: block;
+  height: 16px;
   width: 16px;
-  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c3 {
@@ -1019,23 +1041,35 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
                             className="c16"
                           >
                             <svg
+                              aria-hidden="true"
                               className="c17"
                               focusable="false"
-                              role="img"
-                              viewBox="0 0 640 480"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              viewBox="0 0 14 14"
                             >
-                              <path
-                                d="M0 0h640.1v480H0z"
-                                fill="#c60c30"
-                              />
-                              <path
-                                d="M205.714 0h68.57v480h-68.57z"
-                                fill="#fff"
-                              />
-                              <path
-                                d="M0 205.714h640.1v68.57H0z"
-                                fill="#fff"
-                              />
+                              <g
+                                clipPath="url(#clip0_1042_149)"
+                              >
+                                <path
+                                  d="M7 14c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7Z"
+                                  fill="#F5F5F5"
+                                />
+                                <path
+                                  d="M5.4783 6.087h8.4625C13.4933 2.6524 10.5565 0 7 0a7.0247 7.0247 0 0 0-1.5217.1664V6.087ZM3.6522 6.087V.851C1.73 1.9.3542 3.8235.0592 6.087h3.593ZM3.6521 7.913H.0593c.2948 2.2635 1.6708 4.1871 3.5929 5.2358V7.913ZM5.4783 7.913v5.9206c.49.1086.999.1664 1.5217.1664 3.5565 0 6.4933-2.6524 6.9408-6.087H5.4783Z"
+                                  fill="#CC3929"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath
+                                  id="clip0_1042_149"
+                                >
+                                  <path
+                                    d="M0 0h14v14H0z"
+                                    fill="#fff"
+                                  />
+                                </clipPath>
+                              </defs>
                               <title>
                                 Denmark
                               </title>
@@ -1104,11 +1138,16 @@ exports[`Storyshots Molecules / Input / Phone Enable Search Component 1`] = `
 }
 
 .c17 {
-  height: 12px;
-  box-sizing: border-box;
-  display: block;
+  height: 16px;
   width: 16px;
-  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c3 {
@@ -1567,23 +1606,35 @@ exports[`Storyshots Molecules / Input / Phone Enable Search Component 1`] = `
                             className="c16"
                           >
                             <svg
+                              aria-hidden="true"
                               className="c17"
                               focusable="false"
-                              role="img"
-                              viewBox="0 0 640 480"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              viewBox="0 0 14 14"
                             >
-                              <path
-                                d="M0 0h640.1v480H0z"
-                                fill="#c60c30"
-                              />
-                              <path
-                                d="M205.714 0h68.57v480h-68.57z"
-                                fill="#fff"
-                              />
-                              <path
-                                d="M0 205.714h640.1v68.57H0z"
-                                fill="#fff"
-                              />
+                              <g
+                                clipPath="url(#clip0_1042_149)"
+                              >
+                                <path
+                                  d="M7 14c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7Z"
+                                  fill="#F5F5F5"
+                                />
+                                <path
+                                  d="M5.4783 6.087h8.4625C13.4933 2.6524 10.5565 0 7 0a7.0247 7.0247 0 0 0-1.5217.1664V6.087ZM3.6522 6.087V.851C1.73 1.9.3542 3.8235.0592 6.087h3.593ZM3.6521 7.913H.0593c.2948 2.2635 1.6708 4.1871 3.5929 5.2358V7.913ZM5.4783 7.913v5.9206c.49.1086.999.1664 1.5217.1664 3.5565 0 6.4933-2.6524 6.9408-6.087H5.4783Z"
+                                  fill="#CC3929"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath
+                                  id="clip0_1042_149"
+                                >
+                                  <path
+                                    d="M0 0h14v14H0z"
+                                    fill="#fff"
+                                  />
+                                </clipPath>
+                              </defs>
                               <title>
                                 Denmark
                               </title>
@@ -1652,11 +1703,16 @@ exports[`Storyshots Molecules / Input / Phone Full Width 1`] = `
 }
 
 .c18 {
-  height: 12px;
-  box-sizing: border-box;
-  display: block;
+  height: 16px;
   width: 16px;
-  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c3 {
@@ -2120,23 +2176,35 @@ exports[`Storyshots Molecules / Input / Phone Full Width 1`] = `
                             className="c17"
                           >
                             <svg
+                              aria-hidden="true"
                               className="c18"
                               focusable="false"
-                              role="img"
-                              viewBox="0 0 640 480"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              viewBox="0 0 14 14"
                             >
-                              <path
-                                d="M0 0h640.1v480H0z"
-                                fill="#c60c30"
-                              />
-                              <path
-                                d="M205.714 0h68.57v480h-68.57z"
-                                fill="#fff"
-                              />
-                              <path
-                                d="M0 205.714h640.1v68.57H0z"
-                                fill="#fff"
-                              />
+                              <g
+                                clipPath="url(#clip0_1042_149)"
+                              >
+                                <path
+                                  d="M7 14c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7Z"
+                                  fill="#F5F5F5"
+                                />
+                                <path
+                                  d="M5.4783 6.087h8.4625C13.4933 2.6524 10.5565 0 7 0a7.0247 7.0247 0 0 0-1.5217.1664V6.087ZM3.6522 6.087V.851C1.73 1.9.3542 3.8235.0592 6.087h3.593ZM3.6521 7.913H.0593c.2948 2.2635 1.6708 4.1871 3.5929 5.2358V7.913ZM5.4783 7.913v5.9206c.49.1086.999.1664 1.5217.1664 3.5565 0 6.4933-2.6524 6.9408-6.087H5.4783Z"
+                                  fill="#CC3929"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath
+                                  id="clip0_1042_149"
+                                >
+                                  <path
+                                    d="M0 0h14v14H0z"
+                                    fill="#fff"
+                                  />
+                                </clipPath>
+                              </defs>
                               <title>
                                 Denmark
                               </title>
@@ -2205,11 +2273,16 @@ exports[`Storyshots Molecules / Input / Phone Has Error 1`] = `
 }
 
 .c17 {
-  height: 12px;
-  box-sizing: border-box;
-  display: block;
+  height: 16px;
   width: 16px;
-  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c3 {
@@ -2687,23 +2760,35 @@ exports[`Storyshots Molecules / Input / Phone Has Error 1`] = `
                             className="c16"
                           >
                             <svg
+                              aria-hidden="true"
                               className="c17"
                               focusable="false"
-                              role="img"
-                              viewBox="0 0 640 480"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              viewBox="0 0 14 14"
                             >
-                              <path
-                                d="M0 0h640.1v480H0z"
-                                fill="#c60c30"
-                              />
-                              <path
-                                d="M205.714 0h68.57v480h-68.57z"
-                                fill="#fff"
-                              />
-                              <path
-                                d="M0 205.714h640.1v68.57H0z"
-                                fill="#fff"
-                              />
+                              <g
+                                clipPath="url(#clip0_1042_149)"
+                              >
+                                <path
+                                  d="M7 14c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7Z"
+                                  fill="#F5F5F5"
+                                />
+                                <path
+                                  d="M5.4783 6.087h8.4625C13.4933 2.6524 10.5565 0 7 0a7.0247 7.0247 0 0 0-1.5217.1664V6.087ZM3.6522 6.087V.851C1.73 1.9.3542 3.8235.0592 6.087h3.593ZM3.6521 7.913H.0593c.2948 2.2635 1.6708 4.1871 3.5929 5.2358V7.913ZM5.4783 7.913v5.9206c.49.1086.999.1664 1.5217.1664 3.5565 0 6.4933-2.6524 6.9408-6.087H5.4783Z"
+                                  fill="#CC3929"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath
+                                  id="clip0_1042_149"
+                                >
+                                  <path
+                                    d="M0 0h14v14H0z"
+                                    fill="#fff"
+                                  />
+                                </clipPath>
+                              </defs>
                               <title>
                                 Denmark
                               </title>
@@ -2785,11 +2870,16 @@ exports[`Storyshots Molecules / Input / Phone Has Success 1`] = `
 }
 
 .c17 {
-  height: 12px;
-  box-sizing: border-box;
-  display: block;
+  height: 16px;
   width: 16px;
-  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c3 {
@@ -3249,23 +3339,35 @@ exports[`Storyshots Molecules / Input / Phone Has Success 1`] = `
                             className="c16"
                           >
                             <svg
+                              aria-hidden="true"
                               className="c17"
                               focusable="false"
-                              role="img"
-                              viewBox="0 0 640 480"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              viewBox="0 0 14 14"
                             >
-                              <path
-                                d="M0 0h640.1v480H0z"
-                                fill="#c60c30"
-                              />
-                              <path
-                                d="M205.714 0h68.57v480h-68.57z"
-                                fill="#fff"
-                              />
-                              <path
-                                d="M0 205.714h640.1v68.57H0z"
-                                fill="#fff"
-                              />
+                              <g
+                                clipPath="url(#clip0_1042_149)"
+                              >
+                                <path
+                                  d="M7 14c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7Z"
+                                  fill="#F5F5F5"
+                                />
+                                <path
+                                  d="M5.4783 6.087h8.4625C13.4933 2.6524 10.5565 0 7 0a7.0247 7.0247 0 0 0-1.5217.1664V6.087ZM3.6522 6.087V.851C1.73 1.9.3542 3.8235.0592 6.087h3.593ZM3.6521 7.913H.0593c.2948 2.2635 1.6708 4.1871 3.5929 5.2358V7.913ZM5.4783 7.913v5.9206c.49.1086.999.1664 1.5217.1664 3.5565 0 6.4933-2.6524 6.9408-6.087H5.4783Z"
+                                  fill="#CC3929"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath
+                                  id="clip0_1042_149"
+                                >
+                                  <path
+                                    d="M0 0h14v14H0z"
+                                    fill="#fff"
+                                  />
+                                </clipPath>
+                              </defs>
                               <title>
                                 Denmark
                               </title>
@@ -3334,11 +3436,16 @@ exports[`Storyshots Molecules / Input / Phone Is Disabled 1`] = `
 }
 
 .c18 {
-  height: 12px;
-  box-sizing: border-box;
-  display: block;
+  height: 16px;
   width: 16px;
-  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c3 {
@@ -3800,40 +3907,35 @@ exports[`Storyshots Molecules / Input / Phone Is Disabled 1`] = `
                             className="c17"
                           >
                             <svg
+                              aria-hidden="true"
                               className="c18"
                               focusable="false"
-                              role="img"
-                              viewBox="0 0 640 480"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              viewBox="0 0 14 14"
                             >
                               <g
-                                transform="translate(50.082) scale(.9375)"
+                                clipPath="url(#clip0_1042_410)"
                               >
-                                <g
-                                  fillRule="evenodd"
-                                  strokeWidth="1pt"
+                                <path
+                                  d="M7 14c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7Z"
+                                  fill="#FFCF00"
+                                />
+                                <path
+                                  d="M5.4783 6.087h8.4624C13.4933 2.6524 10.5565 0 7 0a7.0246 7.0246 0 0 0-1.5217.1664V6.087ZM3.6522 6.087V.851C1.73 1.9.354 3.8235.0592 6.087h3.593ZM3.6521 7.913H.0592c.2949 2.2635 1.6709 4.1871 3.593 5.2358V7.913ZM5.4783 7.913v5.9206c.49.1086.999.1664 1.5217.1664 3.5565 0 6.4933-2.6524 6.9407-6.087H5.4783Z"
+                                  fill="#2650BF"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath
+                                  id="clip0_1042_410"
                                 >
                                   <path
-                                    d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
-                                    fill="#006aa7"
+                                    d="M0 0h14v14H0z"
+                                    fill="#fff"
                                   />
-                                  <path
-                                    d="M-121.103 204.984h256v102.4h-256z"
-                                    fill="#fecc00"
-                                  />
-                                  <path
-                                    d="M133.843.01h102.4v511.997h-102.4z"
-                                    fill="#fecc00"
-                                  />
-                                  <path
-                                    d="M232.995 205.013h460.798v102.4H232.995z"
-                                    fill="#fecc00"
-                                  />
-                                  <path
-                                    d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
-                                    fill="#006aa7"
-                                  />
-                                </g>
-                              </g>
+                                </clipPath>
+                              </defs>
                               <title>
                                 Sweden
                               </title>
@@ -3904,11 +4006,16 @@ exports[`Storyshots Molecules / Input / Phone Prefilled Default Values 1`] = `
 }
 
 .c17 {
-  height: 12px;
-  box-sizing: border-box;
-  display: block;
+  height: 16px;
   width: 16px;
-  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c3 {
@@ -4367,40 +4474,35 @@ exports[`Storyshots Molecules / Input / Phone Prefilled Default Values 1`] = `
                             className="c16"
                           >
                             <svg
+                              aria-hidden="true"
                               className="c17"
                               focusable="false"
-                              role="img"
-                              viewBox="0 0 640 480"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              viewBox="0 0 14 14"
                             >
                               <g
-                                transform="translate(50.082) scale(.9375)"
+                                clipPath="url(#clip0_1042_410)"
                               >
-                                <g
-                                  fillRule="evenodd"
-                                  strokeWidth="1pt"
+                                <path
+                                  d="M7 14c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7Z"
+                                  fill="#FFCF00"
+                                />
+                                <path
+                                  d="M5.4783 6.087h8.4624C13.4933 2.6524 10.5565 0 7 0a7.0246 7.0246 0 0 0-1.5217.1664V6.087ZM3.6522 6.087V.851C1.73 1.9.354 3.8235.0592 6.087h3.593ZM3.6521 7.913H.0592c.2949 2.2635 1.6709 4.1871 3.593 5.2358V7.913ZM5.4783 7.913v5.9206c.49.1086.999.1664 1.5217.1664 3.5565 0 6.4933-2.6524 6.9407-6.087H5.4783Z"
+                                  fill="#2650BF"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath
+                                  id="clip0_1042_410"
                                 >
                                   <path
-                                    d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
-                                    fill="#006aa7"
+                                    d="M0 0h14v14H0z"
+                                    fill="#fff"
                                   />
-                                  <path
-                                    d="M-121.103 204.984h256v102.4h-256z"
-                                    fill="#fecc00"
-                                  />
-                                  <path
-                                    d="M133.843.01h102.4v511.997h-102.4z"
-                                    fill="#fecc00"
-                                  />
-                                  <path
-                                    d="M232.995 205.013h460.798v102.4H232.995z"
-                                    fill="#fecc00"
-                                  />
-                                  <path
-                                    d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
-                                    fill="#006aa7"
-                                  />
-                                </g>
-                              </g>
+                                </clipPath>
+                              </defs>
                               <title>
                                 Sweden
                               </title>
@@ -4469,20 +4571,16 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
 }
 
 .c18 {
-  height: 12px;
-  box-sizing: border-box;
-  display: block;
+  height: 16px;
   width: 16px;
-  overflow: hidden;
-}
-
-.c26 {
-  height: 12px;
-  border: 1px solid #EBEBE8;
-  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   display: block;
-  width: 16px;
-  overflow: hidden;
 }
 
 .c0 {
@@ -4620,7 +4718,7 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
   display: block;
 }
 
-.c27 {
+.c26 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4973,40 +5071,35 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
                               className="c17"
                             >
                               <svg
+                                aria-hidden="true"
                                 className="c18"
                                 focusable="false"
-                                role="img"
-                                viewBox="0 0 640 480"
+                                preserveAspectRatio="xMidYMid meet"
+                                role="presentation"
+                                viewBox="0 0 14 14"
                               >
                                 <g
-                                  transform="translate(50.082) scale(.9375)"
+                                  clipPath="url(#clip0_1042_410)"
                                 >
-                                  <g
-                                    fillRule="evenodd"
-                                    strokeWidth="1pt"
+                                  <path
+                                    d="M7 14c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7Z"
+                                    fill="#FFCF00"
+                                  />
+                                  <path
+                                    d="M5.4783 6.087h8.4624C13.4933 2.6524 10.5565 0 7 0a7.0246 7.0246 0 0 0-1.5217.1664V6.087ZM3.6522 6.087V.851C1.73 1.9.354 3.8235.0592 6.087h3.593ZM3.6521 7.913H.0592c.2949 2.2635 1.6709 4.1871 3.593 5.2358V7.913ZM5.4783 7.913v5.9206c.49.1086.999.1664 1.5217.1664 3.5565 0 6.4933-2.6524 6.9407-6.087H5.4783Z"
+                                    fill="#2650BF"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath
+                                    id="clip0_1042_410"
                                   >
                                     <path
-                                      d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
-                                      fill="#006aa7"
+                                      d="M0 0h14v14H0z"
+                                      fill="#fff"
                                     />
-                                    <path
-                                      d="M-121.103 204.984h256v102.4h-256z"
-                                      fill="#fecc00"
-                                    />
-                                    <path
-                                      d="M133.843.01h102.4v511.997h-102.4z"
-                                      fill="#fecc00"
-                                    />
-                                    <path
-                                      d="M232.995 205.013h460.798v102.4H232.995z"
-                                      fill="#fecc00"
-                                    />
-                                    <path
-                                      d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
-                                      fill="#006aa7"
-                                    />
-                                  </g>
-                                </g>
+                                  </clipPath>
+                                </defs>
                                 <title>
                                   Sweden
                                 </title>
@@ -5215,23 +5308,35 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
                               className="c17"
                             >
                               <svg
+                                aria-hidden="true"
                                 className="c18"
                                 focusable="false"
-                                role="img"
-                                viewBox="0 0 640 480"
+                                preserveAspectRatio="xMidYMid meet"
+                                role="presentation"
+                                viewBox="0 0 14 14"
                               >
-                                <path
-                                  d="M0 0h640.1v480H0z"
-                                  fill="#c60c30"
-                                />
-                                <path
-                                  d="M205.714 0h68.57v480h-68.57z"
-                                  fill="#fff"
-                                />
-                                <path
-                                  d="M0 205.714h640.1v68.57H0z"
-                                  fill="#fff"
-                                />
+                                <g
+                                  clipPath="url(#clip0_1042_149)"
+                                >
+                                  <path
+                                    d="M7 14c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7Z"
+                                    fill="#F5F5F5"
+                                  />
+                                  <path
+                                    d="M5.4783 6.087h8.4625C13.4933 2.6524 10.5565 0 7 0a7.0247 7.0247 0 0 0-1.5217.1664V6.087ZM3.6522 6.087V.851C1.73 1.9.3542 3.8235.0592 6.087h3.593ZM3.6521 7.913H.0593c.2948 2.2635 1.6708 4.1871 3.5929 5.2358V7.913ZM5.4783 7.913v5.9206c.49.1086.999.1664 1.5217.1664 3.5565 0 6.4933-2.6524 6.9408-6.087H5.4783Z"
+                                    fill="#CC3929"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath
+                                    id="clip0_1042_149"
+                                  >
+                                    <path
+                                      d="M0 0h14v14H0z"
+                                      fill="#fff"
+                                    />
+                                  </clipPath>
+                                </defs>
                                 <title>
                                   Denmark
                                 </title>
@@ -5440,23 +5545,43 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
                               className="c17"
                             >
                               <svg
-                                className="c26"
+                                aria-hidden="true"
+                                className="c18"
                                 focusable="false"
-                                role="img"
-                                viewBox="0 0 640 480"
+                                preserveAspectRatio="xMidYMid meet"
+                                role="presentation"
+                                viewBox="0 0 14 14"
                               >
-                                <path
-                                  d="M0 0h640v480H0z"
-                                  fill="#fff"
-                                />
-                                <path
-                                  d="M0 174.545h640v130.909H0z"
-                                  fill="#003580"
-                                />
-                                <path
-                                  d="M175.455 0h130.909v480H175.455z"
-                                  fill="#003580"
-                                />
+                                <g
+                                  clipPath="url(#clip0_1042_331)"
+                                >
+                                  <path
+                                    d="M7 14c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7Z"
+                                    fill="#F5F5F5"
+                                  />
+                                  <path
+                                    d="M13.9407 6.087H5.4783V.1664A6.9523 6.9523 0 0 0 3.6522.851V6.087H.0592a7.0603 7.0603 0 0 0 0 1.8261h3.593v5.2358a6.9506 6.9506 0 0 0 1.826.6848V7.9131h8.4625a7.054 7.054 0 0 0 0-1.8261Z"
+                                    fill="#2650BF"
+                                  />
+                                  <circle
+                                    cx="7"
+                                    cy="7"
+                                    fill="none"
+                                    r="6.5"
+                                    stroke="#EBEBE8"
+                                    strokeWidth="1"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath
+                                    id="clip0_1042_331"
+                                  >
+                                    <path
+                                      d="M0 0h14v14H0z"
+                                      fill="#fff"
+                                    />
+                                  </clipPath>
+                                </defs>
                                 <title>
                                   Finland
                                 </title>
@@ -5665,31 +5790,39 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
                               className="c17"
                             >
                               <svg
+                                aria-hidden="true"
                                 className="c18"
                                 focusable="false"
-                                role="img"
-                                viewBox="0 0 640 480"
+                                preserveAspectRatio="xMidYMid meet"
+                                role="presentation"
+                                viewBox="0 0 14 14"
                               >
-                                <path
-                                  d="M0 0h640v480H0z"
-                                  fill="#ef2b2d"
-                                />
-                                <path
-                                  d="M180 0h120v480H180z"
-                                  fill="#fff"
-                                />
-                                <path
-                                  d="M0 180h640v120H0z"
-                                  fill="#fff"
-                                />
-                                <path
-                                  d="M210 0h60v480h-60z"
-                                  fill="#002868"
-                                />
-                                <path
-                                  d="M0 210h640v60H0z"
-                                  fill="#002868"
-                                />
+                                <g
+                                  clipPath="url(#clip0_1042_339)"
+                                >
+                                  <path
+                                    d="M7 14c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7Z"
+                                    fill="#F5F5F5"
+                                  />
+                                  <path
+                                    d="M.241 8.8261c.4051 1.5028 1.2977 2.8053 2.498 3.7276V8.8261H.241ZM6.3912 13.9734C6.592 13.9906 6.7948 14 7 14c3.2342 0 5.9556-2.1935 6.7589-5.1739H6.3912v5.1473ZM13.7588 5.1739C12.9555 2.1935 10.2341 0 6.9999 0c-.2051 0-.408.0094-.6087.0266V5.174h7.3676ZM2.739 1.4464C1.5388 2.3687.6462 3.671.241 5.1738h2.498V1.4464Z"
+                                    fill="#CC3929"
+                                  />
+                                  <path
+                                    d="M13.9407 6.087H5.4783V.1664A6.9523 6.9523 0 0 0 3.6522.851V6.087H.0592a7.0603 7.0603 0 0 0 0 1.8261h3.593v5.2358a6.9506 6.9506 0 0 0 1.826.6848V7.9131h8.4625a7.054 7.054 0 0 0 0-1.8261Z"
+                                    fill="#2650BF"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath
+                                    id="clip0_1042_339"
+                                  >
+                                    <path
+                                      d="M0 0h14v14H0z"
+                                      fill="#fff"
+                                    />
+                                  </clipPath>
+                                </defs>
                                 <title>
                                   Norway
                                 </title>
@@ -5899,7 +6032,7 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
                             >
                               <svg
                                 aria-hidden="false"
-                                className="c27"
+                                className="c26"
                                 focusable="false"
                                 preserveAspectRatio="xMidYMid meet"
                                 role="img"
@@ -5980,11 +6113,16 @@ exports[`Storyshots Molecules / Input / Phone With Help Text 1`] = `
 }
 
 .c17 {
-  height: 12px;
-  box-sizing: border-box;
-  display: block;
+  height: 16px;
   width: 16px;
-  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c3 {
@@ -6452,23 +6590,35 @@ exports[`Storyshots Molecules / Input / Phone With Help Text 1`] = `
                             className="c16"
                           >
                             <svg
+                              aria-hidden="true"
                               className="c17"
                               focusable="false"
-                              role="img"
-                              viewBox="0 0 640 480"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              viewBox="0 0 14 14"
                             >
-                              <path
-                                d="M0 0h640.1v480H0z"
-                                fill="#c60c30"
-                              />
-                              <path
-                                d="M205.714 0h68.57v480h-68.57z"
-                                fill="#fff"
-                              />
-                              <path
-                                d="M0 205.714h640.1v68.57H0z"
-                                fill="#fff"
-                              />
+                              <g
+                                clipPath="url(#clip0_1042_149)"
+                              >
+                                <path
+                                  d="M7 14c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7Z"
+                                  fill="#F5F5F5"
+                                />
+                                <path
+                                  d="M5.4783 6.087h8.4625C13.4933 2.6524 10.5565 0 7 0a7.0247 7.0247 0 0 0-1.5217.1664V6.087ZM3.6522 6.087V.851C1.73 1.9.3542 3.8235.0592 6.087h3.593ZM3.6521 7.913H.0593c.2948 2.2635 1.6708 4.1871 3.5929 5.2358V7.913ZM5.4783 7.913v5.9206c.49.1086.999.1664 1.5217.1664 3.5565 0 6.4933-2.6524 6.9408-6.087H5.4783Z"
+                                  fill="#CC3929"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath
+                                  id="clip0_1042_149"
+                                >
+                                  <path
+                                    d="M0 0h14v14H0z"
+                                    fill="#fff"
+                                  />
+                                </clipPath>
+                              </defs>
                               <title>
                                 Denmark
                               </title>

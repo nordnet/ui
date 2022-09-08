@@ -1,5 +1,4 @@
 import au from './au';
-import br from './br';
 import ca from './ca';
 import cn from './cn';
 import de from './de';
@@ -19,7 +18,6 @@ import za from './za';
 
 export default {
   au,
-  br,
   ca,
   cn,
   de,

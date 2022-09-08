@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback, useRef, useEffect } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import * as R from 'ramda';
 import { Props } from './Phone.types';
 import { Box, Flag, Flexbox, FormField, OldIcon, Typography } from '../../..';
@@ -6,12 +6,12 @@ import { useSelectMachineFromContext } from '../Select/lib/context';
 import { OptionItem } from '../Select/Select.types';
 import { CountryCodeLabel } from './CountryCodeLabel';
 import {
-  StyledSelect,
+  StyledBox,
   StyledCountryCode,
   StyledInput,
-  StyledWrapper,
-  StyledBox,
+  StyledSelect,
   StyledTypography,
+  StyledWrapper,
 } from './Phone.styled';
 
 const hasError = (error?: Props['error']) => error && error !== '';
@@ -59,25 +59,25 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
         label: <CountryCodeLabel countryCode="dk" prefixCode="+45" />,
         value: '45',
         country: 'dk',
-        flag: <Flag country="dk" height={3} />,
+        flag: <Flag country="dk" size="m" />,
       },
       {
         label: <CountryCodeLabel countryCode="se" prefixCode="+46" />,
         value: '46',
         country: 'se',
-        flag: <Flag country="se" height={3} />,
+        flag: <Flag country="se" size="m" />,
       },
       {
         label: <CountryCodeLabel countryCode="no" prefixCode="+47" />,
         value: '47',
         country: 'no',
-        flag: <Flag country="no" height={3} />,
+        flag: <Flag country="no" size="m" />,
       },
       {
         label: <CountryCodeLabel countryCode="fi" prefixCode="+358" />,
         value: '358',
         country: 'fi',
-        flag: <Flag country="fi" height={3} />,
+        flag: <Flag country="fi" size="m" />,
       },
       {
         label: (

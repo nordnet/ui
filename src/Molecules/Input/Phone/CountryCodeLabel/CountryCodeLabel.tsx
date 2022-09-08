@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flexbox, Flag, Typography } from '../../../..';
+import { Flag, Flexbox, Typography } from '../../../..';
 
 import { Props } from './types';
 
@@ -10,7 +10,7 @@ const CountryCodeLabel: React.FC<Props> = ({
 }) => (
   <Flexbox container alignItems="center" gutter={2}>
     <Flexbox item>
-      <Flag country={countryCode.toLowerCase()} height={3} />
+      <Flag country={countryCode} size="m" />
     </Flexbox>
     {!noPrefix && (
       <Flexbox item>

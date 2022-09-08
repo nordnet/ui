@@ -24,7 +24,7 @@ export const DefaultTableHeaders = () => {
           <FlexTable.Header.SortButton onClick={onSortClick}>
             <StyledFlexboxContainer container>
               <Flexbox item>
-                <Flag country="SE" inline height={3} />
+                <Flag country="SE" inline size="m" />
               </Flexbox>
               <FlexTable.CellInlineContainer item>
                 <FlexTable.Header.TextWrapper sorted={sorted}>
