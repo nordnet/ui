@@ -809,11 +809,10 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
             </span>
           </div>
           <svg
-            aria-hidden="true"
             className="c32"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
-            role="presentation"
+            role="img"
             viewBox="0 0 14 14"
           >
             <g
@@ -1614,11 +1613,10 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
             </span>
           </div>
           <svg
-            aria-hidden="true"
             className="c26"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
-            role="presentation"
+            role="img"
             viewBox="0 0 14 14"
           >
             <g

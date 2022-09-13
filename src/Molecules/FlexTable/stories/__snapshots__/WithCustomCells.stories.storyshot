@@ -1102,11 +1102,10 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
           className="Typography__Span-sc-10mju41-0 c23 c9"
         >
           <svg
-            aria-hidden="true"
             className="c25"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
-            role="presentation"
+            role="img"
             viewBox="0 0 14 14"
           >
             <g
@@ -1236,11 +1235,10 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
           className="Typography__Span-sc-10mju41-0 c23 c9"
         >
           <svg
-            aria-hidden="true"
             className="c25"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
-            role="presentation"
+            role="img"
             viewBox="0 0 14 14"
           >
             <g

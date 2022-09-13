@@ -1790,11 +1790,10 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
         className="c3"
       >
         <svg
-          aria-hidden="true"
           className="c4"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
-          role="presentation"
+          role="img"
           viewBox="0 0 14 14"
         >
           <g

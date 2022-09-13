@@ -475,11 +475,10 @@ exports[`Storyshots Molecules / Input / Phone Auto Focus 1`] = `
                             className="c16"
                           >
                             <svg
-                              aria-hidden="true"
                               className="c17"
                               focusable="false"
                               preserveAspectRatio="xMidYMid meet"
-                              role="presentation"
+                              role="img"
                               viewBox="0 0 14 14"
                             >
                               <g
@@ -1041,11 +1040,10 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
                             className="c16"
                           >
                             <svg
-                              aria-hidden="true"
                               className="c17"
                               focusable="false"
                               preserveAspectRatio="xMidYMid meet"
-                              role="presentation"
+                              role="img"
                               viewBox="0 0 14 14"
                             >
                               <g
@@ -1606,11 +1604,10 @@ exports[`Storyshots Molecules / Input / Phone Enable Search Component 1`] = `
                             className="c16"
                           >
                             <svg
-                              aria-hidden="true"
                               className="c17"
                               focusable="false"
                               preserveAspectRatio="xMidYMid meet"
-                              role="presentation"
+                              role="img"
                               viewBox="0 0 14 14"
                             >
                               <g
@@ -2176,11 +2173,10 @@ exports[`Storyshots Molecules / Input / Phone Full Width 1`] = `
                             className="c17"
                           >
                             <svg
-                              aria-hidden="true"
                               className="c18"
                               focusable="false"
                               preserveAspectRatio="xMidYMid meet"
-                              role="presentation"
+                              role="img"
                               viewBox="0 0 14 14"
                             >
                               <g
@@ -2760,11 +2756,10 @@ exports[`Storyshots Molecules / Input / Phone Has Error 1`] = `
                             className="c16"
                           >
                             <svg
-                              aria-hidden="true"
                               className="c17"
                               focusable="false"
                               preserveAspectRatio="xMidYMid meet"
-                              role="presentation"
+                              role="img"
                               viewBox="0 0 14 14"
                             >
                               <g
@@ -3339,11 +3334,10 @@ exports[`Storyshots Molecules / Input / Phone Has Success 1`] = `
                             className="c16"
                           >
                             <svg
-                              aria-hidden="true"
                               className="c17"
                               focusable="false"
                               preserveAspectRatio="xMidYMid meet"
-                              role="presentation"
+                              role="img"
                               viewBox="0 0 14 14"
                             >
                               <g
@@ -3907,11 +3901,10 @@ exports[`Storyshots Molecules / Input / Phone Is Disabled 1`] = `
                             className="c17"
                           >
                             <svg
-                              aria-hidden="true"
                               className="c18"
                               focusable="false"
                               preserveAspectRatio="xMidYMid meet"
-                              role="presentation"
+                              role="img"
                               viewBox="0 0 14 14"
                             >
                               <g
@@ -4474,11 +4467,10 @@ exports[`Storyshots Molecules / Input / Phone Prefilled Default Values 1`] = `
                             className="c16"
                           >
                             <svg
-                              aria-hidden="true"
                               className="c17"
                               focusable="false"
                               preserveAspectRatio="xMidYMid meet"
-                              role="presentation"
+                              role="img"
                               viewBox="0 0 14 14"
                             >
                               <g
@@ -5071,11 +5063,10 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
                               className="c17"
                             >
                               <svg
-                                aria-hidden="true"
                                 className="c18"
                                 focusable="false"
                                 preserveAspectRatio="xMidYMid meet"
-                                role="presentation"
+                                role="img"
                                 viewBox="0 0 14 14"
                               >
                                 <g
@@ -5308,11 +5299,10 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
                               className="c17"
                             >
                               <svg
-                                aria-hidden="true"
                                 className="c18"
                                 focusable="false"
                                 preserveAspectRatio="xMidYMid meet"
-                                role="presentation"
+                                role="img"
                                 viewBox="0 0 14 14"
                               >
                                 <g
@@ -5545,11 +5535,10 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
                               className="c17"
                             >
                               <svg
-                                aria-hidden="true"
                                 className="c18"
                                 focusable="false"
                                 preserveAspectRatio="xMidYMid meet"
-                                role="presentation"
+                                role="img"
                                 viewBox="0 0 14 14"
                               >
                                 <g
@@ -5790,11 +5779,10 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
                               className="c17"
                             >
                               <svg
-                                aria-hidden="true"
                                 className="c18"
                                 focusable="false"
                                 preserveAspectRatio="xMidYMid meet"
-                                role="presentation"
+                                role="img"
                                 viewBox="0 0 14 14"
                               >
                                 <g
@@ -6590,11 +6578,10 @@ exports[`Storyshots Molecules / Input / Phone With Help Text 1`] = `
                             className="c16"
                           >
                             <svg
-                              aria-hidden="true"
                               className="c17"
                               focusable="false"
                               preserveAspectRatio="xMidYMid meet"
-                              role="presentation"
+                              role="img"
                               viewBox="0 0 14 14"
                             >
                               <g
