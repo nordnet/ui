@@ -1,3 +1,10 @@
+# [11.0.0-beta.2](https://github.com/nordnet/ui/compare/v11.0.0-beta.1...v11.0.0-beta.2) (2022-09-13)
+
+
+### Bug Fixes
+
+* handle title differently ([c73068c](https://github.com/nordnet/ui/commit/c73068c))
+
 # [11.0.0-beta.1](https://github.com/nordnet/ui/compare/v10.44.1...v11.0.0-beta.1) (2022-09-13)
 
 
