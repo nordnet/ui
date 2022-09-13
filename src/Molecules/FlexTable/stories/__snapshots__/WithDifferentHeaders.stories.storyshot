@@ -75,7 +75,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
   user-select: none;
   width: 8px;
   height: 8px;
-  fill: #6E6E69;
+  fill: #6E6E6E;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -94,7 +94,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
 
 .c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -476,14 +476,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
 
 exports[`Storyshots Molecules / FlexTable / With different headers Default Table Headers 1`] = `
 .c17 {
-  height: 12px;
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  bottom: 1px;
+  height: 16px;
   width: 16px;
-  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: sub;
 }
 
 .c3 {
@@ -574,7 +577,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
   user-select: none;
   width: 8px;
   height: 8px;
-  fill: #6E6E69;
+  fill: #6E6E6E;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -593,7 +596,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
 
 .c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -848,40 +851,35 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
               className="c16"
             >
               <svg
+                aria-hidden="true"
                 className="c17"
                 focusable="false"
-                role="img"
-                viewBox="0 0 640 480"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 14 14"
               >
                 <g
-                  transform="translate(50.082) scale(.9375)"
+                  clipPath="url(#clip0_1042_410)"
                 >
-                  <g
-                    fillRule="evenodd"
-                    strokeWidth="1pt"
+                  <path
+                    d="M7 14c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7Z"
+                    fill="#FFCF00"
+                  />
+                  <path
+                    d="M5.4783 6.087h8.4624C13.4933 2.6524 10.5565 0 7 0a7.0246 7.0246 0 0 0-1.5217.1664V6.087ZM3.6522 6.087V.851C1.73 1.9.354 3.8235.0592 6.087h3.593ZM3.6521 7.913H.0592c.2949 2.2635 1.6709 4.1871 3.593 5.2358V7.913ZM5.4783 7.913v5.9206c.49.1086.999.1664 1.5217.1664 3.5565 0 6.4933-2.6524 6.9407-6.087H5.4783Z"
+                    fill="#2650BF"
+                  />
+                </g>
+                <defs>
+                  <clipPath
+                    id="clip0_1042_410"
                   >
                     <path
-                      d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
-                      fill="#006aa7"
+                      d="M0 0h14v14H0z"
+                      fill="#fff"
                     />
-                    <path
-                      d="M-121.103 204.984h256v102.4h-256z"
-                      fill="#fecc00"
-                    />
-                    <path
-                      d="M133.843.01h102.4v511.997h-102.4z"
-                      fill="#fecc00"
-                    />
-                    <path
-                      d="M232.995 205.013h460.798v102.4H232.995z"
-                      fill="#fecc00"
-                    />
-                    <path
-                      d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
-                      fill="#006aa7"
-                    />
-                  </g>
-                </g>
+                  </clipPath>
+                </defs>
                 <title>
                   Sweden
                 </title>
@@ -1089,7 +1087,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   user-select: none;
   width: 8px;
   height: 8px;
-  fill: #6E6E69;
+  fill: #6E6E6E;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1108,7 +1106,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
 
 .c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -1611,7 +1609,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   user-select: none;
   width: 8px;
   height: 8px;
-  fill: #6E6E69;
+  fill: #6E6E6E;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1645,7 +1643,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
 
 .c20 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -2160,7 +2158,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
 
 .c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -7635,7 +7633,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
   user-select: none;
   width: 8px;
   height: 8px;
-  fill: #6E6E69;
+  fill: #6E6E6E;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -7654,7 +7652,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
 
 .c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 16px;

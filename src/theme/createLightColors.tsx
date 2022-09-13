@@ -30,6 +30,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     accountBadgeBackground: rawColor.black,
     accountBadgeText: rawColor.white,
+    allocationBars: rawColor.teal500,
 
     background: rawColor.gray100,
     backgroundBlack: rawColor.black,
@@ -88,6 +89,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     cta: rawColor.blue500,
     ctaHover: rawColor.blue600,
 
+    danger: rawColor.red600,
+
     darkmodeIllustrationBackground: rawColor.blue800,
     darkmodeIllustrationLightBulb: rawColor.blue400,
 
@@ -126,6 +129,11 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     flagBorder: rawColor.gray6,
     fundExchange: rawColor.gray2,
 
+    functionBlue: rawColor.functionBlue,
+    functionRed: rawColor.functionRed,
+    functionGreen: rawColor.functionGreen,
+    functionYellow: rawColor.functionYellow,
+
     generationSavingsTimelineColor1: rawColor.complementaryGreen1,
     generationSavingsTimelineColor2: rawColor.complementaryPink1,
     generationSavingsTimelineColor3: rawColor.brandBlue,
@@ -152,7 +160,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     inputBackground: rawColor.white,
     inputBorder: rawColor.gray400,
-    inputBorderError: rawColor.pink600,
+    inputBorderError: rawColor.red600,
     inputBorderHover: rawColor.gray700,
     inputBorderSuccess: rawColor.green600,
     inputHover: rawColor.gray100,
@@ -162,7 +170,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     investmentPredictionGraphPink: rawColor.complementaryPink1,
     investmentPredictionGraphTurquoise: rawColor.complementaryTurquoise2,
 
-    label: rawColor.gray2,
+    label: rawColor.gray600,
     lineScaleValueColor: rawColor.complementaryTurquoise1,
     listItemBackgroundHover: Color(rawColor.complementaryTurquoise1).alpha(0.1).rgb().string(),
     loanRatesGraphColor2: rawColor.complementaryBlue2,
@@ -251,10 +259,16 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     periodScrollButtonBackground: rawColor.gray100,
     periodScrollButtonIcon: rawColor.gray800,
 
+    savingsForecastExpected: rawColor.green600,
+    savingsForecastNormal: rawColor.gray500,
+    savingsForecastPotential: rawColor.gray100,
+
     searchBackground: rawColor.gray1,
     searchText: rawColor.gray7,
 
-    segmentedControlBackground: rawColor.gray7,
+    segmentedControlBackground: rawColor.gray100,
+    segmentedControlBackgroundSelected: rawColor.white,
+    segmentedControlBorder: rawColor.gray100,
 
     selectionCardBorder: rawColor.gray5,
     selectionCardText: rawColor.gray2,
@@ -301,6 +315,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     tabTitle: rawColor.gray600,
     tabTitleActive: rawColor.gray800,
 
+    newBadgeLabelBackground: rawColor.teal100,
+    newBadgeLabelText: rawColor.teal600,
+
     text: rawColor.gray0,
     textLight: rawColor.white, // FIXME: to be removed later
 
@@ -331,6 +348,10 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     sfdrArticle9: rawColor.sfdrArticle9,
 
     popularBadgeBackground: rawColor.pink100,
+    popularBadgeText: rawColor.pink600,
+
+    promotionBannerTitle: rawColor.gray800,
+    promotionBannerDescription: rawColor.gray600,
 
     joinSharevilleIllustration: rawColor.green600,
     joinSharevilleBadge: rawColor.green200,
@@ -362,6 +383,21 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     illustrationBackgroundBlue: rawColor.blue100,
     narrowCardBorder: rawColor.gray200,
     existingMonthlyDepositsDivider: rawColor.gray200,
+
+    visitedInstrumentsEmptyStateColor: rawColor.gray500,
+    visitedInstrumentsInstrumentBorder: rawColor.gray200,
+    visitedInstrumentsInstrumentBackground: rawColor.white,
+    visitedInstrumentsInstrumentColorLoading: rawColor.gray200,
+    visitedInstrumentsInstrumentColorError: rawColor.gray600,
+    visitedInstrumentsPositiveFont: rawColor.green600,
+    visitedInstrumentsPositiveFill: rawColor.green100,
+    visitedInstrumentsNegativeFont: rawColor.pink600,
+    visitedInstrumentsNegativeFill: rawColor.pink100,
+
+    progressIndicatorBackground: rawColor.white,
+    progressIndicatorBarEmpty: rawColor.gray200,
+    progressIndicatorBar: rawColor.blue500,
+    progressIndicatorSvgHover: rawColor.blue500,
 
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,

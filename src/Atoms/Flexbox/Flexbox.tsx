@@ -64,6 +64,24 @@ const getGutterStyles = (
   `;
 };
 
+const getGapStyles = (theme: Theme, gap: Props['gap']) => {
+  let gapStyle: string;
+
+  if (!gap) {
+    return '';
+  }
+
+  if (typeof gap === 'number') {
+    gapStyle = `${theme.spacing.unit(gap)}px`;
+  } else if (typeof gap === 'string') {
+    gapStyle = gap;
+  } else {
+    gapStyle = `${theme.spacing.unit(gap.row)}px ${theme.spacing.unit(gap.column)}px;`;
+  }
+
+  return `gap: ${gapStyle};`;
+};
+
 const getContainerStyles = (p: Props & { theme: Theme }) => `
   display: ${p.hidden ? 'none' : 'flex'};
   ${p.width ? `width: ${isNumber(p.width) ? `${p.theme.spacing.unit(p.width)}px` : p.width}` : ''};
@@ -78,6 +96,7 @@ const getContainerStyles = (p: Props & { theme: Theme }) => `
   ${p.alignItems ? `align-items: ${p.alignItems};` : ''}
   ${p.alignContent ? `align-content: ${p.alignContent};` : ''}
   ${p.gutter ? getGutterStyles(p.theme, p.gutter, p.direction) : ''}
+  ${getGapStyles(p.theme, p.gap)}
 `;
 
 const getItemStyles = (p: Props & { theme: Theme }) => `
@@ -107,6 +126,7 @@ const sanitizeProps = R.omit([
   'contain',
   'container',
   'item',
+  'gap',
   'gutter',
   'alignContent',
   'alignItems',

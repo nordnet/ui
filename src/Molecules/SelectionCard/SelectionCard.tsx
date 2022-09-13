@@ -83,7 +83,7 @@ const StyledCard = styled(Card).withConfig({
   `}
 
   ${(p) => p.border && `border: 1px solid ${p.theme.color.inputBorder}`};
-  ${(p) => p.error && !p.disabled && `border: 1px solid ${p.theme.color.negative}`};
+  ${(p) => p.error && !p.disabled && `border: 1px solid ${p.theme.color.functionRed}`};
   ${(p) => !p.disabled && p.selected && overlayStyles};
 
   &:hover {

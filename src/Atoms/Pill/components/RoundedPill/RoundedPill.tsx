@@ -3,8 +3,8 @@ import styled, { ThemedStyledProps } from 'styled-components';
 
 import { Props, CircleProps } from './RoundedPill.types';
 import { Theme } from '../../../../theme/theme.types';
-import { isFunction } from '../../../../common/utils';
-import { Flexbox, Icon, Button } from '../../../..';
+import { isFunction, isNumber } from '../../../../common/utils';
+import { Flexbox, Icon, Button, Development } from '../../../..';
 
 // TODO: move this into a shared utils file
 const getColor = (props: ThemedStyledProps<CircleProps, Theme>) => {
@@ -42,18 +42,27 @@ const Circle = styled.div<CircleProps>`
   background-color: ${(p) => getColor(p)};
 `;
 
-export const RoundedPill: React.FC<Props> = ({ className, label, color, onClose }) => {
-  return (
-    <StyledDivRounded className={className} $hasOnClose={isFunction(onClose)}>
-      <Button variant="neutral" onClick={onClose}>
-        <Flexbox container alignItems="center" gutter={1}>
+export const RoundedPill: React.FC<Props> = ({ className, label, color, development, onClose }) => (
+  <StyledDivRounded className={className} $hasOnClose={isFunction(onClose)}>
+    <Button variant="neutral" onClick={onClose}>
+      <Flexbox container alignItems="center" gutter={1}>
+        {color ? (
           <Flexbox item>
             <Circle $color={color} />
           </Flexbox>
-          <Flexbox item>{label}</Flexbox>
-          <Flexbox item>{isFunction(onClose) ? <StyledCross /> : <></>}</Flexbox>
-        </Flexbox>
-      </Button>
-    </StyledDivRounded>
-  );
-};
+        ) : null}
+        {label ? <Flexbox item>{label}</Flexbox> : null}
+        {isNumber(development) ? (
+          <Flexbox item>
+            <Development value={development} percentage decimals={2} />
+          </Flexbox>
+        ) : null}
+        {isFunction(onClose) ? (
+          <Flexbox item>
+            <StyledCross />
+          </Flexbox>
+        ) : null}
+      </Flexbox>
+    </Button>
+  </StyledDivRounded>
+);

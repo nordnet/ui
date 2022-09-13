@@ -1,0 +1,2066 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules / ProgressIndicator Default 1`] = `
+Array [
+  .c0 {
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  background-color: #FFFFFF;
+}
+
+.c4 {
+  margin-left: 12px;
+  background-color: transparent;
+}
+
+.c9 {
+  margin-right: 12px;
+  background-color: transparent;
+}
+
+.c10 {
+  padding-top: 12px;
+  background-color: transparent;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.c3 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #336BFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: inherit;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c8 {
+  height: 4px;
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  overflow: hidden;
+  background: #EEEEEE;
+  margin: 0 auto;
+}
+
+.c8:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: -webkit-transform 333ms;
+  -webkit-transition: transform 333ms;
+  transition: transform 333ms;
+  -webkit-transform: scaleX(0.6666666666666666);
+  -ms-transform: scaleX(0.6666666666666666);
+  transform: scaleX(0.6666666666666666);
+  background: #336BFF;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: '';
+}
+
+.c6 {
+  overflow: hidden;
+  width: 0;
+  opacity: 0;
+  -webkit-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transition: width 333ms,opacity 333ms,-webkit-transform 333ms;
+  -webkit-transition: width 333ms,opacity 333ms,transform 333ms;
+  transition: width 333ms,opacity 333ms,transform 333ms;
+  display: none;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: transparent;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1;
+  border: none;
+  visibility: visible;
+}
+
+.c2 svg {
+  -webkit-transition: color 333ms;
+  transition: color 333ms;
+}
+
+.c2:hover svg {
+  color: #336BFF;
+}
+
+.c2:hover .c5 {
+  width: 4.5ch;
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+@media (min-width:1280px) {
+  .c0 {
+    padding-top: 16px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (min-width:760px) {
+  .c11 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+@media (min-width:760px) {
+  .c6 {
+    display: block;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <button
+        className="c2"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            d="M13.42 0l-8 8 8 8h-2.828l-8-8 8-8h2.828z"
+            fill="currentColor"
+          />
+        </svg>
+        <div
+          className="c4 c5 c6"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c7"
+          >
+            Back
+          </span>
+        </div>
+      </button>
+      <div
+        className="c8"
+      />
+      <button
+        className="c2"
+        onClick={[Function]}
+      >
+        <div
+          className="c9 c5 c6"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c7"
+          >
+            Info
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            d="M7 4h2v2H7V4zM7 7h2v5H7V7z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm0-2A6 6 0 108 2a6 6 0 000 12z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      className="c10"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c11"
+      >
+        Progress flow title
+      </span>
+    </div>
+  </div>,
+  .c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c2:hover {
+  background-color: #2650BF;
+}
+
+.c2:active {
+  background-color: #1F4099;
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          1
+        </span>
+      </span>
+    </button>
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          2
+        </span>
+      </span>
+    </button>
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          3
+        </span>
+      </span>
+    </button>
+  </div>,
+]
+`;
+
+exports[`Storyshots Molecules / ProgressIndicator No Buttons 1`] = `
+Array [
+  .c0 {
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  background-color: #FFFFFF;
+}
+
+.c4 {
+  margin-left: 12px;
+  background-color: transparent;
+}
+
+.c10 {
+  margin-right: 12px;
+  background-color: transparent;
+}
+
+.c11 {
+  padding-top: 12px;
+  background-color: transparent;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.c3 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #336BFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: inherit;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c8 {
+  height: 4px;
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  overflow: hidden;
+  background: #EEEEEE;
+  margin: 7px auto;
+}
+
+.c8:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: -webkit-transform 333ms;
+  -webkit-transition: transform 333ms;
+  transition: transform 333ms;
+  -webkit-transform: scaleX(0.6666666666666666);
+  -ms-transform: scaleX(0.6666666666666666);
+  transform: scaleX(0.6666666666666666);
+  background: #336BFF;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: '';
+}
+
+.c6 {
+  overflow: hidden;
+  width: 0;
+  opacity: 0;
+  -webkit-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transition: width 333ms,opacity 333ms,-webkit-transform 333ms;
+  -webkit-transition: width 333ms,opacity 333ms,transform 333ms;
+  transition: width 333ms,opacity 333ms,transform 333ms;
+  display: none;
+}
+
+.c2 {
+  display: none;
+  background: transparent;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1;
+  border: none;
+  visibility: visible;
+}
+
+.c2 svg {
+  -webkit-transition: color 333ms;
+  transition: color 333ms;
+}
+
+.c2:hover svg {
+  color: #336BFF;
+}
+
+.c2:hover .c5 {
+  width: 4.5ch;
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.c9 {
+  display: none;
+  background: transparent;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1;
+  border: none;
+  visibility: hidden;
+}
+
+.c9 svg {
+  -webkit-transition: color 333ms;
+  transition: color 333ms;
+}
+
+.c9:hover svg {
+  color: #336BFF;
+}
+
+.c9:hover .c5 {
+  width: 4.5ch;
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+@media (min-width:1280px) {
+  .c0 {
+    padding-top: 16px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (min-width:760px) {
+  .c12 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+@media (min-width:760px) {
+  .c6 {
+    display: block;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <button
+        className="c2"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            d="M13.42 0l-8 8 8 8h-2.828l-8-8 8-8h2.828z"
+            fill="currentColor"
+          />
+        </svg>
+        <div
+          className="c4 c5 c6"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c7"
+          >
+            Back
+          </span>
+        </div>
+      </button>
+      <div
+        className="c8"
+      />
+      <button
+        className="c9"
+      >
+        <div
+          className="c10 c5 c6"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c7"
+          >
+            Info
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            d="M7 4h2v2H7V4zM7 7h2v5H7V7z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm0-2A6 6 0 108 2a6 6 0 000 12z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      className="c11"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c12"
+      >
+        Progress flow title
+      </span>
+    </div>
+  </div>,
+  .c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c2:hover {
+  background-color: #2650BF;
+}
+
+.c2:active {
+  background-color: #1F4099;
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          1
+        </span>
+      </span>
+    </button>
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          2
+        </span>
+      </span>
+    </button>
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          3
+        </span>
+      </span>
+    </button>
+  </div>,
+]
+`;
+
+exports[`Storyshots Molecules / ProgressIndicator No Close Button 1`] = `
+Array [
+  .c0 {
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  background-color: #FFFFFF;
+}
+
+.c4 {
+  margin-left: 12px;
+  background-color: transparent;
+}
+
+.c9 {
+  margin-right: 12px;
+  background-color: transparent;
+}
+
+.c10 {
+  padding-top: 12px;
+  background-color: transparent;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.c3 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #336BFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: inherit;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c8 {
+  height: 4px;
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  overflow: hidden;
+  background: #EEEEEE;
+  margin: 0 auto;
+}
+
+.c8:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: -webkit-transform 333ms;
+  -webkit-transition: transform 333ms;
+  transition: transform 333ms;
+  -webkit-transform: scaleX(0.6666666666666666);
+  -ms-transform: scaleX(0.6666666666666666);
+  transform: scaleX(0.6666666666666666);
+  background: #336BFF;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: '';
+}
+
+.c6 {
+  overflow: hidden;
+  width: 0;
+  opacity: 0;
+  -webkit-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transition: width 333ms,opacity 333ms,-webkit-transform 333ms;
+  -webkit-transition: width 333ms,opacity 333ms,transform 333ms;
+  transition: width 333ms,opacity 333ms,transform 333ms;
+  display: none;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: transparent;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1;
+  border: none;
+  visibility: visible;
+}
+
+.c2 svg {
+  -webkit-transition: color 333ms;
+  transition: color 333ms;
+}
+
+.c2:hover svg {
+  color: #336BFF;
+}
+
+.c2:hover .c5 {
+  width: 4.5ch;
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+@media (min-width:1280px) {
+  .c0 {
+    padding-top: 16px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (min-width:760px) {
+  .c11 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+@media (min-width:760px) {
+  .c6 {
+    display: block;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <button
+        className="c2"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            d="M13.42 0l-8 8 8 8h-2.828l-8-8 8-8h2.828z"
+            fill="currentColor"
+          />
+        </svg>
+        <div
+          className="c4 c5 c6"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c7"
+          >
+            Back
+          </span>
+        </div>
+      </button>
+      <div
+        className="c8"
+      />
+      <button
+        className="c2"
+        onClick={[Function]}
+      >
+        <div
+          className="c9 c5 c6"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c7"
+          >
+            Info
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            d="M7 4h2v2H7V4zM7 7h2v5H7V7z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm0-2A6 6 0 108 2a6 6 0 000 12z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      className="c10"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c11"
+      >
+        Progress flow title
+      </span>
+    </div>
+  </div>,
+  .c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c2:hover {
+  background-color: #2650BF;
+}
+
+.c2:active {
+  background-color: #1F4099;
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          1
+        </span>
+      </span>
+    </button>
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          2
+        </span>
+      </span>
+    </button>
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          3
+        </span>
+      </span>
+    </button>
+  </div>,
+]
+`;
+
+exports[`Storyshots Molecules / ProgressIndicator No Help Button 1`] = `
+Array [
+  .c0 {
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  background-color: #FFFFFF;
+}
+
+.c4 {
+  margin-left: 12px;
+  background-color: transparent;
+}
+
+.c10 {
+  margin-right: 12px;
+  background-color: transparent;
+}
+
+.c11 {
+  padding-top: 12px;
+  background-color: transparent;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.c3 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #336BFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: inherit;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c8 {
+  height: 4px;
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  overflow: hidden;
+  background: #EEEEEE;
+  margin: 0 auto;
+}
+
+.c8:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: -webkit-transform 333ms;
+  -webkit-transition: transform 333ms;
+  transition: transform 333ms;
+  -webkit-transform: scaleX(0.6666666666666666);
+  -ms-transform: scaleX(0.6666666666666666);
+  transform: scaleX(0.6666666666666666);
+  background: #336BFF;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: '';
+}
+
+.c6 {
+  overflow: hidden;
+  width: 0;
+  opacity: 0;
+  -webkit-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transition: width 333ms,opacity 333ms,-webkit-transform 333ms;
+  -webkit-transition: width 333ms,opacity 333ms,transform 333ms;
+  transition: width 333ms,opacity 333ms,transform 333ms;
+  display: none;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: transparent;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1;
+  border: none;
+  visibility: visible;
+}
+
+.c2 svg {
+  -webkit-transition: color 333ms;
+  transition: color 333ms;
+}
+
+.c2:hover svg {
+  color: #336BFF;
+}
+
+.c2:hover .c5 {
+  width: 4.5ch;
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: transparent;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1;
+  border: none;
+  visibility: hidden;
+}
+
+.c9 svg {
+  -webkit-transition: color 333ms;
+  transition: color 333ms;
+}
+
+.c9:hover svg {
+  color: #336BFF;
+}
+
+.c9:hover .c5 {
+  width: 4.5ch;
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+@media (min-width:1280px) {
+  .c0 {
+    padding-top: 16px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (min-width:760px) {
+  .c12 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+@media (min-width:760px) {
+  .c6 {
+    display: block;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <button
+        className="c2"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            d="M13.42 0l-8 8 8 8h-2.828l-8-8 8-8h2.828z"
+            fill="currentColor"
+          />
+        </svg>
+        <div
+          className="c4 c5 c6"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c7"
+          >
+            Back
+          </span>
+        </div>
+      </button>
+      <div
+        className="c8"
+      />
+      <button
+        className="c9"
+      >
+        <div
+          className="c10 c5 c6"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c7"
+          >
+            Info
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            d="M7 4h2v2H7V4zM7 7h2v5H7V7z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm0-2A6 6 0 108 2a6 6 0 000 12z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      className="c11"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c12"
+      >
+        Progress flow title
+      </span>
+    </div>
+  </div>,
+  .c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c2:hover {
+  background-color: #2650BF;
+}
+
+.c2:active {
+  background-color: #1F4099;
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          1
+        </span>
+      </span>
+    </button>
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          2
+        </span>
+      </span>
+    </button>
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          3
+        </span>
+      </span>
+    </button>
+  </div>,
+]
+`;
+
+exports[`Storyshots Molecules / ProgressIndicator No Title 1`] = `
+Array [
+  .c0 {
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  background-color: #FFFFFF;
+}
+
+.c4 {
+  margin-left: 12px;
+  background-color: transparent;
+}
+
+.c10 {
+  margin-right: 12px;
+  background-color: transparent;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.c3 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #336BFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: inherit;
+}
+
+.c8 {
+  height: 4px;
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  overflow: hidden;
+  background: #EEEEEE;
+  margin: 7px auto;
+}
+
+.c8:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: -webkit-transform 333ms;
+  -webkit-transition: transform 333ms;
+  transition: transform 333ms;
+  -webkit-transform: scaleX(0.6666666666666666);
+  -ms-transform: scaleX(0.6666666666666666);
+  transform: scaleX(0.6666666666666666);
+  background: #336BFF;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: '';
+}
+
+.c6 {
+  overflow: hidden;
+  width: 0;
+  opacity: 0;
+  -webkit-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transition: width 333ms,opacity 333ms,-webkit-transform 333ms;
+  -webkit-transition: width 333ms,opacity 333ms,transform 333ms;
+  transition: width 333ms,opacity 333ms,transform 333ms;
+  display: none;
+}
+
+.c2 {
+  display: none;
+  background: transparent;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1;
+  border: none;
+  visibility: visible;
+}
+
+.c2 svg {
+  -webkit-transition: color 333ms;
+  transition: color 333ms;
+}
+
+.c2:hover svg {
+  color: #336BFF;
+}
+
+.c2:hover .c5 {
+  width: 4.5ch;
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.c9 {
+  display: none;
+  background: transparent;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1;
+  border: none;
+  visibility: hidden;
+}
+
+.c9 svg {
+  -webkit-transition: color 333ms;
+  transition: color 333ms;
+}
+
+.c9:hover svg {
+  color: #336BFF;
+}
+
+.c9:hover .c5 {
+  width: 4.5ch;
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+@media (min-width:1280px) {
+  .c0 {
+    padding-top: 16px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (min-width:760px) {
+  .c6 {
+    display: block;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <button
+        className="c2"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            d="M13.42 0l-8 8 8 8h-2.828l-8-8 8-8h2.828z"
+            fill="currentColor"
+          />
+        </svg>
+        <div
+          className="c4 c5 c6"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c7"
+          >
+            Back
+          </span>
+        </div>
+      </button>
+      <div
+        className="c8"
+      />
+      <button
+        className="c9"
+      >
+        <div
+          className="c10 c5 c6"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c7"
+          >
+            Info
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            d="M7 4h2v2H7V4zM7 7h2v5H7V7z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm0-2A6 6 0 108 2a6 6 0 000 12z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>,
+  .c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c2:hover {
+  background-color: #2650BF;
+}
+
+.c2:active {
+  background-color: #1F4099;
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          1
+        </span>
+      </span>
+    </button>
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          2
+        </span>
+      </span>
+    </button>
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          3
+        </span>
+      </span>
+    </button>
+  </div>,
+]
+`;

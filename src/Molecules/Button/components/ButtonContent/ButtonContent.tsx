@@ -87,7 +87,6 @@ export const ButtonContent: ButtonContentComponent = (props) => {
       )}
     </>
   );
-
   if (variant === 'neutral') {
     return content;
   }

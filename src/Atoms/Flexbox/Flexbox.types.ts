@@ -51,6 +51,7 @@ export type ContainerProps = {
   /** a11y */
   role?: string;
   title?: string;
+  gap?: number | string | { column: number; row: number };
 };
 
 export type ItemProps = {

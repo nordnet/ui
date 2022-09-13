@@ -27,6 +27,12 @@ export type RawColor = {
   complementaryTurquoise1: string;
   complementaryTurquoise2: string;
 
+  // FUNCTION
+  functionBlue: string;
+  functionRed: string;
+  functionGreen: string;
+  functionYellow: string;
+
   // GRAYSCALE PALETTE OLD
   gray0: string;
   gray1: string;
@@ -156,6 +162,10 @@ export type ThemeColors = {
    * white
    */
   accountBadgeText: string;
+  /**
+   * teal500
+   */
+  allocationBars: string;
   /**
    * blue500
    */
@@ -296,6 +306,8 @@ export type ThemeColors = {
   cta: string;
   /** blue600 */
   ctaHover: string;
+  /** light: red600, dark: red500 */
+  danger: string;
   /** blue800 */
   darkmodeIllustrationBackground: string;
   /** blue400 */
@@ -359,6 +371,15 @@ export type ThemeColors = {
   /** gray2 */
   fundExchange: string;
 
+  /** functionBlue */
+  functionBlue: string;
+  /** functionRed */
+  functionRed: string;
+  /** functionGreen */
+  functionGreen: string;
+  /** functionYellow */
+  functionYellow: string;
+
   /** complementaryGreen1 */
   generationSavingsTimelineColor1: string;
   /** complementaryPink1 */
@@ -395,7 +416,7 @@ export type ThemeColors = {
   inputBorderError: string;
   /** gray700 */
   inputBorderHover: string;
-  /** positive */
+  /** light: green600, dark: green500 */
   inputBorderSuccess: string;
   /** gray100 */
   inputHover: string;
@@ -407,7 +428,7 @@ export type ThemeColors = {
   investmentPredictionGraphPink: string;
   /** complementaryTurquoise2 */
   investmentPredictionGraphTurquoise: string;
-  /** gray2 */
+  /** gray600 */
   label: string;
   /** complementaryTurquoise1 */
   lineScaleValueColor: string;
@@ -477,6 +498,10 @@ export type ThemeColors = {
   placeholderText: string;
   /** positive */
   positive: string;
+  /** gray800 */
+  promotionBannerTitle: string;
+  /** gray600 */
+  promotionBannerDescription: string;
   /** green500 */
   positiveBlackBackground: string;
   /**
@@ -523,9 +548,9 @@ export type ThemeColors = {
   privateBankingBannerTitle: string;
   /** cta */
   progressBarActive: string;
-  /** positive */
+  /** green500 */
   progressBarDone: string;
-  /** positive */
+  /** red500 */
   progressBarFailure: string;
   /** gray4 */
   progressBarNext: string;
@@ -535,14 +560,22 @@ export type ThemeColors = {
   progressBarWarning: string;
   /** gray100 */
   pillBackground: string;
+  /** savings forecast drawer colors */
+  savingsForecastExpected: string;
+  savingsForecastNormal: string;
+  savingsForecastPotential: string;
   /** gray1 */
   searchBackground: string;
   /** gray1 */
   searchText: string;
   /** gray5 */
   selectionCardBorder: string;
-  /** gray7 */
+  /** gray100 */
   segmentedControlBackground: string;
+  /** white */
+  segmentedControlBackgroundSelected: string;
+  /** gray100 */
+  segmentedControlBorder: string;
   /** gray2 */
   selectionCardText: string;
   /** white */
@@ -611,17 +644,21 @@ export type ThemeColors = {
   tabTitle: string;
   /** gray800 */
   tabTitleActive: string;
+  /** teal100 */
+  newBadgeLabelBackground: string;
+  /** teal600 */
+  newBadgeLabelText: string;
   /** gray0 */
   text: string;
   /** white */
   textLight: string;
   /** cta */
   timelineActive: string;
-  /** negative */
+  /** red500 */
   timelineFailure: string;
   /** gray4 */
   timelineNext: string;
-  /** positive */
+  /** green500 */
   timelineSuccess: string;
   /** index */
   timelineWarning: string;
@@ -629,7 +666,7 @@ export type ThemeColors = {
   transferPendingIconColor: string;
   /** brandPink */
   transferProgressBar1: string;
-  /** positive */
+  /** green500 */
   transferProgressBar2: string;
   /** gray5 */
   transferProgressBar3: string;
@@ -665,6 +702,8 @@ export type ThemeColors = {
   sfdrArticle9: string;
   /** pink100 */
   popularBadgeBackground: string;
+  /** pink */
+  popularBadgeText: string;
   /** gray800 */
   periodScrollButtonBackground: string;
   /** gray100 */
@@ -697,6 +736,22 @@ export type ThemeColors = {
   narrowCardBorder: string;
   /** existing monthly deposits table row divider */
   existingMonthlyDepositsDivider: string;
+  /** visited instrument assorted colors */
+  visitedInstrumentsInstrumentBorder: string;
+  visitedInstrumentsEmptyStateColor: string;
+  visitedInstrumentsInstrumentBackground: string;
+  visitedInstrumentsInstrumentColorLoading: string;
+  visitedInstrumentsInstrumentColorError: string;
+  visitedInstrumentsPositiveFont: string;
+  visitedInstrumentsPositiveFill: string;
+  visitedInstrumentsNegativeFont: string;
+  visitedInstrumentsNegativeFill: string;
+  /** progress indicator colors */
+  progressIndicatorBackground: string;
+  progressIndicatorBarEmpty: string;
+  progressIndicatorBar: string;
+  progressIndicatorSvgHover: string;
+
   /** @deprecated * gray3 */
   disabled: string;
   /** @deprecated * complementaryBlue2 */

@@ -1,5 +1,4 @@
 // Small Illustrations
-
 import Archive48 from './Small/Archive48';
 import ArrowDown48 from './Small/ArrowDown48';
 import ArrowUp48 from './Small/ArrowUp48';
@@ -21,8 +20,8 @@ import Search48 from './Small/Search48';
 import Watchlist48 from './Small/Watchlist48';
 
 // Medium Illustrations
-
 import Account64 from './Medium/Account64';
+import Auto64 from './Medium/Auto64';
 import Bank64 from './Medium/Bank64';
 import Blog64 from './Medium/Blog64';
 import Book64 from './Medium/Book64';
@@ -36,9 +35,11 @@ import MoneyDeposit64 from './Medium/MoneyDeposit64';
 import MoneyWithdraw64 from './Medium/MoneyWithdraw64';
 import MonthlySavings64 from './Medium/MonthlySavings64';
 import News64 from './Medium/News64';
+import Pension64 from './Medium/Pension64';
 import RiskHigh64 from './Medium/RiskHigh64';
 import RiskLow64 from './Medium/RiskLow64';
 import RiskMedium64 from './Medium/RiskMedium64';
+import Robot64 from './Medium/Robot64';
 import Security64 from './Medium/Security64';
 import StatusError64 from './Medium/StatusError64';
 import StatusFail64 from './Medium/StatusFail64';
@@ -64,6 +65,7 @@ export default {
   ArrowLeft48,
   ArrowRight48,
   ArrowUp48,
+  Auto64,
   Bank64,
   Blog64,
   Book64,
@@ -87,11 +89,13 @@ export default {
   News64,
   Orders48,
   Outbox48,
+  Pension64,
   PriceAlert48,
   Refresh48,
   RiskHigh64,
   RiskLow64,
   RiskMedium64,
+  Robot64,
   Search48,
   Security64,
   StatusError64,

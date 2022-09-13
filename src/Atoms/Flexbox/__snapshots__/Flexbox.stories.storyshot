@@ -734,6 +734,452 @@ exports[`Storyshots Atoms / Flexbox With Container And Item Props 1`] = `
 </div>
 `;
 
+exports[`Storyshots Atoms / Flexbox With Custom Gap 1`] = `
+Array [
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+  .c0 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<span
+    className="Typography__Span-sc-10mju41-0 c0"
+  >
+    With gap as unit
+  </span>,
+  .c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #eee;
+  height: 100%;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      0
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      1
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      2
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      3
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      4
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      5
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      6
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      7
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      8
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      9
+    </div>
+  </div>,
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+  .c0 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<span
+    className="Typography__Span-sc-10mju41-0 c0"
+  >
+    With gap as string
+  </span>,
+  .c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px 10vw;
+}
+
+.c1 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #eee;
+  height: 100%;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      0
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      1
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      2
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      3
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      4
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      5
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      6
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      7
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      8
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      9
+    </div>
+  </div>,
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+  .c0 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<span
+    className="Typography__Span-sc-10mju41-0 c0"
+  >
+    With gap as object
+  </span>,
+  .c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #eee;
+  height: 100%;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      0
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      1
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      2
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      3
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      4
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      5
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      6
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      7
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      8
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      9
+    </div>
+  </div>,
+]
+`;
+
 exports[`Storyshots Atoms / Flexbox With Custom Gutter 1`] = `
 .c0 {
   box-sizing: border-box;

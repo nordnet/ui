@@ -1,13 +1,17 @@
 import React from 'react';
 
-export type InternalProps = {
-  height: number;
-  inline?: boolean;
-  grayBorder: boolean;
-};
-export type Props = {
-  height?: number;
+/**
+ * 's' = 14px,
+ * 'm' = 16px,
+ * 'l' = 24px
+ */
+type FlagSize = { size: 's' | 'm' | 'l' };
+
+export type PropsWithSize = {
+  className?: string;
+  title?: string;
   country: string;
   inline?: boolean;
-};
-export type FlagComponent = React.FunctionComponent<Props>;
+} & FlagSize;
+
+export type FlagComponent = React.FunctionComponent<PropsWithSize>;

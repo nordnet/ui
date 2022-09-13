@@ -68,7 +68,7 @@ exports[`Storyshots Molecules / Input / Number Default 1`] = `
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -175,25 +175,25 @@ exports[`Storyshots Molecules / Input / Number Default 1`] = `
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -382,7 +382,7 @@ exports[`Storyshots Molecules / Input / Number Default with Auto Complete off 1`
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -489,25 +489,25 @@ exports[`Storyshots Molecules / Input / Number Default with Auto Complete off 1`
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -697,7 +697,7 @@ exports[`Storyshots Molecules / Input / Number Disabled 1`] = `
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -794,25 +794,25 @@ exports[`Storyshots Molecules / Input / Number Disabled 1`] = `
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -1009,7 +1009,7 @@ exports[`Storyshots Molecules / Input / Number On a coloured background 1`] = `
 
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -1116,25 +1116,25 @@ exports[`Storyshots Molecules / Input / Number On a coloured background 1`] = `
 }
 
 .c9::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c9::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c9:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c9::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -1383,7 +1383,7 @@ Array [
 
 .c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -1401,7 +1401,7 @@ Array [
 
 .c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #CC2269;
+  color: #CC3929;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -1744,7 +1744,7 @@ Array [
 
 .c18 {
   background-color: transparent;
-  border: 1px solid #CC2269;
+  border: 1px solid #CC3929;
   position: relative;
   border-width: 0 0 2px 0;
   height: auto;
@@ -2831,7 +2831,7 @@ Array [
 
 .c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -2938,25 +2938,25 @@ Array [
 }
 
 .c12::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c12::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c12:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c12::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -3347,7 +3347,7 @@ exports[`Storyshots Molecules / Input / Number With a smaller step 1`] = `
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -3454,25 +3454,25 @@ exports[`Storyshots Molecules / Input / Number With a smaller step 1`] = `
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -3661,7 +3661,7 @@ exports[`Storyshots Molecules / Input / Number With all actions 1`] = `
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -3768,25 +3768,25 @@ exports[`Storyshots Molecules / Input / Number With all actions 1`] = `
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -3980,7 +3980,7 @@ exports[`Storyshots Molecules / Input / Number With auto focus 1`] = `
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -4087,25 +4087,25 @@ exports[`Storyshots Molecules / Input / Number With auto focus 1`] = `
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -4302,7 +4302,7 @@ exports[`Storyshots Molecules / Input / Number With both addons 1`] = `
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -4370,25 +4370,25 @@ exports[`Storyshots Molecules / Input / Number With both addons 1`] = `
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -4552,7 +4552,7 @@ exports[`Storyshots Molecules / Input / Number With default value (Uncontrolled 
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -4659,25 +4659,25 @@ exports[`Storyshots Molecules / Input / Number With default value (Uncontrolled 
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -4866,7 +4866,7 @@ exports[`Storyshots Molecules / Input / Number With error if value is less than 
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -4884,7 +4884,7 @@ exports[`Storyshots Molecules / Input / Number With error if value is less than 
 
 .c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #CC2269;
+  color: #CC3929;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -4953,7 +4953,7 @@ exports[`Storyshots Molecules / Input / Number With error if value is less than 
 
 .c8 {
   background-color: #FFFFFF;
-  border: 1px solid #CC2269;
+  border: 1px solid #CC3929;
   position: relative;
   border-width: 1px;
   height: 40px;
@@ -4982,25 +4982,25 @@ exports[`Storyshots Molecules / Input / Number With error if value is less than 
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -5202,7 +5202,7 @@ exports[`Storyshots Molecules / Input / Number With extra info and error 1`] = `
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -5220,7 +5220,7 @@ exports[`Storyshots Molecules / Input / Number With extra info and error 1`] = `
 
 .c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #CC2269;
+  color: #CC3929;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -5289,7 +5289,7 @@ exports[`Storyshots Molecules / Input / Number With extra info and error 1`] = `
 
 .c8 {
   background-color: #FFFFFF;
-  border: 1px solid #CC2269;
+  border: 1px solid #CC3929;
   position: relative;
   border-width: 1px;
   height: 40px;
@@ -5318,25 +5318,25 @@ exports[`Storyshots Molecules / Input / Number With extra info and error 1`] = `
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -5538,7 +5538,7 @@ exports[`Storyshots Molecules / Input / Number With extra info below 1`] = `
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -5556,7 +5556,7 @@ exports[`Storyshots Molecules / Input / Number With extra info below 1`] = `
 
 .c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -5654,25 +5654,25 @@ exports[`Storyshots Molecules / Input / Number With extra info below 1`] = `
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -5862,7 +5862,7 @@ exports[`Storyshots Molecules / Input / Number With hidden label 1`] = `
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -5969,25 +5969,25 @@ exports[`Storyshots Molecules / Input / Number With hidden label 1`] = `
 }
 
 .c7::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -6193,7 +6193,7 @@ Array [
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -6300,25 +6300,25 @@ Array [
 }
 
 .c11::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c11::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c11:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c11::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -6562,7 +6562,7 @@ exports[`Storyshots Molecules / Input / Number With label tooltip 1`] = `
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -6669,25 +6669,25 @@ exports[`Storyshots Molecules / Input / Number With label tooltip 1`] = `
 }
 
 .c11::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c11::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c11:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c11::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -6912,7 +6912,7 @@ exports[`Storyshots Molecules / Input / Number With max and min 1`] = `
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -7019,25 +7019,25 @@ exports[`Storyshots Molecules / Input / Number With max and min 1`] = `
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -7204,7 +7204,7 @@ exports[`Storyshots Molecules / Input / Number With no steppers 1`] = `
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -7256,25 +7256,25 @@ exports[`Storyshots Molecules / Input / Number With no steppers 1`] = `
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -7483,7 +7483,7 @@ Array [
 
 .c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -7606,25 +7606,25 @@ Array [
 }
 
 .c12::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c12::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c12:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c12::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -7679,25 +7679,25 @@ Array [
 }
 
 .c13::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c13::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c13:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c13::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -7753,25 +7753,25 @@ Array [
 }
 
 .c16::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c16::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c16:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c16::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -7827,25 +7827,25 @@ Array [
 }
 
 .c19::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c19::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c19:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c19::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -8315,7 +8315,7 @@ exports[`Storyshots Molecules / Input / Number With right addon 1`] = `
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -8374,25 +8374,25 @@ exports[`Storyshots Molecules / Input / Number With right addon 1`] = `
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -8578,7 +8578,7 @@ Array [
 
 .c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -8596,7 +8596,7 @@ Array [
 
 .c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #CC2269;
+  color: #CC3929;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -8694,25 +8694,25 @@ Array [
 }
 
 .c12::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c12::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c12:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c12::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -8768,25 +8768,25 @@ Array [
 }
 
 .c16::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c16::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c16:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c16::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -8813,7 +8813,7 @@ Array [
 
 .c17 {
   background-color: #FFFFFF;
-  border: 1px solid #CC2269;
+  border: 1px solid #CC3929;
   position: relative;
   border-width: 1px;
   height: 32px;
@@ -8842,25 +8842,25 @@ Array [
 }
 
 .c17::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c17::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c17:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c17::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -9321,7 +9321,7 @@ exports[`Storyshots Molecules / Input / Number With success 1`] = `
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -9428,25 +9428,25 @@ exports[`Storyshots Molecules / Input / Number With success 1`] = `
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -9636,7 +9636,7 @@ Array [
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -9743,25 +9743,25 @@ Array [
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }

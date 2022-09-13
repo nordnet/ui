@@ -1,5 +1,6 @@
 import apartment from './apartment';
 import approve from './approve';
+import auto from './auto';
 import bank from './bank';
 import bankId from './bankId';
 import controls from './controls';
@@ -27,6 +28,7 @@ import recommendedFill from './recommendedFill';
 import riskHigh from './riskHigh';
 import riskLow from './riskLow';
 import riskMedium from './riskMedium';
+import robot from './robot';
 import shareville from './shareville';
 import stock from './stock';
 import sustainable from './sustainable';
@@ -38,6 +40,7 @@ import villa from './villa';
 export default {
   ...apartment,
   ...approve,
+  ...auto,
   ...bank,
   ...bankId,
   ...controls,
@@ -65,6 +68,7 @@ export default {
   ...riskHigh,
   ...riskLow,
   ...riskMedium,
+  ...robot,
   ...shareville,
   ...stock,
   ...sustainable,

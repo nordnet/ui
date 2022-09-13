@@ -80,7 +80,7 @@ exports[`Storyshots Molecules / Input / Select Accessible From Document Forms 1`
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -429,7 +429,7 @@ exports[`Storyshots Molecules / Input / Select Actions 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -770,7 +770,7 @@ exports[`Storyshots Molecules / Input / Select Actions And Empty Option List 1`]
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -1063,7 +1063,7 @@ exports[`Storyshots Molecules / Input / Select Auto Focus 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -1408,7 +1408,7 @@ Array [
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -1912,7 +1912,7 @@ Array [
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -2254,7 +2254,7 @@ exports[`Storyshots Molecules / Input / Select Controlled behaviour 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -2595,7 +2595,7 @@ exports[`Storyshots Molecules / Input / Select Custom Renderers 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -2926,7 +2926,7 @@ exports[`Storyshots Molecules / Input / Select Default Story 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -3258,7 +3258,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
 
 .c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -3276,7 +3276,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
 
 .c23 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #CC2269;
+  color: #CC3929;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -3285,7 +3285,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
 
 .c26 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -3334,7 +3334,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
 
 .c21 {
   height: 40px;
-  border: 1px solid #CC2269;
+  border: 1px solid #CC3929;
   position: relative;
   background: #FFFFFF;
   box-sizing: border-box;
@@ -4269,7 +4269,7 @@ exports[`Storyshots Molecules / Input / Select Disabled Items 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -4636,7 +4636,7 @@ Array [
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -5006,7 +5006,7 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -5347,7 +5347,7 @@ exports[`Storyshots Molecules / Input / Select Fully Empty 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -5640,7 +5640,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -6005,7 +6005,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect 1`] =
   outline: 1px dotted ButtonText;
 }
 
-.c14 {
+.c15 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -6021,7 +6021,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect 1`] =
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -6037,7 +6037,16 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect 1`] =
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -6289,7 +6298,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect 1`] =
                   className="c12 c13"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c5"
+                    className="Typography__Span-sc-10mju41-0 c14"
                   >
                     Select options
                   </span>
@@ -6299,7 +6308,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect 1`] =
           </span>
           <svg
             aria-hidden="true"
-            className="c14 c15"
+            className="c15 c16"
             focusable="false"
             open={false}
             preserveAspectRatio="xMidYMid meet"
@@ -6382,7 +6391,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect Contr
   outline: 1px dotted ButtonText;
 }
 
-.c14 {
+.c15 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -6398,7 +6407,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect Contr
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -6414,7 +6423,16 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect Contr
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -6670,7 +6688,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect Contr
                   className="c12 c13"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c5"
+                    className="Typography__Span-sc-10mju41-0 c14"
                   >
                     Select account
                   </span>
@@ -6680,7 +6698,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect Contr
           </span>
           <svg
             aria-hidden="true"
-            className="c14 c15"
+            className="c15 c16"
             focusable="false"
             open={false}
             preserveAspectRatio="xMidYMid meet"
@@ -6785,7 +6803,7 @@ exports[`Storyshots Molecules / Input / Select Hide Label 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -7106,7 +7124,7 @@ exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
 
 .c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -7911,6 +7929,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
       className="c2"
       onBlur={[Function]}
       onFocus={[Function]}
+      tabIndex={0}
       width="300px"
     >
       <div
@@ -8375,6 +8394,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
       className="c2"
       onBlur={[Function]}
       onFocus={[Function]}
+      tabIndex={0}
       width="300px"
     >
       <div
@@ -8828,6 +8848,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
       className="c2"
       onBlur={[Function]}
       onFocus={[Function]}
+      tabIndex={0}
       width="150px"
     >
       <div
@@ -9290,6 +9311,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
       className="c2"
       onBlur={[Function]}
       onFocus={[Function]}
+      tabIndex={0}
       width="250px"
     >
       <div
@@ -9754,6 +9776,7 @@ exports[`Storyshots Molecules / Input / Select List Positioned To The Left 1`] =
       className="c2"
       onBlur={[Function]}
       onFocus={[Function]}
+      tabIndex={0}
       width="300px"
     >
       <div
@@ -9903,7 +9926,7 @@ exports[`Storyshots Molecules / Input / Select Multi Select Uncontrolled 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -10224,7 +10247,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c14 {
+.c15 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -10240,7 +10263,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -10256,7 +10279,16 @@ exports[`Storyshots Molecules / Input / Select Multiselect 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -10468,7 +10500,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect 1`] = `
                   className="c12 c13"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c5"
+                    className="Typography__Span-sc-10mju41-0 c14"
                   >
                     Select account
                   </span>
@@ -10478,7 +10510,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect 1`] = `
           </span>
           <svg
             aria-hidden="true"
-            className="c14 c15"
+            className="c15 c16"
             focusable="false"
             open={false}
             preserveAspectRatio="xMidYMid meet"
@@ -10561,7 +10593,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Actions 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c14 {
+.c15 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -10577,7 +10609,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Actions 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -10593,7 +10625,16 @@ exports[`Storyshots Molecules / Input / Select Multiselect Actions 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -10805,7 +10846,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Actions 1`] = `
                   className="c12 c13"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c5"
+                    className="Typography__Span-sc-10mju41-0 c14"
                   >
                     Select account
                   </span>
@@ -10815,7 +10856,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Actions 1`] = `
           </span>
           <svg
             aria-hidden="true"
-            className="c14 c15"
+            className="c15 c16"
             focusable="false"
             open={false}
             preserveAspectRatio="xMidYMid meet"
@@ -10898,7 +10939,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Columns 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c14 {
+.c15 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -10914,7 +10955,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Columns 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -10930,7 +10971,16 @@ exports[`Storyshots Molecules / Input / Select Multiselect Columns 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -11142,7 +11192,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Columns 1`] = `
                   className="c12 c13"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c5"
+                    className="Typography__Span-sc-10mju41-0 c14"
                   >
                     Select account
                   </span>
@@ -11152,7 +11202,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Columns 1`] = `
           </span>
           <svg
             aria-hidden="true"
-            className="c14 c15"
+            className="c15 c16"
             focusable="false"
             open={false}
             preserveAspectRatio="xMidYMid meet"
@@ -11235,7 +11285,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c14 {
+.c15 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -11251,7 +11301,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -11267,7 +11317,16 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -11486,7 +11545,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All 1`] = `
                   className="c12 c13"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c5"
+                    className="Typography__Span-sc-10mju41-0 c14"
                   >
                     Select account
                   </span>
@@ -11496,7 +11555,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All 1`] = `
           </span>
           <svg
             aria-hidden="true"
-            className="c14 c15"
+            className="c15 c16"
             focusable="false"
             open={false}
             preserveAspectRatio="xMidYMid meet"
@@ -11579,7 +11638,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All With Full 
   outline: 1px dotted ButtonText;
 }
 
-.c14 {
+.c15 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -11595,7 +11654,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All With Full 
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -11611,7 +11670,16 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All With Full 
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -11842,7 +11910,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All With Full 
                   className="c12 c13"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c5"
+                    className="Typography__Span-sc-10mju41-0 c14"
                   >
                     Select account
                   </span>
@@ -11852,7 +11920,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All With Full 
           </span>
           <svg
             aria-hidden="true"
-            className="c14 c15"
+            className="c15 c16"
             focusable="false"
             open={false}
             preserveAspectRatio="xMidYMid meet"
@@ -11956,7 +12024,7 @@ exports[`Storyshots Molecules / Input / Select On A Coloured Background 1`] = `
 
 .c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -12261,7 +12329,7 @@ exports[`Storyshots Molecules / Input / Select On Blur And On Focus 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -12602,7 +12670,7 @@ exports[`Storyshots Molecules / Input / Select On Search Query Change 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -12943,7 +13011,7 @@ exports[`Storyshots Molecules / Input / Select On Search Query Change Without Op
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -13240,7 +13308,7 @@ exports[`Storyshots Molecules / Input / Select Overflow Story 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -13927,7 +13995,7 @@ exports[`Storyshots Molecules / Input / Select Passing Truncated Components 1`] 
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -14271,7 +14339,7 @@ exports[`Storyshots Molecules / Input / Select Placement Top 1`] = `
 
 .c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -14616,7 +14684,7 @@ exports[`Storyshots Molecules / Input / Select Preselected Options 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -14958,7 +15026,7 @@ exports[`Storyshots Molecules / Input / Select Search Story 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -15297,7 +15365,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
 
 .c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -15315,7 +15383,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
 
 .c23 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #CC2269;
+  color: #CC3929;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -15324,7 +15392,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
 
 .c26 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -15373,7 +15441,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
 
 .c21 {
   height: 32px;
-  border: 1px solid #CC2269;
+  border: 1px solid #CC3929;
   position: relative;
   background: #FFFFFF;
   box-sizing: border-box;
@@ -16312,7 +16380,7 @@ exports[`Storyshots Molecules / Input / Select Tracking 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -16618,7 +16686,7 @@ Array [
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -16920,7 +16988,7 @@ Array [
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -17273,7 +17341,7 @@ exports[`Storyshots Molecules / Input / Select With Custom Height 1`] = `
 
 .c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -17676,7 +17744,7 @@ exports[`Storyshots Molecules / Input / Select With Label Tooltip 1`] = `
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -18034,7 +18102,7 @@ Array [
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -18390,7 +18458,7 @@ exports[`Storyshots Molecules / Input / Select With Modal Title Full Screen On M
 
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -18732,7 +18800,7 @@ exports[`Storyshots Molecules / Input / Select Without Search Component 1`] = `
 
 .c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;

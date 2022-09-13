@@ -470,6 +470,67 @@ notFullScreenMobile.parameters = {
   },
 };
 
+export const notFullScreenMobileFixedBottom = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const onOpen = () => {
+      setOpen(true);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    const footer = (
+      <Flexbox container justifyContent="flex-end">
+        <Box mr={2}>
+          <Button variant="secondary" size="l" onClick={() => {}}>
+            Cancel
+          </Button>
+        </Box>
+        <Button size="l" onClick={() => {}}>
+          Confirm
+        </Button>
+      </Flexbox>
+    );
+
+    return (
+      <>
+        <button type="button" onClick={onOpen}>
+          Open modal
+        </button>
+        <ScrollMaker />
+        <Modal
+          onClose={onClose}
+          title="Dialog information"
+          open={open}
+          footer={footer}
+          fullScreenMobile={false}
+          fixedBottomMobile
+        >
+          <Box mb={2}>
+            <Typography type="primary" as="p">
+              Resize the window to see the result of setting fullScreenMobile to false.
+            </Typography>
+          </Box>
+        </Modal>
+      </>
+    );
+  };
+  return <Example />;
+};
+
+notFullScreenMobileFixedBottom.story = {
+  name: 'Not full screen mobile fixed at bottom',
+};
+
+notFullScreenMobileFixedBottom.parameters = {
+  viewport: {
+    defaultViewport: 'iphone6',
+  },
+};
+
 export const modalStandardSmall = () => {
   const Example = () => {
     const [open, setOpen] = useState(true);

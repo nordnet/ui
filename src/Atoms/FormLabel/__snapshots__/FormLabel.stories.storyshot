@@ -9,7 +9,7 @@ exports[`Storyshots Atoms / FormLabel As a wrapper 1`] = `
 
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -41,7 +41,7 @@ Array [
 
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -118,7 +118,7 @@ Array [
 
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;

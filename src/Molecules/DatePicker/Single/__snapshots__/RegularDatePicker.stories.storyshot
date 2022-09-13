@@ -59,7 +59,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Allow Update Wh
 
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -115,25 +115,25 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Allow Update Wh
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -390,7 +390,7 @@ Array [
 
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -446,25 +446,25 @@ Array [
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -625,7 +625,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Default 1`] = `
 
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -681,25 +681,25 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Default 1`] = `
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -912,25 +912,25 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Disabled Input 
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -1091,7 +1091,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Full Width Inpu
 
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -1147,25 +1147,25 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Full Width Inpu
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -1325,7 +1325,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Fullscreen On M
 
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -1381,25 +1381,25 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Fullscreen On M
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -1559,7 +1559,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Same Week Disab
 
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -1615,25 +1615,25 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Same Week Disab
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
@@ -1793,7 +1793,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Same Week Enabl
 
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -1849,25 +1849,25 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Same Week Enabl
 }
 
 .c8::-webkit-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::-moz-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8:-ms-input-placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c8::placeholder {
-  color: #6E6E69;
+  color: #6E6E6E;
   line-height: inherit;
   opacity: 1;
 }

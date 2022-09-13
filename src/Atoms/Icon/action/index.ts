@@ -4,6 +4,8 @@ import addCircleFill from './addCircleFill';
 import archive from './archive';
 import arrowDown from './arrowDown';
 import arrowLeft from './arrowLeft';
+import arrowNegative from './arrowNegative';
+import arrowPositive from './arrowPositive';
 import arrowRight from './arrowRight';
 import arrowUp from './arrowUp';
 import bolt from './bolt';
@@ -61,6 +63,8 @@ export default {
   ...archive,
   ...arrowDown,
   ...arrowLeft,
+  ...arrowNegative,
+  ...arrowPositive,
   ...arrowRight,
   ...arrowUp,
   ...bolt,

@@ -62,7 +62,7 @@ Used to display step progress, number of orders or messages . Displays the numbe
 The Status Badge is used for displaying the statuses like `'create'`, `'complete'`, `'pending',` `'error'`, `'warning'` or `'information'`.
 The status can be passed in as a `string` to `variant` which will render the corresponding `icon` and `badgeColor`.
 
-- `badgeSize` - sets the width/height on the badge. Available sizes: `'xl'`: 72px `'l'`: 48px `'m'`: 32px `'s'`: 24px.
+- `badgeSize` - sets the width/height on the badge. Available sizes: `'xl'`: 80px `'l'`: 48px `'m'`: 32px `'s'`: 24px.
 - `variant` - status as a string. Statuses are: `'create'`, `'complete'`, `'pending',` `'error'`, `'warning'` or `'information'`.
 
 ### Tooltip Badge (Badge.Tooltip)

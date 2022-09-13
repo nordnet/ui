@@ -73,7 +73,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
 
 .c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #6E6E6E;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -208,6 +208,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
           />
           <div
             className="c10 c11 c12"
+            shape="square"
           >
             <svg
               aria-hidden="true"
@@ -252,6 +253,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
           />
           <div
             className="c10 c11 c12"
+            shape="square"
           >
             <svg
               aria-hidden="true"
@@ -296,6 +298,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
           />
           <div
             className="c10 c11 c12"
+            shape="square"
           >
             <svg
               aria-hidden="true"

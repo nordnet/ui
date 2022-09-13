@@ -14,11 +14,11 @@ const getBorderColor = ({
 }) => {
   switch (variant) {
     case 'error':
-      return theme.color.negative;
+      return theme.color.functionRed;
     case 'warning':
-      return theme.color.warning;
+      return theme.color.functionYellow;
     case 'success':
-      return theme.color.positive;
+      return theme.color.functionGreen;
     case 'info':
     default:
       return theme.color.cta;
@@ -28,11 +28,11 @@ const getBorderColor = ({
 const getIcon = (variant: FeedbackBannerProps['variant']) => {
   switch (variant) {
     case 'error':
-      return <OldIcon.CrossCircle size={5} fill={(t) => t.color.negative} />;
+      return <OldIcon.CrossCircle size={5} fill={(t) => t.color.functionRed} />;
     case 'warning':
-      return <OldIcon.WarningTriangle size={5} fill={(t) => t.color.warning} />;
+      return <OldIcon.WarningTriangle size={5} fill={(t) => t.color.functionYellow} />;
     case 'success':
-      return <OldIcon.CheckMarkCircle size={5} fill={(t) => t.color.positive} />;
+      return <OldIcon.CheckMarkCircle size={5} fill={(t) => t.color.functionGreen} />;
     case 'info':
     default:
       return <OldIcon.InfoCircle size={5} fill={(t) => t.color.cta} />;
