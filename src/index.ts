@@ -43,11 +43,11 @@ import FeedbackBanner from './Molecules/FeedbackBanner';
 import Fieldset from './Molecules/Fieldset';
 import FlexTable, {
   CellProps,
-  FooterProps,
   Density,
-  FontSize,
-  MediaRelatedProps,
   FlexPropsType,
+  FontSize,
+  FooterProps,
+  MediaRelatedProps,
   OnSort,
   SortOrder,
 } from './Molecules/FlexTable';
@@ -96,7 +96,7 @@ import { useKeyPress, useOnClickOutside } from './common/Hooks';
 import theme, { createTheme } from './theme';
 import TrackingContext from './common/tracking';
 
-import { LinkContext, LinkProvider, useLink, LinkProps, LinkProviderProps } from './common/Links';
+import { LinkContext, LinkProps, LinkProvider, LinkProviderProps, useLink } from './common/Links';
 
 import {
   getPersistedSortOrder,

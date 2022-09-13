@@ -45,7 +45,6 @@ export const StyledButton = styled.button<{ visible?: boolean; charWidth: number
   line-height: 1;
   border: none;
   visibility: ${(p) => (p.visible ? 'hidden' : 'visible')};
-  padding: 0;
   svg {
     transition: color 333ms;
   }
