@@ -1,3 +1,18 @@
+# [11.0.0-beta.1](https://github.com/nordnet/ui/compare/v10.44.1...v11.0.0-beta.1) (2022-09-13)
+
+
+### Features
+
+* 🎸 replace old flag component with new round one ([9f5cc06](https://github.com/nordnet/ui/commit/9f5cc06))
+* copy round flags branch ([628fe7f](https://github.com/nordnet/ui/commit/628fe7f))
+
+
+### BREAKING CHANGES
+
+* 🧨 height prop on Flag is replaced with size prop
+
+✅ Closes: TP-19431
+
 ## [10.44.2](https://github.com/nordnet/ui/compare/v10.44.1...v10.44.2) (2022-09-08)
 
 ### Bug Fixes
