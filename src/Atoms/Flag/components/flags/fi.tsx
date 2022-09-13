@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlagPathProps } from './flagPath.types';
 
-export default function FlagFi({ borderColor }: FlagPathProps) {
+export default function FlagFi({ borderColor, title }: FlagPathProps) {
   return (
     <>
       <g clipPath="url(#clip0_1042_331)">
@@ -19,7 +19,7 @@ export default function FlagFi({ borderColor }: FlagPathProps) {
           <path fill="#fff" d="M0 0h14v14H0z" />
         </clipPath>
       </defs>
-      <title>Finland</title>
+      <title>{title ?? 'Finland'}</title>
     </>
   );
 }

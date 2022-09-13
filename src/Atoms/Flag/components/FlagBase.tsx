@@ -47,13 +47,12 @@ export const FlagBase: React.FunctionComponent<PropsWithDimensions> = ({
       className={className}
       preserveAspectRatio="xMidYMid meet"
       focusable="false"
-      aria-hidden={title ? 'false' : 'true'}
-      role={title ? 'img' : 'presentation'}
+      role="img"
       inline={inline}
       viewBox="0 0 14 14" /* inherent size of the flag svgs */
       {...rest}
     >
-      <FlagPathComponent borderColor={grayBorder ? theme.color.flagBorder : null} />
+      <FlagPathComponent borderColor={grayBorder ? theme.color.flagBorder : null} title={title} />
     </StyledSvg>
   );
 };

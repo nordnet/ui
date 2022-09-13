@@ -1,6 +1,7 @@
 import React from 'react';
+import { FlagPathProps } from './flagPath.types';
 
-export default function FlagCn() {
+export default function FlagCn({ title }: FlagPathProps) {
   return (
     <>
       <g clipPath="url(#clip0_1042_222)">
@@ -15,7 +16,7 @@ export default function FlagCn() {
           <path fill="#fff" d="M0 0h14v14H0z" />
         </clipPath>
       </defs>
-      <title>China</title>
+      <title>{title ?? 'China'}</title>
     </>
   );
 }

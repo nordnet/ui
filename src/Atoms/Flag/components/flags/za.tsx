@@ -1,6 +1,7 @@
 import React from 'react';
+import { FlagPathProps } from './flagPath.types';
 
-export default function FlagZa() {
+export default function FlagZa({ title }: FlagPathProps) {
   return (
     <>
       <g clipPath="url(#clip0_1042_381)">
@@ -31,7 +32,7 @@ export default function FlagZa() {
           <path fill="#fff" d="M0 0h14v14H0z" />
         </clipPath>
       </defs>
-      <title>South Africa</title>
+      <title>{title ?? 'South Africa'}</title>
     </>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlagPathProps } from './flagPath.types';
 
-export default function FlagJp({ borderColor }: FlagPathProps) {
+export default function FlagJp({ borderColor, title }: FlagPathProps) {
   return (
     <>
       <g clipPath="url(#clip0_1042_299)">
@@ -22,7 +22,7 @@ export default function FlagJp({ borderColor }: FlagPathProps) {
           <rect width="14" height="14" fill="white" />
         </clipPath>
       </defs>
-      <title>Japan</title>
+      <title>{title ?? 'Japan'}</title>
     </>
   );
 }

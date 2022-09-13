@@ -1,6 +1,7 @@
 import React from 'react';
+import { FlagPathProps } from './flagPath.types';
 
-export default function FlagFr() {
+export default function FlagFr({ title }: FlagPathProps) {
   return (
     <>
       <g clipPath="url(#clip0_1042_311)">
@@ -19,7 +20,7 @@ export default function FlagFr() {
           <path fill="#fff" d="M0 0h14v14H0z" />
         </clipPath>
       </defs>
-      <title>France</title>
+      <title>{title ?? 'France'}</title>
     </>
   );
 }
