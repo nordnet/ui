@@ -1,3 +1,10 @@
+## [10.44.2](https://github.com/nordnet/ui/compare/v10.44.1...v10.44.2) (2022-09-08)
+
+
+### Bug Fixes
+
+* remove padding on buttons ([af062f6](https://github.com/nordnet/ui/commit/af062f6))
+
 ## [10.44.1](https://github.com/nordnet/ui/compare/v10.44.0...v10.44.1) (2022-09-07)
 
 

@@ -76,7 +76,7 @@ const FlagCell: React.FC<{ columnId: string } & FlexProps> = React.memo(
     <FlexTable.Cell columnId={columnId} {...cellProps}>
       <FlexTable.CellInlineContainer>
         <FlexTable.Cell.TextWrapper>{children}</FlexTable.Cell.TextWrapper>
-        <Flag country="SE" size="m" />
+        <Flag country="SE" />
       </FlexTable.CellInlineContainer>
     </FlexTable.Cell>
   ),

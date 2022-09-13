@@ -66,7 +66,7 @@ export const integrationTableWithTypography = () => {
               <Td textAlign="right">{instrument[5]}%</Td>
               <Td>{instrument[4]}</Td>
               <Td>
-                <Flag country="se" size="m" />
+                <Flag country="se" height={4} />
               </Td>
               <Td>{instrument[3]}</Td>
             </Tr>
@@ -115,7 +115,7 @@ export const integrationTableWithTypographyAndEllipsisOnName = () => {
               <Td textAlign="right">{instrument[5]}%</Td>
               <Td>{instrument[4]}</Td>
               <Td>
-                <Flag country="se" size="m" />
+                <Flag country="se" height={4} />
               </Td>
               <Td>{instrument[3]}</Td>
             </Tr>
@@ -164,7 +164,7 @@ export const integrationTableStickyHeaderWithTypography = () => {
               <Td textAlign="right">{instrument[5]}%</Td>
               <Td>{instrument[4]}</Td>
               <Td>
-                <Flag country="SE" size="m" />
+                <Flag country="SE" />
               </Td>
               <Td>{instrument[3]}</Td>
             </Tr>

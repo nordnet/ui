@@ -94,7 +94,7 @@ export const CustomCells = () => {
       ({ columnId, country, ...cellProps }) => (
         <FlexTable.Cell columnId={columnId} {...cellProps}>
           <FlexTable.Cell.TextWrapper>
-            <Flag country={country} size="m" />
+            <Flag country={country} />
           </FlexTable.Cell.TextWrapper>
         </FlexTable.Cell>
       ),
