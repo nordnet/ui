@@ -2497,6 +2497,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
             className="c11"
             onBlur={[Function]}
             onFocus={[Function]}
+            tabIndex={0}
           >
             <div
               className="c12"
