@@ -4,6 +4,7 @@ import * as R from 'ramda';
 import { Flexbox, FormField, FormLabel, OldIcon, Tooltip, Typography } from '../../..';
 import { CheckboxComponent, InternalInputProps, Props } from './Checkbox.types';
 import { isString } from '../../../common/utils';
+import { Shape } from './Checkbox.shape';
 
 const CHECKBOX_DEFAULT_SIZE = 5;
 const checkIfHasError = (error?: Props['error']) => isString(error) && error !== '';
@@ -25,13 +26,14 @@ const getSize = (size: Props['size']): number => {
   return CHECKBOX_DEFAULT_SIZE;
 };
 
-const CheckmarkBox = styled(Flexbox)<{ size: number }>`
+const CheckmarkBox = styled(Flexbox)<{ size: number; shape: Shape }>`
   width: ${(p) => p.theme.spacing.unit(p.size)}px;
   height: ${(p) => p.theme.spacing.unit(p.size)}px;
   border: 1px solid ${(p) => p.theme.color.inputBorder};
   background: ${(p) => p.theme.color.inputBackground};
   position: relative;
   flex-shrink: 0;
+  ${(p) => (p.shape === Shape.Circle ? 'border-radius: 100%' : '')};
 
   &::before {
     content: '';
@@ -115,7 +117,9 @@ const components = {
   CheckmarkBox,
 };
 
-const Checkbox: CheckboxComponent & { components: typeof components } = (props) => {
+const Checkbox: CheckboxComponent & { components: typeof components; Shape: typeof Shape } = (
+  props,
+) => {
   const {
     autoFocus,
     checked,
@@ -142,6 +146,7 @@ const Checkbox: CheckboxComponent & { components: typeof components } = (props) 
     width,
     readOnly,
     size = 'm',
+    shape = Shape.Square,
   } = props;
 
   return (
@@ -170,7 +175,13 @@ const Checkbox: CheckboxComponent & { components: typeof components } = (props) 
             }}
           />
 
-          <CheckmarkBox container alignItems="center" justifyContent="center" size={getSize(size)}>
+          <CheckmarkBox
+            container
+            alignItems="center"
+            justifyContent="center"
+            size={getSize(size)}
+            shape={shape}
+          >
             <OldIcon.CheckMark size={3} color="transparent" />
           </CheckmarkBox>
 
@@ -192,5 +203,6 @@ const Checkbox: CheckboxComponent & { components: typeof components } = (props) 
 };
 
 Checkbox.components = components;
+Checkbox.Shape = Shape;
 
 export default Checkbox;

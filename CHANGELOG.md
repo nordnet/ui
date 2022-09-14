@@ -1,3 +1,239 @@
+## [10.44.2](https://github.com/nordnet/ui/compare/v10.44.1...v10.44.2) (2022-09-08)
+
+
+### Bug Fixes
+
+* remove padding on buttons ([af062f6](https://github.com/nordnet/ui/commit/af062f6))
+
+## [10.44.1](https://github.com/nordnet/ui/compare/v10.44.0...v10.44.1) (2022-09-07)
+
+
+### Bug Fixes
+
+* 🐛 Update svg information for the ScanQR16 icon ([c3ba381](https://github.com/nordnet/ui/commit/c3ba381))
+
+# [10.44.0](https://github.com/nordnet/ui/compare/v10.43.2...v10.44.0) (2022-09-07)
+
+
+### Features
+
+* 🎸 Added ScanQR16 icon ([aaeaefa](https://github.com/nordnet/ui/commit/aaeaefa))
+
+## [10.43.2](https://github.com/nordnet/ui/compare/v10.43.1...v10.43.2) (2022-09-05)
+
+
+### Bug Fixes
+
+* allow full width no buttons ([7501c13](https://github.com/nordnet/ui/commit/7501c13))
+* correct comment style ([98aa750](https://github.com/nordnet/ui/commit/98aa750))
+* padding updates ([0244165](https://github.com/nordnet/ui/commit/0244165))
+* update storyshot ([dd49425](https://github.com/nordnet/ui/commit/dd49425))
+
+## [10.43.1](https://github.com/nordnet/ui/compare/v10.43.0...v10.43.1) (2022-09-02)
+
+
+### Bug Fixes
+
+* allow conditional buttons ([7e56503](https://github.com/nordnet/ui/commit/7e56503))
+* update storys ([51c5bb3](https://github.com/nordnet/ui/commit/51c5bb3))
+
+# [10.43.0](https://github.com/nordnet/ui/compare/v10.42.1...v10.43.0) (2022-08-30)
+
+
+### Features
+
+* 🎸 add util function to get units ([05f75b0](https://github.com/nordnet/ui/commit/05f75b0))
+
+## [10.42.1](https://github.com/nordnet/ui/compare/v10.42.0...v10.42.1) (2022-08-29)
+
+
+### Bug Fixes
+
+* adjust savings color ([5712734](https://github.com/nordnet/ui/commit/5712734))
+
+# [10.42.0](https://github.com/nordnet/ui/compare/v10.41.0...v10.42.0) (2022-08-29)
+
+
+### Features
+
+* 🎸 start the build for previous commit ([c2ac594](https://github.com/nordnet/ui/commit/c2ac594))
+
+# [10.41.0](https://github.com/nordnet/ui/compare/v10.40.2...v10.41.0) (2022-08-29)
+
+
+### Features
+
+* 🎸 New pension illustration ([299b10e](https://github.com/nordnet/ui/commit/299b10e))
+
+## [10.40.2](https://github.com/nordnet/ui/compare/v10.40.1...v10.40.2) (2022-08-24)
+
+
+### Bug Fixes
+
+* 🐛 alignment issue for smaller screen on button flexbox ([62e4e03](https://github.com/nordnet/ui/commit/62e4e03))
+* 🐛 merge conflict ([4484a92](https://github.com/nordnet/ui/commit/4484a92))
+* 🐛 Style update for page scope and added color for typagrap ([c5b4b3d](https://github.com/nordnet/ui/commit/c5b4b3d))
+
+## [10.40.1](https://github.com/nordnet/ui/compare/v10.40.0...v10.40.1) (2022-08-24)
+
+
+### Bug Fixes
+
+* add better colors ([10df9a1](https://github.com/nordnet/ui/commit/10df9a1))
+* add new progress indicator ([aab6224](https://github.com/nordnet/ui/commit/aab6224))
+* add progress border-radius ([9820e44](https://github.com/nordnet/ui/commit/9820e44))
+* hover one at a time ([2fe348b](https://github.com/nordnet/ui/commit/2fe348b))
+* update snapshots ([71c8757](https://github.com/nordnet/ui/commit/71c8757))
+* update stories ([1292395](https://github.com/nordnet/ui/commit/1292395))
+* update storyshots ([d7390cd](https://github.com/nordnet/ui/commit/d7390cd))
+
+# [10.40.0](https://github.com/nordnet/ui/compare/v10.39.0...v10.40.0) (2022-08-19)
+
+
+### Features
+
+* add fixedBottomMobile prop to Modal and some other colors ([12130e6](https://github.com/nordnet/ui/commit/12130e6))
+
+# [10.39.0](https://github.com/nordnet/ui/compare/v10.38.0...v10.39.0) (2022-08-02)
+
+
+### Features
+
+* 🎸 add allocation bar color ([a78fa6c](https://github.com/nordnet/ui/commit/a78fa6c))
+
+# [10.38.0](https://github.com/nordnet/ui/compare/v10.37.1...v10.38.0) (2022-08-01)
+
+
+### Bug Fixes
+
+* status badge docs ([f786553](https://github.com/nordnet/ui/commit/f786553))
+
+
+### Features
+
+* add icons ([036dec2](https://github.com/nordnet/ui/commit/036dec2))
+
+## [10.37.1](https://github.com/nordnet/ui/compare/v10.37.0...v10.37.1) (2022-07-29)
+
+
+### Bug Fixes
+
+* 🐛 using useCallback and removing unused type for Promotion ([8aa3b0c](https://github.com/nordnet/ui/commit/8aa3b0c))
+
+# [10.37.0](https://github.com/nordnet/ui/compare/v10.36.1...v10.37.0) (2022-07-29)
+
+
+### Features
+
+* 🎸 promotion banner ui update ([5054ba7](https://github.com/nordnet/ui/commit/5054ba7))
+* 🎸 This is the new promotion banner component ([859b0fb](https://github.com/nordnet/ui/commit/859b0fb))
+
+## [10.36.1](https://github.com/nordnet/ui/compare/v10.36.0...v10.36.1) (2022-07-27)
+
+
+### Bug Fixes
+
+* add more colors for shareville related instruments ([2c50335](https://github.com/nordnet/ui/commit/2c50335))
+
+# [10.36.0](https://github.com/nordnet/ui/compare/v10.35.1...v10.36.0) (2022-07-07)
+
+
+### Features
+
+* add colors ([0dbe4a0](https://github.com/nordnet/ui/commit/0dbe4a0))
+
+## [10.35.1](https://github.com/nordnet/ui/compare/v10.35.0...v10.35.1) (2022-06-29)
+
+
+### Bug Fixes
+
+* 🐛 remove gap property bleeding into dom ([1962842](https://github.com/nordnet/ui/commit/1962842))
+
+# [10.35.0](https://github.com/nordnet/ui/compare/v10.34.0...v10.35.0) (2022-06-28)
+
+
+### Features
+
+* 🎸 add delay prop to skeleton loader ([cd30028](https://github.com/nordnet/ui/commit/cd30028))
+
+# [10.34.0](https://github.com/nordnet/ui/compare/v10.33.0...v10.34.0) (2022-06-28)
+
+
+### Features
+
+* 🎸 add gap property to <Flexbox /> component ([4cada5a](https://github.com/nordnet/ui/commit/4cada5a))
+
+# [10.33.0](https://github.com/nordnet/ui/compare/v10.32.0...v10.33.0) (2022-06-22)
+
+
+### Features
+
+* new colors for popular badge test ([9055b50](https://github.com/nordnet/ui/commit/9055b50))
+
+# [10.32.0](https://github.com/nordnet/ui/compare/v10.31.3...v10.32.0) (2022-06-20)
+
+
+### Bug Fixes
+
+* name ([18607c7](https://github.com/nordnet/ui/commit/18607c7))
+
+
+### Features
+
+* add growth16 icon ([9498164](https://github.com/nordnet/ui/commit/9498164))
+
+## [10.31.3](https://github.com/nordnet/ui/compare/v10.31.2...v10.31.3) (2022-06-16)
+
+
+### Bug Fixes
+
+* update style for segmentedcontrol to new designs ([968c6ca](https://github.com/nordnet/ui/commit/968c6ca))
+
+## [10.31.2](https://github.com/nordnet/ui/compare/v10.31.1...v10.31.2) (2022-05-31)
+
+
+### Bug Fixes
+
+* 🐛 export shape enum on checkbox ([77302b8](https://github.com/nordnet/ui/commit/77302b8))
+
+## [10.31.1](https://github.com/nordnet/ui/compare/v10.31.0...v10.31.1) (2022-05-30)
+
+
+### Bug Fixes
+
+* 🐛 don't render hidden search input on mobile screen ([8d56af1](https://github.com/nordnet/ui/commit/8d56af1))
+
+# [10.31.0](https://github.com/nordnet/ui/compare/v10.30.2...v10.31.0) (2022-05-30)
+
+
+### Features
+
+* 🎸 Round checkbox ([40df6b8](https://github.com/nordnet/ui/commit/40df6b8))
+
+## [10.30.2](https://github.com/nordnet/ui/compare/v10.30.1...v10.30.2) (2022-05-23)
+
+
+### Bug Fixes
+
+* robot icon index file ([cb9043b](https://github.com/nordnet/ui/commit/cb9043b))
+* storyshot ([c6be285](https://github.com/nordnet/ui/commit/c6be285))
+
+## [10.30.1](https://github.com/nordnet/ui/compare/v10.30.0...v10.30.1) (2022-05-23)
+
+
+### Bug Fixes
+
+* new teal semantic colors and new icon and illustration Robot ([e25d572](https://github.com/nordnet/ui/commit/e25d572))
+* storyshots ([dc4bf2a](https://github.com/nordnet/ui/commit/dc4bf2a))
+* update color names to more specific ones ([e0b94dc](https://github.com/nordnet/ui/commit/e0b94dc))
+
+# [10.30.0](https://github.com/nordnet/ui/compare/v10.29.0...v10.30.0) (2022-05-23)
+
+
+### Features
+
+* add mediaUtils for media queries ([9f6301d](https://github.com/nordnet/ui/commit/9f6301d))
+
 # [10.29.0](https://github.com/nordnet/ui/compare/v10.28.1...v10.29.0) (2022-05-16)
 
 

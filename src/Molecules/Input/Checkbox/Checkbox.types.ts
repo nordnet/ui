@@ -1,3 +1,5 @@
+import { Shape } from './Checkbox.shape';
+
 type Size = 's' | 'm';
 
 export type Props = {
@@ -31,6 +33,7 @@ export type Props = {
   onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
+  shape?: Shape;
 };
 
 export type InternalInputProps = {

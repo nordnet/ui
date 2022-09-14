@@ -28,6 +28,7 @@ import recommendedFill from './recommendedFill';
 import riskHigh from './riskHigh';
 import riskLow from './riskLow';
 import riskMedium from './riskMedium';
+import robot from './robot';
 import shareville from './shareville';
 import stock from './stock';
 import sustainable from './sustainable';
@@ -67,6 +68,7 @@ export default {
   ...riskHigh,
   ...riskLow,
   ...riskMedium,
+  ...robot,
   ...shareville,
   ...stock,
   ...sustainable,

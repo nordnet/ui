@@ -28,6 +28,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     accountBadgeBackground: rawColor.black,
     accountBadgeText: rawColor.white,
+    allocationBars: rawColor.teal400,
 
     background: rawColor.gray900,
     backgroundBlack: rawColor.black,
@@ -258,10 +259,16 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     progressBarText: rawColor.white,
     progressBarWarning: rawColor.index,
 
+    savingsForecastExpected: rawColor.green500,
+    savingsForecastNormal: rawColor.gray500,
+    savingsForecastPotential: rawColor.gray700,
+
     searchBackground: rawColor.gray1,
     searchText: rawColor.gray7,
 
-    segmentedControlBackground: rawColor.gray1,
+    segmentedControlBackground: rawColor.gray800,
+    segmentedControlBackgroundSelected: rawColor.gray700,
+    segmentedControlBorder: rawColor.gray700,
 
     selectionCardBorder: rawColor.gray5,
     selectionCardText: rawColor.gray2,
@@ -308,6 +315,9 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     tabTitle: rawColor.gray400,
     tabTitleActive: rawColor.white,
 
+    newBadgeLabelBackground: rawColor.teal800,
+    newBadgeLabelText: rawColor.teal400,
+
     text: rawColor.gray7,
     textLight: rawColor.gray0, // FIXME: to be removed later
 
@@ -341,6 +351,10 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     sfdrArticle9: rawColor.sfdrArticle9,
 
     popularBadgeBackground: rawColor.pink900,
+    popularBadgeText: rawColor.pink500,
+
+    promotionBannerTitle: rawColor.white,
+    promotionBannerDescription: rawColor.gray400,
 
     joinSharevilleIllustration: rawColor.green200,
     joinSharevilleBadge: rawColor.green800,
@@ -373,6 +387,20 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     narrowCardBorder: rawColor.gray900,
     existingMonthlyDepositsDivider: rawColor.gray900,
 
+    visitedInstrumentsEmptyStateColor: rawColor.gray400,
+    visitedInstrumentsInstrumentBorder: rawColor.gray700,
+    visitedInstrumentsInstrumentBackground: rawColor.gray800,
+    visitedInstrumentsInstrumentColorLoading: rawColor.gray700,
+    visitedInstrumentsInstrumentColorError: rawColor.gray400,
+    visitedInstrumentsPositiveFont: rawColor.green500,
+    visitedInstrumentsPositiveFill: rawColor.green800,
+    visitedInstrumentsNegativeFont: rawColor.pink500,
+    visitedInstrumentsNegativeFill: rawColor.pink800,
+
+    progressIndicatorBackground: rawColor.gray800,
+    progressIndicatorBarEmpty: rawColor.gray700,
+    progressIndicatorBar: rawColor.blue500,
+    progressIndicatorSvgHover: rawColor.blue400,
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,

@@ -69,6 +69,8 @@ import PageWrapper from './Molecules/PageWrapper';
 import Pagination from './Molecules/Pagination';
 import PersistentTooltip from './Molecules/PersistentTooltip';
 import ProgressBar from './Molecules/ProgressBar';
+import ProgressIndicator from './Molecules/ProgressIndicator';
+import PromotionBanner from './Molecules/PromotionBanner';
 import Rating from './Molecules/Rating';
 import SegmentedControl from './Molecules/SegmentedControl';
 import Select from './Molecules/Select';
@@ -104,6 +106,8 @@ import {
 
 /** Utils */
 import { numberWithLimit } from './common/utils';
+import { above, below, between } from './common/mediaUtils';
+import { units } from './common/unitUtils';
 
 /** Exports for types */
 export type {
@@ -170,7 +174,7 @@ export {
   Modal,
   MultiStepProgress,
   Number,
-  OldIcon,
+  /** @deprecated */ OldIcon,
   PageHeaderCard,
   PageWrapper,
   Pagination,
@@ -179,6 +183,8 @@ export {
   /** @deprecated */ PillButton,
   Portal,
   ProgressBar,
+  ProgressIndicator,
+  PromotionBanner,
   Rating,
   SegmentedControl,
   SelectionCard,
@@ -211,6 +217,10 @@ export {
   VisuallyHidden,
   createTheme,
   numberWithLimit,
+  above,
+  below,
+  between,
+  units,
   theme,
   useKeyPress,
   useLink,

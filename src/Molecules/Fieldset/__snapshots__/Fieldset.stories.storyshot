@@ -208,6 +208,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
           />
           <div
             className="c10 c11 c12"
+            shape="square"
           >
             <svg
               aria-hidden="true"
@@ -252,6 +253,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
           />
           <div
             className="c10 c11 c12"
+            shape="square"
           >
             <svg
               aria-hidden="true"
@@ -296,6 +298,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
           />
           <div
             className="c10 c11 c12"
+            shape="square"
           >
             <svg
               aria-hidden="true"

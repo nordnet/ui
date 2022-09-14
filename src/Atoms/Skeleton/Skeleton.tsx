@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import * as R from 'ramda';
 import styled, { keyframes } from 'styled-components';
 import { Props, SkeletonComponent, StringOrNumber } from './Skeleton.types';
@@ -19,6 +19,14 @@ const pulse = keyframes`
 
 const getSize = (x: StringOrNumber, theme: Theme) => {
   return isNumber(x) ? `${theme.spacing.unit(x)}px` : x;
+};
+
+const deriveDelayFromProps = (delay?: boolean | number) => {
+  if (typeof delay === 'number') {
+    return delay;
+  }
+
+  return delay === false ? 0 : 1000;
 };
 
 const CleanDiv = React.forwardRef<HTMLDivElement, any>((props, ref) => (
@@ -52,20 +60,34 @@ const Circle = styled(Base)`
 `;
 
 export const Skeleton: SkeletonComponent = React.forwardRef<HTMLElement, Props>((props, ref) => {
-  const { className, height, variant = 'text', width } = props;
+  const { className, height, variant = 'text', width, delay = false } = props;
+  const [noDelay, setNoDelay] = useState(delay === 0 || delay === false);
   const sharedProps = {
     className,
     width,
     ref,
   };
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (noDelay) {
+        return;
+      }
+      setNoDelay(true);
+    }, deriveDelayFromProps(delay));
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-  if (variant === 'rect') {
+  if (variant === 'rect' && noDelay) {
     return <Rect {...sharedProps} height={height} />;
   }
 
-  if (variant === 'circle') {
+  if (variant === 'circle' && noDelay) {
     return <Circle {...sharedProps} height={height} />;
   }
 
-  return <Text {...sharedProps} />;
+  if (variant === 'text' && noDelay) {
+    return <Text {...sharedProps} />;
+  }
+  return null;
 });

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { actions } from '@storybook/addon-actions';
 import { Box, Flexbox, FormField, Input, Typography } from '../../..';
 import { Display } from '../../../common/Display';
+import { Shape } from './Checkbox.shape';
 
 const handlers = actions(
   'onBlur',
@@ -24,6 +25,14 @@ export const defaultStory = () => <Input.Checkbox name="example" value="green" l
 
 defaultStory.story = {
   name: 'Default',
+};
+
+export const circleStory = () => (
+  <Input.Checkbox name="example" value="green" label="Green" shape={Shape.Circle} />
+);
+
+circleStory.story = {
+  name: 'Circle',
 };
 
 export const defaultStoryWithTooltip = () => (

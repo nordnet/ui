@@ -163,6 +163,10 @@ export type ThemeColors = {
    */
   accountBadgeText: string;
   /**
+   * teal500
+   */
+  allocationBars: string;
+  /**
    * blue500
    */
   badgeBackground: string;
@@ -494,6 +498,10 @@ export type ThemeColors = {
   placeholderText: string;
   /** positive */
   positive: string;
+  /** gray800 */
+  promotionBannerTitle: string;
+  /** gray600 */
+  promotionBannerDescription: string;
   /** green500 */
   positiveBlackBackground: string;
   /**
@@ -552,14 +560,22 @@ export type ThemeColors = {
   progressBarWarning: string;
   /** gray100 */
   pillBackground: string;
+  /** savings forecast drawer colors */
+  savingsForecastExpected: string;
+  savingsForecastNormal: string;
+  savingsForecastPotential: string;
   /** gray1 */
   searchBackground: string;
   /** gray1 */
   searchText: string;
   /** gray5 */
   selectionCardBorder: string;
-  /** gray7 */
+  /** gray100 */
   segmentedControlBackground: string;
+  /** white */
+  segmentedControlBackgroundSelected: string;
+  /** gray100 */
+  segmentedControlBorder: string;
   /** gray2 */
   selectionCardText: string;
   /** white */
@@ -628,6 +644,10 @@ export type ThemeColors = {
   tabTitle: string;
   /** gray800 */
   tabTitleActive: string;
+  /** teal100 */
+  newBadgeLabelBackground: string;
+  /** teal600 */
+  newBadgeLabelText: string;
   /** gray0 */
   text: string;
   /** white */
@@ -682,6 +702,8 @@ export type ThemeColors = {
   sfdrArticle9: string;
   /** pink100 */
   popularBadgeBackground: string;
+  /** pink */
+  popularBadgeText: string;
   /** gray800 */
   periodScrollButtonBackground: string;
   /** gray100 */
@@ -714,6 +736,22 @@ export type ThemeColors = {
   narrowCardBorder: string;
   /** existing monthly deposits table row divider */
   existingMonthlyDepositsDivider: string;
+  /** visited instrument assorted colors */
+  visitedInstrumentsInstrumentBorder: string;
+  visitedInstrumentsEmptyStateColor: string;
+  visitedInstrumentsInstrumentBackground: string;
+  visitedInstrumentsInstrumentColorLoading: string;
+  visitedInstrumentsInstrumentColorError: string;
+  visitedInstrumentsPositiveFont: string;
+  visitedInstrumentsPositiveFill: string;
+  visitedInstrumentsNegativeFont: string;
+  visitedInstrumentsNegativeFill: string;
+  /** progress indicator colors */
+  progressIndicatorBackground: string;
+  progressIndicatorBarEmpty: string;
+  progressIndicatorBar: string;
+  progressIndicatorSvgHover: string;
+
   /** @deprecated * gray3 */
   disabled: string;
   /** @deprecated * complementaryBlue2 */

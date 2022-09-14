@@ -1300,6 +1300,47 @@ Array [
       aria-hidden="true"
       className="c0"
       focusable="false"
+      height={64}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={64}
+    >
+      <path
+        d="M16 38c-4 0-6-3.79-6-6H8a8 8 0 0 0 8 8v-2Z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M29.003 26.801C26.939 21.643 21.895 18 16 18 8.947 18 2.97 23.715 2 30.5H0v3h2C2.97 40.285 8.947 46 16 46c7.732 0 14-6.268 14-14 0-1.105.895-3 2-3s2 1.895 2 3c0 7.732 6.268 14 14 14 7.053 0 13.03-5.715 14-12.5h2V31h-2c-.97-6.785-6.947-13-14-13-5.895 0-10.939 3.643-13.003 8.801A5.973 5.973 0 0 0 32 26a5.973 5.973 0 0 0-2.997.801ZM4 32c-.5-5.5 6.5-12.5 12-12 5.5-.5 12.5 6.5 12 12 .5 5.5-6.5 12.5-12 12-5.5.5-12.5-6.5-12-12Zm32.5 0C36 26.5 41.294 19.707 48 20c7.5.5 12.302 6.801 12 12 0 7.215-6.5 12.5-12 12-5.5.5-12-6.5-11.5-12Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  color: #336BFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
@@ -1470,6 +1511,59 @@ Array [
       <path
         clipRule="evenodd"
         d="M31.0256 29.7751H32.9744L36 42.8861V43C36 45.2091 34.2091 47 32 47C29.7909 47 28 45.2091 28 43V42.8861L31.0256 29.7751ZM30.0026 43.1027C30.056 44.1595 30.9299 45 32 45C33.0701 45 33.944 44.1595 33.9974 43.1027L32 34.4472L30.0026 43.1027Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  color: #336BFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      height={64}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={64}
+    >
+      <path
+        clipRule="evenodd"
+        d="M21 30C21 27.7909 22.7909 26 25 26C27.2091 26 29 27.7909 29 30C29 32.2091 27.2091 34 25 34C22.7909 34 21 32.2091 21 30ZM25 28C23.8954 28 23 28.8954 23 30C23 31.1046 23.8954 32 25 32C26.1046 32 27 31.1046 27 30C27 28.8954 26.1046 28 25 28Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <path
+        clipRule="evenodd"
+        d="M39 26C36.7909 26 35 27.7909 35 30C35 32.2091 36.7909 34 39 34C41.2091 34 43 32.2091 43 30C43 27.7909 41.2091 26 39 26ZM37 30C37 28.8954 37.8954 28 39 28C40.1046 28 41 28.8954 41 30C41 31.1046 40.1046 32 39 32C37.8954 32 37 31.1046 37 30Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <path
+        d="M27.6315 44.7218C28.7101 45.4922 30.2514 46 32 46C33.7486 46 35.2899 45.4922 36.3685 44.7218C37.449 43.95 38 42.9739 38 42H40C40 43.7875 38.984 45.3114 37.531 46.3493C36.0761 47.3885 34.1174 48 32 48C29.8826 48 27.9239 47.3885 26.469 46.3493C25.016 45.3114 24 43.7875 24 42H26C26 42.9739 26.551 43.95 27.6315 44.7218Z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M32 8C30.3431 8 29 9.34315 29 11C29 12.3062 29.8348 13.4175 31 13.8293V18H17C14.2386 18 12 20.2386 12 23V29H5V43H12V50C12 52.7614 14.2386 55 17 55H47C49.7614 55 52 52.7614 52 50V43H59V29H52V23C52 20.2386 49.7614 18 47 18H33V13.8293C34.1652 13.4175 35 12.3062 35 11C35 9.34315 33.6569 8 32 8ZM31 11C31 10.4477 31.4477 10 32 10C32.5523 10 33 10.4477 33 11C33 11.5523 32.5523 12 32 12C31.4477 12 31 11.5523 31 11ZM50 50C50 51.6569 48.6569 53 47 53H17C15.3431 53 14 51.6569 14 50V23C14 21.3431 15.3431 20 17 20H47C48.6569 20 50 21.3431 50 23V50ZM57 41H52V31H57V41ZM12 41V31H7V41H12Z"
         fill="currentColor"
         fillRule="evenodd"
       />
@@ -4028,6 +4122,51 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       <span
         className="Typography__Span-sc-10mju41-0 c3"
       >
+        Pension64
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={64}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={64}
+        >
+          <path
+            d="M16 38c-4 0-6-3.79-6-6H8a8 8 0 0 0 8 8v-2Z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M29.003 26.801C26.939 21.643 21.895 18 16 18 8.947 18 2.97 23.715 2 30.5H0v3h2C2.97 40.285 8.947 46 16 46c7.732 0 14-6.268 14-14 0-1.105.895-3 2-3s2 1.895 2 3c0 7.732 6.268 14 14 14 7.053 0 13.03-5.715 14-12.5h2V31h-2c-.97-6.785-6.947-13-14-13-5.895 0-10.939 3.643-13.003 8.801A5.973 5.973 0 0 0 32 26a5.973 5.973 0 0 0-2.997.801ZM4 32c-.5-5.5 6.5-12.5 12-12 5.5-.5 12.5 6.5 12 12 .5 5.5-6.5 12.5-12 12-5.5.5-12.5-6.5-12-12Zm32.5 0C36 26.5 41.294 19.707 48 20c7.5.5 12.302 6.801 12 12 0 7.215-6.5 12.5-12 12-5.5.5-12-6.5-11.5-12Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
         PriceAlert48
       </span>
     </div>
@@ -4230,6 +4369,63 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
           <path
             clipRule="evenodd"
             d="M31.0256 29.7751H32.9744L36 42.8861V43C36 45.2091 34.2091 47 32 47C29.7909 47 28 45.2091 28 43V42.8861L31.0256 29.7751ZM30.0026 43.1027C30.056 44.1595 30.9299 45 32 45C33.0701 45 33.944 44.1595 33.9974 43.1027L32 34.4472L30.0026 43.1027Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
+        Robot64
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={64}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={64}
+        >
+          <path
+            clipRule="evenodd"
+            d="M21 30C21 27.7909 22.7909 26 25 26C27.2091 26 29 27.7909 29 30C29 32.2091 27.2091 34 25 34C22.7909 34 21 32.2091 21 30ZM25 28C23.8954 28 23 28.8954 23 30C23 31.1046 23.8954 32 25 32C26.1046 32 27 31.1046 27 30C27 28.8954 26.1046 28 25 28Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+          <path
+            clipRule="evenodd"
+            d="M39 26C36.7909 26 35 27.7909 35 30C35 32.2091 36.7909 34 39 34C41.2091 34 43 32.2091 43 30C43 27.7909 41.2091 26 39 26ZM37 30C37 28.8954 37.8954 28 39 28C40.1046 28 41 28.8954 41 30C41 31.1046 40.1046 32 39 32C37.8954 32 37 31.1046 37 30Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+          <path
+            d="M27.6315 44.7218C28.7101 45.4922 30.2514 46 32 46C33.7486 46 35.2899 45.4922 36.3685 44.7218C37.449 43.95 38 42.9739 38 42H40C40 43.7875 38.984 45.3114 37.531 46.3493C36.0761 47.3885 34.1174 48 32 48C29.8826 48 27.9239 47.3885 26.469 46.3493C25.016 45.3114 24 43.7875 24 42H26C26 42.9739 26.551 43.95 27.6315 44.7218Z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M32 8C30.3431 8 29 9.34315 29 11C29 12.3062 29.8348 13.4175 31 13.8293V18H17C14.2386 18 12 20.2386 12 23V29H5V43H12V50C12 52.7614 14.2386 55 17 55H47C49.7614 55 52 52.7614 52 50V43H59V29H52V23C52 20.2386 49.7614 18 47 18H33V13.8293C34.1652 13.4175 35 12.3062 35 11C35 9.34315 33.6569 8 32 8ZM31 11C31 10.4477 31.4477 10 32 10C32.5523 10 33 10.4477 33 11C33 11.5523 32.5523 12 32 12C31.4477 12 31 11.5523 31 11ZM50 50C50 51.6569 48.6569 53 47 53H17C15.3431 53 14 51.6569 14 50V23C14 21.3431 15.3431 20 17 20H47C48.6569 20 50 21.3431 50 23V50ZM57 41H52V31H57V41ZM12 41V31H7V41H12Z"
             fill="currentColor"
             fillRule="evenodd"
           />
@@ -6970,6 +7166,42 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       <span
         className="Typography__Span-sc-10mju41-0 c4"
       >
+        Pension64
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={64}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={64}
+    >
+      <path
+        d="M16 38c-4 0-6-3.79-6-6H8a8 8 0 0 0 8 8v-2Z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M29.003 26.801C26.939 21.643 21.895 18 16 18 8.947 18 2.97 23.715 2 30.5H0v3h2C2.97 40.285 8.947 46 16 46c7.732 0 14-6.268 14-14 0-1.105.895-3 2-3s2 1.895 2 3c0 7.732 6.268 14 14 14 7.053 0 13.03-5.715 14-12.5h2V31h-2c-.97-6.785-6.947-13-14-13-5.895 0-10.939 3.643-13.003 8.801A5.973 5.973 0 0 0 32 26a5.973 5.973 0 0 0-2.997.801ZM4 32c-.5-5.5 6.5-12.5 12-12 5.5-.5 12.5 6.5 12 12 .5 5.5-6.5 12.5-12 12-5.5.5-12.5-6.5-12-12Zm32.5 0C36 26.5 41.294 19.707 48 20c7.5.5 12.302 6.801 12 12 0 7.215-6.5 12.5-12 12-5.5.5-12-6.5-11.5-12Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        15
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c4"
+      >
         RiskHigh64
       </span>
     </div>
@@ -6993,7 +7225,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        15
+        16
       </title>
     </svg>
   </div>
@@ -7029,7 +7261,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        16
+        17
       </title>
     </svg>
   </div>
@@ -7065,7 +7297,55 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        17
+        18
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c4"
+      >
+        Robot64
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={64}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={64}
+    >
+      <path
+        clipRule="evenodd"
+        d="M21 30C21 27.7909 22.7909 26 25 26C27.2091 26 29 27.7909 29 30C29 32.2091 27.2091 34 25 34C22.7909 34 21 32.2091 21 30ZM25 28C23.8954 28 23 28.8954 23 30C23 31.1046 23.8954 32 25 32C26.1046 32 27 31.1046 27 30C27 28.8954 26.1046 28 25 28Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <path
+        clipRule="evenodd"
+        d="M39 26C36.7909 26 35 27.7909 35 30C35 32.2091 36.7909 34 39 34C41.2091 34 43 32.2091 43 30C43 27.7909 41.2091 26 39 26ZM37 30C37 28.8954 37.8954 28 39 28C40.1046 28 41 28.8954 41 30C41 31.1046 40.1046 32 39 32C37.8954 32 37 31.1046 37 30Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <path
+        d="M27.6315 44.7218C28.7101 45.4922 30.2514 46 32 46C33.7486 46 35.2899 45.4922 36.3685 44.7218C37.449 43.95 38 42.9739 38 42H40C40 43.7875 38.984 45.3114 37.531 46.3493C36.0761 47.3885 34.1174 48 32 48C29.8826 48 27.9239 47.3885 26.469 46.3493C25.016 45.3114 24 43.7875 24 42H26C26 42.9739 26.551 43.95 27.6315 44.7218Z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M32 8C30.3431 8 29 9.34315 29 11C29 12.3062 29.8348 13.4175 31 13.8293V18H17C14.2386 18 12 20.2386 12 23V29H5V43H12V50C12 52.7614 14.2386 55 17 55H47C49.7614 55 52 52.7614 52 50V43H59V29H52V23C52 20.2386 49.7614 18 47 18H33V13.8293C34.1652 13.4175 35 12.3062 35 11C35 9.34315 33.6569 8 32 8ZM31 11C31 10.4477 31.4477 10 32 10C32.5523 10 33 10.4477 33 11C33 11.5523 32.5523 12 32 12C31.4477 12 31 11.5523 31 11ZM50 50C50 51.6569 48.6569 53 47 53H17C15.3431 53 14 51.6569 14 50V23C14 21.3431 15.3431 20 17 20H47C48.6569 20 50 21.3431 50 23V50ZM57 41H52V31H57V41ZM12 41V31H7V41H12Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        19
       </title>
     </svg>
   </div>
@@ -7101,7 +7381,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        18
+        20
       </title>
     </svg>
   </div>
@@ -7141,7 +7421,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        19
+        21
       </title>
     </svg>
   </div>
@@ -7181,7 +7461,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        20
+        22
       </title>
     </svg>
   </div>
@@ -7217,7 +7497,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        21
+        23
       </title>
     </svg>
   </div>
@@ -7253,7 +7533,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        22
+        24
       </title>
     </svg>
   </div>
@@ -7293,7 +7573,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        23
+        25
       </title>
     </svg>
   </div>
@@ -7323,7 +7603,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fill="currentColor"
       />
       <title>
-        24
+        26
       </title>
     </svg>
   </div>
@@ -7379,7 +7659,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        25
+        27
       </title>
     </svg>
   </div>
@@ -7414,7 +7694,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         />
       </g>
       <title>
-        26
+        28
       </title>
     </svg>
   </div>
@@ -7560,7 +7840,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         />
       </g>
       <title>
-        27
+        29
       </title>
     </svg>
   </div>
@@ -7665,7 +7945,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         />
       </g>
       <title>
-        28
+        30
       </title>
     </svg>
   </div>
@@ -7711,7 +7991,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        29
+        31
       </title>
     </svg>
   </div>
@@ -7749,7 +8029,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        30
+        32
       </title>
     </svg>
   </div>

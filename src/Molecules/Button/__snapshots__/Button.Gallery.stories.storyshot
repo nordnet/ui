@@ -311,7 +311,7 @@ Array [
                 className="c3"
               >
                 <button
-                  aria-label="Go to Page 30"
+                  aria-label="Go to Page 31"
                   className="c10 c11"
                   onClick={[Function]}
                   type="button"
@@ -322,7 +322,7 @@ Array [
                     <span
                       className="Typography__Span-sc-10mju41-0 c13"
                     >
-                      30
+                      31
                     </span>
                   </span>
                 </button>
