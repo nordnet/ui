@@ -1,3 +1,10 @@
+# [11.0.0-beta.3](https://github.com/nordnet/ui/compare/v11.0.0-beta.2...v11.0.0-beta.3) (2022-09-15)
+
+
+### Bug Fixes
+
+* 🐛 add text aligning css properties ([c6a93b9](https://github.com/nordnet/ui/commit/c6a93b9))
+
 # [11.0.0-beta.2](https://github.com/nordnet/ui/compare/v11.0.0-beta.1...v11.0.0-beta.2) (2022-09-13)
 
 
