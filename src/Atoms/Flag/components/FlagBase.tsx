@@ -18,8 +18,12 @@ export const StyledSvg = styled(CleanSvg)<{
       width: ${$width}px;
       user-select: none;
       flex-shrink: 0;
-      display: ${inline ? 'inline-block' : 'block'};
-      ${inline ? 'vertical-align: sub;' : ''}
+      ${inline
+        ? `display: inline-block;
+          vertical-align: middle;
+          position: relative;
+          bottom: 1px;`
+        : 'display: block;'}
     `;
   }}
 `;
