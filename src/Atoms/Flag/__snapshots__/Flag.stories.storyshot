@@ -2779,7 +2779,9 @@ Array [
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: inline-block;
-  vertical-align: sub;
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
 }
 
 <svg
