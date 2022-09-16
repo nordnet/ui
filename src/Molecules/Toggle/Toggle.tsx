@@ -19,10 +19,9 @@ const Knob = styled.span`
   height: ${(p) => p.theme.spacing.unit(KNOB_SIZE)}px;
   width: ${(p) => p.theme.spacing.unit(KNOB_SIZE)}px;
   position: absolute;
-  top: 50%;
-  left: 1px;
+  left: 2px;
   border: 1px solid ${(p) => p.theme.color.inputBorder};
-  margin-top: -${(p) => p.theme.spacing.unit(KNOB_SIZE / 2)}px;
+  margin-top: 2px;
   border-radius: ${(p) => p.theme.spacing.unit(KNOB_SIZE / 2)}px;
   box-sizing: border-box;
   box-shadow: 0px 1px 3px 1px ${(p) => p.theme.color.shadowSwitch};
@@ -55,7 +54,7 @@ const Button = styled(NormalizedElements.Button)`
     }
 
     ${Knob} {
-      transform: translate(${(p) => p.theme.spacing.unit(TRACK_WIDTH - 0.75 - KNOB_SIZE)}px);
+      transform: translate(${(p) => p.theme.spacing.unit(TRACK_WIDTH - KNOB_SIZE - 1)}px);
     }
   }
 
@@ -109,9 +108,13 @@ export const Toggle: React.FC<Props> = ({
   return (
     <Label>
       <Flexbox container gutter={2} alignItems="center" as="span">
-        <Flexbox item as="span">
-          {hiddenLabel ? <VisuallyHidden>{titleNode}</VisuallyHidden> : titleNode}
-        </Flexbox>
+        {hiddenLabel ? (
+          <VisuallyHidden>{titleNode}</VisuallyHidden>
+        ) : (
+          <Flexbox item as="span">
+            {titleNode}
+          </Flexbox>
+        )}
         <Flexbox item as="span">
           <Button
             className={className}
