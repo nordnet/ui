@@ -1,3 +1,4 @@
+import React from 'react';
 import { OptionItem } from '../Input/Select/Select.types';
 
 export type Props = {
@@ -19,6 +20,7 @@ export type ControlsListItemSelect = {
   options: OptionItem[];
   onChange: (val: OptionItem[]) => void;
   selectedItem: OptionItem[];
+  asAddon?: boolean;
 } & Props;
 
 export type ControlsListItemRadio = {
@@ -27,4 +29,5 @@ export type ControlsListItemRadio = {
   name: string;
   label: string;
   checked?: boolean;
+  addon?: React.ReactNode;
 } & Props;

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { Flexbox, Input, Typography, Icon, Button, Box } from '../..';
+import { OptionItem } from '../Input/Select/Select.types';
 
 export const StyledButton = styled(Button)`
   background: ${(t) => t.theme.color.background};
@@ -21,16 +23,18 @@ export const StyledBox = styled(Box)<{
 `;
 
 const StyledFlexbox = styled(Flexbox)`
-  padding-left: ${(p) => p.theme.spacing.unit(2)}px;
   width: 100%;
 `;
 
 const ControlsListItemSelectListItem = ({
   index,
   selectedItem,
+  displayCheckmark = true,
 }: {
   index: number;
-  selectedItem: string | React.ReactElement;
+  selectedItem: string | React.ReactElement | OptionItem[];
+  // eslint-disable-next-line react/require-default-props
+  displayCheckmark?: boolean;
 }) => {
   const [state] = Input.Select.useSelectMachineFromContext();
   const option = state.context.visibleOptions[index];
@@ -51,6 +55,7 @@ const ControlsListItemSelectListItem = ({
           <StyledFlexbox item container justifyContent="space-between" alignItems="center">
             <Flexbox item>
               <Typography
+                whiteSpace="nowrap"
                 type="secondary"
                 color={(t) =>
                   option.value === selectedItem?.[0]?.value
@@ -61,11 +66,13 @@ const ControlsListItemSelectListItem = ({
                 {option.label}
               </Typography>
             </Flexbox>
-            <Flexbox item>
-              {option.value === selectedItem?.[0]?.value && (
-                <Icon.Check16 color={(t) => t.color.quickFilterSelectedText} />
-              )}
-            </Flexbox>
+            {displayCheckmark && (
+              <Flexbox item>
+                {option.value === selectedItem?.[0]?.value && (
+                  <Icon.Check16 color={(t) => t.color.quickFilterSelectedText} />
+                )}
+              </Flexbox>
+            )}
           </StyledFlexbox>
         </Flexbox>
       </StyledBox>

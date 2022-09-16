@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { Input, CssGrid as Grid, Typography } from '../..';
+import { Flexbox, Input, CssGrid as Grid, Typography } from '../..';
 
 import { ControlsListItemSelect as Props } from './ControlsListItem.types';
 import ControlsListItem from './ControlsListItem';
@@ -24,15 +24,38 @@ const ControlsListItemSelect: React.FC<Props> = ({
   onChange,
   selectedItem,
   description,
+  asAddon,
 }) => {
-  const customGraphTypeComponents = useMemo(
+  const customComponents = useMemo(
     () => ({
       SelectedValue: () => ControlsListItemSelectButton(selectedItem?.[0]?.label),
       ListItem: ({ index }: { index: number }) =>
-        ControlsListItemSelectListItem({ index, selectedItem: selectedItem?.[0]?.label }),
+        ControlsListItemSelectListItem({ index, selectedItem }),
     }),
     [selectedItem],
   );
+
+  if (asAddon) {
+    return (
+      <Flexbox container justifyContent="space-between" alignItems="center">
+        <Typography type="secondary" color={(t) => t.color.label}>
+          {label}
+        </Typography>
+        <Input.Select
+          id="control-list-item-select"
+          label={label}
+          components={customComponents}
+          onChange={onChange}
+          options={options}
+          listPosition="left"
+          fullWidth
+          hideLabel
+          noFormField
+        />
+      </Flexbox>
+    );
+  }
+
   return (
     <ControlsListItem>
       <Grid.Container {...GRID}>
@@ -41,14 +64,16 @@ const ControlsListItemSelect: React.FC<Props> = ({
         </Grid.Item>
 
         <Grid.Item area="label" justify="start" align="center">
-          <Typography>{label}</Typography>
+          <Typography type="secondary" weight="bold">
+            {label}
+          </Typography>
         </Grid.Item>
 
         <Grid.Item area="button" justify="end" align="center">
           <Input.Select
-            id="graph-typ-input"
-            label="Line graph"
-            components={customGraphTypeComponents}
+            id="control-list-item-select"
+            label={label}
+            components={customComponents}
             onChange={onChange}
             options={options}
             listPosition="left"

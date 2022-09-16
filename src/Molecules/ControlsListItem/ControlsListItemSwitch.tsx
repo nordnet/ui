@@ -29,7 +29,9 @@ const ControlsListItemSwitch: React.FC<Props> = ({
         </Grid.Item>
 
         <Grid.Item area="label" justify="start" align="center">
-          <Typography>{label}</Typography>
+          <Typography type="secondary" weight="bold">
+            {label}
+          </Typography>
         </Grid.Item>
 
         <Grid.Item area="button" justify="end" align="center">

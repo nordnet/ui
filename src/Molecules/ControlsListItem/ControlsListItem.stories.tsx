@@ -64,6 +64,32 @@ ControlsListItemSelect.story = {
   name: 'Controls list item select',
 };
 
+export const ControlsListItemSelectWithoutDescription = (asAddon = false) => {
+  const mockedListItems = [
+    { label: 'first label', value: 'first value' },
+    { label: 'second label', value: 'second value' },
+    { label: 'third label', value: 'third value' },
+  ] as OptionItem[];
+
+  const [selectedItem, setSelectedItem] = useState([mockedListItems[0]]);
+  const onChange = (val: OptionItem[]) => {
+    setSelectedItem(val);
+  };
+  return (
+    <ControlsListItem.Select
+      label="label"
+      onChange={onChange}
+      options={mockedListItems}
+      selectedItem={selectedItem}
+      text="text"
+      asAddon={asAddon}
+    />
+  );
+};
+
+ControlsListItemSelectWithoutDescription.story = {
+  name: 'Controls list item select without description',
+};
 export const ControlsListItemSwitch = () => {
   const [isChecked, setIsChecked] = useState(false);
 
@@ -147,7 +173,7 @@ ControlsListItemRadio.story = {
   name: 'Controls list item Radio with multiple groups',
 };
 
-export const ControlsListItemRadioWithSubSelector = () => {
+export const ControlsListItemRadioWithAddon = () => {
   const OPTIONS = { KARAM: 'KARAM', VIKING: 'VIKING', MICHAEL: 'MICHAEL', JESPER: 'JESPER' };
 
   const [currentGroup, setCurrentGroup] = useState('');
@@ -166,12 +192,12 @@ export const ControlsListItemRadioWithSubSelector = () => {
         value={OPTIONS.VIKING}
         description="description is good otherwise we don't understand"
         onChange={(_) => onChange(OPTIONS.VIKING)}
-        onChange2={(_) => {}}
+        addon={ControlsListItemSelectWithoutDescription(true)}
       />
     </div>
   );
 };
 
-ControlsListItemRadioWithSubSelector.story = {
-  name: 'Controls list item Radio with subselector',
+ControlsListItemRadioWithAddon.story = {
+  name: 'Controls list item Radio with addon component',
 };

@@ -22,7 +22,9 @@ const ControlsListItemRadio: React.FC<Props> = ({
   name,
   onChange,
   value,
+  addon,
 }) => {
+  const hasAddon = React.isValidElement(addon);
   return (
     <ControlsListItem>
       <Grid.Container {...GRID}>
@@ -31,7 +33,9 @@ const ControlsListItemRadio: React.FC<Props> = ({
         </Grid.Item>
 
         <Grid.Item area="label" justify="start" align="center">
-          <Typography>{label}</Typography>
+          <Typography type="secondary" weight="bold">
+            {label}
+          </Typography>
         </Grid.Item>
 
         <Grid.Item area="button" justify="end" align="center">
@@ -51,6 +55,7 @@ const ControlsListItemRadio: React.FC<Props> = ({
               {description}
             </Typography>
           )}
+          {hasAddon && addon}
         </Grid.Item>
       </Grid.Container>
     </ControlsListItem>
