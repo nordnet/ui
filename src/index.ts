@@ -80,6 +80,7 @@ import Switch, { SwitchToggle } from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
 import Timeline from './Molecules/Timeline';
+import Toggle from './Molecules/Toggle';
 import Tooltip from './Molecules/Tooltip';
 import TruncateWithTooltip from './Molecules/TruncateWithTooltip';
 import QuickFilter from './Molecules/QuickFilter';
@@ -206,6 +207,7 @@ export {
   Thead,
   Time,
   Timeline,
+  Toggle,
   Tooltip,
   Tr,
   TrackingContext,
