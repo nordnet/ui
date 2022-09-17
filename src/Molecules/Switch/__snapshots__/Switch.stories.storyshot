@@ -1,347 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
-.c0 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #FFFFFF;
-}
-
-.c20 {
-  padding-left: 4px;
-  background-color: transparent;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c4 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c4 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c5 {
-  box-sizing: border-box;
-}
-
-.c11 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-}
-
-.c17 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-}
-
-.c6 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c8 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c14 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #336BFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c18 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #A0A09B;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c21 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
-  display: inline-block;
-}
-
-.c13 {
-  height: 20px;
-  width: 108.16901408450705px;
-  position: absolute;
-  padding-top: 1px;
-  top: 2px;
-  left: 2px;
-  border-radius: 20px;
-  box-sizing: border-box;
-  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
-  -webkit-transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
-  transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
-  background-color: #FFFFFF;
-}
-
-.c16 {
-  display: block;
-  height: 20px;
-  width: 192px;
-  padding: 2px 4px;
-  border-radius: 20px;
-  line-height: 20px;
-  background-color: #F5F5F5;
-  box-shadow: 0px 1px 3px 1px #F5F5F5;
-}
-
-.c10 {
-  position: relative;
-}
-
-.c9 {
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
-}
-
-.c9[aria-checked='true'] .c12 {
-  -webkit-transform: translate( 87.83098591549295px );
-  -ms-transform: translate( 87.83098591549295px );
-  transform: translate( 87.83098591549295px );
-}
-
-.c9[disabled] .c15,
-.c9[aria-readonly] .c15 {
-  background-color: #EBEBE8;
-}
-
-.c9[disabled] .c12,
-.c9[aria-readonly] .c12 {
-  background-color: #F5F5F5;
-}
-
-.c9[aria-checked='true'][aria-readonly] .c15 {
-  background-color: rgba(0,70,255,0.1);
-}
-
-.c19 {
-  width: 96px;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      <label
-        className="c3"
-      >
-        <span
-          className="c4"
-        >
-          <span
-            className="c5"
-          >
-            <div
-              className="c6"
-            >
-              <span
-                className="Typography__Span-sc-10mju41-0 c7"
-              >
-                language toggle
-              </span>
-            </div>
-          </span>
-          <span
-            className="c5"
-          >
-            <button
-              aria-checked={false}
-              className="c8 c9"
-              knobwidth={27.042253521126764}
-              onClick={[Function]}
-              role="switch"
-              type="button"
-              width={48}
-            >
-              <div
-                className="c10"
-              >
-                <div
-                  className="c11 c12 c13"
-                  knobwidth={27.042253521126764}
-                >
-                  <span
-                    className="Typography__Span-sc-10mju41-0 c14"
-                  >
-                    Swedish
-                  </span>
-                </div>
-                <span
-                  className="c15 c16"
-                  width={48}
-                >
-                  <div
-                    className="c17"
-                  >
-                    <span
-                      className="Typography__Span-sc-10mju41-0 c18 c19"
-                    >
-                      Swedish
-                    </span>
-                    <span
-                      className="Typography__Span-sc-10mju41-0 c18 c19"
-                    >
-                      Finnish
-                    </span>
-                  </div>
-                </span>
-              </div>
-            </button>
-          </span>
-        </span>
-      </label>
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c20"
-      >
-        <span
-          className="Typography__Span-sc-10mju41-0 c21"
-        >
-          Active: 
-          Swedish
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules / Switch Controlled behaviour 1`] = `
+exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Controlled behaviour 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -419,10 +78,9 @@ exports[`Storyshots Molecules / Switch Controlled behaviour 1`] = `
   height: 24px;
   width: 24px;
   position: absolute;
-  top: 50%;
-  left: 0;
+  left: 0px;
   border: 1px solid #BDBDBD;
-  margin-top: -12px;
+  margin-top: -4px;
   border-radius: 12px;
   box-sizing: border-box;
   box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
@@ -458,9 +116,9 @@ exports[`Storyshots Molecules / Switch Controlled behaviour 1`] = `
 }
 
 .c5[aria-checked='true'] .c7 {
-  -webkit-transform: translate(16px);
-  -ms-transform: translate(16px);
-  transform: translate(16px);
+  -webkit-transform: translate( 16px );
+  -ms-transform: translate( 16px );
+  transform: translate( 16px );
 }
 
 .c5[disabled] .c9,
@@ -508,9 +166,11 @@ exports[`Storyshots Molecules / Switch Controlled behaviour 1`] = `
         >
           <span
             className="c7 c8"
+            size="l"
           />
           <span
             className="c9 c10"
+            size="l"
           />
         </div>
       </button>
@@ -519,346 +179,7 @@ exports[`Storyshots Molecules / Switch Controlled behaviour 1`] = `
 </label>
 `;
 
-exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
-.c0 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #FFFFFF;
-}
-
-.c20 {
-  padding-left: 4px;
-  background-color: transparent;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c4 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c4 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c5 {
-  box-sizing: border-box;
-}
-
-.c11 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-}
-
-.c17 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-}
-
-.c6 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c8 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c14 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #336BFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c18 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #A0A09B;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c21 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
-  display: inline-block;
-}
-
-.c13 {
-  height: 20px;
-  width: 40px;
-  position: absolute;
-  padding-top: 1px;
-  top: 2px;
-  left: 2px;
-  border-radius: 20px;
-  box-sizing: border-box;
-  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
-  -webkit-transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
-  transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
-  background-color: #FFFFFF;
-}
-
-.c16 {
-  display: block;
-  height: 20px;
-  width: 71px;
-  padding: 2px 4px;
-  border-radius: 20px;
-  line-height: 20px;
-  background-color: #F5F5F5;
-  box-shadow: 0px 1px 3px 1px #F5F5F5;
-}
-
-.c10 {
-  position: relative;
-}
-
-.c9 {
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
-}
-
-.c9[aria-checked='true'] .c12 {
-  -webkit-transform: translate( 35px );
-  -ms-transform: translate( 35px );
-  transform: translate( 35px );
-}
-
-.c9[disabled] .c15,
-.c9[aria-readonly] .c15 {
-  background-color: #EBEBE8;
-}
-
-.c9[disabled] .c12,
-.c9[aria-readonly] .c12 {
-  background-color: #F5F5F5;
-}
-
-.c9[aria-checked='true'][aria-readonly] .c15 {
-  background-color: rgba(0,70,255,0.1);
-}
-
-.c19 {
-  width: 35.5px;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      <label
-        className="c3"
-      >
-        <span
-          className="c4"
-        >
-          <span
-            className="c5"
-          >
-            <div
-              className="c6"
-            >
-              <span
-                className="Typography__Span-sc-10mju41-0 c7"
-              >
-                finance toggle
-              </span>
-            </div>
-          </span>
-          <span
-            className="c5"
-          >
-            <button
-              aria-checked={false}
-              className="c8 c9"
-              knobwidth={10}
-              onClick={[Function]}
-              role="switch"
-              type="button"
-            >
-              <div
-                className="c10"
-              >
-                <div
-                  className="c11 c12 c13"
-                  knobwidth={10}
-                >
-                  <span
-                    className="Typography__Span-sc-10mju41-0 c14"
-                  >
-                    SEK
-                  </span>
-                </div>
-                <span
-                  className="c15 c16"
-                >
-                  <div
-                    className="c17"
-                  >
-                    <span
-                      className="Typography__Span-sc-10mju41-0 c18 c19"
-                    >
-                      SEK
-                    </span>
-                    <span
-                      className="Typography__Span-sc-10mju41-0 c18 c19"
-                    >
-                      %
-                    </span>
-                  </div>
-                </span>
-              </div>
-            </button>
-          </span>
-        </span>
-      </label>
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c20"
-      >
-        <span
-          className="Typography__Span-sc-10mju41-0 c21"
-        >
-          Active: 
-          SEK
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules / Switch Default Off 1`] = `
+exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Default Off 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -936,10 +257,9 @@ exports[`Storyshots Molecules / Switch Default Off 1`] = `
   height: 24px;
   width: 24px;
   position: absolute;
-  top: 50%;
-  left: 0;
+  left: 0px;
   border: 1px solid #BDBDBD;
-  margin-top: -12px;
+  margin-top: -4px;
   border-radius: 12px;
   box-sizing: border-box;
   box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
@@ -975,9 +295,9 @@ exports[`Storyshots Molecules / Switch Default Off 1`] = `
 }
 
 .c5[aria-checked='true'] .c7 {
-  -webkit-transform: translate(16px);
-  -ms-transform: translate(16px);
-  transform: translate(16px);
+  -webkit-transform: translate( 16px );
+  -ms-transform: translate( 16px );
+  transform: translate( 16px );
 }
 
 .c5[disabled] .c9,
@@ -1025,9 +345,11 @@ exports[`Storyshots Molecules / Switch Default Off 1`] = `
         >
           <span
             className="c7 c8"
+            size="l"
           />
           <span
             className="c9 c10"
+            size="l"
           />
         </div>
       </button>
@@ -1036,7 +358,7 @@ exports[`Storyshots Molecules / Switch Default Off 1`] = `
 </label>
 `;
 
-exports[`Storyshots Molecules / Switch Default On 1`] = `
+exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Default On 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1114,10 +436,9 @@ exports[`Storyshots Molecules / Switch Default On 1`] = `
   height: 24px;
   width: 24px;
   position: absolute;
-  top: 50%;
-  left: 0;
+  left: 0px;
   border: 1px solid #BDBDBD;
-  margin-top: -12px;
+  margin-top: -4px;
   border-radius: 12px;
   box-sizing: border-box;
   box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
@@ -1153,9 +474,9 @@ exports[`Storyshots Molecules / Switch Default On 1`] = `
 }
 
 .c5[aria-checked='true'] .c7 {
-  -webkit-transform: translate(16px);
-  -ms-transform: translate(16px);
-  transform: translate(16px);
+  -webkit-transform: translate( 16px );
+  -ms-transform: translate( 16px );
+  transform: translate( 16px );
 }
 
 .c5[disabled] .c9,
@@ -1203,9 +524,11 @@ exports[`Storyshots Molecules / Switch Default On 1`] = `
         >
           <span
             className="c7 c8"
+            size="l"
           />
           <span
             className="c9 c10"
+            size="l"
           />
         </div>
       </button>
@@ -1214,7 +537,7 @@ exports[`Storyshots Molecules / Switch Default On 1`] = `
 </label>
 `;
 
-exports[`Storyshots Molecules / Switch Disabled 1`] = `
+exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Disabled 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1292,10 +615,9 @@ exports[`Storyshots Molecules / Switch Disabled 1`] = `
   height: 24px;
   width: 24px;
   position: absolute;
-  top: 50%;
-  left: 0;
+  left: 0px;
   border: 1px solid #BDBDBD;
-  margin-top: -12px;
+  margin-top: -4px;
   border-radius: 12px;
   box-sizing: border-box;
   box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
@@ -1331,9 +653,9 @@ exports[`Storyshots Molecules / Switch Disabled 1`] = `
 }
 
 .c5[aria-checked='true'] .c7 {
-  -webkit-transform: translate(16px);
-  -ms-transform: translate(16px);
-  transform: translate(16px);
+  -webkit-transform: translate( 16px );
+  -ms-transform: translate( 16px );
+  transform: translate( 16px );
 }
 
 .c5[disabled] .c9,
@@ -1382,9 +704,11 @@ exports[`Storyshots Molecules / Switch Disabled 1`] = `
         >
           <span
             className="c7 c8"
+            size="l"
           />
           <span
             className="c9 c10"
+            size="l"
           />
         </div>
       </button>
@@ -1393,7 +717,7 @@ exports[`Storyshots Molecules / Switch Disabled 1`] = `
 </label>
 `;
 
-exports[`Storyshots Molecules / Switch Read Only 1`] = `
+exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Read Only 1`] = `
 .c5 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1480,10 +804,9 @@ exports[`Storyshots Molecules / Switch Read Only 1`] = `
   height: 24px;
   width: 24px;
   position: absolute;
-  top: 50%;
-  left: 0;
+  left: 0px;
   border: 1px solid #BDBDBD;
-  margin-top: -12px;
+  margin-top: -4px;
   border-radius: 12px;
   box-sizing: border-box;
   box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
@@ -1519,9 +842,9 @@ exports[`Storyshots Molecules / Switch Read Only 1`] = `
 }
 
 .c9[aria-checked='true'] .c11 {
-  -webkit-transform: translate(16px);
-  -ms-transform: translate(16px);
-  transform: translate(16px);
+  -webkit-transform: translate( 16px );
+  -ms-transform: translate( 16px );
+  transform: translate( 16px );
 }
 
 .c9[disabled] .c13,
@@ -1645,9 +968,11 @@ exports[`Storyshots Molecules / Switch Read Only 1`] = `
               >
                 <span
                   className="c11 c12"
+                  size="l"
                 />
                 <span
                   className="c13 c14"
+                  size="l"
                 />
               </div>
             </button>
@@ -1701,9 +1026,11 @@ exports[`Storyshots Molecules / Switch Read Only 1`] = `
               >
                 <span
                   className="c11 c12"
+                  size="l"
                 />
                 <span
                   className="c13 c14"
+                  size="l"
                 />
               </div>
             </button>
@@ -1715,7 +1042,7 @@ exports[`Storyshots Molecules / Switch Read Only 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules / Switch With Label prop as ReactNode 1`] = `
+exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) With Label prop as ReactNode 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1793,10 +1120,9 @@ exports[`Storyshots Molecules / Switch With Label prop as ReactNode 1`] = `
   height: 24px;
   width: 24px;
   position: absolute;
-  top: 50%;
-  left: 0;
+  left: 0px;
   border: 1px solid #BDBDBD;
-  margin-top: -12px;
+  margin-top: -4px;
   border-radius: 12px;
   box-sizing: border-box;
   box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
@@ -1832,9 +1158,9 @@ exports[`Storyshots Molecules / Switch With Label prop as ReactNode 1`] = `
 }
 
 .c5[aria-checked='true'] .c7 {
-  -webkit-transform: translate(16px);
-  -ms-transform: translate(16px);
-  transform: translate(16px);
+  -webkit-transform: translate( 16px );
+  -ms-transform: translate( 16px );
+  transform: translate( 16px );
 }
 
 .c5[disabled] .c9,
@@ -1882,9 +1208,11 @@ exports[`Storyshots Molecules / Switch With Label prop as ReactNode 1`] = `
         >
           <span
             className="c7 c8"
+            size="l"
           />
           <span
             className="c9 c10"
+            size="l"
           />
         </div>
       </button>
@@ -1893,7 +1221,7 @@ exports[`Storyshots Molecules / Switch With Label prop as ReactNode 1`] = `
 </label>
 `;
 
-exports[`Storyshots Molecules / Switch With hidden label 1`] = `
+exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) With hidden label 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1917,11 +1245,11 @@ exports[`Storyshots Molecules / Switch With hidden label 1`] = `
   padding-top: 0;
 }
 
-.c2 {
+.c4 {
   box-sizing: border-box;
 }
 
-.c3 {
+.c2 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1961,7 +1289,7 @@ exports[`Storyshots Molecules / Switch With hidden label 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c4 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1980,10 +1308,9 @@ exports[`Storyshots Molecules / Switch With hidden label 1`] = `
   height: 24px;
   width: 24px;
   position: absolute;
-  top: 50%;
-  left: 0;
+  left: 0px;
   border: 1px solid #BDBDBD;
-  margin-top: -12px;
+  margin-top: -4px;
   border-radius: 12px;
   box-sizing: border-box;
   box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
@@ -2019,9 +1346,9 @@ exports[`Storyshots Molecules / Switch With hidden label 1`] = `
 }
 
 .c6[aria-checked='true'] .c8 {
-  -webkit-transform: translate(16px);
-  -ms-transform: translate(16px);
-  transform: translate(16px);
+  -webkit-transform: translate( 16px );
+  -ms-transform: translate( 16px );
+  transform: translate( 16px );
 }
 
 .c6[disabled] .c10,
@@ -2045,21 +1372,17 @@ exports[`Storyshots Molecules / Switch With hidden label 1`] = `
   <span
     className="c1"
   >
-    <span
+    <div
       className="c2"
     >
-      <div
-        className="c3"
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
       >
-        <span
-          className="Typography__Span-sc-10mju41-0 c4"
-        >
-          Notify me by email
-        </span>
-      </div>
-    </span>
+        Notify me by email
+      </span>
+    </div>
     <span
-      className="c2"
+      className="c4"
     >
       <button
         aria-checked={false}
@@ -2073,9 +1396,11 @@ exports[`Storyshots Molecules / Switch With hidden label 1`] = `
         >
           <span
             className="c8 c9"
+            size="l"
           />
           <span
             className="c10 c11"
+            size="l"
           />
         </div>
       </button>

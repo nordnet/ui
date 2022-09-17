@@ -19,10 +19,17 @@ export const defaultOff = () => (
 );
 
 export const defaultOn = () => (
-  <Box py={4}>
-    {' '}
-    <Toggle label="Notify me by email" onClick={action('clicked')} checkedInitially />
-  </Box>
+  <>
+    <Box py={4}>
+      <Toggle label="Size: large" size="l" onClick={action('clicked')} checkedInitially />
+    </Box>
+    <Box py={4}>
+      <Toggle label="Size: medium" size="m" onClick={action('clicked')} checkedInitially />
+    </Box>
+    <Box py={4}>
+      <Toggle label="Size: small" size="s" onClick={action('clicked')} checkedInitially />
+    </Box>
+  </>
 );
 
 export const disabledStory = () => (

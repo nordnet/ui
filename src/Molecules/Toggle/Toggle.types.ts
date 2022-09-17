@@ -1,3 +1,5 @@
+export type SizeProp = 's' | 'm' | 'l';
+
 export type Props = {
   className?: string;
   checkedInitially?: boolean;
@@ -14,6 +16,7 @@ export type Props = {
    */
   onClick?: (e: React.MouseEvent, checked?: boolean) => void;
   readOnly?: boolean;
+  size?: SizeProp;
 };
 
 export type SwitchToggleProps = Props & {
