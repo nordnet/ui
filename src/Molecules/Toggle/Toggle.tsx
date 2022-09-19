@@ -13,28 +13,28 @@ const Label = styled.label`
   display: inline-block;
 `;
 
-const Knob = styled.span<{ size: SizeProp }>`
-  background: ${(p) => p.theme.color.bubbleBackground};
+const Knob = styled.span<{ $size: SizeProp }>`
+  background: ${(p) => p.theme.color.toggleKnobEnabledOffBg};
   display: block;
-  height: ${(p) => p.theme.spacing.unit(KNOB_SIZE[p.size])}px;
-  width: ${(p) => p.theme.spacing.unit(KNOB_SIZE[p.size])}px;
+  height: ${(p) => p.theme.spacing.unit(KNOB_SIZE[p.$size])}px;
+  width: ${(p) => p.theme.spacing.unit(KNOB_SIZE[p.$size])}px;
   position: absolute;
-  left: ${(p) => (p.size === 'l' ? 0 : 2)}px;
+  left: ${(p) => (p.$size === 'l' ? 0 : 2)}px;
   border: 1px solid ${(p) => p.theme.color.inputBorder};
-  margin-top: ${(p) => (p.size === 'l' ? -4 : 2)}px;
-  border-radius: ${(p) => p.theme.spacing.unit(KNOB_SIZE[p.size] / 2)}px;
+  margin-top: ${(p) => (p.$size === 'l' ? -4 : 2)}px;
+  border-radius: ${(p) => p.theme.spacing.unit(KNOB_SIZE[p.$size] / 2)}px;
   box-sizing: border-box;
   box-shadow: 0px 1px 3px 1px ${(p) => p.theme.color.shadowSwitch};
   transition: transform 0.2s cubic-bezier(0.18, 0.9, 0.35, 1.15);
 `;
 
-const Track = styled.span<{ size: SizeProp }>`
+const Track = styled.span<{ $size: SizeProp }>`
   display: block;
-  height: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT[p.size])}px;
-  width: ${(p) => p.theme.spacing.unit(TRACK_WIDTH[p.size])}px;
-  margin: ${(p) => p.theme.spacing.unit((KNOB_SIZE[p.size] - TRACK_HEIGHT[p.size]) / 2)}px 0;
-  background-color: ${(p) => p.theme.color.inputBorder};
-  border-radius: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT[p.size] / 2)}px;
+  height: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT[p.$size])}px;
+  width: ${(p) => p.theme.spacing.unit(TRACK_WIDTH[p.$size])}px;
+  margin: ${(p) => p.theme.spacing.unit((KNOB_SIZE[p.$size] - TRACK_HEIGHT[p.$size]) / 2)}px 0;
+  background-color: ${(p) => p.theme.color.toggleTrackEnabledOffBg};
+  border-radius: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT[p.$size] / 2)}px;
   transition: background-color 0.2s ease-out;
 `;
 
@@ -42,7 +42,7 @@ const ButtonContent = styled.div`
   position: relative; /* IE fix for nudge on click */
 `;
 
-const Button = styled(NormalizedElements.Button)<{ size: SizeProp }>`
+const Button = styled(NormalizedElements.Button)<{ $size: SizeProp }>`
   display: block;
   background: none;
   padding: 0;
@@ -50,14 +50,14 @@ const Button = styled(NormalizedElements.Button)<{ size: SizeProp }>`
 
   &[aria-checked='true'] {
     ${Track} {
-      background-color: ${(p) => p.theme.color.cta};
+      background-color: ${(p) => p.theme.color.toggleTrackEnabledOnBg};
     }
 
     ${Knob} {
       transform: translate(
         ${(p) =>
           p.theme.spacing.unit(
-            TRACK_WIDTH[p.size] - KNOB_SIZE[p.size] - (p.size === 'l' ? 0 : 1),
+            TRACK_WIDTH[p.$size] - KNOB_SIZE[p.$size] - (p.$size === 'l' ? 0 : 1),
           )}px
       );
     }
@@ -66,18 +66,22 @@ const Button = styled(NormalizedElements.Button)<{ size: SizeProp }>`
   &[disabled],
   &[aria-readonly] {
     ${Track} {
-      background-color: ${(p) => p.theme.color.disabledBackground};
+      background-color: ${(p) => p.theme.color.toggleTrackDisabledOffBg};
     }
 
     ${Knob} {
       border: 1px solid ${(p) => p.theme.color.disabledBackground};
-      background-color: ${(p) => p.theme.color.switchReadOnlyKnobBg};
+      background-color: ${(p) => p.theme.color.toggleKnobDisabledOffBg};
     }
   }
 
-  &[aria-checked='true'][aria-readonly] {
+  &[aria-checked='true'][disabled] {
     ${Track} {
-      background-color: ${(p) => p.theme.color.switchReadOnlyTrackBg};
+      background-color: ${(p) => p.theme.color.toggleTrackDisabledOnBg};
+    }
+    ${Knob} {
+      border: 1px solid ${(p) => p.theme.color.disabledBackground};
+      background-color: ${(p) => p.theme.color.toggleKnobDisabledOnBg};
     }
   }
 `;
@@ -130,11 +134,11 @@ export const Toggle: React.FC<Props> = ({
             onClick={isControlled ? onClick : internalClickHandler}
             disabled={disabled}
             aria-readonly={readOnly}
-            size={size}
+            $size={size}
           >
             <ButtonContent>
-              <Knob size={size} />
-              <Track size={size} />
+              <Knob $size={size} />
+              <Track $size={size} />
             </ButtonContent>
           </Button>
         </Flexbox>

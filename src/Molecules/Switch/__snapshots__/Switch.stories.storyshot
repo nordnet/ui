@@ -94,7 +94,7 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Control
   height: 16px;
   width: 40px;
   margin: 4px 0;
-  background-color: #BDBDBD;
+  background-color: #E0E0E0;
   border-radius: 8px;
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
@@ -123,17 +123,22 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Control
 
 .c5[disabled] .c9,
 .c5[aria-readonly] .c9 {
-  background-color: #EBEBE8;
+  background-color: #E0E0E0;
 }
 
 .c5[disabled] .c7,
 .c5[aria-readonly] .c7 {
   border: 1px solid #EBEBE8;
-  background-color: #F5F5F5;
+  background-color: #EEEEEE;
 }
 
-.c5[aria-checked='true'][aria-readonly] .c9 {
-  background-color: rgba(0,70,255,0.1);
+.c5[aria-checked='true'][disabled] .c9 {
+  background-color: #D6E1FF;
+}
+
+.c5[aria-checked='true'][disabled] .c7 {
+  border: 1px solid #EBEBE8;
+  background-color: #FFFFFF;
 }
 
 <label
@@ -166,11 +171,9 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Control
         >
           <span
             className="c7 c8"
-            size="l"
           />
           <span
             className="c9 c10"
-            size="l"
           />
         </div>
       </button>
@@ -273,7 +276,7 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Default
   height: 16px;
   width: 40px;
   margin: 4px 0;
-  background-color: #BDBDBD;
+  background-color: #E0E0E0;
   border-radius: 8px;
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
@@ -302,17 +305,22 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Default
 
 .c5[disabled] .c9,
 .c5[aria-readonly] .c9 {
-  background-color: #EBEBE8;
+  background-color: #E0E0E0;
 }
 
 .c5[disabled] .c7,
 .c5[aria-readonly] .c7 {
   border: 1px solid #EBEBE8;
-  background-color: #F5F5F5;
+  background-color: #EEEEEE;
 }
 
-.c5[aria-checked='true'][aria-readonly] .c9 {
-  background-color: rgba(0,70,255,0.1);
+.c5[aria-checked='true'][disabled] .c9 {
+  background-color: #D6E1FF;
+}
+
+.c5[aria-checked='true'][disabled] .c7 {
+  border: 1px solid #EBEBE8;
+  background-color: #FFFFFF;
 }
 
 <label
@@ -345,11 +353,9 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Default
         >
           <span
             className="c7 c8"
-            size="l"
           />
           <span
             className="c9 c10"
-            size="l"
           />
         </div>
       </button>
@@ -452,7 +458,7 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Default
   height: 16px;
   width: 40px;
   margin: 4px 0;
-  background-color: #BDBDBD;
+  background-color: #E0E0E0;
   border-radius: 8px;
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
@@ -481,17 +487,22 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Default
 
 .c5[disabled] .c9,
 .c5[aria-readonly] .c9 {
-  background-color: #EBEBE8;
+  background-color: #E0E0E0;
 }
 
 .c5[disabled] .c7,
 .c5[aria-readonly] .c7 {
   border: 1px solid #EBEBE8;
-  background-color: #F5F5F5;
+  background-color: #EEEEEE;
 }
 
-.c5[aria-checked='true'][aria-readonly] .c9 {
-  background-color: rgba(0,70,255,0.1);
+.c5[aria-checked='true'][disabled] .c9 {
+  background-color: #D6E1FF;
+}
+
+.c5[aria-checked='true'][disabled] .c7 {
+  border: 1px solid #EBEBE8;
+  background-color: #FFFFFF;
 }
 
 <label
@@ -524,11 +535,9 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Default
         >
           <span
             className="c7 c8"
-            size="l"
           />
           <span
             className="c9 c10"
-            size="l"
           />
         </div>
       </button>
@@ -631,7 +640,7 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Disable
   height: 16px;
   width: 40px;
   margin: 4px 0;
-  background-color: #BDBDBD;
+  background-color: #E0E0E0;
   border-radius: 8px;
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
@@ -660,17 +669,22 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Disable
 
 .c5[disabled] .c9,
 .c5[aria-readonly] .c9 {
-  background-color: #EBEBE8;
+  background-color: #E0E0E0;
 }
 
 .c5[disabled] .c7,
 .c5[aria-readonly] .c7 {
   border: 1px solid #EBEBE8;
-  background-color: #F5F5F5;
+  background-color: #EEEEEE;
 }
 
-.c5[aria-checked='true'][aria-readonly] .c9 {
-  background-color: rgba(0,70,255,0.1);
+.c5[aria-checked='true'][disabled] .c9 {
+  background-color: #D6E1FF;
+}
+
+.c5[aria-checked='true'][disabled] .c7 {
+  border: 1px solid #EBEBE8;
+  background-color: #FFFFFF;
 }
 
 <label
@@ -704,11 +718,9 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Disable
         >
           <span
             className="c7 c8"
-            size="l"
           />
           <span
             className="c9 c10"
-            size="l"
           />
         </div>
       </button>
@@ -820,7 +832,7 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Read On
   height: 16px;
   width: 40px;
   margin: 4px 0;
-  background-color: #BDBDBD;
+  background-color: #E0E0E0;
   border-radius: 8px;
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
@@ -849,17 +861,22 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Read On
 
 .c9[disabled] .c13,
 .c9[aria-readonly] .c13 {
-  background-color: #EBEBE8;
+  background-color: #E0E0E0;
 }
 
 .c9[disabled] .c11,
 .c9[aria-readonly] .c11 {
   border: 1px solid #EBEBE8;
-  background-color: #F5F5F5;
+  background-color: #EEEEEE;
 }
 
-.c9[aria-checked='true'][aria-readonly] .c13 {
-  background-color: rgba(0,70,255,0.1);
+.c9[aria-checked='true'][disabled] .c13 {
+  background-color: #D6E1FF;
+}
+
+.c9[aria-checked='true'][disabled] .c11 {
+  border: 1px solid #EBEBE8;
+  background-color: #FFFFFF;
 }
 
 .c0 {
@@ -968,11 +985,9 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Read On
               >
                 <span
                   className="c11 c12"
-                  size="l"
                 />
                 <span
                   className="c13 c14"
-                  size="l"
                 />
               </div>
             </button>
@@ -1026,11 +1041,9 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) Read On
               >
                 <span
                   className="c11 c12"
-                  size="l"
                 />
                 <span
                   className="c13 c14"
-                  size="l"
                 />
               </div>
             </button>
@@ -1136,7 +1149,7 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) With La
   height: 16px;
   width: 40px;
   margin: 4px 0;
-  background-color: #BDBDBD;
+  background-color: #E0E0E0;
   border-radius: 8px;
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
@@ -1165,17 +1178,22 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) With La
 
 .c5[disabled] .c9,
 .c5[aria-readonly] .c9 {
-  background-color: #EBEBE8;
+  background-color: #E0E0E0;
 }
 
 .c5[disabled] .c7,
 .c5[aria-readonly] .c7 {
   border: 1px solid #EBEBE8;
-  background-color: #F5F5F5;
+  background-color: #EEEEEE;
 }
 
-.c5[aria-checked='true'][aria-readonly] .c9 {
-  background-color: rgba(0,70,255,0.1);
+.c5[aria-checked='true'][disabled] .c9 {
+  background-color: #D6E1FF;
+}
+
+.c5[aria-checked='true'][disabled] .c7 {
+  border: 1px solid #EBEBE8;
+  background-color: #FFFFFF;
 }
 
 <label
@@ -1208,11 +1226,9 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) With La
         >
           <span
             className="c7 c8"
-            size="l"
           />
           <span
             className="c9 c10"
-            size="l"
           />
         </div>
       </button>
@@ -1324,7 +1340,7 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) With hi
   height: 16px;
   width: 40px;
   margin: 4px 0;
-  background-color: #BDBDBD;
+  background-color: #E0E0E0;
   border-radius: 8px;
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
@@ -1353,17 +1369,22 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) With hi
 
 .c6[disabled] .c10,
 .c6[aria-readonly] .c10 {
-  background-color: #EBEBE8;
+  background-color: #E0E0E0;
 }
 
 .c6[disabled] .c8,
 .c6[aria-readonly] .c8 {
   border: 1px solid #EBEBE8;
-  background-color: #F5F5F5;
+  background-color: #EEEEEE;
 }
 
-.c6[aria-checked='true'][aria-readonly] .c10 {
-  background-color: rgba(0,70,255,0.1);
+.c6[aria-checked='true'][disabled] .c10 {
+  background-color: #D6E1FF;
+}
+
+.c6[aria-checked='true'][disabled] .c8 {
+  border: 1px solid #EBEBE8;
+  background-color: #FFFFFF;
 }
 
 <label
@@ -1396,11 +1417,9 @@ exports[`Storyshots DEPRECATED / Molecules / Switch (use Toggle instead) With hi
         >
           <span
             className="c8 c9"
-            size="l"
           />
           <span
             className="c10 c11"
-            size="l"
           />
         </div>
       </button>

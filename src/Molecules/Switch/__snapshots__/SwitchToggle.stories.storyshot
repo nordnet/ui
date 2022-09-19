@@ -234,11 +234,11 @@ exports[`Storyshots Molecules / SwitchToggle  Augmented Width Switch Toggle 1`] 
 
 .c9[disabled] .c12,
 .c9[aria-readonly] .c12 {
-  background-color: #F5F5F5;
+  background-color: #EEEEEE;
 }
 
 .c9[aria-checked='true'][aria-readonly] .c15 {
-  background-color: rgba(0,70,255,0.1);
+  background-color: #D6E1FF;
 }
 
 .c19 {
@@ -575,11 +575,11 @@ exports[`Storyshots Molecules / SwitchToggle  Default  Switch Toggle 1`] = `
 
 .c9[disabled] .c12,
 .c9[aria-readonly] .c12 {
-  background-color: #F5F5F5;
+  background-color: #EEEEEE;
 }
 
 .c9[aria-checked='true'][aria-readonly] .c15 {
-  background-color: rgba(0,70,255,0.1);
+  background-color: #D6E1FF;
 }
 
 .c19 {

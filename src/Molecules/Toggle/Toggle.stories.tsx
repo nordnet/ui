@@ -33,10 +33,14 @@ export const defaultOn = () => (
 );
 
 export const disabledStory = () => (
-  <Box py={4}>
-    {' '}
-    <Toggle label="Notify me by email" disabled />
-  </Box>
+  <>
+    <Box py={4}>
+      <Toggle label="Disabled on" checkedInitially disabled />
+    </Box>
+    <Box py={4}>
+      <Toggle label="Disabled off" disabled />
+    </Box>
+  </>
 );
 
 disabledStory.story = {

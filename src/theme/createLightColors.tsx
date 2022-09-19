@@ -304,8 +304,18 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     svgStokeLight: rawColor.white,
     svgStroke: rawColor.gray2,
 
-    switchReadOnlyKnobBg: rawColor.gray7,
-    switchReadOnlyTrackBg: Color(rawColor.cta).alpha(0.1).rgb().string(),
+    switchReadOnlyKnobBg: rawColor.gray200,
+    switchReadOnlyTrackBg: rawColor.blue200,
+
+    toggleTrackEnabledOnBg: rawColor.blue500,
+    toggleTrackEnabledOffBg: rawColor.gray300,
+    toggleTrackDisabledOnBg: rawColor.blue200,
+    toggleTrackDisabledOffBg: rawColor.gray300,
+
+    toggleKnobEnabledOnBg: rawColor.white,
+    toggleKnobEnabledOffBg: rawColor.white,
+    toggleKnobDisabledOnBg: rawColor.white,
+    toggleKnobDisabledOffBg: rawColor.gray200,
 
     tableBorder: rawColor.gray0,
     tableRowBackground: rawColor.white,
