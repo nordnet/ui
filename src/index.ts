@@ -80,6 +80,7 @@ import Switch, { SwitchToggle } from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
 import Timeline from './Molecules/Timeline';
+import Toggle from './Molecules/Toggle';
 import Tooltip from './Molecules/Tooltip';
 import TruncateWithTooltip from './Molecules/TruncateWithTooltip';
 import QuickFilter from './Molecules/QuickFilter';
@@ -172,13 +173,13 @@ export {
   Modal,
   MultiStepProgress,
   Number,
-  /** @deprecated */ OldIcon,
+  /** @deprecated use Icon instead */ OldIcon,
   PageHeaderCard,
   PageWrapper,
   Pagination,
   PersistentTooltip,
   Pill,
-  /** @deprecated */ PillButton,
+  /** @deprecated use Button.Pill instead */ PillButton,
   Portal,
   ProgressBar,
   ProgressIndicator,
@@ -193,7 +194,7 @@ export {
   Slider,
   Spinner,
   StatusModal,
-  Switch,
+  /** @deprecated use Toggle instead */ Switch,
   SwitchToggle,
   TabTitle,
   Table,
@@ -206,6 +207,7 @@ export {
   Thead,
   Time,
   Timeline,
+  Toggle,
   Tooltip,
   Tr,
   TrackingContext,

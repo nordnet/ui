@@ -632,6 +632,15 @@ export type ThemeColors = {
   switchReadOnlyKnobBg: string;
   /** 10 percent of cta */
   switchReadOnlyTrackBg: string;
+  /** toggle colors */
+  toggleTrackEnabledOnBg: string;
+  toggleTrackEnabledOffBg: string;
+  toggleTrackDisabledOnBg: string;
+  toggleTrackDisabledOffBg: string;
+  toggleKnobEnabledOnBg: string;
+  toggleKnobEnabledOffBg: string;
+  toggleKnobDisabledOnBg: string;
+  toggleKnobDisabledOffBg: string;
   /** gray0 */
   tableBorder: string;
   /** white */

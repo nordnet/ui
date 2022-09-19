@@ -304,8 +304,18 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     svgStokeLight: rawColor.gray0,
     svgStroke: rawColor.gray4,
 
-    switchReadOnlyKnobBg: rawColor.gray7,
-    switchReadOnlyTrackBg: Color(rawColor.cta).alpha(0.1).rgb().string(),
+    switchReadOnlyKnobBg: rawColor.gray600,
+    switchReadOnlyTrackBg: rawColor.blue700,
+
+    toggleTrackEnabledOnBg: rawColor.blue500,
+    toggleTrackEnabledOffBg: rawColor.gray600,
+    toggleTrackDisabledOnBg: rawColor.blue700,
+    toggleTrackDisabledOffBg: rawColor.gray700,
+
+    toggleKnobEnabledOnBg: rawColor.white,
+    toggleKnobEnabledOffBg: rawColor.white,
+    toggleKnobDisabledOnBg: rawColor.gray600,
+    toggleKnobDisabledOffBg: rawColor.gray600,
 
     tableBorder: rawColor.gray0,
     tableRowBackground: rawColor.gray800,

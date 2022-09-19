@@ -1,3 +1,4 @@
+import area from './area';
 import barGraph from './barGraph';
 import buySellDots from './buySellDots';
 import candlesticks from './candlesticks';
@@ -15,6 +16,7 @@ import technicalAnalysis from './technicalAnalysis';
 import volume from './volume';
 
 export default {
+  ...area,
   ...barGraph,
   ...buySellDots,
   ...candlesticks,
