@@ -20,10 +20,10 @@ export const getStarSize = (size: IconSizeProp) => {
     case 4:
       return 'StarFill16';
     case 'l':
-    case 5:
+    case 6:
       return 'StarFill24';
     case 'xl':
-    case 6:
+    case 8:
       return 'StarFill32';
     default:
       return 'StarFill16';
