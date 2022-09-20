@@ -25,14 +25,17 @@ const ControlsListItemSelect: React.FC<Props> = ({
   selectedItem,
   description,
   asAddon,
+  showCheckmark,
+  justifyContent,
+  listWidth,
 }) => {
   const customComponents = useMemo(
     () => ({
       SelectedValue: () => ControlsListItemSelectButton(selectedItem?.[0]?.label),
       ListItem: ({ index }: { index: number }) =>
-        ControlsListItemSelectListItem({ index, selectedItem }),
+        ControlsListItemSelectListItem({ index, selectedItem, showCheckmark, justifyContent }),
     }),
-    [selectedItem],
+    [selectedItem, showCheckmark, justifyContent],
   );
 
   if (asAddon) {
@@ -51,6 +54,7 @@ const ControlsListItemSelect: React.FC<Props> = ({
           fullWidth
           hideLabel
           noFormField
+          listWidth={listWidth}
         />
       </Flexbox>
     );

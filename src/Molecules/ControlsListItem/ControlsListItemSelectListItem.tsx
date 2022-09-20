@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { Flexbox, Input, Typography, Icon, Button, Box } from '../..';
 import { OptionItem } from '../Input/Select/Select.types';
+import { JustifyContentProp } from './ControlsListItem.types';
 
 export const StyledButton = styled(Button)`
   background: ${(t) => t.theme.color.background};
@@ -29,12 +30,14 @@ const StyledFlexbox = styled(Flexbox)`
 const ControlsListItemSelectListItem = ({
   index,
   selectedItem,
-  displayCheckmark = true,
+  showCheckmark = true,
+  justifyContent = 'space-between',
 }: {
   index: number;
   selectedItem: string | React.ReactElement | OptionItem[];
   // eslint-disable-next-line react/require-default-props
-  displayCheckmark?: boolean;
+  showCheckmark?: boolean;
+  justifyContent: JustifyContentProp;
 }) => {
   const [state] = Input.Select.useSelectMachineFromContext();
   const option = state.context.visibleOptions[index];
@@ -52,7 +55,7 @@ const ControlsListItemSelectListItem = ({
         isKeyboardNavigation={isKeyboardNavigation}
       >
         <Flexbox container alignItems="center">
-          <StyledFlexbox item container justifyContent="space-between" alignItems="center">
+          <StyledFlexbox item container justifyContent={justifyContent} alignItems="center">
             <Flexbox item>
               <Typography
                 whiteSpace="nowrap"
@@ -66,7 +69,7 @@ const ControlsListItemSelectListItem = ({
                 {option.label}
               </Typography>
             </Flexbox>
-            {displayCheckmark && (
+            {showCheckmark && justifyContent !== 'flex-end' && (
               <Flexbox item>
                 {option.value === selectedItem?.[0]?.value && (
                   <Icon.Check16 color={(t) => t.color.quickFilterSelectedText} />

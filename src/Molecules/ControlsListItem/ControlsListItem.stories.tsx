@@ -64,7 +64,12 @@ ControlsListItemSelect.story = {
   name: 'Controls list item select',
 };
 
-export const ControlsListItemSelectWithoutDescription = (asAddon = false) => {
+export const ControlsListItemSelectWithoutDescription = (
+  asAddon = false,
+  rightAligned = false,
+  showCheckmark = true,
+  listWidth: string | undefined,
+) => {
   const mockedListItems = [
     { label: 'first label', value: 'first value' },
     { label: 'second label', value: 'second value' },
@@ -83,6 +88,9 @@ export const ControlsListItemSelectWithoutDescription = (asAddon = false) => {
       selectedItem={selectedItem}
       text="text"
       asAddon={asAddon}
+      justifyContent={rightAligned ? 'flex-end' : undefined}
+      showCheckmark={showCheckmark}
+      listWidth={listWidth}
     />
   );
 };
@@ -192,7 +200,7 @@ export const ControlsListItemRadioWithAddon = () => {
         value={OPTIONS.VIKING}
         description="description is good otherwise we don't understand"
         onChange={(_) => onChange(OPTIONS.VIKING)}
-        addon={ControlsListItemSelectWithoutDescription(true)}
+        addon={ControlsListItemSelectWithoutDescription(true, false, true, undefined)}
       />
     </div>
   );
@@ -200,4 +208,62 @@ export const ControlsListItemRadioWithAddon = () => {
 
 ControlsListItemRadioWithAddon.story = {
   name: 'Controls list item Radio with addon component',
+};
+
+export const ControlsListItemRadioWithAddonRightAligned = () => {
+  const OPTIONS = { KARAM: 'KARAM', VIKING: 'VIKING', MICHAEL: 'MICHAEL', JESPER: 'JESPER' };
+
+  const [currentGroup, setCurrentGroup] = useState('');
+
+  const onChange = (s: string) => {
+    setCurrentGroup(s);
+  };
+
+  return (
+    <div style={{ width: '100%' }}>
+      <ControlsListItem.Radio
+        checked={currentGroup === OPTIONS.VIKING}
+        name={OPTIONS.VIKING}
+        label={OPTIONS.VIKING}
+        Icon={<Icon.Gold16 />}
+        value={OPTIONS.VIKING}
+        description="description is good otherwise we don't understand"
+        onChange={(_) => onChange(OPTIONS.VIKING)}
+        addon={ControlsListItemSelectWithoutDescription(true, true, false, 'auto')}
+      />
+    </div>
+  );
+};
+
+ControlsListItemRadioWithAddonRightAligned.story = {
+  name: 'Controls list item Radio with addon component right aligned',
+};
+
+export const ControlsListItemRadioWithAddonRightAlignedFixedMinWidth = () => {
+  const OPTIONS = { KARAM: 'KARAM', VIKING: 'VIKING', MICHAEL: 'MICHAEL', JESPER: 'JESPER' };
+
+  const [currentGroup, setCurrentGroup] = useState('');
+
+  const onChange = (s: string) => {
+    setCurrentGroup(s);
+  };
+
+  return (
+    <div style={{ width: '100%' }}>
+      <ControlsListItem.Radio
+        checked={currentGroup === OPTIONS.VIKING}
+        name={OPTIONS.VIKING}
+        label={OPTIONS.VIKING}
+        Icon={<Icon.Gold16 />}
+        value={OPTIONS.VIKING}
+        description="description is good otherwise we don't understand"
+        onChange={(_) => onChange(OPTIONS.VIKING)}
+        addon={ControlsListItemSelectWithoutDescription(true, true, false, '300px')}
+      />
+    </div>
+  );
+};
+
+ControlsListItemRadioWithAddonRightAlignedFixedMinWidth.story = {
+  name: 'Controls list item Radio with addon component right aligned and fixed min-width',
 };

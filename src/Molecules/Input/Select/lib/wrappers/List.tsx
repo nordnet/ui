@@ -55,6 +55,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
       'data-testid': dataTestId,
       maxHeight,
       listPosition,
+      listWidth,
       placement,
       itemsPerColumn,
       columnWidth,
@@ -75,6 +76,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
         onBlur={onBlur}
         width={width}
         listPosition={listPosition}
+        listWidth={listWidth}
         placement={placement}
         $fullscreenOnMobile={fullscreenOnMobile}
         itemsPerColumn={itemsPerColumn}
@@ -87,6 +89,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
           noFormField={noFormField}
           placement={placement}
           itemsPerColumn={itemsPerColumn}
+          listWidth={listWidth}
           columnWidth={columnWidth}
         >
           {children}

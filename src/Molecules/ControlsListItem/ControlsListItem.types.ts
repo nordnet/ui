@@ -1,12 +1,20 @@
 import React from 'react';
 import { OptionItem } from '../Input/Select/Select.types';
 
+export type JustifyContentProp =
+  | 'flex-start'
+  | 'flex-end'
+  | 'center'
+  | 'space-between'
+  | 'space-around'
+  | 'space-evenly'
+  | undefined;
+
 export type Props = {
   label: string;
   Icon?: React.ReactNode;
   text?: string;
   description?: string;
-  onChange2?: (val: OptionItem[]) => void;
 };
 
 export type ControlsListItemSwitch = {
@@ -21,6 +29,9 @@ export type ControlsListItemSelect = {
   onChange: (val: OptionItem[]) => void;
   selectedItem: OptionItem[];
   asAddon?: boolean;
+  showCheckmark?: boolean;
+  justifyContent?: JustifyContentProp;
+  listWidth?: string;
 } & Props;
 
 export type ControlsListItemRadio = {
