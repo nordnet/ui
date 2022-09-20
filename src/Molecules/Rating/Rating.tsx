@@ -1,7 +1,7 @@
 import React from 'react';
-import { Flexbox, OldIcon, VisuallyHidden } from '../..';
+import { Flexbox, Icon, VisuallyHidden } from '../..';
 import { isNumber } from '../../common/utils';
-import { Props, RatingComponent } from './Rating.types';
+import { Props, RatingComponent, IconSizeProp } from './Rating.types';
 
 const restrictRange = (rating: Props['rating']) => {
   if (!isNumber(rating)) return 0;
@@ -11,20 +11,40 @@ const restrictRange = (rating: Props['rating']) => {
   return rating;
 };
 
-export const Rating: RatingComponent = ({ rating = 0, size = 5 }) => {
+export const getStarSize = (size: IconSizeProp) => {
+  switch (size) {
+    case 's':
+    case 3:
+      return 'StarFill12';
+    case 'm':
+    case 4:
+      return 'StarFill16';
+    case 'l':
+    case 5:
+      return 'StarFill24';
+    case 'xl':
+    case 6:
+      return 'StarFill32';
+    default:
+      return 'StarFill16';
+  }
+};
+
+export const Rating: RatingComponent = ({ rating = 0, size = 'm' }) => {
   const finalRating = restrictRange(rating);
   const screenReaderText = rating === 1 ? `${rating} star` : `${rating} stars`;
+  const StarIcon = Icon[getStarSize(size)];
 
   return (
-    <Flexbox container>
+    <Flexbox container gap="2px">
       <VisuallyHidden>{screenReaderText}</VisuallyHidden>
       {[...Array(5)]?.map((_, index) => (
-        <OldIcon.Star
-          key={`${size}${index}`} // eslint-disable-line react/no-array-index-key
-          size={size}
-          stroke={(t) => (index >= finalRating ? t.color.starRatingOff : t.color.starRating)}
-          fill={(t) => (index >= finalRating ? t.color.starRatingOff : t.color.starRating)}
-        />
+        // eslint-disable-next-line react/no-array-index-key
+        <Flexbox item key={`${size}${index}`}>
+          <StarIcon
+            color={(t: any) => (index >= finalRating ? t.color.starRatingOff : t.color.starRating)}
+          />
+        </Flexbox>
       ))}
     </Flexbox>
   );

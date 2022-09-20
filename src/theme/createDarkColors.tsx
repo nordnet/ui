@@ -48,7 +48,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     barGraphHighlight: Color(rawColor.complementaryBlue1).alpha(0.3).rgb().string(),
 
     barScaleActiveBar: rawColor.complementaryTurquoise1,
-    barScaleInactiveBar: rawColor.gray6,
+    barScaleInactiveBar: rawColor.gray700,
 
     borderActive: rawColor.blue500,
 
@@ -295,7 +295,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     spinnerBlack: rawColor.black,
     spinnerWhite: rawColor.white,
     starRating: rawColor.index,
-    starRatingOff: rawColor.gray6,
+    starRatingOff: rawColor.gray700,
     statusFulfilledBackgroundColor: rawColor.cta,
     statusFulfilledTextColor: rawColor.white,
     streamingBolt: rawColor.index,
