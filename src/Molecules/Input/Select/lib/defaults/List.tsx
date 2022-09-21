@@ -11,6 +11,7 @@ type ListProps = {
   placement?: 'bottom' | 'top';
   itemsPerColumn?: number;
   columnWidth?: string;
+  listWidth?: string;
 };
 
 const StyledColumnsList = styled(UIList)<any>`
@@ -47,6 +48,16 @@ const IE11Wrapper = styled.div`
   flex-direction: row;
 `;
 
+const getMinWidth = (p: any) => {
+  if (p.itemsPerColumn) {
+    return 'auto';
+  }
+  if (p.listWidth) {
+    return p.listWidth;
+  }
+  return `${p.theme.spacing.unit(41)}px`;
+};
+
 const StyledDropdownBubble = styled(DropdownBubble)<any>`
   flex-grow: 0;
   flex-shrink: 1;
@@ -55,10 +66,7 @@ const StyledDropdownBubble = styled(DropdownBubble)<any>`
   flex-direction: column;
   -ms-overflow-y: scroll;
   width: ${(p) => (p.itemsPerColumn ? 'auto' : '100%')};
-  min-width: ${(p) => (p.itemsPerColumn ? 'auto' : `${p.theme.spacing.unit(41)}px`)};
-  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
-    min-width: auto;
-  }
+  min-width: ${getMinWidth};
   padding-top: ${(p) => p.theme.spacing.unit(1)}px;
   padding-bottom: ${(p) => p.theme.spacing.unit(1)}px;
 `;
@@ -84,6 +92,7 @@ export const List: React.FC<ListProps> = ({
   placement,
   itemsPerColumn,
   columnWidth,
+  listWidth,
 }) => {
   const areOptionsProvided = React.Children.count(children) > 0;
   return (
@@ -93,6 +102,7 @@ export const List: React.FC<ListProps> = ({
         placement={placement}
         maxHeight={maxHeight || '240px'}
         itemsPerColumn={itemsPerColumn}
+        listWidth={listWidth}
       >
         {searchComponent}
         {itemsPerColumn ? (

@@ -336,6 +336,7 @@ const Select = (props: Props) => {
                 !disableSearchComponent && <SearchWrapper ref={searchRef} component={Search} />
               }
               listPosition={props.listPosition}
+              listWidth={props.listWidth}
               placement={props.placement}
               actionsComponent={
                 machineState.context.actions.length > 0 ? (
@@ -383,6 +384,7 @@ const Select = (props: Props) => {
                   !disableSearchComponent && <SearchWrapper ref={searchRef} component={Search} />
                 }
                 listPosition={props.listPosition}
+                listWidth={props.listWidth}
                 placement="top"
                 actionsComponent={
                   machineState.context.actions.length > 0 ? (
