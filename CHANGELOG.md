@@ -1,3 +1,18 @@
+# [10.45.0](https://github.com/nordnet/ui/compare/v10.44.2...v10.45.0) (2022-09-19)
+
+
+### Bug Fixes
+
+* add new toggle colors to fix dark mode ([fc41849](https://github.com/nordnet/ui/commit/fc41849))
+
+
+### Features
+
+* 🎸 added a new Area16 graph icon ([ebd22fa](https://github.com/nordnet/ui/commit/ebd22fa))
+* 🎸 adjust Toggle component styling ([d5cf323](https://github.com/nordnet/ui/commit/d5cf323))
+* 🎸 new Toggle component, variant of the Switch molecule ([eecb29f](https://github.com/nordnet/ui/commit/eecb29f))
+* add size prop to toggle component ([7da84b8](https://github.com/nordnet/ui/commit/7da84b8))
+
 ## [10.44.2](https://github.com/nordnet/ui/compare/v10.44.1...v10.44.2) (2022-09-08)
 
 
