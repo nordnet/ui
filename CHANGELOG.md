@@ -1,3 +1,12 @@
+# [10.46.0](https://github.com/nordnet/ui/compare/v10.45.0...v10.46.0) (2022-09-21)
+
+
+### Features
+
+* 🎸 Change star icon for rating component ([6ccac28](https://github.com/nordnet/ui/commit/6ccac28))
+* 🎸 fix the unit based sizes for rating star size ([e8e5391](https://github.com/nordnet/ui/commit/e8e5391))
+* 🎸 Update the Rating star icon and new Storyshot ([f462c7d](https://github.com/nordnet/ui/commit/f462c7d))
+
 # [10.45.0](https://github.com/nordnet/ui/compare/v10.44.2...v10.45.0) (2022-09-19)
 
 
