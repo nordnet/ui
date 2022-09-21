@@ -1,3 +1,11 @@
+# [11.0.0-beta.4](https://github.com/nordnet/ui/compare/v11.0.0-beta.3...v11.0.0-beta.4) (2022-09-21)
+
+
+### Features
+
+* change 14px flags to 12px ([0b72e1e](https://github.com/nordnet/ui/commit/0b72e1e))
+* update indian flag svg ([19ce3c0](https://github.com/nordnet/ui/commit/19ce3c0))
+
 # [11.0.0-beta.3](https://github.com/nordnet/ui/compare/v11.0.0-beta.2...v11.0.0-beta.3) (2022-09-15)
 
 
