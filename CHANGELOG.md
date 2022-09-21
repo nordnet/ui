@@ -1,3 +1,23 @@
+# [10.47.0](https://github.com/nordnet/ui/compare/v10.46.0...v10.47.0) (2022-09-21)
+
+
+### Bug Fixes
+
+* add addon to control list item radio ([50590dd](https://github.com/nordnet/ui/commit/50590dd))
+* add back semicolon ([999adad](https://github.com/nordnet/ui/commit/999adad))
+* add control list item ([e737800](https://github.com/nordnet/ui/commit/e737800))
+* add grid for displaying controlslist component ([e06a830](https://github.com/nordnet/ui/commit/e06a830))
+* control item list radio ([3dd1087](https://github.com/nordnet/ui/commit/3dd1087))
+* import hook in component ([17fc98b](https://github.com/nordnet/ui/commit/17fc98b))
+* update snapshot ([2b5017f](https://github.com/nordnet/ui/commit/2b5017f))
+* use grid in other items as well ([9f79989](https://github.com/nordnet/ui/commit/9f79989))
+* wrap with label to pick up click events ([725efb1](https://github.com/nordnet/ui/commit/725efb1))
+
+
+### Features
+
+* add listWidth prop to select dropdown bubble ([9ec4cfa](https://github.com/nordnet/ui/commit/9ec4cfa))
+
 # [10.46.0](https://github.com/nordnet/ui/compare/v10.45.0...v10.46.0) (2022-09-21)
 
 
