@@ -3,7 +3,7 @@ import React from 'react';
 type FlagSize = {
   /**
    * @param {string} size The diameter of the flag
-   * - "s" = 14px
+   * - "s" = 12px
    * - "m" = 16px
    * - "l" = 24px
    */

@@ -10,7 +10,7 @@ import { FlagBase } from './components/FlagBase';
  * @param {string} country - Country code
  * @param {boolean} [inline] - Will give the svg display: inline-block and vertical-align: sub
  * @param {string} size - The diameter of the flag
- * - "s" = 14px
+ * - "s" = 12px
  * - "m" = 16px
  * - "l" = 24px
  */
@@ -18,7 +18,7 @@ export const Flag: FlagComponent = ({ size, country, ...rest }) => {
   assert(Boolean(country), 'Flag: You need to supply a country code');
   switch (size) {
     case 's':
-      return <FlagBase country={country} $height={14} $width={14} {...rest} />;
+      return <FlagBase country={country} $height={12} $width={12} {...rest} />;
     case 'm':
       return <FlagBase country={country} $height={16} $width={16} {...rest} />;
     case 'l':

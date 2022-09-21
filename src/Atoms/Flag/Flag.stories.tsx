@@ -40,7 +40,7 @@ export const availableFlags = () => (
         title: 'Sizes',
         component: (
           <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
-            <div>s (14px)</div>
+            <div>s (12px)</div>
             <div>m (16px)</div>
             <div>l (24px)</div>
           </div>

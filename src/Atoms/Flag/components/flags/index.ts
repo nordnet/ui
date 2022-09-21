@@ -8,7 +8,7 @@ import fi from './fi';
 import fr from './fr';
 import gb from './gb';
 import hk from './hk';
-import india from './in';
+import india from './india';
 import jp from './jp';
 import no from './no';
 import ru from './ru';
