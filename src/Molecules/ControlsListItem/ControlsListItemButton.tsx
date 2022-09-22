@@ -27,6 +27,7 @@ const ControlsListItemButton: React.FC<Props> = ({
   Icon,
   buttonText,
   description,
+  disabled,
 }) => {
   return (
     <ControlsListItem>
@@ -40,7 +41,12 @@ const ControlsListItemButton: React.FC<Props> = ({
         </Grid.Item>
 
         <Grid.Item area="button" justify="end" align="center">
-          <StyledButton variant="neutral" color={(t) => t.color.cta} onClick={onClick}>
+          <StyledButton
+            variant="neutral"
+            color={(t) => t.color.cta}
+            onClick={onClick}
+            disabled={disabled}
+          >
             {buttonText}
           </StyledButton>
         </Grid.Item>

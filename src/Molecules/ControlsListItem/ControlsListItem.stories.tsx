@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { OptionItem } from '../Input/Select/Select.types';
 
 import ControlsListItem from '.';
-import { Box, Icon, Separator } from '../..';
+import { Icon, Separator } from '../..';
 
 export default {
   title: 'Molecules / ControlsListItem',
@@ -81,25 +81,24 @@ export const ControlsListItemSelectWithoutDescription = (
     setSelectedItem(val);
   };
   return (
-    <Box pt={2}>
-      <ControlsListItem.Select
-        label="label"
-        onChange={onChange}
-        options={mockedListItems}
-        selectedItem={selectedItem}
-        text="text"
-        asAddon={asAddon}
-        justifyContent={rightAligned ? 'flex-end' : undefined}
-        showCheckmark={showCheckmark}
-        listWidth={listWidth}
-      />
-    </Box>
+    <ControlsListItem.Select
+      label="label"
+      onChange={onChange}
+      options={mockedListItems}
+      selectedItem={selectedItem}
+      text="text"
+      asAddon={asAddon}
+      justifyContent={rightAligned ? 'flex-end' : undefined}
+      showCheckmark={showCheckmark}
+      listWidth={listWidth}
+    />
   );
 };
 
 ControlsListItemSelectWithoutDescription.story = {
   name: 'Controls list item select without description',
 };
+
 export const ControlsListItemSwitch = () => {
   const [isChecked, setIsChecked] = useState(false);
 
@@ -116,6 +115,44 @@ export const ControlsListItemSwitch = () => {
 
 ControlsListItemSwitch.story = {
   name: 'Controls list item switch',
+};
+
+export const ControlsListItemSwitchWithAddon = () => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  return (
+    <ControlsListItem.Switch
+      checked={isChecked}
+      label="label"
+      Icon={<Icon.Account24 />}
+      description="description is good otherwise we don't understand"
+      onChange={() => setIsChecked(!isChecked)}
+      addon={ControlsListItemSelectWithoutDescription(true, false, true, undefined)}
+    />
+  );
+};
+
+ControlsListItemSwitchWithAddon.story = {
+  name: 'Controls list item switch with addon',
+};
+
+export const ControlsListItemSwitchDisabled = () => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  return (
+    <ControlsListItem.Switch
+      checked={isChecked}
+      label="label"
+      Icon={<Icon.Account24 />}
+      description="description is good otherwise we don't understand"
+      onChange={() => setIsChecked(!isChecked)}
+      disabled
+    />
+  );
+};
+
+ControlsListItemSwitchDisabled.story = {
+  name: 'Controls list item switch disabled',
 };
 
 export const ControlsListItemRadio = () => {
@@ -174,6 +211,7 @@ export const ControlsListItemRadio = () => {
         Icon={<Icon.LikeFill16 />}
         description="description is good otherwise we don't understand"
         onChange={(_) => onChangeAnother(OPTIONS.JESPER)}
+        disabled
       />
     </>
   );

@@ -28,6 +28,7 @@ const ControlsListItemSelect: React.FC<Props> = ({
   showCheckmark,
   justifyContent,
   listWidth,
+  disabled,
 }) => {
   const customComponents = useMemo(
     () => ({
@@ -55,6 +56,7 @@ const ControlsListItemSelect: React.FC<Props> = ({
           hideLabel
           noFormField
           listWidth={listWidth}
+          disabled={disabled}
         />
       </Flexbox>
     );
@@ -84,6 +86,8 @@ const ControlsListItemSelect: React.FC<Props> = ({
             fullWidth
             hideLabel
             noFormField
+            listWidth={listWidth}
+            disabled={disabled}
           />
         </Grid.Item>
 

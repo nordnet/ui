@@ -15,11 +15,13 @@ export type Props = {
   Icon?: React.ReactNode;
   text?: string;
   description?: string;
+  disabled?: boolean;
 };
 
 export type ControlsListItemSwitch = {
   onChange: (checked?: boolean) => void;
   checked?: boolean;
+  addon?: React.ReactNode;
 } & Props;
 
 export type ControlsListItemButton = { onClick: () => void; buttonText: string } & Props;

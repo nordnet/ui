@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with addon component 1`] = `
-.c24 {
+.c23 {
   padding-top: 8px;
   background-color: transparent;
 }
 
-.c33 {
+.c32 {
   background-color: transparent;
 }
 
-.c3 {
+.c2 {
   display: grid;
   box-sizing: border-box;
   grid-template-areas: "icon label button" ". description description";
@@ -24,7 +24,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   -ms-grid-columns: auto 8px 1fr 8px 1fr;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: start;
@@ -35,7 +35,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   -ms-grid-row-align: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: end;
@@ -46,12 +46,12 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   -ms-grid-row-align: center;
 }
 
-.c22 {
+.c21 {
   box-sizing: border-box;
   min-width: 0;
 }
 
-.c5 {
+.c4 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -60,7 +60,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   grid-area: icon;
 }
 
-.c7 {
+.c6 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -69,7 +69,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   grid-area: label;
 }
 
-.c10 {
+.c9 {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
@@ -78,7 +78,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   grid-area: button;
 }
 
-.c23 {
+.c22 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
@@ -87,7 +87,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   grid-area: description;
 }
 
-.c15 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -99,7 +99,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c25 {
+.c24 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -115,7 +115,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c28 {
+.c27 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -128,7 +128,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c31 {
+.c30 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -136,7 +136,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: flex;
 }
 
-.c35 {
+.c34 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -150,16 +150,16 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   margin-right: -4px;
 }
 
-.c35 > * {
+.c34 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c35 > *:not(:first-child) {
+.c34 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c19 {
+.c18 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -168,13 +168,13 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   clip: rect(1px,1px,1px,1px);
 }
 
-.c12 {
+.c11 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c6 {
+.c5 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -186,7 +186,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: block;
 }
 
-.c29 {
+.c28 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -195,25 +195,25 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   text-transform: none;
 }
 
-.c29,
-.c29[type='button'],
-.c29[type='reset'],
-.c29[type='submit'] {
+.c28,
+.c28[type='button'],
+.c28[type='reset'],
+.c28[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c29::-moz-focus-inner,
-.c29[type='button']::-moz-focus-inner,
-.c29[type='reset']::-moz-focus-inner,
-.c29[type='submit']::-moz-focus-inner {
+.c28::-moz-focus-inner,
+.c28[type='button']::-moz-focus-inner,
+.c28[type='reset']::-moz-focus-inner,
+.c28[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c29:-moz-focusring,
-.c29[type='button']:-moz-focusring,
-.c29[type='reset']:-moz-focusring,
-.c29[type='submit']:-moz-focusring {
+.c28:-moz-focusring,
+.c28[type='button']:-moz-focusring,
+.c28[type='reset']:-moz-focusring,
+.c28[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -221,7 +221,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: block;
 }
 
-.c8 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -230,7 +230,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E6E;
   margin: 0;
@@ -239,7 +239,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   line-height: 1.4285714285714286;
 }
 
-.c20 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -249,21 +249,17 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
 }
 
 .c1 {
-  padding: 0 12px 12px;
-}
-
-.c2 {
   cursor: inherit;
   width: 100%;
 }
 
-.c36:hover {
+.c35:hover {
   -webkit-text-decoration: 'none';
   text-decoration: 'none';
   color: #336BFF;
 }
 
-.c34 {
+.c33 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -275,7 +271,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   z-index: 400;
 }
 
-.c37 {
+.c36 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -285,22 +281,22 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   color: #282823;
 }
 
-.c37:disabled {
+.c36:disabled {
   color: #A0A09B;
 }
 
-.c27 {
+.c26 {
   position: relative;
   display: block;
   width: 100%;
 }
 
-.c32 {
+.c31 {
   height: 100%;
   width: 100%;
 }
 
-.c30 {
+.c29 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -314,11 +310,11 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   color: inherit;
 }
 
-.c26 {
+.c25 {
   display: none;
 }
 
-.c18 {
+.c17 {
   width: 18px;
   height: 18px;
   border: 1px solid #BDBDBD;
@@ -330,8 +326,8 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   flex-shrink: 0;
 }
 
-.c18::before,
-.c18::after {
+.c17::before,
+.c17::after {
   content: '';
   display: block;
   position: absolute;
@@ -343,26 +339,26 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   transform: translate(-50%,-50%);
 }
 
-.c18::before {
+.c17::before {
   width: 100%;
   height: 100%;
   padding: 2px;
 }
 
-.c18::after {
+.c17::after {
   width: 11px;
   height: 11px;
 }
 
-.c13 {
+.c12 {
   position: relative;
 }
 
-.c13:hover .c17 {
+.c12:hover .c16 {
   border-color: #424242;
 }
 
-.c16 {
+.c15 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -370,40 +366,34 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   cursor: pointer;
 }
 
-.c16:checked + .c17::after {
+.c15:checked + .c16::after {
   background: #336BFF;
 }
 
-.c16[disabled] + .c17 {
+.c15[disabled] + .c16 {
   border-color: #EBEBE8;
 }
 
-.c16:checked[disabled] + .c17 {
+.c15:checked[disabled] + .c16 {
   border-color: #EBEBE8;
 }
 
-.c16:checked[disabled] + .c17::after {
+.c15:checked[disabled] + .c16::after {
   background: #EBEBE8;
 }
 
-.c16:focus + .c17::before {
+.c15:focus + .c16::before {
   border: 1px solid #336BFF;
 }
 
-.c21 {
+.c20 {
   padding-left: 8px;
   white-space: initial;
 }
 
-.c11 {
+.c10 {
   width: auto;
   display: inline-block;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    padding: 0 20px 12px;
-  }
 }
 
 <div
@@ -414,20 +404,20 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   }
 >
   <li
-    className="c0 c1"
+    className="c0"
   >
     <label
-      className="c2"
+      className="c1"
     >
       <div
-        className="c3"
+        className="c2"
       >
         <div
-          className="c4 c5"
+          className="c3 c4"
         >
           <svg
             aria-hidden="true"
-            className="c6"
+            className="c5"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -443,46 +433,46 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
           </svg>
         </div>
         <div
-          className="c4 c7"
+          className="c3 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             VIKING
           </span>
         </div>
         <div
-          className="c9 c10"
+          className="c8 c9"
         >
           <div
-            className="c11"
+            className="c10"
           >
             <label
-              className="c12 c13"
+              className="c11 c12"
               hidden={false}
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c14"
+                className="Typography__Span-sc-10mju41-0 c13"
               >
                 <div
-                  className="c15"
+                  className="c14"
                 >
                   <input
                     checked={false}
-                    className="c16"
+                    className="c15"
                     name="VIKING"
                     onChange={[Function]}
                     type="radio"
                     value="VIKING"
                   />
                   <div
-                    className="c17 c18"
+                    className="c16 c17"
                   />
                   <div
-                    className="c19"
+                    className="c18"
                   >
                     <span
-                      className="Typography__Span-sc-10mju41-0 c20 c21"
+                      className="Typography__Span-sc-10mju41-0 c19 c20"
                     >
                       VIKING
                     </span>
@@ -493,28 +483,28 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
           </div>
         </div>
         <div
-          className="c22 c23"
+          className="c21 c22"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c14"
+            className="Typography__Span-sc-10mju41-0 c13"
           >
             description is good otherwise we don't understand
           </span>
           <div
-            className="c24"
+            className="c23"
           >
             <div
-              className="c25"
+              className="c24"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c14"
+                className="Typography__Span-sc-10mju41-0 c13"
               >
                 label
               </span>
               <div>
                 <select
                   aria-hidden="true"
-                  className="c26"
+                  className="c25"
                   disabled={false}
                   onChange={[Function]}
                 >
@@ -533,22 +523,22 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
                   />
                 </select>
                 <div
-                  className="c27"
+                  className="c26"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   tabIndex={0}
                 >
                   <div
-                    className="c28"
+                    className="c27"
                   >
                     <span
-                      className="Typography__Span-sc-10mju41-0 c20"
+                      className="Typography__Span-sc-10mju41-0 c19"
                     >
                       <button
                         aria-expanded="false"
                         aria-haspopup="listbox"
                         aria-label="label: "
-                        className="c29 c30"
+                        className="c28 c29"
                         data-testid="input-select-button"
                         disabled={false}
                         form=""
@@ -559,22 +549,22 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
                       >
                         <div
                           aria-hidden="true"
-                          className="c31 c32"
+                          className="c30 c31"
                         >
                           <div
-                            className="c33 c34"
+                            className="c32 c33"
                           >
                             <div
-                              className="c35"
+                              className="c34"
                             >
                               <span
-                                className="Typography__Span-sc-10mju41-0 c8 c36"
+                                className="Typography__Span-sc-10mju41-0 c7 c35"
                               >
                                 first label
                               </span>
                               <svg
                                 aria-hidden="true"
-                                className="c6 c37"
+                                className="c5 c36"
                                 focusable="false"
                                 height={8}
                                 preserveAspectRatio="xMidYMid meet"
@@ -604,16 +594,16 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
 `;
 
 exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with addon component right aligned 1`] = `
-.c24 {
+.c23 {
   padding-top: 8px;
   background-color: transparent;
 }
 
-.c33 {
+.c32 {
   background-color: transparent;
 }
 
-.c3 {
+.c2 {
   display: grid;
   box-sizing: border-box;
   grid-template-areas: "icon label button" ". description description";
@@ -627,7 +617,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   -ms-grid-columns: auto 8px 1fr 8px 1fr;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: start;
@@ -638,7 +628,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   -ms-grid-row-align: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: end;
@@ -649,12 +639,12 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   -ms-grid-row-align: center;
 }
 
-.c22 {
+.c21 {
   box-sizing: border-box;
   min-width: 0;
 }
 
-.c5 {
+.c4 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -663,7 +653,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   grid-area: icon;
 }
 
-.c7 {
+.c6 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -672,7 +662,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   grid-area: label;
 }
 
-.c10 {
+.c9 {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
@@ -681,7 +671,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   grid-area: button;
 }
 
-.c23 {
+.c22 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
@@ -690,7 +680,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   grid-area: description;
 }
 
-.c15 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -702,7 +692,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c25 {
+.c24 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -718,7 +708,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c28 {
+.c27 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -731,7 +721,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c31 {
+.c30 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -739,7 +729,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: flex;
 }
 
-.c35 {
+.c34 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -753,16 +743,16 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   margin-right: -4px;
 }
 
-.c35 > * {
+.c34 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c35 > *:not(:first-child) {
+.c34 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c19 {
+.c18 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -771,13 +761,13 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   clip: rect(1px,1px,1px,1px);
 }
 
-.c12 {
+.c11 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c6 {
+.c5 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -789,7 +779,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: block;
 }
 
-.c29 {
+.c28 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -798,25 +788,25 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   text-transform: none;
 }
 
-.c29,
-.c29[type='button'],
-.c29[type='reset'],
-.c29[type='submit'] {
+.c28,
+.c28[type='button'],
+.c28[type='reset'],
+.c28[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c29::-moz-focus-inner,
-.c29[type='button']::-moz-focus-inner,
-.c29[type='reset']::-moz-focus-inner,
-.c29[type='submit']::-moz-focus-inner {
+.c28::-moz-focus-inner,
+.c28[type='button']::-moz-focus-inner,
+.c28[type='reset']::-moz-focus-inner,
+.c28[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c29:-moz-focusring,
-.c29[type='button']:-moz-focusring,
-.c29[type='reset']:-moz-focusring,
-.c29[type='submit']:-moz-focusring {
+.c28:-moz-focusring,
+.c28[type='button']:-moz-focusring,
+.c28[type='reset']:-moz-focusring,
+.c28[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -824,7 +814,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: block;
 }
 
-.c8 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -833,7 +823,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E6E;
   margin: 0;
@@ -842,7 +832,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   line-height: 1.4285714285714286;
 }
 
-.c20 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -852,21 +842,17 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
 }
 
 .c1 {
-  padding: 0 12px 12px;
-}
-
-.c2 {
   cursor: inherit;
   width: 100%;
 }
 
-.c36:hover {
+.c35:hover {
   -webkit-text-decoration: 'none';
   text-decoration: 'none';
   color: #336BFF;
 }
 
-.c34 {
+.c33 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -878,7 +864,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   z-index: 400;
 }
 
-.c37 {
+.c36 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -888,22 +874,22 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   color: #282823;
 }
 
-.c37:disabled {
+.c36:disabled {
   color: #A0A09B;
 }
 
-.c27 {
+.c26 {
   position: relative;
   display: block;
   width: 100%;
 }
 
-.c32 {
+.c31 {
   height: 100%;
   width: 100%;
 }
 
-.c30 {
+.c29 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -917,11 +903,11 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   color: inherit;
 }
 
-.c26 {
+.c25 {
   display: none;
 }
 
-.c18 {
+.c17 {
   width: 18px;
   height: 18px;
   border: 1px solid #BDBDBD;
@@ -933,8 +919,8 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   flex-shrink: 0;
 }
 
-.c18::before,
-.c18::after {
+.c17::before,
+.c17::after {
   content: '';
   display: block;
   position: absolute;
@@ -946,26 +932,26 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   transform: translate(-50%,-50%);
 }
 
-.c18::before {
+.c17::before {
   width: 100%;
   height: 100%;
   padding: 2px;
 }
 
-.c18::after {
+.c17::after {
   width: 11px;
   height: 11px;
 }
 
-.c13 {
+.c12 {
   position: relative;
 }
 
-.c13:hover .c17 {
+.c12:hover .c16 {
   border-color: #424242;
 }
 
-.c16 {
+.c15 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -973,40 +959,34 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   cursor: pointer;
 }
 
-.c16:checked + .c17::after {
+.c15:checked + .c16::after {
   background: #336BFF;
 }
 
-.c16[disabled] + .c17 {
+.c15[disabled] + .c16 {
   border-color: #EBEBE8;
 }
 
-.c16:checked[disabled] + .c17 {
+.c15:checked[disabled] + .c16 {
   border-color: #EBEBE8;
 }
 
-.c16:checked[disabled] + .c17::after {
+.c15:checked[disabled] + .c16::after {
   background: #EBEBE8;
 }
 
-.c16:focus + .c17::before {
+.c15:focus + .c16::before {
   border: 1px solid #336BFF;
 }
 
-.c21 {
+.c20 {
   padding-left: 8px;
   white-space: initial;
 }
 
-.c11 {
+.c10 {
   width: auto;
   display: inline-block;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    padding: 0 20px 12px;
-  }
 }
 
 <div
@@ -1017,20 +997,20 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   }
 >
   <li
-    className="c0 c1"
+    className="c0"
   >
     <label
-      className="c2"
+      className="c1"
     >
       <div
-        className="c3"
+        className="c2"
       >
         <div
-          className="c4 c5"
+          className="c3 c4"
         >
           <svg
             aria-hidden="true"
-            className="c6"
+            className="c5"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -1046,46 +1026,46 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
           </svg>
         </div>
         <div
-          className="c4 c7"
+          className="c3 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             VIKING
           </span>
         </div>
         <div
-          className="c9 c10"
+          className="c8 c9"
         >
           <div
-            className="c11"
+            className="c10"
           >
             <label
-              className="c12 c13"
+              className="c11 c12"
               hidden={false}
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c14"
+                className="Typography__Span-sc-10mju41-0 c13"
               >
                 <div
-                  className="c15"
+                  className="c14"
                 >
                   <input
                     checked={false}
-                    className="c16"
+                    className="c15"
                     name="VIKING"
                     onChange={[Function]}
                     type="radio"
                     value="VIKING"
                   />
                   <div
-                    className="c17 c18"
+                    className="c16 c17"
                   />
                   <div
-                    className="c19"
+                    className="c18"
                   >
                     <span
-                      className="Typography__Span-sc-10mju41-0 c20 c21"
+                      className="Typography__Span-sc-10mju41-0 c19 c20"
                     >
                       VIKING
                     </span>
@@ -1096,28 +1076,28 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
           </div>
         </div>
         <div
-          className="c22 c23"
+          className="c21 c22"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c14"
+            className="Typography__Span-sc-10mju41-0 c13"
           >
             description is good otherwise we don't understand
           </span>
           <div
-            className="c24"
+            className="c23"
           >
             <div
-              className="c25"
+              className="c24"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c14"
+                className="Typography__Span-sc-10mju41-0 c13"
               >
                 label
               </span>
               <div>
                 <select
                   aria-hidden="true"
-                  className="c26"
+                  className="c25"
                   disabled={false}
                   onChange={[Function]}
                 >
@@ -1136,22 +1116,22 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
                   />
                 </select>
                 <div
-                  className="c27"
+                  className="c26"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   tabIndex={0}
                 >
                   <div
-                    className="c28"
+                    className="c27"
                   >
                     <span
-                      className="Typography__Span-sc-10mju41-0 c20"
+                      className="Typography__Span-sc-10mju41-0 c19"
                     >
                       <button
                         aria-expanded="false"
                         aria-haspopup="listbox"
                         aria-label="label: "
-                        className="c29 c30"
+                        className="c28 c29"
                         data-testid="input-select-button"
                         disabled={false}
                         form=""
@@ -1162,22 +1142,22 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
                       >
                         <div
                           aria-hidden="true"
-                          className="c31 c32"
+                          className="c30 c31"
                         >
                           <div
-                            className="c33 c34"
+                            className="c32 c33"
                           >
                             <div
-                              className="c35"
+                              className="c34"
                             >
                               <span
-                                className="Typography__Span-sc-10mju41-0 c8 c36"
+                                className="Typography__Span-sc-10mju41-0 c7 c35"
                               >
                                 first label
                               </span>
                               <svg
                                 aria-hidden="true"
-                                className="c6 c37"
+                                className="c5 c36"
                                 focusable="false"
                                 height={8}
                                 preserveAspectRatio="xMidYMid meet"
@@ -1207,16 +1187,16 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
 `;
 
 exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with addon component right aligned and fixed min-width 1`] = `
-.c24 {
+.c23 {
   padding-top: 8px;
   background-color: transparent;
 }
 
-.c33 {
+.c32 {
   background-color: transparent;
 }
 
-.c3 {
+.c2 {
   display: grid;
   box-sizing: border-box;
   grid-template-areas: "icon label button" ". description description";
@@ -1230,7 +1210,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   -ms-grid-columns: auto 8px 1fr 8px 1fr;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: start;
@@ -1241,7 +1221,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   -ms-grid-row-align: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: end;
@@ -1252,12 +1232,12 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   -ms-grid-row-align: center;
 }
 
-.c22 {
+.c21 {
   box-sizing: border-box;
   min-width: 0;
 }
 
-.c5 {
+.c4 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -1266,7 +1246,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   grid-area: icon;
 }
 
-.c7 {
+.c6 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -1275,7 +1255,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   grid-area: label;
 }
 
-.c10 {
+.c9 {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
@@ -1284,7 +1264,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   grid-area: button;
 }
 
-.c23 {
+.c22 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
@@ -1293,7 +1273,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   grid-area: description;
 }
 
-.c15 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1305,7 +1285,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c25 {
+.c24 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1321,7 +1301,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c28 {
+.c27 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1334,7 +1314,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c31 {
+.c30 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1342,7 +1322,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: flex;
 }
 
-.c35 {
+.c34 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1356,16 +1336,16 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   margin-right: -4px;
 }
 
-.c35 > * {
+.c34 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c35 > *:not(:first-child) {
+.c34 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c19 {
+.c18 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1374,13 +1354,13 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   clip: rect(1px,1px,1px,1px);
 }
 
-.c12 {
+.c11 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c6 {
+.c5 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1392,7 +1372,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: block;
 }
 
-.c29 {
+.c28 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1401,25 +1381,25 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   text-transform: none;
 }
 
-.c29,
-.c29[type='button'],
-.c29[type='reset'],
-.c29[type='submit'] {
+.c28,
+.c28[type='button'],
+.c28[type='reset'],
+.c28[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c29::-moz-focus-inner,
-.c29[type='button']::-moz-focus-inner,
-.c29[type='reset']::-moz-focus-inner,
-.c29[type='submit']::-moz-focus-inner {
+.c28::-moz-focus-inner,
+.c28[type='button']::-moz-focus-inner,
+.c28[type='reset']::-moz-focus-inner,
+.c28[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c29:-moz-focusring,
-.c29[type='button']:-moz-focusring,
-.c29[type='reset']:-moz-focusring,
-.c29[type='submit']:-moz-focusring {
+.c28:-moz-focusring,
+.c28[type='button']:-moz-focusring,
+.c28[type='reset']:-moz-focusring,
+.c28[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -1427,7 +1407,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: block;
 }
 
-.c8 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1436,7 +1416,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E6E;
   margin: 0;
@@ -1445,7 +1425,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   line-height: 1.4285714285714286;
 }
 
-.c20 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1455,21 +1435,17 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
 }
 
 .c1 {
-  padding: 0 12px 12px;
-}
-
-.c2 {
   cursor: inherit;
   width: 100%;
 }
 
-.c36:hover {
+.c35:hover {
   -webkit-text-decoration: 'none';
   text-decoration: 'none';
   color: #336BFF;
 }
 
-.c34 {
+.c33 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1481,7 +1457,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   z-index: 400;
 }
 
-.c37 {
+.c36 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -1491,22 +1467,22 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   color: #282823;
 }
 
-.c37:disabled {
+.c36:disabled {
   color: #A0A09B;
 }
 
-.c27 {
+.c26 {
   position: relative;
   display: block;
   width: 100%;
 }
 
-.c32 {
+.c31 {
   height: 100%;
   width: 100%;
 }
 
-.c30 {
+.c29 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -1520,11 +1496,11 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   color: inherit;
 }
 
-.c26 {
+.c25 {
   display: none;
 }
 
-.c18 {
+.c17 {
   width: 18px;
   height: 18px;
   border: 1px solid #BDBDBD;
@@ -1536,8 +1512,8 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   flex-shrink: 0;
 }
 
-.c18::before,
-.c18::after {
+.c17::before,
+.c17::after {
   content: '';
   display: block;
   position: absolute;
@@ -1549,26 +1525,26 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   transform: translate(-50%,-50%);
 }
 
-.c18::before {
+.c17::before {
   width: 100%;
   height: 100%;
   padding: 2px;
 }
 
-.c18::after {
+.c17::after {
   width: 11px;
   height: 11px;
 }
 
-.c13 {
+.c12 {
   position: relative;
 }
 
-.c13:hover .c17 {
+.c12:hover .c16 {
   border-color: #424242;
 }
 
-.c16 {
+.c15 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -1576,40 +1552,34 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   cursor: pointer;
 }
 
-.c16:checked + .c17::after {
+.c15:checked + .c16::after {
   background: #336BFF;
 }
 
-.c16[disabled] + .c17 {
+.c15[disabled] + .c16 {
   border-color: #EBEBE8;
 }
 
-.c16:checked[disabled] + .c17 {
+.c15:checked[disabled] + .c16 {
   border-color: #EBEBE8;
 }
 
-.c16:checked[disabled] + .c17::after {
+.c15:checked[disabled] + .c16::after {
   background: #EBEBE8;
 }
 
-.c16:focus + .c17::before {
+.c15:focus + .c16::before {
   border: 1px solid #336BFF;
 }
 
-.c21 {
+.c20 {
   padding-left: 8px;
   white-space: initial;
 }
 
-.c11 {
+.c10 {
   width: auto;
   display: inline-block;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    padding: 0 20px 12px;
-  }
 }
 
 <div
@@ -1620,20 +1590,20 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   }
 >
   <li
-    className="c0 c1"
+    className="c0"
   >
     <label
-      className="c2"
+      className="c1"
     >
       <div
-        className="c3"
+        className="c2"
       >
         <div
-          className="c4 c5"
+          className="c3 c4"
         >
           <svg
             aria-hidden="true"
-            className="c6"
+            className="c5"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -1649,46 +1619,46 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
           </svg>
         </div>
         <div
-          className="c4 c7"
+          className="c3 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             VIKING
           </span>
         </div>
         <div
-          className="c9 c10"
+          className="c8 c9"
         >
           <div
-            className="c11"
+            className="c10"
           >
             <label
-              className="c12 c13"
+              className="c11 c12"
               hidden={false}
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c14"
+                className="Typography__Span-sc-10mju41-0 c13"
               >
                 <div
-                  className="c15"
+                  className="c14"
                 >
                   <input
                     checked={false}
-                    className="c16"
+                    className="c15"
                     name="VIKING"
                     onChange={[Function]}
                     type="radio"
                     value="VIKING"
                   />
                   <div
-                    className="c17 c18"
+                    className="c16 c17"
                   />
                   <div
-                    className="c19"
+                    className="c18"
                   >
                     <span
-                      className="Typography__Span-sc-10mju41-0 c20 c21"
+                      className="Typography__Span-sc-10mju41-0 c19 c20"
                     >
                       VIKING
                     </span>
@@ -1699,28 +1669,28 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
           </div>
         </div>
         <div
-          className="c22 c23"
+          className="c21 c22"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c14"
+            className="Typography__Span-sc-10mju41-0 c13"
           >
             description is good otherwise we don't understand
           </span>
           <div
-            className="c24"
+            className="c23"
           >
             <div
-              className="c25"
+              className="c24"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c14"
+                className="Typography__Span-sc-10mju41-0 c13"
               >
                 label
               </span>
               <div>
                 <select
                   aria-hidden="true"
-                  className="c26"
+                  className="c25"
                   disabled={false}
                   onChange={[Function]}
                 >
@@ -1739,22 +1709,22 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
                   />
                 </select>
                 <div
-                  className="c27"
+                  className="c26"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   tabIndex={0}
                 >
                   <div
-                    className="c28"
+                    className="c27"
                   >
                     <span
-                      className="Typography__Span-sc-10mju41-0 c20"
+                      className="Typography__Span-sc-10mju41-0 c19"
                     >
                       <button
                         aria-expanded="false"
                         aria-haspopup="listbox"
                         aria-label="label: "
-                        className="c29 c30"
+                        className="c28 c29"
                         data-testid="input-select-button"
                         disabled={false}
                         form=""
@@ -1765,22 +1735,22 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
                       >
                         <div
                           aria-hidden="true"
-                          className="c31 c32"
+                          className="c30 c31"
                         >
                           <div
-                            className="c33 c34"
+                            className="c32 c33"
                           >
                             <div
-                              className="c35"
+                              className="c34"
                             >
                               <span
-                                className="Typography__Span-sc-10mju41-0 c8 c36"
+                                className="Typography__Span-sc-10mju41-0 c7 c35"
                               >
                                 first label
                               </span>
                               <svg
                                 aria-hidden="true"
-                                className="c6 c37"
+                                className="c5 c36"
                                 focusable="false"
                                 height={8}
                                 preserveAspectRatio="xMidYMid meet"
@@ -1811,7 +1781,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
 
 exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with multiple groups 1`] = `
 Array [
-  .c3 {
+  .c2 {
   display: grid;
   box-sizing: border-box;
   grid-template-areas: "icon label button" ". description description";
@@ -1825,7 +1795,7 @@ Array [
   -ms-grid-columns: auto 8px 1fr 8px 1fr;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: start;
@@ -1836,7 +1806,7 @@ Array [
   -ms-grid-row-align: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: end;
@@ -1847,12 +1817,12 @@ Array [
   -ms-grid-row-align: center;
 }
 
-.c22 {
+.c21 {
   box-sizing: border-box;
   min-width: 0;
 }
 
-.c5 {
+.c4 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -1861,7 +1831,7 @@ Array [
   grid-area: icon;
 }
 
-.c7 {
+.c6 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -1870,7 +1840,7 @@ Array [
   grid-area: label;
 }
 
-.c10 {
+.c9 {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
@@ -1879,7 +1849,7 @@ Array [
   grid-area: button;
 }
 
-.c23 {
+.c22 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
@@ -1888,7 +1858,7 @@ Array [
   grid-area: description;
 }
 
-.c15 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1900,7 +1870,7 @@ Array [
   align-items: center;
 }
 
-.c19 {
+.c18 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1909,13 +1879,13 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
-.c12 {
+.c11 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c6 {
+.c5 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1931,7 +1901,7 @@ Array [
   display: block;
 }
 
-.c8 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1940,7 +1910,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E6E;
   margin: 0;
@@ -1949,7 +1919,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c20 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1959,15 +1929,11 @@ Array [
 }
 
 .c1 {
-  padding: 0 12px 12px;
-}
-
-.c2 {
   cursor: inherit;
   width: 100%;
 }
 
-.c18 {
+.c17 {
   width: 18px;
   height: 18px;
   border: 1px solid #BDBDBD;
@@ -1979,8 +1945,8 @@ Array [
   flex-shrink: 0;
 }
 
-.c18::before,
-.c18::after {
+.c17::before,
+.c17::after {
   content: '';
   display: block;
   position: absolute;
@@ -1992,26 +1958,26 @@ Array [
   transform: translate(-50%,-50%);
 }
 
-.c18::before {
+.c17::before {
   width: 100%;
   height: 100%;
   padding: 2px;
 }
 
-.c18::after {
+.c17::after {
   width: 11px;
   height: 11px;
 }
 
-.c13 {
+.c12 {
   position: relative;
 }
 
-.c13:hover .c17 {
+.c12:hover .c16 {
   border-color: #424242;
 }
 
-.c16 {
+.c15 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -2019,57 +1985,51 @@ Array [
   cursor: pointer;
 }
 
-.c16:checked + .c17::after {
+.c15:checked + .c16::after {
   background: #336BFF;
 }
 
-.c16[disabled] + .c17 {
+.c15[disabled] + .c16 {
   border-color: #EBEBE8;
 }
 
-.c16:checked[disabled] + .c17 {
+.c15:checked[disabled] + .c16 {
   border-color: #EBEBE8;
 }
 
-.c16:checked[disabled] + .c17::after {
+.c15:checked[disabled] + .c16::after {
   background: #EBEBE8;
 }
 
-.c16:focus + .c17::before {
+.c15:focus + .c16::before {
   border: 1px solid #336BFF;
 }
 
-.c21 {
+.c20 {
   padding-left: 8px;
   white-space: initial;
 }
 
-.c11 {
+.c10 {
   width: auto;
   display: inline-block;
 }
 
-@media (min-width:760px) {
-  .c1 {
-    padding: 0 20px 12px;
-  }
-}
-
 <li
-    className="c0 c1"
+    className="c0"
   >
     <label
-      className="c2"
+      className="c1"
     >
       <div
-        className="c3"
+        className="c2"
       >
         <div
-          className="c4 c5"
+          className="c3 c4"
         >
           <svg
             aria-hidden="true"
-            className="c6"
+            className="c5"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -2085,46 +2045,46 @@ Array [
           </svg>
         </div>
         <div
-          className="c4 c7"
+          className="c3 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             VIKING
           </span>
         </div>
         <div
-          className="c9 c10"
+          className="c8 c9"
         >
           <div
-            className="c11"
+            className="c10"
           >
             <label
-              className="c12 c13"
+              className="c11 c12"
               hidden={false}
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c14"
+                className="Typography__Span-sc-10mju41-0 c13"
               >
                 <div
-                  className="c15"
+                  className="c14"
                 >
                   <input
                     checked={false}
-                    className="c16"
+                    className="c15"
                     name="VIKING"
                     onChange={[Function]}
                     type="radio"
                     value="VIKING"
                   />
                   <div
-                    className="c17 c18"
+                    className="c16 c17"
                   />
                   <div
-                    className="c19"
+                    className="c18"
                   >
                     <span
-                      className="Typography__Span-sc-10mju41-0 c20 c21"
+                      className="Typography__Span-sc-10mju41-0 c19 c20"
                     >
                       VIKING
                     </span>
@@ -2135,10 +2095,10 @@ Array [
           </div>
         </div>
         <div
-          className="c22 c23"
+          className="c21 c22"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c14"
+            className="Typography__Span-sc-10mju41-0 c13"
           >
             description is good otherwise we don't understand
           </span>
@@ -2146,7 +2106,7 @@ Array [
       </div>
     </label>
   </li>,
-  .c3 {
+  .c2 {
   display: grid;
   box-sizing: border-box;
   grid-template-areas: "icon label button" ". description description";
@@ -2160,7 +2120,7 @@ Array [
   -ms-grid-columns: auto 8px 1fr 8px 1fr;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: start;
@@ -2171,7 +2131,7 @@ Array [
   -ms-grid-row-align: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: end;
@@ -2182,12 +2142,12 @@ Array [
   -ms-grid-row-align: center;
 }
 
-.c22 {
+.c21 {
   box-sizing: border-box;
   min-width: 0;
 }
 
-.c5 {
+.c4 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -2196,7 +2156,7 @@ Array [
   grid-area: icon;
 }
 
-.c7 {
+.c6 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -2205,7 +2165,7 @@ Array [
   grid-area: label;
 }
 
-.c10 {
+.c9 {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
@@ -2214,7 +2174,7 @@ Array [
   grid-area: button;
 }
 
-.c23 {
+.c22 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
@@ -2223,7 +2183,7 @@ Array [
   grid-area: description;
 }
 
-.c15 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2235,7 +2195,7 @@ Array [
   align-items: center;
 }
 
-.c19 {
+.c18 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2244,13 +2204,13 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
-.c12 {
+.c11 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c6 {
+.c5 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2266,7 +2226,7 @@ Array [
   display: block;
 }
 
-.c8 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2275,7 +2235,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E6E;
   margin: 0;
@@ -2284,7 +2244,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c20 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2294,15 +2254,11 @@ Array [
 }
 
 .c1 {
-  padding: 0 12px 12px;
-}
-
-.c2 {
   cursor: inherit;
   width: 100%;
 }
 
-.c18 {
+.c17 {
   width: 18px;
   height: 18px;
   border: 1px solid #BDBDBD;
@@ -2314,8 +2270,8 @@ Array [
   flex-shrink: 0;
 }
 
-.c18::before,
-.c18::after {
+.c17::before,
+.c17::after {
   content: '';
   display: block;
   position: absolute;
@@ -2327,26 +2283,26 @@ Array [
   transform: translate(-50%,-50%);
 }
 
-.c18::before {
+.c17::before {
   width: 100%;
   height: 100%;
   padding: 2px;
 }
 
-.c18::after {
+.c17::after {
   width: 11px;
   height: 11px;
 }
 
-.c13 {
+.c12 {
   position: relative;
 }
 
-.c13:hover .c17 {
+.c12:hover .c16 {
   border-color: #424242;
 }
 
-.c16 {
+.c15 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -2354,57 +2310,51 @@ Array [
   cursor: pointer;
 }
 
-.c16:checked + .c17::after {
+.c15:checked + .c16::after {
   background: #336BFF;
 }
 
-.c16[disabled] + .c17 {
+.c15[disabled] + .c16 {
   border-color: #EBEBE8;
 }
 
-.c16:checked[disabled] + .c17 {
+.c15:checked[disabled] + .c16 {
   border-color: #EBEBE8;
 }
 
-.c16:checked[disabled] + .c17::after {
+.c15:checked[disabled] + .c16::after {
   background: #EBEBE8;
 }
 
-.c16:focus + .c17::before {
+.c15:focus + .c16::before {
   border: 1px solid #336BFF;
 }
 
-.c21 {
+.c20 {
   padding-left: 8px;
   white-space: initial;
 }
 
-.c11 {
+.c10 {
   width: auto;
   display: inline-block;
 }
 
-@media (min-width:760px) {
-  .c1 {
-    padding: 0 20px 12px;
-  }
-}
-
 <li
-    className="c0 c1"
+    className="c0"
   >
     <label
-      className="c2"
+      className="c1"
     >
       <div
-        className="c3"
+        className="c2"
       >
         <div
-          className="c4 c5"
+          className="c3 c4"
         >
           <svg
             aria-hidden="true"
-            className="c6"
+            className="c5"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -2418,46 +2368,46 @@ Array [
           </svg>
         </div>
         <div
-          className="c4 c7"
+          className="c3 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             KARAM
           </span>
         </div>
         <div
-          className="c9 c10"
+          className="c8 c9"
         >
           <div
-            className="c11"
+            className="c10"
           >
             <label
-              className="c12 c13"
+              className="c11 c12"
               hidden={false}
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c14"
+                className="Typography__Span-sc-10mju41-0 c13"
               >
                 <div
-                  className="c15"
+                  className="c14"
                 >
                   <input
                     checked={false}
-                    className="c16"
+                    className="c15"
                     name="KARAM"
                     onChange={[Function]}
                     type="radio"
                     value="KARAM"
                   />
                   <div
-                    className="c17 c18"
+                    className="c16 c17"
                   />
                   <div
-                    className="c19"
+                    className="c18"
                   >
                     <span
-                      className="Typography__Span-sc-10mju41-0 c20 c21"
+                      className="Typography__Span-sc-10mju41-0 c19 c20"
                     >
                       KARAM
                     </span>
@@ -2468,10 +2418,10 @@ Array [
           </div>
         </div>
         <div
-          className="c22 c23"
+          className="c21 c22"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c14"
+            className="Typography__Span-sc-10mju41-0 c13"
           >
             description is good otherwise we don't understand
           </span>
@@ -2485,14 +2435,10 @@ Array [
   background-color: #EBEBE8;
 }
 
-@media (min-width:760px) {
-
-}
-
 <div
     className="c0"
   />,
-  .c3 {
+  .c2 {
   display: grid;
   box-sizing: border-box;
   grid-template-areas: "icon label button" ". description description";
@@ -2506,7 +2452,7 @@ Array [
   -ms-grid-columns: auto 8px 1fr 8px 1fr;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: start;
@@ -2517,7 +2463,7 @@ Array [
   -ms-grid-row-align: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: end;
@@ -2528,12 +2474,12 @@ Array [
   -ms-grid-row-align: center;
 }
 
-.c22 {
+.c21 {
   box-sizing: border-box;
   min-width: 0;
 }
 
-.c5 {
+.c4 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -2542,7 +2488,7 @@ Array [
   grid-area: icon;
 }
 
-.c7 {
+.c6 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -2551,7 +2497,7 @@ Array [
   grid-area: label;
 }
 
-.c10 {
+.c9 {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
@@ -2560,7 +2506,7 @@ Array [
   grid-area: button;
 }
 
-.c23 {
+.c22 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
@@ -2569,7 +2515,7 @@ Array [
   grid-area: description;
 }
 
-.c15 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2581,7 +2527,7 @@ Array [
   align-items: center;
 }
 
-.c19 {
+.c18 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2590,13 +2536,13 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
-.c12 {
+.c11 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c6 {
+.c5 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2612,7 +2558,7 @@ Array [
   display: block;
 }
 
-.c8 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2621,7 +2567,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E6E;
   margin: 0;
@@ -2630,7 +2576,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c20 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2640,15 +2586,11 @@ Array [
 }
 
 .c1 {
-  padding: 0 12px 12px;
-}
-
-.c2 {
   cursor: inherit;
   width: 100%;
 }
 
-.c18 {
+.c17 {
   width: 18px;
   height: 18px;
   border: 1px solid #BDBDBD;
@@ -2660,8 +2602,8 @@ Array [
   flex-shrink: 0;
 }
 
-.c18::before,
-.c18::after {
+.c17::before,
+.c17::after {
   content: '';
   display: block;
   position: absolute;
@@ -2673,26 +2615,26 @@ Array [
   transform: translate(-50%,-50%);
 }
 
-.c18::before {
+.c17::before {
   width: 100%;
   height: 100%;
   padding: 2px;
 }
 
-.c18::after {
+.c17::after {
   width: 11px;
   height: 11px;
 }
 
-.c13 {
+.c12 {
   position: relative;
 }
 
-.c13:hover .c17 {
+.c12:hover .c16 {
   border-color: #424242;
 }
 
-.c16 {
+.c15 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -2700,57 +2642,51 @@ Array [
   cursor: pointer;
 }
 
-.c16:checked + .c17::after {
+.c15:checked + .c16::after {
   background: #336BFF;
 }
 
-.c16[disabled] + .c17 {
+.c15[disabled] + .c16 {
   border-color: #EBEBE8;
 }
 
-.c16:checked[disabled] + .c17 {
+.c15:checked[disabled] + .c16 {
   border-color: #EBEBE8;
 }
 
-.c16:checked[disabled] + .c17::after {
+.c15:checked[disabled] + .c16::after {
   background: #EBEBE8;
 }
 
-.c16:focus + .c17::before {
+.c15:focus + .c16::before {
   border: 1px solid #336BFF;
 }
 
-.c21 {
+.c20 {
   padding-left: 8px;
   white-space: initial;
 }
 
-.c11 {
+.c10 {
   width: auto;
   display: inline-block;
 }
 
-@media (min-width:760px) {
-  .c1 {
-    padding: 0 20px 12px;
-  }
-}
-
 <li
-    className="c0 c1"
+    className="c0"
   >
     <label
-      className="c2"
+      className="c1"
     >
       <div
-        className="c3"
+        className="c2"
       >
         <div
-          className="c4 c5"
+          className="c3 c4"
         >
           <svg
             aria-hidden="true"
-            className="c6"
+            className="c5"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -2764,46 +2700,46 @@ Array [
           </svg>
         </div>
         <div
-          className="c4 c7"
+          className="c3 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             MICHAEL
           </span>
         </div>
         <div
-          className="c9 c10"
+          className="c8 c9"
         >
           <div
-            className="c11"
+            className="c10"
           >
             <label
-              className="c12 c13"
+              className="c11 c12"
               hidden={false}
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c14"
+                className="Typography__Span-sc-10mju41-0 c13"
               >
                 <div
-                  className="c15"
+                  className="c14"
                 >
                   <input
                     checked={false}
-                    className="c16"
+                    className="c15"
                     name="MICHAEL"
                     onChange={[Function]}
                     type="radio"
                     value="MICHAEL"
                   />
                   <div
-                    className="c17 c18"
+                    className="c16 c17"
                   />
                   <div
-                    className="c19"
+                    className="c18"
                   >
                     <span
-                      className="Typography__Span-sc-10mju41-0 c20 c21"
+                      className="Typography__Span-sc-10mju41-0 c19 c20"
                     >
                       MICHAEL
                     </span>
@@ -2814,10 +2750,10 @@ Array [
           </div>
         </div>
         <div
-          className="c22 c23"
+          className="c21 c22"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c14"
+            className="Typography__Span-sc-10mju41-0 c13"
           >
             description is good otherwise we don't understand
           </span>
@@ -2825,7 +2761,7 @@ Array [
       </div>
     </label>
   </li>,
-  .c3 {
+  .c2 {
   display: grid;
   box-sizing: border-box;
   grid-template-areas: "icon label button" ". description description";
@@ -2839,7 +2775,7 @@ Array [
   -ms-grid-columns: auto 8px 1fr 8px 1fr;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: start;
@@ -2850,7 +2786,7 @@ Array [
   -ms-grid-row-align: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: end;
@@ -2861,12 +2797,12 @@ Array [
   -ms-grid-row-align: center;
 }
 
-.c22 {
+.c21 {
   box-sizing: border-box;
   min-width: 0;
 }
 
-.c5 {
+.c4 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -2875,7 +2811,7 @@ Array [
   grid-area: icon;
 }
 
-.c7 {
+.c6 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -2884,7 +2820,7 @@ Array [
   grid-area: label;
 }
 
-.c10 {
+.c9 {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
@@ -2893,7 +2829,7 @@ Array [
   grid-area: button;
 }
 
-.c23 {
+.c22 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
@@ -2902,7 +2838,7 @@ Array [
   grid-area: description;
 }
 
-.c15 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2914,7 +2850,7 @@ Array [
   align-items: center;
 }
 
-.c19 {
+.c18 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2923,13 +2859,13 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
-.c12 {
+.c11 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c6 {
+.c5 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2945,7 +2881,7 @@ Array [
   display: block;
 }
 
-.c8 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2954,7 +2890,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E6E;
   margin: 0;
@@ -2963,9 +2899,9 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c20 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
+  color: #A0A09B;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -2973,15 +2909,11 @@ Array [
 }
 
 .c1 {
-  padding: 0 12px 12px;
-}
-
-.c2 {
   cursor: inherit;
   width: 100%;
 }
 
-.c18 {
+.c17 {
   width: 18px;
   height: 18px;
   border: 1px solid #BDBDBD;
@@ -2993,8 +2925,8 @@ Array [
   flex-shrink: 0;
 }
 
-.c18::before,
-.c18::after {
+.c17::before,
+.c17::after {
   content: '';
   display: block;
   position: absolute;
@@ -3006,26 +2938,26 @@ Array [
   transform: translate(-50%,-50%);
 }
 
-.c18::before {
+.c17::before {
   width: 100%;
   height: 100%;
   padding: 2px;
 }
 
-.c18::after {
+.c17::after {
   width: 11px;
   height: 11px;
 }
 
-.c13 {
+.c12 {
   position: relative;
 }
 
-.c13:hover .c17 {
+.c12:hover .c16 {
   border-color: #424242;
 }
 
-.c16 {
+.c15 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -3033,57 +2965,51 @@ Array [
   cursor: pointer;
 }
 
-.c16:checked + .c17::after {
+.c15:checked + .c16::after {
   background: #336BFF;
 }
 
-.c16[disabled] + .c17 {
+.c15[disabled] + .c16 {
   border-color: #EBEBE8;
 }
 
-.c16:checked[disabled] + .c17 {
+.c15:checked[disabled] + .c16 {
   border-color: #EBEBE8;
 }
 
-.c16:checked[disabled] + .c17::after {
+.c15:checked[disabled] + .c16::after {
   background: #EBEBE8;
 }
 
-.c16:focus + .c17::before {
+.c15:focus + .c16::before {
   border: 1px solid #336BFF;
 }
 
-.c21 {
+.c20 {
   padding-left: 8px;
   white-space: initial;
 }
 
-.c11 {
+.c10 {
   width: auto;
   display: inline-block;
 }
 
-@media (min-width:760px) {
-  .c1 {
-    padding: 0 20px 12px;
-  }
-}
-
 <li
-    className="c0 c1"
+    className="c0"
   >
     <label
-      className="c2"
+      className="c1"
     >
       <div
-        className="c3"
+        className="c2"
       >
         <div
-          className="c4 c5"
+          className="c3 c4"
         >
           <svg
             aria-hidden="true"
-            className="c6"
+            className="c5"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -3101,46 +3027,47 @@ Array [
           </svg>
         </div>
         <div
-          className="c4 c7"
+          className="c3 c6"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c8"
+            className="Typography__Span-sc-10mju41-0 c7"
           >
             JESPER
           </span>
         </div>
         <div
-          className="c9 c10"
+          className="c8 c9"
         >
           <div
-            className="c11"
+            className="c10"
           >
             <label
-              className="c12 c13"
+              className="c11 c12"
               hidden={false}
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c14"
+                className="Typography__Span-sc-10mju41-0 c13"
               >
                 <div
-                  className="c15"
+                  className="c14"
                 >
                   <input
                     checked={false}
-                    className="c16"
+                    className="c15"
+                    disabled={true}
                     name="JESPER"
                     onChange={[Function]}
                     type="radio"
                     value="JESPER"
                   />
                   <div
-                    className="c17 c18"
+                    className="c16 c17"
                   />
                   <div
-                    className="c19"
+                    className="c18"
                   >
                     <span
-                      className="Typography__Span-sc-10mju41-0 c20 c21"
+                      className="Typography__Span-sc-10mju41-0 c19 c20"
                     >
                       JESPER
                     </span>
@@ -3151,10 +3078,10 @@ Array [
           </div>
         </div>
         <div
-          className="c22 c23"
+          className="c21 c22"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c14"
+            className="Typography__Span-sc-10mju41-0 c13"
           >
             description is good otherwise we don't understand
           </span>
@@ -3166,7 +3093,7 @@ Array [
 `;
 
 exports[`Storyshots Molecules / ControlsListItem Controls list item button with icon 16 1`] = `
-.c3 {
+.c2 {
   display: grid;
   box-sizing: border-box;
   grid-template-areas: "icon label button" ". description description";
@@ -3180,7 +3107,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   -ms-grid-columns: auto 8px 1fr 8px 1fr;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: start;
@@ -3191,7 +3118,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   -ms-grid-row-align: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: end;
@@ -3202,12 +3129,12 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   -ms-grid-row-align: center;
 }
 
-.c15 {
+.c14 {
   box-sizing: border-box;
   min-width: 0;
 }
 
-.c5 {
+.c4 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -3216,7 +3143,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   grid-area: icon;
 }
 
-.c7 {
+.c6 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -3225,7 +3152,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   grid-area: label;
 }
 
-.c10 {
+.c9 {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
@@ -3234,7 +3161,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   grid-area: button;
 }
 
-.c16 {
+.c15 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
@@ -3243,7 +3170,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   grid-area: description;
 }
 
-.c6 {
+.c5 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3255,7 +3182,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   display: block;
 }
 
-.c11 {
+.c10 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3264,25 +3191,25 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   text-transform: none;
 }
 
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -3290,7 +3217,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   display: block;
 }
 
-.c8 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3299,7 +3226,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   line-height: 1.5;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -3308,7 +3235,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   line-height: 1.4285714285714286;
 }
 
-.c17 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E6E;
   margin: 0;
@@ -3317,7 +3244,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c11 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -3341,39 +3268,29 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
 }
 
 .c1 {
-  padding: 0 12px 12px;
-}
-
-.c2 {
   cursor: inherit;
   width: 100%;
 }
 
-.c13:hover {
+.c12:hover {
   color: #2650BF;
 }
 
-@media (min-width:760px) {
-  .c1 {
-    padding: 0 20px 12px;
-  }
-}
-
 <li
-  className="c0 c1"
+  className="c0"
 >
   <label
-    className="c2"
+    className="c1"
   >
     <div
-      className="c3"
+      className="c2"
     >
       <div
-        className="c4 c5"
+        className="c3 c4"
       >
         <svg
           aria-hidden="true"
-          className="c6"
+          className="c5"
           focusable="false"
           height={16}
           preserveAspectRatio="xMidYMid meet"
@@ -3389,34 +3306,34 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
         </svg>
       </div>
       <div
-        className="c4 c7"
+        className="c3 c6"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c8"
+          className="Typography__Span-sc-10mju41-0 c7"
         >
           label
         </span>
       </div>
       <div
-        className="c9 c10"
+        className="c8 c9"
       >
         <button
-          className="c11 c12 c13"
+          className="c10 c11 c12"
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c14"
+            className="Typography__Span-sc-10mju41-0 c13"
           >
             button text
           </span>
         </button>
       </div>
       <div
-        className="c15 c16"
+        className="c14 c15"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c17"
+          className="Typography__Span-sc-10mju41-0 c16"
         >
           description is good otherwise we don't understand
         </span>
@@ -3427,7 +3344,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
 `;
 
 exports[`Storyshots Molecules / ControlsListItem Controls list item button with icon 24 1`] = `
-.c3 {
+.c2 {
   display: grid;
   box-sizing: border-box;
   grid-template-areas: "icon label button" ". description description";
@@ -3441,7 +3358,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   -ms-grid-columns: auto 8px 1fr 8px 1fr;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: start;
@@ -3452,7 +3369,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   -ms-grid-row-align: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: end;
@@ -3463,12 +3380,12 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   -ms-grid-row-align: center;
 }
 
-.c15 {
+.c14 {
   box-sizing: border-box;
   min-width: 0;
 }
 
-.c5 {
+.c4 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -3477,7 +3394,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   grid-area: icon;
 }
 
-.c7 {
+.c6 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -3486,7 +3403,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   grid-area: label;
 }
 
-.c10 {
+.c9 {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
@@ -3495,7 +3412,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   grid-area: button;
 }
 
-.c16 {
+.c15 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
@@ -3504,7 +3421,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   grid-area: description;
 }
 
-.c6 {
+.c5 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3516,7 +3433,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   display: block;
 }
 
-.c11 {
+.c10 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3525,25 +3442,25 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   text-transform: none;
 }
 
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -3551,7 +3468,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   display: block;
 }
 
-.c8 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3560,7 +3477,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   line-height: 1.5;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -3569,7 +3486,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   line-height: 1.4285714285714286;
 }
 
-.c17 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E6E;
   margin: 0;
@@ -3578,7 +3495,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c11 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -3602,39 +3519,29 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
 }
 
 .c1 {
-  padding: 0 12px 12px;
-}
-
-.c2 {
   cursor: inherit;
   width: 100%;
 }
 
-.c13:hover {
+.c12:hover {
   color: #2650BF;
 }
 
-@media (min-width:760px) {
-  .c1 {
-    padding: 0 20px 12px;
-  }
-}
-
 <li
-  className="c0 c1"
+  className="c0"
 >
   <label
-    className="c2"
+    className="c1"
   >
     <div
-      className="c3"
+      className="c2"
     >
       <div
-        className="c4 c5"
+        className="c3 c4"
       >
         <svg
           aria-hidden="true"
-          className="c6"
+          className="c5"
           focusable="false"
           height={24}
           preserveAspectRatio="xMidYMid meet"
@@ -3654,34 +3561,34 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
         </svg>
       </div>
       <div
-        className="c4 c7"
+        className="c3 c6"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c8"
+          className="Typography__Span-sc-10mju41-0 c7"
         >
           label
         </span>
       </div>
       <div
-        className="c9 c10"
+        className="c8 c9"
       >
         <button
-          className="c11 c12 c13"
+          className="c10 c11 c12"
           onClick={[Function]}
           type="button"
         >
           <span
-            className="Typography__Span-sc-10mju41-0 c14"
+            className="Typography__Span-sc-10mju41-0 c13"
           >
             button text
           </span>
         </button>
       </div>
       <div
-        className="c15 c16"
+        className="c14 c15"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c17"
+          className="Typography__Span-sc-10mju41-0 c16"
         >
           description is good otherwise we don't understand
         </span>
@@ -3692,11 +3599,11 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
 `;
 
 exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] = `
-.c18 {
+.c17 {
   background-color: transparent;
 }
 
-.c3 {
+.c2 {
   display: grid;
   box-sizing: border-box;
   grid-template-areas: "icon label button" ". description description";
@@ -3710,7 +3617,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   -ms-grid-columns: auto 8px 1fr 8px 1fr;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: start;
@@ -3721,7 +3628,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   -ms-grid-row-align: center;
 }
 
-.c8 {
+.c7 {
   box-sizing: border-box;
   min-width: 0;
   justify-self: end;
@@ -3732,12 +3639,12 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   -ms-grid-row-align: center;
 }
 
-.c24 {
+.c23 {
   box-sizing: border-box;
   min-width: 0;
 }
 
-.c5 {
+.c4 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -3746,7 +3653,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   grid-area: icon;
 }
 
-.c6 {
+.c5 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -3755,7 +3662,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   grid-area: label;
 }
 
-.c9 {
+.c8 {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
@@ -3764,7 +3671,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   grid-area: button;
 }
 
-.c25 {
+.c24 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
@@ -3773,7 +3680,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   grid-area: description;
 }
 
-.c12 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3786,7 +3693,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   align-items: center;
 }
 
-.c16 {
+.c15 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3794,7 +3701,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   display: flex;
 }
 
-.c20 {
+.c19 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3808,16 +3715,16 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   margin-right: -4px;
 }
 
-.c20 > * {
+.c19 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c20 > *:not(:first-child) {
+.c19 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c22 {
+.c21 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3829,7 +3736,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   display: block;
 }
 
-.c14 {
+.c13 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3838,25 +3745,25 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   text-transform: none;
 }
 
-.c14,
-.c14[type='button'],
-.c14[type='reset'],
-.c14[type='submit'] {
+.c13,
+.c13[type='button'],
+.c13[type='reset'],
+.c13[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c14::-moz-focus-inner,
-.c14[type='button']::-moz-focus-inner,
-.c14[type='reset']::-moz-focus-inner,
-.c14[type='submit']::-moz-focus-inner {
+.c13::-moz-focus-inner,
+.c13[type='button']::-moz-focus-inner,
+.c13[type='reset']::-moz-focus-inner,
+.c13[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c14:-moz-focusring,
-.c14[type='button']:-moz-focusring,
-.c14[type='reset']:-moz-focusring,
-.c14[type='submit']:-moz-focusring {
+.c13:-moz-focusring,
+.c13[type='button']:-moz-focusring,
+.c13[type='reset']:-moz-focusring,
+.c13[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -3864,7 +3771,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   display: block;
 }
 
-.c7 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3873,7 +3780,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   line-height: 1.4285714285714286;
 }
 
-.c13 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3882,7 +3789,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   line-height: 1.4285714285714286;
 }
 
-.c26 {
+.c25 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E6E;
   margin: 0;
@@ -3892,21 +3799,17 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
 }
 
 .c1 {
-  padding: 0 12px 12px;
-}
-
-.c2 {
   cursor: inherit;
   width: 100%;
 }
 
-.c21:hover {
+.c20:hover {
   -webkit-text-decoration: 'none';
   text-decoration: 'none';
   color: #336BFF;
 }
 
-.c19 {
+.c18 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3918,7 +3821,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   z-index: 400;
 }
 
-.c23 {
+.c22 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -3928,22 +3831,22 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   color: #282823;
 }
 
-.c23:disabled {
+.c22:disabled {
   color: #A0A09B;
 }
 
-.c11 {
+.c10 {
   position: relative;
   display: block;
   width: 100%;
 }
 
-.c17 {
+.c16 {
   height: 100%;
   width: 100%;
 }
 
-.c15 {
+.c14 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -3957,44 +3860,38 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   color: inherit;
 }
 
-.c10 {
+.c9 {
   display: none;
 }
 
-@media (min-width:760px) {
-  .c1 {
-    padding: 0 20px 12px;
-  }
-}
-
 <li
-  className="c0 c1"
+  className="c0"
 >
   <label
-    className="c2"
+    className="c1"
   >
     <div
-      className="c3"
+      className="c2"
     >
       <div
-        className="c4 c5"
+        className="c3 c4"
       />
       <div
-        className="c4 c6"
+        className="c3 c5"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c7"
+          className="Typography__Span-sc-10mju41-0 c6"
         >
           label
         </span>
       </div>
       <div
-        className="c8 c9"
+        className="c7 c8"
       >
         <div>
           <select
             aria-hidden="true"
-            className="c10"
+            className="c9"
             disabled={false}
             onChange={[Function]}
           >
@@ -4013,22 +3910,22 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
             />
           </select>
           <div
-            className="c11"
+            className="c10"
             onBlur={[Function]}
             onFocus={[Function]}
             tabIndex={0}
           >
             <div
-              className="c12"
+              className="c11"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c13"
+                className="Typography__Span-sc-10mju41-0 c12"
               >
                 <button
                   aria-expanded="false"
                   aria-haspopup="listbox"
                   aria-label="label: "
-                  className="c14 c15"
+                  className="c13 c14"
                   data-testid="input-select-button"
                   disabled={false}
                   form=""
@@ -4039,22 +3936,22 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
                 >
                   <div
                     aria-hidden="true"
-                    className="c16 c17"
+                    className="c15 c16"
                   >
                     <div
-                      className="c18 c19"
+                      className="c17 c18"
                     >
                       <div
-                        className="c20"
+                        className="c19"
                       >
                         <span
-                          className="Typography__Span-sc-10mju41-0 c7 c21"
+                          className="Typography__Span-sc-10mju41-0 c6 c20"
                         >
                           first label
                         </span>
                         <svg
                           aria-hidden="true"
-                          className="c22 c23"
+                          className="c21 c22"
                           focusable="false"
                           height={8}
                           preserveAspectRatio="xMidYMid meet"
@@ -4076,10 +3973,10 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
         </div>
       </div>
       <div
-        className="c24 c25"
+        className="c23 c24"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c26"
+          className="Typography__Span-sc-10mju41-0 c25"
         >
           description is good otherwise we don't understand
         </span>
@@ -4090,16 +3987,11 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
 `;
 
 exports[`Storyshots Molecules / ControlsListItem Controls list item select without description 1`] = `
+.c10 {
+  background-color: transparent;
+}
+
 .c0 {
-  padding-top: 8px;
-  background-color: transparent;
-}
-
-.c11 {
-  background-color: transparent;
-}
-
-.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4115,355 +4007,25 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select witho
   align-items: center;
 }
 
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c13 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c13 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c13 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c16 {
-  color: #212121;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E6E;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c14 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c15:hover {
-  -webkit-text-decoration: 'none';
-  text-decoration: 'none';
-  color: #336BFF;
-}
-
-.c12 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 400;
-}
-
-.c17 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-  -webkit-transition: -webkit-transform 0.16s ease-out;
-  -webkit-transition: transform 0.16s ease-out;
-  transition: transform 0.16s ease-out;
-  color: #282823;
-}
-
-.c17:disabled {
-  color: #A0A09B;
-}
-
 .c4 {
-  position: relative;
-  display: block;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-}
-
-.c10 {
-  height: 100%;
-  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c8 {
-  background: transparent;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  padding: 0;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  border: 0;
-  color: inherit;
-}
-
-.c3 {
-  display: none;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <span
-      className="Typography__Span-sc-10mju41-0 c2"
-    >
-      label
-    </span>
-    <div>
-      <select
-        aria-hidden="true"
-        className="c3"
-        disabled={false}
-        onChange={[Function]}
-      >
-        
-        <option
-          label="first label"
-          value="first value"
-        />
-        <option
-          label="second label"
-          value="second value"
-        />
-        <option
-          label="third label"
-          value="third value"
-        />
-      </select>
-      <div
-        className="c4"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        tabIndex={0}
-      >
-        <div
-          className="c5"
-        >
-          <span
-            className="Typography__Span-sc-10mju41-0 c6"
-          >
-            <button
-              aria-expanded="false"
-              aria-haspopup="listbox"
-              aria-label="label: "
-              className="c7 c8"
-              data-testid="input-select-button"
-              disabled={false}
-              form=""
-              id="control-list-item-select"
-              onClick={[Function]}
-              tabIndex={0}
-              type="button"
-            >
-              <div
-                aria-hidden="true"
-                className="c9 c10"
-              >
-                <div
-                  className="c11 c12"
-                >
-                  <div
-                    className="c13"
-                  >
-                    <span
-                      className="Typography__Span-sc-10mju41-0 c14 c15"
-                    >
-                      first label
-                    </span>
-                    <svg
-                      aria-hidden="true"
-                      className="c16 c17"
-                      focusable="false"
-                      height={8}
-                      preserveAspectRatio="xMidYMid meet"
-                      role="presentation"
-                      width={8}
-                    >
-                      <path
-                        d="M8 7.418l-4-4-4 4V4.59l4-4 4 4v2.828z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </button>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules / ControlsListItem Controls list item switch 1`] = `
-.c3 {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-areas: "icon label button" ". description description";
-  grid-template-rows: auto 1fr;
-  grid-template-columns: auto 1fr 1fr;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  row-gap: 4px;
-  display: -ms-grid;
-  -ms-grid-rows: auto 4px 1fr;
-  -ms-grid-columns: auto 8px 1fr 8px 1fr;
-}
-
-.c4 {
-  box-sizing: border-box;
-  min-width: 0;
-  justify-self: start;
-  -ms-grid-column-align: start;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -ms-grid-row-align: center;
-}
-
-.c9 {
-  box-sizing: border-box;
-  min-width: 0;
-  justify-self: end;
-  -ms-grid-column-align: end;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -ms-grid-row-align: center;
-}
-
-.c23 {
-  box-sizing: border-box;
-  min-width: 0;
-}
-
-.c5 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: icon;
-}
-
-.c7 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: label;
-}
-
-.c10 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: button;
-}
-
-.c24 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: description;
 }
 
 .c12 {
@@ -4490,19 +4052,6 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item switch 1`] =
 }
 
 .c15 {
-  box-sizing: border-box;
-}
-
-.c13 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c6 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -4514,7 +4063,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item switch 1`] =
   display: block;
 }
 
-.c16 {
+.c6 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -4523,42 +4072,38 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item switch 1`] =
   text-transform: none;
 }
 
-.c16,
-.c16[type='button'],
-.c16[type='reset'],
-.c16[type='submit'] {
+.c6,
+.c6[type='button'],
+.c6[type='reset'],
+.c6[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c16::-moz-focus-inner,
-.c16[type='button']::-moz-focus-inner,
-.c16[type='reset']::-moz-focus-inner,
-.c16[type='submit']::-moz-focus-inner {
+.c6::-moz-focus-inner,
+.c6[type='button']::-moz-focus-inner,
+.c6[type='reset']::-moz-focus-inner,
+.c6[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c16:-moz-focusring,
-.c16[type='button']:-moz-focusring,
-.c16[type='reset']:-moz-focusring,
-.c16[type='submit']:-moz-focusring {
+.c6:-moz-focusring,
+.c6[type='button']:-moz-focusring,
+.c6[type='reset']:-moz-focusring,
+.c6[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c0 {
-  display: block;
-}
-
-.c8 {
+.c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
+  color: #6E6E6E;
   margin: 0;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -4567,7 +4112,350 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item switch 1`] =
   line-height: 1.4285714285714286;
 }
 
-.c25 {
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14:hover {
+  -webkit-text-decoration: 'none';
+  text-decoration: 'none';
+  color: #336BFF;
+}
+
+.c11 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 400;
+}
+
+.c16 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  color: #282823;
+}
+
+.c16:disabled {
+  color: #A0A09B;
+}
+
+.c3 {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.c9 {
+  height: 100%;
+  width: 100%;
+}
+
+.c7 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  color: inherit;
+}
+
+.c2 {
+  display: none;
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="Typography__Span-sc-10mju41-0 c1"
+  >
+    label
+  </span>
+  <div>
+    <select
+      aria-hidden="true"
+      className="c2"
+      disabled={false}
+      onChange={[Function]}
+    >
+      
+      <option
+        label="first label"
+        value="first value"
+      />
+      <option
+        label="second label"
+        value="second value"
+      />
+      <option
+        label="third label"
+        value="third value"
+      />
+    </select>
+    <div
+      className="c3"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      tabIndex={0}
+    >
+      <div
+        className="c4"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c5"
+        >
+          <button
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            aria-label="label: "
+            className="c6 c7"
+            data-testid="input-select-button"
+            disabled={false}
+            form=""
+            id="control-list-item-select"
+            onClick={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <div
+              aria-hidden="true"
+              className="c8 c9"
+            >
+              <div
+                className="c10 c11"
+              >
+                <div
+                  className="c12"
+                >
+                  <span
+                    className="Typography__Span-sc-10mju41-0 c13 c14"
+                  >
+                    first label
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    className="c15 c16"
+                    focusable="false"
+                    height={8}
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    width={8}
+                  >
+                    <path
+                      d="M8 7.418l-4-4-4 4V4.59l4-4 4 4v2.828z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / ControlsListItem Controls list item switch 1`] = `
+.c2 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "icon label button" ". description description";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  row-gap: 4px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 4px 1fr;
+  -ms-grid-columns: auto 8px 1fr 8px 1fr;
+}
+
+.c3 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: start;
+  -ms-grid-column-align: start;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: end;
+  -ms-grid-column-align: end;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c22 {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.c4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: icon;
+}
+
+.c6 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: label;
+}
+
+.c9 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: button;
+}
+
+.c23 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: description;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c11 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c11 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c14 {
+  box-sizing: border-box;
+}
+
+.c12 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c5 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c0 {
+  display: block;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c24 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E6E;
   margin: 0;
@@ -4577,19 +4465,15 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item switch 1`] =
 }
 
 .c1 {
-  padding: 0 12px 12px;
-}
-
-.c2 {
   cursor: inherit;
   width: 100%;
 }
 
-.c11 {
+.c10 {
   display: inline-block;
 }
 
-.c20 {
+.c19 {
   background: #FFFFFF;
   display: block;
   height: 24px;
@@ -4606,7 +4490,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item switch 1`] =
   transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
 }
 
-.c22 {
+.c21 {
   display: block;
   height: 16px;
   width: 40px;
@@ -4617,68 +4501,62 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item switch 1`] =
   transition: background-color 0.2s ease-out;
 }
 
-.c18 {
+.c17 {
   position: relative;
 }
 
-.c17 {
+.c16 {
   display: block;
   background: none;
   padding: 0;
   border: 0;
 }
 
-.c17[aria-checked='true'] .c21 {
+.c16[aria-checked='true'] .c20 {
   background-color: #336BFF;
 }
 
-.c17[aria-checked='true'] .c19 {
+.c16[aria-checked='true'] .c18 {
   -webkit-transform: translate( 16px );
   -ms-transform: translate( 16px );
   transform: translate( 16px );
 }
 
-.c17[disabled] .c21,
-.c17[aria-readonly] .c21 {
+.c16[disabled] .c20,
+.c16[aria-readonly] .c20 {
   background-color: #E0E0E0;
 }
 
-.c17[disabled] .c19,
-.c17[aria-readonly] .c19 {
+.c16[disabled] .c18,
+.c16[aria-readonly] .c18 {
   border: 1px solid #EBEBE8;
   background-color: #EEEEEE;
 }
 
-.c17[aria-checked='true'][disabled] .c21 {
+.c16[aria-checked='true'][disabled] .c20 {
   background-color: #D6E1FF;
 }
 
-.c17[aria-checked='true'][disabled] .c19 {
+.c16[aria-checked='true'][disabled] .c18 {
   border: 1px solid #EBEBE8;
   background-color: #FFFFFF;
 }
 
-@media (min-width:760px) {
-  .c1 {
-    padding: 0 20px 12px;
-  }
-}
-
 <li
-  className="c0 c1"
+  className="c0"
 >
   <label
-    className="c2"
+    className="c1"
   >
     <div
-      className="c3"
+      className="c2"
     >
       <div
-        className="c4 c5"
+        className="c3 c4"
       >
         <svg
           aria-hidden="true"
-          className="c6"
+          className="c5"
           focusable="false"
           height={24}
           preserveAspectRatio="xMidYMid meet"
@@ -4698,50 +4576,50 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item switch 1`] =
         </svg>
       </div>
       <div
-        className="c4 c7"
+        className="c3 c6"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c8"
+          className="Typography__Span-sc-10mju41-0 c7"
         >
           label
         </span>
       </div>
       <div
-        className="c9 c10"
+        className="c8 c9"
       >
         <label
-          className="c11"
+          className="c10"
         >
           <span
-            className="c12"
+            className="c11"
           >
             <div
-              className="c13"
+              className="c12"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c14"
+                className="Typography__Span-sc-10mju41-0 c13"
               >
                 label
               </span>
             </div>
             <span
-              className="c15"
+              className="c14"
             >
               <button
                 aria-checked={false}
-                className="c16 c17"
+                className="c15 c16"
                 onClick={[Function]}
                 role="switch"
                 type="button"
               >
                 <div
-                  className="c18"
+                  className="c17"
                 >
                   <span
-                    className="c19 c20"
+                    className="c18 c19"
                   />
                   <span
-                    className="c21 c22"
+                    className="c20 c21"
                   />
                 </div>
               </button>
@@ -4750,13 +4628,947 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item switch 1`] =
         </label>
       </div>
       <div
-        className="c23 c24"
+        className="c22 c23"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c25"
+          className="Typography__Span-sc-10mju41-0 c24"
         >
           description is good otherwise we don't understand
         </span>
+      </div>
+    </div>
+  </label>
+</li>
+`;
+
+exports[`Storyshots Molecules / ControlsListItem Controls list item switch disabled 1`] = `
+.c2 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "icon label button" ". description description";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  row-gap: 4px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 4px 1fr;
+  -ms-grid-columns: auto 8px 1fr 8px 1fr;
+}
+
+.c3 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: start;
+  -ms-grid-column-align: start;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: end;
+  -ms-grid-column-align: end;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c22 {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.c4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: icon;
+}
+
+.c6 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: label;
+}
+
+.c9 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: button;
+}
+
+.c23 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: description;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c11 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c11 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c14 {
+  box-sizing: border-box;
+}
+
+.c12 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c5 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c0 {
+  display: block;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c24 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E6E;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  cursor: inherit;
+  width: 100%;
+}
+
+.c10 {
+  display: inline-block;
+}
+
+.c19 {
+  background: #FFFFFF;
+  display: block;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: 0px;
+  border: 1px solid #BDBDBD;
+  margin-top: -4px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
+  -webkit-transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
+  transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
+}
+
+.c21 {
+  display: block;
+  height: 16px;
+  width: 40px;
+  margin: 4px 0;
+  background-color: #E0E0E0;
+  border-radius: 8px;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.c17 {
+  position: relative;
+}
+
+.c16 {
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+}
+
+.c16[aria-checked='true'] .c20 {
+  background-color: #336BFF;
+}
+
+.c16[aria-checked='true'] .c18 {
+  -webkit-transform: translate( 16px );
+  -ms-transform: translate( 16px );
+  transform: translate( 16px );
+}
+
+.c16[disabled] .c20,
+.c16[aria-readonly] .c20 {
+  background-color: #E0E0E0;
+}
+
+.c16[disabled] .c18,
+.c16[aria-readonly] .c18 {
+  border: 1px solid #EBEBE8;
+  background-color: #EEEEEE;
+}
+
+.c16[aria-checked='true'][disabled] .c20 {
+  background-color: #D6E1FF;
+}
+
+.c16[aria-checked='true'][disabled] .c18 {
+  border: 1px solid #EBEBE8;
+  background-color: #FFFFFF;
+}
+
+<li
+  className="c0"
+>
+  <label
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3 c4"
+      >
+        <svg
+          aria-hidden="true"
+          className="c5"
+          focusable="false"
+          height={24}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={24}
+        >
+          <path
+            d="M19 13v2h-2v-2h2z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M4 1a3 3 0 00-3 3v16a3 3 0 003 3h19V5h-4V1H4zm0 6c-.35 0-.687-.06-1-.17V20a1 1 0 001 1h17V7H4zM3 4a1 1 0 001 1h13V3H4a1 1 0 00-1 1z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        className="c3 c6"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c7"
+        >
+          label
+        </span>
+      </div>
+      <div
+        className="c8 c9"
+      >
+        <label
+          className="c10"
+        >
+          <span
+            className="c11"
+          >
+            <div
+              className="c12"
+            >
+              <span
+                className="Typography__Span-sc-10mju41-0 c13"
+              >
+                label
+              </span>
+            </div>
+            <span
+              className="c14"
+            >
+              <button
+                aria-checked={false}
+                className="c15 c16"
+                disabled={true}
+                onClick={[Function]}
+                role="switch"
+                type="button"
+              >
+                <div
+                  className="c17"
+                >
+                  <span
+                    className="c18 c19"
+                  />
+                  <span
+                    className="c20 c21"
+                  />
+                </div>
+              </button>
+            </span>
+          </span>
+        </label>
+      </div>
+      <div
+        className="c22 c23"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c24"
+        >
+          description is good otherwise we don't understand
+        </span>
+      </div>
+    </div>
+  </label>
+</li>
+`;
+
+exports[`Storyshots Molecules / ControlsListItem Controls list item switch with addon 1`] = `
+.c25 {
+  padding-top: 8px;
+  background-color: transparent;
+}
+
+.c33 {
+  background-color: transparent;
+}
+
+.c2 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "icon label button" ". description description";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  row-gap: 4px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 4px 1fr;
+  -ms-grid-columns: auto 8px 1fr 8px 1fr;
+}
+
+.c3 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: start;
+  -ms-grid-column-align: start;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: end;
+  -ms-grid-column-align: end;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c22 {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.c4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: icon;
+}
+
+.c6 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: label;
+}
+
+.c9 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: button;
+}
+
+.c23 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: description;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c11 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c11 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c14 {
+  box-sizing: border-box;
+}
+
+.c26 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c29 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c31 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c12 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c5 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c0 {
+  display: block;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c24 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E6E;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  cursor: inherit;
+  width: 100%;
+}
+
+.c35:hover {
+  -webkit-text-decoration: 'none';
+  text-decoration: 'none';
+  color: #336BFF;
+}
+
+.c34 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 400;
+}
+
+.c36 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  color: #282823;
+}
+
+.c36:disabled {
+  color: #A0A09B;
+}
+
+.c28 {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.c32 {
+  height: 100%;
+  width: 100%;
+}
+
+.c30 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  color: inherit;
+}
+
+.c27 {
+  display: none;
+}
+
+.c10 {
+  display: inline-block;
+}
+
+.c19 {
+  background: #FFFFFF;
+  display: block;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: 0px;
+  border: 1px solid #BDBDBD;
+  margin-top: -4px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
+  -webkit-transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
+  transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
+}
+
+.c21 {
+  display: block;
+  height: 16px;
+  width: 40px;
+  margin: 4px 0;
+  background-color: #E0E0E0;
+  border-radius: 8px;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.c17 {
+  position: relative;
+}
+
+.c16 {
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+}
+
+.c16[aria-checked='true'] .c20 {
+  background-color: #336BFF;
+}
+
+.c16[aria-checked='true'] .c18 {
+  -webkit-transform: translate( 16px );
+  -ms-transform: translate( 16px );
+  transform: translate( 16px );
+}
+
+.c16[disabled] .c20,
+.c16[aria-readonly] .c20 {
+  background-color: #E0E0E0;
+}
+
+.c16[disabled] .c18,
+.c16[aria-readonly] .c18 {
+  border: 1px solid #EBEBE8;
+  background-color: #EEEEEE;
+}
+
+.c16[aria-checked='true'][disabled] .c20 {
+  background-color: #D6E1FF;
+}
+
+.c16[aria-checked='true'][disabled] .c18 {
+  border: 1px solid #EBEBE8;
+  background-color: #FFFFFF;
+}
+
+<li
+  className="c0"
+>
+  <label
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3 c4"
+      >
+        <svg
+          aria-hidden="true"
+          className="c5"
+          focusable="false"
+          height={24}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={24}
+        >
+          <path
+            d="M19 13v2h-2v-2h2z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M4 1a3 3 0 00-3 3v16a3 3 0 003 3h19V5h-4V1H4zm0 6c-.35 0-.687-.06-1-.17V20a1 1 0 001 1h17V7H4zM3 4a1 1 0 001 1h13V3H4a1 1 0 00-1 1z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        className="c3 c6"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c7"
+        >
+          label
+        </span>
+      </div>
+      <div
+        className="c8 c9"
+      >
+        <label
+          className="c10"
+        >
+          <span
+            className="c11"
+          >
+            <div
+              className="c12"
+            >
+              <span
+                className="Typography__Span-sc-10mju41-0 c13"
+              >
+                label
+              </span>
+            </div>
+            <span
+              className="c14"
+            >
+              <button
+                aria-checked={false}
+                className="c15 c16"
+                onClick={[Function]}
+                role="switch"
+                type="button"
+              >
+                <div
+                  className="c17"
+                >
+                  <span
+                    className="c18 c19"
+                  />
+                  <span
+                    className="c20 c21"
+                  />
+                </div>
+              </button>
+            </span>
+          </span>
+        </label>
+      </div>
+      <div
+        className="c22 c23"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c24"
+        >
+          description is good otherwise we don't understand
+        </span>
+        <div
+          className="c25"
+        >
+          <div
+            className="c26"
+          >
+            <span
+              className="Typography__Span-sc-10mju41-0 c24"
+            >
+              label
+            </span>
+            <div>
+              <select
+                aria-hidden="true"
+                className="c27"
+                disabled={false}
+                onChange={[Function]}
+              >
+                
+                <option
+                  label="first label"
+                  value="first value"
+                />
+                <option
+                  label="second label"
+                  value="second value"
+                />
+                <option
+                  label="third label"
+                  value="third value"
+                />
+              </select>
+              <div
+                className="c28"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                tabIndex={0}
+              >
+                <div
+                  className="c29"
+                >
+                  <span
+                    className="Typography__Span-sc-10mju41-0 c13"
+                  >
+                    <button
+                      aria-expanded="false"
+                      aria-haspopup="listbox"
+                      aria-label="label: "
+                      className="c15 c30"
+                      data-testid="input-select-button"
+                      disabled={false}
+                      form=""
+                      id="control-list-item-select"
+                      onClick={[Function]}
+                      tabIndex={0}
+                      type="button"
+                    >
+                      <div
+                        aria-hidden="true"
+                        className="c31 c32"
+                      >
+                        <div
+                          className="c33 c34"
+                        >
+                          <div
+                            className="c11"
+                          >
+                            <span
+                              className="Typography__Span-sc-10mju41-0 c7 c35"
+                            >
+                              first label
+                            </span>
+                            <svg
+                              aria-hidden="true"
+                              className="c5 c36"
+                              focusable="false"
+                              height={8}
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              width={8}
+                            >
+                              <path
+                                d="M8 7.418l-4-4-4 4V4.59l4-4 4 4v2.828z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </label>
