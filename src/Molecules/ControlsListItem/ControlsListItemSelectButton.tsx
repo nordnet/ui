@@ -17,9 +17,8 @@ const Chevron = styled(Icon.ChevronUp8)<{ $expanded?: boolean }>`
   }
 `;
 
-const { useSelectMachineFromContext } = Input.Select;
-
 const ControlsListItemSelectButton = (buttonText: string | React.ReactElement) => {
+  const { useSelectMachineFromContext } = Input.Select;
   const [state] = useSelectMachineFromContext();
 
   return (
