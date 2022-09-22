@@ -1,3 +1,11 @@
+## [10.47.2](https://github.com/nordnet/ui/compare/v10.47.1...v10.47.2) (2022-09-22)
+
+
+### Bug Fixes
+
+* pass thru disabled prop ([145f5cd](https://github.com/nordnet/ui/commit/145f5cd))
+* remove paddings and add addon for switch ([8d22b89](https://github.com/nordnet/ui/commit/8d22b89))
+
 ## [10.47.1](https://github.com/nordnet/ui/compare/v10.47.0...v10.47.1) (2022-09-22)
 
 
