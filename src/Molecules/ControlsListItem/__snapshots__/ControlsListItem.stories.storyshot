@@ -1,7 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with addon component 1`] = `
-.c32 {
+.c24 {
+  padding-top: 8px;
+  background-color: transparent;
+}
+
+.c33 {
   background-color: transparent;
 }
 
@@ -94,7 +99,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c24 {
+.c25 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -110,7 +115,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c27 {
+.c28 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -123,7 +128,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c30 {
+.c31 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -131,7 +136,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: flex;
 }
 
-.c34 {
+.c35 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -141,16 +146,16 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: -2px;
-  margin-right: -2px;
+  margin-left: -4px;
+  margin-right: -4px;
 }
 
-.c34 > * {
-  padding-left: 2px;
-  padding-right: 2px;
+.c35 > * {
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
-.c34 > *:not(:first-child) {
+.c35 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -181,7 +186,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: block;
 }
 
-.c28 {
+.c29 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -190,25 +195,25 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   text-transform: none;
 }
 
-.c28,
-.c28[type='button'],
-.c28[type='reset'],
-.c28[type='submit'] {
+.c29,
+.c29[type='button'],
+.c29[type='reset'],
+.c29[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c28::-moz-focus-inner,
-.c28[type='button']::-moz-focus-inner,
-.c28[type='reset']::-moz-focus-inner,
-.c28[type='submit']::-moz-focus-inner {
+.c29::-moz-focus-inner,
+.c29[type='button']::-moz-focus-inner,
+.c29[type='reset']::-moz-focus-inner,
+.c29[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c28:-moz-focusring,
-.c28[type='button']:-moz-focusring,
-.c28[type='reset']:-moz-focusring,
-.c28[type='submit']:-moz-focusring {
+.c29:-moz-focusring,
+.c29[type='button']:-moz-focusring,
+.c29[type='reset']:-moz-focusring,
+.c29[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -244,7 +249,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
 }
 
 .c1 {
-  padding: 12px;
+  padding: 0 12px 12px;
 }
 
 .c2 {
@@ -252,12 +257,13 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   width: 100%;
 }
 
-.c35:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+.c36:hover {
+  -webkit-text-decoration: 'none';
+  text-decoration: 'none';
+  color: #336BFF;
 }
 
-.c33 {
+.c34 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -266,23 +272,35 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 32px;
   z-index: 400;
-  border-color: red;
 }
 
-.c26 {
+.c37 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  color: #282823;
+}
+
+.c37:disabled {
+  color: #A0A09B;
+}
+
+.c27 {
   position: relative;
   display: block;
   width: 100%;
 }
 
-.c31 {
+.c32 {
   height: 100%;
   width: 100%;
 }
 
-.c29 {
+.c30 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -296,7 +314,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   color: inherit;
 }
 
-.c25 {
+.c26 {
   display: none;
 }
 
@@ -380,6 +398,12 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
 .c11 {
   width: auto;
   display: inline-block;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    padding: 0 20px 12px;
+  }
 }
 
 <div
@@ -479,91 +503,95 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
           <div
             className="c24"
           >
-            <span
-              className="Typography__Span-sc-10mju41-0 c14"
+            <div
+              className="c25"
             >
-              label
-            </span>
-            <div>
-              <select
-                aria-hidden="true"
-                className="c25"
-                disabled={false}
-                onChange={[Function]}
+              <span
+                className="Typography__Span-sc-10mju41-0 c14"
               >
-                
-                <option
-                  label="first label"
-                  value="first value"
-                />
-                <option
-                  label="second label"
-                  value="second value"
-                />
-                <option
-                  label="third label"
-                  value="third value"
-                />
-              </select>
-              <div
-                className="c26"
-                onBlur={[Function]}
-                onFocus={[Function]}
-                tabIndex={0}
-              >
+                label
+              </span>
+              <div>
+                <select
+                  aria-hidden="true"
+                  className="c26"
+                  disabled={false}
+                  onChange={[Function]}
+                >
+                  
+                  <option
+                    label="first label"
+                    value="first value"
+                  />
+                  <option
+                    label="second label"
+                    value="second value"
+                  />
+                  <option
+                    label="third label"
+                    value="third value"
+                  />
+                </select>
                 <div
                   className="c27"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  tabIndex={0}
                 >
-                  <span
-                    className="Typography__Span-sc-10mju41-0 c20"
+                  <div
+                    className="c28"
                   >
-                    <button
-                      aria-expanded="false"
-                      aria-haspopup="listbox"
-                      aria-label="label: "
-                      className="c28 c29"
-                      data-testid="input-select-button"
-                      disabled={false}
-                      form=""
-                      id="control-list-item-select"
-                      onClick={[Function]}
-                      tabIndex={0}
-                      type="button"
+                    <span
+                      className="Typography__Span-sc-10mju41-0 c20"
                     >
-                      <div
-                        aria-hidden="true"
-                        className="c30 c31"
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-label="label: "
+                        className="c29 c30"
+                        data-testid="input-select-button"
+                        disabled={false}
+                        form=""
+                        id="control-list-item-select"
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
                       >
                         <div
-                          className="c32 c33"
+                          aria-hidden="true"
+                          className="c31 c32"
                         >
                           <div
-                            className="c34"
+                            className="c33 c34"
                           >
-                            <span
-                              className="Typography__Span-sc-10mju41-0 c8 c35"
+                            <div
+                              className="c35"
                             >
-                              first label
-                            </span>
-                            <svg
-                              aria-hidden="true"
-                              className="c6"
-                              focusable="false"
-                              height={8}
-                              preserveAspectRatio="xMidYMid meet"
-                              role="presentation"
-                              width={8}
-                            >
-                              <path
-                                d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
-                                fill="currentColor"
-                              />
-                            </svg>
+                              <span
+                                className="Typography__Span-sc-10mju41-0 c8 c36"
+                              >
+                                first label
+                              </span>
+                              <svg
+                                aria-hidden="true"
+                                className="c6 c37"
+                                focusable="false"
+                                height={8}
+                                preserveAspectRatio="xMidYMid meet"
+                                role="presentation"
+                                width={8}
+                              >
+                                <path
+                                  d="M8 7.418l-4-4-4 4V4.59l4-4 4 4v2.828z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </button>
-                  </span>
+                      </button>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -576,7 +604,12 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
 `;
 
 exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with addon component right aligned 1`] = `
-.c32 {
+.c24 {
+  padding-top: 8px;
+  background-color: transparent;
+}
+
+.c33 {
   background-color: transparent;
 }
 
@@ -669,7 +702,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c24 {
+.c25 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -685,7 +718,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c27 {
+.c28 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -698,7 +731,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c30 {
+.c31 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -706,7 +739,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: flex;
 }
 
-.c34 {
+.c35 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -716,16 +749,16 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: -2px;
-  margin-right: -2px;
+  margin-left: -4px;
+  margin-right: -4px;
 }
 
-.c34 > * {
-  padding-left: 2px;
-  padding-right: 2px;
+.c35 > * {
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
-.c34 > *:not(:first-child) {
+.c35 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -756,7 +789,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: block;
 }
 
-.c28 {
+.c29 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -765,25 +798,25 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   text-transform: none;
 }
 
-.c28,
-.c28[type='button'],
-.c28[type='reset'],
-.c28[type='submit'] {
+.c29,
+.c29[type='button'],
+.c29[type='reset'],
+.c29[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c28::-moz-focus-inner,
-.c28[type='button']::-moz-focus-inner,
-.c28[type='reset']::-moz-focus-inner,
-.c28[type='submit']::-moz-focus-inner {
+.c29::-moz-focus-inner,
+.c29[type='button']::-moz-focus-inner,
+.c29[type='reset']::-moz-focus-inner,
+.c29[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c28:-moz-focusring,
-.c28[type='button']:-moz-focusring,
-.c28[type='reset']:-moz-focusring,
-.c28[type='submit']:-moz-focusring {
+.c29:-moz-focusring,
+.c29[type='button']:-moz-focusring,
+.c29[type='reset']:-moz-focusring,
+.c29[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -819,7 +852,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
 }
 
 .c1 {
-  padding: 12px;
+  padding: 0 12px 12px;
 }
 
 .c2 {
@@ -827,12 +860,13 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   width: 100%;
 }
 
-.c35:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+.c36:hover {
+  -webkit-text-decoration: 'none';
+  text-decoration: 'none';
+  color: #336BFF;
 }
 
-.c33 {
+.c34 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -841,23 +875,35 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 32px;
   z-index: 400;
-  border-color: red;
 }
 
-.c26 {
+.c37 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  color: #282823;
+}
+
+.c37:disabled {
+  color: #A0A09B;
+}
+
+.c27 {
   position: relative;
   display: block;
   width: 100%;
 }
 
-.c31 {
+.c32 {
   height: 100%;
   width: 100%;
 }
 
-.c29 {
+.c30 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -871,7 +917,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   color: inherit;
 }
 
-.c25 {
+.c26 {
   display: none;
 }
 
@@ -955,6 +1001,12 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
 .c11 {
   width: auto;
   display: inline-block;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    padding: 0 20px 12px;
+  }
 }
 
 <div
@@ -1054,91 +1106,95 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
           <div
             className="c24"
           >
-            <span
-              className="Typography__Span-sc-10mju41-0 c14"
+            <div
+              className="c25"
             >
-              label
-            </span>
-            <div>
-              <select
-                aria-hidden="true"
-                className="c25"
-                disabled={false}
-                onChange={[Function]}
+              <span
+                className="Typography__Span-sc-10mju41-0 c14"
               >
-                
-                <option
-                  label="first label"
-                  value="first value"
-                />
-                <option
-                  label="second label"
-                  value="second value"
-                />
-                <option
-                  label="third label"
-                  value="third value"
-                />
-              </select>
-              <div
-                className="c26"
-                onBlur={[Function]}
-                onFocus={[Function]}
-                tabIndex={0}
-              >
+                label
+              </span>
+              <div>
+                <select
+                  aria-hidden="true"
+                  className="c26"
+                  disabled={false}
+                  onChange={[Function]}
+                >
+                  
+                  <option
+                    label="first label"
+                    value="first value"
+                  />
+                  <option
+                    label="second label"
+                    value="second value"
+                  />
+                  <option
+                    label="third label"
+                    value="third value"
+                  />
+                </select>
                 <div
                   className="c27"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  tabIndex={0}
                 >
-                  <span
-                    className="Typography__Span-sc-10mju41-0 c20"
+                  <div
+                    className="c28"
                   >
-                    <button
-                      aria-expanded="false"
-                      aria-haspopup="listbox"
-                      aria-label="label: "
-                      className="c28 c29"
-                      data-testid="input-select-button"
-                      disabled={false}
-                      form=""
-                      id="control-list-item-select"
-                      onClick={[Function]}
-                      tabIndex={0}
-                      type="button"
+                    <span
+                      className="Typography__Span-sc-10mju41-0 c20"
                     >
-                      <div
-                        aria-hidden="true"
-                        className="c30 c31"
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-label="label: "
+                        className="c29 c30"
+                        data-testid="input-select-button"
+                        disabled={false}
+                        form=""
+                        id="control-list-item-select"
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
                       >
                         <div
-                          className="c32 c33"
+                          aria-hidden="true"
+                          className="c31 c32"
                         >
                           <div
-                            className="c34"
+                            className="c33 c34"
                           >
-                            <span
-                              className="Typography__Span-sc-10mju41-0 c8 c35"
+                            <div
+                              className="c35"
                             >
-                              first label
-                            </span>
-                            <svg
-                              aria-hidden="true"
-                              className="c6"
-                              focusable="false"
-                              height={8}
-                              preserveAspectRatio="xMidYMid meet"
-                              role="presentation"
-                              width={8}
-                            >
-                              <path
-                                d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
-                                fill="currentColor"
-                              />
-                            </svg>
+                              <span
+                                className="Typography__Span-sc-10mju41-0 c8 c36"
+                              >
+                                first label
+                              </span>
+                              <svg
+                                aria-hidden="true"
+                                className="c6 c37"
+                                focusable="false"
+                                height={8}
+                                preserveAspectRatio="xMidYMid meet"
+                                role="presentation"
+                                width={8}
+                              >
+                                <path
+                                  d="M8 7.418l-4-4-4 4V4.59l4-4 4 4v2.828z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </button>
-                  </span>
+                      </button>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1151,7 +1207,12 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
 `;
 
 exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with addon component right aligned and fixed min-width 1`] = `
-.c32 {
+.c24 {
+  padding-top: 8px;
+  background-color: transparent;
+}
+
+.c33 {
   background-color: transparent;
 }
 
@@ -1244,7 +1305,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c24 {
+.c25 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1260,7 +1321,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c27 {
+.c28 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1273,7 +1334,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   align-items: center;
 }
 
-.c30 {
+.c31 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1281,7 +1342,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: flex;
 }
 
-.c34 {
+.c35 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1291,16 +1352,16 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: -2px;
-  margin-right: -2px;
+  margin-left: -4px;
+  margin-right: -4px;
 }
 
-.c34 > * {
-  padding-left: 2px;
-  padding-right: 2px;
+.c35 > * {
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
-.c34 > *:not(:first-child) {
+.c35 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -1331,7 +1392,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: block;
 }
 
-.c28 {
+.c29 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1340,25 +1401,25 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   text-transform: none;
 }
 
-.c28,
-.c28[type='button'],
-.c28[type='reset'],
-.c28[type='submit'] {
+.c29,
+.c29[type='button'],
+.c29[type='reset'],
+.c29[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c28::-moz-focus-inner,
-.c28[type='button']::-moz-focus-inner,
-.c28[type='reset']::-moz-focus-inner,
-.c28[type='submit']::-moz-focus-inner {
+.c29::-moz-focus-inner,
+.c29[type='button']::-moz-focus-inner,
+.c29[type='reset']::-moz-focus-inner,
+.c29[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c28:-moz-focusring,
-.c28[type='button']:-moz-focusring,
-.c28[type='reset']:-moz-focusring,
-.c28[type='submit']:-moz-focusring {
+.c29:-moz-focusring,
+.c29[type='button']:-moz-focusring,
+.c29[type='reset']:-moz-focusring,
+.c29[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -1394,7 +1455,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
 }
 
 .c1 {
-  padding: 12px;
+  padding: 0 12px 12px;
 }
 
 .c2 {
@@ -1402,12 +1463,13 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   width: 100%;
 }
 
-.c35:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+.c36:hover {
+  -webkit-text-decoration: 'none';
+  text-decoration: 'none';
+  color: #336BFF;
 }
 
-.c33 {
+.c34 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1416,23 +1478,35 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 32px;
   z-index: 400;
-  border-color: red;
 }
 
-.c26 {
+.c37 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  color: #282823;
+}
+
+.c37:disabled {
+  color: #A0A09B;
+}
+
+.c27 {
   position: relative;
   display: block;
   width: 100%;
 }
 
-.c31 {
+.c32 {
   height: 100%;
   width: 100%;
 }
 
-.c29 {
+.c30 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -1446,7 +1520,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
   color: inherit;
 }
 
-.c25 {
+.c26 {
   display: none;
 }
 
@@ -1530,6 +1604,12 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
 .c11 {
   width: auto;
   display: inline-block;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    padding: 0 20px 12px;
+  }
 }
 
 <div
@@ -1629,91 +1709,95 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
           <div
             className="c24"
           >
-            <span
-              className="Typography__Span-sc-10mju41-0 c14"
+            <div
+              className="c25"
             >
-              label
-            </span>
-            <div>
-              <select
-                aria-hidden="true"
-                className="c25"
-                disabled={false}
-                onChange={[Function]}
+              <span
+                className="Typography__Span-sc-10mju41-0 c14"
               >
-                
-                <option
-                  label="first label"
-                  value="first value"
-                />
-                <option
-                  label="second label"
-                  value="second value"
-                />
-                <option
-                  label="third label"
-                  value="third value"
-                />
-              </select>
-              <div
-                className="c26"
-                onBlur={[Function]}
-                onFocus={[Function]}
-                tabIndex={0}
-              >
+                label
+              </span>
+              <div>
+                <select
+                  aria-hidden="true"
+                  className="c26"
+                  disabled={false}
+                  onChange={[Function]}
+                >
+                  
+                  <option
+                    label="first label"
+                    value="first value"
+                  />
+                  <option
+                    label="second label"
+                    value="second value"
+                  />
+                  <option
+                    label="third label"
+                    value="third value"
+                  />
+                </select>
                 <div
                   className="c27"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  tabIndex={0}
                 >
-                  <span
-                    className="Typography__Span-sc-10mju41-0 c20"
+                  <div
+                    className="c28"
                   >
-                    <button
-                      aria-expanded="false"
-                      aria-haspopup="listbox"
-                      aria-label="label: "
-                      className="c28 c29"
-                      data-testid="input-select-button"
-                      disabled={false}
-                      form=""
-                      id="control-list-item-select"
-                      onClick={[Function]}
-                      tabIndex={0}
-                      type="button"
+                    <span
+                      className="Typography__Span-sc-10mju41-0 c20"
                     >
-                      <div
-                        aria-hidden="true"
-                        className="c30 c31"
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-label="label: "
+                        className="c29 c30"
+                        data-testid="input-select-button"
+                        disabled={false}
+                        form=""
+                        id="control-list-item-select"
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
                       >
                         <div
-                          className="c32 c33"
+                          aria-hidden="true"
+                          className="c31 c32"
                         >
                           <div
-                            className="c34"
+                            className="c33 c34"
                           >
-                            <span
-                              className="Typography__Span-sc-10mju41-0 c8 c35"
+                            <div
+                              className="c35"
                             >
-                              first label
-                            </span>
-                            <svg
-                              aria-hidden="true"
-                              className="c6"
-                              focusable="false"
-                              height={8}
-                              preserveAspectRatio="xMidYMid meet"
-                              role="presentation"
-                              width={8}
-                            >
-                              <path
-                                d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
-                                fill="currentColor"
-                              />
-                            </svg>
+                              <span
+                                className="Typography__Span-sc-10mju41-0 c8 c36"
+                              >
+                                first label
+                              </span>
+                              <svg
+                                aria-hidden="true"
+                                className="c6 c37"
+                                focusable="false"
+                                height={8}
+                                preserveAspectRatio="xMidYMid meet"
+                                role="presentation"
+                                width={8}
+                              >
+                                <path
+                                  d="M8 7.418l-4-4-4 4V4.59l4-4 4 4v2.828z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </button>
-                  </span>
+                      </button>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1875,7 +1959,7 @@ Array [
 }
 
 .c1 {
-  padding: 12px;
+  padding: 0 12px 12px;
 }
 
 .c2 {
@@ -1963,6 +2047,12 @@ Array [
 .c11 {
   width: auto;
   display: inline-block;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    padding: 0 20px 12px;
+  }
 }
 
 <li
@@ -2204,7 +2294,7 @@ Array [
 }
 
 .c1 {
-  padding: 12px;
+  padding: 0 12px 12px;
 }
 
 .c2 {
@@ -2292,6 +2382,12 @@ Array [
 .c11 {
   width: auto;
   display: inline-block;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    padding: 0 20px 12px;
+  }
 }
 
 <li
@@ -2387,6 +2483,10 @@ Array [
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
+}
+
+@media (min-width:760px) {
+
 }
 
 <div
@@ -2540,7 +2640,7 @@ Array [
 }
 
 .c1 {
-  padding: 12px;
+  padding: 0 12px 12px;
 }
 
 .c2 {
@@ -2628,6 +2728,12 @@ Array [
 .c11 {
   width: auto;
   display: inline-block;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    padding: 0 20px 12px;
+  }
 }
 
 <li
@@ -2867,7 +2973,7 @@ Array [
 }
 
 .c1 {
-  padding: 12px;
+  padding: 0 12px 12px;
 }
 
 .c2 {
@@ -2955,6 +3061,12 @@ Array [
 .c11 {
   width: auto;
   display: inline-block;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    padding: 0 20px 12px;
+  }
 }
 
 <li
@@ -3229,7 +3341,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
 }
 
 .c1 {
-  padding: 12px;
+  padding: 0 12px 12px;
 }
 
 .c2 {
@@ -3238,7 +3350,13 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
 }
 
 .c13:hover {
-  border-bottom: 1px solid #336BFF;
+  color: #2650BF;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    padding: 0 20px 12px;
+  }
 }
 
 <li
@@ -3484,7 +3602,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
 }
 
 .c1 {
-  padding: 12px;
+  padding: 0 12px 12px;
 }
 
 .c2 {
@@ -3493,7 +3611,13 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item button with 
 }
 
 .c13:hover {
-  border-bottom: 1px solid #336BFF;
+  color: #2650BF;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    padding: 0 20px 12px;
+  }
 }
 
 <li
@@ -3608,7 +3732,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   -ms-grid-row-align: center;
 }
 
-.c23 {
+.c24 {
   box-sizing: border-box;
   min-width: 0;
 }
@@ -3640,7 +3764,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   grid-area: button;
 }
 
-.c24 {
+.c25 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
@@ -3680,13 +3804,13 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: -2px;
-  margin-right: -2px;
+  margin-left: -4px;
+  margin-right: -4px;
 }
 
 .c20 > * {
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .c20 > *:not(:first-child) {
@@ -3758,7 +3882,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   line-height: 1.4285714285714286;
 }
 
-.c25 {
+.c26 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E6E;
   margin: 0;
@@ -3768,7 +3892,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
 }
 
 .c1 {
-  padding: 12px;
+  padding: 0 12px 12px;
 }
 
 .c2 {
@@ -3777,8 +3901,9 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
 }
 
 .c21:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: 'none';
+  text-decoration: 'none';
+  color: #336BFF;
 }
 
 .c19 {
@@ -3790,9 +3915,21 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 32px;
   z-index: 400;
-  border-color: red;
+}
+
+.c23 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  color: #282823;
+}
+
+.c23:disabled {
+  color: #A0A09B;
 }
 
 .c11 {
@@ -3822,6 +3959,12 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
 
 .c10 {
   display: none;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    padding: 0 20px 12px;
+  }
 }
 
 <li
@@ -3911,7 +4054,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
                         </span>
                         <svg
                           aria-hidden="true"
-                          className="c22"
+                          className="c22 c23"
                           focusable="false"
                           height={8}
                           preserveAspectRatio="xMidYMid meet"
@@ -3919,7 +4062,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
                           width={8}
                         >
                           <path
-                            d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+                            d="M8 7.418l-4-4-4 4V4.59l4-4 4 4v2.828z"
                             fill="currentColor"
                           />
                         </svg>
@@ -3933,10 +4076,10 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
         </div>
       </div>
       <div
-        className="c23 c24"
+        className="c24 c25"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c25"
+          className="Typography__Span-sc-10mju41-0 c26"
         >
           description is good otherwise we don't understand
         </span>
@@ -3947,11 +4090,16 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
 `;
 
 exports[`Storyshots Molecules / ControlsListItem Controls list item select without description 1`] = `
-.c10 {
+.c0 {
+  padding-top: 8px;
   background-color: transparent;
 }
 
-.c0 {
+.c11 {
+  background-color: transparent;
+}
+
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3967,7 +4115,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select witho
   align-items: center;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3980,7 +4128,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select witho
   align-items: center;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3988,7 +4136,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select witho
   display: flex;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3998,20 +4146,20 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select witho
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: -2px;
-  margin-right: -2px;
+  margin-left: -4px;
+  margin-right: -4px;
 }
 
-.c12 > * {
-  padding-left: 2px;
-  padding-right: 2px;
+.c13 > * {
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
-.c12 > *:not(:first-child) {
+.c13 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c15 {
+.c16 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -4023,7 +4171,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select witho
   display: block;
 }
 
-.c6 {
+.c7 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -4032,29 +4180,29 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select witho
   text-transform: none;
 }
 
-.c6,
-.c6[type='button'],
-.c6[type='reset'],
-.c6[type='submit'] {
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c6::-moz-focus-inner,
-.c6[type='button']::-moz-focus-inner,
-.c6[type='reset']::-moz-focus-inner,
-.c6[type='submit']::-moz-focus-inner {
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c6:-moz-focusring,
-.c6[type='button']:-moz-focusring,
-.c6[type='reset']:-moz-focusring,
-.c6[type='submit']:-moz-focusring {
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c1 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E6E;
   margin: 0;
@@ -4063,7 +4211,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select witho
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -4072,7 +4220,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select witho
   line-height: 1.4285714285714286;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -4081,12 +4229,13 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select witho
   line-height: 1.4285714285714286;
 }
 
-.c14:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+.c15:hover {
+  -webkit-text-decoration: 'none';
+  text-decoration: 'none';
+  color: #336BFF;
 }
 
-.c11 {
+.c12 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -4095,23 +4244,35 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select witho
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 32px;
   z-index: 400;
-  border-color: red;
 }
 
-.c3 {
+.c17 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  color: #282823;
+}
+
+.c17:disabled {
+  color: #A0A09B;
+}
+
+.c4 {
   position: relative;
   display: block;
   width: 100%;
 }
 
-.c9 {
+.c10 {
   height: 100%;
   width: 100%;
 }
 
-.c7 {
+.c8 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -4125,98 +4286,102 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select witho
   color: inherit;
 }
 
-.c2 {
+.c3 {
   display: none;
 }
 
 <div
   className="c0"
 >
-  <span
-    className="Typography__Span-sc-10mju41-0 c1"
+  <div
+    className="c1"
   >
-    label
-  </span>
-  <div>
-    <select
-      aria-hidden="true"
-      className="c2"
-      disabled={false}
-      onChange={[Function]}
+    <span
+      className="Typography__Span-sc-10mju41-0 c2"
     >
-      
-      <option
-        label="first label"
-        value="first value"
-      />
-      <option
-        label="second label"
-        value="second value"
-      />
-      <option
-        label="third label"
-        value="third value"
-      />
-    </select>
-    <div
-      className="c3"
-      onBlur={[Function]}
-      onFocus={[Function]}
-      tabIndex={0}
-    >
+      label
+    </span>
+    <div>
+      <select
+        aria-hidden="true"
+        className="c3"
+        disabled={false}
+        onChange={[Function]}
+      >
+        
+        <option
+          label="first label"
+          value="first value"
+        />
+        <option
+          label="second label"
+          value="second value"
+        />
+        <option
+          label="third label"
+          value="third value"
+        />
+      </select>
       <div
         className="c4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        tabIndex={0}
       >
-        <span
-          className="Typography__Span-sc-10mju41-0 c5"
+        <div
+          className="c5"
         >
-          <button
-            aria-expanded="false"
-            aria-haspopup="listbox"
-            aria-label="label: "
-            className="c6 c7"
-            data-testid="input-select-button"
-            disabled={false}
-            form=""
-            id="control-list-item-select"
-            onClick={[Function]}
-            tabIndex={0}
-            type="button"
+          <span
+            className="Typography__Span-sc-10mju41-0 c6"
           >
-            <div
-              aria-hidden="true"
-              className="c8 c9"
+            <button
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="label: "
+              className="c7 c8"
+              data-testid="input-select-button"
+              disabled={false}
+              form=""
+              id="control-list-item-select"
+              onClick={[Function]}
+              tabIndex={0}
+              type="button"
             >
               <div
-                className="c10 c11"
+                aria-hidden="true"
+                className="c9 c10"
               >
                 <div
-                  className="c12"
+                  className="c11 c12"
                 >
-                  <span
-                    className="Typography__Span-sc-10mju41-0 c13 c14"
+                  <div
+                    className="c13"
                   >
-                    first label
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    className="c15"
-                    focusable="false"
-                    height={8}
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    width={8}
-                  >
-                    <path
-                      d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
-                      fill="currentColor"
-                    />
-                  </svg>
+                    <span
+                      className="Typography__Span-sc-10mju41-0 c14 c15"
+                    >
+                      first label
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      className="c16 c17"
+                      focusable="false"
+                      height={8}
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      width={8}
+                    >
+                      <path
+                        d="M8 7.418l-4-4-4 4V4.59l4-4 4 4v2.828z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </div>
-          </button>
-        </span>
+            </button>
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -4412,7 +4577,7 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item switch 1`] =
 }
 
 .c1 {
-  padding: 12px;
+  padding: 0 12px 12px;
 }
 
 .c2 {
@@ -4491,6 +4656,12 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item switch 1`] =
 .c17[aria-checked='true'][disabled] .c19 {
   border: 1px solid #EBEBE8;
   background-color: #FFFFFF;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    padding: 0 20px 12px;
+  }
 }
 
 <li

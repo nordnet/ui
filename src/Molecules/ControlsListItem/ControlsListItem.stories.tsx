@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { OptionItem } from '../Input/Select/Select.types';
 
 import ControlsListItem from '.';
-import { Icon, Separator } from '../..';
+import { Box, Icon, Separator } from '../..';
 
 export default {
   title: 'Molecules / ControlsListItem',
@@ -81,17 +81,19 @@ export const ControlsListItemSelectWithoutDescription = (
     setSelectedItem(val);
   };
   return (
-    <ControlsListItem.Select
-      label="label"
-      onChange={onChange}
-      options={mockedListItems}
-      selectedItem={selectedItem}
-      text="text"
-      asAddon={asAddon}
-      justifyContent={rightAligned ? 'flex-end' : undefined}
-      showCheckmark={showCheckmark}
-      listWidth={listWidth}
-    />
+    <Box pt={2}>
+      <ControlsListItem.Select
+        label="label"
+        onChange={onChange}
+        options={mockedListItems}
+        selectedItem={selectedItem}
+        text="text"
+        asAddon={asAddon}
+        justifyContent={rightAligned ? 'flex-end' : undefined}
+        showCheckmark={showCheckmark}
+        listWidth={listWidth}
+      />
+    </Box>
   );
 };
 
