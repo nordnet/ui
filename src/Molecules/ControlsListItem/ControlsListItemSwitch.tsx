@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Typography, CssGrid as Grid } from '../..';
+import { Box, Switch, Typography, CssGrid as Grid } from '../..';
 import ControlsListItem from './ControlsListItem';
 import { ControlsListItemSwitch as Props } from './ControlsListItem.types';
 
@@ -20,8 +20,10 @@ const ControlsListItemSwitch: React.FC<Props> = ({
   Icon,
   label,
   onChange,
+  addon,
   disabled,
 }) => {
+  const hasAddon = React.isValidElement(addon);
   return (
     <ControlsListItem>
       <Grid.Container {...GRID}>
@@ -51,6 +53,7 @@ const ControlsListItemSwitch: React.FC<Props> = ({
               {description}
             </Typography>
           )}
+          {hasAddon && <Box pt={2}>{addon}</Box>}
         </Grid.Item>
       </Grid.Container>
     </ControlsListItem>

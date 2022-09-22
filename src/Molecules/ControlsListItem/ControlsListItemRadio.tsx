@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, Typography, CssGrid as Grid } from '../..';
+import { Box, Input, Typography, CssGrid as Grid } from '../..';
 import ControlsListItem from './ControlsListItem';
 import { ControlsListItemRadio as Props } from './ControlsListItem.types';
 
@@ -57,7 +57,7 @@ const ControlsListItemRadio: React.FC<Props> = ({
               {description}
             </Typography>
           )}
-          {hasAddon && addon}
+          {hasAddon && <Box pt={2}>{addon}</Box>}
         </Grid.Item>
       </Grid.Container>
     </ControlsListItem>
