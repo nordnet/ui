@@ -118,6 +118,25 @@ ControlsListItemSwitch.story = {
   name: 'Controls list item switch',
 };
 
+export const ControlsListItemSwitchDisabled = () => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  return (
+    <ControlsListItem.Switch
+      checked={isChecked}
+      label="label"
+      Icon={<Icon.Account24 />}
+      description="description is good otherwise we don't understand"
+      onChange={() => setIsChecked(!isChecked)}
+      disabled
+    />
+  );
+};
+
+ControlsListItemSwitchDisabled.story = {
+  name: 'Controls list item switch disabled',
+};
+
 export const ControlsListItemRadio = () => {
   const OPTIONS = { KARAM: 'KARAM', VIKING: 'VIKING', MICHAEL: 'MICHAEL', JESPER: 'JESPER' };
 
@@ -174,6 +193,7 @@ export const ControlsListItemRadio = () => {
         Icon={<Icon.LikeFill16 />}
         description="description is good otherwise we don't understand"
         onChange={(_) => onChangeAnother(OPTIONS.JESPER)}
+        disabled
       />
     </>
   );

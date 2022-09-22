@@ -15,6 +15,7 @@ export type Props = {
   Icon?: React.ReactNode;
   text?: string;
   description?: string;
+  disabled?: boolean;
 };
 
 export type ControlsListItemSwitch = {

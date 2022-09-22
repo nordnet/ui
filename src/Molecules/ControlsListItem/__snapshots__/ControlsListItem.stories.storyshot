@@ -2965,7 +2965,7 @@ Array [
 
 .c20 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
+  color: #A0A09B;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -3128,6 +3128,7 @@ Array [
                   <input
                     checked={false}
                     className="c16"
+                    disabled={true}
                     name="JESPER"
                     onChange={[Function]}
                     type="radio"
@@ -4730,6 +4731,382 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item switch 1`] =
               <button
                 aria-checked={false}
                 className="c16 c17"
+                onClick={[Function]}
+                role="switch"
+                type="button"
+              >
+                <div
+                  className="c18"
+                >
+                  <span
+                    className="c19 c20"
+                  />
+                  <span
+                    className="c21 c22"
+                  />
+                </div>
+              </button>
+            </span>
+          </span>
+        </label>
+      </div>
+      <div
+        className="c23 c24"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c25"
+        >
+          description is good otherwise we don't understand
+        </span>
+      </div>
+    </div>
+  </label>
+</li>
+`;
+
+exports[`Storyshots Molecules / ControlsListItem Controls list item switch disabled 1`] = `
+.c3 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "icon label button" ". description description";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  row-gap: 4px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 4px 1fr;
+  -ms-grid-columns: auto 8px 1fr 8px 1fr;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: start;
+  -ms-grid-column-align: start;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: end;
+  -ms-grid-column-align: end;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.c23 {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.c5 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: icon;
+}
+
+.c7 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: label;
+}
+
+.c10 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: button;
+}
+
+.c24 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: description;
+}
+
+.c12 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c12 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c12 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c15 {
+  box-sizing: border-box;
+}
+
+.c13 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c6 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c16 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c16,
+.c16[type='button'],
+.c16[type='reset'],
+.c16[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c16::-moz-focus-inner,
+.c16[type='button']::-moz-focus-inner,
+.c16[type='reset']::-moz-focus-inner,
+.c16[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c16:-moz-focusring,
+.c16[type='button']:-moz-focusring,
+.c16[type='reset']:-moz-focusring,
+.c16[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c0 {
+  display: block;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c25 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E6E;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  padding: 0 12px 12px;
+}
+
+.c2 {
+  cursor: inherit;
+  width: 100%;
+}
+
+.c11 {
+  display: inline-block;
+}
+
+.c20 {
+  background: #FFFFFF;
+  display: block;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: 0px;
+  border: 1px solid #BDBDBD;
+  margin-top: -4px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.05);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
+  -webkit-transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
+  transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
+}
+
+.c22 {
+  display: block;
+  height: 16px;
+  width: 40px;
+  margin: 4px 0;
+  background-color: #E0E0E0;
+  border-radius: 8px;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.c18 {
+  position: relative;
+}
+
+.c17 {
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+}
+
+.c17[aria-checked='true'] .c21 {
+  background-color: #336BFF;
+}
+
+.c17[aria-checked='true'] .c19 {
+  -webkit-transform: translate( 16px );
+  -ms-transform: translate( 16px );
+  transform: translate( 16px );
+}
+
+.c17[disabled] .c21,
+.c17[aria-readonly] .c21 {
+  background-color: #E0E0E0;
+}
+
+.c17[disabled] .c19,
+.c17[aria-readonly] .c19 {
+  border: 1px solid #EBEBE8;
+  background-color: #EEEEEE;
+}
+
+.c17[aria-checked='true'][disabled] .c21 {
+  background-color: #D6E1FF;
+}
+
+.c17[aria-checked='true'][disabled] .c19 {
+  border: 1px solid #EBEBE8;
+  background-color: #FFFFFF;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    padding: 0 20px 12px;
+  }
+}
+
+<li
+  className="c0 c1"
+>
+  <label
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4 c5"
+      >
+        <svg
+          aria-hidden="true"
+          className="c6"
+          focusable="false"
+          height={24}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={24}
+        >
+          <path
+            d="M19 13v2h-2v-2h2z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M4 1a3 3 0 00-3 3v16a3 3 0 003 3h19V5h-4V1H4zm0 6c-.35 0-.687-.06-1-.17V20a1 1 0 001 1h17V7H4zM3 4a1 1 0 001 1h13V3H4a1 1 0 00-1 1z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        className="c4 c7"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c8"
+        >
+          label
+        </span>
+      </div>
+      <div
+        className="c9 c10"
+      >
+        <label
+          className="c11"
+        >
+          <span
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="Typography__Span-sc-10mju41-0 c14"
+              >
+                label
+              </span>
+            </div>
+            <span
+              className="c15"
+            >
+              <button
+                aria-checked={false}
+                className="c16 c17"
+                disabled={true}
                 onClick={[Function]}
                 role="switch"
                 type="button"

@@ -20,6 +20,7 @@ const ControlsListItemSwitch: React.FC<Props> = ({
   Icon,
   label,
   onChange,
+  disabled,
 }) => {
   return (
     <ControlsListItem>
@@ -35,7 +36,13 @@ const ControlsListItemSwitch: React.FC<Props> = ({
         </Grid.Item>
 
         <Grid.Item area="button" justify="end" align="center">
-          <Switch label={label} hiddenLabel onClick={(_) => onChange()} checked={checked} />
+          <Switch
+            label={label}
+            hiddenLabel
+            onClick={(_) => onChange()}
+            checked={checked}
+            disabled={disabled}
+          />
         </Grid.Item>
 
         <Grid.Item area="description">

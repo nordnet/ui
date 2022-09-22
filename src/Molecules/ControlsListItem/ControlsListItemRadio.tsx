@@ -23,6 +23,7 @@ const ControlsListItemRadio: React.FC<Props> = ({
   onChange,
   value,
   addon,
+  disabled,
 }) => {
   const hasAddon = React.isValidElement(addon);
   return (
@@ -46,6 +47,7 @@ const ControlsListItemRadio: React.FC<Props> = ({
             checked={checked}
             onChange={onChange}
             hideLabel
+            disabled={disabled}
           />
         </Grid.Item>
 
