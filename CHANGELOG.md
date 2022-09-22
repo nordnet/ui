@@ -1,3 +1,10 @@
+## [10.47.1](https://github.com/nordnet/ui/compare/v10.47.0...v10.47.1) (2022-09-22)
+
+
+### Bug Fixes
+
+* adding animation and adjust paddings ([73a6ba4](https://github.com/nordnet/ui/commit/73a6ba4))
+
 # [10.47.0](https://github.com/nordnet/ui/compare/v10.46.0...v10.47.0) (2022-09-21)
 
 
