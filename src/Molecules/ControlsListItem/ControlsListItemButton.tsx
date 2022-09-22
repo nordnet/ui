@@ -6,7 +6,7 @@ import { ControlsListItemButton as Props } from './ControlsListItem.types';
 
 const StyledButton = styled(Button)`
   &:hover {
-    border-bottom: 1px solid ${(p) => p.theme.color.cta};
+    color: ${(p) => p.theme.color.buttonHoverSecondary};
   }
 `;
 
