@@ -1,3 +1,10 @@
+# [10.48.0](https://github.com/nordnet/ui/compare/v10.47.2...v10.48.0) (2022-10-04)
+
+
+### Features
+
+* prop for flex-grow for page header card ([75a0bf5](https://github.com/nordnet/ui/commit/75a0bf5))
+
 ## [10.47.2](https://github.com/nordnet/ui/compare/v10.47.1...v10.47.2) (2022-09-22)
 
 
