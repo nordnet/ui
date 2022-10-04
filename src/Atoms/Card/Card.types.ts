@@ -10,5 +10,6 @@ export type Props = {
   children: React.ReactNode;
   className?: string;
   barColor?: ColorFn;
+  grow?: number;
   ref?: React.Ref<HTMLDivElement>;
 };
