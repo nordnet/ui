@@ -3,7 +3,7 @@ import { Box, Card, Flexbox, Media, PageWrapper, Separator, Typography } from '.
 import { PageHeaderCardComponent } from './PageHeaderCard.types';
 import { isElement } from '../../common/utils';
 
-export const PageHeaderCard: PageHeaderCardComponent = ({ title, className, children }) => {
+export const PageHeaderCard: PageHeaderCardComponent = ({ title, className, children, grow }) => {
   const pageHeaderTitle = () => {
     if (isElement(title)) {
       return title;
@@ -16,7 +16,7 @@ export const PageHeaderCard: PageHeaderCardComponent = ({ title, className, chil
   };
 
   return (
-    <Card className={className}>
+    <Card className={className} grow={grow}>
       <PageWrapper>
         <Flexbox
           container

@@ -32,12 +32,13 @@ const barStyles = css<Props>`
 const StyledCard = styled.div<Props>`
   background: ${({ theme }) => theme.color.card};
   box-shadow: 0 2px 2px 0 ${({ theme }) => theme.color.shadowCard};
-  ${(p) => (p.barColor ? barStyles : ``)}
+  ${(p) => (p.barColor ? barStyles : ``)};
+  ${(p) => p.grow && `flex-grow: ${p.grow}`};
 `;
 
 export const Card: React.FC<Props> = React.forwardRef<HTMLDivElement, Props>(
-  ({ as, barColor, children, className }, ref) => (
-    <StyledCard className={className} as={as} barColor={barColor} ref={ref}>
+  ({ as, barColor, children, className, grow }, ref) => (
+    <StyledCard className={className} as={as} barColor={barColor} ref={ref} grow={grow}>
       {children}
     </StyledCard>
   ),
