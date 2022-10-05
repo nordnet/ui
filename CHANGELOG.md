@@ -1,3 +1,10 @@
+## [10.48.2](https://github.com/nordnet/ui/compare/v10.48.1...v10.48.2) (2022-10-05)
+
+
+### Bug Fixes
+
+* add class specificity ([9b2336d](https://github.com/nordnet/ui/commit/9b2336d))
+
 ## [10.48.1](https://github.com/nordnet/ui/compare/v10.48.0...v10.48.1) (2022-10-05)
 
 
