@@ -1,3 +1,10 @@
+## [10.48.1](https://github.com/nordnet/ui/compare/v10.48.0...v10.48.1) (2022-10-05)
+
+
+### Bug Fixes
+
+* check if null ([561d426](https://github.com/nordnet/ui/commit/561d426))
+
 # [10.48.0](https://github.com/nordnet/ui/compare/v10.47.2...v10.48.0) (2022-10-04)
 
 
