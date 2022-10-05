@@ -34,7 +34,9 @@ const StyledCard = styled.div<Props>`
   background: ${({ theme }) => theme.color.card};
   box-shadow: 0 2px 2px 0 ${({ theme }) => theme.color.shadowCard};
   ${(p) => (p.barColor ? barStyles : ``)};
-  ${(p) => !R.isNil(p.grow) && `flex-grow: ${p.grow}`};
+  && {
+    ${(p) => !R.isNil(p.grow) && `flex-grow: ${p.grow}`};
+  }
 `;
 
 export const Card: React.FC<Props> = React.forwardRef<HTMLDivElement, Props>(
