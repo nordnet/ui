@@ -61,6 +61,7 @@ export const PromotionBanner: PromotionBannerComponent = ({
   mobileBadgeContent,
   onClose,
   scope = 'module',
+  justifyContent = "center",
   title,
 }) => {
   const isDesktop = useMedia((t) => t.media.greaterThan(t.breakpoints.sm));
@@ -87,12 +88,12 @@ export const PromotionBanner: PromotionBannerComponent = ({
             item
             direction="row"
             alignItems="center"
-            justifyContent="center"
+            justifyContent={justifyContent}
             gutter={3}
             width="100%"
             sm={{ gutter: 5 }}
             md={{ gutter: 5 }}
-            lg={{ gutter: 5, justifyContent: 'center', width: '772px' }}
+            lg={{ gutter: 5, justifyContent, width: '772px' }}
             xl={{ width: '772px' }}
           >
             {mobileBadgeContent && badgeContent && (
