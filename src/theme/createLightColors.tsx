@@ -332,6 +332,11 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     textLight: rawColor.white, // FIXME: to be removed later
 
     technicalAnalysisPlotBands: rawColor.gray200,
+    technicalAnalysisPrimaryLine: rawColor.blue500,
+    technicalAnalysisSecondaryLine: rawColor.pink600,
+    technicalAnalysisPrimaryBar: rawColor.blue300,
+    technicalAnalysisSecondaryBar: rawColor.pink300,
+    technicalAnalysisSingleLine: rawColor.black,
 
     timelineActive: rawColor.cta,
     timelineFailure: rawColor.red500,
