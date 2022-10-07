@@ -1,3 +1,10 @@
+## [10.48.3](https://github.com/nordnet/ui/compare/v10.48.2...v10.48.3) (2022-10-07)
+
+
+### Bug Fixes
+
+* add some ta colors ([528cad4](https://github.com/nordnet/ui/commit/528cad4))
+
 ## [10.48.2](https://github.com/nordnet/ui/compare/v10.48.1...v10.48.2) (2022-10-05)
 
 
