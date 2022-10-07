@@ -719,6 +719,16 @@ export type ThemeColors = {
   periodScrollButtonIcon: string;
   /** gray200 */
   technicalAnalysisPlotBands: string;
+  /** blue500 */
+  technicalAnalysisPrimaryLine: string;
+  /** pink600 */
+  technicalAnalysisSecondaryLine: string;
+  /** blue300 */
+  technicalAnalysisPrimaryBar: string;
+  /** pink300 */
+  technicalAnalysisSecondaryBar: string;
+  /** black */
+  technicalAnalysisSingleLine: string;
   /** Join Shareville Illustration */
   joinSharevilleIllustration: string;
   /** Join Shareville Badge */
