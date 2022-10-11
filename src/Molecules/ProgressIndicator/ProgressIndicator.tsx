@@ -1,4 +1,5 @@
 import React, { FC, ReactElement } from 'react';
+import { isArray } from '../../common/utils';
 import { Box, Flexbox, Typography, Icon } from '../..';
 import { StyledButton, HiddenText, CompletionBar } from './ProgressIndicator.styled';
 import { Props } from './ProgressIndicator.types';
@@ -15,8 +16,7 @@ const ProgressIndicator: FC<Props> = ({
   infoText = 'Info',
   infoIcon = 'info',
 }): ReactElement => {
-  const isFirstStep = currentStep === 1;
-
+  const isFirstStep = isArray(currentStep) ? [...currentStep][0] === 1 : currentStep === 1;
   const noButtons = !closeCallback && !backCallback && !infoCallback;
 
   const handleBackAndCloseClick = () => {
@@ -51,7 +51,32 @@ const ProgressIndicator: FC<Props> = ({
             </Typography>
           </HiddenText>
         </StyledButton>
-        <CompletionBar completion={currentStep / numberOfSteps} noButtons={noButtons} />
+        <Flexbox
+          item
+          container
+          justifyContent="space-between"
+          gap={2}
+          alignItems="center"
+          width="100%"
+        >
+          {isArray(numberOfSteps) ? (
+            [...numberOfSteps].map((steps, index) => {
+              return (
+                <CompletionBar
+                  key={`${numberOfSteps}${steps}`}
+                  completion={currentStep[index] / Number(steps)}
+                  noButtons={noButtons}
+                />
+              );
+            })
+          ) : (
+            <CompletionBar
+              completion={Number(currentStep) / Number(numberOfSteps)}
+              noButtons={noButtons}
+            />
+          )}
+        </Flexbox>
+
         <StyledButton
           onClick={infoCallback}
           visible={!infoCallback}
