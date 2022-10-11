@@ -1,3 +1,12 @@
+# [10.49.0](https://github.com/nordnet/ui/compare/v10.48.3...v10.49.0) (2022-10-11)
+
+
+### Features
+
+* 🎸 Add support for multiple steps in the ProgressIndicator ([0400797](https://github.com/nordnet/ui/commit/0400797))
+* 🎸 fix: Property 'map' does not exist on type array number ([faca96a](https://github.com/nordnet/ui/commit/faca96a))
+* 🎸 update snapshots ([4c63df9](https://github.com/nordnet/ui/commit/4c63df9))
+
 ## [10.48.3](https://github.com/nordnet/ui/compare/v10.48.2...v10.48.3) (2022-10-07)
 
 
