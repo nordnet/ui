@@ -16,7 +16,6 @@ const ProgressIndicator: FC<Props> = ({
   infoText = 'Info',
   infoIcon = 'info',
 }): ReactElement => {
-  const isStepsAnArray = isArray(numberOfSteps);
   const isFirstStep = isArray(currentStep) ? [...currentStep][0] === 1 : currentStep === 1;
   const noButtons = !closeCallback && !backCallback && !infoCallback;
 
@@ -60,8 +59,8 @@ const ProgressIndicator: FC<Props> = ({
           alignItems="center"
           width="100%"
         >
-          {isStepsAnArray ? (
-            numberOfSteps.map((steps, index) => {
+          {isArray(numberOfSteps) ? (
+            [...numberOfSteps].map((steps, index) => {
               return (
                 <CompletionBar
                   key={`${numberOfSteps}${steps}`}
