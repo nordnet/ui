@@ -1,6 +1,6 @@
 export type Props = {
-  numberOfSteps: number;
-  currentStep: number;
+  numberOfSteps: number | number[];
+  currentStep: number | number[];
   title?: string;
   closeCallback?: () => void;
   backCallback?: () => void;

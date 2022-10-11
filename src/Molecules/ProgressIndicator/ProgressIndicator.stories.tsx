@@ -104,3 +104,41 @@ export const NoTitle = () => {
     </>
   );
 };
+
+export const WithTwoCompletionBar = () => {
+  const [experienceStep, setExperienceStep] = useState(0);
+  const [knowledgeStep, setKnowledgeStep] = useState(0);
+
+  return (
+    <>
+      <ProgressIndicator
+        infoCallback={() => alert('info callback')}
+        closeCallback={() => alert('close callback')}
+        backCallback={() => alert('back callback')}
+        title="Progress flow title"
+        numberOfSteps={[3, 5]}
+        currentStep={[experienceStep, knowledgeStep]}
+      />
+
+      <Flexbox container direction="column">
+        <Flexbox item>First Steps</Flexbox>
+        <Flexbox item container justifyContent="flex-start">
+          <Button onClick={() => setExperienceStep(1)}>1</Button>
+          <Button onClick={() => setExperienceStep(2)}>2</Button>
+          <Button onClick={() => setExperienceStep(3)}>3</Button>
+        </Flexbox>
+      </Flexbox>
+
+      <Flexbox container direction="column">
+        <Flexbox item>Second Steps</Flexbox>
+        <Flexbox item container justifyContent="flex-start">
+          <Button onClick={() => setKnowledgeStep(1)}>1</Button>
+          <Button onClick={() => setKnowledgeStep(2)}>2</Button>
+          <Button onClick={() => setKnowledgeStep(3)}>3</Button>
+          <Button onClick={() => setKnowledgeStep(4)}>4</Button>
+          <Button onClick={() => setKnowledgeStep(5)}>5</Button>
+        </Flexbox>
+      </Flexbox>
+    </>
+  );
+};
