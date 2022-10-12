@@ -61,6 +61,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     bulbBackground: rawColor.brandGreen,
     bulbForeground: rawColor.gray0,
 
+    bulletLightBlue: rawColor.blue300,
+
     buttonSecondaryBackground: rawColor.white,
     buttonTextLight: rawColor.gray0,
 
