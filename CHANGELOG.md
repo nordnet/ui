@@ -1,3 +1,10 @@
+## [10.49.1](https://github.com/nordnet/ui/compare/v10.49.0...v10.49.1) (2022-10-12)
+
+
+### Bug Fixes
+
+* 🐛 remove gap if empty FlexBox to fix printing in chrome ([7ea3990](https://github.com/nordnet/ui/commit/7ea3990))
+
 # [10.49.0](https://github.com/nordnet/ui/compare/v10.48.3...v10.49.0) (2022-10-11)
 
 
