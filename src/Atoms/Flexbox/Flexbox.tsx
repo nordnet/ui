@@ -78,8 +78,11 @@ const getGapStyles = (theme: Theme, gap: Props['gap']) => {
   } else {
     gapStyle = `${theme.spacing.unit(gap.row)}px ${theme.spacing.unit(gap.column)}px;`;
   }
-
-  return `gap: ${gapStyle};`;
+  /*
+    :not(:empty) to fix issue with printing in chrome
+    https://bugs.chromium.org/p/chromium/issues/detail?id=1161709
+  */
+  return `:not(:empty) { gap: ${gapStyle}; }`;
 };
 
 const getContainerStyles = (p: Props & { theme: Theme }) => `
