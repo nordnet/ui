@@ -1,3 +1,10 @@
+# [10.50.0](https://github.com/nordnet/ui/compare/v10.49.1...v10.50.0) (2022-10-12)
+
+
+### Features
+
+* 🎸 bugfix for progress indicator unique keys ([3e944ff](https://github.com/nordnet/ui/commit/3e944ff))
+
 ## [10.49.1](https://github.com/nordnet/ui/compare/v10.49.0...v10.49.1) (2022-10-12)
 
 
