@@ -63,7 +63,7 @@ const ProgressIndicator: FC<Props> = ({
             [...numberOfSteps].map((steps, index) => {
               return (
                 <CompletionBar
-                  key={`${numberOfSteps}${steps}`}
+                  key={`completion_bar_${index + 1}`}
                   completion={currentStep[index] / Number(steps)}
                   noButtons={noButtons}
                 />
