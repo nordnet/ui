@@ -1,3 +1,10 @@
+# [10.51.0](https://github.com/nordnet/ui/compare/v10.50.0...v10.51.0) (2022-10-12)
+
+
+### Features
+
+* 🎸 add bullet color ([8c9e859](https://github.com/nordnet/ui/commit/8c9e859))
+
 # [10.50.0](https://github.com/nordnet/ui/compare/v10.49.1...v10.50.0) (2022-10-12)
 
 
