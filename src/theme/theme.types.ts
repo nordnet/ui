@@ -268,6 +268,8 @@ export type ThemeColors = {
   bulbBackground: string;
   /** gray0 */
   bulbForeground: string;
+  /** blue300 */
+  bulletLightBlue: string;
   /** white */
   buttonSecondaryBackground: string;
   /** white */
