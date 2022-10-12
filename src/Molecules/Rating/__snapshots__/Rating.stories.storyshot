@@ -7,6 +7,9 @@ exports[`Storyshots Molecules / Rating Rating 0 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c0:not(:empty) {
   gap: 2px;
 }
 
@@ -143,6 +146,9 @@ exports[`Storyshots Molecules / Rating Rating 1 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c0:not(:empty) {
   gap: 2px;
 }
 
@@ -291,6 +297,9 @@ exports[`Storyshots Molecules / Rating Rating 5 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c0:not(:empty) {
   gap: 2px;
 }
 
@@ -427,6 +436,9 @@ exports[`Storyshots Molecules / Rating Rating Not Defined 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c0:not(:empty) {
   gap: 2px;
 }
 
@@ -563,6 +575,9 @@ exports[`Storyshots Molecules / Rating Rating With Size 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c0:not(:empty) {
   gap: 2px;
 }
 
@@ -711,6 +726,9 @@ exports[`Storyshots Molecules / Rating Rating With String Size 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c0:not(:empty) {
   gap: 2px;
 }
 
