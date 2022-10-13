@@ -10,7 +10,7 @@ const CountryCodeLabel: React.FC<Props> = ({
 }) => (
   <Flexbox container alignItems="center" gutter={2}>
     <Flexbox item>
-      <Flag country={countryCode.toLowerCase()} height={3} />
+      <Flag country={countryCode.toLowerCase()} size="s" />
     </Flexbox>
     {!noPrefix && (
       <Flexbox item>
