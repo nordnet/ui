@@ -1883,7 +1883,7 @@ Array [
       viewBox="0 0 24 24"
     >
       <polygon
-        points="0 21 24 21 12 3"
+        points="0 24 24 24 12 4"
       />
     </svg>
   </div>,
@@ -8295,7 +8295,7 @@ exports[`Storyshots Atoms / OldIcon Available old icons 1`] = `
           viewBox="0 0 24 24"
         >
           <polygon
-            points="0 21 24 21 12 3"
+            points="0 24 24 24 12 4"
           />
         </svg>
       </div>

@@ -5,7 +5,7 @@ import { BaseProps } from '../IconBase.types';
 export const DirectionUp = (props: BaseProps) => {
   return (
     <IconBase {...props}>
-      <polygon points="0 21 24 21 12 3" />
+      <polygon points="0 24 24 24 12 4" />
     </IconBase>
   );
 };
