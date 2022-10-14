@@ -1,5 +1,4 @@
 import au from './au';
-import br from './br';
 import ca from './ca';
 import cn from './cn';
 import de from './de';
@@ -9,7 +8,7 @@ import fi from './fi';
 import fr from './fr';
 import gb from './gb';
 import hk from './hk';
-import india from './in';
+import india from './india';
 import jp from './jp';
 import no from './no';
 import ru from './ru';
@@ -19,7 +18,6 @@ import za from './za';
 
 export default {
   au,
-  br,
   ca,
   cn,
   de,
