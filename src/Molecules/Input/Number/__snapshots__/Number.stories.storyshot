@@ -562,7 +562,7 @@ exports[`Storyshots Molecules / Input / Number Default with Auto Complete off 1`
       className="c5 c6"
     >
       <input
-        autocomplete="off"
+        autoComplete="off"
         className="c7 c8"
         id="insert-unique-id"
         inputMode="decimal"
