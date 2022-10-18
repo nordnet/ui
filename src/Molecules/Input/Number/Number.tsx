@@ -366,7 +366,7 @@ const NumberInput: NumberComponent & {
               variant,
             }}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
-            {...(autoComplete ? { autocomplete: autoComplete } : {})}
+            {...(autoComplete ? { autoComplete } : {})}
           />
           {showSteppers && (
             <>
