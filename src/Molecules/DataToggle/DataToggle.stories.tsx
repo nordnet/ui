@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
-
 import { Box, Flexbox, Typography } from '../..';
-import { SwitchToggle } from '.';
+import DataToggle from '.';
 
 export default {
-  title: 'DEPRECATED / Molecules / SwitchToggle (use DataToggle instead)',
+  title: 'Molecules / DataToggle ',
   parameters: {
-    component: [SwitchToggle],
+    component: [DataToggle],
   },
 };
 
-export const defaultSwitchToggle = () => {
-  const DefaultSwitchToggle = () => {
+export const defaultDataToggle = () => {
+  const DefaultDataToggle = () => {
     const toggleOptions = {
       left: 'SEK',
       right: '%',
@@ -24,7 +23,7 @@ export const defaultSwitchToggle = () => {
       <Box py={5} backgroundColor={(t) => t.color.bubbleBackground}>
         <Flexbox container gutter={2}>
           <Flexbox container item>
-            <SwitchToggle
+            <DataToggle
               checked={toggled}
               label="finance toggle"
               onClick={() => setToggled((prevState) => !prevState)}
@@ -43,15 +42,15 @@ export const defaultSwitchToggle = () => {
     );
   };
 
-  return <DefaultSwitchToggle />;
+  return <DefaultDataToggle />;
 };
 
-defaultSwitchToggle.story = {
-  name: 'Default  Switch Toggle',
+defaultDataToggle.story = {
+  name: 'Default  Data Toggle',
 };
 
-export const augmentedWidthSwitchToggle = () => {
-  const AugmentedWidthSwitchToggle = () => {
+export const augmentedWidthDataToggle = () => {
+  const AugmentedWidthDataToggle = () => {
     const toggleOptions = {
       left: 'Swedish',
       right: 'Finnish',
@@ -64,7 +63,7 @@ export const augmentedWidthSwitchToggle = () => {
       <Box py={5} backgroundColor={(t) => t.color.bubbleBackground}>
         <Flexbox container gutter={2}>
           <Flexbox container item>
-            <SwitchToggle
+            <DataToggle
               checked={toggled}
               label="language toggle"
               onClick={() => setToggled((prevState) => !prevState)}
@@ -84,9 +83,9 @@ export const augmentedWidthSwitchToggle = () => {
     );
   };
 
-  return <AugmentedWidthSwitchToggle />;
+  return <AugmentedWidthDataToggle />;
 };
 
-augmentedWidthSwitchToggle.story = {
-  name: 'Augmented Width Switch Toggle',
+augmentedWidthDataToggle.story = {
+  name: 'Augmented Width Data Toggle',
 };

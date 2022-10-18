@@ -38,6 +38,7 @@ import CardWithTitle from './Molecules/CardWithTitle';
 import CoachMarks from './Molecules/CoachMarks';
 import CollapsibleCard from './Molecules/CollapsibleCard';
 import ControlsListItem from './Molecules/ControlsListItem';
+import DataToggle from './Molecules/DataToggle';
 import { DatePicker, DateRangePicker, DoubleDatePicker } from './Molecules/DatePicker';
 import Drawer from './Molecules/Drawer';
 import FeedbackBanner from './Molecules/FeedbackBanner';
@@ -141,6 +142,7 @@ export {
   CollapsibleCard,
   ControlsListItem,
   CssGrid,
+  DataToggle,
   DatePicker,
   DateRangePicker,
   DoubleDatePicker,
@@ -197,7 +199,7 @@ export {
   Spinner,
   StatusModal,
   /** @deprecated use Toggle instead */ Switch,
-  SwitchToggle,
+  /** @deprecated use DataToggle instead */ SwitchToggle,
   TabTitle,
   Table,
   Tabs,
