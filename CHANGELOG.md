@@ -1,3 +1,10 @@
+# [11.1.0](https://github.com/nordnet/ui/compare/v11.0.0...v11.1.0) (2022-10-18)
+
+
+### Features
+
+* **tp-19697:** fix autocomplete misspelling. authors: Sandra Aakervik, Michal Maciej Dzienis ([f273bdc](https://github.com/nordnet/ui/commit/f273bdc))
+
 # [11.0.0](https://github.com/nordnet/ui/compare/v10.51.0...v11.0.0) (2022-10-14)
 
 
