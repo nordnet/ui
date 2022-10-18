@@ -9,9 +9,9 @@ const TOGGLE_HEIGHT = 7 - 1; // 28px - 2px top and bottom paddings
 const TRACK_HEIGHT = TOGGLE_HEIGHT;
 const TRACK_WIDTH = 22.5 - 1; // 90px - 2px left and right paddings
 const TRACK_PADDING = 0.5;
-const TRACK_TO_KNOB_RATIO = 1.775; // decided to calculate Knob width based on Track width
+const TRACK_TO_KNOB_RATIO = 2; // How many times is track wider than the knob
 const KNOB_HEIGHT = TOGGLE_HEIGHT;
-const KNOB_WIDTH = TRACK_WIDTH / TRACK_TO_KNOB_RATIO; // 10 if no width is provided
+const KNOB_WIDTH = TRACK_WIDTH / TRACK_TO_KNOB_RATIO;
 
 const Label = styled.label`
   display: inline-block;

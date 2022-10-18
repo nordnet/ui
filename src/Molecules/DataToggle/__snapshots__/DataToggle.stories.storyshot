@@ -186,7 +186,7 @@ exports[`Storyshots Molecules / DataToggle  Augmented Width Data Toggle 1`] = `
 
 .c15 {
   height: 24px;
-  width: 108.16901408450705px;
+  width: 96px;
   border-radius: 24px;
   box-sizing: border-box;
   -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
@@ -226,9 +226,9 @@ exports[`Storyshots Molecules / DataToggle  Augmented Width Data Toggle 1`] = `
 }
 
 .c9[aria-checked='true'] .c14 {
-  -webkit-transform: translate( 83.83098591549295px );
-  -ms-transform: translate( 83.83098591549295px );
-  transform: translate( 83.83098591549295px );
+  -webkit-transform: translate( 96px );
+  -ms-transform: translate( 96px );
+  transform: translate( 96px );
 }
 
 .c9[disabled] .c11,
@@ -284,7 +284,7 @@ exports[`Storyshots Molecules / DataToggle  Augmented Width Data Toggle 1`] = `
             <button
               aria-checked={false}
               className="c8 c9"
-              knobwidth={27.042253521126764}
+              knobwidth={24}
               onClick={[Function]}
               role="switch"
               type="button"
@@ -299,7 +299,7 @@ exports[`Storyshots Molecules / DataToggle  Augmented Width Data Toggle 1`] = `
                 >
                   <div
                     className="c13 c14 c15"
-                    knobwidth={27.042253521126764}
+                    knobwidth={24}
                   />
                   <div
                     className="c16 c17"
@@ -526,7 +526,7 @@ exports[`Storyshots Molecules / DataToggle  Default  Data Toggle 1`] = `
 
 .c15 {
   height: 24px;
-  width: 48.45070422535211px;
+  width: 43px;
   border-radius: 24px;
   box-sizing: border-box;
   -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
@@ -566,9 +566,9 @@ exports[`Storyshots Molecules / DataToggle  Default  Data Toggle 1`] = `
 }
 
 .c9[aria-checked='true'] .c14 {
-  -webkit-transform: translate( 37.54929577464789px );
-  -ms-transform: translate( 37.54929577464789px );
-  transform: translate( 37.54929577464789px );
+  -webkit-transform: translate( 43px );
+  -ms-transform: translate( 43px );
+  transform: translate( 43px );
 }
 
 .c9[disabled] .c11,
@@ -624,7 +624,7 @@ exports[`Storyshots Molecules / DataToggle  Default  Data Toggle 1`] = `
             <button
               aria-checked={false}
               className="c8 c9"
-              knobwidth={12.112676056338028}
+              knobwidth={10.75}
               onClick={[Function]}
               role="switch"
               type="button"
@@ -637,7 +637,7 @@ exports[`Storyshots Molecules / DataToggle  Default  Data Toggle 1`] = `
                 >
                   <div
                     className="c13 c14 c15"
-                    knobwidth={12.112676056338028}
+                    knobwidth={10.75}
                   />
                   <div
                     className="c16 c17"
