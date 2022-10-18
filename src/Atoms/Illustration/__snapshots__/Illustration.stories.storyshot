@@ -63,6 +63,73 @@ Array [
       aria-hidden="true"
       className="c0"
       focusable="false"
+      height={240}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={375}
+    >
+      <g
+        fill="none"
+      >
+        <path
+          clipRule="evenodd"
+          d="M187.5 56C97.63 56 24.7 129.3 24 220h327c-.7-90.7-73.63-164-163.5-164Z"
+          fill="#F5F5F5"
+          fillRule="evenodd"
+        />
+        <path
+          clipRule="evenodd"
+          d="M135 195h-10v-6h42v6h-6v16.36l-13-4.97-13 4.97V195Zm6 0v7.64l7-2.67 7 2.67V195h-14Z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+        <path
+          d="M109 195h12v-6h-12v6ZM263 108v-6h-6v6h6ZM276.1 106.9l-3 5.2-5.2-3 3-5.2 5.2 3ZM252.1 109.1l-3-5.2-5.2 3 3 5.2 5.2-3Z"
+          fill="currentColor"
+        />
+        <path
+          clipRule="evenodd"
+          d="M201 79h26v26h-26V79Zm6 6v14h14V85h-14ZM227 123h-26v26h26v-26Zm-20 20v-14h14v14h-14ZM201 167h26v26h-26v-26Zm6 6v14h14v-14h-14Z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+        <path
+          clipRule="evenodd"
+          d="M176 52h100.24L302 77.76v66.03l42.75 42.75-19.8 19.8L302 183.38V220H72a21 21 0 1 1 0-42h17.34A31.96 31.96 0 0 1 76 152v-24h64v8.12a17 17 0 0 1-2 33.88h-3.54a32.18 32.18 0 0 1-7.8 8H176V52Zm-36 100v-9.82a11 11 0 0 1-2 21.82h-.33c1.5-3.7 2.33-7.76 2.33-12Zm-68 32h104v30H72a15 15 0 0 1 0-30Zm62-32a26 26 0 0 1-52 0v-3h52v3Zm0-9H82v-9h52v9Zm48 35h4v6h-4v30h114v-36.62l-37.47-37.46-4.5-24.3 24.3 4.5L296 137.79V82h-24V58h-90v120Zm96-115.76L291.76 76H278V62.24Zm-16.1 62.9 2.2 11.85.63.64 11.31-11.32-.63-.63-11.85-2.2-1.66 1.66Zm7.07 16.73 11.31-11.31 46.8 46.79-11.32 11.31-46.79-46.79ZM320 192.9l11.32-11.31 4.95 4.95-11.32 11.31-4.95-4.95Z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+        <path
+          d="M110.94 60c-10.11 0-18.63 8.06-16.67 17.82 1.02 5.06 4.56 7.66 8.24 8.58 3.46.87 7.25.33 9.76-.92l-2.66-5.37c-1.23.6-3.56 1-5.64.47a4.74 4.74 0 0 1-3.81-3.95C99.13 71.55 103.58 66 110.94 66c5.84 0 12.6 6.06 10.76 17.56-.32 2.05-1.45 3.77-3.28 5.37-1.87 1.63-4.33 2.98-7.02 4.26-.92.45-1.93.9-2.94 1.36-1.71.77-3.43 1.54-4.81 2.28-1.16.61-2.31 1.31-3.27 2.14a7.12 7.12 0 0 0-2.45 7.13 6.56 6.56 0 0 0 1.62 3c1.38 1.48 3.31 2.33 4.79 2.89.63.24 1.29.46 1.88.67l.25.08.15.05c.72.25 1.32.46 1.83.69.53.23.8.4.92.48 0 .15-.03.39-.16.76-.22.63-.64 1.36-1.22 2.22l-.89 1.25-.05.08c-.29.39-.59.8-.86 1.2-.28.42-.58.9-.83 1.4a4.9 4.9 0 0 0-.54 2.13h6a1.62 1.62 0 0 1-.08.52l.02-.02c.06-.13.18-.33.4-.67l.77-1.08.03-.05c.3-.42.66-.9 1-1.4a16.3 16.3 0 0 0 1.9-3.56c.48-1.35.77-3.07.17-4.86-.77-2.28-2.93-3.36-4.2-3.9a31.95 31.95 0 0 0-2.7-1.02c-.59-.2-1.13-.38-1.66-.58-1.4-.53-2.17-.98-2.53-1.36-.13-.14-.15-.22-.16-.28-.02-.06-.05-.27.07-.72.01-.03.1-.2.46-.51.46-.4 1.16-.86 2.16-1.39 1.25-.66 2.6-1.27 4.13-1.96 1.04-.47 2.17-.97 3.38-1.55 2.81-1.33 5.87-2.97 8.38-5.16 2.55-2.22 4.66-5.12 5.27-8.95 2.26-14.2-6.26-24.5-16.69-24.5Z"
+          fill="currentColor"
+        />
+      </g>
+    </svg>
+  </div>,
+  .c0 {
+  color: #336BFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
@@ -2285,6 +2352,94 @@ Array [
       aria-hidden="true"
       className="c0"
       focusable="false"
+      height={96}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={96}
+    >
+      <path
+        d="M40.5 49.5h3v-3h-3v3ZM40.06 55.067l-2.12-2.121 2.12-2.121 2.122 2.121-2.121 2.121ZM40.06 45.182l2.122-2.121-2.121-2.122-2.122 2.122 2.122 2.121ZM28.5 50.121l-3.44 3.44-2.12-2.122L26.378 48l-3.44-3.44 2.122-2.12 3.439 3.439 3.44-3.44 2.12 2.122L30.622 48l3.44 3.44-2.122 2.12-3.439-3.439ZM28.5 29.121l-3.44 3.44-2.12-2.122L26.378 27l-3.44-3.44 2.122-2.12 3.439 3.439 3.44-3.44 2.12 2.122L30.622 27l3.44 3.44-2.122 2.12-3.439-3.439Z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M36 61.5v15H21v-15h15Zm-12 3v9h9v-9h-9Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <path
+        clipRule="evenodd"
+        d="M57.621 7.5 73.5 23.379V73.5h12v15h-75v-81h47.121Zm-15.397 78L36.599 81l9.375-7.5H70.5v-48h-15v-15h-42v75h28.724ZM58.5 12.621l9.879 9.879H58.5v-9.879Zm-12 72.458L41.401 81l5.099-4.08v8.16Zm3 .421h27v-9h-27v9Zm33 0h-3v-9h3v9Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  color: #336BFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      height={96}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={96}
+    >
+      <path
+        d="M46.5 69.006h-3v3h3v-3ZM46.94 63.44l2.12 2.12-2.12 2.122-2.122-2.121 2.121-2.122ZM46.94 73.325l-2.122 2.12 2.121 2.122 2.122-2.121-2.122-2.121ZM26.743 29.121 23.56 25.94l-2.122 2.122 5.304 5.303 8.485-8.485-2.121-2.122-6.364 6.364ZM23.56 46.94l3.183 3.181 6.364-6.364 2.12 2.122-8.484 8.485-5.304-5.303 2.122-2.122ZM26.743 71.121 23.56 67.94l-2.122 2.122 5.304 5.303 8.485-8.485-2.121-2.122-6.364 6.364Z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M57.621 7.5 73.5 23.379v19.82l6.32-6.32 10.606 10.607L73.5 64.412V88.5h-63v-81h47.121ZM70.5 67.412l-8.023 8.023-11.932 1.326 1.326-11.933L70.5 46.198V25.5h-15v-15h-42v75h57V67.412Zm-12-54.79 9.879 9.878H58.5v-9.879Zm1.93 60.022-6.49.721.722-6.49 5.768 5.769Zm2.42-1.824-6.365-6.364 19.092-19.092 6.364 6.364L62.85 70.82Zm21.212-21.213-6.364-6.364 2.122-2.121 6.364 6.364-2.122 2.121Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  color: #336BFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
@@ -2755,6 +2910,77 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
             fill="currentColor"
             fillRule="evenodd"
           />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
+        AppropriatenessTest375
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={240}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={375}
+        >
+          <g
+            fill="none"
+          >
+            <path
+              clipRule="evenodd"
+              d="M187.5 56C97.63 56 24.7 129.3 24 220h327c-.7-90.7-73.63-164-163.5-164Z"
+              fill="#F5F5F5"
+              fillRule="evenodd"
+            />
+            <path
+              clipRule="evenodd"
+              d="M135 195h-10v-6h42v6h-6v16.36l-13-4.97-13 4.97V195Zm6 0v7.64l7-2.67 7 2.67V195h-14Z"
+              fill="currentColor"
+              fillRule="evenodd"
+            />
+            <path
+              d="M109 195h12v-6h-12v6ZM263 108v-6h-6v6h6ZM276.1 106.9l-3 5.2-5.2-3 3-5.2 5.2 3ZM252.1 109.1l-3-5.2-5.2 3 3 5.2 5.2-3Z"
+              fill="currentColor"
+            />
+            <path
+              clipRule="evenodd"
+              d="M201 79h26v26h-26V79Zm6 6v14h14V85h-14ZM227 123h-26v26h26v-26Zm-20 20v-14h14v14h-14ZM201 167h26v26h-26v-26Zm6 6v14h14v-14h-14Z"
+              fill="currentColor"
+              fillRule="evenodd"
+            />
+            <path
+              clipRule="evenodd"
+              d="M176 52h100.24L302 77.76v66.03l42.75 42.75-19.8 19.8L302 183.38V220H72a21 21 0 1 1 0-42h17.34A31.96 31.96 0 0 1 76 152v-24h64v8.12a17 17 0 0 1-2 33.88h-3.54a32.18 32.18 0 0 1-7.8 8H176V52Zm-36 100v-9.82a11 11 0 0 1-2 21.82h-.33c1.5-3.7 2.33-7.76 2.33-12Zm-68 32h104v30H72a15 15 0 0 1 0-30Zm62-32a26 26 0 0 1-52 0v-3h52v3Zm0-9H82v-9h52v9Zm48 35h4v6h-4v30h114v-36.62l-37.47-37.46-4.5-24.3 24.3 4.5L296 137.79V82h-24V58h-90v120Zm96-115.76L291.76 76H278V62.24Zm-16.1 62.9 2.2 11.85.63.64 11.31-11.32-.63-.63-11.85-2.2-1.66 1.66Zm7.07 16.73 11.31-11.31 46.8 46.79-11.32 11.31-46.79-46.79ZM320 192.9l11.32-11.31 4.95 4.95-11.32 11.31-4.95-4.95Z"
+              fill="currentColor"
+              fillRule="evenodd"
+            />
+            <path
+              d="M110.94 60c-10.11 0-18.63 8.06-16.67 17.82 1.02 5.06 4.56 7.66 8.24 8.58 3.46.87 7.25.33 9.76-.92l-2.66-5.37c-1.23.6-3.56 1-5.64.47a4.74 4.74 0 0 1-3.81-3.95C99.13 71.55 103.58 66 110.94 66c5.84 0 12.6 6.06 10.76 17.56-.32 2.05-1.45 3.77-3.28 5.37-1.87 1.63-4.33 2.98-7.02 4.26-.92.45-1.93.9-2.94 1.36-1.71.77-3.43 1.54-4.81 2.28-1.16.61-2.31 1.31-3.27 2.14a7.12 7.12 0 0 0-2.45 7.13 6.56 6.56 0 0 0 1.62 3c1.38 1.48 3.31 2.33 4.79 2.89.63.24 1.29.46 1.88.67l.25.08.15.05c.72.25 1.32.46 1.83.69.53.23.8.4.92.48 0 .15-.03.39-.16.76-.22.63-.64 1.36-1.22 2.22l-.89 1.25-.05.08c-.29.39-.59.8-.86 1.2-.28.42-.58.9-.83 1.4a4.9 4.9 0 0 0-.54 2.13h6a1.62 1.62 0 0 1-.08.52l.02-.02c.06-.13.18-.33.4-.67l.77-1.08.03-.05c.3-.42.66-.9 1-1.4a16.3 16.3 0 0 0 1.9-3.56c.48-1.35.77-3.07.17-4.86-.77-2.28-2.93-3.36-4.2-3.9a31.95 31.95 0 0 0-2.7-1.02c-.59-.2-1.13-.38-1.66-.58-1.4-.53-2.17-.98-2.53-1.36-.13-.14-.15-.22-.16-.28-.02-.06-.05-.27.07-.72.01-.03.1-.2.46-.51.46-.4 1.16-.86 2.16-1.39 1.25-.66 2.6-1.27 4.13-1.96 1.04-.47 2.17-.97 3.38-1.55 2.81-1.33 5.87-2.97 8.38-5.16 2.55-2.22 4.66-5.12 5.27-8.95 2.26-14.2-6.26-24.5-16.69-24.5Z"
+              fill="currentColor"
+            />
+          </g>
         </svg>
       </div>
     </div>
@@ -5183,6 +5409,102 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       <span
         className="Typography__Span-sc-10mju41-0 c3"
       >
+        TestFail96
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={96}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={96}
+        >
+          <path
+            d="M40.5 49.5h3v-3h-3v3ZM40.06 55.067l-2.12-2.121 2.12-2.121 2.122 2.121-2.121 2.121ZM40.06 45.182l2.122-2.121-2.121-2.122-2.122 2.122 2.122 2.121ZM28.5 50.121l-3.44 3.44-2.12-2.122L26.378 48l-3.44-3.44 2.122-2.12 3.439 3.439 3.44-3.44 2.12 2.122L30.622 48l3.44 3.44-2.122 2.12-3.439-3.439ZM28.5 29.121l-3.44 3.44-2.12-2.122L26.378 27l-3.44-3.44 2.122-2.12 3.439 3.439 3.44-3.44 2.12 2.122L30.622 27l3.44 3.44-2.122 2.12-3.439-3.439Z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M36 61.5v15H21v-15h15Zm-12 3v9h9v-9h-9Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+          <path
+            clipRule="evenodd"
+            d="M57.621 7.5 73.5 23.379V73.5h12v15h-75v-81h47.121Zm-15.397 78L36.599 81l9.375-7.5H70.5v-48h-15v-15h-42v75h28.724ZM58.5 12.621l9.879 9.879H58.5v-9.879Zm-12 72.458L41.401 81l5.099-4.08v8.16Zm3 .421h27v-9h-27v9Zm33 0h-3v-9h3v9Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
+        TestSuccess96
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={96}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={96}
+        >
+          <path
+            d="M46.5 69.006h-3v3h3v-3ZM46.94 63.44l2.12 2.12-2.12 2.122-2.122-2.121 2.121-2.122ZM46.94 73.325l-2.122 2.12 2.121 2.122 2.122-2.121-2.122-2.121ZM26.743 29.121 23.56 25.94l-2.122 2.122 5.304 5.303 8.485-8.485-2.121-2.122-6.364 6.364ZM23.56 46.94l3.183 3.181 6.364-6.364 2.12 2.122-8.484 8.485-5.304-5.303 2.122-2.122ZM26.743 71.121 23.56 67.94l-2.122 2.122 5.304 5.303 8.485-8.485-2.121-2.122-6.364 6.364Z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M57.621 7.5 73.5 23.379v19.82l6.32-6.32 10.606 10.607L73.5 64.412V88.5h-63v-81h47.121ZM70.5 67.412l-8.023 8.023-11.932 1.326 1.326-11.933L70.5 46.198V25.5h-15v-15h-42v75h57V67.412Zm-12-54.79 9.879 9.878H58.5v-9.879Zm1.93 60.022-6.49.721.722-6.49 5.768 5.769Zm2.42-1.824-6.365-6.364 19.092-19.092 6.364 6.364L62.85 70.82Zm21.212-21.213-6.364-6.364 2.122-2.121 6.364 6.364-2.122 2.121Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
         UrgentMail64
       </span>
     </div>
@@ -5753,7 +6075,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
   padding-top: 0;
 }
 
-.c5 {
+.c6 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -5765,7 +6087,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
   display: block;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -5774,7 +6096,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5784,37 +6106,41 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
   flex-direction: column;
 }
 
-.c3 {
+.c4 {
   margin-bottom: 4px;
 }
 
-.c2 {
+.c1 {
+  background-color: #FFFFFF;
+}
+
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   margin: 12px 0;
-  width: 260px;
+  width: 390px;
 }
 
 <div
-  className="c0"
+  className="c0 c1"
 >
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Archive48
       </span>
     </div>
     <svg
       aria-hidden="true"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -5834,20 +6160,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         ArrowDown48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -5864,20 +6190,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         ArrowLeft48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -5894,20 +6220,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         ArrowRight48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -5924,20 +6250,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         ArrowUp48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -5954,20 +6280,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Bug48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -5986,20 +6312,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Export48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -6020,20 +6346,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Import48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -6054,20 +6380,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Inbox48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -6098,20 +6424,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Information48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -6138,20 +6464,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Launch48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -6176,20 +6502,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Mail48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -6208,20 +6534,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         MonthlySavings48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -6240,20 +6566,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Orders48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -6282,20 +6608,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Outbox48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -6314,20 +6640,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         PriceAlert48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -6350,20 +6676,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Refresh48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -6380,20 +6706,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Search48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -6412,20 +6738,20 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Watchlist48
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={48}
       preserveAspectRatio="xMidYMid meet"
@@ -6505,7 +6831,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
   padding-top: 0;
 }
 
-.c5 {
+.c6 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -6517,7 +6843,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
   display: block;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -6526,7 +6852,7 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6536,37 +6862,41 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
   flex-direction: column;
 }
 
-.c3 {
+.c4 {
   margin-bottom: 4px;
 }
 
-.c2 {
+.c1 {
+  background-color: #FFFFFF;
+}
+
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   margin: 12px 0;
-  width: 260px;
+  width: 390px;
 }
 
 <div
-  className="c0"
+  className="c0 c1"
 >
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Account64
       </span>
     </div>
     <svg
       aria-hidden="true"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -6582,20 +6912,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Auto64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -6614,20 +6944,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Bank64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -6646,20 +6976,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Blog64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -6678,20 +7008,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Book64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -6742,20 +7072,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Fee64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -6796,20 +7126,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Fund64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -6842,20 +7172,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Gold64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -6886,20 +7216,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Guidance64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -6918,20 +7248,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Lightbulb64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -6986,20 +7316,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Money64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7030,20 +7360,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         MoneyDeposit64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7062,20 +7392,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         MoneyWithdraw64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7094,20 +7424,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         MonthlySavings64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7126,20 +7456,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         News64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7158,20 +7488,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Pension64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7194,20 +7524,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         RiskHigh64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7230,20 +7560,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         RiskLow64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7266,20 +7596,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         RiskMedium64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7302,20 +7632,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Robot64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7350,20 +7680,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Security64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7386,20 +7716,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         StatusError64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7426,20 +7756,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         StatusFail64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7466,20 +7796,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         StatusInformation64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7502,20 +7832,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         StatusSuccess64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7538,20 +7868,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         StatusWarning64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7578,20 +7908,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Stock64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7608,20 +7938,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Tax64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7664,20 +7994,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         TransferDeposit64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7699,20 +8029,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         TransferInternal64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7845,20 +8175,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         TransferWithdraw64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7950,20 +8280,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         UrgentMail64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -7996,20 +8326,20 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         UrgentMailFill64
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -8030,6 +8360,158 @@ exports[`Storyshots Atoms / Illustration Size / 64px 1`] = `
       />
       <title>
         32
+      </title>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms / Illustration Size / 96px 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.c0 > * {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c6 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  margin-bottom: 4px;
+}
+
+.c1 {
+  background-color: #FFFFFF;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 12px 0;
+  width: 390px;
+}
+
+<div
+  className="c0 c1"
+>
+  <div
+    className="c2 c3"
+  >
+    <div
+      className="c4"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c5"
+      >
+        TestFail96
+      </span>
+    </div>
+    <svg
+      aria-hidden="true"
+      className="c6"
+      focusable="false"
+      height={96}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={96}
+    >
+      <path
+        d="M40.5 49.5h3v-3h-3v3ZM40.06 55.067l-2.12-2.121 2.12-2.121 2.122 2.121-2.121 2.121ZM40.06 45.182l2.122-2.121-2.121-2.122-2.122 2.122 2.122 2.121ZM28.5 50.121l-3.44 3.44-2.12-2.122L26.378 48l-3.44-3.44 2.122-2.12 3.439 3.439 3.44-3.44 2.12 2.122L30.622 48l3.44 3.44-2.122 2.12-3.439-3.439ZM28.5 29.121l-3.44 3.44-2.12-2.122L26.378 27l-3.44-3.44 2.122-2.12 3.439 3.439 3.44-3.44 2.12 2.122L30.622 27l3.44 3.44-2.122 2.12-3.439-3.439Z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M36 61.5v15H21v-15h15Zm-12 3v9h9v-9h-9Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <path
+        clipRule="evenodd"
+        d="M57.621 7.5 73.5 23.379V73.5h12v15h-75v-81h47.121Zm-15.397 78L36.599 81l9.375-7.5H70.5v-48h-15v-15h-42v75h28.724ZM58.5 12.621l9.879 9.879H58.5v-9.879Zm-12 72.458L41.401 81l5.099-4.08v8.16Zm3 .421h27v-9h-27v9Zm33 0h-3v-9h3v9Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>
+  <div
+    className="c2 c3"
+  >
+    <div
+      className="c4"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c5"
+      >
+        TestSuccess96
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c6"
+      focusable="false"
+      height={96}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={96}
+    >
+      <path
+        d="M46.5 69.006h-3v3h3v-3ZM46.94 63.44l2.12 2.12-2.12 2.122-2.122-2.121 2.121-2.122ZM46.94 73.325l-2.122 2.12 2.121 2.122 2.122-2.121-2.122-2.121ZM26.743 29.121 23.56 25.94l-2.122 2.122 5.304 5.303 8.485-8.485-2.121-2.122-6.364 6.364ZM23.56 46.94l3.183 3.181 6.364-6.364 2.12 2.122-8.484 8.485-5.304-5.303 2.122-2.122ZM26.743 71.121 23.56 67.94l-2.122 2.122 5.304 5.303 8.485-8.485-2.121-2.122-6.364 6.364Z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M57.621 7.5 73.5 23.379v19.82l6.32-6.32 10.606 10.607L73.5 64.412V88.5h-63v-81h47.121ZM70.5 67.412l-8.023 8.023-11.932 1.326 1.326-11.933L70.5 46.198V25.5h-15v-15h-42v75h57V67.412Zm-12-54.79 9.879 9.878H58.5v-9.879Zm1.93 60.022-6.49.721.722-6.49 5.768 5.769Zm2.42-1.824-6.365-6.364 19.092-19.092 6.364 6.364L62.85 70.82Zm21.212-21.213-6.364-6.364 2.122-2.121 6.364 6.364-2.122 2.121Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        1
       </title>
     </svg>
   </div>
@@ -8059,7 +8541,7 @@ exports[`Storyshots Atoms / Illustration Size / 240px 1`] = `
   padding-top: 0;
 }
 
-.c5 {
+.c6 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -8071,7 +8553,7 @@ exports[`Storyshots Atoms / Illustration Size / 240px 1`] = `
   display: block;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -8080,7 +8562,7 @@ exports[`Storyshots Atoms / Illustration Size / 240px 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8090,37 +8572,41 @@ exports[`Storyshots Atoms / Illustration Size / 240px 1`] = `
   flex-direction: column;
 }
 
-.c3 {
+.c4 {
   margin-bottom: 4px;
 }
 
-.c2 {
+.c1 {
+  background-color: #FFFFFF;
+}
+
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   margin: 12px 0;
-  width: 260px;
+  width: 390px;
 }
 
 <div
-  className="c0"
+  className="c0 c1"
 >
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         NotFoundError240
       </span>
     </div>
     <svg
       aria-hidden="true"
-      className="c5"
+      className="c6"
       focusable="false"
       height={160}
       preserveAspectRatio="xMidYMid meet"
@@ -8203,20 +8689,20 @@ exports[`Storyshots Atoms / Illustration Size / 240px 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c2"
+    className="c2 c3"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="Typography__Span-sc-10mju41-0 c5"
       >
         Shareville240
       </span>
     </div>
     <svg
       aria-hidden="false"
-      className="c5"
+      className="c6"
       focusable="false"
       height={160}
       preserveAspectRatio="xMidYMid meet"
@@ -8295,6 +8781,142 @@ exports[`Storyshots Atoms / Illustration Size / 240px 1`] = `
       <title>
         1
       </title>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms / Illustration Size / 375px 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.c0 > * {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c6 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  margin-bottom: 4px;
+}
+
+.c1 {
+  background-color: #FFFFFF;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 12px 0;
+  width: 390px;
+}
+
+<div
+  className="c0 c1"
+>
+  <div
+    className="c2 c3"
+  >
+    <div
+      className="c4"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c5"
+      >
+        AppropriatenessTest375
+      </span>
+    </div>
+    <svg
+      aria-hidden="true"
+      className="c6"
+      focusable="false"
+      height={240}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={375}
+    >
+      <g
+        fill="none"
+      >
+        <path
+          clipRule="evenodd"
+          d="M187.5 56C97.63 56 24.7 129.3 24 220h327c-.7-90.7-73.63-164-163.5-164Z"
+          fill="#F5F5F5"
+          fillRule="evenodd"
+        />
+        <path
+          clipRule="evenodd"
+          d="M135 195h-10v-6h42v6h-6v16.36l-13-4.97-13 4.97V195Zm6 0v7.64l7-2.67 7 2.67V195h-14Z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+        <path
+          d="M109 195h12v-6h-12v6ZM263 108v-6h-6v6h6ZM276.1 106.9l-3 5.2-5.2-3 3-5.2 5.2 3ZM252.1 109.1l-3-5.2-5.2 3 3 5.2 5.2-3Z"
+          fill="currentColor"
+        />
+        <path
+          clipRule="evenodd"
+          d="M201 79h26v26h-26V79Zm6 6v14h14V85h-14ZM227 123h-26v26h26v-26Zm-20 20v-14h14v14h-14ZM201 167h26v26h-26v-26Zm6 6v14h14v-14h-14Z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+        <path
+          clipRule="evenodd"
+          d="M176 52h100.24L302 77.76v66.03l42.75 42.75-19.8 19.8L302 183.38V220H72a21 21 0 1 1 0-42h17.34A31.96 31.96 0 0 1 76 152v-24h64v8.12a17 17 0 0 1-2 33.88h-3.54a32.18 32.18 0 0 1-7.8 8H176V52Zm-36 100v-9.82a11 11 0 0 1-2 21.82h-.33c1.5-3.7 2.33-7.76 2.33-12Zm-68 32h104v30H72a15 15 0 0 1 0-30Zm62-32a26 26 0 0 1-52 0v-3h52v3Zm0-9H82v-9h52v9Zm48 35h4v6h-4v30h114v-36.62l-37.47-37.46-4.5-24.3 24.3 4.5L296 137.79V82h-24V58h-90v120Zm96-115.76L291.76 76H278V62.24Zm-16.1 62.9 2.2 11.85.63.64 11.31-11.32-.63-.63-11.85-2.2-1.66 1.66Zm7.07 16.73 11.31-11.31 46.8 46.79-11.32 11.31-46.79-46.79ZM320 192.9l11.32-11.31 4.95 4.95-11.32 11.31-4.95-4.95Z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+        <path
+          d="M110.94 60c-10.11 0-18.63 8.06-16.67 17.82 1.02 5.06 4.56 7.66 8.24 8.58 3.46.87 7.25.33 9.76-.92l-2.66-5.37c-1.23.6-3.56 1-5.64.47a4.74 4.74 0 0 1-3.81-3.95C99.13 71.55 103.58 66 110.94 66c5.84 0 12.6 6.06 10.76 17.56-.32 2.05-1.45 3.77-3.28 5.37-1.87 1.63-4.33 2.98-7.02 4.26-.92.45-1.93.9-2.94 1.36-1.71.77-3.43 1.54-4.81 2.28-1.16.61-2.31 1.31-3.27 2.14a7.12 7.12 0 0 0-2.45 7.13 6.56 6.56 0 0 0 1.62 3c1.38 1.48 3.31 2.33 4.79 2.89.63.24 1.29.46 1.88.67l.25.08.15.05c.72.25 1.32.46 1.83.69.53.23.8.4.92.48 0 .15-.03.39-.16.76-.22.63-.64 1.36-1.22 2.22l-.89 1.25-.05.08c-.29.39-.59.8-.86 1.2-.28.42-.58.9-.83 1.4a4.9 4.9 0 0 0-.54 2.13h6a1.62 1.62 0 0 1-.08.52l.02-.02c.06-.13.18-.33.4-.67l.77-1.08.03-.05c.3-.42.66-.9 1-1.4a16.3 16.3 0 0 0 1.9-3.56c.48-1.35.77-3.07.17-4.86-.77-2.28-2.93-3.36-4.2-3.9a31.95 31.95 0 0 0-2.7-1.02c-.59-.2-1.13-.38-1.66-.58-1.4-.53-2.17-.98-2.53-1.36-.13-.14-.15-.22-.16-.28-.02-.06-.05-.27.07-.72.01-.03.1-.2.46-.51.46-.4 1.16-.86 2.16-1.39 1.25-.66 2.6-1.27 4.13-1.96 1.04-.47 2.17-.97 3.38-1.55 2.81-1.33 5.87-2.97 8.38-5.16 2.55-2.22 4.66-5.12 5.27-8.95 2.26-14.2-6.26-24.5-16.69-24.5Z"
+          fill="currentColor"
+        />
+      </g>
     </svg>
   </div>
 </div>

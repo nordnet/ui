@@ -94,14 +94,18 @@ allIllustrationsColored.story = {
   name: 'All Illustrations (colored)',
 };
 
+const StyledFlexbox = styled(Flexbox)`
+  background-color: ${(p) => p.theme.color.badgeIconColor};
+`;
+
 const StyledLabeledValue = styled(LabeledValue)`
   align-items: center;
   margin: 12px 0;
-  width: 260px;
+  width: 390px;
 `;
 
 const SizeIllustrations = (size: string) => (
-  <Flexbox container gutter={8} wrap="wrap">
+  <StyledFlexbox container gutter={8} wrap="wrap">
     {Object?.entries(Illustration)
       ?.filter((name) => name[0].includes(size))
       .map(
@@ -114,7 +118,7 @@ const SizeIllustrations = (size: string) => (
           </StyledLabeledValue>
         ),
       )}
-  </Flexbox>
+  </StyledFlexbox>
 );
 
 export const size48 = () => <>{SizeIllustrations('48')}</>;
@@ -129,8 +133,19 @@ size64.story = {
   name: 'Size / 64px',
 };
 
+export const size96 = () => <>{SizeIllustrations('96')}</>;
+
+size96.story = {
+  name: 'Size / 96px',
+};
+
 export const size240 = () => <>{SizeIllustrations('240')}</>;
 
 size240.story = {
   name: 'Size / 240px',
+};
+export const size375 = () => <>{SizeIllustrations('375')}</>;
+
+size375.story = {
+  name: 'Size / 375px',
 };

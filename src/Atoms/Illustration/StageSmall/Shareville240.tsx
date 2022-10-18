@@ -4,7 +4,7 @@ import { useTheme } from 'styled-components';
 import { IllustrationBase, getColor } from '../IllustrationBase';
 import { IllustrationProps } from '../IllustrationBase.types';
 
-const Sahreville240: React.FC<IllustrationProps> = (props) => {
+const Shareville240: React.FC<IllustrationProps> = (props) => {
   const theme = useTheme();
   const secondaryIllustrationColor = getColor(theme, theme.color.negative, props.secondaryColor);
 
@@ -51,4 +51,4 @@ const Sahreville240: React.FC<IllustrationProps> = (props) => {
   );
 };
 
-export default Sahreville240;
+export default Shareville240;

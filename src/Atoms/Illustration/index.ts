@@ -55,11 +55,19 @@ import UrgentMail64 from './Medium/UrgentMail64';
 import UrgentMailFill64 from './Medium/UrgentMailFill64';
 
 // Large illustrations
-import NotFoundError240 from './Large/NotFoundError240';
-import Shareville240 from './Large/Shareville240';
+import TestFail96 from './Large/TestFail96';
+import TestSuccess96 from './Large/TestSuccess96';
+
+// Stage Small illustrations
+import NotFoundError240 from './StageSmall/NotFoundError240';
+import Shareville240 from './StageSmall/Shareville240';
+
+// Stage Large illustrations
+import AppropriatenessTest375 from './StageLarge/AppropriatenessTest375';
 
 export default {
   Account64,
+  AppropriatenessTest375,
   Archive48,
   ArrowDown48,
   ArrowLeft48,
@@ -108,6 +116,8 @@ export default {
   TransferDeposit64,
   TransferInternal64,
   TransferWithdraw64,
+  TestFail96,
+  TestSuccess96,
   UrgentMail64,
   UrgentMailFill64,
   Watchlist48,
