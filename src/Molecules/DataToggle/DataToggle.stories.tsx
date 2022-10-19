@@ -20,8 +20,8 @@ export const defaultDataToggle = () => {
     const toggledValue = toggled ? toggleOptions.right : toggleOptions.left;
 
     return (
-      <Box py={5} backgroundColor={(t) => t.color.bubbleBackground}>
-        <Flexbox container gutter={2}>
+      <Box p={3} backgroundColor={(t) => t.color.bubbleBackground}>
+        <Flexbox container gap={2}>
           <Flexbox container item>
             <DataToggle
               checked={toggled}
@@ -60,8 +60,8 @@ export const augmentedWidthDataToggle = () => {
     const toggledValue = toggled ? toggleOptions.right : toggleOptions.left;
 
     return (
-      <Box py={5} backgroundColor={(t) => t.color.bubbleBackground}>
-        <Flexbox container gutter={2}>
+      <Box p={3} backgroundColor={(t) => t.color.bubbleBackground}>
+        <Flexbox container gap={2}>
           <Flexbox container item>
             <DataToggle
               checked={toggled}

@@ -2,8 +2,7 @@
 
 exports[`Storyshots Molecules / DataToggle  Augmented Width Data Toggle 1`] = `
 .c0 {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 12px;
   background-color: #FFFFFF;
 }
 
@@ -18,17 +17,10 @@ exports[`Storyshots Molecules / DataToggle  Augmented Width Data Toggle 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -4px;
-  margin-right: -4px;
 }
 
-.c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
+.c1:not(:empty) {
+  gap: 8px;
 }
 
 .c2 {
@@ -49,20 +41,9 @@ exports[`Storyshots Molecules / DataToggle  Augmented Width Data Toggle 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: -4px;
-  margin-right: -4px;
 }
 
-.c4 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c4 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c5 {
+.c7 {
   box-sizing: border-box;
 }
 
@@ -104,7 +85,7 @@ exports[`Storyshots Molecules / DataToggle  Augmented Width Data Toggle 1`] = `
   align-content: center;
 }
 
-.c6 {
+.c5 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -144,7 +125,7 @@ exports[`Storyshots Molecules / DataToggle  Augmented Width Data Toggle 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c7 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -200,7 +181,7 @@ exports[`Storyshots Molecules / DataToggle  Augmented Width Data Toggle 1`] = `
   display: block;
   position: relative;
   height: 24px;
-  width: 192px;
+  width: 188px;
   padding: 2px;
   border-radius: 24px;
   line-height: 24px;
@@ -226,9 +207,9 @@ exports[`Storyshots Molecules / DataToggle  Augmented Width Data Toggle 1`] = `
 }
 
 .c9[aria-checked='true'] .c14 {
-  -webkit-transform: translate( 96px );
-  -ms-transform: translate( 96px );
-  transform: translate( 96px );
+  -webkit-transform: translate( 92px );
+  -ms-transform: translate( 92px );
+  transform: translate( 92px );
 }
 
 .c9[disabled] .c11,
@@ -247,7 +228,7 @@ exports[`Storyshots Molecules / DataToggle  Augmented Width Data Toggle 1`] = `
 
 .c19 {
   padding-top: 1px;
-  width: 96px;
+  width: 94px;
 }
 
 <div
@@ -265,21 +246,17 @@ exports[`Storyshots Molecules / DataToggle  Augmented Width Data Toggle 1`] = `
         <span
           className="c4"
         >
-          <span
+          <div
             className="c5"
           >
-            <div
-              className="c6"
+            <span
+              className="Typography__Span-sc-10mju41-0 c6"
             >
-              <span
-                className="Typography__Span-sc-10mju41-0 c7"
-              >
-                language toggle
-              </span>
-            </div>
-          </span>
+              language toggle
+            </span>
+          </div>
           <span
-            className="c5"
+            className="c7"
           >
             <button
               aria-checked={false}
@@ -288,14 +265,14 @@ exports[`Storyshots Molecules / DataToggle  Augmented Width Data Toggle 1`] = `
               onClick={[Function]}
               role="switch"
               type="button"
-              width={48}
+              width={47}
             >
               <div
                 className="c10"
               >
                 <span
                   className="c11 c12"
-                  width={48}
+                  width={47}
                 >
                   <div
                     className="c13 c14 c15"
@@ -342,8 +319,7 @@ exports[`Storyshots Molecules / DataToggle  Augmented Width Data Toggle 1`] = `
 
 exports[`Storyshots Molecules / DataToggle  Default  Data Toggle 1`] = `
 .c0 {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 12px;
   background-color: #FFFFFF;
 }
 
@@ -358,17 +334,10 @@ exports[`Storyshots Molecules / DataToggle  Default  Data Toggle 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -4px;
-  margin-right: -4px;
 }
 
-.c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
+.c1:not(:empty) {
+  gap: 8px;
 }
 
 .c2 {
@@ -389,20 +358,9 @@ exports[`Storyshots Molecules / DataToggle  Default  Data Toggle 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: -4px;
-  margin-right: -4px;
 }
 
-.c4 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c4 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c5 {
+.c7 {
   box-sizing: border-box;
 }
 
@@ -444,7 +402,7 @@ exports[`Storyshots Molecules / DataToggle  Default  Data Toggle 1`] = `
   align-content: center;
 }
 
-.c6 {
+.c5 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -484,7 +442,7 @@ exports[`Storyshots Molecules / DataToggle  Default  Data Toggle 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c7 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -605,21 +563,17 @@ exports[`Storyshots Molecules / DataToggle  Default  Data Toggle 1`] = `
         <span
           className="c4"
         >
-          <span
+          <div
             className="c5"
           >
-            <div
-              className="c6"
+            <span
+              className="Typography__Span-sc-10mju41-0 c6"
             >
-              <span
-                className="Typography__Span-sc-10mju41-0 c7"
-              >
-                finance toggle
-              </span>
-            </div>
-          </span>
+              finance toggle
+            </span>
+          </div>
           <span
-            className="c5"
+            className="c7"
           >
             <button
               aria-checked={false}

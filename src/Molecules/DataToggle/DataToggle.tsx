@@ -119,6 +119,7 @@ export const DataToggle: React.FC<DataToggleProps> = ({
   const titleNode = isElement(label) ? label : <Typography type="secondary">{label}</Typography>;
   const [checkedInternal, setCheckedInternal] = useState(checkedInitially);
   const checked = isControlled ? checkedControlled : checkedInternal;
+  const adjustWidthForXPaddings = width ? width - 1 : undefined;
   const knobwidth = width ? width / TRACK_TO_KNOB_RATIO : KNOB_WIDTH;
 
   const internalClickHandler = (e: React.MouseEvent) => {
@@ -136,10 +137,8 @@ export const DataToggle: React.FC<DataToggleProps> = ({
 
   return (
     <Label>
-      <Flexbox container gutter={2} alignItems="center" as="span">
-        <Flexbox item as="span">
-          {hiddenLabel ? <VisuallyHidden>{titleNode}</VisuallyHidden> : titleNode}
-        </Flexbox>
+      <Flexbox container alignItems="center" as="span">
+        {hiddenLabel ? <VisuallyHidden>{titleNode}</VisuallyHidden> : titleNode}
         <Flexbox item as="span">
           <Button
             className={className}
@@ -150,10 +149,10 @@ export const DataToggle: React.FC<DataToggleProps> = ({
             disabled={disabled}
             aria-readonly={readOnly}
             knobwidth={knobwidth}
-            width={width}
+            width={adjustWidthForXPaddings}
           >
             <ButtonContent>
-              <Track width={width}>
+              <Track width={adjustWidthForXPaddings}>
                 <Knob
                   knobwidth={knobwidth}
                   container
@@ -172,7 +171,7 @@ export const DataToggle: React.FC<DataToggleProps> = ({
                   <StyledTypography
                     type="secondary"
                     weight="bold"
-                    width={width}
+                    width={adjustWidthForXPaddings}
                     color={!checked ? (p) => p.color.cta : (p) => p.color.disabledText}
                   >
                     {valueLeft}
@@ -180,7 +179,7 @@ export const DataToggle: React.FC<DataToggleProps> = ({
                   <StyledTypography
                     type="secondary"
                     weight="bold"
-                    width={width}
+                    width={adjustWidthForXPaddings}
                     color={checked ? (p) => p.color.cta : (p) => p.color.disabledText}
                   >
                     {valueRight}
