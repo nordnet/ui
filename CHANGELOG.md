@@ -1,3 +1,10 @@
+# [11.4.0](https://github.com/nordnet/ui/compare/v11.3.0...v11.4.0) (2022-10-19)
+
+
+### Features
+
+*  progress indicator additions ([48169ed](https://github.com/nordnet/ui/commit/48169ed))
+
 # [11.3.0](https://github.com/nordnet/ui/compare/v11.2.0...v11.3.0) (2022-10-19)
 
 
