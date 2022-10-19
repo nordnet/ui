@@ -1,3 +1,10 @@
+# [11.3.0](https://github.com/nordnet/ui/compare/v11.2.0...v11.3.0) (2022-10-19)
+
+
+### Features
+
+* add new illustrations ([095bfa0](https://github.com/nordnet/ui/commit/095bfa0))
+
 # [11.2.0](https://github.com/nordnet/ui/compare/v11.1.0...v11.2.0) (2022-10-19)
 
 
