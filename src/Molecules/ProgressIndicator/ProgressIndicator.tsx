@@ -18,7 +18,7 @@ const ProgressIndicator: FC<Props> = ({
 }): ReactElement => {
   const isFirstStep = isArray(currentStep) ? [...currentStep][0] === 1 : currentStep === 1;
   const noButtons = !closeCallback && !backCallback && !infoCallback;
-
+  const noBackButton = !backCallback;
   const handleBackAndCloseClick = () => {
     if (isFirstStep && closeCallback) return closeCallback();
     if (backCallback) return backCallback();
@@ -35,11 +35,13 @@ const ProgressIndicator: FC<Props> = ({
       <Flexbox container justifyContent="space-between" gap={6} alignItems="center">
         <StyledButton
           onClick={handleBackAndCloseClick}
-          visible={isFirstStep && !closeCallback}
-          $hide={noButtons}
-          charWidth={isFirstStep ? exitText.length : backText.length + 0.5}
+          visible={
+            (!isFirstStep && !!backCallback) || (isFirstStep && !!closeCallback) || noBackButton
+          }
+          $hide={noButtons || (!backCallback && !isFirstStep && !noBackButton)}
+          charWidth={isFirstStep || noBackButton ? exitText.length : backText.length + 0.5}
         >
-          {isFirstStep ? <Icon.Cross16 /> : <Icon.ChevronLeft16 />}
+          {isFirstStep || noBackButton ? <Icon.Cross16 /> : <Icon.ChevronLeft16 />}
           <HiddenText ml={3}>
             <Typography
               type="secondary"
@@ -47,7 +49,7 @@ const ProgressIndicator: FC<Props> = ({
               lineHeight="inherit"
               color={(t) => t.color.cta}
             >
-              {isFirstStep ? exitText : backText}
+              {isFirstStep || noBackButton ? exitText : backText}
             </Typography>
           </HiddenText>
         </StyledButton>
@@ -79,7 +81,7 @@ const ProgressIndicator: FC<Props> = ({
 
         <StyledButton
           onClick={infoCallback}
-          visible={!infoCallback}
+          visible={!!infoCallback}
           $hide={noButtons}
           charWidth={infoText.length + 0.5}
         >
