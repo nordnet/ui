@@ -1,3 +1,10 @@
+# [11.2.0](https://github.com/nordnet/ui/compare/v11.1.0...v11.2.0) (2022-10-19)
+
+
+### Features
+
+* 🎸 add color for empty state card tex ([7074527](https://github.com/nordnet/ui/commit/7074527))
+
 # [11.1.0](https://github.com/nordnet/ui/compare/v11.0.0...v11.1.0) (2022-10-18)
 
 
