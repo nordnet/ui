@@ -362,6 +362,8 @@ export type ThemeColors = {
   divider: string;
   /** gray4 */
   emptyState: string;
+  /** gray500 */
+  emptyStateCardText: string;
 
   /** gray100 */
   feedbackModuleBackground: string;
