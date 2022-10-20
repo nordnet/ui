@@ -24,7 +24,11 @@ export type ControlsListItemSwitch = {
   addon?: React.ReactNode;
 } & Props;
 
-export type ControlsListItemButton = { onClick: () => void; buttonText: string } & Props;
+export type ControlsListItemButton = {
+  onClick: () => void;
+  buttonText: string;
+  disabled?: boolean;
+} & Props;
 
 export type ControlsListItemSelect = {
   options: OptionItem[];
@@ -34,6 +38,7 @@ export type ControlsListItemSelect = {
   showCheckmark?: boolean;
   justifyContent?: JustifyContentProp;
   listWidth?: string;
+  disabled?: boolean;
 } & Props;
 
 export type ControlsListItemRadio = {
@@ -43,4 +48,5 @@ export type ControlsListItemRadio = {
   label: string;
   checked?: boolean;
   addon?: React.ReactNode;
+  disabled?: boolean;
 } & Props;

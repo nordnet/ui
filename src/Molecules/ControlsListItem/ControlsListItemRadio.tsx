@@ -27,7 +27,7 @@ const ControlsListItemRadio: React.FC<Props> = ({
 }) => {
   const hasAddon = React.isValidElement(addon);
   return (
-    <ControlsListItem>
+    <ControlsListItem disabled={disabled}>
       <Grid.Container {...GRID}>
         <Grid.Item area="icon" justify="start" align="center">
           <>{Icon}</>

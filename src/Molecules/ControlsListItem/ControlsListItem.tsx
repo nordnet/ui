@@ -2,15 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import { ListItem } from '../..';
 
-const StyledLabel = styled.label`
-  cursor: inherit;
+const StyledLabel = styled.label<{ $disabled?: boolean }>`
   width: 100%;
+  cursor: ${({ $disabled }) => ($disabled ? 'not-allowed' : 'pointer')};
 `;
 
-const ControlsListItem: React.FC<{ children: React.ReactElement }> = ({ children }) => {
+const ControlsListItem: React.FC<{ children: React.ReactElement; disabled?: boolean }> = ({
+  children,
+  disabled,
+}) => {
   return (
     <ListItem>
-      <StyledLabel>{children}</StyledLabel>
+      <StyledLabel $disabled={disabled}>{children}</StyledLabel>
     </ListItem>
   );
 };

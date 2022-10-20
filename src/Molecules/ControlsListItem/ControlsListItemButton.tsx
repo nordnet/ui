@@ -30,7 +30,7 @@ const ControlsListItemButton: React.FC<Props> = ({
   disabled,
 }) => {
   return (
-    <ControlsListItem>
+    <ControlsListItem disabled={disabled}>
       <Grid.Container {...GRID}>
         <Grid.Item area="icon" justify="start" align="center">
           <>{Icon}</>

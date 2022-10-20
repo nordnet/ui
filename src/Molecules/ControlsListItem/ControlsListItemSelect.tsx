@@ -63,7 +63,7 @@ const ControlsListItemSelect: React.FC<Props> = ({
   }
 
   return (
-    <ControlsListItem>
+    <ControlsListItem disabled={disabled}>
       <Grid.Container {...GRID}>
         <Grid.Item area="icon" justify="start" align="center">
           <>{Icon}</>
