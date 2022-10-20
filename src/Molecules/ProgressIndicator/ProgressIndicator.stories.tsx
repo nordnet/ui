@@ -84,7 +84,7 @@ export const NoBackButton = () => {
       <ProgressIndicator
         numberOfSteps={3}
         currentStep={currentStep}
-        closeCallback={() => alert('back callback')}
+        closeCallback={() => alert('close callback')}
         infoCallback={() => alert('info callback')}
       />
       <Flexbox container justifyContent="space-around">
@@ -103,7 +103,7 @@ export const NoBackNoHelpButton = () => {
       <ProgressIndicator
         numberOfSteps={3}
         currentStep={currentStep}
-        closeCallback={() => alert('back callback')}
+        closeCallback={() => alert('close callback')}
       />
       <Flexbox container justifyContent="space-around">
         <Button onClick={() => setCurrentStep(1)}>1</Button>

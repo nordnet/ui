@@ -20,7 +20,7 @@ const ProgressIndicator: FC<Props> = ({
   const noButtons = !closeCallback && !backCallback && !infoCallback;
   const noBackButton = !backCallback;
   const handleBackAndCloseClick = () => {
-    if (isFirstStep && closeCallback) return closeCallback();
+    if ((isFirstStep || noBackButton) && closeCallback) return closeCallback();
     if (backCallback) return backCallback();
     return null;
   };
