@@ -1,3 +1,10 @@
+## [11.5.1](https://github.com/nordnet/ui/compare/v11.5.0...v11.5.1) (2022-10-20)
+
+
+### Bug Fixes
+
+* add pointer cursor to control-list-item ([d8e9442](https://github.com/nordnet/ui/commit/d8e9442))
+
 # [11.5.0](https://github.com/nordnet/ui/compare/v11.4.0...v11.5.0) (2022-10-20)
 
 
