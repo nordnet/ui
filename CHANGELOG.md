@@ -1,3 +1,10 @@
+# [11.5.0](https://github.com/nordnet/ui/compare/v11.4.0...v11.5.0) (2022-10-20)
+
+
+### Features
+
+* 🎸 ProgressIndicator callback close button fix ([3d8aa17](https://github.com/nordnet/ui/commit/3d8aa17))
+
 # [11.4.0](https://github.com/nordnet/ui/compare/v11.3.0...v11.4.0) (2022-10-19)
 
 
