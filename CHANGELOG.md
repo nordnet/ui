@@ -1,3 +1,16 @@
+# [11.6.0](https://github.com/nordnet/ui/compare/v11.5.1...v11.6.0) (2022-10-21)
+
+
+### Bug Fixes
+
+* 🐛 DataToggle adjust width for x-paddings ([0cb1092](https://github.com/nordnet/ui/commit/0cb1092))
+* 🐛 knob a bit too long, text was not entirely centered ([29b0887](https://github.com/nordnet/ui/commit/29b0887))
+
+
+### Features
+
+* 🎸 created new component, deprecated SwitchToggle ([110f646](https://github.com/nordnet/ui/commit/110f646))
+
 ## [11.5.1](https://github.com/nordnet/ui/compare/v11.5.0...v11.5.1) (2022-10-20)
 
 
