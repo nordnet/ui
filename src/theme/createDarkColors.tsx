@@ -262,9 +262,9 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     progressBarText: rawColor.white,
     progressBarWarning: rawColor.index,
 
-    savingsForecastExpected: rawColor.green500,
+    savingsForecastExpected: rawColor.cta,
     savingsForecastNormal: rawColor.gray500,
-    savingsForecastPotential: rawColor.gray700,
+    savingsForecastPotential: Color(rawColor.cta).alpha(0.12).rgb().string(),
 
     searchBackground: rawColor.gray1,
     searchText: rawColor.gray7,
@@ -364,7 +364,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     transferStatusBannerText2: rawColor.complementaryPink1,
     transferStatusBannerText3: rawColor.gray0,
 
-    sfdrArticle6: rawColor.gray3,
+    sfdrArticle6: rawColor.gray500,
+    sfdrArticle6Text: rawColor.gray800,
     sfdrArticle8: rawColor.sfdrArticle8,
     sfdrArticle9: rawColor.sfdrArticle9,
 

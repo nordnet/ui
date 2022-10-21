@@ -707,8 +707,10 @@ export type ThemeColors = {
   worldMapLand: string; // not yet in use
   /** gray800 */
   worldMapWater: string; // not yet in use
-  /** SFDR Article 6 */
+  /** gray500 */
   sfdrArticle6: string;
+  /** white */
+  sfdrArticle6Text: string;
   /** SFDR Article 8 */
   sfdrArticle8: string;
   /** SFDR Article 9 */

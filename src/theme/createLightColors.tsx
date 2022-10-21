@@ -262,9 +262,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     periodScrollButtonBackground: rawColor.gray100,
     periodScrollButtonIcon: rawColor.gray800,
 
-    savingsForecastExpected: rawColor.green600,
+    savingsForecastExpected: rawColor.cta,
     savingsForecastNormal: rawColor.gray500,
-    savingsForecastPotential: rawColor.gray100,
+    savingsForecastPotential: Color(rawColor.cta).alpha(0.12).rgb().string(),
 
     searchBackground: rawColor.gray1,
     searchText: rawColor.gray7,
@@ -361,7 +361,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     transferStatusBannerText2: rawColor.complementaryPink1,
     transferStatusBannerText3: rawColor.gray0,
 
-    sfdrArticle6: rawColor.gray3,
+    sfdrArticle6: rawColor.gray500,
+    sfdrArticle6Text: rawColor.white,
     sfdrArticle8: rawColor.sfdrArticle8,
     sfdrArticle9: rawColor.sfdrArticle9,
 
