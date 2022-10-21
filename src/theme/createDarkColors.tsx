@@ -420,6 +420,10 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     progressIndicatorBarEmpty: rawColor.gray700,
     progressIndicatorBar: rawColor.blue500,
     progressIndicatorSvgHover: rawColor.blue400,
+
+    actionBackgroundWeak: rawColor.blue800,
+    actionBorderDefault: rawColor.blue500,
+
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,

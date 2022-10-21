@@ -791,6 +791,10 @@ export type ThemeColors = {
   mapColor5: string;
   /** @deprecated * brandPink */
   pieChartColor2: string;
+  /** blue100 */
+  actionBackgroundWeak: string;
+  /** blue500 */
+  actionBorderDefault: string;
 };
 
 export type ColorSets = {

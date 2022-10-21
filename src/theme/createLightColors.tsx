@@ -418,6 +418,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     progressIndicatorBar: rawColor.blue500,
     progressIndicatorSvgHover: rawColor.blue500,
 
+    actionBackgroundWeak: rawColor.blue100,
+    actionBorderDefault: rawColor.blue500,
+
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,
