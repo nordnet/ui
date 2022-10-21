@@ -1,3 +1,11 @@
+## [11.6.1](https://github.com/nordnet/ui/compare/v11.6.0...v11.6.1) (2022-10-21)
+
+
+### Bug Fixes
+
+* add more colors ([7e45238](https://github.com/nordnet/ui/commit/7e45238))
+* update few colors ([a31377e](https://github.com/nordnet/ui/commit/a31377e))
+
 # [11.6.0](https://github.com/nordnet/ui/compare/v11.5.1...v11.6.0) (2022-10-21)
 
 
