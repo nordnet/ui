@@ -1019,6 +1019,59 @@ Array [
     >
       <path
         clipRule="evenodd"
+        d="M16 2a7 7 0 0 0-7 7v30a7 7 0 0 0 7 7h23V34h-2v10H16a5 5 0 0 1-5-5V9a5 5 0 0 1 5-5h21v10h2V2H16Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <path
+        clipRule="evenodd"
+        d="m41.157 23-5-5h2.828L45 24.015 39.015 30h-2.829l5-5H25v-2h16.157Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <clipPath
+        id="a"
+      >
+        <path
+          clipRule="evenodd"
+          d="M0 0h48v48H0z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+      </clipPath>
+    </svg>
+  </div>,
+  .c0 {
+  color: #336BFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      height={48}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={48}
+    >
+      <path
+        clipRule="evenodd"
         d="M45 10H3V38H45V10ZM5 34.81L17.6102 23.8812L5 13.1624V34.81ZM19.152 25.1916L6.68069 36H41.3193L28.8481 25.1916L24 29.3124L19.152 25.1916ZM43 13.1625V34.81L30.3898 23.8812L43 13.1625ZM6.72051 12L24 26.6876L41.2795 12H6.72051Z"
         fill="currentColor"
         fillRule="evenodd"
@@ -3957,6 +4010,63 @@ exports[`Storyshots Atoms / Illustration Available Illustrations 1`] = `
       <span
         className="Typography__Span-sc-10mju41-0 c3"
       >
+        Logout48
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={48}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={48}
+        >
+          <path
+            clipRule="evenodd"
+            d="M16 2a7 7 0 0 0-7 7v30a7 7 0 0 0 7 7h23V34h-2v10H16a5 5 0 0 1-5-5V9a5 5 0 0 1 5-5h21v10h2V2H16Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+          <path
+            clipRule="evenodd"
+            d="m41.157 23-5-5h2.828L45 24.015 39.015 30h-2.829l5-5H25v-2h16.157Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+          <clipPath
+            id="a"
+          >
+            <path
+              clipRule="evenodd"
+              d="M0 0h48v48H0z"
+              fill="currentColor"
+              fillRule="evenodd"
+            />
+          </clipPath>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
         Mail48
       </span>
     </div>
@@ -6510,6 +6620,54 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
       <span
         className="Typography__Span-sc-10mju41-0 c5"
       >
+        Logout48
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c6"
+      focusable="false"
+      height={48}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={48}
+    >
+      <path
+        clipRule="evenodd"
+        d="M16 2a7 7 0 0 0-7 7v30a7 7 0 0 0 7 7h23V34h-2v10H16a5 5 0 0 1-5-5V9a5 5 0 0 1 5-5h21v10h2V2H16Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <path
+        clipRule="evenodd"
+        d="m41.157 23-5-5h2.828L45 24.015 39.015 30h-2.829l5-5H25v-2h16.157Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <clipPath
+        id="a"
+      >
+        <path
+          clipRule="evenodd"
+          d="M0 0h48v48H0z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+      </clipPath>
+      <title>
+        11
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c2 c3"
+  >
+    <div
+      className="c4"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c5"
+      >
         Mail48
       </span>
     </div>
@@ -6529,7 +6687,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        11
+        12
       </title>
     </svg>
   </div>
@@ -6561,7 +6719,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        12
+        13
       </title>
     </svg>
   </div>
@@ -6603,7 +6761,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
         fill="currentColor"
       />
       <title>
-        13
+        14
       </title>
     </svg>
   </div>
@@ -6635,7 +6793,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        14
+        15
       </title>
     </svg>
   </div>
@@ -6671,7 +6829,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        15
+        16
       </title>
     </svg>
   </div>
@@ -6701,7 +6859,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
         fill="currentColor"
       />
       <title>
-        16
+        17
       </title>
     </svg>
   </div>
@@ -6733,7 +6891,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        17
+        18
       </title>
     </svg>
   </div>
@@ -6801,7 +6959,7 @@ exports[`Storyshots Atoms / Illustration Size / 48px 1`] = `
         fill="currentColor"
       />
       <title>
-        18
+        19
       </title>
     </svg>
   </div>
