@@ -1,3 +1,10 @@
+# [11.7.0](https://github.com/nordnet/ui/compare/v11.6.1...v11.7.0) (2022-10-27)
+
+
+### Features
+
+* add badge to accordian item ([7886052](https://github.com/nordnet/ui/commit/7886052))
+
 ## [11.6.1](https://github.com/nordnet/ui/compare/v11.6.0...v11.6.1) (2022-10-21)
 
 
