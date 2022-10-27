@@ -155,6 +155,11 @@ export type ThemeColorsVersion = 'default' | 'a11y' | 'dark';
 
 export type ThemeColors = {
   /**
+   * brand green 450
+   */
+  actionModalSharevilleIllustration: string;
+
+  /**
    * black
    */
   accountBadgeBackground: string;

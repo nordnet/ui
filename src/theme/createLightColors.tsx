@@ -27,6 +27,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
   // prettier-ignore
   return {
     accordionText: rawColor.gray2,
+    
+    actionModalSharevilleIllustration: rawColor.brandGreen,
 
     accountBadgeBackground: rawColor.black,
     accountBadgeText: rawColor.white,

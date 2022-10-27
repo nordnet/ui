@@ -28,6 +28,7 @@ import VisuallyHidden from './Atoms/VisuallyHidden';
 import Truncate from './Atoms/Truncate';
 
 /** Molecules */
+import ActionModal from './Molecules/ActionModal';
 import Badge from './Molecules/Badge';
 import Accordion from './Molecules/Accordion';
 import AccordionItem from './Molecules/AccordionItem';
@@ -128,6 +129,7 @@ export type {
 /** Runtime code */
 export {
   /** @deprecated */ Select,
+  ActionModal,
   Accordion,
   AccordionItem,
   Badge,
