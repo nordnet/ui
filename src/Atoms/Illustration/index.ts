@@ -10,6 +10,7 @@ import Inbox48 from './Small/Inbox48';
 import Import48 from './Small/Import48';
 import Information48 from './Small/Information48';
 import Launch48 from './Small/Launch48';
+import Logout48 from './Small/Logout48';
 import Mail48 from './Small/Mail48';
 import MonthlySavings48 from './Small/MonthlySavings48';
 import Orders48 from './Small/Orders48';
@@ -88,6 +89,7 @@ export default {
   Information48,
   Launch48,
   Lightbulb64,
+  Logout48,
   Mail48,
   Money64,
   MoneyDeposit64,
