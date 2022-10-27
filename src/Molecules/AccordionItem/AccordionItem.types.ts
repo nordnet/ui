@@ -1,3 +1,5 @@
+import { Types } from '../../Atoms/Typography/Typography.types';
+
 export type Props = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   children?: React.ReactNode;
@@ -6,6 +8,7 @@ export type Props = {
   expanded?: boolean;
   expandedInitial?: boolean;
   title: string | React.ReactNode;
+  label?: string | React.ReactNode;
   onClick?: React.MouseEventHandler;
   onToggle?: (expanded: boolean) => void;
   ref?: React.Ref<HTMLButtonElement>;
@@ -19,7 +22,9 @@ export type Props = {
   pb?: number;
   pl?: number;
   pr?: number;
+  leftBadgeIcon?: React.ReactNode;
   rightAddon?: React.ReactNode;
+  type?: Types;
 };
 
 export type ItemProps = {
