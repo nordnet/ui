@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { AccordionItem, Box, Button, Flexbox, Typography } from '../..';
+import { AccordionItem, Badge, Box, Button, Flexbox, Icon, Typography } from '../..';
 
 export default {
   title: 'Molecules / AccordionItem',
@@ -105,6 +105,29 @@ export const withChevron = () => (
     <ExampleContent />
   </AccordionItem>
 );
+
+export const withTypePrimaryAndChevron = () => (
+  <AccordionItem type="primary" withChevron title="How much risk are you willing to take?">
+    <ExampleContent />
+  </AccordionItem>
+);
+
+export const withTypePrimaryAndChevronAndLeftBadgeIcon = () => (
+  <AccordionItem
+    type="primary"
+    withChevron
+    title="Leverage products without stop loss"
+    label="Valid until 2023-12-31"
+    leftBadgeIcon={
+      <Badge.Icon badgeColor={(t) => t.color.badgeBackground} badgeSize="s">
+        <Icon.Warning16 color={(t) => t.color.badgeIconColor} />{' '}
+      </Badge.Icon>
+    }
+  >
+    <ExampleContent />
+  </AccordionItem>
+);
+
 export const withRightAddon = () => (
   <AccordionItem
     title="How much risk are you willing to take?"

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
 
-import { Box, OldIcon, Typography, Icon } from '../..';
+import { Box, Typography, Flexbox, Icon } from '../..';
 import { isBoolean, isFunction, isString } from '../../common/utils';
 import { Props, ItemProps } from './AccordionItem.types';
 
@@ -41,18 +41,25 @@ const Button = styled.button<{
   justify-content: ${({ addonOnRightSide }) => (addonOnRightSide ? 'space-between' : 'flex-start')};
 `;
 
-const IconWrapper = styled.div<{ withChevron?: boolean }>`
+const IconWrapper = styled.div<{ withChevron?: boolean; $expanded?: boolean }>`
   ${({ withChevron, theme }) =>
     `
       margin-top: ${withChevron ? '0' : '-2px'};
       order: ${withChevron ? '1' : '-1'};
       padding-right: ${withChevron ? 0 : theme.spacing.unit(3)}px;
     `}
+  svg {
+    transform: rotate(${(p) => (p.$expanded ? '0' : '180')}deg);
+    transition: transform ${TRANSITION_DURATION}s ease-out;
+  }
 `;
 
-const Chevron = styled(Icon.ChevronUp8)<{ $expanded?: boolean }>`
-  transform: rotate(${(p) => (p.$expanded ? '0' : '180')}deg);
-  transition: transform ${TRANSITION_DURATION}s ease-out;
+const LeftAddonWrapper = styled.div<{}>`
+  ${({ theme }) =>
+    `
+     
+      padding-right: ${theme.spacing.unit(2)}px;
+    `}
 `;
 
 const Content = styled(Box)``;
@@ -70,6 +77,7 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
       expanded: controlledExpand,
       expandedInitial,
       title,
+      label,
       onClick,
       onToggle,
       withChevron,
@@ -82,7 +90,9 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
       pb,
       pl,
       pr,
+      leftBadgeIcon,
       rightAddon,
+      type = 'secondary',
     },
     ref,
   ) => {
@@ -106,22 +116,27 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
     };
 
     const icon = (() => {
-      if (withChevron)
+      if (withChevron && type === 'primary')
         return (
-          <Chevron
-            $expanded={expanded}
-            color={(t) => (disabled ? t.color.disabledText : t.color.svgFill)}
-          />
+          <Icon.ChevronUp16 color={(t) => (disabled ? t.color.disabledText : t.color.svgFill)} />
         );
 
-      if (expanded) return <OldIcon.Minus size={3} fill={(t) => t.color.cta} />;
-      return (
-        <OldIcon.Plus size={3} fill={(t) => (disabled ? t.color.disabledText : t.color.cta)} />
-      );
+      if (withChevron)
+        return (
+          <Icon.ChevronUp8 color={(t) => (disabled ? t.color.disabledText : t.color.svgFill)} />
+        );
+
+      if (expanded) return <Icon.Subtract16 color={(t) => t.color.cta} />;
+
+      return <Icon.Add16 color={(t) => (disabled ? t.color.disabledText : t.color.cta)} />;
     })();
 
+    const hasLeftBadgeIcon = React.isValidElement(leftBadgeIcon);
     const hasRightAddon = React.isValidElement(rightAddon);
     const padding = { p, px, py, pt, pb, pl, pr };
+
+    const chevronPadding = withChevron ? 0 : 6;
+    const contentPadding = leftBadgeIcon ? 10 : chevronPadding;
 
     return (
       <Item
@@ -131,7 +146,7 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
         disableBackgroundColor={disableBackgroundColor}
         {...padding}
       >
-        <Typography as={as} type="secondary" weight="bold">
+        <Typography as={as} type={type} weight="bold">
           <Button
             ref={ref}
             onClick={clickHandler}
@@ -141,17 +156,25 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
             disabled={disabled}
             addonOnRightSide={hasRightAddon || withChevron}
           >
-            <Typography type="secondary" weight="bold">
-              {title}
-            </Typography>
+            <Flexbox container justifyContent="flex-start" alignItems="center">
+              {hasLeftBadgeIcon && <LeftAddonWrapper>{leftBadgeIcon}</LeftAddonWrapper>}
+              <Flexbox container item direction="column">
+                <Typography type={type} weight="bold">
+                  {title}
+                </Typography>
+                <Typography type="tertiary">{label}</Typography>
+              </Flexbox>
+            </Flexbox>
+
             {hasRightAddon ? (
               rightAddon
             ) : (
-              <IconWrapper withChevron={withChevron}>{icon}</IconWrapper>
+              <IconWrapper withChevron={withChevron} $expanded={expanded}>
+                {icon}
+              </IconWrapper>
             )}
           </Button>
         </Typography>
-
         <AnimatePresence initial={false}>
           {expanded && (
             <motion.section
@@ -164,9 +187,9 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
               }}
               transition={{ duration: TRANSITION_DURATION, ease: 'easeOut' }}
             >
-              <Content pt={1} pb={3} pl={withChevron ? 0 : 6} pr={withChevron ? 6 : 0}>
+              <Content pt={1} pb={3} pl={contentPadding} pr={chevronPadding}>
                 {isString(children) ? (
-                  <Typography as="p" type="secondary" color={(t) => t.color.accordionText}>
+                  <Typography as="p" type={type} color={(t) => t.color.accordionText}>
                     {children}
                   </Typography>
                 ) : (
