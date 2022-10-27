@@ -3,7 +3,7 @@ import React from 'react';
 import { IllustrationBase } from '../IllustrationBase';
 import { IllustrationProps } from '../IllustrationBase.types';
 
-const Logout64: React.FC<IllustrationProps> = (props) => {
+const Logout48: React.FC<IllustrationProps> = (props) => {
   return (
     <IllustrationBase {...props} width={48} height={48}>
       <path
@@ -25,4 +25,4 @@ const Logout64: React.FC<IllustrationProps> = (props) => {
   );
 };
 
-export default Logout64;
+export default Logout48;
