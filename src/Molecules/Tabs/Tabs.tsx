@@ -26,7 +26,7 @@ export const Item: React.FC<ItemProps> = ({ children }) => {
 };
 (Item as any).displayName = 'Tabs.Content';
 
-const StyledButton = styled(NormalizedElements.Button)<{ active?: boolean }>`
+const StyledButton = styled(NormalizedElements.Button)<{ $active?: boolean }>`
   background: none;
   display: flex;
   border: none;
@@ -34,7 +34,7 @@ const StyledButton = styled(NormalizedElements.Button)<{ active?: boolean }>`
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
-  color: ${(p) => (p.active ? p.theme.color.tabTitleActive : p.theme.color.tabTitle)};
+  color: ${(p) => (p.$active ? p.theme.color.tabTitleActive : p.theme.color.tabTitle)};
 `;
 
 // Reset browser styling for ul element
@@ -68,7 +68,7 @@ const Title: TitleComponent = ({
         role="tab"
         id={`tabs-tab-${index}`}
         tabIndex={active ? 0 : -1}
-        active={active}
+        $active={active}
       >
         <TabTitle active={active} height={height} variant={variant}>
           {children}

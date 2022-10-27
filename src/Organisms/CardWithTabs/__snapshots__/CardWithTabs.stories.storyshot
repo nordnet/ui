@@ -314,7 +314,6 @@ Array [
               className="Typography__Span-sc-10mju41-0 c10"
             >
               <button
-                active={true}
                 aria-selected={true}
                 className="c11 c12"
                 id="tabs-tab-0"
@@ -341,7 +340,6 @@ Array [
               className="Typography__Span-sc-10mju41-0 c14"
             >
               <button
-                active={false}
                 aria-selected={false}
                 className="c11 c15"
                 id="tabs-tab-1"
@@ -712,7 +710,6 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll 1`] =
             className="Typography__Span-sc-10mju41-0 c10"
           >
             <button
-              active={true}
               aria-selected={true}
               className="c11 c12"
               id="tabs-tab-0"
@@ -739,7 +736,6 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll 1`] =
             className="Typography__Span-sc-10mju41-0 c14"
           >
             <button
-              active={false}
               aria-selected={false}
               className="c11 c15"
               id="tabs-tab-1"
@@ -1186,7 +1182,6 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll of co
             className="Typography__Span-sc-10mju41-0 c11"
           >
             <button
-              active={true}
               aria-selected={true}
               className="c12 c13"
               id="tabs-tab-0"
@@ -1213,7 +1208,6 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll of co
             className="Typography__Span-sc-10mju41-0 c15"
           >
             <button
-              active={false}
               aria-selected={false}
               className="c12 c16"
               id="tabs-tab-1"
@@ -1586,7 +1580,6 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with Typography and ex
             className="Typography__Span-sc-10mju41-0 c10"
           >
             <button
-              active={true}
               aria-selected={true}
               className="c11 c12"
               id="tabs-tab-0"
@@ -1613,7 +1606,6 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with Typography and ex
             className="Typography__Span-sc-10mju41-0 c14"
           >
             <button
-              active={false}
               aria-selected={false}
               className="c11 c15"
               id="tabs-tab-1"
@@ -2011,7 +2003,6 @@ exports[`Storyshots Organisms / CardWithTabs With variant big 1`] = `
             className="Typography__Span-sc-10mju41-0 c13"
           >
             <button
-              active={true}
               aria-selected={true}
               className="c14 c15"
               id="tabs-tab-0"
@@ -2038,7 +2029,6 @@ exports[`Storyshots Organisms / CardWithTabs With variant big 1`] = `
             className="Typography__Span-sc-10mju41-0 c17"
           >
             <button
-              active={false}
               aria-selected={false}
               className="c14 c18"
               id="tabs-tab-1"
@@ -2366,7 +2356,6 @@ exports[`Storyshots Organisms / CardWithTabs with initialActiveTabIndex 1`] = `
             className="Typography__Span-sc-10mju41-0 c10"
           >
             <button
-              active={false}
               aria-selected={false}
               className="c11 c12"
               id="tabs-tab-0"
@@ -2393,7 +2382,6 @@ exports[`Storyshots Organisms / CardWithTabs with initialActiveTabIndex 1`] = `
             className="Typography__Span-sc-10mju41-0 c14"
           >
             <button
-              active={true}
               aria-selected={true}
               className="c11 c15"
               id="tabs-tab-1"

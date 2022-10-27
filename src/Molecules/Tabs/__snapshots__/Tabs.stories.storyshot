@@ -223,7 +223,6 @@ exports[`Storyshots Molecules / Tabs Controlled behaviour 1`] = `
           className="Typography__Span-sc-10mju41-0 c6"
         >
           <button
-            active={true}
             aria-selected={true}
             className="c7 c8"
             id="tabs-tab-0"
@@ -250,7 +249,6 @@ exports[`Storyshots Molecules / Tabs Controlled behaviour 1`] = `
           className="Typography__Span-sc-10mju41-0 c0"
         >
           <button
-            active={false}
             aria-selected={false}
             className="c7 c10"
             id="tabs-tab-1"
@@ -503,7 +501,6 @@ exports[`Storyshots Molecules / Tabs Default 1`] = `
           className="Typography__Span-sc-10mju41-0 c6"
         >
           <button
-            active={true}
             aria-selected={true}
             className="c7 c8"
             id="tabs-tab-0"
@@ -530,7 +527,6 @@ exports[`Storyshots Molecules / Tabs Default 1`] = `
           className="Typography__Span-sc-10mju41-0 c0"
         >
           <button
-            active={false}
             aria-selected={false}
             className="c7 c10"
             id="tabs-tab-1"
@@ -791,7 +787,6 @@ exports[`Storyshots Molecules / Tabs Large variant 1`] = `
           className="Typography__Span-sc-10mju41-0 c6"
         >
           <button
-            active={true}
             aria-selected={true}
             className="c7 c8"
             id="tabs-tab-0"
@@ -818,7 +813,6 @@ exports[`Storyshots Molecules / Tabs Large variant 1`] = `
           className="Typography__Span-sc-10mju41-0 c0"
         >
           <button
-            active={false}
             aria-selected={false}
             className="c7 c10"
             id="tabs-tab-1"
@@ -1031,7 +1025,6 @@ exports[`Storyshots Molecules / Tabs With conditionally hidden tab 1`] = `
           className="Typography__Span-sc-10mju41-0 c0"
         >
           <button
-            active={false}
             aria-selected={false}
             className="c7 c8"
             id="tabs-tab-1"
@@ -1285,7 +1278,6 @@ exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
           className="Typography__Span-sc-10mju41-0 c7"
         >
           <button
-            active={true}
             aria-selected={true}
             className="c8 c9"
             id="tabs-tab-0"
@@ -1312,7 +1304,6 @@ exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
           className="Typography__Span-sc-10mju41-0 c0"
         >
           <button
-            active={false}
             aria-selected={false}
             className="c8 c11"
             id="tabs-tab-1"
@@ -1569,7 +1560,6 @@ exports[`Storyshots Molecules / Tabs With height modified 1`] = `
           className="Typography__Span-sc-10mju41-0 c6"
         >
           <button
-            active={true}
             aria-selected={true}
             className="c7 c8"
             id="tabs-tab-0"
@@ -1596,7 +1586,6 @@ exports[`Storyshots Molecules / Tabs With height modified 1`] = `
           className="Typography__Span-sc-10mju41-0 c0"
         >
           <button
-            active={false}
             aria-selected={false}
             className="c7 c10"
             id="tabs-tab-1"
@@ -1867,7 +1856,6 @@ exports[`Storyshots Molecules / Tabs With horizontal scroll 1`] = `
           className="Typography__Span-sc-10mju41-0 c6"
         >
           <button
-            active={true}
             aria-selected={true}
             className="c7 c8"
             id="tabs-tab-0"
@@ -1894,7 +1882,6 @@ exports[`Storyshots Molecules / Tabs With horizontal scroll 1`] = `
           className="Typography__Span-sc-10mju41-0 c0"
         >
           <button
-            active={false}
             aria-selected={false}
             className="c7 c10"
             id="tabs-tab-1"
@@ -1921,7 +1908,6 @@ exports[`Storyshots Molecules / Tabs With horizontal scroll 1`] = `
           className="Typography__Span-sc-10mju41-0 c0"
         >
           <button
-            active={false}
             aria-selected={false}
             className="c7 c10"
             id="tabs-tab-2"
@@ -1948,7 +1934,6 @@ exports[`Storyshots Molecules / Tabs With horizontal scroll 1`] = `
           className="Typography__Span-sc-10mju41-0 c0"
         >
           <button
-            active={false}
             aria-selected={false}
             className="c7 c10"
             id="tabs-tab-3"
@@ -1975,7 +1960,6 @@ exports[`Storyshots Molecules / Tabs With horizontal scroll 1`] = `
           className="Typography__Span-sc-10mju41-0 c0"
         >
           <button
-            active={false}
             aria-selected={false}
             className="c7 c10"
             id="tabs-tab-4"
@@ -2002,7 +1986,6 @@ exports[`Storyshots Molecules / Tabs With horizontal scroll 1`] = `
           className="Typography__Span-sc-10mju41-0 c0"
         >
           <button
-            active={false}
             aria-selected={false}
             className="c7 c10"
             id="tabs-tab-5"
@@ -2264,7 +2247,6 @@ exports[`Storyshots Molecules / Tabs With styled tab content 1`] = `
           className="Typography__Span-sc-10mju41-0 c7"
         >
           <button
-            active={true}
             aria-selected={true}
             className="c8 c9"
             id="tabs-tab-0"
@@ -2291,7 +2273,6 @@ exports[`Storyshots Molecules / Tabs With styled tab content 1`] = `
           className="Typography__Span-sc-10mju41-0 c0"
         >
           <button
-            active={false}
             aria-selected={false}
             className="c8 c11"
             id="tabs-tab-1"
