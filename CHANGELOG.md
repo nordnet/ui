@@ -1,3 +1,10 @@
+## [11.8.1](https://github.com/nordnet/ui/compare/v11.8.0...v11.8.1) (2022-10-27)
+
+
+### Bug Fixes
+
+* dont send active prop to button ([c9b972a](https://github.com/nordnet/ui/commit/c9b972a))
+
 # [11.8.0](https://github.com/nordnet/ui/compare/v11.7.0...v11.8.0) (2022-10-27)
 
 
