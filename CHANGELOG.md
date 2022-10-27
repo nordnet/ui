@@ -1,3 +1,15 @@
+# [11.8.0](https://github.com/nordnet/ui/compare/v11.7.0...v11.8.0) (2022-10-27)
+
+
+### Bug Fixes
+
+* 🐛 fix const name for logout48 ([a27bfe9](https://github.com/nordnet/ui/commit/a27bfe9))
+
+
+### Features
+
+* 🎸 add logout48 illustration ([0bc1b20](https://github.com/nordnet/ui/commit/0bc1b20))
+
 # [11.7.0](https://github.com/nordnet/ui/compare/v11.6.1...v11.7.0) (2022-10-27)
 
 
