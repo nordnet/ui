@@ -26,7 +26,10 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
   return {
     accordionText: rawColor.gray2,
 
-    actionModalSharevilleIllustration: rawColor.brandGreen,
+    actionModalSharevilleIllustration: rawColor.gray900,
+    actionModalSharevilleIllustrationSecondary: rawColor.brandGreen,
+    actionModalBackground: rawColor.white,
+    actionModalLink: rawColor.blue500,
 
     accountBadgeBackground: rawColor.black,
     accountBadgeText: rawColor.white,
