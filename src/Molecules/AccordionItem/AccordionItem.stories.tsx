@@ -114,6 +114,8 @@ export const withTypePrimaryAndChevron = () => (
 
 export const withTypePrimaryAndChevronAndLeftBadgeIcon = () => (
   <AccordionItem
+    disableFocusOutline
+    disableBackgroundColor
     type="primary"
     withChevron
     title="Leverage products without stop loss"

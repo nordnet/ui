@@ -9,7 +9,8 @@ import { Props, ItemProps } from './AccordionItem.types';
 const TRANSITION_DURATION = 0.16;
 
 const Item = styled.div<ItemProps>`
-  outline: 1px ${(p) => (p.hasFocus ? `solid ${p.theme.color.cta}` : 'none')};
+  outline: 1px
+    ${(p) => (!p.disableFocusOutline && p.hasFocus ? `solid ${p.theme.color.cta}` : 'none')};
   background-color: ${(p) =>
     !p.disableBackgroundColor && p.hasFocus ? p.theme.color.background : 'transparent'};
   && + & {
@@ -82,6 +83,7 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
       onToggle,
       withChevron,
       disableBackgroundColor,
+      disableFocusOutline,
       disabled,
       p,
       px,
@@ -144,6 +146,7 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
         aria-expanded={expanded}
         hasFocus={hasFocus}
         disableBackgroundColor={disableBackgroundColor}
+        disableFocusOutline={disableFocusOutline}
         {...padding}
       >
         <Typography as={as} type={type} weight="bold">
