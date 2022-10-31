@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion, AccordionItem, Spinner, Typography } from '../..';
+import { Accordion, AccordionItem, Badge, Box, Icon, Spinner, Typography } from '../..';
 import docs from './Accordion.mdx';
 
 export default {
@@ -50,4 +50,56 @@ export const withFooter = () => (
       <ExampleContent />
     </AccordionItem>
   </Accordion>
+);
+
+export const withBadges = () => (
+  <Box p={10} backgroundColor={(t) => t.color.card}>
+    <Accordion>
+      <AccordionItem
+        disableFocusOutline
+        disableBackgroundColor
+        type="primary"
+        withChevron
+        title="Leverage products without stop loss"
+        label="Valid until 2023-12-31"
+        leftBadgeIcon={
+          <Badge.Icon badgeColor={(t) => t.color.badgeBackground} badgeSize="s">
+            <Icon.Warning16 color={(t) => t.color.badgeIconColor} />{' '}
+          </Badge.Icon>
+        }
+      >
+        <ExampleContent />
+      </AccordionItem>
+      <AccordionItem
+        disableFocusOutline
+        disableBackgroundColor
+        type="primary"
+        withChevron
+        title="Leverage products without stop loss"
+        label="Valid until 2023-12-31"
+        leftBadgeIcon={
+          <Badge.Icon badgeColor={(t) => t.color.badgeBackground} badgeSize="s">
+            <Icon.Warning16 color={(t) => t.color.badgeIconColor} />{' '}
+          </Badge.Icon>
+        }
+      >
+        <ExampleContent />
+      </AccordionItem>
+      <AccordionItem
+        disableFocusOutline
+        disableBackgroundColor
+        type="primary"
+        withChevron
+        title="Leverage products without stop loss"
+        label="Valid until 2023-12-31"
+        leftBadgeIcon={
+          <Badge.Icon badgeColor={(t) => t.color.badgeBackground} badgeSize="s">
+            <Icon.Warning16 color={(t) => t.color.badgeIconColor} />{' '}
+          </Badge.Icon>
+        }
+      >
+        <ExampleContent />
+      </AccordionItem>
+    </Accordion>
+  </Box>
 );

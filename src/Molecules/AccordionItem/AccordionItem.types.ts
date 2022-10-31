@@ -14,6 +14,7 @@ export type Props = {
   ref?: React.Ref<HTMLButtonElement>;
   withChevron?: boolean;
   disableBackgroundColor?: boolean;
+  disableFocusOutline?: boolean;
   disabled?: boolean;
   p?: number;
   px?: number;
@@ -30,6 +31,7 @@ export type Props = {
 export type ItemProps = {
   hasFocus: boolean;
   disableBackgroundColor?: boolean;
+  disableFocusOutline?: boolean;
   p?: number;
   px?: number;
   py?: number;
