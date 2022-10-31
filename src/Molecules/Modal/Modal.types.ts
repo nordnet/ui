@@ -26,7 +26,7 @@ export type BackdropProps = {
 };
 
 export type DialogProps = {
-  show: boolean;
+  $show: boolean;
   onClick: (e: React.MouseEvent<HTMLElement>) => void;
   $fullScreenMobile?: boolean;
   $fixedBottomMobile?: boolean;
