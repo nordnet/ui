@@ -1,3 +1,10 @@
+## [11.8.2](https://github.com/nordnet/ui/compare/v11.8.1...v11.8.2) (2022-10-31)
+
+
+### Bug Fixes
+
+* add disable focus prop to axccordion item ([83295ba](https://github.com/nordnet/ui/commit/83295ba))
+
 ## [11.8.1](https://github.com/nordnet/ui/compare/v11.8.0...v11.8.1) (2022-10-27)
 
 
