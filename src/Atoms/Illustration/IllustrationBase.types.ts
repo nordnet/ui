@@ -14,7 +14,6 @@ export type IllustrationProps = {
   title?: string;
   color?: ColorFn | string;
   secondaryColor?: ColorFn | string;
-  primaryColor?: ColorFn | string;
   inline?: boolean;
 };
 

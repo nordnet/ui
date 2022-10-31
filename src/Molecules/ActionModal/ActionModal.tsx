@@ -1,14 +1,14 @@
-import React from 'react';
+/* eslint-disable react/require-default-props */
+import React, { ReactElement, ReactNode } from 'react';
 import FocusLock from 'react-focus-lock';
 import { RemoveScroll } from 'react-remove-scroll';
 import styled from 'styled-components';
 
-import Button from '../Button';
 import Portal from '../../Atoms/Portal';
 import Flexbox from '../../Atoms/Flexbox';
 import { useMedia } from '../../Atoms/Media';
 import Box from '../../Atoms/Box';
-import Typography from '../../Atoms/Typography';
+import { IllustrationProps } from '../../Atoms/Illustration/IllustrationBase.types';
 
 const Dialog = styled.div`
   position: relative;
@@ -54,19 +54,19 @@ const StyledFlexbox = styled(Flexbox)`
   }
 `;
 export const ActionModal = ({
-  autoFocus = false,
+  autoFocus = true,
   illustration,
   title,
   children,
-  onSkipClick,
-  onCTAClick,
+  cancelButton = null,
+  confirmButton,
 }: {
-  autoFocus: boolean;
-  illustration: any;
+  illustration: ReactElement<IllustrationProps>;
   title: string;
   children: any;
-  onSkipClick: () => void;
-  onCTAClick: () => void;
+  autoFocus?: boolean;
+  cancelButton?: ReactNode;
+  confirmButton: ReactNode;
 }) => {
   const isSmallerScreen = useMedia((theme) => theme.media.lessThan(theme.breakpoints.md));
   const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.sm));
@@ -86,17 +86,11 @@ export const ActionModal = ({
               <Flexbox
                 container
                 direction={isSmallerScreen ? 'column-reverse' : 'row'}
-                justifyContent="space-between"
+                justifyContent={cancelButton ? 'space-between' : 'flex-end'}
                 gap={3}
               >
-                <Button variant="neutral" onClick={onSkipClick}>
-                  <Typography color={(t) => t.color.actionModalLink} type="secondary" weight="bold">
-                    Skip the tour
-                  </Typography>
-                </Button>
-                <Button variant="primary" onClick={onCTAClick}>
-                  Take a tour
-                </Button>
+                {cancelButton}
+                {confirmButton}
               </Flexbox>
             </Dialog>
           </RemoveScroll>

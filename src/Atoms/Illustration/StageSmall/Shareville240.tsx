@@ -9,7 +9,7 @@ const Shareville240: React.FC<IllustrationProps> = (props) => {
   const primaryIllustrationColor = getColor(
     theme,
     theme.color.actionModalSharevilleIllustration,
-    props.primaryColor,
+    props.color,
   );
   const secondaryIllustrationColor = getColor(
     theme,

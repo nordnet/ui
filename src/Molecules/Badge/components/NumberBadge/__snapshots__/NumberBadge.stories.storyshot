@@ -77,6 +77,40 @@ exports[`Storyshots Molecules / Badge / Number Badge with animation 1`] = `
   line-height: 1.3333333333333333;
 }
 
+.c10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #336BFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 20px;
+}
+
+.c11 {
+  -webkit-animation: scale 0.5s ease-out;
+  animation: scale 0.5s ease-out;
+  padding: 0 4px;
+}
+
+.c13 {
+  padding: 0 4px;
+}
+
 .c8 {
   position: relative;
   box-sizing: border-box;
@@ -126,40 +160,6 @@ exports[`Storyshots Molecules / Badge / Number Badge with animation 1`] = `
 
 .c8:active::before {
   border-color: #1F4099;
-}
-
-.c10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #336BFF;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  height: 20px;
-  min-width: 20px;
-  border-radius: 20px;
-}
-
-.c11 {
-  -webkit-animation: scale 0.5s ease-out;
-  animation: scale 0.5s ease-out;
-  padding: 0 4px;
-}
-
-.c13 {
-  padding: 0 4px;
 }
 
 .c0 {

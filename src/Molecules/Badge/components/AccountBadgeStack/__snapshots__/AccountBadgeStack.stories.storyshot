@@ -1932,6 +1932,85 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
   line-height: 1.6;
 }
 
+.c13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #000000;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+}
+
+.c23 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+}
+
+.c12 {
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+.c12:not(:last-of-type) {
+  -webkit-mask: radial-gradient( circle at 24px,transparent 13px,white 14px );
+  mask: radial-gradient( circle at 24px,transparent 13px,white 14px );
+}
+
+.c12:not(:first-of-type) {
+  margin-left: -11px;
+}
+
+.c11 {
+  white-space: nowrap;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c15 {
+  font-weight: 800;
+}
+
 .c20 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -2091,85 +2170,6 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
 
 .c17::before {
   display: none;
-}
-
-.c13 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #000000;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  height: 24px;
-  width: 24px;
-  border-radius: 24px;
-}
-
-.c23 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: currentColor;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  height: 24px;
-  width: 24px;
-  border-radius: 24px;
-}
-
-.c12 {
-  border-radius: 50%;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: relative;
-}
-
-.c12:not(:last-of-type) {
-  -webkit-mask: radial-gradient( circle at 24px,transparent 13px,white 14px );
-  mask: radial-gradient( circle at 24px,transparent 13px,white 14px );
-}
-
-.c12:not(:first-of-type) {
-  margin-left: -11px;
-}
-
-.c11 {
-  white-space: nowrap;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c15 {
-  font-weight: 800;
 }
 
 .c3 {
