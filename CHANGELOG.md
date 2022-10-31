@@ -1,3 +1,16 @@
+# [11.9.0](https://github.com/nordnet/ui/compare/v11.8.2...v11.9.0) (2022-10-31)
+
+
+### Bug Fixes
+
+* 🐛 adjust API to accept two buttons ([46a0bdf](https://github.com/nordnet/ui/commit/46a0bdf))
+
+
+### Features
+
+* 🎸 add Action Modal component ([8975a06](https://github.com/nordnet/ui/commit/8975a06))
+* add new molecule action modal ([8d86119](https://github.com/nordnet/ui/commit/8d86119))
+
 ## [11.8.2](https://github.com/nordnet/ui/compare/v11.8.1...v11.8.2) (2022-10-31)
 
 
