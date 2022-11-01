@@ -44,7 +44,6 @@ export const Default = () => {
             </Typography>
           </Button>
         }
-        autoFocus
       >
         children are here
       </ActionModal>
@@ -68,7 +67,6 @@ export const withConfirmButtonOnly = () => {
             confirm
           </Button>
         }
-        autoFocus
       >
         children are here
       </ActionModal>

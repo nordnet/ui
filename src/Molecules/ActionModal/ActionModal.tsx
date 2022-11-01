@@ -1,11 +1,10 @@
 /* eslint-disable react/require-default-props */
 import React, { ReactElement, ReactNode } from 'react';
-import FocusLock from 'react-focus-lock';
-import { RemoveScroll } from 'react-remove-scroll';
 import styled from 'styled-components';
 
 import Portal from '../../Atoms/Portal';
 import Flexbox from '../../Atoms/Flexbox';
+import Typography from '../../Atoms/Typography';
 import { useMedia } from '../../Atoms/Media';
 import Box from '../../Atoms/Box';
 import { IllustrationProps } from '../../Atoms/Illustration/IllustrationBase.types';
@@ -33,6 +32,7 @@ const Dialog = styled.div`
 const StyledFlexbox = styled(Flexbox)`
   margin: auto;
   position: fixed;
+  z-index: 1;
   left: 0;
   right: 0;
   bottom: ${({ theme }) => theme.spacing.unit(10)}px;
@@ -54,7 +54,6 @@ const StyledFlexbox = styled(Flexbox)`
   }
 `;
 export const ActionModal = ({
-  autoFocus = true,
   illustration,
   title,
   children,
@@ -64,7 +63,6 @@ export const ActionModal = ({
   illustration: ReactElement<IllustrationProps>;
   title: string;
   children: any;
-  autoFocus?: boolean;
   cancelButton?: ReactNode;
   confirmButton: ReactNode;
 }) => {
@@ -73,28 +71,28 @@ export const ActionModal = ({
   return (
     <Portal>
       <StyledFlexbox container justifyContent={isMobile ? 'center' : 'flex-end'}>
-        <FocusLock autoFocus={autoFocus}>
-          <RemoveScroll>
-            <Dialog>
-              <Flexbox container direction="column" alignItems="center" gap={5}>
-                <Flexbox item>{illustration}</Flexbox>
-                <Flexbox item>{title}</Flexbox>
-              </Flexbox>
+        <Dialog>
+          <Flexbox container direction="column" alignItems="center" gap={5}>
+            <Flexbox item>{illustration}</Flexbox>
+            <Flexbox item>
+              <Typography type="title2" weight="bold" color={(t) => t.color.textLight}>
+                {title}
+              </Typography>
+            </Flexbox>
+          </Flexbox>
 
-              <Box my={3}>{children}</Box>
+          <Box my={3}>{children}</Box>
 
-              <Flexbox
-                container
-                direction={isSmallerScreen ? 'column-reverse' : 'row'}
-                justifyContent={cancelButton ? 'space-between' : 'flex-end'}
-                gap={3}
-              >
-                {cancelButton}
-                {confirmButton}
-              </Flexbox>
-            </Dialog>
-          </RemoveScroll>
-        </FocusLock>
+          <Flexbox
+            container
+            direction={isSmallerScreen ? 'column-reverse' : 'row'}
+            justifyContent={cancelButton ? 'space-between' : 'flex-end'}
+            gap={3}
+          >
+            {cancelButton}
+            {confirmButton}
+          </Flexbox>
+        </Dialog>
       </StyledFlexbox>
     </Portal>
   );
