@@ -245,11 +245,11 @@ export const ModalInner: React.FC<Props> = ({
               onAnimationComplete={onAnimationComplete || noop}
               aria-labelledby={titleId}
               className={className}
-              show={show}
               role="dialog"
               {...animationProps}
               ref={dialogRef}
               onClick={handleDialogClick}
+              $show={show}
               $fullScreenMobile={fullScreenMobile}
               $fixedBottomMobile={fixedBottomMobile}
               isStatusModal={isStatusModal}
