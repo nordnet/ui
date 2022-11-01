@@ -3,13 +3,19 @@ import { Box, Button, Flexbox, Modal, Spinner, Typography, OldIcon } from '../..
 import { Props } from './StatusModal.types';
 import { isFunction } from '../../common/utils';
 
-const StatusModal: React.FC<Props> = ({ id = '', loading = false, onClose, options = {} }) => {
+const StatusModal: React.FC<Props> = ({
+  id = '',
+  loading = false,
+  onClose,
+  options = {},
+  fixedBottomMobile = false,
+}) => {
   const [showModal, setShowModal] = useState(false);
 
   const { status, title, text, textConfirm, textCancel } = options || {};
 
   const closeModal = useCallback(
-    (confirmed) => {
+    confirmed => {
       if (isFunction(onClose)) {
         onClose(confirmed);
       }
@@ -35,6 +41,7 @@ const StatusModal: React.FC<Props> = ({ id = '', loading = false, onClose, optio
       closeOnBackdropClick
       isStatusModal
       fullScreenMobile={false}
+      fixedBottomMobile={fixedBottomMobile}
     >
       <Box pt={7} pb={7} px={2} sm={{ px: 0, pb: 0, pt: 5 }}>
         <Flexbox
@@ -47,13 +54,11 @@ const StatusModal: React.FC<Props> = ({ id = '', loading = false, onClose, optio
         >
           {loading && <Spinner id={`${id}-spinner`} size={23} />}
           {status === 'SUCCESS' && (
-            <OldIcon.CheckMarkCircle fill={(t) => t.color.functionGreen} size={23} />
+            <OldIcon.CheckMarkCircle fill={t => t.color.functionGreen} size={23} />
           )}
-          {status === 'ERROR' && (
-            <OldIcon.CrossCircle fill={(t) => t.color.functionRed} size={23} />
-          )}
+          {status === 'ERROR' && <OldIcon.CrossCircle fill={t => t.color.functionRed} size={23} />}
           {status === 'WARNING' && (
-            <OldIcon.WarningTriangle color={(t) => t.color.warning} size={23} />
+            <OldIcon.WarningTriangle color={t => t.color.warning} size={23} />
           )}
           <Flexbox container direction="column" alignItems="center" gutter={2}>
             {title && (

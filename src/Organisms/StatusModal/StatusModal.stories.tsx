@@ -44,7 +44,7 @@ const defaultProps = {
 };
 
 storiesOf('Organisms / StatusModal', module)
-  .addDecorator((storyFn) => storyFn())
+  .addDecorator(storyFn => storyFn())
   .add('Loading', () => <StatusModal {...defaultProps} loading options={loadingOptions} />)
   .add('Success', () => <StatusModal {...defaultProps} loading={false} options={successOptions} />)
   .add('Warning', () => <StatusModal {...defaultProps} loading={false} options={warningOptions} />)
@@ -73,4 +73,7 @@ storiesOf('Organisms / StatusModal', module)
         />
       </>
     );
-  });
+  })
+  .add('With fixed bottom mobile', () => (
+    <StatusModal {...defaultProps} fixedBottomMobile loading={false} options={successOptions} />
+  ));
