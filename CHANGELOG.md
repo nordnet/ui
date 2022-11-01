@@ -1,3 +1,10 @@
+## [11.9.1](https://github.com/nordnet/ui/compare/v11.9.0...v11.9.1) (2022-11-01)
+
+
+### Bug Fixes
+
+* 🐛 transient props for removing console warnings in test ([8ff67f0](https://github.com/nordnet/ui/commit/8ff67f0))
+
 # [11.9.0](https://github.com/nordnet/ui/compare/v11.8.2...v11.9.0) (2022-10-31)
 
 
