@@ -8,6 +8,7 @@ export type FeedbackBannerProps = {
   title?: string | React.ReactChild | React.ReactChild[];
   withIcon?: boolean;
   className?: string;
+  children: React.ReactNode;
 };
 
 export type FeedbackBannerComponent = React.FC<FeedbackBannerProps>;
