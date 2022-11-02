@@ -826,6 +826,50 @@ exports[`Storyshots Atoms / Icon / Category / Finance 16px 1`] = `
       </title>
     </svg>
   </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c4"
+      >
+        Test16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M13 0H0V16H2V2H11V9H13V0Z"
+        fill="currentColor"
+      />
+      <path
+        d="M4 4H7V6H4V4Z"
+        fill="currentColor"
+      />
+      <path
+        d="M9 9H4V7H9V9Z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M16.0002 11H6.58594L4.08594 13.5L6.58594 16H16.0002V11ZM6.91436 13.5L7.41436 13H14.0002V14H7.41436L6.91436 13.5Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        22
+      </title>
+    </svg>
+  </div>
 </div>
 `;
 
@@ -2088,6 +2132,54 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
       <span
         className="Typography__Span-sc-10mju41-0 c4"
       >
+        Test24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M20 1H2V23H4V3H18V15H20V1Z"
+        fill="currentColor"
+      />
+      <path
+        d="M13 13H6V15H13V13Z"
+        fill="currentColor"
+      />
+      <path
+        d="M6 5H10V7H6V5Z"
+        fill="currentColor"
+      />
+      <path
+        d="M6 11H16V9H6V11Z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M9.58594 17H23.0002V23H9.58594L6.58594 20L9.58594 17ZM10.4144 19L9.41436 20L10.4144 21H18V19H10.4144ZM20 19V21H21.0002V19H20Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        34
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c4"
+      >
         Villa24
       </span>
     </div>
@@ -2111,7 +2203,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 24px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        34
+        35
       </title>
     </svg>
   </div>
@@ -3494,6 +3586,58 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
       <span
         className="Typography__Span-sc-10mju41-0 c4"
       >
+        Test32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        d="M25 2H3V30H5V4H23V21H25V2Z"
+        fill="currentColor"
+      />
+      <path
+        d="M21 15H7V17H21V15Z"
+        fill="currentColor"
+      />
+      <path
+        d="M7 19H15V21H7V19Z"
+        fill="currentColor"
+      />
+      <path
+        d="M11 6H7V8H11V6Z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M13.6379 30L9.43795 26.5L13.6379 23H29V30H13.6379ZM27 28H25V25H27V28ZM14.3621 25H23V28H14.362L12.562 26.5L14.3621 25Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <path
+        d="M7 13H21V11H7V13Z"
+        fill="currentColor"
+      />
+      <title>
+        37
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c4"
+      >
         Villa32
       </span>
     </div>
@@ -3523,7 +3667,7 @@ exports[`Storyshots Atoms / Icon / Category / Finance 32px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        37
+        38
       </title>
     </svg>
   </div>
