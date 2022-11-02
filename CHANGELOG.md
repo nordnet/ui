@@ -1,3 +1,10 @@
+## [11.9.2](https://github.com/nordnet/ui/compare/v11.9.1...v11.9.2) (2022-11-02)
+
+
+### Bug Fixes
+
+* add new test icon ([00246dc](https://github.com/nordnet/ui/commit/00246dc))
+
 ## [11.9.1](https://github.com/nordnet/ui/compare/v11.9.0...v11.9.1) (2022-11-01)
 
 
