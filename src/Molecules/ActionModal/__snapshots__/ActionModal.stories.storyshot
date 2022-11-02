@@ -141,7 +141,7 @@ exports[`Storyshots Molecules / Action Modal   Default 1`] = `
 .c2 {
   margin: auto;
   position: fixed;
-  z-index: 1;
+  z-index: 500;
   left: 0;
   right: 0;
   bottom: 40px;
@@ -563,7 +563,7 @@ exports[`Storyshots Molecules / Action Modal   With Confirm Button Only 1`] = `
 .c2 {
   margin: auto;
   position: fixed;
-  z-index: 1;
+  z-index: 500;
   left: 0;
   right: 0;
   bottom: 40px;

@@ -32,7 +32,7 @@ const Dialog = styled.div`
 const StyledFlexbox = styled(Flexbox)`
   margin: auto;
   position: fixed;
-  z-index: 1;
+  z-index: ${(p) => p.theme.zIndex.modal};
   left: 0;
   right: 0;
   bottom: ${({ theme }) => theme.spacing.unit(10)}px;
