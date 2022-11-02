@@ -33,6 +33,7 @@ const StyledFlexbox = styled(Flexbox)`
   margin: auto;
   position: fixed;
   z-index: ${(p) => p.theme.zIndex.modal};
+  pointer-events: none;
   left: 0;
   right: 0;
   bottom: ${({ theme }) => theme.spacing.unit(10)}px;
