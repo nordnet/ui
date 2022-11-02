@@ -56,7 +56,6 @@
     }
   },
   "dependencies": {
-    "@nordnet/ui": "file:.yalc/@nordnet/ui",
     "@popperjs/core": "^2.9.3",
     "@xstate/react": "^0.7.1",
     "color": "^4.0.1",
