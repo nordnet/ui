@@ -18,7 +18,7 @@ export type InnerProps = {
   isStatusModal?: boolean;
   onAnimationComplete?: () => void;
   showBackdrop?: boolean;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 export type BackdropProps = {

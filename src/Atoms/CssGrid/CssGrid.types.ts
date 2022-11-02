@@ -53,7 +53,7 @@ type BaseItemProps = {
   justify?: 'start' | 'end' | 'center' | 'stretch';
   align?: 'start' | 'end' | 'center' | 'stretch';
   place?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 export type ItemProps = SizeAwareProps<BaseItemProps>;
