@@ -13,4 +13,5 @@ export type Props = {
   onClose: Function;
   options: Option;
   id: string;
+  showClose?: boolean;
 };

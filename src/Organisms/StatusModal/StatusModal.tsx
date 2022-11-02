@@ -3,7 +3,13 @@ import { Box, Button, Flexbox, Modal, Spinner, Typography, OldIcon } from '../..
 import { Props } from './StatusModal.types';
 import { isFunction } from '../../common/utils';
 
-const StatusModal: React.FC<Props> = ({ id = '', loading = false, onClose, options = {} }) => {
+const StatusModal: React.FC<Props> = ({
+  id = '',
+  loading = false,
+  onClose,
+  options = {},
+  showClose = false,
+}) => {
   const [showModal, setShowModal] = useState(false);
 
   const { status, title, text, textConfirm, textCancel } = options || {};
@@ -30,8 +36,8 @@ const StatusModal: React.FC<Props> = ({ id = '', loading = false, onClose, optio
   return (
     <Modal
       open={showModal}
-      onClose={onClose}
-      hideClose
+      onClose={closeModal}
+      hideClose={!showClose}
       closeOnBackdropClick
       isStatusModal
       fullScreenMobile={false}

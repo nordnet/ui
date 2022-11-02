@@ -67,6 +67,7 @@ storiesOf('Organisms / StatusModal', module)
           {...defaultProps}
           loading={false}
           options={twoButtonsOptions}
+          showClose
           onClose={(confirmed: boolean) => {
             setButtonClicked(confirmed ? 'CONFIRM' : 'CANCEL');
           }}
