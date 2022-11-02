@@ -10,4 +10,6 @@ exports[`Storyshots Organisms / StatusModal Warning 1`] = `null`;
 
 exports[`Storyshots Organisms / StatusModal With fixed bottom mobile 1`] = `null`;
 
+exports[`Storyshots Organisms / StatusModal With functionRed confirm buttom 1`] = `null`;
+
 exports[`Storyshots Organisms / StatusModal With two buttons 1`] = `null`;

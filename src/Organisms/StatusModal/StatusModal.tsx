@@ -9,13 +9,14 @@ const StatusModal: React.FC<Props> = ({
   onClose,
   options = {},
   fixedBottomMobile = false,
+  confirmColor,
 }) => {
   const [showModal, setShowModal] = useState(false);
 
   const { status, title, text, textConfirm, textCancel } = options || {};
 
   const closeModal = useCallback(
-    confirmed => {
+    (confirmed) => {
       if (isFunction(onClose)) {
         onClose(confirmed);
       }
@@ -54,11 +55,13 @@ const StatusModal: React.FC<Props> = ({
         >
           {loading && <Spinner id={`${id}-spinner`} size={23} />}
           {status === 'SUCCESS' && (
-            <OldIcon.CheckMarkCircle fill={t => t.color.functionGreen} size={23} />
+            <OldIcon.CheckMarkCircle fill={(t) => t.color.functionGreen} size={23} />
           )}
-          {status === 'ERROR' && <OldIcon.CrossCircle fill={t => t.color.functionRed} size={23} />}
+          {status === 'ERROR' && (
+            <OldIcon.CrossCircle fill={(t) => t.color.functionRed} size={23} />
+          )}
           {status === 'WARNING' && (
-            <OldIcon.WarningTriangle color={t => t.color.warning} size={23} />
+            <OldIcon.WarningTriangle color={(t) => t.color.warning} size={23} />
           )}
           <Flexbox container direction="column" alignItems="center" gutter={2}>
             {title && (
@@ -75,7 +78,11 @@ const StatusModal: React.FC<Props> = ({
               <Flexbox item>
                 <Box pt={2}>
                   {textConfirm && (
-                    <Button size="l" onClick={() => closeModal(true)}>
+                    <Button
+                      size="l"
+                      onClick={() => closeModal(true)}
+                      color={(t) => (confirmColor ? confirmColor(t) : t.color.cta)}
+                    >
                       {textConfirm}
                     </Button>
                   )}
