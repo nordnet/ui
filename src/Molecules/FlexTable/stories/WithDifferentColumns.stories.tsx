@@ -71,7 +71,7 @@ export const DifferentAlignmentsTable = () => (
   </StyledBackground>
 );
 
-const FlagCell: React.FC<{ columnId: string } & FlexProps> = React.memo(
+const FlagCell: React.FC<{ children?: React.ReactNode; columnId: string } & FlexProps> = React.memo(
   ({ children, columnId, ...cellProps }) => (
     <FlexTable.Cell columnId={columnId} {...cellProps}>
       <FlexTable.CellInlineContainer>

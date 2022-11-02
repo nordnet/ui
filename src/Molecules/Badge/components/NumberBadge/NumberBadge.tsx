@@ -3,7 +3,12 @@ import styled, { css } from 'styled-components';
 import { Typography } from '../../../..';
 import { ColorFn } from '../../../../common/Types';
 import { isElement, isFunction } from '../../../../common/utils';
-import { StyledBaseBadgeProps, Props, NumberBadgeComponent } from './NumberBadge.types';
+import {
+  StyledBaseBadgeProps,
+  Props,
+  NumberBadgeComponent,
+  NumberBadgeContentProps,
+} from './NumberBadge.types';
 import { BaseBadge } from '../BaseBadge';
 import {
   MAP_FONT_SIZE,
@@ -33,10 +38,11 @@ const StyledBaseBadge: React.FC<StyledBaseBadgeProps> = styled(BaseBadge)<Styled
   ${(p) => (p.$padding ? `padding: 0 ${p.theme.spacing.unit(p.$padding)}px;` : '')}
 `;
 
-const NumberBadgeContent: React.FC<{
-  color?: ColorFn;
-  typographyType: React.ComponentProps<typeof Typography>['type'];
-}> = ({ children, color, typographyType }) => {
+const NumberBadgeContent: React.FC<NumberBadgeContentProps> = ({
+  children,
+  color,
+  typographyType,
+}) => {
   if (typeof children === 'undefined') return null;
   if (isFunction(children)) return children();
   if (isElement(children)) return children;

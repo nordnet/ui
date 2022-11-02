@@ -11,6 +11,7 @@ type ListFullScreenProps = {
   maxHeight?: string;
   noFormField?: boolean;
   placement?: 'bottom' | 'top';
+  children?: React.ReactNode;
 };
 
 const StyledList = styled(UIList)<{ role: string }>`

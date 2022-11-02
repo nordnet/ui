@@ -15,6 +15,7 @@ type TextWrapperProps = {
    * @default false
    */
   isLabel?: boolean;
+  children?: React.ReactNode;
 };
 
 export type TextWrapperComponent = React.FC<TextWrapperProps>;

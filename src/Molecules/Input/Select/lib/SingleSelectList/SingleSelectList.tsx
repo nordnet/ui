@@ -12,6 +12,7 @@ import {
 } from '../../../../..';
 
 type ListProps = {
+  children?: React.ReactNode;
   searchComponent?: React.ReactNode;
   actionsComponent?: React.ReactNode;
   maxHeight?: string;

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Link as RRLink, MemoryRouter } from 'react-router-dom';
 import { LinkProvider } from '.';
-import { LinkProps } from './types';
+import { LinkProps, ProviderProps } from './types';
 
 export const RawLink: FC<LinkProps> = (props) => {
   const {
@@ -30,7 +30,7 @@ export const RawLink: FC<LinkProps> = (props) => {
   );
 };
 
-export const Provider: FC = ({ children }) => {
+export const Provider: FC<ProviderProps> = ({ children }) => {
   return (
     <MemoryRouter>
       <LinkProvider link={RawLink}>

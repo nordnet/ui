@@ -12,6 +12,7 @@ type ListProps = {
   itemsPerColumn?: number;
   columnWidth?: string;
   listWidth?: string;
+  children?: React.ReactNode;
 };
 
 const StyledColumnsList = styled(UIList)<any>`
