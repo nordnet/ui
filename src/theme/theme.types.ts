@@ -606,6 +606,8 @@ export type ThemeColors = {
   sellActive: string;
   /** gray0 */
   separator: string;
+  /** gray200 */
+  separatorFullWidth: string;
   /** 3 percent of black */
   shadowCard: string;
   /** 5 percent of black */
@@ -616,6 +618,8 @@ export type ThemeColors = {
   shadowSwitch: string;
   /** complementaryGreen1 */
   shareville: string;
+  /** gray500 */
+  sharevilleDeletedContent: string;
   /** gray6 */
   skeleton: string;
   /** gray6 */
