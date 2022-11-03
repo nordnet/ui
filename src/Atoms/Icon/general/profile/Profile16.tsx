@@ -5,7 +5,7 @@ import { IconProps } from '../../IconBase.types';
 
 const Profile16: React.FC<IconProps> = (props) => {
   return (
-    <IconBase {...props} width={24} height={24}>
+    <IconBase {...props} width={16} height={16}>
       <path
         fill="currentColor"
         fillRule="evenodd"

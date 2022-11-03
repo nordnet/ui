@@ -10131,10 +10131,10 @@ Array [
       aria-hidden="true"
       className="c0"
       focusable="false"
-      height={24}
+      height={16}
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
-      width={24}
+      width={16}
     >
       <path
         clipRule="evenodd"
@@ -12481,10 +12481,10 @@ Array [
       aria-hidden="true"
       className="c0"
       focusable="false"
-      height={24}
+      height={16}
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
-      width={24}
+      width={16}
     >
       <path
         clipRule="evenodd"
@@ -29195,10 +29195,10 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           aria-hidden="true"
           className="c4"
           focusable="false"
-          height={24}
+          height={16}
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          width={24}
+          width={16}
         >
           <path
             clipRule="evenodd"
@@ -31781,10 +31781,10 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           aria-hidden="true"
           className="c4"
           focusable="false"
-          height={24}
+          height={16}
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          width={24}
+          width={16}
         >
           <path
             clipRule="evenodd"
