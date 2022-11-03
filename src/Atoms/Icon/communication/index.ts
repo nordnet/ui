@@ -29,6 +29,7 @@ import mail from './mail';
 import notification from './notification';
 import phone from './phone';
 import podcast from './podcast';
+import poll from './poll';
 import support from './support';
 import twitter from './twitter';
 import video from './video';
@@ -72,6 +73,7 @@ export default {
   ...notification,
   ...phone,
   ...podcast,
+  ...poll,
   ...support,
   ...twitter,
   ...video,

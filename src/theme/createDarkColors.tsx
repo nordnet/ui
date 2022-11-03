@@ -285,6 +285,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     sell: rawColor.pink500,
     sellActive: rawColor.pink700,
     separator: rawColor.gray2,
+    separatorFullWidth: rawColor.gray900,
 
     shadowCard: Color(rawColor.black).alpha(0.03).rgb().string(),
     shadowInput: Color(rawColor.black).alpha(0.03).rgb().string(),
@@ -292,6 +293,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     shadowSwitch: Color(rawColor.black).alpha(0.05).rgb().string(),
 
     shareville: rawColor.complementaryGreen1,
+    sharevilleDeletedContent: rawColor.gray500,
+
     skeleton: rawColor.gray700,
 
     sliderBackgroundColor: rawColor.gray6,
