@@ -10,6 +10,7 @@ interface MatchParams {
 interface PaginationRouteHelperProps {
   currentPage: number;
   setCurrentPage: (pageNumber: number) => void;
+  children?: React.ReactNode;
 }
 
 interface ViewProps extends PaginationRouteHelperProps {

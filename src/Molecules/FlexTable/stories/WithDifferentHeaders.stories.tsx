@@ -18,7 +18,7 @@ export default {
 
 export const DefaultTableHeaders = () => {
   const DefaultTableHeadersExample = () => {
-    const CustomisedTableHeader: React.FC = ({ children }) => (
+    const CustomisedTableHeader: React.FC<{ children?: React.ReactNode }> = ({ children }) => (
       <FlexTable.Header columnId="column3" sortable>
         {({ sortable, sorted, onSortClick, sortOrder }) => (
           <FlexTable.Header.SortButton onClick={onSortClick}>

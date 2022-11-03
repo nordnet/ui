@@ -8,6 +8,7 @@ export type InternalProps = {
 export type Props = {
   disabled?: boolean;
   variant?: Variant;
+  children?: React.ReactNode;
 };
 
 export type Component = React.FC<Props>;

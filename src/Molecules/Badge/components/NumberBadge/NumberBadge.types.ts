@@ -1,4 +1,5 @@
 import React from 'react';
+import { Typography } from '../../../..';
 import { ColorFn } from '../../../../common/Types';
 import { BaseBadgeProps, HtmlProps } from '../BaseBadge/BaseBadge.types';
 
@@ -17,6 +18,12 @@ type BaseProps = HtmlProps & {
 
 export type Props = BaseProps & {
   badgeSize?: 'xs' | 's' | 'm' | 'l' | number;
+  children?: React.ReactNode;
+};
+
+export type NumberBadgeContentProps = {
+  color?: ColorFn;
+  typographyType: React.ComponentProps<typeof Typography>['type'];
   children?: React.ReactNode;
 };
 

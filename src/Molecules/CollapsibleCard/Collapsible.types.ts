@@ -14,6 +14,7 @@ export type CollapsibleProps = {
   titleRowPaddingX?: number;
   action?: React.ReactNode;
   fullWidthTitle?: boolean;
+  children?: React.ReactNode;
 };
 
 export type IndicatorsProps = {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Flexbox, ListItem, ListWithTitles } from '../..';
 
-const ItemContainer: React.FunctionComponent = ({ children }) => (
+const ItemContainer: React.FunctionComponent<{ children?: React.ReactNode }> = ({ children }) => (
   <Flexbox container justifyContent="space-between">
     {children}
   </Flexbox>

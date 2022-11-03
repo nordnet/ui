@@ -14,6 +14,7 @@ export type ButtonContentProps = {
   size: 's' | 'm' | 'l';
   /** @default primary */
   variant: 'primary' | 'secondary' | 'neutral';
+  children?: React.ReactNode;
 };
 
 export type ButtonContentComponent = React.FC<ButtonContentProps>;

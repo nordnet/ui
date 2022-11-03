@@ -2,6 +2,7 @@ export type LabelAddonProp = {
   labelTooltip?: string;
   labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
   hideLabel?: boolean;
+  children?: React.ReactNode;
 };
 
 export type Props = {
