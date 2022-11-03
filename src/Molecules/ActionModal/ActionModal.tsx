@@ -54,6 +54,11 @@ const StyledFlexbox = styled(Flexbox)`
     width: 1560px;
   }
 `;
+
+const StyledButtonsFlexbox = styled(Flexbox)`
+  pointer-events: auto;
+`;
+
 export const ActionModal = ({
   illustration,
   title,
@@ -84,7 +89,7 @@ export const ActionModal = ({
 
           <Box my={3}>{children}</Box>
 
-          <Flexbox
+          <StyledButtonsFlexbox
             container
             direction={isSmallerScreen ? 'column-reverse' : 'row'}
             justifyContent={cancelButton ? 'space-between' : 'flex-end'}
@@ -92,7 +97,7 @@ export const ActionModal = ({
           >
             {cancelButton}
             {confirmButton}
-          </Flexbox>
+          </StyledButtonsFlexbox>
         </Dialog>
       </StyledFlexbox>
     </Portal>

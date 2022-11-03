@@ -73,7 +73,7 @@ exports[`Storyshots Molecules / Action Modal   Default 1`] = `
   display: block;
 }
 
-.c10 {
+.c11 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -82,25 +82,25 @@ exports[`Storyshots Molecules / Action Modal   Default 1`] = `
   text-transform: none;
 }
 
-.c10,
-.c10[type='button'],
-.c10[type='reset'],
-.c10[type='submit'] {
+.c11,
+.c11[type='button'],
+.c11[type='reset'],
+.c11[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c10::-moz-focus-inner,
-.c10[type='button']::-moz-focus-inner,
-.c10[type='reset']::-moz-focus-inner,
-.c10[type='submit']::-moz-focus-inner {
+.c11::-moz-focus-inner,
+.c11[type='button']::-moz-focus-inner,
+.c11[type='reset']::-moz-focus-inner,
+.c11[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c10:-moz-focusring,
-.c10[type='button']:-moz-focusring,
-.c10[type='reset']:-moz-focusring,
-.c10[type='submit']:-moz-focusring {
+.c11:-moz-focusring,
+.c11[type='button']:-moz-focusring,
+.c11[type='reset']:-moz-focusring,
+.c11[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -113,7 +113,7 @@ exports[`Storyshots Molecules / Action Modal   Default 1`] = `
   line-height: 1.2;
 }
 
-.c12 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -122,7 +122,7 @@ exports[`Storyshots Molecules / Action Modal   Default 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6690FF;
   margin: 0;
@@ -148,7 +148,11 @@ exports[`Storyshots Molecules / Action Modal   Default 1`] = `
   bottom: 40px;
 }
 
-.c11 {
+.c10 {
+  pointer-events: auto;
+}
+
+.c12 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -171,7 +175,7 @@ exports[`Storyshots Molecules / Action Modal   Default 1`] = `
   cursor: pointer;
 }
 
-.c14 {
+.c15 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -195,7 +199,7 @@ exports[`Storyshots Molecules / Action Modal   Default 1`] = `
   cursor: pointer;
 }
 
-.c14::before {
+.c15::before {
   content: '';
   display: block;
   position: absolute;
@@ -206,11 +210,11 @@ exports[`Storyshots Molecules / Action Modal   Default 1`] = `
   height: calc(100% - 4px);
 }
 
-.c14:hover {
+.c15:hover {
   background-color: #2650BF;
 }
 
-.c14:active {
+.c15:active {
   background-color: #1F4099;
 }
 
@@ -395,31 +399,31 @@ exports[`Storyshots Molecules / Action Modal   Default 1`] = `
           children are here
         </div>
         <div
-          className="c9"
+          className="c9 c10"
         >
           <button
-            className="c10 c11"
+            className="c11 c12"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="Typography__Span-sc-10mju41-0 c12"
+              className="Typography__Span-sc-10mju41-0 c13"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c13"
+                className="Typography__Span-sc-10mju41-0 c14"
               >
                 skip tour
               </span>
             </span>
           </button>
           <button
-            className="c10 c14"
+            className="c11 c15"
             onClick={[Function]}
             type="button"
           >
             <span>
               <span
-                className="Typography__Span-sc-10mju41-0 c12"
+                className="Typography__Span-sc-10mju41-0 c13"
               >
                 confirm
               </span>
@@ -505,7 +509,7 @@ exports[`Storyshots Molecules / Action Modal   With Confirm Button Only 1`] = `
   display: block;
 }
 
-.c10 {
+.c11 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -514,25 +518,25 @@ exports[`Storyshots Molecules / Action Modal   With Confirm Button Only 1`] = `
   text-transform: none;
 }
 
-.c10,
-.c10[type='button'],
-.c10[type='reset'],
-.c10[type='submit'] {
+.c11,
+.c11[type='button'],
+.c11[type='reset'],
+.c11[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c10::-moz-focus-inner,
-.c10[type='button']::-moz-focus-inner,
-.c10[type='reset']::-moz-focus-inner,
-.c10[type='submit']::-moz-focus-inner {
+.c11::-moz-focus-inner,
+.c11[type='button']::-moz-focus-inner,
+.c11[type='reset']::-moz-focus-inner,
+.c11[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c10:-moz-focusring,
-.c10[type='button']:-moz-focusring,
-.c10[type='reset']:-moz-focusring,
-.c10[type='submit']:-moz-focusring {
+.c11:-moz-focusring,
+.c11[type='button']:-moz-focusring,
+.c11[type='reset']:-moz-focusring,
+.c11[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -545,7 +549,7 @@ exports[`Storyshots Molecules / Action Modal   With Confirm Button Only 1`] = `
   line-height: 1.2;
 }
 
-.c12 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -571,7 +575,11 @@ exports[`Storyshots Molecules / Action Modal   With Confirm Button Only 1`] = `
   bottom: 40px;
 }
 
-.c11 {
+.c10 {
+  pointer-events: auto;
+}
+
+.c12 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -595,7 +603,7 @@ exports[`Storyshots Molecules / Action Modal   With Confirm Button Only 1`] = `
   cursor: pointer;
 }
 
-.c11::before {
+.c12::before {
   content: '';
   display: block;
   position: absolute;
@@ -606,11 +614,11 @@ exports[`Storyshots Molecules / Action Modal   With Confirm Button Only 1`] = `
   height: calc(100% - 4px);
 }
 
-.c11:hover {
+.c12:hover {
   background-color: #2650BF;
 }
 
-.c11:active {
+.c12:active {
   background-color: #1F4099;
 }
 
@@ -795,16 +803,16 @@ exports[`Storyshots Molecules / Action Modal   With Confirm Button Only 1`] = `
           children are here
         </div>
         <div
-          className="c9"
+          className="c9 c10"
         >
           <button
-            className="c10 c11"
+            className="c11 c12"
             onClick={[Function]}
             type="button"
           >
             <span>
               <span
-                className="Typography__Span-sc-10mju41-0 c12"
+                className="Typography__Span-sc-10mju41-0 c13"
               >
                 confirm
               </span>
