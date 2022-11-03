@@ -1,3 +1,10 @@
+## [11.9.4](https://github.com/nordnet/ui/compare/v11.9.3...v11.9.4) (2022-11-03)
+
+
+### Bug Fixes
+
+* add supoort for confirm color on dual button mode ([5c9cb1c](https://github.com/nordnet/ui/commit/5c9cb1c))
+
 ## [11.9.3](https://github.com/nordnet/ui/compare/v11.9.2...v11.9.3) (2022-11-03)
 
 
