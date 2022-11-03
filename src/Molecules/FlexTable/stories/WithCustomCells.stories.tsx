@@ -22,6 +22,7 @@ const StyledFlexboxContainer = styled(Flexbox)`
 export const CustomCells = () => {
   const Story = () => {
     const TruncateStartHeader: React.FC<{
+      children?: React.ReactNode;
       currency: string;
       columnId: string;
       flex: string;

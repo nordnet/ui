@@ -35,6 +35,7 @@ import sustainable from './sustainable';
 import sustainableFill from './sustainableFill';
 import tag from './tag';
 import tax from './tax';
+import test from './test';
 import villa from './villa';
 
 export default {
@@ -75,5 +76,6 @@ export default {
   ...sustainableFill,
   ...tag,
   ...tax,
+  ...test,
   ...villa,
 };

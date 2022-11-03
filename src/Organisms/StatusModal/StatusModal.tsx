@@ -9,6 +9,8 @@ const StatusModal: React.FC<Props> = ({
   onClose,
   options = {},
   showClose = false,
+  fixedBottomMobile = false,
+  confirmColor,
 }) => {
   const [showModal, setShowModal] = useState(false);
 
@@ -41,6 +43,7 @@ const StatusModal: React.FC<Props> = ({
       closeOnBackdropClick
       isStatusModal
       fullScreenMobile={false}
+      fixedBottomMobile={fixedBottomMobile}
     >
       <Box pt={7} pb={7} px={2} sm={{ px: 0, pb: 0, pt: 5 }}>
         <Flexbox
@@ -76,7 +79,11 @@ const StatusModal: React.FC<Props> = ({
               <Flexbox item>
                 <Box pt={2}>
                   {textConfirm && (
-                    <Button size="l" onClick={() => closeModal(true)}>
+                    <Button
+                      size="l"
+                      onClick={() => closeModal(true)}
+                      color={(t) => (confirmColor ? confirmColor(t) : t.color.cta)}
+                    >
                       {textConfirm}
                     </Button>
                   )}
@@ -97,7 +104,12 @@ const StatusModal: React.FC<Props> = ({
                 <Flexbox item flex="0">
                   <Box pt={2}>
                     {textConfirm && (
-                      <Button size="l" variant="primary" onClick={() => closeModal(true)}>
+                      <Button
+                        size="l"
+                        variant="primary"
+                        onClick={() => closeModal(true)}
+                        color={(t) => (confirmColor ? confirmColor(t) : t.color.cta)}
+                      >
                         {textConfirm}
                       </Button>
                     )}

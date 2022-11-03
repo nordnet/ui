@@ -5,6 +5,7 @@ import {
   ColumnsDataState,
   ColumnsDispatch,
   ColumnsState,
+  ColumnProviderProps,
 } from './ColumnProvider.types';
 import { SORT_ORDER_NONE } from '../constants';
 
@@ -61,7 +62,7 @@ const columnReducer = (state: ColumnsState, action: ColumnActions): ColumnsState
   }
 };
 
-export const ColumnProvider: React.FC = ({ children }) => {
+export const ColumnProvider: React.FC<ColumnProviderProps> = ({ children }) => {
   const [state, dispatch] = useReducer(columnReducer, { data: {} });
   return (
     <ColumnDataContext.Provider value={state.data}>

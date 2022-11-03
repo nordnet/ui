@@ -1,5 +1,6 @@
 import { AccountBadgeStackComponent } from '../AccountBadgeStack/AccountBadgeStack.types';
 import { ColorFn, HtmlProps } from '../BaseBadge/BaseBadge.types';
+import { Typography } from '../../../..';
 
 export type AccountBadgeProps = HtmlProps & {
   children: React.ReactNode;
@@ -13,3 +14,8 @@ export type AccountBadgeComponent = React.ForwardRefExoticComponent<
 export interface AccountBadgeCompoundComponent extends AccountBadgeComponent {
   Stack: AccountBadgeStackComponent;
 }
+
+export type AccountBadgeContentProps = {
+  typographyType: React.ComponentProps<typeof Typography>['type'];
+  children?: React.ReactNode;
+};

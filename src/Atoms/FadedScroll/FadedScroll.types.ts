@@ -18,6 +18,7 @@ export type Props = {
   enableMobileFade?: boolean;
   disableTopFade?: boolean;
   ref?: React.Ref<HTMLDivElement>;
+  children?: React.ReactNode;
 };
 
 export type Component = React.FC<Props>;

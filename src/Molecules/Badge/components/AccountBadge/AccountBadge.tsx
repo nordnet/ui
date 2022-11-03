@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {
   AccountBadgeComponent,
   AccountBadgeCompoundComponent,
+  AccountBadgeContentProps,
   AccountBadgeProps,
 } from './AccountBadge.types';
 import { BaseBadge } from '..';
@@ -15,9 +16,7 @@ const StyledTypography = styled(Typography)`
   font-weight: 800;
 `;
 
-const AccountBadgeContent: React.FC<{
-  typographyType: React.ComponentProps<typeof Typography>['type'];
-}> = ({ children, typographyType }) => {
+const AccountBadgeContent: React.FC<AccountBadgeContentProps> = ({ children, typographyType }) => {
   if (typeof children === 'undefined') return null;
   if (isFunction(children)) return children();
   if (isElement(children)) return children;

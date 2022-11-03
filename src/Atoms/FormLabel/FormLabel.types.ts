@@ -4,4 +4,5 @@ export type Props = {
   forId?: string;
   hideLabel?: boolean;
   disabled?: boolean;
+  children?: React.ReactNode;
 };
