@@ -142,39 +142,46 @@ export const NoTitle = () => {
   );
 };
 
-export const WithTwoCompletionBar = () => {
-  const [experienceStep, setExperienceStep] = useState(0);
-  const [knowledgeStep, setKnowledgeStep] = useState(0);
-
+export const WithButtonInfoAndExitCallback = () => {
+  const [currentStep, setCurrentStep] = useState(2);
   return (
     <>
       <ProgressIndicator
+        buttonCallback
+        title="Progress flow title"
+        numberOfSteps={3}
+        currentStep={currentStep}
         infoCallback={() => alert('info callback')}
         closeCallback={() => alert('close callback')}
-        backCallback={() => alert('back callback')}
-        title="Progress flow title"
-        numberOfSteps={[3, 5]}
-        currentStep={[experienceStep, knowledgeStep]}
+        exitText="Save & exit"
+        infoText="info"
+        infoIcon="help"
       />
-
-      <Flexbox container direction="column">
-        <Flexbox item>First Steps</Flexbox>
-        <Flexbox item container justifyContent="flex-start">
-          <Button onClick={() => setExperienceStep(1)}>1</Button>
-          <Button onClick={() => setExperienceStep(2)}>2</Button>
-          <Button onClick={() => setExperienceStep(3)}>3</Button>
-        </Flexbox>
+      <Flexbox container justifyContent="space-around">
+        <Button onClick={() => setCurrentStep(1)}>1</Button>
+        <Button onClick={() => setCurrentStep(2)}>2</Button>
+        <Button onClick={() => setCurrentStep(3)}>3</Button>
       </Flexbox>
+    </>
+  );
+};
 
-      <Flexbox container direction="column">
-        <Flexbox item>Second Steps</Flexbox>
-        <Flexbox item container justifyContent="flex-start">
-          <Button onClick={() => setKnowledgeStep(1)}>1</Button>
-          <Button onClick={() => setKnowledgeStep(2)}>2</Button>
-          <Button onClick={() => setKnowledgeStep(3)}>3</Button>
-          <Button onClick={() => setKnowledgeStep(4)}>4</Button>
-          <Button onClick={() => setKnowledgeStep(5)}>5</Button>
-        </Flexbox>
+export const WithButtonCallbackNoInfo = () => {
+  const [currentStep, setCurrentStep] = useState(2);
+  return (
+    <>
+      <ProgressIndicator
+        buttonCallback
+        title="Progress flow title"
+        numberOfSteps={3}
+        currentStep={currentStep}
+        closeCallback={() => alert('close callback')}
+        exitText="Exit"
+      />
+      <Flexbox container justifyContent="space-around">
+        <Button onClick={() => setCurrentStep(1)}>1</Button>
+        <Button onClick={() => setCurrentStep(2)}>2</Button>
+        <Button onClick={() => setCurrentStep(3)}>3</Button>
       </Flexbox>
     </>
   );
