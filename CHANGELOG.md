@@ -1,3 +1,19 @@
+## [11.9.4](https://github.com/nordnet/ui/compare/v11.9.3...v11.9.4) (2022-11-03)
+
+
+### Bug Fixes
+
+* add supoort for confirm color on dual button mode ([5c9cb1c](https://github.com/nordnet/ui/commit/5c9cb1c))
+
+## [11.9.3](https://github.com/nordnet/ui/compare/v11.9.2...v11.9.3) (2022-11-03)
+
+
+### Bug Fixes
+
+* add functionRed as possible color for button and in StatusModal ([2c03381](https://github.com/nordnet/ui/commit/2c03381))
+* add poll16 icon ([1d5e273](https://github.com/nordnet/ui/commit/1d5e273))
+* add prop fixedBottomMobile for to StatusModal ([e61bcaa](https://github.com/nordnet/ui/commit/e61bcaa))
+
 ## [11.9.2](https://github.com/nordnet/ui/compare/v11.9.1...v11.9.2) (2022-11-02)
 
 

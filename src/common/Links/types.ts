@@ -7,9 +7,14 @@ export type LinkProps = Partial<HTMLProps<HTMLAnchorElement>> & {
   cms?: boolean;
   fullServerRedirect?: boolean;
   innerRef?: Ref<any>;
+  children?: ReactNode;
 };
 
 export type LinkProviderProps = {
   link: FC<LinkProps>;
   children: ReactNode;
+};
+
+export type ProviderProps = {
+  children?: ReactNode;
 };

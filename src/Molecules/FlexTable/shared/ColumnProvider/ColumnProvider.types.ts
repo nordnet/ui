@@ -28,4 +28,8 @@ type SetInitialSortingAction = {
   controlledSort: boolean;
 };
 
+export type ColumnProviderProps = {
+  children?: React.ReactNode;
+};
+
 export type ColumnActions = SetSortingAction | SetInitialSortingAction;

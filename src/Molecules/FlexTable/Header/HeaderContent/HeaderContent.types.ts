@@ -37,4 +37,9 @@ type onSortClick = () => void;
 
 export type UIProps = { onSortClick: onSortClick };
 
-export type Props = { sortable: boolean; sortOrder: SortOrder; sorted: boolean };
+export type Props = {
+  sortable: boolean;
+  sortOrder: SortOrder;
+  sorted: boolean;
+  children?: React.ReactNode;
+};

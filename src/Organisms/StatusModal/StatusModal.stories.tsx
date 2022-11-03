@@ -73,4 +73,23 @@ storiesOf('Organisms / StatusModal', module)
         />
       </>
     );
-  });
+  })
+  .add('With fixed bottom mobile', () => (
+    <StatusModal {...defaultProps} fixedBottomMobile loading={false} options={successOptions} />
+  ))
+  .add('With functionRed confirm buttom', () => (
+    <StatusModal
+      {...defaultProps}
+      loading={false}
+      options={successOptions}
+      confirmColor={(t) => t.color.functionRed}
+    />
+  ))
+  .add('With functionRed confirm buttom and cancel button', () => (
+    <StatusModal
+      {...defaultProps}
+      loading={false}
+      options={twoButtonsOptions}
+      confirmColor={(t) => t.color.functionRed}
+    />
+  ));

@@ -8,6 +8,7 @@ export type InfoBarProps = {
   /** @default general */
   variant?: Variant;
   onClose?: () => void;
+  children?: React.ReactNode;
 };
 
 export type InfoBarIconProps = {

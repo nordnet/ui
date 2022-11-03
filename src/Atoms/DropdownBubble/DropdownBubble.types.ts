@@ -12,4 +12,5 @@ export type Props = {
    * styled-components for all css-related props
    */
   maxHeight?: string;
+  children?: React.ReactNode;
 };

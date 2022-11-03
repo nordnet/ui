@@ -58,6 +58,7 @@ export type Props = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   backgroundColor?: 'inherit' | ColorFn;
   className?: string;
+  children?: React.ReactNode;
 } & Paddings &
   Margins &
   MediaRelatedProps &
