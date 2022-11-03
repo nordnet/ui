@@ -84,4 +84,12 @@ storiesOf('Organisms / StatusModal', module)
       options={successOptions}
       confirmColor={(t) => t.color.functionRed}
     />
+  ))
+  .add('With functionRed confirm buttom and cancel button', () => (
+    <StatusModal
+      {...defaultProps}
+      loading={false}
+      options={twoButtonsOptions}
+      confirmColor={(t) => t.color.functionRed}
+    />
   ));

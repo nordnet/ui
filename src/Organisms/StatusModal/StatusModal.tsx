@@ -103,7 +103,12 @@ const StatusModal: React.FC<Props> = ({
                 <Flexbox item flex="0">
                   <Box pt={2}>
                     {textConfirm && (
-                      <Button size="l" variant="primary" onClick={() => closeModal(true)}>
+                      <Button
+                        size="l"
+                        variant="primary"
+                        onClick={() => closeModal(true)}
+                        color={(t) => (confirmColor ? confirmColor(t) : t.color.cta)}
+                      >
                         {textConfirm}
                       </Button>
                     )}
