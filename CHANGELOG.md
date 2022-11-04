@@ -1,3 +1,11 @@
+# [11.10.0](https://github.com/nordnet/ui/compare/v11.9.4...v11.10.0) (2022-11-04)
+
+
+### Features
+
+* 🎸 update the progress indicator component ([aa2ff79](https://github.com/nordnet/ui/commit/aa2ff79))
+* 🎸 Update the progress indicator component test snapshot ([f178d75](https://github.com/nordnet/ui/commit/f178d75))
+
 ## [11.9.4](https://github.com/nordnet/ui/compare/v11.9.3...v11.9.4) (2022-11-03)
 
 
