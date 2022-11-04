@@ -1,8 +1,8 @@
 import React, { FC, ReactElement } from 'react';
-import { isArray } from '../../common/utils';
-import { Box, Flexbox, Typography, Icon } from '../..';
+import { Box, Flexbox, Typography, Icon, Button } from '../..';
 import { StyledButton, HiddenText, CompletionBar } from './ProgressIndicator.styled';
 import { Props } from './ProgressIndicator.types';
+import { useMedia } from '../../Atoms/Media';
 
 const ProgressIndicator: FC<Props> = ({
   numberOfSteps,
@@ -15,8 +15,10 @@ const ProgressIndicator: FC<Props> = ({
   backText = 'Back',
   infoText = 'Info',
   infoIcon = 'info',
+  buttonCallback = false,
 }): ReactElement => {
-  const isFirstStep = isArray(currentStep) ? [...currentStep][0] === 1 : currentStep === 1;
+  const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.sm));
+  const isFirstStep = currentStep === 1;
   const noButtons = !closeCallback && !backCallback && !infoCallback;
   const noBackButton = !backCallback;
   const handleBackAndCloseClick = () => {
@@ -38,7 +40,11 @@ const ProgressIndicator: FC<Props> = ({
           visible={
             (!isFirstStep && !!backCallback) || (isFirstStep && !!closeCallback) || noBackButton
           }
-          $hide={noButtons || (!backCallback && !isFirstStep && !noBackButton)}
+          $hide={
+            (buttonCallback && !isMobile) ||
+            noButtons ||
+            (!backCallback && !isFirstStep && !noBackButton)
+          }
           charWidth={isFirstStep || noBackButton ? exitText.length : backText.length + 0.5}
         >
           {isFirstStep || noBackButton ? <Icon.Cross16 /> : <Icon.ChevronLeft16 />}
@@ -61,28 +67,15 @@ const ProgressIndicator: FC<Props> = ({
           alignItems="center"
           width="100%"
         >
-          {isArray(numberOfSteps) ? (
-            [...numberOfSteps].map((steps, index) => {
-              return (
-                <CompletionBar
-                  key={`completion_bar_${index + 1}`}
-                  completion={currentStep[index] / Number(steps)}
-                  noButtons={noButtons}
-                />
-              );
-            })
-          ) : (
-            <CompletionBar
-              completion={Number(currentStep) / Number(numberOfSteps)}
-              noButtons={noButtons}
-            />
-          )}
+          <CompletionBar
+            completion={Number(currentStep) / Number(numberOfSteps)}
+            noButtons={noButtons}
+          />
         </Flexbox>
-
         <StyledButton
           onClick={infoCallback}
           visible={!!infoCallback}
-          $hide={noButtons}
+          $hide={noButtons || (buttonCallback && !isMobile)}
           charWidth={infoText.length + 0.5}
         >
           <HiddenText mr={3}>
@@ -99,11 +92,47 @@ const ProgressIndicator: FC<Props> = ({
           {infoIcon === 'info' ? <Icon.Information16 /> : <Icon.Help16 />}
         </StyledButton>
       </Flexbox>
-      {title && (
-        <Box pt={3}>
-          <Typography type="title1">{title}</Typography>
-        </Box>
-      )}
+      <Flexbox container justifyContent="space-between">
+        {title && (
+          <Box pt={3}>
+            <Typography type="title1">{title}</Typography>
+          </Box>
+        )}
+        {buttonCallback && !isMobile && (
+          <Flexbox item container justifyContent="flex-end" flex="1">
+            <Box pt={3}>
+              <Flexbox container gap={3} direction="row" alignItems="center">
+                {infoCallback && (
+                  <Button.Pill
+                    variant="secondary"
+                    icon={
+                      infoIcon === 'info' ? (
+                        <Icon.Information16 color="currentColor" />
+                      ) : (
+                        <Icon.Help16 color="currentColor" />
+                      )
+                    }
+                    onClick={infoCallback}
+                    size="s"
+                  >
+                    {infoText}
+                  </Button.Pill>
+                )}
+                {closeCallback && (
+                  <Button.Pill
+                    variant="secondary"
+                    icon={<Icon.Cross16 color="currentColor" />}
+                    onClick={closeCallback}
+                    size="s"
+                  >
+                    {exitText}
+                  </Button.Pill>
+                )}
+              </Flexbox>
+            </Box>
+          </Flexbox>
+        )}
+      </Flexbox>
     </Box>
   );
 };
