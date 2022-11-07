@@ -1,3 +1,17 @@
+# [11.11.0](https://github.com/nordnet/ui/compare/v11.10.1...v11.11.0) (2022-11-07)
+
+
+### Bug Fixes
+
+* correct height width ([a17a4dc](https://github.com/nordnet/ui/commit/a17a4dc))
+* merge master ([a6835c1](https://github.com/nordnet/ui/commit/a6835c1))
+* update storyshots ([888c191](https://github.com/nordnet/ui/commit/888c191))
+
+
+### Features
+
+* add icons ([11fc2f7](https://github.com/nordnet/ui/commit/11fc2f7))
+
 ## [11.10.1](https://github.com/nordnet/ui/compare/v11.10.0...v11.10.1) (2022-11-07)
 
 
