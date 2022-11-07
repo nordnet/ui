@@ -41,6 +41,8 @@ export type Props = {
    * If you need to click the content in the tooltip you pass this in as true
    */
   pointerEvents?: boolean;
+  pointerArrow?: boolean;
+  withPortal?: boolean;
 };
 
 export type TooltipComponent = React.FC<Props>;

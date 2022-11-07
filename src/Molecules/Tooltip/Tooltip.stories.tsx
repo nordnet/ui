@@ -43,7 +43,7 @@ export const defaultStory = () => (
     </StyledDiv>
     <StyledDiv>
       Open delay: 0ms; Close delay: 0ms
-      <Tooltip label={label} position="top" openDelay={0} closeDelay={0}>
+      <Tooltip label={label} position="top" openDelay={0} closeDelay={0} pointerArrow={false}>
         <Button type="button">Hover me</Button>
       </Tooltip>
     </StyledDiv>
@@ -81,7 +81,7 @@ export const withPosition = () => (
     items={[
       {
         component: (
-          <Tooltip label={label} position="bottom">
+          <Tooltip label={label} position="bottom" withPortal={false}>
             <Button type="button">Hover me</Button>
           </Tooltip>
         ),
@@ -356,4 +356,33 @@ export const WithOffsetAsAFunction = () => (
       </Tooltip>
     </Flexbox>
   </Box>
+);
+
+const OverflowBox = styled(Box)`
+  overflow: hidden;
+  position: relative;
+  border: 5px solid red;
+`;
+
+export const noPortal = () => (
+  <OverflowBox pt={40} pb={0}>
+    this is the bounding box
+    <Flexbox container alignItems="center" justifyContent="space-around">
+      <Tooltip
+        label="This tooltip is positioned bottom but it flips to the top because when there's no portal we have better control over what the container is."
+        position="bottom"
+        wrapChild
+        withPortal={false}
+      >
+        <Typography type="primary">No portal</Typography>
+      </Tooltip>
+      <Tooltip
+        label="This tooltip is positioned bottom, and as it's portal wrapped, it will only reposition when outside the border of the page"
+        position="bottom"
+        wrapChild
+      >
+        <Typography type="primary">Default with portal</Typography>
+      </Tooltip>
+    </Flexbox>
+  </OverflowBox>
 );
