@@ -712,6 +712,38 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
       <span
         className="Typography__Span-sc-10mju41-0 c4"
       >
+        Mail16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        clipRule="evenodd"
+        d="M16 0H0v16h16V7.51l-2 1.43V14H2V8.94L0 7.51v-2l8 5.72 8-5.72V0ZM2 4.49V2h12v2.49L8 8.77 2 4.5Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        19
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c4"
+      >
         Poll16
       </span>
     </div>
@@ -749,7 +781,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
         fill="currentColor"
       />
       <title>
-        19
+        20
       </title>
     </svg>
   </div>
@@ -785,7 +817,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        20
+        21
       </title>
     </svg>
   </div>
@@ -817,7 +849,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        21
+        22
       </title>
     </svg>
   </div>
@@ -849,7 +881,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        22
+        23
       </title>
     </svg>
   </div>
@@ -881,7 +913,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        23
+        24
       </title>
     </svg>
   </div>
@@ -913,7 +945,7 @@ exports[`Storyshots Atoms / Icon / Category / Communication 16px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        24
+        25
       </title>
     </svg>
   </div>

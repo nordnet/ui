@@ -3,7 +3,7 @@ import React from 'react';
 import { IconBase } from '../../IconBase';
 import { IconProps } from '../../IconBase.types';
 
-const Poll16: React.FC<IconProps> = props => {
+const Poll16: React.FC<IconProps> = (props) => {
   return (
     <IconBase {...props} width={16} height={16}>
       <path
