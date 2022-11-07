@@ -912,11 +912,6 @@ Array [
   background-color: transparent;
 }
 
-.c11 {
-  margin-right: 12px;
-  background-color: transparent;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -959,7 +954,7 @@ Array [
   gap: 8px;
 }
 
-.c12 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1069,40 +1064,6 @@ Array [
   transform: rotateX(0deg);
 }
 
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background: transparent;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  line-height: 1;
-  border: none;
-  visibility: hidden;
-  padding: 0;
-}
-
-.c10 svg {
-  -webkit-transition: color 333ms;
-  transition: color 333ms;
-}
-
-.c10:hover svg {
-  color: #336BFF;
-}
-
-.c10:hover .c5 {
-  width: 4.5ch;
-  opacity: 1;
-  -webkit-transform: rotateX(0deg);
-  -ms-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-}
-
 @media (min-width:1280px) {
   .c0 {
     padding-top: 16px;
@@ -1157,42 +1118,9 @@ Array [
           className="c9"
         />
       </div>
-      <button
-        className="c10"
-      >
-        <div
-          className="c11 c5 c6"
-        >
-          <span
-            className="Typography__Span-sc-10mju41-0 c7"
-          >
-            Info
-          </span>
-        </div>
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          height={16}
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          width={16}
-        >
-          <path
-            d="M7 4h2v2H7V4zM7 7h2v5H7V7z"
-            fill="currentColor"
-          />
-          <path
-            clipRule="evenodd"
-            d="M8 16A8 8 0 108 0a8 8 0 000 16zm0-2A6 6 0 108 2a6 6 0 000 12z"
-            fill="currentColor"
-            fillRule="evenodd"
-          />
-        </svg>
-      </button>
     </div>
     <div
-      className="c12"
+      className="c10"
     />
   </div>,
   .c0 {
@@ -1360,11 +1288,6 @@ Array [
 }
 
 .c11 {
-  margin-right: 12px;
-  background-color: transparent;
-}
-
-.c13 {
   padding-top: 12px;
   background-color: transparent;
 }
@@ -1411,7 +1334,7 @@ Array [
   gap: 8px;
 }
 
-.c12 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1444,7 +1367,7 @@ Array [
   line-height: inherit;
 }
 
-.c14 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1527,37 +1450,6 @@ Array [
   transform: rotateX(0deg);
 }
 
-.c10 {
-  display: none;
-  background: transparent;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  line-height: 1;
-  border: none;
-  visibility: hidden;
-  padding: 0;
-}
-
-.c10 svg {
-  -webkit-transition: color 333ms;
-  transition: color 333ms;
-}
-
-.c10:hover svg {
-  color: #336BFF;
-}
-
-.c10:hover .c5 {
-  width: 4.5ch;
-  opacity: 1;
-  -webkit-transform: rotateX(0deg);
-  -ms-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-}
-
 @media (min-width:1280px) {
   .c0 {
     padding-top: 16px;
@@ -1566,7 +1458,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c14 {
+  .c12 {
     font-size: 28px;
     line-height: 1.1428571428571428;
   }
@@ -1619,48 +1511,15 @@ Array [
           className="c9"
         />
       </div>
-      <button
-        className="c10"
-      >
-        <div
-          className="c11 c5 c6"
-        >
-          <span
-            className="Typography__Span-sc-10mju41-0 c7"
-          >
-            Info
-          </span>
-        </div>
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          height={16}
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          width={16}
-        >
-          <path
-            d="M7 4h2v2H7V4zM7 7h2v5H7V7z"
-            fill="currentColor"
-          />
-          <path
-            clipRule="evenodd"
-            d="M8 16A8 8 0 108 0a8 8 0 000 16zm0-2A6 6 0 108 2a6 6 0 000 12z"
-            fill="currentColor"
-            fillRule="evenodd"
-          />
-        </svg>
-      </button>
     </div>
     <div
-      className="c12"
+      className="c10"
     >
       <div
-        className="c13"
+        className="c11"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c14"
+          className="Typography__Span-sc-10mju41-0 c12"
         >
           Progress flow title
         </span>
@@ -2285,11 +2144,6 @@ Array [
 }
 
 .c11 {
-  margin-right: 12px;
-  background-color: transparent;
-}
-
-.c13 {
   padding-top: 12px;
   background-color: transparent;
 }
@@ -2336,7 +2190,7 @@ Array [
   gap: 8px;
 }
 
-.c12 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2369,7 +2223,7 @@ Array [
   line-height: inherit;
 }
 
-.c14 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2455,40 +2309,6 @@ Array [
   transform: rotateX(0deg);
 }
 
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background: transparent;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  line-height: 1;
-  border: none;
-  visibility: hidden;
-  padding: 0;
-}
-
-.c10 svg {
-  -webkit-transition: color 333ms;
-  transition: color 333ms;
-}
-
-.c10:hover svg {
-  color: #336BFF;
-}
-
-.c10:hover .c5 {
-  width: 4.5ch;
-  opacity: 1;
-  -webkit-transform: rotateX(0deg);
-  -ms-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-}
-
 @media (min-width:1280px) {
   .c0 {
     padding-top: 16px;
@@ -2497,7 +2317,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c14 {
+  .c12 {
     font-size: 28px;
     line-height: 1.1428571428571428;
   }
@@ -2550,48 +2370,15 @@ Array [
           className="c9"
         />
       </div>
-      <button
-        className="c10"
-      >
-        <div
-          className="c11 c5 c6"
-        >
-          <span
-            className="Typography__Span-sc-10mju41-0 c7"
-          >
-            Info
-          </span>
-        </div>
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          height={16}
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          width={16}
-        >
-          <path
-            d="M7 4h2v2H7V4zM7 7h2v5H7V7z"
-            fill="currentColor"
-          />
-          <path
-            clipRule="evenodd"
-            d="M8 16A8 8 0 108 0a8 8 0 000 16zm0-2A6 6 0 108 2a6 6 0 000 12z"
-            fill="currentColor"
-            fillRule="evenodd"
-          />
-        </svg>
-      </button>
     </div>
     <div
-      className="c12"
+      className="c10"
     >
       <div
-        className="c13"
+        className="c11"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c14"
+          className="Typography__Span-sc-10mju41-0 c12"
         >
           Progress flow title
         </span>
@@ -2766,11 +2553,6 @@ Array [
   background-color: transparent;
 }
 
-.c11 {
-  margin-right: 12px;
-  background-color: transparent;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2813,7 +2595,7 @@ Array [
   gap: 8px;
 }
 
-.c12 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2920,37 +2702,6 @@ Array [
   transform: rotateX(0deg);
 }
 
-.c10 {
-  display: none;
-  background: transparent;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  line-height: 1;
-  border: none;
-  visibility: hidden;
-  padding: 0;
-}
-
-.c10 svg {
-  -webkit-transition: color 333ms;
-  transition: color 333ms;
-}
-
-.c10:hover svg {
-  color: #336BFF;
-}
-
-.c10:hover .c5 {
-  width: 4.5ch;
-  opacity: 1;
-  -webkit-transform: rotateX(0deg);
-  -ms-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-}
-
 @media (min-width:1280px) {
   .c0 {
     padding-top: 16px;
@@ -3005,42 +2756,9 @@ Array [
           className="c9"
         />
       </div>
-      <button
-        className="c10"
-      >
-        <div
-          className="c11 c5 c6"
-        >
-          <span
-            className="Typography__Span-sc-10mju41-0 c7"
-          >
-            Info
-          </span>
-        </div>
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          height={16}
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          width={16}
-        >
-          <path
-            d="M7 4h2v2H7V4zM7 7h2v5H7V7z"
-            fill="currentColor"
-          />
-          <path
-            clipRule="evenodd"
-            d="M8 16A8 8 0 108 0a8 8 0 000 16zm0-2A6 6 0 108 2a6 6 0 000 12z"
-            fill="currentColor"
-            fillRule="evenodd"
-          />
-        </svg>
-      </button>
     </div>
     <div
-      className="c12"
+      className="c10"
     />
   </div>,
   .c0 {
@@ -3208,11 +2926,6 @@ Array [
 }
 
 .c11 {
-  margin-right: 12px;
-  background-color: transparent;
-}
-
-.c13 {
   padding-top: 12px;
   background-color: transparent;
 }
@@ -3259,7 +2972,7 @@ Array [
   gap: 8px;
 }
 
-.c12 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3271,7 +2984,7 @@ Array [
   justify-content: space-between;
 }
 
-.c15 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3286,7 +2999,7 @@ Array [
   flex: 1;
 }
 
-.c16 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3301,11 +3014,11 @@ Array [
   align-items: center;
 }
 
-.c16:not(:empty) {
+.c14:not(:empty) {
   gap: 12px;
 }
 
-.c20 {
+.c18 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3323,16 +3036,16 @@ Array [
   margin-right: -4px;
 }
 
-.c20 > * {
+.c18 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c20 > *:not(:first-child) {
+.c18 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c23 {
+.c21 {
   box-sizing: border-box;
 }
 
@@ -3348,7 +3061,7 @@ Array [
   display: block;
 }
 
-.c22 {
+.c20 {
   color: currentColor;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3360,7 +3073,7 @@ Array [
   display: block;
 }
 
-.c17 {
+.c15 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3369,25 +3082,25 @@ Array [
   text-transform: none;
 }
 
-.c17,
-.c17[type='button'],
-.c17[type='reset'],
-.c17[type='submit'] {
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c17::-moz-focus-inner,
-.c17[type='button']::-moz-focus-inner,
-.c17[type='reset']::-moz-focus-inner,
-.c17[type='submit']::-moz-focus-inner {
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c17:-moz-focusring,
-.c17[type='button']:-moz-focusring,
-.c17[type='reset']:-moz-focusring,
-.c17[type='submit']:-moz-focusring {
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -3400,7 +3113,7 @@ Array [
   line-height: inherit;
 }
 
-.c14 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3409,7 +3122,7 @@ Array [
   line-height: 1.1666666666666667;
 }
 
-.c24 {
+.c22 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -3418,13 +3131,13 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c21 {
+.c19 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c18 {
+.c16 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -3447,7 +3160,7 @@ Array [
   cursor: pointer;
 }
 
-.c18::before {
+.c16::before {
   content: '';
   display: block;
   position: absolute;
@@ -3458,37 +3171,37 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c18:hover {
+.c16:hover {
   color: #2650BF;
 }
 
-.c18:hover::before {
+.c16:hover::before {
   border-color: #2650BF;
 }
 
-.c18:active {
+.c16:active {
   color: #1F4099;
 }
 
-.c18:active::before {
+.c16:active::before {
   border-color: #1F4099;
 }
 
-.c19 {
+.c17 {
   border-radius: 12px;
   background-color: #F5F5F5;
   color: #336BFF;
 }
 
-.c19:hover {
+.c17:hover {
   color: #2650BF;
 }
 
-.c19:active {
+.c17:active {
   color: #1F4099;
 }
 
-.c19::before {
+.c17::before {
   display: none;
 }
 
@@ -3566,37 +3279,6 @@ Array [
   transform: rotateX(0deg);
 }
 
-.c10 {
-  display: none;
-  background: transparent;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  line-height: 1;
-  border: none;
-  visibility: hidden;
-  padding: 0;
-}
-
-.c10 svg {
-  -webkit-transition: color 333ms;
-  transition: color 333ms;
-}
-
-.c10:hover svg {
-  color: #336BFF;
-}
-
-.c10:hover .c5 {
-  width: 4.5ch;
-  opacity: 1;
-  -webkit-transform: rotateX(0deg);
-  -ms-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-}
-
 @media (min-width:1280px) {
   .c0 {
     padding-top: 16px;
@@ -3605,7 +3287,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c14 {
+  .c12 {
     font-size: 28px;
     line-height: 1.1428571428571428;
   }
@@ -3658,76 +3340,43 @@ Array [
           className="c9"
         />
       </div>
-      <button
-        className="c10"
-      >
-        <div
-          className="c11 c5 c6"
-        >
-          <span
-            className="Typography__Span-sc-10mju41-0 c7"
-          >
-            Info
-          </span>
-        </div>
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          height={16}
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          width={16}
-        >
-          <path
-            d="M7 4h2v2H7V4zM7 7h2v5H7V7z"
-            fill="currentColor"
-          />
-          <path
-            clipRule="evenodd"
-            d="M8 16A8 8 0 108 0a8 8 0 000 16zm0-2A6 6 0 108 2a6 6 0 000 12z"
-            fill="currentColor"
-            fillRule="evenodd"
-          />
-        </svg>
-      </button>
     </div>
     <div
-      className="c12"
+      className="c10"
     >
       <div
-        className="c13"
+        className="c11"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c14"
+          className="Typography__Span-sc-10mju41-0 c12"
         >
           Progress flow title
         </span>
       </div>
       <div
-        className="c15"
+        className="c13"
       >
         <div
-          className="c13"
+          className="c11"
         >
           <div
-            className="c16"
+            className="c14"
           >
             <button
-              className="c17 c18 c19"
+              className="c15 c16 c17"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c20"
+                  className="c18"
                 >
                   <div
-                    className="c21"
+                    className="c19"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c22"
+                      className="c20"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3741,10 +3390,10 @@ Array [
                     </svg>
                   </div>
                   <div
-                    className="c23"
+                    className="c21"
                   >
                     <div
-                      className="Typography__Span-sc-10mju41-0 c24"
+                      className="Typography__Span-sc-10mju41-0 c22"
                     >
                       Exit
                     </div>
@@ -4511,6 +4160,718 @@ Array [
                       className="Typography__Span-sc-10mju41-0 c24"
                     >
                       Save & exit
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c2:hover {
+  background-color: #2650BF;
+}
+
+.c2:active {
+  background-color: #1F4099;
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          1
+        </span>
+      </span>
+    </button>
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          2
+        </span>
+      </span>
+    </button>
+    <button
+      className="c1 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          3
+        </span>
+      </span>
+    </button>
+  </div>,
+]
+`;
+
+exports[`Storyshots Molecules / ProgressIndicator With Custom Info Callback Element 1`] = `
+Array [
+  .c0 {
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  background-color: #FFFFFF;
+}
+
+.c4 {
+  margin-left: 12px;
+  background-color: transparent;
+}
+
+.c11 {
+  padding-top: 12px;
+  background-color: transparent;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1:not(:empty) {
+  gap: 24px;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c8:not(:empty) {
+  gap: 8px;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c13 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c14 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c14:not(:empty) {
+  gap: 12px;
+}
+
+.c21 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c21 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c21 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c24 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c23 {
+  color: currentColor;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #336BFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: inherit;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c18 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c22 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c16 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c16::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c16:hover {
+  background-color: #2650BF;
+}
+
+.c16:active {
+  background-color: #1F4099;
+}
+
+.c19 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  background-color: transparent;
+  color: #336BFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c19::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #336BFF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c19:hover {
+  color: #2650BF;
+}
+
+.c19:hover::before {
+  border-color: #2650BF;
+}
+
+.c19:active {
+  color: #1F4099;
+}
+
+.c19:active::before {
+  border-color: #1F4099;
+}
+
+.c17 {
+  border-radius: 12px;
+}
+
+.c17::before {
+  display: none;
+}
+
+.c20 {
+  border-radius: 12px;
+  background-color: #F5F5F5;
+  color: #336BFF;
+}
+
+.c20:hover {
+  color: #2650BF;
+}
+
+.c20:active {
+  color: #1F4099;
+}
+
+.c20::before {
+  display: none;
+}
+
+.c9 {
+  height: 4px;
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  overflow: hidden;
+  background: #EEEEEE;
+  margin: 0 auto;
+}
+
+.c9:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: -webkit-transform 333ms;
+  -webkit-transition: transform 333ms;
+  transition: transform 333ms;
+  -webkit-transform: scaleX(0.6666666666666666);
+  -ms-transform: scaleX(0.6666666666666666);
+  transform: scaleX(0.6666666666666666);
+  background: #336BFF;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: '';
+}
+
+.c6 {
+  overflow: hidden;
+  width: 0;
+  opacity: 0;
+  -webkit-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transition: width 333ms,opacity 333ms,-webkit-transform 333ms;
+  -webkit-transition: width 333ms,opacity 333ms,transform 333ms;
+  transition: width 333ms,opacity 333ms,transform 333ms;
+  display: none;
+}
+
+.c2 {
+  display: none;
+  background: transparent;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1;
+  border: none;
+  visibility: visible;
+  padding: 0;
+}
+
+.c2 svg {
+  -webkit-transition: color 333ms;
+  transition: color 333ms;
+}
+
+.c2:hover svg {
+  color: #336BFF;
+}
+
+.c2:hover .c5 {
+  width: 4ch;
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+@media (min-width:1280px) {
+  .c0 {
+    padding-top: 16px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (min-width:760px) {
+  .c12 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+@media (min-width:760px) {
+  .c6 {
+    display: block;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <button
+        className="c2"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            d="M9.414 8l5.793-5.793L13.793.793 8 6.586 2.207.793.793 2.207 6.586 8 .793 13.793l1.414 1.414L8 9.414l5.793 5.793 1.414-1.414L9.414 8z"
+            fill="currentColor"
+          />
+        </svg>
+        <div
+          className="c4 c5 c6"
+        >
+          <span
+            className="Typography__Span-sc-10mju41-0 c7"
+          >
+            Exit
+          </span>
+        </div>
+      </button>
+      <div
+        className="c8"
+      >
+        <div
+          className="c9"
+        />
+      </div>
+    </div>
+    <div
+      className="c10"
+    >
+      <div
+        className="c11"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c12"
+        >
+          Progress flow title
+        </span>
+      </div>
+      <div
+        className="c13"
+      >
+        <div
+          className="c11"
+        >
+          <div
+            className="c14"
+          >
+            <button
+              className="c15 c16 c17"
+              onClick={[Function]}
+              type="button"
+            >
+              <span>
+                <div
+                  className="Typography__Span-sc-10mju41-0 c18"
+                >
+                  custom read more button
+                </div>
+              </span>
+            </button>
+            <button
+              className="c15 c19 c20"
+              onClick={[Function]}
+              type="button"
+            >
+              <span>
+                <div
+                  className="c21"
+                >
+                  <div
+                    className="c22"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="c23"
+                      focusable="false"
+                      height={16}
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      width={16}
+                    >
+                      <path
+                        d="M9.414 8l5.793-5.793L13.793.793 8 6.586 2.207.793.793 2.207 6.586 8 .793 13.793l1.414 1.414L8 9.414l5.793 5.793 1.414-1.414L9.414 8z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    className="c24"
+                  >
+                    <div
+                      className="Typography__Span-sc-10mju41-0 c18"
+                    >
+                      Exit
                     </div>
                   </div>
                 </div>
