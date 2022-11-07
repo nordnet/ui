@@ -11,6 +11,8 @@ type Option = {
   text: string;
   textConfirm: string;
   textCancel?: string;
+  onConfirm?: Function;
+  onCancel?: Function;
 } | null;
 
 export type Props = {

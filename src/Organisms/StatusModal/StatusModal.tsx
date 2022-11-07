@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { Box, Button, Flexbox, Modal, Spinner, Typography, OldIcon } from '../..';
+import { Box, Button, Flexbox, Modal, Spinner, Typography, Badge } from '../..';
 import { Props } from './StatusModal.types';
 import { isFunction } from '../../common/utils';
 
@@ -38,7 +38,7 @@ const StatusModal: React.FC<Props> = ({
   return (
     <Modal
       open={showModal}
-      onClose={closeModal}
+      onClose={onClose}
       hideClose={!showClose}
       closeOnBackdropClick
       isStatusModal
@@ -55,15 +55,9 @@ const StatusModal: React.FC<Props> = ({
           justifyContent="center"
         >
           {loading && <Spinner id={`${id}-spinner`} size={23} />}
-          {status === 'SUCCESS' && (
-            <OldIcon.CheckMarkCircle fill={(t) => t.color.functionGreen} size={23} />
-          )}
-          {status === 'ERROR' && (
-            <OldIcon.CrossCircle fill={(t) => t.color.functionRed} size={23} />
-          )}
-          {status === 'WARNING' && (
-            <OldIcon.WarningTriangle color={(t) => t.color.warning} size={23} />
-          )}
+          {status === 'SUCCESS' && <Badge.Status variant="complete" badgeSize="xl" />}
+          {status === 'ERROR' && <Badge.Status variant="error" badgeSize="xl" />}
+          {status === 'WARNING' && <Badge.Status variant="warning" badgeSize="xl" />}
           <Flexbox container direction="column" alignItems="center" gutter={2}>
             {title && (
               <Typography type="title2" textAlign="center">
