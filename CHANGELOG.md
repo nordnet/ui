@@ -1,3 +1,15 @@
+## [11.10.1](https://github.com/nordnet/ui/compare/v11.10.0...v11.10.1) (2022-11-07)
+
+
+### Bug Fixes
+
+* 🐛 allow click through the Action Modal container ([78965d7](https://github.com/nordnet/ui/commit/78965d7))
+* 🐛 allow clicking on action modal buttons ([8bd7695](https://github.com/nordnet/ui/commit/8bd7695))
+* 🐛 remove focus lock and scroll lock ([1656771](https://github.com/nordnet/ui/commit/1656771))
+* 🐛 remove removeScroll and listen on scroll in coachmarks ([7d189f2](https://github.com/nordnet/ui/commit/7d189f2))
+* 🐛 update tests ([09b6583](https://github.com/nordnet/ui/commit/09b6583))
+* 🐛 use theme zindex ([cf5931a](https://github.com/nordnet/ui/commit/cf5931a))
+
 # [11.10.0](https://github.com/nordnet/ui/compare/v11.9.4...v11.10.0) (2022-11-04)
 
 
