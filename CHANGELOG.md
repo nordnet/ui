@@ -1,3 +1,10 @@
+## [11.11.1](https://github.com/nordnet/ui/compare/v11.11.0...v11.11.1) (2022-11-07)
+
+
+### Bug Fixes
+
+* remove highlight for accordionitem ([9a546d2](https://github.com/nordnet/ui/commit/9a546d2))
+
 # [11.11.0](https://github.com/nordnet/ui/compare/v11.10.1...v11.11.0) (2022-11-07)
 
 
