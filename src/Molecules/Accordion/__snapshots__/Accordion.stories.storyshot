@@ -2,7 +2,7 @@
 
 exports[`Storyshots Molecules / Accordion Default 1`] = `
 Array [
-  .c3 {
+  .c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -18,7 +18,7 @@ Array [
   align-items: center;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -29,7 +29,7 @@ Array [
   flex-direction: column;
 }
 
-.c7 {
+.c8 {
   color: #336BFF;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -50,7 +50,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -93,7 +93,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c6 {
+.c7 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -101,13 +101,17 @@ Array [
   padding-right: 12px;
 }
 
-.c6 svg {
+.c7 svg {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   -webkit-transition: -webkit-transform 0.16s ease-out;
   -webkit-transition: transform 0.16s ease-out;
   transition: transform 0.16s ease-out;
+}
+
+.c3 {
+  -webkit-tap-highlight-color: transparent;
 }
 
 <div
@@ -118,17 +122,17 @@ Array [
       className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c2"
+        className="c2 c3"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <div
-          className="c3"
+          className="c4"
         >
           <div
-            className="c4"
+            className="c5"
           >
             <span
               className="Typography__Span-sc-10mju41-0 c1"
@@ -136,16 +140,16 @@ Array [
               Låg CO₂ risk
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c5"
+              className="Typography__Span-sc-10mju41-0 c6"
             />
           </div>
         </div>
         <div
-          className="c6"
+          className="c7"
         >
           <svg
             aria-hidden="true"
-            className="c7"
+            className="c8"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -161,7 +165,7 @@ Array [
       </button>
     </h3>
   </div>,
-  .c3 {
+  .c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -177,7 +181,7 @@ Array [
   align-items: center;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -188,7 +192,7 @@ Array [
   flex-direction: column;
 }
 
-.c7 {
+.c8 {
   color: #336BFF;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -209,7 +213,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -252,7 +256,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c6 {
+.c7 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -260,13 +264,17 @@ Array [
   padding-right: 12px;
 }
 
-.c6 svg {
+.c7 svg {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   -webkit-transition: -webkit-transform 0.16s ease-out;
   -webkit-transition: transform 0.16s ease-out;
   transition: transform 0.16s ease-out;
+}
+
+.c3 {
+  -webkit-tap-highlight-color: transparent;
 }
 
 <div
@@ -277,17 +285,17 @@ Array [
       className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c2"
+        className="c2 c3"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <div
-          className="c3"
+          className="c4"
         >
           <div
-            className="c4"
+            className="c5"
           >
             <span
               className="Typography__Span-sc-10mju41-0 c1"
@@ -295,16 +303,16 @@ Array [
               Sustainability score
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c5"
+              className="Typography__Span-sc-10mju41-0 c6"
             />
           </div>
         </div>
         <div
-          className="c6"
+          className="c7"
         >
           <svg
             aria-hidden="true"
-            className="c7"
+            className="c8"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -329,7 +337,7 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
   background-color: #FFFFFF;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -345,7 +353,7 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -356,7 +364,7 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
   flex-direction: column;
 }
 
-.c7 {
+.c8 {
   color: #FFFFFF;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -368,7 +376,7 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
   display: block;
 }
 
-.c11 {
+.c12 {
   color: #282823;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -389,7 +397,7 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
   line-height: 1.5;
 }
 
-.c9 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -398,7 +406,7 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c6 {
+.c7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -456,7 +464,7 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
   justify-content: space-between;
 }
 
-.c10 {
+.c11 {
   margin-top: 0;
   -webkit-order: 1;
   -ms-flex-order: 1;
@@ -464,7 +472,7 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
   padding-right: 0px;
 }
 
-.c10 svg {
+.c11 svg {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -473,8 +481,12 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
   transition: transform 0.16s ease-out;
 }
 
-.c5 {
+.c6 {
   padding-right: 8px;
+}
+
+.c4 {
+  -webkit-tap-highlight-color: transparent;
 }
 
 <div
@@ -488,24 +500,24 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
       className="Typography__Span-sc-10mju41-0 c2"
     >
       <button
-        className="c3"
+        className="c3 c4"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <span
-              className="c6"
+              className="c7"
             >
               <svg
                 aria-hidden="true"
-                className="c7"
+                className="c8"
                 focusable="false"
                 height={16}
                 preserveAspectRatio="xMidYMid meet"
@@ -527,7 +539,7 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
             </span>
           </div>
           <div
-            className="c8"
+            className="c9"
           >
             <span
               className="Typography__Span-sc-10mju41-0 c2"
@@ -535,18 +547,18 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
               Leverage products without stop loss
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c9"
+              className="Typography__Span-sc-10mju41-0 c10"
             >
               Valid until 2023-12-31
             </span>
           </div>
         </div>
         <div
-          className="c10"
+          className="c11"
         >
           <svg
             aria-hidden="true"
-            className="c11"
+            className="c12"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -570,24 +582,24 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
       className="Typography__Span-sc-10mju41-0 c2"
     >
       <button
-        className="c3"
+        className="c3 c4"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <span
-              className="c6"
+              className="c7"
             >
               <svg
                 aria-hidden="true"
-                className="c7"
+                className="c8"
                 focusable="false"
                 height={16}
                 preserveAspectRatio="xMidYMid meet"
@@ -609,7 +621,7 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
             </span>
           </div>
           <div
-            className="c8"
+            className="c9"
           >
             <span
               className="Typography__Span-sc-10mju41-0 c2"
@@ -617,18 +629,18 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
               Leverage products without stop loss
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c9"
+              className="Typography__Span-sc-10mju41-0 c10"
             >
               Valid until 2023-12-31
             </span>
           </div>
         </div>
         <div
-          className="c10"
+          className="c11"
         >
           <svg
             aria-hidden="true"
-            className="c11"
+            className="c12"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -652,24 +664,24 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
       className="Typography__Span-sc-10mju41-0 c2"
     >
       <button
-        className="c3"
+        className="c3 c4"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <span
-              className="c6"
+              className="c7"
             >
               <svg
                 aria-hidden="true"
-                className="c7"
+                className="c8"
                 focusable="false"
                 height={16}
                 preserveAspectRatio="xMidYMid meet"
@@ -691,7 +703,7 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
             </span>
           </div>
           <div
-            className="c8"
+            className="c9"
           >
             <span
               className="Typography__Span-sc-10mju41-0 c2"
@@ -699,18 +711,18 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
               Leverage products without stop loss
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c9"
+              className="Typography__Span-sc-10mju41-0 c10"
             >
               Valid until 2023-12-31
             </span>
           </div>
         </div>
         <div
-          className="c10"
+          className="c11"
         >
           <svg
             aria-hidden="true"
-            className="c11"
+            className="c12"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -731,7 +743,7 @@ exports[`Storyshots Molecules / Accordion With Badges 1`] = `
 
 exports[`Storyshots Molecules / Accordion With Footer 1`] = `
 Array [
-  .c3 {
+  .c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -747,7 +759,7 @@ Array [
   align-items: center;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -758,7 +770,7 @@ Array [
   flex-direction: column;
 }
 
-.c7 {
+.c8 {
   color: #336BFF;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -779,7 +791,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -822,7 +834,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c6 {
+.c7 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -830,13 +842,17 @@ Array [
   padding-right: 12px;
 }
 
-.c6 svg {
+.c7 svg {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   -webkit-transition: -webkit-transform 0.16s ease-out;
   -webkit-transition: transform 0.16s ease-out;
   transition: transform 0.16s ease-out;
+}
+
+.c3 {
+  -webkit-tap-highlight-color: transparent;
 }
 
 <div
@@ -847,17 +863,17 @@ Array [
       className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c2"
+        className="c2 c3"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <div
-          className="c3"
+          className="c4"
         >
           <div
-            className="c4"
+            className="c5"
           >
             <span
               className="Typography__Span-sc-10mju41-0 c1"
@@ -865,16 +881,16 @@ Array [
               Låg CO₂ risk
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c5"
+              className="Typography__Span-sc-10mju41-0 c6"
             />
           </div>
         </div>
         <div
-          className="c6"
+          className="c7"
         >
           <svg
             aria-hidden="true"
-            className="c7"
+            className="c8"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"
@@ -890,7 +906,7 @@ Array [
       </button>
     </h3>
   </div>,
-  .c3 {
+  .c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -906,7 +922,7 @@ Array [
   align-items: center;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -917,7 +933,7 @@ Array [
   flex-direction: column;
 }
 
-.c7 {
+.c8 {
   color: #336BFF;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -938,7 +954,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -981,7 +997,7 @@ Array [
   justify-content: flex-start;
 }
 
-.c6 {
+.c7 {
   margin-top: -2px;
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -989,13 +1005,17 @@ Array [
   padding-right: 12px;
 }
 
-.c6 svg {
+.c7 svg {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   -webkit-transition: -webkit-transform 0.16s ease-out;
   -webkit-transition: transform 0.16s ease-out;
   transition: transform 0.16s ease-out;
+}
+
+.c3 {
+  -webkit-tap-highlight-color: transparent;
 }
 
 <div
@@ -1006,17 +1026,17 @@ Array [
       className="Typography__Span-sc-10mju41-0 c1"
     >
       <button
-        className="c2"
+        className="c2 c3"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
         type="button"
       >
         <div
-          className="c3"
+          className="c4"
         >
           <div
-            className="c4"
+            className="c5"
           >
             <span
               className="Typography__Span-sc-10mju41-0 c1"
@@ -1024,16 +1044,16 @@ Array [
               Sustainability score
             </span>
             <span
-              className="Typography__Span-sc-10mju41-0 c5"
+              className="Typography__Span-sc-10mju41-0 c6"
             />
           </div>
         </div>
         <div
-          className="c6"
+          className="c7"
         >
           <svg
             aria-hidden="true"
-            className="c7"
+            className="c8"
             focusable="false"
             height={16}
             preserveAspectRatio="xMidYMid meet"

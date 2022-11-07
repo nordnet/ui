@@ -63,6 +63,10 @@ const LeftAddonWrapper = styled.div<{}>`
     `}
 `;
 
+const StyledButton = styled(Button)`
+  -webkit-tap-highlight-color: transparent;
+`;
+
 const Content = styled(Box)``;
 
 const components = {
@@ -150,7 +154,7 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
         {...padding}
       >
         <Typography as={as} type={type} weight="bold">
-          <Button
+          <StyledButton
             ref={ref}
             onClick={clickHandler}
             type="button"
@@ -176,7 +180,7 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
                 {icon}
               </IconWrapper>
             )}
-          </Button>
+          </StyledButton>
         </Typography>
         <AnimatePresence initial={false}>
           {expanded && (
