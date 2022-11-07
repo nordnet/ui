@@ -72,25 +72,27 @@ const ProgressIndicator: FC<Props> = ({
             noButtons={noButtons}
           />
         </Flexbox>
-        <StyledButton
-          onClick={infoCallback}
-          visible={!!infoCallback}
-          $hide={noButtons || (buttonCallback && !isMobile)}
-          charWidth={infoText.length + 0.5}
-        >
-          <HiddenText mr={3}>
-            <Typography
-              type="secondary"
-              weight="bold"
-              lineHeight="inherit"
-              color={(t) => t.color.cta}
-            >
-              {infoText}
-            </Typography>
-          </HiddenText>
+        {typeof infoCallback === 'function' && (
+          <StyledButton
+            onClick={() => infoCallback()}
+            visible={!!infoCallback}
+            $hide={noButtons || (buttonCallback && !isMobile)}
+            charWidth={infoText.length + 0.5}
+          >
+            <HiddenText mr={3}>
+              <Typography
+                type="secondary"
+                weight="bold"
+                lineHeight="inherit"
+                color={(t) => t.color.cta}
+              >
+                {infoText}
+              </Typography>
+            </HiddenText>
 
-          {infoIcon === 'info' ? <Icon.Information16 /> : <Icon.Help16 />}
-        </StyledButton>
+            {infoIcon === 'info' ? <Icon.Information16 /> : <Icon.Help16 />}
+          </StyledButton>
+        )}
       </Flexbox>
       <Flexbox container justifyContent="space-between">
         {title && (
@@ -102,7 +104,7 @@ const ProgressIndicator: FC<Props> = ({
           <Flexbox item container justifyContent="flex-end" flex="1">
             <Box pt={3}>
               <Flexbox container gap={3} direction="row" alignItems="center">
-                {infoCallback && (
+                {typeof infoCallback === 'function' ? (
                   <Button.Pill
                     variant="secondary"
                     icon={
@@ -112,11 +114,13 @@ const ProgressIndicator: FC<Props> = ({
                         <Icon.Help16 color="currentColor" />
                       )
                     }
-                    onClick={infoCallback}
+                    onClick={() => infoCallback()}
                     size="s"
                   >
                     {infoText}
                   </Button.Pill>
+                ) : (
+                  infoCallback
                 )}
                 {closeCallback && (
                   <Button.Pill

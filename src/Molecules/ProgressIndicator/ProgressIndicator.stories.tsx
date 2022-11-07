@@ -186,3 +186,29 @@ export const WithButtonCallbackNoInfo = () => {
     </>
   );
 };
+
+export const WithCustomInfoCallbackElement = () => {
+  const [currentStep, setCurrentStep] = useState(2);
+  return (
+    <>
+      <ProgressIndicator
+        buttonCallback
+        infoCallback={
+          <Button.Pill onClick={() => alert('info custom button')}>
+            custom read more button
+          </Button.Pill>
+        }
+        title="Progress flow title"
+        numberOfSteps={3}
+        currentStep={currentStep}
+        closeCallback={() => alert('close callback')}
+        exitText="Exit"
+      />
+      <Flexbox container justifyContent="space-around">
+        <Button onClick={() => setCurrentStep(1)}>1</Button>
+        <Button onClick={() => setCurrentStep(2)}>2</Button>
+        <Button onClick={() => setCurrentStep(3)}>3</Button>
+      </Flexbox>
+    </>
+  );
+};
