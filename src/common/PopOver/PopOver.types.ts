@@ -31,6 +31,6 @@ export type Props = {
   inModal?: InModal;
   maxWidth?: number;
   pointerEvents?: boolean;
-  pointerArrow: boolean;
-  withPortal: boolean;
+  pointerArrow?: boolean;
+  withPortal?: boolean;
 };
