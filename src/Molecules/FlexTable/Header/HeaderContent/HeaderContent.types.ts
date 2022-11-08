@@ -12,7 +12,7 @@ export type TextWrapperProps = {
   truncate?: boolean;
 };
 
-export type TextWrapperComponent = React.FC<TextWrapperProps>;
+export type TextWrapperComponent = React.FC<TextWrapperProps & { children?: React.ReactNode }>;
 
 export type SortOrder = 'ascending' | 'descending' | 'none' | null;
 

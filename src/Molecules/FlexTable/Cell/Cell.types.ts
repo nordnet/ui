@@ -43,9 +43,8 @@ type TextWrapperProps = {
   truncate?: boolean;
   className?: string;
   weight?: string;
-  children?: React.ReactNode;
 };
 
-export type TextWrapperComponent = React.FC<TextWrapperProps>;
+export type TextWrapperComponent = React.FC<TextWrapperProps & { children?: React.ReactNode }>;
 
 export type ExpandCellComponent = React.FC<ExpandCellProps & FlexPropsType>;
