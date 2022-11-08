@@ -1,3 +1,12 @@
+# [11.13.0](https://github.com/nordnet/ui/compare/v11.12.0...v11.13.0) (2022-11-08)
+
+
+### Features
+
+* allow tooltips to appear as sibling of trigger element. also allow no arrow style ([6c65668](https://github.com/nordnet/ui/commit/6c65668))
+* conditional props for popover ([0916c38](https://github.com/nordnet/ui/commit/0916c38))
+* update stories ([334bdc5](https://github.com/nordnet/ui/commit/334bdc5))
+
 # [11.12.0](https://github.com/nordnet/ui/compare/v11.11.1...v11.12.0) (2022-11-08)
 
 
