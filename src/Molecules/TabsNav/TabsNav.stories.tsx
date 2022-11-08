@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import { Redirect, Route } from 'react-router';
-import { Link, MemoryRouter, useRouteMatch } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router';
+import { Link, MemoryRouter, useMatch } from 'react-router-dom';
 import { action } from '@storybook/addon-actions';
 import { Box, Flexbox, Separator, TabsNav } from '../..';
 import docs from './TabsNav.mdx';
@@ -31,8 +31,8 @@ export type ContentProps = {
 };
 
 const Content = ({ height, hideFirst }: ContentProps) => {
-  const route1Match = useRouteMatch('/route1');
-  const route2Match = useRouteMatch('/route2');
+  const route1Match = useMatch('/route1');
+  const route2Match = useMatch('/route2');
   return (
     <Flexbox container direction="column" gutter={0}>
       <Flexbox item>
@@ -42,14 +42,14 @@ const Content = ({ height, hideFirst }: ContentProps) => {
               title="Link to /route1"
               to="/route1"
               onTitleClick={action('Clicked title1')}
-              active={route1Match}
+              active={!!route1Match}
             />
           )}
           <TabsNav.Tab
             title={<div>Link to /route2</div>}
             to="/route2"
             onTitleClick={action('Clicked title2')}
-            active={route2Match}
+            active={!!route2Match}
           />
         </TabsNav>
       </Flexbox>
@@ -58,9 +58,11 @@ const Content = ({ height, hideFirst }: ContentProps) => {
       </Flexbox>
       <Flexbox item>
         <Box py={4}>
-          <Route path="/route1" component={() => <>/route1 content</>} />
-          <Route path="/route2" component={() => <>/route2 content</>} />
-          <Route exact path="/" render={() => <Redirect to="/route1" />} />
+          <Routes>
+            <Route path="/route1" element={<>/route1 content</>} />
+            <Route path="/route2" element={<>/route2 content</>} />
+            <Route path="/" element={<Navigate to="/route1" replace />} />
+          </Routes>
         </Box>
       </Flexbox>
     </Flexbox>
@@ -106,12 +108,12 @@ integrationConditionallyHideTab.story = {
 };
 
 const ContentWithManyLinks = () => {
-  const route1Match = useRouteMatch('/route1');
-  const route2Match = useRouteMatch('/route2');
-  const route3Match = useRouteMatch('/route3');
-  const route4Match = useRouteMatch('/route4');
-  const route5Match = useRouteMatch('/route5');
-  const route6Match = useRouteMatch('/route6');
+  const route1Match = useMatch('/route1');
+  const route2Match = useMatch('/route2');
+  const route3Match = useMatch('/route3');
+  const route4Match = useMatch('/route4');
+  const route5Match = useMatch('/route5');
+  const route6Match = useMatch('/route6');
 
   return (
     <Flexbox container direction="column" gutter={0}>
@@ -121,37 +123,37 @@ const ContentWithManyLinks = () => {
             title={<div>Link to /route1</div>}
             to="/route1"
             onTitleClick={action('Clicked title1')}
-            active={route1Match}
+            active={!!route1Match}
           />
           <TabsNav.Tab
             title={<div>Link to /route2</div>}
             to="/route2"
             onTitleClick={action('Clicked title2')}
-            active={route2Match}
+            active={!!route2Match}
           />
           <TabsNav.Tab
             title={<div>Link to /route3</div>}
             to="/route3"
             onTitleClick={action('Clicked title3')}
-            active={route3Match}
+            active={!!route3Match}
           />
           <TabsNav.Tab
             title={<div>Link to /route4</div>}
             to="/route4"
             onTitleClick={action('Clicked title4')}
-            active={route4Match}
+            active={!!route4Match}
           />
           <TabsNav.Tab
             title={<div>Link to /route5</div>}
             to="/route5"
             onTitleClick={action('Clicked title5')}
-            active={route5Match}
+            active={!!route5Match}
           />
           <TabsNav.Tab
             title={<div>Link to /route6</div>}
             to="/route6"
             onTitleClick={action('Clicked title6')}
-            active={route6Match}
+            active={!!route6Match}
           />
         </TabsNav>
       </Flexbox>
@@ -160,13 +162,15 @@ const ContentWithManyLinks = () => {
       </Flexbox>
       <Flexbox item>
         <Box py={4}>
-          <Route path="/route1" component={() => <>/route1 content</>} />
-          <Route path="/route2" component={() => <>/route2 content</>} />
-          <Route path="/route3" component={() => <>/route3 content</>} />
-          <Route path="/route4" component={() => <>/route4 content</>} />
-          <Route path="/route5" component={() => <>/route5 content</>} />
-          <Route path="/route6" component={() => <>/route6 content</>} />
-          <Route exact path="/" render={() => <Redirect to="/route1" />} />
+          <Routes>
+            <Route path="/route1" element={<>/route1 content</>} />
+            <Route path="/route2" element={<>/route2 content</>} />
+            <Route path="/route3" element={<>/route3 content</>} />
+            <Route path="/route4" element={<>/route4 content</>} />
+            <Route path="/route5" element={<>/route5 content</>} />
+            <Route path="/route6" element={<>/route6 content</>} />
+            <Route path="/" element={<Navigate to="/route1" replace />} />
+          </Routes>
         </Box>
       </Flexbox>
     </Flexbox>
