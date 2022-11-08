@@ -28,7 +28,7 @@ const Pagination: React.FC<PaginationProps> = ({
   const numberOfPages = Math.ceil(totalItems / itemsPerPage) || 1;
 
   const handlePageChange = useCallback(
-    (newPage) => {
+    (newPage: any) => {
       setCurrentPage(newPage);
       onPageChange(newPage);
     },

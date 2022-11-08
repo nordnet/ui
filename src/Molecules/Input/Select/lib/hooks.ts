@@ -190,14 +190,14 @@ export const useOnBlurAndOnFocus = (
   }, [isActive]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleFocus = useCallback(
-    (_) => {
+    (_: any) => {
       send('FOCUS');
     },
     [send],
   );
 
   const handleBlur = useCallback(
-    (_) => {
+    (_: any) => {
       setTimeout(() => {
         // Need setTimeout for activeElement to be correct
         // Using formFieldRef to check if the blur event's target
