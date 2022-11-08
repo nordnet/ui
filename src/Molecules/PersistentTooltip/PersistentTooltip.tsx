@@ -1,4 +1,4 @@
-import React, { cloneElement, FC, useRef, useState } from 'react';
+import React, { cloneElement, FC, ReactElement, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { isElement, mergeRefs } from '../../common/utils';
 import { Box, Button, Flexbox, OldIcon, Typography } from '../..';
@@ -44,7 +44,7 @@ export const PersistentTooltip: FC<PersistentTooltipProps> & {
   wrapChild,
   ...htmlDivProps
 }) => {
-  const child = React.Children.only(children) as any;
+  const child = React.Children.only(children) as ReactElement;
   const [triggerElement, setTriggerElement] = useState(undefined);
   const triggerElementRef = useRef(null);
 
