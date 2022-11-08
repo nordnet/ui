@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 import { TooltipContentProps } from './TooltipContent.types';
 import { BORDER_SIZE } from '../consts';
@@ -17,22 +17,26 @@ const StyledTooltip = styled.div<StyledTooltipProps>`
   overflow-wrap: break-word;
 `;
 
-const TooltipContent = forwardRef<HTMLDivElement, TooltipContentProps>(
-  ({ label, ariaLabel, maxWidth, backgroundColor, borderColor, ...htmlDivProps }, ref) => {
-    return (
-      <StyledTooltip
-        ref={ref as any}
-        maxWidth={maxWidth}
-        aria-label={ariaLabel}
-        role={ariaLabel ? 'tooltip' : undefined}
-        backgroundColor={backgroundColor}
-        borderColor={borderColor}
-        {...htmlDivProps}
-      >
-        <Typography type="tertiary">{label}</Typography>
-      </StyledTooltip>
-    );
-  },
-);
+const TooltipContent: FC<TooltipContentProps> = ({
+  label,
+  ariaLabel,
+  maxWidth,
+  backgroundColor,
+  borderColor,
+  ...htmlDivProps
+}) => {
+  return (
+    <StyledTooltip
+      maxWidth={maxWidth}
+      aria-label={ariaLabel}
+      role={ariaLabel ? 'tooltip' : undefined}
+      backgroundColor={backgroundColor}
+      borderColor={borderColor}
+      {...htmlDivProps}
+    >
+      <Typography type="tertiary">{label}</Typography>
+    </StyledTooltip>
+  );
+};
 
 export default TooltipContent;
