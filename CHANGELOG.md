@@ -1,3 +1,11 @@
+# [11.12.0](https://github.com/nordnet/ui/compare/v11.11.1...v11.12.0) (2022-11-08)
+
+
+### Features
+
+* 🎸 extend the progressindicator ([098f426](https://github.com/nordnet/ui/commit/098f426))
+* 🎸 progress indicator story shot ([80c4e99](https://github.com/nordnet/ui/commit/80c4e99))
+
 ## [11.11.1](https://github.com/nordnet/ui/compare/v11.11.0...v11.11.1) (2022-11-07)
 
 
