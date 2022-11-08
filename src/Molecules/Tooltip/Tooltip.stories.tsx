@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Box, Drawer, Flexbox, Modal, Button as UIButton, Icon, Typography } from '../..';
+import { Box, Drawer, Flexbox, Modal, Button as UIButton, Icon, Typography, PopOver } from '../..';
 import Tooltip from '.';
 import { Display } from '../../common/Display';
 
@@ -364,25 +364,46 @@ const OverflowBox = styled(Box)`
   border: 5px solid red;
 `;
 
-export const noPortal = () => (
-  <OverflowBox pt={40} pb={0}>
-    this is the bounding box
-    <Flexbox container alignItems="center" justifyContent="space-around">
-      <Tooltip
-        label="This tooltip is positioned bottom but it flips to the top because when there's no portal we have better control over what the container is."
-        position="bottom"
-        wrapChild
-        withPortal={false}
-      >
-        <Typography type="primary">No portal</Typography>
-      </Tooltip>
-      <Tooltip
-        label="This tooltip is positioned bottom, and as it's portal wrapped, it will only reposition when outside the border of the page"
-        position="bottom"
-        wrapChild
-      >
-        <Typography type="primary">Default with portal</Typography>
-      </Tooltip>
-    </Flexbox>
-  </OverflowBox>
+export const NoPortal = () => {
+  return (
+    <OverflowBox pt={40} pb={0}>
+      this is the bounding box
+      <Flexbox container alignItems="center" justifyContent="space-around">
+        <Tooltip
+          label="This tooltip is positioned bottom but it flips to the top because when there's no portal we have better control over what the container is."
+          position="bottom"
+          withPortal={false}
+          pointerEvents
+        >
+          <span>No portal</span>
+        </Tooltip>
+        <Tooltip
+          label={
+            <span>
+              This tooltip is positioned bottom, and as its portal wrapped, it will only reposition
+              when outside the border of the page
+            </span>
+          }
+          position="bottom"
+          pointerEvents
+        >
+          <span>Default with portal</span>
+        </Tooltip>
+      </Flexbox>
+    </OverflowBox>
+  );
+};
+
+const StyledTooltip = styled(Tooltip)`
+  ${PopOver.components.TooltipContent} {
+    background: red;
+    width: 280px;
+  }
+`;
+export const StyledPopOver = () => (
+  <Box py={20}>
+    <StyledTooltip label="label" position="top" wrapChild>
+      <Typography type="primary">hover me</Typography>
+    </StyledTooltip>
+  </Box>
 );

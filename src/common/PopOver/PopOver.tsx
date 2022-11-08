@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useState } from 'react';
+import React, { MutableRefObject, useEffect, useRef, useState } from 'react';
 import { usePopper } from 'react-popper';
 import styled from 'styled-components';
 import { Portal } from '../..';
@@ -35,95 +35,101 @@ const StyledSpan = styled.span<StyledSpanProps>`
 
 // styled to allow consumers to use it as styling-identifier directly from PopOver.components.TooltipContent
 const StyledTooltipContent = styled(TooltipContent)``;
-
 const displayName = 'Tooltip Popup';
-
 const components = {
   TooltipContent: StyledTooltipContent,
 };
 
-const PopOver = forwardRef<HTMLSpanElement, Props>(
-  (
-    {
-      className,
-      id,
-      label,
-      ariaLabel,
-      position,
-      positionCallback,
-      inModal,
-      maxWidth,
-      triggerElement,
-      pointerEvents = true,
-      offset,
-      backgroundColor: backgroundColorProp,
-      borderColor: borderColorProp,
-      pointerArrow,
-      withPortal,
-      ...htmlSpanProps
-    },
-    ref,
-  ) => {
-    const [popperElement, setPopperElement] = useState(null);
-    const [arrowElement, setArrowElement] = useState(null);
+const PopOver: React.FC<Props> & {
+  components: typeof components;
+} = ({
+  className,
+  id,
+  label,
+  ariaLabel,
+  position,
+  positionCallback,
+  inModal,
+  maxWidth,
+  triggerElement,
+  pointerEvents = true,
+  offset,
+  backgroundColor: backgroundColorProp,
+  borderColor: borderColorProp,
+  pointerArrow,
+  withPortal,
+  handleMouseEnter,
+  handleMouseLeave,
+  ...htmlSpanProps
+}) => {
+  const [popperElement, setPopperElement] = useState(null);
+  const [arrowElement, setArrowElement] = useState(null);
 
-    const offsetModifier = offset ? [{ name: 'offset', options: { offset } }] : [];
+  const offsetModifier = offset ? [{ name: 'offset', options: { offset } }] : [];
 
-    /* We're using Popper.js for convenient tooltip placement. */
-    const popper = usePopper(triggerElement, popperElement, {
-      modifiers: [{ name: 'arrow', options: { element: arrowElement } }, ...offsetModifier],
-      placement: position,
-    });
+  /* We're using Popper.js for convenient tooltip placement. */
+  const popper = usePopper(triggerElement, popperElement, {
+    modifiers: [{ name: 'arrow', options: { element: arrowElement } }, ...offsetModifier],
+    placement: position,
+  });
 
-    const { state, styles, attributes } = popper;
-    const { placement } = state || {};
+  const { state, styles, attributes } = popper;
+  const { placement } = state || {};
 
-    useEffect(() => {
-      if (positionCallback && placement) {
-        positionCallback(placement as NonNullable<Props['position']>);
-      }
-    }, [positionCallback, popper, placement]);
+  useEffect(() => {
+    if (positionCallback && placement) {
+      positionCallback(placement as NonNullable<Props['position']>);
+    }
+  }, [positionCallback, popper, placement]);
 
-    const backgroundColor = backgroundColorProp || ((t) => t.color.bubbleBackground);
-    const borderColor = borderColorProp || ((t) => t.color.bubbleBorder);
+  const backgroundColor = backgroundColorProp || ((t) => t.color.bubbleBackground);
+  const borderColor = borderColorProp || ((t) => t.color.bubbleBorder);
 
-    const content = (
-      <StyledSpan
-        className={className}
-        id={id}
-        ref={mergeRefs([setPopperElement, ref])}
-        $inModal={inModal}
-        style={styles.popper}
-        $pointerEvents={pointerEvents}
-        {...htmlSpanProps}
-        {...attributes.popper}
-      >
-        {pointerArrow && (
-          <TooltipArrow
-            ref={setArrowElement as any}
-            position={state?.placement as any}
-            style={styles.arrow}
-            backgroundColor={backgroundColor}
-            borderColor={borderColor}
-          />
-        )}
-        <StyledTooltipContent
-          label={label}
-          ariaLabel={ariaLabel}
-          maxWidth={maxWidth}
+  const ref = useRef() as MutableRefObject<HTMLElement>;
+  useEffect(() => {
+    if (ref && pointerEvents && handleMouseEnter && handleMouseLeave) {
+      ref.current?.addEventListener('mouseenter', handleMouseEnter);
+
+      ref.current?.addEventListener('mouseleave', handleMouseLeave);
+
+      ref.current?.addEventListener('mousedown', (evt: MouseEvent) => evt.stopPropagation());
+    }
+  }, [ref, pointerEvents, handleMouseEnter, handleMouseLeave]);
+
+  const content = (
+    <StyledSpan
+      className={className}
+      id={id}
+      ref={mergeRefs([setPopperElement, ref])}
+      $inModal={inModal}
+      style={styles.popper}
+      $pointerEvents={pointerEvents}
+      {...htmlSpanProps}
+      {...attributes.popper}
+    >
+      {pointerArrow && (
+        <TooltipArrow
+          ref={setArrowElement as any}
+          position={state?.placement as any}
+          style={styles.arrow}
           backgroundColor={backgroundColor}
           borderColor={borderColor}
         />
-      </StyledSpan>
-    );
+      )}
+      <StyledTooltipContent
+        label={label}
+        ariaLabel={ariaLabel}
+        maxWidth={maxWidth}
+        backgroundColor={backgroundColor}
+        borderColor={borderColor}
+      />
+    </StyledSpan>
+  );
 
-    if (withPortal) {
-      return <Portal>{content}</Portal>;
-    }
-    return content;
-  },
-) as any as React.ForwardRefExoticComponent<Props & React.RefAttributes<HTMLSpanElement>> & {
-  components: typeof components;
+  if (withPortal) {
+    return <Portal>{content}</Portal>;
+  }
+  return content;
 };
 
 PopOver.components = components;
