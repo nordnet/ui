@@ -1,13 +1,15 @@
 import { Property } from 'csstype';
+import React from 'react';
 
 export type Width = number | string;
 export type Height = number | string;
 
 export type ContainerProps = {
+  children?: React.ReactNode;
   container?: boolean;
   width?: Width;
   height?: Height;
-  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+  as?: any;
   /** flexbox direction */
   direction?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
   wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
@@ -66,7 +68,7 @@ export type ItemProps = {
   size?: number | string;
   width?: Width;
   height?: Height;
-  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+  as?: any;
   hidden?: boolean;
   /** a11y */
   role?: string;
@@ -81,7 +83,8 @@ type MediaRelatedProps<T> = {
   xl?: Partial<T>;
 };
 
-export type Props = MediaRelatedProps<FlexProps> & FlexProps & { children?: React.ReactNode };
+export type Props = MediaRelatedProps<FlexProps> &
+  FlexProps & { children?: React.ReactNode; as?: any };
 
 export type StoryTemplateProps = {
   cols: { children: React.ReactNode; itemArgs?: ItemProps }[];
