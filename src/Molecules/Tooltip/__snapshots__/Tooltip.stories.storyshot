@@ -678,6 +678,85 @@ exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] =
 </portal-dummy>
 `;
 
+exports[`Storyshots Molecules / Tooltip No Portal 1`] = `
+.c0 {
+  padding-top: 160px;
+  padding-bottom: 0px;
+  background-color: transparent;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c1 {
+  overflow: hidden;
+  position: relative;
+  border: 5px solid red;
+}
+
+<div
+  className="c0 c1"
+>
+  this is the bounding box
+  <div
+    className="c2"
+  >
+    <span
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
+        No portal
+      </span>
+    </span>
+    <span
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
+        Default with portal
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules / Tooltip With Clickable Content 1`] = `
 .c1 {
   margin-top: 160px;

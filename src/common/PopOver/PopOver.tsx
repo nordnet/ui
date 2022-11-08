@@ -58,6 +58,8 @@ const PopOver = forwardRef<HTMLSpanElement, Props>(
       offset,
       backgroundColor: backgroundColorProp,
       borderColor: borderColorProp,
+      pointerArrow,
+      withPortal,
       ...htmlSpanProps
     },
     ref,
@@ -67,9 +69,7 @@ const PopOver = forwardRef<HTMLSpanElement, Props>(
 
     const offsetModifier = offset ? [{ name: 'offset', options: { offset } }] : [];
 
-    /**
-         We're using Popper.js for convenient tooltip placement.
-         */
+    /* We're using Popper.js for convenient tooltip placement. */
     const popper = usePopper(triggerElement, popperElement, {
       modifiers: [{ name: 'arrow', options: { element: arrowElement } }, ...offsetModifier],
       placement: position,
@@ -87,18 +87,18 @@ const PopOver = forwardRef<HTMLSpanElement, Props>(
     const backgroundColor = backgroundColorProp || ((t) => t.color.bubbleBackground);
     const borderColor = borderColorProp || ((t) => t.color.bubbleBorder);
 
-    return (
-      <Portal>
-        <StyledSpan
-          className={className}
-          id={id}
-          ref={mergeRefs([setPopperElement, ref])}
-          $inModal={inModal}
-          style={styles.popper}
-          $pointerEvents={pointerEvents}
-          {...htmlSpanProps}
-          {...attributes.popper}
-        >
+    const content = (
+      <StyledSpan
+        className={className}
+        id={id}
+        ref={mergeRefs([setPopperElement, ref])}
+        $inModal={inModal}
+        style={styles.popper}
+        $pointerEvents={pointerEvents}
+        {...htmlSpanProps}
+        {...attributes.popper}
+      >
+        {pointerArrow && (
           <TooltipArrow
             ref={setArrowElement as any}
             position={state?.placement as any}
@@ -106,16 +106,21 @@ const PopOver = forwardRef<HTMLSpanElement, Props>(
             backgroundColor={backgroundColor}
             borderColor={borderColor}
           />
-          <StyledTooltipContent
-            label={label}
-            ariaLabel={ariaLabel}
-            maxWidth={maxWidth}
-            backgroundColor={backgroundColor}
-            borderColor={borderColor}
-          />
-        </StyledSpan>
-      </Portal>
+        )}
+        <StyledTooltipContent
+          label={label}
+          ariaLabel={ariaLabel}
+          maxWidth={maxWidth}
+          backgroundColor={backgroundColor}
+          borderColor={borderColor}
+        />
+      </StyledSpan>
     );
+
+    if (withPortal) {
+      return <Portal>{content}</Portal>;
+    }
+    return content;
   },
 ) as any as React.ForwardRefExoticComponent<Props & React.RefAttributes<HTMLSpanElement>> & {
   components: typeof components;

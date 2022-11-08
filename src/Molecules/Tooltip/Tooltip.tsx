@@ -33,6 +33,8 @@ export const Tooltip: TooltipComponent = forwardRef(
       isOpen: controlledIsOpen,
       wrapChild,
       pointerEvents = false,
+      pointerArrow = true,
+      withPortal = true,
     },
     ref,
   ) => {
@@ -78,6 +80,8 @@ export const Tooltip: TooltipComponent = forwardRef(
             maxWidth={maxWidth}
             offset={offset}
             pointerEvents={pointerEvents}
+            pointerArrow={pointerArrow}
+            withPortal={withPortal}
           />
         )}
       </>
