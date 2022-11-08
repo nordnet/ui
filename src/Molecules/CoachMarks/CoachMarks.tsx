@@ -78,6 +78,7 @@ export const CoachMarks: Component = ({
   multiStepIndicatorText = 'of',
   closeOnClickOutside = true,
   barColor,
+  backdropPadding,
 }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
@@ -86,6 +87,7 @@ export const CoachMarks: Component = ({
   const [popperElement, setPopperElement] = useState<HTMLElement | null>(null);
   const [arrowElement, setArrowElement] = useState<HTMLElement | null>(null);
   const scrollPosition = useScrollPosition();
+  const highlightBoxPadding = backdropPadding || BACKDROP_PADDING;
   const { styles, attributes } = usePopper(referenceElement, popperElement, {
     // @ts-ignore
     placement: `${placement}-start`,
@@ -93,7 +95,9 @@ export const CoachMarks: Component = ({
       { name: 'arrow', options: { element: arrowElement } },
       {
         name: 'offset',
-        options: { offset: [-BACKDROP_PADDING, OFFSET_AWAY_FROM_REFERENCE + BACKDROP_PADDING] },
+        options: {
+          offset: [-highlightBoxPadding, OFFSET_AWAY_FROM_REFERENCE + Number(highlightBoxPadding)],
+        },
       },
     ],
   });
@@ -103,7 +107,9 @@ export const CoachMarks: Component = ({
   const hasMultipleSteps = steps.length > 1;
   const hasPrevStep = currentStep > 0;
   const hasNextStep = currentStep + 1 < steps.length;
-  const path = referenceElementRect ? makeBackdropPath(referenceElementRect, BACKDROP_PADDING) : '';
+  const path = referenceElementRect
+    ? makeBackdropPath(referenceElementRect, Number(highlightBoxPadding))
+    : '';
 
   useSafeLayoutEffect(() => {
     if (referenceElement) {

@@ -61,6 +61,53 @@ defaultStory.story = {
   name: 'Default',
 };
 
+export const withCustomBackdropPadding = () => {
+  const Example = () => {
+    const [activeGuide, setActiveGuide] = useState(true);
+    const [referenceElement, setReferenceElement] = useState<HTMLElement | null>(null);
+
+    return (
+      <>
+        <Card>
+          <Button onClick={() => setActiveGuide(true)}>Start guide</Button>
+          <Box py={5} pl={5}>
+            <Flexbox container justifyContent="space-between">
+              <Flexbox item>
+                <MockItem ref={setReferenceElement}>New feature</MockItem>
+              </Flexbox>
+            </Flexbox>
+          </Box>
+        </Card>
+
+        {referenceElement && activeGuide && (
+          <CoachMarks
+            onClose={() => setActiveGuide(false)}
+            onDone={() => setActiveGuide(false)}
+            onNext={action('next')}
+            onPrev={action('previous')}
+            backdropPadding={20}
+            steps={[
+              {
+                referenceElement,
+                icon: <OldIcon.Bank size={8} />,
+                title: 'New feature',
+                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                placement: 'bottom',
+              },
+            ]}
+          />
+        )}
+      </>
+    );
+  };
+
+  return <Example />;
+};
+
+withCustomBackdropPadding.story = {
+  name: 'With custom backdrop padding',
+};
+
 export const MultpipleSteps = () => {
   const Example = () => {
     const [activeGuide, setActiveGuide] = useState(true);
