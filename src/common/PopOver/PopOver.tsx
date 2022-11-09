@@ -5,7 +5,6 @@ import { Portal } from '../..';
 import { TooltipArrow } from './TooltipArrow';
 import { TooltipContent } from './TooltipContent';
 import { Props } from './PopOver.types';
-import { mergeRefs } from '../utils';
 
 type StyledSpanProps = {
   $inModal: Props['inModal'];
@@ -62,13 +61,13 @@ const PopOver: React.FC<Props> & {
   handleMouseLeave,
   ...htmlSpanProps
 }) => {
-  const [popperElement, setPopperElement] = useState(null);
   const [arrowElement, setArrowElement] = useState(null);
 
   const offsetModifier = offset ? [{ name: 'offset', options: { offset } }] : [];
 
   /* We're using Popper.js for convenient tooltip placement. */
-  const popper = usePopper(triggerElement, popperElement, {
+  const ref = useRef() as MutableRefObject<HTMLElement>;
+  const popper = usePopper(triggerElement, ref?.current, {
     modifiers: [{ name: 'arrow', options: { element: arrowElement } }, ...offsetModifier],
     placement: position,
   });
@@ -85,14 +84,13 @@ const PopOver: React.FC<Props> & {
   const backgroundColor = backgroundColorProp || ((t) => t.color.bubbleBackground);
   const borderColor = borderColorProp || ((t) => t.color.bubbleBorder);
 
-  const ref = useRef() as MutableRefObject<HTMLElement>;
   useEffect(() => {
-    if (ref && pointerEvents && handleMouseEnter && handleMouseLeave) {
-      ref.current?.addEventListener('mouseenter', handleMouseEnter);
+    if (ref && ref?.current && pointerEvents && handleMouseEnter && handleMouseLeave) {
+      ref?.current?.addEventListener('mouseenter', handleMouseEnter);
 
-      ref.current?.addEventListener('mouseleave', handleMouseLeave);
+      ref?.current?.addEventListener('mouseleave', handleMouseLeave);
 
-      ref.current?.addEventListener('mousedown', (evt: MouseEvent) => evt.stopPropagation());
+      ref?.current?.addEventListener('mousedown', (evt: MouseEvent) => evt.stopPropagation());
     }
   }, [ref, pointerEvents, handleMouseEnter, handleMouseLeave]);
 
@@ -100,7 +98,7 @@ const PopOver: React.FC<Props> & {
     <StyledSpan
       className={className}
       id={id}
-      ref={mergeRefs([setPopperElement, ref])}
+      ref={ref}
       $inModal={inModal}
       style={styles.popper}
       $pointerEvents={pointerEvents}
@@ -109,7 +107,7 @@ const PopOver: React.FC<Props> & {
     >
       {pointerArrow && (
         <TooltipArrow
-          ref={setArrowElement as any}
+          ref={setArrowElement as () => void}
           position={state?.placement as any}
           style={styles.arrow}
           backgroundColor={backgroundColor}
