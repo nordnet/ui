@@ -1,3 +1,15 @@
+## [11.13.1](https://github.com/nordnet/ui/compare/v11.13.0...v11.13.1) (2022-11-09)
+
+
+### Bug Fixes
+
+* clean up more refs ([38f4d35](https://github.com/nordnet/ui/commit/38f4d35))
+* export popover component for tooltip styling ([d295a70](https://github.com/nordnet/ui/commit/d295a70))
+* more clean up ([7679ec8](https://github.com/nordnet/ui/commit/7679ec8))
+* remove any ([0c9d22e](https://github.com/nordnet/ui/commit/0c9d22e))
+* remove unused refs, allow pop over to remain ([1cba46e](https://github.com/nordnet/ui/commit/1cba46e))
+* revert so arrows work again ([654c4a8](https://github.com/nordnet/ui/commit/654c4a8))
+
 # [11.13.0](https://github.com/nordnet/ui/compare/v11.12.0...v11.13.0) (2022-11-08)
 
 
