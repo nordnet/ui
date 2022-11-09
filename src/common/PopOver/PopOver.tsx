@@ -1,6 +1,7 @@
 import React, { MutableRefObject, useEffect, useRef, useState } from 'react';
 import { usePopper } from 'react-popper';
 import styled from 'styled-components';
+import { mergeRefs } from '../utils';
 import { Portal } from '../..';
 import { TooltipArrow } from './TooltipArrow';
 import { TooltipContent } from './TooltipContent';
@@ -61,13 +62,14 @@ const PopOver: React.FC<Props> & {
   handleMouseLeave,
   ...htmlSpanProps
 }) => {
+  const [popperElement, setPopperElement] = useState(null);
   const [arrowElement, setArrowElement] = useState(null);
 
   const offsetModifier = offset ? [{ name: 'offset', options: { offset } }] : [];
 
   /* We're using Popper.js for convenient tooltip placement. */
   const ref = useRef() as MutableRefObject<HTMLElement>;
-  const popper = usePopper(triggerElement, ref?.current, {
+  const popper = usePopper(triggerElement, popperElement, {
     modifiers: [{ name: 'arrow', options: { element: arrowElement } }, ...offsetModifier],
     placement: position,
   });
@@ -85,20 +87,26 @@ const PopOver: React.FC<Props> & {
   const borderColor = borderColorProp || ((t) => t.color.bubbleBorder);
 
   useEffect(() => {
-    if (ref && ref?.current && pointerEvents && handleMouseEnter && handleMouseLeave) {
-      ref?.current?.addEventListener('mouseenter', handleMouseEnter);
-
-      ref?.current?.addEventListener('mouseleave', handleMouseLeave);
-
-      ref?.current?.addEventListener('mousedown', (evt: MouseEvent) => evt.stopPropagation());
+    const node = ref?.current;
+    if (ref && node && pointerEvents && handleMouseEnter && handleMouseLeave) {
+      node?.addEventListener('mouseenter', handleMouseEnter);
+      node?.addEventListener('mouseleave', handleMouseLeave);
+      node?.addEventListener('mousedown', (evt: MouseEvent) => evt.stopPropagation());
     }
+    return () => {
+      if (ref && node && pointerEvents && handleMouseEnter && handleMouseLeave) {
+        node?.removeEventListener('mouseenter', handleMouseEnter);
+        node?.removeEventListener('mouseleave', handleMouseLeave);
+        node?.removeEventListener('mousedown', (evt: MouseEvent) => evt.stopPropagation());
+      }
+    };
   }, [ref, pointerEvents, handleMouseEnter, handleMouseLeave]);
 
   const content = (
     <StyledSpan
       className={className}
       id={id}
-      ref={ref}
+      ref={mergeRefs([setPopperElement, ref])}
       $inModal={inModal}
       style={styles.popper}
       $pointerEvents={pointerEvents}
@@ -107,7 +115,7 @@ const PopOver: React.FC<Props> & {
     >
       {pointerArrow && (
         <TooltipArrow
-          ref={setArrowElement as () => void}
+          ref={setArrowElement as any}
           position={state?.placement as any}
           style={styles.arrow}
           backgroundColor={backgroundColor}

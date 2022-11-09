@@ -374,6 +374,7 @@ export const NoPortal = () => {
           position="bottom"
           withPortal={false}
           pointerEvents
+          pointerArrow={false}
         >
           <span>No portal</span>
         </Tooltip>
@@ -386,6 +387,7 @@ export const NoPortal = () => {
           }
           position="bottom"
           pointerEvents
+          pointerArrow={false}
         >
           <span>Default with portal</span>
         </Tooltip>
@@ -402,7 +404,7 @@ const StyledTooltip = styled(Tooltip)`
 `;
 export const StyledPopOver = () => (
   <Box py={20}>
-    <StyledTooltip label="label" position="top" wrapChild>
+    <StyledTooltip label="label" position="top" wrapChild pointerArrow={false}>
       <Typography type="primary">hover me</Typography>
     </StyledTooltip>
   </Box>
