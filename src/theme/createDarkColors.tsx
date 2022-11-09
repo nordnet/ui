@@ -129,6 +129,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     pageWrapperDivider: rawColor.gray800,
     emptyState: rawColor.gray4,
     emptyStateCardText: rawColor.gray500,
+    error: rawColor.red500,
 
     feedbackModuleBackground: rawColor.gray700,
     feedbackPageBackground: rawColor.gray800,

@@ -128,6 +128,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     divider: rawColor.gray6,
     pageWrapperDivider: rawColor.gray700,
+    error:rawColor.red600,
     emptyState: rawColor.gray4,
     emptyStateCardText: rawColor.gray500,
 
