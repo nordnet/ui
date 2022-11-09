@@ -1,5 +1,5 @@
 import React, { FC, useContext } from 'react';
-import styled, { ThemeContext } from 'styled-components';
+import styled, { useTheme } from 'styled-components';
 import { ButtonProps, InnerProps, BaseButtonComponent } from './Button.types';
 import { assert } from '../../../../common/utils';
 import NormalizedElements from '../../../../common/NormalizedElements';
@@ -92,7 +92,7 @@ export const Button: BaseButtonComponent = React.forwardRef<
     if (trackContext) trackContext.track('button', e, props);
     if (onClick) onClick(e);
   };
-  const theme = useContext(ThemeContext);
+  const theme = useTheme();
 
   const colorFromTheme = color && color(theme);
 
