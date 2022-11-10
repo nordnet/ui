@@ -1,3 +1,23 @@
+# [11.14.0](https://github.com/nordnet/ui/compare/v11.13.1...v11.14.0) (2022-11-10)
+
+
+### Bug Fixes
+
+* 🐛 use new icons in stories ([fd4e2ca](https://github.com/nordnet/ui/commit/fd4e2ca))
+
+
+### Features
+
+* 🎸 add custom backdrop padding prop to coachmarks ([2d29e7e](https://github.com/nordnet/ui/commit/2d29e7e))
+* 🎸 add custom backdrop padding prop to coachmarks ([69d90fe](https://github.com/nordnet/ui/commit/69d90fe))
+* 🎸 add new color and test icon ([11d9f4e](https://github.com/nordnet/ui/commit/11d9f4e))
+* 🎸 add props for custom padding and circular highglight ([833902e](https://github.com/nordnet/ui/commit/833902e))
+* 🎸 add red600 for button color ([8a268e0](https://github.com/nordnet/ui/commit/8a268e0))
+* 🎸 fix progress indicator padding ([af74671](https://github.com/nordnet/ui/commit/af74671))
+* 🎸 lower the detail of the test svg icon with svgomg ([ed7a1f5](https://github.com/nordnet/ui/commit/ed7a1f5))
+* 🎸 remove red600 from default colours ([6b79273](https://github.com/nordnet/ui/commit/6b79273))
+* 🎸 update snapshot ([39b7308](https://github.com/nordnet/ui/commit/39b7308))
+
 ## [11.13.1](https://github.com/nordnet/ui/compare/v11.13.0...v11.13.1) (2022-11-09)
 
 
