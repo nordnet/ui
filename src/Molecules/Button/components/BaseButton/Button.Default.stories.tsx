@@ -148,6 +148,14 @@ export const buttonPrimaryWithColors = () => (
           </Button>
         ),
       },
+      {
+        title: 't => t.color.error',
+        component: (
+          <Button variant="primary" color={(t) => t.color.error} onClick={action('clicked')}>
+            Button
+          </Button>
+        ),
+      },
     ]}
   />
 );

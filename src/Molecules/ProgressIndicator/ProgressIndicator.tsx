@@ -30,7 +30,8 @@ const ProgressIndicator: FC<Props> = ({
   return (
     <Box
       px={5}
-      py={3}
+      pt={3}
+      pb={2}
       lg={{ pt: 4, pb: 3 }}
       backgroundColor={(t) => t.color.progressIndicatorBackground}
     >

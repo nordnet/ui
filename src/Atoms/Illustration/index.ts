@@ -48,6 +48,8 @@ import StatusInformation64 from './Medium/StatusInformation64';
 import StatusSuccess64 from './Medium/StatusSuccess64';
 import StatusWarning64 from './Medium/StatusWarning64';
 import Stock64 from './Medium/Stock64';
+import TestFail64 from './Medium/TestFail64';
+import TestSuccess64 from './Medium/TestSuccess64';
 import Tax64 from './Medium/Tax64';
 import TransferDeposit64 from './Medium/TransferDeposit64';
 import TransferInternal64 from './Medium/TransferInternal64';
@@ -115,6 +117,8 @@ export default {
   StatusWarning64,
   Stock64,
   Tax64,
+  TestFail64,
+  TestSuccess64,
   TransferDeposit64,
   TransferInternal64,
   TransferWithdraw64,

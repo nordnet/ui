@@ -380,6 +380,8 @@ export type ThemeColors = {
   emptyState: string;
   /** gray500 */
   emptyStateCardText: string;
+  /** red600 */
+  error: string;
 
   /** gray100 */
   feedbackModuleBackground: string;
