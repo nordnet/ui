@@ -126,7 +126,6 @@ const defaultColors = {
   negative: '#CC2269', // Included in Dark Mode
   negativeHover: '#AC135A',
   negativePressed: '#78013A',
-  error: '#CC3929',
   index: '#FFCF00', // Included in Dark Mode
   sfdrArticle9: '#41A21A',
   sfdrArticle8: '#85DA62',
