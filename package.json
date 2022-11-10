@@ -61,10 +61,10 @@
     "color": "^4.0.1",
     "date-fns": "^2.23.0",
     "focus-within-polyfill": "^5.2.1",
-    "framer-motion": "^1.9.1",
+    "framer-motion": "^7.6.5",
     "ramda": "^0.27.1",
     "react-focus-lock": "^2.5.2",
-    "react-intl": "^5.20.10",
+    "react-intl": "^6.2.1",
     "react-popper": "^2.2.5",
     "react-remove-scroll": "^2.4.3",
     "react-uid": "^2.3.1",
@@ -104,7 +104,7 @@
     "@types/lodash": "^4.14.172",
     "@types/node": "^16.7.1",
     "@types/ramda": "0.27.44",
-    "@types/react": "18.0.8",
+    "@types/react": "18.0.25",
     "@types/react-dom": "18.0.8",
     "@types/react-router-dom": "5.3.3",
     "@types/styled-components": "5.1.26",
@@ -153,5 +153,8 @@
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-processor-styled-components": "1.10.0",
     "typescript": "4.3.5"
+  },
+  "resolutions": {
+    "@types/react": "^18.0.25"
   }
 }
