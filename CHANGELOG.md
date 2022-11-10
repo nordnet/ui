@@ -1,3 +1,30 @@
+# [12.0.0-beta.2](https://github.com/nordnet/ui/compare/v12.0.0-beta.1...v12.0.0-beta.2) (2022-11-10)
+
+
+### Bug Fixes
+
+* 🐛 use new icons in stories ([fd4e2ca](https://github.com/nordnet/ui/commit/fd4e2ca))
+* add nvmrc file ([6281e12](https://github.com/nordnet/ui/commit/6281e12))
+* clean up more refs ([38f4d35](https://github.com/nordnet/ui/commit/38f4d35))
+* export popover component for tooltip styling ([d295a70](https://github.com/nordnet/ui/commit/d295a70))
+* more clean up ([7679ec8](https://github.com/nordnet/ui/commit/7679ec8))
+* remove any ([0c9d22e](https://github.com/nordnet/ui/commit/0c9d22e))
+* remove unused refs, allow pop over to remain ([1cba46e](https://github.com/nordnet/ui/commit/1cba46e))
+* revert so arrows work again ([654c4a8](https://github.com/nordnet/ui/commit/654c4a8))
+
+
+### Features
+
+* 🎸 add custom backdrop padding prop to coachmarks ([2d29e7e](https://github.com/nordnet/ui/commit/2d29e7e))
+* 🎸 add custom backdrop padding prop to coachmarks ([69d90fe](https://github.com/nordnet/ui/commit/69d90fe))
+* 🎸 add new color and test icon ([11d9f4e](https://github.com/nordnet/ui/commit/11d9f4e))
+* 🎸 add props for custom padding and circular highglight ([833902e](https://github.com/nordnet/ui/commit/833902e))
+* 🎸 add red600 for button color ([8a268e0](https://github.com/nordnet/ui/commit/8a268e0))
+* 🎸 fix progress indicator padding ([af74671](https://github.com/nordnet/ui/commit/af74671))
+* 🎸 lower the detail of the test svg icon with svgomg ([ed7a1f5](https://github.com/nordnet/ui/commit/ed7a1f5))
+* 🎸 remove red600 from default colours ([6b79273](https://github.com/nordnet/ui/commit/6b79273))
+* 🎸 update snapshot ([39b7308](https://github.com/nordnet/ui/commit/39b7308))
+
 # [12.0.0-beta.1](https://github.com/nordnet/ui/compare/v11.14.0-beta.1...v12.0.0-beta.1) (2022-11-10)
 
 
