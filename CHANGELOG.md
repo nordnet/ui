@@ -1,3 +1,10 @@
+# [11.14.0-beta.1](https://github.com/nordnet/ui/compare/v11.13.0...v11.14.0-beta.1) (2022-11-10)
+
+
+### Features
+
+* upgrade to framer-motion 7 ([429b587](https://github.com/nordnet/ui/commit/429b587))
+
 # [11.13.0](https://github.com/nordnet/ui/compare/v11.12.0...v11.13.0) (2022-11-08)
 
 
