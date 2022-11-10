@@ -61,7 +61,7 @@
     "color": "^4.0.1",
     "date-fns": "^2.23.0",
     "focus-within-polyfill": "^5.2.1",
-    "framer-motion": "^1.9.1",
+    "framer-motion": "^7.6.5",
     "ramda": "^0.27.1",
     "react-focus-lock": "^2.5.2",
     "react-intl": "^5.20.10",
