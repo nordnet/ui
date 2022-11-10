@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { usePopper } from 'react-popper';
 import FocusLock from 'react-focus-lock';
-import { Button, Flexbox, OldIcon, Media, Typography } from '../..';
+import { Button, Flexbox, OldIcon, Typography } from '../..';
 import { ColsTrimmerProps, Component } from './CoachMarks.types';
 import { makeBackdropPath } from './utils';
 import { useOnClickOutside, useWindowSize, useSafeLayoutEffect } from '../../common/Hooks';
@@ -79,6 +79,7 @@ export const CoachMarks: Component = ({
   closeOnClickOutside = true,
   barColor,
   backdropPadding,
+  isCircular,
 }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
@@ -108,7 +109,7 @@ export const CoachMarks: Component = ({
   const hasPrevStep = currentStep > 0;
   const hasNextStep = currentStep + 1 < steps.length;
   const path = referenceElementRect
-    ? makeBackdropPath(referenceElementRect, Number(highlightBoxPadding))
+    ? makeBackdropPath(referenceElementRect, Number(highlightBoxPadding), isCircular)
     : '';
 
   useSafeLayoutEffect(() => {
@@ -156,81 +157,79 @@ export const CoachMarks: Component = ({
   });
 
   return referenceElementRect ? (
-    <Media query={(t) => t.media.greaterThan(t.breakpoints.lg)}>
-      <FocusLock>
-        <Bubble
-          ref={setPopperElement}
-          style={styles.popper}
-          {...attributes.popper}
-          barColor={barColor}
-        >
-          <BubbleArrow ref={setArrowElement} style={styles.arrow} bubblePlacement={placement} />
-          <Flexbox container item direction="column" flex="1" gutter={5} ref={internalCoachMarkRef}>
-            {body || (
-              <Flexbox container direction="column" gutter={1}>
-                {icon && <IconFlex item>{icon}</IconFlex>}
-                {title && (
-                  <Flexbox item>
-                    <TitleWrapper $hasIcon={Boolean(icon)}>
-                      <Typography as="h2" type="primary" weight="bold">
-                        {title}
-                      </Typography>
-                    </TitleWrapper>
-                  </Flexbox>
-                )}
-                {content && (
-                  <Flexbox item>
-                    <Content>
-                      {typeof content === 'string' ? (
-                        <Typography as="p" type="secondary" color="inherit">
-                          {content}
-                        </Typography>
-                      ) : (
-                        content
-                      )}
-                    </Content>
-                  </Flexbox>
-                )}
-              </Flexbox>
-            )}
-            <FooterFlex container item alignItems="baseline" gutter={5}>
-              {hasMultipleSteps && (
+    <FocusLock>
+      <Bubble
+        ref={setPopperElement}
+        style={styles.popper}
+        {...attributes.popper}
+        barColor={barColor}
+      >
+        <BubbleArrow ref={setArrowElement} style={styles.arrow} bubblePlacement={placement} />
+        <Flexbox container item direction="column" flex="1" gutter={5} ref={internalCoachMarkRef}>
+          {body || (
+            <Flexbox container direction="column" gutter={1}>
+              {icon && <IconFlex item>{icon}</IconFlex>}
+              {title && (
                 <Flexbox item>
-                  <Typography type="secondary" color={(t) => t.color.bubbleSecondaryText}>
-                    {`${currentStep + 1} ${multiStepIndicatorText} ${steps.length}`}
-                  </Typography>
+                  <TitleWrapper $hasIcon={Boolean(icon)}>
+                    <Typography as="h2" type="primary" weight="bold">
+                      {title}
+                    </Typography>
+                  </TitleWrapper>
                 </Flexbox>
               )}
-              <NavigationButtonsContainer container gutter={1} $hasSingleButton={!hasPrevStep}>
-                {hasPrevStep && (
-                  <Flexbox item flex="1 0 50%">
-                    <Button variant="secondary" onClick={handleStepBackwards} fullWidth>
-                      {prevText}
-                    </Button>
-                  </Flexbox>
-                )}
-                <Flexbox item flex="1 0 50%">
-                  {hasNextStep ? (
-                    <Button variant="primary" onClick={handleStepForward} fullWidth>
-                      {nextText}
-                    </Button>
-                  ) : (
-                    <Button variant="primary" onClick={handleDone} fullWidth>
-                      {doneText}
-                    </Button>
-                  )}
+              {content && (
+                <Flexbox item>
+                  <Content>
+                    {typeof content === 'string' ? (
+                      <Typography as="p" type="secondary" color="inherit">
+                        {content}
+                      </Typography>
+                    ) : (
+                      content
+                    )}
+                  </Content>
                 </Flexbox>
-              </NavigationButtonsContainer>
-            </FooterFlex>
-          </Flexbox>
-          <CloseButton variant="neutral" onClick={handleClose}>
-            <OldIcon.CrossMedium size={CLOSE_ICON_SIZE} />
-          </CloseButton>
-        </Bubble>
-        <SVG>
-          <path d={path} />
-        </SVG>
-      </FocusLock>
-    </Media>
+              )}
+            </Flexbox>
+          )}
+          <FooterFlex container item alignItems="baseline" gutter={5}>
+            {hasMultipleSteps && (
+              <Flexbox item>
+                <Typography type="secondary" color={(t) => t.color.bubbleSecondaryText}>
+                  {`${currentStep + 1} ${multiStepIndicatorText} ${steps.length}`}
+                </Typography>
+              </Flexbox>
+            )}
+            <NavigationButtonsContainer container gutter={1} $hasSingleButton={!hasPrevStep}>
+              {hasPrevStep && (
+                <Flexbox item flex="1 0 50%">
+                  <Button variant="secondary" onClick={handleStepBackwards} fullWidth>
+                    {prevText}
+                  </Button>
+                </Flexbox>
+              )}
+              <Flexbox item flex="1 0 50%">
+                {hasNextStep ? (
+                  <Button variant="primary" onClick={handleStepForward} fullWidth>
+                    {nextText}
+                  </Button>
+                ) : (
+                  <Button variant="primary" onClick={handleDone} fullWidth>
+                    {doneText}
+                  </Button>
+                )}
+              </Flexbox>
+            </NavigationButtonsContainer>
+          </FooterFlex>
+        </Flexbox>
+        <CloseButton variant="neutral" onClick={handleClose}>
+          <OldIcon.CrossMedium size={CLOSE_ICON_SIZE} />
+        </CloseButton>
+      </Bubble>
+      <SVG>
+        <path d={path} />
+      </SVG>
+    </FocusLock>
   ) : null;
 };

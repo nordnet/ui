@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { action } from '@storybook/addon-actions';
-import { Box, Button, Card, CoachMarks, Flexbox, OldIcon, Typography } from '../..';
+import { Box, Button, Card, CoachMarks, Flexbox, Icon, OldIcon, Typography } from '../..';
 
 const MockItem = styled.div`
   padding: ${(p) => p.theme.spacing.unit(5)}px;
@@ -106,6 +106,106 @@ export const withCustomBackdropPadding = () => {
 
 withCustomBackdropPadding.story = {
   name: 'With custom backdrop padding',
+};
+
+export const withCircularBackdrop = () => {
+  const Example = () => {
+    const [activeGuide, setActiveGuide] = useState(true);
+    const [referenceElement, setReferenceElement] = useState<HTMLElement | null>(null);
+
+    return (
+      <>
+        <Card>
+          <Button onClick={() => setActiveGuide(true)}>Start guide</Button>
+          <Box py={10} pl={25}>
+            <Flexbox container justifyContent="space-between">
+              <Flexbox item>
+                <div ref={setReferenceElement}>
+                  <Icon.More24 />
+                </div>
+              </Flexbox>
+            </Flexbox>
+          </Box>
+        </Card>
+
+        {referenceElement && activeGuide && (
+          <CoachMarks
+            onClose={() => setActiveGuide(false)}
+            onDone={() => setActiveGuide(false)}
+            onNext={action('next')}
+            onPrev={action('previous')}
+            backdropPadding={30}
+            isCircular
+            steps={[
+              {
+                referenceElement,
+                icon: <OldIcon.Bank size={8} />,
+                title: 'New feature',
+                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                placement: 'bottom',
+              },
+            ]}
+          />
+        )}
+      </>
+    );
+  };
+
+  return <Example />;
+};
+
+withCircularBackdrop.story = {
+  name: 'With circular backdrop',
+};
+
+export const withCircularHighlightSurroundingLongElement = () => {
+  const Example = () => {
+    const [activeGuide, setActiveGuide] = useState(true);
+    const [referenceElement, setReferenceElement] = useState<HTMLElement | null>(null);
+
+    return (
+      <>
+        <Card>
+          <Button onClick={() => setActiveGuide(true)}>Start guide</Button>
+          <Box py={10} pl={55}>
+            <Flexbox container justifyContent="space-between">
+              <Flexbox item>
+                <div ref={setReferenceElement}>
+                  <Box style={{ width: 100, height: 350 }} backgroundColor={(t) => t.color.cta} />
+                </div>
+              </Flexbox>
+            </Flexbox>
+          </Box>
+        </Card>
+
+        {referenceElement && activeGuide && (
+          <CoachMarks
+            onClose={() => setActiveGuide(false)}
+            onDone={() => setActiveGuide(false)}
+            onNext={action('next')}
+            onPrev={action('previous')}
+            backdropPadding={30}
+            isCircular
+            steps={[
+              {
+                referenceElement,
+                icon: <OldIcon.Bank size={8} />,
+                title: 'New feature',
+                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                placement: 'bottom',
+              },
+            ]}
+          />
+        )}
+      </>
+    );
+  };
+
+  return <Example />;
+};
+
+withCircularHighlightSurroundingLongElement.story = {
+  name: 'With long element and circular highlight',
 };
 
 export const MultpipleSteps = () => {
