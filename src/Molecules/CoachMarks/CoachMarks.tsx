@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { usePopper } from 'react-popper';
 import FocusLock from 'react-focus-lock';
-import { Button, Flexbox, OldIcon, Typography } from '../..';
+import { Button, Flexbox, Icon, Typography } from '../..';
 import { ColsTrimmerProps, Component } from './CoachMarks.types';
 import { makeBackdropPath } from './utils';
 import { useOnClickOutside, useWindowSize, useSafeLayoutEffect } from '../../common/Hooks';
@@ -224,7 +224,7 @@ export const CoachMarks: Component = ({
           </FooterFlex>
         </Flexbox>
         <CloseButton variant="neutral" onClick={handleClose}>
-          <OldIcon.CrossMedium size={CLOSE_ICON_SIZE} />
+          <Icon.Cross16 />
         </CloseButton>
       </Bubble>
       <SVG>

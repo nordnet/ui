@@ -29,7 +29,6 @@ export type Props = {
   openDelay?: number;
   closeDelay?: number;
   isOpen?: boolean;
-  ref?: React.Ref<HTMLSpanElement>;
   /**
    * @wrapChild
    * Wraps children with a span DOM element.
@@ -44,5 +43,3 @@ export type Props = {
   pointerArrow?: boolean;
   withPortal?: boolean;
 };
-
-export type TooltipComponent = React.FC<Props>;

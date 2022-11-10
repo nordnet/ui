@@ -105,18 +105,16 @@ const StyledArrow = styled.span<Props>`
 type PropsWithoutRef = Omit<Props, 'ref'>;
 
 const TooltipArrow = forwardRef<HTMLSpanElement, PropsWithoutRef>(
-  ({ position, style, backgroundColor, borderColor, ...htmlSpanProps }, ref) => {
-    return (
-      <StyledArrow
-        ref={ref as any}
-        position={position}
-        style={style}
-        backgroundColor={backgroundColor}
-        borderColor={borderColor}
-        {...htmlSpanProps}
-      />
-    );
-  },
+  ({ position, style, backgroundColor, borderColor, ...htmlSpanProps }, ref) => (
+    <StyledArrow
+      ref={ref as any}
+      position={position}
+      style={style}
+      backgroundColor={backgroundColor}
+      borderColor={borderColor}
+      {...htmlSpanProps}
+    />
+  ),
 );
 
 export default TooltipArrow;
