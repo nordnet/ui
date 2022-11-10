@@ -1,3 +1,15 @@
+# [12.0.0-beta.1](https://github.com/nordnet/ui/compare/v11.14.0-beta.1...v12.0.0-beta.1) (2022-11-10)
+
+
+### chore
+
+* upgrade to react 18 ([9725725](https://github.com/nordnet/ui/commit/9725725))
+
+
+### BREAKING CHANGES
+
+* Upgrade to react 18
+
 # [11.14.0-beta.1](https://github.com/nordnet/ui/compare/v11.13.0...v11.14.0-beta.1) (2022-11-10)
 
 
