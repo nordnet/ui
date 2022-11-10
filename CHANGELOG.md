@@ -1,3 +1,10 @@
+## [11.14.1](https://github.com/nordnet/ui/compare/v11.14.0...v11.14.1) (2022-11-10)
+
+
+### Bug Fixes
+
+* add nvmrc file ([6281e12](https://github.com/nordnet/ui/commit/6281e12))
+
 # [11.14.0](https://github.com/nordnet/ui/compare/v11.13.1...v11.14.0) (2022-11-10)
 
 
