@@ -115,8 +115,9 @@ export const Button: BaseButtonComponent = React.forwardRef<
       colorFromTheme === theme.color.cta ||
         colorFromTheme === theme.color.negative ||
         colorFromTheme === theme.color.sell ||
-        colorFromTheme === theme.color.functionRed,
-      'Button: color is incorrect, use only `t => t.color.cta` or `t => t.color.negative` or `t => t.color.functionRed` for primary and secondary variant.',
+        colorFromTheme === theme.color.functionRed ||
+        colorFromTheme === theme.color.error,
+      'Button: color is incorrect, use only `t => t.color.cta` or `t => t.color.negative` or `t => t.color.functionRed` or `t => t.color.error` for primary and secondary variant.',
     );
   }
 

@@ -2,7 +2,9 @@ import React from 'react';
 import { Theme } from '../../../../theme/theme.types';
 
 type Colors = Theme['color'];
-type ColorFn = (t: Theme) => Colors['cta'] | Colors['negative'] | Colors['functionRed'];
+type ColorFn = (
+  t: Theme,
+) => Colors['cta'] | Colors['negative'] | Colors['functionRed'] | Colors['error'];
 
 export type ButtonProps = {
   /** @default primary */

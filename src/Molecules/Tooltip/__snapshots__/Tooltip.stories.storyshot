@@ -701,15 +701,6 @@ exports[`Storyshots Molecules / Tooltip No Portal 1`] = `
   align-items: center;
 }
 
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c1 {
   overflow: hidden;
   position: relative;
@@ -732,11 +723,7 @@ exports[`Storyshots Molecules / Tooltip No Portal 1`] = `
       onMouseLeave={[Function]}
       onMouseMove={[Function]}
     >
-      <span
-        className="Typography__Span-sc-10mju41-0 c3"
-      >
-        No portal
-      </span>
+      No portal
     </span>
     <span
       onBlur={[Function]}
@@ -747,13 +734,46 @@ exports[`Storyshots Molecules / Tooltip No Portal 1`] = `
       onMouseLeave={[Function]}
       onMouseMove={[Function]}
     >
-      <span
-        className="Typography__Span-sc-10mju41-0 c3"
-      >
-        Default with portal
-      </span>
+      Default with portal
     </span>
   </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / Tooltip Styled Pop Over 1`] = `
+.c0 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+<div
+  className="c0"
+>
+  <span
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onMouseMove={[Function]}
+  >
+    <span
+      className="Typography__Span-sc-10mju41-0 c1"
+    >
+      hover me
+    </span>
+  </span>
 </div>
 `;
 
