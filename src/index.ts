@@ -85,6 +85,8 @@ import TabsNav from './Molecules/TabsNav';
 import Timeline from './Molecules/Timeline';
 import Toggle from './Molecules/Toggle';
 import Tooltip from './Molecules/Tooltip';
+// export popover for styling tooltip content
+import { PopOver } from './common/PopOver';
 import TruncateWithTooltip from './Molecules/TruncateWithTooltip';
 import QuickFilter from './Molecules/QuickFilter';
 
@@ -186,6 +188,7 @@ export {
   PersistentTooltip,
   Pill,
   /** @deprecated use Button.Pill instead */ PillButton,
+  PopOver,
   Portal,
   ProgressBar,
   ProgressIndicator,

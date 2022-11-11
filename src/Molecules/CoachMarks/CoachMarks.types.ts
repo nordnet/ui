@@ -30,6 +30,8 @@ export type Props = {
   multiStepIndicatorText?: string;
   closeOnClickOutside?: boolean;
   barColor?: ColorFn;
+  backdropPadding?: string | number;
+  isCircular?: boolean;
 };
 
 export type Component = React.FC<Props>;

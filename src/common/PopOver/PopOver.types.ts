@@ -33,4 +33,6 @@ export type Props = {
   pointerEvents?: boolean;
   pointerArrow?: boolean;
   withPortal?: boolean;
+  handleMouseEnter?: (e: any) => void;
+  handleMouseLeave?: (e: any) => void;
 };
