@@ -1,3 +1,10 @@
+## [11.14.2](https://github.com/nordnet/ui/compare/v11.14.1...v11.14.2) (2022-11-11)
+
+
+### Bug Fixes
+
+* 🐛 pass customization props to steps instead of coachmarks ([76ba35b](https://github.com/nordnet/ui/commit/76ba35b))
+
 ## [11.14.1](https://github.com/nordnet/ui/compare/v11.14.0...v11.14.1) (2022-11-10)
 
 
