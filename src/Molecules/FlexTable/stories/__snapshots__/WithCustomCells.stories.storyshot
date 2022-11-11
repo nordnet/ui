@@ -1086,7 +1086,6 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
         <span
           className="Typography__Span-sc-10mju41-0 c23 c9"
         >
-          
           300
         </span>
       </div>
@@ -1147,7 +1146,6 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
         <span
           className="Typography__Span-sc-10mju41-0 c23 c9"
         >
-          
           75
           %
         </span>
@@ -1219,7 +1217,6 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
         <span
           className="Typography__Span-sc-10mju41-0 c23 c9"
         >
-          
           100
         </span>
       </div>
@@ -1284,7 +1281,6 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
         <span
           className="Typography__Span-sc-10mju41-0 c23 c9"
         >
-          
           25
           %
         </span>
@@ -1348,7 +1344,6 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
         <span
           className="Typography__Span-sc-10mju41-0 c33 c9"
         >
-          
           400
         </span>
       </div>
@@ -1375,7 +1370,6 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
         <span
           className="Typography__Span-sc-10mju41-0 c33 c9"
         >
-          
           25
           %
         </span>

@@ -338,7 +338,6 @@ exports[`Storyshots Molecules / Input / Select Accessible From Document Forms 1`
               />
             </svg>
           </div>
-          
         </div>
       </div>
     </div>
@@ -683,7 +682,6 @@ exports[`Storyshots Molecules / Input / Select Actions 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -976,7 +974,6 @@ exports[`Storyshots Molecules / Input / Select Actions And Empty Option List 1`]
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -1317,7 +1314,6 @@ exports[`Storyshots Molecules / Input / Select Auto Focus 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -1671,7 +1667,6 @@ Array [
                 />
               </svg>
             </div>
-            
           </div>
         </div>
       </div>
@@ -2166,7 +2161,6 @@ Array [
               />
             </svg>
           </div>
-          
         </div>
       </div>
     </div>
@@ -2508,7 +2502,6 @@ exports[`Storyshots Molecules / Input / Select Controlled behaviour 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -2839,7 +2832,6 @@ exports[`Storyshots Molecules / Input / Select Custom Renderers 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -3152,7 +3144,6 @@ exports[`Storyshots Molecules / Input / Select Default Story 1`] = `
               />
             </svg>
           </div>
-          
         </div>
       </div>
     </div>
@@ -3685,7 +3676,6 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                   />
                 </svg>
               </div>
-              
             </div>
           </div>
         </div>
@@ -4179,7 +4169,6 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                   />
                 </svg>
               </div>
-              
             </div>
           </div>
         </div>
@@ -4523,7 +4512,6 @@ exports[`Storyshots Molecules / Input / Select Disabled Items 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -4890,7 +4878,6 @@ Array [
               />
             </svg>
           </div>
-          
         </div>
       </div>
     </div>
@@ -5260,7 +5247,6 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -5553,7 +5539,6 @@ exports[`Storyshots Molecules / Input / Select Fully Empty 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -5934,7 +5919,6 @@ exports[`Storyshots Molecules / Input / Select Grouped Options 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -6320,7 +6304,6 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect 1`] =
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -6710,7 +6693,6 @@ exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect Contr
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -7017,7 +6999,6 @@ exports[`Storyshots Molecules / Input / Select Hide Label 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -10176,7 +10157,6 @@ exports[`Storyshots Molecules / Input / Select Multi Select Uncontrolled 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -10522,7 +10502,6 @@ exports[`Storyshots Molecules / Input / Select Multiselect 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -10868,7 +10847,6 @@ exports[`Storyshots Molecules / Input / Select Multiselect Actions 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -11214,7 +11192,6 @@ exports[`Storyshots Molecules / Input / Select Multiselect Columns 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -11567,7 +11544,6 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -11932,7 +11908,6 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All With Full 
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -12241,7 +12216,6 @@ exports[`Storyshots Molecules / Input / Select On A Coloured Background 1`] = `
               />
             </svg>
           </div>
-          
         </div>
       </div>
     </div>
@@ -12583,7 +12557,6 @@ exports[`Storyshots Molecules / Input / Select On Blur And On Focus 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -12924,7 +12897,6 @@ exports[`Storyshots Molecules / Input / Select On Search Query Change 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -13221,7 +13193,6 @@ exports[`Storyshots Molecules / Input / Select On Search Query Change Without Op
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -13914,7 +13885,6 @@ exports[`Storyshots Molecules / Input / Select Overflow Story 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -14247,7 +14217,6 @@ exports[`Storyshots Molecules / Input / Select Passing Truncated Components 1`] 
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -14596,7 +14565,6 @@ exports[`Storyshots Molecules / Input / Select Placement Top 1`] = `
               />
             </svg>
           </div>
-          
         </div>
       </div>
     </div>
@@ -14939,7 +14907,6 @@ exports[`Storyshots Molecules / Input / Select Preselected Options 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -15260,7 +15227,6 @@ exports[`Storyshots Molecules / Input / Select Search Story 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -15793,7 +15759,6 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                   />
                 </svg>
               </div>
-              
             </div>
           </div>
         </div>
@@ -16290,7 +16255,6 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                   />
                 </svg>
               </div>
-              
             </div>
           </div>
         </div>
@@ -16598,7 +16562,6 @@ exports[`Storyshots Molecules / Input / Select Tracking 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -16904,7 +16867,6 @@ Array [
               />
             </svg>
           </div>
-          
         </div>
       </div>
     </div>
@@ -17206,7 +17168,6 @@ Array [
               />
             </svg>
           </div>
-          
         </div>
       </div>
     </div>
@@ -17636,7 +17597,6 @@ exports[`Storyshots Molecules / Input / Select With Custom Height 1`] = `
                   />
                 </svg>
               </div>
-              
             </div>
           </div>
         </div>
@@ -19017,7 +18977,6 @@ exports[`Storyshots Molecules / Input / Select Without Search Component 1`] = `
               />
             </svg>
           </div>
-          
         </div>
       </div>
     </div>
