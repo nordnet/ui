@@ -476,9 +476,7 @@ Array [
                     >
                       <div
                         className="c13"
-                      >
-                        
-                      </div>
+                      />
                       <span
                         aria-hidden={true}
                         className="Typography__Span-sc-10mju41-0 c14 c15"
@@ -571,9 +569,7 @@ Array [
                       >
                         <div
                           className="c13"
-                        >
-                          
-                        </div>
+                        />
                         Investment period
                       </span>
                     </span>
@@ -599,9 +595,7 @@ Array [
                       >
                         <div
                           className="c13"
-                        >
-                          
-                        </div>
+                        />
                         Frequency
                       </span>
                     </span>
@@ -619,9 +613,7 @@ Array [
                   >
                     <div
                       className="c13"
-                    >
-                      
-                    </div>
+                    />
                     Amount
                   </span>
                 </div>
@@ -642,9 +634,7 @@ Array [
                 >
                   <div
                     className="c13"
-                  >
-                    
-                  </div>
+                  />
                   <span
                     aria-hidden={true}
                     className="Typography__Span-sc-10mju41-0 c14 c15"
@@ -1260,9 +1250,7 @@ Array [
                     >
                       <div
                         className="c13"
-                      >
-                        
-                      </div>
+                      />
                       <span
                         aria-hidden={true}
                         className="Typography__Span-sc-10mju41-0 c14 c15"
@@ -1355,9 +1343,7 @@ Array [
                       >
                         <div
                           className="c13"
-                        >
-                          
-                        </div>
+                        />
                         Investment period
                       </span>
                     </span>
@@ -1383,9 +1369,7 @@ Array [
                       >
                         <div
                           className="c13"
-                        >
-                          
-                        </div>
+                        />
                         Frequency
                       </span>
                     </span>
@@ -1403,9 +1387,7 @@ Array [
                   >
                     <div
                       className="c13"
-                    >
-                      
-                    </div>
+                    />
                     Amount
                   </span>
                 </div>
@@ -1426,9 +1408,7 @@ Array [
                 >
                   <div
                     className="c13"
-                  >
-                    
-                  </div>
+                  />
                   <span
                     aria-hidden={true}
                     className="Typography__Span-sc-10mju41-0 c14 c15"
@@ -2161,9 +2141,7 @@ Array [
                 >
                   <div
                     className="c9"
-                  >
-                    
-                  </div>
+                  />
                   <span
                     aria-hidden={true}
                     className="Typography__Span-sc-10mju41-0 c10 c11"
@@ -2229,9 +2207,7 @@ Array [
                   >
                     <div
                       className="c9"
-                    >
-                      
-                    </div>
+                    />
                     Investment period
                   </span>
                 </div>
@@ -2247,9 +2223,7 @@ Array [
                   >
                     <div
                       className="c9"
-                    >
-                      
-                    </div>
+                    />
                     Frequency
                   </span>
                 </div>
@@ -2265,9 +2239,7 @@ Array [
                   >
                     <div
                       className="c9"
-                    >
-                      
-                    </div>
+                    />
                     Amount
                   </span>
                 </div>
@@ -2288,9 +2260,7 @@ Array [
                 >
                   <div
                     className="c9"
-                  >
-                    
-                  </div>
+                  />
                   <span
                     aria-hidden={true}
                     className="Typography__Span-sc-10mju41-0 c10 c11"
@@ -3622,9 +3592,7 @@ Array [
                 >
                   <div
                     className="c9"
-                  >
-                    
-                  </div>
+                  />
                   <span
                     aria-hidden={true}
                     className="Typography__Span-sc-10mju41-0 c10 c11"
@@ -3690,9 +3658,7 @@ Array [
                   >
                     <div
                       className="c9"
-                    >
-                      
-                    </div>
+                    />
                     Investment period
                   </span>
                 </div>
@@ -3708,9 +3674,7 @@ Array [
                   >
                     <div
                       className="c9"
-                    >
-                      
-                    </div>
+                    />
                     Frequency
                   </span>
                 </div>
@@ -3726,9 +3690,7 @@ Array [
                   >
                     <div
                       className="c9"
-                    >
-                      
-                    </div>
+                    />
                     Amount
                   </span>
                 </div>
@@ -3749,9 +3711,7 @@ Array [
                 >
                   <div
                     className="c9"
-                  >
-                    
-                  </div>
+                  />
                   <span
                     aria-hidden={true}
                     className="Typography__Span-sc-10mju41-0 c10 c11"
