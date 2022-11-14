@@ -1,3 +1,10 @@
+# [12.0.0-beta.6](https://github.com/nordnet/ui/compare/v12.0.0-beta.5...v12.0.0-beta.6) (2022-11-14)
+
+
+### Bug Fixes
+
+* any prop ([e6146cd](https://github.com/nordnet/ui/commit/e6146cd))
+
 # [12.0.0-beta.5](https://github.com/nordnet/ui/compare/v12.0.0-beta.4...v12.0.0-beta.5) (2022-11-14)
 
 
