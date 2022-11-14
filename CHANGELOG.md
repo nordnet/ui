@@ -1,3 +1,10 @@
+# [12.0.0-beta.4](https://github.com/nordnet/ui/compare/v12.0.0-beta.3...v12.0.0-beta.4) (2022-11-14)
+
+
+### Bug Fixes
+
+* update testing-library and make tests work again ([e3f5d23](https://github.com/nordnet/ui/commit/e3f5d23))
+
 # [12.0.0-beta.3](https://github.com/nordnet/ui/compare/v12.0.0-beta.2...v12.0.0-beta.3) (2022-11-14)
 
 
