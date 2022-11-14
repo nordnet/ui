@@ -189,7 +189,7 @@ export const neutralButtonLookingLikeLinkUnderlineOnHover = () => (
           ),
         },
         {
-          title: 'Reset',
+          title: 'Reset icon right',
           component: (
             <Button
               icon={<Icon.ArrowDown16 />}
