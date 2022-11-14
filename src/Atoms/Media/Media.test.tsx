@@ -1,5 +1,5 @@
 import React from 'react';
-import { cleanup, render } from '@testing-library/react';
+import { cleanup, render, act } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import { renderToString } from 'react-dom/server';
 import { hydrateRoot } from 'react-dom/client';
@@ -127,7 +127,9 @@ test('Hydration', async () => {
 
   const htmlBeforeEffect = main.innerHTML;
 
-  await new Promise((res) => setTimeout(res, 0)); // wait for effect to be invoked
+  await act(async () => {
+    await new Promise((res) => setTimeout(res, 0)); // wait for effect to be invoked
+  });
 
   const htmlAfterEffect = main.innerHTML;
 

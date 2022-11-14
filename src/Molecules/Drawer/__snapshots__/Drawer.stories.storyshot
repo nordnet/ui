@@ -193,21 +193,6 @@ Array [
       tabIndex={0}
     />
     <div
-      data-focus-guard={true}
-      style={
-        Object {
-          "height": "0px",
-          "left": "1px",
-          "overflow": "hidden",
-          "padding": 0,
-          "position": "fixed",
-          "top": "1px",
-          "width": "1px",
-        }
-      }
-      tabIndex={1}
-    />
-    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -633,21 +618,6 @@ Array [
       tabIndex={0}
     />
     <div
-      data-focus-guard={true}
-      style={
-        Object {
-          "height": "0px",
-          "left": "1px",
-          "overflow": "hidden",
-          "padding": 0,
-          "position": "fixed",
-          "top": "1px",
-          "width": "1px",
-        }
-      }
-      tabIndex={1}
-    />
-    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -663,7 +633,7 @@ Array [
             onTouchStart={[Function]}
           >
             <span
-              id="13val-Drawer"
+              id="8val-Drawer"
             >
               <h2
                 className="c1 Typography__Span-sc-10mju41-0 c2"
@@ -1041,21 +1011,6 @@ Array [
       tabIndex={0}
     />
     <div
-      data-focus-guard={true}
-      style={
-        Object {
-          "height": "0px",
-          "left": "1px",
-          "overflow": "hidden",
-          "padding": 0,
-          "position": "fixed",
-          "top": "1px",
-          "width": "1px",
-        }
-      }
-      tabIndex={1}
-    />
-    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -1071,7 +1026,7 @@ Array [
             onTouchStart={[Function]}
           >
             <span
-              id="11val-Drawer"
+              id="7val-Drawer"
             >
               <h2
                 className="c1 Typography__Span-sc-10mju41-0 c2"
@@ -1368,21 +1323,6 @@ Array [
       tabIndex={0}
     />
     <div
-      data-focus-guard={true}
-      style={
-        Object {
-          "height": "0px",
-          "left": "1px",
-          "overflow": "hidden",
-          "padding": 0,
-          "position": "fixed",
-          "top": "1px",
-          "width": "1px",
-        }
-      }
-      tabIndex={1}
-    />
-    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -1398,7 +1338,7 @@ Array [
             onTouchStart={[Function]}
           >
             <span
-              id="19val-Drawer"
+              id="11val-Drawer"
             >
               <h2
                 className="c1 Typography__Span-sc-10mju41-0 c2"
@@ -1780,21 +1720,6 @@ Array [
       tabIndex={0}
     />
     <div
-      data-focus-guard={true}
-      style={
-        Object {
-          "height": "0px",
-          "left": "1px",
-          "overflow": "hidden",
-          "padding": 0,
-          "position": "fixed",
-          "top": "1px",
-          "width": "1px",
-        }
-      }
-      tabIndex={1}
-    />
-    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -1810,7 +1735,7 @@ Array [
             onTouchStart={[Function]}
           >
             <span
-              id="23val-Drawer"
+              id="13val-Drawer"
             >
               <h2
                 className="c1 Typography__Span-sc-10mju41-0 c2"
@@ -2163,21 +2088,6 @@ Array [
       tabIndex={0}
     />
     <div
-      data-focus-guard={true}
-      style={
-        Object {
-          "height": "0px",
-          "left": "1px",
-          "overflow": "hidden",
-          "padding": 0,
-          "position": "fixed",
-          "top": "1px",
-          "width": "1px",
-        }
-      }
-      tabIndex={1}
-    />
-    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -2193,7 +2103,7 @@ Array [
             onTouchStart={[Function]}
           >
             <span
-              id="9val-Drawer"
+              id="6val-Drawer"
             >
               <h2
                 className="c1 Typography__Span-sc-10mju41-0 c2"
@@ -2508,21 +2418,6 @@ Array [
       tabIndex={0}
     />
     <div
-      data-focus-guard={true}
-      style={
-        Object {
-          "height": "0px",
-          "left": "1px",
-          "overflow": "hidden",
-          "padding": 0,
-          "position": "fixed",
-          "top": "1px",
-          "width": "1px",
-        }
-      }
-      tabIndex={1}
-    />
-    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -2538,7 +2433,7 @@ Array [
             onTouchStart={[Function]}
           >
             <span
-              id="5val-Drawer"
+              id="4val-Drawer"
             >
               <div
                 className="c1"
@@ -2784,21 +2679,6 @@ Array [
         }
       }
       tabIndex={0}
-    />
-    <div
-      data-focus-guard={true}
-      style={
-        Object {
-          "height": "0px",
-          "left": "1px",
-          "overflow": "hidden",
-          "padding": 0,
-          "position": "fixed",
-          "top": "1px",
-          "width": "1px",
-        }
-      }
-      tabIndex={1}
     />
     <div
       data-focus-lock-disabled={false}
@@ -3063,21 +2943,6 @@ Array [
       tabIndex={0}
     />
     <div
-      data-focus-guard={true}
-      style={
-        Object {
-          "height": "0px",
-          "left": "1px",
-          "overflow": "hidden",
-          "padding": 0,
-          "position": "fixed",
-          "top": "1px",
-          "width": "1px",
-        }
-      }
-      tabIndex={1}
-    />
-    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -3093,7 +2958,7 @@ Array [
             onTouchStart={[Function]}
           >
             <span
-              id="21val-Drawer"
+              id="12val-Drawer"
             >
               <h2
                 className="c1 Typography__Span-sc-10mju41-0 c2"
@@ -3372,21 +3237,6 @@ Array [
       tabIndex={0}
     />
     <div
-      data-focus-guard={true}
-      style={
-        Object {
-          "height": "0px",
-          "left": "1px",
-          "overflow": "hidden",
-          "padding": 0,
-          "position": "fixed",
-          "top": "1px",
-          "width": "1px",
-        }
-      }
-      tabIndex={1}
-    />
-    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -3402,7 +3252,7 @@ Array [
             onTouchStart={[Function]}
           >
             <span
-              id="15val-Drawer"
+              id="9val-Drawer"
             >
               <h2
                 className="c1 Typography__Span-sc-10mju41-0 c2"
@@ -4416,21 +4266,6 @@ Array [
       tabIndex={0}
     />
     <div
-      data-focus-guard={true}
-      style={
-        Object {
-          "height": "0px",
-          "left": "1px",
-          "overflow": "hidden",
-          "padding": 0,
-          "position": "fixed",
-          "top": "1px",
-          "width": "1px",
-        }
-      }
-      tabIndex={1}
-    />
-    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -4446,7 +4281,7 @@ Array [
             onTouchStart={[Function]}
           >
             <span
-              id="17val-Drawer"
+              id="10val-Drawer"
             >
               <h2
                 className="c1 Typography__Span-sc-10mju41-0 c2"
