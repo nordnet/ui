@@ -1,3 +1,29 @@
+# [12.0.0-beta.3](https://github.com/nordnet/ui/compare/v12.0.0-beta.2...v12.0.0-beta.3) (2022-11-14)
+
+
+### Bug Fixes
+
+* add children prop ([692d49a](https://github.com/nordnet/ui/commit/692d49a))
+* add some more children ([be26387](https://github.com/nordnet/ui/commit/be26387))
+* align pagination with latest react-router ([eacc0bb](https://github.com/nordnet/ui/commit/eacc0bb))
+* as prop ([0cbbde9](https://github.com/nordnet/ui/commit/0cbbde9))
+* bump packages ([adfc574](https://github.com/nordnet/ui/commit/adfc574))
+* bump styled-components ([6bc20e3](https://github.com/nordnet/ui/commit/6bc20e3))
+* implicit any ([d2f7981](https://github.com/nordnet/ui/commit/d2f7981))
+* migrate to react-router 6 ([bc92d07](https://github.com/nordnet/ui/commit/bc92d07))
+* resolve react-test-renderer package ([b2a3848](https://github.com/nordnet/ui/commit/b2a3848))
+* some more children props ([e8ba676](https://github.com/nordnet/ui/commit/e8ba676))
+* ts-ignore four components ([4523bf4](https://github.com/nordnet/ui/commit/4523bf4))
+* update flextable cell types ([7a1f1b5](https://github.com/nordnet/ui/commit/7a1f1b5))
+* update isElement helper function ([2b3f4ca](https://github.com/nordnet/ui/commit/2b3f4ca))
+* update to createroot and hydrateroot from react18 ([212391a](https://github.com/nordnet/ui/commit/212391a))
+* use usetheme hook ([bf0f1e0](https://github.com/nordnet/ui/commit/bf0f1e0))
+
+
+### Features
+
+* update framer-motion react-intl and lock types/react ([ab16b10](https://github.com/nordnet/ui/commit/ab16b10))
+
 # [12.0.0-beta.2](https://github.com/nordnet/ui/compare/v12.0.0-beta.1...v12.0.0-beta.2) (2022-11-10)
 
 
