@@ -7299,21 +7299,6 @@ exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
     tabIndex={0}
   />
   <div
-    data-focus-guard={true}
-    style={
-      Object {
-        "height": "0px",
-        "left": "1px",
-        "overflow": "hidden",
-        "padding": 0,
-        "position": "fixed",
-        "top": "1px",
-        "width": "1px",
-      }
-    }
-    tabIndex={1}
-  />
-  <div
     data-focus-lock-disabled={false}
     onBlur={[Function]}
     onFocus={[Function]}
@@ -7335,6 +7320,7 @@ exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
             <select
               aria-hidden="true"
               className="c3"
+              disabled={false}
               onChange={[Function]}
             >
               <option
@@ -7416,6 +7402,7 @@ exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
                   </label>
                   <div
                     className="c9"
+                    disabled={false}
                     label="User account"
                     onBlur={[Function]}
                     onFocus={[Function]}
@@ -7430,6 +7417,7 @@ exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
                         aria-label="User account: Select account"
                         className="c11 c12"
                         data-testid="input-select-button"
+                        disabled={false}
                         form=""
                         id="no-scroll-select"
                         onClick={[Function]}
