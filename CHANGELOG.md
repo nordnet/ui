@@ -1,3 +1,11 @@
+# [12.0.0-beta.5](https://github.com/nordnet/ui/compare/v12.0.0-beta.4...v12.0.0-beta.5) (2022-11-14)
+
+
+### Bug Fixes
+
+* unique keys ([cb5e6b2](https://github.com/nordnet/ui/commit/cb5e6b2))
+* update jest.config and react-popper ([95831de](https://github.com/nordnet/ui/commit/95831de))
+
 # [12.0.0-beta.4](https://github.com/nordnet/ui/compare/v12.0.0-beta.3...v12.0.0-beta.4) (2022-11-14)
 
 
