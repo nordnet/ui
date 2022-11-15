@@ -16,6 +16,7 @@ yarn add @nordnet/ui
 
 ```javascript
 // src/root.js
+
 import { createRoot } from 'react-dom/client';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '@nordnet/ui';
