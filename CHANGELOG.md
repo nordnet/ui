@@ -1,3 +1,10 @@
+# [12.0.0-beta.7](https://github.com/nordnet/ui/compare/v12.0.0-beta.6...v12.0.0-beta.7) (2022-11-15)
+
+
+### Bug Fixes
+
+* get me a new version ([df91043](https://github.com/nordnet/ui/commit/df91043))
+
 # [12.0.0-beta.6](https://github.com/nordnet/ui/compare/v12.0.0-beta.5...v12.0.0-beta.6) (2022-11-14)
 
 
