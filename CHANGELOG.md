@@ -1,3 +1,10 @@
+## [11.14.3](https://github.com/nordnet/ui/compare/v11.14.2...v11.14.3) (2022-11-15)
+
+
+### Bug Fixes
+
+* 🐛 move action modal to bottom left ([72b55bf](https://github.com/nordnet/ui/commit/72b55bf))
+
 ## [11.14.2](https://github.com/nordnet/ui/compare/v11.14.1...v11.14.2) (2022-11-11)
 
 
