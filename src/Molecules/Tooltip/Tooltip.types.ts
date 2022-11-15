@@ -29,6 +29,7 @@ export type Props = {
   openDelay?: number;
   closeDelay?: number;
   isOpen?: boolean;
+  ref?: React.MutableRefObject<any>;
   /**
    * @wrapChild
    * Wraps children with a span DOM element.
