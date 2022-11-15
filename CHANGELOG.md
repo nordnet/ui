@@ -1,3 +1,11 @@
+## [11.14.4](https://github.com/nordnet/ui/compare/v11.14.3...v11.14.4) (2022-11-15)
+
+
+### Bug Fixes
+
+* 🐛 add missing lightbulb16 ([5bd3782](https://github.com/nordnet/ui/commit/5bd3782))
+* 🐛 use correct icon size ([c35f593](https://github.com/nordnet/ui/commit/c35f593))
+
 ## [11.14.3](https://github.com/nordnet/ui/compare/v11.14.2...v11.14.3) (2022-11-15)
 
 
