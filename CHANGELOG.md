@@ -1,3 +1,10 @@
+# [12.0.0-beta.8](https://github.com/nordnet/ui/compare/v12.0.0-beta.7...v12.0.0-beta.8) (2022-11-15)
+
+
+### Bug Fixes
+
+* as to any ([8397acb](https://github.com/nordnet/ui/commit/8397acb))
+
 # [12.0.0-beta.7](https://github.com/nordnet/ui/compare/v12.0.0-beta.6...v12.0.0-beta.7) (2022-11-15)
 
 
