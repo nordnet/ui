@@ -460,10 +460,10 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
           aria-hidden="true"
           className="c12"
           focusable="false"
-          height={16}
+          height={24}
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          width={16}
+          width={24}
         >
           <path
             d="M11 4V0h2v4h-2zM15 13a3 3 0 00-3-3v2a1 1 0 011 1h2zM8 22v2h8v-2H8zM3 4l2.828 2.828 1.415-1.414-2.829-2.828L3 4zM16.757 5.414l2.829-2.828L21 4l-2.828 2.828-1.415-1.414z"
@@ -498,10 +498,10 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
           aria-hidden="true"
           className="c12"
           focusable="false"
-          height={16}
+          height={24}
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          width={16}
+          width={24}
         >
           <path
             d="M11 4V0h2v4h-2zM15 13a3 3 0 00-3-3v2a1 1 0 011 1h2zM8 22v2h8v-2H8zM3 4l2.828 2.828 1.415-1.414-2.829-2.828L3 4zM16.757 5.414l2.829-2.828L21 4l-2.828 2.828-1.415-1.414z"

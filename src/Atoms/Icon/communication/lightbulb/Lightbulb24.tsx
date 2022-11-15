@@ -3,9 +3,9 @@ import React from 'react';
 import { IconBase } from '../../IconBase';
 import { IconProps } from '../../IconBase.types';
 
-const Lightbulb16: React.FC<IconProps> = (props) => {
+const Lightbulb24: React.FC<IconProps> = (props) => {
   return (
-    <IconBase {...props} width={16} height={16}>
+    <IconBase {...props} width={24} height={24}>
       <path
         d="M11 4V0h2v4h-2zM15 13a3 3 0 00-3-3v2a1 1 0 011 1h2zM8 22v2h8v-2H8zM3 4l2.828 2.828 1.415-1.414-2.829-2.828L3 4zM16.757 5.414l2.829-2.828L21 4l-2.828 2.828-1.415-1.414z"
         fill="currentColor"
@@ -18,6 +18,6 @@ const Lightbulb16: React.FC<IconProps> = (props) => {
   );
 };
 
-Lightbulb16.displayName = 'Icon.Lightbulb';
+Lightbulb24.displayName = 'Icon.Lightbulb';
 
-export default Lightbulb16;
+export default Lightbulb24;
