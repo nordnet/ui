@@ -640,8 +640,10 @@ export type ThemeColors = {
   spinnerWhite: string;
   /** index */
   starRating: string;
+  starRatingBlue: string;
   /** gray6 */
   starRatingOff: string;
+  starRatingBlueOff: string;
   /** cta */
   statusFulfilledBackgroundColor: string;
   /** white */

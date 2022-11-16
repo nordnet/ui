@@ -1,4 +1,5 @@
 import React from 'react';
+import { Theme } from 'theme/theme.types';
 import { Flexbox, Icon, VisuallyHidden } from '../..';
 import { isNumber } from '../../common/utils';
 import { Props, RatingComponent, IconSizeProp } from './Rating.types';
@@ -30,19 +31,20 @@ export const getStarSize = (size: IconSizeProp) => {
   }
 };
 
-export const Rating: RatingComponent = ({ rating = 0, size = 'm' }) => {
+export const Rating: RatingComponent = ({ rating = 0, size = 'm', outOf = 5 }) => {
   const finalRating = restrictRange(rating);
   const screenReaderText = rating === 1 ? `${rating} star` : `${rating} stars`;
   const StarIcon = Icon[getStarSize(size)];
-
+  const colorOff = outOf === 3 ? 'starRatingBlueOff' : 'starRatingOff';
+  const colorOn = outOf === 3 ? 'starRatingBlue' : 'starRating';
   return (
     <Flexbox container gap="2px">
       <VisuallyHidden>{screenReaderText}</VisuallyHidden>
-      {[...Array(5)]?.map((_, index) => (
+      {[...Array(outOf)]?.map((_, index) => (
         // eslint-disable-next-line react/no-array-index-key
         <Flexbox item key={`${size}${index}`}>
           <StarIcon
-            color={(t: any) => (index >= finalRating ? t.color.starRatingOff : t.color.starRating)}
+            color={(t: Theme) => (index >= finalRating ? t.color[colorOff] : t.color[colorOn])}
           />
         </Flexbox>
       ))}

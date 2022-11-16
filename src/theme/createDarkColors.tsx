@@ -127,7 +127,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     divider: rawColor.gray900,
     pageWrapperDivider: rawColor.gray800,
-    
+
     emptyState: rawColor.gray4,
     emptyStateCardText: rawColor.gray500,
     error: rawColor.red500,
@@ -308,7 +308,9 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     spinnerBlack: rawColor.black,
     spinnerWhite: rawColor.white,
     starRating: rawColor.index,
+    starRatingBlue: rawColor.blue400,
     starRatingOff: rawColor.gray700,
+    starRatingBlueOff: rawColor.gray700,
     statusFulfilledBackgroundColor: rawColor.cta,
     statusFulfilledTextColor: rawColor.white,
     streamingBolt: rawColor.index,
