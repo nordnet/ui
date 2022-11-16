@@ -4,9 +4,9 @@ import { Flexbox, Icon, VisuallyHidden } from '../..';
 import { isNumber } from '../../common/utils';
 import { Props, RatingComponent, IconSizeProp } from './Rating.types';
 
-const restrictRange = (rating: Props['rating']) => {
+const restrictRange = (rating: Props['rating'], outOf: Props['outOf'] = 5) => {
   if (!isNumber(rating)) return 0;
-  if (rating > 5) return 5;
+  if (rating > outOf) return outOf;
   if (rating < 0) return 0;
 
   return rating;
@@ -32,7 +32,7 @@ export const getStarSize = (size: IconSizeProp) => {
 };
 
 export const Rating: RatingComponent = ({ rating = 0, size = 'm', outOf = 5 }) => {
-  const finalRating = restrictRange(rating);
+  const finalRating = restrictRange(rating, outOf);
   const screenReaderText = rating === 1 ? `${rating} star` : `${rating} stars`;
   const StarIcon = Icon[getStarSize(size)];
   const colorOff = outOf === 3 ? 'starRatingBlueOff' : 'starRatingOff';
