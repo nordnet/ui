@@ -1,3 +1,11 @@
+## [11.14.5](https://github.com/nordnet/ui/compare/v11.14.4...v11.14.5) (2022-11-16)
+
+
+### Bug Fixes
+
+* 🐛 add correct svg for lightbulb16 ([608676d](https://github.com/nordnet/ui/commit/608676d))
+* 🐛 use correct width ([66f7700](https://github.com/nordnet/ui/commit/66f7700))
+
 ## [11.14.4](https://github.com/nordnet/ui/compare/v11.14.3...v11.14.4) (2022-11-15)
 
 
