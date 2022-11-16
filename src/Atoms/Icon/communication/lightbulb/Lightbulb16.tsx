@@ -5,15 +5,12 @@ import { IconProps } from '../../IconBase.types';
 
 const Lightbulb16: React.FC<IconProps> = (props) => {
   return (
-    <IconBase {...props} width={16} height={16}>
+    <IconBase {...props} width={12} height={16}>
       <path
-        d="M11 4V0h2v4h-2zM15 13a3 3 0 00-3-3v2a1 1 0 011 1h2zM8 22v2h8v-2H8zM3 4l2.828 2.828 1.415-1.414-2.829-2.828L3 4zM16.757 5.414l2.829-2.828L21 4l-2.828 2.828-1.415-1.414z"
+        d="M2 6a4 4 0 1 1 5.6 3.668L7 9.93V13h2v-1.803a6 6 0 1 0-6 0V13h2V9.93l-.6-.262A4.001 4.001 0 0 1 2 6Z"
         fill="currentColor"
       />
-      <path
-        d="M7 13a5 5 0 117.5 4.332l-.5.288V21h2v-2.255a7 7 0 10-8 0V21h2v-3.38l-.5-.288A4.998 4.998 0 017 13z"
-        fill="currentColor"
-      />
+      <path d="M7 6a1 1 0 0 0-1-1V3a3 3 0 0 1 3 3H7ZM3 16v-2h6v2H3Z" fill="currentColor" />
     </IconBase>
   );
 };
