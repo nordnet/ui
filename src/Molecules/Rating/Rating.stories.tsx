@@ -48,3 +48,9 @@ RatingWithStringSize.args = {
   rating: 3,
   size: 'xl',
 };
+
+export const RatingOutOf3 = Template.bind({});
+RatingOutOf3.args = {
+  rating: 2,
+  outOf: 3,
+};

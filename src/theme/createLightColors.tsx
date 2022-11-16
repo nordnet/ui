@@ -27,7 +27,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
   // prettier-ignore
   return {
     accordionText: rawColor.gray2,
-    
+
     actionModalSharevilleIllustration: rawColor.brandGreen,
     actionModalSharevilleIllustrationSecondary: rawColor.gray900,
     actionModalBackground: rawColor.gray800,
@@ -128,8 +128,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     divider: rawColor.gray6,
     pageWrapperDivider: rawColor.gray700,
-    
-    error:rawColor.red600,
+
+    error: rawColor.red600,
     emptyState: rawColor.gray4,
     emptyStateCardText: rawColor.gray500,
 
@@ -308,7 +308,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     spinnerBlack: rawColor.black,
     spinnerWhite: rawColor.white,
     starRating: rawColor.index,
+    starRatingBlue: rawColor.blue500,
     starRatingOff: rawColor.gray6,
+    starRatingBlueOff: rawColor.gray400,
     statusFulfilledBackgroundColor: rawColor.cta,
     statusFulfilledTextColor: rawColor.white,
     streamingBolt: rawColor.index,
