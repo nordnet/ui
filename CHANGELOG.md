@@ -1,3 +1,11 @@
+# [11.15.0](https://github.com/nordnet/ui/compare/v11.14.5...v11.15.0) (2022-11-16)
+
+
+### Features
+
+* add 3 star ratings and colors ([2f9a353](https://github.com/nordnet/ui/commit/2f9a353))
+* update limiting ([18637dc](https://github.com/nordnet/ui/commit/18637dc))
+
 ## [11.14.5](https://github.com/nordnet/ui/compare/v11.14.4...v11.14.5) (2022-11-16)
 
 
