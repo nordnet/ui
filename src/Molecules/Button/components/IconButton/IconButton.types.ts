@@ -1,6 +1,6 @@
 export type IconButtonProps = {
   /** @default primary */
-  variant?: 'primary' | 'secondary' | 'neutral';
+  variant?: 'primary' | 'secondary' | 'neutral' | 'negative';
   /**
    * @default m
    * @deprecated s

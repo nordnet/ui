@@ -3195,10 +3195,12 @@ Array [
 
 .c17:hover {
   color: #2650BF;
+  background-color: #F5F5F5;
 }
 
 .c17:active {
   color: #1F4099;
+  background-color: #F5F5F5;
 }
 
 .c17::before {
@@ -3849,10 +3851,12 @@ Array [
 
 .c19:hover {
   color: #2650BF;
+  background-color: #F5F5F5;
 }
 
 .c19:active {
   color: #1F4099;
+  background-color: #F5F5F5;
 }
 
 .c19::before {
@@ -4658,10 +4662,12 @@ Array [
 
 .c20:hover {
   color: #2650BF;
+  background-color: #F5F5F5;
 }
 
 .c20:active {
   color: #1F4099;
+  background-color: #F5F5F5;
 }
 
 .c20::before {
