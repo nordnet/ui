@@ -1,7 +1,12 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import styled from 'styled-components';
 import { Box, Button, Flexbox, Modal, Spinner, Typography, OldIcon } from '../..';
 import { Props } from './StatusModal.types';
 import { isFunction } from '../../common/utils';
+
+const StyledButton = styled(Button)`
+  min-width: 120px;
+`;
 
 const StatusModal: React.FC<Props> = ({
   id = '',
@@ -82,7 +87,7 @@ const StatusModal: React.FC<Props> = ({
                       <Typography
                         weight="bold"
                         whiteSpace="nowrap"
-                        color={(t) => t.color.textLight}
+                        color={(t) => t.color.buttonText}
                       >
                         {textConfirm}
                       </Typography>
@@ -96,26 +101,30 @@ const StatusModal: React.FC<Props> = ({
                 <Flexbox item flex="0">
                   <Box pt={2}>
                     {textCancel && (
-                      <Button size="l" variant="secondary" onClick={() => closeModal(false)}>
-                        <Typography weight="bold" whiteSpace="nowrap" color={(t) => t.color.cta}>
+                      <StyledButton size="l" variant="secondary" onClick={() => closeModal(false)}>
+                        <Typography
+                          weight="bold"
+                          whiteSpace="nowrap"
+                          color={(t) => t.color.buttonTextSecondary}
+                        >
                           {textCancel}
                         </Typography>
-                      </Button>
+                      </StyledButton>
                     )}
                   </Box>
                 </Flexbox>
                 <Flexbox item flex="0">
                   <Box pt={2}>
                     {textConfirm && (
-                      <Button size="l" variant={variant} onClick={() => closeModal(true)}>
+                      <StyledButton size="l" variant={variant} onClick={() => closeModal(true)}>
                         <Typography
                           weight="bold"
                           whiteSpace="nowrap"
-                          color={(t) => t.color.textLight}
+                          color={(t) => t.color.buttonText}
                         >
                           {textConfirm}
                         </Typography>
-                      </Button>
+                      </StyledButton>
                     )}
                   </Box>
                 </Flexbox>
