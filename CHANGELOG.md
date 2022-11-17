@@ -1,3 +1,10 @@
+## [11.16.1](https://github.com/nordnet/ui/compare/v11.16.0...v11.16.1) (2022-11-17)
+
+
+### Bug Fixes
+
+* adjust styling for status modal ([b818719](https://github.com/nordnet/ui/commit/b818719))
+
 # [11.16.0](https://github.com/nordnet/ui/compare/v11.15.0...v11.16.0) (2022-11-17)
 
 
