@@ -1,3 +1,10 @@
+# [11.16.0](https://github.com/nordnet/ui/compare/v11.15.0...v11.16.0) (2022-11-17)
+
+
+### Features
+
+* add negative button variant ([c94a3b9](https://github.com/nordnet/ui/commit/c94a3b9))
+
 # [11.15.0](https://github.com/nordnet/ui/compare/v11.14.5...v11.15.0) (2022-11-16)
 
 
