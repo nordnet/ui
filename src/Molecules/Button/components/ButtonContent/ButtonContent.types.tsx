@@ -13,7 +13,7 @@ export type ButtonContentProps = {
   loading?: boolean;
   size: 's' | 'm' | 'l';
   /** @default primary */
-  variant: 'primary' | 'secondary' | 'neutral';
+  variant: 'primary' | 'secondary' | 'neutral' | 'negative';
   children?: React.ReactNode;
 };
 

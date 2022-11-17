@@ -2162,10 +2162,12 @@ exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
 
 .c17:hover {
   color: #2650BF;
+  background-color: #F5F5F5;
 }
 
 .c17:active {
   color: #1F4099;
+  background-color: #F5F5F5;
 }
 
 .c17::before {

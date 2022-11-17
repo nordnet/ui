@@ -1,9 +1,4 @@
-import { Theme } from '../../theme/theme.types';
-
 export type Status = 'SUCCESS' | 'ERROR' | 'WARNING';
-
-type Colors = Theme['color'];
-type ColorFn = (t: Theme) => Colors['cta'] | Colors['negative'] | Colors['functionRed'];
 
 type Option = {
   status?: Status;
@@ -19,5 +14,5 @@ export type Props = {
   options: Option;
   id: string;
   fixedBottomMobile?: boolean;
-  confirmColor?: ColorFn;
+  variant?: 'primary' | 'negative';
 };

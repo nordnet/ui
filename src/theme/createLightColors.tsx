@@ -76,6 +76,14 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     buttonBackgroundActivePrimary: rawColor.blue700,
     buttonBackgroundDisabled: rawColor.gray200,
 
+    buttonBackgroundNegative: rawColor.red600,
+    buttonBackgroundNegativeHover: rawColor.red700,
+    buttonBackgroundNegativeActive: rawColor.red800,
+
+    pillButtonBackgroundNegative: rawColor.red600,
+    pillButtonBackgroundNegativeHover: rawColor.red700,
+    pillButtonBackgroundNegativeActive: rawColor.red800,
+
     buttonBorderSecondary: rawColor.blue500,
     buttonHoverSecondary: rawColor.blue600,
     buttonActiveSecondary: rawColor.blue700,

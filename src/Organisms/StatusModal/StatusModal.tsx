@@ -9,7 +9,7 @@ const StatusModal: React.FC<Props> = ({
   onClose,
   options = {},
   fixedBottomMobile = false,
-  confirmColor,
+  variant = 'primary',
 }) => {
   const [showModal, setShowModal] = useState(false);
 
@@ -78,12 +78,14 @@ const StatusModal: React.FC<Props> = ({
               <Flexbox item>
                 <Box pt={2}>
                   {textConfirm && (
-                    <Button
-                      size="l"
-                      onClick={() => closeModal(true)}
-                      color={(t) => (confirmColor ? confirmColor(t) : t.color.cta)}
-                    >
-                      {textConfirm}
+                    <Button size="l" onClick={() => closeModal(true)} variant={variant}>
+                      <Typography
+                        weight="bold"
+                        whiteSpace="nowrap"
+                        color={(t) => t.color.textLight}
+                      >
+                        {textConfirm}
+                      </Typography>
                     </Button>
                   )}
                 </Box>
@@ -95,7 +97,9 @@ const StatusModal: React.FC<Props> = ({
                   <Box pt={2}>
                     {textCancel && (
                       <Button size="l" variant="secondary" onClick={() => closeModal(false)}>
-                        {textCancel}
+                        <Typography weight="bold" whiteSpace="nowrap" color={(t) => t.color.cta}>
+                          {textCancel}
+                        </Typography>
                       </Button>
                     )}
                   </Box>
@@ -103,13 +107,14 @@ const StatusModal: React.FC<Props> = ({
                 <Flexbox item flex="0">
                   <Box pt={2}>
                     {textConfirm && (
-                      <Button
-                        size="l"
-                        variant="primary"
-                        onClick={() => closeModal(true)}
-                        color={(t) => (confirmColor ? confirmColor(t) : t.color.cta)}
-                      >
-                        {textConfirm}
+                      <Button size="l" variant={variant} onClick={() => closeModal(true)}>
+                        <Typography
+                          weight="bold"
+                          whiteSpace="nowrap"
+                          color={(t) => t.color.textLight}
+                        >
+                          {textConfirm}
+                        </Typography>
                       </Button>
                     )}
                   </Box>
