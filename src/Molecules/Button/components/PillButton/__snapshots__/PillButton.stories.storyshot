@@ -241,10 +241,12 @@ exports[`Storyshots DEPRECATED / Molecules / PillButton (use Button.Pill instead
 
 .c9:hover {
   color: #2650BF;
+  background-color: #F5F5F5;
 }
 
 .c9:active {
   color: #1F4099;
+  background-color: #F5F5F5;
 }
 
 .c9::before {
@@ -1671,10 +1673,12 @@ Array [
 
 .c7:hover {
   color: #2650BF;
+  background-color: #F5F5F5;
 }
 
 .c7:active {
   color: #1F4099;
+  background-color: #F5F5F5;
 }
 
 .c7::before {
@@ -2437,10 +2441,12 @@ Array [
 
 .c7:hover {
   color: #2650BF;
+  background-color: #F5F5F5;
 }
 
 .c7:active {
   color: #1F4099;
+  background-color: #F5F5F5;
 }
 
 .c7::before {
@@ -2826,10 +2832,12 @@ exports[`Storyshots DEPRECATED / Molecules / PillButton (use Button.Pill instead
 
 .c6:hover {
   color: #2650BF;
+  background-color: #F5F5F5;
 }
 
 .c6:active {
   color: #1F4099;
+  background-color: #F5F5F5;
 }
 
 .c6::before {
@@ -3248,10 +3256,12 @@ Array [
 
 .c7:hover {
   color: #2650BF;
+  background-color: #F5F5F5;
 }
 
 .c7:active {
   color: #1F4099;
+  background-color: #F5F5F5;
 }
 
 .c7::before {
@@ -3745,10 +3755,12 @@ exports[`Storyshots DEPRECATED / Molecules / PillButton (use Button.Pill instead
 
 .c8:hover {
   color: #2650BF;
+  background-color: #F5F5F5;
 }
 
 .c8:active {
   color: #1F4099;
+  background-color: #F5F5F5;
 }
 
 .c8::before {

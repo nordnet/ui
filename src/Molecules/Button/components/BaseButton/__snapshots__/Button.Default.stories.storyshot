@@ -1062,6 +1062,49 @@ Array [
   cursor: pointer;
 }
 
+.c9 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #CC3929;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c9::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c9:hover {
+  background-color: #992B1F;
+}
+
+.c9:active {
+  background-color: #661C14;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1204,6 +1247,35 @@ Array [
             className="Typography__Span-sc-10mju41-0 c6"
           >
             Button
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="column"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          negative
+        </span>
+      </div>
+      <div>
+        <button
+          className="c4 c9"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="Typography__Span-sc-10mju41-0 c6"
+            >
+              Button
+            </span>
           </span>
         </button>
       </div>
@@ -4418,6 +4490,36 @@ exports[`Storyshots Molecules / Button / Button Disabled Button with different v
           className="Typography__Span-sc-10mju41-0 c6"
         >
           Button
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="column"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
+        negative
+      </span>
+    </div>
+    <div>
+      <button
+        className="c4 c5"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          <span
+            className="Typography__Span-sc-10mju41-0 c6"
+          >
+            Button
+          </span>
         </span>
       </button>
     </div>
