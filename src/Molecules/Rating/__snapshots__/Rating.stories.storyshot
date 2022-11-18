@@ -568,6 +568,121 @@ exports[`Storyshots Molecules / Rating Rating Not Defined 1`] = `
 </div>
 `;
 
+exports[`Storyshots Molecules / Rating Rating Out Of 3 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0:not(:empty) {
+  gap: 2px;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c3 {
+  color: #336BFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  color: #BDBDBD;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    2 stars
+  </div>
+  <div
+    className="c2"
+  >
+    <svg
+      aria-hidden="true"
+      className="c3"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={16}
+    >
+      <path
+        d="M8 .4L10.769 5 16 6.213l-3.52 4.055.464 5.35L8 13.522l-4.944 2.095.464-5.35L0 6.212l5.231-1.211L8 .4z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>
+  <div
+    className="c2"
+  >
+    <svg
+      aria-hidden="true"
+      className="c3"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={16}
+    >
+      <path
+        d="M8 .4L10.769 5 16 6.213l-3.52 4.055.464 5.35L8 13.522l-4.944 2.095.464-5.35L0 6.212l5.231-1.211L8 .4z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>
+  <div
+    className="c2"
+  >
+    <svg
+      aria-hidden="true"
+      className="c4"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={16}
+    >
+      <path
+        d="M8 .4L10.769 5 16 6.213l-3.52 4.055.464 5.35L8 13.522l-4.944 2.095.464-5.35L0 6.212l5.231-1.211L8 .4z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules / Rating Rating With Size 1`] = `
 .c0 {
   box-sizing: border-box;

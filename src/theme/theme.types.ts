@@ -234,6 +234,18 @@ export type ThemeColors = {
    * gray200
    */
   buttonBackgroundDisabled: string;
+  /** red600 */
+  buttonBackgroundNegative: string;
+  /** red700 */
+  buttonBackgroundNegativeHover: string;
+  /** red800 */
+  buttonBackgroundNegativeActive: string;
+  /** red600 */
+  pillButtonBackgroundNegative: string;
+  /** red700 */
+  pillButtonBackgroundNegativeHover: string;
+  /** red800 */
+  pillButtonBackgroundNegativeActive: string;
   /**
    * gray500
    */
@@ -640,8 +652,10 @@ export type ThemeColors = {
   spinnerWhite: string;
   /** index */
   starRating: string;
+  starRatingBlue: string;
   /** gray6 */
   starRatingOff: string;
+  starRatingBlueOff: string;
   /** cta */
   statusFulfilledBackgroundColor: string;
   /** white */

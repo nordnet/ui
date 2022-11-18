@@ -5,6 +5,7 @@ import Button from '../BaseButton';
 import { PillButtonProps, PillButtonComponent } from './PillButton.types';
 
 const isSecondary = (variant: PillButtonProps['variant']) => variant === 'secondary';
+const isNegative = (variant: PillButtonProps['variant']) => variant === 'negative';
 
 const BORDER_RADIUS = {
   s: 3,
@@ -14,18 +15,34 @@ const BORDER_RADIUS = {
 
 const StyledPillButton = styled(Button)<PillButtonProps>`
   border-radius: ${(p) => p.theme.spacing.unit(BORDER_RADIUS[p.size || 's'])}px;
-  ${(p) => isSecondary(p.variant) && `background-color: ${p.theme.color.background}`};
+  ${(p) =>
+    (isSecondary(p.variant) || isNegative(p.variant)) &&
+    `background-color: ${p.theme.color.background}`};
 
   ${(p) =>
-    isSecondary(p.variant) &&
+    (isSecondary(p.variant) || isNegative(p.variant)) &&
     !p.disabled &&
     `
-    color: ${p.theme.color.link};
+    color: ${
+      isNegative(p.variant) ? p.theme.color.pillButtonBackgroundNegative : p.theme.color.link
+    };
     &:hover {
-      color: ${p.theme.color.buttonHoverSecondary};
+      color:
+      ${
+        isNegative(p.variant)
+          ? p.theme.color.pillButtonBackgroundNegativeHover
+          : p.theme.color.buttonHoverSecondary
+      };
+      background-color: ${p.theme.color.background};
     }
     &:active {
-      color: ${p.theme.color.buttonActiveSecondary};
+      color:
+      ${
+        isNegative(p.variant)
+          ? p.theme.color.pillButtonBackgroundNegativeActive
+          : p.theme.color.buttonActiveSecondary
+      };
+      background-color: ${p.theme.color.background};
     }
   `};
 

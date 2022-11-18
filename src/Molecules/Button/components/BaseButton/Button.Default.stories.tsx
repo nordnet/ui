@@ -54,6 +54,14 @@ export const buttonWithDifferentVariants = () => (
             </Button>
           ),
         },
+        {
+          title: 'negative',
+          component: (
+            <Button onClick={action('clicked')} variant="negative">
+              Button
+            </Button>
+          ),
+        },
       ]}
     />
     <Display
@@ -116,6 +124,14 @@ export const disabledButtonWithDifferentVariants = () => (
         title: 'neutral',
         component: (
           <Button onClick={action('clicked')} variant="neutral" disabled>
+            Button
+          </Button>
+        ),
+      },
+      {
+        title: 'negative',
+        component: (
+          <Button onClick={action('clicked')} variant="negative" disabled>
             Button
           </Button>
         ),

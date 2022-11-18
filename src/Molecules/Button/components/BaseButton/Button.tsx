@@ -5,13 +5,14 @@ import { assert } from '../../../../common/utils';
 import NormalizedElements from '../../../../common/NormalizedElements';
 import TrackingContext from '../../../../common/tracking';
 import ButtonContent from '../ButtonContent';
-import { neutralStyles, primaryStyles, secondaryStyles } from './Button.styles';
+import { neutralStyles, primaryStyles, secondaryStyles, negativeStyles } from './Button.styles';
 import { useLink } from '../../../../common/Links';
 import { LinkProps as RawLinkProps } from '../../../../common/Links/types';
 
 const isPrimary = (variant: ButtonProps['variant']) => variant === 'primary';
 const isSecondary = (variant: ButtonProps['variant']) => variant === 'secondary';
 const isNeutral = (variant: ButtonProps['variant']) => variant === 'neutral';
+const isNegative = (variant: ButtonProps['variant']) => variant === 'negative';
 
 const StyledButton = styled(NormalizedElements.Button)<InnerProps>`
   ${(p) => {
@@ -21,6 +22,10 @@ const StyledButton = styled(NormalizedElements.Button)<InnerProps>`
 
     if (isNeutral(p.$variant)) {
       return neutralStyles;
+    }
+
+    if (isNegative(p.$variant)) {
+      return negativeStyles;
     }
 
     return primaryStyles;
