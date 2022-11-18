@@ -195,12 +195,12 @@ export const WithCustomInfoCallbackElement = () => {
         buttonCallback
         infoCallback={
           <>
-            <Media query={(t) => t.media.lessThan(t.breakpoints.sm.size)}>
+            <Media query={(t) => t.media.lessThan(t.breakpoints.sm)}>
               <Button.Icon onClick={() => alert('info custom button')}>
                 <Icon.More16 color="currentColor" />
               </Button.Icon>
             </Media>
-            <Media query={(t) => t.media.greaterThan(t.breakpoints.sm.size)}>
+            <Media query={(t) => t.media.greaterThan(t.breakpoints.sm)}>
               <Button.Pill onClick={() => alert('info custom button')}>
                 custom read more button
               </Button.Pill>

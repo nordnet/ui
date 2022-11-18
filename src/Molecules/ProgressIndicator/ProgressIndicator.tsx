@@ -73,7 +73,7 @@ const ProgressIndicator: FC<Props> = ({
             noButtons={noButtons}
           />
         </Flexbox>
-        {typeof infoCallback === 'function' && (
+        {typeof infoCallback === 'function' ? (
           <StyledButton
             onClick={() => infoCallback()}
             visible={!!infoCallback}
@@ -93,8 +93,9 @@ const ProgressIndicator: FC<Props> = ({
 
             {infoIcon === 'info' ? <Icon.Information16 /> : <Icon.Help16 />}
           </StyledButton>
+        ) : (
+          buttonCallback && isMobile && infoCallback
         )}
-        {buttonCallback && isMobile && infoCallback}
       </Flexbox>
       <Box pt={3}>
         <Flexbox container justifyContent="space-between" alignItems="center">
