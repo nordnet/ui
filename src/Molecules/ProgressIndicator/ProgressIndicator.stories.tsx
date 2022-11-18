@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
 
 import ProgressIndicator from '.';
-import { Button, Flexbox } from '../..';
+import { Button, Flexbox, Icon, Media } from '../..';
 
 export default {
   title: 'Molecules / ProgressIndicator',
@@ -194,9 +194,18 @@ export const WithCustomInfoCallbackElement = () => {
       <ProgressIndicator
         buttonCallback
         infoCallback={
-          <Button.Pill onClick={() => alert('info custom button')}>
-            custom read more button
-          </Button.Pill>
+          <>
+            <Media query={(t) => t.media.lessThan(t.breakpoints.sm.size)}>
+              <Button.Icon onClick={() => alert('info custom button')}>
+                <Icon.More16 color="currentColor" />
+              </Button.Icon>
+            </Media>
+            <Media query={(t) => t.media.greaterThan(t.breakpoints.sm.size)}>
+              <Button.Pill onClick={() => alert('info custom button')}>
+                custom read more button
+              </Button.Pill>
+            </Media>
+          </>
         }
         title="Progress flow title"
         numberOfSteps={3}

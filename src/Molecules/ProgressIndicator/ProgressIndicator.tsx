@@ -29,10 +29,10 @@ const ProgressIndicator: FC<Props> = ({
 
   return (
     <Box
-      px={5}
+      px={3}
       pt={3}
       pb={2}
-      lg={{ pt: 4, pb: 3 }}
+      md={{ p: 5 }}
       backgroundColor={(t) => t.color.progressIndicatorBackground}
     >
       <Flexbox container justifyContent="space-between" gap={6} alignItems="center">
@@ -94,16 +94,13 @@ const ProgressIndicator: FC<Props> = ({
             {infoIcon === 'info' ? <Icon.Information16 /> : <Icon.Help16 />}
           </StyledButton>
         )}
+        {buttonCallback && isMobile && infoCallback}
       </Flexbox>
-      <Flexbox container justifyContent="space-between">
-        {title && (
-          <Box pt={3}>
-            <Typography type="title1">{title}</Typography>
-          </Box>
-        )}
-        {buttonCallback && !isMobile && (
-          <Flexbox item container justifyContent="flex-end" flex="1">
-            <Box pt={3}>
+      <Box pt={3}>
+        <Flexbox container justifyContent="space-between" alignItems="center">
+          {title && <Typography type="title1">{title}</Typography>}
+          {buttonCallback && !isMobile && (
+            <Flexbox item container justifyContent="flex-end" flex="1">
               <Flexbox container gap={3} direction="row" alignItems="center">
                 {typeof infoCallback === 'function' ? (
                   <Button.Pill
@@ -134,10 +131,10 @@ const ProgressIndicator: FC<Props> = ({
                   </Button.Pill>
                 )}
               </Flexbox>
-            </Box>
-          </Flexbox>
-        )}
-      </Flexbox>
+            </Flexbox>
+          )}
+        </Flexbox>
+      </Box>
     </Box>
   );
 };
