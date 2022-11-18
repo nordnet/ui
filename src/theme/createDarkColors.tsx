@@ -72,8 +72,15 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     buttonBackgroundPrimary: rawColor.blue500,
     buttonBackgroundHoverPrimary: rawColor.blue600,
     buttonBackgroundActivePrimary: rawColor.blue700,
-
     buttonBackgroundDisabled: rawColor.gray900,
+
+    buttonBackgroundNegative: rawColor.red500,
+    buttonBackgroundNegativeHover: rawColor.red600,
+    buttonBackgroundNegativeActive: rawColor.red700,
+
+    pillButtonBackgroundNegative: rawColor.red500,
+    pillButtonBackgroundNegativeHover: rawColor.red400,
+    pillButtonBackgroundNegativeActive: rawColor.red300,
 
     buttonBorderSecondary: rawColor.blue500,
     buttonHoverSecondary: rawColor.blue600,
@@ -127,7 +134,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     divider: rawColor.gray900,
     pageWrapperDivider: rawColor.gray800,
-    
+
     emptyState: rawColor.gray4,
     emptyStateCardText: rawColor.gray500,
     error: rawColor.red500,
@@ -201,7 +208,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     negative: rawColor.pink500,
     negativeBlackBackground: rawColor.pink500,
-
+ 
     newsLabelTextColors: [rawColor.green450, rawColor.pink500, rawColor.blue400, rawColor.teal400],
     newsLabelBackgroundColors: [
       rawColor.green800,
@@ -308,7 +315,9 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     spinnerBlack: rawColor.black,
     spinnerWhite: rawColor.white,
     starRating: rawColor.index,
+    starRatingBlue: rawColor.blue400,
     starRatingOff: rawColor.gray700,
+    starRatingBlueOff: rawColor.gray700,
     statusFulfilledBackgroundColor: rawColor.cta,
     statusFulfilledTextColor: rawColor.white,
     streamingBolt: rawColor.index,

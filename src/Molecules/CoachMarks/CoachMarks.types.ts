@@ -16,6 +16,8 @@ type Step = {
   placement?: Placement;
   referenceElement: HTMLElement;
   title?: string;
+  isCircular?: boolean;
+  backdropPadding?: string | number;
 };
 
 export type Props = {
@@ -30,8 +32,6 @@ export type Props = {
   multiStepIndicatorText?: string;
   closeOnClickOutside?: boolean;
   barColor?: ColorFn;
-  backdropPadding?: string | number;
-  isCircular?: boolean;
 };
 
 export type Component = React.FC<Props>;

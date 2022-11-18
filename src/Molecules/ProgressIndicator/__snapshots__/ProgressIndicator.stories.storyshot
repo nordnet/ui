@@ -3,9 +3,9 @@
 exports[`Storyshots Molecules / ProgressIndicator Default 1`] = `
 Array [
   .c0 {
-  padding-left: 20px;
+  padding-left: 12px;
   padding-top: 12px;
-  padding-right: 20px;
+  padding-right: 12px;
   padding-bottom: 8px;
   background-color: #FFFFFF;
 }
@@ -20,7 +20,7 @@ Array [
   background-color: transparent;
 }
 
-.c12 {
+.c11 {
   padding-top: 12px;
   background-color: transparent;
 }
@@ -67,7 +67,7 @@ Array [
   gap: 8px;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -77,6 +77,10 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c3 {
@@ -186,10 +190,9 @@ Array [
   transform: rotateX(0deg);
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
   .c0 {
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding: 20px;
   }
 }
 
@@ -391,7 +394,7 @@ Array [
   background-color: #1F4099;
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
 
 }
 
@@ -452,9 +455,9 @@ Array [
 exports[`Storyshots Molecules / ProgressIndicator No Back Button 1`] = `
 Array [
   .c0 {
-  padding-left: 20px;
+  padding-left: 12px;
   padding-top: 12px;
-  padding-right: 20px;
+  padding-right: 12px;
   padding-bottom: 8px;
   background-color: #FFFFFF;
 }
@@ -466,6 +469,11 @@ Array [
 
 .c11 {
   margin-right: 12px;
+  background-color: transparent;
+}
+
+.c12 {
+  padding-top: 12px;
   background-color: transparent;
 }
 
@@ -511,7 +519,7 @@ Array [
   gap: 8px;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -521,6 +529,10 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c3 {
@@ -655,10 +667,9 @@ Array [
   transform: rotateX(0deg);
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
   .c0 {
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding: 20px;
   }
 }
 
@@ -746,7 +757,11 @@ Array [
     </div>
     <div
       className="c12"
-    />
+    >
+      <div
+        className="c13"
+      />
+    </div>
   </div>,
   .c0 {
   box-sizing: border-box;
@@ -843,7 +858,7 @@ Array [
   background-color: #1F4099;
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
 
 }
 
@@ -900,15 +915,20 @@ Array [
 exports[`Storyshots Molecules / ProgressIndicator No Back No Help Button 1`] = `
 Array [
   .c0 {
-  padding-left: 20px;
+  padding-left: 12px;
   padding-top: 12px;
-  padding-right: 20px;
+  padding-right: 12px;
   padding-bottom: 8px;
   background-color: #FFFFFF;
 }
 
 .c4 {
   margin-left: 12px;
+  background-color: transparent;
+}
+
+.c10 {
+  padding-top: 12px;
   background-color: transparent;
 }
 
@@ -954,7 +974,7 @@ Array [
   gap: 8px;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -964,6 +984,10 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c3 {
@@ -1064,10 +1088,9 @@ Array [
   transform: rotateX(0deg);
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
   .c0 {
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding: 20px;
   }
 }
 
@@ -1121,7 +1144,11 @@ Array [
     </div>
     <div
       className="c10"
-    />
+    >
+      <div
+        className="c11"
+      />
+    </div>
   </div>,
   .c0 {
   box-sizing: border-box;
@@ -1218,7 +1245,7 @@ Array [
   background-color: #1F4099;
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
 
 }
 
@@ -1275,9 +1302,9 @@ Array [
 exports[`Storyshots Molecules / ProgressIndicator No Buttons 1`] = `
 Array [
   .c0 {
-  padding-left: 20px;
+  padding-left: 12px;
   padding-top: 12px;
-  padding-right: 20px;
+  padding-right: 12px;
   padding-bottom: 8px;
   background-color: #FFFFFF;
 }
@@ -1287,7 +1314,7 @@ Array [
   background-color: transparent;
 }
 
-.c11 {
+.c10 {
   padding-top: 12px;
   background-color: transparent;
 }
@@ -1334,7 +1361,7 @@ Array [
   gap: 8px;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1344,6 +1371,10 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c3 {
@@ -1450,10 +1481,9 @@ Array [
   transform: rotateX(0deg);
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
   .c0 {
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding: 20px;
   }
 }
 
@@ -1621,7 +1651,7 @@ Array [
   background-color: #1F4099;
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
 
 }
 
@@ -1682,9 +1712,9 @@ Array [
 exports[`Storyshots Molecules / ProgressIndicator No Close Button 1`] = `
 Array [
   .c0 {
-  padding-left: 20px;
+  padding-left: 12px;
   padding-top: 12px;
-  padding-right: 20px;
+  padding-right: 12px;
   padding-bottom: 8px;
   background-color: #FFFFFF;
 }
@@ -1699,7 +1729,7 @@ Array [
   background-color: transparent;
 }
 
-.c12 {
+.c11 {
   padding-top: 12px;
   background-color: transparent;
 }
@@ -1746,7 +1776,7 @@ Array [
   gap: 8px;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1756,6 +1786,10 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c3 {
@@ -1865,10 +1899,9 @@ Array [
   transform: rotateX(0deg);
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
   .c0 {
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding: 20px;
   }
 }
 
@@ -2070,7 +2103,7 @@ Array [
   background-color: #1F4099;
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
 
 }
 
@@ -2131,9 +2164,9 @@ Array [
 exports[`Storyshots Molecules / ProgressIndicator No Help Button 1`] = `
 Array [
   .c0 {
-  padding-left: 20px;
+  padding-left: 12px;
   padding-top: 12px;
-  padding-right: 20px;
+  padding-right: 12px;
   padding-bottom: 8px;
   background-color: #FFFFFF;
 }
@@ -2143,7 +2176,7 @@ Array [
   background-color: transparent;
 }
 
-.c11 {
+.c10 {
   padding-top: 12px;
   background-color: transparent;
 }
@@ -2190,7 +2223,7 @@ Array [
   gap: 8px;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2200,6 +2233,10 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c3 {
@@ -2309,10 +2346,9 @@ Array [
   transform: rotateX(0deg);
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
   .c0 {
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding: 20px;
   }
 }
 
@@ -2480,7 +2516,7 @@ Array [
   background-color: #1F4099;
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
 
 }
 
@@ -2541,15 +2577,20 @@ Array [
 exports[`Storyshots Molecules / ProgressIndicator No Title 1`] = `
 Array [
   .c0 {
-  padding-left: 20px;
+  padding-left: 12px;
   padding-top: 12px;
-  padding-right: 20px;
+  padding-right: 12px;
   padding-bottom: 8px;
   background-color: #FFFFFF;
 }
 
 .c4 {
   margin-left: 12px;
+  background-color: transparent;
+}
+
+.c10 {
+  padding-top: 12px;
   background-color: transparent;
 }
 
@@ -2595,7 +2636,7 @@ Array [
   gap: 8px;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2605,6 +2646,10 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c3 {
@@ -2702,10 +2747,9 @@ Array [
   transform: rotateX(0deg);
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
   .c0 {
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding: 20px;
   }
 }
 
@@ -2759,7 +2803,11 @@ Array [
     </div>
     <div
       className="c10"
-    />
+    >
+      <div
+        className="c11"
+      />
+    </div>
   </div>,
   .c0 {
   box-sizing: border-box;
@@ -2856,7 +2904,7 @@ Array [
   background-color: #1F4099;
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
 
 }
 
@@ -2913,9 +2961,9 @@ Array [
 exports[`Storyshots Molecules / ProgressIndicator With Button Callback No Info 1`] = `
 Array [
   .c0 {
-  padding-left: 20px;
+  padding-left: 12px;
   padding-top: 12px;
-  padding-right: 20px;
+  padding-right: 12px;
   padding-bottom: 8px;
   background-color: #FFFFFF;
 }
@@ -2925,7 +2973,7 @@ Array [
   background-color: transparent;
 }
 
-.c11 {
+.c10 {
   padding-top: 12px;
   background-color: transparent;
 }
@@ -2972,7 +3020,7 @@ Array [
   gap: 8px;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2982,6 +3030,10 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c13 {
@@ -3195,10 +3247,12 @@ Array [
 
 .c17:hover {
   color: #2650BF;
+  background-color: #F5F5F5;
 }
 
 .c17:active {
   color: #1F4099;
+  background-color: #F5F5F5;
 }
 
 .c17::before {
@@ -3279,10 +3333,9 @@ Array [
   transform: rotateX(0deg);
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
   .c0 {
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding: 20px;
   }
 }
 
@@ -3352,12 +3405,8 @@ Array [
         >
           Progress flow title
         </span>
-      </div>
-      <div
-        className="c13"
-      >
         <div
-          className="c11"
+          className="c13"
         >
           <div
             className="c14"
@@ -3501,7 +3550,7 @@ Array [
   background-color: #1F4099;
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
 
 }
 
@@ -3562,9 +3611,9 @@ Array [
 exports[`Storyshots Molecules / ProgressIndicator With Button Info And Exit Callback 1`] = `
 Array [
   .c0 {
-  padding-left: 20px;
+  padding-left: 12px;
   padding-top: 12px;
-  padding-right: 20px;
+  padding-right: 12px;
   padding-bottom: 8px;
   background-color: #FFFFFF;
 }
@@ -3579,7 +3628,7 @@ Array [
   background-color: transparent;
 }
 
-.c13 {
+.c12 {
   padding-top: 12px;
   background-color: transparent;
 }
@@ -3626,7 +3675,7 @@ Array [
   gap: 8px;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3636,6 +3685,10 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c15 {
@@ -3849,10 +3902,12 @@ Array [
 
 .c19:hover {
   color: #2650BF;
+  background-color: #F5F5F5;
 }
 
 .c19:active {
   color: #1F4099;
+  background-color: #F5F5F5;
 }
 
 .c19::before {
@@ -3964,10 +4019,9 @@ Array [
   transform: rotateX(0deg);
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
   .c0 {
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding: 20px;
   }
 }
 
@@ -4071,12 +4125,8 @@ Array [
         >
           Progress flow title
         </span>
-      </div>
-      <div
-        className="c15"
-      >
         <div
-          className="c13"
+          className="c15"
         >
           <div
             className="c16"
@@ -4265,7 +4315,7 @@ Array [
   background-color: #1F4099;
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
 
 }
 
@@ -4326,9 +4376,9 @@ Array [
 exports[`Storyshots Molecules / ProgressIndicator With Custom Info Callback Element 1`] = `
 Array [
   .c0 {
-  padding-left: 20px;
+  padding-left: 12px;
   padding-top: 12px;
-  padding-right: 20px;
+  padding-right: 12px;
   padding-bottom: 8px;
   background-color: #FFFFFF;
 }
@@ -4338,7 +4388,7 @@ Array [
   background-color: transparent;
 }
 
-.c11 {
+.c10 {
   padding-top: 12px;
   background-color: transparent;
 }
@@ -4385,7 +4435,7 @@ Array [
   gap: 8px;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4395,6 +4445,10 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c13 {
@@ -4431,7 +4485,7 @@ Array [
   gap: 12px;
 }
 
-.c21 {
+.c27 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4449,16 +4503,16 @@ Array [
   margin-right: -4px;
 }
 
-.c21 > * {
+.c27 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c21 > *:not(:first-child) {
+.c27 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c24 {
+.c29 {
   box-sizing: border-box;
 }
 
@@ -4474,7 +4528,7 @@ Array [
   display: block;
 }
 
-.c23 {
+.c20 {
   color: currentColor;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -4486,7 +4540,7 @@ Array [
   display: block;
 }
 
-.c15 {
+.c16 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -4495,25 +4549,25 @@ Array [
   text-transform: none;
 }
 
-.c15,
-.c15[type='button'],
-.c15[type='reset'],
-.c15[type='submit'] {
+.c16,
+.c16[type='button'],
+.c16[type='reset'],
+.c16[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c15::-moz-focus-inner,
-.c15[type='button']::-moz-focus-inner,
-.c15[type='reset']::-moz-focus-inner,
-.c15[type='submit']::-moz-focus-inner {
+.c16::-moz-focus-inner,
+.c16[type='button']::-moz-focus-inner,
+.c16[type='reset']::-moz-focus-inner,
+.c16[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c15:-moz-focusring,
-.c15[type='button']:-moz-focusring,
-.c15[type='reset']:-moz-focusring,
-.c15[type='submit']:-moz-focusring {
+.c16:-moz-focusring,
+.c16[type='button']:-moz-focusring,
+.c16[type='reset']:-moz-focusring,
+.c16[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -4535,7 +4589,16 @@ Array [
   line-height: 1.1666666666666667;
 }
 
-.c18 {
+.c19 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c24 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -4544,13 +4607,64 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c22 {
+.c28 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c16 {
+.c17 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: transparent;
+  color: #336BFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c17::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #336BFF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c17:hover {
+  color: #2650BF;
+}
+
+.c17:hover::before {
+  border-color: #2650BF;
+}
+
+.c17:active {
+  color: #1F4099;
+}
+
+.c17:active::before {
+  border-color: #1F4099;
+}
+
+.c22 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -4573,7 +4687,7 @@ Array [
   cursor: pointer;
 }
 
-.c16::before {
+.c22::before {
   content: '';
   display: block;
   position: absolute;
@@ -4584,15 +4698,15 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c16:hover {
+.c22:hover {
   background-color: #2650BF;
 }
 
-.c16:active {
+.c22:active {
   background-color: #1F4099;
 }
 
-.c19 {
+.c25 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -4615,7 +4729,7 @@ Array [
   cursor: pointer;
 }
 
-.c19::before {
+.c25::before {
   content: '';
   display: block;
   position: absolute;
@@ -4626,45 +4740,82 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c19:hover {
+.c25:hover {
   color: #2650BF;
 }
 
-.c19:hover::before {
+.c25:hover::before {
   border-color: #2650BF;
 }
 
-.c19:active {
+.c25:active {
   color: #1F4099;
 }
 
-.c19:active::before {
+.c25:active::before {
   border-color: #1F4099;
 }
 
-.c17 {
-  border-radius: 12px;
+.c18 {
+  background-color: #F5F5F5;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: #282823;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
 }
 
-.c17::before {
+.c18:hover {
+  background-color: #F5F5F5;
+  color: #336BFF;
+}
+
+.c18:active {
+  background-color: #EAF0FF;
+  color: #336BFF;
+}
+
+.c18::before {
   display: none;
 }
 
-.c20 {
+.c23 {
+  border-radius: 12px;
+}
+
+.c23::before {
+  display: none;
+}
+
+.c26 {
   border-radius: 12px;
   background-color: #F5F5F5;
   color: #336BFF;
 }
 
-.c20:hover {
+.c26:hover {
   color: #2650BF;
+  background-color: #F5F5F5;
 }
 
-.c20:active {
+.c26:active {
   color: #1F4099;
+  background-color: #F5F5F5;
 }
 
-.c20::before {
+.c26::before {
   display: none;
 }
 
@@ -4742,10 +4893,21 @@ Array [
   transform: rotateX(0deg);
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
   .c0 {
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding: 20px;
+  }
+}
+
+@media not all and (max-width:759px) {
+  .c15 {
+    display: none !important;
+  }
+}
+
+@media not all and (min-width:760px) {
+  .c21 {
+    display: none !important;
   }
 }
 
@@ -4815,44 +4977,74 @@ Array [
         >
           Progress flow title
         </span>
-      </div>
-      <div
-        className="c13"
-      >
         <div
-          className="c11"
+          className="c13"
         >
           <div
             className="c14"
           >
-            <button
-              className="c15 c16 c17"
-              onClick={[Function]}
-              type="button"
+            <div
+              className="c15"
             >
-              <span>
-                <div
-                  className="Typography__Span-sc-10mju41-0 c18"
-                >
-                  custom read more button
-                </div>
-              </span>
-            </button>
-            <button
-              className="c15 c19 c20"
-              onClick={[Function]}
-              type="button"
-            >
-              <span>
-                <div
-                  className="c21"
-                >
-                  <div
-                    className="c22"
+              <button
+                className="c16 c17 c18"
+                onClick={[Function]}
+                type="button"
+              >
+                <span>
+                  <span
+                    className="Typography__Span-sc-10mju41-0 c19"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c23"
+                      className="c20"
+                      focusable="false"
+                      height={16}
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      width={16}
+                    >
+                      <path
+                        d="M10 8a2 2 0 11-4 0 2 2 0 014 0zM4 8a2 2 0 11-4 0 2 2 0 014 0zM16 8a2 2 0 11-4 0 2 2 0 014 0z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+            <div
+              className="c21"
+            >
+              <button
+                className="c16 c22 c23"
+                onClick={[Function]}
+                type="button"
+              >
+                <span>
+                  <div
+                    className="Typography__Span-sc-10mju41-0 c24"
+                  >
+                    custom read more button
+                  </div>
+                </span>
+              </button>
+            </div>
+            <button
+              className="c16 c25 c26"
+              onClick={[Function]}
+              type="button"
+            >
+              <span>
+                <div
+                  className="c27"
+                >
+                  <div
+                    className="c28"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="c20"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -4866,10 +5058,10 @@ Array [
                     </svg>
                   </div>
                   <div
-                    className="c24"
+                    className="c29"
                   >
                     <div
-                      className="Typography__Span-sc-10mju41-0 c18"
+                      className="Typography__Span-sc-10mju41-0 c24"
                     >
                       Exit
                     </div>
@@ -4977,7 +5169,15 @@ Array [
   background-color: #1F4099;
 }
 
-@media (min-width:1280px) {
+@media (min-width:976px) {
+
+}
+
+@media not all and (max-width:759px) {
+
+}
+
+@media not all and (min-width:760px) {
 
 }
 

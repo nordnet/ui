@@ -1,7 +1,12 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import styled from 'styled-components';
 import { Box, Button, Flexbox, Modal, Spinner, Typography, OldIcon } from '../..';
 import { Props } from './StatusModal.types';
 import { isFunction } from '../../common/utils';
+
+const StyledButton = styled(Button)`
+  min-width: 120px;
+`;
 
 const StatusModal: React.FC<Props> = ({
   id = '',
@@ -9,7 +14,7 @@ const StatusModal: React.FC<Props> = ({
   onClose,
   options = {},
   fixedBottomMobile = false,
-  confirmColor,
+  variant = 'primary',
 }) => {
   const [showModal, setShowModal] = useState(false);
 
@@ -78,12 +83,14 @@ const StatusModal: React.FC<Props> = ({
               <Flexbox item>
                 <Box pt={2}>
                   {textConfirm && (
-                    <Button
-                      size="l"
-                      onClick={() => closeModal(true)}
-                      color={(t) => (confirmColor ? confirmColor(t) : t.color.cta)}
-                    >
-                      {textConfirm}
+                    <Button size="l" onClick={() => closeModal(true)} variant={variant}>
+                      <Typography
+                        weight="bold"
+                        whiteSpace="nowrap"
+                        color={(t) => t.color.buttonText}
+                      >
+                        {textConfirm}
+                      </Typography>
                     </Button>
                   )}
                 </Box>
@@ -94,23 +101,30 @@ const StatusModal: React.FC<Props> = ({
                 <Flexbox item flex="0">
                   <Box pt={2}>
                     {textCancel && (
-                      <Button size="l" variant="secondary" onClick={() => closeModal(false)}>
-                        {textCancel}
-                      </Button>
+                      <StyledButton size="l" variant="secondary" onClick={() => closeModal(false)}>
+                        <Typography
+                          weight="bold"
+                          whiteSpace="nowrap"
+                          color={(t) => t.color.buttonTextSecondary}
+                        >
+                          {textCancel}
+                        </Typography>
+                      </StyledButton>
                     )}
                   </Box>
                 </Flexbox>
                 <Flexbox item flex="0">
                   <Box pt={2}>
                     {textConfirm && (
-                      <Button
-                        size="l"
-                        variant="primary"
-                        onClick={() => closeModal(true)}
-                        color={(t) => (confirmColor ? confirmColor(t) : t.color.cta)}
-                      >
-                        {textConfirm}
-                      </Button>
+                      <StyledButton size="l" variant={variant} onClick={() => closeModal(true)}>
+                        <Typography
+                          weight="bold"
+                          whiteSpace="nowrap"
+                          color={(t) => t.color.buttonText}
+                        >
+                          {textConfirm}
+                        </Typography>
+                      </StyledButton>
                     )}
                   </Box>
                 </Flexbox>

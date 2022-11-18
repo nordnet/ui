@@ -85,7 +85,6 @@ export const withCustomBackdropPadding = () => {
             onDone={() => setActiveGuide(false)}
             onNext={action('next')}
             onPrev={action('previous')}
-            backdropPadding={20}
             steps={[
               {
                 referenceElement,
@@ -93,6 +92,7 @@ export const withCustomBackdropPadding = () => {
                 title: 'New feature',
                 content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
                 placement: 'bottom',
+                backdropPadding: '20',
               },
             ]}
           />
@@ -134,8 +134,6 @@ export const withCircularBackdrop = () => {
             onDone={() => setActiveGuide(false)}
             onNext={action('next')}
             onPrev={action('previous')}
-            backdropPadding={30}
-            isCircular
             steps={[
               {
                 referenceElement,
@@ -143,6 +141,8 @@ export const withCircularBackdrop = () => {
                 title: 'New feature',
                 content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
                 placement: 'bottom',
+                isCircular: true,
+                backdropPadding: '30',
               },
             ]}
           />
@@ -184,8 +184,6 @@ export const withCircularHighlightSurroundingLongElement = () => {
             onDone={() => setActiveGuide(false)}
             onNext={action('next')}
             onPrev={action('previous')}
-            backdropPadding={30}
-            isCircular
             steps={[
               {
                 referenceElement,
@@ -193,6 +191,8 @@ export const withCircularHighlightSurroundingLongElement = () => {
                 title: 'New feature',
                 content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
                 placement: 'bottom',
+                isCircular: true,
+                backdropPadding: '30',
               },
             ]}
           />
@@ -284,12 +284,15 @@ export const MultpipleSteps = () => {
                   title: 'New feature',
                   content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
                   placement: 'bottom',
+                  isCircular: true,
+                  backdropPadding: '30',
                 },
                 {
                   referenceElement: referenceElement4,
                   title: 'New feature',
                   content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
                   placement: 'top',
+                  backdropPadding: '30',
                 },
               ]}
             />

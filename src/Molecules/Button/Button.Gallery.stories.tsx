@@ -10,7 +10,7 @@ type ButtonComponentKeyType = 'Icon' | 'Pill' | undefined;
 type ButtonComponentValueType = typeof Button.Icon | typeof Button.Pill;
 type IconPlacementType = 'left' | 'right' | undefined;
 type ButtonSizeType = 's' | 'm' | 'l' | undefined;
-type VariantType = 'primary' | 'secondary' | 'neutral' | undefined;
+type VariantType = 'primary' | 'secondary' | 'neutral' | 'negative' | undefined;
 type DisplayItemComponent = {
   title: string;
   component: any;
@@ -19,6 +19,7 @@ type DisplayItemComponent = {
 const PRIMARY = 'primary';
 const SECONDARY = 'secondary';
 const NEUTRAL = 'neutral';
+const NEGATIVE = 'negative';
 const LARGE = 'large';
 const MEDIUM = 'medium';
 const SMALL = 'small';
@@ -31,8 +32,8 @@ const getButtonSettings = (buttonComponent: ButtonComponentValueType) => {
   switch (buttonComponent) {
     default:
       return {
-        buttonVariants: [PRIMARY, SECONDARY, NEUTRAL],
-        buttonSizes: [LARGE, MEDIUM],
+        buttonVariants: [PRIMARY, SECONDARY, NEUTRAL, NEGATIVE],
+        buttonSizes: [LARGE, MEDIUM, SMALL],
         iconPlacements: [undefined, LEFT, RIGHT],
       };
     case Button.Icon:
@@ -43,7 +44,7 @@ const getButtonSettings = (buttonComponent: ButtonComponentValueType) => {
       };
     case Button.Pill:
       return {
-        buttonVariants: [PRIMARY, SECONDARY],
+        buttonVariants: [PRIMARY, SECONDARY, NEGATIVE],
         buttonSizes: [MEDIUM, SMALL],
         iconPlacements: [undefined, LEFT, RIGHT],
       };

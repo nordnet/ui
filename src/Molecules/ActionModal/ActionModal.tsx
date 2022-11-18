@@ -76,7 +76,7 @@ export const ActionModal = ({
   const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.sm));
   return (
     <Portal>
-      <StyledFlexbox container justifyContent={isMobile ? 'center' : 'flex-end'}>
+      <StyledFlexbox container justifyContent={isMobile ? 'center' : 'flex-start'}>
         <Dialog>
           <Flexbox container direction="column" alignItems="center" gap={5}>
             <Flexbox item>{illustration}</Flexbox>

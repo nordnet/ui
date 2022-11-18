@@ -78,12 +78,19 @@ export const CoachMarks: Component = ({
   multiStepIndicatorText = 'of',
   closeOnClickOutside = true,
   barColor,
-  backdropPadding,
-  isCircular,
 }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
-  const { body, content, icon, placement = 'left', title, referenceElement } = steps[currentStep];
+  const {
+    body,
+    content,
+    icon,
+    placement = 'left',
+    title,
+    referenceElement,
+    isCircular,
+    backdropPadding,
+  } = steps[currentStep];
 
   const [popperElement, setPopperElement] = useState<HTMLElement | null>(null);
   const [arrowElement, setArrowElement] = useState<HTMLElement | null>(null);

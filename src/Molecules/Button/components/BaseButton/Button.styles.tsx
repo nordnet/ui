@@ -89,6 +89,32 @@ export const primaryStyles = css<InnerProps>`
   }}
 `;
 
+export const negativeStyles = css<InnerProps>`
+  ${shared}
+  ${padding}
+  ${minHeight}
+  background-color: ${(p) => {
+    const background = p.theme.color.buttonBackgroundNegative;
+
+    return p.disabled ? p.theme.color.buttonBackgroundDisabled : background;
+  }};
+  color: ${(p) => (p.disabled ? p.theme.color.buttonTextDisabled : p.theme.color.buttonText)};
+  ${getBorder('transparent')}
+
+  ${(p) => {
+    return p.disabled
+      ? ''
+      : `
+    &:hover {
+      background-color: ${p.theme.color.buttonBackgroundNegativeHover};
+    }
+    &:active {
+      background-color: ${p.theme.color.buttonBackgroundNegativeActive};
+    }
+  `;
+  }}
+`;
+
 export const secondaryStyles = css<InnerProps>`
   ${shared}
   ${padding}
