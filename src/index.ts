@@ -29,6 +29,7 @@ import Truncate from './Atoms/Truncate';
 
 /** Molecules */
 import ActionModal from './Molecules/ActionModal';
+import AllocationBar from './Molecules/AllocationBar';
 import Badge from './Molecules/Badge';
 import Accordion from './Molecules/Accordion';
 import AccordionItem from './Molecules/AccordionItem';
@@ -134,6 +135,7 @@ export {
   ActionModal,
   Accordion,
   AccordionItem,
+  AllocationBar,
   Badge,
   BarScale,
   Box,
