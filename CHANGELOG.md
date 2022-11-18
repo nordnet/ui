@@ -1,3 +1,26 @@
+# [12.0.0-beta.9](https://github.com/nordnet/ui/compare/v12.0.0-beta.8...v12.0.0-beta.9) (2022-11-18)
+
+
+### Bug Fixes
+
+* 🐛 add correct svg for lightbulb16 ([608676d](https://github.com/nordnet/ui/commit/608676d))
+* 🐛 add missing lightbulb16 ([5bd3782](https://github.com/nordnet/ui/commit/5bd3782))
+* 🐛 move action modal to bottom left ([72b55bf](https://github.com/nordnet/ui/commit/72b55bf))
+* 🐛 pass customization props to steps instead of coachmarks ([76ba35b](https://github.com/nordnet/ui/commit/76ba35b))
+* 🐛 use correct icon size ([c35f593](https://github.com/nordnet/ui/commit/c35f593))
+* 🐛 use correct width ([66f7700](https://github.com/nordnet/ui/commit/66f7700))
+* adjust styling for status modal ([b818719](https://github.com/nordnet/ui/commit/b818719))
+* update tests ([3357620](https://github.com/nordnet/ui/commit/3357620))
+
+
+### Features
+
+* 🎸 fix padding for progress indicator ([b909dcf](https://github.com/nordnet/ui/commit/b909dcf))
+* 🎸 minor fix check for function or node ([520335c](https://github.com/nordnet/ui/commit/520335c))
+* add 3 star ratings and colors ([2f9a353](https://github.com/nordnet/ui/commit/2f9a353))
+* add negative button variant ([c94a3b9](https://github.com/nordnet/ui/commit/c94a3b9))
+* update limiting ([18637dc](https://github.com/nordnet/ui/commit/18637dc))
+
 # [12.0.0-beta.8](https://github.com/nordnet/ui/compare/v12.0.0-beta.7...v12.0.0-beta.8) (2022-11-15)
 
 ### Bug Fixes
