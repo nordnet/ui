@@ -11,24 +11,6 @@ const StyledContainer = styled.div`
   background-color: #e6e6e6;
 `;
 
-const mockedAllocations = [
-  {
-    label: 'ETFs',
-    color: '#6690FF',
-    weight: 18,
-  },
-  {
-    label: 'Funds',
-    color: '#1F4099',
-    weight: 80,
-  },
-  {
-    label: 'Shares',
-    color: '#009195',
-    weight: 2,
-  },
-];
-
 export default {
   title: 'Molecules / Allocation Bar',
   parameters: {
@@ -39,11 +21,26 @@ export default {
   },
 };
 
-export const basicAllocationBar = () => (
-  <StyledContainer>
-    <AllocationBar allocations={mockedAllocations} />
-  </StyledContainer>
-);
+export const basicAllocationBar = () => {
+  const mockedAllocations = [
+    {
+      label: 'ETFs',
+      color: 'allocationBarLightBlue',
+      weight: 20,
+    },
+    {
+      label: 'Funds',
+      color: 'allocationBarDarkBlue',
+      weight: 80,
+    },
+  ];
+
+  return (
+    <StyledContainer>
+      <AllocationBar allocations={mockedAllocations} />
+    </StyledContainer>
+  );
+};
 
 basicAllocationBar.story = {
   name: 'Basic usage',

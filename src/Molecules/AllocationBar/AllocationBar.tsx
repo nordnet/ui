@@ -8,13 +8,13 @@ import Box from '../../Atoms/Box';
 import { AllocationBarProps } from './AllocationBar.types';
 
 const StyledBarItem = styled(Flexbox)<{ $color: string }>`
-  background-color: ${(p) => p.$color};
+  background-color: ${(p) => p.theme.color[p.$color]};
   transition: 0.5s ease;
   transition-delay: 0.3s;
 `;
 
 const StyledDotIcon = styled(Icon.Dot8)<{ $color: string }>`
-  color: ${(p) => p.$color};
+  color: ${(p) => p.theme.color[p.$color]};
 `;
 
 const AllocationBar: React.FC<AllocationBarProps> = ({ allocations }) => (
