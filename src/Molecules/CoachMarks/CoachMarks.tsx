@@ -23,6 +23,9 @@ const SVG = styled.svg`
   transition: all 0.3s ease-out, height 0s 0s, opacity 0.3s 0s;
 `;
 
+// function nope() {};
+// nope();
+
 const TitleWrapper = styled.div<ColsTrimmerProps>`
   padding-right: ${(p) => (p.$hasIcon ? 0 : p.theme.spacing.unit(CLOSE_ICON_SIZE))}px;
 `;
