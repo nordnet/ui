@@ -9,9 +9,6 @@
   "types": "dist/types",
   "sideEffects": false,
   "license": "MIT",
-  "engines": {
-    "node": ">=10"
-  },
   "scripts": {
     "test": "TZ=UTC jest",
     "tdd": "npm run test -- --watch",
