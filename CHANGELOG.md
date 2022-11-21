@@ -1,3 +1,11 @@
+# [11.17.0](https://github.com/nordnet/ui/compare/v11.16.1...v11.17.0) (2022-11-18)
+
+
+### Features
+
+* 🎸 fix padding for progress indicator ([b909dcf](https://github.com/nordnet/ui/commit/b909dcf))
+* 🎸 minor fix check for function or node ([520335c](https://github.com/nordnet/ui/commit/520335c))
+
 ## [11.16.1](https://github.com/nordnet/ui/compare/v11.16.0...v11.16.1) (2022-11-17)
 
 
