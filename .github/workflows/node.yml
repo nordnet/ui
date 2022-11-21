@@ -20,9 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: 
-        - 14
+        node-version:
         - 16
+        - 18
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -43,20 +43,16 @@ jobs:
     name: 'Release'
     needs: validate
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: 
-          - 14
     steps:
       - name: checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
           persist-credentials: false
-      - name: setup Node.js ${{ matrix.node-version }}
+      - name: setup Node.js 14
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 14
       - name: Install
         run: yarn install --ignore-engines
       - name: Release
