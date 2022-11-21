@@ -54,32 +54,17 @@ exports[`Storyshots Molecules / Allocation Bar Basic usage 1`] = `
 
 .c12 {
   box-sizing: border-box;
-  -webkit-flex: 18%;
-  -ms-flex: 18%;
-  flex: 18%;
+  -webkit-flex: 20%;
+  -ms-flex: 20%;
+  flex: 20%;
 }
 
 .c14 {
   box-sizing: border-box;
   height: 8px;
-  -webkit-flex: 18%;
-  -ms-flex: 18%;
-  flex: 18%;
-}
-
-.c16 {
-  box-sizing: border-box;
-  -webkit-flex: 2%;
-  -ms-flex: 2%;
-  flex: 2%;
-}
-
-.c18 {
-  box-sizing: border-box;
-  height: 8px;
-  -webkit-flex: 2%;
-  -ms-flex: 2%;
-  flex: 2%;
+  -webkit-flex: 20%;
+  -ms-flex: 20%;
+  flex: 20%;
 }
 
 .c4 {
@@ -128,24 +113,12 @@ exports[`Storyshots Molecules / Allocation Bar Basic usage 1`] = `
   transition-delay: 0.3s;
 }
 
-.c19 {
-  background-color: #009195;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-
 .c5 {
   color: #1F4099;
 }
 
 .c13 {
   color: #6690FF;
-}
-
-.c17 {
-  color: #009195;
 }
 
 .c0 {
@@ -241,7 +214,7 @@ exports[`Storyshots Molecules / Allocation Bar Basic usage 1`] = `
               className="Typography__Span-sc-10mju41-0 c8"
             >
               
-              18
+              20
               %
             </span>
             <span
@@ -254,53 +227,6 @@ exports[`Storyshots Molecules / Allocation Bar Basic usage 1`] = `
       </div>
       <div
         className="c14 c15"
-      />
-    </div>
-    <div
-      className="c16"
-    >
-      <div
-        className="c3"
-      >
-        <svg
-          aria-hidden="true"
-          className="c4 c17"
-          focusable="false"
-          height={8}
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          width={8}
-        >
-          <circle
-            cx={4}
-            cy={4}
-            fill="currentColor"
-            r={4}
-          />
-        </svg>
-        <div
-          className="c6"
-        >
-          <div
-            className="c7"
-          >
-            <span
-              className="Typography__Span-sc-10mju41-0 c8"
-            >
-              
-              2
-              %
-            </span>
-            <span
-              className="Typography__Span-sc-10mju41-0 c9"
-            >
-              Shares
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="c18 c19"
       />
     </div>
   </div>
