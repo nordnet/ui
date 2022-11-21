@@ -1,6 +1,4 @@
 {
-  "name": "nordnet-ui",
-  "version": 2,
   "buildCommand": "yarn run now-build",
   "outputDirectory": "storybook-static"
 }
