@@ -1,3 +1,10 @@
+## [11.17.1-alpha.1](https://github.com/nordnet/ui/compare/v11.17.0...v11.17.1-alpha.1) (2022-11-21)
+
+
+### Bug Fixes
+
+* try release on node 18 in alpha dist tag ([67aa5fc](https://github.com/nordnet/ui/commit/67aa5fc))
+
 # [11.17.0](https://github.com/nordnet/ui/compare/v11.16.1...v11.17.0) (2022-11-18)
 
 
