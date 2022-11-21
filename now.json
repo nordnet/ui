@@ -1,4 +1,0 @@
-{
-  "buildCommand": "NODE_OPTIONS=--openssl-legacy-provider yarn run now-build",
-  "outputDirectory": "storybook-static"
-}
