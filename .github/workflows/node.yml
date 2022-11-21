@@ -49,10 +49,10 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-      - name: setup Node.js 14
+      - name: setup Node.js 18
         uses: actions/setup-node@v1
         with:
-          node-version: 14
+          node-version: 18
       - name: Install
         run: yarn install --ignore-engines
       - name: Release
