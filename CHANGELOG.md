@@ -1,3 +1,11 @@
+## [11.17.3](https://github.com/nordnet/ui/compare/v11.17.2...v11.17.3) (2022-11-22)
+
+
+### Bug Fixes
+
+* 🐛 allow passing custom px and py for each step ([1cff835](https://github.com/nordnet/ui/commit/1cff835))
+* 🐛 use node 18 ([5a92d57](https://github.com/nordnet/ui/commit/5a92d57))
+
 ## [11.17.2](https://github.com/nordnet/ui/compare/v11.17.1...v11.17.2) (2022-11-22)
 
 
