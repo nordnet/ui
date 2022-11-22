@@ -1,3 +1,12 @@
+## [11.17.4](https://github.com/nordnet/ui/compare/v11.17.3...v11.17.4) (2022-11-22)
+
+
+### Bug Fixes
+
+* 🐛 adjust close button on mobile ([e5b6a8f](https://github.com/nordnet/ui/commit/e5b6a8f))
+* 🐛 change md to sm ([4a464e9](https://github.com/nordnet/ui/commit/4a464e9))
+* 🐛 use sticky modal on mobile for coachmarks ([1d00a7f](https://github.com/nordnet/ui/commit/1d00a7f))
+
 ## [11.17.3](https://github.com/nordnet/ui/compare/v11.17.2...v11.17.3) (2022-11-22)
 
 
