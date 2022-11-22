@@ -81,7 +81,7 @@ export const CoachMarks: Component = ({
 }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
-  const isSmallScreen = useMedia((t) => t.media.lessThan(t.breakpoints.md));
+  const isSmallScreen = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
 
   const {
     body,
