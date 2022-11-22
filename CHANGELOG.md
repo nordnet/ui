@@ -1,3 +1,13 @@
+# [12.0.0-beta.10](https://github.com/nordnet/ui/compare/v12.0.0-beta.9...v12.0.0-beta.10) (2022-11-22)
+
+
+### Bug Fixes
+
+* 🐛 allow passing custom px and py for each step ([1cff835](https://github.com/nordnet/ui/commit/1cff835))
+* 🐛 use node 18 ([5a92d57](https://github.com/nordnet/ui/commit/5a92d57))
+* add account16 icon ([a655d52](https://github.com/nordnet/ui/commit/a655d52))
+* try release on node 18 in alpha dist tag ([6d91178](https://github.com/nordnet/ui/commit/6d91178))
+
 # [12.0.0-beta.9](https://github.com/nordnet/ui/compare/v12.0.0-beta.8...v12.0.0-beta.9) (2022-11-18)
 
 ### Bug Fixes
