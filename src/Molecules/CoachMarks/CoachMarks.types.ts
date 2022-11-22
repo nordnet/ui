@@ -18,6 +18,8 @@ type Step = {
   title?: string;
   isCircular?: boolean;
   backdropPadding?: string | number;
+  px?: string | number;
+  py?: string | number;
 };
 
 export type Props = {
