@@ -51,6 +51,12 @@ const CloseButton = styled(Button)`
   right: ${(p) => p.theme.spacing.unit(5)}px;
 `;
 
+const CloseButtonMobile = styled(Button)`
+  position: absolute;
+  top: ${(p) => p.theme.spacing.unit(5)}px;
+  right: ${(p) => p.theme.spacing.unit(3)}px;
+`;
+
 const useScrollPosition = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -217,23 +223,19 @@ export const CoachMarks: Component = ({
       <>
         <Modal
           title={
-            <Flexbox container alignItems="center">
+            <>
               <Flexbox container direction="column">
                 {icon && <IconFlex item>{icon}</IconFlex>}
                 {title && (
-                  <Flexbox item>
-                    <TitleWrapper $hasIcon={Boolean(icon)}>
-                      <Typography as="h2" type="primary" weight="bold">
-                        {title}
-                      </Typography>
-                    </TitleWrapper>
-                  </Flexbox>
+                  <Typography as="h2" type="primary" weight="bold">
+                    {title}
+                  </Typography>
                 )}
               </Flexbox>
-              <CloseButton variant="neutral" onClick={handleClose}>
+              <CloseButtonMobile variant="neutral" onClick={handleClose}>
                 <Icon.Cross16 />
-              </CloseButton>
-            </Flexbox>
+              </CloseButtonMobile>
+            </>
           }
           open
           hideClose
