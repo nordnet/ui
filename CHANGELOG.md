@@ -1,5 +1,11 @@
 # [12.0.0-beta.9](https://github.com/nordnet/ui/compare/v12.0.0-beta.8...v12.0.0-beta.9) (2022-11-18)
 
+### Bug Fixes
+
+* update tests ([3357620](https://github.com/nordnet/ui/commit/3357620))
+
+## [11.17.3](https://github.com/nordnet/ui/compare/v11.17.2...v11.17.3) (2022-11-22)
+
 
 ### Bug Fixes
 
@@ -10,7 +16,24 @@
 * 🐛 use correct icon size ([c35f593](https://github.com/nordnet/ui/commit/c35f593))
 * 🐛 use correct width ([66f7700](https://github.com/nordnet/ui/commit/66f7700))
 * adjust styling for status modal ([b818719](https://github.com/nordnet/ui/commit/b818719))
-* update tests ([3357620](https://github.com/nordnet/ui/commit/3357620))
+* 🐛 allow passing custom px and py for each step ([1cff835](https://github.com/nordnet/ui/commit/1cff835))
+* 🐛 use node 18 ([5a92d57](https://github.com/nordnet/ui/commit/5a92d57))
+
+## [11.17.2](https://github.com/nordnet/ui/compare/v11.17.1...v11.17.2) (2022-11-22)
+
+
+### Bug Fixes
+
+* add account16 icon ([a655d52](https://github.com/nordnet/ui/commit/a655d52))
+
+## [11.17.1](https://github.com/nordnet/ui/compare/v11.17.0...v11.17.1) (2022-11-22)
+
+
+### Bug Fixes
+
+* try release on node 18 in alpha dist tag ([6d91178](https://github.com/nordnet/ui/commit/6d91178))
+
+# [11.17.0](https://github.com/nordnet/ui/compare/v11.16.1...v11.17.0) (2022-11-18)
 
 
 ### Features
