@@ -1,3 +1,10 @@
+## [11.17.2](https://github.com/nordnet/ui/compare/v11.17.1...v11.17.2) (2022-11-22)
+
+
+### Bug Fixes
+
+* add account16 icon ([a655d52](https://github.com/nordnet/ui/commit/a655d52))
+
 ## [11.17.1](https://github.com/nordnet/ui/compare/v11.17.0...v11.17.1) (2022-11-22)
 
 
