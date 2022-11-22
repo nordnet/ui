@@ -26,6 +26,47 @@ Array [
       aria-hidden="true"
       className="c0"
       focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={16}
+    >
+      <path
+        d="M13 9v2h-2V9h2Z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h13V4h-2V0H3Zm0 6a3 3 0 0 1-1-.17V13a1 1 0 0 0 1 1h11V6H3ZM2 3a1 1 0 0 0 1 1h9V2H3a1 1 0 0 0-1 1Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  color: #336BFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
       height={24}
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
@@ -18118,6 +18159,51 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
   className="c0"
   direction="column"
 >
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="Typography__Span-sc-10mju41-0 c3"
+      >
+        Account16
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            d="M13 9v2h-2V9h2Z"
+            fill="currentColor"
+          />
+          <path
+            clipRule="evenodd"
+            d="M3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h13V4h-2V0H3Zm0 6a3 3 0 0 1-1-.17V13a1 1 0 0 0 1 1h11V6H3ZM2 3a1 1 0 0 0 1 1h9V2H3a1 1 0 0 0-1 1Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
   <div
     className="c1"
     direction="row"

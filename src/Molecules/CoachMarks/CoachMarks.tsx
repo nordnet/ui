@@ -98,6 +98,8 @@ export const CoachMarks: Component = ({
     referenceElement,
     isCircular,
     backdropPadding,
+    px,
+    py,
   } = steps[currentStep];
 
   const [popperElement, setPopperElement] = useState<HTMLElement | null>(null);
@@ -124,7 +126,7 @@ export const CoachMarks: Component = ({
   const hasPrevStep = currentStep > 0;
   const hasNextStep = currentStep + 1 < steps.length;
   const path = referenceElementRect
-    ? makeBackdropPath(referenceElementRect, Number(highlightBoxPadding), isCircular)
+    ? makeBackdropPath(referenceElementRect, Number(highlightBoxPadding), isCircular, px, py)
     : '';
 
   useSafeLayoutEffect(() => {
