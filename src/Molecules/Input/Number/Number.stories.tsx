@@ -214,6 +214,14 @@ withNoSteppers.story = {
   name: 'With no steppers',
 };
 
+export const withNoSteppersSeparated = () => (
+  <Input.Number id="insert-unique-id" label="Label" noSteppers valueSeparated locale="sv-SE" />
+);
+
+withNoSteppersSeparated.story = {
+  name: 'With no steppers Separated',
+};
+
 export const withRightAddon = () => (
   <Input.Number id="insert-unique-id" label="Label" rightAddon="SEK" />
 );
@@ -377,6 +385,20 @@ export const quietNumber = () => (
           />
         ),
         title: 'Default',
+      },
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
+            placeholder="0"
+            valueSeparated
+            locale="da-DK"
+          />
+        ),
+        title: 'test',
       },
       {
         component: (

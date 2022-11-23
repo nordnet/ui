@@ -30,11 +30,13 @@ export type Props = {
    Numeric input keyboard; all that is needed are the digits 0 through 9.
    Devices may or may not show a minus key.
    */
+  // 'da-DK', 'en-US', 'fi-FI', 'nb-NO', 'sv-SE', 'sv-FI'
   inputMode?: 'none' | 'numeric' | 'decimal';
   label: string;
   labelTooltip?: string;
   labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
   leftAddon?: React.ReactNode;
+  locale?: 'da-DK' | 'en-US' | 'fi-FI' | 'nb-NO' | 'sv-SE' | 'sv-FI';
   max?: string | number;
   min?: string | number;
   name?: string;
@@ -46,6 +48,7 @@ export type Props = {
   success?: boolean;
   value?: string | number;
   visuallyEmphasiseRequired?: boolean;
+  valueSeparated?: boolean;
   noSteppers?: boolean;
 
   onStepUp?: () => void;
