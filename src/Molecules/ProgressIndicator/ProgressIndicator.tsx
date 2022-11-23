@@ -19,7 +19,8 @@ const ProgressIndicator: FC<Props> = ({
 }): ReactElement => {
   const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.sm));
   const isFirstStep = currentStep === 1;
-  const noButtons = !closeCallback && !backCallback && !infoCallback;
+  const noClosAndBack = !closeCallback && !backCallback;
+  const noButtons = noClosAndBack && !infoCallback;
   const noBackButton = !backCallback;
   const handleBackAndCloseClick = () => {
     if ((isFirstStep || noBackButton) && closeCallback) return closeCallback();
@@ -44,7 +45,8 @@ const ProgressIndicator: FC<Props> = ({
           $hide={
             (buttonCallback && !isMobile) ||
             noButtons ||
-            (!backCallback && !isFirstStep && !noBackButton)
+            (!backCallback && !isFirstStep && !noBackButton) ||
+            noClosAndBack
           }
           charWidth={isFirstStep || noBackButton ? exitText.length : backText.length + 0.5}
         >
