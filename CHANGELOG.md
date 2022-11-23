@@ -1,3 +1,34 @@
+## [11.17.4](https://github.com/nordnet/ui/compare/v11.17.3...v11.17.4) (2022-11-22)
+
+
+### Bug Fixes
+
+* 🐛 adjust close button on mobile ([e5b6a8f](https://github.com/nordnet/ui/commit/e5b6a8f))
+* 🐛 change md to sm ([4a464e9](https://github.com/nordnet/ui/commit/4a464e9))
+* 🐛 use sticky modal on mobile for coachmarks ([1d00a7f](https://github.com/nordnet/ui/commit/1d00a7f))
+
+## [11.17.3](https://github.com/nordnet/ui/compare/v11.17.2...v11.17.3) (2022-11-22)
+
+
+### Bug Fixes
+
+* 🐛 allow passing custom px and py for each step ([1cff835](https://github.com/nordnet/ui/commit/1cff835))
+* 🐛 use node 18 ([5a92d57](https://github.com/nordnet/ui/commit/5a92d57))
+
+## [11.17.2](https://github.com/nordnet/ui/compare/v11.17.1...v11.17.2) (2022-11-22)
+
+
+### Bug Fixes
+
+* add account16 icon ([a655d52](https://github.com/nordnet/ui/commit/a655d52))
+
+## [11.17.1](https://github.com/nordnet/ui/compare/v11.17.0...v11.17.1) (2022-11-22)
+
+
+### Bug Fixes
+
+* try release on node 18 in alpha dist tag ([6d91178](https://github.com/nordnet/ui/commit/6d91178))
+
 # [11.17.0](https://github.com/nordnet/ui/compare/v11.16.1...v11.17.0) (2022-11-18)
 
 

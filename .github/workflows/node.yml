@@ -5,9 +5,14 @@ on:
     branches:
       - master
       - beta
+      - alpha
 
   # Run tests for any PRs.
   pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 env:
   CI: true
@@ -18,21 +23,16 @@ jobs:
   validate:
     name: 'Validate'
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: 
-        - 14
-        - 16
     steps:
       - name: checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
           persist-credentials: false
-      - name: setup Node.js ${{ matrix.node-version }}
+      - name: setup Node.js 18
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 18
       - name: Install
         run: yarn install --ignore-engines
       - name: Validate
@@ -43,20 +43,16 @@ jobs:
     name: 'Release'
     needs: validate
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: 
-          - 14
     steps:
       - name: checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
           persist-credentials: false
-      - name: setup Node.js ${{ matrix.node-version }}
+      - name: setup Node.js 18
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 18
       - name: Install
         run: yarn install --ignore-engines
       - name: Release
