@@ -9,6 +9,7 @@ export type Props = {
    *  unit based or string size  */
   size?: IconSizeProp;
   outOf?: number;
+  height?: string;
 };
 
 export type RatingComponent = React.FunctionComponent<Props>;
