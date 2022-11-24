@@ -1,3 +1,10 @@
+# [11.19.0](https://github.com/nordnet/ui/compare/v11.18.0...v11.19.0) (2022-11-24)
+
+
+### Features
+
+* allow custom height on star rating wrapper ([1deeb57](https://github.com/nordnet/ui/commit/1deeb57))
+
 # [11.18.0](https://github.com/nordnet/ui/compare/v11.17.4...v11.18.0) (2022-11-24)
 
 
