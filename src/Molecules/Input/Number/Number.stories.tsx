@@ -214,12 +214,20 @@ withNoSteppers.story = {
   name: 'With no steppers',
 };
 
-export const withNoSteppersSeparated = () => (
-  <Input.Number id="insert-unique-id" label="Label" noSteppers valueSeparated locale="sv-SE" />
+export const withNoSteppersThousandSeparator = () => (
+  <Input.Number id="insert-unique-id" label="Label" noSteppers thousandSeparator locale="sv-SE" />
 );
 
-withNoSteppersSeparated.story = {
-  name: 'With no steppers Separated',
+withNoSteppersThousandSeparator.story = {
+  name: 'With no steppers separated',
+};
+
+export const withNoSteppersThousandSeparatorDecimals = () => (
+  <Input.Number id="insert-unique-id" label="Label" noSteppers thousandSeparator locale="da-DK" />
+);
+
+withNoSteppersThousandSeparatorDecimals.story = {
+  name: 'With no steppers thousand separator decimals point',
 };
 
 export const withRightAddon = () => (
@@ -394,11 +402,24 @@ export const quietNumber = () => (
             onChange={action('onChange')}
             variant="quiet"
             placeholder="0"
-            valueSeparated
+            thousandSeparator
+          />
+        ),
+        title: 'Thousand Separator',
+      },
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
+            placeholder="0"
+            thousandSeparator
             locale="da-DK"
           />
         ),
-        title: 'test',
+        title: 'Thousand Separator decimals (local da-DK only)',
       },
       {
         component: (

@@ -222,7 +222,7 @@ const NumberInput: NumberComponent & {
     inputMode = 'decimal',
     success,
     value: controlledValueRaw,
-    valueSeparated,
+    thousandSeparator,
     visuallyEmphasiseRequired,
     variant = 'normal',
   } = props;
@@ -236,7 +236,7 @@ const NumberInput: NumberComponent & {
   const handleValueChange = (val: string) => {
     setInternalValue(val);
 
-    if (valueSeparated) {
+    if (thousandSeparator) {
       const formatValue = +val.replace(/\D/g, '');
       const addSeparator = new Intl.NumberFormat(locale).format(formatValue);
       setInternalValue(addSeparator);
@@ -246,7 +246,6 @@ const NumberInput: NumberComponent & {
       onChange(val);
     }
   };
-  // console.log('sepValue', sepValue);
 
   const inputRef = useRef<HTMLInputElement>(null);
   const isControlled = isString(controlledValueRaw) || isNumber(controlledValueRaw);
@@ -376,7 +375,7 @@ const NumberInput: NumberComponent & {
               inputMode,
               showSteppers,
               variant,
-              valueSeparated,
+              thousandSeparator,
             }}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
             {...(autoComplete ? { autoComplete } : {})}
