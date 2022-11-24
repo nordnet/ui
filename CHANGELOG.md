@@ -1,3 +1,16 @@
+# [11.18.0](https://github.com/nordnet/ui/compare/v11.17.4...v11.18.0) (2022-11-24)
+
+
+### Bug Fixes
+
+* 🐛 typo for noCloseAndBack ([8e9a7fa](https://github.com/nordnet/ui/commit/8e9a7fa))
+* 🐛 update button min-width to be button max-content ([c753cc6](https://github.com/nordnet/ui/commit/c753cc6))
+
+
+### Features
+
+* 🎸 Add support for only infoCallback ([5a954c5](https://github.com/nordnet/ui/commit/5a954c5))
+
 ## [11.17.4](https://github.com/nordnet/ui/compare/v11.17.3...v11.17.4) (2022-11-22)
 
 
