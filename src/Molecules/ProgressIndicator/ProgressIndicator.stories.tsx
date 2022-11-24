@@ -148,13 +148,13 @@ export const WithButtonInfoAndExitCallback = () => {
     <>
       <ProgressIndicator
         buttonCallback
-        title="Progress flow title"
+        title="Very long Progress flow title text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum ipsum eget neque venenatis"
         numberOfSteps={3}
         currentStep={currentStep}
         infoCallback={() => alert('info callback')}
         closeCallback={() => alert('close callback')}
-        exitText="Save & exit"
-        infoText="info"
+        exitText="Save & exit text"
+        infoText="info button text"
         infoIcon="help"
       />
       <Flexbox container justifyContent="space-around">

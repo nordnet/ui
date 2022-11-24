@@ -1,6 +1,11 @@
 import React, { FC, ReactElement } from 'react';
-import { Box, Flexbox, Typography, Icon, Button } from '../..';
-import { StyledButton, HiddenText, CompletionBar } from './ProgressIndicator.styled';
+import { Box, Flexbox, Typography, Icon } from '../..';
+import {
+  StyledButton,
+  HiddenText,
+  CompletionBar,
+  StyledButtonPill,
+} from './ProgressIndicator.styled';
 import { Props } from './ProgressIndicator.types';
 import { useMedia } from '../../Atoms/Media';
 
@@ -17,7 +22,7 @@ const ProgressIndicator: FC<Props> = ({
   infoIcon = 'info',
   buttonCallback = false,
 }): ReactElement => {
-  const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.sm));
+  const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.md));
   const isFirstStep = currentStep === 1;
   const noCloseAndBack = !closeCallback && !backCallback;
   const noButtons = noCloseAndBack && !infoCallback;
@@ -101,12 +106,16 @@ const ProgressIndicator: FC<Props> = ({
       </Flexbox>
       <Box pt={3}>
         <Flexbox container justifyContent="space-between" alignItems="center">
-          {title && <Typography type="title1">{title}</Typography>}
+          {title && (
+            <Box pr={2}>
+              <Typography type="title1">{title}</Typography>
+            </Box>
+          )}
           {buttonCallback && !isMobile && (
             <Flexbox item container justifyContent="flex-end" flex="1">
               <Flexbox container gap={3} direction="row" alignItems="center">
                 {typeof infoCallback === 'function' ? (
-                  <Button.Pill
+                  <StyledButtonPill
                     variant="secondary"
                     icon={
                       infoIcon === 'info' ? (
@@ -119,19 +128,19 @@ const ProgressIndicator: FC<Props> = ({
                     size="s"
                   >
                     {infoText}
-                  </Button.Pill>
+                  </StyledButtonPill>
                 ) : (
                   infoCallback
                 )}
                 {closeCallback && (
-                  <Button.Pill
+                  <StyledButtonPill
                     variant="secondary"
                     icon={<Icon.Cross16 color="currentColor" />}
                     onClick={closeCallback}
                     size="s"
                   >
                     {exitText}
-                  </Button.Pill>
+                  </StyledButtonPill>
                 )}
               </Flexbox>
             </Flexbox>
