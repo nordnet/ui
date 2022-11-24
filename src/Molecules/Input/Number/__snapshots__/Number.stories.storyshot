@@ -2206,7 +2206,65 @@ Array [
         <span
           className="Typography__Span-sc-10mju41-0 c3"
         >
-          test
+          Thousand Separator
+        </span>
+      </div>
+      <div>
+        <div
+          className="c4"
+        >
+          <label
+            className="c5"
+            hidden={false}
+            htmlFor="insert-unique-id"
+          >
+            <span
+              className="Typography__Span-sc-10mju41-0 c6"
+            >
+              <div
+                className="c7"
+              >
+                Label 
+              </div>
+            </span>
+          </label>
+          <span
+            className="Typography__Span-sc-10mju41-0 c8"
+          >
+            <div
+              className="c9 c10"
+            >
+              <input
+                className="c11 c12"
+                id="insert-unique-id"
+                inputMode="decimal"
+                locale="sv-SE"
+                min={0}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                placeholder="0"
+                step={1}
+                thousandSeparator={true}
+                type="text"
+                value=""
+                variant="quiet"
+              />
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="Typography__Span-sc-10mju41-0 c3"
+        >
+          Thousand Separator decimals (local da-DK only)
         </span>
       </div>
       <div>
@@ -2244,9 +2302,9 @@ Array [
                 onKeyDown={[Function]}
                 placeholder="0"
                 step={1}
+                thousandSeparator={true}
                 type="text"
                 value=""
-                valueSeparated={true}
                 variant="quiet"
               />
             </div>
@@ -7431,7 +7489,7 @@ exports[`Storyshots Molecules / Input / Number With no steppers 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules / Input / Number With no steppers Separated 1`] = `
+exports[`Storyshots Molecules / Input / Number With no steppers separated 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -7609,9 +7667,197 @@ exports[`Storyshots Molecules / Input / Number With no steppers Separated 1`] = 
         onChange={[Function]}
         onKeyDown={[Function]}
         step={1}
+        thousandSeparator={true}
         type="text"
         value=""
-        valueSeparated={true}
+        variant="normal"
+      />
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Molecules / Input / Number With no steppers thousand separator decimals point 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E6E;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.c8 {
+  background-color: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  position: relative;
+  border-width: 1px;
+  height: 40px;
+  padding: 8px;
+  width: 100%;
+  color: #282823;
+  text-align: left;
+  box-sizing: border-box;
+  margin: 0 -1px;
+  min-width: 0;
+  z-index: 1;
+}
+
+.c8:hover {
+  border-color: #424242;
+  z-index: 2;
+}
+
+.c8:focus {
+  border-color: #336BFF;
+  z-index: 3;
+}
+
+.c8:focus {
+  border-width: 1px;
+}
+
+.c8::-webkit-input-placeholder {
+  color: #6E6E6E;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8::-moz-placeholder {
+  color: #6E6E6E;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8:-ms-input-placeholder {
+  color: #6E6E6E;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8::placeholder {
+  color: #6E6E6E;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled {
+  color: #A0A09B;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
+  >
+    <span
+      className="Typography__Span-sc-10mju41-0 c2"
+    >
+      <div
+        className="c3"
+      >
+        Label 
+      </div>
+    </span>
+  </label>
+  <span
+    className="Typography__Span-sc-10mju41-0 c4"
+  >
+    <div
+      className="c5 c6"
+    >
+      <input
+        className="c7 c8"
+        id="insert-unique-id"
+        inputMode="decimal"
+        locale="da-DK"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        step={1}
+        thousandSeparator={true}
+        type="text"
+        value=""
         variant="normal"
       />
     </div>
