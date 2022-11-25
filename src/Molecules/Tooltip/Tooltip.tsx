@@ -33,7 +33,7 @@ export const Tooltip: FC<Props> = (props) => {
     wrapChild,
     pointerEvents = false,
     pointerArrow = true,
-    withPortal = true,
+    customBoundary,
   } = props;
   const child = React.Children.only(children) as ReactElement;
 
@@ -78,9 +78,9 @@ export const Tooltip: FC<Props> = (props) => {
           offset={offset}
           pointerEvents={pointerEvents}
           pointerArrow={pointerArrow}
-          withPortal={withPortal}
           handleMouseEnter={handleMouseEnter}
           handleMouseLeave={handleMouseLeave}
+          customBoundary={customBoundary}
         />
       )}
     </>

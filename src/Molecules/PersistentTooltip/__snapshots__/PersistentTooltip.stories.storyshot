@@ -245,74 +245,76 @@ Array [
           transform="rotate(45,7,21) scale(1.35)"
         />
       </svg>
-      <span
-        className="c3 "
-        id=""
-        style={
-          Object {
-            "left": "0",
-            "position": "absolute",
-            "top": "0",
+      <portal-dummy>
+        <span
+          className="c3 "
+          id=""
+          style={
+            Object {
+              "left": "0",
+              "position": "absolute",
+              "top": "0",
+            }
           }
-        }
-      >
-        <div
-          className="c4 PopOver__StyledTooltipContent-sc-1u1gooh-1"
         >
-          <span
-            className="Typography__Span-sc-10mju41-0 c5"
+          <div
+            className="c4 PopOver__StyledTooltipContent-sc-1u1gooh-1"
           >
-            <div
-              className="c6"
+            <span
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               <div
-                className="c7"
+                className="c6"
               >
-                <span
-                  className="Typography__Span-sc-10mju41-0 c8"
-                >
-                  Broken positioning
-                </span>
-                <button
-                  className="c9 c10 c11"
-                  onClick={[Function]}
-                  type="button"
+                <div
+                  className="c7"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c12"
+                    className="Typography__Span-sc-10mju41-0 c8"
                   >
-                    <svg
-                      aria-hidden="false"
-                      className="c13 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
-                      focusable="false"
-                      preserveAspectRatio="xMidYMid meet"
-                      role="img"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
-                        fillRule="evenodd"
-                      />
-                      <title>
-                        Close by clicking X
-                      </title>
-                    </svg>
+                    Broken positioning
                   </span>
-                </button>
-              </div>
-              <div
-                className="c14"
-              >
-                <span
-                  className="Typography__Span-sc-10mju41-0 c15"
+                  <button
+                    className="c9 c10 c11"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="Typography__Span-sc-10mju41-0 c12"
+                    >
+                      <svg
+                        aria-hidden="false"
+                        className="c13 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                        focusable="false"
+                        preserveAspectRatio="xMidYMid meet"
+                        role="img"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                          fillRule="evenodd"
+                        />
+                        <title>
+                          Close by clicking X
+                        </title>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div
+                  className="c14"
                 >
-                  This tooltip has children which doesn't handle refs correctly. Thus, it's positioning doesn't work properly. See wrapChild for examples of how to fix this.
-                </span>
+                  <span
+                    className="Typography__Span-sc-10mju41-0 c15"
+                  >
+                    This tooltip has children which doesn't handle refs correctly. Thus, it's positioning doesn't work properly. See wrapChild for examples of how to fix this.
+                  </span>
+                </div>
               </div>
-            </div>
-          </span>
-        </div>
-      </span>
+            </span>
+          </div>
+        </span>
+      </portal-dummy>
     </div>
   </div>,
 ]
@@ -701,91 +703,93 @@ Array [
 
 }
 
-<span
-    className="c0 "
-    id="nn-persistent-tooltip-25"
-    style={
-      Object {
-        "left": "0",
-        "position": "absolute",
-        "top": "0",
+<portal-dummy>
+    <span
+      className="c0 "
+      id="nn-persistent-tooltip-25"
+      style={
+        Object {
+          "left": "0",
+          "position": "absolute",
+          "top": "0",
+        }
       }
-    }
-  >
-    <div
-      className="c1 PopOver__StyledTooltipContent-sc-1u1gooh-1"
     >
-      <span
-        className="Typography__Span-sc-10mju41-0 c2"
+      <div
+        className="c1 PopOver__StyledTooltipContent-sc-1u1gooh-1"
       >
-        <div
-          className="c3"
+        <span
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           <div
-            className="c4"
+            className="c3"
           >
             <div
-              className="c5"
+              className="c4"
             >
-              <span
-                className="Typography__Span-sc-10mju41-0 c6"
+              <div
+                className="c5"
               >
-                I'm in a box
-              </span>
-            </div>
-            <button
-              className="c7 c8 c9"
-              onClick={[Function]}
-              type="button"
-            >
-              <span
-                className="Typography__Span-sc-10mju41-0 c10"
-              >
-                <svg
-                  aria-hidden="false"
-                  className="c11 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="img"
-                  viewBox="0 0 16 16"
+                <span
+                  className="Typography__Span-sc-10mju41-0 c6"
                 >
-                  <path
-                    d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
-                    fillRule="evenodd"
-                  />
-                  <title>
-                    Close by clicking X
-                  </title>
-                </svg>
-              </span>
-            </button>
-          </div>
-          <div
-            className="c12"
-          >
-            <div
-              className="c13"
-            >
-              <span
-                className="Typography__Span-sc-10mju41-0 c14"
+                  I'm in a box
+                </span>
+              </div>
+              <button
+                className="c7 c8 c9"
+                onClick={[Function]}
+                type="button"
               >
-                I am in a custom jsx description.
-              </span>
+                <span
+                  className="Typography__Span-sc-10mju41-0 c10"
+                >
+                  <svg
+                    aria-hidden="false"
+                    className="c11 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="img"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                      fillRule="evenodd"
+                    />
+                    <title>
+                      Close by clicking X
+                    </title>
+                  </svg>
+                </span>
+              </button>
             </div>
             <div
-              className="c13"
+              className="c12"
             >
-              <span
-                className="Typography__Span-sc-10mju41-0 c14"
+              <div
+                className="c13"
               >
-                I am in a custom jsx description too!
-              </span>
+                <span
+                  className="Typography__Span-sc-10mju41-0 c14"
+                >
+                  I am in a custom jsx description.
+                </span>
+              </div>
+              <div
+                className="c13"
+              >
+                <span
+                  className="Typography__Span-sc-10mju41-0 c14"
+                >
+                  I am in a custom jsx description too!
+                </span>
+              </div>
             </div>
           </div>
-        </div>
-      </span>
-    </div>
-  </span>,
+        </span>
+      </div>
+    </span>
+  </portal-dummy>,
 ]
 `;
 
@@ -1149,74 +1153,76 @@ Array [
 
 }
 
-<span
-    className="c0 "
-    id="nn-persistent-tooltip-22"
-    style={
-      Object {
-        "left": "0",
-        "position": "absolute",
-        "top": "0",
+<portal-dummy>
+    <span
+      className="c0 "
+      id="nn-persistent-tooltip-22"
+      style={
+        Object {
+          "left": "0",
+          "position": "absolute",
+          "top": "0",
+        }
       }
-    }
-  >
-    <div
-      className="c1 PopOver__StyledTooltipContent-sc-1u1gooh-1"
     >
-      <span
-        className="Typography__Span-sc-10mju41-0 c2"
+      <div
+        className="c1 PopOver__StyledTooltipContent-sc-1u1gooh-1"
       >
-        <div
-          className="c3"
+        <span
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           <div
-            className="c4"
+            className="c3"
           >
-            <span
-              className="Typography__Span-sc-10mju41-0 c5"
-            >
-              Default persistent tooltip
-            </span>
-            <button
-              className="c6 c7 c8"
-              onClick={[Function]}
-              type="button"
+            <div
+              className="c4"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c9"
+                className="Typography__Span-sc-10mju41-0 c5"
               >
-                <svg
-                  aria-hidden="false"
-                  className="c10 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="img"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
-                    fillRule="evenodd"
-                  />
-                  <title>
-                    Close by clicking X
-                  </title>
-                </svg>
+                Default persistent tooltip
               </span>
-            </button>
-          </div>
-          <div
-            className="c11"
-          >
-            <span
-              className="Typography__Span-sc-10mju41-0 c12"
+              <button
+                className="c6 c7 c8"
+                onClick={[Function]}
+                type="button"
+              >
+                <span
+                  className="Typography__Span-sc-10mju41-0 c9"
+                >
+                  <svg
+                    aria-hidden="false"
+                    className="c10 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="img"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                      fillRule="evenodd"
+                    />
+                    <title>
+                      Close by clicking X
+                    </title>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div
+              className="c11"
             >
-              The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
-            </span>
+              <span
+                className="Typography__Span-sc-10mju41-0 c12"
+              >
+                The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
+              </span>
+            </div>
           </div>
-        </div>
-      </span>
-    </div>
-  </span>,
+        </span>
+      </div>
+    </span>
+  </portal-dummy>,
 ]
 `;
 
@@ -1584,74 +1590,76 @@ Array [
         </span>
       </label>
     </div>
-    <span
-      className="c9 "
-      id="nn-persistent-tooltip-26"
-      style={
-        Object {
-          "left": "0",
-          "position": "absolute",
-          "top": "0",
+    <portal-dummy>
+      <span
+        className="c9 "
+        id="nn-persistent-tooltip-26"
+        style={
+          Object {
+            "left": "0",
+            "position": "absolute",
+            "top": "0",
+          }
         }
-      }
-    >
-      <div
-        className="c10 PopOver__StyledTooltipContent-sc-1u1gooh-1"
       >
-        <span
-          className="Typography__Span-sc-10mju41-0 c11"
+        <div
+          className="c10 PopOver__StyledTooltipContent-sc-1u1gooh-1"
         >
-          <div
-            className="c12"
+          <span
+            className="Typography__Span-sc-10mju41-0 c11"
           >
             <div
-              className="c13"
+              className="c12"
             >
-              <span
-                className="Typography__Span-sc-10mju41-0 c14"
-              >
-                Different Positions - Right
-              </span>
-              <button
-                className="c15 c16 c17"
-                onClick={[Function]}
-                type="button"
+              <div
+                className="c13"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c18"
+                  className="Typography__Span-sc-10mju41-0 c14"
                 >
-                  <svg
-                    aria-hidden="false"
-                    className="c19 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="img"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
-                      fillRule="evenodd"
-                    />
-                    <title>
-                      Close by clicking X
-                    </title>
-                  </svg>
+                  Different Positions - Right
                 </span>
-              </button>
-            </div>
-            <div
-              className="c20"
-            >
-              <span
-                className="Typography__Span-sc-10mju41-0 c21"
+                <button
+                  className="c15 c16 c17"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span
+                    className="Typography__Span-sc-10mju41-0 c18"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      className="c19 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="img"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                        fillRule="evenodd"
+                      />
+                      <title>
+                        Close by clicking X
+                      </title>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div
+                className="c20"
               >
-                This tooltip is positioned on the right
-              </span>
+                <span
+                  className="Typography__Span-sc-10mju41-0 c21"
+                >
+                  This tooltip is positioned on the right
+                </span>
+              </div>
             </div>
-          </div>
-        </span>
-      </div>
-    </span>
+          </span>
+        </div>
+      </span>
+    </portal-dummy>
   </div>,
   .c0 {
   margin-bottom: 160px;
@@ -1985,74 +1993,76 @@ Array [
         </span>
       </label>
     </div>
-    <span
-      className="c9 "
-      id="nn-persistent-tooltip-27"
-      style={
-        Object {
-          "left": "0",
-          "position": "absolute",
-          "top": "0",
+    <portal-dummy>
+      <span
+        className="c9 "
+        id="nn-persistent-tooltip-27"
+        style={
+          Object {
+            "left": "0",
+            "position": "absolute",
+            "top": "0",
+          }
         }
-      }
-    >
-      <div
-        className="c10 PopOver__StyledTooltipContent-sc-1u1gooh-1"
       >
-        <span
-          className="Typography__Span-sc-10mju41-0 c11"
+        <div
+          className="c10 PopOver__StyledTooltipContent-sc-1u1gooh-1"
         >
-          <div
-            className="c12"
+          <span
+            className="Typography__Span-sc-10mju41-0 c11"
           >
             <div
-              className="c13"
+              className="c12"
             >
-              <span
-                className="Typography__Span-sc-10mju41-0 c14"
-              >
-                Different Positions - Bottom
-              </span>
-              <button
-                className="c15 c16 c17"
-                onClick={[Function]}
-                type="button"
+              <div
+                className="c13"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c18"
+                  className="Typography__Span-sc-10mju41-0 c14"
                 >
-                  <svg
-                    aria-hidden="false"
-                    className="c19 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="img"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
-                      fillRule="evenodd"
-                    />
-                    <title>
-                      Close by clicking X
-                    </title>
-                  </svg>
+                  Different Positions - Bottom
                 </span>
-              </button>
-            </div>
-            <div
-              className="c20"
-            >
-              <span
-                className="Typography__Span-sc-10mju41-0 c21"
+                <button
+                  className="c15 c16 c17"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span
+                    className="Typography__Span-sc-10mju41-0 c18"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      className="c19 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="img"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                        fillRule="evenodd"
+                      />
+                      <title>
+                        Close by clicking X
+                      </title>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div
+                className="c20"
               >
-                This tooltip is positioned on the bottom
-              </span>
+                <span
+                  className="Typography__Span-sc-10mju41-0 c21"
+                >
+                  This tooltip is positioned on the bottom
+                </span>
+              </div>
             </div>
-          </div>
-        </span>
-      </div>
-    </span>
+          </span>
+        </div>
+      </span>
+    </portal-dummy>
   </div>,
   .c0 {
   margin-bottom: 160px;
@@ -2386,74 +2396,76 @@ Array [
         </span>
       </label>
     </div>
-    <span
-      className="c9 "
-      id="nn-persistent-tooltip-28"
-      style={
-        Object {
-          "left": "0",
-          "position": "absolute",
-          "top": "0",
+    <portal-dummy>
+      <span
+        className="c9 "
+        id="nn-persistent-tooltip-28"
+        style={
+          Object {
+            "left": "0",
+            "position": "absolute",
+            "top": "0",
+          }
         }
-      }
-    >
-      <div
-        className="c10 PopOver__StyledTooltipContent-sc-1u1gooh-1"
       >
-        <span
-          className="Typography__Span-sc-10mju41-0 c11"
+        <div
+          className="c10 PopOver__StyledTooltipContent-sc-1u1gooh-1"
         >
-          <div
-            className="c12"
+          <span
+            className="Typography__Span-sc-10mju41-0 c11"
           >
             <div
-              className="c13"
+              className="c12"
             >
-              <span
-                className="Typography__Span-sc-10mju41-0 c14"
-              >
-                Different Positions - Left
-              </span>
-              <button
-                className="c15 c16 c17"
-                onClick={[Function]}
-                type="button"
+              <div
+                className="c13"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c18"
+                  className="Typography__Span-sc-10mju41-0 c14"
                 >
-                  <svg
-                    aria-hidden="false"
-                    className="c19 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="img"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
-                      fillRule="evenodd"
-                    />
-                    <title>
-                      Close by clicking X
-                    </title>
-                  </svg>
+                  Different Positions - Left
                 </span>
-              </button>
-            </div>
-            <div
-              className="c20"
-            >
-              <span
-                className="Typography__Span-sc-10mju41-0 c21"
+                <button
+                  className="c15 c16 c17"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span
+                    className="Typography__Span-sc-10mju41-0 c18"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      className="c19 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="img"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                        fillRule="evenodd"
+                      />
+                      <title>
+                        Close by clicking X
+                      </title>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div
+                className="c20"
               >
-                This tooltip is positioned on the left, as you can see it's still positioned on the right. This is because it's dynamically repositioned. It does not fit  on left side of target.
-              </span>
+                <span
+                  className="Typography__Span-sc-10mju41-0 c21"
+                >
+                  This tooltip is positioned on the left, as you can see it's still positioned on the right. This is because it's dynamically repositioned. It does not fit  on left side of target.
+                </span>
+              </div>
             </div>
-          </div>
-        </span>
-      </div>
-    </span>
+          </span>
+        </div>
+      </span>
+    </portal-dummy>
   </div>,
   .c0 {
   margin-bottom: 160px;
@@ -2787,74 +2799,76 @@ Array [
         </span>
       </label>
     </div>
-    <span
-      className="c9 "
-      id="nn-persistent-tooltip-29"
-      style={
-        Object {
-          "left": "0",
-          "position": "absolute",
-          "top": "0",
+    <portal-dummy>
+      <span
+        className="c9 "
+        id="nn-persistent-tooltip-29"
+        style={
+          Object {
+            "left": "0",
+            "position": "absolute",
+            "top": "0",
+          }
         }
-      }
-    >
-      <div
-        className="c10 PopOver__StyledTooltipContent-sc-1u1gooh-1"
       >
-        <span
-          className="Typography__Span-sc-10mju41-0 c11"
+        <div
+          className="c10 PopOver__StyledTooltipContent-sc-1u1gooh-1"
         >
-          <div
-            className="c12"
+          <span
+            className="Typography__Span-sc-10mju41-0 c11"
           >
             <div
-              className="c13"
+              className="c12"
             >
-              <span
-                className="Typography__Span-sc-10mju41-0 c14"
-              >
-                Different Positions - Top
-              </span>
-              <button
-                className="c15 c16 c17"
-                onClick={[Function]}
-                type="button"
+              <div
+                className="c13"
               >
                 <span
-                  className="Typography__Span-sc-10mju41-0 c18"
+                  className="Typography__Span-sc-10mju41-0 c14"
                 >
-                  <svg
-                    aria-hidden="false"
-                    className="c19 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="img"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
-                      fillRule="evenodd"
-                    />
-                    <title>
-                      Close by clicking X
-                    </title>
-                  </svg>
+                  Different Positions - Top
                 </span>
-              </button>
-            </div>
-            <div
-              className="c20"
-            >
-              <span
-                className="Typography__Span-sc-10mju41-0 c21"
+                <button
+                  className="c15 c16 c17"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span
+                    className="Typography__Span-sc-10mju41-0 c18"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      className="c19 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="img"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                        fillRule="evenodd"
+                      />
+                      <title>
+                        Close by clicking X
+                      </title>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div
+                className="c20"
               >
-                This tooltip is positioned on the top
-              </span>
+                <span
+                  className="Typography__Span-sc-10mju41-0 c21"
+                >
+                  This tooltip is positioned on the top
+                </span>
+              </div>
             </div>
-          </div>
-        </span>
-      </div>
-    </span>
+          </span>
+        </div>
+      </span>
+    </portal-dummy>
   </div>,
 ]
 `;
@@ -4044,70 +4058,72 @@ Array [
   }
 }
 
-<span
-    className="c0 "
-    id="nn-persistent-tooltip-32"
-    style={
-      Object {
-        "left": "0",
-        "position": "absolute",
-        "top": "0",
+<portal-dummy>
+    <span
+      className="c0 "
+      id="nn-persistent-tooltip-32"
+      style={
+        Object {
+          "left": "0",
+          "position": "absolute",
+          "top": "0",
+        }
       }
-    }
-  >
-    <div
-      className="c1 PopOver__StyledTooltipContent-sc-1u1gooh-1"
     >
-      <span
-        className="Typography__Span-sc-10mju41-0 c2"
+      <div
+        className="c1 PopOver__StyledTooltipContent-sc-1u1gooh-1"
       >
-        <div
-          className="c3"
+        <span
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           <div
-            className="c4"
+            className="c3"
           >
-            <span
-              className="Typography__Span-sc-10mju41-0 c5"
-            >
-              I'm in a box
-            </span>
-            <button
-              className="c6 c7 c8"
-              onClick={[Function]}
-              type="button"
+            <div
+              className="c4"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c9"
+                className="Typography__Span-sc-10mju41-0 c5"
               >
-                <svg
-                  aria-hidden="false"
-                  className="c10 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="img"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
-                    fillRule="evenodd"
-                  />
-                  <title>
-                    Close by clicking X
-                  </title>
-                </svg>
+                I'm in a box
               </span>
-            </button>
+              <button
+                className="c6 c7 c8"
+                onClick={[Function]}
+                type="button"
+              >
+                <span
+                  className="Typography__Span-sc-10mju41-0 c9"
+                >
+                  <svg
+                    aria-hidden="false"
+                    className="c10 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="img"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                      fillRule="evenodd"
+                    />
+                    <title>
+                      Close by clicking X
+                    </title>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <span
+              className="Typography__Span-sc-10mju41-0 c11"
+            >
+              The max width is set with a prop for this tooltip. Also, it's subcomponents styled – different color, smaller close button.
+            </span>
           </div>
-          <span
-            className="Typography__Span-sc-10mju41-0 c11"
-          >
-            The max width is set with a prop for this tooltip. Also, it's subcomponents styled – different color, smaller close button.
-          </span>
-        </div>
-      </span>
-    </div>
-  </span>,
+        </span>
+      </div>
+    </span>
+  </portal-dummy>,
 ]
 `;
 
@@ -4471,74 +4487,76 @@ Array [
 
 }
 
-<span
-    className="c0 "
-    id="nn-persistent-tooltip-23"
-    style={
-      Object {
-        "left": "0",
-        "position": "absolute",
-        "top": "0",
+<portal-dummy>
+    <span
+      className="c0 "
+      id="nn-persistent-tooltip-23"
+      style={
+        Object {
+          "left": "0",
+          "position": "absolute",
+          "top": "0",
+        }
       }
-    }
-  >
-    <div
-      className="c1 PopOver__StyledTooltipContent-sc-1u1gooh-1"
     >
-      <span
-        className="Typography__Span-sc-10mju41-0 c2"
+      <div
+        className="c1 PopOver__StyledTooltipContent-sc-1u1gooh-1"
       >
-        <div
-          className="c3"
+        <span
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           <div
-            className="c4"
+            className="c3"
           >
-            <span
-              className="Typography__Span-sc-10mju41-0 c5"
-            >
-              Persistent tooltip with Max Width
-            </span>
-            <button
-              className="c6 c7 c8"
-              onClick={[Function]}
-              type="button"
+            <div
+              className="c4"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c9"
+                className="Typography__Span-sc-10mju41-0 c5"
               >
-                <svg
-                  aria-hidden="false"
-                  className="c10 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="img"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
-                    fillRule="evenodd"
-                  />
-                  <title>
-                    Close by clicking X
-                  </title>
-                </svg>
+                Persistent tooltip with Max Width
               </span>
-            </button>
-          </div>
-          <div
-            className="c11"
-          >
-            <span
-              className="Typography__Span-sc-10mju41-0 c12"
+              <button
+                className="c6 c7 c8"
+                onClick={[Function]}
+                type="button"
+              >
+                <span
+                  className="Typography__Span-sc-10mju41-0 c9"
+                >
+                  <svg
+                    aria-hidden="false"
+                    className="c10 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="img"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                      fillRule="evenodd"
+                    />
+                    <title>
+                      Close by clicking X
+                    </title>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div
+              className="c11"
             >
-              The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
-            </span>
+              <span
+                className="Typography__Span-sc-10mju41-0 c12"
+              >
+                The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
+              </span>
+            </div>
           </div>
-        </div>
-      </span>
-    </div>
-  </span>,
+        </span>
+      </div>
+    </span>
+  </portal-dummy>,
 ]
 `;
 
@@ -4901,74 +4919,76 @@ Array [
 
 }
 
-<span
-    className="c0 "
-    id="nn-persistent-tooltip-24"
-    style={
-      Object {
-        "left": "0",
-        "position": "absolute",
-        "top": "0",
+<portal-dummy>
+    <span
+      className="c0 "
+      id="nn-persistent-tooltip-24"
+      style={
+        Object {
+          "left": "0",
+          "position": "absolute",
+          "top": "0",
+        }
       }
-    }
-  >
-    <div
-      className="c1 PopOver__StyledTooltipContent-sc-1u1gooh-1"
     >
-      <span
-        className="Typography__Span-sc-10mju41-0 c2"
+      <div
+        className="c1 PopOver__StyledTooltipContent-sc-1u1gooh-1"
       >
-        <div
-          className="c3"
+        <span
+          className="Typography__Span-sc-10mju41-0 c2"
         >
           <div
-            className="c4"
+            className="c3"
           >
-            <span
-              className="Typography__Span-sc-10mju41-0 c5"
-            >
-              Persistent tooltip with max width auto
-            </span>
-            <button
-              className="c6 c7 c8"
-              onClick={[Function]}
-              type="button"
+            <div
+              className="c4"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c9"
+                className="Typography__Span-sc-10mju41-0 c5"
               >
-                <svg
-                  aria-hidden="false"
-                  className="c10 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="img"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
-                    fillRule="evenodd"
-                  />
-                  <title>
-                    Close by clicking X
-                  </title>
-                </svg>
+                Persistent tooltip with max width auto
               </span>
-            </button>
-          </div>
-          <div
-            className="c11"
-          >
-            <span
-              className="Typography__Span-sc-10mju41-0 c12"
+              <button
+                className="c6 c7 c8"
+                onClick={[Function]}
+                type="button"
+              >
+                <span
+                  className="Typography__Span-sc-10mju41-0 c9"
+                >
+                  <svg
+                    aria-hidden="false"
+                    className="c10 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="img"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                      fillRule="evenodd"
+                    />
+                    <title>
+                      Close by clicking X
+                    </title>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div
+              className="c11"
             >
-              Observe that the width might get very long. The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
-            </span>
+              <span
+                className="Typography__Span-sc-10mju41-0 c12"
+              >
+                Observe that the width might get very long. The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
+              </span>
+            </div>
           </div>
-        </div>
-      </span>
-    </div>
-  </span>,
+        </span>
+      </div>
+    </span>
+  </portal-dummy>,
 ]
 `;
 
@@ -5220,74 +5240,76 @@ Array [
           />
         </svg>
       </span>
-      <span
-        className="c3 "
-        id="nn-persistent-tooltip-33"
-        style={
-          Object {
-            "left": "0",
-            "position": "absolute",
-            "top": "0",
+      <portal-dummy>
+        <span
+          className="c3 "
+          id="nn-persistent-tooltip-33"
+          style={
+            Object {
+              "left": "0",
+              "position": "absolute",
+              "top": "0",
+            }
           }
-        }
-      >
-        <div
-          className="c4 PopOver__StyledTooltipContent-sc-1u1gooh-1"
         >
-          <span
-            className="Typography__Span-sc-10mju41-0 c5"
+          <div
+            className="c4 PopOver__StyledTooltipContent-sc-1u1gooh-1"
           >
-            <div
-              className="c6"
+            <span
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               <div
-                className="c7"
+                className="c6"
               >
-                <span
-                  className="Typography__Span-sc-10mju41-0 c8"
-                >
-                  With wrapchild prop
-                </span>
-                <button
-                  className="c9 c10 c11"
-                  onClick={[Function]}
-                  type="button"
+                <div
+                  className="c7"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c12"
+                    className="Typography__Span-sc-10mju41-0 c8"
                   >
-                    <svg
-                      aria-hidden="false"
-                      className="c13 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
-                      focusable="false"
-                      preserveAspectRatio="xMidYMid meet"
-                      role="img"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
-                        fillRule="evenodd"
-                      />
-                      <title>
-                        Close by clicking X
-                      </title>
-                    </svg>
+                    With wrapchild prop
                   </span>
-                </button>
-              </div>
-              <div
-                className="c14"
-              >
-                <span
-                  className="Typography__Span-sc-10mju41-0 c15"
+                  <button
+                    className="c9 c10 c11"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="Typography__Span-sc-10mju41-0 c12"
+                    >
+                      <svg
+                        aria-hidden="false"
+                        className="c13 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                        focusable="false"
+                        preserveAspectRatio="xMidYMid meet"
+                        role="img"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                          fillRule="evenodd"
+                        />
+                        <title>
+                          Close by clicking X
+                        </title>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div
+                  className="c14"
                 >
-                  With the wrapChiild prop, a DOM element of type span wraps the children, this guarantees a element in the DOM to work properly with ref (and thus positioning).
-                </span>
+                  <span
+                    className="Typography__Span-sc-10mju41-0 c15"
+                  >
+                    With the wrapChiild prop, a DOM element of type span wraps the children, this guarantees a element in the DOM to work properly with ref (and thus positioning).
+                  </span>
+                </div>
               </div>
-            </div>
-          </span>
-        </div>
-      </span>
+            </span>
+          </div>
+        </span>
+      </portal-dummy>
     </div>
   </div>,
   .c6 {
@@ -5506,74 +5528,76 @@ Array [
           />
         </svg>
       </div>
-      <span
-        className="c3 "
-        id="nn-persistent-tooltip-34"
-        style={
-          Object {
-            "left": "0",
-            "position": "absolute",
-            "top": "0",
+      <portal-dummy>
+        <span
+          className="c3 "
+          id="nn-persistent-tooltip-34"
+          style={
+            Object {
+              "left": "0",
+              "position": "absolute",
+              "top": "0",
+            }
           }
-        }
-      >
-        <div
-          className="c4 PopOver__StyledTooltipContent-sc-1u1gooh-1"
         >
-          <span
-            className="Typography__Span-sc-10mju41-0 c5"
+          <div
+            className="c4 PopOver__StyledTooltipContent-sc-1u1gooh-1"
           >
-            <div
-              className="c6"
+            <span
+              className="Typography__Span-sc-10mju41-0 c5"
             >
               <div
-                className="c7"
+                className="c6"
               >
-                <span
-                  className="Typography__Span-sc-10mju41-0 c8"
-                >
-                  With a proper DOM-node as children
-                </span>
-                <button
-                  className="c9 c10 c11"
-                  onClick={[Function]}
-                  type="button"
+                <div
+                  className="c7"
                 >
                   <span
-                    className="Typography__Span-sc-10mju41-0 c12"
+                    className="Typography__Span-sc-10mju41-0 c8"
                   >
-                    <svg
-                      aria-hidden="false"
-                      className="c13 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
-                      focusable="false"
-                      preserveAspectRatio="xMidYMid meet"
-                      role="img"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
-                        fillRule="evenodd"
-                      />
-                      <title>
-                        Close by clicking X
-                      </title>
-                    </svg>
+                    With a proper DOM-node as children
                   </span>
-                </button>
-              </div>
-              <div
-                className="c14"
-              >
-                <span
-                  className="Typography__Span-sc-10mju41-0 c15"
+                  <button
+                    className="c9 c10 c11"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="Typography__Span-sc-10mju41-0 c12"
+                    >
+                      <svg
+                        aria-hidden="false"
+                        className="c13 PersistentTooltip__StyledCrossIcon-sc-d2sd19-2"
+                        focusable="false"
+                        preserveAspectRatio="xMidYMid meet"
+                        role="img"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                          fillRule="evenodd"
+                        />
+                        <title>
+                          Close by clicking X
+                        </title>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div
+                  className="c14"
                 >
-                  This tooltip doesn't use the wrapChild prop, but has a children that correctly handles refs.
-                </span>
+                  <span
+                    className="Typography__Span-sc-10mju41-0 c15"
+                  >
+                    This tooltip doesn't use the wrapChild prop, but has a children that correctly handles refs.
+                  </span>
+                </div>
               </div>
-            </div>
-          </span>
-        </div>
-      </span>
+            </span>
+          </div>
+        </span>
+      </portal-dummy>
     </div>
   </div>,
 ]

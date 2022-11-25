@@ -81,7 +81,7 @@ export const withPosition = () => (
     items={[
       {
         component: (
-          <Tooltip label={label} position="bottom" withPortal={false}>
+          <Tooltip label={label} position="bottom">
             <Button type="button">Hover me</Button>
           </Tooltip>
         ),
@@ -364,19 +364,21 @@ const OverflowBox = styled(Box)`
   border: 5px solid red;
 `;
 
-export const NoPortal = () => {
+export const CustomBoundary = () => {
+  const [boundaryElement, setBoundaryElement] = useState();
+
   return (
-    <OverflowBox pt={40} pb={0}>
+    <OverflowBox pt={40} pb={0} ref={setBoundaryElement as any}>
       this is the bounding box
       <Flexbox container alignItems="center" justifyContent="space-around">
         <Tooltip
           label="This tooltip is positioned bottom but it flips to the top because when there's no portal we have better control over what the container is."
           position="bottom"
-          withPortal={false}
           pointerEvents
           pointerArrow={false}
+          customBoundary={boundaryElement}
         >
-          <span>No portal</span>
+          <span>custom boundary</span>
         </Tooltip>
         <Tooltip
           label={

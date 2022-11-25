@@ -57,20 +57,37 @@ const PopOver: React.FC<Props> & {
   backgroundColor: backgroundColorProp,
   borderColor: borderColorProp,
   pointerArrow,
-  withPortal,
   handleMouseEnter,
   handleMouseLeave,
+  customBoundary,
   ...htmlSpanProps
 }) => {
   const [popperElement, setPopperElement] = useState(null);
   const [arrowElement, setArrowElement] = useState(null);
 
   const offsetModifier = offset ? [{ name: 'offset', options: { offset } }] : [];
+  const preventOverflowMod = customBoundary
+    ? [
+        {
+          name: 'flip',
+          options: { boundary: customBoundary },
+        },
+      ]
+    : [];
 
   /* We're using Popper.js for convenient tooltip placement. */
   const ref = useRef() as MutableRefObject<HTMLElement>;
   const popper = usePopper(triggerElement, popperElement, {
-    modifiers: [{ name: 'arrow', options: { element: arrowElement } }, ...offsetModifier],
+    modifiers: [
+      {
+        name: 'arrow',
+        options: {
+          element: arrowElement,
+        },
+      },
+      ...preventOverflowMod,
+      ...offsetModifier,
+    ],
     placement: position,
   });
 
@@ -102,40 +119,37 @@ const PopOver: React.FC<Props> & {
     };
   }, [ref, pointerEvents, handleMouseEnter, handleMouseLeave]);
 
-  const content = (
-    <StyledSpan
-      className={className}
-      id={id}
-      ref={mergeRefs([setPopperElement, ref])}
-      $inModal={inModal}
-      style={styles.popper}
-      $pointerEvents={pointerEvents}
-      {...htmlSpanProps}
-      {...attributes.popper}
-    >
-      {pointerArrow && (
-        <TooltipArrow
-          ref={setArrowElement as any}
-          position={state?.placement as any}
-          style={styles.arrow}
+  return (
+    <Portal>
+      <StyledSpan
+        className={className}
+        id={id}
+        ref={mergeRefs([setPopperElement, ref])}
+        $inModal={inModal}
+        style={styles.popper}
+        $pointerEvents={pointerEvents}
+        {...htmlSpanProps}
+        {...attributes.popper}
+      >
+        {pointerArrow && (
+          <TooltipArrow
+            ref={setArrowElement as any}
+            position={state?.placement as any}
+            style={styles.arrow}
+            backgroundColor={backgroundColor}
+            borderColor={borderColor}
+          />
+        )}
+        <StyledTooltipContent
+          label={label}
+          ariaLabel={ariaLabel}
+          maxWidth={maxWidth}
           backgroundColor={backgroundColor}
           borderColor={borderColor}
         />
-      )}
-      <StyledTooltipContent
-        label={label}
-        ariaLabel={ariaLabel}
-        maxWidth={maxWidth}
-        backgroundColor={backgroundColor}
-        borderColor={borderColor}
-      />
-    </StyledSpan>
+      </StyledSpan>
+    </Portal>
   );
-
-  if (withPortal) {
-    return <Portal>{content}</Portal>;
-  }
-  return content;
 };
 
 PopOver.components = components;
