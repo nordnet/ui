@@ -1,3 +1,20 @@
+# [12.0.0-beta.11](https://github.com/nordnet/ui/compare/v12.0.0-beta.10...v12.0.0-beta.11) (2022-11-25)
+
+
+### Bug Fixes
+
+* 🐛 adjust close button on mobile ([e5b6a8f](https://github.com/nordnet/ui/commit/e5b6a8f))
+* 🐛 change md to sm ([4a464e9](https://github.com/nordnet/ui/commit/4a464e9))
+* 🐛 typo for noCloseAndBack ([8e9a7fa](https://github.com/nordnet/ui/commit/8e9a7fa))
+* 🐛 update button min-width to be button max-content ([c753cc6](https://github.com/nordnet/ui/commit/c753cc6))
+* 🐛 use sticky modal on mobile for coachmarks ([1d00a7f](https://github.com/nordnet/ui/commit/1d00a7f))
+
+
+### Features
+
+* 🎸 Add support for only infoCallback ([5a954c5](https://github.com/nordnet/ui/commit/5a954c5))
+* allow custom height on star rating wrapper ([1deeb57](https://github.com/nordnet/ui/commit/1deeb57))
+
 # [12.0.0-beta.10](https://github.com/nordnet/ui/compare/v12.0.0-beta.9...v12.0.0-beta.10) (2022-11-22)
 # [11.19.0](https://github.com/nordnet/ui/compare/v11.18.0...v11.19.0) (2022-11-24)
 
