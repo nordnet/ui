@@ -359,27 +359,31 @@ export const WithOffsetAsAFunction = () => (
 );
 
 const OverflowBox = styled(Box)`
-  overflow: hidden;
-  position: relative;
   border: 5px solid red;
+  height: 50vh;
+  width: 400px;
+  overflow: scroll;
 `;
 
 export const CustomBoundary = () => {
   const [boundaryElement, setBoundaryElement] = useState();
 
   return (
-    <OverflowBox pt={40} pb={0} ref={setBoundaryElement as any}>
-      this is the bounding box
-      <Flexbox container alignItems="center" justifyContent="space-around">
+    <Flexbox container alignItems="center" justifyContent="space-around">
+      <OverflowBox pb={40} pt={0} my={40} ref={setBoundaryElement as any}>
+        <div style={{ height: '80vh', background: 'orange' }} />
         <Tooltip
           label="This tooltip is positioned bottom but it flips to the top because when there's no portal we have better control over what the container is."
-          position="bottom"
+          position="top"
           pointerEvents
           pointerArrow={false}
           customBoundary={boundaryElement}
         >
           <span>custom boundary</span>
         </Tooltip>
+        <div style={{ height: '80vh', background: 'orange' }} />
+      </OverflowBox>
+      <OverflowBox pb={40} pt={0}>
         <Tooltip
           label={
             <span>
@@ -387,14 +391,14 @@ export const CustomBoundary = () => {
               when outside the border of the page
             </span>
           }
-          position="bottom"
+          position="top"
           pointerEvents
           pointerArrow={false}
         >
           <span>Default with portal</span>
         </Tooltip>
-      </Flexbox>
-    </OverflowBox>
+      </OverflowBox>
+    </Flexbox>
   );
 };
 
