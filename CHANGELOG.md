@@ -1,3 +1,10 @@
+# [11.20.0](https://github.com/nordnet/ui/compare/v11.19.0...v11.20.0) (2022-11-25)
+
+
+### Features
+
+* allow custom boundary element, integrate with portal stuff ([afd9f26](https://github.com/nordnet/ui/commit/afd9f26))
+
 # [11.19.0](https://github.com/nordnet/ui/compare/v11.18.0...v11.19.0) (2022-11-24)
 
 
