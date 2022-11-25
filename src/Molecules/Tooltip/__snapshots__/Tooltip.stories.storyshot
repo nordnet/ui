@@ -303,6 +303,68 @@ Array [
 ]
 `;
 
+exports[`Storyshots Molecules / Tooltip Custom Boundary 1`] = `
+.c0 {
+  padding-top: 160px;
+  padding-bottom: 0px;
+  background-color: transparent;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  overflow: hidden;
+  position: relative;
+  border: 5px solid red;
+}
+
+<div
+  className="c0 c1"
+>
+  this is the bounding box
+  <div
+    className="c2"
+  >
+    <span
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+    >
+      custom boundary
+    </span>
+    <span
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+    >
+      Default with portal
+    </span>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules / Tooltip Custom max-width 1`] = `
 .c0 {
   display: block;
@@ -676,68 +738,6 @@ exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] =
     tabIndex={0}
   />
 </portal-dummy>
-`;
-
-exports[`Storyshots Molecules / Tooltip No Portal 1`] = `
-.c0 {
-  padding-top: 160px;
-  padding-bottom: 0px;
-  background-color: transparent;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  overflow: hidden;
-  position: relative;
-  border: 5px solid red;
-}
-
-<div
-  className="c0 c1"
->
-  this is the bounding box
-  <div
-    className="c2"
-  >
-    <span
-      onBlur={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      onMouseDown={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      onMouseMove={[Function]}
-    >
-      No portal
-    </span>
-    <span
-      onBlur={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      onMouseDown={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      onMouseMove={[Function]}
-    >
-      Default with portal
-    </span>
-  </div>
-</div>
 `;
 
 exports[`Storyshots Molecules / Tooltip Styled Pop Over 1`] = `

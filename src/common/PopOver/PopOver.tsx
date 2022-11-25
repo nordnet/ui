@@ -57,20 +57,37 @@ const PopOver: React.FC<Props> & {
   backgroundColor: backgroundColorProp,
   borderColor: borderColorProp,
   pointerArrow,
-  withPortal,
   handleMouseEnter,
   handleMouseLeave,
+  customBoundary,
   ...htmlSpanProps
 }) => {
   const [popperElement, setPopperElement] = useState(null);
   const [arrowElement, setArrowElement] = useState(null);
 
   const offsetModifier = offset ? [{ name: 'offset', options: { offset } }] : [];
+  const preventOverflowMod = customBoundary
+    ? [
+        {
+          name: 'preventOverflow',
+          options: { boundary: customBoundary },
+        },
+      ]
+    : [];
 
   /* We're using Popper.js for convenient tooltip placement. */
   const ref = useRef() as MutableRefObject<HTMLElement>;
   const popper = usePopper(triggerElement, popperElement, {
-    modifiers: [{ name: 'arrow', options: { element: arrowElement } }, ...offsetModifier],
+    modifiers: [
+      {
+        name: 'arrow',
+        options: {
+          element: arrowElement,
+        },
+      },
+      ...preventOverflowMod,
+      ...offsetModifier,
+    ],
     placement: position,
   });
 
@@ -132,7 +149,7 @@ const PopOver: React.FC<Props> & {
     </StyledSpan>
   );
 
-  if (withPortal) {
+  if (!customBoundary) {
     return <Portal>{content}</Portal>;
   }
   return content;
