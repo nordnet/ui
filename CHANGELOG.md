@@ -1,3 +1,11 @@
+# [12.0.0-beta.12](https://github.com/nordnet/ui/compare/v12.0.0-beta.11...v12.0.0-beta.12) (2022-11-25)
+
+
+### Features
+
+* allow custom boundary element, integrate with portal stuff ([afd9f26](https://github.com/nordnet/ui/commit/afd9f26))
+* use flip modifier, and always portal ([e6afee2](https://github.com/nordnet/ui/commit/e6afee2))
+
 # [12.0.0-beta.11](https://github.com/nordnet/ui/compare/v12.0.0-beta.10...v12.0.0-beta.11) (2022-11-25)
 
 # [11.21.0](https://github.com/nordnet/ui/compare/v11.20.0...v11.21.0) (2022-11-25)
