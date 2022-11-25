@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { usePopper } from 'react-popper';
 import FocusLock from 'react-focus-lock';
-import { Button, Flexbox, Icon, Typography } from '../..';
+import { Button, Flexbox, Icon, Modal, Typography, useMedia } from '../..';
 import { ColsTrimmerProps, Component } from './CoachMarks.types';
 import { makeBackdropPath } from './utils';
 import { useOnClickOutside, useWindowSize, useSafeLayoutEffect } from '../../common/Hooks';
@@ -51,6 +51,12 @@ const CloseButton = styled(Button)`
   right: ${(p) => p.theme.spacing.unit(5)}px;
 `;
 
+const CloseButtonMobile = styled(Button)`
+  position: absolute;
+  top: ${(p) => p.theme.spacing.unit(5)}px;
+  right: ${(p) => p.theme.spacing.unit(3)}px;
+`;
+
 const useScrollPosition = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -81,6 +87,8 @@ export const CoachMarks: Component = ({
 }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
+  const isSmallScreen = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
+
   const {
     body,
     content,
@@ -127,7 +135,7 @@ export const CoachMarks: Component = ({
     }
   }, [referenceElement, windowSize, scrollPosition]);
 
-  const handleStepBackwards = () => {
+  const handleStepBackwards = useCallback(() => {
     if (hasPrevStep) {
       setCurrentStep(currentStep - 1);
     }
@@ -135,9 +143,9 @@ export const CoachMarks: Component = ({
     if (onPrev) {
       onPrev(currentStep);
     }
-  };
+  }, [currentStep, hasPrevStep, onPrev]);
 
-  const handleStepForward = () => {
+  const handleStepForward = useCallback(() => {
     if (hasNextStep) {
       setCurrentStep(currentStep + 1);
     }
@@ -145,13 +153,13 @@ export const CoachMarks: Component = ({
     if (onNext) {
       onNext(currentStep);
     }
-  };
+  }, [currentStep, hasNextStep, onNext]);
 
-  const handleDone = () => {
+  const handleDone = useCallback(() => {
     if (onDone) {
       onDone();
     }
-  };
+  }, [onDone]);
 
   const handleClose = () => {
     if (onClose) {
@@ -165,80 +173,154 @@ export const CoachMarks: Component = ({
     }
   });
 
-  return referenceElementRect ? (
-    <FocusLock>
-      <Bubble
-        ref={setPopperElement}
-        style={styles.popper}
-        {...attributes.popper}
-        barColor={barColor}
-      >
-        <BubbleArrow ref={setArrowElement} style={styles.arrow} bubblePlacement={placement} />
-        <Flexbox container item direction="column" flex="1" gutter={5} ref={internalCoachMarkRef}>
-          {body || (
-            <Flexbox container direction="column" gutter={1}>
-              {icon && <IconFlex item>{icon}</IconFlex>}
-              {title && (
-                <Flexbox item>
-                  <TitleWrapper $hasIcon={Boolean(icon)}>
-                    <Typography as="h2" type="primary" weight="bold">
-                      {title}
-                    </Typography>
-                  </TitleWrapper>
-                </Flexbox>
-              )}
-              {content && (
-                <Flexbox item>
-                  <Content>
-                    {typeof content === 'string' ? (
-                      <Typography as="p" type="secondary" color="inherit">
-                        {content}
-                      </Typography>
-                    ) : (
-                      content
-                    )}
-                  </Content>
-                </Flexbox>
-              )}
+  const footer = useCallback(() => {
+    return (
+      <FooterFlex container item alignItems="baseline" gutter={5}>
+        {hasMultipleSteps && (
+          <Flexbox item>
+            <Typography type="secondary" color={(t) => t.color.bubbleSecondaryText}>
+              {`${currentStep + 1} ${multiStepIndicatorText} ${steps.length}`}
+            </Typography>
+          </Flexbox>
+        )}
+        <NavigationButtonsContainer container gutter={1} $hasSingleButton={!hasPrevStep}>
+          {hasPrevStep && (
+            <Flexbox item flex="1 0 50%">
+              <Button variant="secondary" onClick={handleStepBackwards} fullWidth>
+                {prevText}
+              </Button>
             </Flexbox>
           )}
-          <FooterFlex container item alignItems="baseline" gutter={5}>
-            {hasMultipleSteps && (
-              <Flexbox item>
-                <Typography type="secondary" color={(t) => t.color.bubbleSecondaryText}>
-                  {`${currentStep + 1} ${multiStepIndicatorText} ${steps.length}`}
-                </Typography>
-              </Flexbox>
+          <Flexbox item flex="1 0 50%">
+            {hasNextStep ? (
+              <Button variant="primary" onClick={handleStepForward} fullWidth>
+                {nextText}
+              </Button>
+            ) : (
+              <Button variant="primary" onClick={handleDone} fullWidth>
+                {doneText}
+              </Button>
             )}
-            <NavigationButtonsContainer container gutter={1} $hasSingleButton={!hasPrevStep}>
-              {hasPrevStep && (
-                <Flexbox item flex="1 0 50%">
-                  <Button variant="secondary" onClick={handleStepBackwards} fullWidth>
-                    {prevText}
-                  </Button>
-                </Flexbox>
-              )}
-              <Flexbox item flex="1 0 50%">
-                {hasNextStep ? (
-                  <Button variant="primary" onClick={handleStepForward} fullWidth>
-                    {nextText}
-                  </Button>
-                ) : (
-                  <Button variant="primary" onClick={handleDone} fullWidth>
-                    {doneText}
-                  </Button>
+          </Flexbox>
+        </NavigationButtonsContainer>
+      </FooterFlex>
+    );
+  }, [
+    currentStep,
+    doneText,
+    handleDone,
+    handleStepBackwards,
+    handleStepForward,
+    hasMultipleSteps,
+    hasNextStep,
+    hasPrevStep,
+    multiStepIndicatorText,
+    nextText,
+    prevText,
+    steps.length,
+  ]);
+
+  if (isSmallScreen && referenceElementRect) {
+    return (
+      <>
+        <Modal
+          title={
+            <>
+              <Flexbox container direction="column">
+                {icon && <IconFlex item>{icon}</IconFlex>}
+                {title && (
+                  <Typography as="h2" type="primary" weight="bold">
+                    {title}
+                  </Typography>
                 )}
               </Flexbox>
-            </NavigationButtonsContainer>
-          </FooterFlex>
-        </Flexbox>
-        <CloseButton variant="neutral" onClick={handleClose}>
-          <Icon.Cross16 />
-        </CloseButton>
-      </Bubble>
-      <SVG>
-        <path d={path} />
-      </SVG>
-    </FocusLock>
+              <CloseButtonMobile variant="neutral" onClick={handleClose}>
+                <Icon.Cross16 />
+              </CloseButtonMobile>
+            </>
+          }
+          open
+          hideClose
+          fixedBottomMobile
+          showBackdrop={false}
+          fullScreenMobile={false}
+        >
+          <Flexbox container item direction="column" flex="1" gutter={5} ref={internalCoachMarkRef}>
+            {body || (
+              <Flexbox container direction="column" gutter={1}>
+                {content && (
+                  <Flexbox item>
+                    <Content>
+                      {typeof content === 'string' ? (
+                        <Typography as="p" type="secondary" color="inherit">
+                          {content}
+                        </Typography>
+                      ) : (
+                        content
+                      )}
+                    </Content>
+                  </Flexbox>
+                )}
+              </Flexbox>
+            )}
+            {footer()}
+          </Flexbox>
+        </Modal>
+        <SVG>
+          <path d={path} />
+        </SVG>
+      </>
+    );
+  }
+
+  return referenceElementRect ? (
+    <>
+      <FocusLock>
+        <Bubble
+          ref={setPopperElement}
+          style={styles.popper}
+          {...attributes.popper}
+          barColor={barColor}
+        >
+          <BubbleArrow ref={setArrowElement} style={styles.arrow} bubblePlacement={placement} />
+          <Flexbox container item direction="column" flex="1" gutter={5} ref={internalCoachMarkRef}>
+            {body || (
+              <Flexbox container direction="column" gutter={1}>
+                {icon && <IconFlex item>{icon}</IconFlex>}
+                {title && (
+                  <Flexbox item>
+                    <TitleWrapper $hasIcon={Boolean(icon)}>
+                      <Typography as="h2" type="primary" weight="bold">
+                        {title}
+                      </Typography>
+                    </TitleWrapper>
+                  </Flexbox>
+                )}
+                {content && (
+                  <Flexbox item>
+                    <Content>
+                      {typeof content === 'string' ? (
+                        <Typography as="p" type="secondary" color="inherit">
+                          {content}
+                        </Typography>
+                      ) : (
+                        content
+                      )}
+                    </Content>
+                  </Flexbox>
+                )}
+              </Flexbox>
+            )}
+            {footer()}
+          </Flexbox>
+          <CloseButton variant="neutral" onClick={handleClose}>
+            <Icon.Cross16 />
+          </CloseButton>
+        </Bubble>
+        <SVG>
+          <path d={path} />
+        </SVG>
+      </FocusLock>
+    </>
   ) : null;
 };

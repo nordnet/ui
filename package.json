@@ -16,7 +16,7 @@
     "test": "TZ=UTC jest",
     "tdd": "npm run test -- --watch",
     "test-ci": "TZ=UTC jest --coverage --ci && codecov",
-    "dev": "sh scripts/start-storybook.sh",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider sh scripts/start-storybook.sh",
     "lint:js": "eslint --ext=.tsx --ext=.ts src",
     "lint:css": "stylelint './src/**/*.{ts,tsx}'",
     "lint": "yarn run lint:js && yarn run lint:css && tsc",

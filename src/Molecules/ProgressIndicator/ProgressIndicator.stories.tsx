@@ -148,13 +148,13 @@ export const WithButtonInfoAndExitCallback = () => {
     <>
       <ProgressIndicator
         buttonCallback
-        title="Progress flow title"
+        title="Very long Progress flow title text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum ipsum eget neque venenatis"
         numberOfSteps={3}
         currentStep={currentStep}
         infoCallback={() => alert('info callback')}
         closeCallback={() => alert('close callback')}
-        exitText="Save & exit"
-        infoText="info"
+        exitText="Save & exit text"
+        infoText="info button text"
         infoIcon="help"
       />
       <Flexbox container justifyContent="space-around">
@@ -178,6 +178,27 @@ export const WithButtonCallbackNoInfo = () => {
         closeCallback={() => alert('close callback')}
         exitText="Exit"
       />
+      <Flexbox container justifyContent="space-around">
+        <Button onClick={() => setCurrentStep(1)}>1</Button>
+        <Button onClick={() => setCurrentStep(2)}>2</Button>
+        <Button onClick={() => setCurrentStep(3)}>3</Button>
+      </Flexbox>
+    </>
+  );
+};
+
+export const WithButtonInfoNoCallbackNoBackCallback = () => {
+  const [currentStep, setCurrentStep] = useState(2);
+
+  return (
+    <>
+      <ProgressIndicator
+        infoCallback={() => alert('info callback')}
+        title="Progress flow title"
+        numberOfSteps={3}
+        currentStep={currentStep}
+      />
+
       <Flexbox container justifyContent="space-around">
         <Button onClick={() => setCurrentStep(1)}>1</Button>
         <Button onClick={() => setCurrentStep(2)}>2</Button>

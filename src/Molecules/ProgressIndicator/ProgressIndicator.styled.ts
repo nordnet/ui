@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Box } from '../..';
+import { Box, Button } from '../..';
 
 export const CompletionBar = styled.div<{ completion: number; noButtons: boolean }>`
   height: ${(p) => p.theme.spacing.unit(1)}px;
@@ -59,4 +59,8 @@ export const StyledButton = styled.button<{ visible?: boolean; charWidth: number
       transform: rotateX(0deg);
     }
   }
+`;
+
+export const StyledButtonPill = styled(Button.Pill)`
+  min-width: max-content;
 `;
