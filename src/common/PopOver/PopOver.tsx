@@ -69,7 +69,7 @@ const PopOver: React.FC<Props> & {
   const preventOverflowMod = customBoundary
     ? [
         {
-          name: 'preventOverflow',
+          name: 'flip',
           options: { boundary: customBoundary },
         },
       ]
@@ -119,40 +119,37 @@ const PopOver: React.FC<Props> & {
     };
   }, [ref, pointerEvents, handleMouseEnter, handleMouseLeave]);
 
-  const content = (
-    <StyledSpan
-      className={className}
-      id={id}
-      ref={mergeRefs([setPopperElement, ref])}
-      $inModal={inModal}
-      style={styles.popper}
-      $pointerEvents={pointerEvents}
-      {...htmlSpanProps}
-      {...attributes.popper}
-    >
-      {pointerArrow && (
-        <TooltipArrow
-          ref={setArrowElement as any}
-          position={state?.placement as any}
-          style={styles.arrow}
+  return (
+    <Portal>
+      <StyledSpan
+        className={className}
+        id={id}
+        ref={mergeRefs([setPopperElement, ref])}
+        $inModal={inModal}
+        style={styles.popper}
+        $pointerEvents={pointerEvents}
+        {...htmlSpanProps}
+        {...attributes.popper}
+      >
+        {pointerArrow && (
+          <TooltipArrow
+            ref={setArrowElement as any}
+            position={state?.placement as any}
+            style={styles.arrow}
+            backgroundColor={backgroundColor}
+            borderColor={borderColor}
+          />
+        )}
+        <StyledTooltipContent
+          label={label}
+          ariaLabel={ariaLabel}
+          maxWidth={maxWidth}
           backgroundColor={backgroundColor}
           borderColor={borderColor}
         />
-      )}
-      <StyledTooltipContent
-        label={label}
-        ariaLabel={ariaLabel}
-        maxWidth={maxWidth}
-        backgroundColor={backgroundColor}
-        borderColor={borderColor}
-      />
-    </StyledSpan>
+      </StyledSpan>
+    </Portal>
   );
-
-  if (!customBoundary) {
-    return <Portal>{content}</Portal>;
-  }
-  return content;
 };
 
 PopOver.components = components;
