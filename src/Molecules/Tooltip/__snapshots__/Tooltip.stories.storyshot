@@ -304,13 +304,21 @@ Array [
 `;
 
 exports[`Storyshots Molecules / Tooltip Custom Boundary 1`] = `
-.c0 {
-  padding-top: 160px;
-  padding-bottom: 0px;
+.c1 {
+  margin-top: 160px;
+  margin-bottom: 160px;
+  padding-top: 0px;
+  padding-bottom: 160px;
   background-color: transparent;
 }
 
-.c2 {
+.c3 {
+  padding-top: 0px;
+  padding-bottom: 160px;
+  background-color: transparent;
+}
+
+.c0 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -326,19 +334,27 @@ exports[`Storyshots Molecules / Tooltip Custom Boundary 1`] = `
   align-items: center;
 }
 
-.c1 {
-  overflow: hidden;
-  position: relative;
+.c2 {
   border: 5px solid red;
+  height: 50vh;
+  width: 400px;
+  overflow: scroll;
 }
 
 <div
-  className="c0 c1"
+  className="c0"
 >
-  this is the bounding box
   <div
-    className="c2"
+    className="c1 c2"
   >
+    <div
+      style={
+        Object {
+          "background": "orange",
+          "height": "80vh",
+        }
+      }
+    />
     <span
       onBlur={[Function]}
       onFocus={[Function]}
@@ -350,6 +366,18 @@ exports[`Storyshots Molecules / Tooltip Custom Boundary 1`] = `
     >
       custom boundary
     </span>
+    <div
+      style={
+        Object {
+          "background": "orange",
+          "height": "80vh",
+        }
+      }
+    />
+  </div>
+  <div
+    className="c3 c2"
+  >
     <span
       onBlur={[Function]}
       onFocus={[Function]}
