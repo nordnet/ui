@@ -1,3 +1,10 @@
+# [12.0.0-beta.13](https://github.com/nordnet/ui/compare/v12.0.0-beta.12...v12.0.0-beta.13) (2022-11-25)
+
+
+### Bug Fixes
+
+* use both modifiers with better testing ([dca361f](https://github.com/nordnet/ui/commit/dca361f))
+
 # [12.0.0-beta.12](https://github.com/nordnet/ui/compare/v12.0.0-beta.11...v12.0.0-beta.12) (2022-11-25)
 
 # [12.0.0-beta.11](https://github.com/nordnet/ui/compare/v12.0.0-beta.10...v12.0.0-beta.11) (2022-11-25)
