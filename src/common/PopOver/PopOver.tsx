@@ -66,7 +66,16 @@ const PopOver: React.FC<Props> & {
   const [arrowElement, setArrowElement] = useState(null);
 
   const offsetModifier = offset ? [{ name: 'offset', options: { offset } }] : [];
+
   const preventOverflowMod = customBoundary
+    ? [
+        {
+          name: 'preventOverflow',
+          options: { boundary: customBoundary },
+        },
+      ]
+    : [];
+  const flipMod = customBoundary
     ? [
         {
           name: 'flip',
@@ -86,6 +95,7 @@ const PopOver: React.FC<Props> & {
         },
       },
       ...preventOverflowMod,
+      ...flipMod,
       ...offsetModifier,
     ],
     placement: position,
@@ -119,37 +129,40 @@ const PopOver: React.FC<Props> & {
     };
   }, [ref, pointerEvents, handleMouseEnter, handleMouseLeave]);
 
-  return (
-    <Portal>
-      <StyledSpan
-        className={className}
-        id={id}
-        ref={mergeRefs([setPopperElement, ref])}
-        $inModal={inModal}
-        style={styles.popper}
-        $pointerEvents={pointerEvents}
-        {...htmlSpanProps}
-        {...attributes.popper}
-      >
-        {pointerArrow && (
-          <TooltipArrow
-            ref={setArrowElement as any}
-            position={state?.placement as any}
-            style={styles.arrow}
-            backgroundColor={backgroundColor}
-            borderColor={borderColor}
-          />
-        )}
-        <StyledTooltipContent
-          label={label}
-          ariaLabel={ariaLabel}
-          maxWidth={maxWidth}
+  const content = (
+    <StyledSpan
+      className={className}
+      id={id}
+      ref={mergeRefs([setPopperElement, ref])}
+      $inModal={inModal}
+      style={styles.popper}
+      $pointerEvents={pointerEvents}
+      {...htmlSpanProps}
+      {...attributes.popper}
+    >
+      {pointerArrow && (
+        <TooltipArrow
+          ref={setArrowElement as any}
+          position={state?.placement as any}
+          style={styles.arrow}
           backgroundColor={backgroundColor}
           borderColor={borderColor}
         />
-      </StyledSpan>
-    </Portal>
+      )}
+      <StyledTooltipContent
+        label={label}
+        ariaLabel={ariaLabel}
+        maxWidth={maxWidth}
+        backgroundColor={backgroundColor}
+        borderColor={borderColor}
+      />
+    </StyledSpan>
   );
+
+  if (!customBoundary) {
+    return <Portal>{content}</Portal>;
+  }
+  return content;
 };
 
 PopOver.components = components;
