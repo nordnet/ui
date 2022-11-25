@@ -1,3 +1,10 @@
+# [11.21.0](https://github.com/nordnet/ui/compare/v11.20.0...v11.21.0) (2022-11-25)
+
+
+### Features
+
+* use flip modifier, and always portal ([e6afee2](https://github.com/nordnet/ui/commit/e6afee2))
+
 # [11.20.0](https://github.com/nordnet/ui/compare/v11.19.0...v11.20.0) (2022-11-25)
 
 
