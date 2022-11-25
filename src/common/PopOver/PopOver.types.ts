@@ -32,7 +32,7 @@ export type Props = {
   maxWidth?: number;
   pointerEvents?: boolean;
   pointerArrow?: boolean;
-  withPortal?: boolean;
   handleMouseEnter?: (e: any) => void;
   handleMouseLeave?: (e: any) => void;
+  customBoundary?: HTMLElement | Array<HTMLElement>;
 };
