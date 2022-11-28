@@ -4,6 +4,8 @@ import { Meta, Story } from '@storybook/react';
 import docs from './Rating.mdx';
 import Rating from '.';
 import { Props } from './Rating.types';
+import Flexbox from '../../Atoms/Flexbox';
+import Typography from '../../Atoms/Typography';
 
 export default {
   title: 'Molecules / Rating',
@@ -54,3 +56,25 @@ RatingOutOf3.args = {
   rating: 2,
   outOf: 3,
 };
+
+export const RatingOutOf3WithLabel = () => (
+  <Flexbox
+    container
+    alignItems="center"
+    justifyContent="center"
+    width="100%"
+    gutter={4}
+    height="100vh"
+  >
+    <Flexbox container direction="column" alignItems="center" justifyContent="center">
+      <Typography type="secondary" weight="bold">
+        12345
+      </Typography>
+      <Typography type="tertiary">label</Typography>
+    </Flexbox>
+    <Flexbox container direction="column" alignItems="center" justifyContent="center">
+      <Rating outOf={3} rating={2} height="20px" />
+      <Typography type="tertiary">this rating has a custom height</Typography>
+    </Flexbox>
+  </Flexbox>
+);

@@ -6,7 +6,7 @@ export default {
   title: 'Molecules / Persistent Tooltip',
 };
 
-const StoryWrapper: React.FC = ({ children }) => (
+const StoryWrapper: React.FC<{ children?: React.ReactNode }> = ({ children }) => (
   <>
     <Box mb={4}>
       <Typography type="title2">

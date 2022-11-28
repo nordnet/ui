@@ -41,5 +41,5 @@ export type Props = {
    */
   pointerEvents?: boolean;
   pointerArrow?: boolean;
-  withPortal?: boolean;
+  customBoundary?: HTMLElement | Array<HTMLElement>;
 };

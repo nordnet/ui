@@ -91,13 +91,13 @@ export const differentVariants = () => (
     <br />
     <br />
     {variants?.map(({ variant, children }) => (
-      <>
+      <React.Fragment key={variant}>
         <code>variant={variant}</code>
         <br />
         <InfoBar variant={variant}>{children}</InfoBar>
         <br />
         <br />
-      </>
+      </React.Fragment>
     ))}
   </StyledBg>
 );

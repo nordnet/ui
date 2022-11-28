@@ -159,13 +159,12 @@ export const CustomCells = () => {
 
 export const BoldCells = () => {
   const Story = () => {
-    const BoldCell: React.FC<{ columnId: string } & FlexPropsType> = React.memo(
-      ({ columnId, children, ...cellProps }) => (
+    const BoldCell: React.FC<{ columnId: string; children?: React.ReactNode } & FlexPropsType> =
+      React.memo(({ columnId, children, ...cellProps }) => (
         <FlexTable.Cell columnId={columnId} {...cellProps}>
           <FlexTable.Cell.TextWrapper weight="bold">{children}</FlexTable.Cell.TextWrapper>
         </FlexTable.Cell>
-      ),
-    );
+      ));
 
     return (
       <FlexTable>

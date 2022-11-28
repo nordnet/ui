@@ -21,7 +21,7 @@ const StatusModal: React.FC<Props> = ({
   const { status, title, text, textConfirm, textCancel } = options || {};
 
   const closeModal = useCallback(
-    (confirmed) => {
+    (confirmed: any) => {
       if (isFunction(onClose)) {
         onClose(confirmed);
       }

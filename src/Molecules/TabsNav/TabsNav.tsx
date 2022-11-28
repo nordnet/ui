@@ -94,7 +94,7 @@ export const TabsNav: Component = ({
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const scrollToRefCallback = useCallback(
-    (ref) => {
+    (ref: any) => {
       if (ref && scrollRef && scrollRef.current && scrollOptions.active) {
         const offsetleft = ref.offsetLeft;
         const { width: tabWidth } = ref.getBoundingClientRect();

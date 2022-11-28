@@ -303,6 +303,96 @@ Array [
 ]
 `;
 
+exports[`Storyshots Molecules / Tooltip Custom Boundary 1`] = `
+.c1 {
+  margin-top: 160px;
+  margin-bottom: 160px;
+  padding-top: 0px;
+  padding-bottom: 160px;
+  background-color: transparent;
+}
+
+.c3 {
+  padding-top: 0px;
+  padding-bottom: 160px;
+  background-color: transparent;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  border: 5px solid red;
+  height: 50vh;
+  width: 400px;
+  overflow: scroll;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+  >
+    <div
+      style={
+        Object {
+          "background": "orange",
+          "height": "80vh",
+        }
+      }
+    />
+    <span
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+    >
+      custom boundary
+    </span>
+    <div
+      style={
+        Object {
+          "background": "orange",
+          "height": "80vh",
+        }
+      }
+    />
+  </div>
+  <div
+    className="c3 c2"
+  >
+    <span
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+    >
+      Default with portal
+    </span>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules / Tooltip Custom max-width 1`] = `
 .c0 {
   display: block;
@@ -578,21 +668,6 @@ exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] =
     tabIndex={0}
   />
   <div
-    data-focus-guard={true}
-    style={
-      Object {
-        "height": "0px",
-        "left": "1px",
-        "overflow": "hidden",
-        "padding": 0,
-        "position": "fixed",
-        "top": "1px",
-        "width": "1px",
-      }
-    }
-    tabIndex={1}
-  />
-  <div
     data-focus-lock-disabled={false}
     onBlur={[Function]}
     onFocus={[Function]}
@@ -676,68 +751,6 @@ exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] =
     tabIndex={0}
   />
 </portal-dummy>
-`;
-
-exports[`Storyshots Molecules / Tooltip No Portal 1`] = `
-.c0 {
-  padding-top: 160px;
-  padding-bottom: 0px;
-  background-color: transparent;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  overflow: hidden;
-  position: relative;
-  border: 5px solid red;
-}
-
-<div
-  className="c0 c1"
->
-  this is the bounding box
-  <div
-    className="c2"
-  >
-    <span
-      onBlur={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      onMouseDown={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      onMouseMove={[Function]}
-    >
-      No portal
-    </span>
-    <span
-      onBlur={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      onMouseDown={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      onMouseMove={[Function]}
-    >
-      Default with portal
-    </span>
-  </div>
-</div>
 `;
 
 exports[`Storyshots Molecules / Tooltip Styled Pop Over 1`] = `
