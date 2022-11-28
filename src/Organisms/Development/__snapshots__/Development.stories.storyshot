@@ -11,7 +11,7 @@ exports[`Storyshots Organisms / Development As currency 1`] = `
 }
 
 .c4 {
-  color: #00D200;
+  color: #368716;
 }
 
 .c5 {
@@ -19,7 +19,7 @@ exports[`Storyshots Organisms / Development As currency 1`] = `
 }
 
 .c6 {
-  color: #FF1900;
+  color: #CC2269;
 }
 
 .c0 {
@@ -91,7 +91,7 @@ exports[`Storyshots Organisms / Development As currency 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Positive value
       </span>
@@ -118,7 +118,7 @@ exports[`Storyshots Organisms / Development As currency 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Zero value
       </span>
@@ -131,7 +131,6 @@ exports[`Storyshots Organisms / Development As currency 1`] = `
         <span
           aria-hidden={true}
         />
-        
         0
          USD
       </span>
@@ -145,7 +144,7 @@ exports[`Storyshots Organisms / Development As currency 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Negative value
       </span>
@@ -158,7 +157,6 @@ exports[`Storyshots Organisms / Development As currency 1`] = `
         <span
           aria-hidden={true}
         />
-        
         -200
          USD
       </span>
@@ -178,7 +176,7 @@ exports[`Storyshots Organisms / Development As percentage 1`] = `
 }
 
 .c4 {
-  color: #00D200;
+  color: #368716;
 }
 
 .c5 {
@@ -186,7 +184,7 @@ exports[`Storyshots Organisms / Development As percentage 1`] = `
 }
 
 .c6 {
-  color: #FF1900;
+  color: #CC2269;
 }
 
 .c0 {
@@ -258,7 +256,7 @@ exports[`Storyshots Organisms / Development As percentage 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Positive value
       </span>
@@ -285,7 +283,7 @@ exports[`Storyshots Organisms / Development As percentage 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Zero value
       </span>
@@ -298,7 +296,6 @@ exports[`Storyshots Organisms / Development As percentage 1`] = `
         <span
           aria-hidden={true}
         />
-        
         0
         %
       </span>
@@ -312,7 +309,7 @@ exports[`Storyshots Organisms / Development As percentage 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Negative value
       </span>
@@ -325,7 +322,6 @@ exports[`Storyshots Organisms / Development As percentage 1`] = `
         <span
           aria-hidden={true}
         />
-        
         -2.1
         %
       </span>
@@ -345,7 +341,7 @@ exports[`Storyshots Organisms / Development Default 1`] = `
 }
 
 .c4 {
-  color: #00D200;
+  color: #368716;
 }
 
 .c5 {
@@ -353,7 +349,7 @@ exports[`Storyshots Organisms / Development Default 1`] = `
 }
 
 .c6 {
-  color: #FF1900;
+  color: #CC2269;
 }
 
 .c0 {
@@ -425,7 +421,7 @@ exports[`Storyshots Organisms / Development Default 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Positive value
       </span>
@@ -451,7 +447,7 @@ exports[`Storyshots Organisms / Development Default 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Zero value
       </span>
@@ -464,7 +460,6 @@ exports[`Storyshots Organisms / Development Default 1`] = `
         <span
           aria-hidden={true}
         />
-        
         0
       </span>
     </div>
@@ -477,7 +472,7 @@ exports[`Storyshots Organisms / Development Default 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Negative value
       </span>
@@ -490,7 +485,6 @@ exports[`Storyshots Organisms / Development Default 1`] = `
         <span
           aria-hidden={true}
         />
-        
         -200
       </span>
     </div>
@@ -572,7 +566,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
 }
 
 .c4 {
-  color: #00D200;
+  color: #368716;
 }
 
 .c5 {
@@ -580,7 +574,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
 }
 
 .c6 {
-  color: #FF1900;
+  color: #CC2269;
 }
 
 .c0 {
@@ -680,14 +674,14 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         primary
       </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         <div
           className="c0"
@@ -701,7 +695,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Positive value
               </span>
@@ -727,7 +721,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Zero value
               </span>
@@ -740,7 +734,6 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
                 <span
                   aria-hidden={true}
                 />
-                
                 0
               </span>
             </div>
@@ -753,7 +746,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Negative value
               </span>
@@ -766,7 +759,6 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
                 <span
                   aria-hidden={true}
                 />
-                
                 -2.1
               </span>
             </div>
@@ -783,14 +775,14 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         secondary
       </span>
     </div>
     <div>
       <span
-        className="c7"
+        className="Typography__Span-sc-10mju41-0 c7"
       >
         <div
           className="c0"
@@ -804,7 +796,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Positive value
               </span>
@@ -830,7 +822,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Zero value
               </span>
@@ -843,7 +835,6 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
                 <span
                   aria-hidden={true}
                 />
-                
                 0
               </span>
             </div>
@@ -856,7 +847,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Negative value
               </span>
@@ -869,7 +860,6 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
                 <span
                   aria-hidden={true}
                 />
-                
                 -2.1
               </span>
             </div>
@@ -886,14 +876,14 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         tertiary
       </span>
     </div>
     <div>
       <span
-        className="c8"
+        className="Typography__Span-sc-10mju41-0 c8"
       >
         <div
           className="c0"
@@ -907,7 +897,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Positive value
               </span>
@@ -933,7 +923,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Zero value
               </span>
@@ -946,7 +936,6 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
                 <span
                   aria-hidden={true}
                 />
-                
                 0
               </span>
             </div>
@@ -959,7 +948,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Negative value
               </span>
@@ -972,7 +961,6 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
                 <span
                   aria-hidden={true}
                 />
-                
                 -2.1
               </span>
             </div>
@@ -989,14 +977,14 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         caption
       </span>
     </div>
     <div>
       <span
-        className="c9"
+        className="Typography__Span-sc-10mju41-0 c9"
       >
         <div
           className="c0"
@@ -1010,7 +998,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Positive value
               </span>
@@ -1036,7 +1024,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Zero value
               </span>
@@ -1049,7 +1037,6 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
                 <span
                   aria-hidden={true}
                 />
-                
                 0
               </span>
             </div>
@@ -1062,7 +1049,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Negative value
               </span>
@@ -1075,7 +1062,6 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
                 <span
                   aria-hidden={true}
                 />
-                
                 -2.1
               </span>
             </div>
@@ -1092,14 +1078,14 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         title1
       </span>
     </div>
     <div>
       <span
-        className="c10"
+        className="Typography__Span-sc-10mju41-0 c10"
       >
         <div
           className="c0"
@@ -1113,7 +1099,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Positive value
               </span>
@@ -1139,7 +1125,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Zero value
               </span>
@@ -1152,7 +1138,6 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
                 <span
                   aria-hidden={true}
                 />
-                
                 0
               </span>
             </div>
@@ -1165,7 +1150,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Negative value
               </span>
@@ -1178,7 +1163,6 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
                 <span
                   aria-hidden={true}
                 />
-                
                 -2.1
               </span>
             </div>
@@ -1195,14 +1179,14 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         title2
       </span>
     </div>
     <div>
       <span
-        className="c11"
+        className="Typography__Span-sc-10mju41-0 c11"
       >
         <div
           className="c0"
@@ -1216,7 +1200,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Positive value
               </span>
@@ -1242,7 +1226,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Zero value
               </span>
@@ -1255,7 +1239,6 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
                 <span
                   aria-hidden={true}
                 />
-                
                 0
               </span>
             </div>
@@ -1268,7 +1251,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Negative value
               </span>
@@ -1281,7 +1264,6 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
                 <span
                   aria-hidden={true}
                 />
-                
                 -2.1
               </span>
             </div>
@@ -1298,14 +1280,14 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         title3
       </span>
     </div>
     <div>
       <span
-        className="c12"
+        className="Typography__Span-sc-10mju41-0 c12"
       >
         <div
           className="c0"
@@ -1319,7 +1301,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Positive value
               </span>
@@ -1345,7 +1327,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Zero value
               </span>
@@ -1358,7 +1340,6 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
                 <span
                   aria-hidden={true}
                 />
-                
                 0
               </span>
             </div>
@@ -1371,7 +1352,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Negative value
               </span>
@@ -1384,7 +1365,6 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
                 <span
                   aria-hidden={true}
                 />
-                
                 -2.1
               </span>
             </div>
@@ -1401,14 +1381,14 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         hero
       </span>
     </div>
     <div>
       <span
-        className="c13"
+        className="Typography__Span-sc-10mju41-0 c13"
       >
         <div
           className="c0"
@@ -1422,7 +1402,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Positive value
               </span>
@@ -1448,7 +1428,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Zero value
               </span>
@@ -1461,7 +1441,6 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
                 <span
                   aria-hidden={true}
                 />
-                
                 0
               </span>
             </div>
@@ -1474,7 +1453,7 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
               className="c2"
             >
               <span
-                className="c3"
+                className="Typography__Span-sc-10mju41-0 c3"
               >
                 Negative value
               </span>
@@ -1487,7 +1466,6 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
                 <span
                   aria-hidden={true}
                 />
-                
                 -2.1
               </span>
             </div>
@@ -1582,7 +1560,7 @@ exports[`Storyshots Organisms / Development Regression: infinity 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         +Infinity
       </span>
@@ -1607,7 +1585,7 @@ exports[`Storyshots Organisms / Development Regression: infinity 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         -Infinity
       </span>
@@ -1642,7 +1620,7 @@ exports[`Storyshots Organisms / Development Regression: value is non-zero, but r
 }
 
 .c5 {
-  color: #FF1900;
+  color: #CC2269;
 }
 
 .c0 {
@@ -1714,7 +1692,7 @@ exports[`Storyshots Organisms / Development Regression: value is non-zero, but r
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         \`value = 0.3\` and decimals = 0
       </span>
@@ -1727,7 +1705,6 @@ exports[`Storyshots Organisms / Development Regression: value is non-zero, but r
         <span
           aria-hidden={true}
         />
-        
         0
       </span>
     </div>
@@ -1740,7 +1717,7 @@ exports[`Storyshots Organisms / Development Regression: value is non-zero, but r
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         \`value = -0.3 and decimals = 0\`
       </span>
@@ -1753,7 +1730,6 @@ exports[`Storyshots Organisms / Development Regression: value is non-zero, but r
         <span
           aria-hidden={true}
         />
-        
         0
       </span>
     </div>
@@ -1766,7 +1742,7 @@ exports[`Storyshots Organisms / Development Regression: value is non-zero, but r
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         \`value = -1.3123 and decimals = 3\`
       </span>
@@ -1779,7 +1755,6 @@ exports[`Storyshots Organisms / Development Regression: value is non-zero, but r
         <span
           aria-hidden={true}
         />
-        
         -1.312
       </span>
     </div>
@@ -1792,7 +1767,7 @@ exports[`Storyshots Organisms / Development Regression: value is non-zero, but r
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         \`value = -0.3 and maximumDecimals = 0\`
       </span>
@@ -1805,7 +1780,6 @@ exports[`Storyshots Organisms / Development Regression: value is non-zero, but r
         <span
           aria-hidden={true}
         />
-        
         0
       </span>
     </div>
@@ -1818,7 +1792,7 @@ exports[`Storyshots Organisms / Development Regression: value is non-zero, but r
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         \`value = 0.3\`
       </span>
@@ -1831,7 +1805,6 @@ exports[`Storyshots Organisms / Development Regression: value is non-zero, but r
         <span
           aria-hidden={true}
         />
-        
         0
       </span>
     </div>
@@ -1850,7 +1823,7 @@ exports[`Storyshots Organisms / Development With different colors 1`] = `
 }
 
 .c4 {
-  color: #00D200;
+  color: #368716;
 }
 
 .c5 {
@@ -1858,7 +1831,7 @@ exports[`Storyshots Organisms / Development With different colors 1`] = `
 }
 
 .c6 {
-  color: #FF1900;
+  color: #CC2269;
 }
 
 .c0 {
@@ -1930,7 +1903,7 @@ exports[`Storyshots Organisms / Development With different colors 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Positive value
       </span>
@@ -1956,7 +1929,7 @@ exports[`Storyshots Organisms / Development With different colors 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Zero value
       </span>
@@ -1969,7 +1942,6 @@ exports[`Storyshots Organisms / Development With different colors 1`] = `
         <span
           aria-hidden={true}
         />
-        
         0
       </span>
     </div>
@@ -1982,7 +1954,7 @@ exports[`Storyshots Organisms / Development With different colors 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Negative value
       </span>
@@ -1995,7 +1967,6 @@ exports[`Storyshots Organisms / Development With different colors 1`] = `
         <span
           aria-hidden={true}
         />
-        
         -200
       </span>
     </div>
@@ -2014,7 +1985,7 @@ exports[`Storyshots Organisms / Development With icon 1`] = `
 }
 
 .c4 {
-  color: #00D200;
+  color: #368716;
 }
 
 .c5 {
@@ -2022,7 +1993,7 @@ exports[`Storyshots Organisms / Development With icon 1`] = `
 }
 
 .c6 {
-  color: #FF1900;
+  color: #CC2269;
 }
 
 .c0 {
@@ -2094,7 +2065,7 @@ exports[`Storyshots Organisms / Development With icon 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Positive value
       </span>
@@ -2122,7 +2093,7 @@ exports[`Storyshots Organisms / Development With icon 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Zero value
       </span>
@@ -2134,10 +2105,7 @@ exports[`Storyshots Organisms / Development With icon 1`] = `
       >
         <span
           aria-hidden={true}
-        >
-          
-        </span>
-        
+        />
         0
       </span>
     </div>
@@ -2150,7 +2118,7 @@ exports[`Storyshots Organisms / Development With icon 1`] = `
       className="c2"
     >
       <span
-        className="c3"
+        className="Typography__Span-sc-10mju41-0 c3"
       >
         Negative value
       </span>
@@ -2165,7 +2133,6 @@ exports[`Storyshots Organisms / Development With icon 1`] = `
         >
           ▼
         </span>
-        
         -200
       </span>
     </div>

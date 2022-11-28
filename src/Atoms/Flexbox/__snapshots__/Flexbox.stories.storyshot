@@ -791,16 +791,6 @@ Array [
         }
       }
     >
-      0
-    </div>
-    <div
-      className="c1"
-      style={
-        Object {
-          "width": "200px",
-        }
-      }
-    >
       1
     </div>
     <div
@@ -882,6 +872,16 @@ Array [
       }
     >
       9
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      10
     </div>
   </div>,
   .c0 {
@@ -942,16 +942,6 @@ Array [
         }
       }
     >
-      0
-    </div>
-    <div
-      className="c1"
-      style={
-        Object {
-          "width": "200px",
-        }
-      }
-    >
       1
     </div>
     <div
@@ -1033,6 +1023,16 @@ Array [
       }
     >
       9
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      10
     </div>
   </div>,
   .c0 {
@@ -1093,16 +1093,6 @@ Array [
         }
       }
     >
-      0
-    </div>
-    <div
-      className="c1"
-      style={
-        Object {
-          "width": "200px",
-        }
-      }
-    >
       1
     </div>
     <div
@@ -1184,6 +1174,16 @@ Array [
       }
     >
       9
+    </div>
+    <div
+      className="c1"
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      10
     </div>
   </div>,
 ]

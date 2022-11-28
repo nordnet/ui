@@ -20,7 +20,7 @@ export const TruncateWithTooltip: TruncateWithTooltipComponent = ({
   const [isTruncated, setIsTruncated] = useState(false);
 
   // TODO: Check truncation again on screen or container resize
-  const measuredRef = useCallback((node) => {
+  const measuredRef = useCallback((node: any) => {
     if (node !== null) {
       const truncated = node.clientWidth < node.scrollWidth;
       setIsTruncated(truncated);

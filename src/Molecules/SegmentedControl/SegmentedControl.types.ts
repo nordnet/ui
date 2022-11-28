@@ -26,6 +26,7 @@ export type ContainerProps = {
   className?: string;
   onClick?: MouseEventProps;
   disabled?: boolean;
+  children?: ReactNode;
 };
 
 export type ItemComponent = React.FC<ItemProps>;

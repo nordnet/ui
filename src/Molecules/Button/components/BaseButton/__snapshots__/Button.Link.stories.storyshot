@@ -1508,7 +1508,7 @@ exports[`Storyshots Molecules / Button / Button Neutral button looking like link
       <span
         className="Typography__Span-sc-10mju41-0 c3"
       >
-        Reset
+        Reset icon right
       </span>
     </div>
     <div>

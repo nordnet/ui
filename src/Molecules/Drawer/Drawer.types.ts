@@ -12,7 +12,7 @@ export type Props = {
   closeButtonTitle?: string;
   open?: boolean;
   ref?: React.Ref<HTMLDivElement>;
-  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+  as?: any;
   onExitAnimationComplete?: () => void;
   onAnimationComplete?: () => void;
   disableInitialAnimation?: boolean;

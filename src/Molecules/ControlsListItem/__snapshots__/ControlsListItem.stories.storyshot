@@ -508,7 +508,6 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
                   disabled={false}
                   onChange={[Function]}
                 >
-                  
                   <option
                     label="first label"
                     value="first value"
@@ -1101,7 +1100,6 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
                   disabled={false}
                   onChange={[Function]}
                 >
-                  
                   <option
                     label="first label"
                     value="first value"
@@ -1694,7 +1692,6 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item Radio with a
                   disabled={false}
                   onChange={[Function]}
                 >
-                  
                   <option
                     label="first label"
                     value="first value"
@@ -3895,7 +3892,6 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select 1`] =
             disabled={false}
             onChange={[Function]}
           >
-            
             <option
               label="first label"
               value="first value"
@@ -4197,7 +4193,6 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item select witho
       disabled={false}
       onChange={[Function]}
     >
-      
       <option
         label="first label"
         value="first value"
@@ -5491,7 +5486,6 @@ exports[`Storyshots Molecules / ControlsListItem Controls list item switch with 
                 disabled={false}
                 onChange={[Function]}
               >
-                
                 <option
                   label="first label"
                   value="first value"

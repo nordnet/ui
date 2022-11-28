@@ -40,7 +40,7 @@ export type PropsWithClearButton = BaseProps & {
 
 type PropsWithOrWithoutClearButton = PropsWithoutClearButton | PropsWithClearButton;
 
-interface FullscreenProps {
+type FullscreenProps = {
   /**
    * Renders datepicker inside a full screen modal on "mobile-sized" resolutions
    */
@@ -50,7 +50,7 @@ interface FullscreenProps {
   pickDateLabel?: string;
   fromLabel?: string;
   toLabel?: string;
-}
+};
 
 export type PropsWithFullscreen = PropsWithOrWithoutClearButton & {
   fullscreenOnMobile: true;

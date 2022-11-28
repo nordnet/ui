@@ -55,7 +55,7 @@ export type Props = {
    * Render this element as different DOM node
    * @default div
    * */
-  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+  as?: any;
   backgroundColor?: 'inherit' | ColorFn;
   className?: string;
   children?: React.ReactNode;
