@@ -8,7 +8,6 @@ const StyledContainer = styled.div`
   height: 100vh;
   padding: 12px;
   box-sizing: border-box;
-  background-color: #e6e6e6;
 `;
 
 export default {

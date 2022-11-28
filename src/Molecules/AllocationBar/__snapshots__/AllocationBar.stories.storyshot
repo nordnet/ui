@@ -126,7 +126,6 @@ exports[`Storyshots Molecules / Allocation Bar Basic usage 1`] = `
   height: 100vh;
   padding: 12px;
   box-sizing: border-box;
-  background-color: #e6e6e6;
 }
 
 <div
