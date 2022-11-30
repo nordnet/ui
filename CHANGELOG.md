@@ -1,3 +1,10 @@
+## [12.0.1](https://github.com/nordnet/ui/compare/v12.0.0...v12.0.1) (2022-11-29)
+
+
+### Bug Fixes
+
+* new build ([108ddfc](https://github.com/nordnet/ui/commit/108ddfc))
+
 # [12.0.0](https://github.com/nordnet/ui/compare/v11.21.1...v12.0.0) (2022-11-28)
 
 
