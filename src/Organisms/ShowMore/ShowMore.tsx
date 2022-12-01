@@ -25,7 +25,7 @@ export const ShowMore: React.FC<Props> = ({
   const [showMoreClicked, setShowMoreClicked] = useState(false);
 
   const onShowMoreClick = useCallback(
-    (e) => {
+    (e: any) => {
       onShowMore(e);
       setShowMoreClicked(true);
     },
