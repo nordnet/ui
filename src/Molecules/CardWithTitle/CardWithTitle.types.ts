@@ -1,3 +1,4 @@
+import React from 'react';
 import { Props as CardProps } from '../../Atoms/Card/Card.types';
 
 export type Props = {
