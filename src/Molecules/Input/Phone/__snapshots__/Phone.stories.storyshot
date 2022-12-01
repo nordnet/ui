@@ -354,6 +354,7 @@ exports[`Storyshots Molecules / Input / Phone Auto Focus 1`] = `
             onChange={[Function]}
             value="45"
           >
+            
             <option
               label={
                 <CountryCodeLabel
@@ -525,6 +526,7 @@ exports[`Storyshots Molecules / Input / Phone Auto Focus 1`] = `
                     />
                   </svg>
                 </div>
+                
               </div>
             </div>
           </div>
@@ -917,6 +919,7 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
             onChange={[Function]}
             value="45"
           >
+            
             <option
               label={
                 <CountryCodeLabel
@@ -1088,6 +1091,7 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
                     />
                   </svg>
                 </div>
+                
               </div>
             </div>
           </div>
@@ -1479,6 +1483,7 @@ exports[`Storyshots Molecules / Input / Phone Enable Search Component 1`] = `
             onChange={[Function]}
             value="45"
           >
+            
             <option
               label={
                 <CountryCodeLabel
@@ -1650,6 +1655,7 @@ exports[`Storyshots Molecules / Input / Phone Enable Search Component 1`] = `
                     />
                   </svg>
                 </div>
+                
               </div>
             </div>
           </div>
@@ -2046,6 +2052,7 @@ exports[`Storyshots Molecules / Input / Phone Full Width 1`] = `
             onChange={[Function]}
             value="45"
           >
+            
             <option
               label={
                 <CountryCodeLabel
@@ -2217,6 +2224,7 @@ exports[`Storyshots Molecules / Input / Phone Full Width 1`] = `
                     />
                   </svg>
                 </div>
+                
               </div>
             </div>
           </div>
@@ -2627,6 +2635,7 @@ exports[`Storyshots Molecules / Input / Phone Has Error 1`] = `
             onChange={[Function]}
             value="45"
           >
+            
             <option
               label={
                 <CountryCodeLabel
@@ -2798,6 +2807,7 @@ exports[`Storyshots Molecules / Input / Phone Has Error 1`] = `
                     />
                   </svg>
                 </div>
+                
               </div>
             </div>
           </div>
@@ -3203,6 +3213,7 @@ exports[`Storyshots Molecules / Input / Phone Has Success 1`] = `
             onChange={[Function]}
             value="45"
           >
+            
             <option
               label={
                 <CountryCodeLabel
@@ -3374,6 +3385,7 @@ exports[`Storyshots Molecules / Input / Phone Has Success 1`] = `
                     />
                   </svg>
                 </div>
+                
               </div>
             </div>
           </div>
@@ -3768,6 +3780,7 @@ exports[`Storyshots Molecules / Input / Phone Is Disabled 1`] = `
             onChange={[Function]}
             value="46"
           >
+            
             <option
               label={
                 <CountryCodeLabel
@@ -3939,6 +3952,7 @@ exports[`Storyshots Molecules / Input / Phone Is Disabled 1`] = `
                     />
                   </svg>
                 </div>
+                
               </div>
             </div>
           </div>
@@ -4332,6 +4346,7 @@ exports[`Storyshots Molecules / Input / Phone Prefilled Default Values 1`] = `
             onChange={[Function]}
             value="46"
           >
+            
             <option
               label={
                 <CountryCodeLabel
@@ -4503,6 +4518,7 @@ exports[`Storyshots Molecules / Input / Phone Prefilled Default Values 1`] = `
                     />
                   </svg>
                 </div>
+                
               </div>
             </div>
           </div>
@@ -4926,6 +4942,7 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
               onChange={[Function]}
               value="46"
             >
+              
               <option
                 label={
                   <CountryCodeLabel
@@ -5097,6 +5114,7 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
                       />
                     </svg>
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -5160,6 +5178,7 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
               onChange={[Function]}
               value="45"
             >
+              
               <option
                 label={
                   <CountryCodeLabel
@@ -5331,6 +5350,7 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
                       />
                     </svg>
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -5394,6 +5414,7 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
               onChange={[Function]}
               value="358"
             >
+              
               <option
                 label={
                   <CountryCodeLabel
@@ -5573,6 +5594,7 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
                       />
                     </svg>
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -5636,6 +5658,7 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
               onChange={[Function]}
               value="47"
             >
+              
               <option
                 label={
                   <CountryCodeLabel
@@ -5811,6 +5834,7 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
                       />
                     </svg>
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -5874,6 +5898,7 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
               onChange={[Function]}
               value=""
             >
+              
               <option
                 label={
                   <Flexbox
@@ -6031,6 +6056,7 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
                       />
                     </svg>
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -6042,6 +6068,7 @@ exports[`Storyshots Molecules / Input / Phone Sort By Country 1`] = `
               className="Typography__Span-sc-10mju41-0 c11"
             >
               +
+              
             </span>
           </div>
           <div
@@ -6430,6 +6457,7 @@ exports[`Storyshots Molecules / Input / Phone With Help Text 1`] = `
             onChange={[Function]}
             value="45"
           >
+            
             <option
               label={
                 <CountryCodeLabel
@@ -6601,6 +6629,7 @@ exports[`Storyshots Molecules / Input / Phone With Help Text 1`] = `
                     />
                   </svg>
                 </div>
+                
               </div>
             </div>
           </div>

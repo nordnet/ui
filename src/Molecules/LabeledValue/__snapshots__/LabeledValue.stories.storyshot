@@ -88,6 +88,7 @@ exports[`Storyshots Molecules / LabeledValue Integration: LabeledValue secondary
   <span
     className="Typography__Span-sc-10mju41-0 c3"
   >
+    
     4,672,198
      SEK
   </span>
@@ -149,6 +150,7 @@ exports[`Storyshots Molecules / LabeledValue Integration: LabeledValue title1 1`
   <span
     className="Typography__Span-sc-10mju41-0 c3"
   >
+    
     4,713,119
   </span>
 </div>
@@ -309,6 +311,7 @@ exports[`Storyshots Molecules / LabeledValue Integration: LabeledValue with nega
           >
             ▼
           </span>
+          
           -9.2
           %
         </span>
@@ -320,6 +323,7 @@ exports[`Storyshots Molecules / LabeledValue Integration: LabeledValue with nega
       <span
         className="Typography__Span-sc-10mju41-0 c7"
       >
+        
         -4,672,198
          SEK
       </span>

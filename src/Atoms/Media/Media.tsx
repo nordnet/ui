@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import styled, { useTheme } from 'styled-components';
+import React, { useContext, useEffect, useState } from 'react';
+import styled, { ThemeContext } from 'styled-components';
 import R from 'ramda';
 
 import { Props } from './Media.types';
@@ -14,7 +14,7 @@ const StyledDiv = styled.div<{ query: Props['query'] }>`
 `;
 
 const useMedia = (query: string | ((t: Theme) => string)) => {
-  const theme = useTheme();
+  const theme = useContext(ThemeContext);
   const [matches, setMatches] = useState<boolean | null>(null);
   const mediaQuery = (typeof query === 'string' ? query : query(theme)).replace('@media ', '');
 

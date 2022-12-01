@@ -1,5 +1,3 @@
-import React from 'react';
-
 export type HtmlProps = Omit<React.HTMLProps<HTMLSpanElement>, 'children'>;
 
 export type ItemProps = {
@@ -10,7 +8,6 @@ export type ItemProps = {
   exact?: boolean;
   className?: string;
   active?: boolean;
-  children?: React.ReactNode;
 };
 export type ItemComponent = React.FC<ItemProps>;
 

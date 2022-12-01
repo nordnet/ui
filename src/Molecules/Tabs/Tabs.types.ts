@@ -1,5 +1,3 @@
-import React from 'react';
-
 export type ItemProps = {
   title: React.ReactNode;
   onTitleClick?: React.MouseEventHandler;
@@ -14,7 +12,6 @@ export type TitleProps = {
   onKeyDown: (e: React.KeyboardEvent) => void;
   height?: number;
   variant?: 'normal' | 'large';
-  children?: React.ReactNode;
 };
 
 export type ContainerProps = {

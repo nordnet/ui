@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
 import { useFlexCellProps } from '../shared/ColumnProvider';
-import { Props } from './Cell.types';
+import { CellComponent } from './Cell.types';
 import { TextWrapper } from './TextWrapper';
 import { Density } from '../shared/shared.types';
 import { getDensityPaddings } from '../shared/textUtils';
@@ -41,7 +41,7 @@ const StyledFlexbox = styled(Flexbox)<StyledFlexboxProps>`
   )}
 `;
 
-const Cell = (props: Props) => {
+const Cell: CellComponent = (props) => {
   const { children, columnId, className } = props;
   const flexProps = useFlexCellProps(props);
   const { xs, sm, md, lg, xl } = useFlexTable<'density'>('density');

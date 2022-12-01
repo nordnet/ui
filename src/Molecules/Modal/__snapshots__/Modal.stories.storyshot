@@ -219,6 +219,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -237,7 +252,7 @@ Array [
               className="c2"
             >
               <span
-                id="34val-ModalTitle"
+                id="65val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -554,6 +569,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -572,7 +602,7 @@ Array [
               className="c2"
             >
               <span
-                id="21val-ModalTitle"
+                id="39val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -916,6 +946,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -934,7 +979,7 @@ Array [
               className="c2"
             >
               <span
-                id="15val-ModalTitle"
+                id="27val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -1200,6 +1245,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -1218,7 +1278,7 @@ Array [
               className="c2"
             >
               <span
-                id="19val-ModalTitle"
+                id="35val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -1636,6 +1696,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -1654,7 +1729,7 @@ Array [
               className="c2"
             >
               <span
-                id="16val-ModalTitle"
+                id="29val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -2156,6 +2231,21 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
     tabIndex={0}
   />
   <div
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={1}
+  />
+  <div
     data-focus-lock-disabled={false}
     onBlur={[Function]}
     onFocus={[Function]}
@@ -2174,7 +2264,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
             className="c2"
           >
             <span
-              id="26val-ModalTitle"
+              id="49val-ModalTitle"
             >
               <h2
                 className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -2790,6 +2880,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -2808,7 +2913,7 @@ Array [
               className="c2"
             >
               <span
-                id="27val-ModalTitle"
+                id="51val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -3347,6 +3452,21 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
     tabIndex={0}
   />
   <div
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={1}
+  />
+  <div
     data-focus-lock-disabled={false}
     onBlur={[Function]}
     onFocus={[Function]}
@@ -3365,7 +3485,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
             className="c2"
           >
             <span
-              id="25val-ModalTitle"
+              id="47val-ModalTitle"
             >
               <h2
                 className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -3893,6 +4013,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -3911,7 +4046,7 @@ Array [
               className="c2"
             >
               <span
-                id="33val-ModalTitle"
+                id="63val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -4514,6 +4649,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -4532,7 +4682,7 @@ Array [
               className="c2"
             >
               <span
-                id="32val-ModalTitle"
+                id="61val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -5016,6 +5166,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -5034,7 +5199,7 @@ Array [
               className="c2"
             >
               <span
-                id="29val-ModalTitle"
+                id="55val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -5452,6 +5617,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -5470,7 +5650,7 @@ Array [
               className="c2"
             >
               <span
-                id="31val-ModalTitle"
+                id="59val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -5955,6 +6135,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -5973,7 +6168,7 @@ Array [
               className="c2"
             >
               <span
-                id="28val-ModalTitle"
+                id="53val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -6471,6 +6666,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -6489,7 +6699,7 @@ Array [
               className="c2"
             >
               <span
-                id="30val-ModalTitle"
+                id="57val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -7015,6 +7225,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -7033,7 +7258,7 @@ Array [
               className="c2"
             >
               <span
-                id="24val-ModalTitle"
+                id="45val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -7343,6 +7568,21 @@ exports[`Storyshots Molecules / Modal Modal with disabled escape-key press 1`] =
     tabIndex={0}
   />
   <div
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={1}
+  />
+  <div
     data-focus-lock-disabled={false}
     onBlur={[Function]}
     onFocus={[Function]}
@@ -7361,7 +7601,7 @@ exports[`Storyshots Molecules / Modal Modal with disabled escape-key press 1`] =
             className="c2"
           >
             <span
-              id="36val-ModalTitle"
+              id="69val-ModalTitle"
             >
               <h2
                 className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -7663,6 +7903,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -7680,7 +7935,7 @@ Array [
               className="c2"
             >
               <span
-                id="35val-ModalTitle"
+                id="67val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -7982,6 +8237,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -8000,7 +8270,7 @@ Array [
               className="c2"
             >
               <span
-                id="20val-ModalTitle"
+                id="37val-ModalTitle"
               >
                 <div
                   className="c3"
@@ -8489,6 +8759,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -8507,7 +8792,7 @@ Array [
               className="c2"
             >
               <span
-                id="22val-ModalTitle"
+                id="41val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -8977,6 +9262,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -8995,7 +9295,7 @@ Array [
               className="c2"
             >
               <span
-                id="23val-ModalTitle"
+                id="43val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -9316,6 +9616,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -9334,7 +9649,7 @@ Array [
               className="c2"
             >
               <span
-                id="18val-ModalTitle"
+                id="33val-ModalTitle"
               >
                 <h2
                   className="c3 Typography__Span-sc-10mju41-0 c4"
@@ -9648,6 +9963,21 @@ Array [
         }
       }
       tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
     />
     <div
       data-focus-lock-disabled={false}

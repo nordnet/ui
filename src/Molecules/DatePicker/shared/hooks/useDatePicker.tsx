@@ -273,8 +273,7 @@ export const useDatePicker = ({
   const handleInputOnChange = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
       const { value, id: elementId } = event.target;
-      // @ts-ignore
-      const assignedValues: [string?, string?] = (() => {
+      const assignedValues = (() => {
         if (elementId === INPUT_ID_START(id)) {
           setInputValue(value);
           return [value];

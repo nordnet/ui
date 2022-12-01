@@ -28,4 +28,4 @@ export type WrapperProps = HtmlProps & {
 export type BaseBadgeComponent = React.ForwardRefExoticComponent<
   BaseBadgeProps & React.RefAttributes<HTMLSpanElement>
 >;
-export type WrapperComponent = React.FC<WrapperProps & { children?: React.ReactNode }>;
+export type WrapperComponent = React.FC<WrapperProps>;

@@ -17,5 +17,5 @@ export interface AccountBadgeCompoundComponent extends AccountBadgeComponent {
 
 export type AccountBadgeContentProps = {
   typographyType: React.ComponentProps<typeof Typography>['type'];
-  children?: React.ReactNode | (() => React.ReactNode);
+  children?: React.ReactNode;
 };
