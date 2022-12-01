@@ -1,3 +1,4 @@
+import React from 'react';
 import { Density, FontSize, MediaRelatedProps } from '../shared.types';
 
 export type FlexTableState = {

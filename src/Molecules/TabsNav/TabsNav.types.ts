@@ -1,3 +1,5 @@
+import React from 'react';
+
 export type HtmlProps = Omit<React.HTMLProps<HTMLSpanElement>, 'children'>;
 
 export type ItemProps = {

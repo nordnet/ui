@@ -1,4 +1,5 @@
 import { Property } from 'csstype';
+import React from 'react';
 
 export type Width = number | string;
 export type Height = number | string;
