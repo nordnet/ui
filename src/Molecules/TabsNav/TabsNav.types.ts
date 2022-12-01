@@ -8,6 +8,7 @@ export type ItemProps = {
   exact?: boolean;
   className?: string;
   active?: boolean;
+  children?: React.ReactNode;
 };
 export type ItemComponent = React.FC<ItemProps>;
 
