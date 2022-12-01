@@ -4,6 +4,7 @@ export type Width = number | string;
 export type Height = number | string;
 
 export type ContainerProps = {
+  children?: React.ReactNode;
   container?: boolean;
   width?: Width;
   height?: Height;
@@ -81,7 +82,8 @@ type MediaRelatedProps<T> = {
   xl?: Partial<T>;
 };
 
-export type Props = MediaRelatedProps<FlexProps> & FlexProps & { children?: React.ReactNode };
+export type Props = MediaRelatedProps<FlexProps> &
+  FlexProps & { children?: React.ReactNode; as?: any };
 
 export type StoryTemplateProps = {
   cols: { children: React.ReactNode; itemArgs?: ItemProps }[];

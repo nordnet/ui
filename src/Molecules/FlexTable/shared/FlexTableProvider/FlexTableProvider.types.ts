@@ -42,4 +42,4 @@ export type Props = MediaRelatedProps<FlexTableState> & FlexTableState;
 
 export type FlexTableContextProps = Props | undefined;
 
-export type FlexTableProviderComponent = React.FC<Props>;
+export type FlexTableProviderComponent = React.FC<Props & { children?: React.ReactNode }>;

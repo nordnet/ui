@@ -6,6 +6,7 @@ export type Props = {
   title: React.ReactNode;
   noTopPadding?: boolean;
   noBottomPadding?: boolean;
+  children?: React.ReactNode;
 };
 
 export type CardWithTitleComponent = React.FunctionComponent<Props & CardProps>;
