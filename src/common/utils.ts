@@ -43,10 +43,7 @@ export const deprecate =
   };
 
 export const isUndefined = (x: any): x is undefined => typeof x === 'undefined';
-export const isElement = (
-  x: any,
-): x is React.ReactElement<unknown, string | React.JSXElementConstructor<any>> =>
-  React.isValidElement(x);
+export const isElement = (x: any): x is React.ReactNode => React.isValidElement(x);
 export const isNumber = (x: any): x is number => typeof x === 'number' && !Number.isNaN(x);
 export const isString = (x: any): x is string => typeof x === 'string';
 export const isBoolean = (x: any): x is boolean => typeof x === 'boolean';

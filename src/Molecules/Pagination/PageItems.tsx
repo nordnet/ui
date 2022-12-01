@@ -22,10 +22,7 @@ const PageItems: React.FC<PageItemsProps> = ({
   const totalLessThanFour = numberOfPages < 4;
   const totalLessThanFive = numberOfPages < 5;
 
-  const handlePageItemClick = useCallback(
-    (page: any) => () => onClickPageItem(page),
-    [onClickPageItem],
-  );
+  const handlePageItemClick = useCallback((page) => () => onClickPageItem(page), [onClickPageItem]);
 
   return (
     <>

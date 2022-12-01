@@ -84,11 +84,10 @@ export const cardWithTitleAsSection = () => (
   </CardWithTitle>
 );
 
-const PaddedIcon = styled(OldIcon.ArrowRight)`
-  padding-left: ${(p) => p.theme.spacing.unit(1)}px;
-`;
-
 export const integrationCardWithTitleWithCustomComponentAsTitle = () => {
+  const PaddedIcon = styled(OldIcon.ArrowRight)`
+    padding-left: ${(p) => p.theme.spacing.unit(1)}px;
+  `;
   const CustomTitle = (
     <Flexbox container justifyContent="space-between" alignItems="center" direction="row">
       <Flexbox item>

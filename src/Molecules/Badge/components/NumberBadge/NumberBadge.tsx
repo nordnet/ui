@@ -38,11 +38,11 @@ const StyledBaseBadge: React.FC<StyledBaseBadgeProps> = styled(BaseBadge)<Styled
   ${(p) => (p.$padding ? `padding: 0 ${p.theme.spacing.unit(p.$padding)}px;` : '')}
 `;
 
-const NumberBadgeContent = ({
+const NumberBadgeContent: React.FC<NumberBadgeContentProps> = ({
   children,
   color,
   typographyType,
-}: NumberBadgeContentProps): React.ReactNode => {
+}) => {
   if (typeof children === 'undefined') return null;
   if (isFunction(children)) return children();
   if (isElement(children)) return children;
@@ -88,7 +88,6 @@ export const NumberBadge: NumberBadgeComponent = React.forwardRef<HTMLSpanElemen
         symmetricShape={symmetricShape}
         {...(textColorOnParent && { color })}
       >
-        {/* @ts-ignore */}
         <NumberBadgeContent typographyType={typographyType} color={color}>
           {children}
         </NumberBadgeContent>

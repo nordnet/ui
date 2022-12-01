@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react';
-import { Route, Routes, useParams } from 'react-router';
+import { Route, match as MatchType, RouteComponentProps } from 'react-router';
 import { action } from '@storybook/addon-actions';
 import { Provider } from '../../common/Links/ReactRouterLinkHelper';
+
+interface MatchParams {
+  page: string;
+}
 
 interface PaginationRouteHelperProps {
   currentPage: number;
@@ -9,20 +13,22 @@ interface PaginationRouteHelperProps {
   children?: React.ReactNode;
 }
 
-const View: React.FC<PaginationRouteHelperProps> = ({ currentPage, setCurrentPage }) => {
-  const params = useParams();
+interface ViewProps extends PaginationRouteHelperProps {
+  match: MatchType<MatchParams>;
+}
 
+const View: React.FC<ViewProps> = ({ match, currentPage, setCurrentPage }) => {
   useEffect(() => {
-    const matchPage = +params.page!;
+    const matchPage = +match.params.page;
     if (currentPage !== matchPage) {
-      action('Page change via router')(params);
+      action('Page change via router')(match);
       setCurrentPage(matchPage);
     }
-  }, [currentPage, setCurrentPage, params]);
+  }, [match, currentPage, setCurrentPage]);
 
   return (
     <pre>
-      <code>{JSON.stringify(params, null, 2)}</code>
+      <code>{JSON.stringify(match, null, 2)}</code>
     </pre>
   );
 };
@@ -35,12 +41,12 @@ const PaginationRouteHelper: React.FC<PaginationRouteHelperProps> = ({
   return (
     <Provider>
       {children}
-      <Routes>
-        <Route
-          path="/:page"
-          element={<View currentPage={currentPage} setCurrentPage={setCurrentPage} />}
-        />
-      </Routes>
+      <Route
+        path="/:page"
+        component={({ match }: RouteComponentProps<MatchParams>) => (
+          <View match={match} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+        )}
+      />
     </Provider>
   );
 };

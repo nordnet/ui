@@ -149,6 +149,7 @@ exports[`Storyshots Molecules / SelectionCard Default 1`] = `
   <div
     className="c1 c2 c3"
   >
+    
     <div
       className="c4 c5"
     >
@@ -341,12 +342,15 @@ exports[`Storyshots Molecules / SelectionCard With Icon 1`] = `
   <div
     className="c1 c2 c3"
   >
+    
     <div
       className="c4 c5"
     >
       <div
         className="c6"
-      />
+      >
+        
+      </div>
       <div
         className="c7"
       >
@@ -408,7 +412,9 @@ exports[`Storyshots Molecules / SelectionCard With Icon 1`] = `
         >
           <span
             className="Typography__Span-sc-10mju41-0 c14 "
-          />
+          >
+            
+          </span>
         </div>
       </div>
     </div>
@@ -561,12 +567,15 @@ exports[`Storyshots Molecules / SelectionCard With React Node 1`] = `
   <div
     className="c1 c2 c3"
   >
+    
     <div
       className="c4 c5"
     >
       <div
         className="c6"
-      />
+      >
+        
+      </div>
       <div
         className="c7"
       >
@@ -739,12 +748,15 @@ Array [
     <div
       className="c1 c2 c3"
     >
+      
       <div
         className="c4 c5"
       >
         <div
           className="c6"
-        />
+        >
+          
+        </div>
         <div
           className="c7"
         >

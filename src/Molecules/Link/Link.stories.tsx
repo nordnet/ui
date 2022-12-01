@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { action } from '@storybook/addon-actions';
-import { Route, Routes, useLocation } from 'react-router';
+import { Route } from 'react-router';
 import { Link, Typography } from '../..';
 import { Provider } from '../../common/Links/ReactRouterLinkHelper';
 import { Display } from '../../common/Display';
@@ -17,8 +17,7 @@ const ExampleBlackBackground = styled.div`
   background: ${(p) => p.theme.color.backgroundDark};
 `;
 
-const View = () => {
-  const location = useLocation();
+const View = ({ location }: any) => {
   return (
     <pre>
       <code>{JSON.stringify(location, null, 2)}</code>
@@ -38,9 +37,7 @@ export const defaultUsage = () => (
         Link2
       </Link>
     </Typography>
-    <Routes>
-      <Route path="/:id" element={<View />} />
-    </Routes>
+    <Route path="/:id" component={View} />
   </Provider>
 );
 
@@ -60,9 +57,7 @@ export const withTypographyPrimaryAsType = () => (
         Link2
       </Link>
     </Typography>
-    <Routes>
-      <Route path="/:id" element={<View />} />
-    </Routes>
+    <Route path="/:id" component={View} />
   </Provider>
 );
 

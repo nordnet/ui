@@ -18,13 +18,13 @@ type BaseProps = HtmlProps & {
 
 export type Props = BaseProps & {
   badgeSize?: 'xs' | 's' | 'm' | 'l' | number;
-  children?: React.ReactNode | (() => React.ReactNode);
+  children?: React.ReactNode;
 };
 
 export type NumberBadgeContentProps = {
   color?: ColorFn;
   typographyType: React.ComponentProps<typeof Typography>['type'];
-  children?: React.ReactNode | (() => React.ReactNode);
+  children?: React.ReactNode;
 };
 
 export type NumberBadgeComponent = React.ForwardRefExoticComponent<

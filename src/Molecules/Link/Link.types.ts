@@ -1,7 +1,7 @@
 import React from 'react';
 
 export type LinkProps = {
-  children: React.ReactNode;
+  children: React.ReactChild | React.ReactChild[];
   onClick?: (e: React.MouseEvent) => void;
   className?: string;
   display?: 'inline' | 'block' | 'inline-block' | 'flex' | 'inline-flex';

@@ -230,7 +230,7 @@ availableOldIcons.story = {
 export const allOldIconsColored = () => (
   <>
     {Object?.entries(OldIcon)?.map(([key, IconComponent]: [string, React.ComponentType<any>]) => (
-      <div key={key} style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
+      <div style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
         <IconComponent
           color={(t: any) => t.color.cta}
           fill={(t: any) => t.color.cta}

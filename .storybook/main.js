@@ -39,13 +39,7 @@ module.exports = {
       ],
     });
 
-    config.module.rules.push({
-      test: /\.mjs$/,
-      include: /node_modules/,
-      type: 'javascript/auto',
-    });
-
-    config.resolve.extensions.push('.ts', '.tsx', '.d.ts', '.md', '.mdx', '.mjs');
+    config.resolve.extensions.push('.ts', '.tsx', '.d.ts', '.md', '.mdx');
     return config;
   },
 };

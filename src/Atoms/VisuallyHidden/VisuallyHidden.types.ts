@@ -1,7 +1,7 @@
 import React from 'react';
 
 type Props = {
-  as?: any;
+  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   children?: React.ReactNode;
 };
 

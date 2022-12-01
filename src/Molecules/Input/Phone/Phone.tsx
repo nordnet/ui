@@ -99,7 +99,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
   );
 
   const byCountry = useCallback(
-    (a: any, b: any) => {
+    (a, b) => {
       if (a.country === sortByCountry) {
         return -1;
       }
