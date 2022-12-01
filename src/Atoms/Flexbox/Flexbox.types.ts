@@ -7,7 +7,7 @@ export type ContainerProps = {
   container?: boolean;
   width?: Width;
   height?: Height;
-  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+  as?: any;
   /** flexbox direction */
   direction?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
   wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
@@ -66,7 +66,7 @@ export type ItemProps = {
   size?: number | string;
   width?: Width;
   height?: Height;
-  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+  as?: any;
   hidden?: boolean;
   /** a11y */
   role?: string;

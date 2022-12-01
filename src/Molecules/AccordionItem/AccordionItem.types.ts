@@ -1,7 +1,7 @@
 import { Types } from '../../Atoms/Typography/Typography.types';
 
 export type Props = {
-  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+  as?: any;
   children?: React.ReactNode;
   className?: string;
   /** Setting this prop makes the component controlled */

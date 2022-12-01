@@ -60,7 +60,7 @@ type WhiteSpace =
   | 'unset';
 
 export type Props = {
-  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+  as?: any;
   className?: string;
   color?: 'inherit' | ColorFn;
   id?: string;
