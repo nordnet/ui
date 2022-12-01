@@ -1,12 +1,11 @@
 const path = require('path');
 
-const srcPath = path.join(process.cwd(), 'src');
+const srcPath = '../src/';
 const storiesDir = process.env.STORYBOOK_DIRECTORY
   ? path.join(srcPath, process.env.STORYBOOK_DIRECTORY)
   : srcPath;
 
 module.exports = {
-  stories: ['../docs/**/*.stories.mdx', path.join(storiesDir, '**/*.stories.@(js|jsx|ts|tsx|mdx)')],
   addons: [
     '@storybook/addon-essentials',
     '@storybook/addon-storysource',
@@ -15,6 +14,8 @@ module.exports = {
     'storybook-addon-intl',
     'storybook-dark-mode',
   ],
+  framework: '@storybook/react',
+  stories: ['../docs/**/*.stories.mdx', path.join(storiesDir, '**/*.stories.@(js|jsx|ts|tsx|mdx)')],
 
   webpackFinal: async (config) => {
     config.entry.unshift(require.resolve('core-js/es/weak-set'));
