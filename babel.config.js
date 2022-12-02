@@ -42,7 +42,7 @@ module.exports = (api) => {
         plugins,
       },
       test: {
-        plugins: [...plugins, 'require-context-hook', '@babel/plugin-transform-runtime'],
+        plugins: [...plugins, '@babel/plugin-transform-runtime'],
       },
     },
   };
