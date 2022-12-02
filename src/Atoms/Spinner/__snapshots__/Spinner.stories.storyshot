@@ -79,7 +79,7 @@ exports[`Storyshots Atoms / Spinner Colors 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Default
       </span>
@@ -94,7 +94,7 @@ exports[`Storyshots Atoms / Spinner Colors 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Color: text
       </span>
@@ -109,7 +109,7 @@ exports[`Storyshots Atoms / Spinner Colors 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Color: positive
       </span>
@@ -124,7 +124,7 @@ exports[`Storyshots Atoms / Spinner Colors 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Color: negative
       </span>
@@ -139,7 +139,7 @@ exports[`Storyshots Atoms / Spinner Colors 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Color: warning
       </span>
@@ -154,7 +154,7 @@ exports[`Storyshots Atoms / Spinner Colors 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         Color: label
       </span>
@@ -176,7 +176,7 @@ Array [
 }
 
 <span
-    className="Typography__Span-sc-10mju41-0 c0"
+    className="c0"
   >
     Only the one with green border should be shown. The bug before was that if two spinners had the same size and color, both were hidden.
   </span>,
@@ -234,12 +234,12 @@ exports[`Storyshots Atoms / Spinner Spinner without default delay 1`] = `
       >
         <stop
           offset="0%"
-          stopColor="#336BFF"
+          stopColor="#0046FF"
           stopOpacity="0"
         />
         <stop
           offset="100%"
-          stopColor="#336BFF"
+          stopColor="#0046FF"
           stopOpacity=".5"
         />
       </linearGradient>
@@ -252,12 +252,12 @@ exports[`Storyshots Atoms / Spinner Spinner without default delay 1`] = `
       >
         <stop
           offset="0%"
-          stopColor="#336BFF"
+          stopColor="#0046FF"
           stopOpacity=".5"
         />
         <stop
           offset="100%"
-          stopColor="#336BFF"
+          stopColor="#0046FF"
         />
       </linearGradient>
     </defs>

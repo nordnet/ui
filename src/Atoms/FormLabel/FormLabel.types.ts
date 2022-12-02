@@ -1,5 +1,5 @@
 export type Props = {
-  as?: any;
+  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   className?: string;
   forId?: string;
   hideLabel?: boolean;

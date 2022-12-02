@@ -22,23 +22,21 @@ yarn add @nordnet/ui
 
 ```jsx
 // src/root.js
-import { createRoot } from 'react-dom/client';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '@nordnet/ui';
 import App from './App';
 
-const container = document.getElementById('app');
-const root = createRoot(container); // createRoot(container!) if you use TypeScript
-root.render(
+const Root = (
   <ThemeProvider theme={theme}>
     <App />
-  </ThemeProvider>,
+  </ThemeProvider>
 );
+ReactDOM.render(Root, document.getElementById('app'));
 
 // src/App.js
 import { Button } from '@nordnet/ui';
 
-const App = (props) => (
+const App = props => (
   <div>
     <Button size="l" variant="secondary">
       Hit me

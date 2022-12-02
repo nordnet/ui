@@ -931,23 +931,21 @@ export const accessibleFromDocumentForms = () =>
 
     return (
       <form name={FORM_NAME}>
-        <>
-          <Input.Select
-            id="forms-input-test"
-            options={accountOptions}
-            name={SELECT_NAME}
-            label="User account"
-            placeholder="Select account"
-            // Every time the value updates
-            // The story gonna rerender
-            // So we have fresh stuff from document.forms
-            // @ts-ignore
-            onChange={() => setTimeout(() => forceUpdate({}), 10)}
-          />
-          <br />
-          Value in form: &quot;
-          {R.path(['forms', FORM_NAME, 'elements', SELECT_NAME, 'value'])(document)}&quot;
-        </>
+        <Input.Select
+          id="forms-input-test"
+          options={accountOptions}
+          name={SELECT_NAME}
+          label="User account"
+          placeholder="Select account"
+          // Every time the value updates
+          // The story gonna rerender
+          // So we have fresh stuff from document.forms
+          // @ts-ignore
+          onChange={() => setTimeout(() => forceUpdate({}), 10)}
+        />
+        <br />
+        Value in form: &quot;
+        {R.path(['forms', FORM_NAME, 'elements', SELECT_NAME, 'value'])(document)}&quot;
       </form>
     );
   });

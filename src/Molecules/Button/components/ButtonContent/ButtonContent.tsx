@@ -1,5 +1,5 @@
-import React from 'react';
-import styled, { useTheme } from 'styled-components';
+import React, { useContext } from 'react';
+import styled, { ThemeContext } from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ButtonContentComponent, ButtonContentProps } from './ButtonContent.types';
 import { Flexbox, Spinner, Typography } from '../../../..';
@@ -43,7 +43,7 @@ export const ButtonContent: ButtonContentComponent = (props) => {
     size,
     delayLoadingSpinnerAnimation = true,
   } = props;
-  const theme = useTheme();
+  const theme = useContext(ThemeContext);
 
   let type: 'primary' | 'secondary' | 'tertiary';
   switch (size) {

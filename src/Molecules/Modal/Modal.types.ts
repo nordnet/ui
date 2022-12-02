@@ -43,5 +43,4 @@ export type Props = {
 export type BackdropWrapperProps = BackdropProps & {
   showBackdrop: boolean;
   backdropRef: React.RefObject<HTMLDivElement>;
-  children?: React.ReactNode;
 };

@@ -1,8 +1,8 @@
 import React from 'react';
-import { cleanup, render, act } from '@testing-library/react';
+import { cleanup, render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import { renderToString } from 'react-dom/server';
-import { hydrateRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import { createTheme, Media, useMedia } from '../..';
 import { Theme } from '../../theme/theme.types';
 
@@ -123,13 +123,11 @@ test('Hydration', async () => {
   main.innerHTML = html;
   const htmlSSR = main.innerHTML;
 
-  hydrateRoot(main, <Element />);
+  ReactDOM.hydrate(<Element />, main);
 
   const htmlBeforeEffect = main.innerHTML;
 
-  await act(async () => {
-    await new Promise((res) => setTimeout(res, 0)); // wait for effect to be invoked
-  });
+  await new Promise((res) => setTimeout(res, 0)); // wait for effect to be invoked
 
   const htmlAfterEffect = main.innerHTML;
 

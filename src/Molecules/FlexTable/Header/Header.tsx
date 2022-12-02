@@ -149,7 +149,7 @@ const Header: HeaderComponent = (props) => {
       {...cellFlexProps}
     >
       {isElement(children) && children}
-      {isFunction(children) // @ts-ignore
+      {isFunction(children)
         ? children({ sortable, sortOrder, onSortClick, sorted, columnId })
         : !isElement(children) && (
             <HeaderContent

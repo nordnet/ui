@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { FlexPropsType } from '../shared/shared.types';
 import { TextWrapper } from './TextWrapper';
 
-type RenderProp = {
-  columnId: string;
-};
+type RenderPropArguments = { columnId: string };
+type RenderFunc = (props: RenderPropArguments) => ReactNode;
+type Children = ReactNode | RenderFunc;
 
 export type Props = {
-  children?: React.ReactNode | ((obj: RenderProp) => React.ReactNode);
+  children?: Children;
   /**
    * Define which column which cell it belongs to and sets the column layout defined in the `Header`
    */
@@ -16,7 +16,8 @@ export type Props = {
 
 export type CellComponents = { TextWrapper: typeof TextWrapper };
 
-export type CellComponent = React.FC<Props> & CellComponents;
+export type CellComponent = React.FC<Props & React.ComponentProps<typeof TextWrapper>> &
+  CellComponents;
 
 type ExpandCellProps = {
   /**
@@ -42,8 +43,9 @@ type TextWrapperProps = {
   truncate?: boolean;
   className?: string;
   weight?: string;
+  children?: React.ReactNode;
 };
 
-export type TextWrapperComponent = React.FC<TextWrapperProps & { children?: React.ReactNode }>;
+export type TextWrapperComponent = React.FC<TextWrapperProps>;
 
 export type ExpandCellComponent = React.FC<ExpandCellProps & FlexPropsType>;

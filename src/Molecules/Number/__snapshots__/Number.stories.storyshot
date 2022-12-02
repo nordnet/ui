@@ -79,12 +79,13 @@ exports[`Storyshots Molecules / Number Default 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         value = 1000
       </span>
     </div>
     <div>
+      
       1,000
     </div>
   </div>
@@ -96,12 +97,13 @@ exports[`Storyshots Molecules / Number Default 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         value = 9000000
       </span>
     </div>
     <div>
+      
       9,000,000
     </div>
   </div>
@@ -113,12 +115,13 @@ exports[`Storyshots Molecules / Number Default 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         value = 0.01
       </span>
     </div>
     <div>
+      
       0.01
     </div>
   </div>
@@ -130,12 +133,13 @@ exports[`Storyshots Molecules / Number Default 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         value = 111.2
       </span>
     </div>
     <div>
+      
       111.2
     </div>
   </div>
@@ -312,14 +316,14 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         primary
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         <div
           className="c0"
@@ -333,12 +337,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 1000
               </span>
             </div>
             <div>
+              
               1,000
             </div>
           </div>
@@ -350,12 +355,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 9000000
               </span>
             </div>
             <div>
+              
               9,000,000
             </div>
           </div>
@@ -367,12 +373,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 0.01
               </span>
             </div>
             <div>
+              
               0.01
             </div>
           </div>
@@ -384,12 +391,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 111.2
               </span>
             </div>
             <div>
+              
               111.2
             </div>
           </div>
@@ -405,14 +413,14 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         secondary
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c4"
+        className="c4"
       >
         <div
           className="c0"
@@ -426,12 +434,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 1000
               </span>
             </div>
             <div>
+              
               1,000
             </div>
           </div>
@@ -443,12 +452,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 9000000
               </span>
             </div>
             <div>
+              
               9,000,000
             </div>
           </div>
@@ -460,12 +470,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 0.01
               </span>
             </div>
             <div>
+              
               0.01
             </div>
           </div>
@@ -477,12 +488,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 111.2
               </span>
             </div>
             <div>
+              
               111.2
             </div>
           </div>
@@ -498,14 +510,14 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         tertiary
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c5"
+        className="c5"
       >
         <div
           className="c0"
@@ -519,12 +531,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 1000
               </span>
             </div>
             <div>
+              
               1,000
             </div>
           </div>
@@ -536,12 +549,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 9000000
               </span>
             </div>
             <div>
+              
               9,000,000
             </div>
           </div>
@@ -553,12 +567,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 0.01
               </span>
             </div>
             <div>
+              
               0.01
             </div>
           </div>
@@ -570,12 +585,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 111.2
               </span>
             </div>
             <div>
+              
               111.2
             </div>
           </div>
@@ -591,14 +607,14 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         caption
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c6"
+        className="c6"
       >
         <div
           className="c0"
@@ -612,12 +628,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 1000
               </span>
             </div>
             <div>
+              
               1,000
             </div>
           </div>
@@ -629,12 +646,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 9000000
               </span>
             </div>
             <div>
+              
               9,000,000
             </div>
           </div>
@@ -646,12 +664,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 0.01
               </span>
             </div>
             <div>
+              
               0.01
             </div>
           </div>
@@ -663,12 +682,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 111.2
               </span>
             </div>
             <div>
+              
               111.2
             </div>
           </div>
@@ -684,14 +704,14 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         title1
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c7"
+        className="c7"
       >
         <div
           className="c0"
@@ -705,12 +725,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 1000
               </span>
             </div>
             <div>
+              
               1,000
             </div>
           </div>
@@ -722,12 +743,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 9000000
               </span>
             </div>
             <div>
+              
               9,000,000
             </div>
           </div>
@@ -739,12 +761,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 0.01
               </span>
             </div>
             <div>
+              
               0.01
             </div>
           </div>
@@ -756,12 +779,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 111.2
               </span>
             </div>
             <div>
+              
               111.2
             </div>
           </div>
@@ -777,14 +801,14 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         title2
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c8"
+        className="c8"
       >
         <div
           className="c0"
@@ -798,12 +822,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 1000
               </span>
             </div>
             <div>
+              
               1,000
             </div>
           </div>
@@ -815,12 +840,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 9000000
               </span>
             </div>
             <div>
+              
               9,000,000
             </div>
           </div>
@@ -832,12 +858,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 0.01
               </span>
             </div>
             <div>
+              
               0.01
             </div>
           </div>
@@ -849,12 +876,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 111.2
               </span>
             </div>
             <div>
+              
               111.2
             </div>
           </div>
@@ -870,14 +898,14 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         title3
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c9"
+        className="c9"
       >
         <div
           className="c0"
@@ -891,12 +919,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 1000
               </span>
             </div>
             <div>
+              
               1,000
             </div>
           </div>
@@ -908,12 +937,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 9000000
               </span>
             </div>
             <div>
+              
               9,000,000
             </div>
           </div>
@@ -925,12 +955,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 0.01
               </span>
             </div>
             <div>
+              
               0.01
             </div>
           </div>
@@ -942,12 +973,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 111.2
               </span>
             </div>
             <div>
+              
               111.2
             </div>
           </div>
@@ -963,14 +995,14 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         hero
       </span>
     </div>
     <div>
       <span
-        className="Typography__Span-sc-10mju41-0 c10"
+        className="c10"
       >
         <div
           className="c0"
@@ -984,12 +1016,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 1000
               </span>
             </div>
             <div>
+              
               1,000
             </div>
           </div>
@@ -1001,12 +1034,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 9000000
               </span>
             </div>
             <div>
+              
               9,000,000
             </div>
           </div>
@@ -1018,12 +1052,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 0.01
               </span>
             </div>
             <div>
+              
               0.01
             </div>
           </div>
@@ -1035,12 +1070,13 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
               className="c2"
             >
               <span
-                className="Typography__Span-sc-10mju41-0 c3"
+                className="c3"
               >
                 value = 111.2
               </span>
             </div>
             <div>
+              
               111.2
             </div>
           </div>
@@ -1155,12 +1191,13 @@ Array [
         className="c2"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           value = 0.55555
         </span>
       </div>
       <div>
+        
         0.5556
       </div>
     </div>
@@ -1172,12 +1209,13 @@ Array [
         className="c2"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           value = 10.333
         </span>
       </div>
       <div>
+        
         10.33
       </div>
     </div>
@@ -1189,12 +1227,13 @@ Array [
         className="c2"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           value = 10.5
         </span>
       </div>
       <div>
+        
         10.50
       </div>
     </div>
@@ -1206,12 +1245,13 @@ Array [
         className="c2"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           value = 100001.22
         </span>
       </div>
       <div>
+        
         100,001.2
       </div>
     </div>
@@ -1298,12 +1338,13 @@ exports[`Storyshots Molecules / Number Number with 2 decimals  1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         value = 10.378
       </span>
     </div>
     <div>
+      
       10.38
     </div>
   </div>
@@ -1315,12 +1356,13 @@ exports[`Storyshots Molecules / Number Number with 2 decimals  1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         value = 10.333
       </span>
     </div>
     <div>
+      
       10.33
     </div>
   </div>
@@ -1332,12 +1374,13 @@ exports[`Storyshots Molecules / Number Number with 2 decimals  1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         value = 10
       </span>
     </div>
     <div>
+      
       10.00
     </div>
   </div>
@@ -1349,12 +1392,13 @@ exports[`Storyshots Molecules / Number Number with 2 decimals  1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         value = 10.5
       </span>
     </div>
     <div>
+      
       10.50
     </div>
   </div>
@@ -1363,6 +1407,7 @@ exports[`Storyshots Molecules / Number Number with 2 decimals  1`] = `
 
 exports[`Storyshots Molecules / Number Number with currency 1`] = `
 Array [
+  "",
   "2.3",
   " SEK",
 ]
@@ -1416,21 +1461,23 @@ Array [
 }
 
 <div
-    className="Typography__Span-sc-10mju41-0 c0"
+    className="c0"
   >
     <div
       className="c1"
     >
+      
       2.3
        SEK
     </div>
     <span
       aria-hidden={true}
     >
+      
       2.3
        
       <span
-        className="Typography__Span-sc-10mju41-0 c2 c3"
+        className="c2 c3"
       >
         SEK
       </span>
@@ -1476,21 +1523,23 @@ Array [
 }
 
 <div
-    className="Typography__Span-sc-10mju41-0 c0"
+    className="c0"
   >
     <div
       className="c1"
     >
+      
       2.3
        SEK
     </div>
     <span
       aria-hidden={true}
     >
+      
       2.3
        
       <span
-        className="Typography__Span-sc-10mju41-0 c2 c3"
+        className="c2 c3"
       >
         SEK
       </span>
@@ -1501,17 +1550,24 @@ Array [
 
 exports[`Storyshots Molecules / Number Number with min/max digits 1`] = `
 Array [
+  "",
   "10.38",
+  "",
   "10.10",
+  "",
   "10.333",
+  "",
   "10.10",
+  "",
   "10.6667",
+  "",
   "10.00",
 ]
 `;
 
 exports[`Storyshots Molecules / Number Number with percentage 1`] = `
 Array [
+  "",
   "2.3",
   "%",
 ]
@@ -1596,7 +1652,7 @@ exports[`Storyshots Molecules / Number Number with sign 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         value = 2
       </span>
@@ -1614,12 +1670,13 @@ exports[`Storyshots Molecules / Number Number with sign 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         value = 0
       </span>
     </div>
     <div>
+      
       0
     </div>
   </div>
@@ -1631,12 +1688,13 @@ exports[`Storyshots Molecules / Number Number with sign 1`] = `
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         value = -1
       </span>
     </div>
     <div>
+      
       -1
     </div>
   </div>
@@ -1723,12 +1781,13 @@ Array [
         className="c2"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           value = 0.1
         </span>
       </div>
       <div>
+        
         0
       </div>
     </div>
@@ -1811,12 +1870,13 @@ Array [
         className="c2"
       >
         <span
-          className="Typography__Span-sc-10mju41-0 c3"
+          className="c3"
         >
           value = 0.1
         </span>
       </div>
       <div>
+        
         0
       </div>
     </div>
@@ -1904,12 +1964,13 @@ exports[`Storyshots Molecules / Number Regression: value is positive, but rounde
       className="c2"
     >
       <span
-        className="Typography__Span-sc-10mju41-0 c3"
+        className="c3"
       >
         value = 0.1
       </span>
     </div>
     <div>
+      
       0
     </div>
   </div>

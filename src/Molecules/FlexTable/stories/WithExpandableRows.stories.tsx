@@ -249,13 +249,12 @@ export const ControlledExpandedTable = () => {
   return <ControlledExpandedTableExample />;
 };
 
-const RowWithPointer = styled(FlexTable.Row)`
-  :hover {
-    cursor: pointer;
-  }
-`;
-
 export const ControlledExpandableTableWithClickableRows = () => {
+  const RowWithPointer = styled(FlexTable.Row)`
+    :hover {
+      cursor: pointer;
+    }
+  `;
   const expandItems = [
     { label: 'Expand item 1', value: 123 },
     { label: 'Expand item 2', value: 456 },

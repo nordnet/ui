@@ -170,7 +170,7 @@ export const Drawer = React.forwardRef<HTMLDivElement, Props>(
     const dragControls = useDragControls();
 
     const startDrag = useCallback(
-      (event: any) => {
+      (event) => {
         dragControls.start(event, {
           snapToCursor: false,
         });

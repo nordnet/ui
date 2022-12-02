@@ -1,4 +1,3 @@
-import React from 'react';
 import { Props as CardProps } from '../../Atoms/Card/Card.types';
 
 export type Props = {
@@ -7,7 +6,6 @@ export type Props = {
   title: React.ReactNode;
   noTopPadding?: boolean;
   noBottomPadding?: boolean;
-  children?: React.ReactNode;
 };
 
 export type CardWithTitleComponent = React.FunctionComponent<Props & CardProps>;

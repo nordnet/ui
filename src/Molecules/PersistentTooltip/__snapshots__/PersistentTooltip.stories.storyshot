@@ -3187,6 +3187,21 @@ Array [
       tabIndex={0}
     />
     <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
       data-focus-lock-disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -3599,6 +3614,21 @@ Array [
         }
       }
       tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
     />
     <div
       data-focus-lock-disabled={false}
