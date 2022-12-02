@@ -1,5 +1,0 @@
-export const PRIMARY_HORIZONTAL_PADDING = 2;
-export const SECONDARY_HORIZONTAL_PADDING = 1;
-export const VERTICAL_PADDING = 0.5;
-export const PRIMARY_MIN_WIDTH = 6;
-export const SECONDARY_MIN_WIDTH = 5;
