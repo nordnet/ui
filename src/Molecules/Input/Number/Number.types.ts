@@ -35,6 +35,7 @@ export type Props = {
   labelTooltip?: string;
   labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
   leftAddon?: React.ReactNode;
+  locale?: 'da-DK' | 'en-US' | 'fi-FI' | 'nb-NO' | 'sv-SE' | 'sv-FI';
   max?: string | number;
   min?: string | number;
   name?: string;
@@ -46,6 +47,7 @@ export type Props = {
   success?: boolean;
   value?: string | number;
   visuallyEmphasiseRequired?: boolean;
+  thousandSeparator?: boolean;
   noSteppers?: boolean;
 
   onStepUp?: () => void;

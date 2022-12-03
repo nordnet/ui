@@ -200,6 +200,7 @@ const NumberInput: NumberComponent & {
     error,
     id,
     leftAddon,
+    locale = 'sv-SE',
     max,
     min = 0,
     name,
@@ -221,10 +222,12 @@ const NumberInput: NumberComponent & {
     inputMode = 'decimal',
     success,
     value: controlledValueRaw,
+    thousandSeparator,
     visuallyEmphasiseRequired,
     variant = 'normal',
   } = props;
   const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
+
   const intl = useIntl();
   // Quiet variant only works while there are noSteppers
   const showSteppers =
@@ -232,6 +235,12 @@ const NumberInput: NumberComponent & {
   const placeholder = showSteppers ? undefined : placeholderRaw;
   const handleValueChange = (val: string) => {
     setInternalValue(val);
+
+    if (thousandSeparator) {
+      const formatValue = +val.replace(/\D/g, '');
+      const addSeparator = new Intl.NumberFormat(locale).format(formatValue);
+      setInternalValue(addSeparator);
+    }
 
     if (typeof onChange === 'function') {
       onChange(val);
@@ -244,6 +253,7 @@ const NumberInput: NumberComponent & {
   const numberAsString =
     controlledValueRaw === '-' ? controlledValueRaw : getNumberAsString(controlledValueRaw);
   const controlledValue = isControlled && numberAsString;
+
   const value = isControlled ? controlledValue : internalValue;
 
   const sanitizedNumbers = {
@@ -343,6 +353,7 @@ const NumberInput: NumberComponent & {
               id,
               error,
               leftAddon,
+              locale,
               max,
               min,
               name,
@@ -364,6 +375,7 @@ const NumberInput: NumberComponent & {
               inputMode,
               showSteppers,
               variant,
+              thousandSeparator,
             }}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
             {...(autoComplete ? { autoComplete } : {})}
