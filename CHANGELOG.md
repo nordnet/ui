@@ -1,3 +1,11 @@
+## [12.0.2](https://github.com/nordnet/ui/compare/v12.0.1...v12.0.2) (2022-12-03)
+
+
+### Bug Fixes
+
+* update browserslist ([c1b8bd9](https://github.com/nordnet/ui/commit/c1b8bd9))
+* update storybook and change log level ([8e78ccc](https://github.com/nordnet/ui/commit/8e78ccc))
+
 ## [12.0.1](https://github.com/nordnet/ui/compare/v12.0.0...v12.0.1) (2022-11-29)
 
 
