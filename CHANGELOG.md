@@ -1,3 +1,11 @@
+# [12.1.0](https://github.com/nordnet/ui/compare/v12.0.6...v12.1.0) (2022-12-05)
+
+
+### Features
+
+* 🎸 add colors ([a6f8001](https://github.com/nordnet/ui/commit/a6f8001))
+* 🎸 add new AllocationBar component ([66028e7](https://github.com/nordnet/ui/commit/66028e7))
+
 ## [12.0.6](https://github.com/nordnet/ui/compare/v12.0.5...v12.0.6) (2022-12-05)
 
 
