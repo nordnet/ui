@@ -1,3 +1,10 @@
+## [12.0.5](https://github.com/nordnet/ui/compare/v12.0.4...v12.0.5) (2022-12-05)
+
+
+### Bug Fixes
+
+* migrate to webpack5 ([#1275](https://github.com/nordnet/ui/issues/1275)) ([574fa75](https://github.com/nordnet/ui/commit/574fa75))
+
 ## [12.0.4](https://github.com/nordnet/ui/compare/v12.0.3...v12.0.4) (2022-12-05)
 
 
