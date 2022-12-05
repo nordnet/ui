@@ -24,22 +24,4 @@ module.exports = {
   features: {
     postcss: false,
   },
-  webpackFinal: async (config) => {
-    config.entry.unshift(require.resolve('core-js/es/weak-set'));
-    config.module.rules.push({
-      test: /\.jsx?$/,
-      loader: require.resolve('babel-loader'),
-      include: [
-        path.resolve(__dirname, '..', 'node_modules', 'use-ssr'),
-        path.resolve(__dirname, '..', 'node_modules', 'color'),
-      ],
-    });
-    config.module.rules.push({
-      test: /\.mjs$/,
-      include: /node_modules/,
-      type: 'javascript/auto',
-    });
-    config.resolve.extensions.push('.ts', '.tsx', '.d.ts', '.md', '.mdx', '.mjs');
-    return config;
-  },
 };
