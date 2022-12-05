@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules / Allocation Bar Basic usage 1`] = `
+.c6 {
+  margin-left: 8px;
+  background-color: transparent;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 {
+  box-sizing: border-box;
+  -webkit-flex: 80%;
+  -ms-flex: 80%;
+  flex: 80%;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c10 {
+  box-sizing: border-box;
+  height: 8px;
+  -webkit-flex: 80%;
+  -ms-flex: 80%;
+  flex: 80%;
+}
+
+.c12 {
+  box-sizing: border-box;
+  -webkit-flex: 20%;
+  -ms-flex: 20%;
+  flex: 20%;
+}
+
+.c14 {
+  box-sizing: border-box;
+  height: 8px;
+  -webkit-flex: 20%;
+  -ms-flex: 20%;
+  flex: 20%;
+}
+
+.c4 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E6E;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  background-color: #1F4099;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.c15 {
+  background-color: #6690FF;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.c5 {
+  color: #1F4099;
+}
+
+.c13 {
+  color: #6690FF;
+}
+
+.c0 {
+  width: 100%;
+  height: 100vh;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <svg
+          aria-hidden="true"
+          className="c4 c5"
+          focusable="false"
+          height={8}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={8}
+        >
+          <circle
+            cx={4}
+            cy={4}
+            fill="currentColor"
+            r={4}
+          />
+        </svg>
+        <div
+          className="c6"
+        >
+          <div
+            className="c7"
+          >
+            <span
+              className="Typography__Span-sc-10mju41-0 c8"
+            >
+              
+              80
+              %
+            </span>
+            <span
+              className="Typography__Span-sc-10mju41-0 c9"
+            >
+              Funds
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c10 c11"
+      />
+    </div>
+    <div
+      className="c12"
+    >
+      <div
+        className="c3"
+      >
+        <svg
+          aria-hidden="true"
+          className="c4 c13"
+          focusable="false"
+          height={8}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={8}
+        >
+          <circle
+            cx={4}
+            cy={4}
+            fill="currentColor"
+            r={4}
+          />
+        </svg>
+        <div
+          className="c6"
+        >
+          <div
+            className="c7"
+          >
+            <span
+              className="Typography__Span-sc-10mju41-0 c8"
+            >
+              
+              20
+              %
+            </span>
+            <span
+              className="Typography__Span-sc-10mju41-0 c9"
+            >
+              ETFs
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c14 c15"
+      />
+    </div>
+  </div>
+</div>
+`;
