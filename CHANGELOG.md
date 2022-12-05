@@ -1,3 +1,10 @@
+## [12.0.3](https://github.com/nordnet/ui/compare/v12.0.2...v12.0.3) (2022-12-05)
+
+
+### Bug Fixes
+
+* remove storyshots ([#1270](https://github.com/nordnet/ui/issues/1270)) ([2ccfb0a](https://github.com/nordnet/ui/commit/2ccfb0a))
+
 ## [12.0.2](https://github.com/nordnet/ui/compare/v12.0.1...v12.0.2) (2022-12-03)
 
 
