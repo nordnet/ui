@@ -1,5 +1,4 @@
 const path = require('path');
-
 const srcPath = path.join(process.cwd(), 'src');
 const storiesDir = process.env.STORYBOOK_DIRECTORY
   ? path.join(srcPath, process.env.STORYBOOK_DIRECTORY)
@@ -15,23 +14,18 @@ module.exports = {
     'storybook-addon-intl',
     'storybook-dark-mode',
   ],
+  framework: '@storybook/react',
+  core: {
+    builder: 'webpack5',
+  },
+  docs: {
+    docsPage: 'automatic',
+  },
   features: {
     postcss: false,
   },
-
   webpackFinal: async (config) => {
     config.entry.unshift(require.resolve('core-js/es/weak-set'));
-    config.module.rules.push({
-      test: /\.(ts|tsx)$/,
-      loaders: [
-        {
-          loader: 'babel-loader',
-          options: {
-            presets: [['react-app', { flow: false, typescript: true }]],
-          },
-        },
-      ],
-    });
     config.module.rules.push({
       test: /\.jsx?$/,
       loader: require.resolve('babel-loader'),
@@ -40,13 +34,11 @@ module.exports = {
         path.resolve(__dirname, '..', 'node_modules', 'color'),
       ],
     });
-
     config.module.rules.push({
       test: /\.mjs$/,
       include: /node_modules/,
       type: 'javascript/auto',
     });
-
     config.resolve.extensions.push('.ts', '.tsx', '.d.ts', '.md', '.mdx', '.mjs');
     return config;
   },
