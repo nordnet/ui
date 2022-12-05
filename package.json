@@ -144,7 +144,7 @@
     "react-router": "^6.4.3",
     "react-router-dom": "^6.4.3",
     "rimraf": "3.0.2",
-    "semantic-release": "18.0.1",
+    "semantic-release": "19.0.3",
     "storybook-addon-intl": "2.4.1",
     "storybook-dark-mode": "^1.1.2",
     "stylelint": "10.0.1",
