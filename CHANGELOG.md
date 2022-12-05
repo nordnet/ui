@@ -1,3 +1,10 @@
+## [12.1.1](https://github.com/nordnet/ui/compare/v12.1.0...v12.1.1) (2022-12-05)
+
+
+### Bug Fixes
+
+* clean out webpack config ([#1277](https://github.com/nordnet/ui/issues/1277)) ([70a0282](https://github.com/nordnet/ui/commit/70a0282))
+
 # [12.1.0](https://github.com/nordnet/ui/compare/v12.0.6...v12.1.0) (2022-12-05)
 
 
