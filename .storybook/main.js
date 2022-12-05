@@ -15,10 +15,12 @@ module.exports = {
     'storybook-addon-intl',
     'storybook-dark-mode',
   ],
+  features: {
+    postcss: false,
+  },
 
   webpackFinal: async (config) => {
     config.entry.unshift(require.resolve('core-js/es/weak-set'));
-    config.entry.unshift(require.resolve('focus-within-polyfill'));
     config.module.rules.push({
       test: /\.(ts|tsx)$/,
       loaders: [
