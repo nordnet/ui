@@ -1,3 +1,10 @@
+## [12.0.6](https://github.com/nordnet/ui/compare/v12.0.5...v12.0.6) (2022-12-05)
+
+
+### Bug Fixes
+
+* remove debug logging level ([#1276](https://github.com/nordnet/ui/issues/1276)) ([79b7a41](https://github.com/nordnet/ui/commit/79b7a41))
+
 ## [12.0.5](https://github.com/nordnet/ui/compare/v12.0.4...v12.0.5) (2022-12-05)
 
 
