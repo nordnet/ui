@@ -11,8 +11,4 @@ module.exports = {
     '\\.(jpg|png|svg)$': '<rootDir>/__mocks__/fileMock.js',
     'react-markdown': '<rootDir>/node_modules/react-markdown/react-markdown.min.js',
   },
-  transform: {
-    '^.+\\.[tj]sx?$': 'babel-jest',
-    '^.+\\.mdx?$': '@storybook/addon-docs/jest-transform-mdx',
-  },
 };
