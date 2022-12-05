@@ -1,3 +1,33 @@
+## [12.0.5](https://github.com/nordnet/ui/compare/v12.0.4...v12.0.5) (2022-12-05)
+
+
+### Bug Fixes
+
+* migrate to webpack5 ([#1275](https://github.com/nordnet/ui/issues/1275)) ([574fa75](https://github.com/nordnet/ui/commit/574fa75))
+
+## [12.0.4](https://github.com/nordnet/ui/compare/v12.0.3...v12.0.4) (2022-12-05)
+
+
+### Bug Fixes
+
+* remove focus-within polyfill ([#1273](https://github.com/nordnet/ui/issues/1273)) ([ceeab31](https://github.com/nordnet/ui/commit/ceeab31))
+* remove pre-commit and pre-push rules ([#1271](https://github.com/nordnet/ui/issues/1271)) ([c252474](https://github.com/nordnet/ui/commit/c252474))
+
+## [12.0.3](https://github.com/nordnet/ui/compare/v12.0.2...v12.0.3) (2022-12-05)
+
+
+### Bug Fixes
+
+* remove storyshots ([#1270](https://github.com/nordnet/ui/issues/1270)) ([2ccfb0a](https://github.com/nordnet/ui/commit/2ccfb0a))
+
+## [12.0.2](https://github.com/nordnet/ui/compare/v12.0.1...v12.0.2) (2022-12-03)
+
+
+### Bug Fixes
+
+* update browserslist ([c1b8bd9](https://github.com/nordnet/ui/commit/c1b8bd9))
+* update storybook and change log level ([8e78ccc](https://github.com/nordnet/ui/commit/8e78ccc))
+
 ## [12.0.1](https://github.com/nordnet/ui/compare/v12.0.0...v12.0.1) (2022-11-29)
 
 
