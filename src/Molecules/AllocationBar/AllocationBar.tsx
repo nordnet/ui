@@ -21,10 +21,10 @@ const AllocationBar: React.FC<AllocationBarProps> = ({ allocations }) => (
   <Flexbox container>
     {allocations
       ?.sort((a, b) => b.weight - a.weight)
-      .map(
+      ?.map(
         (allocation) =>
           allocation.weight > 0 && (
-            <Flexbox item flex={`${allocation.weight}%`}>
+            <Flexbox item key={`${allocation.label}`} flex={`${allocation.weight}%`}>
               <Flexbox container alignItems="center">
                 <StyledDotIcon $color={allocation.color} />
                 <Box ml={2}>
