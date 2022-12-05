@@ -183,6 +183,14 @@ export type ThemeColors = {
    */
   allocationBars: string;
   /**
+   * blue700
+   */
+  allocationBarDarkBlue: string;
+  /**
+   * blue400
+   */
+  allocationBarLightBlue: string;
+  /**
    * blue500
    */
   badgeBackground: string;

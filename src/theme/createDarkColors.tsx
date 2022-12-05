@@ -34,6 +34,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     accountBadgeBackground: rawColor.black,
     accountBadgeText: rawColor.white,
     allocationBars: rawColor.teal400,
+    allocationBarDarkBlue: rawColor.blue700,
+    allocationBarLightBlue: rawColor.blue400,
 
     background: rawColor.gray900,
     backgroundBlack: rawColor.black,
