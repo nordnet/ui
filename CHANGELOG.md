@@ -1,3 +1,11 @@
+## [12.0.4](https://github.com/nordnet/ui/compare/v12.0.3...v12.0.4) (2022-12-05)
+
+
+### Bug Fixes
+
+* remove focus-within polyfill ([#1273](https://github.com/nordnet/ui/issues/1273)) ([ceeab31](https://github.com/nordnet/ui/commit/ceeab31))
+* remove pre-commit and pre-push rules ([#1271](https://github.com/nordnet/ui/issues/1271)) ([c252474](https://github.com/nordnet/ui/commit/c252474))
+
 ## [12.0.3](https://github.com/nordnet/ui/compare/v12.0.2...v12.0.3) (2022-12-05)
 
 
