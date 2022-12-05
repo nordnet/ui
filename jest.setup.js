@@ -1,5 +1,3 @@
-const registerRequireContextHook = require('babel-plugin-require-context-hook/register');
-
 jest.mock('framer-motion', () => {
   const React = require('react'); // eslint-disable-line global-require
   const Dummy = (type = React.Fragment) => ({ children }) =>
@@ -14,5 +12,3 @@ jest.mock('framer-motion', () => {
     AnimatePresence: Dummy(),
   };
 });
-
-registerRequireContextHook();
