@@ -44,7 +44,8 @@ const Card = styled.div<CardProps>`
   ${(p) => (p.barColor ? barStyles : ``)}
 
   ${({ bottomSheet, theme }) =>
-    `${bottomSheet && theme.media.lessThan(theme.breakpoints.sm)} {
+    bottomSheet &&
+    `${theme.media.lessThan(theme.breakpoints.sm)} {
     bottom: 0;
     left: 0;
     width: 100%;
