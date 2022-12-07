@@ -71,6 +71,11 @@ const arrowLeft = css`
 `;
 
 const Arrow = styled.div<InternalProps>`
+  ${({ bottomSheet, theme }) =>
+    `${bottomSheet && theme.media.lessThan(theme.breakpoints.sm)} {
+    display: none;
+  }`}
+
   position: absolute;
 
   &::before,
@@ -120,9 +125,16 @@ const getArrowPositionStyles = (bubblePlacement: Props['bubblePlacement']) => {
 };
 
 export const BubbleArrow: Component = React.forwardRef<HTMLDivElement, Props>(
-  ({ bubblePlacement }, ref) => {
+  ({ bubblePlacement, bottomSheet }, ref) => {
     const arrowPositionStyles = getArrowPositionStyles(bubblePlacement);
 
-    return <Arrow $bubblePlacement={bubblePlacement} style={arrowPositionStyles} ref={ref} />;
+    return (
+      <Arrow
+        $bubblePlacement={bubblePlacement}
+        style={arrowPositionStyles}
+        ref={ref}
+        bottomSheet={bottomSheet}
+      />
+    );
   },
 );

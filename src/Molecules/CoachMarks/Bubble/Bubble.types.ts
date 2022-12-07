@@ -9,10 +9,12 @@ export type Props = {
   ref?: React.Ref<HTMLDivElement>;
   style?: object;
   barColor?: ColorFn;
+  bottomSheet?: boolean;
 };
 
 export type CardProps = {
   barColor?: ColorFn;
+  bottomSheet?: boolean;
 };
 
 export type Component = React.FC<Props>;
