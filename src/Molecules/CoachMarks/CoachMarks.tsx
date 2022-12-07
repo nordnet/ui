@@ -65,7 +65,6 @@ export const CoachMarks: Component = ({
           offset: [-highlightBoxPadding, OFFSET_AWAY_FROM_REFERENCE + Number(highlightBoxPadding)],
         },
       },
-      { name: 'applyStyles', options: { background: 'red' } },
     ],
   });
 
