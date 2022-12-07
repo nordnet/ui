@@ -34,6 +34,7 @@ export type Props = {
   multiStepIndicatorText?: string;
   closeOnClickOutside?: boolean;
   barColor?: ColorFn;
+  bottomSheet?: boolean;
 };
 
 export type Component = React.FC<Props>;

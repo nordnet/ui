@@ -41,13 +41,25 @@ const Card = styled.div<CardProps>`
   z-index: ${(p) => p.theme.zIndex.modal + 1};
   display: flex;
   box-sizing: border-box;
-
   ${(p) => (p.barColor ? barStyles : ``)}
+
+  ${({ bottomSheet, theme }) =>
+    `${bottomSheet && theme.media.lessThan(theme.breakpoints.sm)} {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }`}
 `;
 
 export const Bubble: Component = React.forwardRef<HTMLDivElement, Props>(
-  ({ children, className, style, barColor }, ref) => (
-    <Card className={className} style={style} ref={ref} barColor={barColor}>
+  ({ children, className, style, barColor, bottomSheet }, ref) => (
+    <Card
+      className={className}
+      style={style}
+      ref={ref}
+      barColor={barColor}
+      bottomSheet={bottomSheet}
+    >
       {children}
     </Card>
   ),
