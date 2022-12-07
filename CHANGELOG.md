@@ -1,3 +1,16 @@
+# [12.2.0](https://github.com/nordnet/ui/compare/v12.1.1...v12.2.0) (2022-12-07)
+
+
+### Bug Fixes
+
+* clean css ([5c1e219](https://github.com/nordnet/ui/commit/5c1e219))
+* remove apply styles modifier ([17e4e2b](https://github.com/nordnet/ui/commit/17e4e2b))
+
+
+### Features
+
+* coach marks bottom sheet on mobile functionality ([497ecd3](https://github.com/nordnet/ui/commit/497ecd3))
+
 ## [12.1.1](https://github.com/nordnet/ui/compare/v12.1.0...v12.1.1) (2022-12-05)
 
 
