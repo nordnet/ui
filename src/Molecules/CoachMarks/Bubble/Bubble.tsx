@@ -42,16 +42,13 @@ const Card = styled.div<CardProps>`
   display: flex;
   box-sizing: border-box;
   ${(p) => (p.barColor ? barStyles : ``)}
-  ${(p) =>
-    p.bottomSheet &&
-    `
-  ${p.theme.media.lessThan(p.theme.breakpoints.sm)} {
+
+  ${({ bottomSheet, theme }) =>
+    `${bottomSheet && theme.media.lessThan(theme.breakpoints.sm)} {
     bottom: 0;
     left: 0;
     width: 100%;
-  }
-  
-  `}
+  }`}
 `;
 
 export const Bubble: Component = React.forwardRef<HTMLDivElement, Props>(
