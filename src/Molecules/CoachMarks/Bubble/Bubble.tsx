@@ -43,13 +43,20 @@ const Card = styled.div<CardProps>`
   box-sizing: border-box;
   ${(p) => (p.barColor ? barStyles : ``)}
 
-  ${({ bottomSheet, theme }) =>
-    bottomSheet &&
-    `${theme.media.lessThan(theme.breakpoints.sm)} {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }`}
+  ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
+    ${(p) =>
+      p.bottomSheet
+        ? `
+          // !important to override popper inline styles
+          bottom: 0 !important;
+          left: 0 !important;
+          width: 100% !important;
+          transform: none !important;
+          inset: initial !important;
+          position: fixed !important;
+        `
+        : ''}
+  }
 `;
 
 export const Bubble: Component = React.forwardRef<HTMLDivElement, Props>(
