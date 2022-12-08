@@ -1,3 +1,10 @@
+## [12.2.1](https://github.com/nordnet/ui/compare/v12.2.0...v12.2.1) (2022-12-08)
+
+
+### Bug Fixes
+
+* try css fix ([8825135](https://github.com/nordnet/ui/commit/8825135))
+
 # [12.2.0](https://github.com/nordnet/ui/compare/v12.1.1...v12.2.0) (2022-12-07)
 
 
