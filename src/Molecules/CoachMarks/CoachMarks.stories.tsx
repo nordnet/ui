@@ -300,6 +300,7 @@ export const MultpipleSteps = () => {
           referenceElement4 &&
           activeGuide && (
             <CoachMarks
+              bottomSheet
               onClose={() => setActiveGuide(false)}
               onDone={() => setActiveGuide(false)}
               onNext={action('next')}

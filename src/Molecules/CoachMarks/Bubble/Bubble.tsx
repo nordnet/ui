@@ -52,7 +52,7 @@ const Card = styled.div<CardProps>`
           left: 0 !important;
           width: 100% !important;
           transform: none !important;
-          inset: initial !important;
+          inset: auto auto 0px 0px !important;
           position: fixed !important;
         `
         : ''}
