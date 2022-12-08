@@ -1,3 +1,12 @@
+## [12.2.2](https://github.com/nordnet/ui/compare/v12.2.1...v12.2.2) (2022-12-08)
+
+
+### Bug Fixes
+
+* revert to previous imports ([cbd1550](https://github.com/nordnet/ui/commit/cbd1550))
+* try default string ([725d9a2](https://github.com/nordnet/ui/commit/725d9a2))
+* try with important flag ([71b9d32](https://github.com/nordnet/ui/commit/71b9d32))
+
 ## [12.2.1](https://github.com/nordnet/ui/compare/v12.2.0...v12.2.1) (2022-12-08)
 
 
