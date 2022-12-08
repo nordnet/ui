@@ -71,11 +71,14 @@ const arrowLeft = css`
 `;
 
 const Arrow = styled.div<InternalProps>`
-  ${({ bottomSheet, theme }) =>
-    bottomSheet &&
-    `${theme.media.lessThan(theme.breakpoints.sm)} {
-    display: none;
-  }`}
+  ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
+    ${(p) =>
+      p.bottomSheet
+        ? `
+          display: none;
+        `
+        : ''}
+  }
 
   position: absolute;
 
