@@ -48,11 +48,9 @@ const Card = styled.div<CardProps>`
       p.bottomSheet
         ? `
           // !important to override popper inline styles
-          bottom: 0 !important;
-          left: 0 !important;
           width: 100% !important;
           transform: none !important;
-          inset: initial !important;
+          inset: auto auto 0px 0px !important;
           position: fixed !important;
         `
         : ''}
