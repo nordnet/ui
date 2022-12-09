@@ -1,3 +1,11 @@
+## [12.2.3](https://github.com/nordnet/ui/compare/v12.2.2...v12.2.3) (2022-12-09)
+
+
+### Bug Fixes
+
+* just override inset ([1ffd543](https://github.com/nordnet/ui/commit/1ffd543))
+* override inset better ([8544228](https://github.com/nordnet/ui/commit/8544228))
+
 ## [12.2.2](https://github.com/nordnet/ui/compare/v12.2.1...v12.2.2) (2022-12-08)
 
 
