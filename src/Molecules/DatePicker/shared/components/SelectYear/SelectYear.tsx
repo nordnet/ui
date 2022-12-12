@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import styled, { useTheme } from 'styled-components';
+import add from 'date-fns/add';
 import { Props } from './SelectYear.types';
 /**
  * Imported separately because when imported in src/index.ts, Input will not have been imported yet and error will be thrown
@@ -29,10 +30,10 @@ const SelectYear: React.FC<Props> = ({
   selectYearLabel = 'Year',
 }) => {
   const [isHover, setIsHover] = useState(false);
-  const today = newDate();
+  const futureDate = add(newDate(), { years: 10 });
   const yearOptions = [...Array(years).keys()]?.map((index: number) => ({
-    value: today.getFullYear() - index,
-    label: (today.getFullYear() - index).toString(),
+    value: futureDate.getFullYear() - index,
+    label: (futureDate.getFullYear() - index).toString(),
   }));
 
   const onChangeHandler = (selected: Array<any>) => {
