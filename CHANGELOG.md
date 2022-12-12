@@ -1,3 +1,10 @@
+## [12.2.4](https://github.com/nordnet/ui/compare/v12.2.3...v12.2.4) (2022-12-12)
+
+
+### Bug Fixes
+
+* add 10 years options to select year ([acacc30](https://github.com/nordnet/ui/commit/acacc30))
+
 ## [12.2.3](https://github.com/nordnet/ui/compare/v12.2.2...v12.2.3) (2022-12-09)
 
 
