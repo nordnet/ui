@@ -1,5 +1,6 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Props as TooltipProps } from '../Tooltip.types';
+import { debounce, throttle } from 'lodash';
 import { State, store } from './useTooltip.store';
 import { useOnClickOutside, useGeneratedId } from '../../../common/Hooks';
 
@@ -74,13 +75,19 @@ export const useTooltip = (
     }
   }, []);
 
-  const handleMouseDown = useCallback(() => {
-    if (store.isVisible()) {
-      store.setState(State.IDLE);
-    } else {
-      store.setState(State.VISIBLE, id);
-    }
-  }, [id]);
+  const throttledClickOrTouch = useMemo(
+    () =>
+      throttle(() => {
+        if (store.isVisible()) {
+          store.setState(State.IDLE);
+        } else {
+          store.setState(State.VISIBLE, id);
+        }
+      }, 50),
+    [id],
+  );
+
+  const handleClickOrTouch = useCallback(throttledClickOrTouch, [id, throttledClickOrTouch]);
 
   useOnClickOutside(triggerElementRef, () => {
     if (id === store.contextId) store.setState(State.IDLE);
@@ -96,6 +103,6 @@ export const useTooltip = (
     handleBlur,
     handleMouseLeave,
     handleKeyDown,
-    handleMouseDown,
+    handleClickOrTouch,
   };
 };

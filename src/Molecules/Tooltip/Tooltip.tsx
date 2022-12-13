@@ -48,7 +48,7 @@ export const Tooltip: FC<Props> = (props) => {
     handleBlur,
     handleMouseLeave,
     handleKeyDown,
-    handleMouseDown,
+    handleClickOrTouch,
   } = useTooltip(mode, controlledIsOpen, openDelay, closeDelay);
 
   return (
@@ -62,8 +62,8 @@ export const Tooltip: FC<Props> = (props) => {
         onBlur: wrapEvent(child.props.onBlur, handleBlur),
         onMouseLeave: wrapEvent(child.props.onMouseLeave, handleMouseLeave),
         onKeyDown: wrapEvent(child.props.onKeyDown, handleKeyDown),
-        onMouseDown: wrapEvent(child.props.onMouseDown, handleMouseDown),
-        onTouchStart: wrapEvent(child.props.onTouchStart, handleMouseDown),
+        onMouseDown: wrapEvent(child.props.onMouseDown, handleClickOrTouch),
+        onTouchStart: wrapEvent(child.props.onTouchStart, handleClickOrTouch),
       })}
 
       {isOpen && (
