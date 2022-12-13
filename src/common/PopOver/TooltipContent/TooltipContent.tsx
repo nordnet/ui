@@ -15,6 +15,12 @@ const StyledTooltip = styled.div<StyledTooltipProps>`
   border: solid ${BORDER_SIZE}px ${(p) => p.borderColor(p.theme)};
   ${(p) => (p.maxWidth ? `max-width: ${p.theme.spacing.unit(p.maxWidth)}px;` : '')}
   overflow-wrap: break-word;
+  ${(p) =>
+    p.mobileBottomSheet &&
+    `${p.theme.media.lessThan(p.theme.breakpoints.sm)} {
+        width: 100%;
+        max-width: none;
+    }`}
 `;
 
 const TooltipContent: FC<TooltipContentProps> = ({

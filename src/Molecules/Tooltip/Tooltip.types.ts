@@ -42,4 +42,5 @@ export type Props = {
   pointerEvents?: boolean;
   pointerArrow?: boolean;
   customBoundary?: HTMLElement | Array<HTMLElement>;
+  mobileBottomSheet?: boolean;
 };

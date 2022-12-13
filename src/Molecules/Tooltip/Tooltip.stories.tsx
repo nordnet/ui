@@ -405,13 +405,21 @@ export const CustomBoundary = () => {
 const StyledTooltip = styled(Tooltip)`
   ${PopOver.components.TooltipContent} {
     background: red;
-    width: 280px;
   }
 `;
+
 export const StyledPopOver = () => (
   <Box py={20}>
-    <StyledTooltip label="label" position="top" wrapChild pointerArrow={false}>
+    <StyledTooltip label="label" position="top" wrapChild isOpen>
       <Typography type="primary">hover me</Typography>
     </StyledTooltip>
+  </Box>
+);
+
+export const MobileBottomSheet = () => (
+  <Box py={20}>
+    <Tooltip label="label" position="top" wrapChild mobileBottomSheet>
+      <Typography type="primary">hover me</Typography>
+    </Tooltip>
   </Box>
 );

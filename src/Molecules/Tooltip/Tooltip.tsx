@@ -32,8 +32,8 @@ export const Tooltip: FC<Props> = (props) => {
     isOpen: controlledIsOpen,
     wrapChild,
     pointerEvents = false,
-    pointerArrow = true,
     customBoundary,
+    mobileBottomSheet = false,
   } = props;
   const child = React.Children.only(children) as ReactElement;
 
@@ -63,6 +63,7 @@ export const Tooltip: FC<Props> = (props) => {
         onMouseLeave: wrapEvent(child.props.onMouseLeave, handleMouseLeave),
         onKeyDown: wrapEvent(child.props.onKeyDown, handleKeyDown),
         onMouseDown: wrapEvent(child.props.onMouseDown, handleMouseDown),
+        onTouchStart: wrapEvent(child.props.onTouchStart, handleMouseDown),
       })}
 
       {isOpen && (
@@ -77,10 +78,10 @@ export const Tooltip: FC<Props> = (props) => {
           maxWidth={maxWidth}
           offset={offset}
           pointerEvents={pointerEvents}
-          pointerArrow={pointerArrow}
           handleMouseEnter={handleMouseEnter}
           handleMouseLeave={handleMouseLeave}
           customBoundary={customBoundary}
+          mobileBottomSheet={mobileBottomSheet}
         />
       )}
     </>
