@@ -56,6 +56,19 @@ const PopOver: React.FC<Props> & {
     };
   }, []);
 
+  const flipMods = customBoundary
+    ? [
+        {
+          name: 'preventOverflow',
+          options: { boundary: customBoundary },
+        },
+        {
+          name: 'flip',
+          options: { boundary: customBoundary },
+        },
+      ]
+    : [];
+
   const modifiers = [
     {
       name: 'overrideMobileStyles',
@@ -64,16 +77,7 @@ const PopOver: React.FC<Props> & {
       fn: overrideStyles,
     },
     { name: 'offset', options: { offset }, enabled: !!offset },
-    {
-      enabled: !!customBoundary,
-      name: 'preventOverflow',
-      options: { boundary: customBoundary },
-    },
-    {
-      enabled: !!customBoundary,
-      name: 'flip',
-      options: { boundary: customBoundary },
-    },
+    ...flipMods,
     {
       name: 'arrow',
       options: {
