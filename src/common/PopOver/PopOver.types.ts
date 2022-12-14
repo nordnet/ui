@@ -34,5 +34,5 @@ export type Props = {
   handleMouseEnter?: (e: any) => void;
   handleMouseLeave?: (e: any) => void;
   customBoundary?: HTMLElement | Array<HTMLElement>;
-  mobileBottomSheet: boolean;
+  mobileBottomSheet?: boolean;
 };
