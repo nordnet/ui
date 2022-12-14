@@ -1,7 +1,7 @@
 import React, { MutableRefObject, useCallback, useRef, useState } from 'react';
 import { usePopper } from 'react-popper';
 import { mergeRefs } from '../utils';
-import { Portal, theme } from '../..';
+import { Portal } from '../..';
 import { TooltipArrow } from './TooltipArrow';
 import { Props } from './PopOver.types';
 import {

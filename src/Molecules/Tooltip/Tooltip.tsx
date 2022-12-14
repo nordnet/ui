@@ -1,8 +1,8 @@
 import React, { cloneElement, FC, ReactElement, useState } from 'react';
 import styled from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Props } from './Tooltip.types';
-import { useMedia } from '../..';
+import { NumberOrObjectWithNumber, Props } from './Tooltip.types';
+import { theme, useMedia } from '../..';
 import { PopOver } from '../../common/PopOver';
 import { mergeRefs, wrapEvent } from '../../common/utils';
 import { useTooltip } from './hooks';
@@ -44,12 +44,16 @@ export const Tooltip: FC<Props> = (props) => {
     wrapChild,
     pointerEvents = false,
     customBoundary,
-    bottomSheetBreakPoint = 0,
+    bottomSheetBreakpoint,
   } = props;
   const child = React.Children.only(children) as ReactElement;
 
+  let breakpoint: NumberOrObjectWithNumber = 0;
+  if (typeof bottomSheetBreakpoint === 'function') {
+    breakpoint = bottomSheetBreakpoint(theme);
+  }
   const [triggerElement, setTriggerElement] = useState(undefined);
-  const bottomSheet = useMedia((t) => t.media.lessThan(bottomSheetBreakPoint)) || false;
+  const bottomSheet = useMedia((t) => t.media.lessThan(breakpoint)) || false;
 
   const {
     id,

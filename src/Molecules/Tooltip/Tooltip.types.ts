@@ -1,6 +1,7 @@
 import React from 'react';
 import { InModal, Position } from 'common/PopOver/PopOver.types';
 import { BasePlacement, Rect } from '@popperjs/core';
+import { Theme } from 'theme/theme.types';
 
 type OffsetFunctionArg = {
   popper: Rect;
@@ -12,8 +13,6 @@ type BareOffset = [number, number];
 type EmptyOffset = [];
 type Offset = BareOffset | EmptyOffset;
 export type OffsetArg = Offset | ((arg: OffsetFunctionArg) => Offset);
-
-type NumberOrObjectWithNumber = number | { size: number };
 
 export type Props = {
   label: React.ReactNode;
@@ -44,5 +43,8 @@ export type Props = {
   pointerEvents?: boolean;
   pointerArrow?: boolean;
   customBoundary?: HTMLElement | Array<HTMLElement>;
-  bottomSheetBreakPoint?: NumberOrObjectWithNumber;
+  bottomSheetBreakpoint?: BreakpointFn;
 };
+export type NumberOrObjectWithNumber = number | { size: number };
+
+type BreakpointFn = (t: Theme) => NumberOrObjectWithNumber;
