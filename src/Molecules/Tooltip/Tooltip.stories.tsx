@@ -391,9 +391,8 @@ export const CustomBoundary = () => {
               when outside the border of the page
             </span>
           }
-          position="top"
+          position="bottom"
           pointerEvents
-          pointerArrow={false}
         >
           <span>Default with portal</span>
         </Tooltip>
@@ -410,7 +409,7 @@ const StyledTooltip = styled(Tooltip)`
 
 export const StyledPopOver = () => (
   <Box py={20}>
-    <StyledTooltip label="label" position="top" wrapChild isOpen>
+    <StyledTooltip label="label" position="top" wrapChild>
       <Typography type="primary">hover me</Typography>
     </StyledTooltip>
   </Box>

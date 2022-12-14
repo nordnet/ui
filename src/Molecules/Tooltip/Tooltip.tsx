@@ -1,5 +1,6 @@
 import React, { cloneElement, FC, ReactElement, useState } from 'react';
 import { Props } from './Tooltip.types';
+import { useMedia } from '../..';
 import { PopOver } from '../../common/PopOver';
 import { mergeRefs, wrapEvent } from '../../common/utils';
 import { useTooltip } from './hooks';
@@ -38,6 +39,8 @@ export const Tooltip: FC<Props> = (props) => {
   const child = React.Children.only(children) as ReactElement;
 
   const [triggerElement, setTriggerElement] = useState(undefined);
+  const isDesktop = useMedia((theme) => theme.media.greaterThan(theme.breakpoints.md));
+
   const {
     id,
     triggerElementRef,
@@ -48,8 +51,9 @@ export const Tooltip: FC<Props> = (props) => {
     handleBlur,
     handleMouseLeave,
     handleKeyDown,
-    handleClickOrTouch,
-  } = useTooltip(mode, controlledIsOpen, openDelay, closeDelay);
+    handleClick,
+    handleTouch,
+  } = useTooltip(mode, controlledIsOpen, isDesktop, openDelay, closeDelay);
 
   return (
     <>
@@ -62,8 +66,8 @@ export const Tooltip: FC<Props> = (props) => {
         onBlur: wrapEvent(child.props.onBlur, handleBlur),
         onMouseLeave: wrapEvent(child.props.onMouseLeave, handleMouseLeave),
         onKeyDown: wrapEvent(child.props.onKeyDown, handleKeyDown),
-        onMouseDown: wrapEvent(child.props.onMouseDown, handleClickOrTouch),
-        onTouchStart: wrapEvent(child.props.onTouchStart, handleClickOrTouch),
+        onMouseDown: wrapEvent(child.props.onMouseDown, handleClick),
+        onTouchStart: wrapEvent(child.props.onTouchStart, handleTouch),
       })}
 
       {isOpen && (

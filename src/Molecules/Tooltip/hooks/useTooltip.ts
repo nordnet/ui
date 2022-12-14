@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { throttle } from 'lodash';
+import { useCallback, useEffect, useRef, useState } from 'react';
+
 import { Props as TooltipProps } from '../Tooltip.types';
 import { State, store } from './useTooltip.store';
 import { useOnClickOutside, useGeneratedId } from '../../../common/Hooks';
@@ -7,6 +7,7 @@ import { useOnClickOutside, useGeneratedId } from '../../../common/Hooks';
 export const useTooltip = (
   mode: TooltipProps['mode'],
   controlledIsOpen: TooltipProps['isOpen'],
+  isDesktop: boolean | null,
   openDelay?: number,
   closeDelay?: number,
 ) => {
@@ -75,19 +76,23 @@ export const useTooltip = (
     }
   }, []);
 
-  const throttledClickOrTouch = useMemo(
-    () =>
-      throttle(() => {
-        if (store.isVisible()) {
-          store.setState(State.IDLE);
-        } else {
-          store.setState(State.VISIBLE, id);
-        }
-      }, 50),
-    [id],
-  );
+  const handleClick = useCallback(() => {
+    if (!isDesktop) return;
+    if (store.isVisible()) {
+      store.setState(State.IDLE);
+    } else {
+      store.setState(State.VISIBLE, id);
+    }
+  }, [id, isDesktop]);
 
-  const handleClickOrTouch = useCallback(throttledClickOrTouch, [id, throttledClickOrTouch]);
+  const handleTouch = useCallback(() => {
+    if (isDesktop) return;
+    if (store.isVisible()) {
+      store.setState(State.IDLE);
+    } else {
+      store.setState(State.VISIBLE, id);
+    }
+  }, [id, isDesktop]);
 
   useOnClickOutside(triggerElementRef, () => {
     if (id === store.contextId) store.setState(State.IDLE);
@@ -103,6 +108,7 @@ export const useTooltip = (
     handleBlur,
     handleMouseLeave,
     handleKeyDown,
-    handleClickOrTouch,
+    handleClick,
+    handleTouch,
   };
 };
