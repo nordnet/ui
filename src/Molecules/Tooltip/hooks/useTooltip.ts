@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { throttle } from 'lodash';
 import { Props as TooltipProps } from '../Tooltip.types';
-import { debounce, throttle } from 'lodash';
 import { State, store } from './useTooltip.store';
 import { useOnClickOutside, useGeneratedId } from '../../../common/Hooks';
 
