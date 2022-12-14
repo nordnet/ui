@@ -42,19 +42,22 @@ const PopOver: React.FC<Props> & {
   const [popperElement, setPopperElement] = useState(null);
   const [arrowElement, setArrowElement] = useState(null);
 
-  const overrideStyles = useCallback((args: any) => {
-    const { state } = args;
-    const isMobile = state.scrollParents.popper[1].width < theme.breakpoints.sm.size;
-    const popperStyles = isMobile ? bottomSheetStyles : state.styles.popper;
-    return {
-      ...state,
-      styles: {
-        ...state.styles,
-        popper: popperStyles,
-        arrow: isMobile ? hideArrowStyles : state.styles.arrow,
-      },
-    };
-  }, []);
+  const overrideStyles = useCallback(
+    (args: any) => {
+      const { state } = args;
+
+      const popperStyles = bottomSheet ? bottomSheetStyles : state.styles.popper;
+      return {
+        ...state,
+        styles: {
+          ...state.styles,
+          popper: popperStyles,
+          arrow: bottomSheet ? hideArrowStyles : state.styles.arrow,
+        },
+      };
+    },
+    [bottomSheet],
+  );
 
   const flipMods = customBoundary
     ? [

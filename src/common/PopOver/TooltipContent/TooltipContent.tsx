@@ -17,10 +17,10 @@ const StyledTooltip = styled.div<StyledTooltipProps>`
   overflow-wrap: break-word;
   ${(p) =>
     p.bottomSheet &&
-    `${p.theme.media.lessThan(p.theme.breakpoints.sm)} {
+    `
         width: 100%;
         max-width: none;
-    }`}
+    `}
 `;
 
 const TooltipContent: FC<TooltipContentProps> = ({
