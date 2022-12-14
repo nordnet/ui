@@ -13,6 +13,8 @@ type EmptyOffset = [];
 type Offset = BareOffset | EmptyOffset;
 export type OffsetArg = Offset | ((arg: OffsetFunctionArg) => Offset);
 
+type NumberOrObjectWithNumber = number | { size: number };
+
 export type Props = {
   label: React.ReactNode;
   ariaLabel?: string;
@@ -42,5 +44,5 @@ export type Props = {
   pointerEvents?: boolean;
   pointerArrow?: boolean;
   customBoundary?: HTMLElement | Array<HTMLElement>;
-  mobileBottomSheet?: boolean;
+  bottomSheetBreakPoint?: NumberOrObjectWithNumber;
 };

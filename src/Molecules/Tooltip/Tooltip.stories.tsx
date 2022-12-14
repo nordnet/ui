@@ -1,6 +1,16 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Box, Drawer, Flexbox, Modal, Button as UIButton, Icon, Typography, PopOver } from '../..';
+import {
+  Box,
+  Drawer,
+  Flexbox,
+  Modal,
+  Button as UIButton,
+  Icon,
+  Typography,
+  PopOver,
+  theme,
+} from '../..';
 import Tooltip from '.';
 import { Display } from '../../common/Display';
 
@@ -415,10 +425,12 @@ export const StyledPopOver = () => (
   </Box>
 );
 
-export const MobileBottomSheet = () => (
-  <Box py={20}>
-    <Tooltip label="label" position="top" wrapChild mobileBottomSheet>
-      <Typography type="primary">hover me</Typography>
-    </Tooltip>
-  </Box>
-);
+export const BottomSheet = () => {
+  return (
+    <Box py={20}>
+      <Tooltip label="label" position="top" wrapChild bottomSheetBreakPoint={theme.breakpoints.sm}>
+        <Typography type="primary">hover me</Typography>
+      </Tooltip>
+    </Box>
+  );
+};

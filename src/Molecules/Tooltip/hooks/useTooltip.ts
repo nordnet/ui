@@ -7,7 +7,6 @@ import { useOnClickOutside, useGeneratedId } from '../../../common/Hooks';
 export const useTooltip = (
   mode: TooltipProps['mode'],
   controlledIsOpen: TooltipProps['isOpen'],
-  isDesktop: boolean | null,
   openDelay?: number,
   closeDelay?: number,
 ) => {
@@ -77,22 +76,12 @@ export const useTooltip = (
   }, []);
 
   const handleClick = useCallback(() => {
-    if (!isDesktop) return;
     if (store.isVisible()) {
       store.setState(State.IDLE);
     } else {
       store.setState(State.VISIBLE, id);
     }
-  }, [id, isDesktop]);
-
-  const handleTouch = useCallback(() => {
-    if (isDesktop) return;
-    if (store.isVisible()) {
-      store.setState(State.IDLE);
-    } else {
-      store.setState(State.VISIBLE, id);
-    }
-  }, [id, isDesktop]);
+  }, [id]);
 
   useOnClickOutside(triggerElementRef, () => {
     if (id === store.contextId) store.setState(State.IDLE);
@@ -109,6 +98,5 @@ export const useTooltip = (
     handleMouseLeave,
     handleKeyDown,
     handleClick,
-    handleTouch,
   };
 };

@@ -6,5 +6,5 @@ export type TooltipContentProps = {
   backgroundColor: ColorFn;
   borderColor: ColorFn;
   ariaLabel?: string;
-  mobileBottomSheet: boolean;
+  bottomSheet: boolean;
 };

@@ -1,4 +1,6 @@
 import React, { cloneElement, FC, ReactElement, useState } from 'react';
+import styled from 'styled-components';
+import { AnimatePresence, motion } from 'framer-motion';
 import { Props } from './Tooltip.types';
 import { useMedia } from '../..';
 import { PopOver } from '../../common/PopOver';
@@ -17,6 +19,14 @@ import { useTooltip } from './hooks';
  3. Tooltips stick around for a little bit after blur/mouseleave.
  */
 
+const Backdrop = styled.div`
+  position: absolute;
+  inset: 0 0 0 0;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+`;
+
 export const Tooltip: FC<Props> = (props) => {
   const {
     className,
@@ -34,12 +44,12 @@ export const Tooltip: FC<Props> = (props) => {
     wrapChild,
     pointerEvents = false,
     customBoundary,
-    mobileBottomSheet = false,
+    bottomSheetBreakPoint = 0,
   } = props;
   const child = React.Children.only(children) as ReactElement;
 
   const [triggerElement, setTriggerElement] = useState(undefined);
-  const isDesktop = useMedia((theme) => theme.media.greaterThan(theme.breakpoints.md));
+  const bottomSheet = useMedia((t) => t.media.lessThan(bottomSheetBreakPoint)) || false;
 
   const {
     id,
@@ -52,8 +62,7 @@ export const Tooltip: FC<Props> = (props) => {
     handleMouseLeave,
     handleKeyDown,
     handleClick,
-    handleTouch,
-  } = useTooltip(mode, controlledIsOpen, isDesktop, openDelay, closeDelay);
+  } = useTooltip(bottomSheet ? 'click' : mode, controlledIsOpen, openDelay, closeDelay);
 
   return (
     <>
@@ -67,9 +76,14 @@ export const Tooltip: FC<Props> = (props) => {
         onMouseLeave: wrapEvent(child.props.onMouseLeave, handleMouseLeave),
         onKeyDown: wrapEvent(child.props.onKeyDown, handleKeyDown),
         onMouseDown: wrapEvent(child.props.onMouseDown, handleClick),
-        onTouchStart: wrapEvent(child.props.onTouchStart, handleTouch),
       })}
-
+      <AnimatePresence>
+        {isOpen && bottomSheet && (
+          <motion.div initial={{ opacity: 0 }} exit={{ opacity: 0 }} animate={{ opacity: 0.1 }}>
+            <Backdrop />
+          </motion.div>
+        )}
+      </AnimatePresence>
       {isOpen && (
         <PopOver
           className={className}
@@ -85,7 +99,7 @@ export const Tooltip: FC<Props> = (props) => {
           handleMouseEnter={handleMouseEnter}
           handleMouseLeave={handleMouseLeave}
           customBoundary={customBoundary}
-          mobileBottomSheet={mobileBottomSheet}
+          bottomSheet={bottomSheet}
         />
       )}
     </>

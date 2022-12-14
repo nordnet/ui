@@ -36,7 +36,7 @@ const PopOver: React.FC<Props> & {
   handleMouseEnter,
   handleMouseLeave,
   customBoundary,
-  mobileBottomSheet = false,
+  bottomSheet = false,
   ...htmlSpanProps
 }) => {
   const [popperElement, setPopperElement] = useState(null);
@@ -72,7 +72,7 @@ const PopOver: React.FC<Props> & {
   const modifiers = [
     {
       name: 'overrideMobileStyles',
-      enabled: mobileBottomSheet,
+      enabled: bottomSheet,
       phase: 'write' as any,
       fn: overrideStyles,
     },
@@ -124,7 +124,7 @@ const PopOver: React.FC<Props> & {
       />
       <StyledTooltipContent
         label={label}
-        mobileBottomSheet={mobileBottomSheet}
+        bottomSheet={bottomSheet}
         ariaLabel={ariaLabel}
         maxWidth={maxWidth}
         backgroundColor={backgroundColor}

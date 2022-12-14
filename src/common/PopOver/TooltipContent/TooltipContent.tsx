@@ -16,7 +16,7 @@ const StyledTooltip = styled.div<StyledTooltipProps>`
   ${(p) => (p.maxWidth ? `max-width: ${p.theme.spacing.unit(p.maxWidth)}px;` : '')}
   overflow-wrap: break-word;
   ${(p) =>
-    p.mobileBottomSheet &&
+    p.bottomSheet &&
     `${p.theme.media.lessThan(p.theme.breakpoints.sm)} {
         width: 100%;
         max-width: none;
