@@ -1,3 +1,10 @@
+## [12.3.1](https://github.com/nordnet/ui/compare/v12.3.0...v12.3.1) (2022-12-15)
+
+
+### Bug Fixes
+
+* remove tooltip backdrop transition ([1fdb5e5](https://github.com/nordnet/ui/commit/1fdb5e5))
+
 # [12.3.0](https://github.com/nordnet/ui/compare/v12.2.4...v12.3.0) (2022-12-15)
 
 
