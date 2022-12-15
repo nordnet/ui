@@ -1,6 +1,5 @@
 import React, { cloneElement, FC, ReactElement, useState } from 'react';
 import styled from 'styled-components';
-import { AnimatePresence, motion } from 'framer-motion';
 import { Props } from './Tooltip.types';
 import { useMedia } from '../..';
 import { PopOver } from '../../common/PopOver';
@@ -79,13 +78,7 @@ export const Tooltip: FC<Props> = (props) => {
         onKeyDown: wrapEvent(child.props.onKeyDown, handleKeyDown),
         onMouseDown: wrapEvent(child.props.onMouseDown, handleMouseDown),
       })}
-      <AnimatePresence>
-        {isOpen && bottomSheet && (
-          <motion.div initial={{ opacity: 0 }} exit={{ opacity: 0 }} animate={{ opacity: 1 }}>
-            <Backdrop />
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {isOpen && bottomSheet && <Backdrop />}
       {isOpen && (
         <PopOver
           className={className}
