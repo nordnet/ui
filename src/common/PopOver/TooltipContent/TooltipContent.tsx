@@ -20,6 +20,7 @@ const StyledTooltip = styled.div<StyledTooltipProps>`
     `
         width: 100%;
         max-width: none;
+        box-sizing: border-box;
     `}
 `;
 

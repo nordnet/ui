@@ -38,6 +38,7 @@ export const bottomSheetStyles = {
   position: 'fixed',
   padding: 0,
   transform: 'none',
+  display: 'block',
 };
 
 export const hideArrowStyles = {

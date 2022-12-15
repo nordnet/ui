@@ -25,6 +25,7 @@ const Backdrop = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: ${(p) => p.theme.color.modalBackdrop};
+  z-index: ${({ theme }) => theme.zIndex.modal};
 `;
 
 export const Tooltip: FC<Props> = (props) => {
