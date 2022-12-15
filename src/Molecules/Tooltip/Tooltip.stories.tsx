@@ -43,7 +43,7 @@ export const defaultStory = () => (
     </StyledDiv>
     <StyledDiv>
       Open delay: 0ms; Close delay: 0ms
-      <Tooltip label={label} position="top" openDelay={0} closeDelay={0} pointerArrow={false}>
+      <Tooltip label={label} position="top" openDelay={0} closeDelay={0}>
         <Button type="button">Hover me</Button>
       </Tooltip>
     </StyledDiv>
@@ -376,7 +376,6 @@ export const CustomBoundary = () => {
           label="This tooltip is positioned bottom but it flips to the top because when there's no portal we have better control over what the container is."
           position="bottom"
           pointerEvents
-          pointerArrow={false}
           customBoundary={boundaryElement}
         >
           <span>custom boundary</span>

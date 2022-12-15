@@ -41,7 +41,8 @@ export type Props = {
    * If you need to click the content in the tooltip you pass this in as true
    */
   pointerEvents?: boolean;
-  pointerArrow?: boolean;
   customBoundary?: HTMLElement | Array<HTMLElement>;
   bottomSheetQuery?: (t: Theme) => string;
+  // remove if still here in 2023
+  pointerArrow?: boolean;
 };
