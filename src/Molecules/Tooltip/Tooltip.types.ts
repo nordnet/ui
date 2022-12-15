@@ -43,7 +43,7 @@ export type Props = {
   pointerEvents?: boolean;
   pointerArrow?: boolean;
   customBoundary?: HTMLElement | Array<HTMLElement>;
-  bottomSheetBreakpoint?: BreakpointFn;
+  bottomSheetQuery?: (t: Theme) => string;
 };
 export type NumberOrObjectWithNumber = number | { size: number };
 

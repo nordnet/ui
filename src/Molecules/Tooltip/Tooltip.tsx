@@ -44,16 +44,13 @@ export const Tooltip: FC<Props> = (props) => {
     wrapChild,
     pointerEvents = false,
     customBoundary,
-    bottomSheetBreakpoint,
+    bottomSheetQuery,
   } = props;
   const child = React.Children.only(children) as ReactElement;
 
-  let breakpoint: NumberOrObjectWithNumber = 0;
-  if (typeof bottomSheetBreakpoint === 'function') {
-    breakpoint = bottomSheetBreakpoint(theme);
-  }
   const [triggerElement, setTriggerElement] = useState(undefined);
-  const bottomSheet = useMedia((t) => t.media.lessThan(breakpoint)) || false;
+
+  const bottomSheet = useMedia((t) => bottomSheetQuery?.(t) || '__false') || false;
 
   const {
     id,
