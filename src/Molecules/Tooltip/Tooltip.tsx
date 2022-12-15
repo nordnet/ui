@@ -22,9 +22,9 @@ import { useTooltip } from './hooks';
 const Backdrop = styled.div`
   position: fixed;
   inset: 0 0 0 0;
-  background: black;
   width: 100vw;
   height: 100vh;
+  background-color: ${(p) => p.theme.color.modalBackdrop};
 `;
 
 export const Tooltip: FC<Props> = (props) => {
@@ -80,7 +80,7 @@ export const Tooltip: FC<Props> = (props) => {
       })}
       <AnimatePresence>
         {isOpen && bottomSheet && (
-          <motion.div initial={{ opacity: 0 }} exit={{ opacity: 0 }} animate={{ opacity: 0.1 }}>
+          <motion.div initial={{ opacity: 0 }} exit={{ opacity: 0 }} animate={{ opacity: 1 }}>
             <Backdrop />
           </motion.div>
         )}
