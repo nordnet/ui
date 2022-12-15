@@ -1,3 +1,30 @@
+# [12.3.0](https://github.com/nordnet/ui/compare/v12.2.4...v12.3.0) (2022-12-15)
+
+
+### Bug Fixes
+
+* add some animation and styled ([e2e3662](https://github.com/nordnet/ui/commit/e2e3662))
+* clean up ([a491a5c](https://github.com/nordnet/ui/commit/a491a5c))
+* correct imports in useTooltip ([576f713](https://github.com/nordnet/ui/commit/576f713))
+* don't false mod defaults ([ab178dd](https://github.com/nordnet/ui/commit/ab178dd))
+* make prop conditional ([e16f9e1](https://github.com/nordnet/ui/commit/e16f9e1))
+* more clean up ([893a3c3](https://github.com/nordnet/ui/commit/893a3c3))
+* pass breakpoint for bottom sheet ([bcb7895](https://github.com/nordnet/ui/commit/bcb7895))
+* pass query not breakpoint ([730598c](https://github.com/nordnet/ui/commit/730598c))
+* remove pointerArrow stuff ([32f38b3](https://github.com/nordnet/ui/commit/32f38b3))
+* revert to previous handler names ([bcb39f6](https://github.com/nordnet/ui/commit/bcb39f6))
+* throttle touches and clicks ([3bb05e3](https://github.com/nordnet/ui/commit/3bb05e3))
+* update stories ([2698542](https://github.com/nordnet/ui/commit/2698542))
+* update styles and clean up ([6a1e791](https://github.com/nordnet/ui/commit/6a1e791))
+* update z index for content ([6952899](https://github.com/nordnet/ui/commit/6952899))
+* use useMedia ([04b6a81](https://github.com/nordnet/ui/commit/04b6a81))
+* yalc fixes ([3185a3a](https://github.com/nordnet/ui/commit/3185a3a))
+
+
+### Features
+
+* allow fixed bottom sheet ([674622b](https://github.com/nordnet/ui/commit/674622b))
+
 ## [12.2.4](https://github.com/nordnet/ui/compare/v12.2.3...v12.2.4) (2022-12-12)
 
 
