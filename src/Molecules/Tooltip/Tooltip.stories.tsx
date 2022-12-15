@@ -374,7 +374,7 @@ export const CustomBoundary = () => {
         <div style={{ height: '80vh', background: 'orange' }} />
         <Tooltip
           label="This tooltip is positioned bottom but it flips to the top because when there's no portal we have better control over what the container is."
-          position="top"
+          position="bottom"
           pointerEvents
           pointerArrow={false}
           customBoundary={boundaryElement}
