@@ -63,7 +63,7 @@ export const Tooltip: FC<Props> = (props) => {
     handleBlur,
     handleMouseLeave,
     handleKeyDown,
-    handleClick,
+    handleMouseDown,
   } = useTooltip(bottomSheet ? 'click' : mode, controlledIsOpen, openDelay, closeDelay);
 
   return (
@@ -77,7 +77,7 @@ export const Tooltip: FC<Props> = (props) => {
         onBlur: wrapEvent(child.props.onBlur, handleBlur),
         onMouseLeave: wrapEvent(child.props.onMouseLeave, handleMouseLeave),
         onKeyDown: wrapEvent(child.props.onKeyDown, handleKeyDown),
-        onMouseDown: wrapEvent(child.props.onMouseDown, handleClick),
+        onMouseDown: wrapEvent(child.props.onMouseDown, handleMouseDown),
       })}
       <AnimatePresence>
         {isOpen && bottomSheet && (

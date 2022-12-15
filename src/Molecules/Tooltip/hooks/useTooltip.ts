@@ -75,7 +75,7 @@ export const useTooltip = (
     }
   }, []);
 
-  const handleClick = useCallback(() => {
+  const handleMouseDown = useCallback(() => {
     if (store.isVisible()) {
       store.setState(State.IDLE);
     } else {
@@ -97,6 +97,6 @@ export const useTooltip = (
     handleBlur,
     handleMouseLeave,
     handleKeyDown,
-    handleClick,
+    handleMouseDown,
   };
 };
