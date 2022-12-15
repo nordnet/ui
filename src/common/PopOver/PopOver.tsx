@@ -113,7 +113,7 @@ const PopOver: React.FC<Props> & {
       className={className}
       id={id}
       ref={mergeRefs([setPopperElement, ref])}
-      $inModal={inModal}
+      $inModal={inModal || bottomSheet}
       style={styles.popper}
       $pointerEvents={pointerEvents}
       {...htmlSpanProps}
