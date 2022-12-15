@@ -6,4 +6,5 @@ export type TooltipContentProps = {
   backgroundColor: ColorFn;
   borderColor: ColorFn;
   ariaLabel?: string;
+  bottomSheet: boolean;
 };

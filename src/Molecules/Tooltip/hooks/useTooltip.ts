@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+
 import { Props as TooltipProps } from '../Tooltip.types';
 import { State, store } from './useTooltip.store';
 import { useOnClickOutside, useGeneratedId } from '../../../common/Hooks';

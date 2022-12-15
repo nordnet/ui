@@ -1,6 +1,7 @@
 import React from 'react';
 import { InModal, Position } from 'common/PopOver/PopOver.types';
 import { BasePlacement, Rect } from '@popperjs/core';
+import { Theme } from 'theme/theme.types';
 
 type OffsetFunctionArg = {
   popper: Rect;
@@ -40,6 +41,8 @@ export type Props = {
    * If you need to click the content in the tooltip you pass this in as true
    */
   pointerEvents?: boolean;
-  pointerArrow?: boolean;
   customBoundary?: HTMLElement | Array<HTMLElement>;
+  bottomSheetQuery?: (t: Theme) => string;
+  // remove if still here in 2023
+  pointerArrow?: boolean;
 };
