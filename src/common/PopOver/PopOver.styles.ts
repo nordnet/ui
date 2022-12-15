@@ -35,7 +35,7 @@ export const bottomSheetStyles = {
   left: 0,
   bottom: 0,
   width: '100%',
-  position: 'absolute',
+  position: 'fixed',
   padding: 0,
   transform: 'none',
 };

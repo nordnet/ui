@@ -1,8 +1,8 @@
 import React, { cloneElement, FC, ReactElement, useState } from 'react';
 import styled from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
-import { NumberOrObjectWithNumber, Props } from './Tooltip.types';
-import { theme, useMedia } from '../..';
+import { Props } from './Tooltip.types';
+import { useMedia } from '../..';
 import { PopOver } from '../../common/PopOver';
 import { mergeRefs, wrapEvent } from '../../common/utils';
 import { useTooltip } from './hooks';
@@ -20,7 +20,7 @@ import { useTooltip } from './hooks';
  */
 
 const Backdrop = styled.div`
-  position: absolute;
+  position: fixed;
   inset: 0 0 0 0;
   background: black;
   width: 100vw;

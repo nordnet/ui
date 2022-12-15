@@ -45,6 +45,3 @@ export type Props = {
   customBoundary?: HTMLElement | Array<HTMLElement>;
   bottomSheetQuery?: (t: Theme) => string;
 };
-export type NumberOrObjectWithNumber = number | { size: number };
-
-type BreakpointFn = (t: Theme) => NumberOrObjectWithNumber;
