@@ -29,7 +29,6 @@ export const useFocusFromMachine = (
         if (
           machineState.context.itemFocusIdx !== null &&
           itemRefs[machineState.context.itemFocusIdx] &&
-          itemRefs[machineState.context.itemFocusIdx].scrollIntoView &&
           !preventScroll
         ) {
           scrollIntoView(itemRefs[machineState.context.itemFocusIdx!], {
