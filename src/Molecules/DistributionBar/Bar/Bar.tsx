@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { CssGrid } from '../../../index';
 import { Props } from './Bar.types';
 
-const barWidth = (value: number, maxValue: number): number => {
+const calculateBarWidth = (value: number, maxValue: number): number => {
   if (!Number.isFinite(value) || !Number.isFinite(maxValue)) return 0;
 
   if (value === 0 || maxValue === 0) {
@@ -34,11 +34,12 @@ const StyledGridContainer = styled(CssGrid.Container)`
 const Bar: React.FC<Props> = ({ children, value = 0, maxValue = 0 }) => {
   const [backgroundWidth, setBackgroundWidth] = useState<number>(0);
 
-  const barWidth2 = barWidth(value, maxValue);
+  const barWidth = calculateBarWidth(value, maxValue);
 
   useEffect(() => {
-    setBackgroundWidth(barWidth2);
+    setBackgroundWidth(barWidth);
   }, []);
+
   return (
     <StyledGridContainer areas={[['content']]}>
       <CssGrid.Item area="content">
