@@ -1,3 +1,10 @@
+## [12.3.2](https://github.com/nordnet/ui/compare/v12.3.1...v12.3.2) (2022-12-19)
+
+
+### Bug Fixes
+
+* prepare for TS 4.9 ([#1287](https://github.com/nordnet/ui/issues/1287)) ([d4285da](https://github.com/nordnet/ui/commit/d4285da))
+
 ## [12.3.1](https://github.com/nordnet/ui/compare/v12.3.0...v12.3.1) (2022-12-15)
 
 
