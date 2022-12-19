@@ -1,5 +1,7 @@
 import React, { cloneElement, FC, ReactElement, useState } from 'react';
+import styled from 'styled-components';
 import { Props } from './Tooltip.types';
+import { useMedia } from '../..';
 import { PopOver } from '../../common/PopOver';
 import { mergeRefs, wrapEvent } from '../../common/utils';
 import { useTooltip } from './hooks';
@@ -15,6 +17,15 @@ import { useTooltip } from './hooks';
 
  3. Tooltips stick around for a little bit after blur/mouseleave.
  */
+
+const Backdrop = styled.div`
+  position: fixed;
+  inset: 0 0 0 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: ${(p) => p.theme.color.modalBackdrop};
+  z-index: ${({ theme }) => theme.zIndex.modal};
+`;
 
 export const Tooltip: FC<Props> = (props) => {
   const {
@@ -32,12 +43,15 @@ export const Tooltip: FC<Props> = (props) => {
     isOpen: controlledIsOpen,
     wrapChild,
     pointerEvents = false,
-    pointerArrow = true,
     customBoundary,
+    bottomSheetQuery,
   } = props;
   const child = React.Children.only(children) as ReactElement;
 
   const [triggerElement, setTriggerElement] = useState(undefined);
+
+  const bottomSheet = useMedia((t) => bottomSheetQuery?.(t) || '__false') || false;
+
   const {
     id,
     triggerElementRef,
@@ -49,7 +63,7 @@ export const Tooltip: FC<Props> = (props) => {
     handleMouseLeave,
     handleKeyDown,
     handleMouseDown,
-  } = useTooltip(mode, controlledIsOpen, openDelay, closeDelay);
+  } = useTooltip(bottomSheet ? 'click' : mode, controlledIsOpen, openDelay, closeDelay);
 
   return (
     <>
@@ -64,7 +78,7 @@ export const Tooltip: FC<Props> = (props) => {
         onKeyDown: wrapEvent(child.props.onKeyDown, handleKeyDown),
         onMouseDown: wrapEvent(child.props.onMouseDown, handleMouseDown),
       })}
-
+      {isOpen && bottomSheet && <Backdrop />}
       {isOpen && (
         <PopOver
           className={className}
@@ -77,10 +91,10 @@ export const Tooltip: FC<Props> = (props) => {
           maxWidth={maxWidth}
           offset={offset}
           pointerEvents={pointerEvents}
-          pointerArrow={pointerArrow}
           handleMouseEnter={handleMouseEnter}
           handleMouseLeave={handleMouseLeave}
           customBoundary={customBoundary}
+          bottomSheet={bottomSheet}
         />
       )}
     </>

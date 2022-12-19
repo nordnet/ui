@@ -1,40 +1,18 @@
-import React, { MutableRefObject, useEffect, useRef, useState } from 'react';
+import React, { MutableRefObject, useCallback, useRef, useState } from 'react';
 import { usePopper } from 'react-popper';
-import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { mergeRefs } from '../utils';
 import { Portal } from '../..';
 import { TooltipArrow } from './TooltipArrow';
-import { TooltipContent } from './TooltipContent';
 import { Props } from './PopOver.types';
+import {
+  StyledSpan,
+  StyledTooltipContent,
+  bottomSheetStyles,
+  hideArrowStyles,
+} from './PopOver.styles';
+import { useMouseEvents } from './hooks/useMouseEvents';
 
-type StyledSpanProps = {
-  $inModal: Props['inModal'];
-  $pointerEvents?: Props['pointerEvents'];
-};
-
-const StyledSpan = styled.span<StyledSpanProps>`
-  z-index: ${(p) => (p.$inModal ? p.theme.zIndex.overlayInModal : p.theme.zIndex.overlay)};
-
-  ${(p) => (p.$pointerEvents ? '' : 'pointer-events: none;')}
-  &[data-popper-placement^='top'] {
-    padding-bottom: ${(p) => p.theme.spacing.unit(3)}px;
-  }
-
-  &[data-popper-placement^='bottom'] {
-    padding-top: ${(p) => p.theme.spacing.unit(3)}px;
-  }
-
-  &[data-popper-placement^='left'] {
-    padding-right: ${(p) => p.theme.spacing.unit(3)}px;
-  }
-
-  &[data-popper-placement^='right'] {
-    padding-left: ${(p) => p.theme.spacing.unit(3)}px;
-  }
-`;
-
-// styled to allow consumers to use it as styling-identifier directly from PopOver.components.TooltipContent
-const StyledTooltipContent = styled(TooltipContent)``;
 const displayName = 'Tooltip Popup';
 const components = {
   TooltipContent: StyledTooltipContent,
@@ -56,27 +34,38 @@ const PopOver: React.FC<Props> & {
   offset,
   backgroundColor: backgroundColorProp,
   borderColor: borderColorProp,
-  pointerArrow,
   handleMouseEnter,
   handleMouseLeave,
   customBoundary,
+  bottomSheet = false,
   ...htmlSpanProps
 }) => {
   const [popperElement, setPopperElement] = useState(null);
   const [arrowElement, setArrowElement] = useState(null);
 
-  const offsetModifier = offset ? [{ name: 'offset', options: { offset } }] : [];
+  const overrideStyles = useCallback(
+    (args: any) => {
+      const { state } = args;
 
-  const preventOverflowMod = customBoundary
+      const popperStyles = bottomSheet ? bottomSheetStyles : state.styles.popper;
+      return {
+        ...state,
+        styles: {
+          ...state.styles,
+          popper: popperStyles,
+          arrow: bottomSheet ? hideArrowStyles : state.styles.arrow,
+        },
+      };
+    },
+    [bottomSheet],
+  );
+
+  const flipMods = customBoundary
     ? [
         {
           name: 'preventOverflow',
           options: { boundary: customBoundary },
         },
-      ]
-    : [];
-  const flipMod = customBoundary
-    ? [
         {
           name: 'flip',
           options: { boundary: customBoundary },
@@ -84,78 +73,69 @@ const PopOver: React.FC<Props> & {
       ]
     : [];
 
-  /* We're using Popper.js for convenient tooltip placement. */
+  const modifiers = [
+    {
+      name: 'overrideMobileStyles',
+      enabled: bottomSheet,
+      phase: 'write' as any,
+      fn: overrideStyles,
+    },
+    { name: 'offset', options: { offset }, enabled: !!offset },
+    ...flipMods,
+    {
+      name: 'arrow',
+      options: {
+        element: arrowElement,
+      },
+    },
+  ];
+
   const ref = useRef() as MutableRefObject<HTMLElement>;
   const popper = usePopper(triggerElement, popperElement, {
-    modifiers: [
-      {
-        name: 'arrow',
-        options: {
-          element: arrowElement,
-        },
-      },
-      ...preventOverflowMod,
-      ...flipMod,
-      ...offsetModifier,
-    ],
+    modifiers,
     placement: position,
   });
 
   const { state, styles, attributes } = popper;
   const { placement } = state || {};
 
-  useEffect(() => {
-    if (positionCallback && placement) {
-      positionCallback(placement as NonNullable<Props['position']>);
-    }
-  }, [positionCallback, popper, placement]);
+  if (positionCallback && placement) {
+    positionCallback(placement as NonNullable<Props['position']>);
+  }
 
   const backgroundColor = backgroundColorProp || ((t) => t.color.bubbleBackground);
   const borderColor = borderColorProp || ((t) => t.color.bubbleBorder);
 
-  useEffect(() => {
-    const node = ref?.current;
-    if (ref && node && pointerEvents && handleMouseEnter && handleMouseLeave) {
-      node?.addEventListener('mouseenter', handleMouseEnter);
-      node?.addEventListener('mouseleave', handleMouseLeave);
-      node?.addEventListener('mousedown', (evt: MouseEvent) => evt.stopPropagation());
-    }
-    return () => {
-      if (ref && node && pointerEvents && handleMouseEnter && handleMouseLeave) {
-        node?.removeEventListener('mouseenter', handleMouseEnter);
-        node?.removeEventListener('mouseleave', handleMouseLeave);
-        node?.removeEventListener('mousedown', (evt: MouseEvent) => evt.stopPropagation());
-      }
-    };
-  }, [ref, pointerEvents, handleMouseEnter, handleMouseLeave]);
+  useMouseEvents(ref, pointerEvents, handleMouseEnter, handleMouseLeave);
 
   const content = (
     <StyledSpan
       className={className}
       id={id}
       ref={mergeRefs([setPopperElement, ref])}
-      $inModal={inModal}
+      $inModal={inModal || bottomSheet}
       style={styles.popper}
       $pointerEvents={pointerEvents}
       {...htmlSpanProps}
       {...attributes.popper}
     >
-      {pointerArrow && (
-        <TooltipArrow
-          ref={setArrowElement as any}
-          position={state?.placement as any}
-          style={styles.arrow}
-          backgroundColor={backgroundColor}
-          borderColor={borderColor}
-        />
-      )}
-      <StyledTooltipContent
-        label={label}
-        ariaLabel={ariaLabel}
-        maxWidth={maxWidth}
+      <TooltipArrow
+        ref={setArrowElement as any}
+        position={state?.placement as any}
+        style={styles.arrow}
         backgroundColor={backgroundColor}
         borderColor={borderColor}
       />
+      <motion.div initial={bottomSheet ? { y: 100 } : false} exit={{ y: 100 }} animate={{ y: 0 }}>
+        <StyledTooltipContent
+          label={label}
+          bottomSheet={bottomSheet}
+          ariaLabel={ariaLabel}
+          maxWidth={maxWidth}
+          backgroundColor={backgroundColor}
+          borderColor={borderColor}
+        />
+      </motion.div>
     </StyledSpan>
   );
 

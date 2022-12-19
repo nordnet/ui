@@ -31,8 +31,8 @@ export type Props = {
   inModal?: InModal;
   maxWidth?: number;
   pointerEvents?: boolean;
-  pointerArrow?: boolean;
   handleMouseEnter?: (e: any) => void;
   handleMouseLeave?: (e: any) => void;
   customBoundary?: HTMLElement | Array<HTMLElement>;
+  bottomSheet?: boolean;
 };

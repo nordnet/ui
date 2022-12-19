@@ -43,7 +43,7 @@ export const defaultStory = () => (
     </StyledDiv>
     <StyledDiv>
       Open delay: 0ms; Close delay: 0ms
-      <Tooltip label={label} position="top" openDelay={0} closeDelay={0} pointerArrow={false}>
+      <Tooltip label={label} position="top" openDelay={0} closeDelay={0}>
         <Button type="button">Hover me</Button>
       </Tooltip>
     </StyledDiv>
@@ -374,9 +374,8 @@ export const CustomBoundary = () => {
         <div style={{ height: '80vh', background: 'orange' }} />
         <Tooltip
           label="This tooltip is positioned bottom but it flips to the top because when there's no portal we have better control over what the container is."
-          position="top"
+          position="bottom"
           pointerEvents
-          pointerArrow={false}
           customBoundary={boundaryElement}
         >
           <span>custom boundary</span>
@@ -391,9 +390,8 @@ export const CustomBoundary = () => {
               when outside the border of the page
             </span>
           }
-          position="top"
+          position="bottom"
           pointerEvents
-          pointerArrow={false}
         >
           <span>Default with portal</span>
         </Tooltip>
@@ -405,13 +403,28 @@ export const CustomBoundary = () => {
 const StyledTooltip = styled(Tooltip)`
   ${PopOver.components.TooltipContent} {
     background: red;
-    width: 280px;
   }
 `;
+
 export const StyledPopOver = () => (
   <Box py={20}>
-    <StyledTooltip label="label" position="top" wrapChild pointerArrow={false}>
+    <StyledTooltip label="label" position="top" wrapChild>
       <Typography type="primary">hover me</Typography>
     </StyledTooltip>
   </Box>
 );
+
+export const BottomSheet = () => {
+  return (
+    <Box py={20}>
+      <Tooltip
+        label="label"
+        position="top"
+        wrapChild
+        bottomSheetQuery={(t) => t.media.lessThan(t.breakpoints.sm)}
+      >
+        <Typography type="primary">hover me</Typography>
+      </Tooltip>
+    </Box>
+  );
+};
