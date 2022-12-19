@@ -14,16 +14,14 @@ export type PartialNumberProps = Omit<NumberProps, 'value'>;
 export type Props = {
   bar: Bar;
   numberProps?: PartialNumberProps;
-  maxWeight: number; // Biggest value
+  /**
+   * @maxWeight
+    The biggest value a single bar can possibly reach
+   */
+  maxWeight: number;
   hideWeight?: boolean;
 };
 
-type Symbol =
-  | {
-      type: 'Country';
-      country: string;
-    }
-  | {
-      type: 'Bullet';
-      iconProps?: IconProps;
-    };
+export type FlagSymbol = { country: string };
+export type BulletSymbol = { iconProps: IconProps };
+export type Symbol = FlagSymbol | BulletSymbol;

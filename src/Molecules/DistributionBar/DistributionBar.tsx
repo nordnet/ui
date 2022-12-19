@@ -5,7 +5,7 @@ import Flag from '../../Atoms/Flag';
 import { Bar } from './Bar';
 import Link from '../Link';
 import Number from '../Number';
-import { PartialNumberProps, Props } from './DistributionBar.types';
+import { PartialNumberProps, Props, FlagSymbol, BulletSymbol } from './DistributionBar.types';
 
 const SpacingSpan = styled.span`
   width: ${(p) => p.theme.spacing.unit(4)}px;
@@ -41,18 +41,32 @@ const calculateNumberComponentWidth = (
   return virtualWidth;
 };
 
+const isFlagSymbol = (symbol?: FlagSymbol | BulletSymbol): symbol is FlagSymbol =>
+  symbol !== undefined && (symbol as FlagSymbol).country !== undefined;
+
+const isBulletsymbol = (symbol?: FlagSymbol | BulletSymbol): symbol is BulletSymbol =>
+  symbol !== undefined && (symbol as BulletSymbol).iconProps !== undefined;
+
 export const DistributionBar: React.FC<Props> = ({ maxWeight, bar, numberProps, hideWeight }) => {
   const { symbol, name, link, weight } = bar;
   const reservedSpacing = calculateNumberComponentWidth(maxWeight, numberProps);
+
+  const isFlagSymbolGuard = isFlagSymbol(symbol);
+  const isBulletsymbolGuard = isBulletsymbol(symbol);
+
   return (
     <Flexbox container item gap={2} justifyContent="space-between" flex="1">
       <Bar value={weight} maxValue={maxWeight}>
         <Box mx={2}>
           {/* TODO add support for Icon */}
-          {!symbol && <SpacingSpan></SpacingSpan>}
-          {symbol?.type === 'Country' && <Flag size="m" country={symbol.country} />}
-          {symbol?.type === 'Bullet' && (
+          {!symbol && <SpacingSpan />}
+          {/* These crazy ts-ignores are required since typescript compiler doesn't accept that symbol never can be undefined when the typeguards are true. */}
+          {/* @ts-ignore */}
+          {isFlagSymbolGuard && <Flag size="m" country={symbol.country} />}
+          {/* @ts-ignore */}
+          {isBulletsymbolGuard && (
             <SpacingSpan>
+              {/* @ts-ignore */}
               <Icon.Dot8 {...symbol.iconProps} />
             </SpacingSpan>
           )}

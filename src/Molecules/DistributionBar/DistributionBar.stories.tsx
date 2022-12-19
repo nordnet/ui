@@ -2,6 +2,7 @@ import React from 'react';
 import { DistributionBar } from './DistributionBar';
 import FlexTable from '../FlexTable';
 import { Flexbox, Typography } from '../../index';
+import { Bar } from './DistributionBar.types';
 
 export default {
   title: 'Molecules / DistributionBar',
@@ -44,7 +45,7 @@ const WithCountry = () => (
     maxWeight={10}
     bar={{
       name: 'Instrument name 1',
-      symbol: { type: 'Country', country: 'SE' },
+      symbol: { country: 'SE' },
       weight: 10,
     }}
   />
@@ -55,7 +56,7 @@ const WithBullet = () => (
     maxWeight={10}
     bar={{
       name: 'Instrument name 1',
-      symbol: { type: 'Bullet' },
+      symbol: { iconProps: { color: (t) => t.color.functionBlue } },
       weight: 10,
     }}
   />
@@ -67,7 +68,7 @@ const WithHiddenWeight = () => (
     hideWeight
     bar={{
       name: 'Name 999',
-      symbol: { type: 'Country', country: 'SE' },
+      symbol: { country: 'SE' },
       weight: 999,
     }}
   />
@@ -79,7 +80,7 @@ const WithLink = () => (
     bar={{
       name: 'Name 1',
       link: 'linkTo',
-      symbol: { type: 'Country', country: 'NO' },
+      symbol: { country: 'NO' },
       weight: 10,
     }}
     numberProps={{ currency: 'SEK' }}
@@ -92,17 +93,32 @@ const WithTruncatedName = () => (
     bar={{
       name: 'Looooooooooooooooooooooooooong naaaaaaaaaaaaaaaaaaaaaaaaaame',
       link: 'linkto',
-      symbol: { type: 'Country', country: 'NO' },
+      symbol: { country: 'NO' },
       weight: 10,
     }}
   />
 );
 
 const WithMultipleBars = () => {
-  const instrumentList = [
-    { name: 'Name 1000', link: 'linkto', symbol: { type: 'Country', country: 'SE' }, weight: 1000 },
-    { name: 'Name 999', link: 'linkto', symbol: { type: 'Country', country: 'SE' }, weight: 999 },
-    { name: 'Name 500', link: 'linkto', symbol: { type: 'Country', country: 'SE' }, weight: 500 },
+  const instrumentList: Bar[] = [
+    {
+      name: 'Name 1000',
+      link: 'linkto',
+      symbol: { country: 'SE' },
+      weight: 1000,
+    },
+    {
+      name: 'Name 999',
+      link: 'linkto',
+      symbol: { country: 'SE' },
+      weight: 999,
+    },
+    {
+      name: 'Name 500',
+      link: 'linkto',
+      symbol: { country: 'SE' },
+      weight: 500,
+    },
   ];
   const maxWeight = Math.max(...instrumentList.map((instrument) => instrument.weight));
 
@@ -116,25 +132,25 @@ const WithMultipleBars = () => {
 };
 
 const InTable = () => {
-  const instrumentList = [
+  const instrumentList: any[] = [
     {
       name: 'Unity Software Inc',
       link: 'linkto',
-      symbol: { type: 'Country', country: 'US' },
+      symbol: { country: 'US' },
       weight: 100,
       gav: { value: 99.18, currency: 'USD' },
     },
     {
       name: 'Volvo B',
       link: 'linkto',
-      symbol: { type: 'Country', country: 'SE' },
+      symbol: { country: 'SE' },
       weight: 70,
       gav: { value: 132, currency: 'SEK' },
     },
     {
       name: 'King',
       link: 'linkto',
-      symbol: { type: 'Country', country: 'NO' },
+      symbol: { country: 'NO' },
       weight: 55,
       gav: { value: 76, currency: 'NOK' },
     },
