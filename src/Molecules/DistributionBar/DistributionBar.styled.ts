@@ -10,7 +10,7 @@ export const Container = styled(Flexbox)`
 export const Content = styled(Flexbox)<{ mx: number }>`
   z-index: 1;
   width: 100%;
-  margin: 0 ${(p) => p.theme.spacing.unit(p.mx)}px};
+  margin: 0 ${(p) => p.theme.spacing.unit(p.mx)}px;
 `;
 
 export const Bar = styled.div`
