@@ -51,9 +51,6 @@ const CleanLink: FC<RawLinkProps> = (props) => {
 const StyledLink = styled(CleanLink)<LinkProps & { $underlined: LinkProps['underlined'] }>`
   ${(p) => getSharedStyle(p)}
   text-decoration: ${(p) => (p.$underlined ? `underline` : `none`)};
-  &:hover {
-    text-decoration: ${(p) => (p.$underlined ? `underline` : `none`)};
-  }
 `;
 
 const StyledButton = styled(NormalizedElements.Button)<
