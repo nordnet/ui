@@ -129,7 +129,12 @@ const PopOver: React.FC<Props> & {
           borderColor={borderColor}
         />
       )}
-      <motion.div initial={bottomSheet ? { y: 100 } : false} exit={{ y: 100 }} animate={{ y: 0 }}>
+      <motion.div
+        initial={bottomSheet ? { y: 100 } : false}
+        exit={{ y: 100 }}
+        animate={{ y: 0 }}
+        transition={{ type: 'ease' }}
+      >
         <StyledTooltipContent
           label={label}
           bottomSheet={bottomSheet}
