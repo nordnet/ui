@@ -35,4 +35,5 @@ export type Props = {
   handleMouseLeave?: (e: any) => void;
   customBoundary?: HTMLElement | Array<HTMLElement>;
   bottomSheet?: boolean;
+  pointerArrow?: boolean;
 };

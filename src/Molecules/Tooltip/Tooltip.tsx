@@ -44,6 +44,7 @@ export const Tooltip: FC<Props> = (props) => {
     wrapChild,
     pointerEvents = false,
     customBoundary,
+    pointerArrow,
     bottomSheetQuery,
   } = props;
   const child = React.Children.only(children) as ReactElement;
@@ -90,6 +91,7 @@ export const Tooltip: FC<Props> = (props) => {
           inModal={inModal}
           maxWidth={maxWidth}
           offset={offset}
+          pointerArrow={pointerArrow}
           pointerEvents={pointerEvents}
           handleMouseEnter={handleMouseEnter}
           handleMouseLeave={handleMouseLeave}
