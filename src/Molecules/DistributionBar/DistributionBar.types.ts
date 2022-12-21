@@ -1,27 +1,21 @@
+import React, { ReactElement } from 'react';
 import { Props as NumberProps } from '../Number/Number.types';
-import { IconProps } from '../../Atoms/Icon/IconBase.types';
-
-export type Bar = {
-  symbol?: Symbol;
-  name: string;
-  link?: string;
-  country?: string;
-  weight: number;
-};
 
 export type PartialNumberProps = Omit<NumberProps, 'value'>;
 
 export type Props = {
-  bar: Bar;
-  numberProps?: PartialNumberProps;
+  label: string | ReactElement;
+  icon?: ReactElement;
   /**
-   * @maxWeight
-    The biggest value a single bar can possibly reach
+   * @weight
+    Should be number 0-100
    */
-  maxWeight: number;
-  hideWeight?: boolean;
+  weight: number;
+  children?: React.ReactNode;
+  /**
+   * @maxWidthLabel
+    Maximum space the label are allowed to use
+   */
+  maxWidthLabel?: string;
+  delay?: number;
 };
-
-export type FlagSymbol = { country: string };
-export type BulletSymbol = { iconProps: IconProps };
-export type Symbol = FlagSymbol | BulletSymbol;
