@@ -1,3 +1,12 @@
+## [12.3.3](https://github.com/nordnet/ui/compare/v12.3.2...v12.3.3) (2022-12-21)
+
+
+### Bug Fixes
+
+* no spring animation ([5c4d2fd](https://github.com/nordnet/ui/commit/5c4d2fd))
+* remove previous underline update ([a8ac6d0](https://github.com/nordnet/ui/commit/a8ac6d0))
+* various QA fixes ([68253fa](https://github.com/nordnet/ui/commit/68253fa))
+
 ## [12.3.2](https://github.com/nordnet/ui/compare/v12.3.1...v12.3.2) (2022-12-19)
 
 
