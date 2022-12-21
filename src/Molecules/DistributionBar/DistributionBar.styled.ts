@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Flexbox } from '../../index';
+import { Flexbox, Icon } from '../../index';
 
 export const Container = styled(Flexbox)`
   isolation: isolate;
@@ -7,10 +7,16 @@ export const Container = styled(Flexbox)`
   height: ${(p) => p.theme.spacing.unit(8)}px;
 `;
 
-export const Content = styled(Flexbox)<{ mx: number }>`
+export const Content = styled(Flexbox)`
   z-index: 1;
   width: 100%;
-  margin: 0 ${(p) => p.theme.spacing.unit(p.mx)}px;
+  min-width: 0;
+  margin: 0 ${(p) => p.theme.spacing.unit(2)}px;
+`;
+
+export const Item = styled(Flexbox)`
+  min-width: 0;
+  margin-right: ${(p) => p.theme.spacing.unit(2)}px;
 `;
 
 export const Bar = styled.div`
@@ -38,4 +44,8 @@ export const Bar = styled.div`
     left: initial;
     right: -${(p) => p.theme.spacing.unit(4)}px;
   }
+`;
+
+export const StyledDot = styled(Icon.Dot8)`
+  margin: 0 ${(p) => p.theme.spacing.unit(1)}px;
 `;
