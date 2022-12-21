@@ -6,7 +6,6 @@ export type PartialNumberProps = Omit<NumberProps, 'value'>;
 export type Props = {
   label: string | ReactElement;
   icon?: ReactElement;
-  truncatedLabel?: string;
   /**
    * @weight
     Should be number 0-100

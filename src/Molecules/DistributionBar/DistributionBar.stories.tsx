@@ -102,7 +102,6 @@ export const Showcase = () => {
           <Typography>Truncate name and truncated children</Typography>
           <DistributionBar
             label="Loooooooooooooooooooong naaaaaaaaaaaame"
-            truncatedLabel="Loooooooooooooooooooong naaaaaaaaaaaame"
             weight={0}
             icon={<Flag size="m" country="SE" />}
           >

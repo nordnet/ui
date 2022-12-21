@@ -11,7 +11,6 @@ export const DistributionBar: React.FC<Props> = ({
   weight,
   children,
   maxWidthLabel,
-  truncatedLabel,
   delay = 0,
 }) => {
   return (
@@ -19,7 +18,7 @@ export const DistributionBar: React.FC<Props> = ({
       <Content container alignItems="center" justifyContent="space-between">
         <Item item container alignItems="center" gap={2} width={maxWidthLabel}>
           {iconFromProps || <StyledDot color={(t) => t.color.buttonBackgroundHoverPrimary} />}
-          <TruncateWithTooltip label={truncatedLabel || label}>
+          <TruncateWithTooltip label={label}>
             <Typography type="secondary" weight="bold">
               {label}
             </Typography>
