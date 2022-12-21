@@ -43,6 +43,5 @@ export type Props = {
   pointerEvents?: boolean;
   customBoundary?: HTMLElement | Array<HTMLElement>;
   bottomSheetQuery?: (t: Theme) => string;
-  // remove if still here in 2023
   pointerArrow?: boolean;
 };

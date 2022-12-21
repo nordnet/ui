@@ -37,6 +37,7 @@ const PopOver: React.FC<Props> & {
   handleMouseEnter,
   handleMouseLeave,
   customBoundary,
+  pointerArrow,
   bottomSheet = false,
   ...htmlSpanProps
 }) => {
@@ -119,14 +120,21 @@ const PopOver: React.FC<Props> & {
       {...htmlSpanProps}
       {...attributes.popper}
     >
-      <TooltipArrow
-        ref={setArrowElement as any}
-        position={state?.placement as any}
-        style={styles.arrow}
-        backgroundColor={backgroundColor}
-        borderColor={borderColor}
-      />
-      <motion.div initial={bottomSheet ? { y: 100 } : false} exit={{ y: 100 }} animate={{ y: 0 }}>
+      {pointerArrow && (
+        <TooltipArrow
+          ref={setArrowElement as any}
+          position={state?.placement as any}
+          style={styles.arrow}
+          backgroundColor={backgroundColor}
+          borderColor={borderColor}
+        />
+      )}
+      <motion.div
+        initial={bottomSheet ? { y: 100 } : false}
+        exit={{ y: 100 }}
+        animate={{ y: 0 }}
+        transition={{ type: 'ease' }}
+      >
         <StyledTooltipContent
           label={label}
           bottomSheet={bottomSheet}
