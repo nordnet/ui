@@ -1,3 +1,20 @@
+# [12.4.0](https://github.com/nordnet/ui/compare/v12.3.3...v12.4.0) (2022-12-22)
+
+
+### Bug Fixes
+
+* 🐛 Updated according to design ([347bafa](https://github.com/nordnet/ui/commit/347bafa))
+* css syntax error ([758ad46](https://github.com/nordnet/ui/commit/758ad46))
+* **distributionbar:** fix conditional types ([a6dea34](https://github.com/nordnet/ui/commit/a6dea34))
+* move logic to parent ocomponent ([db59818](https://github.com/nordnet/ui/commit/db59818))
+* remove truncatedlabel prop ([49049ed](https://github.com/nordnet/ui/commit/49049ed))
+* rename barwidth variable ([48abe2e](https://github.com/nordnet/ui/commit/48abe2e))
+
+
+### Features
+
+* 🎸 Distribution bar ([9b32595](https://github.com/nordnet/ui/commit/9b32595))
+
 ## [12.3.3](https://github.com/nordnet/ui/compare/v12.3.2...v12.3.3) (2022-12-21)
 
 
