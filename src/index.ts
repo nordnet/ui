@@ -42,6 +42,7 @@ import CollapsibleCard from './Molecules/CollapsibleCard';
 import ControlsListItem from './Molecules/ControlsListItem';
 import DataToggle from './Molecules/DataToggle';
 import { DatePicker, DateRangePicker, DoubleDatePicker } from './Molecules/DatePicker';
+import { DistributionBar } from './Molecules/DistributionBar';
 import Drawer from './Molecules/Drawer';
 import FeedbackBanner from './Molecules/FeedbackBanner';
 import Fieldset from './Molecules/Fieldset';
@@ -154,6 +155,7 @@ export {
   DoubleDatePicker,
   DateTime,
   Development,
+  DistributionBar,
   Drawer,
   DropdownBubble,
   FadedScroll,
