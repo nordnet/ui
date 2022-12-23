@@ -162,8 +162,7 @@ export const WithoutAllVerticalPadding = Template.bind({});
 WithoutAllVerticalPadding.args = {
   variant: 'normal',
   title: 'This card has neither top nor bottom padding',
-  noTopPadding: true,
-  noBottomPadding: true,
+  py: 0,
   children:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat turpis erat, sit amet tincidunt purus tempus sit amet. Nullam porttitor lorem a nibh efficitur condimentum. Etiam ac dolor eget felis hendrerit pellentesque. Cras efficitur libero quis mattis condimentum. Vestibulum rhoncus nibh et euismod consequat. Etiam semper leo nisl, id aliquet libero consectetur in. Nunc vulputate nec mi eu iaculis. Quisque vel pellentesque odio. Donec tempus turpis nec vehicula tempor. Nulla facilisi. Suspendisse magna ex, vulputate quis risus non, eleifend tincidunt dui. Nam blandit vitae velit non consequat.',
 };

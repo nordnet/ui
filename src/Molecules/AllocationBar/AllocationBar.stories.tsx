@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Theme } from 'theme/theme.types';
 import docs from './AllocationBar.mdx';
 import AllocationBar from './AllocationBar';
 
@@ -24,12 +25,12 @@ export const basicAllocationBar = () => {
   const mockedAllocations = [
     {
       label: 'ETFs',
-      color: 'allocationBarLightBlue',
+      color: (t: Theme) => t.color.allocationBarLightBlue,
       weight: 20,
     },
     {
       label: 'Funds',
-      color: 'allocationBarDarkBlue',
+      color: (t: Theme) => t.color.allocationBarDarkBlue,
       weight: 80,
     },
   ];
