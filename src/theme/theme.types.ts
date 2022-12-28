@@ -370,6 +370,8 @@ export type ThemeColors = {
   datePickerWithinRangeFade: string;
   /** gray6 */
   disabledBackground: string;
+  /** gray400 */
+  disabledLabelBackground: string;
   /** gray3 */
   disabledText: string;
 
@@ -721,6 +723,8 @@ export type ThemeColors = {
   timelineWarning: string;
   /** index */
   transferPendingIconColor: string;
+  /** yellow200 */
+  transferLabelBackground: string;
   /** brandPink */
   transferProgressBar1: string;
   /** green500 */
