@@ -11,7 +11,6 @@ export const Container = styled(Flexbox)`
 
 export const Item = styled(Flexbox)`
   min-width: 0;
-  margin-right: ${(p) => p.theme.spacing.unit(2)}px;
   position: relative;
   height: 100%;
   margin: 0 ${(p) => p.theme.spacing.unit(2)}px;
