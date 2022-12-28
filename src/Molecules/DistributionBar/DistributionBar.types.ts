@@ -12,10 +12,5 @@ export type Props = {
    */
   weight: number;
   children?: React.ReactNode;
-  /**
-   * @maxWidthLabel
-    Maximum space the label are allowed to use
-   */
-  maxWidthLabel?: string;
   delay?: number;
 };
