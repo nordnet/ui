@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import { Typography, TruncateWithTooltip } from '../../index';
+import { TruncateWithTooltip } from '../../index';
 import { Props } from './DistributionBar.types';
 import { Bar, Container, Item, StyledDot } from './DistributionBar.styled';
 
@@ -16,11 +16,7 @@ export const DistributionBar: React.FC<Props> = ({
     <Container container alignItems="center" justifyContent="space-between">
       <Item item container alignItems="center" gap={2} flex="1">
         {iconFromProps || <StyledDot color={(t) => t.color.buttonBackgroundHoverPrimary} />}
-        <TruncateWithTooltip label={label}>
-          <Typography type="primary" weight="bold">
-            {label}
-          </Typography>
-        </TruncateWithTooltip>
+        <TruncateWithTooltip label={label}>{label}</TruncateWithTooltip>
         <Bar
           as={motion.div}
           initial={{ width: '0' }}
