@@ -13,7 +13,7 @@ export const Item = styled(Flexbox)`
   min-width: 0;
   position: relative;
   height: 100%;
-  margin: 0 ${(p) => p.theme.spacing.unit(2)}px;
+  margin-right: ${(p) => p.theme.spacing.unit(2)}px;
   padding: 0 ${(p) => p.theme.spacing.unit(2)}px;
 `;
 
