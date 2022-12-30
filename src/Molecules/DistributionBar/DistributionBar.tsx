@@ -8,13 +8,14 @@ import { Bar, Container, Item, StyledDot } from './DistributionBar.styled';
 export const DistributionBar: React.FC<Props> = ({
   icon: iconFromProps,
   label,
+  labelFlex,
   weight,
   children,
   delay = 0,
 }) => {
   return (
     <Container container alignItems="center" justifyContent="space-between">
-      <Item item container alignItems="center" gap={2} flex="1">
+      <Item item container alignItems="center" gap={2} flex={labelFlex ?? '1'}>
         {iconFromProps || <StyledDot color={(t) => t.color.buttonBackgroundHoverPrimary} />}
         <TruncateWithTooltip label={label}>{label}</TruncateWithTooltip>
         <Bar

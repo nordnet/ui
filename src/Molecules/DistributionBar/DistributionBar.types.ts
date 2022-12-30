@@ -13,4 +13,5 @@ export type Props = {
   weight: number;
   children?: React.ReactNode;
   delay?: number;
+  labelFlex?: string;
 };
