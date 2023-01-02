@@ -1,3 +1,18 @@
+# [12.5.0](https://github.com/nordnet/ui/compare/v12.4.0...v12.5.0) (2023-01-02)
+
+
+### Bug Fixes
+
+* adjust margin so full width ([28fb0f2](https://github.com/nordnet/ui/commit/28fb0f2))
+* don't wrap label in primary typography ([fc7edf8](https://github.com/nordnet/ui/commit/fc7edf8))
+* remove duplicate margin ([1635b16](https://github.com/nordnet/ui/commit/1635b16))
+
+
+### Features
+
+* add flex to props for label / name ([352d8fc](https://github.com/nordnet/ui/commit/352d8fc))
+* the designs have changed the bar isn't the full width ([b1052d9](https://github.com/nordnet/ui/commit/b1052d9))
+
 # [12.4.0](https://github.com/nordnet/ui/compare/v12.3.3...v12.4.0) (2022-12-22)
 
 
