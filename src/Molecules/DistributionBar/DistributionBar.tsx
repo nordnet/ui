@@ -1,22 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import { TruncateWithTooltip } from '../../index';
+import { Box, TruncateWithTooltip } from '../../index';
 import { Props } from './DistributionBar.types';
 import { Bar, Container, Item, StyledDot } from './DistributionBar.styled';
 
 export const DistributionBar: React.FC<Props> = ({
   icon: iconFromProps,
   label,
-  labelFlex,
+  labelFlex = '1',
   weight,
   children,
   delay = 0,
 }) => {
   return (
     <Container container alignItems="center" justifyContent="space-between">
-      <Item item container alignItems="center" gap={2} flex={labelFlex ?? '1'}>
-        {iconFromProps || <StyledDot color={(t) => t.color.buttonBackgroundHoverPrimary} />}
+      <Item item container alignItems="center" gap={2} flex={labelFlex}>
+        <Box pl={2}>
+          {iconFromProps || <StyledDot color={(t) => t.color.buttonBackgroundHoverPrimary} />}
+        </Box>
         <TruncateWithTooltip label={label}>{label}</TruncateWithTooltip>
         <Bar
           as={motion.div}
