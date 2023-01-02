@@ -137,7 +137,6 @@ export const Showcase = () => {
           <Typography>Multiple columns</Typography>
           <DistributionBar
             label="Instrument name 1 Instrument name 1 Instrument name 1 Instrument name 1"
-            maxWidthLabel="33%"
             weight={70}
             icon={<Flag size="m" country="SE" />}
           >
@@ -158,7 +157,14 @@ export const Showcase = () => {
                 weight={Math.floor(Math.random() * 101)}
                 delay={0 + i / 5}
                 icon={<Flag size="m" country="SE" />}
-              />
+              >
+                <Flexbox container width="81px" justifyContent="flex-end">
+                  <Number value={Math.floor(Math.random() * 101)} percentage decimals={2} />
+                </Flexbox>
+                <Flexbox container width="81px" justifyContent="flex-end">
+                  <Number value={Math.floor(Math.random() * 101)} percentage decimals={2} />
+                </Flexbox>
+              </DistributionBar>
             ))}
           </Flexbox>
         </Flexbox>

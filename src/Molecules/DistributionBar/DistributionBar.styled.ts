@@ -3,20 +3,18 @@ import { Flexbox, Icon } from '../../index';
 
 export const Container = styled(Flexbox)`
   isolation: isolate;
-  position: relative;
   height: ${(p) => p.theme.spacing.unit(8)}px;
-`;
-
-export const Content = styled(Flexbox)`
   z-index: 1;
   width: 100%;
   min-width: 0;
-  margin: 0 ${(p) => p.theme.spacing.unit(2)}px;
 `;
 
 export const Item = styled(Flexbox)`
   min-width: 0;
+  position: relative;
+  height: 100%;
   margin-right: ${(p) => p.theme.spacing.unit(2)}px;
+  padding: 0 ${(p) => p.theme.spacing.unit(2)}px;
 `;
 
 export const Bar = styled.div`
@@ -24,8 +22,8 @@ export const Bar = styled.div`
   top: 0;
   left: 0;
   height: 100%;
-  background-color: ${(p) => p.theme.color.switchReadOnlyTrackBg};
-  z-index: 0;
+  background-color: ${(p) => p.theme.color.tableEmphasis};
+  z-index: -1;
   margin: 0 ${(p) => p.theme.spacing.unit(4)}px;
   &:before,
   &:after {
@@ -33,7 +31,7 @@ export const Bar = styled.div`
     content: '';
     display: block;
     border-radius: 100px 0 0 100px;
-    background-color: ${(p) => p.theme.color.switchReadOnlyTrackBg};
+    background-color: ${(p) => p.theme.color.tableEmphasis};
     height: 100%;
     width: ${(p) => p.theme.spacing.unit(4)}px;
     top: 0;
