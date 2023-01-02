@@ -370,7 +370,10 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     timelineSuccess: rawColor.green500,
     timelineWarning: rawColor.index,
 
+    transferFlowText: rawColor.gray600,
+    
     transferLabelBackground: rawColor.yellow200,
+    transferLabelText: rawColor.yellow800,
 
     transferPendingIconColor: rawColor.index,
     transferProgressBar1: rawColor.brandPink,
