@@ -123,6 +123,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     datePickerWithinRangeFade: Color(rawColor.gray2).alpha(0.01).rgb().string(),
 
     disabledBackground: rawColor.gray6,
+    disabledLabelBackground: rawColor.gray400,
     disabledText: rawColor.gray3,
 
     dropDownButtonText: rawColor.gray800,
@@ -368,6 +369,11 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     timelineNext: rawColor.gray4,
     timelineSuccess: rawColor.green500,
     timelineWarning: rawColor.index,
+
+    transferFlowText: rawColor.gray600,
+    
+    transferLabelBackground: rawColor.yellow200,
+    transferLabelText: rawColor.yellow800,
 
     transferPendingIconColor: rawColor.index,
     transferProgressBar1: rawColor.brandPink,
