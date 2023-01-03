@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import { Box, TruncateWithTooltip } from '../../index';
+import { Box, TruncateWithTooltip, Flexbox } from '../../index';
 import { Props } from './DistributionBar.types';
-import { Bar, Container, Item, StyledDot } from './DistributionBar.styled';
+import { Bar, Item, StyledDot } from './DistributionBar.styled';
 
 export const DistributionBar: React.FC<Props> = ({
   icon: iconFromProps,
@@ -14,8 +14,15 @@ export const DistributionBar: React.FC<Props> = ({
   delay = 0,
 }) => {
   return (
-    <Container container alignItems="center" justifyContent="space-between">
-      <Item item container alignItems="center" gap={2} flex={labelFlex}>
+    <Flexbox
+      container
+      alignItems="center"
+      justifyContent="space-between"
+      height={8}
+      width="100%"
+      gap={2}
+    >
+      <Item item container alignItems="center" gap={4} flex={labelFlex}>
         <Box pl={2}>
           {iconFromProps || <StyledDot color={(t) => t.color.buttonBackgroundHoverPrimary} />}
         </Box>
@@ -28,6 +35,6 @@ export const DistributionBar: React.FC<Props> = ({
         />
       </Item>
       {children}
-    </Container>
+    </Flexbox>
   );
 };

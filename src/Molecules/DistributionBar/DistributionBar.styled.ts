@@ -1,11 +1,6 @@
 import styled from 'styled-components';
 import { Flexbox, Icon } from '../../index';
 
-export const Container = styled(Flexbox)`
-  height: ${(p) => p.theme.spacing.unit(8)}px;
-  width: 100%;
-`;
-
 export const Item = styled(Flexbox)`
   isolation: isolate;
   position: relative;
