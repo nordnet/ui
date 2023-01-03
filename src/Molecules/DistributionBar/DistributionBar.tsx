@@ -22,7 +22,7 @@ export const DistributionBar: React.FC<Props> = ({
       width="100%"
       gap={2}
     >
-      <Item item container alignItems="center" gap={4} flex={labelFlex}>
+      <Item item container alignItems="center" gap={3} flex={labelFlex}>
         <Box pl={2}>
           {iconFromProps || <StyledDot color={(t) => t.color.buttonBackgroundHoverPrimary} />}
         </Box>
