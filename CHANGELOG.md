@@ -1,3 +1,17 @@
+# [12.7.0](https://github.com/nordnet/ui/compare/v12.6.0...v12.7.0) (2023-01-03)
+
+
+### Bug Fixes
+
+* style updates for dist bar ([4a236dc](https://github.com/nordnet/ui/commit/4a236dc))
+* use 12px ([8012c25](https://github.com/nordnet/ui/commit/8012c25))
+
+
+### Features
+
+* better separation icon and label ([93f0227](https://github.com/nordnet/ui/commit/93f0227))
+* update functionality ([b1d9d88](https://github.com/nordnet/ui/commit/b1d9d88))
+
 # [12.6.0](https://github.com/nordnet/ui/compare/v12.5.0...v12.6.0) (2023-01-03)
 
 
