@@ -12,26 +12,21 @@ const StyledCard = styled(Card)`
 `;
 
 export const CardWithTitle: CardWithTitleComponent = (props) => {
-  const {
-    title,
-    variant = 'normal',
-    noTopPadding = false,
-    noBottomPadding = false,
-    children,
-    ...rest
-  } = props;
+  const { title, variant = 'normal', children, p, pb, pl, pr, pt, px, py, ...rest } = props;
   const isBig = variant === 'big';
 
   return (
     <StyledCard {...rest}>
       <Box
-        pt={noTopPadding ? 0 : 3}
-        px={3}
-        pb={2}
+        p={p}
+        pb={pb ?? 2}
+        pl={pl}
+        pr={pr}
+        pt={pt ?? 3}
+        px={px ?? 3}
+        py={py}
         sm={{
-          ...(isBig
-            ? { pt: noTopPadding ? 0 : 10, px: 10, pb: 3 }
-            : { pt: noTopPadding ? 0 : 4, px: 5 }),
+          ...(isBig ? { pt: pt ?? 10, px: 10, pb: 3 } : { pt: pt ?? 4, px: 5 }),
         }}
         as="header"
       >
@@ -55,9 +50,9 @@ export const CardWithTitle: CardWithTitleComponent = (props) => {
       </Box>
 
       <Box
-        px={3}
-        pb={noBottomPadding ? 0 : 5}
-        sm={{ ...(isBig ? { px: 10, pb: noBottomPadding ? 0 : 10 } : { px: 5 }) }}
+        px={px ?? 3}
+        pb={pb ?? 5}
+        sm={{ ...(isBig ? { px: px ?? 10, pb: pb ?? 10 } : { px: 5 }) }}
       >
         {children}
       </Box>

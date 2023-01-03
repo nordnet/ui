@@ -25,7 +25,7 @@ export const PageHeaderCard: PageHeaderCardComponent = ({ title, className, chil
           sm={{ direction: 'row', justifyContent: 'space-between', alignItems: 'center' }}
         >
           <Flexbox item>
-            <Box p={3} sm={{ px: 0, py: 2 }}>
+            <Box px={0} py={2} sm={{ p: 3 }}>
               {pageHeaderTitle()}
             </Box>
           </Flexbox>
