@@ -1,3 +1,11 @@
+# [12.6.0](https://github.com/nordnet/ui/compare/v12.5.0...v12.6.0) (2023-01-03)
+
+
+### Features
+
+* 🎸 add new colors ([ddd2599](https://github.com/nordnet/ui/commit/ddd2599))
+* 🎸 update colors and add one more ([5433d86](https://github.com/nordnet/ui/commit/5433d86))
+
 # [12.5.0](https://github.com/nordnet/ui/compare/v12.4.0...v12.5.0) (2023-01-02)
 
 
