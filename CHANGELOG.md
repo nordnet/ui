@@ -1,3 +1,10 @@
+## [12.7.1](https://github.com/nordnet/ui/compare/v12.7.0...v12.7.1) (2023-01-03)
+
+
+### Bug Fixes
+
+* didn't mean to add this :/ ([68f8fea](https://github.com/nordnet/ui/commit/68f8fea))
+
 # [12.7.0](https://github.com/nordnet/ui/compare/v12.6.0...v12.7.0) (2023-01-03)
 
 
