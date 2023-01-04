@@ -478,6 +478,8 @@ export type ThemeColors = {
   lineScaleValueColor: string;
   /** complementaryTurquoise1 */
   listItemBackgroundHover: string;
+  /** light: gray300, dark: gray700  */
+  listSelectionCardBorder: string;
   /** complementaryBlue2 */
   loanRatesGraphColor2: string;
   /** brandTurquoise */
