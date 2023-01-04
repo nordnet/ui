@@ -1,3 +1,10 @@
+# [12.8.0](https://github.com/nordnet/ui/compare/v12.7.1...v12.8.0) (2023-01-04)
+
+
+### Features
+
+* 🎸 add new semantic color ([25b2a51](https://github.com/nordnet/ui/commit/25b2a51))
+
 ## [12.7.1](https://github.com/nordnet/ui/compare/v12.7.0...v12.7.1) (2023-01-03)
 
 
