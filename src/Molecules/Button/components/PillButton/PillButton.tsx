@@ -31,7 +31,7 @@ const StyledPillButton = styled(Button)<PillButtonProps>`
       ${
         isNegative(p.variant)
           ? p.theme.color.pillButtonBackgroundNegativeHover
-          : p.theme.color.buttonHoverSecondary
+          : p.theme.color.pillButtonHoverSecondary
       };
       background-color: ${p.theme.color.background};
     }
@@ -40,7 +40,7 @@ const StyledPillButton = styled(Button)<PillButtonProps>`
       ${
         isNegative(p.variant)
           ? p.theme.color.pillButtonBackgroundNegativeActive
-          : p.theme.color.buttonActiveSecondary
+          : p.theme.color.pillButtonActiveSecondary
       };
       background-color: ${p.theme.color.background};
     }
