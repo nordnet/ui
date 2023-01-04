@@ -198,6 +198,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     label: rawColor.gray400,
     lineScaleValueColor: rawColor.complementaryTurquoise1,
     listItemBackgroundHover: Color(rawColor.complementaryTurquoise1).alpha(0.1).rgb().string(),
+    listSelectionCardBorder: rawColor.gray700,
     loanRatesGraphColor2: rawColor.complementaryTurquoise2,
     marketingCardMortageHighlight: rawColor.brandTurquoise,
 
