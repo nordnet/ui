@@ -86,6 +86,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     pillButtonBackgroundNegativeHover: rawColor.red700,
     pillButtonBackgroundNegativeActive: rawColor.red800,
 
+    pillButtonHoverSecondary: rawColor.blue600,
+    pillButtonActiveSecondary: rawColor.blue700,
+
     buttonBorderSecondary: rawColor.blue500,
     buttonHoverSecondary: rawColor.blue600,
     buttonActiveSecondary: rawColor.blue700,
@@ -169,6 +172,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     guidanceSelectionCardIcon: rawColor.brandPink,
     iconBackdropCta: Color(rawColor.cta).alpha(0.1).rgb().string(),
     icon: rawColor.gray800,
+    iconButtonHover: rawColor.blue500,
+    iconButtonPressed: rawColor.blue600,
 
     indexFundsBackground: rawColor.gray6,
     indexFundsFinnishAccent: [

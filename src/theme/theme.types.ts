@@ -254,6 +254,10 @@ export type ThemeColors = {
   pillButtonBackgroundNegativeHover: string;
   /** red800 */
   pillButtonBackgroundNegativeActive: string;
+  /** blue600 */
+  pillButtonHoverSecondary: string;
+  /** blue700 */
+  pillButtonActiveSecondary: string;
   /**
    * gray500
    */
@@ -446,6 +450,10 @@ export type ThemeColors = {
   iconBackdropCta: string;
   /** gray2 */
   icon: string;
+  /** blue500 */
+  iconButtonHover: string;
+  /** blue600 */
+  iconButtonPressed: string;
   /** gray6 */
   indexFundsBackground: string;
   /** brandPink, brandBlue, complementaryBlue2, black, complementaryTurquoise1 */
