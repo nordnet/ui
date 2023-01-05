@@ -5,7 +5,6 @@ export const Item = styled(Flexbox)`
   isolation: isolate;
   position: relative;
   min-width: 0;
-  height: 100%;
 `;
 
 export const Bar = styled.div`

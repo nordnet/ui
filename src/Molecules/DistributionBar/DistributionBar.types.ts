@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react';
 import { Props as NumberProps } from '../Number/Number.types';
+import { Props as FlexboxProps } from '../../Atoms/Flexbox/Flexbox.types';
 
 export type PartialNumberProps = Omit<NumberProps, 'value'>;
 
@@ -13,5 +14,5 @@ export type Props = {
   weight: number;
   children?: React.ReactNode;
   delay?: number;
-  labelFlex?: string;
+  labelProps?: FlexboxProps;
 };
