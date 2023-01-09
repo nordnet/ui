@@ -1,3 +1,10 @@
+# [12.9.0](https://github.com/nordnet/ui/compare/v12.8.0...v12.9.0) (2023-01-09)
+
+
+### Features
+
+* allow all flexbox props to be passed to label ([b956f4c](https://github.com/nordnet/ui/commit/b956f4c))
+
 # [12.8.0](https://github.com/nordnet/ui/compare/v12.7.1...v12.8.0) (2023-01-04)
 
 
