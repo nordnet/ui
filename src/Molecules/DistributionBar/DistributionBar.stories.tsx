@@ -137,6 +137,12 @@ export const Showcase = () => {
           <Typography>Multiple columns</Typography>
           <DistributionBar
             label="Instrument name 1 Instrument name 1 Instrument name 1 Instrument name 1"
+            labelProps={{
+              container: true,
+              md: {
+                gutter: 0,
+              },
+            }}
             weight={70}
             icon={<Flag size="m" country="SE" />}
           >

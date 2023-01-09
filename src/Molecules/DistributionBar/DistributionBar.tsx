@@ -8,7 +8,7 @@ import { Bar, Item, StyledDot } from './DistributionBar.styled';
 export const DistributionBar: React.FC<Props> = ({
   icon: iconFromProps,
   label,
-  labelFlex = '1',
+  labelProps,
   weight,
   children,
   delay = 0,
@@ -22,7 +22,7 @@ export const DistributionBar: React.FC<Props> = ({
       width="100%"
       gap={2}
     >
-      <Item item container alignItems="center" gap={3} flex={labelFlex}>
+      <Item item container alignItems="center" gap={3} height="100%" {...labelProps}>
         <Box pl={2}>
           {iconFromProps || <StyledDot color={(t) => t.color.buttonBackgroundHoverPrimary} />}
         </Box>
