@@ -482,6 +482,26 @@ export type ThemeColors = {
   investmentPredictionGraphTurquoise: string;
   /** gray600 */
   label: string;
+  /** light: blue100, dark: blue800 */
+  labelBackgroundBlue: string;
+  /** light: green100, dark: green800 */
+  labelBackgroundGreen: string;
+  /** light: pink100, dark: pink900 */
+  labelBackgroundPink: string;
+  /** light: teal100, dark: teal800 */
+  labelBackgroundTeal: string;
+  /** light: yellow200, dark: yellow900 */
+  labelBackgroundYellow: string;
+  /** light: blue500, dark: blue400 */
+  labelTextBlue: string;
+  /** light: green700, dark: green450 */
+  labelTextGreen: string;
+  /** light: pink600, dark: pink500 */
+  labelTextPink: string;
+  /** light: teal600, dark: teal400 */
+  labelTextTeal: string;
+  /** light: yellow800, dark: yellow400 */
+  labelTextYellow: string;
   /** complementaryTurquoise1 */
   lineScaleValueColor: string;
   /** complementaryTurquoise1 */
