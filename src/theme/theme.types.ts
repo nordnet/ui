@@ -594,6 +594,14 @@ export type ThemeColors = {
    * blue500
    */
   link: string;
+  /**
+   * blue500
+   */
+  linkHover: string;
+  /**
+   * blue500
+   */
+  linkPressed: string;
   /** gray6 */
   privateBankingBannerBackground: string;
   /** white */

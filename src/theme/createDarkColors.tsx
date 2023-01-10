@@ -273,6 +273,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     infoBarInfo: rawColor.blue500,
 
     link: rawColor.blue400,
+    linkHover: rawColor.blue300,
+    linkPressed: rawColor.blue200,
 
     privateBankingBannerBackground: rawColor.gray6,
     privateBankingBannerText: rawColor.white,
