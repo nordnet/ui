@@ -1,3 +1,10 @@
+## [12.9.1](https://github.com/nordnet/ui/compare/v12.9.0...v12.9.1) (2023-01-10)
+
+
+### Bug Fixes
+
+* sv-3365 add new link state colors ([25e465f](https://github.com/nordnet/ui/commit/25e465f))
+
 # [12.9.0](https://github.com/nordnet/ui/compare/v12.8.0...v12.9.0) (2023-01-09)
 
 
