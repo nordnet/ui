@@ -271,6 +271,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     infoBarInfo: rawColor.blue500,
 
     link: rawColor.blue500,
+    linkHover: rawColor.blue500,
+    linkPressed: rawColor.blue500,
 
     privateBankingBannerBackground: rawColor.gray6,
     privateBankingBannerText: rawColor.white,
