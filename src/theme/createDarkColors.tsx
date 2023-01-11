@@ -196,6 +196,19 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     investmentPredictionGraphTurquoise: rawColor.complementaryTurquoise2,
 
     label: rawColor.gray400,
+
+    labelBackgroundBlue: rawColor.blue800,
+    labelBackgroundGreen: rawColor.green800,
+    labelBackgroundPink: rawColor.pink900,
+    labelBackgroundTeal: rawColor.teal800,
+    labelBackgroundYellow: rawColor.yellow900,
+
+    labelTextBlue: rawColor.blue400,
+    labelTextGreen: rawColor.green450,
+    labelTextPink: rawColor.pink500,
+    labelTextTeal: rawColor.teal400,
+    labelTextYellow: rawColor.yellow400,
+
     lineScaleValueColor: rawColor.complementaryTurquoise1,
     listItemBackgroundHover: Color(rawColor.complementaryTurquoise1).alpha(0.1).rgb().string(),
     listSelectionCardBorder: rawColor.gray700,
