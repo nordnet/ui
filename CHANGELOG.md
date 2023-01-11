@@ -1,3 +1,10 @@
+## [12.9.2](https://github.com/nordnet/ui/compare/v12.9.1...v12.9.2) (2023-01-11)
+
+
+### Bug Fixes
+
+* 🐛 add new colors for label ([c9ff586](https://github.com/nordnet/ui/commit/c9ff586))
+
 ## [12.9.1](https://github.com/nordnet/ui/compare/v12.9.0...v12.9.1) (2023-01-10)
 
 
