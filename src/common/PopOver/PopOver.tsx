@@ -1,6 +1,5 @@
 import React, { MutableRefObject, useCallback, useRef, useState } from 'react';
 import { usePopper } from 'react-popper';
-import { motion } from 'framer-motion';
 import { mergeRefs } from '../utils';
 import { Portal } from '../..';
 import { TooltipArrow } from './TooltipArrow';
@@ -129,21 +128,15 @@ const PopOver: React.FC<Props> & {
           borderColor={borderColor}
         />
       )}
-      <motion.div
-        initial={bottomSheet ? { y: 100 } : false}
-        exit={{ y: 100 }}
-        animate={{ y: 0 }}
-        transition={{ type: 'ease' }}
-      >
-        <StyledTooltipContent
-          label={label}
-          bottomSheet={bottomSheet}
-          ariaLabel={ariaLabel}
-          maxWidth={maxWidth}
-          backgroundColor={backgroundColor}
-          borderColor={borderColor}
-        />
-      </motion.div>
+
+      <StyledTooltipContent
+        label={label}
+        bottomSheet={bottomSheet}
+        ariaLabel={ariaLabel}
+        maxWidth={maxWidth}
+        backgroundColor={backgroundColor}
+        borderColor={borderColor}
+      />
     </StyledSpan>
   );
 

@@ -418,9 +418,10 @@ export const BottomSheet = () => {
   return (
     <Box py={20}>
       <Tooltip
-        label="label"
+        label={<button onClick={() => alert('clicked')}>label</button>}
         position="top"
         wrapChild
+        pointerEvents
         bottomSheetQuery={(t) => t.media.lessThan(t.breakpoints.sm)}
       >
         <Typography type="primary">hover me</Typography>

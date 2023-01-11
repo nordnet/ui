@@ -44,7 +44,7 @@ export const Tooltip: FC<Props> = (props) => {
     wrapChild,
     pointerEvents = false,
     customBoundary,
-    pointerArrow,
+    pointerArrow = true,
     bottomSheetQuery,
   } = props;
   const child = React.Children.only(children) as ReactElement;
