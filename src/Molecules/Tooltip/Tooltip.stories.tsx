@@ -418,6 +418,7 @@ export const BottomSheet = () => {
   return (
     <Box py={20}>
       <Tooltip
+        // eslint-disable-next-line react/button-has-type
         label={<button onClick={() => alert('clicked')}>label</button>}
         position="top"
         wrapChild
