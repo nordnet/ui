@@ -1,3 +1,11 @@
+## [12.9.3](https://github.com/nordnet/ui/compare/v12.9.2...v12.9.3) (2023-01-12)
+
+
+### Bug Fixes
+
+* less complicated svg, camelCase ([fa668ea](https://github.com/nordnet/ui/commit/fa668ea))
+* new 8 icons for shareville notifications ([cd48e10](https://github.com/nordnet/ui/commit/cd48e10))
+
 ## [12.9.2](https://github.com/nordnet/ui/compare/v12.9.1...v12.9.2) (2023-01-11)
 
 
