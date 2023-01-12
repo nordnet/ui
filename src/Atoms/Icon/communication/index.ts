@@ -4,6 +4,7 @@ import blocked from './blocked';
 import clock from './clock';
 import clockFill from './clockFill';
 import comment from './comment';
+import commentFill from './commentFill';
 import dislike from './dislike';
 import dislikeFill from './dislikeFill';
 import error from './error';
@@ -30,6 +31,7 @@ import notification from './notification';
 import phone from './phone';
 import podcast from './podcast';
 import poll from './poll';
+import pollFill from './pollFill';
 import support from './support';
 import twitter from './twitter';
 import video from './video';
@@ -48,6 +50,7 @@ export default {
   ...clock,
   ...clockFill,
   ...comment,
+  ...commentFill,
   ...dislike,
   ...dislikeFill,
   ...error,
@@ -74,6 +77,7 @@ export default {
   ...phone,
   ...podcast,
   ...poll,
+  ...pollFill,
   ...support,
   ...twitter,
   ...video,
