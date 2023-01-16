@@ -3,7 +3,7 @@ import React from 'react';
 import { IconBase } from '../../IconBase';
 import { IconProps } from '../../IconBase.types';
 
-const Watchlist24: React.FC<IconProps> = (props) => {
+const WatchlistFill24: React.FC<IconProps> = (props) => {
   return (
     <IconBase {...props} width={24} height={24}>
       <path
@@ -16,4 +16,6 @@ const Watchlist24: React.FC<IconProps> = (props) => {
   );
 };
 
-export default Watchlist24;
+WatchlistFill24.displayName = 'Icon.WatchlistFill';
+
+export default WatchlistFill24;

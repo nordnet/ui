@@ -5,6 +5,7 @@ import mobile from './mobile';
 import modeDark from './modeDark';
 import modeLight from './modeLight';
 import scanQR from './scanQR';
+import sound from './sound';
 import tabDefault from './tabDefault';
 import userIdFace from './userIdFace';
 import userIdTouch from './userIdTouch';
@@ -17,6 +18,7 @@ export default {
   ...modeDark,
   ...modeLight,
   ...scanQR,
+  ...sound,
   ...tabDefault,
   ...userIdFace,
   ...userIdTouch,

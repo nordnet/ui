@@ -3,7 +3,7 @@ import React from 'react';
 import { IconBase } from '../../IconBase';
 import { IconProps } from '../../IconBase.types';
 
-const Dot8: React.FC<IconProps> = (props) => {
+const Play32: React.FC<IconProps> = (props) => {
   return (
     <IconBase {...props} width={32} height={32}>
       <path
@@ -22,4 +22,6 @@ const Dot8: React.FC<IconProps> = (props) => {
   );
 };
 
-export default Dot8;
+Play32.displayName = 'Icon.Play';
+
+export default Play32;
