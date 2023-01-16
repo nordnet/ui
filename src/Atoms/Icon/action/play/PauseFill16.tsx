@@ -3,19 +3,19 @@ import React from 'react';
 import { IconBase } from '../../IconBase';
 import { IconProps } from '../../IconBase.types';
 
-const WatchlistFill16: React.FC<IconProps> = (props) => {
+const PauseFill16: React.FC<IconProps> = (props) => {
   return (
     <IconBase {...props} width={16} height={16}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M16 8s-3 5-8 5-8-5-8-5 3-5 8-5 8 5 8 5zm-8 2a2 2 0 100-4 2 2 0 000 4z"
+        d="M6.5 2h-4v12h4V2ZM13.5 2h-4v12h4V2Z"
         fill="currentColor"
       />
     </IconBase>
   );
 };
 
-WatchlistFill16.displayName = 'Icon.WatchlistFill';
+PauseFill16.displayName = 'Icon.PauseFill';
 
-export default WatchlistFill16;
+export default PauseFill16;

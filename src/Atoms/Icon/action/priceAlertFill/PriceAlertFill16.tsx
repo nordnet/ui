@@ -3,7 +3,7 @@ import React from 'react';
 import { IconBase } from '../../IconBase';
 import { IconProps } from '../../IconBase.types';
 
-const PriceAlert16: React.FC<IconProps> = (props) => {
+const PriceAlertFill16: React.FC<IconProps> = (props) => {
   return (
     <IconBase {...props} width={16} height={16}>
       <path
@@ -14,4 +14,6 @@ const PriceAlert16: React.FC<IconProps> = (props) => {
   );
 };
 
-export default PriceAlert16;
+PriceAlertFill16.displayName = 'Icon.PriceAlertFill';
+
+export default PriceAlertFill16;
