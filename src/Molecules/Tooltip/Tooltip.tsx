@@ -23,11 +23,11 @@ const Backdrop = styled.div`
   inset: 0 0 0 0;
   width: 100vw;
   height: 100vh;
-  background-color: ${(p) => p.theme.color.modalBackdrop};
+  background-color: ${p => p.theme.color.modalBackdrop};
   z-index: ${({ theme }) => theme.zIndex.modal};
 `;
 
-export const Tooltip: FC<Props> = (props) => {
+export const Tooltip: FC<Props> = props => {
   const {
     className,
     children,
@@ -44,14 +44,25 @@ export const Tooltip: FC<Props> = (props) => {
     wrapChild,
     pointerEvents = false,
     customBoundary,
-    pointerArrow,
+    pointerArrow = true,
     bottomSheetQuery,
   } = props;
   const child = React.Children.only(children) as ReactElement;
 
   const [triggerElement, setTriggerElement] = useState(undefined);
 
-  const bottomSheet = useMedia((t) => bottomSheetQuery?.(t) || '__false') || false;
+  const [popoverElement, setPopoverElement] = useState(undefined);
+
+  const bottomSheet = useMedia(t => bottomSheetQuery?.(t) || '__false') || false;
+
+  const params = {
+    mode: bottomSheet ? 'click' : mode,
+    controlledIsOpen,
+    openDelay,
+    closeDelay,
+    isBottomSheet: bottomSheet,
+    popoverElement,
+  };
 
   const {
     id,
@@ -64,7 +75,14 @@ export const Tooltip: FC<Props> = (props) => {
     handleMouseLeave,
     handleKeyDown,
     handleMouseDown,
-  } = useTooltip(bottomSheet ? 'click' : mode, controlledIsOpen, openDelay, closeDelay);
+  } = useTooltip(
+    params.mode,
+    params.controlledIsOpen,
+    params.openDelay,
+    params.closeDelay,
+    params.isBottomSheet,
+    params.popoverElement,
+  );
 
   return (
     <>
@@ -82,6 +100,7 @@ export const Tooltip: FC<Props> = (props) => {
       {isOpen && bottomSheet && <Backdrop />}
       {isOpen && (
         <PopOver
+          setPopoverElement={bottomSheet ? setPopoverElement : undefined}
           className={className}
           id={id}
           triggerElement={triggerElement}
@@ -92,7 +111,7 @@ export const Tooltip: FC<Props> = (props) => {
           maxWidth={maxWidth}
           offset={offset}
           pointerArrow={pointerArrow}
-          pointerEvents={pointerEvents}
+          pointerEvents={bottomSheet || pointerEvents}
           handleMouseEnter={handleMouseEnter}
           handleMouseLeave={handleMouseLeave}
           customBoundary={customBoundary}

@@ -36,4 +36,5 @@ export type Props = {
   customBoundary?: HTMLElement | Array<HTMLElement>;
   bottomSheet?: boolean;
   pointerArrow?: boolean;
+  setPopoverElement?: (r: any) => void;
 };
