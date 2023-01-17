@@ -69,3 +69,24 @@ export const differentPlacementAndTrianglePosition = () => (
     ]}
   />
 );
+
+export const differentColors = () => (
+  <Display
+    items={[
+      {
+        component: (
+          <DropdownBubble
+            position="center"
+            placement="top"
+            backgroundColor={(c) => c.color.backgroundBlack}
+            borderColor={(c) => c.color.functionRed}
+            textColor={(c) => c.color.textLight}
+          >
+            Custom background, border and text colors
+          </DropdownBubble>
+        ),
+        title: 'Custom background',
+      },
+    ]}
+  />
+);

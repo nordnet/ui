@@ -25,6 +25,7 @@ export const CompletionBar = styled.div<{ completion: number; noButtons: boolean
     content: '';
   }
 `;
+
 export const HiddenText = styled(Box)`
   overflow: hidden;
   width: 0;

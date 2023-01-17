@@ -1,8 +1,11 @@
 import React, { KeyboardEvent, MouseEvent, TouchEvent, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { Component, InternalProps } from './Slider.types';
-import { THUMB_BIG_PX, THUMB_SMALL_PX, VARIANT_TYPES } from './constants';
-import { SliderHandle } from './SliderHandle';
+
+import DropdownBubble, { TRIANGLE_SIZE } from '../../Atoms/DropdownBubble';
+import Typography from '../../Atoms/Typography';
+import { getKnobSize, getHeight } from './utils';
+import { SliderKnob } from './SliderKnob';
 import { SliderTrack } from './SliderTrack';
 import { SliderTrackHighlight } from './SliderTrackHighlight';
 import { isFunction, isNumber } from '../../common/utils';
@@ -11,11 +14,9 @@ const clamp = (val: number, min: number, max: number) => {
   if (val < min) {
     return min;
   }
-
   if (val > max) {
     return max;
   }
-
   return val;
 };
 
@@ -57,8 +58,8 @@ const getNewValue = (
   }
 
   const { min, max, step } = props;
-
   const { left, width } = track.getBoundingClientRect();
+
   const diff = clickPosition - left;
   const percent = diff / width;
   const newValue = percentToValue(percent, min, max);
@@ -70,8 +71,18 @@ const getNewValue = (
 const Container = styled.div<InternalProps>`
   display: flex;
   align-items: center;
-  height: ${(p) =>
-    p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL_PX}px` : `${THUMB_BIG_PX}px`};
+  height: ${(p) => `${getKnobSize(p.$variant)}px`};
+  margin: 0 ${(p) => `${getKnobSize(p.$variant) / 2}px`};
+`;
+
+const StyledDropdownBubble = styled(DropdownBubble)<InternalProps & { visible: boolean }>`
+  transform: ${(p) =>
+    `translate(-50%, calc(-100% - ${
+      getKnobSize(p.$variant) / 2 + TRIANGLE_SIZE + getHeight(p.$variant) / 2
+    }px))`};
+  padding: 6px 8px;
+  opacity: ${(p) => (p.visible ? 1 : 0)};
+  transition: opacity 0.16s ease-in-out;
 `;
 
 const Slider: Component = ({
@@ -84,16 +95,19 @@ const Slider: Component = ({
   step,
   value: controlledValue,
   variant = 'big',
+  showTooltip,
+  formatter = (value: number) => value.toString(),
+  readOnly,
 }) => {
   const trackRef: React.Ref<HTMLDivElement> = useRef(null);
-  const thumbRef: React.Ref<HTMLDivElement> = useRef(null);
+  const handleRef: React.Ref<HTMLDivElement> = useRef(null);
   const isControlled = isNumber(controlledValue);
+  const [hoverPosition, setHoverPosition] = useState<number | null>(null);
+  const [hoverVisible, setHoverVisible] = useState<boolean>(false);
   const [valueInternal, setValueInternal] = useState(defaultValue || min);
   const value = isControlled ? controlledValue! : valueInternal;
   const trackPercent = valueToPercent(value, min, max);
-  const handlePosition = `calc(${trackPercent}% - ${
-    variant === 'big' ? `${THUMB_BIG_PX}` : `${THUMB_SMALL_PX}`
-  }px * ${trackPercent * 0.01})`;
+  const handlePosition = `calc(${trackPercent}% - ${getKnobSize(variant) / 2}px * ${1})`;
 
   const updateValue = (newValue: number) => {
     if (!isControlled) {
@@ -106,7 +120,7 @@ const Slider: Component = ({
   };
 
   const handleChange = (clickPosition: number) => {
-    if (!disabled) {
+    if (!disabled && !readOnly) {
       const newValue = getNewValue(clickPosition, trackRef.current, {
         min,
         max,
@@ -119,12 +133,36 @@ const Slider: Component = ({
     }
   };
 
+  const handleHover = (pos: number) => {
+    if (!disabled && !readOnly) {
+      const newValue = getNewValue(pos, trackRef.current, {
+        min,
+        max,
+        step,
+      });
+      if (newValue) {
+        setHoverPosition(newValue);
+      }
+      if (!hoverVisible) {
+        setHoverVisible(true);
+      }
+    }
+  };
+
   const handleMouseMove = (event: MouseEvent) => {
     event.stopPropagation();
     event.preventDefault();
     const pointerPosition = event.clientX;
-
     handleChange(pointerPosition);
+  };
+
+  const handleMouseHover = (event: MouseEvent) => {
+    const pointerPosition = event.clientX;
+    handleHover(pointerPosition);
+  };
+
+  const handleMouseLeave = () => {
+    setHoverVisible(false);
   };
 
   const handleMouseUp = () => {
@@ -161,19 +199,15 @@ const Slider: Component = ({
 
   const handleTrackClick = (event: MouseEvent) => {
     const pointerPosition = event.clientX;
-    thumbRef.current?.focus();
+    handleRef.current?.focus();
 
     handleChange(pointerPosition);
   };
 
   const handleKeyDown = (event: KeyboardEvent) => {
     if (!disabled) {
-      const increase =
-        (event.key && ['ArrowRight', 'ArrowUp'].includes(event.key)) ||
-        (event.keyCode && [38, 39].includes(event.keyCode));
-      const decrease =
-        (event.key && ['ArrowLeft', 'ArrowDown'].includes(event.key)) ||
-        (event.keyCode && [37, 40].includes(event.keyCode));
+      const increase = event.key && ['ArrowRight', 'ArrowUp'].includes(event.key);
+      const decrease = event.key && ['ArrowLeft', 'ArrowDown'].includes(event.key);
 
       let newValue = value;
       if (increase) {
@@ -187,6 +221,10 @@ const Slider: Component = ({
     }
   };
 
+  const getstyle = {
+    left: handlePosition,
+  };
+
   return (
     <Container
       $disabled={disabled}
@@ -196,23 +234,55 @@ const Slider: Component = ({
       ref={trackRef}
       tabIndex={-1}
     >
-      <SliderTrack variant={variant}>
+      <SliderTrack
+        variant={variant}
+        readOnly={readOnly}
+        onMouseMove={handleMouseHover}
+        onMouseLeave={handleMouseLeave}
+      >
         <SliderTrackHighlight sliderColor={sliderColor} value={trackPercent} variant={variant} />
-        <SliderHandle
-          disabled={disabled}
-          max={max}
-          min={min}
-          onClick={handleThumbClick}
-          onKeyDown={handleKeyDown}
-          onMouseDown={handleMouseDown}
-          onMouseUp={handleMouseUp}
-          onTouchStart={handleTouchStart}
-          ref={thumbRef}
-          sliderColor={sliderColor}
-          style={{ left: handlePosition }}
-          value={value}
-          variant={variant}
-        />
+        {!readOnly && (
+          <>
+            {showTooltip && (
+              <StyledDropdownBubble
+                $variant={variant}
+                position="center"
+                placement="top"
+                backgroundColor={(c) => c.color.backgroundBlack}
+                borderColor={(c) => c.color.backgroundBlack}
+                textColor={(c) => c.color.textLight}
+                style={{
+                  position: 'absolute',
+                  ...(hoverPosition && {
+                    marginLeft: `${valueToPercent(hoverPosition, min, max)}% `,
+                  }),
+                }}
+                visible={hoverVisible}
+              >
+                {hoverPosition && (
+                  <Typography type="tertiary" color={(t) => t.color.textLight}>
+                    {formatter(hoverPosition)}
+                  </Typography>
+                )}
+              </StyledDropdownBubble>
+            )}
+            <SliderKnob
+              disabled={disabled}
+              max={max}
+              min={min}
+              onClick={handleThumbClick}
+              onKeyDown={handleKeyDown}
+              onMouseDown={handleMouseDown}
+              onMouseUp={handleMouseUp}
+              onTouchStart={handleTouchStart}
+              ref={handleRef}
+              sliderColor={sliderColor}
+              style={getstyle}
+              value={value}
+              variant={variant}
+            />
+          </>
+        )}
       </SliderTrack>
     </Container>
   );

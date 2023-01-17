@@ -1,3 +1,5 @@
+import { ColorFn } from 'common/Types';
+
 export type Props = {
   /**
    * @default 'right'
@@ -13,4 +15,7 @@ export type Props = {
    */
   maxHeight?: string;
   children?: React.ReactNode;
+  backgroundColor?: ColorFn;
+  borderColor?: ColorFn;
+  textColor?: ColorFn;
 };

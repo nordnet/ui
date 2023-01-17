@@ -112,7 +112,7 @@ import {
 } from './Molecules/FlexTable/shared/persistedSortOrder';
 
 /** Utils */
-import { numberWithLimit } from './common/utils';
+import { numberWithLimit, secondsToTimeString } from './common/utils';
 import { above, below, between } from './common/mediaUtils';
 import { units } from './common/unitUtils';
 
@@ -230,6 +230,7 @@ export {
   VisuallyHidden,
   createTheme,
   numberWithLimit,
+  secondsToTimeString,
   above,
   below,
   between,

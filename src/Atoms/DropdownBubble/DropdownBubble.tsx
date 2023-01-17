@@ -1,8 +1,11 @@
+import { ColorFn } from 'Molecules/Slider/Slider.types';
 import styled, { css } from 'styled-components';
-import { Props } from './DropdownBubble.types';
 
-const TRIANGLE_SIZE = 8;
-const TOP_OFFSET = 11;
+import { Props } from './DropdownBubble.types';
+import { Theme } from '../../theme/theme.types';
+
+export const TRIANGLE_SIZE = 8;
+export const TOP_OFFSET = 11;
 
 const leftAndRightCss = css<Props>`
   ${(p) => {
@@ -10,7 +13,7 @@ const leftAndRightCss = css<Props>`
       case 'left':
         return 'left: 12px;';
       case 'center':
-        return 'left: 50%;';
+        return `left: calc(50% - ${TRIANGLE_SIZE}px);`;
       case 'right':
       default:
         return 'right: 12px;';
@@ -41,37 +44,51 @@ const commonTriangleCss = css<any>`
 `;
 
 const getTrianglePositionAndColor = (
+  theme: Theme,
+  defaultColor: string,
   placement: string | undefined,
-  color: string,
+  color?: ColorFn,
   offset: number = 0,
 ) => {
+  const customColor = (color && color(theme)) || defaultColor;
   switch (placement) {
     case 'top':
       return `
         top: ${offset ? `calc(100% - ${offset}px)` : '100%'};
         border-top: ${TRIANGLE_SIZE}px solid;
-        border-top-color: ${color};
+        border-top-color: ${customColor};
       `;
     case 'bottom':
     default:
       return `
         bottom: ${offset ? `calc(100% - ${offset}px)` : '100%'};
         border-bottom: ${TRIANGLE_SIZE}px solid;
-        border-bottom-color: ${color};
+        border-bottom-color: ${customColor};
       `;
   }
 };
+
+const getColor = (theme: Theme, defaultColor: string, color?: ColorFn) =>
+  (color && color(theme)) || defaultColor;
 
 const triangleCss = css`
   &:before {
     ${leftAndRightCss}
     ${commonTriangleCss}
-    ${(p) => getTrianglePositionAndColor(p.placement, p.theme.color.bubbleBorder)}
+    ${(p) =>
+      getTrianglePositionAndColor(p.theme, p.theme.color.bubbleBorder, p.placement, p.borderColor)}
   }
   &:after {
     ${leftAndRightCss}
     ${commonTriangleCss}
-    ${(p) => getTrianglePositionAndColor(p.placement, p.theme.color.bubbleBackground, 1)}
+    ${(p) =>
+      getTrianglePositionAndColor(
+        p.theme,
+        p.theme.color.bubbleBackground,
+        p.placement,
+        p.backgroundColor,
+        1,
+      )}
   }
 `;
 
@@ -81,10 +98,10 @@ export const DropdownBubble = styled.div<Props>`
   display: flex;
   flex-direction: column;
   min-height: 0;
-  border: 1px solid ${(p) => p.theme.color.bubbleBorder};
-  background-color: ${(p) => p.theme.color.bubbleBackground};
+  border: 1px solid ${(p) => getColor(p.theme, p.theme.color.bubbleBorder, p.borderColor)};
+  background-color: ${(p) => getColor(p.theme, p.theme.color.bubbleBackground, p.backgroundColor)};
   box-shadow: 0 2px 4px 0 rgba(40, 40, 35, 0.15);
-  color: ${(p) => p.theme.color.text};
+  color: ${(p) => getColor(p.theme, p.theme.color.text, p.textColor)};
   ${bottomAndTopPlacementCss}
   ${triangleCss}
 `;
