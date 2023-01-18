@@ -16,7 +16,7 @@ const Handle = styled('div')<InternalProps>`
   border-radius: 50%;
   transform: translateY(-50%);
   background: ${(p) =>
-    p.$variant === VARIANT_TYPES.PLAYER ? 'transparent' : p.theme.color.sliderThumbBackground};
+    p.$variant === VARIANT_TYPES.PLAYER ? 'transparent' : p.theme.color.sliderKnobBackground};
   cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'grab')};
   border-width: ${(p) => p.theme.spacing.unit(1)}px;
   border-style: solid;
@@ -27,8 +27,8 @@ const Handle = styled('div')<InternalProps>`
 
   &:active {
     background: ${(p) => {
-      const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor;
-      return !p.$disabled && `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
+      const knobColor = p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor;
+      return !p.$disabled && `${knobColor ? Color(knobColor).darken(0.1) : ''}`;
     }};
 
     transform: ${(p) => {
@@ -40,15 +40,15 @@ const Handle = styled('div')<InternalProps>`
 
   &:hover {
     border: ${(p) => {
-      const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor;
+      const knobColor = p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor;
       return (
         !p.$disabled &&
-        `${thumbColor ? `${p.theme.spacing.unit(1)}px solid ${Color(thumbColor).darken(0.1)}` : ''}`
+        `${knobColor ? `${p.theme.spacing.unit(1)}px solid ${Color(knobColor).darken(0.1)}` : ''}`
       );
     }};
     background: ${(p) => {
-      const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor;
-      return !p.$disabled && `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
+      const knobColor = p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor;
+      return !p.$disabled && `${knobColor ? Color(knobColor).darken(0.1) : ''}`;
     }};
   }
 `;

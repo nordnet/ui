@@ -18,4 +18,8 @@ export type Props = {
   backgroundColor?: ColorFn;
   borderColor?: ColorFn;
   textColor?: ColorFn;
+  /**
+   * for use when you want light mode tooltip colors in dark mode and opposite
+   */
+  invertedColors?: boolean;
 };

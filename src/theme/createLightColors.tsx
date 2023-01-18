@@ -64,6 +64,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     bubbleBackground: rawColor.white,
     bubbleBorder: rawColor.gray4,
     bubbleSecondaryText: rawColor.gray2,
+    bubbleBackgroundInverted: rawColor.gray800,
+    bubbleBorderInverted: rawColor.gray800,
 
     bulbBackground: rawColor.brandGreen,
     bulbForeground: rawColor.gray0,
@@ -331,11 +333,11 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     skeleton: rawColor.gray6,
 
-    sliderBackgroundColor: rawColor.gray6,
-    sliderColor: rawColor.cta,
-    sliderDisabled: rawColor.gray6,
+    sliderBackgroundColor: rawColor.gray400,
+    sliderColor: rawColor.blue500,
+    sliderDisabled: rawColor.gray400,
     sliderSecondary: rawColor.brandGreen,
-    sliderThumbBackground: rawColor.white,
+    sliderKnobBackground: rawColor.white,
 
     spinnerBlack: rawColor.black,
     spinnerWhite: rawColor.white,
@@ -392,7 +394,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     timelineWarning: rawColor.index,
 
     transferFlowText: rawColor.gray600,
-    
+
     transferLabelBackground: rawColor.yellow200,
     transferLabelText: rawColor.yellow800,
 

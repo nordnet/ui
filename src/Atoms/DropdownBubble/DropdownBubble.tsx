@@ -43,13 +43,19 @@ const commonTriangleCss = css<any>`
   border-right: ${TRIANGLE_SIZE}px solid transparent;
 `;
 
-const getTrianglePositionAndColor = (
-  theme: Theme,
-  defaultColor: string,
-  placement: string | undefined,
-  color?: ColorFn,
-  offset: number = 0,
-) => {
+const getTrianglePositionAndColor = ({
+  theme,
+  defaultColor,
+  placement,
+  color,
+  offset = 0,
+}: {
+  theme: Theme;
+  defaultColor: string;
+  placement?: 'top' | 'bottom';
+  color?: ColorFn;
+  offset?: number;
+}) => {
   const customColor = (color && color(theme)) || defaultColor;
   switch (placement) {
     case 'top':
@@ -76,19 +82,28 @@ const triangleCss = css`
     ${leftAndRightCss}
     ${commonTriangleCss}
     ${(p) =>
-      getTrianglePositionAndColor(p.theme, p.theme.color.bubbleBorder, p.placement, p.borderColor)}
+      getTrianglePositionAndColor({
+        theme: p.theme,
+        defaultColor: p.invertedColors
+          ? p.theme.color.bubbleBorderInverted
+          : p.theme.color.bubbleBorder,
+        placement: p.placement,
+        color: p.borderColor,
+      })}
   }
   &:after {
     ${leftAndRightCss}
     ${commonTriangleCss}
     ${(p) =>
-      getTrianglePositionAndColor(
-        p.theme,
-        p.theme.color.bubbleBackground,
-        p.placement,
-        p.backgroundColor,
-        1,
-      )}
+      getTrianglePositionAndColor({
+        theme: p.theme,
+        defaultColor: p.invertedColors
+          ? p.theme.color.bubbleBackgroundInverted
+          : p.theme.color.bubbleBackground,
+        placement: p.placement,
+        color: p.backgroundColor,
+        offset: 1,
+      })}
   }
 `;
 
@@ -98,10 +113,26 @@ export const DropdownBubble = styled.div<Props>`
   display: flex;
   flex-direction: column;
   min-height: 0;
-  border: 1px solid ${(p) => getColor(p.theme, p.theme.color.bubbleBorder, p.borderColor)};
-  background-color: ${(p) => getColor(p.theme, p.theme.color.bubbleBackground, p.backgroundColor)};
+  border: 1px solid
+    ${(p) =>
+      getColor(
+        p.theme,
+        p.invertedColors ? p.theme.color.bubbleBorderInverted : p.theme.color.bubbleBorder,
+        p.borderColor,
+      )};
+  background-color: ${(p) =>
+    getColor(
+      p.theme,
+      p.invertedColors ? p.theme.color.bubbleBackgroundInverted : p.theme.color.bubbleBackground,
+      p.backgroundColor,
+    )};
   box-shadow: 0 2px 4px 0 rgba(40, 40, 35, 0.15);
-  color: ${(p) => getColor(p.theme, p.theme.color.text, p.textColor)};
+  color: ${(p) =>
+    getColor(
+      p.theme,
+      p.invertedColors ? p.theme.color.textLight : p.theme.color.text,
+      p.textColor,
+    )};
   ${bottomAndTopPlacementCss}
   ${triangleCss}
 `;

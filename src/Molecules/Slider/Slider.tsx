@@ -193,7 +193,7 @@ const Slider: Component = ({
     document.addEventListener('touchend', handleTouchEnd);
   };
 
-  const handleThumbClick = (event: MouseEvent) => {
+  const handleKnobClick = (event: MouseEvent) => {
     event.stopPropagation();
   };
 
@@ -248,9 +248,7 @@ const Slider: Component = ({
                 $variant={variant}
                 position="center"
                 placement="top"
-                backgroundColor={(c) => c.color.backgroundBlack}
-                borderColor={(c) => c.color.backgroundBlack}
-                textColor={(c) => c.color.textLight}
+                invertedColors
                 style={{
                   position: 'absolute',
                   ...(hoverPosition && {
@@ -270,7 +268,7 @@ const Slider: Component = ({
               disabled={disabled}
               max={max}
               min={min}
-              onClick={handleThumbClick}
+              onClick={handleKnobClick}
               onKeyDown={handleKeyDown}
               onMouseDown={handleMouseDown}
               onMouseUp={handleMouseUp}

@@ -87,6 +87,14 @@ export const differentColors = () => (
         ),
         title: 'Custom background',
       },
+      {
+        component: (
+          <DropdownBubble position="center" placement="top" invertedColors>
+            Inverted colors
+          </DropdownBubble>
+        ),
+        title: 'Inverted colors',
+      },
     ]}
   />
 );

@@ -304,6 +304,10 @@ export type ThemeColors = {
   bubbleBorder: string;
   /** gray2 */
   bubbleSecondaryText: string;
+  /** gray800 */
+  bubbleBackgroundInverted: string;
+  /** gray700 */
+  bubbleBorderInverted: string;
   /** brandGreen */
   bulbBackground: string;
   /** gray0 */
@@ -693,7 +697,7 @@ export type ThemeColors = {
   /** brandGreen */
   sliderSecondary: string;
   /** white */
-  sliderThumbBackground: string;
+  sliderKnobBackground: string;
   /** black */
   spinnerBlack: string;
   /** white */

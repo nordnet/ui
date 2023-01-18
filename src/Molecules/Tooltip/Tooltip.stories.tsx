@@ -54,6 +54,21 @@ defaultStory.story = {
   name: 'Default',
 };
 
+export const invertedColorsStory = () => (
+  <>
+    <StyledDiv>
+      Inverted colors
+      <Tooltip label="inverted label" position="top" invertedColors>
+        <Button type="button">Hover me</Button>
+      </Tooltip>
+    </StyledDiv>
+  </>
+);
+
+invertedColorsStory.story = {
+  name: 'Inverted colors',
+};
+
 export const withMode = () => (
   <Tooltip label={label} mode="click">
     <Button type="button">Click me</Button>

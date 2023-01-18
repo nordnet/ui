@@ -39,6 +39,7 @@ const PopOver: React.FC<Props> & {
   customBoundary,
   pointerArrow,
   bottomSheet = false,
+  invertedColors,
   ...htmlSpanProps
 }) => {
   const [popperElement, setPopperElement] = useState(null);
@@ -104,8 +105,12 @@ const PopOver: React.FC<Props> & {
     positionCallback(placement as NonNullable<Props['position']>);
   }
 
-  const backgroundColor = backgroundColorProp || ((t) => t.color.bubbleBackground);
-  const borderColor = borderColorProp || ((t) => t.color.bubbleBorder);
+  const backgroundColor =
+    backgroundColorProp ||
+    ((t) => (invertedColors ? t.color.bubbleBackgroundInverted : t.color.bubbleBackground));
+  const borderColor =
+    borderColorProp ||
+    ((t) => (invertedColors ? t.color.bubbleBorderInverted : t.color.bubbleBorder));
 
   useMouseEvents(ref, pointerEvents, handleMouseEnter, handleMouseLeave);
 
@@ -142,6 +147,7 @@ const PopOver: React.FC<Props> & {
           maxWidth={maxWidth}
           backgroundColor={backgroundColor}
           borderColor={borderColor}
+          invertedColors={invertedColors}
         />
       </motion.div>
     </StyledSpan>
