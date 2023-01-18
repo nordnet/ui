@@ -10,8 +10,11 @@ export type Props = {
   variant?: Variant;
   children?: React.ReactNode;
   readOnly?: boolean;
-  onMouseMove?: React.MouseEventHandler<HTMLDivElement>;
+  onMouseDown?: React.MouseEventHandler<HTMLDivElement>;
   onMouseLeave?: React.MouseEventHandler<HTMLDivElement>;
+  onMouseMove?: React.MouseEventHandler<HTMLDivElement>;
+  onMouseUp?: React.MouseEventHandler<HTMLDivElement>;
+  onTouchStart?: React.TouchEventHandler<HTMLDivElement>;
 };
 
 export type Component = React.FC<Props>;

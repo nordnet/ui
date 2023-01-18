@@ -7,9 +7,9 @@ import { Component, InternalProps } from './SliderTrack.types';
 const HoverArea = styled.div<InternalProps>`
   position: relative;
   width: 100%;
-  height: ${(p) => `${getHeight(p.$variant)}px`};
-  cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'default')};
-  padding: ${(p) => `${p.theme.spacing.unit(1)}px`} 0;
+  height: ${(p) => `${p.theme.spacing.unit(1)}px`};
+  cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'pointer')};
+  padding: ${(p) => `${p.theme.spacing.unit(1)}px 0;`};
 `;
 
 const Track = styled.div<InternalProps>`
@@ -19,7 +19,7 @@ const Track = styled.div<InternalProps>`
   background: ${(p) =>
     p.$disabled ? p.theme.color.sliderDisabled : p.theme.color.sliderBackgroundColor};
   border-radius: ${(p) => `${getKnobSize(p.$variant)}px`};
-  cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'default')};
+  cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'pointer')};
 `;
 
 const SliderTrack: Component = ({
@@ -27,11 +27,20 @@ const SliderTrack: Component = ({
   disabled,
   variant,
   readOnly,
-  onMouseMove,
+  onMouseDown,
   onMouseLeave,
+  onMouseMove,
+  onMouseUp,
+  onTouchStart,
 }) => {
   return (
-    <HoverArea onMouseMove={onMouseMove} onMouseLeave={onMouseLeave}>
+    <HoverArea
+      onMouseDown={onMouseDown}
+      onMouseLeave={onMouseLeave}
+      onMouseMove={onMouseMove}
+      onMouseUp={onMouseUp}
+      onTouchStart={onTouchStart}
+    >
       <Track $disabled={disabled || readOnly} $variant={variant}>
         {children}
       </Track>

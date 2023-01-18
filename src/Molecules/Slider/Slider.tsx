@@ -233,8 +233,11 @@ const Slider: Component = ({
       <SliderTrack
         variant={variant}
         readOnly={readOnly}
-        onMouseMove={handleMouseHover}
+        onMouseDown={handleMouseDown}
         onMouseLeave={handleMouseLeave}
+        onMouseMove={handleMouseHover}
+        onMouseUp={handleMouseUp}
+        onTouchStart={handleTouchStart}
       >
         <SliderTrackHighlight sliderColor={sliderColor} value={trackPercent} variant={variant} />
         {!readOnly && (
