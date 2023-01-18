@@ -37,4 +37,5 @@ export type Props = {
   bottomSheet?: boolean;
   pointerArrow?: boolean;
   invertedColors?: boolean;
+  setPopoverElement?: (r: any) => void;
 };

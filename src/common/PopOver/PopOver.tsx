@@ -1,4 +1,4 @@
-import React, { MutableRefObject, useCallback, useRef, useState } from 'react';
+import React, { MutableRefObject, useCallback, useEffect, useRef, useState } from 'react';
 import { usePopper } from 'react-popper';
 import { motion } from 'framer-motion';
 import { mergeRefs } from '../utils';
@@ -40,6 +40,7 @@ const PopOver: React.FC<Props> & {
   pointerArrow,
   bottomSheet = false,
   invertedColors,
+  setPopoverElement,
   ...htmlSpanProps
 }) => {
   const [popperElement, setPopperElement] = useState(null);
@@ -93,6 +94,13 @@ const PopOver: React.FC<Props> & {
   ];
 
   const ref = useRef() as MutableRefObject<HTMLElement>;
+
+  useEffect(() => {
+    if (setPopoverElement && ref && bottomSheet && pointerEvents) {
+      setPopoverElement(ref);
+    }
+  }, [setPopoverElement, ref, bottomSheet, pointerEvents]);
+
   const popper = usePopper(triggerElement, popperElement, {
     modifiers,
     placement: position,

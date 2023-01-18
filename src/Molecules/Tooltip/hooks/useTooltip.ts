@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 
 import { Props as TooltipProps } from '../Tooltip.types';
 import { State, store } from './useTooltip.store';
@@ -9,6 +9,8 @@ export const useTooltip = (
   controlledIsOpen: TooltipProps['isOpen'],
   openDelay?: number,
   closeDelay?: number,
+  isBottomSheet?: boolean,
+  popoverElement?: React.RefObject<HTMLSpanElement>,
 ) => {
   const id = useGeneratedId('nn-tooltip-');
   const [isOpen, setIsOpen] = useState(false);
@@ -85,6 +87,12 @@ export const useTooltip = (
 
   useOnClickOutside(triggerElementRef, () => {
     if (id === store.contextId) store.setState(State.IDLE);
+  });
+
+  useOnClickOutside(popoverElement || [], () => {
+    if (popoverElement !== null && id === store.contextId && isBottomSheet && isOpen) {
+      store.setState(State.IDLE);
+    }
   });
 
   return {

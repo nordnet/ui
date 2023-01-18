@@ -1,3 +1,17 @@
+## [12.10.1](https://github.com/nordnet/ui/compare/v12.10.0...v12.10.1) (2023-01-16)
+
+
+### Bug Fixes
+
+* only close bottom sheet tooltip on click outside ([5f06088](https://github.com/nordnet/ui/commit/5f06088))
+
+# [12.10.0](https://github.com/nordnet/ui/compare/v12.9.3...v12.10.0) (2023-01-16)
+
+
+### Features
+
+* add some icons for quartr player ([27e90d2](https://github.com/nordnet/ui/commit/27e90d2))
+
 ## [12.9.3](https://github.com/nordnet/ui/compare/v12.9.2...v12.9.3) (2023-01-12)
 
 
