@@ -107,7 +107,7 @@ const Slider: Component = ({
   const [valueInternal, setValueInternal] = useState(defaultValue || min);
   const value = isControlled ? controlledValue! : valueInternal;
   const trackPercent = valueToPercent(value, min, max);
-  const handlePosition = `calc(${trackPercent}% - ${getKnobSize(variant) / 2}px * ${1})`;
+  const handlePosition = `calc(${trackPercent}% - ${getKnobSize(variant) / 2}px)`;
 
   const updateValue = (newValue: number) => {
     if (!isControlled) {
@@ -221,10 +221,6 @@ const Slider: Component = ({
     }
   };
 
-  const getstyle = {
-    left: handlePosition,
-  };
-
   return (
     <Container
       $disabled={disabled}
@@ -275,7 +271,9 @@ const Slider: Component = ({
               onTouchStart={handleTouchStart}
               ref={handleRef}
               sliderColor={sliderColor}
-              style={getstyle}
+              style={{
+                left: handlePosition,
+              }}
               value={value}
               variant={variant}
             />
