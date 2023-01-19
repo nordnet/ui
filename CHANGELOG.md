@@ -1,3 +1,17 @@
+# [12.11.0](https://github.com/nordnet/ui/compare/v12.10.1...v12.11.0) (2023-01-19)
+
+
+### Bug Fixes
+
+* add inverted tooltip and bubble ([596ffe3](https://github.com/nordnet/ui/commit/596ffe3))
+* adress review comments ([0bc9f10](https://github.com/nordnet/ui/commit/0bc9f10))
+* tweaked UX a little for the slider to feel more better ([8a0f498](https://github.com/nordnet/ui/commit/8a0f498))
+
+
+### Features
+
+* add player mode to slider ([da397a2](https://github.com/nordnet/ui/commit/da397a2))
+
 ## [12.10.1](https://github.com/nordnet/ui/compare/v12.10.0...v12.10.1) (2023-01-16)
 
 
