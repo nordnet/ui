@@ -34,7 +34,9 @@ import logout from './logout';
 import menu from './menu';
 import more from './more';
 import options from './options';
+import pauseFill from './pauseFill';
 import play from './play';
+import playFill from './playFill';
 import priceAlert from './priceAlert';
 import priceAlertFill from './priceAlertFill';
 import progress from './progress';
@@ -94,7 +96,9 @@ export default {
   ...menu,
   ...more,
   ...options,
+  ...pauseFill,
   ...play,
+  ...playFill,
   ...priceAlert,
   ...priceAlertFill,
   ...progress,
