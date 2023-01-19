@@ -440,7 +440,8 @@ export const BottomSheet = () => {
         }
         position="top"
         wrapChild
-        bottomSheetQuery={t => t.media.lessThan(t.breakpoints.sm)}
+        pointerEvents
+        bottomSheetQuery={(t) => t.media.lessThan(t.breakpoints.sm)}
       >
         <Typography type="primary">hover me</Typography>
       </Tooltip>
