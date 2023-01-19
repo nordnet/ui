@@ -149,6 +149,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     emptyState: rawColor.gray4,
     emptyStateCardText: rawColor.gray500,
 
+    featuredFundsBackground: rawColor.blue100,
+    featuredFundsSeparator: rawColor.blue200,
+
     feedbackModuleBackground: rawColor.gray100,
     feedbackPageBackground: rawColor.white,
 

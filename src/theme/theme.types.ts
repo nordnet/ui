@@ -413,6 +413,11 @@ export type ThemeColors = {
   /** red600 */
   error: string;
 
+  /** light: blue100, dark: blue800 */
+  featuredFundsBackground: string;
+  /** light: blue200, dark: blue900 */
+  featuredFundsSeparator: string;
+
   /** gray100 */
   feedbackModuleBackground: string;
   /** white */
