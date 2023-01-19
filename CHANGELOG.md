@@ -1,3 +1,10 @@
+# [12.13.0](https://github.com/nordnet/ui/compare/v12.12.1...v12.13.0) (2023-01-19)
+
+
+### Features
+
+* 🎸 New colours for featured funds light and dark mode ([8ce0336](https://github.com/nordnet/ui/commit/8ce0336))
+
 ## [12.12.1](https://github.com/nordnet/ui/compare/v12.12.0...v12.12.1) (2023-01-19)
 
 
