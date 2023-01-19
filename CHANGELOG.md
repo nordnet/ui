@@ -1,3 +1,10 @@
+# [12.12.0](https://github.com/nordnet/ui/compare/v12.11.0...v12.12.0) (2023-01-19)
+
+
+### Features
+
+* add more player icons ([cd5fac7](https://github.com/nordnet/ui/commit/cd5fac7))
+
 # [12.11.0](https://github.com/nordnet/ui/compare/v12.10.1...v12.11.0) (2023-01-19)
 
 
