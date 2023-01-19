@@ -2,7 +2,7 @@ import { Theme } from '../../theme/theme.types';
 
 type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // c
 export type ColorFn = (t: Theme) => Values<Theme['color']>;
-export type Variant = 'big' | 'small' | 'player';
+export type Variant = 'big' | 'small' | 'player' | 'volume';
 
 export type InternalProps = {
   $disabled?: boolean;

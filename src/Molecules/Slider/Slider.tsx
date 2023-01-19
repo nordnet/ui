@@ -9,6 +9,7 @@ import { SliderKnob } from './SliderKnob';
 import { SliderTrack } from './SliderTrack';
 import { SliderTrackHighlight } from './SliderTrackHighlight';
 import { isFunction, isNumber } from '../../common/utils';
+import { VARIANT_TYPES } from './constants';
 
 const clamp = (val: number, min: number, max: number) => {
   if (val < min) {
@@ -47,6 +48,7 @@ const valueToPercent = (value: number, min: number, max: number) => {
 const getNewValue = (
   clickPosition: number,
   track: HTMLElement | null,
+  vertical: boolean,
   props: {
     min: number;
     max: number;
@@ -58,10 +60,11 @@ const getNewValue = (
   }
 
   const { min, max, step } = props;
-  const { left, width } = track.getBoundingClientRect();
+  const { left, width, bottom, height } = track.getBoundingClientRect();
 
-  const diff = clickPosition - left;
-  const percent = diff / width;
+  const diff = vertical ? bottom - clickPosition : clickPosition - left;
+  const percent = vertical ? diff / height : diff / width;
+
   const newValue = percentToValue(percent, min, max);
   const newValueRounded = roundValueToStep(newValue, step, min);
 
@@ -73,6 +76,7 @@ const Container = styled.div<InternalProps>`
   align-items: center;
   height: ${(p) => `${getKnobSize(p.$variant)}px`};
   margin: 0 ${(p) => `${getKnobSize(p.$variant) / 2}px`};
+  transform: rotate(${(p) => (p.$variant === VARIANT_TYPES.VOLUME ? 270 : 0)}deg);
 `;
 
 const StyledDropdownBubble = styled(DropdownBubble)<InternalProps & { visible: boolean }>`
@@ -88,16 +92,16 @@ const StyledDropdownBubble = styled(DropdownBubble)<InternalProps & { visible: b
 const Slider: Component = ({
   defaultValue,
   disabled,
+  formatter = (value: number) => value.toString(),
   max,
   min,
   onChange,
+  readOnly,
+  showTooltip,
   sliderColor,
   step,
   value: controlledValue,
   variant = 'big',
-  showTooltip,
-  formatter = (value: number) => value.toString(),
-  readOnly,
 }) => {
   const trackRef: React.Ref<HTMLDivElement> = useRef(null);
   const handleRef: React.Ref<HTMLDivElement> = useRef(null);
@@ -121,11 +125,16 @@ const Slider: Component = ({
 
   const handleChange = (clickPosition: number) => {
     if (!disabled && !readOnly) {
-      const newValue = getNewValue(clickPosition, trackRef.current, {
-        min,
-        max,
-        step,
-      });
+      const newValue = getNewValue(
+        clickPosition,
+        trackRef.current,
+        variant === VARIANT_TYPES.VOLUME,
+        {
+          min,
+          max,
+          step,
+        },
+      );
 
       if (newValue !== null) {
         updateValue(newValue);
@@ -135,7 +144,7 @@ const Slider: Component = ({
 
   const handleHover = (pos: number) => {
     if (!disabled && !readOnly) {
-      const newValue = getNewValue(pos, trackRef.current, {
+      const newValue = getNewValue(pos, trackRef.current, variant === VARIANT_TYPES.VOLUME, {
         min,
         max,
         step,
@@ -152,12 +161,12 @@ const Slider: Component = ({
   const handleMouseMove = (event: MouseEvent) => {
     event.stopPropagation();
     event.preventDefault();
-    const pointerPosition = event.clientX;
+    const pointerPosition = variant === VARIANT_TYPES.VOLUME ? event.clientY : event.clientX;
     handleChange(pointerPosition);
   };
 
   const handleMouseHover = (event: MouseEvent) => {
-    const pointerPosition = event.clientX;
+    const pointerPosition = variant === VARIANT_TYPES.VOLUME ? event.clientY : event.clientX;
     handleHover(pointerPosition);
   };
 
@@ -178,7 +187,8 @@ const Slider: Component = ({
   const handleTouchMove = (event: TouchEvent) => {
     event.stopPropagation();
     event.preventDefault();
-    const touchPosition = event.touches[0].clientX;
+    const touchPosition =
+      variant === VARIANT_TYPES.VOLUME ? event.touches[0].clientY : event.touches[0].clientX;
 
     handleChange(touchPosition);
   };
@@ -198,7 +208,7 @@ const Slider: Component = ({
   };
 
   const handleTrackClick = (event: MouseEvent) => {
-    const pointerPosition = event.clientX;
+    const pointerPosition = variant === VARIANT_TYPES.VOLUME ? event.clientY : event.clientX;
     handleRef.current?.focus();
 
     handleChange(pointerPosition);
@@ -232,6 +242,7 @@ const Slider: Component = ({
     >
       <SliderTrack
         variant={variant}
+        sliderColor={sliderColor}
         readOnly={readOnly}
         onMouseDown={handleMouseDown}
         onMouseLeave={handleMouseLeave}
@@ -242,7 +253,7 @@ const Slider: Component = ({
         <SliderTrackHighlight sliderColor={sliderColor} value={trackPercent} variant={variant} />
         {!readOnly && (
           <>
-            {showTooltip && (
+            {showTooltip && variant !== VARIANT_TYPES.VOLUME && (
               <StyledDropdownBubble
                 $variant={variant}
                 position="center"

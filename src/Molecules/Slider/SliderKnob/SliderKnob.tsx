@@ -17,7 +17,7 @@ const Handle = styled('div')<InternalProps>`
   transform: translateY(-50%);
   background: ${(p) =>
     p.$variant === VARIANT_TYPES.PLAYER ? 'transparent' : p.theme.color.sliderKnobBackground};
-  cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'grab')};
+  cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'pointer')};
   border-width: ${(p) => p.theme.spacing.unit(1)}px;
   border-style: solid;
   border-color: ${(p) => (p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor)};
@@ -35,20 +35,6 @@ const Handle = styled('div')<InternalProps>`
       return p.$variant === VARIANT_TYPES.PLAYER
         ? 'translateY(-50%)'
         : 'translateY(-50%) scale3d(0.85, 0.85, 0.85)';
-    }};
-  }
-
-  &:hover {
-    border: ${(p) => {
-      const knobColor = p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor;
-      return (
-        !p.$disabled &&
-        `${knobColor ? `${p.theme.spacing.unit(1)}px solid ${Color(knobColor).darken(0.1)}` : ''}`
-      );
-    }};
-    background: ${(p) => {
-      const knobColor = p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor;
-      return !p.$disabled && `${knobColor ? Color(knobColor).darken(0.1) : ''}`;
     }};
   }
 `;

@@ -1,8 +1,9 @@
-import { Variant } from '../Slider.types';
+import { ColorFn, Variant } from '../Slider.types';
 
 export type InternalProps = {
   $disabled?: boolean;
   $variant?: Variant;
+  $sliderColor?: ColorFn;
 };
 
 export type Props = {
@@ -10,6 +11,7 @@ export type Props = {
   variant?: Variant;
   children?: React.ReactNode;
   readOnly?: boolean;
+  sliderColor?: ColorFn;
   onMouseDown?: React.MouseEventHandler<HTMLDivElement>;
   onMouseLeave?: React.MouseEventHandler<HTMLDivElement>;
   onMouseMove?: React.MouseEventHandler<HTMLDivElement>;
