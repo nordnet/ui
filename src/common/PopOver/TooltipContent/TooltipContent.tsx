@@ -30,6 +30,7 @@ const TooltipContent: FC<TooltipContentProps> = ({
   maxWidth,
   backgroundColor,
   borderColor,
+  invertedColors,
   ...htmlDivProps
 }) => {
   return (
@@ -41,7 +42,12 @@ const TooltipContent: FC<TooltipContentProps> = ({
       borderColor={borderColor}
       {...htmlDivProps}
     >
-      <Typography type="tertiary">{label}</Typography>
+      <Typography
+        type="tertiary"
+        color={(c) => (invertedColors ? c.color.textLight : c.color.text)}
+      >
+        {label}
+      </Typography>
     </StyledTooltip>
   );
 };

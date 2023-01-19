@@ -62,6 +62,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     bubbleBackground: rawColor.gray800,
     bubbleBorder: rawColor.gray700,
     bubbleSecondaryText: rawColor.gray7,
+    bubbleBackgroundInverted: rawColor.white,
+    bubbleBorderInverted: rawColor.white,
 
     bulbBackground: rawColor.brandGreen,
     bulbForeground: rawColor.gray0,
@@ -230,7 +232,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     negative: rawColor.pink500,
     negativeBlackBackground: rawColor.pink500,
- 
+
     newsLabelTextColors: [rawColor.green450, rawColor.pink500, rawColor.blue400, rawColor.teal400],
     newsLabelBackgroundColors: [
       rawColor.green800,
@@ -330,11 +332,11 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     skeleton: rawColor.gray700,
 
-    sliderBackgroundColor: rawColor.gray6,
-    sliderColor: rawColor.cta,
-    sliderDisabled: rawColor.gray6,
+    sliderBackgroundColor: rawColor.gray400,
+    sliderColor: rawColor.blue500,
+    sliderDisabled: rawColor.gray400,
     sliderSecondary: rawColor.brandGreen,
-    sliderThumbBackground: rawColor.white,
+    sliderKnobBackground: rawColor.white,
 
     spinnerBlack: rawColor.black,
     spinnerWhite: rawColor.white,
@@ -375,7 +377,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     newBadgeLabelText: rawColor.teal400,
 
     text: rawColor.gray7,
-    textLight: rawColor.gray0, // FIXME: to be removed later
+    textLight: rawColor.gray800,
 
     technicalAnalysisPlotBands: rawColor.gray900,
     technicalAnalysisPrimaryLine: rawColor.teal400,
@@ -394,7 +396,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     transferLabelBackground: rawColor.yellow900,
     transferLabelText: rawColor.yellow400,
-    
+
     transferPendingIconColor: rawColor.index,
     transferProgressBar1: rawColor.brandPink,
     transferProgressBar2: rawColor.green500,

@@ -51,6 +51,7 @@ import subtractCircleFill from './subtractCircleFill';
 import tickerDown from './tickerDown';
 import tickerUp from './tickerUp';
 import trash from './trash';
+import undo from './undo';
 import watchlist from './watchlist';
 import watchlistFill from './watchlistFill';
 import windowCollapse from './windowCollapse';
@@ -110,6 +111,7 @@ export default {
   ...tickerDown,
   ...tickerUp,
   ...trash,
+  ...undo,
   ...watchlist,
   ...watchlistFill,
   ...windowCollapse,

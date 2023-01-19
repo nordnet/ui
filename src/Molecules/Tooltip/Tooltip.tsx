@@ -46,6 +46,7 @@ export const Tooltip: FC<Props> = props => {
     customBoundary,
     pointerArrow = true,
     bottomSheetQuery,
+    invertedColors,
   } = props;
   const child = React.Children.only(children) as ReactElement;
 
@@ -116,6 +117,7 @@ export const Tooltip: FC<Props> = props => {
           handleMouseLeave={handleMouseLeave}
           customBoundary={customBoundary}
           bottomSheet={bottomSheet}
+          invertedColors={invertedColors}
         />
       )}
     </>

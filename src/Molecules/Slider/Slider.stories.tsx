@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
 
 import Slider from '.';
-import { Input, Number, Typography } from '../..';
+import { Box, Input, Number, Typography } from '../..';
 import { Props } from './Slider.types';
+import { secondsToTimeString } from '../../common/utils';
 
 export default {
   title: 'Molecules / Slider',
@@ -15,12 +16,12 @@ const Template: Story<Props> = (args) => {
   const handleChange = (v: number) => setValue(v);
 
   return (
-    <>
+    <Box p={20}>
       <Slider {...args} onChange={handleChange} />
       <Typography>
         <Number value={value} maximumDecimals={2} /> Kronor
       </Typography>
-    </>
+    </Box>
   );
 };
 
@@ -53,7 +54,7 @@ const TemplateMultiColor: Story<Props> = (args) => {
   const handleChange = (v: number) => setValue(v);
 
   return (
-    <>
+    <Box p={20}>
       <Slider
         {...args}
         onChange={handleChange}
@@ -62,7 +63,7 @@ const TemplateMultiColor: Story<Props> = (args) => {
       <Typography>
         <Number value={value} maximumDecimals={2} /> Kronor
       </Typography>
-    </>
+    </Box>
   );
 };
 
@@ -80,6 +81,26 @@ SmallVariant.args = {
   variant: 'small',
 };
 
+const PlayerTemplate: Story<Props> = (args) => {
+  return (
+    <Box p={20}>
+      <Slider {...args} />
+    </Box>
+  );
+};
+
+export const PlayerVariant = PlayerTemplate.bind({});
+PlayerVariant.args = {
+  ...Default.args,
+  defaultValue: 1800,
+  min: 0,
+  max: 4000,
+  step: 1,
+  variant: 'player',
+  formatter: secondsToTimeString,
+  showTooltip: true,
+};
+
 export const Disabled = Template.bind({});
 Disabled.args = {
   ...Default.args,
@@ -92,9 +113,8 @@ const TemplateControlled: Story<Props> = (args) => {
   const handleChange = (v: string) => setValue(parseInt(v, 10));
 
   return (
-    <>
+    <Box p={20}>
       <Slider {...args} value={value} />
-
       <Input.Number
         id="unique-id"
         label="Controlled from outside"
@@ -104,7 +124,7 @@ const TemplateControlled: Story<Props> = (args) => {
         max={args.max}
         step={args.step}
       />
-    </>
+    </Box>
   );
 };
 

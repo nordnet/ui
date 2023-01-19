@@ -44,4 +44,9 @@ export type Props = {
   customBoundary?: HTMLElement | Array<HTMLElement>;
   bottomSheetQuery?: (t: Theme) => string;
   pointerArrow?: boolean;
+  /**
+   * @invertedColors
+   * If you want light mode colors in dark mode and opposite
+   */
+  invertedColors?: boolean;
 };

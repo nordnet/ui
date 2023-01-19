@@ -106,3 +106,10 @@ export function wrapEvent<EventType extends React.SyntheticEvent | Event>(
 
 export const fromKebabToCamelCase = (str: string) =>
   str.replace(/-./g, (match) => match[1].toUpperCase());
+
+export const secondsToTimeString = (seconds: number) => {
+  const h = Math.floor(seconds / 3600);
+  const m = Math.floor((seconds % 3600) / 60);
+  const s = Math.round(seconds % 60);
+  return [h, m > 9 ? m : `0${m}`, s > 9 ? s : `0${s}`].filter(Boolean).join(':');
+};
