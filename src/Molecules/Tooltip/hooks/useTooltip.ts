@@ -85,10 +85,6 @@ export const useTooltip = (
     }
   }, [id]);
 
-  useOnClickOutside(triggerElementRef, () => {
-    if (id === store.contextId) store.setState(State.IDLE);
-  });
-
   useOnClickOutside(popoverElement || [], () => {
     if (popoverElement !== null && id === store.contextId && isBottomSheet && isOpen) {
       store.setState(State.IDLE);
