@@ -1,3 +1,10 @@
+## [12.12.1](https://github.com/nordnet/ui/compare/v12.12.0...v12.12.1) (2023-01-19)
+
+
+### Bug Fixes
+
+* click mobile tooltip content ([3f76e1e](https://github.com/nordnet/ui/commit/3f76e1e))
+
 # [12.12.0](https://github.com/nordnet/ui/compare/v12.11.0...v12.12.0) (2023-01-19)
 
 
