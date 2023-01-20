@@ -1,3 +1,17 @@
+# [12.14.0](https://github.com/nordnet/ui/compare/v12.13.0...v12.14.0) (2023-01-20)
+
+
+### Bug Fixes
+
+* add some more icons ([8494d59](https://github.com/nordnet/ui/commit/8494d59))
+* forgot one volume ([50a401a](https://github.com/nordnet/ui/commit/50a401a))
+* remove volume variant again ([90abb45](https://github.com/nordnet/ui/commit/90abb45))
+
+
+### Features
+
+* add vertical volume slider variant ([e51cbbe](https://github.com/nordnet/ui/commit/e51cbbe))
+
 # [12.13.0](https://github.com/nordnet/ui/compare/v12.12.1...v12.13.0) (2023-01-19)
 
 
