@@ -101,25 +101,6 @@ PlayerVariant.args = {
   showTooltip: true,
 };
 
-const VolumeTemplate: Story<Props> = (args) => {
-  return (
-    <Box mt={5} p={50}>
-      <Slider {...args} />
-    </Box>
-  );
-};
-
-export const VolumeVariant = VolumeTemplate.bind({});
-VolumeVariant.args = {
-  ...Default.args,
-  defaultValue: 60,
-  min: 0,
-  max: 100,
-  step: 1,
-  variant: 'volume',
-  showTooltip: true,
-};
-
 export const Disabled = Template.bind({});
 Disabled.args = {
   ...Default.args,

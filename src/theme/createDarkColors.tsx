@@ -332,7 +332,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     skeleton: rawColor.gray700,
 
-    sliderBackgroundColor: rawColor.gray400,
+    sliderBackgroundColor: rawColor.gray700,
     sliderColor: rawColor.blue500,
     sliderDisabled: rawColor.gray400,
     sliderSecondary: rawColor.brandGreen,
