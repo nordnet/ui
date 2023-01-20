@@ -2,8 +2,8 @@ import { Variant } from './Slider.types';
 
 import {
   KNOB_BIG_PX,
-  KNOB_SMALL_PX,
   KNOB_PLAYER_PX,
+  KNOB_SMALL_PX,
   TRACK_HEIGHT_BIG_PX,
   TRACK_HEIGHT_PLAYER_PX,
   TRACK_HEIGHT_SMALL_PX,

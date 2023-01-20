@@ -62,6 +62,7 @@ const getNewValue = (
 
   const diff = clickPosition - left;
   const percent = diff / width;
+
   const newValue = percentToValue(percent, min, max);
   const newValueRounded = roundValueToStep(newValue, step, min);
 
@@ -88,16 +89,16 @@ const StyledDropdownBubble = styled(DropdownBubble)<InternalProps & { visible: b
 const Slider: Component = ({
   defaultValue,
   disabled,
+  formatter = (value: number) => value.toString(),
   max,
   min,
   onChange,
+  readOnly,
+  showTooltip,
   sliderColor,
   step,
   value: controlledValue,
   variant = 'big',
-  showTooltip,
-  formatter = (value: number) => value.toString(),
-  readOnly,
 }) => {
   const trackRef: React.Ref<HTMLDivElement> = useRef(null);
   const handleRef: React.Ref<HTMLDivElement> = useRef(null);
@@ -232,6 +233,7 @@ const Slider: Component = ({
     >
       <SliderTrack
         variant={variant}
+        sliderColor={sliderColor}
         readOnly={readOnly}
         onMouseDown={handleMouseDown}
         onMouseLeave={handleMouseLeave}

@@ -336,7 +336,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     skeleton: rawColor.gray6,
 
-    sliderBackgroundColor: rawColor.gray400,
+    sliderBackgroundColor: rawColor.gray200,
     sliderColor: rawColor.blue500,
     sliderDisabled: rawColor.gray400,
     sliderSecondary: rawColor.brandGreen,
