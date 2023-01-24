@@ -20,6 +20,7 @@ const argTypes = {
     control: { type: 'inline-radio' },
   },
   variant: {
+    options: ['primary' , 'secondary' , 'neutral' , 'negative' , 'tertiary'],
     control: { type: 'inline-radio' },
   },
   iconName: {

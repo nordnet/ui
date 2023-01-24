@@ -1,6 +1,6 @@
 export type PillButtonProps = {
   /** @default primary */
-  variant?: 'primary' | 'secondary' | 'neutral' | 'negative';
+  variant?: 'primary' | 'secondary' | 'neutral' | 'negative' | 'tertiary';
   /**
    * @default m
    */
