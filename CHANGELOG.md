@@ -1,3 +1,16 @@
+# [12.16.0](https://github.com/nordnet/ui/compare/v12.15.0...v12.16.0) (2023-01-25)
+
+
+### Bug Fixes
+
+* adjust tooltip for slider ([fde6c3f](https://github.com/nordnet/ui/commit/fde6c3f))
+* syntax error in style ([b4deeec](https://github.com/nordnet/ui/commit/b4deeec))
+
+
+### Features
+
+* rename QuickFilter to FilterChip ([f3fd4a3](https://github.com/nordnet/ui/commit/f3fd4a3))
+
 # [12.15.0](https://github.com/nordnet/ui/compare/v12.14.0...v12.15.0) (2023-01-25)
 
 
