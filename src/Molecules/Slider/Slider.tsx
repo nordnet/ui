@@ -1,7 +1,8 @@
 import React, { KeyboardEvent, MouseEvent, TouchEvent, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { Component, InternalProps } from './Slider.types';
+import { motion, AnimatePresence } from 'framer-motion';
 
+import { Component, InternalProps } from './Slider.types';
 import DropdownBubble, { TRIANGLE_SIZE } from '../../Atoms/DropdownBubble';
 import Typography from '../../Atoms/Typography';
 import { getKnobSize, getHeight } from './utils';
@@ -76,14 +77,12 @@ const Container = styled.div<InternalProps>`
   margin: 0 ${(p) => `${getKnobSize(p.$variant) / 2}px`};
 `;
 
-const StyledDropdownBubble = styled(DropdownBubble)<InternalProps & { visible: boolean }>`
+const StyledDropdownBubble = styled(DropdownBubble)<InternalProps>`
   transform: ${(p) =>
     `translate(-50%, calc(-100% - ${
       getKnobSize(p.$variant) / 2 + TRIANGLE_SIZE + getHeight(p.$variant) / 2
     }px))`};
   padding: 6px 8px;
-  opacity: ${(p) => (p.visible ? 1 : 0)};
-  transition: opacity 0.16s ease-in-out;
 `;
 
 const Slider: Component = ({
@@ -243,27 +242,36 @@ const Slider: Component = ({
       >
         <SliderTrackHighlight sliderColor={sliderColor} value={trackPercent} variant={variant} />
         {!readOnly && (
-          <>
-            {showTooltip && (
-              <StyledDropdownBubble
-                $variant={variant}
-                position="center"
-                placement="top"
-                invertedColors
-                style={{
-                  position: 'absolute',
-                  ...(hoverPosition && {
-                    marginLeft: `${valueToPercent(hoverPosition, min, max)}% `,
-                  }),
+          <AnimatePresence>
+            {showTooltip && hoverVisible && (
+              <motion.div
+                key="tooltip"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{
+                  opacity: { ease: 'easeInOut', duration: 0.16 },
                 }}
-                visible={hoverVisible}
               >
-                {hoverPosition && (
-                  <Typography type="tertiary" color={(t) => t.color.textLight}>
-                    {formatter(hoverPosition)}
-                  </Typography>
-                )}
-              </StyledDropdownBubble>
+                <StyledDropdownBubble
+                  $variant={variant}
+                  position="center"
+                  placement="top"
+                  invertedColors
+                  style={{
+                    position: 'absolute',
+                    ...(hoverPosition && {
+                      marginLeft: `${valueToPercent(hoverPosition, min, max)}% `,
+                    }),
+                  }}
+                >
+                  {hoverPosition && (
+                    <Typography type="tertiary" color={(t) => t.color.textLight}>
+                      {formatter(hoverPosition)}
+                    </Typography>
+                  )}
+                </StyledDropdownBubble>
+              </motion.div>
             )}
             <SliderKnob
               disabled={disabled}
@@ -282,7 +290,7 @@ const Slider: Component = ({
               value={value}
               variant={variant}
             />
-          </>
+          </AnimatePresence>
         )}
       </SliderTrack>
     </Container>

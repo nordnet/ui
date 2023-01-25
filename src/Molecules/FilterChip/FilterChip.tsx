@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { Flexbox, Typography } from '../..';
 import { isBoolean, isFunction } from '../../common/utils';
-import { Props } from './QuickFilter.types';
+import { Props } from './FilterChip.types';
 
 const StyledInput = styled.input`
   opacity: 0;
@@ -78,7 +78,7 @@ const StyledFlexboxItem = styled(Flexbox)`
     p.theme.media.greaterThan(p.theme.breakpoints.md) ? '1px !important' : ''};
 `;
 
-export const QuickFilter: React.FC<Props> = ({
+export const FilterChip: React.FC<Props> = ({
   label,
   onChange = () => {},
   value = '',

@@ -13,22 +13,18 @@ const HoverArea = styled.div<InternalProps>`
   padding: ${(p) => `${p.theme.spacing.unit(1)}px;`};
 
   & :hover {
-    div {
-      div:last-child {
-        border: ${(p) => {
-          const knobColor = p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor;
-          return (
-            !p.$disabled &&
-            `${
-              knobColor ? `${p.theme.spacing.unit(1)}px solid ${Color(knobColor).darken(0.1)}` : ''
-            }`
-          );
-        }};
-        background: ${(p) => {
-          const knobColor = p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor;
-          return !p.$disabled && `${knobColor ? Color(knobColor).darken(0.1) : ''}`;
-        }};
-      }
+    & > div > div:nth-last-child(1) {
+      border: ${(p) => {
+        const knobColor = p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor;
+        return (
+          !p.$disabled &&
+          `${knobColor ? `${p.theme.spacing.unit(1)}px solid ${Color(knobColor).darken(0.1)}` : ''}`
+        );
+      }};
+      background: ${(p) => {
+        const knobColor = p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor;
+        return !p.$disabled && `${knobColor ? Color(knobColor).darken(0.1) : ''}`;
+      }};
     }
   }
 `;
