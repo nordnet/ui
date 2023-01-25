@@ -1,3 +1,11 @@
+# [12.15.0](https://github.com/nordnet/ui/compare/v12.14.0...v12.15.0) (2023-01-25)
+
+
+### Features
+
+* 🎸 UI Kit - Pill Button - Tertiary State ([978f5dd](https://github.com/nordnet/ui/commit/978f5dd))
+* make header color black ([be37215](https://github.com/nordnet/ui/commit/be37215))
+
 # [12.14.0](https://github.com/nordnet/ui/compare/v12.13.0...v12.14.0) (2023-01-20)
 
 
