@@ -46,6 +46,7 @@ import { DistributionBar } from './Molecules/DistributionBar';
 import Drawer from './Molecules/Drawer';
 import FeedbackBanner from './Molecules/FeedbackBanner';
 import Fieldset from './Molecules/Fieldset';
+import FilterChip from './Molecules/FilterChip';
 import FlexTable, {
   CellProps,
   FooterProps,
@@ -161,6 +162,7 @@ export {
   FadedScroll,
   FeedbackBanner,
   Fieldset,
+  FilterChip,
   Flag,
   FlexTable,
   Flexbox,
@@ -197,6 +199,7 @@ export {
   ProgressBar,
   ProgressIndicator,
   PromotionBanner,
+  /** @deprecated use FilterChip instead */ QuickFilter,
   Rating,
   SegmentedControl,
   SelectionCard,
@@ -242,5 +245,4 @@ export {
   useOnClickOutside,
   getPersistedSortOrder,
   setPersistedSortOrder,
-  QuickFilter,
 };
