@@ -258,6 +258,10 @@ export type ThemeColors = {
   pillButtonHoverSecondary: string;
   /** blue700 */
   pillButtonActiveSecondary: string;
+  /** light gray800 dark white */
+  pillButtonTertiary: string;
+  /** light gray100 dark gray700 */
+  pillButtonBackgroundTertiary: string;
   /**
    * gray500
    */

@@ -89,6 +89,9 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     pillButtonHoverSecondary: rawColor.blue300,
     pillButtonActiveSecondary: rawColor.blue200,
 
+    pillButtonTertiary: rawColor.white,
+    pillButtonBackgroundTertiary: rawColor.gray700,
+
     buttonBorderSecondary: rawColor.blue500,
     buttonHoverSecondary: rawColor.blue600,
     buttonActiveSecondary: rawColor.blue700,

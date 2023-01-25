@@ -20,6 +20,7 @@ const PRIMARY = 'primary';
 const SECONDARY = 'secondary';
 const NEUTRAL = 'neutral';
 const NEGATIVE = 'negative';
+const TERTIARY = 'tertiary';
 const LARGE = 'large';
 const MEDIUM = 'medium';
 const SMALL = 'small';
@@ -44,7 +45,7 @@ const getButtonSettings = (buttonComponent: ButtonComponentValueType) => {
       };
     case Button.Pill:
       return {
-        buttonVariants: [PRIMARY, SECONDARY, NEGATIVE],
+        buttonVariants: [PRIMARY, SECONDARY, NEGATIVE, TERTIARY],
         buttonSizes: [MEDIUM, SMALL],
         iconPlacements: [undefined, LEFT, RIGHT],
       };
