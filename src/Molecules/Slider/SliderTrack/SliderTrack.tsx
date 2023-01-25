@@ -11,10 +11,9 @@ const HoverArea = styled.div<InternalProps>`
   height: ${(p) => `${p.theme.spacing.unit(1)}px`};
   cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'pointer')};
   padding: ${(p) => `${p.theme.spacing.unit(1)}px;`};
-
+ 
   & :hover {
-    div {
-      div:last-child {
+    & > div > div:nth-last-child(1) {
         border: ${(p) => {
           const knobColor = p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor;
           return (
