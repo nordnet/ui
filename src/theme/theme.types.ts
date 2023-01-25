@@ -894,6 +894,9 @@ export type ThemeColors = {
   actionBackgroundWeak: string;
   /** blue500 */
   actionBorderDefault: string;
+  pageHeaderBackground: string;
+  notFoundColor: string;
+  notFoundFill: string;
 };
 
 export type ColorSets = {

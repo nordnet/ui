@@ -1,7 +1,12 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Box, Card, Flexbox, Media, PageWrapper, Separator, Typography } from '../..';
 import { PageHeaderCardComponent } from './PageHeaderCard.types';
 import { isElement } from '../../common/utils';
+
+const StyledCard = styled(Card)`
+  background: ${(p) => p.theme.color.pageHeaderBackground};
+`;
 
 export const PageHeaderCard: PageHeaderCardComponent = ({ title, className, children, grow }) => {
   const pageHeaderTitle = () => {
@@ -16,7 +21,7 @@ export const PageHeaderCard: PageHeaderCardComponent = ({ title, className, chil
   };
 
   return (
-    <Card className={className} grow={grow}>
+    <StyledCard className={className} grow={grow}>
       <PageWrapper>
         <Flexbox
           container
@@ -45,6 +50,6 @@ export const PageHeaderCard: PageHeaderCardComponent = ({ title, className, chil
           )}
         </Flexbox>
       </PageWrapper>
-    </Card>
+    </StyledCard>
   );
 };

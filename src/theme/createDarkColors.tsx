@@ -477,6 +477,11 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     actionBackgroundWeak: rawColor.blue800,
     actionBorderDefault: rawColor.blue500,
 
+    pageHeaderBackground: rawColor.black,
+
+    notFoundColor: rawColor.gray600,
+    notFoundFill: rawColor.gray900,
+
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,

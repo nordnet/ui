@@ -475,6 +475,11 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     actionBackgroundWeak: rawColor.blue100,
     actionBorderDefault: rawColor.blue500,
 
+    pageHeaderBackground: rawColor.white,
+
+    notFoundColor: rawColor.gray500,
+    notFoundFill: rawColor.gray200,
+
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,
