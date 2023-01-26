@@ -897,6 +897,7 @@ export type ThemeColors = {
   pageHeaderBackground: string;
   notFoundColor: string;
   notFoundFill: string;
+  headerCardBorder: string;
 };
 
 export type ColorSets = {

@@ -479,6 +479,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     notFoundColor: rawColor.gray500,
     notFoundFill: rawColor.gray200,
+    headerCardBorder: rawColor.gray200,
 
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
