@@ -1,3 +1,10 @@
+# [12.17.0](https://github.com/nordnet/ui/compare/v12.16.0...v12.17.0) (2023-01-26)
+
+
+### Features
+
+* add colors and border to header ([1820df7](https://github.com/nordnet/ui/commit/1820df7))
+
 # [12.16.0](https://github.com/nordnet/ui/compare/v12.15.0...v12.16.0) (2023-01-25)
 
 
