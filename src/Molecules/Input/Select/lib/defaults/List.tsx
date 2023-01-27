@@ -12,6 +12,7 @@ type ListProps = {
   itemsPerColumn?: number;
   columnWidth?: string;
   listWidth?: string;
+  invertedColors?: boolean;
   children?: React.ReactNode;
 };
 
@@ -78,6 +79,8 @@ const getTrianglePosition = (position: string | undefined) => {
       return 'right';
     case 'bottom':
       return 'center';
+    case 'center':
+      return 'center';
     default:
       return 'left';
   }
@@ -94,6 +97,7 @@ export const List: React.FC<ListProps> = ({
   itemsPerColumn,
   columnWidth,
   listWidth,
+  invertedColors,
 }) => {
   const areOptionsProvided = React.Children.count(children) > 0;
   return (
@@ -104,6 +108,7 @@ export const List: React.FC<ListProps> = ({
         maxHeight={maxHeight || '240px'}
         itemsPerColumn={itemsPerColumn}
         listWidth={listWidth}
+        invertedColors={invertedColors}
       >
         {searchComponent}
         {itemsPerColumn ? (

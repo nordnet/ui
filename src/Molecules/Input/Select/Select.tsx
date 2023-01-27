@@ -338,6 +338,7 @@ const Select = (props: Props) => {
               listPosition={props.listPosition}
               listWidth={props.listWidth}
               placement={props.placement}
+              invertedColors={props.invertedColors}
               actionsComponent={
                 machineState.context.actions.length > 0 ? (
                   <ActionsWrapper component={Action} onClickFactory={handleClickActionItem} />
@@ -386,6 +387,7 @@ const Select = (props: Props) => {
                 listPosition={props.listPosition}
                 listWidth={props.listWidth}
                 placement="top"
+                invertedColors={props.invertedColors}
                 actionsComponent={
                   machineState.context.actions.length > 0 ? (
                     <ActionsWrapper component={Action} onClickFactory={handleClickActionItem} />

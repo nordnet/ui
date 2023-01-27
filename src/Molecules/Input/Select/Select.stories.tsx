@@ -237,6 +237,26 @@ export const withLabelTooltip = () => (
   />
 );
 
+export const withPlacementTopPositionCenter = () => (
+  <Box mt={30}>
+    <Input.Select
+      id="input-1"
+      options={[
+        { value: 1, label: '1' },
+        { value: 2, label: '2' },
+        { value: 3, label: '3' },
+      ]}
+      label="Label"
+      placeholder="Placeholder"
+      labelTooltip="Tooltip for select field"
+      placement="top"
+      listPosition="center"
+      invertedColors
+      noFormField
+    />
+  </Box>
+);
+
 export const withLabelTooltipPositionTop = () => (
   <>
     <br />
