@@ -59,6 +59,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
       placement,
       itemsPerColumn,
       columnWidth,
+      invertedColors,
     },
     ref,
   ) => {
@@ -80,6 +81,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
         placement={placement}
         $fullscreenOnMobile={fullscreenOnMobile}
         itemsPerColumn={itemsPerColumn}
+        invertedColors={invertedColors}
       >
         <Component
           searchComponent={searchComponent}
@@ -91,6 +93,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
           itemsPerColumn={itemsPerColumn}
           listWidth={listWidth}
           columnWidth={columnWidth}
+          invertedColors={invertedColors}
         >
           {children}
         </Component>

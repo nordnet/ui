@@ -125,6 +125,7 @@ export type Props = {
    * possibility to prevent input scroll on focus behaviour
    */
   preventScroll?: boolean;
+  invertedColors?: boolean;
 };
 
 export type OptionItem = {
