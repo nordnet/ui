@@ -1,3 +1,11 @@
+## [12.17.1](https://github.com/nordnet/ui/compare/v12.17.0...v12.17.1) (2023-01-27)
+
+
+### Bug Fixes
+
+* add more prop passthru ([e497f22](https://github.com/nordnet/ui/commit/e497f22))
+* allow center bubble on top position ([5252ef2](https://github.com/nordnet/ui/commit/5252ef2))
+
 # [12.17.0](https://github.com/nordnet/ui/compare/v12.16.0...v12.17.0) (2023-01-26)
 
 
