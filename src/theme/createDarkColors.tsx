@@ -484,6 +484,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     notFoundColor: rawColor.gray600,
     notFoundFill: rawColor.gray900,
+    headerCardBorder: rawColor.gray800,
 
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
