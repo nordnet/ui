@@ -78,6 +78,18 @@ export const listWithDifferentArrowPositions = () => (
       },
       {
         component: (
+          <Wrapper position="center" placement="top">
+            <Option value={-1} label="Default?" />
+            <Option value={0} label="First" selected />
+            {new Array(10).fill(null)?.map((_, i) => (
+              <Option key={i} value={i + 2} label="Disabled" disabled />
+            ))}
+          </Wrapper>
+        ),
+        title: 'Placement top, arrow center',
+      },
+      {
+        component: (
           <Wrapper position="center">
             <Option value={-1} label="Default?" />
             <Option value={0} label="First" selected />

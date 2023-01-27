@@ -18,6 +18,7 @@ type ListProps = {
   maxHeight?: string;
   noFormField?: boolean;
   listPosition?: string;
+  invertedColors?: boolean;
 };
 
 const StyledList = styled(UIList)<any>`
@@ -57,6 +58,8 @@ const getTrianglePosition = (position: string | undefined) => {
       return 'right';
     case 'bottom':
       return 'center';
+    case 'center':
+      return 'center';
     default:
       return 'left';
   }
@@ -68,6 +71,7 @@ export const OptionList: React.FC<ListProps> = ({
   maxHeight,
   noFormField,
   listPosition,
+  invertedColors,
 }) => {
   const areOptionsProvided = React.Children.count(children) > 0;
   return (
@@ -75,6 +79,7 @@ export const OptionList: React.FC<ListProps> = ({
       <StyledDropdownBubble
         position={noFormField ? getTrianglePosition(listPosition) : 'right'}
         maxHeight={maxHeight || '240px'}
+        invertedColors={invertedColors}
       >
         {searchComponent}
         <FadedScrollWithoutPaddingBottom enableMobileFade fadeHeight={8}>

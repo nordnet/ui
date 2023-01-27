@@ -63,7 +63,7 @@ export type Props = {
    * 'left' means list gonna be to the left-bottom from SelectedValue.
    * Makes sense only if noFormField is 'true'
    */
-  listPosition?: 'left' | 'right';
+  listPosition?: 'left' | 'right' | 'center';
   className?: string;
   components?: Partial<Record<ComponentTypes, React.ComponentType<any>>>;
   /**
