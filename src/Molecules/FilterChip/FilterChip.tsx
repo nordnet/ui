@@ -18,7 +18,7 @@ export const FilterChip: React.FC<Props> = ({
   const id = useId();
   const [selectedInternal, setSelectedInternal] = useState(selectedInitially);
   const isControlled = isBoolean(controlledSelected);
-  const selected = Boolean(controlledSelected || selectedInternal);
+  const selected = Boolean(isControlled ? controlledSelected : selectedInternal);
 
   const changeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (isFunction(onChange)) onChange(event);
