@@ -10,6 +10,7 @@ export const FilterChip: React.FC<Props> = ({
   value = '',
   icon = null,
   disabled = false,
+  variant = 'default',
   selected: controlledSelected,
   selectedInitially = false,
   className,
@@ -17,7 +18,7 @@ export const FilterChip: React.FC<Props> = ({
   const id = useId();
   const [selectedInternal, setSelectedInternal] = useState(selectedInitially);
   const isControlled = isBoolean(controlledSelected);
-  const selected = Boolean(isControlled ? controlledSelected : selectedInternal);
+  const selected = Boolean(controlledSelected || selectedInternal);
 
   const changeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (isFunction(onChange)) onChange(event);
@@ -25,37 +26,35 @@ export const FilterChip: React.FC<Props> = ({
   };
 
   return (
-    <StyledDiv
-      className={className}
-      $disabled={disabled}
-      $selected={selected}
-      hasLabel={!!label}
-      tabIndex={0}
-    >
-      {label && (
-        <label htmlFor={id} hidden>
-          {label}
-        </label>
-      )}
-      <input
-        id={id}
-        checked={selected}
-        disabled={disabled}
-        onChange={changeHandler}
-        type="checkbox"
-        value={value}
-        hidden
-      />
-      <Flexbox container direction="row" gap={1} alignItems="center">
-        {icon && <StyledFlexbox item>{icon}</StyledFlexbox>}
-        {label && (
-          <Flexbox item container alignItems="center">
-            <Typography color="inherit" type="secondary" weight="bold" lineHeight="inherit">
-              {label}
-            </Typography>
-          </Flexbox>
-        )}
-      </Flexbox>
-    </StyledDiv>
+    <label htmlFor={id}>
+      <StyledDiv
+        className={className}
+        $disabled={disabled}
+        variant={variant}
+        $selected={selected}
+        hasLabel={!!label}
+        tabIndex={0}
+      >
+        <input
+          id={id}
+          checked={selected}
+          disabled={disabled}
+          onChange={changeHandler}
+          type="checkbox"
+          value={value}
+          hidden
+        />
+        <Flexbox container direction="row" gap={1} alignItems="center">
+          {icon && <StyledFlexbox item>{icon}</StyledFlexbox>}
+          {label && (
+            <Flexbox item container alignItems="center">
+              <Typography color="inherit" type="secondary" weight="bold" lineHeight="inherit">
+                {label}
+              </Typography>
+            </Flexbox>
+          )}
+        </Flexbox>
+      </StyledDiv>
+    </label>
   );
 };

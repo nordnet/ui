@@ -436,9 +436,14 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     quickFilterSelectedBackground: rawColor.blue100,
     quickFilterBackground: rawColor.gray100,
     quickFilterText: rawColor.gray800,
-    quickFilterSelectedText: rawColor.blue500,
+    quickFilterSelectedText: rawColor.blue600,
     quickFilterFocusOutline: rawColor.gray400,
     quickFilterFocusSelectedOutline: rawColor.blue500,
+
+    quickFilterSustainabilityColor: rawColor.green600,
+    quickFilterSustainabilityBackground: rawColor.green100,
+    quickFilterSustainabilityHoverColor: rawColor.green700,
+    
 
     monthlySavingsTransferTypeInactive: rawColor.gray500,
     daySelectInputTextInactive: rawColor.gray600,

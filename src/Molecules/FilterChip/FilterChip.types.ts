@@ -15,4 +15,5 @@ export type Props = {
   selectedInitially?: boolean;
   /** @default '' */
   className?: string;
+  variant?: 'default' | 'sustainability';
 };

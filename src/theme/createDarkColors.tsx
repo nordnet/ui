@@ -442,6 +442,10 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     quickFilterFocusOutline: rawColor.gray600,
     quickFilterFocusSelectedOutline: rawColor.blue400,
 
+    quickFilterSustainabilityColor: rawColor.green500,
+    quickFilterSustainabilityBackground: rawColor.green800,
+    quickFilterSustainabilityHoverColor: rawColor.green400,
+
     monthlySavingsTransferTypeInactive: rawColor.gray500,
     daySelectInputTextInactive: rawColor.gray400,
     daySelectActiveText: rawColor.white,

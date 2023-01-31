@@ -54,6 +54,19 @@ WithDisabled.args = {
   disabled: true,
 };
 
+export const SustainabilityVariant = () => (
+  <Card>
+    <Box p={3}>
+      <FilterChip
+        label="Sustainable"
+        value="Sustainable"
+        icon={<Icon.Sustainable16 />}
+        variant="sustainability"
+      />
+    </Box>
+  </Card>
+);
+
 export const WithFourFilterChips = () => (
   <Card>
     <Box p={2}>
