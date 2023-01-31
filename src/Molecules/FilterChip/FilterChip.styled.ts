@@ -54,7 +54,6 @@ export const StyledDiv = styled.div<{
 
   ${({ theme, variant, $selected }) => variantStyles(theme, variant, $selected)}
 
-  // label styles
   ${({ hasLabel, theme }) =>
     hasLabel &&
     `
@@ -68,7 +67,7 @@ export const StyledDiv = styled.div<{
     }
   `}
 
-  // disabled style overrides keep at bottom
+  
   ${(p) =>
     p.$disabled &&
     `
