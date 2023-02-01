@@ -67,6 +67,22 @@ export const SustainabilityVariant = () => (
   </Card>
 );
 
+export const BrandVariant = () => (
+  <Card>
+    <Box p={3}>
+      <FilterChip label="brand" value="brand" icon={<Icon.Sustainable16 />} variant="brand" />
+    </Box>
+  </Card>
+);
+
+export const EmojiVariant = () => (
+  <Card>
+    <Box p={3}>
+      <FilterChip label="Title" value="Title" icon="🌻" variant="brand" />
+    </Box>
+  </Card>
+);
+
 export const WithFourFilterChips = () => (
   <Card>
     <Box p={2}>

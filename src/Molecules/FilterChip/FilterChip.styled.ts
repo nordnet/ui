@@ -27,9 +27,22 @@ const variantStyles = (theme: Theme, variant: string, $selected: boolean) =>
       }
       `}
     `,
+    brand: css`
+      ${$selected &&
+      `
+      color: ${theme.color.quickFilterBrandActiveColor};
+      background: ${theme.color.quickFilterBrandActiveBackground};
+      &:focus-visible {
+        outline: 1px solid ${theme.color.quickFilterBrandFocusBorder};
+      }
+      &:hover {
+        color: ${theme.color.quickFilterBrandHoverColor};
+      }
+      `}
+    `,
   }[variant]);
 
-export const StyledDiv = styled.div<{
+export const ContainerLabel = styled.label<{
   $disabled: boolean;
   $selected: boolean;
   hasLabel: boolean;
@@ -51,9 +64,9 @@ export const StyledDiv = styled.div<{
   &:focus-visible {
     outline: 1px solid ${(p) => p.theme.color.quickFilterFocusOutline};
   }
+  transition: color 222ms, background 222ms, outline 222ms;
 
   ${({ theme, variant, $selected }) => variantStyles(theme, variant, $selected)}
-
   ${({ hasLabel, theme }) =>
     hasLabel &&
     `
@@ -66,8 +79,6 @@ export const StyledDiv = styled.div<{
       padding: ${theme.spacing.unit(1)}px ${theme.spacing.unit(3)}px;
     }
   `}
-
-  
   ${(p) =>
     p.$disabled &&
     `
