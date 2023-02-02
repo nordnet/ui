@@ -7,14 +7,14 @@ export default {
 };
 
 const StoryWrapper: React.FC<{ children?: React.ReactNode }> = ({ children }) => (
-  <>
+  <div style={{ backgroundColor: 'maroon', marginBottom: '500px' }}>
     <Box mb={4}>
       <Typography type="title2">
         This component is used to let the user discover new features
       </Typography>
     </Box>
     {children}
-  </>
+  </div>
 );
 
 export const DefaultStory = () => {
@@ -28,6 +28,26 @@ export const DefaultStory = () => {
         description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
         closeButtonTitle="Close by clicking X"
         onClose={() => setIsOpen(false)}
+      >
+        <Input.Text label="Label" />
+      </PersistentTooltip>
+    </StoryWrapper>
+  );
+};
+
+export const WithoutPointerArrow = () => {
+  const [isOpen, setIsOpen] = useState(true);
+
+  return (
+    <StoryWrapper>
+      <PersistentTooltip
+        isOpen={isOpen}
+        title="Persistent tooltip without arrow"
+        description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
+        closeButtonTitle="Close by clicking X"
+        onClose={() => setIsOpen(false)}
+        maxWidth={30}
+        pointerArrow={false}
       >
         <Input.Text label="Label" />
       </PersistentTooltip>

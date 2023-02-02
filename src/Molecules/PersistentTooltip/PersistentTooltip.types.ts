@@ -8,6 +8,7 @@ export type Props = {
   title: React.ReactNode;
   description: React.ReactNode;
   closeButtonTitle: string;
+  pointerArrow?: boolean;
   maxWidth?: number | 'auto';
   /**
    * @wrapChild

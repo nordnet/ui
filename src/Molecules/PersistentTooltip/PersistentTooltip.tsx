@@ -42,6 +42,7 @@ export const PersistentTooltip: FC<PersistentTooltipProps> & {
   ariaLabel,
   inModal,
   wrapChild,
+  pointerArrow = true,
   ...htmlDivProps
 }) => {
   const child = React.Children.only(children) as ReactElement;
@@ -103,11 +104,14 @@ export const PersistentTooltip: FC<PersistentTooltipProps> & {
           triggerElement={triggerElement}
           maxWidth={maxWidth === 'auto' ? undefined : maxWidth} // Let PopOver handle default maxWidth if auto.
           backgroundColor={(t) => {
-            return backgroundColorProp ? backgroundColorProp(t) : t.color.backgroundDark;
+            return backgroundColorProp
+              ? backgroundColorProp(t)
+              : t.color.persistedTooltipBackground;
           }}
           borderColor={(t) => (borderColorProp ? borderColorProp(t) : 'transparent')}
           ariaLabel={ariaLabel}
           inModal={inModal}
+          pointerArrow={pointerArrow}
           {...htmlDivProps}
         />
       )}
