@@ -1,3 +1,14 @@
+## [12.17.2](https://github.com/nordnet/ui/compare/v12.17.1...v12.17.2) (2023-02-02)
+
+
+### Bug Fixes
+
+* refactor again, introduce sustainable variant ([e99ed44](https://github.com/nordnet/ui/commit/e99ed44))
+* refactor filter chip ([6211db2](https://github.com/nordnet/ui/commit/6211db2))
+* remove comments so it builds ([3db0f9a](https://github.com/nordnet/ui/commit/3db0f9a))
+* remove emoji work, add brand variant ([db68f0a](https://github.com/nordnet/ui/commit/db68f0a))
+* revert ternary ([7240925](https://github.com/nordnet/ui/commit/7240925))
+
 ## [12.17.1](https://github.com/nordnet/ui/compare/v12.17.0...v12.17.1) (2023-01-27)
 
 
