@@ -179,13 +179,14 @@ const Slider: Component = ({
     event.stopPropagation();
     event.preventDefault();
     const touchPosition = event.touches[0].clientX;
-
+    handleHover(touchPosition);
     handleChange(touchPosition);
   };
 
   const handleTouchEnd = () => {
     document.removeEventListener('touchend', handleTouchEnd);
     document.removeEventListener('touchmove', handleTouchMove as () => void);
+    setHoverVisible(false);
   };
 
   const handleTouchStart = () => {
