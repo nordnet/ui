@@ -346,6 +346,13 @@ export type ThemeColors = {
   quickFilterFocusOutline: string;
   /** blue500 */
   quickFilterFocusSelectedOutline: string;
+  quickFilterSustainabilityColor: string;
+  quickFilterSustainabilityBackground: string;
+  quickFilterSustainabilityHoverColor: string;
+  quickFilterBrandActiveColor: string;
+  quickFilterBrandHoverColor: string;
+  quickFilterBrandActiveBackground: string;
+  quickFilterBrandFocusBorder: string;
   /** white */
   card: string;
   /** creditsPiePrimary */

@@ -47,10 +47,46 @@ WithSelectedInitially.args = {
   selectedInitially: true,
 };
 
+export const WithDisabled = Template.bind({});
+WithDisabled.args = {
+  icon: <Icon.Money16 />,
+  label: 'disabled',
+  disabled: true,
+};
+
+export const SustainabilityVariant = () => (
+  <Card>
+    <Box p={3}>
+      <FilterChip
+        label="Sustainable"
+        value="Sustainable"
+        icon={<Icon.Sustainable16 />}
+        variant="sustainability"
+      />
+    </Box>
+  </Card>
+);
+
+export const BrandVariant = () => (
+  <Card>
+    <Box p={3}>
+      <FilterChip label="brand" value="brand" icon={<Icon.Sustainable16 />} variant="brand" />
+    </Box>
+  </Card>
+);
+
+export const EmojiVariant = () => (
+  <Card>
+    <Box p={3}>
+      <FilterChip label="Title" value="Title" icon="🌻" variant="brand" />
+    </Box>
+  </Card>
+);
+
 export const WithFourFilterChips = () => (
   <Card>
     <Box p={2}>
-      <Flexbox container gutter={1}>
+      <Flexbox container gap={1}>
         <FilterChip icon={<Icon.MonthlySavings16 />} value="1" />{' '}
         <FilterChip icon={<Icon.MonthlySavings16 />} label="&nbsp;" value="1" />{' '}
         <FilterChip icon={<Icon.MonthlySavings16 />} label="label" value="1" />{' '}
