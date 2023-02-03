@@ -1,3 +1,12 @@
+## [12.17.3](https://github.com/nordnet/ui/compare/v12.17.2...v12.17.3) (2023-02-03)
+
+
+### Bug Fixes
+
+* add arrow back to persisted tooltip ([6b626a5](https://github.com/nordnet/ui/commit/6b626a5))
+* adjust icon button colors to match tertiary pill button ([048fcca](https://github.com/nordnet/ui/commit/048fcca))
+* handle slider touch move with tooltip ([802e667](https://github.com/nordnet/ui/commit/802e667))
+
 ## [12.17.2](https://github.com/nordnet/ui/compare/v12.17.1...v12.17.2) (2023-02-02)
 
 
