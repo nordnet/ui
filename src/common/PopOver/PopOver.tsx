@@ -37,7 +37,7 @@ const PopOver: React.FC<Props> & {
   handleMouseEnter,
   handleMouseLeave,
   customBoundary,
-  pointerArrow,
+  pointerArrow = true,
   bottomSheet = false,
   invertedColors,
   setPopoverElement,

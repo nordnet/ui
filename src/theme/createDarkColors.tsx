@@ -39,7 +39,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     background: rawColor.gray900,
     backgroundBlack: rawColor.black,
-    backgroundDark: rawColor.gray2,
+    backgroundDark: rawColor.white,
+    persistedTooltipBackground: rawColor.white,
 
     badgeBackground: rawColor.blue500,
     badgeBackgroundPositive: rawColor.green500,

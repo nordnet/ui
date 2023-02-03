@@ -11,10 +11,10 @@ const SIZE = {
 };
 
 const StyledIconButton = styled(Button)<{ size: 's' | 'm' }>`
-  background-color: ${(p) => p.theme.color.quickFilterBackground};
+  background-color: ${(p) => p.theme.color.pillButtonBackgroundTertiary};
   border-radius: 50%;
   box-sizing: border-box;
-  color: ${(p) => p.theme.color.text};
+  color: ${(p) => p.theme.color.pillButtonTertiary};
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -26,12 +26,12 @@ const StyledIconButton = styled(Button)<{ size: 's' | 'm' }>`
       ? `color: ${p.theme.color.buttonTextDisabled};`
       : `
     &:hover {
-      background-color: ${p.theme.color.quickFilterBackground};
-      color: ${p.theme.color.link};
+      background-color: ${p.theme.color.background};
+      color: ${p.theme.color.pillButtonHoverSecondary};
     }
     &:active {
-      background-color: ${p.theme.color.quickFilterSelectedBackground};
-      color: ${p.theme.color.link};
+      background-color: ${p.theme.color.background};
+      color: ${p.theme.color.pillButtonActiveSecondary};
     }
   `;
   }}

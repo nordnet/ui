@@ -294,6 +294,8 @@ export type ThemeColors = {
   backgroundBlack: string;
   /** gray0 */
   backgroundDark: string;
+  /** gray800 */
+  persistedTooltipBackground: string;
   /** complementaryBlue1 */
   barGraphHighlight: string;
   /** complementaryBlue1 */

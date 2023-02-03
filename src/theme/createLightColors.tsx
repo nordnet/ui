@@ -42,6 +42,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     background: rawColor.gray100,
     backgroundBlack: rawColor.black,
     backgroundDark: rawColor.gray0,
+    persistedTooltipBackground: rawColor.gray800,
 
     badgeBackground: rawColor.blue500,
     badgeBackgroundPositive: rawColor.green500,
