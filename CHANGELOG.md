@@ -1,3 +1,10 @@
+## [12.17.4](https://github.com/nordnet/ui/compare/v12.17.3...v12.17.4) (2023-02-03)
+
+
+### Bug Fixes
+
+* adjusted button background colors ([c8fc97c](https://github.com/nordnet/ui/commit/c8fc97c))
+
 ## [12.17.3](https://github.com/nordnet/ui/compare/v12.17.2...v12.17.3) (2023-02-03)
 
 
