@@ -26,11 +26,11 @@ const StyledIconButton = styled(Button)<{ size: 's' | 'm' }>`
       ? `color: ${p.theme.color.buttonTextDisabled};`
       : `
     &:hover {
-      background-color: ${p.theme.color.background};
+      background-color: ${p.theme.color.pillButtonBackgroundTertiary};
       color: ${p.theme.color.pillButtonHoverSecondary};
     }
     &:active {
-      background-color: ${p.theme.color.background};
+      background-color: ${p.theme.color.pillButtonBackgroundTertiary};
       color: ${p.theme.color.pillButtonActiveSecondary};
     }
   `;

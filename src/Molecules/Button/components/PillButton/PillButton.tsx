@@ -47,7 +47,11 @@ const StyledPillButton = styled(Button)<PillButtonProps>`
           ? p.theme.color.pillButtonBackgroundNegativeHover
           : p.theme.color.pillButtonHoverSecondary
       };
-      background-color: ${p.theme.color.background};
+      ${
+        isTertiary(p.variant)
+          ? `background-color: ${p.theme.color.pillButtonBackgroundTertiary}`
+          : `background-color: ${p.theme.color.background}`
+      };
     }
     &:active {
       color:
@@ -56,8 +60,12 @@ const StyledPillButton = styled(Button)<PillButtonProps>`
           ? p.theme.color.pillButtonBackgroundNegativeActive
           : p.theme.color.pillButtonActiveSecondary
       };
-      background-color: ${p.theme.color.background};
-    }
+       ${
+         isTertiary(p.variant)
+           ? `background-color: ${p.theme.color.pillButtonBackgroundTertiary}`
+           : `background-color: ${p.theme.color.background}`
+       };
+      }
   `};
 
   &::before {
