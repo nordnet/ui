@@ -42,7 +42,7 @@ RatingNotDefined.args = {
 export const RatingWithSize = Template.bind({});
 RatingWithSize.args = {
   rating: 3,
-  size: 4,
+  size: 3,
 };
 
 export const RatingWithStringSize = Template.bind({});
