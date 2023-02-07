@@ -57,6 +57,14 @@ RatingOutOf3.args = {
   outOf: 3,
 };
 
+export const DifferentColor = Template.bind({});
+DifferentColor.args = {
+  rating: 2,
+  outOf: 3,
+  colorOn: (t) => t.color.worldMapLand,
+  colorOff: (t) => t.color.labelTextGreen,
+};
+
 export const RatingOutOf3WithLabel = () => (
   <Flexbox
     container

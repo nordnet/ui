@@ -1,7 +1,8 @@
+import { ColorFn } from 'common/Types';
 import React from 'react';
 import { Theme } from 'theme/theme.types';
 import { Flexbox, Icon, VisuallyHidden } from '../..';
-import { isNumber } from '../../common/utils';
+import { isNumber, isFunction } from '../../common/utils';
 import { Props, RatingComponent, IconSizeProp } from './Rating.types';
 
 const restrictRange = (rating: Props['rating'], outOf: Props['outOf'] = 5) => {
@@ -10,38 +11,54 @@ const restrictRange = (rating: Props['rating'], outOf: Props['outOf'] = 5) => {
   return rating;
 };
 
-export const getIcon = (size: IconSizeProp, active: boolean, outOfThree: boolean) => {
+export const getIcon = (
+  size: IconSizeProp,
+  active: boolean,
+  outOfThree: boolean,
+  colorOn?: ColorFn,
+  colorOff?: ColorFn,
+) => {
   const noFill = outOfThree && !active;
-  const colorOn = outOfThree ? 'starRatingBlue' : 'starRating';
-  const colorOff = outOfThree ? 'starRatingBlueOff' : 'starRatingOff';
+  const colorActive = outOfThree ? 'starRatingBlue' : 'starRating';
+  const colorInactive = outOfThree ? 'starRatingBlueOff' : 'starRatingOff';
 
   const noFillColor = (t: Theme) => t.color.starRatingBlueOff;
-  const fillColor = (t: Theme) => (active ? t.color[colorOn] : t.color[colorOff]);
+
+  const getActiveColor = isFunction(colorOn) ? colorOn : (t: Theme) => t.color[colorActive];
+  const getInactiveColor = isFunction(colorOff) ? colorOff : (t: Theme) => t.color[colorInactive];
+  const fillColor = active ? getActiveColor : getInactiveColor;
 
   switch (size) {
     case 's':
     case 3:
-      if (noFill) return <Icon.Star12 color={noFillColor} />;
+      if (noFill) return <Icon.Star12 color={isFunction(colorOff) ? colorOff : noFillColor} />;
       return <Icon.StarFill12 color={fillColor} />;
     case 'm':
     case 4:
-      if (noFill) return <Icon.Star16 color={noFillColor} />;
+      if (noFill) return <Icon.Star16 color={isFunction(colorOff) ? colorOff : noFillColor} />;
       return <Icon.StarFill16 color={fillColor} />;
     case 'l':
     case 6:
-      if (noFill) return <Icon.Star24 color={noFillColor} />;
+      if (noFill) return <Icon.Star24 color={isFunction(colorOff) ? colorOff : noFillColor} />;
       return <Icon.StarFill24 color={fillColor} />;
     case 'xl':
     case 8:
-      if (noFill) return <Icon.Star32 color={noFillColor} />;
+      if (noFill) return <Icon.Star32 color={isFunction(colorOff) ? colorOff : noFillColor} />;
       return <Icon.StarFill32 color={fillColor} />;
     default:
-      if (noFill) return <Icon.Star16 color={noFillColor} />;
+      if (noFill) return <Icon.Star16 color={isFunction(colorOff) ? colorOff : noFillColor} />;
       return <Icon.StarFill16 color={fillColor} />;
   }
 };
 
-export const Rating: RatingComponent = ({ rating = 0, size = 'm', outOf = 5, height = 'auto' }) => {
+export const Rating: RatingComponent = ({
+  rating = 0,
+  size = 'm',
+  outOf = 5,
+  height = 'auto',
+  colorOn,
+  colorOff,
+}) => {
   const finalRating = restrictRange(rating, outOf);
   const screenReaderText = rating === 1 ? `${rating} star` : `${rating} stars`;
 
@@ -50,7 +67,7 @@ export const Rating: RatingComponent = ({ rating = 0, size = 'm', outOf = 5, hei
       <VisuallyHidden>{screenReaderText}</VisuallyHidden>
       {[...Array(outOf)]?.map((star, i) => (
         <Flexbox item key={star} container alignItems="center">
-          {getIcon(size, i < finalRating, outOf === 3)}
+          {getIcon(size, i < finalRating, outOf === 3, colorOn, colorOff)}
         </Flexbox>
       ))}
     </Flexbox>

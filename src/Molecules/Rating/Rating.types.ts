@@ -1,3 +1,4 @@
+import { ColorFn } from 'common/Types';
 import React from 'react';
 
 export type IconSizeProp = 's' | 'm' | 'l' | 'xl' | number;
@@ -10,6 +11,8 @@ export type Props = {
   size?: IconSizeProp;
   outOf?: number;
   height?: string;
+  colorOn?: ColorFn;
+  colorOff?: ColorFn;
 };
 
 export type RatingComponent = React.FunctionComponent<Props>;
