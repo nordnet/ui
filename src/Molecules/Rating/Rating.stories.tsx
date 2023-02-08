@@ -6,6 +6,7 @@ import Rating from '.';
 import { Props } from './Rating.types';
 import Flexbox from '../../Atoms/Flexbox';
 import Typography from '../../Atoms/Typography';
+import Icon from '../../Atoms/Icon';
 
 export default {
   title: 'Molecules / Rating',
@@ -61,8 +62,28 @@ export const DifferentColor = Template.bind({});
 DifferentColor.args = {
   rating: 2,
   outOf: 3,
-  colorOn: (t) => t.color.worldMapLand,
-  colorOff: (t) => t.color.labelTextGreen,
+};
+
+export const AllTypes = () => {
+  return (
+    <Flexbox
+      container
+      alignItems="center"
+      justifyContent="center"
+      width="100%"
+      gap={4}
+      height="100vh"
+    >
+      <Rating
+        rating={2}
+        outOf={3}
+        activeIcon={<Icon.Account16 color={(t) => t.color.starRatingBlue} />}
+        inactiveIcon={<Icon.AddCircleFill16 color={(t) => t.color.starRatingBlueOff} />}
+      />
+      <Rating rating={0} />
+      <Rating rating={17} outOf={18} />
+    </Flexbox>
+  );
 };
 
 export const RatingOutOf3WithLabel = () => (

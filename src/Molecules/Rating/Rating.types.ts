@@ -1,7 +1,16 @@
-import { ColorFn } from 'common/Types';
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 export type IconSizeProp = 's' | 'm' | 'l' | 'xl' | number;
+
+type NoneOrBoth =
+  | {
+      activeIcon?: never;
+      inactiveIcon?: never;
+    }
+  | {
+      activeIcon: ReactElement;
+      inactiveIcon: ReactElement;
+    };
 
 export type Props = {
   /** Needs to be between 0 and 5 */
@@ -11,8 +20,6 @@ export type Props = {
   size?: IconSizeProp;
   outOf?: number;
   height?: string;
-  colorOn?: ColorFn;
-  colorOff?: ColorFn;
 };
 
-export type RatingComponent = React.FunctionComponent<Props>;
+export type RatingComponent = React.FunctionComponent<Props & NoneOrBoth>;
