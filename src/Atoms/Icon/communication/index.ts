@@ -16,6 +16,7 @@ import faqFill from './faqFill';
 import feedback from './feedback';
 import flag from './flag';
 import flagFill from './flagFill';
+import group from './group';
 import help from './help';
 import helpFill from './helpFill';
 import information from './information';
@@ -62,6 +63,7 @@ export default {
   ...feedback,
   ...flag,
   ...flagFill,
+  ...group,
   ...help,
   ...helpFill,
   ...information,
