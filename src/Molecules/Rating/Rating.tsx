@@ -16,8 +16,9 @@ const getIcon = (
   activeIcon?: ReactElement,
   inactiveIcon?: ReactElement,
 ) => {
-  if (active && isValidElement(activeIcon)) return activeIcon;
-  if (!active && isValidElement(inactiveIcon)) return inactiveIcon;
+  if (isValidElement(activeIcon) && isValidElement(inactiveIcon)) {
+    return active ? activeIcon : inactiveIcon;
+  }
 
   const fillColor = (t: Theme) => (active ? t.color.starRating : t.color.starRatingOff);
   switch (size) {
