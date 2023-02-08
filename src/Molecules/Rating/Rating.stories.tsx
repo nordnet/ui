@@ -58,32 +58,12 @@ RatingOutOf3.args = {
   outOf: 3,
 };
 
-export const DifferentColor = Template.bind({});
-DifferentColor.args = {
+export const CustomIcons = Template.bind({});
+CustomIcons.args = {
   rating: 2,
   outOf: 3,
-};
-
-export const AllTypes = () => {
-  return (
-    <Flexbox
-      container
-      alignItems="center"
-      justifyContent="center"
-      width="100%"
-      gap={4}
-      height="100vh"
-    >
-      <Rating
-        rating={2}
-        outOf={3}
-        activeIcon={<Icon.Account16 color={(t) => t.color.starRatingBlue} />}
-        inactiveIcon={<Icon.AddCircleFill16 color={(t) => t.color.starRatingBlueOff} />}
-      />
-      <Rating rating={0} />
-      <Rating rating={17} outOf={18} />
-    </Flexbox>
-  );
+  activeIcon: <Icon.Account16 color={(t) => t.color.starRatingBlue} />,
+  inactiveIcon: <Icon.AddCircleFill16 color={(t) => t.color.starRatingBlueOff} />,
 };
 
 export const RatingOutOf3WithLabel = () => (
