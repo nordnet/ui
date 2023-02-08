@@ -1,3 +1,10 @@
+# [12.18.0](https://github.com/nordnet/ui/compare/v12.17.4...v12.18.0) (2023-02-08)
+
+
+### Features
+
+* 🎸 add new group icon ([0d81582](https://github.com/nordnet/ui/commit/0d81582))
+
 ## [12.17.4](https://github.com/nordnet/ui/compare/v12.17.3...v12.17.4) (2023-02-03)
 
 
