@@ -1,3 +1,14 @@
+## [12.18.1](https://github.com/nordnet/ui/compare/v12.18.0...v12.18.1) (2023-02-09)
+
+
+### Bug Fixes
+
+* add no fill star for 3 star ratings ([3b4eee1](https://github.com/nordnet/ui/commit/3b4eee1))
+* allow custom colors ([52c5be9](https://github.com/nordnet/ui/commit/52c5be9))
+* both or none icons, no size if icons ([885dfa1](https://github.com/nordnet/ui/commit/885dfa1))
+* custom icons ([d8a5ff0](https://github.com/nordnet/ui/commit/d8a5ff0))
+* use ternary ([99b1373](https://github.com/nordnet/ui/commit/99b1373))
+
 # [12.18.0](https://github.com/nordnet/ui/compare/v12.17.4...v12.18.0) (2023-02-08)
 
 
