@@ -13,7 +13,7 @@ type NoneOrBothIcons =
   | {
       activeIcon: ReactElement;
       inactiveIcon: ReactElement;
-      size: never;
+      size?: never;
     };
 
 export type Props = {
