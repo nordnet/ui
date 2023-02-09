@@ -1,3 +1,10 @@
+## [12.18.2](https://github.com/nordnet/ui/compare/v12.18.1...v12.18.2) (2023-02-09)
+
+
+### Bug Fixes
+
+* types ([f807061](https://github.com/nordnet/ui/commit/f807061))
+
 ## [12.18.1](https://github.com/nordnet/ui/compare/v12.18.0...v12.18.1) (2023-02-09)
 
 
