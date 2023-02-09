@@ -6,6 +6,7 @@ import Rating from '.';
 import { Props } from './Rating.types';
 import Flexbox from '../../Atoms/Flexbox';
 import Typography from '../../Atoms/Typography';
+import Icon from '../../Atoms/Icon';
 
 export default {
   title: 'Molecules / Rating',
@@ -42,7 +43,7 @@ RatingNotDefined.args = {
 export const RatingWithSize = Template.bind({});
 RatingWithSize.args = {
   rating: 3,
-  size: 4,
+  size: 3,
 };
 
 export const RatingWithStringSize = Template.bind({});
@@ -55,6 +56,14 @@ export const RatingOutOf3 = Template.bind({});
 RatingOutOf3.args = {
   rating: 2,
   outOf: 3,
+};
+
+export const CustomIcons = Template.bind({});
+CustomIcons.args = {
+  rating: 2,
+  outOf: 3,
+  activeIcon: <Icon.Account16 color={(t) => t.color.starRatingBlue} />,
+  inactiveIcon: <Icon.AddCircleFill16 color={(t) => t.color.starRatingBlueOff} />,
 };
 
 export const RatingOutOf3WithLabel = () => (
