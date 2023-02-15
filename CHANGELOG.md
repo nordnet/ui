@@ -1,3 +1,23 @@
+# [13.0.0-beta.1](https://github.com/nordnet/ui/compare/v12.18.2...v13.0.0-beta.1) (2023-02-15)
+
+
+### Bug Fixes
+
+* 🐛 BREAKING CHANGE update snapshot ([5f21582](https://github.com/nordnet/ui/commit/5f21582))
+* 🐛 fix formatting ([8932f29](https://github.com/nordnet/ui/commit/8932f29))
+
+
+### Features
+
+* 🎸 BREAKING CHANGE fix type errors ([d3750e1](https://github.com/nordnet/ui/commit/d3750e1))
+* 🎸 BREAKING CHANGE update breakpoints ([468b4be](https://github.com/nordnet/ui/commit/468b4be))
+* 🎸 BREAKING CHANGES fix ts errors ([9d6710d](https://github.com/nordnet/ui/commit/9d6710d))
+
+
+### BREAKING CHANGES
+
+* 🧨 May change how elements look on page
+
 ## [12.18.2](https://github.com/nordnet/ui/compare/v12.18.1...v12.18.2) (2023-02-09)
 
 
