@@ -5,30 +5,34 @@ import { createLightColors, getColorLightScheme } from './createLightColors';
 import { createDarkColors, getColorDarkScheme } from './createDarkColors';
 
 const breakpoints: Theme['breakpoints'] = {
+  xs: {
+    size: 360,
+    offset: 5,
+  },
   sm: {
-    size: 760,
+    size: 768,
     offset: 5,
   },
   md: {
-    size: 976,
+    size: 992,
     offset: 5,
   },
   lg: {
-    size: 1280,
+    size: 1440,
     offset: 5,
   },
   xl: {
-    size: 1600,
+    size: 1680,
     offset: 5,
   },
 };
 
 const size: Theme['size'] = {
   xs: 360,
-  sm: 760,
-  md: 976,
-  lg: 1280,
-  xl: 1600,
+  sm: 768,
+  md: 992,
+  lg: 1440,
+  xl: 1680,
 };
 
 const zIndex: Theme['zIndex'] = {
