@@ -1,3 +1,10 @@
+# [13.0.0-beta.5](https://github.com/nordnet/ui/compare/v13.0.0-beta.4...v13.0.0-beta.5) (2023-02-16)
+
+
+### Bug Fixes
+
+* 🐛 restoring but with 5 breakpoints ([16f9c74](https://github.com/nordnet/ui/commit/16f9c74))
+
 # [13.0.0-beta.4](https://github.com/nordnet/ui/compare/v13.0.0-beta.3...v13.0.0-beta.4) (2023-02-16)
 
 
