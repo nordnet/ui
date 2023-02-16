@@ -1,3 +1,10 @@
+# [13.0.0-beta.2](https://github.com/nordnet/ui/compare/v13.0.0-beta.1...v13.0.0-beta.2) (2023-02-16)
+
+
+### Bug Fixes
+
+* 🐛 change offset value ([748798b](https://github.com/nordnet/ui/commit/748798b))
+
 # [13.0.0-beta.1](https://github.com/nordnet/ui/compare/v12.18.2...v13.0.0-beta.1) (2023-02-15)
 
 
