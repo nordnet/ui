@@ -1,3 +1,10 @@
+# [13.0.0-beta.4](https://github.com/nordnet/ui/compare/v13.0.0-beta.3...v13.0.0-beta.4) (2023-02-16)
+
+
+### Bug Fixes
+
+* 🐛 set spacing to breakpoint value ([f79616e](https://github.com/nordnet/ui/commit/f79616e))
+
 # [13.0.0-beta.3](https://github.com/nordnet/ui/compare/v13.0.0-beta.2...v13.0.0-beta.3) (2023-02-16)
 
 
