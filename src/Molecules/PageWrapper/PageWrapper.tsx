@@ -2,10 +2,10 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { Props } from './PageWrapper.types';
 
-const getBreakpointStyles = (size: string) => css`
-  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
-    max-width: ${(p) => p.theme.breakpoints[size].size}px;
-    padding: 0 ${(p) => p.theme.spacing.unit(p.theme.breakpoints[size].offset)}px;
+const getBreakpointStyles = (breakpointSize: string, maxWidthSize: string) => css`
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints[breakpointSize])} {
+    max-width: ${(p) => p.theme.breakpoints[maxWidthSize].size}px;
+    padding: 0 ${(p) => p.theme.spacing.unit(p.theme.breakpoints[maxWidthSize].offset)}px;
   }
 `;
 
@@ -17,11 +17,10 @@ const Inner = styled.div`
   box-sizing: border-box;
   margin: 0 auto;
 
-  ${getBreakpointStyles('xs')};
-  ${getBreakpointStyles('sm')};
-  ${getBreakpointStyles('md')};
-  ${getBreakpointStyles('lg')};
-  ${getBreakpointStyles('xl')};
+  ${getBreakpointStyles('xs', 'sm')};
+  ${getBreakpointStyles('sm', 'md')};
+  ${getBreakpointStyles('md', 'lg')};
+  ${getBreakpointStyles('lg', 'xl')};
 
   @media print {
     max-width: none;
