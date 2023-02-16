@@ -7,23 +7,23 @@ import { createDarkColors, getColorDarkScheme } from './createDarkColors';
 const breakpoints: Theme['breakpoints'] = {
   xs: {
     size: 360,
-    offset: 5,
+    offset: 0,
   },
   sm: {
     size: 768,
-    offset: 5,
+    offset: 6,
   },
   md: {
     size: 992,
-    offset: 5,
+    offset: 6,
   },
   lg: {
     size: 1440,
-    offset: 5,
+    offset: 25,
   },
   xl: {
     size: 1680,
-    offset: 5,
+    offset: 14,
   },
 };
 

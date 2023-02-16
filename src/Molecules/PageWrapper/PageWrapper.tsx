@@ -17,6 +17,7 @@ const Inner = styled.div`
   box-sizing: border-box;
   margin: 0 auto;
 
+  ${getBreakpointStyles('xs')};
   ${getBreakpointStyles('sm')};
   ${getBreakpointStyles('md')};
   ${getBreakpointStyles('lg')};
