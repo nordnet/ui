@@ -1,3 +1,10 @@
+# [13.0.0-beta.3](https://github.com/nordnet/ui/compare/v13.0.0-beta.2...v13.0.0-beta.3) (2023-02-16)
+
+
+### Bug Fixes
+
+* 🐛 set new maxWidth size at different breakpoints ([7466c96](https://github.com/nordnet/ui/commit/7466c96))
+
 # [13.0.0-beta.2](https://github.com/nordnet/ui/compare/v13.0.0-beta.1...v13.0.0-beta.2) (2023-02-16)
 
 
