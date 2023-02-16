@@ -5,7 +5,7 @@ import { Props } from './PageWrapper.types';
 const getBreakpointStyles = (breakpointSize: string, maxWidthSize: string) => css`
   ${(p) => p.theme.media.greaterThan(p.theme.breakpoints[breakpointSize])} {
     max-width: ${(p) => p.theme.breakpoints[maxWidthSize].size}px;
-    padding: 0 ${(p) => p.theme.spacing.unit(p.theme.breakpoints[maxWidthSize].offset)}px;
+    padding: 0 ${(p) => p.theme.spacing.unit(p.theme.breakpoints[breakpointSize].offset)}px;
   }
 `;
 
