@@ -1,3 +1,10 @@
+## [12.18.3](https://github.com/nordnet/ui/compare/v12.18.2...v12.18.3) (2023-02-17)
+
+
+### Bug Fixes
+
+* new illustration ([dc9417d](https://github.com/nordnet/ui/commit/dc9417d))
+
 ## [12.18.2](https://github.com/nordnet/ui/compare/v12.18.1...v12.18.2) (2023-02-09)
 
 
