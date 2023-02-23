@@ -8,12 +8,12 @@ import { useGeneratedId } from '../../common/Hooks';
 
 const StyledPopOver = styled(PopOver)`
   ${PopOver.components.TooltipContent} {
-    padding: ${(p) => p.theme.spacing.unit(3)}px;
+    padding: ${p => p.theme.spacing.unit(3)}px;
   }
 `;
 
 const StyledButton = styled(Button)`
-  margin-left: ${(p) => p.theme.spacing.unit(5)}px;
+  margin-left: ${p => p.theme.spacing.unit(5)}px;
 `;
 
 const StyledCrossIcon = styled(OldIcon.CrossMedium)``; // styled to allow consumers to use it as styling-identifier directly from PopOver.components.TooltipContent
@@ -38,6 +38,8 @@ export const PersistentTooltip: FC<PersistentTooltipProps> & {
   closeButtonTitle,
   backgroundColor: backgroundColorProp,
   borderColor: borderColorProp,
+  textColor,
+  crossIconColor,
   maxWidth = 79,
   ariaLabel,
   inModal,
@@ -61,7 +63,11 @@ export const PersistentTooltip: FC<PersistentTooltipProps> & {
   const title = isElement(titleProp) ? (
     titleProp
   ) : (
-    <Typography type="primary" weight="bold" color={(t) => t.color.textLight}>
+    <Typography
+      type="primary"
+      weight="bold"
+      color={t => (textColor ? textColor(t) : t.color.textLight)}
+    >
       {titleProp}
     </Typography>
   );
@@ -70,7 +76,7 @@ export const PersistentTooltip: FC<PersistentTooltipProps> & {
     descriptionProp
   ) : (
     <Box mt={1}>
-      <Typography type="secondary" color={(t) => t.color.textLight}>
+      <Typography type="secondary" color={t => (textColor ? textColor(t) : t.color.textLight)}>
         {descriptionProp}
       </Typography>
     </Box>
@@ -81,7 +87,11 @@ export const PersistentTooltip: FC<PersistentTooltipProps> & {
       <Flexbox container justifyContent="space-between" alignItems="flex-start">
         {title}
         <StyledButton onClick={onClose} variant="neutral">
-          <StyledCrossIcon size={4} color={(t) => t.color.textLight} title={closeButtonTitle} />
+          <StyledCrossIcon
+            size={4}
+            color={t => (crossIconColor ? crossIconColor(t) : t.color.textLight)}
+            title={closeButtonTitle}
+          />
         </StyledButton>
       </Flexbox>
       {description}
@@ -103,12 +113,12 @@ export const PersistentTooltip: FC<PersistentTooltipProps> & {
           positionCallback={positionCallback}
           triggerElement={triggerElement}
           maxWidth={maxWidth === 'auto' ? undefined : maxWidth} // Let PopOver handle default maxWidth if auto.
-          backgroundColor={(t) => {
+          backgroundColor={t => {
             return backgroundColorProp
               ? backgroundColorProp(t)
               : t.color.persistedTooltipBackground;
           }}
-          borderColor={(t) => (borderColorProp ? borderColorProp(t) : 'transparent')}
+          borderColor={t => (borderColorProp ? borderColorProp(t) : 'transparent')}
           ariaLabel={ariaLabel}
           inModal={inModal}
           pointerArrow={pointerArrow}
