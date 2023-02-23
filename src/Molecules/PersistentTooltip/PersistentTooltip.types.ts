@@ -18,7 +18,6 @@ export type Props = {
    */
   wrapChild?: boolean;
   textColor?: ColorFn;
-  crossIconColor?: ColorFn;
 } & Pick<
   PopOverProps,
   | 'id'

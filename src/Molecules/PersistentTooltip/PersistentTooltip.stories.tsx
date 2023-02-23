@@ -356,7 +356,6 @@ export const CustomTextAndCrossIconColors = () => {
         closeButtonTitle="Close by clicking X"
         onClose={() => setIsOpen(false)}
         textColor={t => t.color.labelTextPink}
-        crossIconColor={t => t.color.positive}
       >
         <Input.Text label="Label" />
       </PersistentTooltip>

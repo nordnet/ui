@@ -39,7 +39,6 @@ export const PersistentTooltip: FC<PersistentTooltipProps> & {
   backgroundColor: backgroundColorProp,
   borderColor: borderColorProp,
   textColor,
-  crossIconColor,
   maxWidth = 79,
   ariaLabel,
   inModal,
@@ -89,7 +88,7 @@ export const PersistentTooltip: FC<PersistentTooltipProps> & {
         <StyledButton onClick={onClose} variant="neutral">
           <StyledCrossIcon
             size={4}
-            color={t => (crossIconColor ? crossIconColor(t) : t.color.textLight)}
+            color={t => (textColor ? textColor(t) : t.color.textLight)}
             title={closeButtonTitle}
           />
         </StyledButton>

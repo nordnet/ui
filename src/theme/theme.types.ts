@@ -398,8 +398,6 @@ export type ThemeColors = {
 
   /** white */
   discoveryTooltipPrimaryText: string;
-  /** white */
-  discoveryTooltipPrimaryCrossIcon: string;
 
   /** light: gray800, dark: white */
   dropDownButtonText: string;

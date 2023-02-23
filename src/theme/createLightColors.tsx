@@ -136,7 +136,6 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     disabledText: rawColor.gray3,
 
     discoveryTooltipPrimaryText: rawColor.white,
-    discoveryTooltipPrimaryCrossIcon: rawColor.white,
 
     dropDownButtonText: rawColor.gray800,
     dropDownButtonTextHover: rawColor.blue500,
