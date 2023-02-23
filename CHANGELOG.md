@@ -1,3 +1,11 @@
+## [12.18.4](https://github.com/nordnet/ui/compare/v12.18.3...v12.18.4) (2023-02-23)
+
+
+### Bug Fixes
+
+* custom colors on PersistentTooltip for primary DiscoveryTooltip ([62180bf](https://github.com/nordnet/ui/commit/62180bf))
+* text and icon will be same color ([48a25da](https://github.com/nordnet/ui/commit/48a25da))
+
 ## [12.18.3](https://github.com/nordnet/ui/compare/v12.18.2...v12.18.3) (2023-02-17)
 
 
