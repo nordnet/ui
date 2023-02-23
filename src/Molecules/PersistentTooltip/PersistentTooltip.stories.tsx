@@ -102,18 +102,18 @@ export const CustomTitleAndDescription = () => {
         isOpen={isOpen}
         title={
           <Box mb={4}>
-            <Typography color={(t) => t.color.negative}>I&apos;m in a box</Typography>
+            <Typography color={t => t.color.negative}>I&apos;m in a box</Typography>
           </Box>
         }
         description={
           <Flexbox container gutter={4}>
             <Flexbox item>
-              <Typography color={(t) => t.color.textLight}>
+              <Typography color={t => t.color.textLight}>
                 I am in a custom jsx description.
               </Typography>
             </Flexbox>
             <Flexbox item>
-              <Typography color={(t) => t.color.textLight}>
+              <Typography color={t => t.color.textLight}>
                 I am in a custom jsx description too!
               </Typography>
             </Flexbox>
@@ -249,9 +249,9 @@ export const StyledPersistentTooltipInDrawer = () => {
 
 const StyledPersistentTooltipSubComponents = styled(PersistentTooltip)`
   ${PersistentTooltip.components.CloseButtonIcon} {
-    fill: ${(p) => p.theme.color.text};
-    width: ${(p) => p.theme.spacing.unit(2)}px;
-    height: ${(p) => p.theme.spacing.unit(2)}px;
+    fill: ${p => p.theme.color.text};
+    width: ${p => p.theme.spacing.unit(2)}px;
+    height: ${p => p.theme.spacing.unit(2)}px;
   }
 `;
 
@@ -270,8 +270,8 @@ export const StyledSubcomponents = () => {
           </Typography>
         }
         closeButtonTitle="Close by clicking X"
-        backgroundColor={(t) => t.color.warning}
-        borderColor={(t) => t.color.negative}
+        backgroundColor={t => t.color.warning}
+        borderColor={t => t.color.negative}
         onClose={() => setIsOpen(false)}
       >
         <Input.Text label="Label" />
@@ -340,6 +340,25 @@ export const BrokenPositioning = () => {
           </PersistentTooltip>
         </Box>
       </Flexbox>
+    </StoryWrapper>
+  );
+};
+
+export const CustomTextAndCrossIconColors = () => {
+  const [isOpen, setIsOpen] = useState(true);
+
+  return (
+    <StoryWrapper>
+      <PersistentTooltip
+        isOpen={isOpen}
+        title="Default persistent tooltip"
+        description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
+        closeButtonTitle="Close by clicking X"
+        onClose={() => setIsOpen(false)}
+        textColor={t => t.color.labelTextPink}
+      >
+        <Input.Text label="Label" />
+      </PersistentTooltip>
     </StoryWrapper>
   );
 };
