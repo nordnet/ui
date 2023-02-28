@@ -942,7 +942,7 @@ export type Theme = {
     sm: Record<'offset' | 'size', number>;
     /** Tablet, desktop size: 992; offset: 5; */
     md: Record<'offset' | 'size', number>;
-    /** Desktop size: 1440; offset: 5; */
+    /** Desktop size: 1280; offset: 5; */
     lg: Record<'offset' | 'size', number>;
     /** Desktop big size: 1680; offset: 5; */
     xl: Record<'offset' | 'size', number>;
@@ -956,7 +956,7 @@ export type Theme = {
     /** Tablet, desktop */
     md: 992;
     /** Desktop */
-    lg: 1440;
+    lg: 1280;
     /** Desktop big */
     xl: 1680;
   };
