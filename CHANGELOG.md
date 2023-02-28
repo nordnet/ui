@@ -1,3 +1,10 @@
+# [13.0.0-beta.6](https://github.com/nordnet/ui/compare/v13.0.0-beta.5...v13.0.0-beta.6) (2023-02-28)
+
+
+### Bug Fixes
+
+* 🐛 trying to find breakpoints middleground ([56d2d09](https://github.com/nordnet/ui/commit/56d2d09))
+
 # [13.0.0-beta.5](https://github.com/nordnet/ui/compare/v13.0.0-beta.4...v13.0.0-beta.5) (2023-02-16)
 
 
