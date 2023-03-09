@@ -108,7 +108,7 @@ const ProgressIndicator: FC<Props> = ({
         <Flexbox container justifyContent="space-between" alignItems="center">
           {title && (
             <Box pr={2}>
-              <Typography type="title1">{title}</Typography>
+              <Typography type="title2">{title}</Typography>
             </Box>
           )}
           {buttonCallback && !isMobile && (
