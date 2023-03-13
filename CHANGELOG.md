@@ -1,3 +1,10 @@
+# [13.0.0-beta.7](https://github.com/nordnet/ui/compare/v13.0.0-beta.6...v13.0.0-beta.7) (2023-03-13)
+
+
+### Features
+
+* 🎸 merge with maste ([7c5fd35](https://github.com/nordnet/ui/commit/7c5fd35))
+
 # [13.0.0-beta.6](https://github.com/nordnet/ui/compare/v13.0.0-beta.5...v13.0.0-beta.6) (2023-02-28)
 
 
