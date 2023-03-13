@@ -1,3 +1,4 @@
+import { ColorFn } from 'common/Types';
 import { Props as PopOverProps } from '../../common/PopOver/PopOver.types';
 
 export type Props = {
@@ -16,6 +17,7 @@ export type Props = {
    * Useful for when children does not handle refs correctly. Could fix positioning issues.
    */
   wrapChild?: boolean;
+  textColor?: ColorFn;
 } & Pick<
   PopOverProps,
   | 'id'

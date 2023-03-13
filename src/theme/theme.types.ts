@@ -396,6 +396,9 @@ export type ThemeColors = {
   /** gray3 */
   disabledText: string;
 
+  /** white */
+  discoveryTooltipPrimaryText: string;
+
   /** light: gray800, dark: white */
   dropDownButtonText: string;
   /** light: blue500, dark: blue400 */

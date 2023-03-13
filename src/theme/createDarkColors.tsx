@@ -133,6 +133,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     disabledLabelBackground: rawColor.gray900,
     disabledText: rawColor.gray600,
 
+  discoveryTooltipPrimaryText: rawColor.white,
+
     dropDownButtonText: rawColor.white,
     dropDownButtonTextHover: rawColor.blue400,
     dropDownButtonTextActive: rawColor.blue400,
