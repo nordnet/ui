@@ -90,7 +90,7 @@ const ProgressIndicator: FC<Props> = ({
         )}
       </Flexbox>
       <Box pt={3}>
-        <Flexbox container justifyContent="space-between" alignItems="center">
+        <Flexbox container justifyContent="space-between" alignItems="flex-start">
           {title && (
             <Box pr={2}>
               <Typography type="title2">{title}</Typography>
