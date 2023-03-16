@@ -8,7 +8,6 @@ export type Props = {
   backCallback?: () => void;
   infoCallback?: Function | React.ReactNode;
   exitText?: string;
-  backText?: string;
   infoText?: string;
   infoIcon?: 'info' | 'help';
   buttonCallback?: boolean;
