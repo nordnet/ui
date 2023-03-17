@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Box, Button } from '../..';
+import { Button } from '../..';
 
 export const CompletionBar = styled.div<{ completion: number; noButtons: boolean }>`
   height: ${(p) => p.theme.spacing.unit(1)}px;
@@ -26,40 +26,12 @@ export const CompletionBar = styled.div<{ completion: number; noButtons: boolean
   }
 `;
 
-export const HiddenText = styled(Box)`
-  overflow: hidden;
-  width: 0;
-  opacity: 0;
-  transform: rotateX(90deg);
-  transition: width 333ms, opacity 333ms, transform 333ms;
-  display: none;
-  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
-    display: block;
-  }
-`;
-
-export const StyledButton = styled.button<{ visible?: boolean; charWidth: number; $hide: boolean }>`
+export const StyledButton = styled(Button.Icon)<{
+  $visible?: boolean;
+  $hide: boolean;
+}>`
   display: ${(p) => (p.$hide ? 'none' : 'flex')};
-  background: transparent;
-  align-items: center;
-  cursor: pointer;
-  line-height: 1;
-  border: none;
-  visibility: ${(p) => (p.visible ? 'visible' : 'hidden')};
-  padding: 0;
-  svg {
-    transition: color 333ms;
-  }
-  &:hover {
-    svg {
-      color: ${(p) => p.theme.color.cta};
-    }
-    ${HiddenText} {
-      width: ${(p) => p.charWidth}ch;
-      opacity: 1;
-      transform: rotateX(0deg);
-    }
-  }
+  visibility: ${(p) => (p.$visible ? 'visible' : 'hidden')};
 `;
 
 export const StyledButtonPill = styled(Button.Pill)`
