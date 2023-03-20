@@ -1,11 +1,6 @@
 import React, { FC, ReactElement } from 'react';
 import { Box, Flexbox, Typography, Icon } from '../..';
-import {
-  StyledButton,
-  HiddenText,
-  CompletionBar,
-  StyledButtonPill,
-} from './ProgressIndicator.styled';
+import { StyledButton, CompletionBar, StyledButtonPill } from './ProgressIndicator.styled';
 import { Props } from './ProgressIndicator.types';
 import { useMedia } from '../../Atoms/Media';
 
@@ -17,12 +12,11 @@ const ProgressIndicator: FC<Props> = ({
   backCallback,
   infoCallback,
   exitText = 'Exit',
-  backText = 'Back',
   infoText = 'Info',
   infoIcon = 'info',
   buttonCallback = false,
 }): ReactElement => {
-  const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.md));
+  const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.sm));
   const isFirstStep = currentStep === 1;
   const noCloseAndBack = !closeCallback && !backCallback;
   const noButtons = noCloseAndBack && !infoCallback;
@@ -43,8 +37,10 @@ const ProgressIndicator: FC<Props> = ({
     >
       <Flexbox container justifyContent="space-between" gap={6} alignItems="center">
         <StyledButton
+          size="l"
+          variant="secondary"
           onClick={handleBackAndCloseClick}
-          visible={
+          $visible={
             (!isFirstStep && !!backCallback) || (isFirstStep && !!closeCallback) || noBackButton
           }
           $hide={
@@ -53,27 +49,22 @@ const ProgressIndicator: FC<Props> = ({
             (!backCallback && !isFirstStep && !noBackButton) ||
             noCloseAndBack
           }
-          charWidth={isFirstStep || noBackButton ? exitText.length : backText.length + 0.5}
         >
-          {isFirstStep || noBackButton ? <Icon.Cross16 /> : <Icon.ChevronLeft16 />}
-          <HiddenText ml={3}>
-            <Typography
-              type="secondary"
-              weight="bold"
-              lineHeight="inherit"
-              color={(t) => t.color.cta}
-            >
-              {isFirstStep || noBackButton ? exitText : backText}
-            </Typography>
-          </HiddenText>
+          {isFirstStep || noBackButton ? (
+            <Icon.Cross16 color="currentColor" />
+          ) : (
+            <Icon.ChevronLeft16 color="currentColor" />
+          )}
         </StyledButton>
+
         <Flexbox
           item
           container
           justifyContent="space-between"
           gap={2}
           alignItems="center"
-          width="100%"
+          width="auto"
+          flex="1"
         >
           <CompletionBar
             completion={Number(currentStep) / Number(numberOfSteps)}
@@ -82,30 +73,24 @@ const ProgressIndicator: FC<Props> = ({
         </Flexbox>
         {typeof infoCallback === 'function' ? (
           <StyledButton
+            size="l"
+            variant="secondary"
             onClick={() => infoCallback()}
-            visible={!!infoCallback}
+            $visible={!!infoCallback}
             $hide={noButtons || (buttonCallback && !isMobile)}
-            charWidth={infoText.length + 0.5}
           >
-            <HiddenText mr={3}>
-              <Typography
-                type="secondary"
-                weight="bold"
-                lineHeight="inherit"
-                color={(t) => t.color.cta}
-              >
-                {infoText}
-              </Typography>
-            </HiddenText>
-
-            {infoIcon === 'info' ? <Icon.Information16 /> : <Icon.Help16 />}
+            {infoIcon === 'info' ? (
+              <Icon.Information16 color="currentColor" />
+            ) : (
+              <Icon.Help16 color="currentColor" />
+            )}
           </StyledButton>
         ) : (
           buttonCallback && isMobile && infoCallback
         )}
       </Flexbox>
       <Box pt={3}>
-        <Flexbox container justifyContent="space-between" alignItems="center">
+        <Flexbox container justifyContent="space-between" alignItems="flex-start">
           {title && (
             <Box pr={2}>
               <Typography type="title2">{title}</Typography>

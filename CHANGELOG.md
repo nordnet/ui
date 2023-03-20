@@ -1,3 +1,11 @@
+# [12.19.0](https://github.com/nordnet/ui/compare/v12.18.4...v12.19.0) (2023-03-17)
+
+
+### Features
+
+* 🎸 update button align Items to top ([d77f3ef](https://github.com/nordnet/ui/commit/d77f3ef))
+* 🎸 update the progress indicator component ([1f1fe24](https://github.com/nordnet/ui/commit/1f1fe24))
+
 ## [12.18.4](https://github.com/nordnet/ui/compare/v12.18.3...v12.18.4) (2023-02-23)
 
 
