@@ -1,3 +1,15 @@
+# [12.20.0](https://github.com/nordnet/ui/compare/v12.19.0...v12.20.0) (2023-03-21)
+
+
+### Bug Fixes
+
+* 🐛 fix test ([a157391](https://github.com/nordnet/ui/commit/a157391))
+
+
+### Features
+
+* 🎸 Change and add new breakpoints values ([fd1fda1](https://github.com/nordnet/ui/commit/fd1fda1))
+
 # [12.19.0](https://github.com/nordnet/ui/compare/v12.18.4...v12.19.0) (2023-03-17)
 
 
