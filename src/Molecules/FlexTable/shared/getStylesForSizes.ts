@@ -11,7 +11,7 @@ const getStylesForSizes = <BaseProps, ScreenSizeConfigurableProps>(
   getProps: (
     p: any,
   ) => BaseProps & {
-    xs: ScreenSizeConfigurableProps;
+    xs: Partial<ScreenSizeConfigurableProps> | undefined;
   } & MediaRelatedProps<ScreenSizeConfigurableProps>,
   stylesPerPropCallbacks: {
     [K in keyof ScreenSizeConfigurableProps]: (
