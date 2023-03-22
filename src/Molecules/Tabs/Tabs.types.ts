@@ -26,6 +26,7 @@ export type ContainerProps = {
   activeTabIndex?: number;
   children: React.ReactNode;
   className?: string;
+  fullWidthSeparator?: boolean;
   height?: number;
   variant?: 'normal' | 'large';
   scrollOptions?: {

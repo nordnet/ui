@@ -5,13 +5,15 @@ type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; /
 type ColorFn = (t: Theme) => Values<Theme['color']>;
 
 export type Props = {
-  vertical?: Boolean;
+  className?: string;
   color?: ColorFn;
+  fullWidth?: boolean;
+  vertical?: boolean;
 };
 
 export type StyledProps = {
-  vertical?: Boolean;
   colorFunction?: ColorFn;
+  vertical?: boolean;
 };
 
 export type SeparatorComponent = React.FC<Props>;

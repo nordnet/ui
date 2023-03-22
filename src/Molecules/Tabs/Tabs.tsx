@@ -1,10 +1,10 @@
 import React, { useCallback, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { scrollStyles } from './Tabs.styles';
-import { ScrollStyleProps, ContainerComponent, ItemProps, TitleComponent } from './Tabs.types';
+import { StyledButton, StyledFlexbox, StyledSeparator, StyledUl } from './Tabs.styles';
+import { ContainerComponent, ItemProps, TitleComponent } from './Tabs.types';
 import { useIntersect } from '../../common/Hooks';
-import { Flexbox, Separator, TabTitle, Typography } from '../..';
-import NormalizedElements from '../../common/NormalizedElements/index';
+import { Flexbox, TabTitle, Typography } from '../..';
+
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
@@ -13,37 +13,11 @@ const DEFAULT_SCROLL_OPTIONS = {
   scrollBarHidden: false,
   scrollFade: false,
 };
-const StyledFlexbox = styled(Flexbox)<ScrollStyleProps>`
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  ${scrollStyles}
-`;
 
 export const Item: React.FC<ItemProps> = ({ children }) => {
   return <>{children}</>;
 };
 (Item as any).displayName = 'Tabs.Content';
-
-const StyledButton = styled(NormalizedElements.Button)<{ $active?: boolean }>`
-  background: none;
-  display: flex;
-  border: none;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  font-weight: inherit;
-  color: ${(p) => (p.$active ? p.theme.color.tabTitleActive : p.theme.color.tabTitle)};
-`;
-
-// Reset browser styling for ul element
-const StyledUl = styled.ul`
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style: none;
-`;
 
 const Title: TitleComponent = ({
   active: activeFromProps,
@@ -110,13 +84,14 @@ export const Tabs: ContainerComponent & {
    * */
   components: typeof components;
 } = ({
-  children,
-  initialActiveTabIndex = 0,
   activeTabIndex,
+  children,
   className,
+  fullWidthSeparator,
   height = 8,
-  variant = 'normal',
+  initialActiveTabIndex = 0,
   scrollOptions = DEFAULT_SCROLL_OPTIONS,
+  variant = 'normal',
 }) => {
   // eslint-disable-next-line prefer-const
   let [active, setActive] = useState(initialActiveTabIndex);
@@ -227,8 +202,7 @@ export const Tabs: ContainerComponent & {
           {titles}
         </Flexbox>
       </StyledFlexbox>
-      <Separator />
-
+      <StyledSeparator fullWidth={fullWidthSeparator} />
       {contents}
     </>
   );
