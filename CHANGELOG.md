@@ -1,3 +1,10 @@
+# [12.21.0](https://github.com/nordnet/ui/compare/v12.20.0...v12.21.0) (2023-03-22)
+
+
+### Features
+
+* add fullWidth prop to separator and fullWidthSeparator to tabs ([0f27b1a](https://github.com/nordnet/ui/commit/0f27b1a))
+
 # [12.20.0](https://github.com/nordnet/ui/compare/v12.19.0...v12.20.0) (2023-03-21)
 
 
