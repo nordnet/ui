@@ -1,3 +1,11 @@
+# [12.22.0](https://github.com/nordnet/ui/compare/v12.21.0...v12.22.0) (2023-03-23)
+
+
+### Features
+
+* 🎸 minor fix and change color code ([6a8b3ed](https://github.com/nordnet/ui/commit/6a8b3ed))
+* 🎸 new mobile and desktop version for progress indicator ([7ce2024](https://github.com/nordnet/ui/commit/7ce2024))
+
 # [12.21.0](https://github.com/nordnet/ui/compare/v12.20.0...v12.21.0) (2023-03-22)
 
 
