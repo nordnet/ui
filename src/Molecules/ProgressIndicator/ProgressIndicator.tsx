@@ -49,6 +49,7 @@ const ProgressIndicator: FC<Props> = ({
             (!backCallback && !isFirstStep && !noBackButton) ||
             noCloseAndBack
           }
+          $isMobile={!!isMobile}
         >
           {isFirstStep || noBackButton ? (
             <Icon.Cross16 color="currentColor" />
@@ -78,6 +79,7 @@ const ProgressIndicator: FC<Props> = ({
             onClick={() => infoCallback()}
             $visible={!!infoCallback}
             $hide={noButtons || (buttonCallback && !isMobile)}
+            $isMobile={!!isMobile}
           >
             {infoIcon === 'info' ? (
               <Icon.Information16 color="currentColor" />

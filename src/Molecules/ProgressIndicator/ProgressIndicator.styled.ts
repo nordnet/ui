@@ -29,9 +29,20 @@ export const CompletionBar = styled.div<{ completion: number; noButtons: boolean
 export const StyledButton = styled(Button.Icon)<{
   $visible?: boolean;
   $hide: boolean;
+  $isMobile?: boolean;
 }>`
   display: ${(p) => (p.$hide ? 'none' : 'flex')};
   visibility: ${(p) => (p.$visible ? 'visible' : 'hidden')};
+  background-color: ${(p) =>
+    p.$isMobile ? p.theme.color.pillButtonBackgroundTertiary : 'transparent'};
+  min-height: ${(p) => !p.$isMobile && '16px'};
+  height: ${(p) => !p.$isMobile && '16px'};
+  padding: ${(p) => !p.$isMobile && '0'};
+
+  &:hover {
+    background-color: ${(p) =>
+      p.$isMobile ? p.theme.color.pillButtonBackgroundTertiary : 'transparent'};
+  }
 `;
 
 export const StyledButtonPill = styled(Button.Pill)`
