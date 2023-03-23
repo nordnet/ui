@@ -16,7 +16,7 @@ const ProgressIndicator: FC<Props> = ({
   infoIcon = 'info',
   buttonCallback = false,
 }): ReactElement => {
-  const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.sm));
+  const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.sm)) || false;
   const isFirstStep = currentStep === 1;
   const noCloseAndBack = !closeCallback && !backCallback;
   const noButtons = noCloseAndBack && !infoCallback;
@@ -49,12 +49,9 @@ const ProgressIndicator: FC<Props> = ({
             (!backCallback && !isFirstStep && !noBackButton) ||
             noCloseAndBack
           }
+          $isMobile={isMobile}
         >
-          {isFirstStep || noBackButton ? (
-            <Icon.Cross16 color="currentColor" />
-          ) : (
-            <Icon.ChevronLeft16 color="currentColor" />
-          )}
+          {isFirstStep || noBackButton ? <Icon.Cross16 /> : <Icon.ChevronLeft16 />}
         </StyledButton>
 
         <Flexbox
@@ -78,12 +75,9 @@ const ProgressIndicator: FC<Props> = ({
             onClick={() => infoCallback()}
             $visible={!!infoCallback}
             $hide={noButtons || (buttonCallback && !isMobile)}
+            $isMobile={isMobile}
           >
-            {infoIcon === 'info' ? (
-              <Icon.Information16 color="currentColor" />
-            ) : (
-              <Icon.Help16 color="currentColor" />
-            )}
+            {infoIcon === 'info' ? <Icon.Information16 /> : <Icon.Help16 />}
           </StyledButton>
         ) : (
           buttonCallback && isMobile && infoCallback
