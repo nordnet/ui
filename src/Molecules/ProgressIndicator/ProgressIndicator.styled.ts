@@ -36,6 +36,7 @@ export const StyledButton = styled(Button.Icon)<{
   background-color: ${(p) =>
     p.$isMobile ? p.theme.color.pillButtonBackgroundTertiary : 'transparent'};
   min-height: ${(p) => !p.$isMobile && '16px'};
+  width: ${(p) => !p.$isMobile && '16px'};
   height: ${(p) => !p.$isMobile && '16px'};
   padding: ${(p) => !p.$isMobile && '0'};
 
