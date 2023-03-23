@@ -34,14 +34,14 @@ export const StyledButton = styled(Button.Icon)<{
   display: ${(p) => (p.$hide ? 'none' : 'flex')};
   visibility: ${(p) => (p.$visible ? 'visible' : 'hidden')};
   background-color: ${(p) =>
-    p.$isMobile ? p.theme.color.progressIndicatorBarEmpty : 'transparent'};
+    p.$isMobile ? p.theme.color.pillButtonBackgroundTertiary : 'transparent'};
   min-height: ${(p) => !p.$isMobile && '16px'};
   height: ${(p) => !p.$isMobile && '16px'};
   padding: ${(p) => !p.$isMobile && '0'};
 
   &:hover {
     background-color: ${(p) =>
-      p.$isMobile ? p.theme.color.progressIndicatorBarEmpty : 'transparent'};
+      p.$isMobile ? p.theme.color.pillButtonBackgroundTertiary : 'transparent'};
   }
 `;
 
