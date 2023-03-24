@@ -1,3 +1,10 @@
+# [12.23.0](https://github.com/nordnet/ui/compare/v12.22.0...v12.23.0) (2023-03-24)
+
+
+### Features
+
+* 🎸 minor cta alignment in progress inducator ([a92b7a4](https://github.com/nordnet/ui/commit/a92b7a4))
+
 # [12.22.0](https://github.com/nordnet/ui/compare/v12.21.0...v12.22.0) (2023-03-23)
 
 
