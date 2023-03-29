@@ -20,6 +20,8 @@ type Step = {
   backdropPadding?: string | number;
   px?: string | number;
   py?: string | number;
+  prevText?: string;
+  nextText?: string;
 };
 
 export type Props = {
@@ -31,10 +33,13 @@ export type Props = {
   prevText?: string;
   nextText?: string;
   doneText?: string;
+  closeText?: string;
   multiStepIndicatorText?: string;
   closeOnClickOutside?: boolean;
   barColor?: ColorFn;
   bottomSheet?: boolean;
+  closeButton?: boolean;
+  hidePreviousButton?: boolean;
 };
 
 export type Component = React.FC<Props>;
