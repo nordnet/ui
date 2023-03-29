@@ -1,3 +1,10 @@
+## [12.23.1](https://github.com/nordnet/ui/compare/v12.23.0...v12.23.1) (2023-03-29)
+
+
+### Bug Fixes
+
+* add some props to make feedback widget possible ([76170f4](https://github.com/nordnet/ui/commit/76170f4))
+
 # [12.23.0](https://github.com/nordnet/ui/compare/v12.22.0...v12.23.0) (2023-03-24)
 
 
