@@ -26,13 +26,16 @@ export const CoachMarks: Component = ({
   onDone,
   onNext,
   onPrev,
-  prevText = 'Previous',
-  nextText = 'Next',
+  prevText: prevTextFromProps = 'Previous',
+  nextText: nextTextFromProps = 'Next',
+  closeText = 'Close',
   doneText = 'Done',
   multiStepIndicatorText = 'of',
   closeOnClickOutside = true,
   barColor,
   bottomSheet = false,
+  closeButton = false,
+  hidePreviousButton = false,
 }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
@@ -48,6 +51,8 @@ export const CoachMarks: Component = ({
     backdropPadding,
     px,
     py,
+    prevText = prevTextFromProps,
+    nextText = nextTextFromProps,
   } = steps[currentStep];
 
   const [popperElement, setPopperElement] = useState<HTMLElement | null>(null);
@@ -71,7 +76,7 @@ export const CoachMarks: Component = ({
   const internalCoachMarkRef = useRef<HTMLDivElement>(null);
   const windowSize = useWindowSize();
   const hasMultipleSteps = steps.length > 1;
-  const hasPrevStep = currentStep > 0;
+  const hasPrevStep = currentStep > 0 && !hidePreviousButton;
   const hasNextStep = currentStep + 1 < steps.length;
   const path = referenceElementRect
     ? makeBackdropPath(referenceElementRect, Number(highlightBoxPadding), isCircular, px, py)
@@ -143,7 +148,7 @@ export const CoachMarks: Component = ({
                 {icon && <IconFlex item>{icon}</IconFlex>}
                 {title && (
                   <Flexbox item>
-                    <TitleWrapper $hasIcon={Boolean(icon)}>
+                    <TitleWrapper $hasIcon={Boolean(icon) || closeButton}>
                       <Typography as="h2" type="primary" weight="bold">
                         {title}
                       </Typography>
@@ -167,12 +172,20 @@ export const CoachMarks: Component = ({
             )}
 
             <FooterFlex container item alignItems="baseline" gutter={5}>
-              {hasMultipleSteps && (
+              {closeButton ? (
                 <Flexbox item>
-                  <Typography type="secondary" color={(t) => t.color.bubbleSecondaryText}>
-                    {`${currentStep + 1} ${multiStepIndicatorText} ${steps.length}`}
-                  </Typography>
+                  <Button variant="neutral" color={t => t.color.link} onClick={onClose}>
+                    {closeText}
+                  </Button>
                 </Flexbox>
+              ) : (
+                hasMultipleSteps && (
+                  <Flexbox item>
+                    <Typography type="secondary" color={t => t.color.bubbleSecondaryText}>
+                      {`${currentStep + 1} ${multiStepIndicatorText} ${steps.length}`}
+                    </Typography>
+                  </Flexbox>
+                )
               )}
               <NavigationButtonsContainer container gutter={1} $hasSingleButton={!hasPrevStep}>
                 {hasPrevStep && (
@@ -196,9 +209,11 @@ export const CoachMarks: Component = ({
               </NavigationButtonsContainer>
             </FooterFlex>
           </Flexbox>
-          <CloseButton variant="neutral" onClick={handleClose}>
-            <Icon.Cross16 />
-          </CloseButton>
+          {!closeButton && (
+            <CloseButton variant="neutral" onClick={handleClose}>
+              <Icon.Cross16 />
+            </CloseButton>
+          )}
         </Bubble>
         <SVG>
           <path d={path} />
