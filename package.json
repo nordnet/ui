@@ -60,6 +60,7 @@
     "@popperjs/core": "^2.11.6",
     "@xstate/react": "^0.7.1",
     "color": "^4.0.1",
+    "copy-to-clipboard": "^3.3.3",
     "date-fns": "^2.23.0",
     "framer-motion": "^7.6.5",
     "ramda": "^0.27.1",

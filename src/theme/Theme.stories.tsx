@@ -1,8 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
+import copy from 'copy-to-clipboard';
 import { propOr } from 'ramda';
-import { Box, createTheme, Flexbox, Table, Tbody, Td, Th, Thead, theme, Tr, Typography } from '..';
+import {
+  Box,
+  Button,
+  createTheme,
+  Flexbox,
+  Icon,
+  Table,
+  Tbody,
+  Td,
+  Th,
+  Thead,
+  theme,
+  Tr,
+  Typography,
+} from '..';
 import defaultColors from './defaultColors';
 import accessabilityColors from './accessabilityColors';
 import colorDocs from './Colors.md';
@@ -14,12 +29,32 @@ const Color = styled.div<{ $color: string }>`
   border: 1px solid #eee;
 `;
 
+const TokenColor = styled.div<{ $color: string }>`
+  width: 80%;
+  height: ${(p) => p.theme.spacing.unit(14)}px;
+  background-color: ${(p) => p.$color};
+  border-radius: 6px;
+`;
+
 const ColorInArray = styled.div<{ $color: string }>`
   width: ${(p) => p.theme.spacing.unit(4)}px;
   height: ${(p) => p.theme.spacing.unit(4)}px;
   padding: 0;
   background-color: ${(p) => p.$color};
   border: 1px solid #eee;
+`;
+
+const StyledFlexbox = styled(Flexbox)`
+  background: #fae8d4;
+  border-radius: 6px;
+  max-width: fit-content;
+  padding: 4px 8px;
+`;
+
+const StyledButton = styled(Button)`
+  &:hover {
+    color: ${(p) => p.theme.color.cta};
+  }
 `;
 
 function flattenObject(obj) {
@@ -127,9 +162,16 @@ export const designTokensColors = () => {
         {Object.keys(flattenedColorTokens)?.map((title) => (
           <Tr key={`theme-${title}`}>
             <Td>
-              <Color $color={flattenedColorTokens[title]} />
+              <TokenColor $color={flattenedColorTokens[title]} />
             </Td>
-            <Td>{title}</Td>
+            <Td>
+              <StyledFlexbox container alignItems="center" gap={2}>
+                {title}
+                <StyledButton variant="neutral" onClick={() => copy(title)}>
+                  <Icon.Copy16 color="inherit" />
+                </StyledButton>
+              </StyledFlexbox>
+            </Td>
             <Td>{flattenedColorTokens[title]}</Td>
           </Tr>
         ))}
