@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components';
 import { ScrollStyleProps } from './Tabs.types';
-
 import NormalizedElements from '../../common/NormalizedElements/index';
 import { Flexbox, Separator } from '../..';
 
@@ -33,6 +32,7 @@ export const StyledFlexbox = styled(Flexbox)<ScrollStyleProps>`
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
+  ${(p) => (p.$animatedUnderline ? 'position: relative;' : '')}
   ${scrollStyles}
 `;
 

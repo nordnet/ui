@@ -14,6 +14,7 @@ export type TitleProps = {
   onKeyDown: (e: React.KeyboardEvent) => void;
   height?: number;
   variant?: 'normal' | 'large';
+  hideActiveUnderline?: boolean;
   children?: React.ReactNode;
 };
 
@@ -29,6 +30,7 @@ export type ContainerProps = {
   fullWidthSeparator?: boolean;
   height?: number;
   variant?: 'normal' | 'large';
+  animatedUnderline?: boolean;
   scrollOptions?: {
     active: boolean;
     scrollBarHidden: boolean;
@@ -41,6 +43,7 @@ export type ScrollStyleProps = {
   $scrollOptions: { active: boolean; scrollBarHidden: boolean; scrollFade?: boolean };
   $intersectionLeftRatio?: number;
   $intersectionRightRatio?: number;
+  $animatedUnderline?: boolean;
 };
 
 export type ItemComponent = React.FC<ItemProps>;

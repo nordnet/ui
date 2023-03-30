@@ -1,7 +1,9 @@
 import React, { useCallback, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { StyledButton, StyledFlexbox, StyledSeparator, StyledUl } from './Tabs.styles';
+import AnimatedUnderline from './AnimatedUnderline';
 import { ContainerComponent, ItemProps, TitleComponent } from './Tabs.types';
+import { Props as FlexProps } from '../../Atoms/Flexbox/Flexbox.types';
 import { useIntersect } from '../../common/Hooks';
 import { Flexbox, TabTitle, Typography } from '../..';
 
@@ -28,6 +30,7 @@ const Title: TitleComponent = ({
   setRef,
   height,
   variant,
+  hideActiveUnderline = false,
 }) => {
   const active = activeFromProps;
 
@@ -44,7 +47,12 @@ const Title: TitleComponent = ({
         tabIndex={active ? 0 : -1}
         $active={active}
       >
-        <TabTitle active={active} height={height} variant={variant}>
+        <TabTitle
+          active={active}
+          height={height}
+          variant={variant}
+          hideActiveUnderline={hideActiveUnderline}
+        >
           {children}
         </TabTitle>
       </StyledButton>
@@ -92,6 +100,7 @@ export const Tabs: ContainerComponent & {
   initialActiveTabIndex = 0,
   scrollOptions = DEFAULT_SCROLL_OPTIONS,
   variant = 'normal',
+  animatedUnderline = true,
 }) => {
   // eslint-disable-next-line prefer-const
   let [active, setActive] = useState(initialActiveTabIndex);
@@ -100,9 +109,26 @@ export const Tabs: ContainerComponent & {
   const [, intersectionLeftRatio] = useIntersect<HTMLDivElement>();
   const [, intersectionRightRatio] = useIntersect<HTMLDivElement>();
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [underlineState, setUnderlineState] = useState<{ left: number; width: number }>();
+
+  const adjustUnderline = useCallback(
+    (ref: any) => {
+      if (ref && animatedUnderline) {
+        const left = ref.offsetLeft;
+        const { width } = ref.getBoundingClientRect();
+        setTimeout(() => {
+          if (width) {
+            setUnderlineState({ left, width });
+          }
+        }, 0);
+      }
+    },
+    [animatedUnderline],
+  );
 
   const scrollToRefCallback = useCallback(
     (ref: any) => {
+      adjustUnderline(ref);
       if (ref && scrollRef && scrollRef.current && scrollOptions.active) {
         const offsetleft = ref.offsetLeft;
         const { width: tabWidth } = ref.getBoundingClientRect();
@@ -118,7 +144,7 @@ export const Tabs: ContainerComponent & {
         }, 0);
       }
     },
-    [scrollOptions.active],
+    [scrollOptions.active, adjustUnderline],
   );
 
   if (isControlled) active = activeTabIndex!;
@@ -159,6 +185,7 @@ export const Tabs: ContainerComponent & {
             setRef={setRef(i)}
             height={height}
             variant={variant}
+            hideActiveUnderline={animatedUnderline && !!underlineState}
           >
             {c.props.title}
           </Title>
@@ -180,6 +207,11 @@ export const Tabs: ContainerComponent & {
     }
   });
 
+  const flexProps: FlexProps = {
+    gutter: 4,
+    sm: { gutter: variant === 'large' ? 8 : 4 },
+  };
+
   return (
     <>
       <StyledFlexbox
@@ -190,17 +222,13 @@ export const Tabs: ContainerComponent & {
         $scrollOptions={scrollOptions}
         $intersectionLeftRatio={intersectionLeftRatio || 0}
         $intersectionRightRatio={intersectionRightRatio || 0}
+        $animatedUnderline={animatedUnderline}
         ref={scrollRef}
       >
-        <Flexbox
-          container
-          direction="row"
-          gutter={4}
-          sm={{ gutter: variant === 'large' ? 8 : 4 }}
-          as={StyledUl}
-        >
+        <Flexbox container direction="row" {...flexProps} as={StyledUl}>
           {titles}
         </Flexbox>
+        {animatedUnderline && <AnimatedUnderline {...underlineState} flexProps={flexProps} />}
       </StyledFlexbox>
       <StyledSeparator fullWidth={fullWidthSeparator} />
       {contents}

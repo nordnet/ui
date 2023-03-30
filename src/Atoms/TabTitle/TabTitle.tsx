@@ -9,7 +9,7 @@ const StyledTitle = styled.span<Props>`
   align-items: center;
   font-size: ${(props) => (props.variant === 'large' ? '16px' : '14px')};
   ${(props) => {
-    if (props.active) {
+    if (props.active && !props.hideActiveUnderline) {
       return `
         &::after {
           content: '';
@@ -33,9 +33,15 @@ export const TabTitle: React.FC<Props> = ({
   height = 8,
   children,
   variant = 'normal',
+  hideActiveUnderline = false,
 }) => {
   return (
-    <StyledTitle active={active} height={height} variant={variant}>
+    <StyledTitle
+      active={active}
+      height={height}
+      variant={variant}
+      hideActiveUnderline={hideActiveUnderline}
+    >
       {children}
     </StyledTitle>
   );
