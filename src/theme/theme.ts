@@ -1,4 +1,8 @@
 import { filter, mapObjIndexed, pipe, prop as Rprop, values } from 'ramda';
+import lightTheme from '@nordnet/design-tokens';
+import darkTheme from '@nordnet/design-tokens/dist/js/darkTheme';
+import a11yTheme from '@nordnet/design-tokens/dist/js/accessibilityTheme';
+
 import { assert, deprecate, isNumber } from '../common/utils';
 import { Theme, ThemeColorsVersion, ThemeConfig } from './theme.types';
 import { createLightColors, getColorLightScheme } from './createLightColors';
@@ -52,8 +56,15 @@ const getSizesValues = pipe(
   filter(Boolean),
 );
 
+const getColorToken = (theme: ThemeConfig['tokensTheme']) => {
+  if (theme === 'dark') return darkTheme;
+  if (theme === 'light') return lightTheme;
+  if (theme === 'a11y') return a11yTheme;
+  return lightTheme;
+};
+
 export const createTheme = (config: ThemeConfig = {}): Theme => {
-  const { a11yColors = false, darkColors = false } = config;
+  const { a11yColors = false, darkColors = false, tokensTheme = 'light' } = config;
   const type: ThemeColorsVersion = a11yColors ? 'a11y' : 'default';
   const color = darkColors
     ? createDarkColors(getColorDarkScheme(type))
@@ -80,6 +91,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     },
     breakpoints,
     color,
+    colorToken: getColorToken(tokensTheme).color,
     lightColor: createLightColors(getColorLightScheme(type)),
     darkColor: createDarkColors(getColorDarkScheme(type)),
     isHighContrastMode: a11yColors,

@@ -22,20 +22,56 @@ const ColorInArray = styled.div<{ $color: string }>`
   border: 1px solid #eee;
 `;
 
-const colorWithValue = (color: string | string[]) =>
-  typeof color === 'string' ? (
-    <>
-      <Color $color={color} />
-      <>{color}</>
-    </>
-  ) : (
-    color?.map((c: string) => (
-      <Flexbox key={c} container gutter={1}>
-        <ColorInArray $color={c} />
-        <>{c}</>
+function flattenObject(obj) {
+  const flattened = {};
+
+  Object.keys(obj).forEach((key) => {
+    if (typeof obj[key] === 'object' && obj[key] !== null) {
+      const nested = flattenObject(obj[key]);
+      Object.keys(nested).forEach((nestedKey) => {
+        flattened[`${key}.${nestedKey}`] = nested[nestedKey];
+      });
+    } else {
+      flattened[key] = obj[key];
+    }
+  });
+
+  return flattened;
+}
+
+const colorWithValue = (color: string | string[]) => {
+  if (typeof color === 'string') {
+    return (
+      <>
+        <Color $color={color} />
+        <>{color}</>
+      </>
+    );
+  }
+  if (!Array.isArray(color) && typeof color !== 'string') {
+    return getColor(color);
+  }
+  return color?.map((c: string) => (
+    <Flexbox key={c} container gutter={1}>
+      <ColorInArray $color={c} />
+      <>{c}</>
+    </Flexbox>
+  ));
+};
+
+const getColor = (colors) => {
+  return Object.keys(colors).map((colorName) => {
+    return (
+      <Flexbox key={`${colors[colorName]}_${colorName}`} container gutter={2} alignItems="center">
+        <Color $color={colors[colorName]} />
+        <Flexbox container direction="column">
+          <Typography>{colorName}</Typography>
+          <Typography>{colors[colorName]}</Typography>
+        </Flexbox>
       </Flexbox>
-    ))
-  );
+    );
+  });
+};
 
 export default {
   title: 'Others / Theme',
@@ -71,7 +107,94 @@ export const colorsSemantic = () => {
 };
 
 colorsSemantic.story = {
-  name: 'Colors (semantic)',
+  name: 'Colors (semantic) deprecated',
+};
+
+export const designTokensColors = () => {
+  const { colorToken } = createTheme();
+  const flattenedColorTokens = flattenObject(colorToken);
+
+  return (
+    <Table>
+      <Thead>
+        <Tr>
+          <Th>Color</Th>
+          <Th>Token name</Th>
+          <Th>Value</Th>
+        </Tr>
+      </Thead>
+      <Tbody>
+        {Object.keys(flattenedColorTokens)?.map((title) => (
+          <Tr key={`theme-${title}`}>
+            <Td>
+              <Color $color={flattenedColorTokens[title]} />
+            </Td>
+            <Td>{title}</Td>
+            <Td>{flattenedColorTokens[title]}</Td>
+          </Tr>
+        ))}
+      </Tbody>
+    </Table>
+  );
+};
+export const designTokensA11yColors = () => {
+  const { colorToken } = createTheme({ tokensTheme: 'a11y' });
+  const flattenedColorTokens = flattenObject(colorToken);
+
+  return (
+    <Table>
+      <Thead>
+        <Tr>
+          <Th>Color</Th>
+          <Th>Token name</Th>
+          <Th>Value</Th>
+        </Tr>
+      </Thead>
+      <Tbody>
+        {Object.keys(flattenedColorTokens)?.map((title) => (
+          <Tr key={`theme-${title}`}>
+            <Td>
+              <Color $color={flattenedColorTokens[title]} />
+            </Td>
+            <Td>{title}</Td>
+            <Td>{flattenedColorTokens[title]}</Td>
+          </Tr>
+        ))}
+      </Tbody>
+    </Table>
+  );
+};
+
+designTokensA11yColors.story = {
+  name: 'Design Tokens a11y Colors',
+};
+
+export const designTokensDarkColors = () => {
+  const { colorToken } = createTheme({ tokensTheme: 'dark' });
+  const flattenedColorTokens = flattenObject(colorToken);
+
+  return (
+    <Table>
+      <Thead>
+        <Tr>
+          <Th>Color</Th>
+          <Th>Token name</Th>
+          <Th>Value</Th>
+        </Tr>
+      </Thead>
+      <Tbody>
+        {Object.keys(flattenedColorTokens)?.map((title) => (
+          <Tr key={`theme-${title}`}>
+            <Td>
+              <Color $color={flattenedColorTokens[title]} />
+            </Td>
+            <Td>{title}</Td>
+            <Td>{flattenedColorTokens[title]}</Td>
+          </Tr>
+        ))}
+      </Tbody>
+    </Table>
+  );
 };
 
 export const lightColors = () => {

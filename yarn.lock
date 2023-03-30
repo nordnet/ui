@@ -2814,6 +2814,11 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
+"@nordnet/design-tokens@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@nordnet/design-tokens/-/design-tokens-1.2.2.tgz#400235f30e4d5154829a1bdf6c66fdd3c7ad31a9"
+  integrity sha512-3+gdfkB98RkOM+ii10EzW0iPWEqYuMeotBPW+D9YLzjk4RjP8H4Li/nVIlbWeHT/Zzd6XXyjvcrzHPW59Z4DmQ==
+
 "@npmcli/arborist@^2.3.0", "@npmcli/arborist@^2.5.0", "@npmcli/arborist@^2.9.0":
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/@npmcli/arborist/-/arborist-2.10.0.tgz#424c2d73a7ae59c960b0cc7f74fed043e4316c2c"

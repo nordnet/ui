@@ -3,6 +3,7 @@ export type MediaQuery = string;
 export type ThemeConfig = {
   a11yColors?: boolean;
   darkColors?: boolean;
+  tokensTheme?: 'dark' | 'light' | 'a11y';
 };
 type Unit = {
   (times: number): number;
@@ -923,6 +924,7 @@ export type ColorSets = {
 
 export type Theme = {
   color: ThemeColors;
+  colorToken: any;
   lightColor: ThemeColors;
   darkColor: ThemeColors;
   spacing: {
