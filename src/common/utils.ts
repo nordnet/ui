@@ -113,3 +113,20 @@ export const secondsToTimeString = (seconds: number) => {
   const s = Math.round(seconds % 60);
   return [h, m > 9 ? m : `0${m}`, s > 9 ? s : `0${s}`].filter(Boolean).join(':');
 };
+
+export const flattenObject = (obj: Record<string, string> | string) => {
+  const flattened = {};
+
+  Object.keys(obj).forEach((key) => {
+    if (typeof obj[key] === 'object' && obj[key] !== null) {
+      const nested = flattenObject(obj[key]);
+      Object.keys(nested).forEach((nestedKey) => {
+        flattened[`${key}.${nestedKey}`] = nested[nestedKey];
+      });
+    } else {
+      flattened[key] = obj[key];
+    }
+  });
+
+  return flattened;
+};

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
 import copy from 'copy-to-clipboard';
@@ -15,12 +15,14 @@ import {
   Th,
   Thead,
   theme,
+  Tooltip,
   Tr,
   Typography,
 } from '..';
 import defaultColors from './defaultColors';
 import accessabilityColors from './accessabilityColors';
 import colorDocs from './Colors.md';
+import { flattenObject } from '../common/utils';
 
 const Color = styled.div<{ $color: string }>`
   width: ${(p) => p.theme.spacing.unit(14)}px;
@@ -30,10 +32,11 @@ const Color = styled.div<{ $color: string }>`
 `;
 
 const TokenColor = styled.div<{ $color: string }>`
-  width: 80%;
-  height: ${(p) => p.theme.spacing.unit(14)}px;
+  width: 60%;
+  height: ${(p) => p.theme.spacing.unit(16)}px;
   background-color: ${(p) => p.$color};
   border-radius: 6px;
+  margin-left: 20px;
 `;
 
 const ColorInArray = styled.div<{ $color: string }>`
@@ -57,23 +60,6 @@ const StyledButton = styled(Button)`
   }
 `;
 
-function flattenObject(obj) {
-  const flattened = {};
-
-  Object.keys(obj).forEach((key) => {
-    if (typeof obj[key] === 'object' && obj[key] !== null) {
-      const nested = flattenObject(obj[key]);
-      Object.keys(nested).forEach((nestedKey) => {
-        flattened[`${key}.${nestedKey}`] = nested[nestedKey];
-      });
-    } else {
-      flattened[key] = obj[key];
-    }
-  });
-
-  return flattened;
-}
-
 const colorWithValue = (color: string | string[]) => {
   if (typeof color === 'string') {
     return (
@@ -83,9 +69,11 @@ const colorWithValue = (color: string | string[]) => {
       </>
     );
   }
+  // don't display anything if color is coming from color tokens
   if (!Array.isArray(color) && typeof color !== 'string') {
-    return getColor(color);
+    return null;
   }
+
   return color?.map((c: string) => (
     <Flexbox key={c} container gutter={1}>
       <ColorInArray $color={c} />
@@ -94,18 +82,23 @@ const colorWithValue = (color: string | string[]) => {
   ));
 };
 
-const getColor = (colors) => {
-  return Object.keys(colors).map((colorName) => {
-    return (
-      <Flexbox key={`${colors[colorName]}_${colorName}`} container gutter={2} alignItems="center">
-        <Color $color={colors[colorName]} />
-        <Flexbox container direction="column">
-          <Typography>{colorName}</Typography>
-          <Typography>{colors[colorName]}</Typography>
-        </Flexbox>
-      </Flexbox>
-    );
-  });
+const TokenName = ({ title }: { title: string }) => {
+  const [label, setLabel] = useState('Copy to clipboard');
+
+  const copyTokenName = (tokenName: string) => {
+    copy(tokenName);
+    setLabel('Copied!');
+  };
+  return (
+    <StyledFlexbox container alignItems="center" gap={2}>
+      {title}
+      <Tooltip label={label} position="right" invertedColors>
+        <StyledButton variant="neutral" onClick={() => copyTokenName(title)}>
+          <Icon.Copy16 color="inherit" />
+        </StyledButton>
+      </Tooltip>
+    </StyledFlexbox>
+  );
 };
 
 export default {
@@ -153,7 +146,9 @@ export const designTokensColors = () => {
     <Table>
       <Thead>
         <Tr>
-          <Th>Color</Th>
+          <Th>
+            <Box ml={5}>Color</Box>
+          </Th>
           <Th>Token name</Th>
           <Th>Value</Th>
         </Tr>
@@ -165,12 +160,7 @@ export const designTokensColors = () => {
               <TokenColor $color={flattenedColorTokens[title]} />
             </Td>
             <Td>
-              <StyledFlexbox container alignItems="center" gap={2}>
-                {title}
-                <StyledButton variant="neutral" onClick={() => copy(title)}>
-                  <Icon.Copy16 color="inherit" />
-                </StyledButton>
-              </StyledFlexbox>
+              <TokenName title={title} />
             </Td>
             <Td>{flattenedColorTokens[title]}</Td>
           </Tr>
@@ -187,7 +177,9 @@ export const designTokensA11yColors = () => {
     <Table>
       <Thead>
         <Tr>
-          <Th>Color</Th>
+          <Th>
+            <Box ml={5}>Color</Box>
+          </Th>
           <Th>Token name</Th>
           <Th>Value</Th>
         </Tr>
@@ -196,9 +188,11 @@ export const designTokensA11yColors = () => {
         {Object.keys(flattenedColorTokens)?.map((title) => (
           <Tr key={`theme-${title}`}>
             <Td>
-              <Color $color={flattenedColorTokens[title]} />
+              <TokenColor $color={flattenedColorTokens[title]} />
             </Td>
-            <Td>{title}</Td>
+            <Td>
+              <TokenName title={title} />
+            </Td>
             <Td>{flattenedColorTokens[title]}</Td>
           </Tr>
         ))}
@@ -219,7 +213,9 @@ export const designTokensDarkColors = () => {
     <Table>
       <Thead>
         <Tr>
-          <Th>Color</Th>
+          <Th>
+            <Box ml={5}>Color</Box>
+          </Th>
           <Th>Token name</Th>
           <Th>Value</Th>
         </Tr>
@@ -228,9 +224,11 @@ export const designTokensDarkColors = () => {
         {Object.keys(flattenedColorTokens)?.map((title) => (
           <Tr key={`theme-${title}`}>
             <Td>
-              <Color $color={flattenedColorTokens[title]} />
+              <TokenColor $color={flattenedColorTokens[title]} />
             </Td>
-            <Td>{title}</Td>
+            <Td>
+              <TokenName title={title} />
+            </Td>
             <Td>{flattenedColorTokens[title]}</Td>
           </Tr>
         ))}
