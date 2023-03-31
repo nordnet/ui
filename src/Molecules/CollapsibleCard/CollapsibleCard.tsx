@@ -121,6 +121,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
       <CardHeaderTop />
       <motion.div
         ref={collapsibleRef}
+        style={{ overflow: 'hidden' }}
         animate={{
           height,
         }}
