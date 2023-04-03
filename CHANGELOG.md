@@ -1,3 +1,11 @@
+## [12.23.2](https://github.com/nordnet/ui/compare/v12.23.1...v12.23.2) (2023-04-03)
+
+
+### Bug Fixes
+
+* add overflow hidden ([5d549d8](https://github.com/nordnet/ui/commit/5d549d8))
+* use framer motion for collapsible transition ([58e030a](https://github.com/nordnet/ui/commit/58e030a))
+
 ## [12.23.1](https://github.com/nordnet/ui/compare/v12.23.0...v12.23.1) (2023-03-29)
 
 
