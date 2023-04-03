@@ -22,6 +22,7 @@ import cross from './cross';
 import crossCircle from './crossCircle';
 import crossCircleFill from './crossCircleFill';
 import dot from './dot';
+import download from './download';
 import edit from './edit';
 import exportIcon from './exportIcon';
 import externalLink from './externalLink';
@@ -84,6 +85,7 @@ export default {
   ...crossCircle,
   ...crossCircleFill,
   ...dot,
+  ...download,
   ...edit,
   ...exportIcon,
   ...externalLink,
