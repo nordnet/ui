@@ -6,7 +6,7 @@ import { useSafeLayoutEffect } from '../../common/Hooks';
 import { isElement, isFunction } from '../../common/utils';
 import { CollapsibleProps, IndicatorsProps } from './Collapsible.types';
 
-const StyledButton = styled.button<IndicatorsProps>`
+const StyledButton = styled.div<IndicatorsProps>`
   touch-action: none;
   position: relative;
   background: none;
@@ -14,6 +14,7 @@ const StyledButton = styled.button<IndicatorsProps>`
   display: block;
   width: 100%;
   border: 0;
+  box-sizing: border-box;
   padding: ${(p) => {
     const py = p.theme.spacing.unit(p.$py);
     const px = p.theme.spacing.unit(p.$px);
@@ -80,7 +81,6 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
 
   const CollapseButton = (
     <StyledButton
-      type="button"
       {...{ [hasOnTouch ? 'onTouchStart' : 'onClick']: toggle }}
       $collapsed={collapsed}
       $noIndicator={noIndicator}
@@ -121,6 +121,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
       <CardHeaderTop />
       <motion.div
         ref={collapsibleRef}
+        initial={!collapsedInitial}
         style={{ overflow: 'hidden' }}
         animate={{
           height,
