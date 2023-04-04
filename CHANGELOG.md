@@ -1,3 +1,10 @@
+# [12.24.0](https://github.com/nordnet/ui/compare/v12.23.2...v12.24.0) (2023-04-04)
+
+
+### Features
+
+* 🎸 Add Download icon ([#1336](https://github.com/nordnet/ui/issues/1336)) ([1075d71](https://github.com/nordnet/ui/commit/1075d71))
+
 ## [12.23.2](https://github.com/nordnet/ui/compare/v12.23.1...v12.23.2) (2023-04-03)
 
 
