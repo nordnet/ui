@@ -1,3 +1,10 @@
+## [12.24.1](https://github.com/nordnet/ui/compare/v12.24.0...v12.24.1) (2023-04-04)
+
+
+### Bug Fixes
+
+* remove button nesting, toggle initial animation ([0d55368](https://github.com/nordnet/ui/commit/0d55368))
+
 # [12.24.0](https://github.com/nordnet/ui/compare/v12.23.2...v12.24.0) (2023-04-04)
 
 
