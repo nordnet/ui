@@ -14,7 +14,7 @@ const breakpoints: Theme['breakpoints'] = {
     offset: 6,
   },
   md: {
-    size: 992,
+    size: 979,
     offset: 6,
   },
   lg: {
@@ -30,7 +30,7 @@ const breakpoints: Theme['breakpoints'] = {
 const size: Theme['size'] = {
   xs: 360,
   sm: 768,
-  md: 992,
+  md: 979,
   lg: 1280,
   xl: 1680,
 };
