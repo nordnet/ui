@@ -1,3 +1,10 @@
+# [13.0.0-beta.8](https://github.com/nordnet/ui/compare/v13.0.0-beta.7...v13.0.0-beta.8) (2023-04-04)
+
+
+### Features
+
+* 🎸 show correct desktop view ([910eb7f](https://github.com/nordnet/ui/commit/910eb7f))
+
 # [13.0.0-beta.7](https://github.com/nordnet/ui/compare/v13.0.0-beta.6...v13.0.0-beta.7) (2023-03-13)
 
 
