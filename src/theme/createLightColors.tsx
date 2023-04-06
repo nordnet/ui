@@ -1,5 +1,4 @@
 import Color from 'color';
-
 import accessabilityColors from './accessabilityColors';
 import defaultColors from './defaultColors';
 import { RawColors, ThemeColors, ThemeColorsVersion } from './theme.types';

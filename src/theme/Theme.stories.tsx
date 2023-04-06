@@ -36,7 +36,7 @@ const TokenColor = styled.div<{ $color: string }>`
   height: ${(p) => p.theme.spacing.unit(16)}px;
   background-color: ${(p) => p.$color};
   border-radius: 6px;
-  margin-left: 20px;
+  margin-left: ${(p) => p.theme.spacing.unit(5)}px;
 `;
 
 const ColorInArray = styled.div<{ $color: string }>`
@@ -48,41 +48,34 @@ const ColorInArray = styled.div<{ $color: string }>`
 `;
 
 const StyledFlexbox = styled(Flexbox)`
-  background: ${(p) => p.theme.colorToken.accent.background_default};
-  color: ${(p) => p.theme.colorToken.neutral.text_strong};
+  background: ${(p) => p.theme.colorTokens.accent.background_default};
+  color: ${(p) => p.theme.colorTokens.neutral.text_strong};
   border-radius: 6px;
   max-width: fit-content;
-  padding: 4px 8px;
+  padding: ${(p) => p.theme.spacing.unit(1)}px ${(p) => p.theme.spacing.unit(2)}px;
 `;
 
 const StyledButton = styled(Button)`
-  color: ${(p) => p.theme.colorToken.neutral.text_strong};
+  color: inherit;
   &:hover {
-    color: ${(p) => p.theme.colorToken.accent.background_strong};
+    color: ${(p) => p.theme.colorTokens.accent.background_strong};
   }
 `;
 
-const colorWithValue = (color: string | string[]) => {
-  if (typeof color === 'string') {
-    return (
-      <>
-        <Color $color={color} />
-        <>{color}</>
-      </>
-    );
-  }
-  // don't display anything if color is coming from color tokens
-  if (!Array.isArray(color) && typeof color !== 'string') {
-    return null;
-  }
-
-  return color?.map((c: string) => (
-    <Flexbox key={c} container gutter={1}>
-      <ColorInArray $color={c} />
-      <>{c}</>
-    </Flexbox>
-  ));
-};
+const colorWithValue = (color: string | string[]) =>
+  typeof color === 'string' ? (
+    <>
+      <Color $color={color} />
+      <>{color}</>
+    </>
+  ) : (
+    color?.map((c: string) => (
+      <Flexbox key={c} container gutter={1}>
+        <ColorInArray $color={c} />
+        <>{c}</>
+      </Flexbox>
+    ))
+  );
 
 const TokenName = ({ title }: { title: string }) => {
   const [label, setLabel] = useState('Copy to clipboard');
@@ -91,6 +84,7 @@ const TokenName = ({ title }: { title: string }) => {
     copy(tokenName);
     setLabel('Copied!');
   };
+
   return (
     <StyledFlexbox container alignItems="center" gap={2}>
       {title}
@@ -140,9 +134,9 @@ colorsSemantic.story = {
   name: 'Colors (semantic) deprecated',
 };
 
-export const designTokensColors = () => {
-  const { colorToken } = createTheme();
-  const flattenedColorTokens = flattenObject(colorToken);
+export const designTokensLightColors = () => {
+  const { colorTokens } = createTheme();
+  const flattenedColorTokens = flattenObject(colorTokens);
 
   return (
     <Table>
@@ -157,7 +151,7 @@ export const designTokensColors = () => {
       </Thead>
       <Tbody>
         {Object.keys(flattenedColorTokens)?.map((title) => (
-          <Tr key={`theme-${title}`}>
+          <Tr key={title}>
             <Td>
               <TokenColor $color={flattenedColorTokens[title]} />
             </Td>
@@ -171,9 +165,10 @@ export const designTokensColors = () => {
     </Table>
   );
 };
+
 export const designTokensA11yColors = () => {
-  const { colorToken } = createTheme({ tokensTheme: 'a11y' });
-  const flattenedColorTokens = flattenObject(colorToken);
+  const { colorTokens } = createTheme({ tokensTheme: 'a11y' });
+  const flattenedColorTokens = flattenObject(colorTokens);
 
   return (
     <Table>
@@ -188,7 +183,7 @@ export const designTokensA11yColors = () => {
       </Thead>
       <Tbody>
         {Object.keys(flattenedColorTokens)?.map((title) => (
-          <Tr key={`theme-${title}`}>
+          <Tr key={title}>
             <Td>
               <TokenColor $color={flattenedColorTokens[title]} />
             </Td>
@@ -208,8 +203,8 @@ designTokensA11yColors.story = {
 };
 
 export const designTokensDarkColors = () => {
-  const { colorToken } = createTheme({ tokensTheme: 'dark' });
-  const flattenedColorTokens = flattenObject(colorToken);
+  const { colorTokens } = createTheme({ tokensTheme: 'dark' });
+  const flattenedColorTokens = flattenObject(colorTokens);
 
   return (
     <Table>
@@ -224,7 +219,7 @@ export const designTokensDarkColors = () => {
       </Thead>
       <Tbody>
         {Object.keys(flattenedColorTokens)?.map((title) => (
-          <Tr key={`theme-${title}`}>
+          <Tr key={title}>
             <Td>
               <TokenColor $color={flattenedColorTokens[title]} />
             </Td>

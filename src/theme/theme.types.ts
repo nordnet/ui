@@ -926,7 +926,7 @@ export type ColorSets = {
 
 export type Theme = {
   color: ThemeColors;
-  colorToken: LightTheme['color'] | DarkTheme['color'] | AccessibilityTheme['color'];
+  colorTokens: LightTheme['color'] | DarkTheme['color'] | AccessibilityTheme['color'];
   lightColor: ThemeColors;
   darkColor: ThemeColors;
   spacing: {
