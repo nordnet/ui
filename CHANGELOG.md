@@ -1,3 +1,25 @@
+## [12.24.1](https://github.com/nordnet/ui/compare/v12.24.0...v12.24.1) (2023-04-04)
+
+
+### Bug Fixes
+
+* remove button nesting, toggle initial animation ([0d55368](https://github.com/nordnet/ui/commit/0d55368))
+
+# [12.24.0](https://github.com/nordnet/ui/compare/v12.23.2...v12.24.0) (2023-04-04)
+
+
+### Features
+
+* 🎸 Add Download icon ([#1336](https://github.com/nordnet/ui/issues/1336)) ([1075d71](https://github.com/nordnet/ui/commit/1075d71))
+
+## [12.23.2](https://github.com/nordnet/ui/compare/v12.23.1...v12.23.2) (2023-04-03)
+
+
+### Bug Fixes
+
+* add overflow hidden ([5d549d8](https://github.com/nordnet/ui/commit/5d549d8))
+* use framer motion for collapsible transition ([58e030a](https://github.com/nordnet/ui/commit/58e030a))
+
 ## [12.23.1](https://github.com/nordnet/ui/compare/v12.23.0...v12.23.1) (2023-03-29)
 
 
