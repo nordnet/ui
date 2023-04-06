@@ -114,7 +114,7 @@ export const secondsToTimeString = (seconds: number) => {
   return [h, m > 9 ? m : `0${m}`, s > 9 ? s : `0${s}`].filter(Boolean).join(':');
 };
 
-export const flattenObject = (obj: Record<string, string> | string) => {
+export const flattenObject = <T extends {}>(obj: T) => {
   const flattened = {};
 
   Object.keys(obj).forEach((key) => {

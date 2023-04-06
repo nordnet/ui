@@ -56,7 +56,7 @@
     }
   },
   "dependencies": {
-    "@nordnet/design-tokens": "^1.2.2",
+    "@nordnet/design-tokens": "^1.3.0",
     "@popperjs/core": "^2.11.6",
     "@xstate/react": "^0.7.1",
     "color": "^4.0.1",

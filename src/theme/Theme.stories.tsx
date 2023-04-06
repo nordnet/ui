@@ -48,15 +48,17 @@ const ColorInArray = styled.div<{ $color: string }>`
 `;
 
 const StyledFlexbox = styled(Flexbox)`
-  background: #fae8d4;
+  background: ${(p) => p.theme.colorToken.accent.background_default};
+  color: ${(p) => p.theme.colorToken.neutral.text_strong};
   border-radius: 6px;
   max-width: fit-content;
   padding: 4px 8px;
 `;
 
 const StyledButton = styled(Button)`
+  color: ${(p) => p.theme.colorToken.neutral.text_strong};
   &:hover {
-    color: ${(p) => p.theme.color.cta};
+    color: ${(p) => p.theme.colorToken.accent.background_strong};
   }
 `;
 

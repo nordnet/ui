@@ -1,3 +1,5 @@
+import { AccessibilityTheme, LightTheme, DarkTheme } from '@nordnet/design-tokens';
+
 export type MediaQuery = string;
 /** Number of pixels */
 export type ThemeConfig = {
@@ -924,7 +926,7 @@ export type ColorSets = {
 
 export type Theme = {
   color: ThemeColors;
-  colorToken: any;
+  colorToken: LightTheme['color'] | DarkTheme['color'] | AccessibilityTheme['color'];
   lightColor: ThemeColors;
   darkColor: ThemeColors;
   spacing: {

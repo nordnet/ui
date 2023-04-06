@@ -1,7 +1,12 @@
 import { filter, mapObjIndexed, pipe, prop as Rprop, values } from 'ramda';
-import lightTheme from '@nordnet/design-tokens';
-import darkTheme from '@nordnet/design-tokens/dist/js/darkTheme';
-import a11yTheme from '@nordnet/design-tokens/dist/js/accessibilityTheme';
+import {
+  lightTheme,
+  LightTheme,
+  darkTheme,
+  DarkTheme,
+  accessibilityTheme as a11yTheme,
+  AccessibilityTheme,
+} from '@nordnet/design-tokens';
 
 import { assert, deprecate, isNumber } from '../common/utils';
 import { Theme, ThemeColorsVersion, ThemeConfig } from './theme.types';
@@ -57,10 +62,10 @@ const getSizesValues = pipe(
 );
 
 const getColorToken = (theme: ThemeConfig['tokensTheme']) => {
-  if (theme === 'dark') return darkTheme;
-  if (theme === 'light') return lightTheme;
-  if (theme === 'a11y') return a11yTheme;
-  return lightTheme;
+  if (theme === 'dark') return darkTheme as DarkTheme;
+  if (theme === 'light') return lightTheme as LightTheme;
+  if (theme === 'a11y') return a11yTheme as AccessibilityTheme;
+  return lightTheme as LightTheme;
 };
 
 export const createTheme = (config: ThemeConfig = {}): Theme => {
