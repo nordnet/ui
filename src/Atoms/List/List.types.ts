@@ -3,4 +3,5 @@ export type Props = {
   as?: 'ul' | 'ol';
   className?: string;
   separated?: boolean;
+  fullWidthSeparator?: boolean;
 };
