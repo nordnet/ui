@@ -1,3 +1,15 @@
+# [12.25.0](https://github.com/nordnet/ui/compare/v12.24.1...v12.25.0) (2023-04-13)
+
+
+### Bug Fixes
+
+* adjust padding on label to follow figma updates ([c08ba18](https://github.com/nordnet/ui/commit/c08ba18))
+
+
+### Features
+
+* add fullWidthSeparator prop to lists too ([e29a8e3](https://github.com/nordnet/ui/commit/e29a8e3))
+
 ## [12.24.1](https://github.com/nordnet/ui/compare/v12.24.0...v12.24.1) (2023-04-04)
 
 
