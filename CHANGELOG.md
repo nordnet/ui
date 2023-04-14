@@ -1,3 +1,10 @@
+## [12.25.1](https://github.com/nordnet/ui/compare/v12.25.0...v12.25.1) (2023-04-14)
+
+
+### Bug Fixes
+
+* adjust shadows in darkmode to same values as in figma ([ababa57](https://github.com/nordnet/ui/commit/ababa57))
+
 # [12.25.0](https://github.com/nordnet/ui/compare/v12.24.1...v12.25.0) (2023-04-13)
 
 
