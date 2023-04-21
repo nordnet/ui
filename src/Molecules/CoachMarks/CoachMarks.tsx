@@ -6,7 +6,6 @@ import { Component } from './CoachMarks.types';
 import { makeBackdropPath } from './utils';
 import { useOnClickOutside, useWindowSize, useSafeLayoutEffect } from '../../common/Hooks';
 import useScrollPosition from './hooks/useScrollPosition';
-import Bubble from './Bubble';
 import BubbleArrow from './BubbleArrow';
 import { OFFSET_AWAY_FROM_REFERENCE } from './Bubble/consts';
 import { BACKDROP_PADDING } from './consts';
@@ -18,6 +17,7 @@ import {
   NavigationButtonsContainer,
   SVG,
   TitleWrapper,
+  StyledBubble,
 } from './CoachMarks.styled';
 
 export const CoachMarks: Component = ({
@@ -36,6 +36,7 @@ export const CoachMarks: Component = ({
   bottomSheet = false,
   closeButton = false,
   hidePreviousButton = false,
+  feedbackWidgetOnPage = false,
 }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
@@ -53,6 +54,7 @@ export const CoachMarks: Component = ({
     py,
     prevText = prevTextFromProps,
     nextText = nextTextFromProps,
+    nextDisabled = false,
   } = steps[currentStep];
 
   const [popperElement, setPopperElement] = useState<HTMLElement | null>(null);
@@ -126,22 +128,25 @@ export const CoachMarks: Component = ({
     }
   });
 
-  return referenceElementRect ? (
+  return referenceElementRect || feedbackWidgetOnPage ? (
     <>
       <FocusLock>
-        <Bubble
+        <StyledBubble
           ref={setPopperElement}
-          style={styles.popper}
+          style={feedbackWidgetOnPage ? undefined : styles.popper}
           {...attributes.popper}
           barColor={barColor}
           bottomSheet={bottomSheet}
+          $feedbackWidgetOnPage={feedbackWidgetOnPage}
         >
-          <BubbleArrow
-            ref={setArrowElement}
-            style={styles.arrow}
-            bubblePlacement={placement}
-            bottomSheet={bottomSheet}
-          />
+          {!feedbackWidgetOnPage && (
+            <BubbleArrow
+              ref={setArrowElement}
+              style={styles.arrow}
+              bubblePlacement={placement}
+              bottomSheet={bottomSheet}
+            />
+          )}
           <Flexbox container item direction="column" flex="1" gutter={5} ref={internalCoachMarkRef}>
             {body || (
               <Flexbox container direction="column" gutter={1}>
@@ -170,18 +175,17 @@ export const CoachMarks: Component = ({
                 )}
               </Flexbox>
             )}
-
             <FooterFlex container item alignItems="baseline" gutter={5}>
               {closeButton ? (
                 <Flexbox item>
-                  <Button variant="neutral" color={t => t.color.link} onClick={onClose}>
+                  <Button variant="neutral" color={(t) => t.color.link} onClick={onClose}>
                     {closeText}
                   </Button>
                 </Flexbox>
               ) : (
                 hasMultipleSteps && (
                   <Flexbox item>
-                    <Typography type="secondary" color={t => t.color.bubbleSecondaryText}>
+                    <Typography type="secondary" color={(t) => t.color.bubbleSecondaryText}>
                       {`${currentStep + 1} ${multiStepIndicatorText} ${steps.length}`}
                     </Typography>
                   </Flexbox>
@@ -197,7 +201,12 @@ export const CoachMarks: Component = ({
                 )}
                 <Flexbox item flex="1 0 50%">
                   {hasNextStep ? (
-                    <Button variant="primary" onClick={handleStepForward} fullWidth>
+                    <Button
+                      variant="primary"
+                      onClick={handleStepForward}
+                      fullWidth
+                      disabled={nextDisabled}
+                    >
                       {nextText}
                     </Button>
                   ) : (
@@ -214,7 +223,7 @@ export const CoachMarks: Component = ({
               <Icon.Cross16 />
             </CloseButton>
           )}
-        </Bubble>
+        </StyledBubble>
         <SVG>
           <path d={path} />
         </SVG>
