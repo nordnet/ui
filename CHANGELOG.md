@@ -1,3 +1,10 @@
+## [12.25.2](https://github.com/nordnet/ui/compare/v12.25.1...v12.25.2) (2023-04-21)
+
+
+### Bug Fixes
+
+* some more props for feedback widget and styling for whole page widget ([19c059e](https://github.com/nordnet/ui/commit/19c059e))
+
 ## [12.25.1](https://github.com/nordnet/ui/compare/v12.25.0...v12.25.1) (2023-04-14)
 
 
