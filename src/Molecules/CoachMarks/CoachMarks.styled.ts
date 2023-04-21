@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Flexbox, Button } from '../..';
 import { CLOSE_ICON_SIZE } from './consts';
 import { ColsTrimmerProps } from './CoachMarks.types';
+import Bubble from './Bubble';
 
 export const SVG = styled.svg`
   overflow: hidden;
@@ -44,4 +45,16 @@ export const CloseButton = styled(Button)`
   ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
     right: ${(p) => p.theme.spacing.unit(3)}px;
   }
+`;
+
+export const StyledBubble = styled(Bubble)<{ $feedbackWidgetOnPage?: boolean }>`
+  ${(p) =>
+    p.$feedbackWidgetOnPage &&
+    `
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      z-index: 501;
+      filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.4));
+    `}
 `;
