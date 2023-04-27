@@ -85,6 +85,7 @@ import Slider from './Molecules/Slider';
 import Switch, { SwitchToggle } from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
+import TagChip from './Molecules/TagChip';
 import Timeline from './Molecules/Timeline';
 import Toggle from './Molecules/Toggle';
 import Tooltip from './Molecules/Tooltip';
@@ -216,6 +217,7 @@ export {
   Table,
   Tabs,
   TabsNav,
+  TagChip,
   Tbody,
   Td,
   Tfoot,
