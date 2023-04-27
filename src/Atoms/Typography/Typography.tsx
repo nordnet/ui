@@ -25,7 +25,7 @@ const getColor = (props: ThemedStyledProps<Props, Theme>) => {
     return 'inherit';
   }
 
-  return theme.color.text;
+  return theme.colorTokens.neutral.text_default;
 };
 
 export const TYPOGRAPHY_TYPES: Record<Types, Types> = {
