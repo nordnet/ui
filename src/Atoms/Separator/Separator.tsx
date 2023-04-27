@@ -9,12 +9,12 @@ const StyledSeparator = styled.div<StyledProps>`
 `;
 
 const FullWidthSeparator = styled.div<StyledProps>`
+  width: ${(p) => `calc(100% + ${p.theme.spacing.unit(10)}px)`};
+  margin-left: ${(p) => `-${p.theme.spacing.unit(5)}px`};
   ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
     width: ${(p) => `calc(100% + ${p.theme.spacing.unit(6)}px)`};
     margin-left: ${(p) => `-${p.theme.spacing.unit(3)}px`};
   }
-  width: ${(p) => `calc(100% + ${p.theme.spacing.unit(10)}px)`};
-  margin-left: ${(p) => `-${p.theme.spacing.unit(5)}px`};
   height: 1px;
   background-color: ${(p) => (p.colorFunction ? p.colorFunction(p.theme) : p.theme.color.divider)};
 `;

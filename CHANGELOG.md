@@ -1,3 +1,43 @@
+# [12.26.0](https://github.com/nordnet/ui/compare/v12.25.2...v12.26.0) (2023-04-27)
+
+
+### Bug Fixes
+
+* 🐛 add border color for TagChip ([461abc2](https://github.com/nordnet/ui/commit/461abc2))
+* 🐛 export TagChip ([ffb966d](https://github.com/nordnet/ui/commit/ffb966d))
+* 🐛 style for label TagChip ([d99c8f5](https://github.com/nordnet/ui/commit/d99c8f5))
+
+
+### Features
+
+* add Tag Chip in ui DISCO-9694 ([15e4f48](https://github.com/nordnet/ui/commit/15e4f48))
+
+## [12.25.2](https://github.com/nordnet/ui/compare/v12.25.1...v12.25.2) (2023-04-21)
+
+
+### Bug Fixes
+
+* some more props for feedback widget and styling for whole page widget ([19c059e](https://github.com/nordnet/ui/commit/19c059e))
+
+## [12.25.1](https://github.com/nordnet/ui/compare/v12.25.0...v12.25.1) (2023-04-14)
+
+
+### Bug Fixes
+
+* adjust shadows in darkmode to same values as in figma ([ababa57](https://github.com/nordnet/ui/commit/ababa57))
+
+# [12.25.0](https://github.com/nordnet/ui/compare/v12.24.1...v12.25.0) (2023-04-13)
+
+
+### Bug Fixes
+
+* adjust padding on label to follow figma updates ([c08ba18](https://github.com/nordnet/ui/commit/c08ba18))
+
+
+### Features
+
+* add fullWidthSeparator prop to lists too ([e29a8e3](https://github.com/nordnet/ui/commit/e29a8e3))
+
 ## [12.24.1](https://github.com/nordnet/ui/compare/v12.24.0...v12.24.1) (2023-04-04)
 
 

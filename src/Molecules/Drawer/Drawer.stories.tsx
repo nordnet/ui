@@ -14,6 +14,7 @@ import {
   Link,
   LinkBuy,
   LinkSell,
+  PageWrapper,
 } from '../../index';
 
 export default {
@@ -102,14 +103,16 @@ export const defaultStory = () => {
     };
 
     return (
-      <>
-        <button type="button" onClick={toggle}>
-          Toggle drawer
-        </button>
-        <Drawer onClose={onClose} title="Drawer title" open={open}>
-          {contentLarge}
-        </Drawer>
-      </>
+      <PageWrapper background={(t) => t.color.card}>
+        <Box py={100}>
+          <button type="button" onClick={toggle}>
+            Toggle drawer
+          </button>
+          <Drawer onClose={onClose} title="Drawer title" open={open}>
+            {contentLarge}
+          </Drawer>
+        </Box>
+      </PageWrapper>
     );
   };
   return <Example />;

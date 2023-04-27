@@ -1,6 +1,6 @@
 import { Theme } from '../../theme/theme.types';
 
-export type Placement = 'top' | 'right' | 'bottom' | 'left';
+export type Placement = 'top' | 'right' | 'bottom' | 'left' | 'auto';
 export type ColsTrimmerProps = {
   $hasIcon: boolean;
 };
@@ -22,6 +22,7 @@ type Step = {
   py?: string | number;
   prevText?: string;
   nextText?: string;
+  nextDisabled?: boolean;
 };
 
 export type Props = {
@@ -40,6 +41,7 @@ export type Props = {
   bottomSheet?: boolean;
   closeButton?: boolean;
   hidePreviousButton?: boolean;
+  feedbackWidgetOnPage?: boolean;
 };
 
 export type Component = React.FC<Props>;

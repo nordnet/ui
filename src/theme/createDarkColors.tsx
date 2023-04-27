@@ -331,9 +331,9 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     separator: rawColor.gray2,
     separatorFullWidth: rawColor.gray900,
 
-    shadowCard: Color(rawColor.black).alpha(0.03).rgb().string(),
+    shadowCard: Color(rawColor.black).alpha(0.40).rgb().string(),
     shadowInput: Color(rawColor.black).alpha(0.03).rgb().string(),
-    shadowModal: Color(rawColor.black).alpha(0.16).rgb().string(),
+    shadowModal: Color(rawColor.black).alpha(0.60).rgb().string(),
     shadowSwitch: Color(rawColor.black).alpha(0.05).rgb().string(),
 
     shareville: rawColor.complementaryGreen1,
@@ -497,6 +497,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     notFoundColor: rawColor.gray600,
     notFoundFill: rawColor.gray900,
     headerCardBorder: rawColor.gray800,
+
+    tagChipBorder: rawColor.gray700,
 
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
