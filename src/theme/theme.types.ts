@@ -914,6 +914,8 @@ export type ThemeColors = {
   notFoundColor: string;
   notFoundFill: string;
   headerCardBorder: string;
+  /** light gray200 dark gray700 */
+  tagChipBorder: string;
 };
 
 export type ColorSets = {

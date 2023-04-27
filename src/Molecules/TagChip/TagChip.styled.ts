@@ -2,9 +2,7 @@ import styled from 'styled-components';
 import { Flexbox, Typography } from '../..';
 
 export const ContainerLabel = styled.label`
-  border: 1px solid
-    ${({ theme }) =>
-      theme.isDarkMode ? theme.color.tooltipBadgeBorder : theme.color.listSelectionCardBorder};
+  border: 1px solid ${({ theme }) => theme.color.tagChipBorder};
 
   border-radius: ${(p) => p.theme.spacing.unit(8)}px;
   box-sizing: border-box;
@@ -13,6 +11,7 @@ export const ContainerLabel = styled.label`
   padding: 0 ${(p) => p.theme.spacing.unit(3)}px;
   height: ${(p) => p.theme.spacing.unit(8)}px;
   color: ${(p) => p.theme.color.quickFilterText};
+  background: ${(p) => p.theme.color.card};
 `;
 
 export const StyledFlexbox = styled(Flexbox)`
