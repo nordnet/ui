@@ -30,7 +30,7 @@ BothIconAndLabel.args = {
 export const Emoji = () => (
   <Card>
     <Box p={3}>
-      <TagChip label="Title" icon="🌻" />
+      <TagChip label="Title" icon="😍" />
     </Box>
   </Card>
 );
@@ -40,9 +40,8 @@ export const WithFourTagChips = () => (
     <Box p={2}>
       <Flexbox container gap={1}>
         <TagChip label="label" />
-         <TagChip  label="🌻 label" />{' '}
-        <TagChip icon={<Icon.MonthlySavings16 />} label="label" />{' '}
-        <TagChip label="emoji as an icon" icon="🌻"/>
+        <TagChip label="🌻 label" /> <TagChip icon={<Icon.MonthlySavings16 />} label="label" />{' '}
+        <TagChip label="emoji as an icon" icon="😍" />
       </Flexbox>
     </Box>
   </Card>
