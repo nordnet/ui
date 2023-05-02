@@ -58,6 +58,7 @@ const DateRangePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => 
     fullscreenOnMobile,
     selectMonthLabel,
     selectYearLabel,
+    errorCallback,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -109,6 +110,7 @@ const DateRangePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => 
     onDateClick,
     viewedDate,
     clearDate,
+    invalidDate,
   } = useDatePicker({
     id,
     selectedDateProp,
@@ -120,6 +122,12 @@ const DateRangePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => 
     allowSingleDayRange,
     isRangePicker: true,
   });
+
+  useEffect(() => {
+    if (errorCallback) {
+      errorCallback();
+    }
+  }, [errorCallback, invalidDate]);
 
   const handleInputOnFocus = useCallback(() => setOpen(true), [setOpen]);
 

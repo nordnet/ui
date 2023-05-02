@@ -26,6 +26,7 @@ export type BaseProps = {
   allowSingleDayRange?: boolean;
   selectMonthLabel?: string;
   selectYearLabel?: string;
+  errorCallback?: () => void;
 };
 
 export type PropsWithoutClearButton = BaseProps & {
