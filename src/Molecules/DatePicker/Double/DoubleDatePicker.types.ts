@@ -27,7 +27,6 @@ type DoubleDatePickerProps = {
   allowSingleDayRange?: boolean;
   selectMonthLabel?: string;
   selectYearLabel?: string;
-  errorCallback?: () => void;
 };
 
 export type PropsWithoutClearButton = DoubleDatePickerProps & {

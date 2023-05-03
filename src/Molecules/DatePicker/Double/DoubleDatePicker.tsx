@@ -67,7 +67,6 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, DoubleDatePickerProps>
     showClearButton,
     selectMonthLabel,
     selectYearLabel,
-    errorCallback,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -109,7 +108,6 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, DoubleDatePickerProps>
     onDateClick,
     viewedDate,
     clearDate,
-    invalidDate,
   } = useDatePicker({
     id,
     selectedDateProp: selectedStartDateProp,
@@ -124,12 +122,6 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, DoubleDatePickerProps>
   });
 
   const handleInputOnFocus = useCallback(() => setOpen(true), [setOpen]);
-
-  useEffect(() => {
-    if (errorCallback) {
-      errorCallback();
-    }
-  }, [errorCallback, invalidDate]);
 
   const datepicker = (
     <Box my={3} mx={2}>

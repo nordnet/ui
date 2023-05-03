@@ -62,6 +62,18 @@ export const DisabledInput = () => {
   return <DatePicker id="disabled-input" label="Label" disabled />;
 };
 
+export const WithErrorMessage = () => {
+  return (
+    <DatePicker
+      id="with-error-message"
+      label="Show error message when typing invalid dates"
+      enableDate={(date) => isSameWeek(dateNow, date)}
+      onChange={action('onChange')}
+      errorMessage="Please choose a valid date"
+    />
+  );
+};
+
 export const FullWidthInput = () => {
   return <DatePicker id="full-width-input" label="Label" width="100%" />;
 };

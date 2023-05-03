@@ -58,7 +58,7 @@ const DateRangePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => 
     fullscreenOnMobile,
     selectMonthLabel,
     selectYearLabel,
-    errorCallback,
+    errorMessage,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -122,12 +122,6 @@ const DateRangePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => 
     allowSingleDayRange,
     isRangePicker: true,
   });
-
-  useEffect(() => {
-    if (errorCallback) {
-      errorCallback();
-    }
-  }, [errorCallback, invalidDate]);
 
   const handleInputOnFocus = useCallback(() => setOpen(true), [setOpen]);
 
@@ -203,6 +197,7 @@ const DateRangePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => 
         onBlur={handleInputOnBlur}
         width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
         autoComplete="off"
+        error={invalidDate ? errorMessage : ''}
       />
       {open && !isFullscreenMode(props, isSmallScreen) && (
         <StyledDropdownBubbleWrapper data-testid="styled-dropdown-bubble-wrapper">
