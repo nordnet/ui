@@ -10,6 +10,7 @@ export type Props = {
   /** Globally unique id for the spinner */
   id: string;
   delay?: boolean | number;
+  fallback?: React.ReactElement;
 };
 
 export type PropsWithTheme = Props & {

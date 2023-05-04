@@ -78,7 +78,7 @@ const RawSpinner: React.FC<PropsWithTheme> = ({ theme, size = 4, color, id }) =>
   );
 };
 
-const TimeoutSpinner: React.FC<PropsWithTheme> = ({ delay, ...restProps }) => {
+const TimeoutSpinner: React.FC<PropsWithTheme> = ({ delay, fallback, ...restProps }) => {
   const [spinning, setSpinning] = useState(false);
   const noDelay = delay === 0 || delay === false;
   useEffect(() => {
@@ -90,6 +90,10 @@ const TimeoutSpinner: React.FC<PropsWithTheme> = ({ delay, ...restProps }) => {
 
   if (noDelay || spinning) {
     return <RawSpinner {...restProps} />;
+  }
+
+  if (fallback) {
+    return fallback;
   }
 
   return null;

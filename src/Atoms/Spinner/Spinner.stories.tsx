@@ -3,7 +3,7 @@ import MD from 'react-markdown';
 import { Display } from '../../common/Display';
 
 import docs from './Spinner.md';
-import { Spinner, Typography } from '../..';
+import { Icon, Spinner, Typography } from '../..';
 
 export default {
   title: 'Atoms / Spinner',
@@ -34,6 +34,16 @@ export const spinnerBig = () => <Spinner size={16} id="mySpinner" />;
 
 spinnerBig.story = {
   name: 'Spinner big',
+};
+
+export const spinnerWithFallback = () => (
+  <div style={{ height: '32px' }}>
+    <Spinner size={8} id="mySpinnerFallback" fallback={<Icon.Account32 />} />
+  </div>
+);
+
+spinnerWithFallback.story = {
+  name: 'Spinner with fallback during the timeout delay instead of null',
 };
 
 export const spinnerWithoutDefaultDelay = () => <Spinner size={16} id="mySpinner" delay={false} />;
