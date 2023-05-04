@@ -1,3 +1,10 @@
+# [12.27.0](https://github.com/nordnet/ui/compare/v12.26.0...v12.27.0) (2023-05-04)
+
+
+### Features
+
+* add support to fallback to spinner during the timeout delay ([9c59ba4](https://github.com/nordnet/ui/commit/9c59ba4))
+
 # [12.26.0](https://github.com/nordnet/ui/compare/v12.25.2...v12.26.0) (2023-04-27)
 
 
