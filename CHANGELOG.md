@@ -1,3 +1,11 @@
+# [12.28.0](https://github.com/nordnet/ui/compare/v12.27.0...v12.28.0) (2023-05-08)
+
+
+### Features
+
+* add errorcallback to datepicker ([7881720](https://github.com/nordnet/ui/commit/7881720))
+* changed to errormessage ([0ece9cc](https://github.com/nordnet/ui/commit/0ece9cc))
+
 # [12.27.0](https://github.com/nordnet/ui/compare/v12.26.0...v12.27.0) (2023-05-04)
 
 
