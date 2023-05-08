@@ -21,6 +21,7 @@ export type BaseProps = {
   yearSelectLength?: number;
   selectMonthLabel?: string;
   selectYearLabel?: string;
+  errorMessage?: string;
 };
 
 interface FullscreenProps {

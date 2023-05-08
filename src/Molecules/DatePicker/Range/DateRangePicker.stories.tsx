@@ -72,6 +72,18 @@ export const DisabledInput = () => {
   return <DateRangePicker id="disabled-input" label="Disabled input" disabled />;
 };
 
+export const WithErrorMessage = () => {
+  return (
+    <DateRangePicker
+      id="with-error-message"
+      label="Show error message when typing invalid dates"
+      enableDate={(date) => isSameWeek(dateNow, date)}
+      onChange={action('onChange')}
+      errorMessage="Please choose a valid date"
+    />
+  );
+};
+
 export const AllowUpdateWhileTyping = () => {
   return (
     <DateRangePicker id="disabled-input" allowDateUpdateOnType label="Allow update while typing" />

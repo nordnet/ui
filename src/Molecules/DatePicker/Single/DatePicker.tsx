@@ -49,6 +49,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     fullscreenOnMobile,
     selectMonthLabel,
     selectYearLabel,
+    errorMessage,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -91,6 +92,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     onDateClick,
     viewedDate,
     clearDate,
+    invalidDate,
   } = useDatePicker({
     id,
     selectedDateProp,
@@ -166,6 +168,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
         onBlur={handleInputOnBlur}
         width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
         autoComplete="off"
+        error={invalidDate ? errorMessage : ''}
       />
       {open && !isFullscreenMode(props, isSmallScreen) && (
         <StyledDropdownBubbleWrapper data-testid="styled-dropdown-bubble-wrapper">
