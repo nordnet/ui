@@ -2814,7 +2814,7 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
-"@nordnet/design-tokens@^1.7.0":
+"@nordnet/design-tokens@1.7.0":
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/@nordnet/design-tokens/-/design-tokens-1.7.0.tgz#e3b4aa4ba35bee6f5736dd671f457a10f66d1644"
   integrity sha512-HqYcWwhpPtXRoZksSbONR8flYQ6JCAHkj7gKuSCS059EAfruJ8B9mB49cXsBn8hZvkbLT6Vqts2ag10lLR1eJw==
