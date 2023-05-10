@@ -1,21 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Props, StepProps } from './Timeline.types';
-import { Box, Button, DateTime, Flexbox, OldIcon, ListItem, Typography } from '../..';
+import { Box, Button, DateTime, Flexbox, Icon, ListItem, Typography } from '../..';
 
 const getStatusIcon = (status?: string) => {
   switch (status) {
     case 'NEUTRAL':
-      return <OldIcon.SolidCircle size={5} fill={(t) => t.color.emptyState} />;
+      return <Icon.InformationFill24 color={(t) => t.color.emptyState} />;
     case 'PENDING':
-      return <OldIcon.InfoPending size={5} fill={(t) => t.color.emptyState} />;
+      return <Icon.ClockFill24 color={(t) => t.color.emptyState} />;
     case 'ACTIVE':
-      return <OldIcon.InfoCircle size={5} fill={(t) => t.color.cta} />;
+      return <Icon.InformationFill24 color={(t) => t.color.cta} />;
     case 'FAILURE':
-      return <OldIcon.CrossCircle size={5} fill={(t) => t.color.timelineFailure} />;
+      return <Icon.ErrorFill24 color={(t) => t.color.timelineFailure} />;
     case 'SUCCESS':
     default:
-      return <OldIcon.CheckMarkCircle size={5} fill={(t) => t.color.timelineSuccess} />;
+      return <Icon.CheckCircleFill24 color={(t) => t.color.timelineSuccess} />;
   }
 };
 
@@ -45,8 +45,8 @@ const lineStyles = (status: StepProps['status'], props: any) => {
   return `
     content: '';
     position: absolute;
-    height: 50%;
-    left: 9px;
+    height: 26%;
+    left: 11px;
     width: 2px;
     z-index: 1;
     background: ${(() => {
@@ -54,6 +54,7 @@ const lineStyles = (status: StepProps['status'], props: any) => {
         case 'NEUTRAL':
         case 'ACTIVE':
         case 'FAILURE':
+        case 'PENDING':
           return colorNext ? colorNext(theme) : theme.color.timelineNext;
         case 'SUCCESS':
         default:
