@@ -29,6 +29,7 @@ export type Props = {
    * @default gray4
    *  */
   colorNext?: ColorFn;
+  hideSeparators?: boolean;
 };
 
 export type TimelineComponent = React.FC<Props>;

@@ -66,17 +66,24 @@ const lineStyles = (status: StepProps['status'], props: any) => {
 
 const StyledListItem = styled(ListItem).withConfig({
   shouldForwardProp: (prop) =>
-    !['previousStatus', 'currentStatus', 'colorSuccess', 'colorNext'].includes(prop),
+    !['previousStatus', 'currentStatus', 'colorSuccess', 'colorNext', '$hideSeparators'].includes(
+      prop,
+    ),
 })<{
   previousStatus: StepProps['status'];
   currentStatus: StepProps['status'];
   colorSuccess: Props['colorSuccess'];
   colorNext: Props['colorNext'];
+  $hideSeparators: Props['hideSeparators'];
 }>`
+  ${(p) =>
+    !p.$hideSeparators &&
+    `
   /* Divider of each element except last one */
   &:not(:last-of-type) > div > div:nth-child(2) {
-    border-bottom: 1px solid ${(t) => t.theme.color.divider};
+    border-bottom: 1px solid ${p.theme.color.divider};
   }
+  `}
 
   position: relative;
   & ::before {
@@ -108,7 +115,7 @@ const dateTimeOptions = {
   weekday: 'short' as FormatDateOptionWeekDay,
 };
 
-const Timeline: React.FC<Props> = ({ steps, colorSuccess, colorNext }) => {
+const Timeline: React.FC<Props> = ({ steps, colorSuccess, colorNext, hideSeparators = false }) => {
   let previousStatus: StepProps['status'];
   return (
     <StyledUl>
@@ -126,6 +133,7 @@ const Timeline: React.FC<Props> = ({ steps, colorSuccess, colorNext }) => {
             currentStatus={status}
             colorSuccess={colorSuccess}
             colorNext={colorNext}
+            $hideSeparators={hideSeparators}
           >
             <StyledContainer container direction="row" alignItems="center">
               <StyledBox mr={2}>{statusIcon}</StyledBox>
