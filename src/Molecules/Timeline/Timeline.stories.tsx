@@ -92,65 +92,146 @@ export const WithCustomIcons = () => {
       <Timeline
         steps={[
           {
-            text: 'Newer Newest and Bigger!',
+            text: 'Newer Newest and Bigger! (Status: not provided)',
             date: new Date(2020, 6, 3),
             icon: <Icon.RecommendedFill32 color={(t) => t.color.positive} />,
           },
           {
-            text: 'Newer Newest',
+            text: 'Newer Newest (Status: SUCCESS)',
             date: new Date(2020, 6, 3),
+            status: 'SUCCESS',
             icon: <Icon.RecommendedFill24 color={(t) => t.color.positive} />,
           },
           {
-            text: 'Kinda newer',
+            text: 'Kinda newer (Status: FAILURE)',
             date: new Date(2020, 3, 1),
             status: 'FAILURE',
             icon: <Icon.SubtractCircleFill24 color={(t) => t.color.negative} />,
           },
           {
-            text: 'Warning no fill (Size 32)',
+            text: 'Warning no fill (Size 32) (Status: WARNING)',
             date: new Date(2020, 2, 1),
             status: 'WARNING',
             icon: <Icon.Warning32 color={(t) => t.color.warning} />,
           },
           {
-            text: 'Warning no fill (Size 24)',
+            text: 'Warning no fill (Size 24) (Status: WARNING)',
             date: new Date(2020, 2, 1),
             status: 'WARNING',
             icon: <Icon.Warning24 color={(t) => t.color.warning} />,
           },
           {
-            text: 'Warning no fill (Size 16)',
+            text: 'Warning no fill (Size 16) (Status: WARNING)',
             date: new Date(2020, 2, 1),
             status: 'WARNING',
             icon: <Icon.Warning16 color={(t) => t.color.warning} />,
           },
           {
-            text: 'Not so old',
+            text: 'Not so old (Status: ACTIVE)',
             date: new Date(2020, 2, 1),
             status: 'ACTIVE',
             icon: <Icon.HelpFill24 color={(t) => t.color.barScaleActiveBar} />,
           },
           {
-            text: 'Waiting for information... IN STYLE (Icon size 16)',
+            text: 'Waiting for information... IN STYLE (Icon size 16) (Status: PENDING)',
             date: new Date(2020, 2, 1),
             status: 'PENDING',
             icon: <Icon.ClockFill16 color={(t) => t.color.cta} />,
           },
           {
-            text: 'Waiting for information... IN STYLE (Icon size 24)',
+            text: 'Waiting for information... IN STYLE (Icon size 24) (Status: PENDING)',
             date: new Date(2020, 2, 1),
             status: 'PENDING',
             icon: <Icon.ClockFill24 color={(t) => t.color.cta} />,
           },
           {
-            text: 'Waiting for information... IN STYLE (Icon size 32)',
+            text: 'Waiting for information... IN STYLE (Icon size 32) (Status: PENDING)',
             date: new Date(2020, 2, 1),
             status: 'PENDING',
             icon: <Icon.ClockFill32 color={(t) => t.color.cta} />,
           },
           {
-            text: 'Nothing has ever looked so slick',
+            text: 'Nothing has ever looked so slick (Status: NEUTRAL)',
+            date: new Date(2020, 1, 1),
+            status: 'NEUTRAL',
+            icon: <Icon.WarningFill24 color={(t) => t.color.timelineNext} />,
+          },
+        ]}
+      />
+    </Box>
+  );
+};
+
+export const WithCustomIconsAndLineColors = () => {
+  return (
+    <Box px={10}>
+      <Timeline
+        colorSuccess={(t) => t.color.positive}
+        colorNext={(t) => t.color.cta}
+        colorFailure={(t) => t.color.negative}
+        colorWarning={(t) => t.color.warning}
+        steps={[
+          {
+            text: 'Newer Newest and Bigger! (Status: not provided)',
+            date: new Date(2020, 6, 3),
+            icon: <Icon.RecommendedFill32 color={(t) => t.color.positive} />,
+          },
+          {
+            text: 'Newer Newest (Status: SUCCESS)',
+            date: new Date(2020, 6, 3),
+            status: 'SUCCESS',
+            icon: <Icon.RecommendedFill24 color={(t) => t.color.positive} />,
+          },
+          {
+            text: 'Kinda newer (Status: FAILURE)',
+            date: new Date(2020, 3, 1),
+            status: 'FAILURE',
+            icon: <Icon.SubtractCircleFill24 color={(t) => t.color.negative} />,
+          },
+          {
+            text: 'Warning no fill (Size 32) (Status: WARNING)',
+            date: new Date(2020, 2, 1),
+            status: 'WARNING',
+            icon: <Icon.Warning32 color={(t) => t.color.warning} />,
+          },
+          {
+            text: 'Warning no fill (Size 24) (Status: WARNING)',
+            date: new Date(2020, 2, 1),
+            status: 'WARNING',
+            icon: <Icon.Warning24 color={(t) => t.color.warning} />,
+          },
+          {
+            text: 'Warning no fill (Size 16) (Status: WARNING)',
+            date: new Date(2020, 2, 1),
+            status: 'WARNING',
+            icon: <Icon.Warning16 color={(t) => t.color.warning} />,
+          },
+          {
+            text: 'Not so old (Status: ACTIVE)',
+            date: new Date(2020, 2, 1),
+            status: 'ACTIVE',
+            icon: <Icon.HelpFill24 color={(t) => t.color.barScaleActiveBar} />,
+          },
+          {
+            text: 'Waiting for information... IN STYLE (Icon size 16) (Status: PENDING)',
+            date: new Date(2020, 2, 1),
+            status: 'PENDING',
+            icon: <Icon.ClockFill16 color={(t) => t.color.cta} />,
+          },
+          {
+            text: 'Waiting for information... IN STYLE (Icon size 24) (Status: PENDING)',
+            date: new Date(2020, 2, 1),
+            status: 'PENDING',
+            icon: <Icon.ClockFill24 color={(t) => t.color.cta} />,
+          },
+          {
+            text: 'Waiting for information... IN STYLE (Icon size 32) (Status: PENDING)',
+            date: new Date(2020, 2, 1),
+            status: 'PENDING',
+            icon: <Icon.ClockFill32 color={(t) => t.color.cta} />,
+          },
+          {
+            text: 'Nothing has ever looked so slick (Status: NEUTRAL)',
             date: new Date(2020, 1, 1),
             status: 'NEUTRAL',
             icon: <Icon.WarningFill24 color={(t) => t.color.timelineNext} />,

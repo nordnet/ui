@@ -30,6 +30,8 @@ export type Props = {
    * @default gray4
    *  */
   colorNext?: ColorFn;
+  colorFailure?: ColorFn;
+  colorWarning?: ColorFn;
   hideSeparators?: boolean;
 };
 

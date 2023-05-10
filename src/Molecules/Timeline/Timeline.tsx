@@ -57,7 +57,7 @@ const lineHeight = (iconSize: string) => {
 
 const lineStyles = (status: StepProps['status'], props: any) => {
   /** Before and after lines */
-  const { theme, colorSuccess, colorNext, $iconSize } = props;
+  const { theme, colorSuccess, colorNext, colorFailure, colorWarning, $iconSize } = props;
   return `
     content: '';
     position: absolute;
@@ -74,9 +74,9 @@ const lineStyles = (status: StepProps['status'], props: any) => {
         case 'PENDING':
           return colorNext ? colorNext(theme) : theme.color.timelineNext;
         case 'WARNING':
-          return colorNext ? colorNext(theme) : theme.color.timelineWarning;
+          return colorWarning ? colorWarning(theme) : theme.color.timelineNext;
         case 'FAILURE':
-          return colorNext ? colorNext(theme) : theme.color.timelineFailure;
+          return colorFailure ? colorFailure(theme) : theme.color.timelineNext;
         case 'SUCCESS':
         default:
           return colorSuccess ? colorSuccess(theme) : theme.color.timelineSuccess;
@@ -92,6 +92,8 @@ const StyledListItem = styled(ListItem).withConfig({
       'currentStatus',
       'colorSuccess',
       'colorNext',
+      'colorFailure',
+      'colorWarning',
       '$hideSeparators',
       '$iconSize',
     ].includes(prop),
@@ -100,6 +102,8 @@ const StyledListItem = styled(ListItem).withConfig({
   currentStatus: StepProps['status'];
   colorSuccess: Props['colorSuccess'];
   colorNext: Props['colorNext'];
+  colorFailure: Props['colorFailure'];
+  colorWarning: Props['colorWarning'];
   $hideSeparators: Props['hideSeparators'];
   $iconSize: string;
 }>`
@@ -142,7 +146,14 @@ const dateTimeOptions = {
   weekday: 'short' as FormatDateOptionWeekDay,
 };
 
-const Timeline: React.FC<Props> = ({ steps, colorSuccess, colorNext, hideSeparators = false }) => {
+const Timeline: React.FC<Props> = ({
+  steps,
+  colorSuccess,
+  colorNext,
+  colorFailure,
+  colorWarning,
+  hideSeparators = false,
+}) => {
   let previousStatus: StepProps['status'];
   return (
     <StyledUl>
@@ -164,6 +175,8 @@ const Timeline: React.FC<Props> = ({ steps, colorSuccess, colorNext, hideSeparat
             currentStatus={status}
             colorSuccess={colorSuccess}
             colorNext={colorNext}
+            colorFailure={colorFailure}
+            colorWarning={colorWarning}
             $hideSeparators={hideSeparators}
             $iconSize={iconSize}
           >
