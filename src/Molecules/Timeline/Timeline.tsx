@@ -172,13 +172,15 @@ const Timeline: React.FC<Props> = ({ steps, colorSuccess, colorNext, hideSeparat
 
               <StyledFlexbox item container direction="row" alignItems="center">
                 <Flexbox item container direction="column">
-                  <Typography type="tertiary" color={(t) => t.color.label}>
-                    {date instanceof Date ? (
-                      <DateTime options={dateTimeOptions} value={date.toUTCString()} />
-                    ) : (
-                      date
-                    )}
-                  </Typography>
+                  {date ? (
+                    <Typography type="tertiary" color={(t) => t.color.label}>
+                      {date instanceof Date ? (
+                        <DateTime options={dateTimeOptions} value={date.toUTCString()} />
+                      ) : (
+                        date
+                      )}
+                    </Typography>
+                  ) : null}
                   <Typography type="secondary">{text}</Typography>
                 </Flexbox>
                 {button && (

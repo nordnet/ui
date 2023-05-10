@@ -62,6 +62,30 @@ export const DefaultWithHiddenSeparators = () => {
   );
 };
 
+export const DefaultWithNoDates = () => {
+  return (
+    <Box px={10}>
+      <Timeline
+        steps={[
+          { text: 'Newer Newest (Status: not provided)' },
+          { text: 'Newest (Status: SUCCESS)' },
+          { text: 'Kinda new (Status: FAILURE)', status: 'FAILURE' },
+          {
+            text: 'Feedback needed (Status: WARNING)',
+            status: 'WARNING',
+          },
+          { text: 'Old (Status: ACTIVE)', status: 'ACTIVE' },
+          {
+            text: 'Waiting for information (Status: PENDING)',
+            status: 'PENDING',
+          },
+          { text: 'Nothing (Status: NEUTRAL)', status: 'NEUTRAL' },
+        ]}
+      />
+    </Box>
+  );
+};
+
 export const WithCustomIcons = () => {
   return (
     <Box px={10}>
