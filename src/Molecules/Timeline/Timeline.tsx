@@ -11,6 +11,8 @@ const getStatusIcon = (status?: string) => {
       return <Icon.ClockFill24 color={(t) => t.color.emptyState} />;
     case 'ACTIVE':
       return <Icon.InformationFill24 color={(t) => t.color.cta} />;
+    case 'WARNING':
+      return <Icon.WarningFill24 color={(t) => t.color.timelineWarning} />;
     case 'FAILURE':
       return <Icon.ErrorFill24 color={(t) => t.color.timelineFailure} />;
     case 'SUCCESS':
@@ -20,7 +22,10 @@ const getStatusIcon = (status?: string) => {
 };
 
 const StyledBox = styled(Box)`
+  display: flex;
   z-index: 2;
+  width: ${(t) => t.theme.spacing.unit(6)}px;
+  justify-content: center;
 `;
 
 const StyledUl = styled.ul`
@@ -39,13 +44,26 @@ const StyledFlexbox = styled(Flexbox)`
   padding-bottom: ${(t) => t.theme.spacing.unit(1)}px;
 `;
 
+const lineHeight = (iconSize: string) => {
+  switch (iconSize) {
+    case '16':
+      return '5';
+    case '32':
+      return '12';
+    default:
+      return '10';
+  }
+};
+
 const lineStyles = (status: StepProps['status'], props: any) => {
   /** Before and after lines */
-  const { theme, colorSuccess, colorNext } = props;
+  const { theme, colorSuccess, colorNext, $iconSize } = props;
   return `
     content: '';
     position: absolute;
-    height: 26%;
+    height: Calc(50% - ${lineHeight(
+      $iconSize,
+    )}px); /* compensation for different icon sizes and non filled icons */
     left: 11px;
     width: 2px;
     z-index: 1;
@@ -53,9 +71,12 @@ const lineStyles = (status: StepProps['status'], props: any) => {
       switch (status) {
         case 'NEUTRAL':
         case 'ACTIVE':
-        case 'FAILURE':
         case 'PENDING':
           return colorNext ? colorNext(theme) : theme.color.timelineNext;
+        case 'WARNING':
+          return colorNext ? colorNext(theme) : theme.color.timelineWarning;
+        case 'FAILURE':
+          return colorNext ? colorNext(theme) : theme.color.timelineFailure;
         case 'SUCCESS':
         default:
           return colorSuccess ? colorSuccess(theme) : theme.color.timelineSuccess;
@@ -66,15 +87,21 @@ const lineStyles = (status: StepProps['status'], props: any) => {
 
 const StyledListItem = styled(ListItem).withConfig({
   shouldForwardProp: (prop) =>
-    !['previousStatus', 'currentStatus', 'colorSuccess', 'colorNext', '$hideSeparators'].includes(
-      prop,
-    ),
+    ![
+      'previousStatus',
+      'currentStatus',
+      'colorSuccess',
+      'colorNext',
+      '$hideSeparators',
+      '$iconSize',
+    ].includes(prop),
 })<{
   previousStatus: StepProps['status'];
   currentStatus: StepProps['status'];
   colorSuccess: Props['colorSuccess'];
   colorNext: Props['colorNext'];
   $hideSeparators: Props['hideSeparators'];
+  $iconSize: string;
 }>`
   ${(p) =>
     !p.$hideSeparators &&
@@ -120,11 +147,15 @@ const Timeline: React.FC<Props> = ({ steps, colorSuccess, colorNext, hideSeparat
   return (
     <StyledUl>
       {steps.reverse()?.map((step, index) => {
-        const { date, text, status, button } = step;
+        const { date, text, status, button, icon } = step;
         const statusIcon = getStatusIcon(status);
         if (index > 0 && steps.length > 0) {
           previousStatus = steps[index - 1].status;
         }
+
+        const iconName: string = icon?.type?.name;
+        const iconSize = iconName?.substring(iconName.length, iconName.length - 2); // last two characters (size digits) of icon name
+
         return (
           <StyledListItem
             // eslint-disable-next-line react/no-array-index-key
@@ -134,9 +165,10 @@ const Timeline: React.FC<Props> = ({ steps, colorSuccess, colorNext, hideSeparat
             colorSuccess={colorSuccess}
             colorNext={colorNext}
             $hideSeparators={hideSeparators}
+            $iconSize={iconSize}
           >
-            <StyledContainer container direction="row" alignItems="center">
-              <StyledBox mr={2}>{statusIcon}</StyledBox>
+            <StyledContainer container direction="row" alignItems="center" gap={2}>
+              <StyledBox>{icon || statusIcon}</StyledBox>
 
               <StyledFlexbox item container direction="row" alignItems="center">
                 <Flexbox item container direction="column">
