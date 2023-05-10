@@ -1,5 +1,5 @@
 import { filter, mapObjIndexed, pipe, prop as Rprop, values } from 'ramda';
-import { lightTheme, darkTheme, accessibilityTheme as a11yTheme } from '@nordnet/design-tokens';
+import { lightTheme, darkTheme, a11yTheme } from '@nordnet/design-tokens';
 
 import { assert, deprecate, isNumber } from '../common/utils';
 import { Theme, ThemeColorsVersion, ThemeConfig } from './theme.types';
