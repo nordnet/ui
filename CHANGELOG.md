@@ -1,3 +1,17 @@
+# [12.30.0](https://github.com/nordnet/ui/compare/v12.29.0...v12.30.0) (2023-05-11)
+
+
+### Bug Fixes
+
+* 🐛 date for a step is optional now ([88eb398](https://github.com/nordnet/ui/commit/88eb398))
+
+
+### Features
+
+* 🎸 added a flag to hide separators between rows ([9d286ef](https://github.com/nordnet/ui/commit/9d286ef))
+* 🎸 custom icons and line size adustments ([ea43411](https://github.com/nordnet/ui/commit/ea43411))
+* 🎸 options for custom line colours to match icon colors ([b7e5b58](https://github.com/nordnet/ui/commit/b7e5b58))
+
 # [12.29.0](https://github.com/nordnet/ui/compare/v12.28.0...v12.29.0) (2023-05-11)
 
 
