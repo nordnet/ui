@@ -1,3 +1,10 @@
+# [12.29.0](https://github.com/nordnet/ui/compare/v12.28.0...v12.29.0) (2023-05-11)
+
+
+### Features
+
+* trigger new release for adding desing tokens ([1ddb1c8](https://github.com/nordnet/ui/commit/1ddb1c8))
+
 # [12.28.0](https://github.com/nordnet/ui/compare/v12.27.0...v12.28.0) (2023-05-08)
 
 
