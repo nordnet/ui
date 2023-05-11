@@ -1,3 +1,10 @@
+## [12.30.1](https://github.com/nordnet/ui/compare/v12.30.0...v12.30.1) (2023-05-11)
+
+
+### Bug Fixes
+
+* design-tokens as dependancy ([#1347](https://github.com/nordnet/ui/issues/1347)) ([93f7c93](https://github.com/nordnet/ui/commit/93f7c93))
+
 # [12.30.0](https://github.com/nordnet/ui/compare/v12.29.0...v12.30.0) (2023-05-11)
 
 
