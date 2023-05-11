@@ -1,8 +1,11 @@
+import { A11yTheme, LightTheme, DarkTheme } from '@nordnet/design-tokens';
+
 export type MediaQuery = string;
 /** Number of pixels */
 export type ThemeConfig = {
   a11yColors?: boolean;
   darkColors?: boolean;
+  tokensTheme?: 'dark' | 'light' | 'a11y';
 };
 type Unit = {
   (times: number): number;
@@ -925,6 +928,7 @@ export type ColorSets = {
 
 export type Theme = {
   color: ThemeColors;
+  colorTokens: LightTheme['color'] | DarkTheme['color'] | A11yTheme['color'];
   lightColor: ThemeColors;
   darkColor: ThemeColors;
   spacing: {
