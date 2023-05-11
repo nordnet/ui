@@ -25,6 +25,13 @@ defaultUsage.story = {
   name: 'Default usage',
 };
 
+defaultUsage.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?node-id=24-1267&t=PqHHNLbAmdCspNhn-4',
+  },
+};
+
 export const buttonWithDifferentVariants = () => (
   <>
     <Display
