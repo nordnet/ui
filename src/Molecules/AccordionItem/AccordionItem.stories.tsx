@@ -28,12 +28,24 @@ export const defaultCollapsed = () => (
     <ExampleContent />
   </AccordionItem>
 );
+defaultCollapsed.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=487-6224&t=qE01LCJKWSkGeiiO-4',
+  },
+};
 
 export const expanded = () => (
   <AccordionItem title="Låg CO₂ risk" expandedInitial>
     <ExampleContent />
   </AccordionItem>
 );
+expanded.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=454-6539&t=qE01LCJKWSkGeiiO-4',
+  },
+};
 
 export const withStyledContent = () => (
   <StyledAccordionItem title="Sustainability score">
@@ -105,6 +117,12 @@ export const withChevron = () => (
     <ExampleContent />
   </AccordionItem>
 );
+withChevron.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=4547-45263&t=qE01LCJKWSkGeiiO-4',
+  },
+};
 
 export const withTypePrimaryAndChevron = () => (
   <AccordionItem type="primary" withChevron title="How much risk are you willing to take?">
@@ -138,6 +156,12 @@ export const withRightAddon = () => (
     <ExampleContent />
   </AccordionItem>
 );
+withRightAddon.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=9663-41804&t=qE01LCJKWSkGeiiO-4',
+  },
+};
 
 export const withDisabledBackgroundColor = () => (
   <AccordionItem title="This card has its hover and focus color disabled" disableBackgroundColor>

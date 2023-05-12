@@ -456,19 +456,11 @@ export const buttonWithTypeModified = () => (
   />
 );
 
-buttonWithTypeModified.story = {
-  name: 'Button with type modified',
-};
-
 export const buttonThatIsFullWidth = () => (
   <Button onClick={action('clicked')} fullWidth>
     Button
   </Button>
 );
-
-buttonThatIsFullWidth.story = {
-  name: 'Button that is full width',
-};
 
 export const buttonsComposedInAGroup = () => (
   <Flexbox container gutter={2}>
@@ -484,7 +476,3 @@ export const buttonsComposedInAGroup = () => (
     </Flexbox>
   </Flexbox>
 );
-
-buttonsComposedInAGroup.story = {
-  name: 'Buttons composed in a group',
-};
