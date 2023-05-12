@@ -68,3 +68,9 @@ export const Showcase = () => {
 Showcase.story = {
   name: 'Showcase',
 };
+Showcase.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=9663-42553&t=qE01LCJKWSkGeiiO-4',
+  },
+};

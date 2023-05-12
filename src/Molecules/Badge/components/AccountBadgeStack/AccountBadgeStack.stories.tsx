@@ -141,9 +141,11 @@ export const Default: Story<AccountBadgeStackProps> = () => {
     </DisplayContainer>
   );
 };
-
-Default.story = {
-  name: 'Default',
+Default.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=3709-40463&t=qE01LCJKWSkGeiiO-4',
+  },
 };
 
 export const InsideButton = () => {
@@ -291,4 +293,11 @@ export const OtherVariants = () => {
 
 OtherVariants.story = {
   name: 'Other variants',
+};
+
+OtherVariants.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=3709-40463&t=qE01LCJKWSkGeiiO-4',
+  },
 };

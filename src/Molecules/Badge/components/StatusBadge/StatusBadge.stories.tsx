@@ -72,3 +72,9 @@ export const InformationStatusBadge = () => (
 InformationStatusBadge.story = {
   name: 'Default and all combinations',
 };
+InformationStatusBadge.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=9675-43601&t=qE01LCJKWSkGeiiO-4',
+  },
+};

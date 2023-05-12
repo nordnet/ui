@@ -44,8 +44,11 @@ export const Showcase = () => (
     </Flexbox>
   </Flexbox>
 );
-Showcase.story = {
-  name: 'Showcase',
+Showcase.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=9663-42292&t=qE01LCJKWSkGeiiO-4',
+  },
 };
 
 const StyledTypography = styled(Typography)`
