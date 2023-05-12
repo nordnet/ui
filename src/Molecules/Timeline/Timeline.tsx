@@ -1,26 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Props, StepProps } from './Timeline.types';
-import { Box, Button, DateTime, Flexbox, OldIcon, ListItem, Typography } from '../..';
+import { Box, Button, DateTime, Flexbox, Icon, ListItem, Typography } from '../..';
 
 const getStatusIcon = (status?: string) => {
   switch (status) {
     case 'NEUTRAL':
-      return <OldIcon.SolidCircle size={5} fill={(t) => t.color.emptyState} />;
+      return <Icon.InformationFill24 color={(t) => t.color.emptyState} />;
     case 'PENDING':
-      return <OldIcon.InfoPending size={5} fill={(t) => t.color.emptyState} />;
+      return <Icon.ClockFill24 color={(t) => t.color.emptyState} />;
     case 'ACTIVE':
-      return <OldIcon.InfoCircle size={5} fill={(t) => t.color.cta} />;
+      return <Icon.InformationFill24 color={(t) => t.color.cta} />;
+    case 'WARNING':
+      return <Icon.WarningFill24 color={(t) => t.color.timelineWarning} />;
     case 'FAILURE':
-      return <OldIcon.CrossCircle size={5} fill={(t) => t.color.timelineFailure} />;
+      return <Icon.ErrorFill24 color={(t) => t.color.timelineFailure} />;
     case 'SUCCESS':
     default:
-      return <OldIcon.CheckMarkCircle size={5} fill={(t) => t.color.timelineSuccess} />;
+      return <Icon.CheckCircleFill24 color={(t) => t.color.timelineSuccess} />;
   }
 };
 
 const StyledBox = styled(Box)`
+  display: flex;
   z-index: 2;
+  width: ${(t) => t.theme.spacing.unit(6)}px;
+  justify-content: center;
 `;
 
 const StyledUl = styled.ul`
@@ -39,22 +44,39 @@ const StyledFlexbox = styled(Flexbox)`
   padding-bottom: ${(t) => t.theme.spacing.unit(1)}px;
 `;
 
+const lineHeight = (iconSize: string) => {
+  switch (iconSize) {
+    case '16':
+      return '5';
+    case '32':
+      return '12';
+    default:
+      return '10';
+  }
+};
+
 const lineStyles = (status: StepProps['status'], props: any) => {
   /** Before and after lines */
-  const { theme, colorSuccess, colorNext } = props;
+  const { theme, colorSuccess, colorNext, colorFailure, colorWarning, $iconSize } = props;
   return `
     content: '';
     position: absolute;
-    height: 50%;
-    left: 9px;
+    height: Calc(50% - ${lineHeight(
+      $iconSize,
+    )}px); /* compensation for different icon sizes and non filled icons */
+    left: 11px;
     width: 2px;
     z-index: 1;
     background: ${(() => {
       switch (status) {
         case 'NEUTRAL':
         case 'ACTIVE':
-        case 'FAILURE':
+        case 'PENDING':
           return colorNext ? colorNext(theme) : theme.color.timelineNext;
+        case 'WARNING':
+          return colorWarning ? colorWarning(theme) : theme.color.timelineNext;
+        case 'FAILURE':
+          return colorFailure ? colorFailure(theme) : theme.color.timelineNext;
         case 'SUCCESS':
         default:
           return colorSuccess ? colorSuccess(theme) : theme.color.timelineSuccess;
@@ -65,17 +87,34 @@ const lineStyles = (status: StepProps['status'], props: any) => {
 
 const StyledListItem = styled(ListItem).withConfig({
   shouldForwardProp: (prop) =>
-    !['previousStatus', 'currentStatus', 'colorSuccess', 'colorNext'].includes(prop),
+    ![
+      'previousStatus',
+      'currentStatus',
+      'colorSuccess',
+      'colorNext',
+      'colorFailure',
+      'colorWarning',
+      '$hideSeparators',
+      '$iconSize',
+    ].includes(prop),
 })<{
   previousStatus: StepProps['status'];
   currentStatus: StepProps['status'];
   colorSuccess: Props['colorSuccess'];
   colorNext: Props['colorNext'];
+  colorFailure: Props['colorFailure'];
+  colorWarning: Props['colorWarning'];
+  $hideSeparators: Props['hideSeparators'];
+  $iconSize: string;
 }>`
+  ${(p) =>
+    !p.$hideSeparators &&
+    `
   /* Divider of each element except last one */
   &:not(:last-of-type) > div > div:nth-child(2) {
-    border-bottom: 1px solid ${(t) => t.theme.color.divider};
+    border-bottom: 1px solid ${p.theme.color.divider};
   }
+  `}
 
   position: relative;
   & ::before {
@@ -107,16 +146,27 @@ const dateTimeOptions = {
   weekday: 'short' as FormatDateOptionWeekDay,
 };
 
-const Timeline: React.FC<Props> = ({ steps, colorSuccess, colorNext }) => {
+const Timeline: React.FC<Props> = ({
+  steps,
+  colorSuccess,
+  colorNext,
+  colorFailure,
+  colorWarning,
+  hideSeparators = false,
+}) => {
   let previousStatus: StepProps['status'];
   return (
     <StyledUl>
       {steps.reverse()?.map((step, index) => {
-        const { date, text, status, button } = step;
+        const { date, text, status, button, icon } = step;
         const statusIcon = getStatusIcon(status);
         if (index > 0 && steps.length > 0) {
           previousStatus = steps[index - 1].status;
         }
+
+        const iconName: string = icon?.type?.name;
+        const iconSize = iconName?.substring(iconName.length, iconName.length - 2); // last two characters (size digits) of icon name
+
         return (
           <StyledListItem
             // eslint-disable-next-line react/no-array-index-key
@@ -125,19 +175,25 @@ const Timeline: React.FC<Props> = ({ steps, colorSuccess, colorNext }) => {
             currentStatus={status}
             colorSuccess={colorSuccess}
             colorNext={colorNext}
+            colorFailure={colorFailure}
+            colorWarning={colorWarning}
+            $hideSeparators={hideSeparators}
+            $iconSize={iconSize}
           >
-            <StyledContainer container direction="row" alignItems="center">
-              <StyledBox mr={2}>{statusIcon}</StyledBox>
+            <StyledContainer container direction="row" alignItems="center" gap={2}>
+              <StyledBox>{icon || statusIcon}</StyledBox>
 
               <StyledFlexbox item container direction="row" alignItems="center">
                 <Flexbox item container direction="column">
-                  <Typography type="tertiary" color={(t) => t.color.label}>
-                    {date instanceof Date ? (
-                      <DateTime options={dateTimeOptions} value={date.toUTCString()} />
-                    ) : (
-                      date
-                    )}
-                  </Typography>
+                  {date ? (
+                    <Typography type="tertiary" color={(t) => t.color.label}>
+                      {date instanceof Date ? (
+                        <DateTime options={dateTimeOptions} value={date.toUTCString()} />
+                      ) : (
+                        date
+                      )}
+                    </Typography>
+                  ) : null}
                   <Typography type="secondary">{text}</Typography>
                 </Flexbox>
                 {button && (
