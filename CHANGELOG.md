@@ -1,3 +1,10 @@
+# [12.31.0-beta.1](https://github.com/nordnet/ui/compare/v12.30.1...v12.31.0-beta.1) (2023-05-25)
+
+
+### Features
+
+* rename Select to OldSelect ([#1349](https://github.com/nordnet/ui/issues/1349)) ([2d083ff](https://github.com/nordnet/ui/commit/2d083ff))
+
 ## [12.30.1](https://github.com/nordnet/ui/compare/v12.30.0...v12.30.1) (2023-05-11)
 
 
