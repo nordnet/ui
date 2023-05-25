@@ -78,7 +78,7 @@ import ProgressIndicator from './Molecules/ProgressIndicator';
 import PromotionBanner from './Molecules/PromotionBanner';
 import Rating from './Molecules/Rating';
 import SegmentedControl from './Molecules/SegmentedControl';
-import Select from './Molecules/Select';
+import OldSelect from './Molecules/OldSelect';
 import SelectionCard from './Molecules/SelectionCard';
 import ShowMoreButton from './Molecules/ShowMoreButton';
 import Slider from './Molecules/Slider';
@@ -134,7 +134,7 @@ export type {
 
 /** Runtime code */
 export {
-  /** @deprecated */ Select,
+  /** @deprecated */ OldSelect as Select,
   ActionModal,
   Accordion,
   AccordionItem,
