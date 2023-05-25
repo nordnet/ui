@@ -192,6 +192,7 @@ function CustomSelect({ options, placeholder }: Props) {
 
   React.useEffect(() => {
     if (listboxVisible) {
+      console.log('listboxRef.current', listboxRef.current);
       listboxRef.current?.focus();
     }
   }, [listboxVisible]);
