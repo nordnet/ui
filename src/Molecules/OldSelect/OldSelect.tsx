@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import * as R from 'ramda';
 import styled from 'styled-components';
 import { OldIcon, Typography, VisuallyHidden } from '../..';
-import { Props, SelectComponent } from './Select.types';
+import { Props, SelectComponent } from './OldSelect.types';
 
 const SELECT_HEIGHT = 8;
 const ARROW_SPACE = 7;
@@ -53,7 +53,7 @@ const SelectedValue = styled(Typography)`
   box-sizing: border-box;
 `;
 
-const Select: SelectComponent = ({
+const OldSelect: SelectComponent = ({
   options = [],
   disabled = false,
   hideLabel = false,
@@ -137,4 +137,4 @@ const Select: SelectComponent = ({
   );
 };
 
-export default Select;
+export default OldSelect;
