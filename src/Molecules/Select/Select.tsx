@@ -1,9 +1,12 @@
 import * as React from 'react';
+import R from 'ramda';
 import clsx from 'clsx';
+import styled from 'styled-components';
 import useSelect, { SelectOptionDefinition, SelectProvider } from '@mui/base/useSelect';
 import useOption from '@mui/base/useOption';
-import { styled } from '@mui/system';
+import { styled as uiStyled } from '@mui/system';
 import UnfoldMoreRoundedIcon from '@mui/icons-material/UnfoldMoreRounded';
+import NormalizedElements from '../../common/NormalizedElements';
 
 export default function Select() {
   return <CustomSelect placeholder="Select a color…" options={options} />;
@@ -31,11 +34,11 @@ const grey = {
   900: '#24292f',
 };
 
-const Root = styled('div')`
+const Root = uiStyled('div')`
   position: relative;
 `;
 
-const Toggle = styled('button')(
+const Toggle = uiStyled('button')(
   ({ theme }) => `
   font-family: IBM Plex Sans, sans-serif;
   font-size: 0.875rem;
@@ -77,7 +80,7 @@ const Toggle = styled('button')(
   `,
 );
 
-const Listbox = styled('ul')(
+const Listbox = uiStyled('ul')(
   ({ theme }) => `
   font-family: IBM Plex Sans, sans-serif;
   font-size: 0.875rem;
@@ -109,7 +112,7 @@ const Listbox = styled('ul')(
   `,
 );
 
-const Option = styled('li')(
+const Option = uiStyled('li')(
   ({ theme }) => `
   padding: 8px;
   border-radius: 0.45em;
@@ -142,6 +145,33 @@ const Option = styled('li')(
   }
   `,
 );
+
+const CleanNormalizedButton = React.forwardRef((props: any, ref: React.Ref<any>) => (
+  <NormalizedElements.Button {...R.omit(['absolutePositioning'], props)} ref={ref} />
+));
+
+const StyledA11yButton = styled(CleanNormalizedButton)`
+  background: ${(p) => (p.disabled ? p.theme.color.disabledBackground : 'transparent')};
+  width: 100%;
+  height: 100%;
+  cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
+  padding: 0;
+  display: flex;
+  border: 0;
+  color: inherit;
+  ${(p) =>
+    !p.absolutePositioning
+      ? ''
+      : `
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      outline: 0;
+      text-align: initial;
+      `}
+`;
 
 interface Props {
   options: SelectOptionDefinition<string>[];
@@ -199,13 +229,13 @@ function CustomSelect({ options, placeholder }: Props) {
 
   return (
     <Root>
-      <Toggle {...getButtonProps()} style={{ '--color': value } as any}>
+      <StyledA11yButton {...getButtonProps()} style={{ '--color': value } as any}>
         {renderSelectedValue(value, options) || (
           <span className="placeholder">{placeholder ?? ' '}</span>
         )}
 
         <UnfoldMoreRoundedIcon />
-      </Toggle>
+      </StyledA11yButton>
       <Listbox
         {...getListboxProps()}
         aria-hidden={!listboxVisible}
