@@ -1,3 +1,10 @@
+## [12.30.2](https://github.com/nordnet/ui/compare/v12.30.1...v12.30.2) (2023-05-26)
+
+
+### Bug Fixes
+
+* add deprecation comment to theme.color ([#1348](https://github.com/nordnet/ui/issues/1348)) ([37ecddf](https://github.com/nordnet/ui/commit/37ecddf))
+
 ## [12.30.1](https://github.com/nordnet/ui/compare/v12.30.0...v12.30.1) (2023-05-11)
 
 
