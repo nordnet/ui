@@ -11,25 +11,6 @@ const Root = styled.div`
   min-width: 200px;
 `;
 
-const SelectContainer = styled.div<{ $size: 's' | 'm' }>`
-  box-sizing: border-box;
-  width: 100%;
-  padding: ${({ theme }) => theme.spacing.unit(2.5)}px ${({ theme }) => theme.spacing.unit(2)}px;
-  border: 1px solid ${({ theme }) => theme.colorTokens.neutral.border_default};
-  border-radius: ${({ theme }) => theme.spacing.unit(1)}px;
-  height: ${({ theme, $size }) =>
-    $size === 's' ? theme.spacing.unit(8) : theme.spacing.unit(10)}px;
-  display: flex;
-  align-items: center;
-  &:hover {
-    border: 1px solid ${({ theme }) => theme.colorTokens.neutral.border_hover};
-  }
-  &:focus-within,
-  &:active {
-    border: 1px solid ${({ theme }) => theme.colorTokens.action.border_default};
-  }
-`;
-
 const StyledChevronDown8 = styled(Icon.ChevronDown8)`
   margin-left: auto;
 `;
@@ -39,9 +20,9 @@ const BORDER_SIZE = 1;
 
 const Arrow = styled.div`
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   left: 16px;
-  top: 100%;
+  bottom: calc(100% - 1px);
 
   &::before,
   &::after {
@@ -80,51 +61,56 @@ const StyledTypography = styled(Typography)<{ $hasValue: boolean }>`
     $hasValue ? theme.colorTokens.neutral.text_default : theme.colorTokens.neutral.text_weak};
 `;
 
+const ListContainer = styled.div<{ $hidden: boolean }>`
+  position: absolute;
+  width: 100%;
+  z-index: ${({ theme }) => theme.zIndex.dropdown};
+
+  ${({ $hidden }) =>
+    $hidden
+      ? `opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s step-end;`
+      : ''}
+`;
+
 const Listbox = styled.ul`
-  margin: ${TRIANGLE_SIZE - 1}px 0 0 0;
+  margin: ${TRIANGLE_SIZE}px 0 0 0;
   background: ${({ theme }) => theme.colorTokens.neutral.background_default};
   border: 1px solid ${({ theme }) => theme.colorTokens.neutral.border_default};
   box-sizing: border-box;
   padding: ${({ theme }) => theme.spacing.unit(1)}px 0;
   border-radius: 4px;
-  position: absolute;
-  width: 100%;
   overflow: auto;
-  z-index: 1;
   list-style-type: none;
-
-  &.hidden {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.4s ease, visibility 0.4s step-end;
-  }
 `;
 
 const CleanNormalizedButton = React.forwardRef((props: any, ref: React.Ref<any>) => (
   <NormalizedElements.Button {...R.omit(['absolutePositioning'], props)} ref={ref} />
 ));
 
-const StyledA11yButton = styled(CleanNormalizedButton)`
-  background: ${(p) => (p.disabled ? p.theme.color.disabledBackground : 'transparent')};
-  width: 100%;
-  height: 100%;
-  cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
-  padding: 0;
-  display: flex;
-  border: 0;
+const StyledA11yButton = styled(CleanNormalizedButton)<{ $size: 's' | 'm' }>`
+  cursor: pointer;
   color: inherit;
-  ${(p) =>
-    !p.absolutePositioning
-      ? ''
-      : `
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      outline: 0;
-      text-align: initial;
-      `}
+  box-sizing: border-box;
+  padding: ${({ theme }) => theme.spacing.unit(2.5)}px ${({ theme }) => theme.spacing.unit(2)}px;
+  border: 1px solid ${({ theme }) => theme.colorTokens.neutral.border_default};
+  border-radius: ${({ theme }) => theme.spacing.unit(1)}px;
+  height: ${({ theme, $size }) =>
+    $size === 's' ? theme.spacing.unit(8) : theme.spacing.unit(10)}px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: ${({ theme }) => theme.colorTokens.neutral.background_default};
+
+  &:hover {
+    border: 1px solid ${({ theme }) => theme.colorTokens.neutral.border_hover};
+  }
+
+  &:focus-within,
+  &:active {
+    border: 1px solid ${({ theme }) => theme.colorTokens.action.border_default};
+  }
 `;
 
 interface Props {
@@ -156,24 +142,18 @@ const Select: React.FC<Props> = ({ children, placeholder = 'placeholder', size =
 
   return (
     <Root>
-      <StyledA11yButton {...getButtonProps()}>
-        <SelectContainer $size={size}>
-          <StyledTypography className="placeholder" $hasValue={!!value} type="secondary">
-            {value || placeholder}
-          </StyledTypography>
-          <StyledChevronDown8 />
-        </SelectContainer>
+      <StyledA11yButton $size={size} {...getButtonProps()}>
+        <StyledTypography className="placeholder" $hasValue={!!value} type="secondary">
+          {value || placeholder}
+        </StyledTypography>
+        <StyledChevronDown8 />
       </StyledA11yButton>
-      <>
+      <ListContainer aria-hidden={!listboxVisible} $hidden={!listboxVisible}>
         <Arrow />
-        <Listbox
-          {...getListboxProps()}
-          aria-hidden={!listboxVisible}
-          className={listboxVisible ? '' : 'hidden'}
-        >
+        <Listbox {...getListboxProps()}>
           <SelectProvider value={contextValue}>{children}</SelectProvider>
         </Listbox>
-      </>
+      </ListContainer>
     </Root>
   );
 };
