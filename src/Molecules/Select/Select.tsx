@@ -86,7 +86,7 @@ const Listbox = styled.ul`
 `;
 
 const CleanNormalizedButton = React.forwardRef((props: any, ref: React.Ref<any>) => (
-  <NormalizedElements.Button {...R.omit(['absolutePositioning'], props)} ref={ref} />
+  <NormalizedElements.Button ref={ref} />
 ));
 
 const StyledA11yButton = styled(CleanNormalizedButton)<{ $size: 's' | 'm' }>`
