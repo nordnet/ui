@@ -34,6 +34,42 @@ const StyledChevronDown8 = styled(Icon.ChevronDown8)`
   margin-left: auto;
 `;
 
+const TRIANGLE_SIZE = 10;
+const BORDER_SIZE = 1;
+
+const Arrow = styled.div`
+  position: absolute;
+  z-index: 2;
+  left: 16px;
+  top: 100%;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &::before {
+    border-left: ${TRIANGLE_SIZE}px solid transparent;
+    border-right: ${TRIANGLE_SIZE}px solid transparent;
+    border-bottom: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
+  }
+
+  &::after {
+    left: ${BORDER_SIZE * 2}px;
+    top: ${BORDER_SIZE * 2}px;
+    border-left: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
+    border-right: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
+    border-bottom: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid
+      ${(p) => p.theme.color.bubbleBackground};
+  }
+`;
+
 const StyledTypography = styled(Typography)<{ $hasValue: boolean }>`
   display: inline-block;
   margin-right: ${({ theme }) => theme.spacing.unit(2)}px;
@@ -45,26 +81,17 @@ const StyledTypography = styled(Typography)<{ $hasValue: boolean }>`
 `;
 
 const Listbox = styled.ul`
-  font-family: IBM Plex Sans, sans-serif;
-  font-size: 0.875rem;
+  margin: ${TRIANGLE_SIZE - 1}px 0 0 0;
+  background: ${({ theme }) => theme.colorTokens.neutral.background_default};
+  border: 1px solid ${({ theme }) => theme.colorTokens.neutral.border_default};
   box-sizing: border-box;
-  min-height: calc(1.5em + 22px);
-  padding: 12px;
-  border-radius: 12px;
-  text-align: left;
-  line-height: 1.5;
-  background: #fff;
-  border: #aeaeae;
-  color: #888888;
-  padding: 5px;
-  margin: 5px 0 0 0;
+  padding: ${({ theme }) => theme.spacing.unit(1)}px 0;
+  border-radius: 4px;
   position: absolute;
-  height: auto;
   width: 100%;
   overflow: auto;
   z-index: 1;
-  outline: 0px;
-  list-style: none;
+  list-style-type: none;
 
   &.hidden {
     opacity: 0;
@@ -137,13 +164,16 @@ const Select: React.FC<Props> = ({ children, placeholder = 'placeholder', size =
           <StyledChevronDown8 />
         </SelectContainer>
       </StyledA11yButton>
-      <Listbox
-        {...getListboxProps()}
-        aria-hidden={!listboxVisible}
-        className={listboxVisible ? '' : 'hidden'}
-      >
-        <SelectProvider value={contextValue}>{children}</SelectProvider>
-      </Listbox>
+      <>
+        <Arrow />
+        <Listbox
+          {...getListboxProps()}
+          aria-hidden={!listboxVisible}
+          className={listboxVisible ? '' : 'hidden'}
+        >
+          <SelectProvider value={contextValue}>{children}</SelectProvider>
+        </Listbox>
+      </>
     </Root>
   );
 };
