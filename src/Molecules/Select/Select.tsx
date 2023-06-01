@@ -2,38 +2,23 @@ import * as React from 'react';
 import R from 'ramda';
 import styled from 'styled-components';
 import useSelect, { SelectProvider } from '@mui/base/useSelect';
-import { styled as uiStyled } from '@mui/system';
 import { Icon, Typography } from '../..';
 import NormalizedElements from '../../common/NormalizedElements';
 
-const blue = {
-  100: '#DAECFF',
-  200: '#99CCF3',
-  400: '#3399FF',
-  500: '#007FFF',
-  600: '#0072E5',
-  900: '#003A75',
-};
+const Root = styled.div`
+  display: inline-block;
+  position: relative;
+  min-width: 200px;
+`;
 
-const grey = {
-  50: '#f6f8fa',
-  100: '#eaeef2',
-  200: '#d0d7de',
-  300: '#afb8c1',
-  400: '#8c959f',
-  500: '#6e7781',
-  600: '#57606a',
-  700: '#424a53',
-  800: '#32383f',
-  900: '#24292f',
-};
-
-const SelectContainer = styled.div`
+const SelectContainer = styled.div<{ $size: 's' | 'm' }>`
   box-sizing: border-box;
   width: 100%;
   padding: ${({ theme }) => theme.spacing.unit(2.5)}px ${({ theme }) => theme.spacing.unit(2)}px;
   border: 1px solid ${({ theme }) => theme.colorTokens.neutral.border_default};
   border-radius: ${({ theme }) => theme.spacing.unit(1)}px;
+  height: ${({ theme, $size }) =>
+    $size === 's' ? theme.spacing.unit(8) : theme.spacing.unit(10)}px;
   display: flex;
   align-items: center;
   &:hover {
@@ -49,28 +34,28 @@ const StyledChevronDown8 = styled(Icon.ChevronDown8)`
   margin-left: auto;
 `;
 
-const StyledTypography = styled(Typography)`
+const StyledTypography = styled(Typography)<{ $hasValue: boolean }>`
   display: inline-block;
   margin-right: ${({ theme }) => theme.spacing.unit(2)}px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: ${({ theme, $hasValue }) =>
+    $hasValue ? theme.colorTokens.neutral.text_default : theme.colorTokens.neutral.text_weak};
 `;
 
-const Listbox = uiStyled('ul')(
-  ({ theme }) => `
+const Listbox = styled.ul`
   font-family: IBM Plex Sans, sans-serif;
   font-size: 0.875rem;
   box-sizing: border-box;
   min-height: calc(1.5em + 22px);
-  min-width: 320px;
   padding: 12px;
   border-radius: 12px;
   text-align: left;
   line-height: 1.5;
-  background: ${theme.palette.mode === 'dark' ? grey[900] : '#fff'};
-  border: 1px solid ${theme.palette.mode === 'dark' ? grey[700] : grey[200]};
-  color: ${theme.palette.mode === 'dark' ? grey[300] : grey[900]};
+  background: #fff;
+  border: #aeaeae;
+  color: #888888;
   padding: 5px;
   margin: 5px 0 0 0;
   position: absolute;
@@ -86,8 +71,7 @@ const Listbox = uiStyled('ul')(
     visibility: hidden;
     transition: opacity 0.4s ease, visibility 0.4s step-end;
   }
-  `,
-);
+`;
 
 const CleanNormalizedButton = React.forwardRef((props: any, ref: React.Ref<any>) => (
   <NormalizedElements.Button {...R.omit(['absolutePositioning'], props)} ref={ref} />
@@ -119,17 +103,23 @@ const StyledA11yButton = styled(CleanNormalizedButton)`
 interface Props {
   children: React.ReactNode;
   placeholder?: string;
+  size?: 's' | 'm';
 }
 
-const Select: React.FC<Props> = ({ children, placeholder = 'placeholder' }) => {
+const Select: React.FC<Props> = ({ children, placeholder = 'placeholder', size = 'm' }) => {
   const listboxRef = React.useRef<HTMLUListElement>(null);
   const [listboxVisible, setListboxVisible] = React.useState(false);
 
-  const { getButtonProps, getListboxProps, contextValue, value } = useSelect<string, false>({
+  const { getButtonProps, getListboxProps, contextValue, value, options } = useSelect<
+    string,
+    false
+  >({
     listboxRef,
     onOpenChange: setListboxVisible,
     open: listboxVisible,
   });
+
+  console.log({ value });
 
   React.useEffect(() => {
     if (listboxVisible) {
@@ -138,10 +128,12 @@ const Select: React.FC<Props> = ({ children, placeholder = 'placeholder' }) => {
   }, [listboxVisible]);
 
   return (
-    <>
+    <Root>
       <StyledA11yButton {...getButtonProps()}>
-        <SelectContainer>
-          <StyledTypography className="placeholder">{value || placeholder}</StyledTypography>
+        <SelectContainer $size={size}>
+          <StyledTypography className="placeholder" $hasValue={!!value} type="secondary">
+            {value || placeholder}
+          </StyledTypography>
           <StyledChevronDown8 />
         </SelectContainer>
       </StyledA11yButton>
@@ -152,7 +144,7 @@ const Select: React.FC<Props> = ({ children, placeholder = 'placeholder' }) => {
       >
         <SelectProvider value={contextValue}>{children}</SelectProvider>
       </Listbox>
-    </>
+    </Root>
   );
 };
 

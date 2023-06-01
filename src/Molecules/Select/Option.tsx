@@ -49,7 +49,7 @@ function Option(props: OptionProps) {
     disabled,
     label: children,
   });
-  console.log({ value, highlighted });
+  //   console.log({ value, highlighted });
 
   return (
     <Item {...getRootProps()} className={className}>

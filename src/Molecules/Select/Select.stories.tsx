@@ -2,14 +2,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Display } from '../../common/Display';
 
 import { Select, Option } from '.';
-
-const StyledDiv = styled.div`
-  width: 100%;
-  padding: 12px;
-  box-sizing: border-box;
-`;
 
 const options = [
   {
@@ -36,11 +31,36 @@ export default {
 } as ComponentMeta<typeof Select>;
 
 export const Primary: ComponentStory<typeof Select> = () => (
-  <StyledDiv>
-    <Select>
-      {options.map((option) => (
-        <Option value={option.value}>{option.label}</Option>
-      ))}
-    </Select>
-  </StyledDiv>
+  <Select>
+    {options.map((option) => (
+      <Option value={option.value}>{option.label}</Option>
+    ))}
+  </Select>
+);
+
+export const DifferentSizes: ComponentStory<typeof Select> = () => (
+  <Display
+    items={[
+      {
+        title: 'Default (medium) size',
+        component: (
+          <Select size="m">
+            {options.map((option) => (
+              <Option value={option.value}>{option.label}</Option>
+            ))}
+          </Select>
+        ),
+      },
+      {
+        title: 'Small size',
+        component: (
+          <Select size="s">
+            {options.map((option) => (
+              <Option value={option.value}>{option.label}</Option>
+            ))}
+          </Select>
+        ),
+      },
+    ]}
+  />
 );
