@@ -1,3 +1,10 @@
+## [12.30.3](https://github.com/nordnet/ui/compare/v12.30.2...v12.30.3) (2023-06-08)
+
+
+### Bug Fixes
+
+* 🐛 @nordnet/design-tokens -> [secure] ([a5c8dfd](https://github.com/nordnet/ui/commit/a5c8dfd))
+
 ## [12.30.2](https://github.com/nordnet/ui/compare/v12.30.1...v12.30.2) (2023-05-26)
 
 
