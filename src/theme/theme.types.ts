@@ -13,6 +13,11 @@ type Unit = {
   valueOf: () => number;
 };
 
+export type BORDER_RADIUS = 2 | 4 | 6;
+type BorderRadius = {
+  (radius: BORDER_RADIUS): string;
+};
+
 export type RawColor = {
   // BRAND
   brandBlue: string;
@@ -1007,4 +1012,5 @@ export type Theme = {
   };
   isHighContrastMode: boolean;
   isDarkMode: boolean;
+  borderRadius: BorderRadius;
 };

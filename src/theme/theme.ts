@@ -2,7 +2,7 @@ import { filter, mapObjIndexed, pipe, prop as Rprop, values } from 'ramda';
 import { lightTheme, darkTheme, a11yTheme } from '@nordnet/design-tokens';
 
 import { assert, deprecate, isNumber } from '../common/utils';
-import { Theme, ThemeColorsVersion, ThemeConfig } from './theme.types';
+import { BORDER_RADIUS, Theme, ThemeColorsVersion, ThemeConfig } from './theme.types';
 import { createLightColors, getColorLightScheme } from './createLightColors';
 import { createDarkColors, getColorDarkScheme } from './createDarkColors';
 
@@ -81,6 +81,8 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     gutter: GUTTER,
   };
 
+  const borderRadius = (radius: BORDER_RADIUS) => `${radius}px`;
+
   return {
     animation: {
       easing: {},
@@ -119,5 +121,6 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     size: deprecate('theme.size, please use theme.breakpoint instead.')(size),
     spacing,
     zIndex,
+    borderRadius,
   };
 };
