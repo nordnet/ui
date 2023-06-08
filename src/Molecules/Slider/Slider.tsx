@@ -255,7 +255,7 @@ const Slider: Component = ({
                 }}
               >
                 <StyledDropdownBubble
-                  borderRadius={2gst}
+                  borderRadius={2}
                   $variant={variant}
                   position="center"
                   placement="top"
