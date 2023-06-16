@@ -1,10 +1,10 @@
 // Button.stories.ts|tsx
 import React, { useState } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Typography } from '../..';
+import { Icon, Typography } from '../..';
 import { Display } from '../../common/Display';
 
-import { Select, Option, Group } from '.';
+import { Select, Option, Group, Action } from '.';
 import { SelectedValueMultiSelect } from './SelectedValueMultiSelect';
 
 const options = [
@@ -186,3 +186,16 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
     </Select>
   );
 };
+
+export const WithActionsInFooter: ComponentStory<typeof Select> = () => (
+  <Select
+    placeholder="placeholder"
+    footer={<Action icon={<Icon.Add16 color="inherit" />}>Some Action</Action>}
+  >
+    {options.map((option) => (
+      <Option key={option.value} value={option.value}>
+        {option.label}
+      </Option>
+    ))}
+  </Select>
+);

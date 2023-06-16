@@ -1,4 +1,5 @@
 import { SelectProps } from '@mui/base';
+import React from 'react';
 
 export type Props = {
   children: React.ReactNode;
@@ -10,5 +11,5 @@ export type Props = {
    * width in units
    */
   width?: number;
-  onOpenChange?: () => void;
+  footer?: React.ReactNode;
 } & SelectProps<string | string[], boolean>;

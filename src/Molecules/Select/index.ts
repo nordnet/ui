@@ -1,6 +1,7 @@
-import { Select } from './Select';
-import { Option } from './Option';
+import { Action } from './Action';
 import { Group } from './Group';
+import { Option } from './Option';
+import { Select } from './Select';
 import { SelectedValueMultiSelect } from './SelectedValueMultiSelect';
 
-export { Select, Option, Group, SelectedValueMultiSelect };
+export { Action, Select, Option, Group, SelectedValueMultiSelect };
