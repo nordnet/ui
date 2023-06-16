@@ -79,7 +79,7 @@ import PromotionBanner from './Molecules/PromotionBanner';
 import Rating from './Molecules/Rating';
 import SegmentedControl from './Molecules/SegmentedControl';
 import OldSelect from './Molecules/OldSelect';
-import Select from './Molecules/Select';
+import { Select } from './Molecules/Select';
 import SelectionCard from './Molecules/SelectionCard';
 import ShowMoreButton from './Molecules/ShowMoreButton';
 import Slider from './Molecules/Slider';

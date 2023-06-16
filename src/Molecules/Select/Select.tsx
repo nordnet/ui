@@ -1,22 +1,28 @@
 import * as React from 'react';
-import R from 'ramda';
 import styled from 'styled-components';
 import useSelect, { SelectProvider } from '@mui/base/useSelect';
-import { Icon, Typography } from '../..';
+import { Icon, Typography, FadedScroll, units } from '../..';
 import NormalizedElements from '../../common/NormalizedElements';
+import { Props } from './Select.types';
 
-const Root = styled.div`
+const TRIANGLE_SIZE = 10;
+const BORDER_SIZE = 1;
+
+export const ellipsis = `
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
+
+const Root = styled.div<{ $width: number }>`
   display: inline-block;
   position: relative;
-  min-width: 200px;
+  width: ${(props) => units(props.$width)}px;
 `;
 
 const StyledChevronDown8 = styled(Icon.ChevronDown8)`
   margin-left: auto;
 `;
-
-const TRIANGLE_SIZE = 10;
-const BORDER_SIZE = 1;
 
 const Arrow = styled.div`
   position: absolute;
@@ -54,16 +60,14 @@ const Arrow = styled.div`
 const StyledTypography = styled(Typography)<{ $hasValue: boolean }>`
   display: inline-block;
   margin-right: ${({ theme }) => theme.spacing.unit(2)}px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: ${({ theme, $hasValue }) =>
-    $hasValue ? theme.colorTokens.neutral.text_default : theme.colorTokens.neutral.text_weak};
+  color: inherit;
+  ${ellipsis}
 `;
 
 const ListContainer = styled.div<{ $hidden: boolean }>`
   position: absolute;
   width: 100%;
+  cursor: pointer;
   z-index: ${({ theme }) => theme.zIndex.dropdown};
 
   ${({ $hidden }) =>
@@ -74,7 +78,7 @@ const ListContainer = styled.div<{ $hidden: boolean }>`
       : ''}
 `;
 
-const Listbox = styled.ul`
+const ListboxContainer = styled.div`
   margin: ${TRIANGLE_SIZE}px 0 0 0;
   background: ${({ theme }) => theme.colorTokens.neutral.background_default};
   border: 1px solid ${({ theme }) => theme.colorTokens.neutral.border_default};
@@ -82,19 +86,29 @@ const Listbox = styled.ul`
   padding: ${({ theme }) => theme.spacing.unit(1)}px 0;
   border-radius: 4px;
   overflow: auto;
+`;
+
+const Listbox = styled.ul`
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 `;
 
 const CleanNormalizedButton = React.forwardRef((props: any, ref: React.Ref<any>) => (
-  <NormalizedElements.Button ref={ref} />
+  <NormalizedElements.Button ref={ref} {...props} />
 ));
 
-const StyledA11yButton = styled(CleanNormalizedButton)<{ $size: 's' | 'm' }>`
+const Trigger = styled(CleanNormalizedButton)<{ $size: 's' | 'm'; $hasError: boolean }>`
   cursor: pointer;
-  color: inherit;
+  color: ${({ theme, $hasValue }) =>
+    $hasValue ? theme.colorTokens.neutral.text_default : theme.colorTokens.neutral.text_weak};
   box-sizing: border-box;
   padding: ${({ theme }) => theme.spacing.unit(2.5)}px ${({ theme }) => theme.spacing.unit(2)}px;
-  border: 1px solid ${({ theme }) => theme.colorTokens.neutral.border_default};
+  border: 1px solid
+    ${({ theme, $hasError }) =>
+      $hasError
+        ? theme.colorTokens.error.border_default
+        : theme.colorTokens.neutral.border_default};
   border-radius: ${({ theme }) => theme.spacing.unit(1)}px;
   height: ${({ theme, $size }) =>
     $size === 's' ? theme.spacing.unit(8) : theme.spacing.unit(10)}px;
@@ -104,35 +118,48 @@ const StyledA11yButton = styled(CleanNormalizedButton)<{ $size: 's' | 'm' }>`
   background: ${({ theme }) => theme.colorTokens.neutral.background_default};
 
   &:hover {
-    border: 1px solid ${({ theme }) => theme.colorTokens.neutral.border_hover};
+    border-color: ${({ theme }) => theme.colorTokens.neutral.border_hover};
   }
 
   &:focus-within,
-  &:active {
-    border: 1px solid ${({ theme }) => theme.colorTokens.action.border_default};
+  &:focus {
+    border-color: ${({ theme }) => theme.colorTokens.action.border_default};
+  }
+
+  &[disabled] {
+    color: ${({ theme }) => theme.colorTokens.neutral.text_disabled};
+    background: ${({ theme }) => theme.colorTokens.neutral.background_disabled};
+    border-color: ${({ theme }) => theme.colorTokens.neutral.border_disabled};
+    cursor: not-allowed;
+
+    ${StyledChevronDown8} {
+      color: ${({ theme }) => theme.colorTokens.neutral.icon_disabled};
+    }
   }
 `;
 
-interface Props {
-  children: React.ReactNode;
-  placeholder?: string;
-  size?: 's' | 'm';
-}
-
-const Select: React.FC<Props> = ({ children, placeholder = 'placeholder', size = 'm' }) => {
+export function Select({
+  children,
+  placeholder,
+  size = 'm',
+  width = 50,
+  disabled,
+  hasError = false,
+  multiple,
+  selectedValue,
+  onChange,
+}: Props) {
   const listboxRef = React.useRef<HTMLUListElement>(null);
   const [listboxVisible, setListboxVisible] = React.useState(false);
 
-  const { getButtonProps, getListboxProps, contextValue, value, options } = useSelect<
-    string,
-    false
-  >({
+  const { getButtonProps, getListboxProps, contextValue, value } = useSelect<string, false>({
     listboxRef,
-    onOpenChange: setListboxVisible,
+    disabled,
+    multiple: multiple as false | undefined,
     open: listboxVisible,
+    onChange,
+    onOpenChange: setListboxVisible,
   });
-
-  console.log({ value });
 
   React.useEffect(() => {
     if (listboxVisible) {
@@ -141,21 +168,25 @@ const Select: React.FC<Props> = ({ children, placeholder = 'placeholder', size =
   }, [listboxVisible]);
 
   return (
-    <Root>
-      <StyledA11yButton $size={size} {...getButtonProps()}>
-        <StyledTypography className="placeholder" $hasValue={!!value} type="secondary">
-          {value || placeholder}
-        </StyledTypography>
-        <StyledChevronDown8 />
-      </StyledA11yButton>
-      <ListContainer aria-hidden={!listboxVisible} $hidden={!listboxVisible}>
+    <Root $width={width}>
+      <Trigger $size={size} $hasError={hasError} $hasValue={!!value} {...getButtonProps()}>
+        {selectedValue || (
+          <StyledTypography $hasValue={!!value} type="secondary">
+            {value || placeholder}
+          </StyledTypography>
+        )}
+        <StyledChevronDown8 color={(t) => t.colorTokens.neutral.icon_default} />
+      </Trigger>
+      <ListContainer aria-hidden={!listboxVisible} $hidden={listboxVisible}>
         <Arrow />
-        <Listbox {...getListboxProps()}>
-          <SelectProvider value={contextValue}>{children}</SelectProvider>
-        </Listbox>
+        <ListboxContainer>
+          <FadedScroll maxHeight={50}>
+            <Listbox {...getListboxProps()}>
+              <SelectProvider value={contextValue}>{children}</SelectProvider>
+            </Listbox>
+          </FadedScroll>
+        </ListboxContainer>
       </ListContainer>
     </Root>
   );
-};
-
-export default Select;
+}

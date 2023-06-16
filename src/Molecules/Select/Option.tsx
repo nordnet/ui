@@ -2,49 +2,41 @@
 import React from 'react';
 import useOption from '@mui/base/useOption';
 import styled from 'styled-components';
+import { Flexbox, Icon, Typography, units } from '../..';
+import { isElement } from '../../common/utils';
+import { Props } from './Option.types';
+import { ellipsis } from './Select';
 
-interface OptionProps {
-  children?: React.ReactNode;
-  className?: string;
-  value: string;
-  disabled?: boolean;
-}
+const StyledTypography = styled(Typography)`
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+  ${ellipsis}
+`;
 
-const Item = styled.li`
-  padding: 8px;
-  border-radius: 0.45em;
+const StyledFlex = styled(Flexbox)`
+  min-width: 0;
+`;
+
+const Item = styled.li<{ $highlighted: boolean }>`
+  padding: ${units(1)}px ${units(3)}px;
+  color: ${({ theme }) => theme.colorTokens.neutral.text_default};
+
+  ${({ $highlighted, theme }) =>
+    $highlighted ? `background-color: ${theme.colorTokens.neutral.background_hover};` : ''}
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colorTokens.neutral.background_hover};
+  }
 
   &[aria-selected='true'] {
-    background-color: red;
-    color: blue;
-  }
-
-  &.highlighted,
-  &:hover {
-    background-color: purple;
-    color: green;
-  }
-
-  &[aria-selected='true'].highlighted {
-    background-color: orange;
-    color: blue;
-  }
-
-  &:before {
-    content: '';
-    width: 1ex;
-    height: 1ex;
-    margin-right: 1ex;
-    background-color: gray;
-    display: inline-block;
-    border-radius: 50%;
-    vertical-align: middle;
+    color: ${({ theme }) => theme.colorTokens.action.text_default};
   }
 `;
 
-function Option(props: OptionProps) {
+export function Option(props: Props) {
   const { children, value, className, disabled = false } = props;
-  const { getRootProps, highlighted } = useOption({
+  const { getRootProps, highlighted, selected } = useOption({
     value,
     disabled,
     label: children,
@@ -52,10 +44,27 @@ function Option(props: OptionProps) {
   //   console.log({ value, highlighted });
 
   return (
-    <Item {...getRootProps()} className={className}>
-      {children}
+    <Item {...getRootProps()} $highlighted={highlighted} className={className}>
+      <Flexbox
+        container
+        alignItems="center"
+        alignContent="center"
+        gap={2}
+        justifyContent="space-between"
+      >
+        <StyledFlex item>
+          {isElement(children) ? (
+            children
+          ) : (
+            <StyledTypography type="secondary">{children}</StyledTypography>
+          )}
+        </StyledFlex>
+        {selected && (
+          <Flexbox item>
+            <Icon.Check16 color={(t) => t.colorTokens.action.icon_default} />
+          </Flexbox>
+        )}
+      </Flexbox>
     </Item>
   );
 }
-
-export default Option;
