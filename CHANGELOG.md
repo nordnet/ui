@@ -1,3 +1,15 @@
+# [12.31.0](https://github.com/nordnet/ui/compare/v12.30.3...v12.31.0) (2023-06-19)
+
+
+### Bug Fixes
+
+* update svg path ([be2740f](https://github.com/nordnet/ui/commit/be2740f))
+
+
+### Features
+
+* add loan16 icon ([ca3e518](https://github.com/nordnet/ui/commit/ca3e518))
+
 ## [12.30.3](https://github.com/nordnet/ui/compare/v12.30.2...v12.30.3) (2023-06-08)
 
 
