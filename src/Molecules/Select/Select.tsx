@@ -138,11 +138,6 @@ const Trigger = styled(CleanNormalizedButton)<{ $size: 's' | 'm'; $hasError: boo
   }
 `;
 
-const Footer = styled.div`
-  border-top: 1px solid ${({ theme }) => theme.colorTokens.neutral.border_default};
-  padding-top: ${units(1)}px;
-`;
-
 export function Select({
   children,
   placeholder,
@@ -151,7 +146,8 @@ export function Select({
   disabled,
   hasError = false,
   multiple,
-  footer,
+  listBoxHeader,
+  listBoxFooter,
   selectedValue,
   onChange,
 }: Props) {
@@ -186,12 +182,13 @@ export function Select({
       <ListContainer aria-hidden={!listboxVisible} $hidden={listboxVisible}>
         <Arrow />
         <ListboxContainer>
+          {listBoxHeader || null}
           <FadedScroll maxHeight={50}>
             <Listbox {...getListboxProps()}>
               <SelectProvider value={contextValue}>{children}</SelectProvider>
             </Listbox>
           </FadedScroll>
-          {footer ? <Footer>{footer}</Footer> : null}
+          {listBoxFooter || null}
         </ListboxContainer>
       </ListContainer>
     </Root>

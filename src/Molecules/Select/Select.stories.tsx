@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Icon, Typography } from '../..';
 import { Display } from '../../common/Display';
 
-import { Select, Option, Group, Action } from '.';
+import { Select, Option, Group, Action, ListBoxFooter, ListBoxHeader, Search, ToggleAll } from '.';
 import { SelectedValueMultiSelect } from './SelectedValueMultiSelect';
 
 const options = [
@@ -190,7 +190,11 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
 export const WithActionsInFooter: ComponentStory<typeof Select> = () => (
   <Select
     placeholder="placeholder"
-    footer={<Action icon={<Icon.Add16 color="inherit" />}>Some Action</Action>}
+    listBoxFooter={
+      <ListBoxFooter>
+        <Action icon={<Icon.Add16 color="inherit" />}>Some Action</Action>
+      </ListBoxFooter>
+    }
   >
     {options.map((option) => (
       <Option key={option.value} value={option.value}>
@@ -199,3 +203,54 @@ export const WithActionsInFooter: ComponentStory<typeof Select> = () => (
     ))}
   </Select>
 );
+
+export const WithSelectAllInHeader: ComponentStory<typeof Select> = () => {
+  return (
+    <Select
+      placeholder="placeholder"
+      listBoxHeader={
+        <ListBoxHeader withBorder>
+          <ToggleAll label="Toggle All" />
+        </ListBoxHeader>
+      }
+      multiple
+    >
+      {options.map((option) => (
+        <Option key={option.value} value={option.value}>
+          {option.label}
+        </Option>
+      ))}
+    </Select>
+  );
+};
+
+export const WithSearchInHeader: ComponentStory<typeof Select> = () => {
+  const [filteredOptions, setFilteredOptions] = useState(options);
+
+  return (
+    <Select
+      placeholder="placeholder"
+      listBoxHeader={
+        <ListBoxHeader>
+          <Search
+            label="search"
+            placeholder="Search"
+            onChange={(e) =>
+              setFilteredOptions(
+                options.filter((option) =>
+                  option.label.toLowerCase().includes(e.target.value.toLowerCase()),
+                ),
+              )
+            }
+          />
+        </ListBoxHeader>
+      }
+    >
+      {filteredOptions.map((option) => (
+        <Option key={option.value} value={option.value}>
+          {option.label}
+        </Option>
+      ))}
+    </Select>
+  );
+};

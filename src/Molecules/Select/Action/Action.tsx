@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button, units } from '../..';
+import { Button, units } from '../../..';
 import { Props } from './Action.types';
 
 const StyledButton = styled(Button)`

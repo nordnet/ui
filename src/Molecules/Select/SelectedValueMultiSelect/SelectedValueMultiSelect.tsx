@@ -1,9 +1,9 @@
 /* eslint-disable react/require-default-props */
 import React from 'react';
 import styled from 'styled-components';
-import { Badge, Flexbox, Typography } from '../..';
+import { Badge, Flexbox, Typography } from '../../..';
 import { Props } from './SelectedValueMultiSelect.types';
-import { ellipsis } from './Select';
+import { ellipsis } from '../Select';
 
 const StyledTypography = styled(Typography)`
   display: block;

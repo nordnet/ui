@@ -1,7 +1,7 @@
 /* eslint-disable react/require-default-props */
 import React from 'react';
 import styled from 'styled-components';
-import { Typography, units } from '../..';
+import { Typography, units } from '../../..';
 import { Props } from './Group.types';
 
 const NormalizedUl = styled.ul`

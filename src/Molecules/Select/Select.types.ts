@@ -3,13 +3,14 @@ import React from 'react';
 
 export type Props = {
   children: React.ReactNode;
-  placeholder?: string;
-  size?: 's' | 'm';
   hasError?: boolean;
+  listBoxFooter?: React.ReactNode;
+  listBoxHeader?: React.ReactNode;
+  placeholder?: string;
   selectedValue?: React.ReactNode;
+  size?: 's' | 'm';
   /**
    * width in units
    */
   width?: number;
-  footer?: React.ReactNode;
 } & SelectProps<string | string[], boolean>;
