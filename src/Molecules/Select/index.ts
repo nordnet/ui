@@ -5,7 +5,7 @@ import { ListBoxHeader } from './ListBoxHeader';
 import { Option } from './Option';
 import { Search } from './Search';
 import { Select } from './Select';
-import { SelectedValueMultiSelect } from './SelectedValueMultiSelect';
+import { ValueDisplayMultiSelect } from './ValueDisplayMultiSelect';
 import { ToggleAll } from './ToggleAll';
 
 export {
@@ -16,6 +16,6 @@ export {
   Option,
   Search,
   Select,
-  SelectedValueMultiSelect,
+  ValueDisplayMultiSelect,
   ToggleAll,
 };

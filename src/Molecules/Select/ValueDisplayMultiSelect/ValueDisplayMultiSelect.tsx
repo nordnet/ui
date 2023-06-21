@@ -2,8 +2,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Badge, Flexbox, Typography } from '../../..';
-import { Props } from './SelectedValueMultiSelect.types';
-import { ellipsis } from '../Select';
+import { ellipsis } from '../Select.styles';
+import { Props } from './ValueDisplayMultiSelect.types';
 
 const StyledTypography = styled(Typography)`
   display: block;
@@ -11,7 +11,7 @@ const StyledTypography = styled(Typography)`
   ${ellipsis}
 `;
 
-export function SelectedValueMultiSelect(props: Props) {
+export function ValueDisplayMultiSelect(props: Props) {
   const { selectedCount, label, placeholderLabel } = props;
 
   if (selectedCount === 0) {

@@ -7,7 +7,7 @@ export type Props = {
   listBoxFooter?: React.ReactNode;
   listBoxHeader?: React.ReactNode;
   placeholder?: string;
-  selectedValue?: React.ReactNode;
+  valueDisplay?: React.ReactNode;
   size?: 's' | 'm';
   /**
    * width in units

@@ -4,8 +4,17 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Icon, Typography } from '../..';
 import { Display } from '../../common/Display';
 
-import { Select, Option, Group, Action, ListBoxFooter, ListBoxHeader, Search, ToggleAll } from '.';
-import { SelectedValueMultiSelect } from './SelectedValueMultiSelect';
+import {
+  Select,
+  Option,
+  Group,
+  Action,
+  ListBoxFooter,
+  ListBoxHeader,
+  Search,
+  ToggleAll,
+  ValueDisplayMultiSelect,
+} from '.';
 
 const options = [
   {
@@ -136,8 +145,8 @@ export const MultiSelect: ComponentStory<typeof Select> = () => {
       multiple
       placeholder="placeholder"
       onChange={(e, value) => setSelectedCount(value ? value.length : 0)}
-      selectedValue={
-        <SelectedValueMultiSelect
+      valueDisplay={
+        <ValueDisplayMultiSelect
           placeholderLabel="Select a value"
           label={selectedCount > 1 ? 'Colors' : 'Color'}
           selectedCount={selectedCount}
@@ -161,8 +170,8 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
       multiple
       placeholder="placeholder"
       onChange={(e, value) => setSelectedCount(value ? value.length : 0)}
-      selectedValue={
-        <SelectedValueMultiSelect
+      valueDisplay={
+        <ValueDisplayMultiSelect
           label={selectedCount > 1 ? 'Colors' : 'Color'}
           placeholderLabel="Select a value"
           selectedCount={selectedCount}

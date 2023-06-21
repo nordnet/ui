@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { Flexbox, Icon, Typography, units } from '../../..';
 import { isElement } from '../../../common/utils';
 import { Props } from './Option.types';
-import { ellipsis } from '../Select';
+import { ellipsis } from '../Select.styles';
 
 const StyledTypography = styled(Typography)`
   display: inline-block;
