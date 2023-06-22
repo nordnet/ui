@@ -4,7 +4,7 @@ import { isArray } from '../../common/utils';
 
 type Props = {
   name: string;
-  value?: string | string[];
+  value: string | string[];
   multiple?: boolean;
 };
 

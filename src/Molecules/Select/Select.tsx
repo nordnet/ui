@@ -32,10 +32,10 @@ export function Select({
   const listboxRef = React.useRef<HTMLUListElement>(null);
   const [listboxVisible, setListboxVisible] = React.useState(false);
 
-  const { getButtonProps, getListboxProps, contextValue, value } = useSelect<string, false>({
+  const { getButtonProps, getListboxProps, contextValue, value } = useSelect<string, boolean>({
     listboxRef,
     disabled,
-    multiple: multiple as false | undefined,
+    multiple,
     open: listboxVisible,
     onChange,
     onOpenChange: setListboxVisible,
@@ -72,13 +72,7 @@ export function Select({
           </ListboxContainer>
         </ListContainer>
       </Root>
-      {name ? (
-        <HiddenSelect
-          name={name}
-          multiple={multiple}
-          value={value as string | string[] | undefined}
-        />
-      ) : null}
+      {name && value ? <HiddenSelect name={name} multiple={multiple} value={value} /> : null}
     </>
   );
 }
