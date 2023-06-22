@@ -37,6 +37,7 @@ const StyledCard = styled.div<Props>`
   && {
     ${(p) => !R.isNil(p.grow) && `flex-grow: ${p.grow}`};
   }
+  border-radius: ${({ theme }) => theme.borderRadius(8)};
 `;
 
 export const Card: React.FC<Props> = React.forwardRef<HTMLDivElement, Props>(
