@@ -1,6 +1,7 @@
 import * as React from 'react';
 import useSelect, { SelectProvider } from '@mui/base/useSelect';
 import { FadedScroll } from '../..';
+import { HiddenSelect } from './HiddenSelect';
 import {
   Arrow,
   ListContainer,
@@ -25,6 +26,7 @@ export function Select({
   listBoxFooter,
   valueDisplay,
   onChange,
+  name,
 }: Props) {
   const listboxRef = React.useRef<HTMLUListElement>(null);
   const [listboxVisible, setListboxVisible] = React.useState(false);
@@ -45,27 +47,36 @@ export function Select({
   }, [listboxVisible]);
 
   return (
-    <Root $width={width}>
-      <Trigger $size={size} $hasError={hasError} $hasValue={!!value} {...getButtonProps()}>
-        {valueDisplay || (
-          <StyledTypography $hasValue={!!value} type="secondary">
-            {value || placeholder}
-          </StyledTypography>
-        )}
-        <StyledChevronDown8 color={(t) => t.colorTokens.neutral.icon_default} />
-      </Trigger>
-      <ListContainer aria-hidden={!listboxVisible} $hidden={listboxVisible}>
-        <Arrow />
-        <ListboxContainer>
-          {listBoxHeader || null}
-          <FadedScroll maxHeight={50}>
-            <Listbox {...getListboxProps()}>
-              <SelectProvider value={contextValue}>{children}</SelectProvider>
-            </Listbox>
-          </FadedScroll>
-          {listBoxFooter || null}
-        </ListboxContainer>
-      </ListContainer>
-    </Root>
+    <>
+      <Root $width={width}>
+        <Trigger $size={size} $hasError={hasError} $hasValue={!!value} {...getButtonProps()}>
+          {valueDisplay || (
+            <StyledTypography $hasValue={!!value} type="secondary">
+              {value || placeholder}
+            </StyledTypography>
+          )}
+          <StyledChevronDown8 color={(t) => t.colorTokens.neutral.icon_default} />
+        </Trigger>
+        <ListContainer aria-hidden={!listboxVisible} $hidden={listboxVisible}>
+          <Arrow />
+          <ListboxContainer>
+            {listBoxHeader || null}
+            <FadedScroll maxHeight={50}>
+              <Listbox {...getListboxProps()}>
+                <SelectProvider value={contextValue}>{children}</SelectProvider>
+              </Listbox>
+            </FadedScroll>
+            {listBoxFooter || null}
+          </ListboxContainer>
+        </ListContainer>
+      </Root>
+      {name ? (
+        <HiddenSelect
+          name={name}
+          multiple={multiple}
+          value={value as string | string[] | undefined}
+        />
+      ) : null}
+    </>
   );
 }

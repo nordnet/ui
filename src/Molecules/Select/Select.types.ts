@@ -10,6 +10,10 @@ export type Props = {
   valueDisplay?: React.ReactNode;
   size?: 's' | 'm';
   /**
+   * required if select lives in a form
+   */
+  name?: string;
+  /**
    * width in units
    */
   width?: number;
