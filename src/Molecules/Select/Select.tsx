@@ -27,6 +27,7 @@ export function Select({
   valueDisplay,
   onChange,
   name,
+  value: valueFromProps,
 }: Props) {
   const listboxRef = React.useRef<HTMLUListElement>(null);
   const [listboxVisible, setListboxVisible] = React.useState(false);
@@ -38,6 +39,7 @@ export function Select({
     open: listboxVisible,
     onChange,
     onOpenChange: setListboxVisible,
+    value: valueFromProps,
   });
 
   React.useEffect(() => {

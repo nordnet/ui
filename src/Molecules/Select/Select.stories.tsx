@@ -40,6 +40,10 @@ const otherOptions = [
     label: 'second',
     value: '2',
   },
+  {
+    label: 'third',
+    value: '3',
+  },
 ];
 
 export default {
@@ -214,17 +218,36 @@ export const WithActionsInFooter: ComponentStory<typeof Select> = () => (
 );
 
 export const WithSelectAllInHeader: ComponentStory<typeof Select> = () => {
+  const [selectedValues, setSelectedValues] = useState<string[]>([]);
+
   return (
     <Select
       placeholder="placeholder"
       listBoxHeader={
         <ListBoxHeader withBorder>
-          <ToggleAll label="Toggle All" />
+          <ToggleAll
+            label="Toggle All"
+            onChange={() =>
+              setSelectedValues(selectedValues.length > 0 ? [] : otherOptions.map((o) => o.value))
+            }
+            checked={selectedValues.length === otherOptions.length}
+          />
         </ListBoxHeader>
       }
       multiple
+      value={selectedValues}
+      valueDisplay={
+        <ValueDisplayMultiSelect
+          placeholderLabel="Select a value"
+          label={selectedValues.length > 0 ? 'selected' : ''}
+          selectedCount={selectedValues.length}
+        />
+      }
+      onChange={(_, newValues: string[]) => {
+        setSelectedValues(newValues);
+      }}
     >
-      {options.map((option) => (
+      {otherOptions.map((option) => (
         <Option key={option.value} value={option.value}>
           {option.label}
         </Option>

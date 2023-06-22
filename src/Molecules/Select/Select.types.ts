@@ -17,4 +17,5 @@ export type Props = {
    * width in units
    */
   width?: number;
+  value?: string | string[];
 } & SelectProps<string | string[], boolean>;
