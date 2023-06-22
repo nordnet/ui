@@ -1,7 +1,7 @@
 // Button.stories.ts|tsx
 import React, { useState } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Icon, Typography } from '../..';
+import { Icon, Typography, Flag, Flexbox } from '../..';
 import { Display } from '../../common/Display';
 
 import {
@@ -46,6 +46,25 @@ const otherOptions = [
   },
 ];
 
+const countryOptions = [
+  {
+    label: 'Sweden',
+    value: 'se',
+  },
+  {
+    label: 'Norway',
+    value: 'no',
+  },
+  {
+    label: 'Denmark',
+    value: 'dk',
+  },
+  {
+    label: 'Finland',
+    value: 'fi',
+  },
+];
+
 export default {
   /* 👇 The title prop is optional.
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
@@ -67,9 +86,16 @@ export const Primary: ComponentStory<typeof Select> = () => (
 
 export const CustomOption: ComponentStory<typeof Select> = () => (
   <Select placeholder="placeholder">
-    {options.map((option) => (
+    {countryOptions.map((option) => (
       <Option key={option.value} value={option.value}>
-        <Typography type="primary">{option.label}</Typography>
+        <Flexbox container alignItems="center" gap={2}>
+          <Flexbox item>
+            <Flag country={option.value} size="m" />
+          </Flexbox>
+          <Flexbox item>
+            <Typography type="primary">{option.label}</Typography>
+          </Flexbox>
+        </Flexbox>
       </Option>
     ))}
   </Select>
