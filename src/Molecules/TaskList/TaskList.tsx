@@ -1,21 +1,19 @@
 import React, { FC, ReactElement } from 'react';
 import { Box, Flexbox, List, ListItem, Typography } from '../..';
-// import { StyledButton, CompletionBar, StyledButtonPill } from './TaskList.styled';
-import { Props, Task } from './TaskList.types';
-// import { useMedia } from '../../Atoms/Media';
+import { Props, Task, TaskListLabels, DisplayMode } from './TaskList.types';
 import TaskItem from './TaskItem';
 import Title from './Title';
-import ProgressDonut from './ProgressDonut';
 
 const TaskListInner: FC<{
   tasks: Task[];
   header?: string;
-  inDrawer?: boolean;
-}> = ({ tasks, header, inDrawer }): ReactElement => {
+  displayMode?: DisplayMode;
+  labels?: TaskListLabels;
+}> = ({ tasks, header, displayMode, labels }): ReactElement => {
   return (
-    <Box px={inDrawer ? 0 : 5} pb={5}>
+    <Box px={displayMode === 'DRAWER_NARROW' || displayMode === 'DRAWER_WIDE' ? 0 : 5} pb={4}>
       {header && (
-        <Box pb={3}>
+        <Box py={3}>
           <Typography type="primary" weight="extrabold">
             {header}
           </Typography>
@@ -23,17 +21,9 @@ const TaskListInner: FC<{
       )}
       <List>
         <Flexbox container gap={3} direction="column">
-          {tasks?.map((t) => (
-            <ListItem key={t.taskId}>
-              <TaskItem
-                taskId={t.taskId}
-                taskState={t.taskState}
-                percentage={t.percentage}
-                inDrawer={inDrawer}
-                title={t.title}
-                description={t.description}
-                icon={t.icon}
-              />
+          {tasks?.map((task) => (
+            <ListItem key={task.taskId}>
+              <TaskItem task={task} {...labels} displayMode={displayMode} />
             </ListItem>
           ))}
         </Flexbox>
@@ -42,42 +32,46 @@ const TaskListInner: FC<{
   );
 };
 
-const TaskList: FC<Props> = ({ taskList, inDrawer }): ReactElement => {
+const TaskList: FC<Props> = ({ taskList, displayMode = 'CARD_NARROW' }): ReactElement => {
   const tasksToDo = taskList?.tasks?.filter((t) => t.taskState !== 'COMPLETED');
   const tasksCompleted = taskList?.tasks?.filter((t) => t.taskState === 'COMPLETED');
 
   if (!taskList || !taskList?.summary) return <Typography type="primary">Empty</Typography>;
 
+  const isDrawer = displayMode === 'DRAWER_NARROW' || displayMode === 'DRAWER_WIDE';
+
   return (
     <Box backgroundColor={(t) => t.colorTokens.neutral.background_default}>
-      {inDrawer && (
-        <Flexbox container justifyContent="center" direction="column" alignItems="center">
-          <ProgressDonut
-            percentageCompleted={taskList.summary.percentageCompleted}
-            maxPercentage={taskList.summary.maxPercentage}
-            size={215}
-          />
-          <Box p={2}>Summary for drawer</Box>
-        </Flexbox>
-      )}
+      {/* {inDrawer && <Title {...taskList.summary} inDrawer />}
 
-      {inDrawer && (
+      {!inDrawer && <Title {...taskList.summary} />} */}
+
+      <Title {...taskList.summary} displayMode={displayMode} />
+
+      {isDrawer && (
         <>
-          {tasksToDo && <TaskListInner tasks={tasksToDo} header="Todo" inDrawer />}
-          {tasksCompleted && <TaskListInner tasks={tasksCompleted} header="Completed" inDrawer />}
+          {tasksToDo && (
+            <TaskListInner
+              tasks={tasksToDo}
+              header={taskList.labels?.todoLabel || 'To do'}
+              labels={taskList.labels}
+              displayMode={displayMode}
+            />
+          )}
+          {tasksCompleted && (
+            <TaskListInner
+              tasks={tasksCompleted}
+              header={taskList.labels?.completedLabel || 'Completed'}
+              labels={taskList.labels}
+              displayMode={displayMode}
+            />
+          )}
         </>
       )}
 
-      {!inDrawer && (
-        <Title
-          percentageCompleted={taskList.summary.percentageCompleted}
-          maxPercentage={taskList.summary.maxPercentage}
-          title={taskList.summary.title}
-          description={taskList.summary.description}
-        />
+      {!isDrawer && tasksToDo && (
+        <TaskListInner tasks={tasksToDo} labels={taskList.labels} displayMode={displayMode} />
       )}
-
-      {!inDrawer && tasksToDo && <TaskListInner tasks={tasksToDo} />}
     </Box>
   );
 };

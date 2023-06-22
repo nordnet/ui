@@ -10,14 +10,16 @@ const CIRCLE_PROPS = {
   cy: C,
   r: R,
   fill: 'transparent',
-  strokeWidth: 7,
+  strokeWidth: 8,
 };
 
 const StyledSvg = styled.svg`
-  circle:first-child {
-    stroke: ${(t) => t.theme.colorTokens.neutral.background_disabled};
+  transform: rotate(-90deg);
+
+  circle:first-of-type {
+    stroke: ${(t) => t.theme.colorTokens.neutral.background_medium};
   }
-  circle:nth-child(2) {
+  circle:nth-of-type(2) {
     stroke: ${(t) => t.theme.colorTokens.action.background_default};
     animation: progress 0.5s ease-out forwards;
   }
@@ -41,7 +43,6 @@ const ProgressDonut: FC<TaskListCompletion & { size?: number }> = ({
       strokeDasharray={`${(100 * percentageCompleted) / maxPercentage} ${
         100 * (1 - percentageCompleted / maxPercentage)
       }`}
-      strokeDashoffset={25}
     ></circle>
   </StyledSvg>
 );

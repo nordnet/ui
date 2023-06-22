@@ -1,110 +1,147 @@
 import React, { FC, ReactElement, useState } from 'react';
 import styled from 'styled-components';
-import { Badge, Box, Button, Flexbox, Icon, Typography } from '../..';
-import { Task } from './TaskList.types';
+import { Button, Flexbox, Icon, Typography } from '../..';
+import { Task, TaskListLabels, DisplayMode } from './TaskList.types';
+import TextButtonCard from './TextButtonCard';
 
-const StyledBox = styled(Box)`
-  border: 1px solid ${(t) => t.theme.colorTokens.neutral.border_weak};
-  border-radius: ${(t) => t.theme.spacing.unit(1)}px;
+// const StyledBox = styled(Box)`
+//   border: 1px solid ${(t) => t.theme.colorTokens.neutral.border_weak};
+//   border-radius: ${(t) => t.theme.spacing.unit(1)}px;
+// `;
+
+const NoWrap = styled.span`
+  white-space: nowrap;
 `;
 
-const TaskItem: FC<Task & { inDrawer?: boolean }> = ({
-  taskState,
-  percentage,
-  inDrawer,
-  title = 'Task title',
-  description = 'Task description',
-  icon = <Icon.Lightbulb24 />,
+// const StyledButton = styled(Button)`
+//   border: 1px solid ${(t) => t.theme.colorTokens.neutral.border_weak};
+//   border-radius: ${(t) => t.theme.spacing.unit(1)}px;
+//   justify-content: flex-start;
+//   text-align: left;
+// `;
+
+// const RelativeFlexbox = styled(Flexbox)`
+//   outline: 1px solid red;
+//   position: relative;
+// `;
+
+// const AbsoluteBox = styled(Box)`
+//   left: 0;
+//   right: 0;
+//   top: 0;
+//   bottom: 0;
+//   border-radius: ${(t) => t.theme.spacing.unit(1)}px;
+//   background: ${(t) => t.theme.colorTokens.neutral.background_default};
+//   position: absolute;
+//   display: flex;
+// `;
+
+const AbsoluteFlexbox = styled(Flexbox)`
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: ${(t) => t.theme.spacing.unit(1)}px;
+  background: ${(t) => t.theme.colorTokens.neutral.background_default};
+  position: absolute;
+  padding: ${(t) => t.theme.spacing.unit(3)}px;
+`;
+
+const TaskItem: FC<{ task: Task } & TaskListLabels & { displayMode?: DisplayMode }> = ({
+  task,
+  dismissLabel = 'Dismiss',
+  dismissQuestion = 'Dismiss?',
+  dismissCancelLabel = 'Cancel',
+  dismissConfirmLabel = 'Confirm',
+  displayMode,
 }): ReactElement => {
   const [dismissMode, setDismissMode] = useState(false);
 
-  return (
-    <StyledBox p={3}>
-      <Flexbox container gap={4} alignItems="center" wrap="wrap" justifyContent="center">
-        {/* Task info */}
-        {!dismissMode && (
-          <Flexbox container item gap={4} alignItems="center" wrap="nowrap" grow={1}>
-            {/* Icon */}
-            <Flexbox item>
-              <Badge.Icon badgeColor={(t) => t.colorTokens.neutral.background_weak}>
-                {icon}
-              </Badge.Icon>
-            </Flexbox>
+  const isDrawer = displayMode === 'DRAWER_NARROW' || displayMode === 'DRAWER_WIDE';
 
-            {/* Title and description */}
-            <Flexbox container item gap={1} grow={1} direction="column" basis="288px">
-              <Flexbox container item gap={2} alignItems="center">
-                <Typography type={inDrawer ? 'primary' : 'secondary'} weight="bold">
-                  {title}
-                </Typography>
-                <Badge.Label
-                  type="secondary"
-                  badgeColor={(t) => t.colorTokens.action.background_weak}
-                  color={(t) => t.colorTokens.action.text_default}
-                >
-                  +{percentage}%
-                </Badge.Label>
-              </Flexbox>
-              <Typography type="secondary" color={(t) => t.colorTokens.neutral.text_weak}>
-                {description}
-              </Typography>
-            </Flexbox>
+  const { startLabel, taskState, onDismiss, onStart } = task;
 
-            {/* Button */}
-            {!inDrawer && <Button.Pill variant="secondary">{taskState}</Button.Pill>}
-
-            {/* Completion marker in drawer */}
-            {inDrawer && taskState === 'COMPLETED' && <Icon.CheckCircleFill24 />}
-          </Flexbox>
-        )}
-
-        {/* Dismissal dialog in drawer */}
-        {inDrawer && dismissMode && (
-          <>
-            <Flexbox container item alignItems="center" grow={1}>
-              <Box py={3}>
-                <Typography type="primary" weight="bold">
-                  Mark task as completed?
-                </Typography>
-              </Box>
-            </Flexbox>
-            <Flexbox container item gap={3} basis="331px" alignItems="center">
-              <Flexbox item flex="1 1 50%">
-                <Button.Pill
-                  variant="secondary"
-                  size="m"
-                  fullWidth
-                  onClick={() => setDismissMode(false)}
-                >
-                  Cancel
-                </Button.Pill>
-              </Flexbox>
-              <Flexbox item flex="1 1 50%">
-                <Button.Pill variant="negative" size="m" fullWidth>
-                  Mark as Done
-                </Button.Pill>
-              </Flexbox>
-            </Flexbox>
-          </>
-        )}
-
-        {/* Buttons in drawer */}
-        {inDrawer && taskState !== 'COMPLETED' && !dismissMode && (
-          <Flexbox container item gap={3} basis="331px" alignItems="center">
-            <Flexbox item flex="1 1 50%">
-              <Button variant="neutral" size="m" fullWidth onClick={() => setDismissMode(true)}>
-                Dismiss
-              </Button>
-            </Flexbox>
-            <Flexbox item flex="1 1 50%">
-              <Button.Pill variant="secondary" size="m" fullWidth>
-                {taskState}
-              </Button.Pill>
-            </Flexbox>
-          </Flexbox>
-        )}
+  /* Buttons in drawer */
+  const buttons = isDrawer && taskState !== 'COMPLETED' && (
+    <Flexbox
+      container
+      item
+      gap={3}
+      alignItems="center"
+      {...(displayMode === 'DRAWER_WIDE'
+        ? { shrink: 0, basis: '40%', justifyContent: 'flex-end' }
+        : { grow: 1, justifyContent: 'space-between' })}
+    >
+      <Flexbox item basis="50%" grow={displayMode === 'DRAWER_NARROW' ? 1 : 0}>
+        <Button variant="neutral" size="m" fullWidth onClick={() => setDismissMode(true)}>
+          <NoWrap>{dismissLabel}</NoWrap>
+        </Button>
       </Flexbox>
-    </StyledBox>
+
+      {startLabel && onStart && (
+        <Flexbox item basis="50%">
+          <Button.Pill variant="secondary" size="m" fullWidth onClick={onStart}>
+            <NoWrap>{startLabel}</NoWrap>
+          </Button.Pill>
+        </Flexbox>
+      )}
+    </Flexbox>
+  );
+
+  const dismissalDialog = isDrawer && dismissMode && (
+    <AbsoluteFlexbox
+      container
+      wrap="wrap"
+      gap={3}
+      justifyContent="space-between"
+      alignItems={displayMode === 'DRAWER_WIDE' ? 'center' : 'flex-end'}
+    >
+      <Flexbox item basis="55%" grow={displayMode === 'DRAWER_NARROW' ? 1 : 0}>
+        <Typography
+          type="primary"
+          weight="bold"
+          textAlign={displayMode === 'DRAWER_NARROW' ? 'center' : 'left'}
+          as="div"
+        >
+          {dismissQuestion}
+        </Typography>
+      </Flexbox>
+
+      <Flexbox
+        container
+        item
+        basis="40%"
+        gap={3}
+        shrink={0}
+        grow={displayMode === 'DRAWER_WIDE' ? 0 : 1}
+      >
+        <Flexbox item basis="50%">
+          <Button.Pill variant="secondary" size="m" fullWidth onClick={() => setDismissMode(false)}>
+            <NoWrap>{dismissCancelLabel}</NoWrap>
+          </Button.Pill>
+        </Flexbox>
+        <Flexbox item basis="50%">
+          <Button.Pill variant="negative" size="m" fullWidth onClick={onDismiss}>
+            <NoWrap>{dismissConfirmLabel}</NoWrap>
+          </Button.Pill>
+        </Flexbox>
+      </Flexbox>
+    </AbsoluteFlexbox>
+  );
+
+  return (
+    <TextButtonCard
+      titleIcon={task.icon}
+      title={task.title || 'Default title'}
+      titleBadgeText={`+${task.percentage}%`}
+      description={task.description || 'Default description'}
+      buttonText={displayMode === 'CARD_WIDE' ? task.startLabel : ''}
+      onClick={!isDrawer ? task.onStart : undefined}
+      statusIcon={isDrawer && task.taskState === 'COMPLETED' && <Icon.CheckCircleFill24 />}
+    >
+      {buttons}
+      {dismissalDialog}
+    </TextButtonCard>
   );
 };
 
