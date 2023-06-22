@@ -217,24 +217,27 @@ export const WithActionsInFooter: ComponentStory<typeof Select> = () => (
   </Select>
 );
 
-export const WithSelectAllInHeader: ComponentStory<typeof Select> = () => {
+export const ControlledWithToggleAll: ComponentStory<typeof Select> = () => {
   const [selectedValues, setSelectedValues] = useState<string[]>([]);
+  const [allSelected, setAllSelected] = useState<boolean>(false);
+
+  const handleToggleAll = () => {
+    if (!allSelected) {
+      setSelectedValues(otherOptions.map((option) => option.value));
+    } else {
+      setSelectedValues([]);
+    }
+    setAllSelected(!allSelected);
+  };
 
   return (
     <Select
       placeholder="placeholder"
       listBoxHeader={
         <ListBoxHeader withBorder>
-          <ToggleAll
-            label="Toggle All"
-            onChange={() =>
-              setSelectedValues(selectedValues.length > 0 ? [] : otherOptions.map((o) => o.value))
-            }
-            checked={selectedValues.length === otherOptions.length}
-          />
+          <ToggleAll label="Toggle All" onChange={handleToggleAll} checked={allSelected} />
         </ListBoxHeader>
       }
-      multiple
       value={selectedValues}
       valueDisplay={
         <ValueDisplayMultiSelect
@@ -243,9 +246,13 @@ export const WithSelectAllInHeader: ComponentStory<typeof Select> = () => {
           selectedCount={selectedValues.length}
         />
       }
-      onChange={(_, newValues: string[]) => {
-        setSelectedValues(newValues);
+      onChange={(_, newValues) => {
+        if (newValues) {
+          setSelectedValues(newValues as string[]);
+          setAllSelected(newValues.length === options.length);
+        }
       }}
+      multiple
     >
       {otherOptions.map((option) => (
         <Option key={option.value} value={option.value}>
