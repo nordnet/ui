@@ -151,7 +151,7 @@ export const MultiSelect: ComponentStory<typeof Select> = () => {
       onChange={(e, value) => setSelectedCount(value ? value.length : 0)}
       valueDisplay={
         <ValueDisplayMultiSelect
-          placeholderLabel="Select a value"
+          placeholder="Select a value"
           label={selectedCount > 1 ? 'Colors' : 'Color'}
           selectedCount={selectedCount}
         />
@@ -177,7 +177,7 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
       valueDisplay={
         <ValueDisplayMultiSelect
           label={selectedCount > 1 ? 'Colors' : 'Color'}
-          placeholderLabel="Select a value"
+          placeholder="Select a value"
           selectedCount={selectedCount}
         />
       }
@@ -238,7 +238,7 @@ export const WithSelectAllInHeader: ComponentStory<typeof Select> = () => {
       value={selectedValues}
       valueDisplay={
         <ValueDisplayMultiSelect
-          placeholderLabel="Select a value"
+          placeholder="Select a value"
           label={selectedValues.length > 0 ? 'selected' : ''}
           selectedCount={selectedValues.length}
         />
