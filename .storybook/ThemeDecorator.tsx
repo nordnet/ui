@@ -28,6 +28,7 @@ body {
     top: 10px;
     left: 10px;
     right: 10px;
+    padding: 12px;
 }
 
 .sbdocs.sbdocs-content {
