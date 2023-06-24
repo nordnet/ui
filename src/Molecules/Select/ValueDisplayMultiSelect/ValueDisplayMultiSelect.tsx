@@ -12,7 +12,7 @@ const StyledTypography = styled(Typography)`
 `;
 
 export function ValueDisplayMultiSelect(props: Props) {
-  const { selectedCount, label, placeholder } = props;
+  const { label, placeholder, selectedCount } = props;
 
   if (selectedCount === 0) {
     return (

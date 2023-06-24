@@ -46,7 +46,6 @@ export function Select({
 }: Props) {
   const listboxRef = React.useRef<HTMLUListElement>(null);
   const [listboxVisible, setListboxVisible] = React.useState(false);
-
   const { getButtonProps, getListboxProps, contextValue, value, getOptionMetadata } = useSelect<
     string,
     boolean

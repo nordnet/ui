@@ -34,7 +34,7 @@ const Item = styled.li<{ $highlighted: boolean }>`
 `;
 
 export function Option(props: Props) {
-  const { children, value, className, disabled = false, label } = props;
+  const { children, className, disabled = false, label, value } = props;
   const { getRootProps, highlighted, selected } = useOption({
     value,
     disabled,

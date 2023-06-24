@@ -17,7 +17,6 @@ const StyledTypography = styled(Typography)`
 
 export function Group(props: Props) {
   const { label, children } = props;
-  //   console.log({ value, highlighted });
 
   return (
     <li>
