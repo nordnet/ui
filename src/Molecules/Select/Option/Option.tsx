@@ -3,7 +3,6 @@ import React from 'react';
 import useOption from '@mui/base/useOption';
 import styled from 'styled-components';
 import { Flexbox, Icon, Typography, units } from '../../..';
-import { isElement } from '../../../common/utils';
 import { Props } from './Option.types';
 import { ellipsis } from '../Select.styles';
 
@@ -35,13 +34,12 @@ const Item = styled.li<{ $highlighted: boolean }>`
 `;
 
 export function Option(props: Props) {
-  const { children, value, className, disabled = false } = props;
+  const { children, value, className, disabled = false, label } = props;
   const { getRootProps, highlighted, selected } = useOption({
     value,
     disabled,
-    label: children,
+    label,
   });
-  //   console.log({ value, highlighted });
 
   return (
     <Item {...getRootProps()} $highlighted={highlighted} className={className}>
@@ -53,11 +51,7 @@ export function Option(props: Props) {
         justifyContent="space-between"
       >
         <StyledFlex item>
-          {isElement(children) ? (
-            children
-          ) : (
-            <StyledTypography type="secondary">{children}</StyledTypography>
-          )}
+          {children || <StyledTypography type="secondary">{label}</StyledTypography>}
         </StyledFlex>
         {selected && (
           <Flexbox item>

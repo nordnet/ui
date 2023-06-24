@@ -1,5 +1,5 @@
 import * as React from 'react';
-import useSelect, { SelectProvider } from '@mui/base/useSelect';
+import useSelect, { SelectProvider, UseSelectReturnValue } from '@mui/base/useSelect';
 import { FadedScroll } from '../..';
 import { HiddenSelect } from './HiddenSelect';
 import {
@@ -13,6 +13,21 @@ import {
   Trigger,
 } from './Select.styles';
 import { Props } from './Select.types';
+
+function getSelectedOptionsLabel(
+  value: string | string[],
+  getOptionMetadata: UseSelectReturnValue<string, boolean>['getOptionMetadata'],
+): string {
+  if (Array.isArray(value)) {
+    return value
+      .map((v) => getOptionMetadata(v))
+      .filter((o) => o !== undefined)
+      .map((m) => m?.ref.current?.textContent)
+      .join(', ');
+  }
+
+  return getOptionMetadata(value)?.label as string;
+}
 
 export function Select({
   children,
@@ -32,7 +47,10 @@ export function Select({
   const listboxRef = React.useRef<HTMLUListElement>(null);
   const [listboxVisible, setListboxVisible] = React.useState(false);
 
-  const { getButtonProps, getListboxProps, contextValue, value } = useSelect<string, boolean>({
+  const { getButtonProps, getListboxProps, contextValue, value, getOptionMetadata } = useSelect<
+    string,
+    boolean
+  >({
     listboxRef,
     disabled,
     multiple,
@@ -48,13 +66,15 @@ export function Select({
     }
   }, [listboxVisible]);
 
+  const selectedOptionsLabel = value ? getSelectedOptionsLabel(value, getOptionMetadata) : null;
+
   return (
     <>
       <Root $width={width}>
         <Trigger $size={size} $hasError={hasError} $hasValue={!!value} {...getButtonProps()}>
           {valueDisplay || (
             <StyledTypography $hasValue={!!value} type="secondary">
-              {value || placeholder}
+              {selectedOptionsLabel || placeholder}
             </StyledTypography>
           )}
           <StyledChevronDown8 color={(t) => t.colorTokens.neutral.icon_default} />

@@ -77,9 +77,7 @@ export default {
 export const Primary: ComponentStory<typeof Select> = () => (
   <Select placeholder="placeholder">
     {options.map((option) => (
-      <Option key={option.value} value={option.value}>
-        {option.label}
-      </Option>
+      <Option key={option.value} value={option.value} label={option.label} />
     ))}
   </Select>
 );
@@ -87,7 +85,7 @@ export const Primary: ComponentStory<typeof Select> = () => (
 export const CustomOption: ComponentStory<typeof Select> = () => (
   <Select placeholder="placeholder">
     {countryOptions.map((option) => (
-      <Option key={option.value} value={option.value}>
+      <Option key={option.value} value={option.value} label={option.label}>
         <Flexbox container alignItems="center" gap={2}>
           <Flexbox item>
             <Flag country={option.value} size="m" />
@@ -109,7 +107,7 @@ export const DifferentSizes: ComponentStory<typeof Select> = () => (
         component: (
           <Select size="m" placeholder="placeholder">
             {options.map((option) => (
-              <Option value={option.value}>{option.label}</Option>
+              <Option key={`${option.value}-m`} value={option.value} label={option.label} />
             ))}
           </Select>
         ),
@@ -119,7 +117,7 @@ export const DifferentSizes: ComponentStory<typeof Select> = () => (
         component: (
           <Select size="s" placeholder="placeholder">
             {options.map((option) => (
-              <Option value={option.value}>{option.label}</Option>
+              <Option key={`${option.value}-s`} value={option.value} label={option.label} />
             ))}
           </Select>
         ),
@@ -131,9 +129,7 @@ export const DifferentSizes: ComponentStory<typeof Select> = () => (
 export const WithError: ComponentStory<typeof Select> = () => (
   <Select placeholder="placeholder" hasError>
     {options.map((option) => (
-      <Option key={option.value} value={option.value}>
-        {option.label}
-      </Option>
+      <Option key={option.value} value={option.value} label={option.label} />
     ))}
   </Select>
 );
@@ -141,9 +137,7 @@ export const WithError: ComponentStory<typeof Select> = () => (
 export const Disabled: ComponentStory<typeof Select> = () => (
   <Select placeholder="placeholder" disabled>
     {options.map((option) => (
-      <Option key={option.value} value={option.value}>
-        {option.label}
-      </Option>
+      <Option key={option.value} value={option.value} label={option.label} />
     ))}
   </Select>
 );
@@ -152,16 +146,12 @@ export const GroupedOptions: ComponentStory<typeof Select> = () => (
   <Select placeholder="placeholder">
     <Group label="First Group">
       {options.map((option) => (
-        <Option key={option.value} value={option.value}>
-          {option.label}
-        </Option>
+        <Option key={option.value} value={option.value} label={option.label} />
       ))}
     </Group>
     <Group label="Second Group">
       {otherOptions.map((option) => (
-        <Option key={option.value} value={option.value}>
-          {option.label}
-        </Option>
+        <Option key={option.value} value={option.value} label={option.label} />
       ))}
     </Group>
   </Select>
@@ -184,9 +174,7 @@ export const MultiSelect: ComponentStory<typeof Select> = () => {
       }
     >
       {options.map((option) => (
-        <Option key={option.value} value={option.value}>
-          {option.label}
-        </Option>
+        <Option key={option.value} value={option.value} label={option.label} />
       ))}
     </Select>
   );
@@ -210,16 +198,12 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
     >
       <Group label="First Group">
         {options.map((option) => (
-          <Option key={option.value} value={option.value}>
-            {option.label}
-          </Option>
+          <Option key={option.value} value={option.value} label={option.label} />
         ))}
       </Group>
       <Group label="Second Group">
         {otherOptions.map((option) => (
-          <Option key={option.value} value={option.value}>
-            {option.label}
-          </Option>
+          <Option key={option.value} value={option.value} label={option.label} />
         ))}
       </Group>
     </Select>
@@ -236,9 +220,7 @@ export const WithActionsInFooter: ComponentStory<typeof Select> = () => (
     }
   >
     {options.map((option) => (
-      <Option key={option.value} value={option.value}>
-        {option.label}
-      </Option>
+      <Option key={option.value} value={option.value} label={option.label} />
     ))}
   </Select>
 );
@@ -281,9 +263,7 @@ export const ControlledWithToggleAll: ComponentStory<typeof Select> = () => {
       multiple
     >
       {otherOptions.map((option) => (
-        <Option key={option.value} value={option.value}>
-          {option.label}
-        </Option>
+        <Option key={option.value} value={option.value} label={option.label} />
       ))}
     </Select>
   );
@@ -312,9 +292,7 @@ export const WithSearchInHeader: ComponentStory<typeof Select> = () => {
       }
     >
       {filteredOptions.map((option) => (
-        <Option key={option.value} value={option.value}>
-          {option.label}
-        </Option>
+        <Option key={option.value} value={option.value} label={option.label} />
       ))}
     </Select>
   );
