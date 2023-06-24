@@ -75,7 +75,7 @@ export default {
 } as ComponentMeta<typeof Select>;
 
 export const Primary: ComponentStory<typeof Select> = () => (
-  <Select placeholder="placeholder">
+  <Select placeholder="Select a option...">
     {options.map((option) => (
       <Option key={option.value} value={option.value} label={option.label} />
     ))}
@@ -83,7 +83,7 @@ export const Primary: ComponentStory<typeof Select> = () => (
 );
 
 export const CustomOption: ComponentStory<typeof Select> = () => (
-  <Select placeholder="placeholder">
+  <Select placeholder="Select a country...">
     {countryOptions.map((option) => (
       <Option key={option.value} value={option.value} label={option.label}>
         <Flexbox container alignItems="center" gap={2}>
@@ -105,7 +105,7 @@ export const DifferentSizes: ComponentStory<typeof Select> = () => (
       {
         title: 'Default (medium) size',
         component: (
-          <Select size="m" placeholder="placeholder">
+          <Select size="m" placeholder="Select a option...">
             {options.map((option) => (
               <Option key={`${option.value}-m`} value={option.value} label={option.label} />
             ))}
@@ -115,7 +115,7 @@ export const DifferentSizes: ComponentStory<typeof Select> = () => (
       {
         title: 'Small size',
         component: (
-          <Select size="s" placeholder="placeholder">
+          <Select size="s" placeholder="Select a option...">
             {options.map((option) => (
               <Option key={`${option.value}-s`} value={option.value} label={option.label} />
             ))}
@@ -127,7 +127,7 @@ export const DifferentSizes: ComponentStory<typeof Select> = () => (
 );
 
 export const WithError: ComponentStory<typeof Select> = () => (
-  <Select placeholder="placeholder" hasError>
+  <Select placeholder="Select a option..." hasError>
     {options.map((option) => (
       <Option key={option.value} value={option.value} label={option.label} />
     ))}
@@ -135,7 +135,7 @@ export const WithError: ComponentStory<typeof Select> = () => (
 );
 
 export const Disabled: ComponentStory<typeof Select> = () => (
-  <Select placeholder="placeholder" disabled>
+  <Select placeholder="Select a option..." disabled>
     {options.map((option) => (
       <Option key={option.value} value={option.value} label={option.label} />
     ))}
@@ -143,7 +143,7 @@ export const Disabled: ComponentStory<typeof Select> = () => (
 );
 
 export const GroupedOptions: ComponentStory<typeof Select> = () => (
-  <Select placeholder="placeholder">
+  <Select placeholder="Select a option...">
     <Group label="First Group">
       {options.map((option) => (
         <Option key={option.value} value={option.value} label={option.label} />
@@ -163,12 +163,11 @@ export const MultiSelect: ComponentStory<typeof Select> = () => {
   return (
     <Select
       multiple
-      placeholder="placeholder"
       onChange={(e, value) => setSelectedCount(value ? value.length : 0)}
       valueDisplay={
         <ValueDisplayMultiSelect
-          placeholder="Select a value"
           label={selectedCount > 1 ? 'Colors' : 'Color'}
+          placeholder="Select a value..."
           selectedCount={selectedCount}
         />
       }
@@ -186,12 +185,12 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
   return (
     <Select
       multiple
-      placeholder="placeholder"
+      placeholder="Select a option..."
       onChange={(e, value) => setSelectedCount(value ? value.length : 0)}
       valueDisplay={
         <ValueDisplayMultiSelect
           label={selectedCount > 1 ? 'Colors' : 'Color'}
-          placeholder="Select a value"
+          placeholder="Select a value..."
           selectedCount={selectedCount}
         />
       }
@@ -212,7 +211,7 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
 
 export const WithActionsInFooter: ComponentStory<typeof Select> = () => (
   <Select
-    placeholder="placeholder"
+    placeholder="Select a option..."
     listBoxFooter={
       <ListBoxFooter>
         <Action icon={<Icon.Add16 color="inherit" />}>Some Action</Action>
@@ -240,7 +239,7 @@ export const ControlledWithToggleAll: ComponentStory<typeof Select> = () => {
 
   return (
     <Select
-      placeholder="placeholder"
+      placeholder="Select a option..."
       listBoxHeader={
         <ListBoxHeader withBorder>
           <ToggleAll label="Toggle All" onChange={handleToggleAll} checked={allSelected} />
@@ -249,8 +248,8 @@ export const ControlledWithToggleAll: ComponentStory<typeof Select> = () => {
       value={selectedValues}
       valueDisplay={
         <ValueDisplayMultiSelect
-          placeholder="Select a value"
           label={selectedValues.length > 0 ? 'selected' : ''}
+          placeholder="Select a value..."
           selectedCount={selectedValues.length}
         />
       }
@@ -274,7 +273,7 @@ export const WithSearchInHeader: ComponentStory<typeof Select> = () => {
 
   return (
     <Select
-      placeholder="placeholder"
+      placeholder="Select a option..."
       listBoxHeader={
         <ListBoxHeader>
           <Search
