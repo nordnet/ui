@@ -65,8 +65,10 @@ export function Select({
     }
   }, [listboxVisible]);
 
-  const selectedOptionsLabel = value ? getSelectedOptionsLabel(value, getOptionMetadata) : null;
+  const selectedOptionsLabel =
+    value && !valueDisplay ? getSelectedOptionsLabel(value, getOptionMetadata) : null;
 
+  // TODO: Do we want to use popper for the dropdown?
   return (
     <>
       <Root $width={width}>
