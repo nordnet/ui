@@ -1,77 +1,75 @@
 import React, { FC, ReactElement } from 'react';
 import { Box, Button, Flexbox, Icon, Typography } from '../..';
+import { isElement } from '../../common/utils';
 import { TaskListCompletion, TaskListLabels, TaskListSummary, DisplayMode } from './TaskList.types';
 import ProgressDonut from './ProgressDonut';
 
-const Title: FC<
-  TaskListCompletion & TaskListSummary & TaskListLabels & { displayMode?: DisplayMode }
-> = ({
+type TitleProps = TaskListCompletion &
+  TaskListSummary &
+  TaskListLabels & { displayMode?: DisplayMode; showProgress?: boolean };
+
+const Title: FC<TitleProps> = ({
   percentageCompleted,
   maxPercentage = 100,
   title = 'Title',
   description = '',
   viewAllLabel,
   displayMode,
+  showProgress = true,
   onViewAll = () => {},
+  onClose = () => {},
 }): ReactElement => {
   const defaultDescription = `${Math.round(100 * (percentageCompleted / maxPercentage))}% complete`;
 
   return displayMode === 'DRAWER_NARROW' || displayMode === 'DRAWER_WIDE' ? (
     <Box py={4}>
       <Flexbox container gap={3} justifyContent="center" direction="column" alignItems="center">
-        <ProgressDonut
-          percentageCompleted={percentageCompleted}
-          maxPercentage={maxPercentage}
-          size={230}
-        />
+        {showProgress && (
+          <ProgressDonut
+            percentageCompleted={percentageCompleted}
+            maxPercentage={maxPercentage}
+            size={230}
+          />
+        )}
 
         <Flexbox container item direction="column" alignItems="center">
-          {description || (
-            <Typography
-              type="title3"
-              weight="bold"
-              color={(t) => t.colorTokens.action.text_default}
-            >
-              {defaultDescription}
+          {(isElement(description) && description) || (
+            <Typography type="title3" color={(t) => t.colorTokens.action.text_default}>
+              {description || defaultDescription}
             </Typography>
           )}
         </Flexbox>
       </Flexbox>
     </Box>
   ) : (
-    <Box p={5}>
-      <Flexbox container gap={4} alignItems="center">
+    <Flexbox container gap={4} alignItems="center">
+      {showProgress && (
         <ProgressDonut percentageCompleted={percentageCompleted} maxPercentage={maxPercentage} />
-        <Flexbox
-          container
-          item
-          direction="column"
-          grow={1}
-          gap={displayMode === 'CARD_NARROW' ? 0 : 1}
-        >
-          <Typography type={displayMode === 'CARD_NARROW' ? 'primary' : 'title3'} weight="bold">
-            {title}
-          </Typography>
-          {description || (
-            <Typography type="secondary" color={(t) => t.colorTokens.action.text_default}>
-              {defaultDescription}
-            </Typography>
-          )}
-        </Flexbox>
-        {viewAllLabel && (
-          <Flexbox item shrink={0}>
-            <Button.Pill variant="tertiary" size="m" onClick={onViewAll}>
-              {viewAllLabel}
-            </Button.Pill>
-          </Flexbox>
-        )}
-        {percentageCompleted === maxPercentage && (
-          <Button variant="neutral">
-            <Icon.Cross16 />
-          </Button>
+      )}
+      <Flexbox container item direction="column" grow={1} gap={1}>
+        <Typography type="title3">{title}</Typography>
+        {(isElement(description) && description) || (
+          <Typography type="secondary">{description || defaultDescription}</Typography>
         )}
       </Flexbox>
-    </Box>
+      {viewAllLabel && (
+        <Flexbox item shrink={0}>
+          <Button.Pill
+            variant="tertiary"
+            size="m"
+            onClick={onViewAll}
+            data-custom-prevent-click-outside
+          >
+            {viewAllLabel}
+          </Button.Pill>
+        </Flexbox>
+      )}
+      {percentageCompleted === maxPercentage && (
+        <Button variant="neutral" onClick={onClose}>
+          <Icon.Cross16 />
+        </Button>
+      )}
+    </Flexbox>
   );
 };
 

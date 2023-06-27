@@ -3,13 +3,18 @@ import { Box, Button, Flexbox, Icon, Typography } from '../..';
 
 import { TaskListSummary } from './TaskList.types';
 
-const DrawerTitle: FC<
-  TaskListSummary & {
-    helpTitle?: string;
-    showHelpTitle?: boolean;
-    onHelpClick?: React.MouseEventHandler;
-  }
-> = ({ title = 'Title', helpTitle, showHelpTitle, onHelpClick = () => {} }): ReactElement => {
+type DrawerTitleProps = TaskListSummary & {
+  helpTitle?: string;
+  showHelpTitle?: boolean;
+  onHelpClick?: React.MouseEventHandler;
+};
+
+const DrawerTitle: FC<DrawerTitleProps> = ({
+  title = 'Title',
+  helpTitle,
+  showHelpTitle,
+  onHelpClick = () => {},
+}): ReactElement => {
   return (
     <Flexbox container gutter={2} alignItems="center">
       {showHelpTitle && (

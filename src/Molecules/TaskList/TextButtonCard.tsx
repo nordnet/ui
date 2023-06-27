@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { Badge, Box, Button, Flexbox, Icon, Typography } from '../..';
+import { Badge, Box, Button, Flexbox, Typography } from '../..';
 
 const StyledButton = styled(Button)`
   border: 1px solid ${(t) => t.theme.colorTokens.neutral.border_weak};
@@ -17,19 +17,19 @@ const StyledBox = styled(Box)`
 `;
 
 type TextButtonCardProps = {
-  titleIcon: React.ReactNode;
   title: string;
-  titleBadgeText?: string;
   description: string;
+  titleIcon?: React.ReactNode;
+  titleBadgeText?: string;
   buttonText?: string;
   statusIcon?: React.ReactNode;
   onClick?: React.MouseEventHandler | false;
 };
 
 const TextButtonCard: FC<React.PropsWithChildren<TextButtonCardProps>> = ({
-  titleIcon = <Icon.Lightbulb24 />,
   title,
   description,
+  titleIcon,
   titleBadgeText,
   buttonText,
   statusIcon,
@@ -38,26 +38,23 @@ const TextButtonCard: FC<React.PropsWithChildren<TextButtonCardProps>> = ({
 }) => {
   const contents = (
     <Flexbox container gap={3} wrap="wrap">
-      <Flexbox container item gap={4} alignItems="center" wrap="nowrap" grow={1} basis="55%">
-        {/* Icon */}
-        <Flexbox item>
+      <Flexbox container item gap={4} alignItems="center" wrap="nowrap" grow={1} basis="320px">
+        {/* Title icon */}
+        {titleIcon && (
           <Badge.Icon badgeColor={(t) => t.colorTokens.neutral.background_weak}>
             {titleIcon}
           </Badge.Icon>
-        </Flexbox>
+        )}
 
-        {/* Title and description */}
+        {/* Title, badge and description */}
         <Flexbox container item grow={1} direction="column">
-          <Flexbox container item gap={2} alignItems="flex-start">
-            <Typography type="secondary" weight="bold">
-              {title}
-            </Typography>
+          <Flexbox container gap={2} alignItems="baseline">
+            <Typography type="secondary">{title}</Typography>
             <Badge.Label
               type="secondary"
               badgeColor={(t) => t.colorTokens.action.background_weak}
               color={(t) => t.colorTokens.action.text_default}
             >
-              {/* +{percentage}%  */}
               {titleBadgeText}
             </Badge.Label>
           </Flexbox>
@@ -75,7 +72,7 @@ const TextButtonCard: FC<React.PropsWithChildren<TextButtonCardProps>> = ({
           </Flexbox>
         )}
 
-        {/* Completion marker in drawer */}
+        {/* Status icon */}
         {statusIcon}
       </Flexbox>
       {children}

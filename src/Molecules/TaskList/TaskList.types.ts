@@ -37,6 +37,7 @@ export type TaskListSummary = {
   description?: string | React.ReactNode;
   onViewAll?: React.MouseEventHandler;
   viewAllLabel?: string;
+  onClose?: React.MouseEventHandler;
 };
 
 export type TaskList = {
@@ -50,4 +51,5 @@ export type DisplayMode = 'CARD_NARROW' | 'CARD_WIDE' | 'DRAWER_NARROW' | 'DRAWE
 export type Props = {
   taskList?: TaskList;
   displayMode?: DisplayMode;
+  showProgress?: boolean;
 };
