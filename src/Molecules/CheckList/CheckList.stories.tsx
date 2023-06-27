@@ -4,12 +4,12 @@ import { Meta } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
 import { Box, Card, Icon, Drawer, PageWrapper, theme, Typography, useMedia } from '../..';
-import TaskList from '.';
-import { TaskList as TaskListType } from './TaskList.types';
+import CheckList from '.';
+import { CheckList as CheckListType, Task } from './CheckList.types';
 
 export default {
-  title: 'Molecules / TaskList',
-  component: TaskList,
+  title: 'Molecules / CheckList',
+  component: CheckList,
 } as Meta;
 
 const NarrowContainer = styled.div`
@@ -20,7 +20,7 @@ const WideContainer = styled.div`
   width: ${(t) => t.theme.spacing.unit(150)}px;
 `;
 
-const defaultTaskList: TaskListType = {
+const defaultCheckList: CheckListType = {
   summary: {
     maxPercentage: 100,
     percentageCompleted: 30,
@@ -33,36 +33,44 @@ const defaultTaskList: TaskListType = {
     },
     {
       taskId: 'TASK_2',
-      taskState: 'INCOMPLETE',
-      percentage: 35,
-    },
-    {
-      taskId: 'TASK_3',
-      taskState: 'INCOMPLETE',
-      percentage: 5,
-    },
-    {
-      taskId: 'TASK_4',
-      taskState: 'COMPLETED',
-      percentage: 10,
-    },
-    {
-      taskId: 'TASK_5',
       taskState: 'COMPLETED',
       percentage: 20,
     },
   ],
 };
 
-const taskList: TaskListType = {
+const TASK_COUNT = 5;
+
+const tasks: Task[] = [...Array(TASK_COUNT).keys()].map((i) => ({
+  taskId: `TASK_${i + 1}`,
+  taskState: i < TASK_COUNT / 2 ? 'COMPLETED' : 'INCOMPLETE',
+  percentage: 5 * (i + 1),
+  icon: Object?.entries(Icon)
+    .filter(([iconName, _]) => iconName.endsWith('24'))
+    .slice(i, i + 1)
+    .map(([_, IconComponent]: [string, React.ComponentType<any>]) => <IconComponent />),
+  title: `This is the title for task ${i + 1}`,
+  description: `This is the description for task ${i + 1}. `.repeat(i + 1),
+  startLabel: `Go to guide ${i + 1}`,
+  onStart: action(`onStart task ${i + 1}`),
+  onDismiss: action(`onDismiss task ${i + 1}`),
+}));
+
+const percentageCompleted = tasks.reduce(
+  (prev, curr) => (curr.taskState === 'COMPLETED' ? prev + curr.percentage : prev),
+  0,
+);
+
+const checkList: CheckListType = {
   summary: {
-    ...defaultTaskList.summary,
+    maxPercentage: 100,
+    percentageCompleted,
     title: 'Get started checklist',
     description: (
       <span>
         <Typography type="secondary">Your account is </Typography>
         <Typography type="secondary" color={(t) => t.colorTokens.action.text_default}>
-          30% complete
+          {`${percentageCompleted}% complete`}
         </Typography>
       </span>
     ),
@@ -70,18 +78,7 @@ const taskList: TaskListType = {
     onViewAll: action('onViewAll'),
     onClose: action('onClose'),
   },
-  tasks: defaultTaskList.tasks?.map((task, i) => ({
-    ...task,
-    icon: Object?.entries(Icon)
-      .filter(([iconName, _]) => iconName.endsWith('24'))
-      .slice(i, i + 1)
-      .map(([_, IconComponent]: [string, React.ComponentType<any>]) => <IconComponent />),
-    title: `This is the title for task ${i + 1}`,
-    description: `This is the description for task ${i + 1}. `.repeat(i + 1),
-    startLabel: `Go to guide ${i + 1}`,
-    onStart: action(`onStart task ${i + 1}`),
-    onDismiss: action(`onDismiss task ${i + 1}`),
-  })),
+  tasks,
   labels: {
     completedLabel: 'Completed',
     todoLabel: 'To do',
@@ -92,36 +89,36 @@ const taskList: TaskListType = {
   },
 };
 
-const completedTaskList: TaskListType = {
+const completedCheckList: CheckListType = {
   summary: {
-    ...taskList.summary,
+    ...checkList.summary,
     percentageCompleted: 100,
     title: 'Congratulations!',
     description: 'You are all set.',
   },
-  tasks: taskList.tasks?.map((task) => ({ ...task, taskState: 'COMPLETED' })),
+  tasks: checkList.tasks?.map((task) => ({ ...task, taskState: 'COMPLETED' })),
 };
 
 export const Default = () => {
-  return <TaskList taskList={defaultTaskList} />;
+  return <CheckList checkList={defaultCheckList} />;
 };
 
 export const Empty = () => {
-  return <TaskList />;
+  return <CheckList />;
 };
 
 export const CompletedWithProgress = () => {
-  return <TaskList taskList={completedTaskList} />;
+  return <CheckList checkList={completedCheckList} />;
 };
 
 export const CompletedSummaryOnly = () => {
-  return <TaskList taskList={completedTaskList} showProgress={false} />;
+  return <CheckList checkList={completedCheckList} showProgress={false} />;
 };
 
 export const CardNarrowMode = () => {
   return (
     <NarrowContainer>
-      <TaskList taskList={taskList} displayMode="CARD_NARROW" />
+      <CheckList checkList={checkList} displayMode="CARD_NARROW" />
     </NarrowContainer>
   );
 };
@@ -129,7 +126,7 @@ export const CardNarrowMode = () => {
 export const CardWideMode = () => {
   return (
     <WideContainer>
-      <TaskList taskList={taskList} displayMode="CARD_WIDE" />
+      <CheckList checkList={checkList} displayMode="CARD_WIDE" />
     </WideContainer>
   );
 };
@@ -137,7 +134,7 @@ export const CardWideMode = () => {
 export const DrawerNarrowMode = () => {
   return (
     <NarrowContainer>
-      <TaskList taskList={taskList} displayMode="DRAWER_NARROW" />
+      <CheckList checkList={checkList} displayMode="DRAWER_NARROW" />
     </NarrowContainer>
   );
 };
@@ -145,7 +142,7 @@ export const DrawerNarrowMode = () => {
 export const DrawerWideMode = () => {
   return (
     <WideContainer>
-      <TaskList taskList={taskList} displayMode="DRAWER_WIDE" />
+      <CheckList checkList={checkList} displayMode="DRAWER_WIDE" />
     </WideContainer>
   );
 };
@@ -173,7 +170,7 @@ export const RealisticExample = () => {
       <>
         <Typography type="secondary">Your account is </Typography>
         <Typography type="title3" color={(t) => t.colorTokens.action.text_default}>
-          30% complete
+          {`${checkList.summary.percentageCompleted}% complete`}
         </Typography>
         <Box pt={2}>
           <Typography type="secondary" color={(t) => t.colorTokens.neutral.text_weak}>
@@ -188,8 +185,11 @@ export const RealisticExample = () => {
         <Box p={10}>
           <Card>
             <Box p={5}>
-              <TaskList
-                taskList={{ ...taskList, summary: { ...taskList.summary, onViewAll: toggleOpen } }}
+              <CheckList
+                checkList={{
+                  ...checkList,
+                  summary: { ...checkList.summary, onViewAll: toggleOpen },
+                }}
                 displayMode={isMobile ? 'CARD_NARROW' : 'CARD_WIDE'}
               />
             </Box>
@@ -199,8 +199,8 @@ export const RealisticExample = () => {
           onClose={onClose}
           open={open}
           title={
-            <TaskList.DrawerTitle
-              title={taskList.summary?.title}
+            <CheckList.DrawerTitle
+              title={checkList.summary?.title}
               helpTitle="What's this?"
               showHelpTitle={showHelp}
               onHelpClick={toggleHelp}
@@ -211,8 +211,8 @@ export const RealisticExample = () => {
           {showHelp ? (
             <Typography>Showing help here</Typography>
           ) : (
-            <TaskList
-              taskList={{ ...taskList, summary: { ...taskList.summary, description } }}
+            <CheckList
+              checkList={{ ...checkList, summary: { ...checkList.summary, description } }}
               displayMode={isMobile ? 'DRAWER_WIDE' : 'DRAWER_NARROW'}
             />
           )}

@@ -18,12 +18,12 @@ export type TaskActions = {
 
 export type Task = TaskStatus & TaskSummary & TaskActions;
 
-export type TaskListCompletion = {
+export type CheckListCompletion = {
   maxPercentage?: number;
   percentageCompleted: number;
 };
 
-export type TaskListLabels = {
+export type CheckListLabels = {
   todoLabel?: string;
   completedLabel?: string;
   dismissLabel?: string;
@@ -32,27 +32,27 @@ export type TaskListLabels = {
   dismissConfirmLabel?: string;
 };
 
-export type TaskListActions = {
+export type CheckListActions = {
   onViewAll?: React.MouseEventHandler;
-  viewAllLabel?: string;
   onClose?: React.MouseEventHandler;
+  viewAllLabel?: string;
 };
 
-export type TaskListSummary = {
+export type CheckListSummary = {
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
 };
 
-export type TaskList = {
-  summary: TaskListSummary & TaskListCompletion & TaskListActions;
+export type CheckList = {
+  summary: CheckListSummary & CheckListCompletion & CheckListActions;
   tasks?: Task[];
-  labels?: TaskListLabels;
+  labels?: CheckListLabels;
 };
 
 export type DisplayMode = 'CARD_NARROW' | 'CARD_WIDE' | 'DRAWER_NARROW' | 'DRAWER_WIDE';
 
-export type Props = {
-  taskList?: TaskList;
+export type CheckListProps = {
+  checkList?: CheckList;
   displayMode?: DisplayMode;
   showProgress?: boolean;
 };

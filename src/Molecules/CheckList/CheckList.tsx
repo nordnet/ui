@@ -1,17 +1,17 @@
 import React, { FC, ReactElement } from 'react';
 import { Box, Flexbox, List, ListItem, Typography } from '../..';
-import { Props, Task, TaskListLabels, DisplayMode } from './TaskList.types';
-import TaskItem from './TaskItem';
+import { CheckListProps, Task, CheckListLabels, DisplayMode } from './CheckList.types';
+import CheckListStep from './CheckListStep';
 import Title from './Title';
 
-type TaskListInnerProps = {
+type CheckListInnerProps = {
   tasks: Task[];
   header?: string;
   displayMode?: DisplayMode;
-  labels?: TaskListLabels;
+  labels?: CheckListLabels;
 };
 
-const TaskListInner: FC<TaskListInnerProps> = ({
+const CheckListInner: FC<CheckListInnerProps> = ({
   tasks,
   header,
   displayMode,
@@ -26,10 +26,10 @@ const TaskListInner: FC<TaskListInnerProps> = ({
       </Box>
     )}
     <List>
-      <Flexbox container gap={3} direction="column">
+      <Flexbox container gap={2} direction="column">
         {tasks?.map((task) => (
           <ListItem key={task.taskId}>
-            <TaskItem task={task} {...labels} displayMode={displayMode} />
+            <CheckListStep task={task} {...labels} displayMode={displayMode} />
           </ListItem>
         ))}
       </Flexbox>
@@ -37,36 +37,36 @@ const TaskListInner: FC<TaskListInnerProps> = ({
   </div>
 );
 
-const TaskList: FC<Props> = ({
-  taskList,
+const CheckList: FC<CheckListProps> = ({
+  checkList,
   displayMode = 'CARD_NARROW',
   showProgress,
-}): ReactElement => {
-  const tasksToDo = taskList?.tasks?.filter((t) => t.taskState !== 'COMPLETED');
-  const tasksCompleted = taskList?.tasks?.filter((t) => t.taskState === 'COMPLETED');
+}): ReactElement | null => {
+  const tasksToDo = checkList?.tasks?.filter((t) => t.taskState !== 'COMPLETED');
+  const tasksCompleted = checkList?.tasks?.filter((t) => t.taskState === 'COMPLETED');
 
-  if (!taskList || !taskList?.summary) return <Typography type="primary">Empty</Typography>;
+  if (!checkList || !checkList?.summary) return null;
 
   const isDrawer = displayMode === 'DRAWER_NARROW' || displayMode === 'DRAWER_WIDE';
 
   return (
-    <Box>
-      <Title {...taskList.summary} displayMode={displayMode} showProgress={showProgress} />
+    <>
+      <Title {...checkList.summary} displayMode={displayMode} showProgress={showProgress} />
       {isDrawer && (
         <Flexbox container direction="column" gap={4}>
           {!!tasksToDo?.length && (
-            <TaskListInner
+            <CheckListInner
               tasks={tasksToDo}
-              header={taskList.labels?.todoLabel || 'To do'}
-              labels={taskList.labels}
+              header={checkList.labels?.todoLabel || 'To do'}
+              labels={checkList.labels}
               displayMode={displayMode}
             />
           )}
           {!!tasksCompleted?.length && (
-            <TaskListInner
+            <CheckListInner
               tasks={tasksCompleted}
-              header={taskList.labels?.completedLabel || 'Completed'}
-              labels={taskList.labels}
+              header={checkList.labels?.completedLabel || 'Completed'}
+              labels={checkList.labels}
               displayMode={displayMode}
             />
           )}
@@ -74,12 +74,12 @@ const TaskList: FC<Props> = ({
       )}
 
       {!isDrawer && !!tasksToDo?.length && (
-        <Box pt={4}>
-          <TaskListInner tasks={tasksToDo} labels={taskList.labels} displayMode={displayMode} />
+        <Box pt={5}>
+          <CheckListInner tasks={tasksToDo} labels={checkList.labels} displayMode={displayMode} />
         </Box>
       )}
-    </Box>
+    </>
   );
 };
 
-export default TaskList;
+export default CheckList;

@@ -1,10 +1,10 @@
 import React, { FC, ReactElement } from 'react';
 import { Box, Button, Flexbox, Icon, Typography } from '../..';
 import { isElement } from '../../common/utils';
-import { TaskList, DisplayMode } from './TaskList.types';
-import ProgressDonut from './ProgressDonut';
+import { CheckList, DisplayMode } from './CheckList.types';
+import ProgressDonutChart from './ProgressDonutChart';
 
-type TitleProps = TaskList['summary'] & { displayMode?: DisplayMode; showProgress?: boolean };
+type TitleProps = CheckList['summary'] & { displayMode?: DisplayMode; showProgress?: boolean };
 
 const Title: FC<TitleProps> = ({
   percentageCompleted,
@@ -21,13 +21,9 @@ const Title: FC<TitleProps> = ({
 
   return displayMode === 'DRAWER_NARROW' || displayMode === 'DRAWER_WIDE' ? (
     <Box py={4}>
-      <Flexbox container gap={3} justifyContent="center" direction="column" alignItems="center">
+      <Flexbox container gap={5} justifyContent="center" direction="column" alignItems="center">
         {showProgress && (
-          <ProgressDonut
-            percentageCompleted={percentageCompleted}
-            maxPercentage={maxPercentage}
-            size={230}
-          />
+          <ProgressDonutChart completed={percentageCompleted} total={maxPercentage} size="l" />
         )}
 
         <Flexbox container item direction="column" alignItems="center">
@@ -40,9 +36,9 @@ const Title: FC<TitleProps> = ({
       </Flexbox>
     </Box>
   ) : (
-    <Flexbox container gap={4} alignItems="center">
+    <Flexbox container gap={5} alignItems="center">
       {showProgress && (
-        <ProgressDonut percentageCompleted={percentageCompleted} maxPercentage={maxPercentage} />
+        <ProgressDonutChart completed={percentageCompleted} total={maxPercentage} size="s" />
       )}
       <Flexbox container item direction="column" grow={1} gap={1}>
         <Typography type="title3">{title}</Typography>

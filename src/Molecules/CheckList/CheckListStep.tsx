@@ -1,7 +1,7 @@
 import React, { FC, ReactElement, useState } from 'react';
 import styled from 'styled-components';
 import { Button, Flexbox, Icon, Typography } from '../..';
-import { Task, TaskListLabels, DisplayMode } from './TaskList.types';
+import { Task, CheckListLabels, DisplayMode } from './CheckList.types';
 import TextButtonCard from './TextButtonCard';
 
 const AbsoluteFlexbox = styled(Flexbox)`
@@ -29,9 +29,9 @@ const TwoButtonBox = styled.div`
   }
 `;
 
-type TaskItemProps = { task: Task } & TaskListLabels & { displayMode?: DisplayMode };
+type CheckListStepProps = { task: Task } & CheckListLabels & { displayMode?: DisplayMode };
 
-const TaskItem: FC<TaskItemProps> = ({
+const CheckListStep: FC<CheckListStepProps> = ({
   task,
   dismissLabel = 'Dismiss',
   dismissQuestion = 'Dismiss?',
@@ -84,7 +84,7 @@ const TaskItem: FC<TaskItemProps> = ({
     <TextButtonCard
       titleIcon={task.icon || <Icon.Lightbulb24 />}
       title={task.title || 'Default title'}
-      titleBadgeText={`+${task.percentage}%`}
+      titleBadgeText={task.taskState !== 'COMPLETED' ? `+${task.percentage}%` : undefined}
       description={task.description || 'Default description'}
       buttonText={displayMode === 'CARD_WIDE' ? task.startLabel : ''}
       onClick={!isDrawer ? task.onStart : undefined}
@@ -96,4 +96,4 @@ const TaskItem: FC<TaskItemProps> = ({
   );
 };
 
-export default TaskItem;
+export default CheckListStep;

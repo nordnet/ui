@@ -37,6 +37,7 @@ import BarScale from './Molecules/BarScale';
 import BottomWizardBar from './Molecules/BottomWizardBar';
 import Button, { PillButton } from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
+import CheckList from './Molecules/CheckList';
 import CoachMarks from './Molecules/CoachMarks';
 import CollapsibleCard from './Molecules/CollapsibleCard';
 import ControlsListItem from './Molecules/ControlsListItem';
@@ -86,7 +87,6 @@ import Switch, { SwitchToggle } from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
 import TagChip from './Molecules/TagChip';
-import TaskList from './Molecules/TaskList';
 import Timeline from './Molecules/Timeline';
 import Toggle from './Molecules/Toggle';
 import Tooltip from './Molecules/Tooltip';
@@ -148,6 +148,7 @@ export {
   Card,
   CardWithTabs,
   CardWithTitle,
+  CheckList,
   CoachMarks,
   CollapsibleCard,
   ControlsListItem,
@@ -219,7 +220,6 @@ export {
   Tabs,
   TabsNav,
   TagChip,
-  TaskList,
   Tbody,
   Td,
   Tfoot,

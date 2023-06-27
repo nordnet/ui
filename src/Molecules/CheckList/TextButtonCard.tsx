@@ -38,7 +38,7 @@ const TextButtonCard: FC<React.PropsWithChildren<TextButtonCardProps>> = ({
 }) => {
   const contents = (
     <Flexbox container gap={3} wrap="wrap">
-      <Flexbox container item gap={4} alignItems="center" wrap="nowrap" grow={1} basis="320px">
+      <Flexbox container item gap={3} alignItems="center" wrap="nowrap" grow={1} basis="320px">
         {/* Title icon */}
         {titleIcon && (
           <Badge.Icon badgeColor={(t) => t.colorTokens.neutral.background_weak}>
@@ -47,18 +47,20 @@ const TextButtonCard: FC<React.PropsWithChildren<TextButtonCardProps>> = ({
         )}
 
         {/* Title, badge and description */}
-        <Flexbox container item grow={1} direction="column">
+        <Flexbox container item gap={1} grow={1} direction="column">
           <Flexbox container gap={2} alignItems="baseline">
             <Typography type="secondary" weight="bold">
               {title}
             </Typography>
-            <Badge.Label
-              type="secondary"
-              badgeColor={(t) => t.colorTokens.action.background_weak}
-              color={(t) => t.colorTokens.action.text_default}
-            >
-              {titleBadgeText}
-            </Badge.Label>
+            {titleBadgeText && (
+              <Badge.Label
+                type="secondary"
+                badgeColor={(t) => t.colorTokens.action.background_weak}
+                color={(t) => t.colorTokens.action.text_default}
+              >
+                {titleBadgeText}
+              </Badge.Label>
+            )}
           </Flexbox>
           <Typography type="secondary" color={(t) => t.colorTokens.neutral.text_weak}>
             {description}
@@ -89,6 +91,8 @@ const TextButtonCard: FC<React.PropsWithChildren<TextButtonCardProps>> = ({
     );
 
   return <StyledBox p={3}>{contents}</StyledBox>;
+
+  // TODO: this could also work with some modifications of ControlsListItem.Button
 };
 
 export default TextButtonCard;
