@@ -1,12 +1,10 @@
 import React, { FC, ReactElement } from 'react';
 import { Box, Button, Flexbox, Icon, Typography } from '../..';
 import { isElement } from '../../common/utils';
-import { TaskListCompletion, TaskListLabels, TaskListSummary, DisplayMode } from './TaskList.types';
+import { TaskList, DisplayMode } from './TaskList.types';
 import ProgressDonut from './ProgressDonut';
 
-type TitleProps = TaskListCompletion &
-  TaskListSummary &
-  TaskListLabels & { displayMode?: DisplayMode; showProgress?: boolean };
+type TitleProps = TaskList['summary'] & { displayMode?: DisplayMode; showProgress?: boolean };
 
 const Title: FC<TitleProps> = ({
   percentageCompleted,
@@ -64,7 +62,7 @@ const Title: FC<TitleProps> = ({
           </Button.Pill>
         </Flexbox>
       )}
-      {percentageCompleted === maxPercentage && (
+      {percentageCompleted === maxPercentage && onClose && (
         <Button variant="neutral" onClick={onClose}>
           <Icon.Cross16 />
         </Button>

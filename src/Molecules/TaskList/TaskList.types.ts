@@ -32,16 +32,19 @@ export type TaskListLabels = {
   dismissConfirmLabel?: string;
 };
 
-export type TaskListSummary = {
-  title?: string | React.ReactNode;
-  description?: string | React.ReactNode;
+export type TaskListActions = {
   onViewAll?: React.MouseEventHandler;
   viewAllLabel?: string;
   onClose?: React.MouseEventHandler;
 };
 
+export type TaskListSummary = {
+  title?: string | React.ReactNode;
+  description?: string | React.ReactNode;
+};
+
 export type TaskList = {
-  summary: TaskListSummary & TaskListCompletion;
+  summary: TaskListSummary & TaskListCompletion & TaskListActions;
   tasks?: Task[];
   labels?: TaskListLabels;
 };

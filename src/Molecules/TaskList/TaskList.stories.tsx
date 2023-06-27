@@ -209,7 +209,7 @@ export const RealisticExample = () => {
           preventOnClickOutsideDataAttributes={['data-custom-prevent-click-outside']}
         >
           {showHelp ? (
-            'Showing help here'
+            <Typography>Showing help here</Typography>
           ) : (
             <TaskList
               taskList={{ ...taskList, summary: { ...taskList.summary, description } }}
