@@ -1,3 +1,10 @@
+## [12.31.1](https://github.com/nordnet/ui/compare/v12.31.0...v12.31.1) (2023-06-27)
+
+
+### Bug Fixes
+
+* make darkmode toggle work with tokens ([#1356](https://github.com/nordnet/ui/issues/1356)) ([318542c](https://github.com/nordnet/ui/commit/318542c))
+
 # [12.31.0](https://github.com/nordnet/ui/compare/v12.30.3...v12.31.0) (2023-06-19)
 
 
