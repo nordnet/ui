@@ -1,6 +1,6 @@
 import React, { FC, ReactElement, useState } from 'react';
 import styled from 'styled-components';
-import { Button, Flexbox, Icon, Typography } from '../..';
+import { Button, Flexbox, Icon, Typography, useMedia } from '../..';
 import { Task, CheckListLabels, DisplayMode } from './CheckList.types';
 import TextButtonCard from './TextButtonCard';
 
@@ -41,7 +41,9 @@ const CheckListStep: FC<CheckListStepProps> = ({
 }): ReactElement => {
   const [dismissMode, setDismissMode] = useState(false);
 
-  const isDrawer = displayMode === 'DRAWER_NARROW' || displayMode === 'DRAWER_WIDE';
+  const isDrawer = displayMode === 'DRAWER';
+  const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.sm));
+  const isCompleted = task.taskState === 'COMPLETED';
 
   const { startLabel, taskState, onDismiss, onStart } = task;
 
@@ -84,11 +86,11 @@ const CheckListStep: FC<CheckListStepProps> = ({
     <TextButtonCard
       titleIcon={task.icon || <Icon.Lightbulb24 />}
       title={task.title || 'Default title'}
-      titleBadgeText={task.taskState !== 'COMPLETED' ? `+${task.percentage}%` : undefined}
+      titleBadgeText={!isCompleted ? `+${task.percentage}%` : undefined}
       description={task.description || 'Default description'}
-      buttonText={displayMode === 'CARD_WIDE' ? task.startLabel : ''}
+      buttonText={!isDrawer && !isMobile ? task.startLabel : ''}
       onClick={!isDrawer ? task.onStart : undefined}
-      statusIcon={isDrawer && task.taskState === 'COMPLETED' && <Icon.CheckCircleFill24 />}
+      statusIcon={isDrawer && isCompleted && <Icon.CheckCircleFill24 />}
     >
       {buttons}
       {dismissalDialog}

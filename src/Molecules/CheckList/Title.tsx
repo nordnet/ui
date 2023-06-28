@@ -19,7 +19,7 @@ const Title: FC<TitleProps> = ({
 }): ReactElement => {
   const defaultDescription = `${Math.round(100 * (percentageCompleted / maxPercentage))}% complete`;
 
-  return displayMode === 'DRAWER_NARROW' || displayMode === 'DRAWER_WIDE' ? (
+  return displayMode === 'DRAWER' ? (
     <Box py={4}>
       <Flexbox container gap={5} justifyContent="center" direction="column" alignItems="center">
         {showProgress && (
@@ -38,9 +38,11 @@ const Title: FC<TitleProps> = ({
   ) : (
     <Flexbox container gap={5} alignItems="center">
       {showProgress && (
-        <ProgressDonutChart completed={percentageCompleted} total={maxPercentage} size="s" />
+        <Flexbox item shrink={0}>
+          <ProgressDonutChart completed={percentageCompleted} total={maxPercentage} size="s" />
+        </Flexbox>
       )}
-      <Flexbox container item direction="column" grow={1} gap={1}>
+      <Flexbox container item direction="column" grow={1} gap={0} sm={{ gap: 1 }}>
         <Typography type="title3">{title}</Typography>
         {(isElement(description) && description) || (
           <Typography type="secondary">{description || defaultDescription}</Typography>

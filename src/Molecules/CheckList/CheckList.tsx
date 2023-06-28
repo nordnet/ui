@@ -39,7 +39,7 @@ const CheckListInner: FC<CheckListInnerProps> = ({
 
 const CheckList: FC<CheckListProps> = ({
   checkList,
-  displayMode = 'CARD_NARROW',
+  displayMode = 'CARD',
   showProgress,
 }): ReactElement | null => {
   const tasksToDo = checkList?.tasks?.filter((t) => t.taskState !== 'COMPLETED');
@@ -47,7 +47,7 @@ const CheckList: FC<CheckListProps> = ({
 
   if (!checkList || !checkList?.summary) return null;
 
-  const isDrawer = displayMode === 'DRAWER_NARROW' || displayMode === 'DRAWER_WIDE';
+  const isDrawer = displayMode === 'DRAWER';
 
   return (
     <>

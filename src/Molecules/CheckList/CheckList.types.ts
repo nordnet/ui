@@ -49,7 +49,7 @@ export type CheckList = {
   labels?: CheckListLabels;
 };
 
-export type DisplayMode = 'CARD_NARROW' | 'CARD_WIDE' | 'DRAWER_NARROW' | 'DRAWER_WIDE';
+export type DisplayMode = 'CARD' | 'DRAWER';
 
 export type CheckListProps = {
   checkList?: CheckList;
