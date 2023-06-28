@@ -25,6 +25,12 @@ const mobileViewportParams = {
   },
 };
 
+const tabletViewportParams = {
+  viewport: {
+    defaultViewport: 'tablet',
+  },
+};
+
 const CardContainer: React.FC<React.PropsWithChildren<{}>> = ({ children }) => (
   <Card>
     <Box px={3} py={5} sm={{ p: 5 }}>
@@ -43,31 +49,17 @@ export const CompletedSummaryOnly = () => (
   <CheckList checkList={completedCheckList} showProgress={false} />
 );
 
-export const CardDesktop: CheckListComponentStory = () => (
+export const InCard: CheckListComponentStory = () => (
   <CardContainer>
     <CheckList checkList={checkList} displayMode="CARD" />
   </CardContainer>
 );
 
-export const CardMobile: CheckListComponentStory = () => (
-  <CardContainer>
-    <CheckList checkList={checkList} displayMode="CARD" />
-  </CardContainer>
-);
-CardMobile.parameters = mobileViewportParams;
-
-export const DrawerDesktop: CheckListComponentStory = () => (
+export const InDrawer: CheckListComponentStory = () => (
   <Drawer>
     <CheckList checkList={checkList} displayMode="DRAWER" />
   </Drawer>
 );
-
-export const DrawerMobile: CheckListComponentStory = () => (
-  <Drawer>
-    <CheckList checkList={checkList} displayMode="DRAWER" />
-  </Drawer>
-);
-DrawerMobile.parameters = mobileViewportParams;
 
 const RealisticExample = () => {
   const [open, setOpen] = useState(false);
@@ -165,3 +157,6 @@ export const RealisticExampleDesktop: CheckListComponentStory = () => <Realistic
 
 export const RealisticExampleMobile: CheckListComponentStory = () => <RealisticExample />;
 RealisticExampleMobile.parameters = mobileViewportParams;
+
+export const RealisticExampleTablet: CheckListComponentStory = () => <RealisticExample />;
+RealisticExampleTablet.parameters = tabletViewportParams;
