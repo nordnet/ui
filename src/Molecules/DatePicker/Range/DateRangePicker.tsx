@@ -201,7 +201,7 @@ const DateRangePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => 
       />
       {open && !isFullscreenMode(props, isSmallScreen) && (
         <StyledDropdownBubbleWrapper data-testid="styled-dropdown-bubble-wrapper">
-          <StyledDropdownBubble>
+          <StyledDropdownBubble borderRadius={8}>
             <Box my={3} mx={2}>
               {datepicker}
             </Box>
