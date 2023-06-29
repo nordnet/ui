@@ -28,6 +28,8 @@ const barStyles = css<CardProps>`
     position: absolute;
     top: 0;
     left: 0;
+    border-top-left-radius: ${(p) => p.theme.borderRadius(8)};
+    border-top-right-radius: ${(p) => p.theme.borderRadius(8)};
   }
 `;
 
@@ -41,6 +43,7 @@ const Card = styled.div<CardProps>`
   z-index: ${(p) => p.theme.zIndex.modal + 1};
   display: flex;
   box-sizing: border-box;
+  border-radius: ${(p) => p.theme.borderRadius(8)};
   ${(p) => (p.barColor ? barStyles : ``)}
 
   ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
@@ -52,6 +55,7 @@ const Card = styled.div<CardProps>`
           transform: none !important;
           inset: auto auto 0px 0px !important;
           position: fixed !important;
+          border-radius: ${p.theme.borderRadius(20)} ${p.theme.borderRadius(20)} 0 0 !important; 
         `
         : ''}
   }
