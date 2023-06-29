@@ -69,6 +69,14 @@ export function Select({
     value && !valueDisplay ? getSelectedOptionsLabel(value, getOptionMetadata) : null;
 
   // TODO: Do we want to use popper for the dropdown?
+  // TODO: label that is displayed when option is slected can be different than the actual label of the options
+  // TODO: write tests, in forms as well
+  // TODO: required, disabled
+  // TODO: investigate if the wide select with columns is needed, see figma
+  // TODO: Mobile
+  // TODO: Story with FormField, for label, errors and extra info. Question, should FormField be baked in?
+  // TODO: Loading state?
+  // TODO: With checkboxes?
   return (
     <>
       <Root $width={width}>
