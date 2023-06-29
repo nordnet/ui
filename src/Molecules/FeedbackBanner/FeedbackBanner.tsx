@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import { FeedbackBannerComponent, FeedbackBannerProps } from './FeedbackBanner.types';
-import { Flexbox, OldIcon, Typography } from '../..';
+import { Flexbox, Icon, Typography } from '../..';
 import { Theme } from '../../theme/theme.types';
 
 const getBorderColor = ({
@@ -14,34 +13,36 @@ const getBorderColor = ({
 }) => {
   switch (variant) {
     case 'error':
-      return theme.color.functionRed;
+      return theme.colorTokens.error.background_medium;
     case 'warning':
-      return theme.color.functionYellow;
+      return theme.colorTokens.warning.background_default;
     case 'success':
-      return theme.color.functionGreen;
+      return theme.colorTokens.positive.background_default;
     case 'info':
     default:
-      return theme.color.cta;
+      return theme.colorTokens.action.background_default;
   }
 };
 
 const getIcon = (variant: FeedbackBannerProps['variant']) => {
   switch (variant) {
     case 'error':
-      return <OldIcon.CrossCircle size={5} fill={(t) => t.color.functionRed} />;
+      return <Icon.ErrorFill24 color={(t) => t.colorTokens.error.icon_default} />;
     case 'warning':
-      return <OldIcon.WarningTriangle size={5} fill={(t) => t.color.functionYellow} />;
+      return <Icon.WarningFill24 color={(t) => t.colorTokens.warning.icon_default} />;
     case 'success':
-      return <OldIcon.CheckMarkCircle size={5} fill={(t) => t.color.functionGreen} />;
+      return <Icon.CheckCircleFill24 color={(t) => t.colorTokens.positive.icon_default} />;
     case 'info':
     default:
-      return <OldIcon.InfoCircle size={5} fill={(t) => t.color.cta} />;
+      return <Icon.InformationFill24 color={(t) => t.colorTokens.action.icon_default} />;
   }
 };
 
 const StyledContainer = styled.div<FeedbackBannerProps>`
   background-color: ${({ theme, scope }) =>
-    theme.color[scope === 'module' ? 'feedbackModuleBackground' : 'feedbackPageBackground']};
+    scope === 'module'
+      ? theme.colorTokens.neutral.background_weak
+      : theme.colorTokens.neutral.background_default};
   border-left: ${(p) => p.theme.spacing.unit(1)}px solid ${getBorderColor};
   padding: ${(p) => `${p.theme.spacing.unit(1)}px ${p.theme.spacing.unit(3)}px`};
   box-sizing: border-box;
