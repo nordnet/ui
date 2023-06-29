@@ -1,11 +1,22 @@
 import React, { useState } from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { StoryObj, Meta } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 import { Box, Card, Drawer, PageWrapper, Typography, useMedia } from '../..';
+import { Provider } from '../../common/Links/ReactRouterLinkHelper';
+
 import CheckList from '.';
 
-import { defaultCheckList, checkList, completedCheckList } from './mocks';
+import {
+  defaultCheckList,
+  completedCheckList,
+  defaultTaskInfoMap,
+  generateCheckList,
+  generateTaskInfoMap,
+  header,
+  labels,
+  completedHeader,
+} from './mocks';
 
 export default {
   title: 'Molecules / CheckList',
@@ -15,21 +26,16 @@ export default {
       viewports: INITIAL_VIEWPORTS,
     },
   },
-} as ComponentMeta<typeof CheckList>;
+  decorators: [
+    (Story) => (
+      <Provider>
+        <Story />
+      </Provider>
+    ),
+  ],
+} as Meta<typeof CheckList>;
 
-type CheckListComponentStory = ComponentStory<typeof CheckList>;
-
-const mobileViewportParams = {
-  viewport: {
-    defaultViewport: 'iphone5',
-  },
-};
-
-const tabletViewportParams = {
-  viewport: {
-    defaultViewport: 'tablet',
-  },
-};
+type CheckListComponentStory = StoryObj<typeof CheckList>;
 
 const CardContainer: React.FC<React.PropsWithChildren<{}>> = ({ children }) => (
   <Card>
@@ -43,25 +49,56 @@ export const Default = () => <CheckList checkList={defaultCheckList} />;
 
 export const Empty = () => <CheckList />;
 
-export const CompletedWithProgress = () => <CheckList checkList={completedCheckList} />;
-
-export const CompletedSummaryOnly = () => (
-  <CheckList checkList={completedCheckList} showProgress={false} />
-);
-
-export const InCard: CheckListComponentStory = () => (
+export const MinimalExampleInCard = () => (
   <CardContainer>
-    <CheckList checkList={checkList} displayMode="CARD" />
+    <CheckList
+      checkList={defaultCheckList}
+      header={header}
+      labels={labels}
+      taskInfoMap={defaultTaskInfoMap}
+      displayMode="CARD"
+    />
   </CardContainer>
 );
 
-export const InDrawer: CheckListComponentStory = () => (
+export const MinimalExampleInDrawer = () => (
   <Drawer>
-    <CheckList checkList={checkList} displayMode="DRAWER" />
+    <CheckList
+      checkList={defaultCheckList}
+      header={header}
+      labels={labels}
+      taskInfoMap={defaultTaskInfoMap}
+      displayMode="DRAWER"
+    />
   </Drawer>
 );
 
-const RealisticExample = () => {
+export const CompletedWithProgress = () => (
+  <CardContainer>
+    <CheckList
+      checkList={completedCheckList}
+      header={completedHeader}
+      labels={labels}
+      taskInfoMap={defaultTaskInfoMap}
+      displayMode="CARD"
+    />
+  </CardContainer>
+);
+
+export const CompletedSummaryOnly = () => (
+  <CardContainer>
+    <CheckList
+      checkList={completedCheckList}
+      header={completedHeader}
+      labels={labels}
+      taskInfoMap={defaultTaskInfoMap}
+      showProgress={false}
+      displayMode="CARD"
+    />
+  </CardContainer>
+);
+
+export const FullExample = () => {
   const [open, setOpen] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
 
@@ -79,9 +116,13 @@ const RealisticExample = () => {
 
   const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.sm));
 
+  const TASK_COUNT = 5;
+  const checkList = generateCheckList(TASK_COUNT);
+  const taskInfoMap = generateTaskInfoMap(TASK_COUNT);
+
   const drawerTitle = (
     <CheckList.DrawerTitle
-      title={checkList.summary?.title}
+      title={header?.title}
       helpTitle="What's this?"
       showHelpTitle={showHelp}
       onHelpClick={toggleHelp}
@@ -91,7 +132,7 @@ const RealisticExample = () => {
   const drawerDescription = (
     <>
       <Typography type="secondary">Your account is </Typography>
-      <Typography type="title3" color={(t) => t.colorTokens.action.text_default}>
+      <Typography type="title3" weight="bold" color={(t) => t.colorTokens.action.text_default}>
         {`${checkList.summary.percentageCompleted}% complete`}
       </Typography>
       <Box pt={2}>
@@ -118,15 +159,15 @@ const RealisticExample = () => {
       <Box sm={{ p: 10 }}>
         <CardContainer>
           <CheckList
-            checkList={{
-              ...checkList,
-              summary: {
-                ...checkList.summary,
-                title: cardTitle,
-                description: cardDescription,
-                onViewAll: toggleOpen,
-              },
+            checkList={checkList}
+            header={{
+              ...header,
+              title: cardTitle,
+              description: cardDescription,
+              onViewAll: toggleOpen,
             }}
+            labels={labels}
+            taskInfoMap={taskInfoMap}
             displayMode="CARD"
           />
         </CardContainer>
@@ -141,10 +182,10 @@ const RealisticExample = () => {
           <Typography>Showing help here</Typography>
         ) : (
           <CheckList
-            checkList={{
-              ...checkList,
-              summary: { ...checkList.summary, description: drawerDescription },
-            }}
+            checkList={checkList}
+            header={{ ...header, description: drawerDescription }}
+            labels={labels}
+            taskInfoMap={taskInfoMap}
             displayMode="DRAWER"
           />
         )}
@@ -153,10 +194,16 @@ const RealisticExample = () => {
   );
 };
 
-export const RealisticExampleDesktop: CheckListComponentStory = () => <RealisticExample />;
+export const FullExampleMobile: CheckListComponentStory = () => <FullExample />;
+FullExampleMobile.parameters = {
+  viewport: {
+    defaultViewport: 'iphone5',
+  },
+};
 
-export const RealisticExampleMobile: CheckListComponentStory = () => <RealisticExample />;
-RealisticExampleMobile.parameters = mobileViewportParams;
-
-export const RealisticExampleTablet: CheckListComponentStory = () => <RealisticExample />;
-RealisticExampleTablet.parameters = tabletViewportParams;
+export const FullExampleTablet: CheckListComponentStory = () => <FullExample />;
+FullExampleTablet.parameters = {
+  viewport: {
+    defaultViewport: 'tablet',
+  },
+};

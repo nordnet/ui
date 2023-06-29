@@ -1,9 +1,8 @@
 import React, { FC, ReactElement } from 'react';
 import { Box, Button, Flexbox, Icon, Typography } from '../..';
 
-import { CheckListSummary } from './CheckList.types';
-
-type DrawerTitleProps = CheckListSummary & {
+type DrawerTitleProps = {
+  title: string;
   helpTitle?: string;
   showHelpTitle?: boolean;
   onHelpClick?: React.MouseEventHandler;

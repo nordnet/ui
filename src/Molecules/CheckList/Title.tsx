@@ -1,15 +1,13 @@
 import React, { FC, ReactElement } from 'react';
 import { Box, Button, Flexbox, Icon, Typography } from '../..';
 import { isElement } from '../../common/utils';
-import { CheckList, DisplayMode } from './CheckList.types';
+import { TitleProps } from './CheckList.types';
 import ProgressDonutChart from './ProgressDonutChart';
-
-type TitleProps = CheckList['summary'] & { displayMode?: DisplayMode; showProgress?: boolean };
 
 const Title: FC<TitleProps> = ({
   percentageCompleted,
   maxPercentage = 100,
-  title = 'Title',
+  title = 'Default list title',
   description = '',
   viewAllLabel,
   displayMode,
@@ -28,7 +26,11 @@ const Title: FC<TitleProps> = ({
 
         <Flexbox container item direction="column" alignItems="center">
           {(isElement(description) && description) || (
-            <Typography type="title3" color={(t) => t.colorTokens.action.text_default}>
+            <Typography
+              type="title3"
+              weight="bold"
+              color={(t) => t.colorTokens.action.text_default}
+            >
               {description || defaultDescription}
             </Typography>
           )}

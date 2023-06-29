@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import { Badge, Box, Button, Flexbox, Typography } from '../..';
+import { ButtonProps } from '../Button/components/BaseButton/Button.types';
 
 const StyledButton = styled(Button)`
   border: 1px solid ${(t) => t.theme.colorTokens.neutral.border_weak};
@@ -8,6 +9,9 @@ const StyledButton = styled(Button)`
   justify-content: flex-start;
   text-align: left;
   padding: ${(t) => t.theme.spacing.unit(3)}px;
+  :hover {
+    text-decoration: none;
+  }
 `;
 
 const StyledBox = styled(Box)`
@@ -23,7 +27,7 @@ type TextButtonCardProps = {
   titleBadgeText?: string;
   buttonText?: string;
   statusIcon?: React.ReactNode;
-  onClick?: React.MouseEventHandler | false;
+  action?: Pick<ButtonProps, 'onClick' | 'to'> | false;
 };
 
 const TextButtonCard: FC<React.PropsWithChildren<TextButtonCardProps>> = ({
@@ -33,7 +37,7 @@ const TextButtonCard: FC<React.PropsWithChildren<TextButtonCardProps>> = ({
   titleBadgeText,
   buttonText,
   statusIcon,
-  onClick,
+  action,
   children,
 }) => {
   const contents = (
@@ -55,6 +59,7 @@ const TextButtonCard: FC<React.PropsWithChildren<TextButtonCardProps>> = ({
             {titleBadgeText && (
               <Badge.Label
                 type="secondary"
+                weight="bold"
                 badgeColor={(t) => t.colorTokens.action.background_weak}
                 color={(t) => t.colorTokens.action.text_default}
               >
@@ -68,9 +73,9 @@ const TextButtonCard: FC<React.PropsWithChildren<TextButtonCardProps>> = ({
         </Flexbox>
 
         {/* Button */}
-        {buttonText && onClick && (
+        {buttonText && action && (
           <Flexbox item shrink={0}>
-            <Button.Pill variant="secondary" size="m" onClick={onClick}>
+            <Button.Pill variant="secondary" size="m" {...action}>
               {buttonText}
             </Button.Pill>
           </Flexbox>
@@ -83,9 +88,9 @@ const TextButtonCard: FC<React.PropsWithChildren<TextButtonCardProps>> = ({
     </Flexbox>
   );
 
-  if (onClick && !buttonText)
+  if (action && !buttonText)
     return (
-      <StyledButton variant="neutral" fullWidth onClick={onClick}>
+      <StyledButton variant="neutral" fullWidth {...action}>
         {contents}
       </StyledButton>
     );

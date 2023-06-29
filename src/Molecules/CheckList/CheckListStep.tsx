@@ -1,7 +1,7 @@
 import React, { FC, ReactElement, useState } from 'react';
 import styled from 'styled-components';
 import { Button, Flexbox, Icon, Typography, useMedia } from '../..';
-import { Task, CheckListLabels, DisplayMode } from './CheckList.types';
+import { CheckListStepProps } from './CheckList.types';
 import TextButtonCard from './TextButtonCard';
 
 const AbsoluteFlexbox = styled(Flexbox)`
@@ -23,16 +23,16 @@ const TwoButtonBox = styled.div`
   gap: ${(t) => t.theme.spacing.unit(3)}px;
   justify-content: flex-end;
   padding-left: ${(t) => t.theme.spacing.unit(3)}px;
-  & button {
+  & button,
+  & a {
     flex-basis: 50%;
     flex-shrink: 0;
   }
 `;
 
-type CheckListStepProps = { task: Task } & CheckListLabels & { displayMode?: DisplayMode };
-
 const CheckListStep: FC<CheckListStepProps> = ({
   task,
+  taskInfo,
   dismissLabel = 'Dismiss',
   dismissQuestion = 'Dismiss?',
   dismissCancelLabel = 'Cancel',
@@ -45,7 +45,8 @@ const CheckListStep: FC<CheckListStepProps> = ({
   const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.sm));
   const isCompleted = task.taskState === 'COMPLETED';
 
-  const { startLabel, taskState, onDismiss, onStart } = task;
+  const { taskState, percentage } = task;
+  const { onDismiss, startAction, icon, title, description } = taskInfo || {};
 
   /* Buttons in drawer */
   const buttons = isDrawer && taskState !== 'COMPLETED' && (
@@ -54,15 +55,16 @@ const CheckListStep: FC<CheckListStepProps> = ({
         {dismissLabel}
       </Button>
 
-      {startLabel && onStart && (
-        <Button.Pill variant="secondary" size="m" fullWidth onClick={onStart}>
-          {startLabel}
+      {startAction && (
+        <Button.Pill variant="secondary" size="m" fullWidth {...startAction}>
+          {startAction.label}
         </Button.Pill>
       )}
     </TwoButtonBox>
   );
 
-  const dismissalDialog = isDrawer && dismissMode && (
+  /* Dialog in drawer */
+  const dialog = isDrawer && dismissMode && (
     <AbsoluteFlexbox container wrap="wrap" gap={3} alignContent="center" alignItems="center">
       <Flexbox item shrink={0} grow={1} basis="320px">
         <Typography type="primary" weight="bold">
@@ -71,29 +73,29 @@ const CheckListStep: FC<CheckListStepProps> = ({
       </Flexbox>
 
       <TwoButtonBox>
-        <Button.Pill variant="secondary" size="m" fullWidth onClick={() => setDismissMode(false)}>
+        <Button variant="secondary" size="m" fullWidth onClick={() => setDismissMode(false)}>
           {dismissCancelLabel}
-        </Button.Pill>
+        </Button>
 
-        <Button.Pill variant="negative" size="m" fullWidth onClick={onDismiss}>
+        <Button variant="negative" size="m" fullWidth onClick={onDismiss}>
           {dismissConfirmLabel}
-        </Button.Pill>
+        </Button>
       </TwoButtonBox>
     </AbsoluteFlexbox>
   );
 
   return (
     <TextButtonCard
-      titleIcon={task.icon || <Icon.Lightbulb24 />}
-      title={task.title || 'Default title'}
-      titleBadgeText={!isCompleted ? `+${task.percentage}%` : undefined}
-      description={task.description || 'Default description'}
-      buttonText={!isDrawer && !isMobile ? task.startLabel : ''}
-      onClick={!isDrawer ? task.onStart : undefined}
+      titleIcon={icon || <Icon.Lightbulb24 />}
+      title={title || 'Default title'}
+      titleBadgeText={!isCompleted ? `+${percentage}%` : undefined}
+      description={description || 'Default description'}
+      buttonText={!isDrawer && !isMobile && startAction ? startAction.label : ''}
+      action={!isDrawer ? startAction : undefined}
       statusIcon={isDrawer && isCompleted && <Icon.CheckCircleFill24 />}
     >
       {buttons}
-      {dismissalDialog}
+      {dialog}
     </TextButtonCard>
   );
 };
