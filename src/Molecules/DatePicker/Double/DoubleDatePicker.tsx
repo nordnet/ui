@@ -202,7 +202,7 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, DoubleDatePickerProps>
       </Flexbox>
       {open ? (
         <StyledDropdownBubbleWrapper>
-          <StyledDropdownBubble>{datepicker}</StyledDropdownBubble>
+          <StyledDropdownBubble borderRadius={8}>{datepicker}</StyledDropdownBubble>
         </StyledDropdownBubbleWrapper>
       ) : null}
     </div>
