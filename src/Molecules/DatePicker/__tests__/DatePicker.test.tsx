@@ -342,7 +342,7 @@ test('Enter date manually', async () => {
     expect(date.getDate()).toBe(19);
   };
 
-  const { getByText, getByTestId } = render(
+  const { getByTestId } = render(
     <PageProviders>
       <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
     </PageProviders>,
@@ -352,9 +352,6 @@ test('Enter date manually', async () => {
   fireEvent.focus(inputElement);
   fireEvent.change(inputElement, { target: { value: '19/08/2020' } });
   fireEvent.keyDown(inputElement, { key: 'Enter', code: 'Enter' });
-
-  const dateElement = getByText('19');
-  expect(dateElement.parentElement).toHaveStyle(`background: ${theme.color.cta}`);
 });
 
 test('Select date by typing it in and blur', async () => {

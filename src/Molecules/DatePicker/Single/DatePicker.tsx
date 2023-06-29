@@ -50,6 +50,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     selectMonthLabel,
     selectYearLabel,
     errorMessage,
+    stopKeyPropagation = false,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -163,7 +164,15 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
         value={inputValue}
         rightAddon={inputRightAddon}
         onChange={handleInputOnChange}
-        onKeyDown={handleInputKeyDown}
+        onKeyDown={(event: React.KeyboardEvent<HTMLInputElement>) => {
+          handleInputKeyDown(event);
+          if (event.key === 'Enter') {
+            setOpen(false);
+          }
+          if (stopKeyPropagation) {
+            event.stopPropagation();
+          }
+        }}
         onFocus={handleInputOnFocus}
         onBlur={handleInputOnBlur}
         width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
