@@ -25,6 +25,7 @@ const StyledContainer = styled.div<PromotionBannerProps>`
   background-color: ${(p) => getColor(p)};
   width: 100%;
   box-shadow: 0 2px 2px 0 ${({ theme }) => theme.color.shadowCard};
+  border-radius: ${({ theme, scope }) => (scope === 'module' ? theme.borderRadius(8) : 0)};
 `;
 
 const StyledBox = styled(Box)`
@@ -61,7 +62,7 @@ export const PromotionBanner: PromotionBannerComponent = ({
   mobileBadgeContent,
   onClose,
   scope = 'module',
-  justifyContent = "center",
+  justifyContent = 'center',
   title,
 }) => {
   const isDesktop = useMedia((t) => t.media.greaterThan(t.breakpoints.sm));
@@ -79,7 +80,7 @@ export const PromotionBanner: PromotionBannerComponent = ({
   }, [onClose]);
 
   return showPromotion ? (
-    <StyledContainer backgroundColor={backgroundColor}>
+    <StyledContainer backgroundColor={backgroundColor} scope={scope}>
       <StyledBox p={3} sm={{ p: 5 }}>
         <Flexbox container justifyContent="center">
           <Flexbox
