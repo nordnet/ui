@@ -9,6 +9,7 @@ const StyledCurrentPageBox = styled(Flexbox)`
   align-items: center;
   height: ${(p) => p.theme.spacing.unit(10)}px;
   width: ${(p) => p.theme.spacing.unit(10)}px;
+  border-radius: ${(p) => p.theme.borderRadius(2)};
 `;
 
 const StyledTruncatedBox = styled.li`
@@ -68,6 +69,7 @@ const [StyledButton, StyledLink] = [Button, Link].map(
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    border-radius: ${(p) => p.theme.borderRadius(2)};
     color: ${(t) => t.theme.color.text};
     ${({ $type, theme }) =>
       $type === 'chevron' &&
@@ -77,6 +79,7 @@ const [StyledButton, StyledLink] = [Button, Link].map(
       background-color: ${(t) => t.theme.color.ctaHover};
       color: ${(t) => t.theme.color.buttonText};
       text-decoration: none;
+      border-radius: ${(p) => p.theme.borderRadius(2)};
 
       span {
         color: ${(t) => t.theme.color.buttonText};
