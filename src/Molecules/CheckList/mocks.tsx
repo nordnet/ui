@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 import { Icon, Typography } from '../..';
 import { CheckList as CheckListType, Task, TaskInfoMap } from './CheckList.types';
@@ -58,13 +58,28 @@ export const defaultTaskInfoMap: TaskInfoMap = {
   },
 };
 
-export const generateCheckList = (taskCount: number): CheckListType => {
+const generateNumSeries = (ratio: number, n: number, total: number) => {
+  let x = (total * (1 - 1 / ratio)) / (ratio ** n - 1);
+  const arr = [...new Array(n)].map((_) => {
+    x *= ratio;
+    return Math.round(x);
+  });
+  arr[n - 1] = total - arr.slice(0, -1).reduce((a, c) => a + c);
+  return arr;
+};
+
+const generateTasks = (taskCount: number): Task[] => {
+  const percentages = generateNumSeries(1.5, taskCount, 100);
   const tasks: Task[] = [...Array(taskCount).keys()].map((i) => ({
     taskId: `TASK_${i + 1}`,
-    taskState: i < taskCount / 2 ? 'COMPLETED' : 'INCOMPLETE',
-    percentage: 5 * (i + 1),
+    taskState: i < taskCount / 3 ? 'COMPLETED' : 'INCOMPLETE',
+    percentage: i < taskCount / 3 ? percentages.shift() || 0 : percentages.pop() || 0,
   }));
+  return tasks;
+};
 
+export const generateCheckList = (taskCount: number): CheckListType => {
+  const tasks = generateTasks(taskCount);
   const percentageCompleted = tasks.reduce(
     (prev, curr) => (curr.taskState === 'COMPLETED' ? prev + curr.percentage : prev),
     0,
@@ -79,7 +94,44 @@ export const generateCheckList = (taskCount: number): CheckListType => {
   };
 };
 
-export const generateTaskInfoMap = (taskCount: number): TaskInfoMap => {
+export const useFakeCheckList = (taskCount: number) => {
+  const initialTasks = generateTasks(taskCount);
+
+  const [tasks, setTasks] = useState<Task[]>(initialTasks);
+
+  const dismissTask = (taskId: string) => {
+    const updatedTasks: Task[] = tasks.map((task) => {
+      if (task.taskId === taskId) {
+        return { ...task, taskState: 'COMPLETED' };
+      }
+      return task;
+    });
+
+    setTasks(updatedTasks);
+  };
+
+  const percentageCompleted = tasks.reduce(
+    (prev, curr) => (curr.taskState === 'COMPLETED' ? prev + curr.percentage : prev),
+    0,
+  );
+
+  const taskInfoMap = generateTaskInfoMap(taskCount, dismissTask);
+
+  const checkList = {
+    summary: {
+      maxPercentage: 100,
+      percentageCompleted,
+    },
+    tasks,
+  };
+
+  return { checkList, taskInfoMap };
+};
+
+export const generateTaskInfoMap = (
+  taskCount: number,
+  dismissTask?: (taskId: string) => void,
+): TaskInfoMap => {
   const iconArray = Object?.entries(Icon)
     .filter(([iconName, _]) => iconName.endsWith('24'))
     .map(([key, IconComponent]: [string, React.ComponentType<any>]) => <IconComponent key={key} />);
@@ -90,13 +142,15 @@ export const generateTaskInfoMap = (taskCount: number): TaskInfoMap => {
       [`TASK_${i + 1}`]: {
         icon: iconArray[i],
         title: `This is the title for task ${i + 1}`,
-        description: `This is the description for task ${i + 1}. `.repeat(i + 1),
+        description: `This is the description for task ${i + 1}. `.repeat((i % 3) + 1),
         startAction: {
           label: i % 2 ? `Link to step ${i + 1}` : `Open step ${i + 1}`,
           onClick: action(`startAction (${i % 2 ? 'link' : 'button'}) task ${i + 1}`),
           to: i % 2 ? `/route${i + 1}` : undefined,
         },
-        onDismiss: action(`onDismiss task ${i + 1}`),
+        onDismiss: dismissTask
+          ? () => dismissTask(`TASK_${i + 1}`)
+          : action(`onDismiss task ${i + 1}`),
       },
     }),
     {},

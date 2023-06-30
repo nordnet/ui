@@ -11,11 +11,10 @@ import {
   defaultCheckList,
   completedCheckList,
   defaultTaskInfoMap,
-  generateCheckList,
-  generateTaskInfoMap,
   header,
   labels,
   completedHeader,
+  useFakeCheckList,
 } from './mocks';
 
 export default {
@@ -114,11 +113,10 @@ export const FullExample = () => {
     setShowHelp(!showHelp);
   };
 
-  const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.sm));
-
   const TASK_COUNT = 5;
-  const checkList = generateCheckList(TASK_COUNT);
-  const taskInfoMap = generateTaskInfoMap(TASK_COUNT);
+  const { checkList, taskInfoMap } = useFakeCheckList(TASK_COUNT);
+  const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.sm));
+  const isCompleted = checkList.summary.percentageCompleted === checkList.summary.maxPercentage;
 
   const drawerTitle = (
     <CheckList.DrawerTitle
@@ -137,7 +135,9 @@ export const FullExample = () => {
       </Typography>
       <Box pt={2}>
         <Typography type="secondary" color={(t) => t.colorTokens.neutral.text_weak}>
-          Good job! Keep going.
+          {isCompleted
+            ? `${completedHeader.title} ${completedHeader.description}`
+            : 'Good job! Keep going.'}
         </Typography>
       </Box>
     </>
@@ -162,8 +162,8 @@ export const FullExample = () => {
             checkList={checkList}
             header={{
               ...header,
-              title: cardTitle,
-              description: cardDescription,
+              title: isCompleted ? completedHeader.title : cardTitle,
+              description: isCompleted ? completedHeader.description : cardDescription,
               onViewAll: toggleOpen,
             }}
             labels={labels}

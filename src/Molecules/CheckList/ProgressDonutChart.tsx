@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from 'react';
+import React, { FC, ReactElement, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 
 const R = 15.915494309189533; // 100 / (2 * Math.PI);
@@ -13,7 +13,7 @@ const CIRCLE_PROPS = {
 };
 const SIZES = { s: 64, l: 215 };
 
-const StyledSvg = styled.svg`
+const StyledSvg = styled.svg<{ $initialStrokeDasharray?: string }>`
   transform: rotate(-90deg);
 
   circle:first-of-type {
@@ -26,7 +26,7 @@ const StyledSvg = styled.svg`
 
   @keyframes progress {
     0% {
-      stroke-dasharray: 0 100;
+      stroke-dasharray: ${(p) => p?.$initialStrokeDasharray || '0 100'};
     }
   }
 `;
@@ -43,15 +43,28 @@ const ProgressDonutChart: FC<ProgressDonutChartProps> = ({
   size = 's',
 }): ReactElement => {
   const sizePx = SIZES[size];
+  const strokeDasharray = `${(100 * completed) / total} ${100 * (1 - completed / total)}`;
+  const savedStrokeDasharray = useRef<string>();
+
+  useEffect(() => {
+    savedStrokeDasharray.current = strokeDasharray;
+  }, [strokeDasharray]);
 
   return (
-    <StyledSvg width={sizePx} height={sizePx} viewBox={`0 0 ${2 * C} ${2 * C}`}>
+    <StyledSvg
+      width={sizePx}
+      height={sizePx}
+      viewBox={`0 0 ${2 * C} ${2 * C}`}
+      key={`${size}:${completed}`}
+      $initialStrokeDasharray={
+        savedStrokeDasharray.current && savedStrokeDasharray.current !== strokeDasharray
+          ? savedStrokeDasharray.current
+          : undefined
+      }
+    >
       <circle {...CIRCLE_PROPS}></circle>
       {completed > 0 && total > 0 && (
-        <circle
-          {...CIRCLE_PROPS}
-          strokeDasharray={`${(100 * completed) / total} ${100 * (1 - completed / total)}`}
-        ></circle>
+        <circle {...CIRCLE_PROPS} strokeDasharray={strokeDasharray}></circle>
       )}
     </StyledSvg>
   );
