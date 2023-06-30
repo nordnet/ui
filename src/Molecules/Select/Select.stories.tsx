@@ -1,10 +1,10 @@
 // Button.stories.ts|tsx
 import React, { useState } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Icon, Typography, Flag, Flexbox } from '../..';
+import { Icon, Typography, Flag, Flexbox, FormField } from '../..';
 import { Display } from '../../common/Display';
-
 import {
+  PillTrigger,
   Select,
   Option,
   Group,
@@ -126,12 +126,24 @@ export const DifferentSizes: ComponentStory<typeof Select> = () => (
   />
 );
 
+export const WithFormField: ComponentStory<typeof Select> = () => (
+  <FormField label="Label" required extraInfo="Extra info">
+    <Select placeholder="Select a option...">
+      {options.map((option) => (
+        <Option key={option.value} value={option.value} label={option.label} />
+      ))}
+    </Select>
+  </FormField>
+);
+
 export const WithError: ComponentStory<typeof Select> = () => (
-  <Select placeholder="Select a option..." hasError>
-    {options.map((option) => (
-      <Option key={option.value} value={option.value} label={option.label} />
-    ))}
-  </Select>
+  <FormField error="Error message" label="Label">
+    <Select placeholder="Select a option..." hasError>
+      {options.map((option) => (
+        <Option key={option.value} value={option.value} label={option.label} />
+      ))}
+    </Select>
+  </FormField>
 );
 
 export const Disabled: ComponentStory<typeof Select> = () => (
@@ -296,3 +308,11 @@ export const WithSearchInHeader: ComponentStory<typeof Select> = () => {
     </Select>
   );
 };
+
+export const WithPillShape: ComponentStory<typeof Select> = () => (
+  <Select placeholder="Select a option..." slots={{ trigger: PillTrigger }}>
+    {options.map((option) => (
+      <Option key={option.value} value={option.value} label={option.label} />
+    ))}
+  </Select>
+);

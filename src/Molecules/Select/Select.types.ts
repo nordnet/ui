@@ -18,5 +18,11 @@ export type Props = {
    */
   width?: number;
   value?: string | string[];
+  slots?: {
+    trigger?: React.ComponentType<any>;
+  };
+  slotProps?: {
+    trigger?: any;
+  };
 } & SelectProps<string | string[], boolean>;
 // TODO: will we really expose all props from SelectProps?

@@ -7,6 +7,7 @@ import { Search } from './Search';
 import { Select } from './Select';
 import { ValueDisplayMultiSelect } from './ValueDisplayMultiSelect';
 import { ToggleAll } from './ToggleAll';
+import { PillTrigger } from './PillTrigger';
 
 export {
   Action,
@@ -18,4 +19,5 @@ export {
   Select,
   ValueDisplayMultiSelect,
   ToggleAll,
+  PillTrigger,
 };
