@@ -88,9 +88,9 @@ export const Button: BaseButtonComponent = React.forwardRef<
     delayLoadingSpinnerAnimation = true,
     icon,
     iconPlacement = 'left',
-    // trackingId is sent to trackContext.track() but we don't want to spread it with ...rest
+    // componentId is sent to trackContext.track() but we don't want to spread it with ...rest
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    trackingId,
+    componentId,
     ...rest
   } = props;
   const externalIsNotPresent = typeof external === 'undefined';

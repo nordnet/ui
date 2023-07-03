@@ -35,7 +35,7 @@ really be disabled and then you probably want to have a button which can be disa
 
 ### Tracking Props
 
-- `trackingId` - a string that can be use to identify buttons and links for tracking purposes.
+- `componentId` - a string that can be use to identify buttons and links for tracking purposes.
 
 ## Usage
 
