@@ -1,3 +1,17 @@
+# [12.32.0](https://github.com/nordnet/ui/compare/v12.31.1...v12.32.0) (2023-07-03)
+
+
+### Bug Fixes
+
+* 🐛 add fake state to checklist story and fixed animation ([5f58ce1](https://github.com/nordnet/ui/commit/5f58ce1))
+* 🐛 checklist mobile fixes and simplification ([b23d942](https://github.com/nordnet/ui/commit/b23d942))
+* 🐛 design review and refactor ([9dbee38](https://github.com/nordnet/ui/commit/9dbee38))
+
+
+### Features
+
+* 🎸 add checklist component ([49945f0](https://github.com/nordnet/ui/commit/49945f0))
+
 ## [12.31.1](https://github.com/nordnet/ui/compare/v12.31.0...v12.31.1) (2023-06-27)
 
 
