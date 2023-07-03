@@ -1,3 +1,10 @@
+# [12.33.0](https://github.com/nordnet/ui/compare/v12.32.0...v12.33.0) (2023-07-03)
+
+
+### Features
+
+* add componentId prop to button and link components for analytics ([#1372](https://github.com/nordnet/ui/issues/1372)) ([1e09d62](https://github.com/nordnet/ui/commit/1e09d62))
+
 # [12.32.0](https://github.com/nordnet/ui/compare/v12.31.1...v12.32.0) (2023-07-03)
 
 
