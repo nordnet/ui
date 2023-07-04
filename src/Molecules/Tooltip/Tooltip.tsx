@@ -1,5 +1,7 @@
 import React, { cloneElement, FC, ReactElement, useState } from 'react';
 import styled from 'styled-components';
+import { AnimatePresence } from 'framer-motion';
+
 import { Props } from './Tooltip.types';
 import { useMedia } from '../..';
 import { PopOver } from '../../common/PopOver';
@@ -23,11 +25,11 @@ const Backdrop = styled.div`
   inset: 0 0 0 0;
   width: 100vw;
   height: 100vh;
-  background-color: ${p => p.theme.color.modalBackdrop};
+  background-color: ${(p) => p.theme.color.modalBackdrop};
   z-index: ${({ theme }) => theme.zIndex.modal};
 `;
 
-export const Tooltip: FC<Props> = props => {
+export const Tooltip: FC<Props> = (props) => {
   const {
     className,
     children,
@@ -46,6 +48,8 @@ export const Tooltip: FC<Props> = props => {
     customBoundary,
     pointerArrow = true,
     bottomSheetQuery,
+    bottomSheetTitle,
+    onBottomSheetClose,
     invertedColors,
   } = props;
   const child = React.Children.only(children) as ReactElement;
@@ -54,14 +58,14 @@ export const Tooltip: FC<Props> = props => {
 
   const [popoverElement, setPopoverElement] = useState(undefined);
 
-  const bottomSheet = useMedia(t => bottomSheetQuery?.(t) || '__false') || false;
+  const shouldShowBottomSheet = useMedia((t) => bottomSheetQuery?.(t) || '__false') || false;
 
   const params = {
-    mode: bottomSheet ? 'click' : mode,
+    mode: shouldShowBottomSheet ? 'click' : mode,
     controlledIsOpen,
     openDelay,
     closeDelay,
-    isBottomSheet: bottomSheet,
+    isBottomSheet: shouldShowBottomSheet,
     popoverElement,
   };
 
@@ -98,28 +102,32 @@ export const Tooltip: FC<Props> = props => {
         onKeyDown: wrapEvent(child.props.onKeyDown, handleKeyDown),
         onMouseDown: wrapEvent(child.props.onMouseDown, handleMouseDown),
       })}
-      {isOpen && bottomSheet && <Backdrop />}
-      {isOpen && (
-        <PopOver
-          setPopoverElement={bottomSheet ? setPopoverElement : undefined}
-          className={className}
-          id={id}
-          triggerElement={triggerElement}
-          ariaLabel={ariaLabel}
-          label={label}
-          position={position}
-          inModal={inModal}
-          maxWidth={maxWidth}
-          offset={offset}
-          pointerArrow={pointerArrow}
-          pointerEvents={bottomSheet || pointerEvents}
-          handleMouseEnter={handleMouseEnter}
-          handleMouseLeave={handleMouseLeave}
-          customBoundary={customBoundary}
-          bottomSheet={bottomSheet}
-          invertedColors={invertedColors}
-        />
-      )}
+      {isOpen && shouldShowBottomSheet && <Backdrop onClick={onBottomSheetClose} />}
+      <AnimatePresence>
+        {isOpen && (
+          <PopOver
+            setPopoverElement={shouldShowBottomSheet ? setPopoverElement : undefined}
+            className={className}
+            id={id}
+            triggerElement={triggerElement}
+            ariaLabel={ariaLabel}
+            label={label}
+            position={position}
+            inModal={inModal}
+            maxWidth={maxWidth}
+            offset={offset}
+            pointerArrow={pointerArrow}
+            pointerEvents={shouldShowBottomSheet || pointerEvents}
+            handleMouseEnter={handleMouseEnter}
+            handleMouseLeave={handleMouseLeave}
+            customBoundary={customBoundary}
+            bottomSheet={shouldShowBottomSheet}
+            bottomSheetTitle={bottomSheetTitle}
+            onBottomSheetClose={onBottomSheetClose}
+            invertedColors={invertedColors}
+          />
+        )}
+      </AnimatePresence>
     </>
   );
 };
