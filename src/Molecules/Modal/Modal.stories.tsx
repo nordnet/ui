@@ -1386,3 +1386,16 @@ export const modalWithDisabledEscapePress = () => {
 modalWithDisabledEscapePress.story = {
   name: 'Modal with disabled escape-key press',
 };
+
+export const modalWithProgressIndicator = () => {
+  return (
+    <Modal
+      progressIndicator={{ numberOfSteps: 3, currentStep: 2 }}
+      progressIndicatorDescription="Description"
+    ></Modal>
+  );
+};
+
+modalWithProgressIndicator.story = {
+  name: 'Modal with progress indicator',
+};

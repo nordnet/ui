@@ -8,7 +8,7 @@ import { BackdropProps, BackdropWrapperProps, DialogProps, Props } from './Modal
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Title } from './Title';
-import { Flexbox, OldIcon, useKeyPress } from '../..';
+import { Flexbox, OldIcon, ProgressIndicator, Typography, useKeyPress } from '../..';
 
 const PADDING_DESKTOP = 10;
 const PADDING_MOBILE = 3;
@@ -136,6 +136,16 @@ export const Footer = styled.div`
   flex: 0 0 auto;
 `;
 
+export const StyledProgressIndicator = styled(ProgressIndicator)`
+  && {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 4px;
+    background-color: red;
+  }
+`;
+
 const noop = () => {};
 
 const BackdropWrapper: React.FC<BackdropWrapperProps> = ({
@@ -169,6 +179,8 @@ export const ModalInner: React.FC<Props> = ({
   closeTitle = 'Close this modal',
   title,
   onClose,
+  progressIndicator,
+  progressIndicatorDescription,
   footer,
   hideClose = false,
   closeOnBackdropClick = false,
@@ -254,6 +266,10 @@ export const ModalInner: React.FC<Props> = ({
               $fixedBottomMobile={fixedBottomMobile}
               isStatusModal={isStatusModal}
             >
+              {progressIndicator && <StyledProgressIndicator {...progressIndicator} />}
+              {progressIndicatorDescription && (
+                <Typography type="secondary">{progressIndicatorDescription}</Typography>
+              )}
               {hasHeader && <Header>{title && <Title title={title} uid={titleId} />}</Header>}
               {children}
               {footer && <Footer>{footer}</Footer>}
