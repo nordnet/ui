@@ -1,3 +1,10 @@
+# [12.34.0](https://github.com/nordnet/ui/compare/v12.33.0...v12.34.0) (2023-07-04)
+
+
+### Features
+
+* add two bottomsheet specific props and fix tooltip/sheet animations ([5ecb83d](https://github.com/nordnet/ui/commit/5ecb83d))
+
 # [12.33.0](https://github.com/nordnet/ui/compare/v12.32.0...v12.33.0) (2023-07-03)
 
 
