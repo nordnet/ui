@@ -11,6 +11,8 @@ import { Title } from './Title';
 import { Flexbox, OldIcon, ProgressIndicator, Typography, useKeyPress } from '../..';
 
 const PADDING_DESKTOP = 10;
+const PADDING_PROGRESS_INDICATOR = 14;
+const PADDING_PROGRESS_INDICATOR_MOBILE = 10;
 const PADDING_MOBILE = 3;
 const PADDING_TOP_MOBILE = 4;
 const PADDING_TOP_MOBILE_FULLSCREEN = 5;
@@ -118,9 +120,16 @@ const CloseButton = styled(NormalizedElements.Button)`
   right: ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
 
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
-    top: ${(p) => p.theme.spacing.unit(PADDING_DESKTOP)}px;
+    top: ${(p) =>
+      p.$progressIndicator
+        ? `${p.theme.spacing.unit(PADDING_PROGRESS_INDICATOR)}px`
+        : `${p.theme.spacing.unit(PADDING_DESKTOP)}px`};
     right: ${(p) => p.theme.spacing.unit(PADDING_DESKTOP)}px;
   }
+  ${(p) =>
+    p.$progressIndicator
+      ? `top: ${p.theme.spacing.unit(PADDING_PROGRESS_INDICATOR_MOBILE)}px;`
+      : `top:${p.theme.spacing.unit(PADDING_MOBILE)}px;`}
 `;
 
 export const Header = styled.div`
@@ -136,13 +145,16 @@ export const Footer = styled.div`
   flex: 0 0 auto;
 `;
 
-export const StyledProgressIndicator = styled(ProgressIndicator)`
-  && {
-    position: absolute;
+export const StyledProgressIndicator = styled.div`
+  > div {
+    position: relative;
     width: 100%;
     top: 0px;
-    left: 4px;
-    background-color: red;
+    padding: 0;
+    margin-bottom: ${(p) => p.theme.spacing.unit(1)}px;
+    > div > div > div {
+      margin: 0;
+    }
   }
 `;
 
@@ -266,15 +278,29 @@ export const ModalInner: React.FC<Props> = ({
               $fixedBottomMobile={fixedBottomMobile}
               isStatusModal={isStatusModal}
             >
-              {progressIndicator && <StyledProgressIndicator {...progressIndicator} />}
-              {progressIndicatorDescription && (
-                <Typography type="secondary">{progressIndicatorDescription}</Typography>
+              {progressIndicator && (
+                <StyledProgressIndicator>
+                  <ProgressIndicator {...progressIndicator} />
+                </StyledProgressIndicator>
               )}
-              {hasHeader && <Header>{title && <Title title={title} uid={titleId} />}</Header>}
+
+              {hasHeader && (
+                <Header>
+                  {progressIndicatorDescription && (
+                    <Typography type="secondary">{progressIndicatorDescription}</Typography>
+                  )}
+                  {title && <Title title={title} uid={titleId} />}
+                </Header>
+              )}
               {children}
               {footer && <Footer>{footer}</Footer>}
               {!hideClose && (
-                <CloseButton type="button" onClick={onClose} $fullScreenMobile={fullScreenMobile}>
+                <CloseButton
+                  type="button"
+                  onClick={onClose}
+                  $fullScreenMobile={fullScreenMobile}
+                  $progressIndicator={progressIndicator}
+                >
                   <OldIcon.CrossThin size={5} title={closeTitle} stroke={(t) => t.color.text} />
                 </CloseButton>
               )}
