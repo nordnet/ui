@@ -2,7 +2,14 @@ import * as React from 'react';
 import useSelect, { SelectProvider } from '@mui/base/useSelect';
 import { FadedScroll } from '../..';
 import { HiddenSelect } from './HiddenSelect';
-import { Arrow, ListContainer, Listbox, ListboxContainer, Root } from './Select.styles';
+import {
+  Arrow,
+  ListContainer,
+  Listbox,
+  ListboxContainer,
+  Root,
+  StyledChevronDown8,
+} from './Select.styles';
 import { Props } from './Select.types';
 import { ValueDisplay } from './ValueDisplay';
 import { Trigger as DefaultTrigger } from './Trigger';
@@ -74,6 +81,7 @@ export function Select({
               placeholder={placeholder}
             />
           )}
+          <StyledChevronDown8 color={(t) => t.colorTokens.neutral.icon_default} />
         </Trigger>
         <ListContainer aria-hidden={!listboxVisible} $hidden={!listboxVisible}>
           <Arrow />
