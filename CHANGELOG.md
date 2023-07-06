@@ -1,3 +1,16 @@
+# [12.36.0](https://github.com/nordnet/ui/compare/v12.35.0...v12.36.0) (2023-07-06)
+
+
+### Bug Fixes
+
+* update height when card content changes ([ccf1ec6](https://github.com/nordnet/ui/commit/ccf1ec6))
+
+
+### Features
+
+* 🎸 add progress indicator in Modal ([94c4b4c](https://github.com/nordnet/ui/commit/94c4b4c))
+* 🎸 add progress indicator support in the modal ([9215743](https://github.com/nordnet/ui/commit/9215743))
+
 # [12.35.0](https://github.com/nordnet/ui/compare/v12.34.0...v12.35.0) (2023-07-06)
 
 
