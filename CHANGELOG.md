@@ -1,3 +1,10 @@
+# [12.35.0](https://github.com/nordnet/ui/compare/v12.34.0...v12.35.0) (2023-07-06)
+
+
+### Features
+
+* add global fill 12px icon ([c30480e](https://github.com/nordnet/ui/commit/c30480e))
+
 # [12.34.0](https://github.com/nordnet/ui/compare/v12.33.0...v12.34.0) (2023-07-04)
 
 
