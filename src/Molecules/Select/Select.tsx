@@ -63,6 +63,7 @@ export function Select({
   // TODO: With checkboxes?
   // TODO: forward ref to Select component
   // TODO: Do we want to use popper for the dropdown?
+  // TODO: Do not allow custom slots.trigger to pass children prop, it will override Triggers children from this file
 
   return (
     <>
