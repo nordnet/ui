@@ -13,7 +13,7 @@ type Unit = {
   valueOf: () => number;
 };
 
-export type BORDER_RADIUS = 2 | 4 | 6 | 8 | 20;
+export type BORDER_RADIUS = 2 | 4 | 6 | 8 | 20 | 100;
 type BorderRadius = {
   (radius: BORDER_RADIUS): string;
 };
