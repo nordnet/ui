@@ -145,6 +145,7 @@ export const CoachMarks: Component = ({
               style={styles.arrow}
               bubblePlacement={placement}
               bottomSheet={bottomSheet}
+              noBorder={!!barColor}
             />
           )}
           <Flexbox container item direction="column" flex="1" gutter={5} ref={internalCoachMarkRef}>

@@ -4,11 +4,12 @@ import { Component, InternalProps, Props } from './BubbleArrow.types';
 import { TRIANGLE_INDENTATION, TRIANGLE_SIZE } from './consts';
 import { BORDER_SIZE } from '../Bubble/consts';
 
-const arrowUp = css`
+const arrowUp = css<{ noBorder?: boolean }>`
   &::before {
     border-left: ${TRIANGLE_SIZE}px solid transparent;
     border-right: ${TRIANGLE_SIZE}px solid transparent;
-    border-bottom: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
+    border-bottom: ${TRIANGLE_SIZE}px solid
+      ${(p) => (p.noBorder ? 'transparent' : p.theme.color.bubbleBorder)};
   }
 
   &::after {
@@ -21,11 +22,12 @@ const arrowUp = css`
   }
 `;
 
-const arrowRight = css`
+const arrowRight = css<{ noBorder?: boolean }>`
   &::before {
     border-top: ${TRIANGLE_SIZE}px solid transparent;
     border-bottom: ${TRIANGLE_SIZE}px solid transparent;
-    border-left: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
+    border-left: ${TRIANGLE_SIZE}px solid
+      ${(p) => (p.noBorder ? 'transparent' : p.theme.color.bubbleBorder)};
   }
 
   &::after {
@@ -37,11 +39,12 @@ const arrowRight = css`
   }
 `;
 
-const arrowDown = css`
+const arrowDown = css<{ noBorder?: boolean }>`
   &::before {
     border-left: ${TRIANGLE_SIZE}px solid transparent;
     border-right: ${TRIANGLE_SIZE}px solid transparent;
-    border-top: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
+    border-top: ${TRIANGLE_SIZE}px solid
+      ${(p) => (p.noBorder ? 'transparent' : p.theme.color.bubbleBorder)};
   }
 
   &::after {
@@ -53,11 +56,12 @@ const arrowDown = css`
   }
 `;
 
-const arrowLeft = css`
+const arrowLeft = css<{ noBorder?: boolean }>`
   &::before {
     border-top: ${TRIANGLE_SIZE}px solid transparent;
     border-bottom: ${TRIANGLE_SIZE}px solid transparent;
-    border-right: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
+    border-right: ${TRIANGLE_SIZE}px solid
+      ${(p) => (p.noBorder ? 'transparent' : p.theme.color.bubbleBorder)};
   }
 
   &::after {
@@ -129,7 +133,7 @@ const getArrowPositionStyles = (bubblePlacement: Props['bubblePlacement']) => {
 };
 
 export const BubbleArrow: Component = React.forwardRef<HTMLDivElement, Props>(
-  ({ bubblePlacement, bottomSheet }, ref) => {
+  ({ bubblePlacement, bottomSheet, noBorder }, ref) => {
     const arrowPositionStyles = getArrowPositionStyles(bubblePlacement);
 
     return (
@@ -138,6 +142,7 @@ export const BubbleArrow: Component = React.forwardRef<HTMLDivElement, Props>(
         style={arrowPositionStyles}
         ref={ref}
         bottomSheet={bottomSheet}
+        noBorder={noBorder}
       />
     );
   },
