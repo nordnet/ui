@@ -18,12 +18,13 @@ const getColor = (props: ThemedStyledProps<CardProps, Theme>) => {
 
 const barStyles = css<CardProps>`
   position: relative;
+  border: 0;
 
   &::before {
     content: '';
     display: block;
     width: 100%;
-    height: ${(p) => p.theme.spacing.unit(1)}px;
+    height: ${(p) => p.theme.spacing.unit(2)}px;
     background: ${(p) => getColor(p)};
     position: absolute;
     top: 0;
