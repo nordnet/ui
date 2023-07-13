@@ -35,19 +35,8 @@ const ListItem = styled.li<InternalProps>`
   display: block;
   position: relative;
   background-color: ${(p) => p.theme.color.inputBackground};
-
-  &::before {
-    content: '';
-    display: block;
-    background: ${(p) => p.theme.color.cta};
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.16s ease-out;
-    opacity: ${(p) => (p.$current ? 1 : 0)};
-  }
+  border-radius: ${(p) => p.theme.borderRadius(8)};
+  border-left: 8px solid ${(p) => p.theme.colorTokens.action.background_default};
 
   ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
     & + &::after {
