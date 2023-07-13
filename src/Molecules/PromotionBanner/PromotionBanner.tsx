@@ -25,7 +25,7 @@ const StyledContainer = styled.div<PromotionBannerProps>`
   background-color: ${(p) => getColor(p)};
   width: 100%;
   box-shadow: 0 2px 2px 0 ${({ theme }) => theme.color.shadowCard};
-  border-radius: ${({ theme, scope }) => (scope === 'module' ? theme.borderRadius(8) : 0)};
+  border-radius: ${({ theme, scope }) => (scope === 'module' ? theme.borderRadius8() : 0)};
 `;
 
 const StyledBox = styled(Box)`

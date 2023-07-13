@@ -34,7 +34,7 @@ const CheckmarkBox = styled(Flexbox)<{ size: number; shape: Shape }>`
   position: relative;
   flex-shrink: 0;
   ${(p) =>
-    p.shape === Shape.Circle ? 'border-radius: 100%' : `border-radius: ${p.theme.borderRadius(2)}`};
+    p.shape === Shape.Circle ? 'border-radius: 100%' : `border-radius: ${p.theme.borderRadius2()}`};
 
   &::before {
     content: '';
@@ -88,7 +88,7 @@ const Input = styled(CleanInput).attrs(() => ({ type: 'checkbox' }))<InternalInp
     & + ${CheckmarkBox} {
       &::before {
         border: 1px solid ${p.theme.color.inputBorderError};
-        border-radius: ${p.theme.borderRadius(2)};
+        border-radius: ${p.theme.borderRadius2()};
       }
     }`
       : ''}
@@ -96,7 +96,7 @@ const Input = styled(CleanInput).attrs(() => ({ type: 'checkbox' }))<InternalInp
   &:focus + ${CheckmarkBox} {
     &::before {
       border: 1px solid ${(p) => p.theme.color.cta};
-      border-radius: ${(p) => p.theme.borderRadius(2)};
+      border-radius: ${(p) => p.theme.borderRadius2()};
     }
   }
   ${(p) =>
@@ -105,7 +105,7 @@ const Input = styled(CleanInput).attrs(() => ({ type: 'checkbox' }))<InternalInp
       : `& + ${CheckmarkBox} {
     &::before {
       border: 1px solid ${p.theme.color.cta};
-      border-radius: ${p.theme.borderRadius(2)};
+      border-radius: ${p.theme.borderRadius2()};
     }
   }
   `}

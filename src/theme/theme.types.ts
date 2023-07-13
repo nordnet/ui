@@ -15,7 +15,7 @@ type Unit = {
 
 export type BORDER_RADIUS = 2 | 4 | 6 | 8 | 20 | 100;
 type BorderRadius = {
-  (radius: BORDER_RADIUS): string;
+  (): string;
 };
 
 export type RawColor = {
@@ -1012,5 +1012,9 @@ export type Theme = {
   };
   isHighContrastMode: boolean;
   isDarkMode: boolean;
-  borderRadius: BorderRadius;
+  borderRadius2: BorderRadius;
+  borderRadius4: BorderRadius;
+  borderRadius8: BorderRadius;
+  borderRadius20: BorderRadius;
+  borderRadius100: BorderRadius;
 };

@@ -15,7 +15,7 @@ const StyledTooltip = styled.div<StyledTooltipProps>`
   border: solid ${BORDER_SIZE}px ${(p) => p.borderColor(p.theme)};
   ${(p) => (p.maxWidth ? `max-width: ${p.theme.spacing.unit(p.maxWidth)}px;` : '')}
   overflow-wrap: break-word;
-  border-radius: ${(p) => p.theme.borderRadius(4)};
+  border-radius: ${(p) => p.theme.borderRadius4()};
 
   ${(p) =>
     p.bottomSheet &&
@@ -23,7 +23,7 @@ const StyledTooltip = styled.div<StyledTooltipProps>`
         width: 100%;
         max-width: none;
         box-sizing: border-box;
-        border-radius: ${p.theme.borderRadius(20)} ${p.theme.borderRadius(20)} 0px 0px;
+        border-radius: ${p.theme.borderRadius20()} ${p.theme.borderRadius20()} 0px 0px;
     `}
 `;
 

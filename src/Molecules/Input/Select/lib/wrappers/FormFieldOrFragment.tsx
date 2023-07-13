@@ -72,7 +72,7 @@ const SelectWrapper = styled.div`
   background: ${(p) => p.theme.color.inputBackground};
   box-sizing: border-box;
   position: relative;
-  border-radius: ${({ theme }) => theme.borderRadius(4)};
+  border-radius: ${({ theme }) => theme.borderRadius4()};
 `;
 
 export const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(

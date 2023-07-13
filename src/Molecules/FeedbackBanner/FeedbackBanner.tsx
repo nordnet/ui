@@ -45,7 +45,7 @@ const StyledContainer = styled.div<FeedbackBannerProps>`
   border-left: ${(p) => p.theme.spacing.unit(1)}px solid ${getBorderColor};
   padding: ${(p) => `${p.theme.spacing.unit(1)}px ${p.theme.spacing.unit(3)}px`};
   box-sizing: border-box;
-  border-radius: ${(p) => p.theme.borderRadius(4)};
+  border-radius: ${(p) => p.theme.borderRadius4()};
 `;
 
 const TextFlexbox = styled(Flexbox)`
