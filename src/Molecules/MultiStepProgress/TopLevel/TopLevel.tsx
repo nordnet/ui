@@ -35,6 +35,10 @@ const ListItem = styled.li<InternalProps>`
   display: block;
   position: relative;
   background-color: ${(p) => p.theme.color.inputBackground};
+  border-radius: ${({ theme }) => theme.borderRadius(8)};
+  ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
+    border-radius: 0;
+  }
 
   &::before {
     content: '';
