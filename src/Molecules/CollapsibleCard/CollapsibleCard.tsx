@@ -20,19 +20,6 @@ const StyledButton = styled.div<IndicatorsProps>`
     const px = p.theme.spacing.unit(p.$px);
     return p.$actionExists ? `${py}px ${px / 2}px ${py}px ${px}px` : `${py}px ${px}px`;
   }};
-
-  &::before {
-    content: '';
-    display: block;
-    background: ${(p) => p.theme.color.cta};
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.16s ease-out;
-    opacity: ${(p) => (p.$collapsed && !p.$noIndicator ? 1 : 0)};
-  }
 `;
 
 const StyledFlexbox = styled(Flexbox)<Pick<IndicatorsProps, '$px'>>`
