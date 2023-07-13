@@ -22,11 +22,13 @@ const barStyles = css<Props>`
     content: '';
     display: block;
     width: 100%;
-    height: ${(p) => p.theme.spacing.unit(1)}px;
+    height: ${(p) => p.theme.spacing.unit(2)}px;
     background: ${(p) => getColor(p)};
     position: absolute;
     top: 0;
     left: 0;
+    border-top-left-radius: ${(p) => p.theme.borderRadius(8)};
+    border-top-right-radius: ${(p) => p.theme.borderRadius(8)};
   }
 `;
 

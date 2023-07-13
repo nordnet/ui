@@ -7,6 +7,7 @@ import { isElement } from '../../common/utils';
 const StyledCard = styled(Card)`
   background: ${(p) => p.theme.color.pageHeaderBackground};
   border-bottom: 1px solid ${(p) => p.theme.color.headerCardBorder};
+  border-radius: 0;
 `;
 
 export const PageHeaderCard: PageHeaderCardComponent = ({ title, className, children, grow }) => {
