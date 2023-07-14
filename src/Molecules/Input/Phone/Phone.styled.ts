@@ -128,7 +128,7 @@ export const StyledWrapper = styled(Flexbox)<{
   height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
   padding: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 1 : 0)}px 0;
   background: ${(p) => (p.disabled ? p.theme.color.disabledBackground : p.theme.color.card)};
-  border-radius: ${(p) => p.theme.borderRadius4()};
+  border-radius: ${(p) => p.theme.borderRadius4};
   ${borderStyles}
   ${({ focused, theme }) => (focused ? `border-color: ${theme.color.borderActive};` : '')}
 `;

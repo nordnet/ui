@@ -68,7 +68,7 @@ const Indicator = styled('span').withConfig({
   text-align: center;
   background: ${(p) => p.valueColor || p.theme.color.lineScaleValueColor};
   color: ${({ theme }) => theme.color.textLight};
-  border-radius: ${({ theme }) => theme.borderRadius2()};
+  border-radius: ${({ theme }) => theme.borderRadius2};
 `;
 
 const AverageLabel = styled('span').withConfig({

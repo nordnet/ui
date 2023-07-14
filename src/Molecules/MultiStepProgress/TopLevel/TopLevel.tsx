@@ -35,7 +35,7 @@ const ListItem = styled.li<InternalProps>`
   display: block;
   position: relative;
   background-color: ${(p) => p.theme.color.inputBackground};
-  border-radius: ${({ theme }) => theme.borderRadius8()};
+  border-radius: ${({ theme }) => theme.borderRadius8};
   ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
     border-radius: 0;
   }
@@ -51,8 +51,8 @@ const ListItem = styled.li<InternalProps>`
     left: 0;
     transition: opacity 0.16s ease-out;
     opacity: ${(p) => (p.$current ? 1 : 0)};
-    border-top-left-radius: ${(p) => (p.$isInDrawer ? 0 : p.theme.borderRadius8())};
-    border-bottom-left-radius: ${(p) => (p.$isInDrawer ? 0 : p.theme.borderRadius8())};
+    border-top-left-radius: ${(p) => (p.$isInDrawer ? 0 : p.theme.borderRadius8)};
+    border-bottom-left-radius: ${(p) => (p.$isInDrawer ? 0 : p.theme.borderRadius8)};
 
     ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
       width: 2px;
