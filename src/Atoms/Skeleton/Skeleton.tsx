@@ -44,7 +44,7 @@ const Base = styled(CleanDiv)<Props>`
 const Text = styled(Base)`
   margin-top: 0;
   margin-bottom: 0;
-  border-radius: ${(p) => p.theme.borderRadius(8)};
+  border-radius: ${(p) => p.theme.borderRadius8};
 
   &:empty:before {
     content: '\\00a0';
@@ -53,7 +53,7 @@ const Text = styled(Base)`
 
 const Rect = styled(Base)`
   ${(p) => p.height && `height: ${getSize(p.height, p.theme)};`}
-  border-radius: ${(p) => p.theme.borderRadius(8)};
+  border-radius: ${(p) => p.theme.borderRadius8};
 `;
 
 const Circle = styled(Base)`

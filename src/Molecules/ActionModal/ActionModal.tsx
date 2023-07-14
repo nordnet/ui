@@ -11,7 +11,7 @@ import { IllustrationProps } from '../../Atoms/Illustration/IllustrationBase.typ
 
 const Dialog = styled.div`
   position: relative;
-  border-radius: ${({ theme }) => theme.borderRadius(8)};
+  border-radius: ${({ theme }) => theme.borderRadius8};
   background-color: ${({ theme }) => theme.color.actionModalBackground};
   padding: ${({ theme }) => theme.spacing.unit(10)}px;
   color: ${({ theme }) => theme.color.textLight};

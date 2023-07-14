@@ -81,7 +81,17 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     gutter: GUTTER,
   };
 
-  const borderRadius = (radius: BORDER_RADIUS) => `${radius}px`;
+  const RADIUS_XSMALL: BORDER_RADIUS = 2;
+  const RADIUS_SMALL: BORDER_RADIUS = 4;
+  const RADIUS_MEDIUM: BORDER_RADIUS = 8;
+  const RADIUS_LARGE: BORDER_RADIUS = 20;
+  const RADIUS_100: BORDER_RADIUS = 100;
+
+  const borderRadius2 = `${RADIUS_XSMALL}px`;
+  const borderRadius4 = `${RADIUS_SMALL}px`;
+  const borderRadius8 = `${RADIUS_MEDIUM}px`;
+  const borderRadius20 = `${RADIUS_LARGE}px`;
+  const borderRadius100 = `${RADIUS_100}px`;
 
   return {
     animation: {
@@ -121,6 +131,10 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     size: deprecate('theme.size, please use theme.breakpoint instead.')(size),
     spacing,
     zIndex,
-    borderRadius,
+    borderRadius2,
+    borderRadius4,
+    borderRadius8,
+    borderRadius20,
+    borderRadius100,
   };
 };

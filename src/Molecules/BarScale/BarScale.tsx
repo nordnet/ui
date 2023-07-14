@@ -11,7 +11,7 @@ const Indicator = styled(Box).withConfig({
   height: ${(p) => p.theme.spacing.unit(p.barHeight)}px;
   background: ${(p) =>
     p.isActive ? p.theme.color.barScaleActiveBar : p.theme.color.barScaleInactiveBar};
-  border-radius: ${(p) => p.theme.borderRadius(2)};
+  border-radius: ${(p) => p.theme.borderRadius2};
 `;
 
 export const BarScale: React.FC<Props> = ({
