@@ -42,7 +42,17 @@ export type Props = {
    */
   pointerEvents?: boolean;
   customBoundary?: HTMLElement | Array<HTMLElement>;
+  /**
+   * @bottomSheetQuery
+   * Used to determine when to display a bottom-sheet instead of a tooltip
+   */
   bottomSheetQuery?: (t: Theme) => string;
+  bottomSheetTitle?: string;
+  /**
+   * @onBottomSheetClose
+   * Needed if you provide bottomSheetTitle
+   */
+  onBottomSheetClose?: () => void;
   pointerArrow?: boolean;
   /**
    * @invertedColors

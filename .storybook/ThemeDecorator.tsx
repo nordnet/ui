@@ -11,7 +11,10 @@ const themes = {};
 const getTheme = (darkMode) => {
   const key = `dark:${darkMode}`;
   if (!themes[key]) {
-    themes[key] = createTheme({ darkColors: darkMode });
+    themes[key] = createTheme({
+      darkColors: darkMode,
+      ...(darkMode ? { tokensTheme: 'dark' } : {}),
+    });
   }
   return themes[key];
 };

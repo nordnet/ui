@@ -7,5 +7,7 @@ export type TooltipContentProps = {
   borderColor: ColorFn;
   ariaLabel?: string;
   bottomSheet: boolean;
+  bottomSheetTitle?: string;
+  onBottomSheetClose?: () => void;
   invertedColors?: boolean;
 };

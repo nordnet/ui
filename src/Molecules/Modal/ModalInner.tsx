@@ -8,9 +8,11 @@ import { BackdropProps, BackdropWrapperProps, DialogProps, Props } from './Modal
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Title } from './Title';
-import { Flexbox, OldIcon, useKeyPress } from '../..';
+import { Flexbox, OldIcon, ProgressIndicator, Typography, useKeyPress } from '../..';
 
 const PADDING_DESKTOP = 10;
+const PADDING_PROGRESS_INDICATOR = 14;
+const PADDING_PROGRESS_INDICATOR_MOBILE = 10;
 const PADDING_MOBILE = 3;
 const PADDING_TOP_MOBILE = 4;
 const PADDING_TOP_MOBILE_FULLSCREEN = 5;
@@ -121,9 +123,16 @@ const CloseButton = styled(NormalizedElements.Button)`
   right: ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
 
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
-    top: ${(p) => p.theme.spacing.unit(PADDING_DESKTOP)}px;
+    top: ${(p) =>
+      p.$progressIndicator
+        ? `${p.theme.spacing.unit(PADDING_PROGRESS_INDICATOR)}px`
+        : `${p.theme.spacing.unit(PADDING_DESKTOP)}px`};
     right: ${(p) => p.theme.spacing.unit(PADDING_DESKTOP)}px;
   }
+  ${(p) =>
+    p.$progressIndicator
+      ? `top: ${p.theme.spacing.unit(PADDING_PROGRESS_INDICATOR_MOBILE)}px;`
+      : `top:${p.theme.spacing.unit(PADDING_MOBILE)}px;`}
 `;
 
 export const Header = styled.div`
@@ -137,6 +146,19 @@ export const Footer = styled.div`
   margin-top: auto;
   padding-top: ${(p) => p.theme.spacing.unit(4)}px;
   flex: 0 0 auto;
+`;
+
+export const StyledProgressIndicator = styled.div`
+  > div {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    padding: 0;
+    margin-bottom: ${(p) => p.theme.spacing.unit(1)}px;
+    > div > div > div {
+      margin: 0;
+    }
+  }
 `;
 
 const noop = () => {};
@@ -172,6 +194,8 @@ export const ModalInner: React.FC<Props> = ({
   closeTitle = 'Close this modal',
   title,
   onClose,
+  progressIndicator,
+  progressIndicatorDescription,
   footer,
   hideClose = false,
   closeOnBackdropClick = false,
@@ -257,11 +281,29 @@ export const ModalInner: React.FC<Props> = ({
               $fixedBottomMobile={fixedBottomMobile}
               isStatusModal={isStatusModal}
             >
-              {hasHeader && <Header>{title && <Title title={title} uid={titleId} />}</Header>}
+              {progressIndicator && (
+                <StyledProgressIndicator>
+                  <ProgressIndicator {...progressIndicator} />
+                </StyledProgressIndicator>
+              )}
+
+              {hasHeader && (
+                <Header>
+                  {progressIndicatorDescription && (
+                    <Typography type="secondary">{progressIndicatorDescription}</Typography>
+                  )}
+                  {title && <Title title={title} uid={titleId} />}
+                </Header>
+              )}
               {children}
               {footer && <Footer>{footer}</Footer>}
               {!hideClose && (
-                <CloseButton type="button" onClick={onClose} $fullScreenMobile={fullScreenMobile}>
+                <CloseButton
+                  type="button"
+                  onClick={onClose}
+                  $fullScreenMobile={fullScreenMobile}
+                  $progressIndicator={progressIndicator}
+                >
                   <OldIcon.CrossThin size={5} title={closeTitle} stroke={(t) => t.color.text} />
                 </CloseButton>
               )}

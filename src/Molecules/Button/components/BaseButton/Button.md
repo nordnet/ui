@@ -33,6 +33,10 @@ really be disabled and then you probably want to have a button which can be disa
 - `to` - a path that will be passed to React router dom.
 - `rel` - a string if you want to specify a relation like `nofollow`.
 
+### Tracking Props
+
+- `componentId` - a string that can be use to identify buttons and links for tracking purposes.
+
 ## Usage
 
 Basic usage

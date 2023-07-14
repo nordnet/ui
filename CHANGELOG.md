@@ -1,3 +1,70 @@
+# [12.36.0](https://github.com/nordnet/ui/compare/v12.35.0...v12.36.0) (2023-07-06)
+
+
+### Bug Fixes
+
+* update height when card content changes ([ccf1ec6](https://github.com/nordnet/ui/commit/ccf1ec6))
+
+
+### Features
+
+* 🎸 add progress indicator in Modal ([94c4b4c](https://github.com/nordnet/ui/commit/94c4b4c))
+* 🎸 add progress indicator support in the modal ([9215743](https://github.com/nordnet/ui/commit/9215743))
+
+# [12.35.0](https://github.com/nordnet/ui/compare/v12.34.0...v12.35.0) (2023-07-06)
+
+
+### Features
+
+* add global fill 12px icon ([c30480e](https://github.com/nordnet/ui/commit/c30480e))
+
+# [12.34.0](https://github.com/nordnet/ui/compare/v12.33.0...v12.34.0) (2023-07-04)
+
+
+### Features
+
+* add two bottomsheet specific props and fix tooltip/sheet animations ([5ecb83d](https://github.com/nordnet/ui/commit/5ecb83d))
+
+# [12.33.0](https://github.com/nordnet/ui/compare/v12.32.0...v12.33.0) (2023-07-03)
+
+
+### Features
+
+* add componentId prop to button and link components for analytics ([#1372](https://github.com/nordnet/ui/issues/1372)) ([1e09d62](https://github.com/nordnet/ui/commit/1e09d62))
+
+# [12.32.0](https://github.com/nordnet/ui/compare/v12.31.1...v12.32.0) (2023-07-03)
+
+
+### Bug Fixes
+
+* 🐛 add fake state to checklist story and fixed animation ([5f58ce1](https://github.com/nordnet/ui/commit/5f58ce1))
+* 🐛 checklist mobile fixes and simplification ([b23d942](https://github.com/nordnet/ui/commit/b23d942))
+* 🐛 design review and refactor ([9dbee38](https://github.com/nordnet/ui/commit/9dbee38))
+
+
+### Features
+
+* 🎸 add checklist component ([49945f0](https://github.com/nordnet/ui/commit/49945f0))
+
+## [12.31.1](https://github.com/nordnet/ui/compare/v12.31.0...v12.31.1) (2023-06-27)
+
+
+### Bug Fixes
+
+* make darkmode toggle work with tokens ([#1356](https://github.com/nordnet/ui/issues/1356)) ([318542c](https://github.com/nordnet/ui/commit/318542c))
+
+# [12.31.0](https://github.com/nordnet/ui/compare/v12.30.3...v12.31.0) (2023-06-19)
+
+
+### Bug Fixes
+
+* update svg path ([be2740f](https://github.com/nordnet/ui/commit/be2740f))
+
+
+### Features
+
+* add loan16 icon ([ca3e518](https://github.com/nordnet/ui/commit/ca3e518))
+
 ## [12.30.3](https://github.com/nordnet/ui/compare/v12.30.2...v12.30.3) (2023-06-08)
 
 

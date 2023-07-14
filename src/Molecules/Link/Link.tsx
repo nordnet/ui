@@ -90,6 +90,9 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
     onMouseLeave,
     onMouseOver,
     onFocus,
+    // componentId is sent to trackContext.track() but we don't want to spread it with ...rest
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    componentId,
     ...rest
   } = props;
 

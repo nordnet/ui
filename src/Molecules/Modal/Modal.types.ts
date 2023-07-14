@@ -1,9 +1,16 @@
 import React from 'react';
 
+export type ProgressProps = {
+  numberOfSteps: number;
+  currentStep: number;
+};
+
 export type InnerProps = {
   className?: string;
   closeTitle?: string;
   onClose?: Function;
+  progressIndicator?: ProgressProps;
+  progressIndicatorDescription?: string;
   title?: React.ReactNode;
   footer?: React.ReactNode;
   hideClose?: boolean;

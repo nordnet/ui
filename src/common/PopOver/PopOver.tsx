@@ -39,6 +39,8 @@ const PopOver: React.FC<Props> & {
   customBoundary,
   pointerArrow = true,
   bottomSheet = false,
+  bottomSheetTitle,
+  onBottomSheetClose = () => {},
   invertedColors,
   setPopoverElement,
   ...htmlSpanProps
@@ -133,24 +135,28 @@ const PopOver: React.FC<Props> & {
       {...htmlSpanProps}
       {...attributes.popper}
     >
-      {pointerArrow && (
-        <TooltipArrow
-          ref={setArrowElement as any}
-          position={state?.placement as any}
-          style={styles.arrow}
-          backgroundColor={backgroundColor}
-          borderColor={borderColor}
-        />
-      )}
       <motion.div
-        initial={bottomSheet ? { y: 100 } : false}
-        exit={{ y: 100 }}
-        animate={{ y: 0 }}
-        transition={{ type: 'ease' }}
+        key="bottomsheet"
+        initial={bottomSheet ? { y: 100, opacity: 0 } : { opacity: 0 }}
+        exit={bottomSheet ? { y: 100, opacity: 0 } : { opacity: 0 }}
+        animate={{ y: 0, opacity: 1, transition: { duration: 0.2 } }}
+        transition={{ type: 'ease', duration: 0.2 }}
       >
+        {pointerArrow && (
+          <TooltipArrow
+            ref={setArrowElement as any}
+            position={state?.placement as any}
+            style={styles.arrow}
+            backgroundColor={backgroundColor}
+            borderColor={borderColor}
+          />
+        )}
+
         <StyledTooltipContent
           label={label}
           bottomSheet={bottomSheet}
+          bottomSheetTitle={bottomSheetTitle}
+          onBottomSheetClose={onBottomSheetClose}
           ariaLabel={ariaLabel}
           maxWidth={maxWidth}
           backgroundColor={backgroundColor}
