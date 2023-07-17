@@ -53,7 +53,7 @@ const TextButtonCard: FC<React.PropsWithChildren<TextButtonCardProps>> = ({
         {/* Title, badge and description */}
         <Flexbox container item gap={1} grow={1} direction="column">
           <Flexbox container gap={2} alignItems="baseline">
-            <Typography type="secondary" weight="bold">
+            <Typography type="primary" weight="bold">
               {title}
             </Typography>
             {titleBadgeText && (
