@@ -1,3 +1,10 @@
+# [12.37.0](https://github.com/nordnet/ui/compare/v12.36.0...v12.37.0) (2023-07-18)
+
+
+### Features
+
+* 🎸 remove dismissed checklist from todo list ([1572e06](https://github.com/nordnet/ui/commit/1572e06))
+
 # [12.36.0](https://github.com/nordnet/ui/compare/v12.35.0...v12.36.0) (2023-07-06)
 
 
