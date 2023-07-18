@@ -43,13 +43,12 @@ const CheckListStep: FC<CheckListStepProps> = ({
 
   const isDrawer = displayMode === 'DRAWER';
   const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.sm));
-  const isCompleted = task.taskState === 'COMPLETED';
-
+  const isCompleted = task.taskState === 'COMPLETED' || task.taskState === 'DISMISSED';
   const { taskState, percentage } = task;
   const { onDismiss, startAction, icon, title, description } = taskInfo || {};
 
   /* Buttons in drawer */
-  const buttons = isDrawer && taskState !== 'COMPLETED' && (
+  const buttons = isDrawer && taskState === 'INCOMPLETE' && (
     <TwoButtonBox>
       <Button variant="neutral" size="m" fullWidth onClick={() => setDismissMode(true)}>
         {dismissLabel}
