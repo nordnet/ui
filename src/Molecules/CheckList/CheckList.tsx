@@ -52,9 +52,10 @@ const CheckList: FC<CheckListProps> = ({
   displayMode = 'CARD',
   showProgress,
 }): ReactElement | null => {
-  const tasksToDo = checkList?.tasks?.filter((t) => t.taskState !== 'COMPLETED');
-  const tasksCompleted = checkList?.tasks?.filter((t) => t.taskState === 'COMPLETED');
-
+  const tasksToDo = checkList?.tasks?.filter((t) => t.taskState === 'INCOMPLETE');
+  const tasksCompleted = checkList?.tasks?.filter(
+    (t) => t.taskState === 'DISMISSED' || t.taskState === 'COMPLETED',
+  );
   if (!checkList || !checkList?.summary) return null;
 
   const isDrawer = displayMode === 'DRAWER';

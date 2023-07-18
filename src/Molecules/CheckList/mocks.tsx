@@ -21,7 +21,12 @@ export const defaultCheckList: CheckListType = {
     },
     {
       taskId: 'TASK_3',
-      taskState: 'COMPLETED',
+      taskState: 'DISMISSED',
+      percentage: 20,
+    },
+    {
+      taskId: 'TASK_4',
+      taskState: 'DISMISSED',
       percentage: 20,
     },
   ],
@@ -47,6 +52,26 @@ export const defaultTaskInfoMap: TaskInfoMap = {
     onDismiss: action('dismiss: Find investments'),
   },
   TASK_2: {
+    icon: <Icon.Account24 />,
+    title: 'Deposit money',
+    description: 'Transfer money to your account.',
+    startAction: {
+      label: 'Deposit now',
+      to: '/deposit-money',
+    },
+    onDismiss: action('dismiss: Deposit money'),
+  },
+  TASK_3: {
+    icon: <Icon.Deposit24 />,
+    title: 'Deposit money',
+    description: 'Transfer money to your account.',
+    startAction: {
+      label: 'Deposit now',
+      to: '/deposit-money',
+    },
+    onDismiss: action('dismiss: Deposit money'),
+  },
+  TASK_4: {
     icon: <Icon.Book24 />,
     title: 'Deposit money',
     description: 'Transfer money to your account.',

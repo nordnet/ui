@@ -3,7 +3,7 @@ import { ButtonProps } from '../Button/components/BaseButton/Button.types';
 
 type OnClickType = ButtonProps['onClick'];
 
-type TaskState = 'COMPLETED' | 'PENDING' | 'INCOMPLETE';
+type TaskState = 'COMPLETED' | 'PENDING' | 'INCOMPLETE' | 'DISMISSED';
 
 type TaskId = string;
 
