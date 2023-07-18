@@ -1,3 +1,10 @@
+# [12.38.0](https://github.com/nordnet/ui/compare/v12.37.0...v12.38.0) (2023-07-18)
+
+
+### Features
+
+* 🎸 update check list step for displaying in completed part ([0173a87](https://github.com/nordnet/ui/commit/0173a87))
+
 # [12.37.0](https://github.com/nordnet/ui/compare/v12.36.0...v12.37.0) (2023-07-18)
 
 
