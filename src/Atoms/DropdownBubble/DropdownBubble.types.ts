@@ -1,4 +1,5 @@
 import { ColorFn } from 'common/Types';
+import { BORDER_RADIUS } from 'theme/theme.types';
 
 export type Props = {
   /**
@@ -22,4 +23,5 @@ export type Props = {
    * for use when you want light mode tooltip colors in dark mode and opposite
    */
   invertedColors?: boolean;
+  borderRadius?: BORDER_RADIUS;
 };

@@ -133,6 +133,7 @@ export const DropdownBubble = styled.div<Props>`
       p.invertedColors ? p.theme.color.textLight : p.theme.color.text,
       p.textColor,
     )};
+  border-radius: ${(p) => (p.borderRadius ? p.borderRadius : p.theme.borderRadius4)};
   ${bottomAndTopPlacementCss}
   ${triangleCss}
 `;

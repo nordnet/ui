@@ -18,6 +18,7 @@ const PADDING_HORIZONTAL = {
   l: 4,
 };
 const BORDER_SIZE = 2;
+export const BORDER_RADIUS = 100;
 
 const getBorder = (color: string) => `
   &::before {
@@ -29,6 +30,7 @@ const getBorder = (color: string) => `
     left: 0;
     width: calc(100% - ${BORDER_SIZE * 2}px);
     height: calc(100% - ${BORDER_SIZE * 2}px);
+    border-radius: ${BORDER_RADIUS}px;
   }
 `;
 

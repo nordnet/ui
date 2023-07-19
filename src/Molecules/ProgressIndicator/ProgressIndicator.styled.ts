@@ -1,5 +1,9 @@
 import styled from 'styled-components';
-import { Button } from '../..';
+import { Box, Button } from '../..';
+
+export const StyledBox = styled(Box)<{ $isMobile?: boolean }>`
+  border-radius: ${(p) => (!p.$isMobile && p.theme.borderRadius8)};
+`;
 
 export const CompletionBar = styled.div<{ completion: number; noButtons: boolean }>`
   height: ${(p) => p.theme.spacing.unit(1)}px;
