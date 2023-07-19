@@ -927,6 +927,7 @@ export type ColorSets = {
 };
 
 export type Theme = {
+  /** @deprecated use colorTokens instead */
   color: ThemeColors;
   colorTokens: LightTheme['color'] | DarkTheme['color'] | A11yTheme['color'];
   lightColor: ThemeColors;

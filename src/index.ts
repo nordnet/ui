@@ -37,6 +37,7 @@ import BarScale from './Molecules/BarScale';
 import BottomWizardBar from './Molecules/BottomWizardBar';
 import Button, { PillButton } from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
+import CheckList from './Molecules/CheckList';
 import CoachMarks from './Molecules/CoachMarks';
 import CollapsibleCard from './Molecules/CollapsibleCard';
 import ControlsListItem from './Molecules/ControlsListItem';
@@ -147,6 +148,7 @@ export {
   Card,
   CardWithTabs,
   CardWithTitle,
+  CheckList,
   CoachMarks,
   CollapsibleCard,
   ControlsListItem,

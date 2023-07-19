@@ -430,6 +430,7 @@ export const StyledPopOver = () => (
 );
 
 export const BottomSheet = () => {
+  const [open, setOpen] = useState(false);
   return (
     <Box py={20}>
       <Tooltip
@@ -438,12 +439,17 @@ export const BottomSheet = () => {
             popover content <Button onClick={() => alert('You clicked me!')}>click</Button>
           </>
         }
-        position="top"
+        position="bottom"
         wrapChild
         pointerEvents
         bottomSheetQuery={(t) => t.media.lessThan(t.breakpoints.sm)}
+        bottomSheetTitle="BottomSheet Title"
+        isOpen={open}
+        onBottomSheetClose={() => setOpen(false)}
       >
-        <Typography type="primary">hover me</Typography>
+        <UIButton variant="neutral" onClick={() => setOpen(!open)}>
+          <Typography type="primary">CLICK ME</Typography>
+        </UIButton>
       </Tooltip>
     </Box>
   );

@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Box, Button, FadedScroll, Flexbox, OldIcon, Modal, Typography } from '../..';
+import {
+  Box,
+  Button,
+  FadedScroll,
+  Flexbox,
+  OldIcon,
+  Modal,
+  Typography,
+  SelectionCard,
+} from '../..';
 
 const ScrollMaker = styled.div`
   background-image: linear-gradient(
@@ -1385,4 +1394,50 @@ export const modalWithDisabledEscapePress = () => {
 
 modalWithDisabledEscapePress.story = {
   name: 'Modal with disabled escape-key press',
+};
+
+export const modalWithProgressIndicator = () => {
+  const Example = () => {
+    const [value, setValue] = useState(false);
+
+    return (
+      <Modal
+        onClose={() => {
+          // eslint-disable-next-line no-alert
+          alert('This should never be called when pressing the escape-key');
+        }}
+        title="Modal with progress indicator "
+        open
+        progressIndicator={{ numberOfSteps: 3, currentStep: 2 }}
+        progressIndicatorDescription="Find investments"
+        fixedBottomMobile
+        fullScreenMobile={false}
+      >
+        <Flexbox container gap={2}>
+          <Flexbox item width="50%">
+            <SelectionCard
+              border
+              title="Controlled selection card"
+              text="This component is controlled"
+              selected={value}
+              onChange={() => setValue(!value)}
+            />
+          </Flexbox>
+          <Flexbox item width="50%">
+            <SelectionCard
+              border
+              title="Controlled selection card"
+              text="This component is controlled"
+              selected={value}
+              onChange={() => setValue(!value)}
+            />
+          </Flexbox>
+        </Flexbox>
+      </Modal>
+    );
+  };
+  return <Example />;
+};
+modalWithProgressIndicator.story = {
+  name: 'Modal with progress indicator',
 };
