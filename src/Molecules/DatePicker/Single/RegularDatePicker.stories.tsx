@@ -60,7 +60,7 @@ export const Controlled = () => {
   );
 };
 
-export const ControlledWithClearState = () => {
+export const ControlledWithClearStateByTyping = () => {
   const [date, setDate] = useState<Date | undefined>(new Date('01/01/2021'));
   const formattedDate = date ? format(date, 'dd/MM/yyyy') : 'no date selected';
 
@@ -115,6 +115,41 @@ export const ControlledWithClearStateWithButton = () => {
           clearButtonLabel: 'Clear date and state',
           onClearDate: clearDateState,
         }}
+      />
+    </Flexbox>
+  );
+};
+
+export const ControlledWithClearStateWithTypingAndButton = () => {
+  const [date, setDate] = useState<Date | undefined>(new Date('01/01/2021'));
+
+  const clearDateState = () => {
+    setDate(undefined);
+  };
+
+  const formattedDate = date ? format(date, 'dd/MM/yyyy') : 'no date selected';
+
+  return (
+    <Flexbox container direction="column" gap={4}>
+      <Typography>Local state date: {formattedDate}</Typography>
+      <Box>
+        <Button onClick={() => setDate(add(date || new Date('01/01/2021'), { days: 1 }))}>
+          Next date
+        </Button>
+      </Box>
+      <DatePicker
+        id="controlled"
+        label="Label"
+        selectedDate={date}
+        onChange={(selectedDate) => {
+          setDate(selectedDate);
+          action('onChange');
+        }}
+        clearDateButton={{
+          clearButtonLabel: 'Clear date and state',
+          onClearDate: clearDateState,
+        }}
+        allowControlledDateClearOnType
       />
     </Flexbox>
   );
