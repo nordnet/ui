@@ -40,11 +40,13 @@ export const SameWeekEnabled = () => {
 };
 
 export const Controlled = () => {
-  const [date, setDate] = useState(new Date('01/01/2021'));
+  const [date, setDate] = useState<Date | undefined>(new Date('01/01/2021'));
 
   return (
     <>
-      <Button onClick={() => setDate(add(date, { days: 1 }))}>Next date</Button>
+      <Button onClick={() => setDate(add(date || new Date('01/01/2021'), { days: 1 }))}>
+        Next date
+      </Button>
       <DatePicker
         id="controlled"
         label="Label"
@@ -60,12 +62,6 @@ export const Controlled = () => {
 
 export const ControlledWithClearState = () => {
   const [date, setDate] = useState<Date | undefined>(new Date('01/01/2021'));
-
-  const clearDateState = () => {
-    setDate(undefined);
-  };
-
-  console.log('STORY', { date });
   const formattedDate = date ? format(date, 'dd/MM/yyyy') : 'no date selected';
 
   return (
@@ -81,7 +77,37 @@ export const ControlledWithClearState = () => {
         label="Label"
         selectedDate={date}
         onChange={(selectedDate) => {
-          console.log('STORY', { selectedDate });
+          setDate(selectedDate);
+          action('onChange');
+        }}
+        allowDateClearOnType
+      />
+    </Flexbox>
+  );
+};
+
+export const ControlledWithClearStateWithButton = () => {
+  const [date, setDate] = useState<Date | undefined>(new Date('01/01/2021'));
+
+  const clearDateState = () => {
+    setDate(undefined);
+  };
+
+  const formattedDate = date ? format(date, 'dd/MM/yyyy') : 'no date selected';
+
+  return (
+    <Flexbox container direction="column" gap={4}>
+      <Typography>Local state date: {formattedDate}</Typography>
+      <Box>
+        <Button onClick={() => setDate(add(date || new Date('01/01/2021'), { days: 1 }))}>
+          Next date
+        </Button>
+      </Box>
+      <DatePicker
+        id="controlled"
+        label="Label"
+        selectedDate={date}
+        onChange={(selectedDate) => {
           setDate(selectedDate);
           action('onChange');
         }}
