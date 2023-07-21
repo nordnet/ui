@@ -153,7 +153,11 @@ const DateRangePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => 
       />
       {isWithClearButton(props) ? (
         <Box pt={3}>
-          <Button variant="neutral" color={(p) => p.color.cta} onClick={clearDate}>
+          <Button
+            variant="neutral"
+            color={(p) => p.colorTokens.action.background_default}
+            onClick={clearDate}
+          >
             {props.clearButtonLabel}
           </Button>
         </Box>
@@ -217,7 +221,11 @@ const DateRangePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => 
           footer={
             <>
               <Box py={5}>
-                <Button variant="neutral" color={(p) => p.color.cta} onClick={clearDate}>
+                <Button
+                  variant="neutral"
+                  color={(p) => p.colorTokens.action.background_default}
+                  onClick={clearDate}
+                >
                   {props.fullscreenProps.clearButtonLabel}
                 </Button>
               </Box>

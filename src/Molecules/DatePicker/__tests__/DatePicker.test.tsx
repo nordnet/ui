@@ -354,7 +354,9 @@ test('Enter date manually', async () => {
   fireEvent.keyDown(inputElement, { key: 'Enter', code: 'Enter' });
 
   const dateElement = getByText('19');
-  expect(dateElement.parentElement).toHaveStyle(`background: ${theme.color.cta}`);
+  expect(dateElement.parentElement).toHaveStyle(
+    `background: ${theme.colorTokens.action.background_default}`,
+  );
 });
 
 test('Select date by typing it in and blur', async () => {
@@ -377,7 +379,7 @@ test('Select date by typing it in and blur', async () => {
   expect(onBlur).toHaveBeenCalledWith(new Date('12/12/1990'), null);
   const dateElementDay = screen.getByTestId('December 12');
   expect(dateElementDay).toBeInTheDocument();
-  expect(dateElementDay).toHaveStyle(`background: ${theme.color.cta}`);
+  expect(dateElementDay).toHaveStyle(`background: ${theme.colorTokens.action.background_default}`);
 });
 
 test('Select date by typing it in', async () => {
@@ -396,7 +398,7 @@ test('Select date by typing it in', async () => {
 
   const dateElementDay = screen.getByTestId('December 12');
   expect(dateElementDay).toBeInTheDocument();
-  expect(dateElementDay).toHaveStyle(`background: ${theme.color.cta}`);
+  expect(dateElementDay).toHaveStyle(`background: ${theme.colorTokens.action.background_default}`);
 });
 
 test('Clear date by typing it in', async () => {
@@ -422,7 +424,7 @@ test('Clear date by typing it in', async () => {
 
   const dateElementDay = screen.getByTestId('December 12');
   expect(dateElementDay).toBeInTheDocument();
-  expect(dateElementDay).toHaveStyle(`background: ${theme.color.cta}`);
+  expect(dateElementDay).toHaveStyle(`background: ${theme.colorTokens.action.background_default}`);
 
   fireEvent.change(input, { target: { value: '' } });
 
@@ -457,7 +459,7 @@ test('Clear date by using clear button', async () => {
 
   const dateElementDay = screen.getByTestId('December 12');
   expect(dateElementDay).toBeInTheDocument();
-  expect(dateElementDay).toHaveStyle(`background: ${theme.color.cta}`); // TODO: convert to color tokens in next commit
+  expect(dateElementDay).toHaveStyle(`background: ${theme.colorTokens.action.background_default}`); // TODO: convert to color tokens in next commit
 
   const clearDateButton = screen.getByRole('button', { name: 'Clear date and state' });
   expect(clearDateButton).toBeVisible();

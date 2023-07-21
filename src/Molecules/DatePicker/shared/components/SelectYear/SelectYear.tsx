@@ -6,7 +6,7 @@ import { Props } from './SelectYear.types';
  * Imported separately because when imported in src/index.ts, Input will not have been imported yet and error will be thrown
  */
 import Input from '../../../../Input';
-import { Box, Flexbox, OldIcon, Typography } from '../../../../..';
+import { Box, Flexbox, Icon, Typography } from '../../../../..';
 import { newDate } from '../../dateUtils';
 import { Theme } from '../../../../../theme/theme.types';
 
@@ -49,9 +49,11 @@ const SelectYear: React.FC<Props> = ({
         let icon = null;
 
         if ((state.value as any).open === 'on') {
-          icon = <OldIcon.ChevronUp size={2} color={(t: Theme) => t.color.svgFill} />;
+          icon = <Icon.ChevronUp8 color={(t: Theme) => t.colorTokens.neutral.icon_default} />;
         } else if (isHover || fullscreenMode) {
-          icon = <OldIcon.ChevronDown size={2} color={(t: Theme) => t.color.cta} />;
+          icon = (
+            <Icon.ChevronDown8 color={(t: Theme) => t.colorTokens.action.background_default} />
+          );
         } else {
           icon = <Box px={1} />;
         }
