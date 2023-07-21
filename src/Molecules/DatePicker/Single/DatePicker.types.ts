@@ -7,7 +7,7 @@ export type BaseProps = {
    * @default false
    */
   allowDateUpdateOnType?: boolean;
-  allowDateClearOnType?: boolean;
+  allowControlledDateClearOnType?: boolean;
   onChange?: (date: Date | undefined) => void;
   onBlur?: (date: Date) => void;
   label: string;

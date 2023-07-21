@@ -51,7 +51,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     selectYearLabel,
     errorMessage,
     clearDateButton,
-    allowDateClearOnType = false,
+    allowControlledDateClearOnType = false,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -103,6 +103,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     onChange,
     onBlur,
     allowDateUpdateOnType,
+    allowControlledDateClearOnType,
   });
 
   const fullscreenMode = isFullscreenMode(props, isSmallScreen);
@@ -143,13 +144,6 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
       />
     </>
   );
-
-  console.log({ selectedDate });
-  useEffect(() => {
-    if (inputValue === '' && onChange && allowDateClearOnType) {
-      onChange(undefined);
-    }
-  }, [allowDateClearOnType, clearDate, inputValue, onChange]);
 
   const inputRightAddon = <OldIcon.CalendarTwoRows size={6} />;
 

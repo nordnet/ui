@@ -80,7 +80,7 @@ export const ControlledWithClearState = () => {
           setDate(selectedDate);
           action('onChange');
         }}
-        allowDateClearOnType
+        allowControlledDateClearOnType
       />
     </Flexbox>
   );
