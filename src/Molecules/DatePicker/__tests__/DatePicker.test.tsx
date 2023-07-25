@@ -3,6 +3,7 @@ import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { advanceTo, clear } from 'jest-date-mock';
 import { DatePicker } from '../../..';
+import DatePickerClearable from '../SingleClearable';
 import { PageProviders } from '../../../common/testUtils';
 import theme from '../../../theme';
 
@@ -408,11 +409,10 @@ test('Clear date by typing it in', async () => {
 
   const { getByTestId } = render(
     <PageProviders>
-      <DatePicker
+      <DatePickerClearable
         id={INPUT_ID}
         selectedDate={new Date('12/12/1990')}
         label="Label"
-        allowControlledDateClearOnType
         onChange={onChange}
       />
     </PageProviders>,
@@ -440,7 +440,7 @@ test('Clear date by using clear button', async () => {
 
   const { getByTestId } = render(
     <PageProviders>
-      <DatePicker
+      <DatePickerClearable
         id={INPUT_ID}
         selectedDate={new Date('12/12/1990')}
         label="Label"

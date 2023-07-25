@@ -15,7 +15,7 @@ import {
 } from 'date-fns';
 import { usePrevious } from '../../../../common/Hooks';
 import { getDateFormat, getLocale, parseDateString } from '../dateUtils';
-import { Props } from './useDatePicker.types';
+import { ClearableProps as Props } from './useDatePicker.types';
 import { INPUT_ID_START, INPUT_ID_END, INPUT_ID_RANGE } from '../constants';
 
 const formatInputValue = (selectedDate: Date | null, dateFormat: string, locale: Locale) => {
@@ -285,6 +285,13 @@ export const useDatePicker = ({
     (event: React.ChangeEvent<HTMLInputElement>) => {
       const { value, id: elementId } = event.target;
 
+      // When input is cleared manually (value === ''), we update DatePicker's internal state
+      if (value === '' && onChange) {
+        setInputValue(value);
+        onChange(undefined);
+        return;
+      }
+
       // @ts-ignore
       const assignedValues: [string?, string?] = (() => {
         if (elementId === INPUT_ID_START(id)) {
@@ -311,7 +318,7 @@ export const useDatePicker = ({
         handleInputSubmit(assignedValues);
       }
     },
-    [allowDateUpdateOnType, handleInputSubmit, id],
+    [allowDateUpdateOnType, handleInputSubmit, id, onChange],
   );
 
   const handleInputOnBlur = useCallback(() => {

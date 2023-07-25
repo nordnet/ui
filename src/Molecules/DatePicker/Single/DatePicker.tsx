@@ -51,7 +51,6 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     selectYearLabel,
     errorMessage,
     clearDateButton,
-    allowControlledDateClearOnType = false,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -103,7 +102,6 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     onChange,
     onBlur,
     allowDateUpdateOnType,
-    allowControlledDateClearOnType,
   });
 
   const fullscreenMode = isFullscreenMode(props, isSmallScreen);
@@ -187,11 +185,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
               {datepicker}
               {clearDateButton ? (
                 <Box pt={5}>
-                  <Button
-                    variant="neutral"
-                    color={(p) => p.colorTokens.action.background_default}
-                    onClick={clearClickHandler}
-                  >
+                  <Button variant="neutral" color={(p) => p.color.cta} onClick={clearClickHandler}>
                     {clearDateButton.clearButtonLabel}
                   </Button>
                 </Box>
@@ -211,7 +205,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
               <Box py={5}>
                 <Button
                   variant="neutral"
-                  color={(p) => p.colorTokens.action.background_default}
+                  color={(p) => p.color.cta}
                   onClick={() => {
                     clearDate();
                     if (props?.fullscreenProps?.onClearDate) {
