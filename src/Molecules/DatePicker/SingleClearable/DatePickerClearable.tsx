@@ -2,10 +2,10 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useTheme } from 'styled-components';
 import { useIntl } from 'react-intl';
 import {
-  Props as SingleDatePickerProps,
+  Props as SingleDatePickerClearableProps,
   PropsWithFullscreen,
   PropsWithoutFullscreen,
-} from './DatePicker.types';
+} from './DatePickerClearable.types';
 
 /**
  * Imported separately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
@@ -17,7 +17,7 @@ import { getDateFormat } from '../shared/dateUtils';
 import Header from '../Single/Header';
 import Calendar from '../Single/Calendar';
 import { DEFAULT_INPUT_WIDTH } from '../shared/constants';
-import { useDatePicker } from '../shared/hooks/useClearableDatePicker';
+import { useDatePickerClearable } from './hooks/useDatePickerClearable';
 import {
   StyledDropdownBubble,
   StyledDropdownBubbleWrapper,
@@ -29,7 +29,7 @@ export const isFullscreenMode = (
   isSmallScreen: boolean | null,
 ): props is PropsWithFullscreen => Boolean(props.fullscreenOnMobile) && Boolean(isSmallScreen);
 
-const DatePickerClearable = React.forwardRef<HTMLDivElement, SingleDatePickerProps>(
+const DatePickerClearable = React.forwardRef<HTMLDivElement, SingleDatePickerClearableProps>(
   (props, ref) => {
     const {
       ariaLabelPrevious,
@@ -95,7 +95,7 @@ const DatePickerClearable = React.forwardRef<HTMLDivElement, SingleDatePickerPro
       viewedDate,
       clearDate,
       invalidDate,
-    } = useDatePicker({
+    } = useDatePickerClearable({
       id,
       selectedDateProp,
       enableDate,

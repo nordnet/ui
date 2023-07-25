@@ -1,3 +1,8 @@
+interface ClearDateStateProps {
+  onClearDate: () => void;
+  clearButtonLabel: string;
+}
+
 export type BaseProps = {
   ariaLabelPrevious?: string;
   ariaLabelNext?: string;
@@ -34,11 +39,6 @@ interface FullscreenProps {
   confirmButtonLabel: string;
   dateLabel?: string;
   onClearDate?: () => void;
-}
-
-interface ClearDateStateProps {
-  onClearDate: () => void;
-  clearButtonLabel: string;
 }
 
 export interface PropsWithFullscreen extends BaseProps {

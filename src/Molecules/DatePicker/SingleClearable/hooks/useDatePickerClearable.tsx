@@ -14,9 +14,9 @@ import {
   format,
 } from 'date-fns';
 import { usePrevious } from '../../../../common/Hooks';
-import { getDateFormat, getLocale, parseDateString } from '../dateUtils';
-import { ClearableProps as Props } from './useDatePicker.types';
-import { INPUT_ID_START, INPUT_ID_RANGE } from '../constants';
+import { getDateFormat, getLocale, parseDateString } from '../../shared/dateUtils';
+import { ClearableProps as Props } from '../../shared/hooks/useDatePicker.types';
+import { INPUT_ID_START, INPUT_ID_RANGE } from '../../shared/constants';
 
 const formatInputValue = (selectedDate: Date | null, dateFormat: string, locale: Locale) => {
   if (selectedDate) {
@@ -54,7 +54,7 @@ const handleSelectDate = (
   return [selectedDate, date];
 };
 
-export const useDatePicker = ({
+export const useDatePickerClearable = ({
   id,
   selectedDateProp,
   enableDate,
