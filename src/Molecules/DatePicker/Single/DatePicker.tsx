@@ -50,6 +50,8 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     selectMonthLabel,
     selectYearLabel,
     errorMessage,
+    clearDateButton,
+    allowControlledDateClearOnType = false,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -101,6 +103,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     onChange,
     onBlur,
     allowDateUpdateOnType,
+    allowControlledDateClearOnType,
   });
 
   const fullscreenMode = isFullscreenMode(props, isSmallScreen);
@@ -151,6 +154,13 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     }
   });
 
+  const clearClickHandler = () => {
+    clearDate();
+    if (clearDateButton?.onClearDate) {
+      clearDateButton.onClearDate();
+    }
+  };
+
   return (
     <div ref={(ref || selfRef) as React.Ref<HTMLDivElement>}>
       <StyledInputText
@@ -175,6 +185,17 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
           <StyledDropdownBubble>
             <Box my={3} mx={2}>
               {datepicker}
+              {clearDateButton ? (
+                <Box pt={5}>
+                  <Button
+                    variant="neutral"
+                    color={(p) => p.colorTokens.action.background_default}
+                    onClick={clearClickHandler}
+                  >
+                    {clearDateButton.clearButtonLabel}
+                  </Button>
+                </Box>
+              ) : null}
             </Box>
           </StyledDropdownBubble>
         </StyledDropdownBubbleWrapper>
@@ -188,7 +209,16 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
           footer={
             <>
               <Box py={5}>
-                <Button variant="neutral" color={(p) => p.color.cta} onClick={clearDate}>
+                <Button
+                  variant="neutral"
+                  color={(p) => p.colorTokens.action.background_default}
+                  onClick={() => {
+                    clearDate();
+                    if (props?.fullscreenProps?.onClearDate) {
+                      props.fullscreenProps.onClearDate();
+                    }
+                  }}
+                >
                   {props.fullscreenProps.clearButtonLabel}
                 </Button>
               </Box>

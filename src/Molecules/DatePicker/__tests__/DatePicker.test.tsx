@@ -18,8 +18,8 @@ afterAll(() => {
 
 test('Select single date', async () => {
   const INPUT_ID = 'datepicker-input';
-  const onChange = (date: Date) => {
-    expect(date.getDate()).toBe(20);
+  const onChange = (date: Date | undefined) => {
+    expect(date?.getDate()).toBe(20);
   };
 
   const { getByText, getByTestId } = render(
@@ -37,9 +37,9 @@ test('Select single date', async () => {
 
 test('Select previous month', async () => {
   const INPUT_ID = 'datepicker-input';
-  const onChange = (date: Date) => {
-    expect(date.getMonth()).toBe(7);
-    expect(date.getDate()).toBe(20);
+  const onChange = (date: Date | undefined) => {
+    expect(date?.getMonth()).toBe(7);
+    expect(date?.getDate()).toBe(20);
   };
 
   const { getByText, getByTestId } = render(
@@ -60,9 +60,9 @@ test('Select previous month', async () => {
 
 test('Select next month with left arrow', async () => {
   const INPUT_ID = 'datepicker-input';
-  const onChange = (date: Date) => {
-    expect(date.getMonth()).toBe(9);
-    expect(date.getDate()).toBe(20);
+  const onChange = (date: Date | undefined) => {
+    expect(date?.getMonth()).toBe(9);
+    expect(date?.getDate()).toBe(20);
   };
 
   const { getByText, getByTestId } = render(
@@ -83,9 +83,9 @@ test('Select next month with left arrow', async () => {
 
 test('Select next month with right arrow', async () => {
   const INPUT_ID = 'datepicker-input';
-  const onChange = (date: Date) => {
-    expect(date.getMonth()).toBe(9);
-    expect(date.getDate()).toBe(20);
+  const onChange = (date: Date | undefined) => {
+    expect(date?.getMonth()).toBe(9);
+    expect(date?.getDate()).toBe(20);
   };
 
   const { getByText, getByTestId } = render(
@@ -106,9 +106,9 @@ test('Select next month with right arrow', async () => {
 
 test('Change month with select input', async () => {
   const INPUT_ID = 'datepicker-input';
-  const onChange = (date: Date) => {
-    expect(date.getMonth()).toBe(3);
-    expect(date.getDate()).toBe(20);
+  const onChange = (date: Date | undefined) => {
+    expect(date?.getMonth()).toBe(3);
+    expect(date?.getDate()).toBe(20);
   };
 
   const { getByText, getByTestId } = render(
@@ -132,9 +132,9 @@ test('Change month with select input', async () => {
 
 test('Change year with select input', async () => {
   const INPUT_ID = 'datepicker-input';
-  const onChange = (date: Date) => {
-    expect(date.getFullYear()).toBe(2019);
-    expect(date.getDate()).toBe(20);
+  const onChange = (date: Date | undefined) => {
+    expect(date?.getFullYear()).toBe(2019);
+    expect(date?.getDate()).toBe(20);
   };
 
   const { getByText, getByTestId } = render(
@@ -181,14 +181,14 @@ test('Disable certain dates', async () => {
 
   const date = getByText('20');
   fireEvent.click(date);
-  expect(date.parentElement).toHaveStyle('cursor: not-allowed;');
+  expect(date?.parentElement).toHaveStyle('cursor: not-allowed;');
 });
 
 test('Select previous date with arrow left', async () => {
   const INPUT_ID = 'datepicker-input';
-  const onChange = (date: Date) => {
-    expect(date.getMonth()).toBe(8);
-    expect(date.getDate()).toBe(28);
+  const onChange = (date: Date | undefined) => {
+    expect(date?.getMonth()).toBe(8);
+    expect(date?.getDate()).toBe(28);
   };
 
   const { getByTestId } = render(
@@ -224,9 +224,9 @@ test('Select previous date with arrow left', async () => {
 
 test('Select next date with arrow right', async () => {
   const INPUT_ID = 'datepicker-input';
-  const onChange = (date: Date) => {
-    expect(date.getMonth()).toBe(8);
-    expect(date.getDate()).toBe(30);
+  const onChange = (date: Date | undefined) => {
+    expect(date?.getMonth()).toBe(8);
+    expect(date?.getDate()).toBe(30);
   };
 
   const { getByTestId } = render(
@@ -262,9 +262,9 @@ test('Select next date with arrow right', async () => {
 
 test('Select previous week date with arrow up', async () => {
   const INPUT_ID = 'datepicker-input';
-  const onChange = (date: Date) => {
-    expect(date.getMonth()).toBe(8);
-    expect(date.getDate()).toBe(22);
+  const onChange = (date: Date | undefined) => {
+    expect(date?.getMonth()).toBe(8);
+    expect(date?.getDate()).toBe(22);
   };
 
   const { getByTestId } = render(
@@ -300,9 +300,9 @@ test('Select previous week date with arrow up', async () => {
 
 test('Select next week date with arrow down', async () => {
   const INPUT_ID = 'datepicker-input';
-  const onChange = (date: Date) => {
-    expect(date.getMonth()).toBe(9);
-    expect(date.getDate()).toBe(6);
+  const onChange = (date: Date | undefined) => {
+    expect(date?.getMonth()).toBe(9);
+    expect(date?.getDate()).toBe(6);
   };
 
   const { getByTestId } = render(
@@ -338,8 +338,8 @@ test('Select next week date with arrow down', async () => {
 
 test('Enter date manually', async () => {
   const INPUT_ID = 'datepicker-input';
-  const onChange = (date: Date) => {
-    expect(date.getDate()).toBe(19);
+  const onChange = (date: Date | undefined) => {
+    expect(date?.getDate()).toBe(19);
   };
 
   const { getByText, getByTestId } = render(
@@ -354,7 +354,9 @@ test('Enter date manually', async () => {
   fireEvent.keyDown(inputElement, { key: 'Enter', code: 'Enter' });
 
   const dateElement = getByText('19');
-  expect(dateElement.parentElement).toHaveStyle(`background: ${theme.color.cta}`);
+  expect(dateElement.parentElement).toHaveStyle(
+    `background: ${theme.colorTokens.action.background_default}`,
+  );
 });
 
 test('Select date by typing it in and blur', async () => {
@@ -377,7 +379,7 @@ test('Select date by typing it in and blur', async () => {
   expect(onBlur).toHaveBeenCalledWith(new Date('12/12/1990'), null);
   const dateElementDay = screen.getByTestId('December 12');
   expect(dateElementDay).toBeInTheDocument();
-  expect(dateElementDay).toHaveStyle(`background: ${theme.color.cta}`);
+  expect(dateElementDay).toHaveStyle(`background: ${theme.colorTokens.action.background_default}`);
 });
 
 test('Select date by typing it in', async () => {
@@ -396,5 +398,73 @@ test('Select date by typing it in', async () => {
 
   const dateElementDay = screen.getByTestId('December 12');
   expect(dateElementDay).toBeInTheDocument();
-  expect(dateElementDay).toHaveStyle(`background: ${theme.color.cta}`);
+  expect(dateElementDay).toHaveStyle(`background: ${theme.colorTokens.action.background_default}`);
+});
+
+test('Clear date by typing it in', async () => {
+  const INPUT_ID = 'datepicker-input';
+
+  const onChange = jest.fn();
+
+  const { getByTestId } = render(
+    <PageProviders>
+      <DatePicker
+        id={INPUT_ID}
+        selectedDate={new Date('12/12/1990')}
+        label="Label"
+        allowControlledDateClearOnType
+        onChange={onChange}
+      />
+    </PageProviders>,
+  );
+
+  const input = getByTestId(INPUT_ID);
+  fireEvent.focus(input);
+  expect(screen.getByTestId('styled-dropdown-bubble-wrapper')).toBeVisible();
+
+  const dateElementDay = screen.getByTestId('December 12');
+  expect(dateElementDay).toBeInTheDocument();
+  expect(dateElementDay).toHaveStyle(`background: ${theme.colorTokens.action.background_default}`);
+
+  fireEvent.change(input, { target: { value: '' } });
+
+  expect(onChange).toHaveBeenCalledWith(undefined);
+  expect(input).toHaveValue('');
+});
+
+test('Clear date by using clear button', async () => {
+  const INPUT_ID = 'datepicker-input';
+
+  const onChange = jest.fn();
+  const onClearDate = jest.fn();
+
+  const { getByTestId } = render(
+    <PageProviders>
+      <DatePicker
+        id={INPUT_ID}
+        selectedDate={new Date('12/12/1990')}
+        label="Label"
+        onChange={onChange}
+        clearDateButton={{
+          clearButtonLabel: 'Clear date and state',
+          onClearDate,
+        }}
+      />
+    </PageProviders>,
+  );
+
+  const input = getByTestId(INPUT_ID);
+  fireEvent.focus(input);
+  expect(screen.getByTestId('styled-dropdown-bubble-wrapper')).toBeVisible();
+
+  const dateElementDay = screen.getByTestId('December 12');
+  expect(dateElementDay).toBeInTheDocument();
+  expect(dateElementDay).toHaveStyle(`background: ${theme.colorTokens.action.background_default}`); // TODO: convert to color tokens in next commit
+
+  const clearDateButton = screen.getByRole('button', { name: 'Clear date and state' });
+  expect(clearDateButton).toBeVisible();
+  fireEvent.click(clearDateButton);
+
+  expect(onClearDate).toHaveBeenCalledWith();
+  expect(input).toHaveValue('');
 });

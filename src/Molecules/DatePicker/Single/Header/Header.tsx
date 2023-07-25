@@ -27,12 +27,12 @@ const Header: React.FC<Props> = ({
 
   const ariaLabelPreviousText = ariaLabelPrevious.replace(
     '{date}',
-    format(sub(viewedDate, { months: 1 }), 'MMMM yyyy', opts),
+    format(sub(viewedDate || new Date(), { months: 1 }), 'MMMM yyyy', opts),
   );
 
   const ariaLabelNextText = ariaLabelNext.replace(
     '{date}',
-    format(add(viewedDate, { months: 1 }), 'MMMM yyyy', opts),
+    format(add(viewedDate || new Date(), { months: 1 }), 'MMMM yyyy', opts),
   );
 
   return (

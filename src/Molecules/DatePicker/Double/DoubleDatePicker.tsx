@@ -149,7 +149,11 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, DoubleDatePickerProps>
       />
       {isWithClearButton(props) ? (
         <Box pt={3}>
-          <Button variant="neutral" color={(p) => p.color.cta} onClick={clearDate}>
+          <Button
+            variant="neutral"
+            color={(p) => p.colorTokens.action.background_default}
+            onClick={clearDate}
+          >
             {props.clearButtonLabel}
           </Button>
         </Box>

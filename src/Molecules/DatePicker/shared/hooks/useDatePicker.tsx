@@ -63,6 +63,7 @@ export const useDatePicker = ({
   onChange,
   onBlur,
   allowDateUpdateOnType,
+  allowControlledDateClearOnType,
   allowSingleDayRange = true,
   noOfMonthsInCalendarView: dateRange = 1,
   isRangePicker = false,
@@ -284,6 +285,14 @@ export const useDatePicker = ({
   const handleInputOnChange = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
       const { value, id: elementId } = event.target;
+
+      // When input is cleared manually (value === ''), we update DatePicker's internal state
+      if (value === '' && onChange && allowControlledDateClearOnType) {
+        setInputValue(value);
+        onChange(undefined);
+        return;
+      }
+
       // @ts-ignore
       const assignedValues: [string?, string?] = (() => {
         if (elementId === INPUT_ID_START(id)) {
@@ -310,7 +319,7 @@ export const useDatePicker = ({
         handleInputSubmit(assignedValues);
       }
     },
-    [allowDateUpdateOnType, handleInputSubmit, id],
+    [allowDateUpdateOnType, allowControlledDateClearOnType, handleInputSubmit, id, onChange],
   );
 
   const handleInputOnBlur = useCallback(() => {

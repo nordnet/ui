@@ -7,7 +7,8 @@ export type BaseProps = {
    * @default false
    */
   allowDateUpdateOnType?: boolean;
-  onChange?: (date: Date) => void;
+  allowControlledDateClearOnType?: boolean;
+  onChange?: (date: Date | undefined) => void;
   onBlur?: (date: Date) => void;
   label: string;
   disableDate?: (date: Date) => boolean;
@@ -32,16 +33,24 @@ interface FullscreenProps {
   clearButtonLabel: string;
   confirmButtonLabel: string;
   dateLabel?: string;
+  onClearDate?: () => void;
+}
+
+interface ClearDateStateProps {
+  onClearDate: () => void;
+  clearButtonLabel: string;
 }
 
 export interface PropsWithFullscreen extends BaseProps {
   fullscreenOnMobile: true;
   fullscreenProps: FullscreenProps;
+  clearDateButton?: never;
 }
 
 export interface PropsWithoutFullscreen extends BaseProps {
   fullscreenOnMobile?: false;
   fullscreenProps?: never;
+  clearDateButton?: ClearDateStateProps;
 }
 
 export type Props = PropsWithFullscreen | PropsWithoutFullscreen;
