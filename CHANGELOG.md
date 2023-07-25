@@ -1,3 +1,16 @@
+# [12.39.0](https://github.com/nordnet/ui/compare/v12.38.0...v12.39.0) (2023-07-25)
+
+
+### Bug Fixes
+
+* 🐛 WIP ([3a13b13](https://github.com/nordnet/ui/commit/3a13b13))
+
+
+### Features
+
+* 🎸 datepicker customizable button for clearing state ([cb6c53b](https://github.com/nordnet/ui/commit/cb6c53b))
+* 🎸 Make DatePicker to be able to clear on change ([8f0ace2](https://github.com/nordnet/ui/commit/8f0ace2))
+
 # [12.38.0](https://github.com/nordnet/ui/compare/v12.37.0...v12.38.0) (2023-07-18)
 
 
