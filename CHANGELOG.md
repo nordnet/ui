@@ -1,3 +1,10 @@
+## [12.39.1](https://github.com/nordnet/ui/compare/v12.39.0...v12.39.1) (2023-07-25)
+
+
+### Bug Fixes
+
+* 🐛 separate Clearable DatePicker from the regular datepick ([09e797c](https://github.com/nordnet/ui/commit/09e797c))
+
 # [12.39.0](https://github.com/nordnet/ui/compare/v12.38.0...v12.39.0) (2023-07-25)
 
 
