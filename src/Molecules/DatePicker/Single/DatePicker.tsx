@@ -10,7 +10,7 @@ import {
 /**
  * Imported separately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
-import { Box, Button, OldIcon, Input, Modal, useMedia, Flexbox } from '../../..';
+import { Box, Button, Icon, Input, Modal, useMedia, Flexbox } from '../../..';
 import { assert, isUndefined } from '../../../common/utils';
 import { useOnClickOutside } from '../../../common/Hooks';
 import { getDateFormat } from '../shared/dateUtils';
@@ -51,7 +51,6 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     selectYearLabel,
     errorMessage,
     clearDateButton,
-    allowControlledDateClearOnType = false,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -103,7 +102,6 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     onChange,
     onBlur,
     allowDateUpdateOnType,
-    allowControlledDateClearOnType,
   });
 
   const fullscreenMode = isFullscreenMode(props, isSmallScreen);
@@ -145,7 +143,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     </>
   );
 
-  const inputRightAddon = <OldIcon.CalendarTwoRows size={6} />;
+  const inputRightAddon = <Icon.Calendar24 />;
 
   const selfRef = useRef<HTMLDivElement>(null);
   useOnClickOutside(selfRef, () => {
