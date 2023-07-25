@@ -10,7 +10,7 @@ import {
 /**
  * Imported separately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
-import { Box, Button, OldIcon, Input, Modal, useMedia, Flexbox } from '../../..';
+import { Box, Button, Icon, Input, Modal, useMedia, Flexbox } from '../../..';
 import { assert, isUndefined } from '../../../common/utils';
 import { useOnClickOutside } from '../../../common/Hooks';
 import { getDateFormat } from '../shared/dateUtils';
@@ -143,7 +143,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     </>
   );
 
-  const inputRightAddon = <OldIcon.CalendarTwoRows size={6} />;
+  const inputRightAddon = <Icon.Calendar24 />;
 
   const selfRef = useRef<HTMLDivElement>(null);
   useOnClickOutside(selfRef, () => {
@@ -185,7 +185,11 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
               {datepicker}
               {clearDateButton ? (
                 <Box pt={5}>
-                  <Button variant="neutral" color={(p) => p.color.cta} onClick={clearClickHandler}>
+                  <Button
+                    variant="neutral"
+                    color={(p) => p.colorTokens.action.background_default}
+                    onClick={clearClickHandler}
+                  >
                     {clearDateButton.clearButtonLabel}
                   </Button>
                 </Box>
@@ -205,7 +209,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
               <Box py={5}>
                 <Button
                   variant="neutral"
-                  color={(p) => p.color.cta}
+                  color={(p) => p.colorTokens.action.background_default}
                   onClick={() => {
                     clearDate();
                     if (props?.fullscreenProps?.onClearDate) {

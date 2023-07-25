@@ -10,7 +10,7 @@ import {
 /**
  * Imported separately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
-import { Box, Button, OldIcon, Input, Modal, useMedia, Flexbox } from '../../..';
+import { Box, Button, Icon, Input, Modal, useMedia, Flexbox } from '../../..';
 import { assert, isUndefined } from '../../../common/utils';
 import { useOnClickOutside } from '../../../common/Hooks';
 import { getDateFormat } from '../shared/dateUtils';
@@ -144,7 +144,7 @@ const DatePickerClearable = React.forwardRef<HTMLDivElement, SingleDatePickerPro
       </>
     );
 
-    const inputRightAddon = <OldIcon.CalendarTwoRows size={6} />;
+    const inputRightAddon = <Icon.Calendar24 />;
 
     const selfRef = useRef<HTMLDivElement>(null);
     useOnClickOutside(selfRef, () => {
