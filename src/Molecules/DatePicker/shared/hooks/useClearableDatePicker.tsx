@@ -16,7 +16,7 @@ import {
 import { usePrevious } from '../../../../common/Hooks';
 import { getDateFormat, getLocale, parseDateString } from '../dateUtils';
 import { ClearableProps as Props } from './useDatePicker.types';
-import { INPUT_ID_START, INPUT_ID_END, INPUT_ID_RANGE } from '../constants';
+import { INPUT_ID_START, INPUT_ID_RANGE } from '../constants';
 
 const formatInputValue = (selectedDate: Date | null, dateFormat: string, locale: Locale) => {
   if (selectedDate) {
@@ -57,7 +57,6 @@ const handleSelectDate = (
 export const useDatePicker = ({
   id,
   selectedDateProp,
-  selectedEndDateProp,
   enableDate,
   disableDate,
   onChange,
@@ -65,25 +64,20 @@ export const useDatePicker = ({
   allowDateUpdateOnType,
   allowSingleDayRange = true,
   noOfMonthsInCalendarView: dateRange = 1,
-  isRangePicker = false,
 }: Props) => {
   const { locale } = useIntl();
   const [selectedDate, setSelectedDate] = useState<Date | null>(selectedDateProp || null);
-  const [selectedEndDate, setSelectedEndDate] = useState<Date | null>(selectedEndDateProp || null);
   const [invalidDate, setInvalidDate] = useState(false);
 
   const [inputValue, setInputValue] = useState<string>(
     formatInputValue(selectedDate, getDateFormat(locale), getLocale(locale)),
   );
-  const [inputValueEnd, setInputValueEnd] = useState<string>(
-    formatInputValue(selectedEndDate, getDateFormat(locale), getLocale(locale)),
-  );
+
   const [viewedDate, setViewedDate] = useState<Date>(
     setDate((selectedDateProp && new Date(selectedDateProp)) || startOfDay(new Date()), 1),
   );
 
   const previousInputValue = usePrevious(inputValue);
-  const previousInputValueEnd = usePrevious(inputValueEnd);
 
   useEffect(() => {
     if (selectedDateProp) {
@@ -99,26 +93,12 @@ export const useDatePicker = ({
   }, [locale, selectedDateProp]);
 
   useEffect(() => {
-    if (selectedEndDateProp) {
-      setSelectedEndDate(selectedEndDateProp);
-      const controlledInputValueEnd = formatInputValue(
-        selectedEndDateProp,
-        getDateFormat(locale),
-        getLocale(locale),
-      );
-      setInputValueEnd(controlledInputValueEnd);
-    }
-  }, [locale, selectedEndDateProp]);
-
-  useEffect(() => {
     if (previousInputValue && !inputValue) {
       setSelectedDate(null);
     }
-    if (previousInputValueEnd && !inputValueEnd) {
-      setSelectedEndDate(null);
-    }
+
     setInvalidDate(false);
-  }, [inputValue, inputValueEnd, previousInputValue, previousInputValueEnd]);
+  }, [inputValue, previousInputValue]);
 
   const allowedDate = useCallback(
     (date: Date | null) => {
@@ -139,34 +119,17 @@ export const useDatePicker = ({
 
   const handleDateClick = useCallback(
     (date: Date) => {
-      const [startDate, endDate] = handleSelectDate(
-        date,
-        selectedDate,
-        selectedEndDate,
-        allowSingleDayRange,
-        isRangePicker,
-      );
+      const [startDate] = handleSelectDate(date, selectedDate, null, allowSingleDayRange, false);
 
-      if (
-        selectedDate &&
-        isSameDay(startDate, selectedDate) &&
-        endDate &&
-        selectedEndDate &&
-        isSameDay(endDate, selectedEndDate)
-      )
-        return;
+      if (selectedDate && isSameDay(startDate, selectedDate)) return;
 
       const dateString = formatInputValue(startDate, getDateFormat(locale), getLocale(locale));
-
-      const dateStringEnd = formatInputValue(endDate, getDateFormat(locale), getLocale(locale));
       setSelectedDate(startDate);
-      setSelectedEndDate(endDate);
       setInputValue(dateString);
-      setInputValueEnd(dateStringEnd);
 
-      if (onChange) onChange(startDate, endDate);
+      if (onChange) onChange(startDate);
     },
-    [selectedDate, selectedEndDate, allowSingleDayRange, isRangePicker, locale, onChange],
+    [selectedDate, allowSingleDayRange, locale, onChange],
   );
 
   const onDateClick = useCallback(
@@ -190,39 +153,16 @@ export const useDatePicker = ({
   );
 
   const handleInputSubmit = useCallback(
-    ([startDateValue = inputValue, endDateValue = inputValueEnd] = []) => {
-      const [parsedStartDate, parsedEndDate] = [
-        parseDateString(startDateValue, locale),
-        parseDateString(endDateValue, locale),
-      ];
+    ([startDateValue = inputValue] = []) => {
+      const [parsedStartDate] = [parseDateString(startDateValue, locale)];
 
-      const [startDate, endDate] = [allowedDate(parsedStartDate), allowedDate(parsedEndDate)];
-      if (!allowSingleDayRange && startDate && endDate && isSameDay(startDate, endDate)) return;
+      const [startDate] = [allowedDate(parsedStartDate)];
 
       if (startDate) {
-        const selectedDatesReselected = (() => {
-          if (startDate && !endDate) {
-            return selectedDate && isSameDay(startDate, selectedDate);
-          }
-          if (startDate && endDate) {
-            return (
-              selectedDate &&
-              selectedEndDate &&
-              isSameDay(startDate, selectedDate) &&
-              isSameDay(endDate, selectedEndDate)
-            );
-          }
-          return false;
-        })();
-
-        if (selectedDatesReselected) return;
-
         setSelectedDate(startDate);
-        setSelectedEndDate(endDate);
 
         if (
           startDate &&
-          !endDate &&
           !isWithinInterval(startDate, {
             start: viewedDate,
             end: subMilliseconds(addMonths(viewedDate, dateRange), 1),
@@ -231,40 +171,14 @@ export const useDatePicker = ({
           setViewedDate(setDate(startDate, 1));
         }
 
-        if (
-          startDate &&
-          endDate &&
-          !isWithinInterval(endDate, {
-            start: viewedDate,
-            end: subMilliseconds(addMonths(viewedDate, dateRange), 1),
-          })
-        ) {
-          setViewedDate(setDate(endDate, 1));
-        }
-
         const dateString = formatInputValue(startDate, getDateFormat(locale), getLocale(locale));
-        const dateStringEnd = formatInputValue(endDate, getDateFormat(locale), getLocale(locale));
 
         setInputValue(dateString);
-        setInputValueEnd(dateStringEnd);
-
-        if (onChange) onChange(startDate, endDate);
-        if (onBlur) onBlur(startDate, endDate);
+        if (onChange) onChange(startDate);
+        if (onBlur) onBlur(startDate);
       }
     },
-    [
-      inputValue,
-      inputValueEnd,
-      locale,
-      allowedDate,
-      allowSingleDayRange,
-      viewedDate,
-      dateRange,
-      onChange,
-      onBlur,
-      selectedDate,
-      selectedEndDate,
-    ],
+    [inputValue, locale, allowedDate, viewedDate, dateRange, onChange, onBlur],
   );
 
   const onMonthChange = useCallback(
@@ -293,22 +207,17 @@ export const useDatePicker = ({
       }
 
       // @ts-ignore
-      const assignedValues: [string?, string?] = (() => {
+      const assignedValues: [string?] = (() => {
         if (elementId === INPUT_ID_START(id)) {
           setInputValue(value);
           return [value];
         }
-        if (elementId === INPUT_ID_END(id)) {
-          setInputValueEnd(value);
-          return [undefined, value];
-        }
 
         if (elementId === INPUT_ID_RANGE(id)) {
-          const [startDateValue, endDateValue] = value.split('-').map((v) => v.trim());
+          const [startDateValue] = value.split('-').map((v) => v.trim());
           setInputValue(startDateValue);
-          setInputValueEnd(endDateValue);
 
-          return [startDateValue, endDateValue];
+          return [startDateValue];
         }
         setInputValue(value);
         return [value];
@@ -334,14 +243,12 @@ export const useDatePicker = ({
 
   const clearDate = useCallback(() => {
     setInputValue('');
-    setInputValueEnd('');
+    // setInputValueEnd('');
   }, []);
 
   return {
     selectedDate,
-    selectedEndDate,
     inputValue,
-    inputValueEnd,
     handleInputKeyDown,
     handleInputOnChange,
     handleInputOnBlur,

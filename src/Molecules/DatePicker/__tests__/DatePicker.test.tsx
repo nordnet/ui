@@ -402,7 +402,7 @@ test('Select date by typing it in', async () => {
   expect(dateElementDay).toHaveStyle(`background: ${theme.colorTokens.action.background_default}`);
 });
 
-test('Clear date by typing it in', async () => {
+test('Clear date by clearing the input', async () => {
   const INPUT_ID = 'datepicker-input';
 
   const onChange = jest.fn();

@@ -1,11 +1,7 @@
 type BaseProps = {
   id: string;
-  selectedDateProp?: Date;
-  selectedEndDateProp?: Date;
   enableDate?: (date: Date) => boolean;
   disableDate?: (date: Date) => boolean;
-  onChange?: (date: Date, endDate?: Date | null) => void;
-  onBlur?: (date: Date, endDate?: Date | null) => void;
   /**
    * Specifies whether date should be selected while user types without need to submit
    * @default false
@@ -17,15 +13,18 @@ type BaseProps = {
    * @default 1
    */
   noOfMonthsInCalendarView?: number;
-  isRangePicker?: boolean;
 };
 
 export type Props = BaseProps & {
   selectedDateProp?: Date;
+  selectedEndDateProp?: Date;
   onChange?: (date: Date, endDate?: Date | null) => void;
+  onBlur?: (date: Date, endDate?: Date | null) => void;
+  isRangePicker?: boolean;
 };
 
 export type ClearableProps = BaseProps & {
   selectedDateProp?: Date | undefined;
-  onChange?: (date?: Date | undefined, endDate?: Date | null) => void;
+  onChange?: (date?: Date | undefined) => void;
+  onBlur?: (date: Date) => void;
 };
