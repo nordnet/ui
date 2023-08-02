@@ -1,3 +1,10 @@
+# [12.40.0](https://github.com/nordnet/ui/compare/v12.39.1...v12.40.0) (2023-08-02)
+
+
+### Features
+
+* 🎸 Add new check and copy icons ([f18431c](https://github.com/nordnet/ui/commit/f18431c))
+
 ## [12.39.1](https://github.com/nordnet/ui/compare/v12.39.0...v12.39.1) (2023-07-25)
 
 
