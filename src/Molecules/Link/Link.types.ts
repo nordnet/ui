@@ -23,6 +23,7 @@ export type LinkProps = {
   React.DOMAttributes<HTMLAnchorElement>,
   'onMouseEnter' | 'onMouseLeave' | 'onMouseOver' | 'onFocus'
 > &
+  Pick<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'role'> &
   TrackingProps;
 
 export type LinkComponent = React.FunctionComponent<LinkProps>;
