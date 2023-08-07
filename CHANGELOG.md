@@ -1,3 +1,10 @@
+## [12.40.1](https://github.com/nordnet/ui/compare/v12.40.0...v12.40.1) (2023-08-07)
+
+
+### Bug Fixes
+
+* add role prop to type script ([23e10fa](https://github.com/nordnet/ui/commit/23e10fa))
+
 # [12.40.0](https://github.com/nordnet/ui/compare/v12.39.1...v12.40.0) (2023-08-02)
 
 
