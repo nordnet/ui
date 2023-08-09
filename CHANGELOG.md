@@ -1,3 +1,10 @@
+# [12.41.0](https://github.com/nordnet/ui/compare/v12.40.1...v12.41.0) (2023-08-09)
+
+
+### Features
+
+* bump design tokens ([#1391](https://github.com/nordnet/ui/issues/1391)) ([2cd56a5](https://github.com/nordnet/ui/commit/2cd56a5))
+
 ## [12.40.1](https://github.com/nordnet/ui/compare/v12.40.0...v12.40.1) (2023-08-07)
 
 
