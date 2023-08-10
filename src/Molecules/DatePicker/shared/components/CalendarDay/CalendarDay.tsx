@@ -16,7 +16,7 @@ const StyledCalendarDay = styled(Box)<{
   $withGutter?: boolean;
   $fullscreenMode: boolean;
 }>`
-  background: ${({ theme }) => theme.color.inputBackground};
+  background: ${({ theme }) => theme.colorTokens.neutral.background_default};
   min-width: ${({ theme }) => theme.spacing.unit(10) + 2}px;
   min-height: ${({ theme }) => theme.spacing.unit(10) + 2}px;
   margin: ${({ theme }) => theme.spacing.unit(0.5)}px 0;
@@ -41,21 +41,21 @@ const StyledCalendarDay = styled(Box)<{
   ${
     $disabled
       ? `cursor: not-allowed;
-        background: ${theme.color.shadowInput};
+        background: ${theme.colorTokens.neutral.background_default};
 
         &:focus {
-          border: 1px solid ${theme.color.inputBorder};
+          border: 1px solid ${theme.colorTokens.neutral.border_hover};
         }`
       : `
       &:focus {
-        border: 1px solid ${theme.color.cta};
+        border: 1px solid ${theme.colorTokens.action.background_default};
       }
 
       &:hover {
-        border: 1px solid ${theme.color.cta};
+        border: 1px solid ${theme.colorTokens.action.background_default};
       }`
   }
-  ${$isWithinRange ? `background: ${theme.color.datePickerWithinRangeBackground};` : ''}
+  ${$isWithinRange ? `background: ${theme.colorTokens.neutral.background_weak};` : ''}
   ${
     $fullscreenMode
       ? `width: calc((100vw - ${theme.spacing.unit(6)}px) / 7);
@@ -65,16 +65,16 @@ const StyledCalendarDay = styled(Box)<{
   }
   ${
     $isWithinRange && $isFirstDay
-      ? `background: linear-gradient(to right, ${theme.color.datePickerWithinRangeFade}, ${theme.color.datePickerWithinRangeBackground});`
+      ? `background: linear-gradient(to right, ${theme.colorTokens.neutral.background_weak}, ${theme.colorTokens.neutral.background_weak});`
       : ''
   }
   ${
     $isWithinRange && $isLastDay
-      ? `background: linear-gradient(to left, ${theme.color.datePickerWithinRangeFade}, ${theme.color.datePickerWithinRangeBackground});`
+      ? `background: linear-gradient(to left, ${theme.colorTokens.neutral.background_weak}, ${theme.colorTokens.neutral.background_weak});`
       : ''
   }
-  ${$isToday ? `border: 1px solid ${theme.color.label};` : ''}
-  ${$selected ? `background: ${theme.color.cta};` : ''}
+  ${$isToday ? `border: 1px solid ${theme.colorTokens.neutral.border_hover};` : ''}
+  ${$selected ? `background: ${theme.colorTokens.action.background_default};` : ''}
 `}
 `;
 

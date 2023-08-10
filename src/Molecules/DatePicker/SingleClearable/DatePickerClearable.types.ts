@@ -1,3 +1,8 @@
+interface ClearDateStateProps {
+  onClearDate: () => void;
+  clearButtonLabel: string;
+}
+
 export type BaseProps = {
   ariaLabelPrevious?: string;
   ariaLabelNext?: string;
@@ -7,14 +12,15 @@ export type BaseProps = {
    * @default false
    */
   allowDateUpdateOnType?: boolean;
-  onChange?: (date: Date) => void;
+  clearDateButton?: ClearDateStateProps;
+  selectedDate?: Date | undefined;
+  onChange?: (date: Date | undefined) => void;
   onBlur?: (date: Date) => void;
   label: string;
   disableDate?: (date: Date) => boolean;
   disabled?: boolean;
   enableDate?: (date: Date) => boolean;
   id: string;
-  selectedDate?: Date;
   inputSize?: 's';
   width?: number | string;
   ref?: React.Ref<HTMLDivElement>;
@@ -35,21 +41,14 @@ interface FullscreenProps {
   onClearDate?: () => void;
 }
 
-interface ClearDateStateProps {
-  onClearDate: () => void;
-  clearButtonLabel: string;
-}
-
 export interface PropsWithFullscreen extends BaseProps {
   fullscreenOnMobile: true;
   fullscreenProps: FullscreenProps;
-  clearDateButton?: never;
 }
 
 export interface PropsWithoutFullscreen extends BaseProps {
   fullscreenOnMobile?: false;
   fullscreenProps?: never;
-  clearDateButton?: ClearDateStateProps;
 }
 
 export type Props = PropsWithFullscreen | PropsWithoutFullscreen;
