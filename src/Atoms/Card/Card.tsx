@@ -27,8 +27,10 @@ const barStyles = css<Props>`
     position: absolute;
     top: 0;
     left: 0;
-    border-top-left-radius: ${(p) => p.theme.borderRadius8};
-    border-top-right-radius: ${(p) => p.theme.borderRadius8};
+    ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
+      border-top-left-radius: ${(p) => p.theme.borderRadius8};
+      border-top-right-radius: ${(p) => p.theme.borderRadius8};
+    }
   }
 `;
 
@@ -39,7 +41,9 @@ const StyledCard = styled.div<Props>`
   && {
     ${(p) => !R.isNil(p.grow) && `flex-grow: ${p.grow}`};
   }
-  border-radius: ${({ theme }) => theme.borderRadius8};
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
+    border-radius: ${({ theme }) => theme.borderRadius8};
+  }
 `;
 
 export const Card: React.FC<Props> = React.forwardRef<HTMLDivElement, Props>(

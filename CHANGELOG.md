@@ -1,3 +1,44 @@
+# [12.41.0](https://github.com/nordnet/ui/compare/v12.40.1...v12.41.0) (2023-08-09)
+
+
+### Features
+
+* bump design tokens ([#1391](https://github.com/nordnet/ui/issues/1391)) ([2cd56a5](https://github.com/nordnet/ui/commit/2cd56a5))
+
+## [12.40.1](https://github.com/nordnet/ui/compare/v12.40.0...v12.40.1) (2023-08-07)
+
+
+### Bug Fixes
+
+* add role prop to type script ([23e10fa](https://github.com/nordnet/ui/commit/23e10fa))
+
+# [12.40.0](https://github.com/nordnet/ui/compare/v12.39.1...v12.40.0) (2023-08-02)
+
+
+### Features
+
+* 🎸 Add new check and copy icons ([f18431c](https://github.com/nordnet/ui/commit/f18431c))
+
+## [12.39.1](https://github.com/nordnet/ui/compare/v12.39.0...v12.39.1) (2023-07-25)
+
+
+### Bug Fixes
+
+* 🐛 separate Clearable DatePicker from the regular datepick ([09e797c](https://github.com/nordnet/ui/commit/09e797c))
+
+# [12.39.0](https://github.com/nordnet/ui/compare/v12.38.0...v12.39.0) (2023-07-25)
+
+
+### Bug Fixes
+
+* 🐛 WIP ([3a13b13](https://github.com/nordnet/ui/commit/3a13b13))
+
+
+### Features
+
+* 🎸 datepicker customizable button for clearing state ([cb6c53b](https://github.com/nordnet/ui/commit/cb6c53b))
+* 🎸 Make DatePicker to be able to clear on change ([8f0ace2](https://github.com/nordnet/ui/commit/8f0ace2))
+
 # [12.39.0-beta.1](https://github.com/nordnet/ui/compare/v12.38.0...v12.39.0-beta.1) (2023-07-19)
 
 

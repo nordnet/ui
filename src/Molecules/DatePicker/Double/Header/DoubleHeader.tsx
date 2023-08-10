@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import format from 'date-fns/format';
 import { addMonths, subMonths } from 'date-fns';
 import { Props } from './DoubleHeader.types';
-import { Box, Flexbox, OldIcon, Button } from '../../../..';
+import { Box, Flexbox, Icon, Button } from '../../../..';
 import { getLocale } from '../../shared/dateUtils';
 import SelectMonth from '../../shared/components/SelectMonth';
 import SelectYear from '../../shared/components/SelectYear';
@@ -58,7 +58,7 @@ const DoubleHeader: React.FC<Props> = ({
               onMonthChange(viewedDate.getMonth() - 1);
             }}
           >
-            <OldIcon.ThinChevron size={4} direction="left" />
+            <Icon.ChevronLeft16 />
           </Button>
         </ChevronContainer>
         <Flexbox container item>
@@ -107,7 +107,7 @@ const DoubleHeader: React.FC<Props> = ({
               onMonthChange(viewedDate.getMonth() + 1);
             }}
           >
-            <OldIcon.ThinChevron size={4} direction="right" />
+            <Icon.ChevronRight16 />
           </Button>
         </ChevronContainer>
       </YearMonthContainer>
