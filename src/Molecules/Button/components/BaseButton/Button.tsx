@@ -53,6 +53,7 @@ const StyledLink = styled(CleanLink)<InnerProps>`
     return primaryStyles;
   }}
   text-decoration: none;
+  border-radius: ${(p => p.theme.borderRadius100)};
 
   &:hover {
     text-decoration: ${(p) => (isNeutral(p.$variant) ? `underline` : `none`)};
