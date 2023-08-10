@@ -89,6 +89,7 @@ export const primaryStyles = css<InnerProps>`
     }
   `;
   }}
+  border-radius: ${(p) => p.theme.borderRadius100};
 `;
 
 export const negativeStyles = css<InnerProps>`
@@ -115,6 +116,7 @@ export const negativeStyles = css<InnerProps>`
     }
   `;
   }}
+  border-radius: ${(p => p.theme.borderRadius100)};
 `;
 
 export const secondaryStyles = css<InnerProps>`
@@ -177,6 +179,7 @@ export const secondaryStyles = css<InnerProps>`
       }
     `;
   }};
+  border-radius: ${(p => p.theme.borderRadius100)};
 `;
 
 export const neutralStyles = css<InnerProps>`
