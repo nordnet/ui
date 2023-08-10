@@ -1,3 +1,10 @@
+# [12.42.0-beta.2](https://github.com/nordnet/ui/compare/v12.42.0-beta.1...v12.42.0-beta.2) (2023-08-10)
+
+
+### Bug Fixes
+
+* no border radius on neutral buttons UC-60 ([6e90a46](https://github.com/nordnet/ui/commit/6e90a46))
+
 # [12.42.0-beta.1](https://github.com/nordnet/ui/compare/v12.41.0...v12.42.0-beta.1) (2023-08-10)
 
 
