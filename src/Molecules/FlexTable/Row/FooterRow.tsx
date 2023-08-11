@@ -4,10 +4,8 @@ import Row from './Row';
 import { ColorFn } from '../../../common/Types';
 import { FooterRowComponent } from './Row.types';
 
-const StyledRow = styled(Row).withConfig({
-  shouldForwardProp: (prop) => !['hideSeparator', 'separatorColor'].includes(prop),
-})<{ separatorColor: ColorFn; hideSeparator: boolean }>`
-  ${(p) => (!p.hideSeparator ? `border-top: 1px solid ${p.separatorColor(p.theme)};` : '')}
+const StyledRow = styled(Row)<{ $separatorColor: ColorFn; $hideSeparator: boolean }>`
+  ${(p) => (!p.$hideSeparator ? `border-top: 1px solid ${p.$separatorColor(p.theme)};` : '')}
   border-bottom: 0;
 `;
 
@@ -22,8 +20,8 @@ export const FooterRow: FooterRowComponent = ({
     <StyledRow
       className={className}
       hoverHighlight={false}
-      hideSeparator={hideSeparator}
-      separatorColor={separatorColor}
+      $hideSeparator={hideSeparator}
+      $separatorColor={separatorColor}
       rowType="footer"
       {...htmlProps}
     >
