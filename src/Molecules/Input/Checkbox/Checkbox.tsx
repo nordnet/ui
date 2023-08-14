@@ -131,6 +131,7 @@ const Checkbox: CheckboxComponent & { components: typeof components; Shape: type
     label,
     labelTooltip,
     labelTooltipPosition,
+    labelTooltipInModal,
     name,
     onBlur,
     onChange,
@@ -191,6 +192,8 @@ const Checkbox: CheckboxComponent & { components: typeof components; Shape: type
               <Tooltip
                 label={labelTooltip}
                 {...(labelTooltipPosition && { position: labelTooltipPosition })}
+                inModal={labelTooltipInModal}
+                wrapChild={labelTooltipInModal}
               >
                 <TooltipIcon size={4} />
               </Tooltip>
