@@ -1,3 +1,17 @@
+## [12.41.3](https://github.com/nordnet/ui/compare/v12.41.2...v12.41.3) (2023-08-14)
+
+
+### Bug Fixes
+
+* input field tooltip when in modal ([cd2349f](https://github.com/nordnet/ui/commit/cd2349f))
+
+## [12.41.2](https://github.com/nordnet/ui/compare/v12.41.1...v12.41.2) (2023-08-14)
+
+
+### Bug Fixes
+
+* use transient props ($propName) instead of shouldforwardprop ([#1396](https://github.com/nordnet/ui/issues/1396)) ([b075a01](https://github.com/nordnet/ui/commit/b075a01))
+
 ## [12.41.1](https://github.com/nordnet/ui/compare/v12.41.0...v12.41.1) (2023-08-14)
 
 

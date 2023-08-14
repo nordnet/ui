@@ -87,6 +87,7 @@ export const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
       size,
       labelToolTip,
       labelTooltipPosition,
+      labelTooltipInModal,
       innerRef,
       ...props
     },
@@ -120,6 +121,7 @@ export const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
             fieldId={id}
             labelTooltip={labelToolTip}
             labelTooltipPosition={labelTooltipPosition}
+            labelTooltipInModal={labelTooltipInModal}
             {...props}
             {...(fullWidth ? { width: '100%' } : {})}
             ref={ref}
