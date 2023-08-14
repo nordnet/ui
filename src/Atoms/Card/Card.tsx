@@ -40,8 +40,8 @@ const StyledCard = styled.div<Props>`
 `;
 
 export const Card: React.FC<Props> = React.forwardRef<HTMLDivElement, Props>(
-  ({ as, barColor, children, className, grow }, ref) => (
-    <StyledCard className={className} as={as} barColor={barColor} ref={ref} grow={grow}>
+  ({ as, barColor, children, className, grow, ...rest }, ref) => (
+    <StyledCard className={className} as={as} barColor={barColor} ref={ref} grow={grow} {...rest}>
       {children}
     </StyledCard>
   ),
