@@ -1,3 +1,10 @@
+## [12.41.1](https://github.com/nordnet/ui/compare/v12.41.0...v12.41.1) (2023-08-14)
+
+
+### Bug Fixes
+
+* 🐛 Pass HTML props to CardWithTitle ([fe4e7c0](https://github.com/nordnet/ui/commit/fe4e7c0))
+
 # [12.41.0](https://github.com/nordnet/ui/compare/v12.40.1...v12.41.0) (2023-08-09)
 
 
