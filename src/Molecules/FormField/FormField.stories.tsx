@@ -1,5 +1,5 @@
-import React from 'react';
-import { Flexbox, FormField } from '../..';
+import React, { useState } from 'react';
+import { Box, Flexbox, FormField, Modal } from '../..';
 
 export default {
   title: 'Molecules / FormField',
@@ -80,4 +80,43 @@ export const withLabelTooltip = () => (
 
 withLabelTooltip.story = {
   name: 'With label tooltip',
+};
+
+export const withLabelTooltipInsideModal = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const onOpen = () => {
+      setOpen(true);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <>
+        <button type="button" onClick={onOpen}>
+          Open modal
+        </button>
+        <Modal onClose={onClose} title="Dialog information" open={open}>
+          <Box mb={2}>
+            <FormField
+              label="Label"
+              labelTooltip="Tooltip content"
+              fieldId="unique-id-1"
+              labelTooltipInModal
+            >
+              <div style={{ background: 'aqua' }}>Pass in any children you want</div>
+            </FormField>
+          </Box>
+        </Modal>
+      </>
+    );
+  };
+  return <Example />;
+};
+
+withLabelTooltipInsideModal.story = {
+  name: 'With label tooltip inside modal',
 };
