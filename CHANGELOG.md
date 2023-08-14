@@ -1,3 +1,10 @@
+## [12.41.3](https://github.com/nordnet/ui/compare/v12.41.2...v12.41.3) (2023-08-14)
+
+
+### Bug Fixes
+
+* input field tooltip when in modal ([cd2349f](https://github.com/nordnet/ui/commit/cd2349f))
+
 ## [12.41.2](https://github.com/nordnet/ui/compare/v12.41.1...v12.41.2) (2023-08-14)
 
 
