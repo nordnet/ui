@@ -134,8 +134,6 @@
     "husky": "^7.0.2",
     "jest": "27.0.6",
     "jest-date-mock": "^1.0.8",
-    "jest-specific-snapshot": "^5.0.0",
-    "jest-styled-components": "^7.0.5",
     "lint-staged": "11.1.2",
     "lodash": "^4.17.21",
     "prettier": "^2.3.2",
