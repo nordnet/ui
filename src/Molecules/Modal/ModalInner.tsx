@@ -44,9 +44,7 @@ export const Backdrop = styled(Flexbox)<BackdropProps>`
       : `background-color: ${p.theme.color.modalBackdrop};`}
 `;
 
-const Dialog = styled(motion.div).withConfig({
-  shouldForwardProp: (prop) => !['isStatusModal'].includes(prop),
-})<DialogProps>`
+const Dialog = styled(motion.div)<DialogProps>`
   box-sizing: border-box;
   padding: ${({ theme }) => theme.spacing.unit(PADDING_MOBILE)}px;
   border: 0;
@@ -92,14 +90,14 @@ const Dialog = styled(motion.div).withConfig({
     box-shadow: 0 2px 2px 0 ${({ theme }) => theme.color.shadowModal};
   }
 
-  ${({ theme, isStatusModal }) =>
-    !isStatusModal &&
+  ${({ theme, $isStatusModal }) =>
+    !$isStatusModal &&
     `${theme.media.greaterThan(theme.breakpoints.md)} {
         width: ${theme.spacing.unit(135)}px;
       }`}
 
-  ${({ theme, isStatusModal }) =>
-    !isStatusModal &&
+  ${({ theme, $isStatusModal }) =>
+    $isStatusModal &&
     `${theme.media.greaterThan(theme.breakpoints.lg)} {
         width: ${theme.spacing.unit(170)}px;
       }`}
@@ -276,7 +274,7 @@ export const ModalInner: React.FC<Props> = ({
               $show={show}
               $fullScreenMobile={fullScreenMobile}
               $fixedBottomMobile={fixedBottomMobile}
-              isStatusModal={isStatusModal}
+              $isStatusModal={isStatusModal}
             >
               {progressIndicator && (
                 <StyledProgressIndicator>

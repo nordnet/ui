@@ -38,7 +38,7 @@ export type DialogProps = {
   onClick: (e: React.MouseEvent<HTMLElement>) => void;
   $fullScreenMobile?: boolean;
   $fixedBottomMobile?: boolean;
-  isStatusModal?: boolean;
+  $isStatusModal?: boolean;
 };
 
 export type Props = {
