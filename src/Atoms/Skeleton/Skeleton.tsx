@@ -59,7 +59,7 @@ const Circle = styled(Base)`
   border-radius: 50%;
 `;
 
-export const Skeleton: SkeletonComponent = React.forwardRef<HTMLElement, Props>((props, ref) => {
+export const Skeleton: SkeletonComponent = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
   const { className, height, variant = 'text', width, delay = false } = props;
   const [noDelay, setNoDelay] = useState(delay === 0 || delay === false);
   const sharedProps = {
