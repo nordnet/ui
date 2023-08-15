@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Box, Flexbox, Typography, Icon } from '../..';
 import PageWrapper from '../PageWrapper';
-import { FnHelper, InfoBarIconProps, InfoBarProps } from './InfoBar.types';
+import { FnHelper, InfoBarIconProps, InfoBarProps, Variant } from './InfoBar.types';
 
 /*
 Categories:
@@ -43,7 +43,7 @@ const textLinkFn = ({ variant, theme }: FnHelper) => {
   }
 };
 
-const InfoBarPageWrapper = styled(PageWrapper)`
+const InfoBarPageWrapper = styled(PageWrapper)<{ variant?: Variant }>`
   background: ${bgFn};
   color: ${({ theme }) => theme.color.text};
 

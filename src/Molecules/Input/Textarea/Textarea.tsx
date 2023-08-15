@@ -30,7 +30,7 @@ const focusBorderStyles = css`
   }
 `;
 
-const borderStyles = css<Pick<Props, 'error' | 'success'>>`
+const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled'>>`
   border: 1px solid
     ${(p) => {
       if (hasError(p.error)) return p.theme.color.inputBorderError;
@@ -42,7 +42,9 @@ const borderStyles = css<Pick<Props, 'error' | 'success'>>`
   ${focusBorderStyles}
 `;
 
-const StyledTextarea = styled(NormalizedElements.Textarea)<Pick<Props, 'noResize'>>`
+const StyledTextarea = styled(NormalizedElements.Textarea)<
+  Pick<Props, 'noResize' | 'error' | 'success' | 'disabled'>
+>`
   border: 0;
   width: 100%;
   padding: ${(p) => p.theme.spacing.unit(2)}px;
