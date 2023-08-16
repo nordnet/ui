@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { actions } from '@storybook/addon-actions';
-import { Box, Input } from '../../..';
+import { Box, Input, Modal } from '../../..';
 import { Display } from '../../../common/Display';
 
 // TODO: A bit laggy for now, let's optimize later
@@ -265,4 +265,41 @@ export const withResizeNone = () => (
 
 withResizeNone.story = {
   name: 'With resize none',
+};
+
+export const withLabelTooltipInsideModal = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const onOpen = () => {
+      setOpen(true);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <>
+        <button type="button" onClick={onOpen}>
+          Open modal
+        </button>
+        <Modal onClose={onClose} title="Dialog information" open={open}>
+          <Box mb={2}>
+            <Input.Textarea
+              label="Label"
+              placeholder="Placeholder"
+              labelTooltip="Tooltip content"
+              labelTooltipInModal
+            />
+          </Box>
+        </Modal>
+      </>
+    );
+  };
+  return <Example />;
+};
+
+withLabelTooltipInsideModal.story = {
+  name: 'With label tooltip inside modal',
 };

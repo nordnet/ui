@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { actions } from '@storybook/addon-actions';
-import { Box, Flexbox, FormField, Input, Typography } from '../../..';
+import { Box, Flexbox, FormField, Input, Modal, Typography } from '../../..';
 import { Display } from '../../../common/Display';
 import { Shape } from './Checkbox.shape';
 
@@ -350,4 +350,42 @@ export const onAColouredBackground = () => (
 
 onAColouredBackground.story = {
   name: 'On a coloured background',
+};
+
+export const withLabelTooltipInsideModal = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const onOpen = () => {
+      setOpen(true);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <>
+        <button type="button" onClick={onOpen}>
+          Open modal
+        </button>
+        <Modal onClose={onClose} title="Dialog information" open={open}>
+          <Box mb={2}>
+            <Input.Checkbox
+              label="Label"
+              name="foo"
+              value="bar"
+              labelTooltipInModal
+              labelTooltip="Tooltip content"
+            />
+          </Box>
+        </Modal>
+      </>
+    );
+  };
+  return <Example />;
+};
+
+withLabelTooltipInsideModal.story = {
+  name: 'With label tooltip inside modal',
 };
