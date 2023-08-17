@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
 import styled from 'styled-components';
 
-import { Flexbox, OldIcon, Typography } from '../..';
+import { Box, Flexbox, OldIcon, Typography } from '../..';
 import { SelectionCard } from './SelectionCard';
 import { SelectionCard as Props } from './SelectionCard.types';
+
+import image from './images/guidance_economic_independence.jpg';
 
 export default {
   title: 'Molecules / SelectionCard',
@@ -13,6 +15,11 @@ export default {
 
 const StyledFlexbox = styled(Flexbox)`
   width: 100%;
+`;
+
+const StyledBox = styled(Box)`
+  height: 100%;
+  width: 150px;
 `;
 
 const Template: Story<Props> = (args) => <SelectionCard {...args} />;
@@ -27,6 +34,8 @@ SelectionCardDefault.args = {
   outline: true,
   horizontal: false,
   error: false,
+  imageUrl: '',
+  imageAlt: '',
 };
 SelectionCardDefault.storyName = 'Default';
 
@@ -57,6 +66,24 @@ WithIcon.args = {
   title: 'With Icon',
   icon: <OldIcon.House size={8} />,
 };
+
+export const withImage = () => {
+  const Component = () => {
+    return (
+      <StyledBox>
+        <SelectionCard
+          title="Controlled selection card"
+          text="This component is controlled"
+          imageUrl={image}
+          border
+        />
+      </StyledBox>
+    );
+  };
+  return <Component />;
+};
+
+withImage.storyName = 'With image';
 
 export const withValueControlledBehavior = () => {
   const Component = () => {

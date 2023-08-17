@@ -13,6 +13,9 @@ const StyledFlexbox = styled(Flexbox)`
 
 const StyledImg = styled.img`
   width: 100%;
+
+  border-top-left-radius: ${({ theme }) => theme.borderRadius8};
+  border-top-right-radius: ${({ theme }) => theme.borderRadius8};
 `;
 
 const StyledTypography = styled(Typography).withConfig({
@@ -85,6 +88,7 @@ const StyledCard = styled(Card).withConfig({
   ${(p) => p.border && `border: 1px solid ${p.theme.color.inputBorder}`};
   ${(p) => p.error && !p.disabled && `border: 1px solid ${p.theme.color.functionRed}`};
   ${(p) => !p.disabled && p.selected && overlayStyles};
+  border-radius: ${({ theme }) => theme.borderRadius8};
 
   &:hover {
     ${(p) => !p.disabled && overlayStyles};
