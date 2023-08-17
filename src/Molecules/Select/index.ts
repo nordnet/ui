@@ -1,4 +1,4 @@
-import { Action } from './Action';
+import { ActionButton } from './ActionButton';
 import { Group } from './Group';
 import { ListBoxFooter } from './ListBoxFooter';
 import { ListBoxHeader } from './ListBoxHeader';
@@ -7,10 +7,10 @@ import { Search } from './Search';
 import { Select } from './Select';
 import { ValueDisplayMultiSelect } from './ValueDisplayMultiSelect';
 import { ToggleAll } from './ToggleAll';
-import { PillTrigger } from './PillTrigger';
+import { TriggerPill } from './TriggerPill';
 
 export {
-  Action,
+  ActionButton,
   Group,
   ListBoxFooter,
   ListBoxHeader,
@@ -19,5 +19,5 @@ export {
   Select,
   ValueDisplayMultiSelect,
   ToggleAll,
-  PillTrigger,
+  TriggerPill,
 };

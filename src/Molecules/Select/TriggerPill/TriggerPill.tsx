@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { Props } from './PillTrigger.types';
+import { Props } from './TriggerPill.types';
 import { Button } from '../../..';
 
 const StyledPill = styled(Button.Pill)`
@@ -13,6 +13,6 @@ const StyledPill = styled(Button.Pill)`
   }
 `;
 
-export function PillTrigger(props: Props) {
+export function TriggerPill(props: Props) {
   return <StyledPill variant="secondary" size="m" fullWidth {...props} />;
 }

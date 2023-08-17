@@ -4,11 +4,11 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Icon, Typography, Flag, Flexbox, FormField } from '../..';
 import { Display } from '../../common/Display';
 import {
-  PillTrigger,
+  TriggerPill,
   Select,
   Option,
   Group,
-  Action,
+  ActionButton,
   ListBoxFooter,
   ListBoxHeader,
   Search,
@@ -226,7 +226,7 @@ export const WithActionsInFooter: ComponentStory<typeof Select> = () => (
     placeholder="Select a option..."
     listBoxFooter={
       <ListBoxFooter>
-        <Action icon={<Icon.Add16 color="inherit" />}>Some Action</Action>
+        <ActionButton icon={<Icon.Add16 color="inherit" />}>Some Action</ActionButton>
       </ListBoxFooter>
     }
   >
@@ -310,7 +310,7 @@ export const WithSearchInHeader: ComponentStory<typeof Select> = () => {
 };
 
 export const WithPillShape: ComponentStory<typeof Select> = () => (
-  <Select placeholder="Select a option..." slots={{ trigger: PillTrigger }}>
+  <Select placeholder="Select a option..." slots={{ trigger: TriggerPill }}>
     {options.map((option) => (
       <Option key={option.value} value={option.value} label={option.label} />
     ))}
