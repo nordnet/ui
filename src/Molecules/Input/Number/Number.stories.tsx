@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { action, actions } from '@storybook/addon-actions';
-import { Box, OldIcon, Input } from '../../..';
+import { Box, OldIcon, Input, Modal } from '../../..';
 import { Display } from '../../../common/Display';
 
 const handlers = actions(
@@ -503,4 +503,42 @@ export const onAColouredBackground = () => (
 
 onAColouredBackground.story = {
   name: 'On a coloured background',
+};
+
+export const withLabelTooltipInsideModal = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const onOpen = () => {
+      setOpen(true);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <>
+        <button type="button" onClick={onOpen}>
+          Open modal
+        </button>
+        <Modal onClose={onClose} title="Dialog information" open={open}>
+          <Box mb={2}>
+            <Input.Number
+              id="unique-id"
+              label="Label"
+              placeholder="Placeholder"
+              labelTooltip="Tooltip content"
+              labelTooltipInModal
+            />
+          </Box>
+        </Modal>
+      </>
+    );
+  };
+  return <Example />;
+};
+
+withLabelTooltipInsideModal.story = {
+  name: 'With label tooltip inside modal',
 };
