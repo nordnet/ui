@@ -1,3 +1,10 @@
+## [12.41.4](https://github.com/nordnet/ui/compare/v12.41.3...v12.41.4) (2023-08-17)
+
+
+### Bug Fixes
+
+* labelTooltipInModal for all input components ([242a8ac](https://github.com/nordnet/ui/commit/242a8ac))
+
 ## [12.41.3](https://github.com/nordnet/ui/compare/v12.41.2...v12.41.3) (2023-08-14)
 
 
