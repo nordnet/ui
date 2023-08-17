@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
 import styled from 'styled-components';
 
-import { Box, Flexbox, OldIcon, Typography } from '../..';
+import { Box, Flexbox, Icon, Typography } from '../..';
 import { SelectionCard } from './SelectionCard';
 import { SelectionCard as Props } from './SelectionCard.types';
 
@@ -64,7 +64,7 @@ export const WithIcon = Template.bind({});
 WithIcon.args = {
   ...SelectionCardDefault,
   title: 'With Icon',
-  icon: <OldIcon.House size={8} />,
+  icon: <Icon.Book24 />,
 };
 
 export const withImage = () => {

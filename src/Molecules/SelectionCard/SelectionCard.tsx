@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Color from 'color';
 import styled, { css } from 'styled-components';
 
-import { Box, Card, Flexbox, OldIcon, Typography } from '../..';
+import { Box, Card, Flexbox, Icon, Typography } from '../..';
 import { isBoolean, isElement } from '../../common/utils';
 
 import { SelectionCardComponent } from './SelectionCard.types';
@@ -51,8 +51,8 @@ const CircleOutline = styled.div`
   border-radius: 100%;
   ${(p) => `
     border: 1px solid ${p.theme.color.selectionCardBorder};
-    height: ${p.theme.spacing.unit(5)}px;
-    width: ${p.theme.spacing.unit(5)}px;
+    height: ${p.theme.spacing.unit(4)}px;
+    width: ${p.theme.spacing.unit(4)}px;
   `}
 `;
 
@@ -197,7 +197,7 @@ export const SelectionCard: SelectionCardComponent = ({
           <Flexbox item>{tag && <Tag type="secondary">{tag}</Tag>}</Flexbox>
           <Box pt={4} pr={5}>
             {!disabled && !selected && outline && <CircleOutline />}
-            {!disabled && selected && <OldIcon.CheckMarkCircle fill={(t) => t.color.cta} />}
+            {!disabled && selected && <Icon.CheckCircleFill16 color={(t) => t.color.cta} />}
 
             <StyledInput
               type="checkbox"
