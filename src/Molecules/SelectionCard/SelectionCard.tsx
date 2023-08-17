@@ -13,7 +13,6 @@ const StyledFlexbox = styled(Flexbox)`
 
 const StyledImg = styled.img`
   width: 100%;
-
   border-top-left-radius: ${({ theme }) => theme.borderRadius8};
   border-top-right-radius: ${({ theme }) => theme.borderRadius8};
 `;

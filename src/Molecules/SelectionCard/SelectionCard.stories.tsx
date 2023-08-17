@@ -34,8 +34,6 @@ SelectionCardDefault.args = {
   outline: true,
   horizontal: false,
   error: false,
-  imageUrl: '',
-  imageAlt: '',
 };
 SelectionCardDefault.storyName = 'Default';
 
