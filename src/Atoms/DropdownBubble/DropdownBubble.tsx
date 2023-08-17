@@ -77,7 +77,7 @@ const getTrianglePositionAndColor = ({
 const getColor = (theme: Theme, defaultColor: string, color?: ColorFn) =>
   (color && color(theme)) || defaultColor;
 
-const triangleCss = css`
+const triangleCss = css<Props>`
   &:before {
     ${leftAndRightCss}
     ${commonTriangleCss}
