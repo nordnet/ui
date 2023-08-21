@@ -1,3 +1,10 @@
+## [12.41.5](https://github.com/nordnet/ui/compare/v12.41.4...v12.41.5) (2023-08-21)
+
+
+### Bug Fixes
+
+* 🐛 update faulty colors and upgrade design-token v ([0c8f319](https://github.com/nordnet/ui/commit/0c8f319))
+
 ## [12.41.4](https://github.com/nordnet/ui/compare/v12.41.3...v12.41.4) (2023-08-17)
 
 
