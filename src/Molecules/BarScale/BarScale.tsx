@@ -7,7 +7,10 @@ import { Box, Flexbox } from '../..';
 
 const Indicator = styled(Box)<BarProps>`
   height: ${(p) => p.theme.spacing.unit(p.$barHeight)}px;
-  background: ${(p) => (p.$isActive ? 'red' : 'blue')};
+  background: ${(p) =>
+    p.$isActive
+      ? p.theme.colorTokens.action.background_data_risk
+      : p.theme.colorTokens.neutral.background_strong};
 `;
 
 export const BarScale: React.FC<Props> = ({
