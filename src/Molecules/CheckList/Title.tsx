@@ -13,9 +13,9 @@ const Title: FC<TitleProps> = ({
   displayMode,
   showProgress = true,
   onViewAll = () => {},
-  onClose = () => {},
+  onClose,
 }): ReactElement => {
-  const defaultDescription = `${Math.round(100 * (percentageCompleted / maxPercentage))}% complete`;
+  const defaultDescription = `${Math.round(100 * (percentageCompleted / maxPercentage))}% completed`;
 
   return displayMode === 'DRAWER' ? (
     <Box py={4}>
