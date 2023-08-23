@@ -8,7 +8,7 @@ import Typography from '../../Atoms/Typography';
 import Button from '../Button';
 
 export default {
-  title: 'Molecules / Action Modal  ',
+  title: 'Molecules / Action Modal',
   parameters: {
     component: ActionModal,
   },
@@ -42,6 +42,23 @@ export const Default = () => {
             <Typography color={(t) => t.color.actionModalLink} type="secondary" weight="bold">
               skip tour
             </Typography>
+          </Button>
+        }
+      >
+        children are here
+      </ActionModal>
+    </StyledContainer>
+  );
+};
+
+export const withoutIllustration = () => {
+  return (
+    <StyledContainer>
+      <ActionModal
+        title="No Illustration"
+        confirmButton={
+          <Button variant="primary" onClick={action('onConfirm')}>
+            confirm
           </Button>
         }
       >
