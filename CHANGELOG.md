@@ -1,3 +1,10 @@
+# [12.42.0](https://github.com/nordnet/ui/compare/v12.41.6...v12.42.0) (2023-08-23)
+
+
+### Features
+
+* make illustration optional on Action Modal ([edff587](https://github.com/nordnet/ui/commit/edff587))
+
 ## [12.41.6](https://github.com/nordnet/ui/compare/v12.41.5...v12.41.6) (2023-08-23)
 
 
