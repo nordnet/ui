@@ -1,13 +1,12 @@
-/* eslint-disable react/require-default-props */
-import React, { ReactElement, ReactNode } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
-import Portal from '../../Atoms/Portal';
+import Box from '../../Atoms/Box';
 import Flexbox from '../../Atoms/Flexbox';
+import Portal from '../../Atoms/Portal';
 import Typography from '../../Atoms/Typography';
 import { useMedia } from '../../Atoms/Media';
-import Box from '../../Atoms/Box';
-import { IllustrationProps } from '../../Atoms/Illustration/IllustrationBase.types';
+import { Component } from './ActionModal.types';
 
 const Dialog = styled.div`
   position: relative;
@@ -59,18 +58,12 @@ const StyledButtonsFlexbox = styled(Flexbox)`
   pointer-events: auto;
 `;
 
-export const ActionModal = ({
+export const ActionModal: Component = ({
   illustration,
   title,
   children,
   cancelButton = null,
   confirmButton,
-}: {
-  illustration: ReactElement<IllustrationProps>;
-  title: string;
-  children: any;
-  cancelButton?: ReactNode;
-  confirmButton: ReactNode;
 }) => {
   const isSmallerScreen = useMedia((theme) => theme.media.lessThan(theme.breakpoints.md));
   const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.sm));
@@ -79,7 +72,7 @@ export const ActionModal = ({
       <StyledFlexbox container justifyContent={isMobile ? 'center' : 'flex-start'}>
         <Dialog>
           <Flexbox container direction="column" alignItems="center" gap={5}>
-            <Flexbox item>{illustration}</Flexbox>
+            {Boolean(illustration) && <Flexbox item>{illustration}</Flexbox>}
             <Flexbox item>
               <Typography type="title2" weight="bold" color={(t) => t.color.textLight}>
                 {title}
