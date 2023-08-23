@@ -6,6 +6,7 @@ export type Props = {
   hideLabel?: boolean;
   labelTooltip?: string;
   labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
+  labelTooltipInModal?: boolean;
   autoFocus?: boolean;
   name?: string;
   error?: string;

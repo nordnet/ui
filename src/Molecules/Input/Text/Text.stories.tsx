@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { actions } from '@storybook/addon-actions';
-import { Box, Button, Flexbox, OldIcon, Input } from '../../..';
+import { Box, Button, Flexbox, OldIcon, Input, Modal } from '../../..';
 import { Display } from '../../../common/Display';
 
 // TODO: A bit laggy for now, let's optimize later
@@ -481,4 +481,41 @@ export const mouseEvents = () => {
 
 mouseEvents.story = {
   name: 'MouseEvents',
+};
+
+export const withLabelTooltipInsideModal = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const onOpen = () => {
+      setOpen(true);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <>
+        <button type="button" onClick={onOpen}>
+          Open modal
+        </button>
+        <Modal onClose={onClose} title="Dialog information" open={open}>
+          <Box mb={2}>
+            <Input.Text
+              label="Label"
+              placeholder="Placeholder"
+              labelTooltipInModal
+              labelTooltip="Tooltip content"
+            />
+          </Box>
+        </Modal>
+      </>
+    );
+  };
+  return <Example />;
+};
+
+withLabelTooltipInsideModal.story = {
+  name: 'With label tooltip inside modal',
 };

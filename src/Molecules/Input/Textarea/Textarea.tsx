@@ -108,6 +108,7 @@ export const Textarea: React.FC<Props> & {
           'label',
           'labelTooltip',
           'labelTooltipPosition',
+          'labelTooltipInModal',
           'width',
         ],
         props,
