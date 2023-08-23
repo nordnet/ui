@@ -1,3 +1,12 @@
+## [12.41.6](https://github.com/nordnet/ui/compare/v12.41.5...v12.41.6) (2023-08-23)
+
+
+### Bug Fixes
+
+* dismiss button color change ([0755cb9](https://github.com/nordnet/ui/commit/0755cb9))
+* remove defaultDescription from title ([8a33d74](https://github.com/nordnet/ui/commit/8a33d74))
+* ui fixes for Checklist ([fe3aac4](https://github.com/nordnet/ui/commit/fe3aac4))
+
 ## [12.41.5](https://github.com/nordnet/ui/compare/v12.41.4...v12.41.5) (2023-08-21)
 
 
