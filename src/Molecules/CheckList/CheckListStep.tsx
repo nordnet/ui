@@ -54,7 +54,13 @@ const CheckListStep: FC<CheckListStepProps> = ({
   /* Buttons in drawer */
   const buttons = isDrawer && taskState === 'INCOMPLETE' && (
     <TwoButtonBox>
-      <Button variant="neutral" size="m" fullWidth onClick={() => setDismissMode(true)}>
+      <Button
+        variant="neutral"
+        color={(t) => t.colorTokens.action.text_default}
+        size="m"
+        fullWidth
+        onClick={() => setDismissMode(true)}
+      >
         {dismissLabel}
       </Button>
 
