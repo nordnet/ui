@@ -1,7 +1,7 @@
 // Button.stories.ts|tsx
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Icon, Typography, Flag, Flexbox, FormField } from '../..';
+import { Icon, Typography, Flag, Flexbox, FormField, Button, Box } from '../..';
 import { Display } from '../../common/Display';
 import {
   TriggerPill,
@@ -316,3 +316,31 @@ export const WithPillShape: ComponentStory<typeof Select> = () => (
     ))}
   </Select>
 );
+
+export const WithForwardedRef: ComponentStory<typeof Select> = () => {
+  const buttonRef = useRef<HTMLButtonElement | null>(null);
+
+  const focusButton = () => {
+    buttonRef.current?.focus();
+  };
+
+  const toggleOpen = () => {
+    buttonRef.current?.click();
+  };
+
+  return (
+    <div>
+      <Flexbox container gap={2}>
+        <Button onClick={focusButton}>Focus</Button>
+        <Button onClick={toggleOpen}>Toggle Open</Button>
+      </Flexbox>
+      <Box mt={2}>
+        <Select placeholder="Select a option..." ref={buttonRef}>
+          {options.map((option) => (
+            <Option key={option.value} value={option.value} label={option.label} />
+          ))}
+        </Select>
+      </Box>
+    </div>
+  );
+};

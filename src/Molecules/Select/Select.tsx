@@ -13,9 +13,9 @@ import { Props } from './Select.types';
 import { ValueDisplay } from './ValueDisplay';
 import { Trigger as DefaultTrigger } from './Trigger';
 
-const SelectComponent = function Select(
+export const Select = forwardRef<HTMLButtonElement, Props>(function SelectComponent(
   props: Props,
-  forwardedRef: ForwardedRef<HTMLButtonElement>,
+  ref: ForwardedRef<HTMLButtonElement>,
 ) {
   const {
     children,
@@ -79,7 +79,7 @@ const SelectComponent = function Select(
           hasValue={!!value}
           {...slotProps.trigger}
           {...getButtonProps()}
-          ref={forwardedRef}
+          ref={ref}
         >
           {valueDisplay || (
             <ValueDisplay
@@ -105,7 +105,4 @@ const SelectComponent = function Select(
       {name && value ? <HiddenSelect name={name} multiple={multiple} value={value} /> : null}
     </>
   );
-};
-
-// Wrap the component with forwardRef
-export const Select = forwardRef<HTMLButtonElement, Props>(SelectComponent);
+});

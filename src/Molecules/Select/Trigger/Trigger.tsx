@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { Props } from './Trigger.types';
 import { Icon } from '../../..';
@@ -55,8 +55,11 @@ const StyledButton = styled(CleanNormalizedButton)<{
   }
 `;
 
-export function Trigger(props: Props) {
+export const Trigger = forwardRef<HTMLButtonElement, Props>(function TriggerComponent(
+  props: Props,
+  ref,
+) {
   const { size, ...rest } = props;
 
-  return <StyledButton $size={size} {...rest} />;
-}
+  return <StyledButton $size={size} {...rest} ref={ref} />;
+});
