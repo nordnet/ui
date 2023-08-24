@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { Props } from './TriggerPill.types';
 import { Button } from '../../..';
@@ -13,11 +13,16 @@ const StyledPill = styled(Button.Pill)`
   }
 `;
 
-export function TriggerPill({ children, ...rest }: Props) {
+export const TriggerPill = forwardRef<HTMLButtonElement, Props>(function TriggerComponent(
+  props: Props,
+  ref,
+) {
   // ! It's important to use the passed in children from props because it's connected to the useSelect hook in Select.tsx
+  const { children, ...rest } = props;
+
   return (
-    <StyledPill variant="secondary" size="m" fullWidth {...rest}>
+    <StyledPill variant="secondary" size="m" fullWidth ref={ref} {...rest}>
       {children}
     </StyledPill>
   );
-}
+});

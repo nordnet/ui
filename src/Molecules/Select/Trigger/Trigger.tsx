@@ -61,5 +61,5 @@ export const Trigger = forwardRef<HTMLButtonElement, Props>(function TriggerComp
 ) {
   const { size, ...rest } = props;
 
-  return <StyledButton $size={size} {...rest} ref={ref} />;
+  return <StyledButton $size={size} ref={ref} {...rest} />;
 });
