@@ -2,9 +2,6 @@ import styled from 'styled-components';
 import { Props } from './Select.types';
 import { Icon, units } from '../..';
 
-const TRIANGLE_SIZE = 10;
-const BORDER_SIZE = 1;
-
 export const ellipsis = `
   white-space: nowrap;
   overflow: hidden;
@@ -21,38 +18,6 @@ export const StyledChevronDown8 = styled(Icon.ChevronDown8)`
   margin-left: auto;
 `;
 
-export const Arrow = styled.div`
-  position: absolute;
-  z-index: 1;
-  left: 16px;
-  bottom: calc(100% - 1px);
-
-  &::before,
-  &::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  &::before {
-    border-left: ${TRIANGLE_SIZE}px solid transparent;
-    border-right: ${TRIANGLE_SIZE}px solid transparent;
-    border-bottom: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
-  }
-
-  &::after {
-    left: ${BORDER_SIZE * 2}px;
-    top: ${BORDER_SIZE * 2}px;
-    border-left: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
-    border-right: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
-    border-bottom: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid
-      ${(p) => p.theme.color.bubbleBackground};
-  }
-`;
 export const ListContainer = styled.div<{ $hidden: Props['hidden'] }>`
   position: absolute;
   width: 100%;
@@ -68,7 +33,7 @@ export const ListContainer = styled.div<{ $hidden: Props['hidden'] }>`
 `;
 
 export const ListboxContainer = styled.div`
-  margin: ${TRIANGLE_SIZE}px 0 0 0;
+  margin-top: ${units(1)}px;
   background: ${({ theme }) => theme.colorTokens.neutral.background_default};
   border: 1px solid ${({ theme }) => theme.colorTokens.neutral.border_default};
   box-sizing: border-box;

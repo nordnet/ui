@@ -3,7 +3,6 @@ import useSelect, { SelectProvider } from '@mui/base/useSelect';
 import { FadedScroll } from '../..';
 import { HiddenSelect } from './HiddenSelect';
 import {
-  Arrow,
   ListContainer,
   Listbox,
   ListboxContainer,
@@ -88,7 +87,6 @@ export function Select({
           <StyledChevronDown8 color={(t) => t.colorTokens.neutral.icon_default} />
         </Trigger>
         <ListContainer aria-hidden={!listboxVisible} $hidden={!listboxVisible}>
-          <Arrow />
           <ListboxContainer>
             {listBoxHeader || null}
             <FadedScroll maxHeight={50}>
