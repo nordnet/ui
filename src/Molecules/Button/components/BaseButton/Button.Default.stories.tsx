@@ -21,8 +21,11 @@ export const documentation = () => (
 
 export const defaultUsage = () => <Button onClick={action('clicked')}>Button</Button>;
 
-defaultUsage.story = {
-  name: 'Default usage',
+defaultUsage.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?node-id=24-1267&t=PqHHNLbAmdCspNhn-4',
+  },
 };
 
 export const buttonWithDifferentVariants = () => (
@@ -96,8 +99,11 @@ export const buttonWithDifferentVariants = () => (
   </>
 );
 
-buttonWithDifferentVariants.story = {
-  name: 'Button with different variants',
+buttonWithDifferentVariants.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=9711-35207&t=xQAWIiiagQTtD1uM-4',
+  },
 };
 
 export const disabledButtonWithDifferentVariants = () => (
@@ -140,8 +146,11 @@ export const disabledButtonWithDifferentVariants = () => (
   />
 );
 
-disabledButtonWithDifferentVariants.story = {
-  name: 'Disabled Button with different variants',
+disabledButtonWithDifferentVariants.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=9711-35207&t=xQAWIiiagQTtD1uM-4',
+  },
 };
 
 export const buttonPrimaryWithColors = () => (
@@ -176,8 +185,11 @@ export const buttonPrimaryWithColors = () => (
   />
 );
 
-buttonPrimaryWithColors.story = {
-  name: 'Button primary with colors',
+buttonPrimaryWithColors.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=7151-47355&t=xQAWIiiagQTtD1uM-4',
+  },
 };
 
 export const buttonSecondaryWithColors = () => (
@@ -203,9 +215,11 @@ export const buttonSecondaryWithColors = () => (
     ]}
   />
 );
-
-buttonSecondaryWithColors.story = {
-  name: 'Button secondary with colors',
+buttonSecondaryWithColors.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=24-1269&t=xQAWIiiagQTtD1uM-4',
+  },
 };
 
 export const buttonWithSizeModified = () => (
@@ -256,9 +270,11 @@ export const buttonWithSizeModified = () => (
     />
   </>
 );
-
-buttonWithSizeModified.story = {
-  name: 'Button with size modified',
+buttonWithSizeModified.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=9711-35207&t=xQAWIiiagQTtD1uM-4',
+  },
 };
 
 export const buttonWithFocusOn = () => {
@@ -283,10 +299,6 @@ export const buttonWithFocusOn = () => {
     );
   };
   return <FocusExample />;
-};
-
-buttonWithFocusOn.story = {
-  name: 'Button which sets focus on another button',
 };
 
 export const buttonWithLoadingState = () => {
@@ -402,9 +414,11 @@ export const buttonWithLoadingState = () => {
   };
   return <LoadingExample />;
 };
-
-buttonWithLoadingState.story = {
-  name: 'Button with loading state',
+buttonWithLoadingState.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=132-76&t=xQAWIiiagQTtD1uM-4',
+  },
 };
 
 export const buttonWithLoadingStateWithoutTheSpinnerAnimationDelay = () => (
@@ -412,9 +426,11 @@ export const buttonWithLoadingStateWithoutTheSpinnerAnimationDelay = () => (
     Button
   </Button>
 );
-
-buttonWithLoadingStateWithoutTheSpinnerAnimationDelay.story = {
-  name: 'Button with loading state without the spinner animation delay',
+buttonWithLoadingStateWithoutTheSpinnerAnimationDelay.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=132-76&t=xQAWIiiagQTtD1uM-4',
+  },
 };
 
 export const buttonWithTypeModified = () => (
@@ -440,19 +456,11 @@ export const buttonWithTypeModified = () => (
   />
 );
 
-buttonWithTypeModified.story = {
-  name: 'Button with type modified',
-};
-
 export const buttonThatIsFullWidth = () => (
   <Button onClick={action('clicked')} fullWidth>
     Button
   </Button>
 );
-
-buttonThatIsFullWidth.story = {
-  name: 'Button that is full width',
-};
 
 export const buttonsComposedInAGroup = () => (
   <Flexbox container gutter={2}>
@@ -468,7 +476,3 @@ export const buttonsComposedInAGroup = () => (
     </Flexbox>
   </Flexbox>
 );
-
-buttonsComposedInAGroup.story = {
-  name: 'Buttons composed in a group',
-};

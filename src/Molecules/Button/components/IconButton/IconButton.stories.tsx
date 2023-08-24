@@ -24,6 +24,9 @@ export const defaultUsage = () => (
   </Button.Icon>
 );
 
-defaultUsage.story = {
-  name: 'Default usage',
+defaultUsage.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=7961-39983&t=xQAWIiiagQTtD1uM-4',
+  },
 };

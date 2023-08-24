@@ -36,7 +36,12 @@ export const defaultStory = () => (
     </AccordionItem>
   </Accordion>
 );
-
+defaultStory.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=646-11700&t=qE01LCJKWSkGeiiO-4',
+  },
+};
 defaultStory.story = {
   name: 'Default',
 };
@@ -103,3 +108,9 @@ export const withBadges = () => (
     </Accordion>
   </Box>
 );
+withBadges.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=9663-41914&t=qE01LCJKWSkGeiiO-4',
+  },
+};

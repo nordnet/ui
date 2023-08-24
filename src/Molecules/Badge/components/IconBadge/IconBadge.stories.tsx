@@ -85,3 +85,10 @@ export const DefaultAndCommonUseCases = () => {
 DefaultAndCommonUseCases.story = {
   name: 'Default and common use cases',
 };
+
+DefaultAndCommonUseCases.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=9663-42535&t=qE01LCJKWSkGeiiO-4',
+  },
+};

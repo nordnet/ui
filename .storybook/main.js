@@ -13,6 +13,7 @@ module.exports = {
     '@storybook/addon-links',
     'storybook-addon-intl',
     'storybook-dark-mode',
+    'storybook-addon-designs',
   ],
   framework: '@storybook/react',
   core: {

@@ -81,3 +81,9 @@ export const DefaultUse = () => {
 DefaultUse.story = {
   name: 'Default and common use cases',
 };
+DefaultUse.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/TeWDXS0Uoxqg9I7WN8UQq2/Molecules---Web?type=design&node-id=9677-43638&t=qE01LCJKWSkGeiiO-4',
+  },
+};
