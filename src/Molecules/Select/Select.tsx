@@ -53,17 +53,20 @@ export function Select({
   }, [listboxVisible]);
 
   const Trigger = slots.trigger || DefaultTrigger;
-
+  // Needs to be done for a 1.0 release
+  // TODO: remove arrow from dropdown to input field
   // TODO: write tests, in forms as well
-  // TODO: investigate if the wide select with columns is needed, see figma
-  // TODO: Mobile
-  // TODO: Badge dropdown
-  // TODO: Pill dropdown
-  // TODO: Loading state?
-  // TODO: With checkboxes?
+  // TODO: Mobile. Should it have the handle (-) in the top?. Devider in the bottom, should it be indented? Should the title equal the label?
+  // TODO: With radio looking checkmarks?
   // TODO: forward ref to Select component
+  // TODO: Dropdown should not close when clicking the search or the toggle all button in the header (maybe footer?).
+
+  // 2.0
+  // TODO: Pill dropdown
+  // TODO: Badge dropdown
+  // TODO: Loading state?
+  // TODO: investigate if the wide select with columns is needed, see figma
   // TODO: Do we want to use popper for the dropdown?
-  // TODO: Do not allow custom slots.trigger to pass children prop, it will override Triggers children from this file
 
   return (
     <>

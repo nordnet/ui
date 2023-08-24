@@ -13,6 +13,11 @@ const StyledPill = styled(Button.Pill)`
   }
 `;
 
-export function TriggerPill(props: Props) {
-  return <StyledPill variant="secondary" size="m" fullWidth {...props} />;
+export function TriggerPill({ children, ...rest }: Props) {
+  // ! It's important to use the passed in children from props because it's connected to the useSelect hook in Select.tsx
+  return (
+    <StyledPill variant="secondary" size="m" fullWidth {...rest}>
+      {children}
+    </StyledPill>
+  );
 }
