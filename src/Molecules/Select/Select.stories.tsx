@@ -185,7 +185,7 @@ export const MultiSelect: ComponentStory<typeof Select> = () => {
       }
     >
       {options.map((option) => (
-        <Option key={option.value} value={option.value} label={option.label} />
+        <Option key={option.value} value={option.value} label={option.label} multiple />
       ))}
     </Select>
   );
@@ -209,12 +209,12 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
     >
       <Group label="First Group">
         {options.map((option) => (
-          <Option key={option.value} value={option.value} label={option.label} />
+          <Option key={option.value} value={option.value} label={option.label} multiple />
         ))}
       </Group>
       <Group label="Second Group">
         {otherOptions.map((option) => (
-          <Option key={option.value} value={option.value} label={option.label} />
+          <Option key={option.value} value={option.value} label={option.label} multiple />
         ))}
       </Group>
     </Select>

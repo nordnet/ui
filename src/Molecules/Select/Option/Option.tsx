@@ -33,8 +33,23 @@ const Item = styled.li<{ $highlighted: boolean }>`
   }
 `;
 
+const CheckmarkBox = styled.div<{ $selected?: boolean }>`
+  width: ${units(4)}px;
+  height: ${units(4)}px;
+  border: 1px solid
+    ${({ $selected, theme }) =>
+      $selected
+        ? theme.colorTokens.action.background_default
+        : theme.colorTokens.neutral.border_default};
+  background: ${({ $selected, theme }) =>
+    $selected ? theme.colorTokens.action.background_default : 'transparent'};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export function Option(props: Props) {
-  const { children, className, disabled = false, label, value } = props;
+  const { children, className, disabled = false, label, value, multiple } = props;
   const { getRootProps, highlighted, selected } = useOption({
     value,
     disabled,
@@ -53,11 +68,15 @@ export function Option(props: Props) {
         <StyledFlex item>
           {children || <StyledTypography type="secondary">{label}</StyledTypography>}
         </StyledFlex>
-        {selected && (
-          <Flexbox item>
-            <Icon.Check16 color={(t) => t.colorTokens.action.icon_default} />
-          </Flexbox>
-        )}
+        <Flexbox item>
+          {multiple ? (
+            <CheckmarkBox $selected={selected}>
+              {selected && <Icon.Check12 color={(t) => t.colorTokens.neutral.icon_strong} />}
+            </CheckmarkBox>
+          ) : (
+            selected && <Icon.CheckCircleFill16 color={(t) => t.colorTokens.action.icon_default} />
+          )}
+        </Flexbox>
       </Flexbox>
     </Item>
   );
