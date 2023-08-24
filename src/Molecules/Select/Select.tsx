@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React, { ForwardedRef, forwardRef } from 'react';
 import useSelect, { SelectProvider } from '@mui/base/useSelect';
 import { FadedScroll } from '../..';
 import { HiddenSelect } from './HiddenSelect';
@@ -13,7 +13,10 @@ import { Props } from './Select.types';
 import { ValueDisplay } from './ValueDisplay';
 import { Trigger as DefaultTrigger } from './Trigger';
 
-export const Select = forwardRef<HTMLButtonElement>(function Select(props: Props, ref) {
+const SelectComponent = function Select(
+  props: Props,
+  forwardedRef: ForwardedRef<HTMLButtonElement>,
+) {
   const {
     children,
     disabled,
@@ -74,9 +77,9 @@ export const Select = forwardRef<HTMLButtonElement>(function Select(props: Props
           size={size}
           hasError={hasError}
           hasValue={!!value}
-          ref={ref}
           {...slotProps.trigger}
           {...getButtonProps()}
+          ref={forwardedRef}
         >
           {valueDisplay || (
             <ValueDisplay
@@ -102,4 +105,7 @@ export const Select = forwardRef<HTMLButtonElement>(function Select(props: Props
       {name && value ? <HiddenSelect name={name} multiple={multiple} value={value} /> : null}
     </>
   );
-});
+};
+
+// Wrap the component with forwardRef
+export const Select = forwardRef<HTMLButtonElement, Props>(SelectComponent);
