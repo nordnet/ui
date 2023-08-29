@@ -71,10 +71,19 @@ export const ActionModal: Component = ({
     <Portal>
       <StyledFlexbox container justifyContent={isMobile ? 'center' : 'flex-start'}>
         <Dialog>
-          <Flexbox container direction="column" alignItems="center" gap={5}>
+          <Flexbox
+            container
+            direction="column"
+            alignItems={illustration ? 'center' : 'flex-start'}
+            gap={5}
+          >
             {Boolean(illustration) && <Flexbox item>{illustration}</Flexbox>}
             <Flexbox item>
-              <Typography type="title2" weight="bold" color={(t) => t.color.textLight}>
+              <Typography
+                type="title2"
+                weight="bold"
+                color={(t) => t.colorTokens.neutral.text_medium}
+              >
                 {title}
               </Typography>
             </Flexbox>

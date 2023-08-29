@@ -33,13 +33,17 @@ export const Default = () => {
         }
         title="title"
         confirmButton={
-          <Button variant="primary" onClick={action('onConfirm')}>
+          <Button variant="primary" onClick={action('onConfirm')} size="l">
             confirm
           </Button>
         }
         cancelButton={
           <Button variant="neutral" onClick={action('onCancel')}>
-            <Typography color={(t) => t.color.actionModalLink} type="secondary" weight="bold">
+            <Typography
+              color={(t) => t.colorTokens.action.text_focus}
+              type="secondary"
+              weight="bold"
+            >
               skip tour
             </Typography>
           </Button>
@@ -57,7 +61,7 @@ export const withoutIllustration = () => {
       <ActionModal
         title="No Illustration"
         confirmButton={
-          <Button variant="primary" onClick={action('onConfirm')}>
+          <Button variant="primary" onClick={action('onConfirm')} size="l">
             confirm
           </Button>
         }
@@ -80,7 +84,7 @@ export const withConfirmButtonOnly = () => {
         }
         title="title"
         confirmButton={
-          <Button variant="primary" onClick={action('onConfirm')}>
+          <Button variant="primary" onClick={action('onConfirm')} size="l">
             confirm
           </Button>
         }
