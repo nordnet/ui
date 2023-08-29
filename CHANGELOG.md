@@ -1,3 +1,10 @@
+## [12.42.1](https://github.com/nordnet/ui/compare/v12.42.0...v12.42.1) (2023-08-29)
+
+
+### Bug Fixes
+
+* left align title if no illustration, update colors ([7f1ffdc](https://github.com/nordnet/ui/commit/7f1ffdc))
+
 # [12.42.0](https://github.com/nordnet/ui/compare/v12.41.6...v12.42.0) (2023-08-23)
 
 
