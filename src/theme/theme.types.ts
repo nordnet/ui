@@ -6,6 +6,7 @@ export type ThemeConfig = {
   a11yColors?: boolean;
   darkColors?: boolean;
   tokensTheme?: 'dark' | 'light' | 'a11y';
+  featureToggles?: Record<string, boolean>;
 };
 type Unit = {
   (times: number): number;

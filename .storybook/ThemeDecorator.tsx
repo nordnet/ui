@@ -14,6 +14,9 @@ const getTheme = (darkMode) => {
     themes[key] = createTheme({
       darkColors: darkMode,
       ...(darkMode ? { tokensTheme: 'dark' } : {}),
+      featureToggles: {
+        roundedCorners: true,
+      },
     });
   }
   return themes[key];
