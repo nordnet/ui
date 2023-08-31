@@ -1,3 +1,10 @@
+# [12.43.0](https://github.com/nordnet/ui/compare/v12.42.1...v12.43.0) (2023-08-31)
+
+
+### Features
+
+* add rounded corners support ([#1411](https://github.com/nordnet/ui/issues/1411)) ([bc1f8e0](https://github.com/nordnet/ui/commit/bc1f8e0))
+
 # [12.43.0-beta.2](https://github.com/nordnet/ui/compare/v12.43.0-beta.1...v12.43.0-beta.2) (2023-08-31)
 
 
