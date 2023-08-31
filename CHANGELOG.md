@@ -1,3 +1,10 @@
+# [12.43.0-beta.2](https://github.com/nordnet/ui/compare/v12.43.0-beta.1...v12.43.0-beta.2) (2023-08-31)
+
+
+### Bug Fixes
+
+* remove border-radius prop from DropdownBubble ([cebd372](https://github.com/nordnet/ui/commit/cebd372))
+
 # [12.43.0-beta.1](https://github.com/nordnet/ui/compare/v12.42.1...v12.43.0-beta.1) (2023-08-31)
 
 
