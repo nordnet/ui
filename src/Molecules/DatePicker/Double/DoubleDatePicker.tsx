@@ -34,6 +34,7 @@ const StyledDropdownBubble = styled(DropdownBubble)`
   z-index: ${({ theme }) => theme.zIndex.overlay};
   box-sizing: border-box;
   top: -10px;
+  border-radius: ${({ theme }) => theme.borderRadius8};
 
   &:after,
   &:before {
@@ -206,7 +207,7 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, DoubleDatePickerProps>
       </Flexbox>
       {open ? (
         <StyledDropdownBubbleWrapper>
-          <StyledDropdownBubble borderRadius={8}>{datepicker}</StyledDropdownBubble>
+          <StyledDropdownBubble>{datepicker}</StyledDropdownBubble>
         </StyledDropdownBubbleWrapper>
       ) : null}
     </div>

@@ -180,7 +180,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
       />
       {open && !isFullscreenMode(props, isSmallScreen) && (
         <StyledDropdownBubbleWrapper data-testid="styled-dropdown-bubble-wrapper">
-          <StyledDropdownBubble borderRadius={8}>
+          <StyledDropdownBubble>
             <Box my={3} mx={2}>
               {datepicker}
               {clearDateButton ? (
