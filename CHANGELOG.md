@@ -1,3 +1,10 @@
+# [12.42.0-beta.4](https://github.com/nordnet/ui/compare/v12.42.0-beta.3...v12.42.0-beta.4) (2023-08-31)
+
+
+### Features
+
+* feature toggle border-radius in theme ([#1410](https://github.com/nordnet/ui/issues/1410)) ([6e08b31](https://github.com/nordnet/ui/commit/6e08b31))
+
 # [12.42.0-beta.3](https://github.com/nordnet/ui/compare/v12.42.0-beta.2...v12.42.0-beta.3) (2023-08-31)
 
 
