@@ -1,3 +1,21 @@
+# [12.42.0-beta.3](https://github.com/nordnet/ui/compare/v12.42.0-beta.2...v12.42.0-beta.3) (2023-08-31)
+
+
+### Bug Fixes
+
+* 🐛 Pass HTML props to CardWithTitle ([fe4e7c0](https://github.com/nordnet/ui/commit/fe4e7c0))
+* 🐛 rounded corners on vairant with image and in mobile ([1f98ef8](https://github.com/nordnet/ui/commit/1f98ef8))
+* 🐛 update faulty colors and upgrade design-token v ([0c8f319](https://github.com/nordnet/ui/commit/0c8f319))
+* add 4px border radius to accordion item (UC-62) ([514afa3](https://github.com/nordnet/ui/commit/514afa3))
+* buy/sell button in table (UC-61) ([ba0b9f0](https://github.com/nordnet/ui/commit/ba0b9f0))
+* dismiss button color change ([0755cb9](https://github.com/nordnet/ui/commit/0755cb9))
+* input field tooltip when in modal ([cd2349f](https://github.com/nordnet/ui/commit/cd2349f))
+* labelTooltipInModal for all input components ([242a8ac](https://github.com/nordnet/ui/commit/242a8ac))
+* remove defaultDescription from title ([8a33d74](https://github.com/nordnet/ui/commit/8a33d74))
+* rounded corners on progress bar in progress indicator (UC-59) ([a3723da](https://github.com/nordnet/ui/commit/a3723da))
+* ui fixes for Checklist ([fe3aac4](https://github.com/nordnet/ui/commit/fe3aac4))
+* use transient props ($propName) instead of shouldforwardprop ([#1396](https://github.com/nordnet/ui/issues/1396)) ([b075a01](https://github.com/nordnet/ui/commit/b075a01))
+
 ## [12.41.6](https://github.com/nordnet/ui/compare/v12.41.5...v12.41.6) (2023-08-23)
 
 
