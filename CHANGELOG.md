@@ -1,206 +1,183 @@
-# [12.42.0-beta.3](https://github.com/nordnet/ui/compare/v12.42.0-beta.2...v12.42.0-beta.3) (2023-08-31)
-
+## [12.42.1](https://github.com/nordnet/ui/compare/v12.42.0...v12.42.1) (2023-08-29)
 
 ### Bug Fixes
 
-* 🐛 Pass HTML props to CardWithTitle ([fe4e7c0](https://github.com/nordnet/ui/commit/fe4e7c0))
-* 🐛 rounded corners on vairant with image and in mobile ([1f98ef8](https://github.com/nordnet/ui/commit/1f98ef8))
-* 🐛 update faulty colors and upgrade design-token v ([0c8f319](https://github.com/nordnet/ui/commit/0c8f319))
-* add 4px border radius to accordion item (UC-62) ([514afa3](https://github.com/nordnet/ui/commit/514afa3))
-* buy/sell button in table (UC-61) ([ba0b9f0](https://github.com/nordnet/ui/commit/ba0b9f0))
-* dismiss button color change ([0755cb9](https://github.com/nordnet/ui/commit/0755cb9))
-* input field tooltip when in modal ([cd2349f](https://github.com/nordnet/ui/commit/cd2349f))
-* labelTooltipInModal for all input components ([242a8ac](https://github.com/nordnet/ui/commit/242a8ac))
-* remove defaultDescription from title ([8a33d74](https://github.com/nordnet/ui/commit/8a33d74))
-* rounded corners on progress bar in progress indicator (UC-59) ([a3723da](https://github.com/nordnet/ui/commit/a3723da))
-* ui fixes for Checklist ([fe3aac4](https://github.com/nordnet/ui/commit/fe3aac4))
-* use transient props ($propName) instead of shouldforwardprop ([#1396](https://github.com/nordnet/ui/issues/1396)) ([b075a01](https://github.com/nordnet/ui/commit/b075a01))
+- left align title if no illustration, update colors ([7f1ffdc](https://github.com/nordnet/ui/commit/7f1ffdc))
+
+# [12.42.0](https://github.com/nordnet/ui/compare/v12.41.6...v12.42.0) (2023-08-23)
+
+### Features
+
+- make illustration optional on Action Modal ([edff587](https://github.com/nordnet/ui/commit/edff587))
 
 ## [12.41.6](https://github.com/nordnet/ui/compare/v12.41.5...v12.41.6) (2023-08-23)
 
-
 ### Bug Fixes
 
-* dismiss button color change ([0755cb9](https://github.com/nordnet/ui/commit/0755cb9))
-* remove defaultDescription from title ([8a33d74](https://github.com/nordnet/ui/commit/8a33d74))
-* ui fixes for Checklist ([fe3aac4](https://github.com/nordnet/ui/commit/fe3aac4))
+- dismiss button color change ([0755cb9](https://github.com/nordnet/ui/commit/0755cb9))
+- remove defaultDescription from title ([8a33d74](https://github.com/nordnet/ui/commit/8a33d74))
+- ui fixes for Checklist ([fe3aac4](https://github.com/nordnet/ui/commit/fe3aac4))
 
 ## [12.41.5](https://github.com/nordnet/ui/compare/v12.41.4...v12.41.5) (2023-08-21)
 
-
 ### Bug Fixes
 
-* 🐛 update faulty colors and upgrade design-token v ([0c8f319](https://github.com/nordnet/ui/commit/0c8f319))
+- 🐛 update faulty colors and upgrade design-token v ([0c8f319](https://github.com/nordnet/ui/commit/0c8f319))
 
 ## [12.41.4](https://github.com/nordnet/ui/compare/v12.41.3...v12.41.4) (2023-08-17)
 
-
 ### Bug Fixes
 
-* labelTooltipInModal for all input components ([242a8ac](https://github.com/nordnet/ui/commit/242a8ac))
+- labelTooltipInModal for all input components ([242a8ac](https://github.com/nordnet/ui/commit/242a8ac))
 
 ## [12.41.3](https://github.com/nordnet/ui/compare/v12.41.2...v12.41.3) (2023-08-14)
 
-
 ### Bug Fixes
 
-* input field tooltip when in modal ([cd2349f](https://github.com/nordnet/ui/commit/cd2349f))
+- input field tooltip when in modal ([cd2349f](https://github.com/nordnet/ui/commit/cd2349f))
 
 ## [12.41.2](https://github.com/nordnet/ui/compare/v12.41.1...v12.41.2) (2023-08-14)
 
-
 ### Bug Fixes
 
-* use transient props ($propName) instead of shouldforwardprop ([#1396](https://github.com/nordnet/ui/issues/1396)) ([b075a01](https://github.com/nordnet/ui/commit/b075a01))
+- use transient props ($propName) instead of shouldforwardprop ([#1396](https://github.com/nordnet/ui/issues/1396)) ([b075a01](https://github.com/nordnet/ui/commit/b075a01))
 
 ## [12.41.1](https://github.com/nordnet/ui/compare/v12.41.0...v12.41.1) (2023-08-14)
 
-
 ### Bug Fixes
 
-* 🐛 Pass HTML props to CardWithTitle ([fe4e7c0](https://github.com/nordnet/ui/commit/fe4e7c0))
+- 🐛 Pass HTML props to CardWithTitle ([fe4e7c0](https://github.com/nordnet/ui/commit/fe4e7c0))
 
 # [12.42.0-beta.2](https://github.com/nordnet/ui/compare/v12.42.0-beta.1...v12.42.0-beta.2) (2023-08-10)
 
-
 ### Bug Fixes
 
-* no border radius on neutral buttons UC-60 ([6e90a46](https://github.com/nordnet/ui/commit/6e90a46))
+- no border radius on neutral buttons UC-60 ([6e90a46](https://github.com/nordnet/ui/commit/6e90a46))
 
 # [12.42.0-beta.1](https://github.com/nordnet/ui/compare/v12.41.0...v12.42.0-beta.1) (2023-08-10)
 
-
 ### Bug Fixes
 
-* 🐛 add 2px border radius to Tooltip for Slider ([f3e0aa9](https://github.com/nordnet/ui/commit/f3e0aa9))
-* 🐛 add 8px height to border variant for Card ([d3100b1](https://github.com/nordnet/ui/commit/d3100b1))
-* 🐛 add border radius as prop ([c038e06](https://github.com/nordnet/ui/commit/c038e06))
-* 🐛 add rounded corners to Input.Select ([72e479a](https://github.com/nordnet/ui/commit/72e479a))
-* 🐛 change to consts instead of functions ([4eadb36](https://github.com/nordnet/ui/commit/4eadb36))
-* 🐛 fix missing replacement ([e0fae4e](https://github.com/nordnet/ui/commit/e0fae4e))
-* 🐛 fix radius in desktop and mobile ([f5b7e94](https://github.com/nordnet/ui/commit/f5b7e94))
-* 🐛 PageHeaderCard should not have border radius ([2f207da](https://github.com/nordnet/ui/commit/2f207da))
-* 🐛 remove blue border from collapsible card ([be27c1b](https://github.com/nordnet/ui/commit/be27c1b))
-* 🐛 remove git alias opsie ([cc18512](https://github.com/nordnet/ui/commit/cc18512))
-* 🐛 remove grey border around card when color bar variant ([3b5b74d](https://github.com/nordnet/ui/commit/3b5b74d))
-* 🐛 smaller border and no radius when in drawer or mobile ([ec06202](https://github.com/nordnet/ui/commit/ec06202))
-* 🐛 use set functions for border-radius ([12db60b](https://github.com/nordnet/ui/commit/12db60b))
-* add border radius to styled link on button ([a987bfb](https://github.com/nordnet/ui/commit/a987bfb))
-* no corner radius on mobile cards, UC-57 ([6509650](https://github.com/nordnet/ui/commit/6509650))
-
+- 🐛 add 2px border radius to Tooltip for Slider ([f3e0aa9](https://github.com/nordnet/ui/commit/f3e0aa9))
+- 🐛 add 8px height to border variant for Card ([d3100b1](https://github.com/nordnet/ui/commit/d3100b1))
+- 🐛 add border radius as prop ([c038e06](https://github.com/nordnet/ui/commit/c038e06))
+- 🐛 add rounded corners to Input.Select ([72e479a](https://github.com/nordnet/ui/commit/72e479a))
+- 🐛 change to consts instead of functions ([4eadb36](https://github.com/nordnet/ui/commit/4eadb36))
+- 🐛 fix missing replacement ([e0fae4e](https://github.com/nordnet/ui/commit/e0fae4e))
+- 🐛 fix radius in desktop and mobile ([f5b7e94](https://github.com/nordnet/ui/commit/f5b7e94))
+- 🐛 PageHeaderCard should not have border radius ([2f207da](https://github.com/nordnet/ui/commit/2f207da))
+- 🐛 remove blue border from collapsible card ([be27c1b](https://github.com/nordnet/ui/commit/be27c1b))
+- 🐛 remove git alias opsie ([cc18512](https://github.com/nordnet/ui/commit/cc18512))
+- 🐛 remove grey border around card when color bar variant ([3b5b74d](https://github.com/nordnet/ui/commit/3b5b74d))
+- 🐛 smaller border and no radius when in drawer or mobile ([ec06202](https://github.com/nordnet/ui/commit/ec06202))
+- 🐛 use set functions for border-radius ([12db60b](https://github.com/nordnet/ui/commit/12db60b))
+- add border radius to styled link on button ([a987bfb](https://github.com/nordnet/ui/commit/a987bfb))
+- no corner radius on mobile cards, UC-57 ([6509650](https://github.com/nordnet/ui/commit/6509650))
 
 ### Features
 
-* 🎸 add 20 px border radius to top corners for modal ([24ff8bf](https://github.com/nordnet/ui/commit/24ff8bf))
-* 🎸 add 2px border radius ([b57f042](https://github.com/nordnet/ui/commit/b57f042))
-* 🎸 add 2px border radius to Checkbox ([c54b66c](https://github.com/nordnet/ui/commit/c54b66c))
-* 🎸 add 2px border radius to label ([ea66ddf](https://github.com/nordnet/ui/commit/ea66ddf))
-* 🎸 add 2px border-radius to Label ([37d71d9](https://github.com/nordnet/ui/commit/37d71d9))
-* 🎸 add 4 px border radius to Inputs ([d3f9cf4](https://github.com/nordnet/ui/commit/d3f9cf4))
-* 🎸 add 4px border-radius ([e32fae5](https://github.com/nordnet/ui/commit/e32fae5))
-* 🎸 add 8px border left to card to align with radius ([2ff5446](https://github.com/nordnet/ui/commit/2ff5446))
-* 🎸 add 8px border radius to ActionModal ([b29e891](https://github.com/nordnet/ui/commit/b29e891))
-* 🎸 add 8px border radius to banner if not full width ([9802056](https://github.com/nordnet/ui/commit/9802056))
-* 🎸 add 8px border radius to Card ([484f19a](https://github.com/nordnet/ui/commit/484f19a))
-* 🎸 Add 8px border radius to dropdown for date picker ([b89e74f](https://github.com/nordnet/ui/commit/b89e74f))
-* 🎸 add 8px border radius to progress bar if not mobile ([833750c](https://github.com/nordnet/ui/commit/833750c))
-* 🎸 add 8px border radius to Skeleton ([5fbe52f](https://github.com/nordnet/ui/commit/5fbe52f))
-* 🎸 add border radius 8px to modals ([695f9d3](https://github.com/nordnet/ui/commit/695f9d3))
-* 🎸 add border radius to CoachMarks ([390dc01](https://github.com/nordnet/ui/commit/390dc01))
-* 🎸 add border radius to Tooltip ([3c7c91c](https://github.com/nordnet/ui/commit/3c7c91c))
-* 🎸 add padding to root element for better previewing ([e2f147a](https://github.com/nordnet/ui/commit/e2f147a))
-* 🎸 add rounded corners to buttons ([9a8548e](https://github.com/nordnet/ui/commit/9a8548e))
-* 🎸 add small border radius to large variant ([13c07b3](https://github.com/nordnet/ui/commit/13c07b3))
-* 🎸 removed old beta tags ([90ce724](https://github.com/nordnet/ui/commit/90ce724))
-* 🎸 rounded corners to AllocationBar ([926b661](https://github.com/nordnet/ui/commit/926b661))
-* rename Select to OldSelect ([#1349](https://github.com/nordnet/ui/issues/1349)) ([2d083ff](https://github.com/nordnet/ui/commit/2d083ff))
+- 🎸 add 20 px border radius to top corners for modal ([24ff8bf](https://github.com/nordnet/ui/commit/24ff8bf))
+- 🎸 add 2px border radius ([b57f042](https://github.com/nordnet/ui/commit/b57f042))
+- 🎸 add 2px border radius to Checkbox ([c54b66c](https://github.com/nordnet/ui/commit/c54b66c))
+- 🎸 add 2px border radius to label ([ea66ddf](https://github.com/nordnet/ui/commit/ea66ddf))
+- 🎸 add 2px border-radius to Label ([37d71d9](https://github.com/nordnet/ui/commit/37d71d9))
+- 🎸 add 4 px border radius to Inputs ([d3f9cf4](https://github.com/nordnet/ui/commit/d3f9cf4))
+- 🎸 add 4px border-radius ([e32fae5](https://github.com/nordnet/ui/commit/e32fae5))
+- 🎸 add 8px border left to card to align with radius ([2ff5446](https://github.com/nordnet/ui/commit/2ff5446))
+- 🎸 add 8px border radius to ActionModal ([b29e891](https://github.com/nordnet/ui/commit/b29e891))
+- 🎸 add 8px border radius to banner if not full width ([9802056](https://github.com/nordnet/ui/commit/9802056))
+- 🎸 add 8px border radius to Card ([484f19a](https://github.com/nordnet/ui/commit/484f19a))
+- 🎸 Add 8px border radius to dropdown for date picker ([b89e74f](https://github.com/nordnet/ui/commit/b89e74f))
+- 🎸 add 8px border radius to progress bar if not mobile ([833750c](https://github.com/nordnet/ui/commit/833750c))
+- 🎸 add 8px border radius to Skeleton ([5fbe52f](https://github.com/nordnet/ui/commit/5fbe52f))
+- 🎸 add border radius 8px to modals ([695f9d3](https://github.com/nordnet/ui/commit/695f9d3))
+- 🎸 add border radius to CoachMarks ([390dc01](https://github.com/nordnet/ui/commit/390dc01))
+- 🎸 add border radius to Tooltip ([3c7c91c](https://github.com/nordnet/ui/commit/3c7c91c))
+- 🎸 add padding to root element for better previewing ([e2f147a](https://github.com/nordnet/ui/commit/e2f147a))
+- 🎸 add rounded corners to buttons ([9a8548e](https://github.com/nordnet/ui/commit/9a8548e))
+- 🎸 add small border radius to large variant ([13c07b3](https://github.com/nordnet/ui/commit/13c07b3))
+- 🎸 removed old beta tags ([90ce724](https://github.com/nordnet/ui/commit/90ce724))
+- 🎸 rounded corners to AllocationBar ([926b661](https://github.com/nordnet/ui/commit/926b661))
+- rename Select to OldSelect ([#1349](https://github.com/nordnet/ui/issues/1349)) ([2d083ff](https://github.com/nordnet/ui/commit/2d083ff))
 
 # [12.41.0](https://github.com/nordnet/ui/compare/v12.40.1...v12.41.0) (2023-08-09)
 
-
 ### Features
 
-* bump design tokens ([#1391](https://github.com/nordnet/ui/issues/1391)) ([2cd56a5](https://github.com/nordnet/ui/commit/2cd56a5))
+- bump design tokens ([#1391](https://github.com/nordnet/ui/issues/1391)) ([2cd56a5](https://github.com/nordnet/ui/commit/2cd56a5))
 
 ## [12.40.1](https://github.com/nordnet/ui/compare/v12.40.0...v12.40.1) (2023-08-07)
 
-
 ### Bug Fixes
 
-* add role prop to type script ([23e10fa](https://github.com/nordnet/ui/commit/23e10fa))
+- add role prop to type script ([23e10fa](https://github.com/nordnet/ui/commit/23e10fa))
 
 # [12.40.0](https://github.com/nordnet/ui/compare/v12.39.1...v12.40.0) (2023-08-02)
 
-
 ### Features
 
-* 🎸 Add new check and copy icons ([f18431c](https://github.com/nordnet/ui/commit/f18431c))
+- 🎸 Add new check and copy icons ([f18431c](https://github.com/nordnet/ui/commit/f18431c))
 
 ## [12.39.1](https://github.com/nordnet/ui/compare/v12.39.0...v12.39.1) (2023-07-25)
 
-
 ### Bug Fixes
 
-* 🐛 separate Clearable DatePicker from the regular datepick ([09e797c](https://github.com/nordnet/ui/commit/09e797c))
+- 🐛 separate Clearable DatePicker from the regular datepick ([09e797c](https://github.com/nordnet/ui/commit/09e797c))
 
 # [12.39.0](https://github.com/nordnet/ui/compare/v12.38.0...v12.39.0) (2023-07-25)
 
-
 ### Bug Fixes
 
-* 🐛 WIP ([3a13b13](https://github.com/nordnet/ui/commit/3a13b13))
-
+- 🐛 WIP ([3a13b13](https://github.com/nordnet/ui/commit/3a13b13))
 
 ### Features
 
-* 🎸 datepicker customizable button for clearing state ([cb6c53b](https://github.com/nordnet/ui/commit/cb6c53b))
-* 🎸 Make DatePicker to be able to clear on change ([8f0ace2](https://github.com/nordnet/ui/commit/8f0ace2))
+- 🎸 datepicker customizable button for clearing state ([cb6c53b](https://github.com/nordnet/ui/commit/cb6c53b))
+- 🎸 Make DatePicker to be able to clear on change ([8f0ace2](https://github.com/nordnet/ui/commit/8f0ace2))
 
 # [12.39.0-beta.1](https://github.com/nordnet/ui/compare/v12.38.0...v12.39.0-beta.1) (2023-07-19)
 
-
 ### Bug Fixes
 
-* 🐛 add 2px border radius to Tooltip for Slider ([f3e0aa9](https://github.com/nordnet/ui/commit/f3e0aa9))
-* 🐛 add 8px height to border variant for Card ([d3100b1](https://github.com/nordnet/ui/commit/d3100b1))
-* 🐛 add border radius as prop ([c038e06](https://github.com/nordnet/ui/commit/c038e06))
-* 🐛 add rounded corners to Input.Select ([72e479a](https://github.com/nordnet/ui/commit/72e479a))
-* 🐛 change to consts instead of functions ([4eadb36](https://github.com/nordnet/ui/commit/4eadb36))
-* 🐛 fix missing replacement ([e0fae4e](https://github.com/nordnet/ui/commit/e0fae4e))
-* 🐛 fix radius in desktop and mobile ([f5b7e94](https://github.com/nordnet/ui/commit/f5b7e94))
-* 🐛 PageHeaderCard should not have border radius ([2f207da](https://github.com/nordnet/ui/commit/2f207da))
-* 🐛 remove blue border from collapsible card ([be27c1b](https://github.com/nordnet/ui/commit/be27c1b))
-* 🐛 remove git alias opsie ([cc18512](https://github.com/nordnet/ui/commit/cc18512))
-* 🐛 remove grey border around card when color bar variant ([3b5b74d](https://github.com/nordnet/ui/commit/3b5b74d))
-* 🐛 smaller border and no radius when in drawer or mobile ([ec06202](https://github.com/nordnet/ui/commit/ec06202))
-* 🐛 use set functions for border-radius ([12db60b](https://github.com/nordnet/ui/commit/12db60b))
-
+- 🐛 add 2px border radius to Tooltip for Slider ([f3e0aa9](https://github.com/nordnet/ui/commit/f3e0aa9))
+- 🐛 add 8px height to border variant for Card ([d3100b1](https://github.com/nordnet/ui/commit/d3100b1))
+- 🐛 add border radius as prop ([c038e06](https://github.com/nordnet/ui/commit/c038e06))
+- 🐛 add rounded corners to Input.Select ([72e479a](https://github.com/nordnet/ui/commit/72e479a))
+- 🐛 change to consts instead of functions ([4eadb36](https://github.com/nordnet/ui/commit/4eadb36))
+- 🐛 fix missing replacement ([e0fae4e](https://github.com/nordnet/ui/commit/e0fae4e))
+- 🐛 fix radius in desktop and mobile ([f5b7e94](https://github.com/nordnet/ui/commit/f5b7e94))
+- 🐛 PageHeaderCard should not have border radius ([2f207da](https://github.com/nordnet/ui/commit/2f207da))
+- 🐛 remove blue border from collapsible card ([be27c1b](https://github.com/nordnet/ui/commit/be27c1b))
+- 🐛 remove git alias opsie ([cc18512](https://github.com/nordnet/ui/commit/cc18512))
+- 🐛 remove grey border around card when color bar variant ([3b5b74d](https://github.com/nordnet/ui/commit/3b5b74d))
+- 🐛 smaller border and no radius when in drawer or mobile ([ec06202](https://github.com/nordnet/ui/commit/ec06202))
+- 🐛 use set functions for border-radius ([12db60b](https://github.com/nordnet/ui/commit/12db60b))
 
 ### Features
 
-* 🎸 add 20 px border radius to top corners for modal ([24ff8bf](https://github.com/nordnet/ui/commit/24ff8bf))
-* 🎸 add 2px border radius ([b57f042](https://github.com/nordnet/ui/commit/b57f042))
-* 🎸 add 2px border radius to Checkbox ([c54b66c](https://github.com/nordnet/ui/commit/c54b66c))
-* 🎸 add 2px border radius to label ([ea66ddf](https://github.com/nordnet/ui/commit/ea66ddf))
-* 🎸 add 2px border-radius to Label ([37d71d9](https://github.com/nordnet/ui/commit/37d71d9))
-* 🎸 add 4 px border radius to Inputs ([d3f9cf4](https://github.com/nordnet/ui/commit/d3f9cf4))
-* 🎸 add 4px border-radius ([e32fae5](https://github.com/nordnet/ui/commit/e32fae5))
-* 🎸 add 8px border left to card to align with radius ([2ff5446](https://github.com/nordnet/ui/commit/2ff5446))
-* 🎸 add 8px border radius to ActionModal ([b29e891](https://github.com/nordnet/ui/commit/b29e891))
-* 🎸 add 8px border radius to banner if not full width ([9802056](https://github.com/nordnet/ui/commit/9802056))
-* 🎸 add 8px border radius to Card ([484f19a](https://github.com/nordnet/ui/commit/484f19a))
-* 🎸 Add 8px border radius to dropdown for date picker ([b89e74f](https://github.com/nordnet/ui/commit/b89e74f))
-* 🎸 add 8px border radius to progress bar if not mobile ([833750c](https://github.com/nordnet/ui/commit/833750c))
-* 🎸 add 8px border radius to Skeleton ([5fbe52f](https://github.com/nordnet/ui/commit/5fbe52f))
-* 🎸 add border radius 8px to modals ([695f9d3](https://github.com/nordnet/ui/commit/695f9d3))
-* 🎸 add border radius to CoachMarks ([390dc01](https://github.com/nordnet/ui/commit/390dc01))
-* 🎸 add border radius to Tooltip ([3c7c91c](https://github.com/nordnet/ui/commit/3c7c91c))
-* 🎸 add padding to root element for better previewing ([e2f147a](https://github.com/nordnet/ui/commit/e2f147a))
-* 🎸 add rounded corners to buttons ([9a8548e](https://github.com/nordnet/ui/commit/9a8548e))
-* 🎸 add small border radius to large variant ([13c07b3](https://github.com/nordnet/ui/commit/13c07b3))
-* 🎸 removed old beta tags ([90ce724](https://github.com/nordnet/ui/commit/90ce724))
-* 🎸 rounded corners to AllocationBar ([926b661](https://github.com/nordnet/ui/commit/926b661))
-* rename Select to OldSelect ([#1349](https://github.com/nordnet/ui/issues/1349)) ([2d083ff](https://github.com/nordnet/ui/commit/2d083ff))
+- 🎸 add 20 px border radius to top corners for modal ([24ff8bf](https://github.com/nordnet/ui/commit/24ff8bf))
+- 🎸 add 2px border radius ([b57f042](https://github.com/nordnet/ui/commit/b57f042))
+- 🎸 add 2px border radius to Checkbox ([c54b66c](https://github.com/nordnet/ui/commit/c54b66c))
+- 🎸 add 2px border radius to label ([ea66ddf](https://github.com/nordnet/ui/commit/ea66ddf))
+- 🎸 add 2px border-radius to Label ([37d71d9](https://github.com/nordnet/ui/commit/37d71d9))
+- 🎸 add 4 px border radius to Inputs ([d3f9cf4](https://github.com/nordnet/ui/commit/d3f9cf4))
+- 🎸 add 4px border-radius ([e32fae5](https://github.com/nordnet/ui/commit/e32fae5))
+- 🎸 add 8px border left to card to align with radius ([2ff5446](https://github.com/nordnet/ui/commit/2ff5446))
+- 🎸 add 8px border radius to ActionModal ([b29e891](https://github.com/nordnet/ui/commit/b29e891))
+- 🎸 add 8px border radius to banner if not full width ([9802056](https://github.com/nordnet/ui/commit/9802056))
+- 🎸 add 8px border radius to Card ([484f19a](https://github.com/nordnet/ui/commit/484f19a))
+- 🎸 Add 8px border radius to dropdown for date picker ([b89e74f](https://github.com/nordnet/ui/commit/b89e74f))
+- 🎸 add 8px border radius to progress bar if not mobile ([833750c](https://github.com/nordnet/ui/commit/833750c))
+- 🎸 add 8px border radius to Skeleton ([5fbe52f](https://github.com/nordnet/ui/commit/5fbe52f))
+- 🎸 add border radius 8px to modals ([695f9d3](https://github.com/nordnet/ui/commit/695f9d3))
+- 🎸 add border radius to CoachMarks ([390dc01](https://github.com/nordnet/ui/commit/390dc01))
+- 🎸 add border radius to Tooltip ([3c7c91c](https://github.com/nordnet/ui/commit/3c7c91c))
+- 🎸 add padding to root element for better previewing ([e2f147a](https://github.com/nordnet/ui/commit/e2f147a))
+- 🎸 add rounded corners to buttons ([9a8548e](https://github.com/nordnet/ui/commit/9a8548e))
+- 🎸 add small border radius to large variant ([13c07b3](https://github.com/nordnet/ui/commit/13c07b3))
+- 🎸 removed old beta tags ([90ce724](https://github.com/nordnet/ui/commit/90ce724))
+- 🎸 rounded corners to AllocationBar ([926b661](https://github.com/nordnet/ui/commit/926b661))
+- rename Select to OldSelect ([#1349](https://github.com/nordnet/ui/issues/1349)) ([2d083ff](https://github.com/nordnet/ui/commit/2d083ff))
 
 # [12.38.0](https://github.com/nordnet/ui/compare/v12.37.0...v12.38.0) (2023-07-18)
 
