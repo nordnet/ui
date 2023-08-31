@@ -1,5 +1,5 @@
 import React from 'react';
-import OldSelect from '.';
+import Select from '.';
 
 const options = [
   { label: 'Option 1', value: 'Option 1' },
@@ -12,7 +12,7 @@ export default {
 };
 
 export const selectWithPlaceholder = () => (
-  <OldSelect options={options} placeholder="Select option" label="Options" />
+  <Select options={options} placeholder="Select option" label="Options" />
 );
 
 selectWithPlaceholder.story = {
@@ -21,7 +21,7 @@ selectWithPlaceholder.story = {
 
 export const selectWithOverflowingPlaceholder = () => (
   <div style={{ width: 150 }}>
-    <OldSelect
+    <Select
       options={[{ label: 'Reaaaaaaaaaally long option', value: 1 }]}
       value={1}
       label="Options"
@@ -34,21 +34,21 @@ selectWithOverflowingPlaceholder.story = {
 };
 
 export const selectWithPlaceholderAndPreselectedValue = () => (
-  <OldSelect options={options} value="Option 2" placeholder="Select option" label="Options" />
+  <Select options={options} value="Option 2" placeholder="Select option" label="Options" />
 );
 
 selectWithPlaceholderAndPreselectedValue.story = {
   name: 'Select with placeholder and preselected value',
 };
 
-export const selectWithoutPlaceholder = () => <OldSelect options={options} label="Stocks" />;
+export const selectWithoutPlaceholder = () => <Select options={options} label="Stocks" />;
 
 selectWithoutPlaceholder.story = {
   name: 'Select without placeholder',
 };
 
 export const selectWithPreselectedValue = () => (
-  <OldSelect options={options} value="Option 2" label="Stocks" />
+  <Select options={options} value="Option 2" label="Stocks" />
 );
 
 selectWithPreselectedValue.story = {
@@ -56,7 +56,7 @@ selectWithPreselectedValue.story = {
 };
 
 export const selectWithHiddenLabel = () => (
-  <OldSelect options={options} value="Option 2" label="Stocks" hideLabel />
+  <Select options={options} value="Option 2" label="Stocks" hideLabel />
 );
 
 selectWithHiddenLabel.story = {
@@ -64,12 +64,7 @@ selectWithHiddenLabel.story = {
 };
 
 export const selectWithPrependedEmptyValue = () => (
-  <OldSelect
-    options={[{ label: 'All', value: '' }, ...options]}
-    value=""
-    label="Stocks"
-    hideLabel
-  />
+  <Select options={[{ label: 'All', value: '' }, ...options]} value="" label="Stocks" hideLabel />
 );
 
 selectWithPrependedEmptyValue.story = {
