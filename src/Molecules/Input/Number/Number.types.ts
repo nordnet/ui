@@ -34,6 +34,7 @@ export type Props = {
   label: string;
   labelTooltip?: string;
   labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
+  labelTooltipInModal?: boolean;
   leftAddon?: React.ReactNode;
   max?: string | number;
   min?: string | number;

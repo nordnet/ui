@@ -208,6 +208,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
           'label',
           'labelTooltip',
           'labelTooltipPosition',
+          'labelTooltipInModal',
           'className',
           'width',
           'disabled',

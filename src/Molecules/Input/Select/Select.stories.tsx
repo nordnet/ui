@@ -1899,3 +1899,46 @@ export const WithCustomHeight = CustomHeightTemplate.bind({});
 WithCustomHeight.args = {
   height: 20,
 };
+
+export const withLabelTooltipInsideModal = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const onOpen = () => {
+      setOpen(true);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <>
+        <button type="button" onClick={onOpen}>
+          Open modal
+        </button>
+        <Modal onClose={onClose} title="Dialog information" open={open}>
+          <Box mb={2}>
+            <Input.Select
+              id="input-without-a-search-component"
+              label="Without search component"
+              placeholder="Select an option"
+              options={[
+                { label: 'foo', value: 1 },
+                { label: 'bar', value: 2 },
+              ]}
+              disableSearchComponent
+              labelTooltipInModal
+              labelTooltip="Tooltip content"
+            />
+          </Box>
+        </Modal>
+      </>
+    );
+  };
+  return <Example />;
+};
+
+withLabelTooltipInsideModal.story = {
+  name: 'With label tooltip inside modal',
+};

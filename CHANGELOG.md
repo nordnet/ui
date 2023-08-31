@@ -1,3 +1,47 @@
+## [12.41.6](https://github.com/nordnet/ui/compare/v12.41.5...v12.41.6) (2023-08-23)
+
+
+### Bug Fixes
+
+* dismiss button color change ([0755cb9](https://github.com/nordnet/ui/commit/0755cb9))
+* remove defaultDescription from title ([8a33d74](https://github.com/nordnet/ui/commit/8a33d74))
+* ui fixes for Checklist ([fe3aac4](https://github.com/nordnet/ui/commit/fe3aac4))
+
+## [12.41.5](https://github.com/nordnet/ui/compare/v12.41.4...v12.41.5) (2023-08-21)
+
+
+### Bug Fixes
+
+* 🐛 update faulty colors and upgrade design-token v ([0c8f319](https://github.com/nordnet/ui/commit/0c8f319))
+
+## [12.41.4](https://github.com/nordnet/ui/compare/v12.41.3...v12.41.4) (2023-08-17)
+
+
+### Bug Fixes
+
+* labelTooltipInModal for all input components ([242a8ac](https://github.com/nordnet/ui/commit/242a8ac))
+
+## [12.41.3](https://github.com/nordnet/ui/compare/v12.41.2...v12.41.3) (2023-08-14)
+
+
+### Bug Fixes
+
+* input field tooltip when in modal ([cd2349f](https://github.com/nordnet/ui/commit/cd2349f))
+
+## [12.41.2](https://github.com/nordnet/ui/compare/v12.41.1...v12.41.2) (2023-08-14)
+
+
+### Bug Fixes
+
+* use transient props ($propName) instead of shouldforwardprop ([#1396](https://github.com/nordnet/ui/issues/1396)) ([b075a01](https://github.com/nordnet/ui/commit/b075a01))
+
+## [12.41.1](https://github.com/nordnet/ui/compare/v12.41.0...v12.41.1) (2023-08-14)
+
+
+### Bug Fixes
+
+* 🐛 Pass HTML props to CardWithTitle ([fe4e7c0](https://github.com/nordnet/ui/commit/fe4e7c0))
+
 # [12.42.0-beta.2](https://github.com/nordnet/ui/compare/v12.42.0-beta.1...v12.42.0-beta.2) (2023-08-10)
 
 

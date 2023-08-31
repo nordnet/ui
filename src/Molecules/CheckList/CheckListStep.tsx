@@ -15,6 +15,10 @@ const AbsoluteFlexbox = styled(Flexbox)`
   bottom: 0;
 `;
 
+const StyledButton = styled(Button)`
+  background-color: ${(t) => t.theme.colorTokens.error.background_default};
+`;
+
 const TwoButtonBox = styled.div`
   align-items: center;
   display: flex;
@@ -50,7 +54,13 @@ const CheckListStep: FC<CheckListStepProps> = ({
   /* Buttons in drawer */
   const buttons = isDrawer && taskState === 'INCOMPLETE' && (
     <TwoButtonBox>
-      <Button variant="neutral" size="m" fullWidth onClick={() => setDismissMode(true)}>
+      <Button
+        variant="neutral"
+        color={(t) => t.colorTokens.action.text_default}
+        size="m"
+        fullWidth
+        onClick={() => setDismissMode(true)}
+      >
         {dismissLabel}
       </Button>
 
@@ -65,7 +75,15 @@ const CheckListStep: FC<CheckListStepProps> = ({
   /* Dialog in drawer */
   const dialog = isDrawer && dismissMode && (
     <AbsoluteFlexbox container wrap="wrap" gap={3} alignContent="center" alignItems="center">
-      <Flexbox item shrink={0} grow={1} basis="320px">
+      <Flexbox
+        item
+        container
+        justifyContent="center"
+        alignItems="center"
+        shrink={0}
+        grow={1}
+        basis="320px"
+      >
         <Typography type="primary" weight="bold">
           {dismissQuestion}
         </Typography>
@@ -76,9 +94,9 @@ const CheckListStep: FC<CheckListStepProps> = ({
           {dismissCancelLabel}
         </Button>
 
-        <Button variant="negative" size="m" fullWidth onClick={onDismiss}>
+        <StyledButton variant="negative" size="m" fullWidth onClick={onDismiss}>
           {dismissConfirmLabel}
-        </Button>
+        </StyledButton>
       </TwoButtonBox>
     </AbsoluteFlexbox>
   );

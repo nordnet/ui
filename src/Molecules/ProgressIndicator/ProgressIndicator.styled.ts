@@ -27,6 +27,8 @@ export const CompletionBar = styled.div<{ completion: number; noButtons: boolean
     height: 100%;
     display: block;
     content: '';
+    border-top-right-radius: ${(p) => p.theme.borderRadius100};
+    border-bottom-right-radius: ${(p) => p.theme.borderRadius100};
   }
 `;
 
