@@ -31,7 +31,6 @@ const StyledButton = styled(NormalizedElements.Button)<InnerProps>`
     return primaryStyles;
   }}
   border: none;
-  border-radius: 0;
   cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
 `;
 

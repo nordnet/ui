@@ -2,7 +2,7 @@ import { filter, mapObjIndexed, pipe, prop as Rprop, values } from 'ramda';
 import { lightTheme, darkTheme, a11yTheme } from '@nordnet/design-tokens';
 
 import { assert, deprecate, isNumber } from '../common/utils';
-import { Theme, ThemeColorsVersion, ThemeConfig } from './theme.types';
+import { BORDER_RADIUS, Theme, ThemeColorsVersion, ThemeConfig } from './theme.types';
 import { createLightColors, getColorLightScheme } from './createLightColors';
 import { createDarkColors, getColorDarkScheme } from './createDarkColors';
 
@@ -61,7 +61,12 @@ const getColorTokens = (theme: ThemeConfig['tokensTheme']) => {
 };
 
 export const createTheme = (config: ThemeConfig = {}): Theme => {
-  const { a11yColors = false, darkColors = false, tokensTheme = 'light' } = config;
+  const {
+    a11yColors = false,
+    darkColors = false,
+    tokensTheme = 'light',
+    featureToggles = {},
+  } = config;
   const type: ThemeColorsVersion = a11yColors ? 'a11y' : 'default';
   const color = darkColors
     ? createDarkColors(getColorDarkScheme(type))
@@ -80,6 +85,18 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     unit,
     gutter: GUTTER,
   };
+
+  const RADIUS_XSMALL: BORDER_RADIUS = 2;
+  const RADIUS_SMALL: BORDER_RADIUS = 4;
+  const RADIUS_MEDIUM: BORDER_RADIUS = 8;
+  const RADIUS_LARGE: BORDER_RADIUS = 20;
+  const RADIUS_100: BORDER_RADIUS = 100;
+
+  const borderRadius2 = featureToggles?.roundedCorners ? `${RADIUS_XSMALL}px` : '0';
+  const borderRadius4 = featureToggles?.roundedCorners ? `${RADIUS_SMALL}px` : '0';
+  const borderRadius8 = featureToggles?.roundedCorners ? `${RADIUS_MEDIUM}px` : '0';
+  const borderRadius20 = featureToggles?.roundedCorners ? `${RADIUS_LARGE}px` : '0';
+  const borderRadius100 = featureToggles?.roundedCorners ? `${RADIUS_100}px` : '0';
 
   return {
     animation: {
@@ -119,5 +136,10 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     size: deprecate('theme.size, please use theme.breakpoint instead.')(size),
     spacing,
     zIndex,
+    borderRadius2,
+    borderRadius4,
+    borderRadius8,
+    borderRadius20,
+    borderRadius100,
   };
 };

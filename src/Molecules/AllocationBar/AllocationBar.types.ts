@@ -5,6 +5,12 @@ export type AllocationBarProps = {
   height?: number;
 };
 
+export type StyledBarItemProps = {
+  $color: ColorFn;
+  $isFirst: boolean;
+  $isLast: boolean;
+};
+
 type Allocation = {
   label: string;
   weight: number;

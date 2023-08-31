@@ -34,6 +34,7 @@ const StyledDropdownBubble = styled(DropdownBubble)`
   z-index: ${({ theme }) => theme.zIndex.overlay};
   box-sizing: border-box;
   top: -10px;
+  border-radius: ${({ theme }) => theme.borderRadius8};
 
   &:after,
   &:before {

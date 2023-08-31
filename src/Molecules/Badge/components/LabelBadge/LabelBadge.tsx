@@ -12,6 +12,7 @@ import {
 } from './LabelBadge.constants';
 
 const StyledBaseBadge: React.FC<StyledBaseBadgeProps> = styled(BaseBadge)<StyledBaseBadgeProps>`
+  border-radius: ${({ theme }) => theme.borderRadius2};
   ${(p) =>
     p.$type === 'primary'
       ? `padding: ${p.theme.spacing.unit(VERTICAL_PADDING)}px ${p.theme.spacing.unit(

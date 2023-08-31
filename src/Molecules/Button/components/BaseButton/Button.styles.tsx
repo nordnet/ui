@@ -19,7 +19,7 @@ const PADDING_HORIZONTAL = {
 };
 const BORDER_SIZE = 2;
 
-const getBorder = (color: string) => `
+const getBorder = (color: string) => css`
   &::before {
     content: '';
     display: block;
@@ -29,6 +29,7 @@ const getBorder = (color: string) => `
     left: 0;
     width: calc(100% - ${BORDER_SIZE * 2}px);
     height: calc(100% - ${BORDER_SIZE * 2}px);
+    border-radius: ${(p) => p.theme.borderRadius100};
   }
 `;
 
@@ -87,6 +88,7 @@ export const primaryStyles = css<InnerProps>`
     }
   `;
   }}
+  border-radius: ${(p) => p.theme.borderRadius100};
 `;
 
 export const negativeStyles = css<InnerProps>`
@@ -113,6 +115,7 @@ export const negativeStyles = css<InnerProps>`
     }
   `;
   }}
+  border-radius: ${(p) => p.theme.borderRadius100};
 `;
 
 export const secondaryStyles = css<InnerProps>`
@@ -175,6 +178,7 @@ export const secondaryStyles = css<InnerProps>`
       }
     `;
   }};
+  border-radius: ${(p) => p.theme.borderRadius100};
 `;
 
 export const neutralStyles = css<InnerProps>`

@@ -1,6 +1,11 @@
 import React, { FC, ReactElement } from 'react';
 import { Box, Flexbox, Typography, Icon } from '../..';
-import { StyledButton, CompletionBar, StyledButtonPill } from './ProgressIndicator.styled';
+import {
+  StyledBox,
+  StyledButton,
+  CompletionBar,
+  StyledButtonPill,
+} from './ProgressIndicator.styled';
 import { Props } from './ProgressIndicator.types';
 import { useMedia } from '../../Atoms/Media';
 
@@ -28,12 +33,13 @@ const ProgressIndicator: FC<Props> = ({
   };
 
   return (
-    <Box
+    <StyledBox
       px={3}
       pt={3}
       pb={2}
       md={{ p: 5 }}
       backgroundColor={(t) => t.color.progressIndicatorBackground}
+      $isMobile={!!isMobile}
     >
       <Flexbox container justifyContent="space-between" gap={6} alignItems="center">
         <StyledButton
@@ -134,7 +140,7 @@ const ProgressIndicator: FC<Props> = ({
           )}
         </Flexbox>
       </Box>
-    </Box>
+    </StyledBox>
   );
 };
 export default ProgressIndicator;

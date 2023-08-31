@@ -55,6 +55,7 @@ const Dialog = styled(motion.div)<DialogProps>`
   max-height: 100vh;
   max-width: 100%;
   width: 100%;
+  border-radius: ${({ theme }) => theme.borderRadius8};
 
   ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
     ${(p) =>
@@ -65,6 +66,7 @@ const Dialog = styled(motion.div)<DialogProps>`
           transform: none !important; /* disables the appear animation */
           padding-top: ${p.theme.spacing.unit(PADDING_TOP_MOBILE_FULLSCREEN)}px;
           padding-bottom: ${p.theme.spacing.unit(PADDING_BOTTOM_MOBILE_FULLSCREEN)}px;
+          border-radius: 0px;
         `
         : `margin: ${p.theme.spacing.unit(2)}px;
            padding-top: ${p.theme.spacing.unit(PADDING_TOP_MOBILE)}px;
@@ -78,6 +80,7 @@ const Dialog = styled(motion.div)<DialogProps>`
           transform: none !important; /* disables the appear animation */
           padding-top: ${p.theme.spacing.unit(PADDING_TOP_MOBILE_FULLSCREEN)}px;
           padding-bottom: ${p.theme.spacing.unit(PADDING_BOTTOM_MOBILE_FULLSCREEN)}px;
+          border-radius:  ${p.theme.borderRadius20} ${p.theme.borderRadius20} 0 0;
         `
         : ''}
   }

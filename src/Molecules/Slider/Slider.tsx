@@ -83,6 +83,7 @@ const StyledDropdownBubble = styled(DropdownBubble)<InternalProps>`
       getKnobSize(p.$variant) / 2 + TRIANGLE_SIZE + getHeight(p.$variant) / 2
     }px))`};
   padding: 6px 8px;
+  border-radius: ${({ theme }) => theme.borderRadius2};
 `;
 
 const Slider: Component = ({
