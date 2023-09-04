@@ -22,7 +22,7 @@ const CompactLinks: React.FC<PaginationCompactLinkProps> = ({
   getPageHref,
 }) => {
   return (
-    <Flexbox container gutter={1} alignItems="center">
+    <Flexbox container gap={1} alignItems="center">
       {currentPage !== 1 && (
         <ChevronLink
           direction="left"

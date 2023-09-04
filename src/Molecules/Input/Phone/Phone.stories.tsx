@@ -91,7 +91,7 @@ export const isDisabled = () => (
 );
 
 export const sortByCountry = () => (
-  <Flexbox container direction="column" gutter={3}>
+  <Flexbox container direction="column" gap={3}>
     <Input.Phone name="country-code-example" label="Sweden" sortByCountry="se" />
     <Input.Phone name="country-code-example" label="Denmark" sortByCountry="dk" />
     <Input.Phone name="country-code-example" label="Finland" sortByCountry="fi" />

@@ -93,7 +93,7 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
         <StyledDrawer
           onClose={onDrawerClose}
           title={
-            <Flexbox container gutter={2} alignItems="center">
+            <Flexbox container gap={2} alignItems="center">
               <Typography type="title2" as="h2">
                 {mobileDrawerTitle}
               </Typography>

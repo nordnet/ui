@@ -27,7 +27,7 @@ export const BarScale: React.FC<Props> = ({
 
   return (
     <>
-      <Flexbox container gutter={gutter}>
+      <Flexbox container gap={gutter}>
         {R.range(1, verifiedMaxRating + 1)?.map((bar) => (
           <Flexbox key={bar} item flex="1 1 auto">
             <Indicator $isActive={isActive(bar)} $barHeight={barHeight} />

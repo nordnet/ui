@@ -175,7 +175,7 @@ withAnErrorIfNotChecked.story = {
 
 export const inAGroup = () => (
   <FormField label="Colors" group>
-    <Flexbox container gutter={5}>
+    <Flexbox container gap={5}>
       <Input.Checkbox name="example" value="green" label="Green" />
       <Input.Checkbox name="example" value="blue" label="Blue" />
       <Input.Checkbox name="example" value="yellow" label="Yellow" />
@@ -189,7 +189,7 @@ inAGroup.story = {
 
 export const inAGroupWithTooltip = () => (
   <FormField label="Colors" labelTooltip="Checkboxgroup tooltip" group>
-    <Flexbox container gutter={5}>
+    <Flexbox container gap={5}>
       <Input.Checkbox name="example" value="green" label="Green" />
       <Input.Checkbox name="example" value="blue" label="Blue" />
       <Input.Checkbox name="example" value="yellow" label="Yellow" />
@@ -206,7 +206,7 @@ export const inAGroupWithTooltipPositionTop = () => (
     <br />
     <br />
     <FormField label="Colors" labelTooltip="Checkboxgroup tooltip" labelTooltipPosition="top" group>
-      <Flexbox container gutter={5}>
+      <Flexbox container gap={5}>
         <Input.Checkbox name="example" value="green" label="Green" />
         <Input.Checkbox name="example" value="blue" label="Blue" />
         <Input.Checkbox name="example" value="yellow" label="Yellow" />
@@ -232,7 +232,7 @@ export const inAGroupWithError = () => {
         group
         {...(hasGroupError ? { error: 'This field is required' } : {})}
       >
-        <Flexbox container gutter={5}>
+        <Flexbox container gap={5}>
           <Input.Checkbox
             name="example"
             value="green"
@@ -330,7 +330,7 @@ elementLabelStory.story = {
 
 export const withDifferentSizes = () => {
   return (
-    <Flexbox container direction="column" gutter={1}>
+    <Flexbox container direction="column" gap={1}>
       <Input.Checkbox name="small" value="1" size="s" label="small" />
       <Input.Checkbox name="medium" value="2" label="medium" />
       <Input.Checkbox name="default" value="3" label="default" />

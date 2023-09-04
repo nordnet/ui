@@ -171,7 +171,7 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, DoubleDatePickerProps>
 
   return (
     <div ref={(ref || selfRef) as React.Ref<HTMLDivElement>}>
-      <Flexbox container wrap="wrap" gutter={1} alignItems="flex-end">
+      <Flexbox container wrap="wrap" gap={1} alignItems="flex-end">
         <StyledInputText
           size={inputSize}
           label={labelFrom}

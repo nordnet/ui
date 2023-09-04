@@ -23,7 +23,7 @@ const ControlsListItemSelectButton = (buttonText: string | React.ReactElement) =
 
   return (
     <SelectWrapper>
-      <Flexbox container alignItems="center" gutter={2}>
+      <Flexbox container alignItems="center" gap={2}>
         <StyledTypography type="secondary" weight="bold">
           {buttonText}
         </StyledTypography>

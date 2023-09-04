@@ -27,7 +27,7 @@ export const PageHeaderCard: PageHeaderCardComponent = ({ title, className, chil
       <PageWrapper>
         <Flexbox
           container
-          gutter={0}
+          gap={0}
           direction="column"
           sm={{ direction: 'row', justifyContent: 'space-between', alignItems: 'center' }}
         >

@@ -47,17 +47,6 @@ export const columnSizedFlexboxes = () => (
   </Flexbox>
 );
 
-export const withCustomGutter = () => (
-  <Flexbox container gutter={5}>
-    <Flexbox item size={6}>
-      <Content>Col 1</Content>
-    </Flexbox>
-    <Flexbox item size={6}>
-      <Content>Col 2</Content>
-    </Flexbox>
-  </Flexbox>
-);
-
 const tenTimes = [...Array(10)].map((_, i) => {
   return i + 1;
 });
@@ -142,8 +131,8 @@ export const withConditionallyVisibleFlexItem = () => {
 
 export const withContainerAndItemProps = () => {
   return (
-    <Flexbox container gutter={5}>
-      <Flexbox container item direction="column" gutter={5}>
+    <Flexbox container gap={5}>
+      <Flexbox container item direction="column" gap={5}>
         <Flexbox item>
           <Content>First element here</Content>
         </Flexbox>
@@ -170,12 +159,12 @@ export const withBreakpointProps = () => {
   return (
     <Flexbox
       container
-      gutter={4}
+      gap={4}
       direction="column"
-      sm={{ gutter: 6 }}
-      md={{ gutter: 6, direction: 'row' }}
-      lg={{ gutter: 10, direction: 'row' }}
-      xl={{ gutter: 10, direction: 'row' }}
+      sm={{ gap: 6 }}
+      md={{ gap: 6, direction: 'row' }}
+      lg={{ gap: 10, direction: 'row' }}
+      xl={{ gap: 10, direction: 'row' }}
     >
       <Flexbox item>
         <Content>First element here</Content>
@@ -221,7 +210,7 @@ const HeightAndWidthTemplate: Story<{
       height={height}
       alignItems="center"
       justifyContent="space-between"
-      gutter={5}
+      gap={5}
     >
       <Flexbox item height="100%">
         <GrowingDiv>One</GrowingDiv>
@@ -255,7 +244,7 @@ export const differentSizedItems = () => (
     height={100}
     alignItems="center"
     justifyContent="space-between"
-    gutter={5}
+    gap={5}
   >
     <Flexbox item width="100%" height="100%">
       <GrowingDiv>One</GrowingDiv>

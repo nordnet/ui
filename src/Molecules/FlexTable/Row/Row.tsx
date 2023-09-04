@@ -51,7 +51,7 @@ type StyledRowProps = {
   $lg: Partial<ScreenSizeConfigurableProps>;
   $xl: Partial<ScreenSizeConfigurableProps>;
 };
-/* the cells are padded by row gutter 1 unit (4px) */
+/* the cells are padded by row gap 1 unit (4px) */
 const StyledRow = styled(Flexbox)<StyledRowProps>`
   background: ${(p) => p.theme.color.tableRowBackground};
 
@@ -163,11 +163,11 @@ const Row: RowComponent = ({
         $md={mdRow}
         $lg={lgRow}
         $xl={xlRow}
-        gutter={xsFlexbox?.columnDistance}
-        sm={{ gutter: smFlexbox?.columnDistance }}
-        md={{ gutter: mdFlexbox?.columnDistance }}
-        lg={{ gutter: lgFlexbox?.columnDistance }}
-        xl={{ gutter: xlFlexbox?.columnDistance }}
+        gap={xsFlexbox?.columnDistance}
+        sm={{ gap: smFlexbox?.columnDistance }}
+        md={{ gap: mdFlexbox?.columnDistance }}
+        lg={{ gap: lgFlexbox?.columnDistance }}
+        xl={{ gap: xlFlexbox?.columnDistance }}
         onClick={clickRowToExpand ? onExpandToggleClick : undefined}
         {...htmlProps}
       >

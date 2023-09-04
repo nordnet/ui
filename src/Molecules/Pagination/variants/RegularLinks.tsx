@@ -60,7 +60,7 @@ const RegularLinks: React.FC<PaginationDefaultLinkProps> = ({
           href={getPageHref(currentPage - 1)}
         />
       )}
-      <Flexbox container item flex="1" justifyContent="center" gutter={2} as={List}>
+      <Flexbox container item flex="1" justifyContent="center" gap={2} as={List}>
         <PageItems
           currentPage={currentPage}
           numberOfPages={numberOfPages}

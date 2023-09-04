@@ -22,7 +22,7 @@ export const defaultSwitchToggle = () => {
 
     return (
       <Box py={5} backgroundColor={(t) => t.color.bubbleBackground}>
-        <Flexbox container gutter={2}>
+        <Flexbox container gap={2}>
           <Flexbox container item>
             <SwitchToggle
               checked={toggled}
@@ -62,7 +62,7 @@ export const augmentedWidthSwitchToggle = () => {
 
     return (
       <Box py={5} backgroundColor={(t) => t.color.bubbleBackground}>
-        <Flexbox container gutter={2}>
+        <Flexbox container gap={2}>
           <Flexbox container item>
             <SwitchToggle
               checked={toggled}
