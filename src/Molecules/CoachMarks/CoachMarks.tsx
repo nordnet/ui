@@ -148,9 +148,9 @@ export const CoachMarks: Component = ({
               noBorder={!!barColor}
             />
           )}
-          <Flexbox container item direction="column" flex="1" gutter={5} ref={internalCoachMarkRef}>
+          <Flexbox container item direction="column" flex="1" gap={5} ref={internalCoachMarkRef}>
             {body || (
-              <Flexbox container direction="column" gutter={1}>
+              <Flexbox container direction="column" gap={1}>
                 {icon && <IconFlex item>{icon}</IconFlex>}
                 {title && (
                   <Flexbox item>
@@ -176,7 +176,7 @@ export const CoachMarks: Component = ({
                 )}
               </Flexbox>
             )}
-            <FooterFlex container item alignItems="baseline" gutter={5}>
+            <FooterFlex container item alignItems="baseline" gap={5}>
               {closeButton ? (
                 <Flexbox item>
                   <Button variant="neutral" color={(t) => t.color.link} onClick={onClose}>
@@ -192,15 +192,15 @@ export const CoachMarks: Component = ({
                   </Flexbox>
                 )
               )}
-              <NavigationButtonsContainer container gutter={1} $hasSingleButton={!hasPrevStep}>
+              <NavigationButtonsContainer container gap={1} $hasSingleButton={!hasPrevStep}>
                 {hasPrevStep && (
-                  <Flexbox item flex="1 0 50%">
+                  <Flexbox item flex="1 1 50%">
                     <Button variant="secondary" onClick={handleStepBackwards} fullWidth>
                       {prevText}
                     </Button>
                   </Flexbox>
                 )}
-                <Flexbox item flex="1 0 50%">
+                <Flexbox item flex="1 1 50%">
                   {hasNextStep ? (
                     <Button
                       variant="primary"

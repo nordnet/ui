@@ -31,7 +31,7 @@ export const IconFlex = styled(Flexbox)`
 export const NavigationButtonsContainer = styled(Flexbox)<{ $hasSingleButton?: boolean }>`
   margin-left: auto;
   min-width: ${(p) =>
-    p.$hasSingleButton ? `${p.theme.spacing.unit(25)}px` : `${p.theme.spacing.unit(50)}px`};
+    p.$hasSingleButton ? `${p.theme.spacing.unit(19)}px` : `${p.theme.spacing.unit(44)}px`};
 `;
 
 export const Content = styled.div`
