@@ -36,7 +36,7 @@ const ListItem = styled.li<InternalProps>`
   position: relative;
   background-color: ${(p) => p.theme.color.inputBackground};
   border-radius: ${({ theme }) => theme.borderRadius8};
-  ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
+  ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
     border-radius: 0;
   }
 
@@ -54,7 +54,7 @@ const ListItem = styled.li<InternalProps>`
     border-top-left-radius: ${(p) => (p.$isInDrawer ? 0 : p.theme.borderRadius8)};
     border-bottom-left-radius: ${(p) => (p.$isInDrawer ? 0 : p.theme.borderRadius8)};
 
-    ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
+    ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
       width: 2px;
       border-radius: 0;
     }
