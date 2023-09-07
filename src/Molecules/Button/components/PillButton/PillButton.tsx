@@ -15,6 +15,24 @@ const BORDER_RADIUS = {
   l: 5,
 };
 
+const HEIGHT = {
+  s: 6,
+  m: 8,
+  l: 8,
+};
+
+const PADDING_VERTICAL = {
+  s: 0,
+  m: 1,
+  l: 1,
+};
+
+const PADDING_HORIZONTAL = {
+  s: 3,
+  m: 4,
+  l: 4,
+};
+
 const getButtonColor = (variant: PillButtonProps['variant'], theme: Theme) => {
   switch (variant) {
     case 'negative':
@@ -29,7 +47,7 @@ const getButtonColor = (variant: PillButtonProps['variant'], theme: Theme) => {
 const StyledPillButton = styled(Button)<PillButtonProps>`
   border-radius: ${(p) => p.theme.spacing.unit(BORDER_RADIUS[p.size || 's'])}px;
   // TODO: [UC-102] replace border-color rules with getBorder func from Button.styles.tsx when feature flag check is not needed
-  border-color: ${(p) => (p.theme.isFeatureEnabled('roundedCorners') ? 'transparent' : '')};
+  border-color: transparent;
   ${(p) =>
     (isSecondary(p.variant) || isNegative(p.variant)) &&
     `background-color: ${p.theme.color.background}`};
@@ -40,29 +58,40 @@ const StyledPillButton = styled(Button)<PillButtonProps>`
   ${(p) =>
     (isSecondary(p.variant) || isNegative(p.variant) || isTertiary(p.variant)) &&
     !p.disabled &&
-    css`
+    `
       color: ${getButtonColor(p.variant, p.theme)};
       &:hover {
-        // TODO: [UC-102] replace border-color rules with getBorder func from Button.styles.tsx when feature flag check is not needed
-        border-color: ${p.theme.isFeatureEnabled('roundedCorners') ? 'transparent' : ''};
-        color: ${isNegative(p.variant)
-          ? p.theme.color.pillButtonBackgroundNegativeHover
-          : p.theme.color.pillButtonHoverSecondary};
-        ${isTertiary(p.variant)
-          ? `background-color: ${p.theme.color.pillButtonBackgroundTertiary}`
-          : `background-color: ${p.theme.color.background}`};
+        border-color: transparent;
+        color: ${
+          isNegative(p.variant)
+            ? p.theme.color.pillButtonBackgroundNegativeHover
+            : p.theme.color.pillButtonHoverSecondary
+        };
+        ${
+          isTertiary(p.variant)
+            ? `background-color: ${p.theme.color.pillButtonBackgroundTertiary}`
+            : `background-color: ${p.theme.color.background}`
+        };
       }
       &:active {
-        // TODO: [UC-102] replace border-color rules with getBorder func from Button.styles.tsx when feature flag check is not needed
-        border-color: ${p.theme.isFeatureEnabled('roundedCorners') ? 'transparent' : ''};
-        color: ${isNegative(p.variant)
-          ? p.theme.color.pillButtonBackgroundNegativeActive
-          : p.theme.color.pillButtonActiveSecondary};
-        ${isTertiary(p.variant)
-          ? `background-color: ${p.theme.color.pillButtonBackgroundTertiary}`
-          : `background-color: ${p.theme.color.background}`};
+        border-color: transparent;
+        color: ${
+          isNegative(p.variant)
+            ? p.theme.color.pillButtonBackgroundNegativeActive
+            : p.theme.color.pillButtonActiveSecondary
+        };
+        ${
+          isTertiary(p.variant)
+            ? `background-color: ${p.theme.color.pillButtonBackgroundTertiary}`
+            : `background-color: ${p.theme.color.background}`
+        };
       }
     `};
+  min-height: ${(p) => `${p.theme.spacing.unit(HEIGHT[p.size!])}px`};
+  padding: ${(p) => `
+    ${p.theme.spacing.unit(PADDING_VERTICAL[p.size!])}px
+    ${p.theme.spacing.unit(PADDING_HORIZONTAL[p.size!])}px
+  `};
 `;
 
 export const PillButton: PillButtonComponent = React.forwardRef<
