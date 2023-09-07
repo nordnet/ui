@@ -41,11 +41,14 @@ const minHeight = css<InnerProps>`
 
 const padding = css<InnerProps>`
   ${(p) => `
-    padding: calc(${p.theme.spacing.unit(
-      PADDING_VERTICAL[p.$size],
-    )}px - ${BORDER_SIZE}px) calc(${p.theme.spacing.unit(
-    PADDING_HORIZONTAL[p.$size],
-  )}px - ${BORDER_SIZE}px);
+    padding:
+      calc(
+        ${p.theme.spacing.unit(PADDING_VERTICAL[p.$size])}px - ${BORDER_SIZE}px
+      )
+      
+      calc(
+        ${p.theme.spacing.unit(PADDING_HORIZONTAL[p.$size])}px - ${BORDER_SIZE}px
+      );
   `}
 `;
 
