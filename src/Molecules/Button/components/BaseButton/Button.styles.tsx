@@ -147,14 +147,11 @@ export const secondaryStyles = css<InnerProps>`
       return p.theme.color.buttonActiveSecondary;
     })();
 
-    return `
+    return css`
       color: ${p.disabled ? p.theme.color.buttonTextDisabled : color};
-      ${getBorder(p.disabled ? 'transparent' : p.theme.color.buttonBorderSecondary)}
-
-      ${
-        p.disabled
-          ? ''
-          : `
+      ${p.disabled
+        ? ''
+        : `
         &:hover {
           color: ${hoverTextColor};
 
@@ -174,11 +171,10 @@ export const secondaryStyles = css<InnerProps>`
             };
           }
         }
-      `
-      }
+      `}
     `;
   }};
-  border-radius: ${(p) => p.theme.borderRadius100};
+  ${(p) => getBorder(p.disabled ? 'transparent' : p.theme.color.buttonBorderSecondary)}
 `;
 
 export const neutralStyles = css<InnerProps>`
