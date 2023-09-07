@@ -2,7 +2,6 @@ import { A11yTheme, LightTheme, DarkTheme } from '@nordnet/design-tokens';
 
 type FeatureToggles = {
   roundedCorners?: boolean;
-  someOtherFeature?: boolean;
 };
 
 export type MediaQuery = string;
