@@ -20,17 +20,8 @@ const PADDING_HORIZONTAL = {
 const BORDER_SIZE = 2;
 
 const getBorder = (color: string) => css`
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    border: ${BORDER_SIZE}px solid ${color};
-    top: 0;
-    left: 0;
-    width: calc(100% - ${BORDER_SIZE * 2}px);
-    height: calc(100% - ${BORDER_SIZE * 2}px);
-    border-radius: ${(p) => p.theme.borderRadius100};
-  }
+  border: ${BORDER_SIZE}px solid ${color};
+  border-radius: ${(p) => p.theme.borderRadius100};
 `;
 
 const shared = css<InnerProps>`
@@ -50,9 +41,11 @@ const minHeight = css<InnerProps>`
 
 const padding = css<InnerProps>`
   ${(p) => `
-    padding:
-      ${p.theme.spacing.unit(PADDING_VERTICAL[p.$size])}px
-      ${p.theme.spacing.unit(PADDING_HORIZONTAL[p.$size])}px;
+    padding: calc(${p.theme.spacing.unit(
+      PADDING_VERTICAL[p.$size],
+    )}px - ${BORDER_SIZE}px) calc(${p.theme.spacing.unit(
+    PADDING_HORIZONTAL[p.$size],
+  )}px - ${BORDER_SIZE}px);
   `}
 `;
 
@@ -88,7 +81,6 @@ export const primaryStyles = css<InnerProps>`
     }
   `;
   }}
-  border-radius: ${(p) => p.theme.borderRadius100};
 `;
 
 export const negativeStyles = css<InnerProps>`
@@ -115,7 +107,6 @@ export const negativeStyles = css<InnerProps>`
     }
   `;
   }}
-  border-radius: ${(p) => p.theme.borderRadius100};
 `;
 
 export const secondaryStyles = css<InnerProps>`
@@ -154,22 +145,16 @@ export const secondaryStyles = css<InnerProps>`
         : `
         &:hover {
           color: ${hoverTextColor};
-
-          &::before {
-            border-color: ${
-              customColor ? Color(color).darken(0.2) : p.theme.color.buttonHoverSecondary
-            };
-          }
+          border-color: ${
+            customColor ? Color(color).darken(0.2) : p.theme.color.buttonHoverSecondary
+          };
         }
 
         &:active {
           color: ${activeTextColor};
-
-          &::before {
-            border-color: ${
-              customColor ? Color(color).darken(0.3) : p.theme.color.buttonActiveSecondary
-            };
-          }
+          border-color: ${
+            customColor ? Color(color).darken(0.3) : p.theme.color.buttonActiveSecondary
+          };
         }
       `}
     `;
@@ -181,7 +166,7 @@ export const neutralStyles = css<InnerProps>`
   ${shared};
   padding: 0;
   background-color: transparent;
-
+  border: none;
   ${(p) => {
     const color = p.theme.isDarkMode
       ? (p.$colorFn && p.$colorFn(p.theme)) || p.theme.color.buttonTextLight

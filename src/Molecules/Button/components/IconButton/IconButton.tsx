@@ -35,9 +35,6 @@ const StyledIconButton = styled(Button)<{ size: 's' | 'm' }>`
     }
   `;
   }}
-  &::before {
-    display: none;
-  }
 `;
 
 export const IconButton: IconButtonComponent = React.forwardRef<

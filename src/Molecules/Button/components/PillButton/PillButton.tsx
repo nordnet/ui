@@ -67,10 +67,6 @@ const StyledPillButton = styled(Button)<PillButtonProps>`
        };
       }
   `};
-
-  &::before {
-    display: none;
-  }
 `;
 
 export const PillButton: PillButtonComponent = React.forwardRef<
