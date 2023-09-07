@@ -1,6 +1,7 @@
 import { css } from 'styled-components';
 import Color from 'color';
 import { InnerProps } from './Button.types';
+import { BORDER_RADIUS } from 'theme/theme.types';
 
 const HEIGHT = {
   s: 6,
@@ -19,7 +20,7 @@ const PADDING_HORIZONTAL = {
 };
 const BORDER_SIZE = 2;
 
-const getBorder = (color: string) => css`
+const getBorder = (color: string, borderRadius: string) => `
   &::before {
     content: '';
     display: block;
@@ -29,7 +30,7 @@ const getBorder = (color: string) => css`
     left: 0;
     width: calc(100% - ${BORDER_SIZE * 2}px);
     height: calc(100% - ${BORDER_SIZE * 2}px);
-    border-radius: ${(p) => p.theme.borderRadius100};
+    border-radius: ${borderRadius};
   }
 `;
 
@@ -67,7 +68,7 @@ export const primaryStyles = css<InnerProps>`
     return p.disabled ? p.theme.color.buttonBackgroundDisabled : background;
   }};
   color: ${(p) => (p.disabled ? p.theme.color.buttonTextDisabled : p.theme.color.buttonText)};
-  ${getBorder('transparent')}
+  ${(p) => getBorder('transparent', p.theme.borderRadius100)}
 
   ${(p) => {
     const customColor = p.$colorFn && p.$colorFn(p.theme);
@@ -101,7 +102,7 @@ export const negativeStyles = css<InnerProps>`
     return p.disabled ? p.theme.color.buttonBackgroundDisabled : background;
   }};
   color: ${(p) => (p.disabled ? p.theme.color.buttonTextDisabled : p.theme.color.buttonText)};
-  ${getBorder('transparent')}
+  ${(p) => getBorder('transparent', p.theme.borderRadius100)}
 
   ${(p) => {
     return p.disabled
@@ -149,7 +150,10 @@ export const secondaryStyles = css<InnerProps>`
 
     return `
       color: ${p.disabled ? p.theme.color.buttonTextDisabled : color};
-      ${getBorder(p.disabled ? 'transparent' : p.theme.color.buttonBorderSecondary)}
+      ${getBorder(
+        p.disabled ? 'transparent' : p.theme.color.buttonBorderSecondary,
+        p.theme.borderRadius100,
+      )}
 
       ${
         p.disabled
