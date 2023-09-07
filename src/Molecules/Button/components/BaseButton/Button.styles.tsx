@@ -1,5 +1,7 @@
 import { css } from 'styled-components';
 import Color from 'color';
+
+import { units } from '../../../../common/unitUtils';
 import { InnerProps } from './Button.types';
 
 const HEIGHT = {
@@ -16,6 +18,16 @@ const PADDING_HORIZONTAL = {
   s: 3,
   m: 3,
   l: 4,
+};
+const PADDING_HORIZONTAL_ROUNDED_CORNERS = {
+  s: 4,
+  m: 5,
+  l: 6,
+};
+const PADDING_VERTICAL_ROUNDED_CORNERS = {
+  s: 1.5,
+  m: 2,
+  l: 3,
 };
 const BORDER_SIZE = 2;
 
@@ -39,17 +51,21 @@ const minHeight = css<InnerProps>`
       : ''}
 `;
 
+const getPadding = (roundedCornersToggleEnabled: boolean, size: string) => {
+  const horizontalPadding = roundedCornersToggleEnabled
+    ? units(PADDING_HORIZONTAL_ROUNDED_CORNERS[size])
+    : units(PADDING_HORIZONTAL[size]);
+  const verticalPadding = roundedCornersToggleEnabled
+    ? units(PADDING_VERTICAL_ROUNDED_CORNERS[size])
+    : units(PADDING_VERTICAL[size]);
+  return css`
+    padding: calc(${verticalPadding}px - ${BORDER_SIZE}px)
+      calc(${horizontalPadding}px - ${BORDER_SIZE}px);
+  `;
+};
+
 const padding = css<InnerProps>`
-  ${(p) => `
-    padding:
-      calc(
-        ${p.theme.spacing.unit(PADDING_VERTICAL[p.$size])}px - ${BORDER_SIZE}px
-      )
-      
-      calc(
-        ${p.theme.spacing.unit(PADDING_HORIZONTAL[p.$size])}px - ${BORDER_SIZE}px
-      );
-  `}
+  ${(p) => getPadding(p.theme.isFeatureEnabled('roundedCorners'), p.$size)}
 `;
 
 export const primaryStyles = css<InnerProps>`
