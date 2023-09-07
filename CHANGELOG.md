@@ -1,3 +1,10 @@
+# [12.44.0](https://github.com/nordnet/ui/compare/v12.43.0...v12.44.0) (2023-09-07)
+
+
+### Features
+
+* add cloud icon ([#1413](https://github.com/nordnet/ui/issues/1413)) ([f768df3](https://github.com/nordnet/ui/commit/f768df3))
+
 # [12.43.0](https://github.com/nordnet/ui/compare/v12.42.1...v12.43.0) (2023-08-31)
 
 
