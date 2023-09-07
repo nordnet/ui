@@ -1,7 +1,6 @@
 import { css } from 'styled-components';
 import Color from 'color';
 import { InnerProps } from './Button.types';
-import { BORDER_RADIUS } from 'theme/theme.types';
 
 const HEIGHT = {
   s: 6,
