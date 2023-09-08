@@ -1,3 +1,10 @@
+## [12.44.1](https://github.com/nordnet/ui/compare/v12.44.0...v12.44.1) (2023-09-08)
+
+
+### Bug Fixes
+
+* borders adjustments after rounded corners ([#1417](https://github.com/nordnet/ui/issues/1417)) ([017479d](https://github.com/nordnet/ui/commit/017479d))
+
 # [12.44.0](https://github.com/nordnet/ui/compare/v12.43.0...v12.44.0) (2023-09-07)
 
 
