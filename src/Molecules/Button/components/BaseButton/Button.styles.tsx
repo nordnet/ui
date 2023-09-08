@@ -32,11 +32,6 @@ const PADDING_VERTICAL_ROUNDED_CORNERS = {
 
 const BORDER_SIZE = 2;
 
-const getBorder = (color: string) => css`
-  border: ${BORDER_SIZE}px solid ${color};
-  border-radius: ${(p) => p.theme.borderRadius100};
-`;
-
 const shared = css<InnerProps>`
   position: relative;
   box-sizing: border-box;
@@ -78,7 +73,8 @@ export const primaryStyles = css<InnerProps>`
     return p.disabled ? p.theme.color.buttonBackgroundDisabled : background;
   }};
   color: ${(p) => (p.disabled ? p.theme.color.buttonTextDisabled : p.theme.color.buttonText)};
-  ${getBorder('transparent')}
+  border: none;
+  border-radius: ${(p) => p.theme.borderRadius100};
 
   ${(p) => {
     const customColor = p.$colorFn && p.$colorFn(p.theme);
@@ -111,7 +107,8 @@ export const negativeStyles = css<InnerProps>`
     return p.disabled ? p.theme.color.buttonBackgroundDisabled : background;
   }};
   color: ${(p) => (p.disabled ? p.theme.color.buttonTextDisabled : p.theme.color.buttonText)};
-  ${getBorder('transparent')}
+  border: none;
+  border-radius: ${(p) => p.theme.borderRadius100};
 
   ${(p) => {
     return p.disabled
@@ -177,7 +174,9 @@ export const secondaryStyles = css<InnerProps>`
       `}
     `;
   }};
-  ${(p) => getBorder(p.disabled ? 'transparent' : p.theme.color.buttonBorderSecondary)}
+  border: ${BORDER_SIZE}px solid
+    ${(p) => (p.disabled ? 'transparent' : p.theme.color.buttonBorderSecondary)};
+  border-radius: ${(p) => p.theme.borderRadius100};
 `;
 
 export const neutralStyles = css<InnerProps>`

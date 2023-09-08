@@ -20,8 +20,7 @@ const StyledIconButton = styled(Button)<{ size: 's' | 'm' }>`
   align-items: center;
   height: ${(p) => p.theme.spacing.unit(SIZE[p.size || 'm'])}px;
   width: ${(p) => p.theme.spacing.unit(SIZE[p.size || 'm'])}px;
-  // TODO: [UC-102] replace border-color rules with getBorder func from Button.styles.tsx when feature flag check is not needed
-  border-color: transparent;
+  border: none;
   padding: 0;
   min-height: 0;
 
@@ -32,14 +31,10 @@ const StyledIconButton = styled(Button)<{ size: 's' | 'm' }>`
     &:hover {
       background-color: ${p.theme.color.pillButtonBackgroundTertiary};
       color: ${p.theme.color.pillButtonHoverSecondary};
-      // TODO: [UC-102] replace border-color rules with getBorder func from Button.styles.tsx when feature flag check is not needed
-      border-color: transparent;
     }
     &:active {
       background-color: ${p.theme.color.pillButtonBackgroundTertiary};
       color: ${p.theme.color.pillButtonActiveSecondary};
-      // TODO: [UC-102] replace border-color rules with getBorder func from Button.styles.tsx when feature flag check is not needed
-      border-color: transparent;
     }
   `;
   }}

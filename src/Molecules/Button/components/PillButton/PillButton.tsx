@@ -46,8 +46,7 @@ const getButtonColor = (variant: PillButtonProps['variant'], theme: Theme) => {
 
 const StyledPillButton = styled(Button)<PillButtonProps>`
   border-radius: ${(p) => p.theme.spacing.unit(BORDER_RADIUS[p.size || 's'])}px;
-  // TODO: [UC-102] replace border-color rules with getBorder func from Button.styles.tsx when feature flag check is not needed
-  border-color: transparent;
+  border: none;
   ${(p) =>
     (isSecondary(p.variant) || isNegative(p.variant)) &&
     `background-color: ${p.theme.color.background}`};
@@ -61,8 +60,6 @@ const StyledPillButton = styled(Button)<PillButtonProps>`
     `
     color: ${getButtonColor(p.variant, p.theme)};
     &:hover {
-      // TODO: [UC-102] replace border-color rules with getBorder func from Button.styles.tsx when feature flag check is not needed
-      border-color: transparent;
       color:
       ${
         isNegative(p.variant)
@@ -76,8 +73,6 @@ const StyledPillButton = styled(Button)<PillButtonProps>`
       };
     }
     &:active {
-      // TODO: [UC-102] replace border-color rules with getBorder func from Button.styles.tsx when feature flag check is not needed
-      border-color: transparent;
       color:
       ${
         isNegative(p.variant)
