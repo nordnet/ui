@@ -37,6 +37,7 @@ const shared = css<InnerProps>`
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
+  border: none;
   ${(p) => (p.$fullWidth ? `display: flex; width: 100%;` : `display: inline-flex;`)}
 `;
 
@@ -73,7 +74,6 @@ export const primaryStyles = css<InnerProps>`
     return p.disabled ? p.theme.color.buttonBackgroundDisabled : background;
   }};
   color: ${(p) => (p.disabled ? p.theme.color.buttonTextDisabled : p.theme.color.buttonText)};
-  border: none;
   border-radius: ${(p) => p.theme.borderRadius100};
 
   ${(p) => {
@@ -107,7 +107,6 @@ export const negativeStyles = css<InnerProps>`
     return p.disabled ? p.theme.color.buttonBackgroundDisabled : background;
   }};
   color: ${(p) => (p.disabled ? p.theme.color.buttonTextDisabled : p.theme.color.buttonText)};
-  border: none;
   border-radius: ${(p) => p.theme.borderRadius100};
 
   ${(p) => {
@@ -183,7 +182,6 @@ export const neutralStyles = css<InnerProps>`
   ${shared};
   padding: 0;
   background-color: transparent;
-  border: none;
   ${(p) => {
     const color = p.theme.isDarkMode
       ? (p.$colorFn && p.$colorFn(p.theme)) || p.theme.color.buttonTextLight
