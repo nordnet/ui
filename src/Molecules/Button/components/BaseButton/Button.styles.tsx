@@ -5,25 +5,29 @@ import { units } from '../../../../common/unitUtils';
 import { InnerProps } from './Button.types';
 
 const HEIGHT = {
-  s: 8,
-  m: 10,
-  l: 12,
+  s: 6,
+  m: 8,
+  l: 10,
 };
+
 const PADDING_VERTICAL = {
   s: 1,
-  m: 2,
-  l: 3,
+  m: 1,
+  l: 2,
 };
+
 const PADDING_HORIZONTAL = {
   s: 3,
   m: 3,
   l: 4,
 };
+
 const PADDING_HORIZONTAL_ROUNDED_CORNERS = {
   s: 4,
   m: 5,
   l: 6,
 };
+
 const PADDING_VERTICAL_ROUNDED_CORNERS = {
   s: 1,
   m: 2,
