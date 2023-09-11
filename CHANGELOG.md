@@ -1,3 +1,10 @@
+## [12.44.3](https://github.com/nordnet/ui/compare/v12.44.2...v12.44.3) (2023-09-11)
+
+
+### Bug Fixes
+
+* 🐛 revert back to old size when not rounded corners ([56d0c5e](https://github.com/nordnet/ui/commit/56d0c5e))
+
 ## [12.44.2](https://github.com/nordnet/ui/compare/v12.44.1...v12.44.2) (2023-09-11)
 
 
