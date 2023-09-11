@@ -1,3 +1,10 @@
+## [12.44.2](https://github.com/nordnet/ui/compare/v12.44.1...v12.44.2) (2023-09-11)
+
+
+### Bug Fixes
+
+* 🐛 rounded corners in breakpoint small ([3c7b940](https://github.com/nordnet/ui/commit/3c7b940))
+
 ## [12.44.1](https://github.com/nordnet/ui/compare/v12.44.0...v12.44.1) (2023-09-08)
 
 
