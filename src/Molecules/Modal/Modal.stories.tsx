@@ -9,6 +9,8 @@ import {
   Modal,
   Typography,
   SelectionCard,
+  Icon,
+  useMedia,
 } from '../..';
 
 const ScrollMaker = styled.div`
@@ -1399,6 +1401,7 @@ modalWithDisabledEscapePress.story = {
 export const modalWithProgressIndicator = () => {
   const Example = () => {
     const [value, setValue] = useState(false);
+    const isSmallScreen = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
 
     return (
       <Modal
@@ -1413,23 +1416,27 @@ export const modalWithProgressIndicator = () => {
         fixedBottomMobile
         fullScreenMobile={false}
       >
-        <Flexbox container gap={2}>
-          <Flexbox item width="50%">
+        <Flexbox container gap={2} direction={isSmallScreen ? 'column' : 'row'}>
+          <Flexbox item width={isSmallScreen ? '100%' : '50%'}>
             <SelectionCard
               border
-              title="Controlled selection card"
-              text="This component is controlled"
-              selected={value}
+              horizontal={!!isSmallScreen}
+              icon={<Icon.Book32 />}
               onChange={() => setValue(!value)}
+              selected={value}
+              text="This component is controlled"
+              title="Controlled selection card"
             />
           </Flexbox>
-          <Flexbox item width="50%">
+          <Flexbox item width={isSmallScreen ? '100%' : '50%'}>
             <SelectionCard
               border
-              title="Controlled selection card"
-              text="This component is controlled"
-              selected={value}
+              horizontal={!!isSmallScreen}
+              icon={<Icon.Book32 />}
               onChange={() => setValue(!value)}
+              selected={value}
+              text="This component is controlled"
+              title="Controlled selection card"
             />
           </Flexbox>
         </Flexbox>
