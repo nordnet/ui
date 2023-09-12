@@ -1,3 +1,10 @@
+## [12.44.4](https://github.com/nordnet/ui/compare/v12.44.3...v12.44.4) (2023-09-12)
+
+
+### Bug Fixes
+
+* revert to old button sizes ([#1419](https://github.com/nordnet/ui/issues/1419)) ([9f3597a](https://github.com/nordnet/ui/commit/9f3597a))
+
 ## [12.44.3](https://github.com/nordnet/ui/compare/v12.44.2...v12.44.3) (2023-09-11)
 
 
