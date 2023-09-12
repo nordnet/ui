@@ -303,7 +303,7 @@ export const ModalInner: React.FC<Props> = ({
                         {progressIndicatorDescription}
                       </Typography>
                       <Typography
-                        type={isSmallScreen ? 'primary' : 'title1'}
+                        type={isSmallScreen ? 'primary' : 'title2'}
                         weight="extrabold"
                         color={(t) => t.colorTokens.neutral.text_default}
                       >
