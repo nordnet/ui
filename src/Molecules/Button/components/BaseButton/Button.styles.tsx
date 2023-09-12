@@ -41,7 +41,6 @@ const shared = css<InnerProps>`
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  border: none;
   ${(p) => (p.$fullWidth ? `display: flex; width: 100%;` : `display: inline-flex;`)}
 `;
 
@@ -59,7 +58,8 @@ const getPadding = (roundedCornersToggleEnabled: boolean, size: string) => {
     : units(PADDING_VERTICAL[size]);
 
   return css`
-    padding: ${verticalPadding}px ${horizontalPadding}px;
+    padding: calc(${verticalPadding}px - ${BORDER_SIZE}px)
+      calc(${horizontalPadding}px - ${BORDER_SIZE}px);
   `;
 };
 
@@ -78,6 +78,7 @@ export const primaryStyles = css<InnerProps>`
     return p.disabled ? p.theme.color.buttonBackgroundDisabled : background;
   }};
   color: ${(p) => (p.disabled ? p.theme.color.buttonTextDisabled : p.theme.color.buttonText)};
+  border: ${BORDER_SIZE}px solid transparent;
   border-radius: ${(p) => p.theme.borderRadius100};
 
   ${(p) => {
@@ -111,6 +112,7 @@ export const negativeStyles = css<InnerProps>`
     return p.disabled ? p.theme.color.buttonBackgroundDisabled : background;
   }};
   color: ${(p) => (p.disabled ? p.theme.color.buttonTextDisabled : p.theme.color.buttonText)};
+  border: ${BORDER_SIZE}px solid transparent;
   border-radius: ${(p) => p.theme.borderRadius100};
 
   ${(p) => {
@@ -132,6 +134,9 @@ export const secondaryStyles = css<InnerProps>`
   ${padding}
   ${minHeight}
   background-color: ${(p) => (p.disabled ? p.theme.color.buttonBackgroundDisabled : 'transparent')};
+  border: ${BORDER_SIZE}px solid
+    ${(p) => (p.disabled ? 'transparent' : p.theme.color.buttonBorderSecondary)};
+  border-radius: ${(p) => p.theme.borderRadius100};
 
   ${(p) => {
     const customColor = p.$colorFn && p.$colorFn(p.theme);
@@ -177,15 +182,13 @@ export const secondaryStyles = css<InnerProps>`
       `}
     `;
   }};
-  border: ${BORDER_SIZE}px solid
-    ${(p) => (p.disabled ? 'transparent' : p.theme.color.buttonBorderSecondary)};
-  border-radius: ${(p) => p.theme.borderRadius100};
 `;
 
 export const neutralStyles = css<InnerProps>`
   ${shared};
   padding: 0;
   background-color: transparent;
+  border: none;
   ${(p) => {
     const color = p.theme.isDarkMode
       ? (p.$colorFn && p.$colorFn(p.theme)) || p.theme.color.buttonTextLight
