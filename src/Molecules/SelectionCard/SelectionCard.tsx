@@ -99,7 +99,7 @@ const StyledDiv = styled('div')<{
 }>`
   ${(p) => `
     text-align: ${p.$text ? 'left' : 'center'};
-    padding: ${p.theme.spacing.unit(5)}px;
+    padding: ${p.theme.spacing.unit(4)}px;
   `}
 
   ${(p) =>
@@ -160,7 +160,7 @@ export const SelectionCard: SelectionCardComponent = ({
     text
   ) : (
     <StyledFlexbox item>
-      <Typography color={(t) => t.color.selectionCardText} type="tertiary">
+      <Typography type="secondary" color={(t) => t.colorTokens.neutral.text_weak}>
         {text}
       </Typography>
     </StyledFlexbox>
@@ -191,14 +191,14 @@ export const SelectionCard: SelectionCardComponent = ({
 
         <StyledDiv $feature={hasFeature} $tag={Boolean(tag)} $text={Boolean(text)}>
           {horizontal && (
-            <Flexbox container direction="row" gutter={5} alignContent="center">
+            <Flexbox container direction="row" gap={3} alignContent="center">
               {hasIcon && (
                 <Flexbox item alignSelf="center">
                   {icon}
                 </Flexbox>
               )}
 
-              <Flexbox container direction="column" gutter={1} alignItems="flex-start">
+              <Flexbox item container direction="column" alignItems="flex-start">
                 {titleItem}
                 {textItem}
               </Flexbox>
@@ -206,14 +206,22 @@ export const SelectionCard: SelectionCardComponent = ({
           )}
 
           {!horizontal && (
-            <Flexbox container direction="column" alignItems="center" gutter={1}>
+            <Flexbox container direction="column" alignItems="center" gap={3}>
               {hasIcon && (
                 <Flexbox item {...(text && { alignSelf: 'flex-start' })}>
                   {icon}
                 </Flexbox>
               )}
-              {titleItem}
-              {textItem}
+              <Flexbox
+                item
+                container
+                direction="column"
+                {...(text && { alignSelf: 'flex-start' })}
+                width="100%"
+              >
+                {titleItem}
+                {textItem}
+              </Flexbox>
             </Flexbox>
           )}
         </StyledDiv>
