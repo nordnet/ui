@@ -324,18 +324,32 @@ export const WithForwardedRef: ComponentStory<typeof Select> = () => {
     buttonRef.current?.focus();
   };
 
-  const toggleOpen = () => {
-    buttonRef.current?.click();
+  return (
+    <div>
+      <Button onClick={focusButton}>Focus</Button>
+      <Box mt={2}>
+        <Select placeholder="Select a option..." ref={buttonRef}>
+          {options.map((option) => (
+            <Option key={option.value} value={option.value} label={option.label} />
+          ))}
+        </Select>
+      </Box>
+    </div>
+  );
+};
+
+export const WithForwardedRefPill: ComponentStory<typeof Select> = () => {
+  const buttonRef = useRef<HTMLButtonElement | null>(null);
+
+  const focusButton = () => {
+    buttonRef.current?.focus();
   };
 
   return (
     <div>
-      <Flexbox container gap={2}>
-        <Button onClick={focusButton}>Focus</Button>
-        <Button onClick={toggleOpen}>Toggle Open</Button>
-      </Flexbox>
+      <Button onClick={focusButton}>Focus</Button>
       <Box mt={2}>
-        <Select placeholder="Select a option..." ref={buttonRef}>
+        <Select placeholder="Select a option..." ref={buttonRef} slots={{ trigger: TriggerPill }}>
           {options.map((option) => (
             <Option key={option.value} value={option.value} label={option.label} />
           ))}
