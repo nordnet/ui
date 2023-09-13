@@ -32,6 +32,7 @@ const CheckmarkBox = styled(Flexbox)<{ size: number; shape: Shape }>`
   border: 1px solid ${(p) => p.theme.colorTokens.neutral.border_default};
   background: ${(p) => p.theme.colorTokens.neutral.background_default};
   position: relative;
+  box-sizing: border-box;
   flex-shrink: 0;
   ${(p) =>
     p.shape === Shape.Circle ? 'border-radius: 100%' : `border-radius: ${p.theme.borderRadius2}`};
