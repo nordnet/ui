@@ -1,3 +1,13 @@
+# [12.45.0](https://github.com/nordnet/ui/compare/v12.44.4...v12.45.0) (2023-09-13)
+
+
+### Features
+
+* 🎸 change header font size ([563598d](https://github.com/nordnet/ui/commit/563598d))
+* 🎸 change variable isSmallerScreen to isMobile ([cbb9186](https://github.com/nordnet/ui/commit/cbb9186))
+* 🎸 update isSmallScreen to isMobile in modal storybook ([fb8fd78](https://github.com/nordnet/ui/commit/fb8fd78))
+* 🎸 update padding on modal and Selection card ([7e0cce6](https://github.com/nordnet/ui/commit/7e0cce6))
+
 ## [12.44.4](https://github.com/nordnet/ui/compare/v12.44.3...v12.44.4) (2023-09-12)
 
 

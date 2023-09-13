@@ -8,7 +8,7 @@ import { BackdropProps, BackdropWrapperProps, DialogProps, Props } from './Modal
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Title } from './Title';
-import { Flexbox, OldIcon, ProgressIndicator, Typography, useKeyPress } from '../..';
+import { Flexbox, OldIcon, ProgressIndicator, Typography, useKeyPress, useMedia } from '../..';
 
 const PADDING_DESKTOP = 10;
 const PADDING_PROGRESS_INDICATOR = 14;
@@ -133,11 +133,16 @@ const CloseButton = styled(NormalizedElements.Button)`
       : `top:${p.theme.spacing.unit(PADDING_MOBILE)}px;`}
 `;
 
-export const Header = styled.div`
+export const Header = styled.div<{ $flexTitle?: boolean }>`
   padding-bottom: ${(p) => p.theme.spacing.unit(4)}px;
   padding-right: ${(p) => p.theme.spacing.unit(CLOSE_ICON_SIZE + 2)}px;
   min-height: ${(p) => p.theme.spacing.unit(CLOSE_ICON_SIZE)}px;
   flex: 0 0 auto;
+  display: ${(p) => (p.$flexTitle ? 'flex' : 'inherit')};
+  flex-direction: ${(p) => (p.$flexTitle ? 'column' : 'unset')};
+  ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
+    gap: ${(p) => (p.$flexTitle ? '4px' : '0')};
+  }
 `;
 
 export const Footer = styled.div`
@@ -206,6 +211,7 @@ export const ModalInner: React.FC<Props> = ({
 }) => {
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
+  const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
   const animationProps = {
     initial: {
       opacity: 0,
@@ -286,11 +292,27 @@ export const ModalInner: React.FC<Props> = ({
               )}
 
               {hasHeader && (
-                <Header>
-                  {progressIndicatorDescription && (
-                    <Typography type="secondary">{progressIndicatorDescription}</Typography>
+                <Header $flexTitle={progressIndicatorDescription !== undefined}>
+                  {title && progressIndicatorDescription ? (
+                    <>
+                      <Typography
+                        type="secondary"
+                        weight="bold"
+                        color={(t) => t.colorTokens.neutral.text_weak}
+                      >
+                        {progressIndicatorDescription}
+                      </Typography>
+                      <Typography
+                        type={isMobile ? 'primary' : 'title2'}
+                        weight="extrabold"
+                        color={(t) => t.colorTokens.neutral.text_default}
+                      >
+                        {title}
+                      </Typography>
+                    </>
+                  ) : (
+                    <Title title={title} uid={titleId} />
                   )}
-                  {title && <Title title={title} uid={titleId} />}
                 </Header>
               )}
               {children}
