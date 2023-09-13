@@ -59,7 +59,9 @@ export const Trigger = forwardRef<HTMLButtonElement, Props>(function TriggerComp
   props: Props,
   ref,
 ) {
-  const { size, ...rest } = props;
+  const { size, hasError, hasValue, ...rest } = props;
 
-  return <StyledButton $size={size} ref={ref} {...rest} />;
+  return (
+    <StyledButton $size={size} $hasError={hasError} $hasValue={hasValue} ref={ref} {...rest} />
+  );
 });
