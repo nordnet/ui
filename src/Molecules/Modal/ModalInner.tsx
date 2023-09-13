@@ -211,7 +211,7 @@ export const ModalInner: React.FC<Props> = ({
 }) => {
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
-  const isSmallScreen = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
+  const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
   const animationProps = {
     initial: {
       opacity: 0,
@@ -303,7 +303,7 @@ export const ModalInner: React.FC<Props> = ({
                         {progressIndicatorDescription}
                       </Typography>
                       <Typography
-                        type={isSmallScreen ? 'primary' : 'title2'}
+                        type={isMobile ? 'primary' : 'title2'}
                         weight="extrabold"
                         color={(t) => t.colorTokens.neutral.text_default}
                       >
