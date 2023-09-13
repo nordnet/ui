@@ -13,42 +13,31 @@ const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement
 ));
 
 const Circle = styled.div`
-  width: ${(p) => p.theme.spacing.unit(RADIO_SIZE) - 2}px;
-  height: ${(p) => p.theme.spacing.unit(RADIO_SIZE) - 2}px;
-  border: 1px solid ${(p) => p.theme.color.inputBorder};
-  background-color: ${(p) => p.theme.color.inputBackground};
+  width: ${(p) => p.theme.spacing.unit(RADIO_SIZE)}px;
+  height: ${(p) => p.theme.spacing.unit(RADIO_SIZE)}px;
+  border: 1px solid ${(p) => p.theme.colorTokens.neutral.border_default};
+  background-color: ${(p) => p.theme.colorTokens.neutral.background_default};
   position: relative;
   border-radius: 50%;
+  box-sizing: border-box;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
-  &::before,
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &::before {
-    width: 100%;
-    height: 100%;
-    padding: 2px;
-  }
-
-  &::after {
-    width: ${(p) => p.theme.spacing.unit(RADIO_SIZE - 2) - 1}px;
-    height: ${(p) => p.theme.spacing.unit(RADIO_SIZE - 2) - 1}px;
-  }
+const Dot = styled.div`
+  width: ${(p) => p.theme.spacing.unit(RADIO_SIZE - 2)}px;
+  height: ${(p) => p.theme.spacing.unit(RADIO_SIZE - 2)}px;
+  background-color: transparent;
+  border-radius: 50%;
 `;
 
 const StyledFormLabel = styled(FormLabel)`
   position: relative;
 
   &:hover ${Circle} {
-    border-color: ${(p) => p.theme.color.inputBorderHover};
+    border-color: ${(p) => p.theme.colorTokens.action.border_default};
   }
 `;
 
@@ -60,19 +49,19 @@ const Input = styled(CleanInput).attrs(() => ({ type: 'radio' }))<InternalInputP
   cursor: pointer;
 
   &:checked + ${Circle} {
-    &::after {
-      background: ${(p) => p.theme.color.cta};
+    ${Dot} {
+      background-color: ${(p) => p.theme.colorTokens.action.background_default};
     }
   }
 
   &[disabled] + ${Circle} {
-    border-color: ${(p) => p.theme.color.disabledBackground};
+    border-color: ${(p) => p.theme.colorTokens.neutral.border_disabled};
   }
 
   &:checked[disabled] + ${Circle} {
-    border-color: ${(p) => p.theme.color.disabledBackground};
-    &::after {
-      background: ${(p) => p.theme.color.disabledBackground};
+    border-color: ${(p) => p.theme.colorTokens.neutral.border_disabled};
+    ${Dot} {
+      background-color: ${(p) => p.theme.colorTokens.neutral.background_disabled};
     }
   }
 
@@ -80,16 +69,13 @@ const Input = styled(CleanInput).attrs(() => ({ type: 'radio' }))<InternalInputP
     p.hasError
       ? `
     & + ${Circle} {
-      &::before {
-        border: 1px solid ${p.theme.color.inputBorderError};
-      }
+      border-color: ${p.theme.colorTokens.error.border_default};
     }`
       : ''}
 
   &:focus + ${Circle} {
-    &::before {
-      border: 1px solid ${(p) => p.theme.color.cta};
-    }
+    border-color ${(p) => p.theme.colorTokens.action.border_default};
+    box-shadow: 0 0 0 2px ${(p) => p.theme.colorTokens.action.border_focus};
   }
 `;
 
@@ -150,7 +136,11 @@ const Radio: RadioComponent = (props) => {
               value,
             }}
           />
-          {!noRadioCircle && <Circle />}
+          {!noRadioCircle && (
+            <Circle>
+              <Dot />
+            </Circle>
+          )}
           {children ||
             (!hideLabel ? (
               <Label
