@@ -1401,7 +1401,7 @@ modalWithDisabledEscapePress.story = {
 export const modalWithProgressIndicator = () => {
   const Example = () => {
     const [value, setValue] = useState(false);
-    const isSmallScreen = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
+    const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
 
     return (
       <Modal
@@ -1416,11 +1416,11 @@ export const modalWithProgressIndicator = () => {
         fixedBottomMobile
         fullScreenMobile={false}
       >
-        <Flexbox container gap={2} direction={isSmallScreen ? 'column' : 'row'}>
-          <Flexbox item width={isSmallScreen ? '100%' : '50%'}>
+        <Flexbox container gap={2} direction={isMobile ? 'column' : 'row'}>
+          <Flexbox item width={isMobile ? '100%' : '50%'}>
             <SelectionCard
               border
-              horizontal={!!isSmallScreen}
+              horizontal={!!isMobile}
               icon={<Icon.Book32 />}
               onChange={() => setValue(!value)}
               selected={value}
@@ -1428,10 +1428,10 @@ export const modalWithProgressIndicator = () => {
               title="Controlled selection card"
             />
           </Flexbox>
-          <Flexbox item width={isSmallScreen ? '100%' : '50%'}>
+          <Flexbox item width={isMobile ? '100%' : '50%'}>
             <SelectionCard
               border
-              horizontal={!!isSmallScreen}
+              horizontal={!!isMobile}
               icon={<Icon.Book32 />}
               onChange={() => setValue(!value)}
               selected={value}
