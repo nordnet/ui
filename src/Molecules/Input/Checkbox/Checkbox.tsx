@@ -69,6 +69,10 @@ const Input = styled(CleanInput).attrs(() => ({ type: 'checkbox' }))<InternalInp
   &:checked[disabled] + ${CheckmarkBox} {
     border-color: ${(p) => p.theme.colorTokens.neutral.background_disabled};
     background: ${(p) => p.theme.colorTokens.neutral.background_disabled};
+
+    svg {
+      fill: ${(p) => p.theme.colorTokens.neutral.icon_disabled};
+    }
   }
 
   ${(p) =>
