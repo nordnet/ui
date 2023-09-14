@@ -1,3 +1,10 @@
+## [12.45.2](https://github.com/nordnet/ui/compare/v12.45.1...v12.45.2) (2023-09-14)
+
+
+### Bug Fixes
+
+* update radio to align with design ([#1422](https://github.com/nordnet/ui/issues/1422)) ([9c3ccd0](https://github.com/nordnet/ui/commit/9c3ccd0))
+
 ## [12.45.1](https://github.com/nordnet/ui/compare/v12.45.0...v12.45.1) (2023-09-14)
 
 
