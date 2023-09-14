@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import styled from 'styled-components';
 import { Flexbox, Input, CssGrid as Grid, Typography } from '../..';
 
 import { ControlsListItemSelect as Props } from './ControlsListItem.types';
@@ -16,6 +17,12 @@ const GRID = {
   templateRows:['auto', '1fr'],
   gutter: {row: 1, col: 2}
 }
+
+export const StyledInput = styled(Input.Select)`
+  li + li {
+    border-top: none;
+  }
+`;
 
 const ControlsListItemSelect: React.FC<Props> = ({
   label,
@@ -45,7 +52,7 @@ const ControlsListItemSelect: React.FC<Props> = ({
         <Typography type="secondary" color={(t) => t.color.label}>
           {label}
         </Typography>
-        <Input.Select
+        <StyledInput
           id="control-list-item-select"
           label={label}
           components={customComponents}
@@ -76,7 +83,7 @@ const ControlsListItemSelect: React.FC<Props> = ({
         </Grid.Item>
 
         <Grid.Item area="button" justify="end" align="center">
-          <Input.Select
+          <StyledInput
             id="control-list-item-select"
             label={label}
             components={customComponents}

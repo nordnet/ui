@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { OptionItem } from '../Input/Select/Select.types';
 
 import ControlsListItem from '.';
-import { Icon, Separator } from '../..';
+import { Icon, List, Separator } from '../..';
 
 export default {
   title: 'Molecules / ControlsListItem',
@@ -127,7 +127,7 @@ export const ControlsListItemSwitchWithAddon = () => {
       Icon={<Icon.Account24 />}
       description="description is good otherwise we don't understand"
       onChange={() => setIsChecked(!isChecked)}
-      addon={ControlsListItemSelectWithoutDescription(true, false, true, undefined)}
+      addon={ControlsListItemSelectWithoutDescription(true, true, false, undefined)}
     />
   );
 };
@@ -306,4 +306,28 @@ export const ControlsListItemRadioWithAddonRightAlignedFixedMinWidth = () => {
 
 ControlsListItemRadioWithAddonRightAlignedFixedMinWidth.story = {
   name: 'Controls list item Radio with addon component right aligned and fixed min-width',
+};
+
+export const ControlsListWithLotsOfItems = () => {
+  return (
+    <div style={{ width: '80%', margin: 20, background: 'white' }}>
+      <List separated>
+        <ControlsListItemButtonWithIcon24 />
+        <ControlsListItemButtonWithIcon16 />
+        <ControlsListItemSelect />
+        <ControlsListItemSelect />
+        <ControlsListItemSwitch />
+        <ControlsListItemSwitchWithAddon />
+        <ControlsListItemSwitchDisabled />
+        <ControlsListItemRadio />
+        <ControlsListItemRadioWithAddon />
+        <ControlsListItemRadioWithAddonRightAligned />
+        <ControlsListItemRadioWithAddonRightAlignedFixedMinWidth />
+      </List>
+    </div>
+  );
+};
+
+ControlsListWithLotsOfItems.story = {
+  name: 'Controls list with lots of items',
 };
