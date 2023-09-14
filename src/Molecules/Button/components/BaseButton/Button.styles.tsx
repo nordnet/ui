@@ -5,25 +5,29 @@ import { units } from '../../../../common/unitUtils';
 import { InnerProps } from './Button.types';
 
 const HEIGHT = {
-  s: 8,
-  m: 10,
-  l: 12,
+  s: 6,
+  m: 8,
+  l: 10,
 };
+
 const PADDING_VERTICAL = {
   s: 1,
-  m: 2,
-  l: 3,
+  m: 1,
+  l: 2,
 };
+
 const PADDING_HORIZONTAL = {
   s: 3,
   m: 3,
   l: 4,
 };
+
 const PADDING_HORIZONTAL_ROUNDED_CORNERS = {
   s: 4,
   m: 5,
   l: 6,
 };
+
 const PADDING_VERTICAL_ROUNDED_CORNERS = {
   s: 1,
   m: 2,
@@ -31,11 +35,6 @@ const PADDING_VERTICAL_ROUNDED_CORNERS = {
 };
 
 const BORDER_SIZE = 2;
-
-const getBorder = (color: string) => css`
-  border: ${BORDER_SIZE}px solid ${color};
-  border-radius: ${(p) => p.theme.borderRadius100};
-`;
 
 const shared = css<InnerProps>`
   position: relative;
@@ -59,7 +58,8 @@ const getPadding = (roundedCornersToggleEnabled: boolean, size: string) => {
     : units(PADDING_VERTICAL[size]);
 
   return css`
-    padding: ${verticalPadding}px ${horizontalPadding}px;
+    padding: calc(${verticalPadding}px - ${BORDER_SIZE}px)
+      calc(${horizontalPadding}px - ${BORDER_SIZE}px);
   `;
 };
 
@@ -78,7 +78,8 @@ export const primaryStyles = css<InnerProps>`
     return p.disabled ? p.theme.color.buttonBackgroundDisabled : background;
   }};
   color: ${(p) => (p.disabled ? p.theme.color.buttonTextDisabled : p.theme.color.buttonText)};
-  ${getBorder('transparent')}
+  border: ${BORDER_SIZE}px solid transparent;
+  border-radius: ${(p) => p.theme.borderRadius100};
 
   ${(p) => {
     const customColor = p.$colorFn && p.$colorFn(p.theme);
@@ -111,7 +112,8 @@ export const negativeStyles = css<InnerProps>`
     return p.disabled ? p.theme.color.buttonBackgroundDisabled : background;
   }};
   color: ${(p) => (p.disabled ? p.theme.color.buttonTextDisabled : p.theme.color.buttonText)};
-  ${getBorder('transparent')}
+  border: ${BORDER_SIZE}px solid transparent;
+  border-radius: ${(p) => p.theme.borderRadius100};
 
   ${(p) => {
     return p.disabled
@@ -132,6 +134,9 @@ export const secondaryStyles = css<InnerProps>`
   ${padding}
   ${minHeight}
   background-color: ${(p) => (p.disabled ? p.theme.color.buttonBackgroundDisabled : 'transparent')};
+  border: ${BORDER_SIZE}px solid
+    ${(p) => (p.disabled ? 'transparent' : p.theme.color.buttonBorderSecondary)};
+  border-radius: ${(p) => p.theme.borderRadius100};
 
   ${(p) => {
     const customColor = p.$colorFn && p.$colorFn(p.theme);
@@ -177,7 +182,6 @@ export const secondaryStyles = css<InnerProps>`
       `}
     `;
   }};
-  ${(p) => getBorder(p.disabled ? 'transparent' : p.theme.color.buttonBorderSecondary)}
 `;
 
 export const neutralStyles = css<InnerProps>`

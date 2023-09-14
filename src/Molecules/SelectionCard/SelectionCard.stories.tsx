@@ -83,6 +83,23 @@ export const withImage = () => {
 
 withImage.storyName = 'With image';
 
+export const WithIconAndText = Template.bind({});
+WithIconAndText.args = {
+  ...SelectionCardDefault,
+  title: 'Title and Icon',
+  text: 'Description for title and icon',
+  icon: <Icon.Book32 />,
+};
+
+export const WithIconAndTextHorizontal = Template.bind({});
+WithIconAndTextHorizontal.args = {
+  ...SelectionCardDefault,
+  title: 'Title and Icon',
+  text: 'Description for title and icon',
+  icon: <Icon.Book32 />,
+  horizontal: true,
+};
+
 export const withValueControlledBehavior = () => {
   const Component = () => {
     const [value, setValue] = useState(false);

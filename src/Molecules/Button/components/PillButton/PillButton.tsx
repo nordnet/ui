@@ -15,24 +15,6 @@ const BORDER_RADIUS = {
   l: 5,
 };
 
-const HEIGHT = {
-  s: 6,
-  m: 8,
-  l: 8,
-};
-
-const PADDING_VERTICAL = {
-  s: 0,
-  m: 1,
-  l: 1,
-};
-
-const PADDING_HORIZONTAL = {
-  s: 3,
-  m: 4,
-  l: 4,
-};
-
 const getButtonColor = (variant: PillButtonProps['variant'], theme: Theme) => {
   switch (variant) {
     case 'negative':
@@ -46,7 +28,6 @@ const getButtonColor = (variant: PillButtonProps['variant'], theme: Theme) => {
 
 const StyledPillButton = styled(Button)<PillButtonProps>`
   border-radius: ${(p) => p.theme.spacing.unit(BORDER_RADIUS[p.size || 's'])}px;
-  // TODO: [UC-102] replace border-color rules with getBorder func from Button.styles.tsx when feature flag check is not needed
   border-color: transparent;
   ${(p) =>
     (isSecondary(p.variant) || isNegative(p.variant)) &&
@@ -59,38 +40,33 @@ const StyledPillButton = styled(Button)<PillButtonProps>`
     (isSecondary(p.variant) || isNegative(p.variant) || isTertiary(p.variant)) &&
     !p.disabled &&
     `
-      color: ${getButtonColor(p.variant, p.theme)};
-      &:hover {
-        border-color: transparent;
-        color: ${
-          isNegative(p.variant)
-            ? p.theme.color.pillButtonBackgroundNegativeHover
-            : p.theme.color.pillButtonHoverSecondary
-        };
-        ${
-          isTertiary(p.variant)
-            ? `background-color: ${p.theme.color.pillButtonBackgroundTertiary}`
-            : `background-color: ${p.theme.color.background}`
-        };
+    color: ${getButtonColor(p.variant, p.theme)};
+    &:hover {
+      color:
+      ${
+        isNegative(p.variant)
+          ? p.theme.color.pillButtonBackgroundNegativeHover
+          : p.theme.color.pillButtonHoverSecondary
+      };
+      ${
+        isTertiary(p.variant)
+          ? `background-color: ${p.theme.color.pillButtonBackgroundTertiary}`
+          : `background-color: ${p.theme.color.background}`
+      };
+    }
+    &:active {
+      color:
+      ${
+        isNegative(p.variant)
+          ? p.theme.color.pillButtonBackgroundNegativeActive
+          : p.theme.color.pillButtonActiveSecondary
+      };
+       ${
+         isTertiary(p.variant)
+           ? `background-color: ${p.theme.color.pillButtonBackgroundTertiary}`
+           : `background-color: ${p.theme.color.background}`
+       };
       }
-      &:active {
-        border-color: transparent;
-        color: ${
-          isNegative(p.variant)
-            ? p.theme.color.pillButtonBackgroundNegativeActive
-            : p.theme.color.pillButtonActiveSecondary
-        };
-        ${
-          isTertiary(p.variant)
-            ? `background-color: ${p.theme.color.pillButtonBackgroundTertiary}`
-            : `background-color: ${p.theme.color.background}`
-        };
-      }
-    `};
-  min-height: ${(p) => `${p.theme.spacing.unit(HEIGHT[p.size!])}px`};
-  padding: ${(p) => `
-    ${p.theme.spacing.unit(PADDING_VERTICAL[p.size!])}px
-    ${p.theme.spacing.unit(PADDING_HORIZONTAL[p.size!])}px
   `};
 `;
 
