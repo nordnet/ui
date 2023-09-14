@@ -260,6 +260,7 @@ const Slider: Component = ({
                   position="center"
                   placement="top"
                   invertedColors
+                  triangle
                   style={{
                     position: 'absolute',
                     ...(hoverPosition && {
