@@ -12,6 +12,8 @@ const StyledSelect = styled.select`
   display: none;
 `;
 
+const NOOP = () => {}; // to avoid warnings in the browser
+
 export function HiddenSelect(props: Props) {
   /**
    * This component is only used to be able to include values from select in a form submit.
@@ -20,13 +22,9 @@ export function HiddenSelect(props: Props) {
   const { name, value, multiple, options } = props;
 
   return (
-    <StyledSelect name={name} multiple={multiple} defaultValue={value} aria-hidden="true">
+    <StyledSelect name={name} multiple={multiple} aria-hidden="true" value={value} onChange={NOOP}>
       {options.map((option) => (
-        <option
-          key={option}
-          value={option}
-          selected={Array.isArray(value) ? value.includes(option) : value === option}
-        >
+        <option key={option} value={option}>
           {option}
         </option>
       ))}

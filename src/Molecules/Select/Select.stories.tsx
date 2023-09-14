@@ -75,7 +75,7 @@ export default {
 } as ComponentMeta<typeof Select>;
 
 export const Primary: ComponentStory<typeof Select> = () => (
-  <Select placeholder="Select a option..." name="my-select">
+  <Select name="my-select" placeholder="Select a option...">
     {options.map((option) => (
       <Option key={option.value} value={option.value} label={option.label} />
     ))}
@@ -83,7 +83,7 @@ export const Primary: ComponentStory<typeof Select> = () => (
 );
 
 export const CustomOption: ComponentStory<typeof Select> = () => (
-  <Select placeholder="Select a country...">
+  <Select name="my-select" placeholder="Select a country...">
     {countryOptions.map((option) => (
       <Option key={option.value} value={option.value} label={option.label}>
         <Flexbox container alignItems="center" gap={2}>
@@ -105,7 +105,7 @@ export const DifferentSizes: ComponentStory<typeof Select> = () => (
       {
         title: 'Default (medium) size',
         component: (
-          <Select size="m" placeholder="Select a option...">
+          <Select name="my-select" size="m" placeholder="Select a option...">
             {options.map((option) => (
               <Option key={`${option.value}-m`} value={option.value} label={option.label} />
             ))}
@@ -115,7 +115,7 @@ export const DifferentSizes: ComponentStory<typeof Select> = () => (
       {
         title: 'Small size',
         component: (
-          <Select size="s" placeholder="Select a option...">
+          <Select name="my-small-select" size="s" placeholder="Select a option...">
             {options.map((option) => (
               <Option key={`${option.value}-s`} value={option.value} label={option.label} />
             ))}
@@ -128,7 +128,7 @@ export const DifferentSizes: ComponentStory<typeof Select> = () => (
 
 export const WithFormField: ComponentStory<typeof Select> = () => (
   <FormField label="Label" required extraInfo="Extra info">
-    <Select placeholder="Select a option...">
+    <Select name="my-select" placeholder="Select a option...">
       {options.map((option) => (
         <Option key={option.value} value={option.value} label={option.label} />
       ))}
@@ -138,7 +138,7 @@ export const WithFormField: ComponentStory<typeof Select> = () => (
 
 export const WithError: ComponentStory<typeof Select> = () => (
   <FormField error="Error message" label="Label">
-    <Select placeholder="Select a option..." hasError>
+    <Select name="my-select" placeholder="Select a option..." hasError>
       {options.map((option) => (
         <Option key={option.value} value={option.value} label={option.label} />
       ))}
@@ -147,7 +147,7 @@ export const WithError: ComponentStory<typeof Select> = () => (
 );
 
 export const Disabled: ComponentStory<typeof Select> = () => (
-  <Select placeholder="Select a option..." disabled>
+  <Select name="my-select" placeholder="Select a option..." disabled>
     {options.map((option) => (
       <Option key={option.value} value={option.value} label={option.label} />
     ))}
@@ -155,7 +155,7 @@ export const Disabled: ComponentStory<typeof Select> = () => (
 );
 
 export const GroupedOptions: ComponentStory<typeof Select> = () => (
-  <Select placeholder="Select a option...">
+  <Select name="my-select" placeholder="Select a option...">
     <Group label="First Group">
       {options.map((option) => (
         <Option key={option.value} value={option.value} label={option.label} />
@@ -174,6 +174,7 @@ export const MultiSelect: ComponentStory<typeof Select> = () => {
 
   return (
     <Select
+      name="my-select"
       multiple
       onChange={(e, value) => setSelectedCount(value ? value.length : 0)}
       valueDisplay={
@@ -196,6 +197,7 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
 
   return (
     <Select
+      name="my-select"
       multiple
       placeholder="Select a option..."
       onChange={(e, value) => setSelectedCount(value ? value.length : 0)}
@@ -223,6 +225,7 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
 
 export const WithActionsInFooter: ComponentStory<typeof Select> = () => (
   <Select
+    name="my-select"
     placeholder="Select a option..."
     listBoxFooter={
       <ListBoxFooter>
@@ -251,6 +254,7 @@ export const ControlledWithToggleAll: ComponentStory<typeof Select> = () => {
 
   return (
     <Select
+      name="my-select"
       placeholder="Select a option..."
       listBoxHeader={
         <ListBoxHeader withBorder>
@@ -285,6 +289,7 @@ export const WithSearchInHeader: ComponentStory<typeof Select> = () => {
 
   return (
     <Select
+      name="my-select"
       placeholder="Select a option..."
       listBoxHeader={
         <ListBoxHeader>
@@ -310,7 +315,7 @@ export const WithSearchInHeader: ComponentStory<typeof Select> = () => {
 };
 
 export const WithPillShape: ComponentStory<typeof Select> = () => (
-  <Select placeholder="Select a option..." slots={{ trigger: TriggerPill }}>
+  <Select name="my-select" placeholder="Select a option..." slots={{ trigger: TriggerPill }}>
     {options.map((option) => (
       <Option key={option.value} value={option.value} label={option.label} />
     ))}
@@ -328,7 +333,7 @@ export const WithForwardedRef: ComponentStory<typeof Select> = () => {
     <div>
       <Button onClick={focusButton}>Focus</Button>
       <Box mt={2}>
-        <Select placeholder="Select a option..." ref={buttonRef}>
+        <Select name="my-select" placeholder="Select a option..." ref={buttonRef}>
           {options.map((option) => (
             <Option key={option.value} value={option.value} label={option.label} />
           ))}
@@ -349,7 +354,12 @@ export const WithForwardedRefPill: ComponentStory<typeof Select> = () => {
     <div>
       <Button onClick={focusButton}>Focus</Button>
       <Box mt={2}>
-        <Select placeholder="Select a option..." ref={buttonRef} slots={{ trigger: TriggerPill }}>
+        <Select
+          name="my-select"
+          placeholder="Select a option..."
+          ref={buttonRef}
+          slots={{ trigger: TriggerPill }}
+        >
           {options.map((option) => (
             <Option key={option.value} value={option.value} label={option.label} />
           ))}
