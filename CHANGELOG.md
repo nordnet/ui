@@ -1,3 +1,20 @@
+## [12.45.3](https://github.com/nordnet/ui/compare/v12.45.2...v12.45.3) (2023-09-14)
+
+
+### Bug Fixes
+
+* add isFeatureEnabled to theme ([9e6158f](https://github.com/nordnet/ui/commit/9e6158f))
+* boolean check and add triangle to story ([3e6f930](https://github.com/nordnet/ui/commit/3e6f930))
+* button height and paddings ([a8cd9bc](https://github.com/nordnet/ui/commit/a8cd9bc))
+* check if feature roundedCorners is true ([1e2d0be](https://github.com/nordnet/ui/commit/1e2d0be))
+* getPadding ([bd4108e](https://github.com/nordnet/ui/commit/bd4108e))
+* no arrow when rounded corners is enabled ([084beb9](https://github.com/nordnet/ui/commit/084beb9))
+* remove before ([789487e](https://github.com/nordnet/ui/commit/789487e))
+* remove unsued import ([20726a1](https://github.com/nordnet/ui/commit/20726a1))
+* transparent borders in button.pill ([b519681](https://github.com/nordnet/ui/commit/b519681))
+* use css function ([8e774ba](https://github.com/nordnet/ui/commit/8e774ba))
+* wip border radius ([624a91b](https://github.com/nordnet/ui/commit/624a91b))
+
 ## [12.45.2](https://github.com/nordnet/ui/compare/v12.45.1...v12.45.2) (2023-09-14)
 
 
