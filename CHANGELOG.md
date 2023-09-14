@@ -1,3 +1,10 @@
+## [12.45.1](https://github.com/nordnet/ui/compare/v12.45.0...v12.45.1) (2023-09-14)
+
+
+### Bug Fixes
+
+* update checkbox styles ([#1421](https://github.com/nordnet/ui/issues/1421)) ([d7ff676](https://github.com/nordnet/ui/commit/d7ff676))
+
 # [12.45.0](https://github.com/nordnet/ui/compare/v12.44.4...v12.45.0) (2023-09-13)
 
 
