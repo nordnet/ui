@@ -74,7 +74,7 @@ const Input = styled(CleanInput).attrs(() => ({ type: 'radio' }))<InternalInputP
       : ''}
 
   &:focus + ${Circle} {
-    border-color ${(p) => p.theme.colorTokens.action.border_default};
+    border-color: ${(p) => p.theme.colorTokens.action.border_default};
     box-shadow: 0 0 0 2px ${(p) => p.theme.colorTokens.action.border_focus};
   }
 `;
