@@ -1,5 +1,7 @@
 import { css } from 'styled-components';
 import Color from 'color';
+
+import { units } from '../../../../common/unitUtils';
 import { InnerProps } from './Button.types';
 
 const HEIGHT = {
@@ -7,31 +9,32 @@ const HEIGHT = {
   m: 8,
   l: 10,
 };
+
 const PADDING_VERTICAL = {
   s: 1,
   m: 1,
   l: 2,
 };
+
 const PADDING_HORIZONTAL = {
   s: 3,
   m: 3,
   l: 4,
 };
-const BORDER_SIZE = 2;
 
-const getBorder = (color: string) => css`
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    border: ${BORDER_SIZE}px solid ${color};
-    top: 0;
-    left: 0;
-    width: calc(100% - ${BORDER_SIZE * 2}px);
-    height: calc(100% - ${BORDER_SIZE * 2}px);
-    border-radius: ${(p) => p.theme.borderRadius100};
-  }
-`;
+const PADDING_HORIZONTAL_ROUNDED_CORNERS = {
+  s: 4,
+  m: 5,
+  l: 6,
+};
+
+const PADDING_VERTICAL_ROUNDED_CORNERS = {
+  s: 1,
+  m: 2,
+  l: 2,
+};
+
+const BORDER_SIZE = 2;
 
 const shared = css<InnerProps>`
   position: relative;
@@ -42,18 +45,26 @@ const shared = css<InnerProps>`
 `;
 
 const minHeight = css<InnerProps>`
-  ${(p) =>
-    p.$size === 'm' || p.$size === 'l'
-      ? `min-height: ${p.theme.spacing.unit(HEIGHT[p.$size])}px;`
-      : ''}
+  min-height: ${(p) => `${p.theme.spacing.unit(HEIGHT[p.$size])}px`};
 `;
 
+const getPadding = (roundedCornersToggleEnabled: boolean, size: string) => {
+  const horizontalPadding = roundedCornersToggleEnabled
+    ? units(PADDING_HORIZONTAL_ROUNDED_CORNERS[size])
+    : units(PADDING_HORIZONTAL[size]);
+
+  const verticalPadding = roundedCornersToggleEnabled
+    ? units(PADDING_VERTICAL_ROUNDED_CORNERS[size])
+    : units(PADDING_VERTICAL[size]);
+
+  return css`
+    padding: calc(${verticalPadding}px - ${BORDER_SIZE}px)
+      calc(${horizontalPadding}px - ${BORDER_SIZE}px);
+  `;
+};
+
 const padding = css<InnerProps>`
-  ${(p) => `
-    padding:
-      ${p.theme.spacing.unit(PADDING_VERTICAL[p.$size])}px
-      ${p.theme.spacing.unit(PADDING_HORIZONTAL[p.$size])}px;
-  `}
+  ${(p) => getPadding(p.theme.isFeatureEnabled('roundedCorners'), p.$size)}
 `;
 
 export const primaryStyles = css<InnerProps>`
@@ -67,7 +78,8 @@ export const primaryStyles = css<InnerProps>`
     return p.disabled ? p.theme.color.buttonBackgroundDisabled : background;
   }};
   color: ${(p) => (p.disabled ? p.theme.color.buttonTextDisabled : p.theme.color.buttonText)};
-  ${getBorder('transparent')}
+  border: ${BORDER_SIZE}px solid transparent;
+  border-radius: ${(p) => p.theme.borderRadius100};
 
   ${(p) => {
     const customColor = p.$colorFn && p.$colorFn(p.theme);
@@ -88,7 +100,6 @@ export const primaryStyles = css<InnerProps>`
     }
   `;
   }}
-  border-radius: ${(p) => p.theme.borderRadius100};
 `;
 
 export const negativeStyles = css<InnerProps>`
@@ -101,7 +112,8 @@ export const negativeStyles = css<InnerProps>`
     return p.disabled ? p.theme.color.buttonBackgroundDisabled : background;
   }};
   color: ${(p) => (p.disabled ? p.theme.color.buttonTextDisabled : p.theme.color.buttonText)};
-  ${getBorder('transparent')}
+  border: ${BORDER_SIZE}px solid transparent;
+  border-radius: ${(p) => p.theme.borderRadius100};
 
   ${(p) => {
     return p.disabled
@@ -115,7 +127,6 @@ export const negativeStyles = css<InnerProps>`
     }
   `;
   }}
-  border-radius: ${(p) => p.theme.borderRadius100};
 `;
 
 export const secondaryStyles = css<InnerProps>`
@@ -123,6 +134,9 @@ export const secondaryStyles = css<InnerProps>`
   ${padding}
   ${minHeight}
   background-color: ${(p) => (p.disabled ? p.theme.color.buttonBackgroundDisabled : 'transparent')};
+  border: ${BORDER_SIZE}px solid
+    ${(p) => (p.disabled ? 'transparent' : p.theme.color.buttonBorderSecondary)};
+  border-radius: ${(p) => p.theme.borderRadius100};
 
   ${(p) => {
     const customColor = p.$colorFn && p.$colorFn(p.theme);
@@ -147,45 +161,34 @@ export const secondaryStyles = css<InnerProps>`
       return p.theme.color.buttonActiveSecondary;
     })();
 
-    return `
+    return css`
       color: ${p.disabled ? p.theme.color.buttonTextDisabled : color};
-      ${getBorder(p.disabled ? 'transparent' : p.theme.color.buttonBorderSecondary)}
-
-      ${
-        p.disabled
-          ? ''
-          : `
+      ${p.disabled
+        ? ''
+        : `
         &:hover {
           color: ${hoverTextColor};
-
-          &::before {
-            border-color: ${
-              customColor ? Color(color).darken(0.2) : p.theme.color.buttonHoverSecondary
-            };
-          }
+          border-color: ${
+            customColor ? Color(color).darken(0.2) : p.theme.color.buttonHoverSecondary
+          };
         }
 
         &:active {
           color: ${activeTextColor};
-
-          &::before {
-            border-color: ${
-              customColor ? Color(color).darken(0.3) : p.theme.color.buttonActiveSecondary
-            };
-          }
+          border-color: ${
+            customColor ? Color(color).darken(0.3) : p.theme.color.buttonActiveSecondary
+          };
         }
-      `
-      }
+      `}
     `;
   }};
-  border-radius: ${(p) => p.theme.borderRadius100};
 `;
 
 export const neutralStyles = css<InnerProps>`
   ${shared};
   padding: 0;
   background-color: transparent;
-
+  border: none;
   ${(p) => {
     const color = p.theme.isDarkMode
       ? (p.$colorFn && p.$colorFn(p.theme)) || p.theme.color.buttonTextLight

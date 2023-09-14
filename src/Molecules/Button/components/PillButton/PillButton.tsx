@@ -28,6 +28,7 @@ const getButtonColor = (variant: PillButtonProps['variant'], theme: Theme) => {
 
 const StyledPillButton = styled(Button)<PillButtonProps>`
   border-radius: ${(p) => p.theme.spacing.unit(BORDER_RADIUS[p.size || 's'])}px;
+  border-color: transparent;
   ${(p) =>
     (isSecondary(p.variant) || isNegative(p.variant)) &&
     `background-color: ${p.theme.color.background}`};
@@ -67,10 +68,6 @@ const StyledPillButton = styled(Button)<PillButtonProps>`
        };
       }
   `};
-
-  &::before {
-    display: none;
-  }
 `;
 
 export const PillButton: PillButtonComponent = React.forwardRef<

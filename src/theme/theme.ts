@@ -141,5 +141,6 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     borderRadius8,
     borderRadius20,
     borderRadius100,
+    isFeatureEnabled: (feature) => featureToggles?.[feature] === true,
   };
 };

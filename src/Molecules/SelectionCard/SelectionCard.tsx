@@ -99,7 +99,7 @@ const StyledDiv = styled('div')<{
 }>`
   ${(p) => `
     text-align: ${p.$text ? 'left' : 'center'};
-    padding: ${p.theme.spacing.unit(5)}px;
+    padding: ${p.theme.spacing.unit(4)}px;
   `}
 
   ${(p) =>
@@ -160,7 +160,7 @@ export const SelectionCard: SelectionCardComponent = ({
     text
   ) : (
     <StyledFlexbox item>
-      <Typography color={(t) => t.color.selectionCardText} type="tertiary">
+      <Typography type="secondary" color={(t) => t.colorTokens.neutral.text_weak}>
         {text}
       </Typography>
     </StyledFlexbox>
@@ -212,8 +212,16 @@ export const SelectionCard: SelectionCardComponent = ({
                   {icon}
                 </Flexbox>
               )}
-              {titleItem}
-              {textItem}
+              <Flexbox
+                item
+                container
+                direction="column"
+                {...(text && { alignSelf: 'flex-start' })}
+                width="100%"
+              >
+                {titleItem}
+                {textItem}
+              </Flexbox>
             </Flexbox>
           )}
         </StyledDiv>

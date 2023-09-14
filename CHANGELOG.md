@@ -1,3 +1,55 @@
+## [12.45.1](https://github.com/nordnet/ui/compare/v12.45.0...v12.45.1) (2023-09-14)
+
+
+### Bug Fixes
+
+* update checkbox styles ([#1421](https://github.com/nordnet/ui/issues/1421)) ([d7ff676](https://github.com/nordnet/ui/commit/d7ff676))
+
+# [12.45.0](https://github.com/nordnet/ui/compare/v12.44.4...v12.45.0) (2023-09-13)
+
+
+### Features
+
+* 🎸 change header font size ([563598d](https://github.com/nordnet/ui/commit/563598d))
+* 🎸 change variable isSmallerScreen to isMobile ([cbb9186](https://github.com/nordnet/ui/commit/cbb9186))
+* 🎸 update isSmallScreen to isMobile in modal storybook ([fb8fd78](https://github.com/nordnet/ui/commit/fb8fd78))
+* 🎸 update padding on modal and Selection card ([7e0cce6](https://github.com/nordnet/ui/commit/7e0cce6))
+
+## [12.44.4](https://github.com/nordnet/ui/compare/v12.44.3...v12.44.4) (2023-09-12)
+
+
+### Bug Fixes
+
+* revert to old button sizes ([#1419](https://github.com/nordnet/ui/issues/1419)) ([9f3597a](https://github.com/nordnet/ui/commit/9f3597a))
+
+## [12.44.3](https://github.com/nordnet/ui/compare/v12.44.2...v12.44.3) (2023-09-11)
+
+
+### Bug Fixes
+
+* 🐛 revert back to old size when not rounded corners ([56d0c5e](https://github.com/nordnet/ui/commit/56d0c5e))
+
+## [12.44.2](https://github.com/nordnet/ui/compare/v12.44.1...v12.44.2) (2023-09-11)
+
+
+### Bug Fixes
+
+* 🐛 rounded corners in breakpoint small ([3c7b940](https://github.com/nordnet/ui/commit/3c7b940))
+
+## [12.44.1](https://github.com/nordnet/ui/compare/v12.44.0...v12.44.1) (2023-09-08)
+
+
+### Bug Fixes
+
+* borders adjustments after rounded corners ([#1417](https://github.com/nordnet/ui/issues/1417)) ([017479d](https://github.com/nordnet/ui/commit/017479d))
+
+# [12.44.0](https://github.com/nordnet/ui/compare/v12.43.0...v12.44.0) (2023-09-07)
+
+
+### Features
+
+* add cloud icon ([#1413](https://github.com/nordnet/ui/issues/1413)) ([f768df3](https://github.com/nordnet/ui/commit/f768df3))
+
 # [12.43.0](https://github.com/nordnet/ui/compare/v12.42.1...v12.43.0) (2023-08-31)
 
 
