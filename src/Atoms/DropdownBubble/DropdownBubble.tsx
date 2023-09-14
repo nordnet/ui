@@ -137,5 +137,5 @@ export const DropdownBubble = styled.div<Props>`
   ${bottomAndTopPlacementCss}
 
   ${({ theme, triangle }) =>
-    triangle || theme.isFeatureEnabled('roundedCorners') === false ? triangleCss : ''}
+    theme.isFeatureEnabled('roundedCorners') === true || !triangle ? '' : triangleCss}
 `;
