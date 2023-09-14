@@ -75,7 +75,7 @@ export default {
 } as ComponentMeta<typeof Select>;
 
 export const Primary: ComponentStory<typeof Select> = () => (
-  <Select placeholder="Select a option...">
+  <Select placeholder="Select a option..." name="my-select">
     {options.map((option) => (
       <Option key={option.value} value={option.value} label={option.label} />
     ))}

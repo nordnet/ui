@@ -1,4 +1,4 @@
-import React, { ForwardedRef, forwardRef } from 'react';
+import React, { ForwardedRef, forwardRef, useEffect } from 'react';
 import useSelect, { SelectProvider } from '@mui/base/useSelect';
 import { FadedScroll } from '../..';
 import { HiddenSelect } from './HiddenSelect';
@@ -36,20 +36,18 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
   } = props;
   const listboxRef = React.useRef<HTMLUListElement>(null);
   const [listboxVisible, setListboxVisible] = React.useState(false);
-  const { getButtonProps, getListboxProps, contextValue, value, getOptionMetadata } = useSelect<
-    string,
-    boolean
-  >({
-    listboxRef,
-    disabled,
-    multiple,
-    open: listboxVisible,
-    onChange,
-    onOpenChange: setListboxVisible,
-    value: valueFromProps,
-  });
+  const { getButtonProps, getListboxProps, contextValue, value, getOptionMetadata, options } =
+    useSelect<string, boolean>({
+      listboxRef,
+      disabled,
+      multiple,
+      open: listboxVisible,
+      onChange,
+      onOpenChange: setListboxVisible,
+      value: valueFromProps,
+    });
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (listboxVisible) {
       listboxRef.current?.focus();
     }
@@ -60,7 +58,6 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
   // TODO: write tests, in forms as well
   // TODO: Mobile. Should it have the handle (-) in the top?. Devider in the bottom, should it be indented? Should the title equal the label?
   // TODO: With radio looking checkmarks?
-  // TODO: forward ref to Select component
   // TODO: Dropdown should not close when clicking the search or the toggle all button in the header (maybe footer?).
 
   // 2.0
@@ -102,7 +99,9 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
           </ListboxContainer>
         </ListContainer>
       </Root>
-      {name && value ? <HiddenSelect name={name} multiple={multiple} value={value} /> : null}
+      {name && value ? (
+        <HiddenSelect name={name} multiple={multiple} value={value} options={options} />
+      ) : null}
     </>
   );
 });
