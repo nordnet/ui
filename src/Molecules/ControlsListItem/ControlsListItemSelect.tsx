@@ -18,7 +18,7 @@ const GRID = {
   gutter: {row: 1, col: 2}
 }
 
-export const StyledInput = styled(Input.Select)`
+const StyledInput = styled(Input.Select)`
   li + li {
     border-top: none;
   }
