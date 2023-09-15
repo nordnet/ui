@@ -65,6 +65,7 @@ const ControlsListItemSelect: React.FC<Props> = ({
             noFormField
             listWidth={listWidth}
             disabled={disabled}
+            preventScroll
           />
         </StyledDiv>
       </Flexbox>
@@ -98,6 +99,7 @@ const ControlsListItemSelect: React.FC<Props> = ({
               noFormField
               listWidth={listWidth}
               disabled={disabled}
+              preventScroll
             />
           </StyledDiv>
         </Grid.Item>
