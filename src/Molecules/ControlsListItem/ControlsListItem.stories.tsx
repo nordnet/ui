@@ -231,18 +231,16 @@ export const ControlsListItemRadioWithAddon = () => {
   };
 
   return (
-    <div style={{ width: '100%' }}>
-      <ControlsListItem.Radio
-        checked={currentGroup === OPTIONS.VIKING}
-        name={OPTIONS.VIKING}
-        label={OPTIONS.VIKING}
-        Icon={<Icon.Gold16 />}
-        value={OPTIONS.VIKING}
-        description="description is good otherwise we don't understand"
-        onChange={(_) => onChange(OPTIONS.VIKING)}
-        addon={ControlsListItemSelectWithoutDescription(true, false, true, undefined)}
-      />
-    </div>
+    <ControlsListItem.Radio
+      checked={currentGroup === OPTIONS.VIKING}
+      name={OPTIONS.VIKING}
+      label={OPTIONS.VIKING}
+      Icon={<Icon.Gold16 />}
+      value={OPTIONS.VIKING}
+      description="description is good otherwise we don't understand"
+      onChange={(_) => onChange(OPTIONS.VIKING)}
+      addon={ControlsListItemSelectWithoutDescription(true, false, true, undefined)}
+    />
   );
 };
 
@@ -260,18 +258,16 @@ export const ControlsListItemRadioWithAddonRightAligned = () => {
   };
 
   return (
-    <div style={{ width: '100%' }}>
-      <ControlsListItem.Radio
-        checked={currentGroup === OPTIONS.VIKING}
-        name={OPTIONS.VIKING}
-        label={OPTIONS.VIKING}
-        Icon={<Icon.Gold16 />}
-        value={OPTIONS.VIKING}
-        description="description is good otherwise we don't understand"
-        onChange={(_) => onChange(OPTIONS.VIKING)}
-        addon={ControlsListItemSelectWithoutDescription(true, true, false, 'auto')}
-      />
-    </div>
+    <ControlsListItem.Radio
+      checked={currentGroup === OPTIONS.VIKING}
+      name={OPTIONS.VIKING}
+      label={OPTIONS.VIKING}
+      Icon={<Icon.Gold16 />}
+      value={OPTIONS.VIKING}
+      description="description is good otherwise we don't understand"
+      onChange={(_) => onChange(OPTIONS.VIKING)}
+      addon={ControlsListItemSelectWithoutDescription(true, true, false, 'auto')}
+    />
   );
 };
 
@@ -289,18 +285,16 @@ export const ControlsListItemRadioWithAddonRightAlignedFixedMinWidth = () => {
   };
 
   return (
-    <div style={{ width: '100%' }}>
-      <ControlsListItem.Radio
-        checked={currentGroup === OPTIONS.VIKING}
-        name={OPTIONS.VIKING}
-        label={OPTIONS.VIKING}
-        Icon={<Icon.Gold16 />}
-        value={OPTIONS.VIKING}
-        description="description is good otherwise we don't understand"
-        onChange={(_) => onChange(OPTIONS.VIKING)}
-        addon={ControlsListItemSelectWithoutDescription(true, true, false, '300px')}
-      />
-    </div>
+    <ControlsListItem.Radio
+      checked={currentGroup === OPTIONS.VIKING}
+      name={OPTIONS.VIKING}
+      label={OPTIONS.VIKING}
+      Icon={<Icon.Gold16 />}
+      value={OPTIONS.VIKING}
+      description="description is good otherwise we don't understand"
+      onChange={(_) => onChange(OPTIONS.VIKING)}
+      addon={ControlsListItemSelectWithoutDescription(true, true, false, '300px')}
+    />
   );
 };
 

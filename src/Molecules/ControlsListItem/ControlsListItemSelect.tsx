@@ -18,7 +18,7 @@ const GRID = {
   gutter: {row: 1, col: 2}
 }
 
-const StyledInput = styled(Input.Select)`
+const StyledDiv = styled.div`
   li + li {
     border-top: none;
   }
@@ -52,19 +52,21 @@ const ControlsListItemSelect: React.FC<Props> = ({
         <Typography type="secondary" color={(t) => t.color.label}>
           {label}
         </Typography>
-        <StyledInput
-          id="control-list-item-select"
-          label={label}
-          components={customComponents}
-          onChange={onChange}
-          options={options}
-          listPosition="left"
-          fullWidth
-          hideLabel
-          noFormField
-          listWidth={listWidth}
-          disabled={disabled}
-        />
+        <StyledDiv>
+          <Input.Select
+            id="control-list-item-select"
+            label={label}
+            components={customComponents}
+            onChange={onChange}
+            options={options}
+            listPosition="left"
+            fullWidth
+            hideLabel
+            noFormField
+            listWidth={listWidth}
+            disabled={disabled}
+          />
+        </StyledDiv>
       </Flexbox>
     );
   }
@@ -83,19 +85,21 @@ const ControlsListItemSelect: React.FC<Props> = ({
         </Grid.Item>
 
         <Grid.Item area="button" justify="end" align="center">
-          <StyledInput
-            id="control-list-item-select"
-            label={label}
-            components={customComponents}
-            onChange={onChange}
-            options={options}
-            listPosition="left"
-            fullWidth
-            hideLabel
-            noFormField
-            listWidth={listWidth}
-            disabled={disabled}
-          />
+          <StyledDiv>
+            <Input.Select
+              id="control-list-item-select"
+              label={label}
+              components={customComponents}
+              onChange={onChange}
+              options={options}
+              listPosition="left"
+              fullWidth
+              hideLabel
+              noFormField
+              listWidth={listWidth}
+              disabled={disabled}
+            />
+          </StyledDiv>
         </Grid.Item>
 
         <Grid.Item area="description">
