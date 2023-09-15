@@ -1,3 +1,10 @@
+# [12.46.0](https://github.com/nordnet/ui/compare/v12.45.3...v12.46.0) (2023-09-14)
+
+
+### Features
+
+* add borderRadius function to theme and adjust barscale ([#1423](https://github.com/nordnet/ui/issues/1423)) ([21e8473](https://github.com/nordnet/ui/commit/21e8473))
+
 ## [12.45.3](https://github.com/nordnet/ui/compare/v12.45.2...v12.45.3) (2023-09-14)
 
 

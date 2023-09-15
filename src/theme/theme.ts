@@ -92,6 +92,8 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
   const RADIUS_LARGE: BORDER_RADIUS = 20;
   const RADIUS_100: BORDER_RADIUS = 100;
 
+  const borderRadius: Theme['borderRadius'] = (x) =>
+    featureToggles?.roundedCorners ? `${x.toString()}px` : '';
   const borderRadius2 = featureToggles?.roundedCorners ? `${RADIUS_XSMALL}px` : '0';
   const borderRadius4 = featureToggles?.roundedCorners ? `${RADIUS_SMALL}px` : '0';
   const borderRadius8 = featureToggles?.roundedCorners ? `${RADIUS_MEDIUM}px` : '0';
@@ -136,6 +138,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     size: deprecate('theme.size, please use theme.breakpoint instead.')(size),
     spacing,
     zIndex,
+    borderRadius,
     borderRadius2,
     borderRadius4,
     borderRadius8,

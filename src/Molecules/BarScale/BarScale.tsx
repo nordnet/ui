@@ -11,7 +11,7 @@ const Indicator = styled(Box)<BarProps>`
     p.$isActive
       ? p.theme.colorTokens.action.background_data_risk
       : p.theme.colorTokens.neutral.background_strong};
-  border-radius: ${(p) => p.theme.borderRadius2};
+  border-radius: ${(p) => p.theme.borderRadius(1)};
 `;
 
 export const BarScale: React.FC<Props> = ({
