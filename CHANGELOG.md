@@ -1,3 +1,14 @@
+## [12.46.1](https://github.com/nordnet/ui/compare/v12.46.0...v12.46.1) (2023-09-15)
+
+
+### Bug Fixes
+
+* dont always use pointer cursor ([ac2d03f](https://github.com/nordnet/ui/commit/ac2d03f))
+* need this otherwise content outside drawer moves ([9b963df](https://github.com/nordnet/ui/commit/9b963df))
+* no need to export this ([05f961c](https://github.com/nordnet/ui/commit/05f961c))
+* tests works now ([f360827](https://github.com/nordnet/ui/commit/f360827))
+* z-index issue, items in separated lists made border top leak, cta color on open ([c5980d8](https://github.com/nordnet/ui/commit/c5980d8))
+
 # [12.46.0](https://github.com/nordnet/ui/compare/v12.45.3...v12.46.0) (2023-09-14)
 
 
