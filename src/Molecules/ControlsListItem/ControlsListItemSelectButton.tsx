@@ -21,13 +21,18 @@ const ControlsListItemSelectButton = (buttonText: string | React.ReactElement) =
   const { useSelectMachineFromContext } = Input.Select;
   const [state] = useSelectMachineFromContext();
 
+  const expanded = (state.value as any).open === 'on';
   return (
     <SelectWrapper>
       <Flexbox container alignItems="center" gap={2}>
-        <StyledTypography type="secondary" weight="bold">
+        <StyledTypography
+          type="secondary"
+          weight="bold"
+          color={(t) => (expanded ? t.color.cta : t.color.text)}
+        >
           {buttonText}
         </StyledTypography>
-        <Chevron $expanded={(state.value as any).open === 'on'} />
+        <Chevron $expanded={expanded} />
       </Flexbox>
     </SelectWrapper>
   );

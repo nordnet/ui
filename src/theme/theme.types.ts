@@ -19,7 +19,7 @@ type Unit = {
   valueOf: () => number;
 };
 
-export type BORDER_RADIUS = 2 | 4 | 6 | 8 | 20 | 100;
+export type BORDER_RADIUS = 1 | 2 | 4 | 6 | 8 | 20 | 100;
 
 export type RawColor = {
   // BRAND
@@ -1015,6 +1015,7 @@ export type Theme = {
   };
   isHighContrastMode: boolean;
   isDarkMode: boolean;
+  borderRadius: (x: BORDER_RADIUS) => string;
   borderRadius2: string;
   borderRadius4: string;
   borderRadius8: string;

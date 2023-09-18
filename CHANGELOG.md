@@ -1,3 +1,45 @@
+## [12.46.1](https://github.com/nordnet/ui/compare/v12.46.0...v12.46.1) (2023-09-15)
+
+
+### Bug Fixes
+
+* dont always use pointer cursor ([ac2d03f](https://github.com/nordnet/ui/commit/ac2d03f))
+* need this otherwise content outside drawer moves ([9b963df](https://github.com/nordnet/ui/commit/9b963df))
+* no need to export this ([05f961c](https://github.com/nordnet/ui/commit/05f961c))
+* tests works now ([f360827](https://github.com/nordnet/ui/commit/f360827))
+* z-index issue, items in separated lists made border top leak, cta color on open ([c5980d8](https://github.com/nordnet/ui/commit/c5980d8))
+
+# [12.46.0](https://github.com/nordnet/ui/compare/v12.45.3...v12.46.0) (2023-09-14)
+
+
+### Features
+
+* add borderRadius function to theme and adjust barscale ([#1423](https://github.com/nordnet/ui/issues/1423)) ([21e8473](https://github.com/nordnet/ui/commit/21e8473))
+
+## [12.45.3](https://github.com/nordnet/ui/compare/v12.45.2...v12.45.3) (2023-09-14)
+
+
+### Bug Fixes
+
+* add isFeatureEnabled to theme ([9e6158f](https://github.com/nordnet/ui/commit/9e6158f))
+* boolean check and add triangle to story ([3e6f930](https://github.com/nordnet/ui/commit/3e6f930))
+* button height and paddings ([a8cd9bc](https://github.com/nordnet/ui/commit/a8cd9bc))
+* check if feature roundedCorners is true ([1e2d0be](https://github.com/nordnet/ui/commit/1e2d0be))
+* getPadding ([bd4108e](https://github.com/nordnet/ui/commit/bd4108e))
+* no arrow when rounded corners is enabled ([084beb9](https://github.com/nordnet/ui/commit/084beb9))
+* remove before ([789487e](https://github.com/nordnet/ui/commit/789487e))
+* remove unsued import ([20726a1](https://github.com/nordnet/ui/commit/20726a1))
+* transparent borders in button.pill ([b519681](https://github.com/nordnet/ui/commit/b519681))
+* use css function ([8e774ba](https://github.com/nordnet/ui/commit/8e774ba))
+* wip border radius ([624a91b](https://github.com/nordnet/ui/commit/624a91b))
+
+## [12.45.2](https://github.com/nordnet/ui/compare/v12.45.1...v12.45.2) (2023-09-14)
+
+
+### Bug Fixes
+
+* update radio to align with design ([#1422](https://github.com/nordnet/ui/issues/1422)) ([9c3ccd0](https://github.com/nordnet/ui/commit/9c3ccd0))
+
 ## [12.45.1](https://github.com/nordnet/ui/compare/v12.45.0...v12.45.1) (2023-09-14)
 
 
