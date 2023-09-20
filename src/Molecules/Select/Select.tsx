@@ -26,6 +26,8 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
     multiple,
     name,
     onChange,
+    open: openFromProps,
+    onOpenChange: onOpenChangeFromProps,
     placeholder,
     size = 'm',
     value: valueFromProps,
@@ -36,14 +38,22 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
   } = props;
   const listboxRef = React.useRef<HTMLUListElement>(null);
   const [listboxVisible, setListboxVisible] = React.useState(false);
+  const open = typeof openFromProps !== 'undefined' ? openFromProps : listboxVisible;
   const { getButtonProps, getListboxProps, contextValue, value, getOptionMetadata, options } =
     useSelect<string, boolean>({
       listboxRef,
       disabled,
       multiple,
-      open: listboxVisible,
+      open,
       onChange,
-      onOpenChange: setListboxVisible,
+      onOpenChange: (isOpen) => {
+        if (typeof onOpenChangeFromProps !== 'undefined') {
+          onOpenChangeFromProps(isOpen);
+        } else {
+          setListboxVisible(isOpen);
+        }
+      },
+      // onOpenChange: setListboxVisible,
       value: valueFromProps,
     });
 
@@ -87,7 +97,7 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
           )}
           <StyledChevronDown8 color={(t) => t.colorTokens.neutral.icon_default} />
         </Trigger>
-        <ListContainer aria-hidden={listboxVisible} $hidden={listboxVisible}>
+        <ListContainer aria-hidden={!open} $hidden={!open}>
           <ListboxContainer>
             {listBoxHeader || null}
             <FadedScroll maxHeight={50}>

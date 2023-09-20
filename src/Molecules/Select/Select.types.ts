@@ -13,6 +13,8 @@ export type Props = {
    * required if select lives in a form
    */
   name?: string;
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
   /**
    * width in units
    */

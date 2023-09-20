@@ -286,16 +286,32 @@ export const ControlledWithToggleAll: ComponentStory<typeof Select> = () => {
 
 export const WithSearchInHeader: ComponentStory<typeof Select> = () => {
   const [filteredOptions, setFilteredOptions] = useState(options);
+  const [open, setOpen] = useState(false);
+  const skipRef = React.useRef(false);
+
+  function handleOpenChange(isOpen: boolean) {
+    if (!skipRef.current) {
+      setOpen(isOpen);
+    }
+  }
 
   return (
     <Select
       name="my-select"
       placeholder="Select a option..."
+      open={open}
+      onOpenChange={handleOpenChange}
       listBoxHeader={
         <ListBoxHeader>
           <Search
             label="search"
             placeholder="Search"
+            onMouseDown={() => {
+              skipRef.current = true;
+            }}
+            onClick={() => {
+              skipRef.current = false;
+            }}
             onChange={(e) =>
               setFilteredOptions(
                 options.filter((option) =>
