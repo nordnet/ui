@@ -27,7 +27,10 @@ const getButtonColor = (variant: PillButtonProps['variant'], theme: Theme) => {
 };
 
 const StyledPillButton = styled(Button)<PillButtonProps>`
-  border-radius: ${(p) => p.theme.spacing.unit(BORDER_RADIUS[p.size || 's'])}px;
+  border-radius: ${({ theme, size }) =>
+    theme.isFeatureEnabled('roundedCorners')
+      ? theme.borderRadius(100)
+      : `${theme.spacing.unit(BORDER_RADIUS[size || 's'])}px`};
   border-color: transparent;
   ${(p) =>
     (isSecondary(p.variant) || isNegative(p.variant)) &&
