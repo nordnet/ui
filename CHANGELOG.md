@@ -1,3 +1,10 @@
+## [12.46.2](https://github.com/nordnet/ui/compare/v12.46.1...v12.46.2) (2023-09-21)
+
+
+### Bug Fixes
+
+* border radius for button pill ([#1425](https://github.com/nordnet/ui/issues/1425)) ([799a9e4](https://github.com/nordnet/ui/commit/799a9e4))
+
 ## [12.46.1](https://github.com/nordnet/ui/compare/v12.46.0...v12.46.1) (2023-09-15)
 
 
