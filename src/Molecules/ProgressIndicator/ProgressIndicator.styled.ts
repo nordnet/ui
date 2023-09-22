@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import { Box, Button } from '../..';
 
 export const StyledBox = styled(Box)<{ $isMobile?: boolean }>`
-  border-radius: ${(p) => (!p.$isMobile && p.theme.borderRadius8)};
+  border-radius: ${(p) => !p.$isMobile && p.theme.borderRadius8};
+  border-bottom: 1px solid
+    ${(p) => (p.$isMobile ? p.theme.colorTokens.neutral.border_medium : 'transparent')};
 `;
 
 export const CompletionBar = styled.div<{ completion: number; noButtons: boolean }>`

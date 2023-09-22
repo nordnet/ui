@@ -76,7 +76,7 @@ const StyledCard = styled(Card)<{
   ${(p) => p.$error && !p.$disabled && `border: 1px solid ${p.theme.color.functionRed}`};
   ${(p) => !p.$disabled && p.$selected && overlayStyles};
   border-radius: ${({ theme }) => theme.borderRadius8};
-
+  overflow: hidden;
   &:hover {
     ${(p) => !p.$disabled && overlayStyles};
   }
