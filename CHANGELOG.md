@@ -1,3 +1,10 @@
+# [12.47.0](https://github.com/nordnet/ui/compare/v12.46.2...v12.47.0) (2023-09-22)
+
+
+### Features
+
+* 🎸 SelectedCard and ProgressIndicator update ([#1426](https://github.com/nordnet/ui/issues/1426)) ([e9c1f14](https://github.com/nordnet/ui/commit/e9c1f14))
+
 ## [12.46.2](https://github.com/nordnet/ui/compare/v12.46.1...v12.46.2) (2023-09-21)
 
 
