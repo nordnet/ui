@@ -1,3 +1,10 @@
+## [12.47.1](https://github.com/nordnet/ui/compare/v12.47.0...v12.47.1) (2023-09-26)
+
+
+### Bug Fixes
+
+* 🐛 ProgressIndicator and Modal mobile view update ([#1427](https://github.com/nordnet/ui/issues/1427)) ([8fe1ecf](https://github.com/nordnet/ui/commit/8fe1ecf))
+
 # [12.47.0](https://github.com/nordnet/ui/compare/v12.46.2...v12.47.0) (2023-09-22)
 
 
