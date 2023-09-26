@@ -1,9 +1,5 @@
 import React from 'react';
-
-export type ProgressProps = {
-  numberOfSteps: number;
-  currentStep: number;
-};
+import { Props as ProgressProps } from '../ProgressIndicator/ProgressIndicator.types';
 
 export type InnerProps = {
   className?: string;

@@ -1411,7 +1411,7 @@ export const modalWithProgressIndicator = () => {
         }}
         title="Modal with progress indicator "
         open
-        progressIndicator={{ numberOfSteps: 3, currentStep: 2 }}
+        progressIndicator={{ numberOfSteps: 3, currentStep: 2, borderBottomMobile: false }}
         progressIndicatorDescription="Find investments"
         fixedBottomMobile
         fullScreenMobile={false}
