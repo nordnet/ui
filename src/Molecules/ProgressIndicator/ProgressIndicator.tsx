@@ -20,6 +20,7 @@ const ProgressIndicator: FC<Props> = ({
   infoText = 'Info',
   infoIcon = 'info',
   buttonCallback = false,
+  borderBottomMobile = true,
 }): ReactElement => {
   const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.sm));
   const isFirstStep = currentStep === 1;
@@ -40,6 +41,7 @@ const ProgressIndicator: FC<Props> = ({
       md={{ p: 5 }}
       backgroundColor={(t) => t.color.progressIndicatorBackground}
       $isMobile={!!isMobile}
+      $borderBottomMobile={borderBottomMobile}
     >
       <Flexbox container justifyContent="space-between" gap={6} alignItems="center">
         <StyledButton
