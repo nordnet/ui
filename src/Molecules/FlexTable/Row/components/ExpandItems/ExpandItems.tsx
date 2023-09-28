@@ -14,7 +14,7 @@ export const ExpandItems: ExpandItemsComponent = ({ items }) => {
         </List>
       </Media>
       <Media query={(t) => t.media.greaterThan(t.breakpoints.md)}>
-        <Flexbox container wrap="wrap" gutter={10} as={List}>
+        <Flexbox container wrap="wrap" gap={10} as={List}>
           {items?.map((item, index) => (
             <ExpandItem key={`expandItem_desktop_${index + 1}`} item={item} />
           ))}

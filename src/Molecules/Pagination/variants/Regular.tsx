@@ -53,7 +53,7 @@ const Regular: React.FC<PaginationDefaultProps> = ({
       {currentPage !== 1 && (
         <ChevronButton direction="left" onClick={onClickPrevious} label={previousPageLabel} />
       )}
-      <Flexbox container item flex="1" justifyContent="center" gutter={2} as={List}>
+      <Flexbox container item flex="1" justifyContent="center" gap={2} as={List}>
         <PageItems
           currentPage={currentPage}
           numberOfPages={numberOfPages}

@@ -237,7 +237,7 @@ const DateRangePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => 
         >
           <>
             <Box pb={4}>
-              <Flexbox container gutter={2} justifyContent="center">
+              <Flexbox container gap={2} justifyContent="center">
                 <Flexbox item flex="1">
                   <Input.Text
                     id="fromDate"

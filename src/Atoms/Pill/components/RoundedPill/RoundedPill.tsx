@@ -45,7 +45,7 @@ const Circle = styled.div<CircleProps>`
 export const RoundedPill: React.FC<Props> = ({ className, label, color, development, onClose }) => (
   <StyledDivRounded className={className} $hasOnClose={isFunction(onClose)}>
     <Button variant="neutral" onClick={onClose}>
-      <Flexbox container alignItems="center" gutter={1}>
+      <Flexbox container alignItems="center" gap={1}>
         {color ? (
           <Flexbox item>
             <Circle $color={color} />

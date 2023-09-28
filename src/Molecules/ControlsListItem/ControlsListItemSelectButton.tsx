@@ -24,7 +24,7 @@ const ControlsListItemSelectButton = (buttonText: string | React.ReactElement) =
   const expanded = (state.value as any).open === 'on';
   return (
     <SelectWrapper>
-      <Flexbox container alignItems="center" gutter={2}>
+      <Flexbox container alignItems="center" gap={2}>
         <StyledTypography
           type="secondary"
           weight="bold"

@@ -321,7 +321,7 @@ hideClose.story = {
 
 export const nodeAsTitle = () => {
   const Title = (
-    <Flexbox container gutter={2} alignItems="center">
+    <Flexbox container gap={2} alignItems="center">
       <OldIcon.Bolt />
       <Typography type="title2" as="h2">
         React Node Title
@@ -863,7 +863,7 @@ export const modalStandardMobile = () => {
     };
 
     const footer = (
-      <Flexbox container gutter={2}>
+      <Flexbox container gap={2}>
         <Flexbox container item flex="1">
           <Button variant="secondary" size="l" onClick={() => {}} fullWidth>
             Cancel
@@ -1012,7 +1012,7 @@ export const modalMobileSmall = () => {
     };
 
     const footer = (
-      <Flexbox container gutter={2}>
+      <Flexbox container gap={2}>
         <Flexbox container item flex="1">
           <Button variant="secondary" size="l" onClick={() => {}} fullWidth>
             Button
@@ -1135,7 +1135,7 @@ export const modalMobileFullscreenWithScroll = () => {
     };
 
     const footer = (
-      <Flexbox container gutter={2}>
+      <Flexbox container gap={2}>
         <Flexbox container item flex="1">
           <Button variant="secondary" size="l" onClick={() => {}} fullWidth>
             Button

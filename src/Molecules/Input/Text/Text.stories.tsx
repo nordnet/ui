@@ -264,8 +264,8 @@ hiddenLabel.story = {
 };
 
 export const simpleLoginForm = () => (
-  <Flexbox container direction="column" gutter={4}>
-    <Flexbox item container gutter={4}>
+  <Flexbox container direction="column" gap={4}>
+    <Flexbox item container gap={4}>
       <Flexbox item basis="50%">
         <Input.Text
           width="100%"

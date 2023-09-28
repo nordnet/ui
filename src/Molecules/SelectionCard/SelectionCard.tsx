@@ -191,14 +191,14 @@ export const SelectionCard: SelectionCardComponent = ({
 
         <StyledDiv $feature={hasFeature} $tag={Boolean(tag)} $text={Boolean(text)}>
           {horizontal && (
-            <Flexbox container direction="row" gap={3} alignContent="center">
+            <Flexbox container direction="row" gap={5} alignContent="center">
               {hasIcon && (
                 <Flexbox item alignSelf="center">
                   {icon}
                 </Flexbox>
               )}
 
-              <Flexbox item container direction="column" alignItems="flex-start">
+              <Flexbox container direction="column" gap={1} alignItems="flex-start">
                 {titleItem}
                 {textItem}
               </Flexbox>
@@ -206,7 +206,7 @@ export const SelectionCard: SelectionCardComponent = ({
           )}
 
           {!horizontal && (
-            <Flexbox container direction="column" alignItems="center" gap={3}>
+            <Flexbox container direction="column" alignItems="center" gap={1}>
               {hasIcon && (
                 <Flexbox item {...(text && { alignSelf: 'flex-start' })}>
                   {icon}

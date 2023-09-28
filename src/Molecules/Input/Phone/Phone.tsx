@@ -81,7 +81,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
       },
       {
         label: (
-          <Flexbox container alignItems="center" gutter={3}>
+          <Flexbox container alignItems="center" gap={3}>
             <Flexbox item>
               <OldIcon.Globe size={3} />
             </Flexbox>

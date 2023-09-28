@@ -109,7 +109,7 @@ export const Option: React.FC<OptionProps> = ({
     isKeyboardNavigation={isKeyboardNavigation}
     fullscreenOnMobile={fullscreenOnMobile}
   >
-    <FullHeightFlexbox container alignItems="center" gutter={2}>
+    <FullHeightFlexbox container alignItems="center" gap={2}>
       <Flexbox item container alignItems="center" flex="0 0 auto">
         {/** TODO: revisit a11y here */}
         <Checkbox16px

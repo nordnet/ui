@@ -51,7 +51,7 @@ linkLookingLikeAButtonThatIsFullWidth.story = {
 
 export const linksLookingLikeButtonsComposedInAGroup = () => (
   <Provider>
-    <Flexbox container gutter={2}>
+    <Flexbox container gap={2}>
       <Flexbox item flex="1">
         <Button to="/route1" onClick={action('submit')} fullWidth>
           Submit

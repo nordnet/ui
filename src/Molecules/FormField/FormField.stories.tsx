@@ -27,7 +27,7 @@ defaultStory.story = {
 
 export const withGroupOfItems = () => (
   <FormField label="Caption to a group of items" fieldId="unique-id-1" group>
-    <Flexbox container gutter={5}>
+    <Flexbox container gap={5}>
       <Flexbox item>
         <div style={{ background: 'aqua' }}>Pass in any children you want</div>
       </Flexbox>

@@ -13,6 +13,7 @@ export type ContainerProps = {
   /** flexbox direction */
   direction?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
   wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
+  /** @deprecated use gap instead */
   gutter?: number;
   hidden?: boolean;
   justifyContent?:

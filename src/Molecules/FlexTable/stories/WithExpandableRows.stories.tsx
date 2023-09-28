@@ -42,7 +42,7 @@ const expandedItemsGenerator = (renderComponent = false) =>
   }, []);
 
 const expandChildrenComponents = (
-  <Flexbox container justifyContent="center" gutter={2}>
+  <Flexbox container justifyContent="center" gap={2}>
     <Flexbox item>
       <Button size="l" variant="primary">
         Buy
