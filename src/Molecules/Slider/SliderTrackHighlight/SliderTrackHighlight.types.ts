@@ -7,6 +7,7 @@ export type InternalProps = {
 
 export type Props = {
   sliderColor?: ColorFn;
+  startValue?: number;
   value: number;
   variant?: Variant;
 };
