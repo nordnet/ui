@@ -1,3 +1,10 @@
+# [12.48.0](https://github.com/nordnet/ui/compare/v12.47.1...v12.48.0) (2023-09-28)
+
+
+### Features
+
+* deprecate gutter and use gap ([#1412](https://github.com/nordnet/ui/issues/1412)) ([f4834d7](https://github.com/nordnet/ui/commit/f4834d7))
+
 ## [12.47.1](https://github.com/nordnet/ui/compare/v12.47.0...v12.47.1) (2023-09-26)
 
 
