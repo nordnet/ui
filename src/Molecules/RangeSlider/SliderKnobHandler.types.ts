@@ -15,7 +15,7 @@ export type Props = {
   disabled?: boolean;
   max: number;
   min: number;
-  onChange?: (v: number) => void;
+  onChange: (v: number) => void;
   sliderColor?: ColorFn;
   step: number;
   /** Makes component controlled */

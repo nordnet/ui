@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
 
 import RangeSlider from './RangeSlider';
-import { Box, Input, Number, Typography } from '../..';
+import { Box, Number, Typography } from '../..';
 import { Props } from './RangeSlider.types';
 import { secondsToTimeString } from '../../common/utils';
 
@@ -40,15 +40,18 @@ export const MinimumValue = Template.bind({});
 MinimumValue.args = {
   ...Default.args,
   defaultLowValue: 0,
-  max: 10,
+  min: 10,
+  max: 100,
   sliderColor: (t) => t.color.sliderColor,
 };
 
 export const MaximumValue = Template.bind({});
 MaximumValue.args = {
   ...Default.args,
-  defaultLowValue: 100,
+  defaultLowValue: 0,
+  defaultHighValue: 100,
   min: 50,
+  max: 100,
   sliderColor: (t) => t.color.sliderColor,
 };
 
@@ -96,10 +99,10 @@ const PlayerTemplate: Story<Props> = (args) => {
 export const PlayerVariant = PlayerTemplate.bind({});
 PlayerVariant.args = {
   ...Default.args,
-  defaultLowValue: 180,
-  defaultHighValue: 280,
+  defaultLowValue: 10,
+  defaultHighValue: 100,
   min: 0,
-  max: 4000,
+  max: 100,
   step: 1,
   variant: 'player',
   formatter: secondsToTimeString,
@@ -111,33 +114,4 @@ Disabled.args = {
   ...Default.args,
   defaultLowValue: 20,
   disabled: true,
-};
-
-const TemplateControlled: Story<Props> = (args) => {
-  const start = 50;
-  const [value, setValue] = useState(start);
-  const handleChange = (v: string) => setValue(parseInt(v, 10));
-
-  return (
-    <Box p={20}>
-      <RangeSlider {...args} value={value} />
-      <Input.Number
-        id="unique-id"
-        label="Controlled from outside"
-        defaultValue={start}
-        onChange={handleChange}
-        min={args.min}
-        max={args.max}
-        step={args.step}
-      />
-    </Box>
-  );
-};
-
-export const Controlled = TemplateControlled.bind({});
-Controlled.args = {
-  defaultLowValue: 20,
-  min: 0,
-  max: 100,
-  step: 1,
 };

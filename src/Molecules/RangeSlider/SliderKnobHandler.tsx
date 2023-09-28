@@ -6,7 +6,7 @@ import DropdownBubble, { TRIANGLE_SIZE } from '../../Atoms/DropdownBubble';
 import Typography from '../../Atoms/Typography';
 import { getKnobSize, getHeight } from '../Slider/utils';
 import { SliderKnob } from '../Slider/SliderKnob';
-import { isFunction, isNumber } from '../../common/utils';
+import { isNumber } from '../../common/utils';
 
 const clamp = (val: number, min: number, max: number) => {
   if (val < min) {
@@ -96,20 +96,14 @@ const SliderKnobHandler: SliderKnobHandlerComponent = ({
   const isControlled = isNumber(controlledValue);
   const [hoverPosition, setHoverPosition] = useState<number | null>(null);
   const [hoverVisible, setHoverVisible] = useState<boolean>(false);
-  const [valueInternal, setValueInternal] = useState(defaultValue || min);
+  const valueInternal = defaultValue || min;
   const value = isControlled ? controlledValue! : valueInternal;
   const trackPercent = valueToPercent(value, min, max);
   const handlePosition = `calc(${trackPercent}% - ${getKnobSize(variant) / 2}px)`;
 
   console.log(`${type} ${value} ${valueInternal} ${controlledValue} ${isControlled}`);
   const updateValue = (newValue: number) => {
-    if (!isControlled) {
-      setValueInternal(newValue);
-    }
-
-    if (isFunction(onChange)) {
-      onChange(newValue);
-    }
+    onChange(newValue);
   };
 
   const handleChange = (clickPosition: number) => {

@@ -100,23 +100,27 @@ const RangeSlider: Component = ({
   const [maxValueInternal, setMaxValueInternal] = useState(defaultHighValue || max);
 
   const isControlled = isNumber(controlledValue);
-  console.log('maxValueInternal', maxValueInternal);
   const maxTrackValue = isControlled ? controlledValue! : maxValueInternal;
   const maxTrackPercent = valueToPercent(maxTrackValue, min, max);
 
-  console.log('minValueInternal', minValueInternal);
   const minTrackValue = isControlled ? controlledValue! : minValueInternal;
   const minTrackPercent = valueToPercent(minTrackValue, min, max);
 
   const updateValue = (newValue: number, type: string = KnobPointerType.low) => {
     switch (type) {
       case KnobPointerType.low:
+        if (newValue > maxValueInternal) {
+          return;
+        }
         setMinValueInternal(newValue);
         if (isFunction(onChange)) {
           onChange({ low: newValue, high: maxValueInternal });
         }
         break;
       case KnobPointerType.high:
+        if (newValue < minValueInternal) {
+          return;
+        }
         setMaxValueInternal(newValue);
         if (isFunction(onChange)) {
           onChange({ low: minValueInternal, high: newValue });
@@ -164,9 +168,9 @@ const RangeSlider: Component = ({
   //   handleChange(pointerPosition);
   // };
 
-  // const handleMouseHover = (event: MouseEvent) => {
-  //   const pointerPosition = event.clientX;
-  //   handleHover(pointerPosition);
+  // const handleMouseHover = () => {
+  //   // const pointerPosition = event.clientX;
+  //   setHoverVisible(true);
   // };
 
   // const handleMouseLeave = () => {
@@ -262,10 +266,14 @@ const RangeSlider: Component = ({
               min={min}
               step={step}
               value={minValueInternal}
+              showTooltip={showTooltip}
+              disabled={disabled}
+              readOnly={readOnly}
+              sliderColor={sliderColor}
+              variant={variant}
               onChange={(value) => {
                 updateValue(value, KnobPointerType.low);
               }}
-              showTooltip={showTooltip}
               type={KnobPointerType.low}
               trackerBoundingClientRect={trackerBoundingClientRect}
             />
@@ -276,8 +284,9 @@ const RangeSlider: Component = ({
               value={maxValueInternal}
               showTooltip={showTooltip}
               disabled={disabled}
+              readOnly={readOnly}
               sliderColor={sliderColor}
-              variant="big"
+              variant={variant}
               onChange={(value) => {
                 updateValue(value, KnobPointerType.high);
               }}
