@@ -8,7 +8,7 @@ import { BackdropProps, BackdropWrapperProps, DialogProps, Props } from './Modal
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Title } from './Title';
-import { Flexbox, OldIcon, ProgressIndicator, Typography, useKeyPress, useMedia } from '../..';
+import { Box, Flexbox, OldIcon, ProgressIndicator, Typography, useKeyPress, useMedia } from '../..';
 
 const PADDING_DESKTOP = 10;
 const PADDING_PROGRESS_INDICATOR = 14;
@@ -137,12 +137,6 @@ export const Header = styled.div<{ $flexTitle?: boolean }>`
   padding-bottom: ${(p) => p.theme.spacing.unit(4)}px;
   padding-right: ${(p) => p.theme.spacing.unit(CLOSE_ICON_SIZE + 2)}px;
   min-height: ${(p) => p.theme.spacing.unit(CLOSE_ICON_SIZE)}px;
-  flex: 0 0 auto;
-  display: ${(p) => (p.$flexTitle ? 'flex' : 'inherit')};
-  flex-direction: ${(p) => (p.$flexTitle ? 'column' : 'unset')};
-  ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
-    gap: ${(p) => (p.$flexTitle ? '4px' : '0')};
-  }
 `;
 
 export const Footer = styled.div`
@@ -162,6 +156,12 @@ export const StyledProgressIndicator = styled.div`
       margin: 0;
     }
   }
+`;
+
+export const StyledBoxTitle = styled(Box)`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 `;
 
 const noop = () => {};
@@ -294,7 +294,7 @@ export const ModalInner: React.FC<Props> = ({
               {hasHeader && (
                 <Header $flexTitle={progressIndicatorDescription !== undefined}>
                   {title && progressIndicatorDescription ? (
-                    <>
+                    <StyledBoxTitle>
                       <Typography
                         type="secondary"
                         weight="bold"
@@ -309,7 +309,7 @@ export const ModalInner: React.FC<Props> = ({
                       >
                         {title}
                       </Typography>
-                    </>
+                    </StyledBoxTitle>
                   ) : (
                     <Title title={title} uid={titleId} />
                   )}

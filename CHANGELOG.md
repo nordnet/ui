@@ -1,3 +1,24 @@
+## [12.47.1](https://github.com/nordnet/ui/compare/v12.47.0...v12.47.1) (2023-09-26)
+
+
+### Bug Fixes
+
+* 🐛 ProgressIndicator and Modal mobile view update ([#1427](https://github.com/nordnet/ui/issues/1427)) ([8fe1ecf](https://github.com/nordnet/ui/commit/8fe1ecf))
+
+# [12.47.0](https://github.com/nordnet/ui/compare/v12.46.2...v12.47.0) (2023-09-22)
+
+
+### Features
+
+* 🎸 SelectedCard and ProgressIndicator update ([#1426](https://github.com/nordnet/ui/issues/1426)) ([e9c1f14](https://github.com/nordnet/ui/commit/e9c1f14))
+
+## [12.46.2](https://github.com/nordnet/ui/compare/v12.46.1...v12.46.2) (2023-09-21)
+
+
+### Bug Fixes
+
+* border radius for button pill ([#1425](https://github.com/nordnet/ui/issues/1425)) ([799a9e4](https://github.com/nordnet/ui/commit/799a9e4))
+
 ## [12.46.1](https://github.com/nordnet/ui/compare/v12.46.0...v12.46.1) (2023-09-15)
 
 
