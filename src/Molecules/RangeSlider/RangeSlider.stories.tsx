@@ -4,7 +4,6 @@ import { Meta, Story } from '@storybook/react';
 import RangeSlider from './RangeSlider';
 import { Box, Number, Typography } from '../..';
 import { Props } from './RangeSlider.types';
-import { secondsToTimeString } from '../../common/utils';
 
 export default {
   title: 'Molecules / RangeSlider',
@@ -55,6 +54,16 @@ MaximumValue.args = {
   sliderColor: (t) => t.color.sliderColor,
 };
 
+export const ErrorSlider = Template.bind({});
+ErrorSlider.args = {
+  ...Default.args,
+  defaultLowValue: 20,
+  defaultHighValue: 100,
+  min: 0,
+  max: 50,
+  step: 1,
+};
+
 const TemplateMultiColor: Story<Props> = (args) => {
   const [value, setValue] = useState({ low: args.defaultLowValue, high: args.defaultHighValue });
   const handleChange = (v: any) => setValue(v);
@@ -68,7 +77,7 @@ const TemplateMultiColor: Story<Props> = (args) => {
       />
       <Typography>
         <Number value={value.low} maximumDecimals={2} />-{' '}
-        <Number value={value.high} maximumDecimals={2} /> Kronor
+        <Number value={value.high} maximumDecimals={2} /> SEK
       </Typography>
     </Box>
   );
@@ -86,27 +95,6 @@ export const SmallVariant = Template.bind({});
 SmallVariant.args = {
   ...Default.args,
   variant: 'small',
-};
-
-const PlayerTemplate: Story<Props> = (args) => {
-  return (
-    <Box p={20}>
-      <RangeSlider {...args} />
-    </Box>
-  );
-};
-
-export const PlayerVariant = PlayerTemplate.bind({});
-PlayerVariant.args = {
-  ...Default.args,
-  defaultLowValue: 10,
-  defaultHighValue: 100,
-  min: 0,
-  max: 100,
-  step: 1,
-  variant: 'player',
-  formatter: secondsToTimeString,
-  showTooltip: true,
 };
 
 export const Disabled = Template.bind({});

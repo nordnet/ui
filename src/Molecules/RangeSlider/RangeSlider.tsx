@@ -7,6 +7,7 @@ import { SliderTrack } from '../Slider/SliderTrack';
 import { SliderTrackHighlight } from '../Slider/SliderTrackHighlight';
 import { isFunction, isNumber } from '../../common/utils';
 import SliderKnobHandler from './SliderKnobHandler';
+import { Box, Typography } from '../..';
 
 const KnobPointerType = {
   low: 'low',
@@ -145,95 +146,32 @@ const RangeSlider: Component = ({
     }
   };
 
-  // const handleHover = (pos: number) => {
-  //   if (!disabled && !readOnly) {
-  //     const newValue = getNewValue(pos, trackRef.current, {
-  //       min,
-  //       max,
-  //       step,
-  //     });
-  //     if (newValue) {
-  //       setHoverPosition(newValue);
-  //     }
-  //     if (!hoverVisible) {
-  //       setHoverVisible(true);
-  //     }
-  //   }
-  // };
-
-  // const handleMouseMove = (event: MouseEvent) => {
-  //   event.stopPropagation();
-  //   event.preventDefault();
-  //   const pointerPosition = event.clientX;
-  //   handleChange(pointerPosition);
-  // };
-
-  // const handleMouseHover = () => {
-  //   // const pointerPosition = event.clientX;
-  //   setHoverVisible(true);
-  // };
-
-  // const handleMouseLeave = () => {
-  //   setHoverVisible(false);
-  // };
-
-  // const handleMouseUp = () => {
-  //   document.removeEventListener('mouseup', handleMouseUp);
-  //   document.removeEventListener('mousemove', handleMouseMove as () => void);
-  // };
-
-  // const handleMouseDown = () => {
-  //   document.addEventListener('mousemove', handleMouseMove as () => void);
-  //   document.addEventListener('mouseup', handleMouseUp);
-  // };
-
-  // const handleTouchMove = (event: TouchEvent) => {
-  //   event.stopPropagation();
-  //   event.preventDefault();
-  //   const touchPosition = event.touches[0].clientX;
-  //   handleHover(touchPosition);
-  //   handleChange(touchPosition);
-  // };
-
-  // const handleTouchEnd = () => {
-  //   document.removeEventListener('touchend', handleTouchEnd);
-  //   document.removeEventListener('touchmove', handleTouchMove as () => void);
-  //   setHoverVisible(false);
-  // };
-
-  // const handleTouchStart = () => {
-  //   document.addEventListener('touchmove', handleTouchMove as () => void);
-  //   document.addEventListener('touchend', handleTouchEnd);
-  // };
-
-  // const handleKnobClick = (event: MouseEvent) => {
-  //   event.stopPropagation();
-  // };
-
   const handleTrackClick = (event: MouseEvent) => {
     const pointerPosition = event.clientX;
     handleRef.current?.focus();
 
     handleChange(pointerPosition);
   };
-
-  // const handleKeyDown = (event: KeyboardEvent) => {
-  //   if (!disabled) {
-  //     const increase = event.key && ['ArrowRight', 'ArrowUp'].includes(event.key);
-  //     const decrease = event.key && ['ArrowLeft', 'ArrowDown'].includes(event.key);
-
-  //     let newValue = maxTrackValue;
-  //     if (increase) {
-  //       newValue = maxTrackValue + step;
-  //     }
-  //     if (decrease) {
-  //       newValue = maxTrackValue - step;
-  //     }
-
-  //     updateValue(clamp(newValue, min, max));
-  //   }
-  // };
   const trackerBoundingClientRect: any = trackRef?.current?.getBoundingClientRect();
+  if (defaultHighValue && max < defaultHighValue) {
+    return (
+      <Box p={2}>
+        <Typography type="secondary" color={(t) => t.colorTokens.negative.background_brand}>
+          Error - defaultHighValue {defaultHighValue} can not be more than max {max} value
+        </Typography>
+      </Box>
+    );
+  }
+
+  if (defaultLowValue && min > defaultLowValue) {
+    return (
+      <Box p={2}>
+        <Typography type="secondary" color={(t) => t.colorTokens.negative.background_brand}>
+          Error - defaultLowValue {defaultLowValue} can not be less than min {min} value
+        </Typography>
+      </Box>
+    );
+  }
   return (
     <Container
       $disabled={disabled}
@@ -243,16 +181,7 @@ const RangeSlider: Component = ({
       ref={trackRef}
       tabIndex={-1}
     >
-      <SliderTrack
-        variant={variant}
-        sliderColor={sliderColor}
-        readOnly={readOnly}
-        // onMouseDown={handleMouseDown}
-        // onMouseLeave={handleMouseLeave}
-        // onMouseMove={handleMouseHover}
-        // onMouseUp={handleMouseUp}
-        // onTouchStart={handleTouchStart}
-      >
+      <SliderTrack variant={variant} sliderColor={sliderColor} readOnly={readOnly}>
         <SliderTrackHighlight
           sliderColor={sliderColor}
           startValue={minTrackPercent}
