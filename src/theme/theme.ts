@@ -6,7 +6,7 @@ import { BORDER_RADIUS, Theme, ThemeColorsVersion, ThemeConfig } from './theme.t
 import { createLightColors, getColorLightScheme } from './createLightColors';
 import { createDarkColors, getColorDarkScheme } from './createDarkColors';
 
-const breakpoints: Theme['breakpoints'] = {
+const defaultBreakpoints: Theme['breakpoints'] = {
   xs: {
     size: 360,
     offset: 0,
@@ -26,6 +26,14 @@ const breakpoints: Theme['breakpoints'] = {
   xl: {
     size: 1680,
     offset: 6,
+  },
+};
+
+const cmsBreakpoints: Theme['breakpoints'] = {
+  ...defaultBreakpoints,
+  xl: {
+    ...defaultBreakpoints.xl,
+    size: 1920,
   },
 };
 
@@ -72,7 +80,8 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     ? createDarkColors(getColorDarkScheme(type))
     : createLightColors(getColorLightScheme(type));
 
-  // @ts-ignore
+  const breakpoints = featureToggles?.cmsBreakpoints ? cmsBreakpoints : defaultBreakpoints;
+
   const sizeValues = getSizesValues(breakpoints) as number[];
 
   const GUTTER = 5;
