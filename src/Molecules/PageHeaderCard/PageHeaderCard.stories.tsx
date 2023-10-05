@@ -17,7 +17,7 @@ regularPageHeader.story = {
 export const pageHeaderWithChildren = () => (
   <PageHeaderCard title="Your darkest loaves">
     <Box py={2} sm={{ py: 0 }}>
-      <Flexbox container gutter={2} alignItems="center" justifyContent="space-between">
+      <Flexbox container gap={2} alignItems="center" justifyContent="space-between">
         <Flexbox item>The eternal loremipsum, The portuguese friend</Flexbox>
         <Flexbox item>
           <Button>Click here to recruit carl</Button>

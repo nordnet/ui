@@ -20,6 +20,6 @@ export type Props = {
 };
 
 export type BarProps = {
-  isActive: boolean;
-  barHeight: number;
+  $isActive: boolean;
+  $barHeight: number;
 };

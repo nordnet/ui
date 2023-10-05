@@ -11,7 +11,13 @@ const themes = {};
 const getTheme = (darkMode) => {
   const key = `dark:${darkMode}`;
   if (!themes[key]) {
-    themes[key] = createTheme({ darkColors: darkMode });
+    themes[key] = createTheme({
+      darkColors: darkMode,
+      ...(darkMode ? { tokensTheme: 'dark' } : {}),
+      featureToggles: {
+        roundedCorners: true,
+      },
+    });
   }
   return themes[key];
 };
@@ -28,6 +34,7 @@ body {
     top: 10px;
     left: 10px;
     right: 10px;
+    padding: 12px;
 }
 
 .sbdocs.sbdocs-content {

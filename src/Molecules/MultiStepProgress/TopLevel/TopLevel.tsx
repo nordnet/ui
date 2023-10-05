@@ -35,18 +35,29 @@ const ListItem = styled.li<InternalProps>`
   display: block;
   position: relative;
   background-color: ${(p) => p.theme.color.inputBackground};
+  border-radius: ${({ theme }) => theme.borderRadius8};
+  ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
+    border-radius: 0;
+  }
 
   &::before {
     content: '';
     display: block;
-    background: ${(p) => p.theme.color.cta};
-    width: 2px;
+    background: ${(p) => p.theme.colorTokens.action.border_default};
+    width: ${(p) => (p.$isInDrawer ? '2px' : '8px')};
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     transition: opacity 0.16s ease-out;
     opacity: ${(p) => (p.$current ? 1 : 0)};
+    border-top-left-radius: ${(p) => (p.$isInDrawer ? 0 : p.theme.borderRadius8)};
+    border-bottom-left-radius: ${(p) => (p.$isInDrawer ? 0 : p.theme.borderRadius8)};
+
+    ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
+      width: 2px;
+      border-radius: 0;
+    }
   }
 
   ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
@@ -90,6 +101,7 @@ const ProgressLevels: ProgressLevelsComponent = ({
   onSubStepClick,
   titleDone,
   titleNotDone,
+  isInDrawer,
 }) => {
   return (
     <StyledOrderedList>
@@ -99,7 +111,7 @@ const ProgressLevels: ProgressLevelsComponent = ({
           const number = i + 1;
 
           return (
-            <ListItem key={label} $current={current}>
+            <ListItem key={label} $current={current} $isInDrawer={isInDrawer}>
               {current || done ? (
                 <Wrapper>
                   <StyledButton

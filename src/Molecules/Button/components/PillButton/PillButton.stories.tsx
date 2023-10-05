@@ -353,7 +353,7 @@ pillButtonThatIsFullWidth.story = {
 };
 
 export const pillButtonsComposedInAGroup = () => (
-  <Flexbox container gutter={2}>
+  <Flexbox container gap={2}>
     <Flexbox item flex="1 1 50%">
       <SecondaryBackground>
         <PillButton onClick={action('submit')} fullWidth>

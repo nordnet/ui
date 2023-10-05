@@ -3,16 +3,12 @@ import React from 'react';
 import { IconBase } from '../../IconBase';
 import { IconProps } from '../../IconBase.types';
 
-// ! The Check12 icon is a snowflake, we usually do 8px, 16px, 24px or 32px.
-// ! Used in rare cases, avoid if possible
 const Check12: React.FC<IconProps> = (props) => {
   return (
     <IconBase {...props} width={12} height={12}>
       <path
+        d="M11.6536 3.16421L4.58248 10.2353L0.339844 5.99264L1.75406 4.57843L4.58248 7.40685L10.2393 1.75L11.6536 3.16421Z"
         fill="currentColor"
-        fillRule="evenodd"
-        d="m11.654 3.164-7.072 7.071L.34 5.993l1.414-1.415 2.828 2.829L10.24 1.75l1.415 1.414Z"
-        clipRule="evenodd"
       />
     </IconBase>
   );

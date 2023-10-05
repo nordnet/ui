@@ -22,11 +22,15 @@ const barStyles = css<Props>`
     content: '';
     display: block;
     width: 100%;
-    height: ${(p) => p.theme.spacing.unit(1)}px;
+    height: ${(p) => p.theme.spacing.unit(2)}px;
     background: ${(p) => getColor(p)};
     position: absolute;
     top: 0;
     left: 0;
+    ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
+      border-top-left-radius: ${(p) => p.theme.borderRadius8};
+      border-top-right-radius: ${(p) => p.theme.borderRadius8};
+    }
   }
 `;
 
@@ -37,11 +41,14 @@ const StyledCard = styled.div<Props>`
   && {
     ${(p) => !R.isNil(p.grow) && `flex-grow: ${p.grow}`};
   }
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
+    border-radius: ${({ theme }) => theme.borderRadius8};
+  }
 `;
 
 export const Card: React.FC<Props> = React.forwardRef<HTMLDivElement, Props>(
-  ({ as, barColor, children, className, grow }, ref) => (
-    <StyledCard className={className} as={as} barColor={barColor} ref={ref} grow={grow}>
+  ({ as, barColor, children, className, grow, ...rest }, ref) => (
+    <StyledCard className={className} as={as} barColor={barColor} ref={ref} grow={grow} {...rest}>
       {children}
     </StyledCard>
   ),

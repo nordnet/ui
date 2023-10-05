@@ -20,7 +20,7 @@ export const differentPlacementAndTrianglePosition = () => (
     items={[
       {
         component: (
-          <DropdownBubble position="left">
+          <DropdownBubble position="left" triangle>
             <Typography type="hero">Hello world!</Typography>
           </DropdownBubble>
         ),
@@ -28,7 +28,7 @@ export const differentPlacementAndTrianglePosition = () => (
       },
       {
         component: (
-          <DropdownBubble position="right">
+          <DropdownBubble position="right" triangle>
             <Typography type="hero">Hello world!</Typography>
           </DropdownBubble>
         ),
@@ -36,7 +36,7 @@ export const differentPlacementAndTrianglePosition = () => (
       },
       {
         component: (
-          <DropdownBubble position="center">
+          <DropdownBubble position="center" triangle>
             <Typography type="hero">Hello world!</Typography>
           </DropdownBubble>
         ),
@@ -44,7 +44,7 @@ export const differentPlacementAndTrianglePosition = () => (
       },
       {
         component: (
-          <DropdownBubble position="left" placement="top">
+          <DropdownBubble position="left" placement="top" triangle>
             <Typography type="hero">Hello world!</Typography>
           </DropdownBubble>
         ),
@@ -52,7 +52,7 @@ export const differentPlacementAndTrianglePosition = () => (
       },
       {
         component: (
-          <DropdownBubble position="right" placement="top">
+          <DropdownBubble position="right" placement="top" triangle>
             <Typography type="hero">Hello world!</Typography>
           </DropdownBubble>
         ),
@@ -60,7 +60,7 @@ export const differentPlacementAndTrianglePosition = () => (
       },
       {
         component: (
-          <DropdownBubble position="center" placement="top">
+          <DropdownBubble position="center" placement="top" triangle>
             <Typography type="hero">Hello world!</Typography>
           </DropdownBubble>
         ),

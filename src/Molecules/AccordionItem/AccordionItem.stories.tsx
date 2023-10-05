@@ -57,7 +57,7 @@ export const controlled = () => {
     return (
       <>
         <Box mb={4}>
-          <Flexbox container gutter={4}>
+          <Flexbox container gap={4}>
             <Flexbox item>
               <Button variant="primary" onClick={() => clickHandler('first')}>
                 Toggle first

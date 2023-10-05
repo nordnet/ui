@@ -34,7 +34,7 @@ const Content = ({ height, hideFirst }: ContentProps) => {
   const route1Match = useMatch('/route1');
   const route2Match = useMatch('/route2');
   return (
-    <Flexbox container direction="column" gutter={0}>
+    <Flexbox container direction="column" gap={0}>
       <Flexbox item>
         <TabsNav height={height}>
           {!hideFirst && (
@@ -116,7 +116,7 @@ const ContentWithManyLinks = () => {
   const route6Match = useMatch('/route6');
 
   return (
-    <Flexbox container direction="column" gutter={0}>
+    <Flexbox container direction="column" gap={0}>
       <Flexbox item>
         <TabsNav height={11} scrollOptions={{ active: true, scrollBarHidden: true }}>
           <TabsNav.Tab

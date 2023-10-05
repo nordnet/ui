@@ -20,6 +20,9 @@ const StyledIconButton = styled(Button)<{ size: 's' | 'm' }>`
   align-items: center;
   height: ${(p) => p.theme.spacing.unit(SIZE[p.size || 'm'])}px;
   width: ${(p) => p.theme.spacing.unit(SIZE[p.size || 'm'])}px;
+  border: none;
+  padding: 0;
+  min-height: 0;
 
   ${(p) => {
     return p.disabled
@@ -35,9 +38,6 @@ const StyledIconButton = styled(Button)<{ size: 's' | 'm' }>`
     }
   `;
   }}
-  &::before {
-    display: none;
-  }
 `;
 
 export const IconButton: IconButtonComponent = React.forwardRef<

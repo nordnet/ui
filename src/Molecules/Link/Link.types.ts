@@ -1,4 +1,5 @@
 import React from 'react';
+import { TrackingProps } from '../../common/tracking.types';
 
 export type LinkProps = {
   children: React.ReactNode;
@@ -21,6 +22,8 @@ export type LinkProps = {
 } & Pick<
   React.DOMAttributes<HTMLAnchorElement>,
   'onMouseEnter' | 'onMouseLeave' | 'onMouseOver' | 'onFocus'
->;
+> &
+  Pick<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'role'> &
+  TrackingProps;
 
 export type LinkComponent = React.FunctionComponent<LinkProps>;

@@ -33,6 +33,7 @@ const WithOptionalAddon: React.FC<LabelAddonProp> = ({
   labelTooltip,
   labelTooltipPosition,
   hideLabel,
+  labelTooltipInModal,
 }) =>
   hideLabel ? (
     <>{children}</>
@@ -40,7 +41,12 @@ const WithOptionalAddon: React.FC<LabelAddonProp> = ({
     <Flexbox container alignItems="center">
       {children}
       {labelTooltip && (
-        <Tooltip position={labelTooltipPosition} label={labelTooltip}>
+        <Tooltip
+          position={labelTooltipPosition}
+          label={labelTooltip}
+          inModal={labelTooltipInModal}
+          wrapChild={labelTooltipInModal}
+        >
           <TooltipIcon size={4} />
         </Tooltip>
       )}
@@ -61,6 +67,7 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
       label,
       labelTooltip,
       labelTooltipPosition,
+      labelTooltipInModal,
       required = false,
       showRequired = false,
       width,
@@ -75,9 +82,10 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
       field = (
         <FormLabel disabled={disabled}>
           <WithOptionalAddon
-            labelTooltip={labelTooltip}
-            labelTooltipPosition={labelTooltipPosition}
             hideLabel={hideLabel}
+            labelTooltip={labelTooltip}
+            labelTooltipInModal={labelTooltipInModal}
+            labelTooltipPosition={labelTooltipPosition}
           >
             {hideLabel ? <VisuallyHidden>{labelText}</VisuallyHidden> : labelText}
           </WithOptionalAddon>
@@ -89,9 +97,10 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
         field = (
           <Fieldset>
             <WithOptionalAddon
-              labelTooltip={labelTooltip}
-              labelTooltipPosition={labelTooltipPosition}
               hideLabel={hideLabel}
+              labelTooltip={labelTooltip}
+              labelTooltipInModal={labelTooltipInModal}
+              labelTooltipPosition={labelTooltipPosition}
             >
               <Legend styleType="label">{labelText}</Legend>
             </WithOptionalAddon>
@@ -103,9 +112,10 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
           <>
             <FormLabel hideLabel={hideLabel} forId={fieldId || forId}>
               <WithOptionalAddon
-                labelTooltip={labelTooltip}
-                labelTooltipPosition={labelTooltipPosition}
                 hideLabel={hideLabel}
+                labelTooltip={labelTooltip}
+                labelTooltipInModal={labelTooltipInModal}
+                labelTooltipPosition={labelTooltipPosition}
               >
                 {labelText}
               </WithOptionalAddon>

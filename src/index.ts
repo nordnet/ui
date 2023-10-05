@@ -37,11 +37,17 @@ import BarScale from './Molecules/BarScale';
 import BottomWizardBar from './Molecules/BottomWizardBar';
 import Button, { PillButton } from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
+import CheckList from './Molecules/CheckList';
 import CoachMarks from './Molecules/CoachMarks';
 import CollapsibleCard from './Molecules/CollapsibleCard';
 import ControlsListItem from './Molecules/ControlsListItem';
 import DataToggle from './Molecules/DataToggle';
-import { DatePicker, DateRangePicker, DoubleDatePicker } from './Molecules/DatePicker';
+import {
+  DatePicker,
+  DateRangePicker,
+  DoubleDatePicker,
+  DatePickerClearable,
+} from './Molecules/DatePicker';
 import { DistributionBar } from './Molecules/DistributionBar';
 import Drawer from './Molecules/Drawer';
 import FeedbackBanner from './Molecules/FeedbackBanner';
@@ -149,6 +155,7 @@ export {
   Card,
   CardWithTabs,
   CardWithTitle,
+  CheckList,
   CoachMarks,
   CollapsibleCard,
   ControlsListItem,
@@ -157,6 +164,7 @@ export {
   DatePicker,
   DateRangePicker,
   DoubleDatePicker,
+  DatePickerClearable,
   DateTime,
   Development,
   DistributionBar,

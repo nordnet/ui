@@ -1,6 +1,17 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Box, Button, FadedScroll, Flexbox, OldIcon, Modal, Typography } from '../..';
+import {
+  Box,
+  Button,
+  FadedScroll,
+  Flexbox,
+  OldIcon,
+  Modal,
+  Typography,
+  SelectionCard,
+  Icon,
+  useMedia,
+} from '../..';
 
 const ScrollMaker = styled.div`
   background-image: linear-gradient(
@@ -310,7 +321,7 @@ hideClose.story = {
 
 export const nodeAsTitle = () => {
   const Title = (
-    <Flexbox container gutter={2} alignItems="center">
+    <Flexbox container gap={2} alignItems="center">
       <OldIcon.Bolt />
       <Typography type="title2" as="h2">
         React Node Title
@@ -852,7 +863,7 @@ export const modalStandardMobile = () => {
     };
 
     const footer = (
-      <Flexbox container gutter={2}>
+      <Flexbox container gap={2}>
         <Flexbox container item flex="1">
           <Button variant="secondary" size="l" onClick={() => {}} fullWidth>
             Cancel
@@ -1001,7 +1012,7 @@ export const modalMobileSmall = () => {
     };
 
     const footer = (
-      <Flexbox container gutter={2}>
+      <Flexbox container gap={2}>
         <Flexbox container item flex="1">
           <Button variant="secondary" size="l" onClick={() => {}} fullWidth>
             Button
@@ -1124,7 +1135,7 @@ export const modalMobileFullscreenWithScroll = () => {
     };
 
     const footer = (
-      <Flexbox container gutter={2}>
+      <Flexbox container gap={2}>
         <Flexbox container item flex="1">
           <Button variant="secondary" size="l" onClick={() => {}} fullWidth>
             Button
@@ -1385,4 +1396,55 @@ export const modalWithDisabledEscapePress = () => {
 
 modalWithDisabledEscapePress.story = {
   name: 'Modal with disabled escape-key press',
+};
+
+export const modalWithProgressIndicator = () => {
+  const Example = () => {
+    const [value, setValue] = useState(false);
+    const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
+
+    return (
+      <Modal
+        onClose={() => {
+          // eslint-disable-next-line no-alert
+          alert('This should never be called when pressing the escape-key');
+        }}
+        title="Modal with progress indicator "
+        open
+        progressIndicator={{ numberOfSteps: 3, currentStep: 2, borderBottomMobile: false }}
+        progressIndicatorDescription="Find investments"
+        fixedBottomMobile
+        fullScreenMobile={false}
+      >
+        <Flexbox container gap={2} direction={isMobile ? 'column' : 'row'}>
+          <Flexbox item width={isMobile ? '100%' : '50%'}>
+            <SelectionCard
+              border
+              horizontal={!!isMobile}
+              icon={<Icon.Book32 />}
+              onChange={() => setValue(!value)}
+              selected={value}
+              text="This component is controlled"
+              title="Controlled selection card"
+            />
+          </Flexbox>
+          <Flexbox item width={isMobile ? '100%' : '50%'}>
+            <SelectionCard
+              border
+              horizontal={!!isMobile}
+              icon={<Icon.Book32 />}
+              onChange={() => setValue(!value)}
+              selected={value}
+              text="This component is controlled"
+              title="Controlled selection card"
+            />
+          </Flexbox>
+        </Flexbox>
+      </Modal>
+    );
+  };
+  return <Example />;
+};
+modalWithProgressIndicator.story = {
+  name: 'Modal with progress indicator',
 };

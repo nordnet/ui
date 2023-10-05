@@ -8,6 +8,7 @@ import { LinkBuyComponent, UsedLinkProps as Props } from './LinkBuy.types';
 const StyledLink = styled(Link)<Props>`
   color: ${p => (p.disabled ? p.theme.color.disabledText : p.theme.color.buy)};
   padding: ${p => p.theme.spacing.unit(0.5)}px ${p => p.theme.spacing.unit(1)}px;
+  border-radius: ${p => p.theme.borderRadius2};
 
   &:hover {
     text-decoration: none;

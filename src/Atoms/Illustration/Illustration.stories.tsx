@@ -105,7 +105,7 @@ const StyledLabeledValue = styled(LabeledValue)`
 `;
 
 const SizeIllustrations = (size: string) => (
-  <StyledFlexbox container gutter={8} wrap="wrap">
+  <StyledFlexbox container gap={8} wrap="wrap">
     {Object?.entries(Illustration)
       ?.filter((name) => name[0].includes(size))
       .map(

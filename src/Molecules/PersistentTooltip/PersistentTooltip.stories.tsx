@@ -106,7 +106,7 @@ export const CustomTitleAndDescription = () => {
           </Box>
         }
         description={
-          <Flexbox container gutter={4}>
+          <Flexbox container gap={4}>
             <Flexbox item>
               <Typography color={t => t.color.textLight}>
                 I am in a custom jsx description.

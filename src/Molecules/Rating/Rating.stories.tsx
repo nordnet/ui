@@ -72,7 +72,7 @@ export const RatingOutOf3WithLabel = () => (
     alignItems="center"
     justifyContent="center"
     width="100%"
-    gutter={4}
+    gap={4}
     height="100vh"
   >
     <Flexbox container direction="column" alignItems="center" justifyContent="center">

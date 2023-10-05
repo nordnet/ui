@@ -40,14 +40,16 @@ export const SameWeekEnabled = () => {
 };
 
 export const Controlled = () => {
-  const [startDate, setStartDate] = useState(new Date('01/01/2021'));
-  const [endDate, setEndDate] = useState(add(startDate, { days: 4 }));
+  const [startDate, setStartDate] = useState<Date | undefined>(new Date('01/01/2021'));
+  const [endDate, setEndDate] = useState(add(startDate || new Date(), { days: 4 }));
 
   return (
     <>
-      <Flexbox container gutter={2}>
+      <Flexbox container gap={2}>
         <Flexbox item>
-          <Button onClick={() => setStartDate(add(startDate, { days: 1 }))}>Next date</Button>
+          <Button onClick={() => setStartDate(add(startDate || new Date(), { days: 1 }))}>
+            Next date
+          </Button>
         </Flexbox>
         <Flexbox item>
           <Button onClick={() => setEndDate(add(endDate, { days: 1 }))}>Next end date</Button>

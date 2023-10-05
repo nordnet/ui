@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { TooltipContentProps } from './TooltipContent.types';
 import { BORDER_SIZE } from '../consts';
-import { Typography } from '../../..';
+import { Box, Button, Flexbox, Icon, Typography } from '../../..';
 
 type StyledTooltipProps = {
   ref?: React.RefObject<any>;
@@ -15,13 +15,20 @@ const StyledTooltip = styled.div<StyledTooltipProps>`
   border: solid ${BORDER_SIZE}px ${(p) => p.borderColor(p.theme)};
   ${(p) => (p.maxWidth ? `max-width: ${p.theme.spacing.unit(p.maxWidth)}px;` : '')}
   overflow-wrap: break-word;
+  border-radius: ${(p) => p.theme.borderRadius4};
+
   ${(p) =>
     p.bottomSheet &&
     `
         width: 100%;
         max-width: none;
         box-sizing: border-box;
+        border-radius: ${p.theme.borderRadius20} ${p.theme.borderRadius20} 0px 0px;
     `}
+`;
+
+const StyledBottomSheetTitle = styled(Typography)`
+  font-weight: 900;
 `;
 
 const TooltipContent: FC<TooltipContentProps> = ({
@@ -31,6 +38,8 @@ const TooltipContent: FC<TooltipContentProps> = ({
   backgroundColor,
   borderColor,
   invertedColors,
+  bottomSheetTitle,
+  onBottomSheetClose,
   ...htmlDivProps
 }) => {
   return (
@@ -42,12 +51,31 @@ const TooltipContent: FC<TooltipContentProps> = ({
       borderColor={borderColor}
       {...htmlDivProps}
     >
-      <Typography
-        type="tertiary"
-        color={(c) => (invertedColors ? c.color.textLight : c.color.text)}
-      >
-        {label}
-      </Typography>
+      {bottomSheetTitle && htmlDivProps.bottomSheet ? (
+        <Box p={5}>
+          <Typography
+            type="tertiary"
+            color={(c) => (invertedColors ? c.color.textLight : c.color.text)}
+          >
+            <Box pb={5}>
+              <Flexbox container justifyContent="space-between">
+                <StyledBottomSheetTitle type="title2">{bottomSheetTitle}</StyledBottomSheetTitle>
+                <Button variant="neutral" onClick={onBottomSheetClose}>
+                  <Icon.Cross24 />
+                </Button>
+              </Flexbox>
+            </Box>
+            {label}
+          </Typography>
+        </Box>
+      ) : (
+        <Typography
+          type="tertiary"
+          color={(c) => (invertedColors ? c.color.textLight : c.color.text)}
+        >
+          {label}
+        </Typography>
+      )}
     </StyledTooltip>
   );
 };

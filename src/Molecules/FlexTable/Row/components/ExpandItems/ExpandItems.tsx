@@ -1,16 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Flexbox, List, Media } from '../../../../..';
 import { ExpandItemsComponent } from './ExpandItems.types';
-import { Props as FlexBoxProps } from '../../../../../Atoms/Flexbox/Flexbox.types';
-import { Props as ListProps } from '../../../../../Atoms/List/List.types';
 import { ExpandItem } from './ExpandItem';
-
-type FlexListProps = FlexBoxProps & ListProps;
-
-const FlexList = styled(List).withConfig({
-  shouldForwardProp: (prop) => !['wrap', 'container', 'gutter'].includes(prop),
-})<FlexListProps>``;
 
 export const ExpandItems: ExpandItemsComponent = ({ items }) => {
   return (
@@ -23,7 +14,7 @@ export const ExpandItems: ExpandItemsComponent = ({ items }) => {
         </List>
       </Media>
       <Media query={(t) => t.media.greaterThan(t.breakpoints.md)}>
-        <Flexbox container wrap="wrap" gutter={10} as={FlexList}>
+        <Flexbox container wrap="wrap" gap={10} as={List}>
           {items?.map((item, index) => (
             <ExpandItem key={`expandItem_desktop_${index + 1}`} item={item} />
           ))}

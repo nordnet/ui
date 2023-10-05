@@ -5,11 +5,13 @@ export type Props = {
   ref?: React.Ref<HTMLDivElement>;
   style?: object;
   bottomSheet: boolean;
+  noBorder?: boolean;
 };
 
 export type InternalProps = {
   $bubblePlacement: Placement;
   bottomSheet: boolean;
+  noBorder?: boolean;
 };
 
 export type Component = React.FC<Props>;

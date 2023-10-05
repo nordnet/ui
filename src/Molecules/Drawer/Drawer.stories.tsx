@@ -142,7 +142,7 @@ export const withCustomTitle = () => {
         <Drawer
           onClose={onClose}
           title={
-            <Flexbox container gutter={2} alignItems="center">
+            <Flexbox container gap={2} alignItems="center">
               <OldIcon.Bank />
               <Typography type="title2" as="h2">
                 Custom title

@@ -3,7 +3,7 @@ import format from 'date-fns/format';
 import sub from 'date-fns/sub';
 import add from 'date-fns/add';
 import { Props } from './Header.types';
-import { Box, Button, Flexbox, OldIcon } from '../../../..';
+import { Box, Button, Flexbox, Icon } from '../../../..';
 import { getLocale } from '../../shared/dateUtils';
 import SelectMonth from '../../shared/components/SelectMonth';
 import SelectYear from '../../shared/components/SelectYear';
@@ -27,12 +27,12 @@ const Header: React.FC<Props> = ({
 
   const ariaLabelPreviousText = ariaLabelPrevious.replace(
     '{date}',
-    format(sub(viewedDate, { months: 1 }), 'MMMM yyyy', opts),
+    format(sub(viewedDate || new Date(), { months: 1 }), 'MMMM yyyy', opts),
   );
 
   const ariaLabelNextText = ariaLabelNext.replace(
     '{date}',
-    format(add(viewedDate, { months: 1 }), 'MMMM yyyy', opts),
+    format(add(viewedDate || new Date(), { months: 1 }), 'MMMM yyyy', opts),
   );
 
   return (
@@ -48,7 +48,7 @@ const Header: React.FC<Props> = ({
                 onMonthChange(viewedDate.getMonth() - 1);
               }}
             >
-              <OldIcon.ThinChevron size={4} direction="left" />
+              <Icon.ChevronLeft16 />
             </Button>
           </Box>
         </Flexbox>
@@ -85,7 +85,7 @@ const Header: React.FC<Props> = ({
                 onMonthChange(viewedDate.getMonth() + 1);
               }}
             >
-              <OldIcon.ThinChevron size={4} direction="right" />
+              <Icon.ChevronRight16 />
             </Button>
           </Box>
         </Flexbox>

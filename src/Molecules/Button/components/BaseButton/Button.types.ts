@@ -1,5 +1,6 @@
 import React from 'react';
 import { Theme } from '../../../../theme/theme.types';
+import { TrackingProps } from '../../../../common/tracking.types';
 
 type Colors = Theme['color'];
 type ColorFn = (
@@ -44,7 +45,8 @@ export type ButtonProps = {
 } & Pick<
   React.DOMAttributes<HTMLButtonElement | HTMLAnchorElement>,
   'onMouseEnter' | 'onMouseLeave' | 'onMouseOver'
->;
+> &
+  TrackingProps;
 
 export type InnerProps = Omit<ButtonProps, 'variant' | 'size' | 'fullWidth' | 'colorFn'> & {
   $variant?: ButtonProps['variant'];

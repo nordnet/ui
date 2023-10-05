@@ -29,7 +29,7 @@ const Calendar: React.FC<Props> = ({
 }) => {
   const calendarRef = useRef<HTMLDivElement>(null);
   const localeObj = getLocale(locale);
-  const calendar = getCalendar(viewedDate, {
+  const calendar = getCalendar(viewedDate || new Date(), {
     locale: localeObj,
   });
 

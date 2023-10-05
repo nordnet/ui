@@ -340,7 +340,7 @@ export const WithClickableContent = () => {
 
 export const WithOffset = () => (
   <Box p={20}>
-    <Flexbox container gutter={4} alignItems="center">
+    <Flexbox container gap={4} alignItems="center">
       <Typography type="primary">Hover the pen!</Typography>
       <Tooltip label="This tooltip has offset" wrapChild offset={[-20, 40]}>
         <Icon.Edit16 />
@@ -351,7 +351,7 @@ export const WithOffset = () => (
 
 export const WithOffsetAsAFunction = () => (
   <Box p={20}>
-    <Flexbox container gutter={4} alignItems="center">
+    <Flexbox container gap={4} alignItems="center">
       <Typography type="primary">Hover the pen!</Typography>
       <Tooltip
         position="bottom"
@@ -430,6 +430,7 @@ export const StyledPopOver = () => (
 );
 
 export const BottomSheet = () => {
+  const [open, setOpen] = useState(false);
   return (
     <Box py={20}>
       <Tooltip
@@ -438,12 +439,17 @@ export const BottomSheet = () => {
             popover content <Button onClick={() => alert('You clicked me!')}>click</Button>
           </>
         }
-        position="top"
+        position="bottom"
         wrapChild
         pointerEvents
         bottomSheetQuery={(t) => t.media.lessThan(t.breakpoints.sm)}
+        bottomSheetTitle="BottomSheet Title"
+        isOpen={open}
+        onBottomSheetClose={() => setOpen(false)}
       >
-        <Typography type="primary">hover me</Typography>
+        <UIButton variant="neutral" onClick={() => setOpen(!open)}>
+          <Typography type="primary">CLICK ME</Typography>
+        </UIButton>
       </Tooltip>
     </Box>
   );

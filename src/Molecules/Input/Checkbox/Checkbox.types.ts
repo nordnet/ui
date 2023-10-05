@@ -13,6 +13,7 @@ export type Props = {
   label: string | JSX.Element;
   labelTooltip?: string;
   labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
+  labelTooltipInModal?: boolean;
   name?: string;
   required?: boolean;
   value?: string;

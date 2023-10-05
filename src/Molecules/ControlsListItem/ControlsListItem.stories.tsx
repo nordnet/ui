@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { OptionItem } from '../Input/Select/Select.types';
 
 import ControlsListItem from '.';
-import { Icon, Separator } from '../..';
+import { Icon, List, Separator } from '../..';
 
 export default {
   title: 'Molecules / ControlsListItem',
@@ -127,7 +127,7 @@ export const ControlsListItemSwitchWithAddon = () => {
       Icon={<Icon.Account24 />}
       description="description is good otherwise we don't understand"
       onChange={() => setIsChecked(!isChecked)}
-      addon={ControlsListItemSelectWithoutDescription(true, false, true, undefined)}
+      addon={ControlsListItemSelectWithoutDescription(true, true, false, undefined)}
     />
   );
 };
@@ -231,18 +231,16 @@ export const ControlsListItemRadioWithAddon = () => {
   };
 
   return (
-    <div style={{ width: '100%' }}>
-      <ControlsListItem.Radio
-        checked={currentGroup === OPTIONS.VIKING}
-        name={OPTIONS.VIKING}
-        label={OPTIONS.VIKING}
-        Icon={<Icon.Gold16 />}
-        value={OPTIONS.VIKING}
-        description="description is good otherwise we don't understand"
-        onChange={(_) => onChange(OPTIONS.VIKING)}
-        addon={ControlsListItemSelectWithoutDescription(true, false, true, undefined)}
-      />
-    </div>
+    <ControlsListItem.Radio
+      checked={currentGroup === OPTIONS.VIKING}
+      name={OPTIONS.VIKING}
+      label={OPTIONS.VIKING}
+      Icon={<Icon.Gold16 />}
+      value={OPTIONS.VIKING}
+      description="description is good otherwise we don't understand"
+      onChange={(_) => onChange(OPTIONS.VIKING)}
+      addon={ControlsListItemSelectWithoutDescription(true, false, true, undefined)}
+    />
   );
 };
 
@@ -260,18 +258,16 @@ export const ControlsListItemRadioWithAddonRightAligned = () => {
   };
 
   return (
-    <div style={{ width: '100%' }}>
-      <ControlsListItem.Radio
-        checked={currentGroup === OPTIONS.VIKING}
-        name={OPTIONS.VIKING}
-        label={OPTIONS.VIKING}
-        Icon={<Icon.Gold16 />}
-        value={OPTIONS.VIKING}
-        description="description is good otherwise we don't understand"
-        onChange={(_) => onChange(OPTIONS.VIKING)}
-        addon={ControlsListItemSelectWithoutDescription(true, true, false, 'auto')}
-      />
-    </div>
+    <ControlsListItem.Radio
+      checked={currentGroup === OPTIONS.VIKING}
+      name={OPTIONS.VIKING}
+      label={OPTIONS.VIKING}
+      Icon={<Icon.Gold16 />}
+      value={OPTIONS.VIKING}
+      description="description is good otherwise we don't understand"
+      onChange={(_) => onChange(OPTIONS.VIKING)}
+      addon={ControlsListItemSelectWithoutDescription(true, true, false, 'auto')}
+    />
   );
 };
 
@@ -289,21 +285,43 @@ export const ControlsListItemRadioWithAddonRightAlignedFixedMinWidth = () => {
   };
 
   return (
-    <div style={{ width: '100%' }}>
-      <ControlsListItem.Radio
-        checked={currentGroup === OPTIONS.VIKING}
-        name={OPTIONS.VIKING}
-        label={OPTIONS.VIKING}
-        Icon={<Icon.Gold16 />}
-        value={OPTIONS.VIKING}
-        description="description is good otherwise we don't understand"
-        onChange={(_) => onChange(OPTIONS.VIKING)}
-        addon={ControlsListItemSelectWithoutDescription(true, true, false, '300px')}
-      />
-    </div>
+    <ControlsListItem.Radio
+      checked={currentGroup === OPTIONS.VIKING}
+      name={OPTIONS.VIKING}
+      label={OPTIONS.VIKING}
+      Icon={<Icon.Gold16 />}
+      value={OPTIONS.VIKING}
+      description="description is good otherwise we don't understand"
+      onChange={(_) => onChange(OPTIONS.VIKING)}
+      addon={ControlsListItemSelectWithoutDescription(true, true, false, '300px')}
+    />
   );
 };
 
 ControlsListItemRadioWithAddonRightAlignedFixedMinWidth.story = {
   name: 'Controls list item Radio with addon component right aligned and fixed min-width',
+};
+
+export const ControlsListWithLotsOfItems = () => {
+  return (
+    <div style={{ width: '80%', margin: 20, background: 'white' }}>
+      <List separated>
+        <ControlsListItemButtonWithIcon24 />
+        <ControlsListItemButtonWithIcon16 />
+        <ControlsListItemSelect />
+        <ControlsListItemSelect />
+        <ControlsListItemSwitch />
+        <ControlsListItemSwitchWithAddon />
+        <ControlsListItemSwitchDisabled />
+        <ControlsListItemRadio />
+        <ControlsListItemRadioWithAddon />
+        <ControlsListItemRadioWithAddonRightAligned />
+        <ControlsListItemRadioWithAddonRightAlignedFixedMinWidth />
+      </List>
+    </div>
+  );
+};
+
+ControlsListWithLotsOfItems.story = {
+  name: 'Controls list with lots of items',
 };

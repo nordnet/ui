@@ -292,6 +292,7 @@ const Select = (props: Props) => {
           hideLabel={props.hideLabel}
           labelToolTip={props.labelTooltip}
           labelTooltipPosition={props.labelTooltipPosition}
+          labelTooltipInModal={props.labelTooltipInModal}
           noFormField={props.noFormField}
           ref={formFieldRef}
           innerRef={selectWrapperRef}
