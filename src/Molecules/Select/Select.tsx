@@ -21,8 +21,6 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
     children,
     disabled,
     hasError = false,
-    listBoxFooter,
-    listBoxHeader,
     multiple,
     name,
     onChange,
@@ -35,23 +33,23 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
     slotProps = {},
   } = props;
   const listboxRef = React.useRef<HTMLUListElement>(null);
-  const [listboxVisible, setListboxVisible] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
   const { getButtonProps, getListboxProps, contextValue, value, getOptionMetadata, options } =
     useSelect<string, boolean>({
       listboxRef,
       disabled,
       multiple,
-      open: listboxVisible,
+      open: isOpen,
       onChange,
-      onOpenChange: setListboxVisible,
+      onOpenChange: setIsOpen,
       value: valueFromProps,
     });
 
   useEffect(() => {
-    if (listboxVisible) {
+    if (isOpen) {
       listboxRef.current?.focus();
     }
-  }, [listboxVisible]);
+  }, [isOpen]);
 
   const Trigger = slots.trigger || DefaultTrigger;
   // Needs to be done for a 1.0 release
@@ -59,6 +57,14 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
   // TODO: Mobile. Should it have the handle (-) in the top?. Devider in the bottom, should it be indented? Should the title equal the label?
   // TODO: With radio looking checkmarks?
   // TODO: Dropdown should not close when clicking the search or the toggle all button in the header (maybe footer?).
+  // TODO: handle toggleAll
+  // TODO: decide if slots and slotsProps is preferable over props like valueDisplay and stick to one
+  // TODO: Check with Zoe if we can get figma design for the "old" sizes.
+  // TODO: Implement disabled design and make it accessible to screen readers
+  // TODO: Mobile design.
+  // TODO: Bottom sheet design.
+  // TODO: Dark mode story fixes and component color fixes
+  // TODO: Double check multiselect checkbox design
 
   // 2.0
   // TODO: Pill dropdown
@@ -87,15 +93,13 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
           )}
           <StyledChevronDown8 color={(t) => t.colorTokens.neutral.icon_default} />
         </Trigger>
-        <ListContainer aria-hidden={listboxVisible} $hidden={!listboxVisible}>
+        <ListContainer aria-hidden={isOpen} $hidden={isOpen}>
           <ListboxContainer>
-            {listBoxHeader || null}
             <FadedScroll maxHeight={50}>
               <Listbox {...getListboxProps()}>
                 <SelectProvider value={contextValue}>{children}</SelectProvider>
               </Listbox>
             </FadedScroll>
-            {listBoxFooter || null}
           </ListboxContainer>
         </ListContainer>
       </Root>

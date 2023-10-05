@@ -1,20 +1,9 @@
 // Button.stories.ts|tsx
 import React, { useRef, useState } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Icon, Typography, Flag, Flexbox, FormField, Button, Box } from '../..';
+import { Typography, Flag, Flexbox, FormField, Button, Box } from '../..';
 import { Display } from '../../common/Display';
-import {
-  TriggerPill,
-  Select,
-  Option,
-  Group,
-  ActionButton,
-  ListBoxFooter,
-  ListBoxHeader,
-  Search,
-  ToggleAll,
-  ValueDisplayMultiSelect,
-} from '.';
+import { TriggerPill, Select, Option, Group, ValueDisplayMultiSelect } from '.';
 
 const options = [
   {
@@ -99,7 +88,6 @@ export const CustomOption: ComponentStory<typeof Select> = () => (
   </Select>
 );
 
-// TODO: Check with Zoe if we can get figma design for the "old" sizes.
 export const DifferentSizes: ComponentStory<typeof Select> = () => (
   <Display
     items={[
@@ -147,7 +135,6 @@ export const WithError: ComponentStory<typeof Select> = () => (
   </FormField>
 );
 
-// TODO: Implement disabled design and make it accessible to screen readers
 export const Disabled: ComponentStory<typeof Select> = () => (
   <Select name="my-select" placeholder="Select a option..." disabled>
     {options.map((option) => (
@@ -225,101 +212,51 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
   );
 };
 
-// TODO: Remove header and footer
-export const WithActionsInFooter: ComponentStory<typeof Select> = () => (
-  <Select
-    name="my-select"
-    placeholder="Select a option..."
-    listBoxFooter={
-      <ListBoxFooter>
-        <ActionButton icon={<Icon.Add16 color="inherit" />}>Some Action</ActionButton>
-      </ListBoxFooter>
-    }
-  >
-    {options.map((option) => (
-      <Option key={option.value} value={option.value} label={option.label} />
-    ))}
-  </Select>
-);
+// export const ControlledWithToggleAll: ComponentStory<typeof Select> = () => {
+//   const [selectedValues, setSelectedValues] = useState<string[]>([]);
+//   const [allSelected, setAllSelected] = useState<boolean>(false);
 
-// TODO: Don't close then clicking toggle all button
-export const ControlledWithToggleAll: ComponentStory<typeof Select> = () => {
-  const [selectedValues, setSelectedValues] = useState<string[]>([]);
-  const [allSelected, setAllSelected] = useState<boolean>(false);
+//   const handleToggleAll = () => {
+//     if (!allSelected) {
+//       setSelectedValues(otherOptions.map((option) => option.value));
+//     } else {
+//       setSelectedValues([]);
+//     }
+//     setAllSelected(!allSelected);
+//   };
 
-  const handleToggleAll = () => {
-    if (!allSelected) {
-      setSelectedValues(otherOptions.map((option) => option.value));
-    } else {
-      setSelectedValues([]);
-    }
-    setAllSelected(!allSelected);
-  };
+//   return (
+//     <Select
+//       name="my-select"
+//       placeholder="Select a option..."
+//       listBoxHeader={
+//         <ListBoxHeader withBorder>
+//           <ToggleAll label="Toggle All" onChange={handleToggleAll} checked={allSelected} />
+//         </ListBoxHeader>
+//       }
+//       value={selectedValues}
+//       valueDisplay={
+//         <ValueDisplayMultiSelect
+//           label={selectedValues.length > 0 ? 'selected' : ''}
+//           placeholder="Select a value..."
+//           selectedCount={selectedValues.length}
+//         />
+//       }
+//       onChange={(_, newValues) => {
+//         if (newValues) {
+//           setSelectedValues(newValues as string[]);
+//           setAllSelected(newValues.length === options.length);
+//         }
+//       }}
+//       multiple
+//     >
+//       {otherOptions.map((option) => (
+//         <Option key={option.value} value={option.value} label={option.label} />
+//       ))}
+//     </Select>
+//   );
+// };
 
-  return (
-    <Select
-      name="my-select"
-      placeholder="Select a option..."
-      listBoxHeader={
-        <ListBoxHeader withBorder>
-          <ToggleAll label="Toggle All" onChange={handleToggleAll} checked={allSelected} />
-        </ListBoxHeader>
-      }
-      value={selectedValues}
-      valueDisplay={
-        <ValueDisplayMultiSelect
-          label={selectedValues.length > 0 ? 'selected' : ''}
-          placeholder="Select a value..."
-          selectedCount={selectedValues.length}
-        />
-      }
-      onChange={(_, newValues) => {
-        if (newValues) {
-          setSelectedValues(newValues as string[]);
-          setAllSelected(newValues.length === options.length);
-        }
-      }}
-      multiple
-    >
-      {otherOptions.map((option) => (
-        <Option key={option.value} value={option.value} label={option.label} />
-      ))}
-    </Select>
-  );
-};
-
-// TODO: Investigate if this should be a own component
-export const WithSearchInHeader: ComponentStory<typeof Select> = () => {
-  const [filteredOptions, setFilteredOptions] = useState(options);
-
-  return (
-    <Select
-      name="my-select"
-      placeholder="Select a option..."
-      listBoxHeader={
-        <ListBoxHeader>
-          <Search
-            label="search"
-            placeholder="Search"
-            onChange={(e) =>
-              setFilteredOptions(
-                options.filter((option) =>
-                  option.label.toLowerCase().includes(e.target.value.toLowerCase()),
-                ),
-              )
-            }
-          />
-        </ListBoxHeader>
-      }
-    >
-      {filteredOptions.map((option) => (
-        <Option key={option.value} value={option.value} label={option.label} />
-      ))}
-    </Select>
-  );
-};
-
-// TODO: complete this story. Pill does not look at it should
 export const WithPillShape: ComponentStory<typeof Select> = () => (
   <Select name="my-select" placeholder="Select a option..." slots={{ trigger: TriggerPill }}>
     {options.map((option) => (
@@ -349,7 +286,6 @@ export const WithForwardedRef: ComponentStory<typeof Select> = () => {
   );
 };
 
-// TODO: complete this story. Pill does not look at it should
 export const WithForwardedRefPill: ComponentStory<typeof Select> = () => {
   const buttonRef = useRef<HTMLButtonElement | null>(null);
 
@@ -366,6 +302,7 @@ export const WithForwardedRefPill: ComponentStory<typeof Select> = () => {
           placeholder="Select a option..."
           ref={buttonRef}
           slots={{ trigger: TriggerPill }}
+          slotsProps={{ trigger: { disabled: true } }}
         >
           {options.map((option) => (
             <Option key={option.value} value={option.value} label={option.label} />
@@ -375,9 +312,3 @@ export const WithForwardedRefPill: ComponentStory<typeof Select> = () => {
     </div>
   );
 };
-
-// TODO: Mobile design.
-// TODO: Bottom sheet design.
-// TODO: Dark mode story fixes and component color fixes
-// TODO: Double check multiselect checkbox design
-// MUI walkthrough after cleanup.

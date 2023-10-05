@@ -4,8 +4,6 @@ import React from 'react';
 export type Props = {
   children: React.ReactNode;
   hasError?: boolean;
-  listBoxFooter?: React.ReactNode;
-  listBoxHeader?: React.ReactNode;
   placeholder?: string;
   valueDisplay?: React.ReactNode;
   size?: 's' | 'm';
