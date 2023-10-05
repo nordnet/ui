@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Typography, Flag, Flexbox, FormField, Button, Box } from '../..';
 import { Display } from '../../common/Display';
-import { TriggerPill, Select, Option, Group, ValueDisplayMultiSelect } from '.';
+import { Select, Option, Group, ValueDisplayMultiSelect } from '.';
 
 const options = [
   {
@@ -212,14 +212,6 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
   );
 };
 
-export const WithPillShape: ComponentStory<typeof Select> = () => (
-  <Select name="my-select" placeholder="Select a option..." slots={{ trigger: TriggerPill }}>
-    {options.map((option) => (
-      <Option key={option.value} value={option.value} label={option.label} />
-    ))}
-  </Select>
-);
-
 export const WithForwardedRef: ComponentStory<typeof Select> = () => {
   const buttonRef = useRef<HTMLButtonElement | null>(null);
 
@@ -232,32 +224,6 @@ export const WithForwardedRef: ComponentStory<typeof Select> = () => {
       <Button onClick={focusButton}>Focus</Button>
       <Box mt={2}>
         <Select name="my-select" placeholder="Select a option..." ref={buttonRef}>
-          {options.map((option) => (
-            <Option key={option.value} value={option.value} label={option.label} />
-          ))}
-        </Select>
-      </Box>
-    </div>
-  );
-};
-
-export const WithForwardedRefPill: ComponentStory<typeof Select> = () => {
-  const buttonRef = useRef<HTMLButtonElement | null>(null);
-
-  const focusButton = () => {
-    buttonRef.current?.focus();
-  };
-
-  return (
-    <div>
-      <Button onClick={focusButton}>Focus</Button>
-      <Box mt={2}>
-        <Select
-          name="my-select"
-          placeholder="Select a option..."
-          ref={buttonRef}
-          slots={{ trigger: TriggerPill }}
-        >
           {options.map((option) => (
             <Option key={option.value} value={option.value} label={option.label} />
           ))}
