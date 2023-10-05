@@ -10,7 +10,7 @@ import {
   StyledChevronDown8,
 } from './Select.styles';
 import { Props } from './Select.types';
-import { ValueDisplay } from './ValueDisplay';
+import { ValueDisplay as DefaultValueDisplay } from './ValueDisplay';
 import { Trigger as DefaultTrigger } from './Trigger';
 
 export const Select = forwardRef<HTMLButtonElement, Props>(function SelectComponent(
@@ -27,7 +27,6 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
     placeholder,
     size = 'm',
     value: valueFromProps,
-    valueDisplay,
     width = 50,
     slots = {},
     slotProps = {},
@@ -52,6 +51,7 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
   }, [isOpen]);
 
   const Trigger = slots.trigger || DefaultTrigger;
+  const ValueDisplay = slots.valueDisplay || DefaultValueDisplay;
   // Needs to be done for a 1.0 release
 
   // TODO: Check with Zoe if we can get figma design for the "old" sizes.
@@ -67,13 +67,12 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
           {...getButtonProps()}
           ref={ref}
         >
-          {valueDisplay || (
-            <ValueDisplay
-              value={value === null ? undefined : value}
-              getOptionMetadata={getOptionMetadata}
-              placeholder={placeholder}
-            />
-          )}
+          <ValueDisplay
+            value={value === null ? undefined : value}
+            getOptionMetadata={getOptionMetadata}
+            placeholder={placeholder}
+            {...slotProps.valueDisplay}
+          />
           <StyledChevronDown8 color={(t) => t.colorTokens.neutral.icon_default} />
         </Trigger>
         <ListContainer aria-hidden={!isOpen} $hidden={!isOpen}>

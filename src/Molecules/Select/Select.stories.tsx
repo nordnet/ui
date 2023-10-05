@@ -166,13 +166,14 @@ export const MultiSelect: ComponentStory<typeof Select> = () => {
       name="my-select"
       multiple
       onChange={(e, value) => setSelectedCount(value ? value.length : 0)}
-      valueDisplay={
-        <ValueDisplayMultiSelect
-          label={selectedCount > 1 ? 'Colors' : 'Color'}
-          placeholder="Select a value..."
-          selectedCount={selectedCount}
-        />
-      }
+      slots={{ valueDisplay: ValueDisplayMultiSelect }}
+      slotProps={{
+        valueDisplay: {
+          label: selectedCount > 1 ? 'Colors' : 'Color',
+          placeholder: 'Select a value...',
+          selectedCount,
+        },
+      }}
     >
       {options.map((option) => (
         <Option key={option.value} value={option.value} label={option.label} multiple />
@@ -190,13 +191,14 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
       multiple
       placeholder="Select a option..."
       onChange={(e, value) => setSelectedCount(value ? value.length : 0)}
-      valueDisplay={
-        <ValueDisplayMultiSelect
-          label={selectedCount > 1 ? 'Colors' : 'Color'}
-          placeholder="Select a value..."
-          selectedCount={selectedCount}
-        />
-      }
+      slots={{ valueDisplay: ValueDisplayMultiSelect }}
+      slotProps={{
+        valueDisplay: {
+          label: selectedCount > 1 ? 'Colors' : 'Color',
+          placeholder: 'Select a value...',
+          selectedCount,
+        },
+      }}
     >
       <Group label="First Group">
         {options.map((option) => (
