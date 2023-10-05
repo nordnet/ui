@@ -99,6 +99,7 @@ export const CustomOption: ComponentStory<typeof Select> = () => (
   </Select>
 );
 
+// TODO: Check with Zoe if we can get figma design for the "old" sizes.
 export const DifferentSizes: ComponentStory<typeof Select> = () => (
   <Display
     items={[
@@ -146,6 +147,7 @@ export const WithError: ComponentStory<typeof Select> = () => (
   </FormField>
 );
 
+// TODO: Implement disabled design and make it accessible to screen readers
 export const Disabled: ComponentStory<typeof Select> = () => (
   <Select name="my-select" placeholder="Select a option..." disabled>
     {options.map((option) => (
@@ -223,6 +225,7 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
   );
 };
 
+// TODO: Remove header and footer
 export const WithActionsInFooter: ComponentStory<typeof Select> = () => (
   <Select
     name="my-select"
@@ -239,6 +242,7 @@ export const WithActionsInFooter: ComponentStory<typeof Select> = () => (
   </Select>
 );
 
+// TODO: Don't close then clicking toggle all button
 export const ControlledWithToggleAll: ComponentStory<typeof Select> = () => {
   const [selectedValues, setSelectedValues] = useState<string[]>([]);
   const [allSelected, setAllSelected] = useState<boolean>(false);
@@ -284,6 +288,7 @@ export const ControlledWithToggleAll: ComponentStory<typeof Select> = () => {
   );
 };
 
+// TODO: Investigate if this should be a own component
 export const WithSearchInHeader: ComponentStory<typeof Select> = () => {
   const [filteredOptions, setFilteredOptions] = useState(options);
 
@@ -314,6 +319,7 @@ export const WithSearchInHeader: ComponentStory<typeof Select> = () => {
   );
 };
 
+// TODO: complete this story. Pill does not look at it should
 export const WithPillShape: ComponentStory<typeof Select> = () => (
   <Select name="my-select" placeholder="Select a option..." slots={{ trigger: TriggerPill }}>
     {options.map((option) => (
@@ -343,6 +349,7 @@ export const WithForwardedRef: ComponentStory<typeof Select> = () => {
   );
 };
 
+// TODO: complete this story. Pill does not look at it should
 export const WithForwardedRefPill: ComponentStory<typeof Select> = () => {
   const buttonRef = useRef<HTMLButtonElement | null>(null);
 
@@ -368,3 +375,9 @@ export const WithForwardedRefPill: ComponentStory<typeof Select> = () => {
     </div>
   );
 };
+
+// TODO: Mobile design.
+// TODO: Bottom sheet design.
+// TODO: Dark mode story fixes and component color fixes
+// TODO: Double check multiselect checkbox design
+// MUI walkthrough after cleanup.
