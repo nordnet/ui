@@ -76,7 +76,7 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
           )}
           <StyledChevronDown8 color={(t) => t.colorTokens.neutral.icon_default} />
         </Trigger>
-        <ListContainer aria-hidden={isOpen} $hidden={isOpen}>
+        <ListContainer aria-hidden={!isOpen} $hidden={!isOpen}>
           <ListboxContainer>
             <FadedScroll maxHeight={50}>
               <Listbox {...getListboxProps()}>

@@ -212,51 +212,6 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
   );
 };
 
-// export const ControlledWithToggleAll: ComponentStory<typeof Select> = () => {
-//   const [selectedValues, setSelectedValues] = useState<string[]>([]);
-//   const [allSelected, setAllSelected] = useState<boolean>(false);
-
-//   const handleToggleAll = () => {
-//     if (!allSelected) {
-//       setSelectedValues(otherOptions.map((option) => option.value));
-//     } else {
-//       setSelectedValues([]);
-//     }
-//     setAllSelected(!allSelected);
-//   };
-
-//   return (
-//     <Select
-//       name="my-select"
-//       placeholder="Select a option..."
-//       listBoxHeader={
-//         <ListBoxHeader withBorder>
-//           <ToggleAll label="Toggle All" onChange={handleToggleAll} checked={allSelected} />
-//         </ListBoxHeader>
-//       }
-//       value={selectedValues}
-//       valueDisplay={
-//         <ValueDisplayMultiSelect
-//           label={selectedValues.length > 0 ? 'selected' : ''}
-//           placeholder="Select a value..."
-//           selectedCount={selectedValues.length}
-//         />
-//       }
-//       onChange={(_, newValues) => {
-//         if (newValues) {
-//           setSelectedValues(newValues as string[]);
-//           setAllSelected(newValues.length === options.length);
-//         }
-//       }}
-//       multiple
-//     >
-//       {otherOptions.map((option) => (
-//         <Option key={option.value} value={option.value} label={option.label} />
-//       ))}
-//     </Select>
-//   );
-// };
-
 export const WithPillShape: ComponentStory<typeof Select> = () => (
   <Select name="my-select" placeholder="Select a option..." slots={{ trigger: TriggerPill }}>
     {options.map((option) => (
@@ -302,7 +257,6 @@ export const WithForwardedRefPill: ComponentStory<typeof Select> = () => {
           placeholder="Select a option..."
           ref={buttonRef}
           slots={{ trigger: TriggerPill }}
-          slotsProps={{ trigger: { disabled: true } }}
         >
           {options.map((option) => (
             <Option key={option.value} value={option.value} label={option.label} />
