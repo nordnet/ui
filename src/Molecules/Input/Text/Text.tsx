@@ -123,6 +123,7 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
+  border-radius: ${(p) => p.theme.borderRadius4};
   ${height}
   ${borderStyles}
   ${background}
@@ -221,6 +222,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
           'label',
           'labelTooltip',
           'labelTooltipPosition',
+          'labelTooltipInModal',
           'className',
           'width',
           'disabled',

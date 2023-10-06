@@ -340,7 +340,7 @@ export const WithClickableContent = () => {
 
 export const WithOffset = () => (
   <Box p={20}>
-    <Flexbox container gutter={4} alignItems="center">
+    <Flexbox container gap={4} alignItems="center">
       <Typography type="primary">Hover the pen!</Typography>
       <Tooltip label="This tooltip has offset" wrapChild offset={[-20, 40]}>
         <Icon.Edit16 />
@@ -351,7 +351,7 @@ export const WithOffset = () => (
 
 export const WithOffsetAsAFunction = () => (
   <Box p={20}>
-    <Flexbox container gutter={4} alignItems="center">
+    <Flexbox container gap={4} alignItems="center">
       <Typography type="primary">Hover the pen!</Typography>
       <Tooltip
         position="bottom"

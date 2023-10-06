@@ -9,6 +9,8 @@ import {
   Modal,
   Typography,
   SelectionCard,
+  Icon,
+  useMedia,
 } from '../..';
 
 const ScrollMaker = styled.div`
@@ -319,7 +321,7 @@ hideClose.story = {
 
 export const nodeAsTitle = () => {
   const Title = (
-    <Flexbox container gutter={2} alignItems="center">
+    <Flexbox container gap={2} alignItems="center">
       <OldIcon.Bolt />
       <Typography type="title2" as="h2">
         React Node Title
@@ -861,7 +863,7 @@ export const modalStandardMobile = () => {
     };
 
     const footer = (
-      <Flexbox container gutter={2}>
+      <Flexbox container gap={2}>
         <Flexbox container item flex="1">
           <Button variant="secondary" size="l" onClick={() => {}} fullWidth>
             Cancel
@@ -1010,7 +1012,7 @@ export const modalMobileSmall = () => {
     };
 
     const footer = (
-      <Flexbox container gutter={2}>
+      <Flexbox container gap={2}>
         <Flexbox container item flex="1">
           <Button variant="secondary" size="l" onClick={() => {}} fullWidth>
             Button
@@ -1133,7 +1135,7 @@ export const modalMobileFullscreenWithScroll = () => {
     };
 
     const footer = (
-      <Flexbox container gutter={2}>
+      <Flexbox container gap={2}>
         <Flexbox container item flex="1">
           <Button variant="secondary" size="l" onClick={() => {}} fullWidth>
             Button
@@ -1399,6 +1401,7 @@ modalWithDisabledEscapePress.story = {
 export const modalWithProgressIndicator = () => {
   const Example = () => {
     const [value, setValue] = useState(false);
+    const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
 
     return (
       <Modal
@@ -1408,28 +1411,32 @@ export const modalWithProgressIndicator = () => {
         }}
         title="Modal with progress indicator "
         open
-        progressIndicator={{ numberOfSteps: 3, currentStep: 2 }}
+        progressIndicator={{ numberOfSteps: 3, currentStep: 2, borderBottomMobile: false }}
         progressIndicatorDescription="Find investments"
         fixedBottomMobile
         fullScreenMobile={false}
       >
-        <Flexbox container gap={2}>
-          <Flexbox item width="50%">
+        <Flexbox container gap={2} direction={isMobile ? 'column' : 'row'}>
+          <Flexbox item width={isMobile ? '100%' : '50%'}>
             <SelectionCard
               border
-              title="Controlled selection card"
-              text="This component is controlled"
-              selected={value}
+              horizontal={!!isMobile}
+              icon={<Icon.Book32 />}
               onChange={() => setValue(!value)}
+              selected={value}
+              text="This component is controlled"
+              title="Controlled selection card"
             />
           </Flexbox>
-          <Flexbox item width="50%">
+          <Flexbox item width={isMobile ? '100%' : '50%'}>
             <SelectionCard
               border
-              title="Controlled selection card"
-              text="This component is controlled"
-              selected={value}
+              horizontal={!!isMobile}
+              icon={<Icon.Book32 />}
               onChange={() => setValue(!value)}
+              selected={value}
+              text="This component is controlled"
+              title="Controlled selection card"
             />
           </Flexbox>
         </Flexbox>

@@ -29,30 +29,20 @@ const getSize = (size: Props['size']): number => {
 const CheckmarkBox = styled(Flexbox)<{ size: number; shape: Shape }>`
   width: ${(p) => p.theme.spacing.unit(p.size)}px;
   height: ${(p) => p.theme.spacing.unit(p.size)}px;
-  border: 1px solid ${(p) => p.theme.color.inputBorder};
-  background: ${(p) => p.theme.color.inputBackground};
+  border: 1px solid ${(p) => p.theme.colorTokens.neutral.border_default};
+  background: ${(p) => p.theme.colorTokens.neutral.background_default};
   position: relative;
+  box-sizing: border-box;
   flex-shrink: 0;
-  ${(p) => (p.shape === Shape.Circle ? 'border-radius: 100%' : '')};
-
-  &::before {
-    content: '';
-    display: block;
-    padding: 2px;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+  ${(p) =>
+    p.shape === Shape.Circle ? 'border-radius: 100%' : `border-radius: ${p.theme.borderRadius2}`};
 `;
 
 const StyledFormLabel = styled(FormLabel)`
   position: relative;
 
   &:hover ${CheckmarkBox} {
-    border-color: ${(p) => p.theme.color.inputBorderHover};
+    border-color: ${(p) => p.theme.colorTokens.action.border_default};
   }
 `;
 
@@ -64,46 +54,46 @@ const Input = styled(CleanInput).attrs(() => ({ type: 'checkbox' }))<InternalInp
   cursor: pointer;
 
   &:checked + ${CheckmarkBox} {
-    border-color: ${(p) => p.theme.color.cta};
-    background: ${(p) => p.theme.color.cta};
+    border-color: ${(p) => p.theme.colorTokens.action.background_default};
+    background: ${(p) => p.theme.colorTokens.action.background_default};
 
     svg {
-      fill: ${(p) => p.theme.color.inputBackground};
+      fill: ${(p) => p.theme.colorTokens.neutral.icon_strong};
     }
   }
 
   &[disabled] + ${CheckmarkBox} {
-    border-color: ${(p) => p.theme.color.disabledBackground};
+    border-color: ${(p) => p.theme.colorTokens.neutral.background_disabled};
   }
 
   &:checked[disabled] + ${CheckmarkBox} {
-    border-color: ${(p) => p.theme.color.disabledBackground};
-    background: ${(p) => p.theme.color.disabledBackground};
+    border-color: ${(p) => p.theme.colorTokens.neutral.background_disabled};
+    background: ${(p) => p.theme.colorTokens.neutral.background_disabled};
+
+    svg {
+      fill: ${(p) => p.theme.colorTokens.neutral.icon_disabled};
+    }
   }
 
   ${(p) =>
     p.hasError
       ? `
     & + ${CheckmarkBox} {
-      &::before {
-        border: 1px solid ${p.theme.color.inputBorderError};
-      }
+      border-color ${p.theme.colorTokens.error.border_default};
     }`
       : ''}
 
   &:focus + ${CheckmarkBox} {
-    &::before {
-      border: 1px solid ${(p) => p.theme.color.cta};
-    }
+    border-color: ${(p) => p.theme.colorTokens.action.background_default};
+    box-shadow: 0 0 0 2px ${(p) => p.theme.colorTokens.action.border_focus};
   }
   ${(p) =>
     !p.visuallyFocused
       ? ''
       : `& + ${CheckmarkBox} {
-    &::before {
-      border: 1px solid ${p.theme.color.cta};
-    }
-  }
+        border-color: ${p.theme.colorTokens.action.background_default};
+        box-shadow: 0 0 0 2px ${p.theme.colorTokens.action.border_focus};
+      }
   `}
 `;
 
@@ -131,6 +121,7 @@ const Checkbox: CheckboxComponent & { components: typeof components; Shape: type
     label,
     labelTooltip,
     labelTooltipPosition,
+    labelTooltipInModal,
     name,
     onBlur,
     onChange,
@@ -185,12 +176,19 @@ const Checkbox: CheckboxComponent & { components: typeof components; Shape: type
             <OldIcon.CheckMark size={3} color="transparent" />
           </CheckmarkBox>
 
-          <Label type="secondary" color={(t) => (disabled ? t.color.disabledText : t.color.text)}>
+          <Label
+            type="secondary"
+            color={(t) =>
+              disabled ? t.colorTokens.neutral.text_disabled : t.colorTokens.neutral.text_default
+            }
+          >
             {visuallyEmphasiseRequired ? `${label} *` : label}
             {labelTooltip && (
               <Tooltip
                 label={labelTooltip}
                 {...(labelTooltipPosition && { position: labelTooltipPosition })}
+                inModal={labelTooltipInModal}
+                wrapChild={labelTooltipInModal}
               >
                 <TooltipIcon size={4} />
               </Tooltip>

@@ -127,7 +127,7 @@ const AccountValue = () => {
       {!selectedOption ? (
         state.context.placeholder
       ) : (
-        <Flexbox container item justifyContent="space-between" gutter={2} grow={1}>
+        <Flexbox container item justifyContent="space-between" gap={2} grow={1}>
           <Flexbox item container alignItems="center" basis="32px" grow={0}>
             <Badge.Account badgeSize="s">{selectedOption.symbol}</Badge.Account>
           </Flexbox>
@@ -167,8 +167,8 @@ const AccountListItem = ({ index }) => {
   const focused = isKeyboardNavigation && state.context.itemFocusIdx === index;
   return (
     <StyledBox px={2} py={1} focused={focused} isKeyboardNavigation={isKeyboardNavigation}>
-      <Flexbox container justifyContent="space-between" gutter={4}>
-        <Flexbox item container alignItems="center" basis="32px" grow={0}>
+      <Flexbox container justifyContent="space-between" alignItems="center" gap={4}>
+        <Flexbox item container>
           <Badge.Account badgeSize="s">{option.symbol}</Badge.Account>
         </Flexbox>
         <Flexbox item container direction="column" grow={1}>
@@ -1130,7 +1130,7 @@ export const linkWithDropdownAndSearchBoxSecondary = () =>
 
           return (
             <Link as="div">
-              <Flexbox container alignItems="center" gutter={1}>
+              <Flexbox container alignItems="center" gap={1}>
                 <Flexbox item container alignItems="center">
                   <OldIcon.AddWithCircle inline color={(t) => t.color.text} size={3.5} />
                 </Flexbox>
@@ -1208,7 +1208,7 @@ export const linkWithDropdownAndSearchBoxTertiary = () =>
 
           return (
             <Link as="div">
-              <Flexbox container alignItems="center" gutter={1}>
+              <Flexbox container alignItems="center" gap={1}>
                 <Flexbox item container alignItems="center">
                   <OldIcon.AddWithCircle inline color={(t) => t.color.text} size={3} />
                 </Flexbox>
@@ -1289,7 +1289,7 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
 
           return (
             <Link as="div">
-              <Flexbox container alignItems="center" gutter={1}>
+              <Flexbox container alignItems="center" gap={1}>
                 <Flexbox item container alignItems="center">
                   <OldIcon.AddWithCircle inline color={(t) => t.color.text} size={3} />
                 </Flexbox>
@@ -1386,7 +1386,7 @@ export const linkWithDropdownAndSearchBoxMultiselectWithFullScreenOnMobile = () 
 
           return (
             <Link as="div">
-              <Flexbox container alignItems="center" gutter={1}>
+              <Flexbox container alignItems="center" gap={1}>
                 <Flexbox item container alignItems="center">
                   <OldIcon.AddWithCircle inline color={(t) => t.color.text} size={3} />
                 </Flexbox>
@@ -1485,7 +1485,7 @@ export const listPositionedToTheLeft = () =>
 
           return (
             <Link as="div">
-              <Flexbox container alignItems="center" gutter={1}>
+              <Flexbox container alignItems="center" gap={1}>
                 <Flexbox item container alignItems="center">
                   <OldIcon.AddWithCircle inline color={(t) => t.color.text} size={3} />
                 </Flexbox>
@@ -1898,4 +1898,47 @@ const CustomHeightTemplate: Story<Props> = (args) => (
 export const WithCustomHeight = CustomHeightTemplate.bind({});
 WithCustomHeight.args = {
   height: 20,
+};
+
+export const withLabelTooltipInsideModal = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const onOpen = () => {
+      setOpen(true);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <>
+        <button type="button" onClick={onOpen}>
+          Open modal
+        </button>
+        <Modal onClose={onClose} title="Dialog information" open={open}>
+          <Box mb={2}>
+            <Input.Select
+              id="input-without-a-search-component"
+              label="Without search component"
+              placeholder="Select an option"
+              options={[
+                { label: 'foo', value: 1 },
+                { label: 'bar', value: 2 },
+              ]}
+              disableSearchComponent
+              labelTooltipInModal
+              labelTooltip="Tooltip content"
+            />
+          </Box>
+        </Modal>
+      </>
+    );
+  };
+  return <Example />;
+};
+
+withLabelTooltipInsideModal.story = {
+  name: 'With label tooltip inside modal',
 };

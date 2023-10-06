@@ -1,9 +1,5 @@
 import React from 'react';
-
-export type ProgressProps = {
-  numberOfSteps: number;
-  currentStep: number;
-};
+import { Props as ProgressProps } from '../ProgressIndicator/ProgressIndicator.types';
 
 export type InnerProps = {
   className?: string;
@@ -38,7 +34,7 @@ export type DialogProps = {
   onClick: (e: React.MouseEvent<HTMLElement>) => void;
   $fullScreenMobile?: boolean;
   $fixedBottomMobile?: boolean;
-  isStatusModal?: boolean;
+  $isStatusModal?: boolean;
 };
 
 export type Props = {

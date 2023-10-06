@@ -8,7 +8,7 @@ const CountryCodeLabel: React.FC<Props> = ({
   prefixCode = '+46',
   noPrefix = false,
 }) => (
-  <Flexbox container alignItems="center" gutter={2}>
+  <Flexbox container alignItems="center" gap={2}>
     <Flexbox item>
       <Flag country={countryCode.toLowerCase()} size="s" />
     </Flexbox>

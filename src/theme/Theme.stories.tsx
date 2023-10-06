@@ -70,7 +70,7 @@ const colorWithValue = (color: string | string[]) =>
     </>
   ) : (
     color?.map((c: string) => (
-      <Flexbox key={c} container gutter={1}>
+      <Flexbox key={c} container gap={1}>
         <ColorInArray $color={c} />
         <>{c}</>
       </Flexbox>

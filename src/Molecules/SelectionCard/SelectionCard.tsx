@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Color from 'color';
 import styled, { css } from 'styled-components';
 
-import { Box, Card, Flexbox, OldIcon, Typography } from '../..';
+import { Box, Card, Flexbox, Icon, Typography } from '../..';
 import { isBoolean, isElement } from '../../common/utils';
 
 import { SelectionCardComponent } from './SelectionCard.types';
@@ -13,14 +13,6 @@ const StyledFlexbox = styled(Flexbox)`
 
 const StyledImg = styled.img`
   width: 100%;
-`;
-
-const StyledTypography = styled(Typography).withConfig({
-  shouldForwardProp: (prop) => !['inheritColor'].includes(prop),
-})<{
-  inheritColor: boolean;
-}>`
-  ${(p) => p.inheritColor && `color: inherit`};
 `;
 
 const StyledInput = styled.input`
@@ -48,8 +40,8 @@ const CircleOutline = styled.div`
   border-radius: 100%;
   ${(p) => `
     border: 1px solid ${p.theme.color.selectionCardBorder};
-    height: ${p.theme.spacing.unit(5)}px;
-    width: ${p.theme.spacing.unit(5)}px;
+    height: ${p.theme.spacing.unit(4)}px;
+    width: ${p.theme.spacing.unit(4)}px;
   `}
 `;
 
@@ -64,30 +56,29 @@ const overlayStyles = css`
   ${outlineStyles}
 `;
 
-const StyledCard = styled(Card).withConfig({
-  shouldForwardProp: (prop) => !['disabled', 'selected', 'border', 'error'].includes(prop),
-})<{
-  disabled: boolean;
-  selected: boolean;
-  border: boolean;
-  error: boolean;
+const StyledCard = styled(Card)<{
+  $disabled: boolean;
+  $selected: boolean;
+  $border: boolean;
+  $error: boolean;
 }>`
   height: 100%;
   position: relative;
   box-sizing: border-box;
 
   ${(p) => `
-    cursor: ${p.disabled ? 'not-allowed' : 'pointer'};
-    color: ${p.disabled ? p.theme.color.disabledText : p.theme.color.text};
-    background: ${p.disabled ? p.theme.color.disabledBackground : p.theme.color.card};
+    cursor: ${p.$disabled ? 'not-allowed' : 'pointer'};
+    color: ${p.$disabled ? p.theme.color.disabledText : p.theme.color.text};
+    background: ${p.$disabled ? p.theme.color.disabledBackground : p.theme.color.card};
   `}
 
-  ${(p) => p.border && `border: 1px solid ${p.theme.color.inputBorder}`};
-  ${(p) => p.error && !p.disabled && `border: 1px solid ${p.theme.color.functionRed}`};
-  ${(p) => !p.disabled && p.selected && overlayStyles};
-
+  ${(p) => p.$border && `border: 1px solid ${p.theme.color.inputBorder}`};
+  ${(p) => p.$error && !p.$disabled && `border: 1px solid ${p.theme.color.functionRed}`};
+  ${(p) => !p.$disabled && p.$selected && overlayStyles};
+  border-radius: ${({ theme }) => theme.borderRadius8};
+  overflow: hidden;
   &:hover {
-    ${(p) => !p.disabled && overlayStyles};
+    ${(p) => !p.$disabled && overlayStyles};
   }
 `;
 
@@ -101,28 +92,26 @@ const StyledLabel = styled.label`
   }
 `;
 
-const StyledDiv = styled('div').withConfig({
-  shouldForwardProp: (prop) => !['feature', 'tag', 'text'].includes(prop),
-})<{
-  feature: boolean;
-  tag: boolean;
-  text: boolean;
+const StyledDiv = styled('div')<{
+  $feature: boolean;
+  $tag: boolean;
+  $text: boolean;
 }>`
   ${(p) => `
-    text-align: ${p.text ? 'left' : 'center'};
-    padding: ${p.theme.spacing.unit(5)}px;
+    text-align: ${p.$text ? 'left' : 'center'};
+    padding: ${p.theme.spacing.unit(4)}px;
   `}
 
   ${(p) =>
-    p.tag &&
-    p.text &&
+    p.$tag &&
+    p.$text &&
     `padding-top: ${p.theme.spacing.unit(7)}px;
       padding-bottom: ${p.theme.spacing.unit(5)}px;
   `}
 
   ${(p) =>
-    p.tag &&
-    !p.feature &&
+    p.$tag &&
+    !p.$feature &&
     `padding-top:${p.theme.spacing.unit(10)}px;
       padding-bottom:${p.theme.spacing.unit(10)}px;
   `}
@@ -161,9 +150,9 @@ export const SelectionCard: SelectionCardComponent = ({
     title
   ) : (
     <StyledFlexbox item>
-      <StyledTypography inheritColor={disabled} type="primary" weight="bold">
+      <Typography type="primary" weight="bold">
         {title}
-      </StyledTypography>
+      </Typography>
     </StyledFlexbox>
   );
 
@@ -171,13 +160,9 @@ export const SelectionCard: SelectionCardComponent = ({
     text
   ) : (
     <StyledFlexbox item>
-      <StyledTypography
-        inheritColor={disabled}
-        color={(t) => t.color.selectionCardText}
-        type="tertiary"
-      >
+      <Typography type="secondary" color={(t) => t.colorTokens.neutral.text_weak}>
         {text}
-      </StyledTypography>
+      </Typography>
     </StyledFlexbox>
   );
 
@@ -186,14 +171,14 @@ export const SelectionCard: SelectionCardComponent = ({
 
   return (
     <StyledLabel>
-      <StyledCard disabled={disabled} selected={selected} border={border} error={error}>
+      <StyledCard $disabled={disabled} $selected={selected} $border={border} $error={error}>
         {imageUrl && <StyledImg src={imageUrl} alt={imageAlt} />}
 
         <AbsoluteFlexbox container justifyContent="space-between" direction="row">
           <Flexbox item>{tag && <Tag type="secondary">{tag}</Tag>}</Flexbox>
           <Box pt={4} pr={5}>
             {!disabled && !selected && outline && <CircleOutline />}
-            {!disabled && selected && <OldIcon.CheckMarkCircle fill={(t) => t.color.cta} />}
+            {!disabled && selected && <Icon.CheckCircleFill16 color={(t) => t.color.cta} />}
 
             <StyledInput
               type="checkbox"
@@ -204,16 +189,16 @@ export const SelectionCard: SelectionCardComponent = ({
           </Box>
         </AbsoluteFlexbox>
 
-        <StyledDiv feature={hasFeature} tag={Boolean(tag)} text={Boolean(text)}>
+        <StyledDiv $feature={hasFeature} $tag={Boolean(tag)} $text={Boolean(text)}>
           {horizontal && (
-            <Flexbox container direction="row" gutter={5} alignContent="center">
+            <Flexbox container direction="row" gap={5} alignContent="center">
               {hasIcon && (
                 <Flexbox item alignSelf="center">
                   {icon}
                 </Flexbox>
               )}
 
-              <Flexbox container direction="column" gutter={1} alignItems="flex-start">
+              <Flexbox container direction="column" gap={1} alignItems="flex-start">
                 {titleItem}
                 {textItem}
               </Flexbox>
@@ -221,14 +206,22 @@ export const SelectionCard: SelectionCardComponent = ({
           )}
 
           {!horizontal && (
-            <Flexbox container direction="column" alignItems="center" gutter={1}>
+            <Flexbox container direction="column" alignItems="center" gap={1}>
               {hasIcon && (
                 <Flexbox item {...(text && { alignSelf: 'flex-start' })}>
                   {icon}
                 </Flexbox>
               )}
-              {titleItem}
-              {textItem}
+              <Flexbox
+                item
+                container
+                direction="column"
+                {...(text && { alignSelf: 'flex-start' })}
+                width="100%"
+              >
+                {titleItem}
+                {textItem}
+              </Flexbox>
             </Flexbox>
           )}
         </StyledDiv>

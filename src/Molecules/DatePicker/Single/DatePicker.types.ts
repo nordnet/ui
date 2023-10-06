@@ -32,16 +32,24 @@ interface FullscreenProps {
   clearButtonLabel: string;
   confirmButtonLabel: string;
   dateLabel?: string;
+  onClearDate?: () => void;
+}
+
+interface ClearDateStateProps {
+  onClearDate: () => void;
+  clearButtonLabel: string;
 }
 
 export interface PropsWithFullscreen extends BaseProps {
   fullscreenOnMobile: true;
   fullscreenProps: FullscreenProps;
+  clearDateButton?: never;
 }
 
 export interface PropsWithoutFullscreen extends BaseProps {
   fullscreenOnMobile?: false;
   fullscreenProps?: never;
+  clearDateButton?: ClearDateStateProps;
 }
 
 export type Props = PropsWithFullscreen | PropsWithoutFullscreen;

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
 import { actions } from '@storybook/addon-actions';
 
-import { Flexbox, Input } from '../../..';
+import { Box, Flexbox, Input, Modal } from '../../..';
 import { Props } from './Phone.types';
 
 const { onChange } = actions('onBlur', 'onFocus', 'onChange');
@@ -91,7 +91,7 @@ export const isDisabled = () => (
 );
 
 export const sortByCountry = () => (
-  <Flexbox container direction="column" gutter={3}>
+  <Flexbox container direction="column" gap={3}>
     <Input.Phone name="country-code-example" label="Sweden" sortByCountry="se" />
     <Input.Phone name="country-code-example" label="Denmark" sortByCountry="dk" />
     <Input.Phone name="country-code-example" label="Finland" sortByCountry="fi" />
@@ -105,4 +105,42 @@ EnableSearchComponent.args = {
   ...DefaultStory.args,
   name: 'enable-search-component-example',
   disableSearchComponent: false,
+};
+
+export const withLabelTooltipInsideModal = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const onOpen = () => {
+      setOpen(true);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <>
+        <button type="button" onClick={onOpen}>
+          Open modal
+        </button>
+        <Modal onClose={onClose} title="Dialog information" open={open}>
+          <Box mb={2}>
+            <Input.Phone
+              name="country-code-example"
+              label="Sweden"
+              sortByCountry="se"
+              labelTooltipInModal
+              labelTooltip="Tooltip content"
+            />
+          </Box>
+        </Modal>
+      </>
+    );
+  };
+  return <Example />;
+};
+
+withLabelTooltipInsideModal.story = {
+  name: 'With label tooltip inside modal',
 };

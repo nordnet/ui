@@ -54,8 +54,8 @@ const StatusModal: React.FC<Props> = ({
           container
           direction="column"
           alignItems="center"
-          gutter={6}
-          sm={{ gutter: 7 }}
+          gap={6}
+          sm={{ gap: 7 }}
           justifyContent="center"
         >
           {loading && <Spinner id={`${id}-spinner`} size={23} />}
@@ -68,7 +68,7 @@ const StatusModal: React.FC<Props> = ({
           {status === 'WARNING' && (
             <OldIcon.WarningTriangle color={(t) => t.color.warning} size={23} />
           )}
-          <Flexbox container direction="column" alignItems="center" gutter={2}>
+          <Flexbox container direction="column" alignItems="center" gap={2}>
             {title && (
               <Typography type="title2" textAlign="center">
                 {title}
@@ -97,7 +97,7 @@ const StatusModal: React.FC<Props> = ({
               </Flexbox>
             )}
             {textConfirm && textCancel && (
-              <Flexbox container item justifyContent="center" gutter={2}>
+              <Flexbox container item justifyContent="center" gap={2}>
                 <Flexbox item flex="0">
                   <Box pt={2}>
                     {textCancel && (

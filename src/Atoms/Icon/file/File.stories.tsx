@@ -14,7 +14,7 @@ export default {
 };
 
 const SizeIcons = (size: string) => (
-  <Flexbox container gutter={8} wrap="wrap">
+  <Flexbox container gap={8} wrap="wrap">
     {Object?.entries(Icon)
       ?.filter((name) => name[0].includes(size))
       .map(([iconName, IconComponent]: [string, React.ComponentType<any>], index) => (

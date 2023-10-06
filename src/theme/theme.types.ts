@@ -1,17 +1,25 @@
 import { A11yTheme, LightTheme, DarkTheme } from '@nordnet/design-tokens';
 
+type FeatureToggles = {
+  roundedCorners?: boolean;
+};
+
 export type MediaQuery = string;
 /** Number of pixels */
 export type ThemeConfig = {
   a11yColors?: boolean;
   darkColors?: boolean;
   tokensTheme?: 'dark' | 'light' | 'a11y';
+  featureToggles?: FeatureToggles;
 };
+type FeatureToggleKeys = keyof FeatureToggles;
 type Unit = {
   (times: number): number;
   toString: () => string;
   valueOf: () => number;
 };
+
+export type BORDER_RADIUS = 1 | 2 | 4 | 6 | 8 | 20 | 100;
 
 export type RawColor = {
   // BRAND
@@ -1007,4 +1015,11 @@ export type Theme = {
   };
   isHighContrastMode: boolean;
   isDarkMode: boolean;
+  borderRadius: (x: BORDER_RADIUS) => string;
+  borderRadius2: string;
+  borderRadius4: string;
+  borderRadius8: string;
+  borderRadius20: string;
+  borderRadius100: string;
+  isFeatureEnabled: (feature: FeatureToggleKeys) => boolean;
 };

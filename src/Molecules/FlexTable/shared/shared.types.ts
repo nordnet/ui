@@ -18,6 +18,7 @@ export type FlexPropsType = Pick<
   | 'direction'
   | 'flex'
   | 'grow'
+  | 'gap'
   | 'gutter'
   | 'height'
   | 'item'

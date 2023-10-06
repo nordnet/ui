@@ -56,8 +56,8 @@ const BottomWizardBar: React.FC<Props> = ({
         <nav aria-label={titleText}>
           <Flexbox
             container
-            gutter={4}
-            sm={{ gutter: 8 }}
+            gap={4}
+            sm={{ gap: 8 }}
             justifyContent="space-between"
             alignItems="center"
           >
@@ -78,8 +78,8 @@ const BottomWizardBar: React.FC<Props> = ({
               </Flexbox>
             )}
             <Flexbox
-              gutter={4}
-              sm={{ gutter: 8 }}
+              gap={4}
+              sm={{ gap: 8 }}
               container
               item
               {...(isEmbedded && { flex: '1' })}
@@ -98,7 +98,7 @@ const BottomWizardBar: React.FC<Props> = ({
                     color={(t) => t.color.cta}
                     {...(previousButtonLink && { to: previousButtonLink })}
                   >
-                    <Flexbox container justifyContent="center" alignItems="center" gutter={2}>
+                    <Flexbox container justifyContent="center" alignItems="center" gap={2}>
                       <OldIcon.ThinChevron direction="left" inline color="currentColor" size={4} />
                       {previousText}
                     </Flexbox>

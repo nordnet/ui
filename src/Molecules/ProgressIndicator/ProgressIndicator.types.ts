@@ -11,4 +11,5 @@ export type Props = {
   infoText?: string;
   infoIcon?: 'info' | 'help';
   buttonCallback?: boolean;
+  borderBottomMobile?: boolean;
 };

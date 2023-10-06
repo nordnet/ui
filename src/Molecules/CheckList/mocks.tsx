@@ -331,11 +331,18 @@ export const labels = {
   todoLabel: 'To do',
   dismissLabel: 'Dismiss',
   dismissQuestion: 'Mark task as done?',
-  dismissConfirmLabel: 'Mark as Done',
-  dismissCancelLabel: 'No keep it',
+  dismissConfirmLabel: 'Mark as done',
+  dismissCancelLabel: 'Cancel',
 };
 
 export const completedHeader = {
+  ...header,
+  title: 'Congratulations!',
+  description: 'You are all set.',
+  onClose: undefined,
+};
+
+export const completedHeaderWithClose = {
   ...header,
   title: 'Congratulations!',
   description: 'You are all set.',

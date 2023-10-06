@@ -112,6 +112,13 @@ const Stepper = styled.button.attrs(() => ({ type: 'button' }))<Partial<Props>>`
 
   &:first-of-type {
     order: -1;
+    border-top-left-radius: ${(p) => p.theme.borderRadius4};
+    border-bottom-left-radius: ${(p) => p.theme.borderRadius4};
+  }
+
+  &:last-of-type {
+    border-top-right-radius: ${(p) => p.theme.borderRadius4};
+    border-bottom-right-radius: ${(p) => p.theme.borderRadius4};
   }
 
   &:active:enabled {
@@ -136,6 +143,8 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
   }
   text-align: ${(p) => (p.showSteppers ? 'center' : 'left')};
   box-sizing: border-box;
+  border-radius: ${(p) => (p.showSteppers ? '0' : p.theme.borderRadius4)};
+
   ${(p) =>
     p.leftAddon || p.rightAddon
       ? `
@@ -153,7 +162,7 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
       padding-left: ${p.theme.spacing.unit(8)}px;
     `
       : ''}
-  ${(p) =>
+    ${(p) =>
     p.variant === 'quiet'
       ? `color: ${p.theme.isDarkMode ? p.theme.color.buttonText : p.theme.color.backgroundBlack};
         &:disabled {
@@ -169,7 +178,7 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
          -webkit-text-fill-color: ${p.theme.color.cta};
         }
         `
-      : ''}
+      : ''};
 `;
 
 const components = {
@@ -326,6 +335,7 @@ const NumberInput: NumberComponent & {
           'label',
           'labelTooltip',
           'labelTooltipPosition',
+          'labelTooltipInModal',
           'width',
           'className',
         ],

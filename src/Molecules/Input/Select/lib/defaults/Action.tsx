@@ -53,7 +53,7 @@ export const Action: React.FC<{
       weight="bold"
       color={(t) => (disabled ? t.color.disabledText : t.color.cta)}
     >
-      <Flexbox container gutter={2} alignItems="center">
+      <Flexbox container gap={2} alignItems="center">
         {icon}
         <EllipsizingText>{label}</EllipsizingText>
       </Flexbox>

@@ -11,7 +11,7 @@ import {
  * Imported separately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
 import Input from '../../Input';
-import { Box, DropdownBubble, Flexbox, OldIcon, Button } from '../../..';
+import { Box, DropdownBubble, Flexbox, Icon, Button } from '../../..';
 import { assert, isUndefined } from '../../../common/utils';
 import { useOnClickOutside } from '../../../common/Hooks';
 import { getDateFormat } from '../shared/dateUtils';
@@ -34,6 +34,7 @@ const StyledDropdownBubble = styled(DropdownBubble)`
   z-index: ${({ theme }) => theme.zIndex.overlay};
   box-sizing: border-box;
   top: -10px;
+  border-radius: ${({ theme }) => theme.borderRadius8};
 
   &:after,
   &:before {
@@ -149,7 +150,11 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, DoubleDatePickerProps>
       />
       {isWithClearButton(props) ? (
         <Box pt={3}>
-          <Button variant="neutral" color={(p) => p.color.cta} onClick={clearDate}>
+          <Button
+            variant="neutral"
+            color={(p) => p.colorTokens.action.background_default}
+            onClick={clearDate}
+          >
             {props.clearButtonLabel}
           </Button>
         </Box>
@@ -157,7 +162,7 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, DoubleDatePickerProps>
     </Box>
   );
 
-  const inputRightAddon = <OldIcon.CalendarTwoRows size={6} />;
+  const inputRightAddon = <Icon.Calendar24 />;
 
   const selfRef = useRef<HTMLDivElement>(null);
   useOnClickOutside(selfRef, () => {
@@ -166,7 +171,7 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, DoubleDatePickerProps>
 
   return (
     <div ref={(ref || selfRef) as React.Ref<HTMLDivElement>}>
-      <Flexbox container wrap="wrap" gutter={1} alignItems="flex-end">
+      <Flexbox container wrap="wrap" gap={1} alignItems="flex-end">
         <StyledInputText
           size={inputSize}
           label={labelFrom}

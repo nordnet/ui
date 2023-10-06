@@ -130,7 +130,7 @@ withAnErrorIfNotChecked.story = {
 
 export const inAGroup = () => (
   <FormField label="Colors" group>
-    <Flexbox container gutter={5}>
+    <Flexbox container gap={5}>
       <Input.Radio name="example" value="green" label="Green" />
       <Input.Radio name="example" value="blue" label="Blue" />
       <Input.Radio name="example" value="yellow" label="Yellow" />
@@ -144,7 +144,7 @@ inAGroup.story = {
 
 export const inAGroupWithTooltip = () => (
   <FormField label="Colors" labelTooltip="Checkbox tooltip" group>
-    <Flexbox container gutter={5}>
+    <Flexbox container gap={5}>
       <Input.Radio name="example" value="green" label="Green" />
       <Input.Radio name="example" value="blue" label="Blue" />
       <Input.Radio name="example" value="yellow" label="Yellow" />
@@ -161,7 +161,7 @@ export const inAGroupWithTooltipPositionTop = () => (
     <br />
     <br />
     <FormField label="Colors" labelTooltip="Checkbox tooltip" labelTooltipPosition="top" group>
-      <Flexbox container gutter={5}>
+      <Flexbox container gap={5}>
         <Input.Radio name="example" value="green" label="Green" />
         <Input.Radio name="example" value="blue" label="Blue" />
         <Input.Radio name="example" value="yellow" label="Yellow" />
@@ -187,7 +187,7 @@ export const inAGroupWithError = () => {
         group
         {...(hasGroupError ? { error: 'This field is required' } : {})}
       >
-        <Flexbox container gutter={5}>
+        <Flexbox container gap={5}>
           <Input.Radio
             name="example"
             value="green"
@@ -273,7 +273,7 @@ onAColouredBackground.story = {
 
 export const inAGroupWithCustomLabel = () => (
   <FormField label="Colors" labelTooltip="Checkbox tooltip" group>
-    <Flexbox container gutter={5}>
+    <Flexbox container gap={5}>
       <Input.Radio id="Green" name="example" value="green" label="Green" noRadioCircle>
         <StyledRadioLabel htmlFor="Green" checked>
           Green

@@ -8,7 +8,7 @@ import { BackdropProps, BackdropWrapperProps, DialogProps, Props } from './Modal
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Title } from './Title';
-import { Flexbox, OldIcon, ProgressIndicator, Typography, useKeyPress } from '../..';
+import { Box, Flexbox, OldIcon, ProgressIndicator, Typography, useKeyPress, useMedia } from '../..';
 
 const PADDING_DESKTOP = 10;
 const PADDING_PROGRESS_INDICATOR = 14;
@@ -44,9 +44,7 @@ export const Backdrop = styled(Flexbox)<BackdropProps>`
       : `background-color: ${p.theme.color.modalBackdrop};`}
 `;
 
-const Dialog = styled(motion.div).withConfig({
-  shouldForwardProp: (prop) => !['isStatusModal'].includes(prop),
-})<DialogProps>`
+const Dialog = styled(motion.div)<DialogProps>`
   box-sizing: border-box;
   padding: ${({ theme }) => theme.spacing.unit(PADDING_MOBILE)}px;
   border: 0;
@@ -57,6 +55,7 @@ const Dialog = styled(motion.div).withConfig({
   max-height: 100vh;
   max-width: 100%;
   width: 100%;
+  border-radius: ${({ theme }) => theme.borderRadius8};
 
   ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
     ${(p) =>
@@ -67,6 +66,7 @@ const Dialog = styled(motion.div).withConfig({
           transform: none !important; /* disables the appear animation */
           padding-top: ${p.theme.spacing.unit(PADDING_TOP_MOBILE_FULLSCREEN)}px;
           padding-bottom: ${p.theme.spacing.unit(PADDING_BOTTOM_MOBILE_FULLSCREEN)}px;
+          border-radius: 0px;
         `
         : `margin: ${p.theme.spacing.unit(2)}px;
            padding-top: ${p.theme.spacing.unit(PADDING_TOP_MOBILE)}px;
@@ -80,6 +80,7 @@ const Dialog = styled(motion.div).withConfig({
           transform: none !important; /* disables the appear animation */
           padding-top: ${p.theme.spacing.unit(PADDING_TOP_MOBILE_FULLSCREEN)}px;
           padding-bottom: ${p.theme.spacing.unit(PADDING_BOTTOM_MOBILE_FULLSCREEN)}px;
+          border-radius:  ${p.theme.borderRadius20} ${p.theme.borderRadius20} 0 0;
         `
         : ''}
   }
@@ -92,14 +93,14 @@ const Dialog = styled(motion.div).withConfig({
     box-shadow: 0 2px 2px 0 ${({ theme }) => theme.color.shadowModal};
   }
 
-  ${({ theme, isStatusModal }) =>
-    !isStatusModal &&
+  ${({ theme, $isStatusModal }) =>
+    !$isStatusModal &&
     `${theme.media.greaterThan(theme.breakpoints.md)} {
         width: ${theme.spacing.unit(135)}px;
       }`}
 
-  ${({ theme, isStatusModal }) =>
-    !isStatusModal &&
+  ${({ theme, $isStatusModal }) =>
+    $isStatusModal &&
     `${theme.media.greaterThan(theme.breakpoints.lg)} {
         width: ${theme.spacing.unit(170)}px;
       }`}
@@ -132,11 +133,10 @@ const CloseButton = styled(NormalizedElements.Button)`
       : `top:${p.theme.spacing.unit(PADDING_MOBILE)}px;`}
 `;
 
-export const Header = styled.div`
+export const Header = styled.div<{ $flexTitle?: boolean }>`
   padding-bottom: ${(p) => p.theme.spacing.unit(4)}px;
   padding-right: ${(p) => p.theme.spacing.unit(CLOSE_ICON_SIZE + 2)}px;
   min-height: ${(p) => p.theme.spacing.unit(CLOSE_ICON_SIZE)}px;
-  flex: 0 0 auto;
 `;
 
 export const Footer = styled.div`
@@ -156,6 +156,12 @@ export const StyledProgressIndicator = styled.div`
       margin: 0;
     }
   }
+`;
+
+export const StyledBoxTitle = styled(Box)`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 `;
 
 const noop = () => {};
@@ -205,6 +211,7 @@ export const ModalInner: React.FC<Props> = ({
 }) => {
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
+  const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
   const animationProps = {
     initial: {
       opacity: 0,
@@ -276,7 +283,7 @@ export const ModalInner: React.FC<Props> = ({
               $show={show}
               $fullScreenMobile={fullScreenMobile}
               $fixedBottomMobile={fixedBottomMobile}
-              isStatusModal={isStatusModal}
+              $isStatusModal={isStatusModal}
             >
               {progressIndicator && (
                 <StyledProgressIndicator>
@@ -285,11 +292,27 @@ export const ModalInner: React.FC<Props> = ({
               )}
 
               {hasHeader && (
-                <Header>
-                  {progressIndicatorDescription && (
-                    <Typography type="secondary">{progressIndicatorDescription}</Typography>
+                <Header $flexTitle={progressIndicatorDescription !== undefined}>
+                  {title && progressIndicatorDescription ? (
+                    <StyledBoxTitle>
+                      <Typography
+                        type="secondary"
+                        weight="bold"
+                        color={(t) => t.colorTokens.neutral.text_weak}
+                      >
+                        {progressIndicatorDescription}
+                      </Typography>
+                      <Typography
+                        type={isMobile ? 'primary' : 'title2'}
+                        weight="extrabold"
+                        color={(t) => t.colorTokens.neutral.text_default}
+                      >
+                        {title}
+                      </Typography>
+                    </StyledBoxTitle>
+                  ) : (
+                    <Title title={title} uid={titleId} />
                   )}
-                  {title && <Title title={title} uid={titleId} />}
                 </Header>
               )}
               {children}

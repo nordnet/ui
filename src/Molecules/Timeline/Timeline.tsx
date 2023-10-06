@@ -57,7 +57,7 @@ const lineHeight = (iconSize: string) => {
 
 const lineStyles = (status: StepProps['status'], props: any) => {
   /** Before and after lines */
-  const { theme, colorSuccess, colorNext, colorFailure, colorWarning, $iconSize } = props;
+  const { theme, $colorSuccess, $colorNext, $colorFailure, $colorWarning, $iconSize } = props;
   return `
     content: '';
     position: absolute;
@@ -72,38 +72,26 @@ const lineStyles = (status: StepProps['status'], props: any) => {
         case 'NEUTRAL':
         case 'ACTIVE':
         case 'PENDING':
-          return colorNext ? colorNext(theme) : theme.color.timelineNext;
+          return $colorNext ? $colorNext(theme) : theme.color.timelineNext;
         case 'WARNING':
-          return colorWarning ? colorWarning(theme) : theme.color.timelineNext;
+          return $colorWarning ? $colorWarning(theme) : theme.color.timelineNext;
         case 'FAILURE':
-          return colorFailure ? colorFailure(theme) : theme.color.timelineNext;
+          return $colorFailure ? $colorFailure(theme) : theme.color.timelineNext;
         case 'SUCCESS':
         default:
-          return colorSuccess ? colorSuccess(theme) : theme.color.timelineSuccess;
+          return $colorSuccess ? $colorSuccess(theme) : theme.color.timelineSuccess;
       }
     })()};
   `;
 };
 
-const StyledListItem = styled(ListItem).withConfig({
-  shouldForwardProp: (prop) =>
-    ![
-      'previousStatus',
-      'currentStatus',
-      'colorSuccess',
-      'colorNext',
-      'colorFailure',
-      'colorWarning',
-      '$hideSeparators',
-      '$iconSize',
-    ].includes(prop),
-})<{
-  previousStatus: StepProps['status'];
-  currentStatus: StepProps['status'];
-  colorSuccess: Props['colorSuccess'];
-  colorNext: Props['colorNext'];
-  colorFailure: Props['colorFailure'];
-  colorWarning: Props['colorWarning'];
+const StyledListItem = styled(ListItem)<{
+  $previousStatus: StepProps['status'];
+  $currentStatus: StepProps['status'];
+  $colorSuccess: Props['colorSuccess'];
+  $colorNext: Props['colorNext'];
+  $colorFailure: Props['colorFailure'];
+  $colorWarning: Props['colorWarning'];
   $hideSeparators: Props['hideSeparators'];
   $iconSize: string;
 }>`
@@ -118,14 +106,14 @@ const StyledListItem = styled(ListItem).withConfig({
 
   position: relative;
   & ::before {
-    ${(props) => lineStyles(props.previousStatus, props)};
+    ${(props) => lineStyles(props.$previousStatus, props)};
   }
   /** Remove line from top element */
   & :first-child::before {
     content: none;
   }
   & ::after {
-    ${(props) => lineStyles(props.currentStatus, props)};
+    ${(props) => lineStyles(props.$currentStatus, props)};
     bottom: 0;
   }
   /** Remove line from bottom element */
@@ -171,12 +159,12 @@ const Timeline: React.FC<Props> = ({
           <StyledListItem
             // eslint-disable-next-line react/no-array-index-key
             key={`${date}_${index}`}
-            previousStatus={previousStatus}
-            currentStatus={status}
-            colorSuccess={colorSuccess}
-            colorNext={colorNext}
-            colorFailure={colorFailure}
-            colorWarning={colorWarning}
+            $previousStatus={previousStatus}
+            $currentStatus={status}
+            $colorSuccess={colorSuccess}
+            $colorNext={colorNext}
+            $colorFailure={colorFailure}
+            $colorWarning={colorWarning}
             $hideSeparators={hideSeparators}
             $iconSize={iconSize}
           >

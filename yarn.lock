@@ -2814,10 +2814,10 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
-"@nordnet/design-tokens@1.7.2":
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/@nordnet/design-tokens/-/design-tokens-1.7.2.tgz#4eeaae5a4ef5d64f26fbb6fc6f2f9a72d4f625f9"
-  integrity sha512-TQP6fY/KicIta5g2Yefi6fU+xR2tHJuCfEeEghYzBFBA7dgbZPaJgPbXWDvPJDVmGf7eOl93F/fOSdIIicfA/w==
+"@nordnet/design-tokens@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@nordnet/design-tokens/-/design-tokens-2.0.0.tgz#a4eb1f0f2d3a7981a172f2efc01490ee566545c0"
+  integrity sha512-QAOy+WD8Syy1I/5HR/gM9BvIkH6TnuZ60IdChH36u8vRlUln4r1l5KwIw9r006HOxStSThWUodqgb0gM2LNqsw==
 
 "@npmcli/arborist@^2.3.0", "@npmcli/arborist@^2.5.0", "@npmcli/arborist@^2.9.0":
   version "2.10.0"

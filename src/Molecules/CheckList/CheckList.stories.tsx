@@ -14,6 +14,7 @@ import {
   header,
   labels,
   completedHeader,
+  completedHeaderWithClose,
   useFakeCheckList,
   useFakeCheckListV2,
   getPercentage,
@@ -79,6 +80,17 @@ export const CompletedWithProgress = () => (
     <CheckList
       checkList={completedCheckList}
       header={completedHeader}
+      labels={labels}
+      taskInfoMap={defaultTaskInfoMap}
+      displayMode="CARD"
+    />
+  </CardContainer>
+);
+export const CompletedWithProgressAndClose = () => (
+  <CardContainer>
+    <CheckList
+      checkList={completedCheckList}
+      header={completedHeaderWithClose}
       labels={labels}
       taskInfoMap={defaultTaskInfoMap}
       displayMode="CARD"

@@ -7,7 +7,7 @@ type DoubleDatePickerProps = {
    * @default false
    */
   allowDateUpdateOnType?: boolean;
-  onChange?: (startDate: Date | null, endDate?: Date | null) => void;
+  onChange?: (startDate: Date | null | undefined, endDate?: Date | null) => void;
   labelFrom: string;
   labelTo?: string;
   disableDate?: (date: Date) => boolean;
