@@ -7,12 +7,18 @@ type TaskState = 'COMPLETED' | 'PENDING' | 'INCOMPLETE' | 'DISMISSED';
 
 type TaskId = string;
 
-export type Task = { taskId: TaskId; taskState: TaskState; percentage: number };
+export type Task = {
+  taskId: TaskId;
+  taskState: TaskState;
+  percentage?: number;
+  completedAt?: string;
+};
 
 type TaskSummary = {
   icon?: React.ReactNode;
   title?: string;
   description?: string;
+  customPercentage?: number;
 };
 
 type TaskActions = {
@@ -26,11 +32,13 @@ export type TaskInfoMap = Record<TaskId, TaskInfo>;
 
 export type CheckListSummary = {
   maxPercentage?: number;
-  percentageCompleted: number;
+  percentageCompleted?: number;
 };
 
 export type CheckList = {
-  summary: CheckListSummary;
+  customerProgress?: string;
+  onboardingCompletedAt?: string;
+  summary?: CheckListSummary;
   tasks?: Task[];
 };
 
@@ -60,6 +68,7 @@ export type CheckListProps = {
   taskInfoMap?: TaskInfoMap;
   displayMode?: DisplayMode;
   showProgress?: boolean;
+  summary?: CheckListSummary;
 };
 
 export type TitleProps = CheckListSummary &

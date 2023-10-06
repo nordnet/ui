@@ -15,12 +15,13 @@ const Title: FC<TitleProps> = ({
   onViewAll = () => {},
   onClose = () => {},
 }): ReactElement => {
-  const defaultDescription = `${Math.round(100 * (percentageCompleted / maxPercentage))}% complete`;
+  const defaultDescription =
+    percentageCompleted && `${Math.round(100 * (percentageCompleted / maxPercentage))}% complete`;
 
   return displayMode === 'DRAWER' ? (
     <Box py={4}>
       <Flexbox container gap={5} justifyContent="center" direction="column" alignItems="center">
-        {showProgress && (
+        {showProgress && percentageCompleted && (
           <ProgressDonutChart completed={percentageCompleted} total={maxPercentage} size="l" />
         )}
 
@@ -39,7 +40,7 @@ const Title: FC<TitleProps> = ({
     </Box>
   ) : (
     <Flexbox container gap={5} alignItems="center">
-      {showProgress && (
+      {showProgress && percentageCompleted && (
         <Flexbox item shrink={0}>
           <ProgressDonutChart completed={percentageCompleted} total={maxPercentage} size="s" />
         </Flexbox>
