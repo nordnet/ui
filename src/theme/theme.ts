@@ -1,8 +1,13 @@
-import { filter, mapObjIndexed, pipe, prop as Rprop, values } from 'ramda';
 import { lightTheme, darkTheme, a11yTheme } from '@nordnet/design-tokens';
 
-import { assert, deprecate, isNumber } from '../common/utils';
-import { BORDER_RADIUS, Theme, ThemeColorsVersion, ThemeConfig } from './theme.types';
+import { deprecate, isNumber } from '../common/utils';
+import {
+  BORDER_RADIUS,
+  BreakpointDataOrNumber,
+  Theme,
+  ThemeColorsVersion,
+  ThemeConfig,
+} from './theme.types';
 import { createLightColors, getColorLightScheme } from './createLightColors';
 import { createDarkColors, getColorDarkScheme } from './createDarkColors';
 
@@ -46,19 +51,13 @@ const zIndex: Theme['zIndex'] = {
   overlayInModal: 600,
 };
 
-const getSizesValues = pipe(
-  // @ts-ignore
-  mapObjIndexed(Rprop('size')),
-  // @ts-ignore
-  values,
-  filter(Boolean),
-);
-
 const getColorTokens = (theme: ThemeConfig['tokensTheme']) => {
   if (theme === 'dark') return darkTheme;
   if (theme === 'a11y') return a11yTheme;
   return lightTheme;
 };
+
+const getBreakpointNumber = (s: BreakpointDataOrNumber) => (isNumber(s) ? s : s.size);
 
 export const createTheme = (config: ThemeConfig = {}): Theme => {
   const {
@@ -71,9 +70,6 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
   const color = darkColors
     ? createDarkColors(getColorDarkScheme(type))
     : createLightColors(getColorLightScheme(type));
-
-  // @ts-ignore
-  const sizeValues = getSizesValues(breakpoints) as number[];
 
   const GUTTER = 5;
   const UNIT = 4;
@@ -114,24 +110,19 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     isDarkMode: darkColors,
     media: {
       between: (s1, s2) => {
-        const number1 = isNumber(s1) ? s1 : s1.size;
-        const number2 = isNumber(s2) ? s2 : s2.size;
-
-        assert(sizeValues.includes(number1), `[theme.media] Unrecognized size value: ${number1}`);
-        assert(sizeValues.includes(number2), `[theme.media] Unrecognized size value: ${number2}`);
+        const number1 = getBreakpointNumber(s1);
+        const number2 = getBreakpointNumber(s2);
 
         return `@media (min-width: ${number1}px) and (max-width: ${number2 - 1}px)`;
       },
       greaterThan: (s) => {
-        const number = isNumber(s) ? s : s.size;
+        const number = getBreakpointNumber(s);
 
-        assert(sizeValues.includes(number), `[theme.media] Unrecognized size value: ${number}`);
         return `@media (min-width: ${number}px)`;
       },
       lessThan: (s) => {
-        const number = isNumber(s) ? s : s.size;
+        const number = getBreakpointNumber(s);
 
-        assert(sizeValues.includes(number), `[theme.media] Unrecognized size value: ${number}`);
         return `@media (max-width: ${number - 1}px)`;
       },
     },
