@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
 
 import ProgressIndicator from '.';
-import { Button, Flexbox, Icon, Media } from '../..';
+import { Button, Card, Flexbox, Icon, Media } from '../..';
 
 export default {
   title: 'Molecules / ProgressIndicator',
@@ -234,11 +234,13 @@ export const WithCustomInfoCallbackElement = () => {
         closeCallback={() => alert('close callback')}
         exitText="Exit"
       />
-      <Flexbox container justifyContent="space-around">
-        <Button onClick={() => setCurrentStep(1)}>1</Button>
-        <Button onClick={() => setCurrentStep(2)}>2</Button>
-        <Button onClick={() => setCurrentStep(3)}>3</Button>
-      </Flexbox>
+      <Card>
+        <Flexbox container justifyContent="space-around">
+          <Button onClick={() => setCurrentStep(1)}>1</Button>
+          <Button onClick={() => setCurrentStep(2)}>2</Button>
+          <Button onClick={() => setCurrentStep(3)}>3</Button>
+        </Flexbox>
+      </Card>
     </>
   );
 };

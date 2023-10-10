@@ -15,7 +15,7 @@ const DrawerTitle: FC<DrawerTitleProps> = ({
   onHelpClick = () => {},
 }): ReactElement => {
   return (
-    <Flexbox container gutter={2} alignItems="center">
+    <Flexbox container gap={2} alignItems="center">
       {showHelpTitle && (
         <Flexbox item>
           <Button variant="neutral" onClick={onHelpClick}>

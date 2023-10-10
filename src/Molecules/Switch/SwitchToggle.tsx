@@ -135,7 +135,7 @@ export const SwitchToggle: React.FC<SwitchToggleProps> = ({
 
   return (
     <Label>
-      <Flexbox container gutter={2} alignItems="center" as="span">
+      <Flexbox container gap={2} alignItems="center" as="span">
         <Flexbox item as="span">
           {hiddenLabel ? <VisuallyHidden>{titleNode}</VisuallyHidden> : titleNode}
         </Flexbox>

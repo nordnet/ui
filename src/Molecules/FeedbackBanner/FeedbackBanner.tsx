@@ -45,6 +45,7 @@ const StyledContainer = styled.div<FeedbackBannerProps>`
   border-left: ${(p) => p.theme.spacing.unit(1)}px solid ${getBorderColor};
   padding: ${(p) => `${p.theme.spacing.unit(1)}px ${p.theme.spacing.unit(3)}px`};
   box-sizing: border-box;
+  border-radius: ${(p) => p.theme.borderRadius4};
 `;
 
 const TextFlexbox = styled(Flexbox)`
@@ -61,7 +62,7 @@ export const FeedbackBanner: FeedbackBannerComponent = ({
 }) => {
   return (
     <StyledContainer className={className} variant={variant} scope={scope}>
-      <Flexbox container direction="row" alignItems="center" gutter={3}>
+      <Flexbox container direction="row" alignItems="center" gap={3}>
         {withIcon && <>{getIcon(variant)}</>}
         <TextFlexbox container item direction="column">
           {title && (

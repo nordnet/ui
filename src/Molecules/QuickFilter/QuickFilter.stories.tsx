@@ -13,7 +13,7 @@ export default {
 export const WithFourFilterChips = () => (
   <Card>
     <Box p={2}>
-      <Flexbox container gutter={1}>
+      <Flexbox container gap={1}>
         <FilterChip icon={<Icon.MonthlySavings16 />} value="1" />{' '}
         <FilterChip icon={<Icon.MonthlySavings16 />} label="&nbsp;" value="1" />{' '}
         <FilterChip icon={<Icon.MonthlySavings16 />} label="label" value="1" />{' '}

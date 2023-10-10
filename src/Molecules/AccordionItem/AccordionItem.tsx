@@ -11,6 +11,7 @@ const TRANSITION_DURATION = 0.16;
 const Item = styled.div<ItemProps>`
   outline: 1px
     ${(p) => (!p.disableFocusOutline && p.hasFocus ? `solid ${p.theme.color.cta}` : 'none')};
+  border-radius: ${(p) => p.theme.borderRadius4};
   background-color: ${(p) =>
     !p.disableBackgroundColor && p.hasFocus ? p.theme.color.background : 'transparent'};
   && + & {

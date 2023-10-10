@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Color from 'color';
 import styled, { css } from 'styled-components';
 
-import { Box, Card, Flexbox, OldIcon, Typography } from '../..';
+import { Box, Card, Flexbox, Icon, Typography } from '../..';
 import { isBoolean, isElement } from '../../common/utils';
 
 import { SelectionCardComponent } from './SelectionCard.types';
@@ -40,8 +40,8 @@ const CircleOutline = styled.div`
   border-radius: 100%;
   ${(p) => `
     border: 1px solid ${p.theme.color.selectionCardBorder};
-    height: ${p.theme.spacing.unit(5)}px;
-    width: ${p.theme.spacing.unit(5)}px;
+    height: ${p.theme.spacing.unit(4)}px;
+    width: ${p.theme.spacing.unit(4)}px;
   `}
 `;
 
@@ -75,7 +75,8 @@ const StyledCard = styled(Card)<{
   ${(p) => p.$border && `border: 1px solid ${p.theme.color.inputBorder}`};
   ${(p) => p.$error && !p.$disabled && `border: 1px solid ${p.theme.color.functionRed}`};
   ${(p) => !p.$disabled && p.$selected && overlayStyles};
-
+  border-radius: ${({ theme }) => theme.borderRadius8};
+  overflow: hidden;
   &:hover {
     ${(p) => !p.$disabled && overlayStyles};
   }
@@ -98,7 +99,7 @@ const StyledDiv = styled('div')<{
 }>`
   ${(p) => `
     text-align: ${p.$text ? 'left' : 'center'};
-    padding: ${p.theme.spacing.unit(5)}px;
+    padding: ${p.theme.spacing.unit(4)}px;
   `}
 
   ${(p) =>
@@ -159,7 +160,7 @@ export const SelectionCard: SelectionCardComponent = ({
     text
   ) : (
     <StyledFlexbox item>
-      <Typography color={(t) => t.color.selectionCardText} type="tertiary">
+      <Typography type="secondary" color={(t) => t.colorTokens.neutral.text_weak}>
         {text}
       </Typography>
     </StyledFlexbox>
@@ -177,7 +178,7 @@ export const SelectionCard: SelectionCardComponent = ({
           <Flexbox item>{tag && <Tag type="secondary">{tag}</Tag>}</Flexbox>
           <Box pt={4} pr={5}>
             {!disabled && !selected && outline && <CircleOutline />}
-            {!disabled && selected && <OldIcon.CheckMarkCircle fill={(t) => t.color.cta} />}
+            {!disabled && selected && <Icon.CheckCircleFill16 color={(t) => t.color.cta} />}
 
             <StyledInput
               type="checkbox"
@@ -190,14 +191,14 @@ export const SelectionCard: SelectionCardComponent = ({
 
         <StyledDiv $feature={hasFeature} $tag={Boolean(tag)} $text={Boolean(text)}>
           {horizontal && (
-            <Flexbox container direction="row" gutter={5} alignContent="center">
+            <Flexbox container direction="row" gap={5} alignContent="center">
               {hasIcon && (
                 <Flexbox item alignSelf="center">
                   {icon}
                 </Flexbox>
               )}
 
-              <Flexbox container direction="column" gutter={1} alignItems="flex-start">
+              <Flexbox container direction="column" gap={1} alignItems="flex-start">
                 {titleItem}
                 {textItem}
               </Flexbox>
@@ -205,14 +206,22 @@ export const SelectionCard: SelectionCardComponent = ({
           )}
 
           {!horizontal && (
-            <Flexbox container direction="column" alignItems="center" gutter={1}>
+            <Flexbox container direction="column" alignItems="center" gap={1}>
               {hasIcon && (
                 <Flexbox item {...(text && { alignSelf: 'flex-start' })}>
                   {icon}
                 </Flexbox>
               )}
-              {titleItem}
-              {textItem}
+              <Flexbox
+                item
+                container
+                direction="column"
+                {...(text && { alignSelf: 'flex-start' })}
+                width="100%"
+              >
+                {titleItem}
+                {textItem}
+              </Flexbox>
             </Flexbox>
           )}
         </StyledDiv>

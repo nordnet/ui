@@ -72,6 +72,7 @@ const SelectWrapper = styled.div<Pick<Props, 'error' | 'success' | 'disabled' | 
   background: ${(p) => p.theme.color.inputBackground};
   box-sizing: border-box;
   position: relative;
+  border-radius: ${({ theme }) => theme.borderRadius4};
 `;
 
 export const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(

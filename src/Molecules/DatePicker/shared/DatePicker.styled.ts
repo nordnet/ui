@@ -10,6 +10,7 @@ export const StyledDropdownBubble = styled(DropdownBubble)`
   max-width: ${({ theme }) => theme.spacing.unit(78)}px;
   z-index: ${({ theme }) => theme.zIndex.overlay};
   top: -10px;
+  border-radius: ${({ theme }) => theme.borderRadius8};
 
   &:after,
   &:before {

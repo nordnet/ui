@@ -117,7 +117,7 @@ export const Toggle: React.FC<Props> = ({
 
   return (
     <Label>
-      <Flexbox container gutter={2} alignItems="center" as="span">
+      <Flexbox container gap={2} alignItems="center" as="span">
         {hiddenLabel ? (
           <VisuallyHidden>{titleNode}</VisuallyHidden>
         ) : (

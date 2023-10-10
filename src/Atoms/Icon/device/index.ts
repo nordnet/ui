@@ -12,9 +12,11 @@ import sound from './sound';
 import tabDefault from './tabDefault';
 import userIdFace from './userIdFace';
 import userIdTouch from './userIdTouch';
+import cloud from './cloud';
 
 export default {
   ...camera,
+  ...cloud,
   ...cookies,
   ...Delete,
   ...desktop,

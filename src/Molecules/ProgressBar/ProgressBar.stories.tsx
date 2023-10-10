@@ -30,7 +30,7 @@ export const StepProgression = () => {
   const stepLabels = ['One', 'Two', 'Three'];
   return (
     <Box px={10}>
-      <Flexbox container direction="column" gutter={2}>
+      <Flexbox container direction="column" gap={2}>
         <ProgressBar numberOfSteps={3} currentStep={1} stepLabels={stepLabels} />
         <ProgressBar numberOfSteps={3} currentStep={2} stepLabels={stepLabels} />
         <ProgressBar numberOfSteps={3} currentStep={3} stepLabels={stepLabels} />
@@ -43,7 +43,7 @@ export const FailureStep = () => {
   const stepLabels = ['One', 'Two', 'Failed step', 'Four'];
   return (
     <Box px={10}>
-      <Flexbox container direction="column" gutter={2}>
+      <Flexbox container direction="column" gap={2}>
         <ProgressBar numberOfSteps={4} currentStep={3} stepLabels={stepLabels} failed />
       </Flexbox>
     </Box>
@@ -54,7 +54,7 @@ export const WarningStep = () => {
   const stepLabels = ['One', 'Two', 'Step with warning', 'Four'];
   return (
     <Box px={10}>
-      <Flexbox container direction="column" gutter={2}>
+      <Flexbox container direction="column" gap={2}>
         <ProgressBar numberOfSteps={4} currentStep={3} stepLabels={stepLabels} warning />
       </Flexbox>
     </Box>

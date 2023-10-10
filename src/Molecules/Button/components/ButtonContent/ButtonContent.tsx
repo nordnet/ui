@@ -63,7 +63,7 @@ export const ButtonContent: ButtonContentComponent = (props) => {
       {icon ? (
         <Flexbox
           container
-          gutter={variant === 'neutral' && size === 's' ? 1 : 2}
+          gap={variant === 'neutral' && size === 's' ? 1 : 2}
           justifyContent="space-between"
           alignItems="baseline"
         >

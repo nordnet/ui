@@ -38,8 +38,8 @@ const getGutterStyles = (props: { gutter: Gutter; theme: Theme }) => {
   }
 
   return `
-    column-gap: ${theme.spacing.unit(col)}px;;
-    row-gap: ${theme.spacing.unit(row)}px;;
+    column-gap: ${theme.spacing.unit(col)}px;
+    row-gap: ${theme.spacing.unit(row)}px;
   `;
 };
 

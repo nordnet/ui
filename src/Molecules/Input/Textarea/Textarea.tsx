@@ -53,6 +53,7 @@ const StyledTextarea = styled(NormalizedElements.Textarea)<
   box-sizing: border-box;
   resize: ${(p) => p.noResize && 'none'};
   color: ${(p) => p.theme.color.text};
+  border-radius: ${(p) => p.theme.borderRadius4};
 
   ${borderStyles}
   ${background}

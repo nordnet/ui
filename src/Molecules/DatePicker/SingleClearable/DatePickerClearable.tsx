@@ -229,7 +229,7 @@ const DatePickerClearable = React.forwardRef<HTMLDivElement, SingleDatePickerCle
           >
             <>
               <Box pb={4}>
-                <Flexbox container gutter={2} justifyContent="center">
+                <Flexbox container gap={2} justifyContent="center">
                   <Flexbox item flex="1">
                     <Input.Text
                       id="fromDate"

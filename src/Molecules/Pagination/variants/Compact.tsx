@@ -21,7 +21,7 @@ const Compact: React.FC<PaginationCompactProps> = ({
   nextPageLabel,
 }) => {
   return (
-    <Flexbox container gutter={1}>
+    <Flexbox container gap={1}>
       {currentPage !== 1 && (
         <ChevronButton direction="left" onClick={onClickPrevious} label={previousPageLabel} />
       )}

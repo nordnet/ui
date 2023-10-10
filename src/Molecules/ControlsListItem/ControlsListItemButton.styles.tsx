@@ -16,5 +16,4 @@ export const StyledTypography = styled(Typography)<StyledTypographyTypes>`
 export const SelectWrapper = styled(Box)`
   align-items: center;
   display: flex;
-  z-index: ${({ theme }) => theme.zIndex.overlay};
 `;
