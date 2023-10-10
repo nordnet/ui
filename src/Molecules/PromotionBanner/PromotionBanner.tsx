@@ -1,11 +1,10 @@
 import React, { useState, useCallback } from 'react';
-import styled, { ThemedStyledProps } from 'styled-components';
+import styled, { ExecutionContext } from 'styled-components';
 
-import { Theme } from '../../theme/theme.types';
 import { PromotionBannerComponent, PromotionBannerProps } from './PromotionBanner.types';
 import { Badge, Box, Button, Flexbox, Icon, Typography, useMedia } from '../..';
 
-const getColor = (props: ThemedStyledProps<PromotionBannerProps, Theme>) => {
+const getColor = (props: ExecutionContext & PromotionBannerProps) => {
   const { backgroundColor, theme } = props;
 
   if (backgroundColor === 'green') {

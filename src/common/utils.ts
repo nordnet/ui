@@ -55,10 +55,6 @@ export const isFunction = (x: any): x is Function => typeof x === 'function';
 export const isHTMLElement = (x: any): x is HTMLElement =>
   typeof HTMLElement !== 'undefined' ? x instanceof HTMLElement : false;
 
-export const pickAriaAttributes = R.pickBy((_, key: string | number) =>
-  R.test(/^aria-/, key as string),
-);
-
 const convertToDate = (value: number) => new Date(value);
 const isInvalid = R.anyPass([R.isNil, R.pipe(convertToDate, R.toString, R.equals('Invalid Date'))]);
 
@@ -130,3 +126,27 @@ export const flattenObject = <T extends {}>(obj: T) => {
 
   return flattened;
 };
+
+export function getAriaProps(props: Record<string, any>) {
+  const filteredProps = {};
+
+  Object.keys(props).forEach((prop) => {
+    if (prop.startsWith('aria-')) {
+      filteredProps[prop] = props[prop];
+    }
+  });
+
+  return filteredProps;
+}
+
+export function getDataProps(props: Record<string, any>) {
+  const filteredProps = {};
+
+  Object.keys(props).forEach((prop) => {
+    if (prop.startsWith('data-')) {
+      filteredProps[prop] = props[prop];
+    }
+  });
+
+  return filteredProps;
+}

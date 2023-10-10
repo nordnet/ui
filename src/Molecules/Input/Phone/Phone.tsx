@@ -13,6 +13,7 @@ import {
   StyledBox,
   StyledTypography,
 } from './Phone.styled';
+import { getAriaProps, getDataProps } from '../../../common/utils';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
@@ -20,8 +21,6 @@ const components = {
   StyledInput,
 };
 
-const getAriaProps = R.pickBy((val, key) => key.startsWith('aria-'));
-const getDataProps = R.pickBy((val, key) => key.startsWith('data-'));
 const doNothing = () => {};
 
 const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => {
