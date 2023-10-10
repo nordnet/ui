@@ -120,7 +120,8 @@ const components = {
   Content,
   Footer,
   TitleWrapper,
-};
+} as any;
+// as any above to tame framer-motion
 
 const Title: React.FC<TitleProps> = ({ title, uid }) => {
   const isDesktop = useMedia((t) => t.media.greaterThan(t.breakpoints.sm));
