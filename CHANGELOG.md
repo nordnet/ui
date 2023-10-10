@@ -1,3 +1,10 @@
+## [12.49.1](https://github.com/nordnet/ui/compare/v12.49.0...v12.49.1) (2023-10-10)
+
+
+### Bug Fixes
+
+* use typescript instead of assertions in theme media function ([#1431](https://github.com/nordnet/ui/issues/1431)) ([678f9cd](https://github.com/nordnet/ui/commit/678f9cd))
+
 # [12.49.0](https://github.com/nordnet/ui/compare/v12.48.0...v12.49.0) (2023-10-06)
 
 
