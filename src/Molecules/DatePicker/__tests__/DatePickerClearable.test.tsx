@@ -38,7 +38,7 @@ test('Clear date by clearing the input', async () => {
 
   const dateElementDay = screen.getByTestId('December 12');
   expect(dateElementDay).toBeInTheDocument();
-  expect(dateElementDay).toHaveStyle(`background: ${theme.colorTokens.action.background_default}`);
+  expect(dateElementDay).toHaveAttribute('data-selected', 'true');
 
   fireEvent.change(input, { target: { value: '' } });
 
@@ -73,7 +73,7 @@ test('Clear date by using clear button', async () => {
 
   const dateElementDay = screen.getByTestId('December 12');
   expect(dateElementDay).toBeInTheDocument();
-  expect(dateElementDay).toHaveStyle(`background: ${theme.colorTokens.action.background_default}`); // TODO: convert to color tokens in next commit
+  expect(dateElementDay).toHaveAttribute('data-selected', 'true');
 
   const clearDateButton = screen.getByRole('button', { name: 'Clear date and state' });
   expect(clearDateButton).toBeVisible();

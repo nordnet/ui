@@ -4,7 +4,6 @@ import '@testing-library/jest-dom/extend-expect';
 import { advanceTo, clear } from 'jest-date-mock';
 import { DatePicker } from '../../..';
 import { PageProviders } from '../../../common/testUtils';
-import theme from '../../../theme';
 
 afterEach(cleanup);
 
@@ -181,7 +180,7 @@ test('Disable certain dates', async () => {
 
   const date = getByText('20');
   fireEvent.click(date);
-  expect(date?.parentElement).toHaveStyle('cursor: not-allowed;');
+  expect(date?.parentElement).toHaveAttribute('data-disabled', 'true');
 });
 
 test('Select previous date with arrow left', async () => {
@@ -354,9 +353,7 @@ test('Enter date manually', async () => {
   fireEvent.keyDown(inputElement, { key: 'Enter', code: 'Enter' });
 
   const dateElement = getByText('19');
-  expect(dateElement.parentElement).toHaveStyle(
-    `background: ${theme.colorTokens.action.background_default}`,
-  );
+  expect(dateElement.parentElement).toHaveAttribute('data-selected', 'true');
 });
 
 test('Select date by typing it in and blur', async () => {
@@ -379,7 +376,7 @@ test('Select date by typing it in and blur', async () => {
   expect(onBlur).toHaveBeenCalledWith(new Date('12/12/1990'), null);
   const dateElementDay = screen.getByTestId('December 12');
   expect(dateElementDay).toBeInTheDocument();
-  expect(dateElementDay).toHaveStyle(`background: ${theme.colorTokens.action.background_default}`);
+  expect(dateElementDay).toHaveAttribute('data-selected', 'true');
 });
 
 test('Select date by typing it in', async () => {
@@ -398,5 +395,5 @@ test('Select date by typing it in', async () => {
 
   const dateElementDay = screen.getByTestId('December 12');
   expect(dateElementDay).toBeInTheDocument();
-  expect(dateElementDay).toHaveStyle(`background: ${theme.colorTokens.action.background_default}`);
+  expect(dateElementDay).toHaveAttribute('data-selected', 'true');
 });
