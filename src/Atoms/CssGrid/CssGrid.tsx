@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import R from 'ramda';
-import styled, { css, withTheme } from 'styled-components';
+import styled, { css, useTheme } from 'styled-components';
 import { Theme } from '../../theme/theme.types';
 import {
   AreaInfo,
@@ -335,8 +335,9 @@ const generateChildStyles =
     : styles.join('\n');
   };
 
-const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({ theme, children, ...props }) => {
+export const CssGridContainer: React.FC<Props> = ({ children, ...props }) => {
   const { sm, md, lg, xl } = props;
+  const theme = useTheme();
 
   type SizeAreaTuple = [undefined | Size, { areas: Props['areas'] }];
   const stylesFnsForChild = useMemo(
@@ -398,7 +399,6 @@ const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({ theme, childr
   return <StyledDiv {...props}>{renderedChildren}</StyledDiv>;
 };
 
-export const CssGridContainer: React.FC<Props> = withTheme(RawCSSGridContainer);
 CssGridContainer.displayName = 'CssGrid.Container';
 
 export const CssGrid = { Container: CssGridContainer, Item: CssGridItem };

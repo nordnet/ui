@@ -1,8 +1,8 @@
-import { pickAriaAttributes } from './utils';
+import { getAriaProps } from './utils';
 
 test('common utils', () => {
   expect(
-    pickAriaAttributes({
+    getAriaProps({
       'aria-hidden': true,
       'aria-labelledby': 'id1',
       // shouldn't be picked

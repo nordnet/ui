@@ -1,12 +1,11 @@
 import React from 'react';
-import styled, { css, ThemedStyledProps } from 'styled-components';
+import styled, { css, ExecutionContext } from 'styled-components';
 
 import { Component, Props, CardProps } from './Bubble.types';
-import { Theme } from '../../../theme/theme.types';
 import { BORDER_SIZE } from './consts';
 import { isFunction } from '../../../common/utils';
 
-const getColor = (props: ThemedStyledProps<CardProps, Theme>) => {
+const getColor = (props: ExecutionContext & CardProps) => {
   const { barColor, theme } = props;
 
   if (isFunction(barColor)) {

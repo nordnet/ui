@@ -1,5 +1,5 @@
 import React, { FC, useContext } from 'react';
-import styled, { ThemedStyledProps } from 'styled-components';
+import styled, { ExecutionContext } from 'styled-components';
 import { LinkComponent, LinkProps } from './Link.types';
 import { Theme } from '../../theme/theme.types';
 import { assert, isUndefined } from '../../common/utils';
@@ -19,14 +19,11 @@ const getEnabledColor = (color: LinkProps['color'], theme: Theme): string => {
 };
 
 const getSharedStyle = (
-  props: ThemedStyledProps<
-    {
-      disabled?: LinkProps['disabled'];
-      $display?: LinkProps['display'];
-      $color?: LinkProps['color'];
-    },
-    Theme
-  >,
+  props: ExecutionContext & {
+    disabled?: LinkProps['disabled'];
+    $display?: LinkProps['display'];
+    $color?: LinkProps['color'];
+  },
 ) => {
   const { theme, disabled, $display = 'inline', $color } = props;
 

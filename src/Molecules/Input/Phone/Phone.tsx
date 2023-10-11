@@ -13,6 +13,7 @@ import {
   StyledBox,
   StyledTypography,
 } from './Phone.styled';
+import { getAriaProps, getDataProps } from '../../../common/utils';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
@@ -20,8 +21,6 @@ const components = {
   StyledInput,
 };
 
-const getAriaProps = R.pickBy((val, key) => key.startsWith('aria-'));
-const getDataProps = R.pickBy((val, key) => key.startsWith('data-'));
 const doNothing = () => {};
 
 const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => {
@@ -200,30 +199,28 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
 
   return (
     <FormField
-      {...R.pick(
-        [
-          'error',
-          'extraInfo',
-          'hideLabel',
-          'label',
-          'labelTooltip',
-          'labelTooltipPosition',
-          'labelTooltipInModal',
-          'className',
-          'width',
-          'disabled',
-        ],
-        props,
-      )}
+      error={error}
+      extraInfo={props.extraInfo}
+      hideLabel={props.hideLabel}
+      label={props.label}
+      labelTooltip={props.labelTooltip}
+      labelTooltipPosition={props.labelTooltipPosition}
+      labelTooltipInModal={props.labelTooltipInModal}
+      className={props.className}
+      width={props.width}
+      disabled={disabled}
       required={visuallyEmphasiseRequired}
       ref={fieldRef}
     >
       <StyledWrapper
         container
-        size={size}
         alignItems="center"
-        focused={focused}
-        {...R.pick(['error', 'success', 'disabled', 'variant'], props)}
+        $disabled={disabled}
+        $error={error}
+        $focused={focused}
+        $size={size}
+        $success={success}
+        $variant={variant}
       >
         <StyledSelect
           label="country code"
@@ -255,33 +252,31 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
         <Flexbox container alignItems="center" width="100%">
           <StyledTypography type="secondary">
             <StyledInput
+              $error={error}
+              $variant={variant}
+              $size={size}
+              $success={success}
               onChange={changePhoneNumber}
               defaultValue={defaultValue?.phoneNumber}
-              {...{
-                autoComplete,
-                autoFocus,
-                disabled,
-                error,
-                id,
-                maxLength,
-                name,
-                onClick,
-                onMouseLeave,
-                onKeyDown,
-                onKeyPress,
-                onKeyUp,
-                placeholder,
-                required,
-                variant,
-                size,
-                success,
-                type,
-                ref,
-              }}
+              autoComplete={autoComplete}
+              autoFocus={autoFocus}
+              disabled={disabled}
+              id={id}
+              maxLength={maxLength}
+              name={name}
+              onClick={onClick}
+              onMouseLeave={onMouseLeave}
+              onKeyDown={onKeyDown}
+              onKeyPress={onKeyPress}
+              onKeyUp={onKeyUp}
+              placeholder={placeholder}
+              required={required}
+              type={type}
+              ref={ref}
+              onFocus={handleFocus}
               {...getAriaProps(props)}
               {...getDataProps(props)}
               {...(hasError(error) ? { 'aria-invalid': true } : {})}
-              onFocus={handleFocus}
             />
           </StyledTypography>
         </Flexbox>

@@ -1,8 +1,7 @@
 import React from 'react';
-import styled, { css, ThemedStyledProps } from 'styled-components';
+import styled, { css, ExecutionContext } from 'styled-components';
 import * as R from 'ramda';
 import { Props, Spacings } from './Box.types';
-import { Theme } from '../../theme/theme.types';
 import { isNumber, isString } from '../../common/utils';
 
 const isPropPresentedIn = (props: Props) => (prop: keyof Props) =>
@@ -94,7 +93,7 @@ const getStylesForSize = (size: string) => css<Partial<Props>>`
   }
 `;
 
-const getColor = (props: ThemedStyledProps<Props, Theme>) => {
+const getColor = (props: ExecutionContext & Props) => {
   const { backgroundColor, theme } = props;
 
   if (backgroundColor && typeof backgroundColor === 'function') {
@@ -111,11 +110,9 @@ const getColor = (props: ThemedStyledProps<Props, Theme>) => {
 const StyledDiv = styled.div<Props>`
   ${(p) => getStyles(p)}
   ${(p) => (p.sm ? getStylesForSize('sm') : '')}
-  ${(p) =>
-    p.md ? getStylesForSize('md') : ''}
+  ${(p) => (p.md ? getStylesForSize('md') : '')}
   ${(p) => (p.xl ? getStylesForSize('xl') : '')}
-  ${(p) =>
-    p.lg ? getStylesForSize('lg') : ''}
+  ${(p) => (p.lg ? getStylesForSize('lg') : '')}
     background-color: ${(p) => getColor(p)};
 `;
 

@@ -12,7 +12,3 @@ export type Props = {
   delay?: boolean | number;
   fallback?: React.ReactElement;
 };
-
-export type PropsWithTheme = Props & {
-  theme: Theme;
-};
