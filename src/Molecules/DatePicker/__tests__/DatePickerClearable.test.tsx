@@ -4,7 +4,6 @@ import '@testing-library/jest-dom/extend-expect';
 import { advanceTo, clear } from 'jest-date-mock';
 import DatePickerClearable from '../SingleClearable';
 import { PageProviders } from '../../../common/testUtils';
-import theme from '../../../theme';
 
 afterEach(cleanup);
 
