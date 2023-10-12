@@ -1,6 +1,7 @@
 import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { Props } from './Trigger.types';
+import { useSelect } from '..';
 import { Icon } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
 
@@ -59,9 +60,18 @@ export const Trigger = forwardRef<HTMLButtonElement, Props>(function TriggerComp
   props: Props,
   ref,
 ) {
-  const { size, hasError, hasValue, ...rest } = props;
+  const { children, size, hasError } = props;
+  const { getButtonProps, value } = useSelect();
 
   return (
-    <StyledButton $size={size} $hasError={hasError} $hasValue={hasValue} ref={ref} {...rest} />
+    <StyledButton
+      $size={size}
+      $hasError={hasError}
+      $hasValue={!!value}
+      {...getButtonProps()}
+      ref={ref}
+    >
+      {children}
+    </StyledButton>
   );
 });
