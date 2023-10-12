@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { Typography } from '../../..';
 import { ellipsis } from '../Select.styles';
 import { Props } from './ValueDisplay.types';
+import { useSelect, UseSelectProps } from '..';
 
 function renderValue<OptionValue>(
   selectedOptions: SelectOption<OptionValue> | SelectOption<OptionValue>[] | null,
@@ -16,8 +17,8 @@ function renderValue<OptionValue>(
 }
 
 function getSelectedOptionsLabel(
-  getOptionMetadata: Props['getOptionMetadata'],
-  value: Props['value'],
+  getOptionMetadata: UseSelectProps['getOptionMetadata'],
+  value: UseSelectProps['value'],
 ) {
   let selectedOptionsMetadata = null;
 
@@ -36,21 +37,20 @@ function getSelectedOptionsLabel(
     : null;
 }
 
-export const StyledTypography = styled(Typography)<{ $hasValue: boolean }>`
+export const StyledTypography = styled(Typography)`
   display: inline-block;
   margin-right: ${({ theme }) => theme.spacing.unit(2)}px;
   color: inherit;
   ${ellipsis}
 `;
 
-export function ValueDisplay({ placeholder, value, getOptionMetadata }: Props) {
+export function ValueDisplay({ placeholder }: Props) {
+  const { value, getOptionMetadata } = useSelect();
   const selectedOptionsLabel = value ? getSelectedOptionsLabel(getOptionMetadata, value) : null;
 
   return (
     <>
-      <StyledTypography $hasValue={!!value} type="secondary">
-        {selectedOptionsLabel || placeholder}
-      </StyledTypography>
+      <StyledTypography type="secondary">{selectedOptionsLabel || placeholder}</StyledTypography>
     </>
   );
 }
