@@ -1,17 +1,12 @@
 import React, { ForwardedRef, forwardRef, useEffect } from 'react';
-import useSelect, { SelectProvider } from '@mui/base/useSelect';
+import useMuiSelect, { SelectProvider as MuiSelectProvider } from '@mui/base/useSelect';
 import { FadedScroll } from '../..';
 import { HiddenSelect } from './HiddenSelect';
-import {
-  ListContainer,
-  Listbox,
-  ListboxContainer,
-  Root,
-  StyledChevronDown8,
-} from './Select.styles';
+import { ListContainer, Listbox, ListboxContainer, Root } from './Select.styles';
 import { Props } from './Select.types';
-import { ValueDisplay as DefaultValueDisplay } from './ValueDisplay';
-import { Trigger as DefaultTrigger } from './Trigger';
+import { ValueDisplay } from './ValueDisplay';
+import { Trigger } from './Trigger';
+import { Arrow, SelectProvider } from '.';
 
 export const Select = forwardRef<HTMLButtonElement, Props>(function SelectComponent(
   props: Props,
@@ -27,14 +22,14 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
     placeholder,
     size = 'm',
     value: valueFromProps,
+    valueDisplay: valueDisplayFromProps,
+    trigger: triggerFromProps,
     width = 50,
-    slots = {},
-    slotProps = {},
   } = props;
   const listboxRef = React.useRef<HTMLUListElement>(null);
   const [isOpen, setIsOpen] = React.useState(false);
   const { getButtonProps, getListboxProps, contextValue, value, getOptionMetadata, options } =
-    useSelect<string, boolean>({
+    useMuiSelect<string, boolean>({
       listboxRef,
       disabled,
       multiple,
@@ -50,33 +45,24 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
     }
   }, [isOpen]);
 
-  const Trigger = slots.trigger || DefaultTrigger;
-  const ValueDisplay = slots.valueDisplay || DefaultValueDisplay;
-
   return (
-    <>
+    <SelectProvider
+      getButtonProps={getButtonProps}
+      getOptionMetadata={getOptionMetadata}
+      value={value}
+    >
       <Root $width={width}>
-        <Trigger
-          size={size}
-          hasError={hasError}
-          hasValue={!!value}
-          {...slotProps.trigger}
-          {...getButtonProps()}
-          ref={ref}
-        >
-          <ValueDisplay
-            value={value === null ? undefined : value}
-            getOptionMetadata={getOptionMetadata}
-            placeholder={placeholder}
-            {...slotProps.valueDisplay}
-          />
-          <StyledChevronDown8 color={(t) => t.colorTokens.neutral.icon_default} />
-        </Trigger>
+        {triggerFromProps || (
+          <Trigger size={size} hasError={hasError} ref={ref}>
+            {valueDisplayFromProps || <ValueDisplay placeholder={placeholder} />}
+            <Arrow />
+          </Trigger>
+        )}
         <ListContainer aria-hidden={!isOpen} $hidden={!isOpen}>
           <ListboxContainer>
             <FadedScroll maxHeight={50}>
               <Listbox {...getListboxProps()}>
-                <SelectProvider value={contextValue}>{children}</SelectProvider>
+                <MuiSelectProvider value={contextValue}>{children}</MuiSelectProvider>
               </Listbox>
             </FadedScroll>
           </ListboxContainer>
@@ -85,6 +71,6 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
       {name && value ? (
         <HiddenSelect name={name} multiple={multiple} value={value} options={options} />
       ) : null}
-    </>
+    </SelectProvider>
   );
 });

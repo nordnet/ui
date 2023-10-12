@@ -1,5 +1,5 @@
-import { SelectProps } from '@mui/base';
 import React from 'react';
+import { SelectProps } from '@mui/base';
 
 export type Props = {
   children: React.ReactNode;
@@ -15,13 +15,7 @@ export type Props = {
    */
   width?: number;
   value?: string | string[];
-  slots?: {
-    trigger?: React.ComponentType<any>;
-    valueDisplay?: React.ComponentType<any>;
-  };
-  slotProps?: {
-    trigger?: any;
-    valueDisplay?: any;
-  };
-} & SelectProps<string | string[], boolean>;
+  valueDisplay?: React.ReactNode;
+  trigger?: React.ReactNode;
+} & SelectProps<string, boolean>;
 // TODO: will we really expose all props from SelectProps?

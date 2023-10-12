@@ -56,8 +56,6 @@ export function Option(props: Props) {
     label,
   });
 
-  console.log('getRootProps', getRootProps());
-
   return (
     <Item {...getRootProps()} $highlighted={highlighted} className={className}>
       <Flexbox
