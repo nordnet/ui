@@ -52,9 +52,6 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
 
   const Trigger = slots.trigger || DefaultTrigger;
   const ValueDisplay = slots.valueDisplay || DefaultValueDisplay;
-  // Needs to be done for a 1.0 release
-
-  // TODO: Check with Zoe if we can get figma design for the "old" sizes.
 
   return (
     <>
