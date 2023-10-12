@@ -1,3 +1,24 @@
+## [12.49.2](https://github.com/nordnet/ui/compare/v12.49.1...v12.49.2) (2023-10-12)
+
+
+### Bug Fixes
+
+* updated twitter logo ([#1433](https://github.com/nordnet/ui/issues/1433)) ([fb59962](https://github.com/nordnet/ui/commit/fb59962))
+
+## [12.49.1](https://github.com/nordnet/ui/compare/v12.49.0...v12.49.1) (2023-10-10)
+
+
+### Bug Fixes
+
+* use typescript instead of assertions in theme media function ([#1431](https://github.com/nordnet/ui/issues/1431)) ([678f9cd](https://github.com/nordnet/ui/commit/678f9cd))
+
+# [12.49.0](https://github.com/nordnet/ui/compare/v12.48.0...v12.49.0) (2023-10-06)
+
+
+### Features
+
+* 🎸 Add percentage to TaskInfo to allow custom percentage ([#1429](https://github.com/nordnet/ui/issues/1429)) ([b74abf0](https://github.com/nordnet/ui/commit/b74abf0))
+
 # [12.48.0](https://github.com/nordnet/ui/compare/v12.47.1...v12.48.0) (2023-09-28)
 
 
