@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Props } from './Select.types';
-import { Icon, units } from '../..';
+import { units } from '../..';
 
 export const ellipsis = `
   white-space: nowrap;
@@ -12,10 +12,6 @@ export const Root = styled.div<{ $width: number }>`
   display: inline-block;
   position: relative;
   width: ${(props) => units(props.$width)}px;
-`;
-
-export const StyledChevronDown8 = styled(Icon.ChevronDown8)`
-  margin-left: auto;
 `;
 
 export const ListContainer = styled.div<{ $hidden: Props['hidden'] }>`
