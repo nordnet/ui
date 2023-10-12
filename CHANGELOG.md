@@ -1,3 +1,10 @@
+## [12.49.2](https://github.com/nordnet/ui/compare/v12.49.1...v12.49.2) (2023-10-12)
+
+
+### Bug Fixes
+
+* updated twitter logo ([#1433](https://github.com/nordnet/ui/issues/1433)) ([fb59962](https://github.com/nordnet/ui/commit/fb59962))
+
 ## [12.49.1](https://github.com/nordnet/ui/compare/v12.49.0...v12.49.1) (2023-10-10)
 
 
