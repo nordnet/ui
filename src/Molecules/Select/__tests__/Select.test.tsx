@@ -1,5 +1,5 @@
 import React from 'react';
-import { cleanup, fireEvent, render } from '@testing-library/react';
+import { cleanup, render } from '@testing-library/react';
 import { clear } from 'jest-date-mock';
 import { PageProviders } from '../../../common/testUtils';
 import { Select, Option } from '..';
@@ -38,7 +38,8 @@ test('submitting a form with Select element', async () => {
     expect(true).toBe(true);
   };
 
-  const { getByText, getByTestId } = render(
+  // const { getByText, getByTestId } =
+  render(
     <PageProviders>
       <form onSubmit={onSubmit}>
         <FormField label="Label" required extraInfo="Extra info">
