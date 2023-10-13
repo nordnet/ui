@@ -86,7 +86,6 @@ export const Showcase = () => {
         </Flexbox>
         <Flexbox item container gap={2} direction="column">
           <Typography>Custom image</Typography>
-          {/* <DistributionBar label="Label" weight={10} icon={<Icon.Global16 />}></DistributionBar> */}
           <DistributionBar
             label="Cool cat company"
             weight={90}
