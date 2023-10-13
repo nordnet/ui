@@ -84,6 +84,25 @@ export const Showcase = () => {
           <Typography>Custom icon</Typography>
           <DistributionBar label="Label" weight={10} icon={<Icon.Global16 />}></DistributionBar>
         </Flexbox>
+        <Flexbox item container gap={2} direction="column">
+          <Typography>Custom image</Typography>
+          <DistributionBar
+            label="Cool cat company"
+            weight={90}
+            imageProps={{
+              src: 'https://shareville-static-test.s3.amazonaws.com/img/avatars/cat_120x120.jpg',
+              alt: 'Image of shareville cat',
+            }}
+          ></DistributionBar>
+          <DistributionBar
+            label="Tesla"
+            weight={60}
+            imageProps={{
+              src: 'https://cdn.pixabay.com/photo/2022/08/25/00/32/tesla-logo-7408969_1280.png',
+              alt: 'Company teslas logo',
+            }}
+          ></DistributionBar>
+        </Flexbox>
 
         <Flexbox item>
           <Typography>Link Name</Typography>
