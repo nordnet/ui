@@ -4,6 +4,11 @@ import { Props as FlexboxProps } from '../../Atoms/Flexbox/Flexbox.types';
 
 export type PartialNumberProps = Omit<NumberProps, 'value'>;
 
+type ImageProps = {
+  src: string;
+  alt: string;
+};
+
 export type Props = {
   label: string | ReactElement;
   icon?: ReactElement;
@@ -15,4 +20,5 @@ export type Props = {
   children?: React.ReactNode;
   delay?: number;
   labelProps?: FlexboxProps;
+  imageProps?: ImageProps;
 };
