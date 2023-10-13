@@ -100,7 +100,7 @@ export const Showcase = () => {
             weight={60}
             imageProps={{
               src: 'https://cdn.pixabay.com/photo/2022/08/25/00/32/tesla-logo-7408969_1280.png',
-              alt: 'Image of shareville cat',
+              alt: 'Company teslas logo',
             }}
           ></DistributionBar>
         </Flexbox>
