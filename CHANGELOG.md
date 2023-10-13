@@ -1,3 +1,10 @@
+# [12.50.0](https://github.com/nordnet/ui/compare/v12.49.2...v12.50.0) (2023-10-13)
+
+
+### Features
+
+* 🎸 Add new image prop to distribution bar ([#1434](https://github.com/nordnet/ui/issues/1434)) ([571f55b](https://github.com/nordnet/ui/commit/571f55b))
+
 ## [12.49.2](https://github.com/nordnet/ui/compare/v12.49.1...v12.49.2) (2023-10-12)
 
 
