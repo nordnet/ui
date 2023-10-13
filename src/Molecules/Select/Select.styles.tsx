@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Props } from './Select.types';
-import { units } from '../..';
 
 export const ellipsis = `
   white-space: nowrap;
@@ -11,7 +10,7 @@ export const ellipsis = `
 export const Root = styled.div<{ $width: number }>`
   display: inline-block;
   position: relative;
-  width: ${(props) => units(props.$width)}px;
+  width: ${({ theme, $width }) => theme.spacing.unit($width)}px;
 `;
 
 export const ListContainer = styled.div<{ $hidden: Props['hidden'] }>`
@@ -29,7 +28,7 @@ export const ListContainer = styled.div<{ $hidden: Props['hidden'] }>`
 `;
 
 export const ListboxContainer = styled.div`
-  margin-top: ${units(1)}px;
+  margin-top: ${(p) => p.theme.spacing.unit(1)}px;
   background: ${({ theme }) => theme.colorTokens.neutral.background_default};
   border: 1px solid ${({ theme }) => theme.colorTokens.neutral.border_default};
   box-sizing: border-box;

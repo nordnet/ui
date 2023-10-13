@@ -1,7 +1,7 @@
 /* eslint-disable react/require-default-props */
 import React from 'react';
 import styled from 'styled-components';
-import { Typography, units } from '../../..';
+import { Typography } from '../../..';
 import { Props } from './Group.types';
 
 const NormalizedUl = styled.ul`
@@ -11,7 +11,12 @@ const NormalizedUl = styled.ul`
 `;
 
 const StyledTypography = styled(Typography)`
-  padding: ${units(2)}px ${units(3)}px ${units(1)}px ${units(3)}px;
+  padding: ${(p) =>
+    `${p.theme.spacing.unit(2)}px
+    ${p.theme.spacing.unit(3)}px
+    ${p.theme.spacing.unit(1)}px
+    ${p.theme.spacing.unit(3)}px
+    `};
   display: inline-block;
 `;
 

@@ -2,7 +2,7 @@
 import React from 'react';
 import useOption from '@mui/base/useOption';
 import styled from 'styled-components';
-import { Flexbox, Icon, Typography, units } from '../../..';
+import { Flexbox, Icon, Typography } from '../../..';
 import { Props } from './Option.types';
 import { ellipsis } from '../Select.styles';
 
@@ -18,7 +18,10 @@ const StyledFlex = styled(Flexbox)`
 `;
 
 const Item = styled.li<{ $highlighted: boolean }>`
-  padding: ${units(1)}px ${units(3)}px;
+  padding: ${(p) =>
+    `${p.theme.spacing.unit(1)}px
+    ${p.theme.spacing.unit(3)}px
+    `};
   color: ${({ theme }) => theme.colorTokens.neutral.text_default};
 
   ${({ $highlighted, theme }) =>
@@ -34,8 +37,8 @@ const Item = styled.li<{ $highlighted: boolean }>`
 `;
 
 const CheckmarkBox = styled.div<{ $selected?: boolean }>`
-  width: ${units(4)}px;
-  height: ${units(4)}px;
+  width: ${(p) => p.theme.spacing.unit(4)}px;
+  height: ${(p) => p.theme.spacing.unit(4)}px;
   border: 1px solid
     ${({ $selected, theme }) =>
       $selected
