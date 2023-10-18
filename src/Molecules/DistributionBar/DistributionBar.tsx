@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import { Box, TruncateWithTooltip, Flexbox } from '../../index';
 import { Props } from './DistributionBar.types';
-import { Bar, Item, StyledDot } from './DistributionBar.styled';
+import { Bar, Item, StyledDot, StyledImage } from './DistributionBar.styled';
 
 export const DistributionBar: React.FC<Props> = ({
   icon: iconFromProps,
@@ -11,6 +11,7 @@ export const DistributionBar: React.FC<Props> = ({
   labelProps,
   weight,
   children,
+  imageProps,
   delay = 0,
 }) => {
   return (
@@ -24,7 +25,12 @@ export const DistributionBar: React.FC<Props> = ({
     >
       <Item item container alignItems="center" gap={3} height="100%" {...labelProps}>
         <Box pl={2}>
-          {iconFromProps || <StyledDot color={(t) => t.color.buttonBackgroundHoverPrimary} />}
+          {(imageProps && imageProps.alt && imageProps.src && (
+            <Flexbox container alignItems="center" justifyContent="center" height="100%">
+              <StyledImage alt={imageProps.alt} src={imageProps.src} />
+            </Flexbox>
+          )) ||
+            iconFromProps || <StyledDot color={(t) => t.color.buttonBackgroundHoverPrimary} />}
         </Box>
         <TruncateWithTooltip label={label}>{label}</TruncateWithTooltip>
         <Bar
