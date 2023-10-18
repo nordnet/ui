@@ -9,7 +9,7 @@ const StyledButton = styled(Button)`
   justify-content: flex-start;
   text-align: left;
   padding: ${(t) => t.theme.spacing.unit(3)}px;
-  :hover {
+  &:hover {
     text-decoration: none;
   }
 `;

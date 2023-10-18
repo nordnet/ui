@@ -17,7 +17,7 @@ const StyledBaseBadge = styled(BaseBadge)`
 
 const StyledButton = styled(Button)`
   ${(p) => `
-    :hover {
+    &:hover {
       cursor: pointer;
       ${StyledTypography} {
         color: ${p.theme.color.cta};
