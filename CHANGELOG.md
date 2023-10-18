@@ -1,3 +1,11 @@
+# [12.51.0-beta.1](https://github.com/nordnet/ui/compare/v12.50.0...v12.51.0-beta.1) (2023-10-18)
+
+
+### Features
+
+* upgrade to styled-components v6 ([#1398](https://github.com/nordnet/ui/issues/1398)) ([0c93256](https://github.com/nordnet/ui/commit/0c93256))
+* upgrade to styled-components v6 ([#1398](https://github.com/nordnet/ui/issues/1398)) ([#1432](https://github.com/nordnet/ui/issues/1432)) ([97f6539](https://github.com/nordnet/ui/commit/97f6539))
+
 # [12.50.0](https://github.com/nordnet/ui/compare/v12.49.2...v12.50.0) (2023-10-13)
 
 ### Features
