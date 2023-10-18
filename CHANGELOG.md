@@ -1,3 +1,10 @@
+# [12.51.0-beta.2](https://github.com/nordnet/ui/compare/v12.51.0-beta.1...v12.51.0-beta.2) (2023-10-18)
+
+
+### Bug Fixes
+
+* css selectors with styled-components v6 ([#1436](https://github.com/nordnet/ui/issues/1436)) ([0f909e7](https://github.com/nordnet/ui/commit/0f909e7))
+
 # [12.51.0-beta.1](https://github.com/nordnet/ui/compare/v12.50.0...v12.51.0-beta.1) (2023-10-18)
 
 
