@@ -2,7 +2,7 @@ import React from 'react';
 import { cleanup, fireEvent, render } from '@testing-library/react';
 import { clear } from 'jest-date-mock';
 import { PageProviders } from '../../../common/testUtils';
-import { Select, Option } from '..';
+import { Select } from '..';
 import FormField from '../../FormField';
 
 afterEach(cleanup);
@@ -46,7 +46,7 @@ test('submitting a form with Select', async () => {
             placeholder="Select a option..."
           >
             {options.map((option) => (
-              <Option key={option.value} value={option.value} label={option.label} />
+              <Select.Option key={option.value} value={option.value} label={option.label} />
             ))}
           </Select>
         </FormField>
@@ -93,7 +93,7 @@ test('submitting a form with multi Select', async () => {
             multiple
           >
             {options.map((option) => (
-              <Option key={option.value} value={option.value} label={option.label} />
+              <Select.Option key={option.value} value={option.value} label={option.label} />
             ))}
           </Select>
         </FormField>
