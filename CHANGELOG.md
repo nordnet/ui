@@ -1,3 +1,10 @@
+## [12.50.1](https://github.com/nordnet/ui/compare/v12.50.0...v12.50.1) (2023-10-19)
+
+
+### Performance Improvements
+
+* remove old select ([#1438](https://github.com/nordnet/ui/issues/1438)) ([b85ca32](https://github.com/nordnet/ui/commit/b85ca32))
+
 # [12.50.0](https://github.com/nordnet/ui/compare/v12.49.2...v12.50.0) (2023-10-13)
 
 
