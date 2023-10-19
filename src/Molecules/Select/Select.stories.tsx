@@ -222,22 +222,22 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
   );
 };
 
-export const WithPillShape: ComponentStory<typeof Select> = () => (
-  <Select
-    name="my-select"
-    placeholder="Select a option..."
-    trigger={
-      <Select.TriggerPill>
-        <Select.ValueDisplay placeholder="Select a option..."></Select.ValueDisplay>
-        <Select.Arrow />
-      </Select.TriggerPill>
-    }
-  >
-    {options.map((option) => (
-      <Select.Option key={option.value} value={option.value} label={option.label} />
-    ))}
-  </Select>
-);
+// export const WithPillShape: ComponentStory<typeof Select> = () => (
+//   <Select
+//     name="my-select"
+//     placeholder="Select a option..."
+//     trigger={
+//       <Select.TriggerPill>
+//         <Select.ValueDisplay placeholder="Select a option..."></Select.ValueDisplay>
+//         <Select.Arrow />
+//       </Select.TriggerPill>
+//     }
+//   >
+//     {options.map((option) => (
+//       <Select.Option key={option.value} value={option.value} label={option.label} />
+//     ))}
+//   </Select>
+// );
 
 export const WithForwardedRef: ComponentStory<typeof Select> = () => {
   const buttonRef = useRef<HTMLButtonElement | null>(null);
@@ -260,31 +260,31 @@ export const WithForwardedRef: ComponentStory<typeof Select> = () => {
   );
 };
 
-export const WithForwardedRefPill: ComponentStory<typeof Select> = () => {
-  const buttonRef = useRef<HTMLButtonElement | null>(null);
+// export const WithForwardedRefPill: ComponentStory<typeof Select> = () => {
+//   const buttonRef = useRef<HTMLButtonElement | null>(null);
 
-  const focusButton = () => {
-    buttonRef.current?.focus();
-  };
+//   const focusButton = () => {
+//     buttonRef.current?.focus();
+//   };
 
-  return (
-    <div>
-      <Button onClick={focusButton}>Focus</Button>
-      <Box mt={2}>
-        <Select
-          name="my-select"
-          trigger={
-            <Select.TriggerPill ref={buttonRef}>
-              <Select.ValueDisplay placeholder="Select a option..."></Select.ValueDisplay>
-              <Select.Arrow />
-            </Select.TriggerPill>
-          }
-        >
-          {options.map((option) => (
-            <Select.Option key={option.value} value={option.value} label={option.label} />
-          ))}
-        </Select>
-      </Box>
-    </div>
-  );
-};
+//   return (
+//     <div>
+//       <Button onClick={focusButton}>Focus</Button>
+//       <Box mt={2}>
+//         <Select
+//           name="my-select"
+//           trigger={
+//             <Select.TriggerPill ref={buttonRef}>
+//               <Select.ValueDisplay placeholder="Select a option..."></Select.ValueDisplay>
+//               <Select.Arrow />
+//             </Select.TriggerPill>
+//           }
+//         >
+//           {options.map((option) => (
+//             <Select.Option key={option.value} value={option.value} label={option.label} />
+//           ))}
+//         </Select>
+//       </Box>
+//     </div>
+//   );
+// };
