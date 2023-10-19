@@ -13,7 +13,7 @@ import { TriggerPill } from './TriggerPill';
 import { ValueDisplay } from './ValueDisplay';
 import { ValueDisplayMultiSelect } from './ValueDisplayMultiSelect';
 
-const SelectComponent = forwardRef<HTMLButtonElement, Props>(function SelectComponent(
+const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(function SelectComponent(
   props: Props,
   ref: ForwardedRef<HTMLButtonElement>,
 ) {
@@ -91,9 +91,7 @@ type Components = {
   ValueDisplayMultiSelect: typeof ValueDisplayMultiSelect;
 };
 
-type SelectType = typeof SelectComponent & Components;
-
-export const Select = SelectComponent as SelectType;
+export const Select = SelectWithForwardRef as typeof SelectWithForwardRef & Components;
 
 Select.Arrow = Arrow;
 Select.Group = Group;
