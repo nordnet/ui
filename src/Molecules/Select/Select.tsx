@@ -3,12 +3,17 @@ import useMuiSelect, { SelectProvider as MuiSelectProvider } from '@mui/base/use
 import { FadedScroll } from '../..';
 import { HiddenSelect } from './HiddenSelect';
 import { ListContainer, Listbox, ListboxContainer, Root } from './Select.styles';
+import { SelectProvider } from './useSelect';
 import { Props } from './Select.types';
-import { ValueDisplay } from './ValueDisplay';
+import { Arrow } from './Arrow';
+import { Group } from './Group';
+import { Option } from './Option';
 import { Trigger } from './Trigger';
-import { Arrow, SelectProvider } from '.';
+import { TriggerPill } from './TriggerPill';
+import { ValueDisplay } from './ValueDisplay';
+import { ValueDisplayMultiSelect } from './ValueDisplayMultiSelect';
 
-export const Select = forwardRef<HTMLButtonElement, Props>(function SelectComponent(
+const SelectComponent = forwardRef<HTMLButtonElement, Props>(function SelectComponent(
   props: Props,
   ref: ForwardedRef<HTMLButtonElement>,
 ) {
@@ -75,3 +80,25 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
     </SelectProvider>
   );
 });
+
+type Components = {
+  Arrow: typeof Arrow;
+  Group: typeof Group;
+  Option: typeof Option;
+  Trigger: typeof Trigger;
+  TriggerPill: typeof TriggerPill;
+  ValueDisplay: typeof ValueDisplay;
+  ValueDisplayMultiSelect: typeof ValueDisplayMultiSelect;
+};
+
+type SelectType = typeof SelectComponent & Components;
+
+export const Select = SelectComponent as SelectType;
+
+Select.Arrow = Arrow;
+Select.Group = Group;
+Select.Option = Option;
+Select.Trigger = Trigger;
+Select.TriggerPill = TriggerPill;
+Select.ValueDisplay = ValueDisplay;
+Select.ValueDisplayMultiSelect = ValueDisplayMultiSelect;

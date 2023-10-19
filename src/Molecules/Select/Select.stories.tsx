@@ -3,8 +3,7 @@ import React, { useRef, useState } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Typography, Flag, Flexbox, FormField, Button, Box } from '../..';
 import { Display } from '../../common/Display';
-import { Arrow, Select, Option, Group, TriggerPill, ValueDisplayMultiSelect } from '.';
-import { ValueDisplay } from './ValueDisplay';
+import { Select } from '.';
 
 const options = [
   {
@@ -67,7 +66,7 @@ export default {
 export const Primary: ComponentStory<typeof Select> = () => (
   <Select name="my-select" placeholder="Select a option...">
     {options.map((option) => (
-      <Option key={option.value} value={option.value} label={option.label} />
+      <Select.Option key={option.value} value={option.value} label={option.label} />
     ))}
   </Select>
 );
@@ -75,7 +74,7 @@ export const Primary: ComponentStory<typeof Select> = () => (
 export const CustomOption: ComponentStory<typeof Select> = () => (
   <Select name="my-select" placeholder="Select a country...">
     {countryOptions.map((option) => (
-      <Option key={option.value} value={option.value} label={option.label}>
+      <Select.Option key={option.value} value={option.value} label={option.label}>
         <Flexbox container alignItems="center" gap={2}>
           <Flexbox item>
             <Flag country={option.value} size="m" />
@@ -84,7 +83,7 @@ export const CustomOption: ComponentStory<typeof Select> = () => (
             <Typography type="primary">{option.label}</Typography>
           </Flexbox>
         </Flexbox>
-      </Option>
+      </Select.Option>
     ))}
   </Select>
 );
@@ -97,7 +96,7 @@ export const DifferentSizes: ComponentStory<typeof Select> = () => (
         component: (
           <Select name="my-select" size="m" placeholder="Select a option...">
             {options.map((option) => (
-              <Option key={`${option.value}-m`} value={option.value} label={option.label} />
+              <Select.Option key={`${option.value}-m`} value={option.value} label={option.label} />
             ))}
           </Select>
         ),
@@ -107,7 +106,7 @@ export const DifferentSizes: ComponentStory<typeof Select> = () => (
         component: (
           <Select name="my-small-select" size="s" placeholder="Select a option...">
             {options.map((option) => (
-              <Option key={`${option.value}-s`} value={option.value} label={option.label} />
+              <Select.Option key={`${option.value}-s`} value={option.value} label={option.label} />
             ))}
           </Select>
         ),
@@ -120,7 +119,7 @@ export const WithFormField: ComponentStory<typeof Select> = () => (
   <FormField label="Label" required extraInfo="Extra info">
     <Select name="my-select" placeholder="Select a option...">
       {options.map((option) => (
-        <Option key={option.value} value={option.value} label={option.label} />
+        <Select.Option key={option.value} value={option.value} label={option.label} />
       ))}
     </Select>
   </FormField>
@@ -130,7 +129,7 @@ export const WithError: ComponentStory<typeof Select> = () => (
   <FormField error="Error message" label="Label">
     <Select name="my-select" placeholder="Select a option..." hasError>
       {options.map((option) => (
-        <Option key={option.value} value={option.value} label={option.label} />
+        <Select.Option key={option.value} value={option.value} label={option.label} />
       ))}
     </Select>
   </FormField>
@@ -139,23 +138,23 @@ export const WithError: ComponentStory<typeof Select> = () => (
 export const Disabled: ComponentStory<typeof Select> = () => (
   <Select name="my-select" placeholder="Select a option..." disabled>
     {options.map((option) => (
-      <Option key={option.value} value={option.value} label={option.label} />
+      <Select.Option key={option.value} value={option.value} label={option.label} />
     ))}
   </Select>
 );
 
 export const GroupedOptions: ComponentStory<typeof Select> = () => (
   <Select name="my-select" placeholder="Select a option...">
-    <Group label="First Group">
+    <Select.Group label="First Group">
       {options.map((option) => (
-        <Option key={option.value} value={option.value} label={option.label} />
+        <Select.Option key={option.value} value={option.value} label={option.label} />
       ))}
-    </Group>
-    <Group label="Second Group">
+    </Select.Group>
+    <Select.Group label="Second Group">
       {otherOptions.map((option) => (
-        <Option key={option.value} value={option.value} label={option.label} />
+        <Select.Option key={option.value} value={option.value} label={option.label} />
       ))}
-    </Group>
+    </Select.Group>
   </Select>
 );
 
@@ -163,7 +162,7 @@ export const MultiSelectUnControlled: ComponentStory<typeof Select> = () => {
   return (
     <Select name="my-select" multiple>
       {options.map((option) => (
-        <Option key={option.value} value={option.value} label={option.label} multiple />
+        <Select.Option key={option.value} value={option.value} label={option.label} multiple />
       ))}
     </Select>
   );
@@ -178,7 +177,7 @@ export const MultiSelect: ComponentStory<typeof Select> = () => {
       multiple
       onChange={(e, value) => setSelectedCount(value ? value.length : 0)}
       valueDisplay={
-        <ValueDisplayMultiSelect
+        <Select.ValueDisplayMultiSelect
           label={selectedCount > 1 ? 'Colors' : 'Color'}
           placeholder="Select a value..."
           selectedCount={selectedCount}
@@ -186,7 +185,7 @@ export const MultiSelect: ComponentStory<typeof Select> = () => {
       }
     >
       {options.map((option) => (
-        <Option key={option.value} value={option.value} label={option.label} multiple />
+        <Select.Option key={option.value} value={option.value} label={option.label} multiple />
       ))}
     </Select>
   );
@@ -202,23 +201,23 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
       placeholder="Select a option..."
       onChange={(e, value) => setSelectedCount(value ? value.length : 0)}
       valueDisplay={
-        <ValueDisplayMultiSelect
+        <Select.ValueDisplayMultiSelect
           label={selectedCount > 1 ? 'Colors' : 'Color'}
           placeholder="Select a value..."
           selectedCount={selectedCount}
         />
       }
     >
-      <Group label="First Group">
+      <Select.Group label="First Group">
         {options.map((option) => (
-          <Option key={option.value} value={option.value} label={option.label} multiple />
+          <Select.Option key={option.value} value={option.value} label={option.label} multiple />
         ))}
-      </Group>
-      <Group label="Second Group">
+      </Select.Group>
+      <Select.Group label="Second Group">
         {otherOptions.map((option) => (
-          <Option key={option.value} value={option.value} label={option.label} multiple />
+          <Select.Option key={option.value} value={option.value} label={option.label} multiple />
         ))}
-      </Group>
+      </Select.Group>
     </Select>
   );
 };
@@ -228,14 +227,14 @@ export const WithPillShape: ComponentStory<typeof Select> = () => (
     name="my-select"
     placeholder="Select a option..."
     trigger={
-      <TriggerPill>
-        <ValueDisplay placeholder="Select a option..."></ValueDisplay>
-        <Arrow />
-      </TriggerPill>
+      <Select.TriggerPill>
+        <Select.ValueDisplay placeholder="Select a option..."></Select.ValueDisplay>
+        <Select.Arrow />
+      </Select.TriggerPill>
     }
   >
     {options.map((option) => (
-      <Option key={option.value} value={option.value} label={option.label} />
+      <Select.Option key={option.value} value={option.value} label={option.label} />
     ))}
   </Select>
 );
@@ -253,7 +252,7 @@ export const WithForwardedRef: ComponentStory<typeof Select> = () => {
       <Box mt={2}>
         <Select name="my-select" placeholder="Select a option..." ref={buttonRef}>
           {options.map((option) => (
-            <Option key={option.value} value={option.value} label={option.label} />
+            <Select.Option key={option.value} value={option.value} label={option.label} />
           ))}
         </Select>
       </Box>
@@ -275,14 +274,14 @@ export const WithForwardedRefPill: ComponentStory<typeof Select> = () => {
         <Select
           name="my-select"
           trigger={
-            <TriggerPill ref={buttonRef}>
-              <ValueDisplay placeholder="Select a option..."></ValueDisplay>
-              <Arrow />
-            </TriggerPill>
+            <Select.TriggerPill ref={buttonRef}>
+              <Select.ValueDisplay placeholder="Select a option..."></Select.ValueDisplay>
+              <Select.Arrow />
+            </Select.TriggerPill>
           }
         >
           {options.map((option) => (
-            <Option key={option.value} value={option.value} label={option.label} />
+            <Select.Option key={option.value} value={option.value} label={option.label} />
           ))}
         </Select>
       </Box>
