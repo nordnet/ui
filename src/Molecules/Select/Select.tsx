@@ -25,6 +25,7 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
     valueDisplay: valueDisplayFromProps,
     trigger: triggerFromProps,
     width = 50,
+    id,
   } = props;
   const listboxRef = React.useRef<HTMLUListElement>(null);
   const [isOpen, setIsOpen] = React.useState(false);
@@ -51,7 +52,7 @@ export const Select = forwardRef<HTMLButtonElement, Props>(function SelectCompon
       getOptionMetadata={getOptionMetadata}
       value={value}
     >
-      <Root $width={width}>
+      <Root $width={width} data-testid={id}>
         {triggerFromProps || (
           <Trigger size={size} hasError={hasError} ref={ref}>
             {valueDisplayFromProps || <ValueDisplay placeholder={placeholder} />}

@@ -60,7 +60,7 @@ export function Option(props: Props) {
   });
 
   return (
-    <Item {...getRootProps()} $highlighted={highlighted} className={className}>
+    <Item {...getRootProps()} $highlighted={highlighted} className={className} data-testid={value}>
       <Flexbox
         container
         alignItems="center"
