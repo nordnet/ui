@@ -159,6 +159,16 @@ export const GroupedOptions: ComponentStory<typeof Select> = () => (
   </Select>
 );
 
+export const MultiSelectUnControlled: ComponentStory<typeof Select> = () => {
+  return (
+    <Select name="my-select" multiple>
+      {options.map((option) => (
+        <Option key={option.value} value={option.value} label={option.label} multiple />
+      ))}
+    </Select>
+  );
+};
+
 export const MultiSelect: ComponentStory<typeof Select> = () => {
   const [selectedCount, setSelectedCount] = useState(0);
 
