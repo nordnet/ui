@@ -9,7 +9,6 @@ import { Arrow } from './Arrow';
 import { Group } from './Group';
 import { Option } from './Option';
 import { Trigger } from './Trigger';
-import { TriggerPill } from './TriggerPill';
 import { ValueDisplay } from './ValueDisplay';
 import { ValueDisplayMultiSelect } from './ValueDisplayMultiSelect';
 
@@ -86,7 +85,6 @@ type Components = {
   Group: typeof Group;
   Option: typeof Option;
   Trigger: typeof Trigger;
-  TriggerPill: typeof TriggerPill;
   ValueDisplay: typeof ValueDisplay;
   ValueDisplayMultiSelect: typeof ValueDisplayMultiSelect;
 };
@@ -97,6 +95,5 @@ Select.Arrow = Arrow;
 Select.Group = Group;
 Select.Option = Option;
 Select.Trigger = Trigger;
-Select.TriggerPill = TriggerPill;
 Select.ValueDisplay = ValueDisplay;
 Select.ValueDisplayMultiSelect = ValueDisplayMultiSelect;
