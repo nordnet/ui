@@ -1,3 +1,15 @@
+# [13.0.0](https://github.com/nordnet/ui/compare/v12.50.1...v13.0.0) (2023-10-19)
+
+
+### Bug Fixes
+
+* remove old and deprecated select ([675c44d](https://github.com/nordnet/ui/commit/675c44d))
+
+
+### BREAKING CHANGES
+
+* The old and deprecated Select is removed in favor of new Select component
+
 ## [12.50.1](https://github.com/nordnet/ui/compare/v12.50.0...v12.50.1) (2023-10-19)
 
 
