@@ -1,17 +1,12 @@
 import React, { ReactElement } from 'react';
+import { Paddings as BoxPaddings } from 'Atoms/Box/Box.types';
 import { Props as NumberProps } from '../Number/Number.types';
 import { Props as FlexboxProps } from '../../Atoms/Flexbox/Flexbox.types';
 
 export type PartialNumberProps = Omit<NumberProps, 'value'>;
 
-type ImageProps = {
-  src: string;
-  alt: string;
-};
-
 export type Props = {
   label: string | ReactElement;
-  icon?: ReactElement;
   /**
    * @weight
     Should be number 0-100
@@ -20,5 +15,6 @@ export type Props = {
   children?: React.ReactNode;
   delay?: number;
   labelProps?: FlexboxProps;
-  imageProps?: ImageProps;
+  avatarPadding?: BoxPaddings;
+  avatarComponent?: ReactElement;
 };

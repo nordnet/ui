@@ -1,11 +1,23 @@
-# [12.51.0-beta.2](https://github.com/nordnet/ui/compare/v12.51.0-beta.1...v12.51.0-beta.2) (2023-10-18)
+# [13.0.0](https://github.com/nordnet/ui/compare/v12.50.1...v13.0.0) (2023-10-19)
 
 
 ### Bug Fixes
 
-* css selectors with styled-components v6 ([#1436](https://github.com/nordnet/ui/issues/1436)) ([0f909e7](https://github.com/nordnet/ui/commit/0f909e7))
+* remove old and deprecated select ([675c44d](https://github.com/nordnet/ui/commit/675c44d))
 
-# [12.51.0-beta.1](https://github.com/nordnet/ui/compare/v12.50.0...v12.51.0-beta.1) (2023-10-18)
+
+### BREAKING CHANGES
+
+* The old and deprecated Select is removed in favor of new Select component
+
+## [12.50.1](https://github.com/nordnet/ui/compare/v12.50.0...v12.50.1) (2023-10-19)
+
+
+### Performance Improvements
+
+* remove old select ([#1438](https://github.com/nordnet/ui/issues/1438)) ([b85ca32](https://github.com/nordnet/ui/commit/b85ca32))
+
+# [12.50.0](https://github.com/nordnet/ui/compare/v12.49.2...v12.50.0) (2023-10-13)
 
 
 ### Features
