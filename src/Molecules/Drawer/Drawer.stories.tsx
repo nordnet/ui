@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
+import { Meta } from '@storybook/react';
 import styled from 'styled-components';
 import Box from '../../Atoms/Box';
 import {
@@ -17,12 +18,12 @@ import {
   PageWrapper,
 } from '../../index';
 
-export default {
+const meta: Meta<typeof Drawer> = {
+  component: Drawer,
   title: 'Molecules / Drawer',
-  parameters: {
-    component: Drawer,
-  },
 };
+
+export default meta;
 
 const contentSmall = (
   <Typography type="primary" as="p">

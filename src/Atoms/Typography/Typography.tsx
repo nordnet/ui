@@ -1,9 +1,8 @@
 import React from 'react';
 import R from 'ramda';
-import styled, { ThemedStyledProps } from 'styled-components';
-import { Theme } from '../../theme/theme.types';
+import styled, { ExecutionContext } from 'styled-components';
 import { FontProps, Props, Types } from './Typography.types';
-import { assert, pickAriaAttributes } from '../../common/utils';
+import { assert, getAriaProps } from '../../common/utils';
 
 const WEIGHTS = {
   regular: 400,
@@ -14,7 +13,7 @@ const WEIGHTS = {
 
 const SMALL_DEVICE_BP = 'sm';
 
-const getColor = (props: ThemedStyledProps<Props, Theme>) => {
+const getColor = (props: ExecutionContext & Props) => {
   const { color, theme } = props;
 
   if (color && typeof color === 'function') {
@@ -39,7 +38,7 @@ export const TYPOGRAPHY_TYPES: Record<Types, Types> = {
   hero: 'hero',
 };
 
-const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
+const getTypeStyles = (props: ExecutionContext & Props) => {
   const { type, weight, theme, lineHeight } = props;
   let mobile: FontProps;
   let desktop: FontProps = null;
@@ -206,7 +205,7 @@ export const Typography: React.FC<Props> = React.forwardRef<HTMLElement, Props>(
       weight={weight}
       textAlign={textAlign}
       whiteSpace={whiteSpace}
-      {...pickAriaAttributes(props as Record<string, any>)}
+      {...getAriaProps(props)}
     >
       {children}
     </StyledTypography>

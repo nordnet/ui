@@ -8,10 +8,10 @@ const StyledTd = styled.td<Props>`
   padding: ${p => p.theme.spacing.unit(2)}px ${p => p.theme.spacing.unit(1)}px;
   text-align: ${p => p.textAlign};
 
-  :first-child {
+  &:first-child {
     padding-left: 0;
   }
-  :last-child {
+  &:last-child {
     padding-right: 0;
   }
 
