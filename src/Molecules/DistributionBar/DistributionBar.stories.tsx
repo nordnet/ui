@@ -13,7 +13,7 @@ const StyledFlexbox = styled(Flexbox)`
 `;
 
 const StyledImage = styled.img`
-  width: 16px;
+  width: 24px;
   border-radius: 50%;
 `;
 
@@ -96,10 +96,11 @@ export const Showcase = () => {
           ></DistributionBar>
         </Flexbox>
         <Flexbox item container gap={2} direction="column">
-          <Typography>Custom image</Typography>
+          <Typography>Custom large image with adjusted padding</Typography>
           <DistributionBar
             label="Cool cat company"
-            weight={90}
+            weight={0}
+            avatarPadding={{ pl: 1 }}
             avatarComponent={
               <Flexbox container alignItems="center" justifyContent="center" height="100%">
                 <StyledImage
@@ -112,11 +113,25 @@ export const Showcase = () => {
           <DistributionBar
             label="Tesla"
             weight={60}
+            avatarPadding={{ pl: 1 }}
             avatarComponent={
               <Flexbox container alignItems="center" justifyContent="center" height="100%">
                 <StyledImage
                   alt="Image of Tesla logo"
                   src="https://cdn.pixabay.com/photo/2022/08/25/00/32/tesla-logo-7408969_1280.png"
+                />
+              </Flexbox>
+            }
+          ></DistributionBar>
+          <DistributionBar
+            label="Apple"
+            weight={0}
+            avatarPadding={{ pl: 1 }}
+            avatarComponent={
+              <Flexbox container alignItems="center" justifyContent="center" height="100%">
+                <StyledImage
+                  alt="Image of Apple logo"
+                  src="https://banner2.cleanpng.com/20180330/oke/kisspng-apple-logo-computer-icons-apple-logo-5abdfcd3232e52.3373911715224004671441.jpg"
                 />
               </Flexbox>
             }
