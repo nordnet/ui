@@ -12,6 +12,11 @@ const StyledFlexbox = styled(Flexbox)`
   min-width: 0;
 `;
 
+const StyledImage = styled.img`
+  width: 16px;
+  border-radius: 50%;
+`;
+
 export const Showcase = () => {
   const instrumentList = [
     {
@@ -60,7 +65,9 @@ export const Showcase = () => {
                   )
                 }
                 weight={(item.weight / highestValue) * 100}
-                icon={item.country ? <Flag size="m" country={item.country} /> : undefined}
+                avatarComponent={
+                  item.country ? <Flag size="m" country={item.country} /> : undefined
+                }
               >
                 <StyledFlexbox container>
                   <TruncateWithTooltip
@@ -82,25 +89,37 @@ export const Showcase = () => {
 
         <Flexbox item>
           <Typography>Custom icon</Typography>
-          <DistributionBar label="Label" weight={10} icon={<Icon.Global16 />}></DistributionBar>
+          <DistributionBar
+            label="Label"
+            weight={10}
+            avatarComponent={<Icon.Global16 />}
+          ></DistributionBar>
         </Flexbox>
         <Flexbox item container gap={2} direction="column">
           <Typography>Custom image</Typography>
           <DistributionBar
             label="Cool cat company"
             weight={90}
-            imageProps={{
-              src: 'https://shareville-static-test.s3.amazonaws.com/img/avatars/cat_120x120.jpg',
-              alt: 'Image of shareville cat',
-            }}
+            avatarComponent={
+              <Flexbox container alignItems="center" justifyContent="center" height="100%">
+                <StyledImage
+                  alt="Image of shareville cat"
+                  src="https://shareville-static-test.s3.amazonaws.com/img/avatars/cat_120x120.jpg"
+                />
+              </Flexbox>
+            }
           ></DistributionBar>
           <DistributionBar
             label="Tesla"
             weight={60}
-            imageProps={{
-              src: 'https://cdn.pixabay.com/photo/2022/08/25/00/32/tesla-logo-7408969_1280.png',
-              alt: 'Company teslas logo',
-            }}
+            avatarComponent={
+              <Flexbox container alignItems="center" justifyContent="center" height="100%">
+                <StyledImage
+                  alt="Image of Tesla logo"
+                  src="https://cdn.pixabay.com/photo/2022/08/25/00/32/tesla-logo-7408969_1280.png"
+                />
+              </Flexbox>
+            }
           ></DistributionBar>
         </Flexbox>
 
@@ -113,7 +132,7 @@ export const Showcase = () => {
               </Link>
             }
             weight={0}
-            icon={<Flag size="m" country="SE" />}
+            avatarComponent={<Flag size="m" country="SE" />}
           ></DistributionBar>
         </Flexbox>
 
@@ -122,7 +141,7 @@ export const Showcase = () => {
           <DistributionBar
             label="Loooooooooooooooooooong naaaaaaaaaaaame"
             weight={0}
-            icon={<Flag size="m" country="SE" />}
+            avatarComponent={<Flag size="m" country="SE" />}
           >
             <StyledFlexbox container justifyContent="flex-end">
               <TruncateWithTooltip label={<Number value={10000000000000} currency="SEK" />}>
@@ -139,7 +158,7 @@ export const Showcase = () => {
           <DistributionBar
             label="Instrument name 1"
             weight={69}
-            icon={<Flag size="m" country="SE" />}
+            avatarComponent={<Flag size="m" country="SE" />}
           >
             <Flexbox container width="50%" justifyContent="space-between">
               <Flexbox item>
@@ -163,7 +182,7 @@ export const Showcase = () => {
               },
             }}
             weight={70}
-            icon={<Flag size="m" country="SE" />}
+            avatarComponent={<Flag size="m" country="SE" />}
           >
             <Flexbox container>
               <div>GAV</div>
@@ -181,7 +200,7 @@ export const Showcase = () => {
                 label={`Instrument name ${i + 1}`}
                 weight={Math.floor(Math.random() * 101)}
                 delay={0 + i / 5}
-                icon={<Flag size="m" country="SE" />}
+                avatarComponent={<Flag size="m" country="SE" />}
               >
                 <Flexbox container width="81px" justifyContent="flex-end">
                   <Number value={Math.floor(Math.random() * 101)} percentage decimals={2} />
