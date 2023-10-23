@@ -37,8 +37,3 @@ export const Bar = styled.div`
 export const StyledDot = styled(Icon.Dot8)`
   margin: 0 ${(p) => p.theme.spacing.unit(1)}px;
 `;
-
-export const StyledImage = styled.img`
-  width: 25px;
-  border-radius: 50%;
-`;
