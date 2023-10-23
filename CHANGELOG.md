@@ -1,36 +1,31 @@
-# [12.51.0-beta.3](https://github.com/nordnet/ui/compare/v12.51.0-beta.2...v12.51.0-beta.3) (2023-10-20)
-
-
-### Performance Improvements
-
-* remove old select ([#1438](https://github.com/nordnet/ui/issues/1438)) ([#1440](https://github.com/nordnet/ui/issues/1440)) ([b66e0af](https://github.com/nordnet/ui/commit/b66e0af))
-
-# [13.0.0](https://github.com/nordnet/ui/compare/v12.50.1...v13.0.0) (2023-10-19)
-
-
-### Bug Fixes
-
-* remove old and deprecated select ([675c44d](https://github.com/nordnet/ui/commit/675c44d))
-
-
-### BREAKING CHANGES
-
-* The old and deprecated Select is removed in favor of new Select component
-
-## [12.50.1](https://github.com/nordnet/ui/compare/v12.50.0...v12.50.1) (2023-10-19)
-
-
-### Performance Improvements
-
-* remove old select ([#1438](https://github.com/nordnet/ui/issues/1438)) ([b85ca32](https://github.com/nordnet/ui/commit/b85ca32))
-
-# [12.50.0](https://github.com/nordnet/ui/compare/v12.49.2...v12.50.0) (2023-10-13)
-
+# [13.1.0](https://github.com/nordnet/ui/compare/v13.0.0...v13.1.0) (2023-10-23)
 
 ### Features
 
-* upgrade to styled-components v6 ([#1398](https://github.com/nordnet/ui/issues/1398)) ([0c93256](https://github.com/nordnet/ui/commit/0c93256))
-* upgrade to styled-components v6 ([#1398](https://github.com/nordnet/ui/issues/1398)) ([#1432](https://github.com/nordnet/ui/issues/1432)) ([97f6539](https://github.com/nordnet/ui/commit/97f6539))
+- 🎸 Adding IconPadding to DistributionBar component ([#1442](https://github.com/nordnet/ui/issues/1442)) ([0cb1679](https://github.com/nordnet/ui/commit/0cb1679))
+
+# [13.0.0](https://github.com/nordnet/ui/compare/v12.50.1...v13.0.0) (2023-10-19)
+
+### Bug Fixes
+
+- remove old and deprecated select ([675c44d](https://github.com/nordnet/ui/commit/675c44d))
+
+### BREAKING CHANGES
+
+- The old and deprecated Select is removed in favor of new Select component
+
+## [12.50.1](https://github.com/nordnet/ui/compare/v12.50.0...v12.50.1) (2023-10-19)
+
+### Performance Improvements
+
+- remove old select ([#1438](https://github.com/nordnet/ui/issues/1438)) ([b85ca32](https://github.com/nordnet/ui/commit/b85ca32))
+
+# [12.50.0](https://github.com/nordnet/ui/compare/v12.49.2...v12.50.0) (2023-10-13)
+
+### Features
+
+- upgrade to styled-components v6 ([#1398](https://github.com/nordnet/ui/issues/1398)) ([0c93256](https://github.com/nordnet/ui/commit/0c93256))
+- upgrade to styled-components v6 ([#1398](https://github.com/nordnet/ui/issues/1398)) ([#1432](https://github.com/nordnet/ui/issues/1432)) ([97f6539](https://github.com/nordnet/ui/commit/97f6539))
 
 # [12.50.0](https://github.com/nordnet/ui/compare/v12.49.2...v12.50.0) (2023-10-13)
 

@@ -7,6 +7,8 @@ export type PartialNumberProps = Omit<NumberProps, 'value'>;
 
 export type Props = {
   label: string | ReactElement;
+  icon?: ReactElement;
+  iconPadding?: BoxPaddings;
   /**
    * @weight
     Should be number 0-100
@@ -15,6 +17,4 @@ export type Props = {
   children?: React.ReactNode;
   delay?: number;
   labelProps?: FlexboxProps;
-  avatarPadding?: BoxPaddings;
-  avatarComponent?: ReactElement;
 };

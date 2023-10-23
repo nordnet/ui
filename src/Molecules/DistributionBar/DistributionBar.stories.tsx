@@ -100,8 +100,8 @@ export const Showcase = () => {
           <DistributionBar
             label="Cool cat company"
             weight={0}
-            avatarPadding={{ pl: 1 }}
-            avatarComponent={
+            iconPadding={{ pl: 1 }}
+            icon={
               <Flexbox container alignItems="center" justifyContent="center" height="100%">
                 <StyledImage
                   alt="Image of shareville cat"
@@ -112,9 +112,9 @@ export const Showcase = () => {
           ></DistributionBar>
           <DistributionBar
             label="Tesla"
-            weight={60}
-            avatarPadding={{ pl: 1 }}
-            avatarComponent={
+            weight={100}
+            iconPadding={{ pl: 1 }}
+            icon={
               <Flexbox container alignItems="center" justifyContent="center" height="100%">
                 <StyledImage
                   alt="Image of Tesla logo"
@@ -126,8 +126,8 @@ export const Showcase = () => {
           <DistributionBar
             label="Apple"
             weight={0}
-            avatarPadding={{ pl: 1 }}
-            avatarComponent={
+            iconPadding={{ pl: 1 }}
+            icon={
               <Flexbox container alignItems="center" justifyContent="center" height="100%">
                 <StyledImage
                   alt="Image of Apple logo"
