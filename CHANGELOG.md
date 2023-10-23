@@ -1,3 +1,10 @@
+# [13.1.0](https://github.com/nordnet/ui/compare/v13.0.0...v13.1.0) (2023-10-23)
+
+
+### Features
+
+* 🎸 Adding IconPadding to DistributionBar component ([#1442](https://github.com/nordnet/ui/issues/1442)) ([0cb1679](https://github.com/nordnet/ui/commit/0cb1679))
+
 # [13.0.0](https://github.com/nordnet/ui/compare/v12.50.1...v13.0.0) (2023-10-19)
 
 
