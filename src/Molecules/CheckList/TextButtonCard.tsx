@@ -6,11 +6,18 @@ import { ButtonProps } from '../Button/components/BaseButton/Button.types';
 const StyledButton = styled(Button)`
   border: 1px solid ${(t) => t.theme.colorTokens.neutral.border_weak};
   border-radius: ${(t) => t.theme.spacing.unit(1)}px;
+  box-sizing: border-box;
   justify-content: flex-start;
   text-align: left;
   padding: ${(t) => t.theme.spacing.unit(3)}px;
   :hover {
     text-decoration: none;
+    border: 1px solid ${(t) => t.theme.colorTokens.neutral.border_hover};
+    background-color: ${(t) => t.theme.colorTokens.action.background_weak};
+  }
+  :active {
+    outline: 2px solid ${(t) => t.theme.colorTokens.action.border_default};
+    background-color: ${(t) => t.theme.colorTokens.action.background_weak};
   }
 `;
 
