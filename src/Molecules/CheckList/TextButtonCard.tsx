@@ -10,6 +10,9 @@ const StyledButton = styled(Button)`
   justify-content: flex-start;
   text-align: left;
   padding: ${(t) => t.theme.spacing.unit(3)}px;
+  > span {
+    width: 100%;
+  }
   :hover {
     text-decoration: none;
     border: 1px solid ${(t) => t.theme.colorTokens.neutral.border_hover};
@@ -89,7 +92,9 @@ const TextButtonCard: FC<React.PropsWithChildren<TextButtonCardProps>> = ({
         )}
 
         {/* Status icon */}
-        {statusIcon}
+        <Flexbox item shrink={0}>
+          {statusIcon}
+        </Flexbox>
       </Flexbox>
       {children}
     </Flexbox>
