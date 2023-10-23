@@ -1,3 +1,10 @@
+## [13.1.1](https://github.com/nordnet/ui/compare/v13.1.0...v13.1.1) (2023-10-23)
+
+
+### Bug Fixes
+
+* remove commitlint, also now no use for husky ([#1439](https://github.com/nordnet/ui/issues/1439)) ([22aab78](https://github.com/nordnet/ui/commit/22aab78))
+
 # [13.1.0](https://github.com/nordnet/ui/compare/v13.0.0...v13.1.0) (2023-10-23)
 
 
