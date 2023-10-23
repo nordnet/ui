@@ -6,7 +6,7 @@ import { Props } from './DistributionBar.types';
 import { Bar, Item, StyledDot } from './DistributionBar.styled';
 
 export const DistributionBar: React.FC<Props> = ({
-  avatarComponent,
+  avatar,
   avatarPadding,
   label,
   labelProps,
@@ -25,7 +25,7 @@ export const DistributionBar: React.FC<Props> = ({
     >
       <Item item container alignItems="center" gap={3} height="100%" {...labelProps}>
         <Box pl={avatarPadding?.pl || 2} {...avatarPadding}>
-          {avatarComponent || <StyledDot color={(t) => t.color.buttonBackgroundHoverPrimary} />}
+          {avatar || <StyledDot color={(t) => t.color.buttonBackgroundHoverPrimary} />}
         </Box>
         <TruncateWithTooltip label={label}>{label}</TruncateWithTooltip>
         <Bar

@@ -16,5 +16,5 @@ export type Props = {
   delay?: number;
   labelProps?: FlexboxProps;
   avatarPadding?: BoxPaddings;
-  avatarComponent?: ReactElement;
+  avatar?: ReactElement;
 };
