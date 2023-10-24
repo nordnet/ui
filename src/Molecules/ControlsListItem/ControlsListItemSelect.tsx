@@ -102,6 +102,7 @@ const ControlsListItemSelect: React.FC<Props> = ({
               listWidth={listWidth}
               disabled={disabled}
               preventScroll
+              placement={placement}
             />
           </StyledDiv>
         </Grid.Item>
