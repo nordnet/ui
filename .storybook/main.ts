@@ -1,27 +1,33 @@
-const path = require('path');
+import type { StorybookConfig } from '@storybook/react-webpack5';
+import path from 'path';
+
 const srcPath = path.join(process.cwd(), 'src');
 const storiesDir = process.env.STORYBOOK_DIRECTORY
   ? path.join(srcPath, process.env.STORYBOOK_DIRECTORY)
   : srcPath;
 
-module.exports = {
+const config: StorybookConfig = {
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {},
+  },
   stories: ['../docs/**/*.stories.mdx', path.join(storiesDir, '**/*.stories.@(js|jsx|ts|tsx|mdx)')],
   addons: [
-    '@storybook/addon-essentials',
-    '@storybook/addon-storysource',
     '@storybook/addon-a11y',
+    '@storybook/addon-essentials',
     '@storybook/addon-links',
+    '@storybook/addon-storysource',
+    '@storybook/addon-themes',
     'storybook-addon-intl',
     'storybook-dark-mode',
   ],
-  framework: '@storybook/react',
-  core: {
-    builder: 'webpack5',
-  },
   docs: {
-    docsPage: 'automatic',
+    autodocs: true,
   },
-  features: {
-    postcss: false,
+  core: {
+    disableTelemetry: true,
   },
+  staticDirs: ['../static'],
 };
+
+export default config;
