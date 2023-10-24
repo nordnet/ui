@@ -11,7 +11,7 @@ const config: StorybookConfig = {
     name: '@storybook/react-webpack5',
     options: {},
   },
-  stories: ['../docs/**/*.stories.mdx', path.join(storiesDir, '**/*.stories.@(js|jsx|ts|tsx|mdx)')],
+  stories: ['../docs/**/*.mdx', path.join(storiesDir, '**/*.stories.@(js|jsx|ts|tsx)')],
   addons: [
     '@storybook/addon-a11y',
     '@storybook/addon-essentials',

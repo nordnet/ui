@@ -57,7 +57,7 @@ const preview: Preview = {
   parameters: {
     intl: {
       locales: ['sv', 'nb', 'da', 'fi', 'en'],
-      defaultLocale: 'en',
+      defaultLocale: 'sv',
       getMessages: () => {},
       getFormats: () => {},
       // Solves problem with snapshots for time component
@@ -69,6 +69,19 @@ const preview: Preview = {
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/,
+      },
+    },
+    options: {
+      storySort: {
+        order: [
+          'Design System',
+          'Atoms',
+          'Molecules',
+          'Organisms',
+          '*',
+          'DEPRECATED',
+          ['Atoms', 'Molecules', 'Organisms'],
+        ],
       },
     },
   },
