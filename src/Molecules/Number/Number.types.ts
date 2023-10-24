@@ -17,6 +17,7 @@ export type Props = {
    * @default false
    * */
   sign?: boolean;
+  maskValue?: boolean;
 };
 
 export type NumberComponent = React.FunctionComponent<Props>;

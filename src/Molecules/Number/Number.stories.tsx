@@ -172,6 +172,27 @@ invalidValue.story = {
   name: 'Invalid value',
 };
 
+export const maskValue = () => {
+  return (
+    <Display
+      items={[
+        {
+          title: 'maskValue',
+          component: <Number value={9999} sign maskValue />,
+        },
+        {
+          title: 'maskValue with currency',
+          component: <Number value={9999} maskValue currency="SEK" />,
+        },
+      ]}
+    />
+  );
+};
+
+maskValue.story = {
+  name: 'Number with masked value',
+};
+
 export const nullCurrency = () => {
   // @ts-ignore
   return <Number value={10} currency={null} />;
