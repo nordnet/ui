@@ -36,6 +36,7 @@ const ControlsListItemSelect: React.FC<Props> = ({
   justifyContent,
   listWidth,
   disabled,
+  placement,
 }) => {
   const customComponents = useMemo(
     () => ({
@@ -66,6 +67,7 @@ const ControlsListItemSelect: React.FC<Props> = ({
             listWidth={listWidth}
             disabled={disabled}
             preventScroll
+            placement={placement}
           />
         </StyledDiv>
       </Flexbox>
