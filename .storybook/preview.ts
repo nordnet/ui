@@ -1,6 +1,7 @@
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import type { Preview } from '@storybook/react';
 import ThemeDecorator from './theme.decorator';
+import DocsWrapper from './DocsWrapper';
 
 const customViewports = {
   tablet: {
@@ -58,6 +59,9 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/,
       },
+    },
+    docs: {
+      container: DocsWrapper,
     },
     options: {
       storySort: {
