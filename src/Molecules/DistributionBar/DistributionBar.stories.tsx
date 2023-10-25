@@ -12,6 +12,11 @@ const StyledFlexbox = styled(Flexbox)`
   min-width: 0;
 `;
 
+const StyledImage = styled.img`
+  width: 24px;
+  border-radius: 50%;
+`;
+
 export const Showcase = () => {
   const instrumentList = [
     {
@@ -83,6 +88,48 @@ export const Showcase = () => {
         <Flexbox item>
           <Typography>Custom icon</Typography>
           <DistributionBar label="Label" weight={10} icon={<Icon.Global16 />}></DistributionBar>
+        </Flexbox>
+        <Flexbox item container gap={2} direction="column">
+          <Typography>Custom large image with adjusted padding</Typography>
+          <DistributionBar
+            label="Cool cat company"
+            weight={0}
+            iconPadding={{ pl: 1 }}
+            icon={
+              <Flexbox container alignItems="center" justifyContent="center" height="100%">
+                <StyledImage
+                  alt="Image of shareville cat"
+                  src="https://shareville-static-test.s3.amazonaws.com/img/avatars/cat_120x120.jpg"
+                />
+              </Flexbox>
+            }
+          ></DistributionBar>
+          <DistributionBar
+            label="Tesla"
+            weight={100}
+            iconPadding={{ pl: 1 }}
+            icon={
+              <Flexbox container alignItems="center" justifyContent="center" height="100%">
+                <StyledImage
+                  alt="Image of Tesla logo"
+                  src="https://cdn.pixabay.com/photo/2022/08/25/00/32/tesla-logo-7408969_1280.png"
+                />
+              </Flexbox>
+            }
+          ></DistributionBar>
+          <DistributionBar
+            label="Apple"
+            weight={0}
+            iconPadding={{ pl: 1 }}
+            icon={
+              <Flexbox container alignItems="center" justifyContent="center" height="100%">
+                <StyledImage
+                  alt="Image of Apple logo"
+                  src="https://banner2.cleanpng.com/20180330/oke/kisspng-apple-logo-computer-icons-apple-logo-5abdfcd3232e52.3373911715224004671441.jpg"
+                />
+              </Flexbox>
+            }
+          ></DistributionBar>
         </Flexbox>
 
         <Flexbox item>

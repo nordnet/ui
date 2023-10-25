@@ -72,7 +72,7 @@ const getGapStyles = (theme: Theme, gap: Props['gap']) => {
   }
 
   if (typeof gap === 'number') {
-    gapStyle = `${theme.spacing.unit(gap)}px`;
+    gapStyle = `${theme.spacing.unit(gap)}px;`;
   } else if (typeof gap === 'string') {
     gapStyle = gap;
   } else {

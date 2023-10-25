@@ -28,22 +28,22 @@ export type Props = {
 };
 
 export type IndicatorProps = {
-  value: number;
-  valueColor?: string;
-  leftCollision: boolean;
-  rightCollision: boolean;
+  $value: number;
+  $valueColor?: string;
+  $leftCollision: boolean;
+  $rightCollision: boolean;
 };
 
 export type AverageLabelProps = {
-  averageValue?: number;
-  leftCollision: boolean;
-  rightCollision: boolean;
+  $averageValue?: number;
+  $leftCollision: boolean;
+  $rightCollision: boolean;
 };
 
 export type LineProps = {
-  value: number;
-  valueColor?: string;
-  averageValue?: number;
+  $value: number;
+  $valueColor?: string;
+  $averageValue?: number;
 };
 
 export type CheckCollision = (a: HTMLElement, b: HTMLElement) => boolean;

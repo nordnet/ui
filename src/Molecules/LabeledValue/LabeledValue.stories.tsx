@@ -41,7 +41,7 @@ integrationLabeledValueTitle1.story = {
 
 export const integrationLabeledValueWithPositiveDevelopmentAndCurrency = () => (
   <LabeledValue label="Development this year">
-    <Flexbox container direction="row" gutter={2}>
+    <Flexbox container direction="row" gap={2}>
       <Flexbox item>
         <Typography type="secondary" weight="bold">
           <Development value={9.2} icon percentage />
@@ -62,7 +62,7 @@ integrationLabeledValueWithPositiveDevelopmentAndCurrency.story = {
 
 export const integrationLabeledValueWithNegativeDevelopmentAndCurrency = () => (
   <LabeledValue label="Development this year">
-    <Flexbox container direction="row" gutter={2}>
+    <Flexbox container direction="row" gap={2}>
       <Flexbox item>
         <Typography type="secondary">
           <Development value={-9.2} icon percentage />

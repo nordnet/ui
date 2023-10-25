@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import styled from 'styled-components';
 import { Flexbox, Input, CssGrid as Grid, Typography } from '../..';
 
 import { ControlsListItemSelect as Props } from './ControlsListItem.types';
@@ -17,6 +18,12 @@ const GRID = {
   gutter: {row: 1, col: 2}
 }
 
+const StyledDiv = styled.div`
+  li + li {
+    border-top: none;
+  }
+`;
+
 const ControlsListItemSelect: React.FC<Props> = ({
   label,
   Icon,
@@ -29,6 +36,7 @@ const ControlsListItemSelect: React.FC<Props> = ({
   justifyContent,
   listWidth,
   disabled,
+  placement,
 }) => {
   const customComponents = useMemo(
     () => ({
@@ -45,37 +53,7 @@ const ControlsListItemSelect: React.FC<Props> = ({
         <Typography type="secondary" color={(t) => t.color.label}>
           {label}
         </Typography>
-        <Input.Select
-          id="control-list-item-select"
-          label={label}
-          components={customComponents}
-          onChange={onChange}
-          options={options}
-          listPosition="left"
-          fullWidth
-          hideLabel
-          noFormField
-          listWidth={listWidth}
-          disabled={disabled}
-        />
-      </Flexbox>
-    );
-  }
-
-  return (
-    <ControlsListItem disabled={disabled}>
-      <Grid.Container {...GRID}>
-        <Grid.Item area="icon" justify="start" align="center">
-          <>{Icon}</>
-        </Grid.Item>
-
-        <Grid.Item area="label" justify="start" align="center">
-          <Typography type="secondary" weight="bold">
-            {label}
-          </Typography>
-        </Grid.Item>
-
-        <Grid.Item area="button" justify="end" align="center">
+        <StyledDiv>
           <Input.Select
             id="control-list-item-select"
             label={label}
@@ -88,7 +66,45 @@ const ControlsListItemSelect: React.FC<Props> = ({
             noFormField
             listWidth={listWidth}
             disabled={disabled}
+            preventScroll
+            placement={placement}
           />
+        </StyledDiv>
+      </Flexbox>
+    );
+  }
+
+  return (
+    <ControlsListItem cursor="default" disabled={disabled}>
+      <Grid.Container {...GRID}>
+        <Grid.Item area="icon" justify="start" align="center">
+          <>{Icon}</>
+        </Grid.Item>
+
+        <Grid.Item area="label" justify="start" align="center">
+          <Typography type="secondary" weight="bold">
+            {label}
+          </Typography>
+        </Grid.Item>
+
+        <Grid.Item area="button" justify="end" align="center">
+          <StyledDiv>
+            <Input.Select
+              id="control-list-item-select"
+              label={label}
+              components={customComponents}
+              onChange={onChange}
+              options={options}
+              listPosition="left"
+              fullWidth
+              hideLabel
+              noFormField
+              listWidth={listWidth}
+              disabled={disabled}
+              preventScroll
+              placement={placement}
+            />
+          </StyledDiv>
         </Grid.Item>
 
         <Grid.Item area="description">

@@ -25,6 +25,7 @@ const StyledContainer = styled.div<PromotionBannerProps>`
   background-color: ${(p) => getColor(p)};
   width: 100%;
   box-shadow: 0 2px 2px 0 ${({ theme }) => theme.color.shadowCard};
+  border-radius: ${({ theme, scope }) => (scope === 'module' ? theme.borderRadius8 : 0)};
 `;
 
 const StyledBox = styled(Box)`
@@ -61,7 +62,7 @@ export const PromotionBanner: PromotionBannerComponent = ({
   mobileBadgeContent,
   onClose,
   scope = 'module',
-  justifyContent = "center",
+  justifyContent = 'center',
   title,
 }) => {
   const isDesktop = useMedia((t) => t.media.greaterThan(t.breakpoints.sm));
@@ -79,7 +80,7 @@ export const PromotionBanner: PromotionBannerComponent = ({
   }, [onClose]);
 
   return showPromotion ? (
-    <StyledContainer backgroundColor={backgroundColor}>
+    <StyledContainer backgroundColor={backgroundColor} scope={scope}>
       <StyledBox p={3} sm={{ p: 5 }}>
         <Flexbox container justifyContent="center">
           <Flexbox
@@ -89,11 +90,11 @@ export const PromotionBanner: PromotionBannerComponent = ({
             direction="row"
             alignItems="center"
             justifyContent={justifyContent}
-            gutter={3}
+            gap={3}
             width="100%"
-            sm={{ gutter: 5 }}
-            md={{ gutter: 5 }}
-            lg={{ gutter: 5, justifyContent, width: '772px' }}
+            sm={{ gap: 5 }}
+            md={{ gap: 5 }}
+            lg={{ gap: 5, justifyContent, width: '772px' }}
             xl={{ width: '772px' }}
           >
             {mobileBadgeContent && badgeContent && (
@@ -110,12 +111,12 @@ export const PromotionBanner: PromotionBannerComponent = ({
               container
               item
               direction="column"
-              gutter={2}
+              gap={2}
               alignItems="flex-start"
-              sm={{ gutter: 3 }}
+              sm={{ gap: 3 }}
               lg={{
                 direction: scope === 'page' ? 'row' : 'column',
-                gutter: isPageDesktop ? 5 : 3,
+                gap: isPageDesktop ? 5 : 3,
                 width: 'auto',
               }}
             >
@@ -123,9 +124,9 @@ export const PromotionBanner: PromotionBannerComponent = ({
                 container
                 item
                 direction="column"
-                gutter={1}
-                sm={{ gutter: 2, justifyContent: 'center' }}
-                lg={{ gutter: isPageDesktop ? 2 : 1 }}
+                gap={1}
+                sm={{ gap: 2, justifyContent: 'center' }}
+                lg={{ gap: isPageDesktop ? 2 : 1 }}
               >
                 <Flexbox item>
                   <Typography

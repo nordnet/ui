@@ -167,7 +167,7 @@ export const TabsNav: Component = ({
       container
       ref={scrollRef}
     >
-      <Flexbox container direction="row" gutter={4} sm={{ gutter: 8 }} as={StyledUl}>
+      <Flexbox container direction="row" gap={4} sm={{ gap: 8 }} as={StyledUl}>
         {titles}
       </Flexbox>
     </StyledFlexbox>

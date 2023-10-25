@@ -1,6 +1,6 @@
 import { Theme } from '../../theme/theme.types';
 
-export type Placement = 'top' | 'right' | 'bottom' | 'left';
+export type Placement = 'top' | 'right' | 'bottom' | 'left' | 'auto';
 export type ColsTrimmerProps = {
   $hasIcon: boolean;
 };
@@ -20,6 +20,9 @@ type Step = {
   backdropPadding?: string | number;
   px?: string | number;
   py?: string | number;
+  prevText?: string;
+  nextText?: string;
+  nextDisabled?: boolean;
 };
 
 export type Props = {
@@ -31,10 +34,14 @@ export type Props = {
   prevText?: string;
   nextText?: string;
   doneText?: string;
+  closeText?: string;
   multiStepIndicatorText?: string;
   closeOnClickOutside?: boolean;
   barColor?: ColorFn;
   bottomSheet?: boolean;
+  closeButton?: boolean;
+  hidePreviousButton?: boolean;
+  feedbackWidgetOnPage?: boolean;
 };
 
 export type Component = React.FC<Props>;

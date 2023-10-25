@@ -270,7 +270,7 @@ export const buttonWithFocusOn = () => {
       }
     };
     return (
-      <Flexbox container gutter={5}>
+      <Flexbox container gap={5}>
         <Flexbox item>
           <Button onClick={handleFocus}>Click to focus</Button>
         </Flexbox>
@@ -455,7 +455,7 @@ buttonThatIsFullWidth.story = {
 };
 
 export const buttonsComposedInAGroup = () => (
-  <Flexbox container gutter={2}>
+  <Flexbox container gap={2}>
     <Flexbox item flex="1 1 50%">
       <Button type="submit" onClick={action('submit')} fullWidth>
         Submit

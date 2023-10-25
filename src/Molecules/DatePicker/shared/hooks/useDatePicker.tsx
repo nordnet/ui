@@ -70,6 +70,8 @@ export const useDatePicker = ({
   const { locale } = useIntl();
   const [selectedDate, setSelectedDate] = useState<Date | null>(selectedDateProp || null);
   const [selectedEndDate, setSelectedEndDate] = useState<Date | null>(selectedEndDateProp || null);
+  const [invalidDate, setInvalidDate] = useState(false);
+
   const [inputValue, setInputValue] = useState<string>(
     formatInputValue(selectedDate, getDateFormat(locale), getLocale(locale)),
   );
@@ -115,12 +117,21 @@ export const useDatePicker = ({
     if (previousInputValueEnd && !inputValueEnd) {
       setSelectedEndDate(null);
     }
+    setInvalidDate(false);
   }, [inputValue, inputValueEnd, previousInputValue, previousInputValueEnd]);
 
   const allowedDate = useCallback(
     (date: Date | null) => {
-      if (date && disableDate && disableDate(date)) return null;
-      if (date && enableDate && !enableDate(date)) return null;
+      if (date && disableDate && disableDate(date)) {
+        setInvalidDate(true);
+        return null;
+      }
+
+      if (date && enableDate && !enableDate(date)) {
+        setInvalidDate(true);
+        return null;
+      }
+
       return date;
     },
     [disableDate, enableDate],
@@ -273,6 +284,7 @@ export const useDatePicker = ({
   const handleInputOnChange = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
       const { value, id: elementId } = event.target;
+
       // @ts-ignore
       const assignedValues: [string?, string?] = (() => {
         if (elementId === INPUT_ID_START(id)) {
@@ -331,5 +343,6 @@ export const useDatePicker = ({
     onDateClick,
     viewedDate,
     clearDate,
+    invalidDate,
   };
 };

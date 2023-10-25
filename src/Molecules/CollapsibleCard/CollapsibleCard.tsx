@@ -1,68 +1,36 @@
-import React, { useRef, useState } from 'react';
-import styled, { css } from 'styled-components';
-import { Card, Flexbox, OldIcon, Typography } from '../..';
+import { motion } from 'framer-motion';
+import React, { useEffect, useRef, useState } from 'react';
+import styled from 'styled-components';
+import { debounce } from 'lodash';
+
+import { Card, Flexbox, Icon, Typography } from '../..';
 import { useSafeLayoutEffect } from '../../common/Hooks';
 import { isElement, isFunction } from '../../common/utils';
 import { CollapsibleProps, IndicatorsProps } from './Collapsible.types';
 
-const StyledCollapsible = styled.div<{
-  height: string | null;
-  disabledTransition: boolean;
-}>`
-  overflow: hidden;
-  will-change: height;
-  height: ${(p) => (p.height ? p.height : 'auto')};
-  transition: ${(p) => (p.disabledTransition ? '' : 'height 0.16s ease-out')};
-
-  &[hidden] {
-    display: none;
-  }
-`;
-
-const StyledButton = styled.button<IndicatorsProps>`
-  touch-action: none;
+const StyledButton = styled.div<IndicatorsProps>`
   position: relative;
   background: none;
   cursor: pointer;
   display: block;
   width: 100%;
+  border: 0;
+  box-sizing: border-box;
   padding: ${(p) => {
     const py = p.theme.spacing.unit(p.$py);
     const px = p.theme.spacing.unit(p.$px);
     return p.$actionExists ? `${py}px ${px / 2}px ${py}px ${px}px` : `${py}px ${px}px`;
   }};
-  border: 0;
-
-  &::before {
-    content: '';
-    display: block;
-    background: ${(p) => p.theme.color.cta};
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.16s ease-out;
-    opacity: ${(p) => (p.$collapsed && !p.$noIndicator ? 1 : 0)};
-  }
 `;
 
 const StyledFlexbox = styled(Flexbox)<Pick<IndicatorsProps, '$px'>>`
   padding-right: ${(p) => p.theme.spacing.unit(p.$px)}px;
 `;
 
-const AnimatedChevronUp = styled(OldIcon.ChevronUp)<Pick<IndicatorsProps, '$collapsed'>>`
+const AnimatedChevronUp = styled(Icon.ChevronUp8)<Pick<IndicatorsProps, '$collapsed'>>`
   transform: ${(p) => (p.$collapsed ? 'rotate(180deg)' : 'rotate(0)')};
   transform-origin: center center;
   transition: transform 0.16s ease-out;
-`;
-
-const StyledFlexboxItem = styled(Flexbox)<Pick<IndicatorsProps, '$fullWidthTitle'>>`
-  ${({ $fullWidthTitle }) =>
-    $fullWidthTitle &&
-    css`
-      width: 100%;
-    `}
 `;
 
 export const CollapsibleCard: React.FC<CollapsibleProps> = ({
@@ -79,98 +47,41 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
   action: ActionComponent = false,
   fullWidthTitle = false,
 }) => {
+  const [height, setHeight] = useState('0px');
   const [collapsed, setCollapsed] = useState(collapsedInitial);
-  const [collapsing, setCollapsing] = useState(false);
-  const [expanding, setExpanding] = useState(false);
-  const [disabledTransition, setDisabledTransition] = useState(false);
-  const [height, setHeight] = useState(collapsed ? '0px' : null);
-  const collapsibleRef = useRef(null);
+  const collapsibleRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  const debouncedSetHeight = debounce(
+    () => setHeight(`${contentRef?.current?.scrollHeight}px`),
+    50,
+  );
 
   useSafeLayoutEffect(() => {
-    if (!collapsing && !expanding) {
-      return () => null;
-    }
+    const collapsibleHeight = collapsibleRef?.current?.scrollHeight;
 
-    let outerRequest: number;
-    let innerRequest: number;
+    setHeight(`${collapsed ? 0 : collapsibleHeight}px`);
+  }, [collapsed]);
 
-    // get the height of the element's inner content, regardless of its actual size
-    // @ts-ignore
-    const collapsibleHeight = collapsibleRef.current.scrollHeight;
+  useEffect(() => {
+    if (!contentRef.current || collapsed) return;
+    const resizeObserver = new ResizeObserver(() => {
+      debouncedSetHeight();
+    });
+    resizeObserver.observe(contentRef.current);
 
-    if (collapsing) {
-      // temporarily disable all css transitions
-      setDisabledTransition(true);
-
-      // on the next frame (as soon as the previous style change has taken effect),
-      // explicitly set the element's height to its current pixel height, so we
-      // aren't transitioning out of 'auto'
-      outerRequest = requestAnimationFrame(() => {
-        setHeight(`${collapsibleHeight}px`);
-        setDisabledTransition(false);
-
-        // on the next frame (as soon as the previous style change has taken effect),
-        // have the element transition to height: 0
-        innerRequest = requestAnimationFrame(() => {
-          setHeight(`0px`);
-        });
-      });
-    }
-
-    if (expanding) {
-      // have the element transition to the height of its inner content
-      setHeight(`${collapsibleHeight}px`);
-    }
-
-    return function cleanup() {
-      if (outerRequest) {
-        cancelAnimationFrame(outerRequest);
-      }
-
-      if (innerRequest) {
-        cancelAnimationFrame(innerRequest);
-      }
-    };
-  }, [collapsing, expanding]);
-
-  const onTransitionEnd = () => {
-    if (collapsing || expanding) {
-      // this check bcz ios11 triggers onTransitionEnd on early exit of useLayoutEffect()
-
-      if (expanding) {
-        // remove "height" from the element's inline styles, so it can return to its initial value
-        setHeight(null);
-
-        setExpanding(false);
-      }
-
-      if (collapsing) {
-        setCollapsing(false);
-      }
-
-      setCollapsed(!collapsed);
-    }
-  };
+    // eslint-disable-next-line consistent-return
+    return () => resizeObserver.disconnect();
+  }, [debouncedSetHeight, collapsed]);
 
   const toggle = (e: React.MouseEvent | React.TouchEvent) => {
     onClick(e);
-
-    if (collapsed) {
-      setExpanding(true);
-    } else {
-      setCollapsing(true);
-    }
+    setCollapsed((prev) => !prev);
   };
-
-  const hasOnTouch =
-    typeof document !== 'undefined' &&
-    document.documentElement &&
-    'ontouchstart' in document.documentElement;
 
   const CollapseButton = (
     <StyledButton
-      type="button"
-      {...{ [hasOnTouch ? 'onTouchStart' : 'onClick']: toggle }}
+      onClick={toggle}
       $collapsed={collapsed}
       $noIndicator={noIndicator}
       aria-expanded={!collapsed}
@@ -178,17 +89,17 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
       $px={titleRowPaddingX}
       $actionExists={!!ActionComponent}
     >
-      <Flexbox container gutter={4} alignItems="center" justifyContent="space-between">
-        <StyledFlexboxItem item $fullWidthTitle={fullWidthTitle}>
+      <Flexbox container gap={4} alignItems="center" justifyContent="space-between">
+        <Flexbox item width={fullWidthTitle ? '100%' : 'auto'}>
           <Typography type="title3" as={heading}>
             {title}
           </Typography>
-        </StyledFlexboxItem>
+        </Flexbox>
         <Flexbox item>
           {(() => {
             if (isFunction(expandElement)) return expandElement(collapsed);
             if (isElement(expandElement)) return expandElement;
-            return <AnimatedChevronUp size={2} $collapsed={collapsed} />;
+            return <AnimatedChevronUp $collapsed={collapsed} />;
           })()}
         </Flexbox>
       </Flexbox>
@@ -202,23 +113,23 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
         {ActionComponent}
       </StyledFlexbox>
     ) : (
-      <>{CollapseButton}</>
+      CollapseButton
     );
 
   return (
     <Card className={className}>
-      <Flexbox>
-        <CardHeaderTop></CardHeaderTop>
-      </Flexbox>
-      <StyledCollapsible
+      <CardHeaderTop />
+      <motion.div
         ref={collapsibleRef}
-        height={height}
-        disabledTransition={disabledTransition}
-        onTransitionEnd={onTransitionEnd}
-        hidden={collapsed && !expanding}
+        initial={!collapsedInitial}
+        style={{ overflow: 'hidden' }}
+        animate={{
+          height,
+        }}
+        transition={{ type: 'linear', duration: 0.16 }}
       >
-        {children}
-      </StyledCollapsible>
+        <div ref={contentRef}>{children}</div>
+      </motion.div>
     </Card>
   );
 };

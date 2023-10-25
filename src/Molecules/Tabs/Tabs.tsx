@@ -195,8 +195,8 @@ export const Tabs: ContainerComponent & {
         <Flexbox
           container
           direction="row"
-          gutter={4}
-          sm={{ gutter: variant === 'large' ? 8 : 4 }}
+          gap={4}
+          sm={{ gap: variant === 'large' ? 8 : 4 }}
           as={StyledUl}
         >
           {titles}

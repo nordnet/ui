@@ -10,7 +10,7 @@ import {
 /**
  * Imported separately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
-import { Box, Button, OldIcon, Input, Modal, useMedia, Flexbox } from '../../..';
+import { Box, Button, Icon, Input, Modal, useMedia, Flexbox } from '../../..';
 import { assert, isUndefined } from '../../../common/utils';
 import { useOnClickOutside } from '../../../common/Hooks';
 import { getDateFormat } from '../shared/dateUtils';
@@ -49,6 +49,8 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     fullscreenOnMobile,
     selectMonthLabel,
     selectYearLabel,
+    errorMessage,
+    clearDateButton,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -91,6 +93,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     onDateClick,
     viewedDate,
     clearDate,
+    invalidDate,
   } = useDatePicker({
     id,
     selectedDateProp,
@@ -140,7 +143,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     </>
   );
 
-  const inputRightAddon = <OldIcon.CalendarTwoRows size={6} />;
+  const inputRightAddon = <Icon.Calendar24 />;
 
   const selfRef = useRef<HTMLDivElement>(null);
   useOnClickOutside(selfRef, () => {
@@ -148,6 +151,13 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
       setOpen(false);
     }
   });
+
+  const clearClickHandler = () => {
+    clearDate();
+    if (clearDateButton?.onClearDate) {
+      clearDateButton.onClearDate();
+    }
+  };
 
   return (
     <div ref={(ref || selfRef) as React.Ref<HTMLDivElement>}>
@@ -166,12 +176,24 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
         onBlur={handleInputOnBlur}
         width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
         autoComplete="off"
+        error={invalidDate ? errorMessage : ''}
       />
       {open && !isFullscreenMode(props, isSmallScreen) && (
         <StyledDropdownBubbleWrapper data-testid="styled-dropdown-bubble-wrapper">
           <StyledDropdownBubble>
             <Box my={3} mx={2}>
               {datepicker}
+              {clearDateButton ? (
+                <Box pt={5}>
+                  <Button
+                    variant="neutral"
+                    color={(p) => p.colorTokens.action.background_default}
+                    onClick={clearClickHandler}
+                  >
+                    {clearDateButton.clearButtonLabel}
+                  </Button>
+                </Box>
+              ) : null}
             </Box>
           </StyledDropdownBubble>
         </StyledDropdownBubbleWrapper>
@@ -185,7 +207,16 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
           footer={
             <>
               <Box py={5}>
-                <Button variant="neutral" color={(p) => p.color.cta} onClick={clearDate}>
+                <Button
+                  variant="neutral"
+                  color={(p) => p.colorTokens.action.background_default}
+                  onClick={() => {
+                    clearDate();
+                    if (props?.fullscreenProps?.onClearDate) {
+                      props.fullscreenProps.onClearDate();
+                    }
+                  }}
+                >
                   {props.fullscreenProps.clearButtonLabel}
                 </Button>
               </Box>
@@ -197,7 +228,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
         >
           <>
             <Box pb={4}>
-              <Flexbox container gutter={2} justifyContent="center">
+              <Flexbox container gap={2} justifyContent="center">
                 <Flexbox item flex="1">
                   <Input.Text
                     id="fromDate"

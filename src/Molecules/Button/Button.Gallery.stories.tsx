@@ -74,7 +74,7 @@ const ButtonDisplays: React.FC<{
                 title: toTitle(buttonSize),
                 component: iconPicker(buttonSize).map((icon) => (
                   <Box key={`${variant}${buttonSize}${icon.iconName}`} pb={5}>
-                    <Flexbox container gutter={5}>
+                    <Flexbox container gap={5}>
                       {iconPlacements.map((iconPlacement) => (
                         <Flexbox
                           item
@@ -133,7 +133,7 @@ const ButtonsWithIconsTemplate: Story<{
     <>
       <Card>
         <Box p={5}>
-          <Flexbox container gutter={4} alignItems="center">
+          <Flexbox container gap={4} alignItems="center">
             <Flexbox item>
               <Typography>Icon pages:</Typography>
             </Flexbox>

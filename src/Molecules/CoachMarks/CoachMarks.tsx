@@ -6,7 +6,6 @@ import { Component } from './CoachMarks.types';
 import { makeBackdropPath } from './utils';
 import { useOnClickOutside, useWindowSize, useSafeLayoutEffect } from '../../common/Hooks';
 import useScrollPosition from './hooks/useScrollPosition';
-import Bubble from './Bubble';
 import BubbleArrow from './BubbleArrow';
 import { OFFSET_AWAY_FROM_REFERENCE } from './Bubble/consts';
 import { BACKDROP_PADDING } from './consts';
@@ -18,6 +17,7 @@ import {
   NavigationButtonsContainer,
   SVG,
   TitleWrapper,
+  StyledBubble,
 } from './CoachMarks.styled';
 
 export const CoachMarks: Component = ({
@@ -26,13 +26,17 @@ export const CoachMarks: Component = ({
   onDone,
   onNext,
   onPrev,
-  prevText = 'Previous',
-  nextText = 'Next',
+  prevText: prevTextFromProps = 'Previous',
+  nextText: nextTextFromProps = 'Next',
+  closeText = 'Close',
   doneText = 'Done',
   multiStepIndicatorText = 'of',
   closeOnClickOutside = true,
   barColor,
   bottomSheet = false,
+  closeButton = false,
+  hidePreviousButton = false,
+  feedbackWidgetOnPage = false,
 }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
@@ -48,6 +52,9 @@ export const CoachMarks: Component = ({
     backdropPadding,
     px,
     py,
+    prevText = prevTextFromProps,
+    nextText = nextTextFromProps,
+    nextDisabled = false,
   } = steps[currentStep];
 
   const [popperElement, setPopperElement] = useState<HTMLElement | null>(null);
@@ -71,7 +78,7 @@ export const CoachMarks: Component = ({
   const internalCoachMarkRef = useRef<HTMLDivElement>(null);
   const windowSize = useWindowSize();
   const hasMultipleSteps = steps.length > 1;
-  const hasPrevStep = currentStep > 0;
+  const hasPrevStep = currentStep > 0 && !hidePreviousButton;
   const hasNextStep = currentStep + 1 < steps.length;
   const path = referenceElementRect
     ? makeBackdropPath(referenceElementRect, Number(highlightBoxPadding), isCircular, px, py)
@@ -121,29 +128,33 @@ export const CoachMarks: Component = ({
     }
   });
 
-  return referenceElementRect ? (
+  return referenceElementRect || feedbackWidgetOnPage ? (
     <>
       <FocusLock>
-        <Bubble
+        <StyledBubble
           ref={setPopperElement}
-          style={styles.popper}
+          style={feedbackWidgetOnPage ? undefined : styles.popper}
           {...attributes.popper}
           barColor={barColor}
           bottomSheet={bottomSheet}
+          $feedbackWidgetOnPage={feedbackWidgetOnPage}
         >
-          <BubbleArrow
-            ref={setArrowElement}
-            style={styles.arrow}
-            bubblePlacement={placement}
-            bottomSheet={bottomSheet}
-          />
-          <Flexbox container item direction="column" flex="1" gutter={5} ref={internalCoachMarkRef}>
+          {!feedbackWidgetOnPage && (
+            <BubbleArrow
+              ref={setArrowElement}
+              style={styles.arrow}
+              bubblePlacement={placement}
+              bottomSheet={bottomSheet}
+              noBorder={!!barColor}
+            />
+          )}
+          <Flexbox container item direction="column" flex="1" gap={5} ref={internalCoachMarkRef}>
             {body || (
-              <Flexbox container direction="column" gutter={1}>
+              <Flexbox container direction="column" gap={1}>
                 {icon && <IconFlex item>{icon}</IconFlex>}
                 {title && (
                   <Flexbox item>
-                    <TitleWrapper $hasIcon={Boolean(icon)}>
+                    <TitleWrapper $hasIcon={Boolean(icon) || closeButton}>
                       <Typography as="h2" type="primary" weight="bold">
                         {title}
                       </Typography>
@@ -165,26 +176,38 @@ export const CoachMarks: Component = ({
                 )}
               </Flexbox>
             )}
-
-            <FooterFlex container item alignItems="baseline" gutter={5}>
-              {hasMultipleSteps && (
+            <FooterFlex container item alignItems="baseline" gap={5}>
+              {closeButton ? (
                 <Flexbox item>
-                  <Typography type="secondary" color={(t) => t.color.bubbleSecondaryText}>
-                    {`${currentStep + 1} ${multiStepIndicatorText} ${steps.length}`}
-                  </Typography>
+                  <Button variant="neutral" color={(t) => t.color.link} onClick={onClose}>
+                    {closeText}
+                  </Button>
                 </Flexbox>
+              ) : (
+                hasMultipleSteps && (
+                  <Flexbox item>
+                    <Typography type="secondary" color={(t) => t.color.bubbleSecondaryText}>
+                      {`${currentStep + 1} ${multiStepIndicatorText} ${steps.length}`}
+                    </Typography>
+                  </Flexbox>
+                )
               )}
-              <NavigationButtonsContainer container gutter={1} $hasSingleButton={!hasPrevStep}>
+              <NavigationButtonsContainer container gap={1} $hasSingleButton={!hasPrevStep}>
                 {hasPrevStep && (
-                  <Flexbox item flex="1 0 50%">
+                  <Flexbox item flex="1 1 50%">
                     <Button variant="secondary" onClick={handleStepBackwards} fullWidth>
                       {prevText}
                     </Button>
                   </Flexbox>
                 )}
-                <Flexbox item flex="1 0 50%">
+                <Flexbox item flex="1 1 50%">
                   {hasNextStep ? (
-                    <Button variant="primary" onClick={handleStepForward} fullWidth>
+                    <Button
+                      variant="primary"
+                      onClick={handleStepForward}
+                      fullWidth
+                      disabled={nextDisabled}
+                    >
                       {nextText}
                     </Button>
                   ) : (
@@ -196,10 +219,12 @@ export const CoachMarks: Component = ({
               </NavigationButtonsContainer>
             </FooterFlex>
           </Flexbox>
-          <CloseButton variant="neutral" onClick={handleClose}>
-            <Icon.Cross16 />
-          </CloseButton>
-        </Bubble>
+          {!closeButton && (
+            <CloseButton variant="neutral" onClick={handleClose}>
+              <Icon.Cross16 />
+            </CloseButton>
+          )}
+        </StyledBubble>
         <SVG>
           <path d={path} />
         </SVG>

@@ -235,49 +235,49 @@ export const colors = () => (
     items={[
       { title: 'Default', component: <Typography type="primary">Default</Typography> },
       {
-        title: 'Color: text',
+        title: 'Color: neutral.text_default',
         component: (
-          <Typography type="primary" color={(t) => t.color.text}>
+          <Typography type="primary" color={(t) => t.colorTokens.neutral.text_default}>
             Text
           </Typography>
         ),
       },
       {
-        title: 'Color: positive',
+        title: 'Color: positive.text_default',
         component: (
-          <Typography type="primary" color={(t) => t.color.positive}>
+          <Typography type="primary" color={(t) => t.colorTokens.positive.text_default}>
             Positive
           </Typography>
         ),
       },
       {
-        title: 'Color: negative',
+        title: 'Color: negative.text_default',
         component: (
-          <Typography type="primary" color={(t) => t.color.negative}>
+          <Typography type="primary" color={(t) => t.colorTokens.negative.text_default}>
             Negative
           </Typography>
         ),
       },
       {
-        title: 'Color: warning',
+        title: 'Color: warning.text_default',
         component: (
-          <Typography type="primary" color={(t) => t.color.warning}>
+          <Typography type="primary" color={(t) => t.colorTokens.warning.text_default}>
             Warning
           </Typography>
         ),
       },
       {
-        title: 'Color: cta',
+        title: 'Color: action.text_default',
         component: (
-          <Typography type="primary" color={(t) => t.color.cta}>
+          <Typography type="primary" color={(t) => t.colorTokens.action.text_default}>
             CTA
           </Typography>
         ),
       },
       {
-        title: 'Color: label',
+        title: 'Color: neutral.text_weak',
         component: (
-          <Typography type="primary" color={(t) => t.color.label}>
+          <Typography type="primary" color={(t) => t.colorTokens.neutral.text_weak}>
             Label
           </Typography>
         ),

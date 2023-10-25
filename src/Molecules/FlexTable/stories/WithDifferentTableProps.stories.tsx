@@ -61,7 +61,7 @@ const CustomTitle: React.FC<{ country: string; name: string; shortName: string }
   name,
   shortName,
 }) => (
-  <Flexbox container alignItems="baseline" gutter={1}>
+  <Flexbox container alignItems="baseline" gap={1}>
     <Flexbox item>
       <Flag country={country} size="s" />
     </Flexbox>

@@ -1,5 +1,14 @@
 import styled from 'styled-components';
-import { Button } from '../..';
+import { Box, Button } from '../..';
+
+export const StyledBox = styled(Box)<{ $isMobile?: boolean; $borderBottomMobile?: boolean }>`
+  border-radius: ${(p) => !p.$isMobile && p.theme.borderRadius8};
+  border-bottom: 1px solid
+    ${(p) =>
+      p.$isMobile && p.$borderBottomMobile
+        ? p.theme.colorTokens.neutral.border_medium
+        : 'transparent'};
+`;
 
 export const CompletionBar = styled.div<{ completion: number; noButtons: boolean }>`
   height: ${(p) => p.theme.spacing.unit(1)}px;
@@ -23,6 +32,8 @@ export const CompletionBar = styled.div<{ completion: number; noButtons: boolean
     height: 100%;
     display: block;
     content: '';
+    border-top-right-radius: ${(p) => p.theme.borderRadius100};
+    border-bottom-right-radius: ${(p) => p.theme.borderRadius100};
   }
 `;
 

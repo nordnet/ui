@@ -37,11 +37,17 @@ import BarScale from './Molecules/BarScale';
 import BottomWizardBar from './Molecules/BottomWizardBar';
 import Button, { PillButton } from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
+import CheckList from './Molecules/CheckList';
 import CoachMarks from './Molecules/CoachMarks';
 import CollapsibleCard from './Molecules/CollapsibleCard';
 import ControlsListItem from './Molecules/ControlsListItem';
 import DataToggle from './Molecules/DataToggle';
-import { DatePicker, DateRangePicker, DoubleDatePicker } from './Molecules/DatePicker';
+import {
+  DatePicker,
+  DateRangePicker,
+  DoubleDatePicker,
+  DatePickerClearable,
+} from './Molecules/DatePicker';
 import { DistributionBar } from './Molecules/DistributionBar';
 import Drawer from './Molecules/Drawer';
 import FeedbackBanner from './Molecules/FeedbackBanner';
@@ -78,13 +84,13 @@ import ProgressIndicator from './Molecules/ProgressIndicator';
 import PromotionBanner from './Molecules/PromotionBanner';
 import Rating from './Molecules/Rating';
 import SegmentedControl from './Molecules/SegmentedControl';
-import Select from './Molecules/Select';
 import SelectionCard from './Molecules/SelectionCard';
 import ShowMoreButton from './Molecules/ShowMoreButton';
 import Slider from './Molecules/Slider';
 import Switch, { SwitchToggle } from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
+import TagChip from './Molecules/TagChip';
 import Timeline from './Molecules/Timeline';
 import Toggle from './Molecules/Toggle';
 import Tooltip from './Molecules/Tooltip';
@@ -133,7 +139,6 @@ export type {
 
 /** Runtime code */
 export {
-  /** @deprecated */ Select,
   ActionModal,
   Accordion,
   AccordionItem,
@@ -146,6 +151,7 @@ export {
   Card,
   CardWithTabs,
   CardWithTitle,
+  CheckList,
   CoachMarks,
   CollapsibleCard,
   ControlsListItem,
@@ -154,6 +160,7 @@ export {
   DatePicker,
   DateRangePicker,
   DoubleDatePicker,
+  DatePickerClearable,
   DateTime,
   Development,
   DistributionBar,
@@ -216,6 +223,7 @@ export {
   Table,
   Tabs,
   TabsNav,
+  TagChip,
   Tbody,
   Td,
   Tfoot,

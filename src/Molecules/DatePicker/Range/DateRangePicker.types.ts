@@ -7,7 +7,7 @@ export type BaseProps = {
    * @default false
    */
   allowDateUpdateOnType?: boolean;
-  onChange?: (date: Date, endDate?: Date | null) => void;
+  onChange?: (date: Date | undefined, endDate?: Date | null) => void;
   label: string;
   disableDate?: (date: Date) => boolean;
   disabled?: boolean;
@@ -26,6 +26,7 @@ export type BaseProps = {
   allowSingleDayRange?: boolean;
   selectMonthLabel?: string;
   selectYearLabel?: string;
+  errorMessage?: string;
 };
 
 export type PropsWithoutClearButton = BaseProps & {

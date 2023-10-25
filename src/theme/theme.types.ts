@@ -1,14 +1,36 @@
+import { A11yTheme, LightTheme, DarkTheme } from '@nordnet/design-tokens';
+
+type FeatureToggles = {
+  roundedCorners?: boolean;
+};
+
 export type MediaQuery = string;
 /** Number of pixels */
 export type ThemeConfig = {
   a11yColors?: boolean;
   darkColors?: boolean;
+  tokensTheme?: 'dark' | 'light' | 'a11y';
+  featureToggles?: FeatureToggles;
 };
+type FeatureToggleKeys = keyof FeatureToggles;
 type Unit = {
   (times: number): number;
   toString: () => string;
   valueOf: () => number;
 };
+
+export type BORDER_RADIUS = 1 | 2 | 4 | 6 | 8 | 20 | 100;
+
+export type BreakpointKey = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+
+export type BreakpointPixelValue = 360 | 768 | 992 | 1280 | 1680;
+
+export type BreakpointData = {
+  offset: number;
+  size: BreakpointPixelValue;
+};
+
+export type BreakpointDataOrNumber = BreakpointData | BreakpointPixelValue;
 
 export type RawColor = {
   // BRAND
@@ -148,8 +170,6 @@ export type RawColors = RawColor & {
     gray: string[];
   };
 };
-
-type NumberOrObjectWithNumber = number | { size: number };
 
 export type ThemeColorsVersion = 'default' | 'a11y' | 'dark';
 
@@ -914,6 +934,8 @@ export type ThemeColors = {
   notFoundColor: string;
   notFoundFill: string;
   headerCardBorder: string;
+  /** light gray200 dark gray700 */
+  tagChipBorder: string;
 };
 
 export type ColorSets = {
@@ -922,7 +944,9 @@ export type ColorSets = {
 };
 
 export type Theme = {
+  /** @deprecated use colorTokens instead */
   color: ThemeColors;
+  colorTokens: LightTheme['color'] | DarkTheme['color'] | A11yTheme['color'];
   lightColor: ThemeColors;
   darkColor: ThemeColors;
   spacing: {
@@ -938,31 +962,9 @@ export type Theme = {
     gutter: 5;
   };
 
-  breakpoints: {
-    /** Tablet, mobile size: 360; offset: 5; */
-    xs: Record<'offset' | 'size', number>;
-    /** Tablet, mobile size: 768; offset: 5; */
-    sm: Record<'offset' | 'size', number>;
-    /** Tablet, desktop size: 992; offset: 5; */
-    md: Record<'offset' | 'size', number>;
-    /** Desktop size: 1280; offset: 5; */
-    lg: Record<'offset' | 'size', number>;
-    /** Desktop big size: 1680; offset: 5; */
-    xl: Record<'offset' | 'size', number>;
-  };
+  breakpoints: Record<BreakpointKey, BreakpointData>;
 
-  size: {
-    /** Mobile */
-    xs: 360;
-    /** Tablet, mobile */
-    sm: 768;
-    /** Tablet, desktop */
-    md: 992;
-    /** Desktop */
-    lg: 1280;
-    /** Desktop big */
-    xl: 1680;
-  };
+  size: Record<BreakpointKey, BreakpointPixelValue>;
 
   media: {
     /**
@@ -970,20 +972,20 @@ export type Theme = {
      * @example
      * styled.div`${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {}`
      */
-    lessThan: (size: NumberOrObjectWithNumber) => MediaQuery;
+    lessThan: (size: BreakpointDataOrNumber) => MediaQuery;
     /**
      * @param size One of theme.breakpoints
      * @example
      * styled.div`${({ theme }) => theme.media.greaterThan(theme.breakpoints.lg)} {}`
      */
-    greaterThan: (size: NumberOrObjectWithNumber) => MediaQuery;
+    greaterThan: (size: BreakpointDataOrNumber) => MediaQuery;
     /**
      * @param size1 One of theme.breakpoints
      * @param size2 One of theme.breakpoints
      * @example
      * styled.div`${({ theme }) => theme.media.between(theme.breakpoints.md, theme.breakpoints.lg)} {}`
      */
-    between: (size1: NumberOrObjectWithNumber, size2: NumberOrObjectWithNumber) => MediaQuery;
+    between: (size1: BreakpointDataOrNumber, size2: BreakpointDataOrNumber) => MediaQuery;
   };
   /** Some units for animation */
   animation: {
@@ -1000,4 +1002,11 @@ export type Theme = {
   };
   isHighContrastMode: boolean;
   isDarkMode: boolean;
+  borderRadius: (x: BORDER_RADIUS) => string;
+  borderRadius2: string;
+  borderRadius4: string;
+  borderRadius8: string;
+  borderRadius20: string;
+  borderRadius100: string;
+  isFeatureEnabled: (feature: FeatureToggleKeys) => boolean;
 };

@@ -38,7 +38,7 @@ roundedPill.story = {
 
 export const pillWithBar = () => (
   <Pill barColor={(t) => t.color.cta}>
-    <Flexbox container gutter={1} alignItems="center">
+    <Flexbox container gap={1} alignItems="center">
       <Flexbox item>
         <Button type="button" variant="neutral">
           <Typography type="tertiary" weight="bold">

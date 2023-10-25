@@ -39,6 +39,7 @@ export type ControlsListItemSelect = {
   justifyContent?: JustifyContentProp;
   listWidth?: string;
   disabled?: boolean;
+  placement?: 'top' | 'bottom';
 } & Props;
 
 export type ControlsListItemRadio = {

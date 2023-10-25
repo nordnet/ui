@@ -22,4 +22,5 @@ export type Props = {
    * for use when you want light mode tooltip colors in dark mode and opposite
    */
   invertedColors?: boolean;
+  triangle?: boolean;
 };

@@ -28,21 +28,7 @@
     "now-build": "NODE_OPTIONS=--openssl-legacy-provider build-storybook",
     "commit": "git-cz",
     "semantic-release": "semantic-release",
-    "prepublishOnly": "yarn build",
-    "prepare": "./scripts/install-husky.sh"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ],
-    "rules": {
-      "scope-case": [
-        0
-      ],
-      "header-max-length": [
-        0
-      ]
-    }
+    "prepublishOnly": "yarn build"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -56,6 +42,7 @@
     }
   },
   "dependencies": {
+    "@nordnet/design-tokens": "2.0.0",
     "@popperjs/core": "^2.11.6",
     "@xstate/react": "^0.7.1",
     "color": "^4.0.1",
@@ -84,9 +71,6 @@
     "@babel/preset-env": "7.15.0",
     "@babel/preset-react": "7.14.5",
     "@babel/preset-typescript": "7.15.0",
-    "@commitlint/cli": "7.6.1",
-    "@commitlint/config-conventional": "7.6.0",
-    "@commitlint/travis-cli": "7.6.1",
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/git": "10.0.1",
     "@storybook/addon-a11y": "6.5.14",
@@ -118,6 +102,7 @@
     "babel-plugin-transform-remove-imports": "1.5.5",
     "babel-preset-react-app": "^10.0.0",
     "codecov": "3.8.3",
+    "copy-to-clipboard": "^3.3.3",
     "csstype": "^3.0.8",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "7.32.0",
@@ -129,7 +114,6 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "git-cz": "3.0.1",
-    "husky": "^7.0.2",
     "jest": "27.0.6",
     "jest-date-mock": "^1.0.8",
     "jest-specific-snapshot": "^5.0.0",

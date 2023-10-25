@@ -50,7 +50,7 @@ export const Controlled = () => {
 
   return (
     <>
-      <Flexbox container gutter={2}>
+      <Flexbox container gap={2}>
         <Flexbox item>
           <Button onClick={() => setStartDate(add(startDate, { days: 1 }))}>Next date</Button>
         </Flexbox>

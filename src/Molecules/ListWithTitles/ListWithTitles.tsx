@@ -12,7 +12,7 @@ export const ListWithTitles: ListWithTitlesComponent = (props) => {
   return leftTitle || rightTitle ? (
     <div className={className}>
       <TitleContainer>
-        <Flexbox container gutter={0} justifyContent="space-between">
+        <Flexbox container gap={0} justifyContent="space-between">
           <Flexbox item>
             <Typography type="secondary" color={(t) => t.color.label}>
               {leftTitle}

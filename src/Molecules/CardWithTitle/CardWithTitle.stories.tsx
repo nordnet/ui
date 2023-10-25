@@ -84,6 +84,12 @@ export const cardWithTitleAsSection = () => (
   </CardWithTitle>
 );
 
+export const cardWithHtmlProps = () => (
+  <CardWithTitle as="section" title="HTML Props" data-testid="HTMLprops" aria-label="HTMLprops">
+    A CardWithTitle with HTML Props
+  </CardWithTitle>
+);
+
 const PaddedIcon = styled(OldIcon.ArrowRight)`
   padding-left: ${(p) => p.theme.spacing.unit(1)}px;
 `;

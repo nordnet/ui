@@ -68,10 +68,20 @@ import Shareville240 from './StageSmall/Shareville240';
 
 // Stage Large illustrations
 import AppropriatenessTest375 from './StageLarge/AppropriatenessTest375';
+import Diversification375 from './StageLarge/Diversification375';
+import InvestForLongTerm375 from './StageLarge/InvestForLongTerm375';
+import LearnMore375 from './StageLarge/LearnMore375';
+import MonthlySavings375 from './StageLarge/MonthlySavings375';
+import StocksOrFunds375 from './StageLarge/StocksOrFunds375';
 
 export default {
   Account64,
   AppropriatenessTest375,
+  Diversification375,
+  InvestForLongTerm375,
+  LearnMore375,
+  MonthlySavings375,
+  StocksOrFunds375,
   Archive48,
   ArrowDown48,
   ArrowLeft48,

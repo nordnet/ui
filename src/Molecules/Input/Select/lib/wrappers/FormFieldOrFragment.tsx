@@ -72,6 +72,7 @@ const SelectWrapper = styled.div`
   background: ${(p) => p.theme.color.inputBackground};
   box-sizing: border-box;
   position: relative;
+  border-radius: ${({ theme }) => theme.borderRadius4};
 `;
 
 export const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
@@ -87,6 +88,7 @@ export const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
       size,
       labelToolTip,
       labelTooltipPosition,
+      labelTooltipInModal,
       innerRef,
       ...props
     },
@@ -120,6 +122,7 @@ export const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
             fieldId={id}
             labelTooltip={labelToolTip}
             labelTooltipPosition={labelTooltipPosition}
+            labelTooltipInModal={labelTooltipInModal}
             {...props}
             {...(fullWidth ? { width: '100%' } : {})}
             ref={ref}
