@@ -1,4 +1,3 @@
-import type { StorybookConfig } from '@storybook/react-webpack5';
 import path from 'path';
 
 const srcPath = path.join(process.cwd(), 'src');
@@ -6,7 +5,7 @@ const storiesDir = process.env.STORYBOOK_DIRECTORY
   ? path.join(srcPath, process.env.STORYBOOK_DIRECTORY)
   : srcPath;
 
-const config: StorybookConfig = {
+const config = {
   framework: {
     name: '@storybook/react-webpack5',
     options: {},

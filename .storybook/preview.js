@@ -1,6 +1,5 @@
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
-import type { Preview } from '@storybook/react';
-import ThemeDecorator from './theme.decorator';
+import ThemeDecorator from './ThemeDecorator';
 import DocsWrapper from './DocsWrapper';
 
 const customViewports = {
@@ -43,7 +42,7 @@ const customViewports = {
 
 export const decorators = [ThemeDecorator];
 
-const preview: Preview = {
+const preview = {
   parameters: {
     intl: {
       locales: ['sv', 'nb', 'da', 'fi', 'en'],
