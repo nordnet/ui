@@ -1,9 +1,6 @@
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import type { Preview } from '@storybook/react';
-import { DocsPage } from '@storybook/addon-docs';
-
-// import { DocsWrapper } from './ThemeDecorator';
-import themeDecorator from './theme.decorator';
+import ThemeDecorator from './theme.decorator';
 
 const customViewports = {
   tablet: {
@@ -43,15 +40,7 @@ const customViewports = {
   },
 };
 
-// export const parameters = {
-
-// docs: {
-//   container: DocsWrapper,
-//   page: DocsPage,
-// },
-// };
-
-export const decorators = [themeDecorator];
+export const decorators = [ThemeDecorator];
 
 const preview: Preview = {
   parameters: {
@@ -60,7 +49,6 @@ const preview: Preview = {
       defaultLocale: 'sv',
       getMessages: () => {},
       getFormats: () => {},
-      // Solves problem with snapshots for time component
       timeZone: 'UTC',
     },
     viewport: { viewports: { ...INITIAL_VIEWPORTS, ...customViewports } },

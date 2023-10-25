@@ -17,7 +17,6 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-links',
     '@storybook/addon-storysource',
-    '@storybook/addon-themes',
     'storybook-addon-intl',
     'storybook-dark-mode',
   ],
