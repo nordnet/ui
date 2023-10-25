@@ -138,3 +138,22 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     isFeatureEnabled: (feature) => featureToggles?.[feature] === true,
   };
 };
+
+const themes = {};
+export const getTheme = (theme: ThemeConfig['tokensTheme']) => {
+  if (theme !== 'a11y' && theme !== 'dark' && theme !== 'light') {
+    return null;
+  }
+
+  const key = `theme-${theme}`;
+  if (!themes[key]) {
+    themes[key] = createTheme({
+      darkColors: theme === 'dark',
+      tokensTheme: theme,
+      featureToggles: {
+        roundedCorners: true,
+      },
+    });
+  }
+  return themes[key];
+};

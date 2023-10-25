@@ -2,22 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { useDarkMode } from 'storybook-dark-mode';
 import { createGlobalStyle } from 'styled-components';
-import { createTheme } from '../src';
-
-const themes = {};
-const getTheme = (darkMode) => {
-  const key = `dark:${darkMode}`;
-  if (!themes[key]) {
-    themes[key] = createTheme({
-      darkColors: darkMode,
-      ...(darkMode ? { tokensTheme: 'dark' } : {}),
-      featureToggles: {
-        roundedCorners: true,
-      },
-    });
-  }
-  return themes[key];
-};
+import { getTheme } from '../src';
 
 const GlobalStyle = createGlobalStyle`
 #storybook-root,
@@ -35,7 +20,9 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const ThemeDecorator = (storyFn) => {
-  const theme = getTheme(useDarkMode());
+  const isDarkMode = useDarkMode();
+  const theme = getTheme(isDarkMode ? 'dark' : 'light');
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
