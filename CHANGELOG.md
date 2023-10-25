@@ -1,3 +1,10 @@
+## [13.1.2](https://github.com/nordnet/ui/compare/v13.1.1...v13.1.2) (2023-10-25)
+
+
+### Bug Fixes
+
+* expose input select placement to controllistitem ([#1445](https://github.com/nordnet/ui/issues/1445)) ([8d4624e](https://github.com/nordnet/ui/commit/8d4624e))
+
 ## [13.1.1](https://github.com/nordnet/ui/compare/v13.1.0...v13.1.1) (2023-10-23)
 
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { OptionItem } from '../Input/Select/Select.types';
 
 import ControlsListItem from '.';
-import { Icon, List, Separator } from '../..';
+import { Box, Icon, List, Separator } from '../..';
 
 export default {
   title: 'Molecules / ControlsListItem',
@@ -62,6 +62,36 @@ export const ControlsListItemSelect = () => {
 
 ControlsListItemSelect.story = {
   name: 'Controls list item select',
+};
+
+export const ControlsListItemSelectPlacementTop = () => {
+  const mockedListItems = [
+    { label: 'first label', value: 'first value' },
+    { label: 'second label', value: 'second value' },
+    { label: 'third label', value: 'third value' },
+  ] as OptionItem[];
+
+  const [selectedItem, setSelectedItem] = useState([mockedListItems[0]]);
+  const onChange = (val: OptionItem[]) => {
+    setSelectedItem(val);
+  };
+  return (
+    <Box pt={25}>
+      <ControlsListItem.Select
+        label="label"
+        onChange={onChange}
+        options={mockedListItems}
+        selectedItem={selectedItem}
+        text="text"
+        description="description is good otherwise we don't understand"
+        placement="top"
+      />
+    </Box>
+  );
+};
+
+ControlsListItemSelectPlacementTop.story = {
+  name: 'Controls list item select with placement top',
 };
 
 export const ControlsListItemSelectWithoutDescription = (
