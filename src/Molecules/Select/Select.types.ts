@@ -14,6 +14,7 @@ export type Props = {
    * width in units
    */
   width?: number;
+  fullWidth?: boolean;
   value?: string | string[];
   valueDisplay?: React.ReactNode;
   trigger?: React.ReactNode;

@@ -71,6 +71,14 @@ export const Primary: ComponentStory<typeof Select> = () => (
   </Select>
 );
 
+export const DefaultValue: ComponentStory<typeof Select> = () => (
+  <Select name="my-select" placeholder="Select a option..." defaultValue={options[0].value}>
+    {options.map((option) => (
+      <Select.Option key={option.value} value={option.value} label={option.label} />
+    ))}
+  </Select>
+);
+
 export const CustomOption: ComponentStory<typeof Select> = () => (
   <Select name="my-select" placeholder="Select a country...">
     {countryOptions.map((option) => (
@@ -105,6 +113,33 @@ export const DifferentSizes: ComponentStory<typeof Select> = () => (
         title: 'Small size',
         component: (
           <Select name="my-small-select" size="s" placeholder="Select a option...">
+            {options.map((option) => (
+              <Select.Option key={`${option.value}-s`} value={option.value} label={option.label} />
+            ))}
+          </Select>
+        ),
+      },
+    ]}
+  />
+);
+
+export const DifferentWidths: ComponentStory<typeof Select> = () => (
+  <Display
+    items={[
+      {
+        title: '75 units wide',
+        component: (
+          <Select name="my-select" placeholder="Select a option..." width={75}>
+            {options.map((option) => (
+              <Select.Option key={`${option.value}-m`} value={option.value} label={option.label} />
+            ))}
+          </Select>
+        ),
+      },
+      {
+        title: 'Full width',
+        component: (
+          <Select name="my-full-width-select" placeholder="Select a option..." fullWidth>
             {options.map((option) => (
               <Select.Option key={`${option.value}-s`} value={option.value} label={option.label} />
             ))}
