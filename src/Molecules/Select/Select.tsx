@@ -29,6 +29,7 @@ const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(function Selec
     valueDisplay: valueDisplayFromProps,
     trigger: triggerFromProps,
     width = 50,
+    fullWidth,
     id,
     defaultValue,
   } = props;
@@ -58,7 +59,7 @@ const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(function Selec
       getOptionMetadata={getOptionMetadata}
       value={value}
     >
-      <Root $width={width} data-testid={id}>
+      <Root $width={width} $fullWidth={fullWidth} data-testid={id}>
         {triggerFromProps || (
           <Trigger size={size} hasError={hasError} ref={ref}>
             {valueDisplayFromProps || <ValueDisplay placeholder={placeholder} />}

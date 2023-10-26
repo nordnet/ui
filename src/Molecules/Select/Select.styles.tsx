@@ -7,10 +7,10 @@ export const ellipsis = `
   text-overflow: ellipsis;
 `;
 
-export const Root = styled.div<{ $width: number }>`
+export const Root = styled.div<{ $width: number; $fullWidth?: boolean }>`
   display: inline-block;
   position: relative;
-  width: ${({ theme, $width }) => theme.spacing.unit($width)}px;
+  width: ${({ theme, $width, $fullWidth }) => ($fullWidth ? '100%' : theme.spacing.unit($width))}px;
 `;
 
 export const ListContainer = styled.div<{ $hidden: Props['hidden'] }>`

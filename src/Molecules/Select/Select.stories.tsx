@@ -123,6 +123,33 @@ export const DifferentSizes: ComponentStory<typeof Select> = () => (
   />
 );
 
+export const DifferentWiths: ComponentStory<typeof Select> = () => (
+  <Display
+    items={[
+      {
+        title: '75 units wide',
+        component: (
+          <Select name="my-select" placeholder="Select a option..." width={75}>
+            {options.map((option) => (
+              <Select.Option key={`${option.value}-m`} value={option.value} label={option.label} />
+            ))}
+          </Select>
+        ),
+      },
+      {
+        title: 'Full width',
+        component: (
+          <Select name="my-full-width-select" placeholder="Select a option..." fullWidth>
+            {options.map((option) => (
+              <Select.Option key={`${option.value}-s`} value={option.value} label={option.label} />
+            ))}
+          </Select>
+        ),
+      },
+    ]}
+  />
+);
+
 export const WithFormField: ComponentStory<typeof Select> = () => (
   <FormField label="Label" required extraInfo="Extra info">
     <Select name="my-select" placeholder="Select a option...">
