@@ -1,3 +1,10 @@
+## [13.2.1](https://github.com/nordnet/ui/compare/v13.2.0...v13.2.1) (2023-10-26)
+
+
+### Bug Fixes
+
+* use default value for select component ([#1463](https://github.com/nordnet/ui/issues/1463)) ([8bfb8f4](https://github.com/nordnet/ui/commit/8bfb8f4))
+
 # [13.2.0](https://github.com/nordnet/ui/compare/v13.1.4...v13.2.0) (2023-10-26)
 
 
