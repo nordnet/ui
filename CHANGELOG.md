@@ -1,3 +1,10 @@
+## [13.1.3](https://github.com/nordnet/ui/compare/v13.1.2...v13.1.3) (2023-10-26)
+
+
+### Bug Fixes
+
+* **node:** add node 20 as supported ([#1447](https://github.com/nordnet/ui/issues/1447)) ([769ebe2](https://github.com/nordnet/ui/commit/769ebe2))
+
 ## [13.1.2](https://github.com/nordnet/ui/compare/v13.1.1...v13.1.2) (2023-10-25)
 
 

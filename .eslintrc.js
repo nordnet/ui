@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["airbnb", "prettier", "prettier/react", "plugin:jest/recommended"],
+  extends: ['airbnb', 'prettier', 'prettier/react', 'plugin:jest/recommended', 'plugin:storybook/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2018,
