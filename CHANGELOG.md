@@ -1,3 +1,10 @@
+# [13.2.0](https://github.com/nordnet/ui/compare/v13.1.4...v13.2.0) (2023-10-26)
+
+
+### Features
+
+* new Select component MVP ([#1351](https://github.com/nordnet/ui/issues/1351)) ([e1332d6](https://github.com/nordnet/ui/commit/e1332d6))
+
 ## [13.1.4](https://github.com/nordnet/ui/compare/v13.1.3...v13.1.4) (2023-10-26)
 
 
