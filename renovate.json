@@ -8,6 +8,9 @@
   "prConcurrentLimit": 2,
   "stabilityDays": 30,
   "internalChecksFilter": "strict",
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "packageRules": [
     {
       "labels": ["renovate-fe", "dev-deps"],
