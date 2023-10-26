@@ -1,6 +1,6 @@
-import { createTheme, getTheme } from './theme';
+import { createTheme } from './theme';
 
-const theme = getTheme('light');
+const theme = createTheme();
 
 export default theme;
-export { createTheme, getTheme };
+export { createTheme };

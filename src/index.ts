@@ -108,7 +108,7 @@ import StatusModal from './Organisms/StatusModal';
 /** Hooks */
 import { useKeyPress, useOnClickOutside } from './common/Hooks';
 
-import theme, { createTheme, getTheme } from './theme';
+import theme, { createTheme } from './theme';
 import TrackingContext from './common/tracking';
 
 import { LinkContext, LinkProvider, useLink, LinkProps, LinkProviderProps } from './common/Links';
@@ -240,7 +240,6 @@ export {
   Typography,
   VisuallyHidden,
   createTheme,
-  getTheme,
   theme,
   numberWithLimit,
   secondsToTimeString,

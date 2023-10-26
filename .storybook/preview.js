@@ -1,6 +1,5 @@
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
-import ThemeDecorator from './ThemeDecorator';
-import DocsWrapper from './DocsWrapper';
+import { ThemeDecorator, DocsWrapper } from './ThemeDecorator';
 
 const customViewports = {
   tablet: {
