@@ -1,3 +1,10 @@
+## [13.2.2](https://github.com/nordnet/ui/compare/v13.2.1...v13.2.2) (2023-10-26)
+
+
+### Bug Fixes
+
+* remove media snapshots ([#1462](https://github.com/nordnet/ui/issues/1462)) ([b44c019](https://github.com/nordnet/ui/commit/b44c019))
+
 ## [13.2.1](https://github.com/nordnet/ui/compare/v13.2.0...v13.2.1) (2023-10-26)
 
 
