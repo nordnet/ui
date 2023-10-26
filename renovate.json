@@ -1,0 +1,56 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    "github>whitesource/merge-confidence:beta"
+  ],
+  "labels": ["renovate-fe"],
+  "prConcurrentLimit": 2,
+  "stabilityDays": 30,
+  "internalChecksFilter": "strict",
+  "packageRules": [
+    {
+      "labels": ["renovate-fe", "dev-deps"],
+      "matchDatasources": ["npm"],
+      "matchDepTypes": ["devDependencies"],
+      "matchCurrentVersion": ">=1",
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "developer dependencies (non-major)",
+      "groupSlug": "dev-dependencies"
+    },
+    {
+      "labels": ["renovate-fe", "prod-deps"],
+      "matchDatasources": ["npm"],
+      "matchCurrentVersion": ">=1",
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "production dependencies (non-major)",
+      "groupSlug": "dependencies"
+    },
+    {
+      "labels": ["renovate-fe", "breaking", "major-upgrade"],
+      "matchDatasources": ["npm"],
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["major"]
+    },
+    {
+      "labels": ["renovate-fe", "breaking", "not-yet-stable-upgrade"],
+      "matchDatasources": ["npm"],
+      "matchCurrentVersion": "<1",
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["patch", "minor"]
+    },
+    {
+      "labels": ["renovate-fe", "node"],
+      "matchPackageNames": ["node", "@types/node"],
+      "groupName": "node",
+      "allowedVersions": "18"
+    },
+    {
+      "labels": ["renovate-fe", "npm"],
+      "matchPackageNames": ["npm"],
+      "groupName": "npm",
+      "allowedVersions": "8"
+    }
+  ]
+}
