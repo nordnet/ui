@@ -6,4 +6,4 @@ then
     export STORYBOOK_DIRECTORY=$1
 fi
 
-yarn start-storybook -p 6006 -s ./static
+yarn storybook dev -p 6006

@@ -1,3 +1,38 @@
+## [13.1.4](https://github.com/nordnet/ui/compare/v13.1.3...v13.1.4) (2023-10-26)
+
+
+### Bug Fixes
+
+* **node:** add node 20 as supported (again) ([#1457](https://github.com/nordnet/ui/issues/1457)) ([2630062](https://github.com/nordnet/ui/commit/2630062))
+
+## [13.1.3](https://github.com/nordnet/ui/compare/v13.1.2...v13.1.3) (2023-10-26)
+
+
+### Bug Fixes
+
+* **node:** add node 20 as supported ([#1447](https://github.com/nordnet/ui/issues/1447)) ([769ebe2](https://github.com/nordnet/ui/commit/769ebe2))
+
+## [13.1.2](https://github.com/nordnet/ui/compare/v13.1.1...v13.1.2) (2023-10-25)
+
+
+### Bug Fixes
+
+* expose input select placement to controllistitem ([#1445](https://github.com/nordnet/ui/issues/1445)) ([8d4624e](https://github.com/nordnet/ui/commit/8d4624e))
+
+## [13.1.1](https://github.com/nordnet/ui/compare/v13.1.0...v13.1.1) (2023-10-23)
+
+
+### Bug Fixes
+
+* remove commitlint, also now no use for husky ([#1439](https://github.com/nordnet/ui/issues/1439)) ([22aab78](https://github.com/nordnet/ui/commit/22aab78))
+
+# [13.1.0](https://github.com/nordnet/ui/compare/v13.0.0...v13.1.0) (2023-10-23)
+
+
+### Features
+
+* 🎸 Adding IconPadding to DistributionBar component ([#1442](https://github.com/nordnet/ui/issues/1442)) ([0cb1679](https://github.com/nordnet/ui/commit/0cb1679))
+
 # [13.0.0](https://github.com/nordnet/ui/compare/v12.50.1...v13.0.0) (2023-10-19)
 
 

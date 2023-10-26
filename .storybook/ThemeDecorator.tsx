@@ -1,19 +1,36 @@
-import React, { ReactNode } from 'react';
-import { StoryFn } from '@storybook/addons';
-import { ThemeProvider } from 'styled-components';
+import React from 'react';
 import { DocsContainer } from '@storybook/addon-docs';
+import { ThemeProvider } from 'styled-components';
 import { useDarkMode } from 'storybook-dark-mode';
 import { createGlobalStyle } from 'styled-components';
 import { createTheme } from '../src';
 
-const themes = {};
+const GlobalStyle = createGlobalStyle`
+#storybook-root,
+.sbdocs-preview {
+  background: ${(p) => p.theme.colorTokens.neutral.background_default};
+}
 
-const getTheme = (darkMode) => {
-  const key = `dark:${darkMode}`;
+#storybook-root {
+  padding: 20px;
+}
+
+.sbdocs-content {
+  max-width: 1440px;
+}
+`;
+
+const themes = {};
+export const getTheme = (theme: 'light' | 'dark' | 'a11y') => {
+  if (theme !== 'a11y' && theme !== 'dark' && theme !== 'light') {
+    return null;
+  }
+
+  const key = `theme-${theme}`;
   if (!themes[key]) {
     themes[key] = createTheme({
-      darkColors: darkMode,
-      ...(darkMode ? { tokensTheme: 'dark' } : {}),
+      darkColors: theme === 'dark',
+      tokensTheme: theme,
       featureToggles: {
         roundedCorners: true,
       },
@@ -22,28 +39,21 @@ const getTheme = (darkMode) => {
   return themes[key];
 };
 
-const GlobalStyle = createGlobalStyle`
-body {
-    margin: 0;
-    background: ${(p) => p.theme.color.buttonTextLight};
-}
+export const DocsWrapper = ({ children, context }) => {
+  const isDarkMode = useDarkMode();
+  const theme = getTheme(isDarkMode ? 'dark' : 'light');
 
-#root {
-    background:  ${(p) => p.theme.color.background};
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    padding: 12px;
-}
+  return (
+    <DocsContainer context={context}>
+      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+    </DocsContainer>
+  );
+};
 
-.sbdocs.sbdocs-content {
-    max-width: 1440px;
-}
-`;
+export const ThemeDecorator = (storyFn) => {
+  const isDarkMode = useDarkMode();
+  const theme = getTheme(isDarkMode ? 'dark' : 'light');
 
-export const ThemeDecorator = (storyFn: StoryFn<ReactNode>) => {
-  const theme = getTheme(useDarkMode());
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
@@ -51,9 +61,3 @@ export const ThemeDecorator = (storyFn: StoryFn<ReactNode>) => {
     </ThemeProvider>
   );
 };
-
-export const DocsWrapper = ({ children, ...rest }: any) => (
-  <DocsContainer {...rest}>
-    <ThemeProvider theme={getTheme(useDarkMode())}>{children}</ThemeProvider>
-  </DocsContainer>
-);

@@ -109,7 +109,7 @@ const CheckListStep: FC<CheckListStepProps> = ({
       titleBadgeText={!isCompleted ? `+${getPercentage}%` : undefined}
       description={description || 'Default description'}
       buttonText={!isDrawer && !isMobile && startAction ? startAction.label : ''}
-      action={!isDrawer ? startAction : undefined}
+      action={!isDrawer || (isDrawer && isCompleted) ? startAction : undefined}
       statusIcon={isDrawer && isCompleted && <Icon.CheckCircleFill24 />}
     >
       {buttons}
