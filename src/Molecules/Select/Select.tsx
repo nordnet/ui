@@ -30,6 +30,7 @@ const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(function Selec
     trigger: triggerFromProps,
     width = 50,
     id,
+    defaultValue,
   } = props;
   const listboxRef = React.useRef<HTMLUListElement>(null);
   const [isOpen, setIsOpen] = React.useState(false);
@@ -42,6 +43,7 @@ const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(function Selec
       onChange,
       onOpenChange: setIsOpen,
       value: valueFromProps,
+      defaultValue,
     });
 
   useEffect(() => {

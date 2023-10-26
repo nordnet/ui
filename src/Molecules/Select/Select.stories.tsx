@@ -71,6 +71,14 @@ export const Primary: ComponentStory<typeof Select> = () => (
   </Select>
 );
 
+export const DefaultValue: ComponentStory<typeof Select> = () => (
+  <Select name="my-select" placeholder="Select a option..." defaultValue={options[0].value}>
+    {options.map((option) => (
+      <Select.Option key={option.value} value={option.value} label={option.label} />
+    ))}
+  </Select>
+);
+
 export const CustomOption: ComponentStory<typeof Select> = () => (
   <Select name="my-select" placeholder="Select a country...">
     {countryOptions.map((option) => (
