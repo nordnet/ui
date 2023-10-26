@@ -12003,7 +12003,7 @@ jest-serializer@^27.0.6:
     "@types/node" "*"
     graceful-fs "^4.2.4"
 
-jest-snapshot@^27.0.2, jest-snapshot@^27.0.6:
+jest-snapshot@^27.0.6:
   version "27.0.6"
   resolved "https://registry.yarnpkg.com/jest-snapshot/-/jest-snapshot-27.0.6.tgz#f4e6b208bd2e92e888344d78f0f650bcff05a4bf"
   integrity sha512-NTHaz8He+ATUagUgE7C/UtFcRoHqR2Gc+KDfhQIyx+VFgwbeEMjeP+ILpUTLosZn/ZtbNdCF5LkVnN/l+V751A==
@@ -12058,13 +12058,6 @@ jest-snapshot@^29.0.0:
     natural-compare "^1.4.0"
     pretty-format "^29.7.0"
     semver "^7.5.3"
-
-jest-specific-snapshot@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/jest-specific-snapshot/-/jest-specific-snapshot-5.0.0.tgz#48f72d5613af7f3e30df75b6b3534db6bab32ea0"
-  integrity sha512-V65vuPxZQExD3tGbv+Du5tbG1E3H3Dq/HFbsCEkPJP27w5vr/nATQJl61Dx5doBfu54OrJak0JaeYVSeZubDKg==
-  dependencies:
-    jest-snapshot "^27.0.2"
 
 jest-specific-snapshot@^8.0.0:
   version "8.0.0"
@@ -16894,6 +16887,7 @@ string-length@^4.0.1:
     strip-ansi "^6.0.0"
 
 "string-width-cjs@npm:string-width@^4.2.0", "string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.2.3:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
