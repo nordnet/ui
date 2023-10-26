@@ -123,7 +123,7 @@ export const DifferentSizes: ComponentStory<typeof Select> = () => (
   />
 );
 
-export const DifferentWiths: ComponentStory<typeof Select> = () => (
+export const DifferentWidths: ComponentStory<typeof Select> = () => (
   <Display
     items={[
       {
