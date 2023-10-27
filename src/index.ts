@@ -84,6 +84,7 @@ import ProgressIndicator from './Molecules/ProgressIndicator';
 import PromotionBanner from './Molecules/PromotionBanner';
 import Rating from './Molecules/Rating';
 import SegmentedControl from './Molecules/SegmentedControl';
+import { Select } from './Molecules/Select';
 import SelectionCard from './Molecules/SelectionCard';
 import ShowMoreButton from './Molecules/ShowMoreButton';
 import Slider from './Molecules/Slider';
@@ -139,6 +140,7 @@ export type {
 
 /** Runtime code */
 export {
+  Select,
   ActionModal,
   Accordion,
   AccordionItem,
@@ -240,13 +242,13 @@ export {
   Typography,
   VisuallyHidden,
   createTheme,
+  theme,
   numberWithLimit,
   secondsToTimeString,
   above,
   below,
   between,
   units,
-  theme,
   useKeyPress,
   useLink,
   useMedia,

@@ -1,3 +1,45 @@
+## [13.2.2](https://github.com/nordnet/ui/compare/v13.2.1...v13.2.2) (2023-10-26)
+
+
+### Bug Fixes
+
+* remove media snapshots ([#1462](https://github.com/nordnet/ui/issues/1462)) ([b44c019](https://github.com/nordnet/ui/commit/b44c019))
+
+## [13.2.1](https://github.com/nordnet/ui/compare/v13.2.0...v13.2.1) (2023-10-26)
+
+
+### Bug Fixes
+
+* use default value for select component ([#1463](https://github.com/nordnet/ui/issues/1463)) ([8bfb8f4](https://github.com/nordnet/ui/commit/8bfb8f4))
+
+# [13.2.0](https://github.com/nordnet/ui/compare/v13.1.4...v13.2.0) (2023-10-26)
+
+
+### Features
+
+* new Select component MVP ([#1351](https://github.com/nordnet/ui/issues/1351)) ([e1332d6](https://github.com/nordnet/ui/commit/e1332d6))
+
+## [13.1.4](https://github.com/nordnet/ui/compare/v13.1.3...v13.1.4) (2023-10-26)
+
+
+### Bug Fixes
+
+* **node:** add node 20 as supported (again) ([#1457](https://github.com/nordnet/ui/issues/1457)) ([2630062](https://github.com/nordnet/ui/commit/2630062))
+
+## [13.1.3](https://github.com/nordnet/ui/compare/v13.1.2...v13.1.3) (2023-10-26)
+
+
+### Bug Fixes
+
+* **node:** add node 20 as supported ([#1447](https://github.com/nordnet/ui/issues/1447)) ([769ebe2](https://github.com/nordnet/ui/commit/769ebe2))
+
+## [13.1.2](https://github.com/nordnet/ui/compare/v13.1.1...v13.1.2) (2023-10-25)
+
+
+### Bug Fixes
+
+* expose input select placement to controllistitem ([#1445](https://github.com/nordnet/ui/issues/1445)) ([8d4624e](https://github.com/nordnet/ui/commit/8d4624e))
+
 ## [13.1.1](https://github.com/nordnet/ui/compare/v13.1.0...v13.1.1) (2023-10-23)
 
 

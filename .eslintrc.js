@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["airbnb", "prettier", "prettier/react", "plugin:jest/recommended"],
+  extends: ['airbnb', 'prettier', 'prettier/react', 'plugin:jest/recommended', 'plugin:storybook/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2018,
@@ -36,6 +36,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 0,
     'react/prop-types': 0,
     'react/jsx-curly-newline': 0,
+    'react/require-default-props': 0,
     '@typescript-eslint/no-use-before-define': 0,
     '@typescript-eslint/no-unused-vars': ['error', {
       vars: 'all',

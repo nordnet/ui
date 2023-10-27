@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
-import { storiesOf } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import { StatusModal } from '../..';
 import { Status } from './StatusModal.types';
+
+const meta: Meta<typeof StatusModal> = {
+  component: StatusModal,
+};
+
+export default meta;
+type Story = StoryObj<typeof StatusModal>;
 
 const loadingOptions = {
   title: 'Modal title for loading',
@@ -43,43 +50,66 @@ const defaultProps = {
   onClose: () => {},
 };
 
-storiesOf('Organisms / StatusModal', module)
-  .addDecorator((storyFn) => storyFn())
-  .add('Loading', () => <StatusModal {...defaultProps} loading options={loadingOptions} />)
-  .add('Success', () => <StatusModal {...defaultProps} loading={false} options={successOptions} />)
-  .add('Warning', () => <StatusModal {...defaultProps} loading={false} options={warningOptions} />)
-  .add('Error', () => <StatusModal {...defaultProps} loading={false} options={errorOptions} />)
-  .add('With two buttons', () => {
-    const [buttonClicked, setButtonClicked] = useState('');
-    return (
-      <>
-        {buttonClicked === 'CONFIRM' && (
-          <h1 style={{ color: 'green' }}>
-            Confirm button was pressed. onClose was called with confirmed = true
-          </h1>
-        )}
-        {buttonClicked === 'CANCEL' && (
-          <h1 style={{ color: 'red' }}>
-            Cancel button was pressed. onClose was called with confirmed = false
-          </h1>
-        )}
-        <StatusModal
-          {...defaultProps}
-          loading={false}
-          options={twoButtonsOptions}
-          onClose={(confirmed: boolean) => {
-            setButtonClicked(confirmed ? 'CONFIRM' : 'CANCEL');
-          }}
-        />
-      </>
-    );
-  })
-  .add('With fixed bottom mobile', () => (
+export const Loading: Story = {
+  render: () => <StatusModal {...defaultProps} loading options={loadingOptions} />,
+};
+
+export const Success: Story = {
+  render: () => <StatusModal {...defaultProps} loading={false} options={successOptions} />,
+};
+
+export const Warning: Story = {
+  render: () => <StatusModal {...defaultProps} loading={false} options={warningOptions} />,
+};
+
+export const Error: Story = {
+  render: () => <StatusModal {...defaultProps} loading={false} options={errorOptions} />,
+};
+
+const ModalWithTwoButtons = () => {
+  const [buttonClicked, setButtonClicked] = useState('');
+
+  return (
+    <>
+      {buttonClicked === 'CONFIRM' && (
+        <h1 style={{ color: 'green' }}>
+          Confirm button was pressed. onClose was called with confirmed = true
+        </h1>
+      )}
+      {buttonClicked === 'CANCEL' && (
+        <h1 style={{ color: 'red' }}>
+          Cancel button was pressed. onClose was called with confirmed = false
+        </h1>
+      )}
+      <StatusModal
+        {...defaultProps}
+        loading={false}
+        options={twoButtonsOptions}
+        onClose={(confirmed: boolean) => {
+          setButtonClicked(confirmed ? 'CONFIRM' : 'CANCEL');
+        }}
+      />
+    </>
+  );
+};
+
+export const WithTwoButtons: Story = {
+  render: () => <ModalWithTwoButtons />,
+};
+
+export const WithFixedBottomMobile: Story = {
+  render: () => (
     <StatusModal {...defaultProps} fixedBottomMobile loading={false} options={successOptions} />
-  ))
-  .add('With negative confirm buttom', () => (
+  ),
+};
+
+export const WithNegativeConfirmButtom: Story = {
+  render: () => (
     <StatusModal {...defaultProps} loading={false} options={successOptions} variant="negative" />
-  ))
-  .add('With negative confirm buttom and cancel button', () => (
+  ),
+};
+export const WithNegativeConfirmButtomAndCancelButton: Story = {
+  render: () => (
     <StatusModal {...defaultProps} loading={false} options={twoButtonsOptions} variant="negative" />
-  ));
+  ),
+};
