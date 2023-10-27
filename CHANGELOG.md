@@ -1,3 +1,10 @@
+## [13.2.3](https://github.com/nordnet/ui/compare/v13.2.2...v13.2.3) (2023-10-27)
+
+
+### Bug Fixes
+
+* bump old dependancies to solve tslib error ([#1466](https://github.com/nordnet/ui/issues/1466)) ([ee6912b](https://github.com/nordnet/ui/commit/ee6912b))
+
 ## [13.2.2](https://github.com/nordnet/ui/compare/v13.2.1...v13.2.2) (2023-10-26)
 
 
