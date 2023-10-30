@@ -39,7 +39,7 @@ module.exports = (api) => {
         plugins,
       },
       test: {
-        plugins: [...plugins, '@babel/plugin-transform-runtime'],
+        plugins: [...plugins],
       },
     },
   };
