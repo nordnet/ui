@@ -27,7 +27,6 @@ export const ListItem: React.FC<{
       selected={selected}
       disabled={option.disabled}
       label={option.label}
-      value={option.value}
       focused={focused}
       isKeyboardNavigation={isKeyboardNavigation}
       fullscreenOnMobile={fullscreenOnMobile}

@@ -9,19 +9,19 @@ export default {
   title: 'Molecules / Input / Select / SingleSelectList',
 };
 
-export const itemDefault = () => <Option value={0} label="First" />;
+export const itemDefault = () => <Option label="First" />;
 
 itemDefault.story = {
   name: 'Item default',
 };
 
-export const itemSelected = () => <Option value={0} label="First" selected />;
+export const itemSelected = () => <Option label="First" selected />;
 
 itemSelected.story = {
   name: 'Item selected',
 };
 
-export const itemDisabled = () => <Option value={0} label="First" disabled />;
+export const itemDisabled = () => <Option label="First" disabled />;
 
 itemDisabled.story = {
   name: 'Item disabled',
@@ -50,14 +50,11 @@ export const listWithDifferentArrowPositions = () => (
       {
         component: (
           <Wrapper>
-            <Option value={-1} label="Default?" />
-            <Option value={0} label="First" selected />
-            <Option
-              value={2}
-              label="SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond"
-            />
+            <Option label="Default?" />
+            <Option label="First" selected />
+            <Option label="SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond" />
             {new Array(10).fill(null)?.map((_, i) => (
-              <Option key={i} value={i + 3} label="Disabled" disabled />
+              <Option key={i} label="Disabled" disabled />
             ))}
           </Wrapper>
         ),
@@ -67,10 +64,10 @@ export const listWithDifferentArrowPositions = () => (
       {
         component: (
           <Wrapper position="left">
-            <Option value={-1} label="Default?" />
-            <Option value={0} label="First" selected />
+            <Option label="Default?" />
+            <Option label="First" selected />
             {new Array(10).fill(null)?.map((_, i) => (
-              <Option key={i} value={i + 2} label="Disabled" disabled />
+              <Option key={i} label="Disabled" disabled />
             ))}
           </Wrapper>
         ),
@@ -79,10 +76,10 @@ export const listWithDifferentArrowPositions = () => (
       {
         component: (
           <Wrapper position="center" placement="top">
-            <Option value={-1} label="Default?" />
-            <Option value={0} label="First" selected />
+            <Option label="Default?" />
+            <Option label="First" selected />
             {new Array(10).fill(null)?.map((_, i) => (
-              <Option key={i} value={i + 2} label="Disabled" disabled />
+              <Option key={i} label="Disabled" disabled />
             ))}
           </Wrapper>
         ),
@@ -91,11 +88,11 @@ export const listWithDifferentArrowPositions = () => (
       {
         component: (
           <Wrapper position="center">
-            <Option value={-1} label="Default?" />
-            <Option value={0} label="First" selected />
-            <Option value={2} label="Second" />
+            <Option label="Default?" />
+            <Option label="First" selected />
+            <Option label="Second" />
             {new Array(10).fill(null)?.map((_, i) => (
-              <Option key={i} value={i + 3} label="Disabled" disabled />
+              <Option key={i} label="Disabled" disabled />
             ))}
           </Wrapper>
         ),
@@ -104,14 +101,11 @@ export const listWithDifferentArrowPositions = () => (
       {
         component: (
           <Wrapper placement="top">
-            <Option value={-1} label="Default?" />
-            <Option value={0} label="First" selected />
-            <Option
-              value={2}
-              label="SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond"
-            />
+            <Option label="Default?" />
+            <Option label="First" selected />
+            <Option label="SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond" />
             {new Array(10).fill(null)?.map((_, i) => (
-              <Option key={i} value={i + 3} label="Disabled" disabled />
+              <Option key={i} label="Disabled" disabled />
             ))}
           </Wrapper>
         ),
@@ -120,10 +114,10 @@ export const listWithDifferentArrowPositions = () => (
       {
         component: (
           <Wrapper position="left" placement="top">
-            <Option value={-1} label="Default?" />
-            <Option value={0} label="First" selected />
+            <Option label="Default?" />
+            <Option label="First" selected />
             {new Array(10).fill(null)?.map((_, i) => (
-              <Option key={i} value={i + 2} label="Disabled" disabled />
+              <Option key={i} label="Disabled" disabled />
             ))}
           </Wrapper>
         ),
@@ -132,11 +126,11 @@ export const listWithDifferentArrowPositions = () => (
       {
         component: (
           <Wrapper position="center" placement="top">
-            <Option value={-1} label="Default?" />
-            <Option value={0} label="First" selected />
-            <Option value={2} label="Second" />
+            <Option label="Default?" />
+            <Option label="First" selected />
+            <Option label="Second" />
             {new Array(10).fill(null)?.map((_, i) => (
-              <Option key={i} value={i + 3} label="Disabled" disabled />
+              <Option key={i} label="Disabled" disabled />
             ))}
           </Wrapper>
         ),
