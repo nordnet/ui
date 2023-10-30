@@ -91,6 +91,7 @@ export const NumberComponent: NumberComponentType = ({
   currency,
   currencySize,
   sign = false,
+  maskValue = false,
 }) => {
   const { formatNumber } = useIntl();
   if (typeof value === 'undefined' || value === null || !Number.isFinite(value)) return <>-</>;
@@ -109,10 +110,22 @@ export const NumberComponent: NumberComponentType = ({
 
   // This is shockingly the easiest way to check for -0, since Math.sign(-0) === -0 🤷‍
   const isMinusZero = (val: number) => 1 / val === -Infinity;
+
+  const getNumber = () => {
+    if (isMinusZero(roundedValue)) {
+      return '0';
+    }
+    return (
+      <>
+        {getPrefix(sign, roundedValue)}
+        {formattedNumber}
+      </>
+    );
+  };
+
   const number = (
     <>
-      {getPrefix(sign, roundedValue)}
-      {isMinusZero(roundedValue) ? '0' : formattedNumber}
+      {maskValue ? '• • • •' : getNumber()}
       {percentage && '%'}
       {currency && typeof currencySize === 'undefined' && ` ${currency}`}
     </>
