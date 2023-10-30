@@ -1,3 +1,10 @@
+## [13.3.1](https://github.com/nordnet/ui/compare/v13.3.0...v13.3.1) (2023-10-30)
+
+
+### Bug Fixes
+
+* **deps:** bump semver-regex from 3.1.3 to 3.1.4 ([#1151](https://github.com/nordnet/ui/issues/1151)) ([6612f37](https://github.com/nordnet/ui/commit/6612f37))
+
 # [13.3.0](https://github.com/nordnet/ui/compare/v13.2.3...v13.3.0) (2023-10-30)
 
 
