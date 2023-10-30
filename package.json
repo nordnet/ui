@@ -57,7 +57,7 @@
     "react-remove-scroll": "^2.5.7",
     "react-uid": "^2.3.3",
     "scroll-into-view-if-needed": "^2.2.28",
-    "styled-components": "5.3.6",
+    "styled-components": "5.3.11",
     "use-ssr": "^1.0.24",
     "xstate": "^4.23.1"
   },
