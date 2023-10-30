@@ -1,3 +1,10 @@
+## [13.3.2](https://github.com/nordnet/ui/compare/v13.3.1...v13.3.2) (2023-10-30)
+
+
+### Bug Fixes
+
+* **deps:** update production dependencies (non-major) ([#1450](https://github.com/nordnet/ui/issues/1450)) ([e5f025a](https://github.com/nordnet/ui/commit/e5f025a))
+
 ## [13.3.1](https://github.com/nordnet/ui/compare/v13.3.0...v13.3.1) (2023-10-30)
 
 
