@@ -1,3 +1,10 @@
+# [13.3.0](https://github.com/nordnet/ui/compare/v13.2.3...v13.3.0) (2023-10-30)
+
+
+### Features
+
+* 🎸 mask sensitive values in number component ([#1444](https://github.com/nordnet/ui/issues/1444)) ([0599838](https://github.com/nordnet/ui/commit/0599838))
+
 ## [13.2.3](https://github.com/nordnet/ui/compare/v13.2.2...v13.2.3) (2023-10-27)
 
 
