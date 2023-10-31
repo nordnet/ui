@@ -1,3 +1,10 @@
+## [13.4.1](https://github.com/nordnet/ui/compare/v13.4.0...v13.4.1) (2023-10-31)
+
+
+### Bug Fixes
+
+* make flextable stories work ([#1468](https://github.com/nordnet/ui/issues/1468)) ([834aaf6](https://github.com/nordnet/ui/commit/834aaf6))
+
 # [13.4.0](https://github.com/nordnet/ui/compare/v13.3.2...v13.4.0) (2023-10-31)
 
 
