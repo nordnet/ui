@@ -2,8 +2,7 @@ import React, { useMemo, useState } from 'react';
 import R from 'ramda';
 import { Meta, Story } from '@storybook/react';
 
-import { Box, Typography } from '../../..';
-import FlexTable from '../FlexTable';
+import { Box, FlexTable, Typography } from '../../..';
 import docs from '../FlexTable.mdx';
 import { StyledBackground } from './storiesShared';
 
