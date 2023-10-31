@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import FlexTable from '../FlexTable';
-import { Flag, Flexbox, Typography } from '../../..';
+import { Flag, Flexbox, FlexTable, Typography } from '../../..';
 import docs from '../FlexTable.mdx';
 import { SortOrder } from '../Header/HeaderContent/HeaderContent.types';
 import { OnSort } from '../Header/Header.types';
