@@ -1,3 +1,10 @@
+# [13.4.0](https://github.com/nordnet/ui/compare/v13.3.2...v13.4.0) (2023-10-31)
+
+
+### Features
+
+* add edit plan 64 illustration ([#1467](https://github.com/nordnet/ui/issues/1467)) ([97fdbd7](https://github.com/nordnet/ui/commit/97fdbd7))
+
 ## [13.3.2](https://github.com/nordnet/ui/compare/v13.3.1...v13.3.2) (2023-10-30)
 
 
