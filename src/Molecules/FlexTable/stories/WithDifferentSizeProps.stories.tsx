@@ -1,6 +1,5 @@
 import React from 'react';
-import FlexTable from '../FlexTable';
-import { Box, Typography } from '../../..';
+import { Box, FlexTable, Typography } from '../../..';
 import docs from '../FlexTable.mdx';
 import { StyledBackground } from './storiesShared';
 
