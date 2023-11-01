@@ -101,7 +101,6 @@ type OptionProps = {
   selected?: boolean;
   disabled?: boolean;
   label: React.ReactNode;
-  value: any;
   isKeyboardNavigation?: boolean;
   onClick?: React.MouseEventHandler<HTMLLIElement>;
   fullscreenOnMobile?: boolean;

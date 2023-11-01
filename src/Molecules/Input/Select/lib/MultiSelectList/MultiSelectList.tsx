@@ -13,7 +13,6 @@ type OptionProps = {
   selected?: boolean;
   disabled?: boolean;
   label: React.ReactNode;
-  value: any;
   focused?: boolean;
   selectAll?: boolean;
   isKeyboardNavigation?: boolean;
