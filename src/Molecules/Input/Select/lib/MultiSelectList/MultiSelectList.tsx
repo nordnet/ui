@@ -91,7 +91,7 @@ const EllipsizingText = styled(Typography)`
   overflow: hidden;
 `;
 
-export const Option: React.FC<OptionProps> = ({
+export const Option = ({
   label,
   disabled,
   selected,
@@ -99,7 +99,7 @@ export const Option: React.FC<OptionProps> = ({
   selectAll,
   isKeyboardNavigation,
   fullscreenOnMobile,
-}) => (
+}: OptionProps) => (
   <StyledOption
     selected={selected}
     disabled={disabled}

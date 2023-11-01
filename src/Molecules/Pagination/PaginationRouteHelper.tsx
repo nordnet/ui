@@ -7,10 +7,12 @@ type SharedProps = {
   currentPage: number;
   setCurrentPage: (pageNumber: number) => void;
 };
+
+type ViewProps = SharedProps;
+
 type PaginationRouteHelperProps = SharedProps & {
   children?: React.ReactNode;
 };
-type ViewProps = SharedProps;
 
 const View = ({ currentPage, setCurrentPage }: ViewProps) => {
   const params = useParams();
