@@ -5,12 +5,8 @@ import { Props as FadedScrollProps } from '../../../../../Atoms/FadedScroll/Fade
 import { useSelectMachineFromContext } from '../context';
 
 type ListFullScreenProps = {
-  listPosition?: string;
   searchComponent?: React.ReactNode;
   actionsComponent?: React.ReactNode;
-  maxHeight?: string;
-  noFormField?: boolean;
-  placement?: 'bottom' | 'top';
   children?: React.ReactNode;
 };
 
@@ -44,11 +40,11 @@ const StyledDiv = styled.div`
   height: 90vh;
 `;
 
-export const ListFullScreen: React.FC<ListFullScreenProps> = ({
+export const ListFullScreen = ({
   children,
   searchComponent = null,
   actionsComponent = null,
-}) => {
+}: ListFullScreenProps) => {
   const areOptionsProvided = React.Children.count(children) > 0;
   const [state] = useSelectMachineFromContext();
   const { showSearch, disableSearchComponent: disableSearch } = state.context;

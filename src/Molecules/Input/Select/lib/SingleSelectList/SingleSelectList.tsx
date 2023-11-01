@@ -101,7 +101,6 @@ type OptionProps = {
   selected?: boolean;
   disabled?: boolean;
   label: React.ReactNode;
-  value: any;
   isKeyboardNavigation?: boolean;
   onClick?: React.MouseEventHandler<HTMLLIElement>;
   fullscreenOnMobile?: boolean;
@@ -168,7 +167,7 @@ const EllipsizingText = styled.span`
   overflow: hidden;
 `;
 
-export const Option: React.FC<OptionProps> = ({
+export const Option = ({
   label,
   disabled,
   selected,
@@ -176,7 +175,7 @@ export const Option: React.FC<OptionProps> = ({
   onClick,
   isKeyboardNavigation,
   fullscreenOnMobile,
-}) => (
+}: OptionProps) => (
   <StyledOption
     selected={selected}
     disabled={disabled}
