@@ -1,3 +1,10 @@
+## [13.5.1-beta.1](https://github.com/nordnet/ui/compare/v13.5.0...v13.5.1-beta.1) (2023-11-01)
+
+
+### Bug Fixes
+
+* **deps:** update developer dependencies (non-major) ([#1472](https://github.com/nordnet/ui/issues/1472)) ([55e704a](https://github.com/nordnet/ui/commit/55e704a))
+
 # [13.5.0](https://github.com/nordnet/ui/compare/v13.4.2...v13.5.0) (2023-11-01)
 
 
