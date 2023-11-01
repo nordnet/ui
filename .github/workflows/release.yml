@@ -31,7 +31,7 @@ jobs:
         run: node -v && npm -v
 
       - name: Install dependencies
-        uses: npm ci
+        run: npm ci
 
       - name: Release
         if: ${{ github.ref == 'refs/heads/master' }}
