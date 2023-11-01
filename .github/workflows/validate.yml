@@ -1,0 +1,38 @@
+name: Validate
+on:
+  push:
+    branches:
+      - master
+      - beta
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out webapp-next
+        uses: actions/checkout@v3
+
+      - name: Setting up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+
+      - name: Install dependencies
+        uses: npm ci
+
+      - name: Run eslint
+        run: npm run lint:js
+
+      - name: Run stylelint
+        run: npm run lint:css
+
+      - name: Run Typescript checks
+        run: npm run lint:ts
+
+      - name: Run tests
+        run: npm run test-ci
