@@ -9,11 +9,12 @@ const TRACK_HEIGHT = { s: 4, m: 5, l: 4 };
 const TRACK_WIDTH = { s: 7, m: 9, l: 10 };
 const KNOB_SIZE = { s: 3, m: 4, l: 6 };
 
-const Label = styled.label`
+const Label = styled.label<{ disabled?: boolean }>`
   display: inline-block;
+  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
 `;
 
-const Knob = styled.span<{ $size: SizeProp }>`
+const Knob = styled.span<{ $size: SizeProp; disabled?: boolean }>`
   background: ${(p) => p.theme.color.toggleKnobEnabledOffBg};
   display: block;
   height: ${(p) => p.theme.spacing.unit(KNOB_SIZE[p.$size])}px;
@@ -26,9 +27,10 @@ const Knob = styled.span<{ $size: SizeProp }>`
   box-sizing: border-box;
   box-shadow: 0px 1px 3px 1px ${(p) => p.theme.color.shadowSwitch};
   transition: transform 0.2s cubic-bezier(0.18, 0.9, 0.35, 1.15);
+  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
 `;
 
-const Track = styled.span<{ $size: SizeProp }>`
+const Track = styled.span<{ $size: SizeProp; disabled?: boolean }>`
   display: block;
   height: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT[p.$size])}px;
   width: ${(p) => p.theme.spacing.unit(TRACK_WIDTH[p.$size])}px;
@@ -36,6 +38,7 @@ const Track = styled.span<{ $size: SizeProp }>`
   background-color: ${(p) => p.theme.color.toggleTrackEnabledOffBg};
   border-radius: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT[p.$size] / 2)}px;
   transition: background-color 0.2s ease-out;
+  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
 `;
 
 const ButtonContent = styled.div`
@@ -116,7 +119,7 @@ export const Toggle: React.FC<Props> = ({
   };
 
   return (
-    <Label>
+    <Label disabled={disabled || hiddenLabel}>
       <Flexbox container gap={2} alignItems="center" as="span">
         {hiddenLabel ? (
           <VisuallyHidden>{titleNode}</VisuallyHidden>
@@ -137,8 +140,8 @@ export const Toggle: React.FC<Props> = ({
             $size={size}
           >
             <ButtonContent>
-              <Knob $size={size} />
-              <Track $size={size} />
+              <Knob $size={size} disabled={disabled} />
+              <Track $size={size} disabled={disabled} />
             </ButtonContent>
           </Button>
         </Flexbox>
