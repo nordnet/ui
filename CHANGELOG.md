@@ -1,3 +1,10 @@
+## [13.4.2](https://github.com/nordnet/ui/compare/v13.4.1...v13.4.2) (2023-11-01)
+
+
+### Bug Fixes
+
+* 🐛 bump to version that supports node ^20 ([#1469](https://github.com/nordnet/ui/issues/1469)) ([ebbe494](https://github.com/nordnet/ui/commit/ebbe494))
+
 ## [13.4.1](https://github.com/nordnet/ui/compare/v13.4.0...v13.4.1) (2023-10-31)
 
 
