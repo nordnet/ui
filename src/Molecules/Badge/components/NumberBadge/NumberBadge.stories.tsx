@@ -208,73 +208,73 @@ const StyledFlexbox = styled(Flexbox)`
   width: 200px;
 `;
 
+const BadgeWithAnimationComponent = () => {
+  const [notificationsExampleOne, setNotificationsExampleOne] = useState(4);
+  const [notificationsExampleTwo, setNotificationsExampleTwo] = useState(4);
+  const [isNewNotifications, setIsNewNotifications] = useState(false);
+
+  return (
+    <Display
+      items={[
+        {
+          title: 'Badge with animation',
+          component: (
+            <Box py={3}>
+              <StyledFlexbox container justifyContent="space-between">
+                <Button
+                  variant="secondary"
+                  onClick={() => setNotificationsExampleOne(notificationsExampleOne - 1)}
+                >
+                  -
+                </Button>
+                <Badge.Number key={notificationsExampleOne} animateOnChange>
+                  {notificationsExampleOne}
+                </Badge.Number>
+                <Button
+                  variant="secondary"
+                  onClick={() => setNotificationsExampleOne(notificationsExampleOne + 1)}
+                >
+                  +
+                </Button>
+              </StyledFlexbox>
+            </Box>
+          ),
+        },
+        {
+          title: 'Badge with animation, but without initial animation example',
+          component: (
+            <Box py={3}>
+              <StyledFlexbox container justifyContent="space-between">
+                <Button
+                  variant="secondary"
+                  onClick={() => {
+                    setNotificationsExampleTwo(notificationsExampleTwo - 1);
+                    setIsNewNotifications(true);
+                  }}
+                >
+                  -
+                </Button>
+                <Badge.Number key={notificationsExampleTwo} animateOnChange={isNewNotifications}>
+                  {notificationsExampleTwo}
+                </Badge.Number>
+                <Button
+                  variant="secondary"
+                  onClick={() => {
+                    setNotificationsExampleTwo(notificationsExampleTwo + 1);
+                    setIsNewNotifications(true);
+                  }}
+                >
+                  +
+                </Button>
+              </StyledFlexbox>
+            </Box>
+          ),
+        },
+      ]}
+    />
+  );
+};
+
 export const BadgeWithAnimation = {
-  render: () => {
-    const [notificationsExampleOne, setNotificationsExampleOne] = useState(4);
-    const [notificationsExampleTwo, setNotificationsExampleTwo] = useState(4);
-    const [isNewNotifications, setIsNewNotifications] = useState(false);
-
-    return (
-      <Display
-        items={[
-          {
-            title: 'Badge with animation',
-            component: (
-              <Box py={3}>
-                <StyledFlexbox container justifyContent="space-between">
-                  <Button
-                    variant="secondary"
-                    onClick={() => setNotificationsExampleOne(notificationsExampleOne - 1)}
-                  >
-                    -
-                  </Button>
-                  <Badge.Number key={notificationsExampleOne} animateOnChange>
-                    {notificationsExampleOne}
-                  </Badge.Number>
-                  <Button
-                    variant="secondary"
-                    onClick={() => setNotificationsExampleOne(notificationsExampleOne + 1)}
-                  >
-                    +
-                  </Button>
-                </StyledFlexbox>
-              </Box>
-            ),
-          },
-          {
-            title: 'Badge with animation, but without initial animation example',
-            component: (
-              <Box py={3}>
-                <StyledFlexbox container justifyContent="space-between">
-                  <Button
-                    variant="secondary"
-                    onClick={() => {
-                      setNotificationsExampleTwo(notificationsExampleTwo - 1);
-                      setIsNewNotifications(true);
-                    }}
-                  >
-                    -
-                  </Button>
-                  <Badge.Number key={notificationsExampleTwo} animateOnChange={isNewNotifications}>
-                    {notificationsExampleTwo}
-                  </Badge.Number>
-                  <Button
-                    variant="secondary"
-                    onClick={() => {
-                      setNotificationsExampleTwo(notificationsExampleTwo + 1);
-                      setIsNewNotifications(true);
-                    }}
-                  >
-                    +
-                  </Button>
-                </StyledFlexbox>
-              </Box>
-            ),
-          },
-        ]}
-      />
-    );
-  },
-
-  name: 'Badge with animation',
+  render: () => <BadgeWithAnimationComponent />,
 };
