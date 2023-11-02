@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { Box, Button, Card, CardWithTitle, Flexbox, Pagination, Typography } from '../..';
 import { Display } from '../../common/Display';
@@ -109,7 +109,7 @@ const ButtonDisplays: React.FC<{
   );
 };
 
-const ButtonsWithIconsTemplate: Story<{
+const ButtonsWithIconsTemplate: StoryFn<{
   iconOutline: boolean;
   iconsPerPage: number;
   preferredIconSizes: Record<string, number>;
@@ -167,21 +167,24 @@ const ButtonsWithIconsTemplate: Story<{
   );
 };
 
-export const ButtonsWithIcons = ButtonsWithIconsTemplate.bind({});
-ButtonsWithIcons.args = {
-  iconOutline: false,
-  iconsPerPage: 5,
-  preferredIconSizes: {
-    small: 16,
-    medium: 16,
-    large: 16,
-  },
-  buttonComponentNames: [undefined, 'Pill', 'Icon'] as ButtonComponentKeyType[],
-  buttonDisabled: false,
-  buttonLoading: false,
-};
+export const ButtonsWithIcons = {
+  render: ButtonsWithIconsTemplate,
 
-ButtonsWithIcons.storyName = 'Gallery view';
+  args: {
+    iconOutline: false,
+    iconsPerPage: 5,
+    preferredIconSizes: {
+      small: 16,
+      medium: 16,
+      large: 16,
+    },
+    buttonComponentNames: [undefined, 'Pill', 'Icon'] as ButtonComponentKeyType[],
+    buttonDisabled: false,
+    buttonLoading: false,
+  },
+
+  name: 'Gallery view',
+};
 
 export default {
   title: 'Molecules / Button',

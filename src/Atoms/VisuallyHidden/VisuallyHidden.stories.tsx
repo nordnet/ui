@@ -7,13 +7,14 @@ export default {
     component: VisuallyHidden,
   },
 };
-export const visuallyHiddenLabel = () => (
-  <>
-    There&apos;s text here that&apos;s only displayed for screen readers:
-    <VisuallyHidden>I&apos;m only shown for screen readers.</VisuallyHidden>
-  </>
-);
 
-visuallyHiddenLabel.story = {
+export const visuallyHiddenLabel = {
+  render: () => (
+    <>
+      There&apos;s text here that&apos;s only displayed for screen readers:
+      <VisuallyHidden>I&apos;m only shown for screen readers.</VisuallyHidden>
+    </>
+  ),
+
   name: 'Visually hidden label',
 };

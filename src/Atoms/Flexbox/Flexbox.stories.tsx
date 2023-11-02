@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import styled from 'styled-components';
 
 import { Flexbox, Typography } from '../..';
@@ -17,21 +17,23 @@ export default {
   component: Flexbox,
 } as Meta;
 
-export const defaultStory = () => (
-  <Flexbox container>
-    <Flexbox item>
-      <Content>Col 1</Content>
+export const defaultStory = {
+  render: () => (
+    <Flexbox container>
+      <Flexbox item>
+        <Content>Col 1</Content>
+      </Flexbox>
+      <Flexbox item>
+        <Content>Col 2</Content>
+      </Flexbox>
+      <Flexbox item>
+        <Content>Col 3</Content>
+      </Flexbox>
     </Flexbox>
-    <Flexbox item>
-      <Content>Col 2</Content>
-    </Flexbox>
-    <Flexbox item>
-      <Content>Col 3</Content>
-    </Flexbox>
-  </Flexbox>
-);
+  ),
 
-defaultStory.storyName = 'Default';
+  name: 'Default',
+};
 
 export const columnSizedFlexboxes = () => (
   <Flexbox container>
@@ -199,7 +201,7 @@ const GrowingDiv = styled.div`
   background-color: #eee;
 `;
 
-const HeightAndWidthTemplate: Story<{
+const HeightAndWidthTemplate: StoryFn<{
   height: Height;
   width: Width;
 }> = ({ height, width }) => (
@@ -225,16 +227,22 @@ const HeightAndWidthTemplate: Story<{
   </div>
 );
 
-export const WidthAndHeightInNumbers = HeightAndWidthTemplate.bind({});
-WidthAndHeightInNumbers.args = {
-  height: 100,
-  width: 100,
+export const WidthAndHeightInNumbers = {
+  render: HeightAndWidthTemplate,
+
+  args: {
+    height: 100,
+    width: 100,
+  },
 };
 
-export const WidthAndHeightInPercentage = HeightAndWidthTemplate.bind({});
-WidthAndHeightInPercentage.args = {
-  height: '50%',
-  width: '50%',
+export const WidthAndHeightInPercentage = {
+  render: HeightAndWidthTemplate,
+
+  args: {
+    height: '50%',
+    width: '50%',
+  },
 };
 
 export const differentSizedItems = () => (

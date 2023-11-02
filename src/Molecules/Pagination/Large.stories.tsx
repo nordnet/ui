@@ -24,27 +24,23 @@ const LargePagination = ({ totalItems = 10, itemsPerPage = 1 }) => (
 
 export const large = () => <LargePagination />;
 
-export const paginationWithOnePage = () => <LargePagination totalItems={1} itemsPerPage={1} />;
-
-paginationWithOnePage.story = {
+export const paginationWithOnePage = {
+  render: () => <LargePagination totalItems={1} itemsPerPage={1} />,
   name: '1 page',
 };
 
-export const paginationWithTwoPages = () => <LargePagination totalItems={2} itemsPerPage={1} />;
-
-paginationWithTwoPages.story = {
+export const paginationWithTwoPages = {
+  render: () => <LargePagination totalItems={2} itemsPerPage={1} />,
   name: '2 pages',
 };
 
-export const paginationWithTwelvePages = () => <LargePagination totalItems={12} itemsPerPage={1} />;
-
-paginationWithTwelvePages.story = {
+export const paginationWithTwelvePages = {
+  render: () => <LargePagination totalItems={12} itemsPerPage={1} />,
   name: '12 pages',
 };
 
-export const paginationWithManyPages = () => <LargePagination totalItems={999} itemsPerPage={1} />;
-
-paginationWithManyPages.story = {
+export const paginationWithManyPages = {
+  render: () => <LargePagination totalItems={999} itemsPerPage={1} />,
   name: '999 pages',
 };
 

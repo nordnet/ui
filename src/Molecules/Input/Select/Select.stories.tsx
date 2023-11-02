@@ -1,5 +1,5 @@
 import React, { createElement, useCallback, useMemo, useState } from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import R from 'ramda';
 import styled from 'styled-components';
@@ -289,6 +289,7 @@ export const hideLabel = () => (
     placeholder="Placeholder"
   />
 );
+
 export const overflowStory = () => (
   <Input.Select
     id="input-1"
@@ -434,6 +435,7 @@ export const multiSelectUncontrolled = () =>
       />
     );
   });
+
 export const tracking = () => (
   <TrackingContext.Provider
     value={{
@@ -454,6 +456,7 @@ export const tracking = () => (
     />
   </TrackingContext.Provider>
 );
+
 export const searchStory = () => (
   <Input.Select
     id="input-1"
@@ -580,6 +583,7 @@ export const actions = () =>
       />
     );
   });
+
 export const actionsAndEmptyOptionList = () =>
   createElement(() => {
     const [value, setValue] = useState([]);
@@ -616,6 +620,7 @@ export const actionsAndEmptyOptionList = () =>
       />
     );
   });
+
 export const fullyEmpty = () =>
   createElement(() => {
     const [value, setValue] = useState([]);
@@ -683,7 +688,7 @@ export const multiselect = () =>
     );
   });
 
-const MultiselectColumnsTemplate: Story<{ itemsPerColumn: number; columnWidth: string }> = (
+const MultiselectColumnsTemplate: StoryFn<{ itemsPerColumn: number; columnWidth: string }> = (
   args,
 ) => {
   const MultiselectColumnsExample = () => {
@@ -726,10 +731,13 @@ const MultiselectColumnsTemplate: Story<{ itemsPerColumn: number; columnWidth: s
   return <MultiselectColumnsExample />;
 };
 
-export const MultiselectColumns = MultiselectColumnsTemplate.bind({});
-MultiselectColumns.args = {
-  itemsPerColumn: 4,
-  columnWidth: '200px',
+export const MultiselectColumns = {
+  render: MultiselectColumnsTemplate,
+
+  args: {
+    itemsPerColumn: 4,
+    columnWidth: '200px',
+  },
 };
 
 export const multiselectActions = () =>
@@ -972,85 +980,87 @@ export const accessibleFromDocumentForms = () =>
     );
   });
 
-export const controlledBehaviour = () =>
-  createElement(() => {
-    const [value, setValue] = useState(() => [accountOptions[1]]);
-    return (
-      <Input.Select
-        id="onchange-select"
-        options={accountOptions}
-        value={value}
-        // @ts-ignore
-        onChange={setValue}
-        label="User account"
-        placeholder="Select account"
-      />
-    );
-  });
-controlledBehaviour.story = {
+export const controlledBehaviour = {
+  render: () =>
+    createElement(() => {
+      const [value, setValue] = useState(() => [accountOptions[1]]);
+      return (
+        <Input.Select
+          id="onchange-select"
+          options={accountOptions}
+          value={value}
+          // @ts-ignore
+          onChange={setValue}
+          label="User account"
+          placeholder="Select account"
+        />
+      );
+    }),
+
   name: 'Controlled behaviour',
 };
 
-export const defaultVariations = () => {
-  return (
-    <Display
-      items={[
-        {
-          title: 'Disabled',
-          component: (
-            <Input.Select
-              id="disabled-select"
-              options={accountOptions}
-              label="User account"
-              disabled
-              placeholder="Select account"
-            />
-          ),
-        },
-        {
-          title: 'Error',
-          component: (
-            <Input.Select
-              options={accountOptions}
-              id="error-select"
-              label="User account"
-              error="Some error"
-              placeholder="Select account"
-            />
-          ),
-        },
-        {
-          title: 'Info',
-          component: (
-            <Input.Select
-              options={accountOptions}
-              id="info-select"
-              label="User account"
-              extraInfo="Some extra info"
-              placeholder="Select account"
-            />
-          ),
-        },
-        {
-          title: 'Success',
-          component: (
-            <Input.Select
-              id="success-select"
-              options={accountOptions}
-              label="User account"
-              success
-              placeholder="Select account"
-            />
-          ),
-        },
-      ]}
-    />
-  );
-};
+export const defaultVariations = {
+  render: () => {
+    return (
+      <Display
+        items={[
+          {
+            title: 'Disabled',
+            component: (
+              <Input.Select
+                id="disabled-select"
+                options={accountOptions}
+                label="User account"
+                disabled
+                placeholder="Select account"
+              />
+            ),
+          },
+          {
+            title: 'Error',
+            component: (
+              <Input.Select
+                options={accountOptions}
+                id="error-select"
+                label="User account"
+                error="Some error"
+                placeholder="Select account"
+              />
+            ),
+          },
+          {
+            title: 'Info',
+            component: (
+              <Input.Select
+                options={accountOptions}
+                id="info-select"
+                label="User account"
+                extraInfo="Some extra info"
+                placeholder="Select account"
+              />
+            ),
+          },
+          {
+            title: 'Success',
+            component: (
+              <Input.Select
+                id="success-select"
+                options={accountOptions}
+                label="User account"
+                success
+                placeholder="Select account"
+              />
+            ),
+          },
+        ]}
+      />
+    );
+  },
 
-defaultVariations.story = {
   name: 'Default variations',
 };
+
 export const sizeS = () => {
   return (
     <Display
@@ -1876,7 +1886,7 @@ export const withoutSearchComponent = () => (
   </Box>
 );
 
-const CustomHeightTemplate: Story<Props> = (args) => (
+const CustomHeightTemplate: StoryFn<Props> = (args) => (
   <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
     <CardWithTitle title="Setting a custom `height` overwrites the `size` prop">
       <Input.Select
@@ -1895,50 +1905,53 @@ const CustomHeightTemplate: Story<Props> = (args) => (
   </Box>
 );
 
-export const WithCustomHeight = CustomHeightTemplate.bind({});
-WithCustomHeight.args = {
-  height: 20,
+export const WithCustomHeight = {
+  render: CustomHeightTemplate,
+
+  args: {
+    height: 20,
+  },
 };
 
-export const withLabelTooltipInsideModal = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(true);
+export const withLabelTooltipInsideModal = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
 
-    const onOpen = () => {
-      setOpen(true);
+      const onOpen = () => {
+        setOpen(true);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <>
+          <button type="button" onClick={onOpen}>
+            Open modal
+          </button>
+          <Modal onClose={onClose} title="Dialog information" open={open}>
+            <Box mb={2}>
+              <Input.Select
+                id="input-without-a-search-component"
+                label="Without search component"
+                placeholder="Select an option"
+                options={[
+                  { label: 'foo', value: 1 },
+                  { label: 'bar', value: 2 },
+                ]}
+                disableSearchComponent
+                labelTooltipInModal
+                labelTooltip="Tooltip content"
+              />
+            </Box>
+          </Modal>
+        </>
+      );
     };
+    return <Example />;
+  },
 
-    const onClose = () => {
-      setOpen(false);
-    };
-
-    return (
-      <>
-        <button type="button" onClick={onOpen}>
-          Open modal
-        </button>
-        <Modal onClose={onClose} title="Dialog information" open={open}>
-          <Box mb={2}>
-            <Input.Select
-              id="input-without-a-search-component"
-              label="Without search component"
-              placeholder="Select an option"
-              options={[
-                { label: 'foo', value: 1 },
-                { label: 'bar', value: 2 },
-              ]}
-              disableSearchComponent
-              labelTooltipInModal
-              labelTooltip="Tooltip content"
-            />
-          </Box>
-        </Modal>
-      </>
-    );
-  };
-  return <Example />;
-};
-
-withLabelTooltipInsideModal.story = {
   name: 'With label tooltip inside modal',
 };

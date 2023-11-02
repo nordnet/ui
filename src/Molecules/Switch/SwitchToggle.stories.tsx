@@ -10,83 +10,83 @@ export default {
   },
 };
 
-export const defaultSwitchToggle = () => {
-  const DefaultSwitchToggle = () => {
-    const toggleOptions = {
-      left: 'SEK',
-      right: '%',
+export const defaultSwitchToggle = {
+  render: () => {
+    const DefaultSwitchToggle = () => {
+      const toggleOptions = {
+        left: 'SEK',
+        right: '%',
+      };
+
+      const [toggled, setToggled] = useState<boolean>(false);
+      const toggledValue = toggled ? toggleOptions.right : toggleOptions.left;
+
+      return (
+        <Box py={5} backgroundColor={(t) => t.color.bubbleBackground}>
+          <Flexbox container gap={2}>
+            <Flexbox container item>
+              <SwitchToggle
+                checked={toggled}
+                label="finance toggle"
+                onClick={() => setToggled((prevState) => !prevState)}
+                valueLeft={toggleOptions.left}
+                valueRight={toggleOptions.right}
+                hiddenLabel
+              />
+            </Flexbox>
+            <Flexbox container item>
+              <Box pl={1}>
+                <Typography>Active: {toggledValue}</Typography>
+              </Box>
+            </Flexbox>
+          </Flexbox>
+        </Box>
+      );
     };
 
-    const [toggled, setToggled] = useState<boolean>(false);
-    const toggledValue = toggled ? toggleOptions.right : toggleOptions.left;
+    return <DefaultSwitchToggle />;
+  },
 
-    return (
-      <Box py={5} backgroundColor={(t) => t.color.bubbleBackground}>
-        <Flexbox container gap={2}>
-          <Flexbox container item>
-            <SwitchToggle
-              checked={toggled}
-              label="finance toggle"
-              onClick={() => setToggled((prevState) => !prevState)}
-              valueLeft={toggleOptions.left}
-              valueRight={toggleOptions.right}
-              hiddenLabel
-            />
-          </Flexbox>
-          <Flexbox container item>
-            <Box pl={1}>
-              <Typography>Active: {toggledValue}</Typography>
-            </Box>
-          </Flexbox>
-        </Flexbox>
-      </Box>
-    );
-  };
-
-  return <DefaultSwitchToggle />;
-};
-
-defaultSwitchToggle.story = {
   name: 'Default  Switch Toggle',
 };
 
-export const augmentedWidthSwitchToggle = () => {
-  const AugmentedWidthSwitchToggle = () => {
-    const toggleOptions = {
-      left: 'Swedish',
-      right: 'Finnish',
+export const augmentedWidthSwitchToggle = {
+  render: () => {
+    const AugmentedWidthSwitchToggle = () => {
+      const toggleOptions = {
+        left: 'Swedish',
+        right: 'Finnish',
+      };
+
+      const [toggled, setToggled] = useState<boolean>(false);
+      const toggledValue = toggled ? toggleOptions.right : toggleOptions.left;
+
+      return (
+        <Box py={5} backgroundColor={(t) => t.color.bubbleBackground}>
+          <Flexbox container gap={2}>
+            <Flexbox container item>
+              <SwitchToggle
+                checked={toggled}
+                label="language toggle"
+                onClick={() => setToggled((prevState) => !prevState)}
+                valueLeft={toggleOptions.left}
+                valueRight={toggleOptions.right}
+                hiddenLabel
+                width={48}
+              />
+            </Flexbox>
+            <Flexbox container item>
+              <Box pl={1}>
+                <Typography>Active: {toggledValue}</Typography>
+              </Box>
+            </Flexbox>
+          </Flexbox>
+        </Box>
+      );
     };
 
-    const [toggled, setToggled] = useState<boolean>(false);
-    const toggledValue = toggled ? toggleOptions.right : toggleOptions.left;
+    return <AugmentedWidthSwitchToggle />;
+  },
 
-    return (
-      <Box py={5} backgroundColor={(t) => t.color.bubbleBackground}>
-        <Flexbox container gap={2}>
-          <Flexbox container item>
-            <SwitchToggle
-              checked={toggled}
-              label="language toggle"
-              onClick={() => setToggled((prevState) => !prevState)}
-              valueLeft={toggleOptions.left}
-              valueRight={toggleOptions.right}
-              hiddenLabel
-              width={48}
-            />
-          </Flexbox>
-          <Flexbox container item>
-            <Box pl={1}>
-              <Typography>Active: {toggledValue}</Typography>
-            </Box>
-          </Flexbox>
-        </Flexbox>
-      </Box>
-    );
-  };
-
-  return <AugmentedWidthSwitchToggle />;
-};
-
-augmentedWidthSwitchToggle.story = {
   name: 'Augmented Width Switch Toggle',
 };

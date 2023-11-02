@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { Box, Flexbox, Icon, Card } from '../..';
 import { FilterChip } from './FilterChip';
@@ -13,45 +13,63 @@ export default {
 
 const onChange = action('on change triggered');
 
-const Template: Story<Props> = (args) => (
+const Template: StoryFn<Props> = (args) => (
   <div style={{ padding: '10px', backgroundColor: 'white' }}>
     <FilterChip {...args} />
   </div>
 );
 
-export const OnlyLabel = Template.bind({});
-OnlyLabel.args = {
-  label: 'Default',
+export const OnlyLabel = {
+  render: Template,
+
+  args: {
+    label: 'Default',
+  },
 };
 
-export const OnlyIcon = Template.bind({});
-OnlyIcon.args = {
-  icon: <Icon.Money16 />,
+export const OnlyIcon = {
+  render: Template,
+
+  args: {
+    icon: <Icon.Money16 />,
+  },
 };
 
-export const BothIconAndLabel = Template.bind({});
-BothIconAndLabel.args = {
-  icon: <Icon.MonthlySavings16 />,
-  label: 'Default',
+export const BothIconAndLabel = {
+  render: Template,
+
+  args: {
+    icon: <Icon.MonthlySavings16 />,
+    label: 'Default',
+  },
 };
 
-export const AnotherIconAndLabel = Template.bind({});
-AnotherIconAndLabel.args = {
-  icon: <Icon.Money16 />,
-  label: 'Another label yqPomå',
+export const AnotherIconAndLabel = {
+  render: Template,
+
+  args: {
+    icon: <Icon.Money16 />,
+    label: 'Another label yqPomå',
+  },
 };
 
-export const WithSelectedInitially = Template.bind({});
-WithSelectedInitially.args = {
-  icon: <Icon.Money16 />,
-  selectedInitially: true,
+export const WithSelectedInitially = {
+  render: Template,
+
+  args: {
+    icon: <Icon.Money16 />,
+    selectedInitially: true,
+  },
 };
 
-export const WithDisabled = Template.bind({});
-WithDisabled.args = {
-  icon: <Icon.Money16 />,
-  label: 'disabled',
-  disabled: true,
+export const WithDisabled = {
+  render: Template,
+
+  args: {
+    icon: <Icon.Money16 />,
+    label: 'disabled',
+    disabled: true,
+  },
 };
 
 export const SustainabilityVariant = () => (

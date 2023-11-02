@@ -21,25 +21,22 @@ export default {
   },
 };
 
-export const defaultStory = () => <Input.Checkbox name="example" value="green" label="Green" />;
-
-defaultStory.story = {
+export const defaultStory = {
+  render: () => <Input.Checkbox name="example" value="green" label="Green" />,
   name: 'Default',
 };
 
-export const circleStory = () => (
-  <Input.Checkbox name="example" value="green" label="Green" shape={Shape.Circle} />
-);
+export const circleStory = {
+  render: () => <Input.Checkbox name="example" value="green" label="Green" shape={Shape.Circle} />,
 
-circleStory.story = {
   name: 'Circle',
 };
 
-export const defaultStoryWithTooltip = () => (
-  <Input.Checkbox name="example" value="green" label="Green" labelTooltip="Checkbox tooltip" />
-);
+export const defaultStoryWithTooltip = {
+  render: () => (
+    <Input.Checkbox name="example" value="green" label="Green" labelTooltip="Checkbox tooltip" />
+  ),
 
-defaultStoryWithTooltip.story = {
   name: 'Default with tooltip',
 };
 
@@ -57,335 +54,334 @@ export const defaultStoryWithTooltipPositionTop = () => (
   </>
 );
 
-export const defaultStoryWithTooltipParagraph = () => (
-  <Input.Checkbox
-    name="example"
-    value="green"
-    label="Quisque varius massa ut augue convallis, ac vehicula orci aliquet. Mauris consequat pretium tempus. Morbi sagittis facilisis pellentesque. Maecenas sodales neque nec sapien suscipit tempus. Quisque elementum auctor urna, nec laoreet nibh vehicula et."
-    labelTooltip="Checkbox tooltip"
-  />
-);
-
-defaultStoryWithTooltipParagraph.story = {
-  name: 'Default with tooltip with a long paragraph',
-};
-
-export const defaultStoryWithTooltipPositionTopParagraph = () => (
-  <>
-    <br />
+export const defaultStoryWithTooltipParagraph = {
+  render: () => (
     <Input.Checkbox
       name="example"
       value="green"
       label="Quisque varius massa ut augue convallis, ac vehicula orci aliquet. Mauris consequat pretium tempus. Morbi sagittis facilisis pellentesque. Maecenas sodales neque nec sapien suscipit tempus. Quisque elementum auctor urna, nec laoreet nibh vehicula et."
       labelTooltip="Checkbox tooltip"
-      labelTooltipPosition="top"
     />
-  </>
-);
+  ),
 
-defaultStoryWithTooltipPositionTopParagraph.story = {
+  name: 'Default with tooltip with a long paragraph',
+};
+
+export const defaultStoryWithTooltipPositionTopParagraph = {
+  render: () => (
+    <>
+      <br />
+      <Input.Checkbox
+        name="example"
+        value="green"
+        label="Quisque varius massa ut augue convallis, ac vehicula orci aliquet. Mauris consequat pretium tempus. Morbi sagittis facilisis pellentesque. Maecenas sodales neque nec sapien suscipit tempus. Quisque elementum auctor urna, nec laoreet nibh vehicula et."
+        labelTooltip="Checkbox tooltip"
+        labelTooltipPosition="top"
+      />
+    </>
+  ),
+
   name: 'Default with tooltip (position top) with a long paragraph',
 };
 
-export const withDefaultChecked = () => (
-  <Input.Checkbox name="example" value="green" label="Green" defaultChecked />
-);
+export const withDefaultChecked = {
+  render: () => <Input.Checkbox name="example" value="green" label="Green" defaultChecked />,
 
-withDefaultChecked.story = {
   name: 'With default checked',
 };
 
-export const withCheckedControlledBehaviour = () => {
-  const Component = () => {
-    const [checked, setChecked] = useState(false);
-    const toggleCheckbox = () => setChecked(!checked);
+export const withCheckedControlledBehaviour = {
+  render: () => {
+    const Component = () => {
+      const [checked, setChecked] = useState(false);
+      const toggleCheckbox = () => setChecked(!checked);
 
-    return (
-      <>
-        <Input.Checkbox
-          name="example"
-          value="green"
-          label="Green"
-          checked={checked}
-          onChange={toggleCheckbox}
-        />
-        <button type="button" onClick={toggleCheckbox}>
-          Toggle Checkbox
-        </button>
-      </>
-    );
-  };
-  return <Component />;
-};
-
-withCheckedControlledBehaviour.story = {
-  name: 'With checked (Controlled behaviour)',
-};
-
-export const requiredStory = () => (
-  <Display
-    title="Required"
-    items={[
-      {
-        component: <Input.Checkbox name="example" value="green" label="Green" required />,
-        title: 'Default (without star)',
-      },
-      {
-        component: (
+      return (
+        <>
           <Input.Checkbox
             name="example"
             value="green"
             label="Green"
-            required
-            visuallyEmphasiseRequired
+            checked={checked}
+            onChange={toggleCheckbox}
           />
-        ),
-        title: 'With star',
-      },
-    ]}
-  />
-);
+          <button type="button" onClick={toggleCheckbox}>
+            Toggle Checkbox
+          </button>
+        </>
+      );
+    };
+    return <Component />;
+  },
 
-requiredStory.story = {
+  name: 'With checked (Controlled behaviour)',
+};
+
+export const requiredStory = {
+  render: () => (
+    <Display
+      title="Required"
+      items={[
+        {
+          component: <Input.Checkbox name="example" value="green" label="Green" required />,
+          title: 'Default (without star)',
+        },
+        {
+          component: (
+            <Input.Checkbox
+              name="example"
+              value="green"
+              label="Green"
+              required
+              visuallyEmphasiseRequired
+            />
+          ),
+          title: 'With star',
+        },
+      ]}
+    />
+  ),
+
   name: 'Required',
 };
 
-export const withAnErrorIfNotChecked = () => {
-  const Component = () => {
-    const [checked, setChecked] = useState(false);
-    const toggleCheckbox = () => setChecked(!checked);
+export const withAnErrorIfNotChecked = {
+  render: () => {
+    const Component = () => {
+      const [checked, setChecked] = useState(false);
+      const toggleCheckbox = () => setChecked(!checked);
 
-    return (
-      <Input.Checkbox
-        name="example"
-        value="green"
-        label="Green"
-        required
-        onChange={toggleCheckbox}
-        {...(!checked ? { error: 'This field is required' } : {})}
-      />
-    );
-  };
-  return <Component />;
-};
+      return (
+        <Input.Checkbox
+          name="example"
+          value="green"
+          label="Green"
+          required
+          onChange={toggleCheckbox}
+          {...(!checked ? { error: 'This field is required' } : {})}
+        />
+      );
+    };
+    return <Component />;
+  },
 
-withAnErrorIfNotChecked.story = {
   name: 'With an error if not checked',
 };
 
-export const inAGroup = () => (
-  <FormField label="Colors" group>
-    <Flexbox container gap={5}>
-      <Input.Checkbox name="example" value="green" label="Green" />
-      <Input.Checkbox name="example" value="blue" label="Blue" />
-      <Input.Checkbox name="example" value="yellow" label="Yellow" />
-    </Flexbox>
-  </FormField>
-);
-
-inAGroup.story = {
-  name: 'In a group',
-};
-
-export const inAGroupWithTooltip = () => (
-  <FormField label="Colors" labelTooltip="Checkboxgroup tooltip" group>
-    <Flexbox container gap={5}>
-      <Input.Checkbox name="example" value="green" label="Green" />
-      <Input.Checkbox name="example" value="blue" label="Blue" />
-      <Input.Checkbox name="example" value="yellow" label="Yellow" />
-    </Flexbox>
-  </FormField>
-);
-
-inAGroupWithTooltip.story = {
-  name: 'In a group with a label tooltip',
-};
-
-export const inAGroupWithTooltipPositionTop = () => (
-  <>
-    <br />
-    <br />
-    <FormField label="Colors" labelTooltip="Checkboxgroup tooltip" labelTooltipPosition="top" group>
+export const inAGroup = {
+  render: () => (
+    <FormField label="Colors" group>
       <Flexbox container gap={5}>
         <Input.Checkbox name="example" value="green" label="Green" />
         <Input.Checkbox name="example" value="blue" label="Blue" />
         <Input.Checkbox name="example" value="yellow" label="Yellow" />
       </Flexbox>
     </FormField>
-  </>
-);
+  ),
 
-inAGroupWithTooltipPositionTop.story = {
+  name: 'In a group',
+};
+
+export const inAGroupWithTooltip = {
+  render: () => (
+    <FormField label="Colors" labelTooltip="Checkboxgroup tooltip" group>
+      <Flexbox container gap={5}>
+        <Input.Checkbox name="example" value="green" label="Green" />
+        <Input.Checkbox name="example" value="blue" label="Blue" />
+        <Input.Checkbox name="example" value="yellow" label="Yellow" />
+      </Flexbox>
+    </FormField>
+  ),
+
+  name: 'In a group with a label tooltip',
+};
+
+export const inAGroupWithTooltipPositionTop = {
+  render: () => (
+    <>
+      <br />
+      <br />
+      <FormField
+        label="Colors"
+        labelTooltip="Checkboxgroup tooltip"
+        labelTooltipPosition="top"
+        group
+      >
+        <Flexbox container gap={5}>
+          <Input.Checkbox name="example" value="green" label="Green" />
+          <Input.Checkbox name="example" value="blue" label="Blue" />
+          <Input.Checkbox name="example" value="yellow" label="Yellow" />
+        </Flexbox>
+      </FormField>
+    </>
+  ),
+
   name: 'In a group with a label tooltip (position top)',
 };
 
-export const inAGroupWithError = () => {
-  const Component = () => {
-    const [oneChecked, setOneChecked] = useState(false);
-    const [twoChecked, setTwoChecked] = useState(false);
-    const [threeChecked, setThreeChecked] = useState(false);
-    const hasGroupError = !oneChecked && !twoChecked && !threeChecked;
+export const inAGroupWithError = {
+  render: () => {
+    const Component = () => {
+      const [oneChecked, setOneChecked] = useState(false);
+      const [twoChecked, setTwoChecked] = useState(false);
+      const [threeChecked, setThreeChecked] = useState(false);
+      const hasGroupError = !oneChecked && !twoChecked && !threeChecked;
 
-    return (
-      <FormField
-        label="Colors"
-        group
-        {...(hasGroupError ? { error: 'This field is required' } : {})}
-      >
-        <Flexbox container gap={5}>
-          <Input.Checkbox
-            name="example"
-            value="green"
-            label="Green"
-            hasError={hasGroupError}
-            onChange={() => setOneChecked(!oneChecked)}
-            required
-          />
-          <Input.Checkbox
-            name="example"
-            value="blue"
-            label="Blue"
-            hasError={hasGroupError}
-            onChange={() => setTwoChecked(!twoChecked)}
-            required
-          />
-          <Input.Checkbox
-            name="example"
-            value="yellow"
-            label="Yellow"
-            hasError={hasGroupError}
-            onChange={() => setThreeChecked(!threeChecked)}
-            required
-          />
-        </Flexbox>
-      </FormField>
-    );
-  };
-  return <Component />;
-};
+      return (
+        <FormField
+          label="Colors"
+          group
+          {...(hasGroupError ? { error: 'This field is required' } : {})}
+        >
+          <Flexbox container gap={5}>
+            <Input.Checkbox
+              name="example"
+              value="green"
+              label="Green"
+              hasError={hasGroupError}
+              onChange={() => setOneChecked(!oneChecked)}
+              required
+            />
+            <Input.Checkbox
+              name="example"
+              value="blue"
+              label="Blue"
+              hasError={hasGroupError}
+              onChange={() => setTwoChecked(!twoChecked)}
+              required
+            />
+            <Input.Checkbox
+              name="example"
+              value="yellow"
+              label="Yellow"
+              hasError={hasGroupError}
+              onChange={() => setThreeChecked(!threeChecked)}
+              required
+            />
+          </Flexbox>
+        </FormField>
+      );
+    };
+    return <Component />;
+  },
 
-inAGroupWithError.story = {
   name: 'In a group with error',
 };
 
-export const disabledStory = () => (
-  <Display
-    title="Disabled"
-    items={[
-      {
-        component: (
-          <Input.Checkbox name="example" value="green" label="Green" defaultChecked disabled />
-        ),
-        title: 'Checked',
-      },
-      {
-        component: <Input.Checkbox name="example" value="blue" label="Blue" disabled />,
-        title: 'Not Checked',
-      },
-      {
-        component: <Input.Checkbox name="example" value="red" label="Red" />,
-        title: 'Not Disabled',
-      },
-    ]}
-  />
-);
+export const disabledStory = {
+  render: () => (
+    <Display
+      title="Disabled"
+      items={[
+        {
+          component: (
+            <Input.Checkbox name="example" value="green" label="Green" defaultChecked disabled />
+          ),
+          title: 'Checked',
+        },
+        {
+          component: <Input.Checkbox name="example" value="blue" label="Blue" disabled />,
+          title: 'Not Checked',
+        },
+        {
+          component: <Input.Checkbox name="example" value="red" label="Red" />,
+          title: 'Not Disabled',
+        },
+      ]}
+    />
+  ),
 
-disabledStory.story = {
   name: 'Disabled',
 };
 
-export const withAutoFocus = () => (
-  <Input.Checkbox name="example" value="green" label="Green" autoFocus />
-);
+export const withAutoFocus = {
+  render: () => <Input.Checkbox name="example" value="green" label="Green" autoFocus />,
 
-withAutoFocus.story = {
   name: 'With auto focus',
 };
 
-export const withAllActions = () => (
-  <Input.Checkbox name="example6" value="green" label="Green" {...handlers} />
-);
+export const withAllActions = {
+  render: () => <Input.Checkbox name="example6" value="green" label="Green" {...handlers} />,
 
-withAllActions.story = {
   name: 'With all actions',
 };
 
-export const elementLabelStory = () => {
-  const label = (
-    <>
-      <Typography type="secondary" weight="bold">
-        The first part is bold,
-      </Typography>{' '}
-      <Typography type="secondary" weight="regular">
-        the second part is regular
-      </Typography>
-    </>
-  );
-  return <Input.Checkbox name="example" value="element" label={label} />;
-};
+export const elementLabelStory = {
+  render: () => {
+    const label = (
+      <>
+        <Typography type="secondary" weight="bold">
+          The first part is bold,
+        </Typography>{' '}
+        <Typography type="secondary" weight="regular">
+          the second part is regular
+        </Typography>
+      </>
+    );
+    return <Input.Checkbox name="example" value="element" label={label} />;
+  },
 
-elementLabelStory.story = {
   name: 'Element as label',
 };
 
-export const withDifferentSizes = () => {
-  return (
-    <Flexbox container direction="column" gap={1}>
-      <Input.Checkbox name="small" value="1" size="s" label="small" />
-      <Input.Checkbox name="medium" value="2" label="medium" />
-      <Input.Checkbox name="default" value="3" label="default" />
-    </Flexbox>
-  );
-};
+export const withDifferentSizes = {
+  render: () => {
+    return (
+      <Flexbox container direction="column" gap={1}>
+        <Input.Checkbox name="small" value="1" size="s" label="small" />
+        <Input.Checkbox name="medium" value="2" label="medium" />
+        <Input.Checkbox name="default" value="3" label="default" />
+      </Flexbox>
+    );
+  },
 
-withDifferentSizes.story = {
   name: 'Checkboxes with different size',
 };
 
-export const onAColouredBackground = () => (
-  <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
-    <Input.Checkbox name="background" value="background" label="On a colored background" />
-  </Box>
-);
+export const onAColouredBackground = {
+  render: () => (
+    <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
+      <Input.Checkbox name="background" value="background" label="On a colored background" />
+    </Box>
+  ),
 
-onAColouredBackground.story = {
   name: 'On a coloured background',
 };
 
-export const withLabelTooltipInsideModal = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(true);
+export const withLabelTooltipInsideModal = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
 
-    const onOpen = () => {
-      setOpen(true);
+      const onOpen = () => {
+        setOpen(true);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <>
+          <button type="button" onClick={onOpen}>
+            Open modal
+          </button>
+          <Modal onClose={onClose} title="Dialog information" open={open}>
+            <Box mb={2}>
+              <Input.Checkbox
+                label="Label"
+                name="foo"
+                value="bar"
+                labelTooltipInModal
+                labelTooltip="Tooltip content"
+              />
+            </Box>
+          </Modal>
+        </>
+      );
     };
+    return <Example />;
+  },
 
-    const onClose = () => {
-      setOpen(false);
-    };
-
-    return (
-      <>
-        <button type="button" onClick={onOpen}>
-          Open modal
-        </button>
-        <Modal onClose={onClose} title="Dialog information" open={open}>
-          <Box mb={2}>
-            <Input.Checkbox
-              label="Label"
-              name="foo"
-              value="bar"
-              labelTooltipInModal
-              labelTooltip="Tooltip content"
-            />
-          </Box>
-        </Modal>
-      </>
-    );
-  };
-  return <Example />;
-};
-
-withLabelTooltipInsideModal.story = {
   name: 'With label tooltip inside modal',
 };

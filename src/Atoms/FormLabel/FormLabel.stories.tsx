@@ -9,38 +9,38 @@ export default {
   },
 };
 
-export const defaultStory = () => (
-  <>
-    <FormLabel forId="unique-id">Username</FormLabel>
-    <input type="text" id="unique-id" />
-  </>
-);
+export const defaultStory = {
+  render: () => (
+    <>
+      <FormLabel forId="unique-id">Username</FormLabel>
+      <input type="text" id="unique-id" />
+    </>
+  ),
 
-defaultStory.story = {
   name: 'Default',
 };
 
-export const withHiddenLabel = () => (
-  <>
-    <FormLabel forId="unique-id-2" hideLabel>
-      Username
-    </FormLabel>
-    <input type="text" id="unique-id-2" />
-  </>
-);
+export const withHiddenLabel = {
+  render: () => (
+    <>
+      <FormLabel forId="unique-id-2" hideLabel>
+        Username
+      </FormLabel>
+      <input type="text" id="unique-id-2" />
+    </>
+  ),
 
-withHiddenLabel.story = {
   name: 'With hidden label',
 };
 
-export const asAWrapper = () => (
-  <FormLabel>
-    Username
-    <input type="text" />
-  </FormLabel>
-);
+export const asAWrapper = {
+  render: () => (
+    <FormLabel>
+      Username
+      <input type="text" />
+    </FormLabel>
+  ),
 
-asAWrapper.story = {
   name: 'As a wrapper',
 };
 
@@ -52,7 +52,3 @@ export const disabled = () => (
     <input type="text" id="unique-id" disabled />
   </>
 );
-
-defaultStory.story = {
-  name: 'Default',
-};

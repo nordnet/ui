@@ -18,12 +18,12 @@ export const documentation = () => (
   </Typography>
 );
 
-export const defaultUsage = () => (
-  <Button.Icon onClick={action('clicked')}>
-    <Icon.Attachment16 />
-  </Button.Icon>
-);
+export const defaultUsage = {
+  render: () => (
+    <Button.Icon onClick={action('clicked')}>
+      <Icon.Attachment16 />
+    </Button.Icon>
+  ),
 
-defaultUsage.story = {
   name: 'Default usage',
 };

@@ -49,7 +49,6 @@ export const UncontrolledSortableHeadersThatSavesLastSorted = () => {
   );
 };
 
-// For useState to work in storybook, components needs to be wrapped in a new function
 export const ControlledSortableHeadersThatSavesLastSorted = () => {
   const ControlledSortableHeadersExample = () => {
     const ReactComponent = () => {

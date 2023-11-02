@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import docs from './CardWithTitle.md';
 import { Props } from './CardWithTitle.types';
@@ -47,15 +47,11 @@ export default {
 
 export const documentation = () => <MD>{docs}</MD>;
 
-export const defaultStory = () => (
-  <CardWithTitle title="Konton">A CardWithTitle containing content</CardWithTitle>
-);
+export const defaultStory = {
+  render: () => <CardWithTitle title="Konton">A CardWithTitle containing content</CardWithTitle>,
 
-const Template: Story<Props & { children: React.ReactNode }> = (args) => (
-  <CardWithTitle {...args} />
-);
-
-defaultStory.storyName = 'Default';
+  name: 'Default',
+};
 
 export const withComponentAsTitle = () => (
   <CardWithTitle title={<Typography type="hero">Hero Title</Typography>}>
@@ -69,14 +65,15 @@ export const withVariantBig = () => (
   </CardWithTitle>
 );
 
-export const cardWithTitleAsArticleMostCardWithTitleShouldBeArticle = () => (
-  <CardWithTitle as="article" title="Konton">
-    A CardWithTitle as a article containing content
-  </CardWithTitle>
-);
+export const cardWithTitleAsArticleMostCardWithTitleShouldBeArticle = {
+  render: () => (
+    <CardWithTitle as="article" title="Konton">
+      A CardWithTitle as a article containing content
+    </CardWithTitle>
+  ),
 
-cardWithTitleAsArticleMostCardWithTitleShouldBeArticle.storyName =
-  'CardWithTitle as article (most CardWithTitle should be article)';
+  name: 'CardWithTitle as article (most CardWithTitle should be article)',
+};
 
 export const cardWithTitleAsSection = () => (
   <CardWithTitle as="section" title="Konton">
@@ -94,82 +91,88 @@ const PaddedIcon = styled(OldIcon.ArrowRight)`
   padding-left: ${(p) => p.theme.spacing.unit(1)}px;
 `;
 
-export const integrationCardWithTitleWithCustomComponentAsTitle = () => {
-  const CustomTitle = (
-    <Flexbox container justifyContent="space-between" alignItems="center" direction="row">
-      <Flexbox item>
-        <Typography type="title3" as="h2">
-          Konton
-        </Typography>
+export const integrationCardWithTitleWithCustomComponentAsTitle = {
+  render: () => {
+    const CustomTitle = (
+      <Flexbox container justifyContent="space-between" alignItems="center" direction="row">
+        <Flexbox item>
+          <Typography type="title3" as="h2">
+            Konton
+          </Typography>
+        </Flexbox>
+        <Flexbox item>
+          <Typography type="secondary" color={(t) => t.color.text} weight="bold">
+            Marknadsöversikt (not really a link)
+          </Typography>
+          <PaddedIcon inline color={(t) => t.color.cta} size={3} />
+        </Flexbox>
       </Flexbox>
-      <Flexbox item>
-        <Typography type="secondary" color={(t) => t.color.text} weight="bold">
-          Marknadsöversikt (not really a link)
-        </Typography>
-        <PaddedIcon inline color={(t) => t.color.cta} size={3} />
-      </Flexbox>
-    </Flexbox>
-  );
+    );
 
-  return (
-    <CardWithTitle title={CustomTitle}>
-      <Box px={5} pb={5}>
-        <MockedContent />
-      </Box>
-    </CardWithTitle>
-  );
-};
-
-integrationCardWithTitleWithCustomComponentAsTitle.storyName =
-  'Integration: CardWithTitle with custom component as title';
-
-export const integrationWithFadedScroll = () => {
-  const CustomTitle = (
-    <Typography type="title3" as="h2">
-      Konton
-    </Typography>
-  );
-
-  return (
-    <CardWithTitle title={CustomTitle}>
-      <FadedScroll maxHeight={50}>
-        <Box px={5}>
+    return (
+      <CardWithTitle title={CustomTitle}>
+        <Box px={5} pb={5}>
           <MockedContent />
         </Box>
-      </FadedScroll>
-    </CardWithTitle>
-  );
+      </CardWithTitle>
+    );
+  },
+
+  name: 'Integration: CardWithTitle with custom component as title',
 };
 
-integrationWithFadedScroll.storyName = 'Integration: with FadedScroll';
+export const integrationWithFadedScroll = {
+  render: () => {
+    const CustomTitle = (
+      <Typography type="title3" as="h2">
+        Konton
+      </Typography>
+    );
 
-export const integrationFadedScrollWithHeightFromParent = () => {
-  const CustomTitle = (
-    <Typography type="title3" as="h2">
-      Konton
-    </Typography>
-  );
+    return (
+      <CardWithTitle title={CustomTitle}>
+        <FadedScroll maxHeight={50}>
+          <Box px={5}>
+            <MockedContent />
+          </Box>
+        </FadedScroll>
+      </CardWithTitle>
+    );
+  },
 
-  return (
-    <HeightOnCardWithTitle title={CustomTitle}>
-      <FadedScroll>
-        <Box px={5}>
-          <MockedContent />
-        </Box>
-      </FadedScroll>
-    </HeightOnCardWithTitle>
-  );
+  name: 'Integration: with FadedScroll',
 };
 
-integrationFadedScrollWithHeightFromParent.storyName =
-  'Integration: with FadedScroll of content and height being whatever is available left of parents height.';
+export const integrationFadedScrollWithHeightFromParent = {
+  render: () => {
+    const CustomTitle = (
+      <Typography type="title3" as="h2">
+        Konton
+      </Typography>
+    );
 
-export const WithoutAllVerticalPadding = Template.bind({});
-WithoutAllVerticalPadding.args = {
-  variant: 'normal',
-  title: 'This card has neither top nor bottom padding',
-  py: 0,
-  children:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat turpis erat, sit amet tincidunt purus tempus sit amet. Nullam porttitor lorem a nibh efficitur condimentum. Etiam ac dolor eget felis hendrerit pellentesque. Cras efficitur libero quis mattis condimentum. Vestibulum rhoncus nibh et euismod consequat. Etiam semper leo nisl, id aliquet libero consectetur in. Nunc vulputate nec mi eu iaculis. Quisque vel pellentesque odio. Donec tempus turpis nec vehicula tempor. Nulla facilisi. Suspendisse magna ex, vulputate quis risus non, eleifend tincidunt dui. Nam blandit vitae velit non consequat.',
+    return (
+      <HeightOnCardWithTitle title={CustomTitle}>
+        <FadedScroll>
+          <Box px={5}>
+            <MockedContent />
+          </Box>
+        </FadedScroll>
+      </HeightOnCardWithTitle>
+    );
+  },
+
+  name: 'Integration: with FadedScroll of content and height being whatever is available left of parents height.',
 };
-WithoutAllVerticalPadding.storyName = 'Cards without padding';
+
+export const WithoutAllVerticalPadding = {
+  args: {
+    variant: 'normal',
+    title: 'This card has neither top nor bottom padding',
+    py: 0,
+    children:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat turpis erat, sit amet tincidunt purus tempus sit amet. Nullam porttitor lorem a nibh efficitur condimentum. Etiam ac dolor eget felis hendrerit pellentesque. Cras efficitur libero quis mattis condimentum. Vestibulum rhoncus nibh et euismod consequat. Etiam semper leo nisl, id aliquet libero consectetur in. Nunc vulputate nec mi eu iaculis. Quisque vel pellentesque odio. Donec tempus turpis nec vehicula tempor. Nulla facilisi. Suspendisse magna ex, vulputate quis risus non, eleifend tincidunt dui. Nam blandit vitae velit non consequat.',
+  },
+
+  name: 'Cards without padding',
+};

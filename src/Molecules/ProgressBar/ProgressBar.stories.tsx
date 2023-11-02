@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import ProgressBar from '.';
 import { Box, Flexbox } from '../..';
@@ -10,20 +10,21 @@ export default {
   component: ProgressBar,
 } as Meta;
 
-const Template: Story<Props> = (args) => <ProgressBar {...args} />;
+export const DefaultStory = {
+  args: {
+    currentStep: 2,
+    numberOfSteps: 3,
+    stepLabels: [],
+  },
 
-export const DefaultStory = Template.bind({});
-DefaultStory.args = {
-  currentStep: 2,
-  numberOfSteps: 3,
-  stepLabels: [],
+  name: 'Default',
 };
-DefaultStory.storyName = 'Default';
 
-export const WithLabels = Template.bind({});
-WithLabels.args = {
-  ...DefaultStory.args,
-  stepLabels: ['Lorem ipsum', 'Dolor sit amet', 'Foo bar'],
+export const WithLabels = {
+  args: {
+    ...DefaultStory.args,
+    stepLabels: ['Lorem ipsum', 'Dolor sit amet', 'Foo bar'],
+  },
 };
 
 export const StepProgression = () => {

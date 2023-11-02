@@ -28,32 +28,27 @@ const SizeIcons = (size: string) => (
   </Flexbox>
 );
 
-export const size8 = () => <>{SizeIcons('8')}</>;
-
-size8.story = {
+export const size8 = {
+  render: () => <>{SizeIcons('8')}</>,
   name: '8px',
 };
 
-export const size12 = () => <>{SizeIcons('12')}</>;
-
-size12.story = {
+export const size12 = {
+  render: () => <>{SizeIcons('12')}</>,
   name: '12px',
 };
 
-export const size16 = () => <>{SizeIcons('16')}</>;
-
-size16.story = {
+export const size16 = {
+  render: () => <>{SizeIcons('16')}</>,
   name: '16px',
 };
 
-export const size24 = () => <>{SizeIcons('24')}</>;
-
-size24.story = {
+export const size24 = {
+  render: () => <>{SizeIcons('24')}</>,
   name: '24px',
 };
 
-export const size32 = () => <>{SizeIcons('32')}</>;
-
-size32.story = {
+export const size32 = {
+  render: () => <>{SizeIcons('32')}</>,
   name: '32px',
 };

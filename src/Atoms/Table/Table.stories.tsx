@@ -13,178 +13,178 @@ export default {
   title: 'Atoms / Table',
 };
 
-export const defaultStory = () => (
-  <Table width="100%">
-    <Thead>
-      <Tr>
-        <Th>Symbol</Th>
-        <Th>Name</Th>
-      </Tr>
-    </Thead>
-    <Tbody>
-      {tableData?.map((instrument, index) => (
-        <Tr key={`${instrument[0]}_${index}`}>
-          <Td>{instrument[1]}</Td>
-          <Td>{instrument[2]}</Td>
+export const defaultStory = {
+  render: () => (
+    <Table width="100%">
+      <Thead>
+        <Tr>
+          <Th>Symbol</Th>
+          <Th>Name</Th>
         </Tr>
-      ))}
-    </Tbody>
-    <Tfoot>
-      <Tr>
-        <Td>-</Td>
-        <Td>-</Td>
-      </Tr>
-    </Tfoot>
-  </Table>
-);
+      </Thead>
+      <Tbody>
+        {tableData?.map((instrument, index) => (
+          <Tr key={`${instrument[0]}_${index}`}>
+            <Td>{instrument[1]}</Td>
+            <Td>{instrument[2]}</Td>
+          </Tr>
+        ))}
+      </Tbody>
+      <Tfoot>
+        <Tr>
+          <Td>-</Td>
+          <Td>-</Td>
+        </Tr>
+      </Tfoot>
+    </Table>
+  ),
 
-defaultStory.story = {
   name: 'Default',
 };
 
-export const integrationTableWithTypography = () => {
-  return (
-    <Typography type="secondary">
-      <Table width="100%">
-        <Thead>
-          <Tr>
-            <Th width="25%">Symbol</Th>
-            <Th width="40%">Name</Th>
-            <Th width="10%" textAlign="right">
-              Development
-            </Th>
-            <Th width="10%">Last</Th>
-            <Th width="5%">Flag</Th>
-            <Th width="10%">Quantity</Th>
-          </Tr>
-        </Thead>
-        <Tbody>
-          {tableData?.map((instrument, index) => (
-            <Tr key={`${instrument[0]}_${index}`}>
-              <Td>{instrument[1]}</Td>
-              <Td>{instrument[2]}</Td>
-              <Td textAlign="right">{instrument[5]}%</Td>
-              <Td>{instrument[4]}</Td>
-              <Td>
-                <Flag country="se" size="m" />
-              </Td>
-              <Td>{instrument[3]}</Td>
+export const integrationTableWithTypography = {
+  render: () => {
+    return (
+      <Typography type="secondary">
+        <Table width="100%">
+          <Thead>
+            <Tr>
+              <Th width="25%">Symbol</Th>
+              <Th width="40%">Name</Th>
+              <Th width="10%" textAlign="right">
+                Development
+              </Th>
+              <Th width="10%">Last</Th>
+              <Th width="5%">Flag</Th>
+              <Th width="10%">Quantity</Th>
             </Tr>
-          ))}
-        </Tbody>
-        <Tfoot>
-          <Tr>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>-</Td>
-          </Tr>
-        </Tfoot>
-      </Table>
-    </Typography>
-  );
-};
+          </Thead>
+          <Tbody>
+            {tableData?.map((instrument, index) => (
+              <Tr key={`${instrument[0]}_${index}`}>
+                <Td>{instrument[1]}</Td>
+                <Td>{instrument[2]}</Td>
+                <Td textAlign="right">{instrument[5]}%</Td>
+                <Td>{instrument[4]}</Td>
+                <Td>
+                  <Flag country="se" size="m" />
+                </Td>
+                <Td>{instrument[3]}</Td>
+              </Tr>
+            ))}
+          </Tbody>
+          <Tfoot>
+            <Tr>
+              <Td>-</Td>
+              <Td>-</Td>
+              <Td>-</Td>
+              <Td>-</Td>
+              <Td>-</Td>
+              <Td>-</Td>
+            </Tr>
+          </Tfoot>
+        </Table>
+      </Typography>
+    );
+  },
 
-integrationTableWithTypography.story = {
   name: 'Integration: Table with Typography',
 };
 
-export const integrationTableWithTypographyAndEllipsisOnName = () => {
-  return (
-    <Typography type="secondary">
-      <Table width="100%">
-        <Thead>
-          <Tr>
-            <Th width="25%">Symbol</Th>
-            <Th width="40%">Name</Th>
-            <Th width="10%" textAlign="right">
-              Development
-            </Th>
-            <Th width="10%">Last</Th>
-            <Th width="5%">Flag</Th>
-            <Th width="10%">Quantity</Th>
-          </Tr>
-        </Thead>
-        <Tbody>
-          {tableData?.map((instrument, index) => (
-            <Tr key={`${instrument[0]}_${index}`}>
-              <Td>{instrument[1]}</Td>
-              <Td ellipsis>{instrument[2]}</Td>
-              <Td textAlign="right">{instrument[5]}%</Td>
-              <Td>{instrument[4]}</Td>
-              <Td>
-                <Flag country="se" size="m" />
-              </Td>
-              <Td>{instrument[3]}</Td>
+export const integrationTableWithTypographyAndEllipsisOnName = {
+  render: () => {
+    return (
+      <Typography type="secondary">
+        <Table width="100%">
+          <Thead>
+            <Tr>
+              <Th width="25%">Symbol</Th>
+              <Th width="40%">Name</Th>
+              <Th width="10%" textAlign="right">
+                Development
+              </Th>
+              <Th width="10%">Last</Th>
+              <Th width="5%">Flag</Th>
+              <Th width="10%">Quantity</Th>
             </Tr>
-          ))}
-        </Tbody>
-        <Tfoot>
-          <Tr>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>-</Td>
-          </Tr>
-        </Tfoot>
-      </Table>
-    </Typography>
-  );
-};
+          </Thead>
+          <Tbody>
+            {tableData?.map((instrument, index) => (
+              <Tr key={`${instrument[0]}_${index}`}>
+                <Td>{instrument[1]}</Td>
+                <Td ellipsis>{instrument[2]}</Td>
+                <Td textAlign="right">{instrument[5]}%</Td>
+                <Td>{instrument[4]}</Td>
+                <Td>
+                  <Flag country="se" size="m" />
+                </Td>
+                <Td>{instrument[3]}</Td>
+              </Tr>
+            ))}
+          </Tbody>
+          <Tfoot>
+            <Tr>
+              <Td>-</Td>
+              <Td>-</Td>
+              <Td>-</Td>
+              <Td>-</Td>
+              <Td>-</Td>
+              <Td>-</Td>
+            </Tr>
+          </Tfoot>
+        </Table>
+      </Typography>
+    );
+  },
 
-integrationTableWithTypographyAndEllipsisOnName.story = {
   name: 'Integration: Table with Typography and ellipsis on name',
 };
 
-export const integrationTableStickyHeaderWithTypography = () => {
-  return (
-    <Typography type="secondary">
-      <Table width="100%">
-        <Thead stickyHeader>
-          <Tr>
-            <Th width="25%">Symbol</Th>
-            <Th width="40%">Name</Th>
-            <Th width="10%" textAlign="right">
-              Development
-            </Th>
-            <Th width="10%">Last</Th>
-            <Th width="5%">Flag</Th>
-            <Th width="10%">Quantity</Th>
-          </Tr>
-        </Thead>
-        <Tbody>
-          {tableData?.map((instrument, index) => (
-            <Tr key={`${instrument[0]}_${index}`}>
-              <Td>{instrument[1]}</Td>
-              <Td>{instrument[2]}</Td>
-              <Td textAlign="right">{instrument[5]}%</Td>
-              <Td>{instrument[4]}</Td>
-              <Td>
-                <Flag country="SE" size="s" />
-              </Td>
-              <Td>{instrument[3]}</Td>
+export const integrationTableStickyHeaderWithTypography = {
+  render: () => {
+    return (
+      <Typography type="secondary">
+        <Table width="100%">
+          <Thead stickyHeader>
+            <Tr>
+              <Th width="25%">Symbol</Th>
+              <Th width="40%">Name</Th>
+              <Th width="10%" textAlign="right">
+                Development
+              </Th>
+              <Th width="10%">Last</Th>
+              <Th width="5%">Flag</Th>
+              <Th width="10%">Quantity</Th>
             </Tr>
-          ))}
-        </Tbody>
-        <Tfoot>
-          <Tr>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>-</Td>
-          </Tr>
-        </Tfoot>
-      </Table>
-    </Typography>
-  );
-};
+          </Thead>
+          <Tbody>
+            {tableData?.map((instrument, index) => (
+              <Tr key={`${instrument[0]}_${index}`}>
+                <Td>{instrument[1]}</Td>
+                <Td>{instrument[2]}</Td>
+                <Td textAlign="right">{instrument[5]}%</Td>
+                <Td>{instrument[4]}</Td>
+                <Td>
+                  <Flag country="SE" size="s" />
+                </Td>
+                <Td>{instrument[3]}</Td>
+              </Tr>
+            ))}
+          </Tbody>
+          <Tfoot>
+            <Tr>
+              <Td>-</Td>
+              <Td>-</Td>
+              <Td>-</Td>
+              <Td>-</Td>
+              <Td>-</Td>
+              <Td>-</Td>
+            </Tr>
+          </Tfoot>
+        </Table>
+      </Typography>
+    );
+  },
 
-integrationTableStickyHeaderWithTypography.story = {
   name: 'Integration: Table (stickyHeader) with Typography',
 };

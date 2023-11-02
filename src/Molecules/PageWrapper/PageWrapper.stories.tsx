@@ -17,26 +17,30 @@ export const documentation = () => (
   </Typography>
 );
 
-export const pageWrapper = () => (
-  <PageWrapper>
-    <Box py={4}>
-      <Typography type="primary">Page contents inside the PageWrapper can be anything.</Typography>
-    </Box>
-  </PageWrapper>
-);
+export const pageWrapper = {
+  render: () => (
+    <PageWrapper>
+      <Box py={4}>
+        <Typography type="primary">
+          Page contents inside the PageWrapper can be anything.
+        </Typography>
+      </Box>
+    </PageWrapper>
+  ),
 
-pageWrapper.story = {
   name: 'PageWrapper',
 };
 
-export const pageWrapperWithACustomBackground = () => (
-  <PageWrapper background={(t) => t.color.background}>
-    <Box py={4}>
-      <Typography type="primary">Page contents inside the PageWrapper can be anything.</Typography>
-    </Box>
-  </PageWrapper>
-);
+export const pageWrapperWithACustomBackground = {
+  render: () => (
+    <PageWrapper background={(t) => t.color.background}>
+      <Box py={4}>
+        <Typography type="primary">
+          Page contents inside the PageWrapper can be anything.
+        </Typography>
+      </Box>
+    </PageWrapper>
+  ),
 
-pageWrapperWithACustomBackground.story = {
   name: 'PageWrapper with a custom background',
 };

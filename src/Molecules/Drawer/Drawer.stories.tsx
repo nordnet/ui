@@ -90,106 +90,106 @@ const contentWithAccordion = (
   </Accordion>
 );
 
-export const defaultStory = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(true);
+export const defaultStory = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
 
-    const toggle = () => {
-      setOpen(!open);
+      const toggle = () => {
+        setOpen(!open);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <PageWrapper background={(t) => t.color.card}>
+          <Box py={100}>
+            <button type="button" onClick={toggle}>
+              Toggle drawer
+            </button>
+            <Drawer onClose={onClose} title="Drawer title" open={open}>
+              {contentLarge}
+            </Drawer>
+          </Box>
+        </PageWrapper>
+      );
     };
+    return <Example />;
+  },
 
-    const onClose = () => {
-      setOpen(false);
-    };
-
-    return (
-      <PageWrapper background={(t) => t.color.card}>
-        <Box py={100}>
-          <button type="button" onClick={toggle}>
-            Toggle drawer
-          </button>
-          <Drawer onClose={onClose} title="Drawer title" open={open}>
-            {contentLarge}
-          </Drawer>
-        </Box>
-      </PageWrapper>
-    );
-  };
-  return <Example />;
-};
-
-defaultStory.story = {
   name: 'Default',
 };
 
-export const withCustomTitle = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(true);
+export const withCustomTitle = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
 
-    const toggle = () => {
-      setOpen(!open);
+      const toggle = () => {
+        setOpen(!open);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <>
+          <button type="button" onClick={toggle}>
+            Toggle drawer
+          </button>
+          <Drawer
+            onClose={onClose}
+            title={
+              <Flexbox container gap={2} alignItems="center">
+                <OldIcon.Bank />
+                <Typography type="title2" as="h2">
+                  Custom title
+                </Typography>
+              </Flexbox>
+            }
+            open={open}
+          >
+            {contentSmall}
+          </Drawer>
+        </>
+      );
     };
+    return <Example />;
+  },
 
-    const onClose = () => {
-      setOpen(false);
-    };
-
-    return (
-      <>
-        <button type="button" onClick={toggle}>
-          Toggle drawer
-        </button>
-        <Drawer
-          onClose={onClose}
-          title={
-            <Flexbox container gap={2} alignItems="center">
-              <OldIcon.Bank />
-              <Typography type="title2" as="h2">
-                Custom title
-              </Typography>
-            </Flexbox>
-          }
-          open={open}
-        >
-          {contentSmall}
-        </Drawer>
-      </>
-    );
-  };
-  return <Example />;
-};
-
-withCustomTitle.story = {
   name: 'With a custom title',
 };
 
-export const withNoTitle = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(true);
+export const withNoTitle = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
 
-    const toggle = () => {
-      setOpen(!open);
+      const toggle = () => {
+        setOpen(!open);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <>
+          <button type="button" onClick={toggle}>
+            Toggle drawer
+          </button>
+          <Drawer onClose={onClose} open={open}>
+            {contentSmall}
+          </Drawer>
+        </>
+      );
     };
+    return <Example />;
+  },
 
-    const onClose = () => {
-      setOpen(false);
-    };
-
-    return (
-      <>
-        <button type="button" onClick={toggle}>
-          Toggle drawer
-        </button>
-        <Drawer onClose={onClose} open={open}>
-          {contentSmall}
-        </Drawer>
-      </>
-    );
-  };
-  return <Example />;
-};
-
-withNoTitle.story = {
   name: 'With no title',
 };
 
@@ -219,105 +219,105 @@ export const withCloseButtonTitle = () => {
   return <Example />;
 };
 
-export const integrationWithFadedScroll = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(true);
+export const integrationWithFadedScroll = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
 
-    const toggle = () => {
-      setOpen(!open);
+      const toggle = () => {
+        setOpen(!open);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <>
+          <button type="button" onClick={toggle}>
+            Toggle drawer
+          </button>
+          <Drawer onClose={onClose} title="Drawer title" open={open}>
+            <FadedScroll enableMobileFade>{contentLarge}</FadedScroll>
+          </Drawer>
+        </>
+      );
     };
+    return <Example />;
+  },
 
-    const onClose = () => {
-      setOpen(false);
-    };
-
-    return (
-      <>
-        <button type="button" onClick={toggle}>
-          Toggle drawer
-        </button>
-        <Drawer onClose={onClose} title="Drawer title" open={open}>
-          <FadedScroll enableMobileFade>{contentLarge}</FadedScroll>
-        </Drawer>
-      </>
-    );
-  };
-  return <Example />;
-};
-
-integrationWithFadedScroll.story = {
   name: 'Integration: With FadedScroll',
 };
 
-export const withFooterAndintegrationWithFadedScroll = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(true);
+export const withFooterAndintegrationWithFadedScroll = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
 
-    const toggle = () => {
-      setOpen(!open);
+      const toggle = () => {
+        setOpen(!open);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <>
+          <button type="button" onClick={toggle}>
+            Toggle drawer
+          </button>
+          <Drawer
+            onClose={onClose}
+            title="Drawer title"
+            open={open}
+            footer={
+              <Button variant="secondary" fullWidth>
+                Agree
+              </Button>
+            }
+          >
+            <FadedScroll enableMobileFade>{contentLarge}</FadedScroll>
+          </Drawer>
+        </>
+      );
     };
+    return <Example />;
+  },
 
-    const onClose = () => {
-      setOpen(false);
-    };
-
-    return (
-      <>
-        <button type="button" onClick={toggle}>
-          Toggle drawer
-        </button>
-        <Drawer
-          onClose={onClose}
-          title="Drawer title"
-          open={open}
-          footer={
-            <Button variant="secondary" fullWidth>
-              Agree
-            </Button>
-          }
-        >
-          <FadedScroll enableMobileFade>{contentLarge}</FadedScroll>
-        </Drawer>
-      </>
-    );
-  };
-  return <Example />;
-};
-
-withFooterAndintegrationWithFadedScroll.story = {
   name: 'Integration: FadedScroll with sticky footer',
 };
 
-export const WithoutCloseOnClickOutside = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(true);
+export const WithoutCloseOnClickOutside = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
 
-    const toggle = () => {
-      setOpen(!open);
+      const toggle = () => {
+        setOpen(!open);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <>
+          <button type="button" onClick={toggle}>
+            Toggle drawer
+          </button>
+          <Drawer onClose={onClose} title="Drawer title" open={open} closeOnClickOutside={false}>
+            <Typography>
+              This Drawer uses a forwardRef. The ref is used with useOnClickOutside hook. Try to
+              click outside the Drawer to close it.
+            </Typography>
+          </Drawer>
+        </>
+      );
     };
+    return <Example />;
+  },
 
-    const onClose = () => {
-      setOpen(false);
-    };
-
-    return (
-      <>
-        <button type="button" onClick={toggle}>
-          Toggle drawer
-        </button>
-        <Drawer onClose={onClose} title="Drawer title" open={open} closeOnClickOutside={false}>
-          <Typography>
-            This Drawer uses a forwardRef. The ref is used with useOnClickOutside hook. Try to click
-            outside the Drawer to close it.
-          </Typography>
-        </Drawer>
-      </>
-    );
-  };
-  return <Example />;
-};
-
-WithoutCloseOnClickOutside.story = {
   name: 'Without closing the drawer when clicking outside',
 };
 
@@ -328,198 +328,199 @@ const StyledBoxGreen = styled(Box)`
   background: ${(p) => p.theme.color.paletteGreen[4]};
 `;
 
-export const WithoutCloseOnSpecificElementClick = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(true);
+export const WithoutCloseOnSpecificElementClick = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
 
-    const toggle = () => {
-      setOpen(!open);
-    };
+      const toggle = () => {
+        setOpen(!open);
+      };
 
-    const onClose = () => {
-      setOpen(false);
-    };
+      const onClose = () => {
+        setOpen(false);
+      };
 
-    return (
-      <>
-        <Box>
-          <button type="button" onClick={toggle}>
-            Toggle drawer (Buggy with close on click outside)
-          </button>
-        </Box>
-        <Box>
-          <button type="button" onClick={toggle} data-drawer-prevent-click-outside>
-            Toggle drawer (Drawer click outside disabled on this element)
-          </button>
-        </Box>
-        <Box>
-          <button type="button">Random button</button>
-        </Box>
-        <StyledBoxBlue data-drawer-prevent-click-outside p={8}>
-          <Typography type="title3">Random area</Typography>
+      return (
+        <>
           <Box>
-            <Typography type="primary">
-              Clicking anywhere here does not close the drawer, using the default{' '}
-              <Typography weight="bold">&quot;data-drawer-prevent-click-outside&quot;</Typography>
-              -attribute.
-            </Typography>
+            <button type="button" onClick={toggle}>
+              Toggle drawer (Buggy with close on click outside)
+            </button>
           </Box>
-          <Box mt={4}>
+          <Box>
+            <button type="button" onClick={toggle} data-drawer-prevent-click-outside>
+              Toggle drawer (Drawer click outside disabled on this element)
+            </button>
+          </Box>
+          <Box>
             <button type="button">Random button</button>
           </Box>
-        </StyledBoxBlue>
-        <StyledBoxGreen data-custom-prevent-click-outside p={8}>
-          <Typography type="title3">Another random area</Typography>
-          <Typography type="primary">
-            Clicking anywhere here does not close the drawer as well. But this area uses a custom
-            &quot;data-custom-prevent-click-outside&quot;-attribute, which is passed to the Drawer
-            to recognize it.
-          </Typography>
-          <Box mt={4}>
+          <StyledBoxBlue data-drawer-prevent-click-outside p={8}>
+            <Typography type="title3">Random area</Typography>
+            <Box>
+              <Typography type="primary">
+                Clicking anywhere here does not close the drawer, using the default{' '}
+                <Typography weight="bold">&quot;data-drawer-prevent-click-outside&quot;</Typography>
+                -attribute.
+              </Typography>
+            </Box>
+            <Box mt={4}>
+              <button type="button">Random button</button>
+            </Box>
+          </StyledBoxBlue>
+          <StyledBoxGreen data-custom-prevent-click-outside p={8}>
+            <Typography type="title3">Another random area</Typography>
             <Typography type="primary">
-              Useful for when multiple drawers might be open but only one should remain open while
-              clicking this area.
+              Clicking anywhere here does not close the drawer as well. But this area uses a custom
+              &quot;data-custom-prevent-click-outside&quot;-attribute, which is passed to the Drawer
+              to recognize it.
             </Typography>
-          </Box>
-          <Box mt={4}>
-            <input placeholder="Random text input" />
-          </Box>
-        </StyledBoxGreen>
-        <Box>
-          {/* eslint-disable-next-line */}
-          <Link data-custom-prevent-click-outside>Buy</Link>
-        </Box>
-        <Box>
-          <Button data-custom-prevent-click-outside>Buy Button</Button>
-        </Box>
-        <Box>
-          <LinkBuy data-custom-prevent-click-outside>Buy Link</LinkBuy>
-        </Box>
-        <Box>
-          <LinkSell data-custom-prevent-click-outside>Sell Link</LinkSell>
-        </Box>
-        <Drawer
-          onClose={onClose}
-          title="Drawer title"
-          open={open}
-          preventOnClickOutsideDataAttributes={['data-custom-prevent-click-outside']}
-        >
+            <Box mt={4}>
+              <Typography type="primary">
+                Useful for when multiple drawers might be open but only one should remain open while
+                clicking this area.
+              </Typography>
+            </Box>
+            <Box mt={4}>
+              <input placeholder="Random text input" />
+            </Box>
+          </StyledBoxGreen>
           <Box>
-            <Typography>
-              Certain elements on this page has special data-attributes attached to them, which
-              prevents the Drawer from closing. Try clicking on those elements and compare with
-              clicking somewhere else.
-            </Typography>
+            {/* eslint-disable-next-line */}
+            <Link data-custom-prevent-click-outside>Buy</Link>
           </Box>
-          <Box mt={4}>
-            <Typography type="primary">
-              Warning: ALL drawers&apos; remain open when clicking on elements with the default
-              attribute (
-              <Typography weight="bold">&quot;data-drawer-prevent-click-outside&quot;</Typography>).
-            </Typography>
+          <Box>
+            <Button data-custom-prevent-click-outside>Buy Button</Button>
           </Box>
-        </Drawer>
-      </>
-    );
-  };
-  return <Example />;
-};
+          <Box>
+            <LinkBuy data-custom-prevent-click-outside>Buy Link</LinkBuy>
+          </Box>
+          <Box>
+            <LinkSell data-custom-prevent-click-outside>Sell Link</LinkSell>
+          </Box>
+          <Drawer
+            onClose={onClose}
+            title="Drawer title"
+            open={open}
+            preventOnClickOutsideDataAttributes={['data-custom-prevent-click-outside']}
+          >
+            <Box>
+              <Typography>
+                Certain elements on this page has special data-attributes attached to them, which
+                prevents the Drawer from closing. Try clicking on those elements and compare with
+                clicking somewhere else.
+              </Typography>
+            </Box>
+            <Box mt={4}>
+              <Typography type="primary">
+                Warning: ALL drawers&apos; remain open when clicking on elements with the default
+                attribute (
+                <Typography weight="bold">&quot;data-drawer-prevent-click-outside&quot;</Typography>
+                ).
+              </Typography>
+            </Box>
+          </Drawer>
+        </>
+      );
+    };
+    return <Example />;
+  },
 
-WithoutCloseOnSpecificElementClick.story = {
   name: 'Without closing the drawer when clicking outside on specified elements',
 };
 
-export const noInitialAnimationStory = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(true);
+export const noInitialAnimationStory = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
 
-    const toggle = () => {
-      setOpen(!open);
+      const toggle = () => {
+        setOpen(!open);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <>
+          <button type="button" onClick={toggle}>
+            Toggle drawer
+          </button>
+          <Drawer onClose={onClose} title="Drawer title" open={open} disableInitialAnimation>
+            {contentLarge}
+          </Drawer>
+        </>
+      );
     };
+    return <Example />;
+  },
 
-    const onClose = () => {
-      setOpen(false);
-    };
-
-    return (
-      <>
-        <button type="button" onClick={toggle}>
-          Toggle drawer
-        </button>
-        <Drawer onClose={onClose} title="Drawer title" open={open} disableInitialAnimation>
-          {contentLarge}
-        </Drawer>
-      </>
-    );
-  };
-  return <Example />;
-};
-
-noInitialAnimationStory.story = {
   name: 'No initial animation',
 };
 
-export const onAnimationCompleteStory = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(true);
+export const onAnimationCompleteStory = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
 
-    const toggle = () => {
-      setOpen(!open);
+      const toggle = () => {
+        setOpen(!open);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <>
+          <button type="button" onClick={toggle}>
+            Toggle drawer
+          </button>
+          <Drawer
+            onClose={onClose}
+            title="Drawer title"
+            open={open}
+            onAnimationComplete={action('Animation complete')}
+          >
+            {contentLarge}
+          </Drawer>
+        </>
+      );
     };
+    return <Example />;
+  },
 
-    const onClose = () => {
-      setOpen(false);
-    };
-
-    return (
-      <>
-        <button type="button" onClick={toggle}>
-          Toggle drawer
-        </button>
-        <Drawer
-          onClose={onClose}
-          title="Drawer title"
-          open={open}
-          onAnimationComplete={action('Animation complete')}
-        >
-          {contentLarge}
-        </Drawer>
-      </>
-    );
-  };
-  return <Example />;
-};
-
-onAnimationCompleteStory.story = {
   name: 'With on animation complete',
 };
 
-export const withAccordion = () => {
-  const WithAccordion = () => {
-    const [open, setOpen] = useState(true);
+export const withAccordion = {
+  render: () => {
+    const WithAccordion = () => {
+      const [open, setOpen] = useState(true);
 
-    const toggle = () => {
-      setOpen(!open);
+      const toggle = () => {
+        setOpen(!open);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <>
+          <button type="button" onClick={toggle}>
+            Toggle drawer
+          </button>
+          <Drawer onClose={onClose} title="Drawer title" open={open}>
+            {contentWithAccordion}
+          </Drawer>
+        </>
+      );
     };
+    return <WithAccordion />;
+  },
 
-    const onClose = () => {
-      setOpen(false);
-    };
-
-    return (
-      <>
-        <button type="button" onClick={toggle}>
-          Toggle drawer
-        </button>
-        <Drawer onClose={onClose} title="Drawer title" open={open}>
-          {contentWithAccordion}
-        </Drawer>
-      </>
-    );
-  };
-  return <WithAccordion />;
-};
-
-withAccordion.story = {
   name: 'With Accordion',
 };

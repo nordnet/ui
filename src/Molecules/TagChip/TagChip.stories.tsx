@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { Box, Flexbox, Icon, Card } from '../..';
 import { TagChip } from './TagChip';
@@ -10,21 +10,27 @@ export default {
   component: TagChip,
 } as Meta;
 
-const Template: Story<Props> = (args) => (
+const Template: StoryFn<Props> = (args) => (
   <div style={{ padding: '10px', backgroundColor: 'white' }}>
     <TagChip {...args} />
   </div>
 );
 
-export const OnlyLabel = Template.bind({});
-OnlyLabel.args = {
-  label: 'Default',
+export const OnlyLabel = {
+  render: Template,
+
+  args: {
+    label: 'Default',
+  },
 };
 
-export const BothIconAndLabel = Template.bind({});
-BothIconAndLabel.args = {
-  icon: <Icon.MonthlySavings16 />,
-  label: 'Default',
+export const BothIconAndLabel = {
+  render: Template,
+
+  args: {
+    icon: <Icon.MonthlySavings16 />,
+    label: 'Default',
+  },
 };
 
 export const Emoji = () => (

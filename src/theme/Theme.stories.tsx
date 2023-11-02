@@ -103,34 +103,34 @@ export default {
 
 export const documentation = () => <MD>{colorDocs}</MD>;
 
-export const colorsSemantic = () => {
-  const a11yTheme = createTheme({ a11yColors: true });
-  const darkTheme = createTheme({ darkColors: true });
-  return (
-    <Table>
-      <Thead>
-        <Tr>
-          <Th>Name</Th>
-          <Th>Default</Th>
-          <Th>A11y</Th>
-          <Th>Dark</Th>
-        </Tr>
-      </Thead>
-      <Tbody>
-        {Object.keys(theme.color)?.map((title) => (
-          <Tr key={`theme-${title}`}>
-            <Td>{title}</Td>
-            <Td>{colorWithValue(theme.color[title])}</Td>
-            <Td>{colorWithValue(a11yTheme.color[title])}</Td>
-            <Td>{colorWithValue(darkTheme.color[title])}</Td>
+export const colorsSemantic = {
+  render: () => {
+    const a11yTheme = createTheme({ a11yColors: true });
+    const darkTheme = createTheme({ darkColors: true });
+    return (
+      <Table>
+        <Thead>
+          <Tr>
+            <Th>Name</Th>
+            <Th>Default</Th>
+            <Th>A11y</Th>
+            <Th>Dark</Th>
           </Tr>
-        ))}
-      </Tbody>
-    </Table>
-  );
-};
+        </Thead>
+        <Tbody>
+          {Object.keys(theme.color)?.map((title) => (
+            <Tr key={`theme-${title}`}>
+              <Td>{title}</Td>
+              <Td>{colorWithValue(theme.color[title])}</Td>
+              <Td>{colorWithValue(a11yTheme.color[title])}</Td>
+              <Td>{colorWithValue(darkTheme.color[title])}</Td>
+            </Tr>
+          ))}
+        </Tbody>
+      </Table>
+    );
+  },
 
-colorsSemantic.story = {
   name: 'Colors (semantic) deprecated',
 };
 
@@ -166,39 +166,39 @@ export const designTokensLightColors = () => {
   );
 };
 
-export const designTokensA11yColors = () => {
-  const { colorTokens } = createTheme({ tokensTheme: 'a11y' });
-  const flattenedColorTokens = flattenObject(colorTokens);
+export const designTokensA11yColors = {
+  render: () => {
+    const { colorTokens } = createTheme({ tokensTheme: 'a11y' });
+    const flattenedColorTokens = flattenObject(colorTokens);
 
-  return (
-    <Table>
-      <Thead>
-        <Tr>
-          <Th>
-            <Box ml={5}>Color</Box>
-          </Th>
-          <Th>Token name</Th>
-          <Th>Value</Th>
-        </Tr>
-      </Thead>
-      <Tbody>
-        {Object.keys(flattenedColorTokens)?.map((title) => (
-          <Tr key={title}>
-            <Td>
-              <TokenColor $color={flattenedColorTokens[title]} />
-            </Td>
-            <Td>
-              <TokenName title={title} />
-            </Td>
-            <Td>{flattenedColorTokens[title]}</Td>
+    return (
+      <Table>
+        <Thead>
+          <Tr>
+            <Th>
+              <Box ml={5}>Color</Box>
+            </Th>
+            <Th>Token name</Th>
+            <Th>Value</Th>
           </Tr>
-        ))}
-      </Tbody>
-    </Table>
-  );
-};
+        </Thead>
+        <Tbody>
+          {Object.keys(flattenedColorTokens)?.map((title) => (
+            <Tr key={title}>
+              <Td>
+                <TokenColor $color={flattenedColorTokens[title]} />
+              </Td>
+              <Td>
+                <TokenName title={title} />
+              </Td>
+              <Td>{flattenedColorTokens[title]}</Td>
+            </Tr>
+          ))}
+        </Tbody>
+      </Table>
+    );
+  },
 
-designTokensA11yColors.story = {
   name: 'Design Tokens a11y Colors',
 };
 
@@ -310,66 +310,66 @@ export const darkColors = () => {
   );
 };
 
-export const colorsPalette = () => {
-  return (
-    <>
-      {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
-      <h1>⚠️ Internal object, use colors (semantic)</h1>(
-      <Table>
-        <Thead>
-          <Tr>
-            <Th>Name</Th>
-            <Th>Default</Th>
-            <Th>A11y</Th>
-            <Th>Dark</Th>
-          </Tr>
-        </Thead>
-        <Tbody>
-          {Object.keys(defaultColors)
-            ?.filter((title) => title !== 'palettes')
-            ?.map((title) => (
-              <Tr key={`theme-${title}`}>
-                <Td>{title}</Td>
-                <Td>{colorWithValue(defaultColors[title])}</Td>
-                <Td>{colorWithValue(accessabilityColors[title])}</Td>
-              </Tr>
-            ))}
-        </Tbody>
-      </Table>
-      );
-    </>
-  );
-};
+export const colorsPalette = {
+  render: () => {
+    return (
+      <>
+        {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
+        <h1>⚠️ Internal object, use colors (semantic)</h1>(
+        <Table>
+          <Thead>
+            <Tr>
+              <Th>Name</Th>
+              <Th>Default</Th>
+              <Th>A11y</Th>
+              <Th>Dark</Th>
+            </Tr>
+          </Thead>
+          <Tbody>
+            {Object.keys(defaultColors)
+              ?.filter((title) => title !== 'palettes')
+              ?.map((title) => (
+                <Tr key={`theme-${title}`}>
+                  <Td>{title}</Td>
+                  <Td>{colorWithValue(defaultColors[title])}</Td>
+                  <Td>{colorWithValue(accessabilityColors[title])}</Td>
+                </Tr>
+              ))}
+          </Tbody>
+        </Table>
+        );
+      </>
+    );
+  },
 
-colorsPalette.story = {
   name: 'Colors (palette)',
 };
 
-export const screenSizes = () => (
-  <Table>
-    <Thead>
-      <Tr>
-        <Th>Name</Th>
-        <Th>Size</Th>
-        <Th>Offset</Th>
-      </Tr>
-    </Thead>
-    <Tbody>
-      {Object.entries(theme.breakpoints)?.map(([title, breakpoint]) => (
-        <Tr key={`breakpoints-${title}`}>
-          <Td>{title}</Td>
-          <Td>
-            <pre>{propOr('', 'size', breakpoint)}</pre>
-          </Td>
-          <Td>
-            <pre>{propOr(0, 'offset', breakpoint)} units</pre>
-          </Td>
+export const screenSizes = {
+  render: () => (
+    <Table>
+      <Thead>
+        <Tr>
+          <Th>Name</Th>
+          <Th>Size</Th>
+          <Th>Offset</Th>
         </Tr>
-      ))}
-    </Tbody>
-  </Table>
-);
+      </Thead>
+      <Tbody>
+        {Object.entries(theme.breakpoints)?.map(([title, breakpoint]) => (
+          <Tr key={`breakpoints-${title}`}>
+            <Td>{title}</Td>
+            <Td>
+              <pre>{propOr('', 'size', breakpoint)}</pre>
+            </Td>
+            <Td>
+              <pre>{propOr(0, 'offset', breakpoint)} units</pre>
+            </Td>
+          </Tr>
+        ))}
+      </Tbody>
+    </Table>
+  ),
 
-screenSizes.story = {
   name: 'Screen sizes',
 };

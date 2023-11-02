@@ -9,21 +9,18 @@ export default {
   title: 'Molecules / Input / Select / SingleSelectList',
 };
 
-export const itemDefault = () => <Option label="First" />;
-
-itemDefault.story = {
+export const itemDefault = {
+  render: () => <Option label="First" />,
   name: 'Item default',
 };
 
-export const itemSelected = () => <Option label="First" selected />;
-
-itemSelected.story = {
+export const itemSelected = {
+  render: () => <Option label="First" selected />,
   name: 'Item selected',
 };
 
-export const itemDisabled = () => <Option label="First" disabled />;
-
-itemDisabled.story = {
+export const itemDisabled = {
+  render: () => <Option label="First" disabled />,
   name: 'Item disabled',
 };
 
@@ -44,102 +41,102 @@ const Wrapper = (props) => (
   </DropdownBubbleWithPadding>
 );
 
-export const listWithDifferentArrowPositions = () => (
-  <Display
-    items={[
-      {
-        component: (
-          <Wrapper>
-            <Option label="Default?" />
-            <Option label="First" selected />
-            <Option label="SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond" />
-            {new Array(10).fill(null)?.map((_, i) => (
-              <Option key={i} label="Disabled" disabled />
-            ))}
-          </Wrapper>
-        ),
-        title: 'Placement bottom, arrow default (right)',
-      },
+export const listWithDifferentArrowPositions = {
+  render: () => (
+    <Display
+      items={[
+        {
+          component: (
+            <Wrapper>
+              <Option label="Default?" />
+              <Option label="First" selected />
+              <Option label="SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond" />
+              {new Array(10).fill(null)?.map((_, i) => (
+                <Option key={i} label="Disabled" disabled />
+              ))}
+            </Wrapper>
+          ),
+          title: 'Placement bottom, arrow default (right)',
+        },
 
-      {
-        component: (
-          <Wrapper position="left">
-            <Option label="Default?" />
-            <Option label="First" selected />
-            {new Array(10).fill(null)?.map((_, i) => (
-              <Option key={i} label="Disabled" disabled />
-            ))}
-          </Wrapper>
-        ),
-        title: 'Placement bottom, arrow left',
-      },
-      {
-        component: (
-          <Wrapper position="center" placement="top">
-            <Option label="Default?" />
-            <Option label="First" selected />
-            {new Array(10).fill(null)?.map((_, i) => (
-              <Option key={i} label="Disabled" disabled />
-            ))}
-          </Wrapper>
-        ),
-        title: 'Placement top, arrow center',
-      },
-      {
-        component: (
-          <Wrapper position="center">
-            <Option label="Default?" />
-            <Option label="First" selected />
-            <Option label="Second" />
-            {new Array(10).fill(null)?.map((_, i) => (
-              <Option key={i} label="Disabled" disabled />
-            ))}
-          </Wrapper>
-        ),
-        title: 'Placement bottom, arrow center',
-      },
-      {
-        component: (
-          <Wrapper placement="top">
-            <Option label="Default?" />
-            <Option label="First" selected />
-            <Option label="SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond" />
-            {new Array(10).fill(null)?.map((_, i) => (
-              <Option key={i} label="Disabled" disabled />
-            ))}
-          </Wrapper>
-        ),
-        title: 'Placement top, arrow default (right)',
-      },
-      {
-        component: (
-          <Wrapper position="left" placement="top">
-            <Option label="Default?" />
-            <Option label="First" selected />
-            {new Array(10).fill(null)?.map((_, i) => (
-              <Option key={i} label="Disabled" disabled />
-            ))}
-          </Wrapper>
-        ),
-        title: 'Placement top, arrow left',
-      },
-      {
-        component: (
-          <Wrapper position="center" placement="top">
-            <Option label="Default?" />
-            <Option label="First" selected />
-            <Option label="Second" />
-            {new Array(10).fill(null)?.map((_, i) => (
-              <Option key={i} label="Disabled" disabled />
-            ))}
-          </Wrapper>
-        ),
-        title: 'Placement top, arrow center',
-      },
-    ]}
-  />
-);
+        {
+          component: (
+            <Wrapper position="left">
+              <Option label="Default?" />
+              <Option label="First" selected />
+              {new Array(10).fill(null)?.map((_, i) => (
+                <Option key={i} label="Disabled" disabled />
+              ))}
+            </Wrapper>
+          ),
+          title: 'Placement bottom, arrow left',
+        },
+        {
+          component: (
+            <Wrapper position="center" placement="top">
+              <Option label="Default?" />
+              <Option label="First" selected />
+              {new Array(10).fill(null)?.map((_, i) => (
+                <Option key={i} label="Disabled" disabled />
+              ))}
+            </Wrapper>
+          ),
+          title: 'Placement top, arrow center',
+        },
+        {
+          component: (
+            <Wrapper position="center">
+              <Option label="Default?" />
+              <Option label="First" selected />
+              <Option label="Second" />
+              {new Array(10).fill(null)?.map((_, i) => (
+                <Option key={i} label="Disabled" disabled />
+              ))}
+            </Wrapper>
+          ),
+          title: 'Placement bottom, arrow center',
+        },
+        {
+          component: (
+            <Wrapper placement="top">
+              <Option label="Default?" />
+              <Option label="First" selected />
+              <Option label="SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond" />
+              {new Array(10).fill(null)?.map((_, i) => (
+                <Option key={i} label="Disabled" disabled />
+              ))}
+            </Wrapper>
+          ),
+          title: 'Placement top, arrow default (right)',
+        },
+        {
+          component: (
+            <Wrapper position="left" placement="top">
+              <Option label="Default?" />
+              <Option label="First" selected />
+              {new Array(10).fill(null)?.map((_, i) => (
+                <Option key={i} label="Disabled" disabled />
+              ))}
+            </Wrapper>
+          ),
+          title: 'Placement top, arrow left',
+        },
+        {
+          component: (
+            <Wrapper position="center" placement="top">
+              <Option label="Default?" />
+              <Option label="First" selected />
+              <Option label="Second" />
+              {new Array(10).fill(null)?.map((_, i) => (
+                <Option key={i} label="Disabled" disabled />
+              ))}
+            </Wrapper>
+          ),
+          title: 'Placement top, arrow center',
+        },
+      ]}
+    />
+  ),
 
-listWithDifferentArrowPositions.story = {
   name: 'List with different arrow positions',
 };

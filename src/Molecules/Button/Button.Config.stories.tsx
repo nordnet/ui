@@ -1,6 +1,6 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { Button, Icon } from '../..';
 
 const getIcon = (componentName: string) => {
@@ -20,7 +20,7 @@ const argTypes = {
     control: { type: 'inline-radio' },
   },
   variant: {
-    options: ['primary' , 'secondary' , 'neutral' , 'negative' , 'tertiary'],
+    options: ['primary', 'secondary', 'neutral', 'negative', 'tertiary'],
     control: { type: 'inline-radio' },
   },
   iconName: {
@@ -48,7 +48,7 @@ export default {
   argTypes,
 } as Meta;
 
-const Template: Story<{}> = ({ componentName, iconName, iconPlacement, ...rest }: any) => {
+const Template: StoryFn<{}> = ({ componentName, iconName, iconPlacement, ...rest }: any) => {
   const ButtonComponent = componentName ? Button[componentName] : Button;
   const icon = iconName ? getIcon(iconName) : undefined;
   const commonProps = { onClick: action('clicked') };
@@ -63,6 +63,7 @@ const Template: Story<{}> = ({ componentName, iconName, iconPlacement, ...rest }
   );
 };
 
-export const ButtonConfigStory = Template.bind({});
-
-ButtonConfigStory.storyName = 'Configure a Button';
+export const ButtonConfigStory = {
+  render: Template,
+  name: 'Configure a Button',
+};

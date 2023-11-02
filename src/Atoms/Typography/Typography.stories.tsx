@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { Flexbox, Typography } from '../..';
 import { Display } from '../../common/Display';
@@ -22,6 +22,7 @@ export const all = () => (
     <Typography type="caption">Caption 10/16px regular</Typography>
   </Flexbox>
 );
+
 export const primary = () => (
   <Display
     items={[
@@ -103,96 +104,96 @@ export const caption = () => (
   />
 );
 
-export const title1 = () => (
-  <Display
-    items={[
-      {
-        title: 'Title1 Default',
-        component: <Typography type="title1">Title1 text</Typography>,
-      },
-      {
-        title: 'With regular font weight',
-        component: (
-          <Typography type="title1" weight="regular">
-            Title1 text
-          </Typography>
-        ),
-      },
-      {
-        title: 'With bold font weight',
-        component: (
-          <Typography type="title1" weight="bold">
-            Title1 text
-          </Typography>
-        ),
-      },
-    ]}
-  />
-);
+export const title1 = {
+  render: () => (
+    <Display
+      items={[
+        {
+          title: 'Title1 Default',
+          component: <Typography type="title1">Title1 text</Typography>,
+        },
+        {
+          title: 'With regular font weight',
+          component: (
+            <Typography type="title1" weight="regular">
+              Title1 text
+            </Typography>
+          ),
+        },
+        {
+          title: 'With bold font weight',
+          component: (
+            <Typography type="title1" weight="bold">
+              Title1 text
+            </Typography>
+          ),
+        },
+      ]}
+    />
+  ),
 
-title1.story = {
   name: 'Title1',
 };
 
-export const title2 = () => (
-  <Display
-    items={[
-      {
-        title: 'Title2 Default',
-        component: <Typography type="title2">Title2 text</Typography>,
-      },
-      {
-        title: 'With regular font weight',
-        component: (
-          <Typography type="title2" weight="regular">
-            Title2 text
-          </Typography>
-        ),
-      },
-      {
-        title: 'With bold font weight',
-        component: (
-          <Typography type="title2" weight="bold">
-            Title2 text
-          </Typography>
-        ),
-      },
-    ]}
-  />
-);
+export const title2 = {
+  render: () => (
+    <Display
+      items={[
+        {
+          title: 'Title2 Default',
+          component: <Typography type="title2">Title2 text</Typography>,
+        },
+        {
+          title: 'With regular font weight',
+          component: (
+            <Typography type="title2" weight="regular">
+              Title2 text
+            </Typography>
+          ),
+        },
+        {
+          title: 'With bold font weight',
+          component: (
+            <Typography type="title2" weight="bold">
+              Title2 text
+            </Typography>
+          ),
+        },
+      ]}
+    />
+  ),
 
-title2.story = {
   name: 'Title2',
 };
 
-export const title3 = () => (
-  <Display
-    items={[
-      {
-        title: 'Title3 Default',
-        component: <Typography type="title3">Title3 text</Typography>,
-      },
-      {
-        title: 'With regular font weight',
-        component: (
-          <Typography type="title3" weight="regular">
-            Title3 text
-          </Typography>
-        ),
-      },
-      {
-        title: 'With bold font weight',
-        component: (
-          <Typography type="title3" weight="bold">
-            Title3 text
-          </Typography>
-        ),
-      },
-    ]}
-  />
-);
+export const title3 = {
+  render: () => (
+    <Display
+      items={[
+        {
+          title: 'Title3 Default',
+          component: <Typography type="title3">Title3 text</Typography>,
+        },
+        {
+          title: 'With regular font weight',
+          component: (
+            <Typography type="title3" weight="regular">
+              Title3 text
+            </Typography>
+          ),
+        },
+        {
+          title: 'With bold font weight',
+          component: (
+            <Typography type="title3" weight="bold">
+              Title3 text
+            </Typography>
+          ),
+        },
+      ]}
+    />
+  ),
 
-title3.story = {
   name: 'Title3',
 };
 
@@ -215,18 +216,18 @@ export const hero = () => (
   />
 );
 
-export const ariaAttributes = () => (
-  <Display
-    items={[
-      {
-        title: 'with aria-hidden',
-        component: <Typography aria-hidden>I&apos;m hidden</Typography>,
-      },
-    ]}
-  />
-);
+export const ariaAttributes = {
+  render: () => (
+    <Display
+      items={[
+        {
+          title: 'with aria-hidden',
+          component: <Typography aria-hidden>I&apos;m hidden</Typography>,
+        },
+      ]}
+    />
+  ),
 
-ariaAttributes.story = {
   name: 'aria attributes',
 };
 
@@ -298,10 +299,10 @@ export const textAlign = () => (
   </Flexbox>
 );
 
-const WhiteSpaceTemplate: Story<Props> = (args) => <Typography {...args} />;
-export const WhiteSpace = WhiteSpaceTemplate.bind({});
-WhiteSpace.args = {
-  type: 'primary',
-  whiteSpace: 'normal',
-  children: 'This text \nshould have \nline breaks.',
+export const WhiteSpace = {
+  args: {
+    type: 'primary',
+    whiteSpace: 'normal',
+    children: 'This text \nshould have \nline breaks.',
+  },
 };

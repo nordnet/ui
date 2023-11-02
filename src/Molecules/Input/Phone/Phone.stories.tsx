@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { actions } from '@storybook/addon-actions';
 
 import { Box, Flexbox, Input, Modal } from '../../..';
@@ -12,15 +12,19 @@ export default {
   component: Input.Phone,
 } as Meta;
 
-const Template: Story<Props> = (args) => <Input.Phone {...args} />;
+const Template: StoryFn<Props> = (args) => <Input.Phone {...args} />;
 
-export const DefaultStory = Template.bind({});
-DefaultStory.args = {
-  name: 'default-example',
-  label: 'Phone number',
-  placeholder: '123 456 789',
+export const DefaultStory = {
+  render: Template,
+
+  args: {
+    name: 'default-example',
+    label: 'Phone number',
+    placeholder: '123 456 789',
+  },
+
+  name: 'Default',
 };
-DefaultStory.storyName = 'Default';
 
 export const prefilledDefaultValues = () => (
   <Input.Phone
@@ -100,47 +104,50 @@ export const sortByCountry = () => (
   </Flexbox>
 );
 
-export const EnableSearchComponent = Template.bind({});
-EnableSearchComponent.args = {
-  ...DefaultStory.args,
-  name: 'enable-search-component-example',
-  disableSearchComponent: false,
+export const EnableSearchComponent = {
+  render: Template,
+
+  args: {
+    ...DefaultStory.args,
+    name: 'enable-search-component-example',
+    disableSearchComponent: false,
+  },
 };
 
-export const withLabelTooltipInsideModal = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(true);
+export const withLabelTooltipInsideModal = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
 
-    const onOpen = () => {
-      setOpen(true);
+      const onOpen = () => {
+        setOpen(true);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <>
+          <button type="button" onClick={onOpen}>
+            Open modal
+          </button>
+          <Modal onClose={onClose} title="Dialog information" open={open}>
+            <Box mb={2}>
+              <Input.Phone
+                name="country-code-example"
+                label="Sweden"
+                sortByCountry="se"
+                labelTooltipInModal
+                labelTooltip="Tooltip content"
+              />
+            </Box>
+          </Modal>
+        </>
+      );
     };
+    return <Example />;
+  },
 
-    const onClose = () => {
-      setOpen(false);
-    };
-
-    return (
-      <>
-        <button type="button" onClick={onOpen}>
-          Open modal
-        </button>
-        <Modal onClose={onClose} title="Dialog information" open={open}>
-          <Box mb={2}>
-            <Input.Phone
-              name="country-code-example"
-              label="Sweden"
-              sortByCountry="se"
-              labelTooltipInModal
-              labelTooltip="Tooltip content"
-            />
-          </Box>
-        </Modal>
-      </>
-    );
-  };
-  return <Example />;
-};
-
-withLabelTooltipInsideModal.story = {
   name: 'With label tooltip inside modal',
 };

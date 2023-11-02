@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import R from 'ramda';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { Box, FlexTable, Typography } from '../../..';
 import docs from '../FlexTable.mdx';
@@ -51,7 +51,7 @@ const BigTableRow = ({ data }: any) => {
   );
 };
 
-const BigTableTemplate: Story<{ columns: number; rows: number }> = (args) => {
+const BigTableTemplate: StoryFn<{ columns: number; rows: number }> = (args) => {
   const BigTableExample = () => {
     const ReactComponent = () => {
       const rowsLength = args.rows;
@@ -113,13 +113,16 @@ const BigTableTemplate: Story<{ columns: number; rows: number }> = (args) => {
   );
 };
 
-export const BigTable = BigTableTemplate.bind({});
-BigTable.args = {
-  rows: 100,
-  columns: 10,
+export const BigTable = {
+  render: BigTableTemplate,
+
+  args: {
+    rows: 100,
+    columns: 10,
+  },
 };
 
-const BigTableWithoutStickyHeaderTemplate: Story<{ columns: number; rows: number }> = (args) => {
+const BigTableWithoutStickyHeaderTemplate: StoryFn<{ columns: number; rows: number }> = (args) => {
   const BigTableWithoutStickyHeaderExample = () => {
     const ReactComponent = () => {
       const rowsLength = args.rows;
@@ -176,13 +179,16 @@ const BigTableWithoutStickyHeaderTemplate: Story<{ columns: number; rows: number
   );
 };
 
-export const BigTableWithoutStickyHeader = BigTableWithoutStickyHeaderTemplate.bind({});
-BigTableWithoutStickyHeader.args = {
-  rows: 100,
-  columns: 10,
+export const BigTableWithoutStickyHeader = {
+  render: BigTableWithoutStickyHeaderTemplate,
+
+  args: {
+    rows: 100,
+    columns: 10,
+  },
 };
 
-const MultipleBigTablesWithStickyHeadersTemplate: Story<{ columns: number; rows: number }> = (
+const MultipleBigTablesWithStickyHeadersTemplate: StoryFn<{ columns: number; rows: number }> = (
   args,
 ) => {
   const ReactComponent = () => {
@@ -262,10 +268,11 @@ const MultipleBigTablesWithStickyHeadersTemplate: Story<{ columns: number; rows:
   return <ReactComponent />;
 };
 
-export const MultipleBigTablesWithStickyHeaders = MultipleBigTablesWithStickyHeadersTemplate.bind(
-  {},
-);
-MultipleBigTablesWithStickyHeaders.args = {
-  rows: 100,
-  columns: 5,
+export const MultipleBigTablesWithStickyHeaders = {
+  render: MultipleBigTablesWithStickyHeadersTemplate,
+
+  args: {
+    rows: 100,
+    columns: 5,
+  },
 };

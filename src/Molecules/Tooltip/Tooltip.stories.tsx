@@ -21,226 +21,226 @@ const StyledDiv = styled.div`
   margin: 20px 0 20px 20px;
 `;
 
-export const defaultStory = () => (
-  <>
-    <StyledDiv>
-      Default delays
-      <Tooltip label={label} position="top">
-        <Button type="button">Hover me</Button>
-      </Tooltip>
-    </StyledDiv>
-    <StyledDiv>
-      Open delay: 2000ms; Close delay: 3000ms
-      <Tooltip label={label} position="top" openDelay={2000} closeDelay={3000}>
-        <Button type="button">Hover me</Button>
-      </Tooltip>
-    </StyledDiv>
-    <StyledDiv>
-      Open delay: 10ms; Close delay: 10ms
-      <Tooltip label={label} position="top" openDelay={10} closeDelay={10}>
-        <Button type="button">Hover me</Button>
-      </Tooltip>
-    </StyledDiv>
-    <StyledDiv>
-      Open delay: 0ms; Close delay: 0ms
-      <Tooltip label={label} position="top" openDelay={0} closeDelay={0}>
-        <Button type="button">Hover me</Button>
-      </Tooltip>
-    </StyledDiv>
-  </>
-);
+export const defaultStory = {
+  render: () => (
+    <>
+      <StyledDiv>
+        Default delays
+        <Tooltip label={label} position="top">
+          <Button type="button">Hover me</Button>
+        </Tooltip>
+      </StyledDiv>
+      <StyledDiv>
+        Open delay: 2000ms; Close delay: 3000ms
+        <Tooltip label={label} position="top" openDelay={2000} closeDelay={3000}>
+          <Button type="button">Hover me</Button>
+        </Tooltip>
+      </StyledDiv>
+      <StyledDiv>
+        Open delay: 10ms; Close delay: 10ms
+        <Tooltip label={label} position="top" openDelay={10} closeDelay={10}>
+          <Button type="button">Hover me</Button>
+        </Tooltip>
+      </StyledDiv>
+      <StyledDiv>
+        Open delay: 0ms; Close delay: 0ms
+        <Tooltip label={label} position="top" openDelay={0} closeDelay={0}>
+          <Button type="button">Hover me</Button>
+        </Tooltip>
+      </StyledDiv>
+    </>
+  ),
 
-defaultStory.story = {
   name: 'Default',
 };
 
-export const invertedColorsStory = () => (
-  <>
-    <StyledDiv>
-      Inverted colors
-      <Tooltip label="inverted label" position="top" invertedColors>
-        <Button type="button">Hover me</Button>
-      </Tooltip>
-    </StyledDiv>
-  </>
-);
+export const invertedColorsStory = {
+  render: () => (
+    <>
+      <StyledDiv>
+        Inverted colors
+        <Tooltip label="inverted label" position="top" invertedColors>
+          <Button type="button">Hover me</Button>
+        </Tooltip>
+      </StyledDiv>
+    </>
+  ),
 
-invertedColorsStory.story = {
   name: 'Inverted colors',
 };
 
-export const withMode = () => (
-  <Tooltip label={label} mode="click">
-    <Button type="button">Click me</Button>
-  </Tooltip>
-);
+export const withMode = {
+  render: () => (
+    <Tooltip label={label} mode="click">
+      <Button type="button">Click me</Button>
+    </Tooltip>
+  ),
 
-withMode.story = {
   name: 'With On Click Mode',
 };
 
 const veryLongLabel = 'Llanfairpwllgwyngyllgogerychwyrndrob';
 
-export const withVeryLongWord = () => (
-  <Tooltip label={veryLongLabel}>
-    <Button type="button">Hover me</Button>
-  </Tooltip>
-);
+export const withVeryLongWord = {
+  render: () => (
+    <Tooltip label={veryLongLabel}>
+      <Button type="button">Hover me</Button>
+    </Tooltip>
+  ),
 
-withVeryLongWord.story = {
   name: 'With Very Long Word',
 };
 
-export const withPosition = () => (
-  <Display
-    items={[
-      {
-        component: (
-          <Tooltip label={label} position="bottom">
-            <Button type="button">Hover me</Button>
-          </Tooltip>
-        ),
-        title: 'bottom',
-      },
-      {
-        component: (
-          <Tooltip label={label} position="left">
-            <Button type="button">Hover me</Button>
-          </Tooltip>
-        ),
-        title: 'left',
-      },
-      {
-        component: (
-          <Tooltip label={label} position="top">
-            <Button type="button">Hover me</Button>
-          </Tooltip>
-        ),
-        title: 'top',
-      },
-      {
-        component: (
-          <Tooltip label={label} position="right">
-            <Button type="button">Hover me</Button>
-          </Tooltip>
-        ),
-        title: 'right',
-      },
-      {
-        component: (
-          <Tooltip label={label} position="right-start">
-            <Button type="button">Hover me</Button>
-          </Tooltip>
-        ),
-        title: 'right-start',
-      },
-      {
-        component: (
-          <Tooltip label={label} position="right-end">
-            <Button type="button">Hover me</Button>
-          </Tooltip>
-        ),
-        title: 'right-end',
-      },
-      {
-        component: (
-          <Tooltip label={label} position="top-start">
-            <Button type="button">Hover me</Button>
-          </Tooltip>
-        ),
-        title: 'top-start',
-      },
-      {
-        component: (
-          <Tooltip label={label} position="top-end">
-            <Button type="button">Hover me</Button>
-          </Tooltip>
-        ),
-        title: 'top-end',
-      },
-      {
-        component: (
-          <Tooltip label={label} position="left-start">
-            <Button type="button">Hover me</Button>
-          </Tooltip>
-        ),
-        title: 'left-start',
-      },
-      {
-        component: (
-          <Tooltip label={label} position="left-end">
-            <Button type="button">Hover me</Button>
-          </Tooltip>
-        ),
-        title: 'left-end',
-      },
-      {
-        component: (
-          <Tooltip label={label} position="bottom-start">
-            <Button type="button">Hover me</Button>
-          </Tooltip>
-        ),
-        title: 'bottom-start',
-      },
-      {
-        component: (
-          <Tooltip label={label} position="bottom-end">
-            <Button type="button">Hover me</Button>
-          </Tooltip>
-        ),
-        title: 'bottom-end',
-      },
-    ]}
-  />
-);
+export const withPosition = {
+  render: () => (
+    <Display
+      items={[
+        {
+          component: (
+            <Tooltip label={label} position="bottom">
+              <Button type="button">Hover me</Button>
+            </Tooltip>
+          ),
+          title: 'bottom',
+        },
+        {
+          component: (
+            <Tooltip label={label} position="left">
+              <Button type="button">Hover me</Button>
+            </Tooltip>
+          ),
+          title: 'left',
+        },
+        {
+          component: (
+            <Tooltip label={label} position="top">
+              <Button type="button">Hover me</Button>
+            </Tooltip>
+          ),
+          title: 'top',
+        },
+        {
+          component: (
+            <Tooltip label={label} position="right">
+              <Button type="button">Hover me</Button>
+            </Tooltip>
+          ),
+          title: 'right',
+        },
+        {
+          component: (
+            <Tooltip label={label} position="right-start">
+              <Button type="button">Hover me</Button>
+            </Tooltip>
+          ),
+          title: 'right-start',
+        },
+        {
+          component: (
+            <Tooltip label={label} position="right-end">
+              <Button type="button">Hover me</Button>
+            </Tooltip>
+          ),
+          title: 'right-end',
+        },
+        {
+          component: (
+            <Tooltip label={label} position="top-start">
+              <Button type="button">Hover me</Button>
+            </Tooltip>
+          ),
+          title: 'top-start',
+        },
+        {
+          component: (
+            <Tooltip label={label} position="top-end">
+              <Button type="button">Hover me</Button>
+            </Tooltip>
+          ),
+          title: 'top-end',
+        },
+        {
+          component: (
+            <Tooltip label={label} position="left-start">
+              <Button type="button">Hover me</Button>
+            </Tooltip>
+          ),
+          title: 'left-start',
+        },
+        {
+          component: (
+            <Tooltip label={label} position="left-end">
+              <Button type="button">Hover me</Button>
+            </Tooltip>
+          ),
+          title: 'left-end',
+        },
+        {
+          component: (
+            <Tooltip label={label} position="bottom-start">
+              <Button type="button">Hover me</Button>
+            </Tooltip>
+          ),
+          title: 'bottom-start',
+        },
+        {
+          component: (
+            <Tooltip label={label} position="bottom-end">
+              <Button type="button">Hover me</Button>
+            </Tooltip>
+          ),
+          title: 'bottom-end',
+        },
+      ]}
+    />
+  ),
 
-withPosition.story = {
   name: 'With position defined',
 };
 
-export const zindexWars = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(false);
+export const zindexWars = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(false);
 
-    const openModal = () => {
-      setOpen(true);
+      const openModal = () => {
+        setOpen(true);
+      };
+
+      const closeModal = () => {
+        setOpen(false);
+      };
+
+      return (
+        <Drawer>
+          <Box mb={4}>
+            <Tooltip label={label}>
+              <Button>Hover me</Button>
+            </Tooltip>
+          </Box>
+          <Button onClick={openModal}>Open modal</Button>
+          <Modal open={open} onClose={closeModal}>
+            <Tooltip label={label} inModal>
+              <Button>Hover me</Button>
+            </Tooltip>
+          </Modal>
+        </Drawer>
+      );
     };
 
-    const closeModal = () => {
-      setOpen(false);
-    };
+    return <Example />;
+  },
 
-    return (
-      <Drawer>
-        <Box mb={4}>
-          <Tooltip label={label}>
-            <Button>Hover me</Button>
-          </Tooltip>
-        </Box>
-        <Button onClick={openModal}>Open modal</Button>
-        <Modal open={open} onClose={closeModal}>
-          <Tooltip label={label} inModal>
-            <Button>Hover me</Button>
-          </Tooltip>
-        </Modal>
-      </Drawer>
-    );
-  };
-
-  return <Example />;
-};
-
-zindexWars.story = {
   name: 'Integration: With Drawer and Modal',
 };
 
-export const customMaxWidth = () => (
-  <Tooltip label={label} maxWidth={100}>
-    <Button type="button">Hover me</Button>
-  </Tooltip>
-);
+export const customMaxWidth = {
+  render: () => (
+    <Tooltip label={label} maxWidth={100}>
+      <Button type="button">Hover me</Button>
+    </Tooltip>
+  ),
 
-customMaxWidth.story = {
   name: 'Custom max-width',
 };
 

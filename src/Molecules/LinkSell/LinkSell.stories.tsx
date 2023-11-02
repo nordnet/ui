@@ -9,40 +9,40 @@ export default {
   },
 };
 
-export const linkSell = () => {
-  return (
-    <Provider>
-      <LinkSell to="somewhere">Sell</LinkSell>
-    </Provider>
-  );
-};
+export const linkSell = {
+  render: () => {
+    return (
+      <Provider>
+        <LinkSell to="somewhere">Sell</LinkSell>
+      </Provider>
+    );
+  },
 
-linkSell.story = {
   name: 'LinkSell',
 };
 
-export const linkSellDisabled = () => {
-  return (
-    <Provider>
-      <LinkSell disabled>Sell</LinkSell>
-    </Provider>
-  );
-};
+export const linkSellDisabled = {
+  render: () => {
+    return (
+      <Provider>
+        <LinkSell disabled>Sell</LinkSell>
+      </Provider>
+    );
+  },
 
-linkSellDisabled.story = {
   name: 'LinkSell disabled',
 };
 
-export const linkSellWithRelAsNofollow = () => {
-  return (
-    <Provider>
-      <LinkSell to="somewhere" rel="nofollow">
-        Sell
-      </LinkSell>
-    </Provider>
-  );
-};
+export const linkSellWithRelAsNofollow = {
+  render: () => {
+    return (
+      <Provider>
+        <LinkSell to="somewhere" rel="nofollow">
+          Sell
+        </LinkSell>
+      </Provider>
+    );
+  },
 
-linkSellWithRelAsNofollow.story = {
   name: 'LinkSell with rel as nofollow',
 };

@@ -8,26 +8,26 @@ export default {
   },
 };
 
-export const time = () => {
-  return <Time value={1554824654} />;
-};
+export const time = {
+  render: () => {
+    return <Time value={1554824654} />;
+  },
 
-time.story = {
   name: 'Time ',
 };
 
-export const invalidValueStory = () => {
-  return <Time value={null} />;
-};
+export const invalidValueStory = {
+  render: () => {
+    return <Time value={null} />;
+  },
 
-invalidValueStory.story = {
   name: 'Invalid value',
 };
 
-export const usesCustomSymbolForInvalidValue = () => {
-  return <Time value={null} invalidValue="X" />;
-};
+export const usesCustomSymbolForInvalidValue = {
+  render: () => {
+    return <Time value={null} invalidValue="X" />;
+  },
 
-usesCustomSymbolForInvalidValue.story = {
   name: 'Uses custom symbol for invalid value',
 };

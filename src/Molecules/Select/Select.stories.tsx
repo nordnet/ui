@@ -1,6 +1,6 @@
 // Button.stories.ts|tsx
 import React, { useRef, useState } from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 import { Typography, Flag, Flexbox, FormField, Button, Box } from '../..';
 import { Display } from '../../common/Display';
 import { Select } from '.';
@@ -61,9 +61,9 @@ export default {
    */
   title: 'Molecules/Select',
   component: Select,
-} as ComponentMeta<typeof Select>;
+} as Meta<typeof Select>;
 
-export const Primary: ComponentStory<typeof Select> = () => (
+export const Primary: StoryFn<typeof Select> = () => (
   <Select name="my-select" placeholder="Select a option...">
     {options.map((option) => (
       <Select.Option key={option.value} value={option.value} label={option.label} />
@@ -71,7 +71,7 @@ export const Primary: ComponentStory<typeof Select> = () => (
   </Select>
 );
 
-export const DefaultValue: ComponentStory<typeof Select> = () => (
+export const DefaultValue: StoryFn<typeof Select> = () => (
   <Select name="my-select" placeholder="Select a option..." defaultValue={options[0].value}>
     {options.map((option) => (
       <Select.Option key={option.value} value={option.value} label={option.label} />
@@ -79,7 +79,7 @@ export const DefaultValue: ComponentStory<typeof Select> = () => (
   </Select>
 );
 
-export const CustomOption: ComponentStory<typeof Select> = () => (
+export const CustomOption: StoryFn<typeof Select> = () => (
   <Select name="my-select" placeholder="Select a country...">
     {countryOptions.map((option) => (
       <Select.Option key={option.value} value={option.value} label={option.label}>
@@ -96,7 +96,7 @@ export const CustomOption: ComponentStory<typeof Select> = () => (
   </Select>
 );
 
-export const DifferentSizes: ComponentStory<typeof Select> = () => (
+export const DifferentSizes: StoryFn<typeof Select> = () => (
   <Display
     items={[
       {
@@ -123,7 +123,7 @@ export const DifferentSizes: ComponentStory<typeof Select> = () => (
   />
 );
 
-export const DifferentWidths: ComponentStory<typeof Select> = () => (
+export const DifferentWidths: StoryFn<typeof Select> = () => (
   <Display
     items={[
       {
@@ -150,7 +150,7 @@ export const DifferentWidths: ComponentStory<typeof Select> = () => (
   />
 );
 
-export const WithFormField: ComponentStory<typeof Select> = () => (
+export const WithFormField: StoryFn<typeof Select> = () => (
   <FormField label="Label" required extraInfo="Extra info">
     <Select name="my-select" placeholder="Select a option...">
       {options.map((option) => (
@@ -160,7 +160,7 @@ export const WithFormField: ComponentStory<typeof Select> = () => (
   </FormField>
 );
 
-export const WithError: ComponentStory<typeof Select> = () => (
+export const WithError: StoryFn<typeof Select> = () => (
   <FormField error="Error message" label="Label">
     <Select name="my-select" placeholder="Select a option..." hasError>
       {options.map((option) => (
@@ -170,7 +170,7 @@ export const WithError: ComponentStory<typeof Select> = () => (
   </FormField>
 );
 
-export const Disabled: ComponentStory<typeof Select> = () => (
+export const Disabled: StoryFn<typeof Select> = () => (
   <Select name="my-select" placeholder="Select a option..." disabled>
     {options.map((option) => (
       <Select.Option key={option.value} value={option.value} label={option.label} />
@@ -178,7 +178,7 @@ export const Disabled: ComponentStory<typeof Select> = () => (
   </Select>
 );
 
-export const GroupedOptions: ComponentStory<typeof Select> = () => (
+export const GroupedOptions: StoryFn<typeof Select> = () => (
   <Select name="my-select" placeholder="Select a option...">
     <Select.Group label="First Group">
       {options.map((option) => (
@@ -193,7 +193,7 @@ export const GroupedOptions: ComponentStory<typeof Select> = () => (
   </Select>
 );
 
-export const MultiSelectUnControlled: ComponentStory<typeof Select> = () => {
+export const MultiSelectUnControlled: StoryFn<typeof Select> = () => {
   return (
     <Select name="my-select" multiple>
       {options.map((option) => (
@@ -203,7 +203,7 @@ export const MultiSelectUnControlled: ComponentStory<typeof Select> = () => {
   );
 };
 
-export const MultiSelect: ComponentStory<typeof Select> = () => {
+export const MultiSelect: StoryFn<typeof Select> = () => {
   const [selectedCount, setSelectedCount] = useState(0);
 
   return (
@@ -226,7 +226,7 @@ export const MultiSelect: ComponentStory<typeof Select> = () => {
   );
 };
 
-export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () => {
+export const MultiSelectWithGroupedOptions: StoryFn<typeof Select> = () => {
   const [selectedCount, setSelectedCount] = useState(0);
 
   return (
@@ -257,7 +257,7 @@ export const MultiSelectWithGroupedOptions: ComponentStory<typeof Select> = () =
   );
 };
 
-export const WithForwardedRef: ComponentStory<typeof Select> = () => {
+export const WithForwardedRef: StoryFn<typeof Select> = () => {
   const buttonRef = useRef<HTMLButtonElement | null>(null);
 
   const focusButton = () => {

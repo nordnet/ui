@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import styled from 'styled-components';
 
 import { Box, Button, CssGrid, Icon, Illustration, PageWrapper, PromotionBanner } from '../..';
@@ -18,7 +18,7 @@ export default {
   component: PromotionBanner,
 } as Meta;
 
-const Template: Story<Props & { children: React.ReactNode }> = (args) => {
+const Template: StoryFn<Props & { children: React.ReactNode }> = (args) => {
   return (
     <StyledBackground>
       <PromotionBanner
@@ -85,13 +85,16 @@ const Template: Story<Props & { children: React.ReactNode }> = (args) => {
   );
 };
 
-export const DefaultUsage = Template.bind({});
-DefaultUsage.args = {
-  title: 'Save with Nordnet One',
-  description:
-    'Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One.',
-  badgeContent: <Illustration.Robot64 color={(t) => t.color.menuAccent2} />,
-  mobileBadgeContent: <Icon.Robot32 color={(t) => t.color.menuAccent2} />,
+export const DefaultUsage = {
+  render: Template,
+
+  args: {
+    title: 'Save with Nordnet One',
+    description:
+      'Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One.',
+    badgeContent: <Illustration.Robot64 color={(t) => t.color.menuAccent2} />,
+    mobileBadgeContent: <Icon.Robot32 color={(t) => t.color.menuAccent2} />,
+  },
 };
 
 export const DifferentVariant = () => {

@@ -8,70 +8,70 @@ export default {
   },
 };
 
-export const dateTime = () => {
-  return <DateTime value={1554824654} />;
-};
+export const dateTime = {
+  render: () => {
+    return <DateTime value={1554824654} />;
+  },
 
-dateTime.story = {
   name: 'DateTime',
 };
 
-export const withDateOnly = () => {
-  return <DateTime onlyDate value={1554824654} />;
-};
+export const withDateOnly = {
+  render: () => {
+    return <DateTime onlyDate value={1554824654} />;
+  },
 
-withDateOnly.story = {
   name: 'With date only',
 };
 
-export const withDateTimeAsIso8601String = () => {
-  return <DateTime value="1999-11-11T11:11+0100" />;
-};
+export const withDateTimeAsIso8601String = {
+  render: () => {
+    return <DateTime value="1999-11-11T11:11+0100" />;
+  },
 
-withDateTimeAsIso8601String.story = {
   name: 'With date time as ISO 8601 string',
 };
 
-export const withDateAsIso8601String = () => {
-  return <DateTime onlyDate value="1999-11-11" />;
-};
+export const withDateAsIso8601String = {
+  render: () => {
+    return <DateTime onlyDate value="1999-11-11" />;
+  },
 
-withDateAsIso8601String.story = {
   name: 'With date as ISO 8601 string',
 };
 
-export const withCustomFormattingOptions = () => {
-  type FormatDateOptionYear = 'numeric';
-  type FormatDateOptionMonth = 'short';
-  type FormatDateOptionDay = 'numeric';
-  type FormatDateOptionWeekDay = 'short';
+export const withCustomFormattingOptions = {
+  render: () => {
+    type FormatDateOptionYear = 'numeric';
+    type FormatDateOptionMonth = 'short';
+    type FormatDateOptionDay = 'numeric';
+    type FormatDateOptionWeekDay = 'short';
 
-  const options = {
-    year: 'numeric' as FormatDateOptionYear,
-    month: 'short' as FormatDateOptionMonth,
-    day: 'numeric' as FormatDateOptionDay,
-    weekday: 'short' as FormatDateOptionWeekDay,
-  };
+    const options = {
+      year: 'numeric' as FormatDateOptionYear,
+      month: 'short' as FormatDateOptionMonth,
+      day: 'numeric' as FormatDateOptionDay,
+      weekday: 'short' as FormatDateOptionWeekDay,
+    };
 
-  return <DateTime value="1999-11-11" options={options} />;
-};
+    return <DateTime value="1999-11-11" options={options} />;
+  },
 
-withCustomFormattingOptions.story = {
   name: 'With custom formatting options',
 };
 
-export const invalidValueStory = () => {
-  return <DateTime value={null} />;
-};
+export const invalidValueStory = {
+  render: () => {
+    return <DateTime value={null} />;
+  },
 
-invalidValueStory.story = {
   name: 'Invalid value',
 };
 
-export const usesCustomSymbolForInvalidValue = () => {
-  return <DateTime value={null} invalidValue="X" />;
-};
+export const usesCustomSymbolForInvalidValue = {
+  render: () => {
+    return <DateTime value={null} invalidValue="X" />;
+  },
 
-usesCustomSymbolForInvalidValue.story = {
   name: 'Uses custom symbol for invalid value',
 };

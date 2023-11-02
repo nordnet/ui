@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import docs from './Rating.mdx';
 import Rating from '.';
@@ -18,52 +18,58 @@ export default {
   component: Rating,
 } as Meta;
 
-const Template: Story<Props> = (args) => <Rating {...args} />;
-
-export const Rating0 = Template.bind({});
-Rating0.args = {
-  rating: 0,
+export const Rating0 = {
+  args: {
+    rating: 0,
+  },
 };
 
-export const Rating1 = Template.bind({});
-Rating1.args = {
-  rating: 1,
+export const Rating1 = {
+  args: {
+    rating: 1,
+  },
 };
 
-export const Rating5 = Template.bind({});
-Rating5.args = {
-  rating: 5,
+export const Rating5 = {
+  args: {
+    rating: 5,
+  },
 };
 
-export const RatingNotDefined = Template.bind({});
-RatingNotDefined.args = {
-  rating: undefined,
+export const RatingNotDefined = {
+  args: {
+    rating: undefined,
+  },
 };
 
-export const RatingWithSize = Template.bind({});
-RatingWithSize.args = {
-  rating: 3,
-  size: 3,
+export const RatingWithSize = {
+  args: {
+    rating: 3,
+    size: 3,
+  },
 };
 
-export const RatingWithStringSize = Template.bind({});
-RatingWithStringSize.args = {
-  rating: 3,
-  size: 'xl',
+export const RatingWithStringSize = {
+  args: {
+    rating: 3,
+    size: 'xl',
+  },
 };
 
-export const RatingOutOf3 = Template.bind({});
-RatingOutOf3.args = {
-  rating: 2,
-  outOf: 3,
+export const RatingOutOf3 = {
+  args: {
+    rating: 2,
+    outOf: 3,
+  },
 };
 
-export const CustomIcons = Template.bind({});
-CustomIcons.args = {
-  rating: 2,
-  outOf: 3,
-  activeIcon: <Icon.Account16 color={(t) => t.color.starRatingBlue} />,
-  inactiveIcon: <Icon.AddCircleFill16 color={(t) => t.color.starRatingBlueOff} />,
+export const CustomIcons = {
+  args: {
+    rating: 2,
+    outOf: 3,
+    activeIcon: <Icon.Account16 color={(t) => t.color.starRatingBlue} />,
+    inactiveIcon: <Icon.AddCircleFill16 color={(t) => t.color.starRatingBlueOff} />,
+  },
 };
 
 export const RatingOutOf3WithLabel = () => (

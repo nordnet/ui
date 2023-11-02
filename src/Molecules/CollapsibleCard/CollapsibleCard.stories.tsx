@@ -28,21 +28,22 @@ export default {
   },
 };
 
-export const defaultStory = () => {
-  return (
-    <CollapsibleCard title="Collapsible">
-      <Typography type="primary" as={styledText}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </Typography>
-    </CollapsibleCard>
-  );
-};
+export const defaultStory = {
+  render: () => {
+    return (
+      <CollapsibleCard title="Collapsible">
+        <Typography type="primary" as={styledText}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </Typography>
+      </CollapsibleCard>
+    );
+  },
 
-defaultStory.story = {
   name: 'Default',
 };
 
@@ -52,138 +53,162 @@ const Settings = (
   </Button>
 );
 
-export const withActionComponentThatDoesNotTriggerCollapse = () => {
-  return (
-    <CollapsibleCard title="Collapsible" action={Settings}>
-      <Typography type="primary" as={styledText}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </Typography>
-    </CollapsibleCard>
-  );
-};
-
-withActionComponentThatDoesNotTriggerCollapse.story = {
-  name: "With an action component that doesn't trigger collapse",
-};
-
-export const collapsedInitially = () => {
-  return (
-    <CollapsibleCard title="Collapsed initially" collapsedInitial>
-      <Typography type="primary" as={styledText}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua.
-      </Typography>
-    </CollapsibleCard>
-  );
-};
-
-collapsedInitially.story = {
-  name: 'Collapsed initially',
-};
-
-export const collapsibleWithCustomComponentAsTitle = () => {
-  return (
-    <CollapsibleCard title={<>Custom title</>}>
-      <Typography type="primary" as={styledText}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua.
-      </Typography>
-    </CollapsibleCard>
-  );
-};
-
-collapsibleWithCustomComponentAsTitle.story = {
-  name: 'Collapsible with custom component as title',
-};
-
-export const collapsibleWithOnClickListener = () => <ExampleWithOnClick />;
-
-collapsibleWithOnClickListener.story = {
-  name: 'Collapsible with onClick listener',
-};
-
-export const CollapsibleWithoutIndicator = () => {
-  const [extraText, setExtraText] = useState(false);
-
-  const text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+export const withActionComponentThatDoesNotTriggerCollapse = {
+  render: () => {
+    return (
+      <CollapsibleCard title="Collapsible" action={Settings}>
+        <Typography type="primary" as={styledText}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
           ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
           sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.`;
-
-  return (
-    <>
-      <Button onClick={() => setExtraText(!extraText)}>Toggle collapse</Button>
-      <CollapsibleCard title="Collapsible without indicator" noIndicator>
-        <Typography type="primary" as={styledText}>
-          {text}
-          {extraText && text}
+          est laborum.
         </Typography>
       </CollapsibleCard>
-    </>
-  );
+    );
+  },
+
+  name: "With an action component that doesn't trigger collapse",
 };
 
-CollapsibleWithoutIndicator.story = {
+export const collapsedInitially = {
+  render: () => {
+    return (
+      <CollapsibleCard title="Collapsed initially" collapsedInitial>
+        <Typography type="primary" as={styledText}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua.
+        </Typography>
+      </CollapsibleCard>
+    );
+  },
+
+  name: 'Collapsed initially',
+};
+
+export const collapsibleWithCustomComponentAsTitle = {
+  render: () => {
+    return (
+      <CollapsibleCard title={<>Custom title</>}>
+        <Typography type="primary" as={styledText}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua.
+        </Typography>
+      </CollapsibleCard>
+    );
+  },
+
+  name: 'Collapsible with custom component as title',
+};
+
+export const collapsibleWithOnClickListener = {
+  render: () => <ExampleWithOnClick />,
+  name: 'Collapsible with onClick listener',
+};
+
+export const CollapsibleWithoutIndicator = {
+  render: () => {
+    const [extraText, setExtraText] = useState(false);
+
+    const text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.`;
+
+    return (
+      <>
+        <Button onClick={() => setExtraText(!extraText)}>Toggle collapse</Button>
+        <CollapsibleCard title="Collapsible without indicator" noIndicator>
+          <Typography type="primary" as={styledText}>
+            {text}
+            {extraText && text}
+          </Typography>
+        </CollapsibleCard>
+      </>
+    );
+  },
+
   name: 'Collapsible without indicator',
 };
 
-export const collapsibleWithCustomExpandElementAsAFunction = () => {
-  return (
-    <CollapsibleCard
-      title="Custom expand element (function)"
-      expandElement={(collapsed) => (
-        <Typography type="secondary">{collapsed ? 'Expand' : 'Close'}</Typography>
-      )}
-    >
-      <Typography type="primary" as={styledText}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </Typography>
-    </CollapsibleCard>
-  );
-};
+export const collapsibleWithCustomExpandElementAsAFunction = {
+  render: () => {
+    return (
+      <CollapsibleCard
+        title="Custom expand element (function)"
+        expandElement={(collapsed) => (
+          <Typography type="secondary">{collapsed ? 'Expand' : 'Close'}</Typography>
+        )}
+      >
+        <Typography type="primary" as={styledText}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </Typography>
+      </CollapsibleCard>
+    );
+  },
 
-collapsibleWithCustomExpandElementAsAFunction.story = {
   name: 'Collapsible with custom expand element as a function',
 };
 
-export const collapsibleWithCustomExpandElement = () => {
-  return (
-    <CollapsibleCard
-      title="Custom expand element (ReactNode)"
-      expandElement={<Typography type="secondary">Toggle expand</Typography>}
-    >
-      <Typography type="primary" as={styledText}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </Typography>
-    </CollapsibleCard>
-  );
-};
+export const collapsibleWithCustomExpandElement = {
+  render: () => {
+    return (
+      <CollapsibleCard
+        title="Custom expand element (ReactNode)"
+        expandElement={<Typography type="secondary">Toggle expand</Typography>}
+      >
+        <Typography type="primary" as={styledText}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </Typography>
+      </CollapsibleCard>
+    );
+  },
 
-collapsibleWithCustomExpandElement.story = {
   name: 'Collapsible with custom expand element',
 };
 
-export const collapsibleCardWithNoPadding = () => {
-  return (
+export const collapsibleCardWithNoPadding = {
+  render: () => {
+    return (
+      <CollapsibleCard
+        title="Collapsible card with no title row padding"
+        titleRowPaddingX={0}
+        titleRowPaddingY={0}
+        noIndicator
+      >
+        <Typography type="primary" as={styledText}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </Typography>
+      </CollapsibleCard>
+    );
+  },
+
+  name: 'Collapsible card with no title row padding',
+};
+
+export const collapsibleCardWithLotsOfTopAndBottomPadding = {
+  render: () => (
     <CollapsibleCard
-      title="Collapsible card with no title row padding"
-      titleRowPaddingX={0}
-      titleRowPaddingY={0}
-      noIndicator
+      title="Collapsible card with lots of top and bottom padding"
+      titleRowPaddingY={10}
     >
       <Typography type="primary" as={styledText}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -193,29 +218,8 @@ export const collapsibleCardWithNoPadding = () => {
         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </Typography>
     </CollapsibleCard>
-  );
-};
+  ),
 
-collapsibleCardWithNoPadding.story = {
-  name: 'Collapsible card with no title row padding',
-};
-
-export const collapsibleCardWithLotsOfTopAndBottomPadding = () => (
-  <CollapsibleCard
-    title="Collapsible card with lots of top and bottom padding"
-    titleRowPaddingY={10}
-  >
-    <Typography type="primary" as={styledText}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </Typography>
-  </CollapsibleCard>
-);
-
-collapsibleCardWithLotsOfTopAndBottomPadding.story = {
   name: 'Collapsible card with lots of top and bottom padding',
 };
 

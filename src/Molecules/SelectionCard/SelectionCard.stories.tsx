@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import styled from 'styled-components';
 
 import { Box, Flexbox, Icon, Typography } from '../..';
@@ -22,107 +22,115 @@ const StyledBox = styled(Box)`
   width: 150px;
 `;
 
-const Template: Story<Props> = (args) => <SelectionCard {...args} />;
+export const SelectionCardDefault = {
+  args: {
+    title: 'Selection Card Default',
+    tag: 'Tag',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dignissim dolor.',
+    border: true,
+    disabled: false,
+    outline: true,
+    horizontal: false,
+    error: false,
+  },
 
-export const SelectionCardDefault = Template.bind({});
-SelectionCardDefault.args = {
-  title: 'Selection Card Default',
-  tag: 'Tag',
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dignissim dolor.',
-  border: true,
-  disabled: false,
-  outline: true,
-  horizontal: false,
-  error: false,
-};
-SelectionCardDefault.storyName = 'Default';
-
-export const WithReactNode = Template.bind({});
-WithReactNode.args = {
-  ...SelectionCardDefault,
-  title: (
-    <StyledFlexbox container justifyContent="flex-start">
-      <Flexbox item>
-        <Typography type="primary" weight="bold">
-          Title in a flexbox
-        </Typography>
-      </Flexbox>
-    </StyledFlexbox>
-  ),
-  text: (
-    <StyledFlexbox container justifyContent="flex-end">
-      <Flexbox item>
-        <Typography type="secondary">Text in a flexbox</Typography>
-      </Flexbox>
-    </StyledFlexbox>
-  ),
+  name: 'Default',
 };
 
-export const WithIcon = Template.bind({});
-WithIcon.args = {
-  ...SelectionCardDefault,
-  title: 'With Icon',
-  icon: <Icon.Book24 />,
+export const WithReactNode = {
+  args: {
+    ...SelectionCardDefault,
+    title: (
+      <StyledFlexbox container justifyContent="flex-start">
+        <Flexbox item>
+          <Typography type="primary" weight="bold">
+            Title in a flexbox
+          </Typography>
+        </Flexbox>
+      </StyledFlexbox>
+    ),
+    text: (
+      <StyledFlexbox container justifyContent="flex-end">
+        <Flexbox item>
+          <Typography type="secondary">Text in a flexbox</Typography>
+        </Flexbox>
+      </StyledFlexbox>
+    ),
+  },
 };
 
-export const withImage = () => {
-  const Component = () => {
-    return (
-      <StyledBox>
-        <SelectionCard
-          title="Controlled selection card"
-          text="This component is controlled"
-          imageUrl={image}
-          border
-        />
-      </StyledBox>
-    );
-  };
-  return <Component />;
+export const WithIcon = {
+  args: {
+    ...SelectionCardDefault,
+    title: 'With Icon',
+    icon: <Icon.Book24 />,
+  },
 };
 
-withImage.storyName = 'With image';
+export const withImage = {
+  render: () => {
+    const Component = () => {
+      return (
+        <StyledBox>
+          <SelectionCard
+            title="Controlled selection card"
+            text="This component is controlled"
+            imageUrl={image}
+            border
+          />
+        </StyledBox>
+      );
+    };
+    return <Component />;
+  },
 
-export const WithIconAndText = Template.bind({});
-WithIconAndText.args = {
-  ...SelectionCardDefault,
-  title: 'Title and Icon',
-  text: 'Description for title and icon',
-  icon: <Icon.Book32 />,
+  name: 'With image',
 };
 
-export const WithIconAndTextHorizontal = Template.bind({});
-WithIconAndTextHorizontal.args = {
-  ...SelectionCardDefault,
-  title: 'Title and Icon',
-  text: 'Description for title and icon',
-  icon: <Icon.Book32 />,
-  horizontal: true,
+export const WithIconAndText = {
+  args: {
+    ...SelectionCardDefault,
+    title: 'Title and Icon',
+    text: 'Description for title and icon',
+    icon: <Icon.Book32 />,
+  },
 };
 
-export const withValueControlledBehavior = () => {
-  const Component = () => {
-    const [value, setValue] = useState(false);
-
-    return (
-      <>
-        <SelectionCard
-          title="Controlled selection card"
-          text="This component is controlled"
-          selected={value}
-          onChange={() => setValue(!value)}
-        />
-        <button type="button" onClick={() => setValue(true)}>
-          Selected
-        </button>
-        <button type="button" onClick={() => setValue(false)}>
-          Not selected
-        </button>
-        value: {value.toString()}
-      </>
-    );
-  };
-  return <Component />;
+export const WithIconAndTextHorizontal = {
+  args: {
+    ...SelectionCardDefault,
+    title: 'Title and Icon',
+    text: 'Description for title and icon',
+    icon: <Icon.Book32 />,
+    horizontal: true,
+  },
 };
 
-withValueControlledBehavior.storyName = 'With controlled behavior';
+export const withValueControlledBehavior = {
+  render: () => {
+    const Component = () => {
+      const [value, setValue] = useState(false);
+
+      return (
+        <>
+          <SelectionCard
+            title="Controlled selection card"
+            text="This component is controlled"
+            selected={value}
+            onChange={() => setValue(!value)}
+          />
+          <button type="button" onClick={() => setValue(true)}>
+            Selected
+          </button>
+          <button type="button" onClick={() => setValue(false)}>
+            Not selected
+          </button>
+          value: {value.toString()}
+        </>
+      );
+    };
+    return <Component />;
+  },
+
+  name: 'With controlled behavior',
+};

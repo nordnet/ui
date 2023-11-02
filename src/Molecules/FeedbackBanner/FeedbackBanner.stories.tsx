@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter } from 'react-router-dom';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { FeedbackBanner, Spinner } from '../..';
 import { Display } from '../../common/Display';
@@ -11,15 +11,12 @@ export default {
   component: FeedbackBanner,
 } as Meta;
 
-const Template: Story<Props & { children: React.ReactNode }> = (args) => (
-  <FeedbackBanner {...args} />
-);
-
-export const DefaultUsage = Template.bind({});
-DefaultUsage.args = {
-  title: 'Feedback banner',
-  children:
-    'Feedback banner should be used within modules to display information that needs attention. Content is flexible, it can contain links and plain text.',
+export const DefaultUsage = {
+  args: {
+    title: 'Feedback banner',
+    children:
+      'Feedback banner should be used within modules to display information that needs attention. Content is flexible, it can contain links and plain text.',
+  },
 };
 
 export const displayingTitle = () => (

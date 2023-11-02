@@ -26,18 +26,18 @@ const exampleFooter = (
   </Typography>
 );
 
-export const defaultStory = () => (
-  <Accordion>
-    <AccordionItem title="Låg CO₂ risk">
-      <ExampleContent />
-    </AccordionItem>
-    <AccordionItem title="Sustainability score">
-      <ExampleContent />
-    </AccordionItem>
-  </Accordion>
-);
+export const defaultStory = {
+  render: () => (
+    <Accordion>
+      <AccordionItem title="Låg CO₂ risk">
+        <ExampleContent />
+      </AccordionItem>
+      <AccordionItem title="Sustainability score">
+        <ExampleContent />
+      </AccordionItem>
+    </Accordion>
+  ),
 
-defaultStory.story = {
   name: 'Default',
 };
 

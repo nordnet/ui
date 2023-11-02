@@ -48,7 +48,6 @@ const CardContainer: React.FC<React.PropsWithChildren<{}>> = ({ children }) => (
 );
 
 export const Default = () => <CheckList checkList={defaultCheckList} />;
-
 export const Empty = () => <CheckList />;
 
 export const MinimalExampleInCard = () => (
@@ -86,6 +85,7 @@ export const CompletedWithProgress = () => (
     />
   </CardContainer>
 );
+
 export const CompletedWithProgressAndClose = () => (
   <CardContainer>
     <CheckList
@@ -217,17 +217,23 @@ export const FullExample = () => {
   );
 };
 
-export const FullExampleMobile: CheckListComponentStory = () => <FullExample />;
-FullExampleMobile.parameters = {
-  viewport: {
-    defaultViewport: 'iphone5',
+export const FullExampleMobile: CheckListComponentStory = {
+  render: () => <FullExample />,
+
+  parameters: {
+    viewport: {
+      defaultViewport: 'iphone5',
+    },
   },
 };
 
-export const FullExampleTablet: CheckListComponentStory = () => <FullExample />;
-FullExampleTablet.parameters = {
-  viewport: {
-    defaultViewport: 'tablet',
+export const FullExampleTablet: CheckListComponentStory = {
+  render: () => <FullExample />,
+
+  parameters: {
+    viewport: {
+      defaultViewport: 'tablet',
+    },
   },
 };
 
