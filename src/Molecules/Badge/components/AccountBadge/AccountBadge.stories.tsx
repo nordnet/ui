@@ -45,8 +45,6 @@ export const Showcase = {
       </Flexbox>
     </Flexbox>
   ),
-
-  name: 'Showcase',
 };
 
 const StyledTypography = styled(Typography)`

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StoryObj, StoryFn } from '@storybook/react';
+import { StoryObj } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { AccountBadgeStack } from './AccountBadgeStack';
 import { AccountBadgeStackProps, Item } from './AccountBadgeStack.types';
@@ -144,8 +144,6 @@ export const Default: StoryObj<AccountBadgeStackProps> = {
       </DisplayContainer>
     );
   },
-
-  name: 'Default',
 };
 
 export const InsideButton = {
