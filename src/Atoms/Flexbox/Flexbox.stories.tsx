@@ -1,9 +1,8 @@
 import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import styled from 'styled-components';
 
 import { Flexbox, Typography } from '../..';
-import { Height, Width } from './Flexbox.types';
 
 const Content = styled.div`
   box-sizing: border-box;
@@ -12,10 +11,13 @@ const Content = styled.div`
   height: 100%;
 `;
 
-export default {
-  title: 'Atoms / Flexbox',
+const meta: Meta<typeof Flexbox> = {
   component: Flexbox,
-} as Meta;
+  title: 'Atoms / Flexbox',
+};
+
+export default meta;
+type Story = StoryObj<typeof Flexbox>;
 
 export const DefaultStory = {
   render: () => (
@@ -201,67 +203,75 @@ const GrowingDiv = styled.div`
   background-color: #eee;
 `;
 
-const HeightAndWidthTemplate: StoryFn<{
-  height: Height;
-  width: Width;
-}> = ({ height, width }) => (
-  <div style={{ height: '500px' }}>
+export const WidthAndHeightInNumbers: Story = {
+  render: () => (
+    <div style={{ height: '500px' }}>
+      <Flexbox
+        container
+        width={100}
+        height={100}
+        alignItems="center"
+        justifyContent="space-between"
+        gap={5}
+      >
+        <Flexbox item height="100%">
+          <GrowingDiv>One</GrowingDiv>
+        </Flexbox>
+        <Flexbox item height="100%">
+          <GrowingDiv>Two</GrowingDiv>
+        </Flexbox>
+        <Flexbox item height="100%">
+          <GrowingDiv>Three</GrowingDiv>
+        </Flexbox>
+      </Flexbox>
+    </div>
+  ),
+};
+
+export const WidthAndHeightInPercentage: Story = {
+  render: () => (
+    <div style={{ height: '500px' }}>
+      <Flexbox
+        container
+        width="50%"
+        height="50%"
+        alignItems="center"
+        justifyContent="space-between"
+        gap={5}
+      >
+        <Flexbox item height="100%">
+          <GrowingDiv>One</GrowingDiv>
+        </Flexbox>
+        <Flexbox item height="100%">
+          <GrowingDiv>Two</GrowingDiv>
+        </Flexbox>
+        <Flexbox item height="100%">
+          <GrowingDiv>Three</GrowingDiv>
+        </Flexbox>
+      </Flexbox>
+    </div>
+  ),
+};
+
+export const DifferentSizedItems: Story = {
+  render: () => (
     <Flexbox
       container
-      width={width}
-      height={height}
+      width={100}
+      height={100}
       alignItems="center"
       justifyContent="space-between"
       gap={5}
     >
-      <Flexbox item height="100%">
+      <Flexbox item width="100%" height="100%">
         <GrowingDiv>One</GrowingDiv>
       </Flexbox>
-      <Flexbox item height="100%">
+      <Flexbox item width="66%" height="66%">
         <GrowingDiv>Two</GrowingDiv>
       </Flexbox>
-      <Flexbox item height="100%">
+      <Flexbox item width="33%" height="33%">
         <GrowingDiv>Three</GrowingDiv>
       </Flexbox>
     </Flexbox>
-  </div>
-);
-
-export const WidthAndHeightInNumbers = {
-  render: HeightAndWidthTemplate,
-
-  args: {
-    height: 100,
-    width: 100,
-  },
+  ),
 };
-
-export const WidthAndHeightInPercentage = {
-  render: HeightAndWidthTemplate,
-
-  args: {
-    height: '50%',
-    width: '50%',
-  },
-};
-
-export const DifferentSizedItems = () => (
-  <Flexbox
-    container
-    width={100}
-    height={100}
-    alignItems="center"
-    justifyContent="space-between"
-    gap={5}
-  >
-    <Flexbox item width="100%" height="100%">
-      <GrowingDiv>One</GrowingDiv>
-    </Flexbox>
-    <Flexbox item width="66%" height="66%">
-      <GrowingDiv>Two</GrowingDiv>
-    </Flexbox>
-    <Flexbox item width="33%" height="33%">
-      <GrowingDiv>Three</GrowingDiv>
-    </Flexbox>
-  </Flexbox>
-);

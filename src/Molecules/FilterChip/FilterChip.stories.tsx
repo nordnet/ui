@@ -1,25 +1,28 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
 import { Box, Flexbox, Icon, Card } from '../..';
 import { FilterChip } from './FilterChip';
 import { Props } from './FilterChip.types';
 
-export default {
-  title: 'Molecules / FilterChip',
+const meta: Meta<typeof FilterChip> = {
   component: FilterChip,
-} as Meta;
+  title: 'Molecules / FilterChip',
+};
+
+export default meta;
+type Story = StoryObj<typeof FilterChip>;
 
 const onChange = action('on change triggered');
 
-const Template: StoryFn<Props> = (args) => (
+const Template = (args: Props) => (
   <div style={{ padding: '10px', backgroundColor: 'white' }}>
     <FilterChip {...args} />
   </div>
 );
 
-export const OnlyLabel = {
+export const OnlyLabel: Story = {
   render: Template,
 
   args: {
@@ -27,7 +30,7 @@ export const OnlyLabel = {
   },
 };
 
-export const OnlyIcon = {
+export const OnlyIcon: Story = {
   render: Template,
 
   args: {
@@ -35,7 +38,7 @@ export const OnlyIcon = {
   },
 };
 
-export const BothIconAndLabel = {
+export const BothIconAndLabel: Story = {
   render: Template,
 
   args: {
@@ -44,7 +47,7 @@ export const BothIconAndLabel = {
   },
 };
 
-export const AnotherIconAndLabel = {
+export const AnotherIconAndLabel: Story = {
   render: Template,
 
   args: {
@@ -53,7 +56,7 @@ export const AnotherIconAndLabel = {
   },
 };
 
-export const WithSelectedInitially = {
+export const WithSelectedInitially: Story = {
   render: Template,
 
   args: {
@@ -62,7 +65,7 @@ export const WithSelectedInitially = {
   },
 };
 
-export const WithDisabled = {
+export const WithDisabled: Story = {
   render: Template,
 
   args: {

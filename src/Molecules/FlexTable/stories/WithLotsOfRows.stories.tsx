@@ -1,20 +1,23 @@
 import React, { useMemo, useState } from 'react';
 import R from 'ramda';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
 import { Box, FlexTable, Typography } from '../../..';
 import docs from '../FlexTable.mdx';
 import { StyledBackground } from './storiesShared';
 
-export default {
+const meta: Meta<typeof FlexTable> = {
+  component: FlexTable,
   title: 'Molecules / FlexTable / With lots of rows',
   parameters: {
-    component: FlexTable,
     docs: {
       page: docs,
     },
   },
-} as Meta;
+};
+
+export default meta;
+type Story = StoryObj<typeof FlexTable>;
 
 const generateUniqueId = (rowIndex: number) =>
   `${rowIndex}_${Math.random().toString(36).substr(2, 9)}`;
@@ -51,11 +54,11 @@ const BigTableRow = ({ data }: any) => {
   );
 };
 
-const BigTableTemplate: StoryFn<{ columns: number; rows: number }> = (args) => {
+const BigTableTemplate = ({ columns, rows }: { columns: number; rows: number }) => {
   const BigTableExample = () => {
     const ReactComponent = () => {
-      const rowsLength = args.rows;
-      const columnsLength = args.columns;
+      const rowsLength = rows;
+      const columnsLength = columns;
       const [sort, setSort] = useState<any>({});
       const tableData = useMemo(
         () => generateTableData(rowsLength, columnsLength),
@@ -113,20 +116,21 @@ const BigTableTemplate: StoryFn<{ columns: number; rows: number }> = (args) => {
   );
 };
 
-export const BigTable = {
-  render: BigTableTemplate,
-
-  args: {
-    rows: 100,
-    columns: 10,
-  },
+export const BigTable: Story = {
+  render: () => <BigTableTemplate rows={100} columns={10} />,
 };
 
-const BigTableWithoutStickyHeaderTemplate: StoryFn<{ columns: number; rows: number }> = (args) => {
+const BigTableWithoutStickyHeaderTemplate = ({
+  columns,
+  rows,
+}: {
+  columns: number;
+  rows: number;
+}) => {
   const BigTableWithoutStickyHeaderExample = () => {
     const ReactComponent = () => {
-      const rowsLength = args.rows;
-      const columnsLength = args.columns;
+      const rowsLength = rows;
+      const columnsLength = columns;
       const [sort, setSort] = useState<any>({});
       const tableData = useMemo(
         () => generateTableData(rowsLength, columnsLength),
@@ -179,21 +183,20 @@ const BigTableWithoutStickyHeaderTemplate: StoryFn<{ columns: number; rows: numb
   );
 };
 
-export const BigTableWithoutStickyHeader = {
-  render: BigTableWithoutStickyHeaderTemplate,
-
-  args: {
-    rows: 100,
-    columns: 10,
-  },
+export const BigTableWithoutStickyHeader: Story = {
+  render: () => <BigTableWithoutStickyHeaderTemplate rows={100} columns={10} />,
 };
 
-const MultipleBigTablesWithStickyHeadersTemplate: StoryFn<{ columns: number; rows: number }> = (
-  args,
-) => {
+const MultipleBigTablesWithStickyHeadersTemplate = ({
+  columns,
+  rows,
+}: {
+  columns: number;
+  rows: number;
+}) => {
   const ReactComponent = () => {
-    const rowsLength = args.rows;
-    const columnsLength = args.columns;
+    const rowsLength = rows;
+    const columnsLength = columns;
     const [sort, setSort] = useState<any>({});
     const tableData = useMemo(
       () => generateTableData(rowsLength, columnsLength),
@@ -268,11 +271,6 @@ const MultipleBigTablesWithStickyHeadersTemplate: StoryFn<{ columns: number; row
   return <ReactComponent />;
 };
 
-export const MultipleBigTablesWithStickyHeaders = {
-  render: MultipleBigTablesWithStickyHeadersTemplate,
-
-  args: {
-    rows: 100,
-    columns: 5,
-  },
+export const MultipleBigTablesWithStickyHeaders: Story = {
+  render: () => <MultipleBigTablesWithStickyHeadersTemplate rows={100} columns={5} />,
 };
