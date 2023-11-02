@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
 import docs from './CardWithTitle.md';
-import { Props } from './CardWithTitle.types';
 
 import { Box, CardWithTitle, FadedScroll, Flexbox, OldIcon, Typography } from '../..';
 
@@ -40,17 +39,18 @@ const HeightOnCardWithTitle = styled(CardWithTitle)`
   }
 `;
 
-export default {
+const meta: Meta<typeof CardWithTitle> = {
   title: 'Molecules / CardWithTitle',
   component: CardWithTitle,
-} as Meta;
+};
+
+export default meta;
+type Story = StoryObj<typeof CardWithTitle>;
 
 export const documentation = () => <MD>{docs}</MD>;
 
-export const defaultStory = {
+export const Default: Story = {
   render: () => <CardWithTitle title="Konton">A CardWithTitle containing content</CardWithTitle>,
-
-  name: 'Default',
 };
 
 export const withComponentAsTitle = () => (
