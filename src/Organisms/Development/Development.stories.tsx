@@ -10,7 +10,7 @@ export default {
   title: 'Organisms / Development',
 };
 
-export const documentation = () => (
+export const Documentation = () => (
   <Typography>
     <MD>{docs}</MD>
     <div>
@@ -25,7 +25,7 @@ export const documentation = () => (
   </Typography>
 );
 
-export const defaultStory = {
+export const Default = {
   render: () => (
     <Display
       items={[
@@ -35,11 +35,9 @@ export const defaultStory = {
       ]}
     />
   ),
-
-  name: 'Default',
 };
 
-export const withIcon = {
+export const WithIcon = {
   render: () => (
     <Display
       items={[
@@ -49,11 +47,9 @@ export const withIcon = {
       ]}
     />
   ),
-
-  name: 'With icon',
 };
 
-export const asPercentage = {
+export const AsPercentage = {
   render: () => (
     <Display
       items={[
@@ -63,11 +59,9 @@ export const asPercentage = {
       ]}
     />
   ),
-
-  name: 'As percentage',
 };
 
-export const asCurrency = {
+export const AsCurrency = {
   render: () => (
     <Display
       items={[
@@ -77,11 +71,9 @@ export const asCurrency = {
       ]}
     />
   ),
-
-  name: 'As currency',
 };
 
-export const withDifferentColors = {
+export const WithDifferentColors = {
   render: () => (
     <Display
       items={[
@@ -97,11 +89,9 @@ export const withDifferentColors = {
       ]}
     />
   ),
-
-  name: 'With different colors',
 };
 
-export const regressionInfinity = {
+export const RegressionInfinity = {
   render: () => (
     <Display
       items={[
@@ -114,7 +104,7 @@ export const regressionInfinity = {
   name: 'Regression: infinity',
 };
 
-export const regressionValueIsNonZeroButRoundedValueIs0 = {
+export const RegressionValueIsNonZeroButRoundedValueIs0 = {
   render: () => (
     <Display
       items={[
@@ -157,7 +147,7 @@ export const regressionValueIsNonZeroButRoundedValueIs0 = {
   name: 'Regression: value is non-zero, but rounded value is 0',
 };
 
-export const integrationWithDifferentTypographies = {
+export const IntegrationWithDifferentTypographies = {
   render: () => {
     const items = Object.values(TYPOGRAPHY_TYPES)?.map((type) => ({
       title: type,

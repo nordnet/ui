@@ -9,7 +9,7 @@ export default {
   },
 };
 
-export const defaultStory = {
+export const DefaultStory = {
   render: () => (
     <>
       <FormLabel forId="unique-id">Username</FormLabel>
@@ -20,7 +20,7 @@ export const defaultStory = {
   name: 'Default',
 };
 
-export const withHiddenLabel = {
+export const WithHiddenLabel = {
   render: () => (
     <>
       <FormLabel forId="unique-id-2" hideLabel>
@@ -33,7 +33,7 @@ export const withHiddenLabel = {
   name: 'With hidden label',
 };
 
-export const asAWrapper = {
+export const AsAWrapper = {
   render: () => (
     <FormLabel>
       Username
@@ -44,7 +44,7 @@ export const asAWrapper = {
   name: 'As a wrapper',
 };
 
-export const disabled = () => (
+export const Disabled = () => (
   <>
     <FormLabel forId="unique-id" disabled>
       This is disabled

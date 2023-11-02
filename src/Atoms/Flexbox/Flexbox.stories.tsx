@@ -17,7 +17,7 @@ export default {
   component: Flexbox,
 } as Meta;
 
-export const defaultStory = {
+export const DefaultStory = {
   render: () => (
     <Flexbox container>
       <Flexbox item>
@@ -35,7 +35,7 @@ export const defaultStory = {
   name: 'Default',
 };
 
-export const columnSizedFlexboxes = () => (
+export const ColumnSizedFlexboxes = () => (
   <Flexbox container>
     <Flexbox item size={3}>
       <Content>Col 1</Content>
@@ -53,7 +53,7 @@ const tenTimes = [...Array(10)].map((_, i) => {
   return i + 1;
 });
 
-export const withCustomGap = () => (
+export const WithCustomGap = () => (
   <>
     <Typography type="title3">With gap as unit</Typography>
     <Flexbox container gap={5}>
@@ -85,7 +85,7 @@ export const withCustomGap = () => (
   </>
 );
 
-export const withDirectionColumn = () => (
+export const WithDirectionColumn = () => (
   <Flexbox container direction="column">
     <Flexbox item order={2}>
       <Content>Col 1</Content>
@@ -99,7 +99,7 @@ export const withDirectionColumn = () => (
   </Flexbox>
 );
 
-export const withConditionallyHiddenFlexItem = () => {
+export const WithConditionallyHiddenFlexItem = () => {
   const showFirstItem = false;
   return (
     <Flexbox container>
@@ -115,7 +115,7 @@ export const withConditionallyHiddenFlexItem = () => {
   );
 };
 
-export const withConditionallyVisibleFlexItem = () => {
+export const WithConditionallyVisibleFlexItem = () => {
   const showFirstItem = true;
   return (
     <Flexbox container>
@@ -131,7 +131,7 @@ export const withConditionallyVisibleFlexItem = () => {
   );
 };
 
-export const withContainerAndItemProps = () => {
+export const WithContainerAndItemProps = () => {
   return (
     <Flexbox container gap={5}>
       <Flexbox container item direction="column" gap={5}>
@@ -157,7 +157,7 @@ export const withContainerAndItemProps = () => {
   );
 };
 
-export const withBreakpointProps = () => {
+export const WithBreakpointProps = () => {
   return (
     <Flexbox
       container
@@ -245,7 +245,7 @@ export const WidthAndHeightInPercentage = {
   },
 };
 
-export const differentSizedItems = () => (
+export const DifferentSizedItems = () => (
   <Flexbox
     container
     width={100}

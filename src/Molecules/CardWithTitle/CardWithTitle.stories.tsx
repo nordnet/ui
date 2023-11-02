@@ -47,25 +47,25 @@ const meta: Meta<typeof CardWithTitle> = {
 export default meta;
 type Story = StoryObj<typeof CardWithTitle>;
 
-export const documentation = () => <MD>{docs}</MD>;
+export const Documentation = () => <MD>{docs}</MD>;
 
 export const Default: Story = {
   render: () => <CardWithTitle title="Konton">A CardWithTitle containing content</CardWithTitle>,
 };
 
-export const withComponentAsTitle = () => (
+export const WithComponentAsTitle = () => (
   <CardWithTitle title={<Typography type="hero">Hero Title</Typography>}>
     A CardWithTitle containing content
   </CardWithTitle>
 );
 
-export const withVariantBig = () => (
+export const WithVariantBig = () => (
   <CardWithTitle variant="big" title="Title for the card">
     A CardWithTitle with extra padding
   </CardWithTitle>
 );
 
-export const cardWithTitleAsArticleMostCardWithTitleShouldBeArticle = {
+export const CardWithTitleAsArticleMostCardWithTitleShouldBeArticle = {
   render: () => (
     <CardWithTitle as="article" title="Konton">
       A CardWithTitle as a article containing content
@@ -75,13 +75,13 @@ export const cardWithTitleAsArticleMostCardWithTitleShouldBeArticle = {
   name: 'CardWithTitle as article (most CardWithTitle should be article)',
 };
 
-export const cardWithTitleAsSection = () => (
+export const CardWithTitleAsSection = () => (
   <CardWithTitle as="section" title="Konton">
     A CardWithTitle as a section containing content
   </CardWithTitle>
 );
 
-export const cardWithHtmlProps = () => (
+export const CardWithHtmlProps = () => (
   <CardWithTitle as="section" title="HTML Props" data-testid="HTMLprops" aria-label="HTMLprops">
     A CardWithTitle with HTML Props
   </CardWithTitle>
@@ -91,7 +91,7 @@ const PaddedIcon = styled(OldIcon.ArrowRight)`
   padding-left: ${(p) => p.theme.spacing.unit(1)}px;
 `;
 
-export const integrationCardWithTitleWithCustomComponentAsTitle = {
+export const IntegrationCardWithTitleWithCustomComponentAsTitle = {
   render: () => {
     const CustomTitle = (
       <Flexbox container justifyContent="space-between" alignItems="center" direction="row">
@@ -121,7 +121,7 @@ export const integrationCardWithTitleWithCustomComponentAsTitle = {
   name: 'Integration: CardWithTitle with custom component as title',
 };
 
-export const integrationWithFadedScroll = {
+export const IntegrationWithFadedScroll = {
   render: () => {
     const CustomTitle = (
       <Typography type="title3" as="h2">
@@ -143,7 +143,7 @@ export const integrationWithFadedScroll = {
   name: 'Integration: with FadedScroll',
 };
 
-export const integrationFadedScrollWithHeightFromParent = {
+export const IntegrationFadedScrollWithHeightFromParent = {
   render: () => {
     const CustomTitle = (
       <Typography type="title3" as="h2">

@@ -8,7 +8,7 @@ export default {
   },
 };
 
-export const visuallyHiddenLabel = {
+export const VisuallyHiddenLabel = {
   render: () => (
     <>
       There&apos;s text here that&apos;s only displayed for screen readers:

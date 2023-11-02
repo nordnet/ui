@@ -1,3 +1,4 @@
+/* eslint-disable storybook/prefer-pascal-case */
 import React, { createElement, useCallback, useMemo, useState } from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import { action } from '@storybook/addon-actions';

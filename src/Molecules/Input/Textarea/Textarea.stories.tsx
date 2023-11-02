@@ -21,12 +21,11 @@ export default {
   },
 };
 
-export const defaultStory = {
+export const Default = {
   render: () => <Input.Textarea label="Label" placeholder="Placeholder" />,
-  name: 'Default',
 };
 
-export const withValueControlledBehaviour = {
+export const WithValueControlledBehaviour = {
   render: () => (
     <Input.Textarea label="Label" placeholder="Placeholder" value="Some predefined text" />
   ),
@@ -34,7 +33,7 @@ export const withValueControlledBehaviour = {
   name: 'With value (Controlled behaviour)',
 };
 
-export const withDefaultValueUncontrolledBehaviour = {
+export const WithDefaultValueUncontrolledBehaviour = {
   render: () => (
     <Input.Textarea label="Label" placeholder="Placeholder" defaultValue="Some predefined text" />
   ),
@@ -42,7 +41,7 @@ export const withDefaultValueUncontrolledBehaviour = {
   name: 'With default value (Uncontrolled behaviour)',
 };
 
-export const errorIfEmptyText = {
+export const ErrorIfEmptyText = {
   render: () => {
     const Component = () => {
       const [value, setValue] = useState('');
@@ -62,25 +61,25 @@ export const errorIfEmptyText = {
   name: 'Error if empty text',
 };
 
-export const successStory = {
+export const SuccessStory = {
   render: () => <Input.Textarea label="Label" placeholder="Placeholder" success />,
 
   name: 'Success',
 };
 
-export const disabledStory = {
+export const DisabledStory = {
   render: () => <Input.Textarea label="Label" placeholder="Placeholder" disabled />,
 
   name: 'Disabled',
 };
 
-export const withAutoFocus = {
+export const WithAutoFocus = {
   render: () => <Input.Textarea label="Label" placeholder="Placeholder" autoFocus />,
 
   name: 'With auto focus',
 };
 
-export const requiredStory = {
+export const RequiredStory = {
   render: () => (
     <Display
       title="Required"
@@ -107,7 +106,7 @@ export const requiredStory = {
   name: 'Required',
 };
 
-export const actionsStory = {
+export const ActionsStory = {
   render: () => (
     <>
       <p>
@@ -121,7 +120,7 @@ export const actionsStory = {
   name: 'Actions',
 };
 
-export const extraInfoBelow = {
+export const ExtraInfoBelow = {
   render: () => (
     <Input.Textarea label="Label" placeholder="Placeholder" extraInfo="Use this space wisely" />
   ),
@@ -129,7 +128,7 @@ export const extraInfoBelow = {
   name: 'Extra info below',
 };
 
-export const extraInfoWithError = {
+export const ExtraInfoWithError = {
   render: () => {
     const Component = () => {
       const [value, setValue] = useState('');
@@ -150,7 +149,7 @@ export const extraInfoWithError = {
   name: 'Extra info with error',
 };
 
-export const edgeCases = {
+export const EdgeCases = {
   render: () => (
     <Display
       items={[
@@ -181,25 +180,25 @@ export const edgeCases = {
   name: 'Edge cases',
 };
 
-export const fullWidth = {
+export const FullWidth = {
   render: () => <Input.Textarea label="Label" width="100%" placeholder="Placeholder" />,
 
   name: 'Full width',
 };
 
-export const specificWidth = {
+export const SpecificWidth = {
   render: () => <Input.Textarea label="Label" width="400px" placeholder="Placeholder" />,
 
   name: 'Specific width',
 };
 
-export const hiddenLabel = {
+export const HiddenLabel = {
   render: () => <Input.Textarea label="Label" placeholder="Placeholder" hideLabel />,
 
   name: 'Hidden label',
 };
 
-export const withLabelTooltip = {
+export const WithLabelTooltip = {
   render: () => (
     <Input.Textarea label="Label" labelTooltip="Tooltip content" placeholder="Placeholder" />
   ),
@@ -207,7 +206,7 @@ export const withLabelTooltip = {
   name: 'With tooltip as label addon',
 };
 
-export const withLabelTooltipPositionTop = {
+export const WithLabelTooltipPositionTop = {
   render: () => (
     <>
       <br />
@@ -224,7 +223,7 @@ export const withLabelTooltipPositionTop = {
   name: 'With tooltip (position top) as label addon',
 };
 
-export const onAColouredBackground = {
+export const OnAColouredBackground = {
   render: () => (
     <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
       <Input.Textarea label="On a colored background" placeholder="Placeholder" />
@@ -234,7 +233,7 @@ export const onAColouredBackground = {
   name: 'On a coloured background',
 };
 
-export const withMaxLength = {
+export const WithMaxLength = {
   render: () => (
     <>
       <Input.Textarea label="Label" maxLength={20} />
@@ -244,7 +243,7 @@ export const withMaxLength = {
   name: 'With max length 20 characters',
 };
 
-export const withResizeNone = {
+export const WithResizeNone = {
   render: () => (
     <>
       <Input.Textarea label="Label" noResize />
@@ -254,7 +253,7 @@ export const withResizeNone = {
   name: 'With resize none',
 };
 
-export const withLabelTooltipInsideModal = {
+export const WithLabelTooltipInsideModal = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);

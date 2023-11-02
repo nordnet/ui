@@ -101,9 +101,9 @@ export default {
   title: 'Others / Theme',
 };
 
-export const documentation = () => <MD>{colorDocs}</MD>;
+export const Documentation = () => <MD>{colorDocs}</MD>;
 
-export const colorsSemantic = {
+export const ColorsSemantic = {
   render: () => {
     const a11yTheme = createTheme({ a11yColors: true });
     const darkTheme = createTheme({ darkColors: true });
@@ -134,7 +134,7 @@ export const colorsSemantic = {
   name: 'Colors (semantic) deprecated',
 };
 
-export const designTokensLightColors = () => {
+export const DesignTokensLightColors = () => {
   const { colorTokens } = createTheme();
   const flattenedColorTokens = flattenObject(colorTokens);
 
@@ -166,7 +166,7 @@ export const designTokensLightColors = () => {
   );
 };
 
-export const designTokensA11yColors = {
+export const DesignTokensA11yColors = {
   render: () => {
     const { colorTokens } = createTheme({ tokensTheme: 'a11y' });
     const flattenedColorTokens = flattenObject(colorTokens);
@@ -202,7 +202,7 @@ export const designTokensA11yColors = {
   name: 'Design Tokens a11y Colors',
 };
 
-export const designTokensDarkColors = () => {
+export const DesignTokensDarkColors = () => {
   const { colorTokens } = createTheme({ tokensTheme: 'dark' });
   const flattenedColorTokens = flattenObject(colorTokens);
 
@@ -234,7 +234,7 @@ export const designTokensDarkColors = () => {
   );
 };
 
-export const lightColors = () => {
+export const LightColors = () => {
   const a11yTheme = createTheme({ a11yColors: true });
   return (
     <>
@@ -272,7 +272,7 @@ export const lightColors = () => {
   );
 };
 
-export const darkColors = () => {
+export const DarkColors = () => {
   const a11yTheme = createTheme({ a11yColors: true });
   return (
     <>
@@ -310,7 +310,7 @@ export const darkColors = () => {
   );
 };
 
-export const colorsPalette = {
+export const ColorsPalette = {
   render: () => {
     return (
       <>
@@ -345,7 +345,7 @@ export const colorsPalette = {
   name: 'Colors (palette)',
 };
 
-export const screenSizes = {
+export const ScreenSizes = {
   render: () => (
     <Table>
       <Thead>

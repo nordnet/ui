@@ -32,7 +32,7 @@ export default {
   },
 };
 
-export const defaultStory = {
+export const Default = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -84,11 +84,9 @@ export const defaultStory = {
     };
     return <Example />;
   },
-
-  name: 'Default',
 };
 
-export const footerStory = {
+export const FooterStory = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -184,7 +182,7 @@ export const footerStory = {
   name: 'Integration: Modal with a footer and Button',
 };
 
-export const withoutHeader = {
+export const WithoutHeader = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -236,11 +234,9 @@ export const withoutHeader = {
     };
     return <Example />;
   },
-
-  name: 'Without header',
 };
 
-export const uncontrolledBehavior = {
+export const UncontrolledBehavior = {
   render: () => {
     const Example = () => {
       return (
@@ -279,11 +275,9 @@ export const uncontrolledBehavior = {
     };
     return <Example />;
   },
-
-  name: 'Uncontrolled behavior',
 };
 
-export const hideClose = {
+export const HideClose = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -327,7 +321,7 @@ export const hideClose = {
   name: 'Hide Close button',
 };
 
-export const nodeAsTitle = {
+export const NodeAsTitle = {
   render: () => {
     const Title = (
       <Flexbox container gap={2} alignItems="center">
@@ -375,11 +369,9 @@ export const nodeAsTitle = {
     };
     return <Example />;
   },
-
-  name: 'Node as Title',
 };
 
-export const closeOnBackdropClickStory = () => {
+export const CloseOnBackdropClickStory = () => {
   const Example = () => {
     const [open, setOpen] = useState(true);
 
@@ -430,7 +422,7 @@ export const closeOnBackdropClickStory = () => {
   return <Example />;
 };
 
-export const notFullScreenMobile = {
+export const NotFullScreenMobile = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -481,8 +473,6 @@ export const notFullScreenMobile = {
     return <Example />;
   },
 
-  name: 'Not full screen mobile',
-
   parameters: {
     viewport: {
       defaultViewport: 'iphone6',
@@ -490,7 +480,7 @@ export const notFullScreenMobile = {
   },
 };
 
-export const notFullScreenMobileFixedBottom = {
+export const NotFullScreenMobileFixedBottom = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -542,8 +532,6 @@ export const notFullScreenMobileFixedBottom = {
     return <Example />;
   },
 
-  name: 'Not full screen mobile fixed at bottom',
-
   parameters: {
     viewport: {
       defaultViewport: 'iphone6',
@@ -551,7 +539,7 @@ export const notFullScreenMobileFixedBottom = {
   },
 };
 
-export const modalStandardSmall = {
+export const ModalStandardSmall = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -619,8 +607,6 @@ export const modalStandardSmall = {
     return <Example />;
   },
 
-  name: 'Modal Standard Small',
-
   parameters: {
     viewport: {
       defaultViewport: 'tablet',
@@ -628,7 +614,7 @@ export const modalStandardSmall = {
   },
 };
 
-export const modalStandardMedium = {
+export const ModalStandardMedium = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -684,8 +670,6 @@ export const modalStandardMedium = {
     };
     return <Example />;
   },
-
-  name: 'Modal Standard Medium',
 
   parameters: {
     viewport: {
@@ -694,7 +678,7 @@ export const modalStandardMedium = {
   },
 };
 
-export const modalStandardLarge = {
+export const ModalStandardLarge = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -751,8 +735,6 @@ export const modalStandardLarge = {
     return <Example />;
   },
 
-  name: 'Modal Standard Large',
-
   parameters: {
     viewport: {
       defaultViewport: 'desktopLg',
@@ -760,7 +742,7 @@ export const modalStandardLarge = {
   },
 };
 
-export const modalStandardLargeWithScroll = {
+export const ModalStandardLargeWithScroll = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -862,8 +844,6 @@ export const modalStandardLargeWithScroll = {
     return <Example />;
   },
 
-  name: 'Modal Standard Large with scroll',
-
   parameters: {
     viewport: {
       defaultViewport: 'desktopLgMax90Height',
@@ -871,7 +851,7 @@ export const modalStandardLargeWithScroll = {
   },
 };
 
-export const modalStandardMobile = {
+export const ModalStandardMobile = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -948,7 +928,7 @@ export const modalStandardMobile = {
   },
 };
 
-export const modalStandardMobileScroll = {
+export const ModalStandardMobileScroll = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -1020,7 +1000,7 @@ export const modalStandardMobileScroll = {
   },
 };
 
-export const modalMobileSmall = {
+export const ModalMobileSmall = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -1087,7 +1067,7 @@ export const modalMobileSmall = {
   },
 };
 
-export const modalMobileSmallOneButton = {
+export const ModalMobileSmallOneButton = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -1149,7 +1129,7 @@ export const modalMobileSmallOneButton = {
   },
 };
 
-export const modalMobileFullscreenWithScroll = {
+export const ModalMobileFullscreenWithScroll = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -1238,7 +1218,7 @@ export const modalMobileFullscreenWithScroll = {
   },
 };
 
-export const modalMobileFullscreenWithScrollTwoButtons = {
+export const ModalMobileFullscreenWithScrollTwoButtons = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -1330,7 +1310,7 @@ export const modalMobileFullscreenWithScrollTwoButtons = {
   },
 };
 
-export const modalWithAnimationComplete = {
+export const ModalWithAnimationComplete = {
   render: () => {
     const Example = () => {
       const [text, setText] = useState('initial text');
@@ -1357,7 +1337,7 @@ export const modalWithAnimationComplete = {
   name: 'Animation Complete',
 };
 
-export const modalWithoutBackdrop = {
+export const ModalWithoutBackdrop = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -1396,7 +1376,7 @@ export const modalWithoutBackdrop = {
   name: 'Modal without backdrop',
 };
 
-export const modalWithDisabledEscapePress = {
+export const ModalWithDisabledEscapePress = {
   render: () => {
     return (
       <Modal
@@ -1421,7 +1401,7 @@ export const modalWithDisabledEscapePress = {
   name: 'Modal with disabled escape-key press',
 };
 
-export const modalWithProgressIndicator = {
+export const ModalWithProgressIndicator = {
   render: () => {
     const Example = () => {
       const [value, setValue] = useState(false);
@@ -1469,6 +1449,4 @@ export const modalWithProgressIndicator = {
     };
     return <Example />;
   },
-
-  name: 'Modal with progress indicator',
 };

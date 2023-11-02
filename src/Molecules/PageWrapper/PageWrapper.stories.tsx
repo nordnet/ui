@@ -11,13 +11,13 @@ export default {
   },
 };
 
-export const documentation = () => (
+export const Documentation = () => (
   <Typography type="primary">
     <MD>{docs}</MD>
   </Typography>
 );
 
-export const pageWrapper = {
+export const PageWrapperStory = {
   render: () => (
     <PageWrapper>
       <Box py={4}>
@@ -31,7 +31,7 @@ export const pageWrapper = {
   name: 'PageWrapper',
 };
 
-export const pageWrapperWithACustomBackground = {
+export const PageWrapperWithACustomBackground = {
   render: () => (
     <PageWrapper background={(t) => t.color.background}>
       <Box py={4}>

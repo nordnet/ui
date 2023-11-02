@@ -13,7 +13,7 @@ export default {
   },
 };
 
-export const defaultStory = {
+export const DefaultStory = {
   render: () => (
     <Container>
       <TabTitle>This is tab title</TabTitle>
@@ -23,7 +23,7 @@ export const defaultStory = {
   name: 'Default',
 };
 
-export const largeStory = {
+export const LargeStory = {
   render: () => (
     <Container>
       <TabTitle variant="large">This is large tab title</TabTitle>
@@ -33,7 +33,7 @@ export const largeStory = {
   name: 'Large',
 };
 
-export const activeStory = {
+export const ActiveStory = {
   render: () => (
     <Container>
       <TabTitle active>This is tab title</TabTitle>
@@ -43,7 +43,7 @@ export const activeStory = {
   name: 'Active',
 };
 
-export const withHeightModified = {
+export const WithHeightModified = {
   render: () => (
     <Container>
       <TabTitle height={11} active>
@@ -55,7 +55,7 @@ export const withHeightModified = {
   name: 'With height modified',
 };
 
-export const integrationWithFlexbox = {
+export const IntegrationWithFlexbox = {
   render: () => (
     <Flexbox container direction="row">
       <Flexbox item>

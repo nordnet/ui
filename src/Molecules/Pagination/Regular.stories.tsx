@@ -22,25 +22,25 @@ const RegularPagination = ({ totalItems = 10, itemsPerPage = 1 }) => (
   />
 );
 
-export const regular = () => <RegularPagination />;
+export const Regular = () => <RegularPagination />;
 
-export const paginationWithOnePage = {
+export const PaginationWithOnePage = {
   render: () => <RegularPagination totalItems={1} itemsPerPage={1} />,
   name: '1 page',
 };
 
-export const paginationWithTwoPages = {
+export const PaginationWithTwoPages = {
   render: () => <RegularPagination totalItems={2} itemsPerPage={1} />,
   name: '2 pages',
 };
 
-export const paginationWithTwelvePages = {
+export const PaginationWithTwelvePages = {
   render: () => <RegularPagination totalItems={12} itemsPerPage={1} />,
 
   name: '12 pages',
 };
 
-export const paginationWithManyPages = {
+export const PaginationWithManyPages = {
   render: () => <RegularPagination totalItems={999} itemsPerPage={1} />,
 
   name: '999 pages',
@@ -65,9 +65,9 @@ const ControlledRegularPagination = ({ totalItems = 10, itemsPerPage = 1 }) => {
   );
 };
 
-export const controlledPagination = () => <ControlledRegularPagination />;
+export const ControlledPagination = () => <ControlledRegularPagination />;
 
-const LinksPagination = ({ totalItems = 10, itemsPerPage = 1 }) => {
+const LinksPaginationComponent = ({ totalItems = 10, itemsPerPage = 1 }) => {
   const [currentPage, setCurrentPage] = useState(5);
 
   const getPageHref = (pageNumber: number) => `/${pageNumber}`;
@@ -85,4 +85,4 @@ const LinksPagination = ({ totalItems = 10, itemsPerPage = 1 }) => {
   );
 };
 
-export const linksPagination = () => <LinksPagination />;
+export const LinksPagination = () => <LinksPaginationComponent />;

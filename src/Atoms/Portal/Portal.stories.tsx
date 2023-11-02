@@ -8,7 +8,7 @@ export default {
   },
 };
 
-export const defaultStory = {
+export const DefaultStory = {
   render: () => (
     <Portal>
       <Typography type="primary" as="p">
@@ -20,7 +20,7 @@ export const defaultStory = {
   name: 'Default',
 };
 
-export const portalToSpecifiedDestination = {
+export const PortalToSpecifiedDestination = {
   render: () => {
     const ControlledExample = () => {
       const destination = useRef(null);
@@ -53,7 +53,7 @@ export const portalToSpecifiedDestination = {
   name: 'Portal to specified destination',
 };
 
-export const ifAttachToPropIsNotAHtmlElementThenNothingIsRendered = {
+export const IfAttachToPropIsNotAHtmlElementThenNothingIsRendered = {
   render: () => {
     const ControlledExample = () => {
       const destination = useRef(null);

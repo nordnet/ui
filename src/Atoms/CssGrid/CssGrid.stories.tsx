@@ -36,7 +36,7 @@ export default {
   },
 };
 
-export const simpleCssGrid = {
+export const SimpleCssGrid = {
   render: () => (
     <Grid.Container
       // prettier-ignore
@@ -69,7 +69,7 @@ export const simpleCssGrid = {
   name: 'Simple CssGrid',
 };
 
-export const cssGridWithCustomGutter = {
+export const CssGridWithCustomGutter = {
   render: () => (
     <Grid.Container
       gutter={0}
@@ -100,7 +100,7 @@ export const cssGridWithCustomGutter = {
   name: 'CssGrid with custom gutter',
 };
 
-export const cssGridWithDifferentGutterOnDifferentScreenSizes = {
+export const CssGridWithDifferentGutterOnDifferentScreenSizes = {
   render: () => (
     <Grid.Container
       gutter={{ row: 5, col: 5 }}
@@ -151,7 +151,7 @@ export const cssGridWithDifferentGutterOnDifferentScreenSizes = {
   name: 'Different gutter on different screen sizes',
 };
 
-export const cssGridWithObjectAsGutterAndCustomSizedColumns = {
+export const CssGridWithObjectAsGutterAndCustomSizedColumns = {
   render: () => (
     <Grid.Container
       gutter={{ row: 6, col: 4 }}
@@ -190,7 +190,7 @@ export const cssGridWithObjectAsGutterAndCustomSizedColumns = {
   name: 'CssGrid with object as gutter and custom sized columns',
 };
 
-export const cssGridWithCustomTemplateColumns = {
+export const CssGridWithCustomTemplateColumns = {
   render: () => (
     <Grid.Container
       templateColumns={[3, 6, 3]}
@@ -220,7 +220,7 @@ export const cssGridWithCustomTemplateColumns = {
   name: 'CssGrid with custom templateColumns',
 };
 
-export const cssGridWithDifferentLayoutsForDifferentScreenSizes = {
+export const CssGridWithDifferentLayoutsForDifferentScreenSizes = {
   render: () => (
     <Grid.Container
       templateColumns={[6, 6]}
@@ -260,7 +260,7 @@ export const cssGridWithDifferentLayoutsForDifferentScreenSizes = {
   name: 'CssGrid with different layouts for different screen sizes',
 };
 
-export const withMinMax = {
+export const WithMinMax = {
   render: () => (
     <Grid.Container
       templateColumns={['1fr', 'minmax(30ch, 2fr)', '1fr']}
@@ -288,7 +288,7 @@ export const withMinMax = {
   name: 'CssGrid with minmax()',
 };
 
-export const shownOnMdHiddenOnSmallScreens = {
+export const ShownOnMdHiddenOnSmallScreens = {
   render: () => (
     <Grid.Container
       templateColumns={['1fr', '1fr', '1fr']}
@@ -334,7 +334,7 @@ export const shownOnMdHiddenOnSmallScreens = {
   name: 'Shown on md+, hidden on small screens',
 };
 
-export const shownOnSmallScreenSizesHiddenOnMd = {
+export const ShownOnSmallScreenSizesHiddenOnMd = {
   render: () => (
     <Grid.Container
       templateColumns={['1fr', '1fr', '1fr']}
@@ -384,7 +384,7 @@ export const shownOnSmallScreenSizesHiddenOnMd = {
   name: 'Shown on small screen sizes, hidden on md+',
 };
 
-export const conditionallyHiddenGoodWayHidden = {
+export const ConditionallyHiddenGoodWayHidden = {
   render: () => {
     const isHidden = true;
     return (
@@ -425,7 +425,7 @@ export const conditionallyHiddenGoodWayHidden = {
   name: 'Conditionally hidden: good way [hidden]',
 };
 
-export const conditionallyHiddenGoodWayShown = {
+export const ConditionallyHiddenGoodWayShown = {
   render: () => {
     const isHidden = false;
     return (
@@ -462,7 +462,7 @@ export const conditionallyHiddenGoodWayShown = {
   name: 'Conditionally hidden: good way [shown]',
 };
 
-export const conditionallyHiddenWrongWayHidden = {
+export const ConditionallyHiddenWrongWayHidden = {
   render: () => {
     const isHidden = true;
     return (
@@ -499,7 +499,7 @@ export const conditionallyHiddenWrongWayHidden = {
   name: 'Conditionally hidden: WRONG way [hidden]',
 };
 
-export const conditionallyHiddenWrongWayShown = {
+export const ConditionallyHiddenWrongWayShown = {
   render: () => {
     const isHidden = false;
     return (
@@ -540,7 +540,7 @@ const BgContent = styled.div`
   background-color: ${(p) => p.theme.color.background};
 `;
 
-export const itemsWithDifferentPlacements = () => {
+export const ItemsWithDifferentPlacements = () => {
   return (
     <Grid.Container
       templateColumns={['100px', '100px', '100px', '100px']}

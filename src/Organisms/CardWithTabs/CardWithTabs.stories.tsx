@@ -30,7 +30,7 @@ export default {
   title: 'Organisms / CardWithTabs',
 };
 
-export const withInitialActiveTabIndex = {
+export const WithInitialActiveTabIndex = {
   render: () => (
     <CardWithTabs
       title={
@@ -50,7 +50,7 @@ export const withInitialActiveTabIndex = {
   name: 'with initialActiveTabIndex',
 };
 
-export const withVariantBig = {
+export const WithVariantBig = {
   render: () => (
     <CardWithTabs variant="big" title="Title for the card" initialActiveTabIndex={0}>
       <CardWithTabs.Tab title="Tab title 1" onTitleClick={action('Clicked title1')}>
@@ -61,11 +61,9 @@ export const withVariantBig = {
       </CardWithTabs.Tab>
     </CardWithTabs>
   ),
-
-  name: 'With variant big',
 };
 
-export const controlledBehaviour = {
+export const ControlledBehaviour = {
   render: () => {
     const ControlledComponent = () => {
       const [active, setActive] = useState(0);
@@ -95,11 +93,9 @@ export const controlledBehaviour = {
     };
     return <ControlledComponent />;
   },
-
-  name: 'Controlled behaviour',
 };
 
-export const integrationWithTypographyAndExtraSpaceInside = {
+export const IntegrationWithTypographyAndExtraSpaceInside = {
   render: () => (
     <CardWithTabs
       title={
@@ -124,7 +120,7 @@ export const integrationWithTypographyAndExtraSpaceInside = {
   name: 'Integration: with Typography and extra space inside',
 };
 
-export const integrationWithFadedScroll = {
+export const IntegrationWithFadedScroll = {
   render: () => (
     <CardWithTabs
       title={
@@ -151,7 +147,7 @@ export const integrationWithFadedScroll = {
   name: 'Integration: with FadedScroll',
 };
 
-export const integrationWithFadedScrollWithHeightFromParent = {
+export const IntegrationWithFadedScrollWithHeightFromParent = {
   render: () => (
     <HeightOnCardWithTabs
       title={

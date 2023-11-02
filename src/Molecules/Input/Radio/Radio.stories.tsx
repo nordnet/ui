@@ -36,18 +36,17 @@ export default {
   },
 };
 
-export const defaultStory = {
+export const Default = {
   render: () => <Input.Radio name="example" value="green" label="Green" />,
-  name: 'Default',
 };
 
-export const withDefaultChecked = {
+export const WithDefaultChecked = {
   render: () => <Input.Radio name="example" value="green" label="Green" defaultChecked />,
 
   name: 'With default checked',
 };
 
-export const withCheckedControlledBehaviour = {
+export const WithCheckedControlledBehaviour = {
   render: () => {
     const Component = () => {
       const [checked, setChecked] = useState(false);
@@ -74,7 +73,7 @@ export const withCheckedControlledBehaviour = {
   name: 'With checked (Controlled behaviour)',
 };
 
-export const requiredStory = {
+export const RequiredStory = {
   render: () => (
     <Display
       title="Required"
@@ -102,7 +101,7 @@ export const requiredStory = {
   name: 'Required',
 };
 
-export const withAnErrorIfNotChecked = {
+export const WithAnErrorIfNotChecked = {
   render: () => {
     const Component = () => {
       const [checked, setChecked] = useState(false);
@@ -125,7 +124,7 @@ export const withAnErrorIfNotChecked = {
   name: 'With an error if not checked',
 };
 
-export const inAGroup = {
+export const InAGroup = {
   render: () => (
     <FormField label="Colors" group>
       <Flexbox container gap={5}>
@@ -139,7 +138,7 @@ export const inAGroup = {
   name: 'In a group',
 };
 
-export const inAGroupWithTooltip = {
+export const InAGroupWithTooltip = {
   render: () => (
     <FormField label="Colors" labelTooltip="Checkbox tooltip" group>
       <Flexbox container gap={5}>
@@ -153,7 +152,7 @@ export const inAGroupWithTooltip = {
   name: 'In a group with tooltip',
 };
 
-export const inAGroupWithTooltipPositionTop = {
+export const InAGroupWithTooltipPositionTop = {
   render: () => (
     <>
       <br />
@@ -171,7 +170,7 @@ export const inAGroupWithTooltipPositionTop = {
   name: 'In a group with tooltip (position top)',
 };
 
-export const inAGroupWithError = {
+export const InAGroupWithError = {
   render: () => {
     const Component = () => {
       const [oneChecked, setOneChecked] = useState(false);
@@ -220,7 +219,7 @@ export const inAGroupWithError = {
   name: 'In a group with error',
 };
 
-export const disabledStory = {
+export const DisabledStory = {
   render: () => (
     <Display
       title="Disabled"
@@ -242,19 +241,19 @@ export const disabledStory = {
   name: 'Disabled',
 };
 
-export const withAutoFocus = {
+export const WithAutoFocus = {
   render: () => <Input.Radio name="example" value="green" label="Green" autoFocus />,
 
   name: 'With auto focus',
 };
 
-export const withAllActions = {
+export const WithAllActions = {
   render: () => <Input.Radio name="example6" value="green" label="Green" {...handlers} />,
 
   name: 'With all actions',
 };
 
-export const onAColouredBackground = {
+export const OnAColouredBackground = {
   render: () => (
     <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
       <Input.Radio name="background" value="background" label="On a colored background" />
@@ -264,7 +263,7 @@ export const onAColouredBackground = {
   name: 'On a coloured background',
 };
 
-export const inAGroupWithCustomLabel = {
+export const InAGroupWithCustomLabel = {
   render: () => (
     <FormField label="Colors" labelTooltip="Checkbox tooltip" group>
       <Flexbox container gap={5}>
@@ -290,8 +289,6 @@ export const inAGroupWithCustomLabel = {
   name: 'In a group with custom label',
 };
 
-export const withHideLabel = {
+export const WithHideLabel = {
   render: () => <Input.Radio name="example" value="green" hideLabel label="This label is hidden" />,
-
-  name: 'With hide label',
 };

@@ -28,22 +28,22 @@ const SizeIcons = (size: string) => (
   </Flexbox>
 );
 
-export const size8 = {
+export const Size8 = {
   render: () => <>{SizeIcons('8')}</>,
   name: '8px',
 };
 
-export const size16 = {
+export const Size16 = {
   render: () => <>{SizeIcons('16')}</>,
   name: '16px',
 };
 
-export const size24 = {
+export const Size24 = {
   render: () => <>{SizeIcons('24')}</>,
   name: '24px',
 };
 
-export const size32 = {
+export const Size32 = {
   render: () => <>{SizeIcons('32')}</>,
   name: '32px',
 };

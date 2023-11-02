@@ -22,13 +22,13 @@ export default {
   },
 };
 
-export const defaultStory = {
+export const DefaultStory = {
   render: () => <Input.Number id="insert-unique-id" label="Label" onChange={action('onChange')} />,
 
   name: 'Default',
 };
 
-export const defaultStoryWithAutoCompleteOff = {
+export const DefaultStoryWithAutoCompleteOff = {
   render: () => (
     <Input.Number
       id="insert-unique-id"
@@ -41,7 +41,7 @@ export const defaultStoryWithAutoCompleteOff = {
   name: 'Default with Auto Complete off',
 };
 
-export const withValueControlledBehaviour = {
+export const WithValueControlledBehaviour = {
   render: () => {
     const Component = () => {
       const [value, setValue] = useState(10);
@@ -73,13 +73,13 @@ export const withValueControlledBehaviour = {
   name: 'With value (Controlled behaviour)',
 };
 
-export const withDefaultValueUncontrolledBehaviour = {
+export const WithDefaultValueUncontrolledBehaviour = {
   render: () => <Input.Number id="insert-unique-id" label="Label" defaultValue="15.2" step="0.1" />,
 
   name: 'With default value (Uncontrolled behaviour)',
 };
 
-export const withASmallerStep = {
+export const WithASmallerStep = {
   render: () => (
     <Input.Number id="insert-unique-id" label="Label" defaultValue="15.200" step="0.005" />
   ),
@@ -87,7 +87,7 @@ export const withASmallerStep = {
   name: 'With a smaller step',
 };
 
-export const withMaxAndMin = {
+export const WithMaxAndMin = {
   render: () => (
     <Input.Number id="insert-unique-id" label="Label" defaultValue="12" min="10" max="20" />
   ),
@@ -95,7 +95,7 @@ export const withMaxAndMin = {
   name: 'With max and min',
 };
 
-export const requiredStory = {
+export const RequiredStory = {
   render: () => (
     <Display
       title="Required"
@@ -125,7 +125,7 @@ export const requiredStory = {
   name: 'Required',
 };
 
-export const disabledStory = {
+export const DisabledStory = {
   render: () => (
     <Input.Number id="insert-unique-id" label="Label" defaultValue="152.25" step="0.25" disabled />
   ),
@@ -133,7 +133,7 @@ export const disabledStory = {
   name: 'Disabled',
 };
 
-export const withAutoFocus = {
+export const WithAutoFocus = {
   render: () => (
     <Input.Number id="insert-unique-id" label="Label" defaultValue="152.25" step="0.25" autoFocus />
   ),
@@ -141,13 +141,13 @@ export const withAutoFocus = {
   name: 'With auto focus',
 };
 
-export const withAllActions = {
+export const WithAllActions = {
   render: () => <Input.Number id="insert-unique-id" label="Label" {...handlers} />,
 
   name: 'With all actions',
 };
 
-export const withErrorIfValueIsLessThan1 = {
+export const WithErrorIfValueIsLessThan1 = {
   render: () => {
     const Component = () => {
       const defaultValue = '0';
@@ -171,12 +171,12 @@ export const withErrorIfValueIsLessThan1 = {
   name: 'With error if value is less than 1',
 };
 
-export const withSuccess = {
+export const WithSuccess = {
   render: () => <Input.Number id="insert-unique-id" label="Label" success />,
   name: 'With success',
 };
 
-export const withExtraInfoBelow = {
+export const WithExtraInfoBelow = {
   render: () => (
     <Input.Number id="insert-unique-id" label="Label" extraInfo="Use this space wisely" />
   ),
@@ -184,7 +184,7 @@ export const withExtraInfoBelow = {
   name: 'With extra info below',
 };
 
-export const withExtraInfoAndError = {
+export const WithExtraInfoAndError = {
   render: () => {
     const Component = () => {
       const defaultValue = '0';
@@ -208,18 +208,18 @@ export const withExtraInfoAndError = {
   name: 'With extra info and error',
 };
 
-export const withNoSteppers = {
+export const WithNoSteppers = {
   render: () => <Input.Number id="insert-unique-id" label="Label" noSteppers />,
   name: 'With no steppers',
 };
 
-export const withRightAddon = {
+export const WithRightAddon = {
   render: () => <Input.Number id="insert-unique-id" label="Label" rightAddon="SEK" />,
 
   name: 'With right addon',
 };
 
-export const withBothAddons = {
+export const WithBothAddons = {
   render: () => (
     <Input.Number
       id="insert-unique-id"
@@ -232,12 +232,12 @@ export const withBothAddons = {
   name: 'With both addons',
 };
 
-export const withHiddenLabel = {
+export const WithHiddenLabel = {
   render: () => <Input.Number id="insert-unique-id" label="Label" hideLabel />,
   name: 'With hidden label',
 };
 
-export const withSizeSmall = {
+export const WithSizeSmall = {
   render: () => (
     <Display
       title={`Size = "s"`}
@@ -268,7 +268,7 @@ export const withSizeSmall = {
   name: 'With size small',
 };
 
-export const withLabelTooltip = {
+export const WithLabelTooltip = {
   render: () => (
     <Input.Number
       id="insert-unique-id"
@@ -281,7 +281,7 @@ export const withLabelTooltip = {
   name: 'With label tooltip',
 };
 
-export const withLabelTooltipPositionTop = {
+export const WithLabelTooltipPositionTop = {
   render: () => (
     <>
       <br />
@@ -299,7 +299,7 @@ export const withLabelTooltipPositionTop = {
   name: 'With label tooltip (position top)',
 };
 
-export const withPlaceholder = {
+export const WithPlaceholder = {
   render: () => (
     <Display
       title="Placeholders"
@@ -358,7 +358,7 @@ export const withPlaceholder = {
   name: 'With placeholder',
 };
 
-export const quietNumber = {
+export const QuietNumber = {
   render: () => (
     <Display
       title={`Variant = "quiet"`}
@@ -492,7 +492,7 @@ export const quietNumber = {
   name: 'Quiet',
 };
 
-export const onAColouredBackground = {
+export const OnAColouredBackground = {
   render: () => (
     <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
       <Input.Number id="unique-id-for-coloured-background" label="On a coloured background" />
@@ -502,7 +502,7 @@ export const onAColouredBackground = {
   name: 'On a coloured background',
 };
 
-export const withLabelTooltipInsideModal = {
+export const WithLabelTooltipInsideModal = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);

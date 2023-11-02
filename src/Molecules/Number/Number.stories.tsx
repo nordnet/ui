@@ -13,7 +13,7 @@ export default {
   },
 };
 
-export const documentation = () => (
+export const Documentation = () => (
   <Typography>
     <MD>{docs}</MD>
     <div>
@@ -25,7 +25,7 @@ export const documentation = () => (
   </Typography>
 );
 
-export const defaultStory = {
+export const Default = {
   render: () => (
     <Display
       items={[
@@ -36,11 +36,9 @@ export const defaultStory = {
       ]}
     />
   ),
-
-  name: 'Default',
 };
 
-export const numberWith2Decimals = {
+export const NumberWith2Decimals = {
   render: () => {
     return (
       <Display
@@ -53,11 +51,9 @@ export const numberWith2Decimals = {
       />
     );
   },
-
-  name: 'Number with 2 decimals ',
 };
 
-export const numberWithMinMaxDigits = {
+export const NumberWithMinMaxDigits = {
   render: () => {
     return (
       <>
@@ -74,7 +70,7 @@ export const numberWithMinMaxDigits = {
   name: 'Number with min/max digits',
 };
 
-export const numberTicks = {
+export const NumberTicks = {
   render: () => {
     const ticks = [
       {
@@ -110,27 +106,21 @@ export const numberTicks = {
       </>
     );
   },
-
-  name: 'Number ticks',
 };
 
-export const numberWithPercentage = {
+export const NumberWithPercentage = {
   render: () => {
     return <Number value={2.3} percentage />;
   },
-
-  name: 'Number with percentage',
 };
 
-export const numberWithCurrency = {
+export const NumberWithCurrency = {
   render: () => {
     return <Number value={2.3} currency="SEK" />;
   },
-
-  name: 'Number with currency',
 };
 
-export const numberWithCurrencyAsDifferentSize = {
+export const NumberWithCurrencyAsDifferentSize = {
   render: () => {
     return (
       <>
@@ -144,11 +134,9 @@ export const numberWithCurrencyAsDifferentSize = {
       </>
     );
   },
-
-  name: 'Number with currency as different size',
 };
 
-export const numberWithSign = {
+export const NumberWithSign = {
   render: () => {
     return (
       <Display
@@ -160,19 +148,15 @@ export const numberWithSign = {
       />
     );
   },
-
-  name: 'Number with sign',
 };
 
-export const invalidValue = {
+export const InvalidValue = {
   render: () => {
     return <Number value={null} />;
   },
-
-  name: 'Invalid value',
 };
 
-export const maskValue = {
+export const MaskValue = {
   render: () => {
     return (
       <Display
@@ -193,16 +177,14 @@ export const maskValue = {
   name: 'Number with masked value',
 };
 
-export const nullCurrency = {
+export const NullCurrency = {
   render: () => {
     // @ts-ignore
     return <Number value={10} currency={null} />;
   },
-
-  name: 'null currency',
 };
 
-export const regressionValueIsPositiveButRoundedValueIs0 = {
+export const RegressionValueIsPositiveButRoundedValueIs0 = {
   render: () => (
     <Display
       items={[{ title: 'value = 0.1', component: <Number value={0.1} sign decimals={0} /> }]}
@@ -212,7 +194,7 @@ export const regressionValueIsPositiveButRoundedValueIs0 = {
   name: 'Regression: value is positive, but rounded value is 0',
 };
 
-export const regression0ShouldBe0 = {
+export const Regression0ShouldBe0 = {
   render: () => (
     <>
       <Display
@@ -230,7 +212,7 @@ export const regression0ShouldBe0 = {
   name: 'Regression: -0 should be 0',
 };
 
-export const integrationWithDifferentTypographies = {
+export const IntegrationWithDifferentTypographies = {
   render: () => {
     const items = Object.values(TYPOGRAPHY_TYPES)?.map((type) => ({
       title: type,

@@ -15,7 +15,7 @@ export default {
   },
 };
 
-export const defaultStory = {
+export const DefaultStory = {
   render: () => {
     const Example = () => {
       const [activeGuide, setActiveGuide] = useState(true);
@@ -61,7 +61,7 @@ export const defaultStory = {
   name: 'Default',
 };
 
-export const withCustomBackdropPadding = {
+export const WithCustomBackdropPadding = {
   render: () => {
     const Example = () => {
       const [activeGuide, setActiveGuide] = useState(true);
@@ -108,7 +108,7 @@ export const withCustomBackdropPadding = {
   name: 'With custom backdrop padding',
 };
 
-export const withCustomBackdropPXPY = {
+export const WithCustomBackdropPxpy = {
   render: () => {
     const Example = () => {
       const [activeGuide, setActiveGuide] = useState(true);
@@ -156,7 +156,7 @@ export const withCustomBackdropPXPY = {
   name: 'With custom horizontal and vertical backdrop padding',
 };
 
-export const withCircularBackdrop = {
+export const WithCircularBackdrop = {
   render: () => {
     const Example = () => {
       const [activeGuide, setActiveGuide] = useState(true);
@@ -206,7 +206,7 @@ export const withCircularBackdrop = {
   name: 'With circular backdrop',
 };
 
-export const withCircularHighlightSurroundingLongElement = {
+export const WithCircularHighlightSurroundingLongElement = {
   render: () => {
     const Example = () => {
       const [activeGuide, setActiveGuide] = useState(true);
@@ -353,7 +353,7 @@ export const MultpipleSteps = () => {
   return <Example />;
 };
 
-export const withBarColor = {
+export const WithBarColor = {
   render: () => {
     const Example = () => {
       const [activeGuide, setActiveGuide] = useState(true);
@@ -400,7 +400,7 @@ export const withBarColor = {
   name: 'With bar color',
 };
 
-export const mobileBottomSheet = () => {
+export const MobileBottomSheet = () => {
   const Example = () => {
     const [activeGuide, setActiveGuide] = useState(true);
     const [referenceElement, setReferenceElement] = useState<HTMLElement | null>(null);

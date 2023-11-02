@@ -9,7 +9,7 @@ export default {
   },
 };
 
-export const basicUsage = {
+export const BasicUsage = {
   render: () => {
     return (
       <>
@@ -29,7 +29,7 @@ export const basicUsage = {
   name: 'Basic usage',
 };
 
-export const withSizeKey = {
+export const WithSizeKey = {
   render: () => {
     return (
       <>

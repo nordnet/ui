@@ -21,18 +21,18 @@ export default {
   },
 };
 
-export const defaultStory = {
+export const DefaultStory = {
   render: () => <Input.Text label="Label" placeholder="Placeholder" />,
   name: 'Default',
 };
 
-export const withValueControlledBehaviour = {
+export const WithValueControlledBehaviour = {
   render: () => <Input.Text label="Label" placeholder="Placeholder" value="Some predefined text" />,
 
   name: 'With value (Controlled behaviour)',
 };
 
-export const withDefaultValueUncontrolledBehaviour = {
+export const WithDefaultValueUncontrolledBehaviour = {
   render: () => (
     <Input.Text label="Label" placeholder="Placeholder" defaultValue="Some predefined text" />
   ),
@@ -40,7 +40,7 @@ export const withDefaultValueUncontrolledBehaviour = {
   name: 'With default value (Uncontrolled behaviour)',
 };
 
-export const errorIfEmptyText = {
+export const ErrorIfEmptyText = {
   render: () => {
     const Component = () => {
       const [value, setValue] = useState('');
@@ -60,17 +60,17 @@ export const errorIfEmptyText = {
   name: 'Error if empty text',
 };
 
-export const successStory = {
+export const SuccessStory = {
   render: () => <Input.Text label="Label" placeholder="Placeholder" success />,
   name: 'Success',
 };
 
-export const disabledStory = {
+export const DisabledStory = {
   render: () => <Input.Text label="Label" placeholder="Placeholder" disabled />,
   name: 'Disabled',
 };
 
-export const disabledAddon = {
+export const DisabledAddon = {
   render: () => (
     <Input.Text
       label="Label"
@@ -84,12 +84,12 @@ export const disabledAddon = {
   name: 'Disabled +addon',
 };
 
-export const withAutoFocus = {
+export const WithAutoFocus = {
   render: () => <Input.Text label="Label" placeholder="Placeholder" autoFocus />,
   name: 'With auto focus',
 };
 
-export const withAutoComplete = {
+export const WithAutoComplete = {
   render: () => (
     <>
       <Input.Text label="Ordinary Text" placeholder="Placeholder" autoComplete="on" />
@@ -101,7 +101,7 @@ export const withAutoComplete = {
   name: 'With auto complete',
 };
 
-export const requiredStory = {
+export const RequiredStory = {
   render: () => (
     <Display
       title="Required"
@@ -128,7 +128,7 @@ export const requiredStory = {
   name: 'Required',
 };
 
-export const actionsStory = {
+export const ActionsStory = {
   render: () => (
     <>
       <p>
@@ -142,7 +142,7 @@ export const actionsStory = {
   name: 'Actions',
 };
 
-export const extraInfoBelow = {
+export const ExtraInfoBelow = {
   render: () => (
     <Input.Text label="Label" placeholder="Placeholder" extraInfo="Use this space wisely" />
   ),
@@ -150,7 +150,7 @@ export const extraInfoBelow = {
   name: 'Extra info below',
 };
 
-export const extraInfoWithError = {
+export const ExtraInfoWithError = {
   render: () => {
     const Component = () => {
       const [value, setValue] = useState('');
@@ -171,7 +171,7 @@ export const extraInfoWithError = {
   name: 'Extra info with error',
 };
 
-export const edgeCases = {
+export const EdgeCases = {
   render: () => (
     <Display
       items={[
@@ -202,7 +202,7 @@ export const edgeCases = {
   name: 'Edge cases',
 };
 
-export const fullWidthStory = {
+export const FullWidthStory = {
   render: () => (
     <Display
       title="Full width inputs"
@@ -235,13 +235,13 @@ export const fullWidthStory = {
   name: 'Full width',
 };
 
-export const rightAddonStory = {
+export const RightAddonStory = {
   render: () => <Input.Text label="Label" placeholder="Placeholder" rightAddon="SEK" />,
 
   name: 'Right addon',
 };
 
-export const bothAddons = {
+export const BothAddons = {
   render: () => (
     <Input.Text
       label="Label"
@@ -254,12 +254,12 @@ export const bothAddons = {
   name: 'Both addons',
 };
 
-export const hiddenLabel = {
+export const HiddenLabel = {
   render: () => <Input.Text label="Label" placeholder="Placeholder" hideLabel />,
   name: 'Hidden label',
 };
 
-export const simpleLoginForm = {
+export const SimpleLoginForm = {
   render: () => (
     <Flexbox container direction="column" gap={4}>
       <Flexbox item container gap={4}>
@@ -284,7 +284,7 @@ export const simpleLoginForm = {
   name: 'Simple login form',
 };
 
-export const small = () => (
+export const Small = () => (
   <Display
     title={`Size = "s"`}
     items={[
@@ -326,7 +326,7 @@ export const small = () => (
   />
 );
 
-export const quiet = () => (
+export const Quiet = () => (
   <Display
     title={`Variant = "quiet"`}
     items={[
@@ -394,7 +394,7 @@ export const quiet = () => (
   />
 );
 
-export const withLabelTooltip = {
+export const WithLabelTooltip = {
   render: () => (
     <Input.Text label="Label" labelTooltip="Tooltip content" placeholder="Placeholder" />
   ),
@@ -402,7 +402,7 @@ export const withLabelTooltip = {
   name: 'With tooltip as label addon',
 };
 
-export const withLabelTooltipPositionTop = {
+export const WithLabelTooltipPositionTop = {
   render: () => (
     <>
       <br />
@@ -419,13 +419,13 @@ export const withLabelTooltipPositionTop = {
   name: 'With tooltip (position top) as label addon',
 };
 
-export const withMaxLength = {
+export const WithMaxLength = {
   render: () => <Input.Text maxLength={3} label="has max length" placeholder="Placeholder" />,
 
   name: 'With maxLength',
 };
 
-export const alternatingTypes = () => (
+export const AlternatingTypes = () => (
   <form
     onSubmit={(e) => {
       e.preventDefault();
@@ -446,7 +446,7 @@ export const alternatingTypes = () => (
   </form>
 );
 
-export const onAColouredBackground = {
+export const OnAColouredBackground = {
   render: () => (
     <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
       <Input.Text label="On a colored background" placeholder="Placeholder" />
@@ -456,7 +456,7 @@ export const onAColouredBackground = {
   name: 'On a coloured background',
 };
 
-export const mouseEvents = {
+export const MouseEvents = {
   render: () => {
     const Component = () => {
       const [isHovered, setIsHovered] = useState(false);
@@ -477,7 +477,7 @@ export const mouseEvents = {
   name: 'MouseEvents',
 };
 
-export const withLabelTooltipInsideModal = {
+export const WithLabelTooltipInsideModal = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);

@@ -103,8 +103,6 @@ export const Showcase = {
       ]}
     />
   ),
-
-  name: 'Showcase',
 };
 
 export const CommonUseCases = {

@@ -22,24 +22,24 @@ const LargePagination = ({ totalItems = 10, itemsPerPage = 1 }) => (
   />
 );
 
-export const large = () => <LargePagination />;
+export const Large = () => <LargePagination />;
 
-export const paginationWithOnePage = {
+export const PaginationWithOnePage = {
   render: () => <LargePagination totalItems={1} itemsPerPage={1} />,
   name: '1 page',
 };
 
-export const paginationWithTwoPages = {
+export const PaginationWithTwoPages = {
   render: () => <LargePagination totalItems={2} itemsPerPage={1} />,
   name: '2 pages',
 };
 
-export const paginationWithTwelvePages = {
+export const PaginationWithTwelvePages = {
   render: () => <LargePagination totalItems={12} itemsPerPage={1} />,
   name: '12 pages',
 };
 
-export const paginationWithManyPages = {
+export const PaginationWithManyPages = {
   render: () => <LargePagination totalItems={999} itemsPerPage={1} />,
   name: '999 pages',
 };
@@ -63,9 +63,9 @@ const ControlledLargePagination = ({ totalItems = 10, itemsPerPage = 1 }) => {
   );
 };
 
-export const controlledPagination = () => <ControlledLargePagination />;
+export const ControlledPagination = () => <ControlledLargePagination />;
 
-const LinksPagination = ({ totalItems = 10, itemsPerPage = 1 }) => {
+const LinksPaginationComponent = ({ totalItems = 10, itemsPerPage = 1 }) => {
   const [currentPage, setCurrentPage] = useState(5);
 
   const getPageHref = (pageNumber: number) => `/${pageNumber}`;
@@ -83,4 +83,4 @@ const LinksPagination = ({ totalItems = 10, itemsPerPage = 1 }) => {
   );
 };
 
-export const linksPagination = () => <LinksPagination />;
+export const LinksPagination = () => <LinksPaginationComponent />;

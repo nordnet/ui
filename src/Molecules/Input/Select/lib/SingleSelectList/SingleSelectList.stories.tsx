@@ -9,17 +9,17 @@ export default {
   title: 'Molecules / Input / Select / SingleSelectList',
 };
 
-export const itemDefault = {
+export const ItemDefault = {
   render: () => <Option label="First" />,
   name: 'Item default',
 };
 
-export const itemSelected = {
+export const ItemSelected = {
   render: () => <Option label="First" selected />,
   name: 'Item selected',
 };
 
-export const itemDisabled = {
+export const ItemDisabled = {
   render: () => <Option label="First" disabled />,
   name: 'Item disabled',
 };
@@ -41,7 +41,7 @@ const Wrapper = (props) => (
   </DropdownBubbleWithPadding>
 );
 
-export const listWithDifferentArrowPositions = {
+export const ListWithDifferentArrowPositions = {
   render: () => (
     <Display
       items={[

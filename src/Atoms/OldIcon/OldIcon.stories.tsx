@@ -9,12 +9,12 @@ export default {
   title: 'Atoms / OldIcon',
 } as Meta;
 
-export const defaultUse = {
+export const DefaultUse = {
   render: () => <OldIcon.ArrowRight />,
   name: 'Default use',
 };
 
-export const inlineStory = {
+export const InlineStory = {
   render: () => (
     <>
       You can put the <OldIcon.ArrowRight inline /> directly in the text with inline prop!
@@ -104,7 +104,7 @@ export const CalendarO = {
 
 const TemplateFAQ: StoryFn<BaseProps> = (args) => <OldIcon.FAQ {...args} />;
 
-export const FAQ = {
+export const Faq = {
   render: TemplateFAQ,
 
   args: {
@@ -180,13 +180,13 @@ export const UrgentMessage = {
   },
 };
 
-export const differentSizeAndFill = {
+export const DifferentSizeAndFill = {
   render: () => <OldIcon.ArrowRight size={10} fill={(t) => t.color.positive} />,
 
   name: 'Different size and fill',
 };
 
-export const withModifiedStroke = {
+export const WithModifiedStroke = {
   render: () => (
     <Display
       items={[
@@ -259,7 +259,7 @@ export const withModifiedStroke = {
   name: 'With modified stroke',
 };
 
-export const availableOldIcons = {
+export const AvailableOldIcons = {
   render: () => (
     <Display
       items={Object?.entries(OldIcon)?.map(
@@ -280,7 +280,7 @@ export const availableOldIcons = {
   name: 'Available old icons',
 };
 
-export const allOldIconsColored = {
+export const AllOldIconsColored = {
   render: () => (
     <>
       {Object?.entries(OldIcon)?.map(([key, IconComponent]: [string, React.ComponentType<any>]) => (

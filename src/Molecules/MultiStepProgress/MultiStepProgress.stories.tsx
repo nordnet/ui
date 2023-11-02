@@ -46,7 +46,7 @@ export default {
   },
 };
 
-export const basicMultiStepProgress = {
+export const BasicMultiStepProgress = {
   render: () => (
     <MultiStepProgress
       steps={mockedSteps}
@@ -54,11 +54,9 @@ export const basicMultiStepProgress = {
       onSubStepClick={action(`sub step click`)}
     />
   ),
-
-  name: 'Basic Multi Step Progress',
 };
 
-export const basicMultiStepProgressWithDrawerClose = {
+export const BasicMultiStepProgressWithDrawerClose = {
   render: () => (
     <MultiStepProgress
       steps={mockedSteps}
@@ -71,7 +69,7 @@ export const basicMultiStepProgressWithDrawerClose = {
   name: 'Basic Multi Step Progress (With Closing Drawer)',
 };
 
-export const notStartedMultiStepProgress = {
+export const NotStartedMultiStepProgress = {
   render: () => (
     <MultiStepProgress
       steps={mockedStepsNotStarted}
@@ -79,11 +77,9 @@ export const notStartedMultiStepProgress = {
       onSubStepClick={action(`sub step click`)}
     />
   ),
-
-  name: 'Not Started Multi Step Progress',
 };
 
-export const multiStepProgressWithLongContent = {
+export const MultiStepProgressWithLongContent = {
   render: () => (
     <>
       <h1>Lorem ipsum dolor</h1>
@@ -165,6 +161,4 @@ export const multiStepProgressWithLongContent = {
       </p>
     </>
   ),
-
-  name: 'Multi Step Progress With Long Content',
 };

@@ -8,11 +8,11 @@ export default {
   },
 };
 
-export const docs = () => (
+export const Docs = () => (
   <p>The Fieldset component is used to group related elements in a form.</p>
 );
 
-export const defaultStory = {
+export const DefaultStory = {
   render: () => (
     <Fieldset>
       <Legend>Colors</Legend>

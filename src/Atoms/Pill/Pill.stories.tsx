@@ -15,7 +15,7 @@ export default {
   },
 };
 
-export const basicPill = {
+export const BasicPill = {
   render: () => (
     <Pill>
       <Typography type="tertiary" weight="bold">
@@ -24,11 +24,9 @@ export const basicPill = {
       <Typography type="tertiary">1567</Typography>
     </Pill>
   ),
-
-  name: 'Basic Pill',
 };
 
-export const roundedPill = {
+export const RoundedPill = {
   render: () => (
     <Pill.Rounded
       label="OMXS30"
@@ -37,11 +35,9 @@ export const roundedPill = {
       onClose={() => {}}
     />
   ),
-
-  name: 'Rounded Pill',
 };
 
-export const pillWithBar = {
+export const PillWithBar = {
   render: () => (
     <Pill barColor={(t) => t.color.cta}>
       <Flexbox container gap={1} alignItems="center">
@@ -65,7 +61,7 @@ export const pillWithBar = {
   name: 'Pill with colored bar',
 };
 
-export const pillWithNoPadding = {
+export const PillWithNoPadding = {
   render: () => (
     <Pill barColor={(t) => t.color.background} noPadding>
       <Typography type="tertiary" weight="bold">

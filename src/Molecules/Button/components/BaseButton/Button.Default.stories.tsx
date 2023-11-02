@@ -13,18 +13,18 @@ export default {
   },
 };
 
-export const documentation = () => (
+export const Documentation = () => (
   <Typography type="primary">
     <MD>{docs}</MD>
   </Typography>
 );
 
-export const defaultUsage = {
+export const DefaultUsage = {
   render: () => <Button onClick={action('clicked')}>Button</Button>,
   name: 'Default usage',
 };
 
-export const buttonWithDifferentVariants = {
+export const ButtonWithDifferentVariants = {
   render: () => (
     <>
       <Display
@@ -99,7 +99,7 @@ export const buttonWithDifferentVariants = {
   name: 'Button with different variants',
 };
 
-export const disabledButtonWithDifferentVariants = {
+export const DisabledButtonWithDifferentVariants = {
   render: () => (
     <Display
       horizontal
@@ -143,7 +143,7 @@ export const disabledButtonWithDifferentVariants = {
   name: 'Disabled Button with different variants',
 };
 
-export const buttonPrimaryWithColors = {
+export const ButtonPrimaryWithColors = {
   render: () => (
     <Display
       horizontal
@@ -179,7 +179,7 @@ export const buttonPrimaryWithColors = {
   name: 'Button primary with colors',
 };
 
-export const buttonSecondaryWithColors = {
+export const ButtonSecondaryWithColors = {
   render: () => (
     <Display
       horizontal
@@ -207,7 +207,7 @@ export const buttonSecondaryWithColors = {
   name: 'Button secondary with colors',
 };
 
-export const buttonWithSizeModified = {
+export const ButtonWithSizeModified = {
   render: () => (
     <>
       <Display
@@ -260,7 +260,7 @@ export const buttonWithSizeModified = {
   name: 'Button with size modified',
 };
 
-export const buttonWithFocusOn = {
+export const ButtonWithFocusOn = {
   render: () => {
     const FocusExample = () => {
       const ref = useRef<HTMLButtonElement>(null);
@@ -288,7 +288,7 @@ export const buttonWithFocusOn = {
   name: 'Button which sets focus on another button',
 };
 
-export const buttonWithLoadingState = {
+export const ButtonWithLoadingState = {
   render: () => {
     const LoadingExample = () => {
       const [loading, setLoading] = useState(true);
@@ -406,7 +406,7 @@ export const buttonWithLoadingState = {
   name: 'Button with loading state',
 };
 
-export const buttonWithLoadingStateWithoutTheSpinnerAnimationDelay = {
+export const ButtonWithLoadingStateWithoutTheSpinnerAnimationDelay = {
   render: () => (
     <Button onClick={action('clicked')} loading delayLoadingSpinnerAnimation={false}>
       Button
@@ -416,7 +416,7 @@ export const buttonWithLoadingStateWithoutTheSpinnerAnimationDelay = {
   name: 'Button with loading state without the spinner animation delay',
 };
 
-export const buttonWithTypeModified = {
+export const ButtonWithTypeModified = {
   render: () => (
     <Display
       items={[
@@ -443,7 +443,7 @@ export const buttonWithTypeModified = {
   name: 'Button with type modified',
 };
 
-export const buttonThatIsFullWidth = {
+export const ButtonThatIsFullWidth = {
   render: () => (
     <Button onClick={action('clicked')} fullWidth>
       Button
@@ -453,7 +453,7 @@ export const buttonThatIsFullWidth = {
   name: 'Button that is full width',
 };
 
-export const buttonsComposedInAGroup = {
+export const ButtonsComposedInAGroup = {
   render: () => (
     <Flexbox container gap={2}>
       <Flexbox item flex="1 1 50%">

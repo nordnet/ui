@@ -24,7 +24,7 @@ export default {
   },
 };
 
-export const defaultStory = {
+export const Default = {
   render: () => (
     <Typography type="secondary">
       <Tabs>
@@ -48,11 +48,9 @@ export const defaultStory = {
       </Tabs>
     </Typography>
   ),
-
-  name: 'Default',
 };
 
-export const largeStory = {
+export const LargeVariant = {
   render: () => (
     <Typography type="secondary">
       <Tabs variant="large" height={8}>
@@ -76,8 +74,6 @@ export const largeStory = {
       </Tabs>
     </Typography>
   ),
-
-  name: 'Large variant',
 };
 
 const StyledTabsContent = styled(Tabs)`
@@ -87,7 +83,7 @@ const StyledTabsContent = styled(Tabs)`
   }
 `;
 
-export const withStyledTabContent = {
+export const WithStyledTabContent = {
   render: () => (
     <Typography type="secondary">
       <StyledTabsContent>
@@ -100,11 +96,9 @@ export const withStyledTabContent = {
       </StyledTabsContent>
     </Typography>
   ),
-
-  name: 'With styled tab content',
 };
 
-export const withCustomStylingLikeSpacing = {
+export const WithCustomStylingLikeSpacing = {
   render: () => (
     <Typography type="secondary">
       <StyledTabs>
@@ -121,7 +115,7 @@ export const withCustomStylingLikeSpacing = {
   name: 'With custom styling (like spacing)',
 };
 
-export const withHeightModified = {
+export const WithHeightModified = {
   render: () => (
     <Typography type="secondary">
       <Tabs height={11}>
@@ -134,11 +128,9 @@ export const withHeightModified = {
       </Tabs>
     </Typography>
   ),
-
-  name: 'With height modified',
 };
 
-export const controlledBehaviour = {
+export const ControlledBehaviour = {
   render: () => {
     const ControlledExample = () => {
       const [active, setActive] = useState(0);
@@ -161,11 +153,9 @@ export const controlledBehaviour = {
     };
     return <ControlledExample />;
   },
-
-  name: 'Controlled behaviour',
 };
 
-export const withConditionallyHiddenTab = {
+export const WithConditionallyHiddenTab = {
   render: () => {
     const showFirstTab = false;
     return (
@@ -183,11 +173,9 @@ export const withConditionallyHiddenTab = {
       </Typography>
     );
   },
-
-  name: 'With conditionally hidden tab',
 };
 
-export const withHorizontalScroll = {
+export const WithHorizontalScroll = {
   render: () => {
     return (
       <Typography type="secondary">
@@ -214,6 +202,4 @@ export const withHorizontalScroll = {
       </Typography>
     );
   },
-
-  name: 'With horizontal scroll',
 };

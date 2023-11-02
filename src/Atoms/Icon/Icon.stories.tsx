@@ -6,12 +6,12 @@ export default {
   title: 'Atoms / Icon',
 };
 
-export const defaultUse = {
+export const DefaultUse = {
   render: () => <Icon.ArrowLeft32 />,
   name: 'Default use',
 };
 
-export const inlineStory = {
+export const InlineStory = {
   render: () => (
     <span>
       You can put the <Icon.ArrowLeft16 inline /> directly in the text !
@@ -21,7 +21,7 @@ export const inlineStory = {
   name: 'Inline',
 };
 
-export const differentColor = {
+export const DifferentColor = {
   render: () => (
     <div style={{ color: 'blue' }}>
       You can have different color text around{' '}
@@ -32,7 +32,7 @@ export const differentColor = {
   name: 'Different color',
 };
 
-export const titleExample = {
+export const TitleExample = {
   render: () => (
     <div style={{ color: 'blue' }}>
       You can use title prop for a hover tooltip
@@ -43,7 +43,7 @@ export const titleExample = {
   name: 'Title example',
 };
 
-export const availableIcons = {
+export const AvailableIcons = {
   render: () => (
     <Display
       items={Object?.entries(Icon)
@@ -64,7 +64,7 @@ export const availableIcons = {
   name: 'Available icons',
 };
 
-export const allIconsColored = {
+export const AllIconsColored = {
   render: () => (
     <>
       {Object?.entries(Icon)

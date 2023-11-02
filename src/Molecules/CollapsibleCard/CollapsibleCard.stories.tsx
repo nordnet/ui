@@ -28,7 +28,7 @@ export default {
   },
 };
 
-export const defaultStory = {
+export const DefaultStory = {
   render: () => {
     return (
       <CollapsibleCard title="Collapsible">
@@ -53,7 +53,7 @@ const Settings = (
   </Button>
 );
 
-export const withActionComponentThatDoesNotTriggerCollapse = {
+export const WithActionComponentThatDoesNotTriggerCollapse = {
   render: () => {
     return (
       <CollapsibleCard title="Collapsible" action={Settings}>
@@ -72,7 +72,7 @@ export const withActionComponentThatDoesNotTriggerCollapse = {
   name: "With an action component that doesn't trigger collapse",
 };
 
-export const collapsedInitially = {
+export const CollapsedInitially = {
   render: () => {
     return (
       <CollapsibleCard title="Collapsed initially" collapsedInitial>
@@ -87,7 +87,7 @@ export const collapsedInitially = {
   name: 'Collapsed initially',
 };
 
-export const collapsibleWithCustomComponentAsTitle = {
+export const CollapsibleWithCustomComponentAsTitle = {
   render: () => {
     return (
       <CollapsibleCard title={<>Custom title</>}>
@@ -102,7 +102,7 @@ export const collapsibleWithCustomComponentAsTitle = {
   name: 'Collapsible with custom component as title',
 };
 
-export const collapsibleWithOnClickListener = {
+export const CollapsibleWithOnClickListener = {
   render: () => <ExampleWithOnClick />,
   name: 'Collapsible with onClick listener',
 };
@@ -136,7 +136,7 @@ export const CollapsibleWithoutIndicator = {
   name: 'Collapsible without indicator',
 };
 
-export const collapsibleWithCustomExpandElementAsAFunction = {
+export const CollapsibleWithCustomExpandElementAsAFunction = {
   render: () => {
     return (
       <CollapsibleCard
@@ -160,7 +160,7 @@ export const collapsibleWithCustomExpandElementAsAFunction = {
   name: 'Collapsible with custom expand element as a function',
 };
 
-export const collapsibleWithCustomExpandElement = {
+export const CollapsibleWithCustomExpandElement = {
   render: () => {
     return (
       <CollapsibleCard
@@ -182,7 +182,7 @@ export const collapsibleWithCustomExpandElement = {
   name: 'Collapsible with custom expand element',
 };
 
-export const collapsibleCardWithNoPadding = {
+export const CollapsibleCardWithNoPadding = {
   render: () => {
     return (
       <CollapsibleCard
@@ -206,7 +206,7 @@ export const collapsibleCardWithNoPadding = {
   name: 'Collapsible card with no title row padding',
 };
 
-export const collapsibleCardWithLotsOfTopAndBottomPadding = {
+export const CollapsibleCardWithLotsOfTopAndBottomPadding = {
   render: () => (
     <CollapsibleCard
       title="Collapsible card with lots of top and bottom padding"
@@ -225,7 +225,7 @@ export const collapsibleCardWithLotsOfTopAndBottomPadding = {
   name: 'Collapsible card with lots of top and bottom padding',
 };
 
-export const collapsibleWithCustomFullWidthTitle = () => {
+export const CollapsibleWithCustomFullWidthTitle = () => {
   return (
     <CollapsibleCard
       fullWidthTitle

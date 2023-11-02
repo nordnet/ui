@@ -68,7 +68,7 @@ export const WithIcon = {
   },
 };
 
-export const withImage = {
+export const WithImage = {
   render: () => {
     const Component = () => {
       return (
@@ -84,8 +84,6 @@ export const withImage = {
     };
     return <Component />;
   },
-
-  name: 'With image',
 };
 
 export const WithIconAndText = {
@@ -107,7 +105,7 @@ export const WithIconAndTextHorizontal = {
   },
 };
 
-export const withValueControlledBehavior = {
+export const WithValueControlledBehavior = {
   render: () => {
     const Component = () => {
       const [value, setValue] = useState(false);
@@ -132,6 +130,4 @@ export const withValueControlledBehavior = {
     };
     return <Component />;
   },
-
-  name: 'With controlled behavior',
 };

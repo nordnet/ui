@@ -26,7 +26,7 @@ const View = () => {
   );
 };
 
-export const defaultUsage = {
+export const DefaultUsage = {
   render: () => (
     <Provider>
       <Typography type="secondary" weight="bold">
@@ -48,7 +48,7 @@ export const defaultUsage = {
   name: 'Default usage',
 };
 
-export const withTypographyPrimaryAsType = {
+export const WithTypographyPrimaryAsType = {
   render: () => (
     <Provider>
       <Typography type="primary" weight="bold">
@@ -70,7 +70,7 @@ export const withTypographyPrimaryAsType = {
   name: 'With typography primary as type',
 };
 
-export const externalLinkWithItsDefaultValues = {
+export const ExternalLinkWithItsDefaultValues = {
   render: () => (
     <Provider>
       <Typography type="secondary" weight="bold">
@@ -84,7 +84,7 @@ export const externalLinkWithItsDefaultValues = {
   name: 'External link with its default values',
 };
 
-export const fullServerRedirectLinkWithItsDefaultValues = {
+export const FullServerRedirectLinkWithItsDefaultValues = {
   render: () => (
     <Provider>
       <Typography type="secondary" weight="bold">
@@ -98,7 +98,7 @@ export const fullServerRedirectLinkWithItsDefaultValues = {
   name: 'Full server redirect link with its default values',
 };
 
-export const externalLinkWithRelAndTargetOverriden = {
+export const ExternalLinkWithRelAndTargetOverriden = {
   render: () => (
     <Provider>
       <Typography type="secondary" weight="bold">
@@ -118,7 +118,7 @@ export const externalLinkWithRelAndTargetOverriden = {
   name: 'External link with rel and target overriden',
 };
 
-export const withDisabledPropResultsInADisabledButtonLookingLikeALink = {
+export const WithDisabledPropResultsInADisabledButtonLookingLikeALink = {
   render: () => (
     <Provider>
       <Typography type="secondary" weight="bold">
@@ -132,7 +132,7 @@ export const withDisabledPropResultsInADisabledButtonLookingLikeALink = {
   name: 'With disabled prop results in a disabled button looking like a link',
 };
 
-export const withoutToPropResultsInAButtonLookingLikeALink = {
+export const WithoutToPropResultsInAButtonLookingLikeALink = {
   render: () => (
     <Provider>
       <Typography type="secondary" weight="bold">
@@ -144,7 +144,7 @@ export const withoutToPropResultsInAButtonLookingLikeALink = {
   name: 'Without to prop results in a button looking like a link',
 };
 
-export const withColor = {
+export const WithColor = {
   render: () => (
     <Provider>
       <Display
@@ -194,7 +194,7 @@ export const withColor = {
   name: 'With color prop',
 };
 
-export const withDisplay = {
+export const WithDisplay = {
   render: () => (
     <Provider>
       <Display
@@ -227,7 +227,7 @@ export const withDisplay = {
   name: 'With display prop',
 };
 
-export const withUnderline = {
+export const WithUnderline = {
   render: () => (
     <Provider>
       <Display
@@ -256,6 +256,4 @@ export const withUnderline = {
       />
     </Provider>
   ),
-
-  name: 'With underline',
 };

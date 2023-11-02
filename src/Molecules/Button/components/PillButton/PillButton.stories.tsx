@@ -23,18 +23,18 @@ const NoPadding = styled.div`
   background: red;
 `;
 
-export const documentation = () => (
+export const Documentation = () => (
   <Typography type="primary">
     <MD>{docs}</MD>
   </Typography>
 );
 
-export const defaultUsage = {
+export const DefaultUsage = {
   render: () => <PillButton onClick={action('clicked')}>PillButton</PillButton>,
   name: 'Default usage',
 };
 
-export const pillButtonWithDifferentVariants = () => (
+export const PillButtonWithDifferentVariants = () => (
   <>
     <Display
       horizontal
@@ -282,7 +282,7 @@ export const pillButtonWithDifferentVariants = () => (
   </>
 );
 
-export const pillButtonWithLoadingState = {
+export const PillButtonWithLoadingState = {
   render: () => {
     const LoadingExample = () => {
       const [loading, setLoading] = useState(true);
@@ -326,7 +326,7 @@ export const pillButtonWithLoadingState = {
   name: 'PillButton with loading state',
 };
 
-export const pillButtonWithLoadingStateWithoutTheSpinnerAnimationDelay = {
+export const PillButtonWithLoadingStateWithoutTheSpinnerAnimationDelay = {
   render: () => (
     <PillButton onClick={action('clicked')} loading delayLoadingSpinnerAnimation={false}>
       Button
@@ -336,7 +336,7 @@ export const pillButtonWithLoadingStateWithoutTheSpinnerAnimationDelay = {
   name: 'PillButton with loading state without the spinner animation delay',
 };
 
-export const pillButtonThatIsFullWidth = {
+export const PillButtonThatIsFullWidth = {
   render: () => (
     <NoPadding>
       <PillButton onClick={action('clicked')} fullWidth>
@@ -351,7 +351,7 @@ export const pillButtonThatIsFullWidth = {
   name: 'PillButton that is full width',
 };
 
-export const pillButtonsComposedInAGroup = {
+export const PillButtonsComposedInAGroup = {
   render: () => (
     <Flexbox container gap={2}>
       <Flexbox item flex="1 1 50%">
@@ -374,7 +374,7 @@ export const pillButtonsComposedInAGroup = {
   name: 'PillButtons composed in a group',
 };
 
-export const linksLookingLikePillButtons = {
+export const LinksLookingLikePillButtons = {
   render: () => (
     <Provider>
       <Display

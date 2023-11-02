@@ -8,7 +8,7 @@ export default {
   },
 };
 
-export const dateTime = {
+export const DateTimeStory = {
   render: () => {
     return <DateTime value={1554824654} />;
   },
@@ -16,7 +16,7 @@ export const dateTime = {
   name: 'DateTime',
 };
 
-export const withDateOnly = {
+export const WithDateOnly = {
   render: () => {
     return <DateTime onlyDate value={1554824654} />;
   },
@@ -24,7 +24,7 @@ export const withDateOnly = {
   name: 'With date only',
 };
 
-export const withDateTimeAsIso8601String = {
+export const WithDateTimeAsIso8601String = {
   render: () => {
     return <DateTime value="1999-11-11T11:11+0100" />;
   },
@@ -32,7 +32,7 @@ export const withDateTimeAsIso8601String = {
   name: 'With date time as ISO 8601 string',
 };
 
-export const withDateAsIso8601String = {
+export const WithDateAsIso8601String = {
   render: () => {
     return <DateTime onlyDate value="1999-11-11" />;
   },
@@ -40,7 +40,7 @@ export const withDateAsIso8601String = {
   name: 'With date as ISO 8601 string',
 };
 
-export const withCustomFormattingOptions = {
+export const WithCustomFormattingOptions = {
   render: () => {
     type FormatDateOptionYear = 'numeric';
     type FormatDateOptionMonth = 'short';
@@ -60,7 +60,7 @@ export const withCustomFormattingOptions = {
   name: 'With custom formatting options',
 };
 
-export const invalidValueStory = {
+export const InvalidValueStory = {
   render: () => {
     return <DateTime value={null} />;
   },
@@ -68,7 +68,7 @@ export const invalidValueStory = {
   name: 'Invalid value',
 };
 
-export const usesCustomSymbolForInvalidValue = {
+export const UsesCustomSymbolForInvalidValue = {
   render: () => {
     return <DateTime value={null} invalidValue="X" />;
   },

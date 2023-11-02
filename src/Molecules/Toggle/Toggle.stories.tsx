@@ -11,14 +11,14 @@ export default {
   },
 };
 
-export const defaultOff = () => (
+export const DefaultOff = () => (
   <Box py={4}>
     {' '}
     <Toggle label="Notify me by email" onClick={action('clicked')} />
   </Box>
 );
 
-export const defaultOn = () => (
+export const DefaultOn = () => (
   <>
     <Box py={4}>
       <Toggle label="Size: large" size="l" onClick={action('clicked')} checkedInitially />
@@ -32,7 +32,7 @@ export const defaultOn = () => (
   </>
 );
 
-export const disabledStory = {
+export const DisabledStory = {
   render: () => (
     <>
       <Box py={4}>
@@ -47,7 +47,7 @@ export const disabledStory = {
   name: 'Disabled',
 };
 
-export const controlledBehaviour = {
+export const ControlledBehaviour = {
   render: () => {
     const ControlledExample = () => {
       const [checked, setChecked] = useState(true);
@@ -69,7 +69,7 @@ export const controlledBehaviour = {
   name: 'Controlled behaviour',
 };
 
-export const withLabelPropAsReactNode = {
+export const WithLabelPropAsReactNode = {
   render: () => (
     <Box py={4}>
       {' '}
@@ -80,7 +80,7 @@ export const withLabelPropAsReactNode = {
   name: 'With Label prop as ReactNode',
 };
 
-export const withHiddenLabel = {
+export const WithHiddenLabel = {
   render: () => (
     <Box py={4}>
       {' '}
@@ -91,7 +91,7 @@ export const withHiddenLabel = {
   name: 'With hidden label',
 };
 
-export const readOnly = () => (
+export const ReadOnly = () => (
   <Display
     items={[
       {

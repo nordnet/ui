@@ -14,7 +14,7 @@ export default {
   },
 };
 
-export const integrationListWithTitlesWithLeftAndRightTitles = {
+export const IntegrationListWithTitlesWithLeftAndRightTitles = {
   render: () => {
     return (
       <ListWithTitles as="ol" leftTitle="title1" rightTitle="title2">
@@ -37,7 +37,7 @@ export const integrationListWithTitlesWithLeftAndRightTitles = {
   name: 'Integration: ListWithTitles with left and right titles',
 };
 
-export const integrationListWithTitlesWithLeftTitle = {
+export const IntegrationListWithTitlesWithLeftTitle = {
   render: () => {
     return (
       <ListWithTitles as="ol" leftTitle="title1">
@@ -60,7 +60,7 @@ export const integrationListWithTitlesWithLeftTitle = {
   name: 'Integration: ListWithTitles with left title',
 };
 
-export const integrationListWithTitlesWithRightTitle = {
+export const IntegrationListWithTitlesWithRightTitle = {
   render: () => {
     return (
       <ListWithTitles as="ol" rightTitle="title1">
@@ -83,7 +83,7 @@ export const integrationListWithTitlesWithRightTitle = {
   name: 'Integration: ListWithTitles with right title',
 };
 
-export const integrationListWithTitlesWithNoTitles = {
+export const IntegrationListWithTitlesWithNoTitles = {
   render: () => {
     return (
       <ListWithTitles as="ol">

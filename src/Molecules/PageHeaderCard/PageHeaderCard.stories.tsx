@@ -8,12 +8,12 @@ export default {
   },
 };
 
-export const regularPageHeader = {
+export const RegularPageHeader = {
   render: () => <PageHeaderCard title="Your darkest loaves" />,
   name: 'Regular page header',
 };
 
-export const pageHeaderWithChildren = {
+export const PageHeaderWithChildren = {
   render: () => (
     <PageHeaderCard title="Your darkest loaves">
       <Box py={2} sm={{ py: 0 }}>
@@ -26,11 +26,9 @@ export const pageHeaderWithChildren = {
       </Box>
     </PageHeaderCard>
   ),
-
-  name: 'Page header with children',
 };
 
-export const pageHeaderReactNodeTitle = {
+export const PageHeaderReactNodeTitle = {
   render: () => {
     return (
       <PageHeaderCard

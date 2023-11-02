@@ -41,9 +41,9 @@ export default {
   },
 };
 
-export const margin = () => <Box m={4}>{text}</Box>;
+export const Margin = () => <Box m={4}>{text}</Box>;
 
-export const marginAndDifferentMarginYAxis = {
+export const MarginAndDifferentMarginYAxis = {
   render: () => (
     <Box m={8} my={4}>
       {text}
@@ -53,7 +53,7 @@ export const marginAndDifferentMarginYAxis = {
   name: 'Margin and different margin Y-axis',
 };
 
-export const padding = {
+export const Padding = {
   render: () => (
     <Outer>
       <Box p={8}>{text}</Box>
@@ -63,7 +63,7 @@ export const padding = {
   name: 'Padding ',
 };
 
-export const paddingAndDifferentXAxisAndLeft = {
+export const PaddingAndDifferentXAxisAndLeft = {
   render: () => (
     <Outer>
       <Box p={8} px={4} pl={0}>
@@ -75,7 +75,7 @@ export const paddingAndDifferentXAxisAndLeft = {
   name: 'Padding and different X-axis and left ',
 };
 
-export const differentPaddingForDifferentScreenSizes = {
+export const DifferentPaddingForDifferentScreenSizes = {
   render: () => (
     <Outer>
       <Box p={0} sm={{ p: 4 }}>
@@ -87,7 +87,7 @@ export const differentPaddingForDifferentScreenSizes = {
   name: 'Different padding for different screen sizes ',
 };
 
-export const withBackgroundColor = {
+export const WithBackgroundColor = {
   render: () => (
     <Outer>
       <Box p={0} sm={{ p: 4 }} backgroundColor={(t) => t.color.cta}>

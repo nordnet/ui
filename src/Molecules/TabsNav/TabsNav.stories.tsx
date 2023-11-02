@@ -69,7 +69,7 @@ const Content = ({ height, hideFirst }: ContentProps) => {
   );
 };
 
-export const integrationWithReactRouter = {
+export const IntegrationWithReactRouter = {
   render: () => (
     <MemoryRouter>
       <LinkProvider link={MyLink}>
@@ -81,7 +81,7 @@ export const integrationWithReactRouter = {
   name: 'Integration: With react-router',
 };
 
-export const integrationWithReactRouterAndHeightModified = {
+export const IntegrationWithReactRouterAndHeightModified = {
   render: () => (
     <MemoryRouter>
       <LinkProvider link={MyLink}>
@@ -93,7 +93,7 @@ export const integrationWithReactRouterAndHeightModified = {
   name: 'Integration: With react-router and height modified',
 };
 
-export const integrationConditionallyHideTab = {
+export const IntegrationConditionallyHideTab = {
   render: () => {
     return (
       <MemoryRouter>

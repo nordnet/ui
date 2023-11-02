@@ -13,7 +13,7 @@ export default {
   title: 'Atoms / Table',
 };
 
-export const defaultStory = {
+export const DefaultStory = {
   render: () => (
     <Table width="100%">
       <Thead>
@@ -42,7 +42,7 @@ export const defaultStory = {
   name: 'Default',
 };
 
-export const integrationTableWithTypography = {
+export const IntegrationTableWithTypography = {
   render: () => {
     return (
       <Typography type="secondary">
@@ -91,7 +91,7 @@ export const integrationTableWithTypography = {
   name: 'Integration: Table with Typography',
 };
 
-export const integrationTableWithTypographyAndEllipsisOnName = {
+export const IntegrationTableWithTypographyAndEllipsisOnName = {
   render: () => {
     return (
       <Typography type="secondary">
@@ -140,7 +140,7 @@ export const integrationTableWithTypographyAndEllipsisOnName = {
   name: 'Integration: Table with Typography and ellipsis on name',
 };
 
-export const integrationTableStickyHeaderWithTypography = {
+export const IntegrationTableStickyHeaderWithTypography = {
   render: () => {
     return (
       <Typography type="secondary">

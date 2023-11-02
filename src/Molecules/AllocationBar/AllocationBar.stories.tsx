@@ -21,7 +21,7 @@ export default {
   },
 };
 
-export const basicAllocationBar = {
+export const BasicAllocationBar = {
   render: () => {
     const mockedAllocations = [
       {

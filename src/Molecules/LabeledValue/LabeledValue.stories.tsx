@@ -6,7 +6,7 @@ export default {
   title: 'Molecules / LabeledValue',
 };
 
-export const defaultStory = {
+export const DefaultStory = {
   render: () => <LabeledValue label="Label">Value</LabeledValue>,
   name: 'Default',
 
@@ -15,7 +15,7 @@ export const defaultStory = {
   },
 };
 
-export const integrationLabeledValueSecondaryCurrency = {
+export const IntegrationLabeledValueSecondaryCurrency = {
   render: () => (
     <LabeledValue label="Market value">
       <Typography type="secondary" weight="bold">
@@ -27,7 +27,7 @@ export const integrationLabeledValueSecondaryCurrency = {
   name: 'Integration: LabeledValue secondary currency',
 };
 
-export const integrationLabeledValueTitle1 = {
+export const IntegrationLabeledValueTitle1 = {
   render: () => (
     <LabeledValue label="Holdings (SEK)">
       <Typography type="title1">
@@ -39,7 +39,7 @@ export const integrationLabeledValueTitle1 = {
   name: 'Integration: LabeledValue title1',
 };
 
-export const integrationLabeledValueWithPositiveDevelopmentAndCurrency = {
+export const IntegrationLabeledValueWithPositiveDevelopmentAndCurrency = {
   render: () => (
     <LabeledValue label="Development this year">
       <Flexbox container direction="row" gap={2}>
@@ -60,7 +60,7 @@ export const integrationLabeledValueWithPositiveDevelopmentAndCurrency = {
   name: 'Integration: LabeledValue with positive development and currency',
 };
 
-export const integrationLabeledValueWithNegativeDevelopmentAndCurrency = {
+export const IntegrationLabeledValueWithNegativeDevelopmentAndCurrency = {
   render: () => (
     <LabeledValue label="Development this year">
       <Flexbox container direction="row" gap={2}>
@@ -81,7 +81,7 @@ export const integrationLabeledValueWithNegativeDevelopmentAndCurrency = {
   name: 'Integration: LabeledValue with negative development and currency',
 };
 
-export const integrationLabeledValueWithCustomTitle = {
+export const IntegrationLabeledValueWithCustomTitle = {
   render: () => (
     <LabeledValue label={<Typography type="tertiary">Foo</Typography>}>
       <Typography type="tertiary" weight="bold">

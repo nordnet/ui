@@ -9,7 +9,7 @@ export default {
   },
 };
 
-export const linkSell = {
+export const LinkSellStory = {
   render: () => {
     return (
       <Provider>
@@ -21,7 +21,7 @@ export const linkSell = {
   name: 'LinkSell',
 };
 
-export const linkSellDisabled = {
+export const LinkSellDisabled = {
   render: () => {
     return (
       <Provider>
@@ -33,7 +33,7 @@ export const linkSellDisabled = {
   name: 'LinkSell disabled',
 };
 
-export const linkSellWithRelAsNofollow = {
+export const LinkSellWithRelAsNofollow = {
   render: () => {
     return (
       <Provider>

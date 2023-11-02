@@ -7,12 +7,12 @@ export default {
   title: 'Atoms / Illustration',
 };
 
-export const defaultUse = {
+export const DefaultUse = {
   render: () => <Illustration.Archive48 />,
   name: 'Default use',
 };
 
-export const inlineStory = {
+export const InlineStory = {
   render: () => (
     <span>
       You can put the <Illustration.Archive48 inline /> directly in the text !
@@ -22,7 +22,7 @@ export const inlineStory = {
   name: 'Inline',
 };
 
-export const differentColor = {
+export const DifferentColor = {
   render: () => (
     <div style={{ color: 'blue' }}>
       You can have different color text around{' '}
@@ -33,7 +33,7 @@ export const differentColor = {
   name: 'Different color',
 };
 
-export const differentSecondaryColor = {
+export const DifferentSecondaryColor = {
   render: () => (
     <span>
       Some illustrations have 2 colors
@@ -47,7 +47,7 @@ export const differentSecondaryColor = {
   name: 'Different secondary color',
 };
 
-export const titleExample = {
+export const TitleExample = {
   render: () => (
     <div style={{ color: 'blue' }}>
       You can use title prop for a hover tooltip
@@ -58,7 +58,7 @@ export const titleExample = {
   name: 'Title example',
 };
 
-export const availableIllustrations = {
+export const AvailableIllustrations = {
   render: () => (
     <Display
       items={Object?.entries(Illustration)?.map(
@@ -73,11 +73,9 @@ export const availableIllustrations = {
       )}
     />
   ),
-
-  name: 'Available Illustrations',
 };
 
-export const allIllustrationsColored = {
+export const AllIllustrationsColored = {
   render: () => (
     <>
       {Object?.entries(Illustration)?.map(
@@ -123,27 +121,27 @@ const SizeIllustrations = (size: string) => (
   </StyledFlexbox>
 );
 
-export const size48 = {
+export const Size48 = {
   render: () => <>{SizeIllustrations('48')}</>,
   name: 'Size / 48px',
 };
 
-export const size64 = {
+export const Size64 = {
   render: () => <>{SizeIllustrations('64')}</>,
   name: 'Size / 64px',
 };
 
-export const size96 = {
+export const Size96 = {
   render: () => <>{SizeIllustrations('96')}</>,
   name: 'Size / 96px',
 };
 
-export const size240 = {
+export const Size240 = {
   render: () => <>{SizeIllustrations('240')}</>,
   name: 'Size / 240px',
 };
 
-export const size375 = {
+export const Size375 = {
   render: () => <>{SizeIllustrations('375')}</>,
   name: 'Size / 375px',
 };

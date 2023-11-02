@@ -12,7 +12,7 @@ export default {
   },
 };
 
-export const linkLookingLikeAButton = {
+export const LinkLookingLikeAButton = {
   render: () => (
     <Provider>
       <Display
@@ -37,7 +37,7 @@ export const linkLookingLikeAButton = {
   name: 'Link looking like a button',
 };
 
-export const linkLookingLikeAButtonThatIsFullWidth = {
+export const LinkLookingLikeAButtonThatIsFullWidth = {
   render: () => (
     <Provider>
       <Button to="/overview" onClick={action('clicked')} fullWidth>
@@ -49,7 +49,7 @@ export const linkLookingLikeAButtonThatIsFullWidth = {
   name: 'Link looking like a button that is full width',
 };
 
-export const linksLookingLikeButtonsComposedInAGroup = {
+export const LinksLookingLikeButtonsComposedInAGroup = {
   render: () => (
     <Provider>
       <Flexbox container gap={2}>
@@ -70,7 +70,7 @@ export const linksLookingLikeButtonsComposedInAGroup = {
   name: 'Links looking like buttons composed in a group',
 };
 
-export const linkLookingLikeAButtonWithRelAsNofollow = {
+export const LinkLookingLikeAButtonWithRelAsNofollow = {
   render: () => (
     <Provider>
       <Button to="/overview" rel="nofollow" onClick={action('clicked')} fullWidth>
@@ -82,7 +82,7 @@ export const linkLookingLikeAButtonWithRelAsNofollow = {
   name: 'Link looking like a button with rel as nofollow',
 };
 
-export const externalLinkLookingLikeAButton = {
+export const ExternalLinkLookingLikeAButton = {
   render: () => (
     <Provider>
       <Button to="//www.google.com" external rel="nofollow" onClick={action('clicked')} fullWidth>
@@ -94,7 +94,7 @@ export const externalLinkLookingLikeAButton = {
   name: 'External link looking like a button',
 };
 
-export const disabledLinkLookingLikeAButton = {
+export const DisabledLinkLookingLikeAButton = {
   render: () => (
     <Provider>
       <Button
@@ -113,7 +113,7 @@ export const disabledLinkLookingLikeAButton = {
   name: 'Disabled link looking like a button',
 };
 
-export const linkLookingLikeAButtonWithWithColors = {
+export const LinkLookingLikeAButtonWithWithColors = {
   render: () => (
     <Provider>
       <>
@@ -176,7 +176,7 @@ export const linkLookingLikeAButtonWithWithColors = {
   name: 'Link looking like a button with with colors',
 };
 
-export const neutralButtonLookingLikeLinkUnderlineOnHover = {
+export const NeutralButtonLookingLikeLinkUnderlineOnHover = {
   render: () => (
     <Provider>
       <Display

@@ -20,7 +20,7 @@ export const DefaultUsage = {
   },
 };
 
-export const displayingTitle = () => (
+export const DisplayingTitle = () => (
   <Display
     items={[
       {
@@ -37,13 +37,13 @@ export const displayingTitle = () => (
   />
 );
 
-export const withoutIcon = () => (
+export const WithoutIcon = () => (
   <FeedbackBanner title="Disable icon" variant="info" withIcon={false}>
     This banner has no icon
   </FeedbackBanner>
 );
 
-export const differentVariant = () => (
+export const DifferentVariant = () => (
   <Display
     items={[
       {
@@ -82,7 +82,7 @@ export const differentVariant = () => (
   />
 );
 
-export const complexChildren = () => (
+export const ComplexChildren = () => (
   <HashRouter>
     <FeedbackBanner title="Warning, complex child" variant="warning">
       <>

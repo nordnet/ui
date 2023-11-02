@@ -11,18 +11,17 @@ export default {
   },
 };
 
-export const defaultOff = () => <Switch label="Notify me by email" onClick={action('clicked')} />;
+export const DefaultOff = () => <Switch label="Notify me by email" onClick={action('clicked')} />;
 
-export const defaultOn = () => (
+export const DefaultOn = () => (
   <Switch label="Notify me by email" onClick={action('clicked')} checkedInitially />
 );
 
-export const disabledStory = {
+export const Disabled = {
   render: () => <Switch label="Notify me by email" disabled />,
-  name: 'Disabled',
 };
 
-export const controlledBehaviour = {
+export const ControlledBehaviour = {
   render: () => {
     const ControlledExample = () => {
       const [checked, setChecked] = useState(true);
@@ -33,25 +32,19 @@ export const controlledBehaviour = {
     };
     return <ControlledExample />;
   },
-
-  name: 'Controlled behaviour',
 };
 
-export const withLabelPropAsReactNode = {
+export const WithLabelPropAsReactNode = {
   render: () => (
     <Switch label={<Typography>Notify me by email</Typography>} onClick={action('clicked')} />
   ),
-
-  name: 'With Label prop as ReactNode',
 };
 
-export const withHiddenLabel = {
+export const WithHiddenLabel = {
   render: () => <Switch label="Notify me by email" onClick={action('clicked')} hiddenLabel />,
-
-  name: 'With hidden label',
 };
 
-export const readOnly = () => (
+export const ReadOnly = () => (
   <Display
     items={[
       {

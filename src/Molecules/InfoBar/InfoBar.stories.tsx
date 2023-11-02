@@ -15,7 +15,7 @@ const StyledBg = styled.div`
   background: #f5f5f5;
 `;
 
-export const defaultUsage = {
+export const DefaultUsage = {
   render: () => (
     <StyledBg>
       <InfoBar>
@@ -28,7 +28,7 @@ export const defaultUsage = {
   name: 'Default usage',
 };
 
-export const onCloseProp = {
+export const OnCloseProp = {
   render: () => (
     <StyledBg>
       <InfoBar>Without onClose prop InfoBar cannot be dismissed</InfoBar>
@@ -84,7 +84,7 @@ const variants = [
   },
 ];
 
-export const differentVariants = {
+export const DifferentVariants = {
   render: () => (
     <StyledBg>
       <code>no variant passed, defaults to general</code>

@@ -9,7 +9,7 @@ export default {
   },
 };
 
-export const basicUnorderedList = {
+export const BasicUnorderedList = {
   render: () => (
     <List>
       <ListItem>
@@ -27,7 +27,7 @@ export const basicUnorderedList = {
   name: 'Basic unordered list',
 };
 
-export const basicOrderedList = {
+export const BasicOrderedList = {
   render: () => (
     <List as="ol">
       <ListItem>

@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Box, Drawer, Flexbox, Modal, Button as UIButton, Icon, Typography, PopOver } from '../..';
@@ -21,7 +22,7 @@ const StyledDiv = styled.div`
   margin: 20px 0 20px 20px;
 `;
 
-export const defaultStory = {
+export const DefaultStory = {
   render: () => (
     <>
       <StyledDiv>
@@ -54,7 +55,7 @@ export const defaultStory = {
   name: 'Default',
 };
 
-export const invertedColorsStory = {
+export const InvertedColorsStory = {
   render: () => (
     <>
       <StyledDiv>
@@ -69,7 +70,7 @@ export const invertedColorsStory = {
   name: 'Inverted colors',
 };
 
-export const withMode = {
+export const WithMode = {
   render: () => (
     <Tooltip label={label} mode="click">
       <Button type="button">Click me</Button>
@@ -81,17 +82,15 @@ export const withMode = {
 
 const veryLongLabel = 'Llanfairpwllgwyngyllgogerychwyrndrob';
 
-export const withVeryLongWord = {
+export const WithVeryLongWord = {
   render: () => (
     <Tooltip label={veryLongLabel}>
       <Button type="button">Hover me</Button>
     </Tooltip>
   ),
-
-  name: 'With Very Long Word',
 };
 
-export const withPosition = {
+export const WithPosition = {
   render: () => (
     <Display
       items={[
@@ -198,7 +197,7 @@ export const withPosition = {
   name: 'With position defined',
 };
 
-export const zindexWars = {
+export const ZindexWars = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(false);
@@ -234,7 +233,7 @@ export const zindexWars = {
   name: 'Integration: With Drawer and Modal',
 };
 
-export const customMaxWidth = {
+export const CustomMaxWidth = {
   render: () => (
     <Tooltip label={label} maxWidth={100}>
       <Button type="button">Hover me</Button>

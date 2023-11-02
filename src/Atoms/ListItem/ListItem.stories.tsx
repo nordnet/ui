@@ -8,7 +8,7 @@ export default {
   },
 };
 
-export const basicListItem = {
+export const BasicListItem = {
   render: () => (
     <ul>
       <ListItem>

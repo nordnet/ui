@@ -9,7 +9,7 @@ export default {
   },
 };
 
-export const linkBuy = {
+export const LinkBuyStory = {
   render: () => {
     return (
       <Provider>
@@ -21,7 +21,7 @@ export const linkBuy = {
   name: 'LinkBuy',
 };
 
-export const linkBuyDisabled = {
+export const LinkBuyDisabled = {
   render: () => {
     return (
       <Provider>
@@ -33,7 +33,7 @@ export const linkBuyDisabled = {
   name: 'LinkBuy disabled',
 };
 
-export const linkBuyWithRelAsNofollow = {
+export const LinkBuyWithRelAsNofollow = {
   render: () => {
     return (
       <Provider>

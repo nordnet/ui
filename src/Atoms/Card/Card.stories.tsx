@@ -22,7 +22,7 @@ export default {
   },
 };
 
-export const basicCard = () => (
+export const BasicCard = () => (
   <Card>
     <Content>
       <Typography>A Card as a div containing content</Typography>
@@ -30,7 +30,7 @@ export const basicCard = () => (
   </Card>
 );
 
-export const cardRenderedWithDifferentHtmlTags = {
+export const CardRenderedWithDifferentHtmlTags = {
   render: () => (
     <Display
       items={[
@@ -61,7 +61,7 @@ export const cardRenderedWithDifferentHtmlTags = {
   name: 'Card rendered with different html tags',
 };
 
-export const cardWithBar = {
+export const CardWithBar = {
   render: () => (
     <Card barColor={(t) => t.color.shareville}>
       <Content>

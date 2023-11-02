@@ -11,12 +11,12 @@ export default {
   },
 };
 
-export const defaultUse = {
+export const DefaultUse = {
   render: () => <Flag size="m" country="SE" />,
   name: 'Default use',
 };
 
-export const inlineStory = {
+export const InlineStory = {
   render: () => (
     <>
       You can put the <Flag size="m" inline country="SE" /> directly in the text with inline prop!
@@ -26,12 +26,12 @@ export const inlineStory = {
   name: 'Inline',
 };
 
-export const rendersNothingIfWrongCountryCode = {
+export const RendersNothingIfWrongCountryCode = {
   render: () => <Flag size="l" country="WRONG" />,
   name: 'Renders nothing if wrong country code',
 };
 
-export const availableFlags = {
+export const AvailableFlags = {
   render: () => (
     <Display
       items={[
@@ -62,7 +62,7 @@ export const availableFlags = {
   name: 'Available flags',
 };
 
-export const withBorder = {
+export const WithBorder = {
   render: () => (
     <>
       <Box p={4}>

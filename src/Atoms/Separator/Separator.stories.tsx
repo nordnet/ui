@@ -39,7 +39,7 @@ export default {
   },
 };
 
-export const separatorDefault = {
+export const SeparatorDefault = {
   render: () => (
     <Container>
       <Separator />
@@ -49,7 +49,7 @@ export const separatorDefault = {
   name: 'Separator default',
 };
 
-export const separatorsWithDifferentColor = {
+export const SeparatorsWithDifferentColor = {
   render: () => (
     <Container>
       <Separator color={(t) => t.color.negative} />
@@ -61,7 +61,7 @@ export const separatorsWithDifferentColor = {
   name: 'Separators with different color',
 };
 
-export const separatorVertical = {
+export const SeparatorVertical = {
   render: () => (
     <Container>
       <Separator vertical />
@@ -71,7 +71,7 @@ export const separatorVertical = {
   name: 'Separator vertical',
 };
 
-export const separatorFullWidth = {
+export const SeparatorFullWidth = {
   render: () => (
     <StyledContainer>
       <StyledCardWithTitle title="card with title">

@@ -90,7 +90,7 @@ const contentWithAccordion = (
   </Accordion>
 );
 
-export const defaultStory = {
+export const DefaultStory = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -122,7 +122,7 @@ export const defaultStory = {
   name: 'Default',
 };
 
-export const withCustomTitle = {
+export const WithCustomTitle = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -163,7 +163,7 @@ export const withCustomTitle = {
   name: 'With a custom title',
 };
 
-export const withNoTitle = {
+export const WithNoTitle = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -193,7 +193,7 @@ export const withNoTitle = {
   name: 'With no title',
 };
 
-export const withCloseButtonTitle = () => {
+export const WithCloseButtonTitle = () => {
   const Example = () => {
     const [open, setOpen] = useState(true);
 
@@ -219,7 +219,7 @@ export const withCloseButtonTitle = () => {
   return <Example />;
 };
 
-export const integrationWithFadedScroll = {
+export const IntegrationWithFadedScroll = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -249,7 +249,7 @@ export const integrationWithFadedScroll = {
   name: 'Integration: With FadedScroll',
 };
 
-export const withFooterAndintegrationWithFadedScroll = {
+export const WithFooterAndintegrationWithFadedScroll = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -430,7 +430,7 @@ export const WithoutCloseOnSpecificElementClick = {
   name: 'Without closing the drawer when clicking outside on specified elements',
 };
 
-export const noInitialAnimationStory = {
+export const NoInitialAnimationStory = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -460,7 +460,7 @@ export const noInitialAnimationStory = {
   name: 'No initial animation',
 };
 
-export const onAnimationCompleteStory = {
+export const OnAnimationCompleteStory = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -495,32 +495,29 @@ export const onAnimationCompleteStory = {
   name: 'With on animation complete',
 };
 
-export const withAccordion = {
-  render: () => {
-    const WithAccordion = () => {
-      const [open, setOpen] = useState(true);
+const WithAccordionComponent = () => {
+  const [open, setOpen] = useState(true);
 
-      const toggle = () => {
-        setOpen(!open);
-      };
+  const toggle = () => {
+    setOpen(!open);
+  };
 
-      const onClose = () => {
-        setOpen(false);
-      };
+  const onClose = () => {
+    setOpen(false);
+  };
 
-      return (
-        <>
-          <button type="button" onClick={toggle}>
-            Toggle drawer
-          </button>
-          <Drawer onClose={onClose} title="Drawer title" open={open}>
-            {contentWithAccordion}
-          </Drawer>
-        </>
-      );
-    };
-    return <WithAccordion />;
-  },
+  return (
+    <>
+      <button type="button" onClick={toggle}>
+        Toggle drawer
+      </button>
+      <Drawer onClose={onClose} title="Drawer title" open={open}>
+        {contentWithAccordion}
+      </Drawer>
+    </>
+  );
+};
 
-  name: 'With Accordion',
+export const WithAccordion = {
+  render: () => <WithAccordionComponent />,
 };

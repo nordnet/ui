@@ -12,7 +12,7 @@ export default {
   },
 };
 
-export const documentation = () => (
+export const Documentation = () => (
   <Typography>
     <MD>{docs}</MD>
     <div>
@@ -24,17 +24,17 @@ export const documentation = () => (
   </Typography>
 );
 
-export const spinnerDefault = {
+export const SpinnerDefault = {
   render: () => <Spinner id="mySpinner" />,
   name: 'Spinner default',
 };
 
-export const spinnerBig = {
+export const SpinnerBig = {
   render: () => <Spinner size={16} id="mySpinner" />,
   name: 'Spinner big',
 };
 
-export const spinnerWithFallback = {
+export const SpinnerWithFallback = {
   render: () => (
     <div style={{ height: '32px' }}>
       <Spinner size={8} id="mySpinnerFallback" fallback={<Icon.Account32 />} />
@@ -44,17 +44,17 @@ export const spinnerWithFallback = {
   name: 'Spinner with fallback during the timeout delay instead of null',
 };
 
-export const spinnerWithoutDefaultDelay = {
+export const SpinnerWithoutDefaultDelay = {
   render: () => <Spinner size={16} id="mySpinner" delay={false} />,
   name: 'Spinner without default delay',
 };
 
-export const spinnerWithCustom2SecDelay = {
+export const SpinnerWithCustom2SecDelay = {
   render: () => <Spinner size={16} id="mySpinner" delay={2000} />,
   name: 'Spinner with custom 2 sec delay',
 };
 
-export const colors = () => (
+export const Colors = () => (
   <Display
     items={[
       { title: 'Default', component: <Spinner id="defaultSpinner" /> },
@@ -82,7 +82,7 @@ export const colors = () => (
   />
 );
 
-export const regression2SpinnersWithSameColorAndSizeAffectsEachOtherInChrome = {
+export const Regression2SpinnersWithSameColorAndSizeAffectsEachOtherInChrome = {
   render: () => (
     <>
       <Typography type="primary">

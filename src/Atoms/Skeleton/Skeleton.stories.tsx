@@ -9,12 +9,12 @@ export default {
   },
 };
 
-export const defaultStory = {
+export const DefaultStory = {
   render: () => <Skeleton variant="text" width="300px" />,
   name: 'Default',
 };
 
-export const variants = {
+export const Variants = {
   render: () => (
     <Display
       title="Skeleton variants"
@@ -38,7 +38,7 @@ export const variants = {
   name: 'Different variants',
 };
 
-export const delay = {
+export const Delay = {
   render: () => (
     <Display
       title="Skeleton with delay"
