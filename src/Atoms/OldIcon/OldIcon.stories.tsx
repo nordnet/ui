@@ -1,189 +1,83 @@
 import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta } from '@storybook/react';
 
 import { OldIcon } from '../..';
 import { Display } from '../../common/Display';
-import { BaseProps, ChildProps } from './IconBase.types';
 
-export default {
+const meta: Meta = {
   title: 'Atoms / OldIcon',
-} as Meta;
+};
+
+export default meta;
 
 export const DefaultUse = {
   render: () => <OldIcon.ArrowRight />,
-  name: 'Default use',
 };
 
-export const InlineStory = {
+export const Inline = {
   render: () => (
     <>
       You can put the <OldIcon.ArrowRight inline /> directly in the text with inline prop!
     </>
   ),
-
-  name: 'Inline',
 };
-
-const TemplateThinArrow: StoryFn<
-  BaseProps & {
-    direction: 'up' | 'right' | 'down' | 'left';
-  }
-> = (args) => <OldIcon.ThinArrow {...args} />;
 
 export const ThinArrow = {
-  render: TemplateThinArrow,
-
-  args: {
-    direction: 'up',
-  },
+  render: () => <OldIcon.ThinArrow direction="up" />,
 };
-
-const TemplateThinChevron: StoryFn<
-  BaseProps & {
-    direction: 'up' | 'right' | 'down' | 'left';
-  }
-> = (args) => <OldIcon.ThinChevron {...args} />;
 
 export const ThinChevron = {
-  render: TemplateThinChevron,
-
-  args: {
-    direction: 'up',
-  },
+  render: () => <OldIcon.ThinChevron direction="up" />,
 };
-
-const TemplateChevron: StoryFn<
-  BaseProps & {
-    direction: 'up' | 'right' | 'down' | 'left';
-  }
-> = (args) => <OldIcon.Chevron {...args} />;
 
 export const Chevron = {
-  render: TemplateChevron,
-
-  args: {
-    direction: 'up',
-  },
+  render: () => <OldIcon.Chevron direction="up" />,
 };
-
-const TemplateSortArrow: StoryFn<
-  BaseProps & {
-    direction: 'ascending' | 'descending';
-  }
-> = (args) => <OldIcon.SortArrow {...args} />;
 
 export const SortArrow = {
-  render: TemplateSortArrow,
-
-  args: {
-    direction: 'ascending',
-  },
+  render: () => <OldIcon.SortArrow direction="ascending" />,
 };
-
-const TemplateAccount: StoryFn<BaseProps> = (args) => <OldIcon.Account {...args} />;
 
 export const Account = {
-  render: TemplateAccount,
-
-  args: {
-    size: 10,
-    fill: (t) => t.color.backgroundBlack,
-  },
+  render: () => <OldIcon.Account size={10} fill={(t) => t.color.backgroundBlack} />,
 };
-
-const TemplateCalendarO: StoryFn<BaseProps> = (args) => <OldIcon.CalendarO {...args} />;
 
 export const CalendarO = {
-  render: TemplateCalendarO,
-
-  args: {
-    size: 10,
-    fill: (t) => t.color.backgroundBlack,
-  },
+  render: () => <OldIcon.CalendarO size={10} fill={(t) => t.color.backgroundBlack} />,
 };
-
-const TemplateFAQ: StoryFn<BaseProps> = (args) => <OldIcon.FAQ {...args} />;
 
 export const Faq = {
-  render: TemplateFAQ,
-
-  args: {
-    size: 10,
-    fill: (t) => t.color.cta,
-  },
+  render: () => <OldIcon.FAQ size={10} fill={(t) => t.color.cta} />,
 };
-
-const TemplatePercent: StoryFn<BaseProps> = (args) => <OldIcon.Percent {...args} />;
 
 export const Percent = {
-  render: TemplatePercent,
-
-  args: {
-    size: 10,
-    fill: (t) => t.color.backgroundBlack,
-  },
+  render: () => <OldIcon.Percent size={10} fill={(t) => t.color.backgroundBlack} />,
 };
-
-const TemplateProfile: StoryFn<BaseProps> = (args) => <OldIcon.Profile {...args} />;
 
 export const Profile = {
-  render: TemplateProfile,
-
-  args: {
-    size: 10,
-    fill: (t) => t.color.backgroundBlack,
-  },
+  render: () => <OldIcon.Profile size={10} fill={(t) => t.color.backgroundBlack} />,
 };
-
-const TemplateThreeDotsO: StoryFn<BaseProps> = (args) => <OldIcon.ThreeDotsO {...args} />;
 
 export const ThreeDotsO = {
-  render: TemplateThreeDotsO,
-
-  args: {
-    size: 10,
-    fill: (t) => t.color.backgroundBlack,
-  },
+  render: () => <OldIcon.ThreeDotsO size={10} fill={(t) => t.color.backgroundBlack} />,
 };
-
-const TemplateTaxPercentage: StoryFn<BaseProps> = (args) => <OldIcon.TaxPercentage {...args} />;
 
 export const TaxPercentage = {
-  render: TemplateTaxPercentage,
-
-  args: {
-    size: 10,
-    fill: (t) => t.color.backgroundBlack,
-  },
+  render: () => <OldIcon.TaxPercentage size={10} fill={(t) => t.color.backgroundBlack} />,
 };
-
-const TemplateTransfer: StoryFn<BaseProps> = (args) => <OldIcon.Transfer {...args} />;
 
 export const Transfer = {
-  render: TemplateTransfer,
-
-  args: {
-    size: 10,
-    fill: (t) => t.color.backgroundBlack,
-  },
+  render: () => <OldIcon.Transfer size={10} fill={(t) => t.color.backgroundBlack} />,
 };
 
-const TemplateUrgentMessage: StoryFn<ChildProps> = (args) => <OldIcon.UrgentMessage {...args} />;
-
 export const UrgentMessage = {
-  render: TemplateUrgentMessage,
-
-  args: {
-    size: 10,
-    fill: (t) => t.color.text,
-    stroke: (t) => t.color.negative,
-  },
+  render: () => (
+    <OldIcon.UrgentMessage size={10} fill={(t) => t.color.text} stroke={(t) => t.color.negative} />
+  ),
 };
 
 export const DifferentSizeAndFill = {
   render: () => <OldIcon.ArrowRight size={10} fill={(t) => t.color.positive} />,
-
-  name: 'Different size and fill',
 };
 
 export const WithModifiedStroke = {
@@ -255,8 +149,6 @@ export const WithModifiedStroke = {
       ]}
     />
   ),
-
-  name: 'With modified stroke',
 };
 
 export const AvailableOldIcons = {
@@ -276,8 +168,6 @@ export const AvailableOldIcons = {
       )}
     />
   ),
-
-  name: 'Available old icons',
 };
 
 export const AllOldIconsColored = {
