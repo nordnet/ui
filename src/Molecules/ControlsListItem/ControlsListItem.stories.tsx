@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import { OptionItem } from '../Input/Select/Select.types';
 
 import ControlsListItem from '.';
-import { Box, Icon, List, Separator } from '../..';
+import { Icon, List, Separator } from '../..';
+import {
+  ControlsListItemSelect as ControlsListItemSelectProps,
+  ControlsListItemSwitch as ControlsListItemSwitchProps,
+} from './ControlsListItem.types';
 
 export default {
   title: 'Molecules / ControlsListItem',
@@ -37,133 +41,69 @@ export const ControlsListItemButtonWithIcon16 = {
   name: 'Controls list item button with icon 16',
 };
 
-export const ControlsListItemSelect = {
-  render: () => {
-    const mockedListItems = [
-      { label: 'first label', value: 'first value' },
-      { label: 'second label', value: 'second value' },
-      { label: 'third label', value: 'third value' },
-    ] as OptionItem[];
+const ControlsListItemSelectWithHooks = (props: Partial<ControlsListItemSelectProps>) => {
+  const mockedListItems = [
+    { label: 'first label', value: 'first value' },
+    { label: 'second label', value: 'second value' },
+    { label: 'third label', value: 'third value' },
+  ] as OptionItem[];
 
-    const [selectedItem, setSelectedItem] = useState([mockedListItems[0]]);
-    const onChange = (val: OptionItem[]) => {
-      setSelectedItem(val);
-    };
-    return (
-      <ControlsListItem.Select
-        label="label"
-        onChange={onChange}
-        options={mockedListItems}
-        selectedItem={selectedItem}
-        text="text"
-        description="description is good otherwise we don't understand"
-      />
-    );
-  },
-
-  name: 'Controls list item select',
+  const [selectedItem, setSelectedItem] = useState([mockedListItems[0]]);
+  const onChange = (val: OptionItem[]) => {
+    setSelectedItem(val);
+  };
+  return (
+    <ControlsListItem.Select
+      label="label"
+      onChange={onChange}
+      options={mockedListItems}
+      selectedItem={selectedItem}
+      text="text"
+      description="description is good otherwise we don't understand"
+      {...props}
+    />
+  );
 };
 
-export const ControlsListItemSelectPlacementTop = {
-  render: () => {
-    const mockedListItems = [
-      { label: 'first label', value: 'first value' },
-      { label: 'second label', value: 'second value' },
-      { label: 'third label', value: 'third value' },
-    ] as OptionItem[];
+export const ControlsListItemSelect = {
+  render: () => <ControlsListItemSelectWithHooks />,
+};
 
-    const [selectedItem, setSelectedItem] = useState([mockedListItems[0]]);
-    const onChange = (val: OptionItem[]) => {
-      setSelectedItem(val);
-    };
-    return (
-      <Box pt={25}>
-        <ControlsListItem.Select
-          label="label"
-          onChange={onChange}
-          options={mockedListItems}
-          selectedItem={selectedItem}
-          text="text"
-          description="description is good otherwise we don't understand"
-          placement="top"
-        />
-      </Box>
-    );
-  },
-
-  name: 'Controls list item select with placement top',
+export const ControlsListItemSelectWithPlacementTop = {
+  render: () => <ControlsListItemSelectWithHooks placement="top" />,
 };
 
 export const ControlsListItemSelectWithoutDescription = {
-  render: (
-    asAddon = false,
-    rightAligned = false,
-    showCheckmark = true,
-    listWidth: string | undefined,
-  ) => {
-    const mockedListItems = [
-      { label: 'first label', value: 'first value' },
-      { label: 'second label', value: 'second value' },
-      { label: 'third label', value: 'third value' },
-    ] as OptionItem[];
+  render: () => (
+    <ControlsListItemSelectWithHooks description={undefined} asAddon={false} showCheckmark />
+  ),
+};
 
-    const [selectedItem, setSelectedItem] = useState([mockedListItems[0]]);
-    const onChange = (val: OptionItem[]) => {
-      setSelectedItem(val);
-    };
-    return (
-      <ControlsListItem.Select
-        label="label"
-        onChange={onChange}
-        options={mockedListItems}
-        selectedItem={selectedItem}
-        text="text"
-        asAddon={asAddon}
-        justifyContent={rightAligned ? 'flex-end' : undefined}
-        showCheckmark={showCheckmark}
-        listWidth={listWidth}
-      />
-    );
-  },
+export const ControlsListItemSwitchWithHooks = (props: Partial<ControlsListItemSwitchProps>) => {
+  const [isChecked, setIsChecked] = useState(false);
 
-  name: 'Controls list item select without description',
+  return (
+    <ControlsListItem.Switch
+      checked={isChecked}
+      label="label"
+      Icon={<Icon.Account24 />}
+      description="description is good otherwise we don't understand"
+      onChange={() => setIsChecked(!isChecked)}
+      {...props}
+    />
+  );
 };
 
 export const ControlsListItemSwitch = {
-  render: () => {
-    const [isChecked, setIsChecked] = useState(false);
-
-    return (
-      <ControlsListItem.Switch
-        checked={isChecked}
-        label="label"
-        Icon={<Icon.Account24 />}
-        description="description is good otherwise we don't understand"
-        onChange={() => setIsChecked(!isChecked)}
-      />
-    );
-  },
-
-  name: 'Controls list item switch',
+  render: () => <ControlsListItemSwitchWithHooks />,
 };
 
 export const ControlsListItemSwitchWithAddon = {
-  render: () => {
-    const [isChecked, setIsChecked] = useState(false);
-
-    return (
-      <ControlsListItem.Switch
-        checked={isChecked}
-        label="label"
-        Icon={<Icon.Account24 />}
-        description="description is good otherwise we don't understand"
-        onChange={() => setIsChecked(!isChecked)}
-        addon={ControlsListItemSelectWithoutDescription(true, true, false, undefined)}
-      />
-    );
-  },
-
-  name: 'Controls list item switch with addon',
+  render: () => (
+    <ControlsListItemSwitchWithHooks
+      addon={ControlsListItemSelectWithoutDescription(true, true, false, undefined)}
+    />
+  ),
 };
 
 export const ControlsListItemSwitchDisabled = {

@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta } from '@storybook/react';
 import styled from 'styled-components';
 
 import { Box, Flexbox, Icon, Typography } from '../..';
 import { SelectionCard } from './SelectionCard';
-import { SelectionCard as Props } from './SelectionCard.types';
 
 import image from './images/guidance_economic_independence.jpg';
 
-export default {
-  title: 'Molecules / SelectionCard',
+const meta: Meta<typeof SelectionCard> = {
   component: SelectionCard,
-} as Meta;
+  title: 'Molecules / SelectionCard',
+};
+
+export default meta;
 
 const StyledFlexbox = styled(Flexbox)`
   width: 100%;

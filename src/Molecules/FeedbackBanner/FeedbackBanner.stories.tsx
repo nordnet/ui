@@ -1,15 +1,16 @@
 import React from 'react';
 import { HashRouter } from 'react-router-dom';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta } from '@storybook/react';
 
 import { FeedbackBanner, Spinner } from '../..';
 import { Display } from '../../common/Display';
-import { FeedbackBannerProps as Props } from './FeedbackBanner.types';
 
-export default {
-  title: 'Molecules / FeedbackBanner',
+const meta: Meta<typeof FeedbackBanner> = {
   component: FeedbackBanner,
-} as Meta;
+  title: 'Molecules / FeedbackBanner',
+};
+
+export default meta;
 
 export const DefaultUsage = {
   args: {

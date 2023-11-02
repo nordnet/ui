@@ -1,22 +1,23 @@
 import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta } from '@storybook/react';
 
 import docs from './Rating.mdx';
 import Rating from '.';
-import { Props } from './Rating.types';
 import Flexbox from '../../Atoms/Flexbox';
 import Typography from '../../Atoms/Typography';
 import Icon from '../../Atoms/Icon';
 
-export default {
+const meta: Meta<typeof Rating> = {
+  component: Rating,
   title: 'Molecules / Rating',
   parameters: {
     docs: {
       page: docs,
     },
   },
-  component: Rating,
-} as Meta;
+};
+
+export default meta;
 
 export const Rating0 = {
   args: {

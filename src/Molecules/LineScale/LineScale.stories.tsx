@@ -1,19 +1,19 @@
-import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta } from '@storybook/react';
 
 import docs from './LineScale.mdx';
 import LineScale from '.';
-import { Props } from './LineScale.types';
 
-export default {
-  title: 'Molecules / LineScale',
+const meta: Meta<typeof LineScale> = {
   component: LineScale,
+  title: 'Molecules / LineScale',
   parameters: {
     docs: {
       page: docs,
     },
   },
-} as Meta;
+};
+
+export default meta;
 
 export const LineScaleAtLeftEdge = {
   args: {

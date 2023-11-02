@@ -1,14 +1,15 @@
 import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import type { Meta } from '@storybook/react';
 
 import ProgressBar from '.';
 import { Box, Flexbox } from '../..';
-import { Props } from './ProgressBar.types';
 
-export default {
-  title: 'Molecules / ProgressBar',
+const meta: Meta<typeof ProgressBar> = {
   component: ProgressBar,
-} as Meta;
+  title: 'Molecules / ProgressBar',
+};
+
+export default meta;
 
 export const DefaultStory = {
   args: {
