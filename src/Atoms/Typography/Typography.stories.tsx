@@ -1,16 +1,17 @@
 import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
-
+import { Meta, StoryObj } from '@storybook/react';
 import { Flexbox, Typography } from '../..';
 import { Display } from '../../common/Display';
-import { Props } from './Typography.types';
 
-export default {
+const meta: Meta<typeof Typography> = {
   title: 'Atoms / Typography',
   component: Typography,
-} as Meta;
+};
 
-export const all = () => (
+export default meta;
+type Story = StoryObj<typeof Typography>;
+
+const AllComponent = () => (
   <Flexbox container direction="column">
     <Typography type="hero">Hero 48/52px extrabold (46/48px mobile)</Typography>
     <Typography type="title1">Title1 28/32px extrabold (24/28px mobile)</Typography>
@@ -23,7 +24,11 @@ export const all = () => (
   </Flexbox>
 );
 
-export const primary = () => (
+export const All: Story = {
+  render: () => <AllComponent />,
+};
+
+export const Primary = () => (
   <Display
     items={[
       { title: 'Primary default', component: <Typography>Primary text</Typography> },
@@ -47,7 +52,7 @@ export const primary = () => (
   />
 );
 
-export const secondary = () => (
+export const Secondary = () => (
   <Display
     items={[
       {
@@ -66,7 +71,7 @@ export const secondary = () => (
   />
 );
 
-export const tertiary = () => (
+export const Tertiary = () => (
   <Display
     items={[
       {
@@ -85,7 +90,7 @@ export const tertiary = () => (
   />
 );
 
-export const caption = () => (
+export const Caption = () => (
   <Display
     items={[
       {
@@ -104,7 +109,7 @@ export const caption = () => (
   />
 );
 
-export const title1 = {
+export const Title1 = {
   render: () => (
     <Display
       items={[
@@ -131,11 +136,9 @@ export const title1 = {
       ]}
     />
   ),
-
-  name: 'Title1',
 };
 
-export const title2 = {
+export const Title2 = {
   render: () => (
     <Display
       items={[
@@ -162,11 +165,9 @@ export const title2 = {
       ]}
     />
   ),
-
-  name: 'Title2',
 };
 
-export const title3 = {
+export const Title3 = {
   render: () => (
     <Display
       items={[
@@ -193,11 +194,9 @@ export const title3 = {
       ]}
     />
   ),
-
-  name: 'Title3',
 };
 
-export const hero = () => (
+export const Hero = () => (
   <Display
     items={[
       {
@@ -216,7 +215,7 @@ export const hero = () => (
   />
 );
 
-export const ariaAttributes = {
+export const AriaAttributes = {
   render: () => (
     <Display
       items={[
@@ -227,11 +226,9 @@ export const ariaAttributes = {
       ]}
     />
   ),
-
-  name: 'aria attributes',
 };
 
-export const colors = () => (
+export const Colors = () => (
   <Display
     items={[
       { title: 'Default', component: <Typography type="primary">Default</Typography> },
@@ -287,7 +284,7 @@ export const colors = () => (
   />
 );
 
-export const textAlign = () => (
+export const TextAlign = () => (
   <Flexbox container direction="column">
     <Typography type="primary">Default</Typography>
     <Typography type="primary" textAlign="center">
