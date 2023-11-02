@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
 import Slider from '.';
 import { Box, Input, Number, Typography } from '../..';
 import { Props } from './Slider.types';
 import { secondsToTimeString } from '../../common/utils';
 
-export default {
-  title: 'Molecules / Slider',
+const meta: Meta<typeof Slider> = {
   component: Slider,
-} as Meta;
+  title: 'Molecules / Slider',
+};
 
-const Template: StoryFn<Props> = (args) => {
+export default meta;
+type Story = StoryObj<typeof Slider>;
+
+const Template = (args: Props) => {
   const [value, setValue] = useState(args.defaultValue);
   const handleChange = (v: number) => setValue(v);
 
@@ -25,7 +28,7 @@ const Template: StoryFn<Props> = (args) => {
   );
 };
 
-export const Default = {
+export const Default: Story = {
   render: Template,
 
   args: {
@@ -36,7 +39,7 @@ export const Default = {
   },
 };
 
-export const MinimumValue = {
+export const MinimumValue: Story = {
   render: Template,
 
   args: {
@@ -47,7 +50,7 @@ export const MinimumValue = {
   },
 };
 
-export const MaximumValue = {
+export const MaximumValue: Story = {
   render: Template,
 
   args: {
@@ -58,7 +61,7 @@ export const MaximumValue = {
   },
 };
 
-const TemplateMultiColor: StoryFn<Props> = (args) => {
+const TemplateMultiColor = (args: Props) => {
   const [value, setValue] = useState(args.defaultValue!);
   const handleChange = (v: number) => setValue(v);
 
@@ -76,7 +79,7 @@ const TemplateMultiColor: StoryFn<Props> = (args) => {
   );
 };
 
-export const NegativeToPositive = {
+export const NegativeToPositive: Story = {
   render: TemplateMultiColor,
 
   args: {
@@ -87,7 +90,7 @@ export const NegativeToPositive = {
   },
 };
 
-export const SmallVariant = {
+export const SmallVariant: Story = {
   render: Template,
 
   args: {
@@ -96,7 +99,7 @@ export const SmallVariant = {
   },
 };
 
-const PlayerTemplate: StoryFn<Props> = (args) => {
+const PlayerTemplate = (args: Props) => {
   return (
     <Box p={20}>
       <Slider {...args} />
@@ -104,7 +107,7 @@ const PlayerTemplate: StoryFn<Props> = (args) => {
   );
 };
 
-export const PlayerVariant = {
+export const PlayerVariant: Story = {
   render: PlayerTemplate,
 
   args: {
@@ -119,7 +122,7 @@ export const PlayerVariant = {
   },
 };
 
-export const Disabled = {
+export const Disabled: Story = {
   render: Template,
 
   args: {
@@ -128,7 +131,7 @@ export const Disabled = {
   },
 };
 
-const TemplateControlled: StoryFn<Props> = (args) => {
+const TemplateControlled = (args: Props) => {
   const start = 50;
   const [value, setValue] = useState(start);
   const handleChange = (v: string) => setValue(parseInt(v, 10));
@@ -149,7 +152,7 @@ const TemplateControlled: StoryFn<Props> = (args) => {
   );
 };
 
-export const Controlled = {
+export const Controlled: Story = {
   render: TemplateControlled,
 
   args: {
