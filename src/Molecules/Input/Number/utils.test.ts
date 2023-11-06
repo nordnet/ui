@@ -1,4 +1,11 @@
-import { getNumberAsString, getStringAsNumber } from './utils';
+import { IntlShape } from 'react-intl';
+import {
+  getLocaleStringAsNumber,
+  getNumberAsLocaleString,
+  getNumberAsString,
+  getStringAsNumber,
+  getThousandsSeparator,
+} from './utils';
 
 describe('getNumberAsString', () => {
   test('int to string', () => {
@@ -61,5 +68,83 @@ describe('getStringAsNumber', () => {
   test('not a number', () => {
     const result = getStringAsNumber(false);
     expect(result).toEqual(0);
+  });
+});
+
+describe('getLocaleStringAsNumber', () => {
+  /** Mocked intl object, getLocaleStringAsNumber uses it to get decimal sign */
+  const intl = {
+    formatNumberToParts: () => [0, { value: ',' }],
+    formatNumber: () => [0, '-'],
+  };
+
+  test('should transform decimal sign', () => {
+    const value = '1 000,123';
+    const previousValue = '123';
+    const result = getLocaleStringAsNumber(value, previousValue, intl as unknown as IntlShape);
+    expect(result).toBe('1000.123');
+  });
+
+  test('should transform negative number', () => {
+    const value = '-1 000,123';
+    const previousValue = '';
+    const result = getLocaleStringAsNumber(value, previousValue, intl as unknown as IntlShape);
+    expect(result).toBe('-1000.123');
+  });
+
+  test('should use previous value if there are multiple decimal signs', () => {
+    const value = '1,000,123';
+    const previousValue = '999.123';
+    const result = getLocaleStringAsNumber(value, previousValue, intl as unknown as IntlShape);
+    expect(result).toBe(previousValue);
+  });
+
+  test('should use previous value if there are incorrect minus signs', () => {
+    const value = '1,000-123';
+    const previousValue = '999.123';
+    const result = getLocaleStringAsNumber(value, previousValue, intl as unknown as IntlShape);
+    expect(result).toBe(previousValue);
+  });
+
+  test('should ignore non-valid characters', () => {
+    const value = 'a1.00z0z,x1b23';
+    const previousValue = '1000.123';
+    const result = getLocaleStringAsNumber(value, previousValue, intl as unknown as IntlShape);
+    expect(result).toBe(previousValue);
+  });
+});
+
+describe('getNumberAsLocaleString', () => {
+  const intl: IntlShape = {
+    formatNumberToParts: () => [0, { value: ',' }],
+    formatNumber: (value: number) => value.toString().split('.').join(','),
+  } as unknown as IntlShape;
+
+  test('should return minus if only minus sign is provided', () => {
+    const result = getNumberAsLocaleString('-', intl);
+    expect(result).toBe('-');
+  });
+
+  test('should format a number with a decimal sign', () => {
+    const value = '-123.45';
+    const result = getNumberAsLocaleString(value, intl);
+    expect(result).toBe('-123,45'); // Formatted with the correct decimal sign.
+  });
+
+  test('should format a number with a Swedish locale decimal sign', () => {
+    const value = '-123.45';
+    const result = getNumberAsLocaleString(value, intl);
+    expect(result).toBe('-123,45'); // Formatted with the correct decimal sign.
+  });
+});
+
+describe('getThousandsSeparator', () => {
+  test('should return the thousands separator', () => {
+    /** Mocked intl object, needs to fake thousand separator */
+    const intl = {
+      formatNumberToParts: () => [0, { value: ' ' }],
+    } as unknown as IntlShape;
+    const result = getThousandsSeparator(intl);
+    expect(result).toBe(' ');
   });
 });

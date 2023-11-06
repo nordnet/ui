@@ -78,6 +78,53 @@ withDefaultValueUncontrolledBehaviour.story = {
   name: 'With default value (Uncontrolled behaviour)',
 };
 
+export const withThousandSeparatorValueControlled = () => {
+  const Component = () => {
+    const [value, setValue] = useState(10);
+    const changeHandler = (v: string) => {
+      const newValueAsNumber = parseInt(v, 10);
+      setValue(newValueAsNumber);
+    };
+
+    return (
+      <>
+        <Input.Number
+          id="insert-unique-id"
+          label="Label"
+          value={value}
+          onChange={changeHandler}
+          withThousandSeparator
+        />
+        <button type="button" onClick={() => setValue(value - 1)}>
+          Decrease
+        </button>
+        <button type="button" onClick={() => setValue(value + 1)}>
+          Increase
+        </button>
+      </>
+    );
+  };
+  return <Component />;
+};
+
+withThousandSeparatorValueControlled.story = {
+  name: 'With thousands separator (Controlled behaviour)',
+};
+
+export const withThousandSeparatorValueUncontrolled = () => (
+  <Input.Number
+    id="insert-unique-id"
+    label="Label"
+    defaultValue="15.2"
+    step="0.1"
+    withThousandSeparator
+  />
+);
+
+withThousandSeparatorValueUncontrolled.story = {
+  name: 'With thousands separator (Uncontrolled behaviour)',
+};
+
 export const withASmallerStep = () => (
   <Input.Number id="insert-unique-id" label="Label" defaultValue="15.200" step="0.005" />
 );

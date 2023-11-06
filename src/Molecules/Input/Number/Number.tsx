@@ -1,14 +1,20 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
-import { NumberComponent, Props, Variant } from './Number.types';
 import { Flexbox, FormField, OldIcon, Typography, VisuallyHidden } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
-import { getNumberAsString, getStringAsNumber } from './utils';
-import { assert, isNumber, isString, isUndefined } from '../../../common/utils';
-import adjustValue from './adjustValue';
 import { placeholderNormalization } from '../Text/Text';
+import { assert, isNumber, isString, isUndefined } from '../../../common/utils';
+import {
+  getLocaleStringAsNumber,
+  getNumberAsLocaleString,
+  getNumberAsString,
+  getStringAsNumber,
+  getThousandsSeparator,
+} from './utils';
+import adjustValue from './adjustValue';
+import { NumberComponent, NumberInputCursorPosition, Props, Variant } from './Number.types';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 const removeNonNumberCharacters = R.replace(/[^0-9 \u00A0\-.,]+/, '');
@@ -232,20 +238,17 @@ const NumberInput: NumberComponent & {
     value: controlledValueRaw,
     visuallyEmphasiseRequired,
     variant = 'normal',
+    withThousandSeparator = false,
   } = props;
   const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
+  const [previousInternalValue, setPreviousInternalValue] = useState(internalValue);
+  const [cursorPosition, setCursorPosition] = useState<NumberInputCursorPosition | null>(null);
+
   const intl = useIntl();
   // Quiet variant only works while there are noSteppers
   const showSteppers =
     noSteppers !== true && isUndefined(leftAddon) && isUndefined(rightAddon) && variant !== 'quiet';
   const placeholder = showSteppers ? undefined : placeholderRaw;
-  const handleValueChange = (val: string) => {
-    setInternalValue(val);
-
-    if (typeof onChange === 'function') {
-      onChange(val);
-    }
-  };
 
   const inputRef = useRef<HTMLInputElement>(null);
   const isControlled = isString(controlledValueRaw) || isNumber(controlledValueRaw);
@@ -254,6 +257,48 @@ const NumberInput: NumberComponent & {
     controlledValueRaw === '-' ? controlledValueRaw : getNumberAsString(controlledValueRaw);
   const controlledValue = isControlled && numberAsString;
   const value = isControlled ? controlledValue : internalValue;
+
+  useEffect(() => {
+    /**
+     * By default, when we modify the input field value, the caret jumps to the end of the input.
+     * This behavior is not desired, so we need to fix it.
+     */
+    if (withThousandSeparator && cursorPosition !== null) {
+      const { caret, element } = cursorPosition;
+
+      const separator = getThousandsSeparator(intl);
+      const valueString = getNumberAsLocaleString(value, intl);
+      const prevValueString = getNumberAsLocaleString(previousInternalValue, intl);
+
+      /**
+       * If a number was added and this resulted in adding a separator, move the caret to the right.
+       * Otherwise, leave it where it should be.
+       */
+      if (
+        value.length > previousInternalValue.length &&
+        valueString.split(separator).length > prevValueString.split(separator).length
+      ) {
+        element.selectionStart = caret + 1;
+        element.selectionEnd = caret + 1;
+      } else {
+        element.selectionStart = caret;
+        element.selectionEnd = caret;
+      }
+    }
+  }, [cursorPosition, withThousandSeparator, intl, value, previousInternalValue]);
+
+  const handleValueChange = (newValue: string) => {
+    const convertedValue: string = withThousandSeparator
+      ? getLocaleStringAsNumber(newValue, value, intl)
+      : newValue;
+
+    setPreviousInternalValue(internalValue);
+    setInternalValue(convertedValue);
+
+    if (typeof onChange === 'function') {
+      onChange(convertedValue);
+    }
+  };
 
   const sanitizedNumbers = {
     max: max ? getStringAsNumber(max) : undefined,
@@ -291,6 +336,12 @@ const NumberInput: NumberComponent & {
   };
 
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (withThousandSeparator)
+      setCursorPosition({
+        caret: e.target.selectionStart || 0,
+        element: e.target,
+      });
+
     handleValueChange(e.target.value);
   };
 
@@ -370,7 +421,9 @@ const NumberInput: NumberComponent & {
               size,
               step,
               success,
-              value: removeNonNumberCharacters(value),
+              value: withThousandSeparator
+                ? getNumberAsLocaleString(value, intl)
+                : removeNonNumberCharacters(value),
               inputMode,
               showSteppers,
               variant,

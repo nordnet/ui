@@ -60,6 +60,7 @@ export type Props = {
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
   width?: string | number;
   variant?: Variant;
+  withThousandSeparator?: boolean;
 };
 
 export type NumberComponent = React.FunctionComponent<Props>;
@@ -72,3 +73,8 @@ export type adjustValueProps = {
   originalValue: number;
   intl: IntlShape;
 };
+
+export interface NumberInputCursorPosition {
+  caret: number;
+  element: EventTarget & HTMLInputElement;
+}
