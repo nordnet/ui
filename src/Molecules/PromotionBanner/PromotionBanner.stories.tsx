@@ -1,10 +1,9 @@
 import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import styled from 'styled-components';
 
 import { Box, Button, CssGrid, Icon, Illustration, PageWrapper, PromotionBanner } from '../..';
 import { Display } from '../../common/Display';
-import { PromotionBannerProps as Props } from './PromotionBanner.types';
 
 import imageDesktop from './images/example_image_96px.jpg';
 import imageMobile from './images/example_image_64px.jpg';
@@ -13,13 +12,16 @@ const StyledBackground = styled.div`
   background-color: ${(p) => p.theme.color.background};
 `;
 
-export default {
-  title: 'Molecules / PromotionBanner',
+const meta: Meta<typeof PromotionBanner> = {
   component: PromotionBanner,
-} as Meta;
+  title: 'Molecules / PromotionBanner',
+};
 
-const Template: StoryFn<Props & { children: React.ReactNode }> = (args) => {
-  return (
+export default meta;
+type Story = StoryObj<typeof PromotionBanner>;
+
+export const DefaultUsage: Story = {
+  render: () => (
     <StyledBackground>
       <PromotionBanner
         title="Save with Nordnet One"
@@ -61,7 +63,13 @@ const Template: StoryFn<Props & { children: React.ReactNode }> = (args) => {
             }}
           >
             <CssGrid.Item area="account">
-              <PromotionBanner dismissible {...args} />
+              <PromotionBanner
+                dismissible
+                title="Save with Nordnet One"
+                description="Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One."
+                badgeContent={<Illustration.Robot64 color={(t) => t.color.menuAccent2} />}
+                mobileBadgeContent={<Icon.Robot32 color={(t) => t.color.menuAccent2} />}
+              />
             </CssGrid.Item>
             <CssGrid.Item area="values">
               <div style={{ background: 'green', height: '100px' }}>content</div>
@@ -82,23 +90,11 @@ const Template: StoryFn<Props & { children: React.ReactNode }> = (args) => {
         </Box>
       </PageWrapper>
     </StyledBackground>
-  );
+  ),
 };
 
-export const DefaultUsage = {
-  render: Template,
-
-  args: {
-    title: 'Save with Nordnet One',
-    description:
-      'Everything you need for a low fee, compare and choose the fund that suits you best in Nordnet One.',
-    badgeContent: <Illustration.Robot64 color={(t) => t.color.menuAccent2} />,
-    mobileBadgeContent: <Icon.Robot32 color={(t) => t.color.menuAccent2} />,
-  },
-};
-
-export const DifferentVariant = () => {
-  return (
+export const DifferentVariant: Story = {
+  render: () => (
     <>
       <Display
         horizontal
@@ -212,5 +208,5 @@ export const DifferentVariant = () => {
         ]}
       />
     </>
-  );
+  ),
 };

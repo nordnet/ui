@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
 import { Box, Button, Card, CardWithTitle, Flexbox, Pagination, Typography } from '../..';
 import { Display } from '../../common/Display';
@@ -109,20 +109,20 @@ const ButtonDisplays: React.FC<{
   );
 };
 
-const ButtonsWithIconsTemplate: StoryFn<{
-  iconOutline: boolean;
-  iconsPerPage: number;
-  preferredIconSizes: Record<string, number>;
-  buttonComponentNames: ButtonComponentKeyType[];
-  buttonDisabled: boolean;
-  buttonLoading: boolean;
-}> = ({
+const ButtonsWithIconsTemplate = ({
   iconOutline,
   iconsPerPage,
   preferredIconSizes,
   buttonComponentNames,
   buttonDisabled,
   buttonLoading,
+}: {
+  iconOutline: boolean;
+  iconsPerPage: number;
+  preferredIconSizes: Record<string, number>;
+  buttonComponentNames: ButtonComponentKeyType[];
+  buttonDisabled: boolean;
+  buttonLoading: boolean;
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const sliceStart = (currentPage - 1) * iconsPerPage;
@@ -167,28 +167,9 @@ const ButtonsWithIconsTemplate: StoryFn<{
   );
 };
 
-export const ButtonsWithIcons = {
-  render: ButtonsWithIconsTemplate,
-
-  args: {
-    iconOutline: false,
-    iconsPerPage: 5,
-    preferredIconSizes: {
-      small: 16,
-      medium: 16,
-      large: 16,
-    },
-    buttonComponentNames: [undefined, 'Pill', 'Icon'] as ButtonComponentKeyType[],
-    buttonDisabled: false,
-    buttonLoading: false,
-  },
-
-  name: 'Gallery view',
-};
-
-export default {
+const meta: Meta<typeof ButtonsWithIconsTemplate> = {
+  component: ButtonsWithIconsTemplate,
   title: 'Molecules / Button',
-  component: ButtonsWithIcons,
   argTypes: {
     buttonComponentNames: {
       options: [undefined, 'Pill', 'Icon'],
@@ -204,4 +185,25 @@ export default {
     },
     viewMode: 'story',
   },
-} as Meta;
+};
+
+export default meta;
+
+type Story = StoryObj<typeof ButtonsWithIconsTemplate>;
+
+export const GalleryView: Story = {
+  render: ButtonsWithIconsTemplate,
+
+  args: {
+    iconOutline: false,
+    iconsPerPage: 5,
+    preferredIconSizes: {
+      small: 16,
+      medium: 16,
+      large: 16,
+    },
+    buttonComponentNames: [undefined, 'Pill', 'Icon'] as ButtonComponentKeyType[],
+    buttonDisabled: false,
+    buttonLoading: false,
+  },
+};

@@ -20,9 +20,9 @@ import {
   getPercentage,
 } from './mocks';
 
-export default {
-  title: 'Molecules / CheckList',
+const meta: Meta<typeof CheckList> = {
   component: CheckList,
+  title: 'Molecules / CheckList',
   parameters: {
     viewport: {
       viewports: INITIAL_VIEWPORTS,
@@ -35,11 +35,12 @@ export default {
       </Provider>
     ),
   ],
-} as Meta<typeof CheckList>;
+};
 
-type CheckListComponentStory = StoryObj<typeof CheckList>;
+export default meta;
+type Story = StoryObj<typeof CheckList>;
 
-const CardContainer: React.FC<React.PropsWithChildren<{}>> = ({ children }) => (
+const CardContainer = ({ children }: { children: React.ReactNode }) => (
   <Card>
     <Box px={3} py={5} sm={{ p: 5 }}>
       {children}
@@ -217,7 +218,7 @@ export const FullExample = () => {
   );
 };
 
-export const FullExampleMobile: CheckListComponentStory = {
+export const FullExampleMobile: Story = {
   render: () => <FullExample />,
 
   parameters: {
@@ -227,7 +228,7 @@ export const FullExampleMobile: CheckListComponentStory = {
   },
 };
 
-export const FullExampleTablet: CheckListComponentStory = {
+export const FullExampleTablet: Story = {
   render: () => <FullExample />,
 
   parameters: {

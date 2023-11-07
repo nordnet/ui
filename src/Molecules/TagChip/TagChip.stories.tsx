@@ -1,22 +1,25 @@
 import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
 import { Box, Flexbox, Icon, Card } from '../..';
 import { TagChip } from './TagChip';
 import { Props } from './TagChip.types';
 
-export default {
-  title: 'Molecules / TagChip',
+const meta: Meta<typeof TagChip> = {
   component: TagChip,
-} as Meta;
+  title: 'Molecules / TagChip',
+};
 
-const Template: StoryFn<Props> = (args) => (
+export default meta;
+type Story = StoryObj<typeof TagChip>;
+
+const Template = (args: Props) => (
   <div style={{ padding: '10px', backgroundColor: 'white' }}>
     <TagChip {...args} />
   </div>
 );
 
-export const OnlyLabel = {
+export const OnlyLabel: Story = {
   render: Template,
 
   args: {
@@ -24,7 +27,7 @@ export const OnlyLabel = {
   },
 };
 
-export const BothIconAndLabel = {
+export const BothIconAndLabel: Story = {
   render: Template,
 
   args: {

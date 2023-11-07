@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { actions } from '@storybook/addon-actions';
 
 import { Box, Flexbox, Input, Modal } from '../../..';
@@ -7,14 +7,17 @@ import { Props } from './Phone.types';
 
 const { onChange } = actions('onBlur', 'onFocus', 'onChange');
 
-export default {
-  title: 'Molecules / Input / Phone',
+const meta: Meta<typeof Input.Phone> = {
   component: Input.Phone,
-} as Meta;
+  title: 'Molecules / Input / Phone',
+};
 
-const Template: StoryFn<Props> = (args) => <Input.Phone {...args} />;
+export default meta;
+type Story = StoryObj<typeof Input.Phone>;
 
-export const DefaultStory = {
+const Template = (args: Props) => <Input.Phone {...args} />;
+
+export const DefaultStory: Story = {
   render: Template,
 
   args: {
@@ -104,7 +107,7 @@ export const SortByCountry = () => (
   </Flexbox>
 );
 
-export const EnableSearchComponent = {
+export const EnableSearchComponent: Story = {
   render: Template,
 
   args: {
@@ -114,7 +117,7 @@ export const EnableSearchComponent = {
   },
 };
 
-export const WithLabelTooltipInsideModal = {
+export const WithLabelTooltipInsideModal: Story = {
   render: () => {
     const Example = () => {
       const [open, setOpen] = useState(true);
@@ -148,6 +151,4 @@ export const WithLabelTooltipInsideModal = {
     };
     return <Example />;
   },
-
-  name: 'With label tooltip inside modal',
 };
