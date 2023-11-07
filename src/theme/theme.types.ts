@@ -1,8 +1,6 @@
 import { A11yTheme, LightTheme, DarkTheme } from '@nordnet/design-tokens';
 
-type FeatureToggles = {
-  roundedCorners?: boolean;
-};
+type FeatureToggles = {};
 
 export type MediaQuery = string;
 /** Number of pixels */
@@ -12,7 +10,7 @@ export type ThemeConfig = {
   tokensTheme?: 'dark' | 'light' | 'a11y';
   featureToggles?: FeatureToggles;
 };
-type FeatureToggleKeys = keyof FeatureToggles;
+
 type Unit = {
   (times: number): number;
   toString: () => string;
@@ -1008,5 +1006,4 @@ export type Theme = {
   borderRadius8: string;
   borderRadius20: string;
   borderRadius100: string;
-  isFeatureEnabled: (feature: FeatureToggleKeys) => boolean;
 };
