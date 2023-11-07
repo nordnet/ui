@@ -10,18 +10,6 @@ const HEIGHT = {
   l: 10,
 };
 
-const PADDING_VERTICAL = {
-  s: 1,
-  m: 1,
-  l: 2,
-};
-
-const PADDING_HORIZONTAL = {
-  s: 3,
-  m: 3,
-  l: 4,
-};
-
 const PADDING_HORIZONTAL_ROUNDED_CORNERS = {
   s: 4,
   m: 5,
