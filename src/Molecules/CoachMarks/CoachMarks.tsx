@@ -1,4 +1,4 @@
-import React, { useCallback, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { usePopper } from 'react-popper';
 import FocusLock from 'react-focus-lock';
 import { Button, Flexbox, Icon, Typography } from '../..';
@@ -37,9 +37,14 @@ export const CoachMarks: Component = ({
   closeButton = false,
   hidePreviousButton = false,
   feedbackWidgetOnPage = false,
+  overrideStep,
 }) => {
-  const [currentStep, setCurrentStep] = useState(0);
+  const [currentStep, setCurrentStep] = useState(overrideStep ?? 0);
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
+
+  useEffect(() => {
+    if (overrideStep && overrideStep !== currentStep) setCurrentStep(overrideStep);
+  }, [overrideStep]);
 
   const {
     body,
@@ -55,6 +60,8 @@ export const CoachMarks: Component = ({
     prevText = prevTextFromProps,
     nextText = nextTextFromProps,
     nextDisabled = false,
+    hideNextButton = false,
+    hideDoneButton = false,
   } = steps[currentStep];
 
   const [popperElement, setPopperElement] = useState<HTMLElement | null>(null);
@@ -201,7 +208,7 @@ export const CoachMarks: Component = ({
                   </Flexbox>
                 )}
                 <Flexbox item flex="1 1 50%">
-                  {hasNextStep ? (
+                  {hasNextStep && !hideNextButton ? (
                     <Button
                       variant="primary"
                       onClick={handleStepForward}
@@ -211,9 +218,11 @@ export const CoachMarks: Component = ({
                       {nextText}
                     </Button>
                   ) : (
-                    <Button variant="primary" onClick={handleDone} fullWidth>
-                      {doneText}
-                    </Button>
+                    !hideDoneButton && (
+                      <Button variant="primary" onClick={handleDone} fullWidth>
+                        {doneText}
+                      </Button>
+                    )
                   )}
                 </Flexbox>
               </NavigationButtonsContainer>
