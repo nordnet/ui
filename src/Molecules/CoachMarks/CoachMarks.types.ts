@@ -23,6 +23,8 @@ type Step = {
   prevText?: string;
   nextText?: string;
   nextDisabled?: boolean;
+  hideNextButton?: boolean;
+  hideDoneButton?: boolean;
 };
 
 export type Props = {
@@ -42,6 +44,7 @@ export type Props = {
   closeButton?: boolean;
   hidePreviousButton?: boolean;
   feedbackWidgetOnPage?: boolean;
+  overrideStep?: number;
 };
 
 export type Component = React.FC<Props>;
