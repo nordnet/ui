@@ -8,14 +8,14 @@ export type ColsTrimmerProps = {
 type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // can move it to util types
 type ColorFn = (t: Theme) => Values<Theme['color']>;
 
-type Step = {
+export type Step = {
   /** Replaces OldIcon, title and content props */
   body?: React.ReactNode;
   content?: React.ReactNode;
   icon?: React.ReactNode;
   placement?: Placement;
-  referenceElement: HTMLElement;
-  title?: string;
+  referenceElement?: HTMLElement;
+  title?: string | React.ReactNode;
   isCircular?: boolean;
   backdropPadding?: string | number;
   px?: string | number;
@@ -45,6 +45,7 @@ export type Props = {
   hidePreviousButton?: boolean;
   feedbackWidgetOnPage?: boolean;
   overrideStep?: number;
+  hideMultiStepIndicator?: boolean;
 };
 
 export type Component = React.FC<Props>;
