@@ -15,9 +15,9 @@ const UserResearch96: React.FC<IllustrationProps> = (props) => {
     <IllustrationBase {...props} width={96} height={64}>
       <path
         fill={secondaryIllustrationColor}
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M48 7c26.51 0 48 21.396 48 47.79V55H.001L0 54.79C0 28.66 21.063 7.427 47.206 7.005L48 7Z"
-        clip-rule="evenodd"
+        clipRule="evenodd"
       />
       <path
         fill="currentColor"
@@ -25,9 +25,9 @@ const UserResearch96: React.FC<IllustrationProps> = (props) => {
       />
       <path
         fill="currentColor"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M58 23V9h28v14H58Zm2-12h24v10H60V11Z"
-        clip-rule="evenodd"
+        clipRule="evenodd"
       />
       <path
         fill="currentColor"
@@ -35,9 +35,9 @@ const UserResearch96: React.FC<IllustrationProps> = (props) => {
       />
       <path
         fill="currentColor"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M48 29a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
-        clip-rule="evenodd"
+        clipRule="evenodd"
       />
       <path
         fill="currentColor"
@@ -45,9 +45,9 @@ const UserResearch96: React.FC<IllustrationProps> = (props) => {
       />
       <path
         fill="currentColor"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M14 55V41h28v14H14Zm2-12h24v10H16V43Z"
-        clip-rule="evenodd"
+        clipRule="evenodd"
       />
     </IllustrationBase>
   );
