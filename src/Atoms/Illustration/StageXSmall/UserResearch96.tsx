@@ -1,8 +1,8 @@
 import React from 'react';
+import { useTheme } from 'styled-components';
 
 import { IllustrationBase, getColor } from '../IllustrationBase';
 import { IllustrationProps } from '../IllustrationBase.types';
-import { useTheme } from 'styled-components';
 
 const UserResearch96: React.FC<IllustrationProps> = (props) => {
   const theme = useTheme();
