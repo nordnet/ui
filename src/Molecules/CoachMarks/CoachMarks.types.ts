@@ -45,7 +45,7 @@ export type Props = {
   hidePreviousButton?: boolean;
   feedbackWidgetOnPage?: boolean;
   overrideStep?: number;
-  hideMultiStepIndicator?: boolean;
+  hideMultiStepIndicatorText?: boolean;
 };
 
 export type Component = React.FC<Props>;

@@ -44,7 +44,9 @@ export const CoachMarks: Component = ({
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
 
   useEffect(() => {
-    if (overrideStep && overrideStep !== currentStep) setCurrentStep(overrideStep);
+    if (overrideStep && overrideStep !== currentStep) {
+      setCurrentStep(overrideStep);
+    }
   }, [overrideStep]);
 
   const {
