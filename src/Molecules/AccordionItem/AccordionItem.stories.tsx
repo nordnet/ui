@@ -23,25 +23,25 @@ const ExampleContent = () => (
   </Typography>
 );
 
-export const defaultCollapsed = () => (
+export const DefaultCollapsed = () => (
   <AccordionItem title="Lemon drops and several cakes for two persons or more">
     <ExampleContent />
   </AccordionItem>
 );
 
-export const expanded = () => (
+export const Expanded = () => (
   <AccordionItem title="Låg CO₂ risk" expandedInitial>
     <ExampleContent />
   </AccordionItem>
 );
 
-export const withStyledContent = () => (
+export const WithStyledContent = () => (
   <StyledAccordionItem title="Sustainability score">
     <ExampleContent />
   </StyledAccordionItem>
 );
 
-export const controlled = () => {
+export const Controlled = () => {
   const ControlledExample = () => {
     const [expandedAreas, setExpandedAreas] = useState<string[]>([]);
 
@@ -100,19 +100,19 @@ export const TextOnlyContentIsFormattedCorrect = () => (
   </>
 );
 
-export const withChevron = () => (
+export const WithChevron = () => (
   <AccordionItem withChevron title="How much risk are you willing to take?">
     <ExampleContent />
   </AccordionItem>
 );
 
-export const withTypePrimaryAndChevron = () => (
+export const WithTypePrimaryAndChevron = () => (
   <AccordionItem type="primary" withChevron title="How much risk are you willing to take?">
     <ExampleContent />
   </AccordionItem>
 );
 
-export const withTypePrimaryAndChevronAndLeftBadgeIcon = () => (
+export const WithTypePrimaryAndChevronAndLeftBadgeIcon = () => (
   <AccordionItem
     disableFocusOutline
     disableBackgroundColor
@@ -130,7 +130,7 @@ export const withTypePrimaryAndChevronAndLeftBadgeIcon = () => (
   </AccordionItem>
 );
 
-export const withRightAddon = () => (
+export const WithRightAddon = () => (
   <AccordionItem
     title="How much risk are you willing to take?"
     rightAddon={<Button.Pill onClick={() => {}}>right addon</Button.Pill>}
@@ -139,13 +139,13 @@ export const withRightAddon = () => (
   </AccordionItem>
 );
 
-export const withDisabledBackgroundColor = () => (
+export const WithDisabledBackgroundColor = () => (
   <AccordionItem title="This card has its hover and focus color disabled" disableBackgroundColor>
     <ExampleContent />
   </AccordionItem>
 );
 
-export const withDifferentPaddings = () => (
+export const WithDifferentPaddings = () => (
   <>
     <AccordionItem title="This accordion item has a custom padding" p={10}>
       <ExampleContent />
@@ -175,7 +175,7 @@ export const withDifferentPaddings = () => (
   </>
 );
 
-export const disabled = () => (
+export const Disabled = () => (
   <>
     <AccordionItem title="This accordion item is disabled" disabled>
       <ExampleContent />

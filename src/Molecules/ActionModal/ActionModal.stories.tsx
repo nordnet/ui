@@ -55,7 +55,7 @@ export const Default = () => {
   );
 };
 
-export const withoutIllustration = () => {
+export const WithoutIllustration = () => {
   return (
     <StyledContainer>
       <ActionModal
@@ -72,7 +72,7 @@ export const withoutIllustration = () => {
   );
 };
 
-export const withConfirmButtonOnly = () => {
+export const WithConfirmButtonOnly = () => {
   return (
     <StyledContainer>
       <ActionModal

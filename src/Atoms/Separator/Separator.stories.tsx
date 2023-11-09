@@ -39,70 +39,70 @@ export default {
   },
 };
 
-export const separatorDefault = () => (
-  <Container>
-    <Separator />
-  </Container>
-);
+export const SeparatorDefault = {
+  render: () => (
+    <Container>
+      <Separator />
+    </Container>
+  ),
 
-separatorDefault.story = {
   name: 'Separator default',
 };
 
-export const separatorsWithDifferentColor = () => (
-  <Container>
-    <Separator color={(t) => t.color.negative} />
-    <br />
-    <Separator color={(t) => t.color.separator} />
-  </Container>
-);
+export const SeparatorsWithDifferentColor = {
+  render: () => (
+    <Container>
+      <Separator color={(t) => t.color.negative} />
+      <br />
+      <Separator color={(t) => t.color.separator} />
+    </Container>
+  ),
 
-separatorsWithDifferentColor.story = {
   name: 'Separators with different color',
 };
 
-export const separatorVertical = () => (
-  <Container>
-    <Separator vertical />
-  </Container>
-);
+export const SeparatorVertical = {
+  render: () => (
+    <Container>
+      <Separator vertical />
+    </Container>
+  ),
 
-separatorVertical.story = {
   name: 'Separator vertical',
 };
 
-export const separatorFullWidth = () => (
-  <StyledContainer>
-    <StyledCardWithTitle title="card with title">
-      separator
-      <Separator />
+export const SeparatorFullWidth = {
+  render: () => (
+    <StyledContainer>
+      <StyledCardWithTitle title="card with title">
+        separator
+        <Separator />
+        <br />
+        <br />
+        <br />
+        full width separator
+        <Separator fullWidth />
+      </StyledCardWithTitle>
       <br />
       <br />
       <br />
-      full width separator
-      <Separator fullWidth />
-    </StyledCardWithTitle>
-    <br />
-    <br />
-    <br />
-    <StyledCardWithTabs title="card with tabs" activeTabIndex={0}>
-      <CardWithTabs.Tab title="tab0">tab0</CardWithTabs.Tab>
-      <CardWithTabs.Tab title="tab1">tab1</CardWithTabs.Tab>
-    </StyledCardWithTabs>
-    <br />
-    <br />
-    <br />
-    <StyledCardWithTabs
-      title="card with tabs fullwidth separator"
-      activeTabIndex={0}
-      fullWidthSeparator
-    >
-      <CardWithTabs.Tab title="tab0">tab0</CardWithTabs.Tab>
-      <CardWithTabs.Tab title="tab1">tab1</CardWithTabs.Tab>
-    </StyledCardWithTabs>
-  </StyledContainer>
-);
+      <StyledCardWithTabs title="card with tabs" activeTabIndex={0}>
+        <CardWithTabs.Tab title="tab0">tab0</CardWithTabs.Tab>
+        <CardWithTabs.Tab title="tab1">tab1</CardWithTabs.Tab>
+      </StyledCardWithTabs>
+      <br />
+      <br />
+      <br />
+      <StyledCardWithTabs
+        title="card with tabs fullwidth separator"
+        activeTabIndex={0}
+        fullWidthSeparator
+      >
+        <CardWithTabs.Tab title="tab0">tab0</CardWithTabs.Tab>
+        <CardWithTabs.Tab title="tab1">tab1</CardWithTabs.Tab>
+      </StyledCardWithTabs>
+    </StyledContainer>
+  ),
 
-separatorFullWidth.story = {
   name: 'Separator fullWidth',
 };

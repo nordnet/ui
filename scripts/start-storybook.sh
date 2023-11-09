@@ -6,4 +6,4 @@ then
     export STORYBOOK_DIRECTORY=$1
 fi
 
-yarn storybook dev -p 6006
+npm run dev:start

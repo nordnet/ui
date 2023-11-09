@@ -1,57 +1,78 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
 import { Box, Flexbox, Icon, Card } from '../..';
 import { FilterChip } from './FilterChip';
 import { Props } from './FilterChip.types';
 
-export default {
-  title: 'Molecules / FilterChip',
+const meta: Meta<typeof FilterChip> = {
   component: FilterChip,
-} as Meta;
+  title: 'Molecules / FilterChip',
+};
+
+export default meta;
+type Story = StoryObj<typeof FilterChip>;
 
 const onChange = action('on change triggered');
 
-const Template: Story<Props> = (args) => (
+const Template = (args: Props) => (
   <div style={{ padding: '10px', backgroundColor: 'white' }}>
     <FilterChip {...args} />
   </div>
 );
 
-export const OnlyLabel = Template.bind({});
-OnlyLabel.args = {
-  label: 'Default',
+export const OnlyLabel: Story = {
+  render: Template,
+
+  args: {
+    label: 'Default',
+  },
 };
 
-export const OnlyIcon = Template.bind({});
-OnlyIcon.args = {
-  icon: <Icon.Money16 />,
+export const OnlyIcon: Story = {
+  render: Template,
+
+  args: {
+    icon: <Icon.Money16 />,
+  },
 };
 
-export const BothIconAndLabel = Template.bind({});
-BothIconAndLabel.args = {
-  icon: <Icon.MonthlySavings16 />,
-  label: 'Default',
+export const BothIconAndLabel: Story = {
+  render: Template,
+
+  args: {
+    icon: <Icon.MonthlySavings16 />,
+    label: 'Default',
+  },
 };
 
-export const AnotherIconAndLabel = Template.bind({});
-AnotherIconAndLabel.args = {
-  icon: <Icon.Money16 />,
-  label: 'Another label yqPomå',
+export const AnotherIconAndLabel: Story = {
+  render: Template,
+
+  args: {
+    icon: <Icon.Money16 />,
+    label: 'Another label yqPomå',
+  },
 };
 
-export const WithSelectedInitially = Template.bind({});
-WithSelectedInitially.args = {
-  icon: <Icon.Money16 />,
-  selectedInitially: true,
+export const WithSelectedInitially: Story = {
+  render: Template,
+
+  args: {
+    icon: <Icon.Money16 />,
+    selectedInitially: true,
+  },
 };
 
-export const WithDisabled = Template.bind({});
-WithDisabled.args = {
-  icon: <Icon.Money16 />,
-  label: 'disabled',
-  disabled: true,
+export const WithDisabled: Story = {
+  render: Template,
+
+  args: {
+    icon: <Icon.Money16 />,
+    label: 'disabled',
+    disabled: true,
+  },
 };
 
 export const SustainabilityVariant = () => (

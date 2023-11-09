@@ -36,511 +36,511 @@ export default {
   },
 };
 
-export const simpleCssGrid = () => (
-  <Grid.Container
-    // prettier-ignore
-    areas={[
-      ['header', 'header', 'header'],
-      ['menu', 'content', 'ads'],
-      ['footer', 'footer', 'footer'],
-    ]}
-    templateColumns={['1fr', '1fr', '1fr']}
-    templateRows={['1fr', '1fr', '1fr']}
-  >
-    <Grid.Item area="header">
-      <Content>Header</Content>
-    </Grid.Item>
-    <Grid.Item area="content">
-      <Content>Content</Content>
-    </Grid.Item>
-    <Grid.Item area="menu">
-      <Content>Menu</Content>
-    </Grid.Item>
-    <Grid.Item area="ads">
-      <Content>Ads</Content>
-    </Grid.Item>
-    <Grid.Item area="footer">
-      <Content>Footer</Content>
-    </Grid.Item>
-  </Grid.Container>
-);
+export const SimpleCssGrid = {
+  render: () => (
+    <Grid.Container
+      // prettier-ignore
+      areas={[
+        ['header', 'header', 'header'],
+        ['menu', 'content', 'ads'],
+        ['footer', 'footer', 'footer'],
+      ]}
+      templateColumns={['1fr', '1fr', '1fr']}
+      templateRows={['1fr', '1fr', '1fr']}
+    >
+      <Grid.Item area="header">
+        <Content>Header</Content>
+      </Grid.Item>
+      <Grid.Item area="content">
+        <Content>Content</Content>
+      </Grid.Item>
+      <Grid.Item area="menu">
+        <Content>Menu</Content>
+      </Grid.Item>
+      <Grid.Item area="ads">
+        <Content>Ads</Content>
+      </Grid.Item>
+      <Grid.Item area="footer">
+        <Content>Footer</Content>
+      </Grid.Item>
+    </Grid.Container>
+  ),
 
-simpleCssGrid.story = {
   name: 'Simple CssGrid',
 };
 
-export const cssGridWithCustomGutter = () => (
-  <Grid.Container
-    gutter={0}
-    // prettier-ignore
-    areas={[
-      ['left', 'top', 'sidebar'],
-      ['left', 'content', 'sidebar'],
-      ['left', 'content', 'sidebar'],
-    ]}
-    templateColumns={['1fr', '1fr', '1fr']}
-    templateRows={['1fr', '1fr', '1fr']}
-  >
-    <Grid.Item area="left">
-      <Content>Left</Content>
-    </Grid.Item>
-    <Grid.Item area="top">
-      <Content>Top</Content>
-    </Grid.Item>
-    <Grid.Item area="content">
-      <Content>Content</Content>
-    </Grid.Item>
-    <Grid.Item area="sidebar">
-      <Content>Sidebar</Content>
-    </Grid.Item>
-  </Grid.Container>
-);
-
-cssGridWithCustomGutter.story = {
-  name: 'CssGrid with custom gutter',
-};
-
-export const cssGridWithDifferentGutterOnDifferentScreenSizes = () => (
-  <Grid.Container
-    gutter={{ row: 5, col: 5 }}
-    templateColumns={['1fr', '1fr', '1fr']}
-    // prettier-ignore
-    templateRows={[
-      'auto',
-      'auto',
-    ]}
-    // prettier-ignore
-    areas={[
-      ['left', 'top', 'content'],
-      ['left', 'top', 'content'],
-    ]}
-    md={{
+export const CssGridWithCustomGutter = {
+  render: () => (
+    <Grid.Container
+      gutter={0}
       // prettier-ignore
-      templateRows: [
-        'auto',
-        'auto',
-      ],
-      templateColumns: ['1fr'],
-      areas: [
-        ['left', 'top', 'content'],
-        ['left', 'top', 'content'],
-      ],
-      gutter: { row: 0, col: 0 },
-    }}
-  >
-    <Grid.Item area="left">
-      <Content>Left</Content>
-    </Grid.Item>
-    <Grid.Item area="top">
-      <Content>
-        <ComponentThatDoesSomethingOnMount />
-      </Content>
-    </Grid.Item>
-    <Grid.Item area="content">
-      <Content>
-        <ComponentThatLogsRender>Content</ComponentThatLogsRender>
-      </Content>
-    </Grid.Item>
-    <Grid.Item area="non-existing">
-      <Content>something that doesn&apos;t exist</Content>
-    </Grid.Item>
-  </Grid.Container>
-);
-
-cssGridWithDifferentGutterOnDifferentScreenSizes.story = {
-  name: 'Different gutter on different screen sizes',
-};
-
-export const cssGridWithObjectAsGutterAndCustomSizedColumns = () => (
-  <Grid.Container
-    gutter={{ row: 6, col: 4 }}
-    templateColumns={['1fr', '2fr', '1fr']}
-    templateRows={['1fr', '1fr', '1fr']}
-    // prettier-ignore
-    areas={[
-      ['left', 'top', 'messages'],
-      ['left', 'top', 'order'],
-      ['left', 'top', 'sidebar'],
-      ['left', 'top', 'sidebar'],
-      ['left', 'content', 'sidebar'],
-    ]}
-  >
-    <Grid.Item area="left">
-      <Content>Left</Content>
-    </Grid.Item>
-    <Grid.Item area="top">
-      <Content>Top</Content>
-    </Grid.Item>
-    <Grid.Item area="content">
-      <Content>Content</Content>
-    </Grid.Item>
-    <Grid.Item area="messages">
-      <Content>Messages</Content>
-    </Grid.Item>
-    <Grid.Item area="order">
-      <Content>Order</Content>
-    </Grid.Item>
-    <Grid.Item area="sidebar">
-      <Content>Sidebar</Content>
-    </Grid.Item>
-  </Grid.Container>
-);
-
-cssGridWithObjectAsGutterAndCustomSizedColumns.story = {
-  name: 'CssGrid with object as gutter and custom sized columns',
-};
-
-export const cssGridWithCustomTemplateColumns = () => (
-  <Grid.Container
-    templateColumns={[3, 6, 3]}
-    templateRows={['1fr', '1fr', '1fr']}
-    // prettier-ignore
-    areas={[
-      ['left', 'top', 'sidebar'],
-      ['left', 'content', 'sidebar'],
-      ['left', 'content', 'sidebar'],
-    ]}
-  >
-    <Grid.Item area="left">
-      <Content>Left</Content>
-    </Grid.Item>
-    <Grid.Item area="top">
-      <Content>Top</Content>
-    </Grid.Item>
-    <Grid.Item area="content">
-      <Content>Content</Content>
-    </Grid.Item>
-    <Grid.Item area="sidebar">
-      <Content>Sidebar</Content>
-    </Grid.Item>
-  </Grid.Container>
-);
-
-cssGridWithCustomTemplateColumns.story = {
-  name: 'CssGrid with custom templateColumns',
-};
-
-export const cssGridWithDifferentLayoutsForDifferentScreenSizes = () => (
-  <Grid.Container
-    templateColumns={[6, 6]}
-    templateRows={['1fr', '1fr', '1fr']}
-    // prettier-ignore
-    areas={[
-      ['top', 'top'],
-      ['left', 'sidebar'],
-      ['content', 'sidebar'],
-    ]}
-    sm={{
-      templateColumns: [3, 6, 3],
-      templateRows: ['auto', '1fr', '1fr'],
-      // prettier-ignore
-      areas: [
+      areas={[
         ['left', 'top', 'sidebar'],
         ['left', 'content', 'sidebar'],
         ['left', 'content', 'sidebar'],
-      ],
-    }}
-  >
-    <Grid.Item area="left">
-      <Content>Left</Content>
-    </Grid.Item>
-    <Grid.Item area="top">
-      <Content>Top</Content>
-    </Grid.Item>
-    <Grid.Item area="content">
-      <Content>Content</Content>
-    </Grid.Item>
-    <Grid.Item area="sidebar">
-      <Content>Sidebar</Content>
-    </Grid.Item>
-  </Grid.Container>
-);
+      ]}
+      templateColumns={['1fr', '1fr', '1fr']}
+      templateRows={['1fr', '1fr', '1fr']}
+    >
+      <Grid.Item area="left">
+        <Content>Left</Content>
+      </Grid.Item>
+      <Grid.Item area="top">
+        <Content>Top</Content>
+      </Grid.Item>
+      <Grid.Item area="content">
+        <Content>Content</Content>
+      </Grid.Item>
+      <Grid.Item area="sidebar">
+        <Content>Sidebar</Content>
+      </Grid.Item>
+    </Grid.Container>
+  ),
 
-cssGridWithDifferentLayoutsForDifferentScreenSizes.story = {
+  name: 'CssGrid with custom gutter',
+};
+
+export const CssGridWithDifferentGutterOnDifferentScreenSizes = {
+  render: () => (
+    <Grid.Container
+      gutter={{ row: 5, col: 5 }}
+      templateColumns={['1fr', '1fr', '1fr']}
+      // prettier-ignore
+      templateRows={[
+        'auto',
+        'auto',
+      ]}
+      // prettier-ignore
+      areas={[
+        ['left', 'top', 'content'],
+        ['left', 'top', 'content'],
+      ]}
+      md={{
+        // prettier-ignore
+        templateRows: [
+          'auto',
+          'auto',
+        ],
+        templateColumns: ['1fr'],
+        areas: [
+          ['left', 'top', 'content'],
+          ['left', 'top', 'content'],
+        ],
+        gutter: { row: 0, col: 0 },
+      }}
+    >
+      <Grid.Item area="left">
+        <Content>Left</Content>
+      </Grid.Item>
+      <Grid.Item area="top">
+        <Content>
+          <ComponentThatDoesSomethingOnMount />
+        </Content>
+      </Grid.Item>
+      <Grid.Item area="content">
+        <Content>
+          <ComponentThatLogsRender>Content</ComponentThatLogsRender>
+        </Content>
+      </Grid.Item>
+      <Grid.Item area="non-existing">
+        <Content>something that doesn&apos;t exist</Content>
+      </Grid.Item>
+    </Grid.Container>
+  ),
+
+  name: 'Different gutter on different screen sizes',
+};
+
+export const CssGridWithObjectAsGutterAndCustomSizedColumns = {
+  render: () => (
+    <Grid.Container
+      gutter={{ row: 6, col: 4 }}
+      templateColumns={['1fr', '2fr', '1fr']}
+      templateRows={['1fr', '1fr', '1fr']}
+      // prettier-ignore
+      areas={[
+        ['left', 'top', 'messages'],
+        ['left', 'top', 'order'],
+        ['left', 'top', 'sidebar'],
+        ['left', 'top', 'sidebar'],
+        ['left', 'content', 'sidebar'],
+      ]}
+    >
+      <Grid.Item area="left">
+        <Content>Left</Content>
+      </Grid.Item>
+      <Grid.Item area="top">
+        <Content>Top</Content>
+      </Grid.Item>
+      <Grid.Item area="content">
+        <Content>Content</Content>
+      </Grid.Item>
+      <Grid.Item area="messages">
+        <Content>Messages</Content>
+      </Grid.Item>
+      <Grid.Item area="order">
+        <Content>Order</Content>
+      </Grid.Item>
+      <Grid.Item area="sidebar">
+        <Content>Sidebar</Content>
+      </Grid.Item>
+    </Grid.Container>
+  ),
+
+  name: 'CssGrid with object as gutter and custom sized columns',
+};
+
+export const CssGridWithCustomTemplateColumns = {
+  render: () => (
+    <Grid.Container
+      templateColumns={[3, 6, 3]}
+      templateRows={['1fr', '1fr', '1fr']}
+      // prettier-ignore
+      areas={[
+        ['left', 'top', 'sidebar'],
+        ['left', 'content', 'sidebar'],
+        ['left', 'content', 'sidebar'],
+      ]}
+    >
+      <Grid.Item area="left">
+        <Content>Left</Content>
+      </Grid.Item>
+      <Grid.Item area="top">
+        <Content>Top</Content>
+      </Grid.Item>
+      <Grid.Item area="content">
+        <Content>Content</Content>
+      </Grid.Item>
+      <Grid.Item area="sidebar">
+        <Content>Sidebar</Content>
+      </Grid.Item>
+    </Grid.Container>
+  ),
+
+  name: 'CssGrid with custom templateColumns',
+};
+
+export const CssGridWithDifferentLayoutsForDifferentScreenSizes = {
+  render: () => (
+    <Grid.Container
+      templateColumns={[6, 6]}
+      templateRows={['1fr', '1fr', '1fr']}
+      // prettier-ignore
+      areas={[
+        ['top', 'top'],
+        ['left', 'sidebar'],
+        ['content', 'sidebar'],
+      ]}
+      sm={{
+        templateColumns: [3, 6, 3],
+        templateRows: ['auto', '1fr', '1fr'],
+        // prettier-ignore
+        areas: [
+          ['left', 'top', 'sidebar'],
+          ['left', 'content', 'sidebar'],
+          ['left', 'content', 'sidebar'],
+        ],
+      }}
+    >
+      <Grid.Item area="left">
+        <Content>Left</Content>
+      </Grid.Item>
+      <Grid.Item area="top">
+        <Content>Top</Content>
+      </Grid.Item>
+      <Grid.Item area="content">
+        <Content>Content</Content>
+      </Grid.Item>
+      <Grid.Item area="sidebar">
+        <Content>Sidebar</Content>
+      </Grid.Item>
+    </Grid.Container>
+  ),
+
   name: 'CssGrid with different layouts for different screen sizes',
 };
 
-export const withMinMax = () => (
-  <Grid.Container
-    templateColumns={['1fr', 'minmax(30ch, 2fr)', '1fr']}
-    // prettier-ignore
-    areas={[
-      ['left', 'top', 'sidebar'],
-      ['left', 'content', 'sidebar'],
-    ]}
-  >
-    <Grid.Item area="left">
-      <Content>Left</Content>
-    </Grid.Item>
-    <Grid.Item area="top">
-      <Content>Top</Content>
-    </Grid.Item>
-    <Grid.Item area="content">
-      <Content>Content</Content>
-    </Grid.Item>
-    <Grid.Item area="sidebar">
-      <Content>Sidebar</Content>
-    </Grid.Item>
-  </Grid.Container>
-);
+export const WithMinMax = {
+  render: () => (
+    <Grid.Container
+      templateColumns={['1fr', 'minmax(30ch, 2fr)', '1fr']}
+      // prettier-ignore
+      areas={[
+        ['left', 'top', 'sidebar'],
+        ['left', 'content', 'sidebar'],
+      ]}
+    >
+      <Grid.Item area="left">
+        <Content>Left</Content>
+      </Grid.Item>
+      <Grid.Item area="top">
+        <Content>Top</Content>
+      </Grid.Item>
+      <Grid.Item area="content">
+        <Content>Content</Content>
+      </Grid.Item>
+      <Grid.Item area="sidebar">
+        <Content>Sidebar</Content>
+      </Grid.Item>
+    </Grid.Container>
+  ),
 
-withMinMax.story = {
   name: 'CssGrid with minmax()',
 };
 
-export const shownOnMdHiddenOnSmallScreens = () => (
-  <Grid.Container
-    templateColumns={['1fr', '1fr', '1fr']}
-    // prettier-ignore
-    templateRows={[
-      'auto',
-      'auto',
-    ]}
-    // prettier-ignore
-    areas={[
-      ['left', 'content', 'content'],
-      ['left', 'content', 'content'],
-    ]}
-    md={{
+export const ShownOnMdHiddenOnSmallScreens = {
+  render: () => (
+    <Grid.Container
+      templateColumns={['1fr', '1fr', '1fr']}
       // prettier-ignore
-      templateRows: [
+      templateRows={[
         'auto',
         'auto',
-      ],
-      templateColumns: ['1fr'],
-      areas: [['left'], ['top'], ['content']],
-    }}
-  >
-    <Grid.Item area="left">
-      <Content>Left</Content>
-    </Grid.Item>
-    <Grid.Item area="top">
-      <Content>
-        <ComponentThatDoesSomethingOnMount />
-      </Content>
-    </Grid.Item>
-    <Grid.Item area="content">
-      <Content>
-        <ComponentThatLogsRender>Content</ComponentThatLogsRender>
-      </Content>
-    </Grid.Item>
-    <Grid.Item area="non-existing">
-      <Content>something that doesn&apos;t exist</Content>
-    </Grid.Item>
-  </Grid.Container>
-);
+      ]}
+      // prettier-ignore
+      areas={[
+        ['left', 'content', 'content'],
+        ['left', 'content', 'content'],
+      ]}
+      md={{
+        // prettier-ignore
+        templateRows: [
+          'auto',
+          'auto',
+        ],
+        templateColumns: ['1fr'],
+        areas: [['left'], ['top'], ['content']],
+      }}
+    >
+      <Grid.Item area="left">
+        <Content>Left</Content>
+      </Grid.Item>
+      <Grid.Item area="top">
+        <Content>
+          <ComponentThatDoesSomethingOnMount />
+        </Content>
+      </Grid.Item>
+      <Grid.Item area="content">
+        <Content>
+          <ComponentThatLogsRender>Content</ComponentThatLogsRender>
+        </Content>
+      </Grid.Item>
+      <Grid.Item area="non-existing">
+        <Content>something that doesn&apos;t exist</Content>
+      </Grid.Item>
+    </Grid.Container>
+  ),
 
-shownOnMdHiddenOnSmallScreens.story = {
   name: 'Shown on md+, hidden on small screens',
 };
 
-export const shownOnSmallScreenSizesHiddenOnMd = () => (
-  <Grid.Container
-    templateColumns={['1fr', '1fr', '1fr']}
-    // prettier-ignore
-    templateRows={[
-      'auto',
-      'auto',
-    ]}
-    // prettier-ignore
-    areas={[
-      ['left', 'top', 'top'],
-      ['left', 'content', 'content'],
-    ]}
-    md={{
+export const ShownOnSmallScreenSizesHiddenOnMd = {
+  render: () => (
+    <Grid.Container
+      templateColumns={['1fr', '1fr', '1fr']}
       // prettier-ignore
-      templateRows: [
+      templateRows={[
         'auto',
         'auto',
-      ],
-      templateColumns: ['1fr'],
+      ]}
       // prettier-ignore
-      areas: [
-        ['left'],
-        ['content'],
-      ],
-    }}
-  >
-    <Grid.Item area="left">
-      <Content>Left</Content>
-    </Grid.Item>
-    <Grid.Item area="top">
-      <Content>
-        <ComponentThatDoesSomethingOnMount />
-      </Content>
-    </Grid.Item>
-    <Grid.Item area="content">
-      <Content>
-        <ComponentThatLogsRender>Content</ComponentThatLogsRender>
-      </Content>
-    </Grid.Item>
-    <Grid.Item area="non-existing">
-      <Content>something that doesn&apos;t exist</Content>
-    </Grid.Item>
-  </Grid.Container>
-);
+      areas={[
+        ['left', 'top', 'top'],
+        ['left', 'content', 'content'],
+      ]}
+      md={{
+        // prettier-ignore
+        templateRows: [
+          'auto',
+          'auto',
+        ],
+        templateColumns: ['1fr'],
+        // prettier-ignore
+        areas: [
+          ['left'],
+          ['content'],
+        ],
+      }}
+    >
+      <Grid.Item area="left">
+        <Content>Left</Content>
+      </Grid.Item>
+      <Grid.Item area="top">
+        <Content>
+          <ComponentThatDoesSomethingOnMount />
+        </Content>
+      </Grid.Item>
+      <Grid.Item area="content">
+        <Content>
+          <ComponentThatLogsRender>Content</ComponentThatLogsRender>
+        </Content>
+      </Grid.Item>
+      <Grid.Item area="non-existing">
+        <Content>something that doesn&apos;t exist</Content>
+      </Grid.Item>
+    </Grid.Container>
+  ),
 
-shownOnSmallScreenSizesHiddenOnMd.story = {
   name: 'Shown on small screen sizes, hidden on md+',
 };
 
-export const conditionallyHiddenGoodWayHidden = () => {
-  const isHidden = true;
-  return (
-    <Grid.Container
-      templateColumns={['1fr', '1fr', '1fr']}
-      // prettier-ignore
-      templateRows={isHidden ? [
-        'auto',
-        'auto',
-      ] : ['auto']}
-      areas={
+export const ConditionallyHiddenGoodWayHidden = {
+  render: () => {
+    const isHidden = true;
+    return (
+      <Grid.Container
+        templateColumns={['1fr', '1fr', '1fr']}
         // prettier-ignore
-        isHidden ?
-          [
-            ['left', 'top', 'top'],
-            ['left', 'content', 'content'],
-          ] :
-          [['left', 'content', 'content']]
-      }
-    >
-      <Grid.Item area="left">
-        <Content>Left</Content>
-      </Grid.Item>
-      <Grid.Item area="top">
-        <Content>
-          <ComponentThatDoesSomethingOnMount />
-        </Content>
-      </Grid.Item>
-      <Grid.Item area="content">
-        <Content>
-          <ComponentThatLogsRender>Content</ComponentThatLogsRender>
-        </Content>
-      </Grid.Item>
-    </Grid.Container>
-  );
-};
+        templateRows={isHidden ? [
+          'auto',
+          'auto',
+        ] : ['auto']}
+        areas={
+          // prettier-ignore
+          isHidden ?
+            [
+              ['left', 'top', 'top'],
+              ['left', 'content', 'content'],
+            ] :
+            [['left', 'content', 'content']]
+        }
+      >
+        <Grid.Item area="left">
+          <Content>Left</Content>
+        </Grid.Item>
+        <Grid.Item area="top">
+          <Content>
+            <ComponentThatDoesSomethingOnMount />
+          </Content>
+        </Grid.Item>
+        <Grid.Item area="content">
+          <Content>
+            <ComponentThatLogsRender>Content</ComponentThatLogsRender>
+          </Content>
+        </Grid.Item>
+      </Grid.Container>
+    );
+  },
 
-conditionallyHiddenGoodWayHidden.story = {
   name: 'Conditionally hidden: good way [hidden]',
 };
 
-export const conditionallyHiddenGoodWayShown = () => {
-  const isHidden = false;
-  return (
-    <Grid.Container
-      templateColumns={['1fr', '1fr', '1fr']}
-      templateRows={isHidden ? ['auto', 'auto'] : ['auto']}
-      areas={
-        // prettier-ignore
-        isHidden ?
-          [
-            ['left', 'top', 'top'],
-            ['left', 'content', 'content'],
-          ] :
-          [['left', 'content', 'content']]
-      }
-    >
-      <Grid.Item area="left">
-        <Content>Left</Content>
-      </Grid.Item>
-      <Grid.Item area="top">
-        <Content>
-          <ComponentThatDoesSomethingOnMount />
-        </Content>
-      </Grid.Item>
-      <Grid.Item area="content">
-        <Content>
-          <ComponentThatLogsRender>Content</ComponentThatLogsRender>
-        </Content>
-      </Grid.Item>
-    </Grid.Container>
-  );
-};
+export const ConditionallyHiddenGoodWayShown = {
+  render: () => {
+    const isHidden = false;
+    return (
+      <Grid.Container
+        templateColumns={['1fr', '1fr', '1fr']}
+        templateRows={isHidden ? ['auto', 'auto'] : ['auto']}
+        areas={
+          // prettier-ignore
+          isHidden ?
+            [
+              ['left', 'top', 'top'],
+              ['left', 'content', 'content'],
+            ] :
+            [['left', 'content', 'content']]
+        }
+      >
+        <Grid.Item area="left">
+          <Content>Left</Content>
+        </Grid.Item>
+        <Grid.Item area="top">
+          <Content>
+            <ComponentThatDoesSomethingOnMount />
+          </Content>
+        </Grid.Item>
+        <Grid.Item area="content">
+          <Content>
+            <ComponentThatLogsRender>Content</ComponentThatLogsRender>
+          </Content>
+        </Grid.Item>
+      </Grid.Container>
+    );
+  },
 
-conditionallyHiddenGoodWayShown.story = {
   name: 'Conditionally hidden: good way [shown]',
 };
 
-export const conditionallyHiddenWrongWayHidden = () => {
-  const isHidden = true;
-  return (
-    <Grid.Container
-      templateColumns={['1fr', '1fr', '1fr']}
-      templateRows={['auto', 'auto']}
-      areas={
-        // prettier-ignore
-        [
-          ['left', 'top', 'top'],
-          ['left', 'content', 'content'],
-        ]
-      }
-    >
-      <Grid.Item area="left">
-        <Content>Left</Content>
-      </Grid.Item>
-      {!isHidden && (
-        <Grid.Item area="top">
+export const ConditionallyHiddenWrongWayHidden = {
+  render: () => {
+    const isHidden = true;
+    return (
+      <Grid.Container
+        templateColumns={['1fr', '1fr', '1fr']}
+        templateRows={['auto', 'auto']}
+        areas={
+          // prettier-ignore
+          [
+            ['left', 'top', 'top'],
+            ['left', 'content', 'content'],
+          ]
+        }
+      >
+        <Grid.Item area="left">
+          <Content>Left</Content>
+        </Grid.Item>
+        {!isHidden && (
+          <Grid.Item area="top">
+            <Content>
+              <ComponentThatDoesSomethingOnMount />
+            </Content>
+          </Grid.Item>
+        )}
+        <Grid.Item area="content">
           <Content>
-            <ComponentThatDoesSomethingOnMount />
+            <ComponentThatLogsRender>Content</ComponentThatLogsRender>
           </Content>
         </Grid.Item>
-      )}
-      <Grid.Item area="content">
-        <Content>
-          <ComponentThatLogsRender>Content</ComponentThatLogsRender>
-        </Content>
-      </Grid.Item>
-    </Grid.Container>
-  );
-};
+      </Grid.Container>
+    );
+  },
 
-conditionallyHiddenWrongWayHidden.story = {
   name: 'Conditionally hidden: WRONG way [hidden]',
 };
 
-export const conditionallyHiddenWrongWayShown = () => {
-  const isHidden = false;
-  return (
-    <Grid.Container
-      templateColumns={['1fr', '1fr', '1fr']}
-      templateRows={['auto', 'auto']}
-      areas={
-        // prettier-ignore
-        [
-          ['left', 'top', 'top'],
-          ['left', 'content', 'content'],
-        ]
-      }
-    >
-      <Grid.Item area="left">
-        <Content>Left</Content>
-      </Grid.Item>
-      {!isHidden && (
-        <Grid.Item area="top">
+export const ConditionallyHiddenWrongWayShown = {
+  render: () => {
+    const isHidden = false;
+    return (
+      <Grid.Container
+        templateColumns={['1fr', '1fr', '1fr']}
+        templateRows={['auto', 'auto']}
+        areas={
+          // prettier-ignore
+          [
+            ['left', 'top', 'top'],
+            ['left', 'content', 'content'],
+          ]
+        }
+      >
+        <Grid.Item area="left">
+          <Content>Left</Content>
+        </Grid.Item>
+        {!isHidden && (
+          <Grid.Item area="top">
+            <Content>
+              <ComponentThatDoesSomethingOnMount />
+            </Content>
+          </Grid.Item>
+        )}
+        <Grid.Item area="content">
           <Content>
-            <ComponentThatDoesSomethingOnMount />
+            <ComponentThatLogsRender>Content</ComponentThatLogsRender>
           </Content>
         </Grid.Item>
-      )}
-      <Grid.Item area="content">
-        <Content>
-          <ComponentThatLogsRender>Content</ComponentThatLogsRender>
-        </Content>
-      </Grid.Item>
-    </Grid.Container>
-  );
-};
+      </Grid.Container>
+    );
+  },
 
-conditionallyHiddenWrongWayShown.story = {
-  name: 'Conditionally hidden: WRONG way [shown]',
+  name: 'Items with different placements',
 };
 
 const BgContent = styled.div`
   background-color: ${(p) => p.theme.color.background};
 `;
 
-export const itemsWithDifferentPlacements = () => {
+export const ItemsWithDifferentPlacements = () => {
   return (
     <Grid.Container
       templateColumns={['100px', '100px', '100px', '100px']}
@@ -589,8 +589,4 @@ export const itemsWithDifferentPlacements = () => {
       </Grid.Item>
     </Grid.Container>
   );
-};
-
-conditionallyHiddenWrongWayShown.story = {
-  name: 'Items with different placements',
 };

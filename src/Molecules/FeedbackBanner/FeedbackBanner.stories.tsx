@@ -1,28 +1,26 @@
 import React from 'react';
 import { HashRouter } from 'react-router-dom';
-import { Meta, Story } from '@storybook/react';
+import { Meta } from '@storybook/react';
 
 import { FeedbackBanner, Spinner } from '../..';
 import { Display } from '../../common/Display';
-import { FeedbackBannerProps as Props } from './FeedbackBanner.types';
 
-export default {
-  title: 'Molecules / FeedbackBanner',
+const meta: Meta<typeof FeedbackBanner> = {
   component: FeedbackBanner,
-} as Meta;
-
-const Template: Story<Props & { children: React.ReactNode }> = (args) => (
-  <FeedbackBanner {...args} />
-);
-
-export const DefaultUsage = Template.bind({});
-DefaultUsage.args = {
-  title: 'Feedback banner',
-  children:
-    'Feedback banner should be used within modules to display information that needs attention. Content is flexible, it can contain links and plain text.',
+  title: 'Molecules / FeedbackBanner',
 };
 
-export const displayingTitle = () => (
+export default meta;
+
+export const DefaultUsage = {
+  args: {
+    title: 'Feedback banner',
+    children:
+      'Feedback banner should be used within modules to display information that needs attention. Content is flexible, it can contain links and plain text.',
+  },
+};
+
+export const DisplayingTitle = () => (
   <Display
     items={[
       {
@@ -39,13 +37,13 @@ export const displayingTitle = () => (
   />
 );
 
-export const withoutIcon = () => (
+export const WithoutIcon = () => (
   <FeedbackBanner title="Disable icon" variant="info" withIcon={false}>
     This banner has no icon
   </FeedbackBanner>
 );
 
-export const differentVariant = () => (
+export const DifferentVariant = () => (
   <Display
     items={[
       {
@@ -84,7 +82,7 @@ export const differentVariant = () => (
   />
 );
 
-export const complexChildren = () => (
+export const ComplexChildren = () => (
   <HashRouter>
     <FeedbackBanner title="Warning, complex child" variant="warning">
       <>

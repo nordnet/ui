@@ -12,7 +12,7 @@ export default {
   },
 };
 
-export const DefaultUse = () => {
+const DefaultUseComponent = () => {
   const label = 'Extra information goes here';
 
   const [open, setOpen] = useState(false);
@@ -78,6 +78,7 @@ export const DefaultUse = () => {
     />
   );
 };
-DefaultUse.story = {
-  name: 'Default and common use cases',
+
+export const DefaultUse = {
+  render: () => <DefaultUseComponent />,
 };

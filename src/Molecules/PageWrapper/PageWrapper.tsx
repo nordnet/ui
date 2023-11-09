@@ -1,8 +1,9 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { Props } from './PageWrapper.types';
+import { BreakpointKey } from '../../theme/theme.types';
 
-const getBreakpointStyles = (size: string) => css`
+const getBreakpointStyles = (size: BreakpointKey) => css`
   ${(p) => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
     max-width: ${(p) => p.theme.breakpoints[size].size}px;
     padding: 0 ${(p) => p.theme.spacing.unit(p.theme.breakpoints[size].offset)}px;

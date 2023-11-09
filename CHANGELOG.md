@@ -1,3 +1,23 @@
+# [14.0.0-beta.1](https://github.com/nordnet/ui/compare/v13.5.2...v14.0.0-beta.1) (2023-11-09)
+
+
+### Bug Fixes
+
+* adjust if statement for releasing beta ([28196fd](https://github.com/nordnet/ui/commit/28196fd41c2ecf8b73b2db1cbc287d4b7cd8842a))
+
+
+### Features
+
+* migrate to npm and make storybook work again ([#1471](https://github.com/nordnet/ui/issues/1471)) ([b96cdb4](https://github.com/nordnet/ui/commit/b96cdb4c925e70ab4b63664e8b601a4b1680a738)), closes [#1472](https://github.com/nordnet/ui/issues/1472) [#1478](https://github.com/nordnet/ui/issues/1478)
+
+
+### BREAKING CHANGES
+
+* migrate from yarn to npm
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+Co-authored-by: Gustav Pettersson <gustav.pettersson@nordnet.se>
+
 ## [13.5.2](https://github.com/nordnet/ui/compare/v13.5.1...v13.5.2) (2023-11-07)
 
 
