@@ -38,5 +38,5 @@ jobs:
         run: npm run semantic-release
 
       - name: Beta Release
-        if: ${{ github.ref == 'refs/heads/master' }}
+        if: ${{ github.ref == 'refs/heads/beta' }}
         run: npm run semantic-release
