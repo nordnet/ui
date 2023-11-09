@@ -61,14 +61,13 @@ const StyledButton = styled(NormalizedElements.Button)<
   border: none;
   background: transparent;
   overflow: visible;
-
   -webkit-appearance: none !important; /* stylelint-disable-line property-no-vendor-prefix */
+
   /* resetting button styles end */
 
   ${(p) => (p.$underlined ? `text-decoration: underline;` : ``)};
 
   cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
-
   font-weight: inherit; /* remove when and if typography is handled inside the component */
 `;
 

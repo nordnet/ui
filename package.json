@@ -23,6 +23,7 @@
     "lint:ts": "tsc",
     "lint": "npm run lint:js && npm run lint:css && npm run lint:ts",
     "format": "prettier --write 'src/**/*.{ts,tsx}'",
+    "format:css": "stylelint --fix './src/**/*.{ts,tsx}'",
     "babel:esm": "NODE_ENV=production BABEL_ENV=esm babel -d dist/esm src/ --extensions=.ts,.tsx --copy-files",
     "babel:cjs": "NODE_ENV=production babel -d dist/cjs src/ --extensions=.ts,.tsx --copy-files",
     "build": "rimraf dist && npm run babel:esm && npm run babel:cjs && tsc && rimraf dist/**/*.types.js dist/**/*.d.js dist/**/*.stories.js",
@@ -119,6 +120,7 @@
     "jest-styled-components": "^7.0.5",
     "lint-staged": "11.2.6",
     "lodash": "^4.17.21",
+    "postcss-styled-syntax": "^0.5.0",
     "prettier": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -130,10 +132,8 @@
     "storybook": "7.5.1",
     "storybook-addon-intl": "3.2.0",
     "storybook-dark-mode": "^3.0.1",
-    "stylelint": "15.10.3",
-    "stylelint-config-recommended": "2.2.0",
-    "stylelint-config-styled-components": "0.1.1",
-    "stylelint-processor-styled-components": "1.10.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0",
     "typescript": "^5.2.2"
   },
   "resolutions": {

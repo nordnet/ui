@@ -29,7 +29,7 @@ const Knob = styled(Flexbox)<KnobWidth>`
   box-sizing: border-box;
   transition: transform 0.6s cubic-bezier(0.18, 0.9, 0.35, 1.15);
   background-color: ${(p) => p.theme.color.bubbleBackground};
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 2px rgb(0 0 0 / 3%);
 `;
 
 const Track = styled.span<Pick<DataToggleProps, 'width'>>`
@@ -61,6 +61,7 @@ const Button = styled(NormalizedElements.Button)<Pick<DataToggleProps, 'width'> 
   background: none;
   padding: 0;
   border: 0;
+
   &[aria-checked='true'] {
     ${Knob} {
       transform: translate(
