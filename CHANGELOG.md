@@ -1,3 +1,30 @@
+# [14.0.0](https://github.com/nordnet/ui/compare/v13.5.2...v14.0.0) (2023-11-09)
+
+
+### Bug Fixes
+
+* Adapt coachmarks to feedback widget behaviour ([#1479](https://github.com/nordnet/ui/issues/1479)) ([6da8d83](https://github.com/nordnet/ui/commit/6da8d83f52fa5d5279b0fcc24c0ed2ada0a3c326))
+
+
+### Features
+
+* migrate to npm ([#1471](https://github.com/nordnet/ui/issues/1471)) ([#1481](https://github.com/nordnet/ui/issues/1481)) ([ed5c011](https://github.com/nordnet/ui/commit/ed5c0112945ce7705681ac66ddee320b5d145f35)), closes [/storybook.js.org/docs/react/migration-guide#csf2-to-csf3](https://github.com//storybook.js.org/docs/react/migration-guide/issues/csf2-to-csf3)
+
+
+### Reverts
+
+* Revert "fix: Adapt coachmarks to feedback widget behaviour (#1479)" (#1484) ([6a43688](https://github.com/nordnet/ui/commit/6a43688c8549855fd562ff81578671611c50bb14)), closes [#1479](https://github.com/nordnet/ui/issues/1479) [#1484](https://github.com/nordnet/ui/issues/1484)
+
+
+### BREAKING CHANGES
+
+* migrate yarn to npm
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+Co-authored-by: Gustav Pettersson <gustav.pettersson@nordnet.se>
+Co-authored-by: semantic-release-bot <semantic-release-bot@martynus.net>
+- Split Github actions workflow file
+
 # [14.0.0-beta.1](https://github.com/nordnet/ui/compare/v13.5.2...v14.0.0-beta.1) (2023-11-09)
 
 
