@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 import { usePopper } from 'react-popper';
 import FocusLock from 'react-focus-lock';
 import { Button, Flexbox, Icon, Typography } from '../..';
@@ -37,17 +37,9 @@ export const CoachMarks: Component = ({
   closeButton = false,
   hidePreviousButton = false,
   feedbackWidgetOnPage = false,
-  hideMultiStepIndicatorText = false,
-  overrideStep,
 }) => {
-  const [currentStep, setCurrentStep] = useState(overrideStep ?? 0);
+  const [currentStep, setCurrentStep] = useState(0);
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
-
-  useEffect(() => {
-    if (overrideStep && overrideStep !== currentStep) {
-      setCurrentStep(overrideStep);
-    }
-  }, [overrideStep]);
 
   const {
     body,
@@ -63,8 +55,6 @@ export const CoachMarks: Component = ({
     prevText = prevTextFromProps,
     nextText = nextTextFromProps,
     nextDisabled = false,
-    hideNextButton = false,
-    hideDoneButton = false,
   } = steps[currentStep];
 
   const [popperElement, setPopperElement] = useState<HTMLElement | null>(null);
@@ -92,7 +82,7 @@ export const CoachMarks: Component = ({
   const hasNextStep = currentStep + 1 < steps.length;
   const path = referenceElementRect
     ? makeBackdropPath(referenceElementRect, Number(highlightBoxPadding), isCircular, px, py)
-    : undefined;
+    : '';
 
   useSafeLayoutEffect(() => {
     if (referenceElement) {
@@ -194,8 +184,7 @@ export const CoachMarks: Component = ({
                   </Button>
                 </Flexbox>
               ) : (
-                hasMultipleSteps &&
-                !hideMultiStepIndicatorText && (
+                hasMultipleSteps && (
                   <Flexbox item>
                     <Typography type="secondary" color={(t) => t.color.bubbleSecondaryText}>
                       {`${currentStep + 1} ${multiStepIndicatorText} ${steps.length}`}
@@ -212,7 +201,7 @@ export const CoachMarks: Component = ({
                   </Flexbox>
                 )}
                 <Flexbox item flex="1 1 50%">
-                  {hasNextStep && !hideNextButton ? (
+                  {hasNextStep ? (
                     <Button
                       variant="primary"
                       onClick={handleStepForward}
@@ -222,11 +211,9 @@ export const CoachMarks: Component = ({
                       {nextText}
                     </Button>
                   ) : (
-                    !hideDoneButton && (
-                      <Button variant="primary" onClick={handleDone} fullWidth>
-                        {doneText}
-                      </Button>
-                    )
+                    <Button variant="primary" onClick={handleDone} fullWidth>
+                      {doneText}
+                    </Button>
                   )}
                 </Flexbox>
               </NavigationButtonsContainer>
@@ -238,11 +225,9 @@ export const CoachMarks: Component = ({
             </CloseButton>
           )}
         </StyledBubble>
-        {path && (
-          <SVG>
-            <path d={path} />
-          </SVG>
-        )}
+        <SVG>
+          <path d={path} />
+        </SVG>
       </FocusLock>
     </>
   ) : null;
