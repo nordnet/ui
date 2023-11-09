@@ -37,7 +37,7 @@ export const CoachMarks: Component = ({
   closeButton = false,
   hidePreviousButton = false,
   feedbackWidgetOnPage = false,
-  hideMultiStepIndicator = false,
+  hideMultiStepIndicatorText = false,
   overrideStep,
 }) => {
   const [currentStep, setCurrentStep] = useState(overrideStep ?? 0);
@@ -193,7 +193,7 @@ export const CoachMarks: Component = ({
                 </Flexbox>
               ) : (
                 hasMultipleSteps &&
-                !hideMultiStepIndicator && (
+                !hideMultiStepIndicatorText && (
                   <Flexbox item>
                     <Typography type="secondary" color={(t) => t.color.bubbleSecondaryText}>
                       {`${currentStep + 1} ${multiStepIndicatorText} ${steps.length}`}
