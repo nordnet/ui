@@ -483,7 +483,7 @@ export const overrideStep = () => {
                 title: 'Step 1',
                 content: (
                   <div>
-                    Click the button if you're too smart for steps 1-3.
+                    Click the button if youre too smart for steps 1-3.
                     <Button onClick={() => setCurrentStep(3)}>Skip</Button>
                   </div>
                 ),
