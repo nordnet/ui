@@ -168,6 +168,7 @@ describe('Double date picker', () => {
   });
 
   // TODO: Re-implement this test when arrow navigation is added.
+  // eslint-disable-next-line jest/no-disabled-tests
   it.skip('select a range by using arrow keys', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
@@ -243,6 +244,7 @@ describe('Double date picker', () => {
   });
 
   // TODO: Re-implement this test when arrow navigation is added.
+  // eslint-disable-next-line jest/no-disabled-tests
   it.skip('select a range of one day by using arrow keys', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
@@ -349,6 +351,7 @@ describe('Double date picker', () => {
   });
 
   // TODO: Re-implement this test when arrow navigation is added.
+  // eslint-disable-next-line jest/no-disabled-tests
   it.skip('not select a range of one day by using arrow keys', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];

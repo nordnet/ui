@@ -127,44 +127,39 @@ const content = (
   </List>
 );
 
-export const DefaultStory = () => <FadedScroll maxHeight={40}>{content}</FadedScroll>;
-
-DefaultStory.story = {
+export const DefaultStory = {
+  render: () => <FadedScroll maxHeight={40}>{content}</FadedScroll>,
   name: 'Default, using maxHeight prop',
 };
 
-export const WithAutoHeightOfScrollableArea = () => (
-  <FadedScrollWithHeightDesktopOnly>{content}</FadedScrollWithHeightDesktopOnly>
-);
+export const WithAutoHeightOfScrollableArea = {
+  render: () => <FadedScrollWithHeightDesktopOnly>{content}</FadedScrollWithHeightDesktopOnly>,
 
-WithAutoHeightOfScrollableArea.story = {
   name: 'With height of scrollable area being whatever is available',
 };
 
-export const WithHeightOfFadeChanged = () => (
-  <FadedScroll fadeHeight={5} maxHeight={45}>
-    {content}
-  </FadedScroll>
-);
+export const WithHeightOfFadeChanged = {
+  render: () => (
+    <FadedScroll fadeHeight={5} maxHeight={45}>
+      {content}
+    </FadedScroll>
+  ),
 
-WithHeightOfFadeChanged.story = {
   name: 'With height of fade changed',
 };
 
-export const WithMobileFadeEnabled = () => (
-  <FadedScrollWithHeight enableMobileFade>{content}</FadedScrollWithHeight>
-);
+export const WithMobileFadeEnabled = {
+  render: () => <FadedScrollWithHeight enableMobileFade>{content}</FadedScrollWithHeight>,
 
-WithMobileFadeEnabled.story = {
   name: 'With mobile fade enabled',
 };
 
-export const WithTopFadeDisabled = () => (
-  <FadedScroll maxHeight={45} disableTopFade>
-    {content}
-  </FadedScroll>
-);
+export const WithTopFadeDisabled = {
+  render: () => (
+    <FadedScroll maxHeight={45} disableTopFade>
+      {content}
+    </FadedScroll>
+  ),
 
-WithTopFadeDisabled.story = {
   name: 'With top fade disabled',
 };

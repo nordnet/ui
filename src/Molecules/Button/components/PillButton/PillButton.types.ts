@@ -6,7 +6,7 @@ export type PillButtonProps = {
    */
   size?: 's' | 'm' | 'l';
   as?: any;
-  children: React.ReactChild | React.ReactChild[];
+  children: React.ReactNode;
   className?: string;
   /** @default true */
   delayLoadingSpinnerAnimation?: boolean;

@@ -30,151 +30,146 @@ export default {
   title: 'Organisms / CardWithTabs',
 };
 
-export const withInitialActiveTabIndex = () => (
-  <CardWithTabs
-    title={
-      <Typography type="title3" as="h2">
-        Title for the card
-      </Typography>
-    }
-    initialActiveTabIndex={1}
-  >
-    <CardWithTabs.Tab title="Tab title 1" onTitleClick={action('Clicked title1')}>
-      1
-    </CardWithTabs.Tab>
-    <CardWithTabs.Tab title="Tab title 2">2</CardWithTabs.Tab>
-  </CardWithTabs>
-);
+export const WithInitialActiveTabIndex = {
+  render: () => (
+    <CardWithTabs
+      title={
+        <Typography type="title3" as="h2">
+          Title for the card
+        </Typography>
+      }
+      initialActiveTabIndex={1}
+    >
+      <CardWithTabs.Tab title="Tab title 1" onTitleClick={action('Clicked title1')}>
+        1
+      </CardWithTabs.Tab>
+      <CardWithTabs.Tab title="Tab title 2">2</CardWithTabs.Tab>
+    </CardWithTabs>
+  ),
 
-withInitialActiveTabIndex.story = {
   name: 'with initialActiveTabIndex',
 };
 
-export const withVariantBig = () => (
-  <CardWithTabs variant="big" title="Title for the card" initialActiveTabIndex={0}>
-    <CardWithTabs.Tab title="Tab title 1" onTitleClick={action('Clicked title1')}>
-      1
-    </CardWithTabs.Tab>
-    <CardWithTabs.Tab title="Tab title 2" onTitleClick={action('Clicked title2')}>
-      2
-    </CardWithTabs.Tab>
-  </CardWithTabs>
-);
-
-withVariantBig.story = {
-  name: 'With variant big',
+export const WithVariantBig = {
+  render: () => (
+    <CardWithTabs variant="big" title="Title for the card" initialActiveTabIndex={0}>
+      <CardWithTabs.Tab title="Tab title 1" onTitleClick={action('Clicked title1')}>
+        1
+      </CardWithTabs.Tab>
+      <CardWithTabs.Tab title="Tab title 2" onTitleClick={action('Clicked title2')}>
+        2
+      </CardWithTabs.Tab>
+    </CardWithTabs>
+  ),
 };
 
-export const controlledBehaviour = () => {
-  const ControlledComponent = () => {
-    const [active, setActive] = useState(0);
+export const ControlledBehaviour = {
+  render: () => {
+    const ControlledComponent = () => {
+      const [active, setActive] = useState(0);
 
-    return (
-      <>
-        <button type="button" onClick={() => setActive(active === 0 ? 1 : 0)}>
-          Change state outside
-        </button>
-        <CardWithTabs
-          title={
-            <Typography type="title3" as="h2">
-              Title for the card
-            </Typography>
-          }
-          activeTabIndex={active}
-        >
-          <CardWithTabs.Tab title="Tab title 1" onTitleClick={() => setActive(0)}>
-            Tab content 1
-          </CardWithTabs.Tab>
-          <CardWithTabs.Tab title="Tab title 2" onTitleClick={() => setActive(1)}>
-            Tab content 2
-          </CardWithTabs.Tab>
-        </CardWithTabs>
-      </>
-    );
-  };
-  return <ControlledComponent />;
+      return (
+        <>
+          <button type="button" onClick={() => setActive(active === 0 ? 1 : 0)}>
+            Change state outside
+          </button>
+          <CardWithTabs
+            title={
+              <Typography type="title3" as="h2">
+                Title for the card
+              </Typography>
+            }
+            activeTabIndex={active}
+          >
+            <CardWithTabs.Tab title="Tab title 1" onTitleClick={() => setActive(0)}>
+              Tab content 1
+            </CardWithTabs.Tab>
+            <CardWithTabs.Tab title="Tab title 2" onTitleClick={() => setActive(1)}>
+              Tab content 2
+            </CardWithTabs.Tab>
+          </CardWithTabs>
+        </>
+      );
+    };
+    return <ControlledComponent />;
+  },
 };
 
-controlledBehaviour.story = {
-  name: 'Controlled behaviour',
-};
+export const IntegrationWithTypographyAndExtraSpaceInside = {
+  render: () => (
+    <CardWithTabs
+      title={
+        <Typography type="title3" as="h2">
+          Title for the card
+        </Typography>
+      }
+    >
+      <CardWithTabs.Tab title="Tab title 1">
+        <Box pt={4} px={5} pb={5}>
+          {mockedText}
+        </Box>
+      </CardWithTabs.Tab>
+      <CardWithTabs.Tab title={<span style={{ color: 'red' }}>Custom title component</span>}>
+        <Box pt={4} px={5} pb={5}>
+          Some stuff for Tab 2
+        </Box>
+      </CardWithTabs.Tab>
+    </CardWithTabs>
+  ),
 
-export const integrationWithTypographyAndExtraSpaceInside = () => (
-  <CardWithTabs
-    title={
-      <Typography type="title3" as="h2">
-        Title for the card
-      </Typography>
-    }
-  >
-    <CardWithTabs.Tab title="Tab title 1">
-      <Box pt={4} px={5} pb={5}>
-        {mockedText}
-      </Box>
-    </CardWithTabs.Tab>
-    <CardWithTabs.Tab title={<span style={{ color: 'red' }}>Custom title component</span>}>
-      <Box pt={4} px={5} pb={5}>
-        Some stuff for Tab 2
-      </Box>
-    </CardWithTabs.Tab>
-  </CardWithTabs>
-);
-
-integrationWithTypographyAndExtraSpaceInside.story = {
   name: 'Integration: with Typography and extra space inside',
 };
 
-export const integrationWithFadedScroll = () => (
-  <CardWithTabs
-    title={
-      <Typography type="title3" as="h2">
-        Title for the card
-      </Typography>
-    }
-  >
-    <CardWithTabs.Tab title="Tab title 1">
-      <FadedScroll maxHeight={20}>
-        <Box pt={4} px={5}>
-          {mockedText}
+export const IntegrationWithFadedScroll = {
+  render: () => (
+    <CardWithTabs
+      title={
+        <Typography type="title3" as="h2">
+          Title for the card
+        </Typography>
+      }
+    >
+      <CardWithTabs.Tab title="Tab title 1">
+        <FadedScroll maxHeight={20}>
+          <Box pt={4} px={5}>
+            {mockedText}
+          </Box>
+        </FadedScroll>
+      </CardWithTabs.Tab>
+      <CardWithTabs.Tab title="Tab title 2">
+        <Box pt={4} px={5} pb={5}>
+          Some stuff for Tab 2
         </Box>
-      </FadedScroll>
-    </CardWithTabs.Tab>
-    <CardWithTabs.Tab title="Tab title 2">
-      <Box pt={4} px={5} pb={5}>
-        Some stuff for Tab 2
-      </Box>
-    </CardWithTabs.Tab>
-  </CardWithTabs>
-);
+      </CardWithTabs.Tab>
+    </CardWithTabs>
+  ),
 
-integrationWithFadedScroll.story = {
   name: 'Integration: with FadedScroll',
 };
 
-export const integrationWithFadedScrollWithHeightFromParent = () => (
-  <HeightOnCardWithTabs
-    title={
-      <Typography type="title3" as="h2">
-        Title for the card
-      </Typography>
-    }
-  >
-    <CardWithTabs.Tab title="Tab title 1">
-      <FadedScroll>
-        <Box pt={4} px={5}>
-          {mockedText}
+export const IntegrationWithFadedScrollWithHeightFromParent = {
+  render: () => (
+    <HeightOnCardWithTabs
+      title={
+        <Typography type="title3" as="h2">
+          Title for the card
+        </Typography>
+      }
+    >
+      <CardWithTabs.Tab title="Tab title 1">
+        <FadedScroll>
+          <Box pt={4} px={5}>
+            {mockedText}
+          </Box>
+        </FadedScroll>
+      </CardWithTabs.Tab>
+      <CardWithTabs.Tab title="Tab title 2">
+        <Box pt={4} px={5} pb={5}>
+          Some stuff for Tab 2
         </Box>
-      </FadedScroll>
-    </CardWithTabs.Tab>
-    <CardWithTabs.Tab title="Tab title 2">
-      <Box pt={4} px={5} pb={5}>
-        Some stuff for Tab 2
-      </Box>
-    </CardWithTabs.Tab>
-  </HeightOnCardWithTabs>
-);
+      </CardWithTabs.Tab>
+    </HeightOnCardWithTabs>
+  ),
 
-integrationWithFadedScrollWithHeightFromParent.story = {
-  name:
-    'Integration: with FadedScroll of content and height being whatever is available left of parents height.',
+  name: 'Integration: with FadedScroll of content and height being whatever is available left of parents height.',
 };

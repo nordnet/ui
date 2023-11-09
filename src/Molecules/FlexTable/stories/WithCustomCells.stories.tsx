@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { DateTime, Flag, Flexbox, Number } from '../../..';
+import { DateTime, Flag, Flexbox, FlexTable, Number } from '../../..';
 import { FlexPropsType } from '../shared/shared.types';
-import FlexTable from '../FlexTable';
 import docs from '../FlexTable.mdx';
 
 export default {

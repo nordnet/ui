@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Box, Flexbox, Typography, Icon } from '../..';
+import { Box, Flexbox, Typography, Icon, VisuallyHidden } from '../..';
 import PageWrapper from '../PageWrapper';
 import { FnHelper, InfoBarIconProps, InfoBarProps, Variant } from './InfoBar.types';
 
@@ -80,7 +80,13 @@ const InfoBarIcon: React.FC<InfoBarIconProps> = ({ variant }) => {
   }
 };
 
-export const InfoBar: React.FC<InfoBarProps> = ({ variant, onClose, className, children }) => {
+export const InfoBar: React.FC<InfoBarProps> = ({
+  variant,
+  onClose,
+  className,
+  children,
+  closeButtonText = 'Close',
+}) => {
   return (
     <InfoBarPageWrapper className={className} variant={variant}>
       <Box py={1} px={3} sm={{ px: 0 }}>
@@ -98,6 +104,7 @@ export const InfoBar: React.FC<InfoBarProps> = ({ variant, onClose, className, c
               <Box pl={2}>
                 <button type="button" onClick={onClose}>
                   <Icon.Cross16 color={(theme) => theme.color.text} />
+                  <VisuallyHidden>{closeButtonText}</VisuallyHidden>
                 </button>
               </Box>
             </Flexbox>

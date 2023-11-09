@@ -1,3 +1,169 @@
+# [14.0.0](https://github.com/nordnet/ui/compare/v13.5.2...v14.0.0) (2023-11-09)
+
+
+### Bug Fixes
+
+* Adapt coachmarks to feedback widget behaviour ([#1479](https://github.com/nordnet/ui/issues/1479)) ([6da8d83](https://github.com/nordnet/ui/commit/6da8d83f52fa5d5279b0fcc24c0ed2ada0a3c326))
+
+
+### Features
+
+* migrate to npm ([#1471](https://github.com/nordnet/ui/issues/1471)) ([#1481](https://github.com/nordnet/ui/issues/1481)) ([ed5c011](https://github.com/nordnet/ui/commit/ed5c0112945ce7705681ac66ddee320b5d145f35)), closes [/storybook.js.org/docs/react/migration-guide#csf2-to-csf3](https://github.com//storybook.js.org/docs/react/migration-guide/issues/csf2-to-csf3)
+
+
+### Reverts
+
+* Revert "fix: Adapt coachmarks to feedback widget behaviour (#1479)" (#1484) ([6a43688](https://github.com/nordnet/ui/commit/6a43688c8549855fd562ff81578671611c50bb14)), closes [#1479](https://github.com/nordnet/ui/issues/1479) [#1484](https://github.com/nordnet/ui/issues/1484)
+
+
+### BREAKING CHANGES
+
+* migrate yarn to npm
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+Co-authored-by: Gustav Pettersson <gustav.pettersson@nordnet.se>
+Co-authored-by: semantic-release-bot <semantic-release-bot@martynus.net>
+- Split Github actions workflow file
+
+# [14.0.0-beta.1](https://github.com/nordnet/ui/compare/v13.5.2...v14.0.0-beta.1) (2023-11-09)
+
+
+### Bug Fixes
+
+* adjust if statement for releasing beta ([28196fd](https://github.com/nordnet/ui/commit/28196fd41c2ecf8b73b2db1cbc287d4b7cd8842a))
+
+
+### Features
+
+* migrate to npm and make storybook work again ([#1471](https://github.com/nordnet/ui/issues/1471)) ([b96cdb4](https://github.com/nordnet/ui/commit/b96cdb4c925e70ab4b63664e8b601a4b1680a738)), closes [#1472](https://github.com/nordnet/ui/issues/1472) [#1478](https://github.com/nordnet/ui/issues/1478)
+
+
+### BREAKING CHANGES
+
+* migrate from yarn to npm
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+Co-authored-by: Gustav Pettersson <gustav.pettersson@nordnet.se>
+
+## [13.5.2](https://github.com/nordnet/ui/compare/v13.5.1...v13.5.2) (2023-11-07)
+
+
+### Bug Fixes
+
+* new version of nordnet ui ([#1477](https://github.com/nordnet/ui/issues/1477)) ([89be7e4](https://github.com/nordnet/ui/commit/89be7e451df122a50013bf56f56514ce84c534ff))
+
+## [13.5.1](https://github.com/nordnet/ui/compare/v13.5.0...v13.5.1) (2023-11-02)
+
+
+### Bug Fixes
+
+* **deps:** update developer dependencies (non-major) ([#1465](https://github.com/nordnet/ui/issues/1465)) ([8b6728d](https://github.com/nordnet/ui/commit/8b6728d75c6556e2853d9994c116dd66b182c179))
+
+# [13.5.0](https://github.com/nordnet/ui/compare/v13.4.2...v13.5.0) (2023-11-01)
+
+
+### Features
+
+* 🎸 show cursor on hover ([#1470](https://github.com/nordnet/ui/issues/1470)) ([bfa3538](https://github.com/nordnet/ui/commit/bfa3538))
+
+## [13.4.2](https://github.com/nordnet/ui/compare/v13.4.1...v13.4.2) (2023-11-01)
+
+
+### Bug Fixes
+
+* 🐛 bump to version that supports node ^20 ([#1469](https://github.com/nordnet/ui/issues/1469)) ([ebbe494](https://github.com/nordnet/ui/commit/ebbe494))
+
+## [13.4.1](https://github.com/nordnet/ui/compare/v13.4.0...v13.4.1) (2023-10-31)
+
+
+### Bug Fixes
+
+* make flextable stories work ([#1468](https://github.com/nordnet/ui/issues/1468)) ([834aaf6](https://github.com/nordnet/ui/commit/834aaf6))
+
+# [13.4.0](https://github.com/nordnet/ui/compare/v13.3.2...v13.4.0) (2023-10-31)
+
+
+### Features
+
+* add edit plan 64 illustration ([#1467](https://github.com/nordnet/ui/issues/1467)) ([97fdbd7](https://github.com/nordnet/ui/commit/97fdbd7))
+
+## [13.3.2](https://github.com/nordnet/ui/compare/v13.3.1...v13.3.2) (2023-10-30)
+
+
+### Bug Fixes
+
+* **deps:** update production dependencies (non-major) ([#1450](https://github.com/nordnet/ui/issues/1450)) ([e5f025a](https://github.com/nordnet/ui/commit/e5f025a))
+
+## [13.3.1](https://github.com/nordnet/ui/compare/v13.3.0...v13.3.1) (2023-10-30)
+
+
+### Bug Fixes
+
+* **deps:** bump semver-regex from 3.1.3 to 3.1.4 ([#1151](https://github.com/nordnet/ui/issues/1151)) ([6612f37](https://github.com/nordnet/ui/commit/6612f37))
+
+# [13.3.0](https://github.com/nordnet/ui/compare/v13.2.3...v13.3.0) (2023-10-30)
+
+
+### Features
+
+* 🎸 mask sensitive values in number component ([#1444](https://github.com/nordnet/ui/issues/1444)) ([0599838](https://github.com/nordnet/ui/commit/0599838))
+
+## [13.2.3](https://github.com/nordnet/ui/compare/v13.2.2...v13.2.3) (2023-10-27)
+
+
+### Bug Fixes
+
+* bump old dependancies to solve tslib error ([#1466](https://github.com/nordnet/ui/issues/1466)) ([ee6912b](https://github.com/nordnet/ui/commit/ee6912b))
+
+## [13.2.2](https://github.com/nordnet/ui/compare/v13.2.1...v13.2.2) (2023-10-26)
+
+
+### Bug Fixes
+
+* remove media snapshots ([#1462](https://github.com/nordnet/ui/issues/1462)) ([b44c019](https://github.com/nordnet/ui/commit/b44c019))
+
+## [13.2.1](https://github.com/nordnet/ui/compare/v13.2.0...v13.2.1) (2023-10-26)
+
+
+### Bug Fixes
+
+* use default value for select component ([#1463](https://github.com/nordnet/ui/issues/1463)) ([8bfb8f4](https://github.com/nordnet/ui/commit/8bfb8f4))
+
+# [13.2.0](https://github.com/nordnet/ui/compare/v13.1.4...v13.2.0) (2023-10-26)
+
+
+### Features
+
+* new Select component MVP ([#1351](https://github.com/nordnet/ui/issues/1351)) ([e1332d6](https://github.com/nordnet/ui/commit/e1332d6))
+
+## [13.1.4](https://github.com/nordnet/ui/compare/v13.1.3...v13.1.4) (2023-10-26)
+
+
+### Bug Fixes
+
+* **node:** add node 20 as supported (again) ([#1457](https://github.com/nordnet/ui/issues/1457)) ([2630062](https://github.com/nordnet/ui/commit/2630062))
+
+## [13.1.3](https://github.com/nordnet/ui/compare/v13.1.2...v13.1.3) (2023-10-26)
+
+
+### Bug Fixes
+
+* **node:** add node 20 as supported ([#1447](https://github.com/nordnet/ui/issues/1447)) ([769ebe2](https://github.com/nordnet/ui/commit/769ebe2))
+
+## [13.1.2](https://github.com/nordnet/ui/compare/v13.1.1...v13.1.2) (2023-10-25)
+
+
+### Bug Fixes
+
+* expose input select placement to controllistitem ([#1445](https://github.com/nordnet/ui/issues/1445)) ([8d4624e](https://github.com/nordnet/ui/commit/8d4624e))
+
+## [13.1.1](https://github.com/nordnet/ui/compare/v13.1.0...v13.1.1) (2023-10-23)
+
+
+### Bug Fixes
+
+* remove commitlint, also now no use for husky ([#1439](https://github.com/nordnet/ui/issues/1439)) ([22aab78](https://github.com/nordnet/ui/commit/22aab78))
+
 # [13.1.0](https://github.com/nordnet/ui/compare/v13.0.0...v13.1.0) (2023-10-23)
 
 ### Features

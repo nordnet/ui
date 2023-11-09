@@ -15,33 +15,34 @@ const StyledBg = styled.div`
   background: #f5f5f5;
 `;
 
-export const defaultUsage = () => (
-  <StyledBg>
-    <InfoBar>
-      InfoBar should be used on top of the pages to show Marketing or Customer Support communication
-      messages. Content of the InfoBar is just rendered <code>children</code>
-    </InfoBar>
-  </StyledBg>
-);
+export const DefaultUsage = {
+  render: () => (
+    <StyledBg>
+      <InfoBar>
+        InfoBar should be used on top of the pages to show Marketing or Customer Support
+        communication messages. Content of the InfoBar is just rendered <code>children</code>
+      </InfoBar>
+    </StyledBg>
+  ),
 
-defaultUsage.story = {
   name: 'Default usage',
 };
-export const onCloseProp = () => (
-  <StyledBg>
-    <InfoBar>Without onClose prop InfoBar cannot be dismissed</InfoBar>
-    <br />
-    <br />
-    <br />
-    {/* eslint-disable-next-line no-alert */}
-    <InfoBar onClose={() => alert('close')}>
-      With onClose prop InfoBar can be dismissed, but ParentComponent is in charge to react and
-      actually hide the InfoBar.
-    </InfoBar>
-  </StyledBg>
-);
 
-onCloseProp.story = {
+export const OnCloseProp = {
+  render: () => (
+    <StyledBg>
+      <InfoBar>Without onClose prop InfoBar cannot be dismissed</InfoBar>
+      <br />
+      <br />
+      <br />
+      {/* eslint-disable-next-line no-alert */}
+      <InfoBar onClose={() => alert('close')}>
+        With onClose prop InfoBar can be dismissed, but ParentComponent is in charge to react and
+        actually hide the InfoBar.
+      </InfoBar>
+    </StyledBg>
+  ),
+
   name: 'onClose prop demo',
 };
 
@@ -83,25 +84,25 @@ const variants = [
   },
 ];
 
-export const differentVariants = () => (
-  <StyledBg>
-    <code>no variant passed, defaults to general</code>
-    <br />
-    <InfoBar>{variants[0].children}</InfoBar>
-    <br />
-    <br />
-    {variants?.map(({ variant, children }) => (
-      <React.Fragment key={variant}>
-        <code>variant={variant}</code>
-        <br />
-        <InfoBar variant={variant}>{children}</InfoBar>
-        <br />
-        <br />
-      </React.Fragment>
-    ))}
-  </StyledBg>
-);
+export const DifferentVariants = {
+  render: () => (
+    <StyledBg>
+      <code>no variant passed, defaults to general</code>
+      <br />
+      <InfoBar>{variants[0].children}</InfoBar>
+      <br />
+      <br />
+      {variants?.map(({ variant, children }) => (
+        <React.Fragment key={variant}>
+          <code>variant={variant}</code>
+          <br />
+          <InfoBar variant={variant}>{children}</InfoBar>
+          <br />
+          <br />
+        </React.Fragment>
+      ))}
+    </StyledBg>
+  ),
 
-differentVariants.story = {
   name: 'Different variants',
 };

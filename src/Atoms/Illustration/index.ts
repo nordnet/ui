@@ -26,6 +26,7 @@ import Auto64 from './Medium/Auto64';
 import Bank64 from './Medium/Bank64';
 import Blog64 from './Medium/Blog64';
 import Book64 from './Medium/Book64';
+import EditPlan64 from './Medium/EditPlan64';
 import Fee64 from './Medium/Fee64';
 import Fund64 from './Medium/Fund64';
 import Gold64 from './Medium/Gold64';
@@ -92,6 +93,7 @@ export default {
   Blog64,
   Book64,
   Bug48,
+  EditPlan64,
   Export48,
   Fee64,
   Fund64,
