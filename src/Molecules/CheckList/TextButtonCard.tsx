@@ -10,14 +10,17 @@ const StyledButton = styled(Button)`
   justify-content: flex-start;
   text-align: left;
   padding: ${(t) => t.theme.spacing.unit(3)}px;
+
   > span {
     width: 100%;
   }
+
   :hover {
     text-decoration: none;
     border: 1px solid ${(t) => t.theme.colorTokens.neutral.border_hover};
     background-color: ${(t) => t.theme.colorTokens.action.background_weak};
   }
+
   :active {
     outline: 2px solid ${(t) => t.theme.colorTokens.action.border_default};
     background-color: ${(t) => t.theme.colorTokens.action.background_weak};

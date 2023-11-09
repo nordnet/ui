@@ -30,7 +30,6 @@ const Handle = styled('div')<InternalProps>`
       const knobColor = p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor;
       return !p.$disabled && `${knobColor ? Color(knobColor).darken(0.1) : ''}`;
     }};
-
     transform: ${(p) => {
       return p.$variant === VARIANT_TYPES.PLAYER
         ? 'translateY(-50%)'

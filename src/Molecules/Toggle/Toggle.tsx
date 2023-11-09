@@ -25,7 +25,7 @@ const Knob = styled.span<{ $size: SizeProp; $disabled?: boolean }>`
   margin-top: ${(p) => (p.$size === 'l' ? -4 : 2)}px;
   border-radius: ${(p) => p.theme.spacing.unit(KNOB_SIZE[p.$size] / 2)}px;
   box-sizing: border-box;
-  box-shadow: 0px 1px 3px 1px ${(p) => p.theme.color.shadowSwitch};
+  box-shadow: 0 1px 3px 1px ${(p) => p.theme.color.shadowSwitch};
   transition: transform 0.2s cubic-bezier(0.18, 0.9, 0.35, 1.15);
   cursor: ${(props) => (props.$disabled ? 'not-allowed' : 'pointer')};
 `;

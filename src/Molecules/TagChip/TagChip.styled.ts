@@ -3,7 +3,6 @@ import { Flexbox, Typography } from '../..';
 
 export const ContainerLabel = styled.label`
   border: 1px solid ${({ theme }) => theme.color.tagChipBorder};
-
   border-radius: ${(p) => p.theme.spacing.unit(8)}px;
   box-sizing: border-box;
   display: inline-flex;

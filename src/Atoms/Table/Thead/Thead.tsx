@@ -9,13 +9,15 @@ const StyledThead = styled.thead<Props>`
 
 const StyledStickyThead = styled(StyledThead)<Props>`
   border: 0;
+
   th {
     position: sticky;
     top: 0;
     z-index: 1;
     background-color: ${(p) => p.theme.color.card};
   }
-  th:before {
+
+  th::before {
     left: 0;
     width: 100%;
     bottom: 0;
