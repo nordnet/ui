@@ -1,30 +1,39 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
 import { Box, Flexbox, Icon, Card } from '../..';
 import { TagChip } from './TagChip';
 import { Props } from './TagChip.types';
 
-export default {
-  title: 'Molecules / TagChip',
+const meta: Meta<typeof TagChip> = {
   component: TagChip,
-} as Meta;
+  title: 'Molecules / TagChip',
+};
 
-const Template: Story<Props> = (args) => (
+export default meta;
+type Story = StoryObj<typeof TagChip>;
+
+const Template = (args: Props) => (
   <div style={{ padding: '10px', backgroundColor: 'white' }}>
     <TagChip {...args} />
   </div>
 );
 
-export const OnlyLabel = Template.bind({});
-OnlyLabel.args = {
-  label: 'Default',
+export const OnlyLabel: Story = {
+  render: Template,
+
+  args: {
+    label: 'Default',
+  },
 };
 
-export const BothIconAndLabel = Template.bind({});
-BothIconAndLabel.args = {
-  icon: <Icon.MonthlySavings16 />,
-  label: 'Default',
+export const BothIconAndLabel: Story = {
+  render: Template,
+
+  args: {
+    icon: <Icon.MonthlySavings16 />,
+    label: 'Default',
+  },
 };
 
 export const Emoji = () => (

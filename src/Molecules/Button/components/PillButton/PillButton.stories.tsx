@@ -23,19 +23,18 @@ const NoPadding = styled.div`
   background: red;
 `;
 
-export const documentation = () => (
+export const Documentation = () => (
   <Typography type="primary">
     <MD>{docs}</MD>
   </Typography>
 );
 
-export const defaultUsage = () => <PillButton onClick={action('clicked')}>PillButton</PillButton>;
-
-defaultUsage.story = {
+export const DefaultUsage = {
+  render: () => <PillButton onClick={action('clicked')}>PillButton</PillButton>,
   name: 'Default usage',
 };
 
-export const pillButtonWithDifferentVariants = () => (
+export const PillButtonWithDifferentVariants = () => (
   <>
     <Display
       horizontal
@@ -283,125 +282,125 @@ export const pillButtonWithDifferentVariants = () => (
   </>
 );
 
-export const pillButtonWithLoadingState = () => {
-  const LoadingExample = () => {
-    const [loading, setLoading] = useState(true);
-    const toggleLoading = () => setLoading(!loading);
+export const PillButtonWithLoadingState = {
+  render: () => {
+    const LoadingExample = () => {
+      const [loading, setLoading] = useState(true);
+      const toggleLoading = () => setLoading(!loading);
 
-    return (
-      <>
-        <Display
-          title="Primary"
-          items={[
-            {
-              title: 'PillButton',
-              component: <PillButton loading={loading}>Button</PillButton>,
-            },
-          ]}
-        />
-        <Display
-          title="Secondary"
-          items={[
-            {
-              title: 'PillButton',
-              component: (
-                <SecondaryBackground>
-                  <PillButton variant="secondary" loading={loading}>
-                    Button
-                  </PillButton>
-                </SecondaryBackground>
-              ),
-            },
-          ]}
-        />
-        <button type="button" onClick={toggleLoading}>
-          toggle loading
-        </button>
-      </>
-    );
-  };
-  return <LoadingExample />;
-};
+      return (
+        <>
+          <Display
+            title="Primary"
+            items={[
+              {
+                title: 'PillButton',
+                component: <PillButton loading={loading}>Button</PillButton>,
+              },
+            ]}
+          />
+          <Display
+            title="Secondary"
+            items={[
+              {
+                title: 'PillButton',
+                component: (
+                  <SecondaryBackground>
+                    <PillButton variant="secondary" loading={loading}>
+                      Button
+                    </PillButton>
+                  </SecondaryBackground>
+                ),
+              },
+            ]}
+          />
+          <button type="button" onClick={toggleLoading}>
+            toggle loading
+          </button>
+        </>
+      );
+    };
+    return <LoadingExample />;
+  },
 
-pillButtonWithLoadingState.story = {
   name: 'PillButton with loading state',
 };
 
-export const pillButtonWithLoadingStateWithoutTheSpinnerAnimationDelay = () => (
-  <PillButton onClick={action('clicked')} loading delayLoadingSpinnerAnimation={false}>
-    Button
-  </PillButton>
-);
+export const PillButtonWithLoadingStateWithoutTheSpinnerAnimationDelay = {
+  render: () => (
+    <PillButton onClick={action('clicked')} loading delayLoadingSpinnerAnimation={false}>
+      Button
+    </PillButton>
+  ),
 
-pillButtonWithLoadingStateWithoutTheSpinnerAnimationDelay.story = {
   name: 'PillButton with loading state without the spinner animation delay',
 };
 
-export const pillButtonThatIsFullWidth = () => (
-  <NoPadding>
-    <PillButton onClick={action('clicked')} fullWidth>
-      Button
-    </PillButton>
-    <PillButton variant="secondary" onClick={action('clicked')} fullWidth>
-      Button
-    </PillButton>
-  </NoPadding>
-);
+export const PillButtonThatIsFullWidth = {
+  render: () => (
+    <NoPadding>
+      <PillButton onClick={action('clicked')} fullWidth>
+        Button
+      </PillButton>
+      <PillButton variant="secondary" onClick={action('clicked')} fullWidth>
+        Button
+      </PillButton>
+    </NoPadding>
+  ),
 
-pillButtonThatIsFullWidth.story = {
   name: 'PillButton that is full width',
 };
 
-export const pillButtonsComposedInAGroup = () => (
-  <Flexbox container gap={2}>
-    <Flexbox item flex="1 1 50%">
-      <SecondaryBackground>
-        <PillButton onClick={action('submit')} fullWidth>
-          Submit
-        </PillButton>
-      </SecondaryBackground>
+export const PillButtonsComposedInAGroup = {
+  render: () => (
+    <Flexbox container gap={2}>
+      <Flexbox item flex="1 1 50%">
+        <SecondaryBackground>
+          <PillButton onClick={action('submit')} fullWidth>
+            Submit
+          </PillButton>
+        </SecondaryBackground>
+      </Flexbox>
+      <Flexbox item flex="1 1 50%">
+        <SecondaryBackground>
+          <PillButton onClick={action('reset')} variant="secondary" fullWidth>
+            Reset
+          </PillButton>
+        </SecondaryBackground>
+      </Flexbox>
     </Flexbox>
-    <Flexbox item flex="1 1 50%">
-      <SecondaryBackground>
-        <PillButton onClick={action('reset')} variant="secondary" fullWidth>
-          Reset
-        </PillButton>
-      </SecondaryBackground>
-    </Flexbox>
-  </Flexbox>
-);
+  ),
 
-pillButtonsComposedInAGroup.story = {
   name: 'PillButtons composed in a group',
 };
 
-export const linksLookingLikePillButtons = () => (
-  <Provider>
-    <Display
-      items={[
-        {
-          title: 'Go to BlaBla',
-          component: (
-            <PillButton to="/?path=/docs/molecules-pillbutton--pill-buttons-composed-in-a-group">
-              BlaBla
-            </PillButton>
-          ),
-        },
-        {
-          title: 'Go to external BliBli',
-          component: (
-            <SecondaryBackground>
-              <PillButton to="https://nordnet.se" external variant="secondary">
-                BliBli
+export const LinksLookingLikePillButtons = {
+  render: () => (
+    <Provider>
+      <Display
+        items={[
+          {
+            title: 'Go to BlaBla',
+            component: (
+              <PillButton to="/?path=/docs/molecules-pillbutton--pill-buttons-composed-in-a-group">
+                BlaBla
               </PillButton>
-            </SecondaryBackground>
-          ),
-        },
-      ]}
-    />
-  </Provider>
-);
+            ),
+          },
+          {
+            title: 'Go to external BliBli',
+            component: (
+              <SecondaryBackground>
+                <PillButton to="https://nordnet.se" external variant="secondary">
+                  BliBli
+                </PillButton>
+              </SecondaryBackground>
+            ),
+          },
+        ]}
+      />
+    </Provider>
+  ),
 
-linksLookingLikePillButtons.story = {
   name: 'Links looking like PillButtons',
 };

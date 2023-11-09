@@ -1,69 +1,76 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta } from '@storybook/react';
 
 import docs from './Rating.mdx';
 import Rating from '.';
-import { Props } from './Rating.types';
 import Flexbox from '../../Atoms/Flexbox';
 import Typography from '../../Atoms/Typography';
 import Icon from '../../Atoms/Icon';
 
-export default {
+const meta: Meta<typeof Rating> = {
+  component: Rating,
   title: 'Molecules / Rating',
   parameters: {
     docs: {
       page: docs,
     },
   },
-  component: Rating,
-} as Meta;
-
-const Template: Story<Props> = (args) => <Rating {...args} />;
-
-export const Rating0 = Template.bind({});
-Rating0.args = {
-  rating: 0,
 };
 
-export const Rating1 = Template.bind({});
-Rating1.args = {
-  rating: 1,
+export default meta;
+
+export const Rating0 = {
+  args: {
+    rating: 0,
+  },
 };
 
-export const Rating5 = Template.bind({});
-Rating5.args = {
-  rating: 5,
+export const Rating1 = {
+  args: {
+    rating: 1,
+  },
 };
 
-export const RatingNotDefined = Template.bind({});
-RatingNotDefined.args = {
-  rating: undefined,
+export const Rating5 = {
+  args: {
+    rating: 5,
+  },
 };
 
-export const RatingWithSize = Template.bind({});
-RatingWithSize.args = {
-  rating: 3,
-  size: 3,
+export const RatingNotDefined = {
+  args: {
+    rating: undefined,
+  },
 };
 
-export const RatingWithStringSize = Template.bind({});
-RatingWithStringSize.args = {
-  rating: 3,
-  size: 'xl',
+export const RatingWithSize = {
+  args: {
+    rating: 3,
+    size: 3,
+  },
 };
 
-export const RatingOutOf3 = Template.bind({});
-RatingOutOf3.args = {
-  rating: 2,
-  outOf: 3,
+export const RatingWithStringSize = {
+  args: {
+    rating: 3,
+    size: 'xl',
+  },
 };
 
-export const CustomIcons = Template.bind({});
-CustomIcons.args = {
-  rating: 2,
-  outOf: 3,
-  activeIcon: <Icon.Account16 color={(t) => t.color.starRatingBlue} />,
-  inactiveIcon: <Icon.AddCircleFill16 color={(t) => t.color.starRatingBlueOff} />,
+export const RatingOutOf3 = {
+  args: {
+    rating: 2,
+    outOf: 3,
+  },
+};
+
+export const CustomIcons = {
+  args: {
+    rating: 2,
+    outOf: 3,
+    activeIcon: <Icon.Account16 color={(t) => t.color.starRatingBlue} />,
+    inactiveIcon: <Icon.AddCircleFill16 color={(t) => t.color.starRatingBlueOff} />,
+  },
 };
 
 export const RatingOutOf3WithLabel = () => (

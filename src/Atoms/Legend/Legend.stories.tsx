@@ -8,15 +8,14 @@ export default {
   },
 };
 
-export const docs = () => <p>The Legend component defines a caption for the Fieldset component.</p>;
-export const defaultStory = () => <Legend>Caption text</Legend>;
+export const Docs = () => <p>The Legend component defines a caption for the Fieldset component.</p>;
 
-defaultStory.story = {
+export const DefaultStory = {
+  render: () => <Legend>Caption text</Legend>,
   name: 'Default',
 };
 
-export const lookingLikeALabel = () => <Legend styleType="label">Caption text</Legend>;
-
-lookingLikeALabel.story = {
+export const LookingLikeALabel = {
+  render: () => <Legend styleType="label">Caption text</Legend>,
   name: 'Looking like a label',
 };
