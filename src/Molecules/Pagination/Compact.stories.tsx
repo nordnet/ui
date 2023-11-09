@@ -22,7 +22,7 @@ const CompactPagination = ({ totalItems = 10, itemsPerPage = 1 }) => (
   />
 );
 
-export const regular = () => <CompactPagination />;
+export const Regular = () => <CompactPagination />;
 
 const ControlledCompactPagination = ({ totalItems = 10, itemsPerPage = 1 }) => {
   const [currentPage, setCurrentPage] = useState(5);
@@ -43,9 +43,9 @@ const ControlledCompactPagination = ({ totalItems = 10, itemsPerPage = 1 }) => {
   );
 };
 
-export const controlledPagination = () => <ControlledCompactPagination />;
+export const ControlledPagination = () => <ControlledCompactPagination />;
 
-const LinksPagination = ({ totalItems = 10, itemsPerPage = 1 }) => {
+const LinksPaginationComponent = ({ totalItems = 10, itemsPerPage = 1 }) => {
   const [currentPage, setCurrentPage] = useState(5);
 
   const getPageHref = (pageNumber: number) => `/${pageNumber}`;
@@ -63,4 +63,4 @@ const LinksPagination = ({ totalItems = 10, itemsPerPage = 1 }) => {
   );
 };
 
-export const linksPagination = () => <LinksPagination />;
+export const LinksPagination = () => <LinksPaginationComponent />;

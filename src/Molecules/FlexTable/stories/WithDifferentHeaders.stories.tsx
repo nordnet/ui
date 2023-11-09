@@ -101,7 +101,6 @@ export const UncontrolledSortableHeaders = () => {
   );
 };
 
-// For useState to work in storybook, components needs to be wrapped in a new function
 export const ControlledSortableHeaders = () => {
   const ControlledSortableHeadersExample = () => {
     const ReactComponent = () => {
@@ -282,7 +281,6 @@ export const StickyHeadersForDifferentScreenSizes = () => {
             Header 4
           </FlexTable.Header>
         </FlexTable.HeaderRow>
-
         {[...Array(50)]?.map((_, index) => (
           // eslint-disable-next-line react/no-array-index-key
           <FlexTable.Row key={index}>

@@ -12,18 +12,18 @@ export default {
   },
 };
 
-export const documentation = () => (
+export const Documentation = () => (
   <Typography type="primary">
     <MD>{docs}</MD>
   </Typography>
 );
 
-export const defaultUsage = () => (
-  <Button.Icon onClick={action('clicked')}>
-    <Icon.Attachment16 />
-  </Button.Icon>
-);
+export const DefaultUsage = {
+  render: () => (
+    <Button.Icon onClick={action('clicked')}>
+      <Icon.Attachment16 />
+    </Button.Icon>
+  ),
 
-defaultUsage.story = {
   name: 'Default usage',
 };

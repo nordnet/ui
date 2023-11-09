@@ -69,41 +69,41 @@ const Content = ({ height, hideFirst }: ContentProps) => {
   );
 };
 
-export const integrationWithReactRouter = () => (
-  <MemoryRouter>
-    <LinkProvider link={MyLink}>
-      <Content />
-    </LinkProvider>
-  </MemoryRouter>
-);
+export const IntegrationWithReactRouter = {
+  render: () => (
+    <MemoryRouter>
+      <LinkProvider link={MyLink}>
+        <Content />
+      </LinkProvider>
+    </MemoryRouter>
+  ),
 
-integrationWithReactRouter.story = {
   name: 'Integration: With react-router',
 };
 
-export const integrationWithReactRouterAndHeightModified = () => (
-  <MemoryRouter>
-    <LinkProvider link={MyLink}>
-      <Content height={24} />
-    </LinkProvider>
-  </MemoryRouter>
-);
+export const IntegrationWithReactRouterAndHeightModified = {
+  render: () => (
+    <MemoryRouter>
+      <LinkProvider link={MyLink}>
+        <Content height={24} />
+      </LinkProvider>
+    </MemoryRouter>
+  ),
 
-integrationWithReactRouterAndHeightModified.story = {
   name: 'Integration: With react-router and height modified',
 };
 
-export const integrationConditionallyHideTab = () => {
-  return (
-    <MemoryRouter>
-      <LinkProvider link={MyLink}>
-        <Content hideFirst />
-      </LinkProvider>
-    </MemoryRouter>
-  );
-};
+export const IntegrationConditionallyHideTab = {
+  render: () => {
+    return (
+      <MemoryRouter>
+        <LinkProvider link={MyLink}>
+          <Content hideFirst />
+        </LinkProvider>
+      </MemoryRouter>
+    );
+  },
 
-integrationConditionallyHideTab.story = {
   name: 'Integration: conditionally hide tab',
 };
 
@@ -177,19 +177,19 @@ const ContentWithManyLinks = () => {
   );
 };
 
-export const HorizontalScrollEnabled = () => {
-  return (
-    <MemoryRouter>
-      <LinkProvider link={MyLink}>
-        <div>
-          This is a title
-          <ContentWithManyLinks />
-        </div>
-      </LinkProvider>
-    </MemoryRouter>
-  );
-};
+export const HorizontalScrollEnabled = {
+  render: () => {
+    return (
+      <MemoryRouter>
+        <LinkProvider link={MyLink}>
+          <div>
+            This is a title
+            <ContentWithManyLinks />
+          </div>
+        </LinkProvider>
+      </MemoryRouter>
+    );
+  },
 
-HorizontalScrollEnabled.story = {
   name: 'Enabled horizontal scroll',
 };
