@@ -1,3 +1,17 @@
+## [13.5.2](https://github.com/nordnet/ui/compare/v13.5.1...v13.5.2) (2023-11-07)
+
+
+### Bug Fixes
+
+* new version of nordnet ui ([#1477](https://github.com/nordnet/ui/issues/1477)) ([89be7e4](https://github.com/nordnet/ui/commit/89be7e451df122a50013bf56f56514ce84c534ff))
+
+## [13.5.1](https://github.com/nordnet/ui/compare/v13.5.0...v13.5.1) (2023-11-02)
+
+
+### Bug Fixes
+
+* **deps:** update developer dependencies (non-major) ([#1465](https://github.com/nordnet/ui/issues/1465)) ([8b6728d](https://github.com/nordnet/ui/commit/8b6728d75c6556e2853d9994c116dd66b182c179))
+
 # [13.5.0](https://github.com/nordnet/ui/compare/v13.4.2...v13.5.0) (2023-11-01)
 
 

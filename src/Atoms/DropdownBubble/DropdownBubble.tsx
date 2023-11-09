@@ -136,6 +136,5 @@ export const DropdownBubble = styled.div<Props>`
   border-radius: ${(p) => p.theme.borderRadius4};
   ${bottomAndTopPlacementCss}
 
-  ${({ theme, triangle }) =>
-    theme.isFeatureEnabled('roundedCorners') === true && !triangle ? '' : triangleCss}
+  ${({ triangle }) => (triangle ? triangleCss : '')}
 `;
