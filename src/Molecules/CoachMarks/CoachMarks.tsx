@@ -90,7 +90,7 @@ export const CoachMarks: Component = ({
   const hasNextStep = currentStep + 1 < steps.length;
   const path = referenceElementRect
     ? makeBackdropPath(referenceElementRect, Number(highlightBoxPadding), isCircular, px, py)
-    : '';
+    : undefined;
 
   useSafeLayoutEffect(() => {
     if (referenceElement) {
@@ -236,9 +236,11 @@ export const CoachMarks: Component = ({
             </CloseButton>
           )}
         </StyledBubble>
-        <SVG>
-          <path d={path} />
-        </SVG>
+        {path && (
+          <SVG>
+            <path d={path} />
+          </SVG>
+        )}
       </FocusLock>
     </>
   ) : null;
