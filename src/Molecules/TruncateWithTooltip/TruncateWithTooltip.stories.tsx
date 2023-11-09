@@ -20,7 +20,7 @@ const StyledDiv = styled.div`
   max-width: ${(p) => p.theme.spacing.unit(35)}px;
 `;
 
-export const truncateWithTooltipDefault = () => (
+export const TruncateWithTooltipDefault = () => (
   <>
     <StyledDiv>
       <TruncateWithTooltip position="bottom" label="Hover over this truncated text">
@@ -35,7 +35,7 @@ export const truncateWithTooltipDefault = () => (
   </>
 );
 
-export const truncateWithTooltipTable = () => (
+export const TruncateWithTooltipTable = () => (
   <StyledBackground>
     <Typography type="title3">Table With Different Alignments</Typography>
     <FlexTable>

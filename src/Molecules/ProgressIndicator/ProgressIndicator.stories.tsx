@@ -5,10 +5,12 @@ import { Meta } from '@storybook/react';
 import ProgressIndicator from '.';
 import { Button, Card, Flexbox, Icon, Media } from '../..';
 
-export default {
-  title: 'Molecules / ProgressIndicator',
+const meta: Meta<typeof ProgressIndicator> = {
   component: ProgressIndicator,
-} as Meta;
+  title: 'Molecules / ProgressIndicator',
+};
+
+export default meta;
 
 export const Default = () => {
   const [currentStep, setCurrentStep] = useState(2);

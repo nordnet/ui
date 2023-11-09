@@ -11,68 +11,66 @@ export default {
   },
 };
 
-export const defaultUse = () => <Flag size="m" country="SE" />;
-
-defaultUse.story = {
+export const DefaultUse = {
+  render: () => <Flag size="m" country="SE" />,
   name: 'Default use',
 };
 
-export const inlineStory = () => (
-  <>
-    You can put the <Flag size="m" inline country="SE" /> directly in the text with inline prop!
-  </>
-);
+export const InlineStory = {
+  render: () => (
+    <>
+      You can put the <Flag size="m" inline country="SE" /> directly in the text with inline prop!
+    </>
+  ),
 
-inlineStory.story = {
   name: 'Inline',
 };
 
-export const rendersNothingIfWrongCountryCode = () => <Flag size="l" country="WRONG" />;
-
-rendersNothingIfWrongCountryCode.story = {
+export const RendersNothingIfWrongCountryCode = {
+  render: () => <Flag size="l" country="WRONG" />,
   name: 'Renders nothing if wrong country code',
 };
 
-export const availableFlags = () => (
-  <Display
-    items={[
-      {
-        title: 'Sizes',
-        component: (
-          <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
-            <div>s (12px)</div>
-            <div>m (16px)</div>
-            <div>l (24px)</div>
-          </div>
-        ),
-      },
-      ...Object.keys(flags)?.map((flagName) => ({
-        title: flagName,
-        component: (
-          <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
-            <Flag size="s" country={flagName} />
-            <Flag size="m" country={flagName} />
-            <Flag size="l" country={flagName} />
-          </div>
-        ),
-      })),
-    ]}
-  />
-);
+export const AvailableFlags = {
+  render: () => (
+    <Display
+      items={[
+        {
+          title: 'Sizes',
+          component: (
+            <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
+              <div>s (12px)</div>
+              <div>m (16px)</div>
+              <div>l (24px)</div>
+            </div>
+          ),
+        },
+        ...Object.keys(flags)?.map((flagName) => ({
+          title: flagName,
+          component: (
+            <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
+              <Flag size="s" country={flagName} />
+              <Flag size="m" country={flagName} />
+              <Flag size="l" country={flagName} />
+            </div>
+          ),
+        })),
+      ]}
+    />
+  ),
 
-export const withBorder = () => (
-  <>
-    <Box p={4}>
-      <Flag size="m" country="fi" />
-      <Typography type="secondary">Notice flag does not have border on dark mode</Typography>
-    </Box>
-  </>
-);
-
-withBorder.story = {
-  name: 'Only Border On Light Mode',
+  name: 'Available flags',
 };
 
-availableFlags.story = {
-  name: 'Available flags',
+export const WithBorder = {
+  render: () => (
+    <>
+      <Box p={4}>
+        <Flag size="m" country="fi" />
+        <Typography type="secondary">Notice flag does not have border on dark mode</Typography>
+      </Box>
+    </>
+  ),
+
+  name: 'Only Border On Light Mode',
 };

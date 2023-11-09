@@ -9,13 +9,13 @@ export default {
   },
 };
 
-export const defaultStory = () => (
+export const DefaultStory = () => (
   <DropdownBubble>
     <Typography type="hero">Hello world!</Typography>
   </DropdownBubble>
 );
 
-export const differentPlacementAndTrianglePosition = () => (
+export const DifferentPlacementAndTrianglePosition = () => (
   <Display
     items={[
       {
@@ -70,7 +70,7 @@ export const differentPlacementAndTrianglePosition = () => (
   />
 );
 
-export const differentColors = () => (
+export const DifferentColors = () => (
   <Display
     items={[
       {

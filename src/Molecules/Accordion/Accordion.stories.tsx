@@ -26,22 +26,22 @@ const exampleFooter = (
   </Typography>
 );
 
-export const defaultStory = () => (
-  <Accordion>
-    <AccordionItem title="Låg CO₂ risk">
-      <ExampleContent />
-    </AccordionItem>
-    <AccordionItem title="Sustainability score">
-      <ExampleContent />
-    </AccordionItem>
-  </Accordion>
-);
+export const DefaultStory = {
+  render: () => (
+    <Accordion>
+      <AccordionItem title="Låg CO₂ risk">
+        <ExampleContent />
+      </AccordionItem>
+      <AccordionItem title="Sustainability score">
+        <ExampleContent />
+      </AccordionItem>
+    </Accordion>
+  ),
 
-defaultStory.story = {
   name: 'Default',
 };
 
-export const withFooter = () => (
+export const WithFooter = () => (
   <Accordion footer={exampleFooter}>
     <AccordionItem title="Låg CO₂ risk">
       <ExampleContent />
@@ -52,7 +52,7 @@ export const withFooter = () => (
   </Accordion>
 );
 
-export const withBadges = () => (
+export const WithBadges = () => (
   <Box p={10} backgroundColor={(t) => t.color.card}>
     <Accordion>
       <AccordionItem

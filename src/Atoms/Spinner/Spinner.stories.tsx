@@ -12,7 +12,7 @@ export default {
   },
 };
 
-export const documentation = () => (
+export const Documentation = () => (
   <Typography>
     <MD>{docs}</MD>
     <div>
@@ -24,41 +24,37 @@ export const documentation = () => (
   </Typography>
 );
 
-export const spinnerDefault = () => <Spinner id="mySpinner" />;
-
-spinnerDefault.story = {
+export const SpinnerDefault = {
+  render: () => <Spinner id="mySpinner" />,
   name: 'Spinner default',
 };
 
-export const spinnerBig = () => <Spinner size={16} id="mySpinner" />;
-
-spinnerBig.story = {
+export const SpinnerBig = {
+  render: () => <Spinner size={16} id="mySpinner" />,
   name: 'Spinner big',
 };
 
-export const spinnerWithFallback = () => (
-  <div style={{ height: '32px' }}>
-    <Spinner size={8} id="mySpinnerFallback" fallback={<Icon.Account32 />} />
-  </div>
-);
+export const SpinnerWithFallback = {
+  render: () => (
+    <div style={{ height: '32px' }}>
+      <Spinner size={8} id="mySpinnerFallback" fallback={<Icon.Account32 />} />
+    </div>
+  ),
 
-spinnerWithFallback.story = {
   name: 'Spinner with fallback during the timeout delay instead of null',
 };
 
-export const spinnerWithoutDefaultDelay = () => <Spinner size={16} id="mySpinner" delay={false} />;
-
-spinnerWithoutDefaultDelay.story = {
+export const SpinnerWithoutDefaultDelay = {
+  render: () => <Spinner size={16} id="mySpinner" delay={false} />,
   name: 'Spinner without default delay',
 };
 
-export const spinnerWithCustom2SecDelay = () => <Spinner size={16} id="mySpinner" delay={2000} />;
-
-spinnerWithCustom2SecDelay.story = {
+export const SpinnerWithCustom2SecDelay = {
+  render: () => <Spinner size={16} id="mySpinner" delay={2000} />,
   name: 'Spinner with custom 2 sec delay',
 };
 
-export const colors = () => (
+export const Colors = () => (
   <Display
     items={[
       { title: 'Default', component: <Spinner id="defaultSpinner" /> },
@@ -86,21 +82,21 @@ export const colors = () => (
   />
 );
 
-export const regression2SpinnersWithSameColorAndSizeAffectsEachOtherInChrome = () => (
-  <>
-    <Typography type="primary">
-      Only the one with green border should be shown. The bug before was that if two spinners had
-      the same size and color, both were hidden.
-    </Typography>
-    <div style={{ display: 'none', border: '1px red solid' }}>
-      <Spinner size={8} id="firstSpinner" />
-    </div>
-    <div style={{ border: '1px green solid' }}>
-      <Spinner size={8} id="secondSpinner" />
-    </div>
-  </>
-);
+export const Regression2SpinnersWithSameColorAndSizeAffectsEachOtherInChrome = {
+  render: () => (
+    <>
+      <Typography type="primary">
+        Only the one with green border should be shown. The bug before was that if two spinners had
+        the same size and color, both were hidden.
+      </Typography>
+      <div style={{ display: 'none', border: '1px red solid' }}>
+        <Spinner size={8} id="firstSpinner" />
+      </div>
+      <div style={{ border: '1px green solid' }}>
+        <Spinner size={8} id="secondSpinner" />
+      </div>
+    </>
+  ),
 
-regression2SpinnersWithSameColorAndSizeAffectsEachOtherInChrome.story = {
   name: 'Regression: 2 spinners with same color and size affects each other in Chrome',
 };

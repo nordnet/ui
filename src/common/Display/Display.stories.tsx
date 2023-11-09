@@ -9,7 +9,7 @@ export default {
   title: 'Others / Display',
 };
 
-export const documentation = () => {
+export const Documentation = () => {
   return (
     <>
       <MD>{docs}</MD>

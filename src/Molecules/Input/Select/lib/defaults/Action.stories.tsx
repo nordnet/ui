@@ -7,7 +7,7 @@ export default {
   title: 'Molecules / Input / Select / Action',
 };
 
-export const allStates = () => (
+export const AllStates = () => (
   <Display
     items={[
       {
