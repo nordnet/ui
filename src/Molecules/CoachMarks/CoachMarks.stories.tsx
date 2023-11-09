@@ -442,3 +442,89 @@ export const mobileBottomSheet = () => {
 
   return <Example />;
 };
+
+export const overrideStep = () => {
+  const Example = () => {
+    const [currentStep, setCurrentStep] = useState(0);
+    const [activeGuide, setActiveGuide] = useState(true);
+    const [referenceElement, setReferenceElement] = useState<HTMLElement | null>(null);
+
+    const handleNext = (step: number) => {
+      setCurrentStep(step + 1);
+    };
+
+    const handlePrev = (step: number) => {
+      setCurrentStep(step - 1);
+    };
+
+    return (
+      <>
+        <Card>
+          <Button onClick={() => setActiveGuide(true)}>Start guide</Button>
+          <Box py={5}>
+            <Flexbox container justifyContent="space-between">
+              <Flexbox item>
+                <MockItem ref={setReferenceElement}>New feature</MockItem>
+              </Flexbox>
+            </Flexbox>
+          </Box>
+        </Card>
+
+        {referenceElement && activeGuide && (
+          <CoachMarks
+            bottomSheet
+            overrideStep={currentStep}
+            onNext={handleNext}
+            onPrev={handlePrev}
+            steps={[
+              {
+                referenceElement,
+                icon: <Icon.Bank32 />,
+                title: 'Step 1',
+                content: (
+                  <div>
+                    Click the button if you're too smart for steps 1-3.
+                    <Button onClick={() => setCurrentStep(3)}>Skip</Button>
+                  </div>
+                ),
+                placement: 'bottom',
+              },
+              {
+                referenceElement,
+                icon: <Icon.Bank32 />,
+                title: 'Step 2',
+                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                placement: 'bottom',
+              },
+              {
+                referenceElement,
+                icon: <Icon.Bank32 />,
+                title: 'Step 3',
+                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                placement: 'bottom',
+              },
+              {
+                referenceElement,
+                icon: <Icon.Bank32 />,
+                title: 'Step 4',
+                content: (
+                  <div>
+                    Click the button to go to step 2
+                    <Button onClick={() => setCurrentStep(1)}>Go back</Button>
+                  </div>
+                ),
+                placement: 'bottom',
+              },
+            ]}
+          />
+        )}
+      </>
+    );
+  };
+
+  return <Example />;
+};
+
+overrideStep.story = {
+  name: 'Override step',
+};
