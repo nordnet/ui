@@ -1,3 +1,10 @@
+## [14.0.3](https://github.com/nordnet/ui/compare/v14.0.2...v14.0.3) (2023-11-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency prettier to v3 ([#1493](https://github.com/nordnet/ui/issues/1493)) ([d3f5f89](https://github.com/nordnet/ui/commit/d3f5f89260f82ca2c288d46472395cf827342079))
+
 ## [14.0.2](https://github.com/nordnet/ui/compare/v14.0.1...v14.0.2) (2023-11-10)
 
 
