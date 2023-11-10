@@ -15,6 +15,7 @@ const FullWidthSeparator = styled.div<StyledProps>`
     width: ${(p) => `calc(100% + ${p.theme.spacing.unit(6)}px)`};
     margin-left: ${(p) => `-${p.theme.spacing.unit(3)}px`};
   }
+
   height: 1px;
   background-color: ${(p) => (p.colorFunction ? p.colorFunction(p.theme) : p.theme.color.divider)};
 `;

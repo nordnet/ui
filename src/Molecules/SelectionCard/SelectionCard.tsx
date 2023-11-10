@@ -65,18 +65,17 @@ const StyledCard = styled(Card)<{
   height: 100%;
   position: relative;
   box-sizing: border-box;
-
   ${(p) => `
     cursor: ${p.$disabled ? 'not-allowed' : 'pointer'};
     color: ${p.$disabled ? p.theme.color.disabledText : p.theme.color.text};
     background: ${p.$disabled ? p.theme.color.disabledBackground : p.theme.color.card};
   `}
-
   ${(p) => p.$border && `border: 1px solid ${p.theme.color.inputBorder}`};
   ${(p) => p.$error && !p.$disabled && `border: 1px solid ${p.theme.color.functionRed}`};
   ${(p) => !p.$disabled && p.$selected && overlayStyles};
   border-radius: ${({ theme }) => theme.borderRadius8};
   overflow: hidden;
+
   &:hover {
     ${(p) => !p.$disabled && overlayStyles};
   }

@@ -46,7 +46,6 @@ const StyledDropdownBubble = styled(DropdownBubble)`
   flex-shrink: 1;
   flex-basis: auto;
   width: 100%;
-
   padding-top: 4px;
   display: flex;
   flex-direction: column;
@@ -120,7 +119,6 @@ const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean }>`
 const StyledOption = styled(Typography)<Partial<OptionProps>>`
   display: flex;
   align-items: center;
-
   ${(p) =>
     !p.fullscreenOnMobile
       ? `

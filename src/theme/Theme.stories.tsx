@@ -57,6 +57,7 @@ const StyledFlexbox = styled(Flexbox)`
 
 const StyledButton = styled(Button)`
   color: inherit;
+
   &:hover {
     color: ${(p) => p.theme.colorTokens.accent.background_strong};
   }
