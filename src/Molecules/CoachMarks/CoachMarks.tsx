@@ -47,7 +47,7 @@ export const CoachMarks: Component = ({
     if (overrideStep && overrideStep !== currentStep) {
       setCurrentStep(overrideStep);
     }
-  }, [overrideStep]);
+  }, [overrideStep, currentStep]);
 
   const {
     body,

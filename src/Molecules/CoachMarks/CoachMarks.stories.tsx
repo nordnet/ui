@@ -443,7 +443,7 @@ export const MobileBottomSheet = () => {
   return <Example />;
 };
 
-export const overrideStep = () => {
+export const OverrideStep = () => {
   const Example = () => {
     const [currentStep, setCurrentStep] = useState(0);
     const [activeGuide, setActiveGuide] = useState(true);
