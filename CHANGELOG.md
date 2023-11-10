@@ -1,3 +1,10 @@
+## [14.0.1](https://github.com/nordnet/ui/compare/v14.0.0...v14.0.1) (2023-11-10)
+
+
+### Bug Fixes
+
+* Adapt coachmarks to feedback widget behaviour ([#1492](https://github.com/nordnet/ui/issues/1492)) ([1ff4989](https://github.com/nordnet/ui/commit/1ff49891b4e5d12d91808626f95c970c42850a22))
+
 # [14.0.0](https://github.com/nordnet/ui/compare/v13.5.2...v14.0.0) (2023-11-09)
 
 
