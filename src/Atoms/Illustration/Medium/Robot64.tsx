@@ -3,7 +3,7 @@ import React from 'react';
 import { IllustrationBase } from '../IllustrationBase';
 import { IllustrationProps } from '../IllustrationBase.types';
 
-const Robot64: React.FC<IllustrationProps> = props => {
+const Robot64: React.FC<IllustrationProps> = (props) => {
   return (
     <IllustrationBase {...props} width={64} height={64}>
       <path

@@ -16,8 +16,8 @@ const getExpandableStyles = (
 ) => `
   padding-left: ${p.expandable ? p.theme.spacing.unit(2) : 0}px;
   border-left: ${p.theme.spacing.unit(0.5)}px solid ${
-  p.expanded && p.expandable ? p.theme.color.cta : 'transparent'
-};
+    p.expanded && p.expandable ? p.theme.color.cta : 'transparent'
+  };
    
  ${(() => {
    if (p.hideSeparator) {

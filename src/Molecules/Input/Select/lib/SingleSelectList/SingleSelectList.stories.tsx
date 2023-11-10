@@ -51,9 +51,9 @@ export const ListWithDifferentArrowPositions = {
               <Option label="Default?" />
               <Option label="First" selected />
               <Option label="SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond" />
-              {new Array(10).fill(null)?.map((_, i) => (
-                <Option key={i} label="Disabled" disabled />
-              ))}
+              {new Array(10)
+                .fill(null)
+                ?.map((_, i) => <Option key={i} label="Disabled" disabled />)}
             </Wrapper>
           ),
           title: 'Placement bottom, arrow default (right)',
@@ -64,9 +64,9 @@ export const ListWithDifferentArrowPositions = {
             <Wrapper position="left">
               <Option label="Default?" />
               <Option label="First" selected />
-              {new Array(10).fill(null)?.map((_, i) => (
-                <Option key={i} label="Disabled" disabled />
-              ))}
+              {new Array(10)
+                .fill(null)
+                ?.map((_, i) => <Option key={i} label="Disabled" disabled />)}
             </Wrapper>
           ),
           title: 'Placement bottom, arrow left',
@@ -76,9 +76,9 @@ export const ListWithDifferentArrowPositions = {
             <Wrapper position="center" placement="top">
               <Option label="Default?" />
               <Option label="First" selected />
-              {new Array(10).fill(null)?.map((_, i) => (
-                <Option key={i} label="Disabled" disabled />
-              ))}
+              {new Array(10)
+                .fill(null)
+                ?.map((_, i) => <Option key={i} label="Disabled" disabled />)}
             </Wrapper>
           ),
           title: 'Placement top, arrow center',
@@ -89,9 +89,9 @@ export const ListWithDifferentArrowPositions = {
               <Option label="Default?" />
               <Option label="First" selected />
               <Option label="Second" />
-              {new Array(10).fill(null)?.map((_, i) => (
-                <Option key={i} label="Disabled" disabled />
-              ))}
+              {new Array(10)
+                .fill(null)
+                ?.map((_, i) => <Option key={i} label="Disabled" disabled />)}
             </Wrapper>
           ),
           title: 'Placement bottom, arrow center',
@@ -102,9 +102,9 @@ export const ListWithDifferentArrowPositions = {
               <Option label="Default?" />
               <Option label="First" selected />
               <Option label="SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond" />
-              {new Array(10).fill(null)?.map((_, i) => (
-                <Option key={i} label="Disabled" disabled />
-              ))}
+              {new Array(10)
+                .fill(null)
+                ?.map((_, i) => <Option key={i} label="Disabled" disabled />)}
             </Wrapper>
           ),
           title: 'Placement top, arrow default (right)',
@@ -114,9 +114,9 @@ export const ListWithDifferentArrowPositions = {
             <Wrapper position="left" placement="top">
               <Option label="Default?" />
               <Option label="First" selected />
-              {new Array(10).fill(null)?.map((_, i) => (
-                <Option key={i} label="Disabled" disabled />
-              ))}
+              {new Array(10)
+                .fill(null)
+                ?.map((_, i) => <Option key={i} label="Disabled" disabled />)}
             </Wrapper>
           ),
           title: 'Placement top, arrow left',
@@ -127,9 +127,9 @@ export const ListWithDifferentArrowPositions = {
               <Option label="Default?" />
               <Option label="First" selected />
               <Option label="Second" />
-              {new Array(10).fill(null)?.map((_, i) => (
-                <Option key={i} label="Disabled" disabled />
-              ))}
+              {new Array(10)
+                .fill(null)
+                ?.map((_, i) => <Option key={i} label="Disabled" disabled />)}
             </Wrapper>
           ),
           title: 'Placement top, arrow center',
