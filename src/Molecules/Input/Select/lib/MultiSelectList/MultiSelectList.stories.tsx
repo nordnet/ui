@@ -50,9 +50,9 @@ export const ListWithDifferentArrowPositions = {
             <Wrapper position="left">
               <Option label="Default?" />
               <Option label="First" selected />
-              {new Array(10).fill(null)?.map((_, i) => (
-                <Option key={i} label="Disabled" disabled />
-              ))}
+              {new Array(10)
+                .fill(null)
+                ?.map((_, i) => <Option key={i} label="Disabled" disabled />)}
             </Wrapper>
           ),
           title: 'Placement Bottom, Arrow Default (Left)',
@@ -63,9 +63,9 @@ export const ListWithDifferentArrowPositions = {
               <Option label="Default?" />
               <Option label="First" selected />
               <Option label="SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond" />
-              {new Array(10).fill(null)?.map((_, i) => (
-                <Option key={i} label="Disabled" disabled />
-              ))}
+              {new Array(10)
+                .fill(null)
+                ?.map((_, i) => <Option key={i} label="Disabled" disabled />)}
             </Wrapper>
           ),
           title: 'Placement Bottom, Arrow Right',
@@ -76,9 +76,9 @@ export const ListWithDifferentArrowPositions = {
               <Option label="Default?" />
               <Option label="First" selected />
               <Option label="Second" />
-              {new Array(10).fill(null)?.map((_, i) => (
-                <Option key={i} label="Disabled" disabled />
-              ))}
+              {new Array(10)
+                .fill(null)
+                ?.map((_, i) => <Option key={i} label="Disabled" disabled />)}
             </Wrapper>
           ),
           title: 'Placement Bottom, Arrow Center',
@@ -89,9 +89,9 @@ export const ListWithDifferentArrowPositions = {
               <Option label="Default?" />
               <Option label="First" selected />
               <Option label="SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond" />
-              {new Array(10).fill(null)?.map((_, i) => (
-                <Option key={i} label="Disabled" disabled />
-              ))}
+              {new Array(10)
+                .fill(null)
+                ?.map((_, i) => <Option key={i} label="Disabled" disabled />)}
             </Wrapper>
           ),
           title: 'Placement Top, Arrow Default (right)',
@@ -101,9 +101,9 @@ export const ListWithDifferentArrowPositions = {
             <Wrapper position="left" placement="top">
               <Option label="Default?" />
               <Option label="First" selected />
-              {new Array(10).fill(null)?.map((_, i) => (
-                <Option key={i} label="Disabled" disabled />
-              ))}
+              {new Array(10)
+                .fill(null)
+                ?.map((_, i) => <Option key={i} label="Disabled" disabled />)}
             </Wrapper>
           ),
           title: 'Placement Top, Arrow Left',
@@ -114,9 +114,9 @@ export const ListWithDifferentArrowPositions = {
               <Option label="Default?" />
               <Option label="First" selected />
               <Option label="Second" />
-              {new Array(10).fill(null)?.map((_, i) => (
-                <Option key={i} label="Disabled" disabled />
-              ))}
+              {new Array(10)
+                .fill(null)
+                ?.map((_, i) => <Option key={i} label="Disabled" disabled />)}
             </Wrapper>
           ),
           title: 'Placement Top, Arrow Center',

@@ -3,7 +3,7 @@ import React from 'react';
 import { IconBase } from '../../IconBase';
 import { IconProps } from '../../IconBase.types';
 
-const Robot32: React.FC<IconProps> = props => {
+const Robot32: React.FC<IconProps> = (props) => {
   return (
     <IconBase {...props} width={32} height={32}>
       <path

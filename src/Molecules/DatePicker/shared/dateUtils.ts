@@ -118,8 +118,8 @@ export const getCalendar = (now: Date, opts?: Options): CalendarType => {
     ),
   );
 
-  calendar.dates = [...Array(6).keys()]?.map((w) =>
-    [...Array(7).keys()]?.map((d) => addDays(firstCalDay, w * 7 + d)),
+  calendar.dates = [...Array(6).keys()]?.map(
+    (w) => [...Array(7).keys()]?.map((d) => addDays(firstCalDay, w * 7 + d)),
   );
 
   return calendar;
