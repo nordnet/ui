@@ -1,3 +1,10 @@
+## [14.0.2](https://github.com/nordnet/ui/compare/v14.0.1...v14.0.2) (2023-11-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint to v15 ([#1491](https://github.com/nordnet/ui/issues/1491)) ([0ecbf30](https://github.com/nordnet/ui/commit/0ecbf30a28cb7478e62ecb0954ad9f1d35217df3))
+
 ## [14.0.1](https://github.com/nordnet/ui/compare/v14.0.0...v14.0.1) (2023-11-10)
 
 
