@@ -525,6 +525,6 @@ export const OverrideStep = () => {
   return <Example />;
 };
 
-overrideStep.story = {
+OverrideStep.story = {
   name: 'Override step',
 };
