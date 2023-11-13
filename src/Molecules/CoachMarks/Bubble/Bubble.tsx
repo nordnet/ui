@@ -24,7 +24,7 @@ const barStyles = css<CardProps>`
     content: '';
     display: block;
     width: 100%;
-    height: ${(p) => p.theme.spacing.unit(2)}px;
+    height: ${(p) => p.theme.spacing.unit(p.bottomSheet ? 4 : 2)}px;
     background: ${(p) => getColor(p)};
     position: absolute;
     top: 0;
