@@ -55,7 +55,10 @@ const Card = styled.div<CardProps>`
           transform: none !important;
           inset: auto auto 0px 0px !important;
           position: fixed !important;
-          border-radius: ${p.theme.borderRadius20} ${p.theme.borderRadius20} 0 0 !important; 
+          border-radius: 
+          ${p.barColor ? p.theme.borderRadius8 : p.theme.borderRadius20} 
+          ${p.barColor ? p.theme.borderRadius8 : p.theme.borderRadius20} 
+          0 0 !important; 
         `
         : ''}
   }

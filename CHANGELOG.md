@@ -1,3 +1,17 @@
+## [14.0.5](https://github.com/nordnet/ui/compare/v14.0.4...v14.0.5) (2023-11-16)
+
+
+### Bug Fixes
+
+* removed focuslock and added portal in coachmarks ([#1497](https://github.com/nordnet/ui/issues/1497)) ([d06b095](https://github.com/nordnet/ui/commit/d06b09547afedbc1b537b6716151c2c34f189d85))
+
+## [14.0.4](https://github.com/nordnet/ui/compare/v14.0.3...v14.0.4) (2023-11-14)
+
+
+### Bug Fixes
+
+* use same border radius in mobile as bar ([#1496](https://github.com/nordnet/ui/issues/1496)) ([49ac8cf](https://github.com/nordnet/ui/commit/49ac8cf5510e578c8cd010a3a39cc39cf7a2a41e))
+
 ## [14.0.3](https://github.com/nordnet/ui/compare/v14.0.2...v14.0.3) (2023-11-10)
 
 
