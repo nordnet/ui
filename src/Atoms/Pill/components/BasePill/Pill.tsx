@@ -10,7 +10,7 @@ const CleanDiv = React.forwardRef<HTMLDivElement, any>((props, ref) => (
 ));
 
 // TODO: move this into a shared utils file
-const getColor = (props: ExecutionContext & Props) => {
+const getColor = (props: Props & ExecutionContext) => {
   const { barColor, theme } = props;
 
   if (isFunction(barColor)) {

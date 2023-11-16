@@ -5,7 +5,7 @@ import { Component, Props, CardProps } from './Bubble.types';
 import { BORDER_SIZE } from './consts';
 import { isFunction } from '../../../common/utils';
 
-const getColor = (props: ExecutionContext & CardProps) => {
+const getColor = (props: CardProps & ExecutionContext) => {
   const { barColor, theme } = props;
 
   if (isFunction(barColor)) {

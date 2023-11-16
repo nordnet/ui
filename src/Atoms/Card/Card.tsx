@@ -4,7 +4,7 @@ import styled, { css, ExecutionContext } from 'styled-components';
 import { Props } from './Card.types';
 import { isFunction } from '../../common/utils';
 
-const getColor = (props: ExecutionContext & Props) => {
+const getColor = (props: Props & ExecutionContext) => {
   const { barColor, theme } = props;
 
   if (isFunction(barColor)) {

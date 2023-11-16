@@ -93,7 +93,7 @@ const getStylesForSize = (size: string) => css<Partial<Props>>`
   }
 `;
 
-const getColor = (props: ExecutionContext & Props) => {
+const getColor = (props: Props & ExecutionContext) => {
   const { backgroundColor, theme } = props;
 
   if (backgroundColor && typeof backgroundColor === 'function') {

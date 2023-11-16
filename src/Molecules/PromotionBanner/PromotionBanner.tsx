@@ -4,7 +4,7 @@ import styled, { ExecutionContext } from 'styled-components';
 import { PromotionBannerComponent, PromotionBannerProps } from './PromotionBanner.types';
 import { Badge, Box, Button, Flexbox, Icon, Typography, useMedia } from '../..';
 
-const getColor = (props: ExecutionContext & PromotionBannerProps) => {
+const getColor = (props: PromotionBannerProps & ExecutionContext) => {
   const { backgroundColor, theme } = props;
 
   if (backgroundColor === 'green') {

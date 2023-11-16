@@ -13,7 +13,7 @@ const WEIGHTS = {
 
 const SMALL_DEVICE_BP = 'sm';
 
-const getColor = (props: ExecutionContext & Props) => {
+const getColor = (props: Props & ExecutionContext) => {
   const { color, theme } = props;
 
   if (color && typeof color === 'function') {
@@ -38,7 +38,7 @@ export const TYPOGRAPHY_TYPES: Record<Types, Types> = {
   hero: 'hero',
 };
 
-const getTypeStyles = (props: ExecutionContext & Props) => {
+const getTypeStyles = (props: Props & ExecutionContext) => {
   const { type, weight, theme, lineHeight } = props;
   let mobile: FontProps;
   let desktop: FontProps = null;

@@ -19,11 +19,11 @@ const getEnabledColor = (color: LinkProps['color'], theme: Theme): string => {
 };
 
 const getSharedStyle = (
-  props: ExecutionContext & {
+  props: {
     disabled?: LinkProps['disabled'];
     $display?: LinkProps['display'];
     $color?: LinkProps['color'];
-  },
+  } & ExecutionContext,
 ) => {
   const { theme, disabled, $display = 'inline', $color } = props;
 

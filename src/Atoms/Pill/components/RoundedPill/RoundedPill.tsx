@@ -6,7 +6,7 @@ import { isFunction, isNumber } from '../../../../common/utils';
 import { Flexbox, Icon, Button, Development } from '../../../..';
 
 // TODO: move this into a shared utils file
-const getColor = (props: ExecutionContext & CircleProps) => {
+const getColor = (props: CircleProps & ExecutionContext) => {
   const { $color, theme } = props;
 
   if (isFunction($color)) {
