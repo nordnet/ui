@@ -45,7 +45,7 @@ const getDelay = (delay?: boolean | number) => {
   return delay === false ? 0 : 1000;
 };
 
-const RawSpinner: React.FC<Props> = ({ size = 4, color, id }) => {
+const RawSpinner = ({ size = 4, color, id }: Props) => {
   const theme = useTheme();
   const calculatedSize = theme.spacing.unit(size);
   const id1 = `spinner-${id}-1`;
@@ -81,7 +81,7 @@ const RawSpinner: React.FC<Props> = ({ size = 4, color, id }) => {
   );
 };
 
-export const Spinner: React.FC<Props> = ({ delay, fallback, ...restProps }) => {
+export const Spinner = ({ delay, fallback, ...restProps }: Props) => {
   const [spinning, setSpinning] = useState(false);
   const noDelay = delay === 0 || delay === false;
   useEffect(() => {
