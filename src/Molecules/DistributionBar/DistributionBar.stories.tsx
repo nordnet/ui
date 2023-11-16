@@ -65,9 +65,7 @@ export const Showcase = () => {
                   )
                 }
                 weight={(item.weight / highestValue) * 100}
-                avatarComponent={
-                  item.country ? <Flag size="m" country={item.country} /> : undefined
-                }
+                icon={item.country ? <Flag size="m" country={item.country} /> : undefined}
               >
                 <StyledFlexbox container>
                   <TruncateWithTooltip
@@ -89,11 +87,7 @@ export const Showcase = () => {
 
         <Flexbox item>
           <Typography>Custom icon</Typography>
-          <DistributionBar
-            label="Label"
-            weight={10}
-            avatarComponent={<Icon.Global16 />}
-          ></DistributionBar>
+          <DistributionBar label="Label" weight={10} icon={<Icon.Global16 />}></DistributionBar>
         </Flexbox>
         <Flexbox item container gap={2} direction="column">
           <Typography>Custom large image with adjusted padding</Typography>
@@ -147,7 +141,7 @@ export const Showcase = () => {
               </Link>
             }
             weight={0}
-            avatarComponent={<Flag size="m" country="SE" />}
+            icon={<Flag size="m" country="SE" />}
           ></DistributionBar>
         </Flexbox>
 
@@ -156,7 +150,7 @@ export const Showcase = () => {
           <DistributionBar
             label="Loooooooooooooooooooong naaaaaaaaaaaame"
             weight={0}
-            avatarComponent={<Flag size="m" country="SE" />}
+            icon={<Flag size="m" country="SE" />}
           >
             <StyledFlexbox container justifyContent="flex-end">
               <TruncateWithTooltip label={<Number value={10000000000000} currency="SEK" />}>
@@ -173,7 +167,7 @@ export const Showcase = () => {
           <DistributionBar
             label="Instrument name 1"
             weight={69}
-            avatarComponent={<Flag size="m" country="SE" />}
+            icon={<Flag size="m" country="SE" />}
           >
             <Flexbox container width="50%" justifyContent="space-between">
               <Flexbox item>
@@ -197,7 +191,7 @@ export const Showcase = () => {
               },
             }}
             weight={70}
-            avatarComponent={<Flag size="m" country="SE" />}
+            icon={<Flag size="m" country="SE" />}
           >
             <Flexbox container>
               <div>GAV</div>
@@ -215,7 +209,7 @@ export const Showcase = () => {
                 label={`Instrument name ${i + 1}`}
                 weight={Math.floor(Math.random() * 101)}
                 delay={0 + i / 5}
-                avatarComponent={<Flag size="m" country="SE" />}
+                icon={<Flag size="m" country="SE" />}
               >
                 <Flexbox container width="81px" justifyContent="flex-end">
                   <Number value={Math.floor(Math.random() * 101)} percentage decimals={2} />
