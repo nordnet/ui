@@ -1,6 +1,3 @@
-export type Variant = 'normal' | 'quiet';
-export type Size = Pick<Props, 'size'>;
-
 type DefaultPhoneNumberValue = {
   countryCode: string;
   phoneNumber: string;
@@ -29,7 +26,7 @@ export type Props = {
   fullWidth?: boolean;
   size?: 's';
   /** @default normal */
-  variant?: Variant;
+  variant?: 'normal' | 'quiet';
   /**
    * You need to specify width
    * (better in pixels), because
@@ -60,4 +57,30 @@ export type Props = {
    * @default true
    */
   disableSearchComponent?: boolean;
+};
+
+export type InputProps = Pick<
+  Props,
+  | 'onChange'
+  | 'defaultValue'
+  | 'autoComplete'
+  | 'autoFocus'
+  | 'disabled'
+  | 'id'
+  | 'maxLength'
+  | 'name'
+  | 'onClick'
+  | 'onMouseLeave'
+  | 'onKeyDown'
+  | 'onKeyPress'
+  | 'onKeyUp'
+  | 'placeholder'
+  | 'required'
+  | 'type'
+  | 'onFocus'
+> & {
+  $error: Props['error'];
+  $variant: Props['variant'];
+  $size: Props['size'];
+  $success: Props['success'];
 };

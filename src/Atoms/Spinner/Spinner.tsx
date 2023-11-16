@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import R from 'ramda';
-import styled, { withTheme } from 'styled-components';
+import styled, { useTheme } from 'styled-components';
 import { isArray, isString } from '../../common/utils';
-import { ColorFn, Props, PropsWithTheme } from './Spinner.types';
+import { ColorFn, Props } from './Spinner.types';
 import { Theme } from '../../theme/theme.types';
 
 const Animation = styled.span`
@@ -45,7 +45,8 @@ const getDelay = (delay?: boolean | number) => {
   return delay === false ? 0 : 1000;
 };
 
-const RawSpinner: React.FC<PropsWithTheme> = ({ theme, size = 4, color, id }) => {
+const RawSpinner = ({ size = 4, color, id }: Props) => {
+  const theme = useTheme();
   const calculatedSize = theme.spacing.unit(size);
   const id1 = `spinner-${id}-1`;
   const id2 = `spinner-${id}-2`;
@@ -80,7 +81,7 @@ const RawSpinner: React.FC<PropsWithTheme> = ({ theme, size = 4, color, id }) =>
   );
 };
 
-const TimeoutSpinner: React.FC<PropsWithTheme> = ({ delay, fallback, ...restProps }) => {
+export const Spinner = ({ delay, fallback, ...restProps }: Props) => {
   const [spinning, setSpinning] = useState(false);
   const noDelay = delay === 0 || delay === false;
   useEffect(() => {
@@ -100,7 +101,5 @@ const TimeoutSpinner: React.FC<PropsWithTheme> = ({ delay, fallback, ...restProp
 
   return null;
 };
-
-export const Spinner: React.FC<Props> = withTheme(TimeoutSpinner);
 
 Spinner.displayName = 'Spinner';

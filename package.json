@@ -59,7 +59,8 @@
     "react-remove-scroll": "^2.5.7",
     "react-uid": "^2.3.3",
     "scroll-into-view-if-needed": "^2.2.28",
-    "styled-components": "5.3.11",
+    "styled-components": "6.0.8",
+    "stylis": "4.3.0",
     "use-ssr": "^1.0.24",
     "xstate": "^4.23.1"
   },
@@ -98,7 +99,7 @@
     "babel-loader": "8.3.0",
     "babel-plugin-ramda": "2.1.1",
     "babel-plugin-react-remove-properties": "^0.3.0",
-    "babel-plugin-styled-components": "1.13.3",
+    "babel-plugin-styled-components": "2.1.4",
     "babel-plugin-transform-remove-imports": "1.7.0",
     "babel-preset-react-app": "^10.0.0",
     "codecov": "3.8.3",

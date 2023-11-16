@@ -10,11 +10,11 @@ const StyledTh = styled.th<Props>`
   text-align: ${(p) => p.textAlign};
   width: ${(p) => p.width};
 
-  :first-child {
+  &:first-child {
     padding-left: 0;
   }
 
-  :last-child {
+  &:last-child {
     padding-right: 0;
   }
 

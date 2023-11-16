@@ -1,8 +1,7 @@
 import React from 'react';
-import styled, { css, ThemedStyledProps } from 'styled-components';
+import styled, { css, ExecutionContext } from 'styled-components';
 import * as R from 'ramda';
 import { Props, Spacings } from './Box.types';
-import { Theme } from '../../theme/theme.types';
 import { isNumber, isString } from '../../common/utils';
 
 const isPropPresentedIn = (props: Props) => (prop: keyof Props) =>
@@ -94,7 +93,7 @@ const getStylesForSize = (size: string) => css<Partial<Props>>`
   }
 `;
 
-const getColor = (props: ThemedStyledProps<Props, Theme>) => {
+const getColor = (props: Props & ExecutionContext) => {
   const { backgroundColor, theme } = props;
 
   if (backgroundColor && typeof backgroundColor === 'function') {
