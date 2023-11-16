@@ -3,7 +3,7 @@ import React from 'react';
 import { IconBase } from '../../IconBase';
 import { IconProps } from '../../IconBase.types';
 
-const LikeFill8: React.FC<IconProps> = props => {
+const LikeFill8: React.FC<IconProps> = (props) => {
   return (
     <IconBase {...props} width={8} height={8}>
       <path

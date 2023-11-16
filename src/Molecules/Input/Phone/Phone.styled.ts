@@ -37,9 +37,11 @@ const borderStyles = css<{
     return p.theme.color.inputBorder;
   }};
   border-width: ${(p) => (p.$variant === 'quiet' ? '0 0 2px 0' : '1px')};
+
   &:focus {
     border-width: 1px;
   }
+
   position: relative;
   ${(p) =>
     p.$disabled && p.$variant === 'quiet'
@@ -53,6 +55,7 @@ export const placeholderNormalization = css<{ $variant: Props['variant'] }>`
     line-height: inherit;
     opacity: 1;
   }
+
   ${(p) =>
     p.$variant === 'quiet' ? `&:focus::placeholder { color: ${p.theme.color.disabledText}}` : ''};
   &:disabled::placeholder {
@@ -71,6 +74,7 @@ export const placeholderNormalization = css<{ $variant: Props['variant'] }>`
 export const StyledSelect = Select
   ? styled(Select)`
       max-width: 50px;
+
       & * {
         border: none;
       }
@@ -89,7 +93,7 @@ export const StyledInput = styled(NormalizedElements.Input)<InputProps>`
   color: ${({ theme }) => theme.color.text};
   width: 100%;
   height: 100%;
-  padding: 0px ${(p) => p.theme.spacing.unit(p.$variant === 'quiet' ? 0 : 2)}px;
+  padding: 0 ${(p) => p.theme.spacing.unit(p.$variant === 'quiet' ? 0 : 2)}px;
   margin: 0;
   box-sizing: border-box;
   line-height: inherit;

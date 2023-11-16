@@ -10,10 +10,12 @@ const Animation = styled.span`
     from {
       transform: rotate(0deg);
     }
+
     to {
       transform: rotate(360deg);
     }
   }
+
   display: inline-block;
   animation: spinner 0.6s linear infinite;
 `;

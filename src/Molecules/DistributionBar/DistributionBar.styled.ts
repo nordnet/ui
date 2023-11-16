@@ -15,8 +15,9 @@ export const Bar = styled.div`
   background-color: ${(p) => p.theme.color.tableEmphasis};
   z-index: -1;
   margin: 0 ${(p) => p.theme.spacing.unit(4)}px;
-  &:before,
-  &:after {
+
+  &::before,
+  &::after {
     position: absolute;
     content: '';
     display: block;
@@ -27,7 +28,8 @@ export const Bar = styled.div`
     top: 0;
     left: -${(p) => p.theme.spacing.unit(4)}px;
   }
-  &:after {
+
+  &::after {
     border-radius: 0 100px 100px 0;
     left: initial;
     right: -${(p) => p.theme.spacing.unit(4)}px;

@@ -78,7 +78,7 @@ const getColor = (theme: Theme, defaultColor: string, color?: ColorFn) =>
   (color && color(theme)) || defaultColor;
 
 const triangleCss = css<Props>`
-  &:before {
+  &::before {
     ${leftAndRightCss}
     ${commonTriangleCss}
     ${(p) =>
@@ -91,7 +91,8 @@ const triangleCss = css<Props>`
         color: p.borderColor,
       })}
   }
-  &:after {
+
+  &::after {
     ${leftAndRightCss}
     ${commonTriangleCss}
     ${(p) =>
@@ -126,7 +127,7 @@ export const DropdownBubble = styled.div<Props>`
       p.invertedColors ? p.theme.color.bubbleBackgroundInverted : p.theme.color.bubbleBackground,
       p.backgroundColor,
     )};
-  box-shadow: 0 2px 4px 0 rgba(40, 40, 35, 0.15);
+  box-shadow: 0 2px 4px 0 rgb(40 40 35 / 15%);
   color: ${(p) =>
     getColor(
       p.theme,

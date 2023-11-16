@@ -36,8 +36,8 @@ const StyledDropdownBubble = styled(DropdownBubble)`
   top: -10px;
   border-radius: ${({ theme }) => theme.borderRadius8};
 
-  &:after,
-  &:before {
+  &::after,
+  &::before {
     display: none;
   }
 `;

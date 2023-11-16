@@ -3,7 +3,7 @@ import React from 'react';
 import { IconBase } from '../../IconBase';
 import { IconProps } from '../../IconBase.types';
 
-const PollFill8: React.FC<IconProps> = props => {
+const PollFill8: React.FC<IconProps> = (props) => {
   return (
     <IconBase {...props} width={8} height={8}>
       <path d="M6 0H0V2H6V0Z" fill="currentColor" />

@@ -1,3 +1,24 @@
+## [14.0.3](https://github.com/nordnet/ui/compare/v14.0.2...v14.0.3) (2023-11-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency prettier to v3 ([#1493](https://github.com/nordnet/ui/issues/1493)) ([d3f5f89](https://github.com/nordnet/ui/commit/d3f5f89260f82ca2c288d46472395cf827342079))
+
+## [14.0.2](https://github.com/nordnet/ui/compare/v14.0.1...v14.0.2) (2023-11-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint to v15 ([#1491](https://github.com/nordnet/ui/issues/1491)) ([0ecbf30](https://github.com/nordnet/ui/commit/0ecbf30a28cb7478e62ecb0954ad9f1d35217df3))
+
+## [14.0.1](https://github.com/nordnet/ui/compare/v14.0.0...v14.0.1) (2023-11-10)
+
+
+### Bug Fixes
+
+* Adapt coachmarks to feedback widget behaviour ([#1492](https://github.com/nordnet/ui/issues/1492)) ([1ff4989](https://github.com/nordnet/ui/commit/1ff49891b4e5d12d91808626f95c970c42850a22))
+
 # [14.0.0](https://github.com/nordnet/ui/compare/v13.5.2...v14.0.0) (2023-11-09)
 
 

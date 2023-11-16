@@ -100,9 +100,7 @@ const BigTableTemplate = ({ columns, rows }: { columns: number; rows: number }) 
               </FlexTable.Header>
             ))}
           </FlexTable.HeaderRow>
-          {sortedData?.map((data) => (
-            <BigTableRow key={data.rowId} data={data} />
-          ))}
+          {sortedData?.map((data) => <BigTableRow key={data.rowId} data={data} />)}
         </FlexTable>
       );
     };
@@ -167,9 +165,7 @@ const BigTableWithoutStickyHeaderTemplate = ({
               </FlexTable.Header>
             ))}
           </FlexTable.HeaderRow>
-          {sortedData?.map((data) => (
-            <BigTableRow key={data.rowId} data={data} />
-          ))}
+          {sortedData?.map((data) => <BigTableRow key={data.rowId} data={data} />)}
         </FlexTable>
       );
     };
@@ -238,9 +234,7 @@ const MultipleBigTablesWithStickyHeadersTemplate = ({
                 </FlexTable.Header>
               ))}
             </FlexTable.HeaderRow>
-            {sortedData?.map((data) => (
-              <BigTableRow key={data.rowId} data={data} />
-            ))}
+            {sortedData?.map((data) => <BigTableRow key={data.rowId} data={data} />)}
           </FlexTable>
         </Box>
         <Typography type="title3">
@@ -261,9 +255,7 @@ const MultipleBigTablesWithStickyHeadersTemplate = ({
               </FlexTable.Header>
             ))}
           </FlexTable.HeaderRow>
-          {sortedData?.map((data) => (
-            <BigTableRow key={data.rowId} data={data} />
-          ))}
+          {sortedData?.map((data) => <BigTableRow key={data.rowId} data={data} />)}
         </FlexTable>
       </StyledBackground>
     );

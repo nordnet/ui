@@ -149,9 +149,10 @@ export const StyledProgressIndicator = styled.div`
   > div {
     position: relative;
     width: 100%;
-    top: 0px;
+    top: 0;
     padding: 0;
     margin-bottom: ${(p) => p.theme.spacing.unit(1)}px;
+
     > div > div > div {
       margin: 0;
     }

@@ -29,7 +29,7 @@ const StyledDiv = styled(CleanDiv)<Props>`
   ${(p) => (p.noPadding ? `` : `padding: 0 ${p.theme.spacing.unit(1)}px`)};
   box-sizing: border-box;
   background: ${({ theme }) => theme.color.card};
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.21);
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 21%);
   ${(p) => (p.barColor ? barStyles : ``)}
 `;
 

@@ -19,6 +19,7 @@ const StyledSvg = styled.svg<{ $initialStrokeDasharray?: string }>`
   circle:first-of-type {
     stroke: ${(t) => t.theme.colorTokens.neutral.background_medium};
   }
+
   circle:nth-of-type(2) {
     stroke: ${(t) => t.theme.colorTokens.action.background_default};
     animation: progress 0.5s ease-out forwards;

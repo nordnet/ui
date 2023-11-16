@@ -16,7 +16,7 @@ export type PromotionBannerProps = {
   /** @default module */
   scope?: 'module' | 'page';
   title?: string | React.ReactChild | React.ReactChild[];
-  justifyContent?: "flex-start" | "center" | "flex-end";
+  justifyContent?: 'flex-start' | 'center' | 'flex-end';
 };
 
 export type PromotionBannerComponent = React.FC<PromotionBannerProps>;

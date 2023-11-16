@@ -91,16 +91,18 @@ const StyledFlexbox = styled(Flexbox)<LineProps>`
   height: 2px;
   background-color: ${({ theme }) => theme.color.backgroundBlack};
   margin-bottom: ${({ theme }) => theme.spacing.unit(2)}px;
+
   &::before {
     display: block;
     content: '';
     position: absolute;
     bottom: -${({ theme }) => theme.spacing.unit(6)}px;
     margin-left: ${(p) => p.$averageValue}%;
-    width: 0px;
+    width: 0;
     height: ${({ theme }) => theme.spacing.unit(14)}px;
     border-left: 1px dashed ${({ theme }) => theme.color.label};
   }
+
   &::after {
     display: block;
     content: '';

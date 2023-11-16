@@ -1,0 +1,7 @@
+CHANGELOG.md
+.codecov.yml
+.storybook
+.stylelintrc
+jest.mocks.js
+jest.setup.js
+renovate.json

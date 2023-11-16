@@ -17,6 +17,7 @@ export const StyledBox = styled(Box)<{
   cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
   color: ${(p) => (p.disabled ? p.theme.color.disabledText : 'inherit')};
   background: ${(p) => (p.focused ? p.theme.color.background : p.theme.color.card)};
+
   &:hover {
     background: ${(p) =>
       !p.isKeyboardNavigation && !p.disabled ? p.theme.color.background : 'inherit'};

@@ -46,7 +46,7 @@ const Text = styled(Base)`
   margin-bottom: 0;
   border-radius: ${(p) => p.theme.borderRadius8};
 
-  &:empty:before {
+  &:empty::before {
     content: '\\00a0';
   }
 `;
