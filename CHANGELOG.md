@@ -1,3 +1,10 @@
+## [14.0.5](https://github.com/nordnet/ui/compare/v14.0.4...v14.0.5) (2023-11-16)
+
+
+### Bug Fixes
+
+* removed focuslock and added portal in coachmarks ([#1497](https://github.com/nordnet/ui/issues/1497)) ([d06b095](https://github.com/nordnet/ui/commit/d06b09547afedbc1b537b6716151c2c34f189d85))
+
 ## [14.0.4](https://github.com/nordnet/ui/compare/v14.0.3...v14.0.4) (2023-11-14)
 
 
