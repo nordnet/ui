@@ -1,3 +1,17 @@
+## [14.0.7](https://github.com/nordnet/ui/compare/v14.0.6...v14.0.7) (2023-11-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ramda to ^0.29.0 ([#1482](https://github.com/nordnet/ui/issues/1482)) ([da85cab](https://github.com/nordnet/ui/commit/da85cab0318b6fa912fbe1a34b8abb4cc9b15f48))
+
+## [14.0.6](https://github.com/nordnet/ui/compare/v14.0.5...v14.0.6) (2023-11-20)
+
+
+### Bug Fixes
+
+* **deps:** update jest to v29 (major) ([#1498](https://github.com/nordnet/ui/issues/1498)) ([6487eb3](https://github.com/nordnet/ui/commit/6487eb33423510070d06c1286bded1540c3dda78))
+
 ## [14.0.5](https://github.com/nordnet/ui/compare/v14.0.4...v14.0.5) (2023-11-16)
 
 

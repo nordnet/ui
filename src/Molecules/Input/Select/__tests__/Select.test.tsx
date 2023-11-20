@@ -8,7 +8,7 @@ import {
   waitFor,
 } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
-import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom';
 import { Select } from '../Select';
 import { createTheme } from '../../../../theme';
 import { useSelectMachineFromContext } from '../lib/context';
