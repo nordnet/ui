@@ -11,8 +11,8 @@ const Popsicle32: React.FC<IconProps> = (props) => {
         fill="currentColor"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M7 12C7 6.14463 10.8327 1 16 1C21.1673 1 25 6.14463 25 12C25 17.4709 21.6541 22.3213 17 22.9347V31H15V22.9347C10.3459 22.3213 7 17.4709 7 12ZM16 3C12.3307 3 9 6.80967 9 12C9 17.1903 12.3307 21 16 21C19.6693 21 23 17.1903 23 12C23 6.80967 19.6693 3 16 3Z"
         fill="currentColor"
       />
