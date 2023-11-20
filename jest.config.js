@@ -10,8 +10,4 @@ module.exports = {
     '\\.(mdx?)$': '<rootDir>/src/mdMock.ts',
     '\\.(jpg|png|svg)$': '<rootDir>/__mocks__/fileMock.js',
   },
-  transform: {
-    '^.+\\.[tj]sx?$': 'babel-jest',
-    '^.+\\.mdx?$': '@storybook/addon-docs/jest-transform-mdx',
-  },
 };
