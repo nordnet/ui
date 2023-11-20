@@ -1,3 +1,10 @@
+# [14.1.0](https://github.com/nordnet/ui/compare/v14.0.7...v14.1.0) (2023-11-20)
+
+
+### Features
+
+* **popsicle32:** add the 32 popsicle icon ([#1499](https://github.com/nordnet/ui/issues/1499)) ([8c66a40](https://github.com/nordnet/ui/commit/8c66a405a49383e39ab92d74295d43dd5412bdcb))
+
 ## [14.0.7](https://github.com/nordnet/ui/compare/v14.0.6...v14.0.7) (2023-11-20)
 
 
