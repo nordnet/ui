@@ -1,3 +1,10 @@
+## [14.0.6](https://github.com/nordnet/ui/compare/v14.0.5...v14.0.6) (2023-11-20)
+
+
+### Bug Fixes
+
+* **deps:** update jest to v29 (major) ([#1498](https://github.com/nordnet/ui/issues/1498)) ([6487eb3](https://github.com/nordnet/ui/commit/6487eb33423510070d06c1286bded1540c3dda78))
+
 ## [14.0.5](https://github.com/nordnet/ui/compare/v14.0.4...v14.0.5) (2023-11-16)
 
 
