@@ -8,14 +8,14 @@ export default {
   },
 };
 
-export const basicListItem = () => (
-  <ul>
-    <ListItem>
-      <Typography>List item</Typography>
-    </ListItem>
-  </ul>
-);
+export const BasicListItem = {
+  render: () => (
+    <ul>
+      <ListItem>
+        <Typography>List item</Typography>
+      </ListItem>
+    </ul>
+  ),
 
-basicListItem.story = {
   name: 'Basic list item',
 };

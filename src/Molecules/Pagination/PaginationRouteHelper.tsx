@@ -3,13 +3,18 @@ import { Route, Routes, useParams } from 'react-router';
 import { action } from '@storybook/addon-actions';
 import { Provider } from '../../common/Links/ReactRouterLinkHelper';
 
-interface PaginationRouteHelperProps {
+type SharedProps = {
   currentPage: number;
   setCurrentPage: (pageNumber: number) => void;
-  children?: React.ReactNode;
-}
+};
 
-const View: React.FC<PaginationRouteHelperProps> = ({ currentPage, setCurrentPage }) => {
+type ViewProps = SharedProps;
+
+type PaginationRouteHelperProps = SharedProps & {
+  children?: React.ReactNode;
+};
+
+const View = ({ currentPage, setCurrentPage }: ViewProps) => {
   const params = useParams();
 
   useEffect(() => {
@@ -27,11 +32,11 @@ const View: React.FC<PaginationRouteHelperProps> = ({ currentPage, setCurrentPag
   );
 };
 
-const PaginationRouteHelper: React.FC<PaginationRouteHelperProps> = ({
+const PaginationRouteHelper = ({
   children,
   currentPage,
   setCurrentPage,
-}) => {
+}: PaginationRouteHelperProps) => {
   return (
     <Provider>
       {children}

@@ -9,6 +9,7 @@ export type InfoBarProps = {
   variant?: Variant;
   onClose?: () => void;
   children?: React.ReactNode;
+  closeButtonText?: string;
 };
 
 export type InfoBarIconProps = {

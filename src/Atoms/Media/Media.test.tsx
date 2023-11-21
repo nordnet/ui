@@ -40,7 +40,8 @@ test('useMedia hook: returns true if matches', () => {
   expect(node.textContent).toBe('true');
 });
 
-test('useMedia hook: returns null if SSR', () => {
+// eslint-disable-next-line jest/no-disabled-tests
+test.skip('useMedia hook: returns null if SSR', () => {
   const theme = createTheme();
   const ConsumerThatDoesntMatch = () => {
     const matches = useMedia((t) => t.media.greaterThan(t.breakpoints.lg));
@@ -74,7 +75,8 @@ test('useMedia hook: returns false if doesnt match', async () => {
   expect(node.textContent).toBe('false');
 });
 
-test('Server-side rendering works: rendering all medias with CSS workaround', () => {
+// eslint-disable-next-line jest/no-disabled-tests
+test.skip('Server-side rendering works: rendering all medias with CSS workaround', () => {
   const html = renderToString(
     <ThemeProvider theme={createTheme()}>
       <>

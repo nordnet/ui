@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { actions } from '@storybook/addon-actions';
 
 import { Box, Flexbox, Input, Modal } from '../../..';
@@ -7,22 +7,29 @@ import { Props } from './Phone.types';
 
 const { onChange } = actions('onBlur', 'onFocus', 'onChange');
 
-export default {
-  title: 'Molecules / Input / Phone',
+const meta: Meta<typeof Input.Phone> = {
   component: Input.Phone,
-} as Meta;
-
-const Template: Story<Props> = (args) => <Input.Phone {...args} />;
-
-export const DefaultStory = Template.bind({});
-DefaultStory.args = {
-  name: 'default-example',
-  label: 'Phone number',
-  placeholder: '123 456 789',
+  title: 'Molecules / Input / Phone',
 };
-DefaultStory.storyName = 'Default';
 
-export const prefilledDefaultValues = () => (
+export default meta;
+type Story = StoryObj<typeof Input.Phone>;
+
+const Template = (args: Props) => <Input.Phone {...args} />;
+
+export const DefaultStory: Story = {
+  render: Template,
+
+  args: {
+    name: 'default-example',
+    label: 'Phone number',
+    placeholder: '123 456 789',
+  },
+
+  name: 'Default',
+};
+
+export const PrefilledDefaultValues = () => (
   <Input.Phone
     onChange={onChange}
     name="disabled-example"
@@ -31,7 +38,7 @@ export const prefilledDefaultValues = () => (
   />
 );
 
-export const autoFocus = () => (
+export const AutoFocus = () => (
   <Input.Phone
     name="default-example"
     label="Phone number"
@@ -41,7 +48,7 @@ export const autoFocus = () => (
   />
 );
 
-export const fullWidth = () => (
+export const FullWidth = () => (
   <Input.Phone
     name="full-width-example"
     label="Phone number"
@@ -51,7 +58,7 @@ export const fullWidth = () => (
   />
 );
 
-export const withHelpText = () => (
+export const WithHelpText = () => (
   <Input.Phone
     name="with-help-text-example"
     label="Phone number"
@@ -61,7 +68,7 @@ export const withHelpText = () => (
   />
 );
 
-export const hasError = () => (
+export const HasError = () => (
   <Input.Phone
     name="has-error-example"
     label="Phone number"
@@ -71,7 +78,7 @@ export const hasError = () => (
   />
 );
 
-export const hasSuccess = () => (
+export const HasSuccess = () => (
   <Input.Phone
     name="has-success-example"
     label="Phone number"
@@ -81,7 +88,7 @@ export const hasSuccess = () => (
   />
 );
 
-export const isDisabled = () => (
+export const IsDisabled = () => (
   <Input.Phone
     name="disabled-example"
     label="Phone number"
@@ -90,7 +97,7 @@ export const isDisabled = () => (
   />
 );
 
-export const sortByCountry = () => (
+export const SortByCountry = () => (
   <Flexbox container direction="column" gap={3}>
     <Input.Phone name="country-code-example" label="Sweden" sortByCountry="se" />
     <Input.Phone name="country-code-example" label="Denmark" sortByCountry="dk" />
@@ -100,47 +107,48 @@ export const sortByCountry = () => (
   </Flexbox>
 );
 
-export const EnableSearchComponent = Template.bind({});
-EnableSearchComponent.args = {
-  ...DefaultStory.args,
-  name: 'enable-search-component-example',
-  disableSearchComponent: false,
+export const EnableSearchComponent: Story = {
+  render: Template,
+
+  args: {
+    ...DefaultStory.args,
+    name: 'enable-search-component-example',
+    disableSearchComponent: false,
+  },
 };
 
-export const withLabelTooltipInsideModal = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(true);
+export const WithLabelTooltipInsideModal: Story = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
 
-    const onOpen = () => {
-      setOpen(true);
+      const onOpen = () => {
+        setOpen(true);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <>
+          <button type="button" onClick={onOpen}>
+            Open modal
+          </button>
+          <Modal onClose={onClose} title="Dialog information" open={open}>
+            <Box mb={2}>
+              <Input.Phone
+                name="country-code-example"
+                label="Sweden"
+                sortByCountry="se"
+                labelTooltipInModal
+                labelTooltip="Tooltip content"
+              />
+            </Box>
+          </Modal>
+        </>
+      );
     };
-
-    const onClose = () => {
-      setOpen(false);
-    };
-
-    return (
-      <>
-        <button type="button" onClick={onOpen}>
-          Open modal
-        </button>
-        <Modal onClose={onClose} title="Dialog information" open={open}>
-          <Box mb={2}>
-            <Input.Phone
-              name="country-code-example"
-              label="Sweden"
-              sortByCountry="se"
-              labelTooltipInModal
-              labelTooltip="Tooltip content"
-            />
-          </Box>
-        </Modal>
-      </>
-    );
-  };
-  return <Example />;
-};
-
-withLabelTooltipInsideModal.story = {
-  name: 'With label tooltip inside modal',
+    return <Example />;
+  },
 };

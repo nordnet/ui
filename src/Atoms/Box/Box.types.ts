@@ -26,7 +26,7 @@ type Margins = {
   my?: number | string;
   m?: number | string;
 };
-type Paddings = {
+export type Paddings = {
   pt?: number | string;
   pb?: number | string;
   pl?: number | string;

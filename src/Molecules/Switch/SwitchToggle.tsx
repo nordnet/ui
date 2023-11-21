@@ -29,7 +29,6 @@ const Knob = styled(Flexbox)<KnobWidth>`
 
   /* this padding is to battle the typography not being centered properly */
   padding-top: 1px;
-
   top: ${(p) => p.theme.spacing.unit(TRACK_PADDING)}px;
   left: ${(p) => p.theme.spacing.unit(TRACK_PADDING)}px;
   border-radius: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT)}px;
@@ -49,7 +48,7 @@ const Track = styled.span<Pick<SwitchToggleProps, 'width'>>`
   border-radius: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT)}px;
   line-height: ${(p) => p.theme.spacing.unit(TOGGLE_HEIGHT)}px;
   background-color: ${(p) => p.theme.color.background};
-  box-shadow: 0px 1px 3px 1px ${(p) => p.theme.color.background};
+  box-shadow: 0 1px 3px 1px ${(p) => p.theme.color.background};
 `;
 
 const ButtonContent = styled.div`
@@ -61,6 +60,7 @@ const Button = styled(NormalizedElements.Button)<Pick<SwitchToggleProps, 'width'
   background: none;
   padding: 0;
   border: 0;
+
   &[aria-checked='true'] {
     ${Knob} {
       transform: translate(

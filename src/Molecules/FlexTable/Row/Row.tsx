@@ -16,8 +16,8 @@ const getExpandableStyles = (
 ) => `
   padding-left: ${p.expandable ? p.theme.spacing.unit(2) : 0}px;
   border-left: ${p.theme.spacing.unit(0.5)}px solid ${
-  p.expanded && p.expandable ? p.theme.color.cta : 'transparent'
-};
+    p.expanded && p.expandable ? p.theme.color.cta : 'transparent'
+  };
    
  ${(() => {
    if (p.hideSeparator) {
@@ -54,17 +54,14 @@ type StyledRowProps = {
 /* the cells are padded by row gap 1 unit (4px) */
 const StyledRow = styled(Flexbox)<StyledRowProps>`
   background: ${(p) => p.theme.color.tableRowBackground};
-
   ${(p) =>
     p.$hoverHighlight &&
     !p.$expanded &&
     `&:hover {
       background: ${p.theme.color.tableRowHover};
     }`}
-
   margin-right: 0;
   margin-left: 0;
-
   cursor: ${({ $clickRowToExpand }) => ($clickRowToExpand ? 'pointer' : 'auto')};
 
   ${getStylesForSizes<

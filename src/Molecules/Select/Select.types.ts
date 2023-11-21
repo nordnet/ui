@@ -1,22 +1,22 @@
 import React from 'react';
-
-type Option = {
-  label: string;
-  value: string | number;
-};
+import { SelectProps } from '@mui/base';
 
 export type Props = {
-  options: Option[];
-  value?: string | number | string[] | number[];
-  hideLabel?: boolean;
+  children: React.ReactNode;
+  hasError?: boolean;
   placeholder?: string;
-  label: React.ReactNode;
+  size?: 's' | 'm';
+  /**
+   * required if select lives in a form
+   */
   name?: string;
-  disabled?: boolean;
-  onChange?: React.ChangeEventHandler;
-  onFocus?: React.FocusEventHandler;
-  onBlur?: React.FocusEventHandler;
-  className?: string;
-};
-
-export type SelectComponent = React.FunctionComponent<Props>;
+  /**
+   * width in units
+   */
+  width?: number;
+  fullWidth?: boolean;
+  value?: string | string[];
+  valueDisplay?: React.ReactNode;
+  trigger?: React.ReactNode;
+} & SelectProps<string, boolean>;
+// TODO: will we really expose all props from SelectProps?

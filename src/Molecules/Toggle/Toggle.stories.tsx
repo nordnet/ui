@@ -11,14 +11,14 @@ export default {
   },
 };
 
-export const defaultOff = () => (
+export const DefaultOff = () => (
   <Box py={4}>
     {' '}
     <Toggle label="Notify me by email" onClick={action('clicked')} />
   </Box>
 );
 
-export const defaultOn = () => (
+export const DefaultOn = () => (
   <>
     <Box py={4}>
       <Toggle label="Size: large" size="l" onClick={action('clicked')} checkedInitially />
@@ -32,62 +32,66 @@ export const defaultOn = () => (
   </>
 );
 
-export const disabledStory = () => (
-  <>
-    <Box py={4}>
-      <Toggle label="Disabled on" checkedInitially disabled />
-    </Box>
-    <Box py={4}>
-      <Toggle label="Disabled off" disabled />
-    </Box>
-  </>
-);
+export const DisabledStory = {
+  render: () => (
+    <>
+      <Box py={4}>
+        <Toggle label="Disabled on" checkedInitially disabled />
+      </Box>
+      <Box py={4}>
+        <Toggle label="Disabled off" disabled />
+      </Box>
+    </>
+  ),
 
-disabledStory.story = {
   name: 'Disabled',
 };
 
-export const controlledBehaviour = () => {
-  const ControlledExample = () => {
-    const [checked, setChecked] = useState(true);
+export const ControlledBehaviour = {
+  render: () => {
+    const ControlledExample = () => {
+      const [checked, setChecked] = useState(true);
 
-    return (
-      <Box py={4}>
-        {' '}
-        <Toggle label="Notify me by email" onClick={() => setChecked(!checked)} checked={checked} />
-      </Box>
-    );
-  };
-  return <ControlledExample />;
-};
+      return (
+        <Box py={4}>
+          {' '}
+          <Toggle
+            label="Notify me by email"
+            onClick={() => setChecked(!checked)}
+            checked={checked}
+          />
+        </Box>
+      );
+    };
+    return <ControlledExample />;
+  },
 
-controlledBehaviour.story = {
   name: 'Controlled behaviour',
 };
 
-export const withLabelPropAsReactNode = () => (
-  <Box py={4}>
-    {' '}
-    <Toggle label={<Typography>Notify me by email</Typography>} onClick={action('clicked')} />
-  </Box>
-);
+export const WithLabelPropAsReactNode = {
+  render: () => (
+    <Box py={4}>
+      {' '}
+      <Toggle label={<Typography>Notify me by email</Typography>} onClick={action('clicked')} />
+    </Box>
+  ),
 
-withLabelPropAsReactNode.story = {
   name: 'With Label prop as ReactNode',
 };
 
-export const withHiddenLabel = () => (
-  <Box py={4}>
-    {' '}
-    <Toggle label="Notify me by email" onClick={action('clicked')} hiddenLabel />
-  </Box>
-);
+export const WithHiddenLabel = {
+  render: () => (
+    <Box py={4}>
+      {' '}
+      <Toggle label="Notify me by email" onClick={action('clicked')} hiddenLabel />
+    </Box>
+  ),
 
-withHiddenLabel.story = {
   name: 'With hidden label',
 };
 
-export const readOnly = () => (
+export const ReadOnly = () => (
   <Display
     items={[
       {

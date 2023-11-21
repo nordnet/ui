@@ -40,7 +40,7 @@ const variantStyles = (theme: Theme, variant: string, $selected: boolean) =>
       }
       `}
     `,
-  }[variant]);
+  })[variant];
 
 export const ContainerLabel = styled.label<{
   $disabled: boolean;
@@ -58,13 +58,19 @@ export const ContainerLabel = styled.label<{
   color: ${(p) => p.theme.color.quickFilterText};
   background: ${(p) => p.theme.color.quickFilterBackground};
   outline-offset: -1px;
+
   &:hover {
     color: ${(p) => p.theme.color.quickFilterSelectedText};
   }
+
   &:focus-visible {
     outline: 1px solid ${(p) => p.theme.color.quickFilterFocusOutline};
   }
-  transition: color 222ms, background 222ms, outline 222ms;
+
+  transition:
+    color 222ms,
+    background 222ms,
+    outline 222ms;
 
   ${({ theme, variant, $selected }) => variantStyles(theme, variant, $selected)}
   ${({ hasLabel, theme }) =>

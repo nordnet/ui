@@ -21,27 +21,27 @@ export default {
   },
 };
 
-export const basicAllocationBar = () => {
-  const mockedAllocations = [
-    {
-      label: 'ETFs',
-      color: (t: Theme) => t.color.allocationBarLightBlue,
-      weight: 20,
-    },
-    {
-      label: 'Funds',
-      color: (t: Theme) => t.color.allocationBarDarkBlue,
-      weight: 80,
-    },
-  ];
+export const BasicAllocationBar = {
+  render: () => {
+    const mockedAllocations = [
+      {
+        label: 'ETFs',
+        color: (t: Theme) => t.color.allocationBarLightBlue,
+        weight: 20,
+      },
+      {
+        label: 'Funds',
+        color: (t: Theme) => t.color.allocationBarDarkBlue,
+        weight: 80,
+      },
+    ];
 
-  return (
-    <StyledContainer>
-      <AllocationBar allocations={mockedAllocations} />
-    </StyledContainer>
-  );
-};
+    return (
+      <StyledContainer>
+        <AllocationBar allocations={mockedAllocations} />
+      </StyledContainer>
+    );
+  },
 
-basicAllocationBar.story = {
   name: 'Basic usage',
 };

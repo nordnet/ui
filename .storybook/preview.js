@@ -1,7 +1,5 @@
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
-import { DocsWrapper, ThemeDecorator } from './ThemeDecorator';
-import { setIntlConfig, withIntl } from 'storybook-addon-intl';
-import { DocsPage } from '@storybook/addon-docs';
+import { ThemeDecorator, DocsWrapper } from './ThemeDecorator';
 
 const customViewports = {
   tablet: {
@@ -41,28 +39,42 @@ const customViewports = {
   },
 };
 
-export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
+export const decorators = [ThemeDecorator];
+
+const preview = {
+  parameters: {
+    intl: {
+      locales: ['sv', 'nb', 'da', 'fi', 'en'],
+      defaultLocale: 'sv',
+      getMessages: () => {},
+      getFormats: () => {},
+      timeZone: 'UTC',
     },
-  },
-  viewport: { viewports: { ...INITIAL_VIEWPORTS, ...customViewports } },
-  docs: {
-    container: DocsWrapper,
-    page: DocsPage,
+    viewport: { viewports: { ...INITIAL_VIEWPORTS, ...customViewports } },
+    actions: { argTypesRegex: '^on[A-Z].*' },
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/,
+      },
+    },
+    docs: {
+      container: DocsWrapper,
+    },
+    options: {
+      storySort: {
+        order: [
+          'Design System',
+          'Atoms',
+          'Molecules',
+          'Organisms',
+          '*',
+          'DEPRECATED',
+          ['Atoms', 'Molecules', 'Organisms'],
+        ],
+      },
+    },
   },
 };
 
-setIntlConfig({
-  locales: ['sv', 'nb', 'da', 'fi', 'en'],
-  defaultLocale: 'en',
-  getMessages: () => {},
-  getFormats: () => {},
-  // Solves problem with snapshots for time component
-  timeZone: 'UTC',
-});
-
-export const decorators = [ThemeDecorator, withIntl];
+export default preview;

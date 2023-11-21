@@ -27,6 +27,7 @@ const TwoButtonBox = styled.div`
   gap: ${(t) => t.theme.spacing.unit(3)}px;
   justify-content: flex-end;
   padding-left: ${(t) => t.theme.spacing.unit(3)}px;
+
   & button,
   & a {
     flex-basis: 50%;
@@ -49,10 +50,11 @@ const CheckListStep: FC<CheckListStepProps> = ({
   const isMobile = useMedia((theme) => theme.media.lessThan(theme.breakpoints.sm));
   const isCompleted = task.taskState === 'COMPLETED' || task.taskState === 'DISMISSED';
   const { taskState, percentage } = task;
-  const { onDismiss, startAction, icon, title, description } = taskInfo || {};
+  const { onDismiss, startAction, icon, title, description, customPercentage } = taskInfo || {};
+  const getPercentage = percentage || customPercentage;
 
   /* Buttons in drawer */
-  const buttons = isDrawer && taskState === 'INCOMPLETE' && (
+  const buttons = isDrawer && taskState !== 'COMPLETED' && taskState !== 'DISMISSED' && (
     <TwoButtonBox>
       <Button
         variant="neutral"
@@ -105,10 +107,10 @@ const CheckListStep: FC<CheckListStepProps> = ({
     <TextButtonCard
       titleIcon={icon || <Icon.Lightbulb24 />}
       title={title || 'Default title'}
-      titleBadgeText={!isCompleted ? `+${percentage}%` : undefined}
+      titleBadgeText={!isCompleted ? `+${getPercentage}%` : undefined}
       description={description || 'Default description'}
       buttonText={!isDrawer && !isMobile && startAction ? startAction.label : ''}
-      action={!isDrawer ? startAction : undefined}
+      action={!isDrawer || (isDrawer && isCompleted) ? startAction : undefined}
       statusIcon={isDrawer && isCompleted && <Icon.CheckCircleFill24 />}
     >
       {buttons}

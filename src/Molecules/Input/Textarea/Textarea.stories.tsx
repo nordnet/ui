@@ -21,285 +21,271 @@ export default {
   },
 };
 
-export const defaultStory = () => <Input.Textarea label="Label" placeholder="Placeholder" />;
-
-defaultStory.story = {
-  name: 'Default',
+export const Default = {
+  render: () => <Input.Textarea label="Label" placeholder="Placeholder" />,
 };
 
-export const withValueControlledBehaviour = () => (
-  <Input.Textarea label="Label" placeholder="Placeholder" value="Some predefined text" />
-);
+export const WithValueControlledBehaviour = {
+  render: () => (
+    <Input.Textarea label="Label" placeholder="Placeholder" value="Some predefined text" />
+  ),
 
-withValueControlledBehaviour.story = {
   name: 'With value (Controlled behaviour)',
 };
 
-export const withDefaultValueUncontrolledBehaviour = () => (
-  <Input.Textarea label="Label" placeholder="Placeholder" defaultValue="Some predefined text" />
-);
+export const WithDefaultValueUncontrolledBehaviour = {
+  render: () => (
+    <Input.Textarea label="Label" placeholder="Placeholder" defaultValue="Some predefined text" />
+  ),
 
-withDefaultValueUncontrolledBehaviour.story = {
   name: 'With default value (Uncontrolled behaviour)',
 };
 
-export const errorIfEmptyText = () => {
-  const Component = () => {
-    const [value, setValue] = useState('');
+export const ErrorIfEmptyText = {
+  render: () => {
+    const Component = () => {
+      const [value, setValue] = useState('');
 
-    return (
-      <Input.Textarea
-        label="My awesome text field"
-        placeholder="This is a placeholder"
-        onChange={(e) => setValue(e.target.value)}
-        {...(value === '' ? { error: 'Something went wrong' } : {})}
-      />
-    );
-  };
-  return <Component />;
-};
+      return (
+        <Input.Textarea
+          label="My awesome text field"
+          placeholder="This is a placeholder"
+          onChange={(e) => setValue(e.target.value)}
+          {...(value === '' ? { error: 'Something went wrong' } : {})}
+        />
+      );
+    };
+    return <Component />;
+  },
 
-errorIfEmptyText.story = {
   name: 'Error if empty text',
 };
 
-export const successStory = () => (
-  <Input.Textarea label="Label" placeholder="Placeholder" success />
-);
+export const SuccessStory = {
+  render: () => <Input.Textarea label="Label" placeholder="Placeholder" success />,
 
-successStory.story = {
   name: 'Success',
 };
 
-export const disabledStory = () => (
-  <Input.Textarea label="Label" placeholder="Placeholder" disabled />
-);
+export const DisabledStory = {
+  render: () => <Input.Textarea label="Label" placeholder="Placeholder" disabled />,
 
-disabledStory.story = {
   name: 'Disabled',
 };
 
-export const withAutoFocus = () => (
-  <Input.Textarea label="Label" placeholder="Placeholder" autoFocus />
-);
+export const WithAutoFocus = {
+  render: () => <Input.Textarea label="Label" placeholder="Placeholder" autoFocus />,
 
-withAutoFocus.story = {
   name: 'With auto focus',
 };
 
-export const requiredStory = () => (
-  <Display
-    title="Required"
-    items={[
-      {
-        component: <Input.Textarea label="Label" placeholder="Placeholder" required />,
-        title: 'Default (without star)',
-      },
-      {
-        component: (
-          <Input.Textarea
-            label="Label"
-            placeholder="Placeholder"
-            required
-            visuallyEmphasiseRequired
-          />
-        ),
-        title: 'With star',
-      },
-    ]}
-  />
-);
-
-requiredStory.story = {
-  name: 'Required',
-};
-
-export const actionsStory = () => (
-  <>
-    <p>
-      Actions are a bit laggy because of the @storybook/addon-actions. Prod performance is not
-      affected.
-    </p>
-    <Input.Textarea label="Label" placeholder="Placeholder" {...handlers} />
-  </>
-);
-
-actionsStory.story = {
-  name: 'Actions',
-};
-
-export const extraInfoBelow = () => (
-  <Input.Textarea label="Label" placeholder="Placeholder" extraInfo="Use this space wisely" />
-);
-
-extraInfoBelow.story = {
-  name: 'Extra info below',
-};
-
-export const extraInfoWithError = () => {
-  const Component = () => {
-    const [value, setValue] = useState('');
-
-    return (
-      <Input.Textarea
-        label="My awesome text field"
-        placeholder="This is a placeholder"
-        extraInfo="Use this space wisely"
-        onChange={(e) => setValue(e.target.value)}
-        {...(value === '' ? { error: 'Enter text' } : {})}
-      />
-    );
-  };
-  return <Component />;
-};
-
-extraInfoWithError.story = {
-  name: 'Extra info with error',
-};
-
-export const edgeCases = () => (
-  <Display
-    items={[
-      {
-        component: (
-          <Input.Textarea
-            label="Too long label, goes into ellipsis. Consider smaller label or bigger input"
-            placeholder="If placeholder goes too long though, it probably should be truncated into ellipsis, right?"
-            extraInfo="This is much necessary info wow"
-          />
-        ),
-        title: 'Long values',
-      },
-      {
-        component: (
-          <Input.Textarea
-            label="Small label"
-            placeholder=""
-            extraInfo="Big extra fat extraInfo that will wrap over many lines. Be careful with this pattern, use it only with small texts!"
-          />
-        ),
-        title: 'Long extraInfo',
-      },
-    ]}
-  />
-);
-
-edgeCases.story = {
-  name: 'Edge cases',
-};
-
-export const fullWidth = () => (
-  <Input.Textarea label="Label" width="100%" placeholder="Placeholder" />
-);
-
-fullWidth.story = {
-  name: 'Full width',
-};
-
-export const specificWidth = () => (
-  <Input.Textarea label="Label" width="400px" placeholder="Placeholder" />
-);
-
-specificWidth.story = {
-  name: 'Specific width',
-};
-
-export const hiddenLabel = () => (
-  <Input.Textarea label="Label" placeholder="Placeholder" hideLabel />
-);
-
-hiddenLabel.story = {
-  name: 'Hidden label',
-};
-
-export const withLabelTooltip = () => (
-  <Input.Textarea label="Label" labelTooltip="Tooltip content" placeholder="Placeholder" />
-);
-
-withLabelTooltip.story = {
-  name: 'With tooltip as label addon',
-};
-
-export const withLabelTooltipPositionTop = () => (
-  <>
-    <br />
-    <br />
-    <Input.Textarea
-      label="Label"
-      labelTooltip="Tooltip content"
-      labelTooltipPosition="top"
-      placeholder="Placeholder"
-    />
-  </>
-);
-
-withLabelTooltipPositionTop.story = {
-  name: 'With tooltip (position top) as label addon',
-};
-
-export const onAColouredBackground = () => (
-  <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
-    <Input.Textarea label="On a colored background" placeholder="Placeholder" />
-  </Box>
-);
-
-onAColouredBackground.story = {
-  name: 'On a coloured background',
-};
-
-export const withMaxLength = () => (
-  <>
-    <Input.Textarea label="Label" maxLength={20} />
-  </>
-);
-
-withMaxLength.story = {
-  name: 'With max length 20 characters',
-};
-
-export const withResizeNone = () => (
-  <>
-    <Input.Textarea label="Label" noResize />
-  </>
-);
-
-withResizeNone.story = {
-  name: 'With resize none',
-};
-
-export const withLabelTooltipInsideModal = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(true);
-
-    const onOpen = () => {
-      setOpen(true);
-    };
-
-    const onClose = () => {
-      setOpen(false);
-    };
-
-    return (
-      <>
-        <button type="button" onClick={onOpen}>
-          Open modal
-        </button>
-        <Modal onClose={onClose} title="Dialog information" open={open}>
-          <Box mb={2}>
+export const RequiredStory = {
+  render: () => (
+    <Display
+      title="Required"
+      items={[
+        {
+          component: <Input.Textarea label="Label" placeholder="Placeholder" required />,
+          title: 'Default (without star)',
+        },
+        {
+          component: (
             <Input.Textarea
               label="Label"
               placeholder="Placeholder"
-              labelTooltip="Tooltip content"
-              labelTooltipInModal
+              required
+              visuallyEmphasiseRequired
             />
-          </Box>
-        </Modal>
-      </>
-    );
-  };
-  return <Example />;
+          ),
+          title: 'With star',
+        },
+      ]}
+    />
+  ),
+
+  name: 'Required',
 };
 
-withLabelTooltipInsideModal.story = {
+export const ActionsStory = {
+  render: () => (
+    <>
+      <p>
+        Actions are a bit laggy because of the @storybook/addon-actions. Prod performance is not
+        affected.
+      </p>
+      <Input.Textarea label="Label" placeholder="Placeholder" {...handlers} />
+    </>
+  ),
+
+  name: 'Actions',
+};
+
+export const ExtraInfoBelow = {
+  render: () => (
+    <Input.Textarea label="Label" placeholder="Placeholder" extraInfo="Use this space wisely" />
+  ),
+
+  name: 'Extra info below',
+};
+
+export const ExtraInfoWithError = {
+  render: () => {
+    const Component = () => {
+      const [value, setValue] = useState('');
+
+      return (
+        <Input.Textarea
+          label="My awesome text field"
+          placeholder="This is a placeholder"
+          extraInfo="Use this space wisely"
+          onChange={(e) => setValue(e.target.value)}
+          {...(value === '' ? { error: 'Enter text' } : {})}
+        />
+      );
+    };
+    return <Component />;
+  },
+
+  name: 'Extra info with error',
+};
+
+export const EdgeCases = {
+  render: () => (
+    <Display
+      items={[
+        {
+          component: (
+            <Input.Textarea
+              label="Too long label, goes into ellipsis. Consider smaller label or bigger input"
+              placeholder="If placeholder goes too long though, it probably should be truncated into ellipsis, right?"
+              extraInfo="This is much necessary info wow"
+            />
+          ),
+          title: 'Long values',
+        },
+        {
+          component: (
+            <Input.Textarea
+              label="Small label"
+              placeholder=""
+              extraInfo="Big extra fat extraInfo that will wrap over many lines. Be careful with this pattern, use it only with small texts!"
+            />
+          ),
+          title: 'Long extraInfo',
+        },
+      ]}
+    />
+  ),
+
+  name: 'Edge cases',
+};
+
+export const FullWidth = {
+  render: () => <Input.Textarea label="Label" width="100%" placeholder="Placeholder" />,
+
+  name: 'Full width',
+};
+
+export const SpecificWidth = {
+  render: () => <Input.Textarea label="Label" width="400px" placeholder="Placeholder" />,
+
+  name: 'Specific width',
+};
+
+export const HiddenLabel = {
+  render: () => <Input.Textarea label="Label" placeholder="Placeholder" hideLabel />,
+
+  name: 'Hidden label',
+};
+
+export const WithLabelTooltip = {
+  render: () => (
+    <Input.Textarea label="Label" labelTooltip="Tooltip content" placeholder="Placeholder" />
+  ),
+
+  name: 'With tooltip as label addon',
+};
+
+export const WithLabelTooltipPositionTop = {
+  render: () => (
+    <>
+      <br />
+      <br />
+      <Input.Textarea
+        label="Label"
+        labelTooltip="Tooltip content"
+        labelTooltipPosition="top"
+        placeholder="Placeholder"
+      />
+    </>
+  ),
+
+  name: 'With tooltip (position top) as label addon',
+};
+
+export const OnAColouredBackground = {
+  render: () => (
+    <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
+      <Input.Textarea label="On a colored background" placeholder="Placeholder" />
+    </Box>
+  ),
+
+  name: 'On a coloured background',
+};
+
+export const WithMaxLength = {
+  render: () => (
+    <>
+      <Input.Textarea label="Label" maxLength={20} />
+    </>
+  ),
+
+  name: 'With max length 20 characters',
+};
+
+export const WithResizeNone = {
+  render: () => (
+    <>
+      <Input.Textarea label="Label" noResize />
+    </>
+  ),
+
+  name: 'With resize none',
+};
+
+export const WithLabelTooltipInsideModal = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
+
+      const onOpen = () => {
+        setOpen(true);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <>
+          <button type="button" onClick={onOpen}>
+            Open modal
+          </button>
+          <Modal onClose={onClose} title="Dialog information" open={open}>
+            <Box mb={2}>
+              <Input.Textarea
+                label="Label"
+                placeholder="Placeholder"
+                labelTooltip="Tooltip content"
+                labelTooltipInModal
+              />
+            </Box>
+          </Modal>
+        </>
+      );
+    };
+    return <Example />;
+  },
+
   name: 'With label tooltip inside modal',
 };

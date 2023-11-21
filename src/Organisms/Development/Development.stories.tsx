@@ -10,7 +10,7 @@ export default {
   title: 'Organisms / Development',
 };
 
-export const documentation = () => (
+export const Documentation = () => (
   <Typography>
     <MD>{docs}</MD>
     <div>
@@ -25,156 +25,146 @@ export const documentation = () => (
   </Typography>
 );
 
-export const defaultStory = () => (
-  <Display
-    items={[
-      { title: 'Positive value', component: <Development value={50} /> },
-      { title: 'Zero value', component: <Development value={0} /> },
-      { title: 'Negative value', component: <Development value={-200} /> },
-    ]}
-  />
-);
-
-defaultStory.story = {
-  name: 'Default',
+export const Default = {
+  render: () => (
+    <Display
+      items={[
+        { title: 'Positive value', component: <Development value={50} /> },
+        { title: 'Zero value', component: <Development value={0} /> },
+        { title: 'Negative value', component: <Development value={-200} /> },
+      ]}
+    />
+  ),
 };
 
-export const withIcon = () => (
-  <Display
-    items={[
-      { title: 'Positive value', component: <Development value={50} icon /> },
-      { title: 'Zero value', component: <Development value={0} icon /> },
-      { title: 'Negative value', component: <Development value={-200} icon /> },
-    ]}
-  />
-);
-
-withIcon.story = {
-  name: 'With icon',
+export const WithIcon = {
+  render: () => (
+    <Display
+      items={[
+        { title: 'Positive value', component: <Development value={50} icon /> },
+        { title: 'Zero value', component: <Development value={0} icon /> },
+        { title: 'Negative value', component: <Development value={-200} icon /> },
+      ]}
+    />
+  ),
 };
 
-export const asPercentage = () => (
-  <Display
-    items={[
-      { title: 'Positive value', component: <Development value={5.4} percentage /> },
-      { title: 'Zero value', component: <Development value={0} percentage /> },
-      { title: 'Negative value', component: <Development value={-2.1} percentage /> },
-    ]}
-  />
-);
-
-asPercentage.story = {
-  name: 'As percentage',
+export const AsPercentage = {
+  render: () => (
+    <Display
+      items={[
+        { title: 'Positive value', component: <Development value={5.4} percentage /> },
+        { title: 'Zero value', component: <Development value={0} percentage /> },
+        { title: 'Negative value', component: <Development value={-2.1} percentage /> },
+      ]}
+    />
+  ),
 };
 
-export const asCurrency = () => (
-  <Display
-    items={[
-      { title: 'Positive value', component: <Development value={50} currency="USD" /> },
-      { title: 'Zero value', component: <Development value={0} currency="USD" /> },
-      { title: 'Negative value', component: <Development value={-200} currency="USD" /> },
-    ]}
-  />
-);
-
-asCurrency.story = {
-  name: 'As currency',
+export const AsCurrency = {
+  render: () => (
+    <Display
+      items={[
+        { title: 'Positive value', component: <Development value={50} currency="USD" /> },
+        { title: 'Zero value', component: <Development value={0} currency="USD" /> },
+        { title: 'Negative value', component: <Development value={-200} currency="USD" /> },
+      ]}
+    />
+  ),
 };
 
-export const withDifferentColors = () => (
-  <Display
-    items={[
-      {
-        title: 'Positive value',
-        component: <Development value={50} positiveColor={(c) => c.color.positive} />,
-      },
-      { title: 'Zero value', component: <Development value={0} /> },
-      {
-        title: 'Negative value',
-        component: <Development value={-200} negativeColor={(c) => c.color.negative} />,
-      },
-    ]}
-  />
-);
-
-withDifferentColors.story = {
-  name: 'With different colors',
+export const WithDifferentColors = {
+  render: () => (
+    <Display
+      items={[
+        {
+          title: 'Positive value',
+          component: <Development value={50} positiveColor={(c) => c.color.positive} />,
+        },
+        { title: 'Zero value', component: <Development value={0} /> },
+        {
+          title: 'Negative value',
+          component: <Development value={-200} negativeColor={(c) => c.color.negative} />,
+        },
+      ]}
+    />
+  ),
 };
 
-export const regressionInfinity = () => (
-  <Display
-    items={[
-      { title: '+Infinity', component: <Development value={Infinity} /> },
-      { title: '-Infinity', component: <Development value={-Infinity} /> },
-    ]}
-  />
-);
+export const RegressionInfinity = {
+  render: () => (
+    <Display
+      items={[
+        { title: '+Infinity', component: <Development value={Infinity} /> },
+        { title: '-Infinity', component: <Development value={-Infinity} /> },
+      ]}
+    />
+  ),
 
-regressionInfinity.story = {
   name: 'Regression: infinity',
 };
 
-export const regressionValueIsNonZeroButRoundedValueIs0 = () => (
-  <Display
-    items={[
-      {
-        title: '`value = 0.3` and decimals = 0',
-        component: <Development value={0.3} decimals={0} />,
-      },
-      {
-        title: '`value = -0.3 and decimals = 0`',
-        component: <Development value={-0.3} decimals={0} />,
-      },
-      {
-        title: '`value = -1.3123 and decimals = 3`',
-        component: <Development value={-1.3123} decimals={3} />,
-      },
-      {
-        title: '`value = -0.3 and maximumDecimals = 0`',
-        component: <Development value={-0.3} maximumDecimals={0} />,
-      },
-      {
-        title: '`value = 0.3`',
-        component: (
-          <Development
-            value={+0.3}
-            ticks={[
-              {
-                fromPrice: 0,
-                toPrice: 1000,
-                decimals: 0,
-                tick: 1,
-              },
-            ]}
-          />
-        ),
-      },
-    ]}
-  />
-);
+export const RegressionValueIsNonZeroButRoundedValueIs0 = {
+  render: () => (
+    <Display
+      items={[
+        {
+          title: '`value = 0.3` and decimals = 0',
+          component: <Development value={0.3} decimals={0} />,
+        },
+        {
+          title: '`value = -0.3 and decimals = 0`',
+          component: <Development value={-0.3} decimals={0} />,
+        },
+        {
+          title: '`value = -1.3123 and decimals = 3`',
+          component: <Development value={-1.3123} decimals={3} />,
+        },
+        {
+          title: '`value = -0.3 and maximumDecimals = 0`',
+          component: <Development value={-0.3} maximumDecimals={0} />,
+        },
+        {
+          title: '`value = 0.3`',
+          component: (
+            <Development
+              value={+0.3}
+              ticks={[
+                {
+                  fromPrice: 0,
+                  toPrice: 1000,
+                  decimals: 0,
+                  tick: 1,
+                },
+              ]}
+            />
+          ),
+        },
+      ]}
+    />
+  ),
 
-regressionValueIsNonZeroButRoundedValueIs0.story = {
   name: 'Regression: value is non-zero, but rounded value is 0',
 };
 
-export const integrationWithDifferentTypographies = () => {
-  const items = Object.values(TYPOGRAPHY_TYPES)?.map((type) => ({
-    title: type,
-    component: (
-      <Typography type={type}>
-        <Display
-          items={[
-            { title: 'Positive value', component: <Development value={5.4} /> },
-            { title: 'Zero value', component: <Development value={0} /> },
-            { title: 'Negative value', component: <Development value={-2.1} /> },
-          ]}
-        />
-      </Typography>
-    ),
-  }));
-  return <Display items={items} />;
-};
+export const IntegrationWithDifferentTypographies = {
+  render: () => {
+    const items = Object.values(TYPOGRAPHY_TYPES)?.map((type) => ({
+      title: type,
+      component: (
+        <Typography type={type}>
+          <Display
+            items={[
+              { title: 'Positive value', component: <Development value={5.4} /> },
+              { title: 'Zero value', component: <Development value={0} /> },
+              { title: 'Negative value', component: <Development value={-2.1} /> },
+            ]}
+          />
+        </Typography>
+      ),
+    }));
+    return <Display items={items} />;
+  },
 
-integrationWithDifferentTypographies.story = {
   name: 'Integration: with different typographies',
 };

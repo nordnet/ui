@@ -14,7 +14,7 @@ const StyledDiv = styled.div`
   max-width: ${(p) => p.theme.spacing.unit(35)}px;
 `;
 
-export const truncateDefault = () => (
+export const TruncateDefault = () => (
   <StyledDiv>
     <Truncate>
       <Typography type="primary">This text will be truncated after 35 units</Typography>

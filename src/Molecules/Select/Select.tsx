@@ -1,140 +1,102 @@
-import React, { useState } from 'react';
-import * as R from 'ramda';
-import styled from 'styled-components';
-import { OldIcon, Typography, VisuallyHidden } from '../..';
-import { Props, SelectComponent } from './Select.types';
+import React, { ForwardedRef, forwardRef, useEffect } from 'react';
+import useMuiSelect, { SelectProvider as MuiSelectProvider } from '@mui/base/useSelect';
+import { FadedScroll } from '../..';
+import { HiddenSelect } from './HiddenSelect';
+import { ListContainer, Listbox, ListboxContainer, Root } from './Select.styles';
+import { SelectProvider } from './useSelect';
+import { Props } from './Select.types';
+import { Arrow } from './Arrow';
+import { Group } from './Group';
+import { Option } from './Option';
+import { Trigger } from './Trigger';
+import { ValueDisplay } from './ValueDisplay';
+import { ValueDisplayMultiSelect } from './ValueDisplayMultiSelect';
 
-const SELECT_HEIGHT = 8;
-const ARROW_SPACE = 7;
-const PLACEHOLDER_VALUE = '';
+const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(function SelectComponent(
+  props: Props,
+  ref: ForwardedRef<HTMLButtonElement>,
+) {
+  const {
+    children,
+    disabled,
+    hasError = false,
+    multiple,
+    name,
+    onChange,
+    placeholder,
+    size = 'm',
+    value: valueFromProps,
+    valueDisplay: valueDisplayFromProps,
+    trigger: triggerFromProps,
+    width = 50,
+    fullWidth,
+    id,
+    defaultValue,
+  } = props;
+  const listboxRef = React.useRef<HTMLUListElement>(null);
+  const [isOpen, setIsOpen] = React.useState(false);
+  const { getButtonProps, getListboxProps, contextValue, value, getOptionMetadata, options } =
+    useMuiSelect<string, boolean>({
+      listboxRef,
+      disabled,
+      multiple,
+      open: isOpen,
+      onChange,
+      onOpenChange: setIsOpen,
+      value: valueFromProps,
+      defaultValue,
+    });
 
-const StyledSelect = styled.select`
-  width: 100%;
-  height: ${(p) => p.theme.spacing.unit(SELECT_HEIGHT)}px;
-  opacity: 0;
-  border: 0;
-  border-radius: 0;
-`;
-
-const Chevron = styled(OldIcon.ChevronDown)<{ focus: boolean }>`
-  transform: translateY(-50%) ${(p) => (p.focus ? 'rotate(180deg)' : 'rotate(0)')};
-  transform-origin: center center;
-  transition: transform 0.16s ease-out;
-  position: absolute;
-  height: ${(p) => p.theme.spacing.unit(2)}px;
-  top: 50%;
-  right: ${(p) => p.theme.spacing.unit(1)}px;
-  pointer-events: none;
-`;
-
-const SelectWrapper = styled.div<{ focus: boolean }>`
-  position: relative;
-  height: ${(p) => p.theme.spacing.unit(SELECT_HEIGHT)}px;
-  box-sizing: border-box;
-  border: 1px solid ${(p) => (p.focus ? p.theme.color.borderActive : p.theme.color.inputBorder)};
-
-  &:hover {
-    border-color: ${(p) => (p.focus ? p.theme.color.borderActive : p.theme.color.inputBorderHover)};
-  }
-`;
-
-const SelectedValue = styled(Typography)`
-  height: ${(p) => p.theme.spacing.unit(SELECT_HEIGHT)}px;
-  width: 100%;
-  line-height: ${(p) => p.theme.spacing.unit(SELECT_HEIGHT)}px;
-  padding: 0 ${(p) => p.theme.spacing.unit(ARROW_SPACE)}px 0 ${(p) => p.theme.spacing.unit(2)}px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  pointer-events: none;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  box-sizing: border-box;
-`;
-
-const Select: SelectComponent = ({
-  options = [],
-  disabled = false,
-  hideLabel = false,
-  placeholder,
-  name,
-  label,
-  className,
-  value: valueFromProps,
-  onChange: onChangeFromProps,
-  onBlur: onBlurFromProps,
-  onFocus: onFocusFromProps,
-}) => {
-  const [focus, setFocus] = useState(false);
-  const [value, setValue] = useState<Props['value']>(undefined);
-
-  const onChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    if (typeof onChangeFromProps === 'function') {
-      onChangeFromProps(e);
+  useEffect(() => {
+    if (isOpen) {
+      listboxRef.current?.focus();
     }
-
-    setValue(e.target.value);
-  };
-
-  const onFocus = (e: React.FocusEvent<HTMLSelectElement>) => {
-    if (typeof onFocusFromProps === 'function') {
-      onFocusFromProps(e);
-    }
-
-    setFocus(true);
-  };
-
-  const onBlur = (e: React.FocusEvent<HTMLSelectElement>) => {
-    if (typeof onBlurFromProps === 'function') {
-      onBlurFromProps(e);
-    }
-
-    setFocus(false);
-  };
-
-  const selectValue = typeof valueFromProps !== 'undefined' ? valueFromProps : value;
-  const selectedOption = R.find((opt) => `${opt.value}` === `${selectValue}`, options);
-
-  const Label = (
-    <Typography type="secondary" color={(t) => t.color.label}>
-      {label}
-    </Typography>
-  );
+  }, [isOpen]);
 
   return (
-    /* eslint-disable jsx-a11y/label-has-associated-control, jsx-a11y/label-has-for */
-    <label>
-      {hideLabel ? <VisuallyHidden>{Label}</VisuallyHidden> : <>{Label}</>}
-      <SelectWrapper focus={focus}>
-        <StyledSelect
-          disabled={disabled}
-          value={selectValue as any}
-          {...(placeholder && !selectValue ? { defaultValue: PLACEHOLDER_VALUE } : {})}
-          name={name}
-          onChange={onChange}
-          className={className}
-          onFocus={onFocus}
-          onBlur={onBlur}
-        >
-          {placeholder && (
-            <option value={PLACEHOLDER_VALUE} disabled>
-              {placeholder}
-            </option>
-          )}
-          {options?.map((option) => (
-            <option key={option.value} value={option.value}>
-              {option.label}
-            </option>
-          ))}
-        </StyledSelect>
-        <SelectedValue type="secondary" aria-hidden>
-          {typeof selectedOption !== 'undefined' ? selectedOption.label : placeholder}
-        </SelectedValue>
-        <Chevron focus={false} />
-      </SelectWrapper>
-    </label>
+    <SelectProvider
+      getButtonProps={getButtonProps}
+      getOptionMetadata={getOptionMetadata}
+      value={value}
+    >
+      <Root $width={width} $fullWidth={fullWidth} data-testid={id}>
+        {triggerFromProps || (
+          <Trigger size={size} hasError={hasError} ref={ref}>
+            {valueDisplayFromProps || <ValueDisplay placeholder={placeholder} />}
+            <Arrow />
+          </Trigger>
+        )}
+        <ListContainer aria-hidden={!isOpen} $hidden={!isOpen}>
+          <ListboxContainer>
+            <FadedScroll maxHeight={50}>
+              <Listbox {...getListboxProps()}>
+                <MuiSelectProvider value={contextValue}>{children}</MuiSelectProvider>
+              </Listbox>
+            </FadedScroll>
+          </ListboxContainer>
+        </ListContainer>
+      </Root>
+      {name && value ? (
+        <HiddenSelect name={name} multiple={multiple} value={value} options={options} />
+      ) : null}
+    </SelectProvider>
   );
+});
+
+type Components = {
+  Arrow: typeof Arrow;
+  Group: typeof Group;
+  Option: typeof Option;
+  Trigger: typeof Trigger;
+  ValueDisplay: typeof ValueDisplay;
+  ValueDisplayMultiSelect: typeof ValueDisplayMultiSelect;
 };
 
-export default Select;
+export const Select = SelectWithForwardRef as typeof SelectWithForwardRef & Components;
+
+Select.Arrow = Arrow;
+Select.Group = Group;
+Select.Option = Option;
+Select.Trigger = Trigger;
+Select.ValueDisplay = ValueDisplay;
+Select.ValueDisplayMultiSelect = ValueDisplayMultiSelect;

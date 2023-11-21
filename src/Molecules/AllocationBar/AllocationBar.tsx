@@ -11,7 +11,6 @@ const StyledBarItem = styled(Flexbox)<StyledBarItemProps>`
   background-color: ${(p) => p.$color(p.theme)};
   transition: 0.5s ease;
   transition-delay: 0.3s;
-
   border-radius: ${({ $isFirst, $isLast, theme }) => {
     if ($isFirst && $isLast) return theme.borderRadius2;
     if ($isFirst) return `${theme.borderRadius2} 0 0 ${theme.borderRadius2}`;

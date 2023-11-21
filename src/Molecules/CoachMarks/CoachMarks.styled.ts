@@ -13,7 +13,10 @@ export const SVG = styled.svg`
   height: 100vh;
   fill: ${(p) => p.theme.color.modalBackdrop};
   z-index: ${(p) => p.theme.zIndex.modal};
-  transition: all 0.3s ease-out, height 0s 0s, opacity 0.3s 0s;
+  transition:
+    all 0.3s ease-out,
+    height 0s 0s,
+    opacity 0.3s 0s;
 `;
 
 export const TitleWrapper = styled.div<ColsTrimmerProps>`

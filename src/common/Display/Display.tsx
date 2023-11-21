@@ -12,11 +12,13 @@ const StyledFlexDiv = styled.div<{
   align-items: flex-start;
   justify-content: center;
   flex-direction: ${(p) => p.direction};
+
   & > * {
     padding: ${(p) => p.theme.spacing.unit(p.margin || 0)}px;
     width: 100%;
     box-sizing: border-box;
   }
+
   border: ${(p) => (p.addBorder ? `1px solid #eee` : `0px`)};
 `;
 const Flex: React.FC<any> = ({ direction, margin, children, addBorder }) => (

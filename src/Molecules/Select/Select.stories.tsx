@@ -1,72 +1,277 @@
-import React from 'react';
-import Select from '.';
+// Button.stories.ts|tsx
+import React, { useRef, useState } from 'react';
+import { Meta } from '@storybook/react';
+import { Typography, Flag, Flexbox, FormField, Button, Box } from '../..';
+import { Display } from '../../common/Display';
+import { Select } from '.';
 
 const options = [
-  { label: 'Option 1', value: 'Option 1' },
-  { label: 'Option 2', value: 'Option 2' },
-  { label: 'Option 3', value: 'Option 3' },
+  {
+    label: 'Red is the best color according to scientific research',
+    value: '#Red is the best color according to scientific research',
+  },
+  {
+    label: 'Green',
+    value: '#4CAF50',
+  },
+  {
+    label: 'Blue',
+    value: '#2196F3',
+  },
 ];
 
-export default {
-  title: 'DEPRECATED / Molecules / Select ',
+const otherOptions = [
+  {
+    label: 'First option',
+    value: '1',
+  },
+  {
+    label: 'second',
+    value: '2',
+  },
+  {
+    label: 'third',
+    value: '3',
+  },
+];
+
+const countryOptions = [
+  {
+    label: 'Sweden',
+    value: 'se',
+  },
+  {
+    label: 'Norway',
+    value: 'no',
+  },
+  {
+    label: 'Denmark',
+    value: 'dk',
+  },
+  {
+    label: 'Finland',
+    value: 'fi',
+  },
+];
+
+const meta: Meta<typeof Select> = {
+  component: Select,
+  title: 'Molecules/Select',
 };
 
-export const selectWithPlaceholder = () => (
-  <Select options={options} placeholder="Select option" label="Options" />
+export default meta;
+
+export const Primary = () => (
+  <Select name="my-select" placeholder="Select a option...">
+    {options.map((option) => (
+      <Select.Option key={option.value} value={option.value} label={option.label} />
+    ))}
+  </Select>
 );
 
-selectWithPlaceholder.story = {
-  name: 'Select with placeholder',
+export const DefaultValue = () => (
+  <Select name="my-select" placeholder="Select a option..." defaultValue={options[0].value}>
+    {options.map((option) => (
+      <Select.Option key={option.value} value={option.value} label={option.label} />
+    ))}
+  </Select>
+);
+
+export const CustomOption = () => (
+  <Select name="my-select" placeholder="Select a country...">
+    {countryOptions.map((option) => (
+      <Select.Option key={option.value} value={option.value} label={option.label}>
+        <Flexbox container alignItems="center" gap={2}>
+          <Flexbox item>
+            <Flag country={option.value} size="m" />
+          </Flexbox>
+          <Flexbox item>
+            <Typography type="primary">{option.label}</Typography>
+          </Flexbox>
+        </Flexbox>
+      </Select.Option>
+    ))}
+  </Select>
+);
+
+export const DifferentSizes = () => (
+  <Display
+    items={[
+      {
+        title: 'Default (medium) size',
+        component: (
+          <Select name="my-select" size="m" placeholder="Select a option...">
+            {options.map((option) => (
+              <Select.Option key={`${option.value}-m`} value={option.value} label={option.label} />
+            ))}
+          </Select>
+        ),
+      },
+      {
+        title: 'Small size',
+        component: (
+          <Select name="my-small-select" size="s" placeholder="Select a option...">
+            {options.map((option) => (
+              <Select.Option key={`${option.value}-s`} value={option.value} label={option.label} />
+            ))}
+          </Select>
+        ),
+      },
+    ]}
+  />
+);
+
+export const DifferentWidths = () => (
+  <Display
+    items={[
+      {
+        title: '75 units wide',
+        component: (
+          <Select name="my-select" placeholder="Select a option..." width={75}>
+            {options.map((option) => (
+              <Select.Option key={`${option.value}-m`} value={option.value} label={option.label} />
+            ))}
+          </Select>
+        ),
+      },
+      {
+        title: 'Full width',
+        component: (
+          <Select name="my-full-width-select" placeholder="Select a option..." fullWidth>
+            {options.map((option) => (
+              <Select.Option key={`${option.value}-s`} value={option.value} label={option.label} />
+            ))}
+          </Select>
+        ),
+      },
+    ]}
+  />
+);
+
+export const WithFormField = () => (
+  <FormField label="Label" required extraInfo="Extra info">
+    <Select name="my-select" placeholder="Select a option...">
+      {options.map((option) => (
+        <Select.Option key={option.value} value={option.value} label={option.label} />
+      ))}
+    </Select>
+  </FormField>
+);
+
+export const WithError = () => (
+  <FormField error="Error message" label="Label">
+    <Select name="my-select" placeholder="Select a option..." hasError>
+      {options.map((option) => (
+        <Select.Option key={option.value} value={option.value} label={option.label} />
+      ))}
+    </Select>
+  </FormField>
+);
+
+export const Disabled = () => (
+  <Select name="my-select" placeholder="Select a option..." disabled>
+    {options.map((option) => (
+      <Select.Option key={option.value} value={option.value} label={option.label} />
+    ))}
+  </Select>
+);
+
+export const GroupedOptions = () => (
+  <Select name="my-select" placeholder="Select a option...">
+    <Select.Group label="First Group">
+      {options.map((option) => (
+        <Select.Option key={option.value} value={option.value} label={option.label} />
+      ))}
+    </Select.Group>
+    <Select.Group label="Second Group">
+      {otherOptions.map((option) => (
+        <Select.Option key={option.value} value={option.value} label={option.label} />
+      ))}
+    </Select.Group>
+  </Select>
+);
+
+export const MultiSelectUnControlled = () => {
+  return (
+    <Select name="my-select" multiple>
+      {options.map((option) => (
+        <Select.Option key={option.value} value={option.value} label={option.label} multiple />
+      ))}
+    </Select>
+  );
 };
 
-export const selectWithOverflowingPlaceholder = () => (
-  <div style={{ width: 150 }}>
+export const MultiSelect = () => {
+  const [selectedCount, setSelectedCount] = useState(0);
+
+  return (
     <Select
-      options={[{ label: 'Reaaaaaaaaaally long option', value: 1 }]}
-      value={1}
-      label="Options"
-    />
-  </div>
-);
-
-selectWithOverflowingPlaceholder.story = {
-  name: 'Select with overflowing placeholder',
+      name="my-select"
+      multiple
+      onChange={(e, value) => setSelectedCount(value ? value.length : 0)}
+      valueDisplay={
+        <Select.ValueDisplayMultiSelect
+          label={selectedCount > 1 ? 'Colors' : 'Color'}
+          placeholder="Select a value..."
+          selectedCount={selectedCount}
+        />
+      }
+    >
+      {options.map((option) => (
+        <Select.Option key={option.value} value={option.value} label={option.label} multiple />
+      ))}
+    </Select>
+  );
 };
 
-export const selectWithPlaceholderAndPreselectedValue = () => (
-  <Select options={options} value="Option 2" placeholder="Select option" label="Options" />
-);
+export const MultiSelectWithGroupedOptions = () => {
+  const [selectedCount, setSelectedCount] = useState(0);
 
-selectWithPlaceholderAndPreselectedValue.story = {
-  name: 'Select with placeholder and preselected value',
+  return (
+    <Select
+      name="my-select"
+      multiple
+      placeholder="Select a option..."
+      onChange={(e, value) => setSelectedCount(value ? value.length : 0)}
+      valueDisplay={
+        <Select.ValueDisplayMultiSelect
+          label={selectedCount > 1 ? 'Colors' : 'Color'}
+          placeholder="Select a value..."
+          selectedCount={selectedCount}
+        />
+      }
+    >
+      <Select.Group label="First Group">
+        {options.map((option) => (
+          <Select.Option key={option.value} value={option.value} label={option.label} multiple />
+        ))}
+      </Select.Group>
+      <Select.Group label="Second Group">
+        {otherOptions.map((option) => (
+          <Select.Option key={option.value} value={option.value} label={option.label} multiple />
+        ))}
+      </Select.Group>
+    </Select>
+  );
 };
 
-export const selectWithoutPlaceholder = () => <Select options={options} label="Stocks" />;
+export const WithForwardedRef = () => {
+  const buttonRef = useRef<HTMLButtonElement | null>(null);
 
-selectWithoutPlaceholder.story = {
-  name: 'Select without placeholder',
-};
+  const focusButton = () => {
+    buttonRef.current?.focus();
+  };
 
-export const selectWithPreselectedValue = () => (
-  <Select options={options} value="Option 2" label="Stocks" />
-);
-
-selectWithPreselectedValue.story = {
-  name: 'Select with preselected value',
-};
-
-export const selectWithHiddenLabel = () => (
-  <Select options={options} value="Option 2" label="Stocks" hideLabel />
-);
-
-selectWithHiddenLabel.story = {
-  name: 'Select with hidden label',
-};
-
-export const selectWithPrependedEmptyValue = () => (
-  <Select options={[{ label: 'All', value: '' }, ...options]} value="" label="Stocks" hideLabel />
-);
-
-selectWithPrependedEmptyValue.story = {
-  name: 'Select with prepended empty value',
+  return (
+    <div>
+      <Button onClick={focusButton}>Focus</Button>
+      <Box mt={2}>
+        <Select name="my-select" placeholder="Select a option..." ref={buttonRef}>
+          {options.map((option) => (
+            <Select.Option key={option.value} value={option.value} label={option.label} />
+          ))}
+        </Select>
+      </Box>
+    </div>
+  );
 };

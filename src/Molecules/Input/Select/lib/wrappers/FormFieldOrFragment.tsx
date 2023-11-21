@@ -47,6 +47,7 @@ const focusBorderStyles = css`
   &:focus-within {
     border-color: ${(p) => p.theme.color.borderActive};
   }
+
   &.focus-within {
     border-color: ${(p) => p.theme.color.borderActive};
   }

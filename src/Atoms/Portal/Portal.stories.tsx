@@ -8,68 +8,68 @@ export default {
   },
 };
 
-export const defaultStory = () => (
-  <Portal>
-    <Typography type="primary" as="p">
-      This element is moved to the bottom of the body tag
-    </Typography>
-  </Portal>
-);
+export const DefaultStory = {
+  render: () => (
+    <Portal>
+      <Typography type="primary" as="p">
+        This element is moved to the bottom of the body tag
+      </Typography>
+    </Portal>
+  ),
 
-defaultStory.story = {
   name: 'Default',
 };
 
-export const portalToSpecifiedDestination = () => {
-  const ControlledExample = () => {
-    const destination = useRef(null);
-    const [renderPortal, setShouldRenderPortal] = useState(false);
+export const PortalToSpecifiedDestination = {
+  render: () => {
+    const ControlledExample = () => {
+      const destination = useRef(null);
+      const [renderPortal, setShouldRenderPortal] = useState(false);
 
-    useEffect(() => {
-      if (destination && destination.current) {
-        setShouldRenderPortal(true);
-      }
-    }, [destination]);
+      useEffect(() => {
+        if (destination && destination.current) {
+          setShouldRenderPortal(true);
+        }
+      }, [destination]);
 
-    return (
-      <>
-        <div id="destination" ref={destination} />
-        {renderPortal && (
-          <div id="origin">
-            <Portal attachTo={destination.current}>
-              <Typography type="primary" as="p">
-                This element is moved to a specified HTMLElement
-              </Typography>
-            </Portal>
-          </div>
-        )}
-      </>
-    );
-  };
-  return <ControlledExample />;
-};
+      return (
+        <>
+          <div id="destination" ref={destination} />
+          {renderPortal && (
+            <div id="origin">
+              <Portal attachTo={destination.current}>
+                <Typography type="primary" as="p">
+                  This element is moved to a specified HTMLElement
+                </Typography>
+              </Portal>
+            </div>
+          )}
+        </>
+      );
+    };
+    return <ControlledExample />;
+  },
 
-portalToSpecifiedDestination.story = {
   name: 'Portal to specified destination',
 };
 
-export const ifAttachToPropIsNotAHtmlElementThenNothingIsRendered = () => {
-  const ControlledExample = () => {
-    const destination = useRef(null);
+export const IfAttachToPropIsNotAHtmlElementThenNothingIsRendered = {
+  render: () => {
+    const ControlledExample = () => {
+      const destination = useRef(null);
 
-    return (
-      <div id="origin">
-        <Portal attachTo={destination.current}>
-          <Typography type="primary" as="p">
-            This element should not be rendered
-          </Typography>
-        </Portal>
-      </div>
-    );
-  };
-  return <ControlledExample />;
-};
+      return (
+        <div id="origin">
+          <Portal attachTo={destination.current}>
+            <Typography type="primary" as="p">
+              This element should not be rendered
+            </Typography>
+          </Portal>
+        </div>
+      );
+    };
+    return <ControlledExample />;
+  },
 
-ifAttachToPropIsNotAHtmlElementThenNothingIsRendered.story = {
   name: 'If attachTo prop is not a HTMLElement then nothing is rendered',
 };

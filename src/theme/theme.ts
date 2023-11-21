@@ -1,8 +1,13 @@
-import { filter, mapObjIndexed, pipe, prop as Rprop, values } from 'ramda';
 import { lightTheme, darkTheme, a11yTheme } from '@nordnet/design-tokens';
 
-import { assert, deprecate, isNumber } from '../common/utils';
-import { BORDER_RADIUS, Theme, ThemeColorsVersion, ThemeConfig } from './theme.types';
+import { deprecate, isNumber } from '../common/utils';
+import {
+  BORDER_RADIUS,
+  BreakpointDataOrNumber,
+  Theme,
+  ThemeColorsVersion,
+  ThemeConfig,
+} from './theme.types';
 import { createLightColors, getColorLightScheme } from './createLightColors';
 import { createDarkColors, getColorDarkScheme } from './createDarkColors';
 
@@ -46,34 +51,20 @@ const zIndex: Theme['zIndex'] = {
   overlayInModal: 600,
 };
 
-const getSizesValues = pipe(
-  // @ts-ignore
-  mapObjIndexed(Rprop('size')),
-  // @ts-ignore
-  values,
-  filter(Boolean),
-);
-
 const getColorTokens = (theme: ThemeConfig['tokensTheme']) => {
   if (theme === 'dark') return darkTheme;
   if (theme === 'a11y') return a11yTheme;
   return lightTheme;
 };
 
+const getBreakpointNumber = (s: BreakpointDataOrNumber) => (isNumber(s) ? s : s.size);
+
 export const createTheme = (config: ThemeConfig = {}): Theme => {
-  const {
-    a11yColors = false,
-    darkColors = false,
-    tokensTheme = 'light',
-    featureToggles = {},
-  } = config;
+  const { a11yColors = false, darkColors = false, tokensTheme = 'light' } = config;
   const type: ThemeColorsVersion = a11yColors ? 'a11y' : 'default';
   const color = darkColors
     ? createDarkColors(getColorDarkScheme(type))
     : createLightColors(getColorLightScheme(type));
-
-  // @ts-ignore
-  const sizeValues = getSizesValues(breakpoints) as number[];
 
   const GUTTER = 5;
   const UNIT = 4;
@@ -92,13 +83,12 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
   const RADIUS_LARGE: BORDER_RADIUS = 20;
   const RADIUS_100: BORDER_RADIUS = 100;
 
-  const borderRadius: Theme['borderRadius'] = (x) =>
-    featureToggles?.roundedCorners ? `${x.toString()}px` : '';
-  const borderRadius2 = featureToggles?.roundedCorners ? `${RADIUS_XSMALL}px` : '0';
-  const borderRadius4 = featureToggles?.roundedCorners ? `${RADIUS_SMALL}px` : '0';
-  const borderRadius8 = featureToggles?.roundedCorners ? `${RADIUS_MEDIUM}px` : '0';
-  const borderRadius20 = featureToggles?.roundedCorners ? `${RADIUS_LARGE}px` : '0';
-  const borderRadius100 = featureToggles?.roundedCorners ? `${RADIUS_100}px` : '0';
+  const borderRadius: Theme['borderRadius'] = (x) => `${x.toString()}px`;
+  const borderRadius2 = `${RADIUS_XSMALL}px`;
+  const borderRadius4 = `${RADIUS_SMALL}px`;
+  const borderRadius8 = `${RADIUS_MEDIUM}px`;
+  const borderRadius20 = `${RADIUS_LARGE}px`;
+  const borderRadius100 = `${RADIUS_100}px`;
 
   return {
     animation: {
@@ -114,24 +104,19 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     isDarkMode: darkColors,
     media: {
       between: (s1, s2) => {
-        const number1 = isNumber(s1) ? s1 : s1.size;
-        const number2 = isNumber(s2) ? s2 : s2.size;
-
-        assert(sizeValues.includes(number1), `[theme.media] Unrecognized size value: ${number1}`);
-        assert(sizeValues.includes(number2), `[theme.media] Unrecognized size value: ${number2}`);
+        const number1 = getBreakpointNumber(s1);
+        const number2 = getBreakpointNumber(s2);
 
         return `@media (min-width: ${number1}px) and (max-width: ${number2 - 1}px)`;
       },
       greaterThan: (s) => {
-        const number = isNumber(s) ? s : s.size;
+        const number = getBreakpointNumber(s);
 
-        assert(sizeValues.includes(number), `[theme.media] Unrecognized size value: ${number}`);
         return `@media (min-width: ${number}px)`;
       },
       lessThan: (s) => {
-        const number = isNumber(s) ? s : s.size;
+        const number = getBreakpointNumber(s);
 
-        assert(sizeValues.includes(number), `[theme.media] Unrecognized size value: ${number}`);
         return `@media (max-width: ${number - 1}px)`;
       },
     },
@@ -144,6 +129,5 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     borderRadius8,
     borderRadius20,
     borderRadius100,
-    isFeatureEnabled: (feature) => featureToggles?.[feature] === true,
   };
 };

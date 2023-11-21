@@ -15,12 +15,11 @@ export const CompletionBar = styled.div<{ completion: number; noButtons: boolean
   position: relative;
   width: 100%;
   border-radius: 100px;
-
   overflow: hidden;
   background: ${(p) => p.theme.color.progressIndicatorBarEmpty};
   margin: ${(p) => (p.noButtons ? '7px' : 0)} auto; /* text height - bar height || 18 - 4 / 2 = 7  */
 
-  &:after {
+  &::after {
     position: absolute;
     left: 0;
     top: 0;

@@ -53,7 +53,7 @@ export const defaultTaskInfoMap: TaskInfoMap = {
   },
   TASK_2: {
     icon: <Icon.Account24 />,
-    title: 'Deposit money',
+    title: 'Second task money',
     description: 'Transfer money to your account.',
     startAction: {
       label: 'Deposit now',
@@ -63,7 +63,7 @@ export const defaultTaskInfoMap: TaskInfoMap = {
   },
   TASK_3: {
     icon: <Icon.Deposit24 />,
-    title: 'Deposit money',
+    title: 'Third task money',
     description: 'Transfer money to your account.',
     startAction: {
       label: 'Deposit now',
@@ -73,8 +73,82 @@ export const defaultTaskInfoMap: TaskInfoMap = {
   },
   TASK_4: {
     icon: <Icon.Book24 />,
-    title: 'Deposit money',
+    title: 'Fourth task money',
     description: 'Transfer money to your account.',
+    startAction: {
+      label: 'Deposit now',
+      to: '/deposit-money',
+    },
+    onDismiss: action('dismiss: Deposit money'),
+  },
+};
+
+export const defaultCheckListV2: CheckListType = {
+  onboardingCompletedAt: '2023-10-03T07:01:57.702Z',
+  tasks: [
+    {
+      taskId: 'TASK_1',
+      taskState: 'COMPLETED',
+      completedAt: '2023-10-03T07:01:57.702Z',
+    },
+    {
+      taskId: 'TASK_2',
+      taskState: 'COMPLETED',
+      completedAt: '2023-10-03T07:01:57.702Z',
+    },
+    {
+      taskId: 'TASK_3',
+      taskState: 'INCOMPLETE',
+      completedAt: '2023-10-03T07:01:57.702Z',
+    },
+    {
+      taskId: 'TASK_4',
+      taskState: 'INCOMPLETE',
+      completedAt: '2023-10-03T07:01:57.702Z',
+    },
+  ],
+  customerProgress: 'LEVEL_1',
+};
+
+export const customPercentageTaskInfoMap: TaskInfoMap = {
+  TASK_1: {
+    icon: <Icon.Search24 />,
+    title: 'Find investments',
+    description: 'Discover stocks and funds to invest in.',
+    customPercentage: 25,
+    startAction: {
+      label: 'Start guide',
+      onClick: action('startAction: Find investments'),
+    },
+    onDismiss: action('dismiss: Find investments'),
+  },
+  TASK_2: {
+    icon: <Icon.Account24 />,
+    title: 'Second task',
+    description: 'Transfer money to your account.',
+    customPercentage: 25,
+    startAction: {
+      label: 'Deposit now',
+      to: '/deposit-money',
+    },
+    onDismiss: action('dismiss: Deposit money'),
+  },
+  TASK_3: {
+    icon: <Icon.Deposit24 />,
+    title: 'Third task',
+    description: 'Transfer money to your account.',
+    customPercentage: 25,
+    startAction: {
+      label: 'Deposit now',
+      to: '/deposit-money',
+    },
+    onDismiss: action('dismiss: Deposit money'),
+  },
+  TASK_4: {
+    icon: <Icon.Book24 />,
+    title: 'Fourth task',
+    description: 'Transfer money to your account.',
+    customPercentage: 25,
     startAction: {
       label: 'Deposit now',
       to: '/deposit-money',
@@ -103,10 +177,20 @@ const generateTasks = (taskCount: number): Task[] => {
   return tasks;
 };
 
+const generateV2Tasks = (taskCount: number): Task[] => {
+  const tasks: Task[] = [...Array(taskCount).keys()].map((i) => ({
+    taskId: `TASK_${i + 1}`,
+    taskState: i < taskCount / 3 ? 'COMPLETED' : 'INCOMPLETE',
+    completedAt: '2023-10-03T07:01:57.702Z',
+  }));
+  return tasks;
+};
+
 export const generateCheckList = (taskCount: number): CheckListType => {
   const tasks = generateTasks(taskCount);
   const percentageCompleted = tasks.reduce(
-    (prev, curr) => (curr.taskState === 'COMPLETED' ? prev + curr.percentage : prev),
+    (prev, curr) =>
+      curr.taskState === 'COMPLETED' && curr.percentage ? prev + curr.percentage : prev,
     0,
   );
 
@@ -117,6 +201,34 @@ export const generateCheckList = (taskCount: number): CheckListType => {
     },
     tasks,
   };
+};
+
+export const useFakeCheckListV2 = (taskCount: number) => {
+  const initialTasks = generateV2Tasks(taskCount);
+
+  const [tasks, setTasks] = useState<Task[]>(initialTasks);
+
+  const dismissTask = (taskId: string) => {
+    const updatedTasks: Task[] = tasks.map((task) => {
+      if (task.taskId === taskId) {
+        return { ...task, taskState: 'COMPLETED' };
+      }
+      return task;
+    });
+
+    setTasks(updatedTasks);
+  };
+
+  const taskInfoMap = generateTaskInfoMap(taskCount, dismissTask);
+  const percentageCompleted = getPercentage(tasks, taskInfoMap);
+
+  const checkList = {
+    onboardingCompletedAt: percentageCompleted === 100 ? '2023-10-03T07:01:57.702Z' : undefined,
+    tasks,
+    customerProgress: percentageCompleted === 100 ? 'ONBOARDED' : 'LEVEL_1',
+  };
+
+  return { checkList, taskInfoMap };
 };
 
 export const useFakeCheckList = (taskCount: number) => {
@@ -136,7 +248,8 @@ export const useFakeCheckList = (taskCount: number) => {
   };
 
   const percentageCompleted = tasks.reduce(
-    (prev, curr) => (curr.taskState === 'COMPLETED' ? prev + curr.percentage : prev),
+    (prev, curr) =>
+      curr.taskState === 'COMPLETED' && curr.percentage ? prev + curr.percentage : prev,
     0,
   );
 
@@ -168,6 +281,7 @@ export const generateTaskInfoMap = (
         icon: iconArray[i],
         title: `This is the title for task ${i + 1}`,
         description: `This is the description for task ${i + 1}. `.repeat((i % 3) + 1),
+        customPercentage: i + 1 ? 20 : undefined,
         startAction: {
           label: i % 2 ? `Link to step ${i + 1}` : `Open step ${i + 1}`,
           onClick: action(`startAction (${i % 2 ? 'link' : 'button'}) task ${i + 1}`),
@@ -182,13 +296,28 @@ export const generateTaskInfoMap = (
   );
 };
 
+export const getPercentage = (tasks: Task[], taskInfoMap: TaskInfoMap) => {
+  // find percentage from taskInfoMap using taskId
+  const taskInfo = tasks.map((task) =>
+    task.taskState === 'COMPLETED' ? taskInfoMap[task.taskId] : undefined,
+  );
+  const customPercentage = taskInfo.map((info) => info?.customPercentage || 0);
+  const sum = customPercentage.reduce((accumulator, currentValue) => {
+    if (accumulator !== undefined && currentValue !== undefined) {
+      return accumulator + currentValue;
+    }
+    return accumulator || 0 + currentValue || 0;
+  }, 0);
+  return sum;
+};
+
 export const header = {
   title: 'Get started checklist',
   description: (
     <span>
       <Typography type="secondary">Your account is </Typography>
       <Typography type="secondary" color={(t) => t.colorTokens.action.text_default}>
-        {`${defaultCheckList.summary.percentageCompleted}% completed`}
+        {`${defaultCheckList?.summary?.percentageCompleted}% complete`}
       </Typography>
     </span>
   ),

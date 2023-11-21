@@ -28,7 +28,6 @@ export const ListItem = ({ index }: { index: number }) => {
       selected={selected}
       disabled={option.disabled}
       label={option.label}
-      value={option.value}
       focused={focused}
       selectAll={selectAll}
       isKeyboardNavigation={isKeyboardNavigation}
