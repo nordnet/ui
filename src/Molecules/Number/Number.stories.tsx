@@ -201,7 +201,6 @@ export const MaskValue = {
 
 export const NullCurrency = {
   render: () => {
-    // @ts-ignore
     return (
       <IntlProvider locale="en">
         <Number value={10} currency={null} />
