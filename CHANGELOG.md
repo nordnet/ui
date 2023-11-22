@@ -1,3 +1,10 @@
+## [14.1.2](https://github.com/nordnet/ui/compare/v14.1.1...v14.1.2) (2023-11-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency framer-motion to v10 ([#1510](https://github.com/nordnet/ui/issues/1510)) ([38d7f46](https://github.com/nordnet/ui/commit/38d7f467a6dd62186a4132e516a11a2d2847eaa7))
+
 ## [14.1.1](https://github.com/nordnet/ui/compare/v14.1.0...v14.1.1) (2023-11-21)
 
 
