@@ -1,70 +1,78 @@
 import React, { useState } from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
-import RangeSlider from './RangeSlider';
-import { Box, Number, Typography } from '../..';
+import RangeSlider from '.';
+import { Box, Flexbox, Number, Typography } from '../..';
 import { Props } from './RangeSlider.types';
 
-export default {
-  title: 'Molecules / RangeSlider',
+const meta: Meta<typeof RangeSlider> = {
   component: RangeSlider,
-} as Meta;
+  title: 'Molecules / RangeSlider',
+};
 
-const Template: Story<Props> = (args) => {
+export default meta;
+type Story = StoryObj<typeof RangeSlider>;
+
+const Template = (args: Props) => {
   const [value, setValue] = useState({ low: args.defaultLowValue, high: args.defaultHighValue });
-  const handleChange = (v: any) => setValue(v);
+  const handleChange = (v: { low: number; high: number }) => setValue(v);
 
   return (
     <Box p={20}>
       <RangeSlider {...args} onChange={handleChange} />
       <Typography>
-        <Number value={value.low} maximumDecimals={2} />-{' '}
-        <Number value={value.high} maximumDecimals={2} /> Kronor
+        <Flexbox container justifyContent="space-between" gap={4}>
+          <Flexbox item>
+            <Number value={value.low} maximumDecimals={2} />
+          </Flexbox>
+          <Flexbox item>
+            <Number value={value.high} maximumDecimals={2} /> SEK
+          </Flexbox>
+        </Flexbox>
       </Typography>
     </Box>
   );
 };
 
-export const Default = Template.bind({});
-Default.args = {
-  defaultLowValue: 20,
-  defaultHighValue: 40,
-  min: 0,
-  max: 100,
-  step: 1,
-  showTooltip: true,
+export const Default: Story = {
+  render: Template,
+
+  args: {
+    defaultLowValue: 20,
+    defaultHighValue: 40,
+    min: 0,
+    max: 100,
+    step: 1,
+  },
 };
 
-export const MinimumValue = Template.bind({});
-MinimumValue.args = {
-  ...Default.args,
-  defaultLowValue: 0,
-  min: 10,
-  max: 100,
-  sliderColor: (t) => t.color.sliderColor,
+export const Minimum: Story = {
+  render: Template,
+
+  args: {
+    ...Default.args,
+    defaultLowValue: 0,
+    defaultHighValue: 5,
+    min: 0,
+    max: 10,
+    sliderColor: (t) => t.color.sliderColor,
+  },
 };
 
-export const MaximumValue = Template.bind({});
-MaximumValue.args = {
-  ...Default.args,
-  defaultLowValue: 0,
-  defaultHighValue: 100,
-  min: 50,
-  max: 100,
-  sliderColor: (t) => t.color.sliderColor,
+export const Maximum: Story = {
+  render: Template,
+
+  args: {
+    ...Default.args,
+    defaultLowValue: 5,
+    defaultHighValue: 10,
+    min: 0,
+    max: 10,
+    sliderColor: (t) => t.color.sliderColor,
+  },
 };
 
-export const ErrorSlider = Template.bind({});
-ErrorSlider.args = {
-  ...Default.args,
-  defaultLowValue: 20,
-  defaultHighValue: 100,
-  min: 0,
-  max: 50,
-  step: 1,
-};
-
-const TemplateMultiColor: Story<Props> = (args) => {
+const TemplateMultiColor = (args: Props) => {
   const [value, setValue] = useState({ low: args.defaultLowValue, high: args.defaultHighValue });
   const handleChange = (v: any) => setValue(v);
 
@@ -76,30 +84,45 @@ const TemplateMultiColor: Story<Props> = (args) => {
         sliderColor={(t) => (value?.low && value.low > 0 ? t.color.positive : t.color.negative)}
       />
       <Typography>
-        <Number value={value.low} maximumDecimals={2} />-{' '}
-        <Number value={value.high} maximumDecimals={2} /> SEK
+        <Flexbox container justifyContent="space-between" gap={4}>
+          <Flexbox item>
+            <Number value={value.low} maximumDecimals={2} />
+          </Flexbox>
+          <Flexbox item>
+            <Number value={value.high} maximumDecimals={2} /> SEK
+          </Flexbox>
+        </Flexbox>
       </Typography>
     </Box>
   );
 };
 
-export const NegativeToPositive = TemplateMultiColor.bind({});
-NegativeToPositive.args = {
-  defaultLowValue: 0,
-  min: -50,
-  max: 50,
-  step: 1,
+export const NegativeToPositive: Story = {
+  render: TemplateMultiColor,
+
+  args: {
+    defaultLowValue: -30,
+    defaultHighValue: 30,
+    min: -50,
+    max: 50,
+    step: 1,
+  },
 };
 
-export const SmallVariant = Template.bind({});
-SmallVariant.args = {
-  ...Default.args,
-  variant: 'small',
+export const SmallVariant: Story = {
+  render: Template,
+
+  args: {
+    ...Default.args,
+    variant: 'small',
+  },
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  ...Default.args,
-  defaultLowValue: 20,
-  disabled: true,
+export const Disabled: Story = {
+  render: Template,
+
+  args: {
+    ...Default.args,
+    disabled: true,
+  },
 };

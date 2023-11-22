@@ -11,20 +11,18 @@ export type InternalProps = {
 };
 
 export type Props = {
-  defaultLowValue?: number;
+  variant?: Variant;
   defaultHighValue?: number;
+  defaultLowValue?: number;
   disabled?: boolean;
+  formatter?: (value: number) => string;
   max: number;
   min: number;
   onChange?: (v: { low: number; high: number }) => void;
+  readOnly?: boolean;
+  showTooltip?: boolean;
   sliderColor?: ColorFn;
   step: number;
-  /** Makes component controlled */
-  value?: number;
-  variant?: Variant;
-  readOnly?: boolean;
-  formatter?: (value: number) => string;
-  showTooltip?: boolean;
 };
 
 export type Component = React.FC<Props>;

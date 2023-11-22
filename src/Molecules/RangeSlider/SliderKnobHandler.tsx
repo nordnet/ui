@@ -1,12 +1,7 @@
-import React, { KeyboardEvent, MouseEvent, TouchEvent, useRef, useState } from 'react';
-import styled from 'styled-components';
-import { motion, AnimatePresence } from 'framer-motion';
-import { SliderKnobHandlerComponent, InternalProps } from './SliderKnobHandler.types';
-import DropdownBubble, { TRIANGLE_SIZE } from '../../Atoms/DropdownBubble';
-import Typography from '../../Atoms/Typography';
-import { getKnobSize, getHeight } from '../Slider/utils';
+import React, { KeyboardEvent, MouseEvent, TouchEvent } from 'react';
+import { SliderKnobHandlerComponent } from './SliderKnobHandler.types';
+import { getKnobSize } from '../Slider/utils';
 import { SliderKnob } from '../Slider/SliderKnob';
-import { isNumber } from '../../common/utils';
 
 const clamp = (val: number, min: number, max: number) => {
   if (val < min) {
@@ -67,41 +62,22 @@ const getNewValue = (
   return clamp(newValueRounded, min, max);
 };
 
-const StyledDropdownBubble = styled(DropdownBubble)<InternalProps>`
-  transform: ${(p) =>
-    `translate(-50%, calc(-100% - ${
-      getKnobSize(p.$variant) / 2 + TRIANGLE_SIZE + getHeight(p.$variant) / 2
-    }px))`};
-  padding: 6px 8px;
-  border-radius: ${({ theme }) => theme.borderRadius2};
-`;
-
 const SliderKnobHandler: SliderKnobHandlerComponent = ({
-  defaultValue,
   disabled,
-  formatter = (value: number) => value.toString(),
+  handleRef,
   max,
   min,
   onChange,
   readOnly,
-  showTooltip,
   sliderColor,
   step,
-  value: controlledValue,
-  variant = 'big',
-  type,
   trackerBoundingClientRect,
+  value,
+  variant = 'big',
 }) => {
-  const handleRef: React.Ref<HTMLDivElement> = useRef(null);
-  const isControlled = isNumber(controlledValue);
-  const [hoverPosition, setHoverPosition] = useState<number | null>(null);
-  const [hoverVisible, setHoverVisible] = useState<boolean>(false);
-  const valueInternal = defaultValue || min;
-  const value = isControlled ? controlledValue! : valueInternal;
   const trackPercent = valueToPercent(value, min, max);
   const handlePosition = `calc(${trackPercent}% - ${getKnobSize(variant) / 2}px)`;
 
-  console.log(`${type} ${value} ${valueInternal} ${controlledValue} ${isControlled}`);
   const updateValue = (newValue: number) => {
     onChange(newValue);
   };
@@ -116,22 +92,6 @@ const SliderKnobHandler: SliderKnobHandlerComponent = ({
 
       if (newValue !== null) {
         updateValue(newValue);
-      }
-    }
-  };
-
-  const handleHover = (pos: number) => {
-    if (!disabled && !readOnly) {
-      const newValue = getNewValue(pos, trackerBoundingClientRect, {
-        min,
-        max,
-        step,
-      });
-      if (newValue) {
-        setHoverPosition(newValue);
-      }
-      if (!hoverVisible) {
-        setHoverVisible(true);
       }
     }
   };
@@ -157,14 +117,12 @@ const SliderKnobHandler: SliderKnobHandlerComponent = ({
     event.stopPropagation();
     event.preventDefault();
     const touchPosition = event.touches[0].clientX;
-    handleHover(touchPosition);
     handleChange(touchPosition);
   };
 
   const handleTouchEnd = () => {
     document.removeEventListener('touchend', handleTouchEnd);
     document.removeEventListener('touchmove', handleTouchMove as () => void);
-    setHoverVisible(false);
   };
 
   const handleTouchStart = () => {
@@ -193,56 +151,23 @@ const SliderKnobHandler: SliderKnobHandlerComponent = ({
   };
 
   return (
-    <AnimatePresence>
-      {showTooltip && hoverVisible && (
-        <motion.div
-          key="tooltip"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{
-            opacity: { ease: 'easeInOut', duration: 0.16 },
-          }}
-        >
-          <StyledDropdownBubble
-            $variant={variant}
-            position="center"
-            placement="top"
-            invertedColors
-            triangle
-            style={{
-              position: 'absolute',
-              ...(hoverPosition && {
-                marginLeft: `${valueToPercent(hoverPosition, min, max)}% `,
-              }),
-            }}
-          >
-            {hoverPosition && (
-              <Typography type="tertiary" color={(t) => t.color.textLight}>
-                {formatter(hoverPosition)}
-              </Typography>
-            )}
-          </StyledDropdownBubble>
-        </motion.div>
-      )}
-      <SliderKnob
-        disabled={disabled}
-        max={max}
-        min={min}
-        onClick={handleKnobClick}
-        onKeyDown={handleKeyDown}
-        onMouseDown={handleMouseDown}
-        onMouseUp={handleMouseUp}
-        onTouchStart={handleTouchStart}
-        ref={handleRef}
-        sliderColor={sliderColor}
-        style={{
-          left: handlePosition,
-        }}
-        value={value}
-        variant={variant}
-      />
-    </AnimatePresence>
+    <SliderKnob
+      disabled={disabled}
+      max={max}
+      min={min}
+      onClick={handleKnobClick}
+      onKeyDown={handleKeyDown}
+      onMouseDown={handleMouseDown}
+      onMouseUp={handleMouseUp}
+      onTouchStart={handleTouchStart}
+      ref={handleRef}
+      sliderColor={sliderColor}
+      style={{
+        left: handlePosition,
+      }}
+      value={value}
+      variant={variant}
+    />
   );
 };
 export default SliderKnobHandler;

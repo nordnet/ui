@@ -11,21 +11,20 @@ export type InternalProps = {
 };
 
 export type Props = {
-  defaultValue?: number;
   disabled?: boolean;
+  formatter?: (value: number) => string;
+  handleRef: React.Ref<HTMLDivElement>;
   max: number;
   min: number;
   onChange: (v: number) => void;
+  readOnly?: boolean;
+  showTooltip?: boolean;
   sliderColor?: ColorFn;
   step: number;
-  /** Makes component controlled */
-  value?: number;
-  variant?: Variant;
-  readOnly?: boolean;
-  formatter?: (value: number) => string;
-  showTooltip?: boolean;
-  type?: string;
   trackerBoundingClientRect: { left: number; top: number; width: number; height: number };
+  type?: string;
+  value: number;
+  variant?: Variant;
 };
 
 export type SliderKnobHandlerComponent = React.FC<Props>;
