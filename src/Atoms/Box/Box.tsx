@@ -1,18 +1,26 @@
 import React from 'react';
 import styled, { css, ExecutionContext } from 'styled-components';
-import * as R from 'ramda';
 import { Props, Spacings } from './Box.types';
 import { isNumber, isString } from '../../common/utils';
 
 const isPropPresentedIn = (props: Props) => (prop: keyof Props) =>
   typeof props[prop] !== 'undefined';
 
-// prettier-ignore
-const getCssString = (property: string, value: string | number) => R.cond([
-  [() => isString(value), () => css`${property}: ${value};`],
-  [() => isNumber(value), () => css`${property}: ${p => p.theme.spacing.unit(value as number)}px;`],
-  [R.T, () => css``],
-])(property, value);
+const getCssString = (property: string, value: string | number) => {
+  if (isString(value)) {
+    return css`
+      ${property}: ${value};
+    `;
+  }
+
+  if (isNumber(value)) {
+    return css`
+      ${property}: ${(p) => p.theme.spacing.unit(value)}px;
+    `;
+  }
+
+  return '';
+};
 
 const getStyles = (props: Props) => {
   const left = 0;

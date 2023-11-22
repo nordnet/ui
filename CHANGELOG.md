@@ -1,14 +1,37 @@
-# [15.0.0-beta.1](https://github.com/nordnet/ui/compare/v14.0.5...v15.0.0-beta.1) (2023-11-16)
+## [14.1.2](https://github.com/nordnet/ui/compare/v14.1.1...v14.1.2) (2023-11-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency framer-motion to v10 ([#1510](https://github.com/nordnet/ui/issues/1510)) ([38d7f46](https://github.com/nordnet/ui/commit/38d7f467a6dd62186a4132e516a11a2d2847eaa7))
+
+## [14.1.1](https://github.com/nordnet/ui/compare/v14.1.0...v14.1.1) (2023-11-21)
+
+
+### Bug Fixes
+
+* **deps:** update developer dependencies (non-major) ([#1508](https://github.com/nordnet/ui/issues/1508)) ([b330f40](https://github.com/nordnet/ui/commit/b330f409fc6b5d417fdc3cc413e60b19709f3e86))
+
+# [14.1.0](https://github.com/nordnet/ui/compare/v14.0.7...v14.1.0) (2023-11-20)
 
 
 ### Features
 
-* upgrade to styled-components v6 ([#1398](https://github.com/nordnet/ui/issues/1398)) ([#1473](https://github.com/nordnet/ui/issues/1473)) ([97196a3](https://github.com/nordnet/ui/commit/97196a32ff94b3d61672bff094e68fbd910f6da2))
+* **popsicle32:** add the 32 popsicle icon ([#1499](https://github.com/nordnet/ui/issues/1499)) ([8c66a40](https://github.com/nordnet/ui/commit/8c66a405a49383e39ab92d74295d43dd5412bdcb))
+
+## [14.0.7](https://github.com/nordnet/ui/compare/v14.0.6...v14.0.7) (2023-11-20)
 
 
-### BREAKING CHANGES
+### Bug Fixes
 
-* styled-components upgraded to v6
+* **deps:** update dependency ramda to ^0.29.0 ([#1482](https://github.com/nordnet/ui/issues/1482)) ([da85cab](https://github.com/nordnet/ui/commit/da85cab0318b6fa912fbe1a34b8abb4cc9b15f48))
+
+## [14.0.6](https://github.com/nordnet/ui/compare/v14.0.5...v14.0.6) (2023-11-20)
+
+
+### Bug Fixes
+
+* **deps:** update jest to v29 (major) ([#1498](https://github.com/nordnet/ui/issues/1498)) ([6487eb3](https://github.com/nordnet/ui/commit/6487eb33423510070d06c1286bded1540c3dda78))
 
 ## [14.0.5](https://github.com/nordnet/ui/compare/v14.0.4...v14.0.5) (2023-11-16)
 
