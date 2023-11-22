@@ -54,7 +54,7 @@ export const Rating: RatingComponent = ({
     <Flexbox container gap="2px" height={height}>
       <VisuallyHidden>{screenReaderText}</VisuallyHidden>
       {Array.from({ length: outOf }).map((_, i) => (
-        <Flexbox item key={i} container alignItems="center">
+        <Flexbox item key={`star_${i + 1}`} container alignItems="center">
           {getIcon(size, i < finalRating, activeIcon, inactiveIcon)}
         </Flexbox>
       ))}

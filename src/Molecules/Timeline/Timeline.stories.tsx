@@ -1,7 +1,7 @@
 import React from 'react';
+import { IntlProvider } from 'react-intl';
 import { Box, Icon } from '../..';
 import Timeline from './Timeline';
-import { IntlProvider } from 'react-intl';
 
 export default {
   title: 'Molecules / Timeline',
