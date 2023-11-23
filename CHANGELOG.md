@@ -1,3 +1,10 @@
+## [14.1.3](https://github.com/nordnet/ui/compare/v14.1.2...v14.1.3) (2023-11-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency rimraf to v5 ([#1515](https://github.com/nordnet/ui/issues/1515)) ([b94f0f2](https://github.com/nordnet/ui/commit/b94f0f22d28cd18efdb7f229b7fe948adfc716a1))
+
 ## [14.1.2](https://github.com/nordnet/ui/compare/v14.1.1...v14.1.2) (2023-11-22)
 
 
