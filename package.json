@@ -33,12 +33,6 @@
     "semantic-release": "semantic-release",
     "prepublishOnly": "npm run build"
   },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "prettier --write",
-      "eslint"
-    ]
-  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
@@ -119,7 +113,6 @@
     "jest-date-mock": "^1.0.8",
     "jest-environment-jsdom": "^29.7.0",
     "jest-styled-components": "^7.0.5",
-    "lint-staged": "11.2.6",
     "lodash": "^4.17.21",
     "postcss-styled-syntax": "^0.5.0",
     "prettier": "^3.0.0",
