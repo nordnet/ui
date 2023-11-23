@@ -98,7 +98,7 @@
     "babel-loader": "8.3.0",
     "babel-plugin-ramda": "2.1.1",
     "babel-plugin-react-remove-properties": "^0.3.0",
-    "babel-plugin-styled-components": "1.13.3",
+    "babel-plugin-styled-components": "2.1.4",
     "babel-plugin-transform-remove-imports": "1.7.1",
     "babel-preset-react-app": "^10.0.0",
     "codecov": "3.8.3",
