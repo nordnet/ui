@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { IntlProvider } from 'react-intl';
 import { DistributionBar } from './DistributionBar';
 
 import { Flag, Flexbox, Typography, Link, Number, TruncateWithTooltip, Icon } from '../../index';
@@ -48,41 +49,40 @@ export const Showcase = () => {
   const highestValue = Math.max(...instrumentList.map((instrument) => instrument.weight));
 
   return (
-    <>
+    <IntlProvider locale="en">
       <Flexbox container gap={3} direction="column">
         <Flexbox container item direction="column" gap={1}>
           <Typography>Showcase different properties</Typography>
-          {instrumentList.map((item) => {
-            return (
-              <DistributionBar
-                label={
-                  item.link ? (
-                    <Link to={item.link} color="inherit">
-                      {item.label}
-                    </Link>
-                  ) : (
-                    item.label
-                  )
-                }
-                weight={(item.weight / highestValue) * 100}
-                icon={item.country ? <Flag size="m" country={item.country} /> : undefined}
-              >
-                <StyledFlexbox container>
-                  <TruncateWithTooltip
-                    label={<Number value={item.weight} currency={item.currency} />}
-                  >
-                    <Typography type="secondary" textAlign="right">
-                      <Number
-                        value={item.weight}
-                        currency={item.currency}
-                        percentage={item.percentage}
-                      />
-                    </Typography>
-                  </TruncateWithTooltip>
-                </StyledFlexbox>
-              </DistributionBar>
-            );
-          })}
+          {instrumentList.map((item) => (
+            <DistributionBar
+              key={item.label}
+              label={
+                item.link ? (
+                  <Link to={item.link} color="inherit">
+                    {item.label}
+                  </Link>
+                ) : (
+                  item.label
+                )
+              }
+              weight={(item.weight / highestValue) * 100}
+              icon={item.country ? <Flag size="m" country={item.country} /> : undefined}
+            >
+              <StyledFlexbox container>
+                <TruncateWithTooltip
+                  label={<Number value={item.weight} currency={item.currency} />}
+                >
+                  <Typography type="secondary" textAlign="right">
+                    <Number
+                      value={item.weight}
+                      currency={item.currency}
+                      percentage={item.percentage}
+                    />
+                  </Typography>
+                </TruncateWithTooltip>
+              </StyledFlexbox>
+            </DistributionBar>
+          ))}
         </Flexbox>
 
         <Flexbox item>
@@ -206,6 +206,7 @@ export const Showcase = () => {
           <Flexbox container direction="column" gap={2}>
             {Array.from(Array(10).keys()).map((item, i) => (
               <DistributionBar
+                key={`Instrument name ${i + 1}`}
                 label={`Instrument name ${i + 1}`}
                 weight={Math.floor(Math.random() * 101)}
                 delay={0 + i / 5}
@@ -222,6 +223,6 @@ export const Showcase = () => {
           </Flexbox>
         </Flexbox>
       </Flexbox>
-    </>
+    </IntlProvider>
   );
 };
