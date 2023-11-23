@@ -80,5 +80,5 @@ const AugmentedWidthSwitchToggleComponent = () => {
 };
 
 export const AugmentedWidthSwitchToggle = {
-  render: <AugmentedWidthSwitchToggleComponent />,
+  render: () => <AugmentedWidthSwitchToggleComponent />,
 };

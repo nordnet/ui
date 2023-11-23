@@ -1,4 +1,5 @@
 import React from 'react';
+import { IntlProvider } from 'react-intl';
 import DateTime from '.';
 
 export default {
@@ -10,7 +11,11 @@ export default {
 
 export const DateTimeStory = {
   render: () => {
-    return <DateTime value={1554824654} />;
+    return (
+      <IntlProvider locale="en">
+        <DateTime value={1554824654} />
+      </IntlProvider>
+    );
   },
 
   name: 'DateTime',
@@ -18,7 +23,11 @@ export const DateTimeStory = {
 
 export const WithDateOnly = {
   render: () => {
-    return <DateTime onlyDate value={1554824654} />;
+    return (
+      <IntlProvider locale="en">
+        <DateTime onlyDate value={1554824654} />
+      </IntlProvider>
+    );
   },
 
   name: 'With date only',
@@ -26,7 +35,11 @@ export const WithDateOnly = {
 
 export const WithDateTimeAsIso8601String = {
   render: () => {
-    return <DateTime value="1999-11-11T11:11+0100" />;
+    return (
+      <IntlProvider locale="en">
+        <DateTime value="1999-11-11T11:11+0100" />
+      </IntlProvider>
+    );
   },
 
   name: 'With date time as ISO 8601 string',
@@ -34,7 +47,11 @@ export const WithDateTimeAsIso8601String = {
 
 export const WithDateAsIso8601String = {
   render: () => {
-    return <DateTime onlyDate value="1999-11-11" />;
+    return (
+      <IntlProvider locale="en">
+        <DateTime onlyDate value="1999-11-11" />
+      </IntlProvider>
+    );
   },
 
   name: 'With date as ISO 8601 string',
@@ -54,7 +71,11 @@ export const WithCustomFormattingOptions = {
       weekday: 'short' as FormatDateOptionWeekDay,
     };
 
-    return <DateTime value="1999-11-11" options={options} />;
+    return (
+      <IntlProvider locale="en">
+        <DateTime value="1999-11-11" options={options} />
+      </IntlProvider>
+    );
   },
 
   name: 'With custom formatting options',
@@ -62,7 +83,11 @@ export const WithCustomFormattingOptions = {
 
 export const InvalidValueStory = {
   render: () => {
-    return <DateTime value={null} />;
+    return (
+      <IntlProvider locale="en">
+        <DateTime value={null} />
+      </IntlProvider>
+    );
   },
 
   name: 'Invalid value',
@@ -70,7 +95,11 @@ export const InvalidValueStory = {
 
 export const UsesCustomSymbolForInvalidValue = {
   render: () => {
-    return <DateTime value={null} invalidValue="X" />;
+    return (
+      <IntlProvider locale="en">
+        <DateTime value={null} invalidValue="X" />
+      </IntlProvider>
+    );
   },
 
   name: 'Uses custom symbol for invalid value',
