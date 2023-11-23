@@ -55,12 +55,13 @@ export const ContainerLabel = styled.label<{
   cursor: pointer;
   padding: ${(p) => p.theme.spacing.unit(2)}px;
   height: ${(p) => p.theme.spacing.unit(8)}px;
-  color: ${(p) => p.theme.color.quickFilterText};
-  background: ${(p) => p.theme.color.quickFilterBackground};
+  color: ${(p) => p.theme.colorTokens.neutral.text_default};
+
+  background: ${(p) => p.theme.colorTokens.neutral.background_medium};
   outline-offset: -1px;
 
   &:hover {
-    color: ${(p) => p.theme.color.quickFilterSelectedText};
+    color: ${(p) => p.theme.colorTokens.action.text_default};
   }
 
   &:focus-visible {
