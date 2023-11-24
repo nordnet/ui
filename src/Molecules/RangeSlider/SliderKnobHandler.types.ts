@@ -1,14 +1,9 @@
 import { Theme } from '../../theme/theme.types';
+import { KnobType } from './constants';
 
 type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // c
 export type ColorFn = (t: Theme) => Values<Theme['color']>;
 export type Variant = 'big' | 'small' | 'player';
-
-export type InternalProps = {
-  $disabled?: boolean;
-  $sliderColor?: ColorFn;
-  $variant?: Variant;
-};
 
 export type Props = {
   disabled?: boolean;
@@ -18,13 +13,14 @@ export type Props = {
   min: number;
   onChange: (v: number) => void;
   readOnly?: boolean;
-  showTooltip?: boolean;
+  setActiveHandle: (handle: KnobType) => void;
   sliderColor?: ColorFn;
   step: number;
   trackRef: React.MutableRefObject<any>;
-  type?: string;
+  knobType: KnobType;
   value: number;
   variant?: Variant;
+  zIndex?: number;
 };
 
 export type SliderKnobHandlerComponent = React.FC<Props>;

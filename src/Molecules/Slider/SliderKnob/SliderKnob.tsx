@@ -45,6 +45,7 @@ const Handle = styled('div')<InternalProps>`
       return !p.$disabled ? `${knobColor}  ` : '';
     }};
   }
+  z-index: ${(p) => p.$zIndex};
 `;
 
 const SliderKnob: Component = React.forwardRef<HTMLDivElement, Props>(
@@ -62,6 +63,7 @@ const SliderKnob: Component = React.forwardRef<HTMLDivElement, Props>(
       style,
       value,
       variant,
+      zIndex,
     },
     ref,
   ) => {
@@ -83,6 +85,7 @@ const SliderKnob: Component = React.forwardRef<HTMLDivElement, Props>(
         tabIndex={0}
         role="slider"
         style={style}
+        $zIndex={zIndex}
       />
     );
   },

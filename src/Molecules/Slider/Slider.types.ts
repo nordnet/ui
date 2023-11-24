@@ -8,6 +8,7 @@ export type InternalProps = {
   $disabled?: boolean;
   $sliderColor?: ColorFn;
   $variant?: Variant;
+  $zIndex?: number;
 };
 
 export type Props = {

@@ -58,13 +58,19 @@ const RangeSlider: Component = ({
   min,
   onChange,
   readOnly,
-  showTooltip,
   sliderColor,
   step,
   variant = 'big',
 }) => {
   const trackRef: React.Ref<HTMLDivElement> = useRef(null);
   const [initialized, setInitialized] = useState(false); // trackRef is not set first render, need to force a re-render
+  const [activeHandle, setActiveHandle] = useState(KnobType.LOW);
+
+  useEffect(() => {
+    if (!initialized) {
+      setInitialized(true);
+    }
+  }, [initialized]);
 
   const lowHandleRef: React.Ref<HTMLDivElement> = useRef(null);
   const highHandleRef: React.Ref<HTMLDivElement> = useRef(null);
@@ -102,7 +108,7 @@ const RangeSlider: Component = ({
     }
   };
 
-  const handleTrackClick = (event: MouseEvent) => {
+  const handleTrackClick = (event: React.MouseEvent) => {
     const pointerPosition = event.clientX;
 
     if (!disabled && !readOnly) {
@@ -115,6 +121,7 @@ const RangeSlider: Component = ({
       const percent = diff / width;
 
       const newValue = percentToValue(percent, min, max);
+
       const difflowValue = Math.abs(newValue - lowValue);
       const diffhighValue = Math.abs(newValue - highValue);
 
@@ -125,24 +132,25 @@ const RangeSlider: Component = ({
       );
 
       const clampedValue = clamp(newValueRounded, min, max);
-      if (clampedValue !== null) {
-        updateValue(clampedValue, difflowValue < diffhighValue ? KnobType.LOW : KnobType.HIGH);
 
-        if (difflowValue < diffhighValue) {
+      if (clampedValue !== null) {
+        if (
+          difflowValue < diffhighValue ||
+          (clampedValue < lowValue && activeHandle === KnobType.LOW)
+        ) {
+          updateValue(clampedValue, KnobType.LOW);
           lowHandleRef.current?.focus();
-        } else {
+        } else if (
+          difflowValue > diffhighValue ||
+          (clampedValue > highValue && activeHandle === KnobType.HIGH)
+        ) {
+          updateValue(clampedValue, KnobType.HIGH);
           highHandleRef.current?.focus();
         }
       }
     }
     return null;
   };
-
-  useEffect(() => {
-    if (!initialized) {
-      setInitialized(true);
-    }
-  }, [initialized]);
 
   return (
     <Container
@@ -165,36 +173,42 @@ const RangeSlider: Component = ({
             <SliderKnobHandler
               disabled={disabled}
               handleRef={lowHandleRef}
+              knobType={KnobType.LOW}
               max={max}
               min={min}
               onChange={(value) => {
-                updateValue(value, KnobType.LOW);
+                if (value <= highValue) {
+                  updateValue(value, KnobType.LOW);
+                }
               }}
               readOnly={readOnly}
-              showTooltip={showTooltip}
+              setActiveHandle={setActiveHandle}
               sliderColor={sliderColor}
               step={step}
               trackRef={trackRef}
-              type={KnobType.LOW}
               value={lowValue}
               variant={variant}
+              zIndex={activeHandle === KnobType.LOW ? 2 : 1}
             />
             <SliderKnobHandler
               disabled={disabled}
               handleRef={highHandleRef}
+              knobType={KnobType.HIGH}
               max={max}
               min={min}
               onChange={(value) => {
-                updateValue(value, KnobType.HIGH);
+                if (value >= lowValue) {
+                  updateValue(value, KnobType.HIGH);
+                }
               }}
               readOnly={readOnly}
-              showTooltip={showTooltip}
+              setActiveHandle={setActiveHandle}
               sliderColor={sliderColor}
               step={step}
               trackRef={trackRef}
-              type={KnobType.HIGH}
               value={highValue}
               variant={variant}
+              zIndex={activeHandle === KnobType.HIGH ? 2 : 1}
             />
           </>
         )}

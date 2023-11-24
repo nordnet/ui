@@ -1,4 +1,4 @@
-import React, { KeyboardEvent, MouseEvent, TouchEvent } from 'react';
+import React from 'react';
 import { SliderKnobHandlerComponent } from './SliderKnobHandler.types';
 import { getKnobSize } from '../Slider/utils';
 import { SliderKnob } from '../Slider/SliderKnob';
@@ -40,15 +40,18 @@ const valueToPercent = (value: number, min: number, max: number) => {
 const SliderKnobHandler: SliderKnobHandlerComponent = ({
   disabled,
   handleRef,
+  knobType,
   max,
   min,
   onChange,
   readOnly,
+  setActiveHandle,
   sliderColor,
   step,
   trackRef,
   value,
   variant = 'big',
+  zIndex,
 }) => {
   const trackPercent = valueToPercent(value, min, max);
   const handlePosition = `calc(${trackPercent}% - ${getKnobSize(variant) / 2}px)`;
@@ -84,11 +87,10 @@ const SliderKnobHandler: SliderKnobHandlerComponent = ({
     }
   };
 
-  const handleMouseMove = (event: MouseEvent) => {
+  const handleMouseMove = (event: React.MouseEvent) => {
     event.stopPropagation();
     event.preventDefault();
-    const pointerPosition = event.clientX;
-    handleChange(pointerPosition);
+    handleChange(event.clientX);
   };
 
   const handleMouseUp = () => {
@@ -97,11 +99,12 @@ const SliderKnobHandler: SliderKnobHandlerComponent = ({
   };
 
   const handleMouseDown = () => {
+    setActiveHandle(knobType);
     document.addEventListener('mousemove', handleMouseMove as () => void);
     document.addEventListener('mouseup', handleMouseUp);
   };
 
-  const handleTouchMove = (event: TouchEvent) => {
+  const handleTouchMove = (event: React.TouchEvent) => {
     event.stopPropagation();
     event.preventDefault();
     const touchPosition = event.touches[0].clientX;
@@ -118,11 +121,11 @@ const SliderKnobHandler: SliderKnobHandlerComponent = ({
     document.addEventListener('touchend', handleTouchEnd);
   };
 
-  const handleKnobClick = (event: MouseEvent) => {
+  const handleKnobClick = (event: React.MouseEvent) => {
     event.stopPropagation();
   };
 
-  const handleKeyDown = (event: KeyboardEvent) => {
+  const handleKeyDown = (event: React.KeyboardEvent) => {
     if (!disabled) {
       const increase = event.key && ['ArrowRight', 'ArrowUp'].includes(event.key);
       const decrease = event.key && ['ArrowLeft', 'ArrowDown'].includes(event.key);
@@ -155,6 +158,7 @@ const SliderKnobHandler: SliderKnobHandlerComponent = ({
       }}
       value={value}
       variant={variant}
+      zIndex={zIndex}
     />
   );
 };
