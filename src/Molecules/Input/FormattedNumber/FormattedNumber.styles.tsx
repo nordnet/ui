@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components';
 import { Flexbox } from '../../..';
-import NormalizedElements from '../../../common/NormalizedElements';
 import { placeholderNormalization } from '../Text/Text';
-import { Props, Variant } from './Number.types';
-import { numberInputHasError } from './utils';
+import { Props, Variant } from './FormattedNumber.types';
+import FormattedInput from './FormattedInput/FormattedInput';
+import { hasError } from './utils';
 
 const calculateHeight = (p: any, variant: Variant | undefined, size: 's' | undefined) => {
   if (variant === 'quiet') return 'auto';
@@ -52,7 +52,7 @@ const focusBorderStyles = css`
 const borderStyles = css<Pick<Props, 'error' | 'success' | 'variant' | 'disabled'>>`
   border: 1px solid
     ${(p) => {
-      if (numberInputHasError(p.error)) return p.theme.color.inputBorderError;
+      if (hasError(p.error)) return p.theme.color.inputBorderError;
       if (p.success) return p.theme.color.inputBorderSuccess;
       return p.theme.color.inputBorder;
     }};
@@ -71,7 +71,7 @@ const borderStyles = css<Pick<Props, 'error' | 'success' | 'variant' | 'disabled
       : ''}
 `;
 
-export const NumberInputWrapper = styled(Flexbox)`
+const Wrapper = styled(Flexbox)`
   position: relative;
   box-shadow: 0 1px 3px ${(p) => p.theme.color.shadowInput};
 `;
@@ -82,7 +82,7 @@ const getPositionStyles = (p: any) => {
   return '';
 };
 
-export const NumberInputAddonBox = styled(Flexbox)<{
+const AddonBox = styled(Flexbox)<{
   position?: 'left' | 'right';
   variant?: 'quiet' | 'normal';
 }>`
@@ -93,7 +93,7 @@ export const NumberInputAddonBox = styled(Flexbox)<{
   ${getPositionStyles}
 `;
 
-export const NumberInputStepper = styled.button.attrs(() => ({ type: 'button' }))<Partial<Props>>`
+const Stepper = styled.button.attrs(() => ({ type: 'button' }))<Partial<Props>>`
   ${width}
   ${height}
   ${background}
@@ -126,11 +126,9 @@ export const NumberInputStepper = styled.button.attrs(() => ({ type: 'button' })
   }
 `;
 
-// const RealInput = styled(NormalizedElements.Input);
-
-export const NumberInputStylised = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<
-  Partial<Props>
->`
+const Input = styled(FormattedInput).attrs(() => ({
+  type: 'text',
+}))<Partial<Props> & { showSteppers: boolean }>`
   ${background}
   ${borderStyles}
   ${height}
@@ -181,9 +179,9 @@ export const NumberInputStylised = styled(NormalizedElements.Input).attrs(() => 
       : ''};
 `;
 
-export const NumberInputComponents = {
-  NumberInputAddonBox,
-  NumberInputStylised,
-  NumberInputStepper,
-  NumberInputWrapper,
+export const FormattedNumberComponents = {
+  AddonBox,
+  Input,
+  Stepper,
+  Wrapper,
 };

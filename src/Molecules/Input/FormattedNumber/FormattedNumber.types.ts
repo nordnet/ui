@@ -1,19 +1,13 @@
-import { IntlShape } from 'react-intl';
-
 export type Variant = 'normal' | 'quiet';
 
 export type Props = {
   autoFocus?: boolean;
   autoComplete?: 'on' | 'off';
   className?: string;
-  defaultValue?: string | number;
+  defaultValue?: number | null;
   disabled?: boolean;
   error?: string;
   extraInfo?: string;
-  /** @deprecated use id instead. */
-  fieldId?: string;
-  /** @deprecated is now handled internally when error prop is present */
-  hasError?: boolean;
   hideLabel?: boolean;
   id: string;
   /** inputMode:
@@ -36,45 +30,38 @@ export type Props = {
   labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
   labelTooltipInModal?: boolean;
   leftAddon?: React.ReactNode;
-  max?: string | number;
-  min?: string | number;
+  max?: number;
+  min?: number;
   name?: string;
   placeholder?: string;
   required?: boolean;
   rightAddon?: React.ReactNode;
   size?: 's';
-  step?: string | number;
+  step?: number;
   success?: boolean;
-  value?: string | number;
+  value?: number | null;
   visuallyEmphasiseRequired?: boolean;
   noSteppers?: boolean;
 
   onStepUp?: () => void;
   onStepDown?: () => void;
-  onChange?: (value: string) => void;
+  onChange?: (value: number | null) => void;
   onClick?: React.MouseEventHandler<HTMLInputElement>;
-  onBlur?: React.FocusEventHandler<HTMLInputElement>;
+  onBlur?: (value: number | null) => void;
   onFocus?: React.FocusEventHandler<HTMLInputElement>;
   onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
   width?: string | number;
   variant?: Variant;
-  withThousandSeparator?: boolean;
 };
 
-export type NumberComponent = React.FunctionComponent<Props>;
+export type FormattedNumberComponent = React.FunctionComponent<Props>;
 
 export type adjustValueProps = {
   step: number;
   min?: number;
   max?: number;
   shouldIncrement: boolean;
-  originalValue: number;
-  intl: IntlShape;
+  originalValue: number | null;
 };
-
-export interface NumberInputCursorPosition {
-  caret: number;
-  element: EventTarget & HTMLInputElement;
-}

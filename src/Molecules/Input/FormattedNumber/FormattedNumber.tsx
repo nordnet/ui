@@ -1,46 +1,30 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { useIntl } from 'react-intl';
+import React, { useRef, useState } from 'react';
 import * as R from 'ramda';
 import { FormField, OldIcon, Typography, VisuallyHidden } from '../../..';
+import { isUndefined } from '../../../common/utils';
 
-import { assert, isNumber, isString, isUndefined } from '../../../common/utils';
-import {
-  getLocaleStringAsNumber,
-  getNumberAsLocaleString,
-  getNumberAsString,
-  getStringAsNumber,
-  getThousandsSeparator,
-  numberInputHasError,
-  removeNonNumberCharacters,
-} from './utils';
 import adjustValue from './adjustValue';
-import { NumberComponent, NumberInputCursorPosition, Props } from './Number.types';
-import { usePrevious } from '../../../common/Hooks';
-import {
-  NumberInputAddonBox,
-  NumberInputComponents,
-  NumberInputStepper,
-  NumberInputStylised,
-  NumberInputWrapper,
-} from './Number.styles';
+import { FormattedNumberComponent, Props } from './FormattedNumber.types';
+import { FormattedNumberComponents } from './FormattedNumber.styles';
+import { hasError } from './utils';
 
-const NumberInput: NumberComponent & {
+const FormattedNumberInput: FormattedNumberComponent & {
   /**
    * This will allow you to customize
    * inner parts with styled-components
    * @example
-   * const CustomNumberInput = styled(Input.Number)`
+   * const CustomNumberInput = styled(Input.FormattedNumber)`
    *  ${Stepper} {
    *    color: pink;
    * }
    * `
    * */
-  components: typeof NumberInputComponents;
+  components: typeof FormattedNumberComponents;
 } = (props) => {
   const {
     autoFocus,
     autoComplete,
-    defaultValue,
+    defaultValue = null,
     disabled,
     error,
     id,
@@ -65,113 +49,46 @@ const NumberInput: NumberComponent & {
     step = 1,
     inputMode = 'decimal',
     success,
-    value: controlledValueRaw,
+    value: controlledValue,
     visuallyEmphasiseRequired,
     variant = 'normal',
-    withThousandSeparator = false,
   } = props;
-  const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
-  const previousInternalValue = usePrevious(internalValue);
-  const [cursorPosition, setCursorPosition] = useState<NumberInputCursorPosition | null>(null);
+  const [internalValue, setInternalValue] = useState<number | null>(defaultValue);
+  const inputRef = useRef<HTMLInputElement>(null);
 
-  const intl = useIntl();
+  const value = controlledValue !== undefined ? controlledValue : internalValue;
+
   // Quiet variant only works while there are noSteppers
   const showSteppers =
     noSteppers !== true && isUndefined(leftAddon) && isUndefined(rightAddon) && variant !== 'quiet';
   const placeholder = showSteppers ? undefined : placeholderRaw;
 
-  const inputRef = useRef<HTMLInputElement>(null);
-  const isControlled = isString(controlledValueRaw) || isNumber(controlledValueRaw);
-  // handle case for entered negative values
-  const numberAsString =
-    controlledValueRaw === '-' ? controlledValueRaw : getNumberAsString(controlledValueRaw);
-  const controlledValue = isControlled && numberAsString;
-  const value = isControlled ? controlledValue : internalValue;
-
-  useEffect(() => {
-    /**
-     * By default, when we modify the input field value, the caret jumps to the end of the input.
-     * This behavior is not desired, so we need to fix it.
-     */
-    if (withThousandSeparator && cursorPosition !== null) {
-      const { caret, element } = cursorPosition;
-
-      const separator = getThousandsSeparator(intl);
-      const valueString = getNumberAsLocaleString(value, intl);
-      const prevValueString = getNumberAsLocaleString(previousInternalValue, intl);
-
-      /**
-       * If a number was added and this resulted in adding a separator, move the caret to the right.
-       * Otherwise, leave it where it should be.
-       */
-      if (
-        value.length > previousInternalValue.length &&
-        valueString.split(separator).length > prevValueString.split(separator).length
-      ) {
-        element.selectionStart = caret + 1;
-        element.selectionEnd = caret + 1;
-      } else {
-        element.selectionStart = caret;
-        element.selectionEnd = caret;
-      }
-    }
-  }, [cursorPosition, withThousandSeparator, intl, value, previousInternalValue]);
-
-  const handleValueChange = (newValue: string) => {
-    const convertedValue: string = withThousandSeparator
-      ? getLocaleStringAsNumber(newValue, value, intl)
-      : newValue;
-
-    setInternalValue(convertedValue);
-
-    if (typeof onChange === 'function') {
-      onChange(convertedValue);
-    }
+  const handleValueChange = (newValue: number | null) => {
+    setInternalValue(newValue);
+    onChange?.(newValue);
   };
 
-  const sanitizedNumbers = {
-    max: max ? getStringAsNumber(max) : undefined,
-    min: min ? getStringAsNumber(min) : undefined,
-    step: isNumber(step) ? step : getStringAsNumber(step),
-    uncontrolledValue: getStringAsNumber(value),
-  };
-
-  const getUpdateValue = (increment: boolean) => {
-    return adjustValue({
-      originalValue: sanitizedNumbers.uncontrolledValue,
-      step: sanitizedNumbers.step,
-      min: sanitizedNumbers.min,
-      max: sanitizedNumbers.max,
+  const getUpdateValue = (increment: boolean): number =>
+    adjustValue({
+      originalValue: value,
+      step,
+      min,
+      max,
       shouldIncrement: increment,
-      intl,
     });
-  };
 
   const onStepHandler = (stepUp: boolean) => {
     const updatedValue = getUpdateValue(stepUp);
+
     handleValueChange(updatedValue);
 
-    if (stepUp && onStepUp) {
-      onStepUp();
+    if (stepUp) {
+      onStepUp?.();
+    } else {
+      onStepDown?.();
     }
 
-    if (!stepUp && onStepDown) {
-      onStepDown();
-    }
-
-    if (inputRef.current) {
-      inputRef.current.focus();
-    }
-  };
-
-  const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (withThousandSeparator)
-      setCursorPosition({
-        caret: e.target.selectionStart || 0,
-        element: e.target,
-      });
-
-    handleValueChange(e.target.value);
+    inputRef?.current?.focus();
   };
 
   const onKeyDownHandler = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -184,26 +101,8 @@ const NumberInput: NumberComponent & {
       onStepHandler(key === upKey);
     }
 
-    if (onKeyDown) {
-      onKeyDown(e);
-    }
+    onKeyDown?.(e);
   };
-
-  if (props.fieldId) {
-    assert(false, `Input.Number: The prop fieldId is deprecated, please use id instead`, {
-      level: 'warn',
-    });
-  }
-
-  if (props.hasError) {
-    assert(
-      false,
-      `Input.Number: The prop hasError is deprecated and not needed. The error prop is enough.`,
-      {
-        level: 'warn',
-      },
-    );
-  }
 
   return (
     <FormField
@@ -225,73 +124,67 @@ const NumberInput: NumberComponent & {
       fieldId={id}
     >
       <Typography type="secondary" color={(t) => t.color.text}>
-        <NumberInputWrapper container item grow={1} alignItems="center">
-          <NumberInputStylised
-            {...{
-              autoFocus,
-              disabled,
-              id,
-              error,
-              leftAddon,
-              max,
-              min,
-              name,
-              onBlur,
-              onChange: onChangeHandler,
-              onClick,
-              onFocus,
-              onKeyDown: onKeyDownHandler,
-              onKeyPress,
-              onKeyUp,
-              placeholder,
-              ref: inputRef,
-              rightAddon,
-              required,
-              size,
-              step,
-              success,
-              value: withThousandSeparator
-                ? getNumberAsLocaleString(value, intl)
-                : removeNonNumberCharacters(value),
-              inputMode,
-              showSteppers,
-              variant,
-            }}
-            {...(numberInputHasError(error) ? { 'aria-invalid': true } : {})}
-            {...(autoComplete ? { autoComplete } : {})}
+        <FormattedNumberComponents.Wrapper container item grow={1} alignItems="center">
+          <input type="hidden" name={name} value={value === null ? '' : value} />
+          <FormattedNumberComponents.Input
+            id={id}
+            autoFocus={autoFocus}
+            autoComplete={autoComplete}
+            ariaInvalid={hasError(error)}
+            disabled={disabled}
+            onChange={handleValueChange}
+            onClick={onClick}
+            onBlur={() => onBlur?.(value)}
+            onKeyPress={onKeyPress}
+            onFocus={onFocus}
+            onKeyDown={onKeyDownHandler}
+            onKeyUp={onKeyUp}
+            placeholder={placeholder}
+            value={value}
+            inputMode={inputMode}
+            ref={inputRef}
+            required={required}
+            /* FormattedNumber style props */
+            variant={variant}
+            error={error}
+            success={success}
+            size={size}
+            showSteppers={showSteppers}
+            leftAddon={leftAddon}
+            rightAddon={rightAddon}
           />
           {showSteppers && (
             <>
-              <NumberInputStepper
+              <FormattedNumberComponents.Stepper
                 onClick={() => onStepHandler(false)}
                 size={size}
                 disabled={disabled}
               >
-                <VisuallyHidden>decrease number by {step}</VisuallyHidden>
+                <VisuallyHidden>−{step}</VisuallyHidden>
                 <OldIcon.Minus size={3} />
-              </NumberInputStepper>
-              <NumberInputStepper
+              </FormattedNumberComponents.Stepper>
+              <FormattedNumberComponents.Stepper
                 onClick={() => onStepHandler(true)}
                 size={size}
                 disabled={disabled}
               >
-                <VisuallyHidden>increase number by {step}</VisuallyHidden>
+                <VisuallyHidden>+{step}</VisuallyHidden>
                 <OldIcon.Plus size={3} />
-              </NumberInputStepper>
+              </FormattedNumberComponents.Stepper>
             </>
           )}
           {leftAddon && (
-            <NumberInputAddonBox
+            <FormattedNumberComponents.AddonBox
               container
               justifyContent="center"
               alignItems="center"
               position="left"
             >
               {leftAddon}
-            </NumberInputAddonBox>
+            </FormattedNumberComponents.AddonBox>
           )}
           {rightAddon && (
-            <NumberInputAddonBox
+            <FormattedNumberComponents.AddonBox
               container
               justifyContent="center"
               alignItems="center"
@@ -299,14 +192,14 @@ const NumberInput: NumberComponent & {
               variant={variant}
             >
               {rightAddon}
-            </NumberInputAddonBox>
+            </FormattedNumberComponents.AddonBox>
           )}
-        </NumberInputWrapper>
+        </FormattedNumberComponents.Wrapper>
       </Typography>
     </FormField>
   );
 };
-NumberInput.components = NumberInputComponents;
+FormattedNumberInput.components = FormattedNumberComponents;
 export const FormattedNumber: React.FC<Props> & {
-  components: typeof NumberInputComponents;
-} = NumberInput as any;
+  components: typeof FormattedNumberComponents;
+} = FormattedNumberInput as any;

@@ -1,5 +1,5 @@
 import * as R from 'ramda';
-import { adjustValueProps } from './Number.types';
+import { adjustValueProps } from './FormattedNumber.types';
 
 const getNumberOfDecimals = R.pipe(
   R.toString,
@@ -12,16 +12,16 @@ const adjustValue = ({
   originalValue,
   step,
   shouldIncrement,
-  intl,
   min = -Infinity,
   max = Infinity,
-}: adjustValueProps) => {
+}: adjustValueProps): number => {
+  const originalValueOrZero = originalValue === null ? 0 : originalValue;
   const numberOfDecimals = getNumberOfDecimals(step);
   const multiplier = 10 ** numberOfDecimals; // 10^decimals
   const stepCents = multiplier * step;
 
   const getAdjustedValueCents = () => {
-    const valueCents = Math.round(originalValue * multiplier);
+    const valueCents = Math.round(originalValueOrZero * multiplier);
     const reminder = valueCents % stepCents;
 
     if (reminder === 0) {
@@ -46,12 +46,6 @@ const adjustValue = ({
     ),
     R.when((price) => price < min, R.always(min)),
     R.when((price) => price > max, R.always(max)),
-    (price) =>
-      intl.formatNumber(price, {
-        minimumFractionDigits: numberOfDecimals,
-        maximumFractionDigits: numberOfDecimals,
-        useGrouping: false,
-      }),
   );
 
   return getAdjustedValue(adjustedValueCents);
