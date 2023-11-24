@@ -312,6 +312,34 @@ describe('FormattedInput', () => {
     expect(input).toHaveValue('5,000');
   });
 
+  test.each(LOCALES)(
+    'prepends zero when decimal sign is added without whole number part for locale $locale',
+    async ({ locale, decimalSign, minusSign }) => {
+      render(<TestComponent />, {
+        wrapper: createWrapper(locale),
+      });
+      const input = screen.getByRole('textbox') as HTMLInputElement;
+      await userEvent.type(input, decimalSign);
+      expect(input).toHaveValue(`0${decimalSign}`);
+
+      await userEvent.clear(input);
+      await userEvent.type(input, minusSign + decimalSign);
+      expect(input).toHaveValue(`${minusSign}0${decimalSign}`);
+
+      await userEvent.clear(input);
+      await userEvent.type(input, '1');
+      input.setSelectionRange(0, 0); // place caret at beginning
+      await userEvent.keyboard(decimalSign);
+      expect(input).toHaveValue(`0${decimalSign}1`);
+
+      await userEvent.clear(input);
+      await userEvent.type(input, '1');
+      input.setSelectionRange(0, 0); // place caret at beginning
+      await userEvent.keyboard(minusSign + decimalSign);
+      expect(input).toHaveValue(`${minusSign}0${decimalSign}1`);
+    },
+  );
+
   /* Known Issues & Future Improvements... */
 
   test.todo('[medium prio] prepending zero on lone decimal sign puts caret in wrong position');

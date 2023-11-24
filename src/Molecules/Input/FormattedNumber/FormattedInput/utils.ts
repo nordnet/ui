@@ -39,7 +39,7 @@ const getSanitizedValue = (inputValue: string, replaceValue: string, intl: IntlS
     .replace(replaceMinusSignRegExp, '-'); // replace localized minusSign
 
   const sanitizedValue = delocalizedValue
-    .replace(/(?<=^|-)\.$/, '0.') // prepend 0 when integer part is missing for decimal
+    .replace(/(?<=^|-)\./, '0.') // prepend 0 when integer part is missing for decimal
     .replace(/(?<!^)-/g, replaceValue); // remove minusSign not at start of string
 
   return sanitizedValue;
