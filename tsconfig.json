@@ -25,5 +25,5 @@
     "ignoreDeprecations": "5.0" // TODO: remove suppressImplicitAnyIndexErrors and this line
   },
   "include": ["src"],
-  "exclude": ["node_modules", "build", "scripts", ".history", "**/*.test.ts*"]
+  "exclude": ["node_modules", "build", "scripts", ".history"]
 }

@@ -1,8 +1,9 @@
+import { IntlShape } from 'react-intl';
 import adjustValue from './adjustValue';
 
 const intl = {
   formatNumber: (x) => x.toString(),
-} as any;
+} as IntlShape;
 
 describe('adjustValue', () => {
   test('step up int by int', () => {
