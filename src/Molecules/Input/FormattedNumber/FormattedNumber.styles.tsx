@@ -60,6 +60,7 @@ const borderStyles = css<Pick<Props, 'error' | 'success' | 'variant' | 'disabled
   ${hoverBorderStyles}
   ${focusBorderStyles}
   border-width: ${(p) => (p.variant === 'quiet' ? '0 0 2px 0' : '1px')};
+
   &:focus {
     border-width: 1px;
   }
@@ -136,9 +137,11 @@ const Input = styled(FormattedInput).attrs(() => ({
   padding: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   width: 100%;
   color: ${(p) => p.theme.color.text};
+
   &:disabled {
     color: ${(p) => p.theme.color.disabledText};
   }
+
   text-align: ${(p) => (p.showSteppers ? 'center' : 'left')};
   box-sizing: border-box;
   border-radius: ${(p) => (p.showSteppers ? '0' : p.theme.borderRadius4)};
