@@ -1,4 +1,4 @@
-import React, { useEffect, useImperativeHandle, useLayoutEffect, useRef, useState } from 'react';
+import React, { useImperativeHandle, useLayoutEffect, useRef, useState } from 'react';
 import { useIntl } from 'react-intl';
 import { Input } from '../../../../common/NormalizedElements/NormalizedInput';
 import { FormattedNumberInputType } from './FormattedInput.types';
@@ -33,17 +33,17 @@ const FormattedInput: FormattedNumberInputType = React.forwardRef(
     forwardedRef,
   ) => {
     const [formattedValue, setFormattedValue] = useState<string>(value?.toString() ?? '');
-    const previousFormattedValue = useRef(formattedValue);
-    const previousValue = useRef<number | null>();
+    const lastOnChangeValue = useRef<number | null>();
     const [caret, setCaret] = useState<{ position: number } | undefined>();
     const ref = useRef<HTMLInputElement>(null);
     const intl = useIntl();
 
     useImperativeHandle(forwardedRef, () => ref.current!, []);
 
-    useEffect(() => {
-      if (value !== previousValue.current) {
-        previousValue.current = undefined;
+    useLayoutEffect(() => {
+      const valueChangedExternally = value !== lastOnChangeValue.current;
+      if (valueChangedExternally) {
+        lastOnChangeValue.current = undefined;
         const invalidNumber = Number.isNaN(value);
 
         if (value === null || invalidNumber) {
@@ -52,7 +52,7 @@ const FormattedInput: FormattedNumberInputType = React.forwardRef(
           setFormattedValue(formatNumber(value, intl));
         }
       }
-    }, [value, previousValue, intl]);
+    }, [value, lastOnChangeValue, formattedValue, intl]);
 
     useLayoutEffect(() => {
       if (ref.current && caret !== undefined) {
@@ -79,8 +79,7 @@ const FormattedInput: FormattedNumberInputType = React.forwardRef(
       onChange(newValue);
       setFormattedValue(newFormattedValue);
       setCaret({ position: newCaretPosition });
-      previousFormattedValue.current = newFormattedValue;
-      previousValue.current = newValue;
+      lastOnChangeValue.current = newValue;
     };
 
     const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {

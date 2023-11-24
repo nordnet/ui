@@ -16,12 +16,11 @@ describe('FormattedInput', () => {
   ];
   const createWrapper =
     (locale: string) =>
-    ({ children }: { children: ReactNode }) =>
-      (
-        <IntlProvider locale={locale}>
-          <ThemeProvider theme={createTheme()}>{children}</ThemeProvider>
-        </IntlProvider>
-      );
+    ({ children }: { children: ReactNode }) => (
+      <IntlProvider locale={locale}>
+        <ThemeProvider theme={createTheme()}>{children}</ThemeProvider>
+      </IntlProvider>
+    );
 
   const TestComponent: FC<{ defaultValue?: number | null }> = ({ defaultValue = null }) => {
     const [value, setValue] = useState(defaultValue);
@@ -297,6 +296,20 @@ describe('FormattedInput', () => {
 
     await userEvent.type(input, '6');
     expect(span).toHaveTextContent('0.6');
+  });
+
+  test('should respect provided value', async () => {
+    render(<FormattedInput value={5000} onChange={() => {}} />, {
+      wrapper: createWrapper('en-GB'),
+    });
+    const input = screen.getByRole('textbox');
+    expect(input).toHaveValue('5,000');
+
+    await userEvent.type(input, '-1.618');
+    expect(input).toHaveValue('5,000');
+
+    await userEvent.type(input, '1');
+    expect(input).toHaveValue('5,000');
   });
 
   /* Known Issues & Future Improvements... */
