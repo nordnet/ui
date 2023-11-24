@@ -38,15 +38,21 @@ const adjustValue = ({
 
   const adjustedValueCents = getAdjustedValueCents();
 
-  const getAdjustedValue = R.pipe(
-    R.ifElse(
-      () => shouldIncrement,
-      (price) => (price + stepCents) / multiplier,
-      (price) => (price - stepCents) / multiplier,
-    ),
-    R.when((price) => price < min, R.always(min)),
-    R.when((price) => price > max, R.always(max)),
-  );
+  const getAdjustedValue = (value: number) => {
+    let adjustedPrice = shouldIncrement
+      ? (value + stepCents) / multiplier
+      : (value - stepCents) / multiplier;
+
+    if (adjustedPrice < min) {
+      adjustedPrice = min;
+    }
+
+    if (adjustedPrice > max) {
+      adjustedPrice = max;
+    }
+
+    return adjustedPrice;
+  };
 
   return getAdjustedValue(adjustedValueCents);
 };
