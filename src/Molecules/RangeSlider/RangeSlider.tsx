@@ -1,4 +1,4 @@
-import React, { MouseEvent, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 
 import { Component, InternalProps } from './RangeSlider.types';
@@ -7,11 +7,7 @@ import { SliderTrack } from './SliderTrack';
 import { SliderTrackHighlight } from '../Slider/SliderTrackHighlight';
 import { isFunction, isNumber } from '../../common/utils';
 import SliderKnobHandler from './SliderKnobHandler';
-
-const KnobPointerType = {
-  LOW: 'LOW',
-  HIGH: 'HIGH',
-};
+import { KnobType } from './constants';
 
 const clamp = (val: number, min: number, max: number) => {
   if (val < min) {
@@ -68,9 +64,10 @@ const RangeSlider: Component = ({
   variant = 'big',
 }) => {
   const trackRef: React.Ref<HTMLDivElement> = useRef(null);
+  const [initialized, setInitialized] = useState(false); // trackRef is not set first render, need to force a re-render
+
   const lowHandleRef: React.Ref<HTMLDivElement> = useRef(null);
   const highHandleRef: React.Ref<HTMLDivElement> = useRef(null);
-  const trackerBoundingClientRect: any = trackRef?.current?.getBoundingClientRect();
 
   const [lowValue, setLowValue] = useState(isNumber(defaultLowValue) ? defaultLowValue : min || 0);
   const minTrackPercent = valueToPercent(lowValue, min, max);
@@ -80,9 +77,9 @@ const RangeSlider: Component = ({
   );
   const maxTrackPercent = valueToPercent(highValue, min, max);
 
-  const updateValue = (newValue: number, type: string = KnobPointerType.LOW) => {
+  const updateValue = (newValue: number, type: string = KnobType.LOW) => {
     switch (type) {
-      case KnobPointerType.LOW:
+      case KnobType.LOW:
         if (newValue > highValue) {
           return;
         }
@@ -91,7 +88,7 @@ const RangeSlider: Component = ({
           onChange({ low: newValue, high: highValue });
         }
         break;
-      case KnobPointerType.HIGH:
+      case KnobType.HIGH:
         if (newValue < lowValue) {
           return;
         }
@@ -129,10 +126,7 @@ const RangeSlider: Component = ({
 
       const clampedValue = clamp(newValueRounded, min, max);
       if (clampedValue !== null) {
-        updateValue(
-          clampedValue,
-          difflowValue < diffhighValue ? KnobPointerType.LOW : KnobPointerType.HIGH,
-        );
+        updateValue(clampedValue, difflowValue < diffhighValue ? KnobType.LOW : KnobType.HIGH);
 
         if (difflowValue < diffhighValue) {
           lowHandleRef.current?.focus();
@@ -143,6 +137,12 @@ const RangeSlider: Component = ({
     }
     return null;
   };
+
+  useEffect(() => {
+    if (!initialized) {
+      setInitialized(true);
+    }
+  }, [initialized]);
 
   return (
     <Container
@@ -168,14 +168,14 @@ const RangeSlider: Component = ({
               max={max}
               min={min}
               onChange={(value) => {
-                updateValue(value, KnobPointerType.LOW);
+                updateValue(value, KnobType.LOW);
               }}
               readOnly={readOnly}
               showTooltip={showTooltip}
               sliderColor={sliderColor}
               step={step}
-              trackerBoundingClientRect={trackerBoundingClientRect}
-              type={KnobPointerType.LOW}
+              trackRef={trackRef}
+              type={KnobType.LOW}
               value={lowValue}
               variant={variant}
             />
@@ -185,14 +185,14 @@ const RangeSlider: Component = ({
               max={max}
               min={min}
               onChange={(value) => {
-                updateValue(value, KnobPointerType.HIGH);
+                updateValue(value, KnobType.HIGH);
               }}
               readOnly={readOnly}
               showTooltip={showTooltip}
               sliderColor={sliderColor}
               step={step}
-              trackerBoundingClientRect={trackerBoundingClientRect}
-              type={KnobPointerType.HIGH}
+              trackRef={trackRef}
+              type={KnobType.HIGH}
               value={highValue}
               variant={variant}
             />

@@ -37,31 +37,6 @@ const valueToPercent = (value: number, min: number, max: number) => {
   return ((value - min) * 100) / (max - min);
 };
 
-const getNewValue = (
-  clickPosition: number,
-  trackerBoundingClientRect: { left: number; width: number },
-  props: {
-    min: number;
-    max: number;
-    step: number;
-  },
-) => {
-  if (!trackerBoundingClientRect || !clickPosition) {
-    return null;
-  }
-
-  const { min, max, step } = props;
-  const { left, width } = trackerBoundingClientRect;
-
-  const diff = clickPosition - left;
-  const percent = diff / width;
-
-  const newValue = percentToValue(percent, min, max);
-  const newValueRounded = roundValueToStep(newValue, step, min);
-
-  return clamp(newValueRounded, min, max);
-};
-
 const SliderKnobHandler: SliderKnobHandlerComponent = ({
   disabled,
   handleRef,
@@ -71,7 +46,7 @@ const SliderKnobHandler: SliderKnobHandlerComponent = ({
   readOnly,
   sliderColor,
   step,
-  trackerBoundingClientRect,
+  trackRef,
   value,
   variant = 'big',
 }) => {
@@ -82,13 +57,26 @@ const SliderKnobHandler: SliderKnobHandlerComponent = ({
     onChange(newValue);
   };
 
-  const handleChange = (clickPosition: number) => {
-    if (!disabled && !readOnly) {
-      const newValue = getNewValue(clickPosition, trackerBoundingClientRect, {
-        min,
-        max,
-        step,
-      });
+  const getNewValue = (pointerPosition: number) => {
+    const trackClientRect = trackRef?.current?.getBoundingClientRect();
+    if (!trackClientRect || !pointerPosition) {
+      return null;
+    }
+
+    const { left, width } = trackClientRect;
+    const diff = pointerPosition - left;
+    const percent = diff / width;
+
+    const newValue = percentToValue(percent, min, max);
+    const newValueRounded = roundValueToStep(newValue, step, min);
+
+    return clamp(newValueRounded, min, max);
+  };
+
+  const handleChange = (pointerPosition: number) => {
+    const trackClientRect = trackRef?.current?.getBoundingClientRect();
+    if (!disabled && !readOnly && trackClientRect) {
+      const newValue = getNewValue(pointerPosition);
 
       if (newValue !== null) {
         updateValue(newValue);
@@ -170,4 +158,5 @@ const SliderKnobHandler: SliderKnobHandlerComponent = ({
     />
   );
 };
+
 export default SliderKnobHandler;

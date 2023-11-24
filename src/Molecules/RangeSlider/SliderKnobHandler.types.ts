@@ -21,7 +21,7 @@ export type Props = {
   showTooltip?: boolean;
   sliderColor?: ColorFn;
   step: number;
-  trackerBoundingClientRect: { left: number; top: number; width: number; height: number };
+  trackRef: React.MutableRefObject<any>;
   type?: string;
   value: number;
   variant?: Variant;
