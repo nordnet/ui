@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Theme } from 'theme/theme.types';
+import { IntlProvider } from 'react-intl';
 import docs from './AllocationBar.mdx';
 import AllocationBar from './AllocationBar';
 
@@ -37,9 +38,11 @@ export const BasicAllocationBar = {
     ];
 
     return (
-      <StyledContainer>
-        <AllocationBar allocations={mockedAllocations} />
-      </StyledContainer>
+      <IntlProvider locale="en">
+        <StyledContainer>
+          <AllocationBar allocations={mockedAllocations} />
+        </StyledContainer>
+      </IntlProvider>
     );
   },
 

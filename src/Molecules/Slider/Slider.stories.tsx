@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
+import { IntlProvider } from 'react-intl';
 
 import Slider from '.';
 import { Box, Input, Number, Typography } from '../..';
@@ -19,12 +20,14 @@ const Template = (args: Props) => {
   const handleChange = (v: number) => setValue(v);
 
   return (
-    <Box p={20}>
-      <Slider {...args} onChange={handleChange} />
-      <Typography>
-        <Number value={value} maximumDecimals={2} /> Kronor
-      </Typography>
-    </Box>
+    <IntlProvider locale="en">
+      <Box p={20}>
+        <Slider {...args} onChange={handleChange} />
+        <Typography>
+          <Number value={value} maximumDecimals={2} /> Kronor
+        </Typography>
+      </Box>
+    </IntlProvider>
   );
 };
 
@@ -66,16 +69,18 @@ const TemplateMultiColor = (args: Props) => {
   const handleChange = (v: number) => setValue(v);
 
   return (
-    <Box p={20}>
-      <Slider
-        {...args}
-        onChange={handleChange}
-        sliderColor={(t) => (value > 0 ? t.color.positive : t.color.negative)}
-      />
-      <Typography>
-        <Number value={value} maximumDecimals={2} /> Kronor
-      </Typography>
-    </Box>
+    <IntlProvider locale="en">
+      <Box p={20}>
+        <Slider
+          {...args}
+          onChange={handleChange}
+          sliderColor={(t) => (value > 0 ? t.color.positive : t.color.negative)}
+        />
+        <Typography>
+          <Number value={value} maximumDecimals={2} /> Kronor
+        </Typography>
+      </Box>
+    </IntlProvider>
   );
 };
 
@@ -137,18 +142,20 @@ const TemplateControlled = (args: Props) => {
   const handleChange = (v: string) => setValue(parseInt(v, 10));
 
   return (
-    <Box p={20}>
-      <Slider {...args} value={value} />
-      <Input.Number
-        id="unique-id"
-        label="Controlled from outside"
-        defaultValue={start}
-        onChange={handleChange}
-        min={args.min}
-        max={args.max}
-        step={args.step}
-      />
-    </Box>
+    <IntlProvider locale="en">
+      <Box p={20}>
+        <Slider {...args} value={value} />
+        <Input.Number
+          id="unique-id"
+          label="Controlled from outside"
+          defaultValue={start}
+          onChange={handleChange}
+          min={args.min}
+          max={args.max}
+          step={args.step}
+        />
+      </Box>
+    </IntlProvider>
   );
 };
 
