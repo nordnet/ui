@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import FlexTable from '../FlexTable';
 import { RowComponent } from '../Row/Row.types';
 import docs from '../FlexTable.mdx';
-import { Button, Flexbox, Number } from '../../..';
+import { Button, Flexbox, FlexTable, Number } from '../../..';
 
 export default {
   title: 'Molecules / FlexTable / With expandable rows',

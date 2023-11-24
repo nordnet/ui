@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import FlexTable from '../FlexTable';
-import { Flag, Flexbox, Typography } from '../../..';
+import { Flag, Flexbox, FlexTable, Typography } from '../../..';
 import docs from '../FlexTable.mdx';
 import { SortOrder } from '../Header/HeaderContent/HeaderContent.types';
 import { OnSort } from '../Header/Header.types';
@@ -102,7 +101,6 @@ export const UncontrolledSortableHeaders = () => {
   );
 };
 
-// For useState to work in storybook, components needs to be wrapped in a new function
 export const ControlledSortableHeaders = () => {
   const ControlledSortableHeadersExample = () => {
     const ReactComponent = () => {
@@ -283,7 +281,6 @@ export const StickyHeadersForDifferentScreenSizes = () => {
             Header 4
           </FlexTable.Header>
         </FlexTable.HeaderRow>
-
         {[...Array(50)]?.map((_, index) => (
           // eslint-disable-next-line react/no-array-index-key
           <FlexTable.Row key={index}>

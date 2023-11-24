@@ -105,17 +105,21 @@ const StyledListItem = styled(ListItem)<{
   `}
 
   position: relative;
+
   & ::before {
     ${(props) => lineStyles(props.$previousStatus, props)};
   }
+
   /** Remove line from top element */
   & :first-child::before {
     content: none;
   }
+
   & ::after {
     ${(props) => lineStyles(props.$currentStatus, props)};
     bottom: 0;
   }
+
   /** Remove line from bottom element */
   & :last-child::after {
     content: none;

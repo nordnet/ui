@@ -5,6 +5,7 @@ import { TbodyComponent } from './Tbody.types';
 const StyledTbody = styled.tbody`
   width: 100%;
   overflow: auto;
+
   @supports (-webkit-overflow-scrolling: touch):  {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;

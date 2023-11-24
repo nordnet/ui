@@ -11,6 +11,7 @@ type ArrowProps = {
 const arrowTop = css<ArrowProps>`
   top: 3px;
   margin-left: -${TRIANGLE_SIZE}px;
+
   &::before {
     border-left: ${TRIANGLE_SIZE}px solid transparent;
     border-right: ${TRIANGLE_SIZE}px solid transparent;
@@ -29,6 +30,7 @@ const arrowTop = css<ArrowProps>`
 const arrowBottom = css<ArrowProps>`
   bottom: 13px;
   margin-left: -${TRIANGLE_SIZE}px;
+
   &::before {
     border-left: ${TRIANGLE_SIZE}px solid transparent;
     border-right: ${TRIANGLE_SIZE}px solid transparent;
@@ -47,6 +49,7 @@ const arrowBottom = css<ArrowProps>`
 const arrowLeft = css<ArrowProps>`
   left: 3px;
   margin-top: -${TRIANGLE_SIZE}px;
+
   &::before {
     border-top: ${TRIANGLE_SIZE}px solid transparent;
     border-bottom: ${TRIANGLE_SIZE}px solid transparent;
@@ -66,6 +69,7 @@ const arrowRight = css<ArrowProps>`
   left: auto;
   right: 13px;
   margin-top: -${TRIANGLE_SIZE}px;
+
   &::before {
     border-top: ${TRIANGLE_SIZE}px solid transparent;
     border-bottom: ${TRIANGLE_SIZE}px solid transparent;

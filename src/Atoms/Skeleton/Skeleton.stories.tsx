@@ -9,55 +9,55 @@ export default {
   },
 };
 
-export const defaultStory = () => <Skeleton variant="text" width="300px" />;
-
-defaultStory.story = {
+export const DefaultStory = {
+  render: () => <Skeleton variant="text" width="300px" />,
   name: 'Default',
 };
 
-export const variants = () => (
-  <Display
-    title="Skeleton variants"
-    items={[
-      {
-        title: 'Text',
-        component: <Skeleton variant="text" width="200px" />,
-      },
-      {
-        title: 'Rect',
-        component: <Skeleton variant="rect" width="100px" height={25} />,
-      },
-      {
-        title: 'Circle',
-        component: <Skeleton variant="circle" width={16} height={16} />,
-      },
-    ]}
-  />
-);
+export const Variants = {
+  render: () => (
+    <Display
+      title="Skeleton variants"
+      items={[
+        {
+          title: 'Text',
+          component: <Skeleton variant="text" width="200px" />,
+        },
+        {
+          title: 'Rect',
+          component: <Skeleton variant="rect" width="100px" height={25} />,
+        },
+        {
+          title: 'Circle',
+          component: <Skeleton variant="circle" width={16} height={16} />,
+        },
+      ]}
+    />
+  ),
 
-variants.story = {
   name: 'Different variants',
 };
-export const delay = () => (
-  <Display
-    title="Skeleton with delay"
-    items={[
-      {
-        title: 'Without delay',
-        component: <Skeleton variant="rect" width="100px" height={25} />,
-      },
-      {
-        title: 'With default delay',
-        component: <Skeleton variant="rect" width="100px" height={25} delay />,
-      },
-      {
-        title: 'With custom delay',
-        component: <Skeleton variant="rect" width="100px" height={25} delay={3000} />,
-      },
-    ]}
-  />
-);
 
-delay.story = {
+export const Delay = {
+  render: () => (
+    <Display
+      title="Skeleton with delay"
+      items={[
+        {
+          title: 'Without delay',
+          component: <Skeleton variant="rect" width="100px" height={25} />,
+        },
+        {
+          title: 'With default delay',
+          component: <Skeleton variant="rect" width="100px" height={25} delay />,
+        },
+        {
+          title: 'With custom delay',
+          component: <Skeleton variant="rect" width="100px" height={25} delay={3000} />,
+        },
+      ]}
+    />
+  ),
+
   name: 'Skeleton with delay',
 };

@@ -11,7 +11,7 @@ export default {
   },
 };
 
-export const documentation = () => (
+export const Documentation = () => (
   <Typography type="primary">
     <MD>{docs}</MD>
   </Typography>

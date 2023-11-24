@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, { css, ThemedStyledProps } from 'styled-components';
-import * as R from 'ramda';
 import { Props, Spacings } from './Box.types';
 import { Theme } from '../../theme/theme.types';
 import { isNumber, isString } from '../../common/utils';
@@ -8,12 +7,21 @@ import { isNumber, isString } from '../../common/utils';
 const isPropPresentedIn = (props: Props) => (prop: keyof Props) =>
   typeof props[prop] !== 'undefined';
 
-// prettier-ignore
-const getCssString = (property: string, value: string | number) => R.cond([
-  [() => isString(value), () => css`${property}: ${value};`],
-  [() => isNumber(value), () => css`${property}: ${p => p.theme.spacing.unit(value as number)}px;`],
-  [R.T, () => css``],
-])(property, value);
+const getCssString = (property: string, value: string | number) => {
+  if (isString(value)) {
+    return css`
+      ${property}: ${value};
+    `;
+  }
+
+  if (isNumber(value)) {
+    return css`
+      ${property}: ${(p) => p.theme.spacing.unit(value)}px;
+    `;
+  }
+
+  return '';
+};
 
 const getStyles = (props: Props) => {
   const left = 0;
@@ -111,11 +119,9 @@ const getColor = (props: ThemedStyledProps<Props, Theme>) => {
 const StyledDiv = styled.div<Props>`
   ${(p) => getStyles(p)}
   ${(p) => (p.sm ? getStylesForSize('sm') : '')}
-  ${(p) =>
-    p.md ? getStylesForSize('md') : ''}
+  ${(p) => (p.md ? getStylesForSize('md') : '')}
   ${(p) => (p.xl ? getStylesForSize('xl') : '')}
-  ${(p) =>
-    p.lg ? getStylesForSize('lg') : ''}
+  ${(p) => (p.lg ? getStylesForSize('lg') : '')}
     background-color: ${(p) => getColor(p)};
 `;
 

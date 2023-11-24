@@ -11,41 +11,40 @@ export default {
   },
 };
 
-export const Showcase = () => (
-  <Flexbox container>
-    <Flexbox container direction="column">
-      <Badge.Account badgeSize="l">ISK</Badge.Account>
-      <Badge.Account badgeSize="m">ISK</Badge.Account>
-      <Badge.Account badgeSize="s">ISK</Badge.Account>
-    </Flexbox>
+export const Showcase = {
+  render: () => (
+    <Flexbox container>
+      <Flexbox container direction="column">
+        <Badge.Account badgeSize="l">ISK</Badge.Account>
+        <Badge.Account badgeSize="m">ISK</Badge.Account>
+        <Badge.Account badgeSize="s">ISK</Badge.Account>
+      </Flexbox>
 
-    <Flexbox container direction="column">
-      <Badge.Account badgeColor={(t) => t.color.badgeBackgroundPositive} badgeSize="l">
-        SEB
-      </Badge.Account>
-      <Badge.Account badgeColor={(t) => t.color.badgeBackgroundPositive} badgeSize="m">
-        SEB
-      </Badge.Account>
-      <Badge.Account badgeColor={(t) => t.color.badgeBackgroundPositive} badgeSize="s">
-        SEB
-      </Badge.Account>
-    </Flexbox>
+      <Flexbox container direction="column">
+        <Badge.Account badgeColor={(t) => t.color.badgeBackgroundPositive} badgeSize="l">
+          SEB
+        </Badge.Account>
+        <Badge.Account badgeColor={(t) => t.color.badgeBackgroundPositive} badgeSize="m">
+          SEB
+        </Badge.Account>
+        <Badge.Account badgeColor={(t) => t.color.badgeBackgroundPositive} badgeSize="s">
+          SEB
+        </Badge.Account>
+      </Flexbox>
 
-    <Flexbox container direction="column">
-      <Badge.Account badgeColor={(t) => t.color.badgeBackground} badgeSize="l">
-        Handels
-      </Badge.Account>
-      <Badge.Account badgeColor={(t) => t.color.badgeBackground} badgeSize="m">
-        HB
-      </Badge.Account>
-      <Badge.Account badgeColor={(t) => t.color.badgeBackground} badgeSize="s">
-        HB
-      </Badge.Account>
+      <Flexbox container direction="column">
+        <Badge.Account badgeColor={(t) => t.color.badgeBackground} badgeSize="l">
+          Handels
+        </Badge.Account>
+        <Badge.Account badgeColor={(t) => t.color.badgeBackground} badgeSize="m">
+          HB
+        </Badge.Account>
+        <Badge.Account badgeColor={(t) => t.color.badgeBackground} badgeSize="s">
+          HB
+        </Badge.Account>
+      </Flexbox>
     </Flexbox>
-  </Flexbox>
-);
-Showcase.story = {
-  name: 'Showcase',
+  ),
 };
 
 const StyledTypography = styled(Typography)`
@@ -53,31 +52,31 @@ const StyledTypography = styled(Typography)`
   color: ${(p) => p.theme.color.badgeTextColor};
 `;
 
-export const CustomChildren = () => (
-  <Display
-    items={[
-      {
-        title: 'Typography as child',
-        component: (
-          <Badge.Account>
-            <Typography color={(t) => t.color.badgeTextColor} type="caption">
-              KF
-            </Typography>
-          </Badge.Account>
-        ),
-      },
-      {
-        title: 'Styled typography as child',
-        component: (
-          <Badge.Account>
-            <StyledTypography>ASK</StyledTypography>
-          </Badge.Account>
-        ),
-      },
-    ]}
-  />
-);
+export const CustomChildren = {
+  render: () => (
+    <Display
+      items={[
+        {
+          title: 'Typography as child',
+          component: (
+            <Badge.Account>
+              <Typography color={(t) => t.color.badgeTextColor} type="caption">
+                KF
+              </Typography>
+            </Badge.Account>
+          ),
+        },
+        {
+          title: 'Styled typography as child',
+          component: (
+            <Badge.Account>
+              <StyledTypography>ASK</StyledTypography>
+            </Badge.Account>
+          ),
+        },
+      ]}
+    />
+  ),
 
-CustomChildren.story = {
   name: 'Custom children',
 };

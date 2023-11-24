@@ -149,6 +149,7 @@ export const usePropagateChangesThroughOnChange = (
     if (isChangeUncommitted) {
       const changes = machineState.context.uncommittedSelectedItems;
 
+      // @ts-ignore-next-line
       const action = changes.find((x) => typeof x.onSelect === 'function');
       if (action) {
         action.onSelect();

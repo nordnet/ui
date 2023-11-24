@@ -9,12 +9,6 @@ const isSecondary = (variant: PillButtonProps['variant']) => variant === 'second
 const isNegative = (variant: PillButtonProps['variant']) => variant === 'negative';
 const isTertiary = (variant: PillButtonProps['variant']) => variant === 'tertiary';
 
-const BORDER_RADIUS = {
-  s: 3,
-  m: 4,
-  l: 5,
-};
-
 const getButtonColor = (variant: PillButtonProps['variant'], theme: Theme) => {
   switch (variant) {
     case 'negative':
@@ -27,10 +21,7 @@ const getButtonColor = (variant: PillButtonProps['variant'], theme: Theme) => {
 };
 
 const StyledPillButton = styled(Button)<PillButtonProps>`
-  border-radius: ${({ theme, size }) =>
-    theme.isFeatureEnabled('roundedCorners')
-      ? theme.borderRadius(100)
-      : `${theme.spacing.unit(BORDER_RADIUS[size || 's'])}px`};
+  border-radius: ${({ theme }) => theme.borderRadius(100)};
   border-color: transparent;
   ${(p) =>
     (isSecondary(p.variant) || isNegative(p.variant)) &&

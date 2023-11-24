@@ -22,7 +22,7 @@ export const getAreasInfo = (
     col: areas[0].length,
     row: areas.length,
   };
-  const flatAreas = (R.flatten(areas) as unknown) as string[];
+  const flatAreas = R.flatten(areas) as unknown as string[];
 
   const areaNames = R.uniq(flatAreas);
 

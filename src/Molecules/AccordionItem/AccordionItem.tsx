@@ -14,6 +14,7 @@ const Item = styled.div<ItemProps>`
   border-radius: ${(p) => p.theme.borderRadius4};
   background-color: ${(p) =>
     !p.disableBackgroundColor && p.hasFocus ? p.theme.color.background : 'transparent'};
+
   && + & {
     border-top: 1px solid ${(p) => p.theme.color.divider};
   }

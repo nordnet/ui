@@ -27,6 +27,7 @@ const TwoButtonBox = styled.div`
   gap: ${(t) => t.theme.spacing.unit(3)}px;
   justify-content: flex-end;
   padding-left: ${(t) => t.theme.spacing.unit(3)}px;
+
   & button,
   & a {
     flex-basis: 50%;

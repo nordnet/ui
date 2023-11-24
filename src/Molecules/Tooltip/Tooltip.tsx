@@ -22,7 +22,7 @@ import { useTooltip } from './hooks';
 
 const Backdrop = styled.div`
   position: fixed;
-  inset: 0 0 0 0;
+  inset: 0;
   width: 100vw;
   height: 100vh;
   background-color: ${(p) => p.theme.color.modalBackdrop};

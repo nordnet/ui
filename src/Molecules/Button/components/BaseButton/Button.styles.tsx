@@ -10,18 +10,6 @@ const HEIGHT = {
   l: 10,
 };
 
-const PADDING_VERTICAL = {
-  s: 1,
-  m: 1,
-  l: 2,
-};
-
-const PADDING_HORIZONTAL = {
-  s: 3,
-  m: 3,
-  l: 4,
-};
-
 const PADDING_HORIZONTAL_ROUNDED_CORNERS = {
   s: 4,
   m: 5,
@@ -48,14 +36,10 @@ const minHeight = css<InnerProps>`
   min-height: ${(p) => `${p.theme.spacing.unit(HEIGHT[p.$size])}px`};
 `;
 
-const getPadding = (roundedCornersToggleEnabled: boolean, size: string) => {
-  const horizontalPadding = roundedCornersToggleEnabled
-    ? units(PADDING_HORIZONTAL_ROUNDED_CORNERS[size])
-    : units(PADDING_HORIZONTAL[size]);
+const getPadding = (size: string) => {
+  const horizontalPadding = units(PADDING_HORIZONTAL_ROUNDED_CORNERS[size]);
 
-  const verticalPadding = roundedCornersToggleEnabled
-    ? units(PADDING_VERTICAL_ROUNDED_CORNERS[size])
-    : units(PADDING_VERTICAL[size]);
+  const verticalPadding = units(PADDING_VERTICAL_ROUNDED_CORNERS[size]);
 
   return css`
     padding: calc(${verticalPadding}px - ${BORDER_SIZE}px)
@@ -64,7 +48,7 @@ const getPadding = (roundedCornersToggleEnabled: boolean, size: string) => {
 };
 
 const padding = css<InnerProps>`
-  ${(p) => getPadding(p.theme.isFeatureEnabled('roundedCorners'), p.$size)}
+  ${(p) => getPadding(p.$size)}
 `;
 
 export const primaryStyles = css<InnerProps>`

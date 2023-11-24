@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import FlexTable from '../FlexTable';
-import { setPersistedSortOrder, Typography } from '../../..';
+import { setPersistedSortOrder, FlexTable, Typography } from '../../..';
 import docs from '../FlexTable.mdx';
 import { SortOrder } from '../Header/HeaderContent/HeaderContent.types';
 import { OnSort } from '../Header/Header.types';
@@ -50,7 +49,6 @@ export const UncontrolledSortableHeadersThatSavesLastSorted = () => {
   );
 };
 
-// For useState to work in storybook, components needs to be wrapped in a new function
 export const ControlledSortableHeadersThatSavesLastSorted = () => {
   const ControlledSortableHeadersExample = () => {
     const ReactComponent = () => {

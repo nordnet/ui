@@ -1,87 +1,110 @@
 import React, { useState } from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
+import { IntlProvider } from 'react-intl';
 
 import Slider from '.';
 import { Box, Input, Number, Typography } from '../..';
 import { Props } from './Slider.types';
 import { secondsToTimeString } from '../../common/utils';
 
-export default {
-  title: 'Molecules / Slider',
+const meta: Meta<typeof Slider> = {
   component: Slider,
-} as Meta;
+  title: 'Molecules / Slider',
+};
 
-const Template: Story<Props> = (args) => {
+export default meta;
+type Story = StoryObj<typeof Slider>;
+
+const Template = (args: Props) => {
   const [value, setValue] = useState(args.defaultValue);
   const handleChange = (v: number) => setValue(v);
 
   return (
-    <Box p={20}>
-      <Slider {...args} onChange={handleChange} />
-      <Typography>
-        <Number value={value} maximumDecimals={2} /> Kronor
-      </Typography>
-    </Box>
+    <IntlProvider locale="en">
+      <Box p={20}>
+        <Slider {...args} onChange={handleChange} />
+        <Typography>
+          <Number value={value} maximumDecimals={2} /> Kronor
+        </Typography>
+      </Box>
+    </IntlProvider>
   );
 };
 
-export const Default = Template.bind({});
-Default.args = {
-  defaultValue: 50,
-  min: 0,
-  max: 100,
-  step: 1,
+export const Default: Story = {
+  render: Template,
+
+  args: {
+    defaultValue: 50,
+    min: 0,
+    max: 100,
+    step: 1,
+  },
 };
 
-export const MinimumValue = Template.bind({});
-MinimumValue.args = {
-  ...Default.args,
-  defaultValue: 0,
-  max: 10,
-  sliderColor: (t) => t.color.sliderColor,
+export const MinimumValue: Story = {
+  render: Template,
+
+  args: {
+    ...Default.args,
+    defaultValue: 0,
+    max: 10,
+    sliderColor: (t) => t.color.sliderColor,
+  },
 };
 
-export const MaximumValue = Template.bind({});
-MaximumValue.args = {
-  ...Default.args,
-  defaultValue: 100,
-  min: 50,
-  sliderColor: (t) => t.color.sliderColor,
+export const MaximumValue: Story = {
+  render: Template,
+
+  args: {
+    ...Default.args,
+    defaultValue: 100,
+    min: 50,
+    sliderColor: (t) => t.color.sliderColor,
+  },
 };
 
-const TemplateMultiColor: Story<Props> = (args) => {
+const TemplateMultiColor = (args: Props) => {
   const [value, setValue] = useState(args.defaultValue!);
   const handleChange = (v: number) => setValue(v);
 
   return (
-    <Box p={20}>
-      <Slider
-        {...args}
-        onChange={handleChange}
-        sliderColor={(t) => (value > 0 ? t.color.positive : t.color.negative)}
-      />
-      <Typography>
-        <Number value={value} maximumDecimals={2} /> Kronor
-      </Typography>
-    </Box>
+    <IntlProvider locale="en">
+      <Box p={20}>
+        <Slider
+          {...args}
+          onChange={handleChange}
+          sliderColor={(t) => (value > 0 ? t.color.positive : t.color.negative)}
+        />
+        <Typography>
+          <Number value={value} maximumDecimals={2} /> Kronor
+        </Typography>
+      </Box>
+    </IntlProvider>
   );
 };
 
-export const NegativeToPositive = TemplateMultiColor.bind({});
-NegativeToPositive.args = {
-  defaultValue: 0,
-  min: -50,
-  max: 50,
-  step: 1,
+export const NegativeToPositive: Story = {
+  render: TemplateMultiColor,
+
+  args: {
+    defaultValue: 0,
+    min: -50,
+    max: 50,
+    step: 1,
+  },
 };
 
-export const SmallVariant = Template.bind({});
-SmallVariant.args = {
-  ...Default.args,
-  variant: 'small',
+export const SmallVariant: Story = {
+  render: Template,
+
+  args: {
+    ...Default.args,
+    variant: 'small',
+  },
 };
 
-const PlayerTemplate: Story<Props> = (args) => {
+const PlayerTemplate = (args: Props) => {
   return (
     <Box p={20}>
       <Slider {...args} />
@@ -89,48 +112,59 @@ const PlayerTemplate: Story<Props> = (args) => {
   );
 };
 
-export const PlayerVariant = PlayerTemplate.bind({});
-PlayerVariant.args = {
-  ...Default.args,
-  defaultValue: 1800,
-  min: 0,
-  max: 4000,
-  step: 1,
-  variant: 'player',
-  formatter: secondsToTimeString,
-  showTooltip: true,
+export const PlayerVariant: Story = {
+  render: PlayerTemplate,
+
+  args: {
+    ...Default.args,
+    defaultValue: 1800,
+    min: 0,
+    max: 4000,
+    step: 1,
+    variant: 'player',
+    formatter: secondsToTimeString,
+    showTooltip: true,
+  },
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  ...Default.args,
-  disabled: true,
+export const Disabled: Story = {
+  render: Template,
+
+  args: {
+    ...Default.args,
+    disabled: true,
+  },
 };
 
-const TemplateControlled: Story<Props> = (args) => {
+const TemplateControlled = (args: Props) => {
   const start = 50;
   const [value, setValue] = useState(start);
   const handleChange = (v: string) => setValue(parseInt(v, 10));
 
   return (
-    <Box p={20}>
-      <Slider {...args} value={value} />
-      <Input.Number
-        id="unique-id"
-        label="Controlled from outside"
-        defaultValue={start}
-        onChange={handleChange}
-        min={args.min}
-        max={args.max}
-        step={args.step}
-      />
-    </Box>
+    <IntlProvider locale="en">
+      <Box p={20}>
+        <Slider {...args} value={value} />
+        <Input.Number
+          id="unique-id"
+          label="Controlled from outside"
+          defaultValue={start}
+          onChange={handleChange}
+          min={args.min}
+          max={args.max}
+          step={args.step}
+        />
+      </Box>
+    </IntlProvider>
   );
 };
 
-export const Controlled = TemplateControlled.bind({});
-Controlled.args = {
-  min: 0,
-  max: 100,
-  step: 1,
+export const Controlled: Story = {
+  render: TemplateControlled,
+
+  args: {
+    min: 0,
+    max: 100,
+    step: 1,
+  },
 };

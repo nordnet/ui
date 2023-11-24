@@ -26,6 +26,7 @@ import Auto64 from './Medium/Auto64';
 import Bank64 from './Medium/Bank64';
 import Blog64 from './Medium/Blog64';
 import Book64 from './Medium/Book64';
+import EditPlan64 from './Medium/EditPlan64';
 import Fee64 from './Medium/Fee64';
 import Fund64 from './Medium/Fund64';
 import Gold64 from './Medium/Gold64';
@@ -62,6 +63,9 @@ import UrgentMailFill64 from './Medium/UrgentMailFill64';
 import TestFail96 from './Large/TestFail96';
 import TestSuccess96 from './Large/TestSuccess96';
 
+// Stage X-Small illustrations
+import UserResearch96 from './StageXSmall/UserResearch96';
+
 // Stage Small illustrations
 import NotFoundError240 from './StageSmall/NotFoundError240';
 import Shareville240 from './StageSmall/Shareville240';
@@ -77,11 +81,6 @@ import StocksOrFunds375 from './StageLarge/StocksOrFunds375';
 export default {
   Account64,
   AppropriatenessTest375,
-  Diversification375,
-  InvestForLongTerm375,
-  LearnMore375,
-  MonthlySavings375,
-  StocksOrFunds375,
   Archive48,
   ArrowDown48,
   ArrowLeft48,
@@ -92,6 +91,8 @@ export default {
   Blog64,
   Book64,
   Bug48,
+  EditPlan64,
+  Diversification375,
   Export48,
   Fee64,
   Fund64,
@@ -100,16 +101,20 @@ export default {
   Import48,
   Inbox48,
   Information48,
+  InvestForLongTerm375,
   Launch48,
+  LearnMore375,
   Lightbulb64,
   Logout48,
   Mail48,
   Money64,
   MoneyDeposit64,
   MoneyWithdraw64,
+  MonthlySavings375,
   MonthlySavings48,
   MonthlySavings64,
   News64,
+  NotFoundError240,
   Orders48,
   Outbox48,
   Pension64,
@@ -122,23 +127,24 @@ export default {
   Robot64,
   Search48,
   Security64,
+  Shareville240,
   StatusError64,
   StatusFail64,
   StatusInformation64,
   StatusSuccess64,
   StatusWarning64,
   Stock64,
+  StocksOrFunds375,
   Tax64,
   TestFail64,
+  TestFail96,
   TestSuccess64,
+  TestSuccess96,
   TransferDeposit64,
   TransferInternal64,
   TransferWithdraw64,
-  TestFail96,
-  TestSuccess96,
   UrgentMail64,
   UrgentMailFill64,
+  UserResearch96,
   Watchlist48,
-  NotFoundError240,
-  Shareville240,
 };

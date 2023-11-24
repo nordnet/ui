@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { DateTime, Flag, Flexbox, Number } from '../../..';
+import { IntlProvider } from 'react-intl';
+import { DateTime, Flag, Flexbox, FlexTable, Number } from '../../..';
 import { FlexPropsType } from '../shared/shared.types';
-import FlexTable from '../FlexTable';
 import docs from '../FlexTable.mdx';
 
 export default {
@@ -102,56 +102,58 @@ export const CustomCells = () => {
     );
 
     return (
-      <FlexTable>
-        <FlexTable.HeaderRow>
-          <FlexTable.Header columnId="date">Date</FlexTable.Header>
-          <TruncateStartHeader
-            columnId="transferable-quantity"
-            flex="0 0 150px"
-            justifyContent="flex-end"
-            currency="USD"
-          >
-            Transferable quantity
-          </TruncateStartHeader>
-          <FlexTable.Header columnId="country">Country</FlexTable.Header>
-          <FlexTable.Header columnId="percentage" justifyContent="flex-end">
-            Percentage
-          </FlexTable.Header>
-        </FlexTable.HeaderRow>
-        <FlexTable.Row>
-          <DateCell columnId="date" value={1594385610185} />
-          <NumberCell
-            columnId="transferable-quantity"
-            value={300}
-            justifyContent="flex-end"
-            flex="0 0 150px"
-          />
-          <FlagCell columnId="country" country="SE" />
-          <NumberCell columnId="percentage" value={75} percentage justifyContent="flex-end" />
-        </FlexTable.Row>
-        <FlexTable.Row>
-          <DateCell columnId="date" value={1594385610000} />
-          <NumberCell
-            columnId="transferable-quantity"
-            value={100}
-            justifyContent="flex-end"
-            flex="0 0 150px"
-          />
-          <FlagCell columnId="country" country="NO" />
-          <NumberCell columnId="percentage" value={25} percentage justifyContent="flex-end" />
-        </FlexTable.Row>
-        <FlexTable.FooterRow>
-          <FlexTable.Footer columnId="date" />
-          <NumberFooter
-            columnId="transferable-quantity"
-            value={400}
-            justifyContent="flex-end"
-            flex="0 0 150px"
-          />
-          <FlexTable.Footer columnId="country" />
-          <NumberFooter columnId="percentage" value={25} percentage justifyContent="flex-end" />
-        </FlexTable.FooterRow>
-      </FlexTable>
+      <IntlProvider locale="en">
+        <FlexTable>
+          <FlexTable.HeaderRow>
+            <FlexTable.Header columnId="date">Date</FlexTable.Header>
+            <TruncateStartHeader
+              columnId="transferable-quantity"
+              flex="0 0 150px"
+              justifyContent="flex-end"
+              currency="USD"
+            >
+              Transferable quantity
+            </TruncateStartHeader>
+            <FlexTable.Header columnId="country">Country</FlexTable.Header>
+            <FlexTable.Header columnId="percentage" justifyContent="flex-end">
+              Percentage
+            </FlexTable.Header>
+          </FlexTable.HeaderRow>
+          <FlexTable.Row>
+            <DateCell columnId="date" value={1594385610185} />
+            <NumberCell
+              columnId="transferable-quantity"
+              value={300}
+              justifyContent="flex-end"
+              flex="0 0 150px"
+            />
+            <FlagCell columnId="country" country="SE" />
+            <NumberCell columnId="percentage" value={75} percentage justifyContent="flex-end" />
+          </FlexTable.Row>
+          <FlexTable.Row>
+            <DateCell columnId="date" value={1594385610000} />
+            <NumberCell
+              columnId="transferable-quantity"
+              value={100}
+              justifyContent="flex-end"
+              flex="0 0 150px"
+            />
+            <FlagCell columnId="country" country="NO" />
+            <NumberCell columnId="percentage" value={25} percentage justifyContent="flex-end" />
+          </FlexTable.Row>
+          <FlexTable.FooterRow>
+            <FlexTable.Footer columnId="date" />
+            <NumberFooter
+              columnId="transferable-quantity"
+              value={400}
+              justifyContent="flex-end"
+              flex="0 0 150px"
+            />
+            <FlexTable.Footer columnId="country" />
+            <NumberFooter columnId="percentage" value={25} percentage justifyContent="flex-end" />
+          </FlexTable.FooterRow>
+        </FlexTable>
+      </IntlProvider>
     );
   };
   return <Story />;

@@ -21,7 +21,8 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true
+    "noUnusedLocals": true,
+    "ignoreDeprecations": "5.0" // TODO: remove suppressImplicitAnyIndexErrors and this line
   },
   "include": ["src"],
   "exclude": ["node_modules", "build", "scripts", ".history", "**/*.test.ts*"]

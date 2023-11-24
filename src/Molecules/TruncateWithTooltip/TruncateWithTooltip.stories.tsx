@@ -11,6 +11,7 @@ export default {
 
 const StyledBackground = styled.div`
   background-color: ${(p) => p.theme.color.background};
+
   &:not(:last-of-type) {
     margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
   }
@@ -20,7 +21,7 @@ const StyledDiv = styled.div`
   max-width: ${(p) => p.theme.spacing.unit(35)}px;
 `;
 
-export const truncateWithTooltipDefault = () => (
+export const TruncateWithTooltipDefault = () => (
   <>
     <StyledDiv>
       <TruncateWithTooltip position="bottom" label="Hover over this truncated text">
@@ -35,7 +36,7 @@ export const truncateWithTooltipDefault = () => (
   </>
 );
 
-export const truncateWithTooltipTable = () => (
+export const TruncateWithTooltipTable = () => (
   <StyledBackground>
     <Typography type="title3">Table With Different Alignments</Typography>
     <FlexTable>

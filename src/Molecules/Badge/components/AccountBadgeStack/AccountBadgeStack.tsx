@@ -19,7 +19,7 @@ const CircleWrapper = styled.div<{ $size: number }>`
 
     return css`
       &:not(:last-of-type) {
-        /*all but the last one*/
+        /* all but the last one */
         mask: radial-gradient(
           circle at ${diameter}px,
           transparent ${radius + BORDER_WIDTH / 2}px,
@@ -28,7 +28,7 @@ const CircleWrapper = styled.div<{ $size: number }>`
       }
 
       &:not(:first-of-type) {
-        /*all but the first one*/
+        /* all but the first one */
         margin-left: -${radius - BORDER_WIDTH / 2}px;
       }
     `;

@@ -22,7 +22,7 @@ export default {
   },
 };
 
-export const basicCard = () => (
+export const BasicCard = () => (
   <Card>
     <Content>
       <Typography>A Card as a div containing content</Typography>
@@ -30,45 +30,45 @@ export const basicCard = () => (
   </Card>
 );
 
-export const cardRenderedWithDifferentHtmlTags = () => (
-  <Display
-    items={[
-      {
-        title: 'Section',
-        component: (
-          <Card as="section">
-            <Content>
-              <Typography>A Card as a section containing content</Typography>
-            </Content>
-          </Card>
-        ),
-      },
-      {
-        title: 'Article',
-        component: (
-          <Card as="article">
-            <Content>
-              <Typography>A Card as a article containing content</Typography>
-            </Content>
-          </Card>
-        ),
-      },
-    ]}
-  />
-);
+export const CardRenderedWithDifferentHtmlTags = {
+  render: () => (
+    <Display
+      items={[
+        {
+          title: 'Section',
+          component: (
+            <Card as="section">
+              <Content>
+                <Typography>A Card as a section containing content</Typography>
+              </Content>
+            </Card>
+          ),
+        },
+        {
+          title: 'Article',
+          component: (
+            <Card as="article">
+              <Content>
+                <Typography>A Card as a article containing content</Typography>
+              </Content>
+            </Card>
+          ),
+        },
+      ]}
+    />
+  ),
 
-cardRenderedWithDifferentHtmlTags.story = {
   name: 'Card rendered with different html tags',
 };
 
-export const cardWithBar = () => (
-  <Card barColor={(t) => t.color.shareville}>
-    <Content>
-      <Typography>A Card as a div containing content</Typography>
-    </Content>
-  </Card>
-);
+export const CardWithBar = {
+  render: () => (
+    <Card barColor={(t) => t.color.shareville}>
+      <Content>
+        <Typography>A Card as a div containing content</Typography>
+      </Content>
+    </Card>
+  ),
 
-cardWithBar.story = {
   name: 'Card with colored top bar',
 };

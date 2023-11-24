@@ -5,7 +5,7 @@ type UseMuiSelectReturnValue = UseSelectReturnValue<string, boolean>;
 type GetButtonProps = UseMuiSelectReturnValue['getButtonProps'];
 type GetOptionMetadata = UseMuiSelectReturnValue['getOptionMetadata'];
 type Value = UseMuiSelectReturnValue['value'];
-export type UseSelectProps = {
+type UseSelectProps = {
   children: React.ReactNode;
   getButtonProps: GetButtonProps;
   getOptionMetadata: GetOptionMetadata;
@@ -38,3 +38,4 @@ function useSelect() {
 }
 
 export { SelectProvider, useSelect };
+export type { UseSelectProps };
