@@ -1,4 +1,4 @@
-import { ColorFn, Variant } from '../Slider.types';
+import { ColorFn, Variant } from '../../Slider/Slider.types';
 
 export type InternalProps = {
   $disabled?: boolean;
