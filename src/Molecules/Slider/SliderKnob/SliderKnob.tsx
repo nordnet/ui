@@ -29,6 +29,8 @@ const Handle = styled('div')<InternalProps>`
   ${(p) => (p.$disabled ? `border-color: ${p.theme.color.sliderDisabled};` : '')};
   ${(p) => (p.$variant === VARIANT_TYPES.PLAYER ? 'border-color: transparent' : '')};
   transition: transform 0.16s ease-out;
+  z-index: ${(p) => p.$zIndex};
+
   & :hover {
     border: ${(p) => {
       const knobColor = p.$sliderColor
@@ -45,7 +47,6 @@ const Handle = styled('div')<InternalProps>`
       return !p.$disabled ? `${knobColor}  ` : '';
     }};
   }
-  z-index: ${(p) => p.$zIndex};
 `;
 
 const SliderKnob: Component = React.forwardRef<HTMLDivElement, Props>(

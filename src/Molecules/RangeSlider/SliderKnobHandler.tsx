@@ -1,41 +1,9 @@
 import React from 'react';
+
 import { SliderKnobHandlerComponent } from './SliderKnobHandler.types';
 import { getKnobSize } from '../Slider/utils';
 import { SliderKnob } from '../Slider/SliderKnob';
-
-const clamp = (val: number, min: number, max: number) => {
-  if (val < min) {
-    return min;
-  }
-  if (val > max) {
-    return max;
-  }
-  return val;
-};
-
-const getDecimalPrecision = (num: number) => {
-  if (Math.abs(num) < 1) {
-    const parts = num.toExponential().split('e-');
-    const matissaDecimalPart = parts[0].split('.')[1];
-    return (matissaDecimalPart ? matissaDecimalPart.length : 0) + parseInt(parts[1], 10);
-  }
-
-  const decimalPart = num.toString().split('.')[1];
-  return decimalPart ? decimalPart.length : 0;
-};
-
-const roundValueToStep = (value: number, step: number, min: number) => {
-  const nearest = Math.round((value - min) / step) * step + min;
-  return Number(nearest.toFixed(getDecimalPrecision(step)));
-};
-
-const percentToValue = (percent: number, min: number, max: number) => {
-  return (max - min) * percent + min;
-};
-
-const valueToPercent = (value: number, min: number, max: number) => {
-  return ((value - min) * 100) / (max - min);
-};
+import { clamp, percentToValue, roundValueToStep, valueToPercent } from './utils';
 
 const SliderKnobHandler: SliderKnobHandlerComponent = ({
   disabled,
@@ -54,7 +22,6 @@ const SliderKnobHandler: SliderKnobHandlerComponent = ({
   zIndex,
 }) => {
   const trackPercent = valueToPercent(value, min, max);
-  const handlePosition = `calc(${trackPercent}% - ${getKnobSize(variant) / 2}px)`;
 
   const updateValue = (newValue: number) => {
     onChange(newValue);
@@ -154,7 +121,7 @@ const SliderKnobHandler: SliderKnobHandlerComponent = ({
       ref={handleRef}
       sliderColor={sliderColor}
       style={{
-        left: handlePosition,
+        left: `calc(${trackPercent}% - ${getKnobSize(variant) / 2}px)`,
       }}
       value={value}
       variant={variant}

@@ -72,17 +72,12 @@ export const Maximum: Story = {
   },
 };
 
-const TemplateMultiColor = (args: Props) => {
+const TemplateCustomColor = (args: Props) => {
   const [value, setValue] = useState({ low: args.defaultLowValue, high: args.defaultHighValue });
-  const handleChange = (v: any) => setValue(v);
-
+  const handleChange = (v: { low: number; high: number }) => setValue(v);
   return (
     <Box p={20}>
-      <RangeSlider
-        {...args}
-        onChange={handleChange}
-        sliderColor={(t) => (value?.low && value.low > 0 ? t.color.positive : t.color.negative)}
-      />
+      <RangeSlider {...args} sliderColor={(t) => t.color.positive} onChange={handleChange} />
       <Typography>
         <Flexbox container justifyContent="space-between" gap={4}>
           <Flexbox item>
@@ -97,8 +92,8 @@ const TemplateMultiColor = (args: Props) => {
   );
 };
 
-export const NegativeToPositive: Story = {
-  render: TemplateMultiColor,
+export const CustomColor: Story = {
+  render: TemplateCustomColor,
 
   args: {
     defaultLowValue: -30,
