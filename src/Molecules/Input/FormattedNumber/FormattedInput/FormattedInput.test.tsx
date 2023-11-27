@@ -7,12 +7,15 @@ import { createTheme } from '../../../../theme';
 import FormattedInput from './FormattedInput';
 
 describe('FormattedInput', () => {
+  const regularMinusSign = '\u2212'; // regular minus sign "−"
+  const hyphenMinusSign = '\u002D'; // regular hyphen-minus sign "-"
+
   const LOCALES = [
-    { locale: 'sv-SE', decimalSign: ',', thousandSeparator: ' ', minusSign: '−' },
-    { locale: 'da-DK', decimalSign: ',', thousandSeparator: '.', minusSign: '-' },
-    { locale: 'fi-FI', decimalSign: ',', thousandSeparator: ' ', minusSign: '−' },
-    { locale: 'nb-NO', decimalSign: ',', thousandSeparator: ' ', minusSign: '−' },
-    { locale: 'en-GB', decimalSign: '.', thousandSeparator: ',', minusSign: '-' },
+    { locale: 'sv-SE', decimalSign: ',', thousandSeparator: ' ', minusSign: regularMinusSign },
+    { locale: 'da-DK', decimalSign: ',', thousandSeparator: '.', minusSign: hyphenMinusSign },
+    { locale: 'fi-FI', decimalSign: ',', thousandSeparator: ' ', minusSign: regularMinusSign },
+    { locale: 'nb-NO', decimalSign: ',', thousandSeparator: ' ', minusSign: regularMinusSign },
+    { locale: 'en-GB', decimalSign: '.', thousandSeparator: ',', minusSign: hyphenMinusSign },
   ];
   const createWrapper =
     (locale: string) =>
