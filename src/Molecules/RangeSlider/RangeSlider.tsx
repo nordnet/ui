@@ -20,7 +20,7 @@ const Container = styled.div<InternalProps>`
 const RangeSlider: Component = ({
   defaultHighValue,
   defaultLowValue,
-  disabled,
+  disabled: disabledProp,
   max,
   min,
   onChange,
@@ -32,6 +32,15 @@ const RangeSlider: Component = ({
   const trackRef: React.Ref<HTMLDivElement> = useRef(null);
   const [initialized, setInitialized] = useState(false); // trackRef is not set first render, need to force a re-render
   const [activeHandle, setActiveHandle] = useState(KnobType.LOW);
+
+  // disable slider if min > max or step <= 0 or defaultLowValue > defaultHighValue
+  const disabled =
+    disabledProp ||
+    min > max ||
+    step <= 0 ||
+    !isNumber(defaultLowValue) ||
+    !isNumber(defaultHighValue) ||
+    defaultLowValue > defaultHighValue;
 
   useEffect(() => {
     if (!initialized) {
@@ -128,8 +137,14 @@ const RangeSlider: Component = ({
       ref={trackRef}
       tabIndex={-1}
     >
-      <SliderTrack variant={variant} sliderColor={sliderColor} readOnly={readOnly}>
+      <SliderTrack
+        variant={variant}
+        sliderColor={sliderColor}
+        readOnly={readOnly}
+        disabled={disabled}
+      >
         <SliderTrackHighlight
+          disabled={disabled}
           sliderColor={sliderColor}
           startValue={minTrackPercent}
           value={maxTrackPercent}

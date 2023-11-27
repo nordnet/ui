@@ -59,6 +59,17 @@ export const Minimum: Story = {
   },
 };
 
+export const NoDefaultValues: Story = {
+  render: Template,
+
+  args: {
+    min: 0,
+    max: 10,
+    step: 1,
+    sliderColor: (t) => t.color.sliderColor,
+  },
+};
+
 export const Maximum: Story = {
   render: Template,
 

@@ -36,8 +36,7 @@ const Track = styled.div<InternalProps>`
   position: relative;
   width: 100%;
   height: ${(p) => `${getHeight(p.$variant)}px`};
-  background: ${(p) =>
-    p.$disabled ? p.theme.color.sliderDisabled : p.theme.colorTokens.neutral.background_skeleton};
+  background: ${(p) => p.theme.colorTokens.neutral.background_skeleton};
   border-radius: ${(p) => `${getKnobSize(p.$variant)}px`};
   cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'pointer')};
 `;

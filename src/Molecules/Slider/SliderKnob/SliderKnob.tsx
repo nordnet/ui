@@ -16,10 +16,16 @@ const Handle = styled('div')<InternalProps>`
   border-radius: 50%;
   transform: translateY(-50%);
   background: ${(p) => {
-    const knobColor = p.$sliderColor
-      ? p.$sliderColor(p.theme)
-      : p.theme.colorTokens.action.background_default;
-    return p.$variant === VARIANT_TYPES.PLAYER ? 'transparent' : `${knobColor}`;
+    const getKnobColor = () => {
+      if (p.$disabled) {
+        return p.theme.color.sliderDisabled;
+      }
+      if (p.$sliderColor) {
+        return p.$sliderColor(p.theme);
+      }
+      return p.theme.colorTokens.action.background_default;
+    };
+    return p.$variant === VARIANT_TYPES.PLAYER ? 'transparent' : `${getKnobColor()}`;
   }};
   cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'pointer')};
   border-width: ${(p) => p.theme.spacing.unit(1)}px;
