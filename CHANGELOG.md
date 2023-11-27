@@ -1,3 +1,10 @@
+## [14.1.4](https://github.com/nordnet/ui/compare/v14.1.3...v14.1.4) (2023-11-27)
+
+
+### Bug Fixes
+
+* 🐛 page guidance card gap and checklist setting icon ([#1521](https://github.com/nordnet/ui/issues/1521)) ([fa83ea9](https://github.com/nordnet/ui/commit/fa83ea966818c13124158f804e200aa43f1aa607))
+
 ## [14.1.3](https://github.com/nordnet/ui/compare/v14.1.2...v14.1.3) (2023-11-23)
 
 
