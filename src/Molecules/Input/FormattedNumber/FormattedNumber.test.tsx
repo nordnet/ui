@@ -121,6 +121,7 @@ describe('Input.FormattedNumber', () => {
   });
 
   /* Known Issues... */
+  test.todo('does not use colorTokens. FormattedNumber.styled.tsx needs to be refactored');
   test.todo('does not currently preserve trailing zeros when stepping');
   test.todo(`doesn't currently respect min and max props`);
   test.todo('blurs input field when clicking on steppers');

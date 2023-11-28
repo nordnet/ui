@@ -1,14 +1,13 @@
 import React, { useRef, useState } from 'react';
-import * as R from 'ramda';
 import { FormField, OldIcon, Typography, VisuallyHidden } from '../../..';
 import { isUndefined } from '../../../common/utils';
 
 import adjustValue from './adjustValue';
-import { FormattedNumberComponent, Props } from './FormattedNumber.types';
+import { Props } from './FormattedNumber.types';
 import { FormattedNumberComponents } from './FormattedNumber.styles';
 import { hasError } from './utils';
 
-const FormattedNumberInput: FormattedNumberComponent & {
+const FormattedNumberInput: React.FC<Props> & {
   /**
    * This will allow you to customize
    * inner parts with styled-components
@@ -50,7 +49,6 @@ const FormattedNumberInput: FormattedNumberComponent & {
     inputMode = 'decimal',
     success,
     value: controlledValue,
-    visuallyEmphasiseRequired,
     variant = 'normal',
   } = props;
   const [internalValue, setInternalValue] = useState<number | null>(defaultValue);
@@ -104,24 +102,31 @@ const FormattedNumberInput: FormattedNumberComponent & {
     onKeyDown?.(e);
   };
 
+  const {
+    className,
+    extraInfo,
+    hideLabel,
+    label,
+    labelTooltip,
+    labelTooltipInModal,
+    labelTooltipPosition,
+    width,
+    visuallyEmphasiseRequired,
+  } = props;
+
   return (
     <FormField
-      {...R.pick(
-        [
-          'error',
-          'extraInfo',
-          'hideLabel',
-          'label',
-          'labelTooltip',
-          'labelTooltipPosition',
-          'labelTooltipInModal',
-          'width',
-          'className',
-        ],
-        props,
-      )}
-      required={visuallyEmphasiseRequired}
+      className={className}
+      error={error}
+      extraInfo={extraInfo}
       fieldId={id}
+      hideLabel={hideLabel}
+      label={label}
+      labelTooltip={labelTooltip}
+      labelTooltipInModal={labelTooltipInModal}
+      labelTooltipPosition={labelTooltipPosition}
+      required={visuallyEmphasiseRequired}
+      width={width}
     >
       <Typography type="secondary" color={(t) => t.color.text}>
         <FormattedNumberComponents.Wrapper container item grow={1} alignItems="center">
@@ -200,6 +205,4 @@ const FormattedNumberInput: FormattedNumberComponent & {
   );
 };
 FormattedNumberInput.components = FormattedNumberComponents;
-export const FormattedNumber: React.FC<Props> & {
-  components: typeof FormattedNumberComponents;
-} = FormattedNumberInput as any;
+export const FormattedNumber = FormattedNumberInput as any;

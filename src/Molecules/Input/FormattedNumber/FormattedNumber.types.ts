@@ -56,8 +56,6 @@ export type Props = {
   variant?: Variant;
 };
 
-export type FormattedNumberComponent = React.FunctionComponent<Props>;
-
 export type adjustValueProps = {
   step: number;
   min?: number;
