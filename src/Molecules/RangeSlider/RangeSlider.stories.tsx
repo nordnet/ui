@@ -19,7 +19,9 @@ const Template = (args: Props) => {
 
   return (
     <Box p={20}>
-      <RangeSlider {...args} onChange={handleChange} />
+      <div style={{ border: '1px solid red' }}>
+        <RangeSlider {...args} onChange={handleChange} />
+      </div>
       <Typography>
         <Flexbox container justifyContent="space-between" gap={4}>
           <Flexbox item>

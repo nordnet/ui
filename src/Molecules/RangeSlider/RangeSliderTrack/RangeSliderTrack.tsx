@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { getHeight, getKnobSize } from '../../Slider/utils';
-import { Component, InternalProps } from './SliderTrack.types';
+import { Component, InternalProps } from './RangeSliderTrack.types';
 
 const HoverArea = styled.div<InternalProps>`
   position: relative;
   width: 100%;
-  height: ${(p) => `${p.theme.spacing.unit(1)}px`};
+  height: ${(p) => `${getHeight(p.$variant)}px`};
   cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'pointer')};
-  padding: ${(p) => `${p.theme.spacing.unit(1)}px;`};
+  padding: ${(p) => `${p.theme.spacing.unit(2)}px 0`};
 `;
 
 const Track = styled.div<InternalProps>`
@@ -21,7 +21,7 @@ const Track = styled.div<InternalProps>`
   cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'pointer')};
 `;
 
-const SliderTrack: Component = ({
+const RangeSliderTrack: Component = ({
   children,
   disabled,
   variant,
@@ -35,12 +35,14 @@ const SliderTrack: Component = ({
 }) => {
   return (
     <HoverArea
+      $disabled={disabled || readOnly}
       onMouseDown={onMouseDown}
       onMouseLeave={onMouseLeave}
       onMouseMove={onMouseMove}
       onMouseUp={onMouseUp}
       onTouchStart={onTouchStart}
       $sliderColor={sliderColor}
+      $variant={variant}
     >
       <Track $disabled={disabled || readOnly} $variant={variant}>
         {children}
@@ -49,4 +51,4 @@ const SliderTrack: Component = ({
   );
 };
 
-export default SliderTrack;
+export default RangeSliderTrack;
