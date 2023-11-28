@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Color from 'color';
 
-import { getHeight, getKnobSize } from '../utils';
+import { getHeight, getKnobSize } from '../../Slider/utils';
 import { Component, InternalProps } from './SliderTrack.types';
 
 const HoverArea = styled.div<InternalProps>`
@@ -11,25 +10,6 @@ const HoverArea = styled.div<InternalProps>`
   height: ${(p) => `${p.theme.spacing.unit(1)}px`};
   cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'pointer')};
   padding: ${(p) => `${p.theme.spacing.unit(1)}px;`};
-
-  & :hover {
-    & > div > div:nth-last-child(1) {
-      border: ${(p) => {
-        const knobColor = p.$sliderColor
-          ? Color(p.$sliderColor(p.theme)).darken(0.1)
-          : p.theme.colorTokens.action.background_hover;
-        return (
-          !p.$disabled && `${knobColor ? `${p.theme.spacing.unit(1)}px solid ${knobColor}` : ''}`
-        );
-      }};
-      background: ${(p) => {
-        const knobColor = p.$sliderColor
-          ? Color(p.$sliderColor(p.theme)).darken(0.1)
-          : p.theme.colorTokens.action.background_hover;
-        return !p.$disabled ? `${knobColor}  ` : '';
-      }};
-    }
-  }
 `;
 
 const Track = styled.div<InternalProps>`

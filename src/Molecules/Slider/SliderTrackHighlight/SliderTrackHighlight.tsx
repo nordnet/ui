@@ -5,15 +5,38 @@ import { Component, InternalProps } from './SliderTrackHighlight.types';
 import { getHeight } from '../utils';
 
 const TrackHighlight = styled.div<InternalProps>`
-  width: 100%;
+  background: ${(p) => {
+    const getBackgroundColor = () => {
+      if (p.$disabled) {
+        return p.theme.color.sliderDisabled;
+      }
+      if (p.$sliderColor) {
+        return p.$sliderColor(p.theme);
+      }
+      return p.theme.color.sliderColor;
+    };
+    return getBackgroundColor();
+  }};
   border-radius: inherit;
-  background: ${(p) => (p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor)};
   height: ${(p) => `${getHeight(p.$variant)}px`};
+  position: absolute;
+  width: 100%;
 `;
 
-const SliderTrackHighlight: Component = ({ sliderColor, value, variant }) => {
+const SliderTrackHighlight: Component = ({
+  disabled,
+  sliderColor,
+  startValue = 0,
+  value,
+  variant,
+}) => {
   return (
-    <TrackHighlight $sliderColor={sliderColor} style={{ width: `${value}%` }} $variant={variant} />
+    <TrackHighlight
+      $disabled={disabled}
+      $sliderColor={sliderColor}
+      $variant={variant}
+      style={{ left: `${startValue}%`, width: `${value - startValue}%` }}
+    />
   );
 };
 
