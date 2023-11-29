@@ -1,3 +1,10 @@
+## [14.2.1](https://github.com/nordnet/ui/compare/v14.2.0...v14.2.1) (2023-11-29)
+
+
+### Bug Fixes
+
+* remove padding around slider and fix the hover / press states ([#1522](https://github.com/nordnet/ui/issues/1522)) ([fb2fd0a](https://github.com/nordnet/ui/commit/fb2fd0ad83dcf69583015db7c59b0e25d84c076b))
+
 # [14.2.0](https://github.com/nordnet/ui/compare/v14.1.4...v14.2.0) (2023-11-28)
 
 
