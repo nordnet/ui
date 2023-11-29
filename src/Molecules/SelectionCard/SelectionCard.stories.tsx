@@ -68,6 +68,23 @@ export const WithIcon = {
   },
 };
 
+export const WithIconAlignedLeft = {
+  args: {
+    ...SelectionCardDefault,
+    icon: <Icon.Book32 />,
+    alignLeft: true,
+  },
+};
+
+export const WithIconAndTitleAlignedLeft = {
+  args: {
+    ...SelectionCardDefault,
+    title: 'Title and Icon',
+    icon: <Icon.Book32 />,
+    alignLeft: true,
+  },
+};
+
 export const WithImage = {
   render: () => {
     const Component = () => {
