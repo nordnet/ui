@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { Component, InternalProps } from './RangeSlider.types';
 import { getKnobSize } from '../Slider/utils';
-import { SliderTrack } from './SliderTrack';
+import { RangeSliderTrack } from './RangeSliderTrack';
 import { SliderTrackHighlight } from '../Slider/SliderTrackHighlight';
 import { isFunction, isNumber } from '../../common/utils';
 import SliderKnobHandler from './SliderKnobHandler';
@@ -137,7 +137,7 @@ const RangeSlider: Component = ({
       ref={trackRef}
       tabIndex={-1}
     >
-      <SliderTrack
+      <RangeSliderTrack
         variant={variant}
         sliderColor={sliderColor}
         readOnly={readOnly}
@@ -194,7 +194,7 @@ const RangeSlider: Component = ({
             />
           </>
         )}
-      </SliderTrack>
+      </RangeSliderTrack>
     </Container>
   );
 };

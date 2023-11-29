@@ -37,7 +37,21 @@ const Handle = styled('div')<InternalProps>`
   transition: transform 0.16s ease-out;
   z-index: ${(p) => p.$zIndex};
 
-  & :hover {
+  &:active {
+    background: ${(p) => {
+      const knobColor = p.$sliderColor
+        ? Color(p.$sliderColor(p.theme)).darken(0.1)
+        : p.theme.colorTokens.action.background_hover;
+      return !p.$disabled ? `${knobColor}  ` : '';
+    }};
+    transform: ${(p) => {
+      return p.$variant === VARIANT_TYPES.PLAYER || p.$disabled
+        ? 'translateY(-50%)'
+        : 'translateY(-50%) scale3d(0.85, 0.85, 0.85)';
+    }};
+  }
+
+  &:hover {
     border: ${(p) => {
       const knobColor = p.$sliderColor
         ? Color(p.$sliderColor(p.theme)).darken(0.1)

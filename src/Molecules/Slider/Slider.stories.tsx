@@ -22,7 +22,9 @@ const Template = (args: Props) => {
   return (
     <IntlProvider locale="en">
       <Box p={20}>
-        <Slider {...args} onChange={handleChange} />
+        <div style={{ border: '1px solid red' }}>
+          <Slider {...args} onChange={handleChange} />
+        </div>
         <Typography>
           <Number value={value} maximumDecimals={2} /> Kronor
         </Typography>
