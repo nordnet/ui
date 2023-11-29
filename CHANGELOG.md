@@ -1,3 +1,10 @@
+## [14.3.2](https://github.com/nordnet/ui/compare/v14.3.1...v14.3.2) (2023-11-29)
+
+
+### Bug Fixes
+
+* trigger build ([#1526](https://github.com/nordnet/ui/issues/1526)) ([e31736d](https://github.com/nordnet/ui/commit/e31736d925419d6628cfe4cc48df973d0244659a))
+
 ## [14.3.1](https://github.com/nordnet/ui/compare/v14.3.0...v14.3.1) (2023-11-29)
 
 
