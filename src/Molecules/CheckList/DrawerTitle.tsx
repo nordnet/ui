@@ -32,7 +32,7 @@ const DrawerTitle: FC<DrawerTitleProps> = ({
         <Flexbox item>
           <Box pr={8} pb={3}>
             <Button variant="neutral" onClick={onHelpClick}>
-              <Icon.Help16 />
+              <Icon.Settings16 />
             </Button>
           </Box>
         </Flexbox>

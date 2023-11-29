@@ -233,16 +233,22 @@ const Slider: Component = ({
       tabIndex={-1}
     >
       <SliderTrack
-        variant={variant}
-        sliderColor={sliderColor}
-        readOnly={readOnly}
+        disabled={disabled}
         onMouseDown={handleMouseDown}
         onMouseLeave={handleMouseLeave}
         onMouseMove={handleMouseHover}
         onMouseUp={handleMouseUp}
         onTouchStart={handleTouchStart}
+        readOnly={readOnly}
+        sliderColor={sliderColor}
+        variant={variant}
       >
-        <SliderTrackHighlight sliderColor={sliderColor} value={trackPercent} variant={variant} />
+        <SliderTrackHighlight
+          disabled={disabled}
+          sliderColor={sliderColor}
+          value={trackPercent}
+          variant={variant}
+        />
         {!readOnly && (
           <AnimatePresence>
             {showTooltip && hoverVisible && (
