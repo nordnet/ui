@@ -95,11 +95,10 @@ const StyledDiv = styled('div')<{
   $feature: boolean;
   $tag: boolean;
   $text: boolean;
-  $textAlignLeft: boolean;
 }>`
   ${(p) => `
-    text-align: ${p.$text || p.$textAlignLeft ? 'left' : 'center'};
-    padding: ${p.theme.spacing.unit(3)}px;
+    text-align: ${p.$text ? 'left' : 'center'};
+    padding: ${p.theme.spacing.unit(4)}px;
   `}
 
   ${(p) =>
@@ -132,7 +131,6 @@ export const SelectionCard: SelectionCardComponent = ({
   outline = false,
   selected: controlledSelected,
   selectedInitially = false,
-  alignLeft = false,
 }) => {
   const [selectedInternal, setSelectedInternal] = useState(selectedInitially);
   const isControlled = isBoolean(controlledSelected);
@@ -190,7 +188,7 @@ export const SelectionCard: SelectionCardComponent = ({
           </Box>
         </AbsoluteFlexbox>
 
-        <StyledDiv $feature={hasFeature} $tag={Boolean(tag)} $text={Boolean(text)} $textAlignLeft={alignLeft}>
+        <StyledDiv $feature={hasFeature} $tag={Boolean(tag)} $text={Boolean(text)}>
           {horizontal && (
             <Flexbox container direction="row" gap={5} alignContent="center">
               {hasIcon && (
@@ -207,7 +205,7 @@ export const SelectionCard: SelectionCardComponent = ({
           )}
 
           {!horizontal && (
-            <Flexbox container direction="column" alignItems={alignLeft ? "flex-start" : "center"} gap={3}>
+            <Flexbox container direction="column" alignItems="center" gap={1}>
               {hasIcon && (
                 <Flexbox item {...(text && { alignSelf: 'flex-start' })}>
                   {icon}
