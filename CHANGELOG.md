@@ -1,3 +1,10 @@
+## [14.3.1](https://github.com/nordnet/ui/compare/v14.3.0...v14.3.1) (2023-11-29)
+
+
+### Reverts
+
+* Revert "feat: 🎸 Add new icon for help and update selectionsCard (#1523)" (#1524) ([297a7df](https://github.com/nordnet/ui/commit/297a7dfcee1c8ed75cdc0c36166ca00f1d630fce)), closes [#1523](https://github.com/nordnet/ui/issues/1523) [#1524](https://github.com/nordnet/ui/issues/1524)
+
 # [14.3.0](https://github.com/nordnet/ui/compare/v14.2.1...v14.3.0) (2023-11-29)
 
 
