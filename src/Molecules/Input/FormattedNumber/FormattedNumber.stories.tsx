@@ -226,7 +226,7 @@ export const WithExtraInfoAndError = () => {
         id="formatted-number-id"
         label="Label"
         defaultValue={defaultValue}
-        onChange={(x) => x && setValue(x)}
+        onChange={(x: number) => x && setValue(x)}
         extraInfo="Use this space wisely"
         {...(showError ? { error: 'Number needs to be greater than 0' } : {})}
       />
