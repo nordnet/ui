@@ -1,3 +1,10 @@
+# [14.3.0](https://github.com/nordnet/ui/compare/v14.2.1...v14.3.0) (2023-11-29)
+
+
+### Features
+
+* 🎸 Add new icon for help and update selectionsCard ([#1523](https://github.com/nordnet/ui/issues/1523)) ([e49f0d8](https://github.com/nordnet/ui/commit/e49f0d862fe578301fe0cf45860ff9aebe132849))
+
 ## [14.2.1](https://github.com/nordnet/ui/compare/v14.2.0...v14.2.1) (2023-11-29)
 
 
