@@ -35,7 +35,7 @@ export const CoachMarks: Component = ({
   bottomSheet = false,
   closeButton = false,
   hidePreviousButton = false,
-  feedbackWidgetOnPage = false,
+  feedbackWidgetMode = false,
   hideMultiStepIndicatorText = false,
   overrideStep,
 }) => {
@@ -137,17 +137,17 @@ export const CoachMarks: Component = ({
     }
   });
 
-  return referenceElementRect || feedbackWidgetOnPage ? (
+  return referenceElementRect || feedbackWidgetMode ? (
     <Portal>
       <StyledBubble
         ref={setPopperElement}
-        style={feedbackWidgetOnPage ? undefined : styles.popper}
+        style={feedbackWidgetMode ? undefined : styles.popper}
         {...attributes.popper}
         barColor={barColor}
         bottomSheet={bottomSheet}
-        $feedbackWidgetOnPage={feedbackWidgetOnPage}
+        $feedbackWidgetMode={feedbackWidgetMode}
       >
-        {!feedbackWidgetOnPage && (
+        {!feedbackWidgetMode && (
           <BubbleArrow
             ref={setArrowElement}
             style={styles.arrow}
