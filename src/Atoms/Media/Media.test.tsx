@@ -13,7 +13,7 @@ beforeEach(() => {
   window.matchMedia = (media) => ({
     media,
     addListener: () => null,
-    dispatchEvent: () => null,
+    dispatchEvent: () => false,
     onchange: () => null,
     removeListener: () => null,
     matches: media === theme.media.greaterThan(theme.breakpoints.sm).replace('@media ', ''),
