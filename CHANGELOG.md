@@ -1,3 +1,10 @@
+# [15.1.0-beta.1](https://github.com/nordnet/ui/compare/v15.0.0...v15.1.0-beta.1) (2023-11-30)
+
+
+### Features
+
+* upgrade to styled-components v6 ([#1519](https://github.com/nordnet/ui/issues/1519)) ([4a1f83f](https://github.com/nordnet/ui/commit/4a1f83fb4008d5ad9d0e054a236c34f9979d5878))
+
 # [15.0.0](https://github.com/nordnet/ui/compare/v14.4.0...v15.0.0) (2023-11-30)
 
 
