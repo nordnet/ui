@@ -52,14 +52,18 @@ const Card = styled.div<CardProps>`
       p.bottomSheet
         ? `
           // !important to override popper inline styles
-          width: 100% !important;
+          width: 94.5% !important;
           transform: none !important;
           inset: auto auto 0px 0px !important;
           position: fixed !important;
-          border-radius: 
-          ${p.barColor ? p.theme.borderRadius8 : p.theme.borderRadius20} 
-          ${p.barColor ? p.theme.borderRadius8 : p.theme.borderRadius20} 
-          0 0 !important; 
+          margin: 
+          0 
+          ${p.theme.spacing.unit(3)}px 
+          ${p.theme.spacing.unit(3)}px 
+          ${p.theme.spacing.unit(3)}px 
+          !important;
+          border: 1px ${p.theme.colorTokens.neutral.border_medium} solid !important;};
+          border-radius: ${p.theme.borderRadius8} !important; 
         `
         : ''}
   }
