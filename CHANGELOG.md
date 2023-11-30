@@ -1,3 +1,45 @@
+## [14.3.2](https://github.com/nordnet/ui/compare/v14.3.1...v14.3.2) (2023-11-29)
+
+
+### Bug Fixes
+
+* trigger build ([#1526](https://github.com/nordnet/ui/issues/1526)) ([e31736d](https://github.com/nordnet/ui/commit/e31736d925419d6628cfe4cc48df973d0244659a))
+
+## [14.3.1](https://github.com/nordnet/ui/compare/v14.3.0...v14.3.1) (2023-11-29)
+
+
+### Reverts
+
+* Revert "feat: 🎸 Add new icon for help and update selectionsCard (#1523)" (#1524) ([297a7df](https://github.com/nordnet/ui/commit/297a7dfcee1c8ed75cdc0c36166ca00f1d630fce)), closes [#1523](https://github.com/nordnet/ui/issues/1523) [#1524](https://github.com/nordnet/ui/issues/1524)
+
+# [14.3.0](https://github.com/nordnet/ui/compare/v14.2.1...v14.3.0) (2023-11-29)
+
+
+### Features
+
+* 🎸 Add new icon for help and update selectionsCard ([#1523](https://github.com/nordnet/ui/issues/1523)) ([e49f0d8](https://github.com/nordnet/ui/commit/e49f0d862fe578301fe0cf45860ff9aebe132849))
+
+## [14.2.1](https://github.com/nordnet/ui/compare/v14.2.0...v14.2.1) (2023-11-29)
+
+
+### Bug Fixes
+
+* remove padding around slider and fix the hover / press states ([#1522](https://github.com/nordnet/ui/issues/1522)) ([fb2fd0a](https://github.com/nordnet/ui/commit/fb2fd0ad83dcf69583015db7c59b0e25d84c076b))
+
+# [14.2.0](https://github.com/nordnet/ui/compare/v14.1.4...v14.2.0) (2023-11-28)
+
+
+### Features
+
+* 🎸 add range slider ([#1520](https://github.com/nordnet/ui/issues/1520)) ([8ed5c93](https://github.com/nordnet/ui/commit/8ed5c9302f09da79d6061e11dda8878524410ae2))
+
+## [14.1.4](https://github.com/nordnet/ui/compare/v14.1.3...v14.1.4) (2023-11-27)
+
+
+### Bug Fixes
+
+* 🐛 page guidance card gap and checklist setting icon ([#1521](https://github.com/nordnet/ui/issues/1521)) ([fa83ea9](https://github.com/nordnet/ui/commit/fa83ea966818c13124158f804e200aa43f1aa607))
+
 ## [14.1.3](https://github.com/nordnet/ui/compare/v14.1.2...v14.1.3) (2023-11-23)
 
 

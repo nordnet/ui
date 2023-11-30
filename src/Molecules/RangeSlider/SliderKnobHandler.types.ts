@@ -1,30 +1,26 @@
 import { Theme } from '../../theme/theme.types';
+import { KnobType } from './constants';
 
 type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // c
 export type ColorFn = (t: Theme) => Values<Theme['color']>;
 export type Variant = 'big' | 'small' | 'player';
 
-export type InternalProps = {
-  $disabled?: boolean;
-  $sliderColor?: ColorFn;
-  $variant?: Variant;
-  $zIndex?: number;
-};
-
 export type Props = {
-  defaultValue?: number;
   disabled?: boolean;
+  formatter?: (value: number) => string;
+  handleRef: React.Ref<HTMLDivElement>;
   max: number;
   min: number;
-  onChange?: (v: number) => void;
+  onChange: (v: number) => void;
+  readOnly?: boolean;
+  setActiveHandle: (handle: KnobType) => void;
   sliderColor?: ColorFn;
   step: number;
-  /** Makes component controlled */
-  value?: number;
+  trackRef: React.MutableRefObject<any>;
+  knobType: KnobType;
+  value: number;
   variant?: Variant;
-  readOnly?: boolean;
-  formatter?: (value: number) => string;
-  showTooltip?: boolean;
+  zIndex?: number;
 };
 
-export type Component = React.FC<Props>;
+export type SliderKnobHandlerComponent = React.FC<Props>;

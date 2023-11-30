@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Color from 'color';
 
-import { getHeight, getKnobSize } from '../utils';
-import { Component, InternalProps } from './SliderTrack.types';
+import { getHeight, getKnobSize } from '../../Slider/utils';
+import { Component, InternalProps } from './RangeSliderTrack.types';
 
 const HoverArea = styled.div<InternalProps>`
   position: relative;
@@ -11,25 +10,6 @@ const HoverArea = styled.div<InternalProps>`
   height: ${(p) => `${getHeight(p.$variant)}px`};
   cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'pointer')};
   padding: ${(p) => `${p.theme.spacing.unit(2)}px 0`};
-
-  &:hover {
-    & > div > div:nth-last-child(1) {
-      border: ${(p) => {
-        const knobColor = p.$sliderColor
-          ? Color(p.$sliderColor(p.theme)).darken(0.1)
-          : p.theme.colorTokens.action.background_hover;
-        return (
-          !p.$disabled && `${knobColor ? `${p.theme.spacing.unit(1)}px solid ${knobColor}` : ''}`
-        );
-      }};
-      background: ${(p) => {
-        const knobColor = p.$sliderColor
-          ? Color(p.$sliderColor(p.theme)).darken(0.1)
-          : p.theme.colorTokens.action.background_hover;
-        return !p.$disabled ? `${knobColor}  ` : '';
-      }};
-    }
-  }
 `;
 
 const Track = styled.div<InternalProps>`
@@ -41,7 +21,7 @@ const Track = styled.div<InternalProps>`
   cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'pointer')};
 `;
 
-const SliderTrack: Component = ({
+const RangeSliderTrack: Component = ({
   children,
   disabled,
   variant,
@@ -71,4 +51,4 @@ const SliderTrack: Component = ({
   );
 };
 
-export default SliderTrack;
+export default RangeSliderTrack;
