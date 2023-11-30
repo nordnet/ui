@@ -56,7 +56,6 @@ export const ContainerLabel = styled.label<{
   padding: ${(p) => p.theme.spacing.unit(2)}px;
   height: ${(p) => p.theme.spacing.unit(8)}px;
   color: ${(p) => p.theme.colorTokens.neutral.text_default};
-
   background: ${(p) => p.theme.colorTokens.neutral.background_medium};
   outline-offset: -1px;
 
