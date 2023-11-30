@@ -10,7 +10,8 @@
   "sideEffects": false,
   "license": "MIT",
   "engines": {
-    "node": "16.x || 18.x || 20.x"
+    "node": "18.x || 20.x",
+    "npm": "9 || 10"
   },
   "scripts": {
     "test": "TZ=UTC jest",
