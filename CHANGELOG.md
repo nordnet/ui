@@ -1,3 +1,11 @@
+# [15.1.0-beta.2](https://github.com/nordnet/ui/compare/v15.1.0-beta.1...v15.1.0-beta.2) (2023-11-30)
+
+
+### Bug Fixes
+
+* remove package.json resolutions ([#1530](https://github.com/nordnet/ui/issues/1530)) ([b55c25a](https://github.com/nordnet/ui/commit/b55c25afa221d4f2d7c82cba3f55ddbccb1f3245))
+* trigger build after removing resolutions ([ac4df6f](https://github.com/nordnet/ui/commit/ac4df6f4c4d79ca22c0a4c76b4a06b877532591a))
+
 # [15.1.0-beta.1](https://github.com/nordnet/ui/compare/v15.0.0...v15.1.0-beta.1) (2023-11-30)
 
 
