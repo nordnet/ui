@@ -1,3 +1,10 @@
+## [15.0.1](https://github.com/nordnet/ui/compare/v15.0.0...v15.0.1) (2023-11-30)
+
+
+### Bug Fixes
+
+* remove package.json resolutions ([#1530](https://github.com/nordnet/ui/issues/1530)) ([b55c25a](https://github.com/nordnet/ui/commit/b55c25afa221d4f2d7c82cba3f55ddbccb1f3245))
+
 # [15.0.0](https://github.com/nordnet/ui/compare/v14.4.0...v15.0.0) (2023-11-30)
 
 
