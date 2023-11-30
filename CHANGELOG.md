@@ -1,3 +1,24 @@
+## [14.3.2](https://github.com/nordnet/ui/compare/v14.3.1...v14.3.2) (2023-11-29)
+
+
+### Bug Fixes
+
+* trigger build ([#1526](https://github.com/nordnet/ui/issues/1526)) ([e31736d](https://github.com/nordnet/ui/commit/e31736d925419d6628cfe4cc48df973d0244659a))
+
+## [14.3.1](https://github.com/nordnet/ui/compare/v14.3.0...v14.3.1) (2023-11-29)
+
+
+### Reverts
+
+* Revert "feat: 🎸 Add new icon for help and update selectionsCard (#1523)" (#1524) ([297a7df](https://github.com/nordnet/ui/commit/297a7dfcee1c8ed75cdc0c36166ca00f1d630fce)), closes [#1523](https://github.com/nordnet/ui/issues/1523) [#1524](https://github.com/nordnet/ui/issues/1524)
+
+# [14.3.0](https://github.com/nordnet/ui/compare/v14.2.1...v14.3.0) (2023-11-29)
+
+
+### Features
+
+* 🎸 Add new icon for help and update selectionsCard ([#1523](https://github.com/nordnet/ui/issues/1523)) ([e49f0d8](https://github.com/nordnet/ui/commit/e49f0d862fe578301fe0cf45860ff9aebe132849))
+
 ## [14.2.1](https://github.com/nordnet/ui/compare/v14.2.0...v14.2.1) (2023-11-29)
 
 
