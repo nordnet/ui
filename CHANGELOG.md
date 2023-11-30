@@ -1,3 +1,10 @@
+# [14.4.0](https://github.com/nordnet/ui/compare/v14.3.2...v14.4.0) (2023-11-30)
+
+
+### Features
+
+* Add new formatted number input ([#1475](https://github.com/nordnet/ui/issues/1475)) ([1877406](https://github.com/nordnet/ui/commit/18774066b3dd6246d72649233de02a51de3e5c59))
+
 ## [14.3.2](https://github.com/nordnet/ui/compare/v14.3.1...v14.3.2) (2023-11-29)
 
 
