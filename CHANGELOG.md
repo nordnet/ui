@@ -1,3 +1,15 @@
+# [15.0.0](https://github.com/nordnet/ui/compare/v14.4.0...v15.0.0) (2023-11-30)
+
+
+### Features
+
+* update node version to 20 ([#1529](https://github.com/nordnet/ui/issues/1529)) ([2528c68](https://github.com/nordnet/ui/commit/2528c682e071d59360b9ca56e3b419d8722c9bd3))
+
+
+### BREAKING CHANGES
+
+* support for node version 16 dropped and 20 added
+
 # [14.4.0](https://github.com/nordnet/ui/compare/v14.3.2...v14.4.0) (2023-11-30)
 
 
