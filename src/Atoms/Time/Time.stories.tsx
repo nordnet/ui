@@ -1,4 +1,5 @@
 import React from 'react';
+import { IntlProvider } from 'react-intl';
 import { Time } from '../..';
 
 export default {
@@ -9,17 +10,29 @@ export default {
 };
 
 export const Default = {
-  render: () => <Time value={1554824654} />,
+  render: () => (
+    <IntlProvider locale="en">
+      <Time value={1554824654} />
+    </IntlProvider>
+  ),
 };
 
 export const InvalidValue = {
   render: () => {
-    return <Time value={null} />;
+    return (
+      <IntlProvider locale="en">
+        <Time value={null} />
+      </IntlProvider>
+    );
   },
 };
 
 export const UsesCustomSymbolForInvalidValue = {
   render: () => {
-    return <Time value={null} invalidValue="X" />;
+    return (
+      <IntlProvider locale="en">
+        <Time value={null} invalidValue="X" />
+      </IntlProvider>
+    );
   },
 };

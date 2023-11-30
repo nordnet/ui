@@ -6,6 +6,7 @@ import {
   queryByText as queryElementByText,
   render,
   waitFor,
+  within,
 } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import '@testing-library/jest-dom';
@@ -54,7 +55,7 @@ test('Single select without custom components', async () => {
   expect(document.activeElement).toBe(searchInput);
 
   const getCurrentActiveDescendant = () =>
-    searchInput.attributes.getNamedItem('aria-activedescendant').value;
+    searchInput.attributes.getNamedItem('aria-activedescendant')?.value;
 
   // But active-descendant points to the first option
   expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-0`);
@@ -146,7 +147,7 @@ test('Multi select with actions (also disabled actions)', async () => {
   const searchInput = getByTestId('input-select-search-field');
 
   const getCurrentActiveDescendant = () =>
-    searchInput.attributes.getNamedItem('aria-activedescendant').value;
+    searchInput.attributes.getNamedItem('aria-activedescendant')?.value;
 
   // active-descendant points to the first option
   expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-0`);
@@ -158,7 +159,7 @@ test('Multi select with actions (also disabled actions)', async () => {
     expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-1`);
   });
 
-  const option0 = queryElementByText(list, options[0].label);
+  const option0 = within(list).getByText(options[0].label);
 
   fireEvent.click(option0);
 
@@ -232,7 +233,7 @@ test('Single select with actions', async () => {
   const searchInput = getByTestId('input-select-search-field');
 
   const getCurrentActiveDescendant = () =>
-    searchInput.attributes.getNamedItem('aria-activedescendant').value;
+    searchInput.attributes.getNamedItem('aria-activedescendant')?.value;
 
   // active-descendant points to the first option
   expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-0`);

@@ -1,4 +1,5 @@
 import React from 'react';
+import { IntlProvider } from 'react-intl';
 
 import { Pill } from './Pill';
 import docs from './Pill.mdx';
@@ -28,12 +29,14 @@ export const BasicPill = {
 
 export const RoundedPill = {
   render: () => (
-    <Pill.Rounded
-      label="OMXS30"
-      color={(t) => t.color.cta}
-      development={20.455}
-      onClose={() => {}}
-    />
+    <IntlProvider locale="en">
+      <Pill.Rounded
+        label="OMXS30"
+        color={(t) => t.color.cta}
+        development={20.455}
+        onClose={() => {}}
+      />
+    </IntlProvider>
   ),
 };
 
